@@ -1,0 +1,13 @@
+$ git init
+Initialized empty Git repository in /home/dret/public_html/lectures/.git/
+$ git config core.sparsecheckout true
+$ echo xml-fall13/ >> .git/info/sparse-checkout
+$ git remote add -f origin https://github.com/dret/lectures.git
+Updating origin
+remote: Counting objects: 44, done.
+remote: Compressing objects: 100% (40/40), done.
+remote: Total 44 (delta 1), reused 39 (delta 1)
+Unpacking objects: 100% (44/44), done.
+From https://github.com/dret/lectures
+ * [new branch]      master     -> origin/master
+$ git pull origin master
