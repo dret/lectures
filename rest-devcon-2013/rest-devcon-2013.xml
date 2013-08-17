@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="ischool" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+    <configuration>
+		<link subsections="yes" bookmarks="yes" versions="rest-icwe2010.xml" home="./" help="quick" contents="./" glossary="http://dret.net/glossary/" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+	</configuration>
+	<license uri="http://creativecommons.org/licenses/by/3.0/" short="CC 3.0">
+		<div class="license">
+			<p><a rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/iSchool/iSchool/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
+		</div>
+	</license>
+	<title><a href="./" title="Tutorial Homepage">Real-World REST Guidelines</a><br/>Tutorial at <a href="http://mylearn.emc.com/DevCon/">EMC Momentum Developer Conference 2013</a> (Santa Clara, CA)</title>
+	<author><a href="http://dret.net/netdret/">Erik Wilde</a></author>
+	<affiliation><a href="http://ischool.berkeley.edu/" title="ISchool">School of Information</a>, <a href="http://www.berkeley.edu/" title="University of California, Berkeley">UC Berkeley</a></affiliation>
+	<date short="2010-07-06">July 6, 2010</date>
+	<copyright>2013 Erik Wilde</copyright>
+	<categories>
+		<category element="xml" class="xml" name="XML"/>
+		<category element="elem" class="xml elem" name="XML Element"/>
+		<category element="html" class="html" name="HTML"/>
+		<category element="htmla" class="html" name="HTML Attribute"/>
+		<category element="htmel" class="html elem" name="HTML Element"/>
+		<category element="cssp" class="css" name="CSS Property"/>
+		<category element="csss" class="css" name="CSS Selector"/>
+		<category element="css" class="css" name="CSS"/>
+		<category element="xpathf" class="xpath" name="XPath Function"/>
+		<category element="xpath" class="xpath" name="XPath"/>
+		<category element="xslte" class="xslt elem" name="XSLT Element"/>
+		<category element="xslta" class="xslt" name="XSLT Attribute"/>
+		<category element="xslt" class="xslt" name="XSLT"/>
+		<category element="xsde" class="xsd elem" name="XSD Element"/>
+		<category element="xsda" class="xsd" name="XSD Attribute"/>
+		<category element="xsd" class="xsd" name="XSD"/>
+		<category element="uri" class="uri" name="URI"/>
+		<category element="http" class="http" name="HTTP"/>
+		<category element="mime" class="mime" name="MIME"/>
+		<category element="atom" class="atom" name="Atom"/>
+		<category element="atompub" class="atom" name="AtomPub"/>
+	</categories>
+    <toc name="toc.html">
+		<table xmlns="" rules="all" cellspacing="0" cellpadding="5" width="100%">
+		<!-- xmlns="" makes sure the document can be included into a web page setting xmlns to the HTML namespace. -->
+			<thead>
+				<tr>
+					<th valign="bottom">Presenter</th>
+					<th valign="bottom">Subject</th>
+					<th valign="bottom">Slides</th>
+					<th valign="bottom">Additional Resources</th>
+				</tr>
+			</thead>
+			<tbody>
+				 <hotspot:for-each-presentation>
+					<tr>
+						<td align="center" valign="middle"><hotspot:for-each-author><hotspot:author/><br/></hotspot:for-each-author></td>
+						<td valign="top"><b><hotspot:title/>:</b> <span class="abstract"><hotspot:toc class="abstract"/></span></td>
+						<td align="center"><hotspot:presentation-link title="Lecture Slides"><hotspot:title form="short"/></hotspot:presentation-link> <hotspot:toc class="notes"/></td>
+						<td align="center"><hotspot:toc class="resources"/></td>
+					</tr>
+				</hotspot:for-each-presentation>
+			</tbody>
+		</table>
+	</toc>
+	<presentation id="rest-clients">
+		<title>Guidelines for Developing REST Clients</title>
+		<affiliation><a href="http://ischool.berkeley.edu/" title="ISchool">School of Information</a>, <a href="http://www.berkeley.edu/" title="University of California, Berkeley">UC Berkeley</a></affiliation>
+		<toc class="notes">(<a href="intro.pdf" title="PDF Version">PDF</a>)</toc>
+		<toc class="resources"><a href="http://dret.net/biblio/reference/pau09a" title="Cesare Pautasso and Erik Wilde, 'Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design', Proceedings of the 18th International World Wide Web Conference, ACM Press, Madrid, Spain, April 2009">Loose&#160;Coupling</a></toc>
+		<toc class="abstract">Developing robust, adaptable, offline-capable, and future-proof applications based on solid REST services is not hard, but it's still something that does not happen automatically. In this tutorial, we look at how to avoid unnecessarily tightly coupled applications against REST services. Starting with some general observations about what makes RESTful services appealing for some classes of applications, we then look at topics that cover how to develop good REST clients, such as following links, expecting failure, implementing offline support, leveraging method semantics, and supporting all extension points.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+	</presentation>  
+	<presentation id="consuming-rest">
+		<title>Guidelines for Consuming REST Services</title>
+		<toc class="notes">(<a href="intro.pdf" title="PDF Version">PDF</a>)</toc>
+		<toc class="resources"><a href="http://dret.net/biblio/reference/pau09a" title="Cesare Pautasso and Erik Wilde, 'Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design', Proceedings of the 18th International World Wide Web Conference, ACM Press, Madrid, Spain, April 2009">Loose&#160;Coupling</a></toc>
+		<toc class="abstract">Depending on the background of developers, REST sometimes can be a bit of a challenge because there is not the same concept of "client-side libraries" or "service descriptions". Instead, REST services expose linked resources, and instead of calling a well-known set of functions, developers are expected to handle well-known representations, and follow well-known links in them. To make this a little easier, IIG/EMC is in the process of defining and setting up a registry of REST concepts, which make it easier for an developer to navigate the set of interconnected resources in a network of interlinked services. In this talk, we present the concepts captured and documented in this registry, and also explain how they can make the life of a REST developer easier.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+	</presentation>  
+</hotspot>
