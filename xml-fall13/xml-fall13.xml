@@ -91,19 +91,74 @@
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
-		<slide>
-			<title>XML Executive Summary</title>
-			<ul>
-				<li>More and more value switches from goods to information</li>
-				<li>Information sharing needs well-defined structures</li>
-				<li>Business agility and flexibility are critical success factors</li>
-				<li>Standardized formats prevent lock-in and incompatibilities</li>
-				<li>XML is the most successful format for structured data</li>
-				<li>XML technologies are widely used and universally available</li>
-				<li>XML for B2B enables better workflow engineering</li>
-				<li>XML for B2C is a good interface between B2B and Web interfaces</li>
-				<li><em>XML is a mission-critical success factor for optimizing ROI and minimizing interoperability risks in today's fast-moving globalized fragmented business landscape …</em></li>
-			</ul>
-		</slide>
+		<part>
+			<title>Varia</title>
+			<slide>
+				<title>About Me</title>
+				<ul>
+					<li>Computer Science at <a href="http://www.tu-berlin.de/eng/">Technical University of Berlin (TUB)</a> (1988-91)</li>
+					<li>Ph.D. at <a href="http://www.ethz.ch/index_EN" title="Swiss Federal Institute of Technology">ETH Zürich</a> (1992-97)</li>
+					<li>Post-Doc at <a href="http://www.icsi.berkeley.edu/" title="International Computer Science Institute">ICSI</a>, Berkeley (1997/98)</li>
+					<li>Various activities in Switzerland (1998-2006)</li>
+					<ul>
+						<li>teaching at <a href="http://www.ethz.ch/index_EN">ETH Zürich</a> and <a href="http://www.fhnw.ch/">FHNW</a></li>
+						<li>working as independent consultant (training, courses, consulting)</li>
+						<li>research in <a href="http://dret.net/projects/">various XML-related areas</a></li>
+					</ul>
+					<li>Professor at the <a href="http://ischool.berkeley.edu/">School of Information</a> (2006-11)</li>
+					<ul>
+						<li>Technical Director of the <a href="http://isd.ischool.berkeley.edu/">Information and Service Design (ISD) program</a></li>
+					</ul>
+					<li>Architect at <a href="http://www.emc.com/">EMC</a>'s <a href="http://web.emc.com/informationintelligence">Information Intelligence Group (IIG)</a> (since 2011)</li>
+					<ul>
+						<li>providing guidance and guidelines for IIG's RESTful SOA</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>About this Course</title>
+				<ul>
+					<li>Course Web page: <code><a href="./">http://dret.net/lectures/xml-fall13/</a></code></li>
+<!--
+					<li>Course mailing list: <code><a href="mailto:xml-fall13@bspace.berkeley.edu">xml-fall13@bspace.berkeley.edu</a></code></li>
+					<ul>
+						<li>archived in the <a href="https://bspace.berkeley.edu/portal/site/b34168fa-8819-414f-8787-c6242c3cf3ac">bspace</a> <a href="https://bspace.berkeley.edu/portal/site/b34168fa-8819-414f-8787-c6242c3cf3ac/page/64e4b6e5-8846-497f-ba11-2ddbfaa3d6c4">email archive</a></li>
+					</ul>
+ -->
+					<li>Letter grade based on final exam (30min oral)</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>About these Slides</title>
+				<ul>
+					<li>Generated from <a href="http://dret.net/projects/xslidy/">Hotspot</a> <a href="xml-fall13.xml">XML</a></li>
+					<li>All sources (XML/examples/images) <a href="https://github.com/dret/lectures/tree/master/xml-fall13">available at GitHub</a></li>
+					<li>Designed for online presentation and use (lots of links!)</li>
+					<ul>
+						<li>for printing, use <q>a</q> (all slides), and then <q>s</q> (smaller font) a couple of times</li>
+					</ul>
+					<li>A good real-world example for XML applications</li>
+					<ul>
+						<li>Slidy/Kilauea is useful, but there is no support for structures and hyperlinking</li>
+						<li>Hotspot adds these features by adding an XSLT transformation</li>
+						<li>Hotspot is useful, but there is no interface (XML editing only)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Additional Resources</title>
+				<ul>
+					<li><a href="http://dret.net/biblio/">Bibliography at <code>http://dret.net/biblio/</code></a></li>
+					<ul>
+						<li>suggestions, updates, corrections are very welcome (really!)</li>
+					</ul>
+					<li>The <a href="http://www.w3.org/"><em>World Wide Web Consortium (W3C)</em></a></li>
+					<ul>
+						<li>the organization which invented XML</li>
+						<li>as well as (almost) all other technologies covered in this course</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 </hotspot>
