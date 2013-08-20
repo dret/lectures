@@ -206,16 +206,344 @@
 				<ul>
 					<li>A data format defines a framework for certain kinds of data</li>
 					<ul>
-						<li>some formats are <em>metaformats</em> such as XML, others are not</li>
+						<li>some formats are <em>metalanguages</em> such as XML, but most are not</li>
 					</ul>
 					<li>A database is based on a <em>data model</em> and manages data as well as access</li>
 					<li>XML does not talk about databases at all</li>
-					<li>It's possible to build databases that support XML's model</li>
+					<li>It is possible to build databases that support XML's model</li>
 					<ul>
+						<li>data storage can be scaled beyond what filesystems can manage</li>
 						<li>access to XML can be much better optimized in XML databases</li>
 					</ul>
 				</ul>
 			</slide>
+			<slide>
+				<title>Moving Data into a Database</title>
+				<img src="xDB-import.png" style="height : 70% ; margin : 2% ; " href="http://developer.emc.com/docs/documentum/xdb/manual/index.html#doc:task/adminclient_importing_data.html"/>
+			</slide>
+			<slide>
+				<title></title>
+			</slide>
 		</part>
+		<slide>
+			<title>Conclusions</title>
+		</slide>
+	</presentation>
+	<presentation id="basics">
+		<title short="Basics">XML Basics</title>
+		<date>2013-09-09</date>
+		<toc class="resources"><a href="http://www.w3.org/TR/REC-xml/" title="W3C XML 1.0 Specification">Spec</a>&#160;· <a href="http://dret.net/netdret/docs/wilde-cacm2008-xml-fever.html" title='Erik Wilde and Robert J. Glushko, "XML Fever", Communications of the ACM, 51(7):40-46, July 2008'>XML&#160;Fever</a></toc>
+		<toc class="abstract">The <em>Extensible Markup Language (XML)</em> defines a simple way for structuring data. The power and popularity of XML can be explained by its versatility, the platform-independence, the standards and technologies leveraging it, and the number of tools and products supporting it. Understanding XML itself is rather simple, it only depends on a very small set of other technologies. Unicode is the most important foundation of XML. XML itself specifies two different things: on the one hand the format for structured data, which are called <em>XML documents</em>, and on the other hand a constraint language for XML documents, which is called <em>Document Type Definition (DTD)</em>.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part>
+			<title>Foundations for XML</title>
+			<slide>
+				<title>Identifications</title>
+				<ul>
+					<li>Identification of Character Encodings</li>
+					<ul>
+						<li>text can be encoded using different character sets and encodings</li>
+						<li>IANA maintains the <a href="http://www.iana.org/assignments/character-sets">official list of character encodings</a></li>
+						<li>character encoding is about <em>characters</em>, not about <em>text</em></li>
+					</ul>
+					<li>Identification of Languages</li>
+					<ul>
+						<li>textual content should be tagged with language information</li>
+						<li>specification based on <a href="http://www.loc.gov/standards/iso639-2/langhome.html">ISO 639 language tags</a></li>
+						<li>language identification is about <em>text</em>, not about <em>characters</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>XML's Idea of Content and Names</title>
+				<p>XML documents can use a wide array of characters. They are defined by <a href="http://www.unicode.org/">Unicode</a>, which currently (Version 5.0) defines more than 100'000 characters (#100'000 added in 2005).</p>
+				<listing src="japanese1.xml"/>
+				<listing src="japanese2.xml"/>
+			</slide>
+			<slide>
+				<title>XML and Unicode</title>
+				<ul>
+					<li>XML is based on Unicode</li>
+					<ul>
+						<li>XML is defined in terms of <a href="http://www.w3.org/TR/xml/#sec-starttags">character structures</a></li>
+						<li>how these characters are encoded is not part of XML</li>
+					</ul>
+					<li>How are XML documents encoded?</li>
+					<ul>
+						<li>applications can use any character encoding they like</li>
+						<li>XML processors <em>must</em> support UTF-8 and UTF-16</li>
+						<li>XML processors <em>may</em> support any number of additional encodings</li>
+					</ul>
+					<li>How is the encoding <q>encoded</q>?</li>
+					<ul>
+						<li>part of the XML document: <code>&lt;?xml version="1.0" encoding="UTF-8"?></code></li>
+						<li>bootstrap problem solved heuristically or by out-of-band information</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>XML</title>
+			<slide>
+				<title>XML Use Cases</title>
+				<ul>
+					<li>XML is a metalanguage supporting application-specific vocabularies</li>
+					<li><em>RSS</em> (and <em>Atom</em>) are XML vocabularies for newsfeeds</li>
+					<ul>
+						<li><a href="http://docordie.blogspot.com/">Doc or Die</a>: <a href="http://docordie.blogspot.com/rss.xml">RSS feed</a> vs. <a href="http://docordie.blogspot.com/atom.xml">Atom feed</a></li>
+						<li>browsers now incorporate and/or integrate newsfeed readers</li>
+					</ul>
+					<li><em>OpenDocument (ODF)</em> is a language for office application documents</li>
+					<ul>
+						<li>designed for open and interoperable exchange</li>
+						<li>standardized by ISO (which now also standardizes Microsoft's <em>Open XML</em>)</li>
+					</ul>
+					<li><em>Scalable Vector Graphics (SVG)</em> for portable vector graphics</li>
+					<ul>
+						<li>designed for embedding in Web pages</li>
+						<li>good example for compound documents: <a href="http://www.carto.net/papers/svg/animated_weather_symbols/">HTML containing SVG</a></li>
+					</ul>
+				</ul>
+			</slide>
+			<part>
+				<title>XML Documents</title>
+				<slide>
+					<title>Markup?</title>
+					<ul>
+						<li>Structures are encoded using special characters</li>
+						<ul>
+							<li>a fundamental difference when comparing to binary formats</li>
+							<li>markup languages can be read and modified using text-based tools</li>
+							<li>programs must treat markup characters in a special way</li>
+						</ul>
+						<li>Documents are content interspersed with markup (i.e., structures)</li>
+						<ul>
+							<li>XML-aware software interprets the markup</li>
+							<li>XML-unaware software just sees a text file</li>
+							<li>modifications must be made XML-aware (e.g., inserting <q>AT&amp;T</q> as <q>AT&amp;amp;T</q>)</li>
+						</ul>
+						<li>You have to pay the <link href="markup-price"/></li>
+					</ul>
+				</slide>
+				<slide>
+					<title>Basic Concepts</title>
+					<ul>
+						<li>XML Documents have an <em>XML declaration</em> (optional)</li>
+						<li>There is exactly one <em>document element</em> (a.k.a. <em>root element</em>)</li>
+						<li>Elements may be nested (there is no conceptual limit)</li>
+						<ul>
+							<li>elements may be repeated (they can be identified by position)</li>
+						</ul>
+						<li>Elements are marked up using <em>tags</em></li>
+						<ul>
+							<li>most elements have content, surrounded by <em>start</em> and <em>end tags</em></li>
+							<li>empty elements are allowed and may use a special notation</li>
+						</ul>
+						<li>Elements may have attributes (zero to any number)</li>
+						<ul>
+							<li>attributes can only occur once on an element (i.e., they cannot be repeated)</li>
+						</ul>
+					</ul>
+					<listing src="my-first.xml"/>
+				</slide>
+				<slide id="xmltree">
+					<title>Tree Syntax</title>
+					<ul>
+						<li>Markup is important, but only a notation</li>
+						<li>XML documents are trees with different node types</li>
+						<ul>
+							<li>nodes so far: document, element, attribute, text</li>
+						</ul>
+						<img style="width : 90% ; margin : 4% ;" src="document-tree.png" title="XML document tree"/>
+					</ul>
+				</slide>
+				<slide id="xmlelements">
+					<title>Elements</title>
+					<ul>
+						<li>Elements can use a <a href="http://www.w3.org/TR/xml/#NT-Name">wide variety of names</a></li>
+						<ul>
+							<li>Allowed: <elem>html</elem>, <elem>id9832798472</elem>, <elem>_</elem>, <elem>:</elem>, <elem>こんにちは</elem></li>
+							<li>Disallowed: leading numbers, spaces, control characters</li>
+						</ul>
+						<li>Element names usually convey some information about the content</li>
+						<ul>
+							<li>this is not reliable and highly language-dependent</li>
+							<li>it is <em>very useful</em> when working with a known vocabulary</li>
+							<li>it is <em>potentially harmful</em> when working with an unknown vocabulary</li>
+						</ul>
+						<li>Elements are the foundation for XML's versatility</li>
+						<ul>
+							<li>they can be nested (<code>&lt;address>&lt;city>Berkeley&lt;/city>&lt;zip>94709&lt;/zip>…</code>)</li>
+							<li>they can be repeated (<code>&lt;givenname>Erik&lt;/givenname>&lt;givenname>Thomas&lt;/givenname></code>)</li>
+							<li>their sequence can convey additional information (given names have a sequence)</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Attributes</title>
+					<ul>
+						<li>Additional information pertaining to elements</li>
+						<li>Traditionally, anything that is not considered <q>content</q></li>
+						<ul>
+							<li>SGML is a document markup language</li>
+							<li>XML uses SGML's concepts</li>
+							<li>XML has its roots in the document world</li>
+						</ul>
+						<li>Elements: Content (i.e., Data); Attributes: Metadata</li>
+						<li>Documents often distinguish by what is textual content</li>
+					</ul>
+					<listing src="section.xml" line="12-20"/>
+				</slide>
+				<slide>
+					<title>Attribute Syntax</title>
+					<ul>
+						<li>Naming rules are the same as for <link href="xmlelements"/></li>
+						<li>Attributes always appear within an element's <em>start tag</em></li>
+						<li>Attributes are <a href="http://www.w3.org/TR/xml/#NT-Attribute">name/value-pairs</a></li>
+						<ul>
+							<li>the value is enclosed in single or double quotes</li>
+						</ul>
+						<li>Attribute with a single-quote value: <elem>elem attr="Single: '"/</elem></li>
+						<li>Attribute with a double-quote value: <elem>elem attr='Double :"'/</elem></li>
+						<li>How can attribute values contain both?</li>
+					</ul>
+				</slide>
+				<slide id="markup-price">
+					<title>The Price for Markup</title>
+					<ul>
+						<li>Markup characters have a special meaning</li>
+						<ul>
+							<li><q>&lt;</q> opens a tag</li>
+							<li>for attribute values, quotes delimit the value</li>
+						</ul>
+						<li>The literal use of a markup character requires escaping</li>
+						<ul>
+							<li>XML's <em>entities</em> can refer to pieces of content</li>
+							<li>entity syntax is <code>&amp;name;</code> for referring to the entity <q><code>name</code></q></li>
+							<li>XML has 5 <a href="http://www.w3.org/TR/xml/#sec-predefined-ent">predefined entities</a>: <code>&amp;lt;</code>, <code>&amp;gt;</code>, <code>&amp;amp;</code>, <code>&amp;apos;</code>, <code>&amp;quot;</code></li>
+						</ul>
+						<li>Attribute using both kinds of quotes: <code>&lt;elem attr="Single ' and Double &amp;quot;"/></code></li>
+					</ul>
+					<pre><![CDATA[<li>Attribute using both kinds of quotes: <code>&lt;elem attr="Single ' and Double &amp;quot;"/></code></li>]]></pre>
+				</slide>
+				<slide id="mixed-content">
+					<title>Mixed Content</title>
+					<p>The term <em>Mixed content</em> in XML refers to elements <a href="http://www.w3.org/TR/xml/#sec-mixed-content">which have text content mixed with elements</a>. What these elements do depends on the elements <img style="height : 1em" src="smiley.gif"/>, but the important point is that they are on the same level as the text nodes of the mixed content.</p>
+					<pre><![CDATA[<p>The term <em>Mixed content</em> in XML refers to elements <a href="http://www.w3.org/TR/xml/#sec-mixed-content">which have text content mixed with elements</a>. What these elements do depends on the elements <img style="height : 1em" src="smiley.gif"/>, but the important point is that they are on the same level as the text nodes of the mixed content.</p>]]></pre>
+					<img style="width : 90% ; margin : 4% ;" src="mixed-content.png" title="XML tree for mixed content"/>
+				</slide>
+				<slide>
+					<title>Mixed Content Usage</title>
+					<ul>
+						<li>Database people find mixed content irritating</li>
+						<ul>
+							<li>cannot be easily mapped to relational structures</li>
+							<li>is more <em>document-like</em> than <em>data-like</em></li>
+							<li>much harder to optimize for query analysis and query processing</li>
+						</ul>
+						<li>Document people find mixed content very intriguing</li>
+						<ul>
+							<li>textual content can still be used as simple text</li>
+							<li>markup provides additional information for rich text</li>
+							<li>start with a text-only document and use markup to add structure to it</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="whitespace">
+					<title>Whitespace</title>
+					<ul>
+						<li>XML documents often are pretty-printed</li>
+						<li><em>Whitespace text nodes</em> often are <q>not really content</q></li>
+						<ul>
+							<li>XML whitespace characters are <em>space</em>, <em>tab</em>, <em>newline</em>, and <em>carriage return</em></li>
+							<li>whitespace text nodes are text nodes containing <em>only</em> whitespace characters</li>
+						</ul>
+						<img style="width : 90% ; margin : 4% ;" src="document-tree-whitespace.png" title="XML tree with whitespace text nodes"/>
+					</ul>
+				</slide>
+				<slide>
+					<title>Significant Whitespace</title>
+					<ul>
+						<li>Some whitespace text nodes are relevant</li>
+						<li>Usually text nodes in <em>mixed content</em> elements</li>
+					</ul>
+					<p>Whitespace <i>can be</i> <u>very</u> <b>important</b>!</p>
+					<pre><![CDATA[<p>Whitespace <i>can be</i> <u>very</u> <b>important</b>!</p>]]></pre>
+					<img style="height : 40% ; margin : 2% ;" src="significant-whitespace.png" title="XML tree containing significant whitespace"/>
+				</slide>
+			</part>
+			<part id="wellformed">
+				<title>Processing XML</title>
+				<slide>
+					<title>Observing XML Syntax</title>
+					<ul>
+						<li>XML's syntax requires you to use the right characters</li>
+						<ul>
+							<li><a href="http://www.w3.org/TR/xml/#NT-element">the grammar alone</a> allows many XML errors</li>
+							<li><a href="http://www.w3.org/TR/xml/#GIMatch">additional constraints</a> ensure that everything is used correctly</li>
+						</ul>
+						<li><em>XML processors</em> (a.k.a. <em>XML parsers)</em> check for these rules</li>
+						<ul>
+							<li>if there are problems, the document cannot be interpreted as XML</li>
+							<li>otherwise, the document is said to be <em>well-formed</em></li>
+						</ul>
+						<li>Only well-formed documents can be regarded as a tree</li>
+						<ul>
+							<li>other documents are not XML at all, even though they may be close</li>
+							<li>XML processors must report problems to the application (no guessing allowed)</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Validity</title>
+					<ul>
+						<li><em>Well-formed documents</em> observe XML rules</li>
+						<ul>
+							<li>they observe the XML syntax</li>
+							<li>they observe all well-formedness constraints</li>
+						</ul>
+						<li>Applications require the right elements and attributes</li>
+						<li><em>Validity</em> is a more comprehensive concept</li>
+						<li><em>Valid documents</em> observe additional rules</li>
+						<ul>
+							<li>they must be well-formed documents</li>
+							<li>they must adhere to the constraints defined in a schema (DTD, XSD, RNG, ...)</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Semantics</title>
+					<ul>
+						<li>XML is a language for encoding trees</li>
+						<ul>
+							<li>Elements and attributes are labeled node in this tree</li>
+							<li>the labels can be chosen freely by document authors</li>
+						</ul>
+						<li>The tree's meaning is nothing XML is concerned with</li>
+						<ul>
+							<li>peers must have a mutual understanding of the semantics</li>
+							<li>XML without mutual understanding is almost useless</li>
+							<li>reverse engineering often is possible, but it is risky and brittle</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+		</part>
+		<part>
+			<title>Conclusions</title>
+			<slide>
+				<title>XML Documents</title>
+				<ul>
+					<li>XML documents are structured data using markup</li>
+					<li>Elements and Attributes are the main structuring mechanisms</li>
+					<li>Elements and Attributes have names, but have no inherent semantics</li>
+					<li>For using XML successfully, <em>shared semantics</em> are essential</li>
+					<li>Always think about semantics</li>
+				</ul>
+			</slide>
+		</part>		
 	</presentation>
 </hotspot>
