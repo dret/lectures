@@ -119,7 +119,8 @@
 				<title>About this Course</title>
 				<ul>
 					<li>Course Web page: <code><a href="./">http://dret.net/lectures/xml-fall13/</a></code></li>
-<!--
+					<li>All sources (XML/examples/images) <a href="https://github.com/dret/lectures/tree/master/xml-fall13">available at GitHub</a></li>
+					<!--
 					<li>Course mailing list: <code><a href="mailto:xml-fall13@bspace.berkeley.edu">xml-fall13@bspace.berkeley.edu</a></code></li>
 					<ul>
 						<li>archived in the <a href="https://bspace.berkeley.edu/portal/site/b34168fa-8819-414f-8787-c6242c3cf3ac">bspace</a> <a href="https://bspace.berkeley.edu/portal/site/b34168fa-8819-414f-8787-c6242c3cf3ac/page/64e4b6e5-8846-497f-ba11-2ddbfaa3d6c4">email archive</a></li>
@@ -132,7 +133,6 @@
 				<title>About these Slides</title>
 				<ul>
 					<li>Generated from <a href="http://dret.net/projects/xslidy/">Hotspot</a> <a href="xml-fall13.xml">XML</a></li>
-					<li>All sources (XML/examples/images) <a href="https://github.com/dret/lectures/tree/master/xml-fall13">available at GitHub</a></li>
 					<li>Designed for online presentation and use (lots of links!)</li>
 					<ul>
 						<li>for printing, use <q>a</q> (all slides), and then <q>s</q> (smaller font) a couple of times</li>
@@ -156,6 +156,63 @@
 					<ul>
 						<li>the organization which invented XML</li>
 						<li>as well as (almost) all other technologies covered in this course</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>Why/How/Where XML is Useful</title>
+			<slide>
+				<title>XML is a Metalanguage</title>
+				<ul>
+					<li>XML can be used to represent any kind of structured data</li>
+					<ul>
+						<li>(as long as the data is modeled in a way that fits XML's metamodel)</li>
+					</ul>
+					<li>XQuery and XSLT can be used to process XML documents</li>
+					<ul>
+						<li>(or use the language of your choice and XML libraries)</li>
+					</ul>
+					<li>XML formats can be designed to be flexible and extensible</li>
+					<ul>
+						<li>(this requires good modeling skills <em>and</em> good XML skills)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>GPS Track Visualization</title>
+				<img src="marin-run-map.png" style="height : 70% ; margin : 2% ; " href="http://app.strava.com/activities/18200957"/>
+			</slide>
+			<slide>
+				<title>GPS Track in XML</title>
+				<ul>
+					<li><a href="http://app.strava.com/activities/39586316">GPS data</a> exported to <a href="http://www.topografix.com/gpx/1/1/">GPX format</a></li>
+				</ul>
+				<listing src="2010-01-15-1.gpx" line="1-21"/>
+			</slide>
+			<slide>
+				<title>GPS Track Combination</title>
+				<img src="heatmap-golden-gate.png" style="height : 70% ; margin : 2% ; " href="http://x.raceshape.com/heatmap/view.html?id=r1ycR0%2Fhp88VjX%2FAVO4B3gHo%2B9gyzOuMQA1uDqCn"/>
+			</slide>
+			<slide>
+				<title>Finding Activities</title>
+				<listing src="find-by-location.xq"/>
+			</slide>
+		</part>
+		<part>
+			<title>Data Formats? Databases?</title>
+			<slide>
+				<title>XML and Databases</title>
+				<ul>
+					<li>A data format defines a framework for certain kinds of data</li>
+					<ul>
+						<li>some formats are <em>metaformats</em> such as XML, others are not</li>
+					</ul>
+					<li>A database is based on a <em>data model</em> and manages data as well as access</li>
+					<li>XML does not talk about databases at all</li>
+					<li>It's possible to build databases that support XML's model</li>
+					<ul>
+						<li>access to XML can be much better optimized in XML databases</li>
 					</ul>
 				</ul>
 			</slide>
