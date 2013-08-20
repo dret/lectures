@@ -1,7 +1,7 @@
 XML Foundations — Fall 2013
 ===========================
 
-Sources for the [http://www.ischool.berkeley.edu/courses/2013/fall](Fall 2013) [XML Foundations](http://www.ischool.berkeley.edu/courses/i242) course at [UC Berkeley](http://www.berkeley.edu/)'s [School of Information](http://www.ischool.berkeley.edu/).
+Sources for the [Fall 2013](http://www.ischool.berkeley.edu/courses/2013/fall) [XML Foundations](http://www.ischool.berkeley.edu/courses/i242) course at [UC Berkeley](http://www.berkeley.edu/)'s [School of Information](http://www.ischool.berkeley.edu/).
 
 License
 -------
