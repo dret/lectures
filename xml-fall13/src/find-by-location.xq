@@ -15,7 +15,7 @@ declare variable $lonupper := $lon + $box;
 declare variable $latlower := $lat - $box;
 declare variable $latupper := $lat + $box;
 
-( "Searching ", count($files), "files with ", count($files/gpx/trk/trkseg/trkpt), " track points:&#xa;", 
+( "Searching", count($files), "files with", count($files/gpx/trk/trkseg/trkpt), "track points:&#xa;", 
 
 for $activity in $files
     where exists($activity/gpx/trk/trkseg/trkpt[ (@lon > $lonlower) and
