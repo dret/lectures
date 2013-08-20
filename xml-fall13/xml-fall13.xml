@@ -222,7 +222,22 @@
 				<img src="xDB-import.png" style="height : 70% ; margin : 2% ; " href="http://developer.emc.com/docs/documentum/xdb/manual/index.html#doc:task/adminclient_importing_data.html"/>
 			</slide>
 			<slide>
-				<title></title>
+				<title>XML and CSV</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
+			<slide>
+				<title>XML and JSON</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
+			<slide>
+				<title>XML and RDF</title>
+				<ul>
+					<li></li>
+				</ul>
 			</slide>
 		</part>
 		<slide>
@@ -233,7 +248,7 @@
 		<title short="Basics">XML Basics</title>
 		<date>2013-09-09</date>
 		<toc class="resources"><a href="http://www.w3.org/TR/REC-xml/" title="W3C XML 1.0 Specification">Spec</a>&#160;· <a href="http://dret.net/netdret/docs/wilde-cacm2008-xml-fever.html" title='Erik Wilde and Robert J. Glushko, "XML Fever", Communications of the ACM, 51(7):40-46, July 2008'>XML&#160;Fever</a></toc>
-		<toc class="abstract">The <em>Extensible Markup Language (XML)</em> defines a simple way for structuring data. The power and popularity of XML can be explained by its versatility, the platform-independence, the standards and technologies leveraging it, and the number of tools and products supporting it. Understanding XML itself is rather simple, it only depends on a very small set of other technologies. Unicode is the most important foundation of XML. XML itself specifies two different things: on the one hand the format for structured data, which are called <em>XML documents</em>, and on the other hand a constraint language for XML documents, which is called <em>Document Type Definition (DTD)</em>.</toc>
+		<toc class="abstract">The <em>Extensible Markup Language (XML)</em> defines a simple way for structuring data. The power and popularity of XML can be explained by its versatility, the platform-independence, the standards and technologies leveraging it, and the number of tools and products supporting it. Understanding XML itself is rather simple, as it only depends on a very small set of other technologies. Unicode is the most important foundation of XML. XML itself specifies two different things: on the one hand the format for structured data, which are called <em>XML documents</em>, and on the other hand a constraint language for XML documents, which is called <em>Document Type Definition (DTD)</em>.</toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
