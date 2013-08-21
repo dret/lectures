@@ -218,6 +218,14 @@
 				</ul>
 			</slide>
 			<slide>
+				<title>XQuery using Files</title>
+				<img style="width : 86% ; margin : 4% ; " src="xquery-overview-filesystem.png" title="File-based XQuery Processing"/>
+			</slide>
+			<slide>
+				<title>XQuery using an XML Database</title>
+				<img style="width : 86% ; margin : 4% ; " src="xquery-overview-dbms.png" title="DB-based XQuery Processing"/>
+			</slide>
+			<slide>
 				<title>Moving Data into a Database</title>
 				<img src="xDB-import.png" style="height : 70% ; margin : 2% ; " href="http://developer.emc.com/docs/documentum/xdb/manual/index.html#doc:task/adminclient_importing_data.html"/>
 			</slide>
