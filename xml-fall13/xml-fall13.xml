@@ -586,4 +586,459 @@
 			</slide>
 		</part>		
 	</presentation>
+	<presentation id="xpath">
+		<title short="XPath">XML Path Language (XPath)</title>
+		<date>2013-09-16</date>
+		<toc class="assignment"><a href="a/3/">A3</a>&#160;assigned (due&#160;date:&#160;10/1)</toc>
+		<toc class="resources"><a href="xpath-chapter.pdf">XPath Chapter</a>&#160;· <a href="xpath-quickref.pdf">XPath QuickRef</a></toc>
+		<toc class="abstract">XML structures data into a rather small number of different constructs, most notably elements and attributes. The <em>XML Path Language (XPath)</em> defines a way how to select parts of XML documents, so that they can be used for further processing. XPath's primary use in in <em>XSL Transformations (XSLT)</em>, but other XML technologies use it as well, e.g. XSD. XPath is a very compact language with a syntax that resembles path expressions well-known from file systems. These path expressions, however, are generalized and therefore much more powerful than the rather simple path expressions in file systems. Because of its use in different XML technologies, XPath is one of the most important XML core technologies.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part>
+			<title>Why XPath?</title>
+			<slide>
+				<title>Selecting Parts of XML Documents</title>
+				<ul>
+					<li>XML is a syntax for trees</li>
+					<ul>
+						<li>it defines a way for how trees can be exchanged</li>
+					</ul>
+					<li>XML technologies should provide support for working with trees</li>
+					<ul>
+						<li>when receiving trees, access to the tree should be easy (DOM)</li>
+						<li>validating trees should be easy (<link href="xsd-1">XSD</link>)</li>
+						<li>mapping trees should be easy (<link href="xslt-1">XSLT</link>)</li>
+						<li>querying tree collections should be easy (<link href="xquery">XQuery</link>)</li>
+						<li>XPath is what regular expressions for text-based information</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Making Selection Reusable</title>
+				<ul>
+					<li>Different XML technologies need selection</li>
+					<ul>
+						<li><link href="xslt-1">XSLT</link> needs it for selecting parts and manipulating them</li>
+						<li><link href="xsd-1">XSD</link> needs it for applying identity constraints</li>
+						<li>DOM needs it for extracting parts from an XML tree</li>
+						<li>XQuery needs it for writing XML-oriented queries</li>
+					</ul>
+					<li>XPath was created to be reusable</li>
+					<ul>
+						<li>XML experts should only learn one selection language</li>
+						<li>this knowledge can be reused when learning new technologies</li>
+						<li>implementations can reuse code libraries</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>How XPath Evolved</title>
+				<ul>
+					<li>XSL was designed as the new XML stylesheet language</li>
+					<ol>
+						<li><link href="xslt-1">XSL Transformations (XSLT)</link> transform the input document</li>
+						<li><em>XSL Formatting Objects (XSL-FO)</em> is what they will transform it to</li>
+					</ol>
+					<li>XSLT was designed to work on arbitrary XML input documents</li>
+					<ul>
+						<li>started as a part of XSL (<a href="http://www.w3.org/TR/1998/WD-xsl-19981216">WD-xsl-19981216</a> → <a href="http://www.w3.org/TR/1999/WD-xslt-19990421">WD-xslt-19990421</a>)</li>
+						<li>for selecting parts of the transformation input, a selection mechanism had to be provided</li>
+					</ul>
+					<li>XPath was turned into a standalone specification</li>
+					<ul>
+						<li>started as a part of XSLT (<a href="http://www.w3.org/TR/1999/WD-xslt-19990421">WD-xslt-19990421</a> → <a href="http://www.w3.org/1999/07/WD-xslt-19990709">WD-xslt-19990709</a>)</li>
+						<li>reused in a number of other W3C specifications (XSD, DOM)</li>
+					<li>Complete overhaul for XSLT 2.0 and XQuery</li>
+					<ul>
+						<li><a href="http://www.w3.org/TR/xpath20/">XPath 2.0</a> as the core language</li>
+						<li>a much larger set of <a href="http://www.w3.org/TR/xpath-functions/">functions and operators</a></li>
+						<li>the underlying <a href="http://www.w3.org/TR/xpath-datamodel/">data model</a> which describes the foundation</li>
+					</ul>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>How XPath Works</title>
+			<part id="xpath-tree">
+				<title>The XPath Tree Model</title>
+				<slide>
+					<title>Starting from the Infoset</title>
+					<ul>
+						<li>XPath operates on an abstract data model</li>
+						<ul>
+							<li>a tree derived from the <link href="infoset"/></li>
+							<li>a simplification (another one!) of the underlying XML</li>
+						</ul>
+						<li>The Infoset is turned into an <em>XPath node tree</em></li>
+						<ul>
+							<li>11 infoset item types → 7 XPath node tree node types</li>
+							<li>character items are merged into text nodes</li>
+							<li>namespace declarations are no longer visible as attributes</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="not-xpath">
+					<title>What is <u>Not</u> in the XPath Tree</title>
+					<ul>
+						<li>The same things which are <link href="not-infoset">not in the Infoset</link></li>
+						<ul>
+							<li>the order of attributes in a start tag</li>
+							<li>the types of quotes around attribute values</li>
+							<li>character references and entities (<code>&amp;#xFC;</code>/<code>&amp;uuml;</code> → <code>ü</code>)</li>
+						</ul>
+						<li>And some more …</li>
+						<ul>
+							<li>namespace declarations are no longer visible as attributes</li>
+							<li>notations and unexpanded entity references</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part>
+				<title>XPath Evaluation</title>
+				<slide>
+					<title>Tree In / Selection Out</title>
+					<ul>
+						<li>XPath evaluates an expression based on a tree</li>
+						<li>Where the tree comes from is out of XPath's scope</li>
+						<li>The result of the evaluation is a selection</li>
+						<ul>
+							<li><code>//img[not(@alt)]</code> → select all images which have no <code>alt</code> attribute</li>
+							<li><code>count(//img)</code> → return the number of images</li>
+							<li><code>/descendant::img[3]/@src</code> → return the third image's <code>src</code> URI</li>
+							<li><code>starts-with(/html/@lang, 'en')</code> → test whether the document's language is english</li>
+						</ul>
+						<li>Syntax errors may occur</li>
+						</ul>
+				</slide>
+			</part>
+		</part>
+		<part>
+			<title short="Location Paths">XPath Location Paths</title>
+			<slide>
+				<title>Location Path Structure</title>
+				<ul>
+					<li>Each location path consists of <em>Location Steps</em></li>
+					<ul>
+						<li>location steps are separated by <q><code>/</code></q>, like path names in file systems</li>
+					</ul>
+					<li>Similarities between XPath location paths and file systems</li>
+					<ol>
+						<li>nodes in the <link href="xpath-tree">XPath tree</link> have different types</li>
+						<li>the <link href="xpath-nodetest">type and number of nodes selected by one step</link></li>
+						<li>the <link href="xpath-axes">direction in which each step moves</link></li>
+						<li>additional <link href="xpath-predicates">filters for selecting specific nodes</link></li>
+					</ol>
+					<li>Differences between XPath location paths and file systems</li>
+					<ol>
+						<li>XPaths may return <link href="xpath-expressions">other data types than nodes</link></li>
+						<li>XPath provides a <link href="xpath-functions">built-in function library</link></li>
+					</ol>
+				</ul>
+			</slide>
+			<part>
+				<title short="Node Tests">XPath Node Tests</title>
+				<slide>
+					<title>File System vs. XPath Paths</title>
+					<table style="margin : 5% ; " width="85%">
+						<tr>
+							<th>File System Path:</th>
+							<td align="center"><code>/</code></td>
+							<td align="center"><code>usr</code></td>
+							<td align="center"><code>/</code></td>
+							<td align="center"><code>local</code></td>
+							<td align="center"><code>/</code></td>
+							<td align="center"><code>apache</code></td>
+							<td align="center"><code>/</code></td>
+							<td align="center"><code>bin</code></td>
+							<td align="center"><code>/</code></td>
+						</tr>
+						<tr>
+							<th># Selected Nodes:</th>
+							<td align="center">1</td>
+							<td align="center">→ 1</td>
+							<td align="center">→</td>
+							<td align="center">1</td>
+							<td align="center">→</td>
+							<td align="center">1</td>
+							<td align="center">→</td>
+							<td align="center">1</td>
+						</tr>
+					</table>
+					<table style="margin : 5% ; " width="85%">
+						<tr>
+							<th>XPath:</th>
+							<td align="center"><code>/</code></td>
+							<td align="center"><code>html</code></td>
+							<td align="center"><code>/</code></td>
+							<td align="center"><code>body</code></td>
+							<td align="center"><code>/</code></td>
+							<td align="center"><code>table</code></td>
+							<td align="center"><code>/</code></td>
+							<td align="center"><code>thead</code></td>
+							<td align="center"><code>/</code></td>
+							<td align="center"><code>tr</code></td>
+						</tr>
+						<tr>
+							<th># Selected Nodes:</th>
+							<td align="center">1</td>
+							<td align="center">→ 1</td>
+							<td align="center">→</td>
+							<td align="center">1</td>
+							<td align="center">→</td>
+							<td align="center">6</td>
+							<td align="center">→</td>
+							<td align="center">4</td>
+							<td align="center">→</td>
+							<td align="center">12</td>
+						</tr>
+					</table>
+				</slide>
+				<slide id="xpath-nodetest">
+					<title>Tests for Nodes</title>
+					<ul>
+						<li>Name tests</li>
+						<ul>
+							<li>testing for a particular name (elements/attributes): <code>/html/head/title</code></li>
+							<li>wildcards (testing for any name): <code>/html/head/*</code></li>
+						</ul>
+						<li>Node type tests</li>
+						<ul>
+							<li>text nodes: <code>text()</code></li>
+							<li>comment nodes: <code>comment()</code></li>
+							<li>any nodes: <code>node()</code></li>
+						</ul>
+						<li>Processing instruction tests</li>
+						<ul>
+							<li>any PI: <code>processing-instruction()</code></li>
+							<li>specific PI: <code>processing-instruction("xml-stylesheet")</code></li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part id="xpath-axes">
+				<title short="Axes">XPath Axes</title>
+				<slide>
+					<title>Where Do You Want to Go Today?</title>
+					<ul>
+						<li>File system paths are one direction only</li>
+						<ul>
+							<li>always one level down in the file system hierarchy</li>
+							<li><code>.</code> and <code>..</code> are clever directory shortcuts</li>
+							<li>other directions supported by tools (e.g., <code>find</code>)</li>
+						</ul>
+						<li>XPath allows steps is different directions</li>
+						<ul>
+							<li>the default direction is <code>child</code></li>
+							<li>other directions are explicitly specified: <code>descendant::a</code></li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Axis Peculiarities</title>
+					<ul>
+						<li>Attributes and Namespaces are <u>not</u> the children of elements, but …</li>
+						<li>… elements are their attributes' parent!</li>
+						<ul>
+							<li>very counter-intuitive</li>
+							<li>very convenient</li>
+						</ul>
+						<li>Attributes and Namespaces are always leaves in the node tree</li>
+						<li>Attribute nodes <u>have</u> the attribute value as their value</li>
+						<li>Namespace nodes <u>have</u> the namespace name (i.e., a URI) as their value</li>
+						<li>Namespace nodes exist because of namespace declarations</li>
+						<ul>
+							<li>in the XPath node tree, only the namespace nodes are visible</li>
+							<li>the namespace declaration attributes (<code>xmlns</code>) are invisible</li>
+							<li>one namespace declaration potentially creates many namespace nodes</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Axes</title>
+					<img style="height : 75% ; margin : 2% ; " src="xpath-axes.png" title="XPath Axes"/>
+				</slide>
+				<slide>
+					<title>Putting it all Together</title>
+					<ul>
+						<li>XPath location paths use a simple syntax</li>
+						<ul>
+							<li>sequence of location steps, separated by <q><code>/</code></q></li>
+						</ul>
+						<li>Each location step uses a simple structure (<code>preceding::p[@class="warning"]</code>)</li>
+						<ol>
+							<li>an axis followed by <q><code>::</code></q> (no axis uses the default axis <code>child</code>)</li>
+							<li>a <link href="xpath-nodetest">node test</link></li>
+							<li><em>0-n</em> <link href="xpath-predicates"/> enclosed in <q><code>[]</code></q></li>
+						</ol>
+						<li>Location paths can be abbreviated</li>
+						<ul>
+							<li><code>child::</code> can be omitted (default axis)</li>
+							<li><code>attribute::</code> can be written as <q><code>@</code></q></li>
+							<li><q><code>.</code></q> is an abbreviation for <code>self::node()</code></li>
+							<li><q><code>..</code></q> is an abbreviation for <code>parent::node()</code></li>
+							<li><q><code>//</code></q> is an abbreviation for <code>/descendant-or-self::node()/</code></li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part id="xpath-predicates">
+				<title>Predicates</title>
+				<slide>
+					<title>Location Step Filters</title>
+					<ul>
+						<li>Predicates are filters for each location step</li>
+						<ul>
+							<li>there can be any number of filters (<em>0-n</em>)</li>
+							<li>each filter is applied to each selected node individually</li>
+						</ul>
+						<li>Each predicate is an XPath and evaluated as a boolean</li>					
+						<ul>
+							<li>the context of this evaluation is the node for which the filter is evaluated</li>
+							<li>if the result is a number, it is compared with the <code>position()</code> function (<code>/descendant::a[5]</code>)</li>
+						</ul>
+						<li>Predicates always reduce the set of selected nodes</li>
+						<ul>
+							<li>as corner cases, the set of selected nodes does not change or is empty</li>
+							<li>predicates are used in the majority of non-trivial XPath location paths</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Location Path Processing</title>
+					<ul>
+						<li>Location paths are processed in a very simple way</li>
+						<ol>
+							<li>start with a given context</li>
+							<li>for each location step, repeat the following steps:</li>
+							<li>based on the context and the axis, select the nodes on this axis</li>
+							<li>reduce this selection to the nodes identified by the node test</li>
+							<li>sequentially apply all filters to each of these nodes</li>
+							<li>take the remaining node set as the context for the next location step</li>
+						</ol>
+					</ul>
+				</slide>
+			</part>
+		</part>
+		<part id="xpath-expressions">
+			<title>XPath Expressions</title>
+			<slide>
+				<title>Beyond Location Paths</title>
+				<ul>
+					<li>XPath is a full expression language</li>
+					<ul>
+						<li>any evaluated expression in XSLT is an XPath</li>
+						<li>XPath must be able to calculate operate on non-XML data types</li>
+					</ul>
+					<li>XPath uses a very simple data model</li>
+					<ol>
+						<li>node sets: <code>//img[not(@alt)]</code></li>
+						<li>number: <code>count(//img)</code></li>
+						<li>string: <code>/descendant::img[3]/@src</code></li>
+						<li>boolean: <code>starts-with(/html/@lang, 'en')</code></li>
+					</ol>
+				</ul>
+			</slide>
+			<slide>
+				<title>XPath Usages</title>
+				<ul>
+					<li>XPath is used in different technologies</li>
+					<ul>
+						<li>XSLT uses XPath as its expression language</li>
+						<li>XSD uses XPath for selecting identity constraint nodes</li>
+						<li>DOM uses XPath as a way to select DOM nodes</li>
+					</ul>
+					<li>Depending on the environment, expression must yield certain results</li>
+					<ul>
+						<li>for conditionals, a boolean must be returned</li>
+						<li>iterations (in XSLT) only loop over nodes</li>
+						<li>when printing out text, a string must be produced</li>
+					</ul>
+					<li>XPath has built-in rules for casting types</li>
+					<ul>
+						<li>node set → boolean: empty is false, non-empty is true</li>
+						<li>node → string: take the <em>string value</em> (i.e., concatenate all text node descendants)</li>
+						<li>string → number: interpret as decimal notation (otherwise return <q><code>NaN</code></q>)</li>
+						<li>XPaths often return surprising results (<code>//a[starts-with(@href, https)]</code>)</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="xpath-functions">
+			<title>XPath Functions</title>
+			<slide>
+				<title>Function Library</title>
+				<ul>
+					<li>XPath has a small library of built-in functions</li>
+					<ul>
+						<li>useful for basic XPath-level functions</li>
+						<li>other specs are allowed to extend it (XSLT does it)</li>
+					</ul>
+					<li>XPath functions return results of various data types</li>
+					<ul>
+						<li>boolean: <code>boolean, contains, false, lang, not, starts-with, true</code></li>
+						<li>number: <code>ceiling, count, floor, last, number, position, round, string-length, sum</code></li>
+						<li>string: <code>concat, local-name, name, namespace-uri, normalize-space, string, substring, substring-after, substring-before, translate</code></li>
+						<li>node set: <code>id</code></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Using Functions</title>
+				<ul>
+					<li>Functions and location paths are orthogonal</li>
+					<ul>
+						<li>each construct may be based on the other</li>
+						<li>it is possible to nest them arbitrarily</li>
+						<li>predicates often contain functions</li>
+						<pre>//a[substring(@href,string-length(@href)-2)='pdf']</pre>
+					</ul>
+					<li>XPaths can become powerful and complex</li>
+					<ul>
+						<li>writing some code or thinking about an XPath?</li>
+						<li>XPaths are more declarative</li>
+						<li>they may be more robust against changes in the XML schema</li>
+						<li>they can be optimized by a smart XPath implementation</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>Limitations of XPath</title>
+			<slide>
+				<title>XPath Selects</title>
+				<ul>
+					<li>Query languages select and recombine</li>
+					<ol>
+						<li>look up all addresses by zip code</li>
+						<li>for each zip code, count the number of addresses</li>
+					</ol>
+					<li>XSLT fills in the missing parts (as a programming language)</li>
+					<ul>
+						<li>XSLT can construct XML and re-apply XPath</li>
+					</ul>
+					<li>XQuery fills in the missing parts (query-wise)</li>
+					<ul>
+						<li>80% of XQuery are XPath (in version 2.0, though)</li>
+						<li>the remaining 20% are bindings, constructors, and glue</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>Conclusions</title>
+			<slide>
+				<title>XPath is Important</title>
+				<ul>
+					<li>XPath is a basic tool of the XML toolbox</li>
+					<li>XPath is reused in various XML technologies</li>
+					<li>XPath selects parts of an XML document</li>
+					<li>XPath can do more general things by using expressions</li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>
