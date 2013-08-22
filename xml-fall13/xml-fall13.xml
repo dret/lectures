@@ -122,7 +122,7 @@
 					<li>All sources (XML/examples/images) <a href="https://github.com/dret/lectures/tree/master/xml-fall13">available at GitHub</a></li>
 					<li>Course mailing list: <code><a href="mailto:xml-fall13@bspace.berkeley.edu">xml-fall13@bspace.berkeley.edu</a></code></li>
 					<ul>
-						<li>archived in the <a href="https://bspace.berkeley.edu/portal/site/9a83055f-77a0-4627-a276-ece16c98f8e2">bspace</a> <a href="https://bspace.berkeley.edu/portal/site/9a83055f-77a0-4627-a276-ece16c98f8e2/page/a1285cb7-16ec-441b-8b81-efa4bbc03831">email archive</a></li>
+						<li>archived in the <a href="https://bspace.berkeley.edu/portal/site/9a83055f-77a0-4627-a276-ece16c98f8e2">bSpace</a> <a href="https://bspace.berkeley.edu/portal/site/9a83055f-77a0-4627-a276-ece16c98f8e2/page/a1285cb7-16ec-441b-8b81-efa4bbc03831">email archive</a></li>
 					</ul>
 					<li>Letter grade based on final exam (30min oral)</li>
 				</ul>
@@ -227,28 +227,47 @@
 				<title>Moving Data into a Database</title>
 				<img src="xDB-import.png" style="height : 70% ; margin : 2% ; " href="http://developer.emc.com/docs/documentum/xdb/manual/index.html#doc:task/adminclient_importing_data.html"/>
 			</slide>
-			<slide>
+			<slide id="xml-and-csv">
 				<title>XML and CSV</title>
 				<ul>
-					<li></li>
+					<li>CSV is easier to understand and use</li>
+					<li>CSV tools (such as <em>Excel</em>) are widely used and understood</li>
+					<li>Structures beyond tables are hard to represent</li>
+					<li>Document structures are impossible to represent</li>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="xml-and-json">
 				<title>XML and JSON</title>
 				<ul>
-					<li></li>
+					<li>JSON maps better into most programming languages</li>
+					<li>JSON objects can be readily used as language objects</li>
+					<li>Structures beyond nested objects/arrays are hard to represent</li>
+					<li>Document structures are impossible to represent</li>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="xml-and-rdf">
 				<title>XML and RDF</title>
 				<ul>
-					<li></li>
+					<li>RDF does not have the built-in <q>tree bias</q> of XML</li>
+					<li>RDF can be combined more easily across <q>documents</q></li>
+					<li>Data that has some <q>natural coherence</q> is hard to manage</li>
+					<li>Document structures are impossible to represent</li>
 				</ul>
 			</slide>
 		</part>
-		<slide>
+		<part>
 			<title>Conclusions</title>
-		</slide>
+			<slide>
+				<title>XML is a Hammer</title>
+				<ul>
+					<li>XML is just one way to represent structured data</li>
+					<li>Like all models/metamodels, XML has limitations and side-effects</li>
+					<li>XML's tool chain allow to adapt to a variety of scenarios</li>
+					<li>XML databases support scalable access to <q>XML Big Data</q></li>
+					<li>As with all tools: know the tool, know the alternatives</li>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="basics">
 		<title short="Basics">XML Basics</title>
