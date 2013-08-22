@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>Web-Based Publishing Class – Spring 2007</title>
+		<link rel="author" href="http://dret.net/netdret/" title="Erik Wilde"/>
+		<link rel="glossary" href="http://dret.net/glossary/"/>
+		<link rel="home" href="http://dret.net/lectures/publishing-spring07/" title="Web-Based Publishing"/>
+		<link rel="stylesheet" href="http://dret.net/lectures/publishing-spring07/spring07.css" type="text/css"/>
+		<xlinks xmlns="http://dret.net/somenamespace">
+			<lecturer xlink:type="extended">
+				<person xlink:type="locator" xlink:label="person" xlink:href="#dret"/>
+				<homepage xlink:type="locator" xlink:label="contact" xlink:href="http://dret.net/netdret/"/>
+				<phone xlink:type="locator" xlink:label="contact" xlink:href="tel:+1-510-6432253"/>
+				<fax xlink:type="locator" xlink:label="contact" xlink:href="fax:+1-510-6425814"/>
+				<email xlink:type="locator" xlink:label="contact" xlink:href="mailto:dret@berkeley.edu"/>
+				<history xlink:type="locator" xlink:label="info" xlink:href="http://dret.net/lectures/"/>
+				<publications xlink:type="locator" xlink:label="info" xlink:href="http://dret.net/netdret/publications"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="contact" xlink:arcrole="personcontact"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="info" xlink:arcrole="persoinfo"/>
+			</lecturer>
+			<student xlink:type="extended">
+				<person xlink:type="locator" xlink:label="person" xlink:href="#igor"/>
+				<email xlink:type="locator" xlink:label="contact" xlink:href="mailto:igorp@berkeley.edu"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="contact" xlink:arcrole="personcontact"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="info" xlink:arcrole="persoinfo"/>
+			</student>
+			<student xlink:type="extended">
+				<person xlink:type="locator" xlink:label="person" xlink:href="#jeff"/>
+				<email xlink:type="locator" xlink:label="contact" xlink:href="mailto:jeffcd@sims.berkeley.edu"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="contact" xlink:arcrole="personcontact"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="info" xlink:arcrole="persoinfo"/>
+			</student>
+			<student xlink:type="extended">
+				<person xlink:type="locator" xlink:label="person" xlink:href="#michael"/>
+				<email xlink:type="locator" xlink:label="contact" xlink:href="mailto:mplee@sims.berkeley.edu"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="contact" xlink:arcrole="personcontact"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="info" xlink:arcrole="persoinfo"/>
+			</student>
+			<student xlink:type="extended">
+				<person xlink:type="locator" xlink:label="person" xlink:href="#yiming"/>
+				<email xlink:type="locator" xlink:label="contact" xlink:href="mailto:yliu@ischool.berkeley.edu"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="contact" xlink:arcrole="personcontact"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="info" xlink:arcrole="persoinfo"/>
+			</student>
+			<student xlink:type="extended">
+				<person xlink:type="locator" xlink:label="person" xlink:href="#matty"/>
+				<email xlink:type="locator" xlink:label="contact" xlink:href="mailto:ochmanek@hotmail.com"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="contact" xlink:arcrole="personcontact"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="info" xlink:arcrole="persoinfo"/>
+			</student>
+			<student xlink:type="extended">
+				<person xlink:type="locator" xlink:label="person" xlink:href="#ryan"/>
+				<homepage xlink:type="locator" xlink:label="contact" xlink:href="http://dream.berkeley.edu/~ryanshaw/wordpress/"/>
+				<email xlink:type="locator" xlink:label="contact" xlink:href="mailto:ryanshaw@ischool.berkeley.edu"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="contact" xlink:arcrole="personcontact"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="info" xlink:arcrole="persoinfo"/>
+			</student>
+			<student xlink:type="extended">
+				<person xlink:type="locator" xlink:label="person" xlink:href="#libby"/>
+				<email xlink:type="locator" xlink:label="contact" xlink:href="mailto:libsmith@sims.berkeley.edu"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="contact" xlink:arcrole="personcontact"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="info" xlink:arcrole="persoinfo"/>
+			</student>
+			<student xlink:type="extended">
+				<person xlink:type="locator" xlink:label="person" xlink:href="#john"/>
+				<email xlink:type="locator" xlink:label="contact" xlink:href="mailto:jbward@ischool.berkeley.edu"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="contact" xlink:arcrole="personcontact"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="info" xlink:arcrole="persoinfo"/>
+			</student>
+			<student xlink:type="extended">
+				<person xlink:type="locator" xlink:label="person" xlink:href="#lois"/>
+				<homepage xlink:type="locator" xlink:label="contact" xlink:href="http://www.ischool.berkeley.edu/~loiswei/"/>
+				<email xlink:type="locator" xlink:label="contact" xlink:href="mailto:loiswei@ischool.berkeley.edu"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="contact" xlink:arcrole="personcontact"/>
+				<bind xlink:type="arc" xlink:from="person" xlink:to="info" xlink:arcrole="persoinfo"/>
+			</student>
+		</xlinks>
+	</head>
+	<body>
+		<div class="header">
+			<h1><a href="http://dret.net/lectures/publishing-spring07/">Web-Based Publishing</a> – Class List</h1>
+			<h2><a href="http://www.berkeley.edu/" title="UC Berkeley">UCB</a> <a href="http://ischool.berkeley.edu/" title="School of Information">iSchool</a> – Spring 2007</h2>
+		</div>
+		<ul>
+			<li id="jeff">Jeff Decker</li>
+			<li id="michael">Michael Lee</li>
+			<li id="yiming">Yiming Liu</li>
+			<li id="matty">Matthew Ochmanek</li>
+			<li id="igor">Igor Pesenson</li>
+			<li id="ryan">Ryan Shaw</li>
+			<li id="libby">Libby Smith</li>
+			<li id="john">John Ward</li>
+			<li id="lois">Lois Wei</li>
+			<li id="dret">Erik Wilde</li>
+		</ul>
+	</body>
+</html>

@@ -272,7 +272,7 @@
 	<presentation id="basics">
 		<title short="Basics">XML Basics</title>
 		<date>2013-09-09</date>
-		<toc class="resources"><a href="http://www.w3.org/TR/REC-xml/" title="W3C XML 1.0 Specification">Spec</a>&#160;· <a href="http://dret.net/netdret/docs/wilde-cacm2008-xml-fever.html" title='Erik Wilde and Robert J. Glushko, "XML Fever", Communications of the ACM, 51(7):40-46, July 2008'>XML&#160;Fever</a></toc>
+		<toc class="resources"><a href="http://www.w3.org/TR/REC-xml/" title="W3C XML 1.0 Specification">XML&#160;1.0&#160;Spec</a>&#160;· <a href="http://dret.net/netdret/docs/wilde-cacm2008-xml-fever.html" title='Erik Wilde and Robert J. Glushko, "XML Fever", Communications of the ACM, 51(7):40-46, July 2008'>XML&#160;Fever</a></toc>
 		<toc class="abstract">The <em>Extensible Markup Language (XML)</em> defines a simple way for structuring data. The power and popularity of XML can be explained by its versatility, the platform-independence, the standards and technologies leveraging it, and the number of tools and products supporting it. Understanding XML itself is rather simple, as it only depends on a very small set of other technologies. Unicode is the most important foundation of XML. XML itself specifies two different things: on the one hand the format for structured data, which are called <em>XML documents</em>, and on the other hand a constraint language for XML documents, which is called <em>Document Type Definition (DTD)</em>.</toc>
 		<slide>
 			<title>Abstract</title>
@@ -590,7 +590,7 @@
 		<title short="XPath">XML Path Language (XPath)</title>
 		<date>2013-09-16</date>
 		<toc class="assignment"><a href="a/3/">A3</a>&#160;assigned (due&#160;date:&#160;10/1)</toc>
-		<toc class="resources"><a href="xpath-chapter.pdf">XPath Chapter</a>&#160;· <a href="xpath-quickref.pdf">XPath QuickRef</a></toc>
+		<toc class="resources"><a href="http://www.w3.org/TR/xpath" title="W3C XPath 1.0 Specification">XPath&#160;1.0&#160;Spec</a>&#160;· <a href="xpath-chapter.pdf">XPath Chapter</a></toc>
 		<toc class="abstract">XML structures data into a rather small number of different constructs, most notably elements and attributes. The <em>XML Path Language (XPath)</em> defines a way how to select parts of XML documents, so that they can be used for further processing. XPath's primary use in in <em>XSL Transformations (XSLT)</em>, but other XML technologies use it as well, e.g. XSD. XPath is a very compact language with a syntax that resembles path expressions well-known from file systems. These path expressions, however, are generalized and therefore much more powerful than the rather simple path expressions in file systems. Because of its use in different XML technologies, XPath is one of the most important XML core technologies.</toc>
 		<slide>
 			<title>Abstract</title>
@@ -1037,6 +1037,403 @@
 					<li>XPath is reused in various XML technologies</li>
 					<li>XPath selects parts of an XML document</li>
 					<li>XPath can do more general things by using expressions</li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="xpath20">
+		<title short="XPath 2.0">XML Path Language (XPath) 2.0</title>
+		<date>2013-09-18</date>
+		<toc class="resources"><a href="http://www.w3.org/TR/xpath20" title="W3C XPath 2.0 Specification">XPath&#160;2.0&#160;Spec</a></toc>
+		<toc class="abstract">The <em>XML Path Language (XPath)</em> is one of the most useful and frequently used languages in the area of XML technologies. In its version 1.0, it is used in technologies such as XSLT, XSD, DOM, and XML Tools. With <em>XPath 2.0</em>, the language has been greatly extended, the new version of XPath is the foundation for XSLT 2.0 and XQuery. XPath 2.0 provides support for regular expression matching, typed expressions, and contains language constructs for conditional and repeated evaluation.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part>
+			<title>Why XPath?</title>
+			<slide>
+				<title>Selecting Parts of XML Documents</title>
+				<ul>
+					<li>XML is a syntax for trees</li>
+					<ul>
+						<li>it defines a way for how trees can be exchanged</li>
+					</ul>
+					<li>XML technologies should provide support for working with trees</li>
+					<ul>
+						<li>when receiving trees, access to the tree should be easy (DOM)</li>
+						<li>validating trees should be easy (<link href="xsd-1">XSD</link>)</li>
+						<li>mapping trees should be easy (<link href="xslt-1">XSLT</link>)</li>
+						<li>querying tree collections should be easy (<link href="xquery">XQuery</link>)</li>
+						<li>XPath is what regular expressions for text-based information</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Making Selection Reusable</title>
+				<ul>
+					<li>Different XML technologies need selection</li>
+					<ul>
+						<li><link href="xslt-1">XSLT</link> needs it for selecting parts and manipulating them</li>
+						<li><link href="xsd-1">XSD</link> needs it for applying identity constraints</li>
+						<li>DOM needs it for extracting parts from an XML tree</li>
+						<li>XQuery needs it for writing XML-oriented queries</li>
+					</ul>
+					<li>XPath was created to be reusable</li>
+					<ul>
+						<li>XML experts should only learn one selection language</li>
+						<li>this knowledge can be reused when learning new technologies</li>
+						<li>implementations can reuse code libraries</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>How XPath Evolved</title>
+				<ul>
+					<li>XSL was designed as the new XML stylesheet language</li>
+					<ol>
+						<li><em>XSL Transformations (XSLT)</em> transform the input document</li>
+						<li><em>XSL Formatting Objects (XSL-FO)</em> is what they will transform it to</li>
+					</ol>
+					<li>XSLT was designed to work on arbitrary XML input documents</li>
+					<ul>
+						<li>started as a part of XSL (<a href="http://www.w3.org/TR/1998/WD-xsl-19981216">WD-xsl-19981216</a> → <a href="http://www.w3.org/TR/1999/WD-xslt-19990421">WD-xslt-19990421</a>)</li>
+						<li>for selecting parts of the transformation input, a selection mechanism had to be provided</li>
+					</ul>
+					<li>XPath was turned into a standalone specification</li>
+					<ul>
+						<li>started as a part of XSLT (<a href="http://www.w3.org/TR/1999/WD-xslt-19990421">WD-xslt-19990421</a> → <a href="http://www.w3.org/1999/07/WD-xslt-19990709">WD-xslt-19990709</a>)</li>
+						<li>reused in a number of other W3C specifications (XSD, DOM)</li>
+					</ul>
+					<li>Complete overhaul for XSLT 2.0 and XQuery</li>
+					<ul>
+						<li><a href="http://www.w3.org/TR/xpath20/">XPath 2.0</a> as the core language</li>
+						<li>a much larger set of <a href="http://www.w3.org/TR/xpath-functions/">functions and operators</a></li>
+						<li>the underlying <a href="http://www.w3.org/TR/xpath-datamodel/">data model</a> which describes the foundation</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>How XPath Works</title>
+			<part>
+				<title>The XPath Tree Model</title>
+				<slide>
+					<title>Starting from the Infoset</title>
+					<ul>
+						<li>XPath operates on an <link href="xpath-tree">abstract data model</link></li>
+						<ul>
+							<li>a tree derived from the <link href="infoset"/></li>
+							<li>a simplification (another one!) of the underlying XML</li>
+						</ul>
+						<li>The Infoset is turned into an <em>XPath node tree</em></li>
+						<ul>
+							<li>11 infoset item types → 7 XPath node tree node types</li>
+							<li>character items are merged into text nodes</li>
+							<li>namespace declarations are no longer visible as attributes</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="not-xpath">
+					<title>What is <u>Not</u> in the XPath Tree</title>
+					<ul>
+						<li>The same things which are <link href="not-infoset">not in the Infoset</link></li>
+						<ul>
+							<li>the order of attributes in a start tag</li>
+							<li>the types of quotes around attribute values</li>
+							<li>character references and entities (<code>&amp;#xFC;</code>/<code>&amp;uuml;</code> → <code>ü</code>)</li>
+						</ul>
+						<li>And some more …</li>
+						<ul>
+							<li>namespace declarations are no longer visible as attributes</li>
+							<li>notations and unexpanded entity references</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part>
+				<title>XPath Evaluation</title>
+				<slide>
+					<title>Tree In / Selection Out</title>
+					<ul>
+						<li>XPath evaluates an expression based on a tree</li>
+						<li>Where the tree comes from is out of XPath's scope</li>
+						<li>The result of the evaluation is a selection</li>
+						<ul>
+							<li><code>//img[not(@alt)]</code> → select all images which have no <code>alt</code> attribute</li>
+							<li><code>count(//img)</code> → return the number of images</li>
+							<li><code>/descendant::img[3]/@src</code> → return the third image's <code>src</code> URI</li>
+							<li><code>starts-with(/html/@lang, 'en')</code> → test whether the document's language is english</li>
+						</ul>
+						<li>Syntax errors may occur</li>
+						</ul>
+				</slide>
+			</part>
+		</part>
+		<part>
+			<title short="XPath 1.0">XPath 1.0 Revisited</title>
+			<slide>
+				<title>Source Document</title>
+				<listing src="xlinked-class.xml" line="81-98" title="Web-Based Publishing Class – Spring 2007"/>
+			</slide>
+			<slide>
+				<title>XPath Expressions</title>
+				<ul>
+					<li>XPaths can be location paths</li>
+					<pre>//ul/li</pre>
+					<li>XPaths can use functions</li>
+					<pre>id('dret')</pre>
+					<li>XPaths can be expressions yielding atomic values</li>
+					<pre>substring-before(id('dret'), ' ')</pre>
+					<li>XPaths can combine all of the above</li>
+					<pre>count(//ul/li[starts-with(substring-after(., ' '), 'W')])</pre>
+				</ul>
+			</slide>
+			<slide>
+				<title>Axes</title>
+				<img style="width : 86% ; margin : 4% ; " src="xpath-axes.png"/>
+			</slide>
+		</part>
+		<part>
+			<title>Ease of Use</title>
+			<slide>
+				<title>Easier to Understand</title>
+				<ul>
+					<li>XPath 2.0 provides better ways to write XPaths</li>
+					<ul>
+						<li>some constructs allow better ways of writing XPaths</li>
+						<li>some constructs allow things previously impossible in XPath</li>
+					</ul>
+					<li>XPath usually is embedded in another language (XQuery, XSLT)</li>
+					<ul>
+						<li>even in XSLT 1.0, there was always a trade-off between XPath and XSLT</li>
+						<li>with XPath 2.0, even more powerful XPaths can be implemented</li>
+					</ul>
+					<li>Finding a good balance between XPath and the host language is an art</li>
+					<ul>
+						<li>very complex XPaths can become almost undecipherable</li>
+						<li>there is no final answer, coding styles vary based on language preference</li>
+					</ul>
+				</ul>
+				<pre>&lt;listing src="xlinked-class.xml" line="81-98"/></pre>
+				<pre>string-join(tokenize( if ( exists(@encoding) ) then unparsed-text($fileuri, @encoding) else unparsed-text($fileuri), '\r?\n')[(position() ge number(tokenize(current()/@line, '\-')[1])) and (position() le number(tokenize(current()/@line, '\-')[2]))], '&amp;#xa;')</pre>
+			</slide>
+			<part id="xpath20-conditional">
+				<title>Conditional Expressions</title>
+				<slide>
+					<title>Control Flow in XPath</title>
+					<ul>
+						<li>XPath 1.0 expressions <q>control flow</q> is based on predicates</li>
+						<ul>
+							<li>the results of location path steps are filtered by predicates</li>
+							<li>this can be used to <q>emulate</q> control flow</li>
+							<li>this technique is limited because it can only be applied to nodes</li>
+						</ul>
+						<li>XPath 2.0 introduces conditional expressions</li>
+						<ul>
+							<li>a condition is given which is interpreted as a boolean</li>
+							<li>based on the result, either the <xpath>then</xpath> or the <xpath>else</xpath> part is evaluated</li>
+							<li>the else part may not be omitted</li>
+						</ul>
+					</ul>
+					<pre>if ( … ) then … else …</pre>
+					<pre>if ( @sex eq 'm' ) then 'Sir' else 'Madam'</pre>
+					<pre>if ( @sex eq 'm' ) then 'Sir' else if ( @sex eq 'f' ) then 'Madam' else 'Whatever'</pre>
+				</slide>
+				<slide>
+					<title>Less XSLT</title>
+					<listing src="names.xml"/>
+					<pre>first | last[not(../first)]</pre>
+					<pre><![CDATA[<xsl:variable name="name">
+	<xsl:choose>
+		<xsl:when test="first">
+			<xsl:value-of select="first"/>
+		</xsl:when>
+		<xsl:otherwise>
+			<xsl:value-of select="last"/>
+		</xsl:otherwise>
+	</xsl:choose>
+</xsl:variable>]]></pre>
+					<pre>if ( exists(first) ) then first else last</pre>
+				</slide>
+			</part>
+			<part id="xpath20-iterations">
+				<title>Iterations</title>
+				<slide>
+					<title>Repeating Expression Evaluation</title>
+					<ul>
+						<li>Iteration repeatedly applies an expression to a sequence of items</li>
+						<ul>
+							<li>the notion of <link href="xpath20-sequences"/> is central to this concept</li>
+							<li>this requires variables for binding and evaluation</li>
+						</ul>
+						<li>Iterations clearly demonstrate the change in expressiveness</li>
+						<ul>
+							<li>they introduce functionality which previously was limited to host languages</li>
+						</ul>
+					</ul>
+					<pre>for $… in … return …</pre>
+					<pre>for $i in //name return $i/last</pre>
+					<pre>for $i in //name return if ( exists($i/first) ) then $i/first else $i/last</pre>
+				</slide>
+				<slide>
+					<title>Iterations vs. Location Paths</title>
+					<ul>
+						<li>Every location path can be written using iterations</li>
+						<pre>/names/name/last</pre>
+						<pre>for $i in /names return for $j in $i/name return $j/last</pre>
+						<li>Iterations are a more generalized way of evaluation</li>
+						<ul>
+							<li>path expressions work on nodes only</li>
+							<pre>for $i in 1 to 10 return $i</pre>
+							<li>path expression sort by document order and eliminate duplicates</li>
+							<pre>//last/../..</pre>
+							<pre>for $i in //last return for $j in $i/.. return $j/..</pre>
+							<li>location steps change the context, iterations use the variable for this purpose</li>
+						</ul>
+						<li>Location paths are a useful syntax and method for tree navigation</li>
+					</ul>
+				</slide>
+			</part>
+			<part id="xpath20-quantified">
+				<title>Quantified Expressions</title>
+				<slide>
+					<title>Testing Sequences</title>
+					<ul>
+						<li>Testing whether some or all items of a sequence satisfy a condition</li>
+						<ul>
+							<li>the notion of <link href="xpath20-sequences"/> is central to this concept</li>
+							<li>this requires variables for binding and evaluation</li>
+						</ul>
+						<li>Quantifiers are well-known from query languages</li>
+						<ul>
+							<li><xpath>some</xpath> iterates over items and succeeds after the first success</li>
+							<li><xpath>every</xpath> iterates over items and fails after the first failure</li>
+							<li>both constructs are good candidates for optimization</li>
+						</ul>
+					</ul>
+					<pre>( some | every ) $… in … satisfies …</pre>
+					<pre>some $i in //*[@xlink:type='locator']/@xlink:href satisfies $i eq $query-uri</pre>
+					<pre>every $i in //li/@id satisfies //*[@xlink:type='locator'][@xlink:href=concat('#', $i)]</pre>
+				</slide>
+			</part>
+		</part>
+		<part id="xpath20-sequences">
+			<title>Sequences</title>
+			<slide>
+				<title>Major Changes</title>
+				<ul>
+					<li>XPath 1.0 has a very simple data model</li>
+					<ol>
+						<li>node sets: <code>//img[not(@alt)]</code></li>
+						<li>number: <code>count(//img)</code></li>
+						<li>string: <code>/descendant::img[3]/@src</code></li>
+						<li>boolean: <code>starts-with(/html/@lang, 'en')</code></li>
+					</ol>
+					<li>XPath 2.0 needs a more powerful model for its advanced functionality</li>
+					<ul>
+						<li>everything in XPath 2.0 is a sequence</li>
+						<li>sequences can contain a mix of items of various types</li>
+						<li>sequences cannot be nested (there are no sequences of sequences)</li>
+					</ul>
+				</ul>
+				<pre>every $i in ( 11, 22, 33, 'string' ) satisfies string(number($i)) ne 'NaN'</pre>
+			</slide>
+			<slide>
+				<title>Divide and Conquer</title>
+				<ul>
+					<li>Sequences are part of the <a href="http://dret.net/lectures/xml-fall08/xdm">XDM</a></li>
+					<ul>
+						<li>data models are separate entities from evaluation languages</li>
+						<li>a data model can be reused in different evaluation languages</li>
+					</ul>
+					<li>XDM is far more complex than its predecessor, the Infoset</li>
+					<ul>
+						<li>XSD datatypes have been integrated into the data model</li>
+						<li>Sequences allow more complex structures to exist</li>
+					</ul>
+					<li>Understanding the data model is key to understanding the language</li>
+					<ul>
+						<li>for simple XPaths, the mental model of XPath 1.0 works</li>
+						<li>more advanced XPaths can only be understood when understanding XDM</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>Applications</title>
+			<slide>
+				<title>Standalone</title>
+				<ul>
+					<li>XPath can be used in standalone XML tools</li>
+					<ul>
+						<li>editors provide XPath evaluation as <q>regular expressions for XML</q></li>
+						<li>text-based searches in bigger XML documents are not a good idea</li>
+					</ul>
+					<li>Standalone tools are good for learning XPaths</li>
+					<ul>
+						<li>many tools support interactive evaluation</li>
+						<li>seeing sequences visualized often is very helpful</li>
+					</ul>
+				</ul>
+				<pre>for $i in ( 11, 22, 33, 'string' ) return ($i, number($i))</pre>
+			</slide>
+			<slide>
+				<title>XQuery</title>
+				<ul>
+					<li><link href="xquery">XQuery</link> is built on top of XPath 2.0</li>
+					<ul>
+						<li>XPath allows constructing sequences based on documents</li>
+						<li>XPath has no way of generating new document structures</li>
+					</ul>
+					<li>XQuery builds a query language around XPath</li>
+					<ul>
+						<li>the basic idea is to provide a language for constructing results from sequences</li>
+						<li>~80% of the complexity of XQuery are in XPath 2.0</li>
+					</ul>
+				</ul>
+				<pre ahref="http://www.stylusstudio.com/xquery_primer.html"><![CDATA[declare variable $firstName external;
+<videos featuring="{$firstName}"> {
+  let $doc := .
+  for $v in $doc//video, $a in $doc//actors/actor
+  where ends-with($a, $firstName) and $v/actorRef = $a/@id
+  order by $v/year
+  return
+	<video year="{$v/year}"> { $v/title } </video> }
+</videos>]]></pre>
+			</slide>
+			<slide>
+				<title>XSLT 2.0</title>
+				<ul>
+					<li>XSLT 2.0 is based on <link href="xslt-1">XSLT 1.0</link> and built on top of XPath 2.0</li>
+					<ul>
+						<li>XPath allows constructing sequences based on documents</li>
+						<li>XPath has no way of generating new document structures</li>
+					</ul>
+					<li>XSLT focuses on transformations rather than queries</li>
+					<ul>
+						<li><q>a query is a transformation is a query</q></li>
+						<li>language preference is more a question of training and experience</li>
+					</ul>
+					<li>Many problems can be appropriately solved with both languages</li>
+					<ul>
+						<li>XQuery is favored by database people and by the big vendors</li>
+						<li>XSLT 2.0 is favored by XML people who worked a lot with XSLT 1.0</li>
+						<li>implementations could easily support both languages</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>Conclusions</title>
+			<slide>
+				<title>Easy Transition</title>
+				<ul>
+					<li>XPath 1.0 users can start using XPath 2.0 right away</li>
+					<li>apart from a <a href="http://www.w3.org/TR/xpath20/#id-backwards-compatibility" title="XPath 2.0 Spec: Backwards Compatibility with XPath 1.0">few corner cases</a>, the results will be the same</li>
+					<li>XPath 2.0 has a huge set of <a href="http://www.w3.org/TR/xpath-functions/">functions and operators</a></li>
+					<li>XSD types can be used, values can be cast</li>
+					<li>Regular expressions are supported for working with strings</li>
 				</ul>
 			</slide>
 		</part>
