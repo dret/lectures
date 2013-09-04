@@ -199,65 +199,71 @@
 		</part>
 		<part>
 			<title>Data Formats? Databases?</title>
-			<slide>
-				<title>XML and Databases</title>
-				<ul>
-					<li>A data format defines a framework for certain kinds of data</li>
+			<part>
+				<title>Alternatives to XML</title>
+				<slide id="xml-and-csv">
+					<title>XML and CSV</title>
 					<ul>
-						<li>some formats are <em>metalanguages</em> such as XML, but most are not</li>
+						<li>CSV is easier to understand and use</li>
+						<li>CSV tools (such as <em>Excel</em>) are widely used and understood</li>
+						<li>Structures beyond tables are hard to represent</li>
+						<li>Document structures are impossible to represent</li>
 					</ul>
-					<li>A database is based on a <em>data model</em> and manages data as well as access</li>
-					<li>XML does not talk about databases at all</li>
-					<li>It is possible to build databases that support XML's model</li>
+				</slide>
+				<slide id="xml-and-json">
+					<title>XML and JSON</title>
 					<ul>
-						<li>data storage can be scaled beyond what filesystems can manage</li>
-						<li>access to XML can be much better optimized in XML databases</li>
+						<li>JSON maps better into most programming languages</li>
+						<li>JSON objects can be readily used as language objects</li>
+						<li>Structures beyond nested objects/arrays are hard to represent</li>
+						<li>Document structures are impossible to represent</li>
 					</ul>
-				</ul>
-			</slide>
-			<slide>
-				<title>XQuery using Files</title>
-				<img style="width : 86% ; margin : 4% ; " src="xquery-overview-filesystem.png" title="File-based XQuery Processing"/>
-			</slide>
-			<slide>
-				<title>XQuery using an XML Database</title>
-				<img style="width : 86% ; margin : 4% ; " src="xquery-overview-dbms.png" title="DB-based XQuery Processing"/>
-			</slide>
-			<slide>
-				<title>Moving Data into a Database</title>
-				<img src="xDB-import.png" style="height : 70% ; margin : 2% ; " href="http://developer.emc.com/docs/documentum/xdb/manual/index.html#doc:task/adminclient_importing_data.html"/>
-			</slide>
-			<slide>
-				<title>Finding Activities (xDB)</title>
-				<listing src="find-by-location-xdb.xq"/>
-			</slide>
-			<slide id="xml-and-csv">
-				<title>XML and CSV</title>
-				<ul>
-					<li>CSV is easier to understand and use</li>
-					<li>CSV tools (such as <em>Excel</em>) are widely used and understood</li>
-					<li>Structures beyond tables are hard to represent</li>
-					<li>Document structures are impossible to represent</li>
-				</ul>
-			</slide>
-			<slide id="xml-and-json">
-				<title>XML and JSON</title>
-				<ul>
-					<li>JSON maps better into most programming languages</li>
-					<li>JSON objects can be readily used as language objects</li>
-					<li>Structures beyond nested objects/arrays are hard to represent</li>
-					<li>Document structures are impossible to represent</li>
-				</ul>
-			</slide>
-			<slide id="xml-and-rdf">
-				<title>XML and RDF</title>
-				<ul>
-					<li>RDF does not have the built-in <q>tree bias</q> of XML</li>
-					<li>RDF can be combined more easily across <q>documents</q></li>
-					<li>Data that has some <q>natural coherence</q> is hard to manage</li>
-					<li>Document structures are impossible to represent</li>
-				</ul>
-			</slide>
+				</slide>
+				<slide id="xml-and-rdf">
+					<title>XML and RDF</title>
+					<ul>
+						<li>RDF does not have the built-in <q>tree bias</q> of XML</li>
+						<li>RDF can be combined more easily across <q>documents</q></li>
+						<li>Data that has some <q>natural coherence</q> is hard to manage</li>
+						<li>Document structures are impossible to represent</li>
+					</ul>
+				</slide>
+			</part>
+			<part>
+				<title>XML Big Data</title>
+				<slide>
+					<title>XML and Databases</title>
+					<ul>
+						<li>A data format defines a framework for certain kinds of data</li>
+						<ul>
+							<li>some formats are <em>metalanguages</em> such as XML, but most are not</li>
+						</ul>
+						<li>A database is based on a <em>data model</em> and manages data as well as access</li>
+						<li>XML does not talk about databases at all</li>
+						<li>It is possible to build databases that support XML's model</li>
+						<ul>
+							<li>data storage can be scaled beyond what filesystems can manage</li>
+							<li>access to XML can be much better optimized in XML databases</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>XQuery using Files</title>
+					<img style="width : 86% ; margin : 4% ; " src="xquery-overview-filesystem.png" title="File-based XQuery Processing"/>
+				</slide>
+				<slide>
+					<title>XQuery using an XML Database</title>
+					<img style="width : 86% ; margin : 4% ; " src="xquery-overview-dbms.png" title="DB-based XQuery Processing"/>
+				</slide>
+				<slide>
+					<title>Moving Data into a Database</title>
+					<img src="xDB-import.png" style="height : 70% ; margin : 2% ; " href="http://developer.emc.com/docs/documentum/xdb/manual/index.html#doc:task/adminclient_importing_data.html"/>
+				</slide>
+				<slide>
+					<title>Finding Activities (xDB)</title>
+					<listing src="find-by-location-xdb.xq"/>
+				</slide>
+			</part>
 		</part>
 		<part>
 			<title>Conclusions</title>
