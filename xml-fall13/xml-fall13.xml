@@ -193,8 +193,8 @@
 				<img src="heatmap-golden-gate.png" style="height : 70% ; margin : 2% ; " href="http://x.raceshape.com/heatmap/view.html?id=r1ycR0%2Fhp88VjX%2FAVO4B3gHo%2B9gyzOuMQA1uDqCn"/>
 			</slide>
 			<slide>
-				<title>Finding Activities</title>
-				<listing src="find-by-location.xq"/>
+				<title>Finding Activities (Oxygen)</title>
+				<listing src="find-by-location-oxygen.xq"/>
 			</slide>
 		</part>
 		<part>
@@ -226,6 +226,10 @@
 			<slide>
 				<title>Moving Data into a Database</title>
 				<img src="xDB-import.png" style="height : 70% ; margin : 2% ; " href="http://developer.emc.com/docs/documentum/xdb/manual/index.html#doc:task/adminclient_importing_data.html"/>
+			</slide>
+			<slide>
+				<title>Finding Activities (xDB)</title>
+				<listing src="find-by-location-xdb.xq"/>
 			</slide>
 			<slide id="xml-and-csv">
 				<title>XML and CSV</title>
