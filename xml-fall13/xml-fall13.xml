@@ -93,7 +93,7 @@
 		</slide>
 		<part>
 			<title>Varia</title>
-			<slide>
+			<slide id="dret-info">
 				<title>About Me</title>
 				<ul>
 					<li>Erik Wilde exists on <a href="http://dret.net/netdret/">the Web</a>, <a href="https://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://www.flickr.com/photos/dret/">Flickr</a>, and <a href="http://dret.typepad.com/dretblog/" title="dretblog">his blog</a></li>
@@ -115,7 +115,7 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="course-info">
 				<title>About this Course</title>
 				<ul>
 					<li>Course Web page: <code><a href="./">http://dret.net/lectures/xml-fall13/</a></code></li>
@@ -127,7 +127,7 @@
 					<li>Letter grade based on final exam (30min oral)</li>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="slide-info">
 				<title>About these Slides</title>
 				<ul>
 					<li>Generated from <a href="http://dret.net/projects/xslidy/">Hotspot</a> <a href="xml-fall13.xml">XML</a></li>
@@ -143,7 +143,7 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="resource-info">
 				<title>Additional Resources</title>
 				<ul>
 					<li><a href="http://dret.net/biblio/">Bibliography at <code>http://dret.net/biblio/</code></a></li>
@@ -158,7 +158,7 @@
 				</ul>
 			</slide>
 		</part>
-		<part>
+		<part id="why-xml">
 			<title>Why/How/Where XML is Useful</title>
 			<slide>
 				<title>XML is a Metalanguage</title>
