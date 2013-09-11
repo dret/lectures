@@ -601,6 +601,401 @@
 			</slide>
 		</part>		
 	</presentation>
+	<presentation id="dtd">
+		<title short="DTD">Document Type Definition (DTD)</title>
+		<date>2013-09-11</date>
+		<toc class="abstract">The XML specification defines a format for structured data (XML documents) and a grammar-based constraint language for these (DTD). In SGML-based systems, DTDs were often very complex and feature-rich constructs, which controlled a lot of the processing of SGML documents. XML greatly simplified DTDs, and de-facto usage of DTDs today simplified them even more. In many systems today, DTDs are not used at all or generated from sample documents. In this lecture, it is argued that DTDs (or schemas, to be more general) should be taken seriously in any non-trivial XML application, because they are a representation of the underlying (and often underspecified) data model of the application.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part>
+			<title>Schema Languages</title>
+			<slide>
+				<title>XML Validation</title>
+				<ul>
+					<li>XML knows two <q>types</q> of documents, <em>well-formed</em> and <em>valid</em></li>
+					<li><em>well-formed</em> documents satisfy all basic constraints of the XML specification</li>
+					<ul>
+						<li>they can be parsed according to the XML grammar</li>
+						<li>they satisfy the additional constraints (e.g., start and end tags match)</li>
+						<li>together, this means they can be translated into a <link href="xmltree">tree</link></li>
+						<li>this tree then can be processed with XML tools (<link href="sax">SAX</link>, <link href="dom">DOM</link>, <link href="xslt-1">XSLT</link>, …)</li>
+					</ul>
+					<li><em>valid</em> documents must satisfy the constraints of a DTD</li>
+					<ul>
+						<li>a document must be well-formed before it can be validated</li>
+						<li>all elements and attributes have been defined</li>
+						<li>elements and attributes are used according to their definition</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Validation and Applications</title>
+				<img src="valid-documents.png" style="width : 90% ; margin : 4% ; "/>
+			</slide>
+			<slide>
+				<title>Non-XML, Well-Formed, and Valid</title>
+				<listing src="non.xml" line="3-9"/>
+				<listing src="address-invalid.xml" line="3-9"/>
+				<listing src="address-valid.xml" line="3-9"/>
+			</slide>
+			<slide>
+				<title>DTD Example</title>
+				<listing src="address-valid.xml" line="1-2"/>
+				<listing src="address.dtd"/>
+				<ul>
+					<li>The DTD defines constraints on element and attribute usage</li>
+					<li>The DTD does only in part constrain textual contents</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>XML Schema Languages</title>
+				<ul>
+					<li>DTDs are part of XML itself</li>
+					<ul>
+						<li>XML specifies the document format <u>and</u> one schema language</li>
+						<li>DTD support is provided by most XML processors (<a href="http://www.w3.org/TR/REC-xml/#proc-types" title="XML specification">validating processors</a>)</li>
+					</ul>
+					<li>Other schema languages are available</li>
+					<ul>
+						<li><link href="xsd-1">XSD</link> as the W3C's recommendation</li>
+						<li><a href="http://www.schematron.com/">Schematron</a> as a rule-based alternative</li>
+						<li>various <a href="http://dret.net/glossary/xmlschemalanguage" title="XML glossary">other research projects and products</a></li>
+					</ul>
+					<li>Choosing appropriate schema language(s) is important</li>
+					<ul>
+						<li>we look at DTDs because they are part of XML itself</li>
+						<li>we look at XSD because it is widely used</li>
+						<li>Schematron is interesting because it is simple and powerful</li>
+						<li>you may even invent your own schema language (a.k.a. <em>meta-programming</em>)</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>DTD Basics</title>
+			<slide>
+				<title>XML is <q>SGML light</q></title>
+				<ul>
+					<li>XML is a subset of SGML</li>
+					<ul>
+						<li>XML documents have been greatly simplified</li>
+						<li>XML DTDs have retained some of SGML's peculiarities</li>
+					</ul>
+					<li>DTD design should be left to XML experts</li>
+					<ul>
+						<li>simple DTDs (for prototypes) are easy to define (or generate)</li>
+						<li>serious DTDs for complex data models are hard to define</li>
+					</ul>
+					<li>XML is a useful tool for experiments and prototypes</li>
+					<ul>
+						<li>basic knowledge of DTDs is required</li>
+						<li>serious XML schemas often use <link href="xsd-1">XSD</link> anyway</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Associating Documents and DTDs</title>
+				<ul>
+					<li>A DTD is a schema for a set of documents</li>
+					<ul>
+						<li>there may be just one document for a DTD, there may be billions (HTML)</li>
+						<li>in most cases, DTDs are managed as a separate resource</li>
+					</ul>
+					<li>The <a href="http://www.w3.org/TR/xml#sec-prolog-dtd"><em>Document Type Declaration</em></a> <q>contains or points to markup declarations that provide a grammar for a class of documents</q></li>
+					<ul>
+						<li>the part which is contained is called <em>Internal Subset</em></li>
+						<li>the part which is pointed to is called <em>External Subset</em></li>
+						<li>internal and external subset together are the <em>Document Type Definition (DTD)</em></li>
+					</ul>
+					<li>External subsets are identified by <em>Public</em> and <em>System Identifiers</em></li>
+					<ul>
+						<li><em>public identifiers</em> use a special notation</li>
+						<li><em>system identifiers</em> are URIs (relative or absolute)</li>
+						<li>applications use (i.e., know or retrieve) the DTD for validation</li>
+					</ul>
+				</ul>
+				<listing src="address-valid.xml" line="1-2"/>
+			</slide>
+			<part>
+				<title>DTD Syntax</title>
+				<slide>
+					<title>DTDs are not XML Documents</title>
+					<ul>
+						<li>DTDs use a special syntax</li>
+						<ul>
+							<li>somewhat ironic when everything else is XMLized</li>
+							<li>DTDs cannot be processed with standard XML tools</li>
+							<li>more compact than XML syntax</li>
+						</ul>
+						<li>Definition of elements and attribute lists</li>
+						<ul>
+							<li>elements are defined by the content they allow</li>
+							<li>attribute lists are sets of allowed attributes on elements</li>
+						</ul>
+					</ul>
+					<listing src="address.dtd"/>
+				</slide>
+				<slide>
+					<title>Syntax Rules</title>
+					<ul>
+						<li>There is no container containing the whole DTD</li>
+						<ul>
+							<li><code>&lt;!ELEMENT example EMPTY></code> thus is a complete DTD</li>
+						</ul>
+						<li>Definitions (officially called <em>declarations</em>) use <code>&lt;!… ></code> syntax</li>
+						<ul>
+							<li><code>ELEMENT</code> is used to <link href="dtd-element">define an element</link></li>
+							<li><code>ATTLIST</code> is used to <link href="dtd-attlist">define an attribute list</link></li>
+							<li><code>ENTITY</code> is used to <link href="dtd-entity">define an entity</link></li>
+						</ul>
+						<li>The document element is not marked explicitly</li>
+						<ul>
+							<li>but it must be declared in the document type declaration</li>
+							<li>this means the document element is established by the document, not by the DTD</li>
+						</ul>
+					</ul>
+				<listing src="address-valid.xml" line="1-3"/>
+				</slide>
+			</part>
+			<part id="dtd-element">
+				<title>Defining Elements</title>
+				<slide id="element-only-declaration">
+					<title>Element Only Content</title>
+					<ul>
+						<li>Element content is defined by a grammar for the children</li>
+						<ul>
+							<li>sequences are indicated with a comma: <q><code>,</code></q></li>
+							<li>choices are indicated with a vertical bar: <q><code>|</code></q></li>
+							<li>optional parts are indicated with a question mark: <q><code>?</code></q></li>
+							<li>repeatable parts are indicated with a plus: <q><code>+</code></q></li>
+							<li>optional and repeatable parts are indicated with a asterisk: <q><code>*</code></q></li>
+							<li>parentheses can be used for grouping and nesting</li>
+						</ul>
+					</ul>
+					<listing src="xhtml1-transitional.dtd" line="1064-1074"/>
+				</slide>
+				<slide id="mixed-content-declaration">
+					<title>Mixed Content</title>
+					<ul>
+						<li><link href="mixed-content"/> allows text content and elements to be mixed</li>
+						<ul>
+							<li><link href="whitespace"/> characters are allowed in <link href="element-only-declaration"/> (this must not be declared)</li>
+							<li>for non-whitespace characters, character data must be allowed explicitly</li>
+						</ul>
+						<li>The allowed child elements may be constrained, but not their order or their number of occurrences</li>
+						<li>Mixed Content always is defined as <code>&lt;!ELEMENT x (#PCDATA | a | b | …)* ></code></li>
+					</ul>
+					<listing src="xhtml1-transitional.dtd" line="568-568"/>
+					<ul>
+						<li><em>Character only</em> content is a special case of mixed content</li>
+						<ul>
+							<li>the element may only contain characters (no other elements)</li>
+							<li>the repetition is not necessary because there is no choice</li>
+						</ul>
+					</ul>
+					<listing src="xhtml1-transitional.dtd" line="355-355"/>
+				</slide>
+				<slide>
+					<title>Empty Content</title>
+					<ul>
+						<li>Empty elements can be useful</li>
+						<ul>
+							<li>they may contain all information in attributes</li>
+							<li>their presence may carry semantics without the need for additional information</li>
+						</ul>
+					</ul>
+					<listing src="xhtml1-transitional.dtd" line="833-848"/>
+				</slide>
+			</part>
+			<part id="dtd-attlist">
+				<title>Defining Attribute Lists</title>
+				<slide>
+					<title>Attributes belong to Elements</title>
+					<ul>
+						<li>Attributes are specified in an element's <em>Attribute List</em></li>
+						<ul>
+							<li>an element definition may have any number of attributes associated with it</li>
+							<li>attributes may occur at most once on an element</li>
+						</ul>
+						<li>Attributes definitions have a <em>name</em>, a <em>type</em>, and a <em>default declaration</em></li>
+						<ul>
+							<li>the attribute appears according to the default declaration</li>
+							<li>if the attribute is present, its value must conform to the type</li>
+						</ul>
+					</ul>
+					<listing src="xhtml1-transitional.dtd" line="794-801"/>
+				</slide>
+				<slide id="dtd-attr-type">
+					<title>Attribute Types</title>
+					<ul>
+						<li>Attribute values can be constrained (which is not possible for element content)</li>
+						<ul>
+							<li><code>CDATA</code> means any character string (but no markup)</li>
+							<li>enumerated types list allowed values: <code>(data|ref|object)</code> (list of XML names)</li>
+							<li><code>ID</code> for identifying elements (part of <code><link href="ididref"/></code>)</li>
+							<li><code>IDREF</code> for referencing identified elements (part of <code><link href="ididref"/></code>)</li>
+						</ul>
+						<li>Application-oriented attribute types are often <q>simulated</q></li>
+						<ul>
+							<li>using <link href="param-entity"/>, modeling information can be preserved</li>
+						</ul>
+					</ul>
+					<listing src="xhtml1-transitional.dtd" line="894-894"/>
+					<listing src="xhtml1-transitional.dtd" line="52-53"/>
+					<ul>
+						<li>The default declaration specifies the attribute's presence</li>
+						<ul>
+							<li><code>#REQUIRED</code> means the attribute has to be specified (on every element)</li>
+							<li><code>#IMPLIED</code> marks an optional attribute (the parser may imply a value)</li>
+							<li><code>"…"</code> specifies a default value (and the attribute is optional)</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+		</part>
+		<part>
+			<title>Advanced DTDs</title>
+			<part id="ididref">
+				<title>ID/IDREF</title>
+				<slide>
+					<title>References in Documents</title>
+					<ul>
+						<li>Without Validation, there are no IDs</li>
+						<ul>
+							<li><code>ID</code> is an <link href="dtd-attr-type">attribute type</link> declared in the DTD</li>
+							<li><link href="xml:id"><code>xml:id</code></link> is an attempt to support schema-independent IDs</li>
+						</ul>
+						<li>IDs are used to assign identities to elements</li>
+						<ul>
+							<li>the XML processor reports duplicate IDs as errors (<a href="http://www.w3.org/TR/xml/#id">part of validation</a>)</li>
+						</ul>
+						<li>IDREFs are used to reference existing IDs</li>
+						<ul>
+							<li>the XML processor reports references to non-existing IDs as errors (<a href="http://www.w3.org/TR/xml/#idref">part of validation</a>)</li>
+						</ul>
+						<li>IDs must be XML Names (in particular, they may not start with a number)</li>
+					</ul>
+				</slide>
+				<slide>
+					<title>ID/IDREF in a Document</title>
+					<listing src="section.xml" line="3-18"/>
+					<listing src="section.dtd" line="2-12"/>
+				</slide>
+				<slide>
+					<title>References within the Tree</title>
+					<img src="section.png" style="width : 90% ; margin : 4% ; "/>
+				</slide>
+				<slide>
+					<title>Formatting Example</title>
+					<p>Hotspot can generate links to sections such as the section about <link href="ididref"/>, this link is then translated into the appropriate HTML code, meaning a link with the target being a fragment identifier to the slide number.</p>
+					<pre><![CDATA[<p>Hotspot can generate links to sections such as the section about <link href="ididref"/>, this link is then translated into the appropriate HTML code, meaning a link with the target being a fragment identifier to the slide number.</p>]]></pre>
+					<p>After running Hotspot, the following HTML is generated:</p>
+					<pre><![CDATA[<p>Hotspot can generate links to sections such as the section about <a href="#ididref">ID/IDREF</a>, this link is then translated into the appropriate HTML code, meaning a link with the target being a fragment identifier to the slide number.</p>]]></pre>
+				</slide>
+				<slide>
+					<title>ID/IDREF Semantics</title>
+					<ul>
+						<li>Rooted in the document world</li>
+						<ul>
+							<li>all parts are assembled before processing</li>
+							<li>names are symbolic and assigned as required</li>
+							<li>mixed syntax and semantics</li>
+						</ul>
+						<li>Good idea, but many shortcomings</li>
+						<ul>
+							<li>constraints apply to one document only</li>
+							<li>IDs and IDREFs are global instead of scoped</li>
+							<li>identifiers should be allowed to use any type</li>
+							<li>identifier processing should be type-specific (2 &#x225F; 02)</li>
+						</ul>
+						<li>Applications must know how to process ID/IDREF</li>
+						<ul>
+							<li>for HTML export, links can be generated</li>
+							<li>for databases, keys should be used</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part id="dtd-entity">
+				<title>Entities</title>
+				<slide>
+					<title>General Entities</title>
+					<ul>
+						<li>XML's core concept of physical data structures</li>
+						<ul>
+							<li>an entity is a named unit of data which can be referenced</li>
+							<li>within documents, it is referenced by the markup <code>&amp;entity-name;</code></li>
+						</ul>
+						<li>Entities can be used to name and reuse document content</li>
+					</ul>
+					<listing src="xhtml-lat1.ent" line="135-142"/>
+					<ul>
+						<li><em>Character References</em> look like entities: <code>&amp;#9786;</code> or <code>&amp;#x263A;</code> = &#x263A;</li>
+						<ul>
+							<li>they can be used to represent any Unicode character, they are processed as single characters</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="param-entity">
+					<title>Parameter Entities</title>
+					<ul>
+						<li>Parameter entities are parsed entities for use within the DTD</li>
+						<ul>
+							<li>a parameter entity must be specifically declared as such</li>
+							<li>within DTDs, it is referenced by the markup <code>%entity-name;</code></li>
+							<li>outside of DTDs, parameter entities cannot be used</li>
+						</ul>
+						<li>As general entities, parameter entities are meant for reuse</li>
+						<ul>
+							<li>in a DTD, reuse is mostly about reusing structures</li>
+							<li>parameter entities are DTDs <q>duct tape</q>, not elegant, but effective</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>XHTML Parameter Entities (Attributes)</title>
+					<listing src="xhtml1-transitional.dtd" line="433-437"/>
+					<listing src="xhtml1-transitional.dtd" line="188-188"/>
+					<listing src="xhtml1-transitional.dtd" line="133-138"/>
+					<listing src="xhtml1-transitional.dtd" line="145-149"/>
+					<listing src="xhtml1-transitional.dtd" line="55-56"/>
+					<listing src="xhtml1-transitional.dtd" line="193-193"/>
+				</slide>
+				<slide>
+					<title>XHTML Parameter Entities (Content)</title>
+					<listing src="xhtml1-transitional.dtd" line="433-437"/>
+					<listing src="xhtml1-transitional.dtd" line="230-230"/>
+					<listing src="xhtml1-transitional.dtd" line="227-227"/>
+					<listing src="xhtml1-transitional.dtd" line="203-204"/>
+					<listing src="xhtml1-transitional.dtd" line="200-201"/>
+					<listing src="xhtml1-transitional.dtd" line="197-198"/>
+					<listing src="xhtml1-transitional.dtd" line="222-222"/>
+				</slide>
+			</part>
+		</part>
+		<part>
+			<title>Conclusions</title>
+			<slide>
+				<title>DTD for XML Schemas</title>
+				<ul>
+					<li>XML documents are processed by applications</li>
+					<li>Applications have assumptions about XML documents</li>
+					<li>DTDs allow to formalize some of these constraints</li>
+					<li>Part of the constraint checking must still be programmed</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Modeling DTDs</title>
+				<ul>
+					<li>Data models can be mapped to many different DTDs</li>
+					<li>What is a good DTD? What is a bad DTD?</li>
+					<li>How does the DTD affect further processing?</li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 	<presentation id="xpath">
 		<title short="XPath">XML Path Language (XPath)</title>
 		<date>2013-09-16</date>

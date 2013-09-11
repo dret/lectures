@@ -1,0 +1,11 @@
+<!ELEMENT address (name, phone*, website*, postal?)>
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+	short CDATA #REQUIRED
+>
+<!ELEMENT phone (#PCDATA)>
+<!ATTLIST phone
+	type ( voice | fax ) #REQUIRED
+>
+<!ELEMENT postal (#PCDATA)>
+<!ELEMENT website (#PCDATA)>

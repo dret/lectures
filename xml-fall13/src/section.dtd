@@ -1,0 +1,12 @@
+<!ELEMENT document ( section+ ) >
+<!ELEMENT section ( title, p+, section* ) >
+<!ATTLIST section
+	id ID #REQUIRED
+	author CDATA #REQUIRED >
+<!ELEMENT title ( #PCDATA )>
+<!ELEMENT p ( #PCDATA | ref )*>
+<!ATTLIST p
+	type CDATA #IMPLIED >
+<!ELEMENT ref EMPTY >
+<!ATTLIST ref
+	name IDREF #REQUIRED >
