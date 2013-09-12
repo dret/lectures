@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psychotic xmlns:prefix1="http://ns1.com/" xmlns:prefix2="http://ns1.com/">
+	<prefix1:elem>
+		<prefix2:child>content</prefix2:child>
+	</prefix1:elem>
+	<prefix2:elem>
+		<prefix1:child>content</prefix1:child>
+	</prefix2:elem>
+</psychotic>
