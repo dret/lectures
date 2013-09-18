@@ -67,6 +67,9 @@
 					<tr class="vevent">
 						<td align="right" valign="top"><hotspot:date/></td>
 						<td valign="top">
+							<hotspot:if-toc class="author">
+								<span class="guest">Guest Lecture by <hotspot:toc class="author"/> : </span>
+							</hotspot:if-toc>
 							<b><span class="summary"><hotspot:title/></span><span class="toggle">:</span></b> <span class="toggle"><span class="description"><hotspot:toc class="abstract"/></span></span>
 							<div style="display : none">
 								<span class="dtstart"><hotspot:date/>T09:00</span>
@@ -1847,5 +1850,12 @@
 				</ul>
 			</slide>
 		</part>
+	</presentation>
+	<presentation id="xmlpractice" external="xml-in-practice.pdf">
+		<title>XML in Practice</title>
+		<date>2013-09-23</date>
+		<toc class="author">Eric Kansa</toc>
+		<toc class="resources">...&#160;· ...</toc>
+		<toc class="abstract">...</toc>
 	</presentation>
 </hotspot>
