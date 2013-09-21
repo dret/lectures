@@ -1851,11 +1851,11 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation id="xmlpractice" external="xml-in-practice.pdf">
-		<title>XML in Practice</title>
+	<presentation id="xmlapp" external="xml-in-application.pdf">
+		<title>XML in Application</title>
 		<date>2013-09-23</date>
 		<toc class="author">Eric Kansa</toc>
-		<toc class="resources">...&#160;· ...</toc>
-		<toc class="abstract">...</toc>
+		<toc class="resources"><a href="http://opencontext.org/">Open&#160;Context</a></toc>
+		<toc class="abstract">Eric Kansa will discuss "open data" and some implementation strategies for realizing the goals of the open data movement. He will be drawing examples from Open Context, a research data sharing system focusing on archaeology. The discussion will explore pragmatic approaches to using XML and other structured data formats for publishing data on the Web to serve different communities with different levels of technical skills and capabilities.</toc>
 	</presentation>
 </hotspot>
