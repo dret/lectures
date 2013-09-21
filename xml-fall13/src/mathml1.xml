@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<body>
+		<p>Some MathML Formula:</p>
+		<math xmlns="http://www.w3.org/1998/Math/MathML">
+			<mfrac>
+				<mn>2</mn>
+				<mi>x</mi>
+			</mfrac>
+			<mo>=</mo>
+			<mfrac>
+				<mn>3</mn>
+				<mi>y</mi>
+			</mfrac>
+		</math>
+	</body>
+</html>
