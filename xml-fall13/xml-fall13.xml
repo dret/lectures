@@ -1858,4 +1858,265 @@
 		<toc class="resources"><a href="http://opencontext.org/">Open&#160;Context</a></toc>
 		<toc class="abstract">Eric Kansa will discuss "open data" and some implementation strategies for realizing the goals of the open data movement. He will be drawing examples from Open Context, a research data sharing system focusing on archaeology. The discussion will explore pragmatic approaches to using XML and other structured data formats for publishing data on the Web to serve different communities with different levels of technical skills and capabilities.</toc>
 	</presentation>
+	<presentation id="xmlns">
+		<title short="Namespaces">XML Namespaces</title>
+		<date>2013-09-25</date>
+		<toc class="resources"><a href="http://www.rpbourret.com/xml/NamespacesFAQ.htm#p1">XML Namespaces FAQ (Part I)</a>&#160;· <a href="http://www.w3.org/TR/REC-xml-names/" title="W3C XML Namespaces Specification">Spec</a></toc>
+		<toc class="abstract">XML is successful because it can be used in many different scenarios, and because it is easy to define a schema (such as a DTD) for new scenarios, producing a tailored XML data model for this scenario. This means that names in XML documents must be interpreted as belonging to a certain schema. As long as a document uses names from only one schema, this can be done rather easily. However, in many scenarios today documents combine names from different schemas, and <em>XML Namespaces</em> provide a mechanism how the names in an XML document can be associated with a namespace.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part>
+			<title>How to think about Namespaces</title>
+			<slide>
+				<title>Namespaces are Simple</title>
+				<ul>
+					<li>XML Namespaces are often misunderstood</li>
+					<ul>
+						<li>the biggest problem is to get rid of some assumptions</li>
+						<li>XML Namespaces are too simple and thus confusing</li>
+					</ul>
+					<li>Instincts of Web users</li>
+					<ol>
+						<li>URIs identify something that can be retrieved by a browser</li>
+						<li>URIs identify something that can be displayed by a browser</li>
+						<li>if I cannot get it and cannot look at it, what good can it be?</li>
+					</ol>
+					<li>However, these assumptions are not always true</li>
+					<ol>
+						<li>URIs identify <em>resources</em> which often, but not always, can be accessed over the Web</li>
+						<li>URIs identify <em>resources</em> which often, but not always, have a Web-accessible representation</li>
+						<li>sharing URIs means sharing an identity, which can mean sharing semantics (associated with this identity)</li>
+					</ol>
+				</ul>
+			</slide>
+			<slide>
+				<title>Simple Examples</title>
+				<listing src="mathml1.xml" line="2-6"/>
+				<listing src="mathml2.xml" line="2-6"/>
+				<listing src="mathml3.xml" line="2-6"/>
+				<listing src="mathml4.xml" line="2-6"/>
+			</slide>
+			<slide>
+				<title>Name Spaces</title>
+				<ul>
+					<li>Names are one form of identification</li>
+					<li>Identification is essential for communications</li>
+					<li>Names in XML are not suitable for identification</li>
+					<ul>
+						<li>they are local to their context (where they are defined)</li>
+						<li>if the context is uniquely identified, the names would be, too</li>
+					</ul>
+					<li>Name Spaces: <em>Put names into spaces</em></li>
+					<ul>
+						<li>how to identify the space? Web identifiers are URIs!</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>URI Philosophy</title>
+				<ul>
+					<li><link href="uri"/> uniquely identify resources</li>
+					<li>URIs often provide access information</li>
+					<ul>
+						<li>pretty clear in <code>http://dret.net/lectures/xml-fall10/</code></li>
+						<li>less clear in <code>urn:ietf:rfc:2648</code> (<a href="http://tools.ietf.org/html/rfc2648">RFC 2648</a>)</li>
+						<li>very (and purposely) unclear in <code>tag:9327493874329</code> (<a href="http://tools.ietf.org/html/rfc4151">RFC 4151</a>)</li>
+					</ul>
+					<li>URIs often return <em>resource representations</em></li>
+					<ul>
+						<li>the resource itself is never returned (how to return a <em>lecture</em>?)</li>
+						<li>some representation often is useful (HTML, PDF, maybe video/audio)</li>
+						<li>the resource exists and is useful without a representation!</li>
+						<li><code href="http://maps.google.com/maps?ll=37.87133,-122.258463&amp;om=1">geo:37.87133;-122.258463</code> is not an <q>information resource</q> (but it exists)</li>
+					</ul>
+					<li>URIs are much more than just addresses of HTML pages</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>The Namespace Problem</title>
+				<ul>
+					<li>People assume that URIs point to Web pages</li>
+					<ul>
+						<li>a <em>namespace name</em> (a URI) may point to a Web page</li>
+						<li>it may also have no Web page associated with it</li>
+						<li>it may even use a URI scheme which cannot be retrieved</li>
+						<li>but it is always possible to compare URIs (<q>Do I know this namespace?</q>)</li>
+					</ul>
+					<li>People assume some standardized content format</li>
+					<ul>
+						<li>friendly namespaces provide HTML portals (<a href="http://www.w3.org/1999/xhtml">XHTML</a> and <a href="http://www.w3.org/1999/XSL/Transform">XSLT</a>)</li>
+						<li>some namespaces just give you the schema (<a href="http://www.w3.org/2001/12/soap-envelope">SOAP</a>)</li>
+						<li>they all are correct, because no resource representation is required!</li>
+						<li>very unfriendly namespaces may return a 404 or even use inaccessible schemes</li>
+					</ul>
+					<li>Namespaces are used by comparing URIs</li>
+					<ul>
+						<li>anything else maybe useful, but is not required and unsafe on the Web</li>
+						<li>when searching for a namespace definition, use Google (string search)</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>Using Namespaces</title>
+			<slide>
+				<title>Declaring Namespaces</title>
+				<ul>
+					<li>Using a namespace means referencing names from it</li>
+					<ul>
+						<li>unfortunately, there is no really standard way of writing these names</li>
+						<li>however, the <q><a href="http://www.jclark.com/xml/xmlns.htm">Clark notation</a></q> is useful: <code>{http://www.w3.org/1999/xhtml}html</code></li>
+						<li>Namespaces are first declared and then used</li>
+					</ul>
+					<li><xml>xmlns</xml>-prefixed attributes are used for declaring namespaces</li>
+					<ul>
+						<li>Default namespace: <elem>html xmlns="http://www.w3.org/1999/xhtml"</elem></li>
+						<li>Prefix notation: <elem>xhtml:html xmlns:xhtml="http://www.w3.org/1999/xhtml"</elem></li>
+					</ul>
+					<li>Namespace declarations are inherited and can be overwritten</li>
+					<ul>
+						<li>the default namespace can be undeclared</li>
+						<li>Namespace declarations can be used in (too) many ways</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Unhealthy Namespace Usages</title>
+				<ul>
+					<li>Namespaces can be (and are) used in rather strange ways</li>
+					<ul>
+						<li>these are syntax variations of identical structures</li>
+						<li>without a good (i.e., conforming) parser, interpretation is surprisingly hard</li>
+						<li>copy/paste can become hard or impossible</li>
+					</ul>
+					<li>Namespaces can be <a href="http://lists.xml.org/archives/xml-dev/200204/msg00170.html">neurotic, borderline, psychotic, or normal</a></li>
+					<li>Each of the insane cases complicates processing</li>
+					<li>None of these has any real technical inaccuracies</li>
+					<li>XML should be used with humans in mind</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Unhealthy Namespace Usages in Practice</title>
+				<listing src="neurotic.xml" line="2-9"/>
+				<listing src="borderline.xml" line="2-9"/>
+				<listing src="psychotic.xml" line="2-9"/>
+			</slide>
+			<slide>
+				<title>Elements and Attributes</title>
+				<ul>
+					<li>Namespaces often apply to elements and attributes</li>
+					<ul>
+						<li>if an element name has no prefix, it has no namespace or the default namespace is used</li>
+						<li>if a name has a prefix, the prefix must be bound to a namespace name</li>
+						<li>names like this are called <em>Qualified Names (QNames)</em></li>
+					</ul>
+					<li>Elements and Attributes are treated differently</li>
+					<ul>
+						<li>the default namespace only applies to unprefixed <em>element names</em></li>
+						<li>as a result, unprefixed <em>attribute names</em> are in no namespace</li>
+					</ul>
+					<li>Applications should process namespaces and not just use local names</li>
+					<ul>
+						<li>naïve implementations will break when processing unhealthy instances</li>
+						<li>implementing namespaces is not very hard (but not trivial either)</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>Defining Namespaces</title>
+			<slide>
+				<title>Any URI is Possible</title>
+				<ul>
+					<li>A namespace name is a URI, that's all!</li>
+					<ul>
+						<li>it may not be accessible (because of the URI scheme)</li>
+						<li>when retrieving it, nothing may be returned</li>
+						<li>when retrieving it, something may be returned</li>
+					</ul>
+					<li>The only important thing is <em>the name</em></li>
+					<ul>
+						<li>the name is mentioned in the documentation</li>
+						<li>if you know the documentation, you known the name</li>
+						<li>shared names mean shared knowledge</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Namespace Definitions</title>
+				<ul>
+					<li>Namespaces can be defined by a DTD (<a href="http://www.w3.org/TR/xhtml1/#strict">XHTML</a>)</li>
+					<li>Namespaces can be defined by XSD (<a href="http://www.w3.org/TR/soap12-part1/#tabnsprefixes">SOAP</a>)</li>
+					<li>Namespaces can be defined by RELAX NG (<a href="http://www.w3.org/TR/xhtml2/conformance.html#strict">XHTML 2.0</a>)</li>
+					<li>Namespaces can be defined by prose (<a href="http://www.w3.org/TR/xslt#xslt-namespace">XSLT</a>)</li>
+					<li>If schemas are provided, additional information is required</li>
+					<ul>
+						<li>it is unlikely that a namespace can be fully described by a schema</li>
+						<li>additional constraints and semantics are specified in prose</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Fixed or Extensible?</title>
+				<ul>
+					<li>Can a namespace change over time?</li>
+					<ul>
+						<li>may the namespace description become outdated? extended? replaced?</li>
+						<li>this should be clearly documented in the namespace description</li>
+					</ul>
+					<li>The XML XML Namespace was widely believed <a href="http://www.w3.org/XML/1998/namespace">to be defined by XML</a></li>
+					<ul>
+						<li><xml>xml:lang</xml> and <xml>xml:space</xml> defined by XML</li>
+						<li>but then <xml>xml:base</xml> was added by <em href="http://www.w3.org/TR/xmlbase/">XML Base</em></li>
+						<li>and then <xml>xml:id</xml> was added by <link href="xml:id"><code>xml:id</code></link></li>
+					</ul>
+					<li>When defining namespaces, plan ahead and publish everything</li>
+					<ul>
+						<li>dependencies, change management, and versioning issues are important</li>
+						<li>there still is no established standard for namespace descriptions</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>Processing Namespaces</title>
+			<slide id="namespace-validity">
+				<title>Namespaces and Validity</title>
+				<ul>
+					<li>Namespaces define an additional layer on top of XML</li>
+					<ul>
+						<li>they define additional semantics (assignment to namespaces)</li>
+						<li>they define additional constraints (declaration and usage of namespaces)</li>
+					</ul>
+					<li>Namespace-awareness is a basic requirement for XML tools</li>
+					<ul>
+						<li>XML not compliant with XML Namespaces will break most tools</li>
+						<li>processing namespaces should be done by tools</li>
+						<li>a namespace-aware parser translates namespace declarations into nodes</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Namespaces in the Document</title>
+				<listing src="mathml4.xml"/>
+			</slide>
+			<slide>
+				<title>Namespaces in the Tree</title>
+				<img src="xmlns-tree.png" style="width : 90% ; margin : 4% ; "/>
+			</slide>
+		</part>
+		<part>
+			<title>Conclusions</title>
+			<slide>
+				<title>Name Spaces</title>
+				<ul>
+					<li><q>Bags of Names</q> with a URI as a label</li>
+					<li>The URI does not necessarily return anything</li>
+					<li>Namespaces can be defined in any way (e.g., schemas)</li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>
