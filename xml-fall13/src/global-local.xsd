@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="p" type="mixedType"/>
+	<xs:complexType name="mixedType" mixed="true">
+		<xs:choice maxOccurs="unbounded" minOccurs="0">
+			<xs:element ref="b"/>
+			<xs:element name="i" type="xs:string"/>
+			<xs:element name="u" type="xs:string"/>
+		</xs:choice>
+		<xs:attribute ref="class"/>
+	</xs:complexType>
+	<xs:element name="b" type="xs:string"/>
+	<xs:attribute name="class">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="comment"/>
+				<xs:enumeration value="warning"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+</xs:schema>

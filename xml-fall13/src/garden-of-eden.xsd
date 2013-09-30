@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="person" type="personType"/>
+	<xs:element name="name" type="nameType"/>
+	<xs:element name="givenname" type="givennameType"/>
+	<xs:element name="surname" type="surnameType"/>
+	<xs:element name="address" type="addressType"/>
+	<xs:element name="company" type="companyType"/>
+	<xs:element name="email" type="emailType"/>
+	<xs:complexType name="personType">
+		<xs:sequence>
+			<xs:element ref="name"/>
+			<xs:element ref="address"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="nameType">
+		<xs:sequence>
+			<xs:element ref="givenname" maxOccurs="unbounded"/>
+			<xs:element ref="surname"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="givennameType">
+		<xs:restriction base="xs:token"/>
+	</xs:simpleType>
+	<xs:simpleType name="surnameType">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:complexType name="addressType">
+		<xs:sequence>
+			<xs:element ref="company"/>
+			<xs:element ref="email" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="companyType">
+		<xs:restriction base="xs:string"/>
+	</xs:simpleType>
+	<xs:simpleType name="emailType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value=".*@.*\..*"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

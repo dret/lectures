@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:simpleType name="myIntegerType">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="10000"/>
+			<xs:maxInclusive value="99999"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="stockKeepingUnitType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="\d{3}-[A-Z]{2}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="USStateType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="AK"/>
+			<xs:enumeration value="AL"/>
+			<xs:enumeration value="AR"/>
+			<!-- and so on ... -->
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
