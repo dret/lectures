@@ -2119,4 +2119,1045 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="xsd-1">
+		<title short="XSD 1">XSD – Part I</title>
+		<date>2013-09-30</date>
+		<toc class="resources"><a href="http://www.w3.org/XML/Schema" title="W3C XML Schema Home">XML Schema</a></toc>
+		<toc class="abstract">The <em>XML Schema Definition Language (XSD)</em> is the most popular schema language for XML today. It has been introduced to overcome some of the commonly observed limitations of DTDs, most notably the lack of typing. <em>Simple Types</em> describe content which is not structured by XML markup, which means it describes attribute values and element content. Simple types can be defined by deriving new types from existing types by using type restriction.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<slide>
+			<title>Bad Names</title>
+			<blockquote>XML Schema is a language for describing an XML schema.<br/>An XML schema can be defined using XML Schema.<br/>I would like to use XML Schema for my XML schema.</blockquote>
+			<ul>
+				<li>The two most awkward name choices in the XML arena:</li>
+				<ol>
+					<li><em>XML Schema</em>, which is simply <u>a</u> XML schema language (among many others)</li>
+					<li><em>Open XML</em>, which is simply an XML language for encoding office documents</li>
+				</ol>
+				<li>Naming things means <q>getting into people's heads</q></li>
+				<ul>
+					<li>pretentious and all-embracing name choices serve a certain purpose</li>
+					<li><em>XSD</em> and <em>WXS</em> are two semi-official acronyms for XML Schema</li>
+				</ul>
+				<li>Good news: <em>XML Schema</em> <a href="http://dret.typepad.com/dretblog/2008/06/new-w3c-drafts-xsd-rdfa.html">has been renamed</a> (<a href="http://dret.typepad.com/dretblog/2007/08/xml-schema-11-x.html">after being renamed</a>)</li>
+				<ul>
+					<li><em>XSD</em> now is the official acronym for the <em>XML Schema Definition Language</em></li>
+					<li>(very officially, this name change affects version 1.1 of the language only …)</li>
+				</ul>
+			</ul>
+		</slide>
+		<slide>
+			<title>What's Wrong With DTDs?</title>
+			<ul>
+				<li>DTDs do not support application-level datatypes</li>
+				<ul>
+					<li>XML for B2B is very data-centric and needs typing</li>
+					<li>SGML was created for documents where typing was less important</li>
+				</ul>
+				<li>DTDs do not support any relationships between markup constructs</li>
+				<ul>
+					<li>content models cannot be reused</li>
+					<li>attribute lists cannot be reused</li>
+					<li>structural relationships cannot be exploited in the DTD</li>
+					<li><link href="param-entity"/> are used as a hack to work around this limitation</li>
+				</ul>
+				<li>DTD + XML Namespaces = Bad idea!</li>
+			</ul>
+		</slide>
+		<slide>
+			<title>Different Levels of Semantics</title>
+			<ul>
+				<li>XSD's simple data type provide some semantics</li>
+				<ul>
+					<li>a formerly undescribed attribute can now be described as being a <xsdtype>date</xsdtype></li>
+					<li>it can be understood as being a date and inserted into a calendar</li>
+					<li>but what kind of date is it? a birthday? an order date? a shipping date?</li>
+					<li>a question of the <em>context</em> of where the <xsdtype>date</xsdtype> appears</li>
+				</ul>
+				<li>XSD better supports model-level information</li>
+				<ul>
+					<li>however, XSD also only captures part of the application semantics</li>
+					<li>XSD is usually more specific than a DTD, because it contains types</li>
+					<li>types provide information about the basic datatypes being used</li>
+					<li>additional semantics (e.g., different kinds of dates) must be documented elsewhere</li>
+				</ul>
+			</ul>
+		</slide>
+		<slide>
+			<title>Schema-Validation and Applications</title>
+			<img src="schema-valid-documents.png" style="width : 90% ; margin : 4% ; "/>
+		</slide>
+		<slide>
+			<title>Validation and Typing</title>
+			<ul>
+				<li>XSD does two things at the same time:</li>
+			</ul>
+			<ol>
+				<li>Validation checks for structural integrity (is the document <em>schema-valid</em>?)</li>
+				<ul>
+					<li>checking elements and attributes for proper usage (as with DTDs)</li>
+					<li>checking element contents and attribute values for proper values</li>
+				</ul>
+				<li>Type annotations make the types available to applications</li>
+				<ul>
+					<li>instead of having to look at the schema, applications get the <em>Post-Schema Validation Infoset (PSVI)</em></li>
+					<li>type-based applications (such as XSLT 2.0) can work on the typed instance</li>
+				</ul>
+			</ol>
+		</slide>
+		<slide>
+			<title>XSD Syntax</title>
+			<img src="xml-technology-syntaxes.png" style="width : 90% ; margin : 4% ; "/>
+		</slide>
+		<part id="xsd-types">
+			<title>XSD Types</title>
+			<slide>
+				<title>What is a Type?</title>
+				<ul>
+					<li>A type is a <em>set of values</em></li>
+					<ul>
+						<li>the values can be enumerated (<em>home, mobile, office</em>)</li>
+						<li>the values can be described by extension (intervals, regular expressions)</li>
+					</ul>
+					<li>DTD have (almost) no types</li>
+					<ul>
+						<li>element content is always <xml>#PCDATA</xml> (any number of any characters)</li>
+						<li>attributes most often are <xml>CDATA</xml>  (any number of any characters)</li>
+						<li>attributes may have enumerated types (but no extensional types)</li>
+						<li>attributes may use <link href="ididref"/></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>XSD vs. DTD</title>
+				<div style="margin : 2% ; ">
+					<table width="90%" cellspacing="20">
+						<col/>
+						<colgroup span="2"/>
+						<thead>
+							<tr>
+								<td/>
+								<th>DTD</th>
+								<th>XSD</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Concepts</th>
+								<td colspan="2" align="center">some conceptual model (formal/informal)</td>
+							</tr>
+							<tr>
+								<th>Types</th>
+								<td style="color : gray ; "><xml>ID/IDREF</xml> and (<xml>#P</xml>)<xml>CDATA</xml></td>
+								<td>Hierarchy of Simple and Complex Types</td>
+							</tr>
+							<tr>
+								<th>Markup Constructs</th>
+								<td>Element Type Declarations<br/><xml>&lt;!ELEMENT order …</xml></td>
+								<td>Element Definitions<br/><xml>&lt;xs:element name="order"> …</xml></td>
+							</tr>
+							<tr>
+								<th>Instances (Documents)</th>
+								<td colspan="2" align="center"><xml>&lt;order date=""> [ order content ] &lt;/order></xml></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</slide>
+			<slide>
+				<title>Document/Data Perspectives</title>
+				<ul>
+					<li>XML as documents is text interspersed with structure</li>
+					<ul>
+						<li>XML captures text structures that support document processing</li>
+						<li>without these structures, the text remains usable (as unstructured text)</li>
+						<li>structure is good, but not indispensable</li>
+					</ul>
+					<li>XML as data is structure filled with data</li>
+					<ul>
+						<li>programmers think about classes and objects, so they need types</li>
+						<li>without structure, data-centric XML is completely useless</li>
+						<li>programmers often view XML as wire format and types as the portal to their objects</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="xsd-simple-types">
+			<title>Simple Types</title>
+			<slide>
+				<title>What are Simple Types?</title>
+				<ul>
+					<li>Simple types describe values not structured by XML markup</li>
+					<ul>
+						<li>they describe attribute values (<xml>date="2006-10-03"</xml>)</li>
+						<li>they describe element content (<code>&lt;phone>+1-510-6432253&lt;/phone></code>)</li>
+					</ul>
+					<li>Simple types can be used for elements or attributes</li>
+					<ul>
+						<li>XSD treats contents in elements and attributes equally</li>
+						<li>simple type libraries can be designed independent of their eventual use</li>
+					</ul>
+					<li>Simple types are available in three flavors</li>
+					<ul>
+						<li><em>atomic types:</em> one value of one type (one number in some range)</li>
+						<li><em>union types:</em> one value of a union of types (a number or the string <q><code>undefined</code></q>)</li>
+						<li><em>list types:</em> a whitespace-separated list of values (<elem>phone type="home office"</elem>)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Named vs. Anonymous</title>
+				<ul>
+					<li>Types can be <em>named</em> or <em>anonymous</em></li>
+					<ul>
+						<li>named types have a name and can be referenced (and thus be reused)</li>
+						<li>anonymous types have no name and can only be used where they are defined</li>
+					</ul>
+				</ul>
+				<listing src="named-anonymous-simple.xsd" line="3-9"/>
+				<listing src="named-anonymous-simple.xsd" line="17-23"/>
+			</slide>
+			<slide>
+				<title>Type Definitions</title>
+				<ul>
+					<li>Simple types are sets of values</li>
+					<ul>
+						<li>named simple types are sets of values with a name (and thus reusable)</li>
+						<li>anonymous simple types are sets of values defined where they are needed</li>
+					</ul>
+					<li>Simple types are defined to represent model-level information</li>
+					<ul>
+						<li>in most cases, they will have restrictions associated with them</li>
+						<li>they may also simply be tags for semantics (fax and phone numbers share the same value space)</li>
+					</ul>
+					<li>XSD has a library of <em>built-in datatypes</em></li>
+					<ul>
+						<li><em>ur-types</em> are the conceptual grounding of all types</li>
+						<li><em>primitive types</em> are the types that are there <q>by definition</q></li>
+						<li><em>derived types</em> are based on primitive types</li>
+						<li>users can derive their own types using <link href="xsd-simple-type-restriction"/></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Type Hierarchy</title>
+				<img style="height : 75% ; margin : 2% ; " src="xsd-type-hierarchy.gif" href="http://www.w3.org/TR/xmlschema-2/#built-in-datatypes"/>
+			</slide>
+			<part id="xsd-simple-type-restriction">
+				<title>Simple Type Restriction</title>
+				<slide>
+					<title>Built-In Types</title>
+					<listing src="built-in.xsd"/>
+				</slide>
+				<slide>
+					<title>How to Restrict</title>
+					<ul>
+						<li>Simple types can be derived by restriction</li>
+						<ul>
+							<li>the <em>base type</em> must be a simple type</li>
+							<li>the <em>derived type</em> will be a simple type</li>
+							<li>all simple types form a tree, rooted at the <code>anySimpleType</code></li>
+						</ul>
+						<li>Restriction are based on facets</li>
+						<ul>
+							<li>each restriction can use <em>0-n</em> facets</li>
+							<li>facets can be refined in further simple type restrictions</li>
+							<li>XSD designers should try to restrict types as much as possible</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Facets</title>
+					<ul>
+						<li>Facets define a certain way of restricting a simple type</li>
+						<ul>
+							<li>facets are independent, but they may interact (<code>minLength</code> and <code>maxLength</code>)</li>
+							<li>XSD defines 12 <em>constraining facets</em> which may be used for restrictions</li>
+							<li><code>length, minLength, maxLength, pattern, enumeration, whiteSpace, maxInclusive, maxExclusive, minExclusive, minInclusive, totalDigits, fractionDigits</code></li>
+						</ul>
+						<li>Facets may be repeated in different levels of the type hierarchy</li>
+						<ul>
+							<li>they may only further restrict the facet (e.g., reducing the <code>maxLength</code>)</li>
+							<li>facets apply to all directly or indirectly derived subtypes</li>
+							<li>facets may be <em>fixed</em> (no further restriction is allowed)</li>
+						</ul>
+						<li>Not all facets are applicable to all types</li>
+						<ul>
+							<li>the applicability depends on the <em>primitive type</em> being used</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Facet Applicability</title>
+					<div style="margin : 2% ; ">
+						<table width="90%">
+							<tr>
+								<th align="right" valign="top"><code>string</code></th>
+								<td>length, minLength, maxLength, pattern, enumeration, whiteSpace</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>boolean</code></th>
+								<td>pattern, whiteSpace</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>float</code></th>
+								<td>pattern, enumeration, whiteSpace, maxInclusive, maxExclusive, minInclusive, minExclusive</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>double</code></th>
+								<td>pattern, enumeration, whiteSpace, maxInclusive, maxExclusive, minInclusive, minExclusive</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>decimal</code></th>
+								<td>totalDigits, fractionDigits, pattern, whiteSpace, enumeration, maxInclusive, maxExclusive, minInclusive, minExclusive</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>duration</code></th>
+								<td>pattern, enumeration, whiteSpace, maxInclusive, maxExclusive, minInclusive, minExclusive</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>dateTime</code></th>
+								<td>pattern, enumeration, whiteSpace, maxInclusive, maxExclusive, minInclusive, minExclusive</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>time</code></th>
+								<td>pattern, enumeration, whiteSpace, maxInclusive, maxExclusive, minInclusive, minExclusive</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>date</code></th>
+								<td>pattern, enumeration, whiteSpace, maxInclusive, maxExclusive, minInclusive, minExclusive</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>gYearMonth</code></th>
+								<td>pattern, enumeration, whiteSpace, maxInclusive, maxExclusive, minInclusive, minExclusive</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>gYear</code></th>
+								<td>pattern, enumeration, whiteSpace, maxInclusive, maxExclusive, minInclusive, minExclusive</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>gMonthDay</code></th>
+								<td>pattern, enumeration, whiteSpace, maxInclusive, maxExclusive, minInclusive, minExclusive</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>gDay</code></th>
+								<td>pattern, enumeration, whiteSpace, maxInclusive, maxExclusive, minInclusive, minExclusive</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>gMonth</code></th>
+								<td>pattern, enumeration, whiteSpace, maxInclusive, maxExclusive, minInclusive, minExclusive</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>hexBinary</code></th>
+								<td>length, minLength, maxLength, pattern, enumeration, whiteSpace</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>base64Binary</code></th>
+								<td>length, minLength, maxLength, pattern, enumeration, whiteSpace</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>anyURI</code></th>
+								<td>length, minLength, maxLength, pattern, enumeration, whiteSpace</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>QName</code></th>
+								<td>length, minLength, maxLength, pattern, enumeration, whiteSpace</td>
+							</tr>
+							<tr>
+								<th align="right" valign="top"><code>NOTATION</code></th>
+								<td>length, minLength, maxLength, pattern, enumeration, whiteSpace</td>
+							</tr>
+						</table>
+					</div>
+				</slide>
+				<slide>
+					<title>Patterns</title>
+					<ul>
+						<li>Patterns restrict the <em>lexical space</em> of simple types</li>
+						<ul>
+							<li>most other facets restrict the <em>value space</em> (e.g., intervals of numbers)</li>
+							<li>in many cases, patterns are useful additions to value-oriented facets</li>
+						</ul>
+						<li>Patterns are <a href="http://www.w3.org/TR/xmlschema-2/#regexs">regular expressions</a></li>
+						<ul>
+							<li>they support many common regex constructs and Unicode</li>
+							<li>the language pattern allows <q><code>de</code></q>, <q><code>de-CH</code></q>, and other tags</li>
+							<li>the pattern checks for lexical correctness, not against a code list</li>
+						</ul>
+					</ul>
+					<pre>([a-zA-Z]{2}|[iI]-[a-zA-Z]+|[xX]-[a-zA-Z]{1,8})(-[a-zA-Z]{1,8})*</pre>
+				</slide>
+				<slide>
+					<title>Simple Type Examples</title>
+					<listing src="simple-examples.xsd"/>
+				</slide>
+				<slide>
+					<title>Facet Limitations</title>
+					<ul>
+						<li>Facets limit one dimension of a type's value space</li>
+						<ul>
+							<li>using <code>pattern</code>, the lexical space can also be restricted</li>
+							<li>restrictions should be made as specific as possible</li>
+							<li>no limitations are possible beyond the predefined facets</li>
+						</ul>
+						<li>There is no connection to the context within the document</li>
+						<ul>
+							<li>facets cannot make references to other values (e.g., neighboring attributes)</li>
+						</ul>
+						<li>Additional constraints should be documented</li>
+						<ul>
+							<li>documentation enables applications to implement constraint checking</li>
+							<li>other schema languages (like <a href="http://dret.net/lectures/xml-fall08/schemalanguages">Schematron</a>) may be used to express these constraints</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+		</part>
+		<part>
+			<title>Conclusions</title>
+			<slide>
+				<title>Typed XML Content</title>
+				<ul>
+					<li>XSD introduces a <q>type layer</q> to schema languages</li>
+					<li>Types facilitate abstractions (and thus modeling)</li>
+					<li>Simple types can be restricted to yield more specific types</li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="xsd-2">
+		<title short="XSD 2">XSD – Part II</title>
+		<date>2013-10-02</date>
+		<toc class="resources"></toc>
+		<toc class="abstract">XSD <em>Complex Types</em> describe element content if this content is using attributes and/or element content other than only character data. Thus, complex types are used to define the allowed markup structures for a class of documents. Using XSD's type concepts, it is easier to represent model-level information in a schema, because type hierarchies can represent model-level specializations.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="xsd-complex-types">
+			<title>Complex Types</title>
+			<slide>
+				<title>What is a Complex Type?</title>
+				<ul>
+					<li>Complex types describe the allowed element content</li>
+					<ul>
+						<li>they describe what the element may contain (the element's <em>content model</em>)</li>
+						<li>they describe the attributes that an element may have (the element's <em>attribute list</em>)</li>
+					</ul>
+					<li>Complex types do not define the element name</li>
+					<ul>
+						<li>the complex type defines which content is allowed for the element</li>
+						<li>the element definition uses the complex type to define the allowed element content</li>
+					</ul>
+					<li>Complex types have similar properties to simple types</li>
+					<ul>
+						<li>they can be named or anonymous</li>
+						<li><link href="xsd-complex-type-derivation"/> can be used to construct a type hierarchy</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Complex Type Example</title>
+				<listing src="complex-example.xsd"/>
+			</slide>
+			<slide>
+				<title>Complex Types &amp; Content Types</title>
+				<ul>
+					<li>Complex types can have different kinds of content</li>
+					<ul>
+						<li><em>simple content</em> refers to simple type content using additional attributes</li>
+						<li><em>complex content</em> is anything else (anything beyond <em>simple type content</em>)</li>
+					</ul>
+					<li><link href="xsd-complex-type-derivation"/> heavily depends on this classification</li>
+				</ul>
+				<div style="margin : 2% ; ">
+					<table width="90%" cellspacing="20" rules="all" frame="border">
+						<tr>
+							<th rowspan="3">Simple Types</th>
+							<th colspan="4">Complex Types</th>
+						</tr>
+						<tr>
+							<th rowspan="2">Simple Content</th>
+							<th colspan="3">Complex Content</th>
+						</tr>
+						<tr>
+							<td align="center">Element Only</td>
+							<td align="center">Mixed</td>
+							<td align="center">Empty</td>
+						</tr>
+					</table>
+				</div>
+			</slide>
+			<part>
+				<title>Content Models</title>
+				<slide>
+					<title>DTD Content Models</title>
+					<ul>
+						<li><link href="dtd-element"/> in DTDs uses a compact syntax</li>
+						<ul>
+							<li>XSD supports the same facilities with a more verbose syntax</li>
+							<li>XSD adds features which DTDs do not support</li>
+						</ul>
+						<li>DTDs allow elements to be mandatory, optional, repeatable, or optional and repeatable</li>						
+						<ul>
+							<li>XSD allows the cardinality to be specified</li>
+						</ul>
+						<li>DTDs allow sequences (<q><code>,</code></q>) and alternatives (<q><code>|</code></q>)</li>
+						<ul>
+							<li>XSD introduces a (very limited) operator for <em>all groups</em></li>
+						</ul>
+						<li>Apart from the syntax, XSD content models are not very different</li>
+					</ul>
+				</slide>
+				<slide>
+					<title>Mixed Content</title>
+					<ul>
+						<li>DTDs define mixed content by mixing <code>#PCDATA</code> into the content model</li>
+						<ul>
+							<li>DTDs always require mixed content to use the form <code>( #PCDATA | a | b )*</code></li>
+							<li>the occurrence of elements in mixed content cannot be controlled</li>
+						</ul>
+						<li>XSD defines mixed content outside of the content model</li>
+						<ul>
+							<li>the content model is defined like an element-only content model</li>
+							<li>the <code>mixed</code> attribute on the type marks the type as being mixed</li>
+						</ul>
+						<li>XSD mixed content can use all model groups</li>
+						<ul>
+							<li>it is possible to constrain element occurrences in the same way as in element-only content</li>
+							<li>in practice, this feature is rarely used (mixed content often is very loosely defined)</li>
+						</ul>
+					</ul>
+					<listing src="global-local.xsd" line="3-11"/>
+				</slide>
+				<slide>
+					<title>Empty Content</title>
+					<ul>
+						<li>DTDs have a special keyword for empty elements</li>
+						<ul>
+							<li>instead of the content model, the keyword <code>EMPTY</code> is used</li>
+							<li>empty elements may still have attribute lists associated with them</li>
+						</ul>
+						<li>XSD empty types are defined implicitly</li>
+						<ul>
+							<li>there is no explicit keyword for defining an empty type</li>
+							<li>if a type has no model group inside it, it is empty (it still may have attributes)</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+		</part>
+		<part>
+			<title>XSD Design Patterns</title>
+			<slide>
+				<title>Global Elements? Named Types?</title>
+				<ul>
+					<li>XSD's design dimensions allow different strategies</li>
+					<li>Elements/attributes can be defined as <em>local</em> or <em>global</em></li>
+					<ul>
+						<li><em>local</em> elements/attributes are defined where they are used</li>
+						<li><em>global</em> elements/attributes are globally defined and then referenced</li>
+						<li>elements/attributes which should be reused must be defined as global</li>
+					</ul>
+					<li>Types can be defined as <em>anonymous</em> or <em>named</em></li>
+					<ul>
+						<li><em>anonymous</em> types are defined where they are used</li>
+						<li><em>named</em> types are globally defined and then referenced</li>
+						<li>types which should be reused must be defined as named</li>
+					</ul>
+					<li>XSD design patterns can favor one type of definition</li>
+					<ul>
+						<li>reuse always required <em>global</em> elements/attributes and <em>named</em> types</li>
+						<li>having everything <em>global/named</em> results in bigger schema</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Sample XML</title>
+				<listing src="design-sample.xml"/>
+			</slide>
+			<part>
+				<title>Russian Doll</title>
+				<slide>
+					<title>Russian Doll XSD</title>
+					<listing src="russian-doll.xsd"/>
+				</slide>
+				<slide>
+					<title>Russian Doll Structure</title>
+					<img style="width : 75% ; margin : 4% ; " src="russian-doll.gif" title="Russian Doll XSD"/>
+				</slide>
+			</part>
+			<part>
+				<title>Venetian Blinds</title>
+				<slide>
+					<title>Venetian Blinds XSD</title>
+					<listing src="venetian-blinds.xsd"/>
+				</slide>
+				<slide>
+					<title>Venetian Blinds Structure</title>
+					<img style="width : 75% ; margin : 4% ; " src="venetian-blinds.gif" title="Venetian Blinds XSD"/>
+				</slide>
+			</part>
+			<part>
+				<title>Salami Slice</title>
+				<slide>
+					<title>Salami Slice XSD</title>
+					<listing src="salami-slice.xsd"/>
+				</slide>
+				<slide>
+					<title>Salami Slice Structure</title>
+					<img style="width : 75% ; margin : 4% ; " src="salami-slice.gif" title="Salami Slice XSD"/>
+				</slide>
+			</part>
+			<part>
+				<title>Garden of Eden</title>
+				<slide>
+					<title>Garden of Eden XSD</title>
+					<listing src="garden-of-eden.xsd"/>
+				</slide>
+				<slide>
+					<title>Garden of Eden Structure</title>
+					<img style="width : 75% ; margin : 4% ; " src="garden-of-eden.gif" title="Garden of Eden XSD"/>
+				</slide>
+			</part>
+		</part>
+		<part>
+			<title>Conclusions</title>
+			<slide>
+				<title>Typed XML Structures</title>
+				<ul>
+					<li>XSD introduces a <q>type layer</q> to schema languages</li>
+					<li>Types facilitate abstractions (and thus modeling)</li>
+					<li>Complex types define how elements have to be used</li>
+					<li>Designing XSD can be done in many different ways</li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="xsd-3">
+		<title short="XSD 3">XSD – Part III</title>
+		<date>2013-10-07</date>
+		<toc class="resources"><a href="http://www.awprofessional.com/articles/printerfriendly.asp?p=31477&amp;rl=1">XSD Identity Constraints</a></toc>
+		<toc class="abstract">XSD allows greater flexibility in defining constraints on intra-document references than the ID/IDREF construct of DTDs. XSD's <em>Identity Constraints</em> are scoped, typed, and can be used for elements or attributes. They are more powerful that the DTD's limited ID/IDREF mechanism, but still lack sufficient generality to support a really wide set of model constraints to be expressed. XSD complex types can be derived by <em>restriction</em> or <em>extension</em>. Complex type restriction defines the restricted type to be a more restricted version of the base type. Complex type extension make it possible to extend the base type by either adding attributes or contents (only by appending new content to the content model). Complex type derivation allows XSD to express type hierarchies of complex types, which can be aligned with more or less specialized code for processing instances of these types.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part>
+			<title>Local and Global Definitions</title>
+			<slide>
+				<title>Named and Anonymous Types</title>
+				<ul>
+					<li>Types can be named or anonymous</li>
+					<ul>
+						<li>named types can be reused (for elements, attributes, or type derivation)</li>
+						<li>anonymous types can only be used where they are defined</li>
+					</ul>
+					<li>DTD <q>types</q> are always anonymous (they cannot be reused)</li>
+				</ul>
+				<pre>&lt;!ELEMENT person <span style="color : red ; ">(name, address) >
+&lt;!ATTLIST person id ID #REQUIRED ></span></pre>
+				<ul>
+					<li>DTDs have everything hardcoded</li>
+					<ul>
+						<li>complex types are always locally defined</li>
+						<li>elements are always globally defined</li>
+						<li>attributes are always locally defined</li>
+					</ul>
+				</ul>
+			</slide>
+			<part>
+				<title>Elements</title>
+				<slide>
+					<title>Local vs. Global Elements</title>
+					<ul>
+						<li>Elements can be defined in a type or in the schema</li>
+						<ul>
+							<li>local elements can only be used where they are defined</li>
+							<li>global elements can be reused, they can serve as building blocks</li>
+						</ul>
+						<li>Elements and complex types depend on each other</li>
+						<ul>
+							<li>an element is defined by a type, often this will be a complex type</li>
+							<li>a complex type is defined by its contents, which are elements and/or attributes</li>
+						</ul>
+					</ul>
+					<listing src="global-local.xsd" line="4-12"/>
+				</slide>
+				<slide>
+					<title>Reusable Elements</title>
+					<listing src="complex-example.xsd"/>
+				</slide>
+			</part>
+			<part>
+				<title>Attributes</title>
+				<slide>
+					<title>Attribute Definitions</title>
+					<ul>
+						<li>DTDs treat attributes as something entirely different from element content</li>
+						<ul>
+							<li>they are defined in an <code>ATTLIST</code>, not in the <code>ELEMENT</code> definition</li>
+							<pre>&lt;!ELEMENT person (name, address) >
+<span style="color : red ; ">&lt;!ATTLIST person id ID #REQUIRED ></span></pre>
+							<li>they have a special range of <link href="dtd-attr-type"/> as opposed to elements</li>
+							<pre>&lt;!ATTLIST person id <span style="color : red ; ">ID</span> #REQUIRED ></pre>
+						</ul>
+						<li>XSD overcomes these restrictions only partially</li>
+						<ul>
+							<li><link href="xsd-simple-types"/> are used to define attribute (or element) contents</li>
+							<li>attributes are still described as something entirely different from an element's content model</li>
+						</ul>
+						<li>Attributes could be better integrated into the model</li>
+						<ul>
+							<li><a href="http://dret.net/lectures/xml-fall08/schemalanguages#%287%29">RELAX NG</a> treats attributes as part of an element's content model</li>
+							<li>this makes it trivial to have choices of element content and attributes</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Reusing Attributes</title>
+					<ul>
+						<li>DTDs treat attributes as something local to an element</li>
+						<ul>
+							<li>attributes are defined in an element's <code>ATTLIST</code></li>
+							<li>reusing attributes for more than on element requires <link href="param-entity"/></li>
+						</ul>
+						<li>XSD better supports reuse of schema components</li>
+						<ul>
+							<li>types can be defined locally (anonymous) or globally (named)</li>
+							<li>elements and attributes can be defined globally or locally</li>
+						</ul>
+						<li>Globally defined attributes can be reused</li>
+						<ul>
+							<li>the attribute definition does not tie it to any occurrence</li>
+							<li>the attribute can then be referenced from an complex type definition</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Reusing Attributes (Example)</title>
+					<listing src="global-local.xsd"/>
+				</slide>
+			</part>
+		</part>
+		<part id="xsd-names">
+			<title>Names and Namespaces</title>
+			<slide>
+				<title>Definitions</title>
+				<ul>
+					<li>Many XSDs define a vocabulary for a namespace</li>
+					<ul>
+						<li>DTDs do not have any support for namespaces</li>
+						<li>XSD heavily builds on <link href="xmlns"/></li>
+					</ul>
+					<li>XSD provides support for declaring a vocabulary's namespace</li>
+					<pre>&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" <span style="color : red ; ">targetNamespace="http://www.example.com/"</span>></pre>
+					<li>Schema-validation can check for proper namespace usage</li>
+					<ul>
+						<li>the <xml>targetNamespace</xml> has to be used in the instance</li>
+						<li>if the namespace does not match, validation cannot succeed</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Instances</title>
+				<ul>
+					<li>The schema defines the <xml>targetNamespace</xml> of the vocabulary</li>
+					<ul>
+						<li>all globally defined elements, attributes, and types are in that namespace</li>
+						<li>the instances must declare and use the namespace to be schema-valid</li>
+					</ul>
+				</ul>
+				<listing src="multicol.html" line="2-5"/>
+				<ul>
+					<li>A <em>prefixed name</em> is not the same as a <em>qualified name</em></li>
+					<ul>
+						<li>if there is a default namespace, unprefixed elements are still qualified</li>
+					</ul>
+					<li>Nasty details about XML Namespaces and attributes</li>
+					<ul>
+						<li>the default namespace does <em>not</em> apply to attributes</li>
+						<li>attributes must therefore <em>always be prefixed</em> if they need to be qualified</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Name Qualification</title>
+				<ul>
+					<li>Global elements and attributes have to be used as qualified names</li>
+					<ul>
+						<li>this means that they must be referred to by their namespace-qualified name</li>
+						<li>if a default namespace is used, elements are qualified <em>without carrying a prefix</em></li>
+						<li>since the default namespace does not apply to attributes, they always must be explicitly prefixed</li>
+					</ul>
+					<li>Local elements and attributes may be used qualified or unqualified</li>
+					<ul>
+						<li>this control <em>only applies to locally define elements or attributes</em></li>
+						<li>the default defined by XSD is not a good choice</li>
+						<li>because of how XML Namespaces work, a non-default choice is recommended</li>
+					</ul>
+					<li>XSD allows control over how local names have to be used</li>
+				</ul>
+				<pre>&lt;xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.com/" <span style="color : red ; ">elementFormDefault="qualified" attributeFormDefault="unqualified"</span>></pre>
+			</slide>
+		</part>
+		<part>
+			<title>Identity Constraints</title>
+			<slide>
+				<title>Element = Type + Constraints</title>
+				<ul>
+					<li>DTDs and XSD are mainly about specifying grammars</li>
+					<ul>
+						<li>types describe the allowed values using grammars</li>
+						<li>grammar-oriented schemas have some nice properties</li>
+					</ul>
+					<li>DTD's <link href="ididref"/> allow additional constraints</li>
+					<ul>
+						<li>apart from the grammar definition, cross-references in the tree are supported</li>
+						<li>validation checks the integrity of the cross-references, not only the tree</li>
+					</ul>
+					<li>DTD's ID/IDREF are a very simple mechanism</li>
+					<ul>
+						<li>they are always global</li>
+						<li>they also define the type of the attribute (XML names)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Improvements over ID/IDREF</title>
+				<ul>
+					<li>XSD's <em>Identity Constraints</em> improve DTD's ID/IDREF</li>
+					<li>Identity constraints are scoped and apply only to a selected set of nodes</li>
+					<ul>
+						<li>the constraint applies only to a selected set of nodes (using XPath)</li>
+					</ul>
+					<li>Identity constraints are evaluated using typed values</li>
+					<ul>
+						<li><code>ID</code>s must be XML names (no numbers allowed)</li>
+						<li><q><code>2</code></q> ≟ <q><code>+00002</code></q> should be evaluated based on the type (string or decimal?)</li>
+						<li>XSD separates the constraint from the type of the selected nodes</li>
+					</ul>
+					<li>Identity constraints may select elements or attributes</li>
+					<ul>
+						<li>XPaths are used to select the constrained values, they can select elements or attributes</li>
+					</ul>
+					<li>Multiple fields</li>
+					<ul>
+						<li>it is possible to select more than one field for a constraint (phone &amp; area code must be unique)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Types of Identity Constraints</title>
+				<ul>
+					<li>Uniqueness constraints</li>
+					<ul>
+						<li>if there is a field, it must have a unique value among the selected nodes</li>
+					</ul>
+					<li>Key constraints</li>
+					<ul>
+						<li>there must be a field, and it must have a unique value among the selected nodes</li>
+					</ul>
+					<li>Key reference constraints</li>
+					<ul>
+						<li>the field must refer to an existing value in the referred key</li>
+						<li>if the key reference also is constrained by a key, only one reference may use the referred key</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Identity Constraint Definitions</title>
+				<ul>
+					<li>Identity constraints are part of an element definition</li>
+					<li>There are <em>three important factors</em> to an identity constraint</li>
+					<ol>
+						<li>location of the identity constraint's definition</li>
+						<li>the nodes to which the constraint should be applied</li>
+						<li>the fields which are used to evaluate the constraint</li>
+					</ol>
+					<li>If the constraint is a key reference constraint, there is a <em>fourth factor</em></li>
+					<ol start="4">
+						<li>the key constraint that is used for checking the references</li>
+					</ol>
+				</ul>
+			</slide>
+			<slide>
+				<title>Identity Constraint Evaluation</title>
+				<img style="width : 90% ; margin : 4% ; " src="identity-constraints.png"/>
+			</slide>
+			<slide>
+				<title>Advanced Identity Constraints</title>
+				<img style="width : 90% ; margin : 4% ; " src="identity-constraints++.png"/>
+			</slide>
+		</part>
+		<part id="xsd-complex-type-derivation">
+			<title>Complex Type Derivation</title>
+			<slide>
+				<title>Types in XSD</title>
+				<ul>
+					<li><link href="xsd-simple-types"/> are used to model non-markup values</li>
+					<li><link href="xsd-simple-type-restriction"/> is used to define simple user types</li>
+					<li><link href="xsd-complex-types"/> are used to model markup structures</li>
+					<li>Models often use generalization and specialization</li>
+					<ul>
+						<li>not all models use this modeling technique</li>
+						<li>OO methods have made this very popular (UML is OO)</li>
+					</ul>
+					<li><link href="xsd-complex-type-derivation"/> is used to represent model hierarchies</li>
+					<ul>
+						<li>in theory, this could be used by generalized and specialized code</li>
+						<li>in practice, the connection between XSD and code is too weak to be robust</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Type Derivation</title>
+				<ul>
+					<li>XSD supports the modeling approach of <em>specialization</em></li>
+					<ul>
+						<li>simple types can be restricted to create more specialized simple types</li>
+						<li>each value of a restricted type is also a valid value of the more general type</li>
+					</ul>
+					<li>Complex types are combinations of content and attributes</li>
+					<li>Specialization of complex types can be done in two ways</li>
+					<ul>
+						<li><link href="xsd-complex-type-restriction"/>: more restricted ways of using the content and/or attributes</li>
+						<li><link href="xsd-complex-type-extension"/>: additional content and/or attributes may be used</li>
+					</ul>
+					<li>Both kinds of complex type derivation can be regarded as specialization</li>
+					<ul>
+						<li><link href="xsd-complex-type-restriction"/>: for US persons the country must always be set to <q><code>US</code></q></li>
+						<li><link href="xsd-complex-type-extension"/>: people having an employee number are employees</li>
+					</ul>
+				</ul>
+			</slide>
+			<part id="xsd-complex-type-restriction">
+				<title>Complex Type Restriction</title>
+				<slide>
+					<title>Removing Choices</title>
+					<ul>
+						<li>Complex types usually allow variability</li>
+						<ul>
+							<li><xml>minOccurs</xml> and <xml>maxOccurs</xml> allow variability in occurrences</li>
+							<li><xml>choice</xml> groups allow to choose between a number of alternatives</li>
+							<li>attributes may be flagged as <code>use="optional"</code></li>
+							<li>simple types allow the individual values to use certain sets of values</li>
+						</ul>
+						<li>Complex type restriction allows restrictions of all these variations</li>
+						<ul>
+							<li><xml>minOccurs</xml> and <xml>maxOccurs</xml> can be made more restrictive</li>
+							<li>alternatives can be removed from choice groups</li>
+							<li>optional attributes can flagged as <code>use="required"</code> or <code>use="prohibited"</code></li>
+							<li>the simple types of values can be set to more restricted simple types</li>
+						</ul>
+						<li>The technical way of defining restrictions is cumbersome</li>
+						<ul>
+							<li>when the base type changes, the restricted type has to be fixed by hand</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Complex Type Restriction (Example)</title>
+					<listing src="complex-restriction.xsd"/>
+				</slide>
+				<slide>
+					<title>Processing Restricted Complex Types</title>
+					<ul>
+						<li>Values of restricted types are values of the base types</li>
+						<ul>
+							<li>type restriction is defined so that restricted type values are always base type values</li>
+							<li>code processing a type can be reused to process restricted types</li>
+						</ul>
+						<li>If there is a well-designed type hierarchy, programming becomes easier</li>
+						<ul>
+							<li>simple code can be written to handle the basic types</li>
+							<li>if required, more advanced code can be written for the restricted types</li>
+							<li>in many cases, restriction is more for validation than for processing</li>
+						</ul>
+						<li>XSDs may even use <em>abstract types</em></li>
+						<ul>
+							<li>no element will ever use the <xml>addressType</xml></li>
+							<li>concrete elements will only use restricted types</li>
+							<li>there can be code handling the <xml>addressType</xml> which handles all addresses</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part id="xsd-complex-type-extension">
+				<title>Complex Type Extension</title>
+				<slide>
+					<title>Adding Content</title>
+					<ul>
+						<li>Complex types are element content and attributes</li>
+						<ul>
+							<li>extensions can add content, but only at the end of the base content</li>
+							<li>extensions can add attributes (order is not significant for attributes)</li>
+						</ul>
+						<li>Adding content to existing content may not change the existing content</li>
+						<ul>
+							<li>if the content is <em>element only</em>, it has to remain element only</li>
+							<li>if the content is <em>mixed</em>, is has to remain mixed</li>
+							<li>if the content is <em>empty</em>, it may become element only or mixed</li>
+							<li>the reason for these rules is that <em>mixed</em> is a global property of a type</li>
+						</ul>
+						<li>Adding attributes simply adds these to the list of existing attributes</li>
+						<ul>
+							<li>the added attributes may be optional or required</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Complex Type Extension (Example)</title>
+					<listing src="complex-extension.xsd"/>
+				</slide>
+				<slide>
+					<title>Processing Extended Complex Types</title>
+					<ul>
+						<li>Values of extended types are <em>not</em> values of the base types</li>
+						<ul>
+							<li>type extension adds content add/or attributes to a type</li>
+							<li>if content is added, it is always added at the end of the base type's content</li>
+						</ul>
+						<li>If there is a well-designed type hierarchy, programming becomes easier</li>
+						<ul>
+							<li>simple code can be written to handle the basic types</li>
+							<li>if that should handle extended types, it must be written to handle extensions</li>
+							<li><q>handling extensions</q> can be as simple as skipping them</li>
+						</ul>
+						<li>XSDs may even use <em>abstract types</em></li>
+						<ul>
+							<li>no element will ever use the <xml>addressType</xml></li>
+							<li>concrete elements will only use extended types</li>
+							<li>code handling extended types can build on code handling the base type</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+		</part>
+		<part>
+			<title>Conclusions</title>
+			<slide>
+				<title>XSD Features</title>
+				<ul>
+					<li>XSD allows defining a grammar for XML documents</li>
+					<li>Identity constraints enable non-grammar constraints to be expressed</li>
+					<li>XSD identity constraints are more powerful than the DTD ID/IDREF concept</li>
+					<li>Only a subset of structural constraints can be expressed in XSD</li>
+					<li>XSD 1.1 introduces the concept of <em>assertions</em> (XPath-based constraints)</li>
+					<li>Types make it easier to turn a model into a grammar</li>
+					<li>Some of the things we have not seen:</li>
+					<ul>
+						<li>named groups, modularizing schemas, wildcards, substitution groups, …</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="schema-components">
+				<title>Schema Components</title>
+				<img style="height : 75% ; margin : 2% ; " src="schema-components.gif" title="Schema Components"/>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>
