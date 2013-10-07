@@ -3160,4 +3160,214 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="presentation-preparation" external="project-schedule">
+		<title>Project Presentation Preparation</title>
+		<date>2013-10-09</date>
+	</presentation>
+	<presentation id="presentations" external="project-schedule">
+		<title>Project Presentations</title>
+		<date>2013-10-14</date>
+	</presentation>
+	<presentation id="presentation-preparation" external="project-schedule">
+		<title>Project Presentation Feedback</title>
+		<date>2013-10-16</date>
+	</presentation>
+	<presentation id="xslt-1">
+		<title short="XSLT 1">XML Transformations (XSLT) – Part I</title>
+		<date>2013-10-21</date>
+		<toc class="resources"><a href="http://www.w3.org/TR/xslt" title="W3C XSLT 1.0 Specification">Spec</a></toc>
+		<toc class="abstract">Because XML can be used to represent any vocabulary (often defined by some schema), the question is how these different vocabularies can be processed and maybe transformed into something else. This <q>something else</q> may be another XML vocabulary (a common requirement in B2B scenarios), or it may be HTML (a common scenario for Web publishing). Using <em>XSL Transformations (XSLT)</em>, mapping tasks can be implemented easily. XSLT leverages XPath's expressive power in a rather simple programming language, the programs are often called <em>stylesheets</em>. For easy tasks, XSLT mappings can be specified without much real <q>programming</q> going on, by simply specifying how components of the source markup are mapped to components of the target markup.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<slide>
+			<title>XPath and XSLT</title>
+			<ul>
+				<li>XPath is an expression language</li>
+				<ul>
+					<li>location paths let you select parts of an XML document tree</li>
+					<li>expressions in general may have other data types as well (string, number, boolean)</li>
+				</ul>
+				<li>XSLT is a programming language based on XPath</li>
+				<ul>
+					<li>XSLT defines the structures for the control flow within the program</li>
+					<li>in all the places where something is evaluated, XPaths are being used</li>
+					<li>sometimes, one can substitute for the other</li>
+				</ul>
+			</ul>
+			<listing src="xslt-vs-xpath.xsl" line="5-13"/>
+		</slide>
+		<slide>
+			<title>XSLT Executive Summary</title>
+			<ul>
+				<li>XSLT is an XML-oriented programming language</li>
+				<li>XSLT uses XML as its syntax</li>
+				<li>XSLT is a weakly typed language</li>
+				<li>XSLT is not designed for large programming tasks</li>
+				<li>XSLT is the standard language for XML-to-XML transformations</li>
+				<li>XSLT is very simple and often too simple</li>
+				<li><link href="xslt20-1">XSLT 2.0</link> is much more complex and powerful</li>
+			</ul>
+		</slide>
+		<slide>
+			<title>XSLT as a Programming Language</title>
+			<ul>
+				<li>XSLT is a functional programming language</li>
+				<ul>
+					<li>fundamentally different from the usual languages</li>
+					<li>not important for very simple mapping applications</li>
+					<li>important for writing more complex transformations</li>
+					<li>hard to get used to for procedurally trained people</li>
+				</ul>
+				<li>XSLT has built-in behavior for tree traversal</li>
+				<ul>
+					<li>XPaths allows you to select parts of the document tree</li>
+					<li>XSLT's default behavior is to traverse the complete tree</li>
+					<li>the idea of <q>default behavior</q> may seem strange</li>
+				</ul>
+			</ul>
+		</slide>
+		<slide>
+			<title>XSLT Processing Model</title>
+			<img src="xslt-model.png" style="width : 90% ; margin : 2% ; "/>
+		</slide>
+		<part id="xslt-examples">
+			<title>Simple Examples</title>
+			<slide>
+				<title>My First XSLT</title>
+				<ul>
+					<li>XSLT uses a simple environment</li>
+					<ul>
+						<li>all you need is an <em>XSLT processor</em> (<a href="http://www.saxonica.com/">Saxon</a> recommended)</li>
+					</ul>
+					<li>Some interesting observations</li>
+					<ul>
+						<li>it is an XML document (using the <a href="http://www.w3.org/TR/xslt#xslt-namespace">XSLT Namespace</a>)</li>
+						<li>it contains no visible code (no statements)</li>
+						<li>when being applied (i.e., executed), it produces a result</li>
+					</ul>
+				</ul>
+				<listing src="first.xsl"/>
+			</slide>
+			<slide>
+				<title>Why does it Work?</title>
+				<ul>
+					<li>The <q>text</q> of the document is produced</li>
+					<ul>
+						<li>technically, it is the concatenation of all text nodes</li>
+						<li>this works with all XML input documents</li>
+					</ul>
+					<li>XSLT by default traverses the document tree</li>
+					<ul>
+						<li>it copies all text nodes</li>
+						<li>it works its way through the document recursively</li>
+						<li>this behavior is unusual for a programming language</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>My Second XSLT</title>
+				<listing src="second.xsl" line="3-21"/>
+			</slide>
+			<slide>
+				<title>How Mappings Work</title>
+				<ul>
+					<li>All non-XSLT elements are <em>literal result elements</em></li>
+					<ul>
+						<li>their content is processed as usual</li>
+						<li>they may contain XSLT or literal result elements</li>
+					</ul>
+					<li>XSLT elements in the stylesheet are instructions</li>
+					<ul>
+						<li>they are executed and have some predefined behavior</li>
+						<li>if they produce results, these go to the result tree as well</li>
+					</ul>
+					<li>One-template XSLT is a good way to start with XSLT</li>
+					<ul>
+						<li>avoiding the learning curve associated with <link href="xslt-templates"/></li>
+						<li>for easy mapping tasks, this pattern often is sufficient</li>
+						<li>for complex tasks, this is the XSLT equivalent of <q>spaghetti code</q></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title><q>Hello World</q> in XSLT</title>
+				<ul>
+					<li>XSLT always transforms an XML document</li>
+					<ul>
+						<li>this is hard-coded in the <link href="xslt-processing-model"/></li>
+					</ul>
+					<li>Simply generating output is impossible</li>
+					<ul>
+						<li><q>hello world</q> therefore ignores the input</li>
+						<li>anything can be the input (including the XSLT itself)</li>
+					</ul>
+				</ul>
+				<listing src="helloworld.xsl"/>
+			</slide>
+		</part>
+		<part>
+			<title>XSLT Instructions</title>
+			<slide>
+				<title>XSLT is RISC</title>
+				<ul>
+					<li>XSLT has a <a href="http://www.w3.org/TR/xslt#element-syntax-summary">small set of instructions</a></li>
+					<ul>
+						<li>the language was designed to run in a restricted environment</li>
+						<li>the language was designed for a specific task</li>
+						<li>much of the language's power lies in XPath</li>
+					</ul>
+					<li>XPath is the CISC part of XSLT</li>
+					<ul>
+						<li>XPath is a complex high-level language</li>
+						<li>it is specialized for the task the language is designed to do</li>
+						<li>it can be highly optimized</li>
+						<li>writing the XPaths often is the most challenging part of XSLT</li>
+					</ul>
+					<li>Starting with XSLT should improve simple mappings</li>
+				</ul>
+			</slide>
+			<slide id="xslt-iterations">
+				<title>Iterations</title>
+				<ul>
+					<li>XSLT can only iterate over node sets</li>
+					<ul>
+						<li>any other problem has to be solved recursively</li>
+						<li>iterating over node sets often is what you want to do</li>
+					</ul>
+					<li>Applying the same code to all of the nodes</li>
+					<ul>
+						<li>works great if all nodes require the same processing</li>
+						<li>is of limited use when processing needs to be conditional</li>
+					</ul>
+				</ul>
+				<listing src="second.xsl" line="11-17"/>
+			</slide>
+			<slide id="xslt-conditionals">
+				<title>Conditional Instructions</title>
+				<ul>
+					<li>Programming languages usually provide if-then-else</li>
+					<ul>
+						<li>XSLT has an if-then: <xslte>if</xslte></li>
+						<li>and an if-then-(elif-then)*-else: <xslte>choose</xslte></li>
+					</ul>
+					<li>Simple handling of special cases</li>
+					<ul>
+						<li>having few and reasonably sized conditionals is ok</li>
+						<li>having deeply nested and very long conditionals is a problem</li>
+						<li>as in all programming languages, the latter case should user other mechanisms</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>My Second XSLT (II)</title>
+				<listing src="second-if.xsl" line="10-22"/>
+			</slide>
+			<slide>
+				<title>My Second XSLT (III)</title>
+				<listing src="second-choose.xsl" line="20-38"/>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>

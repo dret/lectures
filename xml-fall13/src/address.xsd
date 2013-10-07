@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="address">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="name"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="phone"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="website"/>
+        <xs:element minOccurs="0" ref="postal"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="name">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.name"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.name">
+    <xs:attribute name="short" use="required"/>
+  </xs:attributeGroup>
+  <xs:element name="phone">
+    <xs:complexType mixed="true">
+      <xs:attributeGroup ref="attlist.phone"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:attributeGroup name="attlist.phone">
+    <xs:attribute name="type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xs:token">
+          <xs:enumeration value="voice"/>
+          <xs:enumeration value="fax"/>
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+  </xs:attributeGroup>
+  <xs:element name="postal" type="xs:string"/>
+  <xs:element name="website" type="xs:string"/>
+</xs:schema>
