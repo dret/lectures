@@ -2725,28 +2725,6 @@
 			</part>
 		</part>
 		<part>
-			<title>Conclusions</title>
-			<slide>
-				<title>Typed XML Structures</title>
-				<ul>
-					<li>XSD introduces a <q>type layer</q> to schema languages</li>
-					<li>Types facilitate abstractions (and thus modeling)</li>
-					<li>Complex types define how elements have to be used</li>
-					<li>Designing XSD can be done in many different ways</li>
-				</ul>
-			</slide>
-		</part>
-	</presentation>
-	<presentation id="xsd-3">
-		<title short="XSD 3">XSD – Part III</title>
-		<date>2013-10-07</date>
-		<toc class="resources"><a href="http://www.awprofessional.com/articles/printerfriendly.asp?p=31477&amp;rl=1">XSD Identity Constraints</a></toc>
-		<toc class="abstract">XSD allows greater flexibility in defining constraints on intra-document references than the ID/IDREF construct of DTDs. XSD's <em>Identity Constraints</em> are scoped, typed, and can be used for elements or attributes. They are more powerful that the DTD's limited ID/IDREF mechanism, but still lack sufficient generality to support a really wide set of model constraints to be expressed. XSD complex types can be derived by <em>restriction</em> or <em>extension</em>. Complex type restriction defines the restricted type to be a more restricted version of the base type. Complex type extension make it possible to extend the base type by either adding attributes or contents (only by appending new content to the content model). Complex type derivation allows XSD to express type hierarchies of complex types, which can be aligned with more or less specialized code for processing instances of these types.</toc>
-		<slide>
-			<title>Abstract</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
-		<part>
 			<title>Local and Global Definitions</title>
 			<slide>
 				<title>Named and Anonymous Types</title>
@@ -2843,6 +2821,28 @@
 				</slide>
 			</part>
 		</part>
+		<part>
+			<title>Conclusions</title>
+			<slide>
+				<title>Typed XML Structures</title>
+				<ul>
+					<li>XSD introduces a <q>type layer</q> to schema languages</li>
+					<li>Types facilitate abstractions (and thus modeling)</li>
+					<li>Complex types define how elements have to be used</li>
+					<li>Designing XSD can be done in many different ways</li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="xsd-3">
+		<title short="XSD 3">XSD – Part III</title>
+		<date>2013-10-07</date>
+		<toc class="resources"><a href="http://www.awprofessional.com/articles/printerfriendly.asp?p=31477&amp;rl=1">XSD Identity Constraints</a></toc>
+		<toc class="abstract">XSD allows greater flexibility in defining constraints on intra-document references than the ID/IDREF construct of DTDs. XSD's <em>Identity Constraints</em> are scoped, typed, and can be used for elements or attributes. They are more powerful that the DTD's limited ID/IDREF mechanism, but still lack sufficient generality to support a really wide set of model constraints to be expressed. XSD complex types can be derived by <em>restriction</em> or <em>extension</em>. Complex type restriction defines the restricted type to be a more restricted version of the base type. Complex type extension make it possible to extend the base type by either adding attributes or contents (only by appending new content to the content model). Complex type derivation allows XSD to express type hierarchies of complex types, which can be aligned with more or less specialized code for processing instances of these types.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 		<part id="xsd-names">
 			<title>Names and Namespaces</title>
 			<slide>
