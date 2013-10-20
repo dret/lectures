@@ -1002,7 +1002,6 @@
 	<presentation id="xpath">
 		<title short="XPath">XML Path Language (XPath)</title>
 		<date>2013-09-16</date>
-		<toc class="assignment"><a href="a/3/">A3</a>&#160;assigned (due&#160;date:&#160;10/1)</toc>
 		<toc class="resources"><a href="http://www.w3.org/TR/xpath" title="W3C XPath 1.0 Specification">XPath&#160;1.0&#160;Spec</a>&#160;· <a href="xpath-chapter.pdf">XPath Chapter</a></toc>
 		<toc class="abstract">XML structures data into a rather small number of different constructs, most notably elements and attributes. The <em>XML Path Language (XPath)</em> defines a way how to select parts of XML documents, so that they can be used for further processing. XPath's primary use in in <em>XSL Transformations (XSLT)</em>, but other XML technologies use it as well, e.g. XSD. XPath is a very compact language with a syntax that resembles path expressions well-known from file systems. These path expressions, however, are generalized and therefore much more powerful than the rather simple path expressions in file systems. Because of its use in different XML technologies, XPath is one of the most important XML core technologies.</toc>
 		<slide>
@@ -1861,7 +1860,7 @@
 	<presentation id="xmlns">
 		<title short="Namespaces">XML Namespaces</title>
 		<date>2013-09-25</date>
-		<toc class="resources"><a href="http://www.rpbourret.com/xml/NamespacesFAQ.htm#p1">XML Namespaces FAQ (Part I)</a>&#160;· <a href="http://www.w3.org/TR/REC-xml-names/" title="W3C XML Namespaces Specification">Spec</a></toc>
+		<toc class="resources"><a href="http://www.rpbourret.com/xml/NamespacesFAQ.htm#p1">XML Namespaces FAQ (Part I)</a>&#160;· <a href="http://www.w3.org/TR/REC-xml-names/" title="W3C XML Namespaces Specification">XML&#160;Namespaces&#160;Spec</a></toc>
 		<toc class="abstract">XML is successful because it can be used in many different scenarios, and because it is easy to define a schema (such as a DTD) for new scenarios, producing a tailored XML data model for this scenario. This means that names in XML documents must be interpreted as belonging to a certain schema. As long as a document uses names from only one schema, this can be done rather easily. However, in many scenarios today documents combine names from different schemas, and <em>XML Namespaces</em> provide a mechanism how the names in an XML document can be associated with a namespace.</toc>
 		<slide>
 			<title>Abstract</title>
@@ -3175,7 +3174,7 @@
 	<presentation id="xslt-1">
 		<title short="XSLT 1">XML Transformations (XSLT) – Part I</title>
 		<date>2013-10-21</date>
-		<toc class="resources"><a href="http://www.w3.org/TR/xslt" title="W3C XSLT 1.0 Specification">Spec</a></toc>
+		<toc class="resources"><a href="http://www.w3.org/TR/xslt" title="W3C XSLT 1.0 Specification">XSLT&#160;1.0&#160;Spec</a></toc>
 		<toc class="abstract">Because XML can be used to represent any vocabulary (often defined by some schema), the question is how these different vocabularies can be processed and maybe transformed into something else. This <q>something else</q> may be another XML vocabulary (a common requirement in B2B scenarios), or it may be HTML (a common scenario for Web publishing). Using <em>XSL Transformations (XSLT)</em>, mapping tasks can be implemented easily. XSLT leverages XPath's expressive power in a rather simple programming language, the programs are often called <em>stylesheets</em>. For easy tasks, XSLT mappings can be specified without much real <q>programming</q> going on, by simply specifying how components of the source markup are mapped to components of the target markup.</toc>
 		<slide>
 			<title>Abstract</title>
@@ -3418,7 +3417,7 @@
 					<ul>
 						<li>templates use <link href="xslt-pattern"/> to specify their applicability</li>
 						<li>users may not specify a template for a node they select</li>
-						<li>instead of an error, <link href="xslt-builtin"/> are used to handle this situation</li>
+						<li>instead of an error, <em>built-in templates</em> are used to handle this situation</li>
 					</ul>
 				</ul>
 			</slide>
@@ -3462,10 +3461,338 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="xslt-2">
+		<title short="XSLT 2">XML Transformations (XSLT) – Part II</title>
+		<date>2013-10-23</date>
+		<toc class="resources"><a href="http://www-128.ibm.com/developerworks/xml/library/x-tipxsltrun/">XSLT Parameters</a></toc>
+		<toc class="abstract">XSLT's template matching mechanism lets the XSLT processor find the <q>best match</q> to process a selected node. XSLT also supports a more traditional way of using templates, where they are called in a way very similar for function calls in most programming languages. Another interesting area of XSLT are variables and parameters, which are used for storing or passing values within XSLT code. One special property of XSLT variables is that they cannot be changed, which is a result of the functional design of the language.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part>
+			<title>How to Iterate</title>
+			<slide>
+				<title>Processing Nodes in XSLT</title>
+				<ul>
+					<li>XSLT supports two ways of processing nodes</li>
+					<ul>
+						<li><link href="xslt-iterations"/> loop over a set of selected nodes</li>
+						<li><link href="xslt-templates"/> process nodes which have been put on the source node list</li>
+					</ul>
+					<li>Both mechanisms handle similar situations</li>
+					<ul>
+						<li>a set of nodes is selected and should be processed</li>
+						<li>the code for processing has to available in a code block</li>
+						<li><link href="xslt-iterations"/> put this code in the <xslte>for-each</xslte> body</li>
+						<li><link href="xslt-templates"/> put this code in a reusable building block</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Homogeneous Processing</title>
+				<ul>
+					<li><link href="xslt-iterations"/> may lead to less modular code</li>
+					<li>If the code has to be reused, they may not be a good solution</li>
+					<ul>
+						<li><link href="xslt-named-templates"/> may provide some support for reuse</li>
+					</ul>
+					<li>The selected nodes should require similar processing</li>
+					<ul>
+						<li>otherwise, the iteration code will contain many conditional statements</li>
+					</ul>
+					<li>Iterations should be restricted to small units of code</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Heterogeneous Processing</title>
+				<ul>
+					<li>If the node processing is very different, templates are better</li>
+					<ul>
+						<li>different templates are written for all nodes being selected</li>
+						<li>no conditional code has to be written, selection is done by matching nodes to template patterns</li>
+					</ul>
+					<li>Templates can be reused</li>
+					<ul>
+						<li>the nodes appear in different locations and should be processed consistently</li>
+						<li>the matching mechanism provides the ideal support for this scenario</li>
+					</ul>
+					<li>Extensible code should always use templates</li>
+					<ul>
+						<li>other stylesheets can import an existing stylesheet</li>
+						<li>by selectively <q>overwriting</q> templates, the behavior can be customized</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>Calling Templates</title>
+			<slide>
+				<title>Executing Templates</title>
+				<ul>
+					<li><link href="xslt-templates"/> usually have a <xslta>match</xslta> attribute</li>
+					<ul>
+						<li>these templates are part of XSLT's special pattern matching processing</li>
+					</ul>
+					<li>Templates may also be named units of code</li>
+					<ul>
+						<li>there is nothing special about these templates</li>
+						<li>they are being called using a name like regular procedures</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="xslt-named-templates">
+				<title>Named Templates</title>
+				<ul>
+					<li><xslte>template</xslte> may also carry a <xslta>name</xslta> attribute</li>
+					<li><xslte>call-template</xslte> calls these template by their <xslta>name</xslta></li>
+					<li>Named templates have none of the special properties of XSLT template matching</li>
+					<ul>
+						<li>they are called by their name just like regular procedures</li>
+						<li>they do not change the context of XPath evaluation</li>
+					</ul>
+					<li>Named templates are useful for modularizing code which is not tied to node types</li>
+					<ul>
+						<li>in most cases, they are called using <link href="xslt-parameters"/></li>
+						<li>a typical application is the implementation of a facility for printing messages</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>Variables and Parameters</title>
+			<slide>
+				<title>Programming Language Basics</title>
+				<ul>
+					<li>Variables in programming languages have different purposes</li>
+					<ol>
+						<li>defining a <em>name</em> for something so that it can be referred to</li>
+						<li>associating this <em>name</em> with a <em>value</em> so that the value can be used</li>
+						<li>providing a way to <em>update</em> the variable so that its value changes</li>
+					</ol>
+					<li>Variables in functional languages cannot change</li>
+					<ul>
+						<li>they are <em>immutable</em> (often called <em>constants</em> in other languages)</li>
+						<li>more specifically, they are <em>dynamic constants</em> (i.e., can be computed at runtime)</li>
+						<li>they are defined by giving them a <xpath>name</xpath> and referred to by <xpath>$name</xpath></li>
+					</ul>
+					<li>Variables in XSLT have no type (no static type checking possible)</li>
+					<ul>
+						<li>the value that they have is typed</li>
+						<li>but a variable may have values of any type</li>
+					</ul>
+				</ul>
+				<pre><![CDATA[<xsl:variable name="sum" select="$op1 + $op2"/>
+<xsl:variable name="result" select="$sum * $factor"]]>/></pre>
+			</slide>
+			<part id="xslt-variables">
+				<title>Variables</title>
+				<slide>
+					<title>Why Variables?</title>
+					<ul>
+						<li>Reuse of values in different locations</li>
+						<ul>
+							<li>texts required for the transformation</li>
+							<li>facilitates better separation of structure and content</li>
+						</ul>
+						<pre><![CDATA[<xsl:value-of select="$email-prefix"/> <!- - $email-prefix = 'You have ' - ->
+<xsl:value-of select="count(//message)"/>
+<xsl:value-of select="$email-suffix"/> <!- - $email-suffix = ' e-mail messages.' - ->]]></pre>
+						<li>Using the correct context is essential</li>
+						<ul>
+							<li>variables cannot be updated</li>
+							<li>if they need to be <q>updated</q>, they have to be re-created</li>
+						</ul>
+						<li>Why are they called <q>variables</q> if they are constants?</li>
+						<ul>
+							<li>their value varies in different invocations of the context</li>
+							<li>they are computed at runtime (dynamic constants) rather than statically</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Scope and Extent</title>
+					<ul>
+						<li>Variables can be global or local</li>
+						<ul>
+							<li>global variables are visible in all templates</li>
+							<li>local variables are visible in their context (i.e., at <xpath>following-sibling::*/descendant-or-self::*</xpath>)</li>
+							<li>local variables are allowed to <em>shadow</em> global (not local) variables</li>
+						</ul>
+						<li>Variable values may be assigned using the <xslta>select</xslta> attribute</li>
+						<ul>
+							<li>The XPath's result is the value of the variable</li>
+						</ul>
+						<li>Variables can contain arbitrary XPath code</li>
+						<ul>
+							<li>the code is executed in the same way as when constructing the result tree </li>
+							<li>the <em>result tree fragment</em> is the value of the variable</li>
+							<li>it can be used as a string (<xslte>value-of</xslte>) or as a tree (<xslte>copy-of</xslte>)</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Using Variables</title>
+					<listing src="variable-assignment-wrong.xsl" line="4-15"/>
+					<listing src="variable-assignment.xsl" line="4-17"/>
+				</slide>
+			</part>
+			<part id="xslt-parameters">
+				<title>Parameters</title>
+				<slide>
+					<title>Parameters vs. Variables</title>
+					<ul>
+						<li>Parameters are variables with additional semantics</li>
+						<ul>
+							<li>they are passed to their scope from the outside</li>
+							<li>they are available within the scope like a variable (scopes are stylesheets and templates)</li>
+							<li>like variables, they cannot be updated (and only global parameters can be shadowed)</li>
+						</ul>
+						<li>XSLT does not check proper parameter passing</li>
+						<ul>
+							<li>if a declared parameter is not passed, it gets a default value (specified or <xpath>''</xpath>)</li>
+							<li>if a passed parameter is not declared, it is ignored</li>
+							<li>like variables, parameters have no type (any value can be passed)</li>
+							<li>XSLT's robustness makes it hard to spot programming errors</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Stylesheet Parameters</title>
+					<ul>
+						<li>Passed to the stylesheet when calling the stylesheet</li>
+						<ul>
+							<li>the exact way of specifying the parameters depend on the processor and the environment</li>
+							<li>the passed values are available in the same way as global variables</li>
+							<li>parameter checking has to be done by hand</li>
+						</ul>
+					</ul>
+					<listing src="parameter-test.xsl" line="4-13"/>
+				</slide>
+				<slide>
+					<title>Template Parameters</title>
+					<ul>
+						<li>Parameters can be passed to templates</li>
+						<ul>
+							<li>works with <xslte>apply-templates</xslte> and <xslte>call-template</xslte></li>
+							<li><xslt>with-param</xslt> elements list the passed parameters</li>
+							<li>parameter matching is done by name (there is no particular order to parameters)</li>
+						</ul>
+						<li>Templates can be programmed as parametrized components</li>
+						<ul>
+							<li>checking the signature has to be done by hand</li>
+							<li><xslt>with-param</xslt> elements list the passed parameters</li>
+							<li>parameter matching is done by name (there is no particular order to parameters)</li>
+						</ul>
+						<li>Parametrized template calls need a lot of markup</li>
+						<ul>
+							<li>XSLT's XML syntax makes the code hard to read</li>
+						</ul>
+					</ul>
+					<pre>main param start = 1 ; param count = 10 ; {
+	loop (0) };
+loop param counter ; {
+	print $start + $counter ;
+	if ( $counter &lt; $count - 1) then 
+		loop ($counter + 1) ; }</pre>
+				</slide>
+				<slide>
+					<title>Parameter Passing</title>
+					<listing src="parameters.xsl" line="4-21"/>
+				</slide>
+				<slide>
+					<title>Message Facility</title>
+					<listing src="message.xsl"/>
+				</slide>
+			</part>
+		</part>
+		<part>
+			<title>Conclusions</title>
+			<slide>
+				<title>XSLT Programming Environment</title>
+				<ul>
+					<li>Learning to use the right patterns takes some time</li>
+					<li>Templates can be <em>applied</em> and <em>called</em></li>
+					<li>XSLT variables have some unusual properties</li>
+					<li>Parameters can be used for stylesheets and templates</li>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>Generating Result Nodes</title>
+			<slide id="xslt-literal">
+				<title>Literal Result Elements</title>
+				<ul>
+					<li>Non-XSLT elements are copied to the result tree</li>
+					<ul>
+						<li>this is the most common way of producing nodes</li>
+						<li>in this case, the nodes' names are hard-coded in the stylesheet</li>
+					</ul>
+					<li>Attributes are also copied to the result tree</li>
+					<ul>
+						<li>this means the attribute will always be there</li>
+						<li>conditional creation of attributes needs other language constructs</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="xslt-element">
+				<title>Producing Nodes Explicitly</title>
+				<ul>
+					<li>Element nodes can be produced by using <xslt>element</xslt></li>
+					<ul>
+						<li>the element <xstla>name</xstla> must be specified and can be computed</li>
+						<li>additional instructions exist for all node types</li>
+					</ul>
+				</ul>
+				<listing src="uppercaser.xsl" line="3-12"/>
+			</slide>
+		</part>
+		<part>
+			<title>Modularizing Stylesheets</title>
+			<slide>
+				<title>Including and Importing</title>
+				<ul>
+					<li>XSLT supports two ways of modularizing code</li>
+					<ul>
+						<li>including simply distributes code across multiple files</li>
+						<li>importing creates a dependency and a hierarchy</li>
+					</ul>
+					<li><xslte>include</xslte> is mainly used for keeping files manageable</li>
+					<ul>
+						<li>it is used within managed projects</li>
+					</ul>
+					<li><xslte>import</xslte> is mainly used for reusing code from elsewhere</li>
+					<ul>
+						<li>it imports reused code and assigns this code a lower precedence</li>
+						<li>local instructions can then overwrite (if required) some of the imported code</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Import Precedence</title>
+				<img style="margin : 4% ; width : 90% ; " src="xslt-import-precedence.png"/>
+			</slide>
+		</part>
+		<part>
+			<title>Conclusions</title>
+			<slide>
+				<title>XSLT in Practice</title>
+				<ul>
+					<li>XSLT is a simple programming language</li>
+					<li>The processing model needs some time to get used to</li>
+					<li>Sometimes the language is really too simple</li>
+					<li>If you are really interested in XSLT, learn XSLT 2.0!</li>
+					<ul>
+						<li>this will also take you 80% along the way to learning XQuery</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 	<presentation id="xslt20-1">
 		<title short="XSLT 2.0 1">XML Transformations (XSLT) 2.0 – Part I</title>
 		<date>2013-10-28</date>
-		<toc class="resources"><a href="http://www.w3.org/TR/xslt20/" title="W3C XSLT 2.0 Specification">Spec</a>&#160;· <a href="xslt2-quickref.pdf">XSLT 2.0 QuickRef</a></toc>
+		<toc class="resources"><a href="http://www.w3.org/TR/xslt20/" title="W3C XSLT 2.0 Specification">XSLT&#160;2.0&#160;Spec</a></toc>
 		<toc class="abstract">While <em>XML Transformations (XSLT) 1.0</em> has become a successful programming language widely used for transforming XML documents, its limitations sometimes make it difficult to use XSLT in a good way. An important reason for many of the limitations is the fact that XSLT 1.0 has been designed as a client-side language. Building on XSLT 1.0 and XPath 2.0, <em>XML Transformations (XSLT) 2.0</em> improves the language in a variety of ways.</toc>
 		<slide>
 			<title>Abstract</title>
@@ -3822,6 +4149,158 @@
 					<li>Text processing opens a new possibility for XSLT processing</li>
 					<li>Regular expression support allows flexible processing of text documents</li>
 					<li>XPath 2.0 and XSLT 2.0 support pattern-based text processing</li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="xslt20-2">
+		<title short="XSLT 2.0 2">XML Transformations (XSLT) 2.0 – Part II</title>
+		<date>2013-10-30</date>
+		<toc class="resources"><a href="http://www.oreillynet.com/xml/blog/2007/03/reevaluating_xslt_20.html" title="Kurt Cagle O'Reilly Blog">Reevaluating XSLT 2.0</a></toc>
+		<toc class="abstract">Many of the new features of XSLT 2.0 have their roots in XPath 2.0 and the underlying new data model of sequences. But some features of XSLT 2.0 really are part of the language itself, such as support for <em>user-defined functions</em>, and the ability to <em>group items</em> and then iterate over these groups. In addition, XSLT now can be used as a <em>typed programming language</em>, which consumes and produces <em>typed trees</em> instead of just well-formed XML trees.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="xslt20-functions">
+			<title>User-Defined Functions</title>
+			<slide>
+				<title>Reusable Code in XPaths</title>
+				<ul>
+					<li>XSLT 1.0 allows code reuse based on <em>templates</em></li>
+					<ul>
+						<li><link href="xslt-named-templates"/> can be called by name like subroutines</li>
+						<li>they can only be called in XSLT code, not in an XPath</li>
+					</ul>
+					<li>User-defined functions in XPaths support modular code</li>
+					<ul>
+						<li>any code that produces a sequence of items</li>
+						<li>input parameters can be specified (as for templates and stylesheets)</li>
+						<li>the function is called using regular XPath function call syntax</li>
+					</ul>
+					<li>User-defined functions always must use a namespace</li>
+					<ul>
+						<li>the function definition must use an existing namespace prefix</li>
+						<li>the function call must use the same namespace for the function name</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Function Definition and Call</title>
+				<listing src="references.xsl" line="55-58"/>
+				<listing src="references.xsl" line="11-23"/>
+			</slide>
+		</part>
+		<part id="xslt20-grouping">
+			<title>Grouping</title>
+			<slide>
+				<title>Aggregating Items</title>
+				<ul>
+					<li>Lists of items often have to be grouped by some value</li>
+					<ul>
+						<li>addresses may be grouped by initial letter or city or ZIP code</li>
+						<li>sports events may be grouped by location or team or season</li>
+						<li>restaurants may be grouped by kitchen or location or quality</li>
+					</ul>
+					<li>Grouping needs to <em>identify</em> and <em>build</em> groups</li>
+					<ul>
+						<li>for small datasets, implementation issues are not really relevant</li>
+						<li>for large datasets, performance is greatly affected by the implementation</li>
+					</ul>
+					<li>XSLT 1.0 has no support for grouping</li>
+					<ul>
+						<li>XPath axes can be used to find the first member of each group</li>
+						<pre>contact[not(surname = preceding-sibling::contact/surname)]</pre>
+						<li>this expression can become very expensive to evaluate for large datasets</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Grouping and Iterating over Groups</title>
+				<listing src="references.xsl" line="27-47"/>
+			</slide>
+		</part>
+		<part id="xslt20-typing">
+			<title>Typed Programming</title>
+			<slide>
+				<title>XDM and XPath 2.0 Support Types</title>
+				<ul>
+					<li>Useful for predefined types such as <xsdtype>date</xsdtype> and <xsdtype>dateTime</xsdtype></li>
+					<li>When working with DTDs, values must be explicitly cast</li>
+					<li>When working with <link href="xsd-1">XSD</link>, types are inferred from the schema</li>
+					<ul>
+						<li>documents are validated before they are processed</li>
+						<li>validation turns the XML tree into a <em>type-annotated tree</em></li>
+						<li>XSLT 2.0 has access to the type information and treats nodes as typed</li>
+					</ul>
+					<li>Schema-aware XSLT allows type control for output documents</li>
+					<ul>
+						<li><xslte>result-document</xslte> and <xslte>document</xslte> create new document trees</li>
+						<li><xslta>validation</xslta> and <xslta>type</xslta> control validation for these trees</li>
+						<li>only schema-aware XSLT 2.0 processors support these attributes</li>
+					</ul>
+				</ul>
+			</slide>
+			<part id="xslt20-simple-types">
+				<title>Typed Nodes</title>
+				<slide>
+					<title>XSD Simple Types</title>
+					<ul>
+						<li><link href="xsd-simple-types"/> are used to type non-markup values</li>
+						<ul>
+							<li>mostly <em>atomic types</em> which describe the content of an element or attribute</li>
+							<li><em>union types</em> and <em>list types</em> describe alternative or repeatable types</li>
+						</ul>
+						<li>Working with simple types is supported in any XSLT 2.0 processor</li>
+						<ul>
+							<li>the basic XSD datatypes are part of <a href="http://dret.net/lectures/xml-fall08/xdm">XDM</a> and always available</li>
+							<pre>xs:date( if ( $i castable as xs:date ) then $i else '2000-01-01' )</pre>
+						</ul>
+						<li>Working with user-defined simple types is a different story</li>
+						<ul>
+							<li><link href="xsd-simple-type-restriction"/> is used to derive new simple types</li>
+							<li>users can build their own specialized type library</li>
+							<li>such a library is a schema and requires a schema-aware XSLT 2.0 processor</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part id="xslt20-complex-types">
+				<title>Typed Trees</title>
+				<slide>
+					<title>XSD Complex Types</title>
+					<ul>
+						<li><link href="xsd-complex-types"/> are used to type markup structures</li>
+						<ul>
+							<li>they are always associated with element nodes</li>
+							<li>they describe the content model and allowed attributes for that type</li>
+						</ul>
+						<li>Working with complex types very much depends on the schema design</li>
+						<ul>
+							<li>if the schema tries to reflect the model in the types, it may be useful</li>
+							<li>if the schema has been generated by some tool, types are not very relevant</li>
+						</ul>
+						<li>A more interesting idea would be to actually inspect a type</li>
+						<ul>
+							<li>upon finding a type, find out what attributes are optional but not required</li>
+							<li>this would require access not only to the <em>type name</em>, but to the <em>type definition</em></li>
+							<li>this is a very interesting research issue, but not yet possible in XSLT 2.0</li>
+							<li>the <a href="http://dret.net/netdret/publications#wil07e">Schema Component XML Syntax (SCX)</a> is an attempt to solve this problem</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+		</part>
+		<part>
+			<title>Conclusions</title>
+			<slide>
+				<title>Consider Upgrading</title>
+				<ul>
+					<li>Going from XSLT 1.0 to 2.0 supports more data types</li>
+					<li>Going to schema-aware XSLT 2.0 supports typed documents</li>
+					<li>For serious programming, type checking is very useful</li>
+					<li>Start using XSLT 2.0 as soon as possible</li>
+					<li>Start using schema-aware XSLT 2.0 as soon as required</li>
 				</ul>
 			</slide>
 		</part>
