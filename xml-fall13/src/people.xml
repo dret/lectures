@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+	<entry id="dret" country="de">
+		<name>
+			<given>Erik</given>
+			<given>Thomas</given>
+			<sur>Wilde</sur>
+		</name>
+		<email>dret@berkeley.edu</email>
+		<affiliation country="us">iSchool/UCB</affiliation>
+		<phone location="office" type="voice">+1-510-6432253</phone>
+		<phone location="office" type="fax">+1-510-6425814</phone>
+	</entry>
+	<entry id="thomas" country="de">
+		<name>
+			<given>Thomas</given>
+			<sur>Plagemann</sur>
+		</name>
+		<email>plageman@ifi.uio.no</email>
+		<affiliation country="no">IFI/UIO</affiliation>
+	</entry>
+	<entry id="bob" country="us">
+		<name>
+			<given>Bob</given>
+			<sur>Glushko</sur>
+		</name>
+		<email>glushko@ischool.berkeley.edu</email>
+		<affiliation country="us">iSchool/UCB</affiliation>
+		<phone location="office" type="voice">+1-510-6432754</phone>
+		<phone location="office" type="fax">+1-510-6425814</phone>
+	</entry>
+</people>
