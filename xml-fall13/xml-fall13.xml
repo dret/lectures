@@ -3707,18 +3707,6 @@ loop param counter ; {
 			</part>
 		</part>
 		<part>
-			<title>Conclusions</title>
-			<slide>
-				<title>XSLT Programming Environment</title>
-				<ul>
-					<li>Learning to use the right patterns takes some time</li>
-					<li>Templates can be <em>applied</em> and <em>called</em></li>
-					<li>XSLT variables have some unusual properties</li>
-					<li>Parameters can be used for stylesheets and templates</li>
-				</ul>
-			</slide>
-		</part>
-		<part>
 			<title>Generating Result Nodes</title>
 			<slide id="xslt-literal">
 				<title>Literal Result Elements</title>
