@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="references.xsl"?>
+<bibliography version="1.0">
+	<reference name="cre06" src="bibtex:article" src-info="bibtex:line-468" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Fabio</givenname>
+				<surname>Crestani</surname>
+			</person>
+			<person>
+				<givenname>Monica</givenname>
+				<surname>Landoni</surname>
+			</person>
+			<person>
+				<givenname>Massimo</givenname>
+				<surname>Melucci</surname>
+			</person>
+		</names>
+		<date value="2006"/>
+		<abstract>
+			<richtext>
+				<p>We present the results and the lessons learned from two separate and independent studies into the design, development, and evaluation of electronic books for information access: the Visual Book and the Hyper-TextBook. The Visual Book explored the importance of the visual component of the book metaphor in the production of "good" electronic books for referencing. The Hyper-TextBook concentrated on the importance of models and techniques for the automatic production of functional electronic versions of textbooks. Both studies started from similar considerations on what kinds of paper books are suitable for translation into electronic form but di.er on the prominence given to book appearance and functionalities. The results of these two research projects are critically presented in this paper, with the aim of helping designers and implementers to better integrate appearance and functional aspects of books into a more general methodology for the automatic production of electronic books for information access.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">International Journal on Digital Libraries</title>
+		<number>2</number>
+		<pages>192-209</pages>
+		<title type="sharef:primaryTitle">Appearance and Functionality of Electronic Books</title>
+		<identifier type="sharef:uri" resourceType="text/html">http://link.springer.de/link/service/journals/00799/bibs/7001001/70010068.htm</identifier>
+		<volume>6</volume>
+	</reference>
+	<reference name="abi97" src="bibtex:article" src-info="bibtex:line-480" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Serge</givenname>
+				<surname>Abiteboul</surname>
+			</person>
+			<person>
+				<givenname>Dallan</givenname>
+				<surname>Quass</surname>
+			</person>
+			<person>
+				<givenname>Jason</givenname>
+				<surname>McHugh</surname>
+			</person>
+			<person>
+				<givenname>Jennifer</givenname>
+				<surname>Widom</surname>
+			</person>
+			<person>
+				<givenname>Janet L.</givenname>
+				<surname>Wiener</surname>
+			</person>
+		</names>
+		<date value="1997"/>
+		<abstract>
+			<richtext>
+				<p>We present the Lorel language, designed for querying semistructured data. Semistructured data is becoming more and more prevalent, e.g., in structured documents such as HTML and when performing simple integration of data from multiple sources. Traditional data models and query languages are inappropriate, since semistructured data often is irregular: some data is missing, similar concepts are represented using different types, heterogeneous sets are present, or object structure is not fully known. Lorel is a user-friendly language in the SQL/OQL style for querying such data effectively. For wide applicability, the simple object model underlying Lorel can be viewed as an extension of the ODMG data model and the Lorel language as an extension of OQL. The main novelties of the Lorel language are: (i) the extensive use of coercion to relieve the user from the strict typing of OQL, which is inappropriate for semistructured data; and (ii) powerful path expressions, which permit a flexible form of declarative navigational access and are particularly suitable when the details of the structure are not known to the user. Lorel also includes a declarative update language. Lorel is implemented as the query language of the Lore prototype database management system at Stanford. Information about Lore can be found at http://www-db.stanford.edu/lore. In addition to presenting the Lorel language in full, this paper briefly describes the Lore system and query processor. We also briefly discuss a second implementation of Lorel on top of a conventional object-oriented database management system, the O2 system.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">International Journal on Digital Libraries</title>
+		<number>1</number>
+		<pages>68-88</pages>
+		<title type="sharef:primaryTitle">The Lorel Query Language for Semistructured Data</title>
+		<field type="bibtex:topic">lorel[1]</field>
+		<identifier type="sharef:uri" resourceType="text/html">http://link.springer.de/link/service/journals/00799/bibs/7001001/70010068.htm</identifier>
+		<volume>1</volume>
+	</reference>
+	<reference name="men97" src="bibtex:article" src-info="bibtex:line-493" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Alberto O.</givenname>
+				<surname>Mendelzon</surname>
+			</person>
+			<person>
+				<givenname>George A.</givenname>
+				<surname>Mihaila</surname>
+			</person>
+			<person>
+				<givenname>Tova</givenname>
+				<surname>Milo</surname>
+			</person>
+		</names>
+		<date value="1997"/>
+		<abstract>
+			<richtext>
+				<p>The World Wide Web is a large, heterogeneous, distributed collection of documents connected by hypertext links. The most common technology currently used for searching the Web depends on sending information retrieval requests to "index servers" that index as many documents as they can find by navigating the network. One problem with this is that users must be aware of the various index servers (over a dozen of them are currently deployed on the Web), of their strengths and weaknesses, and of the peculiarities of their query interfaces. A more serious problem is that these queries cannot exploit the structure and topology of the document network. In this paper we propose a query language, WebSQL, that takes advantage of multiple index servers without requiring users to know about them, and that integrates textual retrieval with structure and topology-based queries. We give a formal semantics for WebSQL using a calculus based on a novel "virtual graph" model of a document network. We propose a new theory of query cost based on the idea of "query locality," that is, how much of the network must be visited to answer a particular query. We give an algorithm for characterizing WebSQL queries with respect to query locality. Finally, we describe a prototype implementation of WebSQL written in Java.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">International Journal on Digital Libraries</title>
+		<number>1</number>
+		<pages>54-67</pages>
+		<title type="sharef:primaryTitle">Querying the World Wide Web</title>
+		<field type="bibtex:topic">websql[1]</field>
+		<identifier type="sharef:uri" resourceType="text/html">http://link.springer.de/link/service/journals/00799/bibs/7001001/70010054.htm</identifier>
+		<volume>1</volume>
+	</reference>
+	<reference name="kaa03" src="bibtex:article" src-info="bibtex:line-510" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Eija</givenname>
+				<surname>Kaasinen</surname>
+			</person>
+		</names>
+		<date value="2003-05"/>
+		<abstract>
+			<richtext>
+				<p>Mobile contexts of use vary a lot, and may even be continuously changing during use. The context is much more than location, but its other elements are still difficult to identify or measure. Location information is becoming an integral part of different mobile devices. Current mobile services can be enhanced with location-aware features, thus providing the user with a smooth transition towards context-aware services. Potential application fields can be found in areas such as travel information, shopping, entertainment, event information and different mobile professions. This paper studies location-aware mobile services from the user's point of view. The paper draws conclusions about key issues related to user needs, based on user interviews, laboratory and field evaluations with users, and expert evaluations of location-aware services. The user needs are presented under five main themes: topical and comprehensive contents, smooth user interaction, personal and user-generated contents, seamless service entities and privacy issues.</p>
+			</richtext>
+		</abstract>
+		<identifier type="sharef:doi">10.1007/s00779-002-0214-7</identifier>
+		<title type="sharef:secondaryTitle">Personal and Ubiquitous Computing</title>
+		<number>1</number>
+		<pages>70-79</pages>
+		<title type="sharef:primaryTitle">User Needs for Location-Aware Mobile Services</title>
+		<volume>7</volume>
+	</reference>
+	<reference name="kil01" src="bibtex:article" src-info="bibtex:line-527" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Pekka</givenname>
+				<surname>Kilpeläinen</surname>
+			</person>
+			<person>
+				<givenname>Derick</givenname>
+				<surname>Wood</surname>
+			</person>
+		</names>
+		<date value="2001-09"/>
+		<abstract>
+			<richtext>
+				<p>The Standard Generalized Markup Language (SGML) and the Extensible Markup Language (XML) allow users to define document-type definitions (DTDs), which are essentially extended context-free grammars expressed in a notation that is similar to extended Backus-Naur form. The right-hand side of a production, called a content model, is both an extended and a restricted regular expression. The semantics of content models for SGML DTDs can be modified by exceptions (XML does not allow exceptions). Inclusion exceptions allow named elements to appear anywhere within the content of a content model, and exclusion exceptions preclude named elements from appearing in the content of a content model. We give precise definitions of the semantics of exceptions, and prove that they do not increase the expressive power of SGML DTDs when we restrict DTDs according to accepted SGML practice. We prove the following results: 1. Exceptions do not increase the expressive power of extended context-free grammars. 2. For each DTD with exceptions, we can obtain a structurally equivalent extended context-free grammar. 3. For each DTD with exceptions, we can construct a structurally equivalent DTD when we restrict the DTD to adhere to accepted SGML practice. 4. Exceptions are a powerful shorthand notation — eliminating them may cause exponential growth in the size of an extended context-free grammar or of a DTD.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">Information and Computation</title>
+		<number>2</number>
+		<pages>230-251</pages>
+		<title type="sharef:primaryTitle">SGML and XML Document Grammars and Exceptions</title>
+		<field type="bibtex:topic">sgml[0.7] xml[0.7]</field>
+		<identifier type="sharef:uri">http://portal.acm.org/citation.cfm?id=501973</identifier>
+		<volume>169</volume>
+	</reference>
+	<reference name="zha07" src="bibtex:article" src-info="bibtex:line-545" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Bo</givenname>
+				<surname>Zhao</surname>
+			</person>
+			<person>
+				<givenname>Manchun</givenname>
+				<surname>Li</surname>
+			</person>
+			<person>
+				<givenname>Zhixin</givenname>
+				<surname>Jiang</surname>
+			</person>
+		</names>
+		<date value="2007-08"/>
+		<abstract>
+			<richtext>
+				<p>This paper describes a number of ways to encode spatiotemporal information in RSS feeds. As RSS becomes more and more prevalent as a way to publish and share information, it becomes increasingly important that location and time is described in an interoperable manner so that applications can request, aggregate, share and map spatiotemporally tagged feeds. This paper describes the GeoRSS model and encodings. With every RSS item has a timestamp, GeoRSS can represent time property for free. There are three GeoRSS encoding standards, such as W3C Geo, GeoRSS Simple, and GeoRSS GML profile. These standards differ in the number of coordinate systems they can support, and in the number of different geometric shapes they can add to the map to show where the news or event of interest is taking place. Further more, this paper described how to add time attribute to GeoRSS and implement and visualization the GeoRSS feeds through Google Map and Timeline. A few apt illustrations were given to show the powerful functions of GeoRSS in syndicating the spatiotemporal information. GeoRSS leverages this teeming ecosystem for geospatial technology, and with OGC support, GeoRSS is on firm conceptual ground and gains exposure across the industry.</p>
+			</richtext>
+		</abstract>
+		<identifier type="sharef:doi">10.1117/12.764955</identifier>
+		<title type="sharef:secondaryTitle">Proceedings of SPIE</title>
+		<title type="sharef:primaryTitle">Using GeoRSS to Syndicate the Spatiotemporal Information</title>
+		<field type="bibtex:topic">georss[0.8]</field>
+		<volume>6754</volume>
+	</reference>
+	<reference name="abo92" src="bibtex:article" src-info="bibtex:line-561" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Gregory D.</givenname>
+				<surname>Abowd</surname>
+			</person>
+			<person>
+				<givenname>Alan J.</givenname>
+				<surname>Dix</surname>
+			</person>
+		</names>
+		<date value="1992-12"/>
+		<abstract>
+			<richtext>
+				<p>In this paper, we investigate the problems associated with the provision of an undo support facility in the context of a synchronous shared or group editor. Previous work on the development of formal models of undo has been restricted to single user systems and has focused on the functionality of undo, as opposed to discussing the support that users require from any error recovery facility. Motivated by new issues that arise in the context of computer supported cooperative work, we aim to integrate formal modelling of undo with an analysis of how users understand undo facilities. Together, these combined perspectives of the system and user lead to concrete design advice for implementing an undo facility. The special issues that arise in the context of shared undo also shed light on the emphasis that should be placed on even single user undo. In particular, we come to regard undo not as a system command to be implemented, but as a user intention to be supported by the system.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">Interacting with Computers</title>
+		<number>3</number>
+		<pages>317-342</pages>
+		<title type="sharef:primaryTitle">Giving Undo Attention</title>
+		<identifier type="sharef:uri">http://www.comp.lancs.ac.uk/~dixa/papers/undo92/</identifier>
+		<volume>4</volume>
+	</reference>
+	<reference name="dan02" src="bibtex:article" src-info="bibtex:line-574" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>David R.</givenname>
+				<surname>Danielson</surname>
+			</person>
+		</names>
+		<date value="2002-10"/>
+		<abstract>
+			<richtext>
+				<p>Knowledge regarding how Web information-seekers behave with respect to the structures and cues they are provided with may shed light on general principles of navigation in electronic spaces, and assist designers in making more informed structural decisions. This study examines user movement through hierarchically structured Web sites and the behavioral effects of a constantly visible, textual contents list for relatively small sites or more extensive local views than are generally used on the Web today. The site overview resulted in users abandoning fewer information-seeking tasks. Users with such context dig deeper into the site structure, make less use of the browser's Back button, and frequently make navigational movements of great hierarchical distances. Navigational correlates of success and reported confidence for users with the overview differ from those without such context. Both with and without a constant overview, the relationship between the source and destination pages may help predict the amount of time spent at the destination. Experimental reports are preceded by a review of click-stream navigation behavior research.</p>
+			</richtext>
+		</abstract>
+		<identifier type="sharef:doi">10.1016/S0953-5438(02)00024-3</identifier>
+		<title type="sharef:secondaryTitle">Interacting with Computers</title>
+		<number>5</number>
+		<pages>601-618</pages>
+		<title type="sharef:primaryTitle">Web Navigation and the Behavioral Effects of Constantly Visible Site Maps</title>
+		<volume>14</volume>
+	</reference>
+	<reference name="wil08a" src="bibtex:article" src-info="bibtex:line-591" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Erik</givenname>
+				<surname>Wilde</surname>
+			</person>
+		</names>
+		<date value="2008"/>
+		<abstract>
+			<richtext>
+				<p>Purpose: A growing amount of information available on the Web can be classified as "contextual information", putting already existing information into a new context rather than creating isolated new information resources. Blogs are a typical and popular example of this category. By looking at blogs from a more context-oriented view, it is possible to deconstruct them into structures which are more contextual than just focused on the content, facilitating flexible reuse of these structures. — Design/Methodology/Approach: We look at the underlying structures of blogs and blog posts, representing them as multi-ended links. This alternative representation of blogs and blog posts allows us to represent them as reusable information structures. This paper presents blogs as a popular content type, but the approach of restructuring Web 2.0 content can be extended to other classes of information, as long as they can be regarded as being mainly contextual. — Findings: By deconstructing blogs and blog posts into their essential properties, we can show how there is a simple and universal representation for blogs. This representation allows the reuse of blog information across specific blog or blogging platforms, and can even go beyond blogs by representing other Web content which provides context. — Originality/Value: The approach presented in this paper is a novel approach of mapping a popular Web content type to a simple and universal representation. The value of such a unified representation lies in exposing the structural similarities among blogs and blog posts, and making them available for reuse.</p>
+			</richtext>
+		</abstract>
+		<identifier type="sharef:doi">10.1108/14684520810889691</identifier>
+		<title type="sharef:secondaryTitle">Online Information Review</title>
+		<number>3</number>
+		<pages>401-414</pages>
+		<title type="sharef:primaryTitle">Deconstructing Blogs</title>
+		<identifier type="sharef:uri">http://dret.net/netdret/publications#wil08a</identifier>
+		<identifier type="sharef:uri">http://www.emeraldinsight.com/10.1108/14684520810889691</identifier>
+		<volume>32</volume>
+	</reference>
+	<reference name="chu99" src="bibtex:article" src-info="bibtex:line-605" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Tham Yoke</givenname>
+				<surname>Chun</surname>
+			</person>
+		</names>
+		<date value="1999"/>
+		<abstract>
+			<richtext>
+				<p>This paper traces the development of World Wide Web Robots and provides an overview of their main functions and workings. The focus is on search robots and illustrations will be drawn from two major search engines: AltaVista and Excite. In the concluding section, problems associated with the use of Web Robots and their implications for electronic publishing will be examined.</p>
+			</richtext>
+		</abstract>
+		<identifier type="sharef:doi">10.1108/14684529910334047</identifier>
+		<title type="sharef:secondaryTitle">Online Information Review</title>
+		<number>3</number>
+		<pages>135-142</pages>
+		<title type="sharef:primaryTitle">World Wide Web Robots: An Overview</title>
+		<volume>23</volume>
+	</reference>
+	<reference name="naa05" src="bibtex:article" src-info="bibtex:line-621" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Mor</givenname>
+				<surname>Naaman</surname>
+			</person>
+			<person>
+				<givenname>Yee Jiun</givenname>
+				<surname>Song</surname>
+			</person>
+			<person>
+				<givenname>Andreas</givenname>
+				<surname>Paepcke</surname>
+			</person>
+			<person>
+				<givenname>Hector</givenname>
+				<surname>Garcia-Molina</surname>
+			</person>
+		</names>
+		<date value="2005-07"/>
+		<abstract>
+			<richtext>
+				<p>NameSet is a system that translates a set of geographic coordinates into a textual name based on the geographic regions where the coordinates occur. One possible application of NameSet is to concisely present the geographical scope of a set of geo-referenced observations to a human user. Another application is to generate text to depict a set of coordinates that appear on a web site — text that could later be used for information retrieval applications. NameSet's computation is based on a simple algorithm, using off-the-shelf and web-based data sources. The system was proven effective in an application that automatically organizes and names sets of geo-referenced digital photographs.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">Computers, Environment, and Urban Systems Journal</title>
+		<title type="sharef:primaryTitle">Assigning Textual Names to Sets of Geographic Coordinates</title>
+		<field type="bibtex:topic">nameset[1]</field>
+		<identifier type="sharef:uri">http://dbpubs.stanford.edu:8090/pub/2005-18</identifier>
+	</reference>
+	<reference name="ram00" src="bibtex:article" src-info="bibtex:line-636" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Ramachendra P.</givenname>
+				<surname>Batni</surname>
+			</person>
+			<person>
+				<givenname>Chinmei C.</givenname>
+				<surname>Lee</surname>
+			</person>
+			<person>
+				<givenname>Douglas W.</givenname>
+				<surname>Varney</surname>
+			</person>
+		</names>
+		<date value="2000-07"/>
+		<abstract>
+			<richtext>
+				<p>In today's highly competitive wireless marketplace, carriers have to offer user-friendly, innovative services to gain a competitive advantage. Furthermore, subscribers demand services that can be easily customized to their specific needs. The advent of the wireless application protocol (WAP) and WAP-enabled mobile phones is providing an opportunity for carriers to leverage this technology to enrich their service offerings. WAP is becoming the de facto standard for mobile subscribers who want to browse the contents in the Internet and perform e-commerce transactions. At the same time, new capabilities — such as those provided by intelligent network (IN) technology — are also being introduced into the public land mobile networks (PLMNs) to provide enhanced services. This paper discusses how the emerging WAP technology can be synergistically combined with PLMN capabilities to provide mobile subscribers with enhanced converged voice/data services in WAP-enabled wireless networks. To illustrate these concepts, this paper includes several service examples.</p>
+			</richtext>
+		</abstract>
+		<identifier type="sharef:doi">10.1002/bltj.2241</identifier>
+		<title type="sharef:secondaryTitle">Bell Labs Technical Journal</title>
+		<number>3</number>
+		<pages>145-152</pages>
+		<title type="sharef:primaryTitle">Enhanced Services in WAP-Enabled Networks</title>
+		<field type="bibtex:topic">wap[0.8]</field>
+		<identifier type="sharef:uri">http://www3.interscience.wiley.com/cgi-bin/abstract/97519004/</identifier>
+		<volume>5</volume>
+	</reference>
+	<reference name="ada03b" src="bibtex:article" src-info="bibtex:line-655" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Peter M.</givenname>
+				<surname>Adams</surname>
+			</person>
+			<person>
+				<givenname>G. Wayne B.</givenname>
+				<surname>Ashwell</surname>
+			</person>
+			<person>
+				<givenname>Richard</givenname>
+				<surname>Baxter</surname>
+			</person>
+		</names>
+		<date value="2003-01"/>
+		<abstract>
+			<richtext>
+				<p>This paper traces the history of location-based service (LBS) standards that arose from North American requirements in the work on GSM standards in the late 1990s. It also describes how interest in GSM/UMTS outside Europe led to the creation of the Third Generation Partnership Project (3GPP) for developing UMTS standards (which include standards for the 3G mobile Internet). In addition, the paper covers the role of other standards bodies and interest groups involved in the creation of LBS standards such as the new Open Mobile Alliance. Different location methods for detecting the position of mobiles are described and a summary of the current work in 3GPP on LBS-based services and architecture for UMTS is given. The paper also covers work on wireless access protocols in the old WAP Forum on LBS and also the work of the Location Interoperability Forum (LIF). Finally, the impact of these LBS standards developments on BTexact initiatives, such as project Erica, is summarised. The provision of a rich range of LBS services is considered to be very important for the future success of UMTS.</p>
+			</richtext>
+		</abstract>
+		<identifier type="sharef:doi">10.1023/A:1022572210026</identifier>
+		<title type="sharef:secondaryTitle">BT Technology Journal</title>
+		<number>1</number>
+		<pages>34-43</pages>
+		<title type="sharef:primaryTitle">Location-Based Services — An Overview of the Standards</title>
+		<volume>21</volume>
+	</reference>
+	<reference name="roz03" src="bibtex:article" src-info="bibtex:line-668" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Thomas</givenname>
+				<surname>D'Roza</surname>
+			</person>
+			<person>
+				<givenname>George</givenname>
+				<surname>Bilchev</surname>
+			</person>
+		</names>
+		<date value="2003-01"/>
+		<abstract>
+			<richtext>
+				<p>This paper provides an overview of terms, technologies and standards used within the location-based services field in the determination and presentation of the location of an entity. A description is provided of data formats and protocols for communicating, storing and manipulating location information and some insight is given into how location information could be used in a range of applications.</p>
+			</richtext>
+		</abstract>
+		<identifier type="sharef:doi">10.1023/A:1022491825047</identifier>
+		<title type="sharef:secondaryTitle">BT Technology Journal</title>
+		<number>1</number>
+		<pages>20-27</pages>
+		<title type="sharef:primaryTitle">An Overview of Location-Based Services</title>
+		<volume>21</volume>
+	</reference>
+	<reference name="her05" src="bibtex:article" src-info="bibtex:line-685" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Susan C.</givenname>
+				<surname>Herring</surname>
+			</person>
+			<person>
+				<givenname>Lois Ann</givenname>
+				<surname>Scheidt</surname>
+			</person>
+			<person>
+				<givenname>Elijah</givenname>
+				<surname>Wright</surname>
+			</person>
+			<person>
+				<givenname>Sabrina</givenname>
+				<surname>Bonus</surname>
+			</person>
+		</names>
+		<date value="2005"/>
+		<abstract>
+			<richtext>
+				<p>Purpose — Aims to describe systematically the characteristics of weblogs (blogs) — frequently modified web pages in which dated entries are listed in reverse chronological sequence and which are the latest genre of internet communication to attain widespread popularity. Design/methodology/approach — This paper presents the results of a quantitative content analysis of 203 randomly selected blogs, comparing the empirically observable features of the corpus with popular claims about the nature of blogs, and finding them to differ in a number of respects. Findings — Notably, blog authors, journalists and scholars alike exaggerate the extent to which blogs are interlinked, interactive, and oriented towards external events, and underestimate the importance of blogs as individualistic, intimate forms of self-expression. Originality/value — Based on the profile generated by the empirical analysis, considers the likely antecedents of the blog genre, situates it with respect to the dominant forms of digital communication on the internet today, and suggests possible developments of the use of blogs over time in response to changes in user behavior, technology, and the broader ecology of internet genres.</p>
+			</richtext>
+		</abstract>
+		<identifier type="sharef:doi">10.1108/09593840510601513</identifier>
+		<title type="sharef:secondaryTitle">Information Technology &amp; People</title>
+		<number>2</number>
+		<pages>142-171</pages>
+		<title type="sharef:primaryTitle">Weblogs as a Bridging Genre</title>
+		<identifier type="sharef:uri">http://www.emeraldinsight.com/10.1108/09593840510601513</identifier>
+		<identifier type="sharef:uri" resourceType="application/pdf">http://www.blogninja.com/it&amp;p.final.pdf</identifier>
+		<volume>18</volume>
+	</reference>
+	<reference name="iac07" src="bibtex:article" src-info="bibtex:line-703" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Giovanni</givenname>
+				<surname>Iachello</surname>
+			</person>
+			<person>
+				<givenname>Jason</givenname>
+				<surname>Hong</surname>
+			</person>
+		</names>
+		<date value="2007"/>
+		<abstract>
+			<richtext>
+				<p>The purpose of this article is twofold. First, we summarize research on the topic of privacy in Human-Computer Interaction (HCI), outlining current approaches, results, and trends. Practitioners and researchers can draw upon this review when working on topics related to privacy in the context of HCI and CSCW. The second purpose is that of charting future research trends and of pointing out areas of research that are timely but lagging. This work is based on a comprehensive analysis of published academic and industrial literature spanning three decades, and on the experience of both ourselves and of many of our colleagues.</p>
+			</richtext>
+		</abstract>
+		<identifier type="sharef:doi">10.1561/1100000004</identifier>
+		<title type="sharef:secondaryTitle">Foundations and Trends in Human-Computer Interaction</title>
+		<number>1</number>
+		<pages>1-137</pages>
+		<title type="sharef:primaryTitle">End-User Privacy in Human-Computer Interaction</title>
+		<volume>1</volume>
+	</reference>
+	<reference name="coc02" src="bibtex:article" src-info="bibtex:line-719" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Andy</givenname>
+				<surname>Cockburn</surname>
+			</person>
+			<person>
+				<givenname>Bruce</givenname>
+				<surname>McKenzie</surname>
+			</person>
+			<person>
+				<givenname>Michael</givenname>
+				<surname>Jason-Smith</surname>
+			</person>
+		</names>
+		<date value="2002-11"/>
+		<abstract>
+			<richtext>
+				<p>The Back button on web browsers is one of the world's most heavily used user interface components, yet its behaviour is commonly misunderstood. This paper describes the evaluation of a "temporal" alternative to the normal "stack-based" behaviour of Back and Forward. The main difference of the temporal scheme is that it maintains a complete list of previously visited pages. The evaluation compares the efficiency of the stack and temporal schemes in an "out of the box" scenario in which participants were asked to use a "new" version of a commercial browser without any explanation of the presence or absence of new features. This scenario allows us to predict the likely usability impact if commercial browsers were released supporting the temporal scheme. The results showed that the relative efficiency of the two schemes differed across different types of navigational task. In particular, the temporal system poorly supported backtracking to parent pages, but performed better for more distant navigation tasks. The temporal scheme also caused extreme usage patterns, with the subjects either solving tasks very efficiently or very inefficiently, depending on whether they used the Back menu. This observation indicates that adaptations of the temporal system that improve the effectiveness of the Back menu may enhance web navigation.</p>
+			</richtext>
+		</abstract>
+		<identifier type="sharef:doi">10.1006/ijhc.2002.1025</identifier>
+		<title type="sharef:secondaryTitle">International Journal of Human Computer Studies</title>
+		<number>5</number>
+		<title type="sharef:primaryTitle">Pushing Back: Evaluating a New Behaviour for the Back and Forward Buttons in Web Browsers</title>
+		<volume>57</volume>
+	</reference>
+	<reference name="alt77" src="bibtex:article" src-info="bibtex:line-735" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Irwin</givenname>
+				<surname>Altman</surname>
+			</person>
+		</names>
+		<date value="1977"/>
+		<abstract>
+			<richtext>
+				<p>Examines privacy as a generic process that occurs in all cultures but that also differs among cultures in terms of the behavioral mechanisms used to regulate desired levels of privacy. Ethnographic data are examined from a variety of cultures, particularly from societies with apparently maximum privacy and minimum privacy and from analyses of various social relationships (e.g., parents and children, in-laws, husbands and wives). It is concluded that privacy is a universal process that involves culturally unique regulatory mechanisms.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">Journal of Social Issues</title>
+		<number>3</number>
+		<pages>66-84</pages>
+		<title type="sharef:primaryTitle">Privacy Regulation: Culturally Universal or Culturally Specific?</title>
+		<volume>33</volume>
+	</reference>
+	<reference name="bee10a" src="bibtex:article" src-info="bibtex:line-750" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Jöran</givenname>
+				<surname>Beel</surname>
+			</person>
+			<person>
+				<givenname>Bela</givenname>
+				<surname>Gipp</surname>
+			</person>
+			<person>
+				<givenname>Erik</givenname>
+				<surname>Wilde</surname>
+			</person>
+		</names>
+		<date value="2010-01"/>
+		<abstract>
+			<richtext>
+				<p>This article introduces and discusses the concept of academic search engine optimization (ASEO). Based on three recently conducted studies, guidelines are provided on how to optimize scholarly literature for academic search engines in general, and for Google Scholar in particular. In addition, we briefly discuss the risk of researchers' illegitimately 'over-optimizing' their articles.</p>
+			</richtext>
+		</abstract>
+		<identifier type="sharef:doi">10.1353/scp.0.0082</identifier>
+		<title type="sharef:secondaryTitle">Journal of Scholarly Publishing</title>
+		<number>2</number>
+		<pages>176-190</pages>
+		<title type="sharef:primaryTitle">Academic Search Engine Optimization (ASEO): Optimizing Scholarly Literature for Google Scholar &amp; Co.</title>
+		<identifier type="sharef:uri">http://utpjournals.metapress.com/content/1g745112502611pq/</identifier>
+		<identifier type="sharef:uri">http://dret.net/netdret/publications#bee10a</identifier>
+		<volume>41</volume>
+	</reference>
+	<reference name="col92" src="bibtex:article" src-info="bibtex:line-769" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>W. Robert</givenname>
+				<surname>Collins</surname>
+			</person>
+			<person>
+				<givenname>Keith W.</givenname>
+				<surname>Miller</surname>
+			</person>
+		</names>
+		<date value="1992-01"/>
+		<abstract>
+			<richtext>
+				<p>Most computer professionals know that difficult ethical issues may arise in their work. We believe that these professionals want to "do the right thing." They accept their responsibilities as moral agents and they recognize that their special technical skills give them power and responsibilities. However, the will to act ethically is not sufficient; computer professionals also need skills to arrive at reasonable, ethical decisions. In this article we suggest a set of guidelines to help computer professionals consider the ethical dimensions of technical decisions and offer practical advice to individuals who need to make timely decisions in an ethical manner. We call our guidelines a paramedic method to suggest a medical analogy. We use our method on two realistic ethical dilemmas facing computer professionals. We gather and analyze the data and reach conclusions much as the principals in our cases might. Our paramedic method is not a replacement for considered analysis by professional ethicists. It is a method by which computer professionals can quickly organize and view the facts of an ethical dilemma in a systematic and practical fashion.</p>
+			</richtext>
+		</abstract>
+		<identifier type="sharef:doi">10.1016/0164-1212(92)90077-W</identifier>
+		<title type="sharef:secondaryTitle">Journal of Systems and Software</title>
+		<number>1</number>
+		<pages>23-38</pages>
+		<title type="sharef:primaryTitle">Paramedic Ethics for Computer Professionals</title>
+		<volume>17</volume>
+	</reference>
+	<reference name="mca06" src="bibtex:article" src-info="bibtex:line-786" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Andrew P.</givenname>
+				<surname>McAfee</surname>
+			</person>
+		</names>
+		<date value="2006"/>
+		<abstract>
+			<richtext>
+				<p>There is a new wave of business communication tools including blogs, wikis and group messaging software — which the author has dubbed, collectively, Enterprise 2.0 — that allow for more spontaneous, knowledge-based collaboration. These new tools, the author contends, may well supplant other communication and knowledge management systems with their superior ability to capture tacit knowledge, best practices and relevant experiences from throughout a company and make them readily available to more users. This article offers a paradigm that highlights the salient characteristics of these new technologies, which the author refers to as SLATES (search, links, authoring, tags, extensions, signals). The resulting organizational communication patterns can lead to highly productive and highly collaborative environments by making both the practices of knowledge work and its outputs more visible. Drawing on case studies and survey data, the article offers managers a set of ground rules for implementing the new technologies. First, it is necessary to create a receptive culture in order to prepare the way for new practices. Second, a common platform must be created to allow for a collaboration infrastructure. Third, an informal rollout of the technologies may be preferred to a more formal procedural change. And fourth, managerial support and leadership is crucial. Even when implanted and implemented well, these new technologies will certainly bring with them new challenges. These tools may well reduce management's ability to exert unilateral control and to express some level of negativity. Whether a company's leaders really want this to happen and will be able to resist the temptation to silence dissent is an open question. Leaders will have to play a delicate role if they want Enterprise 2.0 technologies to succeed.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">MIT Sloan Management Review</title>
+		<number>3</number>
+		<pages>21-28</pages>
+		<title type="sharef:primaryTitle">Enterprise 2.0: The Dawn of Emergent Collaboration</title>
+		<identifier type="sharef:uri">http://sloanreview.mit.edu/smr/issue/2006/spring/06/</identifier>
+		<volume>47</volume>
+	</reference>
+	<reference name="ret07" src="bibtex:article" src-info="bibtex:line-798" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Cynthia</givenname>
+				<surname>Rettig</surname>
+			</person>
+		</names>
+		<date value="2007"/>
+		<abstract>
+			<richtext>
+				<p>Drawing upon a wealth of data, informed experience, and expert opinion — from Thomas Friedman to Bjarne Stroustrup, from David Gelernter to Nicholas Carr — the author builds a case that enterprise software in large organizations has not delivered on its promise to fully integrate and intelligently control complex business processes while remaining flexible enough to adapt to changing business needs. Instead, ERP systems — including both software applications and the data they process — are variegated patchworks, containing 50 or more databases and hundreds of separate software programs installed over decades and interconnected by idiosyncratic, Byzantine, and poorly documented customized processes. To manage this growing complexity, IT departments have grown substantially: Today's IT departments spend 70% to 80% of their budgets just trying to keep existing systems running. The research shows, says the author, that the typical IT structure is so dense and extensive that it's often a miracle that it works at all. Enterprise systems that were supposed to streamline and simplify business processes instead have brought high risks, uncertainty, and a deeply worrying level of complexity. Rather than agility, they have produced rigidity and unexpected barriers to change, a veritable glut of information containing myriad hidden errors, and a cloud of questions regarding their overall benefits. How did this happen? Rettig points to the inherent limitations in the nature of software, the costs of implementation, and the vagaries of data. Indeed, she offers, enterprise software may be just too complex to deliver on its promises. She also suggests that the next new thing — service-oriented architecture (SOA) — is not likely to fare much better, for many of the same reasons. There are no easy fixes, cautions Rettig, save a large dose of sobriety, clear-eyed analysis, and emphasis on simplicity and efficiency.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">MIT Sloan Management Review</title>
+		<number>1</number>
+		<pages>21-27</pages>
+		<title type="sharef:primaryTitle">The Trouble with Enterprise Software</title>
+		<identifier type="sharef:uri">http://sloanreview.mit.edu/smr/issue/2007/fall/01/</identifier>
+		<volume>49</volume>
+	</reference>
+	<reference name="sim62" src="bibtex:article" src-info="bibtex:line-814" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Herbert A.</givenname>
+				<surname>Simon</surname>
+			</person>
+		</names>
+		<date value="1962-12"/>
+		<title type="sharef:secondaryTitle">American Philosophical Society</title>
+		<number>6</number>
+		<pages>467-482</pages>
+		<title type="sharef:primaryTitle">The Architecture of Complexity</title>
+		<identifier type="sharef:uri">http://www.jstor.org/stable/985254</identifier>
+		<volume>106</volume>
+	</reference>
+	<reference name="wei76" src="bibtex:article" src-info="bibtex:line-830" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Karl E.</givenname>
+				<surname>Weick</surname>
+			</person>
+		</names>
+		<date value="1976-03"/>
+		<abstract>
+			<richtext>
+				<p>In contrast to the prevailing image that elements in organizations are coupled through dense, tight linkages, it is proposed that elements are often tied together frequently and loosely. Using educational organizations as a case in point, it is argued that the concept of loose coupling incorporates a surprising number of disparate observations about organizations, suggests novel functions, creates stubborn problems for methodologists, and generates intriguing questions for scholars. Sample studies of loose coupling are suggested and research priorities are posed to foster cumulative work with this concept.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">Administrative Science Quarterly</title>
+		<number>1</number>
+		<pages>1-19</pages>
+		<title type="sharef:primaryTitle">Educational Organizations as Loosely Coupled Systems</title>
+		<identifier type="sharef:uri">http://www.jstor.org/stable/2391875</identifier>
+		<volume>21</volume>
+	</reference>
+	<reference name="ort90" src="bibtex:article" src-info="bibtex:line-847" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>J. Douglas</givenname>
+				<surname>Orton</surname>
+			</person>
+			<person>
+				<givenname>Karl E.</givenname>
+				<surname>Weick</surname>
+			</person>
+		</names>
+		<date value="1990-04"/>
+		<abstract>
+			<richtext>
+				<p>Diverse applications of the concept of loose coupling are embodied in five recurring voices that focus separately on causation, typology, effects, compensations, and outcomes. Each has a tendency to drift away from a dialectical interpretation of loose coupling toward a unidimensional interpretation of loose coupling, thereby weakening the explanatory value of the concept. The authors first use the five voices to review the loose coupling literature and then to suggest more precise and more productive uses of the concept.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">Academy of Management Review</title>
+		<number>2</number>
+		<pages>203-223</pages>
+		<title type="sharef:primaryTitle">Loosely Coupled Systems: A Reconceptualization</title>
+		<identifier type="sharef:uri">http://www.jstor.org/stable/258154</identifier>
+		<volume>15</volume>
+	</reference>
+	<reference name="boy07" src="bibtex:article" src-info="bibtex:line-864" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Danah M.</givenname>
+				<surname>Boyd</surname>
+			</person>
+			<person>
+				<givenname>Nicole B.</givenname>
+				<surname>Ellison</surname>
+			</person>
+		</names>
+		<date value="2007-10"/>
+		<abstract>
+			<richtext>
+				<p>Social network sites (SNSs) are increasingly attracting the attention of academic and industry researchers intrigued by their affordances and reach. This special theme section of the Journal of Computer-Mediated Communication brings together scholarship on these emergent phenomena. In this introductory article, we describe features of SNSs and propose a comprehensive definition. We then present one perspective on the history of such sites, discussing key changes and developments. After briefly summarizing existing scholarship concerning SNSs, we discuss the articles in this special section and conclude with considerations for future research.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">Journal of Computer-Mediated Communication</title>
+		<number>1</number>
+		<title type="sharef:primaryTitle">Social Network Sites: Definition, History, and Scholarship</title>
+		<identifier type="sharef:uri" resourceType="text/html">http://jcmc.indiana.edu/vol13/issue1/boyd.ellison.html</identifier>
+		<volume>13</volume>
+	</reference>
+	<reference name="got07" src="bibtex:article" src-info="bibtex:line-880" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Greg</givenname>
+				<surname>Goth</surname>
+			</person>
+		</names>
+		<date value="2007-11"/>
+		<abstract>
+			<richtext>
+				<p>iPhone hackers, spectrum auctions, new carrier technology might doom mobile network carriers' "garden wall" restrictions on consumer choices.</p>
+			</richtext>
+		</abstract>
+		<identifier type="sharef:doi">10.1109/MDSO.2007.64</identifier>
+		<title type="sharef:secondaryTitle">IEEE Distributed Systems Online</title>
+		<number>11</number>
+		<title type="sharef:primaryTitle">Opening the Mobile Net</title>
+		<identifier type="sharef:uri">http://www.firstmonday.org/issues/issue11_10/duguid/</identifier>
+		<volume>8</volume>
+	</reference>
+	<reference name="sha09" src="bibtex:article" src-info="bibtex:line-897" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Rajiv</givenname>
+				<surname>Shah</surname>
+			</person>
+			<person>
+				<givenname>Jay</givenname>
+				<surname>Kesan</surname>
+			</person>
+		</names>
+		<date value="2009-06"/>
+		<abstract>
+			<richtext>
+				<p>Governments around the world are considering implementing or even mandating open standards policies. They believe these policies will provide economic, socio-political, and technical benefits. In this article, we analyze the failure of the Massachusetts's open standards policy as applied to document formats. We argue it failed due to the lack of running code. Running code refers to multiple independent, interoperable implementations of an open standard. With running code, users have choice in their adoption of a software product and consequently economic and technological benefits. We urge governments to incorporate a "running code" requirement when adopting an open standards policy.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">First Monday</title>
+		<number>6</number>
+		<title type="sharef:primaryTitle">Running Code as Part of an Open Standards Policy</title>
+		<identifier type="sharef:uri">http://www.uic.edu/htbin/cgiwrap/bin/ojs/index.php/fm/article/view/2414/2201</identifier>
+		<volume>14</volume>
+	</reference>
+	<reference name="hub09" src="bibtex:article" src-info="bibtex:line-909" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Bernardo A.</givenname>
+				<surname>Huberman</surname>
+			</person>
+			<person>
+				<givenname>Daniel M.</givenname>
+				<surname>Romero</surname>
+			</person>
+			<person>
+				<givenname>Fang</givenname>
+				<surname>Wu</surname>
+			</person>
+		</names>
+		<date value="2009-01"/>
+		<abstract>
+			<richtext>
+				<p>Scholars, advertisers and political activists see massive online social networks as a representation of social interactions that can be used to study the propagation of ideas, social bond dynamics and viral marketing, among others. But the linked structures of social networks do not reveal actual interactions among people. Scarcity of attention and the daily rhythms of life and work makes people default to interacting with those few that matter and that reciprocate their attention. A study of social interactions within Twitter reveals that the driver of usage is a sparse and hidden network of connections underlying the "declared" set of friends and followers.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">First Monday</title>
+		<number>1</number>
+		<title type="sharef:primaryTitle">Social Networks That Matter: Twitter Under the Microscope</title>
+		<identifier type="sharef:uri">http://firstmonday.org/htbin/cgiwrap/bin/ojs/index.php/fm/article/view/2317/2063</identifier>
+		<volume>14</volume>
+	</reference>
+	<reference name="dug06" src="bibtex:article" src-info="bibtex:line-921" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Paul</givenname>
+				<surname>Duguid</surname>
+			</person>
+		</names>
+		<date value="2006-10"/>
+		<abstract>
+			<richtext>
+				<p>People often implicitly ascribe the quality of peer-production projects such as Project Gutenberg or Wikipedia to what I call "laws" of quality. These are drawn from Open Source software development and it is not clear how applicable they are outside the realm of software. I look at examples from peer production projects to ask whether faith in these laws does not so much guarantee quality as hide the need for improvement.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">First Monday</title>
+		<number>10</number>
+		<title type="sharef:primaryTitle">Peer Production and "Laws of Quality"</title>
+		<identifier type="sharef:uri">http://www.firstmonday.org/issues/issue11_10/duguid/</identifier>
+		<volume>11</volume>
+	</reference>
+	<reference name="bro01" src="bibtex:article" src-info="bibtex:line-933" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Barry</givenname>
+				<surname>Brown</surname>
+			</person>
+			<person>
+				<givenname>Abigail J.</givenname>
+				<surname>Sellen</surname>
+			</person>
+		</names>
+		<date value="2001-09"/>
+		<abstract>
+			<richtext>
+				<p>While browsing the Web is a widespread everyday activity there is a shortage of detailed understanding of how users organise their Web usage. In this paper we present results from a qualitative in-depth interview study of how users browse the Web and combine browsing with their other activities. The data are  used to explore three particular problems which users have with browsing the Web. Firstly, users have problems managing their favourites, and in particular accessing their favourites through a hierarchical menu. Second, users have problems with combining information across different Web sites — what we call the "meta-task" problem. Third, users have concerns with security and privacy, although these concerns seem to change as users become more experienced with shopping on the Web. We discuss three concepts which address these problems: "home page favourites", "Web clipping" and the "Web card". These concepts are attempts at incremental improvements to the Web without affecting the Web's essential simplicity.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">First Monday</title>
+		<number>9</number>
+		<title type="sharef:primaryTitle">Exploring Users' Experiences of the Web</title>
+		<identifier type="sharef:uri">http://www.uic.edu/htbin/cgiwrap/bin/ojs/index.php/fm/article/view/882/791</identifier>
+		<volume>6</volume>
+	</reference>
+	<reference name="kei04" src="bibtex:article" src-info="bibtex:line-949" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Corey</givenname>
+				<surname>Keith</surname>
+			</person>
+		</names>
+		<date value="2004"/>
+		<abstract>
+			<richtext>
+				<p>This paper describes the MARCXML architecture implemented at the Library of Congress. It gives an overview of the component pieces of the architecture, including the MARCXML schema and the MARCXML toolkit, while giving a brief tutorial on their use. Several different applications of the architecture and tools are discussed to illustrate the features of the toolkit being developed thus far. Nearly any metadata format can take advantage of the features of the toolkit, and the process of the toolkit enabling a new format is discussed. Finally, this paper intends to foster new ideas with regards to the transformation of descriptive metadata, especially using XML tools. In this paper the following conventions will be used: MARC21 will refer to MARC 21 records in the ISO 2709 record structure used today; MARCXML will refer to MARC 21 records in an XML structure.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">Library Hi Tech</title>
+		<number>2</number>
+		<pages>122-130</pages>
+		<title type="sharef:primaryTitle">Using XSLT to Manipulate MARC Metadata</title>
+		<field type="bibtex:topic">marc[0.7] marcxml[0.8]</field>
+		<identifier type="sharef:uri">http://taddeo.emeraldinsight.com/vl=985643/cl=94/nw=1/rpsv/cgi-bin/linker?ini=emerald&amp;reqidx=/cw/mcb/07378831/v22n2/s2/p122</identifier>
+		<volume>22</volume>
+	</reference>
+	<reference name="rus06" src="bibtex:article" src-info="bibtex:line-966" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Andrew L.</givenname>
+				<surname>Russell</surname>
+			</person>
+		</names>
+		<date value="2006"/>
+		<abstract>
+			<richtext>
+				<p>Internet historians recognize the technical achievements but often overlook the bureaucratic innovations of Internet pioneers. The phrase, "We reject: kings, presidents, and voting. We believe in: rough consensus and running code," was coined by David Clark in 1992. This article explains how the phrase captured the technical and political values of Internet engineers during a crucial phase in the Internet's growth.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">IEEE Annals of the History of Computing</title>
+		<number>3</number>
+		<pages>48-61</pages>
+		<title type="sharef:primaryTitle">'Rough Consensus and Running Code' and the Internet-OSI Standards War</title>
+		<identifier type="sharef:uri" resourceType="application/pdf">http://info.computer.org/portal/cms_docs_annals/annals/content/promo2.pdf</identifier>
+		<volume>28</volume>
+	</reference>
+	<reference name="rol00" src="bibtex:article" src-info="bibtex:line-982" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Colette</givenname>
+				<surname>Rolland</surname>
+			</person>
+			<person>
+				<givenname>Naveen</givenname>
+				<surname>Prakash</surname>
+			</person>
+		</names>
+		<date value="2000"/>
+		<abstract>
+			<richtext>
+				<p>Conceptual modelling is situated in the broader view of information systems requirements engineering. Requirements Engineering (RE) explores the objectives of different stakeholders and the activities carried out by them to meet these objectives in order to derive purposeful system requirements and therefore lead to better quality systems, i.e., systems that meet the requirements of their users. Thus RE product models use concepts for modelling these instead of concepts like data, process, events, etc., used in conceptual models. Since the former are more stable than the latter, requirements engineering manages change better. The paper gives the rationale for extending traditional conceptual models and introduces some RE product models. Furthermore, in contrast to conceptual modelling, requirements engineering lays great stress on the engineering process employed. The paper introduces some RE process models and considers their effect on tool support.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">Annals of Software Engineering</title>
+		<number>1-4</number>
+		<pages>151-176</pages>
+		<title type="sharef:primaryTitle">From Conceptual Modelling to Requirements Engineering</title>
+		<identifier type="sharef:uri">http://springerlink.metapress.com/link.asp?id=u8k605t66123lp12</identifier>
+		<volume>10</volume>
+	</reference>
+	<reference name="bur08" src="bibtex:article" src-info="bibtex:line-998" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Jenna</givenname>
+				<surname>Burrell</surname>
+			</person>
+		</names>
+		<date value="2008"/>
+		<abstract>
+			<richtext>
+				<p>Internet scamming strategies associated with West Africa typically involve the creation and deployment of fictional narratives depicting political turmoil, corruption, violence, poverty, and personal tragedy set in a variety of African nations. This article examines Internet scammers complicity in promoting these creatively dramatic and yet stereotyped representations of Africa and Africans. Their approach is an example of what De Certeau describes as a 'tactic' where scammers manipulate the space of representations produced by hegemonic forces in the West to realize subversive ends. The attempts of Internet scammers highlight the difficulties of creating selfrepresentations that are both 'authentic' and persuasive underlining the complexity inherent in efforts by marginalized communities to be heard by those they perceive as powerful. This remains the case despite new mechanisms of communication, such as the Internet, that make connecting (in a purely functional sense) much easier and less expensive.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">Information Technology and International Development</title>
+		<title type="sharef:primaryTitle">Problematic Empowerment: West African Internet Scams as Strategic Misrepresentation</title>
+		<identifier type="sharef:uri">http://www.mitpressjournals.org/toc/itid/</identifier>
+	</reference>
+	<reference name="fan03" src="bibtex:article" src-info="bibtex:line-1011" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Wenfei</givenname>
+				<surname>Fan</surname>
+			</person>
+			<person>
+				<givenname>Jérôme</givenname>
+				<surname>Siméon</surname>
+			</person>
+		</names>
+		<date value="2003-02"/>
+		<abstract>
+			<richtext>
+				<p>Integrity constraints have proved fundamentally important in database management. The ID/IDREF mechanism provided by XML DTDs relies on a simple form of constraints to describe references. Yet, this mechanism is sufficient neither for specifying references in XML documents, nor for expressing semantic constraints commonly found in databases. In this paper, we extend XML DTDs with several classes of integrity constraints and investigate the complexity of reasoning about these constraints. The constraints range over keys, foreign keys, inverse constraints as well as ID constraints for capturing the semantics of object identities. They improve semantic specifications and provide a better reference mechanism for native XML applications. They are also useful in information exchange and data integration for preserving the semantics of data originating in relational and object-oriented databases. We establish complexity and axiomatization results for the (finite) implication problems associated with these constraints. In addition, we study implication of more general constraints, such as functional, inclusion and inverse constraints defined in terms of navigation paths.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">Journal of Computer and System Sciences</title>
+		<number>1</number>
+		<pages>254-291</pages>
+		<title type="sharef:primaryTitle">Integrity Constraints for XML</title>
+		<identifier type="sharef:uri" resourceType="application/pdf">http://www.lfcs.inf.ed.ac.uk/research/database/publications/jcss03.pdf</identifier>
+		<volume>66</volume>
+	</reference>
+	<reference name="deb05" src="bibtex:article" src-info="bibtex:line-1028" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Philippe</givenname>
+				<surname>Debaty</surname>
+			</person>
+			<person>
+				<givenname>Patrick</givenname>
+				<surname>Goddi</surname>
+			</person>
+			<person>
+				<givenname>Alex</givenname>
+				<surname>Vorbau</surname>
+			</person>
+		</names>
+		<date value="2005"/>
+		<abstract>
+			<richtext>
+				<p>This work has its roots in the HP Labs Cooltown project, whose core principle is that the integration of our physical world with the Web offers unique opportunities to enable ubiquitous computing applications. This paper describes our latest results in building a model and a software architecture called the Web presence manager (WPM) to support this physical-virtual integration. This software layer implements and specifies the services and information provided by Web representations of physical entities such as people, places, or things. We detail an extensive context-enhanced media-oriented application built on top of our platform. Our application enables mobile and context-aware access to personal contents and rendering on local appliances in a variety of ubiquitous computing environments.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">Mobile Networks and Applications</title>
+		<number>4</number>
+		<pages>385-394</pages>
+		<title type="sharef:primaryTitle">Integrating the Physical World with the Web to Enable Context-Enhanced Mobile Services</title>
+		<field type="bibtex:topic">cooltown[1]</field>
+		<volume>10</volume>
+	</reference>
+	<reference name="kin02" src="bibtex:article" src-info="bibtex:line-1040" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Tim</givenname>
+				<surname>Kindberg</surname>
+			</person>
+			<person>
+				<givenname>John J.</givenname>
+				<surname>Barton</surname>
+			</person>
+			<person>
+				<givenname>Jeff</givenname>
+				<surname>Morgan</surname>
+			</person>
+			<person>
+				<givenname>Gene</givenname>
+				<surname>Becker</surname>
+			</person>
+			<person>
+				<givenname>Debbie</givenname>
+				<surname>Caswell</surname>
+			</person>
+			<person>
+				<givenname>Philippe</givenname>
+				<surname>Debaty</surname>
+			</person>
+			<person>
+				<givenname>Gita</givenname>
+				<surname>Gopal</surname>
+			</person>
+			<person>
+				<givenname>Marcos</givenname>
+				<surname>Frid</surname>
+			</person>
+			<person>
+				<givenname>Venky</givenname>
+				<surname>Krishnan</surname>
+			</person>
+			<person>
+				<givenname>Howard</givenname>
+				<surname>Morris</surname>
+			</person>
+			<person>
+				<givenname>John</givenname>
+				<surname>Schettino</surname>
+			</person>
+			<person>
+				<givenname>Bill</givenname>
+				<surname>Serra</surname>
+			</person>
+			<person>
+				<givenname>Mirjana</givenname>
+				<surname>Spasojevic</surname>
+			</person>
+		</names>
+		<date value="2002"/>
+		<abstract>
+			<richtext>
+				<p>The convergence of Web technology, wireless networks, and portable client devices provides new design opportunities for computer/communications systems. In the HP Labs' "Cooltown" project we have been exploring these opportunities through an infrastructure to support "web presence" for people, places and things. We put web servers into things like printers and put information into web servers about things like artwork; we group physically related things into places embodied in web servers. Using URLs for addressing, physical URL beaconing and sensing of URLs for discovery, and localized web servers for directories, we can create a location-aware but ubiquitous system to support nomadic users. On top of this infrastructure we can leverage Internet connectivity to support communications services. Web presence bridges the World Wide Web and the physical world we inhabit, providing a model for supporting nomadic users without a central control point.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">Mobile Networks and Applications</title>
+		<number>5</number>
+		<pages>365-376</pages>
+		<title type="sharef:primaryTitle">People, Places, Things: Web Presence for the Real World</title>
+		<field type="bibtex:topic">cooltown[1]</field>
+		<volume>7</volume>
+	</reference>
+	<reference name="bar99" src="bibtex:article" src-info="bibtex:line-1056" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Judit</givenname>
+				<surname>Bar-Ilan</surname>
+			</person>
+		</names>
+		<date value="1999"/>
+		<abstract>
+			<richtext>
+				<p>This paper examines the performance of search engines over time. The performance is not as expected: search engines loose information, relevant URLs that were retrieved at a given time by a certain search engine, were not retrieved by the same search engine at a later time, although they continued to exist and to be relevant. A closer examination of the these URLs revealed that not only URLs were dropped, but content was also lost for a large portion of these URLs: no other URL retrieved by the search engine contained the same information. As far as we know this aspect of the performance of search engines has not been thoroughly studied before. The problem is investigated through a case study, using the search phrase "informetrics OR informetric". The searches were carried out in one month intervals during a five months period between January and June 1998. An additional search round and comparison were carried out on June 1999. The six largest search engines at the time were examined.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">Cybermetrics: International Journal of Scientometrics, Informetrics and Bibliometrics</title>
+		<number>1</number>
+		<title type="sharef:primaryTitle">Search Engine Results over Time — A Case Study on Search Engine Stability</title>
+		<identifier type="sharef:uri" resourceType="text/html">http://www.cindoc.csic.es/cybermetrics/articles/v2i1p1.html</identifier>
+		<volume>2/3</volume>
+	</reference>
+	<reference name="the01" src="bibtex:article" src-info="bibtex:line-1067" type="sharef:article">
+		<names type="sharef:author">
+			<person>
+				<givenname>Mike</givenname>
+				<surname>Thelwall</surname>
+			</person>
+		</names>
+		<date value="2001"/>
+		<abstract>
+			<richtext>
+				<p>Search engines are an important tool for information foraging on the web. The broad details of how they work is, therefore, of relevance to both information seekers and providers. Yet search engines are known to only index a fraction of the web, up to a maximum of 16% in one recent study. A search engine must crawl the web periodically in order to maintain an up to date index, but, given the limitations of total coverage, how can it decide which sites to cover and which to ignore? One answer lies in research showing the importance of web links in identifying useful sources of information. This paper reports on an experiment to investigate the effect of link count on the indexing of 1000 sites in three search portals over a period of seven months. It was found that, although all engines added sites during the period of the survey, only Google showed evidence of being very responsive to the existence of links on the test site, whereas AltaVista's results were very stable over time.</p>
+			</richtext>
+		</abstract>
+		<title type="sharef:secondaryTitle">Cybermetrics: International Journal of Scientometrics, Informetrics and Bibliometrics</title>
+		<number>1</number>
+		<title type="sharef:primaryTitle">The Responsiveness of Search Engine Indexes</title>
+		<identifier type="sharef:uri" resourceType="text/html">http://www.cindoc.csic.es/cybermetrics/articles/v5i1p1.html</identifier>
+		<volume>5</volume>
+	</reference>
+</bibliography>

@@ -37,7 +37,6 @@
 						<h5 id="year{current-grouping-key()}"><xsl:value-of select="current-grouping-key()"/></h5>
 						<ul>
 							<xsl:for-each select="current-group()">
-								<xsl:sort select="title"/>
 								<li><a href="reference/{@name}.html"><xsl:value-of select="title"/></a></li>
 							</xsl:for-each>
 						</ul>
