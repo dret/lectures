@@ -4,7 +4,7 @@
 <?hotspot layout="ischool" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 	<configuration>
-		<link subsections="yes" bookmarks="yes" versions="xml-fall13.xml" home="./" help="quick" contents="./" glossary="http://dret.net/glossary/" author="http://dret.net/netdret/"/>
+		<link subsections="yes" bookmarks="yes" versions="xml-fall13.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
 		<paths img="img" listing="src"/>
 		<outline count-text=" [*]" count-depth="all"/>
 		<hyperlink extra=""/>
@@ -664,7 +664,7 @@
 					<ul>
 						<li><link href="xsd-1">XSD</link> as the W3C's recommendation</li>
 						<li><a href="http://www.schematron.com/">Schematron</a> as a rule-based alternative</li>
-						<li>various <a href="http://dret.net/glossary/xmlschemalanguage" title="XML glossary">other research projects and products</a></li>
+						<li>various other research projects and products</li>
 					</ul>
 					<li>Choosing appropriate schema language(s) is important</li>
 					<ul>
@@ -1754,7 +1754,7 @@
 			<slide>
 				<title>Divide and Conquer</title>
 				<ul>
-					<li>Sequences are part of the <a href="http://dret.net/lectures/xml-fall08/xdm">XDM</a></li>
+					<li>Sequences are part of XDM</li>
 					<ul>
 						<li>data models are separate entities from evaluation languages</li>
 						<li>a data model can be reused in different evaluation languages</li>
@@ -1919,7 +1919,7 @@
 					<li><link href="uri"/> uniquely identify resources</li>
 					<li>URIs often provide access information</li>
 					<ul>
-						<li>pretty clear in <code>http://dret.net/lectures/xml-fall10/</code></li>
+						<li>pretty clear in <code>http://dret.net/lectures/xml-fall13/</code></li>
 						<li>less clear in <code>urn:ietf:rfc:2648</code> (<a href="http://tools.ietf.org/html/rfc2648">RFC 2648</a>)</li>
 						<li>very (and purposely) unclear in <code>tag:9327493874329</code> (<a href="http://tools.ietf.org/html/rfc4151">RFC 4151</a>)</li>
 					</ul>
@@ -2509,7 +2509,7 @@
 						<li>Additional constraints should be documented</li>
 						<ul>
 							<li>documentation enables applications to implement constraint checking</li>
-							<li>other schema languages (like <a href="http://dret.net/lectures/xml-fall08/schemalanguages">Schematron</a>) may be used to express these constraints</li>
+							<li>other schema languages may be used to express these constraints</li>
 						</ul>
 					</ul>
 				</slide>
@@ -2789,7 +2789,7 @@
 						</ul>
 						<li>Attributes could be better integrated into the model</li>
 						<ul>
-							<li><a href="http://dret.net/lectures/xml-fall08/schemalanguages#%287%29">RELAX NG</a> treats attributes as part of an element's content model</li>
+							<li>RELAX NG treats attributes as part of an element's content model</li>
 							<li>this makes it trivial to have choices of element content and attributes</li>
 						</ul>
 					</ul>
@@ -4241,7 +4241,7 @@ loop param counter ; {
 						</ul>
 						<li>Working with simple types is supported in any XSLT 2.0 processor</li>
 						<ul>
-							<li>the basic XSD datatypes are part of <a href="http://dret.net/lectures/xml-fall08/xdm">XDM</a> and always available</li>
+							<li>the basic XSD datatypes are part of XDM and always available</li>
 							<pre>xs:date( if ( $i castable as xs:date ) then $i else '2000-01-01' )</pre>
 						</ul>
 						<li>Working with user-defined simple types is a different story</li>
@@ -4273,7 +4273,6 @@ loop param counter ; {
 							<li>upon finding a type, find out what attributes are optional but not required</li>
 							<li>this would require access not only to the <em>type name</em>, but to the <em>type definition</em></li>
 							<li>this is a very interesting research issue, but not yet possible in XSLT 2.0</li>
-							<li>the <a href="http://dret.net/netdret/publications#wil07e">Schema Component XML Syntax (SCX)</a> is an attempt to solve this problem</li>
 						</ul>
 					</ul>
 				</slide>
@@ -4290,6 +4289,998 @@ loop param counter ; {
 					<li>Start using XSLT 2.0 as soon as possible</li>
 					<li>Start using schema-aware XSLT 2.0 as soon as required</li>
 				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="rest">
+		<title short="REST">What is REST?</title>
+		<date>2013-11-13</date>
+		<toc class="resources"><a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm" title="Roy Thomas Fielding, 'Architectural Styles and the Design of Network-based Software Architectures', Ph.D. Thesis, University of California, Irvine, Irvine, California, 2000">Fielding&#160;Dissertation</a>&#160;· <a href="http://portal.acm.org/citation.cfm?doid=337180.337228" title=" 	
+Roy Thomas Fielding and Richard N. Taylor, 'Principled Design of the Modern Web Architecture', ACM Transactions on Internet Technology, 2(2):115-150, May 2002">ACM&#160;Transactions</a></toc>
+		<toc class="abstract"><em>Representational State Transfer (REST)</em> is defined as an <em>architectural style</em>, which means that it is not a concrete systems architecture, but instead a set of constraints that are applied when designing a systems architecture. We briefly discuss these constraints, but then focus on explaining how the Web is one such systems architecture that implements REST. In particular, the mechanisms of the <em>Uniform Resource Identifiers (URIs)</em>, the <em>Hypertext Transfer Protocol (HTTP)</em>, media types, and markup languages such as the <em>Hypertext Markup Language (HTML)</em> and the <em>Extensible Markup Language (XML)</em>. We also introduce <em>Atom</em> and the <em>Atom Publishing Protocol (AtomPub)</em> as two established ways on how RESTful services are already provided and used on today's Web.</toc>
+		<slide>
+			<title>Abstract</title>
+            <p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="rest-definition">
+			<title>REST: The Definition</title>
+			<slide>
+				<title>The REST Architectural Style</title>
+				<ul>
+					<li>A set of constraints that inform an architecture</li>
+				</ul>
+				<ol>
+					<li><link href="identification-constraint"/></li>
+					<li><link href="interface-constraint"/></li>
+					<li><link href="self-describing-constraint"/></li>
+					<li><link href="hypermedia-constraint"/></li>
+					<li><link href="stateless-constraint"/></li>
+				</ol>
+				<ul>
+					<li>Claims: scalability, mashup-ability, usability, accessibility</li>
+				</ul>
+			</slide>
+			<slide id="identification-constraint">
+				<title>Resource Identification</title>
+				<ul>
+					<li>Name everything that you want to talk about</li>
+					<li><q>Thing</q> in this case should refer to <em>anything</em></li>
+					<ul>
+						<li><em>products</em> in an online shop</li>
+						<li><em>categories</em> that are used for grouping products</li>
+						<li><em>customers</em> that are expected to buy products</li>
+						<li><em>shopping carts</em> where customers collect products</li>
+					</ul>
+					<li><em>Application state</em> also is represented as a resource</li>
+					<ul>
+						<li><em>next</em> links on multi-page submission processes</li>
+						<li><em>paged results</em> with URIs identifying following pages</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="interface-constraint">
+				<title>Uniform Interface</title>
+				<ul>
+					<li>The same small set of operations applies to <link href="identification-constraint">everything</link></li>
+					<li>A small set of <em>verbs</em> applied to a large set of <em>nouns</em></li>
+						<li>verbs are universal and not invented on a per-application base</li>
+						<li>if many applications need new verbs, the uniform interface can be extended</li>
+						<li>natural language works in the same way (new verbs rarely enter language)</li>
+					<li>Identify operations that are candidates for optimization</li>
+					<ul>
+						<li><http>GET</http> and <http>HEAD</http> are <em>safe operations</em></li>
+						<li><http>PUT</http> and <http>DELETE</http> are <em>idempotent operations</em></li>
+						<li><http>POST</http> is the catch-all and can have side-effects</li>
+					</ul>
+					<li>Build functionality based on useful properties of these operations</li>
+				</ul>
+			</slide>
+			<slide id="self-describing-constraint">
+				<title>Self-Describing Messages</title>
+				<ul>
+					<li>Resources are abstract entities (they cannot be used <em>per se</em>)</li>
+					<ul>
+						<li><link href="identification-constraint"/> guarantees that they are clearly identified</li>
+						<li>they are accessed through a <link href="interface-constraint"/></li>
+					</ul>
+					<li>Resources are accessed using <em>resource representations</em></li>
+					<ul>
+						<li>resource representations are sufficient to represent a resource</li>
+						<li>it is communicated which kind of representation is used</li>
+						<li>representation formats can be negotiated between peers</li>
+					</ul>
+					<li>Resource representations can be based on different constraints</li>
+					<ul>
+						<li>XML and JSON can represent the same model for different users</li>
+						<li>whatever the representation is, it must <link href="hypermedia-constraint"> support links</link></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="hypermedia-constraint">
+				<title>Hypermedia Driving Application State</title>
+				<ul>
+					<li><link href="self-describing-constraint">Resource representations</link> contain links to <link href="identification-constraint">identified resources</link></li>
+					<li>Resources and state can be used by navigating links</li>
+					<ul>
+						<li>links make interconnected resources navigable</li>
+						<li>without navigation, identifying new resources is service-specific</li>
+					</ul>
+					<li>RESTful applications <em>navigate</em> instead of <em>calling</em></li>
+					<ul>
+						<li><link href="self-describing-constraint">representations</link> contain information about possible traversals</li>
+						<li>the application navigates to the next resource depending on link semantics</li>
+						<li>navigation can be delegated since all links use <link href="identification-constraint">identifiers</link></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="stateless-constraint">
+				<title>Stateless Interactions</title>
+				<ul>
+					<li>This constraint does not say <q>Stateless Applications</q>!</li>
+					<ul>
+						<li>for many RESTful applications, state is an essential part</li>
+						<li>the idea of REST is to avoid long-lasting transactions <em>in applications</em></li>
+					</ul>
+					<li>Statelessness means to move state to clients or resources</li>
+					<ul>
+						<li>the most important consequence: avoid state in server-side applications</li>
+					</ul>
+					<li><em>Resource state</em> is managed on the server</li>
+					<ul>
+						<li>it is the same for every client working with the service</li>
+						<li>when a client changes resource state other clients see this change as well</li>
+					</ul>
+					<li><em>Client state</em> is managed on the client</li>
+					<ul>
+						<li>it is specific for a client and thus has to be maintained by each client</li>
+						<li>it may affect <em>access</em> to server resources, but not the resources themselves</li>
+					</ul>
+					<li><em>Security issues</em> usually are important with client state</li>
+					<ul>
+						<li>clients can (try to) cheat by lying about their state</li>
+						<li>keeping client state on the server is expensive (but may be worth the price)</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="web-arch">
+			<title>Web Architecture</title>
+			<slide>
+				<title>What is the Web?</title>
+				<ul>
+					<li>Web = URI + HTTP + ( HTML | XML )</li>
+					<li>RESTful Web uses HTTP methods as the uniform interface</li>
+					<ul>
+						<li>non-RESTful Web uses <http>GET</http>/<http>POST</http> and tunneled RPC calls</li>
+						<li>a <q>different RESTful Web</q> uses <em>Web Distributed Authoring and Versioning (WebDAV)</em></li>
+					</ul>
+					<li>Imagine your application being used in <q>10 browsers</q></li>
+					<ul>
+						<li>resources to interact with should be <link href="identification-constraint">identified</link> and <link href="hypermedia-constraint">linked</link></li>
+						<li>a user's preferred font size could be modeled as client state</li>
+						<li>what about an access count associated with an API key?</li>
+					</ul>
+					<li>Imagine your application being used in <q>10 browser tabs</q></li>
+					<ul>
+						<li>no difference as long as client state is representation-based</li>
+						<li>cookies are shared across browser windows (different <q>client scope</q>)</li>
+					</ul>
+				</ul>
+			</slide>
+			<part id="uri">
+				<title short="URI">Uniform Resource Identifier (URI)</title>
+				<slide>
+					<title>Identifying Resources on the Web</title>
+					<ul>
+						<li>Essential for implementing a <link href="identification-constraint"/></li>
+						<li>URIs are human-readable universal identifiers for <q>stuff</q></li>
+						<ul>
+							<li>many identification schemes are not human-readable (binary or hex strings)</li>
+							<li>many RPC-based systems do not have universally identified objects</li>
+						</ul>
+						<li>Making every thing a universally unique identified thing is important</li>
+						<ul>
+							<li>it removes the necessity to <em>scope</em> non-universal identifiers</li>
+							<li>it allows to talk about all things in exactly the same way</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>URI Schemes</title>
+					<pre>URI = scheme ":" hier-part [ "?" query ] [ "#" fragment ]</pre>
+					<ul>
+						<li>URIs in their general case are very simple</li>
+						<ul>
+							<li>the scheme identifies how resources are identified</li>
+							<li>the identification may be hierarchical or non-hierarchical</li>
+						</ul>
+						<li>Many URI schemes are hierarchical</li>
+						<ul>
+							<li>it is then possible to use relative URIs such as in <elem>a href="../"</elem></li>
+							<li>the slash character is not just a character, in URIs it has semantics</li>
+						</ul>
+					</ul>
+					<blockquote>[…] the URI syntax is a federated and extensible naming system wherein each scheme's specification may further restrict the syntax and semantics of identifiers using that scheme.</blockquote>
+					<p class="quotenote"><a href="http://tools.ietf.org/html/rfc3986"><q>Uniform Resource Identifier (URI): Generic Syntax</q>, RFC 3986, January 2005</a></p>
+				</slide>
+				<slide id="uri-query">
+					<title>Query Information</title>
+					<ul>
+						<li>Query components specify additional information</li>
+						<ul>
+							<li>it is non-hierarchical information further identifying the resource</li>
+							<li>in most cases, it can be regarded as <q>input</q> to the resource</li>
+						</ul>
+						<li>Query components often influence caching</li>
+						<ul>
+							<li>successful <http>GET</http>/<http>HEAD</http> requests may be cached</li>
+							<li>only cache query string URIs when explicitly requested (<http>Expires</http>/<http>Cache-Control</http>)</li>
+						</ul>
+					</ul>
+					<blockquote>The query component contains non-hierarchical data that, along with data in the path component […], serves to identify a resource within the scope of the URI's scheme and naming authority […].</blockquote>
+					<p class="quotenote"><a href="http://tools.ietf.org/html/rfc3986"><q>Uniform Resource Identifier (URI): Generic Syntax</q>, RFC 3986, January 2005</a></p>
+				</slide>
+				<slide>
+					<title>Processing URIs</title>
+					<ul>
+						<li>Processing URIs is not as trivial as it may seem</li>
+						<ul>
+							<li>escaping and normalization rules are non-trivial</li>
+							<li>many implementations are broken</li>
+							<li>complain about broken implementations</li>
+							<li>even more complicated when processing an <em>Internationalized Resource Identifier (IRI)</em></li>
+						</ul>
+						<li>URIs are not just strings</li>
+						<ul>
+							<li>URIs are strings with a considerable set of rules attached to them</li>
+							<li>implementing all these rules is non-trivial</li>
+							<li>implementing all these rules is crucial</li>
+							<li>application development environments provide functions for URI handling</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part id="http">
+				<title short="http">Hypertext Transfer Protocol (HTTP)</title>
+				<slide>
+					<title>How RESTful Applications Talk</title>
+					<ul>
+						<li>Essential for implementing a <link href="interface-constraint"/></li>
+						<ul>
+							<li>HTTP defines a small set of methods for acting on URI-identified resources</li>
+						</ul>
+						<li>Misusing HTTP turns application into non-RESTful applications</li>
+						<ul>
+							<li>they lose the capability to be used just by adhering to REST principles</li>
+							<li>it's a bad sign when you think you need an interface description language</li>
+						</ul>
+						<li>Extending HTTP turns applications into more specialized RESTful applications</li>
+						<ul>
+							<li>may be appropriate when more operations are required</li>
+							<li>seriously reduces the number of potential clients</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="http-methods">
+					<title>HTTP Methods</title>
+					<ul>
+						<li><em>Safe methods</em> can be ignored or repeated without side-effects</li>
+						<ul>
+							<li>arithmetically safe: <code>41 × 1 × 1 × 1 × 1 …</code></li>
+							<li>in practice, <q>without side-effects</q> means <q>without relevant side-effects</q></li>
+						</ul>
+						<li><em>Idempotent methods</em> can be repeated without side-effects</li>
+						<ul>
+							<li>arithmetically idempotent: <code>41 × 0 × 0 × 0 × 0 …</code></li>
+							<li>in practice, <q>without side-effects</q> means <q>without relevant side-effects</q></li>
+						</ul>
+						<li>Unsafe and non-idempotent methods should be treated with care</li>
+						<li>HTTP has two main <em>safe methods</em>: <http>GET HEAD</http></li>
+						<li>HTTP has two main <em>idempotent methods</em>: <http>PUT DELETE</http></li>
+						<li>HTTP has one main <em>overload method</em>: <http>POST</http></li>
+					</ul>
+				</slide>
+				<slide id="cookies">
+					<title>Cookies</title>
+					<ul>
+						<li>Cookies are <em>client site state bound to a domain</em></li>
+						<ul>
+							<li>they are convenient because they work <em>without having to use a representation</em></li>
+							<li>they are inconvenient because they are <em>not embedded in representations</em></li>
+						</ul>
+						<li>Cookies are managed by the client</li>
+						<ul>
+							<li>they are shared across browser tabs</li>
+							<li>they are not shared across browsers used by the same user</li>
+							<li>essentially, the <em>client</em> model of cookies is a bit outdated</li>
+						</ul>
+						<li>Two major things to look out for when using cookies:</li>
+						<ol>
+							<li><em>session IDs</em> are <em>application state</em> (i.e., non-resource state)</li>
+							<li>cookies break the back button (requests contain a <q>URI/cookie</q> combo)</li>
+						</ol>
+						<li>The ideal RESTful cookie is never sent to the server</li>
+						<ul>
+							<li>cookies as <em>persistent data storage on the client</em></li>
+							<li>interactions with the server are only using URIs and representations</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+		</part>
+		<part id="representations">
+			<title>Representations</title>
+			<part id="documents">
+				<title>Structured Documents</title>
+				<slide>
+					<title>What is identified by a URI?</title>
+					<ul>
+						<li>Essential for implementing <link href="self-describing-constraint"/></li>
+						<ul>
+							<li>also should provide support for <link href="hypermedia-constraint"/></li>
+						</ul>
+						<li><link href="identification-constraint"/> only talks about an <em>abstract resource</em></li>
+						<ul>
+							<li>resources are never exchanged or otherwise processed directly</li>
+							<li>all interactions use <em>resource representations</em></li>
+						</ul>
+						<li>Representations depend on various factors</li>
+						<ul>
+							<li>the nature of the resource</li>
+							<li>the capabilities of the server</li>
+							<li>the capabilities or the communications medium</li>
+							<li>the capabilities of the client</li>
+							<li>requirements and constraints from the application scenario</li>
+							<li>negotiations to figure out the <q>best</q> representation</li>
+						</ul>
+						<li>Representations are identified by <em>media type</em></li>
+					</ul>
+				</slide>
+				<slide id="xml">
+					<title short="XML">Extensible Markup Language (XML)</title>
+					<ul>
+						<li>The language that started it all</li>
+						<ul>
+							<li>created as a streamlined version of SGML</li>
+							<li>took over as the first universal language for structured data</li>
+						</ul>
+						<li>XML is a metalanguage (a language for representing languages)</li>
+						<ul>
+							<li>many domain-specific languages are defined as XML vocabularies</li>
+							<li>some metalanguages use XML syntax (<link href="rdf">RDF</link> is a popular example)</li>
+						</ul>
+						<li>XML is only syntax and has almost zero semantics</li>
+						<ul>
+							<li>very minimal built-in semantics (language identification, IDs, relative URIs)</li>
+							<li>semantics are entirely left to the XML vocabularies</li>
+						</ul>
+						<li>XML is built around a tree model</li>
+						<ul>
+							<li>each XML document is a tree and thus limited in structure</li>
+							<li>RESTful XML introduces hypermedia to turn XML data into a graph</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="json">
+					<title short="JSON">JavaScript Object Notation (JSON)</title>
+					<ul>
+						<li>The <code>XMLHttpRequest</code> API has been built for requesting XML via HTTP</li>
+						<ul>
+							<li>this is useful because XML is the most popular data format</li>
+							<li>all requested data has to be processed by using XML access methods in JavaScript</li>
+						</ul>
+						<li>JavaScript does not have XML as its internal data model</li>
+						<ul>
+							<li>the XML received via <code>XMLHttpRequest</code> has to be parsed into a DOM tree</li>
+							<li>DOM access in JavaScript is inconvenient for complex operations</li>
+							<li>alternatively, the XML can be mapped to JavaScript objects (also requires parsing)</li>
+						</ul>
+						<li><em>JavaScript Object Notation (JSON)</em> encodes data as JavaScript objects</li>
+						<ul>
+							<li>more efficient for the consumer if the consumer is written in JavaScript</li>
+							<li>this turns the generally usable XML service into a JavaScript-oriented service</li>
+							<li>for large-scale applications, it might make sense to provide XML and JSON</li>
+							<li>this can be negotiated with <em>HTTP content negotiation</em></li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>JSON Example</title>
+					<listing src="menu.xml"/>
+					<listing src="menu.json"/>
+				</slide>
+				<slide id="rdf">
+					<title short="RDF">Resource Description Framework (RDF)</title>
+					<ul>
+						<li>Developed around the same time as XML was developed</li>
+						<ul>
+							<li>based on the idea of machine-readable/understandable semantics</li>
+							<li>builds the <em>Semantic Web</em> as a parallel universe on top of the Web</li>
+						</ul>
+						<li>RDF uses URIs for <em>naming things</em></li>
+						<ul>
+							<li>RDF's data model is based on (URI, property, value) triples</li>
+							<li>triples are combined and inference is used to produce a graph</li>
+						</ul>
+						<li>RDF is a metalanguage built on the triple-based data model</li>
+						<ul>
+							<li>RDF has a number of syntaxes (one of them is <link href="xml">XML</link>-based)</li>
+							<li>RDF introduces a number of schema languages (often referred to as <em>ontology languages</em>)</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Atom</title>
+					<ul>
+						<li>A language for representing <em>syndication feeds</em></li>
+						<li>Much more modest in its goal than <link href="xml">XML</link> or <link href="rdf">RDF</link></li>
+						<ul>
+							<li>models feeds as a sets of entries with associated metadata</li>
+							<li>uses an XML vocabulary for representing the data model</li>
+							<li>uses <em>links</em> for expressing relationships in the data model</li>
+						</ul>
+						<li>Will be discussed in detail as <link href="atom">a good foundation for REST</link></li>
+					</ul>
+				</slide>
+			</part>
+			<part id="links">
+				<title>Linked Documents</title>
+				<slide>
+					<title>Making Resources Navigable</title>
+					<ul>
+						<li>Essential for using <link href="hypermedia-constraint"/></li>
+						<li>RPC-oriented systems need to expose the available functions</li>
+						<ul>
+							<li>functions are essential for interacting with a service</li>
+							<li>introspection or interface descriptions make functions discoverable</li>
+						</ul>
+						<li>RESTful systems use a <link href="interface-constraint"/></li>
+						<ul>
+							<li>no need to learn about functions</li>
+							<li>but how to find resources?</li>
+						</ul>
+						<ol>
+							<li>find them by following links from other resources</li>
+							<li>learn about them by using <link href="uri-templates"/></li>
+							<li>understand them by recognizing representations</li>
+						</ol>
+					</ul>
+				</slide>
+				<slide id="uri-templates">
+					<title>URI Templates</title>
+					<ul>
+						<li>REST does not care about URI details</li>
+						<li>Apart from the <uri>scheme</uri>, URIs should be semantically opaque</li>
+						<ul>
+							<li>media types should not guessed by URI (breaks content negotiation)</li>
+							<li>semantics should not be inferred from inspecting URIs</li>
+							<li>URIs should not be guessed based on previously encountered URIs</li>
+						</ul>
+						<li><q>URI hacking</q> on the Web works and can be useful</li>
+						<ul>
+							<li>Firefox <a href="http://dret.typepad.com/dretblog/2008/07/go-up.html">Go Up</a> allows easy navigation up one level</li>
+							<li>good URIs and bad UIs sometimes turn the address bar into a useful UI</li>
+						</ul>
+						<li>Technically speaking, URI templates are not required by REST</li>
+						<ul>
+							<li>practically speaking, URI templates are a useful best practice</li>
+							<li>all URI navigable resources should also be navigable using representations</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+		</part>
+		<part id="state">
+			<title>State</title>
+			<slide>
+				<title>State Management on the Web</title>
+				<ul>
+					<li>Essential for supporting <link href="stateless-constraint"/></li>
+					<li><link href="cookies"/> are a frequently used mechanism for managing state</li>
+					<ul>
+						<li>in many cases used for maintaining session state (login/logout)</li>
+						<li>more convenient than having to embed the state in every representation</li>
+						<li>some Web frameworks switch automatically between cookies and URI rewriting</li>
+					</ul>
+					<li>Cookies have two interesting client-side side-effects</li>
+					<ul>
+						<li>they are stored persistently independent from any representation</li>
+						<li>they are <q>shared state</q> within the context of one browser</li>
+					</ul>
+					<li>Session ID cookies require expensive server-side tracking</li>
+					<ul>
+						<li>not associated with any resource and thus potentially global</li>
+						<li>load-balancing must be cookie-sensitive or cookies must be global</li>
+					</ul>
+					<li><em>Resource-based state</em> allows RESTful service extensions</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>State in HTML or HTTP</title>
+				<img style="width : 90% ; margin : 2% ; " src="web-app-client-state.png" title="State in HTML or HTTP"/>
+			</slide>
+			<slide>
+				<title>State in the Server Application</title>
+				<img style="width : 90% ; margin : 2% ; " src="web-app-server-state.png" title="State in the Server Application"/>
+			</slide>
+			<slide>
+				<title>State as a Resource</title>
+				<img style="width : 90% ; margin : 2% ; " src="web-app-resource-state.png" title="State as a Resource"/>
+			</slide>
+			<slide>
+				<title>Stateless Shopping</title>
+				<ul>
+					<li>Typical <q>session scenarios</q> can be <a href="http://www.peej.co.uk/articles/no-sessions.html">mapped to resources</a></li>
+					<ul>
+						<li>Client: Show me your products</li>
+						<li>Server: Here's a list of all the products</li>
+						<li>Client: I'd like to buy 1 of http://ex.org/product/X, I am "John"/"Password"</li>
+						<li>Server: I've added 1 of http://ex.org/product/X to http://ex.org/users/john/basket</li>
+						<li>Client: I'd like to buy 1 of http://ex.org/product/Y, I am "John"/"Password"</li>
+						<li>Server: I've added 1 of http://ex.org/product/Y to http://ex.org/users/john/basket</li>
+						<li>Client: I don't want http://ex.org/product/X, remove it, I am "John"/"Password"</li>
+						<li>Server: I've removed http://ex.org/product/X to http://ex.org/users/john/basket</li>
+						<li>Client: Okay I'm done, username/password is "John"/"Password"</li>
+						<li>Server: Here is the total cost of the items in http://ex.org/users/john/basket</li>
+					</ul>
+					<li>This is more than just renaming <q>session</q> to <q>resource</q></li>
+					<ul>
+						<li>all relevant data is stored persistently on the server</li>
+						<li>the shopping cart's URI can be used by other services for working with its contents</li>
+						<li>instead of <em>hiding the cart in the session</em>, it is <em>exposed as a resource</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Reusing Resources</title>
+				<img style="width : 90% ; margin : 2% ; " src="web-app-reusing-resource.png" title="Reusing Resources"/>
+			</slide>
+		</part>
+		<slide>
+			<title>Conclusions</title>
+			<ul>
+				<li>REST is simple to learn and use</li>
+				<li>Unlearning RPC in most cases is the hardest part</li>
+				<ul>
+					<li>OO is all about identifying classes and methods</li>
+					<li>distributed systems very often are built around RPC models</li>
+					<li>many classical IT architectures are RPC-centric by design</li>
+				</ul>
+				<li>REST and RPC do not mix</li>
+				<ul>
+					<li>resource orientation ↔ function orientation</li>
+					<li>cooperation ↔ integration</li>
+					<li>openly distributed ↔ hiding distribution</li>
+					<li>coarse-grained ↔ fine-grained</li>
+					<li>complexity in resources formats ↔ complexity in function set</li>
+				</ul>
+			</ul>
+		</slide>
+	</presentation>
+	<presentation id="atom">
+		<title short="Atom">Atom Syndication Format</title>
+		<date>2013-11-18</date>
+		<toc class="resources"><a href="http://tools.ietf.org/html/rfc4287" title="Atom RFC">Atom&#160;Spec</a>&#160;· <a href="http://tools.ietf.org/html/rfc5032" title="Atom Publishing Protocol (AtomPub) RFC">AtomPub&#160;Spec</a>&#160;· <a href="http://validator.w3.org/feed/" title="W3C RSS/Atom Feed Validator">Feed&#160;Validator</a></toc>
+		<toc class="abstract">REST's level of abstraction and its simplicity as a small set of constraints can make it hard to get a grasp on how it can be applied for real-world projects. This presentations introduces <em>real-world REST</em> by looking at how REST can be used by reusing existing RESTful designs in terms of representations and interaction protocols; <em>Atom</em> and the <em>Atom Publishing Protocol (AtomPub)</em> are used as examples for existing RESTful designs. In addition, we take a brief look at how to go beyond using these <q>canned REST</q> approaches, and how existing programming framework provide support for designing and implementing RESTful services.</toc>
+		<slide>
+			<title>Abstract</title>
+            <p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<slide id="snowflake">
+			<title>Precious Snowflakes</title>
+			<img src="snowflakes.jpg" href="http://atompub.org/" style="float : right ; width : 25% ; margin : 0.5em 1em 1em 1em ; "/>
+			<ul>
+				<li>Many applications are not as unique as you might think</li>
+				<ul>
+					<li>reusing design patterns and even technologies is a good idea</li>
+					<li>avoiding reuse usually should be justified by good reasons</li>
+				</ul>
+				<li>Take the Web's HTML as an inspiring example</li>
+				<ul>
+					<li>HTML is not all that great as a document format</li>
+					<li>it was good enough as a container for a lot of useful content</li>
+					<li>the <em>network effect</em> far outweighs its <em>functional shortcomings</em></li>
+					<li>could you imagine a Web based on PDF or Word?</li>
+				</ul>
+				<li>Simplicity and wide applicability are valuable</li>
+				<ul>
+					<li><em>simplicity</em> means a lower barrier to entry</li>
+					<li><em>wide applicability</em> means higher chances to create network effects</li>
+				</ul>
+			</ul>
+		</slide>
+		<slide>
+			<title>RESTful <q>Hello World</q></title>
+			<ul>
+				<li>Internet connectivity establishes HTTP URI addressibility</li>
+				<ul>
+					<li>host must be reachable and identifyable (DNS name or at least IP address)</li>
+				</ul>
+				<li>HTTP server provides the uniform interface (<http>GET</http> only)</li>
+				<ul>
+					<li>by default listens to incoming HTTP requests on port 80</li>
+					<li>in simple scenarios often is configured to (also) serve static files</li>
+				</ul>
+				<li>XML and <code>application/xml</code> provide a machine-readable representation</li>
+				<listing src="hello-world.xml"/>
+				<li>Dropping the XML into the file system creates a RESTful <q>Hello World</q> service</li>
+				<ul>
+					<li><code href="./src/hello-world.xml">hello-world.xml</code></li>
+				</ul>
+				<li>Accessible via any HTTP- and XML-capable client</li>
+			</ul>
+		</slide>
+		<slide>
+			<title>Feeds!</title>
+			<img src="feedbot.jpg" style="float : right ; width : 25% ; margin : 0.5em 1em 1em 1em ; " href="http://www.flickr.com/photos/comingupforair/432964499/"/>
+			<ul>
+				<li>Information dissemination is a complex and varied problem</li>
+				<li>Feeds look at all these problems with a simple approach</li>
+				<ul>
+					<li>the simple approach lacks some sophistication/specialization</li>
+					<li>less specialization means wider applicability</li>
+					<li>wider applicability means bigger network effects</li>
+					<li>pull-based syndication is loosely coupled and scalable</li>
+				</ul>
+				<li>Some claim that pull publishing is bad and <em>Publish/Subscribe (PubSub)</em> is good</li>
+				<ul>
+					<li>there is little proof that this is more than just a claim</li>
+					<li>scalable PubSub is expensive to implement (but still may make sense)</li>
+					<li><em href="http://code.google.com/p/pubsubhubbub/">PubSubHubbub (PuSH)</em> implements feed-based PubSub</li>
+				</ul>
+			</ul>
+		</slide>
+		<slide>
+			<title>Syndication</title>
+			<ul>
+				<li>Atom is a format and also <a href="http://dret.typepad.com/dretblog/atom-landscape.html">an evolving landscape</a></li>
+				<ul>
+					<li><link href="atom"/>, the feed format (<a href="http://tools.ietf.org/html/rfc4287">RFC 4287</a>)</li>
+					<li><link href="atompub"/>, write access to Atom-oriented collections (<a href="http://tools.ietf.org/html/rfc5023">RFC 5023</a>)</li>
+					<li>support for threaded discussions in feeds (<a href="http://tools.ietf.org/html/rfc4685">RFC 4685</a>)</li>
+					<li>feed licensing (<a href="http://tools.ietf.org/html/rfc4946">RFC 4946</a>)</li>
+					<li>feed paging and archiving (<a href="http://tools.ietf.org/html/rfc5005">RFC 5005</a>)</li>
+					<li><a href="http://dret.typepad.com/dretblog/atom-landscape.html">many other ongoing developments</a></li>
+				</ul>
+				<li>A landscape of RESTful interactions with <q>collections of resources</q></li>
+			</ul>
+		</slide>
+		<part id="atom-format">
+			<title>Atom</title>
+			<slide>
+				<title>Atom History</title>
+				<img src="atom-logo.png" href="http://atompub.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+				<ul>
+					<li>RSS's shortcomings were very apparent and could not be fixed</li>
+					<li>In mid-2003, discussions started about an improved format</li>
+					<li>It also became apparent that the format should have a protocol</li>
+					<li>Atom 0.3 was released in December 2003 but had no formal home</li>
+					<li>IETF was chosen as the new home with a working group in June 2004</li>
+					<li><a href="http://tools.ietf.org/html/rfc4287">RFC 4287</a> was published in December 2005</li>
+					<li><link href="atompub">AtomPub</link> has been published as <a href="http://tools.ietf.org/html/rfc5032">RFC 5032</a> in October 2007</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Atom vs. RSS</title>
+				<ul>
+					<li>Standardized by the IETF (well-defined process)</li>
+					<li>Classification of entries (user-defined categories)</li>
+					<li>More XML-like markup design (more nesting)</li>
+					<li>Namespaces are used and supported as standard mechanism</li>
+					<li>Atom feeds <em>must</em> be well-formed XML (there even <a href="http://atompub.org/2005/08/17/atom.rnc" title="Atom RELAX NG Schema">is a schema</a>)</li>
+					<li>Interpretation of content is well-defined (various content types)</li>
+					<li>Support for <xml>xml:lang</xml> and <xml>xml:base</xml></li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Atom Example</title>
+				<listing src="atom.xml"/>
+			</slide>
+			<slide>
+				<title>Atom Content</title>
+				<ul>
+					<li>RSS had no safe way of finding out what an entry's content is</li>
+					<ul>
+						<li>this led to different implementations being <q>smart</q> about what the RSS author really wanted</li>
+						<li>one of Atom's main goals was to improve this in a well-defined way</li>
+						<li>Atom allows escaped markup (the only way to include non-XML HTML in an XML format)</li>
+					</ul>
+					<li>Each <elem>content</elem> element should have a <atom>type</atom> (the default is <atom>text</atom>)</li>
+					<li>Atom's content interpretation algorithm (use first applicable rule):</li>
+					<ol>
+						<li>if <atom>type</atom> is <atom>text</atom>, no child elements are allowed (plain text content)</li>
+						<li>if <atom>type</atom> is <atom>html</atom> then RSS's method of escaped markup is used</li>
+						<li>if <atom>type</atom> is <atom>xhtml</atom> then there must be an <elem>div</elem> containing XHTML markup</li>
+						<li>if <atom>type</atom> is an XML media type then the content should be treated as this type</li>
+						<li>if <atom>type</atom> starts with <atom>text/</atom> then no child elements are allowed</li>
+						<li>for all other values, the content must be an base64-encoded entity of the specified MIME type</li>
+					</ol>
+				</ul>
+			</slide>
+			<slide>
+				<title>Atom Content Examples</title>
+				<pre href="http://www.xml.com/lpt/a/1633"><![CDATA[<content type="xhtml">
+  <div xmlns="http://www.w3.org/1999/xhtml">
+    One <strong>bold</strong> foot forward
+  </div>
+</content>]]></pre>
+				<pre href="http://www.xml.com/lpt/a/1633"><![CDATA[<content>The "atom:content" element either contains or links to the content of the entry. The content of atom:content is Language-Sensitive.</content>]]></pre>
+				<pre href="http://www.xml.com/lpt/a/1633"><![CDATA[<content type="html">The &lt;code>atom:content&lt;/code> element either contains or links to the content of the entry. The content of &lt;code>atom:content&lt;/code> is &lt;a href="http://www.ietf.org/rfc/rfc3066.txt">Language-Sensitive&lt;/a>.</content>]]></pre>
+				<pre href="http://www.xml.com/lpt/a/1633"><![CDATA[<content type="image/png">
+iVBORw0KGgoA … TAAAAAElFTkSuQmCC
+</content>]]></pre>
+				<pre href="http://www.xml.com/lpt/a/1633"><![CDATA[<content src="image.png" type="image/png"/>]]></pre>
+			</slide>
+			<slide>
+				<title>Atom Categories</title>
+				<ul>
+					<li>Atom allows to assign categories to entries</li>
+					<ul>
+						<li>each <elem>category</elem> element must have a <atom>term</atom> attribute for the category</li>
+						<li>an optional <atom>scheme</atom> identifies the categorization scheme (ontology, taxonomy, …)</li>
+						<li>an optional <atom>label</atom> attribute provides a human-readable label for the category</li>
+					</ul>
+					<li><link href="atompub">AtomPub</link> defines a document format for <link href="atom-category-documents"/></li>
+					<li>Three different cases of categorization can be distinguished</li>
+					<ol>
+						<li>use a well-known scheme (such as <em>Dublin Core</em>)</li>
+						<li>use a private but well-designed scheme (which has a URI and can be reused reliably)</li>
+						<li>use tags without schemes, which then are little more than content labels</li>
+					</ol>
+				</ul>
+			</slide>
+		</part>
+		<part id="atompub">
+			<title short="AtomPub">Atom Publishing Protocol (AtomPub)</title>
+			<slide>
+				<title>RESTful Syndication</title>
+				<ul>
+					<li>Atom is a format for retrieving a set of entries as a feed document</li>
+					<ul>
+						<li>feeds often are time-based and are refreshed periodically or whenever needed</li>
+						<li>feeds can use any other strategy for deciding what to publish</li>
+					</ul>
+					<li>Read-only access to feeds should be complemented by full access</li>
+					<ul>
+						<li>full access needs the <q>CUD</q> out of the <q>CRUD</q> set of operations</li>
+						<li>many Web-centric technologies try to build on the Web's REST model of interaction</li>
+					</ul>
+					<li>AtomPub builds on Atom and adds a RESTful protocol on top of it</li>
+					<ul>
+						<li><http>POST</http> for creating new entries (sending the request to the collection)</li>
+						<li><http>PUT</http> for updating existing entries (overwriting the existing entry)</li>
+						<li><http>DELETE</http> for deleting entries from a collection</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Collections, Members, Entries, Media</title>
+				<ul>
+					<li>AtomPub's top-level concept is a <em>collection</em></li>
+					<ul>
+						<li>collections are used for managing and organizing <em>members</em></li>
+						<li>Atom feed documents are the representation of collections</li>
+						<li>collections just exist; there is no way of interacting with them</li>
+					</ul>
+					<li>Members of a collection can be <em>entry</em> and <em>media</em> resources</li>
+					<ul>
+						<li>entry resources represent metadata and are represented as Atom entries</li>
+						<li>media resources can have any media type and are the data described by entries</li>
+						<li>a <em>media link entry</em> is an entry associated with a member</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Atom/AtomPub Data Model</title>
+				<img src="atom-data-model.png" style="height : 75% ; margin : 2% ; " title="Atom/AtomPub Data Model"/>
+			</slide>
+			<slide>
+				<title>Protocol Summary</title>
+					<table border="1" cellpadding="20" style="width : 90% ; margin : 2% ; ">
+						<thead>
+							<tr valign="top">
+								<th>Resource</th>
+								<th>HTTP Method</th>
+								<th>Representation</th>
+								<th>Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr valign="top">
+								<td>Introspection</td>
+								<td>
+									<http>GET</http>
+								</td>
+								<td><link href="atom-service-documents">Atom Service Document</link></td>
+								<td>Enumerates a set of collections and lists their URIs and other information about the collections</td>
+							</tr>
+							<tr valign="top">
+								<td>Collection</td>
+								<td>
+									<http>GET</http>
+								</td>
+								<td>Atom Feed</td>
+								<td>A list of member of the collection (this may be a subset of all entries in the collection)</td>
+							</tr>
+							<tr valign="top">
+								<td>Collection</td>
+								<td>
+									<http>POST</http>
+								</td>
+								<td>Atom Entry</td>
+								<td>Create a new entry in the collection</td>
+							</tr>
+							<tr valign="top">
+								<td>Member</td>
+								<td>
+									<http>GET</http>
+								</td>
+								<td>Atom Entry</td>
+								<td>Get the Atom Entry</td>
+							</tr>
+							<tr valign="top">
+								<td>Member</td>
+								<td>
+									<http>PUT</http>
+								</td>
+								<td>Atom Entry</td>
+								<td>Update the Atom Entry</td>
+							</tr>
+							<tr valign="top">
+								<td>Member</td>
+								<td>
+									<http>DELETE</http>
+								</td>
+								<td>n/a</td>
+								<td>Delete the Atom Entry from the collection</td>
+							</tr>
+						</tbody>
+					</table>
+			</slide>
+			<slide id="collection-management">
+				<title>Collection Management</title>
+				<ul>
+					<li>Managing collections is outside the scope of AtomPub</li>
+					<ul>
+						<li>AtomPub allows interactions with existing collections</li>
+						<li>Collection management is inaccessible or using a proprietary protocol</li>
+					</ul>
+					<li><q>Metacollections</q> (collections of collections) can extend AtomPub</li>
+					<ul>
+						<li>each member in a metacollection corresponds with a collection</li>
+						<li>accessing a metacollection means managing collections</li>
+						<li>AtomPub's existing features can be reused for collection management</li>
+					</ul>
+					<li>Ongoing discussion in the Atom community</li>
+					<ul>
+						<li>currently there is no widely established method</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="atom-service-documents">
+				<title>Service Documents</title>
+				<blockquote>Service Documents represent server-defined groups of Collections, and are used to initialize the process of creating and editing resources.</blockquote>
+				<ul>
+					<li>The <q>real</q> top-level construct of AtomPub is the <em>workspace</em></li>
+					<ul>
+						<li>collections on a server are organized into different workspaces</li>
+						<li>workspaces have no AtomPub semantics and no operations can be performed on them</li>
+					</ul>
+					<li>Service documents list constraints on the members of collections</li>
+					<ul>
+						<li><atom>accept</atom> specifies a comma-separated list of media ranges (with <atom>entry</atom> as special value)</li>
+						<li><atom>categories</atom> defines the list of categories that can be applied to members (can be <atom>fixed</atom>)</li>
+						<li>AtomPub servers are likely to reject operations not satisfying these constraints</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Service Document Example</title>
+				<listing src="atom-service.xml"/>
+			</slide>
+			<slide id="atom-category-documents">
+				<title>Category Documents</title>
+				<ul>
+					<li>Categories are important for creating and reading entries</li>
+					<ul>
+						<li>they may contain metadata using any classification scheme</li>
+					</ul>
+					<li><link href="atom-service-documents"/> contain a list of allowed categories</li>
+					<li>AtomPub defines a document format for standalone category documents</li>
+					<ul>
+						<li>a useful interface between AtomPub systems and other systems using classification schemes</li>
+						<li>REST makes it important to make relevant resources accessible</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Category Document Example</title>
+				<listing src="atom-category.xml"/>
+			</slide>
+		</part>
+		<part>
+			<title>Extending Atom/AtomPub</title>
+			<slide>
+				<title>Atom/AtomPub as Foundation</title>
+				<ul>
+					<li>Atom/AtomPub can be used as a foundation</li>
+					<ul>
+						<li>apply the methodology of <link href="restful-ws-design"/></li>
+						<li>identify missing representations/links/states</li>
+						<li>add these to the Atom/AtomPub model</li>
+					</ul>
+					<li>Atom has a well-defined extension model (sort of)</li>
+					<ul>
+						<li><em>foreign markup</em> must be silently ignored by Atom processors</li>
+						<li><em>foreign markup</em> is not allowed to change the semantics of Atom markup</li>
+						<li>every Atom extension must be well-behaving with plain Atom processors</li>
+					</ul>
+					<li>Atom can serve as a good example for extensible markup</li>
+					<ul>
+						<li>if you're not using Atom, consider using <a href="http://tools.ietf.org/html/rfc4287#section-6">Atom's extension model</a></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="restful-ws-design">
+				<title>RESTful Web Service Design</title>
+				<ul>
+					<li>URIs are used for <link href="identification-constraint">resource identification</link></li>
+					<li>HTTP's methods are used as the <link href="interface-constraint">uniform interface</link></li>
+					<li><link href="self-describing-constraint">Representations</link> can use any syntax and structure</li>
+					<li><link href="hypermedia-constraint">Hypermedia</link> is based on links in representations</li>
+					<li>Use transaction resources to create <link href="stateless-constraint">stateless interactions</link></li>
+				</ul>
+			</slide>
+			<slide>
+				<title>RESTful Web Service Design Procedure</title>
+				<ol>
+					<li>Figure out the data set</li>
+					<li>Split the data set into resources</li>
+					<li><link href="identification-constraint">Name the resources with URIs</link></li>
+					<li>Expose a subset of the <link href="interface-constraint">uniform interface</link></li>
+					<li><link href="self-describing-constraint">Design the representation(s)</link> accepted from the client</li>
+					<li><link href="self-describing-constraint">Design the representation(s)</link> served to the client</li>
+					<li><link href="hypermedia-constraint">Design hypermedia integration</link> with other resources</li>
+					<li>Figure out <link href="stateless-constraint">the normal control flow</link></li>
+					<li>Figure out error conditions</li>
+				</ol>
+				<ul>
+					<li>(This is the ROA methodology)</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Watch Caching</title>
+				<ul>
+					<li>Decent HTTP libraries have built-in caching</li>
+					<ul>
+						<li>caching can also be implemented by proxies or reverse proxies</li>
+					</ul>
+					<li>HTTP has various ways to control caching</li>
+					<ul>
+						<li><http>Expires</http> set an expiration data on a response</li>
+						<li><http>Cache-Control</http> for various cache control directives</li>
+						<li><http>ETag</http> for uniquely identifying a resource version</li>
+					</ul>
+					<li>Caching allows <em>Conditional <http>GET</http>s</em></li>
+					<ul>
+						<li><http>If-Modified-Since</http> is conditional based on the <http>Last-Modified</http> date</li>
+						<li><http>If-None-Match</http> is conditional based on the <http>ETag</http> label</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>REST Tools</title>
+			<slide>
+				<title>Toolboxes and Frameworks</title>
+				<ul>
+					<li>Toolboxes contain a number of low-level tools</li>
+					<ul>
+						<li>tools for essential functionality (HTTP, URI, XML)</li>
+						<li>add-ons for frequent tasks (HTML tidying, XML validation, language tag parsing)</li>
+						<li>diagnostic and test tools (HTTP monitoring, protocol validators)</li>
+					</ul>
+					<li>Frameworks provide programming/structuring support</li>
+					<ul>
+						<li>frameworks encourage and support a certain coding style and structure</li>
+						<li>REST focuses on exposing uniform interfaces and various media types</li>
+						<li>code should be structured by representation, not by function</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>REST Frameworks</title>
+				<ul>
+					<li>JAX-RS</li>
+					<li>RESTlet (covers any REST, not just RESTful HTTP)</li>
+					<li>Ruby on Rails</li>
+					<li>Django</li>
+					<li>GData</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Poster</title>
+				<img style="height : 75% ; margin : 2% ; " src="poster.png" href="https://addons.mozilla.org/en-US/firefox/addon/2691"/>
 			</slide>
 		</part>
 	</presentation>

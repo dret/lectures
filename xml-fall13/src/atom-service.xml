@@ -1,0 +1,24 @@
+<service xmlns="http://purl.org/atom/app#" xmlns:atom="http://www.w3.org/2005/Atom">
+	<workspace>
+		<atom:title>Main Site</atom:title>
+		<collection href="http://example.org/reilly/main">
+			<atom:title>My Blog Entries</atom:title>
+			<categories href="http://example.com/cats/forMain.cats"/>
+		</collection>
+		<collection href="http://example.org/reilly/pic">
+			<atom:title>Pictures</atom:title>
+			<accept>image/*</accept>
+		</collection>
+	</workspace>
+	<workspace>
+		<atom:title>Side Bar Blog</atom:title>
+		<collection href="http://example.org/reilly/list">
+			<atom:title>Remaindered Links</atom:title>
+			<accept>entry</accept>
+			<categories fixed="yes">
+				<atom:category scheme="http://example.org/extra-cats/" term="joke"/>
+				<atom:category scheme="http://example.org/extra-cats/" term="serious"/>
+			</categories>
+		</collection>
+	</workspace>
+</service>

@@ -1,0 +1,5 @@
+<app:categories xmlns:app="http://purl.org/atom/app#" xmlns="http://www.w3.org/2005/Atom" fixed="yes" scheme="http://example.com/cats/big3">
+	<category term="animal"/>
+	<category term="vegetable"/>
+	<category term="mineral"/>
+</app:categories>

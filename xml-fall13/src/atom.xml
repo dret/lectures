@@ -1,0 +1,24 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us">
+	<title>ongoing</title>
+	<id>http://www.tbray.org/ongoing/</id>
+	<link rel='self' href="http://www.tbray.org/ongoing/ongoing.atom"/>
+	<updated>2007-04-11T12:55:09-07:00</updated>
+	<author>
+		<name>Tim Bray</name>
+	</author>
+	<subtitle>ongoing fragmented essay by Tim Bray</subtitle>
+	<entry xml:base="When/200x/2007/04/02/">
+		<title>Atom Publishing Protocol Interop!</title>
+		<id>http://www.tbray.org/ongoing/When/200x/2007/04/02/APP-Interop</id>
+		<published>2007-04-02T13:00:00-07:00</published>
+		<updated>2007-04-10T14:24:00-07:00</updated>
+		<category scheme="http://www.tbray.org/ongoing/What/" term="Technology/Atom"/>
+		<category scheme="http://www.tbray.org/ongoing/What/" term="Technology"/>
+		<category scheme="http://www.tbray.org/ongoing/What/" term="Atom"/>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<p>Mark your calendar: <a href="http://www.intertwingly.net/wiki/pie/April2007Interop">April 16-17 at Google</a>. <em>Everybody</em> is invited, provided they bring along an APP implementation, client or server. This was just announced a couple of days ago, and as I write this there are already <s>six</s> twelve client and <s>seven</s> fourteen server implementations signed up to be there and try to <a href="http://www.intertwingly.net/wiki/pie/InteropGrid">fill in the grid</a>. Let’s drop some names, in alphabetical order: AOL, Flock, Google, IBM, Lotus, Microsoft, Oracle, O’Reilly, Six Apart, Sun, WordPress. Um, have I mentioned that the APP is going to be huge?</p>
+			</div>
+		</content>
+	</entry>
+</feed>
