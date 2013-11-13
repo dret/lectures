@@ -4483,42 +4483,6 @@ Roy Thomas Fielding and Richard N. Taylor, 'Principled Design of the Modern Web 
 					<blockquote>[…] the URI syntax is a federated and extensible naming system wherein each scheme's specification may further restrict the syntax and semantics of identifiers using that scheme.</blockquote>
 					<p class="quotenote"><a href="http://tools.ietf.org/html/rfc3986"><q>Uniform Resource Identifier (URI): Generic Syntax</q>, RFC 3986, January 2005</a></p>
 				</slide>
-				<slide id="uri-query">
-					<title>Query Information</title>
-					<ul>
-						<li>Query components specify additional information</li>
-						<ul>
-							<li>it is non-hierarchical information further identifying the resource</li>
-							<li>in most cases, it can be regarded as <q>input</q> to the resource</li>
-						</ul>
-						<li>Query components often influence caching</li>
-						<ul>
-							<li>successful <http>GET</http>/<http>HEAD</http> requests may be cached</li>
-							<li>only cache query string URIs when explicitly requested (<http>Expires</http>/<http>Cache-Control</http>)</li>
-						</ul>
-					</ul>
-					<blockquote>The query component contains non-hierarchical data that, along with data in the path component […], serves to identify a resource within the scope of the URI's scheme and naming authority […].</blockquote>
-					<p class="quotenote"><a href="http://tools.ietf.org/html/rfc3986"><q>Uniform Resource Identifier (URI): Generic Syntax</q>, RFC 3986, January 2005</a></p>
-				</slide>
-				<slide>
-					<title>Processing URIs</title>
-					<ul>
-						<li>Processing URIs is not as trivial as it may seem</li>
-						<ul>
-							<li>escaping and normalization rules are non-trivial</li>
-							<li>many implementations are broken</li>
-							<li>complain about broken implementations</li>
-							<li>even more complicated when processing an <em>Internationalized Resource Identifier (IRI)</em></li>
-						</ul>
-						<li>URIs are not just strings</li>
-						<ul>
-							<li>URIs are strings with a considerable set of rules attached to them</li>
-							<li>implementing all these rules is non-trivial</li>
-							<li>implementing all these rules is crucial</li>
-							<li>application development environments provide functions for URI handling</li>
-						</ul>
-					</ul>
-				</slide>
 			</part>
 			<part id="http">
 				<title short="http">Hypertext Transfer Protocol (HTTP)</title>
@@ -4627,7 +4591,6 @@ Roy Thomas Fielding and Richard N. Taylor, 'Principled Design of the Modern Web 
 						<li>XML is a metalanguage (a language for representing languages)</li>
 						<ul>
 							<li>many domain-specific languages are defined as XML vocabularies</li>
-							<li>some metalanguages use XML syntax (<link href="rdf">RDF</link> is a popular example)</li>
 						</ul>
 						<li>XML is only syntax and has almost zero semantics</li>
 						<ul>
@@ -4669,31 +4632,11 @@ Roy Thomas Fielding and Richard N. Taylor, 'Principled Design of the Modern Web 
 					<listing src="menu.xml"/>
 					<listing src="menu.json"/>
 				</slide>
-				<slide id="rdf">
-					<title short="RDF">Resource Description Framework (RDF)</title>
-					<ul>
-						<li>Developed around the same time as XML was developed</li>
-						<ul>
-							<li>based on the idea of machine-readable/understandable semantics</li>
-							<li>builds the <em>Semantic Web</em> as a parallel universe on top of the Web</li>
-						</ul>
-						<li>RDF uses URIs for <em>naming things</em></li>
-						<ul>
-							<li>RDF's data model is based on (URI, property, value) triples</li>
-							<li>triples are combined and inference is used to produce a graph</li>
-						</ul>
-						<li>RDF is a metalanguage built on the triple-based data model</li>
-						<ul>
-							<li>RDF has a number of syntaxes (one of them is <link href="xml">XML</link>-based)</li>
-							<li>RDF introduces a number of schema languages (often referred to as <em>ontology languages</em>)</li>
-						</ul>
-					</ul>
-				</slide>
 				<slide>
 					<title>Atom</title>
 					<ul>
 						<li>A language for representing <em>syndication feeds</em></li>
-						<li>Much more modest in its goal than <link href="xml">XML</link> or <link href="rdf">RDF</link></li>
+						<li>Much more modest in its goal than <link href="xml">XML</link> or RDF</li>
 						<ul>
 							<li>models feeds as a sets of entries with associated metadata</li>
 							<li>uses an XML vocabulary for representing the data model</li>
