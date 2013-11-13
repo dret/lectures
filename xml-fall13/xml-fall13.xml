@@ -2119,7 +2119,7 @@
 		</part>
 	</presentation>
 	<presentation id="xsd-1">
-		<title short="XSD 1">XSD – Part I</title>
+		<title short="XSD 1">XML Schema (XSD) – Part I</title>
 		<date>2013-09-30</date>
 		<toc class="resources"><a href="http://www.w3.org/XML/Schema" title="W3C XML Schema Home">XML Schema</a></toc>
 		<toc class="abstract">The <em>XML Schema Definition Language (XSD)</em> is the most popular schema language for XML today. It has been introduced to overcome some of the commonly observed limitations of DTDs, most notably the lack of typing. <em>Simple Types</em> describe content which is not structured by XML markup, which means it describes attribute values and element content. Simple types can be defined by deriving new types from existing types by using type restriction.</toc>
@@ -2528,7 +2528,7 @@
 		</part>
 	</presentation>
 	<presentation id="xsd-2">
-		<title short="XSD 2">XSD – Part II</title>
+		<title short="XSD 2">XML Schema (XSD) – Part II</title>
 		<date>2013-10-02</date>
 		<toc class="resources"></toc>
 		<toc class="abstract">XSD <em>Complex Types</em> describe element content if this content is using attributes and/or element content other than only character data. Thus, complex types are used to define the allowed markup structures for a class of documents. Using XSD's type concepts, it is easier to represent model-level information in a schema, because type hierarchies can represent model-level specializations.</toc>
@@ -2834,7 +2834,7 @@
 		</part>
 	</presentation>
 	<presentation id="xsd-3">
-		<title short="XSD 3">XSD – Part III</title>
+		<title short="XSD 3">XML Schema (XSD) – Part III</title>
 		<date>2013-10-07</date>
 		<toc class="resources"><a href="http://www.awprofessional.com/articles/printerfriendly.asp?p=31477&amp;rl=1">XSD Identity Constraints</a></toc>
 		<toc class="abstract">XSD allows greater flexibility in defining constraints on intra-document references than the ID/IDREF construct of DTDs. XSD's <em>Identity Constraints</em> are scoped, typed, and can be used for elements or attributes. They are more powerful that the DTD's limited ID/IDREF mechanism, but still lack sufficient generality to support a really wide set of model constraints to be expressed. XSD complex types can be derived by <em>restriction</em> or <em>extension</em>. Complex type restriction defines the restricted type to be a more restricted version of the base type. Complex type extension make it possible to extend the base type by either adding attributes or contents (only by appending new content to the content model). Complex type derivation allows XSD to express type hierarchies of complex types, which can be aligned with more or less specialized code for processing instances of these types.</toc>
@@ -4293,10 +4293,9 @@ loop param counter ; {
 		</part>
 	</presentation>
 	<presentation id="rest">
-		<title short="REST">Representational State Transfer</title>
+		<title short="REST">Representational State Transfer (REST)</title>
 		<date>2013-11-13</date>
-		<toc class="resources"><a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm" title="Roy Thomas Fielding, 'Architectural Styles and the Design of Network-based Software Architectures', Ph.D. Thesis, University of California, Irvine, Irvine, California, 2000">Fielding&#160;Dissertation</a>&#160;· <a href="http://portal.acm.org/citation.cfm?doid=337180.337228" title=" 	
-Roy Thomas Fielding and Richard N. Taylor, 'Principled Design of the Modern Web Architecture', ACM Transactions on Internet Technology, 2(2):115-150, May 2002">ACM&#160;Transactions</a></toc>
+		<toc class="resources"><a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm" title="Roy Thomas Fielding, 'Architectural Styles and the Design of Network-based Software Architectures', Ph.D. Thesis, University of California, Irvine, Irvine, California, 2000">Fielding&#160;Dissertation</a>&#160;· <a href="http://portal.acm.org/citation.cfm?doid=337180.337228" title="Roy Thomas Fielding and Richard N. Taylor, 'Principled Design of the Modern Web Architecture', ACM Transactions on Internet Technology, 2(2):115-150, May 2002">REST&#160;Paper</a></toc>
 		<toc class="abstract"><em>Representational State Transfer (REST)</em> is defined as an <em>architectural style</em>, which means that it is not a concrete systems architecture, but instead a set of constraints that are applied when designing a systems architecture. We briefly discuss these constraints, but then focus on explaining how the Web is one such systems architecture that implements REST. In particular, the mechanisms of the <em>Uniform Resource Identifiers (URIs)</em>, the <em>Hypertext Transfer Protocol (HTTP)</em>, media types, and markup languages such as the <em>Hypertext Markup Language (HTML)</em> and the <em>Extensible Markup Language (XML)</em>. We also introduce <em>Atom</em> and the <em>Atom Publishing Protocol (AtomPub)</em> as two established ways on how RESTful services are already provided and used on today's Web.</toc>
 		<slide>
 			<title>Abstract</title>
