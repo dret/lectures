@@ -1022,7 +1022,7 @@
 						<li>when receiving trees, access to the tree should be easy (DOM)</li>
 						<li>validating trees should be easy (<link href="xsd-1">XSD</link>)</li>
 						<li>mapping trees should be easy (<link href="xslt-1">XSLT</link>)</li>
-						<li>querying tree collections should be easy (<link href="xquery">XQuery</link>)</li>
+						<li>querying tree collections should be easy (<link href="xquery-1">XQuery</link>)</li>
 						<li>XPath is what regular expressions for text-based information</li>
 					</ul>
 				</ul>
@@ -1476,7 +1476,7 @@
 						<li>when receiving trees, access to the tree should be easy (DOM)</li>
 						<li>validating trees should be easy (<link href="xsd-1">XSD</link>)</li>
 						<li>mapping trees should be easy (<link href="xslt-1">XSLT</link>)</li>
-						<li>querying tree collections should be easy (<link href="xquery">XQuery</link>)</li>
+						<li>querying tree collections should be easy (<link href="xquery-1">XQuery</link>)</li>
 						<li>XPath is what regular expressions for text-based information</li>
 					</ul>
 				</ul>
@@ -1793,7 +1793,7 @@
 			<slide>
 				<title>XQuery</title>
 				<ul>
-					<li><link href="xquery">XQuery</link> is built on top of XPath 2.0</li>
+					<li><link href="xquery-1">XQuery</link> is built on top of XPath 2.0</li>
 					<ul>
 						<li>XPath allows constructing sequences based on documents</li>
 						<li>XPath has no way of generating new document structures</li>
@@ -5157,6 +5157,355 @@ iVBORw0KGgoA … TAAAAAElFTkSuQmCC
 					<li>Reuse existing patterns instead of reinventing the wheel</li>
 					<li>Atom/AtomPub at least are useful design patterns</li>
 					<li>(So far) there is no "JSON/RDF Atom" (but watch <a href="http://amundsen.com/media-types/collection/">Collection+JSON</a> and <a href="http://www.w3.org/2012/ldp/" title="Linked Data Platform">LDP</a>)</li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="xquery-1">
+		<title short="XQuery">XML Query (XQuery)</title>
+		<date>2013-11-20</date>
+		<toc class="resources"><a href="http://www.w3.org/TR/xquery" title="W3C XQuery Specification">XQuery Spec</a>&#160;· <a href="http://www.ibm.com/developerworks/xml/library/x-wxxm34.html" title="IBM developerWorks">XQuery/XSLT Comparison</a></toc>
+		<toc class="abstract">The <em>XML Query (XQuery)</em> language has been designed to query collections of XML documents. It is thus different from XSLT, which primarily transforms one document at a time. However, the core of both languages is XPath 2.0, which means that learning XQuery (and XSLT 2.0) is not very hard when starting with a solid knowledge of XPath 2.0. XQuery's main concept is an expression language which supports iteration and binding of variables to intermediate results. XQuery has been built on top of XPath 2.0, which means it uses the same foundation as XSLT 2.0. Both languages have a large overlap, and according to personal preferences and the XML task, one language may be preferred over the other. Features such as <em>user-defined functions</em> and <em>schema-awareness</em> bring XQuery even closer to XSLT 2.0, making the decision to choose one over the other mostly a question of personal preference.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part>
+			<title>XQuery in the XML Landscape</title>
+			<slide>
+				<title>XSLT using XPath</title>
+				<img style="width : 86% ; margin : 4% ; " src="xslt-overview.png" title="XSLT Processing"/>
+			</slide>
+			<slide>
+				<title>XQuery using XPath</title>
+				<img style="width : 86% ; margin : 4% ; " src="xquery-overview-filesystem.png" title="File-based XQuery Processing"/>
+			</slide>
+			<slide>
+				<title>XQuery using XPath + Database</title>
+				<img style="width : 86% ; margin : 4% ; " src="xquery-overview-dbms.png" title="DB-based XQuery Processing"/>
+			</slide>
+		</part>
+		<part id="xquery-expressions">
+			<title>XQuery Expressions</title>
+			<part>
+				<title>Syntax Matters</title>
+				<slide>
+					<title>XML Syntax</title>
+					<ul>
+						<li>XML syntax is good (and bad …)</li>
+						<ul>
+							<li>XML is well-known and supported by many tools</li>
+							<li>XML is verbose and hard to parse for humans</li>
+						</ul>
+						<li>XSLT's XML syntax is good (and bad …)</li>
+						<ul>
+							<li>it is easy to use for experienced XML users</li>
+							<li>and a nightmare to get used to for XML beginners</li>
+							<li>it can be easily fed to itself for advanced applications (meta-stylesheets)</li>
+							<li>which only advanced XSLT programmers will ever do</li>
+						</ul>
+						<li>Even XSLT is not completely XMLized</li>
+						<ul>
+							<li>XSLT language constructs are XML elements and attributes</li>
+							<li>XPath expressions use their own non-XML syntax (hard to process in XSLT )</li>
+							<li>XSLT is a compromise between XML and non-XML</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>XQuery Syntax</title>
+					<ul>
+						<li>XQuery should become the new query language for data</li>
+						<ul>
+							<li>some say for any data (because relational data can be represented as XML anyway)</li>
+							<li>others say for XML data only</li>
+							<li>either way, XQuery will become an important language</li>
+						</ul>
+						<li>XML syntax has been perceived as something people don't like</li>
+						<ul>
+							<li>there is no hard evidence that XML syntax really is an acceptance problem</li>
+							<li>but many people think this might be the case for a query language</li>
+							<li>non-XML syntaxes can be more compact than XML syntaxes</li>
+						</ul>
+						<li>Query language specialists are used to SQL's keyword-based syntax</li>
+						<ul>
+							<li>XQuery imitates this approach to make it easier to switch</li>
+							<li>XML shows up anyway because XQuery constructs XML</li>
+							<li>you can't really escape XML when you are working with XML …</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>XQuery Syntax Example</title>
+					<listing src="book-example.xq"/>
+				</slide>
+				<slide>
+					<title>XQueryX Syntax Example</title>
+					<listing src="book-example.xqx" line="8-34"/>
+				</slide>
+			</part>
+			<part id="xquery-flwor">
+				<title short="FLWOR">For Let Where Order Return (FLWOR)</title>
+				<slide>
+					<title>XPath and XQuery</title>
+					<ul>
+						<li>Every XPath expression is a valid XQuery expression</li>
+						<ul>
+							<li>if you are good at XPath, you can reuse a lot of your knowledge</li>
+							<li>XQuery provides alternative expressions and missing functionality</li>
+						</ul>
+						<li>XPath is a language for selecting nodes in existing documents</li>
+						<ul>
+							<li>XPath has no language features to construct new XML trees</li>
+							<li>re-ordering a tree (i.e., sorting) also involves constructing a new tree</li>
+						</ul>
+						<li>XPath is more relevant for XSLT/XQuery experts</li>
+						<ul>
+							<li>advanced XPath concepts will take you very far</li>
+						</ul>
+						<li>XQuery expressions can be used to simplify XPaths</li>
+						<ul>
+							<li>in the same way as in XSLT, there is a trade-off in complexity between the languages</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>XPath <q>vs.</q> XQuery</title>
+					<ul>
+						<li>Choosing a certain style can be a question of taste</li>
+					</ul>
+					<pre>//reference[starts-with(date/@value, '2000')]/title</pre>
+					<listing src="for-where-return.xq" line="3-5"/>
+				</slide>
+				<slide>
+					<title>XQuery's Central Construct</title>
+					<ul>
+						<li>FLWOR is pronounced <q>flower</q> (it went through several syntax iterations)</li>
+						<ul>
+							<li>must have at least one <xq>for</xq> or <xq>let</xq></li>
+							<li>may have <xq>where</xq> and <xq>order by</xq></li>
+							<li>must have <xq>return</xq></li>
+						</ul>
+						<li>Iteration over a sequence of items</li>
+						<ul>
+							<li>similar to <xslte>for-each</xslte> or similar loop constructs</li>
+							<li><xq>where</xq> is comparable to XPath predicates</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="xquery-for">
+					<title>FLWOR – For</title>
+					<ul>
+						<li>Iteration over an input sequence</li>
+						<ul>
+							<li>for each item in the input sequence, a result is calculated</li>
+							<li>the result of the <xq>for</xq> clause is the concatenation of all these results</li>
+						</ul>
+						<li>If there is only a <xq>return</xq>, it is the same as XPath's <link href="xpath20-iterations"/></li>
+					</ul>
+					<pre>for $i in (1 to 10) return $i * $i</pre>
+					<listing src="for-return.xq"/>
+				</slide>
+				<slide id="xquery-let">
+					<title>FLWOR – Let</title>
+					<ul>
+						<li>Declares a variable and assigns a value to it</li>
+						<ul>
+							<li>may use previously assigned variables</li>
+							<li>can be used any number of times mixed in any order with <xq>for</xq> clauses</li>
+						</ul>
+					</ul>
+					<listing src="let-return.xq"/>
+					<listing src="for-let-return.xq"/>
+				</slide>
+				<slide>
+					<title>For &amp; Let</title>
+					<ul>
+						<li>Variables in most cases are used for convenience</li>
+						<ul>
+							<li>they avoid repeating things and often result in a more structured query expression</li>
+							<li>writing XQueries should not be an exercise in minimizing the character count</li>
+						</ul>
+						<li>For single items, <xq>for</xq> and <xq>let</xq> can be interchanged (handy for XPath)</li>
+					</ul>
+					<pre>let $x := 'whatever' return …</pre>
+					<pre>for $x in 'whatever' return …</pre>
+				</slide>
+				<slide id="xquery-where">
+					<title>FLWOR – Where</title>
+					<ul>
+						<li>Filtering the items from <xq>for</xq> and <xq>let</xq> clauses</li>
+						<ul>
+							<li>there may be at most one <xq>where</xq> clause in a FLWOR expression</li>
+							<li>it has to appear after all <xq>for</xq> and <xq>let</xq> clauses</li>
+						</ul>
+						<li>A <xq>where</xq> clause almost always uses a variable</li>
+						<ul>
+							<li>they act as filters of the sequences generated by <xq>for</xq> clauses</li>
+							<li>they act based on the value of the items in that sequence</li>
+						</ul>
+					</ul>
+					<listing src="for-where-return.xq"/>
+					<ul>
+						<li>Predicates in XPath expressions do the exact same thing</li>
+						<ul>
+							<li>but predicates can only be applied to nodes</li>
+							<li>SQL users find the <xq>where</xq> approach easier to understand</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="xquery-order">
+					<title>FLWOR – Order by</title>
+					<ul>
+						<li>FLWOR results are evaluated in the order resulting from the <xq>for</xq> clauses</li>
+						<ul>
+							<li>for nested clauses, this means a nested evaluation of <xq>for</xq> clauses</li>
+							<li>this will often reflect the document order (depending on the <xq>for</xq> XPaths)</li>
+						</ul>
+						<li>Any order other than this has to be achieved by sorting</li>
+						<ul>
+							<li>multiple sort keys can be specified separated by commas</li>
+							<li>sorting can be done <xq>ascending</xq> or <xq>descending</xq></li>
+						</ul>
+					</ul>
+					<listing src="for-let-order-return.xq"/>
+				</slide>
+				<slide id="xquery-return">
+					<title>FLWOR – Return</title>
+					<ul>
+						<li>Required in every FLWOR expression</li>
+						<li>Constructs new nodes and fills them with values</li>
+						<ul>
+							<li>element constructors can be used to generate elements</li>
+							<li>attribute constructors can be used to generate attributes</li>
+						</ul>
+					</ul>
+					<listing src="for-let-order-return-attributes.xq"/>
+				</slide>
+			</part>
+		</part>
+		<part>
+			<title>XQuery &amp; XSLT</title>
+			<slide>
+				<title>XPath 2.0 vs. XSLT 2.0</title>
+				<ul>
+					<li><link href="xpath20">XPath 2.0</link> is powerful but incomplete</li>
+					<ul>
+						<li>cannot create nodes (only selection of existing nodes)</li>
+						<li>does not support user-defined functions</li>
+						<li>no support for grouping</li>
+						<li>no support for sorting</li>
+					</ul>
+					<li><link href="xslt20-1">XSLT 2.0</link> extends XPath 2.0 with additional features</li>
+					<li>XSLT 2.0 adds more features which were missing in <link href="xslt-1">XSLT 1.0</link></li>
+					<ul>
+						<li><link href="xslt20-analyze-string"><xslte>analyze-string</xslte></link> for processing strings</li>
+						<li><xpath>format-date()</xpath> and <xpath>format-number()</xpath> for formatted values</li>
+						<li><link href="xslt20-grouping"><xslte>for-each-group</xslte></link> for easy grouping and access to group information</li>
+					</ul>
+					<li>XSLT's <em>functional programming model</em> has nothing to do with XPath</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Turing Completeness</title>
+				<ul>
+					<li><link href="xslt20-1">XSLT 2.0</link> and XQuery are both <a href="http://en.wikipedia.org/wiki/Turing-complete">Turing complete</a></li>
+					<ul>
+						<li>any algorithm computing output from input can be implemented</li>
+						<li>Turing completeness says nothing about how <em>appropriate</em> a language is for a task</li>
+					</ul>
+					<li>Choosing between XSLT 2.0 and XQuery is a matter of taste and politics</li>
+					<ul>
+						<li>the <em>functional style</em> of XSLT is hard to get used to</li>
+						<li>most people feel more comfortable with the more traditional design of XQuery</li>
+						<li>providing and using one of the languages is a long-term decision</li>
+					</ul>
+					<li>Choosing between XSLT 2.0 and XQuery also depends on the task</li>
+					<ul>
+						<li>simple extraction of XML content is mostly XPath 2.0 anyway</li>
+						<li>generating rigid schemas from XML sources works well in both languages</li>
+						<li>document processing (<link href="mixed-content"/>) is better done with XSLT 2.0</li>
+						<li>large scale data processing is better done with XQuery</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>XSLT Assumptions</title>
+				<ul>
+					<li>Transformations process the complete input</li>
+					<ul>
+						<li>the <link href="xslt-processing-model"/> works well for processing most nodes</li>
+						<li><em>Built-In Templates</em> can be used for applying default transformations</li>
+					</ul>
+					<li>XSLT users are highly skilled in XML</li>
+					<ul>
+						<li>XSLT's XML syntax is hard to learn and use for non-XML experts</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>XQuery Assumptions</title>
+				<ul>
+					<li>Queries only extract selected part of the input</li>
+					<ul>
+						<li>there is no default behavior</li>
+						<li>understanding the control flow in XQuery is much easier than in XSLT</li>
+					</ul>
+					<li>XQuery authors are not necessarily XML experts</li>
+					<ul>
+						<li>input and output in many cases will be XML</li>
+						<li>the language syntax should be as human-oriented as possible</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>XSLT BlogXML Processor</title>
+				<listing src="blog2html.xsl"/>
+			</slide>
+			<slide>
+				<title>XQuery BlogXML Processor</title>
+				<listing src="blog2html.xq" line="3-18"/>
+			</slide>
+			<slide>
+				<title>2-Step vs. 1-Step</title>
+				<ul>
+					<li>Web applications often are built as <em>multi-tier applications</em></li>
+					<li>REST services provide the interface to the data</li>
+					<ul>
+						<li>they provide access to resources which are managed by the service</li>
+						<li>in many cases the data representation is some XML format</li>
+					</ul>
+					<li>Interfaces than use that data in various ways</li>
+					<ul>
+						<li>UIs may present it in HTML</li>
+						<li>APIs may present it in some API-specific way (e.g., import/export)</li>
+					</ul>
+					<li>XQuery is well-suited to retrieve data from an XDBMS</li>
+					<li>XSLT is well-suited to transform data to a specific presentation format</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Web App with XQuery &amp; XSLT</title>
+				<img style="width : 88% ; margin : 4% ; " src="web-app-tiers.png" title="Web Application Tiers with XQuery and XSLT"/>
+			</slide>
+		</part>
+		<part>
+			<title>Conclusions</title>
+			<slide>
+				<title>XQuery vs. XSLT</title>
+				<ul>
+					<li>XQuery is a complete programming language</li>
+					<li>XSLT can do everything XQuery can and vice versa</li>
+					<li>Choosing one over the other depends on task and taste</li>
+					<li>REST scenarios have good places for both languages</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Clearer Queries</title>
+				<ul>
+					<li>XPath is too condensed for many users</li>
+					<li>XQuery provides a less compact and easier accessible syntax</li>
+					<li>XQuery provides features which are not part of XPath</li>
 				</ul>
 			</slide>
 		</part>
