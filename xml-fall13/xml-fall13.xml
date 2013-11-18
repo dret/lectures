@@ -4812,27 +4812,6 @@ loop param counter ; {
 			</ul>
 		</slide>
 		<slide>
-			<title>RESTful <q>Hello World</q></title>
-			<ul>
-				<li>Internet connectivity establishes HTTP URI addressibility</li>
-				<ul>
-					<li>host must be reachable and identifyable (DNS name or at least IP address)</li>
-				</ul>
-				<li>HTTP server provides the uniform interface (<http>GET</http> only)</li>
-				<ul>
-					<li>by default listens to incoming HTTP requests on port 80</li>
-					<li>in simple scenarios often is configured to (also) serve static files</li>
-				</ul>
-				<li>XML and <code>application/xml</code> provide a machine-readable representation</li>
-				<listing src="hello-world.xml"/>
-				<li>Dropping the XML into the file system creates a RESTful <q>Hello World</q> service</li>
-				<ul>
-					<li><code href="./src/hello-world.xml">hello-world.xml</code></li>
-				</ul>
-				<li>Accessible via any HTTP- and XML-capable client</li>
-			</ul>
-		</slide>
-		<slide>
 			<title>Feeds!</title>
 			<img src="feedbot.jpg" style="float : right ; width : 25% ; margin : 0.5em 1em 1em 1em ; " href="http://www.flickr.com/photos/comingupforair/432964499/"/>
 			<ul>
@@ -5131,7 +5110,7 @@ iVBORw0KGgoA … TAAAAAElFTkSuQmCC
 						<li>identify missing representations/links/states</li>
 						<li>add these to the Atom/AtomPub model</li>
 					</ul>
-					<li>Atom has a well-defined extension model (sort of)</li>
+					<li>Atom has a well-defined extension model</li>
 					<ul>
 						<li><em>foreign markup</em> must be silently ignored by Atom processors</li>
 						<li><em>foreign markup</em> is not allowed to change the semantics of Atom markup</li>
@@ -5166,63 +5145,19 @@ iVBORw0KGgoA … TAAAAAElFTkSuQmCC
 					<li>Figure out <link href="stateless-constraint">the normal control flow</link></li>
 					<li>Figure out error conditions</li>
 				</ol>
-				<ul>
-					<li>(This is the ROA methodology)</li>
-				</ul>
-			</slide>
-			<slide>
-				<title>Watch Caching</title>
-				<ul>
-					<li>Decent HTTP libraries have built-in caching</li>
-					<ul>
-						<li>caching can also be implemented by proxies or reverse proxies</li>
-					</ul>
-					<li>HTTP has various ways to control caching</li>
-					<ul>
-						<li><http>Expires</http> set an expiration data on a response</li>
-						<li><http>Cache-Control</http> for various cache control directives</li>
-						<li><http>ETag</http> for uniquely identifying a resource version</li>
-					</ul>
-					<li>Caching allows <em>Conditional <http>GET</http>s</em></li>
-					<ul>
-						<li><http>If-Modified-Since</http> is conditional based on the <http>Last-Modified</http> date</li>
-						<li><http>If-None-Match</http> is conditional based on the <http>ETag</http> label</li>
-					</ul>
-				</ul>
 			</slide>
 		</part>
-		<part>
-			<title>REST Tools</title>
+		<part id="atom-conclusions">
+			<title>Conclusions</title>
 			<slide>
-				<title>Toolboxes and Frameworks</title>
+				<title>Simple Syndication</title>
 				<ul>
-					<li>Toolboxes contain a number of low-level tools</li>
-					<ul>
-						<li>tools for essential functionality (HTTP, URI, XML)</li>
-						<li>add-ons for frequent tasks (HTML tidying, XML validation, language tag parsing)</li>
-						<li>diagnostic and test tools (HTTP monitoring, protocol validators)</li>
-					</ul>
-					<li>Frameworks provide programming/structuring support</li>
-					<ul>
-						<li>frameworks encourage and support a certain coding style and structure</li>
-						<li>REST focuses on exposing uniform interfaces and various media types</li>
-						<li>code should be structured by representation, not by function</li>
-					</ul>
+					<li>RESTful services depend on representations</li>
+					<li>Some aspects of representations may be generic</li>
+					<li>Reuse existing patterns instead of reinventing the wheel</li>
+					<li>Atom/AtomPub at least are useful design patterns</li>
+					<li>(So far) there is no "JSON/RDF Atom" (but watch <a href="http://amundsen.com/media-types/collection/">Collection+JSON</a> and <a href="http://www.w3.org/2012/ldp/" title="Linked Data Platform">LDP</a>)</li>
 				</ul>
-			</slide>
-			<slide>
-				<title>REST Frameworks</title>
-				<ul>
-					<li>JAX-RS</li>
-					<li>RESTlet (covers any REST, not just RESTful HTTP)</li>
-					<li>Ruby on Rails</li>
-					<li>Django</li>
-					<li>GData</li>
-				</ul>
-			</slide>
-			<slide>
-				<title>Poster</title>
-				<img style="height : 75% ; margin : 2% ; " src="poster.png" href="https://addons.mozilla.org/en-US/firefox/addon/2691"/>
 			</slide>
 		</part>
 	</presentation>
