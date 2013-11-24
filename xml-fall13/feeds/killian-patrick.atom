@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us">
+	<title>Windows Development Book Catalog</title>
+	<author><name>Patrick Killian</name></author>
+	<id>http://pkillian.me/xml/</id>
+	<link rel="self" href="http://pkillian.me/xml/"/>
+	<updated>2013-11-22T12:00:00-08:00</updated>
+	<entry>
+		<id>http://pkillian.me/xml/book/bk101</id>
+		<title>XML Developer's Guide</title>
+		<updated>2000-10-01T00:00:00-08:00</updated>
+		<category term="Computer"/>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">$44.95 - An in-depth look at creating applications with XML.</div></content>
+	</entry>
+	<entry>
+		<id>http://pkillian.me/xml/book/bk102</id>
+		<title>Midnight Rain</title>
+		<updated>2000-12-16T00:00:00-08:00</updated>
+		<category term="Fantasy"/>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">$5.95 - A former architect battles corporate zombies, an evil sorceress, and her own childhood to become queen of the world.</div></content>
+	</entry>
+	<entry>
+		<id>http://pkillian.me/xml/book/bk103</id>
+		<title>Maeve Ascendant</title>
+		<updated>2000-11-17T00:00:00-08:00</updated>
+		<category term="Fantasy"/>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">$5.95 - After the collapse of a nanotechnology society in England, the young survivors lay the foundation for a new society.</div></content>
+	</entry>
+	<entry>
+		<id>http://pkillian.me/xml/book/bk104</id>
+		<title>Oberon's Legacy</title>
+		<updated>2001-03-10T00:00:00-08:00</updated>
+		<category term="Fantasy"/>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">$5.95 - In post-apocalypse England, the mysterious agent known only as Oberon helps to create a new life for the inhabitants of London. Sequel to Maeve Ascendant.</div></content>
+	</entry>
+	<entry>
+		<id>http://pkillian.me/xml/book/bk105</id>
+		<title>The Sundered Grail</title>
+		<updated>2001-09-10T00:00:00-08:00</updated>
+		<category term="Fantasy"/>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">$5.95 - The two daughters of Maeve, half-sisters, battle one another for control of England. Sequel to Oberon's Legacy.</div></content>
+	</entry>
+	<entry>
+		<id>http://pkillian.me/xml/book/bk106</id>
+		<title>Lover Birds</title>
+		<updated>2000-09-02T00:00:00-08:00</updated>
+		<category term="Romance"/>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">$4.95 - When Carla meets Paul at an ornithology conference, tempers fly as feathers get ruffled.</div></content>
+	</entry>
+	<entry>
+		<id>http://pkillian.me/xml/book/bk107</id>
+		<title>Splish Splash</title>
+		<updated>2000-11-02T00:00:00-08:00</updated>
+		<category term="Romance"/>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">$4.95 - A deep sea diver finds true love twenty thousand leagues beneath the sea.</div></content>
+	</entry>
+	<entry>
+		<id>http://pkillian.me/xml/book/bk108</id>
+		<title>Creepy Crawlies</title>
+		<updated>2000-12-06T00:00:00-08:00</updated>
+		<category term="Horror"/>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">$4.95 - An anthology of horror stories about roaches, centipedes, scorpions  and other insects.</div></content>
+	</entry>
+	<entry>
+		<id>http://pkillian.me/xml/book/bk109</id>
+		<title>Paradox Lost</title>
+		<updated>2000-11-02T00:00:00-08:00</updated>
+		<category term="Science Fiction"/>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">$6.95 - After an inadvertant trip through a Heisenberg Uncertainty Device, James Salway discovers the problems of being quantum.</div></content>
+	</entry>
+	<entry>
+		<id>http://pkillian.me/xml/book/bk110</id>
+		<title>Microsoft .NET: The Programming Bible</title>
+		<updated>2000-12-09T00:00:00-08:00</updated>
+		<category term="Computer"/>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">$36.95 - Microsoft's .NET initiative is explored in detail in this deep programmer's reference.</div></content>
+	</entry>
+	<entry>
+		<id>http://pkillian.me/xml/book/bk111</id>
+		<title>MSXML3: A Comprehensive Guide</title>
+		<updated>2000-12-01T00:00:00-08:00</updated>
+		<category term="Computer"/>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">$36.95 - The Microsoft MSXML3 parser is covered in detail, with attention to XML DOM interfaces, XSLT processing, SAX and more.</div></content>
+	</entry>
+	<entry>
+		<id>http://pkillian.me/xml/book/bk112</id>
+		<title>Visual Studio 7: A Comprehensive Guide</title>
+		<updated>2001-04-16T00:00:00-08:00</updated>
+		<category term="Computer"/>
+		<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">$49.95 - Microsoft Visual Studio 7 is explored in depth, looking at how Visual Basic, Visual C++, C#, and ASP+ are integrated into a comprehensive development environment.</div></content>
+	</entry></feed>
