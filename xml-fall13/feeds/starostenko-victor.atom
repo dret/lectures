@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us">
+	<id>http://people.ischool.berkeley.edu/~vstarostenko/</id>
+	<title>My Car Collection</title>
+	<author>
+		<name>Victor Starostenko</name>
+		<email>victor@ifsec.com</email>
+	</author>
+	<updated>2013-11-23T11:25:23-08:00</updated>
+	<entry>
+		<title>car001</title>
+		<id>http://en.wikipedia.org/wiki/Pontiac_Grand_Am</id>
+		<updated>2013-11-23T11:25:23-08:00</updated>
+		<summary>Pontiac Grand AM SE</summary>
+		<content type="html">
+		<![CDATA[	
+			<div id="year">1992</div>
+			<div id="doors">2</div>
+			<div id="engine">
+				<div id="cylinders">4</div>
+				<div id="displacement">2.3</div>
+				<div id="induction">naturally aspirated</div>
+			</div>
+			<div id="transmission">
+				<div id="type">manual</div>
+				<div id="gears">4</div>
+			</div>
+			<div id="color">white</div> 
+		]]>
+		</content>
+	</entry>
+		<entry>
+		<title>car002</title>
+		<id>http://en.wikipedia.org/wiki/honda_civic_si</id>
+		<updated>2013-11-23T11:26:23-08:00</updated>
+		<summary>Honda Civic Si</summary>
+		<content type="html">
+		<![CDATA[	
+			<div id="year">2000</div>
+			<div id="doors">2</div>
+			<div id="engine">
+				<div id="cylinders">4</div>
+				<div id="displacement">1.6</div>
+				<div id="induction">naturally aspirated</div>
+			</div>
+			<div id="transmission">
+				<div id="type">manual</div>
+				<div id="gears">5</div>
+			</div>
+			<div id="color">blue</div> 
+		]]>
+		</content>
+	</entry>
+		<entry>
+		<title>car003</title>
+		<id>http://en.wikipedia.org/wiki/mazdaspeed_protege</id>
+		<updated>2013-11-23T11:27:23-08:00</updated>
+		<summary>Mazda MAZDASPEED Protege</summary>
+		<content type="html">
+		<![CDATA[	
+			<div id="year">2003</div>
+			<div id="doors">4</div>
+			<div id="engine">
+				<div id="cylinders">4</div>
+				<div id="displacement">2.0</div>
+				<div id="induction">turbo</div>
+			</div>
+			<div id="transmission">
+				<div id="type">manual</div>
+				<div id="gears">5</div>
+			</div>
+			<div id="color">orange</div> 
+		]]>
+		</content>
+	</entry>
+				<entry>
+		<title>car004</title>
+		<id>http://en.wikipedia.org/wiki/mazdaspeed_protege</id>
+		<updated>2013-11-23T11:28:23-08:00</updated>
+		<summary>Mazda MAZDASPEED Protege</summary>
+		<content type="html">
+		<![CDATA[	
+			<div id="year">2003</div>
+			<div id="doors">4</div>
+			<div id="engine">
+				<div id="cylinders">4</div>
+				<div id="displacement">2.0</div>
+				<div id="induction">turbo</div>
+			</div>
+			<div id="transmission">
+				<div id="type">manual</div>
+				<div id="gears">5</div>
+			</div>
+			<div id="color">titanium</div> 
+		]]>
+		</content>
+	</entry>
+		<entry>
+		<title>car005</title>
+		<id>http://en.wikipedia.org/wiki/lancer_evolution</id>
+		<updated>2013-11-23T11:29:23-08:00</updated>
+		<summary>Mitsubishi Lancer Evolution 8</summary>
+		<content type="html">
+		<![CDATA[	
+			<div id="year">2005</div>
+			<div id="doors">4</div>
+			<div id="engine">
+				<div id="cylinders">4</div>
+				<div id="displacement">2.0</div>
+				<div id="induction">turbo</div>
+			</div>
+			<div id="transmission">
+				<div id="type">manual</div>
+				<div id="gears">5</div>
+			</div>
+			<div id="color">white</div> 
+		]]>
+		</content>
+	</entry>
+		<entry>
+		<title>car006</title>
+		<id>http://en.wikipedia.org/wiki/lancer_evolution</id>
+		<updated>2013-11-23T11:30:23-08:00</updated>
+		<summary>Mitsubishi Lancer Evolution 10</summary>
+		<content type="html">
+		<![CDATA[	
+			<div id="year">2010</div>
+			<div id="doors">4</div>
+			<div id="engine">
+				<div id="cylinders">4</div>
+				<div id="displacement">2.0</div>
+				<div id="induction">turbo</div>
+			</div>
+			<div id="transmission">
+				<div id="type">dual clutch</div>
+				<div id="gears">6</div>
+			</div>
+			<div id="color">silver</div> 
+		]]>
+		</content>
+	</entry>
+		<entry>
+		<title>car007</title>
+		<id>http://en.wikipedia.org/wiki/Pontiac_Grand_Am</id>
+		<updated>2013-11-23T11:31:23-08:00</updated>
+		<summary>Mazda Miata</summary>
+		<content type="html">
+		<![CDATA[	
+			<div id="year">1996</div>
+			<div id="doors">2</div>
+			<div id="engine">
+				<div id="cylinders">4</div>
+				<div id="displacement">1.8</div>
+				<div id="induction">naturally aspirated</div>
+			</div>
+			<div id="transmission">
+				<div id="type">manual</div>
+				<div id="gears">5</div>
+			</div>
+			<div id="color">blue</div> 
+		]]>
+		</content>
+	</entry>
+</feed>
