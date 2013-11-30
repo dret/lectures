@@ -1,120 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-   
-    <title>Top 10 comedy movies!</title>
-    <link rel="self" href="http://bit.ly/1bj5nij"/>
-    <updated>2013-11-26T10:24:24Z</updated>
-    <author>
-        <name> Sabina Shahbazzade </name>
-    </author>
-    <id>http://people.ischool.berkeley.edu/~sabina/</id>
-     
-    <entry>
-        <title>1. Annie Hall</title>
-        <id>http://viooz.co/movies/69-annie-hall-1977.html</id>
-        <updated>2007-01-22T10:12:12Z</updated>
-        <content type="xhtml">
-            <div xmlns="http://www.w3.org/1999/xhtml">To watch this comedy  <a href="http://viooz.co/movies/69-annie-hall-1977.html">clck here</a>
-            </div>
-        </content>
-        <category term="Comedy"/>
-    </entry>
-    
-    <entry>
-        <title>2. Borat </title>
-        <id>http://viooz.co/movies/2387-borat-cultural-learnings-of-america-for-make-benefit-glorious-nation-of-kazakhstan-2006.html</id>
-        <updated>2006-12-22T07:12:12Z</updated>
-        <content type="xhtml">
-            <div xmlns="http://www.w3.org/1999/xhtml">To watch this comedy  <a href="http://viooz.co/movies/2387-borat-cultural-learnings-of-america-for-make-benefit-glorious-nation-of-kazakhstan-2006.html">clck here</a>
-            </div>
-        </content>
-        <category term="Comedy"/>
-    </entry>
-    <entry>
-        <title>3. Some Like It Hot. </title>
-        <id>http://viooz.co/movies/3836-some-like-it-hot-1959.html</id>
-        <updated>2007-12-22T07:12:12Z</updated>
-        <content type="xhtml">
-            <div xmlns="http://www.w3.org/1999/xhtml">To watch this comedy  <a href="http://viooz.co/movies/3836-some-like-it-hot-1959.html">clck here</a>
-            </div>
-        </content>
-        <category term="Comedy"/>
-    </entry>
-    <entry>
-        <title>4. Team America: World Police. </title>
-        <id>http://viooz.co/movies/2663-team-america-world-police-2004.html</id>
-        <updated>2004-12-22T07:12:12Z</updated>
-        <content type="xhtml">
-            <div xmlns="http://www.w3.org/1999/xhtml">To watch this comedy  <a href="http://viooz.co/movies/2663-team-america-world-police-2004.html">clck here</a>
-            </div>
-        </content>
-        <category term="Comedy"/>
-    </entry>
-    
-    <entry>
-        <title>5. The Ladykillers. </title>
-        <id>http://viooz.co/movies/2680-the-ladykillers-2004.html</id>
-        <updated>2004-10-22T07:12:12Z</updated>
-        <content type="xhtml">
-            <div xmlns="http://www.w3.org/1999/xhtml">To watch this comedy  <a href="http://viooz.co/movies/2680-the-ladykillers-2004.html">clck here</a>
-            </div>
-        </content>
-        <category term="Comedy"/>
-    </entry>
-    
-    <entry>
-        <title>6. Dr Strangelove. </title>
-        <id>http://bit.ly/17TzpeW</id>
-        <updated>2009-12-22T07:12:12Z</updated>
-        <content type="xhtml">
-            <div xmlns="http://www.w3.org/1999/xhtml">To watch this comedy  <a href="http://bit.ly/17TzpeW">clck here</a>
-            </div>
-        </content>
-        <category term="Comedy"/>
-    </entry>
+    <id>http://www.berkeley.edu</id>
+    <subtitle type="text">UC Berkeley</subtitle>
+    <link href="http://www.berkeley.edu" rel="self" type="application/atom+xml"></link>
+    <updated>2013-11-28T12:30:22.734Z</updated>
+    <title type="text">Classes at UC Berkeley!</title>
    
     <entry>
-        <title>7. Duck Soup. </title>
-        <id>http://viooz.co/movies/205-duck-soup-1933.html</id>
-        <updated>2010-12-22T07:12:12Z</updated>
-        <content type="xhtml">
-            <div xmlns="http://www.w3.org/1999/xhtml">To watch this comedy  <a href="http://viooz.co/movies/205-duck-soup-1933.html">clck here</a>
-            </div>
-        </content>
-        <category term="Comedy"/>
+        <department>
+        <title type="text"> Electrical Engineering and Computer Science </title>
+        <id>http://www.eecs.berkeley.edu/</id>
+        <updated>2013-11-27T12:31:21.345Z</updated>
+        <class>
+            <name>The Beauty and Joy of Computing.</name>
+            <number>10</number>
+            <enrolled>377</enrolled>
+            <grade>
+                0-100
+            </grade>
+        </class>
+        </department>
     </entry>
     
     <entry>
-        <title>8. Rishmore. </title>
-        <id>http://viooz.co/movies/3754-rushmore-1998.html</id>
-        <updated>2009-12-22T07:08:12Z</updated>
-        <content type="xhtml">
-            <div xmlns="http://www.w3.org/1999/xhtml">To watch this comedy  <a href="http://viooz.co/movies/3754-rushmore-1998.html">clck here</a>
-            </div>
-        </content>
-        <category term="Comedy"/>
+        <title type="text"> School of Information </title>
+        <id>https://www.ischool.berkeley.edu/</id>
+        <updated>2013-11-26T12:31:21.345Z</updated>
+        <class>
+            <name>XML Foundation.</name>
+            <number>242</number>
+            <enrolled>17</enrolled>
+            <grade>
+                0-100
+            </grade>
+        </class>
     </entry>
     
     <entry>
-        <title>9. Monty Python's Life of Brian. </title>
-        <id>http://www.bmetv.net/video/2122/monty-python-s-life-of-brian-1979-full-movie</id>
-        <updated>2006-12-22T07:02:12Z</updated>
-        <content type="xhtml">
-            <div xmlns="http://www.w3.org/1999/xhtml">To watch this comedy  <a href="http://bit.ly/1fHZxfq">clck here</a>
-            </div>
-        </content>
-        <category term="Comedy"/>
+        <title type="text"> School of Law </title>
+        <id>http://www.law.berkeley.edu/</id>
+        <updated>2013-11-25T12:31:21.345Z</updated>
+        <class>
+            <name>Appellate Advocacy</name>
+            <number>243</number>
+            <enrolled>237</enrolled>
+            <grade>
+                0-100
+            </grade>
+        </class>
     </entry>
     
-    <entry>
-        <title>10. Airplane! </title>
-        <id>http://viooz.co/movies/1620-airplane-1980.html</id>
-        <updated>2005-12-22T07:12:12Z</updated>
-        <content type="xhtml">
-            <div xmlns="http://www.w3.org/1999/xhtml">To watch this comedy  <a href="http://viooz.co/movies/1620-airplane-1980.html">clck here</a>
-            </div>
-        </content>
-        <category term="Comedy"/>
-    </entry>
 </feed>
-
