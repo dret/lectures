@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us">
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema"
+      xml:lang="en-us">
    <title>Colin's Activities</title>
    <id>http://www.colinpmacarthur.com/activities</id>
    <link rel="self"
@@ -8,587 +10,807 @@
    <author>
       <name>Colin MacArthur</name>
    </author>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130921T212427Z</published>
+      <published>2013-09-21T21:34:01Z</published>
+      <updated>2013-09-21T21:34:01Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130921212427</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 1065</li>
-            <li>Distance: 756 feet</li>
-            <li>Duration: 574 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 1065</li>
+               <li>Distance: 756 feet</li>
+               <li>Duration: 574 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Public Transit / Walk</title>
-      <published>20130921T213402Z</published>
+   <entry xml:lang="en-us">
+      <title>Public Transit / Car</title>
+      <published>2013-09-21T22:03:35Z</published>
+      <updated>2013-09-21T22:03:35Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130921213402</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 6562 feet</li>
-            <li>Duration: 1773 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 6562 feet</li>
+               <li>Duration: 1773 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130921T220335Z</published>
+      <published>2013-09-21T22:10:12Z</published>
+      <updated>2013-09-21T22:10:12Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130921220335</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 450</li>
-            <li>Distance: 331 feet</li>
-            <li>Duration: 397 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 450</li>
+               <li>Distance: 331 feet</li>
+               <li>Duration: 397 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Public Transit / Walk</title>
-      <published>20130922T002326Z</published>
+   <entry xml:lang="en-us">
+      <title>Public Transit / Car</title>
+      <published>2013-09-22T00:51:21Z</published>
+      <updated>2013-09-22T00:51:21Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130922002326</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 7446 feet</li>
-            <li>Duration: 1675 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 7446 feet</li>
+               <li>Duration: 1675 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130922T005121Z</published>
+      <published>2013-09-22T00:56:39Z</published>
+      <updated>2013-09-22T00:56:39Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130922005121</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 350</li>
-            <li>Distance: 263 feet</li>
-            <li>Duration: 318 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 350</li>
+               <li>Distance: 263 feet</li>
+               <li>Duration: 318 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130920T183125Z</published>
+      <published>2013-09-20T18:34:00Z</published>
+      <updated>2013-09-20T18:34:00Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130920183125</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 261</li>
-            <li>Distance: 196 feet</li>
-            <li>Duration: 155 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 261</li>
+               <li>Distance: 196 feet</li>
+               <li>Duration: 155 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Public Transit / Walk</title>
-      <published>20130920T184015Z</published>
+   <entry xml:lang="en-us">
+      <title>Public Transit / Car</title>
+      <published>2013-09-20T19:05:11Z</published>
+      <updated>2013-09-20T19:05:11Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130920184015</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 6079 feet</li>
-            <li>Duration: 1496 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 6079 feet</li>
+               <li>Duration: 1496 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130920T190511Z</published>
+      <published>2013-09-20T19:12:23Z</published>
+      <updated>2013-09-20T19:12:23Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130920190511</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 931</li>
-            <li>Distance: 560 feet</li>
-            <li>Duration: 432 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 931</li>
+               <li>Distance: 560 feet</li>
+               <li>Duration: 432 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130920T232412Z</published>
+      <published>2013-09-20T23:35:18Z</published>
+      <updated>2013-09-20T23:35:18Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130920232412</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 1159</li>
-            <li>Distance: 694 feet</li>
-            <li>Duration: 666 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 1159</li>
+               <li>Distance: 694 feet</li>
+               <li>Duration: 666 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130920T235409Z</published>
+      <published>2013-09-21T00:17:01Z</published>
+      <updated>2013-09-21T00:17:01Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130920235409</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 2403</li>
-            <li>Distance: 1674 feet</li>
-            <li>Duration: 1372 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 2403</li>
+               <li>Distance: 1674 feet</li>
+               <li>Duration: 1372 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130921T005706Z</published>
+      <published>2013-09-21T01:00:09Z</published>
+      <updated>2013-09-21T01:00:09Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130921005706</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 307</li>
-            <li>Distance: 199 feet</li>
-            <li>Duration: 183 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 307</li>
+               <li>Distance: 199 feet</li>
+               <li>Duration: 183 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Public Transit / Walk</title>
-      <published>20130921T013030Z</published>
+   <entry xml:lang="en-us">
+      <title>Public Transit / Car</title>
+      <published>2013-09-21T01:37:24Z</published>
+      <updated>2013-09-21T01:37:24Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130921013030</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 1859 feet</li>
-            <li>Duration: 414 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 1859 feet</li>
+               <li>Duration: 414 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130921T013725Z</published>
+      <published>2013-09-21T01:47:59Z</published>
+      <updated>2013-09-21T01:47:59Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130921013725</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 1307</li>
-            <li>Distance: 921 feet</li>
-            <li>Duration: 634 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 1307</li>
+               <li>Distance: 921 feet</li>
+               <li>Duration: 634 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130921T015726Z</published>
+      <published>2013-09-21T02:25:54Z</published>
+      <updated>2013-09-21T02:25:54Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130921015726</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 3603</li>
-            <li>Distance: 2626 feet</li>
-            <li>Duration: 1708 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 3603</li>
+               <li>Distance: 2626 feet</li>
+               <li>Duration: 1708 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Public Transit / Walk</title>
-      <published>20130919T145915Z</published>
+   <entry xml:lang="en-us">
+      <title>Public Transit / Car</title>
+      <published>2013-09-19T15:23:07Z</published>
+      <updated>2013-09-19T15:23:07Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130919145915</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 6132 feet</li>
-            <li>Duration: 1432 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 6132 feet</li>
+               <li>Duration: 1432 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130919T152307Z</published>
+      <published>2013-09-19T15:31:13Z</published>
+      <updated>2013-09-19T15:31:13Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130919152307</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 1018</li>
-            <li>Distance: 561 feet</li>
-            <li>Duration: 486 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 1018</li>
+               <li>Distance: 561 feet</li>
+               <li>Duration: 486 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130919T185018Z</published>
+      <published>2013-09-19T18:59:22Z</published>
+      <updated>2013-09-19T18:59:22Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130919185018</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 904</li>
-            <li>Distance: 727 feet</li>
-            <li>Duration: 544 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 904</li>
+               <li>Distance: 727 feet</li>
+               <li>Duration: 544 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130919T201754Z</published>
+      <published>2013-09-19T20:27:38Z</published>
+      <updated>2013-09-19T20:27:38Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130919201754</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 940</li>
-            <li>Distance: 740 feet</li>
-            <li>Duration: 584 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 940</li>
+               <li>Distance: 740 feet</li>
+               <li>Duration: 584 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130919T221348Z</published>
+      <published>2013-09-19T22:18:48Z</published>
+      <updated>2013-09-19T22:18:48Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130919221348</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 436</li>
-            <li>Distance: 382 feet</li>
-            <li>Duration: 300 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 436</li>
+               <li>Distance: 382 feet</li>
+               <li>Duration: 300 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130919T222355Z</published>
+      <published>2013-09-19T22:28:50Z</published>
+      <updated>2013-09-19T22:28:50Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130919222355</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 348</li>
-            <li>Distance: 334 feet</li>
-            <li>Duration: 295 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 348</li>
+               <li>Distance: 334 feet</li>
+               <li>Duration: 295 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130920T000214Z</published>
+      <published>2013-09-20T00:08:26Z</published>
+      <updated>2013-09-20T00:08:26Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130920000214</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 627</li>
-            <li>Distance: 630 feet</li>
-            <li>Duration: 372 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 627</li>
+               <li>Distance: 630 feet</li>
+               <li>Duration: 372 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Public Transit / Walk</title>
-      <published>20130920T013246Z</published>
+   <entry xml:lang="en-us">
+      <title>Public Transit / Car</title>
+      <published>2013-09-20T02:01:58Z</published>
+      <updated>2013-09-20T02:01:58Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130920013246</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 6478 feet</li>
-            <li>Duration: 1752 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 6478 feet</li>
+               <li>Duration: 1752 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130920T020158Z</published>
+      <published>2013-09-20T02:12:01Z</published>
+      <updated>2013-09-20T02:12:01Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130920020158</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 970</li>
-            <li>Distance: 693 feet</li>
-            <li>Duration: 603 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 970</li>
+               <li>Distance: 693 feet</li>
+               <li>Duration: 603 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130920T031828Z</published>
+      <published>2013-09-20T03:36:13Z</published>
+      <updated>2013-09-20T03:36:13Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130920031828</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 1878</li>
-            <li>Distance: 1319 feet</li>
-            <li>Duration: 1065 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 1878</li>
+               <li>Distance: 1319 feet</li>
+               <li>Duration: 1065 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Public Transit / Walk</title>
-      <published>20130918T164932Z</published>
+   <entry xml:lang="en-us">
+      <title>Public Transit / Car</title>
+      <published>2013-09-18T17:14:17Z</published>
+      <updated>2013-09-18T17:14:17Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130918164932</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 5887 feet</li>
-            <li>Duration: 1485 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 5887 feet</li>
+               <li>Duration: 1485 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130918T171417Z</published>
+      <published>2013-09-18T17:21:24Z</published>
+      <updated>2013-09-18T17:21:24Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130918171417</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 912</li>
-            <li>Distance: 592 feet</li>
-            <li>Duration: 427 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 912</li>
+               <li>Distance: 592 feet</li>
+               <li>Duration: 427 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130918T200652Z</published>
+      <published>2013-09-18T20:11:56Z</published>
+      <updated>2013-09-18T20:11:56Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130918200652</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 645</li>
-            <li>Distance: 327 feet</li>
-            <li>Duration: 304 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 645</li>
+               <li>Distance: 327 feet</li>
+               <li>Duration: 304 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130918T202147Z</published>
+      <published>2013-09-18T20:25:54Z</published>
+      <updated>2013-09-18T20:25:54Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130918202147</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 539</li>
-            <li>Distance: 350 feet</li>
-            <li>Duration: 247 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 539</li>
+               <li>Distance: 350 feet</li>
+               <li>Duration: 247 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130918T231021Z</published>
+      <published>2013-09-18T23:15:23Z</published>
+      <updated>2013-09-18T23:15:23Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130918231021</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 518</li>
-            <li>Distance: 371 feet</li>
-            <li>Duration: 302 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 518</li>
+               <li>Distance: 371 feet</li>
+               <li>Duration: 302 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Public Transit / Walk</title>
-      <published>20130918T231523Z</published>
+   <entry xml:lang="en-us">
+      <title>Public Transit / Car</title>
+      <published>2013-09-18T23:47:31Z</published>
+      <updated>2013-09-18T23:47:31Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130918231523</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 6403 feet</li>
-            <li>Duration: 1928 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 6403 feet</li>
+               <li>Duration: 1928 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130918T234731Z</published>
+      <published>2013-09-18T23:50:39Z</published>
+      <updated>2013-09-18T23:50:39Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130918234731</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 338</li>
-            <li>Distance: 184 feet</li>
-            <li>Duration: 188 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 338</li>
+               <li>Distance: 184 feet</li>
+               <li>Duration: 188 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Public Transit / Walk</title>
-      <published>20130917T145906Z</published>
+   <entry xml:lang="en-us">
+      <title>Public Transit / Car</title>
+      <published>2013-09-17T15:24:24Z</published>
+      <updated>2013-09-17T15:24:24Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130917145906</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 6404 feet</li>
-            <li>Duration: 1518 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 6404 feet</li>
+               <li>Duration: 1518 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Bicycle</title>
-      <published>20130917T152424Z</published>
+   <entry xml:lang="en-us">
+      <title>Bicyle</title>
+      <published>2013-09-17T15:26:29Z</published>
+      <updated>2013-09-17T15:26:29Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130917152424</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 327 feet</li>
-            <li>Duration: 125 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 327 feet</li>
+               <li>Duration: 125 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Bicycle</title>
-      <published>20130917T174629Z</published>
+   <entry xml:lang="en-us">
+      <title>Bicyle</title>
+      <published>2013-09-17T17:54:48Z</published>
+      <updated>2013-09-17T17:54:48Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130917174629</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 2440 feet</li>
-            <li>Duration: 499 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 2440 feet</li>
+               <li>Duration: 499 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Bicycle</title>
-      <published>20130917T191136Z</published>
+   <entry xml:lang="en-us">
+      <title>Bicyle</title>
+      <published>2013-09-17T19:39:07Z</published>
+      <updated>2013-09-17T19:39:07Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130917191136</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 4523 feet</li>
-            <li>Duration: 1651 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 4523 feet</li>
+               <li>Duration: 1651 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Bicycle</title>
-      <published>20130917T200433Z</published>
+   <entry xml:lang="en-us">
+      <title>Bicyle</title>
+      <published>2013-09-17T20:12:05Z</published>
+      <updated>2013-09-17T20:12:05Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130917200433</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 2125 feet</li>
-            <li>Duration: 452 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 2125 feet</li>
+               <li>Duration: 452 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130917T201205Z</published>
+      <published>2013-09-17T20:17:52Z</published>
+      <updated>2013-09-17T20:17:52Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130917201205</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 527</li>
-            <li>Distance: 504 feet</li>
-            <li>Duration: 347 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 527</li>
+               <li>Distance: 504 feet</li>
+               <li>Duration: 347 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Bicycle</title>
-      <published>20130918T005841Z</published>
+   <entry xml:lang="en-us">
+      <title>Bicyle</title>
+      <published>2013-09-18T01:01:23Z</published>
+      <updated>2013-09-18T01:01:23Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130918005841</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 484 feet</li>
-            <li>Duration: 162 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 484 feet</li>
+               <li>Duration: 162 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Bicycle</title>
-      <published>20130918T024923Z</published>
+   <entry xml:lang="en-us">
+      <title>Bicyle</title>
+      <published>2013-09-18T03:18:34Z</published>
+      <updated>2013-09-18T03:18:34Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130918024923</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 6461 feet</li>
-            <li>Duration: 1751 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 6461 feet</li>
+               <li>Duration: 1751 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130916T144121Z</published>
+      <published>2013-09-16T14:44:24Z</published>
+      <updated>2013-09-16T14:44:24Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130916144121</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 267</li>
-            <li>Distance: 198 feet</li>
-            <li>Duration: 183 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 267</li>
+               <li>Distance: 198 feet</li>
+               <li>Duration: 183 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Public Transit / Walk</title>
-      <published>20130916T144425Z</published>
+   <entry xml:lang="en-us">
+      <title>Public Transit / Car</title>
+      <published>2013-09-16T15:07:25Z</published>
+      <updated>2013-09-16T15:07:25Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130916144425</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 5591 feet</li>
-            <li>Duration: 1380 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 5591 feet</li>
+               <li>Duration: 1380 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130916T150725Z</published>
+      <published>2013-09-16T15:14:55Z</published>
+      <updated>2013-09-16T15:14:55Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130916150725</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 1008</li>
-            <li>Distance: 522 feet</li>
-            <li>Duration: 450 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 1008</li>
+               <li>Distance: 522 feet</li>
+               <li>Duration: 450 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130916T194650Z</published>
+      <published>2013-09-16T19:57:57Z</published>
+      <updated>2013-09-16T19:57:57Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130916194650</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 1039</li>
-            <li>Distance: 730 feet</li>
-            <li>Duration: 667 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 1039</li>
+               <li>Distance: 730 feet</li>
+               <li>Duration: 667 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130917T013728Z</published>
+      <published>2013-09-17T01:43:48Z</published>
+      <updated>2013-09-17T01:43:48Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130917013728</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 580</li>
-            <li>Distance: 459 feet</li>
-            <li>Duration: 380 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 580</li>
+               <li>Distance: 459 feet</li>
+               <li>Duration: 380 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Public Transit / Walk</title>
-      <published>20130917T014824Z</published>
+   <entry xml:lang="en-us">
+      <title>Public Transit / Car</title>
+      <published>2013-09-17T02:12:25Z</published>
+      <updated>2013-09-17T02:12:25Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130917014824</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 6620 feet</li>
-            <li>Duration: 1441 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 6620 feet</li>
+               <li>Duration: 1441 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130917T021225Z</published>
+      <published>2013-09-17T02:16:13Z</published>
+      <updated>2013-09-17T02:16:13Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130917021225</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 409</li>
-            <li>Distance: 281 feet</li>
-            <li>Duration: 228 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 409</li>
+               <li>Distance: 281 feet</li>
+               <li>Duration: 228 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Public Transit / Walk</title>
-      <published>20130917T050303Z</published>
+   <entry xml:lang="en-us">
+      <title>Public Transit / Car</title>
+      <published>2013-09-17T05:12:13Z</published>
+      <updated>2013-09-17T05:12:13Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130917050303</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 2918 feet</li>
-            <li>Duration: 550 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 2918 feet</li>
+               <li>Duration: 550 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130917T051214Z</published>
+      <published>2013-09-17T05:14:36Z</published>
+      <updated>2013-09-17T05:14:36Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130917051214</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 134</li>
-            <li>Distance: 67 feet</li>
-            <li>Duration: 142 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 134</li>
+               <li>Distance: 67 feet</li>
+               <li>Duration: 142 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Bicycle</title>
-      <published>20130915T184751Z</published>
+   <entry xml:lang="en-us">
+      <title>Bicyle</title>
+      <published>2013-09-15T18:55:06Z</published>
+      <updated>2013-09-15T18:55:06Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130915184751</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 1103 feet</li>
-            <li>Duration: 435 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 1103 feet</li>
+               <li>Duration: 435 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Bicycle</title>
-      <published>20130915T195547Z</published>
+   <entry xml:lang="en-us">
+      <title>Bicyle</title>
+      <published>2013-09-15T20:02:23Z</published>
+      <updated>2013-09-15T20:02:23Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130915195547</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 1173 feet</li>
-            <li>Duration: 396 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 1173 feet</li>
+               <li>Duration: 396 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130915T212826Z</published>
+      <published>2013-09-15T21:37:28Z</published>
+      <updated>2013-09-15T21:37:28Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130915212826</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 1003</li>
-            <li>Distance: 854 feet</li>
-            <li>Duration: 542 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 1003</li>
+               <li>Distance: 854 feet</li>
+               <li>Duration: 542 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Public Transit / Walk</title>
-      <published>20130915T213729Z</published>
+   <entry xml:lang="en-us">
+      <title>Public Transit / Car</title>
+      <published>2013-09-15T22:05:32Z</published>
+      <updated>2013-09-15T22:05:32Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130915213729</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 6753 feet</li>
-            <li>Duration: 1683 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 6753 feet</li>
+               <li>Duration: 1683 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130915T220532Z</published>
+      <published>2013-09-15T22:28:03Z</published>
+      <updated>2013-09-15T22:28:03Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130915220532</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 1999</li>
-            <li>Distance: 1237 feet</li>
-            <li>Duration: 1351 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 1999</li>
+               <li>Distance: 1237 feet</li>
+               <li>Duration: 1351 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
-      <title>Public Transit / Walk</title>
-      <published>20130915T222803Z</published>
+   <entry xml:lang="en-us">
+      <title>Public Transit / Car</title>
+      <published>2013-09-15T23:04:05Z</published>
+      <updated>2013-09-15T23:04:05Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130915222803</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Distance: 8632 feet</li>
-            <li>Duration: 2162 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Distance: 8632 feet</li>
+               <li>Duration: 2162 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
-   <entry xmlns="">
+   <entry xml:lang="en-us">
       <title>Walk</title>
-      <published>20130915T230405Z</published>
+      <published>2013-09-15T23:09:06Z</published>
+      <updated>2013-09-15T23:09:06Z</updated>
+      <id>http://colinpmacarthur.com/moves/20130915230405</id>
       <content type="xhtml">
-         <ul xmlns="http://www.w3.org/1999/xhtml">
-            <li>Steps: 435</li>
-            <li>Distance: 239 feet</li>
-            <li>Duration: 301 seconds</li>
-         </ul>
+         <div xmlns="http://www.w3.org/1999/xhtml">
+            <ul>
+               <li>Steps: 435</li>
+               <li>Distance: 239 feet</li>
+               <li>Duration: 301 seconds</li>
+            </ul>
+         </div>
       </content>
    </entry>
 </feed>
