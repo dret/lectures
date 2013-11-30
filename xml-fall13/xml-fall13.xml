@@ -5510,4 +5510,14 @@ iVBORw0KGgoA … TAAAAAElFTkSuQmCC
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="xdb">
+		<title>Setting Up xDB</title>
+		<date>2013-11-25</date>
+		<toc class="resources"><a href="https://community.emc.com/community/edn/xmltech/content" title="ECN Space: XML Technologies">EMC&#160;XML&#160;Home</a>&#160;· <a href="https://community.emc.com/docs/DOC-7711">xDB&#160;Manuals</a></toc>
+		<toc class="abstract">XML databases are not fundamentally different from other database engines: They provide support to store and query potentially large amounts of data. xDB is EMC's XML Database product, and is implemented in Java. It therefore can be used on any computer with Java runtime support. xDB has a database server, which has to be started and then waits for incoming connection requests. xDB also has a Java client which can be used to connect to the server, and then provides adminstrative as well as user functionality. In this lecture, we will install xDB on all student computers, and ingest some XML data into an XML database managed by xDB.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+	</presentation>
 </hotspot>
