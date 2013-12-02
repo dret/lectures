@@ -201,7 +201,7 @@
 				<img src="heatmap-golden-gate.png" style="height : 70% ; margin : 2% ; " href="http://x.raceshape.com/heatmap/view.html?id=r1ycR0%2Fhp88VjX%2FAVO4B3gHo%2B9gyzOuMQA1uDqCn"/>
 			</slide>
 			<slide>
-				<title>Finding Activities (Oxygen)</title>
+				<title>Finding Activities (Saxon)</title>
 				<listing src="find-by-location-oxygen.xq"/>
 			</slide>
 		</part>
@@ -250,7 +250,7 @@
 						<li>XML does not talk about databases at all</li>
 						<li>It is possible to build databases that support XML's model</li>
 						<ul>
-							<li>data storage can be scaled beyond what filesystems can manage</li>
+							<li>data storage can be scaled beyond what file systems can manage</li>
 							<li>access to XML can be much better optimized in XML databases</li>
 						</ul>
 					</ul>
@@ -5529,6 +5529,211 @@ iVBORw0KGgoA … TAAAAAElFTkSuQmCC
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<slide>
+			<title>Prolog</title>
+			<ul>
+				<li>Prolog comes in front of the query</li>
+				<li>Declare namespaces, global variables, global options, external variables etc.</li>
+				<li>Important declarations</li>
+				<ul>
+					<li><code>declare namespace foo = "http://bar";</code></li>
+					<li><code>declare option xhive:queryplan-debug "true";</code></li>
+				</ul>
+				<li>Predefined namespace prefixes</li>
+				<ul>
+					<li><code>xml, xmlns, fn, xs, xsi, op, xdt, local</code></li>
+					<li>plus implementation defined prefixes (e.g. <code>xhive</code>)</li>
+				</ul>
+			</ul>
+		</slide>
+		<part>
+			<title>XQuery Sources</title>
+			<slide>
+				<title>XQuery using Files</title>
+				<img style="width : 86% ; margin : 4% ; " src="xquery-overview-filesystem.png" title="File-based XQuery Processing"/>
+			</slide>
+			<slide>
+				<title>XQuery using an XML Database</title>
+				<img style="width : 86% ; margin : 4% ; " src="xquery-overview-dbms.png" title="DB-based XQuery Processing"/>
+			</slide>
+			<slide>
+				<title>Specifying XQuery Input</title>
+				<ul>
+					<li><code href="http://www.w3.org/TR/xpath-functions/#func-doc">doc()</code> or <code href="http://www.w3.org/TR/xpath-functions/#func-collection">collection()</code> specify input</li>
+					<li>Input can be a single XML source file or an entire database</li>
+					<li>All XQueries have an initial context item</li>
+					<ul>
+						<li>default starting point for unqualified XPath expressions</li>
+						<li>In xDB, this is the library, document, or node of the XQuery</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Finding Activities Saxon)</title>
+				<listing src="find-by-location-oxygen.xq"/>
+			</slide>
+			<slide>
+				<title>Finding Activities (xDB)</title>
+				<listing src="find-by-location-xdb.xq"/>
+			</slide>
+			<slide>
+				<title>XQuery Input in xDB</title>
+				<ul>
+					<li>In xDB, <code>doc()</code> and <code>collection()</code> are synonymous</li>
+					<li>Parameter is a string containing a URI</li>
+					<ul>
+						<li><code>doc('foo.xml')</code>: relative path within xDB</li>
+						<li><code>doc('/bar/foo.xml')</code>: absolute path within xDB</li>
+						<li><code>doc('http://www.example.com/foo.xml')</code>: HTTP request</li>
+						<li><code>doc('xhive://foo/bar/../test.xml')</code>: complete xDB URI</li>
+						<li><code>doc('file:///my/doc.xml')</code>: absolute local file URI</li>
+						<li><code>doc('file:doc.xml')</code>: relative file URI</li>
+					</ul>
+					<li>Accessing a library (<code>doc('lib/')</code>) results in</li>
+					<ul>
+						<li>all documents in the library</li>
+						<li>all documents in descendant libraries</li>
+						<li>only works within xDB, not for file system</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="xquery-processing">
+			<title>Processing Model</title>
+			<slide id="xquery-tuple-stream">
+				<title>Tuple Stream</title>
+				<ul>
+					<li>FLWOR expressions are the central expression producing results</li>
+					<ul>
+						<li>nested <xq>for</xq> loops turn sorting into a non-trivial task</li>
+						<li>the concept of a <em>tuple stream</em> formally defines FLWOR evaluation</li>
+					</ul>
+					<li>Each FLWOR expression is generating a tuple stream</li>
+					<ul>
+						<li><xq>for</xq> and <xq>let</xq> generate a sequence of bound variables, the <em>tuple stream</em></li>
+						<li><xq>where</xq> acts as a filter testing tuples against a constraint (discarding some tuples)</li>
+						<li><xq>order by</xq> can be used to reorder the (possibly filtered) tuple stream</li>
+						<li><xq>return</xq> is evaluated once for each tuple in the filtered, reordered stream</li>
+						<li>the result of the expression are the concatenated results of all <xq>return</xq> evaluations</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="xquery-serialization">
+				<title>Serialization</title>
+				<ul>
+					<li>XQuery creates an <a href="http://dret.net/lectures/xml-fall08/xdm">XDM</a> instance as a result</li>
+					<li>XDM instances are sequences of items</li>
+					<ul>
+						<li>items can be atomic values</li>
+						<li>items can be nodes which are nested to form trees</li>
+					</ul>
+					<li>XQuery itself is not concerned with how to serialize XDM instances</li>
+					<ul>
+						<li>the language works on XDM and produces XDM</li>
+					</ul>
+					<li><a href="http://www.w3.org/TR/xslt-xquery-serialization/">XSLT 2.0 and XQuery 1.0 Serialization</a> defines the serialization of XDM instances</li>
+					<ul>
+						<li>the specification can be used for XSLT 2.0 and XQuery 1.0</li>
+						<li>if other serializations are required, this does not affect the core standards</li>
+						<li>currently supported output methods are <a href="http://www.w3.org/TR/xslt-xquery-serialization/#xml-output">XML</a>, <a href="http://www.w3.org/TR/xslt-xquery-serialization/#xhtml-output">XHTML</a>, <a href="http://www.w3.org/TR/xslt-xquery-serialization/#html-output">HTML</a>, and <a href="http://www.w3.org/TR/xslt-xquery-serialization/#text-output">Text</a></li>
+					</ul>
+					<li>Text output means that non-markup structures can be created directly</li>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>More XQuery Details</title>
+			<slide>
+				<title>Comma Operator</title>
+				<ul>
+					<li>Constructing sequences from separate expressions</li>
+					<pre>&lt;a>123&lt;/a>, &lt;b>456&lt;/b></pre>
+					<pre>doc("books.xml")//author, doc("books.xml")//title</pre>
+					<li>Parentheses must be used to group expressions correctly</li>
+					<pre>for $b in doc("books.xml")//book return   $b/title, <span style="color : red ; ">$b/author</span></pre>
+					<pre>for $b in doc("books.xml")//book return ( $b/title, $b/author )</pre>
+				</ul>
+			</slide>
+			<slide>
+				<title>Whitespace in XQuery</title>
+				<ul>
+					<li>XQuery distinguishes three kinds of whitespace</li>
+					<ul>
+						<li><em>ignorable whitespace</em> occurring between syntax terminals (e.g., keywords)</li>
+						<li><em>boundary whitespace</em> occurring between tags and/or enclosed expressions</li>
+						<li><em>literal whitespace</em> occurring inside literals</li>
+					</ul>
+					<li><xq>boundary-space</xq> controls the interpretation of boundary whitespace</li>
+					<ul>
+						<li><xq>strip</xq> declares boundary whitespace to be insignificant</li>
+						<li><xq>preserve</xq> declares boundary whitespace to be significant</li>
+					</ul>
+				</ul>
+				<pre>declare boundary-space strip;
+let $a := "Bob Glushko"
+return
+  &lt;book>
+    &lt;title>Document Engineering&lt;/title>
+    &lt;author> { $a } &lt;/author>
+  &lt;/book></pre>
+			</slide>
+			<slide>
+				<title>Constructors</title>
+				<ul>
+					<li>XQuery allows literal XML or <em>computed constructors</em></li>
+					<li>Literal XML are called <em>direct constructors</em></li>
+					<pre>&lt;book>
+  &lt;title>Document Engineering&lt;/title>
+  &lt;author>Bob Glushko&lt;/author>
+  &lt;price currency="USD">29.99&lt;/price>
+&lt;/book></pre>
+					<li><em>Computed Constructors</em> can be used for calculating names</li>
+					<pre>element "book" {
+  element "title" { "Document Engineering" },
+  element "author" { "Bob Glushko" },
+  element "price" {
+    attribute "currency" { "USD" },
+    29.99
+  }
+}</pre>
+					<li>XSLT has the same concepts (<link href="xslt-literal"/> and <link href="xslt-element"><xslte>element</xslte></link>)</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="xquery-functions">
+			<title>User-Defined Functions</title>
+			<slide>
+				<title>Reusable code in XQuery</title>
+				<ul>
+					<li>Named units of XQuery code</li>
+					<li>Zero or more input parameters (type information is optional)</li>
+					<li>Produces a result (type information is optional)</li>
+					<li>Function body is an XQuery expression</li>
+					<ul>
+						<li>there is no explicit return statement</li>
+						<li>the <xq>return</xq> of a <link href="xquery-flwor">FLWOR expression</link> may take over that role</li>
+					</ul>
+					<li>a predefined <xq>local</xq> namespace prefix avoids namespace inflation</li>
+				</ul>
+				<pre>declare function local:onetwothree() as xs:integer+ { (1, 2, 3) };</pre>
+			</slide>
+			<slide>
+				<title>Local Function</title>
+				<listing src="blog2html.xq"/>
+			</slide>
+		</part>
+		<part>
+			<title>Conclusions</title>
+			<slide>
+				<title>XQuery vs. XSLT</title>
+				<ul>
+					<li>XQuery is a complete programming language</li>
+					<li>XSLT can do everything XQuery can and vice versa</li>
+					<li>Choosing one over the other depends on task and taste</li>
+					<li>REST scenarios have good places for both languages</li>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="varia">
 		<title short="Varia">XML Varia</title>
