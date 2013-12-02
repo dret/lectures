@@ -5529,23 +5529,272 @@ iVBORw0KGgoA … TAAAAAElFTkSuQmCC
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
-		<slide>
-			<title>Prolog</title>
-			<ul>
-				<li>Prolog comes in front of the query</li>
-				<li>Declare namespaces, global variables, global options, external variables etc.</li>
-				<li>Important declarations</li>
+		<part>
+			<title>XML Storage in Databases</title>
+			<slide>
+				<title>Model Mapping</title>
 				<ul>
-					<li><code>declare namespace foo = "http://bar";</code></li>
-					<li><code>declare option xhive:queryplan-debug "true";</code></li>
+					<li>Relational databases are not good tools for storing XML</li>
+					<ul>
+						<li>they might be appropriate if the schema disallows problematic constructs</li>
+						<li>they often are already deployed and applications must live with them</li>
+					</ul>
+					<li>If the data model is ER-oriented, relational databases are good tools</li>
+					<ul>
+						<li>XML may be invisible from the model point of view</li>
+						<li>parts of the model may be encoded as an XML schema</li>
+					</ul>
+					<li>If the XML is not visible in the model, it can be structurally inaccessible</li>
+					<ul>
+						<li>e.g., a product catalog may contain product descriptions in XHTML rich text snippets</li>
+						<li>for managing the product catalog data, the XHTML is not relevant</li>
+					</ul>
+					<li>If the XML is part of the model, it should be accessible</li>
+					<ul>
+						<li>if the product catalog XHTML contains links to other products, these links are important</li>
+						<li>they could be extracted (creating redundant and hard to maintain data)</li>
+						<li>if they are hidden in the XHTML, all XHTML snippets have to be parsed</li>
+						<li>ideally, the database should be able to <q>query the XHTML snippet</q></li>
+					</ul>
 				</ul>
-				<li>Predefined namespace prefixes</li>
+			</slide>
+			<slide>
+				<title>XML is Text</title>
 				<ul>
-					<li><code>xml, xmlns, fn, xs, xsi, op, xdt, local</code></li>
-					<li>plus implementation defined prefixes (e.g. <code>xhive</code>)</li>
+					<li>XML documents can be stored as text</li>
+					<ul>
+						<li>databases typically have various datatypes for text storage</li>
+						<li>if the database supports Unicode, any XML document can be stored</li>
+					</ul>
+					<li>The XML structure is completely invisible to the database</li>
+					<ul>
+						<li>working with the XML requires querying and parsing the XML text</li>
+						<li>this kind of storage does not allow any querying of the XML content</li>
+					</ul>
 				</ul>
-			</ul>
-		</slide>
+			</slide>
+			<slide>
+				<title>XML → ∗LOB</title>
+				<img style="width : 90% ; margin : 2% ; " src="xml-storage-lob.png"/>
+			</slide>
+			<slide id="xdbms-xmldatatype">
+				<title>XML as a Datatype</title>
+				<ul>
+					<li>SQL supports a wide variety of datatypes</li>
+					<ul>
+						<li>typed values are better than untyped values (they enable type-specific operations)</li>
+						<li>XML can be regarded as just another data type</li>
+					</ul>
+					<li>Introducing a datatype lets the database recognize the data</li>
+					<ul>
+						<li>XML data can be stored in some format (a <q>persistent DOM</q>)</li>
+						<li>databases can provide functionality avoiding parsing/serialization (DOM-based)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="xdbms-xmltype">
+				<title>XML Datatype</title>
+				<img style="width : 90% ; margin : 2% ; " src="xml-storage-datatype.png"/>
+			</slide>
+			<slide>
+				<title>Mapping XML to Models</title>
+				<ul>
+					<li>Model-relevant data must be mapped to the database structures</li>
+					<ul>
+						<li>this assumes there is a ER-model which describes the database structure</li>
+						<li>mapping XML is easy by definition because the XML is ER-compliant</li>
+					</ul>
+					<li>Is the data accessed as table data?</li>
+					<ul>
+						<li>if shredded data is only used to assemble it again, it is just performance overhead</li>
+						<li>if shredded data is accessed relationally, then shredding makes sense</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Shredding (XML → Columns)</title>
+				<img style="width : 90% ; margin : 2% ; " src="xml-storage-shredding.png"/>
+			</slide>
+			<slide>
+				<title>XML as First-Class Citizen</title>
+				<ul>
+					<li>The <link href="xdbms-xmltype"/> defines XML as a sub-concept of ER</li>
+					<ul>
+						<li>the overall structure of the database is relational</li>
+						<li>attributes may be of type XML, which means storing trees in tables</li>
+					</ul>
+					<li>Tables are not the only way to see the world</li>
+					<ul>
+						<li>XML trees are an <em>alternative</em> to tables, not a <em>datatype</em></li>
+						<li>XML-centric applications should not be forced to use tables at all</li>
+					</ul>
+					<li>XML can be regarded as replacing the ER-concept altogether</li>
+					<ul>
+						<li>the database simply stores XML documents</li>
+						<li>applications can store, query, update, and manage XML documents in the database</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>XML DBMS</title>
+				<img style="width : 90% ; margin : 2% ; " src="xml-storage-xdbms.png"/>
+			</slide>
+		</part>
+		<part>
+			<title>XML in Relational Databases</title>
+			<slide>
+				<title>RDBish XML</title>
+				<ul>
+					<li>XML schemas can be designed with databases in mind</li>
+					<ul>
+						<li>avoid unbounded repetitions of elements</li>
+						<li>avoid choices</li>
+						<li>avoid ordered content</li>
+						<li>avoid mixed content</li>
+					</ul>
+					<li>Many XML schemas are designed RDBish for compatibility reasons</li>
+					<ul>
+						<li>it was decided that the XML should enable an easy mapping to relational structures</li>
+						<li>the person designing the schema has a ER-structured brain</li>
+						<li>the schema has been generated from a relational database schema</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Problematic XML</title>
+				<ul>
+					<li>XML in its full glory is too much for tables</li>
+					<ul>
+						<li>XML has been developed as a document format</li>
+						<li>XML is about hierarchy (which <em>intentionally</em> have been left out of ER)</li>
+						<li>XML is about highly irregular structures</li>
+					</ul>
+					<li>XML often is said to have two <q>flavors</q></li>
+					<ul>
+						<li><em>data-oriented XML</em>: regular data which can be easily mapped to tables</li>
+						<li><em>document-oriented XML</em>: irregular structures which are hard to map to tables</li>
+						<li>real-world XML often is a bit of both (e.g., <em>content</em> and <em>metadata</em>)</li>
+					</ul>
+					<li>Hybrid approaches sometimes are a good solution</li>
+					<ul>
+						<li>data-oriented can be shredded and stored in tables</li>
+						<li>the document-oriented rest is stored as one object (text or <code>XML</code>)</li>
+					</ul>
+				</ul>
+			</slide>
+			<part id="sqlxml">
+				<title>SQL/XML</title>
+				<slide>
+					<title>SQL/XML:2003</title>
+					<ul>
+						<li>SQL/XML provides XML Support in RDBMSs</li>
+						<ul>
+							<li>it introduces <link href="xdbms-xmldatatype"/></li>
+							<li>it introduces a number of operations for generating XML from query results</li>
+							<li>it defines mappings to bridge both worlds (SQL and XML)</li>
+						</ul>
+						<li>SQL/XML does not change anything about the database model</li>
+						<ul>
+							<li>data is still stored in tables only</li>
+							<li>a column of a table may use the <code>XML</code> type</li>
+							<li>queries may return results in XML rather than as SQL result sets</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>SQL/XML Example</title>
+					<pre>SELECT
+  e.EmpId,
+  e.FirstName,
+  e.LastName,
+  e.StartDate,
+  e.EndDate
+FROM Employees e WHERE e.EmpId = 12</pre>
+					<pre>SELECT
+  XMLELEMENT(NAME "employee",
+    XMLATTRIBUTES(e.EmpId as "id"),
+    XMLELEMENT(NAME "names",
+      XMLELEMENT(NAME "first", e.FirstName),
+      XMLELEMENT(NAME "last", e.LastName)),
+    XMLELEMENT(NAME "hire-dates",
+      XMLATTRIBUTES(e.StartDate as "start", e.EndDate as "end")))
+FROM Employees e WHERE e.EmpId = 12</pre>
+				</slide>
+				<slide>
+					<title>SQL/XML:2007</title>
+					<ul>
+						<li>Adds the concept of <em>XML Tables</em></li>
+						<li>XML Tables are not tables, they are containers for XML</li>
+						<li>SQL/XML:2007 changes the database's data model</li>
+						<ul>
+							<li>it is now possible to have a database with <q>no tables</q></li>
+							<li>likely use cases are to have both: traditional and XML tables</li>
+						</ul>
+						<li>SQL/XML:2007 defines a hybrid database: relational and XML database</li>
+					</ul>
+				</slide>
+			</part>
+		</part>
+		<part id="xquery-processing">
+			<title>Processing Model</title>
+			<slide>
+				<title>Prolog</title>
+				<ul>
+					<li>Prolog comes in front of the query</li>
+					<li>Declare namespaces, global variables, global options, external variables etc.</li>
+					<li>Important declarations</li>
+					<ul>
+						<li><code>declare namespace foo = "http://bar";</code></li>
+						<li><code>declare option xhive:queryplan-debug "true";</code></li>
+					</ul>
+					<li>Predefined namespace prefixes</li>
+					<ul>
+						<li><code>xml, xmlns, fn, xs, xsi, op, xdt, local</code></li>
+						<li>plus implementation defined prefixes (e.g. <code>xhive</code>)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="xquery-tuple-stream">
+				<title>Tuple Stream</title>
+				<ul>
+					<li>FLWOR expressions are the central expression producing results</li>
+					<ul>
+						<li>nested <xq>for</xq> loops turn sorting into a non-trivial task</li>
+						<li>the concept of a <em>tuple stream</em> formally defines FLWOR evaluation</li>
+					</ul>
+					<li>Each FLWOR expression is generating a tuple stream</li>
+					<ul>
+						<li><xq>for</xq> and <xq>let</xq> generate a sequence of bound variables, the <em>tuple stream</em></li>
+						<li><xq>where</xq> acts as a filter testing tuples against a constraint (discarding some tuples)</li>
+						<li><xq>order by</xq> can be used to reorder the (possibly filtered) tuple stream</li>
+						<li><xq>return</xq> is evaluated once for each tuple in the filtered, reordered stream</li>
+						<li>the result of the expression are the concatenated results of all <xq>return</xq> evaluations</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="xquery-serialization">
+				<title>Serialization</title>
+				<ul>
+					<li>XQuery creates an <a href="http://dret.net/lectures/xml-fall08/xdm">XDM</a> instance as a result</li>
+					<li>XDM instances are sequences of items</li>
+					<ul>
+						<li>items can be atomic values</li>
+						<li>items can be nodes which are nested to form trees</li>
+					</ul>
+					<li>XQuery itself is not concerned with how to serialize XDM instances</li>
+					<ul>
+						<li>the language works on XDM and produces XDM</li>
+					</ul>
+					<li><a href="http://www.w3.org/TR/xslt-xquery-serialization/">XSLT 2.0 and XQuery 1.0 Serialization</a> defines the serialization of XDM instances</li>
+					<ul>
+						<li>the specification can be used for XSLT 2.0 and XQuery 1.0</li>
+						<li>if other serializations are required, this does not affect the core standards</li>
+						<li>currently supported output methods are <a href="http://www.w3.org/TR/xslt-xquery-serialization/#xml-output">XML</a>, <a href="http://www.w3.org/TR/xslt-xquery-serialization/#xhtml-output">XHTML</a>, <a href="http://www.w3.org/TR/xslt-xquery-serialization/#html-output">HTML</a>, and <a href="http://www.w3.org/TR/xslt-xquery-serialization/#text-output">Text</a></li>
+					</ul>
+					<li>Text output means that non-markup structures can be created directly</li>
+				</ul>
+			</slide>
+		</part>
 		<part>
 			<title>XQuery Sources</title>
 			<slide>
@@ -5595,49 +5844,6 @@ iVBORw0KGgoA … TAAAAAElFTkSuQmCC
 						<li>all documents in descendant libraries</li>
 						<li>only works within xDB, not for file system</li>
 					</ul>
-				</ul>
-			</slide>
-		</part>
-		<part id="xquery-processing">
-			<title>Processing Model</title>
-			<slide id="xquery-tuple-stream">
-				<title>Tuple Stream</title>
-				<ul>
-					<li>FLWOR expressions are the central expression producing results</li>
-					<ul>
-						<li>nested <xq>for</xq> loops turn sorting into a non-trivial task</li>
-						<li>the concept of a <em>tuple stream</em> formally defines FLWOR evaluation</li>
-					</ul>
-					<li>Each FLWOR expression is generating a tuple stream</li>
-					<ul>
-						<li><xq>for</xq> and <xq>let</xq> generate a sequence of bound variables, the <em>tuple stream</em></li>
-						<li><xq>where</xq> acts as a filter testing tuples against a constraint (discarding some tuples)</li>
-						<li><xq>order by</xq> can be used to reorder the (possibly filtered) tuple stream</li>
-						<li><xq>return</xq> is evaluated once for each tuple in the filtered, reordered stream</li>
-						<li>the result of the expression are the concatenated results of all <xq>return</xq> evaluations</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="xquery-serialization">
-				<title>Serialization</title>
-				<ul>
-					<li>XQuery creates an <a href="http://dret.net/lectures/xml-fall08/xdm">XDM</a> instance as a result</li>
-					<li>XDM instances are sequences of items</li>
-					<ul>
-						<li>items can be atomic values</li>
-						<li>items can be nodes which are nested to form trees</li>
-					</ul>
-					<li>XQuery itself is not concerned with how to serialize XDM instances</li>
-					<ul>
-						<li>the language works on XDM and produces XDM</li>
-					</ul>
-					<li><a href="http://www.w3.org/TR/xslt-xquery-serialization/">XSLT 2.0 and XQuery 1.0 Serialization</a> defines the serialization of XDM instances</li>
-					<ul>
-						<li>the specification can be used for XSLT 2.0 and XQuery 1.0</li>
-						<li>if other serializations are required, this does not affect the core standards</li>
-						<li>currently supported output methods are <a href="http://www.w3.org/TR/xslt-xquery-serialization/#xml-output">XML</a>, <a href="http://www.w3.org/TR/xslt-xquery-serialization/#xhtml-output">XHTML</a>, <a href="http://www.w3.org/TR/xslt-xquery-serialization/#html-output">HTML</a>, and <a href="http://www.w3.org/TR/xslt-xquery-serialization/#text-output">Text</a></li>
-					</ul>
-					<li>Text output means that non-markup structures can be created directly</li>
 				</ul>
 			</slide>
 		</part>
@@ -5698,28 +5904,6 @@ return
 }</pre>
 					<li>XSLT has the same concepts (<link href="xslt-literal"/> and <link href="xslt-element"><xslte>element</xslte></link>)</li>
 				</ul>
-			</slide>
-		</part>
-		<part id="xquery-functions">
-			<title>User-Defined Functions</title>
-			<slide>
-				<title>Reusable code in XQuery</title>
-				<ul>
-					<li>Named units of XQuery code</li>
-					<li>Zero or more input parameters (type information is optional)</li>
-					<li>Produces a result (type information is optional)</li>
-					<li>Function body is an XQuery expression</li>
-					<ul>
-						<li>there is no explicit return statement</li>
-						<li>the <xq>return</xq> of a <link href="xquery-flwor">FLWOR expression</link> may take over that role</li>
-					</ul>
-					<li>a predefined <xq>local</xq> namespace prefix avoids namespace inflation</li>
-				</ul>
-				<pre>declare function local:onetwothree() as xs:integer+ { (1, 2, 3) };</pre>
-			</slide>
-			<slide>
-				<title>Local Function</title>
-				<listing src="blog2html.xq"/>
 			</slide>
 		</part>
 		<part>
