@@ -5514,7 +5514,7 @@ iVBORw0KGgoA … TAAAAAElFTkSuQmCC
 		<title short="xDB">Setting Up xDB</title>
 		<date>2013-11-25</date>
 		<toc class="resources"><a href="https://community.emc.com/community/edn/xmltech/content" title="ECN Space: XML Technologies">EMC&#160;XML&#160;Home</a>&#160;· <a href="https://community.emc.com/docs/DOC-7711">xDB&#160;Manuals</a></toc>
-		<toc class="abstract">XML databases are not fundamentally different from other database engines: They provide support to store and query potentially large amounts of data. xDB is EMC's XML Database product, and is implemented in Java. It therefore can be used on any computer with Java runtime support. xDB has a database server, which has to be started and then waits for incoming connection requests. xDB also has a Java client which can be used to connect to the server, and then provides adminstrative as well as user functionality. In this lecture, we will install xDB on all student computers, and ingest some XML data into an XML database managed by xDB.</toc>
+		<toc class="abstract">XML databases are not fundamentally different from other database engines: They provide support to store and query potentially large amounts of data. xDB is EMC's XML Database product, and is implemented in Java. It therefore can be used on any computer with Java runtime support. xDB has a database server, which has to be started and then waits for incoming connection requests. xDB also has a Java client which can be used to connect to the server, and then provides administrative as well as user functionality. In this lecture, we will install xDB on all student computers, and ingest some XML data into an XML database managed by xDB.</toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -5524,7 +5524,7 @@ iVBORw0KGgoA … TAAAAAElFTkSuQmCC
 		<title short="XQuery 2">XML Query (XQuery) – Part II</title>
 		<date>2013-12-02</date>
 		<toc class="resources"><a href="http://en.wikipedia.org/wiki/SQL/XML" title="Wikipedia: SQL/XML">SQL/XML</a></toc>
-		<toc class="abstract"></toc>
+		<toc class="abstract">XML and relational databases are not entirely different things: they share the basic model of providing support for storing and processing (potentially large amounts of) data. SQL/XML is an approach to bridge the two worlds of relational and XML databases, by allowing relational database to produce XML, and even to store and query XML. In the second half of this lecture we are taking a second look at XQuery, specifically its processing model and the way how queries are specifying the input documents to XQuery expressions.</toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -5813,7 +5813,7 @@ FROM Employees e WHERE e.EmpId = 12</pre>
 					<li>All XQueries have an initial context item</li>
 					<ul>
 						<li>default starting point for unqualified XPath expressions</li>
-						<li>In xDB, this is the library, document, or node of the XQuery</li>
+						<li>in xDB, this is the library, document, or node of the XQuery</li>
 					</ul>
 				</ul>
 			</slide>
