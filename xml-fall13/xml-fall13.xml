@@ -5523,7 +5523,7 @@ iVBORw0KGgoA … TAAAAAElFTkSuQmCC
 	<presentation id="xquery-2">
 		<title short="XQuery 2">XML Query (XQuery) – Part II</title>
 		<date>2013-12-02</date>
-		<toc class="resources"></toc>
+		<toc class="resources"><a href="http://en.wikipedia.org/wiki/SQL/XML" title="Wikipedia: SQL/XML">SQL/XML</a></toc>
 		<toc class="abstract"></toc>
 		<slide>
 			<title>Abstract</title>
@@ -5721,16 +5721,16 @@ FROM Employees e WHERE e.EmpId = 12</pre>
 FROM Employees e WHERE e.EmpId = 12</pre>
 				</slide>
 				<slide>
-					<title>SQL/XML:2007</title>
+					<title>SQL/XML:2008</title>
 					<ul>
 						<li>Adds the concept of <em>XML Tables</em></li>
 						<li>XML Tables are not tables, they are containers for XML</li>
-						<li>SQL/XML:2007 changes the database's data model</li>
+						<li>SQL/XML:2008 changes the database's data model</li>
 						<ul>
 							<li>it is now possible to have a database with <q>no tables</q></li>
 							<li>likely use cases are to have both: traditional and XML tables</li>
 						</ul>
-						<li>SQL/XML:2007 defines a hybrid database: relational and XML database</li>
+						<li>SQL/XML:2008 defines a hybrid database: relational and XML database</li>
 					</ul>
 				</slide>
 			</part>
