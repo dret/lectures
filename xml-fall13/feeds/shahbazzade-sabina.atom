@@ -1,53 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://www.berkeley.edu</id>
-    <subtitle type="text">UC Berkeley</subtitle>
-    <link href="http://www.berkeley.edu" rel="self" type="application/atom+xml"></link>
-    <updated>2013-11-28T12:30:22.734Z</updated>
-    <title type="text">Classes at UC Berkeley!</title>
-   
-    <entry>
-        <department>
-        <title type="text"> Electrical Engineering and Computer Science </title>
-        <id>http://www.eecs.berkeley.edu/</id>
-        <updated>2013-11-27T12:31:21.345Z</updated>
-        <class>
-            <name>The Beauty and Joy of Computing.</name>
-            <number>10</number>
-            <enrolled>377</enrolled>
-            <grade>
-                0-100
-            </grade>
-        </class>
-        </department>
-    </entry>
-    
-    <entry>
-        <title type="text"> School of Information </title>
-        <id>https://www.ischool.berkeley.edu/</id>
-        <updated>2013-11-26T12:31:21.345Z</updated>
-        <class>
-            <name>XML Foundation.</name>
-            <number>242</number>
-            <enrolled>17</enrolled>
-            <grade>
-                0-100
-            </grade>
-        </class>
-    </entry>
-    
-    <entry>
-        <title type="text"> School of Law </title>
-        <id>http://www.law.berkeley.edu/</id>
-        <updated>2013-11-25T12:31:21.345Z</updated>
-        <class>
-            <name>Appellate Advocacy</name>
-            <number>243</number>
-            <enrolled>237</enrolled>
-            <grade>
-                0-100
-            </grade>
-        </class>
-    </entry>
-    
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:atom="http://www.w3.org/2005/Atom">
+   <title>Top 10 Comedy Movies!</title>
+   <link rel="self"
+         href="http://www.theguardian.com/film/filmblog/2013/oct/11/top-10-comedy-movies"/>
+   <updated>2013-11-20T07:07:05-07:00</updated>
+   <id>http://www.theguardian.com/film/filmblog/2013/oct/11/top-10-comedy-movies</id>
+   <author>
+      <name>Sabina Shahbazzade</name>
+   </author>
+   <entry>
+      <title>1. Annie Hall</title>
+      <id>http://viooz.co/movies/69-annie-hall-1977.html</id>
+      <updated>1977-01-30T01:00:00Z</updated>
+      <content>Woody Allen's nakedly auto­biographical film is the Oscar-winning sensation which put him on the map – and it's probably his best film, too. This fictionalised account of the rise and fall of a "nervous romance" between Jewish New York comic Alvy Singer (Allen) and the willowy, Waspy Annie Hall (Diane Keaton) was the high-water mark of Allen's gift for sublimely touching and funny screen comedy. It is a gloriously convincing romance, packed with superb gags.</content>
+   </entry>
+   <entry>
+      <title>10. Airplane! </title>
+      <id>http://viooz.co/movies/1620-airplane-1980.html</id>
+      <updated>1980-10-30T01:00:00Z</updated>
+      <content>By rights you should hate Airplane!, simply because its influence stretches to every single woeful parody film made in the last three decades. Without Airplane! there'd be no Epic Movie or Date Movie or Meet the Spartans or Robin Hood: Men in Tights. But, despite all the pain and misery that it's indirectly inflicted on the world, do you hate it? Of course not. That's because Airplane! is untouchably brilliant.</content>
+   </entry>
+   <entry>
+      <title>2. Borat </title>
+      <id>http://bit.ly/ICqmDE</id>
+      <updated>2006-02-01T01:00:00Z</updated>
+      <content>Could anyone have foreseen just how great a comedy Borat – or to give it its full title, Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan – was going to be? Its star, Sacha Baron Cohen, had honed the satirical stunt documentary to perfection in his Ali G TV series, but had crashed and burned when trying to put the character on the big screen, in the awful Ali G Indahouse. It's still a bit of a mystery why Baron Cohen ever got the chance to make a follow-up, but he wisely went back to the format that had proved itself time and again on TV: set up an apparently clueless fictional character, and send him in to encounter real-life types and get them to make idiots of themselves. Borat, the cheerfully antisemitic TV presenter from Kazakhstan, who had populated Baron Cohen's TV spots since the late 90s, may not have appeared promising material for a feature, but boy, was everyone wrong.</content>
+   </entry>
+   <entry>
+      <title>3. Some Like It Hot. </title>
+      <id>http://viooz.co/movies/3836-some-like-it-hot-1959.html</id>
+      <updated>1959-03-02T01:00:00Z</updated>
+      <content>Though it takes place in the Roaring Twenties, Some Like it Hot can be thought of as the first great American comedy of the swinging 60s. It was so advanced for its time in its sexual mores that it won the double-standard for offensive Hollywood cultural product: it was released without the Motion Picture Association of America's seal of approval, and very much with a C (condemned) rating from the Catholic Church's Legion of Decency.</content>
+   </entry>
+   <entry>
+      <title>4. Team America: World Police. </title>
+      <id>http://viooz.co/movies/2663-team-america-world-police-2004.html</id>
+      <updated>2004-04-03T01:00:00Z</updated>
+      <content>Released a year into the Iraq war, this was the first and perhaps the funniest of Hollywood's early reactions to the messy conflict. Based on a brilliantly simple and idiotic conceit – an action movie with puppets, in the style of Gerry "Thunderbirds" Anderson's "supermarionation" – it turns the same scatological splatter-gun on America's jumped-up sense of itself as policeman to the planet that writer-directors Trey Parker and Matt Stone had used on TV in South Park.</content>
+   </entry>
+   <entry>
+      <title>5. The Ladykillers. </title>
+      <id>http://viooz.co/movies/2680-the-ladykillers-2004.html</id>
+      <updated>1955-05-04T01:00:00Z</updated>
+      <content>The Ladykillers was the last of the great Ealing comedies and, almost by default, the dying gasp of a vanishing London; still rationed and rubble-strewn, with steam trains on the tracks and carthorses on the streets.</content>
+   </entry>
+   <entry>
+      <title>6. Dr Strangelove. </title>
+      <id>http://bit.ly/17TzpeW</id>
+      <updated>1964-06-05T01:00:00Z</updated>
+      <content>We may think of 1964 as the year the Beatles appeared on the Ed Sullivan Show or as the last year of peace before America set itself to annihilating in earnest the small Republic of North Vietnam, but it was also the year Khrushchev was overthrown and China detonated its own atomic bomb (weirdly, those two things happened on the same day). In the aftermath of the Kennedy assassination, these were things that seemed worth being terrified of. </content>
+   </entry>
+   <entry>
+      <title>7. Duck Soup. </title>
+      <id>http://viooz.co/movies/205-duck-soup-1933.html</id>
+      <updated>1933-07-06T01:00:00Z</updated>
+      <content>About 10 months after Adolf Hitler was appointed chancellor of Germany, Duck Soup opened. Is there any way of reconciling (or separating) these two events? Which moustache was the more dangerous or absurd? In the movie, Groucho played Rufus T Firefly, president of Freedonia, ready to defend the honour of Mrs Teasdale (Margaret Dumont) – if he could find it – by going to war with Sylvania. It is respectable to claim that anti-war films of the early 30s are really important and frightening. But I'm not sure the blithe pro-war stance of Duck Soup hasn't lasted better as a clue to how crazy the 30s were.  </content>
+   </entry>
+   <entry>
+      <title>8. Rishmore. </title>
+      <id>http://viooz.co/movies/3754-rushmore-1998.html</id>
+      <updated>1998-08-07T01:00:00Z</updated>
+      <content>Shortly after finishing this, his second feature film, Wes Anderson arranged a private screening for the New Yorker's esteemed former film critic, Pauline Kael. After the lights came up, the 79-year-old turned toward this fresh-faced auteur, 50 years her junior, and said: "I don't know what you've got here, Wes … I genuinely don't know what to make of this movie."  </content>
+   </entry>
+   <entry>
+      <title>9. Monty Python's Life of Brian. </title>
+      <id>http://bit.ly/1fHZxfq</id>
+      <updated>1979-09-30T01:00:00Z</updated>
+      <content>Athough the Pythons were originally inspired by a title (Jesus Christ: Lust for Glory) to make an irreverent biblical comedy, Life of Brian is not about the son of God. It's about the guy in the next-door manger, born on the same night: Brian Cohen. It was an easy mistake to make; even the three wise men were momentarily fooled. Predictably, the film caused wide­spread outrage; accusations of blasphemy prevented it from being screened in many countries, while the marketing campaign cheerfully capitalised on the protest, proclaiming the film "so funny it was banned in Norway".  </content>
+   </entry>
 </feed>
