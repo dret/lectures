@@ -1,79 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us">
+<feed xmlns="http://www.w3.org/2005/Atom" 
+    xmlns:fn="http://www.w3.org/2005/xpath-functions" 
+    xml:lang="en-us">
     <title>Movies</title>
-    <id>http://www.movieswatched.com/</id>
-    <link rel='self' href="http://www.movieswatched.com/feed"/>
-    <updated>2013-11-29T09:00:00-07:00</updated>
-    <author>
-        <name>Emily Lin</name>
-    </author>
+    <id>http://www.movieswatched.com</id>
+    <link rel="self" href="http://www.movieswatched.com"/>
+    <updated>2013-12-02T21:56:18.304-08:00</updated>
+    <author><name>Emily Lin</name></author>
     <category term="movies"/>
+    
     <entry>
-        <id>http://www.movieswatched.com/feed/1</id>
-        <title>Star Trek: Into Darkness</title>
+        <id>http://www.movieswatched.com/feed/</id>
+        <title>Star Trek: Into the Darkness</title>
         <published>2013-05-26T10:00:00-07:00</published>
-        <updated>2013-05-27T09:00:00-07:00</updated>
-        <content>When the crew of the Enterprise is called back home, they find an unstoppable force of terror 
-            from within their own organization has detonated the fleet and everything it stands for, leaving our world in a state of crisis. 
-            With a personal score to settle, Captain Kirk leads a manhunt to a war-zone world to capture a one man weapon of mass destruction. 
-            As our heroes are propelled into an epic chess game of life and death, love will be challenged, friendships will be torn apart, and 
-            sacrifices must be made for the only family Kirk has left: his crew.</content>
-        <category term="action"/>
+        <updated>2013-12-02T21:56:18.304-08:00</updated>
+        <content>When the crew of the Enterprise is called back home, they find an unstoppable force of terror from within their own organization has detonated the fleet and everything it stands for, leaving our world in a state of crisis. With a personal score to settle, Captain Kirk leads a manhunt to a war-zone world to capture a one man weapon of mass destruction. As our heroes are propelled into an epic chess game of life and death, love will be challenged, friendships will be torn apart, and sacrifices must be made for the only family Kirk has left: his crew.</content>
     </entry>
     
     <entry>
-        <id>http://www.movieswatched.com/feed/2</id>
+        <id>http://www.movieswatched.com/feed/</id>
         <title>Iron Man 3</title>
         <published>2013-06-13T11:30:00-07:00</published>
-        <updated>2013-06-13T09:00:00-07:00</updated>
-        <content>Iron Man 3 is a 2013 American superhero film featuring the Marvel Comics character Iron Man, 
-            produced by Kevin Feige of Marvel Studios and distributed by Walt Disney Studios Motion Pictures.</content>
-        <category term="action"/>
+        <updated>2013-12-02T21:56:18.304-08:00</updated>
+        <content>Iron Man 3 is a 2013 American superhero film featuring the Marvel Comics character Iron Man, produced by Kevin Feige of Marvel Studios and distributed by Walt Disney Studios Motion Pictures.</content>
     </entry>
     
     <entry>
-        <id>http://www.movieswatched.com/feed/3</id>
-        <title>This Is the End</title>
+        <id>http://www.movieswatched.com/feed/</id>
+        <title>This is the End</title>
         <published>2013-07-20T10:20:00-07:00</published>
-        <updated>2013-07-21T09:00:00-07:00</updated>
-        <content>Follows six friends trapped in a house after a series of strange and catastrophic events devastate Los Angeles. 
-            As the world unravels outside, dwindling supplies and cabin fever threaten to tear apart the friendships inside. 
-            Eventually, they are forced to leave the house, facing their 
-            fate and the true meaning of friendship and redemption.</content>
-        <category term="comedy"/>
+        <updated>2013-12-02T21:56:18.304-08:00</updated>
+        <content>Follows six friends trapped in a house after a series of strange and catastrophic events devastate Los Angeles. As the world unravels outside, dwindling supplies and cabin fever threaten to tear apart the friendships inside. Eventually, they are forced to leave the house, facing their fate and the true meaning of friendship and redemption.</content>
     </entry>
     
     <entry>
-        <id>http://www.movieswatched.com/feed/4</id>
-        <title>Desipcable Me 2</title>
+        <id>http://www.movieswatched.com/feed/</id>
+        <title>Despicable Me 2</title>
         <published>2013-07-23T08:30:00-07:00</published>
-        <updated>2013-07-24T09:00:00-07:00</updated>
-        <content>In summer 2013, get ready for more Minion madness in Despicable Me 2. 
-            Chris Meledandri and his acclaimed filmmaking team create an all-new comedy adventure featuring the 
-            return of (former?) super-villain Gru (Steve Carell), his adorable girls, the unpredictably 
-            hilarious Minions...and a host of new and outrageously funny characters.</content>
-        <category term="comedy"/>
+        <updated>2013-12-02T21:56:18.304-08:00</updated>
+        <content>In summer 2013, get ready for more Minion madness in Despicable Me 2. Chris Meledandri and his acclaimed filmmaking team create an all-new comedy adventure featuring the return of (former?) super-villain Gru (Steve Carell), his adorable girls, the unpredictably hilarious Minions...and a host of new and outrageously funny characters</content>
     </entry>
     
     <entry>
-        <id>http://www.movieswatched.com/feed/5</id>
+        <id>http://www.movieswatched.com/feed/</id>
         <title>The Hunger Games: Catching Fire</title>
         <published>2013-11-22T10:10:00-07:00</published>
-        <updated>2013-11-23T09:00:00-07:00</updated>
-        <content>Katniss Everdeen and Peeta Mellark become targets of the Capitol after their victory
-            in the 74th Hunger Games sparks a rebellion in the Districts of Panem.</content>
-        <category term="adventure"/>
+        <updated>2013-12-02T21:56:18.304-08:00</updated>
+        <content>Katniss Everdeen and Peeta Mellark become targets of the Capitol after their victory in the 74th Hunger Games sparks a rebellion in the Districts of Panem</content>
     </entry>
     
     <entry>
-        <id>http://www.movieswatched.com/feed/6</id>
+        <id>http://www.movieswatched.com/feed/</id>
         <title>Thor: The Dark World</title>
         <published>2013-11-27T07:20:00-07:00</published>
-        <updated>2013-11-29T09:00:00-07:00</updated>
-        <content>Faced with an enemy that even Odin and Asgard cannot withstand, Thor must embark on his most 
-            perilous and personal journey yet, one that will reunite him with Jane Foster and force him to 
-            sacrifice everything to save us all.</content>
-        <category term="action"/>
+        <updated>2013-12-02T21:56:18.304-08:00</updated>
+        <content>Faced with an enemy that even Odin and Asgard cannot withstand, Thor must embark on his most perilous and personal journey yet, one that will reunite him with Jane Foster and force him to sacrifice everything to save us all.</content>
     </entry>
-    
 </feed>
