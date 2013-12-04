@@ -2046,9 +2046,9 @@
 			<slide>
 				<title>Namespace Definitions</title>
 				<ul>
-					<li>Namespaces can be defined by a DTD (<a href="http://www.w3.org/TR/xhtml1/#strict">XHTML</a>)</li>
-					<li>Namespaces can be defined by XSD (<a href="http://www.w3.org/TR/soap12-part1/#tabnsprefixes">SOAP</a>)</li>
-					<li>Namespaces can be defined by RELAX NG (<a href="http://www.w3.org/TR/xhtml2/conformance.html#strict">XHTML 2.0</a>)</li>
+					<li>Namespaces can be defined by a <link href="dtd"/> (<a href="http://www.w3.org/TR/xhtml1/#strict">XHTML</a>)</li>
+					<li>Namespaces can be defined by <link href="xsd-1"/> (<a href="http://www.w3.org/TR/soap12-part1/#tabnsprefixes">SOAP</a>)</li>
+					<li>Namespaces can be defined by <link href="relax-ng"/> (<a href="http://www.w3.org/TR/xhtml2/conformance.html#strict">XHTML 2.0</a>)</li>
 					<li>Namespaces can be defined by prose (<a href="http://www.w3.org/TR/xslt#xslt-namespace">XSLT</a>)</li>
 					<li>If schemas are provided, additional information is required</li>
 					<ul>
@@ -2789,7 +2789,7 @@
 						</ul>
 						<li>Attributes could be better integrated into the model</li>
 						<ul>
-							<li>RELAX NG treats attributes as part of an element's content model</li>
+							<li><link href="relax-ng"/> treats attributes as part of an element's content model</li>
 							<li>this makes it trivial to have choices of element content and attributes</li>
 						</ul>
 					</ul>
@@ -5922,12 +5922,120 @@ return
 	<presentation id="varia">
 		<title short="Varia">XML Varia</title>
 		<date>2013-12-04</date>
-		<toc class="resources"><a href="http://www.w3.org/TR/xml-id/" title='W3C "xml:id" Spec'>xml:id</a>&#160;· <a href="http://www.w3.org/TR/xinclude/" title='W3C "XML Inclusions (XInclude)" Spec'>XInclude</a></toc>
+		<toc class="resources"><a href="http://www.thaiopensource.com/relaxng/design.html">The Design of RELAX NG</a>&#160;· <a href="http://www.w3.org/TR/xml-id/" title='W3C "xml:id" Spec'>xml:id</a>&#160;· <a href="http://www.w3.org/TR/xinclude/" title='W3C "XML Inclusions (XInclude)" Spec'>XInclude</a></toc>
 		<toc class="abstract"></toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="relax-ng">
+			<title>RELAX NG</title>
+			<slide>
+				<title>Design by Committee</title>
+				<ul>
+					<li>XSD was a political decision</li>
+					<ul>
+						<li>several schema languages were competing to replace DTDs</li>
+						<li>DCD, DDML, SOX, XML Data, and XDR were inputs to XSD</li>
+						<li>XSD became the first unreadable W3C specification</li>
+						<li>implementing XSD correctly is hard (large number of specialized rules)</li>
+					</ul>
+					<li>Researchers were looking for a more elegant solution</li>
+					<ul>
+						<li>the underlying formalism should be well-defined and well-studied</li>
+						<li>the schema language should be easy to learn and use</li>
+						<li>lessons learned from DTDs should be included</li>
+					</ul>
+					<li>RELAX NG is the merger of two similar approaches</li>
+					<ul>
+						<li><em>Tree Regular Expressions (TREX)</em></li>
+						<li><em>Regular Language description for XML (RELAX)</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>RELAX NG +/-</title>
+				<ul>
+					<li>RELAX NG and XSD are direct competitors</li>
+					<li>Advantages of RELAX NG</li>
+					<ul>
+						<li><link href="relaxng-compact"/></li>
+						<li>the document element is well-defined</li>
+						<li>SGML's <q><code>&amp;</code></q> is supported (<xsde>all</xsde> is extremely limited)</li>
+						<li>non-deterministic content models</li>
+					</ul>
+					<li>Disadvantages of RELAX NG</li>
+					<ul>
+						<li>no datatype support (datatype libraries can be included)</li>
+						<li>no modeling facilities in the spirit of XSD's type derivation</li>
+						<li>less popular than XSD</li>
+						<li>no support for XSD's numeric occurrence constraints (<xsd>minOccurs</xsd>/<xsd>maxOccurs</xsd>)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>RELAX NG Syntaxes</title>
+				<img src="xml-technology-syntaxes.png" style="width : 90% ; margin : 4% ; "/>
+			</slide>
+			<part>
+				<title>Principles</title>
+				<slide>
+					<title>Validation</title>
+					<ul>
+						<li>Validation should not change the document</li>
+						<ul>
+							<li>there are no default values</li>
+						</ul>
+						<li>Only schema↔instance tests are supported</li>
+						<ul>
+							<li>there is no type hierarchy as in XSD (schema↔schema)</li>
+							<li>there are no identity constraints (instance↔instance)</li>
+						</ul>
+						<li>Grammars should not be restricted</li>
+						<ul>
+							<li>DTDs and XSD no not allow non-determinism</li>
+							<li>RELAX NG allows non-deterministic content models</li>
+							<pre>chess = white, (black, white)*, black?</pre>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Grammars</title>
+					<ul>
+						<li>RELAX NG grammars have a start symbol</li>
+						<ul>
+							<li>DTDs and XSD do not have start symbols</li>
+						</ul>
+						<li>Attributes are defined as part of the <q>content model</q></li>
+						<ul>
+							<li>a more homogeneous view of the XML document tree</li>
+							<li>this allows alternatives of elements and attributes</li>
+						</ul>
+						<li>Grammars are a set of named rules</li>
+						<ul>
+							<li>rules define how an element is composed</li>
+							<li>local definitions (nested specifications of content models) are possible</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part>
+				<title>Example</title>
+				<slide>
+					<title>DTD and XSD</title>
+					<listing src="document.dtd"/>
+					<listing src="document.xsd"/>
+				</slide>
+				<slide>
+					<title>RELAX NG</title>
+					<listing src="document.rng"/>
+				</slide>
+				<slide id="relaxng-compact">
+					<title>RELAX NG Compact Syntax</title>
+					<listing src="document.rnc"/>
+				</slide>
+			</part>
+		</part>
 		<part id="infoset">
 			<title short="Infoset">XML Information Set (XML Infoset)</title>
 			<slide>

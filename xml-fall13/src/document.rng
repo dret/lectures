@@ -1,0 +1,21 @@
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+ <start><ref name="document"/></start>
+ <define name="document">
+  <element name="document">
+   <ref name="heading"/>
+   <ref name="chapter"/>
+  </element>
+ </define>
+ <define name="heading">
+  <element name="heading"><text/></element>
+ </define>
+ <define name="chapter">
+  <element name="chapter">
+   <attribute name="id"><text/></attribute>
+   <ref name="heading"/>
+   <oneOrMore>
+    <element name="para"><text/></element>
+   </oneOrMore>
+  </element>
+ </define>
+</grammar>

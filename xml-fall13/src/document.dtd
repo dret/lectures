@@ -1,0 +1,5 @@
+<!ELEMENT document (heading, chapter) >
+<!ELEMENT heading  (#PCDATA) >
+<!ELEMENT chapter  (heading, para+) >
+<!ATTLIST chapter  id ID #REQUIRED >
+<!ELEMENT para     (#PCDATA) >

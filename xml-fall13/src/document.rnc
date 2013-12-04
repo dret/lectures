@@ -1,0 +1,11 @@
+start    = document
+
+document = element document { heading, chapter }
+
+heading  = element heading { text }
+
+chapter  = element chapter {
+    attribute id { text },
+    heading,
+    element para { text }+
+  }
