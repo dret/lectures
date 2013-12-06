@@ -212,7 +212,7 @@
 				<slide id="xml-and-csv">
 					<title>XML and CSV</title>
 					<ul>
-						<li>CSV is easier to understand and use</li>
+						<li><link href="tabular">CSV</link> is easier to understand and use</li>
 						<li>CSV tools (such as <em>Excel</em>) are widely used and understood</li>
 						<li>Structures beyond tables are hard to represent</li>
 						<li>Document structures are impossible to represent</li>
@@ -221,7 +221,7 @@
 				<slide id="xml-and-json">
 					<title>XML and JSON</title>
 					<ul>
-						<li>JSON maps better into most programming languages</li>
+						<li><link href="json">JSON</link> maps better into most programming languages</li>
 						<li>JSON objects can be readily used as language objects</li>
 						<li>Structures beyond nested objects/arrays are hard to represent</li>
 						<li>Document structures are impossible to represent</li>
@@ -230,7 +230,7 @@
 				<slide id="xml-and-rdf">
 					<title>XML and RDF</title>
 					<ul>
-						<li>RDF does not have the built-in <q>tree bias</q> of XML</li>
+						<li><link href="rdf">RDF</link> does not have the built-in <q>tree bias</q> of XML</li>
 						<li>RDF can be combined more easily across <q>documents</q></li>
 						<li>Data that has some <q>natural coherence</q> is hard to manage</li>
 						<li>Document structures are impossible to represent</li>
@@ -4603,7 +4603,7 @@ loop param counter ; {
 						</ul>
 					</ul>
 				</slide>
-				<slide id="json">
+				<slide>
 					<title short="JSON">JavaScript Object Notation (JSON)</title>
 					<ul>
 						<li>The <code>XMLHttpRequest</code> API has been built for requesting XML via HTTP</li>
@@ -4617,7 +4617,7 @@ loop param counter ; {
 							<li>DOM access in JavaScript is inconvenient for complex operations</li>
 							<li>alternatively, the XML can be mapped to JavaScript objects (also requires parsing)</li>
 						</ul>
-						<li><em>JavaScript Object Notation (JSON)</em> encodes data as JavaScript objects</li>
+						<li><link href="json"/> encodes data as JavaScript objects</li>
 						<ul>
 							<li>more efficient for the consumer if the consumer is written in JavaScript</li>
 							<li>this turns the generally usable XML service into a JavaScript-oriented service</li>
@@ -4635,7 +4635,7 @@ loop param counter ; {
 					<title>Atom</title>
 					<ul>
 						<li>A language for representing <em>syndication feeds</em></li>
-						<li>Much more modest in its goal than <link href="xml">XML</link> or RDF</li>
+						<li>Much more modest in its goal than <link href="xml">XML</link> or <link href="rdf">RDF</link></li>
 						<ul>
 							<li>models feeds as a sets of entries with associated metadata</li>
 							<li>uses an XML vocabulary for representing the data model</li>
@@ -5919,218 +5919,227 @@ return
 			</slide>
 		</part>
 	</presentation>
-	<presentation id="varia">
-		<title short="Varia">XML Varia</title>
+	<presentation id="relax-ng">
+		<title>RELAX NG</title>
 		<date>2013-12-04</date>
-		<toc class="resources"><a href="http://www.thaiopensource.com/relaxng/design.html">The Design of RELAX NG</a>&#160;· <a href="http://www.w3.org/TR/xml-id/" title='W3C "xml:id" Spec'>xml:id</a>&#160;· <a href="http://www.w3.org/TR/xinclude/" title='W3C "XML Inclusions (XInclude)" Spec'>XInclude</a></toc>
-		<toc class="abstract"></toc>
+		<toc class="resources"><a href="http://relaxng.org/" title='RELAXNG.org'>RELAX&#160;NG&#160;Home&#160;Page</a>&#160;· <a href="http://www.thaiopensource.com/relaxng/design.html">The Design of RELAX NG</a></toc>
+		<toc class="abstract">Schema languages as a general concept in XML are used to (1) prescribe the allowed document structure, and/or (2) validate a document against a description of what is allowed in a document and what isn't. DTDs and XSDs are particularly important schema languages because DTDs are part of XML itself, and XSD was the first major improvement of the rather limited capabilities of DTDs. Recently, however, XSD is increasingly criticized for its complexity, and the RELAX NG schema language is gaining popularity instead. RELAX NG is a grammar-based schema language (like DTD and XSD), but adds a human-friendly syntax, the ability to use datatypes, and it removes the ability to allow validation to change a document.</toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
-		<part id="relax-ng">
-			<title>RELAX NG</title>
-			<slide>
-				<title>Design by Committee</title>
+		<slide>
+			<title>Design by Committee</title>
+			<ul>
+				<li>XSD was a political decision</li>
 				<ul>
-					<li>XSD was a political decision</li>
+					<li>several schema languages were competing to replace DTDs</li>
+					<li>DCD, DDML, SOX, XML Data, and XDR were inputs to XSD</li>
+					<li>XSD became the first unreadable W3C specification</li>
+					<li>implementing XSD correctly is hard (large number of specialized rules)</li>
+				</ul>
+				<li>Researchers were looking for a more elegant solution</li>
+				<ul>
+					<li>the underlying formalism should be well-defined and well-studied</li>
+					<li>the schema language should be easy to learn and use</li>
+					<li>lessons learned from DTDs should be included</li>
+				</ul>
+				<li>RELAX NG is the merger of two similar approaches</li>
+				<ul>
+					<li><em>Tree Regular Expressions (TREX)</em></li>
+					<li><em>Regular Language description for XML (RELAX)</em></li>
+				</ul>
+			</ul>
+		</slide>
+		<slide>
+			<title>RELAX NG +/-</title>
+			<ul>
+				<li>RELAX NG and XSD are direct competitors</li>
+				<li>Advantages of RELAX NG</li>
+				<ul>
+					<li><link href="relaxng-compact"/></li>
+					<li>the document element is well-defined</li>
+					<li>SGML's <q><code>&amp;</code></q> is supported (<xsde>all</xsde> is extremely limited)</li>
+					<li>non-deterministic content models</li>
+				</ul>
+				<li>Disadvantages of RELAX NG</li>
+				<ul>
+					<li>no datatype support (datatype libraries can be included)</li>
+					<li>no modeling facilities in the spirit of XSD's type derivation</li>
+					<li>less popular than XSD</li>
+					<li>no support for XSD's numeric occurrence constraints (<xsd>minOccurs</xsd>/<xsd>maxOccurs</xsd>)</li>
+				</ul>
+			</ul>
+		</slide>
+		<slide>
+			<title>RELAX NG Syntaxes</title>
+			<img src="xml-technology-syntaxes.png" style="width : 90% ; margin : 4% ; "/>
+		</slide>
+		<part>
+			<title>Principles</title>
+			<slide>
+				<title>Validation</title>
+				<ul>
+					<li>Validation should not change the document</li>
 					<ul>
-						<li>several schema languages were competing to replace DTDs</li>
-						<li>DCD, DDML, SOX, XML Data, and XDR were inputs to XSD</li>
-						<li>XSD became the first unreadable W3C specification</li>
-						<li>implementing XSD correctly is hard (large number of specialized rules)</li>
+						<li>there are no default values</li>
 					</ul>
-					<li>Researchers were looking for a more elegant solution</li>
+					<li>Only schema↔instance tests are supported</li>
 					<ul>
-						<li>the underlying formalism should be well-defined and well-studied</li>
-						<li>the schema language should be easy to learn and use</li>
-						<li>lessons learned from DTDs should be included</li>
+						<li>there is no type hierarchy as in XSD (schema↔schema)</li>
+						<li>there are no identity constraints (instance↔instance)</li>
 					</ul>
-					<li>RELAX NG is the merger of two similar approaches</li>
+					<li>Grammars should not be restricted</li>
 					<ul>
-						<li><em>Tree Regular Expressions (TREX)</em></li>
-						<li><em>Regular Language description for XML (RELAX)</em></li>
+						<li>DTDs and XSD no not allow non-determinism</li>
+						<li>RELAX NG allows non-deterministic content models</li>
+						<pre>chess = white, (black, white)*, black?</pre>
 					</ul>
 				</ul>
 			</slide>
 			<slide>
-				<title>RELAX NG +/-</title>
+				<title>Grammars</title>
 				<ul>
-					<li>RELAX NG and XSD are direct competitors</li>
-					<li>Advantages of RELAX NG</li>
+					<li>RELAX NG grammars have a start symbol</li>
 					<ul>
-						<li><link href="relaxng-compact"/></li>
-						<li>the document element is well-defined</li>
-						<li>SGML's <q><code>&amp;</code></q> is supported (<xsde>all</xsde> is extremely limited)</li>
-						<li>non-deterministic content models</li>
+						<li>DTDs and XSD do not have start symbols</li>
 					</ul>
-					<li>Disadvantages of RELAX NG</li>
+					<li>Attributes are defined as part of the <q>content model</q></li>
 					<ul>
-						<li>no datatype support (datatype libraries can be included)</li>
-						<li>no modeling facilities in the spirit of XSD's type derivation</li>
-						<li>less popular than XSD</li>
-						<li>no support for XSD's numeric occurrence constraints (<xsd>minOccurs</xsd>/<xsd>maxOccurs</xsd>)</li>
+						<li>a more homogeneous view of the XML document tree</li>
+						<li>this allows alternatives of elements and attributes</li>
+					</ul>
+					<li>Grammars are a set of named rules</li>
+					<ul>
+						<li>rules define how an element is composed</li>
+						<li>local definitions (nested specifications of content models) are possible</li>
 					</ul>
 				</ul>
 			</slide>
+		</part>
+		<part>
+			<title>Example</title>
 			<slide>
-				<title>RELAX NG Syntaxes</title>
-				<img src="xml-technology-syntaxes.png" style="width : 90% ; margin : 4% ; "/>
+				<title>DTD and XSD</title>
+				<listing src="document.dtd"/>
+				<listing src="document.xsd"/>
 			</slide>
-			<part>
-				<title>Principles</title>
+			<slide>
+				<title>RELAX NG</title>
+				<listing src="document.rng"/>
+			</slide>
+			<slide id="relaxng-compact">
+				<title>RELAX NG Compact Syntax</title>
+				<listing src="document.rnc"/>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="varia">
+		<title>XML Varia</title>
+		<date>2013-12-09</date>
+		<toc class="resources"><a href="http://www.w3.org/TR/xml-id/" title='W3C "xml:id" Spec'>xml:id</a>&#160;· <a href="http://www.w3.org/TR/xinclude/" title='W3C "XML Inclusions (XInclude)" Spec'>XInclude</a>&#160;· <a href="http://dret.typepad.com/dretblog/2009/08/data-models-metamodels-cosmologies.html">Data,&#160;Models,&#160;Metamodels,&#160;Cosmologies</a></toc>
+		<toc class="abstract">One of the reasons why using XML-based approaches for data representation, management, interchange, and processing, is that there is a large landscape of existing standards and technologies and tools, and that for many problems it thus is possible to approach the problem by reusing existing solutions. In this final lecture of the XML course, we look at a small set of additional standards that were not yet covered. The second half of the lecture compares XML to alternatives, that also are used as ways to represent and/or manage and/or exchange and/or process data. The most relevant approaches in this space are RDF, JSON, and tabular/relational models such as SQL or NoSQL.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="various-technologies">
+			<title>Various XML Technologies</title>
+			<part id="infoset">
+				<title short="Infoset">XML Information Set (XML Infoset)</title>
 				<slide>
-					<title>Validation</title>
+					<title>What is the Content of an XML Document?</title>
 					<ul>
-						<li>Validation should not change the document</li>
+						<li>An interesting (and fruitless) discussion</li>
 						<ul>
-							<li>there are no default values</li>
+							<li>the content is whatever you consider it to be</li>
+							<li>agreement between peers is necessary for data exchange</li>
+							<li>agreement between specification writers and toolmakers is necessary to provide tools</li>
 						</ul>
-						<li>Only schema↔instance tests are supported</li>
+						<li>DOM and XSLT were two early arrivals</li>
 						<ul>
-							<li>there is no type hierarchy as in XSD (schema↔schema)</li>
-							<li>there are no identity constraints (instance↔instance)</li>
+							<li>both had an idea (and a model) of what the content of an XML document is</li>
+							<li>they did not have the exact same idea</li>
 						</ul>
-						<li>Grammars should not be restricted</li>
+						<li>Set a normative standard for an XML document's content</li>
 						<ul>
-							<li>DTDs and XSD no not allow non-determinism</li>
-							<li>RELAX NG allows non-deterministic content models</li>
-							<pre>chess = white, (black, white)*, black?</pre>
+							<li>the Infoset defines what is represented in the tree</li>
+							<li>people should be confident to get this information when using XML technologies</li>
 						</ul>
 					</ul>
 				</slide>
 				<slide>
-					<title>Grammars</title>
+					<title>Infoset Example</title>
+					<img src="infoset-example.png" style="width : 90% ; margin : 4% ; "/>
+				</slide>
+				<slide id="not-infoset">
+					<title>What is <u>Not</u> in the Infoset</title>
 					<ul>
-						<li>RELAX NG grammars have a start symbol</li>
+						<li>Do not rely on <a href="http://www.w3.org/TR/xml-infoset/#omitted">information not available in the Infoset</a></li>
 						<ul>
-							<li>DTDs and XSD do not have start symbols</li>
+							<li>order of attributes</li>
+							<li>type of quotes around attribute values</li>
+							<li>notation of empty elements (<code>&lt;elem>&lt;/elem></code> vs. <code>&lt;elem/></code>)</li>
+							<li>how lines are terminated</li>
+							<li>entities and character references</li>
 						</ul>
-						<li>Attributes are defined as part of the <q>content model</q></li>
+						<li>XML contains all this information if used as XML document</li>
+						<li>many XML technologies are in fact Infoset technologies</li>
 						<ul>
-							<li>a more homogeneous view of the XML document tree</li>
-							<li>this allows alternatives of elements and attributes</li>
-						</ul>
-						<li>Grammars are a set of named rules</li>
-						<ul>
-							<li>rules define how an element is composed</li>
-							<li>local definitions (nested specifications of content models) are possible</li>
+							<li>XSD, XSLT, XQuery, SOAP, …</li>
 						</ul>
 					</ul>
 				</slide>
 			</part>
-			<part>
-				<title>Example</title>
+			<part id="xml:id">
+				<title short="xml:id">XML IDs with xml:id</title>
 				<slide>
-					<title>DTD and XSD</title>
-					<listing src="document.dtd"/>
-					<listing src="document.xsd"/>
-				</slide>
-				<slide>
-					<title>RELAX NG</title>
-					<listing src="document.rng"/>
-				</slide>
-				<slide id="relaxng-compact">
-					<title>RELAX NG Compact Syntax</title>
-					<listing src="document.rnc"/>
+					<title>References in Instances</title>
+					<ul>
+						<li><link href="dtd">DTD</link> and <link href="xsd-1">XSD</link> IDs are defined in the schema</li>
+						<ul>
+							<li>the important information is the <em>(attribute) type</em> in the schema</li>
+							<li>the name of the attribute can be freely chosen by the schema designer</li>
+						</ul>
+						<li><a href="http://www.w3.org/TR/xml-id/" title='W3C "xml:id" Spec'>xml:id</a> establishes a well-know attribute name for IDs</li>
+						<ul>
+							<li>the <q>IDness</q> of an attribute is established by its name</li>
+							<li>IDs can be found without any schema (there does not even has to be one)</li>
+						</ul>
+						<li><code>xml:id</code> uses XML's own namespace to identify identifiers</li>
+						<ul>
+							<li>only W3C-blessed specifications are allowed to extend the XML namespace</li>
+							<li><code href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</code> contains a mix of various specs</li>
+						</ul>
+					</ul>
+					<pre>&lt;section id="introduction"></pre>
+					<pre>&lt;section xml:id="introduction"></pre>
 				</slide>
 			</part>
-		</part>
-		<part id="infoset">
-			<title short="Infoset">XML Information Set (XML Infoset)</title>
-			<slide>
-				<title>What is the Content of an XML Document?</title>
-				<ul>
-					<li>An interesting (and fruitless) discussion</li>
+			<part id="xinclude">
+				<title short="XInclude">XML Inclusions (XInclude)</title>
+				<slide>
+					<title>Including Trees into Trees</title>
 					<ul>
-						<li>the content is whatever you consider it to be</li>
-						<li>agreement between peers is necessary for data exchange</li>
-						<li>agreement between specification writers and toolmakers is necessary to provide tools</li>
+						<li><a href="http://www.w3.org/TR/xinclude/" title='W3C "XML Inclusions (XInclude)" Spec'>XInclude</a> defines an inclusion facility for XML</li>
+						<ul>
+							<li>it is a separate standard and not part of XML itself</li>
+							<li>XML processors might or might not support XInclude</li>
+						</ul>
+						<li>XInclude is defined as replacing XInclude elements with included content</li>
+						<ul>
+							<li>logically speaking, XInclude is thus defined as a tree transformation</li>
+							<li>practically speaking, it can thus be <a href="http://dret.net/projects/xipr/">implemented in XSLT</a></li>
+						</ul>
 					</ul>
-					<li>DOM and XSLT were two early arrivals</li>
-					<ul>
-						<li>both had an idea (and a model) of what the content of an XML document is</li>
-						<li>they did not have the exact same idea</li>
-					</ul>
-					<li>Set a normative standard for an XML document's content</li>
-					<ul>
-						<li>the Infoset defines what is represented in the tree</li>
-						<li>people should be confident to get this information when using XML technologies</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide>
-				<title>Infoset Example</title>
-				<img src="infoset-example.png" style="width : 90% ; margin : 4% ; "/>
-			</slide>
-			<slide id="not-infoset">
-				<title>What is <u>Not</u> in the Infoset</title>
-				<ul>
-					<li>Do not rely on <a href="http://www.w3.org/TR/xml-infoset/#omitted">information not available in the Infoset</a></li>
-					<ul>
-						<li>order of attributes</li>
-						<li>type of quotes around attribute values</li>
-						<li>notation of empty elements (<code>&lt;elem>&lt;/elem></code> vs. <code>&lt;elem/></code>)</li>
-						<li>how lines are terminated</li>
-						<li>entities and character references</li>
-					</ul>
-					<li>XML contains all this information if used as XML document</li>
-					<li>many XML technologies are in fact Infoset technologies</li>
-					<ul>
-						<li>XSD, XSLT, XQuery, SOAP, …</li>
-					</ul>
-				</ul>
-			</slide>
-		</part>
-		<part id="xml:id">
-			<title short="xml:id">XML IDs with xml:id</title>
-			<slide>
-				<title>References in Instances</title>
-				<ul>
-					<li><link href="dtd">DTD</link> and <link href="xsd-1">XSD</link> IDs are defined in the schema</li>
-					<ul>
-						<li>the important information is the <em>(attribute) type</em> in the schema</li>
-						<li>the name of the attribute can be freely chosen by the schema designer</li>
-					</ul>
-					<li><a href="http://www.w3.org/TR/xml-id/" title='W3C "xml:id" Spec'>xml:id</a> establishes a well-know attribute name for IDs</li>
-					<ul>
-						<li>the <q>IDness</q> of an attribute is established by its name</li>
-						<li>IDs can be found without any schema (there does not even has to be one)</li>
-					</ul>
-					<li><code>xml:id</code> uses XML's own namespace to identify identifiers</li>
-					<ul>
-						<li>only W3C-blessed specifications are allowed to extend the XML namespace</li>
-						<li><code href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</code> contains a mix of various specs</li>
-					</ul>
-				</ul>
-				<pre>&lt;section id="introduction"></pre>
-				<pre>&lt;section xml:id="introduction"></pre>
-			</slide>
-		</part>
-		<part id="xinclude">
-			<title short="XInclude">XML Inclusions (XInclude)</title>
-			<slide>
-				<title>Including Trees into Trees</title>
-				<ul>
-					<li><a href="http://www.w3.org/TR/xinclude/" title='W3C "XML Inclusions (XInclude)" Spec'>XInclude</a> defines an inclusion facility for XML</li>
-					<ul>
-						<li>it is a separate standard and not part of XML itself</li>
-						<li>XML processors might or might not support XInclude</li>
-					</ul>
-					<li>XInclude is defined as replacing XInclude elements with included content</li>
-					<ul>
-						<li>logically speaking, XInclude is thus defined as a tree transformation</li>
-						<li>practically speaking, it can thus be <a href="http://dret.net/projects/xipr/">implemented in XSLT</a></li>
-					</ul>
-				</ul>
-				<pre>&lt;x xmlns:xi="http://www.w3.org/2001/XInclude">
+					<pre>&lt;x xmlns:xi="http://www.w3.org/2001/XInclude">
 	&lt;xi:include href="something.xml"/>
 	&lt;xi:include xpointer="xmlns(xi=http://www.w3.org/2001/XInclude)xpointer(x/xi:include[1])" parse="xml"/>
 &lt;/x></pre>
-			</slide>
-			<slide>
-				<title>XInclude Schema</title>
-				<pre>&lt;!ELEMENT xi:include (xi:fallback?)>
+				</slide>
+				<slide>
+					<title>XInclude Schema</title>
+					<pre>&lt;!ELEMENT xi:include (xi:fallback?)>
 &lt;!ATTLIST xi:include
 	xmlns:xi		CDATA	   #FIXED	"http://www.w3.org/2001/XInclude"
 	href			CDATA	   #IMPLIED
@@ -6140,192 +6149,204 @@ return
 	accept		  CDATA	   #IMPLIED
 	accept-language CDATA	   #IMPLIED
 ></pre>
-			</slide>
+				</slide>
+			</part>
+			<part id="xml-processing">
+				<title>Processing XML</title>
+				<slide>
+					<title>XML and Programming</title>
+					<ul>
+						<li>XML is a format for structured data</li>
+						<ul>
+							<li>trees do not map very well to most programming languages</li>
+							<li>for working with XML, some mapping into the language is required</li>
+						</ul>
+						<li>There are two basic approaches for programming with XML:</li>
+						<ol>
+							<li>use special functions to work on XML documents as external data objects</li>
+							<li>map XML documents to native data structures of the programming language</li>
+						</ol>
+						<li>A third approach is to have an <q>XML programming language</q></li>
+						<ul>
+							<li><link href="xslt-1">XSLT</link> is an example for an XML programming language</li>
+							<li><link href="xsd-1">XSD</link> and <link href="xpath">XPath</link> become an integral part of Java in <a href="http://www.research.ibm.com/xj/">XJ</a></li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>XML and Programming Languages</title>
+					<ul>
+						<li>Most programming languages do not support XML natively</li>
+						<ul>
+							<li>a certain impedance mismatch between both models in unavoidable</li>
+						</ul>
+						<li>Function libraries (or their equivalent) can provide XML processing facilities</li>
+						<ul>
+							<li><link href="sax">SAX</link> as an event-based API for accessing XML documents</li>
+							<li><link href="dom">DOM</link> as a tree-based API for accessing XML documents</li>
+						</ul>
+						<li>Mapping between XML and the programming language can take two forms</li>
+						<ul>
+							<li>using hand-crafted code (based on XML functions) that performs the mapping</li>
+							<li>generating code using an XML schema and/or target data structures in the language</li>
+						</ul>
+						<li>Generating mapping code can be done in two ways</li>
+						<ul>
+							<li>using a generic <link href="databinding"/> framework for the mapping</li>
+							<li>using hand-crafted code that can be better tailored to the schemas</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Typical XML &amp; Programming Problem</title>
+					<ul>
+						<li><a href="../web-fall10/ajax">Asynchronous JavaScript and XML (Ajax)</a> is based on HTTP &amp; XML</li>
+						<ul>
+							<li>JavaScript code can communicate with the server using <code href="http://www.w3.org/TR/XMLHttpRequest/" title="W3C XMLHttpRequest Spec">XMLHttpRequest</code></li>
+							<li>in theory, the server sends XML data which is processed by the script</li>
+						</ul>
+						<li>XML parsing and processing is inconvenient in JavaScript</li>
+						<ul>
+							<li>there is a impedance mismatch between JavaScript and XML</li>
+							<li>if the client is slow and the XML is big, parsing can be time-consuming</li>
+							<li>if all clients are JavaScript, then sending XML is not really necessary</li>
+						</ul>
+						<li><em>JavaScript Object Notation (JSON)</em> is a JavaScript-centric data model</li>
+						<ul>
+							<li>JavaScript code can directly instantiate JSON structures as runtime objects</li>
+							<li>any non-JavaScript client (if there are any) will have to use JSON as well</li>
+						</ul>
+					</ul>
+				</slide>
+				<part id="sax">
+					<title>Simple API for XML (SAX)</title>
+					<slide>
+						<title>Lightweight XML Processing</title>
+						<ul>
+							<li>SAX is an event-based API for accessing XML documents</li>
+							<li>SAX allows users to use event handlers for parsing-related events</li>
+							<ul>
+								<li>the parser reads a document and recognizes markup structures</li>
+								<li>for each recognized structure, a user-supplied function can be called</li>
+							</ul>
+							<li>SAX parsing requires little memory and can handle very large documents</li>
+							<ul>
+								<li>the breadth of the XML document tree is irrelevant to SAX parsing</li>
+								<li>the depth of the tree is relevant for checking for well-formed documents</li>
+							</ul>
+							<li>SAX parsing does not allow random access or backward movement</li>
+							<ul>
+								<li>saving context and history is something the application has to manage</li>
+								<li>at a certain complexity, SAX parsing requires a lot of additional code</li>
+							</ul>
+						</ul>
+					</slide>
+					<slide>
+						<title>SAX Parser</title>
+						<img style="width : 90% ; margin : 2% ; " src="sax-parser.png" title="SAX Parser"/>
+					</slide>
+				</part>
+				<part id="dom">
+					<title>Document Object Model (DOM)</title>
+					<slide>
+						<title>XML Trees Everywhere</title>
+						<ul>
+							<li>DOM is a tree-based API for accessing XML documents</li>
+							<ul>
+								<li>the specification using a <a href="http://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/idl-definitions.html">language-independent <em>Interface Definition Language (IDL)</em></a> </li>
+								<li><q>language bindings</q> map IDL to specific languages such as <a href="http://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/java-binding.html">Java</a> or <a href="http://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/ecma-script-binding.html">JavaScript</a></li>
+							</ul>
+							<li>DOM is based on an in-memory representation of an XML document</li>
+							<ul>
+								<li>random document access using <a href="http://www.w3.org/TR/DOM-Level-3-Core/core.html#ID-1950641247">the tree's node structure</a></li>
+								<li>more specific tasks such as <a href="http://www.w3.org/TR/DOM-Level-3-Core/core.html#ID-217A91B8">getting an element's attribute by name</a></li>
+							</ul>
+							<li>DOM parsers have an additional layer for building the tree</li>
+							<ul>
+								<li>an underlying SAX parser reports structures for tree building</li>
+								<li>the memory representation is heavily interlinked (requiring substantial memory)</li>
+								<li>DOM calls query or modify the memory representation of the tree</li>
+							</ul>
+							<li>DOM processing is not appropriate for all tasks</li>
+							<ul>
+								<li>very large documents may not fit into memory (risk of <em>thrashing</em>)</li>
+								<li>for isolated tasks, the parsing overhead is prohibitive</li>
+							</ul>
+						</ul>
+					</slide>
+					<slide>
+						<title>DOM Parser</title>
+						<img style="width : 90% ; margin : 2% ; " src="dom-parser.png" title="DOM Parser"/>
+					</slide>
+					<slide id="jdom">
+						<title>JDOM</title>
+						<ul>
+							<li>DOM is not optimized for a specific programming language</li>
+							<ul>
+								<li>DOM knowledge can be easily transferred between programming languages</li>
+								<li>programming with DOM in a given language often is not very convenient</li>
+							</ul>
+							<li>JDOM is a Java-specific version of a tree-based XML API</li>
+							<ul>
+								<li>represents the same concepts as DOM (XML structures)</li>
+								<li>represents XML concepts <a href="http://www-128.ibm.com/developerworks/java/library/j-jdom/#h2">in a more Java-friendly way</a></li>
+								<li>JDOM has no relationship with the W3C's DOM API</li>
+							</ul>
+							<li>JDOM can be built on top of almost any parser</li>
+							<ul>
+								<li>SAX is a pretty common choice for a foundation for JDOM</li>
+								<li>SAX events are then used to build the JDOM tree</li>
+							</ul>
+						</ul>
+					</slide>
+				</part>
+				<part id="databinding">
+					<title>XML Data Binding</title>
+					<slide>
+						<title>Mapping XML into Languages</title>
+						<ul>
+							<li>XML data binding connects XML with language-specific structures</li>
+							<ul>
+								<li>for OO languages this often means mapping schemas and classes</li>
+								<li>code for serialization and deserialization can then be generated</li>
+							</ul>
+							<li>Typical problems of data binding are schema changes</li>
+							<ul>
+								<li>if the schema is updated, can the code be migrated easily?</li>
+								<li>can instances of different versions be handled by the same code?</li>
+								<li>most data binding frameworks do not fully support XSD anyway</li>
+							</ul>
+							<li>Several XML data binding frameworks are in widespread use</li>
+							<ul>
+								<li><a href="https://jaxb.dev.java.net/">Java Architecture for XML Binding (JAXB)</a></li>
+								<li>Castor, another Java-based data binding framework</li>
+							</ul>
+						</ul>
+					</slide>
+				</part>
+			</part>
 		</part>
-		<part id="xml-processing">
-			<title>Processing XML</title>
+		<part id="xml-alternatives">
+			<title>Alternatives to XML</title>
 			<slide>
-				<title>XML and Programming</title>
+				<title>XML's Capabilities</title>
 				<ul>
-					<li>XML is a format for structured data</li>
-					<ul>
-						<li>trees do not map very well to most programming languages</li>
-						<li>for working with XML, some mapping into the language is required</li>
-					</ul>
-					<li>There are two basic approaches for programming with XML:</li>
-					<ol>
-						<li>use special functions to work on XML documents as external data objects</li>
-						<li>map XML documents to native data structures of the programming language</li>
-					</ol>
-					<li>A third approach is to have an <q>XML programming language</q></li>
-					<ul>
-						<li><link href="xslt-1">XSLT</link> is an example for an XML programming language</li>
-						<li><link href="xsd-1">XSD</link> and <link href="xpath">XPath</link> become an integral part of Java in <a href="http://www.research.ibm.com/xj/">XJ</a></li>
-					</ul>
+					<li>Representation</li>
+					<li>Management</li>
+					<li>Interchange</li>
+					<li>Processing</li>
 				</ul>
 			</slide>
-			<slide>
-				<title>XML and Programming Languages</title>
-				<ul>
-					<li>Most programming languages do not support XML natively</li>
-					<ul>
-						<li>a certain impedance mismatch between both models in unavoidable</li>
-					</ul>
-					<li>Function libraries (or their equivalent) can provide XML processing facilities</li>
-					<ul>
-						<li><link href="sax">SAX</link> as an event-based API for accessing XML documents</li>
-						<li><link href="dom">DOM</link> as a tree-based API for accessing XML documents</li>
-					</ul>
-					<li>Mapping between XML and the programming language can take two forms</li>
-					<ul>
-						<li>using hand-crafted code (based on XML functions) that performs the mapping</li>
-						<li>generating code using an XML schema and/or target data structures in the language</li>
-					</ul>
-					<li>Generating mapping code can be done in two ways</li>
-					<ul>
-						<li>using a generic <link href="databinding"/> framework for the mapping</li>
-						<li>using hand-crafted code that can be better tailored to the schemas</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide>
-				<title>Typical XML &amp; Programming Problem</title>
-				<ul>
-					<li><a href="../web-fall10/ajax">Asynchronous JavaScript and XML (Ajax)</a> is based on HTTP &amp; XML</li>
-					<ul>
-						<li>JavaScript code can communicate with the server using <code href="http://www.w3.org/TR/XMLHttpRequest/" title="W3C XMLHttpRequest Spec">XMLHttpRequest</code></li>
-						<li>in theory, the server sends XML data which is processed by the script</li>
-					</ul>
-					<li>XML parsing and processing is inconvenient in JavaScript</li>
-					<ul>
-						<li>there is a impedance mismatch between JavaScript and XML</li>
-						<li>if the client is slow and the XML is big, parsing can be time-consuming</li>
-						<li>if all clients are JavaScript, then sending XML is not really necessary</li>
-					</ul>
-					<li><em>JavaScript Object Notation (JSON)</em> is a JavaScript-centric data model</li>
-					<ul>
-						<li>JavaScript code can directly instantiate JSON structures as runtime objects</li>
-						<li>any non-JavaScript client (if there are any) will have to use JSON as well</li>
-					</ul>
-				</ul>
-			</slide>
-			<part id="sax">
-				<title>Simple API for XML (SAX)</title>
-				<slide>
-					<title>Lightweight XML Processing</title>
-					<ul>
-						<li>SAX is an event-based API for accessing XML documents</li>
-						<li>SAX allows users to use event handlers for parsing-related events</li>
-						<ul>
-							<li>the parser reads a document and recognizes markup structures</li>
-							<li>for each recognized structure, a user-supplied function can be called</li>
-						</ul>
-						<li>SAX parsing requires little memory and can handle very large documents</li>
-						<ul>
-							<li>the breadth of the XML document tree is irrelevant to SAX parsing</li>
-							<li>the depth of the tree is relevant for checking for well-formed documents</li>
-						</ul>
-						<li>SAX parsing does not allow random access or backward movement</li>
-						<ul>
-							<li>saving context and history is something the application has to manage</li>
-							<li>at a certain complexity, SAX parsing requires a lot of additional code</li>
-						</ul>
-					</ul>
-				</slide>
-				<slide>
-					<title>SAX Parser</title>
-					<img style="width : 90% ; margin : 2% ; " src="sax-parser.png" title="SAX Parser"/>
-				</slide>
+			<part id="json">
+				<title short="JSON">JavaScript Object Notation</title>
 			</part>
-			<part id="dom">
-				<title>Document Object Model (DOM)</title>
-				<slide>
-					<title>XML Trees Everywhere</title>
-					<ul>
-						<li>DOM is a tree-based API for accessing XML documents</li>
-						<ul>
-							<li>the specification using a <a href="http://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/idl-definitions.html">language-independent <em>Interface Definition Language (IDL)</em></a> </li>
-							<li><q>language bindings</q> map IDL to specific languages such as <a href="http://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/java-binding.html">Java</a> or <a href="http://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/ecma-script-binding.html">JavaScript</a></li>
-						</ul>
-						<li>DOM is based on an in-memory representation of an XML document</li>
-						<ul>
-							<li>random document access using <a href="http://www.w3.org/TR/DOM-Level-3-Core/core.html#ID-1950641247">the tree's node structure</a></li>
-							<li>more specific tasks such as <a href="http://www.w3.org/TR/DOM-Level-3-Core/core.html#ID-217A91B8">getting an element's attribute by name</a></li>
-						</ul>
-						<li>DOM parsers have an additional layer for building the tree</li>
-						<ul>
-							<li>an underlying SAX parser reports structures for tree building</li>
-							<li>the memory representation is heavily interlinked (requiring substantial memory)</li>
-							<li>DOM calls query or modify the memory representation of the tree</li>
-						</ul>
-						<li>DOM processing is not appropriate for all tasks</li>
-						<ul>
-							<li>very large documents may not fit into memory (risk of <em>thrashing</em>)</li>
-							<li>for isolated tasks, the parsing overhead is prohibitive</li>
-						</ul>
-					</ul>
-				</slide>
-				<slide>
-					<title>DOM Parser</title>
-					<img style="width : 90% ; margin : 2% ; " src="dom-parser.png" title="DOM Parser"/>
-				</slide>
-				<slide id="jdom">
-					<title>JDOM</title>
-					<ul>
-						<li>DOM is not optimized for a specific programming language</li>
-						<ul>
-							<li>DOM knowledge can be easily transferred between programming languages</li>
-							<li>programming with DOM in a given language often is not very convenient</li>
-						</ul>
-						<li>JDOM is a Java-specific version of a tree-based XML API</li>
-						<ul>
-							<li>represents the same concepts as DOM (XML structures)</li>
-							<li>represents XML concepts <a href="http://www-128.ibm.com/developerworks/java/library/j-jdom/#h2">in a more Java-friendly way</a></li>
-							<li>JDOM has no relationship with the W3C's DOM API</li>
-						</ul>
-						<li>JDOM can be built on top of almost any parser</li>
-						<ul>
-							<li>SAX is a pretty common choice for a foundation for JDOM</li>
-							<li>SAX events are then used to build the JDOM tree</li>
-						</ul>
-					</ul>
-				</slide>
+			<part id="rdf">
+				<title short="RDF">Resource Description Framework</title>
 			</part>
-			<part id="databinding">
-				<title>XML Data Binding</title>
-				<slide>
-					<title>Mapping XML into Languages</title>
-					<ul>
-						<li>XML data binding connects XML with language-specific structures</li>
-						<ul>
-							<li>for OO languages this often means mapping schemas and classes</li>
-							<li>code for serialization and deserialization can then be generated</li>
-						</ul>
-						<li>Typical problems of data binding are schema changes</li>
-						<ul>
-							<li>if the schema is updated, can the code be migrated easily?</li>
-							<li>can instances of different versions be handled by the same code?</li>
-							<li>most data binding frameworks do not fully support XSD anyway</li>
-						</ul>
-						<li>Several XML data binding frameworks are in widespread use</li>
-						<ul>
-							<li><a href="https://jaxb.dev.java.net/">Java Architecture for XML Binding (JAXB)</a></li>
-							<li>Castor, another Java-based data binding framework</li>
-						</ul>
-					</ul>
-				</slide>
+			<part id="tabular">
+				<title>Tabular Models</title>
 			</part>
 		</part>
-	</presentation>
-	<presentation id="metamodels">
-		<title short="Metamodels">XML and other Metamodels (JSON/RDF/Tabular)</title>
-		<date>2013-12-09</date>
-		<toc class="resources"></toc>
-		<toc class="abstract"></toc>
-		<slide>
-			<title>Abstract</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 	</presentation>
 	<presentation id="summary">
 		<title short="Summary">Course Summary</title>
