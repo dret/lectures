@@ -212,7 +212,7 @@
 				<slide id="xml-and-csv">
 					<title>XML and CSV</title>
 					<ul>
-						<li><link href="tabular">CSV</link> is easier to understand and use</li>
+						<li>CSV is easier to understand and use</li>
 						<li>CSV tools (such as <em>Excel</em>) are widely used and understood</li>
 						<li>Structures beyond tables are hard to represent</li>
 						<li>Document structures are impossible to represent</li>
@@ -6330,21 +6330,106 @@ return
 			<title>Alternatives to XML</title>
 			<slide>
 				<title>XML's Capabilities</title>
+				<blockquote>If the only tool you have is a hammer, you tend to see every problem as a nail.</blockquote>
+				<p class="quotenote"><a href="http://en.wikipedia.org/wiki/Abraham_Maslow">Abraham Maslow</a></p>
 				<ul>
-					<li>Representation</li>
-					<li>Management</li>
-					<li>Interchange</li>
-					<li>Processing</li>
+					<li>Representation (XML itself, XInclude)</li>
+					<li>Management (XDBMS, XQuery)</li>
+					<li>Interchange (sharing XML, REST)</li>
+					<li>Processing (XSLT, XQuery)</li>
 				</ul>
 			</slide>
 			<part id="json">
-				<title short="JSON">JavaScript Object Notation</title>
+				<title short="JSON">JavaScript Object Notation (JSON)</title>
+				<slide>
+					<title>JSON is the new XML</title>
+					<ul>
+						<li>XML's tree model is not <q>natural</q> for developers</li>
+						<ul>
+							<li>developers tend to think in <q>objects</q> or similar concepts</li>
+							<li>mapping bidirectionally creates unhappiness and friction</li>
+						</ul>
+						<li>JSON takes a minimalist approach at representing <q>object structures</q></li>
+						<ul>
+							<li>the only supported concepts are <a href="http://tools.ietf.org/html/rfc4627#section-2.2">objects (name/value pairs)</a> and <a href="http://tools.ietf.org/html/rfc4627#section-2.3">arrays</a></li>
+							<li>these concepts can be nested as deeply as required</li>
+						</ul>
+						<li>JSON's main reason for success is structural alignment</li>
+						<ul>
+							<li>most developers can work with JSON <em>directly in their language</em></li>
+							<li>XML's more sophisticated features often are not required</li>
+						</ul>
+						<li>JSON is a poster child of the <a href="http://en.wikipedia.org/wiki/Pareto_principle" title="a.k.a. 80/20 rule">Pareto Principle</a> (or maybe 95/5)</li>
+					</ul>
+				</slide>
+				<slide>
+					<title>JSON Example</title>
+					<listing src="menu.xml"/>
+					<listing src="menu.json"/>
+				</slide>
 			</part>
 			<part id="rdf">
-				<title short="RDF">Resource Description Framework</title>
-			</part>
-			<part id="tabular">
-				<title>Tabular Models</title>
+				<title short="RDF">Resource Description Framework (RDF)</title>
+				<title>Semantic Web &amp; Linked Data</title>
+				<slide>
+					<title>Linked Data Principles</title>
+					<ol>
+						<li>Use URIs as names for things.</li>
+						<li>Use HTTP URIs so that people can look up those names.</li>
+						<li>When someone looks up a URI, provide useful information, using a standard data model.</li>
+						<li>Include links to other URIs, so that people can discover more things.</li>
+					</ol>
+				</slide>
+				<slide>
+					<title>URIs as Names</title>
+					<ul>
+						<li>A URI can identify any abstract concept, not just Web pages</li>
+						<li>The Semantic Web is mainly about how to assign URIs to any concept</li>
+						<li><a href="http://dbpedia.org/">DBpedia</a> is a project creating URIs for every topic in Wikipedia</li>
+						<ul>
+							<li>Spoon: <code href="http://dbpedia.org/resource/Spoon_%28band%29">http://dbpedia.org/resource/Spoon_%28band%29</code></li>
+							<li>Mysticism: <code href="http://dbpedia.org/resource/Mysticism">http://dbpedia.org/resource/Mysticism</code></li>
+						</ul>
+						<li>Anyone can create URIs for concepts</li>
+						<ul>
+							<li>Panthera tigris: <code href="http://lod.taxonconcept.org/ses/QMUrD">http://lod.taxonconcept.org/ses/QMUrD</code></li>
+						</ul>
+						<li>Multiple people or groups can create URIs for the same concept</li>
+						<ul>
+							<li>All the <a href="http://sameas.org/html?uri=http%3A%2F%2Flod.geospecies.org%2Fses%2FQMUrD">URIs for Panthera tigris</a></li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>RDF as Semantic Web Foundation</title>
+					<ul>
+						<li>The standard data model for Semantic Web standards is the <em>Resource Description Framework (RDF)</em></li>
+						<li>Data in RDF is just lists of <em>statements</em></li>
+						<ul>
+							<li>Spoon is a music group</li>
+							<li>Spoon is named <q>Spoon</q></li>
+							<li>Spoon has a member Britt Daniel</li>
+						</ul>
+						<li>A statement consists of three parts: [subject] [predicate] [object]</li>
+						<ul>
+							<li>[Spoon] [is a] [music group]</li>
+							<li>[Spoon] [is named] ["Spoon"]</li>
+							<li>[Spoon] [has a member] [Britt Daniel]</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>Semantic Web Data Model (abstract)</title>
+					<img style="height : 70% ; margin : 2% ; " src="rdf-triple.png"/>
+				</slide>
+				<slide>
+					<title>Semantic Web Data Model (URI concepts)</title>
+					<img style="height : 70% ; margin : 2% ; " src="rdf-triple-uris.png"/>
+				</slide>
+				<slide>
+					<title>Linking Data Sets</title>
+					<img style="height : 70% ; margin : 2% ; " src="lod-cloud.png" href="http://lod-cloud.net/"/>
+				</slide>
 			</part>
 		</part>
 	</presentation>
