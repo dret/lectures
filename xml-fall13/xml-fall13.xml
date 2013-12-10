@@ -3162,14 +3162,17 @@
 	<presentation id="presentation-preparation" external="project-schedule#preparation">
 		<title>Project Presentation Preparation</title>
 		<date>2013-10-09</date>
+		<toc class="abstract">This slot is reserved for the project group to meet at prepare their project presentations.</toc>
 	</presentation>
 	<presentation id="presentations" external="project-schedule#presentation">
 		<title>Project Presentations</title>
 		<date>2013-10-14</date>
+		<toc class="abstract">This slot is reserved for the project presentations, with each group getting an opportunity to present.</toc>
 	</presentation>
 	<presentation id="presentation-preparation" external="project-schedule#feedback">
 		<title>Project Presentation Feedback</title>
 		<date>2013-10-16</date>
+		<toc class="abstract">This slot is reserved for the project groups to incorporate the feedback from the project presentations.</toc>
 	</presentation>
 	<presentation id="xslt-1">
 		<title short="XSLT 1">XML Transformations (XSLT) – Part I</title>
