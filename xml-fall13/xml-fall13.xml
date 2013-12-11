@@ -6448,14 +6448,26 @@ return
 		<slide>
 			<title>Course Topics</title>
 			<ul>
-				<li></li>
+				<li><link href="basics">XML Basics how to use them</link></li>
+				<li><link href="dtd">Describing classes of XML documents</link></li>
+				<li><link href="xmlns">Combining different vocabularies of XML documents</link></li>
+				<li><link href="xpath">Selecting parts of an XML document</link></li>
+				<li><link href="xslt-1">Transforming XML into something else (or XML again)</link></li>
+				<li><link href="xsd-1">A more complicated way to describe classes of XML documents</link></li>
+				<li><link href="relax-ng">Alternative ways of describing classes of XML documents</link></li>
+				<li><link href="xquery-1">Querying XML with a dedicated query language</link></li>
+				<li><link href="xdb">Managing XML in a dedicated XML database</link></li>
 			</ul>
 		</slide>
 		<slide>
-			<title>Exam Questions</title>
+			<title>Exam Format</title>
 			<ul>
 				<li>Do not waste time and energy memorizing data</li>
 				<li>What matters is <em>understanding and connecting concepts</em></li>
+				<li>You may be asked to comment on certain designs</li>
+				<li>You may be asked to propose certain designs</li>
+				<li>Which technology to choose for a certain problem?</li>
+				<li>The goal is to know what XML is and isn't good/useful for</li>
 			</ul>
 		</slide>
 	</presentation>
