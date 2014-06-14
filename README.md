@@ -11,4 +11,4 @@ These are sources for educational/professional presentations that I make availab
 Online
 ------
 
-Online versions of the actual presentations can be found at http://dret.net/lectures/ (or a handy overview table at http://dret.net/netdret/publications#presentations), but older presentations you see there are not part of the GitHub repo (I might change that if I find the time to move them from their older svn home to the new GitHub repo).
+Online versions of the actual presentations can be found at http://dret.net/netdret/publications#presentations (or as a list of all university courses at http://dret.net/lectures/), but older presentations you see there are not part of the GitHub repo (I may change that if I find the time to move them from their older svn home to the new GitHub repo).
