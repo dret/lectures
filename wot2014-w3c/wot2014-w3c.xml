@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="siemens" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="wot2014-w3c.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="http://creativecommons.org/licenses/by/3.0/" short="CC 3.0">
+		<div class="license">
+			<p><a rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/ischool/ischool/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
+		</div>
+	</license>
+	<title>Leveraging the Web Platform for the Web of Things</title>
+	<author><a href="http://dret.net/netdret/">Erik Wilde</a>, Florian Michahelles, and Stefan Lüder</author>
+	<affiliation><a href="http://www.siemens.com/">Siemens</a></affiliation>
+	<date short="2014-06-26">June 26, 2014</date>
+	<copyright>2014 Erik Wilde, Florian Michahelles, and Stefan Lüder</copyright>
+	<presentation id="index">
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract">Web Architecture provides a general-purpose way of establishing an interlinked network of resources, which are interacted with through the exchange of representations of their state. We argue that the <em>Web of Things</em> fits well into this general framework, and thus should be built firmly on the foundation provided by Web Architecture. We also argue that in order to allow an evolutionary path towards a <em>Web of Things</em>, it is important to take small and incremental steps towards the final goal, instead of trying to establish a grand <em>Web of Things Architecture</em> in one monolithic step. One interesting first step could be to focus on Activity Streams as one way how streams of resource updates can be represented in a uniform, extensible, and machine-readable way.<toc class="abstract"/></p>
+		</slide>
+		<slide>
+			<title>Conclusions</title>
+			<ul>
+				<li>...</li>
+			</ul>
+		</slide>
+	</presentation>
+</hotspot>
