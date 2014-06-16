@@ -32,7 +32,35 @@
 		<title>Leveraging the Web Platform for the Web of Things</title>
 		<slide>
 			<title>Abstract</title>
-			<p class="abstract">Web Architecture provides a general-purpose way of establishing an interlinked network of resources, which are interacted with through the exchange of representations of their state. We argue that the <em>Web of Things</em> fits well into this general framework, and thus should be built firmly on the foundation provided by Web Architecture. We also argue that in order to allow an evolutionary path towards a <em>Web of Things</em>, it is important to take small and incremental steps towards the final goal, instead of trying to establish a grand <em>Web of Things Architecture</em> in one monolithic step. One interesting first step could be to focus on Activity Streams as one way how streams of resource updates can be represented in a uniform, extensible, and machine-readable way.<toc class="abstract"/></p>
+			<p class="abstract">Web Architecture provides a general-purpose way of establishing an interlinked network of resources, which are interacted with through the exchange of representations of their state. We argue that the <em>Web of Things</em> fits well into this general framework, and thus should be built firmly on the foundation provided by Web Architecture. We also argue that in order to allow an evolutionary path towards a <em>Web of Things</em>, it is important to take small and incremental steps towards the final goal, instead of trying to establish a grand <q>Web of Things Architecture</q> in one monolithic step. One interesting first step could be to focus on Activity Streams as one way how streams of resource updates can be represented in a uniform, extensible, and machine-readable way.</p>
+		</slide>
+		<slide>
+			<title>Interaction Scenarios</title>
+			<ul>
+				<li><q>The last mile</q> (how to connect the thing) might be better left to specialists</li>
+				<ul>
+					<li>What matters is identification and interaction, but <em>only with a representation</em></li>
+				</ul>
+				<li>Instead, focus on scenarios such as aggregation, filtering, republication, subscription, ...</li>
+				<ul>
+					<li>How to interact with representations to achieve application goals</li>
+				</ul>
+			</ul>
+		</slide>
+		<slide>
+			<title>Sitting on the wrong branch can kill you</title>
+			<img src="feedbot.jpg" style="float : right ; margin-top : 0.5em ; margin-right : 2em ; "/>
+			<ul>
+				<li>Atom's model was right but the foundation was too short-lived</li>
+				<ul>
+					<li>Once, there was a flourishing loosely coupled <a href="http://dret.typepad.com/dretblog/atom-landscape.html">Atom Landscape</a></li>
+					<li>Disliking XML became trendy and that sealed Atom's fate</li>
+				</ul>
+				<li><a href="http://dret.typepad.com/dretblog/2009/05/atoms-future-as-a-generalpurpose-format.html">Atom's future didn't happen</a>, but it still needs to</li>
+				<ul>
+					<li>WoT scenarios are like newsfeeds on steroids (scale, volume, variety)</li>
+				</ul>
+			</ul>
 		</slide>
 		<slide>
 			<title>Conclusions</title>
