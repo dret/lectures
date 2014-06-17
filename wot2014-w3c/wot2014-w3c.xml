@@ -35,6 +35,32 @@
 			<p class="abstract">Web Architecture provides a general-purpose way of establishing an interlinked network of resources, which are interacted with through the exchange of representations of their state. We argue that the <em>Web of Things</em> fits well into this general framework, and thus should be built firmly on the foundation provided by Web Architecture. We also argue that in order to allow an evolutionary path towards a <em>Web of Things</em>, it is important to take small and incremental steps towards the final goal, instead of trying to establish a grand <q>Web of Things Architecture</q> in one monolithic step. One interesting first step could be to focus on Activity Streams as one way how streams of resource updates can be represented in a uniform, extensible, and machine-readable way.</p>
 		</slide>
 		<slide>
+			<title>What's Missing?</title>
+			<ul>
+				<li>Reading through submissions, some clusters emerge:</li>
+				<ol>
+					<li>The <q>last mile</q> (how to efficiently connect constrained things)</li>
+					<li>The <q>thing models</q> (in order to find/understand/use things, we need domain models)</li>
+					<li>The <q>thing technology</q> (we have technology X, it's really great for WoT!)</li>
+					<li>Specific <q>thing scenarios</q> (we want use certain things a certain way)</li>
+				</ol>
+				<li>But what's really missing for in today's Web?</li>
+				<ol>
+					<li>Choose some protocol/gateway combo or HTTP-enable your thing</li>
+					<li>Base your media type of a domain model of your choice</li>
+					<li>Let's find out what we need first</li>
+					<li>Very useful to better figure out what we need...</li>
+				</ol>
+				<li>The Web thrives on services and their <q>surfaces</q></li>
+				<ol>
+					<li>Nobody should care if you run Java or PHP or C or Ruby or Python</li>
+					<li>Nobody should care how your app server connects to the data store</li>
+					<li>Nobody should care how you model your customers/products/services</li>
+				</ol>
+				<li>Let's focus on how to <em>expose services in typical Wot scenarios</em></li>
+			</ul>
+		</slide>
+		<slide>
 			<title>Interaction Scenarios</title>
 			<ul>
 				<li><q>The last mile</q> (how to connect the thing) might be better left to specialists</li>
