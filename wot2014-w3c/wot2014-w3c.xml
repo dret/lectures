@@ -26,7 +26,7 @@
 	<title><a href="http://www.w3.org/">W3C</a> <a href="http://www.w3.org/2014/02/wot/">Workshop on the Web of Things</a></title>
 	<author><a href="http://dret.net/netdret/">Erik Wilde</a>, Florian Michahelles, and Stefan Lüder</author>
 	<affiliation><a href="http://www.siemens.com/">Siemens</a></affiliation>
-	<date short="2014-06-26">June 26, 2014</date>
+	<date short="2014-06-25">June 25, 2014</date>
 	<copyright>2014 Erik Wilde, Florian Michahelles, and Stefan Lüder</copyright>
 	<presentation id="index">
 		<title>Leveraging the Web Platform for the Web of Things</title>
@@ -37,17 +37,17 @@
 		<slide>
 			<title>What's Missing?</title>
 			<ul>
-				<li>Reading through submissions, some clusters emerge:</li>
+				<li>Reading through <a href="http://www.w3.org/2014/02/wot/submissions.html">submissions</a>, some clusters emerge:</li>
 				<ol>
 					<li>The <q>last mile</q> (how to efficiently connect constrained things)</li>
 					<li>The <q>thing models</q> (in order to find/understand/use things, we need domain models)</li>
 					<li>The <q>thing technology</q> (we have technology X, it's really great for WoT!)</li>
 					<li>Specific <q>thing scenarios</q> (we want use certain things a certain way)</li>
 				</ol>
-				<li>But what's really missing for in today's Web?</li>
+				<li>But what's really missing in today's Web?</li>
 				<ol>
 					<li>Choose some protocol/gateway combo or HTTP-enable your thing</li>
-					<li>Base your media type of a domain model of your choice</li>
+					<li>Base your media type on a domain model of your choice</li>
 					<li>Let's find out what we need first</li>
 					<li>Very useful to better figure out what we need...</li>
 				</ol>
@@ -55,7 +55,7 @@
 				<ol>
 					<li>Nobody should care if you run Java or PHP or C or Ruby or Python</li>
 					<li>Nobody should care how your app server connects to the data store</li>
-					<li>Nobody should care how you model your customers/products/services</li>
+					<li>Nobody should care how you model your customers/products/services/processes</li>
 				</ol>
 				<li>Let's focus on how to <em>expose thing-based services in Wot scenarios</em></li>
 			</ul>
@@ -66,16 +66,17 @@
 				<li><q>The last mile</q> (how to connect the thing) might be better left to specialists</li>
 				<ul>
 					<li>What matters is identification and interaction, but <em>only via a representation</em> (a.k.a. <em title="Representational State Transfer">REST</em>)</li>
+					<li>The Web thrives on shallow models and not on deep ones</li>
 				</ul>
-				<li>Instead, focus on scenarios such as aggregation, filtering, re-publication, subscription, ...</li>
+				<li>Instead, focus on <em>surface scenarios</em> such as aggregation, filtering, re-publication, subscription, ...</li>
 				<ul>
 					<li>How to interact using representations to achieve application goals</li>
 				</ul>
-				<li>We need an open and extensible framework and not a model for things</li>
+				<li>We need an open and extensible interaction framework and not a model for things</li>
 				<ul>
 					<li><a href="http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.atom">This feed</a> works in any reader that understands the <q>Atom framework</q></li>
 				</ul>
-				<li>Communities should be able to model whatever they think their things need</li>
+				<li>Communities should be able to model whatever they think their things are about</li>
 				<ul>
 					<li>This may or may not result in fragmentation, depending on the communities</li>
 				</ul>
@@ -85,10 +86,10 @@
 			<title>Sitting on the wrong branch can kill you</title>
 			<img src="feedbot.jpg" style="float : right ; margin-top : 0.5em ; margin-right : 2em ; "/>
 			<ul>
-				<li>Atom's model was right but the foundation was too short-lived</li>
+				<li>Atom's model was right but the foundation suffered the <a href="http://en.wikipedia.org/wiki/Hype_cycle">hype-cycle downturn</a></li>
 				<ul>
-					<li>Once, there was a flourishing loosely coupled <a href="http://dret.typepad.com/dretblog/atom-landscape.html">Atom Landscape</a></li>
-					<li>Disliking XML became trendy and that sealed Atom's fate</li>
+					<li>Once, there was a flourishing loosely coupled <a href="http://dret.typepad.com/dretblog/atom-landscape.html">Atom Landscape</a> and community</li>
+					<li>Disliking XML became the new black and that sealed Atom's fate</li>
 				</ul>
 				<li><a href="http://dret.typepad.com/dretblog/2009/05/atoms-future-as-a-generalpurpose-format.html">Atom's future didn't happen</a>, but it still needs to</li>
 				<ul>
@@ -98,14 +99,34 @@
 				<li>Atom <em>only</em> models interaction-relevant data</li>
 				<ul>
 					<li>A simple model for well-known and domain-agnostic use cases</li>
-					<li>A well-defined extension model so that domain data can be safely represented</li>
+					<li>A <a href="http://tools.ietf.org/html/rfc4287#section-6">well-defined extension model</a> so that domain data can be safely represented</li>
 				</ul>
 			</ul>
 		</slide>
 		<slide>
 			<title>Activity Streams!</title>
 			<ul>
-				<li><a href="http://www.w3.org/2013/Social/WG">W3C Social Web Working Group</a></li>
+				<li><a href="http://www.w3.org/2013/Social/WG">W3C Social Web Working Group (SWWG)</a> will start any minute now!</li>
+				<ul>
+					<li>Most important work item will be a protocol based on <a href="http://activitystrea.ms/">Activity Streams</a></li>
+					<li>Slightly different angle but many similarities in scenarios and interactions</li>
+				</ul>
+				<li>SWWG may or may not decide to adopt <q>thing-oriented</q> use cases</li>
+				<ul>
+					<li><q>Your friend X has just Y-ed resource Z on the Web.</q></li>
+					<li>My fridge telling me about some expiration date is not all that different</li>
+				</ul>
+				<li>Integrating the worlds of <em>Social</em> and <em>Things</em> may be interesting</li>
+				<ul>
+					<li>Using the same model for what matters most to us: people and things around us</li>
+				</ul>
+				<li>Activity Streams will change but the current model is very extensible</li>
+				<ul>
+					<li>The <a href="https://github.com/activitystreams/activity-schema/blob/master/activity-schema.md">Base Schema</a> defines a base set of <em>object types</em> and <em>verbs</em></li>
+					<li>Any community can extend this list (the current extension model is kind of brittle)</li>
+					<li><a href="http://schema.org/">Schema.org</a> has a <a href="http://schema.org/docs/full.html">competing list</a></li>
+					<li>Finding the right extension model and metamodel for it will be challenging</li>
+				</ul>
 			</ul>
 		</slide>
 		<slide>
@@ -122,6 +143,8 @@
 					<li>Remember <a href="http://en.wikipedia.org/wiki/Wireless_Application_Protocol">WAP</a>'s complete parallel universe? Because: <q>Mobile is different!</q></li>
 					<li>The biggest challenge is to avoid <a href="http://en.wikipedia.org/wiki/Not_invented_here">NIH</a> and identify real pain points</li>
 				</ul>
+				<li>Reach out to SWWG and explore similarities/differences between the scenarios</li>
+				<li>Adopt social/thing-friendly Activity Streams as the <q>WoT thing surface</q></li>
 			</ul>
 		</slide>
 		<slide>
@@ -131,6 +154,7 @@
 				<li>Let's start with use cases and requirements and see what's missing</li>
 				<li>Let's work incrementally to fill gaps as required</li>
 				<li>Maybe Activity Streams can provide a good foundation</li>
+				<li>(for more background, <a href="http://dret.net/netdret/publications#wil14a">please read our complete workshop submission</a></li>
 			</ul>
 		</slide>
 	</presentation>
