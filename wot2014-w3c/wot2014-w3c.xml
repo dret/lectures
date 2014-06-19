@@ -57,7 +57,7 @@
 					<li>Nobody should care how your app server connects to the data store</li>
 					<li>Nobody should care how you model your customers/products/services</li>
 				</ol>
-				<li>Let's focus on how to <em>expose services in typical Wot scenarios</em></li>
+				<li>Let's focus on how to <em>expose thing-based services in Wot scenarios</em></li>
 			</ul>
 		</slide>
 		<slide>
@@ -65,11 +65,19 @@
 			<ul>
 				<li><q>The last mile</q> (how to connect the thing) might be better left to specialists</li>
 				<ul>
-					<li>What matters is identification and interaction, but <em>only with a representation</em></li>
+					<li>What matters is identification and interaction, but <em>only via a representation</em> (a.k.a. <em title="Representational State Transfer">REST</em>)</li>
 				</ul>
-				<li>Instead, focus on scenarios such as aggregation, filtering, republication, subscription, ...</li>
+				<li>Instead, focus on scenarios such as aggregation, filtering, re-publication, subscription, ...</li>
 				<ul>
-					<li>How to interact with representations to achieve application goals</li>
+					<li>How to interact using representations to achieve application goals</li>
+				</ul>
+				<li>We need an open and extensible framework and not a model for things</li>
+				<ul>
+					<li><a href="http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.atom">This feed</a> works in any reader that understands the <q>Atom framework</q></li>
+				</ul>
+				<li>Communities should be able to model whatever they think their things need</li>
+				<ul>
+					<li>This may or may not result in fragmentation, depending on the communities</li>
 				</ul>
 			</ul>
 		</slide>
@@ -87,6 +95,11 @@
 					<li>WoT scenarios are like newsfeeds on steroids (scale, volume, variety)</li>
 					<li>But they are about the same set of interaction patterns</li>
 				</ul>
+				<li>Atom <em>only</em> models interaction-relevant data</li>
+				<ul>
+					<li>A simple model for well-known and domain-agnostic use cases</li>
+					<li>A well-defined extension model so that domain data can be safely represented</li>
+				</ul>
 			</ul>
 		</slide>
 		<slide>
@@ -100,20 +113,24 @@
 			<ul>
 				<li>Follow the footsteps of previous H2M and M2M success stories of the Web</li>
 				<ul>
-					<li>only provide <em>interaction models</em>, do not provide any <em>domain data models</em></li>
+					<li>only provide <em>interaction models</em>, do not provide <em>domain models</em></li>
 					<li>Provide building blocks so that people can easily design their own media types</li>
 					<li>Keep everything loosely coupled, so that spec work can adjust to reality</li>
 				</ul>
 				<li>A Web of Things is still a Web, and not something else entirely</li>
 				<ul>
 					<li>Remember <a href="http://en.wikipedia.org/wiki/Wireless_Application_Protocol">WAP</a>'s complete parallel universe? Because: <q>Mobile is different!</q></li>
+					<li>The biggest challenge is to avoid <a href="http://en.wikipedia.org/wiki/Not_invented_here">NIH</a> and identify real pain points</li>
 				</ul>
 			</ul>
 		</slide>
 		<slide>
 			<title>Conclusions</title>
 			<ul>
-				<li>...</li>
+				<li>Things are not something else entirely</li>
+				<li>Let's start with use cases and requirements and see what's missing</li>
+				<li>Let's work incrementally to fill gaps as required</li>
+				<li>Maybe Activity Streams can provide a good foundation</li>
 			</ul>
 		</slide>
 	</presentation>
