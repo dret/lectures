@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="ischool" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="iot-spring15.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="http://creativecommons.org/licenses/by/3.0/" short="CC 3.0">
+		<div class="license">
+			<p><a rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/ischool/ischool/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
+		</div>
+	</license>
+	<title short="XML Foundations"><a href="./" title="Course Homepage">XML Foundations</a><br/>Spring 2015 &#x2014; INFO ??? (CCN ???)</title>
+	<author>Simon Mayer, Florian Michahelles, and <a href="http://dret.net/netdret/">Erik Wilde</a></author>
+	<affiliation><a href="http://www.siemens.com/">Siemens</a> <a href="http://www.usa.siemens.com/en/about_us/research/web-of-things.htm">Web of Things Research Group</a></affiliation>
+	<date short="Spring 2015">Spring Semester 2015</date>
+	<copyright>2015 Simon Mayer, Florian Michahelles, and Erik Wilde</copyright>
+	<toc name="toc.html">
+		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
+			<thead>
+				<tr>
+					<th valign="bottom">Date</th>
+					<th valign="bottom">Subject</th>
+					<th valign="bottom">Slides</th>
+					<th valign="bottom">Additional Resources</th>
+					<th valign="bottom"><a href="a/">Assignments</a></th>
+				</tr>
+			</thead>
+			<tbody>
+				<hotspot:for-each-presentation>
+					<tr class="vevent">
+						<td align="right" valign="top"><hotspot:date/></td>
+						<td valign="top">
+							<hotspot:if-toc class="author">
+								<span class="guest">Guest Lecture by <hotspot:toc class="author"/> : </span>
+							</hotspot:if-toc>
+							<b><span class="summary"><hotspot:title/></span><span class="toggle">:</span></b> <span class="toggle"><span class="description"><hotspot:toc class="abstract"/></span></span>
+							<div style="display : none">
+								<span class="dtstart"><hotspot:date/>T09:00</span>
+								<span class="dtend"><hotspot:date/>T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><hotspot:presentation-link title="Lecture Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+						<td align="center"><hotspot:toc class="resources"/></td>
+						<td align="center"><hotspot:toc class="assignment"/></td>
+					</tr>
+				</hotspot:for-each-presentation>
+			</tbody>
+		</table>
+	</toc>
+	<presentation id="intro">
+		<title short="Introduction">Overview and Introduction</title>
+		<date>2013-09-04</date>
+		<toc class="resources"><a href="http://www.w3.org/Press/1998/XML10-REC">XML 1.0 Press Release</a>&#160;· <a href="http://www.tbray.org/ongoing/When/200x/2008/02/10/XML-People" title="Tim Bray: XML People">XML People</a></toc>
+		<toc class="abstract">The <em>Extensible Markup Language (XML)</em> has been introduced in 1998 to enable content providers to publish their content on the Web in an application-specific format. HTML was considered as conveying not enough semantics, since its only purpose was (and is) the preparation of content for Web-based publishing. XML was the first step towards machine-readable data formats for the Web, a trend that since its invention has been taken to higher levels with the idea of the <em>Semantic Web</em>. XML appeared when the Web was in the steepest part of its success curve, and since then has taken over as the globally accepted format for the exchange of machine-readable structured data.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+	</presentation>
+</hotspot>
