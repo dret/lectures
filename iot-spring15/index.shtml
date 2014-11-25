@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title>Internet of Things: Foundations and Applications (Spring 2015 &mdash; INFO ??? &mdash; CCN 41607)</title>
+		<title>Internet of Things: Foundations and Applications (Spring 2015 &mdash; INFO 290 &mdash; CCN 41607)</title>
 		<link rel="home" href=".." title="Lectures"/>
 		<link rel="up" href=".." title="Lectures"/>
 		<link rel="author" href="http://dret.net/netdret/" title="Erik Wilde"/>
@@ -41,11 +41,11 @@ function displayAll(theClass,value) {
 	<body onload='displayAll("toggle","none") ; return false ;'>
 		<div class="header">
 			<h1>Internet of Things: Foundations and Applications</h1>
-			<h2>INFO ??? (CCN 41607) &mdash; Spring 2015<br/><a href="http://www.ischool.berkeley.edu/">School of Information</a>, <a href="http://www.berkeley.edu/">UC Berkeley</a></h2>
+			<h2>INFO 290 (CCN 41607) &mdash; Spring 2015<br/><a href="http://www.ischool.berkeley.edu/">School of Information</a>, <a href="http://www.berkeley.edu/">UC Berkeley</a></h2>
 			<h2>Instructors: Simon Mayer, Florian Michahelles, and <a href="http://dret.net/netdret/">Erik Wilde</a><!-- <br/>
 			TA: <a href="???">???</a></h2> --></h2>
-			<h3>Lecture: Friday 9:30&ndash;11.30, ??? <a href="http://www.berkeley.edu/map/maps/CD45.html">South Hall</a><br />
-      Lab: Monday 12:30&ndash;1.30, ??? <a href="http://www.berkeley.edu/map/maps/CD45.html">South Hall</a></h3>
+			<h3>Lecture: Friday 9:30&ndash;11.30, 202 <a href="http://www.berkeley.edu/map/maps/CD45.html">South Hall</a><br />
+      Lab: Monday 12:30&ndash;1.30, 202 <a href="http://www.berkeley.edu/map/maps/CD45.html">South Hall</a></h3>
 		</div>
 		<div style="margin : 5mm">
 			<p>This course looks at the <q>Internet of Things (IoT)</q> as the general theme of physical/real-world things becoming increasingly visible and actionable via Internet and Web technologies. The goal of the course is to look top-down as well as bottom-up, to provide students with a comprehensive understanding of the IoT.</p>
