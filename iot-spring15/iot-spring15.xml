@@ -64,28 +64,48 @@
 	<presentation id="intro">
 		<title short="Introduction">Overview and Introduction</title>
 		<date>2015-01-23</date>
-		<toc class="resources"><a href="http://www.w3.org/Press/1998/XML10-REC">XML 1.0 Press Release</a>&#160;· <a href="http://www.tbray.org/ongoing/When/200x/2008/02/10/XML-People" title="Tim Bray: XML People">XML People</a></toc>
-		<toc class="abstract">The <em>Extensible Markup Language (XML)</em> has been introduced in 1998 to enable content providers to publish their content on the Web in an application-specific format. HTML was considered as conveying not enough semantics, since its only purpose was (and is) the preparation of content for Web-based publishing. XML was the first step towards machine-readable data formats for the Web, a trend that since its invention has been taken to higher levels with the idea of the <em>Semantic Web</em>. XML appeared when the Web was in the steepest part of its success curve, and since then has taken over as the globally accepted format for the exchange of machine-readable structured data.</toc>
+		<toc class="abstract">...</toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
 	</presentation>
 	<presentation id="iot-wot">
-		<title short="IoT/WoT">Internet of Things (IoT) and Web of Things (WoT): What's WoT?</title>
+		<title short="IoT &amp; WoT">Internet of Things (IoT) and Web of Things (WoT): What's WoT?</title>
 		<date>2015-01-30</date>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<slide>
+			<title>Internet? Web? What's the Difference?</title>
+			<blockquote>
+				<p>The <em>Internet</em> is a global network of interconnected computers that allows connected systems to communicate, regardless of the specifics of system and network implementations.</p>
+			</blockquote>
+			<blockquote>
+				<p>The <em>Web</em> is a distributed hypermedia system that uses the Internet as its connective fabric. The most important aspects of the Web are its <em>identification mechanism (URI)</em>, its <em>communication protocol (HTTP)</em>, and <em>hypermedia-based media types</em>.</p>
+			</blockquote>
+		</slide>
 	</presentation>
-	<presentation>
-		<title short="layering">Layering in the Internet and the Web</title>
+	<presentation id="layering">
+		<title short="Layering">Layering in the Internet and the Web</title>
 		<date>2015-02-06</date>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 	</presentation>
 	<presentation>
 		<title short="?">?</title>
 		<date>2015-02-13</date>
 	</presentation>
-	<presentation>
-		<title short="AS">Activity Streams</title>
+	<presentation id="activitystreams">
+		<title>Activity Streams</title>
 		<date>2015-02-20</date>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 	</presentation>
 	<presentation>
 		<title short="?">?</title>
@@ -103,9 +123,24 @@
 		<title short="?">?</title>
 		<date>2015-03-20</date>
 	</presentation>
-	<presentation>
-		<title short="protocols">IoT Communication Protocols</title>
+	<presentation id="protocols">
+		<title short="Protocols">IoT Communication Protocols</title>
 		<date>2015-04-03</date>
+		<toc class="resources"><a href="http://xmpp.org/" title="XMPP Standards Foundation">XMPP.org</a>&#160;· <a href="http://www.amqp.org/" title="AMQP Home Page">AMQP.org</a>&#160;· <a href="http://www.mqtt.org/" title="MQTT Home Page">MQTT.org</a></toc>
+		<toc class="abstract">In this lecture we are looking at both lower layer (CoAP) and specific messaging protocols (AMQP, MQTT, XMPP), as examples of how specific requirements in application areas have resulted in a variety of network and application protocols. The main challenge in this space is to not compare protocols feature-by-feature, but to understand what they do and do not cover, and what they have been designed for.</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="XMPP">
+			<title short="XMPP">Extensible Messaging Protocol (XMPP)</title>
+		</part>
+		<part id="AMQP">
+			<title short="AMQP">Advanced Message Queueing Protocol (AMQP)</title>
+		</part>
+		<part id="MQTP">
+			<title short="MQTT">Message Queue Telemetry Transport (MQTT)</title>
+		</part>
 	</presentation>
 	<presentation>
 		<title short="?">?</title>
