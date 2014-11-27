@@ -152,6 +152,12 @@
 		</part>
 		<part id="PuSH">
 			<title short="PuSH">PubSubHubbub (Push)</title>
+			<slide>
+				<title>Push as a Pattern</title>
+				<ul>
+					<li>PuSH changed significantly between <a href="http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html">0.3</a> and <a href="https://superfeedr-misc.s3.amazonaws.com/pubsubhubbub-core-0.4.html">0.4</a></li>
+				</ul>
+			</slide>
 		</part>
 	</presentation>
 	<presentation>
