@@ -73,6 +73,7 @@
 	<presentation id="iot-wot">
 		<title short="IoT &amp; WoT">Internet of Things (IoT) and Web of Things (WoT): What's WoT?</title>
 		<date>2015-01-30</date>
+		<toc class="resources"><a href="http://en.wikipedia.org/wiki/OSI_model" title="Wikipedia: OSI Model">OSI</a></toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -94,6 +95,30 @@
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="netlayers">
+			<title>Networking Layers</title>
+			<slide id="layer1">
+				<title>Layer 1: Physical</title>
+			</slide>
+			<slide id="layer2">
+				<title>Layer 2: Data Link</title>
+			</slide>
+			<slide id="layer3">
+				<title>Layer 3: Network</title>
+			</slide>
+			<slide id="layer4">
+				<title>Layer 4: Transport</title>
+			</slide>
+			<slide id="layer5">
+				<title>Layer 5: Session</title>
+			</slide>
+			<slide id="layer6">
+				<title>Layer 6: Presentation</title>
+			</slide>
+			<slide id="layer7">
+				<title>Layer 7: Application</title>
+			</slide>
+		</part>
 	</presentation>
 	<presentation>
 		<title short="?">?</title>
