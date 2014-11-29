@@ -97,6 +97,9 @@
 		</slide>
 		<part id="netlayers">
 			<title>Networking Layers</title>
+			<slide id="SoC">
+				<title>Separation of Concerns (SoC)</title>
+			</slide>
 			<slide id="layer1">
 				<title>Layer 1: Physical</title>
 			</slide>
@@ -117,6 +120,18 @@
 			</slide>
 			<slide id="layer7">
 				<title>Layer 7: Application</title>
+			</slide>
+			<slide>
+				<title>(Some) Popular Internet Application Protocols</title>
+				<ul>
+					<li>Domain/Host Name Resolution: DNS</li>
+					<li>The Web: HTTP</li>
+					<li>Email: SMTP/IMAP</li>
+					<li>Chatting: XMPP</li>
+					<li>File Transfer: FTP</li>
+					<li>Multimedia Traffic: RTP</li>
+					<li>Remote Login: Telnet</li>
+				</ul>
 			</slide>
 		</part>
 	</presentation>
