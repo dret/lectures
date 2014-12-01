@@ -72,6 +72,7 @@
 	</presentation>
 	<presentation id="iot-wot">
 		<title short="IoT &amp; WoT">Internet of Things (IoT) and Web of Things (WoT): What's WoT?</title>
+		<toc class="abstract">Internet of Things (IoT) and Web of Things (WoT) have become very popular terms, but with great fame comes great fuzziness. In this lecture we are putting things into perspective, and give one possible definition of the terms IoT and WoT. Understanding "the bigger picture" and how IoT/WoT fit in with other popular topics (such as Big Data) is another goal of this lecture.</toc>
 		<date>2015-01-30</date>
 		<toc class="resources"><a href="http://en.wikipedia.org/wiki/OSI_model" title="Wikipedia: OSI Model">OSI</a></toc>
 		<slide>
@@ -91,6 +92,7 @@
 	<presentation id="layering">
 		<title short="Layering">Layering in the Internet and the Web</title>
 		<date>2015-02-06</date>
+		<toc class="abstract">Layering is one of the fundamental abstractions of IT systems and models. As one way how the terms IoT and WoT can be defined and distinguished, it is possible to look at what the Internet and the Web are, how they are related, and how this can be translated into scenarios where resources are are real-world resources.</toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -142,10 +144,21 @@
 	<presentation id="activitystreams">
 		<title>Activity Streams</title>
 		<date>2015-02-20</date>
+		<toc class="resources"><a href="http://www.w3.org/Social/WG" title="W3C Social Web Working Group">W3C&#160;Social&#160;Web&#160;WG</a>&#160;· <a href="http://activitystrea.ms/" title='"Historical" Activity Streams Home Page'>Activity&#160;Streams&#160;1.0</a></toc>
+		<toc class="abstract">The Web's fundamental role is that of a Service-Oriented Architecture (SOA), where resources can be accessed as a way to achieve application goals, but their implementation is of no concern to the users of the resources. Activity Streams are a developing standard that allows the sharing of activities across a variety of application domain. In this lecture the standard is discussed, and we look at specific applications of it in IoT/WoT scenarios.</toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="activitystreams-history">
+			<title>Social Web History</title>
+		</part>
+		<part id="activitystreams-basics">
+			<title>Activity Streams Basics</title>
+		</part>
+		<part id="activitystreams-vocabularies">
+			<title>Vocabularies for Activity Streams</title>
+		</part>
 	</presentation>
 	<presentation>
 		<title short="?">?</title>
