@@ -64,6 +64,7 @@
 	<presentation id="intro">
 		<title short="Introduction">Overview and Introduction</title>
 		<date>2015-01-23</date>
+		<toc class="resources"><a href="https://bcourses.berkeley.edu/courses/1293124" title="Course Site on bCourses">bCourses</a><!-- &#160;· --></toc>
 		<toc class="abstract">...</toc>
 		<slide>
 			<title>Abstract</title>
@@ -80,6 +81,9 @@
 		</part>
 		<part id="assignments">
 			<title>Assignments</title>
+			<slide id="projects">
+				<title>Projects</title>
+			</slide>
 		</part>
 		<part id="grading">
 			<title>Grading</title>
