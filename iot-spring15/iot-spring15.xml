@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?hotspot layout-path="hotspot/hotspot/layout" ?>
 <?hotspot kilauea-path="hotspot/kilauea" ?>
-<?hotspot layout="ischool" ?>
+<?hotspot layout="siemens" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 	<configuration>
 		<link subsections="yes" bookmarks="yes" versions="iot-spring15.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
