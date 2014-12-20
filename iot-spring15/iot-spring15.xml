@@ -65,16 +65,29 @@
 		<title short="Introduction">Overview and Introduction</title>
 		<date>2015-01-23</date>
 		<toc class="resources"><a href="https://bcourses.berkeley.edu/courses/1293124" title="Course Site on bCourses">bCourses</a></toc>
-		<toc class="abstract">...</toc>
+		<toc class="abstract"></toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
-		<part id="resources">
-			<title>Resources</title>
-		</part>
 		<part id="lectures">
 			<title>Lectures</title>
+			<slide>
+				<title>Lecture Format</title>
+				<ul>
+					<li>Weekly lecture Friday 9.30-11.30</li>
+					<li>Starting <q>Berkeley Time</q></li>
+					<li>Two 45min blocks which a brief oxygen/discussion break</li>
+					<li>Typically,</li>
+					<ul>
+						<li>discussing assigned readings at the start of each lecture, and</li>
+						<li>discussing the assignment at the end of the lecture</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="readings">
+			<title>Readings</title>
 		</part>
 		<part id="lab">
 			<title>Lab</title>
@@ -87,6 +100,12 @@
 		</part>
 		<part id="grading">
 			<title>Grading</title>
+		</part>
+		<part id="syllabus">
+			<title>Syllabus</title>
+			<slide>
+				<title><q>From Things to Knowledge</q></title>
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="iot-wot">
@@ -157,9 +176,27 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation>
-		<title short="?">?</title>
+	<presentation id="standards">
+		<title>IoT Standards</title>
 		<date>2015-02-13</date>
+		<part>
+			<title>Standards Bodies</title>
+			<slide id="w3c">
+				<title short="W3C">World Wide Web Consortium (W3C)</title>
+			</slide>
+			<slide id="ietf">
+				<title short="IETF">Internet Engineering Task Force (IETF)</title>
+			</slide>
+			<slide id="oasis">
+				<title short="OASIS">Organization for the Advancement of Structured Information Standards (OASIS)</title>
+			</slide>
+			<slide id="ieee">
+				<title short="IEEE">World Wide Web Consortium (IEEE)</title>
+			</slide>
+			<slide id="iec">
+				<title short="IEC">World Wide Web Consortium (IEC)</title>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="activitystreams">
 		<title>Activity Streams</title>
@@ -181,7 +218,7 @@
 		</part>
 	</presentation>
 	<presentation>
-		<title short="?">?</title>
+		<title id="business">Business Cases</title>
 		<date>2015-02-27</date>
 	</presentation>
 	<presentation>
@@ -193,7 +230,7 @@
 		<date>2015-03-13</date>
 	</presentation>
 	<presentation>
-		<title short="?">?</title>
+		<title id="wearable">Wearable Technologies &amp; Quantified Self</title>
 		<date>2015-03-20</date>
 	</presentation>
 	<presentation id="protocols">
@@ -234,7 +271,7 @@
 		</part>
 	</presentation>
 	<presentation>
-		<title short="?">?</title>
+		<title id="persuasive">Persuasive Technologies and Behavioral Change</title>
 		<date>2015-04-10</date>
 	</presentation>
 	<presentation>
@@ -242,7 +279,7 @@
 		<date>2015-04-17</date>
 	</presentation>
 	<presentation>
-		<title short="?">?</title>
+		<title short="big-data-semweb">Big Data and Semantic Technologies</title>
 		<date>2015-04-24</date>
 	</presentation>
 	<presentation>
@@ -250,7 +287,7 @@
 		<date>2015-05-01</date>
 	</presentation>
 	<presentation>
-		<title short="?">?</title>
+		<title id="summary" short="Summary">Course Summary</title>
 		<date>2015-05-08</date>
 	</presentation>
 </hotspot>
