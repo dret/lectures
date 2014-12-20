@@ -179,8 +179,12 @@
 	<presentation id="standards">
 		<title>IoT Standards</title>
 		<date>2015-02-13</date>
+		<toc class="resources"><a href="http://www.iso.org/" title="International Organization for Standardization">ISO</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://www.ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.oasis-open.org/" title="Organization for the Advancement of Structured Information Standards">OASIS</a>&#160;· <a href="http://www.ieee.org/" title="Institute of Electrical and Electronics Engineers">IEEE</a>&#160;· <a href="http://www.iec.ch/" title="International Electrotechnical Commission">IEC</a></toc>
 		<part>
 			<title>Standards Bodies</title>
+			<slide id="iso">
+				<title short="ISO">International Organization for Standardization (ISO)</title>
+			</slide>
 			<slide id="w3c">
 				<title short="W3C">World Wide Web Consortium (W3C)</title>
 			</slide>
@@ -191,10 +195,10 @@
 				<title short="OASIS">Organization for the Advancement of Structured Information Standards (OASIS)</title>
 			</slide>
 			<slide id="ieee">
-				<title short="IEEE">World Wide Web Consortium (IEEE)</title>
+				<title short="IEEE">Institute of Electrical and Electronics Engineers (IEEE)</title>
 			</slide>
 			<slide id="iec">
-				<title short="IEC">World Wide Web Consortium (IEC)</title>
+				<title short="IEC">International Electrotechnical Commission (IEC)</title>
 			</slide>
 		</part>
 	</presentation>
