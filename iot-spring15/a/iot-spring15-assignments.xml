@@ -33,9 +33,25 @@
 		</table>
 	</html-footer>
 	<assignment>
-		<title>Scenario Description</title>
+		<title>Warm-Up</title>
 		<dates assigned="2015-01-30" due="2015-02-05"/>
 		<abstract>First warm-up. Maybe NodeRED?</abstract>
+		<instructions>
+			<p>...</p>
+		</instructions>
+	</assignment>
+	<assignment>
+		<title>Web Basics</title>
+		<dates assigned="2015-02-06" due="2015-02-12"/>
+		<abstract>Playing around with establishing HTTP connections and sending various kinds of HTTP requests, and using the content as well as header fields.</abstract>
+		<instructions>
+			<p>...</p>
+		</instructions>
+	</assignment>
+	<assignment>
+		<title>Project Proposals</title>
+		<dates assigned="2015-02-13" due="2015-02-15"/>
+		<abstract>Developing and document a project proposal for the lab lightening talks.</abstract>
 		<instructions>
 			<p>...</p>
 		</instructions>
