@@ -94,6 +94,15 @@
 		</part>
 		<part id="assignments">
 			<title>Assignments</title>
+			<slide>
+				<title></title>
+				<ul>
+					<li><a href="a/">Assignments</a></li>
+				</ul>
+			</slide>
+			<slide id="warmup">
+				<title>Warming Up</title>
+			</slide>
 			<slide id="projects">
 				<title>Projects</title>
 			</slide>
@@ -113,7 +122,7 @@
 		<date>2015-01-30</date>
 		<toc class="resources"><a href="https://www.mnot.net/blog/2014/12/04/what_is_the_web" title="Mark Nottingham's Blog">What is the Web?</a>&#160;· <a href="http://dret.typepad.com/dretblog/2014/07/whats-wot.html" title="Erik Wilde's Blog">What's WoT?</a></toc>
 		<toc class="abstract">Internet of Things (IoT) and Web of Things (WoT) have become very popular terms, but with great fame comes great fuzziness. In this lecture we are putting things into perspective, and give one possible definition of the terms IoT and WoT. Understanding "the bigger picture" and how IoT/WoT fit in with other popular topics (such as Big Data) is another goal of this lecture.</toc>
-		<toc class="assignment"><a href="a/1/">A1</a>&#160;assigned (due:&#160;2015-02-05)</toc>
+		<toc class="assignment"><a href="a/1/">A1</a>&#160;(due:&#160;2015-02-05)</toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -133,7 +142,7 @@
 		<date>2015-02-06</date>
 		<toc class="resources"><a href="http://en.wikipedia.org/wiki/OSI_model" title="Wikipedia: OSI Model">OSI</a></toc>
 		<toc class="abstract">Layering is one of the fundamental abstractions of IT systems and models. As one way how the terms IoT and WoT can be defined and distinguished, it is possible to look at what the Internet and the Web are, how they are related, and how this can be translated into scenarios where resources are are real-world resources.</toc>
-		<toc class="assignment"><a href="a/2/">A2</a>&#160;assigned (due:&#160;2015-02-12)</toc>
+		<toc class="assignment"><a href="a/2/">A2</a>&#160;(due:&#160;2015-02-12)</toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -182,7 +191,7 @@
 		<title>IoT Standards</title>
 		<date>2015-02-13</date>
 		<toc class="resources"><a href="http://www.iso.org/" title="International Organization for Standardization">ISO</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://www.ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.oasis-open.org/" title="Organization for the Advancement of Structured Information Standards">OASIS</a>&#160;· <a href="http://www.ieee.org/" title="Institute of Electrical and Electronics Engineers">IEEE</a>&#160;· <a href="http://www.iec.ch/" title="International Electrotechnical Commission">IEC</a></toc>
-		<toc class="assignment"><a href="a/3/">A3</a>&#160;assigned (due:&#160;2015-02-15)</toc>
+		<toc class="assignment"><a href="a/3/">A3</a>&#160;(due:&#160;2015-02-15)</toc>
 		<part>
 			<title>Standards Bodies</title>
 			<slide id="iso">
@@ -210,6 +219,7 @@
 		<date>2015-02-20</date>
 		<toc class="resources"><a href="http://www.w3.org/Social/WG" title="W3C Social Web Working Group">W3C&#160;Social&#160;Web&#160;WG</a>&#160;· <a href="http://activitystrea.ms/" title='"Historical" Activity Streams Home Page'>Activity&#160;Streams&#160;1.0</a></toc>
 		<toc class="abstract">The Web's fundamental role is that of a Service-Oriented Architecture (SOA), where resources can be accessed as a way to achieve application goals, but their implementation is of no concern to the users of the resources. Activity Streams are a developing standard that allows the sharing of activities across a variety of application domain. In this lecture the standard is discussed, and we look at specific applications of it in IoT/WoT scenarios.</toc>
+		<toc class="assignment"><a href="a/4/">A4</a>&#160;(due:&#160;2015-02-26)</toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
