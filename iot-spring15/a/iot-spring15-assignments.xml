@@ -66,7 +66,7 @@
 	<assignment>
 		<title>Activity Vocabulary Development</title>
 		<dates assigned="2015-02-27" due="2015-03-05"/>
-		<abstract>Formalize the vocabulary that is used for conveying activities that are relevant to the scenario. Give examples for concrete activities that are exchanged during the scenario.</abstract>
+		<abstract>ASbase is using Activity Streams as its data model. This assignment is about developing a vocabulary that is sufficient to represent the data that is required to make the project work. The vocabulary that is used for conveying activities that are relevant to the scenario should be formalized in this step. Also, examples for concrete activities that are exchanged during the scenario should be given.</abstract>
 		<instructions>
 			<p>...</p>
 		</instructions>
@@ -74,7 +74,7 @@
 	<assignment>
 		<title>Getting Data into ASbase</title>
 		<dates assigned="2015-03-06" due="2015-03-19"/>
-		<abstract>...</abstract>
+		<abstract>Based on the vocabulary, in this assignment data sources (either APIs or networked things) are used to get information, convert it into Activity Streams, and then submit it to ASbase to that it can be used by ASbase consumers.</abstract>
 		<instructions>
 			<p>...</p>
 		</instructions>
@@ -82,15 +82,15 @@
 	<assignment>
 		<title>Getting Data out of ASbase</title>
 		<dates assigned="2015-03-20" due="2015-04-09"/>
-		<abstract>...</abstract>
+		<abstract>In this assignment, activity streams that are distributed by the platform should be consumed by ASbase clients. These can for instance be analysis modules or user interfaces/dashboards.</abstract>
 		<instructions>
 			<p>...</p>
 		</instructions>
 	</assignment>
 	<assignment>
-		<title>Mixing Scenarios and Activities</title>
+		<title>Mixing Groups: Scenario-Mashups</title>
 		<dates assigned="2015-04-10" due="2015-04-16"/>
-		<abstract>...</abstract>
+		<abstract>Coordinate with others group with the goal of making use of their information within your own scenario. This step will involve negotiating how to use and align the (perhaps differing) vocabularies.</abstract>
 		<instructions>
 			<p>...</p>
 		</instructions>
@@ -98,7 +98,7 @@
 	<assignment>
 		<title>Planning and Building the Mashup</title>
 		<dates assigned="2015-04-17" due="2015-04-30"/>
-		<abstract>...</abstract>
+		<abstract>Implement a mashup that is based on data from your own sources and from at least one other group, with the ASbase platform as the central coordinator.</abstract>
 		<instructions>
 			<p>...</p>
 		</instructions>
