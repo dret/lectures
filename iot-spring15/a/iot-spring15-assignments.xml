@@ -66,7 +66,7 @@
 	<assignment>
 		<title>Activity Vocabulary Development</title>
 		<dates assigned="2015-02-27" due="2015-03-05"/>
-		<abstract>...</abstract>
+		<abstract>ASbase is using Activity Streams as its data model. This assignment is about developing a vocabulary that is sufficient to represent the data that is required to make the project work.</abstract>
 		<instructions>
 			<p>...</p>
 		</instructions>
@@ -74,7 +74,7 @@
 	<assignment>
 		<title>Getting Data into ASbase</title>
 		<dates assigned="2015-03-06" due="2015-03-19"/>
-		<abstract>...</abstract>
+		<abstract>Based on the vocabulary, in this assignment data sources (either APIs or networked things) are used to get information, convert it into Activity Streams, and then submit it to ASbase to that it can be used by ASbase consumers.</abstract>
 		<instructions>
 			<p>...</p>
 		</instructions>
