@@ -42,7 +42,7 @@
 	<assignment>
 		<title>Web Basics</title>
 		<dates assigned="2015-02-06" due="2015-02-12"/>
-		<abstract>Playing around with establishing HTTP connections and sending various kinds of HTTP requests, and using the content as well as header fields.</abstract>
+		<abstract>Establishing HTTP connections and sending different kinds of HTTP requests. Getting to know libraries to use for these purposes, HTTP content negotiation and other HTTP headers. Parsing and displaying simple content in a smartphone application.</abstract>
 		<instructions>
 			<p>...</p>
 		</instructions>
@@ -50,7 +50,7 @@
 	<assignment>
 		<title>Project Proposals</title>
 		<dates assigned="2015-02-13" due="2015-02-15"/>
-		<abstract>Developing and document a project proposal for the lab lightening talks.</abstract>
+		<abstract>Develop and formulate an individual project idea for the lab lightening talks.</abstract>
 		<instructions>
 			<p>...</p>
 		</instructions>
@@ -58,7 +58,7 @@
 	<assignment>
 		<title>Project Development</title>
 		<dates assigned="2015-02-20" due="2015-02-26"/>
-		<abstract>Project group formation and developing a more concrete description of the project, including a detailed list of sources, the way how they map to activities, and the way in which they are used.</abstract>
+		<abstract>Project group formation and development of a more concrete description of the project. This includes a detailed list of sources for input data, targets for outputs, how this data maps to activities, and what the detailed meaning of the data is with respect to the project idea.</abstract>
 		<instructions>
 			<p>...</p>
 		</instructions>
@@ -66,7 +66,7 @@
 	<assignment>
 		<title>Activity Vocabulary Development</title>
 		<dates assigned="2015-02-27" due="2015-03-05"/>
-		<abstract>ASbase is using Activity Streams as its data model. This assignment is about developing a vocabulary that is sufficient to represent the data that is required to make the project work.</abstract>
+		<abstract>ASbase is using Activity Streams as its data model. This assignment is about developing a vocabulary that is sufficient to represent the data that is required to make the project work. The vocabulary that is used for conveying activities that are relevant to the scenario should be formalized in this step. Also, examples for concrete activities that are exchanged during the scenario should be given.</abstract>
 		<instructions>
 			<p>...</p>
 		</instructions>
@@ -82,15 +82,15 @@
 	<assignment>
 		<title>Getting Data out of ASbase</title>
 		<dates assigned="2015-03-20" due="2015-04-09"/>
-		<abstract>...</abstract>
+		<abstract>In this assignment, activity streams that are distributed by the platform should be consumed by ASbase clients. These can for instance be analysis modules or user interfaces/dashboards.</abstract>
 		<instructions>
 			<p>...</p>
 		</instructions>
 	</assignment>
 	<assignment>
-		<title>Mixing Scenarios and Activities</title>
+		<title>Mixing Groups: Scenario-Mashups</title>
 		<dates assigned="2015-04-10" due="2015-04-16"/>
-		<abstract>...</abstract>
+		<abstract>Coordinate with others group with the goal of making use of their information within your own scenario. This step will involve negotiating how to use and align the (perhaps differing) vocabularies.</abstract>
 		<instructions>
 			<p>...</p>
 		</instructions>
@@ -98,7 +98,7 @@
 	<assignment>
 		<title>Planning and Building the Mashup</title>
 		<dates assigned="2015-04-17" due="2015-04-30"/>
-		<abstract>...</abstract>
+		<abstract>Implement a mashup that is based on data from your own sources and from at least one other group, with the ASbase platform as the central coordinator.</abstract>
 		<instructions>
 			<p>...</p>
 		</instructions>
