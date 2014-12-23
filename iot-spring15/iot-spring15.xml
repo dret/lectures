@@ -235,21 +235,40 @@
 			<title>Vocabularies for Activity Streams</title>
 		</part>
 	</presentation>
-	<presentation>
-		<title id="business">Business Cases</title>
+	<presentation id="connectivity">
+		<title id="Connectivity">Connecting Things: How to get Things onto the Internet</title>
 		<date>2015-02-27</date>
+		<toc class="assignment"><a href="a/5/">A5</a>&#160;(due:&#160;2015-03-05)</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 	</presentation>
-	<presentation>
-		<title short="?">?</title>
-		<date>2015-03-06</date>
+	<presentation id="business-cases">
+		<title short="Business Cases">Business Cases &amp; Concepts</title>
+				<date>2015-03-06</date>
+				<toc class="assignment"><a href="a/6/">A6</a>&#160;(due:&#160;2015-03-19)</toc>
+				<slide>
+					<title>Abstract</title>
+					<p class="abstract"><toc class="abstract"/></p>
+				</slide>
 	</presentation>
-	<presentation>
-		<title short="?">?</title>
+	<presentation id="business-models">
+		<title short="Business Models">Business Issues and Models</title>
 		<date>2015-03-13</date>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 	</presentation>
-	<presentation>
-		<title id="wearable">Wearable Technologies &amp; Quantified Self</title>
+	<presentation id="persuasive">
+		<title short="Persuasive">Persuasive Technologies &amp; Behavioral Change</title>
 		<date>2015-03-20</date>
+		<toc class="assignment"><a href="a/7/">A7</a>&#160;(due:&#160;2015-04-09)</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 	</presentation>
 	<presentation id="protocols">
 		<title short="Protocols">IoT Communication Protocols</title>
@@ -288,9 +307,15 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation id="persuasive">
-		<title short="Persuasive">Persuasive Technologies and Behavioral Change</title>
+	<presentation id="big-data-semweb">
+		<title short="Big Data &amp; Semantics">Big Data and Semantic Technologies</title>
 		<date>2015-04-10</date>
+		<toc class="abstract">...</toc>
+		<toc class="assignment"><a href="a/8/">A8</a>&#160;(due:&#160;2015-04-16)</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 	</presentation>
 	<presentation id="iot-wild">
 		<title>IoT in the Wild</title>
@@ -302,8 +327,8 @@
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
 	</presentation>
-	<presentation id="big-data-semweb">
-		<title short="Big Data &amp; Semantics">Big Data and Semantic Technologies</title>
+	<presentation id="implications">
+		<title short="Implications">Implications for Society</title>
 		<date>2015-04-24</date>
 		<toc class="abstract">...</toc>
 		<slide>
