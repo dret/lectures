@@ -98,19 +98,20 @@
 			<slide>
 				<title></title>
 				<ul>
-					<li><a href="a/">Assignments</a></li>
+					<li><a href="a/">9 assignments</a></li>
+					<li>Mandatory lab time for support and group work</li>
 				</ul>
 			</slide>
 			<slide id="warmup">
 				<title>Warming Up</title>
-				<ul>
+				<ol>
 					<li><a href="a/1/">Internetworking Things</a></li>
 					<li><a href="a/2/">Internet/Web Basics</a></li>
-				</ul>
+				</ol>
 			</slide>
 			<slide id="projects">
 				<title>Projects</title>
-				<ul>
+				<ol start="3">
 					<li><a href="a/3/">Project Proposals</a></li>
 					<li><a href="a/4/">Project Development</a></li>
 					<li><a href="a/5/">Activity Vocabulary Development</a></li>
@@ -118,17 +119,31 @@
 					<li><a href="a/7/">Getting Data out of ASbase</a></li>
 					<li><a href="a/8/">Mixing Groups: Scenario Mashups</a></li>
 					<li><a href="a/9/">Planning and Building the Mashup</a></li>
-				</ul>
+				</ol>
 			</slide>
 			<slide id="project-presentations">
 				<title>Presentations</title>
 			</slide>
 			<slide id="project-showcase">
 				<title>Showcase</title>
+				<ul>
+					<li>Project showcase at the end of the semester</li>
+					<li><em>Not</em> part of <link href="grading"/></li>
+				</ul>
 			</slide>
 		</part>
 		<part id="grading">
 			<title>Grading</title>
+			<ul>
+				<li>Grading is based on a variety of course elements</li>
+				<ul>
+					<li><link href="projects">Project assignments</link> and results: 50%</li>
+					<li>Project presentation: 10%</li>
+					<li>Opinion papers: 15%</li>
+					<li>Participation: 10%</li>
+					<li><link href="warmup">Warm-up assignments</link>: 50%</li>
+				</ul>
+			</ul>
 		</part>
 		<part id="syllabus">
 			<title>Syllabus</title>
