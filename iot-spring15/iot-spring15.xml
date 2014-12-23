@@ -279,7 +279,7 @@
 			</slide>
 		</part>
 		<part id="PuSH">
-			<title short="PuSH">PubSubHubbub (Push)</title>
+			<title short="PuSH">PubSubHubbub (PuSH)</title>
 			<slide>
 				<title>Push as a Pattern</title>
 				<ul>
@@ -288,8 +288,8 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation>
-		<title id="persuasive">Persuasive Technologies and Behavioral Change</title>
+	<presentation id="persuasive">
+		<title short="Persuasive">Persuasive Technologies and Behavioral Change</title>
 		<date>2015-04-10</date>
 	</presentation>
 	<presentation id="iot-wild">
@@ -303,7 +303,7 @@
 		</slide>
 	</presentation>
 	<presentation id="big-data-semweb">
-		<title>Big Data and Semantic Technologies</title>
+		<title short="Big Data &amp; Semantics">Big Data and Semantic Technologies</title>
 		<date>2015-04-24</date>
 		<toc class="abstract">...</toc>
 		<slide>
@@ -312,7 +312,7 @@
 		</slide>
 	</presentation>
 	<presentation id="projects">
-		<title>Project Presentations</title>
+		<title short="Presentations">Project Presentations</title>
 		<date>2015-05-01</date>
 		<toc class="abstract">...</toc>
 		<slide>
@@ -320,8 +320,8 @@
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
 	</presentation>
-	<presentation>
-		<title id="summary" short="Summary">Course Summary</title>
+	<presentation id="summary">
+		<title short="Summary">Course Summary</title>
 		<date>2015-05-08</date>
 		<toc class="abstract">...</toc>
 		<slide>
