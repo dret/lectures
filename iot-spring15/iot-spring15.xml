@@ -259,14 +259,26 @@
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
-		<part id="activitystreams-history">
+		<part id="as-history">
 			<title>Social Web History</title>
 		</part>
-		<part id="activitystreams-basics">
+		<part id="as-basics">
 			<title>Activity Streams Basics</title>
 		</part>
-		<part id="activitystreams-vocabularies">
+		<part id="as-vocabularies">
 			<title>Vocabularies for Activity Streams</title>
+			<slide>
+				<title>AS need Vocabularies</title>
+			</slide>
+			<slide>
+				<title>Use, Reuse, or Define?</title>
+			</slide>
+			<part id="as-vocab-reuse">
+				<title>Reusing Vocabularies</title>
+			</part>
+			<part id="as-vocab-define">
+				<title>Defining Vocabularies</title>
+			</part>
 		</part>
 	</presentation>
 	<presentation id="connectivity">
@@ -346,7 +358,7 @@
 		<title short="Big Data &amp; Semantics">Big Data and Semantic Technologies</title>
 		<date>2015-04-10</date>
 		<toc class="resources"><a href="http://www.w3.org/2013/data/" title="W3C Data Activity: Building the Web of Data">W3C&#160;SemWeb</a>&#160;· <a href="http://www.ischool.berkeley.edu/newsandevents/events/20140226yingding" title='Ying Ding: "Connecting Big Data Semantics", Special Talk at the School of Information'>Connecting Big Data Semantics</a></toc>
-		<toc class="abstract">...</toc>
+		<toc class="abstract">One certainty of IoT is that the amount of data will increase even more dramatically, which means that sensemaking and filtering become more important. Two successful but currently mostly disconnected ways to deal with this are <em>Big Data</em> and the <em>Semantic Web</em>. This lecture looks at both approaches and presents their main value propositions and fundamental methods and tools.</toc>
 		<toc class="assignment"><a href="a/8/">A8</a>&#160;(due:&#160;2015-04-16)</toc>
 		<slide>
 			<title>Abstract</title>
