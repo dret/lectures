@@ -80,8 +80,8 @@
 					<li>Two 45min blocks which a brief oxygen/discussion break</li>
 					<li>Typically,</li>
 					<ul>
-						<li>discussing assigned readings at the start of each lecture, and</li>
-						<li>discussing <a href="a/">the assignment</a> at the end of the lecture</li>
+						<li>discussing <link href="readings">assigned readings</link> at the start of each lecture, and</li>
+						<li>discussing <link href="assingments">the upcoming assignment</link> at the end of the lecture</li>
 					</ul>
 					<li>If you spot any errors: <a href="https://github.com/dret/lectures/tree/master/iot-spring15">all slides/assignments are on GitHub</a></li>
 				</ul>
@@ -96,7 +96,7 @@
 		<part id="assignments">
 			<title>Assignments</title>
 			<slide>
-				<title></title>
+				<title>Build IoT Stuff</title>
 				<ul>
 					<li><a href="a/">9 assignments</a></li>
 					<li>Mandatory lab time for support and group work</li>
