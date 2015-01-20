@@ -67,17 +67,64 @@
 		<title short="Introduction">Overview and Introduction</title>
 		<date>2015-01-23</date>
 		<toc class="resources"><a href="https://bcourses.berkeley.edu/courses/1293124" title="Course Site on bCourses">bCourses</a></toc>
-		<toc class="abstract">In this introductory lecture we give a brief overview of the courses subject and organization.</toc>
+		<toc class="abstract">In this introductory lecture we give a brief overview of the courses subject and organization. We will discuss the course content by presenting the syllabus, and structuring into the three main topics of technical, business, and societal themes. Organizational issues include lectures, readings, lab, assignments, and grading.</toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="syllabus">
+			<title>Syllabus</title>
+			<slide>
+				<title><q>From Things to Knowledge</q></title>
+				<ul>
+					<li>Connectivity of <q>Things</q> is rapidly spreading</li>
+					<ul>
+						<li>How get things connected?</li>
+						<li>How to build applications based on connected things?</li>
+						<li>What are the main problems in a world with more and more connected things?</li>
+						<li>Where is value in connecting things? And in the applications?</li>
+						<li>How does all of this relate to <q>Big Data</q> and where are overlaps/differences?</li>
+						<li>What is the impact on society and culture in such a highly connected world?</li>
+					</ul>
+					<li>Quite a number of parallels with previous developments</li>
+					<ul>
+						<li>The <q>Internet of Computers (IoC)</q> which took off with the Web</li>
+						<li>The <q>Internet of Mobiles (IoM)</q> which took off with smartphones</li>
+					</ul>
+					<li>Above everything else, the <em href="https://en.wikipedia.org/wiki/Network_effect">network effect</em> is what matters</li>
+					<ul>
+						<li>If you're big enough, you can try to create it yourself (a.k.a. <em href="https://en.wikipedia.org/wiki/Closed_platform">walled garden</em>)</li>
+						<li>In most cases, you need to be more open to make it happen</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Three Main Focus Areas</title>
+				<ul>
+					<li>Technologies</li>
+					<ul>
+						<li>Foundations and technical developments</li>
+						<li>Architectural issues for massive-scale decentralized systems</li>
+					</ul>
+					<li>Business</li>
+					<ul>
+						<li>What are the business drivers/cases for IoT?</li>
+						<li>Analyze business cases and look at their <em href="https://en.wikipedia.org/wiki/SWOT_analysis">SWOT matrix</em></li>
+					</ul>
+					<li>Society</li>
+					<ul>
+						<li>How will IoT technologies affect individuals and society?</li>
+						<li>Where/how can IoT approaches be used to do good?</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="lectures">
 			<title>Lectures</title>
 			<slide>
 				<title>Lecture Format</title>
 				<ul>
-					<li>Weekly lecture Friday 9.30-11.30</li>
+					<li>Weekly lecture Friday 9.30-11.30, 202 South Hall</li>
 					<li>Starting <q>Berkeley Time</q></li>
 					<li>Two 45min blocks which a brief oxygen/discussion break</li>
 					<li>Typically,</li>
@@ -86,6 +133,9 @@
 						<li>discussing <link href="assignments">the upcoming assignment</link> at the end of the lecture</li>
 					</ul>
 					<li>If you spot any errors: <a href="https://github.com/dret/lectures/tree/master/iot-spring15">all slides/assignments are on GitHub</a></li>
+					<ul>
+						<li>Feel free to suggest changes/improvements by <a href="https://github.com/dret/lectures/issues">raising an issue</a></li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
@@ -93,9 +143,23 @@
 			<title>Readings</title>
 			<slide>
 				<title>Weekly Assignments</title>
+				<ul>
+					<li>We will briefly introduce and discuss next week's readings in each lecture</li>
+					<li>Each lecture has <em>assigned readings</em> that are mandatory reading before the lecture</li>
+					<ul>
+						<li>You need to submit a short opinion paper on the reading materials each week</li>
+						<li>You have one <q>joker</q> to skip one of those opinion papers</li>
+					</ul>
+					<li>We will have short discussions about the assigned reading at the start of each lecture</li>
+				</ul>
 			</slide>
 			<slide>
 				<title>Additional Resources</title>
+				<ul>
+					<li>Additional resources for each lecture are listed on the course home page</li>
+					<li>Intended to give quick access to the most important materials for the lecture</li>
+					<li><em>Not required reading</em>, simply intended to be helpful <q>bookmarks</q></li>
+				</ul>
 			</slide>
 		</part>
 		<part id="lab">
@@ -159,12 +223,6 @@
 					<li><link href="warmup">Warm-up assignments</link>: 10%</li>
 				</ul>
 			</ul>
-		</part>
-		<part id="syllabus">
-			<title>Syllabus</title>
-			<slide>
-				<title><q>From Things to Knowledge</q></title>
-			</slide>
 		</part>
 	</presentation>
 	<presentation id="iot-wot">
