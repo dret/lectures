@@ -72,6 +72,33 @@
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="whoarewe">
+			<title>About Us</title>
+			<slide id="siemenswot">
+				<title>Siemens WoT Group</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
+			<slide id="course-people">
+				<title>Course People</title>
+				<ul>
+					<li>Lecturer: Simon Mayer</li>
+					<ul>
+						<li>Ph.D. ETH Zürich</li>
+					</ul>
+					<li>Lecturer: Florian Michahelles</li>
+					<ul>
+						<li>Ph.D. ETH Zürich</li>
+					</ul>
+					<li>Lecturer: <a href="http://dret.net/netdret/">Erik Wilde</a></li>
+					<ul>
+						<li><a href="http://dret.net/netdret/cv" title="CV">Ph.D. ETH Zürich, School of Information 2006-2011</a></li>
+					</ul>
+					<li>TA: Alexander Jones</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="syllabus">
 			<title>Syllabus</title>
 			<slide>
@@ -126,6 +153,7 @@
 				<ul>
 					<li>Weekly lecture Friday 9.30-11.30, 202 South Hall</li>
 					<li>Starting <q>Berkeley Time</q></li>
+					<li><em>Lecture attendance is mandatory</em> and we will take attendance</li>
 					<li>Two 45min blocks which a brief oxygen/discussion break</li>
 					<li>Typically,</li>
 					<ul>
@@ -164,6 +192,15 @@
 		</part>
 		<part id="lab">
 			<title>Lab</title>
+			<slide>
+				<title>Got Lab?</title>
+				<ul>
+					<li>Lab time is Monday 12.30-1.30, 202 South Hall</li>
+					<li>Lab time starts February 2nd (<em>no lab</em> January 26)</li>
+					<li>Lab time for support and immediate feedback</li>
+					<li><em>Lab attendance is mandatory</em> and we will take attendance</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="assignments">
 			<title>Assignments</title>
@@ -171,7 +208,7 @@
 				<title>Build IoT Stuff</title>
 				<ul>
 					<li><a href="a/">9 assignments</a></li>
-					<li>Mandatory lab time for support and group work</li>
+					<li>Mandatory <link href="lab">lab time</link> for support and group work</li>
 				</ul>
 			</slide>
 			<slide id="warmup">
@@ -346,6 +383,15 @@
 		</part>
 		<part id="as-basics">
 			<title>Activity Streams Basics</title>
+		</part>
+		<part id="soa">
+			<title>Service-Oriented Architecture (SOA)</title>
+			<slide>
+				<title>Services Encapsulate Functionality</title>
+				<ul>
+					<li>Services should provide <em>loose coupling</em> as a foundation for IT architecture</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="as-vocabularies">
 			<title>Vocabularies for Activity Streams</title>
