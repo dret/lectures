@@ -76,7 +76,11 @@
 			<title>About Us</title>
 			<slide id="siemenswot">
 				<title>Siemens WoT Group</title>
+				<div style="float : right ; margin : 5% ">
+					<a class="twitter-timeline" data-dnt="true" width="276" height="358" href="https://twitter.com/SiemensWoT" data-widget-id="528337311138709504">Tweets by @SiemensWoT</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div> 
 				<ul>
+					<li><a href="http://www.usa.siemens.com/en/about_us/research/web-of-things.htm">WoT Research Group</a> is part of Siemens' <a href="http://www.usa.siemens.com/en/about_us/research/siemens-in-silicon-valley.htm">Silicon Valley Location</a></li>
 					<li></li>
 				</ul>
 			</slide>
