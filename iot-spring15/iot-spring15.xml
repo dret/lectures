@@ -66,8 +66,8 @@
 	<presentation id="intro">
 		<title short="Introduction">Overview and Introduction</title>
 		<date>2015-01-23</date>
-		<toc class="resources"><a href="https://bcourses.berkeley.edu/courses/1293124" title="Course Site on bCourses">bCourses</a></toc>
-		<toc class="abstract">In this introductory lecture we give a brief overview of the courses subject and organization. We will discuss the course content by presenting the syllabus, and structuring into the three main topics of technical, business, and societal themes. Organizational issues include lectures, readings, lab, assignments, and grading.</toc>
+		<toc class="resources"><a href="https://bcourses.berkeley.edu/courses/1293124" title="Course Site on bCourses">bCourses</a>&#160;· <a href="http://www.usa.siemens.com/en/about_us/research/web-of-things.htm">WoT Research Group</a></toc>
+		<toc class="abstract">In this introductory lecture we give a brief overview of the course's subject and organization. We discuss the course content by presenting the syllabus, and structuring it into the three main topics of technical, business, and societal themes. Organizational issues about the course include lectures, readings, lab time, assignments, and grading.</toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -81,7 +81,16 @@
 				</div> 
 				<ul>
 					<li><a href="http://www.usa.siemens.com/en/about_us/research/web-of-things.htm">WoT Research Group</a> is part of Siemens' <a href="http://www.usa.siemens.com/en/about_us/research/siemens-in-silicon-valley.htm">Silicon Valley Location</a></li>
-					<li></li>
+					<li>Research into Web and Semantic Web Technologies</li>
+					<ul>
+						<li>Using web technologies to build loosely coupled ecosystems of services</li>
+						<li>Using semantic web technologies to describe resources and services</li>
+					</ul>
+					<li>We're building a platform for building applications</li>
+					<ul>
+						<li>This platform is not specific for a fixed set of applications</li>
+						<li>We will use it as the platform for (most of) <link href="assignments">the assignments</link></li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="course-people">
@@ -174,7 +183,7 @@
 		<part id="readings">
 			<title>Readings</title>
 			<slide>
-				<title>Weekly Assignments</title>
+				<title>Weekly Assigned Reading</title>
 				<ul>
 					<li>We will briefly introduce and discuss next week's readings in each lecture</li>
 					<li>Each lecture has <em>assigned readings</em> that are mandatory reading before the lecture</li>
@@ -188,9 +197,12 @@
 			<slide>
 				<title>Additional Resources</title>
 				<ul>
-					<li>Additional resources for each lecture are listed on the course home page</li>
+					<li>Additional resources for each lecture are listed <a href="./">on the course home page</a></li>
 					<li>Intended to give quick access to the most important materials for the lecture</li>
 					<li><em>Not required reading</em>, simply intended to be helpful <q>bookmarks</q></li>
+					<ul>
+						<li>Feel free to suggest additions by <a href="https://github.com/dret/lectures/issues">raising an issue</a></li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
@@ -200,8 +212,11 @@
 				<title>Got Lab?</title>
 				<ul>
 					<li>Lab time is Monday 12.30-1.30, 202 South Hall</li>
-					<li>Lab time starts February 2nd (<em>no lab</em> January 26)</li>
+					<li>Lab time starts February 2nd (i.e., <em>no lab</em> January 26)</li>
 					<li>Lab time for support and immediate feedback</li>
+					<ul>
+						<li>Asking questions by email is not a good way to make progress</li>
+					</ul>
 					<li><em>Lab attendance is mandatory</em> and we will take attendance</li>
 				</ul>
 			</slide>
@@ -211,8 +226,12 @@
 			<slide>
 				<title>Build IoT Stuff</title>
 				<ul>
-					<li><a href="a/">9 assignments</a></li>
+					<li>There is a total of <a href="a/">9 assignments</a></li>
 					<li>Mandatory <link href="lab">lab time</link> for support and group work</li>
+					<li>Our goal is to learn to help you build something interesting</li>
+					<ul>
+						<li>Our goal also is to learn from you while you're doing that</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="warmup">
@@ -239,6 +258,7 @@
 				<ul>
 					<li>All projects will be presented at the end of the semester</li>
 					<li>Project presentations <link href="grading">count for 10% of the course grade</link></li>
+					<li>It's more important to have a good project (50%) than to present it well (10%)</li>
 				</ul>
 			</slide>
 			<slide id="project-showcase">
@@ -249,21 +269,25 @@
 						<li>Monday May 11, 3.30-6.30, 202 South Hall</li>
 					</ul>
 					<li><em>Not</em> part of <link href="grading"/>, but <em>attendance mandatory</em></li>
+					<li>Continuing the School of Information's tradition of <em>Building Stuff That Actually Works</em></li>
 				</ul>
 			</slide>
 		</part>
 		<part id="grading">
 			<title>Grading</title>
-			<ul>
-				<li>Grading is based on a variety of course elements</li>
+			<slide>
+				<title>Projects are Important</title>
 				<ul>
-					<li><link href="projects">Project assignments</link> and results: 50%</li>
-					<li>Project presentation: 10%</li>
-					<li>Opinion papers: 15%</li>
-					<li>Participation: 15%</li>
-					<li><link href="warmup">Warm-up assignments</link>: 10%</li>
+					<li>Grading is based on a variety of course elements</li>
+					<ul>
+						<li><link href="projects">Project assignments</link> and results: 50%</li>
+						<li>Project presentation: 10%</li>
+						<li>Opinion papers: 15%</li>
+						<li>Participation: 15%</li>
+						<li><link href="warmup">Warm-up assignments</link>: 10%</li>
+					</ul>
 				</ul>
-			</ul>
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="iot-wot">
