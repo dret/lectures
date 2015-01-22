@@ -76,8 +76,8 @@
 			<title>About Us</title>
 			<slide id="siemenswot">
 				<title>Siemens WoT Group</title>
-				<div style="float : right ; margin : 5% ">
-					<a class="twitter-timeline" data-dnt="true" width="276" height="358" href="https://twitter.com/SiemensWoT" data-widget-id="528337311138709504">Tweets by @SiemensWoT</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				<div style="float : right ; margin : 3% ">
+					<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/SiemensWoT" data-widget-id="528337311138709504">Tweets by @SiemensWoT</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div> 
 				<ul>
 					<li><a href="http://www.usa.siemens.com/en/about_us/research/web-of-things.htm">WoT Research Group</a> is part of Siemens' <a href="http://www.usa.siemens.com/en/about_us/research/siemens-in-silicon-valley.htm">Silicon Valley Location</a></li>
@@ -106,9 +106,15 @@
 					</ul>
 					<li>Lecturer: <a href="http://dret.net/netdret/">Erik Wilde</a></li>
 					<ul>
-						<li><a href="http://dret.net/netdret/cv" title="CV">Ph.D. ETH Zürich, School of Information 2006-2011</a></li>
+						<li>Main focus is Web Architecture and Web Services</li>
+						<li>Associate Professor at School of Information 2006-2011</li>
 					</ul>
 					<li>TA: Alexander Jones</li>
+					<li>Office hours:</li>
+					<ul>
+						<li>Lecturers: On demand</li>
+						<li>TA: TBA</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
@@ -149,7 +155,7 @@
 					<li>Business</li>
 					<ul>
 						<li>What are the business drivers/cases for IoT?</li>
-						<li>Analyze business cases and look at their <em href="https://en.wikipedia.org/wiki/SWOT_analysis">SWOT matrix</em></li>
+						<li>Analyze business cases and look at their <em href="http://en.wikipedia.org/wiki/Business_Model_Canvas">Business Moden Canvas</em></li>
 					</ul>
 					<li>Society</li>
 					<ul>
@@ -167,15 +173,18 @@
 					<li>Weekly lecture Friday 9.30-11.30, 202 South Hall</li>
 					<li>Starting <q>Berkeley Time</q></li>
 					<li><em>Lecture attendance is mandatory</em> and we will take attendance</li>
+					<ul>
+						<li>If you think you have to miss class <link href="lab">or lab</link>, let us know</li>
+					</ul>
 					<li>Two 45min blocks which a brief oxygen/discussion break</li>
 					<li>Typically,</li>
 					<ul>
 						<li>discussing <link href="readings">assigned readings</link> at the start of each lecture, and</li>
 						<li>discussing <link href="assignments">the upcoming assignment</link> at the end of the lecture</li>
 					</ul>
-					<li>If you spot any errors: <a href="https://github.com/dret/lectures/tree/master/iot-spring15">all slides/assignments are on GitHub</a></li>
+					<li>If you spot any errors: <a href="https://github.com/dret/lectures/tree/master/iot-spring15">most slides/assignments are on GitHub</a></li>
 					<ul>
-						<li>Feel free to suggest changes/improvements by <a href="https://github.com/dret/lectures/issues">raising an issue</a></li>
+						<li>Feel free to suggest changes/improvements by email or <a href="https://github.com/dret/lectures/issues">raising an issue</a></li>
 					</ul>
 				</ul>
 			</slide>
@@ -189,7 +198,11 @@
 					<li>Each lecture has <em>assigned readings</em> that are mandatory reading before the lecture</li>
 					<ul>
 						<li>You need to submit a short opinion paper on the reading materials each week</li>
+						<li>Opinion papers will be graded</li>
+						<li>Opinion papers are supposed to be ~250 word in length</li>
 						<li>You have one <q>joker</q> to skip one of those opinion papers</li>
+						<li>Due thursday night before the next lecture</li>
+						<li>Late policy: -20% on grade per day late</li>
 					</ul>
 					<li>We will have short discussions about the assigned reading at the start of each lecture</li>
 				</ul>
@@ -232,6 +245,7 @@
 					<ul>
 						<li>Our goal also is to learn from you while you're doing that</li>
 					</ul>
+					<li>Late policy: -20% on grade per day late</li>
 				</ul>
 			</slide>
 			<slide id="warmup">
@@ -241,15 +255,60 @@
 					<li><a href="a/2/">Internet/Web Basics</a></li>
 				</ol>
 			</slide>
-			<slide id="projects">
+			<slide id="asbase-in-a-slide">
+				<title>ASbase</title>
+				<ul>
+					<li><em href="http://activitystrea.ms/">Activity Streams (AS)</em> are used to connect (social) platforms</li>
+					<ul>
+						<li>1.0 was never formally standardized or published but implemented in various places</li>
+						<li>2.0 is under development in <em href="http://www.w3.org/">W3C</em>'s <em href="http://www.w3.org/Social/WG">Social Web Working Group</em></li>
+					</ul>
+					<li>Activities are based on actors and what they are doing (verbs)</li>
+					<ul>
+						<li>Social: <q><em>Florian</em> just <em>shared</em> this <em>Web page</em>.</q></li>
+						<li>General: <q><em>AC Transit Bus 666</em> just <em>arrived</em> at <em>Berkeley BART bus station</em>.</q></li>
+					</ul>
+					<li>Using AS always requires shared understanding of the involved vocabularies</li>
+					<ul>
+						<li>Otherwise, all you can say is: <q><em>Erik</em> just <em>did something</em> with <em>something</em>.</q></li>
+					</ul>
+					<li>ASbase is an implementation of AS that supports filtering of AS objects</li>
+					<ul>
+						<li>Agents can produce and/or consume AS objects which then are managed and stored by ASbase</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="project-teams">
+				<title>Project Teams</title>
+				<ul>
+					<li>Project groups are teams of three</li>
+					<li>Have a clear plan for how to distribute/share tasks within a team</li>
+					<ul>
+						<li>Use cases and scenarios development and documentation</li>
+						<li>Implementation and testing</li>
+						<li>UI design and development</li>
+					</ul>
+					<li>Project teams can focus on production and/or consumption</li>
+					<ul>
+						<li>Have at least a minimal plan for both sides of the equation</li>
+						<li>Assignments 8&amp;9 will be about mixing scenarios</li>
+					</ul>
+					<li>We might also be interested in one specific <em>IoT Dashboard</em> team</li>
+					<ul>
+						<li>No focus on specific activities one the way in our out</li>
+						<li>Instead tools and/or UI for testing, monitoring, and generic visualization</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="project-plan">
 				<title>Projects</title>
 				<ol start="3">
-					<li><a href="a/3/">Project Proposals</a></li>
+					<li><a href="a/3/">Project Proposals</a> (submitted/graded individually)</li>
 					<li><a href="a/4/">Project Development</a></li>
 					<li><a href="a/5/">Activity Vocabulary Development</a></li>
 					<li><a href="a/6/">Getting Data into ASbase</a></li>
 					<li><a href="a/7/">Getting Data out of ASbase</a></li>
-					<li><a href="a/8/">Mixing Groups: Scenario Mashups</a></li>
+					<li><a href="a/8/">Mixing Projects: Scenario Mashups</a></li>
 					<li><a href="a/9/">Planning and Building the Mashup</a></li>
 				</ol>
 			</slide>
@@ -268,7 +327,8 @@
 					<ul>
 						<li>Monday May 11, 3.30-6.30, 202 South Hall</li>
 					</ul>
-					<li><em>Not</em> part of <link href="grading"/>, but <em>attendance mandatory</em></li>
+					<li><em>Not</em> part of <link href="grading"/></li>
+					<li><em>Attendance mandatory</em> like for all lectures/labs</li>
 					<li>Continuing the School of Information's tradition of <em>Building Stuff That Actually Works</em></li>
 				</ul>
 			</slide>
@@ -280,7 +340,7 @@
 				<ul>
 					<li>Grading is based on a variety of course elements</li>
 					<ul>
-						<li><link href="projects">Project assignments</link> and results: 50%</li>
+						<li><link href="project-plan">Project assignments</link> and results: 50%</li>
 						<li>Project presentation: 10%</li>
 						<li>Opinion papers: 15%</li>
 						<li>Participation: 15%</li>
