@@ -89,7 +89,7 @@
 					<li>We're building a platform for building applications</li>
 					<ul>
 						<li>This platform is not specific for a fixed set of applications</li>
-						<li>We will use it as the platform for (most of) <link href="assignments">the assignments</link></li>
+						<li>We will use it as the platform for (most of) <a href="a/">the assignments</a></li>
 					</ul>
 				</ul>
 			</slide>
@@ -155,7 +155,7 @@
 					<li>Business</li>
 					<ul>
 						<li>What are the business drivers/cases for IoT?</li>
-						<li>Analyze business cases and look at their <em href="http://en.wikipedia.org/wiki/Business_Model_Canvas">Business Moden Canvas</em></li>
+						<li>Analyze business cases and look at their <em href="http://en.wikipedia.org/wiki/Business_Model_Canvas">Business Model Canvas</em></li>
 					</ul>
 					<li>Society</li>
 					<ul>
@@ -174,13 +174,13 @@
 					<li>Starting <q>Berkeley Time</q></li>
 					<li><em>Lecture attendance is mandatory</em> and we will take attendance</li>
 					<ul>
-						<li>If you think you have to miss class <link href="lab">or lab</link>, let us know</li>
+						<li>If you think you have to miss class or lab, let us know</li>
 					</ul>
 					<li>Two 45min blocks which a brief oxygen/discussion break</li>
 					<li>Typically,</li>
 					<ul>
-						<li>discussing <link href="readings">assigned readings</link> at the start of each lecture, and</li>
-						<li>discussing <link href="assignments">the upcoming assignment</link> at the end of the lecture</li>
+						<li>discussing assigned readings at the start of each lecture, and</li>
+						<li>discussing the upcoming assignment at the end of the lecture</li>
 					</ul>
 					<li>If you spot any errors: <a href="https://github.com/dret/lectures/tree/master/iot-spring15">most slides/assignments are on GitHub</a></li>
 					<ul>
@@ -249,7 +249,10 @@
 				</ul>
 			</slide>
 			<slide id="warmup">
-				<title>Warming Up</title>
+				<title>Assignments: Warming Up</title>
+				<ul>
+					<li>Submitted and graded individually</li>
+				</ul>
 				<ol>
 					<li><a href="a/1/">Internetworking Things</a></li>
 					<li><a href="a/2/">Internet/Web Basics</a></li>
@@ -301,7 +304,10 @@
 				</ul>
 			</slide>
 			<slide id="project-plan">
-				<title>Projects</title>
+				<title>Assignments: Projects</title>
+				<ul>
+					<li>Submitted and graded per project teams</li>
+				</ul>
 				<ol start="3">
 					<li><a href="a/3/">Project Proposals</a> (submitted/graded individually)</li>
 					<li><a href="a/4/">Project Development</a></li>
@@ -316,7 +322,7 @@
 				<title>Presentations</title>
 				<ul>
 					<li>All projects will be presented at the end of the semester</li>
-					<li>Project presentations <link href="grading">count for 10% of the course grade</link></li>
+					<li>Project presentations count for 10% of the course grade</li>
 					<li>It's more important to have a good project (50%) than to present it well (10%)</li>
 				</ul>
 			</slide>
@@ -340,12 +346,13 @@
 				<ul>
 					<li>Grading is based on a variety of course elements</li>
 					<ul>
-						<li><link href="project-plan">Project assignments</link> and results: 50%</li>
+						<li>Project assignments and results: 50%</li>
 						<li>Project presentation: 10%</li>
-						<li>Opinion papers: 15%</li>
+						<li>Opinion papers about required readings: 15%</li>
 						<li>Participation: 15%</li>
 						<li><link href="warmup">Warm-up assignments</link>: 10%</li>
 					</ul>
+					<li>Participation is based on lectures, labs, and showcase</li>
 				</ul>
 			</slide>
 		</part>
