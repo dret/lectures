@@ -34,10 +34,10 @@
 	<assignment>
 		<title>Internetworking Things</title>
 		<dates assigned="2015-01-30" due="2015-02-05"/>
-		<abstract>As a simple and easy way to interconnect things, we build sample applications with <a href="http://nodered.org/">Node-RED</a>. Node-RED is an open source browser-based tool for wiring together hardware devices, APIs and online services in new and interesting ways.</abstract>
+		<abstract>As a simple and easy way to interconnect things, we build sample applications with <a href="http://ifttt.com/" title="If This Then That">IFTTT</a>. IFTTT is a simple service for wiring together various services, called channels. Recipes use channel triggers and actions to drive actions based on events that happen in upstream channels.</abstract>
 		<instructions>
-			<p><a href="http://nodered.org/">Node-RED</a></p>
-			<p><a href="http://flows.nodered.org/">Node-RED flow library</a></p>
+			<p><a href="http://ifttt.com/">IFTTT</a></p>
+			<p><a href="https://ifttt.com/channels">IFTTT Channel library</a></p>
 		</instructions>
 	</assignment>
 	<assignment>
