@@ -67,9 +67,15 @@
 	<assignment>
 		<title>Activity Vocabulary Development</title>
 		<dates assigned="2015-02-27" due="2015-03-05"/>
-		<abstract>Our ActivityStreams broker ASbase is using Activity Streams as its data model. This assignment is about developing a vocabulary that is sufficient to represent the data that is required to make the group project work. The vocabulary that is used for conveying activities which are relevant to the scenario should be formalized in this step. Also, examples for concrete activities that are exchanged during the scenario should be given.</abstract>
+		<abstract>Our Activity Streams platform ASbase is using Activity Streams as its data model. This assignment is about developing a vocabulary that is sufficient to represent the data that is required to make the group project work. The vocabulary that is used for conveying activities which are relevant to the scenario should be formalized in this step. Also, examples for concrete activities that are exchanged during the scenario should be given.</abstract>
 		<instructions>
-			<p>...</p>
+			<p>AS vocabularies can be developed and modeled in many different ways, even when looking at the same scenario. As general guidelines, keep the following aspects in mind:</p>
+			<ul>
+				<li>The activity (the verb) should be specific enough so that it conveys meaningful information about what happened, so that consumers can use it to filter for the activities they do and do not want to process.</li>
+				<li>The activity (the verb) should be general enough so that it is not only useful for the one specific scenario, but has potential for reuse in other scenarios as well.</li>
+				<li>The activity should be accompanied by metadata that allows consumers to further narrow their selection of activities that the do or do not want to process.</li>
+				<li>If possible, try to design the activity metadata in a way so that there is potential for reuse across different activities (i.e., verbs).</li>
+			</ul>
 		</instructions>
 	</assignment>
 	<assignment>
