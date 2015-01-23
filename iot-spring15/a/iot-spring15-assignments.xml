@@ -32,20 +32,19 @@
 		</table>
 	</html-footer>
 	<assignment>
-		<title>Internetworking Things</title>
+		<title>Internet/Web Basics</title>
 		<dates assigned="2015-01-30" due="2015-02-05"/>
-		<abstract>As a simple and easy way to interconnect things, we build sample applications with <a href="http://ifttt.com/" title="If This Then That">IFTTT</a>. IFTTT is a simple service for wiring together various services, called channels. Recipes use channel triggers and actions to drive actions based on events that happen in upstream channels.</abstract>
+		<abstract>As a first step towards the technical core of the IoT and WoT, we establish HTTP connections and send different kinds of HTTP requests. We also get to know libraries to use for these purposes, HTTP content negotiation and a few HTTP headers and response codes. We parse and display simple content in a smartphone application, using 3rd party libraries.</abstract>
 		<instructions>
-			<p><a href="http://ifttt.com/">IFTTT</a></p>
-			<p><a href="https://ifttt.com/channels">IFTTT Channel library</a></p>
+			<p>...</p>
 		</instructions>
 	</assignment>
 	<assignment>
-		<title>Internet/Web Basics</title>
+		<title>Mashing Up Things and Services</title>
 		<dates assigned="2015-02-06" due="2015-02-12"/>
-		<abstract>Moving closer to the core of the IoT and WoT, we establish HTTP connections and send different kinds of HTTP requests. We also get to know libraries to use for these purposes, HTTP content negotiation and a few HTTP headers and response codes. We parse and display simple content in a smartphone application, using 3rd party libraries.</abstract>
+		<abstract>As the second step for getting used to Internet and web principles, we combine various information sources and build a simple but typical mashup. The idea there is to take existing services (preferably thing-based, but not required for this assignment), and mash them up so that there is a new service (or an application) which is providing value that is derived from combining the mashed up services.</abstract>
 		<instructions>
-			<p>...</p>
+			<p><a href="http://www.programmableweb.com/">Programmable Web</a></p>
 		</instructions>
 	</assignment>
 	<assignment>
