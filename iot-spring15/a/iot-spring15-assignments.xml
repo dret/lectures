@@ -75,6 +75,8 @@
 				<li>The activity should be accompanied by metadata that allows consumers to further narrow their selection of activities that the do or do not want to process.</li>
 				<li>If possible, try to design the activity metadata in a way so that there is potential for reuse across different activities (i.e., verbs).</li>
 			</ul>
+			<p>AS1 (the version of AS that ASbase is using and that we are focusing on in this course) has no formalism for describing vocabularies (other than documenting in some way, very often simply in human-readable form), and therefore it is sufficient for AS1 vocabularies to be defined a way that is sufficient (and this very fuzzy term in used intentionally here) to establish shared understanding between those producing activities using a particular vocabulary, and those consuming them.</p>
+			<p>AS2, on the contrary, seems to be moving in the direction of allowing or even mandating a formal foundation for vocabularies, which is the <em>Resource Description Framework (RDF)</em> (which will be covered in our lecture about <a href="../../bigdata-semweb">Big Data and Semantic Technologies</a>). AS2 is still using JSON as its representation, but also uses JSON-LD to define a mapping between the JSON representation of AS2 activities, and their RDF-based model. For this assignment and course we will not be using this more complex and sophisticated approach, but keep in mind that our lightweight and informal way of defining and documenting AS vocabularies applies to AS1 alone, and may be replaced by a more heavyweight and formal way in AS2.</p>
 		</instructions>
 	</assignment>
 	<assignment>
