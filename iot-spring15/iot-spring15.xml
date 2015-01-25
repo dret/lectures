@@ -368,7 +368,7 @@
 		<date>2015-01-30</date>
 		<toc class="reading"><a href="http://www.vs.inf.ethz.ch/publ/papers/Internet-of-things.pdf" title='Friedemann Mattern and Christian Floerkemeier, "From the Internet of Computers to the Internet of Things", In: Kai Sachs, Ilia Petrov, Pablo Guerrero (Eds.): From Active Data Management to Event-Based Systems and More. LNCS, Vol. 6462, Springer, pp. 242-259, 2010'>From IoC to IoT</a>&#160;· <a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/" title='Vannevar Bush, "As We May Think", The Atlantic Monthly, 176(1):101-108, July 1945'>As We May Think</a></toc>
 		<toc class="resources"><a href="https://www.mnot.net/blog/2014/12/04/what_is_the_web" title="Mark Nottingham's Blog">What is the Web?</a>&#160;· <a href="http://dret.typepad.com/dretblog/2014/07/whats-wot.html" title="Erik Wilde's Blog">What's WoT?</a></toc>
-		<toc class="abstract">Internet of Things (IoT) and Web of Things (WoT) have become very popular terms, but with great fame comes great fuzziness. In this lecture we are putting things into perspective, and give one possible definition of the terms IoT and WoT. Understanding "the bigger picture" and how IoT/WoT fit in with other popular topics (such as Big Data) is another goal of this lecture.</toc>
+		<toc class="abstract"><em>Internet of Things (IoT)</em> and <em>Web of Things (WoT)</em> have become very popular terms, but with great fame comes great fuzziness. In this lecture we are putting things into perspective, and give one possible definition of the terms IoT and WoT. Understanding <q>the big picture</q> and how IoT/WoT fit in with other popular topics (such as Big Data) is another goal of this lecture.</toc>
 		<toc class="assignment"><a href="a/1/">A1</a>&#160;(2015-02-05)</toc>
 		<slide>
 			<title>Abstract</title>
@@ -383,6 +383,15 @@
 				<p>The <em>Web</em> is a distributed hypermedia system that uses the Internet as its connective fabric. The most important aspects of the Web are its <em>identification mechanism (URI)</em>, its <em>communication protocol (HTTP)</em>, and <em>hypermedia-based media types</em>.</p>
 			</blockquote>
 		</slide>
+		<part>
+			<title>IoC/WoC Evolution</title
+			<slide>
+				<title>Establishing Connectivity: From Networks to the Internet</title>
+			</slide>>
+			<slide>
+				<title>Providing a Platform: From Walled Gardens to the Web</title>
+			</slide>>
+		</part>
 	</presentation>
 	<presentation id="layering">
 		<title short="Layering">Layering in the Internet and the Web</title>
