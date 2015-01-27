@@ -77,7 +77,7 @@
 			<slide id="siemenswot">
 				<title>Siemens WoT Group</title>
 				<div style="float : right ; margin : 3% ">
-					<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/SiemensWoT" data-widget-id="528337311138709504">Tweets by @SiemensWoT</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/SiemensWoT" data-widget-id="528337311138709504">Tweets by @SiemensWoT</a> <script type="text/javascript">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</div> 
 				<ul>
 					<li><a href="http://www.usa.siemens.com/en/about_us/research/web-of-things.htm">WoT Research Group</a> is part of Siemens' <a href="http://www.usa.siemens.com/en/about_us/research/siemens-in-silicon-valley.htm">Silicon Valley Location</a></li>
@@ -384,7 +384,7 @@
 			</blockquote>
 		</slide>
 		<part>
-			<title>IoC/WoC Evolution</title
+			<title>IoC/WoC Evolution</title>
 			<slide>
 				<title>Establishing Connectivity: From Networks to the Internet</title>
 			</slide>>
@@ -563,7 +563,7 @@
 		</part>
 	</presentation>
 	<presentation id="connectivity">
-		<title id="Connectivity">Connecting Things: Getting Things onto the Internet</title>
+		<title short="Connectivity">Connecting Things: Getting Things onto the Internet</title>
 		<date>2015-02-27</date>
 		<toc class="resources"><a href="http://en.wikipedia.org/wiki/Radio-frequency_identification" title="Wikipedia: Radio-Frequency Identification (RFID)">RFID</a>&#160;· <a href="http://www.bluetooth.com/">Bluetooth</a></toc>
 		<toc class="assignment"><a href="a/5/">A5</a>&#160;(2015-03-05)</toc>
