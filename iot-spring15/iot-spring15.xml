@@ -33,7 +33,7 @@
 				<tr>
 					<th valign="bottom">Lecture Date</th>
 					<th valign="bottom">Subject</th>
-					<th valign="bottom">Slides</th>
+					<th valign="bottom">Lecture Slides</th>
 					<th valign="bottom">Assigned Reading</th>
 					<th valign="bottom"><a href="a/">Assignment (due&#160;date)</a></th>
 					<th valign="bottom">Additional Resources</th>
@@ -364,6 +364,7 @@
 		</part>
 	</presentation>
 	<presentation id="iot-wot">
+		<external link="https://bcourses.berkeley.edu/courses/1293124/files" short="IoC to IoT">From the Internet of Computers to the Internet of Things</external>
 		<title short="IoT &amp; WoT">Internet of Things (IoT) and Web of Things (WoT): What's WoT?</title>
 		<date>2015-01-30</date>
 		<toc class="reading"><a href="http://www.vs.inf.ethz.ch/publ/papers/Internet-of-things.pdf" title='Friedemann Mattern and Christian Floerkemeier, "From the Internet of Computers to the Internet of Things", In: Kai Sachs, Ilia Petrov, Pablo Guerrero (Eds.): From Active Data Management to Event-Based Systems and More. LNCS, Vol. 6462, Springer, pp. 242-259, 2010'>From IoC to IoT</a>&#160;· <a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/" title='Vannevar Bush, "As We May Think", The Atlantic Monthly, 176(1):101-108, July 1945'>As We May Think</a></toc>
@@ -387,10 +388,58 @@
 			<title>IoC/WoC Evolution</title>
 			<slide>
 				<title>Establishing Connectivity: From Networks to the Internet</title>
+				<ul>
+					<li>The earliest computers were disconnected computing machinery</li>
+					<li>The first computer networks were designed and established <a href="http://en.wikipedia.org/wiki/Computer_network#History">in the 1960s</a></li>
+					<li>Proprietary/specific networks (such as <a href="http://en.wikipedia.org/wiki/DECnet">DECnet</a>) were popular until the 1980s</li>
+					<li>The Internet was invented specifically for <em>interconnecting networks</em></li>
+					<ul>
+						<li>Started with the <a href="http://en.wikipedia.org/wiki/ARPANET">ARPANET</a> in the late 1960s</li>
+						<li>The <a href="http://en.wikipedia.org/wiki/Internet">Internet</a> then focused on protocols and not on networks</li>
+						<li>Other protocols faded away in favor of TCP/IP's packet switching approach</li>
+					</ul>
+					<li><q>Internet vs. OSI</q> was a big debate/fight in the late 1980s</li>
+					<ul>
+						<li>The main differences were purity, complexity, and culture</li>
+						<li>Apart from a few select parts, OSI lost and the Internet won</li>
+					</ul>
+					<li>The Internet's biggest push was the advent of the Web in the early 1990s</li>
+				</ul>
 			</slide>>
 			<slide>
+				<title>Historical Internet Traffic (1993-2004)</title>
+				<img src="internet-traffic-trends.png" style="height : 65% ; margin : 4% ; " href="http://dret.net/lectures/web-fall10/http#%284%29"/>
+			</slide>
+			<slide>
+				<title>Current Internet Traffic (1H 2014)</title>
+				<img src="2014-internet-traffic-sandvine.png" style="height : 65% ; margin : 4% ; " href="https://www.sandvine.com/downloads/general/global-internet-phenomena/2014/1h-2014-global-internet-phenomena-report.pdf"/>
+			</slide>
+			<slide>
 				<title>Providing a Platform: From Walled Gardens to the Web</title>
+				<ul>
+					<li>The Web was the first usable global information system</li>
+					<ul>
+						<li>Built on protocols rather than on products</li>
+						<li>Available at a time when computers started to become mainstream</li>
+					</ul>
+				</ul>
 			</slide>>
+		</part>
+		<part>
+			<title>IoT Economics</title>
+			<slide>
+				<title>2007: The Smartphone Era</title>
+				<ul>
+					<li>Sensors have become very affordable</li>
+					<li>Connectivity has improved dramatically</li>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>From Verticals to Platforms</title>
+			<slide>
+				<title>Connectivity is a good Start</title>
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="layering">
@@ -443,8 +492,8 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation id="standards">
-		<title>REST and Economics of the IoT (Standardization)</title>
+	<presentation id="rest">
+		<title short="REST">REST and Economics of the IoT (Standardization)</title>
 		<date>2015-02-13</date>
 		<toc class="resources"><a href="http://www.iso.org/" title="International Organization for Standardization">ISO</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://www.ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.oasis-open.org/" title="Organization for the Advancement of Structured Information Standards">OASIS</a>&#160;· <a href="http://www.ieee.org/" title="Institute of Electrical and Electronics Engineers">IEEE</a>&#160;· <a href="http://www.iec.ch/" title="International Electrotechnical Commission">IEC</a></toc>
 		<toc class="assignment"><a href="a/3/">A3</a>&#160;(2015-02-15)</toc>
