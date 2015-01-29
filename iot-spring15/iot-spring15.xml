@@ -422,6 +422,12 @@
 						<li>Built on protocols rather than on products</li>
 						<li>Available at a time when computers started to become mainstream</li>
 					</ul>
+					<li><em>Web Architecture</em> focuses on three central pillars</li>
+					<ol>
+						<li><em>Globally Unique Identifiers</em> that allow everybody to refer to available resources (URI)</li>
+						<li><em>Uniform Interfaces</em> that can be used to access those resources (HTTP)</li>
+						<li><em>Self-Describing Representations</em> that allow clients to <q>understand</q> resources (HTML/XML/JSON/RDF)</li>
+					</ol>
 				</ul>
 			</slide>>
 		</part>
@@ -436,15 +442,49 @@
 			</slide>
 		</part>
 		<part>
-			<title>From Verticals to Platforms</title>
-			<slide>
-				<title>Connectivity is a good Start</title>
+			<title>The Power of Sharing</title>
+			<slide id="shared-identification-space">
+				<title>Shared Identification Space</title>
+				<ul>
+					<li><a href="http://google.com/"><code>http://google.com/</code></a> means the same everywhere</li>
+					<ul>
+						<li>There is no (relevant) difference in terms of what the URI identifies</li>
+					</ul>
+					<li>Possible scenarios where this principle is violated:</li>
+					<ul>
+						<li>A parallel internet where <code>google.com</code> identifies a different entity</li>
+						<li>Intranet applications <q>identified</q> with broken URIs such as <code>http://magicservice/</code></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="shared-interaction-model">
+				<title>Shared Interaction Model</title>
+				<ul>
+					<li><em>HTTP</em> always works the same (a shared uniform interface)</li>
+					<ul>
+						<li>Interacting with the resource is possible without knowing it beforehand</li>
+						<li>The interaction language <em>only</em> is about making interaction possible and scalable</li>
+						<li>The representations being exchanged depend on a <link id="shared-representation-model"/></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="shared-representation-model">
+				<title>Shared Representation Model</title>
+				<ul>
+					<li>HTML works for the human web because of two factors:</li>
+					<ul>
+						<li>Browsers know how to render a web page so that a human can read it</li>
+						<li>There is a <q>hidden shared model</q> of the human language that is published/read</li>
+					</ul>
+					<li>There are <q>disconnected webs</q> separated by language barriers</li>
+				</ul>
 			</slide>
 		</part>
 	</presentation>
 	<presentation id="layering">
 		<title short="Layering">Layering in the Internet and the Web</title>
 		<date>2015-02-06</date>
+		<toc class="reading"><a href="http://tools.ietf.org/html/rfc3439" title='Randy Bush and David Meyer, "Some Internet Architectural Guidelines and Philosophy", RFC 3439, December 2002'>Internet Architecture</a></toc>
 		<toc class="resources"><a href="http://en.wikipedia.org/wiki/OSI_model" title="Wikipedia: OSI Model">OSI</a></toc>
 		<toc class="abstract">Layering is one of the fundamental abstractions of IT systems and models. As one way how the terms IoT and WoT can be defined and distinguished, it is possible to look at what the Internet and the Web are, how they are related, and how this can be translated into scenarios where resources are are real-world resources.</toc>
 		<toc class="assignment"><a href="a/2/">A2</a>&#160;(2015-02-12)</toc>
