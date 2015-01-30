@@ -34,9 +34,65 @@
 	<assignment>
 		<title>Internet/Web Basics</title>
 		<dates assigned="2015-01-30" due="2015-02-05"/>
-		<abstract>As a first step towards the technical core of the IoT and WoT, we establish HTTP connections and send different kinds of HTTP requests. We also get to know libraries to use for these purposes, HTTP content negotiation and a few HTTP headers and response codes. We parse and display simple content in a smartphone application, using 3rd party libraries.</abstract>
+		<abstract>In this assignment you will learn to develop simple distributed applications using Web technologies. After getting familiar with establishing HTTP connections and sending different kinds of HTTP requests, you will create an application that gathers data from a Web service and visualizes it locally.</abstract>
 		<instructions>
-			<p>...</p>
+			<h5>Objectives:</h5>
+			<p><b>Rationale:</b> You will require a solid HTTP foundation and basic knowledge in user interface technologies for the course project. This assignment prepares you for both of these.</p>
+			<p><b>Prerequisites:</b> The Web services that you will be using throughout this assignment are the <a href="http://api.bart.gov">BART API</a> as well as a <a href="http://russel.ischool.berkeley.edu:8081">simple test API</a> to a crude online forum.</p>
+			<p><b>Used Languages:</b> Python, JavaScript (+ jQuery)</p>
+			<h5>Deliverables:</h5>
+			<p>You should create a zip file containing the Python and JavaScript code created in this assignment. You must make sure that the Python code runs with version 2.7 of the interpreter – remember that your submitted code must work on our machines as well, so use relative paths if you add external libraries to your project, and include these libraries with your zip file. Please use UTF-8 encoding for your documents and avoid special characters. Submit your zip file to TODO by February 5 2015, at 8pm PST.</p>
+			<h4>1. REST Web Services in Python (2 Points)</h4>
+			<p>Your task is to create a Python script that reads data from <a href="http://russel.ischool.berkeley.edu:8081">our test API</a> and pushes data to it. You will see different ways of how this can be done.</p>
+			<h5>1.1 Raw HTTP Requests</h5>
+			<p>Our Web API speaks the HTTP protocol. In this assignment, your first task is to fetch a piece of data from the API using a <q>raw</q> HTTP request, i.e. without the use of any external library: Create a method in your Python program that opens a TCP connection to and sends an HTTP GET request to obtain the HTML representation of the /posts resource from the API. Your method should then display the API’s raw, unparsed response on the screen (i.e. including the returned HTTP headers).</p>
+			<h6>Hints:</h6>
+			<ul>
+				<li>Use the Python socket module to create a basic TCP socket.</li>
+				<li>Make sure that you implement a valid HTTP client according to <a href="http://tools.ietf.org/html/rfc2616">the HTTP specification</a> which includes several examples of HTTP exchanges.</li>
+				<li>Note that HTTP headers are required to have a carriage return and newline (CRLF) at the end of each line – it is however not guaranteed that this is the standard line separator on your platform.</li>
+				<li>Make sure that the connection to the server is properly closed.</li>
+			</ul>
+			<h5>1.2 HTTP Headers and Status Codes</h5>
+			<p>From the raw HTTP response of the previous exercise, find the values of each of the following parameters. Summarize the meaning of each parameter in a sentence (include your answers as comments in your Python code).</p>
+			<ul>
+				<li>The HTTP Status Code</li>
+				<li>The Content Type header</li>
+				<li>The Cross-Origin Resource Sharing (CORS) headers</li>
+			</ul>
+			<p>The response to your request in the previous exercise should include an HTTP status code of <q>200 OK</q> should have received Also have a look at the following four HTTP status codes and look up their exact semantics:</p>
+			<ul>
+				<li>401 Unauthorized</li>
+				<li>404 Not Found</li>
+				<li>409 Conflict</li>
+				<li>415 Unsupported Media Type</li>
+			</ul>
+			<h5>1.3 HTTP Content Negotiation</h5>
+			<p>So far, you only received HTML responses back from the server. A REST service can, however, offer several representations of the same resource. To get a different representation that is more appropriate for machine-machine communication than HTML, we use the HTTP content negotiation mechanism: Set the Accept header of your raw HTTP request to get the application/json. Instead of an HTML page, the Web server will now return a <a href="http://json.org">JSON</a> file containing the current forum posts. JSON is a lightweight version of XML which is often used in Web mashups and REST interfaces because it can directly be translated to JavaScript objects. Display the raw JSON response on the screen.</p>
+			<h5>1.4 HTTP Requests using the requests Library</h5>
+			<p>HTTP requests are usually not implemented by hand, but rather using one of many different libraries that take care of the intricacies of the HTTP protocol and connection management. In this task, you should create a method that uses <a href="http://docs.python-requests.org/en/latest/">the Python requests library</a> for sending the HTTP request to obtain the <code>/posts</code> resource from the API. Your method should then display the JSON representation of that resource on the screen.</p>
+			<h5>1.5 Switching Gears: POSTing Data</h5>
+			<p>Up until now, you have only used the HTTP GET method to obtain data from the API. For this task, first look up the exact semantics of a few other methods that are specified in the HTTP protocol: POST, PUT, DELETE, HEAD, and OPTIONS. Next, use an HTTP POST request to send a new forum post to the API’s <code>/posts</code> resource. The payload of your POST request should be in JSON format and have this structure:</p>
+			<pre>{ ’userid’ : ’your-name’, ’message’ : ’your-message’ }</pre>
+			<h6>Hints:</h6>
+			<ul>
+				<li>Take care to correctly set the HTTP Content-Type header inside your request.</li>
+				<li>Be careful about the format of your POST payload.</li>
+			</ul>
+			<h5>1.6 Submission Instructions for this Task</h5>
+			<p>You should create a single main method for each of the tasks 1.1, 1.3, 1.4, and 1.5. Your Python script should also include a main method that calls each of these methods in-order. The script should be executable with the command <code>python main.py</code> from the command line.</p>
+			<h4>2 REST Web Services and User Interfaces in JavaScript (2 Points)</h4>
+			<p>In this part, you create a website that uses JavaScript to obtain input from a remote source and displays this input.</p>
+			<h5>2.1 Obtaining and parsing XML</h5>
+			<p>In this task, you should use <a href="http://api.bart.gov">the BART API</a>. Using the API documentation, find the resource that enables you to access BART’s real-time estimates. Using this API, create a simple website that loads the real-time departure estimates from the Downtown Berkeley station and displays a countdown (in steps of seconds) until the next train leaves toward Millbrae. Your website should update itself by re-loading the latest information from the BART API every 30 seconds.</p>
+			<h6>Hints:</h6>
+			<ul>
+				<li>The BART API provides its data in XML format. Use an appropriate library to parse the responses, a good tutorial about this is available via <a href="7http://www.w3schools.com/xml/xml_parser.asp">W3CSchools</a>.</li>
+				<li>Your application should run in Firefox and Chrome.</li>
+				<li>Your application can absolutely make use of the jQuery library for simplifying HTTP requests and parsing of the XML.</li>
+			</ul>
+			<h5>2.2 Optional: A jQuery Counter</h5>
+			<p>Visualize the remaining time until the next train using the <q>Countdown</q> widget from the jQuery library.</p>
 		</instructions>
 	</assignment>
 	<assignment>
