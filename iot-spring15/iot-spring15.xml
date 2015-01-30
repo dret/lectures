@@ -364,7 +364,7 @@
 		</part>
 	</presentation>
 	<presentation id="iot-wot">
-		<external link="https://bcourses.berkeley.edu/courses/1293124/files" short="IoC to IoT">From the Internet of Computers to the Internet of Things</external>
+		<external link="https://bcourses.berkeley.edu/courses/1293124/files/folder/Lecture+Slides" short="IoC to IoT">From the Internet of Computers to the Internet of Things</external>
 		<title short="IoT &amp; WoT">Internet of Things (IoT) and Web of Things (WoT): What's WoT?</title>
 		<date>2015-01-30</date>
 		<toc class="reading"><a href="http://www.vs.inf.ethz.ch/publ/papers/Internet-of-things.pdf" title='Friedemann Mattern and Christian Floerkemeier, "From the Internet of Computers to the Internet of Things", In: Kai Sachs, Ilia Petrov, Pablo Guerrero (Eds.): From Active Data Management to Event-Based Systems and More. LNCS, Vol. 6462, Springer, pp. 242-259, 2010'>From IoC to IoT</a>&#160;· <a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/" title='Vannevar Bush, "As We May Think", The Atlantic Monthly, 176(1):101-108, July 1945'>As We May Think</a></toc>
@@ -381,10 +381,10 @@
 				<p>The <em>Internet</em> is a global network of interconnected computers that allows connected systems to communicate, regardless of the specifics of system and network implementations.</p>
 			</blockquote>
 			<blockquote>
-				<p>The <em>Web</em> is a distributed hypermedia system that uses the Internet as its connective fabric. The most important aspects of the Web are its <em>identification mechanism (URI)</em>, its <em>communication protocol (HTTP)</em>, and <em>hypermedia-based media types</em>.</p>
+				<p>The <em>Web</em> is a distributed hypermedia system that uses the internet as its connective fabric. The most important aspects of the web are its <em>identification mechanism (URI)</em>, its <em>communication protocol (HTTP)</em>, and <em>hypermedia-based media types</em>.</p>
 			</blockquote>
 		</slide>
-		<part>
+		<part id="ioc-wot-evolution">
 			<title>IoC/WoC Evolution</title>
 			<slide>
 				<title>Establishing Connectivity: From Networks to the Internet</title>
@@ -392,7 +392,7 @@
 					<li>The earliest computers were disconnected computing machinery</li>
 					<li>The first computer networks were designed and established <a href="http://en.wikipedia.org/wiki/Computer_network#History">in the 1960s</a></li>
 					<li>Proprietary/specific networks (such as <a href="http://en.wikipedia.org/wiki/DECnet">DECnet</a>) were popular until the 1980s</li>
-					<li>The Internet was invented specifically for <em>interconnecting networks</em></li>
+					<li>The internet was invented specifically for <em>interconnecting networks</em></li>
 					<ul>
 						<li>Started with the <a href="http://en.wikipedia.org/wiki/ARPANET">ARPANET</a> in the late 1960s</li>
 						<li>The <a href="http://en.wikipedia.org/wiki/Internet">Internet</a> then focused on protocols and not on networks</li>
@@ -401,9 +401,9 @@
 					<li><q>Internet vs. OSI</q> was a big debate/fight in the late 1980s</li>
 					<ul>
 						<li>The main differences were purity, complexity, and culture</li>
-						<li>Apart from a few select parts, OSI lost and the Internet won</li>
+						<li>Apart from a few select parts, OSI lost and the internet won</li>
 					</ul>
-					<li>The Internet's biggest push was the advent of the Web in the early 1990s</li>
+					<li>The Internet's biggest push was the advent of the web in the early 1990s</li>
 				</ul>
 			</slide>>
 			<slide>
@@ -417,7 +417,7 @@
 			<slide>
 				<title>Providing a Platform: From Walled Gardens to the Web</title>
 				<ul>
-					<li>The Web was the first usable global information system</li>
+					<li>The web was the first usable global information system</li>
 					<ul>
 						<li>Built on protocols rather than on products</li>
 						<li>Available at a time when computers started to become mainstream</li>
@@ -430,30 +430,64 @@
 					</ol>
 				</ul>
 			</slide>>
-		</part>
-		<part>
-			<title>IoT Economics</title>
-			<slide>
-				<title>2007: The Smartphone Era</title>
+			<slide id="the-web-won">
+				<title>Client/Server Lost</title>
 				<ul>
-					<li>Sensors have become very affordable</li>
-					<li>Connectivity has improved dramatically</li>
+					<li>Remote application access went through (roughly) three stages</li>
+					<ul>
+						<li>Traditional <a href="http://en.wikipedia.org/wiki/Fat_client">fat clients</a> that require specific client-side application code</li>
+						<li><a href="http://en.wikipedia.org/wiki/Thin_client">Thin clients</a> that do not require application-specific client-side code</li>
+						<ul>
+							<li>Typical architectures are remote application access through <a href="http://en.wikipedia.org/wiki/X_Window_System">X11</a> or <a href="http://en.wikipedia.org/wiki/Citrix_XenApp">Citrix</a></li>
+							<li>Scalability is a problem because clients use centralized computing resources</li>
+						</ul>
+						<li>Web Browsers function fundamentally different</li>
+						<ul>
+							<li>Client-side code is possible but not required (good web apps minimize client code)</li>
+							<li>Instead of displaying applications, what matters are representations</li>
+							<li>With <a href="https://github.com/dret/HTML5-overview">HTML5</a> progressing, browsers become sophisticated <q>code-on-demand thin clients</q></li>
+						</ul>
+						<li>In some scenarios, fat and thin clients still make sense</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
 		<part>
 			<title>The Power of Sharing</title>
-			<slide id="shared-identification-space">
-				<title>Shared Identification Space</title>
+			<slide>
+				<title>2007: The Smartphone Era</title>
+				<ul>
+					<li>Sensors have become very affordable</li>
+					<li>Connectivity has improved dramatically</li>
+					<li>Many information sources (services/sensors) become available every day</li>
+					<li>It's a little bit like the golden era of blogs and RSS/Atom</li>
+					<ul>
+						<li>RSS/Atom feeds were an open way of <a href="http://dret.typepad.com/dretblog/2009/05/atoms-future-as-a-generalpurpose-format.html">making information streams machine-readable</a></li>
+						<li><em>Social Platforms</em> took over and quickly crippled/disabled open access</li>
+						<li>People today are very accustomed to live in pretty walled gardens</li>
+					</ul>
+					<li>The Big Question: <q>Will there be a Facebook of IoT/WoT?</q></li>
+					<li>For now the ecosystem is still young and developing</li>
+				</ul>
+			</slide>
+			<slide id="shared-identification-model">
+				<title>Shared Identification Model</title>
 				<ul>
 					<li><a href="http://google.com/"><code>http://google.com/</code></a> means the same everywhere</li>
 					<ul>
 						<li>There is no (relevant) difference in terms of what the URI identifies</li>
+						<li>Any ambiguity is created (and hopefully managed) <em>by Google</em></li>
 					</ul>
 					<li>Possible scenarios where this principle is violated:</li>
 					<ul>
 						<li>A parallel internet where <code>google.com</code> identifies a different entity</li>
 						<li>Intranet applications <q>identified</q> with broken URIs such as <code>http://magicservice/</code></li>
+					</ul>
+					<li>Useful identification schemes are global in scope and uniqueness</li>
+					<ul>
+						<li>Not every scheme needs a computer: <a href="tel:+15102061079">Call me!</a></li>
+						<li>...or electricity: <a href="geo:37.859544,-122.327007">Meet me here!</a></li>
+						<li>...or even identifies a physical resource <a href="urn:isbn:3540642854">Great book!</a></li>
 					</ul>
 				</ul>
 			</slide>
@@ -464,7 +498,15 @@
 					<ul>
 						<li>Interacting with the resource is possible without knowing it beforehand</li>
 						<li>The interaction language <em>only</em> is about making interaction possible and scalable</li>
-						<li>The representations being exchanged depend on a <link id="shared-representation-model"/></li>
+						<li>The representations being exchanged depend on a <link href="shared-representation-model"/></li>
+					</ul>
+					<li>Every browser on the planet can access every resource on the planet!</li>
+					<li>Other schemes have other (or no) interaction models</li>
+					<ul>
+						<li><em>ftp:</em> works similar to HTTP (TCP/IP-based access)</li>
+						<li><em>tel:</em> is based on a much older global network than the internet</li>
+						<li><em>geo:</em> <q>interaction</q> might just mean <q>take me there</q></li>
+						<li><em>isbn:</em> has no way to <q>interact</q> with the identified resource</li>
 					</ul>
 				</ul>
 			</slide>
@@ -477,6 +519,45 @@
 						<li>There is a <q>hidden shared model</q> of the human language that is published/read</li>
 					</ul>
 					<li>There are <q>disconnected webs</q> separated by language barriers</li>
+					<li><link href="shared-identification-model"/> and <link href="shared-interaction-model"/> are necessary</li>
+					<ul>
+						<li>But they are not sufficient: without them the web is not possible</li>
+						<li>But without a <em>shared representation model</em> there is no shared understanding</li>
+					</ul>
+					<li>How to establish shared understanding is a very deep problem</li>
+				</ul>
+			</slide>
+		</part>
+		<part>
+			<title>IoT/WoT Issues</title>
+			<slide>
+				<title>How To Connect Things</title>
+				<ul>
+					<li>Constrained devices and networks may require different approaches</li>
+					<ul>
+						<li>IoT's <q>edges</q> can look very different from IoC</li>
+						<li>Low bandwidth and intermittent connectivity are specific IoT issues</li>
+						<li>What happens past those edges may not be all that different</li>
+					</ul>
+					<li>Writing IoT applications requires some understanding of those constraints</li>
+					<ul>
+						<li>It's similar to the (badly designed) mobile apps that don't work offline</li>
+						<li>In mobile it's the apps that go offline, in IoT it's the resources</li>
+					</ul>
+					<li><q>Core IoT</q> can be a highly specialized development environment</li>
+					<li><q>Applied IoT</q> may be able to abstract away <em>most</em> of these problems</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>How To Interconnect Things</title>
+				<ul>
+					<li>Using web architecture to build applications</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>What is the <q>Browser of the IoT/WoT</q>?</title>
+				<ul>
+					<li>Why would it be any different from a <q>regular</q> browser?</li>
 				</ul>
 			</slide>
 		</part>
@@ -486,7 +567,7 @@
 		<date>2015-02-06</date>
 		<toc class="reading"><a href="http://tools.ietf.org/html/rfc3439" title='Randy Bush and David Meyer, "Some Internet Architectural Guidelines and Philosophy", RFC 3439, December 2002'>Internet Architecture</a></toc>
 		<toc class="resources"><a href="http://en.wikipedia.org/wiki/OSI_model" title="Wikipedia: OSI Model">OSI</a></toc>
-		<toc class="abstract">Layering is one of the fundamental abstractions of IT systems and models. As one way how the terms IoT and WoT can be defined and distinguished, it is possible to look at what the Internet and the Web are, how they are related, and how this can be translated into scenarios where resources are are real-world resources.</toc>
+		<toc class="abstract">Layering is one of the fundamental abstractions of IT systems and models. As one way how the terms IoT and WoT can be defined and distinguished, it is possible to look at what the internet and the web are, how they are related, and how this can be translated into scenarios where resources are are real-world resources.</toc>
 		<toc class="assignment"><a href="a/2/">A2</a>&#160;(2015-02-12)</toc>
 		<slide>
 			<title>Abstract</title>
