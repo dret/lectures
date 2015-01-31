@@ -638,6 +638,271 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="networks">
+			<title>Computer Networks</title>
+			<slide>
+				<title>Network History</title>
+				<ul>
+					<li>First regarded as a convenient workaround for floppy disks</li>
+					<ul>
+						<li><q>real computer scientists write compilers</q></li>
+						<li>the value of computer networks depends on their size</li>
+					</ul>
+					<li>Early networking solutions were vendor-specific islands</li>
+					<ul>
+						<li>DECnet for <em>Digital Equipment Corporation (DEC)</em> customers</li>
+						<li>XNS for <em>Xerox</em> customers</li>
+						<li>SNA for <em>IBM</em> customers</li>
+						<li>transmitting data between these networks was very cumbersome</li>
+					</ul>
+					<li>Bridging networks transparently became increasingly important</li>
+					<ul>
+						<li>more computers and networks increase the benefit of interconnections</li>
+						<li>layering being used for internetworks, not only for networks</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Networks vs. Internetworks</title>
+				<ul>
+					<li>Specific networks use specific abstractions</li>
+					<ul>
+						<li>how to address nodes (computers, phones, PDAs, RFID tags)</li>
+						<li>how to address applications on these nodes</li>
+						<li>how to transmit data to these applications</li>
+					</ul>
+					<li>Internetworks provide a network-independent abstraction</li>
+					<ul>
+						<li>nodes are addressed uniformly (IP addresses)</li>
+						<li>applications are identified uniformly (ports)</li>
+						<li>data transmission uses one set of protocols (TCP/UDP)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Internet</title>
+				<ul>
+					<li>Very early start and a lot of experience</li>
+					<ul>
+						<li>pragmatic and evolutionary approach</li>
+						<li><q>if it's not broken, don't fix it</q></li>
+					</ul>
+					<li>Standardization by independent technical experts</li>
+					<ul>
+						<li>avoids the <q>designed by committee</q> effect of consortiums</li>
+						<li>conservative and concentrating on stability</li>
+						<li>implementations are required to prove technical feasibility</li>
+						<li>simplicity whenever possible</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Internet Principles</title>
+				<blockquote>Be liberal in what you accept, and conservative in what you send.</blockquote>
+				<p class="quotenote"><a href="http://www.postel.org/postel.html">Jon Postel</a>, <a href="http://tools.ietf.org/html/rfc1122">RFC 1122</a></p>
+				<blockquote>Whenever possible, communications protocol operations should be defined to occur at the end-points of a communications system, or as close as possible to the resource being controlled.</blockquote>
+				<p class="quotenote"><a href="http://dret.net/biblio/reference/sal84">J. Saltzer, D. Reed, D. Clark, <q>End-to-end Arguments in System Design</q></a></p>
+			</slide>
+			<slide>
+				<title>Internet Protocols</title>
+				<img style="width : 90% ; margin : 2% ; " src="internet-protocols.png" title="Internet Protocol Layers"/>
+			</slide>
+			<slide>
+				<title>Network Convergence</title>
+				<img style="width : 90% ; margin : 2% ; " src="network-convergence.png" title="Convergence in the Protocol Stack"/>
+			</slide>
+		</part>
+		<part id="ip">
+			<title short="IP">Internet Protocol (IP)</title>
+			<slide>
+				<title>IP Features</title>
+				<ul>
+					<li>End-to-end data transfer (IP addresses)</li>
+					<li>Hiding lower-level heterogeneity</li>
+					<li>Connection-less (each packet routed individually)</li>
+					<li>Unreliable (packets may be lost or duplicated)</li>
+				</ul>
+			</slide>
+			<slide id="ip-address">
+				<title>IP Address</title>
+				<ul>
+					<li>IP identifies nodes by an IP address</li>
+					<li>IP addresses are globally unique (<a href="http://api.hostip.info/get_html.php?position=true">and can be geocoded</a>)</li>
+					<li>IP uses 4 bytes for addresses (e.g., <code>128.32.226.29</code>)</li>
+					<ul>
+						<li>maximum number of addresses: 2<sup>32</sup> = 4 billion</li>
+						<li>IPv6 extends the address format to 16 bytes (2<sup>128</sup> addresses) = ~ 10<sup>38</sup></li>
+					</ul>
+					<li>IP address shortage led to the some trickery using IP addresses</li>
+					<ul>
+						<li><em href="http://en.wikipedia.org/wiki/Dhcp">Dynamic Host Configuration Protocol (DHCP)</em> is used to assign addresses on-demand</li>
+						<li><em href="http://en.wikipedia.org/wiki/Network_address_translation">Network Address Translation (NAT)</em> uses one IP address for more than one device</li>
+					</ul>
+					<li>IP addresses are well-organized</li>
+					<ul>
+						<li>important for routing (i.e., sending packets to the target host)</li>
+						<li>not ideally suited for mobile or ad-hoc networks</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="tcp">
+			<title short="TCP">Transmission Control Protocol (TCP)</title>
+			<slide>
+				<title>TCP Features</title>
+				<ul>
+					<li>Flow-controlled (avoiding congestion)</li>
+					<li>Reliable (no data lost or duplicated)</li>
+					<li>Connection-oriented</li>
+					<li>Application addressing</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Reliable Connections</title>
+				<ul>
+					<li>IP may drop or duplicate packets</li>
+					<ul>
+						<li>TCP adds serial numbers in data packets</li>
+						<li>if problems are detected, TCP recovers automatically</li>
+					</ul>
+					<li>TCP avoids network congestion and system overload</li>
+					<ul>
+						<li><em>slow start</em> avoid flooding receivers with data they cannot process</li>
+						<li><em>fast retransmit</em> for avoiding timeouts when losing data</li>
+						<li>a <em>sliding window</em> for controlling the amount of outstanding packets</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>TCP Window</title>
+				<img style="height : 70% ; margin : 2% ; " src="tcp-window.png"/>
+			</slide>
+		</part>
+		<part id="dns">
+			<title short="DNS">Domain Name System (DNS)</title>
+			<slide>
+				<title>Naming vs. Addressing</title>
+				<ul>
+					<li>IP addresses depend on network topology and organization</li>
+					<ul>
+						<li>reorganizing a network may change all IP addresses</li>
+						<li>identifying important hosts should not be address-based</li>
+					</ul>
+					<li>Names are supposed to be more stable than addresses</li>
+					<ul>
+						<li>a name is an abstract identification of something</li>
+						<li>names can be used to obtain more information</li>
+					</ul>
+					<li>Network services should use names instead of addresses</li>
+					<ul>
+						<li>before using the service, a mapping has to be performed</li>
+						<li>the <em>Domain Name System (DNS)</em> is providing this service</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>DNS Properties</title>
+				<ul>
+					<li>DNS has a bootstrap problem</li>
+					<ul>
+						<li>DNS provides a service and should thus be identified by a name</li>
+						<li>for resolving names into addresses, the DNS service is required</li>
+					</ul>
+					<li>DNS configuration is part of basic Internet configuration</li>
+					<ul>
+						<li><em>Dynamic Host Configuration Protocol (DHCP)</em> provides <link href="ip-address"/>, netmask, gateway, and DNS server address</li>
+					</ul>
+					<li>DNS names are hierarchically structured</li>
+					<ul>
+						<li><code>ischool.berkeley.edu</code>, <code>edu</code> is the <em>Top-Level Domain (TLD)</em></li>
+						<li>TLDs are either <em>generic (gTLD)</em> or <em>country code (ccTLD)</em></li>
+						<li>subdomains are federated (e.g., <code>edu</code>, <code>us</code>, <code>uk</code>, <code>tv</code>)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Names Matter</title>
+				<ul>
+					<li>Names are not unique and namespaces are finite</li>
+					<ul>
+						<li>name disputes arise which were irrelevant before the Web</li>
+						<li><q>cybersquatting</q> as a popular way to make money</li>
+					</ul>
+					<li>Names can be worth a lot of money</li>
+					<ul>
+						<li><code>business.com</code> was sold for $7.5M in 1999 and again for $345M in 2007</li>
+					</ul>
+					<li>Name inflation can be used to generate money</li>
+					<ul>
+						<li><code>aero</code>, <code>biz</code>, <code>coop</code>, <code>info</code>, <code>jobs</code>, <code>mobi</code>, <code>museum</code>, <code>name</code>, <code>pro</code>, <code>travel</code></li>
+						<li>starting 2009, <a href="http://dret.typepad.com/dretblog/2008/06/dret.html">user-defined top-level domains will go on sale</a></li>
+					</ul>
+					<li>Names can have political significance</li>
+					<ul>
+						<li>ccTLDs are assigned based on the UNO's idea of what a country is</li>
+					</ul>
+					<li>Names can have symbolic significance</li>
+					<ul>
+						<li>Catalonia managed to get a domain of its own (<code>cat</code>)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Domain Name Space</title>
+				<img style="height : 70% ; margin : 2% ; " src="dns-namespace.png"/>
+			</slide>
+			<slide>
+				<title>DNS Namespace Organization</title>
+				<ul>
+					<li>Domain owners can organize the assignment of subdomains</li>
+					<ul>
+						<li><code href="http://www.berkeley.edu/">berkeley.edu</code> is an U.S. educational institution</li>
+						<li><code href="http://www.ethz.ch/">ethz.ch</code> is a Swiss university</li>
+						<li><code href="http://www.imperial.ac.uk/">imperial.ac.uk</code> is a British university</li>
+						<li><code href="http://www.uts.edu.au/">uts.edu.au</code> is an Australian university</li>
+					</ul>
+					<li>Special rules may apply (Germany does not assign car license plate names)</li>
+					<li>Organizations may be countries or companies</li>
+					<ul>
+						<li>countries have national organizations for assigning names</li>
+						<li>companies may create an internal multi-level namespace (<code href="http://www.ischool.berkeley.edu/">www.ischool.berkeley.edu</code>)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Using DNS</title>
+				<ul>
+					<li>DNS is used by virtually all Internet applications</li>
+					<ul>
+						<li>names are more stable than addresses</li>
+					</ul>
+					<li>E-mail has some dedicated features built into DNS</li>
+					<ul>
+						<li>special entries (<code>MX</code> records) identify the e-mail server for a domain</li>
+						<li>fallback entries help dealing with failing e-mail servers</li>
+					</ul>
+					<li>most URIs are based on DNS names</li>
+					<ul>
+						<li><code>http://ischool.berkeley.edu/</code> identifies the access protocol and the host</li>
+						<li>the browser first performs a DNS lookup</li>
+						<li>a TCP connection is then established to the address returned by the DNS</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<slide>
+			<title>Conclusions</title>
+			<ul>
+				<li>The Internet is a network of networks</li>
+				<ul>
+					<li><a href="http://en.wikipedia.org/wiki/Ted_Stevens">Ted Stevens</a>: <q><a href="http://www.youtube.com/watch?v=f99PcP0aFNE" title="Ted Stevens on the Internet">It's not a big truck, it's a series of tubes!</a></q></li>
+				</ul>
+				<li>The Internet provides basic data transfer services</li>
+				<li>IP is used to send <em>datagrams</em> between end-points</li>
+				<li>TCP is used for reliable communications (building on IP)</li>
+				<li>DNS provides human-readable names for Internet hosts</li>
+			</ul>
+		</slide>
 	</presentation>
 	<presentation id="rest">
 		<title short="REST">REST and Economics of the IoT (Standardization)</title>
