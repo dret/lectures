@@ -606,9 +606,11 @@
 			</slide>
 			<slide id="layer1">
 				<title>Layer 1: Physical</title>
-				<ul>
-					<li></li>
-				</ul>
+				<div style="height : 70%">
+					<img style="height : 90% ; margin : 2% ; " src="antenna-tree.jpg" title="Cellular" href="https://www.flickr.com/photos/33954075@N07/5461958584/"/>
+					<img style="height : 90% ; margin : 2% ; " src="public-wifi.jpg" title="Public Wi-Fi" href="https://www.flickr.com/photos/dret/3649149757"/>
+					<img style="height : 90% ; margin : 2% ; " src="rj45.jpg" title="Cable Access" href="https://www.flickr.com/photos/30908884@N00/197503286"/>
+				</div>
 			</slide>
 			<slide id="layer2">
 				<title>Layer 2: Data Link</title>
