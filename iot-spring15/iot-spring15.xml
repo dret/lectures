@@ -593,7 +593,7 @@
 		<date>2015-02-06</date>
 		<toc class="reading"><a href="http://tools.ietf.org/html/rfc3439" title='Randy Bush and David Meyer, "Some Internet Architectural Guidelines and Philosophy", RFC 3439, December 2002'>Internet Architecture</a></toc>
 		<toc class="resources"><a href="http://en.wikipedia.org/wiki/OSI_model" title="Wikipedia: OSI Model">OSI</a></toc>
-		<toc class="abstract">Layering is one of the fundamental abstractions of IT systems and models. As one way how the terms IoT and WoT can be defined and distinguished, it is possible to look at what the internet and the web are, how they are related, and how this can be translated into scenarios where resources are are real-world resources.</toc>
+		<toc class="abstract">Layering is one of the fundamental abstractions of IT systems and models. One important area where this concept is applied is computer communication networks. As one way how the terms IoT and WoT can be defined and distinguished, it is possible to look at how the internet and the web are layered, how they are related, and how this can be translated into scenarios where resources are real-world resources.</toc>
 		<toc class="assignment"><a href="a/2/">A2</a>&#160;(2015-02-12)</toc>
 		<slide>
 			<title>Abstract</title>
@@ -603,6 +603,25 @@
 			<title>Networking Layers</title>
 			<slide id="SoC">
 				<title>Separation of Concerns (SoC)</title>
+				<ul>
+					<li>Solving different issues separately is a <em href="http://en.wikipedia.org/wiki/Separation_of_concerns#Origin">Good Idea</em></li>
+					<ul>
+						<li><q>...a program must be correct...</q></li>
+						<li><q>...it should be efficient...</q></li>
+						<li><q>...whether, and if so: why, the program is desirable...</q></li>
+					</ul>
+					<li>Complex solutions need a structured approach for solving them</li>
+					<ul>
+						<li>Solutions become easier to create</li>
+						<li>Parts of solutions may become reusable</li>
+						<li>Parts of solutions may become replaceable</li>
+					</ul>
+					<li>SoC is a good idea but not without costs</li>
+					<ul>
+						<li><q>Vertical integration</q> allows optimizations not possible in structured designs</li>
+						<li><q href="http://en.wikipedia.org/wiki/Charles_and_Ray_Eames">Design depends largely on constraints</q></li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="layer1">
 				<title>Layer 1: Physical</title>
