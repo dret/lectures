@@ -60,7 +60,7 @@
 				<li>The Content-Type header</li>
 				<li>The Cross-Origin Resource Sharing (CORS) headers</li>
 			</ul>
-			<p>The response to your request in the previous exercise should carry the <q>200 OK</q> HTTP status code. Also have a look at the following four HTTP status codes and look up their exact semantics - you will maybe encounter some of these when dealing with the ActivityStreams platform during the course project:</p>
+			<p>The response to your request in the previous exercise should carry the <q>200 OK</q> HTTP status code. Also have a look at the following four HTTP status codes and look up their exact semantics - you will maybe encounter some of these when dealing with the Activity Streams platform during the course project:</p>
 			<ul>
 				<li>401 Unauthorized</li>
 				<li>404 Not Found</li>
@@ -101,9 +101,61 @@
 	<assignment>
 		<title>Mashing Up Things and Services</title>
 		<dates assigned="2015-02-06" due="2015-02-12"/>
-		<abstract>As the second step for getting used to Internet and web principles, we combine various information sources and build a simple but typical mashup. The idea there is to take existing services (preferably thing-based, but not required for this assignment), and mash them up so that there is a new service (or an application) which is providing value that is derived from combining the mashed up services.</abstract>
+		<abstract>In this assignment you will build on Assignment 1 by connecting two Web services using Python. You will use output from the BART API as input for the Yelp API in order to find the top-rated restaurants near a few different BART stations.</abstract>
 		<instructions>
-			<p><a href="http://www.programmableweb.com/">Programmable Web</a></p>
+			<h4>Rationale</h4>
+			<p>Many of your projects (and ultimately all of them, when all of you will be asked to <q>mix and migle</q> projects) will incorporate mashups of various Web services. This assignment will teach you how to authenticate developer credentials and create a simple mashup of two Web services.</p>
+			<h4>Used Languages</h4>
+			<p>You will be using Python, the BART API, the Yelp API, and the Requests, oauth2, and ElementTree libraries.</p>
+			<h4>Deliverables</h4>
+			<p>You should create a zip file containing the Python code. You must make sure that the Python code runs with version 2.7 of the interpreter - remember that your submitted code must work on our machines as well, so use relative paths if you add external libraries to your project, and include these libraries with your zip file. Please use UTF-8 encoding for your documents and avoid special characters. Submit your zip file to <a href="mailto:alexander.jones@ischool.berkeley.edu">Alexander Jones</a> (subject line: "<q>IoT Assignment 2 (your-calnet-login)</q>) by Thursday, February 12, 2015, at 8pm PST.</p>
+			<h4>Instructions</h4>
+			<h5>Section 1: Working with oauth2 & the Yelp API (3 points)</h5>
+			<p>For Section 1 you will be learning how to authenticate developer credentials, create structured API search queries, and parse through response data using the Yelp API.</p>
+			<h6>1.1 Setting up Yelp API access</h6>
+			<p>In order to work with the Yelp API, as is common with many APIs, you will need to get <a href="https://www.yelp.com/signup?return_url=%2Fdevelopers%2Fmanage_api_keys">a developer key</a>. You can use a throw-away email account if you do not feel like using your actual email to register. Once registered, visit the <a href="http://www.yelp.com/developers/manage_api_keys"><q>Manage API Access</q> page</a> to retrieve your credentials for the v2.0 API.</p>
+			<h6>1.2	Authenticating using the oauth2 library</h6>
+			<p>For this section you will be creating a function to call the Yelp API.</p>
+			<p>Create a new Python script that you will be using throughout the rest of Section 1.</p>
+			<p>Next, authenticate with Yelp's Web service using the <a href="https://pypi.python.org/pypi/python-oauth2/0.7.0">oauth2 library</a> (which you will need to download/install) and your developer credentials. In addition to the <a href="https://github.com/simplegeo/python-oauth2">oauth2 documentation</a>, review <a href="http://www.yelp.com/developers/documentation/v2/authentication">Yelp's authentication documentation</a> to get a better idea of how to use your credentials to authenticate with Yelp's API. Yelp also provides <a href="https://github.com/Yelp/yelp-api/blob/master/v2/python/sample.py">a good example</a> of how to set up authentication in Python.</p>
+			<p>Once your authentication is set up, your function should use the <a href="http://docs.python-requests.org/en/latest/">Requests library</a> to perform a GET request to the Yelp API call with the following query parameters:</p>
+			<pre>term="restaurants"
+location="Berkeley"</pre>
+			<p>You should receive a JSON response, and your code should print this response.</p>
+			<p><b>HINT:</b> Create a variable that is a structured query URL, then use this URL with the oauth2.Request function.</p>
+			<h6>1.3	Getting & parsing data from the Yelp API using structured queries</h6>
+			<p>Now that you have made a basic API call, you are going to make a new call with additional query parameters in order to narrow the results. You will then extract certain information from the response data. Refer to the <a href="http://www.yelp.com/developers/documentation/v2/search_api">Yelp Search API documentation</a> to learn how to manipulate query parameters.</p>
+			<p>First, create a new structured query URL, identical to the one from Section 1.2, except without the <q>location</q> parameter. Next, add the appropriate query parameters to accomplish the following:</p>
+			<ul>
+				<li>Set the search center point to the latitude & longitude for Berkeley: Latitude=37.8759471; Longitude=-122.280622</li>
+				<li>Limit your search results to a 1-kilometer radius around Berkeley's lat/lon</li>
+				<li>Limit your search results to the top-10 restaurants</li>
+				<li>Sort your search by restaurant rating</li>
+			</ul>
+			<p>Now that you have more specific search results, you are going to extract the following information for each restaurant from the response JSON:</p>
+			<ul>
+				<li>Name</li>
+				<li>Top-level category (e.g., <q>Mexican</q>)</li>
+				<li>Rating</li>
+				<li>Number of ratings</li>
+				<li>Distance</li>
+			</ul>
+			<p>Your code should print the above information for each restaurant.</p>
+			<p><b>HINT:</b> You can traverse JSON objects similar to how you would traverse a dictionary.</p>
+			<h5>Section 2: Working with the BART API & connecting Web services (2 points)</h5>
+			<h6>2.1 Getting &amp; parsing data from the BART API</h6>
+			<p>Now that you have a working script for accessing the Yelp API, you are going to create a separate script that calls the BART API.</p>
+			<p>In a new Python file, create a function that calls the <a href="http://api.bart.gov/docs/overview/index.aspx">BART API</a> using the Requests library to find all the stations. Parse through the response XML using the built-in <a href="https://docs.python.org/3/library/xml.etree.elementtree.html">xml.etree.ElementTree module</a>, and then return the city name (Berkeley), station name, and lat/long information for each of the Berkeley BART stations.</p>
+			<p>Your code should print the station information for each Berkeley station before returning.</p>
+			<p><b>HINT:</b> Consider the type of data structure return in this section – you will need to extract the station information in the next section.</p>
+			<h5>2.2 Using BART API data as inputs for the Yelp API</h5>
+			<p>In this section you will be using the outputs of Section 2.1 as query parameters for the Yelp API script you made in Section 1.</p>
+			<p>First, go back to the Yelp API script from Section 1 and import the BART API script from Section 2 just as if you were importing a normal Python library. You can now use the function from your BART API script inside of your Yelp API script.</p>
+			<p>Next you will create a new function that uses your structured query from Section 1.3 to find the best Yelp options around each of the Berkeley BART stations. This time, however, set the results limit to 20 instead of 10.</p>
+			<p>Your code should print the Yelp results for each of the Berkeley BART station locations.</p>
+			<p><b>HINT:</b> Call the function in your BART API script to get the station information needed to update the Yelp API query.</p>
+			<h6>2.3 (Optional) Display results using a web framework</h6>
+			<p>Create a simple web framework using <a href="http://flask.pocoo.org/docs/0.10/api/">Flask</a> that displays the output from Section 2.2 on a locally served web page. If you have never used Flask before, <a href="https://github.com/bev-a-tron/MyFlaskTutorial">here is a great tutorial</a>.</p>
 		</instructions>
 	</assignment>
 	<assignment>
