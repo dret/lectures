@@ -625,6 +625,10 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="osi-layers">
+				<title>OSI Layers</title>
+				<img style="height : 70% ; margin : 2% ; " src="osi-model.png" href="http://commons.wikimedia.org/wiki/File:Osi-model.png"/>
+			</slide>
 			<slide id="layer1">
 				<title>Layer 1: Physical</title>
 				<div style="height : 70%">
@@ -660,7 +664,17 @@
 			<slide id="layer6">
 				<title>Layer 6: Presentation</title>
 				<ul>
-					<li></li>
+					<li>OSI has <em href="http://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One">Abstract Syntax Notation One (ASN.1)</em></li>
+					<ul>
+						<li>one abstract model and a variety of <q>encoding rules</q> (DER, XER, PER)</li>
+						<li>mostly extinct nowadays but still used for <a href="http://en.wikipedia.org/wiki/Public_key_infrastructure">PKI information (certificates)</a></li>
+					</ul>
+					<li>The internet has media types and some <q>generic</q> data representation languages</li>
+					<ul>
+						<li><em href="../../xml">Extensible Markup Language (XML)</em> was the first successful internet representation</li>
+						<li><em href="">JavaScript Object Notation (JSON) replaced XML because most developers like it better</em></li>
+						<li><em href="">Resource Description Framework (RDF)</em> is another possible generic data format</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="layer7">
@@ -679,6 +693,15 @@
 					<li>File Transfer: FTP</li>
 					<li>Multimedia Traffic: RTP</li>
 					<li>Remote Login: Telnet</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Popular Networking Equipment</title>
+				<ul>
+					<li>Layer 1: Repeaters, Hubs (extending reach)</li>
+					<li>Layer 2: Bridges, Switches (selectively <q>repeating</q> frames)</li>
+					<li>Layer 3: Routers (using end-to-end addresses)</li>
+					<li>Above Layer 4: Gateways</li>
 				</ul>
 			</slide>
 		</part>
