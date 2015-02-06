@@ -396,7 +396,7 @@
 					<li>The internet was invented specifically for <em>interconnecting networks</em></li>
 					<ul>
 						<li>Started with the <a href="http://en.wikipedia.org/wiki/ARPANET">ARPANET</a> in the late 1960s</li>
-						<li>The <a href="http://en.wikipedia.org/wiki/Internet">Internet</a> then focused on protocols and not on networks</li>
+						<li>The <a href="http://en.wikipedia.org/wiki/Internet">internet</a> then focused on protocols and not on networks</li>
 						<li>Other protocols faded away in favor of TCP/IP's packet switching approach</li>
 					</ul>
 					<li><q>Internet vs. OSI</q> was a big debate/fight in the late 1980s</li>
@@ -404,7 +404,7 @@
 						<li>The main differences were purity, complexity, and culture</li>
 						<li>Apart from a few select parts, OSI lost and the internet won</li>
 					</ul>
-					<li>The Internet's biggest push was the advent of the web in the early 1990s</li>
+					<li>The internet's biggest push was the advent of the web in the early 1990s</li>
 				</ul>
 			</slide>>
 			<slide>
@@ -601,6 +601,80 @@
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="networks">
+			<title>Computer Networks</title>
+			<slide>
+				<title>Network History</title>
+				<ul>
+					<li>First regarded as a convenient workaround for floppy disks</li>
+					<ul>
+						<li><q>Real computer scientists write compilers</q></li>
+						<li>The value of computer networks depends on their size</li>
+					</ul>
+					<li>Early networking solutions were vendor-specific islands</li>
+					<ul>
+						<li>DECnet for <em>Digital Equipment Corporation (DEC)</em> customers</li>
+						<li>XNS for <em>Xerox</em> customers</li>
+						<li>SNA for <em>IBM</em> customers</li>
+						<li>transmitting data between these networks was very cumbersome</li>
+					</ul>
+					<li>Bridging networks transparently became increasingly important</li>
+					<ul>
+						<li>More computers and networks increase the benefit of interconnections</li>
+						<li>Layering being used for internetworks, not only for networks</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Networks vs. Internetworks</title>
+				<ul>
+					<li>Specific networks use specific abstractions</li>
+					<ul>
+						<li>How to address nodes (computers, phones, PDAs, RFID tags)</li>
+						<li>How to address applications on these nodes</li>
+						<li>How to transmit data to these applications</li>
+					</ul>
+					<li>Internetworks provide a network-independent abstraction</li>
+					<ul>
+						<li>Nodes are addressed uniformly (IP addresses)</li>
+						<li>Applications are identified uniformly (ports)</li>
+						<li>Data transmission uses one set of protocols (TCP/UDP)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Internet</title>
+				<ul>
+					<li>Very early start and a lot of experience</li>
+					<ul>
+						<li>Pragmatic and evolutionary approach</li>
+						<li><q>If it's not broken, don't fix it</q></li>
+					</ul>
+					<li>Standardization by independent technical experts</li>
+					<ul>
+						<li>Avoids the <q>designed by committee</q> effect of consortiums</li>
+						<li>Conservative and concentrating on stability</li>
+						<li>Implementations are required to prove technical feasibility</li>
+						<li>Simplicity whenever possible</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Internet Principles</title>
+				<blockquote>Be liberal in what you accept, and conservative in what you send.</blockquote>
+				<p class="quotenote"><a href="http://www.postel.org/postel.html">Jon Postel</a>, <a href="http://tools.ietf.org/html/rfc1122">RFC 1122</a></p>
+				<blockquote>Whenever possible, communications protocol operations should be defined to occur at the end-points of a communications system, or as close as possible to the resource being controlled.</blockquote>
+				<p class="quotenote"><a href="http://dret.net/biblio/reference/sal84">J. Saltzer, D. Reed, D. Clark, <q>End-to-end Arguments in System Design</q></a></p>
+			</slide>
+			<slide>
+				<title>Internet Protocols</title>
+				<img style="height : 70% ; margin : 2% ; " src="internet-protocols.png" title="Internet Protocol Layers"/>
+			</slide>
+			<slide>
+				<title>Network Convergence</title>
+				<img style="height : 70% ; margin : 2% ; " src="network-convergence.png" title="Convergence in the Protocol Stack"/>
+			</slide>
+		</part>
 		<part id="netlayers">
 			<title>Networking Layers</title>
 			<slide id="SoC">
@@ -618,10 +692,11 @@
 						<li>Parts of solutions may become reusable</li>
 						<li>Parts of solutions may become replaceable</li>
 					</ul>
+					<li>Software engineering hit complexity issues a bit earlier than networking did</li>
 					<li>SoC is a good idea but not without costs</li>
 					<ul>
 						<li><q>Vertical integration</q> allows optimizations not possible in structured designs</li>
-						<li><q>Design depends largely on constraints</q> (<a href="http://en.wikipedia.org/wiki/Charles_and_Ray_Eames">Charles and Ray Eames</a>)</li>
+						<li><q>Design depends largely on constraints.</q> (<a href="http://en.wikipedia.org/wiki/Charles_and_Ray_Eames">Charles and Ray Eames</a>)</li>
 					</ul>
 				</ul>
 			</slide>
@@ -640,25 +715,57 @@
 			<slide id="layer2">
 				<title>Layer 2: Data Link</title>
 				<ul>
-					<li></li>
+					<li>Getting small units of data (frames) safely across layer 1</li>
+					<li>Lost/damaged frames are repeated to ensure robustness</li>
+					<li>Depending on layer 1, layer 2 frames can have very different sizes</li>
+					<ul>
+						<li><a href="http://en.wikipedia.org/wiki/Ethernet_frame">Ethernet frames</a> typically have 1500 bytes of payload (and some protocol fields)</li>
+						<li>Other networks (such as GSM, CDMA, BLE) use different frame sizes</li>
+					</ul>
 				</ul>
+				<img style="width : 90% ; margin : 2% ; " src="ethernet-frame.png" href="http://commons.wikimedia.org/wiki/File:Ethernet_frame.svg"/>
 			</slide>
 			<slide id="layer3">
 				<title>Layer 3: Network</title>
 				<ul>
-					<li></li>
+					<li>Allows addressing at the network level</li>
+					<li>For the internet, this means IP addresses</li>
+					<ul>
+						<li><a href="http://en.wikipedia.org/wiki/IPv4">IPv4</a> is the version that has powered the internet so far</li>
+						<li><a href="http://en.wikipedia.org/wiki/IPv6">IPv6</a> is phased in to be able to handle <q>IoT-scale</q> growth</li>
+					</ul>
 				</ul>
+				<img style="width : 90% ; margin : 2% ; " src="IPv4-packet.png" href="http://en.wikipedia.org/wiki/IPv4"/>
 			</slide>
 			<slide id="layer4">
 				<title>Layer 4: Transport</title>
 				<ul>
-					<li></li>
+					<li>Layer 3 establishes connectivity on a <em>machine-to-machine</em> level</li>
+					<ul>
+						<li>Packets can be sent from one machine to another machine</li>
+						<li>It is not clear yet what to do with the packet once it arrived</li>
+					</ul>
+					<li>TCP establishes <em>process-to-process</em> connectivity and reliable connections</li>
 				</ul>
+				<img style="width : 90% ; margin : 2% ; " src="TCP-structure.png" href="http://en.wikipedia.org/wiki/Transmission_Control_Protocol"/>
 			</slide>
 			<slide id="layer5">
 				<title>Layer 5: Session</title>
 				<ul>
-					<li></li>
+					<li>Sessions are meaningful for applications</li>
+					<ul>
+						<li>TCP connections may or may not terminate (see <a href="http://en.wikipedia.org/wiki/HTTP_persistent_connection">HTTP/1.1 persistent connections</a>)</li>
+						<li>Applications should be able to start, pause, restart, and end sessions</li>
+					</ul>
+					<li>Sessions can be terrible for scalability</li>
+					<ul>
+						<li>Creating tight coupling between two processes</li>
+						<li><a href="rest/">REST</a> tries really hard to build a session-free web (<q>stateless interactions</q>)</li>
+					</ul>
+					<li>The internet does not really have a generic model for sessions</li>
+					<ul>
+						<li><em>HTTP Cookies</em> are one way to achieve the same goal (but with a lot of side-effects)</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="layer6">
@@ -671,7 +778,7 @@
 					</ul>
 					<li>The internet has media types and some <q>generic</q> data representation languages</li>
 					<ul>
-						<li><em href="../../xml">Extensible Markup Language (XML)</em> was the first successful internet representation</li>
+						<li><em href="../xml">Extensible Markup Language (XML)</em> was the first successful internet representation</li>
 						<li><em href="">JavaScript Object Notation (JSON) replaced XML because most developers like it better</em></li>
 						<li><em href="">Resource Description Framework (RDF)</em> is another possible generic data format</li>
 					</ul>
@@ -680,7 +787,22 @@
 			<slide id="layer7">
 				<title>Layer 7: Application</title>
 				<ul>
-					<li></li>
+					<li>Anything that is built on top of a layered networking stack</li>
+					<li>Applications can select (some of the) aspects of the stack</li>
+					<ul>
+						<li>TCP is often useful because it's reliable and flow-controlled</li>
+						<li>UDP may be better for real-time and loss-tolerant data such as video/audio</li>
+					</ul>
+					<li>Lower layers are completely invisible to applications</li>
+					<ul>
+						<li>Unless some support and signaling is built into the networking stack</li>
+						<li>For example, it can be very interesting to know what traffic costs</li>
+					</ul>
+					<li>Complete abstraction is a dream, complete control is a nightmare</li>
+					<ul>
+						<li>Or is it the other way around? It all depends on the scenarios...</li>
+						<li>As the internet and applications evolve, networking protocols and features evolve</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide>
@@ -705,114 +827,6 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="networks">
-			<title>Computer Networks</title>
-			<slide>
-				<title>Network History</title>
-				<ul>
-					<li>First regarded as a convenient workaround for floppy disks</li>
-					<ul>
-						<li><q>real computer scientists write compilers</q></li>
-						<li>the value of computer networks depends on their size</li>
-					</ul>
-					<li>Early networking solutions were vendor-specific islands</li>
-					<ul>
-						<li>DECnet for <em>Digital Equipment Corporation (DEC)</em> customers</li>
-						<li>XNS for <em>Xerox</em> customers</li>
-						<li>SNA for <em>IBM</em> customers</li>
-						<li>transmitting data between these networks was very cumbersome</li>
-					</ul>
-					<li>Bridging networks transparently became increasingly important</li>
-					<ul>
-						<li>more computers and networks increase the benefit of interconnections</li>
-						<li>layering being used for internetworks, not only for networks</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide>
-				<title>Networks vs. Internetworks</title>
-				<ul>
-					<li>Specific networks use specific abstractions</li>
-					<ul>
-						<li>how to address nodes (computers, phones, PDAs, RFID tags)</li>
-						<li>how to address applications on these nodes</li>
-						<li>how to transmit data to these applications</li>
-					</ul>
-					<li>Internetworks provide a network-independent abstraction</li>
-					<ul>
-						<li>nodes are addressed uniformly (IP addresses)</li>
-						<li>applications are identified uniformly (ports)</li>
-						<li>data transmission uses one set of protocols (TCP/UDP)</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide>
-				<title>Internet</title>
-				<ul>
-					<li>Very early start and a lot of experience</li>
-					<ul>
-						<li>pragmatic and evolutionary approach</li>
-						<li><q>if it's not broken, don't fix it</q></li>
-					</ul>
-					<li>Standardization by independent technical experts</li>
-					<ul>
-						<li>avoids the <q>designed by committee</q> effect of consortiums</li>
-						<li>conservative and concentrating on stability</li>
-						<li>implementations are required to prove technical feasibility</li>
-						<li>simplicity whenever possible</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide>
-				<title>Internet Principles</title>
-				<blockquote>Be liberal in what you accept, and conservative in what you send.</blockquote>
-				<p class="quotenote"><a href="http://www.postel.org/postel.html">Jon Postel</a>, <a href="http://tools.ietf.org/html/rfc1122">RFC 1122</a></p>
-				<blockquote>Whenever possible, communications protocol operations should be defined to occur at the end-points of a communications system, or as close as possible to the resource being controlled.</blockquote>
-				<p class="quotenote"><a href="http://dret.net/biblio/reference/sal84">J. Saltzer, D. Reed, D. Clark, <q>End-to-end Arguments in System Design</q></a></p>
-			</slide>
-			<slide>
-				<title>Internet Protocols</title>
-				<img style="width : 90% ; margin : 2% ; " src="internet-protocols.png" title="Internet Protocol Layers"/>
-			</slide>
-			<slide>
-				<title>Network Convergence</title>
-				<img style="width : 90% ; margin : 2% ; " src="network-convergence.png" title="Convergence in the Protocol Stack"/>
-			</slide>
-		</part>
-		<part id="ip">
-			<title short="IP">Internet Protocol (IP)</title>
-			<slide>
-				<title>IP Features</title>
-				<ul>
-					<li>End-to-end data transfer (IP addresses)</li>
-					<li>Hiding lower-level heterogeneity</li>
-					<li>Connection-less (each packet routed individually)</li>
-					<li>Unreliable (packets may be lost or duplicated)</li>
-				</ul>
-			</slide>
-			<slide id="ip-address">
-				<title>IP Address</title>
-				<ul>
-					<li>IP identifies nodes by an IP address</li>
-					<li>IP addresses are globally unique (<a href="http://api.hostip.info/get_html.php?position=true">and can be geocoded</a>)</li>
-					<li>IP uses 4 bytes for addresses (e.g., <code>128.32.226.29</code>)</li>
-					<ul>
-						<li>maximum number of addresses: 2<sup>32</sup> = 4 billion</li>
-						<li>IPv6 extends the address format to 16 bytes (2<sup>128</sup> addresses) = ~ 10<sup>38</sup></li>
-					</ul>
-					<li>IP address shortage led to the some trickery using IP addresses</li>
-					<ul>
-						<li><em href="http://en.wikipedia.org/wiki/Dhcp">Dynamic Host Configuration Protocol (DHCP)</em> is used to assign addresses on-demand</li>
-						<li><em href="http://en.wikipedia.org/wiki/Network_address_translation">Network Address Translation (NAT)</em> uses one IP address for more than one device</li>
-					</ul>
-					<li>IP addresses are well-organized</li>
-					<ul>
-						<li>important for routing (i.e., sending packets to the target host)</li>
-						<li>not ideally suited for mobile or ad-hoc networks</li>
-					</ul>
-				</ul>
-			</slide>
-		</part>
 		<part id="tcp">
 			<title short="TCP">Transmission Control Protocol (TCP)</title>
 			<slide>
@@ -830,13 +844,13 @@
 					<li>IP may drop or duplicate packets</li>
 					<ul>
 						<li>TCP adds serial numbers in data packets</li>
-						<li>if problems are detected, TCP recovers automatically</li>
+						<li>If problems are detected, TCP recovers automatically</li>
 					</ul>
 					<li>TCP avoids network congestion and system overload</li>
 					<ul>
-						<li><em>slow start</em> avoid flooding receivers with data they cannot process</li>
-						<li><em>fast retransmit</em> for avoiding timeouts when losing data</li>
-						<li>a <em>sliding window</em> for controlling the amount of outstanding packets</li>
+						<li><em>Slow start</em> avoid flooding receivers with data they cannot process</li>
+						<li><em>Fast retransmit</em> for avoiding timeouts when losing data</li>
+						<li>a <em>Sliding window</em> for controlling the amount of outstanding packets</li>
 					</ul>
 				</ul>
 			</slide>
@@ -852,18 +866,18 @@
 				<ul>
 					<li>IP addresses depend on network topology and organization</li>
 					<ul>
-						<li>reorganizing a network may change all IP addresses</li>
-						<li>identifying important hosts should not be address-based</li>
+						<li>Reorganizing a network may change all IP addresses</li>
+						<li>Identifying important hosts should not be address-based</li>
 					</ul>
 					<li>Names are supposed to be more stable than addresses</li>
 					<ul>
-						<li>a name is an abstract identification of something</li>
-						<li>names can be used to obtain more information</li>
+						<li>A name is an abstract identification of something</li>
+						<li>Names can be used to obtain more information</li>
 					</ul>
 					<li>Network services should use names instead of addresses</li>
 					<ul>
-						<li>before using the service, a mapping has to be performed</li>
-						<li>the <em>Domain Name System (DNS)</em> is providing this service</li>
+						<li>Before using the service, a mapping has to be performed</li>
+						<li>The <em>Domain Name System (DNS)</em> is providing this service</li>
 					</ul>
 				</ul>
 			</slide>
@@ -873,17 +887,17 @@
 					<li>DNS has a bootstrap problem</li>
 					<ul>
 						<li>DNS provides a service and should thus be identified by a name</li>
-						<li>for resolving names into addresses, the DNS service is required</li>
+						<li>For resolving names into addresses, the DNS service is required</li>
 					</ul>
 					<li>DNS configuration is part of basic Internet configuration</li>
 					<ul>
-						<li><em>Dynamic Host Configuration Protocol (DHCP)</em> provides <link href="ip-address"/>, netmask, gateway, and DNS server address</li>
+						<li><em>Dynamic Host Configuration Protocol (DHCP)</em> provides IP address, netmask, gateway, and DNS server address</li>
 					</ul>
 					<li>DNS names are hierarchically structured</li>
 					<ul>
 						<li><code>ischool.berkeley.edu</code>, <code>edu</code> is the <em>Top-Level Domain (TLD)</em></li>
 						<li>TLDs are either <em>generic (gTLD)</em> or <em>country code (ccTLD)</em></li>
-						<li>subdomains are federated (e.g., <code>edu</code>, <code>us</code>, <code>uk</code>, <code>tv</code>)</li>
+						<li>Subdomains are federated (e.g., <code>edu</code>, <code>us</code>, <code>uk</code>, <code>tv</code>)</li>
 					</ul>
 				</ul>
 			</slide>
@@ -892,7 +906,7 @@
 				<ul>
 					<li>Names are not unique and namespaces are finite</li>
 					<ul>
-						<li>name disputes arise which were irrelevant before the Web</li>
+						<li>Name disputes arise which were irrelevant before the Web</li>
 						<li><q>cybersquatting</q> as a popular way to make money</li>
 					</ul>
 					<li>Names can be worth a lot of money</li>
@@ -902,7 +916,7 @@
 					<li>Name inflation can be used to generate money</li>
 					<ul>
 						<li><code>aero</code>, <code>biz</code>, <code>coop</code>, <code>info</code>, <code>jobs</code>, <code>mobi</code>, <code>museum</code>, <code>name</code>, <code>pro</code>, <code>travel</code></li>
-						<li>starting 2009, <a href="http://dret.typepad.com/dretblog/2008/06/dret.html">user-defined top-level domains will go on sale</a></li>
+						<li>Starting 2014, <a href="http://dret.typepad.com/dretblog/2008/06/dret.html">user-defined top-level domains went on sale</a></li>
 					</ul>
 					<li>Names can have political significance</li>
 					<ul>
@@ -915,7 +929,7 @@
 				</ul>
 			</slide>
 			<slide>
-				<title>Domain Name Space</title>
+				<title>DNS Name Space</title>
 				<img style="height : 70% ; margin : 2% ; " src="dns-namespace.png"/>
 			</slide>
 			<slide>
@@ -927,12 +941,13 @@
 						<li><code href="http://www.ethz.ch/">ethz.ch</code> is a Swiss university</li>
 						<li><code href="http://www.imperial.ac.uk/">imperial.ac.uk</code> is a British university</li>
 						<li><code href="http://www.uts.edu.au/">uts.edu.au</code> is an Australian university</li>
+						<li><code href="http://www.swiss.aero/">swiss.aero</code> makes money by selling <q>new land</q></li>
 					</ul>
 					<li>Special rules may apply (Germany does not assign car license plate names)</li>
 					<li>Organizations may be countries or companies</li>
 					<ul>
-						<li>countries have national organizations for assigning names</li>
-						<li>companies may create an internal multi-level namespace (<code href="http://www.ischool.berkeley.edu/">www.ischool.berkeley.edu</code>)</li>
+						<li>Countries have national organizations for assigning names</li>
+						<li>Companies may create an internal multi-level namespace (<code href="http://www.ischool.berkeley.edu/">www.ischool.berkeley.edu</code>)</li>
 					</ul>
 				</ul>
 			</slide>
@@ -941,33 +956,310 @@
 				<ul>
 					<li>DNS is used by virtually all Internet applications</li>
 					<ul>
-						<li>names are more stable than addresses</li>
+						<li>Names are more stable than addresses</li>
 					</ul>
 					<li>E-mail has some dedicated features built into DNS</li>
 					<ul>
-						<li>special entries (<code>MX</code> records) identify the e-mail server for a domain</li>
-						<li>fallback entries help dealing with failing e-mail servers</li>
+						<li>Special entries (<code>MX</code> records) identify the e-mail server for a domain</li>
+						<li>Fallback entries help dealing with failing e-mail servers</li>
 					</ul>
 					<li>most URIs are based on DNS names</li>
 					<ul>
 						<li><code>http://ischool.berkeley.edu/</code> identifies the access protocol and the host</li>
-						<li>the browser first performs a DNS lookup</li>
-						<li>a TCP connection is then established to the address returned by the DNS</li>
+						<li>The browser first performs a DNS lookup</li>
+						<li>A TCP connection is then established to the IP address returned by the DNS</li>
 					</ul>
 				</ul>
 			</slide>
 		</part>
+    <part id="uri">
+      <title short="URI">Uniform Resource Identifier (URI)</title>
+      <slide>
+        <title>Resource Identification</title>
+        <ul>
+          <li>Early hypertext systems usually only identified documents within the scope of a single system (e.g. HyperCard)</li>
+          <li>The web uses URIs (Uniform Resource Identifiers) as global identifiers</li>
+          <ul>
+            <li>http://ischool.berkeley.edu/</li>
+            <li>mailto:alexander.jones@ischool.berkeley.edu</li>
+            <li>tel:+1-510-684-2179</li>
+            <li>urn:isbn:0451450523</li>
+          </ul>
+        </ul>
+        <blockquote cite="http://www.w3.org/TR/2004/REC-webarch-20041215/#identification">Global naming leads to global network effects... the value of an identifier increases the more it is used consistently</blockquote>
+        <p class="quotenote"><a href="http://www.w3.org/TR/webarch/">Architecture of the World Wide Web, Volume One</a></p> 
+      </slide>
+      <slide>
+        <title>URIs &amp; Resources</title>
+        <ul>
+          <li>A URI identifies a "resource."</li>
+          <li>But what is a resource?</li>
+          <li>A resource is anything identified by a URI</li>
+          <li>Resources are a way of conceptually dividing up some information space</li>
+        <li>URIs do not merely identify; they can be used to access or interact with a resource</li>
+        <li>The details of how to do this are determined by the URI's scheme, e.g. the <q><code>http:</code></q> part</li>
+        <li>The usual method of interacting with a resource is by <em>dereferencing</em> the URI</li>
+        </ul>
+      </slide>
+      <slide id="uri-schemes">
+        <title>URI Schemes</title>
+        <pre>URI = scheme ":" hier-part [ "?" query ] [ "#" fragment ]</pre>
+        <pre>http://dret.net/lectures/iot-spring15/layering#uri-schemes</pre>
+        <ul>
+          <li>URIs in their general case are very simple</li>
+          <ul>
+            <li>the scheme identifies how resources are identified</li>
+            <li>the identification may be hierarchical or non-hierarchical</li>
+          </ul>
+          <li>Many URI schemes are hierarchical</li>
+          <ul>
+            <li>it is then possible to use relative URIs such as in <htmel>a href="../"</htmel></li>
+            <li>the slash character is not just a character, in URIs it has semantics</li>
+          </ul>
+          <li>Query components specify additional information</li>
+          <ul>
+            <li>it is non-hierarchical information further identifying the resource</li>
+            <li>in most cases, it can be regarded as <q>input</q> to the resource</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="representation-resource">
+        <title>Resources &amp; Representations</title>
+        <ul>
+          <li>When a URI is dereferenced by a web browser, it receives some data</li>
+          <li>That data is called a <em>representation</em> of the resource identified by the URI</li>
+          <li>Resources are abstract, representations are concrete</li>
+          <li>Resources may have various representations, and they may vary with time</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="http">
+      <title short="HTTP">Hypertext Transfer Protocol (HTTP)</title>
+      <slide>
+        <title>DNS &amp; HTTP</title>
+        <p>The two basic protocols which every Web browser must implement are <link href="dns">DNS</link> access and <link href="http">HTTP</link>. However, most operating systems provide an API for DNS access, so the browser can use this service locally and only has to implement HTTP. <link href="tcp">TCP</link> (which is required as the foundation for HTTP) is usually provided by the operating system.</p>
+        <img style="width : 90% ; margin : 2% ; " src="browser-dns-http.png"/>
+      </slide>
+        <slide>
+          <title>HTTP Messages</title>
+          <ul>
+            <li>HTTP needs a reliable connection</li>
+            <ul>
+              <li>the foundation for HTTP is the <link href="tcp"/></li>
+              <li>DNS resolution yields an IP address</li>
+              <li>open TCP connection to port 80 or port specified in URI (<code>http://rosetta.sims.berkeley.edu:8085/</code>)</li>
+            </ul>
+            <li>HTTP is a <em>text-based</em> protocol</li>
+            <ul>
+              <li>the connection is used to transmit <em>text messages</em></li>
+              <li>all HTTP messages are human-readable (not all <em>entities</em>, though)</li>
+              <li>basic HTTP operations can be carried out by hand</li>
+            </ul>
+          </ul>
+          <pre>start-line
+message-header *
+
+message-body ?</pre>
+        </slide>
+        <slide id="http-headers">
+          <title>HTTP Header Fields</title>
+          <ul>
+            <li>Header fields contain information about the message</li>
+            <ul>
+              <li><em>general header:</em> <code>Date</code> as the message origination date</li>
+              <li><em>request header:</em> <code>Accept-Language</code> indicates language preferences</li>
+              <li><em>response header:</em> <code>Server</code> contains system information</li>
+              <li><em>entity header:</em> <code>Content-Type</code> specifies the media type of the entity</li>
+            </ul>
+          	<li>HTTP (and others) define <a href="https://github.com/dret/sedola/blob/master/MD/headers.md">a number of header fields</a></li>
+            <ul>
+              <li>unknown fields must be ignored (extensibility)</li>
+            </ul>
+            <li>HTTP is about acting on these fields</li>
+            <ul>
+              <li>HTTP defines what HTTP implementations must or should do</li>
+            </ul>
+          </ul>
+        </slide>
+        <slide id="http-request">
+          <title>HTTP Requests</title>
+          <ul>
+            <li>After opening a connection, the client sends a request</li>
+            <ul>
+              <li>the method indicates the action to be performed on the resource</li>
+              <li>HTTP's most interesting methods are: <code>GET</code>, <code>POST</code>, <code>PUT</code>, and <code>DELETE</code></li>
+            </ul>
+            <li>The URI identifies the resource to which the request should be applied</li>
+            <ul>
+              <li>absolute URIs are required when contacting <em>proxies</em></li>
+              <li>absolute paths are required when contacting a server directly</li>
+              <li>the URI may contain <em>query information</em></li>
+            </ul>
+            <li>The <code>Host</code> header field must be included in every HTTP/1.1 request</li>
+          </ul>
+          <pre>Method Request-URI HTTP/Major.Minor
+[Header]*
+
+[Entity]?</pre>
+        </slide>
+        <slide id="http-get">
+          <title>HTTP GET</title>
+          <ul>
+            <li>Retrieval action based on the URI</li>
+            <ul>
+              <li>maybe implemented by reading a file</li>
+              <li>maybe implemented by processing a file (PHP)</li>
+              <li>maybe implemented by invoking a process</li>
+            </ul>
+            <li>Semantics may change based on header fields</li>
+            <ul>
+              <li><code>If-*:</code> only reply with the entity if necessary</li>
+              <li><code>Range:</code> only reply with the requested part of the entity</li>
+            </ul>
+            <li>Cacheability depends on header fields of the response</li>
+          </ul>
+          <pre>GET / HTTP/1.1
+Host: ischool.berkeley.edu</pre>
+        </slide>
+        <slide id="http-response">
+          <title>HTTP Responses</title>
+          <ul>
+            <li>The server's response to interpreting a request</li>
+            <ul>
+              <li>the status code is given numerically and as text</li>
+              <li><code>2**</code> for variations of <q>ok</q></li>
+              <li><code>3**</code> for redirections</li>
+              <li><code>4**</code> are different client side problems (<code>404</code>: not found)</li>
+              <li><code>5**</code> are different server side problems</li>
+            </ul>
+            <li>Header fields specify additional information</li>
+            <ul>
+              <li>information about the server</li>
+              <li>information about the entity (media type, encoding, language)</li>
+            </ul>
+          </ul>
+          <pre>HTTP/Major.Minor Status-Code Text
+[Header]*
+
+[Entity]?</pre>
+        </slide>
+        <slide id="http-performance">
+          <title>HTTP Performance</title>
+          <ul>
+            <li>HTTP/1.0 allowed one transaction per connection</li>
+            <ul>
+              <li>TCP connection setup and teardown are expensive</li>
+              <li>TCP's <em>slow start</em> slows down the initial phase of data transfer</li>
+              <li>typical Web pages use between 10-20 resources (HTML + images + CSS + scripts)</li>
+              <li>typically, these resources are stored on the same server</li>
+            </ul>
+            <li>HTTP/1.1 introduces <em>persistent connections</em></li>
+            <ul>
+              <li>the TCP connection stays open for some time (10 sec is a popular choice)</li>
+              <li>additional requests to the same server use the same TCP connection</li>
+            </ul>
+            <li>HTTP/1.1 introduces <em>pipelined connections</em></li>
+            <ul>
+              <li>instead of waiting for a response, requests can be queued</li>
+              <li>the server responds as fast as possible</li>
+              <li>the order may not be changed (there is no sequence number)</li>
+            </ul>
+          </ul>
+        </slide>
+        <slide>
+          <title>HTTP Connection Handling</title>
+          <img style="width : 90% ; margin : 2% ; " src="http-phttp-pipelining.png"/>
+        </slide>
+        <slide>
+          <title>HTTP Access Control</title>
+          <ul>
+            <li>HTTP servers can <a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error">deny access</a> because of access control</li>
+            <ul>
+              <li><code>401 Unauthorized</code> means the resource is access controlled</li>
+              <li><code>403 Forbidden</code> means the resource is inaccessible</li>
+              <li><code>405 Method Not Allowed</code> signals a request using the wrong <link href="http-request">request method</link></li>
+            </ul>
+            <li>Two different approaches to unauthorized access are possible</li>
+            <ul>
+              <li>repeat the HTTP request with the proper authentication credentials</li>
+              <li>redirect to a <link href="login-page"/> for authentication</li>
+            </ul>
+          </ul>
+        </slide>
+        <slide>
+          <title>HTTP Authentication</title>
+          <img style="width : 90% ; margin : 2% ; " src="authentication-http.gif" title="HTTP Authentication" href="http://java.sun.com/j2ee/1.4/docs/tutorial/doc/Security5.html"/>
+        </slide>
+        <slide id="http-basic">
+          <title>Basic HTTP Authentication</title>
+          <ul>
+            <li>Authentication is based on <em>authentication realms</em></li>
+            <ul>
+              <li>a set of resources for which the authentication is required</li>
+              <li>an opaque name which is used to signal which login is required</li>
+              <li>username/password often is specific for a given realm</li>
+            </ul>
+            <li>Users supply username and password through the client</li>
+            <ul>
+              <li>sent as <a href="http://en.wikipedia.org/wiki/Base64">Base64</a> encoded <q><code>username:password</code></q> string</li>
+              <li>username and password are <a href="http://www.google.com/search?hl=en&amp;q=base64+decoder"><em>not</em> transmitted securely</a></li>
+              <li>basic authentication should <em>always</em> use HTTPS</li>
+            </ul>
+            <li>Authorization is handled on the server side</li>
+            <pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">HTTP/1.0 401 Unauthorized
+WWW-Authenticate: Basic realm="SokEvo"</pre>
+            <pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">GET /private/index.html HTTP/1.0
+Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
+          </ul>
+        </slide>
+        <slide>
+          <title>Repeated Access</title>
+          <ul>
+            <li>Clients typically access more than one protected resource</li>
+            <ul>
+              <li>a perfectly stateless client would always request authentication from the user</li>
+              <li>using the <em>realm</em> clients can identify repeated accesses to sets of resources</li>
+            </ul>
+            <li>Web interactions by default are perfectly stateless</li>
+            <ul>
+              <li>each request is completely independent from other requests</li>
+              <li>stateless interactions make the Web loosely coupled and scalable</li>
+              <li>concepts like the <em>realm</em> or cookies introduce <q>state</q></li>
+            </ul>
+            <li>Clients remember the authentication and replay it automatically</li>
+            <ul>
+              <li>browsers provide little control over this feature</li>
+              <li><q>logging out</q> of HTTP authenticated sessions is hard</li>
+            </ul>
+          </ul>
+        </slide>
+        <slide id="login-page">
+          <title>Login Page</title>
+          <ul>
+            <li><link href="http-basic"/> works with browser controls (including the login window)</li>
+            <ul>
+              <li>no possibility to <q>log out</q> without using browser-specific controls</li>
+              <li>client side security depends on browser security measures</li>
+            </ul>
+            <li>Using forms gives more freedom in session management</li>
+            <ul>
+              <li>authentication and authorization are completely application-based</li>
+            </ul>
+          </ul>
+        </slide>
+    </part>
 		<slide>
 			<title>Conclusions</title>
 			<ul>
-				<li>The Internet is a network of networks</li>
+				<li>The internet is a network of networks</li>
 				<ul>
-					<li><a href="http://en.wikipedia.org/wiki/Ted_Stevens">Ted Stevens</a>: <q><a href="http://www.youtube.com/watch?v=f99PcP0aFNE" title="Ted Stevens on the Internet">It's not a big truck, it's a series of tubes!</a></q></li>
+					<li><a href="http://en.wikipedia.org/wiki/Ted_Stevens">Ted Stevens</a>: <q><a href="http://www.youtube.com/watch?v=f99PcP0aFNE" title="Ted Stevens on the internet">It's not a big truck, it's a series of tubes!</a></q></li>
 				</ul>
-				<li>The Internet provides basic data transfer services</li>
+				<li>The internet provides basic data transfer services</li>
 				<li>IP is used to send <em>datagrams</em> between end-points</li>
 				<li>TCP is used for reliable communications (building on IP)</li>
 				<li>DNS provides human-readable names for Internet hosts</li>
+				<li>URI and HTTP establish the web layer on top of the internet</li>
 			</ul>
 		</slide>
 	</presentation>
@@ -975,7 +1267,7 @@
 		<title short="REST">REST and Economics of the IoT (Standardization)</title>
 		<date>2015-02-13</date>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a></author>
-		<toc class="reading"><a href="http://www.ptc.com/File%20Library/Topics/Harvard%20Business%20Review/HBR_How-Smart-Connected-Products-Are-Transforming-Competition.pdf" title='Michael E. Porter and James E. Heppelmann, "How Smart, Connected Products Are Transforming Competition", Harvard Business Review, November 2014'>Transforming Competition</a></toc>
+		<toc class="reading"><a href="http://www.looah.com/source/view/2284">How I Explained REST to My <del>Wife</del>Parent</a>&#160;· <a href="http://www.ptc.com/File%20Library/Topics/Harvard%20Business%20Review/HBR_How-Smart-Connected-Products-Are-Transforming-Competition.pdf" title='Michael E. Porter and James E. Heppelmann, "How Smart, Connected Products Are Transforming Competition", Harvard Business Review, November 2014'>Transforming Competition</a></toc>
 		<toc class="resources"><a href="http://www.iso.org/" title="International Organization for Standardization">ISO</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://www.ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.oasis-open.org/" title="Organization for the Advancement of Structured Information Standards">OASIS</a>&#160;· <a href="http://www.ieee.org/" title="Institute of Electrical and Electronics Engineers">IEEE</a>&#160;· <a href="http://www.iec.ch/" title="International Electrotechnical Commission">IEC</a></toc>
 		<toc class="assignment"><a href="a/3/">A3</a>&#160;(2015-02-15)</toc>
 		<slide>
