@@ -110,7 +110,7 @@
 			<h4>Deliverables</h4>
 			<p>You should create a zip file containing the Python code. You must make sure that the Python code runs with version 2.7 of the interpreter - remember that your submitted code must work on our machines as well, so use relative paths if you add external libraries to your project, and include these libraries with your zip file. Please use UTF-8 encoding for your documents and avoid special characters. Submit your zip file to <a href="mailto:alexander.jones@ischool.berkeley.edu">Alexander Jones</a> (subject line: "<q>IoT Assignment 2 (your-calnet-login)</q>) by Thursday, February 12, 2015, at 8pm PST.</p>
 			<h4>Instructions</h4>
-			<h5>Section 1: Working with oauth2 & the Yelp API (3 points)</h5>
+			<h5>Section 1: Working with oauth2 &amp; the Yelp API (3 points)</h5>
 			<p>For Section 1 you will be learning how to authenticate developer credentials, create structured API search queries, and parse through response data using the Yelp API.</p>
 			<h6>1.1 Setting up Yelp API access</h6>
 			<p>In order to work with the Yelp API, as is common with many APIs, you will need to get <a href="https://www.yelp.com/signup?return_url=%2Fdevelopers%2Fmanage_api_keys">a developer key</a>. You can use a throw-away email account if you do not feel like using your actual email to register. Once registered, visit the <a href="http://www.yelp.com/developers/manage_api_keys"><q>Manage API Access</q> page</a> to retrieve your credentials for the v2.0 API.</p>
@@ -123,11 +123,11 @@
 location="Berkeley"</pre>
 			<p>You should receive a JSON response, and your code should print this response.</p>
 			<p><b>HINT:</b> Create a variable that is a structured query URL, then use this URL with the oauth2.Request function.</p>
-			<h6>1.3	Getting & parsing data from the Yelp API using structured queries</h6>
+			<h6>1.3	Getting &amp; parsing data from the Yelp API using structured queries</h6>
 			<p>Now that you have made a basic API call, you are going to make a new call with additional query parameters in order to narrow the results. You will then extract certain information from the response data. Refer to the <a href="http://www.yelp.com/developers/documentation/v2/search_api">Yelp Search API documentation</a> to learn how to manipulate query parameters.</p>
 			<p>First, create a new structured query URL, identical to the one from Section 1.2, except without the <q>location</q> parameter. Next, add the appropriate query parameters to accomplish the following:</p>
 			<ul>
-				<li>Set the search center point to the latitude & longitude for Berkeley: Latitude=37.8759471; Longitude=-122.280622</li>
+				<li>Set the search center point to the latitude &amp; longitude for Berkeley: Latitude=37.8759471; Longitude=-122.280622</li>
 				<li>Limit your search results to a 1-kilometer radius around Berkeley's lat/lon</li>
 				<li>Limit your search results to the top-10 restaurants</li>
 				<li>Sort your search by restaurant rating</li>
@@ -142,7 +142,7 @@ location="Berkeley"</pre>
 			</ul>
 			<p>Your code should print the above information for each restaurant.</p>
 			<p><b>HINT:</b> You can traverse JSON objects similar to how you would traverse a dictionary.</p>
-			<h5>Section 2: Working with the BART API & connecting Web services (2 points)</h5>
+			<h5>Section 2: Working with the BART API &amp; connecting Web services (2 points)</h5>
 			<h6>2.1 Getting &amp; parsing data from the BART API</h6>
 			<p>Now that you have a working script for accessing the Yelp API, you are going to create a separate script that calls the BART API.</p>
 			<p>In a new Python file, create a function that calls the <a href="http://api.bart.gov/docs/overview/index.aspx">BART API</a> using the Requests library to find all the stations. Parse through the response XML using the built-in <a href="https://docs.python.org/3/library/xml.etree.elementtree.html">xml.etree.ElementTree module</a>, and then return the city name (Berkeley), station name, and lat/long information for each of the Berkeley BART stations.</p>
