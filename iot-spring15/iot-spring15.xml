@@ -972,282 +972,6 @@
 				</ul>
 			</slide>
 		</part>
-    <part id="uri">
-      <title short="URI">Uniform Resource Identifier (URI)</title>
-      <slide>
-        <title>Resource Identification</title>
-        <ul>
-          <li>Early hypertext systems usually only identified documents within the scope of a single system (e.g. HyperCard)</li>
-          <li>The web uses URIs (Uniform Resource Identifiers) as global identifiers</li>
-          <ul>
-            <li>http://ischool.berkeley.edu/</li>
-            <li>mailto:alexander.jones@ischool.berkeley.edu</li>
-            <li>tel:+1-510-684-2179</li>
-            <li>urn:isbn:0451450523</li>
-          </ul>
-        </ul>
-        <blockquote cite="http://www.w3.org/TR/2004/REC-webarch-20041215/#identification">Global naming leads to global network effects... the value of an identifier increases the more it is used consistently</blockquote>
-        <p class="quotenote"><a href="http://www.w3.org/TR/webarch/">Architecture of the World Wide Web, Volume One</a></p> 
-      </slide>
-      <slide>
-        <title>URIs &amp; Resources</title>
-        <ul>
-          <li>A URI identifies a "resource."</li>
-          <li>But what is a resource?</li>
-          <li>A resource is anything identified by a URI</li>
-          <li>Resources are a way of conceptually dividing up some information space</li>
-        <li>URIs do not merely identify; they can be used to access or interact with a resource</li>
-        <li>The details of how to do this are determined by the URI's scheme, e.g. the <q><code>http:</code></q> part</li>
-        <li>The usual method of interacting with a resource is by <em>dereferencing</em> the URI</li>
-        </ul>
-      </slide>
-      <slide id="uri-schemes">
-        <title>URI Schemes</title>
-        <pre>URI = scheme ":" hier-part [ "?" query ] [ "#" fragment ]</pre>
-        <pre>http://dret.net/lectures/iot-spring15/layering#uri-schemes</pre>
-        <ul>
-          <li>URIs in their general case are very simple</li>
-          <ul>
-            <li>the scheme identifies how resources are identified</li>
-            <li>the identification may be hierarchical or non-hierarchical</li>
-          </ul>
-          <li>Many URI schemes are hierarchical</li>
-          <ul>
-            <li>it is then possible to use relative URIs such as in <htmel>a href="../"</htmel></li>
-            <li>the slash character is not just a character, in URIs it has semantics</li>
-          </ul>
-          <li>Query components specify additional information</li>
-          <ul>
-            <li>it is non-hierarchical information further identifying the resource</li>
-            <li>in most cases, it can be regarded as <q>input</q> to the resource</li>
-          </ul>
-        </ul>
-      </slide>
-      <slide id="representation-resource">
-        <title>Resources &amp; Representations</title>
-        <ul>
-          <li>When a URI is dereferenced by a web browser, it receives some data</li>
-          <li>That data is called a <em>representation</em> of the resource identified by the URI</li>
-          <li>Resources are abstract, representations are concrete</li>
-          <li>Resources may have various representations, and they may vary with time</li>
-        </ul>
-      </slide>
-    </part>
-    <part id="http">
-      <title short="HTTP">Hypertext Transfer Protocol (HTTP)</title>
-      <slide>
-        <title>DNS &amp; HTTP</title>
-        <p>The two basic protocols which every Web browser must implement are <link href="dns">DNS</link> access and <link href="http">HTTP</link>. However, most operating systems provide an API for DNS access, so the browser can use this service locally and only has to implement HTTP. <link href="tcp">TCP</link> (which is required as the foundation for HTTP) is usually provided by the operating system.</p>
-        <img style="width : 90% ; margin : 2% ; " src="browser-dns-http.png"/>
-      </slide>
-        <slide>
-          <title>HTTP Messages</title>
-          <ul>
-            <li>HTTP needs a reliable connection</li>
-            <ul>
-              <li>the foundation for HTTP is the <link href="tcp"/></li>
-              <li>DNS resolution yields an IP address</li>
-              <li>open TCP connection to port 80 or port specified in URI (<code>http://rosetta.sims.berkeley.edu:8085/</code>)</li>
-            </ul>
-            <li>HTTP is a <em>text-based</em> protocol</li>
-            <ul>
-              <li>the connection is used to transmit <em>text messages</em></li>
-              <li>all HTTP messages are human-readable (not all <em>entities</em>, though)</li>
-              <li>basic HTTP operations can be carried out by hand</li>
-            </ul>
-          </ul>
-          <pre>start-line
-message-header *
-
-message-body ?</pre>
-        </slide>
-        <slide id="http-headers">
-          <title>HTTP Header Fields</title>
-          <ul>
-            <li>Header fields contain information about the message</li>
-            <ul>
-              <li><em>general header:</em> <code>Date</code> as the message origination date</li>
-              <li><em>request header:</em> <code>Accept-Language</code> indicates language preferences</li>
-              <li><em>response header:</em> <code>Server</code> contains system information</li>
-              <li><em>entity header:</em> <code>Content-Type</code> specifies the media type of the entity</li>
-            </ul>
-          	<li>HTTP (and others) define <a href="https://github.com/dret/sedola/blob/master/MD/headers.md">a number of header fields</a></li>
-            <ul>
-              <li>unknown fields must be ignored (extensibility)</li>
-            </ul>
-            <li>HTTP is about acting on these fields</li>
-            <ul>
-              <li>HTTP defines what HTTP implementations must or should do</li>
-            </ul>
-          </ul>
-        </slide>
-        <slide id="http-request">
-          <title>HTTP Requests</title>
-          <ul>
-            <li>After opening a connection, the client sends a request</li>
-            <ul>
-              <li>the method indicates the action to be performed on the resource</li>
-              <li>HTTP's most interesting methods are: <code>GET</code>, <code>POST</code>, <code>PUT</code>, and <code>DELETE</code></li>
-            </ul>
-            <li>The URI identifies the resource to which the request should be applied</li>
-            <ul>
-              <li>absolute URIs are required when contacting <em>proxies</em></li>
-              <li>absolute paths are required when contacting a server directly</li>
-              <li>the URI may contain <em>query information</em></li>
-            </ul>
-            <li>The <code>Host</code> header field must be included in every HTTP/1.1 request</li>
-          </ul>
-          <pre>Method Request-URI HTTP/Major.Minor
-[Header]*
-
-[Entity]?</pre>
-        </slide>
-        <slide id="http-get">
-          <title>HTTP GET</title>
-          <ul>
-            <li>Retrieval action based on the URI</li>
-            <ul>
-              <li>maybe implemented by reading a file</li>
-              <li>maybe implemented by processing a file (PHP)</li>
-              <li>maybe implemented by invoking a process</li>
-            </ul>
-            <li>Semantics may change based on header fields</li>
-            <ul>
-              <li><code>If-*:</code> only reply with the entity if necessary</li>
-              <li><code>Range:</code> only reply with the requested part of the entity</li>
-            </ul>
-            <li>Cacheability depends on header fields of the response</li>
-          </ul>
-          <pre>GET / HTTP/1.1
-Host: ischool.berkeley.edu</pre>
-        </slide>
-        <slide id="http-response">
-          <title>HTTP Responses</title>
-          <ul>
-            <li>The server's response to interpreting a request</li>
-            <ul>
-              <li>the status code is given numerically and as text</li>
-              <li><code>2**</code> for variations of <q>ok</q></li>
-              <li><code>3**</code> for redirections</li>
-              <li><code>4**</code> are different client side problems (<code>404</code>: not found)</li>
-              <li><code>5**</code> are different server side problems</li>
-            </ul>
-            <li>Header fields specify additional information</li>
-            <ul>
-              <li>information about the server</li>
-              <li>information about the entity (media type, encoding, language)</li>
-            </ul>
-          </ul>
-          <pre>HTTP/Major.Minor Status-Code Text
-[Header]*
-
-[Entity]?</pre>
-        </slide>
-        <slide id="http-performance">
-          <title>HTTP Performance</title>
-          <ul>
-            <li>HTTP/1.0 allowed one transaction per connection</li>
-            <ul>
-              <li>TCP connection setup and teardown are expensive</li>
-              <li>TCP's <em>slow start</em> slows down the initial phase of data transfer</li>
-              <li>typical Web pages use between 10-20 resources (HTML + images + CSS + scripts)</li>
-              <li>typically, these resources are stored on the same server</li>
-            </ul>
-            <li>HTTP/1.1 introduces <em>persistent connections</em></li>
-            <ul>
-              <li>the TCP connection stays open for some time (10 sec is a popular choice)</li>
-              <li>additional requests to the same server use the same TCP connection</li>
-            </ul>
-            <li>HTTP/1.1 introduces <em>pipelined connections</em></li>
-            <ul>
-              <li>instead of waiting for a response, requests can be queued</li>
-              <li>the server responds as fast as possible</li>
-              <li>the order may not be changed (there is no sequence number)</li>
-            </ul>
-          </ul>
-        </slide>
-        <slide>
-          <title>HTTP Connection Handling</title>
-          <img style="width : 90% ; margin : 2% ; " src="http-phttp-pipelining.png"/>
-        </slide>
-        <slide>
-          <title>HTTP Access Control</title>
-          <ul>
-            <li>HTTP servers can <a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error">deny access</a> because of access control</li>
-            <ul>
-              <li><code>401 Unauthorized</code> means the resource is access controlled</li>
-              <li><code>403 Forbidden</code> means the resource is inaccessible</li>
-              <li><code>405 Method Not Allowed</code> signals a request using the wrong <link href="http-request">request method</link></li>
-            </ul>
-            <li>Two different approaches to unauthorized access are possible</li>
-            <ul>
-              <li>repeat the HTTP request with the proper authentication credentials</li>
-              <li>redirect to a <link href="login-page"/> for authentication</li>
-            </ul>
-          </ul>
-        </slide>
-        <slide>
-          <title>HTTP Authentication</title>
-          <img style="width : 90% ; margin : 2% ; " src="authentication-http.gif" title="HTTP Authentication" href="http://java.sun.com/j2ee/1.4/docs/tutorial/doc/Security5.html"/>
-        </slide>
-        <slide id="http-basic">
-          <title>Basic HTTP Authentication</title>
-          <ul>
-            <li>Authentication is based on <em>authentication realms</em></li>
-            <ul>
-              <li>a set of resources for which the authentication is required</li>
-              <li>an opaque name which is used to signal which login is required</li>
-              <li>username/password often is specific for a given realm</li>
-            </ul>
-            <li>Users supply username and password through the client</li>
-            <ul>
-              <li>sent as <a href="http://en.wikipedia.org/wiki/Base64">Base64</a> encoded <q><code>username:password</code></q> string</li>
-              <li>username and password are <a href="http://www.google.com/search?hl=en&amp;q=base64+decoder"><em>not</em> transmitted securely</a></li>
-              <li>basic authentication should <em>always</em> use HTTPS</li>
-            </ul>
-            <li>Authorization is handled on the server side</li>
-            <pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">HTTP/1.0 401 Unauthorized
-WWW-Authenticate: Basic realm="SokEvo"</pre>
-            <pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">GET /private/index.html HTTP/1.0
-Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
-          </ul>
-        </slide>
-        <slide>
-          <title>Repeated Access</title>
-          <ul>
-            <li>Clients typically access more than one protected resource</li>
-            <ul>
-              <li>a perfectly stateless client would always request authentication from the user</li>
-              <li>using the <em>realm</em> clients can identify repeated accesses to sets of resources</li>
-            </ul>
-            <li>Web interactions by default are perfectly stateless</li>
-            <ul>
-              <li>each request is completely independent from other requests</li>
-              <li>stateless interactions make the Web loosely coupled and scalable</li>
-              <li>concepts like the <em>realm</em> or cookies introduce <q>state</q></li>
-            </ul>
-            <li>Clients remember the authentication and replay it automatically</li>
-            <ul>
-              <li>browsers provide little control over this feature</li>
-              <li><q>logging out</q> of HTTP authenticated sessions is hard</li>
-            </ul>
-          </ul>
-        </slide>
-        <slide id="login-page">
-          <title>Login Page</title>
-          <ul>
-            <li><link href="http-basic"/> works with browser controls (including the login window)</li>
-            <ul>
-              <li>no possibility to <q>log out</q> without using browser-specific controls</li>
-              <li>client side security depends on browser security measures</li>
-            </ul>
-            <li>Using forms gives more freedom in session management</li>
-            <ul>
-              <li>authentication and authorization are completely application-based</li>
-            </ul>
-          </ul>
-        </slide>
-    </part>
 		<slide>
 			<title>Conclusions</title>
 			<ul>
@@ -1297,6 +1021,282 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide id="iec">
 				<title short="IEC">International Electrotechnical Commission (IEC)</title>
+			</slide>
+		</part>
+		<part id="uri">
+			<title short="URI">Uniform Resource Identifier (URI)</title>
+			<slide>
+				<title>Resource Identification</title>
+				<ul>
+					<li>Early hypertext systems usually only identified documents within the scope of a single system (e.g. HyperCard)</li>
+					<li>The web uses URIs (Uniform Resource Identifiers) as global identifiers</li>
+					<ul>
+						<li>http://ischool.berkeley.edu/</li>
+						<li>mailto:alexander.jones@ischool.berkeley.edu</li>
+						<li>tel:+1-510-684-2179</li>
+						<li>urn:isbn:0451450523</li>
+					</ul>
+				</ul>
+				<blockquote cite="http://www.w3.org/TR/2004/REC-webarch-20041215/#identification">Global naming leads to global network effects... the value of an identifier increases the more it is used consistently</blockquote>
+				<p class="quotenote"><a href="http://www.w3.org/TR/webarch/">Architecture of the World Wide Web, Volume One</a></p> 
+			</slide>
+			<slide>
+				<title>URIs &amp; Resources</title>
+				<ul>
+					<li>A URI identifies a "resource."</li>
+					<li>But what is a resource?</li>
+					<li>A resource is anything identified by a URI</li>
+					<li>Resources are a way of conceptually dividing up some information space</li>
+					<li>URIs do not merely identify; they can be used to access or interact with a resource</li>
+					<li>The details of how to do this are determined by the URI's scheme, e.g. the <q><code>http:</code></q> part</li>
+					<li>The usual method of interacting with a resource is by <em>dereferencing</em> the URI</li>
+				</ul>
+			</slide>
+			<slide id="uri-schemes">
+				<title>URI Schemes</title>
+				<pre>URI = scheme ":" hier-part [ "?" query ] [ "#" fragment ]</pre>
+				<pre>http://dret.net/lectures/iot-spring15/layering#uri-schemes</pre>
+				<ul>
+					<li>URIs in their general case are very simple</li>
+					<ul>
+						<li>the scheme identifies how resources are identified</li>
+						<li>the identification may be hierarchical or non-hierarchical</li>
+					</ul>
+					<li>Many URI schemes are hierarchical</li>
+					<ul>
+						<li>it is then possible to use relative URIs such as in <htmel>a href="../"</htmel></li>
+						<li>the slash character is not just a character, in URIs it has semantics</li>
+					</ul>
+					<li>Query components specify additional information</li>
+					<ul>
+						<li>it is non-hierarchical information further identifying the resource</li>
+						<li>in most cases, it can be regarded as <q>input</q> to the resource</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="representation-resource">
+				<title>Resources &amp; Representations</title>
+				<ul>
+					<li>When a URI is dereferenced by a web browser, it receives some data</li>
+					<li>That data is called a <em>representation</em> of the resource identified by the URI</li>
+					<li>Resources are abstract, representations are concrete</li>
+					<li>Resources may have various representations, and they may vary with time</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="http">
+			<title short="HTTP">Hypertext Transfer Protocol (HTTP)</title>
+			<slide>
+				<title>DNS &amp; HTTP</title>
+				<p>The two basic protocols which every Web browser must implement are <link href="dns">DNS</link> access and <link href="http">HTTP</link>. However, most operating systems provide an API for DNS access, so the browser can use this service locally and only has to implement HTTP. <link href="tcp">TCP</link> (which is required as the foundation for HTTP) is usually provided by the operating system.</p>
+				<img style="width : 90% ; margin : 2% ; " src="browser-dns-http.png"/>
+			</slide>
+			<slide>
+				<title>HTTP Messages</title>
+				<ul>
+					<li>HTTP needs a reliable connection</li>
+					<ul>
+						<li>the foundation for HTTP is the <link href="tcp"/></li>
+						<li>DNS resolution yields an IP address</li>
+						<li>open TCP connection to port 80 or port specified in URI (<code>http://rosetta.sims.berkeley.edu:8085/</code>)</li>
+					</ul>
+					<li>HTTP is a <em>text-based</em> protocol</li>
+					<ul>
+						<li>the connection is used to transmit <em>text messages</em></li>
+						<li>all HTTP messages are human-readable (not all <em>entities</em>, though)</li>
+						<li>basic HTTP operations can be carried out by hand</li>
+					</ul>
+				</ul>
+				<pre>start-line
+message-header *
+
+message-body ?</pre>
+			</slide>
+			<slide id="http-headers">
+				<title>HTTP Header Fields</title>
+				<ul>
+					<li>Header fields contain information about the message</li>
+					<ul>
+						<li><em>general header:</em> <code>Date</code> as the message origination date</li>
+						<li><em>request header:</em> <code>Accept-Language</code> indicates language preferences</li>
+						<li><em>response header:</em> <code>Server</code> contains system information</li>
+						<li><em>entity header:</em> <code>Content-Type</code> specifies the media type of the entity</li>
+					</ul>
+					<li>HTTP (and others) define <a href="https://github.com/dret/sedola/blob/master/MD/headers.md">a number of header fields</a></li>
+					<ul>
+						<li>unknown fields must be ignored (extensibility)</li>
+					</ul>
+					<li>HTTP is about acting on these fields</li>
+					<ul>
+						<li>HTTP defines what HTTP implementations must or should do</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="http-request">
+				<title>HTTP Requests</title>
+				<ul>
+					<li>After opening a connection, the client sends a request</li>
+					<ul>
+						<li>the method indicates the action to be performed on the resource</li>
+						<li>HTTP's most interesting methods are: <code>GET</code>, <code>POST</code>, <code>PUT</code>, and <code>DELETE</code></li>
+					</ul>
+					<li>The URI identifies the resource to which the request should be applied</li>
+					<ul>
+						<li>absolute URIs are required when contacting <em>proxies</em></li>
+						<li>absolute paths are required when contacting a server directly</li>
+						<li>the URI may contain <em>query information</em></li>
+					</ul>
+					<li>The <code>Host</code> header field must be included in every HTTP/1.1 request</li>
+				</ul>
+				<pre>Method Request-URI HTTP/Major.Minor
+[Header]*
+
+[Entity]?</pre>
+			</slide>
+			<slide id="http-get">
+				<title>HTTP GET</title>
+				<ul>
+					<li>Retrieval action based on the URI</li>
+					<ul>
+						<li>maybe implemented by reading a file</li>
+						<li>maybe implemented by processing a file (PHP)</li>
+						<li>maybe implemented by invoking a process</li>
+					</ul>
+					<li>Semantics may change based on header fields</li>
+					<ul>
+						<li><code>If-*:</code> only reply with the entity if necessary</li>
+						<li><code>Range:</code> only reply with the requested part of the entity</li>
+					</ul>
+					<li>Cacheability depends on header fields of the response</li>
+				</ul>
+				<pre>GET / HTTP/1.1
+Host: ischool.berkeley.edu</pre>
+			</slide>
+			<slide id="http-response">
+				<title>HTTP Responses</title>
+				<ul>
+					<li>The server's response to interpreting a request</li>
+					<ul>
+						<li>the status code is given numerically and as text</li>
+						<li><code>2**</code> for variations of <q>ok</q></li>
+						<li><code>3**</code> for redirections</li>
+						<li><code>4**</code> are different client side problems (<code>404</code>: not found)</li>
+						<li><code>5**</code> are different server side problems</li>
+					</ul>
+					<li>Header fields specify additional information</li>
+					<ul>
+						<li>information about the server</li>
+						<li>information about the entity (media type, encoding, language)</li>
+					</ul>
+				</ul>
+				<pre>HTTP/Major.Minor Status-Code Text
+[Header]*
+
+[Entity]?</pre>
+			</slide>
+			<slide id="http-performance">
+				<title>HTTP Performance</title>
+				<ul>
+					<li>HTTP/1.0 allowed one transaction per connection</li>
+					<ul>
+						<li>TCP connection setup and teardown are expensive</li>
+						<li>TCP's <em>slow start</em> slows down the initial phase of data transfer</li>
+						<li>typical Web pages use between 10-20 resources (HTML + images + CSS + scripts)</li>
+						<li>typically, these resources are stored on the same server</li>
+					</ul>
+					<li>HTTP/1.1 introduces <em>persistent connections</em></li>
+					<ul>
+						<li>the TCP connection stays open for some time (10 sec is a popular choice)</li>
+						<li>additional requests to the same server use the same TCP connection</li>
+					</ul>
+					<li>HTTP/1.1 introduces <em>pipelined connections</em></li>
+					<ul>
+						<li>instead of waiting for a response, requests can be queued</li>
+						<li>the server responds as fast as possible</li>
+						<li>the order may not be changed (there is no sequence number)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>HTTP Connection Handling</title>
+				<img style="width : 90% ; margin : 2% ; " src="http-phttp-pipelining.png"/>
+			</slide>
+			<slide>
+				<title>HTTP Access Control</title>
+				<ul>
+					<li>HTTP servers can <a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error">deny access</a> because of access control</li>
+					<ul>
+						<li><code>401 Unauthorized</code> means the resource is access controlled</li>
+						<li><code>403 Forbidden</code> means the resource is inaccessible</li>
+						<li><code>405 Method Not Allowed</code> signals a request using the wrong <link href="http-request">request method</link></li>
+					</ul>
+					<li>Two different approaches to unauthorized access are possible</li>
+					<ul>
+						<li>repeat the HTTP request with the proper authentication credentials</li>
+						<li>redirect to a <link href="login-page"/> for authentication</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>HTTP Authentication</title>
+				<img style="width : 90% ; margin : 2% ; " src="authentication-http.gif" title="HTTP Authentication" href="http://java.sun.com/j2ee/1.4/docs/tutorial/doc/Security5.html"/>
+			</slide>
+			<slide id="http-basic">
+				<title>Basic HTTP Authentication</title>
+				<ul>
+					<li>Authentication is based on <em>authentication realms</em></li>
+					<ul>
+						<li>a set of resources for which the authentication is required</li>
+						<li>an opaque name which is used to signal which login is required</li>
+						<li>username/password often is specific for a given realm</li>
+					</ul>
+					<li>Users supply username and password through the client</li>
+					<ul>
+						<li>sent as <a href="http://en.wikipedia.org/wiki/Base64">Base64</a> encoded <q><code>username:password</code></q> string</li>
+						<li>username and password are <a href="http://www.google.com/search?hl=en&amp;q=base64+decoder"><em>not</em> transmitted securely</a></li>
+						<li>basic authentication should <em>always</em> use HTTPS</li>
+					</ul>
+					<li>Authorization is handled on the server side</li>
+					<pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">HTTP/1.0 401 Unauthorized
+WWW-Authenticate: Basic realm="SokEvo"</pre>
+					<pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">GET /private/index.html HTTP/1.0
+Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
+				</ul>
+			</slide>
+			<slide>
+				<title>Repeated Access</title>
+				<ul>
+					<li>Clients typically access more than one protected resource</li>
+					<ul>
+						<li>a perfectly stateless client would always request authentication from the user</li>
+						<li>using the <em>realm</em> clients can identify repeated accesses to sets of resources</li>
+					</ul>
+					<li>Web interactions by default are perfectly stateless</li>
+					<ul>
+						<li>each request is completely independent from other requests</li>
+						<li>stateless interactions make the Web loosely coupled and scalable</li>
+						<li>concepts like the <em>realm</em> or cookies introduce <q>state</q></li>
+					</ul>
+					<li>Clients remember the authentication and replay it automatically</li>
+					<ul>
+						<li>browsers provide little control over this feature</li>
+						<li><q>logging out</q> of HTTP authenticated sessions is hard</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="login-page">
+				<title>Login Page</title>
+				<ul>
+					<li><link href="http-basic"/> works with browser controls (including the login window)</li>
+					<ul>
+						<li>no possibility to <q>log out</q> without using browser-specific controls</li>
+						<li>client side security depends on browser security measures</li>
+					</ul>
+					<li>Using forms gives more freedom in session management</li>
+					<ul>
+						<li>authentication and authorization are completely application-based</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 	</presentation>
