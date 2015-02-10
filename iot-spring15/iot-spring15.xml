@@ -988,9 +988,10 @@
 		</slide>
 	</presentation>
 	<presentation id="rest">
-		<title short="REST">REST, Standardization, and the IoT Economics</title>
+		<title short="REST">REST, Standardization, and IoT Economics</title>
 		<date>2015-02-13</date>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a></author>
+		<toc class="abstract">With the Internet as the <q>connective fabric</q> that provides unprecedented numbers of data sources and information services, and unprecedented degrees of freedom when it comes to using them, the question is how to make use of these opportunities in scalable and robust ways. One technical answer to that is by using <em>architectural styles</em> that are known to handle these scenarios well. The Web's architectural style, <em>Representational State Transfer (REST)</em>, is one promising candidate for this. Another important aspect is the question of <em>standardization</em>, which has been around for centuries, but is facing new challenges when it comes to the scale and the rate of change in today's scenarios.</toc>
 		<toc class="reading"><a href="http://www.looah.com/source/view/2284">How I Explained REST to My <del>Wife</del>Parent</a>&#160;· <a href="http://www.ptc.com/File%20Library/Topics/Harvard%20Business%20Review/HBR_How-Smart-Connected-Products-Are-Transforming-Competition.pdf" title='Michael E. Porter and James E. Heppelmann, "How Smart, Connected Products Are Transforming Competition", Harvard Business Review, November 2014'>Transforming Competition</a></toc>
 		<toc class="resources"><a href="http://www.iso.org/" title="International Organization for Standardization">ISO</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://www.ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.oasis-open.org/" title="Organization for the Advancement of Structured Information Standards">OASIS</a>&#160;· <a href="http://www.ieee.org/" title="Institute of Electrical and Electronics Engineers">IEEE</a>&#160;· <a href="http://www.iec.ch/" title="International Electrotechnical Commission">IEC</a>&#160;· <a href="http://www.itu.int/" title="International Telecommunication Union">ITU</a></toc>
 		<toc class="assignment"><a href="https://bcourses.berkeley.edu/courses/1293124/assignments/6063666">A3</a>&#160;(2015-02-15)</toc>
@@ -998,6 +999,127 @@
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="rest-definition">
+			<title short="REST">Representational State Transfer (REST)</title>
+			<slide>
+				<title>The REST Architectural Style</title>
+				<ul>
+					<li>A set of constraints that inform an architecture</li>
+				</ul>
+				<ol>
+					<li><link href="identification-constraint"/></li>
+					<li><link href="interface-constraint"/></li>
+					<li><link href="self-describing-constraint"/></li>
+					<li><link href="hypermedia-constraint"/></li>
+					<li><link href="stateless-constraint"/></li>
+				</ol>
+				<ul>
+					<li>Claims: scalability, mashup-ability, usability, accessibility</li>
+				</ul>
+			</slide>
+			<slide id="identification-constraint">
+				<title>Resource Identification</title>
+				<ul>
+					<li>Name everything that you want to talk about</li>
+					<li><q>Thing</q> in this case should refer to <em>anything</em></li>
+					<ul>
+						<li><em>products</em> in an online shop</li>
+						<li><em>categories</em> that are used for grouping products</li>
+						<li><em>customers</em> that are expected to buy products</li>
+						<li><em>shopping carts</em> where customers collect products</li>
+					</ul>
+					<li><em>Application state</em> also is represented as a resource</li>
+					<ul>
+						<li><em>next</em> links on multi-page submission processes</li>
+						<li><em>paged results</em> with URIs identifying following pages</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="interface-constraint">
+				<title>Uniform Interface</title>
+				<ul>
+					<li>The same small set of operations applies to <link href="identification-constraint">everything</link></li>
+					<li>A small set of <em>verbs</em> applied to a large set of <em>nouns</em></li>
+					<li>verbs are universal and not invented on a per-application base</li>
+					<li>if many applications need new verbs, the uniform interface can be extended</li>
+					<li>natural language works in the same way (new verbs rarely enter language)</li>
+					<li>Identify operations that are candidates for optimization</li>
+					<ul>
+						<li><http>GET</http> and <http>HEAD</http> are <em>safe operations</em></li>
+						<li><http>PUT</http> and <http>DELETE</http> are <em>idempotent operations</em></li>
+						<li><http>POST</http> is the catch-all and can have side-effects</li>
+					</ul>
+					<li>Build functionality based on useful properties of these operations</li>
+				</ul>
+			</slide>
+			<slide id="self-describing-constraint">
+				<title>Self-Describing Messages</title>
+				<ul>
+					<li>Resources are abstract entities (they cannot be used <em>per se</em>)</li>
+					<ul>
+						<li><link href="identification-constraint"/> guarantees that they are clearly identified</li>
+						<li>they are accessed through a <link href="interface-constraint"/></li>
+					</ul>
+					<li>Resources are accessed using <em>resource representations</em></li>
+					<ul>
+						<li>resource representations are sufficient to represent a resource</li>
+						<li>it is communicated which kind of representation is used</li>
+						<li>representation formats can be negotiated between peers</li>
+					</ul>
+					<li>Resource representations can be based on different constraints</li>
+					<ul>
+						<li>XML and JSON can represent the same model for different users</li>
+						<li>whatever the representation is, it must <link href="hypermedia-constraint"> support links</link></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="hypermedia-constraint">
+				<title>Hypermedia Driving Application State</title>
+				<ul>
+					<li><link href="self-describing-constraint">Resource representations</link> contain links to <link href="identification-constraint">identified resources</link></li>
+					<li>Resources and state can be used by navigating links</li>
+					<ul>
+						<li>links make interconnected resources navigable</li>
+						<li>without navigation, identifying new resources is service-specific</li>
+					</ul>
+					<li>RESTful applications <em>navigate</em> instead of <em>calling</em></li>
+					<ul>
+						<li><link href="self-describing-constraint">representations</link> contain information about possible traversals</li>
+						<li>the application navigates to the next resource depending on link semantics</li>
+						<li>navigation can be delegated since all links use <link href="identification-constraint">identifiers</link></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="stateless-constraint">
+				<title>Stateless Interactions</title>
+				<ul>
+					<li>This constraint does not say <q>Stateless Applications</q>!</li>
+					<ul>
+						<li>for many RESTful applications, state is an essential part</li>
+						<li>the idea of REST is to avoid long-lasting transactions <em>in applications</em></li>
+					</ul>
+					<li>Stateless interactions mean to move state to clients or resources</li>
+					<ul>
+						<li>the most important consequence: avoid state in server-side applications</li>
+					</ul>
+					<li><em>Resource state</em> is managed on the server</li>
+					<ul>
+						<li>it is the same for every client working with the service</li>
+						<li>when a client changes resource state other clients see this change as well</li>
+					</ul>
+					<li><em>Client state</em> is managed on the client</li>
+					<ul>
+						<li>it is specific for a client and thus has to be maintained by each client</li>
+						<li>it may affect <em>access</em> to server resources, but not the resources themselves</li>
+					</ul>
+					<li><em>Security issues</em> usually are important with client state</li>
+					<ul>
+						<li>clients can (try to) cheat by lying about their state</li>
+						<li>keeping client state on the server is expensive (but may be worth the price)</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="uri">
 			<title short="URI">Uniform Resource Identifier (URI)</title>
 			<slide>
