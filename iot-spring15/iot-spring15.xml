@@ -809,9 +809,9 @@
 				<title>(Some) Popular Internet Application Protocols</title>
 				<ul>
 					<li>Domain/Host Name Resolution: DNS</li>
-					<li>The Web: HTTP</li>
+					<li>The Web: <link href="HTTP"/></li>
 					<li>Email: SMTP/IMAP</li>
-					<li>Chatting: XMPP</li>
+					<li>Chatting: <link href="XMPP"/></li>
 					<li>File Transfer: FTP</li>
 					<li>Multimedia Traffic: RTP</li>
 					<li>Remote Login: Telnet</li>
@@ -827,7 +827,7 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="tcp">
+		<part id="TCP">
 			<title short="TCP">Transmission Control Protocol (TCP)</title>
 			<slide>
 				<title>TCP Features</title>
@@ -859,7 +859,7 @@
 				<img style="height : 70% ; margin : 2% ; " src="tcp-window.png"/>
 			</slide>
 		</part>
-		<part id="dns">
+		<part id="DNS">
 			<title short="DNS">Domain Name System (DNS)</title>
 			<slide>
 				<title>Naming vs. Addressing</title>
@@ -1120,7 +1120,7 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="uri">
+		<part id="URI">
 			<title short="URI">Uniform Resource Identifier (URI)</title>
 			<slide>
 				<title>Resource Identification</title>
@@ -1181,11 +1181,11 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="http">
+		<part id="HTTP">
 			<title short="HTTP">Hypertext Transfer Protocol (HTTP)</title>
 			<slide>
 				<title>DNS &amp; HTTP</title>
-				<p>The two basic protocols which every Web browser must implement are <link href="dns">DNS</link> access and <link href="http">HTTP</link>. However, most operating systems provide an API for DNS access, so the browser can use this service locally and only has to implement HTTP. <link href="tcp">TCP</link> (which is required as the foundation for HTTP) is usually provided by the operating system.</p>
+				<p>The two basic protocols which every Web browser must implement are <link href="DNS">DNS</link> access and <link href="HTTP">HTTP</link>. However, most operating systems provide an API for DNS access, so the browser can use this service locally and only has to implement HTTP. <link href="TCP">TCP</link> (which is required as the foundation for HTTP) is usually provided by the operating system.</p>
 				<img style="width : 90% ; margin : 2% ; " src="browser-dns-http.png"/>
 			</slide>
 			<slide>
@@ -1193,7 +1193,7 @@
 				<ul>
 					<li>HTTP needs a reliable connection</li>
 					<ul>
-						<li>the foundation for HTTP is the <link href="tcp"/></li>
+						<li>the foundation for HTTP is the <link href="TCP"/></li>
 						<li>DNS resolution yields an IP address</li>
 						<li>open TCP connection to port 80 or port specified in URI (<code>http://rosetta.sims.berkeley.edu:8085/</code>)</li>
 					</ul>
@@ -1572,8 +1572,45 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<slide>
+			<title>So/Too Many Protocols</title>
+		</slide>
 		<part id="XMPP">
 			<title short="XMPP">Extensible Messaging Protocol (XMPP)</title>
+			<slide>
+				<title>XMPP History</title>
+				<img src="xmpp-logo.png" href="http://xmpp.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+				<ul>
+					<li>Originally named <q>Jabber</q> and intended as an <em>open chat protocol</em></li>
+					<ul>
+						<li>Most chat systems are using closed and proprietary protocols</li>
+						<li>XMPP allows an open ecosystem of chat services and clients to evolve</li>
+					</ul>
+					<li>Main development within IETF from 2002-2004</li>
+					<li>XML was en vogue back then so the protocol is XML-based</li>
+					<ul>
+						<li>The entire client/server session is one XML document (a <a href="http://tools.ietf.org/html/rfc6120#section-4">stream</a></li>
+						<li><q>Stream children</q> are XMPP's protocol data units (a <a href="http://tools.ietf.org/html/rfc6120#section-8">stanza</a></li>
+						<li>XMPP <a href="http://tools.ietf.org/html/rfc6120#section-11">restricts XML</a> so that parsing is a bit simpler</li>
+					</ul>
+					<li>XMPP is specified as a generic core and an IM protocol</li>
+					<ul>
+						<li><a href="http://tools.ietf.org/html/rfc6120">XMPP Core (RFC 6120)</a></li>
+						<li><a href="http://tools.ietf.org/html/rfc6121">XMPP Instant Messaging and Presence (RFC 6121)</a></li>
+						<li><a href="http://tools.ietf.org/html/rfc6122">XMPP Address Format (RFC 6122)</a></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>XMPP Example</title>
+				<listing src="xmpp-session.txt" href="http://tools.ietf.org/html/rfc3920#section-4.8"/>
+			</slide>
+			<slide>
+				<title>Presence Information</title>
+				<ul>
+					<li><em>Presence information</em> is a critical part of every IM experience</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="AMQP">
 			<title short="AMQP">Advanced Message Queueing Protocol (AMQP)</title>
@@ -1587,6 +1624,11 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<title>Is WebRTC a Protocol?</title>
 				<ul>
 					<li>It started as an API, but network APIs without protocols make little sense</li>
+					<li>Currently two organizations are working on WebRTC</li>
+					<ul>
+						<li>W3C is developing the <a href="http://www.w3.org/TR/webrtc/">WebRTC API</a> (how to use WebRTC in JavaScript)</li>
+						<li>IETF is developing <a href="http://datatracker.ietf.org/wg/rtcweb/documents/" title="Documents of the IETF WebRTC WG">WebRTC protocols</a> so that browsers can communicate</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
