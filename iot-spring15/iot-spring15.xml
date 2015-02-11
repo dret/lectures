@@ -1432,6 +1432,29 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="as-basics">
 			<title>Activity Streams Basics</title>
+			<slide id="AS1">
+				<title>Activity Streams 1.0</title>
+			</slide>
+			<slide id="AS2">
+				<title>Activity Streams 2.0</title>
+				<ul>
+					<li><link href="AS1"/> were successful but not a very solid specification</li>
+					<li><q>Social Networks</q> are increasingly important for Enterprise IT</li>
+					<ul>
+						<li>Enterprises slowly but increasingly understand the necessity for loose coupling</li>
+						<li><a href="http://en.wikipedia.org/wiki/Enterprise_social_networking">http://en.wikipedia.org/wiki/Enterprise_social_networking</a> has a lot of potential</li>
+						<li>Deploying one centralized infrastructure repeats errors of the past</li>
+						<li>The alternative idea is to interconnect heterogeneous systems</li>
+					</ul>
+					<li>Large Enterprise IT providers have pushed for AS to become more mature</li>
+					<ul>
+						<li>IBM uses AS for interconnecting products for <a href="http://en.wikipedia.org/wiki/Application_lifecycle_management">software lifecycle management</a></li>
+						<li>SAP uses AS in their enterprise collaboration tools</li>
+						<li>Customers demand for those platforms to be open and extensible</li>
+					</ul>
+					<li>AS2 is now standardzied in the <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>'s <a href="http://www.w3.org/Social/WG" title="Social Web Working Group">Social Web WG</a></li>
+				</ul>
+			</slide>
 		</part>
 		<part id="soa">
 			<title>Service-Oriented Architecture (SOA)</title>
@@ -1576,7 +1599,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>So/Too Many Protocols</title>
 		</slide>
 		<slide id="hammer-screw">
-			<title>People Like Their Hammers</title>
+			<title>People And Hammers</title>
 			<img src="hammer-screw.jpg" title="If you've never seen a screw it looks a lot like a nail." style="height : 65% ; margin : 4% ; "/>
 		</slide>
 		<part id="XMPP">
