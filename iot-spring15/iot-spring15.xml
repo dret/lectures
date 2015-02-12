@@ -995,6 +995,19 @@
 		<toc class="reading"><a href="http://www.ptc.com/File%20Library/Topics/Harvard%20Business%20Review/HBR_How-Smart-Connected-Products-Are-Transforming-Competition.pdf" title='Michael E. Porter and James E. Heppelmann, "How Smart, Connected Products Are Transforming Competition", Harvard Business Review, November 2014'>Transforming Competition</a></toc>
 		<toc class="resources"><a href="http://www.iso.org/" title="International Organization for Standardization">ISO</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://www.ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.oasis-open.org/" title="Organization for the Advancement of Structured Information Standards">OASIS</a>&#160;· <a href="http://www.ieee.org/" title="Institute of Electrical and Electronics Engineers">IEEE</a>&#160;· <a href="http://www.iec.ch/" title="International Electrotechnical Commission">IEC</a>&#160;· <a href="http://www.itu.int/" title="International Telecommunication Union">ITU</a></toc>
 		<toc class="assignment"><a href="https://bcourses.berkeley.edu/courses/1293124/assignments/6063666">A3</a>&#160;(2015-02-15)</toc>
+	</presentation>
+	<presentation id="rest">
+		<title short="REST">Representational State Transfer (REST) and Activity Streams</title>
+		<date>2015-02-20</date>
+		<author><a href="http://dret.net/netdret/">Erik Wilde</a></author>
+		<toc class="reading"><a href="http://www.looah.com/source/view/2284">How I Explained REST to My <del>Wife</del>Parent</a></toc>
+		<toc class="resources"><a href="http://www.w3.org/Social/WG" title="W3C Social Web Working Group">W3C&#160;Social&#160;Web&#160;WG</a>&#160;· <a href="http://activitystrea.ms/" title='"Historical" Activity Streams Home Page'>Activity&#160;Streams&#160;1.0</a>&#160;· <a href="http://dret.github.io/W3C/SocialWG/AS1-in-AS2.html" title="Using Activity Streams 1.0 Vocabularies in Activity Streams 2.0">AS1&#160;Vocabulary</a></toc>
+		<toc class="abstract">The Web's architectural style, <em>Representational State Transfer (REST)</em>, is one promising candidate for building open, extensible, and extensible ecosystems of services on the Web. In this picture, Web's fundamental role is that of a Service-Oriented Architecture (SOA), where resources can be accessed as a way to achieve application goals, but their implementation is of no concern to the users of the resources. <em>Activity Streams (AS)</em> are a developing standard that allows the sharing of activities across a variety of application domain. In this lecture the standard is discussed, and we look at specific applications of it in IoT/WoT scenarios.</toc>
+		<toc class="assignment"><a href="https://bcourses.berkeley.edu/courses/1293124/assignments">A4</a>&#160;(2015-02-26)</toc>
+		<slide>
+			<title>Abstract</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -1415,19 +1428,6 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				</ul>
 			</slide>
 		</part>
-	</presentation>
-	<presentation id="rest">
-		<title short="REST">Representational State Transfer (REST) and Activity Streams</title>
-		<date>2015-02-20</date>
-		<author><a href="http://dret.net/netdret/">Erik Wilde</a></author>
-		<toc class="reading"><a href="http://www.looah.com/source/view/2284">How I Explained REST to My <del>Wife</del>Parent</a></toc>
-		<toc class="resources"><a href="http://www.w3.org/Social/WG" title="W3C Social Web Working Group">W3C&#160;Social&#160;Web&#160;WG</a>&#160;· <a href="http://activitystrea.ms/" title='"Historical" Activity Streams Home Page'>Activity&#160;Streams&#160;1.0</a>&#160;· <a href="http://dret.github.io/W3C/SocialWG/AS1-in-AS2.html" title="Using Activity Streams 1.0 Vocabularies in Activity Streams 2.0">AS1&#160;Vocabulary</a></toc>
-		<toc class="abstract">The Web's architectural style, <em>Representational State Transfer (REST)</em>, is one promising candidate for building open, extensible, and extensible ecosystems of services on the Web. In this picture, Web's fundamental role is that of a Service-Oriented Architecture (SOA), where resources can be accessed as a way to achieve application goals, but their implementation is of no concern to the users of the resources. <em>Activity Streams (AS)</em> are a developing standard that allows the sharing of activities across a variety of application domain. In this lecture the standard is discussed, and we look at specific applications of it in IoT/WoT scenarios.</toc>
-		<toc class="assignment"><a href="https://bcourses.berkeley.edu/courses/1293124/assignments">A4</a>&#160;(2015-02-26)</toc>
-		<slide>
-			<title>Abstract</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 		<part id="as-history">
 			<title>Social Web History</title>
 		</part>
