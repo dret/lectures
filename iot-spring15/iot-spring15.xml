@@ -1590,7 +1590,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 	<presentation id="protocols">
 		<title short="Protocols">IoT Communication Protocols</title>
 		<date>2015-04-03</date>
-		<toc class="resources"><a href="http://xmpp.org/" title="XMPP Standards Foundation">XMPP.org</a>&#160;· <a href="http://www.amqp.org/" title="AMQP Home Page">AMQP.org</a>&#160;· <a href="http://www.mqtt.org/" title="MQTT Home Page">MQTT.org</a>&#160;· <a href="http://www.webrtc.org/" title="WebRTC Home Page">WebRTC.org</a>&#160;· <a href="https://code.google.com/p/pubsubhubbub/" title="PuSH on Google Code">PuSH</a></toc>
+		<toc class="resources"><a href="http://xmpp.org/" title="XMPP Standards Foundation">XMPP.org</a>&#160;· <a href="http://www.amqp.org/" title="AMQP Home Page">AMQP.org</a>&#160;· <a href="http://www.mqtt.org/" title="MQTT Home Page">MQTT.org</a>&#160;· <a href="http://www.webrtc.org/" title="WebRTC Home Page">WebRTC.org</a>&#160;· <a href="https://code.google.com/p/pubsubhubbub/" title="PuSH on Google Code">PuSH</a>&#160;· <a href="https://tools.ietf.org/html/rfc6455" title="RFC 6455: The WebSocket Protocol">WebSocket</a></toc>
 		<toc class="abstract">In this lecture we are looking at both lower layer (CoAP) and specific messaging protocols (AMQP, MQTT, XMPP), as examples of how specific requirements in application areas have resulted in a variety of network and application protocols. The main challenge in this space is to not compare protocols feature-by-feature, but to understand what they do and do not cover, and what they have been designed for.</toc>
 		<slide>
 			<title>Abstract</title>
@@ -1637,6 +1637,20 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<title>Presence Information</title>
 				<ul>
 					<li><em>Presence information</em> is a critical part of every IM experience</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="websocket">
+			<title>WebSocket</title>
+			<slide>
+				<title>Non-HTTP Internet Connectivity</title>
+				<ul>
+					<li><a href="">XMLHttpRequest</a></li>
+					<li>WebSocket is both an API and a Protocol</li>
+					<ul>
+						<li>IETF publishes the <a href="https://tools.ietf.org/html/rfc6455">WebSocket Protocol</a></li>
+						<li>W3C publishes the <a href="http://www.w3.org/TR/websockets/">WebSocket API</a></li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
