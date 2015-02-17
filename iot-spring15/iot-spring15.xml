@@ -1409,8 +1409,8 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				</ul>
 			</slide>
 		</part>
-		<part id="standards">
-			<title>Standardization</title>
+		<part id="as-history">
+			<title>Social Web History</title>
 			<slide id="standards-xkcd">
 				<title>xkcd: Standards</title>
 				<img src="standards-xkcd.png" style="height : 70% ; margin : 2% ; " href="http://xkcd.com/927/"/>
@@ -1427,9 +1427,6 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>International Telecommunication Union (ITU)</li>
 				</ul>
 			</slide>
-		</part>
-		<part id="as-history">
-			<title>Social Web History</title>
 		</part>
 		<part id="as-basics">
 			<title>Activity Streams Basics</title>
@@ -1454,15 +1451,6 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 						<li>Customers demand for those platforms to be open and extensible</li>
 					</ul>
 					<li>AS2 is now standardzied in the <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>'s <a href="http://www.w3.org/Social/WG" title="Social Web Working Group">Social Web WG</a></li>
-				</ul>
-			</slide>
-		</part>
-		<part id="soa">
-			<title>Service-Oriented Architecture (SOA)</title>
-			<slide>
-				<title>Services Encapsulate Functionality</title>
-				<ul>
-					<li>Services should provide <em>loose coupling</em> as a foundation for IT architecture</li>
 				</ul>
 			</slide>
 		</part>
