@@ -1036,15 +1036,16 @@
 					<li>Name everything that you want to talk about</li>
 					<li><q>Thing</q> in this case should refer to <em>anything</em></li>
 					<ul>
-						<li><em>products</em> in an online shop</li>
-						<li><em>categories</em> that are used for grouping products</li>
-						<li><em>customers</em> that are expected to buy products</li>
-						<li><em>shopping carts</em> where customers collect products</li>
+						<li><em>Products</em> in an online shop</li>
+						<li><em>Categories</em> that are used for grouping products</li>
+						<li><em>Customers</em> that are expected to buy products</li>
+						<li><em>Shopping carts</em> where customers collect products</li>
 					</ul>
-					<li><em>Application state</em> also is represented as a resource</li>
+					<li><em>Client state transitions</em> also are represented as resources</li>
 					<ul>
-						<li><em>next</em> links on multi-page submission processes</li>
-						<li><em>paged results</em> with URIs identifying following pages</li>
+						<li>Performing a <q>next step</q> is also something you want to talk about</li>
+						<li><em>Next</em> links on multi-page submission processes</li>
+						<li><em>Paged results</em> with URIs identifying following pages</li>
 					</ul>
 				</ul>
 			</slide>
@@ -1053,9 +1054,9 @@
 				<ul>
 					<li>The same small set of operations applies to <link href="identification-constraint">everything</link></li>
 					<li>A small set of <em>verbs</em> applied to a large set of <em>nouns</em></li>
-					<li>verbs are universal and not invented on a per-application base</li>
-					<li>if many applications need new verbs, the uniform interface can be extended</li>
-					<li>natural language works in the same way (new verbs rarely enter language)</li>
+					<li>Verbs are universal and not invented on a per-application base</li>
+					<li>If many applications need new verbs, the uniform interface can be extended</li>
+					<li>Natural language works in the same way (new verbs rarely enter language)</li>
 					<li>Identify operations that are candidates for optimization</li>
 					<ul>
 						<li><http>GET</http> and <http>HEAD</http> are <em>safe operations</em></li>
@@ -1071,18 +1072,18 @@
 					<li>Resources are abstract entities (they cannot be used <em>per se</em>)</li>
 					<ul>
 						<li><link href="identification-constraint"/> guarantees that they are clearly identified</li>
-						<li>they are accessed through a <link href="interface-constraint"/></li>
+						<li>They are accessed through a <link href="interface-constraint"/></li>
 					</ul>
 					<li>Resources are accessed using <em>resource representations</em></li>
 					<ul>
-						<li>resource representations are sufficient to represent a resource</li>
-						<li>it is communicated which kind of representation is used</li>
-						<li>representation formats can be negotiated between peers</li>
+						<li>Resource representations are sufficient to represent a resource</li>
+						<li>It is communicated which kind of representation is used</li>
+						<li>Representation formats can be negotiated between peers</li>
 					</ul>
 					<li>Resource representations can be based on different constraints</li>
 					<ul>
 						<li>XML and JSON can represent the same model for different users</li>
-						<li>whatever the representation is, it must <link href="hypermedia-constraint"> support links</link></li>
+						<li>Whatever the representation is, it must <link href="hypermedia-constraint">support links</link></li>
 					</ul>
 				</ul>
 			</slide>
@@ -1092,14 +1093,14 @@
 					<li><link href="self-describing-constraint">Resource representations</link> contain links to <link href="identification-constraint">identified resources</link></li>
 					<li>Resources and state can be used by navigating links</li>
 					<ul>
-						<li>links make interconnected resources navigable</li>
-						<li>without navigation, identifying new resources is service-specific</li>
+						<li>Links make interconnected resources navigable</li>
+						<li>Without navigation, identifying new resources is service-specific</li>
 					</ul>
 					<li>RESTful applications <em>navigate</em> instead of <em>calling</em></li>
 					<ul>
-						<li><link href="self-describing-constraint">representations</link> contain information about possible traversals</li>
-						<li>the application navigates to the next resource depending on link semantics</li>
-						<li>navigation can be delegated since all links use <link href="identification-constraint">identifiers</link></li>
+						<li><link href="self-describing-constraint">Representations</link> contain information about possible traversals</li>
+						<li>The application navigates to the next resource depending on link semantics</li>
+						<li>Navigation can be delegated since all links use <link href="identification-constraint">identifiers</link></li>
 					</ul>
 				</ul>
 			</slide>
@@ -1108,27 +1109,22 @@
 				<ul>
 					<li>This constraint does not say <q>Stateless Applications</q>!</li>
 					<ul>
-						<li>for many RESTful applications, state is an essential part</li>
-						<li>the idea of REST is to avoid long-lasting transactions <em>in applications</em></li>
+						<li>For many RESTful applications, state is an essential part</li>
+						<li>The idea of REST is to avoid long-lasting transactions <em>in applications</em></li>
 					</ul>
 					<li>Stateless interactions mean to move state to clients or resources</li>
 					<ul>
-						<li>the most important consequence: avoid state in server-side applications</li>
+						<li>The most important consequence: avoid state in server-side applications</li>
 					</ul>
 					<li><em>Resource state</em> is managed on the server</li>
 					<ul>
-						<li>it is the same for every client working with the service</li>
-						<li>when a client changes resource state other clients see this change as well</li>
+						<li>It is the same for every client working with the service</li>
+						<li>When a client changes resource state other clients see this change as well</li>
 					</ul>
 					<li><em>Client state</em> is managed on the client</li>
 					<ul>
-						<li>it is specific for a client and thus has to be maintained by each client</li>
-						<li>it may affect <em>access</em> to server resources, but not the resources themselves</li>
-					</ul>
-					<li><em>Security issues</em> usually are important with client state</li>
-					<ul>
-						<li>clients can (try to) cheat by lying about their state</li>
-						<li>keeping client state on the server is expensive (but may be worth the price)</li>
+						<li>It is specific for a client and thus has to be maintained by each client</li>
+						<li>It may affect <em>access</em> to server resources, but not the resources themselves</li>
 					</ul>
 				</ul>
 			</slide>
@@ -1141,10 +1137,10 @@
 					<li>Early hypertext systems usually only identified documents within the scope of a single system (e.g. HyperCard)</li>
 					<li>The web uses URIs (Uniform Resource Identifiers) as global identifiers</li>
 					<ul>
-						<li>http://ischool.berkeley.edu/</li>
-						<li>mailto:alexander.jones@ischool.berkeley.edu</li>
-						<li>tel:+1-510-684-2179</li>
-						<li>urn:isbn:0451450523</li>
+						<li><code href="http://ischool.berkeley.edu/">http://ischool.berkeley.edu/</code></li>
+						<li><code href="mailto:alexander.jones@ischool.berkeley.edu">mailto:alexander.jones@ischool.berkeley.edu</code></li>
+						<li><code href="tel:+1-510-684-2179">tel:+1-510-684-2179</code></li>
+						<li><code href="urn:isbn:0451450523">urn:isbn:0451450523</code></li>
 					</ul>
 				</ul>
 				<blockquote cite="http://www.w3.org/TR/2004/REC-webarch-20041215/#identification">Global naming leads to global network effects... the value of an identifier increases the more it is used consistently</blockquote>
@@ -1153,34 +1149,35 @@
 			<slide>
 				<title>URIs &amp; Resources</title>
 				<ul>
-					<li>A URI identifies a "resource."</li>
+					<li>A URI identifies a <q>resource</q></li>
 					<li>But what is a resource?</li>
 					<li>A resource is anything identified by a URI</li>
 					<li>Resources are a way of conceptually dividing up some information space</li>
-					<li>URIs do not merely identify; they can be used to access or interact with a resource</li>
-					<li>The details of how to do this are determined by the URI's scheme, e.g. the <q><code>http:</code></q> part</li>
+					<li>URIs do not merely identify; (<span title="...but not always...">often</span>) they can be used to access or interact with a resource</li>
+					<li>The details of how to do this are determined by the URI scheme, e.g. the <q><code>http:</code></q> part</li>
 					<li>The usual method of interacting with a resource is by <em>dereferencing</em> the URI</li>
+					<li>The rules for dereferencing are what establishes the scheme's <link href="interface-constraint"/></li>
 				</ul>
 			</slide>
 			<slide id="uri-schemes">
 				<title>URI Schemes</title>
 				<pre>URI = scheme ":" hier-part [ "?" query ] [ "#" fragment ]</pre>
-				<pre>http://dret.net/lectures/iot-spring15/layering#uri-schemes</pre>
+				<pre>http://dret.net/lectures/iot-spring15/rest#uri-schemes</pre>
 				<ul>
 					<li>URIs in their general case are very simple</li>
 					<ul>
-						<li>the scheme identifies how resources are identified</li>
-						<li>the identification may be hierarchical or non-hierarchical</li>
+						<li>The scheme identifies how resources are identified</li>
+						<li>The identification may be hierarchical or non-hierarchical</li>
 					</ul>
 					<li>Many URI schemes are hierarchical</li>
 					<ul>
-						<li>it is then possible to use relative URIs such as in <htmel>a href="../"</htmel></li>
-						<li>the slash character is not just a character, in URIs it has semantics</li>
+						<li>It is then possible to use relative URIs such as in <code href="./">&lt;a href="./"/></code></li>
+						<li>The slash character is not just a character, in URIs it has semantics</li>
 					</ul>
 					<li>Query components specify additional information</li>
 					<ul>
-						<li>it is non-hierarchical information further identifying the resource</li>
-						<li>in most cases, it can be regarded as <q>input</q> to the resource</li>
+						<li>It is non-hierarchical information further identifying the resource</li>
+						<li>In most cases, it can be regarded as <q>input</q> to the resource</li>
 					</ul>
 				</ul>
 			</slide>
@@ -1188,8 +1185,17 @@
 				<title>Resources &amp; Representations</title>
 				<ul>
 					<li>When a URI is dereferenced by a web browser, it receives some data</li>
+					<ul>
+						<li>In HTTP, that data is accompanied by metadata in the form of HTTP headers</li>
+					</ul>
 					<li>That data is called a <em>representation</em> of the resource identified by the URI</li>
+					<ul>
+						<li>One implortant metadata field the the data's <em>media type</em> (HTTP <code>Content-Type</code>)</li>
+					</ul>
 					<li>Resources are abstract, representations are concrete</li>
+					<ul>
+						<li>A document can be represented in HTML, PDF, and other representations</li>
+					</ul>
 					<li>Resources may have various representations, and they may vary with time</li>
 				</ul>
 			</slide>
@@ -1198,7 +1204,7 @@
 			<title short="HTTP">Hypertext Transfer Protocol (HTTP)</title>
 			<slide>
 				<title>DNS &amp; HTTP</title>
-				<p>The two basic protocols which every Web browser must implement are <link href="DNS">DNS</link> access and <link href="HTTP">HTTP</link>. However, most operating systems provide an API for DNS access, so the browser can use this service locally and only has to implement HTTP. <link href="TCP">TCP</link> (which is required as the foundation for HTTP) is usually provided by the operating system.</p>
+				<p>The two basic protocols which every Web browser must implement are <link href="DNS">DNS</link> access and <link href="HTTP">HTTP</link>. However, most operating systems provide an API for DNS access, so the browser can use this service locally and only has to implement HTTP. <link href="TCP">TCP</link> support (which is required as the foundation for HTTP) is usually provided by the operating system.</p>
 				<img style="width : 90% ; margin : 2% ; " src="browser-dns-http.png"/>
 			</slide>
 			<slide>
@@ -1206,15 +1212,15 @@
 				<ul>
 					<li>HTTP needs a reliable connection</li>
 					<ul>
-						<li>the foundation for HTTP is the <link href="TCP"/></li>
+						<li>The foundation for HTTP is the <link href="TCP"/></li>
 						<li>DNS resolution yields an IP address</li>
-						<li>open TCP connection to port 80 or port specified in URI (<code>http://rosetta.sims.berkeley.edu:8085/</code>)</li>
+						<li>Open TCP connection to port 80 or port specified in URI (<code>http://rosetta.sims.berkeley.edu:8085/</code>)</li>
 					</ul>
 					<li>HTTP is a <em>text-based</em> protocol</li>
 					<ul>
-						<li>the connection is used to transmit <em>text messages</em></li>
-						<li>all HTTP messages are human-readable (not all <em>entities</em>, though)</li>
-						<li>basic HTTP operations can be carried out by hand</li>
+						<li>The connection is used to transmit <em>text messages</em></li>
+						<li>All HTTP messages are human-readable (not all <em>entities</em>, though)</li>
+						<li>Basic HTTP operations can be carried out by hand (e.g., per <code>telnet</code>)</li>
 					</ul>
 				</ul>
 				<pre>start-line
@@ -1227,14 +1233,14 @@ message-body ?</pre>
 				<ul>
 					<li>Header fields contain information about the message</li>
 					<ul>
-						<li><em>general header:</em> <code>Date</code> as the message origination date</li>
-						<li><em>request header:</em> <code>Accept-Language</code> indicates language preferences</li>
-						<li><em>response header:</em> <code>Server</code> contains system information</li>
-						<li><em>entity header:</em> <code>Content-Type</code> specifies the media type of the entity</li>
+						<li><em>General header:</em> <code>Date</code> as the message origination date</li>
+						<li><em>Request header:</em> <code>Accept-Language</code> indicates language preferences</li>
+						<li><em>Response header:</em> <code>Server</code> contains system information</li>
+						<li><em>Entity header:</em> <code>Content-Type</code> specifies the media type of the entity</li>
 					</ul>
 					<li>HTTP (and others) define <a href="https://github.com/dret/sedola/blob/master/MD/headers.md">a number of header fields</a></li>
 					<ul>
-						<li>unknown fields must be ignored (extensibility)</li>
+						<li>Unknown fields must be ignored (extensibility)</li>
 					</ul>
 					<li>HTTP is about acting on these fields</li>
 					<ul>
@@ -1247,14 +1253,14 @@ message-body ?</pre>
 				<ul>
 					<li>After opening a connection, the client sends a request</li>
 					<ul>
-						<li>the method indicates the action to be performed on the resource</li>
+						<li>The method indicates the action to be performed on the resource</li>
 						<li>HTTP's most interesting methods are: <code>GET</code>, <code>POST</code>, <code>PUT</code>, and <code>DELETE</code></li>
 					</ul>
 					<li>The URI identifies the resource to which the request should be applied</li>
 					<ul>
-						<li>absolute URIs are required when contacting <em>proxies</em></li>
-						<li>absolute paths are required when contacting a server directly</li>
-						<li>the URI may contain <em>query information</em></li>
+						<li>Absolute URIs are required when contacting <em>proxies</em></li>
+						<li>Absolute paths are required when contacting a server directly</li>
+						<li>The URI may contain <em>query information</em></li>
 					</ul>
 					<li>The <code>Host</code> header field must be included in every HTTP/1.1 request</li>
 				</ul>
@@ -1268,9 +1274,9 @@ message-body ?</pre>
 				<ul>
 					<li>Retrieval action based on the URI</li>
 					<ul>
-						<li>maybe implemented by reading a file</li>
-						<li>maybe implemented by processing a file (PHP)</li>
-						<li>maybe implemented by invoking a process</li>
+						<li>Maybe implemented by reading a file</li>
+						<li>Maybe implemented by processing a file (PHP)</li>
+						<li>Maybe implemented by running code</li>
 					</ul>
 					<li>Semantics may change based on header fields</li>
 					<ul>
@@ -1285,7 +1291,7 @@ Host: ischool.berkeley.edu</pre>
 			<slide id="http-response">
 				<title>HTTP Responses</title>
 				<ul>
-					<li>The server's response to interpreting a request</li>
+					<li>The server's response to acting on a request</li>
 					<ul>
 						<li>the status code is given numerically and as text</li>
 						<li><code>2**</code> for variations of <q>ok</q></li>
@@ -1295,8 +1301,8 @@ Host: ischool.berkeley.edu</pre>
 					</ul>
 					<li>Header fields specify additional information</li>
 					<ul>
-						<li>information about the server</li>
-						<li>information about the entity (media type, encoding, language)</li>
+						<li>Information about the server</li>
+						<li>Information about the entity (media type, encoding, language)</li>
 					</ul>
 				</ul>
 				<pre>HTTP/Major.Minor Status-Code Text
@@ -1311,19 +1317,19 @@ Host: ischool.berkeley.edu</pre>
 					<ul>
 						<li>TCP connection setup and teardown are expensive</li>
 						<li>TCP's <em>slow start</em> slows down the initial phase of data transfer</li>
-						<li>typical Web pages use between 10-20 resources (HTML + images + CSS + scripts)</li>
-						<li>typically, these resources are stored on the same server</li>
+						<li>Typical Web pages use between 10-20 resources (HTML + images + CSS + scripts)</li>
+						<li>Typically, these resources are stored on the same server</li>
 					</ul>
 					<li>HTTP/1.1 introduces <em>persistent connections</em></li>
 					<ul>
-						<li>the TCP connection stays open for some time (10 sec is a popular choice)</li>
-						<li>additional requests to the same server use the same TCP connection</li>
+						<li>The TCP connection stays open for some time (10 sec is a popular choice)</li>
+						<li>Additional requests to the same server use the same TCP connection</li>
 					</ul>
 					<li>HTTP/1.1 introduces <em>pipelined connections</em></li>
 					<ul>
-						<li>instead of waiting for a response, requests can be queued</li>
-						<li>the server responds as fast as possible</li>
-						<li>the order may not be changed (there is no sequence number)</li>
+						<li>Instead of waiting for a response, requests can be queued</li>
+						<li>The server responds as fast as possible</li>
+						<li>The order may not be changed (there is no sequence number)</li>
 					</ul>
 				</ul>
 			</slide>
@@ -1342,8 +1348,8 @@ Host: ischool.berkeley.edu</pre>
 					</ul>
 					<li>Two different approaches to unauthorized access are possible</li>
 					<ul>
-						<li>repeat the HTTP request with the proper authentication credentials</li>
-						<li>redirect to a <link href="login-page"/> for authentication</li>
+						<li>Repeat the HTTP request with the proper authentication credentials</li>
+						<li>Redirect to a <q>authentication resource</q> for authentication</li>
 					</ul>
 				</ul>
 			</slide>
@@ -1356,15 +1362,15 @@ Host: ischool.berkeley.edu</pre>
 				<ul>
 					<li>Authentication is based on <em>authentication realms</em></li>
 					<ul>
-						<li>a set of resources for which the authentication is required</li>
-						<li>an opaque name which is used to signal which login is required</li>
-						<li>username/password often is specific for a given realm</li>
+						<li>A set of resources for which the authentication is required</li>
+						<li>An opaque name which is used to signal which login is required</li>
+						<li>Username/password often is specific for a given realm</li>
 					</ul>
 					<li>Users supply username and password through the client</li>
 					<ul>
-						<li>sent as <a href="http://en.wikipedia.org/wiki/Base64">Base64</a> encoded <q><code>username:password</code></q> string</li>
-						<li>username and password are <a href="http://www.google.com/search?hl=en&amp;q=base64+decoder"><em>not</em> transmitted securely</a></li>
-						<li>basic authentication should <em>always</em> use HTTPS</li>
+						<li>Sent as <a href="http://en.wikipedia.org/wiki/Base64">Base64</a> encoded <q><code>username:password</code></q> string</li>
+						<li>Username and password are <a href="http://www.google.com/search?hl=en&amp;q=base64+decoder"><em>not</em> transmitted securely</a></li>
+						<li>Basic authentication should <em>always</em> use HTTPS</li>
 					</ul>
 					<li>Authorization is handled on the server side</li>
 					<pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">HTTP/1.0 401 Unauthorized
@@ -1378,19 +1384,19 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<ul>
 					<li>Clients typically access more than one protected resource</li>
 					<ul>
-						<li>a perfectly stateless client would always request authentication from the user</li>
-						<li>using the <em>realm</em> clients can identify repeated accesses to sets of resources</li>
+						<li>A perfectly stateless client would always request authentication from the user</li>
+						<li>Using the <em>realm</em> clients can identify repeated accesses to sets of resources</li>
 					</ul>
 					<li>Web interactions by default are perfectly stateless</li>
 					<ul>
-						<li>each request is completely independent from other requests</li>
-						<li>stateless interactions make the Web loosely coupled and scalable</li>
-						<li>concepts like the <em>realm</em> or cookies introduce <q>state</q></li>
+						<li>Each request is completely independent from other requests</li>
+						<li>Stateless interactions make the Web loosely coupled and scalable</li>
+						<li>Concepts like the <em>realm</em> or cookies introduce <q>state</q></li>
 					</ul>
 					<li>Clients remember the authentication and replay it automatically</li>
 					<ul>
-						<li>browsers provide little control over this feature</li>
-						<li><q>logging out</q> of HTTP authenticated sessions is hard</li>
+						<li>Browsers provide little control over this feature</li>
+						<li><q>Logging out</q> of HTTP authenticated sessions is hard</li>
 					</ul>
 				</ul>
 			</slide>
@@ -1399,28 +1405,13 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<ul>
 					<li><link href="http-basic"/> works with browser controls (including the login window)</li>
 					<ul>
-						<li>no possibility to <q>log out</q> without using browser-specific controls</li>
-						<li>client side security depends on browser security measures</li>
+						<li>No possibility to <q>log out</q> without using browser-specific controls</li>
+						<li>Client side security depends on browser security measures</li>
 					</ul>
 					<li>Using forms gives more freedom in session management</li>
 					<ul>
-						<li>authentication and authorization are completely application-based</li>
+						<li>Authentication and authorization are completely application-based</li>
 					</ul>
-				</ul>
-			</slide>
-		</part>
-		<part id="as-history">
-			<title>Social Web History</title>
-			<slide id="standards-xkcd">
-				<title>xkcd: Standards</title>
-				<img src="standards-xkcd.png" style="height : 70% ; margin : 2% ; " href="http://xkcd.com/927/"/>
-			</slide>
-			<slide>
-				<title>Standardization Bodies</title>
-				<ul>
-					<li>Internet Engineering Task Force (IETF)</li>
-					<li>World Wide Web Consortium (W3C)</li>
-					<li>International Organization for Standardization (ISO)</li>
 				</ul>
 			</slide>
 		</part>
@@ -1428,6 +1419,19 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>Activity Streams Basics</title>
 			<slide id="AS1">
 				<title>Activity Streams 1.0</title>
+				<ul>
+					<li>Developer effort in an attempt to <q>interconnect social networks</q></li>
+					<ul>
+						<li>Counter-intuitive given then <q>walled garden</q> nature of most social networks</li>
+						<li>Even the <q>social giants</q> need proper plumbing between their services</li>
+					</ul>
+					<li>Simple and informative standard that was implemented but never (fully) documented</li>
+					<li>For <q>Enterprise 2.0</q> customers demand stable and official standards</li>
+					<ul>
+						<li><em>Social Enterprise Platforms</em> are essentially integration platforms</li>
+						<li>Only robust and open models turn them into good IT solutions</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="AS2">
 				<title>Activity Streams 2.0</title>
@@ -1446,22 +1450,44 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 						<li>SAP uses AS in their enterprise collaboration tools</li>
 						<li>Customers demand for those platforms to be open and extensible</li>
 					</ul>
-					<li>AS2 is now standardzied in the <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>'s <a href="http://www.w3.org/Social/WG" title="Social Web Working Group">Social Web WG</a></li>
+					<li>AS2 is now standardized in the <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>'s <a href="http://www.w3.org/Social/WG" title="Social Web Working Group">Social Web WG</a></li>
 				</ul>
 			</slide>
 		</part>
 		<part id="as-vocabularies">
 			<title>Vocabularies for Activity Streams</title>
 			<slide>
-				<title>AS need Vocabularies</title>
+				<title>AS needs Vocabularies</title>
 				<ul>
-					<li>...</li>
+					<li>AS is about activities and needs shared understanding</li>
+					<ul>
+						<li>Without a vocabulary, it is a grammar without content</li>
+						<li>Vocabularies allow to build meaningful sentences with shared meaning</li>
+					</ul>
+					<li>Basic AS statement: <q><code>Erik added a picture to Flickr</code></q></li>
+					<ul>
+						<li>Actor: <code>Erik</code></li>
+						<li>Verb: <code>add</code></li>
+						<li>Object: <code>picture URI</code></li>
+						<li>Target: <code>Flickr stream</code></li>
+					</ul>
+					<li>AS mixes three ways in how these concepts can be represented</li>
+					<ul>
+						<li><em>By Value:</em> The actor's name is <q>Erik Wilde</q></li>
+						<li><em>By Registry Reference:</em> The well-known verb is <a href="http://dret.github.io/W3C/SocialWG/AS1-in-AS2.html#verb-definition-add">add</a></li>
+						<li><em>By URI Reference:</em> Erik's <a href="https://www.flickr.com/photos/dret/">Flickr Photostream</a></li>
+					</ul>
 				</ul>
 			</slide>
 			<slide>
 				<title>Use, Extend, or Define?</title>
 				<ul>
-					<li>...</li>
+					<li>AS has three levels of expressivity</li>
+					<ul>
+						<li>Using a well-known verb in the way how it has been defined</li>
+						<li>Extending a well-known verb in ways that make sense for those knowing the extension</li>
+						<li>Defining new verbs which do not <q>mean</q> anything fot those not knowing them</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide>
@@ -1514,22 +1540,22 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 							<li></li>
 						</ul>
 					</slide>
-					<part>
-						<title>What Activities?</title>
-						<slide>
-							<title>All You Need Is <code>POST</code></title>
-						</slide>
-						<slide>
-							<title>Hey, I Just <code>Exercised</code></title>
-						</slide>
-						<slide>
-							<title>Do You Even Know What <code>HIIT</code> Is?</title>
-							<ul>
-								<li><a href="https://github.com/dret/exercise/blob/master/nikefuel.md">Nike Fuel</a> thinks <code>HIIT</code> is a thing</li>
-								<li>Even <a href="http://en.wikipedia.org/wiki/High-intensity_interval_training">Wikipedia thinks it is a thing</a></li>
-							</ul>
-						</slide>
-					</part>
+				</part>
+				<part>
+					<title>What Are Activities?</title>
+					<slide>
+						<title>All You Need Is <code>POST</code></title>
+					</slide>
+					<slide>
+						<title>Hey, I Just <code>Exercised</code></title>
+					</slide>
+					<slide>
+						<title>Do You Even Know What <code>HIIT</code> Is?</title>
+						<ul>
+							<li><a href="https://github.com/dret/exercise/blob/master/nikefuel.md">Nike Fuel</a> thinks <code>HIIT</code> is a thing</li>
+							<li>Even <a href="http://en.wikipedia.org/wiki/High-intensity_interval_training">Wikipedia thinks it is a thing</a></li>
+						</ul>
+					</slide>
 				</part>
 			</part>
 		</part>
