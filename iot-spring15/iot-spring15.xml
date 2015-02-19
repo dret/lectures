@@ -1500,8 +1500,8 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<ul>
 						<li>Actor: <code>Erik</code></li>
 						<li>Verb: <code>add</code></li>
-						<li>Object: <code>picture URI</code></li>
-						<li>Target: <code>Flickr stream</code></li>
+						<li>Object: <code href="https://www.flickr.com/photos/dret/15433487108/">picture URI</code></li>
+						<li>Target: <code href="https://www.flickr.com/photos/dret/">Flickr stream URI</code></li>
 					</ul>
 					<li>AS mixes three ways in how these concepts can be represented</li>
 					<ul>
@@ -1517,18 +1517,17 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>AS has three levels of expressivity</li>
 					<ul>
 						<li>Using a well-known verb in the way how it has been defined</li>
+						<ul>
+							<li><q>I just added something to an existing resource.</q></li>
+						</ul>
 						<li>Extending a well-known verb in ways that make sense for those knowing the extension</li>
-						<li>Defining new verbs which do not <q>mean</q> anything fot those not knowing them</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide>
-				<title>Vocabularies vs. Ontologies</title>
-				<ul>
-					<li>The foundation for any cooperation is <em>shared understanding</em></li>
-					<ul>
-						<li>Shared understanding needs to exist for the <q>service surface</q></li>
-						<li>There is no need to completely align <q>world models</q></li>
+						<ul>
+							<li><q>For those who care and know, here is additional info about the camera.</q></li>
+						</ul>
+						<li>Defining new verbs which do not <q>mean</q> anything for those not knowing them</li>
+						<ul>
+							<li><q>I just edited the picture I added earlier.</q></li>
+						</ul>
 					</ul>
 				</ul>
 			</slide>
@@ -1538,6 +1537,12 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<title>Finding Vocabularies</title>
 					<ul>
 						<li>There is no centralized registry of AS vocabularies</li>
+						<ul>
+							<li>The AS1 core specification only defines the one verb <q><code>post</code></q></li>
+							<li>The <a href="https://github.com/activitystreams/activity-schema/blob/master/activity-schema.md">AS2 base schema</a> defines a set of well-know verbs</li>
+							<li>AS1 activities may use verbs other than the well-know ones</li>
+							<li><a href="http://activitystrea.ms/specs/json/1.0/#extensions">Extensions</a> can use <em>strings</em> or <em>URIs</em> as verbs (the difference is unclear)</li>
+						</ul>
 					</ul>
 				</slide>
 				<slide>
