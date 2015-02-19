@@ -1478,7 +1478,11 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 						<li>SAP uses AS in their enterprise collaboration tools</li>
 						<li>Customers demand for those platforms to be open and extensible</li>
 					</ul>
-					<li>AS2 is now standardized in the <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>'s <a href="http://www.w3.org/Social/WG" title="Social Web Working Group">Social Web WG</a></li>
+					<li>AS2 is now being standardized in the <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>'s <a href="http://www.w3.org/Social/WG" title="Social Web Working Group">Social Web WG</a></li>
+					<ul>
+						<li><a href="http://www.w3.org/TR/activitystreams-core/">Activity Streams 2.0</a></li>
+						<li><a href="http://www.w3.org/TR/activitystreams-vocabulary/">Activity Vocabulary</a></li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
