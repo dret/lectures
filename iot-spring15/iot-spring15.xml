@@ -1011,6 +1011,35 @@
 		<part id="rest-definition">
 			<title short="REST">Representational State Transfer (REST)</title>
 			<slide>
+				<title>Architectural Styles</title>
+				<ul>
+					<li>Architectural Style vs. Architecture</li>
+					<ul>
+						<li>Architectural Style: General principles informing the creation of an architecture</li>
+						<li>Architecture: Designing a solution to a problem according to given constraints</li>
+						<li>Architectural styles <em>inform</em> and <em>guide</em> the creation of architectures</li>
+					</ul>
+				</ul>
+				<table width="95%">
+					<tr>
+						<td>
+							<img style="width : 90% ; margin : 2% ; " src="louvre.jpg" title="Louvre Interior"/>
+							<ul>
+								<li>Architecture: <a href="http://en.wikipedia.org/wiki/Louvre">Louvre</a></li>
+								<li>Architectural Style: <a href="http://en.wikipedia.org/wiki/Baroque_architecture">Baroque</a></li>
+							</ul>
+						</td>
+						<td>
+							<img style="width : 90% ; margin : 2% ; " src="savoye.jpg" title="Villa Savoye Interior"/>
+							<ul>
+								<li>Architecture: <a href="http://en.wikipedia.org/wiki/Villa_Savoye">Villa Savoye</a></li>
+								<li>Architectural Style: <a href="http://en.wikipedia.org/wiki/International_Style_(architecture)">International Style</a></li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</slide>
+			<slide>
 				<title>The REST Architectural Style</title>
 				<ul>
 					<li>A set of constraints that inform an architecture</li>
