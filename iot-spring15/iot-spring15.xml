@@ -1566,31 +1566,25 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</part>
 			<part id="as-vocab-define">
 				<title>Defining Vocabularies</title>
-				<part>
-					<title>Using Health-Oriented Wearables</title>
-					<slide>
-						<title>Quantified Self and Health</title>
-						<ul>
-							<li></li>
-						</ul>
-					</slide>
-				</part>
-				<part>
-					<title>What Are Activities?</title>
-					<slide>
-						<title>All You Need Is <code>POST</code></title>
-					</slide>
-					<slide>
-						<title>Hey, I Just <code>Exercised</code></title>
-					</slide>
-					<slide>
-						<title>Do You Even Know What <code>HIIT</code> Is?</title>
-						<ul>
-							<li><a href="https://github.com/dret/exercise/blob/master/nikefuel.md">Nike Fuel</a> thinks <code>HIIT</code> is a thing</li>
-							<li>Even <a href="http://en.wikipedia.org/wiki/High-intensity_interval_training">Wikipedia thinks it is a thing</a></li>
-						</ul>
-					</slide>
-				</part>
+				<slide>
+					<title>Quantified Self and Health</title>
+					<ul>
+						<li></li>
+					</ul>
+				</slide>
+				<slide>
+					<title>All You Need Is <code>POST</code></title>
+				</slide>
+				<slide>
+					<title>Hey, I Just <code>Exercised</code></title>
+				</slide>
+				<slide>
+					<title>Do You Even Know What <code>HIIT</code> Is?</title>
+					<ul>
+						<li><a href="https://github.com/dret/exercise/blob/master/nikefuel.md">Nike Fuel</a> thinks <code>HIIT</code> is a thing</li>
+						<li>Even <a href="http://en.wikipedia.org/wiki/High-intensity_interval_training">Wikipedia thinks it is a thing</a></li>
+					</ul>
+				</slide>
 			</part>
 		</part>
 	</presentation>
