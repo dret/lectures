@@ -1505,31 +1505,31 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					</ul>
 					<li>AS mixes three ways in how these concepts can be represented</li>
 					<ul>
-						<li><em>By Value:</em> The actor's name is <q>Erik Wilde</q></li>
-						<li><em>By Registry Reference:</em> The well-known verb is <a href="http://dret.github.io/W3C/SocialWG/AS1-in-AS2.html#verb-definition-add">add</a></li>
-						<li><em>By URI Reference:</em> Erik's <a href="https://www.flickr.com/photos/dret/">Flickr Photostream</a></li>
+						<li><em>By Value:</em> The actor's name is <q>Erik Wilde</q> (good for simple rendering)</li>
+						<li><em>By Registry Reference:</em> The well-known verb is <a href="http://dret.github.io/W3C/SocialWG/AS1-in-AS2.html#verb-definition-add">add</a> (good for shared meaning)</li>
+						<li><em>By URI Reference:</em> Erik's <a href="https://www.flickr.com/photos/dret/">Flickr Photostream</a> (good for extensibility)</li>
 					</ul>
 				</ul>
 			</slide>
 			<slide>
 				<title>Use, Extend, or Define?</title>
 				<ul>
-					<li>AS has three levels of expressivity</li>
-					<ul>
-						<li>Using a well-known verb in the way how it has been defined</li>
-						<ul>
-							<li><q>Erik just added something to an existing resource.</q></li>
-						</ul>
-						<li>Extending a well-known verb in ways that make sense for those knowing the extension</li>
-						<ul>
-							<li><q>For those who care and know, here is additional info about the camera.</q></li>
-						</ul>
-						<li>Defining new verbs which do not <q>mean</q> anything for those not knowing them</li>
-						<ul>
-							<li><q>Erik just edited the picture he added earlier.</q></li>
-						</ul>
-					</ul>
+					<li>AS has three <q>levels</q> of verb expressivity</li>
 				</ul>
+				<ol>
+					<li>Using a well-known verb in the way how it has been defined</li>
+					<ul>
+						<li><q>Erik just added something to an existing resource.</q></li>
+					</ul>
+					<li>Extending a well-known verb in ways that make sense for those knowing the extension</li>
+					<ul>
+						<li><q>For those who know and care, here is additional info about the camera.</q></li>
+					</ul>
+					<li>Defining new verbs which do not <q>mean</q> anything for those not knowing them</li>
+					<ul>
+						<li><q>Erik just edited the picture he added earlier.</q></li>
+					</ul>
+				</ol>
 			</slide>
 			<part id="as-vocab-use">
 				<title>Using Vocabularies</title>
@@ -1540,7 +1540,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 						<li>There is no centralized registry of AS vocabularies</li>
 						<ul>
 							<li>The AS1 core specification only defines the one verb <q><code>post</code></q></li>
-							<li>The <a href="https://github.com/activitystreams/activity-schema/blob/master/activity-schema.md">AS2 base schema</a> defines a set of well-know verbs</li>
+							<li>The <a href="https://github.com/activitystreams/activity-schema/blob/master/activity-schema.md">AS1 base schema</a> defines a set of well-known verbs</li>
 							<li>AS1 activities may use verbs other than the well-know ones</li>
 							<li><a href="http://activitystrea.ms/specs/json/1.0/#extensions">Extensions</a> can use <em>strings</em> or <em>URIs</em> as verbs (the difference is unclear)</li>
 						</ul>
@@ -1569,20 +1569,53 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<slide>
 					<title>Quantified Self and Health</title>
 					<ul>
-						<li></li>
+						<li>Using data from wearables to support personal well-being and health</li>
+						<ul>
+							<li>Producers: Wearables (e.g., activity trackers), general-purpose devices (e.g., activity-enabled smartphones), lab visits</li>
+							<li>Transformers: Consuming available data and distilling reports</li>
+							<li>Consumers: Users, health coaches, doctors (different granularity of consumption)</li>
+						</ul>
+						<li>Data production should be independent of specific devices</li>
+						<ul>
+							<li><a href="https://github.com/dret/exercise/tree/master/EDF">Exercise Data Format (EDF)</a> as a very simple <q>standard</q> for exercise data</li>
+							<li>The resources are linked from activities and use a different media type</li>
+						</ul>
 					</ul>
 				</slide>
 				<slide>
-					<title>All You Need Is <code>POST</code></title>
-				</slide>
-				<slide>
 					<title>Hey, I Just <code>Exercised</code></title>
+					<ul>
+						<li>The current design exposes <em>exercising</em> as an activity</li>
+						<ul>
+							<li>It would also be possible to model it as <q>adding something to an exercise log</q></li>
+							<li>Modeling always has many ways how the same information can be represented</li>
+						</ul>
+						<li>Specific <em>exercise types</em> (e.g., running) are not part of the verb</li>
+						<ul>
+							<li>Trade-off between generality and specificity</li>
+							<li>The exercise type is represented as additional data in the AS object</li>
+						</ul>
+					</ul>
 				</slide>
 				<slide>
-					<title>Do You Even Know What <code>HIIT</code> Is?</title>
+					<title>Do You Know What <code>HIIT</code> Is?</title>
 					<ul>
-						<li><a href="https://github.com/dret/exercise/blob/master/nikefuel.md">Nike Fuel</a> thinks <code>HIIT</code> is a thing</li>
-						<li>Even <a href="http://en.wikipedia.org/wiki/High-intensity_interval_training">Wikipedia thinks it is a thing</a></li>
+						<li>Exercise types are considered relevant but not central</li>
+						<ul>
+							<li><a href="https://github.com/dret/exercise/blob/master/nikefuel.md">Nike Fuel</a> thinks <code>HIIT</code> is a thing</li>
+							<li>Even <a href="http://en.wikipedia.org/wiki/High-intensity_interval_training">Wikipedia thinks it is a thing</a></li>
+						</ul>
+						<li>It is possible to transform proprietary into unified types</li>
+						<ul>
+							<li>There is a long list of <a href="https://github.com/dret/exercise/tree/master/types">(currently 435) exercise types</a></li>
+							<li>Consumers are mostly not interested which device/service created the exercise data</li>
+							<li>A transformer consumes the proprietary types and transforms them into unified types</li>
+						</ul>
+						<li>A typical pattern of open and extensible system</li>
+						<ul>
+							<li>Define a minimal but useful model for representing what the system is all about</li>
+							<li>Make this model extensible and open so that it can <em>evolve</em> without breaking existing components</li>
+						</ul>
 					</ul>
 				</slide>
 			</part>
