@@ -1717,6 +1717,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>WebSocket</title>
 			<slide>
 				<title>Non-HTTP Internet Connectivity</title>
+				<img src="websockets-logo.png" href="http://xmpp.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
 				<ul>
 					<li><a href="">XMLHttpRequest</a></li>
 					<li>WebSocket is both an API and a Protocol</li>
@@ -1729,8 +1730,12 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="AMQP">
 			<title short="AMQP">Advanced Message Queueing Protocol (AMQP)</title>
+			<slide>
+				<title>...</title>
+				<img src="amqp-logo.jpg" href="http://xmpp.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+			</slide>
 		</part>
-		<part id="MQTP">
+		<part id="MQTT">
 			<title short="MQTT">Message Queue Telemetry Transport (MQTT)</title>
 		</part>
 		<part id="WebRTC">
