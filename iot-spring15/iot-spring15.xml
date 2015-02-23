@@ -1505,7 +1505,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					</ul>
 					<li>AS mixes three ways in how these concepts can be represented</li>
 					<ul>
-						<li><em>By Value:</em> The actor's name is <q>Erik Wilde</q> (good for simple rendering)</li>
+						<li><em>By Value:</em> The actor's name is <q>Erik</q> (good for simple rendering)</li>
 						<li><em>By Registry Reference:</em> The well-known verb is <a href="http://dret.github.io/W3C/SocialWG/AS1-in-AS2.html#verb-definition-add">add</a> (good for shared meaning)</li>
 						<li><em>By URI Reference:</em> Erik's <a href="https://www.flickr.com/photos/dret/">Flickr Photostream</a> (good for extensibility)</li>
 					</ul>
@@ -1554,6 +1554,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<slide>
 					<title>Adapting Vocabularies</title>
 					<ul>
+						<li>Consider this when designing the activities for your course project!</li>
 						<li>Reuse an existing activity type (they are loosely defined)</li>
 						<li>Add facets to it that you need to satisfy your use case</li>
 						<li>Adapting without hijacking is the litmus test of proper reuse</li>
@@ -1602,7 +1603,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<ul>
 						<li>Exercise types are considered relevant but not central</li>
 						<ul>
-							<li><a href="https://github.com/dret/exercise/blob/master/nikefuel.md">Nike Fuel</a> thinks <code>HIIT</code> is a thing</li>
+							<li><a href="https://github.com/dret/exercise/blob/master/types/API/nikefuel.md">Nike Fuel</a> thinks <code>HIIT</code> is a thing</li>
 							<li>Even <a href="http://en.wikipedia.org/wiki/High-intensity_interval_training">Wikipedia thinks it is a thing</a></li>
 						</ul>
 						<li>It is possible to transform proprietary into unified types</li>
