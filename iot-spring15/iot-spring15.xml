@@ -1622,16 +1622,13 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</part>
 		</part>
 	</presentation>
-	<presentation id="connectivity">
-		+ <presentation external="acl/2015-02-27-IoT-MakingThingsSmart.pdf">
+	<presentation external="acl/2015-02-27-IoT-Connecting-Things.pdf">
 		<title short="Connectivity">Connecting Things: Getting Things onto the Internet</title>
 		<date>2015-02-27</date>
 		<author>Simon Mayer</author>
-		+ <toc class="abstract">The purpose of this lecture is to give an overview of key technologies for connecting (smart) devices to the Internet (and the Web!). We will talk about specific classes of capabilities of devices that we want to bring to the IoT and discuss a few technologies that bring formerly dumb devices to "life."</toc>
+		<toc class="abstract">The purpose of this lecture is to give an overview of key technologies for connecting (smart) devices to the Internet (and the Web). We will talk about specific classes of capabilities of devices that we want to bring to the IoT and discuss a few technologies that bring formerly dumb devices to "life."</toc>
 		<toc class="reading"><a href="http://dl.acm.org/citation.cfm?id=1164130" title='A. Halevy, A. Rajaraman, and J. Ordille: "Data integration: The Teenage Years", Proceedings of the 32nd International Conference on Very Large Data Bases, pages 9-16, 2006.'>Data Integration</a></toc>
-		- <toc class="resources"><a href="http://en.wikipedia.org/wiki/Radio-frequency_identification" title="Wikipedia: Radio-Frequency Identification (RFID)">RFID</a>&#160;· <a href="http://www.bluetooth.com/">Bluetooth</a></toc>+ <toc class="resources">
-		+ <a href="http://en.wikipedia.org/wiki/Radio-frequency_identification" title="Wikipedia: Radio-Frequency Identification (RFID)">RFID</a>&#160;·
-		+ <a href="http://en.wikipedia.org/wiki/Energy_harvesting">Energy Harvesting</a>
+		<toc class="resources"><a href="http://en.wikipedia.org/wiki/Radio-frequency_identification" title="Wikipedia: Radio-Frequency Identification (RFID)">RFID</a>&#160;· <a href="http://en.wikipedia.org/wiki/Energy_harvesting">Energy Harvesting</a></toc>
 		<toc class="assignment"><a href="https://bcourses.berkeley.edu/courses/1293124/assignments">A5</a>&#160;(2015-03-05)</toc>
 	</presentation>
 	<presentation id="business-cases">
@@ -1640,10 +1637,6 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		<author>Florian Michahelles</author>
 		<toc class="reading"><a href="http://www.ee-iese.com/102/ingles/pdf/subirana.pdf" title='Brian Subirana, Sanjay Sarma, and Elgar Fleisch, "High-Resolution Management". IESE Alumni Magazine, 8–13, July/September 2006'>High-Resolution Management</a></toc>
 		<toc class="assignment"><a href="https://bcourses.berkeley.edu/courses/1293124/assignments">A6</a>&#160;(2015-03-19)</toc>
-				<slide>
-					<title>Abstract</title>
-					<p class="abstract"><toc class="abstract"/></p>
-				</slide>
 	</presentation>
 	<presentation id="business-models">
 		<title short="Business Models">Business Issues and Models</title>
