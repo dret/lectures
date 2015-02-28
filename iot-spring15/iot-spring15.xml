@@ -316,7 +316,7 @@
 				</ul>
 				<ol start="3">
 					<li><a href="https://bcourses.berkeley.edu/courses/1293124/assignments/6063666">Project Proposals</a> (submitted/graded individually)</li>
-					<li><a href="https://bcourses.berkeley.edu/courses/1293124/assignments">Project Development</a></li>
+					<li><a href="https://bcourses.berkeley.edu/courses/1293124/assignments/6091430">Group Formation &amp; Project Details</a></li>
 					<li><a href="https://bcourses.berkeley.edu/courses/1293124/assignments">Activity Vocabulary Development</a></li>
 					<li><a href="https://bcourses.berkeley.edu/courses/1293124/assignments">Getting Data into ASbase</a></li>
 					<li><a href="https://bcourses.berkeley.edu/courses/1293124/assignments">Getting Data out of ASbase</a></li>
@@ -371,7 +371,7 @@
 		<toc class="reading"><a href="http://www.vs.inf.ethz.ch/publ/papers/Internet-of-things.pdf" title='Friedemann Mattern and Christian Floerkemeier, "From the Internet of Computers to the Internet of Things", In: Kai Sachs, Ilia Petrov, Pablo Guerrero (Eds.): From Active Data Management to Event-Based Systems and More. LNCS, Vol. 6462, Springer, pp. 242-259, 2010'>From IoC to IoT</a>&#160;· <a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/" title='Vannevar Bush, "As We May Think", The Atlantic Monthly, 176(1):101-108, July 1945'>As We May Think</a></toc>
 		<toc class="resources"><a href="https://www.mnot.net/blog/2014/12/04/what_is_the_web" title="Mark Nottingham's Blog">What is the Web?</a>&#160;· <a href="http://dret.typepad.com/dretblog/2014/07/whats-wot.html" title="Erik Wilde's Blog">What's WoT?</a></toc>
 		<toc class="abstract"><em>Internet of Things (IoT)</em> and <em>Web of Things (WoT)</em> have become very popular terms, but with great fame comes great fuzziness. In this lecture we are putting things into perspective, and give one possible definition of the terms IoT and WoT. Understanding <q>the big picture</q> and how IoT/WoT fit in with other popular topics (such as Big Data) is another goal of this lecture.</toc>
-		<toc class="assignment"><a href="https://bcourses.berkeley.edu/courses/1293124/assignments/6059206">A1</a>&#160;(2015-02-05)</toc>
+		<toc class="assignment"><a href="https://bcourses.berkeley.edu/courses/1293124/assignments/6059206" title="Internet/Web Basics">A1</a>&#160;(2015-02-05)</toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -596,7 +596,7 @@
 		<toc class="reading"><a href="http://tools.ietf.org/html/rfc3439" title='Randy Bush and David Meyer, "Some Internet Architectural Guidelines and Philosophy", RFC 3439, December 2002'>Internet Architecture</a></toc>
 		<toc class="resources"><a href="http://en.wikipedia.org/wiki/OSI_model" title="Wikipedia: OSI Model">OSI</a></toc>
 		<toc class="abstract">Layering is one of the fundamental abstractions of IT systems and models. One important area where this concept is applied is computer communication networks. As one way how the terms IoT and WoT can be defined and distinguished, it is possible to look at how the internet and the web are layered, how they are related, and how this can be translated into scenarios where resources are real-world resources.</toc>
-		<toc class="assignment"><a href="https://bcourses.berkeley.edu/courses/1293124/assignments/6058676">A2</a>&#160;(2015-02-12)</toc>
+		<toc class="assignment"><a href="https://bcourses.berkeley.edu/courses/1293124/assignments/6058676" title="Mashing Up Things and Services">A2</a>&#160;(2015-02-12)</toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -994,7 +994,7 @@
 		<toc class="abstract">In the previous lectures we have discussed the technical foundations and drivers of the Internet of Things. The purpose of this lecture is to give a brief overview about the business drivers providing the rational of why corporations invest into IoT. We will take a look at some of the business opportunities of the IoT in the industrial domain and within domestic environments.</toc>
 		<toc class="reading"><a href="http://www.ptc.com/File%20Library/Topics/Harvard%20Business%20Review/HBR_How-Smart-Connected-Products-Are-Transforming-Competition.pdf" title='Michael E. Porter and James E. Heppelmann, "How Smart, Connected Products Are Transforming Competition", Harvard Business Review, November 2014'>Transforming Competition</a></toc>
 		<toc class="resources"><a href="http://www.iot-lab.ch/wp-content/uploads/2014/09/EN_Bosch-Lab-White-Paper-GM-im-IOT-1_1.pdf" title='Elgar Fleisch, Markus Weinberger, and Felix Wortmann, "Business Models for the Internet of Things", Bosch IoT Lab White Paper, August 2014'>Business Models for the IoT</a></toc>
-		<toc class="assignment"><a href="https://bcourses.berkeley.edu/courses/1293124/assignments/6063666">A3</a>&#160;(2015-02-17)</toc>
+		<toc class="assignment"><a href="https://bcourses.berkeley.edu/courses/1293124/assignments/6063666" title="Project Proposals">A3</a>&#160;(2015-02-17)</toc>
 	</presentation>
 	<presentation id="rest">
 		<title short="REST">Representational State Transfer (REST) and Activity Streams</title>
@@ -1003,7 +1003,7 @@
 		<toc class="reading"><a href="http://www.looah.com/source/view/2284">How I Explained REST to My <del>Wife</del>Parent</a></toc>
 		<toc class="resources"><a href="http://www.w3.org/Social/WG" title="W3C Social Web Working Group">W3C&#160;Social&#160;Web&#160;WG</a>&#160;· <a href="http://activitystrea.ms/" title='"Historical" Activity Streams Home Page'>Activity&#160;Streams&#160;1.0</a>&#160;· <a href="http://dret.github.io/W3C/SocialWG/AS1-in-AS2.html" title="Using Activity Streams 1.0 Vocabularies in Activity Streams 2.0">AS1&#160;Vocabulary</a>&#160;· <a href="http://www.iso.org/" title="International Organization for Standardization">ISO</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://www.ietf.org/" title="Internet Engineering Task Force">IETF</a></toc>
 		<toc class="abstract">The Web's architectural style, <em>Representational State Transfer (REST)</em>, is one promising candidate for building open, extensible, and extensible ecosystems of services on the Web. In this picture, Web's fundamental role is that of a Service-Oriented Architecture (SOA), where resources can be accessed as a way to achieve application goals, but their implementation is of no concern to the users of the resources. <em>Activity Streams (AS)</em> are a developing standard that allows the sharing of activities across a variety of application domain. In this lecture the standard is discussed, and we look at specific applications of it in IoT/WoT scenarios.</toc>
-		<toc class="assignment"><a href="https://bcourses.berkeley.edu/courses/1293124/assignments">A4</a>&#160;(2015-02-26)</toc>
+		<toc class="assignment"><a href="https://bcourses.berkeley.edu/courses/1293124/assignments/6091430" title="Group Formation &amp; Project Details">A4</a>&#160;(2015-02-26)</toc>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract"><toc class="abstract"/></p>
