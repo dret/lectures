@@ -1752,6 +1752,8 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<slide>
 				<title>Push as a Pattern</title>
 				<ul>
+					<li>PuSH's idea was to <em>extend</em> distribution protocols with push models</li>
+					<li><em>Hubs</em> manage new entries and push updates to subscribers</li>
 					<li>PuSH changed significantly between <a href="http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html">0.3</a> and <a href="https://superfeedr-misc.s3.amazonaws.com/pubsubhubbub-core-0.4.html">0.4</a></li>
 				</ul>
 			</slide>
