@@ -1754,6 +1754,11 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<ul>
 					<li>PuSH's idea was to <em>extend</em> distribution protocols with push models</li>
 					<li><em>Hubs</em> manage new entries and push updates to subscribers</li>
+					<ul>
+						<li>PuSH is <em>only</em> concerned how to find hubs and get updates from them</li>
+						<li>PuSH does <em>not</em> define a subscription management mechanism</li>
+						<li>PuSH does <em>not</em> define how hubs get updates from the source</li>
+					</ul>
 					<li>PuSH changed significantly between <a href="http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html">0.3</a> and <a href="https://superfeedr-misc.s3.amazonaws.com/pubsubhubbub-core-0.4.html">0.4</a></li>
 				</ul>
 			</slide>
