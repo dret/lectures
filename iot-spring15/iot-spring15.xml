@@ -1673,6 +1673,16 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</slide>
 		<part id="CoAP">
 			<title short="CoAP">Constrained Application Protocol (CoAP)</title>
+			<slide>
+				<title short="CBOR">Concise Binary Object Representation (CBOR)</title>
+				<ul>
+					<li>Intended as a compact data representation format for CoAP</li>
+					<ul>
+						<li>Structurally following the capabilities of JSON</li>
+						<li>Adding type information which allows more efficient encoding</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="XMPP">
 			<title short="XMPP">Extensible Messaging Protocol (XMPP)</title>
