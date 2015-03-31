@@ -1666,6 +1666,24 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</slide>
 		<slide>
 			<title>So/Too Many Protocols</title>
+			<ul>
+				<li>Protocols/standards necessarily are a tradeoff</li>
+				<ul>
+					<li>Dedicated solutions can be more specialized/optimized</li>
+					<li>Generalized solutions have advantages of reuse/interoperability</li>
+				</ul>
+				<li>Even <q>The Internet</q> was not the only solution initially</li>
+				<ul>
+					<li><link href="osi-layers" title="Open Systems Interconnection">OSI</link> was developed as an alternative</li>
+					<li>TCP/IP won and today is the <em>only</em> connectivity layer in most scenarios</li>
+				</ul>
+				<li>As new scenarios emerge and become mainstream, the landscape evolves</li>
+				<ul>
+					<li>Initially, there are a few first movers</li>
+					<li>After that, many different solutions are developed and used</li>
+					<li>Eventually, very few proven solutions become (de-facto) standards</li>
+				</ul>
+			</ul>
 		</slide>
 		<slide id="hammer-screw">
 			<title>People And Hammers</title>
@@ -1681,6 +1699,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 						<li>Structurally following the capabilities of JSON</li>
 						<li>Adding type information which allows more efficient encoding</li>
 					</ul>
+					<li>Main goal is processing efficiency, not representation compactness</li>
 				</ul>
 			</slide>
 		</part>
