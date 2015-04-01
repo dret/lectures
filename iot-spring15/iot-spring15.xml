@@ -1675,7 +1675,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				</ul>
 				<li>Even <q>The Internet</q> was not the only solution initially</li>
 				<ul>
-					<li><link href="osi-layers" title="Open Systems Interconnection">OSI</link> was developed as an alternative</li>
+					<li><link href="osi-layers">Open Systems Interconnection (OSI)</link> was developed as an alternative</li>
 					<li>TCP/IP won and today is the <em>only</em> connectivity layer in most scenarios</li>
 				</ul>
 				<li>As new scenarios emerge and become mainstream, the landscape evolves</li>
@@ -1689,6 +1689,10 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		<slide id="hammer-screw">
 			<title>People And Hammers</title>
 			<img src="hammer-screw.jpg" title="If you've never seen a screw it looks a lot like a nail." style="height : 65% ; margin : 4% ; "/>
+		</slide>
+		<slide id="=xkcd-standards">
+			<title>Creating the Silver Unicorn Hammer</title>
+			<img src="xkcd927.png" title="The nice thing about standards is that there are so many to choose from." href="https://xkcd.com/927/" style="height : 65% ; margin : 4% ; "/>
 		</slide>
 		<part id="CoAP">
 			<title short="CoAP">Constrained Application Protocol (CoAP)</title>
