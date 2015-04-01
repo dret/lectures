@@ -1697,6 +1697,42 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		<part id="CoAP">
 			<title short="CoAP">Constrained Application Protocol (CoAP)</title>
 			<slide>
+				<title short="CoAP">CoAP as <q>tiny HTTP++</q></title>
+				<ul>
+					<li>The target scenario is one of constrained nodes and networks</li>
+					<ul>
+						<li>Constrained nodes can be sensors with limited memory and processing power</li>
+						<li>Constrained networks can be slow and unreliable and intermittent</li>
+					</ul>
+					<li>CoAP is an <q>extended subset</q> of HTTP</li>
+					<ul>
+						<li>Not all HTTP methods are supported in CoAP</li>
+						<li>CoAP supports non-HTTP features (push and multicast)</li>
+						<li>CoAP is optimized for bandwidth and processing efficiency</li>
+					</ul>
+					<li>CoAP is designed for datagram transport protocols (UDP instead of TCP)</li>
+					<ul>
+						<li>Requests and responses are matched through message tokens</li>
+						<li>Multicast can be used to request responses from various resources</li>
+					</ul>
+					<li>Standardized in <a href="https://tools.ietf.org/html/rfc7252">IETF RFC 7252</a></li>
+				</ul>
+			</slide>
+			<slide id="CoRE">
+				<title short="CoRE">Constrained RESTful Environments (CoRE) Link Format</title>
+				<ul>
+					<li>Intended as resource discovery representation for CoAP</li>
+					<li>CoAP servers publish CoRE as one way for discovering resources</li>
+					<li>CoRE supports filters when discovering resources</li>
+					<pre>REQ: GET /sensors
+
+RES: 2.05 Content
+&lt;/sensors/temp>;rt="temperature-c";if="sensor",
+&lt;/sensors/light>;rt="light-lux";if="sensor"</pre>
+					<li>Standardized in <a href="https://tools.ietf.org/html/rfc7049">IETF RFC 7049</a></li>
+				</ul>
+			</slide>
+			<slide id="CBOR">
 				<title short="CBOR">Concise Binary Object Representation (CBOR)</title>
 				<ul>
 					<li>Intended as a compact data representation format for CoAP</li>
@@ -1705,6 +1741,10 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 						<li>Adding type information which allows more efficient encoding</li>
 					</ul>
 					<li>Main goal is processing efficiency, not representation compactness</li>
+					<ul>
+						<li>Smaller than JSON but not as small as complex compression</li>
+					</ul>
+					<li>Standardized in <a href="https://tools.ietf.org/html/rfc6690">IETF RFC 6690</a></li>
 				</ul>
 			</slide>
 		</part>
