@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE services [
+    <!ENTITY core-asdl SYSTEM "core-asdl.html">
+    <!ENTITY base-asdl SYSTEM "base-asdl.html">
+]>
+<?xml-stylesheet type="text/xsl" href="asdl2html.xsl"?>
+<services>
+    <service>&core-asdl;</service>
+    <service>&base-asdl;</service>
+</services>
