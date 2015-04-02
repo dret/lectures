@@ -1825,7 +1825,7 @@ RES: 2.05 Content
 				<listing src="xmpp-roster.txt" href="http://tools.ietf.org/html/rfc6121#section-2.2"/>
 			</slide>
 		</part>
-		<part id="websocket">
+		<part id="WebSocket">
 			<title>WebSocket</title>
 			<slide>
 				<title>Non-HTTP Internet Connectivity</title>
@@ -1933,14 +1933,26 @@ RES: 2.05 Content
 		<part id="WebRTC">
 			<title short="WebRTC">Web Real Time Communications (WebRTC)</title>
 			<slide>
-				<title>Is WebRTC a Protocol?</title>
+				<title>More P2P Than IoT</title>
 				<ul>
-					<li>It started as an API, but network APIs without protocols make little sense</li>
-					<li>Currently two organizations are working on WebRTC</li>
+					<li>WebRTC's main application area is real-time audio/video between clients</li>
+					<ul>
+						<li>A client/client model different from <link href="WebSocket">WebSocket</link>'s client/server model</li>
+						<li>In order to initiate client/client connections some <em>signaling</em> often is necessary</li>
+					</ul>
+					<li>It started as an API, but network APIs without protocols are not open</li>
 					<ul>
 						<li>W3C is developing the <a href="http://www.w3.org/TR/webrtc/">WebRTC API</a> (how to use WebRTC in JavaScript)</li>
 						<li>IETF is developing <a href="http://datatracker.ietf.org/wg/rtcweb/documents/" title="Documents of the IETF WebRTC WG">WebRTC protocols</a> so that browsers can communicate</li>
 					</ul>
+					<li>WebRTC usually needs three important APIs</li>
+					<ul>
+						<li><code href="http://www.w3.org/TR/mediacapture-streams/">MediaStream</code> to get access to data streams (such as camera and microphone)</li>
+						<li><code href="http://www.w3.org/TR/webrtc/">RTCPeerConnection</code> for audio or video calling (including encryption and bandwidth management)</li>
+						<li><code href="http://www.w3.org/TR/webrtc/">RTCDataChannel</code> for peer-to-peer communication of generic data</li>
+						<li>Some sort of signaling often is necessary for getting client information</li>
+					</ul>
+					<li>May be applicable to some P2P IoT scenarios</li>
 				</ul>
 			</slide>
 		</part>
