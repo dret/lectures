@@ -1905,6 +1905,13 @@ RES: 2.05 Content
 		</part>
 		<part id="MQTT">
 			<title short="MQTT">Message Queue Telemetry Transport (MQTT)</title>
+			<slide>
+				<title>Asynchronous Enterprise Messaging</title>
+				<img src="mqtt-logo.png" href="https://mqtt.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
 		</part>
 		<part id="WebRTC">
 			<title short="WebRTC">Web Real Time Communications (WebRTC)</title>
