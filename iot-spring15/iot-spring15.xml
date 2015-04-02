@@ -1831,11 +1831,47 @@ RES: 2.05 Content
 				<title>Non-HTTP Internet Connectivity</title>
 				<img src="websockets-logo.png" href="http://xmpp.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
 				<ul>
-					<li><a href="">XMLHttpRequest</a></li>
+					<li><code href="">XMLHttpRequest</code> kicked off <em>Web 2.0</em> but is limited</li>
+					<ul>
+						<li>The first time web apps can access the network to request information</li>
+						<li>Allows any content (not just XML), but is limited to HTTP</li>
+					</ul>
+					<li>WebSocket was initially part of HTML5 but then was spun off</li>
 					<li>WebSocket is both an API and a Protocol</li>
 					<ul>
-						<li>IETF publishes the <a href="https://tools.ietf.org/html/rfc6455">WebSocket Protocol</a></li>
 						<li>W3C publishes the <a href="http://www.w3.org/TR/websockets/">WebSocket API</a></li>
+						<li>IETF publishes the <a href="https://tools.ietf.org/html/rfc6455">WebSocket Protocol</a></li>
+					</ul>
+					<li>The WebSocket API allows web apps to open and use WebSocket connections</li>
+					<ul>
+						<li>Intended for any communications beyond HTTP's request/response pattern</li>
+						<li>The most popular pattern are long-lasting connections for live updates</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>HTTP to WebSocket Upgrade</title>
+				<listing src="websocket-upgrade-request.txt" href="https://www.websocket.org/aboutwebsocket.html"/>
+				<listing src="websocket-upgrade-response.txt" href="https://www.websocket.org/aboutwebsocket.html"/>
+			</slide>
+			<slide>
+				<title>WebSocket Protocol</title>
+				<ul>
+					<li>WebSocket sends data in <em>frames</em></li>
+					<ul>
+						<li>Frames are created when WebSocket peers exchange data</li>
+						<li>Frames can carry either <em>binary data</em> or <em>text</em></li>
+						<li><code>send(data)</code> API automatically decides which frame type to use</li>
+					</ul>
+					<li><em>Fragmentation</em> allows frames to be of unknown size when started</li>
+					<ul>
+						<li>Frames can be followed by <em>continuation frames</em> when fragmented</li>
+						<li>Fragments have no semantics and are simply a frame transfer mechanism</li>
+					</ul>
+					<li><em>Control frames</em> are used to communicate WebSocket state</li>
+					<ul>
+						<li><em>Close</em> frames are used to tear down WebSocket connections</li>
+						<li><em>Ping/Pong</em> frames are used as a way to exchange heartbeat information</li>
 					</ul>
 				</ul>
 			</slide>
