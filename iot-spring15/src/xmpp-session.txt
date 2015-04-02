@@ -1,17 +1,17 @@
 C: <?xml version='1.0'?>
-   <stream:stream
-       to='example.com'
-       xmlns='jabber:client'
-       xmlns:stream='http://etherx.jabber.org/streams'
-       version='1.0'>
+   <stream:stream to='example.com'
+                  xmlns='jabber:client'
+                  xmlns:stream='http://etherx.jabber.org/streams'
+                  version='1.0'>
 S: <?xml version='1.0'?>
-   <stream:stream
-       from='example.com'
-       id='someid'
-       xmlns='jabber:client'
-       xmlns:stream='http://etherx.jabber.org/streams'
-       version='1.0'>
+   <stream:stream from='example.com'
+                  id='someid'
+                  xmlns='jabber:client'
+                  xmlns:stream='http://etherx.jabber.org/streams'
+                  version='1.0'>
+
 ...  encryption, authentication, and resource binding ...
+
 C:   <message from='juliet@example.com'
               to='romeo@example.net'
               xml:lang='en'>
