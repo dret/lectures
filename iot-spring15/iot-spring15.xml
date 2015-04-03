@@ -1961,14 +1961,46 @@ RES: 2.05 Content
 			<slide>
 				<title>Push as a Pattern</title>
 				<ul>
-					<li>PuSH's idea was to <em>extend</em> distribution protocols with push models</li>
+					<li>PuSH's idea is to <em>extend</em> distribution protocols with push facilities</li>
+					<ul>
+						<li>Distribution protocols (such as feeds or <link href="as-basics">Activity Streams</link>) may be client-driven</li>
+						<li>By adding intermediaries (<em>hubs</em>), PuSH allows publish/subscribe for clients</li>
+						<li>PuSH is not concerned with how sources and hubs are interacting</li>
+					</ul>
 					<li><em>Hubs</em> manage new entries and push updates to subscribers</li>
 					<ul>
-						<li>PuSH is <em>only</em> concerned how to find hubs and get updates from them</li>
-						<li>PuSH does <em>not</em> define a subscription management mechanism</li>
+						<li>PuSH is <em>only</em> concerned about how to find hubs and get updates from them</li>
+						<li>PuSH does <em>not</em> define a complete subscription management mechanism</li>
 						<li>PuSH does <em>not</em> define how hubs get updates from the source</li>
 					</ul>
-					<li>PuSH changed significantly between <a href="http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html">0.3</a> and <a href="https://superfeedr-misc.s3.amazonaws.com/pubsubhubbub-core-0.4.html">0.4</a></li>
+					<li>PuSH was intended for Atom feeds but then was decoupled from them</li>
+					<ul>
+						<li>PuSH changed significantly between <a href="http://pubsubhubbub.googlecode.com/svn/trunk/pubsubhubbub-core-0.3.html">0.3</a> and <a href="https://superfeedr-misc.s3.amazonaws.com/pubsubhubbub-core-0.4.html">0.4</a></li>
+						<li>It would be conceivable to define a <q>PuSH AS Binding</q></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>PuSH Subscription Flow</title>
+				<ol>
+					<li>Client discovers <q>hub</q> link in a server's information feed</li>
+					<li>Client <code>POST</code>s subscription request to hub with a callback URI</li>
+					<li>Hub sends a verification request to check subscription request authenticity</li>
+					<li>Hub adds URI to its internal list of subscribed clients</li>
+					<li>Server and hub cooperate (push or pull) to get new content to the hub</li>
+					<li>Updates to server feeds are <code>POST</code>ed to callback URIs</li>
+					<li>Subscriptions (mostly) time out and have to be refreshed periodically</li>
+				</ol>
+			</slide>
+		</part>
+		<part>
+			<title>Conclusions</title>
+			<slide>
+				<title>Architecture is Hard</title>
+				<ul>
+					<li>The current IoT landscape is in a consolidation phase</li>
+					<li>Picking protocols is part technology, part strategy, part politics</li>
+					<li>Changing protocols is hard, so trying to pick well is important</li>
 				</ul>
 			</slide>
 		</part>
