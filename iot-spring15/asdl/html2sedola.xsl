@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- This file is copied from https://github.com/dret/ASDL/tree/master/0.1; please update this original source when making any changes. -->
 <!-- This XSLT transforms https://github.com/dret/sedola XMLs into github-friendly markdown. -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
     <xsl:template match="service">
