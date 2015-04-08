@@ -1,0 +1,131 @@
+<h1>Internet of Seats and Spaces Schema</h1>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation</h4>
+
+<p>This document presents the vocabulary used in the Internet of Seats and Spaces project.</p>
+
+<h2>Verbs</h2>
+
+<h3>checkin</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#checkin</h4>
+
+<p>Indicates that the actor has entered or occupied the object (place).</p>
+
+<h3>leave</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#leave</h4>
+
+<p>Indicates that the actor has left or vacated the object (place).</p>
+
+<h3>request</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#request</h4>
+
+<p>Indicates that the actor has requested the object (place) for a specified time.</p>
+
+<h3>cancel</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#cancel</h4>
+
+<p>Indicates that the actor has canceled the object (request).</p>
+
+<h3>approve</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#approve</h4>
+
+<p>Indicates that the actor has approved the object (request).</p>
+
+<h3>deny</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#deny</h4>
+
+<p>Indicates that the actor has denied the object (request).</p>
+
+<h2>Object Types</h2>
+
+<h3>place</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#place</h4>
+
+<p>Represents a physical location. This may be tied to a physical object (chair), a physical space (room), and/or a geographic location (latitude,longitude).</p>
+
+<h3>activity</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#activity</h4>
+
+<p>Represents an activity. This will be the object type for requests.</p>
+
+<h2>Object Properties</h2>
+
+<h3>position</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#position</h4>
+
+<p>The latitude, longitude, and altitude of the object (place). This is not necessarily constant for a single object (place). For example, a chair may be moved.</p>
+
+<p>This property has the type <code>JSON Object</code> and only has well-defined meaning for objects of the following types: Place</p>
+
+<h3>latitude</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#latitude</h4>
+
+<p>The latitude of this point on Earth according to the WGS-84 coordinate reference system in decimal degrees (e.g. 27.9881, -3.12676).</p>
+
+<p>This property has the type <code>Floating point Number</code> and only has well-defined meaning for objects of the following types: Place</p>
+
+<h3>longitude</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#longitude</h4>
+
+<p>The longitude of this point on Earth according to the WGS-74 coordinate reference system in decimal degrees (e.g. 86.9253, -134.4323).</p>
+
+<p>This property has the type <code>Floating point Number</code> and only has well-defined meaning for objects of the following types: Place</p>
+
+<h3>altitude</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#altitude</h4>
+
+<p>The elevation of this point relative to the Earth, in meters above or below mean sea level (e.g. 8848.00, -86.00).</p>
+
+<p>This property has the type <code>Floating point Number</code> and only has well-defined meaning for objects of the following types: Place</p>
+
+<h3>displayName</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#displayName</h4>
+
+<p>A human-readable name that describes the object (place).</p>
+
+<p>This property has the type <code>String</code> and only has well-defined meaning for objects of the following types: Place</p>
+
+<h3>startTime</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#startTime</h4>
+
+<p>A time that represents the beginning of the object (request).</p>
+
+<p>This property has the type <code>String</code> in the format <code>%Y-%m-%dT%H:%M:%SZ</code> and only has well-defined meaning for objects of the following types: Activity (verb: request)</p>
+
+<h3>endTime</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#endTime</h4>
+
+<p>A time that represents the end of the object (request).</p>
+
+<p>This property has the type <code>String</code> in the format <code>%Y-%m-%dT%H:%M:%SZ</code> and only has well-defined meaning for objects of the following types: Activity (verb: request)</p>
+
+<h3>descriptor-tags</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#descriptor-tags</h4>
+
+<p>A list of descriptors that detail the object's (place) properties.</p>
+
+<p>This property has the type <code>JSON Array</code>, consists of <code>String</code>s, and only has well-defined meaning for objects of the following types: Place</p>
+
+<h3>reason</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#reason</h4>
+
+<p>A human-readable explanation of the action (deny).</p>
+
+<p>This property has the type <code>String</code> and only has well-defined meaning for objects of the following types: Activity (verb: deny)</p>

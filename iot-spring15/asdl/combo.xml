@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE services [
-    <!ENTITY core-asdl SYSTEM "core-asdl.html">
-    <!ENTITY base-asdl SYSTEM "base-asdl.html">
+    <!ENTITY seats-and-spaces SYSTEM "seats-and-spaces.html">
 ]>
 <?xml-stylesheet type="text/xsl" href="asdl2html.xsl"?>
 <services>
-    <service>&core-asdl;</service>
-    <service>&base-asdl;</service>
+    <service>&seats-and-spaces;</service>
 </services>
