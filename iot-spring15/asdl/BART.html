@@ -1,0 +1,67 @@
+<h1>Internet of Bart</h1>
+
+<h4>http://internet-of-bart/schema-documentation/</h4>
+
+<p>This document presents the vocabulary used in the Internet of Bart project.</p>
+
+<h2>Verbs</h2>
+
+<h3>add</h3>
+
+<h4>http://internet-of-bart/schema-documentation/#add</h4>
+
+<p>Indicates that a new train is added to the tracking system. This happens every time a train leaves a terminus.</p>
+
+<h3>checkin</h3>
+
+<h4>http://internet-of-bart/schema-documentation/#checkin</h4>
+
+<p>Indicates that a train has arrived at a new station.</p>
+
+<h2>Object Types</h2>
+
+<h3>train</h3>
+
+<h4>http://internet-of-bart/schema-documentation/#train</h4>
+
+<p>Represents a moving Bart train. A train is an ensemble of cars.</p>
+
+<h3>car</h3>
+
+<h4>http://internet-of-bart/schema-documentation/#car</h4>
+
+<p>Represents a car of a train.</p>
+
+<h2>Object Properties</h2>
+
+<h3>train<em>density</em>index</h3>
+
+<h4>http://internet-of-bart/schema-documentation/#train<em>density</em>index</h4>
+
+<p>The density index of a train. 0 &lt; train<em>density</em>index &lt; 1</p>
+
+<p>This property has the type <code>Float</code> and only has well-defined meaning for objects of the following types: train</p>
+
+<h3>train_overcrowded</h3>
+
+<h4>http://internet-of-bart/schema-documentation/#train_overcrowded</h4>
+
+<p>Boolean. True if the train is considered overcrowded (train<em>density</em>index > 0.5), else it is False.</p>
+
+<p>This property has the type <code>Float</code> and only has well-defined meaning for objects of the following types: train</p>
+
+<h3>car<em>density</em>index</h3>
+
+<h4>http://internet-of-bart/schema-documentation/#acar<em>density</em>index</h4>
+
+<p>The density index of a car. 0 &lt; car<em>density</em>index &lt; 1</p>
+
+<p>This property has the type <code>Float</code> and only has well-defined meaning for objects of the following types: car</p>
+
+<h3>overcrowded</h3>
+
+<h4>http://internet-of-bart/schema-documentation/#overcrowded</h4>
+
+<p>Boolean. True if the car is considered overcrowded (car<em>density</em>index > 0.5), else it is False.</p>
+
+<p>This property has the type <code>Float</code> and only has well-defined meaning for objects of the following types: car</p>
