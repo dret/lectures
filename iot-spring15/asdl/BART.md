@@ -1,8 +1,8 @@
-# Internet of Bart
+# Internet of BART
 
 #### http://internet-of-bart/schema-documentation/
 
-This document presents the vocabulary used in the Internet of Bart project.
+This document presents the vocabulary used in the Internet of BART project.
 
 
 ## Verbs
@@ -30,7 +30,7 @@ Indicates that a train has arrived at a new station.
 
 #### http://internet-of-bart/schema-documentation/#train
 
-Represents a moving Bart train. A train is an ensemble of cars.
+Represents a moving BART train. A train is an ensemble of cars.
 
 
 ### car
