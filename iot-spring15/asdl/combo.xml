@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE services [
     <!ENTITY seats-and-spaces SYSTEM "seats-and-spaces.html">
+    <!ENTITY BART SYSTEM "BART.html">
 ]>
 <?xml-stylesheet type="text/xsl" href="asdl2html.xsl"?>
 <services>
     <service>&seats-and-spaces;</service>
+    <service>&BART;</service>
 </services>
