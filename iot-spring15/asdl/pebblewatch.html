@@ -1,113 +1,59 @@
 <h1>Kidesense: Pebbblewatch project</h1>
 
-<h3>Verbs</h3>
+<h2>Verbs</h2>
 
-<h4>add</h4>
+<h3>add</h3>
 
-<p>Adding a new record to ASBase indicating the step count for person wearing the smartwatch</p>
+<h4>http://people.ischool.berkeley.edu/~rahul.jverma/pebblewatch_project#add</h4>
 
-<p>This value would only indicate the count at the time of syncing of watch to the smartphone.</p>
+<p>Adding a new record to ASBase indicating the step count for person wearing the smartwatch. Indicates that the
+processed pebble watch data has been uploaded to ASBase.</p>
 
-<p>{ "actor": {</p>
+<h3>complete</h3>
 
-<p>"displayName": "TestPhone",</p>
+<h4>http://people.ischool.berkeley.edu/~rahul.jverma/pebblewatch_project#complete</h4>
 
-<p>"id": "http://example.org/AndroidPhone",</p>
+<ul>
+<li><p>Completion of a milestone (for example, 2500 steps).</p></li>
+<li><p>Completion of a daily step goal, for example 10,000 steps.</p></li>
+</ul>
 
-<p>"objectType": "device" },</p>
+<h3>create</h3>
 
-<p>"verb": "Add",</p>
-
-<p>"status": "completed",</p>
-
-<p>"object": {</p>
-
-<p>"dataFields": [ "number of steps" ],</p>
-
-<p>"objectType": "Binary" } ] }</p>
-
-<h4>complete</h4>
-
-<p>Completion of a milestone (for example, 2500 steps).</p>
-
-<p><em>{ "actor": {</em></p>
-
-<p><em>"displayName": "TestPhone",</em></p>
-
-<p><em>"id": "http://example.org/Smartphone",</em></p>
-
-<p><em>"objectType": "device" },</em></p>
-
-<p><em>"verb": "Complete",</em></p>
-
-<p><em>"status": "completed" }</em></p>
-
-<p><em>"object": {</em></p>
-
-<p><em>"objectType": "Event" ,</em></p>
-
-<p><em>“displayName”: “Milestone achieved!”} ] }</em></p>
-
-<p>Completion of a daily step goal, for example 10,000 steps.</p>
-
-<p><em>{ "actor": {</em></p>
-
-<p><em>"displayName": "TestPhone,</em></p>
-
-<p><em>"id": "http://example.org/Smartphone",</em></p>
-
-<p><em>"objectType": "device" },</em></p>
-
-<p><em>"verb": "Complete",</em></p>
-
-<p><em>"status": "completed" ,</em></p>
-
-<p><em>"object": {</em></p>
-
-<p><em>"objectType": "Event" ,</em></p>
-
-<p><em>“displayName”: “Goal met!”}</em></p>
-
-<p><em>} ] }</em></p>
-
-<h4>create</h4>
+<h4>http://people.ischool.berkeley.edu/~rahul.jverma/pebblewatch_project#create</h4>
 
 <p>Creation of a new step goal for the day, an example would be 10,000 steps.</p>
 
-<p><em>{ "actor": {</em></p>
+<h2>Object Types</h2>
 
-<p><em>"objectType": "person",</em></p>
+<h3>person</h3>
 
-<p><em>"displayName": "Bob" },</em></p>
-
-<p><em>"verb": "create",</em></p>
-
-<p><em>"object": {</em></p>
-
-<p><em>"objectType": "game",</em></p>
-
-<p><em>"displayName": "1000 step event created!" } }</em></p>
-
-<h3>Object Types</h3>
-
-<h4>person</h4>
+<h4>http://people.ischool.berkeley.edu/~rahul.jverma/pebblewatch_project#person</h4>
 
 <p>The actor who is currently using the smartwatch/smartphone to track their steps.</p>
 
-<h4>binary</h4>
+<h3>binary</h3>
 
-<p>This is an object representing data.</p>
+<h4>http://people.ischool.berkeley.edu/~rahul.jverma/pebblewatch_project#binary</h4>
 
-<h4>event</h4>
+<p>This is an object representing data, in this particular case it is the step count.</p>
+
+<h3>event</h3>
+
+<h4>http://people.ischool.berkeley.edu/~rahul.jverma/pebblewatch_project#event</h4>
 
 <p>The completion of the step count objective for that particular day.</p>
 
-<h4>game</h4>
+<h3>game</h3>
+
+<h4>http://people.ischool.berkeley.edu/~rahul.jverma/pebblewatch_project#game</h4>
 
 <p>The creation of a new step count goal by the actor.</p>
 
-<h3>Object Properties</h3>
+<h2>Object Properties</h2>
 
-<h4>data</h4>
+<h3>data</h3>
+
+<h4>http://people.ischool.berkeley.edu/~rahul.jverma/pebblewatch_project#data</h4>
 
 <p>The number of steps taken by the Person at the time of syncing of smartwatch to the smartphone.</p>
