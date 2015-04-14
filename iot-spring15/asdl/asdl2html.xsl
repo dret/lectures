@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- This file is copied from https://github.com/dret/ASDL/tree/master/0.1; please update this original source when making any changes. -->
-<!-- This XSLT transforms ADSL service documents into HTML. It MD-derived HTML as input, and Sedola XML as intermediate processing step. -->
+<!-- This XSLT transforms ASDL service documents into HTML. It MD-derived HTML as input, and Sedola XML as intermediate processing step. -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
     <xsl:output method="html" indent="yes" encoding="UTF-8"/>
     <xsl:include href="html2sedola.xsl"/>
