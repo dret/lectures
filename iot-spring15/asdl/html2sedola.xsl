@@ -31,7 +31,7 @@
                         <xsl:element name="{('as-verb','as-object-type','as-object-property')[$index]}">
                             <xsl:attribute name="def" select="self::h3/text()"/>
                             <documentation>
-                                <xsl:if test="self::*[2]/local-name() eq 'h4'">
+                                <xsl:if test="current-group()/local-name() eq 'h4'">
                                     <xsl:attribute name="href" select="self::*[2]/text()"/>
                                 </xsl:if>
                                 <xsl:apply-templates select="current-group()[position() gt 2]"/>
