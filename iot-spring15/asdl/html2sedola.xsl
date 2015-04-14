@@ -32,7 +32,7 @@
                             <xsl:attribute name="def" select="self::h3/text()"/>
                             <documentation>
                                 <xsl:if test="current-group()[2]/local-name() eq 'h4'">
-                                    <xsl:attribute name="href" select="self::*[2]/text()"/>
+                                    <xsl:attribute name="href" select="current-group()[2]/text()"/>
                                 </xsl:if>
                                 <xsl:apply-templates select="current-group()[position() gt 2]"/>
                             </documentation>
