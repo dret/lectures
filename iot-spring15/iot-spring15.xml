@@ -2031,10 +2031,10 @@ RES: 2.05 Content
 		<title>IoT in the Wild</title>
 		<date>2015-04-24</date>
 		<toc class="resources"><a href="http://www.dquid.com/">DQuid</a>&#160;· <a href="http://litmusautomation.com/">Litmus Automation</a></toc>
-		<toc class="abstract">We have two guest speakers talking about IoT companies and initiatives out there in the wild:
+		<toc class="abstract">We have two guest speakers talking about IoT companies and activities out there in the wild:
 			<ul>
 				<li><em>Stefano Marzani (DQuid)</em>: <q><b>Co-Creating Digital Things</b></q></li>
-				<li><em>Vatsal Shah (Litmus Automation)</em>: <q><b>???</b></q></li>
+				<li><em>Vatsal Shah (Litmus Automation)</em>: <q><b>Enterprise IoT Architecture with Real Use Cases</b></q></li>
 			</ul>
 		</toc>
 		<slide>
@@ -2046,8 +2046,8 @@ RES: 2.05 Content
 			<p class="abstract">The projections for connected IoT devices are staggering. Much focus is on the connectivity itself, but who is taking care about the content development process? Products must be conceived as an inextricable bundle of a physical part and digital content. Furthermore, connectivity is not just <q>cloud</q>, but must take care of objects' internals and propose abstraction methodologies to reduce application development complexities. In our vision, connectivity, digital content, and a developer-friendly framework are the elements of a successful IoT deployment.</p>
 		</slide>
 		<slide id="LitmusAutomation">
-			<title>Vatsal Shah (Litmus Automation): ???</title>
-			<p class="abstract">???</p>
+			<title>Vatsal Shah (Litmus Automation): Enterprise IoT Architecture with Real Use Cases</title>
+			<p class="abstract">There are some key challenges in IoT around efficient device oriented architecture, security and privacy. The presentation will cover how enterprises are currently implementing solutions, how we can improve over it and followed by two real use cases of our retail and automobile clients.</p>
 		</slide>
 	</presentation>
 	<presentation id="projects">
