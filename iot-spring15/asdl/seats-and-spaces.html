@@ -56,6 +56,12 @@
 
 <p>Represents an activity. This will be the object type for requests.</p>
 
+<h3>trainRecordWithSeatingInfo</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#trainRecordWithSeatingInfo</h4>
+
+<p>Represents a trainRecord object from the Internet of Bart with additional information regarding available seats.</p>
+
 <h2>Object Properties</h2>
 
 <h3>position</h3>
@@ -72,7 +78,7 @@
 
 <p>The latitude of this point on Earth according to the WGS-84 coordinate reference system in decimal degrees (e.g. 27.9881, -3.12676).</p>
 
-<p>This property has the type <code>Floating point Number</code> and only has well-defined meaning for objects of the following types: Place</p>
+<p>This property has the type <code>Floating point Number</code> and only has well-defined meaning for objects of the following types: Position</p>
 
 <h3>longitude</h3>
 
@@ -80,7 +86,7 @@
 
 <p>The longitude of this point on Earth according to the WGS-74 coordinate reference system in decimal degrees (e.g. 86.9253, -134.4323).</p>
 
-<p>This property has the type <code>Floating point Number</code> and only has well-defined meaning for objects of the following types: Place</p>
+<p>This property has the type <code>Floating point Number</code> and only has well-defined meaning for objects of the following types: Position</p>
 
 <h3>altitude</h3>
 
@@ -88,15 +94,47 @@
 
 <p>The elevation of this point relative to the Earth, in meters above or below mean sea level (e.g. 8848.00, -86.00).</p>
 
-<p>This property has the type <code>Floating point Number</code> and only has well-defined meaning for objects of the following types: Place</p>
+<p>This property has the type <code>Floating point Number</code> and only has well-defined meaning for objects of the following types: Position</p>
+
+<h3>address</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#address</h4>
+
+<p>The physical address of the object (place). This is not necessarily constant for a single object (place). For example, a chair may be moved.</p>
+
+<p>This property has the type <code>JSON Object</code> and only has well-defined meaning for objects of the following types: Place</p>
+
+<h3>locality</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#locality</h4>
+
+<p>The city or locality of the address.</p>
+
+<p>This property has the type <code>String</code> and only has well-defined meaning for objects of the following types: Address</p>
+
+<h3>region</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#region</h4>
+
+<p>The state or region of the address.</p>
+
+<p>This property has the type <code>String</code> and only has well-defined meaning for objects of the following types: Address</p>
+
+<h3>provider</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#provider</h4>
+
+<p>The application, group, or company that published the activity.</p>
+
+<p>This property has the type <code>JSON Object</code> and only has well-defined meaning for objects of the following types: Activity</p>
 
 <h3>displayName</h3>
 
 <h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#displayName</h4>
 
-<p>A human-readable name that describes the object (place).</p>
+<p>A human-readable name that describes the object.</p>
 
-<p>This property has the type <code>String</code> and only has well-defined meaning for objects of the following types: Place</p>
+<p>This property has the type <code>String</code> and only has well-defined meaning for objects of the following types: Place, Provider</p>
 
 <h3>startTime</h3>
 
@@ -129,3 +167,11 @@
 <p>A human-readable explanation of the action (deny).</p>
 
 <p>This property has the type <code>String</code> and only has well-defined meaning for objects of the following types: Activity (verb: deny)</p>
+
+<h3>availableSeats</h3>
+
+<h4>http://serene-wave-9290.herokuapp.com/schema-documentation/#availableSeats</h4>
+
+<p>A count of the number of available seats in the Bart car.</p>
+
+<p>This property has the type <code>Integer</code> and only has well-defined meaning for objects of the following types: trainRecordWithSeatingInfo</p>
