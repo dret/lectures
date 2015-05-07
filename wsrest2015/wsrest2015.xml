@@ -28,10 +28,40 @@
 	<date short="2015-05-18">May 18, 2015</date>
 	<copyright>2015 Erik Wilde</copyright>
 	<presentation id="index">
-		<title>Leveraging the Web Platform for the Web of Things</title>
+		<title>REST: Growing Up</title>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract">...</p>
 		</slide>
+		<part id="discovery">
+			<title>Resource Discovery</title>
+			<slide>
+				<title></title>
+			</slide>
+		</part>
+		<part id="service-description">
+			<title>Resource Capabilities</title>
+			<slide>
+				<title></title>
+			</slide>
+		</part>
+		<part id="testing">
+			<title>Testing REST</title>
+			<slide>
+				<title></title>
+			</slide>
+		</part>
+		<part id="diversity">
+			<title>No Silver Unicorn</title>
+			<slide>
+				<title>Embrace Diversity</title>
+			</slide>
+		</part>
+		<part id="conclusions">
+			<title></title>
+			<slide>
+				<title></title>
+			</slide>
+		</part>
 	</presentation>
 </hotspot>
