@@ -13,12 +13,26 @@ Complete DataDrop export as CSV, then doing everything client-side.
 Visualization shows timeline with dots, filtered by system/activity combination (all combinations available by drop down).
 
 
-# BART
-
-.........
-
-
 # Seats and Spaces
+
+Trying to find open seats in libraries and potentially public places like cafes and public transport.
+
+Number of activities to create and manage reservations, and to check and update seat status.
+
+Arduino-based hardware with force sensor and wifi connectivity.
+
+Smartphone app for showing chair status and making reservations.
+
+Using the admin console to approve or deny requests for seats, which then updates the status on the smartphone app.
+
+ASBase standard schema worked pretty well for a lot of the actions, posting activities was easy.
+
+Challenging was the fact that the objects (spaces) felt like second-class citizens, and querying was not as powerful as would have been nice.
+
+Integration with BART by consuming trainRecord and republishing as trainRecordwithSeatInfo (adding available seat information)
+
+
+# BART
 
 .........
 
