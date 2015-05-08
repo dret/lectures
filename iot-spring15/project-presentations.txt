@@ -2,11 +2,11 @@
 
 Expandable Dashboard for your Digital Life; tackling the challenge of all the different things that are available, but not uniformly.
 
-Integrating ASBase, IFTTT and Wolfram DataDrop
+Integrating ASbase, IFTTT and Wolfram DataDrop
 
 Defining the general data schema with user ID, system name, activity type, timestamp, and location.
 
-ETL from ASBase via Python script for extracting data and then import it to DataDrop.
+ETL from ASbase via Python script for extracting data and then import it to DataDrop.
 
 Complete DataDrop export as CSV, then doing everything client-side.
 
@@ -25,21 +25,26 @@ Smartphone app for showing chair status and making reservations.
 
 Using the admin console to approve or deny requests for seats, which then updates the status on the smartphone app.
 
-ASBase standard schema worked pretty well for a lot of the actions, posting activities was easy.
+ASbase standard schema worked pretty well for a lot of the actions, posting activities was easy.
 
 Challenging was the fact that the objects (spaces) felt like second-class citizens, and querying was not as powerful as would have been nice.
 
 Integration with BART by consuming trainRecord and republishing as trainRecordwithSeatInfo (adding available seat information)
 
 
+# SmartSeat
+
+Earn seats by walking enough to earn a seat reservation.
+
+Pebble application tracking activity, counting steps, and posting the information to ASbase.
+
+Java and C for implementing the phone and the smart watch app
+
+Smartphone app syncs with Pebble, shows the updated status, and maybe allows additional actions based on milestones.
+
+
 # BART
 
 .........
-
-
-# Pebble
-
-.........
-
 
 
