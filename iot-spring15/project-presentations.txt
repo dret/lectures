@@ -45,6 +45,16 @@ Smartphone app syncs with Pebble, shows the updated status, and maybe allows add
 
 # BART
 
-.........
+Which car of a BART car to board when train arrives. BART counts people entering and leaving the system, but not on a per-car basis.
+
+Use sensors to determine car crowding, then display the information to commuters so that they can decide which car to board.
+
+Main sensor is image processing, using the already present CCTV cameras to determine car usage.
+
+Accelerometer measures car movement, triggering image capture and analysis.
+
+Integration with the Seats and Spaces project, which could be very useful for handicapped people.
+
+Instead of displaying info on a mobile app, it might be more useful to have indicators in stations.
 
 
