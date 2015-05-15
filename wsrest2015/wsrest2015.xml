@@ -86,14 +86,22 @@
 					<li>Gartner predicts <a href="http://www.gartner.com/newsroom/id/2905717">5 billion connected things in 2015</a></li>
 					<ul>
 						<li>… and 25 billion by 2020</li>
+						<li></li>
 					</ul>
 					<li>IoT establishes connectivity, WoT establishes actionability</li>
+					<li>Many IoT scenarios are closed verticals</li>
+					<ul>
+						<li>We're re-living the pre-Web era of the Internet</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide>
 				<title>Discovery Design</title>
 				<ul>
-					<li></li>
+					<li>IoT makes core REST principles even more important</li>
+					<ul>
+						<li>Write resilient clients that can deal with failing interactions</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
@@ -111,7 +119,16 @@
 			<slide>
 				<title>How robust is my Client?</title>
 				<ul>
-					<li>...</li>
+					<li>Openness</li>
+					<li>S</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>What to test in REST</title>
+				<ul>
+					<li>Openness</li>
+					<li>Availability</li>
+					<li>Scalability</li>
 				</ul>
 			</slide>
 		</part>
