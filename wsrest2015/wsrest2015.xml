@@ -40,7 +40,7 @@
 			<img src="eierlegende-wollmilchsau.jpg" style="height : 65% ; margin : 4% ; "/>
 		</slide>
 		<part id="ws-rest">
-			<title>WS-REST turns 6!</title>
+			<title>WS-REST Turns 6!</title>
 			<slide>
 				<title>Happy 6th Birthday!</title>
 				<img src="birthday-cake.jpg" href="http://sullivanscreativecakes.webs.com/photos/Cake-Creations/bright.jpg" style="height : 65% ; margin : 4% ; "/>
@@ -108,7 +108,13 @@
 		<part id="service-description">
 			<title>Resource Capabilities</title>
 			<slide>
-				<title>What can my Resource do?</title>
+				<title>What Can My Resource Do?</title>
+				<ul>
+					<li>...</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>What's the Link Interaction?</title>
 				<ul>
 					<li>...</li>
 				</ul>
@@ -117,14 +123,14 @@
 		<part id="testing">
 			<title>Testing REST</title>
 			<slide>
-				<title>How robust is my Client?</title>
+				<title>How Robust Is My Client?</title>
 				<ul>
 					<li>Openness</li>
 					<li>S</li>
 				</ul>
 			</slide>
 			<slide>
-				<title>What to test in REST</title>
+				<title>What to Test in REST</title>
 				<ul>
 					<li>Openness</li>
 					<li>Availability</li>
