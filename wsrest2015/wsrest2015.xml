@@ -28,11 +28,16 @@
 	<affiliation>Siemens</affiliation>
 	<date short="2015-05-18">May 18, 2015</date>
 	<copyright>2015 Erik Wilde</copyright>
+	<toc class="abstract">...</toc>
 	<presentation id="index">
 		<title>REST: Growing Up</title>
 		<slide>
 			<title>Abstract</title>
 			<p class="abstract">...</p>
+		</slide>
+		<slide>
+			<title>Eierlegende Wollmilchsau</title>
+			<img src="eierlegende-wollmilchsau.jpg" style="height : 65% ; margin : 4% ; "/>
 		</slide>
 		<part id="ws-rest">
 			<title>WS-REST turns 6!</title>
@@ -63,16 +68,39 @@
 		<part id="discovery">
 			<title>Resource Discovery</title>
 			<slide>
-				<title></title>
+				<title>Where are my Resources?</title>
 				<ul>
-					<li>...</li>
+					<li>REST required identification but has no specific discovery</li>
+					<ul>
+						<li>Without resource IDs, there can be no REST</li>
+						<li>There is no specific <q>discovery protocol</q> in the REST style</li>
+						<li>Without discovery, living in an open and decentralized world is impossible</li>
+						<li>Discovery is just another service! <a href="http://www.google.com/">Here's a rather popular one!</a></li>
+					</ul>
+					
+				</ul>
+			</slide>
+			<slide>
+				<title>IoT Drives Discovery</title>
+				<ul>
+					<li>Gartner predicts <a href="http://www.gartner.com/newsroom/id/2905717">5 billion connected things in 2015</a></li>
+					<ul>
+						<li>… and 25 billion by 2020</li>
+					</ul>
+					<li>IoT establishes connectivity, WoT establishes actionability</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Discovery Design</title>
+				<ul>
+					<li></li>
 				</ul>
 			</slide>
 		</part>
 		<part id="service-description">
 			<title>Resource Capabilities</title>
 			<slide>
-				<title></title>
+				<title>What can my Resource do?</title>
 				<ul>
 					<li>...</li>
 				</ul>
@@ -81,7 +109,7 @@
 		<part id="testing">
 			<title>Testing REST</title>
 			<slide>
-				<title></title>
+				<title>How robust is my Client?</title>
 				<ul>
 					<li>...</li>
 				</ul>
