@@ -128,16 +128,35 @@
 			<slide>
 				<title>How Robust Is My Client?</title>
 				<ul>
-					<li>Openness</li>
-					<li>S</li>
+					<li><q>Test mode</q> is something I'd like to see in <q>REST frameworks</q></li>
 				</ul>
 			</slide>
 			<slide>
-				<title>What to Test in REST</title>
+				<title>Resource Identification</title>
+				<ul>
+					<li><a href="http://www.w3.org/Provider/Style/URI">Cool URIs</a> are cool, but clients should not trust them</li>
+					<li>Break URI patterns as much as you can</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Resource Access</title>
 				<ul>
 					<li>Openness</li>
 					<li>Availability</li>
 					<li>Scalability</li>
+					<li></li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Resource Representation</title>
+				<ul>
+					<li>Serve surprise media types</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Resource Variability</title>
+				<ul>
+					<li>Serve resources using all possible extension points</li>
 				</ul>
 			</slide>
 		</part>
