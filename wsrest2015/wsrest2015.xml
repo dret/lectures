@@ -28,16 +28,19 @@
 	<affiliation>Siemens</affiliation>
 	<date short="2015-05-18">May 18, 2015</date>
 	<copyright>2015 Erik Wilde</copyright>
-	<toc class="abstract">...</toc>
 	<presentation id="index">
 		<title>REST: Growing Up</title>
 		<slide>
 			<title>Abstract</title>
-			<p class="abstract">...</p>
+			<p class="abstract">REST's popularity as a design pattern for provide services has steadily gained over the last decade. While this is great news because this means that there are more decentralized and browsable services out there, it also</p>
 		</slide>
 		<slide>
-			<title>Eierlegende Wollmilchsau</title>
-			<img src="eierlegende-wollmilchsau.jpg" style="height : 65% ; margin : 4% ; "/>
+			<title>Eierlegende Wollmilchsau?</title>
+			<img src="eierlegende-wollmilchsau.jpg" title="The only REST service you'll ever need" style="height : 65% ; margin : 4% ; "/>
+		</slide>
+		<slide>
+			<title>Toolbox!</title>
+			<img src="toolbox.jpg" href="http://commons.wikimedia.org/wiki/File:Minnesota_State_Capitol_Woodworkers_Toolbox_Historical_Society.jpg" title="Provide bits and pieces that can be assembled as required" style="height : 65% ; margin : 4% ; "/>
 		</slide>
 		<part id="ws-rest">
 			<title>WS-REST Turns 6!</title>
