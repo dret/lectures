@@ -32,7 +32,7 @@
 		<title>REST: Growing Up</title>
 		<slide>
 			<title>Abstract</title>
-			<p class="abstract">REST's popularity as a design pattern for providing services has steadily gained over the last decade. While this is great news because this means that there are more decentralized and browsable services out there, it also creates the risk of attempting to create <q>REST standards</q>. After looking back on REST's success (and WS-REST's 6-year history), this talk is an attempt to present REST as a pattern and a practice, and not as a technology that needs standardized technologies and tools. As REST practitioners our goal should be to create solutions that are a good fit for their problem space, instead of attempting to create the single one solution that we can simply use everywhere.</p>
+			<p class="abstract">REST's popularity as a design pattern for providing services has steadily gained traction over the last decade. While this is great news because more decentralized and browsable services become available, it also creates the risk of attempting to create <q>REST standards</q>. After looking back on REST's success (and WS-REST's 6-year history), this talk is an attempt to present REST as a pattern and a practice, and not as a technology that needs standardized technologies and tools. As REST practitioners our goal should be to create solutions that are a good fit for their problem space, instead of attempting to create the single one solution that we can simply use everywhere.</p>
 		</slide>
 		<slide>
 			<title>Eierlegende Wollmilchsau?</title>
@@ -67,20 +67,52 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide>
+				<title>Papers at WS-REST</title>
+				<ul>
+					<li>From applications to frameworks</li>
+					<ul>
+						<li>Initially there were mostly papers on specific RESTful designs</li>
+						<li>This shifted to papers about general-purpose frameworks</li>
+					</ul>
+					<li>REST's status as an <em>architectural style</em> is a challenge</li>
+					<ol>
+						<li>You can apply the style for a problem and present the solution</li>
+						<li>You can attempt to codify the style in a framework for all solutions</li>
+						<li>Or you could deconstruct the style into <q>style elements</q></li>
+					</ol>
+				</ul>
+			</slide>
+			<slide>
+				<title>REST Style Elements</title>
+				<ul>
+					<li>A set of constraints that establish the REST architectural style</li>
+				</ul>
+				<ol>
+					<li>Resource Identification</li>
+					<li>Uniform Interface</li>
+					<li>Self-Describing Messages</li>
+					<li>Hypermedia Driving Application State (HATEOAS)</li>
+					<li>Stateless Interactions</li>
+				</ol>
+			</slide>
 		</part>
 		<part id="discovery">
 			<title>Resource Discovery</title>
 			<slide>
 				<title>Where are my Resources?</title>
 				<ul>
-					<li>REST required identification but has no specific discovery</li>
+					<li>REST requires identification but has no specific discovery</li>
 					<ul>
 						<li>Without resource IDs, there can be no REST</li>
 						<li>There is no specific <q>discovery protocol</q> in the REST style</li>
 						<li>Without discovery, living in an open and decentralized world is impossible</li>
 						<li>Discovery is just another service! <a href="http://www.google.com/">Here's a rather popular one!</a></li>
 					</ul>
-					
+					<li>Discovery is covered by REST and does not need special treatment</li>
+					<ul>
+						<li>Formats such as <em>Atom</em> or <em>Activity Streams</em> essentially are discovery protocols</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide>
@@ -89,12 +121,13 @@
 					<li>Gartner predicts <a href="http://www.gartner.com/newsroom/id/2905717">5 billion connected things in 2015</a></li>
 					<ul>
 						<li>… and 25 billion by 2020</li>
-						<li></li>
+						<li>Many things will be indirectly and/or intermittently connected</li>
 					</ul>
 					<li>IoT establishes connectivity, WoT establishes actionability</li>
-					<li>Many IoT scenarios are closed verticals</li>
+					<li>Many IoT scenarios today are closed verticals</li>
 					<ul>
 						<li>We're re-living the pre-Web era of the Internet</li>
+						<li>Currently, IoT seems to go the way of Social: Siloization</li>
 					</ul>
 				</ul>
 			</slide>
