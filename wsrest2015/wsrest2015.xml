@@ -32,15 +32,15 @@
 		<title>REST: Growing Up</title>
 		<slide>
 			<title>Abstract</title>
-			<p class="abstract">REST's popularity as a design pattern for provide services has steadily gained over the last decade. While this is great news because this means that there are more decentralized and browsable services out there, it also</p>
+			<p class="abstract">REST's popularity as a design pattern for providing services has steadily gained over the last decade. While this is great news because this means that there are more decentralized and browsable services out there, it also creates the risk of attempting to create <q>REST standards</q>. After looking back on REST's success (and WS-REST's 6-year history), this talk is an attempt to present REST as a pattern and a practice, and not as a technology that needs standardized technologies and tools. As REST practitioners our goal should be to create solutions that are a good fit for their problem space, instead of attempting to create the single one solution that we can simply use everywhere.</p>
 		</slide>
 		<slide>
 			<title>Eierlegende Wollmilchsau?</title>
-			<img src="eierlegende-wollmilchsau.jpg" title="The only REST service you'll ever need" style="height : 65% ; margin : 4% ; "/>
+			<img src="eierlegende-wollmilchsau.jpg" title="The only REST service you'll ever need!" style="height : 65% ; margin : 4% ; "/>
 		</slide>
 		<slide>
 			<title>Toolbox!</title>
-			<img src="toolbox.jpg" href="http://commons.wikimedia.org/wiki/File:Minnesota_State_Capitol_Woodworkers_Toolbox_Historical_Society.jpg" title="Provide bits and pieces that can be assembled as required" style="height : 65% ; margin : 4% ; "/>
+			<img src="toolbox.jpg" href="http://commons.wikimedia.org/wiki/File:Minnesota_State_Capitol_Woodworkers_Toolbox_Historical_Society.jpg" title="Provide bits and pieces that can be assembled as required." style="height : 65% ; margin : 4% ; "/>
 		</slide>
 		<part id="ws-rest">
 			<title>WS-REST Turns 6!</title>
