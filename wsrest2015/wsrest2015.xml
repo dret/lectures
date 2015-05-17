@@ -221,10 +221,40 @@
 		</part>
 		<part id="testing">
 			<title>Testing REST</title>
+			<slide id="lazy-users">
+				<title>Why?</title>
+				<ul>
+					<li>Minimalism means that client code is more brittle than necessary</li>
+					<ul>
+						<li>Developers take shortcuts when parsing/processing representations</li>
+						<li>Developers assume that connectivity always is perfect</li>
+						<li>Developers see URI patterns and use those instead of links</li>
+					</ul>
+					<li>Minimalist clients will break easier than necessary</li>
+					<ul>
+						<li>REST's loose coupling comes at a cost and with a benefit</li>
+						<li>Breaking clients in many cases are a problem for services as well</li>
+					</ul>
+					<li><q>Certification</q> is one possible way to harden clients</li>
+					<ul>
+						<li>Running against a test service that explores the REST spectrum</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="rest-test">
 				<title>How Robust Is My Client?</title>
 				<ul>
 					<li><q>Test mode</q> is something I'd like to see in <q>REST frameworks</q></li>
+					<ul>
+						<li>Not everything can be frameworked, but at least some aspects of testing</li>
+					</ul>
+					<li>When running in test mode, services explore the complete REST spectrum</li>
+					<ul>
+						<li><link href="testing-identification"/> by serving uncool URIs</li>
+						<li><link href="testing-access"/> by not reliably responding to requests</li>
+						<li><link href="testing-representation"/> by serving surprise media types</li>
+						<li><link href="testing-variability"/> by wildly varying representations</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="testing-identification">
