@@ -119,7 +119,7 @@
 					<li>WoT is nothing more than applying REST to IoT resources</li>
 					<li>How likely is it that all IoT resources use one media type?</li>
 					<ul>
-						<li>Probably similar to the likelihood that all APIs use the same media type</li>
+						<li>Probably similar to the likelihood that all Web services use the same media type</li>
 						<li>Why not share patterns instead of trying to share technologies?</li>
 					</ul>
 				</ul>
@@ -262,27 +262,48 @@
 				<ul>
 					<li><a href="http://www.w3.org/Provider/Style/URI">Cool URIs</a> are cool, but clients should not trust them</li>
 					<li>Break URI patterns as much as you can</li>
+					<li>URIs should be stable (no aliases) but otherwise unconstrained</li>
+					<li>In the production service, serve well-designed and pretty URIs</li>
+					<ul>
+						<li>Hackable URIs are one of nice things about exploring REST services</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="testing-access">
 				<title>Resource Access</title>
 				<ul>
-					<li>Openness</li>
-					<li>Availability</li>
-					<li>Scalability</li>
-					<li></li>
+					<li>Openness means that URI schemes may change</li>
+					<li>Availability means that URIs may be unreachable/unavailable anytime</li>
+					<li>Clients should behave reasonable</li>
+					<ul>
+						<li>Many mobile apps behave rather badly in offline mode</li>
+						<li>Offline mode can be very sophisticated (allowing local interactions)</li>
+						<li>At the very least being offline should not be treated as an error</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="testing-representation">
 				<title>Resource Representation</title>
 				<ul>
-					<li>Serve surprise media types</li>
+					<li>Serve surprise media types if allowed by the client</li>
+					<ul>
+						<li>Teaches clients to be specific in what they accept</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="testing-variability">
 				<title>Resource Variability</title>
 				<ul>
 					<li>Serve resources using all possible extension points</li>
+					<li>Tricky because specific to the media type</li>
+					<li>Processing models tell clients how to handle representations</li>
+					<ul>
+						<li>Explore the whole spectrum of what's allowed by the processing model</li>
+					</ul>
+					<li><em>mustIgnore</em> and <em>mustUnderstand</em> semantics are an important part of this</li>
+					<ul>
+						<li><em>mustUnderstand</em> should make a client stop for unknown extensions</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
