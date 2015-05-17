@@ -30,25 +30,25 @@
 	<copyright>2015 Erik Wilde</copyright>
 	<presentation id="index">
 		<title>REST: Growing Up</title>
-		<slide>
+		<slide id="abstract">
 			<title>Abstract</title>
 			<p class="abstract">REST's popularity as a design pattern for providing services has steadily gained traction over the last decade. While this is great news because more decentralized and browsable services become available, it also creates the risk of attempting to create <q>REST standards</q>. After looking back on REST's success (and WS-REST's 6-year history), this talk is an attempt to present REST as a pattern and a practice, and not as a technology that needs standardized technologies and tools. As REST practitioners our goal should be to create solutions that are a good fit for their problem space, instead of attempting to create the single one solution that we can simply use everywhere.</p>
 		</slide>
-		<slide>
+		<slide id="wollmilchsau">
 			<title>Eierlegende Wollmilchsau?</title>
 			<img src="eierlegende-wollmilchsau.jpg" title="The only REST service you'll ever need!" style="height : 65% ; margin : 4% ; "/>
 		</slide>
-		<slide>
+		<slide id="toolbox">
 			<title>Toolbox!</title>
 			<img src="toolbox.jpg" href="http://commons.wikimedia.org/wiki/File:Minnesota_State_Capitol_Woodworkers_Toolbox_Historical_Society.jpg" title="Provide bits and pieces that can be assembled as required." style="height : 65% ; margin : 4% ; "/>
 		</slide>
 		<part id="ws-rest">
 			<title>WS-REST Turns 6!</title>
-			<slide>
-				<title>Happy 6th Birthday!</title>
+			<slide id="anniversary">
+				<title>Happy 6th Anniversary!</title>
 				<img src="birthday-cake.jpg" href="http://sullivanscreativecakes.webs.com/photos/Cake-Creations/bright.jpg" style="height : 65% ; margin : 4% ; "/>
 			</slide>
-			<slide>
+			<slide id="history">
 				<title>WS-REST: Looking Back</title>
 				<ul>
 					<li>Six workshops all over the globe</li>
@@ -67,7 +67,7 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="papers">
 				<title>Papers at WS-REST</title>
 				<ul>
 					<li>From applications to frameworks</li>
@@ -77,13 +77,13 @@
 					</ul>
 					<li>REST's status as an <em>architectural style</em> is a challenge</li>
 					<ol>
-						<li>You can apply the style for a problem and present the solution</li>
-						<li>You can attempt to codify the style in a framework for all solutions</li>
-						<li>Or you could deconstruct the style into <q>style elements</q></li>
+						<li>You can apply the style to a specific problem and present the solution</li>
+						<li>You can attempt to codify the style in a framework as a generic solutions</li>
+						<li>Or you can deconstruct the style into <q>style elements</q></li>
 					</ol>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="style-elements">
 				<title>REST Style Elements</title>
 				<ul>
 					<li>A set of constraints that establish the REST architectural style</li>
@@ -96,16 +96,29 @@
 					<li>Stateless Interactions</li>
 				</ol>
 			</slide>
-			<slide>
+			<slide id="using-style-elements">
 				<title>Using Style Elements to Solve Problems</title>
 				<ul>
-					<li>...</li>
+					<li>REST is not intended as the answer to all problems in IT</li>
+					<ul>
+						<li>Trading optimization of tight coupling for evolvability of loose coupling</li>
+					</ul>
+					<li>REST works best for large-scale scenarios with decentralized evolution</li>
+					<li>Evolution can happen on a variety of axes</li>
+					<ul>
+						<li>Open media types allow for extensions and non-breaking versioning</li>
+						<li>Link types allow to establish new relationships between resources</li>
+						<li>New media types can be introduced and deployed incrementally</li>
+					</ul>
 				</ul>
+			</slide>
+			<slide id="iot">
+				<title>IoT Scenarios</title>
 			</slide>
 		</part>
 		<part id="discovery">
 			<title>Resource Discovery</title>
-			<slide>
+			<slide id="finding-resources">
 				<title>Where are my Resources?</title>
 				<ul>
 					<li>REST requires identification but has no specific discovery</li>
@@ -121,7 +134,7 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="iot-discovery">
 				<title>IoT Drives Discovery</title>
 				<ul>
 					<li>Gartner predicts <a href="http://www.gartner.com/newsroom/id/2905717">5 billion connected things in 2015</a></li>
@@ -137,7 +150,7 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="discovery-design">
 				<title>Discovery Design</title>
 				<ul>
 					<li>IoT makes core REST principles even more important</li>
@@ -149,13 +162,13 @@
 		</part>
 		<part id="service-description">
 			<title>Resource Capabilities</title>
-			<slide>
+			<slide id="capabilities">
 				<title>What Can My Resource Do?</title>
 				<ul>
 					<li>...</li>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="link-description">
 				<title>What's the Link Interaction?</title>
 				<ul>
 					<li>...</li>
@@ -164,20 +177,20 @@
 		</part>
 		<part id="testing">
 			<title>Testing REST</title>
-			<slide>
+			<slide id="rest-test">
 				<title>How Robust Is My Client?</title>
 				<ul>
 					<li><q>Test mode</q> is something I'd like to see in <q>REST frameworks</q></li>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="testing-identification">
 				<title>Resource Identification</title>
 				<ul>
 					<li><a href="http://www.w3.org/Provider/Style/URI">Cool URIs</a> are cool, but clients should not trust them</li>
 					<li>Break URI patterns as much as you can</li>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="testing-access">
 				<title>Resource Access</title>
 				<ul>
 					<li>Openness</li>
@@ -186,13 +199,13 @@
 					<li></li>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="testing-representation">
 				<title>Resource Representation</title>
 				<ul>
 					<li>Serve surprise media types</li>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="testing-variability">
 				<title>Resource Variability</title>
 				<ul>
 					<li>Serve resources using all possible extension points</li>
@@ -205,7 +218,7 @@
 				<title>Creating the Silver Unicorn Hammer</title>
 				<img src="xkcd927.png" title="The nice thing about standards is that there are so many to choose from." href="https://xkcd.com/927/" style="height : 65% ; margin : 4% ; "/>
 			</slide>
-			<slide>
+			<slide id="diversity">
 				<title>Embrace Diversity</title>
 				<ul>
 					<li>...</li>
@@ -214,13 +227,13 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
-			<slide>
+			<slide id="rest-next">
 				<title>REST: What's Next?</title>
 				<ul>
 					<li>...</li>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="thanks">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.jpg" title="What's Next?" style="height : 65% ; margin : 4% ; "/>
 			</slide>
