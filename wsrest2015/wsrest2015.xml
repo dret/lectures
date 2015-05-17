@@ -236,7 +236,19 @@
 			<slide id="sedola">
 				<title>Service Documentation</title>
 				<ul>
-					<li><a href="https://github.com/dret/sedola">Service Documentation Language (Sedola)</a></li>
+					<li><a href="https://github.com/dret/sedola">Service Documentation Language (Sedola)</a> is an attempt to harmonize documentation</li>
+					<li>Just like <a href="http://www.iana.org/assignments/">IANA's registries</a> provide uniform access to well-known concepts</li>
+					<li>Services are supposed to list the well-known and proprietary concepts of their <q>surface</q></li>
+					<ul>
+						<li>Media types, Link relation types, HTTP headers, HTTP status codes, …</li>
+						<li>The actual specification/definition is not constrained by Sedola</li>
+					</ul>
+					<li>Shared documentation framework with minimal set of constraints</li>
+					<ul>
+						<li>Focusing on those concepts that matter for REST and the Web</li>
+						<li>Allowing services to use those technologies that are the best fit</li>
+					</ul>
+					<li>Main scenario: Organizations with diverse sets of REST services</li>
 				</ul>
 			</slide>
 			<slide id="hyperpedia">
