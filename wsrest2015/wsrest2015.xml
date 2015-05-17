@@ -114,6 +114,15 @@
 			</slide>
 			<slide id="iot">
 				<title>IoT Scenarios</title>
+				<ul>
+					<li>IoT's next step is the <em>Web of Things (WoT)</em></li>
+					<li>WoT is nothing more than applying REST to IoT resources</li>
+					<li>How likely is it that all IoT resources use one media type?</li>
+					<ul>
+						<li>Probably similar to the likelihood that all APIs use the same media type</li>
+						<li>Why not share patterns instead of trying to share technologies?</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="discovery">
@@ -222,6 +231,18 @@
 				<title>Embrace Diversity</title>
 				<ul>
 					<li>...</li>
+				</ul>
+			</slide>
+			<slide id="sedola">
+				<title>Service Documentation</title>
+				<ul>
+					<li><a href="https://github.com/dret/sedola">Service Documentation Language (Sedola)</a></li>
+				</ul>
+			</slide>
+			<slide id="hyperpedia">
+				<title>Hypermedia Patterns</title>
+				<ul>
+					<li><a href="https://github.com/dret/hyperpedia">Hyperpedia</a></li>
 				</ul>
 			</slide>
 		</part>
