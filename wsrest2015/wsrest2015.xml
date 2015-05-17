@@ -371,7 +371,13 @@
 			<slide id="rest-next">
 				<title>REST: What's Next?</title>
 				<ul>
-					<li>...</li>
+					<li>Keep the patterns coming!</li>
+					<ul>
+						<li>Additions to established registries, maybe establishing new ones</li>
+					</ul>
+					<li>We need better testing to make REST ecosystems more robust</li>
+					<li>Maybe some hypermedia <q>pattern</q> for JSON formats?</li>
+					<li>Personally: <a href="https://github.com/dret/sedola">Service Documentation Language (Sedola)</a>, <a href="https://github.com/dret/hyperpedia">Hyperpedia</a>, <a href="https://datatracker.ietf.org/drafts/draft-ietf-appsawg-http-problem/">Problem reports</a>, <a href="https://datatracker.ietf.org/drafts/draft-nottingham-json-home/">Home documents</a></li>
 				</ul>
 			</slide>
 			<slide id="thanks">
