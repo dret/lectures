@@ -165,7 +165,15 @@
 					<li>IoT makes core REST principles even more important</li>
 					<ul>
 						<li>Write resilient clients that can deal with failing interactions</li>
+						<li>Do not hardcode URI patterns anywhere in your client code</li>
 					</ul>
+					<li>Cloud lock-in is one of the big anti-patterns of today</li>
+					<ul>
+						<li>Sometimes strategic, sometimes simply cloud-age mainframe thinking</li>
+						<li>If your cloud is not talking to other clouds, you have a problem</li>
+						<li>Clouds are implementation details below the REST level</li>
+					</ul>
+					<li>Discovery should be able to discover anything with a URI</li>
 				</ul>
 			</slide>
 		</part>
