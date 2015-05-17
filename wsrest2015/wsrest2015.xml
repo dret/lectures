@@ -316,7 +316,21 @@
 			<slide id="diversity">
 				<title>Embrace Diversity</title>
 				<ul>
-					<li>...</li>
+					<li>REST is all about loose coupling</li>
+					<ul>
+						<li>Loose coupling between clients and service to allow evolution</li>
+						<li>Loose coupling across services which can be different but interlinked</li>
+					</ul>
+					<li>Finding the balance between specificity and generality is tricky</li>
+					<ul>
+						<li>Too specific and services cannot use technologies very well</li>
+						<li>Too general and the idioms and properties of a domain are not well-reflected</li>
+						<li>Searching/finding the sweet spot is best left to domain experts</li>
+					</ul>
+					<li>Focus on patterns and principles instead of technologies</li>
+					<ul>
+						<li>REST provides the connective fabric to interlink everything</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="sedola">
