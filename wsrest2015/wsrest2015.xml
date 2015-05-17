@@ -254,7 +254,15 @@
 			<slide id="hyperpedia">
 				<title>Hypermedia Patterns</title>
 				<ul>
-					<li><a href="https://github.com/dret/hyperpedia">Hyperpedia</a></li>
+					<li><a href="https://github.com/dret/hyperpedia">Hyperpedia</a> should be a starting point for hypermedia designers</li>
+					<li>Containing a list on hypermedia concepts and formats</li>
+					<ul>
+						<li>Concepts focus on the hypermedia aspects of any given hypermedia format</li>
+						<li>Formats are described in terms of the concepts</li>
+						<li>Each format can have a variety of link types (<a href="http://dret.typepad.com/dretblog/2009/10/links-in-html.html">HTML has …</a>)</li>
+					</ul>
+					<li>Hyperpedia should help REST architects to find and/or define formats</li>
+					<li>Ideally, there should be a matrix of concepts vs. formats</li>
 				</ul>
 			</slide>
 		</part>
