@@ -32,7 +32,7 @@
 		<title>REST: Growing Up</title>
 		<slide id="abstract">
 			<title>Abstract</title>
-			<p class="abstract">REST's popularity as a design pattern for providing services has steadily gained traction over the last decade. While this is great news because more decentralized and browsable services become available, it also creates the risk of attempting to create <q>REST standards</q>. After looking back on REST's success (and WS-REST's 6-year history), this talk is an attempt to present REST as a pattern and a practice, and not as a technology that needs standardized technologies and tools. As REST practitioners our goal should be to create solutions that are a good fit for their problem space, instead of attempting to create the single one solution that we can simply use everywhere.</p>
+			<p class="abstract">REST's popularity as a design pattern for providing services has steadily gained traction over the last decade. While this is great news because more decentralized and browsable services become available, it also creates the risk of attempting to create <q>REST standards</q>. After looking back at REST's success (and WS-REST's 6-year history), this talk is an attempt to present REST as a pattern and a practice, and not as a technology that needs standardized technologies and tools. As REST practitioners, our goal should be to create solutions that are a good fit for their problem space, instead of attempting to create the single one solution that we can simply use everywhere.</p>
 		</slide>
 		<slide id="wollmilchsau">
 			<title>Eierlegende Wollmilchsau?</title>
@@ -73,12 +73,12 @@
 					<li>From applications to frameworks</li>
 					<ul>
 						<li>Initially there were mostly papers on specific RESTful designs</li>
-						<li>This shifted to papers about general-purpose frameworks</li>
+						<li>This shifted to papers about general-purpose designs and frameworks</li>
 					</ul>
 					<li>REST's status as an <em>architectural style</em> is a challenge</li>
 					<ol>
 						<li>You can apply the style to a specific problem and present the solution</li>
-						<li>You can attempt to codify the style in a framework as a generic solutions</li>
+						<li>You can attempt to codify the style in a framework as a generic solution</li>
 						<li>Or you can deconstruct the style into <q>style elements</q></li>
 					</ol>
 				</ul>
@@ -97,9 +97,9 @@
 				</ol>
 			</slide>
 			<slide id="using-style-elements">
-				<title>Using Style Elements to Solve Problems</title>
+				<title>Using Style Elements to Solve SOA Problems</title>
 				<ul>
-					<li>REST is not intended as the answer to all problems in IT</li>
+					<li>REST is not intended to be the answer to all problems in IT services</li>
 					<ul>
 						<li>Trading optimization of tight coupling for evolvability of loose coupling</li>
 					</ul>
@@ -115,7 +115,7 @@
 			<slide id="iot">
 				<title>IoT Scenarios</title>
 				<ul>
-					<li>IoT's next step is the <em>Web of Things (WoT)</em></li>
+					<li>IoT's next logical step is the <em>Web of Things (WoT)</em></li>
 					<li>WoT is nothing more than applying REST to IoT resources</li>
 					<li>How likely is it that all IoT resources use one media type?</li>
 					<ul>
@@ -132,7 +132,7 @@
 				<ul>
 					<li>REST requires identification but has no specific discovery</li>
 					<ul>
-						<li>Without resource IDs, there can be no REST</li>
+						<li>Without resource identifiers, there can be no REST</li>
 						<li>There is no specific <q>discovery protocol</q> in the REST style</li>
 						<li>Without discovery, living in an open and decentralized world is impossible</li>
 						<li>Discovery is just another service! <a href="http://www.google.com/">Here's a rather popular one!</a></li>
@@ -157,12 +157,13 @@
 						<li>We're re-living the pre-Web era of the Internet</li>
 						<li>Currently, IoT seems to go the way of Social: Siloization</li>
 					</ul>
+					<li>After discovery, WoT resources should be usable anywhere on the Web</li>
 				</ul>
 			</slide>
 			<slide id="discovery-design">
 				<title>Discovery Design</title>
 				<ul>
-					<li>IoT makes core REST principles even more important</li>
+					<li>IoT/WoT makes core REST principles even more important</li>
 					<ul>
 						<li>Write resilient clients that can deal with failing interactions</li>
 						<li>Do not hardcode URI patterns anywhere in your client code</li>
@@ -170,10 +171,13 @@
 					<li>Cloud lock-in is one of the big anti-patterns of today</li>
 					<ul>
 						<li>Sometimes strategic, sometimes simply cloud-age mainframe thinking</li>
-						<li>If your cloud is not talking to other clouds, you have a problem</li>
+						<li>If your cloud is not linkable with other clouds, you have a problem</li>
 						<li>Clouds are implementation details below the REST level</li>
 					</ul>
 					<li>Discovery should be able to discover anything with a URI</li>
+					<ul>
+						<li>IoT protocols manage connectivity issues at lower levels</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
@@ -189,7 +193,7 @@
 					<li>IoT challenge is the extreme variability in resource capabilities</li>
 					<ul>
 						<li>Most likely, certain classes of IoT resources/scenarios can share sets of concepts</li>
-						<li>Domain experts should provide the bounded context of those classes</li>
+						<li>Domain experts should provide the bounded contexts of those classes</li>
 					</ul>
 					<li>REST's service description is the media type specification</li>
 					<ul>
@@ -201,36 +205,34 @@
 			<slide id="link-description">
 				<title>What's the Link Interaction?</title>
 				<ul>
-					<li><q>How to follow a link?</q> is a core REST question</li>
+				<li><q>How to follow a link?</q> is a core REST question</li>
+					<li>URI scheme provides the framework for possible interactions</li>
+					<li>Link source provides additional hints</li>
 					<ul>
-						<li>URI scheme provides the framework for possible interactions</li>
-						<li>Link source provides additional hints</li>
-						<ul>
-							<li>Hints can be hardcoded or provide flexibility to encode following hints</li>
-							<li>Interactions should be stateless, so link source should not be required</li>
-						</ul>
-						<li>Solution: Embed link description but also make it stand-alone</li>
-						<ul>
-							<li>Resources can provide link descriptions as interaction instructions</li>
-							<li>Link sources can make instructions narrower when required by context</li>
-						</ul>
-						<li>Attempted in a variety of places, but nothing seems to stick</li>
+						<li>Hints can be hardcoded or through affordances for encoding interaction instructions</li>
+						<li>Interactions should be stateless, so link source should never be required</li>
 					</ul>
+					<li>Solution: Embed link description but also make it standalone</li>
+					<ul>
+						<li>Resources can provide link descriptions as interaction instructions</li>
+						<li>Link sources can make instructions narrower when required by context</li>
+					</ul>
+					<li>Attempted in a variety of places, but nothing seems to stick</li>
 				</ul>
 			</slide>
 		</part>
 		<part id="testing">
 			<title>Testing REST</title>
 			<slide id="lazy-users">
-				<title>Why?</title>
+				<title>Why Test REST?</title>
 				<ul>
 					<li>Minimalism means that client code is more brittle than necessary</li>
 					<ul>
 						<li>Developers take shortcuts when parsing/processing representations</li>
 						<li>Developers assume that connectivity always is perfect</li>
-						<li>Developers see URI patterns and use those instead of links</li>
+						<li>Developers recognize URI patterns and use those instead of links</li>
 					</ul>
-					<li>Minimalist clients will break easier than necessary</li>
+					<li>Minimalist clients will break earlier than necessary</li>
 					<ul>
 						<li>REST's loose coupling comes at a cost and with a benefit</li>
 						<li>Breaking clients in many cases are a problem for services as well</li>
@@ -244,9 +246,9 @@
 			<slide id="rest-test">
 				<title>How Robust Is My Client?</title>
 				<ul>
-					<li><q>Test mode</q> is something I'd like to see in <q>REST frameworks</q></li>
+					<li><q>Test mode</q> should be a standard feature in all <q>REST frameworks</q></li>
 					<ul>
-						<li>Not everything can be frameworked, but at least some aspects of testing</li>
+						<li>Not everything can be frameworked, but some automation is possible</li>
 					</ul>
 					<li>When running in test mode, services explore the complete REST spectrum</li>
 					<ul>
@@ -302,7 +304,7 @@
 					</ul>
 					<li><em>mustIgnore</em> and <em>mustUnderstand</em> semantics are an important part of this</li>
 					<ul>
-						<li><em>mustUnderstand</em> should make a client stop for unknown extensions</li>
+						<li><em>mustUnderstand</em> should make a client stop on unknown extensions</li>
 					</ul>
 				</ul>
 			</slide>
@@ -318,14 +320,15 @@
 				<ul>
 					<li>REST is all about loose coupling</li>
 					<ul>
-						<li>Loose coupling between clients and service to allow evolution</li>
+						<li>Loose coupling between clients and services to allow evolution</li>
 						<li>Loose coupling across services which can be different but interlinked</li>
 					</ul>
 					<li>Finding the balance between specificity and generality is tricky</li>
 					<ul>
-						<li>Too specific and services cannot use technologies very well</li>
+						<li>Too specific and services cannot use technologies in all cases</li>
 						<li>Too general and the idioms and properties of a domain are not well-reflected</li>
 						<li>Searching/finding the sweet spot is best left to domain experts</li>
+						<li>As a general guideline, start small and care about useful openness</li>
 					</ul>
 					<li>Focus on patterns and principles instead of technologies</li>
 					<ul>
@@ -377,7 +380,7 @@
 					</ul>
 					<li>We need better testing to make REST ecosystems more robust</li>
 					<li>Maybe some hypermedia <q>pattern</q> for JSON formats?</li>
-					<li>Personally: <a href="https://github.com/dret/sedola">Service Documentation Language (Sedola)</a>, <a href="https://github.com/dret/hyperpedia">Hyperpedia</a>, <a href="https://datatracker.ietf.org/drafts/draft-ietf-appsawg-http-problem/">Problem reports</a>, <a href="https://datatracker.ietf.org/drafts/draft-nottingham-json-home/">Home documents</a></li>
+					<li>Personally: <a href="https://github.com/dret/sedola">Sedola</a>, <a href="https://github.com/dret/hyperpedia">Hyperpedia</a>, <a href="https://datatracker.ietf.org/drafts/draft-ietf-appsawg-http-problem/">Problem reports</a>, <a href="https://datatracker.ietf.org/drafts/draft-nottingham-json-home/">Home documents</a></li>
 				</ul>
 			</slide>
 			<slide id="thanks">
