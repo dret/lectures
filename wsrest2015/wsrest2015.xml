@@ -182,13 +182,40 @@
 			<slide id="capabilities">
 				<title>What Can My Resource Do?</title>
 				<ul>
-					<li>...</li>
+					<li>Discovery is the first step to find new resources</li>
+					<ul>
+						<li>Second step is to <q>understand</q> the resource</li>
+					</ul>
+					<li>IoT challenge is the extreme variability in resource capabilities</li>
+					<ul>
+						<li>Most likely, certain classes of IoT resources/scenarios can share sets of concepts</li>
+						<li>Domain experts should provide the bounded context of those classes</li>
+					</ul>
+					<li>REST's service description is the media type specification</li>
+					<ul>
+						<li>Large design spectrum between generic and specific description models</li>
+						<li>Making service descriptions as simple as possible is the way to go</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="link-description">
 				<title>What's the Link Interaction?</title>
 				<ul>
-					<li>...</li>
+					<li><q>How to follow a link?</q> is a core REST question</li>
+					<ul>
+						<li>URI scheme provides the framework for possible interactions</li>
+						<li>Link source provides additional hints</li>
+						<ul>
+							<li>Hints can be hardcoded or provide flexibility to encode following hints</li>
+							<li>Interactions should be stateless, so link source should not be required</li>
+						</ul>
+						<li>Solution: Embed link description but also make it stand-alone</li>
+						<ul>
+							<li>Resources can provide link descriptions as interaction instructions</li>
+							<li>Link sources can make instructions narrower when required by context</li>
+						</ul>
+						<li>Attempted in a variety of places, but nothing seems to stick</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
