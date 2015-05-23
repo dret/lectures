@@ -55,6 +55,35 @@
 				<img src="xkcd927.png" title="The nice thing about standards is that there are so many to choose from." href="https://xkcd.com/927/" style="height : 65% ; margin : 4% ; "/>
 			</slide>
 		</part>
+		<part id="data-and-services">
+			<title>Web Data and Web Services</title>
+			<slide id="web-data">
+				<title>Web Data</title>
+				<ul>
+					<li><a href="https://github.com/dret/webdata">Web Data</a> follows five simple principles</li>
+				</ul>
+				<ol>
+					<li>★: Linkable</li>
+					<li>★★: Parseable</li>
+					<li>★★★: Understandable</li>
+					<li>★★★★: Linked</li>
+					<li>★★★★★: Usable</li>
+				</ol>
+			</slide>
+			<slide id="web-services">
+				<title>Web Services: REST</title>
+				<ul>
+					<li>A set of constraints establishes the <span title="Representational State Transfer">REST</span> architectural style</li>
+				</ul>
+				<ol>
+					<li>Resource Identification</li>
+					<li>Uniform Interface</li>
+					<li>Self-Describing Messages</li>
+					<li>Hypermedia Driving Application State (HATEOAS)</li>
+					<li>Stateless Interactions</li>
+				</ol>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="thanks">
