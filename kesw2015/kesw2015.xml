@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="siemens" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="wsrest2015.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="http://creativecommons.org/licenses/by/3.0/" short="CC 3.0">
+		<div class="license">
+			<p><a rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/ischool/ischool/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
+		</div>
+	</license>
+	<title><a href="http://ws-rest.org/2015/">Workshop on Web APIs and RESTful Design (WS-REST 2015)</a></title>
+	<author><a href="http://dret.net/netdret/">Erik Wilde</a></author>
+	<affiliation>Siemens</affiliation>
+	<date short="2015-05-18">May 18, 2015</date>
+	<copyright>2015 Erik Wilde</copyright>
+	<presentation id="index">
+		<title>REST: Growing Up</title>
+		<slide id="abstract">
+			<title>Abstract</title>
+			<p class="abstract">REST's popularity as a design pattern for providing services has steadily gained traction over the last decade. While this is great news because more decentralized and browsable services become available, it also creates the risk of attempting to create <q>REST standards</q>. After looking back at REST's success (and WS-REST's 6-year history), this talk is an attempt to present REST as a pattern and a practice, and not as a technology that needs standardized technologies and tools. As REST practitioners, our goal should be to create solutions that are a good fit for their problem space, instead of attempting to create the single one solution that we can simply use everywhere.</p>
+		</slide>
+		<slide id="wollmilchsau">
+			<title>Eierlegende Wollmilchsau?</title>
+			<img src="eierlegende-wollmilchsau.jpg" title="The only REST service you'll ever need!" style="height : 65% ; margin : 4% ; "/>
+		</slide>
+		<slide id="toolbox">
+			<title>Toolbox!</title>
+			<img src="toolbox.jpg" href="http://commons.wikimedia.org/wiki/File:Minnesota_State_Capitol_Woodworkers_Toolbox_Historical_Society.jpg" title="Provide bits and pieces that can be assembled as required." style="height : 65% ; margin : 4% ; "/>
+		</slide>
+		<part id="ws-rest">
+			<title>WS-REST Turns 6!</title>
+			<slide id="anniversary">
+				<title>Happy 6th Anniversary!</title>
+				<img src="birthday-cake.jpg" href="http://sullivanscreativecakes.webs.com/photos/Cake-Creations/bright.jpg" style="height : 65% ; margin : 4% ; "/>
+			</slide>
+			<slide id="history">
+				<title>WS-REST: Looking Back</title>
+				<ul>
+					<li>Six workshops all over the globe</li>
+					<ul>
+						<li><a href="http://ws-rest.org/2010/">WS-REST 2010</a> hosted by WWW2010 in Raleigh, NC, USA</li>
+						<li><a href="http://ws-rest.org/2011/">WS-REST 2011</a> hosted by WWW2011 in Hyderabad, India</li>
+						<li><a href="http://ws-rest.org/2012/">WS-REST 2012</a> hosted by WWW2012 in Lyon, France</li>
+						<li><a href="http://ws-rest.org/2013/">WS-REST 2013</a> hosted by WWW2013 in Rio de Janeiro, Brazil</li>
+						<li><a href="http://ws-rest.org/2014/">WS-REST 2014</a> hosted by WWW2014 in Seoul, Korea</li>
+						<li><a href="http://ws-rest.org/2015/">WS-REST 2015</a> hosted by WWW2015 in Firenze, Italy</li>
+					</ul>
+					<li>Two books of revised and extended workshop papers</li>
+					<ul>
+						<li><q><a href="http://ws-rest.org/book/">REST: From Research to Practice</a></q> published by Springer</li>
+						<li><q><a href="http://ws-rest.org/book/2/">REST: Advanced Research Topics and Practical Applications</a></q> published by Springer</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="papers">
+				<title>Papers at WS-REST</title>
+				<ul>
+					<li>From applications to frameworks</li>
+					<ul>
+						<li>Initially there were mostly papers on specific RESTful designs</li>
+						<li>This shifted to papers about general-purpose designs and frameworks</li>
+					</ul>
+					<li>REST's status as an <em>architectural style</em> is a challenge</li>
+					<ol>
+						<li>You can apply the style to a specific problem and present the solution</li>
+						<li>You can attempt to codify the style in a framework as a generic solution</li>
+						<li>Or you can deconstruct the style into <q>style elements</q></li>
+					</ol>
+				</ul>
+			</slide>
+			<slide id="style-elements">
+				<title>REST Style Elements</title>
+				<ul>
+					<li>A set of constraints that establish the REST architectural style</li>
+				</ul>
+				<ol>
+					<li>Resource Identification</li>
+					<li>Uniform Interface</li>
+					<li>Self-Describing Messages</li>
+					<li>Hypermedia Driving Application State (HATEOAS)</li>
+					<li>Stateless Interactions</li>
+				</ol>
+			</slide>
+			<slide id="using-style-elements">
+				<title>Using Style Elements to Solve SOA Problems</title>
+				<ul>
+					<li>REST is not intended to be the answer to all problems in IT services</li>
+					<ul>
+						<li>Trading optimization of tight coupling for evolvability of loose coupling</li>
+					</ul>
+					<li>REST works best for large-scale scenarios with decentralized evolution</li>
+					<li>Evolution can happen on a variety of axes</li>
+					<ul>
+						<li>Open media types allow for extensions and non-breaking versioning</li>
+						<li>Link types allow to establish new relationships between resources</li>
+						<li>New media types can be introduced and deployed incrementally</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="iot">
+				<title>IoT Scenarios</title>
+				<ul>
+					<li>IoT's next logical step is the <em>Web of Things (WoT)</em></li>
+					<li>WoT is nothing more than applying REST to IoT resources</li>
+					<li>How likely is it that all IoT resources use one media type?</li>
+					<ul>
+						<li>Probably similar to the likelihood that all Web services use the same media type</li>
+						<li>Why not share patterns instead of trying to share technologies?</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="discovery">
+			<title>Resource Discovery</title>
+			<slide id="finding-resources">
+				<title>Where are my Resources?</title>
+				<ul>
+					<li>REST requires identification but has no specific discovery</li>
+					<ul>
+						<li>Without resource identifiers, there can be no REST</li>
+						<li>There is no specific <q>discovery protocol</q> in the REST style</li>
+						<li>Without discovery, living in an open and decentralized world is impossible</li>
+						<li>Discovery is just another service! <a href="http://www.google.com/">Here's a rather popular one!</a></li>
+					</ul>
+					<li>Discovery is covered by REST and does not need special treatment</li>
+					<ul>
+						<li>Formats such as <em>Atom</em> or <em>Activity Streams</em> essentially are discovery protocols</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="iot-discovery">
+				<title>IoT Drives Discovery</title>
+				<ul>
+					<li>Gartner predicts <a href="http://www.gartner.com/newsroom/id/2905717">5 billion connected things in 2015</a></li>
+					<ul>
+						<li>… and 25 billion by 2020</li>
+						<li>Many things will be indirectly and/or intermittently connected</li>
+					</ul>
+					<li>IoT establishes connectivity, WoT establishes actionability</li>
+					<li>Many IoT scenarios today are closed verticals</li>
+					<ul>
+						<li>We're re-living the pre-Web era of the Internet</li>
+						<li>Currently, IoT seems to go the way of Social: Siloization</li>
+					</ul>
+					<li>After discovery, WoT resources should be usable anywhere on the Web</li>
+				</ul>
+			</slide>
+			<slide id="discovery-design">
+				<title>Discovery Design</title>
+				<ul>
+					<li>IoT/WoT makes core REST principles even more important</li>
+					<ul>
+						<li>Write resilient clients that can deal with failing interactions</li>
+						<li>Do not hardcode URI patterns anywhere in your client code</li>
+					</ul>
+					<li>Cloud lock-in is one of the big anti-patterns of today</li>
+					<ul>
+						<li>Sometimes strategic, sometimes simply cloud-age mainframe thinking</li>
+						<li>If your cloud is not linkable with other clouds, you have a problem</li>
+						<li>Clouds are implementation details below the REST level</li>
+					</ul>
+					<li>Discovery should be able to discover anything with a URI</li>
+					<ul>
+						<li>IoT protocols manage connectivity issues at lower levels</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="service-description">
+			<title>Resource Capabilities</title>
+			<slide id="capabilities">
+				<title>What Can My Resource Do?</title>
+				<ul>
+					<li>Discovery is the first step to find new resources</li>
+					<ul>
+						<li>Second step is to <q>understand</q> the resource</li>
+					</ul>
+					<li>IoT challenge is the extreme variability in resource capabilities</li>
+					<ul>
+						<li>Most likely, certain classes of IoT resources/scenarios can share sets of concepts</li>
+						<li>Domain experts should provide the bounded contexts of those classes</li>
+					</ul>
+					<li>REST's service description is the media type specification</li>
+					<ul>
+						<li>Large design spectrum between generic and specific description models</li>
+						<li>Making service descriptions as simple as possible is the way to go</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="link-description">
+				<title>What's the Link Interaction?</title>
+				<ul>
+				<li><q>How to follow a link?</q> is a core REST question</li>
+					<li>URI scheme provides the framework for possible interactions</li>
+					<li>Link source provides additional hints</li>
+					<ul>
+						<li>Hints can be hardcoded or through affordances for encoding interaction instructions</li>
+						<li>Interactions should be stateless, so link source should never be required</li>
+					</ul>
+					<li>Solution: Embed link description but also make it standalone</li>
+					<ul>
+						<li>Resources can provide link descriptions as interaction instructions</li>
+						<li>Link sources can make instructions narrower when required by context</li>
+					</ul>
+					<li>Attempted in a variety of places, but nothing seems to stick</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="testing">
+			<title>Testing REST</title>
+			<slide id="lazy-users">
+				<title>Why Test REST?</title>
+				<ul>
+					<li>Minimalism means that client code is more brittle than necessary</li>
+					<ul>
+						<li>Developers take shortcuts when parsing/processing representations</li>
+						<li>Developers assume that connectivity always is perfect</li>
+						<li>Developers recognize URI patterns and use those instead of links</li>
+					</ul>
+					<li>Minimalist clients will break earlier than necessary</li>
+					<ul>
+						<li>REST's loose coupling comes at a cost and with a benefit</li>
+						<li>Breaking clients in many cases are a problem for services as well</li>
+					</ul>
+					<li><q>Certification</q> is one possible way to harden clients</li>
+					<ul>
+						<li>Running against a test service that explores the REST spectrum</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="rest-test">
+				<title>How Robust Is My Client?</title>
+				<ul>
+					<li><q>Test mode</q> should be a standard feature in all <q>REST frameworks</q></li>
+					<ul>
+						<li>Not everything can be frameworked, but some automation is possible</li>
+					</ul>
+					<li>When running in test mode, services explore the complete REST spectrum</li>
+					<ul>
+						<li><link href="testing-identification"/> by serving uncool URIs</li>
+						<li><link href="testing-access"/> by not reliably responding to requests</li>
+						<li><link href="testing-representation"/> by serving surprise media types</li>
+						<li><link href="testing-variability"/> by wildly varying representations</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="testing-identification">
+				<title>Resource Identification</title>
+				<ul>
+					<li><a href="http://www.w3.org/Provider/Style/URI">Cool URIs</a> are cool, but clients should not trust them</li>
+					<li>Break URI patterns as much as you can</li>
+					<li>URIs should be stable (no aliases) but otherwise unconstrained</li>
+					<li>In the production service, serve well-designed and pretty URIs</li>
+					<ul>
+						<li>Hackable URIs are one of nice things about exploring REST services</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="testing-access">
+				<title>Resource Access</title>
+				<ul>
+					<li>Openness means that URI schemes may change</li>
+					<li>Availability means that URIs may be unreachable/unavailable anytime</li>
+					<li>Clients should behave reasonable</li>
+					<ul>
+						<li>Many mobile apps behave rather badly in offline mode</li>
+						<li>Offline mode can be very sophisticated (allowing local interactions)</li>
+						<li>At the very least being offline should not be treated as an error</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="testing-representation">
+				<title>Resource Representation</title>
+				<ul>
+					<li>Serve surprise media types if allowed by the client</li>
+					<ul>
+						<li>Teaches clients to be specific in what they accept</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="testing-variability">
+				<title>Resource Variability</title>
+				<ul>
+					<li>Serve resources using all possible extension points</li>
+					<li>Tricky because specific to the media type</li>
+					<li>Processing models tell clients how to handle representations</li>
+					<ul>
+						<li>Explore the whole spectrum of what's allowed by the processing model</li>
+					</ul>
+					<li><em>mustIgnore</em> and <em>mustUnderstand</em> semantics are an important part of this</li>
+					<ul>
+						<li><em>mustUnderstand</em> should make a client stop on unknown extensions</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="diversity">
+			<title>No Silver Unicorn</title>
+			<slide id="=xkcd-standards">
+				<title>Creating the Silver Unicorn Hammer</title>
+				<img src="xkcd927.png" title="The nice thing about standards is that there are so many to choose from." href="https://xkcd.com/927/" style="height : 65% ; margin : 4% ; "/>
+			</slide>
+			<slide id="diversity">
+				<title>Embrace Diversity</title>
+				<ul>
+					<li>REST is all about loose coupling</li>
+					<ul>
+						<li>Loose coupling between clients and services to allow evolution</li>
+						<li>Loose coupling across services which can be different but interlinked</li>
+					</ul>
+					<li>Finding the balance between specificity and generality is tricky</li>
+					<ul>
+						<li>Too specific and services cannot use technologies in all cases</li>
+						<li>Too general and the idioms and properties of a domain are not well-reflected</li>
+						<li>Searching/finding the sweet spot is best left to domain experts</li>
+						<li>As a general guideline, start small and care about useful openness</li>
+					</ul>
+					<li>Focus on patterns and principles instead of technologies</li>
+					<ul>
+						<li>REST provides the connective fabric to interlink everything</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="sedola">
+				<title>Service Documentation</title>
+				<ul>
+					<li><a href="https://github.com/dret/sedola">Service Documentation Language (Sedola)</a> is an attempt to harmonize documentation</li>
+					<li>Just like <a href="http://www.iana.org/assignments/">IANA's registries</a> provide uniform access to well-known concepts</li>
+					<li>Services are supposed to list the well-known and proprietary concepts of their <q>surface</q></li>
+					<ul>
+						<li>Media types, Link relation types, HTTP headers, HTTP status codes, …</li>
+						<li>The actual specification/definition is not constrained by Sedola</li>
+					</ul>
+					<li>Shared documentation framework with minimal set of constraints</li>
+					<ul>
+						<li>Focusing on those concepts that matter for REST and the Web</li>
+						<li>Allowing services to use those technologies that are the best fit</li>
+					</ul>
+					<li>Main scenario: Organizations with diverse sets of REST services</li>
+				</ul>
+			</slide>
+			<slide id="hyperpedia">
+				<title>Hypermedia Patterns</title>
+				<ul>
+					<li><a href="https://github.com/dret/hyperpedia">Hyperpedia</a> should be a starting point for hypermedia designers</li>
+					<li>Containing a list on hypermedia concepts and formats</li>
+					<ul>
+						<li>Concepts focus on the hypermedia aspects of any given hypermedia format</li>
+						<li>Formats are described in terms of the concepts</li>
+						<li>Each format can have a variety of link types (<a href="http://dret.typepad.com/dretblog/2009/10/links-in-html.html">HTML has …</a>)</li>
+					</ul>
+					<li>Hyperpedia should help REST architects to find and/or define formats</li>
+					<li>Ideally, there should be a matrix of concepts vs. formats</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="rest-next">
+				<title>REST: What's Next?</title>
+				<ul>
+					<li>Keep the patterns coming!</li>
+					<ul>
+						<li>Additions to established registries, maybe establishing new ones</li>
+					</ul>
+					<li>We need better testing to make REST ecosystems more robust</li>
+					<li>Maybe some hypermedia <q>pattern</q> for JSON formats?</li>
+					<li>Personally: <a href="https://github.com/dret/sedola">Sedola</a>, <a href="https://github.com/dret/hyperpedia">Hyperpedia</a>, <a href="https://datatracker.ietf.org/drafts/draft-ietf-appsawg-http-problem/">Problem reports</a>, <a href="https://datatracker.ietf.org/drafts/draft-nottingham-json-home/">Home documents</a></li>
+				</ul>
+			</slide>
+			<slide id="thanks">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.jpg" title="What's Next?" style="height : 65% ; margin : 4% ; "/>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
