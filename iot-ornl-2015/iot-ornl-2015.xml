@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="siemens" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="iot-ornl-2015.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="http://creativecommons.org/licenses/by/3.0/" short="CC 3.0">
+		<div class="license">
+			<p><a rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/ischool/ischool/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
+		</div>
+	</license>
+	<title><a href="http://ws-rest.org/2015/">International Conference on Knowledge Engineering and Semantic Web (KESW 2015)</a></title>
+	<author><a href="http://dret.net/netdret/">Erik Wilde</a></author>
+	<affiliation>Siemens</affiliation>
+	<date short="2015-05-18">September 30, 2015</date>
+	<copyright>2015 Erik Wilde</copyright>
+	<presentation id="index">
+		<title>???</title>
+		<slide id="abstract">
+			<title>Abstract</title>
+			<p class="abstract">???</p>
+		</slide>
+		<part id="ld-challenges">
+			<title>Linked Data Challenges</title>
+			<slide id="ldow2015-soeren">
+				<title>Vocabularies are Key</title>
+				<img src="ldow2015-lod-cloud-chris.jpg" title="" style="height : 65% ; margin : 4% ; "/>
+			</slide>
+			<slide id="ldow2015-chris">
+				<title>Vocabularies are Special</title>
+				<img src="ldow2015-layer-cake-soeren.jpg" title="Sharing Data vs. Sharing Concepts" style="height : 65% ; margin : 4% ; "/>
+			</slide>
+		</part>
+		<part id="wot-challenges">
+			<title>WoT Challenges</title>
+		</part>
+		<part id="diversity">
+			<title>Embrace Diversity</title>
+			<slide id="xkcd-standards">
+				<title>No Silver Unicorn</title>
+				<img src="xkcd927.png" title="The nice thing about standards is that there are so many to choose from." href="https://xkcd.com/927/" style="height : 65% ; margin : 4% ; "/>
+			</slide>
+		</part>
+		<part id="data-and-services">
+			<title>Web Data and Web Services</title>
+			<slide id="web-data">
+				<title>Web Data</title>
+				<ul>
+					<li><a href="https://github.com/dret/webdata">Web Data</a> follows five simple principles</li>
+				</ul>
+				<ol>
+					<li>★: Linkable</li>
+					<li>★★: Parseable</li>
+					<li>★★★: Understandable</li>
+					<li>★★★★: Linked</li>
+					<li>★★★★★: Usable</li>
+				</ol>
+			</slide>
+			<slide id="web-services">
+				<title>Web Services: REST</title>
+				<ul>
+					<li>A set of constraints establishes the <span title="Representational State Transfer">REST</span> architectural style</li>
+				</ul>
+				<ol>
+					<li>Resource Identification</li>
+					<li>Uniform Interface</li>
+					<li>Self-Describing Messages</li>
+					<li>Hypermedia Driving Application State (HATEOAS)</li>
+					<li>Stateless Interactions</li>
+				</ol>
+			</slide>
+		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="thanks">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.jpg" title="What's Next?" style="height : 65% ; margin : 4% ; "/>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
