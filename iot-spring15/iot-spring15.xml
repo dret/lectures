@@ -393,7 +393,7 @@
 				<p>The <em>Internet</em> is a global network of interconnected computers that allows connected systems to communicate, regardless of the specifics of system and network implementations.</p>
 			</blockquote>
 			<blockquote>
-				<p>The <em>Web</em> is a distributed hypermedia system that uses the internet as its connective fabric. The most important aspects of the web are its <em>identification mechanism (URI)</em>, its <em>communication protocol (HTTP)</em>, and <em>hypermedia-based media types</em>.</p>
+				<p>The <em>Web</em> is a distributed hypermedia system that uses the Internet as its connective fabric. The most important aspects of the web are its <em>identification mechanism (URI)</em>, its <em>communication protocol (HTTP)</em>, and <em>hypermedia-based media types</em>.</p>
 			</blockquote>
 		</slide>
 		<part id="ioc-wot-evolution">
@@ -404,18 +404,18 @@
 					<li>The earliest computers were disconnected computing machinery</li>
 					<li>The first computer networks were designed and established <a href="http://en.wikipedia.org/wiki/Computer_network#History">in the 1960s</a></li>
 					<li>Proprietary/specific networks (such as <a href="http://en.wikipedia.org/wiki/DECnet">DECnet</a>) were popular until the 1980s</li>
-					<li>The internet was invented specifically for <em>interconnecting networks</em></li>
+					<li>The Internet was invented specifically for <em>interconnecting networks</em></li>
 					<ul>
 						<li>Started with the <a href="http://en.wikipedia.org/wiki/ARPANET">ARPANET</a> in the late 1960s</li>
-						<li>The <a href="http://en.wikipedia.org/wiki/Internet">internet</a> then focused on protocols and not on networks</li>
+						<li>The <a href="http://en.wikipedia.org/wiki/Internet">Internet</a> then focused on protocols and not on networks</li>
 						<li>Other protocols faded away in favor of TCP/IP's packet switching approach</li>
 					</ul>
 					<li><q>Internet vs. OSI</q> was a big debate/fight in the late 1980s</li>
 					<ul>
 						<li>The main differences were purity, complexity, and culture</li>
-						<li>Apart from a few select parts, OSI lost and the internet won</li>
+						<li>Apart from a few select parts, OSI lost and the Internet won</li>
 					</ul>
-					<li>The internet's biggest push was the advent of the web in the early 1990s</li>
+					<li>The Internet's biggest push was the advent of the web in the early 1990s</li>
 				</ul>
 			</slide>>
 			<slide>
@@ -492,7 +492,7 @@
 					</ul>
 					<li>Possible scenarios where this principle is violated:</li>
 					<ul>
-						<li>A parallel internet where <code>google.com</code> identifies a different entity</li>
+						<li>A parallel Internet where <code>google.com</code> identifies a different entity</li>
 						<li>Intranet applications <q>identified</q> with broken URIs such as <code>http://magicservice/</code></li>
 					</ul>
 					<li>Useful identification schemes are global in scope and uniqueness</li>
@@ -516,7 +516,7 @@
 					<li>Other schemes have other (or no) interaction models</li>
 					<ul>
 						<li><em>ftp:</em> works similar to HTTP (TCP/IP-based access)</li>
-						<li><em>tel:</em> is based on a much older global network than the internet</li>
+						<li><em>tel:</em> is based on a much older global network than the Internet</li>
 						<li><em>geo:</em> <q>interaction</q> might just mean <q>take me there</q></li>
 						<li><em>isbn:</em> has no way to <q>interact</q> with the identified resource</li>
 					</ul>
@@ -565,8 +565,8 @@
 				<ul>
 					<li>Using web architecture to build applications</li>
 					<ul>
-						<li>The web has become the most successful <q>application layer</q> on the internet</li>
-						<li>Not every application using the internet follows the web's architectural model</li>
+						<li>The web has become the most successful <q>application layer</q> on the Internet</li>
+						<li>Not every application using the Internet follows the web's architectural model</li>
 					</ul>
 					<li>IoT scenarios in many cases involve broad and deep scenarios</li>
 					<ul>
@@ -606,7 +606,7 @@
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a></author>
 		<toc class="reading"><a href="http://tools.ietf.org/html/rfc3439" title='Randy Bush and David Meyer, "Some Internet Architectural Guidelines and Philosophy", RFC 3439, December 2002'>Internet Architecture</a></toc>
 		<toc class="resources"><a href="http://en.wikipedia.org/wiki/OSI_model" title="Wikipedia: OSI Model">OSI</a></toc>
-		<toc class="abstract">Layering is one of the fundamental abstractions of IT systems and models. One important area where this concept is applied is computer communication networks. As one way how the terms IoT and WoT can be defined and distinguished, it is possible to look at how the internet and the web are layered, how they are related, and how this can be translated into scenarios where resources are real-world resources.</toc>
+		<toc class="abstract">Layering is one of the fundamental abstractions of IT systems and models. One important area where this concept is applied is computer communication networks. As one way how the terms IoT and WoT can be defined and distinguished, it is possible to look at how the Internet and the web are layered, how they are related, and how this can be translated into scenarios where resources are real-world resources.</toc>
 		<toc class="assignment"><a href="https://bcourses.berkeley.edu/courses/1293124/assignments/6058676" title="Mashing Up Things and Services">A2</a>&#160;(2015-02-12)</toc>
 		<slide>
 			<title>Abstract</title>
@@ -740,9 +740,9 @@
 				<title>Layer 3: Network</title>
 				<ul>
 					<li>Allows addressing at the network level</li>
-					<li>For the internet, this means IP addresses</li>
+					<li>For the Internet, this means IP addresses</li>
 					<ul>
-						<li><a href="http://en.wikipedia.org/wiki/IPv4">IPv4</a> is the version that has powered the internet so far</li>
+						<li><a href="http://en.wikipedia.org/wiki/IPv4">IPv4</a> is the version that has powered the Internet so far</li>
 						<li><a href="http://en.wikipedia.org/wiki/IPv6">IPv6</a> is phased in to be able to handle <q>IoT-scale</q> growth</li>
 					</ul>
 				</ul>
@@ -773,7 +773,7 @@
 						<li>Creating tight coupling between two processes</li>
 						<li><a href="rest/">REST</a> tries really hard to build a session-free web (<q>stateless interactions</q>)</li>
 					</ul>
-					<li>The internet does not really have a generic model for sessions</li>
+					<li>The Internet does not really have a generic model for sessions</li>
 					<ul>
 						<li><em>HTTP Cookies</em> are one way to achieve the same goal (but with a lot of side-effects)</li>
 					</ul>
@@ -787,9 +787,9 @@
 						<li>one abstract model and a variety of <q>encoding rules</q> (DER, XER, PER)</li>
 						<li>mostly extinct nowadays but still used for <a href="http://en.wikipedia.org/wiki/Public_key_infrastructure">PKI information (certificates)</a></li>
 					</ul>
-					<li>The internet has media types and some <q>generic</q> data representation languages</li>
+					<li>The Internet has media types and some <q>generic</q> data representation languages</li>
 					<ul>
-						<li><em href="../xml">Extensible Markup Language (XML)</em> was the first successful internet representation</li>
+						<li><em href="../xml">Extensible Markup Language (XML)</em> was the first successful Internet representation</li>
 						<li><em href="">JavaScript Object Notation (JSON) replaced XML because most developers like it better</em></li>
 						<li><em href="">Resource Description Framework (RDF)</em> is another possible generic data format</li>
 					</ul>
@@ -812,7 +812,7 @@
 					<li>Complete abstraction is a dream, complete control is a nightmare</li>
 					<ul>
 						<li>Or is it the other way around? It all depends on the scenarios...</li>
-						<li>As the internet and applications evolve, networking protocols and features evolve</li>
+						<li>As the Internet and applications evolve, networking protocols and features evolve</li>
 					</ul>
 				</ul>
 			</slide>
@@ -986,15 +986,15 @@
 		<slide>
 			<title>Conclusions</title>
 			<ul>
-				<li>The internet is a network of networks</li>
+				<li>The Internet is a network of networks</li>
 				<ul>
-					<li><a href="http://en.wikipedia.org/wiki/Ted_Stevens">Ted Stevens</a>: <q><a href="http://www.youtube.com/watch?v=f99PcP0aFNE" title="Ted Stevens on the internet">It's not a big truck, it's a series of tubes!</a></q></li>
+					<li><a href="http://en.wikipedia.org/wiki/Ted_Stevens">Ted Stevens</a>: <q><a href="http://www.youtube.com/watch?v=f99PcP0aFNE" title="Ted Stevens on the Internet">It's not a big truck, it's a series of tubes!</a></q></li>
 				</ul>
-				<li>The internet provides basic data transfer services</li>
+				<li>The Internet provides basic data transfer services</li>
 				<li>IP is used to send <em>datagrams</em> between end-points</li>
 				<li>TCP is used for reliable communications (building on IP)</li>
 				<li>DNS provides human-readable names for Internet hosts</li>
-				<li>URI and HTTP establish the web layer on top of the internet</li>
+				<li>URI and HTTP establish the web layer on top of the Internet</li>
 			</ul>
 		</slide>
 	</presentation>
