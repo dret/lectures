@@ -74,7 +74,7 @@
 					<li>Today's <em>apps</em> are the ghosts of pre-Web client/server approaches</li>
 					<ul>
 						<li>Tailored/convenient to do one thing in one silo</li>
-						<li><em>App management</em> as a well-known problem for providers/consumers</li>
+						<li><em>App management</em> is a well-known problem for providers/consumers</li>
 					</ul>
 				</ul>
 			</slide>
@@ -88,6 +88,7 @@
 					<ul>
 						<li>URIs often are resolvable HTTP URIs but don't have to be</li>
 						<li>Identification (even without interaction) creates a lot of value</li>
+						<li>Identity and identification are hard problems for real-world resources</li>
 					</ul>
 					<li>Robust naming schemes are needed for all WoT scenarios</li>
 					<ul>
@@ -104,6 +105,11 @@
 						<li>Will there be a <q>Google for the IoT</q>?</li>
 						<li>Something similar to <a href="http://schema.org/">schema.org</a> may be necessary/helpful</li>
 					</ul>
+					<li>Discovery in IoT probably also needs a robust update channel</li>
+					<ul>
+						<li>The set of discovered resources can change a lot over time</li>
+						<li><q>Subscribing</q> to change messages allows clients to stay updated</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide>
@@ -114,7 +120,11 @@
 						<li>Easier to design and implement for vendors (engineering legacy)</li>
 						<li>Easier to control and monetize (walled gardens are profitable)</li>
 					</ul>
-					<li></li>
+					<li>A lot of value can be created by working across silo boundaries</li>
+					<ul>
+						<li><em>Avoid</em> <q>warehouse</q> approaches selling centralized <q>integration</q></li>
+						<li><em>Prefer</em> ecosystem approaches that are decentralized in nature</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide>
@@ -128,7 +138,7 @@
 					<li>Defining domain models can be hard work</li>
 					<ul>
 						<li>W3C should stay away from specific domains and focus on the connective fabric</li>
-						<li></li>
+						<li>Domain models should be left to domain experts and their organizations</li>
 					</ul>
 				</ul>
 			</slide>
@@ -160,7 +170,8 @@
 				<title>What's Different About Web/WoT?</title>
 				<ul>
 					<li><em>Data Science</em> often assumes centralized data management</li>
-					<li>Embrace the Vs:</li>
+					<li>The Web is not only <em>distributed</em>, it is <em>decentralized</em></li>
+					<li>Embrace the Big Data Vs:</li>
 					<ul>
 						<li><em>Volume:</em> Working <q>on a dataset</q> not always (easily) possible</li>
 						<li><em>Velocity:</em> A robust model for how to do (incremental) updates</li>
@@ -179,7 +190,7 @@
 					</ul>
 					<li>Users want to ignore provider-specific things as much as possible</li>
 					<ul>
-						<li>IoT has a lot of <q>works best (only) in IE</q> feel to it these days</li>
+						<li>IoT has a lot of <q>works best/only in IE</q> feel to it these days</li>
 						<li>Loose coupling means some client-side work is required</li>
 					</ul>
 				</ul>
@@ -192,14 +203,24 @@
 				<ul>
 					<li>Any IoT resources/services should be <q>webby</q> by design</li>
 					<li><a href="https://github.com/dret/webdata">Web Data</a> follows five simple principles</li>
+					<ol>
+						<li>★: Linkable (use URI for identification)</li>
+						<li>★★: Parseable (use existing <span title="such as XML, RDF, JSON, CSV">metamodels</span> if possible)</li>
+						<li>★★★: Understandable (document the model/vocabulary)</li>
+						<li>★★★★: Linked (relate to other resources by URI)</li>
+						<li>★★★★★: Usable (communicate how your resources can be used)</li>
+					</ol>
 				</ul>
-				<ol>
-					<li>★: Linkable</li>
-					<li>★★: Parseable</li>
-					<li>★★★: Understandable</li>
-					<li>★★★★: Linked</li>
-					<li>★★★★★: Usable</li>
-				</ol>
+			</slide>
+			<slide>
+				<title>A WoT Service Model</title>
+				<ul>
+					<li><em>Activity Streams (AS)</em> were invented for social services</li>
+					<ul>
+						<li>A model for social activities across various social platforms</li>
+						<li><a href="http://www.w3.org/Social/WG">W3C Social Web WG</a> has been chartered to standardize AS2</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
@@ -207,7 +228,9 @@
 			<slide>
 				<title>Conclusions</title>
 				<ul>
-					<li></li>
+					<li>IoT value is multiplied by thinking <em>beyond single IoT islands</em></li>
+					<li>WoT is in its infancy and needs experimentation and experience</li>
+					<li>Industry wants to sell IoT but has little interest/expertise in WoT</li>
 				</ul>
 			</slide>
 			<slide id="thanks">
