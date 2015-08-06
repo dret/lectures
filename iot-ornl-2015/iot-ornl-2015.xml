@@ -71,11 +71,41 @@
 						<li>Well-defined and limited application domains</li>
 						<li>Specialized services that can only be consumed by specialized clients</li>
 					</ul>
+					<li>Today's <em>apps</em> are the ghosts of pre-Web client/server approaches</li>
+					<ul>
+						<li>Tailored/convenient to do one thing in one silo</li>
+						<li><em>App management</em> as a well-known problem for providers/consumers</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
 		<part id="iot-problems">
 			<title>IoT Problems Today</title>
+			<slide>
+				<title>Invisibility</title>
+				<ul>
+					<li>No Web-level identification of resources/services</li>
+					<ul>
+						<li>URIs often are resolvable HTTP URIs but don't have to be</li>
+						<li>Identification (even without interaction) creates a lot of value</li>
+					</ul>
+					<li>Robust naming schemes are needed for all WoT scenarios</li>
+					<ul>
+						<li>The network effect needs relatable identifiers</li>
+						<li>Actionable identifiers are a plus but not strictly required</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Discoverability</title>
+				<ul>
+					<li>No easy way to find existing (i.e., identified) resources</li>
+					<ul>
+						<li>Will there be a <q>Google for the IoT</q>?</li>
+						<li>Something similar to <a href="http://schema.org/">schema.org</a> may be necessary/helpful</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide>
 				<title>Siloization</title>
 				<ul>
@@ -85,6 +115,21 @@
 						<li>Easier to control and monetize (walled gardens are profitable)</li>
 					</ul>
 					<li></li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Precious Snowflakes (aka NIH)</title>
+				<ul>
+					<li>Starting from scratch often is easier than reuse</li>
+					<ul>
+						<li>Many existing designs are not well-documented and extensible</li>
+						<li>In many cases there is no incentive to reuse</li>
+					</ul>
+					<li>Defining domain models can be hard work</li>
+					<ul>
+						<li>W3C should stay away from specific domains and focus on the connective fabric</li>
+						<li></li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
@@ -121,6 +166,21 @@
 						<li><em>Velocity:</em> A robust model for how to do (incremental) updates</li>
 						<li><em>Variety:</em> Handling data in a variety of models/metamodels</li>
 						<li><em>Variability:</em> Variations in meaning may need contextual analysis</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Industry vs. Web</title>
+				<ul>
+					<li>Industry wants to package and sell</li>
+					<ul>
+						<li>One integrated and elegant solution for one scenario</li>
+						<li>Also allows relatively easy client-side toolkits/libraries</li>
+					</ul>
+					<li>Users want to ignore provider-specific things as much as possible</li>
+					<ul>
+						<li>IoT has a lot of <q>works best (only) in IE</q> feel to it these days</li>
+						<li>Loose coupling means some client-side work is required</li>
 					</ul>
 				</ul>
 			</slide>
