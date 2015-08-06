@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
 <?hotspot layout-path="hotspot/hotspot/layout" ?>
 <?hotspot kilauea-path="hotspot/kilauea" ?>
-<?hotspot layout="siemens" ?>
+<?hotspot layout="malmoe" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 	<configuration>
 		<link subsections="yes" bookmarks="yes" versions="iot-ornl-2015.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
@@ -25,14 +25,14 @@
 	</license>
 	<title><a href="https://www.ornl.gov/" title="Oak Ridge National Laboratory">ORNL</a> IoT Workshop</title>
 	<author><a href="http://dret.net/netdret/">Erik Wilde</a></author>
-	<affiliation>Siemens</affiliation>
+	<affiliation>UC Berkeley</affiliation>
 	<date short="2015-08-07">August 7, 2015</date>
 	<copyright>2015 Erik Wilde</copyright>
 	<presentation id="index">
 		<title>WoT IoT Needs</title>
 		<slide id="abstract">
 			<title>Abstract</title>
-			<p class="abstract">The Internet of Things (IoT) is one of the hot topics in research and industry, and yet there seem to be very different ways in which the name can be interpreted, ranging from very low-level issues up through all layers of the usual protocol stacks. This talk makes the point that IoT today can be viewed like the Internet in its early days, which clearly was useful and growing, but needed the Web as the killer app to get to the growth and significance that define it today. In the same way as the Web allowed the Internet to break through previously existing barriers, the Web of Things (WoT) may be able to accomplish the same for IoT. By looking at some of the critical features that allowed the Web to succeed at levels previously impossible for the Internet, we may be able to predict some of the areas where WoT approaches may achieve the same for typical IoT scenarios.</p>
+			<p class="abstract">The Internet of Things (IoT) is one of the hot topics in research and industry, and yet there seem to be very different ways in which the name can be interpreted, ranging from very low-level issues up through all protocol layers. This talk makes the point that IoT today can be viewed like the Internet in its early days, which clearly was useful and growing, but needed the Web as the killer app to get to the growth and significance that define it today. In the same way as the Web allowed the Internet to break through previously existing barriers, the Web of Things (WoT) may be able to accomplish the same for IoT. By looking at some of the critical features that allowed the Web to succeed at levels previously impossible for the Internet, we may be able to predict some of the areas where WoT approaches may achieve the same for typical IoT scenarios.</p>
 		</slide>
 		<part>
 			<title>(Some) Internet/Web History</title>
@@ -44,12 +44,33 @@
 						<li>TCP/IP established robust and reliable global connectivity</li>
 						<li>Successful applications were email and file transfer</li>
 					</ul>
-					<li>The Web </li>
+					<li>The pre-Web Internet was always point-to-point</li>
+					<li>Applications had specialized and specific interfaces</li>
+					<li>The Web dissolved application boundaries</li>
+					<ul>
+						<li>Different services/applications could link to each other</li>
+						<li>The same client could be used to interact with all of them</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide>
 				<title>Historical Internet Traffic (1993-2004)</title>
 				<img src="internet-traffic-trends.png" style="height : 65% ; margin : 4% ; " href="http://dret.net/lectures/web-fall10/http#%284%29"/>
+			</slide>
+			<slide>
+				<title>Simplicity as the Price for Unification</title>
+				<ul>
+					<li><q>Network effect</q> trumps more polished verticals</li>
+					<ul>
+						<li>Web pages were very limited for a long time</li>
+						<li>Interlinking and ubiquitous clients compensated for that</li>
+					</ul>
+					<li>IoT today is mostly at the pre-Web Internet stage</li>
+					<ul>
+						<li>Well-defined and limited application domains</li>
+						<li>Specialized services that can only be consumed by specialized clients</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="web-architecture">
@@ -75,20 +96,6 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="ld-challenges">
-			<title>Linked Data Challenges</title>
-			<slide id="ldow2015-soeren">
-				<title>Vocabularies are Key</title>
-				<img src="ldow2015-lod-cloud-chris.jpg" title="" style="height : 65% ; margin : 4% ; "/>
-			</slide>
-			<slide id="ldow2015-chris">
-				<title>Vocabularies are Special</title>
-				<img src="ldow2015-layer-cake-soeren.jpg" title="Sharing Data vs. Sharing Concepts" style="height : 65% ; margin : 4% ; "/>
-			</slide>
-		</part>
-		<part id="wot-challenges">
-			<title>WoT Challenges</title>
-		</part>
 		<part id="diversity">
 			<title>Embrace Diversity</title>
 			<slide id="xkcd-standards">
@@ -111,22 +118,15 @@
 					<li>★★★★★: Usable</li>
 				</ol>
 			</slide>
-			<slide id="web-services">
-				<title>Web Services: REST</title>
-				<ul>
-					<li>A set of constraints establishes the <span title="Representational State Transfer">REST</span> architectural style</li>
-				</ul>
-				<ol>
-					<li>Resource Identification</li>
-					<li>Uniform Interface</li>
-					<li>Self-Describing Messages</li>
-					<li>Hypermedia Driving Application State (HATEOAS)</li>
-					<li>Stateless Interactions</li>
-				</ol>
-			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide>
+				<title>Conclusions</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
 			<slide id="thanks">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.jpg" title="What's Next?" style="height : 65% ; margin : 4% ; "/>
