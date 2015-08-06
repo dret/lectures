@@ -210,6 +210,10 @@
 						<li>★★★★: Linked (relate to other resources by URI)</li>
 						<li>★★★★★: Usable (communicate how your resources can be used)</li>
 					</ol>
+					<li>Web Data is REST without the service parts: data on the Web should be hypermedia</li>
+					<ul>
+						<li>REST calls this <q title="Hypermedia as the engine of application state">HATEOAS</q> and adds behavioral constraints</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide>
@@ -219,6 +223,16 @@
 					<ul>
 						<li>A model for social activities across various social platforms</li>
 						<li><a href="http://www.w3.org/Social/WG">W3C Social Web WG</a> has been chartered to standardize AS2</li>
+					</ul>
+					<li><a href="http://dret.net/netdret/publications#wil15c">ASbase</a> uses AS as the <em>connective fabric</em> between IoT things</li>
+					<ul>
+						<li>AS has a (social) base vocabulary that can be used for basic functions (such as <q>following</q>)</li>
+						<li>AS is extensible with new activities (their identifiers and data models)</li>
+					</ul>
+					<li><a href="https://github.com/dret/ASDL" title="Activity Streams Documentation Language">ASDL</a> can be used to document extensions in a structured way</li>
+					<ul>
+						<li>ASDL is not intended to <em>formally describe</em> AS extensions</li>
+						<li>It is similar in scope to <a href="https://github.com/dret/sedola" title="Service Documentation Language">Sedola</a> by focusing on making documentation discoverable</li>
 					</ul>
 				</ul>
 			</slide>
