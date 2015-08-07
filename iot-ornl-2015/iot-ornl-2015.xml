@@ -43,13 +43,13 @@
 					<ul>
 						<li>TCP/IP established robust and reliable global connectivity</li>
 						<li>Successful applications were email and file transfer</li>
-						<li>The Internet was <em>connection infrastructure</em> and not <em>information infrastructure</em></li>
+						<li>Internet as <em>connection infrastructure</em> and not <em>information infrastructure</em></li>
 					</ul>
 					<li>The pre-Web Internet was always point-to-point</li>
 					<li>Applications had specialized and specific interfaces</li>
 					<li>1989, the Web dissolved application boundaries</li>
 					<ul>
-						<li>Different services/applications could link to each other</li>
+						<li>Different services/applications could be interlinked</li>
 						<li>The same client could be used to interact with all of them</li>
 					</ul>
 				</ul>
@@ -102,7 +102,7 @@
 				<ul>
 					<li>No easy way to find existing (i.e., identified) resources</li>
 					<ul>
-						<li>Will there be a <q>Google for the IoT</q>?</li>
+						<li>Will there be a <q>Google for the IoT</q>? How would it work in today's/tomorrow's WoT?</li>
 						<li>Something similar to <a href="http://schema.org/">schema.org</a> may be necessary/helpful</li>
 					</ul>
 					<li>Discovery in IoT probably also needs a robust update channel</li>
@@ -152,7 +152,7 @@
 					<ul>
 						<li>Global Identification</li>
 						<li>Uniform and Stateless Interaction</li>
-						<li>Self-describing and Linked Representations</li>
+						<li>Self-describing and linked representations</li>
 					</ul>
 					<li>W3C is trying to establish best practices</li>
 					<ul>
@@ -177,6 +177,10 @@
 						<li><em>Velocity:</em> A robust model for how to do (incremental) updates</li>
 						<li><em>Variety:</em> Handling data in a variety of models/metamodels</li>
 						<li><em>Variability:</em> Variations in meaning may need contextual analysis</li>
+					</ul>
+					<li>The Web focuses on <em>interaction/service models</em>, not <em>data models</em></li>
+					<ul>
+						<li>Describe as little as possible (only the <q>service surface</q>)</li>
 					</ul>
 				</ul>
 			</slide>
@@ -210,7 +214,7 @@
 						<li>★★★★: Linked (relate to other resources by URI)</li>
 						<li>★★★★★: Usable (communicate how your resources can be used)</li>
 					</ol>
-					<li>Web Data is REST without the service parts: data on the Web should be hypermedia</li>
+					<li><em>Web Data</em> is REST without the service parts: data on the Web should be hypermedia</li>
 					<ul>
 						<li>REST calls this <q title="Hypermedia as the engine of application state">HATEOAS</q> and adds behavioral constraints</li>
 					</ul>
@@ -219,12 +223,12 @@
 			<slide>
 				<title>A WoT Service Model</title>
 				<ul>
-					<li><em>Activity Streams (AS)</em> were invented for social services</li>
+					<li><a href="http://activitystrea.ms/">Activity Streams (AS)</a> were invented for social services</li>
 					<ul>
-						<li>A model for social activities across various social platforms</li>
+						<li>A model for social activities/actors across various social platforms</li>
 						<li><a href="http://www.w3.org/Social/WG">W3C Social Web WG</a> has been chartered to standardize AS2</li>
 					</ul>
-					<li><a href="http://dret.net/netdret/publications#wil15c">ASbase</a> uses AS as the <em>connective fabric</em> between IoT things</li>
+					<li><a href="http://dret.net/netdret/publications#wil15c">ASbase</a> uses AS as the <em>connective fabric</em> for IoT things</li>
 					<ul>
 						<li>AS has a (social) base vocabulary that can be used for basic functions (such as <q>following</q>)</li>
 						<li>AS is extensible with new activities (their identifiers and data models)</li>
