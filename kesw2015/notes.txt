@@ -13,3 +13,5 @@ focus on how vocabularies fit into the communication process. the web doesn't th
 create picture that contrasts traditional "knowledge/resource engineering" versus "interaction vocabulary engineering". reinforce the idea of "shallow and narrow" by visualizing that vocabularies should be self-contained and tightly constrained interaction models, and not sprawling world models that try to interconnect everything.
 
 generally speaking, the main topic should be to encourage thinking in "bounded contexts" instead of trying to build a tightly interconnected weave of concepts of everything. this is not necessarily conflicting, but it makes things more challenging. interested peers should *only* be required to accept as few of these bounded contexts as possible, and ideally these should be self-contained (i.e., no dependencies on models that might change outside of the scope of the bounded context).
+
+maybe use the model mapping paper http://dret.net/netdret/publications#wil06m as a starting point, at least in terms of mapping between service models and implementation models.
