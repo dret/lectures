@@ -22,3 +22,5 @@ generally speaking, the main topic should be to encourage thinking in "bounded c
 maybe use the model mapping paper http://dret.net/netdret/publications#wil06m as a starting point, at least in terms of mapping between service models and implementation models.
 
 models matter (a lot!), metamodels not so much (but they are useful). don't get sucked into "one metamodel to rule them all" debates, instead try to create value by building models and making it easy for people to understand and share them.
+
+add something explaining the difference between just data and hypermedia, explaining that "knowledge engineering" is just one way of defining the fundamental data space, but that for doing things well on the web, you also have to think about access patterns and support them through hypermedia.
