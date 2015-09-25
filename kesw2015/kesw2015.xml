@@ -37,6 +37,20 @@
 		<part id="IoT-and-WoT">
 			<title>IoT and WoT</title>
 			<slide>
+				<title>Why/How IoT/WoT Changes the Web</title>
+				<ul>
+					<li>IoT makes many things accessible and possibly actionable</li>
+					<ul>
+						<li><q href="http://www.gartner.com/newsroom/id/2905717">Gartner, Inc. forecasts that 4.9 billion connected things will be in use in 2015, up 30 percent from 2014, and will reach 25 billion by 2020.</q></li>
+					</ul>
+					<li>WoT promises to be the <q>connective layer</q> for IoT things</li>
+					<ul>
+						<li>The Internet's success was greatly accelerated by the Web</li>
+						<li>The Web's main promise is to avoid verticals and build horizontally</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
 				<title>Invisibility</title>
 				<ul>
 					<li>No Web-level identification of resources/services</li>
@@ -85,7 +99,7 @@
 			</slide>
 			<slide>
 				<title>Precious Snowflakes (aka NIH)</title>
-				<img src="snowflakes.jpg" href="http://atompub.org/" style="float : right ; width : 25% ; margin : 0.5em 1em 1em 1em ; "/>
+				<img src="snowflakes.jpg" style="float : right ; width : 25% ; margin : 0.5em 1em 1em 1em ; "/>
 				<ul>
 					<li>Starting from scratch often is easier than reuse</li>
 					<ul>
