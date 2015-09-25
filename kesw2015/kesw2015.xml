@@ -43,7 +43,7 @@
 			<slide>
 				<title>Why/How IoT/WoT Changes the Web</title>
 				<ul>
-					<li>IoT makes many things accessible and possibly actionable</li>
+					<li>IoT makes <em>many</em> things accessible and possibly actionable</li>
 					<ul>
 						<li><q href="http://www.gartner.com/newsroom/id/2905717">Gartner, Inc. forecasts that 4.9 billion connected things will be in use in 2015, up 30 percent from 2014, and will reach 25 billion by 2020.</q></li>
 					</ul>
@@ -52,9 +52,14 @@
 						<li>The Internet's success was greatly accelerated by the Web</li>
 						<li>The Web's main promise is to avoid verticals and build horizontally</li>
 					</ul>
+					<li>Innovative/useful applications will increasingly include <q>IoT things</q></li>
+					<ul>
+						<li>Building <em>across</em> verticals can be done most easily with WoT</li>
+						<li>Creating and using <em>patterns</em> for WoT resources will become essential</li>
+					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="invisibility">
 				<title>Invisibility</title>
 				<ul>
 					<li>No Web-level identification of resources/services</li>
@@ -71,7 +76,7 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="discoverability">
 				<title>Discoverability</title>
 				<ul>
 					<li>No easy way to find existing (i.e., identified) resources</li>
@@ -86,7 +91,7 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="siloization">
 				<title>Siloization</title>
 				<ul>
 					<li>Many IoT scenarios are tightly controlled verticals</li>
@@ -101,7 +106,7 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="snowflakes">
 				<title>Precious Snowflakes (aka NIH)</title>
 				<img src="snowflakes.jpg" style="float : right ; width : 25% ; margin : 0.5em 1em 1em 1em ; "/>
 				<ul>
