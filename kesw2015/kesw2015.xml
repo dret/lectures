@@ -34,6 +34,72 @@
 			<title>Abstract</title>
 			<p class="abstract">Looking back at the Internet, arguably the biggest impact on how the Internet evolved and developed was the invention of the Web. It can be argued that the nascent Internet of Things (IoT) might take the same trajectory, with first seeing limited and isolated success in specific domains, and then taking off exponentially once those limitations are removed by  making the step from IoT to the Web of Things (WoT). This speculative talk is exploring the ways in which IoT and the Web may change once WoT becomes a reality. Big Data's 4V (volume, velocity, variety, and variability) provide good starting points to explore the ways in which the WoT Web may have to evolve in the IoT age.</p>
 		</slide>
+		<part id="IoT-and-WoT">
+			<title>IoT and WoT</title>
+			<slide>
+				<title>Invisibility</title>
+				<ul>
+					<li>No Web-level identification of resources/services</li>
+					<ul>
+						<li>URIs often are resolvable HTTP URIs but don't have to be</li>
+						<li>Identification (even without interaction) creates a lot of value</li>
+						<li>Identity and identification are hard problems for real-world resources</li>
+					</ul>
+					<li><em>Data Fusion</em> works best with known and managed identifiers</li>
+					<li>Robust naming schemes are needed for all WoT scenarios</li>
+					<ul>
+						<li>The network effect needs relatable identifiers</li>
+						<li>Actionable identifiers are a (big) plus but not strictly required</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Discoverability</title>
+				<ul>
+					<li>No easy way to find existing (i.e., identified) resources</li>
+					<ul>
+						<li>Will there be a <q>Google for the IoT</q>? How would it work in today's/tomorrow's WoT?</li>
+						<li>Something similar to <a href="http://schema.org/">schema.org</a> may be necessary/helpful</li>
+					</ul>
+					<li>Discovery in IoT probably also needs a robust update channel</li>
+					<ul>
+						<li>The set of discovered resources can change a lot over time</li>
+						<li><q>Subscribing</q> to change messages allows clients to stay updated</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Siloization</title>
+				<ul>
+					<li>Many IoT scenarios are tightly controlled verticals</li>
+					<ul>
+						<li>Easier to design and implement for vendors (engineering legacy)</li>
+						<li>Easier to control and monetize (walled gardens are profitable)</li>
+					</ul>
+					<li>A lot of value can be created by working across silo boundaries</li>
+					<ul>
+						<li><em>Avoid</em> <q>warehouse</q> approaches selling centralized <q>integration</q></li>
+						<li><em>Prefer</em> ecosystem approaches that with a decentralized architecture</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Precious Snowflakes (aka NIH)</title>
+				<img src="snowflakes.jpg" href="http://atompub.org/" style="float : right ; width : 25% ; margin : 0.5em 1em 1em 1em ; "/>
+				<ul>
+					<li>Starting from scratch often is easier than reuse</li>
+					<ul>
+						<li>Many existing designs are not well-documented and extensible</li>
+						<li>In many cases there is no incentive to reuse</li>
+					</ul>
+					<li>Defining domain models can be hard work</li>
+					<ul>
+						<li>W3C should stay away from specific domains and focus on the connective fabric</li>
+						<li>Domain models should be left to domain experts and their organizations</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="ld-challenges">
 			<title>Linked Data Challenges</title>
 			<slide id="ldow2015-soeren">
