@@ -128,19 +128,65 @@
 				</slide>
 			</part>
 		</part>
-		<part id="ld-challenges">
-			<title>Linked Data Challenges</title>
-			<slide id="ldow2015-soeren">
-				<title>Vocabularies are Key</title>
-				<img src="ldow2015-lod-cloud-chris.jpg" title="" style="height : 65% ; margin : 4% ; "/>
+		<part id="web-challenges">
+			<title>Web Challenges</title>
+			<slide id="loose-coupling">
+				<title>Loose Coupling</title>
+				<ul>
+					<li><em>Loose Coupling</em> allows clean separation of concerns</li>
+					<ul>
+						<li>Ability to use services without the need for full integration</li>
+						<li><em href="http://www.domainlanguage.com/ddd/">Domain Driven Design (DDD)</em> tells us to cleanly and clearly separate domains</li>
+					</ul>
+					<li>APIs are <em>contracts</em> and they should be as simple as possible</li>
+					<ul>
+						<li>The Web's basic interaction contract is the <em>Hypertext Transfer Protocol (HTTP)</em></li>
+						<li>Media types (or vocabularies) are similarly important for productive interactions</li>
+					</ul>
+					<li>Agreement on generic interactions is a very good foundation</li>
+					<ul>
+						<li><em href="http://www.w3.org/html/">Hypertext Markup Language (HTML)</em> for human-facing form-based interactions</li>
+						<li><em href="https://tools.ietf.org/html/rfc4287">Atom</em> failed (mostly) because of XML but lives on in pockets such as <em href="http://www.apple.com/itunes/podcasts/">podcasts</em></li>
+						<li><em href="http://www.w3.org/TR/activitystreams-core/">Activity Streams</em> may become the "JSON-based Atom" of the future</li>
+						<li><em href="http://www.w3.org/TR/ldp/">Linked Data Platform (LDP)</em> is a starting point for exposing RDF-centric collections</li>
+					</ul>
+				</ul>
 			</slide>
-			<slide id="ldow2015-chris">
-				<title>Vocabularies are Special</title>
-				<img src="ldow2015-layer-cake-soeren.jpg" title="Sharing Data vs. Sharing Concepts" style="height : 65% ; margin : 4% ; "/>
-			</slide>
+			<part id="ld-challenges">
+				<title>Linked Data Challenges</title>
+				<slide id="ldow2015-soeren">
+					<title>Vocabularies are Important</title>
+					<img src="ldow2015-lod-cloud-chris.jpg" title="" style="height : 65% ; margin : 4% ; "/>
+				</slide>
+				<slide id="ldow2015-chris">
+					<title>Vocabularies are Special</title>
+					<img src="ldow2015-layer-cake-soeren.jpg" title="Sharing Data vs. Sharing Concepts" style="height : 65% ; margin : 4% ; "/>
+				</slide>
+				<slide>
+					<title>Interaction Matters</title>
+					<ul>
+						<li>The Web is a <em>Service/Interaction Platform</em></li>
+						<ul>
+							<li>The <em>primary concern</em> is the interaction model (how to navigate a service's resources)</li>
+							<li>The domain model of the is service secondary (what the resources represent and how they do it)</li>
+						</ul>
+						<li><em href="https://www.w3.org/community/hydra/">Hydra</em> is an RDF-centric approach for representing hypermedia</li>
+						<ul>
+							<li></li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="hydra-overview">
+					<title>Hydra Overview</title>
+					<img src="hydra-vocabulary.png" title="" style="height : 65% ; margin : 4% ; "/>
+				</slide>
+			</part>
 		</part>
 		<part id="wot-challenges">
 			<title>WoT Challenges</title>
+			<slide>
+				<title></title>
+			</slide>
 		</part>
 		<part id="REST-matters">
 			<title>REST Matters</title>
@@ -153,7 +199,7 @@
 			<slide id="case-against-world-models">
 				<title>The Case Against World Models</title>
 				<ul>
-					<li><em href="http://martinfowler.com/bliki/BoundedContext.html">Bounded Context Concept</em> of <em href="http://www.domainlanguage.com/ddd/">Domain Driven Design</em></li>
+					<li><em href="http://martinfowler.com/bliki/BoundedContext.html">Bounded Context Concept</em> of <em>Domain Driven Design (DDD)</em></li>
 				</ul>
 			</slide>
 		</part>
