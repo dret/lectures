@@ -172,7 +172,8 @@
 						</ul>
 						<li><em href="https://www.w3.org/community/hydra/">Hydra</em> is an RDF-centric approach for representing hypermedia</li>
 						<ul>
-							<li></li>
+							<li>It is an RDF model for many existing and tested interaction patterns for Web services</li>
+							<li>It includes paging, templated queries, error responses, documentation links, and more</li>
 						</ul>
 					</ul>
 				</slide>
@@ -181,17 +182,24 @@
 					<img src="hydra-vocabulary.png" title="" style="height : 65% ; margin : 4% ; "/>
 				</slide>
 			</part>
-		</part>
-		<part id="wot-challenges">
-			<title>WoT Challenges</title>
-			<slide>
-				<title></title>
-			</slide>
+			<part id="wot-challenges">
+				<title>WoT Challenges</title>
+				<slide>
+					<title><q>Selling the Web</q> can be hard</title>
+					<ul>
+						<li>Many IoT services/platforms are well-designed verticals</li>
+						<li>Bridging IoT verticals can be uninteresting or even risky for IoT players</li>
+					</ul>
+				</slide>
+			</part>
 		</part>
 		<part id="REST-matters">
 			<title>REST Matters</title>
 			<slide id="web-is-hypermedia">
 				<title>The Web is Hypermedia</title>
+			</slide>
+			<slide id="seamless-web">
+				<title>A Seamless Web of Things</title>
 			</slide>
 		</part>
 		<part id="small-is-beautiful">
@@ -200,7 +208,15 @@
 				<title>The Case Against World Models</title>
 				<ul>
 					<li><em href="http://martinfowler.com/bliki/BoundedContext.html">Bounded Context Concept</em> of <em>Domain Driven Design (DDD)</em></li>
+					<li>Not every concept should (or can) be universally reusable</li>
+					<ul>
+						<li>Only the <em>service surface</em> is something users have to understand</li>
+						<li>All other concepts are hidden and domain-specific (and not part of the contract)</li>
+					</ul>
 				</ul>
+			</slide>
+			<slide>
+				<title></title>
 			</slide>
 		</part>
 		<part id="diversity">
