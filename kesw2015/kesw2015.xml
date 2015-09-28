@@ -50,7 +50,7 @@
 					<li>WoT promises to be the <q>connective layer</q> for IoT things</li>
 					<ul>
 						<li>The Internet's success was greatly accelerated by the Web</li>
-						<li>The Web's main promise is to avoid verticals and provide an integration layer</li>
+						<li>The Web's main value is to avoid verticals and provide an integration layer</li>
 						<li>Web architecture's model of <em>resources</em> is flexible enough to accommodate IoT</li>
 					</ul>
 					<li>Innovative/useful applications will increasingly include <q>IoT things</q></li>
@@ -77,7 +77,7 @@
 						</ul>
 						<li>What is missing to make the step from IoT to WoT?</li>
 						<ul>
-							<li><a href="http://www.w3.org/">W3C</a>'s <a href="http://www.w3.org/WoT/IG/">WoT Interest Group (IG)</a> is working on addressing the gaps</li>
+							<li><a href="http://www.w3.org/">W3C</a>'s <em href="http://www.w3.org/WoT/IG/">WoT Interest Group (IG)</em> is working on addressing the gaps</li>
 							<li>Many IoT scenarios need some basic Web architecture to become more webby</li>
 						</ul>
 					</ul>
@@ -87,9 +87,9 @@
 					<ul>
 						<li>No Web-level identification of resources/services</li>
 						<ul>
-							<li>URIs often are resolvable HTTP URIs but don't have to be</li>
+							<li>URIs often are resolvable HTTP URIs but don't have to be (things may be identifiable but not accessible)</li>
 							<li>Identification (even without interaction) creates a lot of value</li>
-							<li>Identity and identification are hard problems for real-world resources</li>
+							<li>Identity and identification are hard problems for real-world resources (it often depends on context what the <q>right</q> approach is)</li>
 						</ul>
 						<li><em>Data Fusion</em> works best with known and managed identifiers</li>
 						<li>Robust naming schemes are needed for all WoT scenarios</li>
@@ -111,6 +111,11 @@
 						<ul>
 							<li>The set of discovered resources can change a lot over time</li>
 							<li><q>Subscribing</q> to change messages allows clients to stay updated</li>
+						</ul>
+						<li>Discovery is a highly contextual problem (what is your goal?)</li>
+						<ul>
+							<li><em>Building managers</em> have little interest in sensor details but need them to be working</li>
+							<li><em>Maintenance personnel</em> need to track sensors through their lifecycle to manage them</li>
 						</ul>
 					</ul>
 				</slide>
