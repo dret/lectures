@@ -208,10 +208,19 @@
 				<title>The Case Against World Models</title>
 				<ul>
 					<li><em href="http://martinfowler.com/bliki/BoundedContext.html">Bounded Context Concept</em> of <em>Domain Driven Design (DDD)</em></li>
+					<ul>
+						<li>For complex domains, a unified and consistent model is not a feasible goal</li>
+						<li>Instead, focus on <em>shared concepts</em> between domains as the <q>service touch points</q></li>
+					</ul>
 					<li>Not every concept should (or can) be universally reusable</li>
 					<ul>
 						<li>Only the <em>service surface</em> is something users have to understand</li>
-						<li>All other concepts are hidden and domain-specific (and not part of the contract)</li>
+						<li>All other concepts are hidden and domain-specific (and <em>not part of the contract</em>)</li>
+					</ul>
+					<li><em>Information Hiding/Encapsulation</em> is well-established in software engineering</li>
+					<ul>
+						<li>It hides implementation (code) as well as non-interface information (hidden attributes)</li>
+						<li>Similar approaches could be taken for large-scale knowledge engineering</li>
 					</ul>
 				</ul>
 			</slide>
