@@ -58,6 +58,7 @@
 						<li>Building <em>across</em> verticals can be done most easily with WoT</li>
 						<li>Creating and using <em>patterns</em> for WoT resources will become essential</li>
 					</ul>
+					<li>WoT in 8 words: <em><q><span title="Web of Things">WoT</span> is a webby <span title="Service-Oriented Architecture">SOA</span> for <span title="Internet of Things">IoT</span> resources.</q></em></li>
 				</ul>
 			</slide>
 			<part id="IoT-problems">
@@ -170,15 +171,40 @@
 						<li>The Web's basic interaction contract is the <em>Hypertext Transfer Protocol (HTTP)</em></li>
 						<li>Media types (a.k.a. vocabularies) are similarly important for productive interactions</li>
 					</ul>
-					<li>Agreement on generic interactions is a good foundation</li>
+					<li>Agreement on interaction patterns is a good foundation</li>
 					<ul>
 						<li><em href="http://www.w3.org/html/">Hypertext Markup Language (HTML)</em> for human-facing form-based interactions</li>
-						<li><em href="https://tools.ietf.org/html/rfc4287">Atom</em> failed (mostly) because of XML but lives on in pockets such as <em href="http://www.apple.com/itunes/podcasts/">podcasts</em></li>
+						<li><em href="https://tools.ietf.org/html/rfc4287">Atom</em> failed (mostly) because of XML's demise, but lives on in pockets such as <em href="http://www.apple.com/itunes/podcasts/">podcasts</em></li>
 						<li><em href="http://www.w3.org/TR/activitystreams-core/">Activity Streams</em> may become the "JSON-based Atom" of the future</li>
 						<li><em href="http://www.w3.org/TR/ldp/">Linked Data Platform (LDP)</em> is a starting point for exposing RDF-centric collections</li>
 					</ul>
 				</ul>
 			</slide>
+			<part id="wot-challenges">
+				<title>WoT Challenges</title>
+				<slide>
+					<title><q>Selling the Web</q> can be hard</title>
+					<ul>
+						<li>Many IoT services/platforms are well-designed verticals</li>
+						<li>Bridging IoT verticals can be uninteresting or even risky for IoT players</li>
+						<ul>
+							<li>Breaking out of verticals happens when users demand a better approach</li>
+						</ul>
+						<li>The Web is a constantly evolving set of technologies that practitioners need to know</li>
+						<ul>
+							<li>HTTP has <a href="https://github.com/dret/sedola/blob/master/MD/headers.md" title="probably outdated by now...">156 (registered) header field types</a></li>
+							<li>The Web has <a href="https://github.com/dret/sedola/blob/master/MD/linkrels.md" title="probably outdated by now...">92 (registered) link relations</a></li>
+							<li>Most companies prefer monolithic frameworks that can be supported by tools</li>
+						</ul>
+						<li>Coming up with domain models is (a minor) part of the challenge</li>
+						<ul>
+							<li>Establish a Web-aware designer/developer community</li>
+							<li>Look at other scenarios for inspiration</li>
+							<li>Participate in the ongoing effort to <em>improve the Web one spec at a time</em></li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
 			<part id="ld-challenges">
 				<title>Linked Data Challenges</title>
 				<slide id="ldow2015-soeren">
@@ -207,16 +233,6 @@
 				<slide id="hydra-overview">
 					<title>Hydra Overview</title>
 					<img src="hydra-vocabulary.png" title="" style="height : 65% ; margin : 4% ; "/>
-				</slide>
-			</part>
-			<part id="wot-challenges">
-				<title>WoT Challenges</title>
-				<slide>
-					<title><q>Selling the Web</q> can be hard</title>
-					<ul>
-						<li>Many IoT services/platforms are well-designed verticals</li>
-						<li>Bridging IoT verticals can be uninteresting or even risky for IoT players</li>
-					</ul>
 				</slide>
 			</part>
 		</part>
