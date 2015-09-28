@@ -107,9 +107,9 @@
 							<li>Will there be a <q>Google for the IoT</q>? How would it work in today's/tomorrow's WoT?</li>
 							<li>Something similar to <a href="http://schema.org/">schema.org</a> may be necessary/helpful</li>
 						</ul>
-						<li>Discovery in IoT probably also needs a robust update channel</li>
+						<li>Discovery in IoT often also needs a robust update channel</li>
 						<ul>
-							<li>The set of discovered resources can change a lot over time</li>
+							<li>The set of discovered resources can change over time</li>
 							<li><q>Subscribing</q> to change messages allows clients to stay updated</li>
 						</ul>
 						<li>Discovery is a highly contextual problem (what is your goal?)</li>
@@ -122,15 +122,16 @@
 				<slide id="siloization">
 					<title>Siloization</title>
 					<ul>
-						<li>Many IoT scenarios are tightly controlled verticals</li>
+						<li>Many IoT solutions are walled verticals</li>
 						<ul>
 							<li>Easier to design and implement for vendors (engineering legacy)</li>
-							<li>Easier to control and monetize (walled gardens are profitable)</li>
+							<li>Easier to control and monetize (<em>walled gardens</em> can be profitable)</li>
 						</ul>
 						<li>A lot of value can be created by working across silo boundaries</li>
 						<ul>
 							<li><em>Avoid</em> <q>warehouse</q> approaches selling centralized <q>integration</q></li>
-							<li><em>Prefer</em> ecosystem approaches that with a decentralized architecture</li>
+							<li><em>Prefer</em> ecosystem approaches that with a truly decentralized architecture</li>
+							<li>Centralization should be a policy/operational choice, not an architectural one</li>
 						</ul>
 					</ul>
 				</slide>
@@ -140,8 +141,9 @@
 					<ul>
 						<li>Starting from scratch often is easier than reuse</li>
 						<ul>
-							<li>Many existing designs are not well-documented and extensible</li>
-							<li>In many cases there is no incentive to reuse</li>
+							<li>Many existing designs are not well-documented</li>
+							<li>Many existing designs are not open/extensible</li>
+							<li>In many cases there is no (immediate) incentive to reuse</li>
 						</ul>
 						<li>Defining domain models can be hard work</li>
 						<ul>
@@ -315,6 +317,10 @@
 						<li>Models are tools and metamodels are tools, and not a reflection of reality</li>
 					</ul>
 				</ul>
+			</slide>
+			<slide id="wot-service-model">
+				<title>WoT Service Models</title>
+				<img src="wot-service-model.png" style="height : 65% ; margin : 4% ; "/>
 			</slide>
 		</part>
 		<part id="conclusions">
