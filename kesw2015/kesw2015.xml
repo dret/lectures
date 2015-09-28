@@ -37,7 +37,7 @@
 		<part id="IoT-and-WoT">
 			<title>IoT and WoT</title>
 			<slide id="iot">
-				<title>Internet of Things (IoT)</title>
+				<title>Internet of Things (IoT): So Many Worlds!</title>
 				<img src="internet-of-things.jpg" href="https://pixabay.com/en/network-iot-internet-of-things-782707/" style="height : 65% ; margin : 4% ; "/>
 			</slide>
 			<slide>
@@ -47,7 +47,7 @@
 					<ul>
 						<li><q href="http://www.gartner.com/newsroom/id/2905717">Gartner, Inc. forecasts that 4.9 billion connected things will be in use in 2015, up 30 percent from 2014, and will reach 25 billion by 2020.</q></li>
 					</ul>
-					<li>WoT promises to be the <q>connective layer</q> for IoT things</li>
+					<li>WoT promises to be the <q>connective fabric</q> for IoT resources</li>
 					<ul>
 						<li>The Internet's success was greatly accelerated by the Web</li>
 						<li>The Web's main value is to avoid verticals and provide an integration layer</li>
@@ -78,7 +78,7 @@
 						<li>What is missing to make the step from IoT to WoT?</li>
 						<ul>
 							<li><a href="http://www.w3.org/">W3C</a>'s <em href="http://www.w3.org/WoT/IG/">WoT Interest Group (IG)</em> is working on addressing the gaps</li>
-							<li>Many IoT scenarios need some basic Web architecture to become more webby</li>
+							<li>Many IoT scenarios need more Web architecture to become more webby</li>
 						</ul>
 					</ul>
 				</slide>
@@ -94,8 +94,8 @@
 						<li><em>Data Fusion</em> works best with known and managed identifiers</li>
 						<li>Robust naming schemes are needed for all WoT scenarios</li>
 						<ul>
-							<li>The network effect needs relatable identifiers</li>
-							<li>Actionable identifiers are a (big) plus but not strictly required</li>
+							<li>The network effect needs stable and relatable identifiers</li>
+							<li>Actionable identifiers are a (big) plus but not required</li>
 						</ul>
 					</ul>
 				</slide>
@@ -131,7 +131,7 @@
 						<ul>
 							<li><em>Avoid</em> <q>warehouse</q> approaches selling centralized <q>integration</q></li>
 							<li><em>Prefer</em> ecosystem approaches that with a truly decentralized architecture</li>
-							<li>Centralization should be a policy/operational choice, not an architectural one</li>
+							<li>Centralization should be a policy/operational choice, <em>not an architectural one</em></li>
 						</ul>
 					</ul>
 				</slide>
@@ -145,9 +145,9 @@
 							<li>Many existing designs are not open/extensible</li>
 							<li>In many cases there is no (immediate) incentive to reuse</li>
 						</ul>
-						<li>Defining domain models can be hard work</li>
+						<li><em>Service patterns</em> are a good starting point</li>
 						<ul>
-							<li>W3C should stay away from specific domains and focus on the connective fabric</li>
+							<li>W3C should stay away from specific domains and focus on the <em>connective fabric</em></li>
 							<li>Domain models should be left to domain experts and their organizations</li>
 							<li>Domain models should be built on their preferred metamodels</li>
 						</ul>
@@ -162,15 +162,15 @@
 				<ul>
 					<li><em>Loose Coupling</em> allows clean separation of concerns</li>
 					<ul>
-						<li>Ability to use services without the need for full integration</li>
+						<li>Ability to use services without the need for <em>shared deep models</em></li>
 						<li><em href="http://www.domainlanguage.com/ddd/">Domain Driven Design (DDD)</em> tells us to cleanly and clearly separate domains</li>
 					</ul>
 					<li>APIs are <em>contracts</em> and they should be as simple as possible</li>
 					<ul>
 						<li>The Web's basic interaction contract is the <em>Hypertext Transfer Protocol (HTTP)</em></li>
-						<li>Media types (or vocabularies) are similarly important for productive interactions</li>
+						<li>Media types (a.k.a. vocabularies) are similarly important for productive interactions</li>
 					</ul>
-					<li>Agreement on generic interactions is a very good foundation</li>
+					<li>Agreement on generic interactions is a good foundation</li>
 					<ul>
 						<li><em href="http://www.w3.org/html/">Hypertext Markup Language (HTML)</em> for human-facing form-based interactions</li>
 						<li><em href="https://tools.ietf.org/html/rfc4287">Atom</em> failed (mostly) because of XML but lives on in pockets such as <em href="http://www.apple.com/itunes/podcasts/">podcasts</em></li>
