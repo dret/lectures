@@ -221,12 +221,13 @@
 						<li>The Web is a <em>Service/Interaction Platform</em></li>
 						<ul>
 							<li>The <em>primary concern</em> is the interaction model (how to navigate a service's resources)</li>
-							<li>The domain model of the is service secondary (what the resources represent and how they do it)</li>
+							<li>The domain model of the is <em>secondary</em> (what the resources represent and how they do it)</li>
 						</ul>
 						<li><em href="https://www.w3.org/community/hydra/">Hydra</em> is an RDF-centric approach for representing hypermedia</li>
 						<ul>
 							<li>It is an RDF model for many existing and tested interaction patterns for Web services</li>
 							<li>It includes paging, templated queries, error responses, documentation links, and more</li>
+							<li>It is struggling in a community that is <em>data centric</em> and not <em>service centric</em></li>
 						</ul>
 					</ul>
 				</slide>
@@ -240,6 +241,24 @@
 			<title>REST Matters</title>
 			<slide id="web-is-hypermedia">
 				<title>The Web is Hypermedia</title>
+				<ul>
+					<li><em>Service Engineering</em> takes the front seat on the Web</li>
+					<ul>
+						<li>How are resources and services exposed and how can they be navigated?</li>
+					</ul>
+					<li>Use the uniform interface when appropriate (make your service visible to everybody)</li>
+					<ul>
+						<li>Pushing everything into a representation makes the uniform interface less powerful</li>
+						<li>For example, <em href="http://tools.ietf.org/html/rfc4287">caching</em> works well because it is not specific to a media type</li>
+					</ul>
+					<li>Always think in the four main steps of generic REST applications</li>
+					<ol>
+						<li>Start with a representation of a hypermedia resource (parsing)</li>
+						<li>Decide which link to follow based on application goals (navigation decision)</li>
+						<li>Use representation and client state to initiate interaction (request)</li>
+						<li>Retrieve representation of a hypermedia resource (response)</li>
+					</ol>
+				</ul>
 			</slide>
 			<slide id="seamless-web">
 				<title>A Seamless Web of Things</title>
@@ -268,7 +287,17 @@
 				</ul>
 			</slide>
 			<slide>
-				<title></title>
+				<title>Models and the Web</title>
+				<ul>
+					<li>The Web is a place for exposing <em>interaction models</em></li>
+					<ul>
+						<li>Allows service users to understand as much as they have to understand</li>
+					</ul>
+					<li>The Web is not a place for exposing <em>implementation models</em></li>
+					<ul>
+						<li>Violates the principles of information hiding and service simplicity</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="diversity">
@@ -324,8 +353,8 @@
 					</ul>
 					<li>Build good models and help people understand them</li>
 					<ul>
-						<li>The less baggage comes with the model the easier it will be to sell</li>
-						<li></li>
+						<li>The less baggage comes with a model the easier it will be to sell</li>
+						<li>JSON's success is a big lesson about simplicity and ease-of-use</li>
 					</ul>
 					<li>Dare to be a metamodel apostate</li>
 					<ul>
@@ -344,7 +373,14 @@
 			<slide>
 				<title>WoT is Happening!</title>
 				<ul>
-					<li>Small (and shallow) is beautiful!</li>
+					<li>On the Web, narrow and shallow is beautiful!</li>
+					<li>Wide and deep models are useful for implementations</li>
+					<li>Reduce coupling by reducing the service surface</li>
+					<li>Start from interactions, not from data models</li>
+					<ul>
+						<li>The first question is: <q>What can people do with a service?</q></li>
+						<li>The second question is: <q>What are the resources the service exposes?</q></li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="thanks">
