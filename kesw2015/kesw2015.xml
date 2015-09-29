@@ -55,7 +55,7 @@
 					</ul>
 					<li>Innovative/useful applications will increasingly include <q>IoT things</q></li>
 					<ul>
-						<li>Building <em>across</em> verticals can be done most easily with WoT</li>
+						<li>Building <em>across</em> verticals can be done more easily with WoT</li>
 						<li>Creating and using <em>patterns</em> for WoT resources will become essential</li>
 					</ul>
 					<li>WoT in 8 words: <em><q><span title="Web of Things">WoT</span> is a webby <span title="Service-Oriented Architecture">SOA</span> for <span title="Internet of Things">IoT</span> resources.</q></em></li>
@@ -68,7 +68,7 @@
 					<ul>
 						<li>IoT starts with connecting and networking things</li>
 						<ul>
-							<li>Major challenges on lower layers such as frequency band management</li>
+							<li>Big challenges on lower layers such as frequency band management</li>
 							<li>Once connectivity is established, IoT can take over</li>
 						</ul>
 						<li>IoT is about making things accessible <em>on the Internet</em></li>
@@ -80,6 +80,7 @@
 						<ul>
 							<li><a href="http://www.w3.org/">W3C</a>'s <em href="http://www.w3.org/WoT/IG/">WoT Interest Group (IG)</em> is working on addressing the gaps</li>
 							<li>Many IoT scenarios need more Web architecture to become more webby</li>
+							<li>Generic WoT interaction models may be the same tipping point as they were for the Web</li>
 						</ul>
 					</ul>
 				</slide>
@@ -93,11 +94,15 @@
 							<li>Identity and identification are hard problems for real-world resources (it often depends on context what the <q>right</q> approach is)</li>
 						</ul>
 						<li><em>Data Fusion</em> works best with known and managed identifiers</li>
+						<ul>
+							<li>Entity recognition ans disambiguation are notoriously difficult tasks</li>
+						</ul>
 						<li>Robust naming schemes are needed for all WoT scenarios</li>
 						<ul>
 							<li>The network effect needs stable and relatable identifiers</li>
 							<li>Actionable identifiers are a (big) plus but not required</li>
 						</ul>
+						<li><q>If something matters to you, you give it a name, and then you can talk about it.</q></li>
 					</ul>
 				</slide>
 				<slide id="discoverability">
@@ -106,24 +111,25 @@
 						<li>No easy way to find existing (i.e., identified) resources</li>
 						<ul>
 							<li>Will there be a <q>Google for the IoT</q>? How would it work in today's/tomorrow's WoT?</li>
-							<li>Something similar to <a href="http://schema.org/">schema.org</a> may be necessary/helpful</li>
+							<li>Something similar to <a href="http://schema.org/">schema.org</a> may be helpful/necessary</li>
 						</ul>
 						<li>Discovery in IoT often also needs a robust update channel</li>
 						<ul>
-							<li>The set of discovered resources can change over time</li>
-							<li><q>Subscribing</q> to change messages allows clients to stay updated</li>
+							<li>The set of discovered/relevant resources can change over time</li>
+							<li><q>Subscribing</q> to change messages allows clients to stay in sync</li>
 						</ul>
 						<li>Discovery is a highly contextual problem (what is your goal?)</li>
 						<ul>
 							<li><em>Building managers</em> have little interest in sensor details but need them to be working</li>
 							<li><em>Maintenance personnel</em> need to track sensors through their lifecycle to manage them</li>
 						</ul>
+						<li><q>In an open world, resources come and go, and discovering them is essential.</q></li>
 					</ul>
 				</slide>
 				<slide id="siloization">
 					<title>Siloization</title>
 					<ul>
-						<li>Many IoT solutions are walled verticals</li>
+						<li>Many of today's IoT solutions are verticals</li>
 						<ul>
 							<li>Easier to design and implement for vendors (engineering legacy)</li>
 							<li>Easier to control and monetize (<em>walled gardens</em> can be profitable)</li>
@@ -134,6 +140,7 @@
 							<li><em>Prefer</em> ecosystem approaches that with a truly decentralized architecture</li>
 							<li>Centralization should be a policy/operational choice, <em>not an architectural one</em></li>
 						</ul>
+						<li><q>The Web is an interlinked set of decentralized resources that clients can traverse any way they like.</q></li>
 					</ul>
 				</slide>
 				<slide id="snowflakes">
@@ -153,6 +160,7 @@
 							<li>Domain models should be built on their preferred metamodels</li>
 						</ul>
 					</ul>
+					<li>Try to minimize the element of surprise and reuse everything that you can.</li>
 				</slide>
 			</part>
 		</part>
@@ -166,7 +174,7 @@
 						<li>Ability to use services without the need for <em>shared deep models</em></li>
 						<li><em href="http://www.domainlanguage.com/ddd/">Domain Driven Design (DDD)</em> tells us to cleanly and clearly separate domains</li>
 					</ul>
-					<li>APIs are <em>contracts</em> and they should be as simple as possible</li>
+					<li>APIs are <em>contracts</em> and should be as simple as possible</li>
 					<ul>
 						<li>The Web's basic interaction contract is the <em>Hypertext Transfer Protocol (HTTP)</em></li>
 						<li>Media types (a.k.a. vocabularies) are similarly important for productive interactions</li>
@@ -174,9 +182,9 @@
 					<li>Agreement on interaction patterns is a good foundation</li>
 					<ul>
 						<li><em href="http://www.w3.org/html/">Hypertext Markup Language (HTML)</em> for human-facing form-based interactions</li>
-						<li><em href="https://tools.ietf.org/html/rfc4287">Atom</em> failed (mostly) because of XML's demise, but lives on in pockets such as <em href="http://www.apple.com/itunes/podcasts/">podcasts</em></li>
+						<li><em href="https://tools.ietf.org/html/rfc4287">Atom</em> failed (mostly) because of XML's demise, but lives on in pockets such as <em href="http://www.apple.com/itunes/podcasts/">podcasts</em><!-- and <em href="" title="Open Book">OBML</em>--></li>
 						<li><em href="http://www.w3.org/TR/activitystreams-core/">Activity Streams</em> may become the "JSON-based Atom" of the future</li>
-						<li><em href="http://www.w3.org/TR/ldp/">Linked Data Platform (LDP)</em> is a starting point for exposing RDF-centric collections</li>
+						<li><em href="http://www.w3.org/TR/ldp/">Linked Data Platform (LDP)</em> as a starting point for exposing RDF-centric collections</li>
 					</ul>
 				</ul>
 			</slide>
@@ -192,8 +200,8 @@
 						</ul>
 						<li>The Web is a constantly evolving set of technologies that practitioners need to know</li>
 						<ul>
-							<li>HTTP has <a href="https://github.com/dret/sedola/blob/master/MD/headers.md" title="probably outdated by now...">156 (registered) header field types</a></li>
-							<li>The Web has <a href="https://github.com/dret/sedola/blob/master/MD/linkrels.md" title="probably outdated by now...">92 (registered) link relations</a></li>
+							<li>HTTP has <a href="https://github.com/dret/sedola/blob/master/MD/headers.md" title="probably outdated by now...">135 (registered) header field types</a></li>
+							<li>The Web has <a href="https://github.com/dret/sedola/blob/master/MD/linkrels.md" title="probably outdated by now...">71 (registered) link relations</a></li>
 							<li>Most companies prefer monolithic frameworks that can be supported by tools</li>
 						</ul>
 						<li>Coming up with domain models is (a minor) part of the challenge</li>
