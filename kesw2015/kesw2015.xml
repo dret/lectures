@@ -182,7 +182,7 @@
 					<li>Agreement on interaction patterns is a good foundation</li>
 					<ul>
 						<li><em href="http://www.w3.org/html/">Hypertext Markup Language (HTML)</em> for human-facing form-based interactions</li>
-						<li><em href="https://tools.ietf.org/html/rfc4287">Atom</em> failed (mostly) because of XML's demise, but lives on in pockets such as <em href="http://www.apple.com/itunes/podcasts/">podcasts</em><!-- and <em href="" title="Open Book">OBML</em>--></li>
+						<li><em href="https://tools.ietf.org/html/rfc4287">Atom</em> failed (mostly) because of XML's demise, but lives on in pockets such as <em href="http://www.apple.com/itunes/podcasts/">podcasts</em> and <em href="http://opds-spec.org/" title="Open Publication Distribution System">OPDS</em></li>
 						<li><em href="http://www.w3.org/TR/activitystreams-core/">Activity Streams</em> may become the "JSON-based Atom" of the future</li>
 						<li><em href="http://www.w3.org/TR/ldp/">Linked Data Platform (LDP)</em> as a starting point for exposing RDF-centric collections</li>
 					</ul>
