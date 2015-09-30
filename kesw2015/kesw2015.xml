@@ -160,7 +160,7 @@
 							<li>Domain models should be built on their preferred metamodels</li>
 						</ul>
 					</ul>
-					<li>Try to minimize the element of surprise and reuse everything that you can.</li>
+					<li><q>Try to minimize the element of surprise and reuse everything that you can.</q></li>
 				</slide>
 			</part>
 		</part>
@@ -201,7 +201,7 @@
 						<li>The Web is a constantly evolving set of technologies that practitioners need to know</li>
 						<ul>
 							<li>HTTP has <a href="https://github.com/dret/sedola/blob/master/MD/headers.md" title="probably outdated by now...">135 (registered) header field types</a></li>
-							<li>The Web has <a href="https://github.com/dret/sedola/blob/master/MD/linkrels.md" title="probably outdated by now...">71 (registered) link relations</a></li>
+							<li>The Web has <a href="https://github.com/dret/sedola/blob/master/MD/linkrels.md" title="probably outdated by now..."> (registered) link relations</a></li>
 							<li>Most companies prefer monolithic frameworks that can be supported by tools</li>
 						</ul>
 						<li>Coming up with domain models is (a minor) part of the challenge</li>
@@ -245,33 +245,6 @@
 				</slide>
 			</part>
 		</part>
-		<part id="REST-matters">
-			<title>REST Matters</title>
-			<slide id="web-is-hypermedia">
-				<title>The Web is Hypermedia</title>
-				<ul>
-					<li><em>Service Engineering</em> takes the front seat on the Web</li>
-					<ul>
-						<li>How are resources and services exposed and how can they be navigated?</li>
-					</ul>
-					<li>Use the uniform interface when appropriate (make your service visible to everybody)</li>
-					<ul>
-						<li>Pushing everything into a representation makes the uniform interface less powerful</li>
-						<li>For example, <em href="http://tools.ietf.org/html/rfc4287">caching</em> works well because it is not specific to a media type</li>
-					</ul>
-					<li>Always think in the four main steps of generic REST applications</li>
-					<ol>
-						<li>Start with a representation of a hypermedia resource (parsing)</li>
-						<li>Decide which link to follow based on application goals (navigation decision)</li>
-						<li>Use representation and client state to initiate interaction (request)</li>
-						<li>Retrieve representation of a hypermedia resource (response)</li>
-					</ol>
-				</ul>
-			</slide>
-			<slide id="seamless-web">
-				<title>A Seamless Web of Things</title>
-			</slide>
-		</part>
 		<part id="small-is-beautiful">
 			<title>Small is Beautiful</title>
 			<slide id="case-against-world-models">
@@ -307,6 +280,27 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="web-is-hypermedia">
+				<title>The Web is Hypermedia</title>
+				<ul>
+					<li><em>Service Engineering</em> takes the front seat on the Web</li>
+					<ul>
+						<li>How are resources and services exposed and how can they be navigated?</li>
+					</ul>
+					<li>Use the uniform interface when appropriate (make your service visible to everybody)</li>
+					<ul>
+						<li>Pushing everything into a representation makes the uniform interface less powerful</li>
+						<li>For example, <em href="http://tools.ietf.org/html/rfc4287">caching</em> works well because it is not specific to a media type</li>
+					</ul>
+					<li>Always think in the four main steps of generic REST applications</li>
+					<ol>
+						<li>Start with a representation of a hypermedia resource (parsing)</li>
+						<li>Decide which link to follow based on application goals (navigation decision)</li>
+						<li>Use representation and client state to initiate interaction (request)</li>
+						<li>Retrieve representation of a hypermedia resource (response)</li>
+					</ol>
+				</ul>
+			</slide>
 		</part>
 		<part id="diversity">
 			<title>Embrace Diversity</title>
@@ -323,7 +317,7 @@
 				<ul>
 					<li>Web models should be as simple as possible</li>
 					<ul>
-						<li>Web models also should have well-defined extension points</li>
+						<li>Web models should have well-defined extension points</li>
 						<li>Almost always, <em>mustIgnore</em> is a good choice for extension semantics</li>
 					</ul>
 					<li>Maybe <q>μServices</q> should be based on <q>μVocabularies</q>?</li>
