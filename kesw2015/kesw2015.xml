@@ -40,8 +40,8 @@
 				<title>Internet of Things (IoT): So Many Worlds!</title>
 				<img src="internet-of-things.jpg" href="https://pixabay.com/en/network-iot-internet-of-things-782707/" style="height : 65% ; margin : 4% ; "/>
 			</slide>
-			<slide>
-				<title>Why/How IoT/WoT Changes the Web</title>
+			<slide id="IoT-WoT-change-the-web">
+				<title>Why/How IoT/WoT Change the Web</title>
 				<ul>
 					<li>IoT makes <em>very many</em> things accessible and possibly actionable</li>
 					<ul>
@@ -190,7 +190,7 @@
 			</slide>
 			<part id="wot-challenges">
 				<title>WoT Challenges</title>
-				<slide>
+				<slide id="selling-the-web">
 					<title><q>Selling the Web</q> can be hard</title>
 					<ul>
 						<li>Many IoT services/platforms are well-designed verticals</li>
@@ -223,7 +223,7 @@
 					<title>Vocabularies are Special</title>
 					<img src="ldow2015-layer-cake-soeren.jpg" title="Sharing Data vs. Sharing Concepts" style="height : 65% ; margin : 4% ; "/>
 				</slide>
-				<slide>
+				<slide id="interaction-matters">
 					<title>Interaction Matters</title>
 					<ul>
 						<li>The Web is a <em>Service/Interaction Platform</em></li>
@@ -267,7 +267,7 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="models-and-the-web">
 				<title>Models and the Web</title>
 				<ul>
 					<li>The Web is a place for exposing <em>interaction models</em></li>
@@ -326,7 +326,7 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="web-model-sins">
 				<title>The 3 Main Sins of Web Models</title>
 				<ol>
 					<li>The Abyss of Abstraction</li>
@@ -345,7 +345,7 @@
 					</ul>
 				</ol>
 			</slide>
-			<slide>
+			<slide id="model-value">
 				<title>Models Create Value</title>
 				<ul>
 					<li>Metamodels are tools and shouldn't be overemphasized</li>
@@ -372,7 +372,7 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
-			<slide>
+			<slide id="WoT-is-happening">
 				<title>WoT is Happening!</title>
 				<ul>
 					<li>On the Web, narrow and shallow is beautiful!</li>
