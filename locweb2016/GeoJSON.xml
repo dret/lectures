@@ -32,7 +32,7 @@
 		<title>GeoJSON Status Update</title>
 		<slide id="summary">
 			<title>Summary</title>
-			<p class="abstract">GeoJSON has been in use for several years now, despite of not being an "official standard". Recent efforts within the IETF have let to a revised specification text that will soon be published as an proposed standard RFC. This talk briefly presents GeoJSON, the changes that the RFC revision incorporates, and talks about ongoing work within the working group.</p>
+			<p class="abstract">GeoJSON has been in use for several years now, despite of not being an "official standard". Recent efforts within the IETF have let to a revised specification text that will soon be published as a proposed standard RFC. This talk briefly presents GeoJSON, the changes that the RFC revision incorporates, and talks about ongoing work within the working group.</p>
 		</slide>
 		<part id="geojson">
 			<title>What is GeoJSON?</title>
@@ -67,7 +67,8 @@
 			<ul>
 				<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
 				<li>These Slides: <a href="http://dret.net/lectures/locweb2016/"><code>dret.net/lectures/locweb2016/</code></a></li>
-				<li>Slide Sources: <a href="http://github.com/dret/lectures/tree/master/locweb2016"><code>http://github.com/dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+				<li>Slide Sources: <a href="http://github.com/dret/lectures/tree/master/locweb2016"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+				<li>GeoJSON WG: <a href="https://datatracker.ietf.org/wg/geojson">IETF Datatracker Page</a></li>
 			</ul>
 		</slide>
 	</presentation>
