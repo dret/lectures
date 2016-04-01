@@ -37,15 +37,23 @@
 		<part id="geojson">
 			<title>What is GeoJSON?</title>
 			<slide>
-				<title>Representing Geograph(y|ical) Features</title>
-			</slide>
-			<slide>
 				<title>GeoJSON Fish</title>
 				<ul>
 					<li>Transformed from <a href="http://www.strava.com/">Strava</a>-originated <a href="http://www.strava.com/activities/523719323">activity</a> <a href="https://github.com/dret/lectures/blob/master/locweb2016/src/fish.gpx">GPX</a></li>
 					<li><a href="http://github.com/">Github</a> understands and represents the resulting <a href="https://github.com/dret/lectures/blob/master/locweb2016/src/fish.geojson">GeoJSON</a></li>
 				</ul>
 				<listing src="fish.geojson" line="1-15"/>
+			</slide>
+			<slide>
+				<title>GeoJSON Goose</title>
+				<ul>
+					<li>Transformed from <a href="http://www.strava.com/">Strava</a>-originated <a href="http://www.strava.com/activities/527214108">activity</a> <a href="https://github.com/dret/lectures/blob/master/locweb2016/src/goose.gpx">GPX</a></li>
+					<li><a href="http://github.com/">Github</a> understands and represents the resulting <a href="https://github.com/dret/lectures/blob/master/locweb2016/src/goose.geojson">GeoJSON</a></li>
+				</ul>
+				<listing src="goose.geojson" line="1-15"/>
+			</slide>
+			<slide>
+				<title>Representing Geograph(y|ical) Features</title>
 			</slide>
 		</part>
 		<part id="geojson">
