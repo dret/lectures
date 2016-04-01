@@ -36,12 +36,12 @@
 		</slide>
 		<part id="geojson">
 			<title>What is GeoJSON?</title>
-			<slide>
+			<slide id="strava-art">
 				<title>It's for Riding Animals!</title>
 				<img src="fish.jpg" style="float: left ; width : 42% ; margin : 4% ; "/>
 				<img src="goose.jpg" style="float: right ; width : 42% ; margin : 4% ; "/>
 			</slide>
-			<slide>
+			<slide id="fish-ride">
 				<title>GeoJSON Fish</title>
 				<ul>
 					<li>Transformed from <a href="http://www.strava.com/">Strava</a>-originated <a href="http://www.strava.com/activities/523719323">activity</a> <a href="https://github.com/dret/lectures/blob/master/locweb2016/src/fish.gpx">GPX</a></li>
@@ -49,7 +49,7 @@
 				</ul>
 				<listing src="fish.geojson" line="1-15"/>
 			</slide>
-			<slide>
+			<slide id="goose-ride">
 				<title>GeoJSON Goose</title>
 				<ul>
 					<li>Transformed from <a href="http://www.strava.com/">Strava</a>-originated <a href="http://www.strava.com/activities/527214108">activity</a> <a href="https://github.com/dret/lectures/blob/master/locweb2016/src/goose.gpx">GPX</a></li>
@@ -57,7 +57,7 @@
 				</ul>
 				<listing src="goose.geojson" line="1-15"/>
 			</slide>
-			<slide>
+			<slide id="geojson-executive">
 				<title>Representing Geograph(y|ical) Features</title>
 			</slide>
 		</part>
