@@ -65,7 +65,7 @@
 						<li><code>Point</code> has one position</li>
 						<li><code>LineString</code>/<code>Multipoint</code> have an array of positions</li>
 						<li><code>Polygon</code>/<code>MultiLineString</code> have an array of arrays of positions</li>
-						<li><code>MultiPolygon</code> has a multidimensional array of positions</li>
+						<li><code>MultiPolygon</code> has an array of Polygons</li>
 					</ul>
 				</ul>
 			</slide>
