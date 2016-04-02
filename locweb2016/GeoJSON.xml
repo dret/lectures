@@ -60,7 +60,7 @@
 			<slide id="geojson-executive">
 				<title>Representing Geograph(y|ical) Features</title>
 				<ul>
-					<li>GeoJSON's fundamental geometry construct is the <code>position</code></q></li>
+					<li>GeoJSON's fundamental geometry construct is the <q>position</q></li>
 					<ul>
 						<li><code>Point</code> has one position</li>
 						<li><code>LineString</code>/<code>Multipoint</code> have an array of positions</li>
