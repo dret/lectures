@@ -82,7 +82,11 @@
 			<slide id="geojson-problems">
 				<title>GeoJSON Problems</title>
 				<ul>
-					<li></li>
+					<li>Despite being popular, the <q href="http://geojson.org/geojson-spec.html">GeoJSON specification</q> was not created/managed by any SDO</li>
+					<ul>
+						<li>lingering doubts about the stability/stewardship of the specification</li>
+						<li>some policies require that only SDO-published specifications can be used</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide>
