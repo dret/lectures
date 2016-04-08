@@ -102,7 +102,11 @@
 						<li>lingering doubts about the stability/stewardship of the specification</li>
 						<li>some policies require that only SDO-published specifications can be used</li>
 					</ul>
-					<li>CRS</li>
+					<li>Usage around <a href="http://geojson.org/geojson-spec.html#coordinate-reference-system-objects" title="Coordinate Reference System">CRS</a> had caused some interoperability problems</li>
+					<ul>
+						<li>default rule (WGS84) plus inheritance meant implementations often did not implement the spec</li>
+						<li>naming of specific CRS was left open, resulting in namespace fragmentation</li>
+					</ul>
 					<li>extensibility and openness</li>
 				</ul>
 			</slide>
