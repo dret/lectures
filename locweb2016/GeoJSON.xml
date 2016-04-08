@@ -76,6 +76,20 @@
 					<li>GeoJSON is not meant to represent the full complexity/fidelity of GIS models</li>
 				</ul>
 			</slide>
+			<slide id="geojson-use">
+				<title>Using GeoJSON</title>
+				<ul>
+					<li>Meant as a simple and lightweight representation</li>
+					<ul>
+						<li>Use it in services/APIs where geo-features need to be represented in a simple way</li>
+						<li>Don't expect full fidelity of possibly complex underlying models</li>
+					</ul>
+					<li>Not meant as a synchronization format for full-fidelity GIS access/interchange</li>
+					<ul>
+						<li>Trying to <q>GISify</q> GeoJSON very likely makes in non-interoperable</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="ietf-wg">
 			<title>IETF GeoJSON Working Group</title>
