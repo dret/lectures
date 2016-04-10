@@ -97,7 +97,7 @@
 			<slide id="geojson-problems">
 				<title>GeoJSON Problems</title>
 				<ul>
-					<li>Despite being popular, the <q href="http://geojson.org/geojson-spec.html">GeoJSON specification</q> was not created/managed by any SDO</li>
+					<li>Despite being popular, the <a href="http://geojson.org/geojson-spec.html">GeoJSON specification</a> was not created/managed by any SDO</li>
 					<ul>
 						<li>Lingering doubts about the stability/stewardship of the specification</li>
 						<li>Some policies require that only SDO-published specifications can be used</li>
@@ -107,7 +107,11 @@
 						<li>Default rule (WGS84) plus inheritance meant implementations often did not implement the spec</li>
 						<li>Naming of specific CRS was left open, resulting in namespace fragmentation</li>
 					</ul>
-					<li>extensibility and openness</li>
+					<li>Extensibility and Openness were not specified clearly enough</li>
+					<ul>
+						<li>Lack of guidance made it too easy for implementers to do the wrong thing</li>
+						<li>Experience showed which areas were the most problematic ones</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide>
