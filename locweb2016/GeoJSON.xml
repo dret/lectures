@@ -73,6 +73,7 @@
 						<li><code>MultiPolygon</code> has an array of Polygons</li>
 					</ul>
 					<li>Features have <code>properties</code> and an associated <code>geometry</code></li>
+					<li><code>Feature</code> and Geometry also come as <code>FeatureCollection</code>/<code>GeometryCollection</code></li>
 					<li>GeoJSON is not meant to represent the full complexity/fidelity of GIS models</li>
 				</ul>
 			</slide>
