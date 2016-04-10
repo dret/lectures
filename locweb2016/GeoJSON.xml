@@ -104,7 +104,7 @@
 					</ul>
 					<li>Usage around <a href="http://geojson.org/geojson-spec.html#coordinate-reference-system-objects" title="Coordinate Reference System">CRS</a> had caused some interoperability problems</li>
 					<ul>
-						<li>Default rule (WGS84) plus inheritance meant implementations often did not implement the spec</li>
+						<li>Default rule (WGS84) plus inheritance meant implementations often did not implement the specification</li>
 						<li>Naming of specific CRS was left open, resulting in namespace fragmentation</li>
 					</ul>
 					<li>Extensibility and Openness were not specified clearly enough</li>
