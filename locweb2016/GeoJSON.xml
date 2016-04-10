@@ -82,7 +82,7 @@
 					<li>Meant as a simple and lightweight representation</li>
 					<ul>
 						<li>Use it in services/APIs where geo-features need to be represented in a simple way</li>
-						<li>Don't expect full fidelity of possibly complex underlying models</li>
+						<li>Do not expect full fidelity of possibly complex underlying models</li>
 					</ul>
 					<li>Not meant as a synchronization format for full-fidelity GIS access/interchange</li>
 					<ul>
@@ -151,10 +151,19 @@
 				<title>GeoJSON WG Specifications</title>
 				<ul>
 					<li>GeoJSON RFC (the <a href="http://datatracker.ietf.org/drafts/draft-ietf-geojson">draft</a> has been in last call in March 2016)</li>
+					<ul>
+						<li>RFC will be published around mid-2016 (if things go as planned)</li>
+					</ul>
 					<li>GeoJSON Text Sequences (a <a href="http://datatracker.ietf.org/drafts/draft-ietf-geojson-text-seq">first draft</a> has been published in April 2016)</li>
-				</ul>
-				<ul>
-					<li><a href="http://github.com/geojson/geojson-text-sequences"><code>geojson/geojson-text-sequences</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<ul>
+						<li>Available as v<a href="http://github.com/geojson/geojson-text-sequences"><code>geojson/geojson-text-sequences</code></a> on <a href="http://github.com/">GitHub</a></li>
+						<li>Final draft and RFC probably to be expected for early 2017</li>
+					</ul>
+					<li>Test suites for both specifications would be helpful for implementers</li>
+					<ul>
+						<li>Set of examples that should pass/fail with explanations of why/how</li>
+						<li>It is (almost) never too late to join a working group!</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="q-and-a">
