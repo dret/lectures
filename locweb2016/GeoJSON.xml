@@ -144,6 +144,17 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="geojson-changes">
+				<title>GeoJSON Changes</title>
+				<ul>
+					<li>Discouraging the use of non-WGS84 CRS</li>
+					<li>Clarifying the extensibility of position arrays</li>
+					<li>Clarifying lines as being Cartesian (instead of being geodesic)</li>
+					<li>Clarifying the definition of a bounding box</li>
+					<li>Making it clear that extensions cannot change the base semantics</li>
+					<li>Defining a new media type <code>application/geo+json</code></li>
+				</ul>
+			</slide>
 		</part>
 		<part id="next">
 			<title>What's Next?</title>
@@ -156,7 +167,7 @@
 					</ul>
 					<li>GeoJSON Text Sequences (a <a href="http://datatracker.ietf.org/drafts/draft-ietf-geojson-text-seq">first draft</a> has been published in April 2016)</li>
 					<ul>
-						<li>Available as v<a href="http://github.com/geojson/geojson-text-sequences"><code>geojson/geojson-text-sequences</code></a> on <a href="http://github.com/">GitHub</a></li>
+						<li>Available as <a href="http://github.com/geojson/geojson-text-sequences"><code>geojson/geojson-text-sequences</code></a> on <a href="http://github.com/">GitHub</a></li>
 						<li>Final draft and RFC probably to be expected for early 2017</li>
 					</ul>
 					<li>Test suites for both specifications would be helpful for implementers</li>
