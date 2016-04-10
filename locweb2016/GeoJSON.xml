@@ -62,13 +62,13 @@
 				<ul>
 					<li>GeoJSON has object types for single and multiple geometries and features</li>
 					<ul>
-						<li><em>Geometry</em> represents 6 geometry types and one collection</li>
+						<li><em>Geometry</em> represents 6 geometry types (see below) and one collection</li>
 						<li><em>Feature</em> represents single or multiple <q>spatially bound things</q></li>
 					</ul>
 					<li>GeoJSON's fundamental geometry construct is the <q>position</q></li>
 					<ul>
 						<li><code>Point</code> has one position</li>
-						<li><code>LineString</code>/<code>Multipoint</code> have an array of positions</li>
+						<li><code>LineString</code>/<code>MultiPoint</code> have an array of positions</li>
 						<li><code>Polygon</code>/<code>MultiLineString</code> have an array of arrays of positions</li>
 						<li><code>MultiPolygon</code> has an array of Polygons</li>
 					</ul>
