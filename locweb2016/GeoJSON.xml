@@ -99,13 +99,13 @@
 				<ul>
 					<li>Despite being popular, the <q href="http://geojson.org/geojson-spec.html">GeoJSON specification</q> was not created/managed by any SDO</li>
 					<ul>
-						<li>lingering doubts about the stability/stewardship of the specification</li>
-						<li>some policies require that only SDO-published specifications can be used</li>
+						<li>Lingering doubts about the stability/stewardship of the specification</li>
+						<li>Some policies require that only SDO-published specifications can be used</li>
 					</ul>
 					<li>Usage around <a href="http://geojson.org/geojson-spec.html#coordinate-reference-system-objects" title="Coordinate Reference System">CRS</a> had caused some interoperability problems</li>
 					<ul>
-						<li>default rule (WGS84) plus inheritance meant implementations often did not implement the spec</li>
-						<li>naming of specific CRS was left open, resulting in namespace fragmentation</li>
+						<li>Default rule (WGS84) plus inheritance meant implementations often did not implement the spec</li>
+						<li>Naming of specific CRS was left open, resulting in namespace fragmentation</li>
 					</ul>
 					<li>extensibility and openness</li>
 				</ul>
@@ -140,9 +140,12 @@
 			<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 			<ul>
 				<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
-				<li>These Slides: <a href="http://dret.net/lectures/locweb2016/"><code>dret.net/lectures/locweb2016/</code></a></li>
-				<li>Slide Sources: <a href="http://github.com/dret/lectures/tree/master/locweb2016"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+				<li>Slides online: <a href="http://dret.net/lectures/locweb2016/"><code>dret.net/lectures/locweb2016/</code></a></li>
+				<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/locweb2016"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
 				<li>GeoJSON WG: <a href="https://datatracker.ietf.org/wg/geojson">IETF Datatracker Page</a></li>
+				<ul>
+					<li></li>
+				</ul>
 			</ul>
 		</slide>
 	</presentation>
