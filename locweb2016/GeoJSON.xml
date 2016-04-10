@@ -86,7 +86,7 @@
 					</ul>
 					<li>Not meant as a synchronization format for full-fidelity GIS access/interchange</li>
 					<ul>
-						<li>Trying to <q>GISify</q> GeoJSON very likely makes in non-interoperable</li>
+						<li>Trying to <q>GISify</q> GeoJSON very likely makes it non-interoperable</li>
 					</ul>
 					<li>Geo-tools such as <a href="http://leafletjs.com/">Leaflet</a> often <a href="http://leafletjs.com/examples/geojson.html">support GeoJSON out of the box</a></li>
 				</ul>
