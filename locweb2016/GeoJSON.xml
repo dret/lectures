@@ -136,28 +136,29 @@
 		<part id="next">
 			<title>What's Next?</title>
 			<slide>
-				<title>GeoJSON RFC</title>
-			</slide>
-			<slide>
-				<title>GeoJSON Text Sequences</title>
+				<title>GeoJSON WG Specifications</title>
+				<ul>
+					<li>GeoJSON RFC (the <a href="http://datatracker.ietf.org/drafts/draft-ietf-geojson">draft</a> has been in last call in March 2016)</li>
+					<li>GeoJSON Text Sequences (a <a href="http://datatracker.ietf.org/drafts/draft-ietf-geojson-text-seq">first draft</a> has been published in April 2016)</li>
+				</ul>
 				<ul>
 					<li><a href="http://github.com/geojson/geojson-text-sequences"><code>geojson/geojson-text-sequences</code></a> on <a href="http://github.com/">GitHub</a></li>
 				</ul>
 			</slide>
-		</part>
-		<slide>
-			<title>Thanks! Q&amp;A</title>
-			<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
-			<ul>
-				<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
-				<li>Slides online: <a href="http://dret.net/lectures/locweb2016/"><code>dret.net/lectures/locweb2016/</code></a></li>
-				<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/locweb2016"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
-				<li>GeoJSON WG: <a href="https://datatracker.ietf.org/wg/geojson">IETF Datatracker Page</a></li>
+			<slide>
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
-					<li>Internet draft <a href="http://datatracker.ietf.org/drafts/draft-ietf-geojson">The GeoJSON Format</a></li>
-					<li>Internet draft <a href="http://datatracker.ietf.org/drafts/draft-ietf-geojson-text-seq">GeoJSON Text Sequences</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/locweb2016/"><code>dret.net/lectures/locweb2016/</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/locweb2016"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>GeoJSON WG: <a href="https://datatracker.ietf.org/wg/geojson">IETF Datatracker Page</a></li>
+					<ul>
+						<li>Internet draft <a href="http://datatracker.ietf.org/drafts/draft-ietf-geojson">The GeoJSON Format</a></li>
+						<li>Internet draft <a href="http://datatracker.ietf.org/drafts/draft-ietf-geojson-text-seq">GeoJSON Text Sequences</a></li>
+					</ul>
 				</ul>
-			</ul>
-		</slide>
+			</slide>
+		</part>
 	</presentation>
 </hotspot>
