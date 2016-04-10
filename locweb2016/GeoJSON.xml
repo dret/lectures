@@ -114,7 +114,7 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="geojson-wg">
 				<title>IETF GeoJSON WG</title>
 				<ul>
 					<li>The <a href="https://datatracker.ietf.org/wg/geojson/">IETF GeoJSON Working Group</a> started work in October 2015</li>
@@ -126,7 +126,7 @@
 					<li>IETF RFCs are often accepted as standards that are stable and safe to use</li>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="geojson-wg-work">
 				<title>IETF GeoJSON WG Work</title>
 				<ul>
 					<li><a href="http://github.com/geojson/draft-geojson"><code>geojson/draft-geojson</code></a> on <a href="http://github.com/">GitHub</a></li>
@@ -135,7 +135,7 @@
 		</part>
 		<part id="next">
 			<title>What's Next?</title>
-			<slide>
+			<slide id="next-geojson">
 				<title>GeoJSON WG Specifications</title>
 				<ul>
 					<li>GeoJSON RFC (the <a href="http://datatracker.ietf.org/drafts/draft-ietf-geojson">draft</a> has been in last call in March 2016)</li>
@@ -145,7 +145,7 @@
 					<li><a href="http://github.com/geojson/geojson-text-sequences"><code>geojson/geojson-text-sequences</code></a> on <a href="http://github.com/">GitHub</a></li>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
