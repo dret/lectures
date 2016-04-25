@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="malmoe" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="dataservices.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="http://creativecommons.org/licenses/by/3.0/" short="CC 3.0">
+		<div class="license">
+			<p><a rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/ischool/ischool/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
+		</div>
+	</license>
+	<title><a href="http://businessinnovation.berkeley.edu/data-science-strategy/lecture-series/">Data Science &amp; Strategy Lecture Series</a></title>
+	<author><a href="http://dret.net/netdret/">Erik Wilde</a></author>
+	<affiliation><a href="http://twitter.com/dret" title="Twitter">@dret</a></affiliation>
+	<date short="2016-04-11">April 28, 2016</date>
+	<copyright>2016 Erik Wilde</copyright>
+	<presentation id="index">
+		<title>From Data to Services</title>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract">This talk highlights how the current focus on "Big Data" mirrors a development in software engineering. Big enterprise software is still in use today, but the last decade has seen a major trend to move from large monoliths to decoupled smaller software units. Software development practices have followed suit, moving from large waterfall processes to incremental agile models. A similar development is likely to happen for data, where an increasing usage and dependency on data-driven processes will make it increasingly important to decouple processes, so that the data-driven landscape can evolve more quickly and in a decentralized way.</p>
+		</slide>
+		<part id="dret">
+			<title>About Me</title>
+		</part>
+		<part id="beyond">
+			<title>Beyond Warehouses and Lakes</title>
+			<slide>
+				<title>From Waterfall to Agile</title>
+			</slide>
+			<slide>
+				<title>Focus on the Fish</title>
+			</slide>
+		</part>
+		<part id="next">
+			<title>Conclusions</title>
+			<slide id="next-geojson">
+				<title>From Data to Services</title>
+			</slide>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/haas2016/"><code>dret.net/lectures/locweb2016/</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/haas2016"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
