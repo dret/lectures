@@ -47,15 +47,42 @@
 		</slide>
 		<part id="beyond">
 			<title>Beyond Warehouses and Lakes</title>
-			<slide>
-				<title>From Waterfall to Agile</title>
+			<slide id="waterfall">
+				<title>The Waterfall</title>
 				<ul>
+					<li>Traditional software engineering worked in a static world</li>
+					<ul>
+						<li>Long initial phases of data and process analyses</li>
+						<li>Followed by long phases of data modeling and functionality specification</li>
+						<li>Followed by long phases of database and functionality implementation</li>
+						<li>Followed by the realization that the world had changed in the meantime</li>
+					</ul>
+					<li>Working towards <q>the perfect stable IT</q> is not a reasonable goal</li>
+					<li>Design for change and allow the IT infrastructure to be an <em>ecosystem</em></li>
+					<li>In order to be <em>agile</em>, software components must be decoupled</li>
+				</ul>
+			</slide>
+			<slide id="beyond-waterfall">
+				<title>Beyond the Waterfall</title>
+					<li>Software Engineering moved from database access to <a href="https://en.wikipedia.org/wiki/Multitier_architecture">multitier architecture</a></li>
 					<li><a href="http://dret.net/netdret/publications#pau09a">Loosely coupled</a> Web Technologies are replacing traditional <a href="https://en.wikipedia.org/wiki/Enterprise_application_integration" title="Enterprise Application Integration">EAI</a> approaches</li>
 				</ul>
 			</slide>
-			<slide>
-				<title>Focus on the Fish</title>
+			<slide id="waterfall-problems">
+				<title>Problems with Waterfalls</title>
 			</slide>
+			<slide id="agile">
+				<title>Agile Needs Loose Coupling</title>
+			</slide>
+		</part>
+		<part id="lakes">
+			<title>Better Lakes</title>
+			<slide>
+				<title>Schemaless and Open</title>
+			</slide>
+		</part>
+		<part id="fish">
+			<title>Bigger Fish</title>
 		</part>
 		<part id="next">
 			<title>Conclusions</title>
