@@ -26,7 +26,7 @@
 	<title><a href="http://businessinnovation.berkeley.edu/data-science-strategy/lecture-series/">Data Science &amp; Strategy Lecture Series</a></title>
 	<author><a href="http://dret.net/netdret/">Erik Wilde</a></author>
 	<affiliation><a href="http://twitter.com/dret" title="Twitter">@dret</a></affiliation>
-	<date short="2016-04-11">April 28, 2016</date>
+	<date short="2016-04-28">April 28, 2016</date>
 	<copyright>2016 Erik Wilde</copyright>
 	<presentation id="index">
 		<title>From Data to Services</title>
@@ -34,13 +34,24 @@
 			<title>Summary</title>
 			<p class="abstract">This talk highlights how the current focus on "Big Data" mirrors a development in software engineering. Big enterprise software is still in use today, but the last decade has seen a major trend to move from large monoliths to decoupled smaller software units. Software development practices have followed suit, moving from large waterfall processes to incremental agile models. A similar development is likely to happen for data, where an increasing usage and dependency on data-driven processes will make it increasingly important to decouple processes, so that the data-driven landscape can evolve more quickly and in a decentralized way.</p>
 		</slide>
-		<part id="dret">
+		<slide id="dret">
 			<title>About Me</title>
-		</part>
+			<ul>
+				<li><a href="http://dret.net/netdret/publications#wil97b">Ph.D. in Communications Systems</a> from <a href="http://www.ethz.ch/">ETH Zürich</a></li>
+				<li>Working on Web Architecture after writing <a href="http://dret.net/netdret/publications#wil98">the first Web Technology book</a></li>
+				<li>Service Orientation and Service Architecture have become important trends</li>
+				<li>While at UC Berkeley, working on <a href="http://dret.net/netdret/publications#wil09g">Service Models for Open Government</a></li>
+				<li>While at EMC, working on transforming software products into service platforms</li>
+				<li>While at Siemens, working on transforming <em title="Internet of Things">IoT</em> into <em title="Web of Things">WoT</em></li>
+			</ul>
+		</slide>
 		<part id="beyond">
 			<title>Beyond Warehouses and Lakes</title>
 			<slide>
 				<title>From Waterfall to Agile</title>
+				<ul>
+					<li><a href="http://dret.net/netdret/publications#pau09a">Loosely coupled</a> Web Technologies are replacing traditional <a href="https://en.wikipedia.org/wiki/Enterprise_application_integration" title="Enterprise Application Integration">EAI</a> approaches</li>
+				</ul>
 			</slide>
 			<slide>
 				<title>Focus on the Fish</title>
