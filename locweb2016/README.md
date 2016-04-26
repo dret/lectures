@@ -10,5 +10,5 @@ These are sources that I make available for others to read/use/reuse; please res
 
 ## Online
 
-The presentation version for this talk is available online at http://dret.net/netdret/docs/locweb2016/
+The presentation version for this talk is available online at http://dret.net/lectures/locweb2016/
 
