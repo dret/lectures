@@ -46,8 +46,8 @@
 				<li>Active at the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
 			</ul>
 		</slide>
-		<part id="beyond">
-			<title>Beyond Warehouses and Lakes</title>
+		<part id="warehouse-lake">
+			<title>From Warehouses to Lakes</title>
 			<slide id="waterfall">
 				<title>The Waterfall</title>
 				<ul>
@@ -90,11 +90,14 @@
 				<title>Data Lake Today</title>
 				<img src="crater-lake.jpg" title="Crater Lake" href="https://www.flickr.com/photos/dret/3533839805" style="height : 65% ; margin : 4% ; "/>
 			</slide>
+			<slide id="datalake-problems">
+				<title>Data Lake Problems</title>
+			</slide>
 			<slide id="datalake-future">
 				<title>Data Lake Future</title>
 				<img src="yuanyang-terraces.jpg" title="Photo: Peter Liu" href="https://www.flickr.com/photos/peteropaliu/12815918504" style="height : 65% ; margin : 4% ; "/>
 			</slide>
-			<slide>
+			<slide id="fish-focus">
 				<title>Focus on the Fish!</title>
 				<ul>
 					<li>Data Lakes are better than Data Warehouses</li>
