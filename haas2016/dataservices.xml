@@ -100,6 +100,32 @@
 			</slide>
 			<slide id="datalake-problems">
 				<title>Data Lake Problems</title>
+				<ul>
+					<li>Volume: It may be impractical/impossible to capture all data</li>
+					<ul>
+						<li><em title="Internet of Things">IoT</em> scenarios have high volume/rate of very raw data</li>
+					</ul>
+					<li>Velocity: Data may only be needed for local and fast decision-making</li>
+					<ul>
+						<li>Connected cars provide some data services but most data remains onboard for operations</li>
+					</ul>
+					<li>Variety: Integration scenarios require the harmonization of data models</li>
+					<ul>
+						<li>Decision-making needs integrated data instead of vendor-specific models</li>
+					</ul>
+					<li>Variability: Data cleansing often is needed to improve data quality</li>
+					<ul>
+						<li>Raw data can be low quality and should remain isolated from good data</li>
+					</ul>
+					<li>Regulation: Certain data sources or aspects may be regulated</li>
+					<ul>
+						<li>Depending on regulation, the physical location of data may be important</li>
+					</ul>
+					<li>Experimentation: Data sources and models are constantly evolving</li>
+					<ul>
+						<li>How to make sure that the lake and lake users are not tightly coupled</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="datalake-future">
 				<title>Data Lake Future</title>
