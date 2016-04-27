@@ -50,7 +50,7 @@
 			<slide id="waterfall">
 				<title>The Waterfall</title>
 				<ul>
-					<li>Traditional software engineering worked in a static world</li>
+					<li>Traditional software engineering worked well in a static world</li>
 					<ul>
 						<li>Long initial phases of data and process analyses</li>
 						<li>Followed by long phases of data modeling and functionality specification</li>
@@ -58,8 +58,15 @@
 						<li>Followed by the realization that the world had changed in the meantime</li>
 					</ul>
 					<li>Working towards <q>the perfect stable IT</q> is not a reasonable goal</li>
-					<li>Design for change and allow the IT infrastructure to be an <em>ecosystem</em></li>
-					<li>In order to be <em>agile</em>, software components must be decoupled</li>
+					<ul>
+						<li>Companies are being restructured and reoriented faster than ever</li>
+						<li>IT as something done in isolation in one company is a thing of the past</li>
+					</ul>
+					<li>Design for change and see the IT infrastructure as an <em>ecosystem</em></li>
+					<ul>
+						<li>In order to be <em>agile</em>, software components must be decoupled</li>
+						<li>Granularity continues to shrink, for example in case of <em>microservices</em></li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="beyond-waterfall">
@@ -68,16 +75,15 @@
 					<li>Waterfall models are causing trouble on a variety of fronts</li>
 					<ol>
 						<li>All logic works directly on the <q>one true model</q> of the database</li>
-						<li>Making changes to the overall data and functionality model is very complex</li>
-						<li>The overall model/implementation assumes a homogenous implementation</li>
+						<li>Making changes to the overall data and functionality model is complex</li>
+						<li>The overall model/implementation assumes a homogenous environment</li>
 						<li>Dependencies between software modules make it hard to isolate changes</li>
 					</ol>
 					<li>Newer approaches try to avoid these problems with new methods and technologies</li>
 					<ol>
 						<li>Move from direct database access to a <a href="https://en.wikipedia.org/wiki/Multitier_architecture">multitier architecture</a></li>
 						<li>Use <a href="https://en.wikipedia.org/wiki/Domain-driven_design">Domain-Driven Design</a> for establishing and separating <em>bounded contexts</em></li>
-						<li>Services/APIs hide implementation technologies from consumers</li>
-						<li>Services/APIs hide implementation details from consumers</li>
+						<li>Services/APIs hide implementation technologies/details from consumers</li>
 					</ol>
 					<li><a href="http://dret.net/netdret/publications#pau09a">Loosely coupled</a> Web Technologies are replacing traditional <a href="https://en.wikipedia.org/wiki/Enterprise_application_integration" title="Enterprise Application Integration">EAI</a> approaches</li>
 				</ul>
