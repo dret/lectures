@@ -116,14 +116,27 @@
 			<slide>
 				<title>Schemaless and Open</title>
 			</slide>
+			<slide>
+				<title>Cascading Lakes</title>
+			</slide>
+			<slide>
+				<title>Open Lake Landscape</title>
+			</slide>
 		</part>
 		<part id="fish">
 			<title>Bigger Fish</title>
 		</part>
 		<part id="next">
 			<title>Conclusions</title>
-			<slide id="next-geojson">
+			<slide id="from-data-to-services">
 				<title>From Data to Services</title>
+				<ul>
+					<li>Data Lakes are better than Data Warehouses</li>
+					<li>Individual lakes are just the starting point</li>
+					<li>Data Scientists should learn about lake landscapes</li>
+					<li>Expect APIs to become the plumbing connecting the lakes</li>
+					<li>Data Scientists should be fish farmers, not just fishermen</li>
+				</ul>
 			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
