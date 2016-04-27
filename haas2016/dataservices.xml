@@ -45,8 +45,8 @@
 				<li>Active at the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
 			</ul>
 		</slide>
-		<part id="warehouse-lake">
-			<title>From Warehouses to Lakes</title>
+		<part id="data-warehouse">
+			<title>Data Warehouses</title>
 			<slide id="waterfall">
 				<title>The Waterfall</title>
 				<ul>
@@ -89,11 +89,14 @@
 				</ul>
 			</slide>
 			<slide id="waterfall-datalake">
-				<title>Data Lakes are Waterfalls</title>
+				<title>Data Lakes are Waterfall-ish</title>
 				<ul>
 					<li>Data Lakes are the Waterfalls of Data Science</li>
 				</ul>
 			</slide>
+		</part>
+		<part id="datalake">
+			<title>Data Lakes</title>
 			<slide id="datalake-today">
 				<title>Data Lake Today</title>
 				<img src="crater-lake.jpg" title="Crater Lake" href="https://www.flickr.com/photos/dret/3533839805" style="height : 65% ; margin : 4% ; "/>
@@ -148,8 +151,8 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="lakes">
-			<title>Better Lakes</title>
+		<part id="lakes-and-fish">
+			<title>Better Lakes and Bigger Fish</title>
 			<slide>
 				<title>Schemaless and Open</title>
 			</slide>
@@ -159,9 +162,14 @@
 			<slide>
 				<title>Open Lake Landscape</title>
 			</slide>
-		</part>
-		<part id="fish">
-			<title>Bigger Fish</title>
+			<slide>
+				<title>Open and Flexible</title>
+				<ul>
+					<li>There are many ways to catch big fish</li>
+					<li>Plan for an evolving landscape that can change and adapt</li>
+					<li></li>
+				</ul>
+			</slide>
 		</part>
 		<part id="next">
 			<title>Conclusions</title>
