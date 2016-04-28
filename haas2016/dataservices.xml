@@ -168,13 +168,23 @@
 			<slide>
 				<title>Cascading Lakes</title>
 				<ul>
-					<li></li>
+					<li><a href="https://en.wikipedia.org/wiki/Data_cleansing">Data cleansing</a> often is a useful first step to isolate bad data</li>
+					<ul>
+						<li>Keeping the bad data may still be useful or required by law/regulation</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide>
 				<title>Open Lake Landscape</title>
 				<ul>
-					<li></li>
+					<li>Different lakes support different kinds of fishery</li>
+					<ul>
+						<li><em>Structured Lakes</em> support traditional structured queries</li>
+						<li><em>Semi-structured Lakes</em> support more document-oriented query types</li>
+						<li><em>Logical Lakes</em> support inference and allows logic-based queries</li>
+						<li><em>Statistical Lakes</em> are good for teaching machines how to fish</li>
+					</ul>
+					<li>Be wary of anybody selling you <em>the best lake for any kind of fishery</em></li>
 				</ul>
 			</slide>
 			<slide>
