@@ -41,7 +41,7 @@
 				<li>Working on Web Architecture after writing <a href="http://dret.net/netdret/publications#wil98">the first Web Technology book</a></li>
 				<li>While at UC Berkeley, working on <a href="http://dret.net/netdret/publications#wil09g">Service Models for Open Government</a></li>
 				<li>While at EMC, working on transforming software products into service platforms</li>
-				<li>While at Siemens, working on transforming <em title="Internet of Things">IoT</em> into <em title="Web of Things">WoT</em></li>
+				<li>While at Siemens, working on using <em title="Internet of Things">IoT</em> to build <em title="Web of Things">WoT</em></li>
 				<li>Active at the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
 			</ul>
 		</slide>
@@ -88,10 +88,22 @@
 					<li><a href="http://dret.net/netdret/publications#pau09a">Loosely coupled</a> Web Technologies are replacing traditional <a href="https://en.wikipedia.org/wiki/Enterprise_application_integration" title="Enterprise Application Integration">EAI</a> approaches</li>
 				</ul>
 			</slide>
-			<slide id="waterfall-datalake">
-				<title>Data Lakes are Waterfall-ish</title>
+			<slide id="EAI-datalake">
+				<title>Data Lakes are EAI-ish</title>
 				<ul>
-					<li>Data Lakes are the Waterfalls of Data Science</li>
+					<li>Data Lakes are better than Data Warehouses</li>
+					<ul>
+						<li>Retaining as much of the original structure as possible</li>
+						<li>Schemaless and thus allowing everything to be poured into it</li>
+						<li>Better at enabling exploration than the more goal-driven warehouses</li>
+					</ul>
+					<li>Data Lakes are the EAI of Data Science</li>
+					<ul>
+						<li>They assume that there is one data source for all applications</li>
+						<li>Changes in the data source thus potentially affect many applications</li>
+						<li>Very centralized and heavyweight approach</li>
+					</ul>
+					<li>Expect decentralized architectures to replace/augment Big Data Lakes</li>
 				</ul>
 			</slide>
 		</part>
@@ -137,12 +149,6 @@
 			<slide id="fish-focus">
 				<title>Focus on the Fish!</title>
 				<ul>
-					<li>Data Lakes are better than Data Warehouses</li>
-					<ul>
-						<li>Retaining as much of the original structure as possible</li>
-						<li>Schemaless and thus allowing everything to be poured into it</li>
-						<li>Better at enabling exploration than the more goal-driven warehouses</li>
-					</ul>
 					<li>Data Lakes are yet another tool to identify and harvest value</li>
 					<ul>
 						<li>You can only find what's in the lake</li>
