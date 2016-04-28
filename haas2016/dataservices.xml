@@ -176,6 +176,10 @@
 				<title>Schemaless and Open</title>
 				<ul>
 					<li>Traditional databases/warehouses are focused around models/schemas</li>
+					<li>Data Lakes tend to be schemaless to allow greater flexibility</li>
+					<li>There still is some underlying metamodel implicit in storage and processing</li>
+					<li>Being schemaless and open is a big plus for adding data easily</li>
+					<li>But there is more to data science than just having a lot of data</li>
 				</ul>
 			</slide>
 			<slide>
