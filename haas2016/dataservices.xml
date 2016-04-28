@@ -93,7 +93,7 @@
 				<ul>
 					<li>Data Lakes are better than Data Warehouses</li>
 					<ul>
-						<li>Retaining as much of the original structure as possible</li>
+						<li>Retaining as much of the original model/structure as possible</li>
 						<li>Schemaless and thus allowing everything to be poured into it</li>
 						<li>Better at enabling exploration than the more goal-driven warehouses</li>
 					</ul>
@@ -118,9 +118,9 @@
 				<ul>
 					<li>Volume: It may be impractical/impossible to capture all data</li>
 					<ul>
-						<li><em title="Internet of Things">IoT</em> scenarios have high volume/rate of very raw data</li>
+						<li><em title="Internet of Things">IoT</em> scenarios have high volume/rates of raw sensor data</li>
 					</ul>
-					<li>Velocity: Data may only be needed for local and fast decision-making</li>
+					<li>Velocity: Data may only be needed for local and immediate decision-making</li>
 					<ul>
 						<li>Connected cars provide some data services but most data remains onboard for operations</li>
 					</ul>
@@ -154,6 +154,19 @@
 						<li>You can only find what's in the lake</li>
 					</ul>
 					<li>The lake is only a tool; what you want is just the fish!</li>
+					<ul>
+						<li>Data Lakes now are <q>a thing</q> because for the first time, they are cost-effective</li>
+					</ul>
+					<li>Centralization is a common pattern for simplification</li>
+					<ul>
+						<li>Big centralized services are successful and thriving</li>
+						<li>Internally, they often are less centralized than they look from outside</li>
+					</ul>
+					<li>There is no such thing as <q>just data</q> without a defining context</li>
+					<ul>
+						<li>Every Data Lake has a purpose and is shaped by the motivation behind it</li>
+						<li>Keep things open and flexible but don't expect it to work for everything</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
