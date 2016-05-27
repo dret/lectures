@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="api360" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="dataservices.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="http://creativecommons.org/licenses/by/3.0/" short="CC 3.0">
+		<div class="license">
+			<p><a rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/api360/api360/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
+		</div>
+	</license>
+	<title><a href="http://businessinnovation.berkeley.edu/data-science-strategy/lecture-series/">API360 Microservices Summit, New York City</a></title>
+	<author><a href="http://dret.net/netdret/">Erik Wilde</a></author>
+	<affiliation><a href="http://www.ca.com/">CA Technologies</a>, <a href="http://www.apiacademy.co/">API Academy</a></affiliation>
+	<date short="2016-06-13">June 13, 2016</date>
+	<copyright>2016 Erik Wilde</copyright>
+	<presentation id="index">
+		<title>Microservices and Web Architecture</title>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract">...</p>
+		</slide>
+		<slide id="dret">
+			<title>About Me</title>
+			<ul>
+				<li><a href="http://dret.net/netdret/publications#wil97b">Ph.D. in Communications Systems</a> from <a href="http://www.ethz.ch/">ETH Zürich</a></li>
+				<li>Working on Web Architecture after writing <a href="http://dret.net/netdret/publications#wil98">the first Web Technology book</a></li>
+				<li>While at UC Berkeley, working on <a href="http://dret.net/netdret/publications#wil09g">Service Models for Open Government</a></li>
+				<li>While at EMC, working on transforming software products into service platforms</li>
+				<li>While at Siemens, working on using <em title="Internet of Things">IoT</em> to build <em title="Web of Things">WoT</em> (<q>APIs for Things</q>)</li>
+				<li>Joined <a href="http://www.ca.com/" title="CA Technologies">CA</a>'s <a href="http://www.apiacademy.co/">API Academy</a> May 2016 and now all about API Design and Strategy</li>
+				<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
+			</ul>
+		</slide>
+		<slide id="blind-spots">
+			<title>Microservices Blind Spots</title>
+			<ul>
+				<li>Microservices are <q>Agile SE with DevOps processes applied to SOA</q></li>
+				<li>The current focus has a few blind spots</li>
+				<ul>
+					<li>How to find the right MS components</li>
+					<li>How to manage the MS landscape once an MS ecosystem is developing</li>
+					<li>How design/evolve MS so that the landscape is robust and flexible</li>
+				</ul>
+				<li>The Web can teach us some lessons about how to do some of these things</li>
+			</ul>
+		</slide>
+	</presentation>
+</hotspot>
