@@ -23,7 +23,7 @@
 			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
 		</div>
 	</license>
-	<title><a href="http://www.apiacademy.co/api360/">API360 Microservices Summit, New York City</a></title>
+	<title><a href="http://www.apiacademy.co/api360/">API360 Microservices Summit</a>, New York</title>
 	<author><a href="http://dret.net/netdret/">Erik Wilde</a></author>
 	<affiliation><a href="http://www.ca.com/">CA Technologies</a>, <a href="http://www.apiacademy.co/">API Academy</a></affiliation>
 	<date short="2016-06-13">June 13, 2016</date>
@@ -32,7 +32,7 @@
 		<title>Microservices and Web Architecture</title>
 		<slide id="summary">
 			<title>Summary</title>
-			<p class="abstract">...</p>
+			<p class="abstract">Microservices are all about delivering services in a safe way, with speed, and at scale. With this focus, microservices as perceived today mostly focus on improving the ways and methods which are used in organizations to design, implement, and deliver complex functionality. While that goal of speed and safety at scale is important for modern system design, some aspects of the resulting service landscape are currently underrepresented in the current microservices discussion. This talk looks as two particular topics, service discovery and service evolution. We will look at why those topics matter and how they will increasingly matter in growing microservice ecosystems. Specifically, we will look to the web for inspiration, which has been a successfully evolving service ecosystem for quite a while, and what we can learn from web patterns when it comes to solving certain problems in the realm of microservices.</p>
 		</slide>
 		<slide id="dret">
 			<title>About Me</title>

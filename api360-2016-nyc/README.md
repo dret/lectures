@@ -1,6 +1,6 @@
 # Microservices and Web Architecture
 
-...
+Microservices are all about delivering services in a safe way, with speed, and at scale. With this focus, microservices as perceived today mostly focus on improving the ways and methods which are used in organizations to design, implement, and deliver complex functionality. While that goal of speed and safety at scale is important for modern system design, some aspects of the resulting service landscape are currently underrepresented in the current microservices discussion. This talk looks as two particular topics, service discovery and service evolution. We will look at why those topics matter and how they will increasingly matter in growing microservice ecosystems. Specifically, we will look to the web for inspiration, which has been a successfully evolving service ecosystem for quite a while, and what we can learn from web patterns when it comes to solving certain problems in the realm of microservices.
 
 
 ## License
