@@ -60,6 +60,17 @@
 			</ul>
 		</slide>
 		<part id="discovery">
+			<title>Microservice Landscape</title>
+			<slide>
+				<title>The 3 V's of Microservice Architecture</title>
+				<ul>
+					<li>Volume of available service designs</li>
+					<li>Variety of service designs and interfaces</li>
+					<li>Velocity of service landscape evolution</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="discovery">
 			<title>Microservice Discovery</title>
 		</part>
 		<part id="evolution">
