@@ -59,14 +59,14 @@
 				<li>The Web can teach us some lessons about how to do some of these things</li>
 			</ul>
 		</slide>
-		<part id="discovery">
+		<part id="Landscape">
 			<title>Microservice Landscape</title>
 			<slide>
 				<title>The 3 V's of Microservice Architecture</title>
 				<ul>
-					<li>Volume of available service designs</li>
-					<li>Variety of service designs and interfaces</li>
-					<li>Velocity of service landscape evolution</li>
+					<li>Volume of available service designs: <link href="scale">Scale</link></li>
+					<li>Variety of service designs and interfaces: <link href="diversity">Diversity</link></li>
+					<li>Velocity of service landscape evolution: <link href="decentralization">Decentralization</link></li>
 				</ul>
 			</slide>
 		</part>
@@ -75,6 +75,18 @@
 		</part>
 		<part id="evolution">
 			<title>Microservice Evolution</title>
+		</part>
+		<part>
+			<title>...</title>
+			<slide id="scale">
+				<title>Scale</title>
+			</slide>
+			<slide id="diversity">
+				<title>Diversity</title>
+			</slide>
+			<slide id="decentralization">
+				<title>Decentralization</title>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
