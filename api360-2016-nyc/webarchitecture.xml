@@ -46,6 +46,23 @@
 				<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
 			</ul>
 		</slide>
+		<slide id="soapy-soa">
+			<title>SOA as a Bad Word</title>
+			<ul>
+				<li>SOA <q>Web Services</q> has very little to do with the Web</li>
+				<ul>
+					<li>XML as the first Internet/Web-scale structured data format</li>
+					<li>Ignoring everything else the <q>Web as a System</q> could have taught</li>
+				</ul>
+				<li>SOAPy SOA had a number of fundamental design problems</li>
+				<ul>
+					<li>Sacrificing diversity and evolution for the one true API model</li>
+					<li>Sacrificing evolution for RPC and code generation</li>
+					<li>Sacrificing decentralization for EAI (a.k.a. ESB) architecture models</li>
+				</ul>
+				<li>The REST community set back and watched from a distance</li>
+			</ul>
+		</slide>
 		<slide id="msa-focus">
 			<title>Microservice Architecture Focus</title>
 			<ul>
