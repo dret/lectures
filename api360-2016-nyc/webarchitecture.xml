@@ -46,10 +46,22 @@
 				<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
 			</ul>
 		</slide>
+		<slide id="msa-focus">
+			<title>Microservice Architecture Focus</title>
+			<ul>
+				<li>Microservices are <q href="http://www.infoworld.com/article/3075880/application-development/microservice-architecture-is-agile-software-architecture.html">SOA based on Agile CD with DevOps processes</q></li>
+				<li><q><em>Speed</em> and <em>Safety</em> at <em>Scale</em> in <em>Harmony</em></q></li>
+				<ul>
+					<li><em>Speed:</em> The Speed of change of which a solution can evolve</li>
+					<li><em>Safety:</em> The Safety of changes so that Speed doesn't kill you</li>
+					<li><em>Scale:</em> Scaling the number of services and the capacity of a solution</li>
+					<li><em>Harmony:</em> Have the freedom to balance Speed and Safety</li>
+				</ul>
+			</ul>
+		</slide>
 		<slide id="blind-spots">
 			<title>Microservices Blind Spots</title>
 			<ul>
-				<li>Microservices are <q href="http://www.infoworld.com/article/3075880/application-development/microservice-architecture-is-agile-software-architecture.html">SOA based on Agile CD with DevOps processes</q></li>
 				<li>The current focus has a few blind spots</li>
 				<ul>
 					<li>How to find the right MS components</li>
