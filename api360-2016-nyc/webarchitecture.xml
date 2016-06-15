@@ -139,7 +139,7 @@
 		</part>
 		<part id="discovery">
 			<title>Microservice Discovery</title>
-			<slide>
+			<slide id="soapy-discovery">
 				<title>Old School Discovery</title>
 				<ul>
 					<li>SOAP's answer to service discovery was UDDI</li>
@@ -158,6 +158,23 @@
 						<li>Index description/documentation resources for subsequent discovery</li>
 						<li>Add support for additional description/documentation formats as required</li>
 					</ul>
+				</ul>
+			</slide>
+			<slide id="ms-discovery">
+				<title>Decentralize Discovery</title>
+				<ul>
+					<li>MS is all about making services more independent and self-contained</li>
+					<ul>
+						<li>Discovery should follow the same pattern: Avoid centralization, be polyglot</li>
+					</ul>
+					<li>Decentralized discovery is based on pulling/crawling diverse data</li>
+					<ol>
+						<li>Start by <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">finding available description/documentation resources</a></li>
+						<li>Process these based on supported description/documentation formats</li>
+						<li>Increase support if required by the evolving ecosystem</li>
+						<li>Provide discovery services based on the resulting service ecosystem snapshot</li>
+					</ol>
+					<li>Added benefit: Reality-based view on description/documentation/service ecosystem</li>
 				</ul>
 			</slide>
 		</part>
