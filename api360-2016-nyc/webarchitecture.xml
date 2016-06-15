@@ -148,7 +148,7 @@
 			<slide id="MS-v">
 				<title>The 3 V's of Microservice Architecture</title>
 				<ul>
-					<li>Volume of available service designs: <link href="scale">Scale</link></li>
+					<li>Volume of available services: <link href="scale">Scale</link></li>
 					<ul>
 						<li>How big is the MS landscape and can I get an overview of what's around?</li>
 					</ul>
@@ -160,6 +160,7 @@
 					<ul>
 						<li>As the landscape evolves, how stable are services and their designs?</li>
 					</ul>
+					<li>You need to be able to <link href="discovery">discover</link> services and to deal with <link href="evolution">changes</link></li>
 				</ul>
 			</slide>
 		</part>
@@ -213,11 +214,12 @@
 					<ul>
 						<li>Allowing teams to design/implement/deploy autonomously increases speed</li>
 						<li>With no oversight at all the cost may add up on the consumer side</li>
+						<li>Finding a harmonious balance between autonomy and guidelines is key</li>
 					</ul>
 					<li>There are two critical sides to the evolution part</li>
 					<ol>
 						<li>When <link href="service-evolution">services change</link>, do consumers need to be aware of the changes?</li>
-						<li>When <link href="landscape-evolution">the landscape changes</link>, do consumers need to discover and new the new services?</li>
+						<li>When <link href="landscape-evolution">the landscape changes</link>, do consumers need to discover the new services?</li>
 					</ol>
 				</ul>
 			</slide>
