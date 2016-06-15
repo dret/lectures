@@ -135,6 +135,27 @@
 		</part>
 		<part id="discovery">
 			<title>Microservice Discovery</title>
+			<slide>
+				<title>Old School Discovery</title>
+				<ul>
+					<li>SOAP's answer to service discovery was UDDI</li>
+					<ul>
+						<li>The biggest failure of the SOAP Web Services stack</li>
+						<li>Allowing only one specific kind of service design</li>
+						<li>Focusing on the function signature as a service's main description</li>
+					</ul>
+					<li>Building directories from carefully described and categorized entries</li>
+					<ul>
+						<li>Feels like the Yahoo! of service discovery: The one true model approach</li>
+					</ul>
+					<li>What does a Google of Service Discovery look like?</li>
+					<ul>
+						<li>Starting from services, <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">find available description/documentation resources</a></li>
+						<li>Index description/documentation resources for subsequent discovery</li>
+						<li>Add support for additional description/documentation formats as required</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="evolution">
 			<title>Microservice Evolution</title>
