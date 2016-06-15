@@ -180,6 +180,18 @@
 		</part>
 		<part id="evolution">
 			<title>Microservice Evolution</title>
+			<slide>
+				<title>Autonomy vs. Robustness</title>
+				<ul>
+					<li>MSA emphasizes independence and autonomy of teams</li>
+					<ul>
+						<li>Allowing teams to design/implement/deploy autonomously increases speed</li>
+						<li>With no oversight at all the cost may add up on the consumer side</li>
+					</ul>
+					<li>There are two critical sides to the evolution part</li>
+					<ol></ol>
+				</ul>
+			</slide>
 			<slide id="scale">
 				<title>Scale</title>
 			</slide>
@@ -193,9 +205,13 @@
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="learn-from-the-web">
-				<title>Use Web Architecture</title>
+				<title>Web Architecture Matters</title>
 				<ul>
-					<li>...</li>
+					<li>The line between system and ecosystem architecture is blurry</li>
+					<ul>
+						<li>Ecosystems emphasize decentralization and loose coupling</li>
+						<li></li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="q-and-a">
