@@ -245,7 +245,20 @@
 			<slide id="landscape-evolution">
 				<title>Design for Landscape Evolution</title>
 				<ul>
-					<li>Application flow should be </li>
+					<li>Application flow should be guided by discovered controls</li>
+					<ul>
+						<li>A dynamic service landscape needs a dynamic way of discovering services</li>
+						<li><em>Hypermedia</em> is a proven way how controls can be served dynamically</li>
+					</ul>
+					<li>Hypermedia is a good way for supporting <em>service choreography</em></li>
+					<ul>
+						<li>Microservice usage may change over time as the landscape evolves</li>
+						<li>Choreography exposes ways in which various services are combined to achieve a goal</li>
+					</ul>
+					<li>If nobody links to some microservices, these will disappear over time</li>
+					<ul>
+						<li>Usage and linkage combined provide useful analysis data</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="scale">
