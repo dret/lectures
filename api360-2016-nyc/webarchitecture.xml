@@ -88,7 +88,21 @@
 			<title>MS and the API Landscape</title>
 			<img title="MS/API Landscape" src="apim-landscape.png" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
 		</slide>
-		<slide id="blind-spots">
+		<slide id="landscape-explained">
+			<title>Explaining the MS API Landscape</title>
+			<ul>
+				<li>MS and exposed APIs can be different</li>
+				<li>APIM should be able to handle internal and exposed APIs</li>
+				<li>What's <em>internal</em> and <em>exposed</em> can be a contextual question</li>
+				<li>External API users might want to consume more than one set of APIs</li>
+				<li>Exposing the landscape or an API gateway are two possible choices</li>
+				<ul>
+					<li>Exposing the landscape exposes its diversity</li>
+					<li>Gateways can be centralized or become part of the <em>MS fabric</em> (e.g., a container)</li>
+				</ul>
+			</ul>
+		</slide>
+		<slide id="ms-blind-spots">
 			<title>Microservices Blind Spots</title>
 			<ul>
 				<li>The current focus has a few blind spots</li>
@@ -103,6 +117,9 @@
 					<li>Not ignoring the questions of landscaping reduces the chances of <q>MS Hangover</q></li>
 				</ul>
 				<li>The Web can teach us some lessons about how to do some of these things</li>
+				<ul>
+					<li>After all, the Web <em>is</em> the ultimate global-scale service landscape</li>
+				</ul>
 			</ul>
 		</slide>
 		<part id="Landscape">
@@ -213,10 +230,14 @@
 					<li>HTML is a prime example for a robust and extensible service model</li>
 					<ul>
 						<li>It also is a good example for how providers can violate the assumptions</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="landscape-evolution">
 				<title>Design for Landscape Evolution</title>
+				<ul>
+					<li>Replacing </li>
+				</ul>
 			</slide>
 			<slide id="scale">
 				<title>Scale</title>
