@@ -180,7 +180,7 @@
 		</part>
 		<part id="evolution">
 			<title>Microservice Evolution</title>
-			<slide>
+			<slide id="autonomy-robustness">
 				<title>Autonomy vs. Robustness</title>
 				<ul>
 					<li>MSA emphasizes independence and autonomy of teams</li>
@@ -189,8 +189,34 @@
 						<li>With no oversight at all the cost may add up on the consumer side</li>
 					</ul>
 					<li>There are two critical sides to the evolution part</li>
-					<ol></ol>
+					<ol>
+						<li>When <link href="service-evolution">services change</link>, do consumers need to be aware of the changes?</li>
+						<li>When <link href="landscape-evolution">the landscape changes</link>, do consumers need to discover and new the new services?</li>
+					</ol>
 				</ul>
+			</slide>
+			<slide id="service-evolution">
+				<title>Design for Service Evolution</title>
+				<ul>
+					<li>Services are designed with a certain goal and certain options</li>
+					<ul>
+						<li>The <em>goal</em> is to satisfy the current requirements for a useful service</li>
+						<li>The <em>options</em> are based on assumptions on how the service might change</li>
+					</ul>
+					<li>Service design is a balance between simplicity and flexibility</li>
+					<li>Building <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">robust and extensible services</a> is bases on three factors</li>
+					<ul>
+						<li><em>Meaningful and stable core</em>: The service core must remain stable over time</li>
+						<li><em>Extension model</em>: There are well-defined ways how the service core may evolve</li>
+						<li><em>Processing model</em>: It is well-defined how clients are processing extensions</li>
+					</ul>
+					<li>HTML is a prime example for a robust and extensible service model</li>
+					<ul>
+						<li>It also is a good example for how providers can violate the assumptions</li>
+				</ul>
+			</slide>
+			<slide id="landscape-evolution">
+				<title>Design for Landscape Evolution</title>
 			</slide>
 			<slide id="scale">
 				<title>Scale</title>
