@@ -103,19 +103,19 @@
 		</slide>
 		<part id="Landscape">
 			<title>Microservice Landscape</title>
-			<slide>
+			<slide id="monolith">
 				<title>The Dreaded Monolith</title>
 				<img title="Where you come from..." src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Weltmaschine_gsellmann1.JPG" href="monolith.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide>
+			<slide id="MS-neat">
 				<title>Microservices: The Starting Point</title>
 				<img title="Where you think you're going..." src="https://static.pexels.com/photos/12598/96917deb7705adcee76b65caf8c652b1.jpg" href="microservices-ideal.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide>
+			<slide id="MS-messy">
 				<title>Microservices Over Time</title>
 				<img title="Where you might be going..." src="https://hbr.org/resources/images/article_assets/2015/01/JAN15_22_AU1328-001.jpg" href="microservices-reality.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide>
+			<slide id="MS-v">
 				<title>The 3 V's of Microservice Architecture</title>
 				<ul>
 					<li>Volume of available service designs: <link href="scale">Scale</link></li>
