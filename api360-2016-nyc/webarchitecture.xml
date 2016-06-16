@@ -263,11 +263,60 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="MS-v-2nd">
+				<title>Revisiting MSA's 3 V's</title>
+				<ul>
+					<li>Volume of available services: <link href="scale">Scale</link></li>
+					<ul>
+						<li>How big is the MS landscape and can I get an overview of what's around?</li>
+					</ul>
+					<li>Variety of service designs and interfaces: <link href="diversity">Diversity</link></li>
+					<ul>
+						<li>As a creator or consumer, how do I deal with different service designs?</li>
+					</ul>
+					<li>Velocity of service landscape evolution: <link href="decentralization">Decentralization</link></li>
+					<ul>
+						<li>As the landscape evolves, how stable are services and their designs?</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="scale">
 				<title>Scale</title>
+				<ul>
+					<li>Different environments have very different ideas of MS scale</li>
+					<ul>
+						<li>Small projects may just have a handful of services</li>
+						<li>Large MS adopters may have several hundred services</li>
+					</ul>
+					<li>Exposed APIs and microservices combined mean a bigger API inventory</li>
+					<li>Using any form of discovery may not be necessary from the start</li>
+					<ul>
+						<li>Consider the possibility when starting the MSA effort</li>
+						<li>Having a plan helps teams to be aware of the need later on</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="diversity">
 				<title>Diversity</title>
+				<ul>
+					<li>Not all services use the same technical foundations</li>
+					<ul>
+						<li>Different communications mechanisms</li>
+						<li>Different metamodels for data structures</li>
+						<li>Different models for representing application concepts</li>
+						<li>In a Web context, these are concepts such as <a href="https://github.com/dret/sedola/blob/master/MD/headers.md">HTTP headers</a>, <a href="https://github.com/dret/sedola/blob/master/MD/mediatypes.md">media types</a>, and <a href="https://github.com/dret/sedola/blob/master/MD/linkrels.md">link relations</a></li>
+					</ul>
+					<li>Handling diversity can be challenging because of different <q>design universes</q></li>
+					<ul>
+						<li>Depending on choice, similar concepts/models may be represented differently</li>
+						<li>Introducing a generalized abstraction layer is unlikely to be helpful</li>
+					</ul>
+					<li><link href="ms-discovery">Discovering documentation</link> will allow you a better overview of your ecosystem</li>
+					<ul>
+						<li>A reality-based overview of the technologies used in your landscape</li>
+						<li>A possible starting point or guideline for getting MSA teams started</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="decentralization">
 				<title>Decentralization</title>
