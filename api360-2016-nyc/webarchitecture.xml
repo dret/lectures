@@ -256,9 +256,9 @@
 			<slide id="scale">
 				<title>Scale</title>
 				<ul>
-					<li>Different environments have very different ideas of MS scale</li>
+					<li>Different environments have different ideas of MS scale</li>
 					<ul>
-						<li>Small projects may just have a handful of services</li>
+						<li>Small projects may have a handful of services</li>
 						<li>Large MS adopters may have several hundred services</li>
 					</ul>
 					<li>Exposed APIs and microservices combined mean a bigger API inventory</li>
@@ -324,7 +324,7 @@
 					</ul>
 					<li>MSA is about the delicate balance of speed and safety</li>
 					<ul>
-						<li><q>Anything goes</q> may lead to a very diverse ecosystem</li>
+						<li><q>Anything goes</q> may lead to a highly diverse ecosystem</li>
 						<li>Teams are likely to try to do <em>the right thing</em></li>
 						<li>Demonstrating utility is a great way to promote MS design patterns</li>
 					</ul>
