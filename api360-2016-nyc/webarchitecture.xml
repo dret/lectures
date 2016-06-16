@@ -120,7 +120,7 @@
 					<li>An understandable reaction to <link href="soapy-soa">SOAPy SOA's</link> top-down approach</li>
 					<ul>
 						<li>It's important to focus on the central question: How are services created and implemented?</li>
-						<li>Not ignoring the questions of landscaping reduces the chances of <q>MS Hangover</q></li>
+						<li>Not ignoring the questions of landscaping reduces the chances of <q>MS hangover</q></li>
 					</ul>
 					<li>The Web can teach us some lessons about how to do some of these things</li>
 					<ul>
@@ -142,24 +142,6 @@
 			<slide id="MS-messy">
 				<title>Microservices Over Time</title>
 				<img title="Where you might be going..." href="https://hbr.org/resources/images/article_assets/2015/01/JAN15_22_AU1328-001.jpg" src="microservices-reality.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="MS-v">
-				<title>The 3 V's of Microservice Architecture</title>
-				<ul>
-					<li>Volume of available services: <link href="scale">Scale</link></li>
-					<ul>
-						<li>How big is the MS landscape and can I get an overview of what's around?</li>
-					</ul>
-					<li>Variety of service designs and interfaces: <link href="diversity">Diversity</link></li>
-					<ul>
-						<li>As a creator or consumer, how do I deal with different service designs?</li>
-					</ul>
-					<li>Velocity of service landscape evolution: <link href="decentralization">Decentralization</link></li>
-					<ul>
-						<li>As the landscape evolves, how stable are services and their designs?</li>
-					</ul>
-					<li>You need to be able to <link href="discovery">discover</link> services and to deal with <link href="evolution">changes</link></li>
-				</ul>
 			</slide>
 		</part>
 		<part id="discovery">
@@ -261,8 +243,8 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide id="MS-v-2nd">
-				<title>Revisiting MSA's 3 V's</title>
+			<slide id="MS-v">
+				<title>The Three V's of MSA</title>
 				<ul>
 					<li>Volume of available services: <link href="scale">Scale</link></li>
 					<ul>
