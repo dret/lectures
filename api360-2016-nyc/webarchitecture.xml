@@ -49,88 +49,91 @@
 				<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="https://www.flickr.com/photos/dret/" title="dret">flickr</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
 			</ul>
 		</slide>
-		<slide id="soapy-soa">
-			<title>SOA as a Bad Word</title>
-			<ul>
-				<li><q>Web Services</q> have surprisingly little to do with the Web</li>
+		<part>
+			<title>Microservices and ... SOA!</title>
+			<slide id="soapy-soa">
+				<title>SOA as a Bad Word</title>
 				<ul>
-					<li>Using XML as the first Internet/Web-scale structured data format</li>
-					<li>Ignoring everything else the <q>Web as a service ecosystem</q> could have taught</li>
+					<li><q>Web Services</q> have surprisingly little to do with the Web</li>
+					<ul>
+						<li>Using XML as the first Internet/Web-scale structured data format</li>
+						<li>Ignoring everything else the <q>Web as a service ecosystem</q> could have taught</li>
+					</ul>
+					<li>SOAPy SOA has some fundamental design problems</li>
+					<ul>
+						<li>Using <em>system architecture</em> instead of <em>ecosystem architecture</em></li>
+						<li>Sacrificing evolution for RPC and code generation</li>
+						<li>Sacrificing decentralization for distribution</li>
+					</ul>
+					<li>The <a href="http://ws-rest.org/">REST community</a> set back and watched from a distance</li>
+					<ul>
+						<li><q>Let's wait and see if/when Web Architecture is needed</q></li>
+					</ul>
 				</ul>
-				<li>SOAPy SOA has some fundamental design problems</li>
+			</slide>
+			<slide id="msa-focus">
+				<title>Microservice Architecture Focus</title>
 				<ul>
-					<li>Using <em>system architecture</em> instead of <em>ecosystem architecture</em></li>
-					<li>Sacrificing evolution for RPC and code generation</li>
-					<li>Sacrificing decentralization for distribution</li>
+					<li>Microservices are <q href="http://www.infoworld.com/article/3075880/application-development/microservice-architecture-is-agile-software-architecture.html">SOA based on Agile CD with DevOps processes</q></li>
+					<li><q><em>Speed</em> and <em>Safety</em> at <em>Scale</em> in <em>Harmony</em></q></li>
+					<ul>
+						<li><em>Speed:</em> The Speed of change of which a solution can evolve</li>
+						<li><em>Safety:</em> The Safety of changes so that Speed doesn't kill you</li>
+						<li><em>Scale:</em> Scaling the number of services and the capacity of a solution</li>
+						<li><em>Harmony:</em> Have the freedom to balance Speed and Safety</li>
+					</ul>
+					<li>Focusing on addressing the <link href="soapy-soa">SOAPy SOA</link> pain points</li>
+					<li>De-focusing the question of how to manage the MSA landscape</li>
 				</ul>
-				<li>The <a href="http://ws-rest.org/">REST community</a> set back and watched from a distance</li>
+			</slide>
+			<slide id="apim-landscape">
+				<title>MS and the API Landscape</title>
+				<img title="MS/API Landscape" src="apim-landscape.png" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="landscape-explained">
+				<title>Explaining the MS API Landscape</title>
 				<ul>
-					<li><q>Let's wait and see if/when Web Architecture is needed</q></li>
+					<li>MS and exposed APIs can be different</li>
+					<li>APIM should be able to handle internal and exposed APIs</li>
+					<li>What's <em>internal</em> and <em>exposed</em> can be a contextual question</li>
+					<li>External API users might want to consume more than one set of APIs</li>
+					<li>Exposing the landscape or an API gateway are two possible choices</li>
+					<ul>
+						<li>Exposing the landscape exposes its diversity</li>
+						<li>Gateways can be centralized or become part of the <em>MS fabric</em> (e.g., a container)</li>
+					</ul>
 				</ul>
-			</ul>
-		</slide>
-		<slide id="msa-focus">
-			<title>Microservice Architecture Focus</title>
-			<ul>
-				<li>Microservices are <q href="http://www.infoworld.com/article/3075880/application-development/microservice-architecture-is-agile-software-architecture.html">SOA based on Agile CD with DevOps processes</q></li>
-				<li><q><em>Speed</em> and <em>Safety</em> at <em>Scale</em> in <em>Harmony</em></q></li>
+			</slide>
+			<slide id="big-data">
+				<title>Scenario 1: Big Data</title>
+				<img src="yuanyang-terraces.jpg" title="Photo: Peter Liu" href="https://www.flickr.com/photos/peteropaliu/12815918504" style="width : 42% ; margin : 0% 4% 0% 2% ; float : right "/>
+				<img src="crater-lake.jpg" title="Crater Lake" href="https://www.flickr.com/photos/dret/3533839805" style="width : 42% ; margin : 0% 2% 0% 4% ; float : left "/>
+			</slide>
+			<slide id="internet-of-things">
+				<title>Scenario 2: Internet of Things</title>
+				<img title="Many things means many services" href="https://pixabay.com/static/uploads/photo/2015/05/25/05/27/network-782707_960_720.png" src="iot.png" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="ms-blind-spots">
+				<title>Microservices Blind Spots</title>
 				<ul>
-					<li><em>Speed:</em> The Speed of change of which a solution can evolve</li>
-					<li><em>Safety:</em> The Safety of changes so that Speed doesn't kill you</li>
-					<li><em>Scale:</em> Scaling the number of services and the capacity of a solution</li>
-					<li><em>Harmony:</em> Have the freedom to balance Speed and Safety</li>
+					<li>The current focus has a few blind spots</li>
+					<ul>
+						<li>How to find MS if an ecosystem grows beyond <q>yell across cubicles</q> size</li>
+						<li>How to manage the MS landscape once an MS ecosystem is developing</li>
+						<li>How design/evolve MS so that the landscape is robust and flexible</li>
+					</ul>
+					<li>An understandable reaction to <link href="soapy-soa">SOAPy SOA's</link> top-down approach</li>
+					<ul>
+						<li>It's important to focus on the central question: How are services created and implemented?</li>
+						<li>Not ignoring the questions of landscaping reduces the chances of <q>MS Hangover</q></li>
+					</ul>
+					<li>The Web can teach us some lessons about how to do some of these things</li>
+					<ul>
+						<li>After all, the Web <em>is</em> the ultimate global-scale service landscape</li>
+					</ul>
 				</ul>
-				<li>Focusing on addressing the <link href="soapy-soa">SOAPy SOA</link> pain points</li>
-				<li>De-focusing the question of how to manage the MSA landscape</li>
-			</ul>
-		</slide>
-		<slide id="apim-landscape">
-			<title>MS and the API Landscape</title>
-			<img title="MS/API Landscape" src="apim-landscape.png" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
-		</slide>
-		<slide id="landscape-explained">
-			<title>Explaining the MS API Landscape</title>
-			<ul>
-				<li>MS and exposed APIs can be different</li>
-				<li>APIM should be able to handle internal and exposed APIs</li>
-				<li>What's <em>internal</em> and <em>exposed</em> can be a contextual question</li>
-				<li>External API users might want to consume more than one set of APIs</li>
-				<li>Exposing the landscape or an API gateway are two possible choices</li>
-				<ul>
-					<li>Exposing the landscape exposes its diversity</li>
-					<li>Gateways can be centralized or become part of the <em>MS fabric</em> (e.g., a container)</li>
-				</ul>
-			</ul>
-		</slide>
-		<slide id="big-data">
-			<title>Scenario 1: Big Data</title>
-			<img src="yuanyang-terraces.jpg" title="Photo: Peter Liu" href="https://www.flickr.com/photos/peteropaliu/12815918504" style="width : 42% ; margin : 0% 4% 0% 2% ; float : right "/>
-			<img src="crater-lake.jpg" title="Crater Lake" href="https://www.flickr.com/photos/dret/3533839805" style="width : 42% ; margin : 0% 2% 0% 4% ; float : left "/>
-		</slide>
-		<slide id="internet-of-things">
-			<title>Scenario 2: Internet of Things</title>
-			<img title="Many things means many services" href="https://pixabay.com/static/uploads/photo/2015/05/25/05/27/network-782707_960_720.png" src="iot.png" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
-		</slide>
-		<slide id="ms-blind-spots">
-			<title>Microservices Blind Spots</title>
-			<ul>
-				<li>The current focus has a few blind spots</li>
-				<ul>
-					<li>How to find MS if an ecosystem grows beyond <q>yell across cubicles</q> size</li>
-					<li>How to manage the MS landscape once an MS ecosystem is developing</li>
-					<li>How design/evolve MS so that the landscape is robust and flexible</li>
-				</ul>
-				<li>An understandable reaction to <link href="soapy-soa">SOAPy SOA's</link> top-down approach</li>
-				<ul>
-					<li>It's important to focus on the central question: How are services created and implemented?</li>
-					<li>Not ignoring the questions of landscaping reduces the chances of <q>MS Hangover</q></li>
-				</ul>
-				<li>The Web can teach us some lessons about how to do some of these things</li>
-				<ul>
-					<li>After all, the Web <em>is</em> the ultimate global-scale service landscape</li>
-				</ul>
-			</ul>
-		</slide>
+			</slide>
+		</part>
 		<part id="Landscape">
 			<title>Microservice Landscape</title>
 			<slide id="monolith">
