@@ -143,9 +143,6 @@
 				<title>Microservices Over Time</title>
 				<img title="Where you might be going..." href="https://hbr.org/resources/images/article_assets/2015/01/JAN15_22_AU1328-001.jpg" src="microservices-reality.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-		</part>
-		<part id="discovery">
-			<title>Microservice Discovery</title>
 			<slide id="soapy-discovery">
 				<title>Old School Discovery</title>
 				<ul>
@@ -217,10 +214,6 @@
 						<li><em>Meaningful and stable core</em>: The service core must remain stable over time</li>
 						<li><em>Extension model</em>: There are well-defined ways how the service core may evolve</li>
 						<li><em>Processing model</em>: It is well-defined how clients are processing extensions</li>
-					</ul>
-					<li>HTML is a prime example for a robust and extensible service model</li>
-					<ul>
-						<li>It also is a good example for how providers can violate the assumptions</li>
 					</ul>
 				</ul>
 			</slide>
