@@ -324,9 +324,9 @@
 					<li>Decentralization means no single point of control</li>
 					<li>Decentralization means no automatic top-down visibility</li>
 					<ul>
-						<li>API gateways are one way of improving visibility (and control)</li>
-						<li>Instrumenting the connective fabric is another way out of this</li>
-						<li>But this already introduces a constraint for MSA design</li>
+						<li><em>API gateways</em> are one way of improving visibility (and control)</li>
+						<li><em>Instrumenting the connective fabric</em> is another way out of this</li>
+						<li>But this already introduces constraints for MSA design</li>
 					</ul>
 					<li>Complete and uncontrolled decentralization is an ideal</li>
 					<ul>
