@@ -46,6 +46,59 @@
 				<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
 			</ul>
 		</slide>
+		<part id="Landscape">
+			<title>Microservice Landscape</title>
+			<slide id="monolith">
+				<title>The Dreaded Monolith</title>
+				<img title="Where you come from..." href="https://upload.wikimedia.org/wikipedia/commons/7/7b/Weltmaschine_gsellmann1.JPG" src="monolith.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="MS-neat">
+				<title>Microservices: The Starting Point</title>
+				<img title="Where you think you're going..." href="https://static.pexels.com/photos/12598/96917deb7705adcee76b65caf8c652b1.jpg" src="microservices-ideal.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="MS-messy">
+				<title>Microservices Over Time</title>
+				<img title="Where you might be going..." href="https://hbr.org/resources/images/article_assets/2015/01/JAN15_22_AU1328-001.jpg" src="microservices-reality.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="soapy-discovery">
+				<title>Old School Discovery</title>
+				<ul>
+					<li>SOAP's answer to service discovery was UDDI</li>
+					<ul>
+						<li>The biggest failure of the SOAP Web Services stack</li>
+						<li>Allowing only one specific kind of service design</li>
+						<li>Focusing on the function signature as a service's main description</li>
+					</ul>
+					<li>Building directories from carefully described and categorized entries</li>
+					<ul>
+						<li>Feels like the Yahoo! of service discovery: The one true model approach</li>
+					</ul>
+					<li>What does a Google of Service Discovery look like?</li>
+					<ul>
+						<li>Starting from services, <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">find available description/documentation resources</a></li>
+						<li>Index description/documentation resources for subsequent discovery</li>
+						<li>Add support for additional description/documentation formats as required</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="ms-discovery">
+				<title>Decentralize Discovery</title>
+				<ul>
+					<li>MS is all about making services more independent and self-contained</li>
+					<ul>
+						<li>Discovery should follow the same pattern: Avoid centralization, be polyglot</li>
+					</ul>
+					<li>Decentralized discovery is based on pulling/crawling diverse data</li>
+					<ol>
+						<li>Start by <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">finding available description/documentation resources</a></li>
+						<li>Process these based on supported description/documentation formats</li>
+						<li>Increase support if required by the evolving ecosystem</li>
+						<li>Provide discovery services based on the resulting service ecosystem snapshot</li>
+					</ol>
+					<li>Added benefit: Reality-based view on description/documentation/service ecosystem</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="learn-from-the-web">
