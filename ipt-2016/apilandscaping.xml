@@ -135,7 +135,17 @@
 		<slide id="play-rough">
 			<title>Play Rough on the Playground</title>
 			<ul>
-				<li></li>
+				<li>One playground purpose is to explore and try out APIs</li>
+				<li>Another playground purpose is to <a href="http://dret.typepad.com/dretblog/2013/09/future-proofing-rest-clients.html">get ready for the real world</a></li>
+				<ul>
+					<li>Avoid hard-coding patterns such as URI structures</li>
+					<li>Expect the <link href="service-evolution">API to evolve</link></li>
+					<li>Handle errors gracefully and with useful UI/UX behavior</li>
+					<li>Fail in a controlled when on unexpected responses</li>
+					<li>Behave well for intermittent connectivity</li>
+					<li>Behave reasonably for offline scenarios</li>
+				</ul>
+				<li>Clients leaving the playground should be ready to face the world</li>
 			</ul>
 		</slide>
 		<part id="conclusions">
