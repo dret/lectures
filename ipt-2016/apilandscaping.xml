@@ -96,6 +96,42 @@
 				<li>Added benefit: Reality-based view on description/documentation/service ecosystem</li>
 			</ul>
 		</slide>
+		<slide id="service-evolution">
+			<title>Design for Service Evolution</title>
+			<ul>
+				<li>Services are designed with a certain goal and certain options</li>
+				<ul>
+					<li>The <em>goal</em> is to satisfy the current requirements for a useful service</li>
+					<li>The <em>options</em> are based on assumptions on how the service might change</li>
+				</ul>
+				<li>Service design is a balance between simplicity and flexibility</li>
+				<li>Building <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">robust and extensible services</a> is based on three factors</li>
+				<ul>
+					<li><em>Meaningful and stable core</em>: The service core must remain stable over time</li>
+					<li><em>Extension model</em>: There are well-defined ways how the service core may evolve</li>
+					<li><em>Processing model</em>: It is well-defined how clients are processing extensions</li>
+				</ul>
+			</ul>
+		</slide>
+		<slide id="landscape-evolution">
+			<title>Design for Landscape Evolution</title>
+			<ul>
+				<li>Application flow should be guided by discovered controls</li>
+				<ul>
+					<li>A dynamic service landscape needs a dynamic way of discovering services</li>
+					<li><em>Hypermedia</em> is a proven way how controls can be served dynamically</li>
+				</ul>
+				<li>Hypermedia is a good way for supporting <em>service choreography</em></li>
+				<ul>
+					<li>Microservice usage may change over time as the landscape evolves</li>
+					<li>Choreography exposes ways in which various services are combined to achieve a goal</li>
+				</ul>
+				<li>If nobody links to some microservices, these will disappear over time</li>
+				<ul>
+					<li>Usage and linkage combined provide useful analysis data</li>
+				</ul>
+			</ul>
+		</slide>
 		<slide id="play-rough">
 			<title>Play Rough on the Playground</title>
 			<ul>
