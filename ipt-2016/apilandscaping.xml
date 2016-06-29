@@ -148,27 +148,25 @@
 				<li>Clients leaving the playground should be ready to face the world</li>
 			</ul>
 		</slide>
-		<part id="conclusions">
-			<title>Conclusions</title>
-			<slide id="api-landscaping">
-				<title>API Landscaping</title>
-				<ul>
-					<li>API landscapes are getting more dynamic and diverse</li>
-					<li>Learn from the Web when dealing with speed and diversity</li>
-					<li>The <q>Web Surface</q> is a good starting point</li>
-					<li>Up-to-date imperfect information beats outdated unified information any time</li>
-					<li>Incentives work better than rules</li>
-				</ul>
-			</slide>
-			<slide id="q-and-a">
-				<title>Thanks! Q&amp;A</title>
-				<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
-				<ul>
-					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
-					<li>Slides online: <a href="http://dret.net/lectures/ipt-2016/"><code>dret.net/lectures/ipt-2016/</code></a></li>
-					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/ipt-2016"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
-				</ul>
-			</slide>
-		</part>
+		<slide id="api-landscaping">
+			<title>API Landscaping Matters</title>
+			<ul>
+				<li>API landscapes are getting more dynamic and diverse</li>
+				<li>API playgrounds are a great way to test clients</li>
+				<li>Learn from the Web when dealing with speed and diversity</li>
+				<li>The <q>Web Surface</q> is a good starting point</li>
+				<li>Up-to-date imperfect information beats outdated unified information any time</li>
+				<li>Incentives work better than rules</li>
+			</ul>
+		</slide>
+		<slide id="q-and-a">
+			<title>Thanks! Q&amp;A</title>
+			<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+			<ul>
+				<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+				<li>Slides online: <a href="http://dret.net/lectures/ipt-2016/"><code>dret.net/lectures/ipt-2016/</code></a></li>
+				<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/ipt-2016"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+			</ul>
+		</slide>
 	</presentation>
 </hotspot>
