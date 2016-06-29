@@ -76,6 +76,24 @@
 				<li>De-focusing the question of how to manage the MSA landscape</li>
 			</ul>
 		</slide>
+		<slide id="apim-landscape">
+			<title>MS and the API Landscape</title>
+			<img title="MS/API Landscape" src="apim-landscape.png" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+		</slide>
+		<slide id="landscape-explained">
+			<title>Explaining the MS API Landscape</title>
+			<ul>
+				<li>MS and exposed APIs can be different</li>
+				<li>APIM should be able to handle internal and exposed APIs</li>
+				<li>What's <em>internal</em> and <em>exposed</em> can be a contextual question</li>
+				<li>External API users might want to consume more than one set of APIs</li>
+				<li>Exposing the landscape or an API gateway are two possible choices</li>
+				<ul>
+					<li>Exposing the landscape exposes its diversity</li>
+					<li>Gateways can be centralized or become part of the <em>MS fabric</em> (e.g., a container)</li>
+				</ul>
+			</ul>
+		</slide>
 		<slide id="q-and-a">
 			<title>Thanks! Q&amp;A</title>
 			<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
