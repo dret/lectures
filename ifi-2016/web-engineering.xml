@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="apiacademy" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="web-engineering.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="http://creativecommons.org/licenses/by/3.0/" short="CC 3.0">
+		<div class="license">
+			<p><a rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/apiacademy/apiacademy/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
+		</div>
+	</license>
+	<title><a href="http://www.uzh.ch/en/" title="University of Zurich">UZH</a> <a href="http://www.ifi.uzh.ch/" title="Department of Informatics">IFI</a> <a href="http://www.ifi.uzh.ch/en/research/colloquium/">Colloquium</a>, Zürich</title>
+	<author><a href="http://dret.net/netdret/">Erik Wilde</a> (<a href="mailto:dret@ca.com"><code>dret@ca.com</code></a>)</author>
+	<affiliation><a href="http://www.ca.com/">CA Technologies</a>, <a href="http://www.apiacademy.co/">API Academy</a></affiliation>
+	<date short="2016-10-20">October 20, 2016</date>
+	<copyright>2016 Erik Wilde</copyright>
+	<presentation id="index">
+		<title>The Web Engineering Challenge</title>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract">...</p>
+		</slide>
+		<slide id="dret">
+			<title>About Me</title>
+			<ul>
+				<li><a href="http://dret.net/netdret/publications#wil97b">Ph.D. in Communications Systems</a> from <a href="http://www.ethz.ch/">ETH Zürich</a></li>
+				<li>Working on Web Architecture after writing <a href="http://dret.net/netdret/publications#wil98">the first Web Technology book</a></li>
+				<li>While at UC Berkeley, working on <a href="http://dret.net/netdret/publications#wil09g">Service Models for Open Government</a></li>
+				<li>While at EMC, working on transforming software products into service platforms</li>
+				<li>While at Siemens, working on using <em title="Internet of Things">IoT</em> to build <em title="Web of Things">WoT</em> (<q>APIs for Things</q>)</li>
+				<li>Joined <a href="http://www.ca.com/" title="CA Technologies">CA</a>'s <a href="http://www.apiacademy.co/">API Academy</a> in May 2016 and now all about API Design and Strategy</li>
+				<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="https://www.flickr.com/photos/dret/" title="dret">flickr</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
+			</ul>
+		</slide>
+		<slide id="q-and-a">
+			<title>Thanks! Q&amp;A</title>
+			<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+			<ul>
+				<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+				<li>Slides online: <a href="http://dret.net/lectures/ifi-2016/"><code>dret.net/lectures/ifi-2016/</code></a></li>
+				<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/ifi-2016"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+			</ul>
+		</slide>
+	</presentation>
+</hotspot>
