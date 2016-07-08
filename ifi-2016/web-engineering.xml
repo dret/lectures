@@ -46,6 +46,26 @@
 				<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="https://www.flickr.com/photos/dret/" title="dret">flickr</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
 			</ul>
 		</slide>
+		<part id="microservices">
+			<title>Microservices</title>
+			<slide>
+				<title>Microservice Characteristics</title>
+				<ul>
+					<li>Described/defined in <a href="http://martinfowler.com/articles/microservices.html">an article early in 2014</a></li>
+					<ol>
+						<li>Componentization via services</li>
+						<li>Organized around business capabilities</li>
+						<li>Products not projects</li>
+						<li>Smart endpoints and dumb pipes</li>
+						<li>Decentralized governance</li>
+						<li>Decentralized data management</li>
+						<li>Infrastructure automation</li>
+						<li>Design for failure</li>
+						<li>Evolutionary design</li>
+					</ol>
+				</ul>
+			</slide>
+		</part>
 		<slide id="q-and-a">
 			<title>Thanks! Q&amp;A</title>
 			<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
