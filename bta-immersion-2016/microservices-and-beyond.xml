@@ -106,6 +106,22 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="ms-and-the-web">
+				<title>Microservices and the Web</title>
+				<ul>
+					<li>MSA replicates the most important success factors of the Web</li>
+					<ul>
+						<li>Encapsulation of code, allowing polyglot implementations</li>
+						<li>Encapsulation of persistence, allowing polyglot storage</li>
+						<li>Encapsulation of models, making the API the only available model</li>
+					</ul>
+					<li>The <em>only</em> service dependency is through APIs</li>
+					<ul>
+						<li>Works well on the Web because of the uniform interface and HTML</li>
+						<li>Only works well if services expose APIs <q>as architecturally intended</q></li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="practical-issues">
 			<title>Practical Issues</title>
