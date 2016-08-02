@@ -64,7 +64,30 @@
 		<part id="principles">
 			<title>Principles</title>
 			<slide id="ms-focus">
-				<title>Main Focus on Development Practice</title>
+				<title>Main Focus on Development/Deployment</title>
+				<ul>
+					<li>Microservice Architecture focuses on SE Aspects</li>
+					<li>In order to develop/deploy MS, <a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html">three things are needed</a></li>
+					<ul>
+						<li>Rapid Provisioning: Automated infrastructure</li>
+						<li>Basic Monitoring: Keeping an watchful eye on the MS landscape</li>
+						<li>Rapid Deployment: Ability to deploy quickly to test/production</li>
+					</ul>
+					<li>Loose coupling of services allows an agile service landscape</li>
+				</ul>
+			</slide>
+			<slide id="ms-dividends">
+				<title><a href="http://queue.acm.org/detail.cfm?id=2956643">Microservice Dividends</a></title>
+				<ol>
+					<li>Permissionless Innovation</li>
+					<li>Enable Failure</li>
+					<li>Disrupt Trust (replaced by autonomy and accountability)</li>
+					<li>You Build It, You Own It</li>
+					<li>Accelerate Deprecations</li>
+					<li>End Centralized Metadata</li>
+					<li>Concentrate the Pain</li>
+					<li>Test Differently</li>
+				</ol>
 			</slide>
 			<slide id="ms-blind-spots">
 				<title>Less Focus on API Design and Management</title>
