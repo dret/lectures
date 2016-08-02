@@ -91,6 +91,20 @@
 			</slide>
 			<slide id="ms-blind-spots">
 				<title>Less Focus on API Design and Management</title>
+				<ul>
+					<li>Microservice Architecture focuses on SE Aspects</li>
+					<ul>
+						<li>Isolating services through all phases of the lifecycle</li>
+						<li>But of course services still need to interact</li>
+					</ul>
+					<li>Some API consistency will help to make the landscape more productive</li>
+					<ul>
+						<li>Helping API designers to avoid re-inventing the wheel</li>
+						<li>Helping API providers to be more usable for consumers</li>
+						<li>Helping API consumers to depend on some consistency</li>
+						<li>Helping with API discovery and managing the landscape</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="practical-issues">
