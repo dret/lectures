@@ -157,6 +157,15 @@
 			<title>Longterm Success Factors</title>
 			<slide id="no-platform">
 				<title>No Single Platform</title>
+				<ul>
+					<li>MSA is a style that should survive technologies</li>
+					<li><q><a href="https://www.youtube.com/watch?v=Wh4PpY0J9ZI" title="API360 Microservices Summit – Microservices Blind Spots – Irakli Nadareishvili, ReferWell">Containerization will drive MSA adoption</a></q></li>
+					<ul>
+						<li>A fully containerized service landscape by definition is MSA</li>
+						<li>Polyglot containers mean that language does not matter</li>
+						<li>Data encapsulation means isolated/opaque data management</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="uniform-interface">
 				<title>Focus on the Interface</title>
