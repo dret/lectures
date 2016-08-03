@@ -34,20 +34,20 @@
 			<title>Summary</title>
 			<p class="abstract">Microservice Architecture tells providers to "embrace the chaos" in order to increase the speed of service development, deployment, and availability. As an architecture the style does not define any concrete technologies, and in fact makes it clear that any prescription of technologies constrains a Microservice landscape in ways that are against the architectural style. Nourishing a thriving Microservice landscape is a balancing act between encouraging some best practices so that some common patterns emerge, and making sure that these best practices are not a relapse into the strict boundaries established in previous SOA approaches such as the SOAP/WSDL model.</p>
 		</slide>
-		<slide id="dret">
-			<title>About Me</title>
-			<ul>
-				<li><a href="http://dret.net/netdret/publications#wil97b">Ph.D. in Communications Systems</a> from <a href="http://www.ethz.ch/">ETH Zürich</a></li>
-				<li>Working on Web Architecture after writing <a href="http://dret.net/netdret/publications#wil98">the first Web Technology book</a></li>
-				<li>While at UC Berkeley, working on <a href="http://dret.net/netdret/publications#wil09g">Service Models for Open Government</a></li>
-				<li>While at EMC, working on transforming software products into service platforms</li>
-				<li>While at Siemens, working on using <em title="Internet of Things">IoT</em> to build <em title="Web of Things">WoT</em> (<q>APIs for Things</q>)</li>
-				<li>Joined <a href="http://www.ca.com/" title="CA Technologies">CA</a>'s <a href="http://www.apiacademy.co/">API Academy</a> in May 2016 and now all about API Design and Strategy</li>
-				<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="https://www.flickr.com/photos/dret/" title="dret">flickr</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
-			</ul>
-		</slide>
 		<part id="intro">
 			<title>Introduction</title>
+			<slide id="dret">
+				<title>About Me</title>
+				<ul>
+					<li><a href="http://dret.net/netdret/publications#wil97b">Ph.D. in Communications Systems</a> from <a href="http://www.ethz.ch/">ETH Zürich</a></li>
+					<li>Working on Web Architecture after writing <a href="http://dret.net/netdret/publications#wil98">the first Web Technology book</a></li>
+					<li>While at UC Berkeley, working on <a href="http://dret.net/netdret/publications#wil09g">Service Models for Open Government</a></li>
+					<li>While at EMC, working on transforming software products into service platforms</li>
+					<li>While at Siemens, working on using <em title="Internet of Things">IoT</em> to build <em title="Web of Things">WoT</em> (<q>APIs for Things</q>)</li>
+					<li>Joined <a href="http://www.ca.com/" title="CA Technologies">CA</a>'s <a href="http://www.apiacademy.co/">API Academy</a> in May 2016 and now all about API Design and Strategy</li>
+					<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="https://www.flickr.com/photos/dret/" title="dret">flickr</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
+				</ul>
+			</slide>
 			<slide id="msa-book">
 				<title>Microservice Architecture</title>
 				<img src="MSA-cover.jpg" href="http://transform.ca.com/API-microservice-architecture-oreilly-book.html" title="Microservice Architecture: Aligning Principles, Practices, and Culture" style="float: right ; height : 55% ; margin : 4% ; "/>
@@ -236,7 +236,7 @@
 			</slide>
 		</part>
 		<part id="longterm-success">
-			<title>Longterm Success Factors</title>
+			<title>Longterm MSA Success Factors</title>
 			<slide id="no-platform">
 				<title>No Single Platform</title>
 				<ul>
