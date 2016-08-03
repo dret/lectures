@@ -66,14 +66,18 @@
 			<slide id="ms-focus">
 				<title>Main Focus on Development/Deployment</title>
 				<ul>
-					<li>Microservice Architecture focuses on SE Aspects</li>
+					<li>Microservice Architecture focuses on culture/development/operational aspects</li>
 					<li>In order to develop/deploy MS, <a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html">three things are needed</a></li>
 					<ul>
-						<li>Rapid Provisioning: Automated infrastructure</li>
-						<li>Basic Monitoring: Keeping an watchful eye on the MS landscape</li>
-						<li>Rapid Deployment: Ability to deploy quickly to test/production</li>
+						<li><em>Rapid Provisioning:</em> Automated infrastructure</li>
+						<li><em>Basic Monitoring:</em> Keeping an watchful eye on the MS landscape</li>
+						<li><em>Rapid Deployment:</em> Ability to deploy quickly to test/production</li>
 					</ul>
 					<li>Loose coupling of services allows an agile service landscape</li>
+					<ul>
+						<li>Avoid coupling through design/development/deployment/operations</li>
+						<li>The only acceptable coupling is through the service API</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="ms-dividends">
@@ -92,12 +96,12 @@
 			<slide id="ms-blind-spots">
 				<title>Less Focus on API Design and Management</title>
 				<ul>
-					<li>Microservice Architecture focuses on SE Aspects</li>
+					<li>Microservice Architecture focuses on culture/development/operational aspects</li>
 					<ul>
 						<li>Isolating services through all phases of the lifecycle</li>
 						<li>But of course services still need to interact</li>
 					</ul>
-					<li>Some API consistency will help to make the landscape more productive</li>
+					<li>API consistency will help to make the landscape more productive</li>
 					<ul>
 						<li>Helping API designers to avoid re-inventing the wheel</li>
 						<li>Helping API providers to be more usable for consumers</li>
@@ -127,9 +131,9 @@
 				<ul>
 					<li>Famous small set of SOA design rules</li>
 					<ul>
-						<li>Teams must expose services</li>
+						<li>Teams must expose functionality through services</li>
 						<li>Communication happens only through service interfaces</li>
-						<li>There are no hard guidelines on service design</li>
+						<li>There are no hard guidelines for service design</li>
 						<li>Internal/external service is a matter of policy, not one of design</li>
 					</ul>
 					<li>Going against the <q>let's pick a platform</q> spirit of old-school SOA</li>
@@ -165,15 +169,14 @@
 				<ul>
 					<li>SOAP's answer to service discovery was UDDI</li>
 					<ul>
-						<li>The biggest failure of the SOAP Web Services stack</li>
-						<li>Allowing only one specific kind of service design</li>
+						<li>Allowing only one specific kind of service design (WSDL)</li>
 						<li>Focusing on the function signature as a service's main description</li>
 					</ul>
 					<li>Building directories from uniformly described and categorized entries</li>
 					<ul>
 						<li>Feels like the Yahoo! of service discovery: The <em>one true model</em> approach</li>
 					</ul>
-					<li>What does a Google of Service Discovery look like?</li>
+					<li>What does a <q>Google of Service Discovery</q> look like?</li>
 					<ul>
 						<li>Starting from services, <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">find available description/documentation resources</a></li>
 						<li>Index description/documentation resources for subsequent discovery</li>
@@ -184,7 +187,7 @@
 			<slide id="ms-discovery">
 				<title>Decentralize Discovery</title>
 				<ul>
-					<li>MS is all about making services more independent and self-contained</li>
+					<li>MSA is all about making services more independent and self-contained</li>
 					<ul>
 						<li>Discovery should follow the same pattern: Avoid centralization, be polyglot</li>
 					</ul>
@@ -192,7 +195,7 @@
 					<ol>
 						<li>Start by <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">finding available description/documentation resources</a></li>
 						<li>Process these based on supported description/documentation formats</li>
-						<li>Increase support if required by the evolving ecosystem</li>
+						<li>Add format support if required by the evolving ecosystem</li>
 						<li>Provide discovery services based on the resulting service ecosystem snapshot</li>
 					</ol>
 					<li>Added benefit: Reality-based view on description/documentation/service ecosystem</li>
@@ -243,14 +246,35 @@
 					<li>MSA is a style that should survive technologies</li>
 					<li><q><a href="https://www.youtube.com/watch?v=Wh4PpY0J9ZI" title="API360 Microservices Summit – Microservices Blind Spots – Irakli Nadareishvili, ReferWell">Containerization will drive MSA adoption</a></q></li>
 					<ul>
-						<li>A fully containerized service landscape by definition is MSA</li>
+						<li>A fully containerized service landscape needs MSA to function</li>
 						<li>Polyglot containers mean that language does not matter</li>
 						<li>Data encapsulation means isolated/opaque data management</li>
+					</ul>
+					<li>As persistence/languages/containers evolve, APIs remain the stable factor</li>
+					<ul>
+						<li>The external perspective of <em>MSA management</em> is <em>API Management</em></li>
+						<li>The tools/languages/platforms for MSA services may/will evolve over time</li>
 					</ul>
 				</ul>
 			</slide>
 			<slide id="uniform-interface">
 				<title>Focus on the Interface</title>
+				<ul>
+					<li>Respect the MSA goal of reducing coupling</li>
+					<ul>
+						<li>What happens in a Microservice stays in the Microservice</li>
+						<li>The only visible part of a Microservice is its published API</li>
+					</ul>
+					<li>Not having <q>integrated everything tools/suites</q> is an advantage in MSA-land</li>
+					<ul>
+						<li>Teams should have the freedom to mix and match the tools that work for them</li>
+					</ul>
+					<li>The <q>Microservice surface</q> should be exposed in a consumable way</li>
+					<ul>
+						<li>Consumable for API tooling to improve documentation and management</li>
+						<li>Consumable for API consumers once they have found the service</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
