@@ -23,16 +23,67 @@
 			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
 		</div>
 	</license>
-	<title><a href="http://nordicapis.com/">Nordic APIs 2016 Platform Summit</a>, Stockholm</title>
+	<title><a href="http://www.nordicapis.com/events/2016-platform-summit/">Nordic APIs 2016 Platform Summit</a>, Stockholm</title>
 	<author><a href="http://dret.net/netdret/">Erik Wilde</a> (<a href="mailto:dret@ca.com"><code>dret@ca.com</code></a>)</author>
 	<affiliation><a href="http://www.ca.com/">CA Technologies</a>, <a href="http://www.apiacademy.co/">API Academy</a></affiliation>
-	<date short="2016-10-25">October 25, 2016</date>
 	<copyright>2016 Erik Wilde</copyright>
-	<presentation id="index">
+	<toc name="toc.html">
+		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
+			<thead>
+				<tr>
+					<th valign="bottom">Title</th>
+					<th valign="bottom">Slides</th>
+					<th valign="bottom">Additional Resources</th>
+				</tr>
+			</thead>
+			<tbody>
+				<hotspot:for-each-presentation>
+					<tr class="vevent">
+						<td valign="top">
+							<b><span class="summary"><hotspot:title/></span><span class="toggle">:</span></b> <span class="toggle"><span class="description"><hotspot:toc class="abstract"/></span></span>
+						</td>
+						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+						<td align="center"><hotspot:toc class="resources"/></td>
+					</tr>
+				</hotspot:for-each-presentation>
+			</tbody>
+		</table>
+	</toc>
+	<presentation id="microservices-gardening">
 		<title>Microservice Gardening</title>
+		<date short="2016-10-25">October 25, 2016</date>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract">Microservices as an architectural approach are a logical consequence of the containerization of software infrastructure. Microservices as the result of a containerized landscape require a different mindset and management approach for keeping track of the more diverse, dynamic, and decentralized set of services. This talk takes a closer look at those places where becoming an effective microservice gardener presents some challenges, and where lessons learned from existing decentralized systems can present us with solutions that have been practiced and perfected since the Web turned into the largest containerized microservices ecosystem about 25 years ago.</p>
+		</slide>
+		<slide id="dret">
+			<title>About Me</title>
+			<ul>
+				<li><a href="http://dret.net/netdret/publications#wil97b">Ph.D. in Communications Systems</a> from <a href="http://www.ethz.ch/">ETH Zürich</a></li>
+				<li>Working on Web Architecture after writing <a href="http://dret.net/netdret/publications#wil98">the first Web Technology book</a></li>
+				<li>While at UC Berkeley, working on <a href="http://dret.net/netdret/publications#wil09g">Service Models for Open Government</a></li>
+				<li>While at EMC, working on transforming software products into service platforms</li>
+				<li>While at Siemens, working on using <em title="Internet of Things">IoT</em> to build <em title="Web of Things">WoT</em> (<q>APIs for Things</q>)</li>
+				<li>Joined <a href="http://www.ca.com/" title="CA Technologies">CA</a>'s <a href="http://www.apiacademy.co/">API Academy</a> in May 2016 and now all about API Design and Strategy</li>
+				<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="https://www.flickr.com/photos/dret/" title="dret">flickr</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
+			</ul>
+		</slide>
+		<slide id="q-and-a">
+			<title>Thanks! Q&amp;A</title>
+			<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+			<ul>
+				<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+				<li>Slides online: <a href="http://dret.net/lectures/nordic-apis-2016/"><code>dret.net/lectures/nordic-apis-2016/</code></a></li>
+				<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/nordic-apis-2016"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+			</ul>
+		</slide>
+	</presentation>
+	<presentation id="ecosystem-complexity">
+		<title>Complexity of Mobile and IoT Ecosystems</title>
+		<date short="2016-10-26">October 26, 2016</date>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract">...</p>
 		</slide>
 		<slide id="dret">
 			<title>About Me</title>
