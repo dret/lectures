@@ -83,10 +83,23 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="core">
+		<part id="5in5">
+			<title>Microservices: 5 in 5</title>
+			<slide id="why">
+				<title>Why?</title>
+			</slide>
+			<slide id="what">
+				<title>What?</title>
+			</slide>
+			<slide id="how">
+				<title>How?</title>
+			</slide>
 			<slide class="definition">
-				<title>Microservices: The Definition</title>
+				<title>The/A Definition</title>
 				<p class="abstract">A <em>microservice</em> is an independently deployable component of bounded scope that sup‐ ports interoperability through message-based communication. <em>Microservice architecture</em> is a style of engineering highly automated, evolvable software systems made up of capability-aligned microservices.</p>
+			</slide>
+			<slide id="exercises">
+				<title>Exercises for the Architect</title>
 			</slide>
 		</part>
 		<part id="big-picture">
