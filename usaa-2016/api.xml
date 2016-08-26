@@ -118,7 +118,7 @@
 			<slide id="exercises">
 				<title>Exercises for the Architect</title>
 				<ul>
-					<li>H</li>
+					<li>How is the loosely coupled <em>runtime</em> magic working, exactly?</li>
 				</ul>
 			</slide>
 		</part>
@@ -127,11 +127,27 @@
 			<slide id="conway">
 				<title>Conway's Laws</title>
 			</slide>
+			<slide>
+				<title>Resulting IT Trends</title>
+				<table>
+					<tr><th>CI/CD</th><td>No more fear of change</td></tr>
+					<tr><th>Cloud Computing</th><td>Instantaneous provisioning</td></tr>
+					<tr><th>Web APIs</th><td>Self-serve integration</td></tr>
+					<tr><th>DevOps</th><td>An empathetic, agile culture</td></tr>
+					<tr><th>Open Source Everything</th><td>Instant pluggable code</td></tr>
+					<tr><th>JavaScript Frameworks</th><td>A way to create more developers</td></tr>
+					<tr><th>GitHub</th><td>A way to connect all these developers</td></tr>
+					<tr><th>Containers/Docker</th><td>Exact replication of code deployments</td></tr>
+				</table>
+			</slide>
 		</part>
 		<part id="details">
 			<title>Some Details</title>
 			<slide id="containers">
 				<title>Containerization</title>
+				<ul>
+					<li><q href="">Containers are the gateway drug for microservices.</q></li>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
