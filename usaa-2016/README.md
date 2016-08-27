@@ -1,6 +1,6 @@
 # USAA API Workshop
 
-...
+*Microservice Architecture* and *Microservices* embrace a new style of IT development and culture that focuses on speed, safety, robustness, and scalability. Taking the ideas of agile development and CI/CD one step further, microservices embrace organizational changes as well, so that improved IT processes are not compromised by the side-effects of organizational realities.
 
 
 ## License
