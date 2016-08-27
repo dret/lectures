@@ -56,7 +56,7 @@
 		<toc class="abstract"></toc>
 		<slide id="summary">
 			<title>Summary</title>
-			<p class="abstract">...</p>
+			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
 		<part id="intro">
 			<title>Introduction</title>
@@ -179,9 +179,10 @@
 	</presentation>
 	<presentation id="microservices-on-the-web">
 		<title>Modeling Microservices on the Web</title>
+		<toc class="abstract"></toc>
 		<slide id="summary">
 			<title>Summary</title>
-			<p class="abstract">...</p>
+			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
 		<part id="intro">
 			<title>Introduction</title>
