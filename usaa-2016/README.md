@@ -2,7 +2,7 @@
 
 *Microservice Architecture* and *Microservices* embrace a new style of IT development and culture that focuses on speed, safety, robustness, and scalability. Taking the ideas of agile development and CI/CD one step further, microservices embrace organizational changes as well, so that improved IT processes are not compromised by the side-effects of organizational realities.
 
-Microservice Architecture describes a model that service development has followed for well over two decades: Allow many flowers to bloom, decouple radically, focus on the interface, and allow for experimentation and failure. The experience gathered from Web Architecture can be used as guidance for establishing and cultivating a successful Microservice Architecture. This presentation looks at lessons that can be derived from Web Architecture, and can serve as guidance when planning and implementing a Microservice strategy.
+*Microservice Architecture* describes a model that service development has followed for well over two decades: Allow many flowers to bloom, decouple radically, focus on the interface, and allow for rapid experimentation and failure. The experience gathered from *Web Architecture* can be used as guidance for establishing and cultivating a successful Microservice Architecture. This presentation looks at lessons that can be derived from Web Architecture, and can serve as guidance when planning and implementing a Microservice strategy.
 
 
 ## License
