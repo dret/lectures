@@ -113,7 +113,7 @@
 					<li>Focus on <em>ecosystems</em> of services to improve overall robustness</li>
 				</ul>
 			</slide>
-			<slide class="definition">
+			<slide id="definition">
 				<title>The/A Definition</title>
 				<p class="abstract">A <em>microservice</em> is an independently deployable component of bounded scope that supports interoperability through message-based communication. <em>Microservice architecture</em> is a style of engineering highly automated, evolvable software systems made up of capability-aligned microservices.</p>
 			</slide>
@@ -151,6 +151,14 @@
 					<li><q href="">Containers are the gateway drug for microservices.</q></li>
 				</ul>
 			</slide>
+			<slide id="ms-size">
+				<title>How Micro?</title>
+				<ul>
+					<li>There is no hard limit on the size of a Microservice</li>
+					<li>Domain limits (DDD) are a good starting point</li>
+					<li>Team size (<link href="conway">Conway</link>) are a good starting point</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
@@ -177,8 +185,8 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation id="microservices-on-the-web">
-		<title>Modeling Microservices on the Web</title>
+	<presentation id="microservices-and-the-web">
+		<title>Microservices and the Web</title>
 		<toc class="abstract">Microservice Architecture describes a model that service development has followed for well over two decades: Allow many flowers to bloom, decouple radically, focus on the interface, and allow for experimentation and failure. The experience gathered from Web Architecture can be used as guidance for establishing and cultivating a successful Microservice Architecture. This presentation looks at lessons that can be derived from Web Architecture, and can serve as guidance when planning and implementing a Microservice strategy.</toc>
 		<slide id="summary">
 			<title>Summary</title>

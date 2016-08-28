@@ -22,7 +22,7 @@ Workshop Schedule
 9:45 - API Case Study: Amazon
 10:30 - Break
 10:45 - Introduction to Microservice
-11:30 - Modeling Microservices on the Web
+11:30 - Microservices and the Web
 12:15 - Lunch
 13:30 - The Power of Continuous Delivery
 14:15 - Building a Continuous Microservice Culture
