@@ -113,8 +113,13 @@
 					<li>Focus on <em>ecosystems</em> of services to improve overall robustness</li>
 				</ul>
 			</slide>
-			<slide id="definition">
-				<title>The/A Definition</title>
+			<slide id="definition-why">
+				<title>Another Definition: Why?</title>
+				<p class="abstract">An architectural style for building solutions as network-based systems of services modularized by domains in order to improve the solutions’ evolvability, deployability, composability, scalability, resiliency and replaceability
+				</p>
+			</slide>
+			<slide id="definition-what">
+				<title>One Definition: What?</title>
 				<p class="abstract">A <em>microservice</em> is an independently deployable component of bounded scope that supports interoperability through message-based communication. <em>Microservice architecture</em> is a style of engineering highly automated, evolvable software systems made up of capability-aligned microservices.</p>
 			</slide>
 			<slide id="exercises">
@@ -128,6 +133,13 @@
 			<title>The Big Picture</title>
 			<slide id="conway">
 				<title>Conway's Laws</title>
+				<ol>
+					<li>Focus on communications</li>
+					<li>Support continuous process</li>
+					<li>Improve team independence</li>
+					<li>Keep project scope small</li>
+					</li>
+				</ol>
 			</slide>
 			<slide>
 				<title>Resulting IT Trends</title>
