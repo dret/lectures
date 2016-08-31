@@ -15,7 +15,7 @@ These are sources that I make available for others to read/use/reuse; please res
 The presentation version for this talk is available online at http://dret.net/lectures/usaa-2016/
 
 
-Workshop Schedule
+## Workshop Schedule
 
 * 8:30 - Welcome/Introductions
 * 9:00 - The Business of APIs
