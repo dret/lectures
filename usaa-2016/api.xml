@@ -202,6 +202,7 @@
 	</presentation>
 	<presentation id="microservices-and-the-web">
 		<title>Microservices and the Web</title>
+		<toc class="resources"><a href="https://www.w3.org/standards/webarch/" title="W3C's Web Architecture Home Page">Web Architecture</a>&#160;· <a href="http://webconcepts.info/" title="Concepts that matter for the Web. Document your APIs by documenting their Web Concepts.">Web Concepts</a></toc>
 		<toc class="abstract"><em>Microservice Architecture</em> describes a model that service development has followed for well over two decades: Allow many flowers to bloom, decouple radically, focus on the interface, and allow for rapid experimentation and failure. The experience gathered from <em>Web Architecture</em> can be used as guidance for establishing and cultivating a successful Microservice Architecture. This presentation looks at lessons that can be derived from Web Architecture, and can serve as guidance when planning and implementing a Microservice strategy.</toc>
 		<slide id="summary">
 			<title>Summary</title>
