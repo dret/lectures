@@ -90,7 +90,7 @@
 			<slide id="why">
 				<title>Why?</title>
 				<ul>
-					<li>IT is the/a key limiting/defining factor for organizational fitness</li>
+					<li>IT is the/a key factor for organizational fitness and sophistication</li>
 					<li>IT complexity increases, yet IT velocity should increase as well</li>
 					<li>IT landscapes need to adapt to shifting organizations/partners/strategies</li>
 					<li>The line between internal and external IT is increasingly blurred/shifting</li>
@@ -101,7 +101,7 @@
 				<title>What?</title>
 				<ul>
 					<li><em>Reduce</em> system size to the max and integrate into an ecosystem</li>
-					<li>Make the system implementations <em>self-contained</em>, self-sustaining, and independent</li>
+					<li>Make the system implementations <em>self-contained</em>, <em>self-sustaining</em>, and <em>independent</em></li>
 					<li><em>Cultivate</em> organizational structures aligned with the system boundaries</li>
 					<li><em>Empower</em> system developers/owners to make their own design decisions</li>
 					<li><em>Enforce</em> system separation by disallowing shortcuts</li>
@@ -117,20 +117,14 @@
 					<li>Focus on <em>loose coupling</em> so that the ecosystem is resilient</li>
 				</ul>
 			</slide>
-			<slide id="definition-why">
-				<title>One Definition: Why?</title>
+			<slide id="definition-goals">
+				<title>One Definition: Goals</title>
 				<p class="abstract">An architectural style for building solutions as network-based systems of services modularized by domains in order to improve the solutions’ evolvability, deployability, composability, scalability, resiliency and replaceability
 				</p>
 			</slide>
-			<slide id="definition-what">
-				<title>Another Definition: What?</title>
+			<slide id="definition-methods">
+				<title>Another Definition: Methods</title>
 				<p class="abstract">A <em>microservice</em> is an independently deployable component of bounded scope that supports interoperability through message-based communication. <em>Microservice architecture</em> is a style of engineering highly automated, evolvable software systems made up of capability-aligned microservices.</p>
-			</slide>
-			<slide id="exercises">
-				<title>Exercises for the Architect</title>
-				<ul>
-					<li><em>How</em> is the loosely coupled <em>runtime</em> magic working, exactly?</li>
-				</ul>
 			</slide>
 		</part>
 		<part id="big-picture">
