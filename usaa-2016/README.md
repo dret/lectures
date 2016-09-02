@@ -21,7 +21,7 @@ The presentation version for this talk is available online at http://dret.net/le
 * 9:00 - The Business of APIs
 * 9:45 - API Case Study: Amazon
 * 10:30 - Break
-* 10:45 - Introduction to Microservice
+* 10:45 - Introduction to Microservices
 * 11:30 - Microservices and the Web
 * 12:15 - Lunch
 * 13:30 - The Power of Continuous Delivery
