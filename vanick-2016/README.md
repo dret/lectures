@@ -1,6 +1,6 @@
 # API Design for Microservices
 
-...
+*Microservice Architecture* is about loose coupling, making sure that every service is entirely self-contained and can only be interacted with through its API. Another important aspect of that architectural style is that designers and developers have a lot of autonomy when it comes to designing, developing, and deploying their services. For this reason, <em>API design</em> for microservices must specifically target the *diversity* and *decentralization* that are inherent properties of any microservices landscape.
 
 
 ## License
