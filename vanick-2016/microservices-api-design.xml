@@ -81,8 +81,35 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="focus">
-			<title>Microservice Focus</title>
+		<part id="design">
+			<title>API Design</title>
+			<slide id="api-design">
+				<title>General API Design Issues</title>
+				<ul>
+					<li><em>Developer Experience (DX)</em></li>
+				</ul>
+			</slide>
+			<slide id="ms-design">
+				<title>Microservice API Design Issues</title>
+				<ul>
+					<li><em>Diversity:</em> Microservice teams are free to design their APIs</li>
+					<ul>
+						<li>→ Focus on managing diversity instead of defining standards</li>
+					</ul>
+					<li><em>Limited Scope:</em> Microservices have a limited and typically small scope</li>
+					<ul>
+						<li>→ Minimize friction when combining APIs and consider the <q>landscape DX</q></li>
+					</ul>
+					<li><em>Speed:</em> Services are supposed to change and get added/deleted often</li>
+					<ul>
+						<li>→ Focus on <em>landscape management</em> and discovery and monitoring</li>
+					</ul>
+					<li><em>Change:</em> </li>
+					<ul>
+						<li>→ Encourage extensible designs for services and resilient behavior for clients</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="diversity">
 			<title>Diversity</title>
