@@ -92,6 +92,18 @@
 		</part>
 		<part id="loose-coupling">
 			<title>Loose Coupling</title>
+			<slide id="robust-extensibility">
+				<title>Robust Extensibility</title>
+				<ul>
+					<li>Apply well-known <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Patterns for Robust Extensibility</a></li>
+				</ul>
+			</slide>
+			<slide id="registries">
+				<title>Use Registries</title>
+				<ul>
+					<li>There are many reasons why <a href="https://tools.ietf.org/html/draft-wilde-registries">using registries helps with loose coupling</a></li>
+				</ul>
+			</slide>
 		</part>
 		<part id="now-what">
 			<title>Now What?</title>
