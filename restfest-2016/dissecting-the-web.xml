@@ -49,6 +49,23 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="web-concepts">
+			<title>Web Concepts</title>
+			<slide id="interface-compose">
+				<title>Composing the <q>Uniform Interface</q></title>
+				<ul>
+					<li>...</li>
+				</ul>
+			</slide>
+			<slide id="specs">
+				<title>Specifications</title>
+				<listing src="specs.json" line="2-21" href="http://webconcepts.info/specs/specs.json"/>
+			</slide>
+			<slide id="concepts">
+				<title>Concepts</title>
+				<listing src="concepts.json" line="2-18" href="http://webconcepts.info/concepts/concepts.json"/>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
