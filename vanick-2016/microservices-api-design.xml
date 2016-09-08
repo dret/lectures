@@ -228,7 +228,18 @@
 			<slide id="registries">
 				<title>Use Registries</title>
 				<ul>
+					<li>Evolving sets of values in messages are a recurring pattern in protocols</li>
+					<li><em>Registries</em> are a common pattern in protocol design</li>
+					<ul>
+						<li>The value space of some attribute is defined to be the <q>set of registered values</q></li>
+						<li>The registry has an initial set of values and a policy for adding/changing/deprecating values</li>
+						<li>Registry values are associated with documentation about value semantics</li>
+					</ul>
 					<li>There are many reasons why <a href="http://tools.ietf.org/html/draft-wilde-registries">using registries helps with loose coupling</a></li>
+					<ul>
+						<li>Registries can be part of a service or can become standalone data dictionaries</li>
+						<li>Both designs have different implications when you look at the dependency graph</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
@@ -236,9 +247,18 @@
 			<title>Now What?</title>
 			<slide id="tooling">
 				<title>Tooling</title>
+				<ul>
+					<li>Microservices are all about speed-to-production</li>
+					<ul>
+						<li><em>Design tooling</em> is likely to be a popular tool</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="harvesting">
 				<title>Harvesting</title>
+				<ul>
+					<li></li>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
