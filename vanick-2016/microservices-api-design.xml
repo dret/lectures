@@ -144,6 +144,7 @@
 						<li>Your <em>object model</em> is not your <em>resource model</em></li>
 						<li>Your <em>resource model</em> is not your <em>message model</em></li>
 					</ul>
+					<li>Design <q>interaction form</q> to be as succinct as possible</li>
 				</ul>
 			</slide>
 			<slide id="surface">
@@ -154,20 +155,49 @@
 						<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
 						<li>Resist the temptation to <em>expose your model</em> just because you can</li>
 					</ul>
+					<li>Concepts must be well-defined but not necessarily deeply modeled</li>
+					<ul><em>Domain Driven Design (DDD)</em> provides a framework for <em>bounded contexts</em></ul>
 				</ul>
 			</slide>
 			<slide id="guidance">
 				<title>Provide Guidance</title>
 				<ul>
-					<li></li>
+					<li>Small services mean interactions across a variety of them</li>
+					<li>Reduce friction by providing means for seamless interactions</li>
+					<ul>
+						<li><em>Identifiers</em> robustly identify resources across all services</li>
+						<li><em>Links</em> guide interactions to possible following next steps</li>
+						<li><em>Link Templates</em> provide the equivalent of filling out forms</li>
+						<li><em>Linkbases</em> are a (weak) equivalent of traditional orchestration</li>
+					</ul>
+					<li><em>Guidance</em> means just that: suggestions that clients might follow</li>
+					<ul>
+						<li>Clients might decide to redirect or abort at any point in the process</li>
+						<li>Microservices need robust programming of services <em>and</em> clients</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
-		<part id="diversity">
-			<title>Diversity</title>
-		</part>
-		<part id="decentralization">
-			<title>Decentralization</title>
+		<part id="diversity-decentralization">
+			<title>Diversity and Decentralization</title>
+			<slide id="diversity">
+				<title>Diversity</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
+			<slide id="diversity">
+				<title>Decentralization</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
+			<slide id="common-core">
+				<title>Common Core</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
 		</part>
 		<part id="loose-coupling">
 			<title>Loose Coupling</title>
