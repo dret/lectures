@@ -189,17 +189,25 @@
 					</ul>
 					<li>Microservice teams are incentivized to create good APIs</li>
 					<ul>
-						<li>Feedback from API users comes early and often</li>
+						<li>Feedback from API consumers comes early and often</li>
 						<li>Being a good citizen improves the chances to sucess</li>
 						<li>Monitoring quickly reveals patterns of usage and popularity</li>
 					</ul>
 					<li>Standardize on <em>good practices</em> instead of <em>mandated patterns</em></li>
+					<li>Consumers should have a <em>seamless experience</em> across APIs</li>
 				</ul>
 			</slide>
-			<slide id="diversity">
+			<slide id="decentralization">
 				<title>Decentralization</title>
 				<ul>
-					<li></li>
+					<li>Centralization has become an IT anti-pattern</li>
+					<li>APIs should be easily composable by consumers</li>
+					<ul>
+						<li><em>Robust identity</em> allows resource discovery without out-of-band knowledge</li>
+						<li><em>Interlinking</em> exposes control flows in a self-describing way</li>
+					</ul>
+					<li>Individual services own and document their service APIs</li>
+					<li>Cross-service examples and use cases need to respect this autonomy</li>
 				</ul>
 			</slide>
 			<slide id="common-core">
