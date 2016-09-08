@@ -108,7 +108,7 @@
 					<ul>
 						<li>Focus on <em>landscape management</em> and discovery and monitoring</li>
 					</ul>
-					<li><em>Change:</em> Services can change frequently in design and/or implementation</li>
+					<li><em>Change:</em> Services can change frequently in capabilities and/or implementation</li>
 					<ul>
 						<li>Encourage extensible designs for services and resilient behavior for clients</li>
 					</ul>
@@ -117,6 +117,10 @@
 		</part>
 		<part id="kafka">
 			<title>The Kafka Method</title>
+			<slide id="castle">
+				<title>The Castle</title>
+				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="api-focus">
 				<title>APIs are Front and Center</title>
 				<ul>
