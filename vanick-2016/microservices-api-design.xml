@@ -217,6 +217,12 @@
 				<title>Robust Extensibility</title>
 				<ul>
 					<li>Apply well-known <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Patterns for Robust Extensibility</a></li>
+					<li>Microservice architecture encourages service changes and replacements</li>
+					<ul>
+						<li>Design for <em>service changes:</em> Non-breaking changes as the goal</li>
+						<li>Design for <em>landscape changes:</em> Self-describing interactions allow changing workflows</li>
+					</ul>
+					<li><em>Hypermedia</em> is a well-known pattern for service <em>and</em> landscape changes</li>
 				</ul>
 			</slide>
 			<slide id="registries">
