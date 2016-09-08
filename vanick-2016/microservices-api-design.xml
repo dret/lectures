@@ -183,7 +183,17 @@
 			<slide id="diversity">
 				<title>Diversity</title>
 				<ul>
-					<li></li>
+					<li>API designs should focus on the <em>API Quality</em></li>
+					<ul>
+						<li>Standardizing on technologies is no guarantee for quality</li>
+					</ul>
+					<li>Microservice teams are incentivized to create good APIs</li>
+					<ul>
+						<li>Feedback from API users comes early and often</li>
+						<li>Being a good citizen improves the chances to sucess</li>
+						<li>Monitoring quickly reveals patterns of usage and popularity</li>
+					</ul>
+					<li>Standardize on <em>good practices</em> instead of <em>mandated patterns</em></li>
 				</ul>
 			</slide>
 			<slide id="diversity">
