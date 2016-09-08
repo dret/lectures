@@ -86,7 +86,11 @@
 			<slide id="api-design">
 				<title>General API Design Issues</title>
 				<ul>
-					<li><em>Developer Experience (DX)</em></li>
+					<li>APIs are the domain boundaries of teams and capabilities</li>
+					<li>Keeping the boundaries <em>clear</em> and <em>clean</em> is essential for microservices</li>
+					<li><em>Developer Experience (DX)</em> helps to manage and maintain the boundaries</li>
+					<li>Managing <em>API Design</em> and <em>Documentation</em> is an essential part of any <em>API Strategy</em></li>
+					<li><em>API Design Quality</em> directly impacts the success of any <em>API Strategy</em></li>
 				</ul>
 			</slide>
 			<slide id="ms-design">
@@ -125,6 +129,16 @@
 						<li>Your <em>data model</em> is not your <em>object model</em></li>
 						<li>Your <em>object model</em> is not your <em>resource model</em></li>
 						<li>Your <em>resource model</em> is not your <em>message model</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="surface">
+				<title>Be Superficial</title>
+				<ul>
+					<li>The only thing that matters is the <em>Service Surface</em></li>
+					<ul>
+						<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
+						<li>Resist the temptation to <em></em></li>
 					</ul>
 				</ul>
 			</slide>
