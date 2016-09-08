@@ -98,19 +98,19 @@
 				<ul>
 					<li><em>Diversity:</em> Microservice teams are free to design their APIs</li>
 					<ul>
-						<li>→ Focus on managing diversity instead of defining standards</li>
+						<li>Focus on managing diversity instead of defining standards</li>
 					</ul>
 					<li><em>Limited Scope:</em> Microservices have a limited and typically small scope</li>
 					<ul>
-						<li>→ Minimize friction when combining APIs and consider the <q>landscape DX</q></li>
+						<li>Minimize friction when combining APIs and consider the <q>landscape DX</q></li>
 					</ul>
 					<li><em>Speed:</em> Services are supposed to change and get added/deleted often</li>
 					<ul>
-						<li>→ Focus on <em>landscape management</em> and discovery and monitoring</li>
+						<li>Focus on <em>landscape management</em> and discovery and monitoring</li>
 					</ul>
-					<li><em>Change:</em> </li>
+					<li><em>Change:</em> Services can change frequently in design and/or implementation</li>
 					<ul>
-						<li>→ Encourage extensible designs for services and resilient behavior for clients</li>
+						<li>Encourage extensible designs for services and resilient behavior for clients</li>
 					</ul>
 				</ul>
 			</slide>
