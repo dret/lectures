@@ -250,15 +250,30 @@
 				<ul>
 					<li>Microservices are all about speed-to-production</li>
 					<ul>
-						<li><em>Design tooling</em> is likely to be a popular tool</li>
+						<li>There is a strong culture of using tooling to get things done</li>
+						<li>Tools are not prescribed but instead picked based on utility</li>
 					</ul>
+					<li>API Design in itself may not be the greatest area for tooling</li>
+					<ul>
+						<li>But finding out about existing designs can be done by tooling</li>
+						<li>Drilling down into frequently used patterns can be done by tooling</li>
+						<li>Documenting and publishing designs can be done by tooling</li>
+					</ul>
+					<li>Track and document tool usage so that teams can learn from each other</li>
 				</ul>
 			</slide>
 			<slide id="harvesting">
 				<title>Harvesting</title>
 				<ul>
-					<li></li>
-				</ul>
+					<li><link href="decentralization">Decentralization</link> needs balancing forces</li>
+					<ul>
+						<li><em>Discovery</em> allows users to find decentralized resources</li>
+						<li>Discovery can be driven by blind or focused crawling</li>
+						<li>Crawling can go beyond full-text if documents are tagged</li>
+					</ul>
+					<li>Find a good balance of autonomy and the need for information management</li>
+					<li>Monitor API producer and consumer access to design documents</li>
+					</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
