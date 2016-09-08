@@ -119,12 +119,25 @@
 			<title>The Kafka Method</title>
 			<slide id="api-focus">
 				<title>APIs are Front and Center</title>
+				<ul>
+					<li>The only visibility into a service is its API</li>
+					<li>APIs should avoid letting their <q>implementation shine through</q></li>
+					<li>The two main goals of an API are <em>interaction</em> and <em>encapsulation</em></li>
+					<ul>
+						<li><em>Interaction</em> should be as simple/easy as possible through the API</li>
+						<li><em>Encapsulation</em> ensures that the implementation is invisible</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="messaging">
 				<title>Make Messaging the Start</title>
 				<ul>
-					<li></li>
-					<li></li>
+					<li>Make sure to identify relevant resources so that you can refer to them</li>
+					<ul>
+						<li>Resource refers to <em>anything</em> that <q>is worth exchanging messages about</q></li>
+						<li>Unique and stable identity helps when assigning resource identifiers</li>
+					</ul>
+					<li>Any service resource must have a <em>representation</em> in messages</li>
 					<ul>
 						<li>Your <em>data model</em> is not your <em>object model</em></li>
 						<li>Your <em>object model</em> is not your <em>resource model</em></li>
