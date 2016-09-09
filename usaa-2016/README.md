@@ -12,7 +12,7 @@ These are sources that I make available for others to read/use/reuse; please res
 
 ## Online
 
-The presentation versions for these talks are available online at http://dret.net/lectures/usaa-2016/
+The presentation version for this talk is available online at http://dret.net/lectures/usaa-2016/
 
 
 ## Workshop Schedule
