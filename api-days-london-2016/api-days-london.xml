@@ -50,10 +50,10 @@
 			</tbody>
 		</table>
 	</toc>
-	<presentation id="microservices">
-		<title>Introduction to Microservices</title>
+	<presentation id="balancing-speed-and-safety">
+		<title>Balancing Speed and Safety</title>
 		<toc class="resources"><a href="http://transform.ca.com/API-microservice-architecture-oreilly-book.html" title="Microservice Architecture: Aligning Principles, Practices, and Culture">Microservices Book</a>&#160;· <a href="http://www.martinfowler.com/articles/microservices.html" title="Martin Fowler on Microservices">Fowler on Microservices</a></toc>
-		<toc class="abstract"><em>Microservice Architecture</em> and <em>Microservices</em> embrace a new style of IT development and culture that focuses on speed, safety, robustness, and scalability. Taking the ideas of agile development and CI/CD one step further, microservices embrace organizational changes as well, so that improved IT processes are not compromised by the side-effects of organizational realities.</toc>
+		<toc class="abstract"><em>...</toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -84,6 +84,12 @@
 					</ul>
 				</ul>
 			</slide>
+		</part>
+		<part id="speed">
+			<title>Speed</title>
+		</part>
+		<part id="safety">
+			<title>Safety</title>
 		</part>
 	</presentation>
 </hotspot>
