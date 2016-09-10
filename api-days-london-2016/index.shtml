@@ -38,7 +38,7 @@ function displayAll(theClass,value) {
 -->
 </script>
 	</head>
-	<body onload='displayAll("toggle","none") ; return false ;'>
+	<body onload='displayAll("toggle","") ; return false ;'>
 		<div class="header">
 			<h1>API Days London</h1>
 			<h2>London, UK<br/>October 11/12, 2016</h2>
