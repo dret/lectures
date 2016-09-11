@@ -53,7 +53,7 @@
 	<presentation id="balancing-speed-and-safety">
 		<title>Balancing Speed and Safety</title>
 		<toc class="resources"><a href="http://transform.ca.com/API-microservice-architecture-oreilly-book.html" title="Microservice Architecture: Aligning Principles, Practices, and Culture">Microservices Book</a>&#160;· <a href="http://www.martinfowler.com/articles/microservices.html" title="Martin Fowler on Microservices">Fowler on Microservices</a></toc>
-		<toc class="abstract"><em>...</toc>
+		<toc class="abstract">Speeding up IT and business development without sacrificing stability and safety is one of the major challenges faced by many organizations today. The challenge increases with the size of the organization, the requirements for safety, the rate of change of the environment, and the need to change of required changes to keep up with the changing environment. Balancing speed and safety in a way that allows the organization to change in flexible ways is something that requires systemic thinking, and organizational setup to manage the system in ways that allow quick changes, allow for good monitoring of those changes, so that organizational development becomes a continuous process rather than a goal.</toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -85,6 +85,9 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="systems">
+			<title>Systems</title>
+		</part>
 		<part id="speed">
 			<title>Speed</title>
 		</part>
@@ -94,17 +97,17 @@
 		<part id="equilibrium">
 			<title>Equilibrium</title>
 		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/api-days-london-2016/"><code>dret.net/lectures/api-days-london-2016/</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/api-days-london-2016"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
-	<part id="conclusions">
-		<title>Conclusions</title>
-		<slide id="q-and-a">
-			<title>Thanks! Q&amp;A</title>
-			<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
-			<ul>
-				<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
-				<li>Slides online: <a href="http://dret.net/lectures/api-days-london-2016/"><code>dret.net/lectures/api-days-london-2016/</code></a></li>
-				<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/api-days-london-2016"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
-			</ul>
-		</slide>
-	</part>
 </hotspot>
