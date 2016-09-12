@@ -122,10 +122,10 @@
 			<slide id="ms-blind-spots">
 				<title>Microservices Blind Spots</title>
 				<ul>
-					<li>The current focus has a few blind spots</li>
+					<li>The MSA current focus has a few blind spots</li>
 					<ul>
-						<li>How to find MS if an ecosystem grows beyond <q>yell across cubicles</q> size</li>
-						<li>How to manage the MS landscape once an MS ecosystem is developing</li>
+						<li>How to find MS if/when an ecosystem grows beyond <q>yell across cubicles</q> size</li>
+						<li>How to manage/understand/steer the MS landscape once an MS ecosystem is developing</li>
 						<li>How design/evolve MS so that the landscape is robust and flexible</li>
 					</ul>
 					<li>An understandable reaction to <em>SOAPy SOA's</em> top-down approach</li>
@@ -135,7 +135,7 @@
 					</ul>
 					<li>The Web can teach us some lessons about how to do some of these things</li>
 					<ul>
-						<li>After all, the Web <em>is</em> the ultimate global-scale service landscape</li>
+						<li>After all, the Web <em>is</em> the ultimate global-scale loosely coupled service landscape</li>
 					</ul>
 				</ul>
 			</slide>
@@ -315,13 +315,13 @@
 					<li>The line between system and ecosystem architecture is blurry</li>
 					<ul>
 						<li><em>Ecosystems</em> emphasize decentralization and loose coupling</li>
-						<li><em>Systems</em> allow efficiencies by coupling things more tightly</li>
+						<li>(Integrated) <em>Systems</em> allow efficiencies by coupling things more tightly</li>
 					</ul>
 					<li>MSA is about the delicate balance of speed and safety</li>
 					<ul>
-						<li><q>Anything goes</q> may lead to a highly diverse ecosystem</li>
-						<li>Teams are likely to try to do <em>the right thing</em></li>
-						<li>Demonstrating utility is a great way to promote MS design patterns</li>
+						<li><q>Anything goes</q> may lead to a highly/overly diverse ecosystem</li>
+						<li>Teams are likely to try to do <em>the right thing</em> if they not what that is</li>
+						<li>Demonstrating utility/practice is a great way to promote MSA patterns</li>
 					</ul>
 				</ul>
 			</slide>
