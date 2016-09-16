@@ -192,6 +192,22 @@
 			<title>Webby Documentation</title>
 			<slide id="discoverable-concepts">
 				<title>Discoverable Concepts</title>
+				<ul>
+					<li>There is not one single API documentation format</li>
+					<ul>
+						<li>API style and tooling affect the choice of API documentation format</li>
+						<li>Microservices allow teams to pick their preferred format/tools</li>
+					</ul>
+					<li>Manage diversity by focusing on the surface</li>
+					<ul>
+						<li>Webby API documentation should be able to clearly markup Web concepts</li>
+					</ul>
+					<li><q>Harvesting Web concepts</q> should be relatively easy</li>
+					<ul>
+						<li>Microformats/RDFa/Microdata or similar tooling might be helpful</li>
+						<li><em>Building </em> becomes a natural </li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="surface-focusing">
 				<title>Focusing the Surface</title>
