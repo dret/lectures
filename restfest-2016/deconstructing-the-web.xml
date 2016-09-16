@@ -157,13 +157,35 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="concepts">
+				<title>Concepts</title>
+				<listing src="concepts.json" line="2-18" href="http://webconcepts.info/concepts/concepts.json"/>
+			</slide>
 			<slide id="specs">
 				<title>Specifications</title>
 				<listing src="specs.json" line="2-21" href="http://webconcepts.info/specs/specs.json"/>
 			</slide>
-			<slide id="concepts">
-				<title>Concepts</title>
-				<listing src="concepts.json" line="2-18" href="http://webconcepts.info/concepts/concepts.json"/>
+			<slide id="concepts-and -sepcs">
+				<title>Concepts and Specifications</title>
+				<ul>
+					<li>Concepts are established by defining/documenting them</li>
+					<ul>
+						<li>The most popular ones are defined and documented in standards</li>
+						<li>Many concepts allow private uses of their namespace</li>
+					</ul>
+					<li>Many specifications establish more than one concept</li>
+					<ul>
+						<li>Solving a problem often requires more than just one concept</li>
+						<li>The specification established the <em>domain</em> that matters for the concept</li>
+					</ul>
+					<li>Specifications (and services) may also depend on existing concepts</li>
+				</ul>
+			</slide>
+			<slide id="http">
+				<title>HTTP/1.1 Concepts</title>
+				<listing src="rfc7231.xml" line="2-6" href="http://webconcepts.info/specs/IETF/RFC/7231"/>
+				<listing src="rfc7231.xml" line="119-120" href="http://webconcepts.info/specs/IETF/RFC/7231"/>
+				<listing src="rfc7231.xml" line="173-174" href="http://webconcepts.info/specs/IETF/RFC/7231"/>
 			</slide>
 		</part>
 		<part id="webby-documentation">
