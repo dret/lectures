@@ -122,7 +122,7 @@
 			<title>Web Concepts</title>
 			<slide id="snowflakes">
 				<title>Sunlight Melts Snowflakes</title>
-				<img title="Snowflakes" href="http://www.flickr.com/photos/amagill/4223790595" src="snowflakes.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Snowflakes" href="http://www.flickr.com/photos/amagill/4223790595" src="snowflake.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="ui-patterns">
 				<title>Uniform Interface Patterns</title>
@@ -207,6 +207,12 @@
 			<title>Conclusions</title>
 			<slide id="webby-enterprises">
 				<title>Be RESTful!</title>
+				<ul>
+					<li>Add visibility to Web APIs</li>
+					<ul>
+						<li>Communicates designs and prevents snowflakes</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
