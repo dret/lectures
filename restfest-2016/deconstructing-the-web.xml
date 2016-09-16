@@ -107,15 +107,46 @@
 			<title>The Grand Plan</title>
 			<slide id="describe">
 				<title>Describe Services</title>
+				<ul>
+					<li>Description formats are up for services to choose</li>
+					<li>There must be a way to extract concepts from descriptions</li>
+					<ul>
+						<li>Description formats likely will be richer than the <q>flat concept space</q></li>
+					</ul>
+					<li>Formats and tooling can be updated to expose concepts</li>
+					<ul>
+						<li>Concept surface may be adjusted depending on coverage needs</li>
+					</ul>
+					<li>Descriptions per resource are too noisy and granular</li>
+					<ul>
+						<li>(Some) resources link to the service's <em>home resource</em></li>
+						<li>Home resources link to service <em>documentation</em> and <em>description</em></li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="harvest">
-				<title>Harvest Description for Aggregation</title>
+				<title>Harvest Descriptions for Aggregation</title>
+				<ul>
+					<li>Find descriptions via submission or crawling</li>
+					<li></li>
+				</ul>
 			</slide>
 			<slide id="guide">
 				<title>Description-Driven Design Guide</title>
+				<ul>
+					<li>Harvested description can drive analytics</li>
+					<li>Current use provides a good overview of the current landscape</li>
+					<li>Historical use provides a good overview of service design trends</li>
+				</ul>
 			</slide>
 			<slide id="enforce">
 				<title>Monitor Service Behavior</title>
+				<ul>
+					<li>Descriptions can be used for behavioral monitoring</li>
+					<ul>
+						<li>Gracefully handle incomplete descriptions</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
