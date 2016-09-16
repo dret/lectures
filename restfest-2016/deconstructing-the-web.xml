@@ -128,6 +128,16 @@
 				<title>Uniform Interface Patterns</title>
 				<ul>
 					<li>Identify <q>design patterns</q> based on shared concepts</li>
+					<ul>
+						<li>Treating concepts as a <em>flat space</em> leaves out many details</li>
+						<li><q>Deeper models</q> can still be based on the <q>shared concept surface</q></li>
+					</ul>
+					<li>The uniform interface evolves and so should attempt to track it</li>
+					<ul>
+						<li>New <a href="https://github.com/dret/webconcepts/commits">Web Concepts values</a> are defined/created constantly</li>
+						<li>New <a href="http://webconcepts.info/concepts">Web Concept</a> appear less frequently</li>
+					</ul>
+					<li><q>Make any model <em>as shallow as possible</em>, model depth tightly couples and makes model matching and mapping much harder.</q></li>
 				</ul>
 			</slide>
 			<slide id="interface-compose">
