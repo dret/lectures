@@ -48,10 +48,19 @@
 					<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="https://www.flickr.com/photos/dret/" title="dret">flickr</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
 				</ul>
 			</slide>
+			<slide id="lego-city">
+				<title>The Service Web</title>
+				<img title="Lego City" href="https://commons.wikimedia.org/wiki/File:HKPIEG_Infrastructure_Gallery_exhibit_-_TST_%E5%B0%96%E6%B2%99%E5%92%80_%E5%BE%80%E6%98%94%E5%BB%BA%E7%AF%89%E7%89%A9_Lego_model_past_May-2013_old_Tram_Station_Salisburg_Road_Peninsula_Hotel.JPG" src="lego-city.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="why">
 				<title>Why?</title>
 				<ul>
 					<li>Enterprise IT has discovered <em>Web Architecture</em>: They call it <em>Microservices</em>!</li>
+					<li><em>Visibility</em> is a key issue for <em>making <q>webby</q> work</em></li>
+					<ul>
+						<li>Enterprise IT still needs some control over the evolving service landscape</li>
+						<li>Being more cooperative will help the success of webby approaches</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="uniform-interface-lie">
