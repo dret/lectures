@@ -291,13 +291,13 @@
 					<ul>
 						<li>Gracefully handle incomplete descriptions</li>
 						<li>Alert service owners of mismatches between description and behavior</li>
-						<li>Provide gentle nudges to improve documentation coverage</li>
-						<ul>
-							<li>If it is documented but not identified, simply add the harvestable information</li>
-							<li>If it is not documented then maybe the documentation needs improvement</li>
-						</ul>
-						<li>Visibility adds a level of responsibility to service owners</li>
 					</ul>
+					<li>Provide gentle nudges to improve documentation coverage</li>
+					<ul>
+						<li>If it is documented but not identified, simply add the harvestable information</li>
+						<li>If it is not documented then maybe the documentation needs improvement</li>
+					</ul>
+					<li>Visibility adds a level of responsibility to service owners</li>
 				</ul>
 			</slide>
 		</part>
