@@ -23,7 +23,7 @@
 			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
 		</div>
 	</license>
-	<title><a href="https://www.restfest.org/">RESTfest 2016</a>, Greenville, SC</title>
+	<title><a href="http://www.restfest.org/">RESTfest 2016</a>, Greenville, SC</title>
 	<author><a href="http://dret.net/netdret/">Erik Wilde</a> (<a href="mailto:dret@ca.com"><code>dret@ca.com</code></a>)</author>
 	<affiliation><a href="http://www.ca.com/">CA Technologies</a>, <a href="http://www.apiacademy.co/">API Academy</a></affiliation>
 	<date short="2016-09-16">September 16, 2016</date>
@@ -45,12 +45,12 @@
 					<li>While at EMC, working on transforming software products into service platforms</li>
 					<li>While at Siemens, working on using <em title="Internet of Things">IoT</em> to build <em title="Web of Things">WoT</em> (<q>APIs for Things</q>)</li>
 					<li>Joined <a href="http://www.ca.com/" title="CA Technologies">CA</a>'s <a href="http://www.apiacademy.co/">API Academy</a> in May 2016 and now all about API Design and Strategy</li>
-					<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="https://www.flickr.com/photos/dret/" title="dret">flickr</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
+					<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="http://www.flickr.com/photos/dret/" title="dret">flickr</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
 				</ul>
 			</slide>
 			<slide id="lego-city">
 				<title>The Service Web</title>
-				<img title="Lego City" href="https://commons.wikimedia.org/wiki/File:HKPIEG_Infrastructure_Gallery_exhibit_-_TST_%E5%B0%96%E6%B2%99%E5%92%80_%E5%BE%80%E6%98%94%E5%BB%BA%E7%AF%89%E7%89%A9_Lego_model_past_May-2013_old_Tram_Station_Salisburg_Road_Peninsula_Hotel.JPG" src="lego-city.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Lego City" href="http://commons.wikimedia.org/wiki/File:HKPIEG_Infrastructure_Gallery_exhibit_-_TST_%E5%B0%96%E6%B2%99%E5%92%80_%E5%BE%80%E6%98%94%E5%BB%BA%E7%AF%89%E7%89%A9_Lego_model_past_May-2013_old_Tram_Station_Salisburg_Road_Peninsula_Hotel.JPG" src="lego-city.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="why">
 				<title>Why?</title>
@@ -63,7 +63,8 @@
 					</ul>
 					<li><em>Design Instrumentation</em> allows better service landscaping</li>
 					<ul>
-						<li>Think of it as <a href="https://www.w3.org/WAI/ER/tools/">accessibility checkers for the service web</a></li>
+						<li>Think of it as <a href="http://www.w3.org/WAI/ER/tools/">accessibility checkers for the service web</a></li>
+						<li><em>Balancing speed and safety</em> requires understanding what your're balancing</li>
 					</ul>
 				</ul>
 			</slide>
@@ -72,6 +73,13 @@
 				<ul>
 					<li>It is <a href="http://webconcepts.info/specs/">not that uniform</a></li>
 					<li><q>Self-description</q> just gives you a chance to <a href="http://webconcepts.info/concepts/">look up concepts</a></li>
+					<li>Many Web technologies are built <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">to be robust and extensible</a></li>
+					<ol>
+						<li>Design a meaningful and extensible foundation</li>
+						<li>Have well-defined extension points for it</li>
+						<li>Have a well-defined processing model (<em>must ignore</em> is a good choice)</li>
+						<li>Have some idea how to manage extensions (decentralized vs. <a href="http://tools.ietf.org/html/draft-wilde-registries">registries</a>)</li>
+					</ol>
 				</ul>
 			</slide>
 		</part>
@@ -94,7 +102,7 @@
 			<title>Web Concepts</title>
 			<slide id="snowflakes">
 				<title>Sunlight Melts Snowflakes</title>
-				<img title="Snowflakes" href="https://www.flickr.com/photos/amagill/4223790595" src="snowflakes.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Snowflakes" href="http://www.flickr.com/photos/amagill/4223790595" src="snowflakes.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="ui-patterns">
 				<title>Uniform Interface Patterns</title>
