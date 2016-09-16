@@ -143,7 +143,18 @@
 			<slide id="interface-compose">
 				<title>Composing the Uniform Interface</title>
 				<ul>
-					<li>...</li>
+					<li>What is the <link href="ui-practice">Uniform Interface</link> of the Web?</li>
+					<ul>
+						<li>It depends on who you are asking</li>
+						<li>It depends on when you are asking</li>
+						<li>There is probably a relatively agreed-upon core and many extension areas</li>
+					</ul>
+					<li>Create a <em>composable view of the uniform interface</em> that evolves and extends</li>
+					<ul>
+						<li>Model as little as you can get away with</li>
+						<li>Create a <em>common core</em> that everybody can start with</li>
+						<li>Encourage evolution and extension</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="specs">
