@@ -217,7 +217,10 @@
 						<li>When talking about shared concepts all that matters are the concepts</li>
 						<li>Any <em>model depth</em> can be added by anybody who thinks they need it</li>
 					</ul>
-					<li></li>
+					<li>Easy to extract from deeper models</li>
+					<ul>
+						<li>But not always at the focus of those models</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="surface-extension">
@@ -262,7 +265,13 @@
 				<title>Harvest Descriptions for Aggregation</title>
 				<ul>
 					<li>Find descriptions via submission or crawling</li>
-					<li></li>
+					<li>Exposed descriptions can be easily harvested</li>
+					<li>Part of automated testing</li>
+					<ul>
+						<li>Some rules about which concepts should be present</li>
+						<li><q>Automated Audit</q> as a first step of approval processes</li>
+					</ul>
+					<li>Descriptions should be treated as cached snapshots</li>
 				</ul>
 			</slide>
 			<slide id="guide">
@@ -271,6 +280,8 @@
 					<li>Harvested description can drive analytics</li>
 					<li>Current use provides a good overview of the current landscape</li>
 					<li>Historical use provides a good overview of service design trends</li>
+					<li>Cultivate design sharing as part of the design process</li>
+					<li>You might see <q>flocks</q> of designer preferences evolving</li>
 				</ul>
 			</slide>
 			<slide id="enforce">
@@ -279,6 +290,13 @@
 					<li>Descriptions can be used for behavioral monitoring</li>
 					<ul>
 						<li>Gracefully handle incomplete descriptions</li>
+						<li>Alert service owners of mismatches between description and behavior</li>
+						<li>Provide gentle nudges to improve documentation coverage</li>
+						<ul>
+							<li>If it is documented but not identified, simply add the harvestable information</li>
+							<li>If it is not documented then maybe the documentation needs improvement</li>
+						</ul>
+						<li>Visibility adds a level of responsibility to service owners</li>
 					</ul>
 				</ul>
 			</slide>
