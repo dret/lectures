@@ -210,10 +210,31 @@
 				</ul>
 			</slide>
 			<slide id="surface-focusing">
-				<title>Focusing the Surface</title>
+				<title>Focus on the Surface</title>
+				<ul>
+					<li>Having a shallow model <em>is a good thing</em></li>
+					<ul>
+						<li>When talking about shared concepts all that matters are the concepts</li>
+						<li>Any <em>model depth</em> can be added by anybody who thinks they need it</li>
+					</ul>
+					<li></li>
+				</ul>
 			</slide>
 			<slide id="surface-extension">
-				<title>Extending the Surface</title>
+				<title>Extend the Surface</title>
+				<ul>
+					<li><em>Web Concepts</em> are different for different communities</li>
+					<li>Adding concepts should be relatively easy</li>
+					<ul>
+						<li>Adding individual values just requires adding specifications/services</li>
+						<li>Adding concepts introduces a new <q>class of concepts</q></li>
+					</ul>
+					<li>What is the best way to add and manage and discover extensions?</li>
+					<ul>
+						<li>A <a href="http://tools.ietf.org/html/draft-wilde-registries">Registry</a> is one possible way of managing extensions</li>
+						<li><a href="http://webconcepts.info/concepts/">Web Concepts</a> could be the initial registry contents</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="getting-there">
