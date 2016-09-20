@@ -32,7 +32,7 @@
 		<title>Microservice Matters</title>
 		<slide id="summary">
 			<title>Summary</title>
-			<p class="abstract">Microservices promise to provide a new approach for disentangling complex solutions. They do so by providing teams with more autonomy, thus allowing the service landscape to evolve more freely and in a loosely-coupled way. This talk looks into the organizational, technological, cultural, and methodical aspects of microservice architecture. It presents a framework for how and why microservices can make a difference in an IT strategy, and also highlights the areas that require careful attention when planning and implementing a microservices approach.</p>
+			<p class="abstract">Microservices promise to provide a new approach for disentangling complex solutions. They do so by providing teams with more autonomy, thus allowing the service landscape to evolve more freely and in a loosely coupled way. This talk looks into the organizational, technological, cultural, and methodical aspects of microservice architecture. It presents a framework for how and why microservices can make a difference in IT strategy, and also highlights the areas that require careful attention when planning and implementing a microservices approach.</p>
 		</slide>
 		<part id="intro">
 			<title>Introduction</title>
@@ -125,9 +125,94 @@
 		</part>
 		<part id="culture">
 			<title>Culture</title>
+			<slide id="velocity">
+				<title>Innovation needs Velocity</title>
+				<ul>
+					<li>Remove red tape and embrace diversity</li>
+					<li>Business environments change faster than ever</li>
+					<ul>
+						<li><em>Wrong question:</em> How to change into a more successful organization</li>
+						<li><em>Right question:</em> How to become an organization that is better at changing</li>
+					</ul>
+					<li>The Web succeeded because it out-innovated everything else</li>
+					<ul>
+						<li>Permissionless decentralized innovation</li>
+						<li>Data-driven decisions (traffic drives visibility and success)</li>
+						<li>Permanent change enabled through loose coupling</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="dee-hock">
+				<title>Un-Preventing Innovation</title>
+				<img title="Dee Hock: Birth of the Chaordic Age" href="https://en.wikipedia.org/wiki/Dee_Hock" src="dee-hock-chaordic.png" style="width : 85% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 		</part>
 		<part id="design">
 			<title>Design</title>
+			<slide id="kafka-method">
+				<title>The Kafka Method: The Castle</title>
+				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-focus">
+				<title>APIs are Front and Center</title>
+				<ul>
+					<li>The only visibility into a service is its API</li>
+					<li>APIs should avoid letting their <q>implementation shine through</q></li>
+					<li>The two main goals of an API are <em>interaction</em> and <em>encapsulation</em></li>
+					<ul>
+						<li><em>Interaction</em> should be as simple/easy as possible through the API</li>
+						<li><em>Encapsulation</em> ensures that the implementation is invisible</li>
+					</ul>
+					<li>Help developers to navigate the evolving landscape of interlinked APIs</li>
+				</ul>
+			</slide>
+			<slide id="messaging">
+				<title>Make Messaging the Start</title>
+				<ul>
+					<li>Make sure to identify relevant resources so that you can refer to them</li>
+					<ul>
+						<li>Resource refers to <em>anything</em> that <q>is worth exchanging messages about</q></li>
+						<li>Unique and stable identity helps when assigning resource identifiers</li>
+					</ul>
+					<li>Any service resource must have a <em>representation</em> in messages</li>
+					<ul>
+						<li>Your <em>data model</em> is not your <em>object model</em></li>
+						<li>Your <em>object model</em> is not your <em>resource model</em></li>
+						<li>Your <em>resource model</em> is not your <em>message model</em></li>
+					</ul>
+					<li>Design <q>interaction form</q> to be as succinct as possible</li>
+				</ul>
+			</slide>
+			<slide id="surface">
+				<title>Be Superficial</title>
+				<ul>
+					<li>The only thing that matters is the <em>Service Surface</em></li>
+					<ul>
+						<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
+						<li>Resist the temptation to <em>expose your model</em> just because you can</li>
+					</ul>
+					<li>Concepts must be well-defined but not necessarily deeply modeled</li>
+					<ul><em>Domain Driven Design (DDD)</em> provides a framework for <em>bounded contexts</em></ul>
+				</ul>
+			</slide>
+			<slide id="guidance">
+				<title>Provide Guidance</title>
+				<ul>
+					<li>Small services mean interactions across a variety of them</li>
+					<li>Reduce friction by providing means for seamless interactions</li>
+					<ul>
+						<li><em>Identifiers</em> robustly identify resources across all services</li>
+						<li><em>Links</em> guide interactions to possible following next steps</li>
+						<li><em>Link Templates</em> provide the equivalent of filling out forms</li>
+						<li><em>Linkbases</em> are a (weak) equivalent of traditional orchestration</li>
+					</ul>
+					<li><em>Guidance</em> means just that: suggestions that clients might follow</li>
+					<ul>
+						<li>Clients might decide to redirect or abort at any point in the process</li>
+						<li>Microservices need robust programming of services <em>and</em> clients</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="management">
 			<title>Management</title>
