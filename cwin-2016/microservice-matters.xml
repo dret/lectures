@@ -52,7 +52,7 @@
 				<title>API Academy</title>
 				<img src="ca-logo.png" href="http://www.ca.com/" title="CA Technologies" style="float: right ; height : 55% ; margin : 4% ; "/>
 				<ul>
-					<li>Global CA Team working on <em>API Strategy and Design</em> topics</li>
+					<li>Global Team working on <em>API Strategy and Design</em> topics</li>
 					<ul>
 						<li><a href="http://www.apiacademy.co/team_member/matt-mclarty/">Matt McLarty</a> (Vancouver)</li>
 						<li><a href="http://www.apiacademy.co/team_member/mike-amundsen/">Mike Amundsen</a> (Cincinnati)</li>
@@ -131,8 +131,8 @@
 					<li>Remove red tape and embrace diversity</li>
 					<li>Business environments change faster than ever</li>
 					<ul>
-						<li><em>Wrong question:</em> How to change into a more successful organization</li>
-						<li><em>Right question:</em> How to become an organization that is better at changing</li>
+						<li><em>Common question:</em> How to change into a more successful organization</li>
+						<li><em>Better question:</em> How to become an organization that is better at changing</li>
 					</ul>
 					<li>The Web succeeded because it out-innovated everything else</li>
 					<ul>
@@ -203,12 +203,12 @@
 					<ul>
 						<li><em>Identifiers</em> robustly identify resources across all services</li>
 						<li><em>Links</em> guide interactions to possible following next steps</li>
-						<li><em>Link Templates</em> provide the equivalent of filling out forms</li>
-						<li><em>Linkbases</em> are a (weak) equivalent of traditional orchestration</li>
+						<li><em>Link templates</em> provide the equivalent of filling out forms</li>
+						<li><em>Link overlays</em> are a (weak) equivalent of traditional orchestration</li>
 					</ul>
 					<li><em>Guidance</em> means just that: suggestions that clients might follow</li>
 					<ul>
-						<li>Clients might decide to redirect or abort at any point in the process</li>
+						<li>Clients might decide to redirect or stop at any point in the process</li>
 						<li>Microservices need robust programming of services <em>and</em> clients</li>
 					</ul>
 				</ul>
