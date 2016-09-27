@@ -52,9 +52,11 @@
 	</toc>
 	<presentation id="introduction">
 		<title>Introduction</title>
+		<toc class="abstract">APIs increasingly become the <em>connective tissue</em> of the Web in general, and the way how business is looking at their IT strategy and structure in particular. APIs are what both <em>separate</em> and <em>connect</em> collaborating and communicating peers: They facilitate <em>loose coupling</em> of service providers and consumers and thus strike a balance between the ability to collaborate and cooperate, while still maintaining independence and individual control.</toc>
+		<toc class="resources"><a href="http://dret.net/biblio/reference/pau09a" title="Cesare Pautasso and Erik Wilde, 'Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design', Proceedings of the 18th International World Wide Web Conference, ACM Press, Madrid, Spain, April 2009">Loose&#160;Coupling</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
-			<p class="abstract">...</p>
+			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
 		<part id="intro">
 			<title>Introduction</title>
