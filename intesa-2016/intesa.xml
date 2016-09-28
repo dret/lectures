@@ -292,14 +292,199 @@
 	</presentation>
 	<presentation id="api-design">
 		<title>API Design</title>
-		<toc class="abstract">...</toc>
+		<toc class="abstract"><em>Microservice Architecture</em> is about loose coupling, making sure that every service is entirely self-contained and can only be interacted with through its API. Another important aspect of that architectural style is that designers and developers have a lot of autonomy when it comes to designing, developing, and deploying their services. For this reason, <em>API design</em> for microservices must specifically target the <em>diversity</em> and <em>decentralization</em> that are inherent properties of any microservices landscape.</toc>
 		<toc class="resources"></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
-		<part id="intro">
-			<title>Introduction</title>
+		<part id="design-issues">
+			<title>API Design Issues</title>
+			<slide id="api-design">
+				<title>General API Design Issues</title>
+				<ul>
+					<li>APIs are the domain boundaries of teams and capabilities</li>
+					<li>Keeping the boundaries <em>clear</em> and <em>clean</em> is essential for microservices</li>
+					<li><em>Developer Experience (DX)</em> helps to manage and maintain the boundaries</li>
+					<li>Managing <em>API Design</em> and <em>Documentation</em> is an essential part of any <em>API Strategy</em></li>
+					<li><em>API Design Quality</em> directly impacts the success of any <em>API Strategy</em></li>
+				</ul>
+			</slide>
+			<slide id="ms-design">
+				<title>Microservice API Design Issues</title>
+				<ul>
+					<li><em>Diversity:</em> Microservice teams are free to design their APIs</li>
+					<ul>
+						<li>Focus on managing diversity instead of defining standards</li>
+					</ul>
+					<li><em>Limited Scope:</em> Microservices have a limited and typically small scope</li>
+					<ul>
+						<li>Minimize friction when combining APIs and consider the <q>landscape DX</q></li>
+					</ul>
+					<li><em>Speed:</em> Services are supposed to change and get added/deleted often</li>
+					<ul>
+						<li>Focus on <em>landscape management</em> and discovery and monitoring</li>
+					</ul>
+					<li><em>Change:</em> Services can change frequently in capabilities and/or implementation</li>
+					<ul>
+						<li>Encourage extensible designs for services and resilient behavior for clients</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="kafka">
+			<title>The Kafka Method</title>
+			<slide id="castle">
+				<title>The Castle</title>
+				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-focus">
+				<title>APIs are Front and Center</title>
+				<ul>
+					<li>The only visibility into a service is its API</li>
+					<li>APIs should avoid letting their <q>implementation shine through</q></li>
+					<li>The two main goals of an API are <em>interaction</em> and <em>encapsulation</em></li>
+					<ul>
+						<li><em>Interaction</em> should be as simple/easy as possible through the API</li>
+						<li><em>Encapsulation</em> ensures that the implementation is invisible</li>
+					</ul>
+					<li>Help developers to navigate the evolving landscape of interlinked APIs</li>
+				</ul>
+			</slide>
+			<slide id="messaging">
+				<title>Make Messaging the Start</title>
+				<ul>
+					<li>Make sure to identify relevant resources so that you can refer to them</li>
+					<ul>
+						<li>Resource refers to <em>anything</em> that <q>is worth exchanging messages about</q></li>
+						<li>Unique and stable identity helps when assigning resource identifiers</li>
+					</ul>
+					<li>Any service resource must have a <em>representation</em> in messages</li>
+					<ul>
+						<li>Your <em>data model</em> is not your <em>object model</em></li>
+						<li>Your <em>object model</em> is not your <em>resource model</em></li>
+						<li>Your <em>resource model</em> is not your <em>message model</em></li>
+					</ul>
+					<li>Design <q>interaction form</q> to be as succinct as possible</li>
+				</ul>
+			</slide>
+			<slide id="surface">
+				<title>Be Superficial</title>
+				<ul>
+					<li>The only thing that matters is the <em>Service Surface</em></li>
+					<ul>
+						<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
+						<li>Resist the temptation to <em>expose your model</em> just because you can</li>
+					</ul>
+					<li>Concepts must be well-defined but not necessarily deeply modeled</li>
+					<ul><em>Domain Driven Design (DDD)</em> provides a framework for <em>bounded contexts</em></ul>
+				</ul>
+			</slide>
+			<slide id="guidance">
+				<title>Provide Guidance</title>
+				<ul>
+					<li>Small services mean interactions across a variety of them</li>
+					<li>Reduce friction by providing means for seamless interactions</li>
+					<ul>
+						<li><em>Identifiers</em> robustly identify resources across all services</li>
+						<li><em>Links</em> guide interactions to possible following next steps</li>
+						<li><em>Link Templates</em> provide the equivalent of filling out forms</li>
+						<li><em>Linkbases</em> are a (weak) equivalent of traditional orchestration</li>
+					</ul>
+					<li><em>Guidance</em> means just that: suggestions that clients might follow</li>
+					<ul>
+						<li>Clients might decide to redirect or abort at any point in the process</li>
+						<li>Microservices need robust programming of services <em>and</em> clients</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="diversity-decentralization-loose-coupling">
+			<title>Diversity, Decentralization, and Loose Coupling</title>
+			<slide id="diversity">
+				<title>Diversity</title>
+				<ul>
+					<li>API designs should focus on the <em>API Quality</em></li>
+					<ul>
+						<li>Standardizing on technologies is no guarantee for quality</li>
+					</ul>
+					<li>Microservice teams are incentivized to create good APIs</li>
+					<ul>
+						<li>Feedback from API consumers comes early and often</li>
+						<li>Being a good citizen improves the chances to sucess</li>
+						<li>Monitoring quickly reveals patterns of usage and popularity</li>
+					</ul>
+					<li>Standardize on <em>good practices</em> instead of <em>mandated patterns</em></li>
+					<li>Consumers should have a <em>seamless experience</em> across APIs</li>
+				</ul>
+			</slide>
+			<slide id="decentralization">
+				<title>Decentralization</title>
+				<ul>
+					<li>Centralization has become an IT anti-pattern</li>
+					<li>APIs should be easily composable by consumers</li>
+					<ul>
+						<li><em>Robust identity</em> allows resource discovery without out-of-band knowledge</li>
+						<li><em>Interlinking</em> exposes control flows in a self-describing way</li>
+					</ul>
+					<li>Individual services own and document their service APIs</li>
+					<li>Cross-service examples and use cases need to respect this autonomy</li>
+				</ul>
+			</slide>
+			<slide id="loose-coupling">
+				<title>Loose Coupling</title>
+				<ul>
+					<li>Apply well-known <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Patterns for Robust Extensibility</a></li>
+					<li>Microservice architecture encourages service changes and replacements</li>
+					<ul>
+						<li>Design for <em>service changes:</em> Non-breaking changes as the goal</li>
+						<li>Design for <em>landscape changes:</em> Self-describing interactions allow changing workflows</li>
+					</ul>
+					<li><em>Hypermedia</em> is a well-known pattern for service <em>and</em> landscape changes</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="tooling">
+				<title>Tooling</title>
+				<ul>
+					<li>Microservices are all about speed-to-production</li>
+					<ul>
+						<li>There is a strong culture of using tooling to get things done</li>
+						<li>Tools are not prescribed but instead picked based on utility</li>
+					</ul>
+					<li>API Design in itself may not be the greatest area for tooling</li>
+					<ul>
+						<li>But finding out about existing designs can be done by tooling</li>
+						<li>Drilling down into frequently used patterns can be done by tooling</li>
+						<li>Documenting and publishing designs can be done by tooling</li>
+					</ul>
+					<li>Track and document tool usage so that teams can learn from each other</li>
+				</ul>
+			</slide>
+			<slide id="harvesting">
+				<title>Harvesting</title>
+				<ul>
+					<li><link href="decentralization">Decentralization</link> needs balancing forces</li>
+					<ul>
+						<li><em>Discovery</em> allows users to find decentralized resources</li>
+						<li>Discovery can be driven by blind or focused crawling</li>
+						<li>Crawling can go beyond full-text if documents are tagged</li>
+					</ul>
+					<li>Find a good balance of autonomy and the need for information management</li>
+					<li>Monitor API producer and consumer access to design documents</li>
+				</ul>
+			</slide>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/intesa-2016/api-design"><code>dret.net/lectures/intesa-2016/api-design</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/intesa-2016"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+				</ul>
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="api-management">
@@ -348,6 +533,9 @@
 		</slide>
 		<part id="intro">
 			<title>Introduction</title>
+		</part>
+		<part id="data-driven">
+			<title>Measure Everything</title>
 		</part>
 	</presentation>
 </hotspot>
