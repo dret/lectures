@@ -1012,7 +1012,7 @@
 	<presentation id="api-product-management">
 		<title>API Product Management</title>
 		<toc class="abstract">...</toc>
-		<toc class="resources"></toc>
+		<toc class="resources"><a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://webconcepts.info/" title="Collection of Web Concepts">Web Concepts</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -1024,6 +1024,78 @@
 			<title>Products not Projects</title>
 			<slide id="msa-products">
 				<title>MSA Focus: Products</title>
+			</slide>
+		</part>
+		<part id="standards">
+			<title>Standards</title>
+			<slide id="bigger-picture">
+				<title>Fit into the Bigger Picture</title>
+				<ul>
+					<li>APIs are about <em>information logistics</em>, so friction matters</li>
+					<ul>
+						<li><em>Developer experience (DX)</em> means how hard it is to use certain APIs</li>
+						<li>DX also matters when it comes to how hard it is to combine APIs</li>
+					</ul>
+					<li><em>REST</em> has the idealized picture of <em>uniform self-describing interfaces</em></li>
+					<ul>
+						<li>Uniform: You can interact with a service without knowing it in advance</li>
+						<li>Self-describing: You can learn what you need to know from the interactions</li>
+					</ul>
+					<li>REST works well on the Web because humans are the intelligence driving dumb browsers</li>
+					<ul>
+						<li>For Web services this looks difference because there is only code</li>
+						<li>Having <em>shared concepts</em> and <em>layered domain meaning</em> still is a good idea</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="ietf">
+				<title>Internet Engineering Task Force (IETF)</title>
+				<ul>
+					<li>The main organization for Internet standards</li>
+					<li>Many of the fundamental pieces of Internet/Web architecture are IETF work</li>
+					<ul>
+						<li><em>Internet Protocol (IP):</em> The foundation on which the Internet is based</li>
+						<li><em>Domain Name System (DNS):</em> The address book of the Internet that manages all names</li>
+						<li><em>Transmission Control Protocol (TCP):</em> The reliable end-to-end protocol connecting applications</li>
+						<li><em>Uniform Resource Identifier (URI):</em> The way in which Web resources are identified and addressed</li>
+						<li><em>Hypertext Transfer Protocol (HTTP):</em> The protocol spoken by all server and browsers and many APIs and apps</li>
+						<li><em>JavaScript Object Notation (JSON):</em> The metamodel used for most modern API designs</li>
+					</ul>
+					<li>Keeping an eye on ongoing developments are part of solid API management</li>
+				</ul>
+			</slide>
+			<slide id="w3c">
+				<title>World Wide Web Consortium (W3C)</title>
+				<ul>
+					<li>The main organization for Web-related standards</li>
+					<li>Many of the fundamental pieces of Web architecture are W3C work</li>
+					<ul>
+						<li><em>Hypertext Markup Language (HTML):</em> The document format used by browsers</li>
+						<li><em>Cascading Style Sheets (CSS):</em> The layout language supported by all modern browsers</li>
+						<li><em>Extensible Markup Language (XML):</em> A metamodel still popular for some APIs</li>
+						<li><em>Resource Description Framework (RDF):</em> A metamodel popular for a certain class of applications</li>
+					</ul>
+					<li>Keeping an eye on ongoing developments are part of solid API management</li>
+				</ul>
+			</slide>
+			<slide id="webconcepts">
+				<title>Web Concepts</title>
+				<ul>
+					<li>The foundation of an API landscape is a mix of various standards</li>
+					<li>Many of the foundations are from IETF/W3C</li>
+					<ul>
+						<li>Depending on the domain/industry, there may be other well-known foundations</li>
+					</ul>
+					<li><code href="http://webconcepts.info/">webconcepts.info</code> provides a <a href="http://webconcepts.info/concepts/"><q>starter pack</q> of concepts</a></li>
+					<ul>
+						<li>Currently listing 522 values classified in 16 different Web concepts</li>
+					</ul>
+					<li>Create your own foundation by forking, removing, and adding concepts and values</li>
+					<ul>
+						<li>APIs and the concepts they use should be linked both ways</li>
+						<li>Imagine having a dashboard of foundations and their popularity</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="data-driven">
