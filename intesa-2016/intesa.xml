@@ -149,21 +149,51 @@
 			<title>Overview</title>
 			<slide id="presentation-microservices">
 				<title>Microservices</title>
+				<ul>
+					<li>Decomposing the Monolith into loosely coupled components</li>
+					<li>Organization/cultural issues when using microservices</li>
+					<li>Managing the diversity resulting from microservices</li>
+				</ul>
 			</slide>
 			<slide id="presentation-design">
 				<title>API Design</title>
+				<ul>
+					<li>APIs should <em>connect</em> and <em>isolate</em> at the same time</li>
+					<li>API design has short term benefits and long term risks</li>
+					<li>Achieving loose coupling is largely a function of API design</li>
+				</ul>
 			</slide>
 			<slide id="presentation-management">
 				<title>API Management</title>
+				<ul>
+					<li>Managing APIs means managing <em>information logistics</em></li>
+					<li>Balancing agility and robustness requires a flexible foundation</li>
+					<li>Managing APIs means managing and enabling change and reconfiguration</li>
+				</ul>
 			</slide>
 			<slide id="presentation-security">
 				<title>API Security</title>
+				<ul>
+					<li>Traditional security often is built on securing integrated environments</li>
+					<li>Securing ecosystems takes a more decentralized view of security</li>
+					<li>Web security provides good blueprints for how to decentralize security</li>
+				</ul>
 			</slide>
 			<slide id="presentation-evolution">
 				<title>API Evolution</title>
+				<ul>
+					<li>APIs change because business units change their value creation</li>
+					<li>Designing for change is necessary is loosely coupled scenarios</li>
+					<li>Decentralized systems have a long history of patterns for loose coupling</li>
+				</ul>
 			</slide>
 			<slide id="presentation-product-management">
-				<title>API Product Managemenent</title>
+				<title>API Product Management</title>
+				<ul>
+					<li>APIs are an essential part of the value created bu business units</li>
+					<li>API product management means to elevate APIs to business documents</li>
+					<li>Staying on top of APIs means staying on top of visible information</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
