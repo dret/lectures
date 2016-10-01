@@ -254,8 +254,8 @@
 				<title>What?</title>
 				<ul>
 					<li><em>Reduce</em> system size to the max and integrate into an ecosystem</li>
-					<li>Make the system implementations <em>self-contained</em>, <em>self-sustaining</em>, and <em>independent</em></li>
-					<li><em>Cultivate</em> organizational structures aligned with the system boundaries</li>
+					<li>Make system components <em>self-contained</em>, <em>self-sustaining</em>, and <em>independent</em></li>
+					<li><em>Cultivate</em> organizational structures aligned with system boundaries</li>
 					<li><em>Empower</em> system developers/owners to make their own design decisions</li>
 					<li><em>Enforce</em> system separation by disallowing shortcuts</li>
 				</ul>
@@ -272,8 +272,7 @@
 			</slide>
 			<slide id="definition-goals">
 				<title>One Definition: Goals</title>
-				<p class="abstract">An architectural style for building solutions as network-based systems of services modularized by domains in order to improve the solutions’ evolvability, deployability, composability, scalability, resiliency and replaceability
-				</p>
+				<p class="abstract">An architectural style for building solutions as network-based systems of services modularized by domains in order to improve the solutions’ evolvability, deployability, composability, scalability, resiliency and replaceability.</p>
 			</slide>
 			<slide id="definition-methods">
 				<title>Another Definition: Methods</title>
@@ -323,6 +322,7 @@
 					<ul>
 						<li>The cost is the need for advanced infrastructure and teams</li>
 						<li>The return is increased flexibility and agility</li>
+						<li>Cost/benefit for microservices is target at long term capabilities</li>
 					</ul>
 					<li>What are the <a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html">prerequisites for considering microservices?</a></li>
 					<ol>
@@ -331,6 +331,9 @@
 						<li><em>Rapid Deployment:</em> Automated ways to quickly move from code to running services</li>
 					</ol>
 					<li>Moving to MSA is a transition process and not one <em>Big Bang</em></li>
+					<ul>
+						<li>Just like the Web is never complete/final, neither is a microservices landscape</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="containers">
@@ -416,7 +419,7 @@
 	<presentation id="api-design">
 		<title>API Design</title>
 		<toc class="abstract"><em>Microservice Architecture</em> is about loose coupling, making sure that every service is entirely self-contained and can only be interacted with through its API. Another important aspect of that architectural style is that designers and developers have a lot of autonomy when it comes to designing, developing, and deploying their services. For this reason, <em>API design</em> for microservices must specifically target the <em>diversity</em> and <em>decentralization</em> that are inherent properties of any microservices landscape.</toc>
-		<toc class="resources"></toc>
+		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title="Erik Wilde, 'Patterns for Robust Extensibility'">Robust Extensibility</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -530,6 +533,7 @@
 					<li>API designs should focus on the <em>API Quality</em></li>
 					<ul>
 						<li>Standardizing on technologies is no guarantee for quality</li>
+						<li>Focus on design patterns and feedback from API users</li>
 					</ul>
 					<li>Microservice teams are incentivized to create good APIs</li>
 					<ul>
@@ -549,6 +553,7 @@
 					<ul>
 						<li><em>Robust identity</em> allows resource discovery without out-of-band knowledge</li>
 						<li><em>Interlinking</em> exposes control flows in a self-describing way</li>
+						<li>Web architecture supports choreography and orchestration patterns</li>
 					</ul>
 					<li>Individual services own and document their service APIs</li>
 					<li>Cross-service examples and use cases need to respect this autonomy</li>
@@ -577,11 +582,11 @@
 						<li>There is a strong culture of using tooling to get things done</li>
 						<li>Tools are not prescribed but instead picked based on utility</li>
 					</ul>
-					<li>API Design in itself may not be the greatest area for tooling</li>
+					<li>API design in itself may not be the greatest area for tooling</li>
 					<ul>
-						<li>But finding out about existing designs can be done by tooling</li>
-						<li>Drilling down into frequently used patterns can be done by tooling</li>
-						<li>Documenting and publishing designs can be done by tooling</li>
+						<li>But <em>finding out about existing designs</em> can be done by tooling</li>
+						<li><em>Drilling down</em> into frequently used patterns can be done by tooling</li>
+						<li><em>Documenting and publishing designs</em> can be done by tooling</li>
 					</ul>
 					<li>Track and document tool usage so that teams can learn from each other</li>
 				</ul>
