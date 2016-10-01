@@ -147,6 +147,23 @@
 		</part>
 		<part id="overview">
 			<title>Overview</title>
+			<slide id="terminology">
+				<title>What is an API?</title>
+				<ul>
+					<li><em>APIs</em> used to be local interfaces between code components</li>
+					<li><em>Network interfaces</em> used to be called <em>protocols</em></li>
+					<li><q>APIs</q> still are local interfaces between code components</li>
+					<ul>
+						<li>Often these are not explicitly labeled as <em>programmatic APIs</em></li>
+						<li><a href="http://html5-overview.net">HTML5</a> is a current example for a modern set of programmatic APIs</li>
+					</ul>
+					<li><q>APIs</q> nowadays often refer to <em>network APIs</em></li>
+					<ul>
+						<li>They are defined in terms of specific network abstractions</li>
+						<li><a href="http://www.programmableweb.com/">ProgrammableWeb</a> has a large collection of public network APIs</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="presentation-microservices">
 				<title>Microservices</title>
 				<ul>
