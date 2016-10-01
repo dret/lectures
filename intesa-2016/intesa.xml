@@ -952,6 +952,47 @@
 		<part id="intro">
 			<title>Introduction</title>
 		</part>
+		<part id="registries">
+			<title>Registries</title>
+			<slide id="evolving-value-sets">
+				<title>Evolving Value Sets</title>
+				<ul>
+					<li>Many business documents have evolving value sets</li>
+					<ul>
+						<li><em>Hard-coding</em> the value set is the simplest way</li>
+						<li>Every time the value set changes, the API changes</li>
+					</ul>
+					<li>Some of these value sets have utility across various services</li>
+					<ul>
+						<li><em>Values as a Service (VaaS)</em> is one possible way to look at this pattern</li>
+						<li>Decoupling value sets from APIs decreases dependencies across services</li>
+					</ul>
+					<li>Registries are a well-known pattern for API-minded organizations</li>
+					<ul>
+						<li><a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a> has ~2000 registries <a href="http://www.iana.org/protocols">managed by IANA</a></li>
+						<li><a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a> has no registry system but some specifications are creating their own</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="language-identification">
+				<title>Language Identification</title>
+				<ul>
+					<li>Language is a concept used across business documents</li>
+					<li>Internet/Web language identification relies on <em>language tags</em></li>
+					<ul>
+						<li><a href="http://tools.ietf.org/html/rfc5646">RFC 5646</a> defines the syntax of language tags: <code>en-US</code></li>
+					</ul>
+					<li>The <a href="http://www.loc.gov/standards/iso639-2/">language registry</a> is operated by ISO/LoC</li>
+					<ul>
+						<li>The list of allowed values is defined by the current registry contents</li>
+					</ul>
+					<li>The <a href="https://www.iso.org/obp/ui/#search">country registry</a> is operated by ISO</li>
+					<ul>
+						<li>The list of allowed values is defined by the current registry contents</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="...">
