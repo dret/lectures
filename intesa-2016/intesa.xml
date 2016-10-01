@@ -119,6 +119,31 @@
 					<li>Adapting the value chain needs <em>API landscapes that can adapt easily</em></li>
 				</ul>
 			</slide>
+			<slide id="systems-ecosystems">
+				<title>Coupling Matters</title>
+				<ul>
+					<li>Traditional IT approaches heavily favor <em>integration</em></li>
+					<ul>
+						<li>Integration aims at building one system that contains all essential parts</li>
+						<li>Integration provides optimization potential</li>
+						<li>Integration promises a destination instead of a journey</li>
+					</ul>
+					<li>Integration cost/benefit analysis depends heavily on how how change is required</li>
+					<ul>
+						<li>Integrated systems tend to win as long as the future is (roughly) as predicted</li>
+						<li>Integrated systems can be costly if adaptation needs requires big changes</li>
+					</ul>
+					<li><em>Ecosystems</em> trade flexibility over integration optimization</li>
+					<ul>
+						<li>Ecosystems tend to do worse as long as conditions remain mostly stable</li>
+						<li>Ecosystems tend to outperform/outlive integrated systems in light of bigger changes</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="integrated-bike">
+				<title>Integration Cost/Benefit</title>
+				<img title="Look 795 Aerolight" href="http://www.lookcycle.com/en/velo/795-aerolight/" src="look-795-aerolight.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 		</part>
 		<part id="overview">
 			<title>Overview</title>
