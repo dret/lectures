@@ -147,11 +147,27 @@
 		</part>
 		<part id="overview">
 			<title>Overview</title>
-			<slide>
-				<title></title>
+			<slide id="presentation-microservices">
+				<title>Microservices</title>
+			</slide>
+			<slide id="presentation-design">
+				<title>API Design</title>
+			</slide>
+			<slide id="presentation-management">
+				<title>API Management</title>
+			</slide>
+			<slide id="presentation-security">
+				<title>API Security</title>
+			</slide>
+			<slide id="presentation-evolution">
+				<title>API Evolution</title>
+			</slide>
+			<slide id="presentation-product-management">
+				<title>API Product Managemenent</title>
 			</slide>
 		</part>
 		<part id="conclusions">
+			<title>Conclusions</title>
 			<slide id="sponsor">
 				<title>Thanks to our Sponsor!</title>
 				<img src="ca-logo.png" href="http://www.ca.com/" title="API Academy is sponsored by CA Technologies" style="height : 65% ; margin : 4% 10% 4% 10% ; "/>
@@ -360,7 +376,7 @@
 		</slide>
 		<part id="design-issues">
 			<title>API Design Issues</title>
-			<slide id="api-design">
+			<slide id="general-design-issues">
 				<title>General API Design Issues</title>
 				<ul>
 					<li>APIs are the domain boundaries of teams and capabilities</li>
