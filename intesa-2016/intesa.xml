@@ -928,6 +928,12 @@
 		</slide>
 		<part id="intro">
 			<title>Introduction</title>
+			<slide id="security-matters">
+				<title>Security Matters</title>
+				<ul>
+					<li>Security is more than securing against external attackers</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="identification">
 			<title>Identification</title>
@@ -955,6 +961,19 @@
 		</part>
 		<part id="encryption">
 			<title>Encryption</title>
+		</part>
+		<part id="perimeters">
+			<title>Security Perimeters</title>
+			<slide id="apim-security">
+				<title>Internal/External APIs</title>
+				<img title="MS/API Landscape" src="apim-landscape.png" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="intranet-security">
+				<title>Intranet Security</title>
+			</slide>
+			<slide id="internet-security">
+				<title>Internet Security</title>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
