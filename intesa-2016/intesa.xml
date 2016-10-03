@@ -538,7 +538,7 @@
 						<li><em>Identifiers</em> robustly identify resources across all services</li>
 						<li><em>Links</em> guide interactions to possible following next steps</li>
 						<li><em>Link Templates</em> provide the equivalent of filling out forms</li>
-						<li><em>Linkbases</em> are a (weak) equivalent of traditional orchestration</li>
+						<li><em>Overlay services</em> are a (weak) equivalent of traditional orchestration</li>
 					</ul>
 					<li><em>Guidance</em> means just that: suggestions that clients might follow</li>
 					<ul>
@@ -1348,18 +1348,66 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>Five Traits of Successful API Strategies</title>
 			<slide id="api-first">
 				<title>API First</title>
+				<ul>
+					<li>APIs are the glue of digital transformation</li>
+					<li>APIs should be there before a specific channel uses them</li>
+					<li>If a channel needs a new product, it must use/create an API</li>
+					<li>APIs are the connective tissue of the value creation machine</li>
+				</ul>
 			</slide>
 			<slide id="speed">
 				<title>Speed</title>
+				<ul>
+					<li>Always design with speed and scalability in mind</li>
+					<li>Horizontal scaling is the easiest way to scale</li>
+					<li>MSA makes implementation changes easy</li>
+					<ul>
+						<li>This means that good designs can change implementations easily</li>
+						<li>It is much harder if the API design needs to change</li>
+					</ul>
+					<li>Use asynchronous writes, message queues, and eventual consistency</li>
+					<ul>
+						<li>Synchronous writes make it much harder to scale writing</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="hypermedia">
 				<title>Hypermedia</title>
+				<ul>
+					<li>Identifying meaningful resources provides shareable entry points</li>
+					<li>Hypermedia controls provide guidance through a web of resources</li>
+					<li>Clients have the freedom to pick the path for their application</li>
+					<li>Hypermedia works well within and across APIs</li>
+					<li>An ideal API landscape is as seamlessly navigable as the Web</li>
+				</ul>
 			</slide>
 			<slide id="stateless">
 				<title>Stateless</title>
+				<ul>
+					<li>Request/response interactions must be self-contained</li>
+					<li>Each workflow is either based on client or resource state</li>
+					<ul>
+						<li><em>Client state</em> is what on the Web often uses cookies</li>
+						<li><em>Resource state</em> creates persistent/shareable <q>sessions</q> as resources</li>
+						<li><em>Server state</em> kills scalability and should be avoided</li>
+					</ul>
+					<li>Statelessness allows easy horizontal scaling</li>
+				</ul>
 			</slide>
-			<slide id="no-design-waterfall">
+			<slide id="jobs-to-be-done">
 				<title>Jobs to be Done</title>
+				<ul>
+					<li>API design should be based on iterative processes</li>
+					<ul>
+						<li>Extensible API design allows version-less API extensions</li>
+						<li>Start small and then add more jobs as required</li>
+					</ul>
+					<li>Avoid too many assumptions during the design and instead ask for feedback</li>
+					<ul>
+						<li>Design speed and turnaround allow the API to evolve based on needs</li>
+						<li>Extensible design allows clients to only use those features that they need</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="registries">
@@ -1688,8 +1736,15 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
-			<slide id="...">
-				<title>...</title>
+			<slide id="product-focus">
+				<title>Manage API as products not projects</title>
+				<ul>
+					<li>Balancing speed and some coherence is a constant challenge</li>
+					<li>Monitor trends and make sure the strategy adapts</li>
+					<li>Provide help and guidance instead of rules and regulations</li>
+					<li>Provide tooling to help developers do the right thing</li>
+					<li>Instrument designs and run-times for data-driven a strategy</li>
+				</ul>
 			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
