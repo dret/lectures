@@ -1529,6 +1529,26 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="standards">
 			<title>Standards</title>
+			<slide id="snowflakes">
+				<title>Sunlight Melts Snowflakes</title>
+				<img title="Snowflakes" href="http://www.flickr.com/photos/amagill/4223790595" src="snowflake.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="ui-patterns">
+				<title>Uniform Interface Patterns</title>
+				<ul>
+					<li>Identify <q>design patterns</q> based on shared concepts</li>
+					<ul>
+						<li>Treating concepts as a <em>flat space</em> leaves out many details</li>
+						<li><q>Deeper models</q> can still be based on the <q>shared concept surface</q></li>
+					</ul>
+					<li>The uniform interface evolves and so should attempt to track it</li>
+					<ul>
+						<li>New <a href="https://github.com/dret/webconcepts/commits">Web Concept values</a> are defined/created constantly</li>
+						<li>New <a href="http://webconcepts.info/concepts">Web Concepts</a> appear less frequently</li>
+					</ul>
+					<li><q>Make any model <em>as shallow as possible</em>, model depth tightly couples and makes model matching and mapping much harder.</q></li>
+				</ul>
+			</slide>
 			<slide id="bigger-picture">
 				<title>Fit into the Bigger Picture</title>
 				<ul>
