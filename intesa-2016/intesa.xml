@@ -621,7 +621,7 @@
 	</presentation>
 	<presentation id="api-management">
 		<title>API Management</title>
-		<toc class="abstract">API management needs to work both on a technical as well as on an organizational/cultural level. For the technical level, The most challenging factor in large API landscapes are the number of services, the rate of change, and the diversity of API designs in that landscape. API management needs to be able to deal with these factors in ways which do not inhibit the organic growth of the API ecosystem, while still maintaining a level of oversight and monitoring that make it possible to support data-driven decision-making.</toc>
+		<toc class="abstract">API management needs to work both on a <em>technical</em> as well as on an <em>organizational/cultural</em> level. For the technical level, The most challenging factor in large API landscapes are the number of services, the rate of change, and the diversity of API designs in that landscape. API management needs to be able to deal with these factors in ways which do not inhibit the organic growth of the API ecosystem, while still maintaining a level of oversight and monitoring that make it possible to support data-driven decision-making.</toc>
 		<toc class="resources"></toc>
 		<slide id="summary">
 			<title>Summary</title>
@@ -920,7 +920,7 @@
 	</presentation>
 	<presentation id="api-security">
 		<title>API Security</title>
-		<toc class="abstract">...</toc>
+		<toc class="abstract">API security is not fundamentally different from general business security concerns: It is about how to balance the ease of access and use, and the risk of attacks and accidental misuse. Treating APIs strategically means to have policies and tooling in place that can be places around individual APIs, or some API perimeters. These policies and tooling will have to support the traditional security functions of identification, authentication, authorization, and encryption.</toc>
 		<toc class="resources"></toc>
 		<slide id="summary">
 			<title>Summary</title>
@@ -930,6 +930,12 @@
 			<title>Introduction</title>
 			<slide id="security-matters">
 				<title>Security Matters</title>
+				<ul>
+					<li>Security is more than securing against external attackers</li>
+				</ul>
+			</slide>
+			<slide id="internal-attackers">
+				<title>Internal <q>Attackers</q></title>
 				<ul>
 					<li>Security is more than securing against external attackers</li>
 				</ul>
@@ -993,7 +999,7 @@
 	</presentation>
 	<presentation id="api-evolution">
 		<title>API Evolution</title>
-		<toc class="abstract">...</toc>
+		<toc class="abstract">API landscapes are constantly evolving: New APIs are added, existing APIs change, and established APIs are deprecated and eventually retired. API Evolution requires to have a set of practices that support all these activities. These practices should be easy to follow, should be visible through the APIs themselves, and thus allow the landscape to make its own evolution visible and manageable.</toc>
 		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title="Erik Wilde, 'Patterns for Robust Extensibility'">Robust Extensibility</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
@@ -1001,6 +1007,25 @@
 		</slide>
 		<part id="intro">
 			<title>Introduction</title>
+			<slide id="embracing-change">
+				<title>Embracing Change</title>
+				<ul>
+					<li>APIs change</li>
+					<ul>
+						<li></li>
+					</ul>
+					<li>API landscapes change</li>
+					<ul>
+						<li></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="evolving-landscapes">
+			<title>Evolving API Landscapes</title>
+		</part>
+		<part id="api-evolution">
+			<title>Evolving APIs</title>
 		</part>
 		<part id="registries">
 			<title>Registries</title>
@@ -1043,6 +1068,21 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="sunsetting">
+			<title>Sunsetting</title>
+			<slide id="apis-disappear">
+				<title>APIs do not Live Forever</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
+			<slide id="http-sunset">
+				<title>Announcing API EOL</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="...">
@@ -1061,7 +1101,7 @@
 	</presentation>
 	<presentation id="api-product-management">
 		<title>API Product Management</title>
-		<toc class="abstract">...</toc>
+		<toc class="abstract">Looking at an <q>API First</q> approach, API product management is not that much different from product management in general. Starting from this assumption, it needs to focus on the traditional tasks of planning, forecasting, and production, and marketing of a product. With a focus on microservices, these tasks are more easily to accomplish than with a more monolithic approach, because MSA provides more freedom to make these decisions on a per-product basis.</toc>
 		<toc class="resources"><a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://webconcepts.info/" title="Collection of Web Concepts">Web Concepts</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
@@ -1074,6 +1114,24 @@
 			<title>Products not Projects</title>
 			<slide id="msa-products">
 				<title>MSA Focus: Products</title>
+			</slide>
+		</part>
+		<part id="product-management">
+			<title>Products not Projects</title>
+			<slide id="inbound-outbound">
+				<title>Inbound and Outbound</title>
+			</slide>
+			<slide id="pm-planning">
+				<title>Planning</title>
+			</slide>
+			<slide id="pm-forecasting">
+				<title>Forecasting</title>
+			</slide>
+			<slide id="pm-production">
+				<title>Production</title>
+			</slide>
+			<slide id="pm-marketing">
+				<title>Marketing</title>
 			</slide>
 		</part>
 		<part id="standards">
