@@ -436,8 +436,8 @@
 					<li>APIs are the domain boundaries of teams and capabilities</li>
 					<li>Keeping the boundaries <em>clear</em> and <em>clean</em> is essential for microservices</li>
 					<li><em>Developer Experience (DX)</em> helps to manage and maintain the boundaries</li>
-					<li>Managing <em>API Design</em> and <em>Documentation</em> is an essential part of any <em>API Strategy</em></li>
-					<li><em>API Design Quality</em> directly impacts the success of any <em>API Strategy</em></li>
+					<li>Managing <em>API Design</em> and <em>Documentation</em> is an essential part of any API Strategy</li>
+					<li><em>API Design Quality</em> directly impacts the success of any API Strategy</li>
 				</ul>
 			</slide>
 			<slide id="ms-design">
@@ -445,11 +445,11 @@
 				<ul>
 					<li><em>Diversity:</em> Microservice teams are free to design their APIs</li>
 					<ul>
-						<li>Focus on managing diversity instead of defining standards</li>
+						<li>Focus on <em>managing diversity</em> instead of defining standards</li>
 					</ul>
 					<li><em>Limited Scope:</em> Microservices have a limited and typically small scope</li>
 					<ul>
-						<li>Minimize friction when combining APIs and consider the <q>landscape DX</q></li>
+						<li><em>Minimize friction</em> when combining APIs and consider the <q>landscape DX</q></li>
 					</ul>
 					<li><em>Speed:</em> Services are supposed to change and get added/deleted often</li>
 					<ul>
@@ -467,6 +467,25 @@
 			<slide id="castle">
 				<title>The Castle</title>
 				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="bureaucracy">
+				<title>Bureaucracy</title>
+				<ul>
+					<li>Bureaucracy evolved for a reason</li>
+					<ul>
+						<li>Clearly defined model of input and output of processing units</li>
+						<li>Implementation issues of the processing units are hidden</li>
+						<li>Processing units can scale because of encapsulation and statelessness</li>
+						<li>Processing steps can be easily pipelined while keeping steps separate</li>
+					</ul>
+					<li>Well-designed service landscapes have the exact same properties</li>
+					<ul>
+						<li>Messaging models instead of paper forms</li>
+						<li>Message models are as shallow as possible</li>
+						<li>Stateless interactions allow for easy load balancing</li>
+						<li>Resource identifiers and hypermedia allow seamless workflows</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="api-focus">
 				<title>APIs are Front and Center</title>
