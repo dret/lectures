@@ -1087,7 +1087,10 @@
 			<slide id="internal-attackers">
 				<title>Internal <q>Attackers</q></title>
 				<ul>
-					<li>Security is more than securing against external attackers</li>
+					<li>Service interdependencies make problems harder to locate</li>
+					<li>Misbehaving applications can become <q>internal DoS attackers</q></li>
+					<li>Monitoring and situational awareness are essential</li>
+					<li>Security is just another facet in MSA's <em>automation focus</em></li>
 				</ul>
 			</slide>
 		</part>
@@ -1116,12 +1119,6 @@
 					</ol>
 				</ul>
 			</slide>
-			<slide id="user-identification">
-				<title>User Identification</title>
-			</slide>
-			<slide id="client-identification">
-				<title>Client Identification</title>
-			</slide>
 		</part>
 		<part id="authentication">
 			<title>Authentication</title>
@@ -1144,51 +1141,48 @@
 					<li>Risk and potential damage should justify authentication methods</li>
 				</ul>
 			</slide>
-			<part id="http-authentication">
+			<slide>
+				<title>HTTP Access Control</title>
+				<ul>
+					<li>HTTP servers can <a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error">deny access</a> through access control</li>
+					<ul>
+						<li><code>401 Unauthorized</code> means the resource is access controlled</li>
+						<li><code>403 Forbidden</code> means the resource is inaccessible</li>
+						<li><code>405 Method Not Allowed</code> signals a request using the wrong request method</li>
+					</ul>
+					<li>Two different approaches to unauthorized access are possible</li>
+					<ul>
+						<li>repeat the HTTP request with the proper authentication credentials</li>
+						<li>redirect to a <em>authentication flow</em> and establish an authenticated session</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
 				<title>HTTP Authentication</title>
-				<slide>
-					<title>HTTP Access Control</title>
+				<img style="width : 90% ; margin : 2% ; " src="authentication-http.gif" title="HTTP Authentication" href="http://java.sun.com/j2ee/1.4/docs/tutorial/doc/Security5.html"/>
+			</slide>
+			<slide id="http-basic">
+				<title>Basic HTTP Authentication</title>
+				<ul>
+					<li>Authentication is based on <em>authentication realms</em></li>
 					<ul>
-						<li>HTTP servers can <a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error">deny access</a> through access control</li>
-						<ul>
-							<li><code>401 Unauthorized</code> means the resource is access controlled</li>
-							<li><code>403 Forbidden</code> means the resource is inaccessible</li>
-							<li><code>405 Method Not Allowed</code> signals a request using the wrong request method</li>
-						</ul>
-						<li>Two different approaches to unauthorized access are possible</li>
-						<ul>
-							<li>repeat the HTTP request with the proper authentication credentials</li>
-							<li>redirect to a <em>authentication flow</em> and establish an authenticated session</li>
-						</ul>
+						<li>a set of resources for which the authentication is required</li>
+						<li>an opaque name which is used to signal which login is required</li>
+						<li>username/password often is specific for a given realm</li>
 					</ul>
-				</slide>
-				<slide>
-					<title>HTTP Authentication</title>
-					<img style="width : 90% ; margin : 2% ; " src="authentication-http.gif" title="HTTP Authentication" href="http://java.sun.com/j2ee/1.4/docs/tutorial/doc/Security5.html"/>
-				</slide>
-				<slide id="http-basic">
-					<title>Basic HTTP Authentication</title>
+					<li>Users supply username and password through the client</li>
 					<ul>
-						<li>Authentication is based on <em>authentication realms</em></li>
-						<ul>
-							<li>a set of resources for which the authentication is required</li>
-							<li>an opaque name which is used to signal which login is required</li>
-							<li>username/password often is specific for a given realm</li>
-						</ul>
-						<li>Users supply username and password through the client</li>
-						<ul>
-							<li>sent as <a href="http://en.wikipedia.org/wiki/Base64">Base64</a> encoded <q><code>username:password</code></q> string</li>
-							<li>username and password are <a href="http://www.google.com/search?hl=en&amp;q=base64+decoder"><em>not</em> transmitted securely</a></li>
-							<li>basic authentication should <em>always</em> use <link href="encryption">HTTPS</link></li>
-						</ul>
-						<li>Authorization is handled on the server side</li>
-						<pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">HTTP/1.0 401 Unauthorized
+						<li>sent as <a href="http://en.wikipedia.org/wiki/Base64">Base64</a> encoded <q><code>username:password</code></q> string</li>
+						<li>username and password are <a href="http://www.google.com/search?hl=en&amp;q=base64+decoder"><em>not</em> transmitted securely</a></li>
+						<li>basic authentication should <em>always</em> use <link href="encryption">HTTPS</link></li>
+					</ul>
+					<li>Authorization is handled on the server side</li>
+					<pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">HTTP/1.0 401 Unauthorized
 WWW-Authenticate: Basic realm="SokEvo"</pre>
-						<pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">GET /private/index.html HTTP/1.0
+					<pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">GET /private/index.html HTTP/1.0
 Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
-					</ul>
-				</slide>
-			</part>
+				</ul>
+			</slide>
 		</part>
 		<part id="authorization">
 			<title>Authorization</title>
@@ -1199,15 +1193,15 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<ul>
 						<li><link href="identification"/> is necessary to identify the initiator</li>
 						<li><link href="authentication"/> is necessary to verify the initiator's identity</li>
-						<li>if the initiator is authorized, the operation can be performed</li>
+						<li>If the initiator is authorized, the operation can be performed</li>
 					</ul>
 					<li>Web pages often are <em>public</em> or <em>restricted access</em></li>
 					<ul>
-						<li>public web pages do not require any identification (and thus authentication)</li>
-						<li>restricted access Web pages can be group pages (internal company pages)</li>
-						<li>personal access is another popular scenario (email, facebook, online banking)</li>
+						<li>Public web pages do not require any identification (and thus authentication)</li>
+						<li>Restricted access Web pages can be group pages (internal company pages)</li>
+						<li>Personal access is another popular scenario (email, facebook, online banking)</li>
 					</ul>
-					<li>HTTP servers have well-defined ways of <link href="http-authentication">performing authentication</link></li>
+					<li>HTTP servers have well-defined ways of <link href="authentication">performing authentication</link></li>
 				</ul>
 			</slide>
 		</part>
@@ -1218,20 +1212,20 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<ul>
 					<li><em>Public-Key cryptography</em> is computationally expensive</li>
 					<ul>
-						<li>it is possible to encrypt all traffic using asymmetric key pairs</li>
-						<li>this generates considerably more load on the server side</li>
+						<li>It is possible to encrypt all traffic using asymmetric key pairs</li>
+						<li>This generates considerably more load on the server side</li>
 					</ul>
 					<li>Combining <em>public-key</em> and <em>secret-key</em> cryptography</li>
 					<ol>
-						<li>check the public key for authenticity (using a <em>certificate</em>)</li>
-						<li>generate a key for a secret-key encryption scheme</li>
-						<li>use the public key to securely transmit the secret key</li>
-						<li>use the secret key for securely transmitting the payload</li>
+						<li>Check the public key for authenticity (using a <em>certificate</em>)</li>
+						<li>Generate a key for a secret-key encryption scheme</li>
+						<li>Use the public key to securely transmit the secret key</li>
+						<li>Use the secret key for securely transmitting the payload</li>
 					</ol>
 					<li>Combines the advantages of both methods</li>
 					<ul>
-						<li>the lower complexity of secret-key algorithms</li>
-						<li>the ability of public-key algorithms to work without a secure channel</li>
+						<li>The lower complexity of secret-key algorithms</li>
+						<li>The ability of public-key algorithms to work without a secure channel</li>
 					</ul>
 				</ul>
 			</slide>
@@ -1249,7 +1243,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>Lower-level methods may also provide encryption</li>
 					<ul>
 						<li><em>Virtual Private Networks (VPN)</em> provide IP-based encryption</li>
-						<li><em>WEP</em> and <em>WPA</em> provide network interface encryption</li>
+						<li><em>IPsec</em> provides network interface encryption</li>
 					</ul>
 				</ul>
 			</slide>
@@ -1266,15 +1260,35 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide id="intranet-security">
 				<title>Intranet Security</title>
+				<ul>
+					<li>Internal API use may allow a less strict security policy</li>
+					<li>Misbehaving applications still pose a security risk</li>
+					<li>Behavioral security monitoring makes sense internally</li>
+					<ul>
+						<li>A component that behaves like an attacker effectively is an attacker</li>
+					</ul>
+					<li>Make components identifiable by always requiring access tokens</li>
+				</ul>
 			</slide>
 			<slide id="internet-security">
 				<title>Internet Security</title>
+				<ul>
+					<li>External access to APIs calls for a more strict security policy</li>
+					<li>Switching internal/external should be just a policy switch</li>
+					<li>Today's partner can be tomorrow's internal component and vice versa</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
-			<slide id="...">
-				<title>...</title>
+			<slide id="security-automation">
+				<title>Automate Security</title>
+				<ul>
+					<li>Treat security as an integral aspect of the architecture</li>
+					<li>Focus on security perimeters and associated security policies</li>
+					<li>Automate security infrastructure such as key management</li>
+					<li></li>
+				</ul>
 			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
