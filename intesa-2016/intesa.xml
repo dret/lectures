@@ -276,11 +276,11 @@
 			</slide>
 			<slide id="definition-goals">
 				<title>One Definition: Goals</title>
-				<p class="abstract">An architectural style for building solutions as network-based systems of services modularized by domains in order to improve the solutions’ evolvability, deployability, composability, scalability, resiliency and replaceability.</p>
+				<blockquote>An architectural style for building solutions as network-based systems of services modularized by domains in order to improve the solutions’ evolvability, deployability, composability, scalability, resiliency and replaceability.</blockquote>
 			</slide>
 			<slide id="definition-methods">
 				<title>Another Definition: Methods</title>
-				<p class="abstract">A <em>microservice</em> is an independently deployable component of bounded scope that supports interoperability through message-based communication. <em>Microservice architecture</em> is a style of engineering highly automated, evolvable software systems made up of capability-aligned microservices.</p>
+				<blockquote>A <em>microservice</em> is an independently deployable component of bounded scope that supports interoperability through message-based communication. <em>Microservice architecture</em> is a style of engineering highly automated, evolvable software systems made up of capability-aligned microservices.</blockquote>
 			</slide>
 		</part>
 		<part id="big-picture">
@@ -1316,17 +1316,26 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<ul>
 					<li>APIs change</li>
 					<ul>
-						<li></li>
+						<li>API providers get requests for adding functionality</li>
+						<li>The domain of the API evolves and the API has to change accordingly</li>
 					</ul>
 					<li>API landscapes change</li>
 					<ul>
-						<li></li>
+						<li>New APIs enter the landscape as teams expose new products as APIs</li>
+						<li>APIs may get replaced in incompatible ways requiring API users to follow suit</li>
+						<li>APis may get deprecated and retired as products reach their end of life</li>
 					</ul>
 				</ul>
 			</slide>
-		</part>
-		<part id="evolving-landscapes">
-			<title>Evolving API Landscapes</title>
+			<slide id="change-management">
+				<title>Managing Constant Change</title>
+				<ul>
+					<li>Pick tools and make sure to treat them as tools</li>
+					<ul>
+						<li>.....</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="api-evolution">
 			<title>Evolving APIs</title>
