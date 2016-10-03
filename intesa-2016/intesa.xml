@@ -1323,22 +1323,26 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<ul>
 						<li>New APIs enter the landscape as teams expose new products as APIs</li>
 						<li>APIs may get replaced in incompatible ways requiring API users to follow suit</li>
-						<li>APis may get deprecated and retired as products reach their end of life</li>
+						<li>APIs may get deprecated and retired as products reach their end-of-life</li>
 					</ul>
 				</ul>
 			</slide>
 			<slide id="change-management">
 				<title>Managing Constant Change</title>
 				<ul>
+					<li>As the landscape changes and evolves, so will your tooling</li>
 					<li>Pick tools and make sure to treat them as tools</li>
 					<ul>
-						<li>.....</li>
+						<li>Tools are used to serve some purpose and should be treated as disposable</li>
+						<li>Having the freedom to switch tooling can be very valuable</li>
+					</ul>
+					<li>Decouple signals and tools</li>
+					<ul>
+						<li><em>Signals</em> should be designed into services and available to pick up</li>
+						<li><em>Tools</em> pick up certain signals and extract useful/actionable information</li>
 					</ul>
 				</ul>
 			</slide>
-		</part>
-		<part id="api-evolution">
-			<title>Evolving APIs</title>
 		</part>
 		<part id="registries">
 			<title>Registries</title>
@@ -1386,13 +1390,31 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<slide id="apis-disappear">
 				<title>APIs do not Live Forever</title>
 				<ul>
-					<li></li>
+					<li>APIs are products that (often) have a finite life</li>
+					<li>Managing APIs also means managing their end-of-life</li>
+					<li>API management often means scheduling a service's end-of-life</li>
+					<ul>
+						<li>Announcing scheduled decommissioning makes operational plans explicit</li>
+					</ul>
+					<li>Combined with dependency tracking this can be a useful tool</li>
+					<ul>
+						<li>Create alerts for any service that depends on services scheduled for end-of-life</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="http-sunset">
-				<title>Announcing API EOL</title>
+				<title>Announcing API End-of-Life</title>
 				<ul>
-					<li></li>
+					<li>HTTP traffic contains metadata about the payload and the server</li>
+					<li><a href="http://tools.ietf.org/html/draft-wilde-sunset-header">HTTP <code>Sunset</code></a> allows services to publish their end-of-like</li>
+					<ul>
+						<li><code>Sunset: Sat, 31 Dec 2016 23:59:59 GMT</code></li>
+					</ul>
+					<li>Pick up and use sunset information in the monitoring infrastructure</li>
+					<ul>
+						<li>As sunset time gets closer, alert managers that a service reaches end-of-life</li>
+						<li>Track dependencies as implicit sunsets for depending services</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
@@ -1451,6 +1473,13 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>Introduction</title>
 			<slide id="product-focus">
 				<title>Products not Projects</title>
+				<ul>
+					<li>MSA puts a strong focus on products</li>
+					<ul>
+						<li><em>API Projects</em> end with handing over responsibility</li>
+						<li><em>API Products</em> means ownership and ongoing responsibility</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="culture">
@@ -1620,7 +1649,21 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 		</part>
 		<part id="data-driven">
-			<title>Measure Everything</title>
+			<title>Data Driven API Management</title>
+			<slide id="measure-everything">
+				<title>Measure Everything</title>
+				<ul>
+					<li>MSA is a pattern to deal with a new scale of API landscapes</li>
+					<li>API landscapes get bigger and they get more dynamic</li>
+					<li>Making decisions in this new environment should be data-driven</li>
+					<li>Automate and monitor to gather as much data as possible</li>
+					<ul>
+						<li><em>Design-time instrumentation</em> gathers data on static aspects of service design</li>
+						<li><em>Run-time instrumentation</em> gathers data on dynamic behavior of services</li>
+					</ul>
+					<li></li>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
