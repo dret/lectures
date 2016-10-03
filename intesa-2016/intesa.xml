@@ -1661,7 +1661,10 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 						<li><em>Design-time instrumentation</em> gathers data on static aspects of service design</li>
 						<li><em>Run-time instrumentation</em> gathers data on dynamic behavior of services</li>
 					</ul>
-					<li></li>
+					<li>Decouple signals, harvesting/collection, and analysis and decision-making</li>
+					<ul>
+						<li>Treat API landscape instrumentation as one strategic focus</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
