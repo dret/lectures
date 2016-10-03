@@ -548,6 +548,199 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="rest">
+			<title>Representational State Transfer (REST)</title>
+			<slide id="what-is-rest">
+				<title>What is REST?</title>
+				<ul>
+					<li>Defining <em>Representational State Transfer</em>: 3 popular definitions</li>
+				</ul>
+				<ol>
+					<li>An <em>architectural style</em> for building loosely coupled systems</li>
+					<ul>
+						<li>defined by a set of general <em>constraints</em> (<em>principles</em>)</li>
+						<li>the Web (URI/HTTP/HTML/XML) is an <em>instance</em> of this style</li>
+					</ul>
+					<li><em>The Web used correctly</em> (i.e., not using the Web as transport)</li>
+					<ul>
+						<li>HTTP is built according to RESTful principles</li>
+						<li>services are built on top of Web standards without misusing them</li>
+						<li>most importantly, HTTP is an <em>application protocol</em> (not a <em>transport protocol</em>)</li>
+					</ul>
+					<li>Anything that <em>uses HTTP and XML</em> (XML without SOAP)</li>
+					<ul>
+						<li>XML-RPC was the first approach for this</li>
+						<li>violates REST because there is no uniform interface</li>
+					</ul>
+				</ol>
+			</slide>
+			<slide id="architectural-style">
+				<title>Architectural Styles</title>
+				<ul>
+					<li>Architectural Style vs. Architecture</li>
+					<ul>
+						<li>Architectural Style: General principles informing the creation of an architecture</li>
+						<li>Architecture: Designing a solution to a problem according to given constraints</li>
+						<li>Architectural styles <em>inform</em> and <em>guide</em> the creation of architectures</li>
+					</ul>
+				</ul>
+				<table width="95%">
+					<tr>
+						<td>
+							<img style="width : 90% ; margin : 2% ; " src="louvre.jpg" title="Louvre Interior"/>
+							<ul>
+								<li>Architecture: <a href="http://en.wikipedia.org/wiki/Louvre">Louvre</a></li>
+								<li>Architectural Style: <a href="http://en.wikipedia.org/wiki/Baroque_architecture">Baroque</a></li>
+							</ul>
+						</td>
+						<td>
+							<img style="width : 90% ; margin : 2% ; " src="savoye.jpg" title="Villa Savoye Interior"/>
+							<ul>
+								<li>Architecture: <a href="http://en.wikipedia.org/wiki/Villa_Savoye">Villa Savoye</a></li>
+								<li>Architectural Style: <a href="http://en.wikipedia.org/wiki/International_Style_(architecture)">International Style</a></li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="rest-not-architecture">
+				<title>REST is not an Architecture</title>
+				<ul>
+					<li>REST is an architectural style</li>
+					<ul>
+						<li>distilled from the Web <em>a posteriori</em></li>
+						<li>some of the Web's standards and practices are not perfectly RESTful</li>
+					</ul>
+					<li>The Web is an information system following REST</li>
+					<li>It is possible to design other RESTful information systems</li>
+					<ul>
+						<li>different uniform interfaces (not using HTTP's methods)</li>
+						<li>different representations (not using HTML or XML)</li>
+						<li>different identification (not using URIs)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="rest-style">
+				<title>The REST Architectural Style</title>
+				<ul>
+					<li>A set of constraints that inform an architecture</li>
+				</ul>
+				<ol>
+					<li><link href="identification-constraint"/></li>
+					<li><link href="interface-constraint"/></li>
+					<li><link href="self-describing-constraint"/></li>
+					<li><link href="hypermedia-constraint"/></li>
+					<li><link href="stateless-constraint"/></li>
+				</ol>
+				<ul>
+					<li>Claims: scalability, mashup-ability, usability, accessibility</li>
+				</ul>
+			</slide>
+			<slide id="identification-constraint">
+				<title>Resource Identification</title>
+				<ul>
+					<li>Name everything that you want to talk about</li>
+					<li><q>Thing</q> in this case should refer to <em>anything</em></li>
+					<ul>
+						<li><em>products</em> in an online shop</li>
+						<li><em>categories</em> that are used for grouping products</li>
+						<li><em>customers</em> that are expected to buy products</li>
+						<li><em>shopping carts</em> where customers collect products</li>
+					</ul>
+					<li><em>Application state</em> also is represented as a resource</li>
+					<ul>
+						<li><em>next</em> links on multi-page submission processes</li>
+						<li><em>paged results</em> with URIs identifying following pages</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="interface-constraint">
+				<title>Uniform Interface</title>
+				<ul>
+					<li>The same small set of operations applies to <link href="identification-constraint">everything</link></li>
+					<li>A small set of <em>verbs</em> applied to a large set of <em>nouns</em></li>
+					<ul>
+						<li>verbs are universal and not invented on a per-application base</li>
+						<li>if many applications need new verbs, the uniform interface can be extended</li>
+						<li>natural language works in the same way (new verbs rarely enter language)</li>
+					</ul>
+					<li>Identify operations that are candidates for optimization</li>
+					<ul>
+						<li><http>GET</http> and <http>HEAD</http> are <em>safe operations</em></li>
+						<li><http>PUT</http> and <http>DELETE</http> are <em>idempotent operations</em></li>
+						<li><http>POST</http> is the catch-all and can have side-effects</li>
+					</ul>
+					<li>Build functionality based on useful properties of these operations</li>
+				</ul>
+			</slide>
+			<slide id="self-describing-constraint">
+				<title>Self-Describing Messages</title>
+				<ul>
+					<li>Resources are abstract entities (they cannot be used <em>per se</em>)</li>
+					<ul>
+						<li><link href="identification-constraint"/> guarantees that they are clearly identified</li>
+						<li>Resources are accessed through a <link href="interface-constraint"/></li>
+					</ul>
+					<li>Resources are accessed using <em>resource representations</em></li>
+					<ul>
+						<li>Resource representations are sufficient to represent a resource</li>
+						<li>It is communicated which kind of representation is used</li>
+						<li>Representation formats can be negotiated between peers</li>
+					</ul>
+					<li>Resource representations can be based on different constraints</li>
+					<ul>
+						<li>XML and JSON can represent the same model for different users</li>
+						<li>Whatever the representation is, it must <link href="hypermedia-constraint"> support links</link></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="hypermedia-constraint">
+				<title>Hypermedia Driving Application State</title>
+				<ul>
+					<li><link href="self-describing-constraint">Resource representations</link> contain links to <link href="identification-constraint">identified resources</link></li>
+					<li>Resources and state can be used by navigating links</li>
+					<ul>
+						<li>Links make interconnected resources navigable</li>
+						<li>Without navigation, identifying new resources is service-specific</li>
+					</ul>
+					<li>RESTful applications <em>navigate</em> instead of <em>calling</em></li>
+					<ul>
+						<li><link href="self-describing-constraint">representations</link> contain information about possible traversals</li>
+						<li>applications navigate to resources using link semantics</li>
+						<li>Navigation can be delegated since all links use <link href="identification-constraint">identifiers</link></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="stateless-constraint">
+				<title>Stateless Interactions</title>
+				<ul>
+					<li>This constraint does not say <q>Stateless Applications</q>!</li>
+					<ul>
+						<li>For many RESTful applications, state is an essential part</li>
+						<li>The idea of REST is to avoid long-lasting transactions <em>in applications</em></li>
+					</ul>
+					<li>Statelessness means to move state to clients or resources</li>
+					<ul>
+						<li>The most important consequence: avoid state in server-side applications</li>
+					</ul>
+					<li><em>Resource state</em> is managed on the server</li>
+					<ul>
+						<li>It is the same for every client working with the service</li>
+						<li>When a client changes resource state other clients see this change as well</li>
+					</ul>
+					<li><em>Client state</em> is managed on the client</li>
+					<ul>
+						<li>It is specific for a client and thus has to be maintained by each client</li>
+						<li>It may affect <em>access</em> to server resources, but not the resources themselves</li>
+					</ul>
+					<li><em>Security issues</em> usually are important with client state</li>
+					<ul>
+						<li>Clients can (try to) cheat by lying about their state</li>
+						<li>Keeping client state on the server is expensive (but may be worth the price)</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="tooling">
