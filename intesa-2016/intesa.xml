@@ -1075,6 +1075,13 @@
 				<title>Security Matters</title>
 				<ul>
 					<li>Security is more than securing against external attackers</li>
+					<li>Security generally aims at identifying and mitigating risks</li>
+					<li>APIs add security surfaces that don't exist in integrated monoliths</li>
+					<ul>
+						<li>Balancing API benefits and risks requires a lot of context</li>
+						<li>Microservices with their API focus make this problem harder</li>
+					</ul>
+					<li>Security needs a lot of real-time data to be effective</li>
 				</ul>
 			</slide>
 			<slide id="internal-attackers">
