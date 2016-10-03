@@ -943,8 +943,28 @@
 		</part>
 		<part id="identification">
 			<title>Identification</title>
-			<slide id="identification-who">
-				<title>Who?</title>
+			<slide id="identification-definition">
+				<title>Identification</title>
+				<ul>
+					<li><em>Identity</em> is required for any non-anonymous communications</li>
+					<ul>
+						<li><em>groups</em> can have an identity (facebook members see more than non-members)</li>
+						<li><em>pseudonyms</em> are <q>hidden identities</q> (the <q>real identity</q> is not visible)</li>
+						<li><em>personal identity</em> should be tied to a person itself</li>
+					</ul>
+					<li><em>Proof of Identity</em> is important for any privileged operation</li>
+					<ul>
+						<li><em>signatures</em> and <em>seals</em> are traditional ways</li>
+						<li>traditional ways are mostly protected by law (but not really safe)</li>
+						<li>more modern ways often include technical methods for <link href="authentication"/></li>
+					</ul>
+					<li>Client identity on the Web can be bound in three ways:</li>
+					<ol>
+						<li>Computer (most of the time <q>identified</q> by an IP address)</li>
+						<li>Browser (in the form of a stored <em>cookie</em>)</li>
+						<li>User (identified through some <link href="authentication">authentication method</link>)</li>
+					</ol>
+				</ul>
 			</slide>
 			<slide id="user-identification">
 				<title>User Identification</title>
@@ -955,18 +975,138 @@
 		</part>
 		<part id="authentication">
 			<title>Authentication</title>
-			<slide id="authentication-really">
-				<title>Really?</title>
+			<slide id="authentication-definition">
+				<title>Authentication</title>
+				<ul>
+					<li><em>Authentication</em> is the process of verifying an identity</li>
+					<ul>
+						<li>the weakest form of authentication is simply trust</li>
+						<li>legal consequences can make it more risky to falsify authentication</li>
+						<li>technical measures should make it hard to impossible to falsify authentication</li>
+					</ul>
+					<li>Authentication on the Web comes in many different flavors</li>
+					<ul>
+						<li>implicitly by accessing a server from some IP address range</li>
+						<li>presenting a <em>cookie</em> from a previous formal authentication</li>
+						<li>presenting a password as a proof of identity</li>
+						<li>proving that you are owning additional authentication hardware (often <a href="http://en.wikipedia.org/wiki/Personal_identification_number">PIN</a>-enabled)</li>
+					</ul>
+					<li>Risk and potential damage should justify authentication methods</li>
+				</ul>
 			</slide>
+			<part id="http-authentication">
+				<title>HTTP Authentication</title>
+				<slide>
+					<title>HTTP Access Control</title>
+					<ul>
+						<li>HTTP servers can <a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error">deny access</a> through access control</li>
+						<ul>
+							<li><code>401 Unauthorized</code> means the resource is access controlled</li>
+							<li><code>403 Forbidden</code> means the resource is inaccessible</li>
+							<li><code>405 Method Not Allowed</code> signals a request using the wrong request method</li>
+						</ul>
+						<li>Two different approaches to unauthorized access are possible</li>
+						<ul>
+							<li>repeat the HTTP request with the proper authentication credentials</li>
+							<li>redirect to a <em>authentication flow</em> and establish an authenticated session</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>HTTP Authentication</title>
+					<img style="width : 90% ; margin : 2% ; " src="authentication-http.gif" title="HTTP Authentication" href="http://java.sun.com/j2ee/1.4/docs/tutorial/doc/Security5.html"/>
+				</slide>
+				<slide id="http-basic">
+					<title>Basic HTTP Authentication</title>
+					<ul>
+						<li>Authentication is based on <em>authentication realms</em></li>
+						<ul>
+							<li>a set of resources for which the authentication is required</li>
+							<li>an opaque name which is used to signal which login is required</li>
+							<li>username/password often is specific for a given realm</li>
+						</ul>
+						<li>Users supply username and password through the client</li>
+						<ul>
+							<li>sent as <a href="http://en.wikipedia.org/wiki/Base64">Base64</a> encoded <q><code>username:password</code></q> string</li>
+							<li>username and password are <a href="http://www.google.com/search?hl=en&amp;q=base64+decoder"><em>not</em> transmitted securely</a></li>
+							<li>basic authentication should <em>always</em> use <link href="encryption">HTTPS</link></li>
+						</ul>
+						<li>Authorization is handled on the server side</li>
+						<pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">HTTP/1.0 401 Unauthorized
+WWW-Authenticate: Basic realm="SokEvo"</pre>
+						<pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">GET /private/index.html HTTP/1.0
+Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
+					</ul>
+				</slide>
+			</part>
 		</part>
 		<part id="authorization">
 			<title>Authorization</title>
-			<slide id="authorization-what">
-				<title>What?</title>
+			<slide id="authorization-definition">
+				<title>Authorization</title>
+				<ul>
+					<li><em>Authorization</em> is the question of allowing operations</li>
+					<ul>
+						<li><link href="identification"/> is necessary to identify the initiator</li>
+						<li><link href="authentication"/> is necessary to verify the initiator's identity</li>
+						<li>if the initiator is authorized, the operation can be performed</li>
+					</ul>
+					<li>Web pages often are <em>public</em> or <em>restricted access</em></li>
+					<ul>
+						<li>public web pages do not require any identification (and thus authentication)</li>
+						<li>restricted access Web pages can be group pages (internal company pages)</li>
+						<li>personal access is another popular scenario (email, facebook, online banking)</li>
+					</ul>
+					<li>HTTP servers have well-defined ways of <link href="http-authentication">performing authentication</link></li>
+				</ul>
 			</slide>
 		</part>
 		<part id="encryption">
 			<title>Encryption</title>
+			<slide>
+				<title>Secure Communications</title>
+				<ul>
+					<li><em>Public-Key cryptography</em> is computationally expensive</li>
+					<ul>
+						<li>it is possible to encrypt all traffic using asymmetric key pairs</li>
+						<li>this generates considerably more load on the server side</li>
+					</ul>
+					<li>Combining <em>public-key</em> and <em>secret-key</em> cryptography</li>
+					<ol>
+						<li>check the public key for authenticity (using a <em>certificate</em>)</li>
+						<li>generate a key for a secret-key encryption scheme</li>
+						<li>use the public key to securely transmit the secret key</li>
+						<li>use the secret key for securely transmitting the payload</li>
+					</ol>
+					<li>Combines the advantages of both methods</li>
+					<ul>
+						<li>the lower complexity of secret-key algorithms</li>
+						<li>the ability of public-key algorithms to work without a secure channel</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>HTTP and Security</title>
+				<ul>
+					<li>HTTP sends clear-text messages</li>
+					<li>Making HTTP secure requires additional mechanisms</li>
+					<li>Encryption is done by a layer on top of TCP</li>
+					<ul>
+						<li><em>Secure Sockets Layer (SSL)</em> is the protocol layer invented by Netscape</li>
+						<li><em>Transport Layer Security (TLS)</em> is the standardized Internet version</li>
+						<li>TLS adds more encryption schemes and more flexibility</li>
+					</ul>
+					<li>Lower-level methods may also provide encryption</li>
+					<ul>
+						<li><em>Virtual Private Networks (VPN)</em> provide IP-based encryption</li>
+						<li><em>WEP</em> and <em>WPA</em> provide network interface encryption</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>HTTP and SSL</title>
+				<img style="width : 90% ; margin : 2% ; " src="https.gif" title="HTTP and SSL"/>
+			</slide>
 		</part>
 		<part id="perimeters">
 			<title>Security Perimeters</title>
