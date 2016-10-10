@@ -155,7 +155,7 @@
 					<ul>
 						<li>Reusing existing components becomes hard because of a <link href="visibility">lack of visibility</link></li>
 						<li>Changes affect large networks of components because of a <link href="isolation">lack of isolation</link></li>
-						<li>Innovation is stifled because making <link href="do-it-over">incremental changes is hard</link></li>
+						<li>Innovation is stifled because making <em>incremental changes is hard</em></li>
 					</ul>
 					<li>Be aware of the long-term consequences of your choices!</li>
 				</ul>
@@ -183,9 +183,18 @@
 			</slide>
 			<slide id="isolation">
 				<title>Isolation</title>
-			</slide>
-			<slide id="do-it-over">
-				<title>Second Systems Rule</title>
+				<ul>
+					<li><em>Loose coupling</em> is the art of minimizing dependencies</li>
+					<ul>
+						<li>Value chains by their very nature always connected components</li>
+						<li>The secret is pushing complexity to the right place and managing it</li>
+					</ul>
+					<li>Example: Force <em>network API</em> usage or provide <em>client libraries</em></li>
+					<ul>
+						<li><em>Network API</em> usage may be perceived as more laborious</li>
+						<li><em>Client Libraries</em> risk local code dependencies (if not done properly)</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="coupling-facets">
 				<title>Coupling Facets</title>
@@ -193,9 +202,14 @@
 					<li>Coupling is not a binary <em>loose/tight</em> dimension</li>
 					<ul>
 						<li>Coupling occurs in the context of a variety of different facets</li>
-						<li>Testing </li>
 					</ul>
-					<li>Having a more systematic approach to coupling </li>
+					<li>A more systematic approach to coupling helps getting the balance right</li>
+					<li>Managing coupling means managing the service ecosystem</li>
+					<ul>
+						<li>Follow and understand design decision for services</li>
+						<li>Provide guidance and insight for new service designs</li>
+						<li>Analyze trends in design and runtime service aspects</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="facet-table">
