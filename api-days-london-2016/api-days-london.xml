@@ -289,8 +289,14 @@
 		</part>
 		<part id="equilibrium">
 			<title>Equilibrium</title>
+			<slide id="balance-is-hard">
+				<title>Balancing is Hard</title>
+				<img href="https://websecure.richmond.edu/modlin/national-acrobats-of-pr-of-china1-nc.jpg" src="chinese-acrobats.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide>
 				<title>Never Stop Changing</title>
+				<blockquote>An architectural style for building solutions as network-based systems of services modularized by domains in order to improve the solutions’ evolvability, deployability, composability, scalability, resiliency and replaceability.</blockquote>
+				<blockquote>A <em>microservice</em> is an independently deployable component of bounded scope that supports interoperability through message-based communication. <em>Microservice architecture</em> is a style of engineering highly automated, evolvable software systems made up of capability-aligned microservices.</blockquote>
 			</slide>
 		</part>
 		<part id="conclusions">
