@@ -169,11 +169,16 @@
 						<li>Documenting constraints and resulting decisions helps designers</li>
 						<li>Your service ecosystem itself determines how it will evolve</li>
 					</ul>
-					<li>API documentation should be cleanly separated into two parts</li>
-					<ul>
+					<li>APIs have two distinct and valuable roles in your service ecosystem:</li>
+					<ol>
+						<li>They can be used at <em>runtime</em> to provide services and participate in value chains</li>
+						<li>They can be used at <em>design time</em> to serve as blueprints for new components</li>
+					</ol>
+					<li>API documentation should be cleanly separated into two parts:</li>
+					<ol>
 						<li><em>Service surface</em> documentation only describes the <q>interaction surface</q></li>
 						<li><em>Service design</em> documentation is outlining the design constraints and decisions</li>
-					</ul>
+					</ol>
 				</ul>
 			</slide>
 			<slide id="isolation">
