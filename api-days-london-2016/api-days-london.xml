@@ -169,6 +169,17 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="balancing-blind">
+				<title>Balancing Blind is Very Hard</title>
+				<ul>
+					<li><em>Visibility</em> makes it easier to make data-driven decisions</li>
+					<ul>
+						<li>Surface <em>design decisions</em> by using <em>design instrumentation</em></li>
+						<li>Collect <em>service behavior</em> by using <em>runtime instrumentation</em></li>
+						<li>Provide <em>recommendations</em> by using historical data and identifying trends</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="sponsor">
 				<title>Thanks to our Sponsor!</title>
 				<img src="ca-logo.png" href="http://www.ca.com/" title="API Academy is sponsored by CA Technologies" style="height : 65% ; margin : 4% 10% 4% 10% ; "/>
