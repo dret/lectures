@@ -52,7 +52,7 @@
 	</toc>
 	<presentation id="balancing-speed-and-safety">
 		<title>Balancing Speed and Safety</title>
-		<toc class="resources"><a href="http://transform.ca.com/API-microservice-architecture-oreilly-book.html" title="Microservice Architecture: Aligning Principles, Practices, and Culture">Microservices Book</a>&#160;· <a href="http://www.martinfowler.com/articles/microservices.html" title="Martin Fowler on Microservices">Fowler on Microservices</a></toc>
+		<toc class="resources"><a href="http://transform.ca.com/API-microservice-architecture-oreilly-book.html" title="Microservice Architecture: Aligning Principles, Practices, and Culture">Microservices Book</a>&#160;· <a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a></toc>
 		<toc class="abstract">Speeding up IT and business development without sacrificing stability and safety is one of the major challenges faced by many organizations today. The challenge increases with the size of the organization, the requirements for safety, and the rate of change of the environment. Balancing speed and safety must be done in a way that allows the organization to change in flexible ways. This requires systemic thinking and an organizational setup to manage this system in ways that allow quick changes and allow for monitoring and analysis. The ultimate objective is that organizational change becomes a continuous process rather than a goal.</toc>
 		<slide id="summary">
 			<title>Summary</title>
@@ -142,6 +142,9 @@
 		</part>
 		<part id="speed">
 			<title>Speed</title>
+			<slide>
+				<title>Coupling Kills Speed</title>
+			</slide>
 		</part>
 		<part id="safety">
 			<title>Safety</title>
