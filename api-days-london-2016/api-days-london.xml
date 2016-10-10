@@ -160,6 +160,113 @@
 					<li>Be aware of the long-term consequences of your choices!</li>
 				</ul>
 			</slide>
+			<slide id="visibility">
+				<title>Visibility</title>
+				<ul>
+					<li>Make as many design/runtime decisions visible as possible</li>
+					<ul>
+						<li><q><a href="http://www.scielo.cl/pdf/arq/n49/art11.pdf">Design depends largely on constraints.</a></q> (Charles Eames)</li>
+						<li>Documenting constraints and resulting decisions helps designers</li>
+						<li>Your service ecosystem itself determines how it will evolve</li>
+					</ul>
+					<li>API documentation should be cleanly separated into two parts</li>
+					<ul>
+						<li><em>Service surface</em> documentation only describes the <q>interaction surface</q></li>
+						<li><em>Service design</em> documentation is outlining the design constraints and decisions</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="isolation">
+				<title>Isolation</title>
+			</slide>
+			<slide id="do-it-over">
+				<title>Second Systems Rule</title>
+			</slide>
+			<slide id="coupling-facets">
+				<title>Coupling Facets</title>
+				<ul>
+					<li>Coupling is not a binary <em>loose/tight</em> dimension</li>
+					<ul>
+						<li>Coupling occurs in the context of a variety of different facets</li>
+						<li>Testing </li>
+					</ul>
+					<li>Having a more systematic approach to coupling </li>
+				</ul>
+			</slide>
+			<slide id="facet-table">
+				<title>Twelve Coupling Facets</title>
+				<table rules="groups" width="85%">
+					<thead>
+						<tr>
+							<th>Facet</th>
+							<td>Tight Coupling</td>
+							<td>Loose Coupling</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>Discovery</th>
+							<td>Registration</td>
+							<td>Referral</td>
+						</tr>
+						<tr>
+							<th>Identification</th>
+							<td>Context-Based</td>
+							<td>Global</td>
+						</tr>
+						<tr>
+							<th>Binding</th>
+							<td>Early</td>
+							<td>Late</td>
+						</tr>
+						<tr>
+							<th>Platform</th>
+							<td>Dependent</td>
+							<td>Independent</td>
+						</tr>
+						<tr>
+							<th>Interaction</th>
+							<td>Synchronous</td>
+							<td>Asynchronous</td>
+						</tr>
+						<tr>
+							<th>Interface Orientation</th>
+							<td>Horizontal</td>
+							<td>Vertical</td>
+						</tr>
+						<tr>
+							<th>Model</th>
+							<td>Shared Model</td>
+							<td>Self-Describing Messages</td>
+						</tr>
+						<tr>
+							<th>Granularity</th>
+							<td>Fine</td>
+							<td>Coarse</td>
+						</tr>
+						<tr>
+							<th>State</th>
+							<td>Shared, Stateful</td>
+							<td>Stateless</td>
+						</tr>
+						<tr>
+							<th>Evolution</th>
+							<td>Breaking</td>
+							<td>Compatible</td>
+						</tr>
+						<tr>
+							<th>Code</th>
+							<td>Static</td>
+							<td>None/Dynamic</td>
+						</tr>
+						<tr>
+							<th>Conversation</th>
+							<td>Explicit</td>
+							<td>Reflective</td>
+						</tr>
+					</tbody>
+				</table>
+			</slide>
 		</part>
 		<part id="equilibrium">
 			<title>Equilibrium</title>
