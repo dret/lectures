@@ -151,7 +151,7 @@
 						<li>Value chains must be tweaked and changed increasingly often</li>
 						<li>Integration <em>increases optimization</em> and <em>reduces flexibility/reuse</em></li>
 					</ul>
-					<li>Getting coupling wrong can be a disastrous thing</li>
+					<li>Getting coupling wrong can slow things down dramatically</li>
 					<ul>
 						<li>Reusing existing components becomes hard because of a <link href="visibility">lack of visibility</link></li>
 						<li>Changes affect large networks of components because of a <link href="isolation">lack of isolation</link></li>
