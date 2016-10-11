@@ -394,6 +394,55 @@
 		</part>
 		<part id="discovery">
 			<title>Discovery</title>
+			<slide id="discoverable-concepts">
+				<title>Discoverable Concepts</title>
+				<ul>
+					<li>There is not one single API documentation format</li>
+					<ul>
+						<li>API style and tooling affect the choice of API documentation format</li>
+						<li>Microservices allow teams to pick their preferred format/tools</li>
+					</ul>
+					<li>Manage diversity by focusing on the surface</li>
+					<ul>
+						<li>Webby API documentation should be able to clearly markup Web concepts</li>
+					</ul>
+					<li><q>Harvesting Web concepts</q> should be relatively easy</li>
+					<ul>
+						<li>Microformats/RDFa/Microdata or similar tooling might be helpful</li>
+						<li><em>Building </em> becomes a natural part of API design and documentation</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="surface-focusing">
+				<title>Focus on the Surface</title>
+				<ul>
+					<li>Having a shallow model <em>is a good thing</em></li>
+					<ul>
+						<li>When talking about shared concepts all that matters are the concepts</li>
+						<li>Any <em>model depth</em> can be added by anybody who thinks they need it</li>
+					</ul>
+					<li>Easy to extract from deeper models</li>
+					<ul>
+						<li>But not always at the focus of those models</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="surface-extension">
+				<title>Extend the Surface</title>
+				<ul>
+					<li><em>Web Concepts</em> are different for different communities</li>
+					<li>Adding concepts should be relatively easy</li>
+					<ul>
+						<li>Adding individual values just requires adding specifications/services</li>
+						<li>Adding concepts introduces a new <q>class of concepts</q></li>
+					</ul>
+					<li>What is the best way to add and manage and discover extensions?</li>
+					<ul>
+						<li>A <a href="http://tools.ietf.org/html/draft-wilde-registries">registry</a> is one possible way of managing extensions</li>
+						<li><a href="http://webconcepts.info/concepts/">Web Concepts</a> could be the initial registry contents</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="data-management">
 			<title>Data Management</title>
