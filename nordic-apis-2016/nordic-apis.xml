@@ -61,13 +61,13 @@
 			<slide id="dret">
 				<title>About Me</title>
 				<ul>
-					<li>Computer Science at <a href="http://www.tu-berlin.de/" title="Technische Universität of Berlin">TU Berlin</a>; <a href="http://dret.net/netdret/publications#wil97b">Ph.D. in Communications Systems</a> from <a href="http://www.ethz.ch/">ETH Zürich</a></li>
+					<li><a href="http://dret.net/netdret/publications#wil97b">Ph.D. in Communications Systems</a> from <a href="http://www.ethz.ch/">ETH Zürich</a></li>
 					<li>Working on Web Architecture after writing <a href="http://dret.net/netdret/publications#wil98">the first Web Technology book</a></li>
 					<li>While at UC Berkeley, working on <a href="http://dret.net/netdret/publications#wil09g">Service Models for Open Government</a></li>
 					<li>While at EMC, working on transforming software products into service platforms</li>
 					<li>While at Siemens, working on using <em title="Internet of Things">IoT</em> to build <em title="Web of Things">WoT</em> (<q>APIs for Things</q>)</li>
 					<li>Joined <a href="http://www.ca.com/" title="CA Technologies">CA</a>'s <a href="http://www.apiacademy.co/">API Academy</a> in May 2016 and now all about API Design and Strategy</li>
-					<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="https://www.flickr.com/photos/dret/" title="dret">Flickr</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
+					<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="https://www.flickr.com/photos/dret/" title="dret">flickr</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
 				</ul>
 			</slide>
 			<slide id="api-academy">
@@ -103,11 +103,213 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="kafka">
+			<title>The Kafka Method</title>
+			<slide id="castle">
+				<title>The Castle</title>
+				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="bureaucracy">
+				<title>Bureaucracy</title>
+				<ul>
+					<li>Bureaucracy evolved for a reason</li>
+					<ul>
+						<li>Clearly defined model of input and output of processing units</li>
+						<li>Implementation issues of the processing units are hidden</li>
+						<li>Processing units can scale because of encapsulation and statelessness</li>
+						<li>Processing steps can be easily pipelined while keeping steps separate</li>
+					</ul>
+					<li>Well-designed service landscapes have the exact same properties</li>
+					<ul>
+						<li>Messaging models instead of paper forms</li>
+						<li>Message models are as shallow as possible</li>
+						<li>Stateless interactions allow for easy load balancing</li>
+						<li>Resource identifiers and hypermedia allow seamless workflows</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-focus">
+				<title>APIs are Front and Center</title>
+				<ul>
+					<li>The only visibility into a service is its API</li>
+					<li>APIs should avoid letting their <q>implementation shine through</q></li>
+					<li>The two main goals of an API are <em>interaction</em> and <em>encapsulation</em></li>
+					<ul>
+						<li><em>Interaction</em> should be as simple/easy as possible through the API</li>
+						<li><em>Encapsulation</em> ensures that the implementation is invisible</li>
+					</ul>
+					<li>Help developers to navigate the evolving landscape of interlinked APIs</li>
+				</ul>
+			</slide>
+			<slide id="messaging">
+				<title>Make Messaging the Start</title>
+				<ul>
+					<li>Make sure to identify relevant resources so that you can refer to them</li>
+					<ul>
+						<li>Resource refers to <em>anything</em> that <q>is worth exchanging messages about</q></li>
+						<li>Unique and stable identity helps when assigning resource identifiers</li>
+					</ul>
+					<li>Any service resource must have a <em>representation</em> in messages</li>
+					<ul>
+						<li>Your <em>data model</em> is not your <em>object model</em></li>
+						<li>Your <em>object model</em> is not your <em>resource model</em></li>
+						<li>Your <em>resource model</em> is not your <em>message model</em></li>
+					</ul>
+					<li>Design <q>interaction form</q> to be as succinct as possible</li>
+				</ul>
+			</slide>
+			<slide id="surface">
+				<title>Be Superficial</title>
+				<ul>
+					<li>The only thing that matters is the <em>Service Surface</em></li>
+					<ul>
+						<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
+						<li>Resist the temptation to <em>expose your model</em> just because you can</li>
+					</ul>
+					<li>Concepts must be well-defined but not necessarily deeply modeled</li>
+					<ul><em>Domain Driven Design (DDD)</em> provides a framework for <em>bounded contexts</em></ul>
+				</ul>
+			</slide>
+			<slide id="guidance">
+				<title>Provide Guidance</title>
+				<ul>
+					<li>Small services mean interactions across a variety of them</li>
+					<li>Reduce friction by providing means for seamless interactions</li>
+					<ul>
+						<li><em>Identifiers</em> robustly identify resources across all services</li>
+						<li><em>Links</em> guide interactions to possible following next steps</li>
+						<li><em>Link Templates</em> provide the equivalent of filling out forms</li>
+						<li><em>Overlay services</em> are a (weak) equivalent of traditional orchestration</li>
+					</ul>
+					<li><em>Guidance</em> means just that: suggestions that clients might follow</li>
+					<ul>
+						<li>Clients might decide to redirect or abort at any point in the process</li>
+						<li>Microservices need robust programming of services <em>and</em> clients</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="description-discovery">
+			<title>Description and Discovery</title>
+			<slide id="discoverable-concepts">
+				<title>Discoverable Concepts</title>
+				<ul>
+					<li>There is not one single API documentation format</li>
+					<ul>
+						<li>API style and tooling affect the choice of API documentation format</li>
+						<li>Microservices allow teams to pick their preferred format/tools</li>
+					</ul>
+					<li>Manage diversity by focusing on the surface</li>
+					<ul>
+						<li>Webby API documentation should be able to clearly markup Web concepts</li>
+					</ul>
+					<li><q>Harvesting Web concepts</q> should be relatively easy</li>
+					<ul>
+						<li>Microformats/RDFa/Microdata or similar tooling might be helpful</li>
+						<li><em>Building </em> becomes a natural part of API design and documentation</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="surface-focusing">
+				<title>Focus on the Surface</title>
+				<ul>
+					<li>Having a shallow model <em>is a good thing</em></li>
+					<ul>
+						<li>When talking about shared concepts all that matters are the concepts</li>
+						<li>Any <em>model depth</em> can be added by anybody who thinks they need it</li>
+					</ul>
+					<li>Easy to extract from deeper models</li>
+					<ul>
+						<li>But not always at the focus of those models</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="surface-extension">
+				<title>Extend the Surface</title>
+				<ul>
+					<li><em>Web Concepts</em> are different for different communities</li>
+					<li>Adding concepts should be relatively easy</li>
+					<ul>
+						<li>Adding individual values just requires adding specifications/services</li>
+						<li>Adding concepts introduces a new <q>class of concepts</q></li>
+					</ul>
+					<li>What is the best way to add and manage and discover extensions?</li>
+					<ul>
+						<li>A <a href="http://tools.ietf.org/html/draft-wilde-registries">registry</a> is one possible way of managing extensions</li>
+						<li><a href="http://webconcepts.info/concepts/">Web Concepts</a> could be the initial registry contents</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="data-management">
+			<title>Data Management</title>
+			<slide id="monolith">
+				<title>The Dreaded Monolith</title>
+				<img title="Where you come from..." href="https://upload.wikimedia.org/wikipedia/commons/7/7b/Weltmaschine_gsellmann1.JPG" src="monolith.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="MS-neat">
+				<title>Microservices: The Starting Point</title>
+				<img title="Where you think you're going..." href="https://static.pexels.com/photos/12598/96917deb7705adcee76b65caf8c652b1.jpg" src="microservices-ideal.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="MS-messy">
+				<title>Microservices Over Time</title>
+				<img title="By Lachlan Donald from Melbourne, Australia (Sharpest tool in the shed) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AHuge_collection_of_tools_in_a_store_in_Chloride%2C_a_ghost_town_in_New_Mexico%2C_USA_-_July_2013.jpg" src="microservices-reality.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="soapy-discovery">
+				<title>Old School Discovery</title>
+				<ul>
+					<li>SOAP's answer to service discovery was UDDI</li>
+					<ul>
+						<li>The biggest failure of the SOAP Web Services stack</li>
+						<li>Allowing only one specific kind of service design</li>
+						<li>Focusing on the function signature as a service's main description</li>
+					</ul>
+					<li>Building directories from carefully described and categorized entries</li>
+					<ul>
+						<li>Feels like the Yahoo! of service discovery: The one true model approach</li>
+					</ul>
+					<li>What does a Google of Service Discovery look like?</li>
+					<ul>
+						<li>Starting from services, <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">find available description/documentation resources</a></li>
+						<li>Index description/documentation resources for subsequent discovery</li>
+						<li>Add support for additional description/documentation formats as required</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="ms-discovery">
+				<title>Decentralize Discovery</title>
+				<ul>
+					<li>MS is all about making services more independent and self-contained</li>
+					<ul>
+						<li>Discovery should follow the same pattern: Avoid centralization, be polyglot</li>
+					</ul>
+					<li>Decentralized discovery is based on pulling/crawling diverse data</li>
+					<ol>
+						<li>Start by <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">finding available description/documentation resources</a></li>
+						<li>Process these based on supported description/documentation formats</li>
+						<li>Increase support if required by the evolving ecosystem</li>
+						<li>Provide discovery services based on the resulting service ecosystem snapshot</li>
+					</ol>
+					<li>Added benefit: Reality-based view on description/documentation/service ecosystem</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
-			<slide id="sponsor">
-				<title>Thanks to our Sponsor!</title>
-				<img src="ca-logo.png" href="http://www.ca.com/" title="API Academy is sponsored by CA Technologies" style="height : 65% ; margin : 4% 10% 4% 10% ; "/>
+			<slide id="data-driven">
+				<title>Data-Driven API Landscaping</title>
+				<ul>
+					<li>Keep track of API design and behavior and make it visible</li>
+					<ul>
+						<li><em>Design instrumentation</em> allows to keep track of service design</li>
+						<li><em>Run-time instrumentation</em> allows to keep track of service behavior</li>
+					</ul>
+					<li>Understand the history, status, and direction of the API landscape</li>
+					<ul>
+						<li>Avoid tight coupling between landscaping and service designs and behaviors</li>
+						<li>All tooling should be based on open (and extensible) standards</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
