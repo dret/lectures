@@ -579,6 +579,21 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="data-driven">
+				<title>Data-Driven API Landscaping</title>
+				<ul>
+					<li>Keep track of API design and behavior and make it visible</li>
+					<ul>
+						<li><em>Design instrumentation</em> allows to keep track of service design</li>
+						<li><em>Run-time instrumentation</em> allows to keep track of service behavior</li>
+					</ul>
+					<li>Understand the history, status, and direction of the API landscape</li>
+					<ul>
+						<li>Avoid tight coupling between landscaping and service designs and behaviors</li>
+						<li>All tooling should be based on open (and extensible) standards</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
