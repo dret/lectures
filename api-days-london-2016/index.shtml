@@ -40,7 +40,7 @@ function displayAll(theClass,value) {
 	</head>
 	<body onload='displayAll("toggle","") ; return false ;'>
 		<div class="header">
-			<h1>API Days London</h1>
+			<h1><a href="http://london.apidays.io/">API Days London</a></h1>
 			<h2>London, UK<br/>October 11/12, 2016</h2>
 			<h3>Presenter: <a href="http://dret.net/netdret/">Erik Wilde</a></h3>
 		</div>
