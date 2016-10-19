@@ -313,6 +313,24 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="kafka-patterns">
+				<title>Kafka Patterns</title>
+				<ul>
+					<li>Establish <q>Service Patterns</q> that cross the Business/IT divide</li>
+					<ul>
+						<li><em>REST</em> and <em>statelessness</em> are very technical concepts</li>
+						<li>Use relatable concepts that create value and have well-known technical solutions</li>
+					</ul>
+					<li>Example: How to design <q>long-running</q> business processes</li>
+					<ul>
+						<li><em>Busy waiting</em> is a poor design and creates poor UX</li>
+						<li><em>Asynchronous processing</em> need identifiers for the running process</li>
+						<li><em>Push messages</em> can be used for process updates (SMS, email, web hooks)</li>
+						<li><em>Pull methods</em> can be used for requesting process status</li>
+						<li>Combining these patterns in a non-technical way creates business value</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="api-focus">
 				<title>APIs are Front and Center</title>
 				<ul>
