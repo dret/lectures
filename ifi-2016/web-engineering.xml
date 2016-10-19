@@ -158,8 +158,8 @@
 					</ul>
 					<li>The <em>only</em> service dependency is through APIs</li>
 					<ul>
-						<li>Works well on the Web because of the uniform interface and HTML</li>
-						<li>Only works well if services expose APIs <q>as architecturally intended</q></li>
+						<li>Works (mostly) well on the Web because of the uniform interface and HTML</li>
+						<li>Works (mostly) well on the service Web for <q>well-designed</q> APIs</li>
 					</ul>
 				</ul>
 			</slide>
