@@ -344,7 +344,7 @@
 			<slide id="api-focus">
 				<title>APIs are Front and Center</title>
 				<ul>
-					<li>The only visibility into a service is its API</li>
+					<li>The only visibility of a service is its API</li>
 					<li>APIs should avoid letting their <q>implementation shine through</q></li>
 					<li>The two main goals of an API are <em>interaction</em> and <em>encapsulation</em></li>
 					<ul>
