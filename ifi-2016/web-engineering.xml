@@ -284,6 +284,20 @@
 			<title>Digital Transformation</title>
 			<slide id="process-agility">
 				<title>Business Process Agility</title>
+				<ul>
+					<li>Design new products that use/create new value chains</li>
+					<ul>
+						<li>Reusing existing products makes this much easier</li>
+					</ul>
+					<li>Develop/Deploy products rapidly</li>
+					<ul>
+						<li>Focus on products and self-reliant teams helps development/deployment speed</li>
+					</ul>
+					<li>Measure the impact of new products</li>
+					<ul>
+						<li>Strong monitoring tooling and culture helps with tracking</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="dx">
 				<title>API Usability/Accessibility</title>
@@ -291,6 +305,61 @@
 			<slide id="snowflakes">
 				<title>Sunlight Melts Snowflakes</title>
 				<img title="Snowflakes" href="http://www.flickr.com/photos/amagill/4223790595" src="snowflake.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="ui-patterns">
+				<title>Uniform Interface Patterns</title>
+				<ul>
+					<li>Identify <q>design patterns</q> based on shared concepts</li>
+					<ul>
+						<li>Treating concepts as a <em>flat space</em> leaves out many details</li>
+						<li><q>Deeper models</q> can still be based on the <q>shared concept surface</q></li>
+					</ul>
+					<li>The uniform interface evolves and so should attempt to track it</li>
+					<ul>
+						<li>New <a href="https://github.com/dret/webconcepts/commits">Web Concept values</a> are defined/created constantly</li>
+						<li>New <a href="http://webconcepts.info/concepts">Web Concepts</a> appear less frequently</li>
+					</ul>
+					<li><q>Make any model <em>as shallow as possible</em>, model depth tightly couples and makes model matching and mapping much harder.</q></li>
+				</ul>
+			</slide>
+			<slide id="bigger-picture">
+				<title>Fit into the Bigger Picture</title>
+				<ul>
+					<li>APIs are about <em>information logistics</em>, so friction matters</li>
+					<ul>
+						<li><em>Developer experience (DX)</em> means how hard it is to use certain APIs</li>
+						<li>DX also matters when it comes to how hard it is to combine APIs</li>
+					</ul>
+					<li><em>REST</em> has the idealized picture of <em>uniform self-describing interfaces</em></li>
+					<ul>
+						<li>Uniform: You can interact with a service without knowing it in advance</li>
+						<li>Self-describing: You can learn what you need to know from the interactions</li>
+					</ul>
+					<li>REST works well on the Web because humans are the intelligence driving dumb browsers</li>
+					<ul>
+						<li>For Web services this looks difference because there is only code</li>
+						<li>Having <em>shared concepts</em> and <em>layered domain meaning</em> still is a good idea</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="webconcepts">
+				<title>Web Concepts</title>
+				<ul>
+					<li>The foundation of an API landscape is a mix of various standards</li>
+					<li>Many of the foundations are from IETF/W3C</li>
+					<ul>
+						<li>Depending on the domain/industry, there may be other well-known foundations</li>
+					</ul>
+					<li><code href="http://webconcepts.info/">webconcepts.info</code> provides a <a href="http://webconcepts.info/concepts/"><q>starter pack</q> of concepts</a></li>
+					<ul>
+						<li>Currently listing 612 values classified in 27 different Web concepts</li>
+					</ul>
+					<li>Create your own foundation by forking, removing, and adding concepts and values</li>
+					<ul>
+						<li>APIs and the concepts they use should be linked both ways</li>
+						<li>Imagine having a dashboard of foundations and their popularity</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="kafka">
