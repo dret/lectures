@@ -116,17 +116,17 @@
 				<ul>
 					<li>Bureaucracy evolved for a reason</li>
 					<ul>
-						<li>Clearly defined model of input and output of processing units</li>
-						<li>Implementation issues of the processing units are hidden</li>
-						<li>Processing units can scale because of encapsulation and statelessness</li>
-						<li>Processing steps can be easily pipelined while keeping steps separate</li>
+						<li>Clearly defined <em>model of input and output</em> of processing units</li>
+						<li>Implementation issues of the processing units are <em>hidden</em></li>
+						<li>Processing units can scale because of <em>encapsulation and statelessness</em></li>
+						<li>Processing steps can be <em>easily composed</em> while keeping steps separate</li>
 					</ul>
 					<li>Well-designed service landscapes have the exact same properties</li>
 					<ul>
-						<li>Messaging models instead of paper forms</li>
-						<li>Message models are as shallow as possible</li>
-						<li>Stateless interactions allow for easy load balancing</li>
-						<li>Resource identifiers and hypermedia allow seamless workflows</li>
+						<li><em>Messaging models</em> instead of paper forms</li>
+						<li>Message models are <em>as shallow as possible</em></li>
+						<li><em>Stateless interactions</em> allow for easy load balancing</li>
+						<li>Resource identifiers and hypermedia allow <em>interlinked workflows</em></li>
 					</ul>
 				</ul>
 			</slide>
@@ -161,7 +161,7 @@
 						<li>Your <em>object model</em> is not your <em>resource model</em></li>
 						<li>Your <em>resource model</em> is not your <em>message model</em></li>
 					</ul>
-					<li>Design <q>interaction form</q> to be as succinct as possible</li>
+					<li>Design <q>interaction forms</q> to be as succinct as possible</li>
 				</ul>
 			</slide>
 			<slide id="surface">
@@ -176,22 +176,20 @@
 					<ul><em>Domain Driven Design (DDD)</em> provides a framework for <em>bounded contexts</em></ul>
 				</ul>
 			</slide>
-			<slide id="guidance">
-				<title>Provide Guidance</title>
+			<slide id="bimodal">
+				<title>Kafka and Bimodal IT</title>
 				<ul>
-					<li>Small services mean interactions across a variety of them</li>
-					<li>Reduce friction by providing means for seamless interactions</li>
+					<li><em>The Castle</em> is not going anywhere anytime soon</li>
 					<ul>
-						<li><em>Identifiers</em> robustly identify resources across all services</li>
-						<li><em>Links</em> guide interactions to possible following next steps</li>
-						<li><em>Link Templates</em> provide the equivalent of filling out forms</li>
-						<li><em>Overlay services</em> are a (weak) equivalent of traditional orchestration</li>
+						<li>Establishing <q>rules of engagement</q> make interactions well-defined</li>
+						<li>Natural transition possible (if required) using the <em>Strangler Pattern</em></li>
 					</ul>
-					<li><em>Guidance</em> means just that: suggestions that clients might follow</li>
+					<li>Customers/consumers do not know if how/where APIs are implemented</li>
 					<ul>
-						<li>Clients might decide to redirect or abort at any point in the process</li>
-						<li>Microservices need robust programming of services <em>and</em> clients</li>
+						<li>Establish uniform documentation/description/discovery strategy</li>
+						<li>Embrace diversity to cover old as well as new services</li>
 					</ul>
+					<li>APIs are <em>connective tissue and protective insulation layers</em></li>
 				</ul>
 			</slide>
 		</part>
@@ -244,22 +242,6 @@
 						<li>A <a href="http://tools.ietf.org/html/draft-wilde-registries">registry</a> is one possible way of managing extensions</li>
 						<li><a href="http://webconcepts.info/concepts/">Web Concepts</a> could be the initial registry contents</li>
 					</ul>
-				</ul>
-			</slide>
-			<slide id="bimodal">
-				<title>Kafka and Bimodal IT</title>
-				<ul>
-					<li><em>The Castle</em> is not going anywhere anytime soon</li>
-					<ul>
-						<li>Establishing <q>rules of engagement</q> make interactions well-defined</li>
-						<li>Natural transition possible (if required) using the <em>Strangler Pattern</em></li>
-					</ul>
-					<li>Customers/consumers do not know if how/where APIs are implemented</li>
-					<ul>
-						<li>Establish uniform documentation/description/discovery strategy</li>
-						<li>Embrace diversity to cover old as well as new services</li>
-					</ul>
-					<li>APIs are <em>connective tissue and protective insulation layers</em></li>
 				</ul>
 			</slide>
 		</part>
