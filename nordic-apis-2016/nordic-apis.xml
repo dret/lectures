@@ -244,6 +244,19 @@
 			</slide>
 			<slide id="bimodal">
 				<title>Kafka and Bimodal IT</title>
+				<ul>
+					<li><em>The Castle</em> is not going anywhere anytime soon</li>
+					<ul>
+						<li>Establishing <q>rules of engagement</q> make interactions well-defined</li>
+						<li>Natural transition possible (if required) using the <em>Strangler Pattern</em></li>
+					</ul>
+					<li>Customers/consumers do not know if how/where APIs are implemented</li>
+					<ul>
+						<li>Establish uniform documentation/description/discovery strategy</li>
+						<li>Embrace diversity to cover old as well as new services</li>
+					</ul>
+					<li>APIs are <em>connective tissue and protective insulation layers</em></li>
+				</ul>
 			</slide>
 		</part>
 		<part id="data-management">
