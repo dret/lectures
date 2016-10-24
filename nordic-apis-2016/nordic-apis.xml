@@ -52,6 +52,7 @@
 	<presentation id="microservices-gardening">
 		<title>Microservice Gardening</title>
 		<toc class="abstract">Microservices as an architectural approach are a logical consequence of the containerization of software infrastructure. Microservices as the result of a containerized landscape require a different mindset and management approach for keeping track of the more diverse, dynamic, and decentralized set of services. This talk takes a closer look at those places where becoming an effective microservice gardener presents some challenges, and where lessons learned from existing decentralized systems can present us with solutions that have been practiced and perfected since the Web turned into the largest containerized microservices ecosystem about 25 years ago.</toc>
+		<toc class="resources"><a href="http://transform.ca.com/API-microservice-architecture-oreilly-book.html" title="Microservice Architecture: Aligning Principles, Practices, and Culture">Microservices Book</a>&#160;· <a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a></toc>
 		<date short="2016-10-25">October 25, 2016</date>
 		<slide id="summary">
 			<title>Summary</title>
