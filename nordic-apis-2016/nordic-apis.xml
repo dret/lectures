@@ -232,27 +232,6 @@
 				<title>Microservices Over Time</title>
 				<img title="By Lachlan Donald from Melbourne, Australia (Sharpest tool in the shed) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AHuge_collection_of_tools_in_a_store_in_Chloride%2C_a_ghost_town_in_New_Mexico%2C_USA_-_July_2013.jpg" src="microservices-reality.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="soapy-discovery">
-				<title>Old School Discovery</title>
-				<ul>
-					<li>SOAP's answer to service discovery was UDDI</li>
-					<ul>
-						<li>The biggest failure of the SOAP Web Services stack</li>
-						<li>Allowing only one specific kind of service design</li>
-						<li>Focusing on the function signature as a service's main description</li>
-					</ul>
-					<li>Building directories from carefully described and categorized entries</li>
-					<ul>
-						<li>Feels like the Yahoo! of service discovery: The one true model approach</li>
-					</ul>
-					<li>What does a Google of Service Discovery look like?</li>
-					<ul>
-						<li>Starting from services, <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">find available description/documentation resources</a></li>
-						<li>Index description/documentation resources for subsequent discovery</li>
-						<li>Add support for additional description/documentation formats as required</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="ms-decentralize">
 				<title>Decentralize Documentation/Discovery</title>
 				<ul>
