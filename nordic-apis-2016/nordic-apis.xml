@@ -280,12 +280,14 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide id="ms-discovery">
-				<title>Decentralize Discovery</title>
+			<slide id="ms-decentralize">
+				<title>Decentralize Documentation/Discovery</title>
 				<ul>
 					<li>MS is all about making services more independent and self-contained</li>
 					<ul>
-						<li>Discovery should follow the same pattern: Avoid centralization, be polyglot</li>
+						<li><em>Documentation</em> is under control and responsibility of service owners</li>
+						<li>Decentralized documentation means polyglot documentation</li>
+						<li><em>Discovery</em> has to support polyglotism and decentralization</li>
 					</ul>
 					<li>Decentralized discovery is based on pulling/crawling diverse data</li>
 					<ol>
