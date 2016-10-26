@@ -355,16 +355,210 @@
 					</ul>
 				</ul>
 			</slide>
-		</part>
-		<part id="iot">
-			<title>Internet of Things (IoT)</title>
 			<slide id="internet-of-things">
-				<title>Scenario: Internet of Things</title>
+				<title>Internet of Things</title>
 				<img title="Many things means many services" href="https://pixabay.com/static/uploads/photo/2015/05/25/05/27/network-782707_960_720.png" src="iot.png" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="as-basics">
+			<title>Activity Streams Basics</title>
+			<slide id="AS1">
+				<title>Activity Streams 1.0</title>
+				<ul>
+					<li>Developer effort in an attempt to <q>interconnect social networks</q></li>
+					<ul>
+						<li>Counter-intuitive given then <q>walled garden</q> nature of most social networks</li>
+						<li>Even the <q>social giants</q> need proper plumbing between their services</li>
+					</ul>
+					<li>Simple and informative standard that was implemented but never (fully) documented</li>
+					<ul>
+						<li>Some parts of the <q>specification</q> did not see good support in implementations</li>
+					</ul>
+					<li><q>Enterprise 2.0</q> customers demand stable and official standards</li>
+					<ul>
+						<li><em>Social Enterprise Platforms</em> are essentially integration platforms</li>
+						<li>Only robust and open models turn them into good IT solutions</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="AS2">
+				<title>Activity Streams 2.0</title>
+				<ul>
+					<li><link href="AS1"/> were successful but not a very solid specification</li>
+					<li><q>Social Networks</q> are increasingly important for Enterprise IT</li>
+					<ul>
+						<li>Enterprises slowly but increasingly understand the necessity for loose coupling</li>
+						<li><a href="http://en.wikipedia.org/wiki/Enterprise_social_networking">Enterprise Social Networking</a> has a lot of potential</li>
+						<li>Have a protocol to interconnect heterogeneous systems</li>
+					</ul>
+					<li>Large Enterprise IT providers have pushed for AS to become more mature</li>
+					<ul>
+						<li>IBM uses AS for interconnecting products for <a href="http://en.wikipedia.org/wiki/Application_lifecycle_management">software lifecycle management</a></li>
+						<li>SAP uses AS in their enterprise collaboration tools</li>
+						<li>Customers demand for those platforms to be open and extensible</li>
+					</ul>
+					<li>AS2 is now being standardized in the <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>'s <a href="http://www.w3.org/Social/WG" title="Social Web Working Group">Social Web WG</a></li>
+					<ul>
+						<li><a href="http://www.w3.org/TR/activitystreams-core/">Activity Streams 2.0</a> and <a href="http://www.w3.org/TR/activitystreams-vocabulary/">Activity Vocabulary</a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="as-vocabularies">
+			<title>Vocabularies for Activity Streams</title>
+			<slide id="as-vocabularies">
+				<title>AS needs Vocabularies</title>
+				<ul>
+					<li>AS is about activities and needs shared understanding</li>
+					<li>Basic AS statement: <q><code>Erik added a picture to Flickr</code></q></li>
+					<ul>
+						<li>Actor: <code>Erik</code></li>
+						<li>Verb: <code>add</code></li>
+						<li>Object: <code href="https://www.flickr.com/photos/dret/15433487108/">picture URI</code></li>
+						<li>Target: <code href="https://www.flickr.com/photos/dret/">Flickr stream URI</code></li>
+					</ul>
+					<li>AS mixes three ways in how these concepts can be represented</li>
+					<ul>
+						<li><em>By Value:</em> The actor's name is <q>Erik</q> (good for simple rendering)</li>
+						<li><em>By Registry Reference:</em> The well-known verb is <a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-add">add</a> (good for shared meaning)</li>
+						<li><em>By URI Reference:</em> Erik's <a href="https://www.flickr.com/photos/dret/">Flickr Photostream</a> (good for extensibility)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="use-extend-define">
+				<title>Use, Extend, or Define?</title>
+				<ul>
+					<li>AS has three <q>levels</q> of verb expressivity</li>
+				</ul>
+				<ol>
+					<li>Using a well-known verb in the way how it has been defined</li>
+					<ul>
+						<li><q>Erik just added something to an existing resource.</q></li>
+					</ul>
+					<li>Extending a well-known verb in ways that make sense for those knowing the extension</li>
+					<ul>
+						<li><q>For those who know and care, here is additional info about the camera.</q></li>
+					</ul>
+					<li>Defining new verbs which do not <q>mean</q> anything for those not knowing them</li>
+					<ul>
+						<li><q>Erik just edited the picture he added earlier.</q></li>
+					</ul>
+				</ol>
+			</slide>
+			<slide id="vocabularies">
+				<title>Finding/Using Vocabularies</title>
+				<img src="snowflakes.jpg" href="http://atompub.org/" style="float : right ; width : 25% ; margin : 0.5em 1em 1em 1em ; "/>
+				<ul>
+					<li>There is no centralized registry of AS vocabularies</li>
+					<ul>
+						<li>The AS1 core specification only defines the one verb <q><code>post</code></q></li>
+						<li>The <a href="https://github.com/activitystreams/activity-schema/blob/master/activity-schema.md">AS1 base schema</a> defines a set of well-known verbs</li>
+						<li>AS1 activities may use verbs other than the well-know ones</li>
+						<li><a href="http://activitystrea.ms/specs/json/1.0/#extensions">Extensions</a> can use <em>strings</em> or <em>URIs</em> as verbs (the difference is unclear)</li>
+					</ul>
+					<li>Everybody is free to define their own snowflakes</li>
+					<ul>
+						<li>Network effect gains depend on agreement on the level of shared understanding</li>
+						<li><em>Only</em> invent something if you absolutely have to</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="adapting-vocabularies">
+				<title>Adapting Vocabularies</title>
+				<ul>
+					<li>Consider this when designing the activities for your course project!</li>
+					<li>Reuse an existing activity type (they are loosely defined)</li>
+					<li>Add facets to it that you need to satisfy your use case</li>
+					<li>Adapting without hijacking is the litmus test of proper reuse</li>
+					<ul>
+						<li>If somebody does not support your extensions, does it still make sense?</li>
+						<li>If this test cannot be satisfied, it is better to invent something new</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="health">
+				<title>Quantified Self and Health</title>
+				<ul>
+					<li>Using data from wearables to support personal well-being and health</li>
+					<ul>
+						<li>Producers: Wearables (e.g., activity trackers), general-purpose devices (e.g., activity-enabled smartphones), lab visits</li>
+						<li>Transformers: Consuming available data and distilling reports</li>
+						<li>Consumers: Users, health coaches, doctors (different granularity of consumption)</li>
+					</ul>
+					<li>Data production should be independent of specific devices</li>
+					<ul>
+						<li><a href="https://github.com/dret/exercise/tree/master/EDF">Exercise Data Format (EDF)</a> as a very simple <q>standard</q> for exercise data</li>
+						<li>The resources are linked from activities and use a different media type</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="HIIT">
+				<title>Do You Know What <code>HIIT</code> Is?</title>
+				<ul>
+					<li>Exercise types are considered relevant but not central</li>
+					<ul>
+						<li><a href="https://github.com/dret/exercise/blob/master/types/API/nikefuel.md">Nike Fuel</a> thinks <code>HIIT</code> is a thing</li>
+						<li>Even <a href="http://en.wikipedia.org/wiki/High-intensity_interval_training">Wikipedia thinks it is a thing</a></li>
+					</ul>
+					<li>It is possible to transform proprietary into unified types</li>
+					<ul>
+						<li>There is a long list of <a href="https://github.com/dret/exercise/tree/master/types">(currently 435) exercise types</a></li>
+						<li>Consumers are mostly not interested which device/service created the exercise data</li>
+						<li>A transformer consumes the proprietary types and transforms them into unified types</li>
+					</ul>
+					<li>A typical pattern of open and extensible system</li>
+					<ul>
+						<li>Define a minimal but useful model for representing what the system is all about</li>
+						<li>Make this model extensible and open so that it can <em>evolve</em> without breaking existing components</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="registries">
+			<title>Registries</title>
+			<slide id="evolving-value-sets">
+				<title>Evolving Value Sets</title>
+				<ul>
+					<li>Many business documents have evolving value sets</li>
+					<ul>
+						<li><em>Hard-coding</em> the value set is the simplest way</li>
+						<li>Every time the value set changes, the API changes</li>
+					</ul>
+					<li>Some of these value sets have utility across various services</li>
+					<ul>
+						<li>Decoupling value sets from APIs decreases dependencies across services</li>
+					</ul>
+					<li>Registries are a well-known pattern for API-minded organizations</li>
+					<ul>
+						<li><a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a> has ~2000 registries <a href="http://www.iana.org/protocols">managed by IANA</a></li>
+						<li><a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a> has no registry system but some specifications are creating their own</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="language-identification">
+				<title>Language Identification</title>
+				<ul>
+					<li>Language is a concept used across business documents</li>
+					<li>Internet/Web language identification relies on <em>language tags</em></li>
+					<ul>
+						<li><a href="http://tools.ietf.org/html/rfc5646">RFC 5646</a> defines the syntax of language tags: <code>en-US</code></li>
+					</ul>
+					<li>The <a href="http://www.loc.gov/standards/iso639-2/">language registry</a> is operated by ISO/LoC</li>
+					<ul>
+						<li>The list of allowed values is defined by the current registry contents</li>
+					</ul>
+					<li>The <a href="https://www.iso.org/obp/ui/#search">country registry</a> is operated by ISO</li>
+					<ul>
+						<li>The list of allowed values is defined by the current registry contents</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="...">
+				<title>...</title>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
