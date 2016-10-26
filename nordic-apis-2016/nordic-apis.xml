@@ -282,7 +282,7 @@
 	</presentation>
 	<presentation id="ecosystem-complexity">
 		<title>Complexity of Mobile and IoT Ecosystems</title>
-		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title="Erik Wilde: Patterns for Robust Extensibility">Patterns for Robust Extensibility</a></toc>
+		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title="Erik Wilde: Patterns for Robust Extensibility">Patterns for Robust Extensibility</a>&#160;· <a href="http://tools.ietf.org/html/draft-wilde-registries" title='Erik Wilde, "The Use of Registries", Internet Draft draft-wilde-registries'>The Use of Registries</a></toc>
 		<toc class="abstract"><em>Mobile</em> and the <em>Internet of Things (IoT)</em> are two examples of particularly rapidly evolving ecosystems. In both cases, the diversity and rate of change (in mobile devices as well as in IoT "things") are challenging factors. This means that it is essential to have an IT architecture in place that provides both the stability and the flexibility to be able to handle the changing landscape. Cleanly identifying and managing services is a foundation that can then be used to quickly and robustly build mobile applications that are based on IoT services.</toc>
 		<date short="2016-10-26">October 26, 2016</date>
 		<slide id="summary">
@@ -366,7 +366,7 @@
 			<slide id="AS1">
 				<title>Activity Streams 1.0</title>
 				<ul>
-					<li>Developer effort in an attempt to <q>interconnect social networks</q></li>
+					<li>Developer effort to <em>interconnect social networks</em></li>
 					<ul>
 						<li>Counter-intuitive given then <q>walled garden</q> nature of most social networks</li>
 						<li>Even the <q>social giants</q> need proper plumbing between their services</li>
@@ -389,12 +389,11 @@
 					<li><q>Social Networks</q> are increasingly important for Enterprise IT</li>
 					<ul>
 						<li>Enterprises slowly but increasingly understand the necessity for loose coupling</li>
-						<li><a href="http://en.wikipedia.org/wiki/Enterprise_social_networking">Enterprise Social Networking</a> has a lot of potential</li>
-						<li>Have a protocol to interconnect heterogeneous systems</li>
+						<li>Use a protocol to interconnect heterogeneous systems</li>
 					</ul>
 					<li>Large Enterprise IT providers have pushed for AS to become more mature</li>
 					<ul>
-						<li>IBM uses AS for interconnecting products for <a href="http://en.wikipedia.org/wiki/Application_lifecycle_management">software lifecycle management</a></li>
+						<li>IBM uses AS for interconnecting products for <a href="http://en.wikipedia.org/wiki/Application_lifecycle_management">application lifecycle management</a></li>
 						<li>SAP uses AS in their enterprise collaboration tools</li>
 						<li>Customers demand for those platforms to be open and extensible</li>
 					</ul>
@@ -418,7 +417,7 @@
 						<li>Object: <code href="https://www.flickr.com/photos/dret/15433487108/">picture URI</code></li>
 						<li>Target: <code href="https://www.flickr.com/photos/dret/">Flickr stream URI</code></li>
 					</ul>
-					<li>AS mixes three ways in how these concepts can be represented</li>
+					<li>AS mixes three ways of how these concepts can be identified</li>
 					<ul>
 						<li><em>By Value:</em> The actor's name is <q>Erik</q> (good for simple rendering)</li>
 						<li><em>By Registry Reference:</em> The well-known verb is <a href="https://www.w3.org/TR/activitystreams-vocabulary/#dfn-add">add</a> (good for shared meaning)</li>
@@ -452,10 +451,10 @@
 				<ul>
 					<li>There is no centralized registry of AS vocabularies</li>
 					<ul>
-						<li>The AS1 core specification only defines the one verb <q><code>post</code></q></li>
-						<li>The <a href="https://github.com/activitystreams/activity-schema/blob/master/activity-schema.md">AS1 base schema</a> defines a set of well-known verbs</li>
-						<li>AS1 activities may use verbs other than the well-know ones</li>
-						<li><a href="http://activitystrea.ms/specs/json/1.0/#extensions">Extensions</a> can use <em>strings</em> or <em>URIs</em> as verbs (the difference is unclear)</li>
+						<li>The AS core specification only defines the <a href="https://www.w3.org/TR/activitystreams-core/#model">general activity model</a></li>
+						<li>The <a href="https://www.w3.org/TR/activitystreams-vocabulary/">AS vocabulary</a> defines a set of well-known verbs</li>
+						<li>AS activities may use verbs other than the well-know ones</li>
+						<li><a href="https://www.w3.org/TR/activitystreams-core/#extensibility">Extensions</a> can use <em>strings</em> or <em>URIs</em> as verbs (the difference is unclear)</li>
 					</ul>
 					<li>Everybody is free to define their own snowflakes</li>
 					<ul>
@@ -503,7 +502,7 @@
 					</ul>
 					<li>It is possible to transform proprietary into unified types</li>
 					<ul>
-						<li>There is a long list of <a href="https://github.com/dret/exercise/tree/master/types">(currently 435) exercise types</a></li>
+						<li>There is a long list of <a href="https://github.com/dret/exercise/blob/master/types/overview.md">(currently 468) exercise types</a></li>
 						<li>Consumers are mostly not interested which device/service created the exercise data</li>
 						<li>A transformer consumes the proprietary types and transforms them into unified types</li>
 					</ul>
@@ -533,6 +532,7 @@
 					<ul>
 						<li><a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a> has ~2000 registries <a href="http://www.iana.org/protocols">managed by IANA</a></li>
 						<li><a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a> has no registry system but some specifications are creating their own</li>
+						<li>Considering <a href="http://tools.ietf.org/html/draft-wilde-registries">the use of registries</a> should be a general API design pattern</li>
 					</ul>
 				</ul>
 			</slide>
