@@ -517,7 +517,7 @@
 					<li>Registries are a well-known pattern for API-minded organizations</li>
 					<ul>
 						<li><a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a> has ~2000 registries <a href="http://www.iana.org/protocols">managed by IANA</a></li>
-						<li><a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a> has no registry system but some specifications are creating their own</li>
+						<li><a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a> has no registry system but <a href="https://github.com/dret/RegMan/blob/master/W3C.md">some specifications are creating their own</a></li>
 						<li>Considering <a href="http://tools.ietf.org/html/draft-wilde-registries">the use of registries</a> should be a general API design pattern</li>
 					</ul>
 				</ul>
