@@ -282,6 +282,7 @@
 	</presentation>
 	<presentation id="ecosystem-complexity">
 		<title>Complexity of Mobile and IoT Ecosystems</title>
+		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title="Erik Wilde: Patterns for Robust Extensibility">Patterns for Robust Extensibility</a></toc>
 		<toc class="abstract"><em>Mobile</em> and the <em>Internet of Things (IoT)</em> are two examples of particularly rapidly evolving ecosystems. In both cases, the diversity and rate of change (in mobile devices as well as in IoT "things") are challenging factors. This means that it is essential to have an IT architecture in place that provides both the stability and the flexibility to be able to handle the changing landscape. Cleanly identifying and managing services is a foundation that can then be used to quickly and robustly build mobile applications that are based on IoT services.</toc>
 		<date short="2016-10-26">October 26, 2016</date>
 		<slide id="summary">
@@ -556,8 +557,13 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
-			<slide id="...">
-				<title>...</title>
+			<slide id="protocol-design">
+				<title>Scalable Protocol Design</title>
+				<ul>
+					<li>Use protocols and/or patterns instead of building snowflakes</li>
+					<li>Diverse ecosystems create specific challenges for protocols/services</li>
+					<li>Separating stable/evolving parts can make a big difference</li>
+				</ul>
 			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
