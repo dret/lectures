@@ -50,4 +50,184 @@
 			</tbody>
 		</table>
 	</toc>
+	<presentation id="welcome">
+		<title>Welcome, Overview, and Motivation</title>
+		<toc class="abstract">APIs increasingly become the <em>connective tissue</em> of the Web in general, and the way how business is looking at their IT strategy and structure in particular. APIs are what both <em>separate</em> and <em>connect</em> collaborating and communicating peers: They facilitate <em>loose coupling</em> of service providers and consumers and thus strike a balance between the ability to collaborate and cooperate, while still maintaining independence and individual control.</toc>
+		<toc class="resources"><a href="http://www.hbs.edu/faculty/Pages/item.aspx?num=193" title="Michael Porter, 'The Competitive Advantage: Creating and Sustaining Superior Performance', Free Press, New York, 1985">Competitive Advantage</a>&#160;· <a href="http://dret.net/netdret/publications#pau09a" title="Cesare Pautasso and Erik Wilde, 'Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design', Proceedings of the 18th International World Wide Web Conference, ACM Press, Madrid, Spain, April 2009">Loose Coupling</a></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="intro">
+			<title>Introduction</title>
+			<slide id="dret">
+				<title>About Me</title>
+				<ul>
+					<li><a href="http://dret.net/netdret/publications#wil97b">Ph.D. in Communications Systems</a> from <a href="http://www.ethz.ch/">ETH Zürich</a></li>
+					<li>Working on Web Architecture after writing <a href="http://dret.net/netdret/publications#wil98">the first Web Technology book</a></li>
+					<li>While at UC Berkeley, working on <a href="http://dret.net/netdret/publications#wil09g">Service Models for Open Government</a></li>
+					<li>While at EMC, working on transforming software products into service platforms</li>
+					<li>While at Siemens, working on using <em title="Internet of Things">IoT</em> to build <em title="Web of Things">WoT</em> (<q>APIs for Things</q>)</li>
+					<li>Joined <a href="http://www.ca.com/" title="CA Technologies">CA</a>'s <a href="http://www.apiacademy.co/">API Academy</a> in May 2016 and now all about API Design and Strategy</li>
+					<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="https://www.flickr.com/photos/dret/" title="dret">flickr</a>, and <a href="http://dret.typepad.com/dretblog/">my blog</a></li>
+				</ul>
+			</slide>
+			<slide id="api-academy">
+				<title>API Academy</title>
+				<ul>
+					<li>Global Team working on <em>API Strategy and Design</em> topics</li>
+					<ul>
+						<li><a href="http://www.apiacademy.co/team_member/matt-mclarty/">Matt McLarty</a> (Vancouver)</li>
+						<li><a href="http://www.apiacademy.co/team_member/mike-amundsen/">Mike Amundsen</a> (Cincinnati)</li>
+						<li><a href="http://www.apiacademy.co/team_member/ronnie-mitra/">Ronnie Mitra</a> (London)</li>
+						<li><a href="http://www.apiacademy.co/team_member/erik-wilde/">Erik Wilde</a> (Zürich)</li>
+					</ul>
+					<li>Evangelizing ideas and technologies</li>
+					<ul>
+						<li>Speaking (conferences, events)</li>
+						<li>Teaching (workshops, bootcamps)</li>
+						<li>Writing (blogs, articles, books)</li>
+						<li>Doing (side projects on API-related topics)</li>
+						<li>Standardizing (participating in specification work)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="msa-book">
+				<title>Microservice Architecture</title>
+				<img src="MSA-cover.jpg" href="http://transform.ca.com/API-microservice-architecture-oreilly-book.html" title="Microservice Architecture: Aligning Principles, Practices, and Culture" style="float: right ; height : 55% ; margin : 4% ; "/>
+				<ul>
+					<li><q>Microservice Architecture: Aligning Principles, Practices, and Culture</q></li>
+					<li><a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/">Authored by</a> <a href="http://www.apiacademy.co/">API Academy</a> members Irakli Nadareishvili, Ronnie Mitra, Matt McLarty, and Mike Amundsen</li>
+					<ul>
+						<li>Get <a href="http://transform.ca.com/API-microservice-architecture-oreilly-book.html">electronic version for free courtesy of CA Technologies</a></li>
+						<li>Get <a href="http://shop.oreilly.com/product/0636920050308.do">a hardcopy version</a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="motivation">
+			<title>Motivation</title>
+			<slide id="value-chains">
+				<title>Value Chain</title>
+				<ul>
+					<li>Business is fundamentally about <em>value chains</em></li>
+					<li>Value chains <em>connect business units</em> to create overall value</li>
+					<li>Connections are increasingly focusing on <em>passing information along</em></li>
+					<li>Passing information requires sophisticated <em>information logistics</em></li>
+					<li>Information logistics must <em>reduce friction and maximize flexibility</em></li>
+					<li>Friction and flexibility are deciding factors when <em>adapting the value chain</em></li>
+					<li>Adapting the value chain needs <em>API landscapes that can adapt easily</em></li>
+				</ul>
+			</slide>
+			<slide id="systems-ecosystems">
+				<title>Coupling Matters</title>
+				<ul>
+					<li>Traditional enterprise IT approaches heavily favor <em>integration</em></li>
+					<ul>
+						<li>Integration aims at building one system that contains all essential parts</li>
+						<li>Integration provides optimization potential</li>
+						<li>Integration promises a destination instead of a journey</li>
+					</ul>
+					<li>Integration cost/benefit analysis depends heavily on how much change is required</li>
+					<ul>
+						<li>Integrated systems tend to win as long as the future is (roughly) as predicted</li>
+						<li>Integrated systems can be costly if adaptation needs necessitate big changes</li>
+					</ul>
+					<li><em>Ecosystems</em> trade flexibility over integration optimization</li>
+					<ul>
+						<li>Ecosystems tend to do worse as long as conditions remain mostly stable</li>
+						<li>Ecosystems tend to outperform/outlive integrated systems in light of bigger changes</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="integrated-bike">
+				<title>Integration Cost/Benefit</title>
+				<img title="Cervelo P5X Triathlon Bike" href="https://www.cervelo.com/en/triathlon/p-series/p5x" src="cervelo-p5x.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="overview">
+			<title>Overview</title>
+			<slide id="terminology">
+				<title>What is an API?</title>
+				<ul>
+					<li><em>APIs</em> used to be local interfaces between code components</li>
+					<li><em>Network interfaces</em> used to be called <em>protocols</em></li>
+					<li><q>APIs</q> still are local interfaces between code components</li>
+					<ul>
+						<li>Often these are not explicitly labeled as <em>programmatic APIs</em></li>
+						<li><a href="http://html5-overview.net">HTML5</a> is a current example for a modern set of programmatic APIs</li>
+					</ul>
+					<li><q>APIs</q> nowadays often refer to <em>network APIs</em></li>
+					<ul>
+						<li>They are defined in terms of specific network abstractions</li>
+						<li><a href="http://www.programmableweb.com/">ProgrammableWeb</a> has a large collection of public network APIs</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="public-api-count">
+				<title>Public API Count</title>
+				<img title="Public API Count by ProgrammableWeb" src="programmable-web.png" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="presentation-microservices">
+				<title>Microservices</title>
+				<ul>
+					<li>Decomposing the Monolith into loosely coupled components</li>
+					<li>Organization/cultural issues when using microservices</li>
+					<li>Managing the diversity resulting from microservices</li>
+				</ul>
+			</slide>
+			<slide id="presentation-design">
+				<title>API Design</title>
+				<ul>
+					<li>APIs should <em>connect</em> and <em>isolate</em> at the same time</li>
+					<li>API design has short term benefits and long term risks</li>
+					<li>Achieving loose coupling is largely a function of API design</li>
+				</ul>
+			</slide>
+			<slide id="presentation-management">
+				<title>API Management</title>
+				<ul>
+					<li>Managing APIs means managing <em>information logistics</em></li>
+					<li>Balancing agility and robustness requires a flexible foundation</li>
+					<li>Managing APIs means managing and enabling change and reconfiguration</li>
+				</ul>
+			</slide>
+			<slide id="presentation-security">
+				<title>API Security</title>
+				<ul>
+					<li>Traditional security often is built on securing integrated environments</li>
+					<li>Securing ecosystems takes a more decentralized view of security</li>
+					<li>Web security provides good blueprints for how to decentralize security</li>
+				</ul>
+			</slide>
+			<slide id="presentation-evolution">
+				<title>API Evolution</title>
+				<ul>
+					<li>APIs change because business units change their value creation</li>
+					<li>Designing for change is necessary is loosely coupled scenarios</li>
+					<li>Decentralized systems have a long history of patterns for loose coupling</li>
+				</ul>
+			</slide>
+			<slide id="presentation-product-management">
+				<title>API Product Management</title>
+				<ul>
+					<li>APIs are an essential part of the value created by business units</li>
+					<li>API product management means to elevate APIs to business documents</li>
+					<li>Staying on top of APIs means staying on top of visible information</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/cwin-2016/introduction"><code>dret.net/lectures/cwin-2016/introduction</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/cwin-2016"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>
