@@ -283,11 +283,152 @@
 	</presentation>
 	<presentation id="security">
 		<title>API Security</title>
-		<toc class="abstract">...</toc>
+		<toc class="abstract">APIs are the visible and accessible surface of an organization's IT. This presentation presents different types of attacks, an introduction to security fundamentals and technologies, and how these apply to APIs.</toc>
 		<toc class="resources"></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="security-101">
+			<title>Security 101</title>
+			<slide>
+				<title>Cryptography</title>
+				<ul>
+					<li>Cryptography is structured into different layers</li>
+					<ul>
+						<li>layering is a well-established principle for <em>separation of concerns</em></li>
+					</ul>
+					<li><em>Cryptographic primitives</em> implement very basic functionality</li>
+					<ul>
+						<li>changes and advancements in this area are limited to very specialized researchers</li>
+						<li>it is easy to make fatal mistakes which then challenge everything built on top if it</li>
+					</ul>
+					<li><em>Cryptographic protocols</em> assemble primitives into application-level solutions</li>
+					<ul>
+						<li>primitives solve very basic security problems (fingerprints, encryption, …)</li>
+						<li>protocols combine these into applications (digital signatures, secure communications, …)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="one-way-function">
+				<title>One-Way Function</title>
+				<img style="width : 70% ; margin : 2% ; " src="hash.gif" title="Hash"/>
+				<ul>
+					<li>Hashes (or <em>message digests</em>) are well-known in computer science</li>
+					<li>One-way functions are cryptographically safe hashes</li>
+					<ul>
+						<li>very hard to find an input producing a given output</li>
+						<li>very hard to find two inputs producing the same output (<q>collision</q>)</li>
+					</ul>
+				</ul>
+			</slide>
+			<part id="secret-key">
+				<title>Secret-Key Cryptography</title>
+				<slide>
+					<title>Plausible Encryption</title>
+					<ul>
+						<li>Secret-Key is was most people think of when thinking of encryption</li>
+						<ul>
+							<li><em>symmetric cryptography</em> is another popular term</li>
+						</ul>
+						<li>One key for encryption and decryption</li>
+						<li>Revealing the key makes encrypted data openly readable</li>
+						<ul>
+							<li>there must be a secure channel to transport keys, such as <a href="http://en.wikipedia.org/wiki/Diplomatic_bag">diplomatic pouches</a>.</li>
+						</ul>
+						<li>Good for long-term relationships with few partners</li>
+						<ul>
+							<li>exchange secret keys as part of the initial setup of a relationships</li>
+							<li>adding partners requires a <em>secure channel</em> for key exchange</li>
+							<li>changing keys requires a <em>secure channel</em> for key exchange</li>
+						</ul>
+						<li>Almost impractical in an environment with many ad-hoc partners</li>
+					</ul>
+				</slide>
+				<slide>
+					<title>Notice the Arrow</title>
+					<img style="width : 90% ; margin : 2% ; " src="secret-key.gif" title="Secret-Key Cryptography"/>
+				</slide>
+			</part>
+			<part id="public-key">
+				<title>Public-Key Cryptography</title>
+				<slide>
+					<title>Implausible Encryption</title>
+					<ul>
+						<li>Public-Key intuitively is hard to accept as a concept</li>
+						<ul>
+							<li><em>asymmetric cryptography</em> is another popular term</li>
+						</ul>
+						<li>Key pairs of one public and one secret key</li>
+						<ul>
+							<li><em>key generation</em> is the process of generating these key pairs</li>
+						</ul>
+						<li>The public key can be made available to the public</li>
+						<ul>
+							<li>only the secret key can do the inverse operation of the public key</li>
+						</ul>
+						<li>Good for short-term relationships with many partners</li>
+						<ul>
+							<li>publish your public key so that it can be used worldwide</li>
+							<li>everybody can encrypt data using the public key</li>
+							<li>only the owner of the secret can can decrypt the message and read it</li>
+						</ul>
+						<li>Computationally expensive and not good for a large amounts of data</li>
+					</ul>
+				</slide>
+				<slide>
+					<title>No Arrow Here …</title>
+					<img style="width : 90% ; margin : 2% ; " src="public-key-secret-encrypt.gif" title="Public-Key Cryptography (Encrypting with Secret Key)"/>
+				</slide>
+			</part>
+			<part id="crypto-protocols">
+				<title>Cryptographic Protocols</title>
+				<slide>
+					<title>Building Secure Applications</title>
+					<ul>
+						<li><em>Cryptographic primitives</em> in most cases are not sufficient</li>
+						<ul>
+							<li>they provide basic functionality for fundamental tasks</li>
+							<li>they must by combined to provide solutions for real-world problems</li>
+						</ul>
+						<li>Typical problem #1: How to ensure key authenticity</li>
+						<ul>
+							<li>with insecure keys, the majority of cryptographic methods is worthless</li>
+						</ul>
+						<li>Typical problem #2: How to communicate securely without shared keys</li>
+						<ul>
+							<li>many interesting scenarios are based on ad-hoc interactions</li>
+							<li>secret-key does not work, public-key needs to verify the peer</li>
+						</ul>
+						<li>Typical problem #3: How to check authenticity and integrity of data</li>
+						<ul>
+							<li>integrity can be done with checksums, but these could be forged</li>
+							<li>authenticity needs a cryptographically secure way of combining identity and data</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="certificate">
+					<title>Certificate</title>
+					<ul>
+						<li>Certificates are digital signatures issued by a trusted party</li>
+						<ul>
+							<li>most digital signatures are created with certified public keys</li>
+							<li>this means the digital signature is created based on a digitally signed key</li>
+						</ul>
+						<li>Who can you trust on the Web?</li>
+						<ul>
+							<li>trust can only start to grow based on initial trust in something</li>
+							<li>many systems come with pre-installed trust (<em>root certificates</em>)</li>
+							<li>certificates from other issuers will cause <a href="https://katapultmedia.com/">browsers to complain</a></li>
+						</ul>
+						<li>Certificates (like domain names) are a very easy way to make money</li>
+						<ul>
+							<li>in theory there are different levels of certificates with different levels of identity checking</li>
+							<li>in practice most sites choose the cheapest one that does not give an error message</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+		</part>
 	</presentation>
 </hotspot>
