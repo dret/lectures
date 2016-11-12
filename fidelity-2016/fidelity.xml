@@ -305,7 +305,7 @@
 					</ul>
 					<li><em>Cryptographic protocols</em> assemble primitives into application-level solutions</li>
 					<ul>
-						<li><em>Primitives</em> solve very basic security problems (fingerprints, encryption, …)</li>
+						<li><em>Primitives</em> solve basic security problems (fingerprints, encryption, …)</li>
 						<li><em>Protocols</em> combine these into applications (digital signatures, secure communications, …)</li>
 					</ul>
 				</ul>
@@ -371,7 +371,7 @@
 						<ul>
 							<li>Publish your public key so that it can be used worldwide</li>
 							<li>Everybody can encrypt data using the public key</li>
-							<li>Only the owner of the secret can can decrypt the message and read it</li>
+							<li>Only the owner of the secret can decrypt the message and read it</li>
 						</ul>
 						<li>Computationally expensive and not good for a large amounts of data</li>
 					</ul>
@@ -391,24 +391,24 @@
 							<li>They provide basic functionality for fundamental tasks</li>
 							<li>They must by combined to provide solutions for real-world problems</li>
 						</ul>
-						<li>Typical problem #1: How to ensure key authenticity</li>
+						<li>Typical problem #1: How to ensure key authenticity?</li>
 						<ul>
 							<li>With insecure keys, the majority of cryptographic methods is worthless</li>
 						</ul>
-						<li>Typical problem #2: How to communicate securely without shared keys</li>
+						<li>Typical problem #2: How to communicate securely without shared keys?</li>
 						<ul>
 							<li>Many interesting scenarios are based on ad-hoc interactions</li>
 							<li>Secret-key does not work, public-key needs to verify the peer</li>
 						</ul>
-						<li>Typical problem #3: How to check authenticity and integrity of data</li>
+						<li>Typical problem #3: How to check authenticity and integrity of data?</li>
 						<ul>
 							<li>Integrity can be done with checksums, but these could be forged</li>
 							<li>Authenticity needs a cryptographically secure way of combining identity and data</li>
 						</ul>
 					</ul>
 				</slide>
-				<slide id="certificate">
-					<title>Certificate</title>
+				<slide id="certificates">
+					<title>Certificates</title>
 					<ul>
 						<li>Certificates are digital signatures issued by a trusted party</li>
 						<ul>
@@ -417,11 +417,11 @@
 						</ul>
 						<li>Who can you trust on the Web?</li>
 						<ul>
-							<li>Trust can only start to grow based on initial trust in something</li>
-							<li>Many systems come with pre-installed trust (<em>root certificates</em>)</li>
+							<li>Trust can only start to grow based on initial trust</li>
+							<li>Many systems come with <em>pre-installed trust</em> (<em>root certificates</em>)</li>
 							<li>Certificates from other issuers will cause security exceptions</li>
 						</ul>
-						<li>Certificates (like domain names) are a very easy way to make money</li>
+						<li>Certificates (like domain names) are an easy way to make money</li>
 						<ul>
 							<li>In theory there are different levels of certificates with different levels of identity checking</li>
 							<li>In practice most sites choose the cheapest one that does not give an error message</li>
