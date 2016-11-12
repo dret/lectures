@@ -230,6 +230,15 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="design">
+		<title>API Design</title>
+		<toc class="abstract">...</toc>
+		<toc class="resources"></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+	</presentation>
 	<presentation id="security">
 		<title>API Security</title>
 		<toc class="abstract">...</toc>
