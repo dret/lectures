@@ -231,7 +231,16 @@
 		</part>
 	</presentation>
 	<presentation id="design">
-		<title>API Design</title>
+		<title>Introduction to API Design</title>
+		<toc class="abstract">...</toc>
+		<toc class="resources"></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+	</presentation>
+	<presentation id="design-advanced">
+		<title>API Design Advanced Topics</title>
 		<toc class="abstract">...</toc>
 		<toc class="resources"></toc>
 		<slide id="summary">
