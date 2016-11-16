@@ -300,7 +300,7 @@
 	<presentation id="security">
 		<title>API Security</title>
 		<toc class="abstract">APIs are the visible and accessible surface of an organization's IT. This presentation presents different types of attacks, an introduction to security fundamentals and technologies, and how these apply to APIs.</toc>
-		<toc class="resources"></toc>
+		<toc class="resources"><a href="https://tools.ietf.org/html/rfc5246" title="RFC 5246: The Transport Layer Security (TLS) Protocol Version 1.2, August 2008">TLS</a>&#160;· <a href="https://tools.ietf.org/html/rfc5849" title="RFC 5849: The OAuth 1.0 Protocol, April 2010">OAuth 1.0</a>&#160;· <a href="https://tools.ietf.org/html/rfc6749" title="RFC 6749: The OAuth 2.0 Authorization Framework, August 2008">OAuth 2.0</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
