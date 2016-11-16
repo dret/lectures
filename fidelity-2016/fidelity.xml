@@ -290,7 +290,7 @@
 	</presentation>
 	<presentation id="evolution">
 		<title>API Evolution</title>
-		<toc class="abstract">...</toc>
+		<toc class="abstract">API landscapes are constantly evolving: New APIs are added, existing APIs change, and established APIs are deprecated and eventually retired. API Evolution requires to have a set of practices that support all these activities. These practices should be easy to follow, should be visible through the APIs themselves, and thus allow the landscape to make its own evolution visible and manageable.</toc>
 		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title="Erik Wilde, 'Patterns for Robust Extensibility'">Robust Extensibility</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
