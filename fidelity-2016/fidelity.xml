@@ -267,7 +267,7 @@
 		<toc class="resources"><a href="http://shop.oreilly.com/product/9780596801694.do" title="Subbu Allamaraju, 'RESTful Web Services Cookbook', O'Reilly Media, February 2010">RESTful Cookbook</a>&#160;· <a href="http://shop.oreilly.com/product/0636920028468.do" title="Leonard Richardson, Mike Amundsen, and Sam Ruby, 'RESTful Web APIs', O'Reilly Media, September 2013">RESTful APIs</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
+			<p class="abstract"><em>API Design</em> is about loose coupling, making sure that every service is entirely self-contained and can only be interacted with through its API. Another important aspect of this architectural approach is that designers and developers have a lot of autonomy when it comes to designing, developing, and deploying their services. For this reason, <em>API design</em> for services and microservices must specifically target the <em>diversity</em> and <em>decentralization</em> that are inherent properties of any (micro)services landscape.<toc class="abstract"/></p>
 		</slide>
 	</presentation>
 	<presentation id="design-advanced">
