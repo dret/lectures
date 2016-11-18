@@ -791,7 +791,7 @@
 	</presentation>
 	<presentation id="management">
 		<title>API Management</title>
-		<toc class="abstract">...</toc>
+		<toc class="abstract">API management needs to work both on a <em>technical</em> as well as on an <em>organizational/cultural</em> level. For the technical level, The most challenging factor in large API landscapes are the number of services, the rate of change, and the diversity of API designs in that landscape. API management needs to be able to deal with these factors in ways which do not inhibit the organic growth of the API ecosystem, while still maintaining a level of oversight and monitoring that make it possible to support data-driven decision-making.</toc>
 		<toc class="resources"><a href="http://apistylebook.com/" title="Arnaud Lauret, 'API Stylebook', 2016">API Stylebook</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
