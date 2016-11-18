@@ -169,7 +169,20 @@
 				<img title="Public API Count by ProgrammableWeb" src="programmable-web.png" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="api-types">
-				<title>Public/Partner/Internal APIs</title>
+				<title>Public/Partner/Private APIs</title>
+				<ul>
+					<li>APIs are exposed interfaces to functions or capabilities</li>
+					<li>The scope of available functions/capabilities differs</li>
+					<ul>
+						<li><em>Public APIs</em> are openly available on the Web/Internet with few restrictions</li>
+						<li><em>Partner APIs</em> are available in the context of existing and well-defined relationships</li>
+						<li><em>Private APIs</em> are not (supposed to be) used by anybody outside the organization</li>
+					</ul>
+					<li>Deciding on public/partner/private should be a policy decision</li>
+					<ul>
+						<li>Changing between modes should be possible without any re-engineering</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="public-api">
 				<title>Public APIs</title>
@@ -177,8 +190,8 @@
 			<slide id="partner-api">
 				<title>Partner APIs</title>
 			</slide>
-			<slide id="internal-api">
-				<title>Internal APIs</title>
+			<slide id="private-api">
+				<title>Private APIs</title>
 			</slide>
 			<slide id="banking-apis">
 				<title>Banking APIs</title>
