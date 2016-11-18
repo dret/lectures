@@ -186,6 +186,25 @@
 			</slide>
 			<slide id="public-api">
 				<title>Public APIs</title>
+				<ul>
+					<li>Public APIs were the first wave of <em>Web APIs</em></li>
+					<ul>
+						<li>Using the existing Internet infrastructure</li>
+						<li>Using some set of Web technologies (HTTP at the very least)</li>
+						<li>Exposing services for programmatic use (beyond screen scraping)</li>
+					</ul>
+					<li>Public APIs launched the first wave of <em>API Management</em></li>
+					<em>
+						<li>Defining access realms to be used for access control</li>
+						<li>Self-service sites for registration and obtaining API access tokens</li>
+						<li>Management consoles for controlling access levels and rates</li>
+					</em>
+					<li>Public API models can be hard to justify as business cases</li>
+					<ul>
+						<li>Many public APIs nowadays are the free tier of <em>freemium</em> API models</li>
+						<li>Even public APIs need management for controlling use and misuse</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="partner-api">
 				<title>Partner APIs</title>
