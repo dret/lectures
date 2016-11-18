@@ -855,8 +855,8 @@
 				<title>Explaining the MS API Landscape</title>
 				<ul>
 					<li>MS and exposed APIs can be different</li>
-					<li>APIM should be able to handle internal and exposed APIs</li>
-					<li>What's <em>internal</em> and <em>exposed</em> can be a contextual question</li>
+					<li>APIM should be able to handle private and partner/public APIs</li>
+					<li>What's <em>private</em> and <em>partner/public</em> can be a contextual question</li>
 					<li>External API users might want to consume more than one set of APIs</li>
 					<li>Exposing the landscape or an API gateway are two possible choices</li>
 					<ul>
