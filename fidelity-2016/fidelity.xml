@@ -208,6 +208,24 @@
 			</slide>
 			<slide id="partner-api">
 				<title>Partner APIs</title>
+				<ul>
+					<li>Partner APIs assume an established relationship with API users</li>
+					<ul>
+						<li>Only available to a smaller set of existing/potential partners</li>
+						<li>Driven by the nature of the business relationship with partners</li>
+					</ul>
+					<li>Partner APIs are useful tools for quantifying partner relationships</li>
+					<ul>
+						<li>Keeping track of partner relationships and engagements</li>
+						<li>Identification of problem areas and investment opportunities</li>
+					</ul>
+					<li>Aggregating/analyzing API usage data on various levels</li>
+					<ul>
+						<li><em>Operational level</em> for understanding status and operational problems</li>
+						<li><em>Engagement level</em> for understanding interactions with all partners</li>
+						<li><em>Business level</em> for understanding the value chain view</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="private-api">
 				<title>Private APIs</title>
