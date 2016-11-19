@@ -229,6 +229,20 @@
 			</slide>
 			<slide id="private-api">
 				<title>Private APIs</title>
+				<ul>
+					<li>Only exposed to consumers within the organization</li>
+					<ul>
+						<li>SOA/Microservices turn APIs into the software integration fabric</li>
+						<li>Dependency management is necessary to keep track of the landscape</li>
+					</ul>
+					<li>Securing/controlling private APIs may use different tooling</li>
+					<ul>
+						<li>Public/partner APIs are secured with a gateway and access policies</li>
+						<li>Private APIs may be exposed with less controls in a secure environment</li>
+						<li><em>Monitoring</em> suggests to use the same tooling for all APIs</li>
+					</ul>
+					<li><em>Documentation</em> and <em>discovery</em> are essential for a healthy ecosystem</li>
+				</ul>
 			</slide>
 			<slide id="banking-apis">
 				<title>Banking APIs</title>
