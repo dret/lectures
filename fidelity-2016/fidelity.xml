@@ -1578,6 +1578,68 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="security-concepts">
+			<title>Security Concepts</title>
+			<slide id="identification">
+				<title>Identification</title>
+				<ul>
+					<li><em>Identity</em> is required for any non-anonymous services</li>
+					<ul>
+						<li><em>Groups</em> can have an identity (Facebook members see more than non-members)</li>
+						<li><em>Pseudonyms</em> are <q>hidden identities</q> (the <q>real identity</q> is not visible)</li>
+					</ul>
+					<li><em>Proof of Identity</em> is important for any privileged operation</li>
+					<ul>
+						<li><em>Signatures</em> and <em>seals</em> are traditional ways</li>
+						<li>Traditional ways are mostly protected by law (but not really safe)</li>
+						<li>More modern ways often include technical methods for <link href="authentication"/></li>
+					</ul>
+					<li>Client identity on the Web can be bound in three ways:</li>
+					<ol>
+						<li>Computer (most of the time <q>identified</q> by an IP address)</li>
+						<li>Client (in the form of state like a cookie or token)</li>
+						<li>User (identified through some <link href="authentication">authentication method</link>)</li>
+					</ol>
+				</ul>
+			</slide>
+			<slide id="authentication">
+				<title>Authentication</title>
+				<ul>
+					<li><em>Authentication</em> is the process of verifying an identity</li>
+					<ul>
+						<li>The weakest form of authentication is trust</li>
+						<li>Legal consequences can make it more risky to falsify authentication</li>
+						<li>Technical measures can make it hard to impossible to falsify authentication</li>
+					</ul>
+					<li>Authentication on the Internet comes in different flavors</li>
+					<ul>
+						<li>Implicitly by accessing a server from some IP address range</li>
+						<li>Presenting a password as a proof of identity</li>
+						<li>Presenting a cookie/token from a previous formal authentication</li>
+						<li>2-factor authentication (often involving one-time <a href="http://en.wikipedia.org/wiki/Personal_identification_number">PIN</a>s)</li>
+					</ul>
+					<li>Risk and potential damage should justify authentication methods</li>
+				</ul>
+			</slide>
+			<slide id="authorization">
+				<title>Authorization</title>
+				<ul>
+					<li><em>Authorization</em> is the question of allowing operations</li>
+					<ul>
+						<li><link href="identification"/> is necessary to identify the initiator</li>
+						<li><link href="authentication"/> is necessary to verify the initiator's identity</li>
+						<li>If the initiator is authorized, the operation can be performed</li>
+					</ul>
+					<li>Internet services often are <em>public</em> or <em>partner/private</em></li>
+					<ul>
+						<li>Public services do not require any identification (and thus authentication)</li>
+						<li>Restricted access services can be group pages (internal company pages)</li>
+						<li>Private access is another popular scenario (email, facebook, online banking)</li>
+					</ul>
+					<li>Web servers have well-defined ways of <link href="http-authentication">performing authentication</link></li>
+				</ul>
+			</slide>
+		</part>
 		<part id="security-101">
 			<title>Security 101</title>
 			<slide>
@@ -1867,6 +1929,25 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<ul>
 						<li><em>Protected resources</em> owned by the <em>resource owner</em> are stored by the <em>server</em></li>
 						<li><em>Clients</em> get resource access via tokens (and not via full authentication)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="oauth-versions">
+				<title>OAuth 1.0/2.0</title>
+				<ul>
+					<li>OAuth 1.0 has one goal scenario</li>
+					<ul>
+						<li>Allowing authentication from Web apps as clients</li>
+					</ul>
+					<li>OAuth 1.0 does not require encrypted HTTP (i.e., HTTPS)</li>
+					<ul>
+						<li>Encryption is required on the protocol level</li>
+						<li>Handling encrypted values can be hard depending on the programming environment</li>
+					</ul>
+					<li>OAuth 2.0 adds additional scenarios as application areas</li>
+					<ul>
+						<li>Supporting authentication in native apps</li>
+						<li>Encryption is not longer required on the protocol level</li>
 					</ul>
 				</ul>
 			</slide>
