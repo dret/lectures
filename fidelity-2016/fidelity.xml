@@ -1582,6 +1582,87 @@
 				<img style="width : 90% ; margin : 2% ; " src="https.gif" title="HTTP and SSL"/>
 			</slide>
 		</part>
+		<part id="http-authentication">
+			<title>HTTP Authentication</title>
+			<slide>
+				<title>HTTP Access Control</title>
+				<ul>
+					<li>HTTP servers can <a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error">deny access</a> through access control</li>
+					<ul>
+						<li><code>401 Unauthorized</code> means the resource is access controlled</li>
+						<li><code>403 Forbidden</code> means the resource is inaccessible</li>
+						<li><code>405 Method Not Allowed</code> signals a request using the wrong <em>request method</em></li>
+					</ul>
+					<li>Two different approaches to unauthorized access are possible</li>
+					<ul>
+						<li>repeat the HTTP request with the proper authentication credentials</li>
+						<li>redirect to a <link href="login-page"/> and establish an authenticated session</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>HTTP Authentication</title>
+				<img style="width : 90% ; margin : 2% ; " src="http-authentication.gif" title="HTTP Authentication"/>
+			</slide>
+			<slide id="http-basic">
+				<title>Basic HTTP Authentication</title>
+				<ul>
+					<li>Authentication is based on <em>authentication realms</em></li>
+					<ul>
+						<li>A set of resources for which the authentication is required</li>
+						<li>An opaque name which is used to signal which login is required</li>
+						<li>Username/password often is specific for a given realm</li>
+					</ul>
+					<li>Users supply username and password through the client</li>
+					<ul>
+						<li>Sent as <a href="http://en.wikipedia.org/wiki/Base64">Base64</a> encoded <q><code>username:password</code></q> string</li>
+						<li>Username and password are <a href="http://www.google.com/search?hl=en&amp;q=base64+decoder"><em>not</em> transmitted securely</a></li>
+						<li>Basic authentication should <em>always</em> use <link href="https">HTTPS</link></li>
+					</ul>
+					<li>Authorization is handled on the server side</li>
+					<pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">HTTP/1.0 401 Unauthorized
+WWW-Authenticate: Basic realm="SokEvo"</pre>
+					<pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">GET /private/index.html HTTP/1.0
+Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
+				</ul>
+			</slide>
+			<slide>
+				<title>Repeated Access</title>
+				<ul>
+					<li>Clients typically access more than one protected resource</li>
+					<ul>
+						<li>Perfectly stateless clients always request authentication from users</li>
+						<li>Using the <em>realm</em> clients can identify repeated accesses</li>
+					</ul>
+					<li>Web interactions by default are stateless</li>
+					<ul>
+						<li>Each request is completely independent from other requests</li>
+						<li>Stateless interactions make the Web loosely coupled and scalable</li>
+						<li>Concepts like the <em>realm</em> or <em>cookies</em> introduce <q>state</q></li>
+					</ul>
+					<li>Clients remember the authentication and replay it automatically</li>
+					<ul>
+						<li>Browsers provide little control over this feature</li>
+						<li><q>Logging out</q> of HTTP authenticated <q>sessions</q> is hard</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="login-page">
+				<title>Login Page</title>
+				<ul>
+					<li><link href="http-basic"/> works with browser controls (including the window)</li>
+					<ul>
+						<li>No possibility to <q>log out</q> without using browser-specific controls</li>
+						<li>Client side security depends on browser security measures</li>
+					</ul>
+					<li>Using <em>HTML forms</em> gives more freedom in session management</li>
+					<ul>
+						<li><em>Authentication</em> and <em>authorization</em> are application-based</li>
+						<li>If there were <q>secure personal browsers</q> this would not work very well</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="oauth">
 			<title>OAuth</title>
 			<slide id="oauth-motivation">
