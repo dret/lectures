@@ -330,7 +330,7 @@
 	</presentation>
 	<presentation id="design">
 		<title>Introduction to API Design</title>
-		<toc class="time">10.00-10.45</toc>
+		<toc class="time">10.00-11.00</toc>
 		<toc class="abstract"><em>API Design</em> is about loose coupling, making sure that every service is entirely self-contained and can only be interacted with through its API. Another important aspect of this architectural approach is that designers and developers have a lot of autonomy when it comes to designing, developing, and deploying their services. For this reason, <em>API design</em> for services and microservices must specifically target the <em>diversity</em> and <em>decentralization</em> that are inherent properties of any (micro)services landscape.</toc>
 		<toc class="resources"><a href="http://shop.oreilly.com/product/9780596801694.do" title="Subbu Allamaraju, 'RESTful Web Services Cookbook', O'Reilly Media, February 2010">RESTful Cookbook</a>&#160;· <a href="http://shop.oreilly.com/product/0636920028468.do" title="Leonard Richardson, Mike Amundsen, and Sam Ruby, 'RESTful Web APIs', O'Reilly Media, September 2013">RESTful APIs</a></toc>
 		<slide id="summary">
@@ -670,7 +670,7 @@
 	</presentation>
 	<presentation id="design-advanced">
 		<title>API Design Advanced Topics</title>
-		<toc class="time">10.45-12.00</toc>
+		<toc class="time">11.00-12.00</toc>
 		<toc class="abstract"><em>Microservice Architecture</em> and <em>Microservices</em> embrace a new style of IT development and culture that focuses on speed, safety, robustness, and scalability. Taking the ideas of agile development, CI/CD, and DevOps one step further, microservices embrace organizational changes as well, so that improved IT processes are not compromised by the side-effects of organizational realities.</toc>
 		<toc class="resources"><a href="http://transform.ca.com/API-microservice-architecture-oreilly-book.html" title="Microservice Architecture: Aligning Principles, Practices, and Culture">Microservices Book</a>&#160;· <a href="http://www.martinfowler.com/articles/microservices.html" title="Martin Fowler on Microservices">Fowler on Microservices</a>&#160;· <a href="http://dret.net/netdret/publications#pau09a" title="Cesare Pautasso and Erik Wilde, 'Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design', Proceedings of the 18th International World Wide Web Conference, ACM Press, Madrid, Spain, April 2009">Loose Coupling</a></toc>
 		<slide id="summary">
