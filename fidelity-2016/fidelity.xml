@@ -469,19 +469,19 @@
 				<ol>
 					<li>An <em>architectural style</em> for building loosely coupled systems</li>
 					<ul>
-						<li>defined by a set of general <em>constraints</em> (<em>principles</em>)</li>
-						<li>the Web (URI/HTTP/HTML/XML) is an <em>instance</em> of this style</li>
+						<li>Defined by a set of general <em>constraints</em> (<em>principles</em>)</li>
+						<li>The Web (URI/HTTP/HTML/XML) is an <em>instance</em> of this style</li>
 					</ul>
 					<li><em>The Web used correctly</em> (i.e., not using the Web as transport)</li>
 					<ul>
 						<li>HTTP is built according to RESTful principles</li>
-						<li>services are built on top of Web standards without misusing them</li>
-						<li>most importantly, HTTP is an <em>application protocol</em> (not a <em>transport protocol</em>)</li>
+						<li>Services are built on top of Web standards without misusing them</li>
+						<li>Most importantly, HTTP is an <em>application protocol</em> (not a <em>transport protocol</em>)</li>
 					</ul>
 					<li>Anything that <em>uses HTTP and XML</em> (XML without SOAP)</li>
 					<ul>
 						<li>XML-RPC was the first approach for this</li>
-						<li>violates REST because there is no uniform interface</li>
+						<li>Violates REST because there is no uniform interface</li>
 					</ul>
 				</ol>
 			</slide>
@@ -519,15 +519,15 @@
 				<ul>
 					<li>REST is an architectural style</li>
 					<ul>
-						<li>distilled from the Web <em>a posteriori</em></li>
-						<li>some of the Web's standards and practices are not perfectly RESTful</li>
+						<li>Distilled from the Web <em>a posteriori</em></li>
+						<li>Some of the Web's standards and practices are not perfectly RESTful</li>
 					</ul>
 					<li>The Web is an information system following REST</li>
 					<li>It is possible to design other RESTful information systems</li>
 					<ul>
-						<li>different uniform interfaces (not using HTTP's methods)</li>
-						<li>different representations (not using HTML or XML)</li>
-						<li>different identification (not using URIs)</li>
+						<li>Different uniform interfaces (not using HTTP's methods)</li>
+						<li>Different representations (not using HTML or XML)</li>
+						<li>Different identification (not using URIs)</li>
 					</ul>
 				</ul>
 			</slide>
@@ -571,9 +571,9 @@
 					<li>The same small set of operations applies to <link href="identification-constraint">everything</link></li>
 					<li>A small set of <em>verbs</em> applied to a large set of <em>nouns</em></li>
 					<ul>
-						<li>verbs are universal and not invented on a per-application base</li>
-						<li>if many applications need new verbs, the uniform interface can be extended</li>
-						<li>natural language works in the same way (new verbs rarely enter language)</li>
+						<li>Verbs are universal and not invented on a per-application base</li>
+						<li>If many applications need new verbs, the uniform interface can be extended</li>
+						<li>Natural language works in the same way (new verbs rarely enter language)</li>
 					</ul>
 					<li>Identify operations that are candidates for optimization</li>
 					<ul>
@@ -616,8 +616,8 @@
 					</ul>
 					<li>RESTful applications <em>navigate</em> instead of <em>calling</em></li>
 					<ul>
-						<li><link href="self-describing-constraint">representations</link> contain information about possible traversals</li>
-						<li>applications navigate to resources using link semantics</li>
+						<li><link href="self-describing-constraint">Representations</link> contain information about possible traversals</li>
+						<li>Applications navigate to resources using link semantics</li>
 						<li>Navigation can be delegated since all links use <link href="identification-constraint">identifiers</link></li>
 					</ul>
 				</ul>
@@ -1731,20 +1731,20 @@
 				<ul>
 					<li><link href="public-key">Public-Key cryptography</link> is computationally expensive</li>
 					<ul>
-						<li>it is possible to encrypt all traffic using asymmetric key pairs</li>
-						<li>this generates considerably more load on the server side</li>
+						<li>It is possible to encrypt all traffic using asymmetric key pairs</li>
+						<li>This generates considerably more load on the server side</li>
 					</ul>
 					<li>Combining <link href="public-key">public-key</link> and <link href="secret-key">secret-key</link> cryptography</li>
 					<ol>
-						<li>check the public key for authenticity (using a <link href="certificate"/>)</li>
-						<li>generate a key for a secret-key encryption scheme</li>
-						<li>use the public key to securely transmit the secret key</li>
-						<li>use the secret key for securely transmitting the payload</li>
+						<li>Check the public key for authenticity (using a <link href="certificate"/>)</li>
+						<li>Generate a key for a secret-key encryption scheme</li>
+						<li>Use the public key to securely transmit the secret key</li>
+						<li>Use the secret key for securely transmitting the payload</li>
 					</ol>
 					<li>Combines the advantages of both methods</li>
 					<ul>
-						<li>the lower complexity of secret-key algorithms</li>
-						<li>the ability of public-key algorithms to work without a secure channel</li>
+						<li>The lower complexity of secret-key algorithms</li>
+						<li>The ability of public-key algorithms to work without a secure channel</li>
 					</ul>
 				</ul>
 			</slide>
@@ -1784,8 +1784,8 @@
 					</ul>
 					<li>Two different approaches to unauthorized access are possible</li>
 					<ul>
-						<li>repeat the HTTP request with the proper authentication credentials</li>
-						<li>redirect to a <link href="login-page"/> and establish an authenticated session</li>
+						<li>Repeat the HTTP request with the proper authentication credentials</li>
+						<li>Redirect to a <link href="login-page"/> and establish an authenticated session</li>
 					</ul>
 				</ul>
 			</slide>

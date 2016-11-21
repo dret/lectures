@@ -554,19 +554,19 @@
 				<ol>
 					<li>An <em>architectural style</em> for building loosely coupled systems</li>
 					<ul>
-						<li>defined by a set of general <em>constraints</em> (<em>principles</em>)</li>
-						<li>the Web (URI/HTTP/HTML/XML) is an <em>instance</em> of this style</li>
+						<li>Defined by a set of general <em>constraints</em> (<em>principles</em>)</li>
+						<li>The Web (URI/HTTP/HTML/XML) is an <em>instance</em> of this style</li>
 					</ul>
 					<li><em>The Web used correctly</em> (i.e., not using the Web as transport)</li>
 					<ul>
 						<li>HTTP is built according to RESTful principles</li>
-						<li>services are built on top of Web standards without misusing them</li>
-						<li>most importantly, HTTP is an <em>application protocol</em> (not a <em>transport protocol</em>)</li>
+						<li>Services are built on top of Web standards without misusing them</li>
+						<li>Most importantly, HTTP is an <em>application protocol</em> (not a <em>transport protocol</em>)</li>
 					</ul>
 					<li>Anything that <em>uses HTTP and XML</em> (XML without SOAP)</li>
 					<ul>
 						<li>XML-RPC was the first approach for this</li>
-						<li>violates REST because there is no uniform interface</li>
+						<li>Violates REST because there is no uniform interface</li>
 					</ul>
 				</ol>
 			</slide>
@@ -604,15 +604,15 @@
 				<ul>
 					<li>REST is an architectural style</li>
 					<ul>
-						<li>distilled from the Web <em>a posteriori</em></li>
-						<li>some of the Web's standards and practices are not perfectly RESTful</li>
+						<li>Distilled from the Web <em>a posteriori</em></li>
+						<li>Some of the Web's standards and practices are not perfectly RESTful</li>
 					</ul>
 					<li>The Web is an information system following REST</li>
 					<li>It is possible to design other RESTful information systems</li>
 					<ul>
-						<li>different uniform interfaces (not using HTTP's methods)</li>
-						<li>different representations (not using HTML or XML)</li>
-						<li>different identification (not using URIs)</li>
+						<li>Different uniform interfaces (not using HTTP's methods)</li>
+						<li>Different representations (not using HTML or XML)</li>
+						<li>Different identification (not using URIs)</li>
 					</ul>
 				</ul>
 			</slide>
@@ -656,9 +656,9 @@
 					<li>The same small set of operations applies to <link href="identification-constraint">everything</link></li>
 					<li>A small set of <em>verbs</em> applied to a large set of <em>nouns</em></li>
 					<ul>
-						<li>verbs are universal and not invented on a per-application base</li>
-						<li>if many applications need new verbs, the uniform interface can be extended</li>
-						<li>natural language works in the same way (new verbs rarely enter language)</li>
+						<li>Verbs are universal and not invented on a per-application base</li>
+						<li>If many applications need new verbs, the uniform interface can be extended</li>
+						<li>Natural language works in the same way (new verbs rarely enter language)</li>
 					</ul>
 					<li>Identify operations that are candidates for optimization</li>
 					<ul>
@@ -701,8 +701,8 @@
 					</ul>
 					<li>RESTful applications <em>navigate</em> instead of <em>calling</em></li>
 					<ul>
-						<li><link href="self-describing-constraint">representations</link> contain information about possible traversals</li>
-						<li>applications navigate to resources using link semantics</li>
+						<li><link href="self-describing-constraint">Representations</link> contain information about possible traversals</li>
+						<li>Applications navigate to resources using link semantics</li>
 						<li>Navigation can be delegated since all links use <link href="identification-constraint">identifiers</link></li>
 					</ul>
 				</ul>
@@ -1103,9 +1103,9 @@
 					</ul>
 					<li><em>Proof of Identity</em> is important for any privileged operation</li>
 					<ul>
-						<li><em>signatures</em> and <em>seals</em> are traditional ways</li>
-						<li>traditional ways are mostly protected by law (but not really safe)</li>
-						<li>more modern ways often include technical methods for <link href="authentication"/></li>
+						<li><em>Signatures</em> and <em>seals</em> are traditional ways</li>
+						<li>Traditional ways are mostly protected by law (but not really safe)</li>
+						<li>More modern ways often include technical methods for <link href="authentication"/></li>
 					</ul>
 					<li>Client identity on the Web can be bound in three ways:</li>
 					<ol>
@@ -1123,16 +1123,16 @@
 				<ul>
 					<li><em>Authentication</em> is the process of verifying an identity</li>
 					<ul>
-						<li>the weakest form of authentication is simply trust</li>
-						<li>legal consequences can make it more risky to falsify authentication</li>
-						<li>technical measures should make it hard to impossible to falsify authentication</li>
+						<li>The weakest form of authentication is simply trust</li>
+						<li>Legal consequences can make it more risky to falsify authentication</li>
+						<li>Technical measures should make it hard to impossible to falsify authentication</li>
 					</ul>
 					<li>Authentication on the Web comes in many different flavors</li>
 					<ul>
-						<li>implicitly by accessing a server from some IP address range</li>
-						<li>presenting a <em>cookie</em> from a previous formal authentication</li>
-						<li>presenting a password as a proof of identity</li>
-						<li>proving that you are owning additional authentication hardware (often <a href="http://en.wikipedia.org/wiki/Personal_identification_number">PIN</a>-enabled)</li>
+						<li>Implicitly by accessing a server from some IP address range</li>
+						<li>Presenting a <em>cookie</em> from a previous formal authentication</li>
+						<li>Presenting a password as a proof of identity</li>
+						<li>Proving that you are owning additional authentication hardware (often <a href="http://en.wikipedia.org/wiki/Personal_identification_number">PIN</a>-enabled)</li>
 					</ul>
 					<li>Risk and potential damage should justify authentication methods</li>
 				</ul>
@@ -1148,8 +1148,8 @@
 					</ul>
 					<li>Two different approaches to unauthorized access are possible</li>
 					<ul>
-						<li>repeat the HTTP request with the proper authentication credentials</li>
-						<li>redirect to a <em>authentication flow</em> and establish an authenticated session</li>
+						<li>Repeat the HTTP request with the proper authentication credentials</li>
+						<li>Redirect to a <em>authentication flow</em> and establish an authenticated session</li>
 					</ul>
 				</ul>
 			</slide>
@@ -1162,15 +1162,15 @@
 				<ul>
 					<li>Authentication is based on <em>authentication realms</em></li>
 					<ul>
-						<li>a set of resources for which the authentication is required</li>
-						<li>an opaque name which is used to signal which login is required</li>
-						<li>username/password often is specific for a given realm</li>
+						<li>A set of resources for which the authentication is required</li>
+						<li>An opaque name which is used to signal which login is required</li>
+						<li>Username/password often is specific for a given realm</li>
 					</ul>
 					<li>Users supply username and password through the client</li>
 					<ul>
-						<li>sent as <a href="http://en.wikipedia.org/wiki/Base64">Base64</a> encoded <q><code>username:password</code></q> string</li>
-						<li>username and password are <a href="http://www.google.com/search?hl=en&amp;q=base64+decoder"><em>not</em> transmitted securely</a></li>
-						<li>basic authentication should <em>always</em> use <link href="encryption">HTTPS</link></li>
+						<li>Sent as <a href="http://en.wikipedia.org/wiki/Base64">Base64</a> encoded <q><code>username:password</code></q> string</li>
+						<li>Username and password are <a href="http://www.google.com/search?hl=en&amp;q=base64+decoder"><em>not</em> transmitted securely</a></li>
+						<li>Basic authentication should <em>always</em> use <link href="encryption">HTTPS</link></li>
 					</ul>
 					<li>Authorization is handled on the server side</li>
 					<pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">HTTP/1.0 401 Unauthorized
