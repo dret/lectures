@@ -947,8 +947,8 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="Landscape">
-			<title>Microservice Landscape</title>
+		<part id="landscape">
+			<title>Service Landscape</title>
 			<slide id="monolith">
 				<title>The Dreaded Monolith</title>
 				<img title="Where you come from..." href="https://upload.wikimedia.org/wikipedia/commons/7/7b/Weltmaschine_gsellmann1.JPG" src="monolith.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
@@ -1001,7 +1001,7 @@
 			</slide>
 		</part>
 		<part id="evolution">
-			<title>Microservice Evolution</title>
+			<title>Service Evolution</title>
 			<slide id="autonomy-robustness">
 				<title>Autonomy vs. Robustness</title>
 				<ul>
@@ -1055,11 +1055,11 @@
 				</ul>
 			</slide>
 			<slide id="MS-v">
-				<title>The Three V's of MSA</title>
+				<title>The Three V's of Service Landscapes</title>
 				<ul>
 					<li>Volume of available services: <link href="landscape-scale">Scale</link></li>
 					<ul>
-						<li>How big is the MS landscape and can I get an overview of what's around?</li>
+						<li>How big is the service landscape and can I get an overview of what's around?</li>
 					</ul>
 					<li>Variety of service designs and interfaces: <link href="landscape-diversity">Diversity</link></li>
 					<ul>
