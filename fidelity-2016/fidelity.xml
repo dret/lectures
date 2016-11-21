@@ -54,7 +54,7 @@
 	</toc>
 	<presentation id="welcome">
 		<title>Welcome, Overview, and Motivation</title>
-		<toc class="time">9.00-9.45</toc>
+		<toc class="time">9.00-10.00</toc>
 		<toc class="abstract">APIs increasingly become the <em>connective tissue</em> of IT in general, and the main way of how business is looking at their IT strategy and structure in particular. APIs are what both <em>separate</em> and <em>connect</em> collaborating and communicating peers: They facilitate <em>loose coupling</em> of service providers and consumers and thus strike a balance between the ability to collaborate and cooperate, while still maintaining independence and individual control.</toc>
 		<toc class="resources"><a href="http://www.hbs.edu/faculty/Pages/item.aspx?num=193" title="Michael Porter, 'The Competitive Advantage: Creating and Sustaining Superior Performance', Free Press, New York, 1985">Competitive Advantage</a>&#160;· <a href="https://www.ca.com/us/collateral/ebook/building-software-into-your-business-dna" title="Otto Berkes, 'Digitally Remastered: Building Software into Your Business DNA', John Wiley &amp; Sons, 2016">Digitally Remastered</a>&#160;· <a href="https://leanpub.com/software-architecture-for-developers" title="Simon Brown, 'Software Architecture for Developers', Leanpub, September 2016">Software Architecture</a></toc>
 		<slide id="summary">
@@ -330,7 +330,7 @@
 	</presentation>
 	<presentation id="design">
 		<title>Introduction to API Design</title>
-		<toc class="time">9.45-10.45</toc>
+		<toc class="time">10.00-10.45</toc>
 		<toc class="abstract"><em>API Design</em> is about loose coupling, making sure that every service is entirely self-contained and can only be interacted with through its API. Another important aspect of this architectural approach is that designers and developers have a lot of autonomy when it comes to designing, developing, and deploying their services. For this reason, <em>API design</em> for services and microservices must specifically target the <em>diversity</em> and <em>decentralization</em> that are inherent properties of any (micro)services landscape.</toc>
 		<toc class="resources"><a href="http://shop.oreilly.com/product/9780596801694.do" title="Subbu Allamaraju, 'RESTful Web Services Cookbook', O'Reilly Media, February 2010">RESTful Cookbook</a>&#160;· <a href="http://shop.oreilly.com/product/0636920028468.do" title="Leonard Richardson, Mike Amundsen, and Sam Ruby, 'RESTful Web APIs', O'Reilly Media, September 2013">RESTful APIs</a></toc>
 		<slide id="summary">
