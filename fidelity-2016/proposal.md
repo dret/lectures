@@ -1,6 +1,6 @@
 # Proposal for Fidelity API Workshop Schedule
 
-* *9.00-9.45 Welcome, Overview, and Motivation:* Please provide references to financial API implementations, How APIs are differentiator from Internal, Public & Partner APIs perspective?, How product model (DevOps) can leverage APIs to expose product  capabilities?
+* *9.00-9.45 Welcome, Overview, and Motivation:* Please provide references to financial API implementations, How APIs are differentiator from Internal, Public & Partner APIs perspective?, How product model (DevOps) can leverage APIs to expose product capabilities?
 
 * *9.45-10.45 Introduction to Design, APIs, and API Design:* In addition to above, please cover why API design is important and make a difference? Provide examples of bad design in the industry & Good design. Possibly if you can associate cost to the design as well it would be wonderful.
 
