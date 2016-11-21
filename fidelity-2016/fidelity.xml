@@ -1582,6 +1582,30 @@
 				<img style="width : 90% ; margin : 2% ; " src="https.gif" title="HTTP and SSL"/>
 			</slide>
 		</part>
+		<part id="oauth">
+			<title>OAuth</title>
+			<slide id="oauth-motivation">
+				<title>OAuth Motivation</title>
+				<ul>
+					<li>Web apps used to be the one trusted peer</li>
+					<ul>
+						<li>They host the application logic and the user's resources</li>
+						<li><em>Authentication</em> is against the app and then covers everything</li>
+					</ul>
+					<li>More sophisticated scenarios require more sophisticated authentication</li>
+					<ul>
+						<li>Resources are hosted by one service</li>
+						<li>Application logic is provided by a different service</li>
+						<li>How to provide access without handing over full access?</li>
+					</ul>
+					<li>OAuth separates <em>resource owner</em>, <em>client</em>, and <em>server</em></li>
+					<ul>
+						<li><em>Protected resources</em> owned by the <em>resource owner</em> are stored by the <em>server</em></li>
+						<li><em>Clients</em> get resource access via tokens (and not via full authentication)</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
