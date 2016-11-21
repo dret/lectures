@@ -438,22 +438,24 @@
 					<ul><em>Domain Driven Design (DDD)</em> provides a framework for <em>bounded contexts</em></ul>
 				</ul>
 			</slide>
-			<slide id="guidance">
-				<title>Provide Guidance</title>
+			<slide id="bimodal-it">
+				<title>Bimodal IT</title>
+				<img title="Bimodal IT office workers" href="https://en.wikipedia.org/wiki/Minions_(film)" src="minions.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="kafka-and-bimodal">
+				<title>Kafka and Bimodal IT</title>
 				<ul>
-					<li>Small services mean interactions across a variety of them</li>
-					<li>Reduce friction by providing means for seamless interactions</li>
+					<li><em>The Castle</em> is not going anywhere anytime soon</li>
 					<ul>
-						<li><em>Identifiers</em> robustly identify resources across all services</li>
-						<li><em>Links</em> guide interactions to possible following next steps</li>
-						<li><em>Link Templates</em> provide the equivalent of filling out forms</li>
-						<li><em>Overlay services</em> are a (weak) equivalent of traditional orchestration</li>
+						<li>Establishing <q>rules of engagement</q> make interactions well-defined</li>
+						<li>Natural transition possible (if required) using the <em>Strangler Pattern</em></li>
 					</ul>
-					<li><em>Guidance</em> means just that: suggestions that clients might follow</li>
+					<li>Customers/consumers do not know how/where APIs are implemented</li>
 					<ul>
-						<li>Clients might decide to redirect or abort at any point in the process</li>
-						<li>Microservices need robust programming of services <em>and</em> clients</li>
+						<li>Establish uniform documentation/description/discovery strategy</li>
+						<li>Embrace diversity to cover old as well as new services</li>
 					</ul>
+					<li>APIs are <em>connective tissue and protective insulation layers</em></li>
 				</ul>
 			</slide>
 		</part>
