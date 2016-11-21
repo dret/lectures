@@ -1512,8 +1512,8 @@
 						</ul>
 					</ul>
 				</slide>
-				<slide id="certificates">
-					<title>Certificates</title>
+				<slide id="certificate">
+					<title>Certificate</title>
 					<ul>
 						<li>Certificates are digital signatures issued by a trusted party</li>
 						<ul>
@@ -1534,6 +1534,53 @@
 					</ul>
 				</slide>
 			</part>
+		</part>
+		<part id="https">
+			<title short="HTTPS">HTTP over SSL (HTTPS)</title>
+			<slide>
+				<title>Secure Communications</title>
+				<ul>
+					<li><link href="public-key">Public-Key cryptography</link> is computationally expensive</li>
+					<ul>
+						<li>it is possible to encrypt all traffic using asymmetric key pairs</li>
+						<li>this generates considerably more load on the server side</li>
+					</ul>
+					<li>Combining <link href="public-key">public-key</link> and <link href="secret-key">secret-key</link> cryptography</li>
+					<ol>
+						<li>check the public key for authenticity (using a <link href="certificate"/>)</li>
+						<li>generate a key for a secret-key encryption scheme</li>
+						<li>use the public key to securely transmit the secret key</li>
+						<li>use the secret key for securely transmitting the payload</li>
+					</ol>
+					<li>Combines the advantages of both methods</li>
+					<ul>
+						<li>the lower complexity of secret-key algorithms</li>
+						<li>the ability of public-key algorithms to work without a secure channel</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>HTTP and Security</title>
+				<ul>
+					<li>HTTP sends clear-text messages</li>
+					<li>Making HTTP secure requires additional mechanisms</li>
+					<li>Encryption is done by a layer on top of TCP</li>
+					<ul>
+						<li><em>Secure Sockets Layer (SSL)</em> is the protocol layer invented by Netscape</li>
+						<li><em>Transport Layer Security (TLS)</em> is the standardized Internet version</li>
+						<li>TLS adds more encryption schemes and more flexibility</li>
+					</ul>
+					<li>Lower-level methods may also provide encryption</li>
+					<ul>
+						<li><em>Virtual Private Networks (VPN)</em> provide IP-based encryption</li>
+						<li><em>WEP</em> and <em>WPA</em> provide network interface encryption</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>HTTP and SSL</title>
+				<img style="width : 90% ; margin : 2% ; " src="https.gif" title="HTTP and SSL"/>
+			</slide>
 		</part>
 	</presentation>
 </hotspot>
