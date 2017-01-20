@@ -129,13 +129,12 @@
 				<ul>
 					<li><em>The Castle</em> is not going anywhere anytime soon</li>
 					<ul>
-						<li>Establishing <q>rules of engagement</q> make interactions well-defined</li>
-						<li>Natural transition possible (if required) using the <em>Strangler Pattern</em></li>
+						<li>Managing interactions with one or more castles is a standard problem</li>
+						<li>Merchants should focus on their business instead of the foundation</li>
 					</ul>
-					<li>Customers/consumers do not know how/where APIs are implemented</li>
+					<li><em>Markets/Merchants</em> are much more dynamic than <em>Castles</em></li>
 					<ul>
-						<li>Establish uniform documentation/description/discovery strategy</li>
-						<li>Embrace diversity to cover old as well as new services</li>
+						<li>Developing and offering a product is easier on a market</li>
 					</ul>
 					<li>APIs are <em>connective tissue and protective insulation layers</em></li>
 				</ul>
@@ -143,6 +142,20 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="markets">
+				<title>Things Will Change</title>
+				<ul>
+					<li>Markets provide services for merchants and consumers</li>
+					<li>Markets provide <em>infrastructure</em> and <em>sales</em> services</li>
+					<li>Markets should be designed to easily adapt to changes</li>
+					<ul>
+						<li><em>Infrastructure</em> changes ideally are invisible for merchants and consumers</li>
+						<li><em>Merchant</em> may need better infrastructure or better exposure to customers</li>
+						<li><em>Customers</em> may have needs affecting individual merchants or the whole market</li>
+					</ul>
+					<li>API Strategy, Design, and Management is the market of today's IT world</li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
