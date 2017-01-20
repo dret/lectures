@@ -120,35 +120,6 @@
 					<li>Help developers to navigate the evolving landscape of interlinked APIs</li>
 				</ul>
 			</slide>
-			<slide id="messaging">
-				<title>Make Messaging the Start</title>
-				<ul>
-					<li>Make sure to identify relevant resources so that you can refer to them</li>
-					<ul>
-						<li>Resource refers to <em>anything</em> that <q>is worth exchanging messages about</q></li>
-						<li>Unique and stable identity helps when assigning resource identifiers</li>
-					</ul>
-					<li>Any service resource must have a <em>representation</em> in messages</li>
-					<ul>
-						<li>Your <em>data model</em> is not your <em>object model</em></li>
-						<li>Your <em>object model</em> is not your <em>resource model</em></li>
-						<li>Your <em>resource model</em> is not your <em>message model</em></li>
-					</ul>
-					<li>Design <q>interaction form</q> to be as succinct as possible</li>
-				</ul>
-			</slide>
-			<slide id="surface">
-				<title>Be Superficial</title>
-				<ul>
-					<li>The only thing that matters is the <em>Service Surface</em></li>
-					<ul>
-						<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
-						<li>Resist the temptation to <em>expose your model</em> just because you can</li>
-					</ul>
-					<li>Concepts must be well-defined but not necessarily deeply modeled</li>
-					<ul><em>Domain Driven Design (DDD)</em> provides a framework for <em>bounded contexts</em></ul>
-				</ul>
-			</slide>
 			<slide id="bimodal-it">
 				<title>Bimodal IT</title>
 				<img title="Bimodal IT office workers" href="https://en.wikipedia.org/wiki/Minions_(film)" src="minions.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
