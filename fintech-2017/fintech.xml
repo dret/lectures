@@ -82,6 +82,94 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="kafka">
+			<title>The Kafka Method</title>
+			<slide id="castle">
+				<title>The Castle</title>
+				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="bureaucracy">
+				<title>Bureaucracy</title>
+				<ul>
+					<li>Bureaucracy evolved for a reason</li>
+					<ul>
+						<li>Clearly defined model of input and output of processing units</li>
+						<li>Implementation issues of the processing units are hidden</li>
+						<li>Processing units can scale because of encapsulation and statelessness</li>
+						<li>Processing steps can be easily pipelined while keeping steps separate</li>
+					</ul>
+					<li>Well-designed service landscapes have the exact same properties</li>
+					<ul>
+						<li>Messaging models instead of paper forms</li>
+						<li>Message models are as shallow as possible</li>
+						<li>Stateless interactions allow for easy load balancing</li>
+						<li>Resource identifiers and hypermedia allow seamless workflows</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-focus">
+				<title>APIs are Front and Center</title>
+				<ul>
+					<li>The only visibility into a service is its API</li>
+					<li>APIs should avoid letting their <q>implementation shine through</q></li>
+					<li>The two main goals of an API are <em>interaction</em> and <em>encapsulation</em></li>
+					<ul>
+						<li><em>Interaction</em> should be as simple/easy as possible through the API</li>
+						<li><em>Encapsulation</em> ensures that the implementation is invisible</li>
+					</ul>
+					<li>Help developers to navigate the evolving landscape of interlinked APIs</li>
+				</ul>
+			</slide>
+			<slide id="messaging">
+				<title>Make Messaging the Start</title>
+				<ul>
+					<li>Make sure to identify relevant resources so that you can refer to them</li>
+					<ul>
+						<li>Resource refers to <em>anything</em> that <q>is worth exchanging messages about</q></li>
+						<li>Unique and stable identity helps when assigning resource identifiers</li>
+					</ul>
+					<li>Any service resource must have a <em>representation</em> in messages</li>
+					<ul>
+						<li>Your <em>data model</em> is not your <em>object model</em></li>
+						<li>Your <em>object model</em> is not your <em>resource model</em></li>
+						<li>Your <em>resource model</em> is not your <em>message model</em></li>
+					</ul>
+					<li>Design <q>interaction form</q> to be as succinct as possible</li>
+				</ul>
+			</slide>
+			<slide id="surface">
+				<title>Be Superficial</title>
+				<ul>
+					<li>The only thing that matters is the <em>Service Surface</em></li>
+					<ul>
+						<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
+						<li>Resist the temptation to <em>expose your model</em> just because you can</li>
+					</ul>
+					<li>Concepts must be well-defined but not necessarily deeply modeled</li>
+					<ul><em>Domain Driven Design (DDD)</em> provides a framework for <em>bounded contexts</em></ul>
+				</ul>
+			</slide>
+			<slide id="bimodal-it">
+				<title>Bimodal IT</title>
+				<img title="Bimodal IT office workers" href="https://en.wikipedia.org/wiki/Minions_(film)" src="minions.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="kafka-and-bimodal">
+				<title>Kafka and Bimodal IT</title>
+				<ul>
+					<li><em>The Castle</em> is not going anywhere anytime soon</li>
+					<ul>
+						<li>Establishing <q>rules of engagement</q> make interactions well-defined</li>
+						<li>Natural transition possible (if required) using the <em>Strangler Pattern</em></li>
+					</ul>
+					<li>Customers/consumers do not know how/where APIs are implemented</li>
+					<ul>
+						<li>Establish uniform documentation/description/discovery strategy</li>
+						<li>Embrace diversity to cover old as well as new services</li>
+					</ul>
+					<li>APIs are <em>connective tissue and protective insulation layers</em></li>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
