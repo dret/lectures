@@ -85,9 +85,23 @@
 		<part id="framework">
 			<title>Framework</title>
 			<slide id="products">
-				<title>Products</title>
+				<title>APIs as Products</title>
 				<ul>
-					<li></li>
+					<li>APIs have two major product facets to them:</li>
+					<ul>
+						<li>They provide <em>access to capabilities</em></li>
+						<li>They are <em>an interface</em> with the usual facets of <span title="User Interface">UI</span>/<span title="Developer Experience">DX</span>/<span title="Customer Experience">CX</span></li>
+					</ul>
+					<li>API design (can) play a major role in API success</li>
+					<ul>
+						<li>If capabilities are unique, API design issues may be tolerated</li>
+						<li>Bigger focus on design quality if capabilities are non-unique</li>
+					</ul>
+					<li>Understanding product usage requires product instrumentation</li>
+					<ul>
+						<li><em>DX</em> for APIs is important, <a href="http://dret.typepad.com/dretblog/2016/10/api-usability-matters.html"><em>CX</em> maybe equally so</a></li>
+						<li>Design for change and cultivate permanent and iterative improvement</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="operations">
@@ -139,6 +153,7 @@
 					<li>Resources:</li>
 					<ul>
 						<li><a href="https://gist.github.com/chitchcock/1281611">Stevey's Google Platform Rant</a></li>
+						<li><a href="http://dret.typepad.com/dretblog/2016/10/api-usability-matters.html">API Usability Matters: UX and CX is like DX and ...</a></li>
 					</ul>
 				</ul>
 			</slide>
