@@ -107,13 +107,38 @@
 			<slide id="operations">
 				<title>Operations</title>
 				<ul>
-					<li></li>
+					<li>There is no product/service without an API</li>
+					<ul>
+						<li>SOA strategy means that <em>the only visible thing is the API</em></li>
+						<li>Creating a product is not delivering code, it's delivering the capability</li>
+					</ul>
+					<li><q>You build it, you own it, you run it.</q></li>
+					<ul>
+						<li>Building: Provide support to avoid ending up with many snowflakes</li>
+						<li>Owning: Provide operational support such as a smart runtime fabric</li>
+						<li>Running: Provide runtime support for fast and repeated deployment</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="go-to-market">
 				<title>Go-to-Market Model</title>
 				<ul>
-					<li></li>
+					<li>Many APIs start the life in a viral manner</li>
+					<ul>
+						<li>Small skunkworks project to solve a specific problem</li>
+						<li>Adoption and adaptation allow the project to evolve</li>
+						<li>Marketing picks up when the project sees some acceptance</li>
+					</ul>
+					<li><q>Release early and release often.</q></li>
+					<ul>
+						<li>Improved feedback from the user/developer community</li>
+						<li>Improved credibility by demonstrating active development</li>
+					</ul>
+					<li>SDKs may be a way to improve usability and usage</li>
+					<ul>
+						<li>SDKs can <q>shield</q> developers from direct API usage</li>
+						<li>SDKs are a service and need to designed/managed carefully</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="monetization">
@@ -158,8 +183,8 @@
 					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/nokia-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
 					<li>Resources:</li>
 					<ul>
-						<li><a href="https://gist.github.com/chitchcock/1281611">Stevey's Google Platform Rant</a></li>
-						<li><a href="http://dret.typepad.com/dretblog/2016/10/api-usability-matters.html">API Usability Matters: UX and CX is like DX and ...</a></li>
+						<li><a href="https://gist.github.com/chitchcock/1281611">Steve Yegge, "Stevey's Google Platform Rant"</a></li>
+						<li><a href="http://dret.typepad.com/dretblog/2016/10/api-usability-matters.html">Erik Wilde, "API Usability Matters: UX and CX is like DX and ..."</a></li>
 					</ul>
 				</ul>
 			</slide>
