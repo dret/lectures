@@ -144,7 +144,15 @@
 			<slide id="monetization">
 				<title>Monetization</title>
 				<ul>
-					<li></li>
+					<li>Value depends on <link href="scope">public/partner/private scope</link></li>
+					<li><em>Freemium</em> allows some experimentation</li>
+					<li>Various axes of <em>API value and pricing</em></li>
+					<ul>
+						<li>Features: Providing various tiers</li>
+						<li>Volume: limiting by bandwidth and/or calls</li>
+						<li>Support: best-effort vs. SLA</li>
+					</ul>
+					<li>Should be part of runtime fabric (avoiding snowflakes)</li>
 				</ul>
 			</slide>
 		</part>
@@ -173,6 +181,12 @@
 			<title>Examples</title>
 			<slide id="versioning">
 				<title>Versioning</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
+			<slide id="scope">
+				<title>Public vs. Partner vs. Private</title>
 				<ul>
 					<li></li>
 				</ul>
