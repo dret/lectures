@@ -216,7 +216,17 @@
 			<slide id="versioning">
 				<title>Versioning</title>
 				<ul>
-					<li></li>
+					<li>DON'T DO IT!</li>
+					<li>Balancing speed of change and decoupling</li>
+					<ul>
+						<li>Changing faster should not affect product users</li>
+						<li>Designing for change and robustness is doable but takes practice</li>
+					</ul>
+					<li>One of the core capabilities to be built into the organization</li>
+					<ul>
+						<li>Designing for change makes the organization for successful</li>
+						<li>Versioning is possible but is considered a recall/relaunch</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="scope">
