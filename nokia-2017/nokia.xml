@@ -233,12 +233,35 @@
 				<title>Public vs. Partner vs. Private</title>
 				<ul>
 					<li>Capabilities can be intended for different audiences</li>
+					<ul>
+						<li><em>Public</em> are intended to be used by anybody</li>
+						<li><em>Partner</em> are intended to be used in a partnership context</li>
+						<li><em>Private</em> are only exposed to internal API consumers</li>
+					</ul>
+					<li>Ideally, changing scope should be a pure policy decision</li>
+					<ul>
+						<li>Product target audiences may change based on success and context</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="graphql">
 				<title>GraphQL</title>
 				<ul>
-					<li></li>
+					<li>A specific API focusing on graph-style data and query capabilities</li>
+					<ul>
+						<li>Prior APIs sometimes were considered too chatty, in particular for mobile</li>
+						<li>GraphQL can be used to support for specific/selective API interactions</li>
+					</ul>
+					<li>The trend towards GraphQL can be seen in two possible ways</li>
+					<ul>
+						<li><em>Positive:</em> GraphQL makes sense as an API pattern/technology to use</li>
+						<li><em>Negative:</em> Resource-oriented designs are not focusing on the right use cases</li>
+					</ul>
+					<li>Using GraphQL has some non-obvious coupling implications</li>
+					<ul>
+						<li>Clients are supposed to "know about" a service's data model</li>
+						<li>Changes in the data model should be managed and published</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
