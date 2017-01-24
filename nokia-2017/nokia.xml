@@ -129,7 +129,7 @@
 						<li>Adoption and adaptation allow the project to evolve</li>
 						<li>Marketing picks up when the project sees some acceptance</li>
 					</ul>
-					<li><q>Release early and release often.</q></li>
+					<li><q>Release early and release often.</q> (<span title="Minimum Viable Product">MVP</span>)</li>
 					<ul>
 						<li>Improved feedback from the user/developer community</li>
 						<li>Improved credibility by demonstrating active development</li>
@@ -161,7 +161,21 @@
 			<slide id="api-culture">
 				<title>Establishing an API Culture</title>
 				<ul>
-					<li></li>
+					<li>A culture of <em>sharing</em> and <em>loose coupling</em></li>
+					<ul>
+						<li>Any shared capabilities musty be shared through a well-defined API</li>
+						<li>Loose coupling costs resources and earns agility and flexibility</li>
+					</ul>
+					<li>Focus on <em>products</em> and not on <em>projects</em></li>
+					<ul>
+						<li>Developing and providing capabilities is the goal of all activities</li>
+						<li>Products need resources throughout the complete product lifecycle</li>
+					</ul>
+					<li>Empower teams and provide guardrails and guidance</li>
+					<ul>
+						<li>Moving from <em>IT requirements</em> to <em>IT as support structure</em></li>
+						<li>Organize team structures to include core IT competencies</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="business-cases">
@@ -173,7 +187,11 @@
 			<slide id="api-initiatives">
 				<title>API Initiatives in the Marketplace</title>
 				<ul>
-					<li></li>
+					<li><em>PSD2</em> in the financial sector becomes a reality in 2017</li>
+					<ul>
+						<li>API capabilities are regulated by the European Commission</li>
+						<li>How/if to differentiate in such an environment?</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
@@ -207,7 +225,7 @@
 					<li><em>Establish</em> ways of documenting and sharing</li>
 					<li><em>Reduce</em> dependencies for faster/bigger changes</li>
 					<li><em>Support</em> development through capabilities</li>
-					<li><em>Empower teams by reducing constraints</li>
+					<li><em>Empower</em> teams by reducing constraints</li>
 				</ul>
 			</slide>
 			<slide id="q-and-a">
