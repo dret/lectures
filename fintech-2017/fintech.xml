@@ -30,7 +30,7 @@
 	<copyright>2017 Erik Wilde</copyright>
 	<presentation id="index">
 		<title>API Market Challenges and Trends</title>
-		<toc class="abstract">...</toc>
+		<toc class="abstract">APIs are a big trend, and that's mostly because they are an indicator for big changes in the business landscape: Businesses get both more <em>connected</em> and more <em>loosely coupled</em> at the same time: <em>Connected</em> because businesses increasingly focus on profitable parts of the value chain, attempting to commoditize the rest. <em>Loosely coupled</em> because business models need to be developed and tweaked and changed at an increasing pace, and thus more easily and at lower cost. This presentation looks at the resulting challenges and trends of APIs and API strategies, with a specific focus of the current Fintech landscape.</toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -122,7 +122,7 @@
 			</slide>
 			<slide id="api-platforms">
 				<title>API Platforms</title>
-				<img title="Farmers' Market Sacramento" href="https://commons.wikimedia.org/wiki/File:Farmers'_market_Sacramento.jpg" src="farmers-market-sacramento.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Farmers' Market Sacramento" href="https://commons.wikimedia.org/wiki/File:Farmers'_market_Sacramento.jpg" src="farmers-market-sacramento.jpg" style=" width : 90% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="kafka-and-bimodal">
 				<title>API Platforms and Bimodal IT</title>
