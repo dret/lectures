@@ -1,6 +1,6 @@
-# APIs for Fintechs Event
+# APIs and Fintech Event
 
-Slides for presentation at APIs for Fintech event in Zurich, Switzerland.
+Slides for presentation at ["APIs and Fintech" event in Zurich, Switzerland](https://www.meetup.com/finteCHandinnovation_meetup_zurich/events/236788168/).
 
 
 ## License
