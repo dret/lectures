@@ -126,25 +126,6 @@
 				<title>The Castle</title>
 				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style=" width : 90% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="bureaucracy">
-				<title>Bureaucracy</title>
-				<ul>
-					<li>Bureaucracy evolved for a reason</li>
-					<ul>
-						<li>Clearly defined model of input and output of processing units</li>
-						<li>Implementation issues of the processing units are hidden</li>
-						<li>Processing units can scale because of encapsulation and statelessness</li>
-						<li>Processing steps can be easily pipelined while keeping steps separate</li>
-					</ul>
-					<li>Well-designed service landscapes have the exact same properties</li>
-					<ul>
-						<li>Messaging models instead of paper forms</li>
-						<li>Message models are as shallow as possible</li>
-						<li>Stateless interactions allow for easy load balancing</li>
-						<li>Resource identifiers and hypermedia allow seamless workflows</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="api-focus">
 				<title>APIs are Front and Center</title>
 				<ul>
