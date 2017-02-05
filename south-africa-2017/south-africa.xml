@@ -114,6 +114,25 @@
 				<title>Traditional IT</title>
 				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style=" width : 90% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="bureaucracy">
+				<title>Bureaucracy</title>
+				<ul>
+					<li>Bureaucracy evolved for a reason</li>
+					<ul>
+						<li>Clearly defined model of <em>input</em> and <em>output</em> of processing units</li>
+						<li>Implementation issues of the processing units are <em>hidden</em></li>
+						<li><em>Processing units can scale</em> because of encapsulation and statelessness</li>
+						<li>Processing steps can be <em>easily pipelined</em> while keeping steps separate</li>
+					</ul>
+					<li>Well-designed service landscapes have the exact same properties</li>
+					<ul>
+						<li><em>Messaging models</em> instead of paper forms</li>
+						<li>Message models are <em>as shallow as possible</em></li>
+						<li><em>Stateless interactions</em> allow for easy load balancing</li>
+						<li>Resource identifiers and hypermedia allow <em>seamless workflows</em></li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="bimodal-it">
 				<title>Bimodal IT</title>
 				<img title="Bimodal IT office workers" href="https://en.wikipedia.org/wiki/Minions_(film)" src="minions.jpg" style=" width : 90% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
