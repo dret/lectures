@@ -160,8 +160,8 @@
 				<title>Digital Transformation</title>
 				<img href="https://upload.wikimedia.org/wikipedia/commons/3/31/Great_white_shark_south_africa.jpg" src="digital-transformation.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide>
-				<title>Changing vs. Changeable</title>
+			<slide id="change">
+				<title>Transformation: Changing vs. Changeable</title>
 				<ul>
 					<li><em>Changing</em> implies a one-time activity</li>
 					<li><em>Changeable</em> implies an intrinsic property</li>
@@ -191,7 +191,7 @@
 		</part>
 		<part id="what">
 			<title>Microservices: What?</title>
-			<slide>
+			<slide id="characteristics">
 				<title><a href="http://martinfowler.com/articles/microservices.html">Microservice Characteristics</a></title>
 				<ol>
 					<li>Componentization via services</li>
@@ -363,11 +363,17 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="outlook">
-			<title>Microservices Outlook</title>
-		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="conclusions">
+				<title>Microservices Matter</title>
+				<ul>
+					<li>They combine some essential SE trends of the past decade</li>
+					<li>MSA results in service landscapes that can evolve and adapt faster and better</li>
+					<li>MSA has a lot of tunable knobs and not <em>one correct setting</em> for them</li>
+					<li>Transitioning to MSA is a gradual process and can take several years</li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
