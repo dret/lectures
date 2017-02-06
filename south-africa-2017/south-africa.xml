@@ -271,29 +271,70 @@
 		</part>
 		<part id="how">
 			<title>Microservices: How?</title>
-			<slide id="api-focus">
-				<title>APIs are Front and Center</title>
+			<slide id="who">
+				<title>Microservices for the Masses?</title>
 				<ul>
-					<li>The only visibility into a service is its API</li>
-					<li>APIs should avoid letting their <q>implementation shine through</q></li>
-					<li>The two main goals of an API are <em>interaction</em> and <em>encapsulation</em></li>
+					<li>Microservices are an investment and not a default choice</li>
 					<ul>
-						<li><em>Interaction</em> should be as simple/easy as possible through the API</li>
-						<li><em>Encapsulation</em> ensures that the implementation is invisible</li>
+						<li>The cost is the need for advanced infrastructure and teams</li>
+						<li>The return is increased flexibility and agility</li>
+						<li>Cost/benefit for microservices is targeted at long term capabilities</li>
 					</ul>
-					<li>Help developers to navigate the evolving landscape of interlinked APIs</li>
+					<li>What are the <a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html">prerequisites for considering microservices?</a></li>
+					<ol>
+						<li><em>Rapid Provisioning:</em> Automated process to quickly create server infrastructure</li>
+						<li><em>Monitoring:</em> Multi-level monitoring from service health to business-level logic</li>
+						<li><em>Rapid Deployment:</em> Automated ways to quickly move from code to running services</li>
+					</ol>
+					<li>Moving to MSA is a transition process and not one <em>Big Bang</em></li>
+					<ul>
+						<li>Just like the Web is never complete/final, neither is a microservices landscape</li>
+					</ul>
 				</ul>
 			</slide>
-			<slide id="surface">
-				<title>Be Superficial</title>
+			<slide id="containers">
+				<title>Containerization!</title>
 				<ul>
-					<li>The only thing that matters is the <em>Service Surface</em></li>
+					<li><q href="http://www.apiacademy.co/resources/api360-microservices-summit-microservices-blind-spots/">Containerization is the gateway drug for microservices.</q></li>
+					<li>Containers exist because of CI/CD (rapid deployment)</li>
+					<li>Containers allow agility <em>on the development and deployment level</em></li>
+					<li>MSA allows agility <em>on the service ecosystem level</em></li>
+					<li>MSA without (some form of) containerization is hard to imagine</li>
+				</ul>
+			</slide>
+			<slide id="ms-size">
+				<title>How Micro?</title>
+				<ul>
+					<li>There is no hard limit on the size of a Microservice</li>
+					<li>Domain limits (DDD) are a good starting point</li>
+					<li>Team size (<link href="conway">Conway</link>) is a good starting point</li>
+				</ul>
+			</slide>
+			<slide id="ms-size-upside">
+				<title>How Micro? The Good News!</title>
+				<ul>
+					<li>MSA tells you to keep services independent and agile</li>
+					<li>MSA is a continuous process of reassessing services and their utility</li>
 					<ul>
-						<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
-						<li>Resist the temptation to <em>expose your model</em> just because you can</li>
+						<li>If a service is too big, split service and team and relaunch the new services</li>
+						<li>If granularity is too small, join teams and services and relaunch the new service</li>
 					</ul>
-					<li>Concepts must be well-defined but not necessarily deeply modeled</li>
-					<ul><em>Domain Driven Design (DDD)</em> provides a framework for <em>bounded contexts</em></ul>
+					<li>...but still not a simple answer to the <q>how big?</q> question</li>
+				</ul>
+			</slide>
+			<slide id="services-or-code">
+				<title>Why the Code Focus?</title>
+				<ul>
+					<li>Loose coupling is essential and not an easy thing to get right</li>
+					<li>Microservice teams have complete authority over technology choices</li>
+					<ul>
+						<li>But they have to develop and deploy according to MSA</li>
+					</ul>
+					<li>Apart from <q>being agile</q>, the only visible part is the API</li>
+					<li>MSA critically depends on API strategy, design, and tooling</li>
+					<ul>
+						<li><em>API quality</em> is a critical factor for MSA landscape fitness</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
