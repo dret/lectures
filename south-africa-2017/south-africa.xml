@@ -191,6 +191,83 @@
 		</part>
 		<part id="what">
 			<title>Microservices: What?</title>
+			<slide>
+				<title><a href="http://martinfowler.com/articles/microservices.html">Microservice Characteristics</a></title>
+				<ol>
+					<li>Componentization via services</li>
+					<li>Organized around business capabilities</li>
+					<li>Products not projects</li>
+					<li>Smart endpoints and dumb pipes</li>
+					<li>Decentralized governance</li>
+					<li>Decentralized data management</li>
+					<li>Infrastructure automation</li>
+					<li>Design for failure</li>
+					<li>Evolutionary design</li>
+				</ol>
+			</slide>
+			<slide id="ms-focus">
+				<title>Main Focus on Development/Deployment</title>
+				<ul>
+					<li>Microservice Architecture focuses on culture/development/operational aspects</li>
+					<li>In order to develop/deploy MS, <a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html">three things are needed</a></li>
+					<ul>
+						<li><em>Rapid Provisioning:</em> Automated infrastructure</li>
+						<li><em>Basic Monitoring:</em> Keeping an watchful eye on the MS landscape</li>
+						<li><em>Rapid Deployment:</em> Ability to deploy quickly to test/production</li>
+					</ul>
+					<li>Loose coupling of services allows an agile service landscape</li>
+					<ul>
+						<li>Avoid coupling through design/development/deployment/operations</li>
+						<li>The only acceptable coupling is through the service API</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="ms-dividends">
+				<title><a href="http://queue.acm.org/detail.cfm?id=2956643">Microservice Dividends</a></title>
+				<ol>
+					<li>Permissionless Innovation</li>
+					<li>Enable Failure</li>
+					<li>Disrupt Trust (replaced by autonomy and accountability)</li>
+					<li>You Build It, You Own It</li>
+					<li>Accelerate Deprecations</li>
+					<li>End Centralized Metadata</li>
+					<li>Concentrate the Pain</li>
+					<li>Test Differently</li>
+				</ol>
+			</slide>
+			<slide id="ms-blind-spots">
+				<title>MSA Blind Spot: Less Focus on API Design/Management</title>
+				<ul>
+					<li>MSA focuses on culture/development/operational aspects</li>
+					<ul>
+						<li>Isolating services through all phases of the lifecycle</li>
+						<li>But of course services still need to interact</li>
+					</ul>
+					<li>API consistency will help to make the landscape more productive</li>
+					<ul>
+						<li>Helping <em>API designers</em> to avoid re-inventing the wheel</li>
+						<li>Helping <em>API providers</em> to be more usable for consumers</li>
+						<li>Helping <em>API consumers</em> to depend on some consistency</li>
+						<li>Helping with <em>API discovery</em> and managing the landscape</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="ms-and-the-web">
+				<title>Microservices and the Web</title>
+				<ul>
+					<li>MSA replicates the most important success factors of the Web</li>
+					<ul>
+						<li>Encapsulation of code, allowing polyglot implementations</li>
+						<li>Encapsulation of persistence, allowing polyglot storage</li>
+						<li>Encapsulation of models, making the API the only available model</li>
+					</ul>
+					<li>The <em>only</em> service dependency is through APIs</li>
+					<ul>
+						<li>Works (mostly) well on the Web because of the uniform interface and HTML</li>
+						<li>Works (mostly) well on the service Web for <q>well-designed</q> APIs</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="how">
 			<title>Microservices: How?</title>
