@@ -400,10 +400,20 @@
 				<title>Microservices are SOA!</title>
 				<img title="Microservices are SOA!" src="microservices-are-soa.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="microservice-api">
-				<title>Microservice APIs</title>
+			<slide id="systems-ecosystems">
+				<title>Systems vs. Ecosystems</title>
 				<ul>
-					<li></li>
+					<li>SOAPy SOA were traditional IT monoliths exposing some functions</li>
+					<li>MSA #1 goal is to create a loosely coupled service landscape</li>
+					<ul>
+						<li>Shared data storage creates coupling</li>
+						<li>Shared infrastructure creates coupling</li>
+						<li>Shared libraries create coupling</li>
+						<li>Loose coupling allows to pick the right tool for the job</li>
+						<li>Loose coupling allows to refactor/retire as required</li>
+						<li>Loose coupling blurs the public/partner/private lines</li>
+					</ul>
+					<li>Using APIs is one of the few overlaps between SOAPy SOA and MSA</li>
 				</ul>
 			</slide>
 		</part>
