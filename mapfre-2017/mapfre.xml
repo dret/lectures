@@ -282,6 +282,24 @@
 		</part>
 		<part id="extracting-patterns">
 			<title>Extracting Patterns</title>
+			<slide id="properties">
+				<title>Start from Properties</title>
+				<ul>
+					<li>APIs/Services need to exhibit certain <em>properties</em></li>
+					<ul>
+						<li>They may need authorization and access control functions</li>
+						<li>They may need to be visible and monitorable</li>
+						<li>They may need to be extensible to minimize breakage</li>
+					</ul>
+					<li><em>Properties</em> can be realized through different designs/implementation</li>
+					<ul>
+						<li>The main goal is to ensure the property</li>
+						<li>Helping teams finding and picking solutions is essential</li>
+						<li>Be open to new solutions and embrace them if necessary</li>
+					</ul>
+					<li>Collect and provide a constantly evolving collection of solutions</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
