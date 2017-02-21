@@ -91,6 +91,82 @@
 		</part>
 		<part id="api-strategies">
 			<title>API Strategy: Private/Partner/Public</title>
+			<slide id="ppp-api">
+				<title>Public/Partner/Private APIs</title>
+				<ul>
+					<li>APIs are exposed interfaces to functions or capabilities</li>
+					<li>The scope of available functions/capabilities differs</li>
+					<ul>
+						<li><em>Public APIs</em> are openly available on the Web/Internet with few restrictions</li>
+						<li><em>Partner APIs</em> are available in the context of existing and well-defined relationships</li>
+						<li><em>Private APIs</em> are not (supposed to be) used by anybody outside the organization</li>
+					</ul>
+					<li>Deciding on public/partner/private should be a policy decision</li>
+					<ul>
+						<li>Changing between modes should be possible without any re-engineering</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="public-api">
+				<title>Public APIs</title>
+				<ul>
+					<li>Public APIs were the first wave of <em>Web APIs</em></li>
+					<ul>
+						<li>Using the existing Internet infrastructure</li>
+						<li>Using some set of Web technologies (HTTP at the very least)</li>
+						<li>Exposing services for programmatic use (beyond screen scraping)</li>
+					</ul>
+					<li>Public APIs launched the first wave of <em>API Management</em></li>
+					<ul>
+						<li>Defining access realms to be used for access control</li>
+						<li>Self-service sites for registration and obtaining API access tokens</li>
+						<li>Management consoles for controlling access levels and rates</li>
+					</ul>
+					<li>Public API models can be hard to justify as business cases</li>
+					<ul>
+						<li>Many public APIs nowadays are the free tier of <em>freemium</em> API models</li>
+						<li>Even public APIs need management for controlling use and misuse</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="partner-api">
+				<title>Partner APIs</title>
+				<ul>
+					<li>Partner APIs assume an established relationship with API users</li>
+					<ul>
+						<li>Only available to a smaller set of existing/potential partners</li>
+						<li>Driven by the nature of the business relationship with partners</li>
+					</ul>
+					<li>Partner APIs are useful tools for quantifying partner relationships</li>
+					<ul>
+						<li>Keeping track of partner relationships and engagements</li>
+						<li>Identification of problem areas and investment opportunities</li>
+					</ul>
+					<li>Aggregating/analyzing API usage data on various levels</li>
+					<ul>
+						<li><em>Operational level</em> for understanding status and operational problems</li>
+						<li><em>Engagement level</em> for understanding interactions with all partners</li>
+						<li><em>Business level</em> for understanding the value chain view</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="private-api">
+				<title>Private APIs</title>
+				<ul>
+					<li>Only exposed to consumers within the organization</li>
+					<ul>
+						<li>SOA/Microservices turn APIs into the software integration fabric</li>
+						<li>Dependency management is necessary to keep track of the landscape</li>
+					</ul>
+					<li>Securing/controlling private APIs may use different tooling</li>
+					<ul>
+						<li>Public/partner APIs are secured with a gateway and access policies</li>
+						<li>Private APIs may be exposed with less controls in a secure environment</li>
+						<li><em>Monitoring</em> suggests to use the same tooling for all APIs</li>
+					</ul>
+					<li><em>Documentation</em> and <em>discovery</em> are essential for a healthy ecosystem	</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="extracting-patterns">
 			<title>Extracting Patterns</title>
