@@ -77,6 +77,87 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="why">
+			<title>Why have an API Strategy?</title>
+			<slide id="castle">
+				<title>Traditional IT</title>
+				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="bureaucracy">
+				<title>Bureaucracy</title>
+				<ul>
+					<li>Bureaucracy evolved for a reason</li>
+					<ul>
+						<li>Clearly defined model of <em>input</em> and <em>output</em> of processing units</li>
+						<li>Implementation issues of the processing units are <em>hidden</em></li>
+						<li><em>Processing units can scale</em> because of encapsulation and statelessness</li>
+						<li>Processing steps can be <em>easily pipelined</em> while keeping steps separate</li>
+					</ul>
+					<li>Well-designed service landscapes have the exact same properties</li>
+					<ul>
+						<li><em>Messaging models</em> instead of paper forms</li>
+						<li>Message models are <em>as shallow as possible</em></li>
+						<li><em>Stateless interactions</em> allow for easy load balancing</li>
+						<li>Resource identifiers and hypermedia allow <em>seamless workflows</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-economy">
+				<title>API Economy</title>
+				<img title="Farmers' Market Sacramento" href="https://commons.wikimedia.org/wiki/File:Farmers'_market_Sacramento.jpg" src="farmers-market-sacramento.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="castle-context">
+				<title>Castles and Context</title>
+				<ul>
+					<li><em>The Castle</em> is not going anywhere anytime soon</li>
+					<ul>
+						<li>Managing interactions with one or more castles is a standard problem</li>
+						<li>Merchants should focus on their business instead of the foundation</li>
+					</ul>
+					<li>Some castles may disappear because people move on to elsewhere</li>
+					<li><em>Markets/Merchants</em> are more dynamic than <em>Castles</em></li>
+					<ul>
+						<li>Developing and offering a product is easier on a market</li>
+					</ul>
+					<li>APIs are <em>connective tissue</em> and <em>protective insulation layers</em></li>
+					<ul>
+						<li>Merchants should focus on <em>optimizing their differential in the value chain</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="digital-transformation">
+				<title>Digital Transformation</title>
+				<img href="https://upload.wikimedia.org/wikipedia/commons/3/31/Great_white_shark_south_africa.jpg" src="digital-transformation.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="change">
+				<title>Transformation: Changing vs. Changeable</title>
+				<ul>
+					<li><em>Changing</em> implies a one-time activity</li>
+					<li><em>Changeable</em> implies an intrinsic property</li>
+					<blockquote>
+						<p>Don't focus on what to <b>change into</b>;<br/>Focus on <b>embracing change</b> as your mode of existence.</p>
+					</blockquote>
+				</ul>
+			</slide>
+			<slide id="bimodal-it">
+				<title>Bimodal IT</title>
+				<img title="Bimodal IT office workers" href="https://en.wikipedia.org/wiki/Minions_(film)" src="minions.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="balance">
+				<title>Delicate Balance</title>
+				<ul>
+					<li><em>Preserve:</em> Functional core and business foundations</li>
+					<li><em>Nourish:</em> Ability to change and situational awareness</li>
+					<li><a href="http://agilemanifesto.org/">Agile</a> moves from an IT approach to a business approach</li>
+					<ul>
+						<li><em>Individuals and interactions</em> over processes and tools</li>
+						<li><em>Working software</em> over comprehensive documentation</li>
+						<li><em>Customer collaboration</em> over contract negotiation</li>
+						<li><em>Responding to change</em> over following a plan</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="api-model">
 			<title>API Model &amp; Management</title>
 		</part>
@@ -169,6 +250,21 @@
 						<li><em>Monitoring</em> suggests to use the same tooling for all APIs</li>
 					</ul>
 					<li><em>Documentation</em> and <em>discovery</em> are essential for a healthy ecosystem	</li>
+				</ul>
+			</slide>
+			<slide id="api-gateway-ppp">
+				<title>API Gateways and Public/Partner/Private</title>
+				<ul>
+					<li>API Gateways are part of the <q>connective API fabric</q></li>
+					<ul>
+						<li>Solving problems that need to be solved somewhere</li>
+						<li>Providing infrastructure that minimizes implementation effort</li>
+						<li>Providing opportunities for tooling and automation</li>
+					</ul>
+					<li>Exposing APIs in a unified way allows synergies across APIs</li>
+					<ul>
+						<li>Monitoring and analysis can be based on a unified view</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
