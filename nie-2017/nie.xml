@@ -105,7 +105,7 @@
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
 					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
-					<li>Slides online: <a href="http://dret.net/lectures/nie-2017/api-design"><code>dret.net/lectures/nie-2017/api-design</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/nie-2017/introduction"><code>dret.net/lectures/nie-2017/introduction</code></a></li>
 					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/nie-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
 				</ul>
 			</slide>
@@ -226,6 +226,18 @@
 	<presentation id="operations">
 		<title>Operations</title>
 		<toc class="resources"></toc>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/nie-2017/operations"><code>dret.net/lectures/nie-2017/operations</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/nie-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="microservices">
 		<title>Microservices</title>
@@ -419,29 +431,113 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/nie-2017/microservices"><code>dret.net/lectures/nie-2017/microservices</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/nie-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="styles">
 		<title>API Styles</title>
 		<toc class="resources"><a href="http://apistylebook.com/" title="Arnaud Lauret, 'API Stylebook', 2016">API Stylebook</a>&#160;· <a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://webconcepts.info/" title="Collection of Web Concepts">Web Concepts</a></toc>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/nie-2017/styles"><code>dret.net/lectures/nie-2017/styles</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/nie-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="technology">
 		<title>Technical Foundations: HTTP and Representations</title>
 		<toc class="resources"><a href="https://tools.ietf.org/html/rfc6749" title="RFC 6749: The OAuth 2.0 Authorization Framework, August 2008">OAuth 2.0</a>&#160;· <a href="https://alexbilbie.com/guide-to-oauth-2-grants/" title='Alex Bilbie, "A Guide To OAuth 2.0 Grants"'>OAuth 2.0 Guide</a></toc>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/nie-2017/technology"><code>dret.net/lectures/nie-2017/technology</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/nie-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="design">
 		<title>Loose Coupling and Representation Design</title>
 		<toc class="resources"><a href="http://dret.net/netdret/publications#pau09a" title="Cesare Pautasso and Erik Wilde, 'Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design', Proceedings of the 18th International World Wide Web Conference, ACM Press, Madrid, Spain, April 2009">Loose Coupling</a></toc>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/nie-2017/design"><code>dret.net/lectures/nie-2017/design</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/nie-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="hypermedia">
 		<title>Hypermedia</title>
 		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title="Erik Wilde, 'Patterns for Robust Extensibility'">Robust Extensibility</a></toc>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/nie-2017/hypermedia"><code>dret.net/lectures/nie-2017/hypermedia</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/nie-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="documentation">
 		<title>Documentation and Discovery</title>
 		<toc class="resources"></toc>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/nie-2017/documentation"><code>dret.net/lectures/nie-2017/documentation</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/nie-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="conclusions">
 		<title>Conclusions</title>
 		<toc class="resources"></toc>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/nie-2017/conclusions"><code>dret.net/lectures/nie-2017/conclusions</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/nie-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 </hotspot>
