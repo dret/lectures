@@ -52,12 +52,7 @@
 	</toc>
 	<presentation id="introduction">
 		<title>API Workshop Introduction</title>
-		<toc class="abstract"></toc>
 		<toc class="resources"></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 		<part id="intro">
 			<title>Introduction</title>
 			<slide id="dret">
@@ -120,12 +115,7 @@
 	</presentation>
 	<presentation id="foundations">
 		<title>Foundations</title>
-		<toc class="abstract"></toc>
 		<toc class="resources"><a href="http://www.hbs.edu/faculty/Pages/item.aspx?num=193" title="Michael Porter, 'The Competitive Advantage: Creating and Sustaining Superior Performance', Free Press, New York, 1985">Competitive Advantage</a>&#160;· <a href="https://hbr.org/1999/03/unbundling-the-corporation" title="John Hagel and Marc Singer, 'Unbundling the Corporation', Harvard Business Review, March/April 1999">Unbundling the Corporation</a>&#160;· <a href="https://www.ca.com/us/collateral/ebook/building-software-into-your-business-dna" title="Otto Berkes, 'Digitally Remastered: Building Software into Your Business DNA', John Wiley &amp; Sons, 2016">Digitally Remastered</a>&#160;· <a href="https://leanpub.com/software-architecture-for-developers" title="Simon Brown, 'Software Architecture for Developers', Leanpub, September 2016">Software Architecture</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 		<part id="why">
 			<title>APIs: Why?</title>
 			<slide id="castle">
@@ -237,21 +227,11 @@
 	</presentation>
 	<presentation id="operations">
 		<title>Operations</title>
-		<toc class="abstract"></toc>
 		<toc class="resources"></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 	</presentation>
 	<presentation id="microservices">
 		<title>Microservices</title>
-		<toc class="abstract"></toc>
 		<toc class="resources"><a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="http://www.martinfowler.com/articles/microservices.html" title="Martin Fowler on Microservices">Fowler on Microservices</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 		<part id="why">
 			<title>Microservices: Why?</title>
 			<slide id="monolith">
@@ -444,56 +424,26 @@
 	</presentation>
 	<presentation id="styles">
 		<title>API Styles</title>
-		<toc class="abstract"></toc>
 		<toc class="resources"><a href="http://apistylebook.com/" title="Arnaud Lauret, 'API Stylebook', 2016">API Stylebook</a>&#160;· <a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://webconcepts.info/" title="Collection of Web Concepts">Web Concepts</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 	</presentation>
 	<presentation id="technology">
 		<title>Technical Foundations: HTTP and Representations</title>
-		<toc class="abstract"></toc>
 		<toc class="resources"><a href="https://tools.ietf.org/html/rfc6749" title="RFC 6749: The OAuth 2.0 Authorization Framework, August 2008">OAuth 2.0</a>&#160;· <a href="https://alexbilbie.com/guide-to-oauth-2-grants/" title='Alex Bilbie, "A Guide To OAuth 2.0 Grants"'>OAuth 2.0 Guide</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 	</presentation>
 	<presentation id="design">
 		<title>Loose Coupling and Representation Design</title>
-		<toc class="abstract"></toc>
 		<toc class="resources"><a href="http://dret.net/netdret/publications#pau09a" title="Cesare Pautasso and Erik Wilde, 'Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design', Proceedings of the 18th International World Wide Web Conference, ACM Press, Madrid, Spain, April 2009">Loose Coupling</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 	</presentation>
 	<presentation id="hypermedia">
 		<title>Hypermedia</title>
-		<toc class="abstract"></toc>
 		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title="Erik Wilde, 'Patterns for Robust Extensibility'">Robust Extensibility</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 	</presentation>
 	<presentation id="documentation">
 		<title>Documentation and Discovery</title>
-		<toc class="abstract"></toc>
 		<toc class="resources"></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 	</presentation>
 	<presentation id="conclusions">
 		<title>Conclusions</title>
-		<toc class="abstract"></toc>
 		<toc class="resources"></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 	</presentation>
 </hotspot>
