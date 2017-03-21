@@ -100,17 +100,17 @@
 		</slide>
 		<slide id="agenda">
 			<title>Agenda</title>
-			<table cellspacing="10">
-				<tr><td align="right">9.00-9.15</td><td>Introduction</td></tr>
-				<tr><td align="right">9.15-10.00</td><td><a href="foundations">Foundations</a></td></tr>
-				<tr><td align="right">10.00-10.30</td><td><a href="operations">Operations</a></td></tr>
-				<tr><td align="right">10.45-11.45</td><td><a href="microservices">Microservices</a></td></tr>
-				<tr><td align="right">11.45-12.30</td><td><a href="styles">API Styles</a></td></tr>
-				<tr><td align="right">13.30-14.15</td><td><a href="technology">Technical Foundations</a></td></tr>
-				<tr><td align="right">14.15-15.15</td><td><a href="design">Representation Design</a></td></tr>
-				<tr><td align="right">15.30-16.00</td><td><a href="hypermedia">Hypermedia</a></td></tr>
-				<tr><td align="right">16.00-16.30</td><td><a href="documentation">Documentation</a></td></tr>
-				<tr><td align="right">16.30-17.00</td><td><a href="conclusions">Conclusions</a></td></tr>
+			<table cellspacing="10" style="font-size : 100%">
+				<tr><td align="right">9.00-9.15</td><td><b>Introduction</b></td></tr>
+				<tr><td align="right">9.15-10.00</td><td><b><a href="foundations">Foundations</a></b></td></tr>
+				<tr><td align="right">10.00-10.30</td><td><b><a href="operations">Operations</a></b></td></tr>
+				<tr><td align="right">10.45-11.45</td><td><b><a href="microservices">Microservices</a></b></td></tr>
+				<tr><td align="right">11.45-12.30</td><td><b><a href="styles">API Styles</a></b></td></tr>
+				<tr><td align="right">13.30-14.15</td><td><b><a href="technology">Technical Foundations</a></b></td></tr>
+				<tr><td align="right">14.15-15.15</td><td><b><a href="design">Representation Design</a></b></td></tr>
+				<tr><td align="right">15.30-16.00</td><td><b><a href="hypermedia">Hypermedia</a></b></td></tr>
+				<tr><td align="right">16.00-16.30</td><td><b><a href="documentation">Documentation</a></b></td></tr>
+				<tr><td align="right">16.30-17.00</td><td><b><a href="conclusions">Conclusions</a></b></td></tr>
 			</table>
 		</slide>
 	</presentation>
