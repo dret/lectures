@@ -456,6 +456,35 @@
 		<toc class="resources"><a href="http://apistylebook.com/" title="Arnaud Lauret, 'API Stylebook', 2016">API Stylebook</a>&#160;· <a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://webconcepts.info/" title="Collection of Web Concepts">Web Concepts</a></toc>
 		<part id="style-matters">
 			<title>API Style Matters</title>
+			<slide id="architectural-style">
+				<title>Architectural Styles</title>
+				<ul>
+					<li>Architectural Style vs. Architecture</li>
+					<ul>
+						<li>Architectural Style: General principles informing the creation of an architecture</li>
+						<li>Architecture: Designing a solution to a problem according to given constraints</li>
+						<li>Architectural styles <em>inform</em> and <em>guide</em> the creation of architectures</li>
+					</ul>
+				</ul>
+				<table width="95%">
+					<tr>
+						<td>
+							<img style="width : 90% ; margin : 2% ; " src="louvre.jpg" title="Louvre Interior"/>
+							<ul>
+								<li>Architecture: <a href="http://en.wikipedia.org/wiki/Louvre">Louvre</a></li>
+								<li>Architectural Style: <a href="http://en.wikipedia.org/wiki/Baroque_architecture">Baroque</a></li>
+							</ul>
+						</td>
+						<td>
+							<img style="width : 90% ; margin : 2% ; " src="savoye.jpg" title="Villa Savoye Interior"/>
+							<ul>
+								<li>Architecture: <a href="http://en.wikipedia.org/wiki/Villa_Savoye">Villa Savoye</a></li>
+								<li>Architectural Style: <a href="http://en.wikipedia.org/wiki/International_Style_(architecture)">International Style</a></li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</slide>
 		</part>
 		<part id="RPC">
 			<title>Remote Procedure Call (RPC)</title>
