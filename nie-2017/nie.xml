@@ -572,9 +572,15 @@
 		</part>
 	</presentation>
 	<presentation id="documentation">
-		<title>Documentation and Discovery</title>
+		<title>Documentation</title>
 		<toc class="time">16.00-16.30</toc>
 		<toc class="resources"></toc>
+		<part id="documentation">
+			<title>Documentation</title>
+		</part>
+		<part id="discovery">
+			<title>Discovery</title>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
