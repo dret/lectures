@@ -535,9 +535,12 @@
 		</part>
 	</presentation>
 	<presentation id="design">
-		<title>Loose Coupling and Representation Design</title>
+		<title>Representation Design</title>
 		<toc class="time">14.15-15.15</toc>
 		<toc class="resources"><a href="http://dret.net/netdret/publications#pau09a" title="Cesare Pautasso and Erik Wilde, 'Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design', Proceedings of the 18th International World Wide Web Conference, ACM Press, Madrid, Spain, April 2009">Loose Coupling</a></toc>
+		<part id="loose-coupling">
+			<title>Loose Coupling</title>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
