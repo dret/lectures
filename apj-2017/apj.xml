@@ -32,6 +32,7 @@
 		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
 			<thead>
 				<tr>
+					<th valign="bottom">Date</th>
 					<th valign="bottom">Location</th>
 					<th valign="bottom">Slides</th>
 				</tr>
@@ -39,6 +40,7 @@
 			<tbody>
 				<hotspot:for-each-presentation>
 					<tr class="vevent">
+						<td valign="top"><hotspot:date/></td>
 						<td valign="top"><b><hotspot:title/></b></td>
 						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
 					</tr>
@@ -48,6 +50,7 @@
 	</toc>
 	<presentation id="perth">
 		<title>API Academy Perth</title>
+		<date short="2017-04-05">April 5, 2017</date>
 		<part id="intro">
 			<title>Introduction</title>
 			<slide id="dret">
@@ -110,6 +113,7 @@
 	</presentation>
 	<presentation id="melbourne">
 		<title>API Academy Melbourne</title>
+		<date short="2017-04-10">April 10, 2017</date>
 		<part id="intro">
 			<title>Introduction</title>
 			<slide id="dret">
@@ -172,9 +176,11 @@
 	</presentation>
 	<presentation id="sydney">
 		<title>API Academy Sydney</title>
+		<date short="2017-04-11">April 11, 2017</date>
 	</presentation>
 	<presentation id="tokyo">
 		<title>API Academy Tokyo</title>
+		<date short="2017-04-13">April 13, 2017</date>
 		<part id="intro">
 			<title>Introduction</title>
 			<slide id="dret">
