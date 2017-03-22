@@ -260,6 +260,27 @@
 		</part>
 		<part id="what">
 			<title>APIs: What?</title>
+			<slide id="cohesion-coupling">
+				<title>Cohesion and Coupling</title>
+				<ul>
+					<li>Focusing on <em>high cohesion</em> and <em>low coupling</em></li>
+					<ul>
+						<li><em>High Cohesion</em> means that related functions remain together</li>
+						<li><em>Low Coupling</em> means that unrelated functions are kept separate</li>
+					</ul>
+					<li>APIs use good software and system engineering practices</li>
+					<ul>
+						<li><em>Software Engineering</em> is concerned with how to program components</li>
+						<li><em>System Engineering</em> is concerned with how to assemble components</li>
+					</ul>
+					<li>APIs introduce additional constraints</li>
+					<ul>
+						<li><em>Polyglot</em> designs have no bias towards programming languages</li>
+						<li><em>Web APIs</em> mean that all interfaces are for network access</li>
+						<li><em>Evolvability</em> allows components to evolve independently</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="how">
 			<title>APIs: How?</title>
