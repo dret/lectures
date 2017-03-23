@@ -416,6 +416,26 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="monitoring-qa">
+				<title>Monitoring is QA</title>
+				<ul>
+					<li>Less dependencies mean more complex failure scenarios</li>
+					<ul>
+						<li>Monoliths are either working well or they have a problem</li>
+						<li>API ecosystems have many independent components that can fail</li>
+					</ul>
+					<li>Fewer/decentralized SE processes mean less QA potential</li>
+					<ul>
+						<li>Structured and homogeneous SE is easier to control through QA</li>
+						<li>Decentralized and heterogeneous SE means quality is tested later</li>
+					</ul>
+					<li>API ecosystems work best when embracing decentralization and diversity</li>
+					<ul>
+						<li>Classical QA is replaced by automation and monitoring</li>
+						<li><a href="https://en.wikipedia.org/wiki/Mean_time_between_failures" title="Mean Time Between Failures">MTBF</a> is replaced by <a href="https://en.wikipedia.org/wiki/Mean_time_to_repair" title="Mean Time To Repair">MTTR</a>: Design for failure</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
