@@ -381,6 +381,24 @@
 		<title>Operations</title>
 		<toc class="time">10.00-10.30</toc>
 		<toc class="resources"></toc>
+		<part id="landscaping">
+			<title>Running API Ecosystems</title>
+			<slide id="api-price">
+				<title>The API Price</title>
+				<ul>
+					<li>Operations in API ecosystems are harder than for monoliths</li>
+					<ul>
+						<li>Monitoring and debugging one system needs fewer and less flexible tooling</li>
+						<li>API limit visibility to the <em>API surface</em> of services</li>
+					</ul>
+					<li>Is the API price worth it?</li>
+					<ul>
+						<li><em>APIs</em> trade ecosystem agility/flexibility for operational complexity</li>
+						<li><em>Microservices</em> trade ease/speed of development for operational complexity</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
