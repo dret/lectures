@@ -334,6 +334,26 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="strangler">
+				<title>Strangling the Monolith</title>
+				<ul>
+					<li>Getting rid of monoliths can be very expensive</li>
+					<ul>
+						<li>They have evolved over a long period of time</li>
+						<li>Not all parts are well understood or frequently used</li>
+					</ul>
+					<li>Replacing monoliths with API-based infrastructure can be costly</li>
+					<ul>
+						<li>Often not a reasonable investment</li>
+					</ul>
+					<li>Replace as needed on an ongoing basis</li>
+					<ul>
+						<li>New capabilities get developed and take over responsibilities</li>
+						<li>Less monolith capabilities get used over time</li>
+						<li>Old capabilities are getting <em>strangled</em> by newer ones</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
