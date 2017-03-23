@@ -281,6 +281,28 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="organize-services">
+				<title>Organize Services: Operate Smaller Components</title>
+				<ul>
+					<li>Services <em>only</em> talk to each other through APIs</li>
+					<ul>
+						<li>Each service runs as a standalone component</li>
+						<li>Service dependencies are only through API invocations</li>
+					</ul>
+					<li>APIs trade flexibility for operational complexity</li>
+					<ul>
+						<li>Monitoring and debugging are easier in a <em>compile-time linked system</em></li>
+						<li>Flexibility and scalability are better in a <em>run-time linked ecosystem</em></li>
+					</ul>
+					<li>APIs need <em>lifecycle management</em> to reach full potential</li>
+					<ul>
+						<li><em>Design</em> APIs so that they fit into the ecosystem</li>
+						<li><em>Publish</em> APIs so that they can be discovered</li>
+						<li><em>Deploy</em> APIs so that they can be used safely/securely</li>
+						<li><em>Manage</em> APIs so that the ecosystem can be monitored</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="how">
 			<title>APIs: How?</title>
