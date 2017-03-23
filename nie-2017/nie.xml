@@ -398,6 +398,24 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="gateways">
+				<title>API Gateways</title>
+				<ul>
+					<li>API gateways are components put in front of APIs</li>
+					<li>Sometimes only public/partner APIs are managed through a gateway</li>
+					<li>The gateway is the secure/secured access point for all services</li>
+					<li>General guidelines for gateway-based API operations</li>
+					<ul>
+						<li>All APIs are accessed only through the gateway (<a href="https://en.wikipedia.org/wiki/Facade_pattern">façade pattern</a>)</li>
+						<li>Private APIs use the gateway for identity-based access control</li>
+						<li>Public/Partner APIs uses the gateway for policy-based access control</li>
+						<li>Oftentimes private and public/partner gateways are different instances/clusters</li>
+						<li>Minimize roundtrip time between gateway and APIs</li>
+						<li>Cloud-based gateways may need tight policy synchronization control</li>
+						<li>Keep an eye on traffic between cloud and on-premise services</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
