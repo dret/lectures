@@ -752,6 +752,156 @@
 		<toc class="resources"><a href="https://tools.ietf.org/html/rfc3986" title="RFC 3986: Uniform Resource Identifier (URI): Generic Syntax, January 2005">URI RFC</a>&#160;· <a href="https://tools.ietf.org/html/rfc7231" title="RFC 7231: Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content, June 2014">HTTP RFC</a>&#160;· <a href="https://tools.ietf.org/html/rfc7159" title="RFC 7159: The JavaScript Object Notation (JSON) Data Interchange Format, March 2014">JSON RFC</a>&#160;· <a href="https://tools.ietf.org/html/rfc6749" title="RFC 6749: The OAuth 2.0 Authorization Framework, August 2008">OAuth 2.0</a>&#160;· <a href="https://alexbilbie.com/guide-to-oauth-2-grants/" title='Alex Bilbie, "A Guide To OAuth 2.0 Grants"'>OAuth 2.0 Guide</a></toc>
 		<part id="http">
 			<title>Hypertext Transfer Protocol (HTTP)</title>
+			<slide>
+				<title>DNS &amp; HTTP</title>
+				<p>The two fundamental protocols which every Web client must use are DNS access and HTTP. Most operating systems provide an API for DNS access. TCP (which is required as the foundation for HTTP) also is usually provided by the operating system. Most modern operating systems provide support for handling HTTP as well.</p>
+				<img style="width : 90% ; margin : 2% ; " src="browser-dns-http.png"/>
+			</slide>
+			<slide>
+				<title>HTTP Messages</title>
+				<ul>
+					<li>HTTP needs a reliable connection</li>
+					<ul>
+						<li>The foundation for HTTP is the Internet's TCP</li>
+						<li>DNS resolution yields an IP address</li>
+						<li>Open TCP connection to default port 80 (or explicit port specified in URI)</li>
+					</ul>
+					<li>HTTP is a <em>text-based</em> protocol</li>
+					<ul>
+						<li>The connection is used to transmit <em>text messages</em></li>
+						<li>All HTTP messages are human-readable (not all <em>entities</em>, though)</li>
+						<li>Basic HTTP operations can be carried out by hand or simple tooling</li>
+					</ul>
+				</ul>
+				<pre>start-line
+*( header-field CRLF )
+CRLF
+[ message-body ]</pre>
+			</slide>
+			<slide id="http-headers">
+				<title>HTTP Header Fields</title>
+				<ul>
+					<li>Header fields contain information about the message</li>
+					<ul>
+						<li><em>General header:</em> <code href="http://webconcepts.info/concepts/http-header/Date">Date</code> as the message origination date</li>
+						<li><em>Request header:</em> <code href="http://webconcepts.info/concepts/http-header/Accept-Language">Accept-Language</code> indicates language preferences</li>
+						<li><em>Response header:</em> <code href="http://webconcepts.info/concepts/http-header/Server">Server</code> contains system information</li>
+						<li><em>Entity header:</em> <code href="http://webconcepts.info/concepts/http-header/Content-Type">Content-Type</code> specifies the media type of the entity</li>
+					</ul>
+					<li>HTTP defines <a href="http://webconcepts.info/concepts/http-header/">a number of header fields</a></li>
+					<ul>
+						<li>Unknown fields must be ignored (extensibility)</li>
+					</ul>
+					<li>HTTP is about acting on these fields</li>
+					<ul>
+						<li>HTTP defines what HTTP implementations must or should do</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="http-request">
+				<title>HTTP Requests</title>
+				<ul>
+					<li>After opening a connection, the client sends a request</li>
+					<ul>
+						<li>The <a href="http://webconcepts.info/concepts/http-method/">method</a> indicates the action to be performed on the resource</li>
+						<li>HTTP's most widely used methods are: <code href="http://webconcepts.info/concepts/http-method/GET">GET</code>, <code href="http://webconcepts.info/concepts/http-method/HEAD">HEAD</code>, <code href="http://webconcepts.info/concepts/http-method/POST">POST</code></li>
+						<li>Other interesting methods are: <code href="http://webconcepts.info/concepts/http-method/PUT">PUT</code>, <code href="http://webconcepts.info/concepts/http-method/DELETE">DELETE</code></li>
+					</ul>
+					<li>The URI identifies the resource to which the request should be applied</li>
+					<ul>
+						<li>Absolute URIs are required when contacting <em>proxies</em></li>
+						<li>Absolute paths are required when contacting a server directly</li>
+						<li>The URI may contain <em>query information</em></li>
+					</ul>
+					<li>The <code href="http://webconcepts.info/concepts/http-header/Host">Host</code> header field must be included in every request</li>
+				</ul>
+				<pre>method SP request-target SP HTTP-version CRLF
+*( header-field CRLF )
+CRLF
+[ message-body ]</pre>
+			</slide>
+			<slide id="http-get">
+				<title>HTTP <code  href="http://webconcepts.info/concepts/http-method/GET">GET</code></title>
+				<ul>
+					<li>Retrieval action based on the URI</li>
+					<ul>
+						<li>Maybe implemented by reading a file</li>
+						<li>Maybe implemented by processing a file</li>
+						<li>Maybe implemented by querying a database</li>
+						<li>Maybe implemented by invoking a process</li>
+					</ul>
+					<li>Semantics may change based on header fields</li>
+					<ul>
+						<li><code>If-*:</code> only reply with the entity if necessary</li>
+						<li><code href="http://webconcepts.info/concepts/http-header/Range">Range:</code> only reply with the requested part of the entity</li>
+					</ul>
+					<li>Cacheability depends on header fields of the response</li>
+				</ul>
+				<pre>GET / HTTP/1.1
+Host: www.ca.com</pre>
+				<pre>HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Content-Type: text/html; charset=UTF-8
+ETag: "1635c-54b703861183b-gzip"
+Last-Modified: Fri, 24 Mar 2017 01:50:37 GMT
+Server: Apache/2.4.6 (Red Hat Enterprise Linux) Communique/4.1.12
+Cache-Control: no-cache
+Date: Fri, 24 Mar 2017 10:06:04 GMT
+Transfer-Encoding: chunked
+Connection: keep-alive</pre>
+			</slide>
+			<slide id="http-response">
+				<title>HTTP Responses</title>
+				<ul>
+					<li>The server's response to interpreting a request</li>
+					<ul>
+						<li>The <em  href="http://webconcepts.info/concepts/http-status-code">HTTP status code</em> is given numerically and as text</li>
+						<li><code>2**</code> for variations of <q>ok</q></li>
+						<li><code>3**</code> for redirections</li>
+						<li><code>4**</code> are various client side problems (<code href="http://webconcepts.info/concepts/http-status-code/404">404</code>: not found)</li>
+						<li><code>5**</code> are various server side problems</li>
+					</ul>
+					<li>Header fields specify additional information</li>
+					<ul>
+						<li>Information about the server</li>
+						<li>Information about the entity (media type, encoding, language)</li>
+					</ul>
+				</ul>
+				<pre>HTTP-version SP status-code SP reason-phrase CRLF
+*( header-field CRLF )
+CRLF
+[ message-body ]</pre>
+			</slide>
+			<slide id="http-performance">
+				<title>HTTP Performance</title>
+				<ul>
+					<li>HTTP/1.0 allows one transaction per connection</li>
+					<ul>
+						<li>TCP connection setup and teardown are expensive</li>
+						<li>TCP's <em>slow start</em> slows down the initial phase of data transfer</li>
+					</ul>
+					<li>HTTP/1.1 introduces <em>persistent connections</em></li>
+					<ul>
+						<li>The TCP connection stays open for some time (10 sec is a popular choice)</li>
+						<li>Additional requests to the same server use the same TCP connection</li>
+					</ul>
+					<li>HTTP/1.1 introduces <em>pipelined connections</em></li>
+					<ul>
+						<li>Instead of waiting for a response, requests can be queued</li>
+						<li>The order may not be changed (there is no sequence number)</li>
+					</ul>
+					<li>HTTP/2 introduces <em>multiplexing</em>, <em>server push</em>, and <em>header compression</em></li>
+					<ul>
+						<li><em>Multiplexing</em> allows requests to be served in parallel</li>
+						<li><em>Server push</em> allows servers to proactively push resources</li>
+						<li><em>Header compression</em> greatly reduces the volume needed for header fields</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>HTTP Connection Handling</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="http-phttp-pipelining.png"/>
+			</slide>
 		</part>
 		<part id="representations">
 			<title>Representations</title>
