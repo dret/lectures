@@ -665,7 +665,7 @@
 	<presentation id="styles">
 		<title>API Styles</title>
 		<toc class="time">11.45-12.30</toc>
-		<toc class="resources"><a href="http://apistylebook.com/" title="Arnaud Lauret, 'API Stylebook', 2016">API Stylebook</a>&#160;· <a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://webconcepts.info/" title="Collection of Web Concepts">Web Concepts</a></toc>
+		<toc class="resources"><a href="https://martinfowler.com/articles/richardsonMaturityModel.html" title="Martin Fowler, 'Richardson Maturity Model', March 2010">RMM</a>&#160;· <a href="http://apistylebook.com/" title="Arnaud Lauret, 'API Stylebook', 2016">API Stylebook</a>&#160;· <a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://webconcepts.info/" title="Collection of Web Concepts">Web Concepts</a></toc>
 		<part id="style-matters">
 			<title>API Style Matters</title>
 			<slide id="architectural-style">
@@ -700,6 +700,26 @@
 		</part>
 		<part id="RPC">
 			<title>Remote Procedure Call (RPC)</title>
+			<slide>
+				<title>Capabilities as Procedures</title>
+				<ul>
+					<li>Derived from traditional SE approaches</li>
+					<ul>
+						<li>Consumers know when to call which functions</li>
+						<li>Control flow is left to the consumer</li>
+					</ul>
+					<li><q>Function libraries</q> are exposed as a collection of <q>API endpoints</q></li>
+					<ul>
+						<li>There are no constraints on the capabilities exposed</li>
+						<li>Capabilities are primarily structured by <em>functions</em> and not by <em>resources</em></li>
+					</ul>
+					<li>There are many ways of mapping RPC onto a Web API</li>
+					<ul>
+						<li>Classical approaches are XML-RPC and SOAP</li>
+						<li>More contemporary ones are JSON-based</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="REST">
 			<title>Representational State Transfer (REST)</title>
