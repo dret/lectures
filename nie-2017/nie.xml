@@ -723,7 +723,7 @@
 	<presentation id="technology">
 		<title>Technical Foundations</title>
 		<toc class="time">13.30-14.15</toc>
-		<toc class="resources"><a href="https://tools.ietf.org/html/rfc6749" title="RFC 6749: The OAuth 2.0 Authorization Framework, August 2008">OAuth 2.0</a>&#160;· <a href="https://alexbilbie.com/guide-to-oauth-2-grants/" title='Alex Bilbie, "A Guide To OAuth 2.0 Grants"'>OAuth 2.0 Guide</a></toc>
+		<toc class="resources"><a href="https://tools.ietf.org/html/rfc3986" title="RFC 3986: Uniform Resource Identifier (URI): Generic Syntax, January 2005">URI RFC</a>&#160;· <a href="https://tools.ietf.org/html/rfc7231" title="RFC 7231: Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content, June 2014">HTTP RFC</a>&#160;· <a href="https://tools.ietf.org/html/rfc7159" title="RFC 7159: The JavaScript Object Notation (JSON) Data Interchange Format, March 2014">JSON RFC</a>&#160;· <a href="https://tools.ietf.org/html/rfc6749" title="RFC 6749: The OAuth 2.0 Authorization Framework, August 2008">OAuth 2.0</a>&#160;· <a href="https://alexbilbie.com/guide-to-oauth-2-grants/" title='Alex Bilbie, "A Guide To OAuth 2.0 Grants"'>OAuth 2.0 Guide</a></toc>
 		<part id="http">
 			<title>Hypertext Transfer Protocol (HTTP)</title>
 		</part>
