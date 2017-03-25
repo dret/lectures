@@ -1034,6 +1034,24 @@ CRLF
 			</part>
 			<part id="JSON">
 				<title>JavaScript Object Notation (JSON)</title>
+				<slide>
+					<title>JSON Origins</title>
+					<ul>
+						<li>JavaScript's native data structure as a separate format</li>
+						<li>Popularized Web services when it replaced XML</li>
+						<ul>
+							<li>Most Web services are about <em>objects</em> and not about <em>documents</em></li>
+							<li>XML requires developers to map between trees and objects</li>
+							<li>JSON is a good match for native structures in many languages</li>
+						</ul>
+						<li>JSON lacks some of the tooling around XML</li>
+						<ul>
+							<li>No popular and widely supported schema languages</li>
+							<li>No popular and widely supported path/query languages</li>
+						</ul>
+						<li>Many <q>NoSQL databases</q> effectively are JSON document databases</li>
+					</ul>
+				</slide>
 				<slide id="JSON-example">
 					<title>JSON Example</title>
 					<ul>
