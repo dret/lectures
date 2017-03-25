@@ -815,7 +815,7 @@
 					<img src="google-representations-1.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 				</center>
 			</slide>
-			<slide id="resource-representation-2>
+			<slide id="resource-representation-2">
 				<title>2 Resources, 1 Representation</title>
 				<center>
 					<img src="google-representations-2.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
@@ -1037,6 +1037,10 @@ CRLF
 			</part>
 			<part id="RDF">
 				<title>Resource Description Framework (RDF)</title>
+				<slide id="RDF-example">
+					<title>RDF Example</title>
+					<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="example-rdf.jpg" href="https://www.w3.org/TR/rdf11-primer/#section-triple"/>
+				</slide>
 			</part>
 		</part>
 		<part id="conclusions">
