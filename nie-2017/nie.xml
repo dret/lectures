@@ -1090,6 +1090,25 @@ CRLF
 			</part>
 			<part id="RDF">
 				<title>Resource Description Framework (RDF)</title>
+				<slide id="RDF-origins">
+					<title>RDF Origins</title>
+					<ul>
+						<li>Started as a generalized metadata framework for describing Web resources</li>
+						<li>Triples are used for making statements</li>
+						<ul>
+							<li><em>Subjects</em> identify what a statement is made about</li>
+							<li><em>Predicates</em> (or <em>properties</em>) identify the kind of statement that is made</li>
+							<li><em>Objects</em> represent the statement that is made (by reference or value)</li>
+						</ul>
+						<li>RDF is graph centric and has a rich ecosystem of accompanying technologies</li>
+						<ul>
+							<li><a href="https://en.wikipedia.org/wiki/RDFS">RDF Schema (RDFS)</a> as a schema language</li>
+							<li><a href="https://en.wikipedia.org/wiki/Web_Ontology_Language">Web Ontology Language (OWL)</a> for more complex schemas</li>
+							<li><a href="https://en.wikipedia.org/wiki/SHACL">SHACL</a> as a language for constraint validation</li>
+							<li><a href="https://en.wikipedia.org/wiki/SPARQL">SPARQL</a> as a query language</li>
+						</ul>
+					</ul>
+				</slide>
 				<slide id="RDF-example">
 					<title>RDF Example</title>
 					<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="example-rdf.jpg" href="https://www.w3.org/TR/rdf11-primer/#section-triple"/>
