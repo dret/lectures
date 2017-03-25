@@ -1022,6 +1022,19 @@ CRLF
 			</slide>
 			<part id="JSON">
 				<title>JavaScript Object Notation (JSON)</title>
+				<slide id="JSON-example">
+					<title>JSON Example</title>
+					<ul>
+						<li>Structured values can be objects and arrays</li>
+						<ul>
+							<li>Objects consist of members (which are key/value pairs)</li>
+							<li>Arrays consist of values (possibly mixing types)</li>
+						</ul>
+						<li>Simple values can be string, number, boolean, or null</li>
+						<li>Nesting of structured values</li>
+					</ul>
+					<listing src="example-json.json" href="https://tools.ietf.org/html/rfc7159#section-13"/>
+				</slide>
 			</part>
 			<part id="XML">
 				<title>Extensible Markup Language (XML)</title>
