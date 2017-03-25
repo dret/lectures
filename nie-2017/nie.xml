@@ -1014,12 +1014,24 @@ CRLF
 					</ul>
 					<li>The Web currently has three major metamodels</li>
 					<ul>
-						<li><link href="JSON">JavaScript Object Notation (JSON)</link> with an <q>object bias</q></li>
 						<li><link href="XML">Extensible Markup Language (XML)</link> with an <q>ordered tree bias</q></li>
+						<li><link href="JSON">JavaScript Object Notation (JSON)</link> with an <q>object bias</q></li>
 						<li><link href="RDF">Resource Description Framework (RDF)</link> with an <q>unordered graph bias</q></li>
 					</ul>
 				</ul>
 			</slide>
+			<part id="XML">
+				<title>Extensible Markup Language (XML)</title>
+				<slide id="XML-example">
+					<title>XML Example</title>
+					<ul>
+						<li>Language identification</li>
+						<li>Content/attribute separation</li>
+						<li>Ordering and nesting of elements</li>
+					</ul>
+					<listing src="example-xml.xml" href="https://www.w3.org/TR/REC-xml/#sec-lang-tag"/>
+				</slide>
+			</part>
 			<part id="JSON">
 				<title>JavaScript Object Notation (JSON)</title>
 				<slide id="JSON-example">
@@ -1034,18 +1046,6 @@ CRLF
 						<li>Nesting of structured values</li>
 					</ul>
 					<listing src="example-json.json" href="https://tools.ietf.org/html/rfc7159#section-13"/>
-				</slide>
-			</part>
-			<part id="XML">
-				<title>Extensible Markup Language (XML)</title>
-				<slide id="XML-example">
-					<title>XML Example</title>
-					<ul>
-						<li>Language identification</li>
-						<li>Content/attribute separation</li>
-						<li>Ordering and nesting of elements</li>
-					</ul>
-					<listing src="example-xml.xml" href="https://www.w3.org/TR/REC-xml/#sec-lang-tag"/>
 				</slide>
 			</part>
 			<part id="RDF">
