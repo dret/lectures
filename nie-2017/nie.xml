@@ -1025,6 +1025,15 @@ CRLF
 			</part>
 			<part id="xml">
 				<title>Extensible Markup Language (XML)</title>
+				<slide id="xml-example">
+					<title>XML Example</title>
+					<ul>
+						<li>Language identification</li>
+						<li>Content/attribute separation</li>
+						<li>Ordering and nesting of elements</li>
+					</ul>
+					<listing src="example-xml.xml" href="https://www.w3.org/TR/REC-xml/#sec-lang-tag"/>
+				</slide>
 			</part>
 			<part id="rdf">
 				<title>Resource Description Framework (RDF)</title>
