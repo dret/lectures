@@ -1022,6 +1022,28 @@ CRLF
 			</slide>
 			<part id="XML">
 				<title>Extensible Markup Language (XML)</title>
+				<slide id="XML-origins">
+					<title>XML Origins</title>
+					<ul>
+						<li>XML was created as a way to publish data on the Web</li>
+						<ul>
+							<li>It has the same foundations as HTML (both are based on <a title="Standard Generalized Markup Language" href="https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language">SGML</a>)</li>
+							<li>XML allows applications to define their own elements, attributes, and grammar</li>
+						</ul>
+						<li>XML was the first Web-scale structured data format</li>
+						<ul>
+							<li>Initial Web services were based on XML as a core Web technology</li>
+							<li>XML's document origins and typical Web service object models quickly collided</li>
+						</ul>
+						<li>XML is document centric and has a rich ecosystem of accompanying technologies</li>
+						<ul>
+							<li><a href="https://en.wikipedia.org/wiki/XML_Schema_(W3C)">XSD</a> as a schema language for constraints and validation</li>
+							<li><a href="https://en.wikipedia.org/wiki/XPath">XPath</a> as a path language to address parts of XML documents</li>
+							<li><a href="https://en.wikipedia.org/wiki/XQuery">XQuery</a> as a query language for more complex queries</li>
+							<li><a href="https://en.wikipedia.org/wiki/XSLT">XSLT</a> as a transformation language for transforming XML documents</li>
+						</ul>
+					</ul>
+				</slide>
 				<slide id="XML-example">
 					<title>XML Example</title>
 					<ul>
