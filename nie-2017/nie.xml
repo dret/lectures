@@ -750,6 +750,78 @@
 		<title>Technical Foundations</title>
 		<toc class="time">13.30-14.15</toc>
 		<toc class="resources"><a href="https://tools.ietf.org/html/rfc3986" title="RFC 3986: Uniform Resource Identifier (URI): Generic Syntax, January 2005">URI RFC</a>&#160;· <a href="https://tools.ietf.org/html/rfc7231" title="RFC 7231: Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content, June 2014">HTTP RFC</a>&#160;· <a href="https://tools.ietf.org/html/rfc7159" title="RFC 7159: The JavaScript Object Notation (JSON) Data Interchange Format, March 2014">JSON RFC</a>&#160;· <a href="https://tools.ietf.org/html/rfc6749" title="RFC 6749: The OAuth 2.0 Authorization Framework, August 2008">OAuth 2.0</a>&#160;· <a href="https://alexbilbie.com/guide-to-oauth-2-grants/" title='Alex Bilbie, "A Guide To OAuth 2.0 Grants"'>OAuth 2.0 Guide</a></toc>
+		<part id="uri">
+			<title>Uniform Resource Identifier (URI)</title>
+			<slide>
+				<title>Resource Identification</title>
+				<ul>
+					<li>Early hypertext systems identified documents within the scope of a single system</li>
+					<li>The Web uses URIs (Uniform Resource Identifers) as global identifiers</li>
+					<ul>
+						<li><code>http://www.ca.com/</code></li>
+						<li><code>mailto:erik.wilde@ca.com</code></li>
+						<li><code>tel:+1-510-684-2179</code></li>
+						<li><code>urn:isbn:0451450523</code></li>
+					</ul>
+				</ul>
+				<blockquote cite="http://www.w3.org/TR/2004/REC-webarch-20041215/#identification">Global naming leads to global network effects … the value of an identifier increases the more it is used consistently</blockquote>
+				<p class="quotenote"><a href="http://www.w3.org/TR/webarch/">Architecture of the World Wide Web, Volume One</a></p> 
+			</slide>
+			<slide>
+				<title>URIs &amp; Resources</title>
+				<ul>
+					<li>A URI identifies a <em>resource</em></li>
+					<li>But what is a resource? A resource is anything identified by a URI!</li>
+					<li>Resources are a way of conceptually dividing up an information space</li>
+					<li>URIs do not merely identify; they are often used for access and interaction</li>
+					<li>Interaction mechanics are determined by the URI's scheme (<code><b>http</b>://www.ca.com/</code>)</li>
+					<li>A popular method of interacting with a resource is by <em>dereferencing</em> the URI</li>
+				</ul>
+			</slide>
+			<slide id="uri-schemes">
+				<title>URI Schemes</title>
+				<pre>URI = scheme ":" hier-part [ "?" query ] [ "#" fragment ]</pre>
+				<pre>http://dret.net/lectures/nie-2017/technology#uri-schemes</pre>
+				<ul>
+					<li>URIs in their general case are very simple</li>
+					<ul>
+						<li>The scheme determines how resources are identified</li>
+						<li>The identification may be hierarchical or non-hierarchical</li>
+					</ul>
+					<li>Many URI schemes are hierarchical</li>
+					<ul>
+						<li>It is then possible to use relative URIs such as in <code>&lt;a href=".."></code></li>
+						<li>The slash character is not just a character, in URIs it has semantics</li>
+					</ul>
+					<li>Query components specify additional information</li>
+					<ul>
+						<li>It is non-hierarchical information further identifying the resource</li>
+						<li>In many cases, it can be regarded as <q>input</q> for resource interactions</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="representation-resource">
+				<title>Resources &amp; Representations</title>
+				<ul>
+					<li>When a URI is dereferenced by a client, it receives some data</li>
+					<li>That data is called a <em>representation</em> of the resource identified by the URI</li>
+					<li>Resources are abstract, representations are concrete</li>
+					<li>Resources may have various representations, and they may vary with time</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>1 Resource, 2 Representations</title>
+				<center>
+					<img src="google-representations-1.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</center>
+			</slide>
+			<slide>
+				<title>2 Resources, 1 Representation</title>
+				<center>
+					<img src="google-representations-2.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</center>
+			</slide>
+		</part>
 		<part id="http">
 			<title>Hypertext Transfer Protocol (HTTP)</title>
 			<slide>
