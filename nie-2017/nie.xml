@@ -977,6 +977,27 @@ CRLF
 		</part>
 		<part id="representations">
 			<title>Representations</title>
+			<slide id="model">
+				<title>What is a Model?</title>
+				<ul>
+					<li><q>Simplification</q> of the real world</li>
+					<ul>
+						<li>Only consider relevant/interesting traits, neglecting details and unneeded properties</li>
+					</ul>
+					<li><q>Abstraction</q> of the real world</li>
+					<ul>
+						<li>A generalization/concept/idealization</li>
+						<li>Determine/distinguish common/defining/characteristic attributes</li>
+					</ul>
+					<li><q>Template</q> for the real world</li>
+					<ul>
+						<li>A mold/blueprint/reference/example</li>
+						<li>Prescribe relevant/defining attributes</li>
+					</ul>
+					<li>Some models have physical embodiments, others do not</li>
+					<li>Usually there is a one-to-many relationship between <em>models</em> and <em>instances</em></li>
+				</ul>
+			</slide>
 			<part id="json">
 				<title>JavaScript Object Notation (JSON)</title>
 			</part>
