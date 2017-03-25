@@ -1014,18 +1014,18 @@ CRLF
 					</ul>
 					<li>The Web currently has three major metamodels</li>
 					<ul>
-						<li><link href="json">JavaScript Object Notation (JSON)</link> with an <q>object bias</q></li>
-						<li><link href="xml">Extensible Markup Language (XML)</link> with an <q>ordered tree bias</q></li>
-						<li><link href="rdf">Resource Description Framework (RDF)</link> with an <q>unordered graph bias</q></li>
+						<li><link href="JSON">JavaScript Object Notation (JSON)</link> with an <q>object bias</q></li>
+						<li><link href="XML">Extensible Markup Language (XML)</link> with an <q>ordered tree bias</q></li>
+						<li><link href="RDF">Resource Description Framework (RDF)</link> with an <q>unordered graph bias</q></li>
 					</ul>
 				</ul>
 			</slide>
-			<part id="json">
+			<part id="JSON">
 				<title>JavaScript Object Notation (JSON)</title>
 			</part>
-			<part id="xml">
+			<part id="XML">
 				<title>Extensible Markup Language (XML)</title>
-				<slide id="xml-example">
+				<slide id="XML-example">
 					<title>XML Example</title>
 					<ul>
 						<li>Language identification</li>
@@ -1035,7 +1035,7 @@ CRLF
 					<listing src="example-xml.xml" href="https://www.w3.org/TR/REC-xml/#sec-lang-tag"/>
 				</slide>
 			</part>
-			<part id="rdf">
+			<part id="RDF">
 				<title>Resource Description Framework (RDF)</title>
 			</part>
 		</part>
