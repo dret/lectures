@@ -998,6 +998,28 @@ CRLF
 					<li>Usually there is a one-to-many relationship between <em>models</em> and <em>instances</em></li>
 				</ul>
 			</slide>
+			<slide id="metamodel">
+				<title>What is a Metamodel?</title>
+				<ul>
+					<li>Models often are built on some underlying framework</li>
+					<ul>
+						<li>Metamodels provide frameworks and experience and tooling</li>
+						<li>Metamodels have bias and picking an appropriate one is essential</li>
+					</ul>
+					<li>Metamodel frameworks help developers with model development</li>
+					<ul>
+						<li>A <em>structural framework</em> for defining and possibly relating models</li>
+						<li>A <em>supportive framework</em> for defining schemas and validation</li>
+						<li>A <em>infrastructure universe</em> for developers to work with models and instances</li>
+					</ul>
+					<li>The Web currently has three major metamodels</li>
+					<ul>
+						<li><link href="json">JavaScript Object Notation (JSON)</link> with an <q>object bias</q></li>
+						<li><link href="xml">Extensible Markup Language (XML)</link> with an <q>ordered tree bias</q></li>
+						<li><link href="rdf">Resource Description Framework (RDF)</link> with an <q>unordered graph bias</q></li>
+					</ul>
+				</ul>
+			</slide>
 			<part id="json">
 				<title>JavaScript Object Notation (JSON)</title>
 			</part>
