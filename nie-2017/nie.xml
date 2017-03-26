@@ -639,7 +639,7 @@
 			<slide id="surface">
 				<title>Be Superficial</title>
 				<ul>
-					<li>The only thing that matters is the <em>Service Surface</em></li>
+					<li>The only thing that matters is the <link href="service-surface">service surface</link></li>
 					<ul>
 						<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
 						<li>Resist the temptation to <em>expose your model</em> just because you can</li>
@@ -1130,11 +1130,25 @@ CRLF
 	<presentation id="design">
 		<title>Representation Design</title>
 		<toc class="time">14.30-15.15</toc>
-		<toc class="resources"><a href="http://dret.net/netdret/publications#pau09a" title="Cesare Pautasso and Erik Wilde, 'Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design', Proceedings of the 18th International World Wide Web Conference, ACM Press, Madrid, Spain, April 2009">Loose Coupling</a></toc>
+		<toc class="resources"><a href="http://dret.net/netdret/publications#pau09a" title="Cesare Pautasso and Erik Wilde, 'Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design', Proceedings of the 18th International World Wide Web Conference, ACM Press, Madrid, Spain, April 2009">Loose Coupling</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title="Erik Wilde, 'Patterns for Robust Extensibility'">Robust Extensibility</a></toc>
 		<part id="evolution">
 			<title>Service Evolution</title>
 			<slide id="service-surface">
 				<title>Focus on the Service Surface</title>
+				<ul>
+					<li>APIs are supposed to hide implementation details</li>
+					<ul>
+						<li>Your data model is not your object model</li>
+						<li>Your object model is not your resource model</li>
+						<li>Your resource model is not your message model</li>
+					</ul>
+					<li>Designing APIs is a conscious and explicit design exercise</li>
+					<ul>
+						<li><em>API First</em> looks at API design as <q>product mockup/prototype</q></li>
+						<li><em>Design Thinking</em> looks at APIs from the UX/DX perspective</li>
+					</ul>
+					<li>Designing changeability into the API is a key requirement</li>
+				</ul>
 			</slide>
 			<slide id="autonomy-robustness">
 				<title>Autonomy vs. Robustness</title>
