@@ -1256,8 +1256,50 @@ CRLF
 		</part>
 		<part id="message-design">
 			<title>Designing Messages</title>
+			<slide id="messaging">
+				<title>Web APIs and Messaging</title>
+				<ul>
+					<li>APIs are about exchanging messages that request resources or resource state changes</li>
+					<ul>
+						<li>Requesting a resource results in a resource representation</li>
+						<li>Requesting a resource state change often needs additional details</li>
+					</ul>
+					<li>Designing API messages is like designing paper forms</li>
+					<ul>
+						<li><em>Self-contained representations</em> of the requested state changes</li>
+						<li>Responses may indicate further required interactions</li>
+						<li>Follow the workflow as required to achieve the end result</li>
+					</ul>
+					<li>Responses often are a combination of data and control elements</li>
+					<ul>
+						<li><em>Data</em> is some representation of an (intermediary) result</li>
+						<li><em>Control</em> allows clients to engage in further interactions</li>
+						<li>Equivalent to paper forms combining confirmation/continuation information</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="workflows">
+				<title>Messaging and Workflows</title>
+				<ul>
+					<li><link href="hypermedia">Hypermedia</link> combines data and control information</li>
+					<ul>
+						<li>Messages contain information about resources in the workflow</li>
+						<li>Messages contain information about next steps in the workflow</li>
+					</ul>
+					<li>Clients are achieving goals by using messages in a guided way</li>
+					<ul>
+						<li>If guidance is embedded: <em>Choreography</em> (driven by inline guidance from APIs)</li>
+						<li>If guidance is external: <em>Orchestration</em> (driven by out-of-line guidance)</li>
+					</ul>
+					<li><em>Workflow variability</em> means that hypermedia helps clients</li>
+					<ul>
+						<li>Controls are only present if they represent possible follow-up interactions</li>
+						<li>Clients can adapt their behavior based on available controls</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
-			<part id="conclusions">
+		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
