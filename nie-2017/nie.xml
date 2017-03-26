@@ -767,7 +767,7 @@
 						<li>Consumers know when to call which functions</li>
 						<li>Control flow is left to the consumer</li>
 					</ul>
-					<li><q>Function libraries</q> are exposed as a collection of <q>API endpoints</q></li>
+					<li><q>Function libraries</q> are exposed as an <q>API endpoint</q></li>
 					<ul>
 						<li>There are no constraints on the capabilities exposed</li>
 						<li>Capabilities are primarily structured by <em>functions</em> and not by <em>resources</em></li>
