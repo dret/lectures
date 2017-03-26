@@ -745,6 +745,13 @@
 			</slide>
 			<slide id="tunnel-style">
 				<title>Tunnel Style</title>
+				<ul>
+					<li>Popularized by XML-RPC and the <em>Simple Object Access Protocol (SOAP)</em></li>
+					<ul>
+						<li>All functions are made available at one <em>URI endpoint</em> (or <em>port</em>)</li>
+						<li>All interactions are tunneled through interactions with this one URI</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="uri-style">
 				<title>URI Style</title>
