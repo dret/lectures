@@ -1316,6 +1316,14 @@ CRLF
 					</ul>
 				</ul>
 			</slide>
+			<slide id="HAL">
+				<title>Hypertext Application Language (HAL)</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="hal-model.png" href="http://stateless.co/hal_specification.html"/>
+			</slide>
+			<slide id="HAL-example">
+				<title>HAL Example</title>
+				<listing src="example-hal.json" href="http://stateless.co/hal_specification.html"/>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
