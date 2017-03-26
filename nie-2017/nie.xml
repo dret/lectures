@@ -1238,6 +1238,21 @@ CRLF
 					<li>Keep the developer/user community and their preferences in mind</li>
 				</ul>
 			</slide>
+			<slide id="model-design">
+				<title>Designing a Model</title>
+				<ul>
+					<li>Documenting design decisions is as important as documenting a design</li>
+					<ul>
+						<li>Developers are happier when they know the reasons for a specific design</li>
+					</ul>
+					<li>Consider using/extending established domain models</li>
+					<ul>
+						<li>Open/extensible domain models are reasonable candidates</li>
+						<li>Reuse is good but forcing it can result in design issues</li>
+						<li>Consider the <em>overall complexity</em> of any reused designs</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="message-design">
 			<title>Designing Messages</title>
