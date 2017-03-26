@@ -464,6 +464,31 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="waterfall">
+				<title>Fixing the Waterfall</title>
+				<ul>
+					<li>Making IT changes quicker and more effectively</li>
+					<ul>
+						<li><em>Building</em> software is approached quicker and more incrementally</li>
+						<li><em>Testing</em> software is automated so that building quicker can be done safely</li>
+						<li><em>Releasing/deploying</em> software is automated so that building quicker delivers value</li>
+					</ul>
+					<li>Optimization and integration of software delivery pipeline</li>
+					<ul>
+						<li>Code: Code development and review, version control tools, code merging</li>
+						<li>Build: Continuous integration tools, build status</li>
+						<li>Test: Test and results determine performance</li>
+						<li>Package: Artifact repository, application pre-deployment staging</li>
+						<li>Release: Change management, release approvals, release automation</li>
+						<li>Configure: Infrastructure configuration and management, Infrastructure as Code tools</li>
+						<li>Monitor: Applications performance monitoring, end-user UX</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="devops-lifecycle">
+				<title>DevOps Lifecycle</title>
+				<img title="DevOps Lifecycle" href="https://commons.wikimedia.org/wiki/File:Devops-toolchain.svg" src="devops.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
