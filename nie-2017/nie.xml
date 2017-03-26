@@ -1298,6 +1298,24 @@ CRLF
 					</ul>
 				</ul>
 			</slide>
+			<slide id="messaging-formats">
+				<title>Messaging Formats</title>
+				<ul>
+					<li>Message formats combine data and control information</li>
+					<ul>
+						<li>Some scenarios allow to <em>separate</em> data and control information</li>
+					</ul>
+					<li>Data/control separation is an effective simplification</li>
+					<ul>
+						<li><em>Data representation</em> can be based on an existing <link href="object-design">object design</link></li>
+						<li><em>Control representation</em> adds information that clients can navigate</li>
+					</ul>
+					<li>Using existing formats can improve API landscape consistency</li>
+					<ul>
+						<li>Examples of existing JSON-based formats are HAL, Siren, Collection+JSON, and UBER</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
