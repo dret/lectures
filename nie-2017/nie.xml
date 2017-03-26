@@ -1205,6 +1205,39 @@ CRLF
 		</part>
 		<part id="object-design">
 			<title>Designing Objects</title>
+			<slide id="API-read">
+				<title>Accessing Domain Objects</title>
+				<ul>
+					<li>Access operations might provide <q>direct access</q> to domain objects</li>
+					<ul>
+						<li><em>Listing objects</em> through some form of access path</li>
+						<li><em>Querying for objects</em> based on some query capabilities</li>
+					</ul>
+					<li>Reading objects should not directly expose implementation details</li>
+					<ul>
+						<li>Implementation technology should not affect the API</li>
+						<li>Having a meaningful and stable core establishes a solid foundation</li>
+						<li>Having well-defined extension points allows service evolution</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="metamodel-bias">
+				<title>Picking a Metamodel</title>
+				<ul>
+					<li>For many APIs there is some <q>bias</q> in the resources they expose</li>
+					<ul>
+						<li><em>Object orientation</em> means it is about distinct and structured objects</li>
+						<li><em>Document orientation</em> means a focus on rich text representation and structures</li>
+						<li><em>Graph orientation</em> means less focus on explicitly distinct objects</li>
+					</ul>
+					<li>Picking the right metamodel means having a better model</li>
+					<ul>
+						<li>Any metamodel can be used to represent any model</li>
+						<li>Picking the right tool for the job results in a better API</li>
+					</ul>
+					<li>Keep the developer/user community and their preferences in mind</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="message-design">
 			<title>Designing Messages</title>
