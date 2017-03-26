@@ -1227,7 +1227,7 @@ CRLF
 					<li>Designing APIs is a conscious and explicit design exercise</li>
 					<ul>
 						<li><em>API First</em> looks at API design as <q>product mockup/prototype</q></li>
-						<li><em>Design Thinking</em> looks at APIs from the UX/DX perspective</li>
+						<li><em>Design Thinking</em> looks at APIs from the UX/<link href="DX">DX</link> perspective</li>
 					</ul>
 					<li>Designing changeability into the API is a key requirement</li>
 				</ul>
@@ -1441,8 +1441,8 @@ CRLF
 		<title>Documentation</title>
 		<toc class="time">16.00-16.30</toc>
 		<toc class="resources"><a href="http://webconcepts.info/">Web Concepts</a>&#160;· <a href="https://github.com/OAI/OpenAPI-Specification" title="OAI OpenAPI Specification on GitHub">OpenAPI</a></toc>
-		<part id="documentation">
-			<title>Documentation</title>
+		<part id="DX">
+			<title>Developer Experience (DX)</title>
 		</part>
 		<part id="web-concepts">
 			<title>Web Concepts</title>
