@@ -592,7 +592,7 @@
 				<title>How Micro?</title>
 				<ul>
 					<li>There is no hard limit on the size of a Microservice</li>
-					<li>Domain limits (DDD) are a good starting point</li>
+					<li>Domain limits are a good starting point</li>
 					<li>Team size (<a href="https://en.wikipedia.org/wiki/Conway's_law">Conway's Law</a>) is a good starting point</li>
 				</ul>
 			</slide>
@@ -645,7 +645,6 @@
 						<li>Resist the temptation to <em>expose your model</em> just because you can</li>
 					</ul>
 					<li>Concepts must be well-defined but not necessarily deeply modeled</li>
-					<ul><em>Domain Driven Design (DDD)</em> provides a framework for <em>bounded contexts</em></ul>
 				</ul>
 			</slide>
 		</part>
@@ -1134,6 +1133,9 @@ CRLF
 		<toc class="resources"><a href="http://dret.net/netdret/publications#pau09a" title="Cesare Pautasso and Erik Wilde, 'Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design', Proceedings of the 18th International World Wide Web Conference, ACM Press, Madrid, Spain, April 2009">Loose Coupling</a></toc>
 		<part id="evolution">
 			<title>Service Evolution</title>
+			<slide id="service-surface">
+				<title>Focus on the Service Surface</title>
+			</slide>
 			<slide id="autonomy-robustness">
 				<title>Autonomy vs. Robustness</title>
 				<ul>
