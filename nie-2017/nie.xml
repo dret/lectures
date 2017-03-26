@@ -767,9 +767,14 @@
 			<slide id="uri-style">
 				<title>URI Style</title>
 				<ul>
+					<li></li>
 					<li>Most popular description/documentation formats focus on this style</li>
 					<ul>
 						<li>Swagger/OpenAPI, RAML, API Blueprint, WADL</li>
+					</ul>
+					<li>Encourages hardcoded workflows in clients (introducing brittleness)</li>
+					<ul>
+						<li>Developers copy URIs into their code and changing any breaks clients</li>
 					</ul>
 				</ul>
 			</slide>
@@ -1438,6 +1443,76 @@ CRLF
 		<toc class="resources"><a href="https://github.com/OAI/OpenAPI-Specification" title="OAI OpenAPI Specification on GitHub">OpenAPI</a></toc>
 		<part id="documentation">
 			<title>Documentation</title>
+		</part>
+		<part id="web-concepts">
+			<title>Web Concepts</title>
+			<slide id="snowflakes">
+				<title>Sunlight Melts Snowflakes</title>
+				<img title="Snowflakes" href="http://www.flickr.com/photos/amagill/4223790595" src="snowflake.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="ui-patterns">
+				<title>Uniform Interface Patterns</title>
+				<ul>
+					<li>Identify <q>design patterns</q> based on shared concepts</li>
+					<ul>
+						<li>Treating concepts as a <em>flat space</em> leaves out many details</li>
+						<li><q>Deeper models</q> can still be based on the <q>shared concept surface</q></li>
+					</ul>
+					<li>The uniform interface evolves and so should attempts to track it</li>
+					<ul>
+						<li>New <a href="https://github.com/dret/webconcepts/commits">Web Concept values</a> are defined/created constantly</li>
+						<li>New <a href="http://webconcepts.info/concepts">Web Concepts</a> appear less frequently</li>
+					</ul>
+					<li><q>Make any model <em>as shallow as possible</em>, model depth tightly couples and makes model matching and mapping much harder.</q></li>
+				</ul>
+			</slide>
+			<slide id="interface-compose">
+				<title>Composing the Uniform Interface</title>
+				<ul>
+					<li>What is the <em>uniform interface</em> of the API Web?</li>
+					<ul>
+						<li>It depends on who you are asking</li>
+						<li>It depends on when you are asking</li>
+						<li>There is probably a relatively agreed-upon core and many extension areas</li>
+					</ul>
+					<li>Create a <em>composable view of the uniform interface</em> that evolves and extends</li>
+					<ul>
+						<li>Model as little as you can get away with</li>
+						<li>Create a <em>common core</em> that everybody can start with</li>
+						<li>Encourage evolution and extension</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="concepts">
+				<title>Concepts</title>
+				<listing src="concepts.json" line="2-17" href="http://webconcepts.info/concepts/concepts.json"/>
+			</slide>
+			<slide id="specs">
+				<title>Specifications</title>
+				<listing src="specs.json" line="2-21" href="http://webconcepts.info/specs/specs.json"/>
+			</slide>
+			<slide id="concepts-and -sepcs">
+				<title>Concepts and Specifications</title>
+				<ul>
+					<li>Concepts are established by defining/documenting them</li>
+					<ul>
+						<li>The most popular ones are defined and documented in standards</li>
+						<li>Many concepts allow private uses of their namespace</li>
+					</ul>
+					<li>Many specifications establish more than one concept</li>
+					<ul>
+						<li>Solving a problem often requires more than just one concept</li>
+						<li>The specification established the <em>domain</em> that matters for the concept</li>
+					</ul>
+					<li>Specifications (and services) may also depend on existing concepts</li>
+				</ul>
+			</slide>
+			<slide id="http">
+				<title>HTTP/1.1 Concepts</title>
+				<listing src="rfc7231.xml" line="2-6" href="http://webconcepts.info/specs/IETF/RFC/7231"/>
+				<listing src="rfc7231.xml" line="119-120" href="http://webconcepts.info/specs/IETF/RFC/7231"/>
+				<listing src="rfc7231.xml" line="173-174" href="http://webconcepts.info/specs/IETF/RFC/7231"/>
+			</slide>
 		</part>
 		<part id="discovery">
 			<title>Discovery</title>
