@@ -756,6 +756,7 @@
 						<li>Remote <q>function libraries</q> are treated like local ones</li>
 						<li>Function signatures (WSDL) can be used to generate stub code</li>
 					</ul>
+					<li>Treats HTTP as a tunnel and not as an application protocol</li>
 					<li>Decline in popularity since the advent of JSON-based Web APIs</li>
 					<ul>
 						<li>Tightly coupled model causes brittleness in decentralized scenarios</li>
