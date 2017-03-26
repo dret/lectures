@@ -438,10 +438,31 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="cd">
-			<title>Continuous Delivery</title>
-			<slide>
-				<title></title>
+		<part id="devops">
+			<title>Developer Operations (DevOps)</title>
+			<slide id="process-agility">
+				<title>Business Process Agility</title>
+				<ul>
+					<li>Design new products that use/create new value chains</li>
+					<ul>
+						<li>Reusing existing products makes this much easier</li>
+					</ul>
+					<li>Develop/Deploy products rapidly</li>
+					<ul>
+						<li>Focus on products and self-reliant teams helps development/deployment speed</li>
+					</ul>
+					<li>Measure the impact of new products</li>
+					<ul>
+						<li>Strong monitoring tooling and culture helps with tracking</li>
+					</ul>
+					<li>How to optimize the creation of new products?</li>
+					<ul>
+						<li>Make design/development/deployment easy</li>
+						<li>Make existing designs and products easy to find</li>
+						<li>Make using/reusing existing products easy</li>
+						<li>Make measurements easy and failure cheap</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
