@@ -1644,7 +1644,7 @@ CRLF
 						<li>Some representations can only handle resource-to-resource links</li>
 						<li>In some cases links from and/or to fragments are also required</li>
 					</ul>
-					<li>Resource fragment links can anchor link <q>within</q> resources</li>
+					<li>Resource fragments can anchor links <q>within</q> resources</li>
 					<ul>
 						<li><em>Target fragments</em> can be identified by using URI fragment syntax</li>
 						<li><em>Source fragments</em> can be established by embedding outgoing links in content</li>
