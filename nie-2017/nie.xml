@@ -395,13 +395,17 @@
 					<li>Operations in API ecosystems are harder than for monoliths</li>
 					<ul>
 						<li>Monitoring and debugging one system needs fewer and less flexible tooling</li>
-						<li>API limit visibility to the <em>API surface</em> of services</li>
+						<li>APIs limit visibility to the <em>API surface</em> of services</li>
 					</ul>
-					<li>Is the API price worth it?</li>
+					<li>Is the API price worth it? And what about the microservices price?</li>
 					<ul>
 						<li><em>APIs</em> trade ecosystem agility/flexibility for operational complexity</li>
 						<li><em>Microservices</em> trade ease/speed of development for operational complexity</li>
-						<li>Whether it is worth the price is a question of business goals</li>
+						<li>Whether the effort is worth the price is a question of business goal priorities</li>
+					</ul>
+					<li>Deciding to pay the API/microservices price is a strategic decision</li>
+					<ul>
+						<li>There is no simple cost analysis that will prove one way or the other</li>
 					</ul>
 				</ul>
 			</slide>
