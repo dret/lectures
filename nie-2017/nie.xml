@@ -1445,6 +1445,19 @@ CRLF
 			<title>Developer Experience (DX)</title>
 			<slide id="developer-focus">
 				<title>Developer Focus</title>
+				<ul>
+					<li>APIs are the only visible/accessible parts in an API landscape</li>
+					<ul>
+						<li><em>Everybody</em> in an API landscape is consuming and producing APIs</li>
+						<li>Improving that experience is an important part of API landscaping</li>
+					</ul>
+					<li>Coherence <em>across APIs</em> improves DX for the API landscape</li>
+					<ul>
+						<li>Mixing API styles shifts burden from API producers to consumers</li>
+						<li>Finding a balance between guidelines and freedom is important</li>
+						<li>Education, information, and assistance go a long way</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="code-examples">
 				<title>Code Examples</title>
