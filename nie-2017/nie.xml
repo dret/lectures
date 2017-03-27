@@ -1440,7 +1440,7 @@ CRLF
 	<presentation id="documentation">
 		<title>Documentation</title>
 		<toc class="time">16.00-16.30</toc>
-		<toc class="resources"><a href="http://webconcepts.info/">Web Concepts</a>&#160;· <a href="https://github.com/OAI/OpenAPI-Specification" title="OAI OpenAPI Specification on GitHub">OpenAPI</a></toc>
+		<toc class="resources"><a href="https://tools.ietf.org/html/rfc2119" title='RFC 2219, "Key words for use in RFCs to Indicate Requirement Levels", March 1997'>RFC 2119</a>&#160;· <a href="http://webconcepts.info/">Web Concepts</a>&#160;· <a href="https://github.com/OAI/OpenAPI-Specification" title="OAI OpenAPI Specification on GitHub">OpenAPI</a></toc>
 		<part id="DX">
 			<title>Developer Experience (DX)</title>
 			<slide id="developer-focus">
@@ -1474,6 +1474,24 @@ CRLF
 						<li>Make sure that the contract covers a useful starting point</li>
 						<li>Make sure that you have options for non-breaking changes</li>
 						<li>Make sure to tell everybody about the possible changes</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="rfc2119">
+				<title>RFC 2119 Language</title>
+				<ul>
+					<li><a href="https://tools.ietf.org/html/rfc2119">RFC 2219: <q>Key words [...] to Indicate Requirement Levels</q></a>, March 1997</li>
+					<ul>
+						<li>Clear focus on the fact that providers and consumers are decoupled</li>
+						<li>Clear focus on the fact that there is correct, tolerable, and incorrect behavior</li>
+					</ul>
+					<li>Small set of CAPITALIZED key words to help with contracts</li>
+					<ul>
+						<li><code>MUST</code>: Cannot be ignored without breaking the contract</li>
+						<li><code>MUST NOT</code>: Cannot be done without breaking the contract</li>
+						<li><code>SHOULD</code>: Only ignore with a good reason and good understanding</li>
+						<li><code>SHOULD NOT</code>: Do not do without a good reason and good understanding</li>
+						<li><code>MAY</code>: Implementation is optional but interoperability is mandatory</li>
 					</ul>
 				</ul>
 			</slide>
