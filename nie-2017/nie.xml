@@ -948,7 +948,7 @@
 				</ul>
 			</slide>
 			<slide id="hypermedia-constraint">
-				<title><link href="hypermedia">Hypermedia</link> Driving Application State</title>
+				<title>Hypermedia Driving Application State</title>
 				<ul>
 					<li><link href="self-describing-constraint">Resource representations</link> contain links to <link href="identification-constraint">identified resources</link></li>
 					<li>Resources and state can be used by navigating links</li>
