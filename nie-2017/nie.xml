@@ -1636,6 +1636,26 @@ CRLF
 					</ul>
 				</ul>
 			</slide>
+			<slide id="hypermedia-representations">
+				<title>Hypermedia Representations</title>
+				<ul>
+					<li>Hypermedia representations must represent content and controls</li>
+					<ul>
+						<li>Some representations can only handle resource-to-resource links</li>
+						<li>In some cases links from and/or to fragments are also required</li>
+					</ul>
+					<li>Resource fragment links can anchor link <q>within</q> resources</li>
+					<ul>
+						<li><em>Target fragments</em> can be identified by using URI fragment syntax</li>
+						<li><em>Source fragments</em> can be established by embedding outgoing links in content</li>
+					</ul>
+					<li>Hypermedia representations are often designed from the ground up</li>
+					<ul>
+						<li>Popular metamodels (JSON or XML) are often used as foundation</li>
+						<li>Generic hypermedia formats have seen relatively little success so far</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
