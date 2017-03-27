@@ -1658,7 +1658,13 @@ CRLF
 			</slide>
 			<slide id="web-linking">
 				<title>Web Linking</title>
-				
+				<ul>
+					<li><a href="https://tools.ietf.org/html/rfc5988">RFC 5988 <q>Web Linking</q></a> defines two aspects of Web links</li>
+					<ul>
+						<li>The <a href="http://webconcepts.info/concepts/http-header/Link">HTTP <code>Link</code> header field</a> for HTTP-level links</li>
+						<li>A standardized way to type links and <a href="http://www.iana.org/assignments/link-relations/link-relations.xhtml">a registry for well-known link relation types</a></li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
