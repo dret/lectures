@@ -455,7 +455,7 @@
 						<li>The default is to hide as much as possible</li>
 						<li>Any required information must be exposed explicitly</li>
 					</ul>
-					<li>API landscapes should have support for supporting operations</li>
+					<li>API landscapes should provide support for supporting operations</li>
 					<ul>
 						<li>Unifying logging so that log analytics can use a common model</li>
 						<li>Exposing errors in way that may help with analysis</li>
