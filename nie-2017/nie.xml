@@ -506,7 +506,7 @@
 						<li>Test: Test and results determine performance</li>
 						<li>Package: Artifact repository, application pre-deployment staging</li>
 						<li>Release: Change management, release approvals, release automation</li>
-						<li>Configure: Infrastructure configuration and management, Infrastructure as Code tools</li>
+						<li>Configure: Infrastructure configuration and management, <em>Infrastructure as Code</em> tools</li>
 						<li>Monitor: Applications performance monitoring, end-user UX</li>
 					</ul>
 				</ul>
@@ -514,6 +514,28 @@
 			<slide id="devops-lifecycle">
 				<title>DevOps Lifecycle</title>
 				<img title="DevOps Lifecycle" href="https://commons.wikimedia.org/wiki/File:Devops-toolchain.svg" src="lifecycle-devops.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="CI-CD">
+				<title>Continuous Integration/Delivery/Deployment</title>
+				<ul>
+					<li>Technical and organizational methods to improve IT velocity</li>
+					<ul>
+						<li><em>Continuous Integration:</em> Testing all changes often and integrating into the mainline</li>
+						<li><em>Continuous Delivery:</em> Extends CI to also cover automated delivery to some recipient</li>
+						<li><em>Continuous Deployment:</em> Combines CI and delivery to automatically deploy releases</li>
+					</ul>
+					<li>Task sizes and tooling means that the process can be done rapidly</li>
+					<ul>
+						<li>As a starting point, the pipeline can still have manually triggered steps</li>
+						<li>Ideally, tooling and automation result in further improved release speeds</li>
+					</ul>
+					<li>DevOps and CI/CD change the definition of software quality</li>
+					<ul>
+						<li><em>Mean Time Between Failures (MTBF)</em> focuses on making sure nothing goes down</li>
+						<li><em>Mean Time To Repair (MTTR)</em>focuses on making sure things can be fixed quickly</li>
+						<li>For <em>many scenarios</em> MTTR is a more economical choice than MTBF</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
