@@ -1612,7 +1612,7 @@ CRLF
 	<presentation id="hypermedia">
 		<title>Hypermedia</title>
 		<toc class="time">15.30-16.00</toc>
-		<toc class="resources"><a href="http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven" title="Roy Fielding, 'REST APIs must be hypertext-driven', October 2008">REST and Hypermedia</a></toc>
+		<toc class="resources"><a href="http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven" title="Roy Fielding, 'REST APIs must be hypertext-driven', October 2008">REST and Hypermedia</a>&#160;· <a href="https://tools.ietf.org/html/rfc5988" title='RFC 5988, "Web Linking", October 2010'>RFC 5988</a></toc>
 		<part id="hypermedia-design">
 			<title>Hypermedia Design</title>
 			<slide>
@@ -1655,6 +1655,10 @@ CRLF
 						<li>Generic hypermedia formats have seen relatively little success so far</li>
 					</ul>
 				</ul>
+			</slide>
+			<slide id="web-linking">
+				<title>Web Linking</title>
+				
 			</slide>
 		</part>
 		<part id="conclusions">
