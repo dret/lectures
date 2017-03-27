@@ -1459,6 +1459,24 @@ CRLF
 					</ul>
 				</ul>
 			</slide>
+			<slide id="documentation-contract">
+				<title>Documentation is a Contract</title>
+				<ul>
+					<li>Documentation is a contract</li>
+					<ul>
+						<li>Consumers should be able to trust current documentation</li>
+						<li>Code should be stable to run even if the contract changes</li>
+						<li>Clearly document <em>what kind of changes to expect</em></li>
+						<li>Designing code for failure has to become a standard practice</li>
+					</ul>
+					<li>Contracts work best when they are as small as possible</li>
+					<ul>
+						<li>Make sure that the contract covers a useful starting point</li>
+						<li>Make sure that you have options for non-breaking changes</li>
+						<li>Make sure to tell everybody about the possible changes</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="code-examples">
 				<title>Code Examples</title>
 			</slide>
