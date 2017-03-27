@@ -285,7 +285,7 @@
 			<slide id="organize-services">
 				<title>Organize Services: Operate Smaller Components</title>
 				<ul>
-					<li>Services <em>only</em> talk to each other through APIs</li>
+					<li>Services talk to each other <em>only</em> through APIs</li>
 					<ul>
 						<li>Each service runs as a standalone component</li>
 						<li>Service dependencies are only through API invocations</li>
