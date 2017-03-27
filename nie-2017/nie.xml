@@ -447,6 +447,22 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="API-balance">
+				<title>Balancing Encapsulation and Visibility</title>
+				<ul>
+					<li>APIs by definition hide all service implementation details</li>
+					<ul>
+						<li>The default is to hide as much as possible</li>
+						<li>Any required information must be exposed explicitly</li>
+					</ul>
+					<li>API landscapes should have support for supporting operations</li>
+					<ul>
+						<li>Unifying logging so that log analytics can use a common model</li>
+						<li>Exposing errors in way that may help with analysis</li>
+						<li>Providing supportive resources such as status/contact information</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="devops">
 			<title>Developer Operations (DevOps)</title>
