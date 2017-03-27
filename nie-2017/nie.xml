@@ -316,7 +316,7 @@
 				<ul>
 					<li>Expose and use business capabilities through APIs</li>
 					<ul>
-						<li>APIs are a technical means to connect business processes</li>
+						<li>APIs are a technical means to separate/connect business processes</li>
 						<li>APIs must be accompanied by strategy and policy</li>
 					</ul>
 					<li>Providing APIs: Reacting to market needs and movements</li>
@@ -334,6 +334,7 @@
 					<li><em>API First</em> means that capabilities are accessed <em>only</em> via APIs</li>
 					<ul>
 						<li>The only way to interact with a capability is through its API</li>
+						<li>IT strategy must encourage effective <em>API-oriented design</em></li>
 						<li>IT strategy must support effective <em>API-focused development</em></li>
 						<li>IT strategy must enable effective <em>API-based operations</em></li>
 					</ul>
