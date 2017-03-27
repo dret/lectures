@@ -570,6 +570,29 @@
 				<img title="By Lachlan Donald from Melbourne, Australia (Sharpest tool in the shed) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AHuge_collection_of_tools_in_a_store_in_Chloride%2C_a_ghost_town_in_New_Mexico%2C_USA_-_July_2013.jpg" src="microservices-reality.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
+		<part id="intro">
+			<title>Introduction</title>
+			<slide id="microservices-are-soa">
+				<title>Microservices are SOA!</title>
+				<img title="Microservices are SOA!" src="microservices-are-soa.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="systems-ecosystems">
+				<title>Systems vs. Ecosystems</title>
+				<ul>
+					<li>SOAP-based SOA were traditional IT monoliths exposing some functions</li>
+					<li>MSA #1 goal is to create a loosely coupled service landscape</li>
+					<ul>
+						<li>Shared data storage creates coupling</li>
+						<li>Shared infrastructure creates coupling</li>
+						<li>Shared libraries create coupling</li>
+						<li>Loose coupling allows to pick the right tool for the job</li>
+						<li>Loose coupling allows to refactor/retire as required</li>
+						<li>Loose coupling blurs the public/partner/private lines</li>
+					</ul>
+					<li>Using APIs is one of the few overlaps between SOAP-based SOA and MSA</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="what">
 			<title>Microservices: What?</title>
 			<slide id="characteristics">
