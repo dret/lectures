@@ -1613,6 +1613,30 @@ CRLF
 		<title>Hypermedia</title>
 		<toc class="time">15.30-16.00</toc>
 		<toc class="resources"><a href="http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven" title="Roy Fielding, 'REST APIs must be hypertext-driven', October 2008">REST and Hypermedia</a></toc>
+		<part id="hypermedia-design">
+			<title>Hypermedia Design</title>
+			<slide>
+				<title>Hypermedia = Content + Controls</title>
+				<ul>
+					<li>Hypermedia combines data about content and control</li>
+					<ul>
+						<li><em>Content</em> is used to represent the current resource</li>
+						<li><em>Controls</em> are a special additional aspect of resource representation</li>
+					</ul>
+					<li>Hypermedia embeds content into a <em>web of interlinked resources</em></li>
+					<ul>
+						<li><em>Outgoing links</em> are represented in the resource (or the protocol)</li>
+						<li><em>Incoming links</em> are not represented in the target resource</li>
+					</ul>
+					<li>Webby hypermedia is a set of imperfectly interlinked resources</li>
+					<ul>
+						<li><em>Outgoing links</em> can break when the target disappears</li>
+						<li><em>Incoming links</em> are hard to figure out and to keep up to date</li>
+						<li>Clients driven by hypermedia always gracefully handle problems</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
