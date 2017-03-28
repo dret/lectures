@@ -859,7 +859,7 @@
 			<slide id="uri-style">
 				<title>URI Style</title>
 				<ul>
-					<li></li>
+					<li>Focusing on <q>callable resources</q> that are exposed at documented URIs</li>
 					<li>Most popular description/documentation formats focus on this style</li>
 					<ul>
 						<li>Swagger/OpenAPI, RAML, API Blueprint, WADL</li>
@@ -867,6 +867,11 @@
 					<li>Encourages hardcoded workflows in clients (introducing brittleness)</li>
 					<ul>
 						<li>Developers copy URIs into their code and changing any breaks clients</li>
+					</ul>
+					<li>Effectively creates a complete <q>sitemap</q> of all available resources</li>
+					<ul>
+						<li><em>URIs</em> are used to access uniquely identified resources</li>
+						<li><em>URI Templates</em> are used to access resource collections</li>
 					</ul>
 				</ul>
 			</slide>
