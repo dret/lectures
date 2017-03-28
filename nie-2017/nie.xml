@@ -995,11 +995,6 @@
 						<li>It is specific for a client and thus has to be maintained by each client</li>
 						<li>It may affect <em>access</em> to server resources, but not the resources themselves</li>
 					</ul>
-					<li><em>Security issues</em> usually are important with client state</li>
-					<ul>
-						<li>clients can (try to) cheat by lying about their state</li>
-						<li>keeping client state on the server is expensive (but may be worth the price)</li>
-					</ul>
 				</ul>
 			</slide>
 		</part>
