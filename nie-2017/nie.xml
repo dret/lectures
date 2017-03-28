@@ -1617,6 +1617,23 @@ CRLF
 			<title>Hypermedia Hype?</title>
 			<slide id="why-hypermedia">
 				<title>Why Hypermedia?</title>
+				<ul>
+					<li>Avoiding coupling by API capabilities</li>
+					<ul>
+						<li>RPC and URI styles require clients to know about capabilities</li>
+						<li>Hypermedia allows clients to discover them ar runtime</li>
+					</ul>
+					<li>Enabling clients to be driven by resource state</li>
+					<ul>
+						<li>Links are only available when an interaction is possible</li>
+						<li>Links can be ignored if uninteresting or unknown to the client</li>
+					</ul>
+					<li>Allowing APIs to evolve by interlinking new resources</li>
+					<ul>
+						<li>Clients ignore links they are not interested in</li>
+						<li>Clients can use new workflows if they are interested</li>
+					</ul>
+				</li>
 			</slide>
 			<slide id="what-hypermedia">
 				<title>Hypermedia Claims</title>
