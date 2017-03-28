@@ -1657,6 +1657,16 @@ CRLF
 			</slide>
 			<slide id="how-hypermedia">
 				<title>How to do Hypermedia</title>
+				<ul>
+					<li>Hypermedia needs core foundations to work seamlessly at scale</li>
+					<ul>
+						<li><em>Resources</em> represent anything that clients may be interested in</li>
+						<li><em>Identification</em> must make sure that all resources are addressed uniformly</li>
+						<li><em>Interaction</em> should be uniform to make resource access universal</li>
+						<li><em>Representations</em> have to combine content and controls to guide clients</li>
+						<li><em>Hyperlinks</em> should be typed to allow clients to choose</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="hypermedia-design">
