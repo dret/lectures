@@ -881,6 +881,10 @@
 					<img src="swagger-pet-store.png" href="http://petstore.swagger.io/" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 				</center>
 			</slide>
+			<slide id="swagger-example">
+				<title>Swagger Source Code</title>
+				<listing src="swagger-pet-store.json" line="39-66" href="http://petstore.swagger.io/v2/swagger.json"/>
+			</slide>
 		</part>
 		<part id="REST">
 			<title>Representational State Transfer (REST)</title>
