@@ -1716,6 +1716,28 @@ CRLF
 						<li>The <a href="http://webconcepts.info/concepts/http-header/Link">HTTP <code>Link</code> header field</a> for HTTP-level links</li>
 						<li>A standardized way to type links and <a href="http://www.iana.org/assignments/link-relations/link-relations.xhtml">a registry for well-known link relation types</a></li>
 					</ul>
+					<li><a href="http://webconcepts.info/concepts/http-header/Link"><code>Link</code></a> can be used to represent resource-level links</li>
+					<ul>
+						<li>Including links in HTTP or in the representation is equivalent</li>
+						<li>Hypermedia can be used without embedding links in representations</li>
+						<li>Supports linking for representations that have no ability/possibility for linking</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="link-relations">
+				<title>Link Relations</title>
+				<ul>
+					<li><a href="http://webconcepts.info/concepts/link-relation/">Link relations</a> allow simple and consistent typing of links</li>
+					<ul>
+						<li>Hypermedia clients choose links based on their application goals</li>
+						<li>Link relations are a simple shared vocabulary at the Web level</li>
+					</ul>
+					<li>Link relations can be either registered or extension values</li>
+					<ul>
+						<li><em>Registered values</em> are strings and specified and <a href="http://www.iana.org/assignments/link-relations/link-relations.xhtml">registered by IANA</a></li>
+						<li><em>Extension values</em> are URIs and have no Web-level meaning</li>
+						<li>APIs must document supported link relations and their semantics in context</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
