@@ -1816,9 +1816,20 @@ CRLF
 				<title>Additional Documentation</title>
 				<ul>
 					<li>Developers benefit from more than just pure API documentation</li>
-					<li>Code examples</li>
-					<li>Design documentation</li>
-					<li>Scenarios</li>
+					<li><em>Code examples</em> can illustrate the usage of APIs in typical languages</li>
+					<ul>
+						<li>Makes most sense if the targeted language landscape is relatively homogeneous</li>
+					</ul>
+					<li><em>Design documentation</em> talks about design trade-offs and decisions</li>
+					<ul>
+						<li>Extremely valuable for people designing APIs or managing API landscapes</li>
+						<li>Potentially valuable for developers looking for the <q>Why?</q> of an API</li>
+					</ul>
+					<li><em>Scenarios</em> put the API in context and tell user stories</li>
+					<ul>
+						<li>Particularly valuable when they look beyond the single API</li>
+						<li>Developers may even want to contribute to this category</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
