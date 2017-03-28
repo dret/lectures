@@ -1637,6 +1637,23 @@ CRLF
 			</slide>
 			<slide id="what-hypermedia">
 				<title>Hypermedia Claims</title>
+				<ul>
+					<li>Giving clients choice by providing them with dynamic controls</li>
+					<ul>
+						<li><em>Presence</em> of control information is controlled by server</li>
+						<li><em>Usage</em> of control information is controlled by client</li>
+					</ul>
+					<li>Allowing API evolution by dynamically extending content and controls</li>
+					<ul>
+						<li>Unknown/uninteresting links are always ignored by clients</li>
+						<li><em>Versioning</em> is reduced to clients experiencing richer resources</li>
+					</ul>
+					<li>Seamless model covering APIs and API landscapes</li>
+					<ul>
+						<li>Controls guide clients on their journey to complete workflows</li>
+						<li>Client application goals are not necessarily structured <q>by API</q></li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="how-hypermedia">
 				<title>How to do Hypermedia</title>
@@ -1651,6 +1668,7 @@ CRLF
 					<ul>
 						<li><em>Content</em> is used to represent the current resource</li>
 						<li><em>Controls</em> are a special additional aspect of resource representation</li>
+						<li><em>Affordances</em> is another term used for hypermedia controls</li>
 					</ul>
 					<li>Hypermedia embeds content into a <em>web of interlinked resources</em></li>
 					<ul>
