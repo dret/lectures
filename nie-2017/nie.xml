@@ -1540,7 +1540,7 @@ CRLF
 						<li>Responses may indicate further required interactions</li>
 						<li>Follow the workflow as required to achieve the end result</li>
 					</ul>
-					<li>Responses often are a combination of data and control elements</li>
+					<li>Responses often are a combination of content and control elements</li>
 					<ul>
 						<li><em>Data</em> is some representation of an (intermediary) result</li>
 						<li><em>Control</em> allows clients to engage in further interactions</li>
@@ -1551,7 +1551,7 @@ CRLF
 			<slide id="workflows">
 				<title>Messaging and Workflows</title>
 				<ul>
-					<li><link href="hypermedia">Hypermedia</link> combines data and control information</li>
+					<li><link href="hypermedia">Hypermedia</link> combines content and control information</li>
 					<ul>
 						<li>Messages contain information about resources in the workflow</li>
 						<li>Messages contain information about next steps in the workflow</li>
@@ -1571,9 +1571,9 @@ CRLF
 			<slide id="messaging-formats">
 				<title>Messaging Formats</title>
 				<ul>
-					<li>Message formats combine data and control information</li>
+					<li>Message formats combine content and control information</li>
 					<ul>
-						<li>Some scenarios allow to <em>separate</em> data and control information</li>
+						<li>Some scenarios allow to <em>separate</em> content and control information</li>
 					</ul>
 					<li>Data/control separation is an effective simplification</li>
 					<ul>
