@@ -1294,7 +1294,7 @@ CRLF
 				<slide id="XML-origins">
 					<title>XML Origins</title>
 					<ul>
-						<li>XML was created as a way to publish data on the Web</li>
+						<li>XML was created as a way to publish documents on the Web</li>
 						<ul>
 							<li>It has the same foundations as HTML (both are based on <a title="Standard Generalized Markup Language" href="https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language">SGML</a>)</li>
 							<li>XML allows applications to define their own elements, attributes, and grammar</li>
@@ -1673,7 +1673,7 @@ CRLF
 			<slide>
 				<title>Hypermedia = Content + Controls</title>
 				<ul>
-					<li>Hypermedia combines data about content and control</li>
+					<li>Hypermedia combines data representing content and control</li>
 					<ul>
 						<li><em>Content</em> is used to represent the current resource</li>
 						<li><em>Controls</em> are a special additional aspect of resource representation</li>
