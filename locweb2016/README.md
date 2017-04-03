@@ -1,6 +1,6 @@
 # GeoJSON Status Report
 
-Sources for the [presentation](http://dret.net/netdret/publications#locweb2016-talk) at the ["6th International Workshop on Location and the Web (LocWeb 2016)"](http://dhere.de/locweb2016/).
+Sources for the [presentation](http://dret.net/netdret/publications#locweb2016) at the ["6th International Workshop on Location and the Web (LocWeb 2016)"](http://dhere.de/locweb2016/).
 
 
 ## License
