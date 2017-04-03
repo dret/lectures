@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="malmoe" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="GeoJSON.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="http://creativecommons.org/licenses/by/3.0/" short="CC 3.0">
+		<div class="license">
+			<p><a rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/ischool/ischool/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
+		</div>
+	</license>
+	<title><a href="http://dhere.de/locweb2016/">6th International Workshop on Location and the Web (LocWeb 2016)</a></title>
+	<author><a href="http://dret.net/netdret/">Erik Wilde</a></author>
+	<affiliation><a href="http://twitter.com/dret" title="Twitter">@dret</a></affiliation>
+	<date short="2016-04-11">April 11, 2016</date>
+	<copyright>2016 Erik Wilde</copyright>
+	<presentation id="index">
+		<title>GeoJSON Status Update</title>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract">GeoJSON has been in use for several years now, despite of not being an "official standard". Recent efforts within the IETF have let to a revised specification text that will soon be published as a proposed standard RFC. This talk briefly presents GeoJSON, the changes that the RFC revision incorporates, and talks about ongoing work within the working group.</p>
+		</slide>
+		<part id="geojson">
+			<title>What is GeoJSON?</title>
+			<slide id="strava-art">
+				<title>It's for Riding Animals!</title>
+				<img src="fish.jpg" style="float: left ; width : 42% ; margin : 4% ; " href="http://www.strava.com/activities/523719323"/>
+				<img src="goose.jpg" style="float: right ; width : 42% ; margin : 4% ; " href="http://www.strava.com/activities/527214108"/>
+			</slide>
+			<slide id="fish-ride">
+				<title>GeoJSON Fish</title>
+				<ul>
+					<li>Transformed from <a href="http://www.strava.com/">Strava</a>-originated <a href="http://www.strava.com/activities/523719323">activity</a> <a href="https://github.com/dret/lectures/blob/master/locweb2016/src/fish.gpx">GPX</a></li>
+					<li><a href="http://github.com/">Github</a> understands and renders the resulting <a href="https://github.com/dret/lectures/blob/master/locweb2016/src/fish.geojson">GeoJSON</a></li>
+				</ul>
+				<listing src="fish.geojson" line="1-15"/>
+			</slide>
+			<slide id="goose-ride">
+				<title>GeoJSON Goose</title>
+				<ul>
+					<li>Transformed from <a href="http://www.strava.com/">Strava</a>-originated <a href="http://www.strava.com/activities/527214108">activity</a> <a href="https://github.com/dret/lectures/blob/master/locweb2016/src/goose.gpx">GPX</a></li>
+					<li><a href="http://github.com/">Github</a> understands and renders the resulting <a href="https://github.com/dret/lectures/blob/master/locweb2016/src/goose.geojson">GeoJSON</a></li>
+				</ul>
+				<listing src="goose.geojson" line="1-15"/>
+			</slide>
+			<slide id="geojson-executive">
+				<title>Representing Geograph(y|ical) Features</title>
+				<ul>
+					<li>GeoJSON has object types for single and multiple geometries and features</li>
+					<ul>
+						<li><em>Geometry</em> represents 6 geometry types (see below) and one collection</li>
+						<li><em>Feature</em> represents single or multiple <q>spatially bound things</q></li>
+					</ul>
+					<li>GeoJSON's fundamental geometry construct is the <q>position</q></li>
+					<ul>
+						<li><code>Point</code> has one position</li>
+						<li><code>LineString</code>/<code>MultiPoint</code> have an array of positions</li>
+						<li><code>Polygon</code>/<code>MultiLineString</code> have an array of arrays of positions</li>
+						<li><code>MultiPolygon</code> has an array of Polygons</li>
+					</ul>
+					<li>Features have <code>properties</code> and an associated <code>geometry</code></li>
+					<li><code>Feature</code> and Geometry also come as <code>FeatureCollection</code>/<code>GeometryCollection</code></li>
+					<li>GeoJSON is not meant to represent the full complexity/fidelity of GIS models</li>
+				</ul>
+			</slide>
+			<slide id="geojson-use">
+				<title>Using GeoJSON</title>
+				<ul>
+					<li>Meant as a simple and lightweight representation</li>
+					<ul>
+						<li>Use it in services/APIs where geo-features need to be represented in a simple way</li>
+						<li>Do not expect full fidelity of possibly complex underlying models</li>
+					</ul>
+					<li>Not meant as a synchronization format for full-fidelity GIS access/interchange</li>
+					<ul>
+						<li>Trying to <q>GISify</q> GeoJSON very likely makes it non-interoperable</li>
+					</ul>
+					<li>Geo-tools such as <a href="http://leafletjs.com/">Leaflet</a> often <a href="http://leafletjs.com/examples/geojson.html">support GeoJSON out of the box</a></li>
+				</ul>
+			</slide>
+		</part>
+		<part id="ietf-wg">
+			<title>IETF GeoJSON Working Group</title>
+			<slide id="geojson-problems">
+				<title>GeoJSON Problems</title>
+				<ul>
+					<li>Despite being popular, the <a href="http://geojson.org/geojson-spec.html">GeoJSON specification</a> was not created/managed by any SDO</li>
+					<ul>
+						<li>Lingering doubts about the stability/stewardship of the specification</li>
+						<li>Some policies require that only SDO-published specifications can be used</li>
+					</ul>
+					<li>Usage around <a href="http://geojson.org/geojson-spec.html#coordinate-reference-system-objects" title="Coordinate Reference System">CRS</a> had caused some interoperability problems</li>
+					<ul>
+						<li>Default rule (WGS84) plus inheritance meant implementations often did not implement the specification</li>
+						<li>Naming of specific CRS was left open, resulting in namespace fragmentation</li>
+					</ul>
+					<li>Extensibility and Openness were not specified clearly enough</li>
+					<ul>
+						<li>Lack of guidance made it too easy for implementers to do the wrong thing</li>
+						<li>Experience shows which areas were the most problematic ones</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="geojson-wg">
+				<title>IETF GeoJSON WG</title>
+				<ul>
+					<li>The <a href="https://datatracker.ietf.org/wg/geojson/">IETF GeoJSON Working Group</a> started work in October 2015</li>
+					<ul>
+						<li>The main item on the charter is to revise and publish GeoJSON as an RFC</li>
+						<li>An additional item is to publish a specification for <q>GeoJSON Text Sequences</q></li>
+					</ul>
+					<li>IETF working groups are open to all interested participants</li>
+					<li>IETF RFCs are often accepted as standards that are stable and safe to use</li>
+				</ul>
+			</slide>
+			<slide id="geojson-wg-work">
+				<title>IETF GeoJSON WG Work</title>
+				<ul>
+					<li>Adopted a draft starting from the <a href="http://geojson.org/geojson-spec.html">GeoJSON Specification</a></li>
+					<ul>
+						<li>Available at <a href="http://github.com/geojson/draft-geojson"><code>geojson/draft-geojson</code></a> on <a href="http://github.com/">GitHub</a></li>
+						<li>Published as <a href="http://tools.ietf.org/html/draft-ietf-geojson"><code>draft-ietf-geojson</code></a></li>
+						<li>List of changes available in <a href="http://tools.ietf.org/html/draft-ietf-geojson#appendix-B"><code>Appendix B</code></a></li>
+						<li>Last call was successful, now the GeoJSON draft is in the RFC publishing pipeline</li>
+					</ul>
+					<li>Started draft about <a href="http://datatracker.ietf.org/drafts/draft-gillies-geojson-text-seq">GeoJSON Text Sequences</a></li>
+					<ul>
+						<li>Applies <a href="http://tools.ietf.org/html/rfc7464"><q>JSON Text Sequences</q> (RFC 7464)</a> to GeoJSON</li>
+						<li>How to represent sequences of GeoJSON objects in one streamable representation</li>
+						<li>Useful in scenarios where sequences/streams of GeoJSON objects are exchanged</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="geojson-changes">
+				<title>GeoJSON Changes</title>
+				<ul>
+					<li>Discouraging the use of non-WGS84 CRS</li>
+					<li>Clarifying the extensibility of position arrays</li>
+					<li>Clarifying lines as being Cartesian (instead of being geodesic)</li>
+					<li>Clarifying the definition of a bounding box</li>
+					<li>Making it clear that extensions cannot change the base semantics</li>
+					<li>Defining a new media type <code>application/geo+json</code></li>
+				</ul>
+			</slide>
+		</part>
+		<part id="next">
+			<title>What's Next?</title>
+			<slide id="next-geojson">
+				<title>GeoJSON WG Specifications</title>
+				<ul>
+					<li>GeoJSON RFC (the <a href="http://datatracker.ietf.org/drafts/draft-ietf-geojson">draft</a> has been in last call in March 2016)</li>
+					<ul>
+						<li>RFC will be published around mid-2016 (if things go as planned)</li>
+					</ul>
+					<li>GeoJSON Text Sequences (a <a href="http://datatracker.ietf.org/drafts/draft-gillies-geojson-text-seq">first draft</a> has been published in April 2016)</li>
+					<ul>
+						<li>Available as <a href="http://github.com/geojson/geojson-text-sequences"><code>geojson/geojson-text-sequences</code></a> on <a href="http://github.com/">GitHub</a></li>
+						<li>Final draft and RFC probably to be expected for early 2017</li>
+					</ul>
+					<li>Test suites for both specifications would be helpful for implementers</li>
+					<ul>
+						<li>Set of examples that should pass/fail with explanations of why/how</li>
+						<li>It is (almost) never too late to join a working group!</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/locweb2016/"><code>dret.net/lectures/locweb2016/</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/locweb2016"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>GeoJSON WG: <a href="https://datatracker.ietf.org/wg/geojson">IETF Datatracker Page</a></li>
+					<ul>
+						<li>Internet draft: <a href="http://datatracker.ietf.org/drafts/draft-ietf-geojson">The GeoJSON Format</a></li>
+						<li>Internet draft: <a href="http://datatracker.ietf.org/drafts/draft-gillies-geojson-text-seq">GeoJSON Text Sequences</a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
