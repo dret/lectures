@@ -82,7 +82,7 @@
 				<ul>
 					<li>Meant as a simple and lightweight representation</li>
 					<ul>
-						<li>Use it in services/APIs where geo-features need to be represented in a simple way</li>
+						<li>Use it in services/APIs where geometries/features need to be represented in a simple way</li>
 						<li>Do not expect full fidelity of possibly complex underlying models</li>
 					</ul>
 					<li>Not meant as a synchronization format for full-fidelity GIS access/interchange</li>
