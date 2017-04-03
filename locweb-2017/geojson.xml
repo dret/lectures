@@ -182,6 +182,27 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide>
+				<title>Designing Geo APIs</title>
+				<ul>
+					<li>Identify the resources that your API is exposing</li>
+					<ul>
+						<li>For those using geo-related information consider existing standards</li>
+						<li>Part of the DX design exercise is to consider developers</li>
+					</ul>
+					<li>Many Geo formats have extension capabilities</li>
+					<ul>
+						<li>Consider only those that allow you to establish <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">a meaningful core</a></li>
+						<li>Design and document extensions for full API fidelity</li>
+						<li>If possible, register these extensions in the appropriate places</li>
+					</ul>
+					<li>GeoJSON can play a role in API design around geo-services</li>
+					<ul>
+						<li>More sophisticated feature models can be used in the API</li>
+						<li>GeoJSON can establish a foundation for geographic data exchange</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
