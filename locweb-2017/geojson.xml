@@ -183,23 +183,8 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="next">
-			<title>What's Next?</title>
-			<slide id="next-geojson">
-				<title>GeoJSON WG Specifications</title>
-				<ul>
-					<li><a href="http://tools.ietf.org/html/rfc7946"><q>The GeoJSON Format</q>, RFC 7946, August 2016</a></li>
-					<li>GeoJSON Text Sequences (<a href="http://datatracker.ietf.org/drafts/draft-ietf-geojson-text-sequence">first draft</a> published in April 2016)</li>
-					<ul>
-						<li>RFC to be expected for April/May 2017</li>
-					</ul>
-					<li>Test suites for both specifications would be helpful for implementers</li>
-					<ul>
-						<li>Set of examples that should pass/fail with explanations of why/how</li>
-						<li>It is (almost) never too late to join a working group!</li>
-					</ul>
-				</ul>
-			</slide>
+		<part id="conclusions">
+			<title>Conclusions</title>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
