@@ -23,7 +23,7 @@
 			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
 		</div>
 	</license>
-	<title><a href="http://dhere.de/locweb2016/">6th International Workshop on Location and the Web (LocWeb 2016)</a></title>
+	<title><a href="http://dhere.de/locweb2017/">7th International Workshop on Location and the Web (LocWeb 2017)</a></title>
 	<author><a href="http://dret.net/netdret/">Erik Wilde</a></author>
 	<affiliation><a href="http://twitter.com/dret" title="Twitter">@dret</a></affiliation>
 	<date short="2016-04-11">April 11, 2016</date>
@@ -44,16 +44,16 @@
 			<slide id="fish-ride">
 				<title>GeoJSON Fish</title>
 				<ul>
-					<li>Transformed from <a href="http://www.strava.com/">Strava</a>-originated <a href="http://www.strava.com/activities/523719323">activity</a> <a href="https://github.com/dret/lectures/blob/master/locweb2016/src/fish.gpx">GPX</a></li>
-					<li><a href="http://github.com/">Github</a> understands and renders the resulting <a href="https://github.com/dret/lectures/blob/master/locweb2016/src/fish.geojson">GeoJSON</a></li>
+					<li>Transformed from <a href="http://www.strava.com/">Strava</a>-originated <a href="http://www.strava.com/activities/523719323">activity</a> <a href="https://github.com/dret/lectures/blob/master/locweb-2017/src/fish.gpx">GPX</a></li>
+					<li><a href="http://github.com/">Github</a> understands and renders the resulting <a href="https://github.com/dret/lectures/blob/master/locweb-2017/src/fish.geojson">GeoJSON</a></li>
 				</ul>
 				<listing src="fish.geojson" line="1-15"/>
 			</slide>
 			<slide id="goose-ride">
 				<title>GeoJSON Goose</title>
 				<ul>
-					<li>Transformed from <a href="http://www.strava.com/">Strava</a>-originated <a href="http://www.strava.com/activities/527214108">activity</a> <a href="https://github.com/dret/lectures/blob/master/locweb2016/src/goose.gpx">GPX</a></li>
-					<li><a href="http://github.com/">Github</a> understands and renders the resulting <a href="https://github.com/dret/lectures/blob/master/locweb2016/src/goose.geojson">GeoJSON</a></li>
+					<li>Transformed from <a href="http://www.strava.com/">Strava</a>-originated <a href="http://www.strava.com/activities/527214108">activity</a> <a href="https://github.com/dret/lectures/blob/master/locweb-2017/src/goose.gpx">GPX</a></li>
+					<li><a href="http://github.com/">Github</a> understands and renders the resulting <a href="https://github.com/dret/lectures/blob/master/locweb-2017/src/goose.geojson">GeoJSON</a></li>
 				</ul>
 				<listing src="goose.geojson" line="1-15"/>
 			</slide>
@@ -183,8 +183,8 @@
 				<img src="where-to.jpg" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
 					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
-					<li>Slides online: <a href="http://dret.net/lectures/locweb2016/"><code>dret.net/lectures/locweb2016/</code></a></li>
-					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/locweb2016"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/locweb-2017/"><code>dret.net/lectures/locweb-2017/</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/locweb-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
 					<li>GeoJSON WG: <a href="https://datatracker.ietf.org/wg/geojson">IETF Datatracker Page</a></li>
 					<ul>
 						<li>Internet draft: <a href="http://datatracker.ietf.org/drafts/draft-ietf-geojson">The GeoJSON Format</a></li>
