@@ -160,6 +160,29 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="geo-apis">
+			<title>Geo APIs</title>
+			<slide id="being-webby">
+				<title>Being Webby</title>
+				<ul>
+					<li>Data exchange and access is getting replaced by APIs</li>
+					<ul>
+						<li>Simple data access is a very simple version of <q>API</q></li>
+						<li>APIs support access and workflows beyond simple data access</li>
+					</ul>
+					<li>APIs are used in two major ways</li>
+					<ul>
+						<li><em>Public/Partner APIs</em> expose services to outside collaborators</li>
+						<li><em>Private APIs</em> re-envision system architecture in an API-based way</li>
+					</ul>
+					<li>APIs are built around Web technologies and aim for concept reuse</li>
+					<ul>
+						<li>The Web establishes a large surface of <a href="http://webconcepts.info/concepts/">Web Concepts</a></li>
+						<li><a href="http://webconcepts.info/concepts/media-type/">Media Types</a> are one of the core concepts</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="next">
 			<title>What's Next?</title>
 			<slide id="next-geojson">
