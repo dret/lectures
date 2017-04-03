@@ -58,7 +58,7 @@
 				<listing src="goose.geojson" line="1-15"/>
 			</slide>
 			<slide id="geojson-executive">
-				<title>Representing Geograph(y|ical) Features</title>
+				<title>Representing Geometries or Features</title>
 				<ul>
 					<li>GeoJSON has object types for single and multiple geometries and features</li>
 					<ul>
