@@ -35,6 +35,7 @@
 					<th valign="bottom">Date</th>
 					<th valign="bottom">Location</th>
 					<th valign="bottom">Slides</th>
+					<th valign="bottom">Additional Resources</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -43,6 +44,7 @@
 						<td valign="top"><hotspot:date/></td>
 						<td valign="top"><b><hotspot:title/></b></td>
 						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+						<td align="center"><hotspot:toc class="resources"/></td>
 					</tr>
 				</hotspot:for-each-presentation>
 			</tbody>
@@ -51,6 +53,12 @@
 	<presentation id="perth-foundation">
 		<title>Perth: Establishing a Foundation for Microservices</title>
 		<date short="2017-04-05">April 5, 2017</date>
+		<toc class="abstract"><em>Microservices</em> are a hot topic these days, because companies are under increasing pressure to innovate faster, to change faster, and to adapt faster. This presentation looks at the <em>why</em>, the <em>what</em>, and the <em>how</em> of microservices. This perspective provides a good overview of why microservices have become popular, what problems they are focusing on specifically, and how they are doing it.</toc>
+		<toc class="resources"><a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 		<part id="intro">
 			<title>Introduction</title>
 			<slide id="dret">
