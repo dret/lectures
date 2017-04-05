@@ -543,7 +543,7 @@
 					<li>Not all services use the same technical foundations</li>
 					<ul>
 						<li>Different communications mechanisms</li>
-						<li>Different metamodels for data structures</li>
+						<li>Different metamodels (XML/JSON/RDF) for data models</li>
 						<li>Different models for representing application concepts</li>
 						<li>In a Web context, these are concepts such as <a href="https://github.com/dret/sedola/blob/master/MD/headers.md">HTTP headers</a>, <a href="https://github.com/dret/sedola/blob/master/MD/mediatypes.md">media types</a>, and <a href="https://github.com/dret/sedola/blob/master/MD/linkrels.md">link relations</a></li>
 					</ul>
@@ -552,9 +552,9 @@
 						<li>Depending on choice, similar concepts/models may be represented differently</li>
 						<li>Introducing a generalized abstraction layer is unlikely to be helpful</li>
 					</ul>
-					<li><link href="ms-discovery">Discovering documentation</link> will allow you a better overview of your ecosystem</li>
+					<li><link href="ms-discovery">Discovering documentation</link> provides a better overview of the ecosystem</li>
 					<ul>
-						<li>A reality-based overview of the technologies used in your landscape</li>
+						<li>A reality-based overview of the technology landscape</li>
 						<li>A possible starting point or guideline for getting MSA teams started</li>
 					</ul>
 				</ul>
