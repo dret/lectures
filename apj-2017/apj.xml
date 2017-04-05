@@ -203,23 +203,6 @@
 					<li>Evolutionary design</li>
 				</ol>
 			</slide>
-			<slide id="ms-focus">
-				<title>Main Focus on Development/Deployment</title>
-				<ul>
-					<li>Microservice Architecture focuses on culture/development/operational aspects</li>
-					<li>In order to develop/deploy MS, <a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html">three things are needed</a></li>
-					<ul>
-						<li><em>Rapid Provisioning:</em> Automated infrastructure</li>
-						<li><em>Basic Monitoring:</em> Keeping a watchful eye on the MS landscape</li>
-						<li><em>Rapid Deployment:</em> Ability to deploy quickly to test/production</li>
-					</ul>
-					<li>Loose coupling of services allows an agile service landscape</li>
-					<ul>
-						<li>Avoid coupling through design/development/deployment/operations</li>
-						<li>The only acceptable coupling is through the service API</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="ms-dividends">
 				<title><a href="http://queue.acm.org/detail.cfm?id=2956643">Microservice Dividends</a></title>
 				<ol>
@@ -769,23 +752,6 @@
 					<li>Design for failure</li>
 					<li>Evolutionary design</li>
 				</ol>
-			</slide>
-			<slide id="ms-focus">
-				<title>Main Focus on Development/Deployment</title>
-				<ul>
-					<li>Microservice Architecture focuses on culture/development/operational aspects</li>
-					<li>In order to develop/deploy MS, <a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html">three things are needed</a></li>
-					<ul>
-						<li><em>Rapid Provisioning:</em> Automated infrastructure</li>
-						<li><em>Basic Monitoring:</em> Keeping a watchful eye on the MS landscape</li>
-						<li><em>Rapid Deployment:</em> Ability to deploy quickly to test/production</li>
-					</ul>
-					<li>Loose coupling of services allows an agile service landscape</li>
-					<ul>
-						<li>Avoid coupling through design/development/deployment/operations</li>
-						<li>The only acceptable coupling is through the service API</li>
-					</ul>
-				</ul>
 			</slide>
 			<slide id="ms-dividends">
 				<title><a href="http://queue.acm.org/detail.cfm?id=2956643">Microservice Dividends</a></title>
