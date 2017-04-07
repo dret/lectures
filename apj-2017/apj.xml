@@ -835,26 +835,6 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide id="ms-size">
-				<title>How Micro?</title>
-				<ul>
-					<li>There is no hard limit on the size of a Microservice</li>
-					<li>Domain limits (DDD) are a good starting point</li>
-					<li>Team size (<a href="https://en.wikipedia.org/wiki/Conway's_law">Conway's Law</a>) is a good starting point</li>
-				</ul>
-			</slide>
-			<slide id="ms-size-upside">
-				<title>How Micro? The Good News!</title>
-				<ul>
-					<li>MSA tells you to keep services independent and agile</li>
-					<li>MSA is a continuous process of reassessing services and their utility</li>
-					<ul>
-						<li>If a service is too big, split service and team and relaunch the new services</li>
-						<li>If granularity is too small, join teams and services and relaunch the new service</li>
-					</ul>
-					<li>...but still not a simple answer to the <q>how big?</q> question</li>
-				</ul>
-			</slide>
 			<slide id="services-or-code">
 				<title>Why the Code Focus?</title>
 				<ul>
