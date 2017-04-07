@@ -675,7 +675,7 @@
 					<li>Well-designed service landscapes have the exact same properties</li>
 					<ul>
 						<li><em>Messaging models</em> instead of paper forms</li>
-						<li>Message models are <em>as shallow as possible</em></li>
+						<li>Message models are <em>as shallow as possible</em> (hide implementation model)</li>
 						<li><em>Stateless interactions</em> allow for easy load balancing</li>
 						<li>Resource identifiers and hypermedia allow <em>seamless workflows</em></li>
 					</ul>
