@@ -804,6 +804,16 @@
 		</part>
 		<part id="how">
 			<title>Microservices: How?</title>
+			<slide id="containers">
+				<title>Containerization!</title>
+				<ul>
+					<li><q href="http://www.apiacademy.co/resources/api360-microservices-summit-microservices-blind-spots/">Containerization is the gateway drug for microservices.</q></li>
+					<li>Containers exist because of CI/CD (rapid deployment)</li>
+					<li>Containers allow agility <em>on the development and deployment level</em></li>
+					<li>MSA allows agility <em>on the service ecosystem level</em></li>
+					<li>MSA without (some form of) containerization is hard to imagine</li>
+				</ul>
+			</slide>
 			<slide id="who">
 				<title>Microservices for the Masses?</title>
 				<ul>
@@ -823,16 +833,6 @@
 					<ul>
 						<li>Just like the Web is never complete/final, neither is a microservices landscape</li>
 					</ul>
-				</ul>
-			</slide>
-			<slide id="containers">
-				<title>Containerization!</title>
-				<ul>
-					<li><q href="http://www.apiacademy.co/resources/api360-microservices-summit-microservices-blind-spots/">Containerization is the gateway drug for microservices.</q></li>
-					<li>Containers exist because of CI/CD (rapid deployment)</li>
-					<li>Containers allow agility <em>on the development and deployment level</em></li>
-					<li>MSA allows agility <em>on the service ecosystem level</em></li>
-					<li>MSA without (some form of) containerization is hard to imagine</li>
 				</ul>
 			</slide>
 			<slide id="ms-size">
