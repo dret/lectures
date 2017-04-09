@@ -1136,6 +1136,12 @@
 	<presentation id="tokyo-foundation">
 		<title>API Academy Tokyo: Establishing a Foundation for Microservices</title>
 		<date short="2017-04-13">April 13, 2017</date>
+		<toc class="abstract"><em>Microservices</em> are a hot topic these days, because companies are under increasing pressure to innovate faster, to change faster, and to adapt faster. This presentation looks at the <em>why</em>, the <em>what</em>, and the <em>how</em> of microservices. This perspective provides a good overview of why microservices have become popular, what problems they are focusing on specifically, and how they are doing it.</toc>
+		<toc class="resources"><a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="https://cio.gov/new-cio-council-report-on-developer-platforms-and-common-apis-and-services/" title='CIO Council Report, "Developer Platforms and Common APIs and Services", March 2017'>CIO Council Report</a>&#160;· <a href="https://dl.dropboxusercontent.com/u/1018963/Articles/SpotifyScaling.pdf" title='Henrik Kniberg &amp; Anders Ivarsson, "Scaling Agile at Spotify", October 2012'>Spotify Scaling</a></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 		<part id="intro">
 			<title>Introduction</title>
 			<slide id="dret">
@@ -1171,7 +1177,7 @@
 				</ul>
 			</slide>
 			<slide id="msa-book">
-				<title>Microservice Architecture Book</title>
+				<title>Microservice Architecture</title>
 				<img src="MSA-cover.jpg" href="http://transform.ca.com/API-microservice-architecture-oreilly-book.html" title="Microservice Architecture: Aligning Principles, Practices, and Culture" style="float: right ; height : 55% ; margin : 4% ; "/>
 				<ul>
 					<li><q>Microservice Architecture: Aligning Principles, Practices, and Culture</q></li>
@@ -1180,6 +1186,227 @@
 						<li>Get <a href="http://transform.ca.com/API-microservice-architecture-oreilly-book.html">electronic version for free courtesy of CA Technologies</a></li>
 						<li>Get <a href="http://shop.oreilly.com/product/0636920050308.do">a hardcopy version</a></li>
 					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="why">
+			<title>Microservices: Why?</title>
+			<slide id="castle">
+				<title>Traditional IT</title>
+				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="bureaucracy">
+				<title>Bureaucracy</title>
+				<ul>
+					<li>Bureaucracy evolved for a reason</li>
+					<ul>
+						<li>Clearly defined model of <em>input</em> and <em>output</em> of processing units</li>
+						<li>Implementation issues of the processing units are <em>hidden</em></li>
+						<li><em>Processing units can scale</em> because of encapsulation and statelessness</li>
+						<li>Processing steps can be <em>easily pipelined</em> while keeping steps separate</li>
+					</ul>
+					<li>Well-designed service landscapes have the exact same properties</li>
+					<ul>
+						<li><em>Messaging models</em> instead of paper forms</li>
+						<li>Message models are <em>as shallow as possible</em> (hide implementation model)</li>
+						<li><em>Stateless interactions</em> allow for easy load balancing</li>
+						<li>Resource identifiers and hypermedia allow <em>seamless workflows</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-economy">
+				<title>API Economy</title>
+				<img title="Farmers' Market Sacramento" href="https://commons.wikimedia.org/wiki/File:Farmers'_market_Sacramento.jpg" src="farmers-market-sacramento.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="digital-transformation">
+				<title>Digital Transformation</title>
+				<img href="https://commons.wikimedia.org/wiki/File:Crocodile_Gaping.jpg" src="digital-transformation-crocodile.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="why-now">
+				<title>But Why Now?</title>
+				<ol>
+					<li><em>Push:</em> Not moving becomes an increasingly risky strategy</li>
+					<ul>
+						<li>Markets move faster than ever before</li>
+						<li>Technology-driven changes require readiness on the IT level</li>
+					</ul>
+					<li><em>Pull:</em> Participating in the API economy is increasingly beneficial (a.k.a. the <em href="https://en.wikipedia.org/wiki/Metcalfe%27s_law">network effect</em>)</li>
+					<ul>
+						<li>Re-imagining organizations becomes a way of being</li>
+						<li>Not being API-ready means missing increasingly more opportunities</li>
+					</ul>
+					<li><em>Follow the Leaders:</em> Moving towards APIs is not difficult anymore</li>
+					<ul>
+						<li>Examples of organizations allow insights into potential and risk</li>
+						<li>The technology landscape is rich enough to get started</li>
+					</ul>
+				</ol>
+			</slide>
+			<slide id="change">
+				<title>Transformation: Changing vs. Changeable</title>
+				<ul>
+					<li><em>Changing</em> implies a one-time activity</li>
+					<li><em>Changeable</em> implies an intrinsic property</li>
+					<blockquote>
+						<p>Don't focus on what to <b>change into</b>;<br/>Focus on <b>embracing change</b> as your mode of existence.</p>
+					</blockquote>
+				</ul>
+			</slide>
+			<slide id="bimodal-it">
+				<title>Bimodal IT</title>
+				<img title="Bimodal IT office workers" href="https://en.wikipedia.org/wiki/Minions_(film)" src="minions.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="balance">
+				<title>Delicate Balance</title>
+				<ul>
+					<li><em>Preserve:</em> Functional core and business foundations</li>
+					<li><em>Nourish:</em> Ability to change and situational awareness</li>
+					<li><a href="http://agilemanifesto.org/">Agile</a> moves from an IT approach to a business approach</li>
+					<ul>
+						<li><em>Individuals and interactions</em> over processes and tools</li>
+						<li><em>Working software</em> over comprehensive documentation</li>
+						<li><em>Customer collaboration</em> over contract negotiation</li>
+						<li><em>Responding to change</em> over following a plan</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="what">
+			<title>Microservices: What?</title>
+			<slide id="characteristics">
+				<title><a href="http://martinfowler.com/articles/microservices.html">Microservice Characteristics</a></title>
+				<ol>
+					<li>Componentization via services</li>
+					<li>Organized around business capabilities</li>
+					<li>Products not projects</li>
+					<li>Smart endpoints and dumb pipes</li>
+					<li>Decentralized governance</li>
+					<li>Decentralized data management</li>
+					<li>Infrastructure automation</li>
+					<li>Design for failure</li>
+					<li>Evolutionary design</li>
+				</ol>
+			</slide>
+			<slide id="ms-dividends">
+				<title><a href="http://queue.acm.org/detail.cfm?id=2956643">Microservice Dividends</a></title>
+				<ol>
+					<li>Permissionless Innovation</li>
+					<li>Enable Failure</li>
+					<li>Disrupt Trust (replaced by autonomy and accountability)</li>
+					<li>You Build It, You Own It</li>
+					<li>Accelerate Deprecations</li>
+					<li>End Centralized Metadata</li>
+					<li>Concentrate the Pain</li>
+					<li>Test Differently</li>
+				</ol>
+			</slide>
+			<slide id="ms-and-the-web">
+				<title>Microservices: Webby Enterprise IT</title>
+				<ul>
+					<li>MSA forces SOA to build a webby service landscape</li>
+					<li>MSA replicates the most important success factors of the Web</li>
+					<ul>
+						<li>Encapsulation of code, allowing polyglot implementations</li>
+						<li>Encapsulation of persistence, allowing polyglot storage</li>
+						<li>Encapsulation of models, making the API the only available model</li>
+					</ul>
+					<li>The <em>only</em> service dependency is through APIs</li>
+					<ul>
+						<li>Works (mostly) well on the Web because of the uniform interface and HTML</li>
+						<li>Works (mostly) well on the service Web for <q>well-designed</q> APIs</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="ms-blind-spots">
+				<title>MSA Blind Spot: Less Focus on API Design/Management</title>
+				<ul>
+					<li>MSA focuses on culture/development/operational aspects</li>
+					<ul>
+						<li>Isolating services through all phases of the lifecycle</li>
+						<li>But of course services still need to interact</li>
+					</ul>
+					<li>API consistency will help to make the landscape more productive</li>
+					<ul>
+						<li>Helping <em>API designers</em> to avoid re-inventing the wheel</li>
+						<li>Helping <em>API providers</em> to be more usable for consumers</li>
+						<li>Helping <em>API consumers</em> to depend on some consistency</li>
+						<li>Helping with <em>API discovery</em> and managing the landscape</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="how">
+			<title>Microservices: How?</title>
+			<slide id="containers">
+				<title>Containerization!</title>
+				<ul>
+					<li><q href="http://www.apiacademy.co/resources/api360-microservices-summit-microservices-blind-spots/">Containerization is the gateway drug for microservices.</q></li>
+					<li>Containers exist because of CI/CD (rapid deployment)</li>
+					<li>Containers allow agility <em>on the development and deployment level</em></li>
+					<li>MSA allows agility <em>on the service ecosystem level</em></li>
+					<li>MSA without (some form of) containerization is hard to imagine</li>
+				</ul>
+			</slide>
+			<slide id="who">
+				<title>Microservices for the Masses?</title>
+				<ul>
+					<li>Microservices are an investment and not a default choice</li>
+					<ul>
+						<li>The cost is the need for advanced infrastructure and teams</li>
+						<li>The return is increased flexibility and agility</li>
+						<li>Cost/benefit for microservices is targeted at long term capabilities</li>
+					</ul>
+					<li>What are the <a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html">prerequisites for considering microservices?</a></li>
+					<ol>
+						<li><em>Rapid Provisioning:</em> Automated process to quickly create server infrastructure</li>
+						<li><em>Monitoring:</em> Multi-level monitoring from service health to business-level logic</li>
+						<li><em>Rapid Deployment:</em> Automated ways to quickly move from code to running services</li>
+					</ol>
+					<li>Moving to MSA is a transition process and not one <em>Big Bang</em></li>
+					<ul>
+						<li>Just like the Web is never complete/final, neither is a microservices landscape</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="services-or-code">
+				<title>Why the Code Focus?</title>
+				<ul>
+					<li>Loose coupling is essential and not an easy thing to get right</li>
+					<li>Microservice teams have complete authority over technology choices</li>
+					<ul>
+						<li>But they have to develop and deploy according to MSA</li>
+					</ul>
+					<li>Apart from <q>being agile</q>, the only visible part is the API</li>
+					<li>MSA critically depends on API strategy, design, and tooling</li>
+					<ul>
+						<li><em>API quality</em> is a critical factor for MSA landscape fitness</li>
+						<li><em>Tight coupling</em> can be more disruptive than in pre-MSA SOA</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-focus">
+				<title>APIs are Front and Center</title>
+				<ul>
+					<li>The only visibility into a service is its API</li>
+					<li>APIs should avoid letting their <q>implementation shine through</q></li>
+					<li>The two main goals of an API are <em>interaction</em> and <em>encapsulation</em></li>
+					<ul>
+						<li><em>Interaction</em> should be as simple/easy as possible through the API</li>
+						<li><em>Encapsulation</em> ensures that the implementation is invisible</li>
+					</ul>
+					<li>Help developers to navigate the evolving landscape of interlinked APIs</li>
+				</ul>
+			</slide>
+			<slide id="surface">
+				<title>Be Superficial</title>
+				<ul>
+					<li>The only thing that matters is the <em>Service Surface</em></li>
+					<ul>
+						<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
+						<li>Resist the temptation to <em>expose your model</em> just because you can</li>
+					</ul>
+					<li>Concepts must be well-defined but not necessarily deeply modeled</li>
+					<ul><em>Domain Driven Design (DDD)</em> provides a framework for <em>bounded contexts</em></ul>
 				</ul>
 			</slide>
 		</part>
