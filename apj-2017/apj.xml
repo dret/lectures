@@ -1199,23 +1199,6 @@
 					<li>Test Differently</li>
 				</ol>
 			</slide>
-			<slide id="ms-and-the-web">
-				<title>Microservices: Webby Enterprise IT</title>
-				<ul>
-					<li>MSA forces SOA to build a webby service landscape</li>
-					<li>MSA replicates the most important success factors of the Web</li>
-					<ul>
-						<li>Encapsulation of code, allowing polyglot implementations</li>
-						<li>Encapsulation of persistence, allowing polyglot storage</li>
-						<li>Encapsulation of models, making the API the only available model</li>
-					</ul>
-					<li>The <em>only</em> service dependency is through APIs</li>
-					<ul>
-						<li>Works (mostly) well on the Web because of the uniform interface and HTML</li>
-						<li>Works (mostly) well on the service Web for <q>well-designed</q> APIs</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="ms-blind-spots">
 				<title>MSA Blind Spot: Less Focus on API Design/Management</title>
 				<ul>
