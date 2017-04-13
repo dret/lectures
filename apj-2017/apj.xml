@@ -376,8 +376,12 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
-		<part id="microservices">
-			<title>Microservice</title>
+		<part id="intro">
+			<title>Introduction</title>
+			<slide id="microservices-are-soa">
+				<title>Microservices are SOA!</title>
+				<img title="Microservices are SOA!" src="microservices-are-soa.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="systems-ecosystems">
 				<title>Systems vs. Ecosystems</title>
 				<ul>
@@ -394,10 +398,9 @@
 					<li>Using APIs is one of the few overlaps between SOAPy SOA and MSA</li>
 				</ul>
 			</slide>
-			<slide id="microservices-are-soa">
-				<title>Microservices are SOA!</title>
-				<img title="Microservices are SOA!" src="microservices-are-soa.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
+		</part>
+		<part id="landscape">
+			<title>Service Landscape</title>
 			<slide id="monolith">
 				<title>The Dreaded Monolith</title>
 				<img title="Where you come from..." href="https://upload.wikimedia.org/wikipedia/commons/7/7b/Weltmaschine_gsellmann1.JPG" src="monolith.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
@@ -434,7 +437,7 @@
 			<slide id="ms-discovery-perth">
 				<title>Decentralize Discovery</title>
 				<ul>
-					<li>MS is all about making services more independent and self-contained</li>
+					<li>MSA is all about making services more independent and self-contained</li>
 					<ul>
 						<li>Discovery should follow the same pattern: Avoid centralization, be polyglot</li>
 					</ul>
@@ -890,16 +893,12 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="intro">
-			<title>Introduction</title>
-			<slide id="microservices-are-soa">
-				<title>Microservices are SOA!</title>
-				<img title="Microservices are SOA!" src="microservices-are-soa.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="systems-ecosystems">
-				<title>Systems vs. Ecosystems</title>
+		<part id="microservices">
+			<title>Microservices</title>
+			<slide id="soapy-soa">
+				<title>The SOA Crisis</title>
 				<ul>
-					<li>SOAPy SOA were traditional IT monoliths exposing some functions</li>
+					<li>SOAP-style SOA are traditional IT monoliths exposing some capabilities</li>
 					<li>MSA #1 goal is to create a loosely coupled service landscape</li>
 					<ul>
 						<li>Shared data storage creates coupling</li>
@@ -909,12 +908,29 @@
 						<li>Loose coupling allows to refactor/retire as required</li>
 						<li>Loose coupling blurs the public/partner/private lines</li>
 					</ul>
-					<li>Using APIs is one of the few overlaps between SOAPy SOA and MSA</li>
+					<li><em>Using APIs</em> is one of the few overlaps between SOAP-style SOA and MSA</li>
 				</ul>
 			</slide>
-		</part>
-		<part id="landscape">
-			<title>Service Landscape</title>
+			<slide id="microservices-are-soa">
+				<title>Microservices are SOA!</title>
+				<img title="Microservices are SOA!" src="microservices-are-soa.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="microservices-are-good-soa">
+				<title>Microservices are SOA done Right!</title>
+				<ul>
+					<li>Decouple implementations and not just interfaces</li>
+					<li>The biggest problem is not <em>access to capabilities</em> but <em>capability agility</em></li>
+					<ul>
+						<li>Providing access to capabilities is better than doing nothing</li>
+						<li><em>Agile management of the capability landscape</em> goes much further than that</li>
+					</ul>
+					<li>Microservices apply <em>Web architecture</em> to <em>Enterprise IT</em></li>
+					<ul>
+						<li>Implementation details are completely invisible to service users</li>
+						<li>Service consumption <em>only</em> uses well-defined and uniform interfaces</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="monolith">
 				<title>The Dreaded Monolith</title>
 				<img title="Where you come from..." href="https://upload.wikimedia.org/wikipedia/commons/7/7b/Weltmaschine_gsellmann1.JPG" src="monolith.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
@@ -951,7 +967,7 @@
 			<slide id="ms-discovery">
 				<title>Decentralize Discovery</title>
 				<ul>
-					<li>MS is all about making services more independent and self-contained</li>
+					<li>MSA is all about making services more independent and self-contained</li>
 					<ul>
 						<li>Discovery should follow the same pattern: Avoid centralization, be polyglot</li>
 					</ul>
@@ -966,131 +982,33 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="evolution">
-			<title>Service Evolution</title>
-			<slide id="autonomy-robustness">
-				<title>Autonomy vs. Robustness</title>
+		<part id="msa-journey">
+			<title>How to get there?</title>
+			<slide id="change">
+				<title>Transformation: Changing vs. Changeable</title>
 				<ul>
-					<li>MSA emphasizes independence and autonomy of teams</li>
-					<ul>
-						<li>Allowing teams to design/implement/deploy autonomously increases speed</li>
-						<li>With no oversight at all the cost may add up on the consumer side</li>
-						<li>Finding a harmonious balance between autonomy and guidelines is key</li>
-					</ul>
-					<li>There are two critical sides to the evolution part</li>
-					<ol>
-						<li>When <link href="service-evolution">services change</link>, do consumers need to be aware of the changes?</li>
-						<li>When <link href="landscape-evolution">the landscape changes</link>, do consumers need to discover the new services?</li>
-					</ol>
+					<li><em>Changing</em> implies a one-time activity</li>
+					<li><em>Changeable</em> implies an intrinsic property</li>
+					<blockquote>
+						<p>Don't focus on what to <b>change into</b>;<br/>Focus on <b>embracing change</b> as your mode of existence.</p>
+					</blockquote>
 				</ul>
 			</slide>
-			<slide id="service-evolution">
-				<title>Design for Service Evolution</title>
-				<ul>
-					<li>Services are designed with a certain goal and certain options</li>
-					<ul>
-						<li>The <em>goal</em> is to satisfy the current requirements for a useful service</li>
-						<li>The <em>options</em> are based on assumptions on how the service might change</li>
-					</ul>
-					<li>Service design is a balance between simplicity and flexibility</li>
-					<li>Building <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">robust and extensible services</a> is based on three factors</li>
-					<ul>
-						<li><em>Meaningful and stable core</em>: The service core must remain stable over time</li>
-						<li><em>Extension model</em>: There are well-defined ways how the service core may evolve</li>
-						<li><em>Processing model</em>: It is well-defined how clients are processing extensions</li>
-					</ul>
-				</ul>
+			<slide id="bimodal-it">
+				<title>Bimodal IT</title>
+				<img title="Bimodal IT office workers" href="https://en.wikipedia.org/wiki/Minions_(film)" src="minions.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="landscape-evolution">
-				<title>Design for Landscape Evolution</title>
+			<slide id="balance">
+				<title>Delicate Balance</title>
 				<ul>
-					<li>Application flow should be guided by discovered controls</li>
+					<li><em>Preserve:</em> Functional core and business foundations</li>
+					<li><em>Nourish:</em> Ability to change and situational awareness</li>
+					<li><a href="http://agilemanifesto.org/">Agile</a> moves from an IT approach to a business approach</li>
 					<ul>
-						<li>A dynamic service landscape needs a dynamic way of discovering services</li>
-						<li><em>Hypermedia</em> is a proven way how controls can be served dynamically</li>
-					</ul>
-					<li>Hypermedia is a good way for supporting <em>service choreography</em></li>
-					<ul>
-						<li>Microservice usage may change over time as the landscape evolves</li>
-						<li>Choreography exposes ways in which various services are combined to achieve a goal</li>
-					</ul>
-					<li>If nobody links to some microservices, these will disappear over time</li>
-					<ul>
-						<li>Usage and linkage combined provide useful analysis data</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="MS-v">
-				<title>The Three V's of Service Landscapes</title>
-				<ul>
-					<li>Volume of available services: <link href="landscape-scale">Scale</link></li>
-					<ul>
-						<li>How big is the service landscape and can I get an overview of what's around?</li>
-					</ul>
-					<li>Variety of service designs and interfaces: <link href="landscape-diversity">Diversity</link></li>
-					<ul>
-						<li>As a creator or consumer, how do I deal with different service designs?</li>
-					</ul>
-					<li>Velocity of service landscape evolution: <link href="landscape-decentralization">Decentralization</link></li>
-					<ul>
-						<li>As the landscape evolves, how stable are services and their designs?</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="landscape-scale">
-				<title>Service Landscape Scale</title>
-				<ul>
-					<li>Different environments have different ideas of MS scale</li>
-					<ul>
-						<li>Small projects may have a handful of services</li>
-						<li>Large MS adopters may have hundreds or thousands of services</li>
-					</ul>
-					<li>Public APIs and microservice APIs combined mean a bigger API inventory</li>
-					<li>Using any form of discovery may not be necessary from the start</li>
-					<ul>
-						<li>Consider the possibility when starting the MSA effort</li>
-						<li>Having a plan helps teams to be aware of the need later on</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="landscape-diversity">
-				<title>Service Landscape Diversity</title>
-				<ul>
-					<li>Not all services use the same technical foundations</li>
-					<ul>
-						<li>Different communications mechanisms</li>
-						<li>Different metamodels (XML/JSON/RDF) for data models</li>
-						<li>Different models for representing application concepts</li>
-						<li>In a Web context, these are concepts such as <a href="https://github.com/dret/sedola/blob/master/MD/headers.md">HTTP headers</a>, <a href="https://github.com/dret/sedola/blob/master/MD/mediatypes.md">media types</a>, and <a href="https://github.com/dret/sedola/blob/master/MD/linkrels.md">link relations</a></li>
-					</ul>
-					<li>Handling diversity can be challenging because of different <q>design universes</q></li>
-					<ul>
-						<li>Depending on choice, similar concepts/models may be represented differently</li>
-						<li>Introducing a generalized abstraction layer is unlikely to be helpful</li>
-					</ul>
-					<li><link href="ms-discovery">Discovering documentation</link> provides a better overview of the ecosystem</li>
-					<ul>
-						<li>A reality-based overview of the technology landscape</li>
-						<li>A possible starting point or guideline for getting MSA teams started</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="landscape-decentralization">
-				<title>Service Landscape Decentralization</title>
-				<ul>
-					<li>Decentralization means no single point of control</li>
-					<li>Decentralization means no automatic top-down visibility</li>
-					<ul>
-						<li><em>API gateways</em> are one way of improving visibility (and control)</li>
-						<li><em>Instrumenting the connective fabric</em> is another way out of this</li>
-						<li>But this already introduces constraints for MSA design</li>
-					</ul>
-					<li>Complete and uncontrolled decentralization is an ideal</li>
-					<ul>
-						<li><em>Observe</em> how the MSA landscape develops</li>
-						<li><em>Identify pain points</em> from the design and operational point of view</li>
-						<li><em>Identify popular patterns</em> so that teams have a starting point</li>
-						<li><em>Convincing teams</em> instead of mandatory guidelines</li>
+						<li><em>Individuals and interactions</em> over processes and tools</li>
+						<li><em>Working software</em> over comprehensive documentation</li>
+						<li><em>Customer collaboration</em> over contract negotiation</li>
+						<li><em>Responding to change</em> over following a plan</li>
 					</ul>
 				</ul>
 			</slide>
@@ -1126,7 +1044,7 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
-		<part id="why">
+		<part id="intro">
 			<title>APIs: Why?</title>
 			<slide id="why-now">
 				<title>APIs! But Why Now?</title>
@@ -1178,34 +1096,6 @@
 			<slide id="digital-transformation">
 				<title>Digital Transformation</title>
 				<img href="https://commons.wikimedia.org/wiki/File:Crocodile_Gaping.jpg" src="digital-transformation-godzilla.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="change">
-				<title>Transformation: Changing vs. Changeable</title>
-				<ul>
-					<li><em>Changing</em> implies a one-time activity</li>
-					<li><em>Changeable</em> implies an intrinsic property</li>
-					<blockquote>
-						<p>Don't focus on what to <b>change into</b>;<br/>Focus on <b>embracing change</b> as your mode of existence.</p>
-					</blockquote>
-				</ul>
-			</slide>
-			<slide id="bimodal-it">
-				<title>Bimodal IT</title>
-				<img title="Bimodal IT office workers" href="https://en.wikipedia.org/wiki/Minions_(film)" src="minions.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="balance">
-				<title>Delicate Balance</title>
-				<ul>
-					<li><em>Preserve:</em> Functional core and business foundations</li>
-					<li><em>Nourish:</em> Ability to change and situational awareness</li>
-					<li><a href="http://agilemanifesto.org/">Agile</a> moves from an IT approach to a business approach</li>
-					<ul>
-						<li><em>Individuals and interactions</em> over processes and tools</li>
-						<li><em>Working software</em> over comprehensive documentation</li>
-						<li><em>Customer collaboration</em> over contract negotiation</li>
-						<li><em>Responding to change</em> over following a plan</li>
-					</ul>
-				</ul>
 			</slide>
 		</part>
 		<part id="what">
@@ -1344,6 +1234,135 @@
 					</ul>
 					<li>Concepts must be well-defined but not necessarily deeply modeled</li>
 					<ul><em>Domain Driven Design (DDD)</em> provides a framework for <em>bounded contexts</em></ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="evolution">
+			<title>Service Evolution</title>
+			<slide id="autonomy-robustness">
+				<title>Autonomy vs. Robustness</title>
+				<ul>
+					<li>APIs emphasize independence and autonomy of capabilities</li>
+					<ul>
+						<li>Allowing teams to design/implement/deploy autonomously increases speed</li>
+						<li>With no oversight at all the cost may add up on the consumer side</li>
+						<li>Finding a harmonious balance between autonomy and guidelines is key</li>
+					</ul>
+					<li>There are two critical sides to the evolution part</li>
+					<ol>
+						<li>When <link href="service-evolution">services change</link>, do consumers need to be aware of the changes?</li>
+						<li>When <link href="landscape-evolution">the landscape changes</link>, do consumers need to discover the new services?</li>
+					</ol>
+				</ul>
+			</slide>
+			<slide id="service-evolution">
+				<title>Design for Service Evolution</title>
+				<ul>
+					<li>Services are designed with a certain goal and certain options</li>
+					<ul>
+						<li>The <em>goal</em> is to satisfy the current requirements for a useful service</li>
+						<li>The <em>options</em> are based on assumptions on how the service might change</li>
+					</ul>
+					<li>Service design is a balance between simplicity and flexibility</li>
+					<li>Building <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">robust and extensible services</a> is based on three factors</li>
+					<ul>
+						<li><em>Meaningful and stable core</em>: The service core must remain stable over time</li>
+						<li><em>Extension model</em>: There are well-defined ways how the service core may evolve</li>
+						<li><em>Processing model</em>: It is well-defined how clients are processing extensions</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="landscape-evolution">
+				<title>Design for Landscape Evolution</title>
+				<ul>
+					<li>Application flow should be guided by discovered controls</li>
+					<ul>
+						<li>A dynamic service landscape needs a dynamic way of discovering services</li>
+						<li><em>Hypermedia</em> is a proven way how controls can be served dynamically</li>
+					</ul>
+					<li>Hypermedia is a good way for supporting <em>service choreography</em></li>
+					<ul>
+						<li>Microservice usage may change over time as the landscape evolves</li>
+						<li>Choreography exposes ways in which various services are combined to achieve a goal</li>
+					</ul>
+					<li>If nobody links to some microservices, these will disappear over time</li>
+					<ul>
+						<li>Usage and linkage combined provide useful analysis data</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="MS-v">
+				<title>The Three V's of Service Landscapes</title>
+				<ul>
+					<li>Volume of available services: <link href="landscape-scale">Scale</link></li>
+					<ul>
+						<li>How big is the service landscape and can I get an overview of what's around?</li>
+					</ul>
+					<li>Variety of service designs and interfaces: <link href="landscape-diversity">Diversity</link></li>
+					<ul>
+						<li>As a creator or consumer, how do I deal with different service designs?</li>
+					</ul>
+					<li>Velocity of service landscape evolution: <link href="landscape-decentralization">Decentralization</link></li>
+					<ul>
+						<li>As the landscape evolves, how stable are services and their designs?</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="landscape-scale">
+				<title>Service Landscape Scale</title>
+				<ul>
+					<li>Different environments have different ideas of MS scale</li>
+					<ul>
+						<li>Small projects may have a handful of services</li>
+						<li>Large MS adopters may have hundreds or thousands of services</li>
+					</ul>
+					<li>Public APIs and microservice APIs combined mean a bigger API inventory</li>
+					<li>Using any form of discovery may not be necessary from the start</li>
+					<ul>
+						<li>Consider the possibility when starting the MSA effort</li>
+						<li>Having a plan helps teams to be aware of the need later on</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="landscape-diversity">
+				<title>Service Landscape Diversity</title>
+				<ul>
+					<li>Not all services use the same technical foundations</li>
+					<ul>
+						<li>Different communications mechanisms</li>
+						<li>Different metamodels (XML/JSON/RDF) for data models</li>
+						<li>Different models for representing application concepts</li>
+						<li>In a Web context, these are concepts such as <a href="https://github.com/dret/sedola/blob/master/MD/headers.md">HTTP headers</a>, <a href="https://github.com/dret/sedola/blob/master/MD/mediatypes.md">media types</a>, and <a href="https://github.com/dret/sedola/blob/master/MD/linkrels.md">link relations</a></li>
+					</ul>
+					<li>Handling diversity can be challenging because of different <q>design universes</q></li>
+					<ul>
+						<li>Depending on choice, similar concepts/models may be represented differently</li>
+						<li>Introducing a generalized abstraction layer is unlikely to be helpful</li>
+					</ul>
+					<li><link href="ms-discovery">Discovering documentation</link> provides a better overview of the ecosystem</li>
+					<ul>
+						<li>A reality-based overview of the technology landscape</li>
+						<li>A possible starting point or guideline for getting MSA teams started</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="landscape-decentralization">
+				<title>Service Landscape Decentralization</title>
+				<ul>
+					<li>Decentralization means no single point of control</li>
+					<li>Decentralization means no automatic top-down visibility</li>
+					<ul>
+						<li><em>API gateways</em> are one way of improving visibility (and control)</li>
+						<li><em>Instrumenting the connective fabric</em> is another way out of this</li>
+						<li>But this already introduces constraints for MSA design</li>
+					</ul>
+					<li>Complete and uncontrolled decentralization is an ideal</li>
+					<ul>
+						<li><em>Observe</em> how the MSA landscape develops</li>
+						<li><em>Identify pain points</em> from the design and operational point of view</li>
+						<li><em>Identify popular patterns</em> so that teams have a starting point</li>
+						<li><em>Convincing teams</em> instead of mandatory guidelines</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
