@@ -360,9 +360,10 @@
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
-					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
 					<li>Slides online: <a href="http://dret.net/lectures/apj-2017/perth-foundation"><code>dret.net/lectures/apj-2017/perth-foundation</code></a></li>
 					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/apj-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
 				</ul>
 			</slide>
 		</part>
@@ -375,12 +376,8 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
-		<part id="intro">
-			<title>Introduction</title>
-			<slide id="microservices-are-soa">
-				<title>Microservices are SOA!</title>
-				<img title="Microservices are SOA!" src="microservices-are-soa.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
+		<part id="microservices">
+			<title>Microservice</title>
 			<slide id="systems-ecosystems">
 				<title>Systems vs. Ecosystems</title>
 				<ul>
@@ -397,9 +394,10 @@
 					<li>Using APIs is one of the few overlaps between SOAPy SOA and MSA</li>
 				</ul>
 			</slide>
-		</part>
-		<part id="landscape">
-			<title>Service Landscape</title>
+			<slide id="microservices-are-soa">
+				<title>Microservices are SOA!</title>
+				<img title="Microservices are SOA!" src="microservices-are-soa.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="monolith">
 				<title>The Dreaded Monolith</title>
 				<img title="Where you come from..." href="https://upload.wikimedia.org/wikipedia/commons/7/7b/Weltmaschine_gsellmann1.JPG" src="monolith.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
@@ -594,9 +592,10 @@
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
-					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
 					<li>Slides online: <a href="http://dret.net/lectures/apj-2017/perth-design"><code>dret.net/lectures/apj-2017/perth-design</code></a></li>
 					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/apj-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
 				</ul>
 			</slide>
 		</part>
@@ -827,9 +826,10 @@
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
-					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
 					<li>Slides online: <a href="http://dret.net/lectures/apj-2017/sydney"><code>dret.net/lectures/apj-2017/sydney</code></a></li>
 					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/apj-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
 				</ul>
 			</slide>
 		</part>
@@ -1109,9 +1109,10 @@
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
-					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
 					<li>Slides online: <a href="http://dret.net/lectures/apj-2017/tokyo-microservices"><code>dret.net/lectures/apj-2017/tokyo-microservices</code></a></li>
 					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/apj-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
 				</ul>
 			</slide>
 		</part>
@@ -1352,9 +1353,10 @@
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
-					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
 					<li>Slides online: <a href="http://dret.net/lectures/apj-2017/tokyo-apis"><code>dret.net/lectures/apj-2017/tokyo-apis</code></a></li>
 					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/apj-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
 				</ul>
 			</slide>
 		</part>
