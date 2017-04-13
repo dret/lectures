@@ -1016,6 +1016,23 @@
 				<title>Strangling the Monolith</title>
 				<img title="Strangler Vine" href="https://commons.wikimedia.org/wiki/File:Strangler_tree.jpg" src="strangler-vine.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="good-strangling">
+				<title>How to Strangle Well</title>
+				<ul>
+					<li>Manage access to old/new capabilities through a router or gateway</li>
+					<ul>
+						<li>Transitioning is a management process old/new should be unaware of</li>
+					</ul>
+					<li>Data sync/update is a separately managed process</li>
+					<ul>
+						<li>Sophistication and cost of sync/update depends on consistency requirements</li>
+						<li>When one of the services disappears sync/update can be removed</li>
+					</ul>
+					<li>Manage/monitor overall transition to a full replacement scenario</li>
+					<ul>
+						<li>At some point in time decommissioning may be the most economical option</li>
+					</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
