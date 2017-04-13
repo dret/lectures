@@ -1171,9 +1171,9 @@
 			</slide>
 		</part>
 		<part id="what">
-			<title>Microservices: What?</title>
+			<title>APIs: What?</title>
 			<slide id="characteristics">
-				<title><a href="http://martinfowler.com/articles/microservices.html">Microservice Characteristics</a></title>
+				<title><a href="http://martinfowler.com/articles/microservices.html">API/MSA Characteristics</a></title>
 				<ol>
 					<li>Componentization via services</li>
 					<li>Organized around business capabilities</li>
@@ -1187,7 +1187,7 @@
 				</ol>
 			</slide>
 			<slide id="ms-dividends">
-				<title><a href="http://queue.acm.org/detail.cfm?id=2956643">Microservice Dividends</a></title>
+				<title><a href="http://queue.acm.org/detail.cfm?id=2956643">API/MSA Dividends</a></title>
 				<ol>
 					<li>Permissionless Innovation</li>
 					<li>Enable Failure</li>
@@ -1235,7 +1235,7 @@
 			</slide>
 		</part>
 		<part id="how">
-			<title>Microservices: How?</title>
+			<title>APIs: How?</title>
 			<slide id="containers">
 				<title>Containerization!</title>
 				<ul>
@@ -1264,22 +1264,6 @@
 					<li>Moving to MSA is a transition process and not one <em>Big Bang</em></li>
 					<ul>
 						<li>Just like the Web is never complete/final, neither is a microservices landscape</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="code-focus">
-				<title>Why the Code Focus?</title>
-				<ul>
-					<li>Loose coupling is essential and not an easy thing to get right</li>
-					<li>Microservice teams have complete authority over technology choices</li>
-					<ul>
-						<li>But they have to develop and deploy according to MSA</li>
-					</ul>
-					<li>Apart from <q>being agile</q>, the only visible part is the API</li>
-					<li>MSA critically depends on API strategy, design, and tooling</li>
-					<ul>
-						<li><em>API quality</em> is a critical factor for MSA landscape fitness</li>
-						<li><em>Tight coupling</em> can be more disruptive than in pre-MSA SOA</li>
 					</ul>
 				</ul>
 			</slide>
