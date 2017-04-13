@@ -1032,16 +1032,18 @@
 					<ul>
 						<li>At some point in time decommissioning may be the most economical option</li>
 					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
-			<slide id="api-design-matters">
-				<title>API Design Matters</title>
+			<slide id="msa-matters">
+				<title>Microservice Architecture Matters</title>
 				<ul>
-					<li>MSA promotes diversity (in design and documentation)</li>
 					<li>MSA promotes agility (API designs should evolve)</li>
+					<li>MSA promotes diversity (in design and documentation)</li>
 					<li>MSA means more services (and the need for good DX across them)</li>
+					<li>With MSA comes the need for a mature API strategy</li>
 				</ul>
 			</slide>
 			<slide id="q-and-a">
