@@ -1378,23 +1378,6 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide id="MS-v">
-				<title>The Three V's of Service Landscapes</title>
-				<ul>
-					<li>Volume of available services: <link href="landscape-scale">Scale</link></li>
-					<ul>
-						<li>How big is the service landscape and can I get an overview of what's around?</li>
-					</ul>
-					<li>Variety of service designs and interfaces: <link href="landscape-diversity">Diversity</link></li>
-					<ul>
-						<li>As a creator or consumer, how do I deal with different service designs?</li>
-					</ul>
-					<li>Velocity of service landscape evolution: <link href="landscape-decentralization">Decentralization</link></li>
-					<ul>
-						<li>As the landscape evolves, how stable are services and their designs?</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="landscape-scale">
 				<title>Service Landscape Scale</title>
 				<ul>
@@ -1449,6 +1432,23 @@
 						<li><em>Identify pain points</em> from the design and operational point of view</li>
 						<li><em>Identify popular patterns</em> so that teams have a starting point</li>
 						<li><em>Convincing teams</em> instead of mandatory guidelines</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="MSA-v">
+				<title>The Three V's of Service Landscapes</title>
+				<ul>
+					<li>Volume of available services: <link href="landscape-scale">Scale</link></li>
+					<ul>
+						<li>How big is the service landscape and can I get an overview of what's around?</li>
+					</ul>
+					<li>Variety of service designs and interfaces: <link href="landscape-diversity">Diversity</link></li>
+					<ul>
+						<li>As a creator or consumer, how do I deal with different service designs?</li>
+					</ul>
+					<li>Velocity of service landscape evolution: <link href="landscape-decentralization">Decentralization</link></li>
+					<ul>
+						<li>As the landscape evolves, how stable are services and their designs?</li>
 					</ul>
 				</ul>
 			</slide>
