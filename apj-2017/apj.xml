@@ -1216,6 +1216,54 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="organize-code">
+				<title>Organize Code: Cohesion and Coupling</title>
+				<ul>
+					<li>Focusing on <em>high cohesion</em> and <em>low coupling</em></li>
+					<ul>
+						<li><em>High Cohesion</em> means that related functions remain together</li>
+						<li><em>Low Coupling</em> means that unrelated functions are kept separate</li>
+					</ul>
+					<li>APIs need good software and system engineering practices</li>
+					<ul>
+						<li><em>Software Engineering</em> is concerned with how to create components</li>
+						<li><em>System Engineering</em> is concerned with how to organize components</li>
+					</ul>
+					<li>APIs introduce additional constraints</li>
+					<ul>
+						<li><em>Polyglot</em> designs have no bias towards programming languages</li>
+						<li><em>Web APIs</em> mean that all interfaces are for network access</li>
+						<li><em>Evolvability</em> allows components to evolve independently</li>
+						<li><em>Decentralization</em> means that there is no single point of control</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="organize-services">
+				<title>Organize Services: Operate Smaller Components</title>
+				<ul>
+					<li>Services talk to each other <em>only</em> through APIs</li>
+					<ul>
+						<li>Each service runs as a standalone component</li>
+						<li>Service dependencies are only through API invocations</li>
+					</ul>
+					<li>APIs trade flexibility for operational complexity</li>
+					<ul>
+						<li>Monitoring and debugging are easier in a <em>compile-time linked system</em></li>
+						<li>Flexibility and scalability are better in a <em>runtime linked ecosystem</em></li>
+					</ul>
+					<li>APIs need <em>lifecycle management</em> to reach full potential</li>
+					<ul>
+						<li><em>Design</em> APIs so that they fit into the ecosystem</li>
+						<li><em>Publish</em> APIs so that they can be discovered</li>
+						<li><em>Deploy</em> APIs so that they can be used safely/securely</li>
+						<li><em>Manage</em> APIs so that the ecosystem can be monitored</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-lifecycle">
+				<title>API Lifecycle</title>
+				<img title="Where API management is headed in 2017" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 		</part>
 		<part id="how">
 			<title>APIs: How?</title>
