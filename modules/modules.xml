@@ -41,7 +41,6 @@
 			<tbody>
 				<hotspot:for-each-presentation>
 					<tr class="vevent">
-						<td valign="top"><hotspot:date/></td>
 						<td valign="top"><b><hotspot:title/></b></td>
 						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
 						<td align="center"><hotspot:toc class="resources"/></td>
