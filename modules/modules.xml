@@ -51,6 +51,33 @@
 			</tbody>
 		</table>
 	</toc>
+	<presentation id="api-introduction">
+		<title>Introduction to APIs</title>
+		<toc class="abstract">...</toc>
+		<toc class="resources">...</toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+	</presentation>
+	<presentation id="hypermedia">
+		<title>Hypermedia</title>
+		<toc class="abstract">...</toc>
+		<toc class="resources">...</toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+	</presentation>
+	<presentation id="versioning">
+		<title>Versioning</title>
+		<toc class="abstract">...</toc>
+		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title="Erik Wilde, 'Patterns for Robust Extensibility', April 2016">Robust Extensibility</a></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+	</presentation>
 	<presentation id="skeleton">
 		<title>General Skeleton</title>
 		<toc class="abstract">General-purpose skeleton with introduction and conclusions.</toc>
@@ -120,32 +147,5 @@
 				</ul>
 			</slide>
 		</part>
-	</presentation>
-	<presentation id="api-introduction">
-		<title>Introduction to APIs</title>
-		<toc class="abstract">...</toc>
-		<toc class="resources">...</toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
-	</presentation>
-	<presentation id="hypermedia">
-		<title>Hypermedia</title>
-		<toc class="abstract">...</toc>
-		<toc class="resources">...</toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
-	</presentation>
-	<presentation id="versioning">
-		<title>Versioning</title>
-		<toc class="abstract">...</toc>
-		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title="Erik Wilde, 'Patterns for Robust Extensibility', April 2016">Robust Extensibility</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 	</presentation>
 </hotspot>
