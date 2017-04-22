@@ -861,7 +861,7 @@
 					<ul>
 						<li><em>Slow start</em> avoids flooding receivers with data they cannot process</li>
 						<li><em>Fast retransmit</em> for avoiding timeouts when losing data</li>
-						<li>a <em>Sliding window</em> for controlling the amount of outstanding packets</li>
+						<li>A <em>Sliding window</em> for controlling the amount of outstanding packets</li>
 					</ul>
 				</ul>
 			</slide>
