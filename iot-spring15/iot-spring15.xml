@@ -859,7 +859,7 @@
 					</ul>
 					<li>TCP avoids network congestion and system overload</li>
 					<ul>
-						<li><em>Slow start</em> avoid flooding receivers with data they cannot process</li>
+						<li><em>Slow start</em> avoids flooding receivers with data they cannot process</li>
 						<li><em>Fast retransmit</em> for avoiding timeouts when losing data</li>
 						<li>a <em>Sliding window</em> for controlling the amount of outstanding packets</li>
 					</ul>
