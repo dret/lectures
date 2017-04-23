@@ -143,6 +143,21 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="intro">
+			<title>Introduction</title>
+		</part>
+		<part id="xml">
+			<title>Extensible Markup Language (XML)</title>
+		</part>
+		<part id="json">
+			<title>JavaScript Object Notation (JSON)</title>
+		</part>
+		<part id="rdf">
+			<title>Resource Description Framework (RDF)</title>
+		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+		</part>
 	</presentation>
 	<presentation id="semtech">
 		<title>Semantic Technologies</title>
