@@ -72,15 +72,6 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation id="api-styles">
-		<title>API Styles</title>
-		<toc class="abstract">...</toc>
-		<toc class="resources">...</toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
-	</presentation>
 	<presentation id="bimodal">
 		<title>Bimodal IT</title>
 		<toc class="abstract">...</toc>
@@ -198,6 +189,15 @@
 	</presentation>
 	<presentation id="semtech">
 		<title>Semantic Technologies</title>
+		<toc class="abstract">...</toc>
+		<toc class="resources">...</toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+	</presentation>
+	<presentation id="api-styles">
+		<title>API Styles</title>
 		<toc class="abstract">...</toc>
 		<toc class="resources">...</toc>
 		<slide id="summary">
