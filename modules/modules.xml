@@ -125,6 +125,15 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="hypermedia-overview">
+			<title>Overview</title>
+			<slide id="hypermedia-workflow">
+				<title>Hypermedia and Workflows</title>
+			</slide>
+			<slide id="hypermedia-evolution">
+				<title>Hypermedia and API Evolution</title>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="api-lifecycle">
 		<title>API Lifecycle</title>
