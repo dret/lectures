@@ -89,6 +89,15 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="caching-overview">
+			<title>Overview</title>
+			<slide id="caching-online">
+				<title>Caching for Online Scenarios</title>
+			</slide>
+			<slide id="caching-offline">
+				<title>Caching for Offline Scenarios</title>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="digital-transformation">
 		<title>Digital Transformation</title>
