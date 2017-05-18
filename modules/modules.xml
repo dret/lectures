@@ -146,7 +146,7 @@
 	</presentation>
 	<presentation id="microservices">
 		<title>Microservices</title>
-		<toc class="abstract">...</toc>
+		<toc class="abstract">Microservices as an architectural approach are a logical consequence of the containerization of software infrastructure. Microservices as the result of a containerized landscape require a different mindset and management approach for keeping track of the more diverse, dynamic, and decentralized set of services. This talk takes a closer look at those places where becoming an effective microservice gardener presents some challenges, and where lessons learned from existing decentralized systems can present us with solutions that have been practiced and perfected since the Web turned into the largest containerized microservices ecosystem about 25 years ago.</toc>
 		<toc class="resources"><a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
