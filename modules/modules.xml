@@ -177,7 +177,8 @@
 			<slide id="microservices-are-good-soa">
 				<title>Microservices are SOA done Right!</title>
 				<ul>
-					<li>Decouple implementations and not just interfaces</li>
+					<li><em>Decouple implementations</em> and not just interfaces</li>
+					<li><em>Velocity</em> is determined by how hard it is to make changes</li>
 					<li>The biggest problem is not <em>access to capabilities</em> but <em>capability agility</em></li>
 					<ul>
 						<li>Providing access to capabilities is better than doing nothing</li>
