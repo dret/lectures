@@ -471,6 +471,27 @@
 		</slide>
 		<part id="microservices">
 			<title>Microservices</title>
+			<slide>
+				<title>Digital Transformation</title>
+				<ul>
+					<li>IT capabilities and management often are not aligned</li>
+					<ul>
+						<li><em>Capabilities</em> are growing and business demands are growing as well</li>
+						<li><em>Management</em> becomes complex and impact execution speed</li>
+					</ul>
+					<li>There is a difference in separating interfaces and implementations</li>
+					<ul>
+						<li><em>Interfaces</em> are useful for accessing capabilities</li>
+						<li><em>Implementations</em> must support easy modifications and additions</li>
+					</ul>
+					<li>The first wave of <em>API hype</em> focused on interfaces only</li>
+					<ul>
+						<li>Focusing on APIs as <em>business-aligned capabilities</em> is a necessary first step</li>
+						<li>Agility suffers when implementations are not business-aligned</li>
+						<li><a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway's Law</a> means that changing implementation structure can be hard</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="soapy-soa">
 				<title>The SOA Crisis</title>
 				<ul>
