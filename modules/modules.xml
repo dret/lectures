@@ -423,6 +423,18 @@
 		<part id="rdf">
 			<title>Resource Description Framework (RDF)</title>
 		</part>
+		<part id="collection-formats">
+			<title>Collections</title>
+			<slide id="atom">
+				<title>Atom</title>
+			</slide>
+			<slide id="json-feed">
+				<title>JSON Feed</title>
+			</slide>
+			<slide id="activity-streams">
+				<title>Activity Streams</title>
+			</slide>
+		</part>
 		<part id="custom-representation">
 			<title>Custom Representation Formats</title>
 		</part>
