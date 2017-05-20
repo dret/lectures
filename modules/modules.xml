@@ -786,6 +786,27 @@
 		<part id="xml">
 			<title>Extensible Markup Language (XML)</title>
 			<slide>
+				<title>Basic Concepts</title>
+				<ul>
+					<li>XML Documents have an <em>XML declaration</em> (optional)</li>
+					<li>There is exactly one <em>document element</em> (a.k.a. <em>root element</em>)</li>
+					<li>Elements may be nested (there is no conceptual limit)</li>
+					<ul>
+						<li>Elements may be repeated (they can be identified by position)</li>
+					</ul>
+					<li>Elements are marked up using <em>tags</em></li>
+					<ul>
+						<li>Most elements have content, surrounded by <em>start</em> and <em>end tags</em></li>
+						<li>Empty elements are allowed and may use a special notation</li>
+					</ul>
+					<li>Elements may have attributes (zero to any number)</li>
+					<ul>
+						<li>Attributes can only occur once on an element (i.e., they cannot be repeated)</li>
+					</ul>
+				</ul>
+				<listing src="my-first.xml"/>
+			</slide>
+			<slide>
 				<title>XML Content and Names</title>
 				<p>XML documents can use a wide array of characters. They are defined by <a href="http://www.unicode.org/">Unicode</a>, which in Version 5.0 defines more than 100'000 characters (#100'000 added in 2005).</p>
 				<listing src="japanese1.xml"/>
