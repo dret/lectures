@@ -785,6 +785,28 @@
 		</part>
 		<part id="xml">
 			<title>Extensible Markup Language (XML)</title>
+			<slide id="xml-origins">
+				<title>XML Origins and History</title>
+				<ul>
+					<li>Envisioned as a way for sites to publish their data models</li>
+					<ul>
+						<li>HTML is a simple and mostly presentation-oriented vocabulary</li>
+						<li>Web sites should have the freedom to use their domain vocabularies</li>
+						<li>CSS/XSLT stylesheets would then be used to render in the browser</li>
+					</ul>
+					<li>XML was the first open structured data format on the Internet/Web</li>
+					<ul>
+						<li><em>Web Services</em> took it at ran with it (and little else)</li>
+						<li><em>JavaScript</em> replaced the declarative stylesheet dreams</li>
+					</ul>
+					<li>JSON replaced XML quickly when it became an alternative</li>
+					<ul>
+						<li>Direct mapping into the data structures of most programming languages</li>
+						<li>No baggage of document-oriented design and related technologies (no <em>data binding</em>)</li>
+						<li>Better fit for simple <q>on-the-wire</q> models</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="xml-basics">
 				<title>Basic Concepts: Elements and Attributes</title>
 				<ul>
