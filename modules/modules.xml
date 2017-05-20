@@ -861,6 +861,29 @@
 				<listing src="section.xml" line="12-20"/>
 			</slide>
 		</part>
+		<slide id="mixed-content">
+			<title>Mixed Content</title>
+			<p>The term <em>Mixed content</em> in XML refers to elements <a href="http://www.w3.org/TR/xml/#sec-mixed-content">which have text content mixed with elements</a>. What these elements do depends on the elements <img style="height : 1em" src="smiley.gif"/>, but the important point is that they are on the same level as the text nodes of the mixed content.</p>
+			<pre><![CDATA[<p>The term <em>Mixed content</em> in XML refers to elements <a href="http://www.w3.org/TR/xml/#sec-mixed-content">which have text content mixed with elements</a>. What these elements do depends on the elements <img style="height : 1em" src="smiley.gif"/>, but the important point is that they are on the same level as the text nodes of the mixed content.</p>]]></pre>
+			<img style="width : 90% ; margin : 4% ;" src="mixed-content.png" title="XML tree for mixed content"/>
+		</slide>
+		<slide id="mixed-content-usage">
+			<title>Mixed Content Usage</title>
+			<ul>
+				<li>Database people find mixed content rather irritating</li>
+				<ul>
+					<li>Cannot be easily mapped to relational structures</li>
+					<li>Is more <em>document-like</em> than <em>data-like</em></li>
+					<li>Much harder to optimize for query analysis and query processing</li>
+				</ul>
+				<li>Document people find mixed content very intriguing</li>
+				<ul>
+					<li>Textual content can still be used as simple text</li>
+					<li>Markup provides additional information for rich text</li>
+					<li>Start with a text-only document and use markup to add structure to it</li>
+				</ul>
+			</ul>
+		</slide>
 		<part id="json">
 			<title>JavaScript Object Notation (JSON)</title>
 		</part>
