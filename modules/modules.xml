@@ -914,6 +914,15 @@
 		</part>
 		<part id="collection-formats">
 			<title>Collections</title>
+			<slide>
+				<title>Collections as a Pattern</title>
+				<ul>
+					<li>Collections and their management is a common design pattern</li>
+					<ul>
+						<li>Often some form of similarity/commonality across collection members</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="atom">
 				<title>Atom</title>
 			</slide>
