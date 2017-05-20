@@ -785,8 +785,8 @@
 		</part>
 		<part id="xml">
 			<title>Extensible Markup Language (XML)</title>
-			<slide>
-				<title>Basic Concepts</title>
+			<slide id="xml-basics">
+				<title>Basic Concepts: Elements and Attributes</title>
 				<ul>
 					<li>XML Documents have an <em>XML declaration</em> (optional)</li>
 					<li>There is exactly one <em>document element</em> (a.k.a. <em>root element</em>)</li>
