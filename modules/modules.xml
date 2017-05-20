@@ -823,6 +823,43 @@
 				<listing src="japanese1.xml"/>
 				<listing src="japanese2.xml"/>
 			</slide>
+			<slide id="xml-elements">
+				<title>Elements</title>
+				<ul>
+					<li>Elements can use a <a href="http://www.w3.org/TR/xml/#NT-Name">wide variety of names</a></li>
+					<ul>
+						<li>Allowed: <code>&lt;html></code>, <code>&lt;id9832798472></code>, <code>&lt;_></code>, <code>&lt;:></code>, <code>&lt;こんにちは></code></li>
+						<li>Disallowed: leading numbers, spaces, control characters</li>
+					</ul>
+					<li>Element names usually convey some information about the content</li>
+					<ul>
+						<li>This is not reliable and highly language-dependent</li>
+						<li>It is <em>extremely useful</em> when working with a known vocabulary</li>
+						<li>It is <em>potentially harmful</em> when working with an unknown vocabulary</li>
+					</ul>
+					<li>Elements are the foundation for XML's versatility</li>
+					<ul>
+						<li>They can be nested (<code>&lt;address>&lt;city>Berkeley&lt;/city>&lt;zip>94709&lt;/zip>…</code>)</li>
+						<li>They can be repeated (<code>&lt;givenname>Erik&lt;/givenname>&lt;givenname>Thomas&lt;/givenname></code>)</li>
+						<li>Their sequence can convey additional information (e.g., given names have a sequence)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="xml-attributes">
+				<title>Attributes</title>
+				<ul>
+					<li>Additional information pertaining to elements</li>
+					<li>Traditionally, anything that is not considered <q>content</q></li>
+					<ul>
+						<li>SGML is a document markup language</li>
+						<li>XML uses SGML's document-based concepts</li>
+						<li>XML has its roots in the document world</li>
+					</ul>
+					<li>Elements: Content (i.e., Data); Attributes: Metadata</li>
+					<li>Documents often distinguish by what is textual content</li>
+				</ul>
+				<listing src="section.xml" line="12-20"/>
+			</slide>
 		</part>
 		<part id="json">
 			<title>JavaScript Object Notation (JSON)</title>
