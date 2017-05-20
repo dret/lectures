@@ -102,13 +102,16 @@
 	<presentation id="design">
 		<title>API Design</title>
 		<toc class="abstract">...</toc>
-		<toc class="resources">...</toc>
+		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/10/api-usability-matters.html" title='Erik Wilde, "API Usability Matters: UX and CX is like DX and …", ... 2017'>API Usability</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
 		<part id="design-process">
 			<title>Design as a Process</title>
+		</part>
+		<part id="design-dx">
+			<title>Developer Experience(DX)</title>
 		</part>
 	</presentation>
 	<presentation id="digital-transformation">
