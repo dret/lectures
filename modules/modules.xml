@@ -100,6 +100,15 @@
 		</part>
 		<part id="caching-locations">
 			<title>Caching Locations</title>
+			<slide id="proxy-cache">
+				<title>Proxy Cache</title>
+			</slide>
+			<slide id="cache-client">
+				<title>Client Cache</title>
+			</slide>
+			<slide id="cache-reverse-proxy">
+				<title>Reverse Proxy Cache</title>
+			</slide>
 		</part>
 		<part id="caching-http">
 			<title>Caching in HTTP</title>
