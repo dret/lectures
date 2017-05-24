@@ -131,6 +131,26 @@
 		</part>
 		<part id="messages-models">
 			<title>Messages vs. Models</title>
+			<slide id="api-language">
+				<title>APIs are Languages</title>
+				<ul>
+					<li>Interfaces should hide domain complexity (<em>encapsulation</em>)</li>
+					<ul>
+						<li>Expose <em>as little as possible</em> of the domain complexity</li>
+						<li>Resist the temptation to <em>expose your domain model</em></li>
+					</ul>
+					<li>Interfaces are languages for communication</li>
+					<ul>
+						<li>They establish a language between API provider and consumer</li>
+						<li>Keeping the language simple keeps the API usable</li>
+					</ul>
+					<li><q>Model Creep</q> is an obstacle for API adoption</li>
+					<ul>
+						<li>There is no <q>one true model</q> for any domain</li>
+						<li>Keeping the language simple minimizes conflict potential</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="design-dx">
 			<title>Developer Experience(DX)</title>
