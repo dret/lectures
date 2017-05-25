@@ -966,6 +966,22 @@
 				</ul>
 			</ul>
 		</slide>
+		<slide>
+			<title>Semantics</title>
+			<ul>
+				<li>XML is a language for encoding trees</li>
+				<ul>
+					<li>Elements and attributes are labeled nodes in this tree</li>
+					<li>The labels can be chosen freely by document authors</li>
+				</ul>
+				<li>The tree's meaning is nothing XML is concerned with</li>
+				<ul>
+					<li>Peers must have a mutual understanding of the semantics</li>
+					<li>XML without mutual understanding is almost useless</li>
+					<li>Reverse engineering often is possible, but it is risky and brittle</li>
+				</ul>
+			</ul>
+		</slide>
 		<part id="json">
 			<title>JavaScript Object Notation (JSON)</title>
 		</part>
