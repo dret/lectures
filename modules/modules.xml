@@ -1039,16 +1039,13 @@
 					<ul>
 						<li>Often some form of similarity/commonality across collection members</li>
 					</ul>
+					<li>Re-inventing collection formats might be a good design choice</li>
+					<ul>
+						<li><a href="https://tools.ietf.org/html/rfc4287" title="IETF RFC 4287">Atom</a> is XML-based and has <a href="...">many additional features</a></li>
+						<li><a href="https://jsonfeed.org/">JSON Feed</a> is a JSON-based variant of Atom</li>
+						<li><a href="https://www.w3.org/TR/activitystreams/">Activity Streams</a> focuses on activity publishing/syndication</li>
+					</ul>
 				</ul>
-			</slide>
-			<slide id="atom">
-				<title>Atom</title>
-			</slide>
-			<slide id="json-feed">
-				<title>JSON Feed</title>
-			</slide>
-			<slide id="activity-streams">
-				<title>Activity Streams</title>
 			</slide>
 		</part>
 		<part id="custom-representation">
