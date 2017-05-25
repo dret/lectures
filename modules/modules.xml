@@ -984,6 +984,26 @@
 		</slide>
 		<part id="json">
 			<title>JavaScript Object Notation (JSON)</title>
+			<slide id="json-xml">
+				<title>JSON and XML</title>
+				<ul>
+					<li>JSON replaced XML very quickly because of its simplicity</li>
+					<ul>
+						<li>JSON is mostly used for <q>on-the-wire</q> models</li>
+						<li>XML is intended for document representation, storage, and processing</li>
+					</ul>
+					<li>JSON's main advantage over XML is its object-orientation</li>
+					<ul>
+						<li>JSON can be directly mapped into most language's native data structures</li>
+						<li>XML needs tree model processing or some form of data-binding</li>
+					</ul>
+					<li>JSON has no notion of vocabularies or namespaces</li>
+					<ul>
+						<li>XML's complexity and complications are not needed in most cases</li>
+						<li>Composing JSON vocabularies is much more brittle than in XML</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="rdf">
 			<title>Resource Description Framework (RDF)</title>
