@@ -832,6 +832,19 @@
 			</slide>
 			<slide id="resources">
 				<title>Resources</title>
+				<ul>
+					<li>APIs are languages that allow providers and consumers to communicate</li>
+					<ul>
+						<li>API design is about identifying and representing resources</li>
+						<li>API interactions are about exchanging resource representations</li>
+					</ul>
+					<li>Resources are anything that the API language should talk about</li>
+					<ul>
+						<li>Resources can be real-world concepts such as <em>products</em></li>
+						<li>Resources can be immaterial concepts such as <em>product descriptions</em></li>
+						<li>Resources can be ephemeral concepts such as <em>product orders</em></li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="digital-representations">
 				<title>Digital Representations</title>
