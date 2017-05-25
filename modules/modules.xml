@@ -1030,9 +1030,9 @@
 				<title>Describing Resources</title>
 			</slide>
 		</part>
-		<part id="collection-formats">
-			<title>Collections</title>
-			<slide>
+		<part id="more-representation">
+			<title>More Representation Formats</title>
+			<slide id="collection-formats">
 				<title>Collections as a Pattern</title>
 				<ul>
 					<li>Collections and their management is a common design pattern</li>
@@ -1047,9 +1047,6 @@
 					</ul>
 				</ul>
 			</slide>
-		</part>
-		<part id="custom-representation">
-			<title>Custom Representation Formats</title>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
