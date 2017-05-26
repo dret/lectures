@@ -1049,6 +1049,24 @@
 			</slide>
 			<slide id="csv">
 				<title>Comma-Separated Values (CSV)</title>
+				<ul>
+					<li><a href="http://tools.ietf.org/html/rfc4180">RFC 4180</a> defines a textual format for <q>spreadsheet data</q></li>
+					<li>CSV has been used for a long time, but some of the details were solved differently</li>
+					<li>Defining a media type makes it easier for implementations to know what to expect</li>
+					<ul>
+						<li>The CSV registration not only registers the type, but also defines it</li>
+					</ul>
+					<li>CSV is not overly complex, but some issues have to be solved</li>
+					<ul>
+						<li>How to separate lines (CRLF)</li>
+						<li>How to end the file (CRLF is allowed but optional)</li>
+						<li>Are headers allowed (yes, but they are not marked as such)</li>
+						<li>May different lines use different numbers of fields (no)</li>
+						<li>Are spaces significant (yes)</li>
+						<li>Are quotes significant (no, they are delimiters, so quotes as values must be escaped)</li>
+						<li>How to treat fields with CRLF, commas, or quotes (enclose the value in quotes)</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
