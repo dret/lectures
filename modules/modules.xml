@@ -188,6 +188,18 @@
 			<title>API Scope</title>
 			<slide id="api-tool">
 				<title>APIs as Tools</title>
+				<ul>
+					<li>APIs exist to solve a specific problem</li>
+					<ul>
+						<li>Think about the problem and not the solution</li>
+						<li>Design a <em>capability</em> that hides solution details</li>
+					</ul>
+					<li>Collaborate with consumers and gather their feedback</li>
+					<ul>
+						<li><q>API first</q> is all about driving solutions from the API</li>
+						<li>Use approaches the make incremental design easy</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="api-maslow">
 				<title>Tools and Problems</title>
