@@ -168,6 +168,20 @@
 			</slide>
 			<slide id="api-messages">
 				<title>APIs should use Messages</title>
+				<ul>
+					<li>Messages are the sentences in API communications</li>
+					<ul>
+						<li>They transport meaning between collaborating peers</li>
+						<li>They are independent of how peers implement their activities</li>
+					</ul>
+					<li>Messages can follow patterns that make APIs easier to use</li>
+					<ul>
+						<li><em>Metamodels</em> help to provide structure (text, XML, JSON, RDF)</li>
+						<li><em>API models</em> can add specifics (SOAP, HAL, GraphQL)</li>
+						<li><em>Vocabularies</em> help to describe specific APIs</li>
+					</ul>
+					<li>The usual balancing act of familiarity and avoiding <a href="https://en.wikipedia.org/wiki/Law_of_the_instrument">Maslow's hammer</a></li>
+				</ul>
 			</slide>
 		</part>
 		<part id="api-scope">
