@@ -185,7 +185,7 @@
 					<ul>
 						<li>Standardizing on technologies is no guarantee for quality</li>
 					</ul>
-					<li>Microservice teams are incentivized to create good APIs</li>
+					<li>Teams are incentivized to create good APIs</li>
 					<ul>
 						<li>Feedback from API consumers comes early and often</li>
 						<li>Being a good citizen improves the chances to success</li>
@@ -212,7 +212,7 @@
 				<title>Loose Coupling</title>
 				<ul>
 					<li>Apply well-known <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Patterns for Robust Extensibility</a></li>
-					<li>Microservice architecture encourages service changes and replacements</li>
+					<li>Modern service architecture encourages service changes and replacements</li>
 					<ul>
 						<li>Design for <em>service changes:</em> Non-breaking changes as the goal</li>
 						<li>Design for <em>landscape changes:</em> Self-describing interactions allow changing workflows</li>
