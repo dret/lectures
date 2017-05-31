@@ -218,6 +218,29 @@
 		</part>
 		<part id="design-dx">
 			<title>Developer Experience (DX)</title>
+			<slide id="design-thinking">
+				<title>Design Thinking</title>
+				<ul>
+					<li>Design is driven by creating products/solutions</li>
+					<ul>
+						<li>How well does the product address a given problem?</li>
+						<li>How easy is the designed product to use?</li>
+					</ul>
+					<li>APIs often are <em>part of a bigger picture</em></li>
+					<ul>
+						<li>Developers have to use APIs to <em>design their applications</em></li>
+						<li>How easy is it for them to use APIs as <em>part of their solution</em>?</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-integration-client">
+				<title>Ad-Hoc API Integration</title>
+				<img title="Client-Side API Integration" src="apis-application-layer-client.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-integration-server">
+				<title>Pre-Packaged API Integration</title>
+				<img title="Server-Side API Integration" src="apis-application-layer-server.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 		</part>
 		<part id="design-coherence">
 			<title>Design Coherence</title>
