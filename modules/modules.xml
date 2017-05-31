@@ -211,6 +211,19 @@
 			</slide>
 			<slide id="api-design-simple">
 				<title>KISS API Design</title>
+				<ul>
+					<li>The only thing that matters is the <em>Service Surface</em></li>
+					<ul>
+						<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
+						<li>Resist the temptation to <em>expose your model</em> just because you can</li>
+					</ul>
+					<li>Concepts must be well-defined but not necessarily deeply modeled</li>
+					<li>There is no general correct path to well-designed APIs</li>
+					<ul>
+						<li>What is the capability that the API is exposing?</li>
+						<li>What are the assumptions about API consumers?</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="microservice-api">
 				<title>Microservice APIs</title>
