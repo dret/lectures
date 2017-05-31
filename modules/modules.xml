@@ -180,8 +180,8 @@
 					</ul>
 					<li>Messages can follow patterns that make APIs easier to use</li>
 					<ul>
-						<li><em>Metamodels</em> help to provide structure (text, XML, JSON, RDF)</li>
-						<li><em>API models</em> can add specifics (SOAP, HAL, GraphQL)</li>
+						<li><em>Metamodels</em> help to provide structure (plain text, binary, XML, JSON, RDF, …)</li>
+						<li><em>API models</em> can add specifics (SOAP, HAL, GraphQL, …)</li>
 						<li><em>Vocabularies</em> help to describe specific APIs</li>
 					</ul>
 					<li>The usual balancing act of familiarity and avoiding <a href="https://en.wikipedia.org/wiki/Law_of_the_instrument">Maslow's hammer</a></li>
