@@ -261,6 +261,19 @@
 			</slide>
 			<slide id="design-coherence">
 				<title>Design Coherence</title>
+				<ul>
+					<li>Establish a <em>culture of API design</em></li>
+					<ul>
+						<li><q>This is how APIs are usually looking like</q></li>
+						<li>Here are some tools to help with design and documentation</li>
+						<li>Here is a breakdown of what the API landscape looks like</li>
+					</ul>
+					<li>Observing reality helps to document <em>and</em> establish culture</li>
+					<ul>
+						<li>One way to think of establishing coherence is by writing <em>guidelines</em></li>
+						<li>An alternative path is to document and disseminate <em>existing practices</em></li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="diversity-decentralization-loose-coupling">
