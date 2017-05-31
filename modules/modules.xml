@@ -212,7 +212,7 @@
 			<slide id="api-design-simple">
 				<title>KISS API Design</title>
 				<ul>
-					<li>The only thing that matters is the <em>Service Surface</em></li>
+					<li>The only thing that matters is the <em>service surface</em></li>
 					<ul>
 						<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
 						<li>Resist the temptation to <em>expose your model</em> just because you can</li>
@@ -508,7 +508,7 @@
 			<slide id="surface">
 				<title>Be Superficial</title>
 				<ul>
-					<li>The only thing that matters is the <em>Service Surface</em></li>
+					<li>The only thing that matters is the <em>service surface</em></li>
 					<ul>
 						<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
 						<li>Resist the temptation to <em>expose your model</em> just because you can</li>
