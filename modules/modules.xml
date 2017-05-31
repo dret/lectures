@@ -132,15 +132,15 @@
 				<title>Design Questions</title>
 				<ul>
 					<li>Design is an iterative process to solve a given problem</li>
-					<ul>
-						<ol>Identify a <em>problem</em></ol>
-						<ol><em>Why</em> is the problem a problem?</ol>
-						<ol>Identify the <em>constraints</em></ol>
-						<ol><em>What</em> can be done to address the problem?</ol>
-						<ol>Identify the possible solutions</ol>
-						<ol><em>How</em> is the problem solved given the constraints?</ol>
-						<ol>Assess design quality and repeat	</ol>
-					</ul>
+					<ol>
+						<li>Identify a <em>problem</em></li>
+						<li><em>Why</em> is the problem a problem?</li>
+						<li>Identify the <em>constraints</em></li>
+						<li><em>What</em> can be done to address the problem?</li>
+						<li>Identify the possible solutions</li>
+						<li><em>How</em> is the problem solved given the constraints?</li>
+						<li>Assess design quality and repeat	</li>
+					</ol>
 				</ul>
 			</slide>
 		</part>
