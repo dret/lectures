@@ -187,6 +187,23 @@
 					<li>The usual balancing act of familiarity and avoiding <a href="https://en.wikipedia.org/wiki/Law_of_the_instrument">Maslow's hammer</a></li>
 				</ul>
 			</slide>
+			<slide id="messaging-start">
+				<title>Make Messaging the Start</title>
+				<ul>
+					<li>Make sure to identify relevant resources so that you can refer to them</li>
+					<ul>
+						<li>Resource refers to <em>anything</em> that <q>is worth exchanging messages about</q></li>
+						<li>Unique and stable identity helps when assigning resource identifiers</li>
+					</ul>
+					<li>Any service resource must have a <em>representation</em> in messages</li>
+					<ul>
+						<li>Your <em>data model</em> is not your <em>object model</em></li>
+						<li>Your <em>object model</em> is not your <em>resource model</em></li>
+						<li>Your <em>resource model</em> is not your <em>message model</em></li>
+					</ul>
+					<li>Design <q>interaction forms</q> to be as succinct as possible</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="api-scope">
 			<title>API Scope</title>
