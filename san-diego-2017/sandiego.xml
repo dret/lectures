@@ -354,32 +354,6 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
-		<part id="design-process">
-			<title>Design as a Process</title>
-			<slide id="design-eames">
-				<title>Design and Constraints</title>
-				<blockquote><q href="http://www.markwunsch.com/eames">Design depends largely on constraints.</q> (<a href="https://en.wikipedia.org/wiki/Charles_and_Ray_Eames">Charles Eames</a>)</blockquote>
-			</slide>
-			<slide id="design-questions">
-				<title>Design Questions</title>
-				<ul>
-					<li>Design is an iterative process to solve a given problem</li>
-					<ol>
-						<li>Identify a <em>problem</em> (provided externally or identified internally)</li>
-						<li><em>Why</em> is the problem a problem?</li>
-						<li>Identify the <em>constraints</em></li>
-						<li><em>What</em> can be done to address the problem?</li>
-						<li>Identify the possible solutions</li>
-						<li><em>How</em> is the problem solved given the constraints?</li>
-						<li>Assess design quality and repeat	</li>
-					</ol>
-				</ul>
-			</slide>
-			<slide id="api-lifecycle-design">
-				<title>API Lifecycle and Design</title>
-				<img title="Where API management is headed in 2017" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-		</part>
 		<part id="messages-models">
 			<title>Messages vs. Models</title>
 			<slide id="api-language">
@@ -440,25 +414,6 @@
 		</part>
 		<part id="api-scope">
 			<title>API Scope</title>
-			<slide id="api-tool">
-				<title>APIs as Tools</title>
-				<ul>
-					<li>APIs exist to solve specific problems</li>
-					<ul>
-						<li>Think about the problem and not the solution</li>
-						<li>Design a <em>capability</em> that hides solution details</li>
-					</ul>
-					<li>Collaborate with consumers and gather their feedback</li>
-					<ul>
-						<li><q>API first</q> is all about driving solutions from the API</li>
-						<li>Use approaches the make incremental design easy</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="api-maslow">
-				<title>Tools and Problems</title>
-				<img title="Hammer and Screw" href="https://www.flickr.com/photos/justinbaeder/5317820857" src="maslow-hammer-nail.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
 			<slide id="api-design-simple">
 				<title>KISS API Design</title>
 				<ul>
