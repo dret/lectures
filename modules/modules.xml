@@ -44,7 +44,7 @@
 						<td valign="top">
 							<b><span class="summary"><hotspot:title/></span><span class="toggle">:</span></b> <span class="toggle"><span class="description"><hotspot:toc class="abstract"/></span></span>
 						</td>
-						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <hotspot:slides>(*)</hotspot:slides></td>
 						<td align="center"><hotspot:toc class="resources"/></td>
 					</tr>
 				</hotspot:for-each-presentation>
