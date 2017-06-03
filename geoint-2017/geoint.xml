@@ -84,6 +84,132 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="geojson">
+			<title>What is GeoJSON?</title>
+			<slide id="strava-art">
+				<title>It's for Riding Animals!</title>
+				<img src="fish.jpg" style="float: left ; width : 42% ; margin : 4% ; " href="http://www.strava.com/activities/523719323"/>
+				<img src="goose.jpg" style="float: right ; width : 42% ; margin : 4% ; " href="http://www.strava.com/activities/527214108"/>
+			</slide>
+			<slide id="fish-ride">
+				<title>GeoJSON Fish</title>
+				<ul>
+					<li>Transformed from <a href="http://www.strava.com/">Strava</a>-originated <a href="http://www.strava.com/activities/523719323">activity</a> <a href="https://github.com/dret/lectures/blob/master/locweb-2017/src/fish.gpx">GPX</a></li>
+					<li><a href="http://github.com/">Github</a> understands and renders the resulting <a href="https://github.com/dret/lectures/blob/master/locweb-2017/src/fish.geojson">GeoJSON</a></li>
+				</ul>
+				<listing src="fish.geojson" line="1-15"/>
+			</slide>
+			<slide id="goose-ride">
+				<title>GeoJSON Goose</title>
+				<ul>
+					<li>Transformed from <a href="http://www.strava.com/">Strava</a>-originated <a href="http://www.strava.com/activities/527214108">activity</a> <a href="https://github.com/dret/lectures/blob/master/locweb-2017/src/goose.gpx">GPX</a></li>
+					<li><a href="http://github.com/">Github</a> understands and renders the resulting <a href="https://github.com/dret/lectures/blob/master/locweb-2017/src/goose.geojson">GeoJSON</a></li>
+				</ul>
+				<listing src="goose.geojson" line="1-15"/>
+			</slide>
+			<slide id="geojson-executive">
+				<title>Representing Geometries or Features</title>
+				<ul>
+					<li>GeoJSON has object types for single and multiple geometries and features</li>
+					<ul>
+						<li><a href="http://tools.ietf.org/html/rfc7946#section-3.1">Geometry</a> represents 6 geometry types (see below) and one collection</li>
+						<li><code href="http://tools.ietf.org/html/rfc7946#section-3.2">Feature</code> represents single or multiple <q>spatially bound things</q></li>
+					</ul>
+					<li>GeoJSON's fundamental geometry construct is the <a href="https://tools.ietf.org/html/rfc7946#section-3.1.1">position</a></li>
+					<ul>
+						<li><code href="https://tools.ietf.org/html/rfc7946#section-3.1.2">Point</code> has one position</li>
+						<li><code href="https://tools.ietf.org/html/rfc7946#section-3.1.4">LineString</code>/<code href="https://tools.ietf.org/html/rfc7946#section-3.1.3">MultiPoint</code> have an array of positions</li>
+						<li><code href="https://tools.ietf.org/html/rfc7946#section-3.1.6">Polygon</code>/<code href="https://tools.ietf.org/html/rfc7946#section-3.1.5">MultiLineString</code> have an array of arrays of positions</li>
+						<li><code href="https://tools.ietf.org/html/rfc7946#section-3.1.7">MultiPolygon</code> has an array of Polygons</li>
+					</ul>
+					<li>Features have <code>properties</code> and an associated <code>geometry</code></li>
+					<li><code>Feature</code> and Geometry also come as <code href="https://tools.ietf.org/html/rfc7946#section-3.3">FeatureCollection</code>/<code href="https://tools.ietf.org/html/rfc7946#section-3.1.8">GeometryCollection</code></li>
+					<li>GeoJSON is not meant to represent the full complexity/fidelity of GIS models</li>
+				</ul>
+			</slide>
+			<slide id="geojson-use">
+				<title>Using GeoJSON</title>
+				<ul>
+					<li>Meant as a simple and lightweight representation</li>
+					<ul>
+						<li>Use it in services/APIs where geometries/features need to be represented in a simple way</li>
+						<li>Do not expect full fidelity of possibly complex underlying models</li>
+					</ul>
+					<li>Not meant as a synchronization format for full-fidelity GIS access/interchange</li>
+					<ul>
+						<li>Trying to <q>GISify</q> GeoJSON very likely makes it non-interoperable</li>
+					</ul>
+					<li>Geo-tools such as <a href="http://leafletjs.com/">Leaflet</a> often <a href="http://leafletjs.com/examples/geojson.html">support GeoJSON out of the box</a></li>
+				</ul>
+			</slide>
+		</part>
+		<part id="ietf-wg">
+			<title>IETF GeoJSON Working Group</title>
+			<slide id="geojson-problems">
+				<title>GeoJSON Problems</title>
+				<ul>
+					<li>Despite being popular, the <a href="http://geojson.org/geojson-spec.html">GeoJSON specification</a> was not created/managed by any SDO</li>
+					<ul>
+						<li>Lingering doubts about the stability/stewardship of the specification</li>
+						<li>Some policies require that only SDO-published specifications can be used</li>
+					</ul>
+					<li>Usage around <a href="http://geojson.org/geojson-spec.html#coordinate-reference-system-objects" title="Coordinate Reference System">CRS</a> had caused some interoperability problems</li>
+					<ul>
+						<li>Default rule (WGS84) plus inheritance meant implementations often did not implement the specification</li>
+						<li>Naming of specific CRS was left open, resulting in namespace fragmentation</li>
+					</ul>
+					<li>Extensibility and openness were not specified clearly enough</li>
+					<ul>
+						<li>Lack of guidance made it too easy for implementers to do the wrong thing</li>
+						<li>Experience showed which areas were the most problematic ones</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="geojson-wg">
+				<title>IETF GeoJSON WG</title>
+				<ul>
+					<li>The <a href="https://datatracker.ietf.org/wg/geojson/">IETF GeoJSON Working Group</a> started work in October 2015</li>
+					<ul>
+						<li>The main item on the charter was to revise and publish GeoJSON as an RFC</li>
+						<li>An additional item is to publish a specification for <q>GeoJSON Text Sequences</q></li>
+						<li>Additional work items are currently under consideration</li>
+					</ul>
+					<li>IETF working groups are open to all interested participants</li>
+					<li>IETF RFCs are often accepted as standards that are stable and safe to use</li>
+				</ul>
+			</slide>
+			<slide id="geojson-wg-work">
+				<title>IETF GeoJSON WG Work</title>
+				<ul>
+					<li>Adopted a draft starting from the <a href="http://geojson.org/geojson-spec.html">GeoJSON Specification</a></li>
+					<ul>
+						<li>List of changes available in <a href="https://tools.ietf.org/html/rfc7946#appendix-B"><code>Appendix B</code></a></li>
+					</ul>
+					<li>Started draft about <a href="http://datatracker.ietf.org/drafts/draft-ietf-geojson-text-sequence">GeoJSON Text Sequences</a></li>
+					<ul>
+						<li>Applies <a href="http://tools.ietf.org/html/rfc7464"><q>JSON Text Sequences</q> (RFC 7464)</a> to GeoJSON</li>
+						<li>How to represent sequences of GeoJSON objects in one streamable representation</li>
+						<li>Useful in scenarios where sequences/streams of GeoJSON objects are exchanged</li>
+					</ul>
+					<li>Two more work items currently considered</li>
+					<ul>
+						<li>Providing guidance and a registry for GeoJSON extensions</li>
+						<li>Adding time information to GeoJSON as an initial extension</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="geojson-changes">
+				<title>GeoJSON Changes</title>
+				<ul>
+					<li>Discouraging the use of non-WGS84 CRS</li>
+					<li>Clarifying the extensibility of position arrays</li>
+					<li>Clarifying lines as being Cartesian (instead of being geodesic)</li>
+					<li>Clarifying the definition of a bounding box</li>
+					<li>Making it clear that extensions cannot change the base semantics</li>
+					<li>Defining a new media type <code>application/geo+json</code></li>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
