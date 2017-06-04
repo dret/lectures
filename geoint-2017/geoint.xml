@@ -398,6 +398,18 @@
 				<title>Geospatial API Issues</title>
 				<slide id="geo-api-audience">
 					<title>API Complexity</title>
+					<ul>
+						<li>Geospatial models tend to have intrinsic complexity</li>
+						<ul>
+							<li>Well-known in the geospatial community</li>
+							<li>Not as well-known outside of that particular community</li>
+						</ul>
+						<li>Geospatial information sharing can have simple scenarios</li>
+						<ul>
+							<li>Extracting information based on simple query models</li>
+							<li>Submitting information based on simple insertion models</li>
+						</ul>
+					</ul>
 				</slide>
 				<slide id="geo-api-audience">
 					<title>API Audience</title>
