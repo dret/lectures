@@ -1313,6 +1313,19 @@
 			<title>Resource Description Framework (RDF)</title>
 			<slide id="rdf-roots">
 				<title>Describing Resources</title>
+				<ul>
+					<li>RDF started as a generalization of <span title="Platform for Internet Content Selection">PICS</span></li>
+					<ul>
+						<li>A way to simple make statements about URI-identified resources</li>
+						<li>Statements are using <em>(Subject, Predicate, Object)</em> triples</li>
+					</ul>
+					<li>Statements can be aggregated and result in a graph-oriented data model</li>
+					<ul>
+						<li>Subject: ...</li>
+						<li>Predicate: ...</li>
+						<li>Object: ...</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="more-representation">
