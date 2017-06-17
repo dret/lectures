@@ -1431,6 +1431,23 @@
 					<li><q>Language families</q> make it easier to learn and use new APIs</li>
 				</ul>
 			</slide>
+			<slide id="api-conversation">
+				<title>APIs are Conversations</title>
+				<ul>
+					<li>APIs support conversations between interacting peers</li>
+					<ul>
+						<li>Some conversations are point-to-point (how to find the peer?)</li>
+						<li>Some conversations are point-to-multipoint (how are groups managed?)</li>
+						<li>Some conversations are point-to-ether (what does the ether do?)</li>
+					</ul>
+					<li>API technology does not determine the API conversation style</li>
+					<ul>
+						<li>HTTP can be used for asynchronous conversations (<q href="http://www.webhooks.org/">WebHook</q> pattern)</li>
+						<li>Synchronous conversations and be layered on top of asynchronous foundations</li>
+					</ul>
+					<li>Conversation goals should determine the conversation style</li>
+				</ul>
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="versioning">
