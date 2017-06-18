@@ -1323,6 +1323,20 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="json-structure">
+				<title>JSON Structure</title>
+				<ul>
+					<li>JSON has a small set of data types</li>
+					<ul>
+						<li><code>object</code>s are a set of name/value pairs called <em>members</em></li>
+						<li><code>array</code>s are a sequence of potentially heterogeneous values</li>
+						<li><code>number</code>s use regular decimal notation with an optional exponent</li>
+						<li><code>string</code>s are quoted with escape for special characters and Unicode</li>
+						<li><code>boolean</code>s use the two values <code>true</code> and <code>false</code></li>
+					</ul>
+					<li>Objects and arrays can be nested as deeply as required</li>
+				</ul>
+			</slide>
 			<slide id="ijson">
 				<title>JSON and I-JSON</title>
 				<ul>
