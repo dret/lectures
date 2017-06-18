@@ -1307,6 +1307,23 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="ijson">
+				<title>JSON and I-JSON</title>
+				<ul>
+					<li>Plain JSON is defined by <a href="http://tools.ietf.org/html/rfc7159">RFC 7159</a></li>
+					<li>I-JSON constrains JSON and is defined by <a href="http://tools.ietf.org/html/rfc7493">RFC 7493</a></li>
+					<li>I-JSON defines some common-sense conventions around JSON</li>
+					<ul>
+						<li>The only allowed character encoding is UTF-8</li>
+						<li>No numbers exceeding the limits of IEEE 754 double precision</li>
+						<li>No members with duplicate names in objects</li>
+						<li>Try to avoid top-level constructs other than array/object</li>
+						<li>For time/date values use ISO 8601 with timezone and trailing seconds</li>
+						<li>Binary data should be encoded using <code href="http://tools.ietf.org/html/rfc4648#section-5">base64url</code></li>
+					</ul>
+					<li>Most developers instinctively avoid features disallowed by I-JSON</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="rdf">
 			<title>Resource Description Framework (RDF)</title>
