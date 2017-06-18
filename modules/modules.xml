@@ -1307,6 +1307,22 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="json-basics">
+				<title>JSON Basics</title>
+				<ul>
+					<li>JSON is the <q>data structure part</q> of JavaScript</li>
+					<ul>
+						<li>Perfect match for client code consuming JSON data</li>
+						<li>Very good match for many other languages with structured data types</li>
+					</ul>
+					<li>JSON is good for <em>data-on-the-wire</em> and not so much for complex models</li>
+					<li>JSON has found its way into many typical IT components</li>
+					<ul>
+						<li>Some databases use JSON as their native data model (<a href="https://www.mongodb.com/">MongoDB</a>)</li>
+						<li>Many databases have added JSON to their data type support</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="ijson">
 				<title>JSON and I-JSON</title>
 				<ul>
