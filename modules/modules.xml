@@ -1078,6 +1078,221 @@
 				<title><a href="http://www.w3.org/">World Wide Web Consortium (W3C)</a></title>
 			</slide>
 		</part>
+		<part id="HTTP">
+			<title short="HTTP">Hypertext Transfer Protocol (HTTP)</title>
+			<slide>
+				<title>DNS &amp; HTTP</title>
+				<p>The two basic protocols which every Web browser must implement are <em>DNS</em> access and <em>HTTP</em>. However, most operating systems provide an API for DNS access, so the browser can use this service locally and only has to implement HTTP. <em>TCP</em> support (which is required as the foundation for HTTP) is usually provided by the operating system.</p>
+				<img style="width : 90% ; margin : 2% ; " src="browser-dns-http.png"/>
+			</slide>
+			<slide>
+				<title>HTTP Messages</title>
+				<ul>
+					<li>HTTP needs a reliable connection</li>
+					<ul>
+						<li>The foundation for HTTP is <em>TCP</em></li>
+						<li>DNS resolution yields an IP address</li>
+						<li>Open TCP connection to port 80 or port specified in URI (<code>http://rosetta.sims.berkeley.edu:8085/</code>)</li>
+					</ul>
+					<li>HTTP is a <em>text-based</em> protocol</li>
+					<ul>
+						<li>The connection is used to transmit <em>text messages</em></li>
+						<li>All HTTP messages are human-readable (not all <em>entities</em>, though)</li>
+						<li>Basic HTTP operations can be carried out by hand (e.g., per <code>telnet</code>)</li>
+					</ul>
+				</ul>
+				<pre>start-line
+message-header *
+
+message-body ?</pre>
+			</slide>
+			<slide id="http-headers">
+				<title>HTTP Header Fields</title>
+				<ul>
+					<li>Header fields contain information about the message</li>
+					<ul>
+						<li><em>General header:</em> <code>Date</code> as the message origination date</li>
+						<li><em>Request header:</em> <code>Accept-Language</code> indicates language preferences</li>
+						<li><em>Response header:</em> <code>Server</code> contains system information</li>
+						<li><em>Entity header:</em> <code>Content-Type</code> specifies the media type of the entity</li>
+					</ul>
+					<li>HTTP (and others) define <a href="https://github.com/dret/sedola/blob/master/MD/headers.md">a number of header fields</a></li>
+					<ul>
+						<li>Unknown fields must be ignored (extensibility)</li>
+					</ul>
+					<li>HTTP is about acting on these fields</li>
+					<ul>
+						<li>HTTP defines what HTTP implementations must or should do</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="http-request">
+				<title>HTTP Requests</title>
+				<ul>
+					<li>After opening a connection, the client sends a request</li>
+					<ul>
+						<li>The method indicates the action to be performed on the resource</li>
+						<li>HTTP's most interesting methods are: <code>GET</code>, <code>POST</code>, <code>PUT</code>, and <code>DELETE</code></li>
+					</ul>
+					<li>The URI identifies the resource to which the request should be applied</li>
+					<ul>
+						<li>Absolute URIs are required when contacting <em>proxies</em></li>
+						<li>Absolute paths are required when contacting a server directly</li>
+						<li>The URI may contain <em>query information</em></li>
+					</ul>
+					<li>The <code>Host</code> header field must be included in every HTTP/1.1 request</li>
+				</ul>
+				<pre>Method Request-URI HTTP/Major.Minor
+[Header]*
+
+[Entity]?</pre>
+			</slide>
+			<slide id="http-get">
+				<title>HTTP GET</title>
+				<ul>
+					<li>Retrieval action based on the URI</li>
+					<ul>
+						<li>Maybe implemented by reading a file</li>
+						<li>Maybe implemented by processing a file (PHP)</li>
+						<li>Maybe implemented by running code</li>
+					</ul>
+					<li>Semantics may change based on header fields</li>
+					<ul>
+						<li><code>If-*:</code> only reply with the entity if necessary</li>
+						<li><code>Range:</code> only reply with the requested part of the entity</li>
+					</ul>
+					<li>Cacheability depends on header fields of the response</li>
+				</ul>
+				<pre>GET / HTTP/1.1
+Host: ischool.berkeley.edu</pre>
+			</slide>
+			<slide id="http-response">
+				<title>HTTP Responses</title>
+				<ul>
+					<li>The server's response to acting on a request</li>
+					<ul>
+						<li>the status code is given numerically and as text</li>
+						<li><code>2**</code> for variations of <q>ok</q></li>
+						<li><code>3**</code> for redirections</li>
+						<li><code>4**</code> are different client side problems (<code>404</code>: not found)</li>
+						<li><code>5**</code> are different server side problems</li>
+					</ul>
+					<li>Header fields specify additional information</li>
+					<ul>
+						<li>Information about the server</li>
+						<li>Information about the entity (media type, encoding, language)</li>
+					</ul>
+				</ul>
+				<pre>HTTP/Major.Minor Status-Code Text
+[Header]*
+
+[Entity]?</pre>
+			</slide>
+			<slide id="http-performance">
+				<title>HTTP Performance</title>
+				<ul>
+					<li>HTTP/1.0 allowed one transaction per connection</li>
+					<ul>
+						<li>TCP connection setup and teardown are expensive</li>
+						<li>TCP's <em>slow start</em> slows down the initial phase of data transfer</li>
+						<li>Typical Web pages use between 10-20 resources (HTML + images + CSS + scripts)</li>
+						<li>Typically, these resources are stored on the same server</li>
+					</ul>
+					<li>HTTP/1.1 introduces <em>persistent connections</em></li>
+					<ul>
+						<li>The TCP connection stays open for some time (10 sec is a popular choice)</li>
+						<li>Additional requests to the same server use the same TCP connection</li>
+					</ul>
+					<li>HTTP/1.1 introduces <em>pipelined connections</em></li>
+					<ul>
+						<li>Instead of waiting for a response, requests can be queued</li>
+						<li>The server responds as fast as possible</li>
+						<li>The order may not be changed (there is no sequence number)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>HTTP Connection Handling</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="http-phttp-pipelining.png"/>
+			</slide>
+			<slide>
+				<title>HTTP Access Control</title>
+				<ul>
+					<li>HTTP servers can <a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error">deny access</a> because of access control</li>
+					<ul>
+						<li><code>401 Unauthorized</code> means the resource is access controlled</li>
+						<li><code>403 Forbidden</code> means the resource is inaccessible</li>
+						<li><code>405 Method Not Allowed</code> signals a request using the wrong <link href="http-request">request method</link></li>
+					</ul>
+					<li>Two different approaches to unauthorized access are possible</li>
+					<ul>
+						<li>Repeat the HTTP request with the proper authentication credentials</li>
+						<li>Redirect to a <q>authentication resource</q> for authentication</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>HTTP Authentication</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="http-authentication.gif" title="HTTP Authentication" href="http://java.sun.com/j2ee/1.4/docs/tutorial/doc/Security5.html"/>
+			</slide>
+			<slide id="http-basic">
+				<title>Basic HTTP Authentication</title>
+				<ul>
+					<li>Authentication is based on <em>authentication realms</em></li>
+					<ul>
+						<li>A set of resources for which the authentication is required</li>
+						<li>An opaque name which is used to signal which login is required</li>
+						<li>Username/password often is specific for a given realm</li>
+					</ul>
+					<li>Users supply username and password through the client</li>
+					<ul>
+						<li>Sent as <a href="http://en.wikipedia.org/wiki/Base64">Base64</a> encoded <q><code>username:password</code></q> string</li>
+						<li>Username and password are <a href="http://www.google.com/search?hl=en&amp;q=base64+decoder"><em>not</em> transmitted securely</a></li>
+						<li>Basic authentication should <em>always</em> use HTTPS</li>
+					</ul>
+					<li>Authorization is handled on the server side</li>
+					<pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">HTTP/1.0 401 Unauthorized
+WWW-Authenticate: Basic realm="SokEvo"</pre>
+					<pre href="http://en.wikipedia.org/wiki/Basic_access_authentication">GET /private/index.html HTTP/1.0
+Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
+				</ul>
+			</slide>
+			<slide>
+				<title>Repeated Access</title>
+				<ul>
+					<li>Clients typically access more than one protected resource</li>
+					<ul>
+						<li>A perfectly stateless client would always request authentication from the user</li>
+						<li>Using the <em>realm</em> clients can identify repeated accesses to sets of resources</li>
+					</ul>
+					<li>Web interactions by default are perfectly stateless</li>
+					<ul>
+						<li>Each request is completely independent from other requests</li>
+						<li>Stateless interactions make the Web loosely coupled and scalable</li>
+						<li>Concepts like the <em>realm</em> or cookies introduce <q>state</q></li>
+					</ul>
+					<li>Clients remember the authentication and replay it automatically</li>
+					<ul>
+						<li>Browsers provide little control over this feature</li>
+						<li><q>Logging out</q> of HTTP authenticated sessions is hard</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="login-page">
+				<title>Login Page</title>
+				<ul>
+					<li><link href="http-basic"/> works with browser controls (including the login window)</li>
+					<ul>
+						<li>No possibility to <q>log out</q> without using browser-specific controls</li>
+						<li>Client side security depends on browser security measures</li>
+					</ul>
+					<li>Using forms gives more freedom in session management</li>
+					<ul>
+						<li>Authentication and authorization are completely application-based</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="registries">
 		<title>Registries</title>
