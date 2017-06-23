@@ -771,6 +771,21 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="protocol-conclusions">
+				<title>The Web is more than HTTP</title>
+				<ul>
+					<li>The Web works because of REST</li>
+					<li>HTTP's uniform interface is one of the constraints of REST</li>
+					<li>Webbyness needs all REST constraints to be satisfied</li>
+					<ol>
+						<li><link href="identification-constraint"/> (URI)</li>
+						<li><link href="interface-constraint"/> (HTTP)</li>
+						<li><link href="self-describing-constraint"/> (Media Types)</li>
+						<li><link href="hypermedia-constraint"/></li>
+						<li><link href="stateless-constraint"/></li>
+					</ol>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
