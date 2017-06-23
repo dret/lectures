@@ -515,22 +515,8 @@
 		</part>
 		<part id="what">
 			<title>Digital Transformation: What?</title>
-			<slide id="characteristics">
-				<title><a href="http://martinfowler.com/articles/microservices.html">API/MSA Characteristics</a></title>
-				<ol>
-					<li>Componentization via services</li>
-					<li>Organized around business capabilities</li>
-					<li>Products not projects</li>
-					<li>Smart endpoints and dumb pipes</li>
-					<li>Decentralized governance</li>
-					<li>Decentralized data management</li>
-					<li>Infrastructure automation</li>
-					<li>Design for failure</li>
-					<li>Evolutionary design</li>
-				</ol>
-			</slide>
-			<slide id="ms-dividends">
-				<title><a href="http://queue.acm.org/detail.cfm?id=2956643">API/MSA Dividends</a></title>
+			<slide id="digitalization-dividends">
+				<title><a href="http://queue.acm.org/detail.cfm?id=2956643">Digitalization Dividends</a></title>
 				<ol>
 					<li>Permissionless Innovation</li>
 					<li>Enable Failure</li>
@@ -588,6 +574,20 @@
 		</part>
 		<part id="how">
 			<title>Digital Transformation: How?</title>
+			<slide id="digital-transformation-path">
+				<title><a href="http://martinfowler.com/articles/microservices.html">The Path to Digital Transformation</a></title>
+				<ol>
+					<li>Componentization via services</li>
+					<li>Organized around business capabilities</li>
+					<li>Products not projects</li>
+					<li>Smart endpoints and dumb pipes</li>
+					<li>Decentralized governance</li>
+					<li>Decentralized data management</li>
+					<li>Infrastructure automation</li>
+					<li>Design for failure</li>
+					<li>Evolutionary design</li>
+				</ol>
+			</slide>
 			<slide id="who">
 				<title>Microservices for the Masses?</title>
 				<ul>
