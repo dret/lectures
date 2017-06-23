@@ -829,8 +829,19 @@
 			<slide id="microservices-scalability">
 				<title>Bottom-Up: Service Scalability</title>
 				<ul>
-					<li>CI/CD Automation</li>
-					<li>...</li>
+					<li>Build modularized components that can be scaled individually</li>
+					<ul>
+						<li><em>Monitoring</em> allows insights into system status and load</li>
+						<li><em>Rapid Provisioning</em> allows to react quickly when new capacity is required</li>
+						<li><em>Rapid Deployment</em> means simple ways to develop/test/start/scale services</li>
+					</ul>
+					<li></li>
+					<li>Microservice implementations are more flexible than integrated approaches</li>
+					<ul>
+						<li>Scaling can be done per service instead of scaling bigger deployment units</li>
+						<li>Code can be retired more easily by removing services from deployment</li>
+						<li>Fewer unintended side-effects since all interactions are through APIs</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="microservices-digital-transformation">
