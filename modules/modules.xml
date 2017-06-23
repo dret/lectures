@@ -1789,6 +1789,23 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide id="extension-points">
 				<title>Well-Defined Extension Points</title>
+				<ul>
+					<li>APIs should be clear about where extensions are allowed</li>
+					<ul>
+						<li>API metamodels often decide where (potential) extension points are</li>
+						<li>API schemas/definitions should further narrow down where extensions are allowed</li>
+					</ul>
+					<li>API tests can make sure that the extension points are properly implemented</li>
+					<ul>
+						<li>Extensions in allowed places are ignored and tests should succeed</li>
+						<li>Extensions in other places should raise errors about malformed content</li>
+					</ul>
+					<li>Extension points are interesting to support in generic software</li>
+					<ul>
+						<li>Monitoring can report which and where extensions are being used</li>
+						<li>Libraries can make it easy to create/parse extension data</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="processing-model">
 				<title>Well-Defined Processing Model</title>
