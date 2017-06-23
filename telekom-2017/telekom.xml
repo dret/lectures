@@ -400,6 +400,153 @@
 	</presentation>
 	<presentation id="protocols">
 		<title>Protocols</title>
+		<toc class="resources"><a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://www.ietf.org/" title="Internet Engineering Task Force">IETF</a></toc>
+		<part id="rest-definition">
+			<title short="REST">Representational State Transfer (REST)</title>
+			<slide>
+				<title>Architectural Styles</title>
+				<ul>
+					<li>Architectural Style vs. Architecture</li>
+					<ul>
+						<li>Architectural Style: General principles informing the creation of an architecture</li>
+						<li>Architecture: Designing a solution to a problem according to given constraints</li>
+						<li>Architectural styles <em>inform</em> and <em>guide</em> the creation of architectures</li>
+					</ul>
+				</ul>
+				<table width="95%">
+					<tr>
+						<td>
+							<img style="width : 90% ; margin : 2% ; " src="louvre.jpg" title="Louvre Interior"/>
+							<ul>
+								<li>Architecture: <a href="http://en.wikipedia.org/wiki/Louvre">Louvre</a></li>
+								<li>Architectural Style: <a href="http://en.wikipedia.org/wiki/Baroque_architecture">Baroque</a></li>
+							</ul>
+						</td>
+						<td>
+							<img style="width : 90% ; margin : 2% ; " src="savoye.jpg" title="Villa Savoye Interior"/>
+							<ul>
+								<li>Architecture: <a href="http://en.wikipedia.org/wiki/Villa_Savoye">Villa Savoye</a></li>
+								<li>Architectural Style: <a href="http://en.wikipedia.org/wiki/International_Style_(architecture)">International Style</a></li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</slide>
+			<slide>
+				<title>The REST Architectural Style</title>
+				<ul>
+					<li>A set of constraints that inform an architecture</li>
+				</ul>
+				<ol>
+					<li><link href="identification-constraint"/></li>
+					<li><link href="interface-constraint"/></li>
+					<li><link href="self-describing-constraint"/></li>
+					<li><link href="hypermedia-constraint"/></li>
+					<li><link href="stateless-constraint"/></li>
+				</ol>
+				<ul>
+					<li>Claims: scalability, mashup-ability, usability, accessibility</li>
+				</ul>
+			</slide>
+			<slide id="identification-constraint">
+				<title>Resource Identification</title>
+				<ul>
+					<li>Name everything that you want to talk about</li>
+					<li><q>Thing</q> in this case should refer to <em>anything</em></li>
+					<ul>
+						<li><em>Products</em> in an online shop</li>
+						<li><em>Categories</em> that are used for grouping products</li>
+						<li><em>Customers</em> that are expected to buy products</li>
+						<li><em>Shopping carts</em> where customers collect products</li>
+					</ul>
+					<li><em>Client state transitions</em> also are represented as resources</li>
+					<ul>
+						<li>Performing a <q>next step</q> is also something you want to talk about</li>
+						<li><em>Next</em> links on multi-page submission processes</li>
+						<li><em>Paged results</em> with URIs identifying following pages</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="interface-constraint">
+				<title>Uniform Interface</title>
+				<ul>
+					<li>The same small set of operations applies to <link href="identification-constraint">everything</link></li>
+					<li>A small set of <em>verbs</em> applied to a large set of <em>nouns</em></li>
+					<li>Verbs are universal and not invented on a per-application base</li>
+					<li>If many applications need new verbs, the uniform interface can be extended</li>
+					<li>Natural language works in the same way (new verbs rarely enter language)</li>
+					<li>Identify operations that are candidates for optimization</li>
+					<ul>
+						<li><http>GET</http> and <http>HEAD</http> are <em>safe operations</em></li>
+						<li><http>PUT</http> and <http>DELETE</http> are <em>idempotent operations</em></li>
+						<li><http>POST</http> is the catch-all and can have side-effects</li>
+					</ul>
+					<li>Build functionality based on useful properties of these operations</li>
+				</ul>
+			</slide>
+			<slide id="self-describing-constraint">
+				<title>Self-Describing Messages</title>
+				<ul>
+					<li>Resources are abstract entities (they cannot be used <em>per se</em>)</li>
+					<ul>
+						<li><link href="identification-constraint"/> guarantees that they are clearly identified</li>
+						<li>They are accessed through a <link href="interface-constraint"/></li>
+					</ul>
+					<li>Resources are accessed using <em>resource representations</em></li>
+					<ul>
+						<li>Resource representations are sufficient to represent a resource</li>
+						<li>It is communicated which kind of representation is used</li>
+						<li>Representation formats can be negotiated between peers</li>
+					</ul>
+					<li>Resource representations can be based on different constraints</li>
+					<ul>
+						<li>XML and JSON can represent the same model for different users</li>
+						<li>Whatever the representation is, it must <link href="hypermedia-constraint">support links</link></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="hypermedia-constraint">
+				<title>Hypermedia Driving Application State</title>
+				<ul>
+					<li><link href="self-describing-constraint">Resource representations</link> contain links to <link href="identification-constraint">identified resources</link></li>
+					<li>Resources and state can be used by navigating links</li>
+					<ul>
+						<li>Links make interconnected resources navigable</li>
+						<li>Without navigation, identifying new resources is service-specific</li>
+					</ul>
+					<li>RESTful applications <em>navigate</em> instead of <em>calling</em></li>
+					<ul>
+						<li><link href="self-describing-constraint">Representations</link> contain information about possible traversals</li>
+						<li>The application navigates to the next resource depending on link semantics</li>
+						<li>Navigation can be delegated since all links use <link href="identification-constraint">identifiers</link></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="stateless-constraint">
+				<title>Stateless Interactions</title>
+				<ul>
+					<li>This constraint does not say <q>Stateless Applications</q>!</li>
+					<ul>
+						<li>For many RESTful applications, state is an essential part</li>
+						<li>The idea of REST is to avoid long-lasting transactions <em>in applications</em></li>
+					</ul>
+					<li>Stateless interactions mean to move state to clients or resources</li>
+					<ul>
+						<li>The most important consequence: avoid state in server-side applications</li>
+					</ul>
+					<li><em>Resource state</em> is managed on the server</li>
+					<ul>
+						<li>It is the same for every client working with the service</li>
+						<li>When a client changes resource state other clients see this change as well</li>
+					</ul>
+					<li><em>Client state</em> is managed on the client</li>
+					<ul>
+						<li>It is specific for a client and thus has to be maintained by each client</li>
+						<li>It may affect <em>access</em> to server resources, but not the resources themselves</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
