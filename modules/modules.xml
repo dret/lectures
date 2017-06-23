@@ -1783,7 +1783,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					</ul>
 					<li>Anything that is not part of the core can be safely ignored</li>
 					<ul>
-						<li><code>mustIgnore</code> semantics allow safe interactions across closely coordinated groups</li>
+						<li><code>mustIgnore</code> semantics allow safe interactions beyond closely coordinated groups</li>
 					</ul>
 				</ul>
 			</slide>
