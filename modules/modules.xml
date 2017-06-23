@@ -1772,6 +1772,20 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>Robust Extensibility</title>
 			<slide id="core-semantics">
 				<title>Meaningful Core Semantics</title>
+				<ul>
+					<li>The core of the API allows clients to have meaningful interactions</li>
+					<ul>
+						<li>The starting point of an API should be meaningful and complete</li>
+					</ul>
+					<li>The core of the API is robust over time</li>
+					<ul>
+						<li>Anything that is added to the core does not change the core semantics</li>
+					</ul>
+					<li>Anything that is not part of the core can be safely ignored</li>
+					<ul>
+						<li><code>mustIgnore</code> semantics allow safe interactions across closely coordinated groups</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="extension-points">
 				<title>Well-Defined Extension Points</title>
