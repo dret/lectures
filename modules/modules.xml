@@ -1768,6 +1768,18 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<img title='Roy Fielding (@fielding): &apos;The reason to make a real REST API is to get evolvability … a &quot;v1&quot; is a middle finger to your API customers, indicating RPC/HTTP (not REST)&apos;' href="https://twitter.com/fielding/status/376835835670167552" src="versioning-tweet-fielding.png" class="fullsize"/>
 			</slide>
 		</part>
+		<part id="robust-extensibility">
+			<title>Robust Extensibility</title>
+			<slide id="core-semantics">
+				<title>Meaningful Core Semantics</title>
+			</slide>
+			<slide id="extension-points">
+				<title>Well-Defined Extension Points</title>
+			</slide>
+			<slide id="processing-model">
+				<title>Well-Defined Processing Model</title>
+			</slide>
+		</part>
 		<part id="versioning-strategies">
 			<title>Versioning Strategies</title>
 			<slide id="semantic-versioning">
