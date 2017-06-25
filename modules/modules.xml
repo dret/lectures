@@ -1457,6 +1457,19 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide id="validatioh">
 				<title>Validation</title>
+				<ul>
+					<li>Validation helps to enforce the proper use of the language</li>
+					<ul>
+						<li>Vocabularies define the <q>sentences of the API conversation</q></li>
+						<li>Good vocabularies define where the language can be extended</li>
+						<li>Good vocabularies define what to do when encountering extensions</li>
+					</ul>
+					<li>Validation only covers the individual representation exchanges</li>
+					<ul>
+						<li>Most API have constraints which go beyond representation validation</li>
+						<li>Validating conversation patterns is beyond representation validation</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="xml">
