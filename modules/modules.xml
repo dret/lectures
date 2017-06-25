@@ -1411,14 +1411,16 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<ul>
 					<li>APIs are languages that allow providers and consumers to communicate</li>
 					<ul>
-						<li>API design is about identifying and representing resources</li>
-						<li>API interactions are about exchanging resource representations</li>
+						<li>API design is about supporting <em>conversations</em> between peers</li>
+						<li><em>Conversations</em> revolve around resource <em>interactions</em></li>
+						<li><em>Interactions</em> are about exchanging resource representations</li>
 					</ul>
 					<li>Resources are anything that the API language should talk about</li>
 					<ul>
 						<li>Resources can be real-world concepts such as <em>products</em></li>
 						<li>Resources can be immaterial concepts such as <em>product descriptions</em></li>
 						<li>Resources can be ephemeral concepts such as <em>product orders</em></li>
+						<li>Resources can be temporary concepts such as <em>current orders for a product</em></li>
 					</ul>
 				</ul>
 			</slide>
