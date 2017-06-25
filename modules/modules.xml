@@ -1945,6 +1945,21 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>Versioning Strategies</title>
 			<slide id="semantic-versioning">
 				<title><a href="http://semver.org/">Semantic Versioning</a></title>
+				<ul>
+					<li><a href="http://semver.org/">Semantic Versioning</a> standardizes the meaning of version numbers</li>
+					<li>Version numbers follow the <code>MAJOR.MINOR.PATCH</code> pattern and the following rules</li>
+					<ul>
+						<li>increase <code>MAJOR</code> version for incompatible API changes</li>
+						<li>increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
+						<li>increase <code>PATCH</code> version for making backwards-compatible bug fixes</li>
+						</li>
+					</ul>
+					<li>Mostly about how to name implementation artifacts and of limited use for APIs</li>
+					<ul>
+						<li>Exposing detailed version/patch information is a potential security risk</li>
+						<li>No behavioral benefit other than allowing clients to raise errors and stop working</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 	</presentation>
