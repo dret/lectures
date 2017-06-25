@@ -1426,6 +1426,20 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide id="digital-representations">
 				<title>Digital Representations</title>
+				<ul>
+					<li>Resources are concepts on the service side</li>
+					<ul>
+						<li>They are essential to the service model</li>
+						<li>Resources are not directly accessible or available</li>
+						<li>Clients only use <em>representations</em> when interacting with services</li>
+					</ul>
+					<li>Separate shallow <em>service surfaces</em> and deep <em>service models</em></li>
+					<ul>
+						<li><em>Service surfaces</em> are minimal sets of representations and interactions</li>
+						<li><em>Service models</em> are domain models for experts and implementers</li>
+					</ul>
+					<li>Separating surfaces and models increases loose coupling</li>
+				</ul>
 			</slide>
 			<slide id="vocabularies">
 				<title>Vocabularies</title>
