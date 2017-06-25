@@ -1448,6 +1448,11 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<ul>
 						<li>They help to understand the scope and breadth of resource representations</li>
 					</ul>
+					<li>Shallow and simple vocabularies are essential for loose coupling</li>
+					<ul>
+						<li>Shallowness avoids unnecessary details and deep model dependencies</li>
+						<li>Simplicity allows clients to more easily understand the <em>API language</em></li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="validatioh">
