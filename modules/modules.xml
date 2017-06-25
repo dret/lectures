@@ -270,7 +270,7 @@
 			<slide id="one-server-many-clients">
 				<title>One Server and Many Clients</title>
 				<ul>
-					<li>Loose coupling between server and client teams necessary</li>
+					<li>Loose coupling between server and client teams helpful</li>
 					<ul>
 						<li>Client teams should be guided how to expect the API to evolve</li>
 					</ul>
@@ -287,6 +287,24 @@
 			</slide>
 			<slide id="one-servers-many-clients">
 				<title>Many Servers and Many Clients</title>
+				<ul>
+					<li>Loose coupling between server and client teams essential</li>
+					<ul>
+						<li>Client teams should be guided how to expect the API to evolve</li>
+						<li>Clients may experience a spectrum of server implementations</li>
+					</ul>
+					<li>Variety in the <em>service landscape</em> needs clients to be robust</li>
+					<ul>
+						<li>Services can implement variations of the original API</li>
+						<li>Balancing consistency and flexibility is the main design challenge</li>
+					</ul>
+					<li>Openness and extensibility are essential components</li>
+					<ul>
+						<li>Openness is necessary so that services can use the API robustly</li>
+						<li>Extensibility is necessary to that the landscape can evolve robustly</li>
+						<li>The landscape is a graph of variations of the basic API</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="messages-models">
