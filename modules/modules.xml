@@ -269,6 +269,21 @@
 			</slide>
 			<slide id="one-server-many-clients">
 				<title>One Server and Many Clients</title>
+				<ul>
+					<li>Loose coupling between server and client teams necessary</li>
+					<ul>
+						<li>Client teams should be guided how to expect the API to evolve</li>
+					</ul>
+					<li>Updates in the <em>existing clients</em> can take a long time</li>
+					<ul>
+						<li>No control over installed client base other than hard API stops</li>
+					</ul>
+					<li>Openness and extensibility are getting more interesting</li>
+					<ul>
+						<li>Openness is necessary so that the API can evolve without breaking clients</li>
+						<li>Extensibility is less of a concern because there is only one server</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="one-servers-many-clients">
 				<title>Many Servers and Many Clients</title>
