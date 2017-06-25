@@ -1943,6 +1943,29 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="versioning-strategies">
 			<title>Versioning Strategies</title>
+			<slide id="version-identification">
+				<title>Identifying Versions</title>
+				<ul>
+					<li>Versioning may be necessary when the extension model is not working anymore</li>
+					<li>Three main ways how to distinguish between versions on the service surface</li>
+					<ul>
+						<li>Make version numbers part of the resource URI: <code>http://example.org/api/v2/</code></li>
+						<li>Use specific HTTP headers: <code>API-Version: 2.0.0</code></li>
+						<li>Use media types: <code>Accept: application/vnd.example.org.v2+json</code></li>
+					</ul>
+					<li>All of these have side-effects which have to be balanced</li>
+					<ul>
+						<li>New URIs change resource identity which may result in data integration problems</li>
+						<li>Custom headers are specific for a service and hard to see/support in the general Web fabric</li>
+						<li>Media types often are not used by APIs or the clients consuming them</li>
+					</ul>
+					<li>Most APIs choose URI-based versioning and introduce new <q>API identity</q></li>
+					<ul>
+						<li>Versioning at this level is little more than <q>keeping the API brand</q></li>
+						<li>Version numbers can be used in URI path or in the domain name</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="semantic-versioning">
 				<title><a href="http://semver.org/">Semantic Versioning</a></title>
 				<ul>
@@ -1952,7 +1975,6 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 						<li>increase <code>MAJOR</code> version for incompatible API changes</li>
 						<li>increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
 						<li>increase <code>PATCH</code> version for making backwards-compatible bug fixes</li>
-						</li>
 					</ul>
 					<li>Mostly about how to name implementation artifacts and of limited use for APIs</li>
 					<ul>
