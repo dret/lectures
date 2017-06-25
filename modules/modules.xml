@@ -861,6 +861,19 @@
 			</slide>
 			<slide id="hypermedia-workflow">
 				<title>Hypermedia and Workflows</title>
+				<ul>
+					<li>Hypermedia combines state representation and possible further interactions</li>
+					<ul>
+						<li>Resource state allows clients to understand the current content</li>
+						<li>Links allow clients to understand the possible next steps</li>
+						<li>Clients select the link based on their application goals</li>
+					</ul>
+					<li>Workflows are represented by providing navigation options (affordances)</li>
+					<ul>
+						<li>Making it easier for clients to be <q>driven by available options</q></li>
+						<li>Seamless fabric of navigation across individual APIs</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="hypermedia-evolution">
 				<title>Hypermedia and API Evolution</title>
