@@ -548,7 +548,7 @@
 	</presentation>
 	<presentation id="protocols">
 		<title>Protocols</title>
-		<toc class="resources"><a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://www.ietf.org/" title="Internet Engineering Task Force">IETF</a></toc>
+		<toc class="resources"><a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://www.ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="https://tools.ietf.org/html/rfc7230" title='RFC 7230, "Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing", June 2014'>HTTP</a>&#160;· <a href="https://www.mnot.net/blog/2017/05/11/status_codes" title='Mark Nottingham, "How to Think About HTTP Status Codes", May 2017'>HTTP Status Codes</a></toc>
 		<part id="rest-definition">
 			<title short="REST">Representational State Transfer (REST)</title>
 			<slide>
