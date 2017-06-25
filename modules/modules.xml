@@ -247,8 +247,17 @@
 				<img title="Where API management is headed in 2017" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
-		<part id="http-api-complexity">
+		<part id="api-complexity">
 			<title>API Complexity</title>
+			<slide id="one-server-one-client">
+				<title>One Server and One Client</title>
+			</slide>
+			<slide id="one-server-many-clients">
+				<title>One Server and Many Clients</title>
+			</slide>
+			<slide id="one-servers-many-clients">
+				<title>Many Servers and Many Clients</title>
+			</slide>
 		</part>
 		<part id="messages-models">
 			<title>Messages vs. Models</title>
