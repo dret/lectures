@@ -877,6 +877,17 @@
 			</slide>
 			<slide id="hypermedia-evolution">
 				<title>Hypermedia and API Evolution</title>
+				<ul>
+					<li>Extensibility generally is a good idea for APIs</li>
+					<ul>
+						<li>Eliminates or reduces the need to do potentially expensive versioning</li>
+					</ul>
+					<li>Hypermedia representations by definition combine data and control elements</li>
+					<ul>
+						<li><em>Data extensibility</em> results in the usual benefits of allowing representations to evolve</li>
+						<li><em>Control extensibility</em> results in the ability to add new workflow paths</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 	</presentation>
