@@ -954,7 +954,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<slide id="digital-shadow">
 				<title>Digital Shadows</title>
 				<ul>
-					<li><em>Digital Transformation</em> mirrors/builds a world in the digital realm</li>
+					<li><em>Digital Transformation</em> mirrors/designs/builds a world in the digital realm</li>
 					<ul>
 						<li>Represent your business (processes) in IT to allow automation</li>
 						<li>Business transformation can be (more) easily executed on the IT side</li>
@@ -972,19 +972,35 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<ul>
 					<li>APIs are languages that allow providers and consumers to communicate</li>
 					<ul>
-						<li>API design is about identifying and representing resources</li>
-						<li>API interactions are about exchanging resource representations</li>
+						<li>API design is about supporting <em>conversations</em> between peers</li>
+						<li><em>Conversations</em> revolve around resource <em>interactions</em></li>
+						<li><em>Interactions</em> are about exchanging resource representations</li>
 					</ul>
 					<li>Resources are anything that the API language should talk about</li>
 					<ul>
 						<li>Resources can be real-world concepts such as <em>products</em></li>
 						<li>Resources can be immaterial concepts such as <em>product descriptions</em></li>
 						<li>Resources can be ephemeral concepts such as <em>product orders</em></li>
+						<li>Resources can be temporary concepts such as <em>current orders for a product</em></li>
 					</ul>
 				</ul>
 			</slide>
 			<slide id="digital-representations">
 				<title>Digital Representations</title>
+				<ul>
+					<li>Resources are concepts on the service side</li>
+					<ul>
+						<li>They are essential to the service model</li>
+						<li>Resources are not directly accessible or available</li>
+						<li>Clients only use <em>representations</em> when interacting with services</li>
+					</ul>
+					<li>Separate shallow <em>service surfaces</em> and deep <em>service models</em></li>
+					<ul>
+						<li><em>Service surfaces</em> are minimal sets of representations and interactions</li>
+						<li><em>Service models</em> are domain models for experts and implementers</li>
+					</ul>
+					<li>Separating surfaces and models increases loose coupling</li>
+				</ul>
 			</slide>
 			<slide id="vocabularies">
 				<title>Vocabularies</title>
@@ -993,10 +1009,28 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<ul>
 						<li>They help to understand the scope and breadth of resource representations</li>
 					</ul>
+					<li>Shallow and simple vocabularies are essential for loose coupling</li>
+					<ul>
+						<li>Shallowness avoids unnecessary details and deep model dependencies</li>
+						<li>Simplicity allows clients to more easily understand the <em>API language</em></li>
+					</ul>
 				</ul>
 			</slide>
-			<slide id="validatioh">
+			<slide id="validation">
 				<title>Validation</title>
+				<ul>
+					<li>Validation helps to enforce the proper use of the language</li>
+					<ul>
+						<li>Vocabularies define the <q>sentences of the API conversation</q></li>
+						<li>Good vocabularies define where the language can be extended</li>
+						<li>Good vocabularies define what to do when encountering extensions</li>
+					</ul>
+					<li>Validation only covers the individual representation exchanges</li>
+					<ul>
+						<li>Most API have constraints which go beyond representation validation</li>
+						<li>Validating conversation patterns is beyond representation validation</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="xml">
