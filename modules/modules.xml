@@ -892,8 +892,25 @@
 		</part>
 		<part id="hypermedia-design">
 			<title>Hypermedia Design</title>
-			<slide id="typed-links">
-				<title>Typed Links</title>
+			<slide id="representing-links">
+				<title>Representing Links</title>
+				<ul>
+					<li>Hypermedia always is about mixing data and controls in representations</li>
+					<ul>
+						<li>Some scenarios can strictly separate the links and the data</li>
+						<li>Other scenarios need links to be embedded in data to make sense</li>
+					</ul>
+					<li>At the very minimum links need a <em>target URI</em> to identify the link target</li>
+					<ul>
+						<li>Typically links are typed implicitly or explicitly for differentiation</li>
+						<li>Links may also be decorated with <em>hints</em> for additional information</li>
+					</ul>
+					<li>Links representations are the information that clients have to make decisions</li>
+					<ul>
+						<li>Some link hints may help to choose between navigation paths</li>
+						<li>Some link hints may be optimizations that <q>duplicate/mirror</q> HTTP mechanisms</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="typed-links">
 				<title>Typed Links</title>
