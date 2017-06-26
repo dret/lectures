@@ -654,22 +654,6 @@
 					<li>Instrument designs and run-times for data-driven a strategy</li>
 				</ul>
 			</slide>
-			<slide id="measure-everything">
-				<title>Measure Everything</title>
-				<ul>
-					<li>API landscapes get bigger and they get more dynamic</li>
-					<li>Making decisions in this new environment should be data-driven</li>
-					<li>Automate and monitor to gather as much data as possible</li>
-					<ul>
-						<li><em>Design-time instrumentation</em> gathers data on static aspects of service design</li>
-						<li><em>Run-time instrumentation</em> gathers data on dynamic behavior of services</li>
-					</ul>
-					<li>Decouple signals, harvesting/collection, and analysis and decision-making</li>
-					<ul>
-						<li>Treat API landscape instrumentation as one strategic focus</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
@@ -825,6 +809,22 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="measure-everything">
+				<title>Measure Everything</title>
+				<ul>
+					<li>API landscapes get bigger and they get more dynamic</li>
+					<li>Making decisions in this new environment should be data-driven</li>
+					<li>Automate and monitor to gather as much data as possible</li>
+					<ul>
+						<li><em>Design-time instrumentation</em> gathers data on static aspects of service design</li>
+						<li><em>Run-time instrumentation</em> gathers data on dynamic behavior of services</li>
+					</ul>
+					<li>Decouple signals, harvesting/collection, and analysis and decision-making</li>
+					<ul>
+						<li>Treat API landscape instrumentation as one strategic focus</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
