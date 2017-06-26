@@ -1967,6 +1967,27 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id-"uri-style">
 			<title>URI Style</title>
+			<slide id="webby-identifiers">
+				<title>Identifiers for Resources</title>
+				<ul>
+					<li>Makes a major step towards a more webby service design</li>
+					<ul>
+						<li>Resources are identified by URIs and thus globally unique</li>
+						<li>Data context may be established by using URI identifiers for resources</li>
+						<li>Navigational context is missing because of a lack of links</li>
+					</ul>
+					<li>One necessary step in the evolution of designing decentralized systems</li>
+					<ul>
+						<li><em>Web of Data</em> is a good starting point</li>
+						<li><em>Web of Services</em> is what makes the Web what it is</li>
+					</ul>
+					<li>Developers are tempted/required to hardcode control flows</li>
+					<ul>
+						<li>No navigational guidance provided by the API</li>
+						<li>Guidance must be hand-crafted or clients are forced to do trial-and-error</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id-"hypermedia-style">
 			<title>Hypermedia Style</title>
