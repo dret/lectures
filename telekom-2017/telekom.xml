@@ -1368,6 +1368,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 						<li>Some link hints may help to choose between navigation paths</li>
 						<li>Some link hints may be optimizations that <q>duplicate/mirror</q> HTTP mechanisms</li>
 					</ul>
+					<li>Links may also be represented in <a href="http://webconcepts.info/concepts/http-header/Link">the HTTP <code>Link</code> header field</a></li>
 				</ul>
 			</slide>
 			<slide id="json-feed">
