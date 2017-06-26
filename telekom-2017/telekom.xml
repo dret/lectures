@@ -363,42 +363,6 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="msa-journey">
-			<title>How to get there?</title>
-			<slide id="change">
-				<title>Transformation: Changing vs. Changeable</title>
-				<ul>
-					<li><em>Changing</em> implies a one-time activity</li>
-					<li><em>Changeable</em> implies an intrinsic property</li>
-					<blockquote>
-						<p>Don't focus on what to <b>change into</b>;<br/>Focus on <b>embracing change</b> as your mode of existence.</p>
-					</blockquote>
-				</ul>
-			</slide>
-			<slide id="strangler">
-				<title>Strangling the Monolith</title>
-				<img title="Strangler Vine" href="https://commons.wikimedia.org/wiki/File:Strangler_tree.jpg" src="strangler-vine.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="good-strangling">
-				<title>How to Strangle Well</title>
-				<ul>
-					<li>Manage access to old/new capabilities through a router or gateway</li>
-					<ul>
-						<li>Transitioning is a management process old/new should be unaware of</li>
-					</ul>
-					<li>Data sync/update is a separately managed process</li>
-					<ul>
-						<li>Sophistication and cost of sync/update depends on consistency requirements</li>
-						<li>When one of the services disappears sync/update can be removed</li>
-					</ul>
-					<li>Manage/monitor transition of service replacement</li>
-					<ul>
-						<li>At some point in time decommissioning may be the most economical option</li>
-						<li>Until then the <em>strangled monolith</em> is the best case scenario</li>
-					</ul>
-				</ul>
-			</slide>
-		</part>
 		<part id="culture-and-organization">
 			<title>Culture and Organization</title>
 			<slide id="culture">
@@ -472,8 +436,107 @@
 	</presentation>
 	<presentation id="service-scope">
 		<title>API Scope Identification</title>
+		<toc class="resources">...</toc>
+		<part id="how">
+			<title>Microservices: How?</title>
+			<slide id="who">
+				<title>Microservices for the Masses?</title>
+				<ul>
+					<li>Microservices are an investment and not a default choice</li>
+					<ul>
+						<li>The cost is the need for advanced infrastructure and teams</li>
+						<li>The return is increased flexibility and agility</li>
+						<li>Cost/benefit for microservices is targeted at long term capabilities</li>
+					</ul>
+					<li>What are the <a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html">prerequisites for considering microservices?</a></li>
+					<ol>
+						<li><em>Rapid Provisioning:</em> Automated process to quickly create server infrastructure</li>
+						<li><em>Monitoring:</em> Multi-level monitoring from service health to business-level logic</li>
+						<li><em>Rapid Deployment:</em> Automated ways to quickly move from code to running services</li>
+					</ol>
+					<li>Moving to MSA is a transition process and not one <em>Big Bang</em></li>
+					<ul>
+						<li>Just like the Web is never complete/final, neither is a microservices landscape</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="containers">
+				<title>Containerization!</title>
+				<ul>
+					<li><q href="http://www.apiacademy.co/resources/api360-microservices-summit-microservices-blind-spots/">Containerization is the gateway drug for microservices.</q></li>
+					<li>Containers exist because of CI/CD (rapid deployment)</li>
+					<li>Containers allow agility <em>on the development and deployment level</em></li>
+					<li>MSA allows agility <em>on the service ecosystem level</em></li>
+					<li>MSA without (some form of) containerization is hard to imagine</li>
+				</ul>
+			</slide>
+			<slide id="ms-size">
+				<title>How Micro?</title>
+				<ul>
+					<li>There is no hard limit on the size of a Microservice</li>
+					<li>Domain limits (DDD) are a good starting point</li>
+					<li>Team size (<a href="https://en.wikipedia.org/wiki/Conway's_law">Conway's Law</a>) is a good starting point</li>
+				</ul>
+			</slide>
+			<slide id="ms-size-upside">
+				<title>How Micro? The Good News!</title>
+				<ul>
+					<li>MSA tells you to keep services independent and agile</li>
+					<li>MSA is a continuous process of reassessing services and their utility</li>
+					<ul>
+						<li>If a service is too big, split service and team and relaunch the new services</li>
+						<li>If granularity is too small, join teams and services and relaunch the new service</li>
+					</ul>
+					<li>…but still not a simple answer to the <q>how big?</q> question</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="api-journey">
+			<title>How to get there?</title>
+			<slide id="change">
+				<title>Transformation: Changing vs. Changeable</title>
+				<ul>
+					<li><em>Changing</em> implies a one-time activity</li>
+					<li><em>Changeable</em> implies an intrinsic property</li>
+					<blockquote>
+						<p>Don't focus on what to <b>change into</b>;<br/>Focus on <b>embracing change</b> as your mode of existence.</p>
+					</blockquote>
+				</ul>
+			</slide>
+			<slide id="strangler">
+				<title>Strangling the Monolith</title>
+				<img title="Strangler Vine" href="https://commons.wikimedia.org/wiki/File:Strangler_tree.jpg" src="strangler-vine.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="good-strangling">
+				<title>How to Strangle Well</title>
+				<ul>
+					<li>Manage access to old/new capabilities through a router or gateway</li>
+					<ul>
+						<li>Transitioning is a management process old/new should be unaware of</li>
+					</ul>
+					<li>Data sync/update is a separately managed process</li>
+					<ul>
+						<li>Sophistication and cost of sync/update depends on consistency requirements</li>
+						<li>When one of the services disappears sync/update can be removed</li>
+					</ul>
+					<li>Manage/monitor transition of service replacement</li>
+					<ul>
+						<li>At some point in time decommissioning may be the most economical option</li>
+						<li>Until then the <em>strangled monolith</em> is the best case scenario</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="scope-conclusions">
+				<title>Learning by Doing</title>
+				<ul>
+					<li>Identify an MVP and get started</li>
+					<li>Start sharing experiences and establish a culture</li>
+					<li>...</li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
