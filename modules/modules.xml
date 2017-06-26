@@ -945,6 +945,20 @@
 			<title>Hypermedia Formats</title>
 			<slide id="generic-specific">
 				<title>Specific Hypermedia Formats</title>
+				<ul>
+					<li>Any format that mixes control and data is a hypermedia format</li>
+					<ul>
+						<li>Standard issues of how to define representations</li>
+						<li>Additional issues of where and how to embed links as controls</li>
+					</ul>
+					<li>Depending on the metamodel and schema language varying support</li>
+					<ul>
+						<li>Not everybody likes using schema languages</li>
+						<li>Many schema languages are focusing on grammars and data types</li>
+						<li>Some schema languages at least have data types for URIs</li>
+						<li>Few schema languages have explicit support for hypermedia</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="generic-hypermedia">
 				<title>Generic Hypermedia Formats</title>
