@@ -1991,45 +1991,51 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id-"hypermedia-style">
 			<title>Hypermedia Style</title>
-			<ul>
-				<li>Based on mixing data and controls in representations</li>
+			<slide id="webby-style">
+				<title>Webby APIs</title>
 				<ul>
-					<li><em>Data</em> represents the current resource state</li>
-					<li><em>Controls</em> represent the advertised next options for clients</li>
+					<li>Based on mixing data and controls in representations</li>
+					<ul>
+						<li><em>Data</em> represents the current resource state</li>
+						<li><em>Controls</em> represent the advertised next options for clients</li>
+					</ul>
+					<li>Controls allow clients to work across individual APIs</li>
+					<ul>
+						<li>APIs expose sets of resources and provide links</li>
+						<li>Clients follow links without being aware of API boundaries</li>
+					</ul>
+					<li>Developers must code differently from usual programming flows</li>
+					<ul>
+						<li>Applications are driven by the responses that client code receives</li>
+						<li>Imperative programming is not the best fit for this kind of flow</li>
+					</ul>
 				</ul>
-				<li>Controls allow clients to work across individual APIs</li>
-				<ul>
-					<li>APIs expose sets of resources and provide links</li>
-					<li>Clients follow links without being aware of API boundaries</li>
-				</ul>
-				<li>Developers must code differently from usual programming flows</li>
-				<ul>
-					<li>Applications are driven by the responses that client code receives</li>
-					<li>Imperative programming is not the best fit for this kind of flow</li>
-				</ul>
-			</ul>
+			</slide>
 		</part>
 		<part id-"asynchronous-style">
 			<title>Asynchronous Style</title>
-			<ul>
-				<li>Synchronous communications result in tighter coupling between peers</li>
-				<li>Asynchronous communications can make data provision easier</li>
+			<slide id="fire-and-forget">
+				<title>Fire and Forget</title>
 				<ul>
-					<li>Data is tagged and submitted into some <em>communications fabric</em></li>
-					<li>The fabric takes care of notifying and delivering data to consumers</li>
+					<li>Synchronous communications result in tighter coupling between peers</li>
+					<li>Asynchronous communications can make data provision easier</li>
+					<ul>
+						<li>Data is tagged and submitted into some <em>communications fabric</em></li>
+						<li>The fabric takes care of notifying and delivering data to consumers</li>
+					</ul>
+					<li>The fabric is far beyond the <em>smart endpoints and dumb pipes</em> idea</li>
+					<ul>
+						<li><em>Smart pipes</em> are not bad per se but often have problems scaling</li>
+					</ul>
+					<li>Managing the fabric becomes an essential part of making code work</li>
+					<ul>
+						<li>Who is producing data?</li>
+						<li>Who is consuming data?</li>
+						<li>What are the ways in which data can or must be tagged?</li>
+						<li>How is the namespace of data tagging managed?</li>
+					</ul>
 				</ul>
-				<li>The fabric is far beyond the <em>smart endpoints and dumb pipes</em> idea</li>
-				<ul>
-					<li><em>Smart pipes</em> are not bad per se but often have problems scaling</li>
-				</ul>
-				<li>Managing the fabric becomes an essential part of making code work</li>
-				<ul>
-					<li>Who is producing data?</li>
-					<li>Who is consuming data?</li>
-					<li>What are the ways in which data can or must be tagged?</li>
-					<li>How is the namespace of data tagging managed?</li>
-				</ul>
-			</ul>
+			</slide>
 		</part>
 		<part id-"style-conclusions">
 			<title>Conclusions</title>
