@@ -962,6 +962,19 @@
 			</slide>
 			<slide id="generic-hypermedia">
 				<title>Generic Hypermedia Formats</title>
+				<ul>
+					<li>Instead of designing hypermedia it's possible to use existing formats</li>
+					<ul>
+						<li>Generic formats often provide little more than data/control separation</li>
+						<li>Domain focus results in semi-generic formats such as collection formats</li>
+					</ul>
+					<li>Hypermedia is more a pattern than it is format or technology</li>
+					<ul>
+						<li>Specific technologies may come with more constraints than benefits</li>
+						<li>Never underestimate the benefits of reusing shared languages</li>
+					</ul>
+					<li>So far there is no clear trend towards a common generic format</li>
+				</ul>
 			</slide>
 		</part>
 	</presentation>
