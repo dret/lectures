@@ -2011,6 +2011,25 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id-"asynchronous-style">
 			<title>Asynchronous Style</title>
+			<ul>
+				<li>Synchronous communications result in tighter coupling between peers</li>
+				<li>Asynchronous communications can make data provision easier</li>
+				<ul>
+					<li>Data is tagged and submitted into some <em>communications fabric</em></li>
+					<li>The fabric takes care of notifying and delivering data to consumers</li>
+				</ul>
+				<li>The fabric is far beyond the <em>smart endpoints and dumb pipes</em> idea</li>
+				<ul>
+					<li><em>Smart pipes</em> are not bad per se but often have problems scaling</li>
+				</ul>
+				<li>Managing the fabric becomes an essential part of making code work</li>
+				<ul>
+					<li>Who is producing data?</li>
+					<li>Who is consuming data?</li>
+					<li>What are the ways in which data can or must be tagged?</li>
+					<li>How is the namespace of data tagging managed?</li>
+				</ul>
+			</ul>
 		</part>
 		<part id-"style-conclusions">
 			<title>Conclusions</title>
