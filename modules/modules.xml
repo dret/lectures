@@ -918,6 +918,23 @@
 			</slide>
 			<slide id="typed-links">
 				<title>Typed Links</title>
+				<ul>
+					<li>Links represents navigational options for clients</li>
+					<ul>
+						<li>APIs include links that are advertised based on service and state</li>
+						<li>Clients choose links based on application state and goals</li>
+					</ul>
+					<li>Link typing on the Web often is done using <a href="https://tools.ietf.org/html/rfc5988">RFC 5988 <q>Web Linking</q></a></li>
+					<ul>
+						<li><em href="http://tools.ietf.org/html/rfc5988#section-4.1">Registered types</em> are simple strings using <a href="https://www.iana.org/assignments/link-relations/link-relations.xhtml">well-known values</a></li>
+						<li><em href="http://tools.ietf.org/html/rfc5988#section-4.2">Extension types</em> are URIs which might choose to self-document their meaning</li>
+					</ul>
+					<li><a href="http://webconcepts.info/concepts/link-relation/">Registered types</a> have documented but fuzzy meaning</li>
+					<ul>
+						<li>APIs need to document which types they use and what they mean</li>
+						<li>Reusing existing types makes the <q>API language</q> easier to understand and use</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="hypermedia-formats">
