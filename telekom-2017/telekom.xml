@@ -488,8 +488,263 @@
 	</presentation>
 	<presentation id="governance">
 		<title>API Governance</title>
+		<part id="landscape">
+			<title>Service Landscape</title>
+			<slide id="monolith">
+				<title>The Dreaded Monolith</title>
+				<img title="Where you come from…" href="https://upload.wikimedia.org/wikipedia/commons/7/7b/Weltmaschine_gsellmann1.JPG" src="monolith.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="MS-neat">
+				<title>Microservices: The Starting Point</title>
+				<img title="Where you think you're going…" href="https://static.pexels.com/photos/12598/96917deb7705adcee76b65caf8c652b1.jpg" src="microservices-ideal.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="MS-messy">
+				<title>Microservices Over Time</title>
+				<img title="By Lachlan Donald from Melbourne, Australia (Sharpest tool in the shed) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AHuge_collection_of_tools_in_a_store_in_Chloride%2C_a_ghost_town_in_New_Mexico%2C_USA_-_July_2013.jpg" src="microservices-reality.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="soapy-discovery">
+				<title>Old School Discovery</title>
+				<ul>
+					<li>SOAP's answer to service discovery was UDDI</li>
+					<ul>
+						<li>The biggest failure of the SOAP Web Services stack</li>
+						<li>Allowing only one specific kind of service design</li>
+						<li>Focusing on the function signature as a service's main description</li>
+					</ul>
+					<li>Building directories from carefully described and categorized entries</li>
+					<ul>
+						<li>Feels like the Yahoo! of service discovery: The one true model approach</li>
+					</ul>
+					<li>What does a Google of Service Discovery look like?</li>
+					<ul>
+						<li>Starting from services, <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">find available description/documentation resources</a></li>
+						<li>Index description/documentation resources for subsequent discovery</li>
+						<li>Add support for additional description/documentation formats as required</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="ms-discovery">
+				<title>Decentralize Discovery</title>
+				<ul>
+					<li>MS is all about making services more independent and self-contained</li>
+					<ul>
+						<li>Discovery should follow the same pattern: Avoid centralization, be polyglot</li>
+					</ul>
+					<li>Decentralized discovery is based on pulling/crawling diverse data</li>
+					<ol>
+						<li>Start by <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">finding available description/documentation resources</a></li>
+						<li>Process these based on supported description/documentation formats</li>
+						<li>Increase support if required by the evolving ecosystem</li>
+						<li>Provide discovery services based on the resulting service ecosystem snapshot</li>
+					</ol>
+					<li>Added benefit: Reality-based view on description/documentation/service ecosystem</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="culture">
+			<title>Product Management Culture</title>
+			<slide id="product-focus">
+				<title>Products not Projects</title>
+				<ul>
+					<li>MSA puts a strong focus on products</li>
+					<ul>
+						<li><em>API Projects</em> end with handing over responsibility</li>
+						<li><em>API Products</em> means ownership and ongoing responsibility</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="velocity">
+				<title>Innovation needs Velocity</title>
+				<ul>
+					<li>Remove red tape and embrace diversity</li>
+					<li>Business environments change faster than ever</li>
+					<ul>
+						<li><em>Common question:</em> How to change into a more successful organization</li>
+						<li><em>Better question:</em> How to become an organization that is better at changing</li>
+					</ul>
+					<li>The Web succeeded because it out-innovated everything else</li>
+					<ul>
+						<li>Permissionless decentralized innovation</li>
+						<li>Data-driven decisions (traffic drives visibility and success)</li>
+						<li>Permanent change enabled through loose coupling</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="dee-hock">
+				<title>Un-Preventing Innovation</title>
+				<img title="Dee Hock: Birth of the Chaordic Age" href="https://en.wikipedia.org/wiki/Dee_Hock" src="dee-hock-chaordic.png" style="width : 85% ; margin : 0% 4% 0% 4% ; "/>
+				<ul>
+					<li><a href="https://en.wikipedia.org/wiki/Dee_Hock">Dee Hock</a>, <q>Birth of the Chaordic Age</q>, <a href="https://www.bkconnection.com/">Berrett-Koehler Publishers</a>, January 2000</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="diversity-decentralization-loose-coupling">
+			<title>Diversity, Decentralization, and Loose Coupling</title>
+			<slide id="diversity">
+				<title>Diversity</title>
+				<ul>
+					<li>API designs should focus on the <em>API Quality</em></li>
+					<ul>
+						<li>Standardizing on technologies is no guarantee for quality</li>
+						<li>Focus on design patterns and feedback from API users</li>
+					</ul>
+					<li>Microservice teams are incentivized to create good APIs</li>
+					<ul>
+						<li>Feedback from API consumers comes early and often</li>
+						<li>Being a good citizen improves the chances to success</li>
+						<li>Monitoring quickly reveals patterns of usage and popularity</li>
+					</ul>
+					<li>Standardize on <em>good practices</em> instead of <em>mandated patterns</em></li>
+					<li>Consumers should have a <em>seamless experience</em> across APIs</li>
+				</ul>
+			</slide>
+			<slide id="decentralization">
+				<title>Decentralization</title>
+				<ul>
+					<li>Centralization has become an IT anti-pattern</li>
+					<li>APIs should be easily composable by consumers</li>
+					<ul>
+						<li><em>Robust identity</em> allows resource discovery without out-of-band knowledge</li>
+						<li><em>Interlinking</em> exposes control flows in a self-describing way</li>
+						<li>Web architecture supports choreography and orchestration patterns</li>
+					</ul>
+					<li>Individual services own and document their service APIs</li>
+					<li>Cross-service examples and use cases need to respect this autonomy</li>
+				</ul>
+			</slide>
+			<slide id="loose-coupling">
+				<title>Loose Coupling</title>
+				<ul>
+					<li>Apply well-known <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Patterns for Robust Extensibility</a></li>
+					<li>Microservice architecture encourages service changes and replacements</li>
+					<ul>
+						<li>Design for <em>service changes:</em> Non-breaking changes as the goal</li>
+						<li>Design for <em>landscape changes:</em> Self-describing interactions allow changing workflows</li>
+					</ul>
+					<li><em>Hypermedia</em> is a well-known pattern for service <em>and</em> landscape changes</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="standards">
+			<title>Standards</title>
+			<slide id="webconcepts">
+				<title>Web Concepts</title>
+				<ul>
+					<li>The foundation of an API landscape is a mix of various standards</li>
+					<li>Many of the foundations are from IETF/W3C</li>
+					<ul>
+						<li>Depending on the domain/industry, there may be other well-known foundations</li>
+					</ul>
+					<li><code href="http://webconcepts.info/">webconcepts.info</code> provides a <a href="http://webconcepts.info/concepts/"><q>starter pack</q> of concepts</a></li>
+					<ul>
+						<li>Currently listing 676 values classified in 29 different Web concepts</li>
+					</ul>
+					<li>Create your own foundation by forking, removing, and adding concepts and values</li>
+					<ul>
+						<li>APIs and the concepts they use should be linked both ways</li>
+						<li>Imagine having a dashboard of foundations and their popularity</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="snowflakes">
+				<title>Sunlight Melts Snowflakes</title>
+				<img title="Snowflakes" href="http://www.flickr.com/photos/amagill/4223790595" src="snowflake.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="ui-patterns">
+				<title>Uniform Interface Patterns</title>
+				<ul>
+					<li>Identify <q>design patterns</q> based on shared concepts</li>
+					<ul>
+						<li>Treating concepts as a <em>flat space</em> leaves out many details</li>
+						<li><q>Deeper models</q> can still be based on the <q>shared concept surface</q></li>
+					</ul>
+					<li>The uniform interface evolves and so should attempt to track it</li>
+					<ul>
+						<li>New <a href="https://github.com/dret/webconcepts/commits">Web Concept values</a> are defined/created constantly</li>
+						<li>New <a href="http://webconcepts.info/concepts">Web Concepts</a> appear less frequently</li>
+					</ul>
+					<li><q>Make any model <em>as shallow as possible</em>, model depth tightly couples and makes model matching and mapping much harder.</q></li>
+				</ul>
+			</slide>
+			<slide id="bigger-picture">
+				<title>Fit into the Bigger Picture</title>
+				<ul>
+					<li>APIs are about <em>information logistics</em>, so friction matters</li>
+					<ul>
+						<li><em>Developer experience (DX)</em> means how hard it is to use certain APIs</li>
+						<li>DX also matters when it comes to how hard it is to combine APIs</li>
+					</ul>
+					<li><em>REST</em> has the idealized picture of <em>uniform self-describing interfaces</em></li>
+					<ul>
+						<li>Uniform: You can interact with a service without knowing it in advance</li>
+						<li>Self-describing: You can learn what you need to know from the interactions</li>
+					</ul>
+					<li>REST works well on the Web because humans are the intelligence driving dumb browsers</li>
+					<ul>
+						<li>For Web services this looks difference because there is only code</li>
+						<li>Having <em>shared concepts</em> and <em>layered domain meaning</em> still is a good idea</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="ietf">
+				<title>Internet Engineering Task Force (IETF)</title>
+				<ul>
+					<li>The main organization for Internet standards</li>
+					<li>Many of the fundamental pieces of Internet/Web architecture are IETF work</li>
+					<ul>
+						<li><em>Internet Protocol (IP):</em> The foundation on which the Internet is based</li>
+						<li><em>Domain Name System (DNS):</em> The address book of the Internet that manages all names</li>
+						<li><em>Transmission Control Protocol (TCP):</em> The reliable end-to-end protocol connecting applications</li>
+						<li><em>Uniform Resource Identifier (URI):</em> The way in which Web resources are identified and addressed</li>
+						<li><em>Hypertext Transfer Protocol (HTTP):</em> The protocol spoken by all server and browsers and many APIs and apps</li>
+						<li><em>JavaScript Object Notation (JSON):</em> The metamodel used for most modern API designs</li>
+					</ul>
+					<li>Keeping an eye on ongoing developments are part of solid API management</li>
+				</ul>
+			</slide>
+			<slide id="w3c">
+				<title>World Wide Web Consortium (W3C)</title>
+				<ul>
+					<li>The main organization for Web-related standards</li>
+					<li>Many of the fundamental pieces of Web architecture are W3C work</li>
+					<ul>
+						<li><em>Hypertext Markup Language (HTML):</em> The document format used by browsers</li>
+						<li><em>Cascading Style Sheets (CSS):</em> The layout language supported by all modern browsers</li>
+						<li><em>Extensible Markup Language (XML):</em> A metamodel still popular for some APIs</li>
+						<li><em>Resource Description Framework (RDF):</em> A metamodel popular for a certain class of applications</li>
+					</ul>
+					<li>Keeping an eye on ongoing developments are part of solid API management</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="product-focus">
+				<title>Manage API as products not projects</title>
+				<ul>
+					<li>Balancing speed and some coherence is a constant challenge</li>
+					<li>Monitor trends and make sure the strategy adapts</li>
+					<li>Provide help and guidance instead of rules and regulations</li>
+					<li>Provide tooling to help developers do the right thing</li>
+					<li>Instrument designs and run-times for data-driven a strategy</li>
+				</ul>
+			</slide>
+			<slide id="measure-everything">
+				<title>Measure Everything</title>
+				<ul>
+					<li>API landscapes get bigger and they get more dynamic</li>
+					<li>Making decisions in this new environment should be data-driven</li>
+					<li>Automate and monitor to gather as much data as possible</li>
+					<ul>
+						<li><em>Design-time instrumentation</em> gathers data on static aspects of service design</li>
+						<li><em>Run-time instrumentation</em> gathers data on dynamic behavior of services</li>
+					</ul>
+					<li>Decouple signals, harvesting/collection, and analysis and decision-making</li>
+					<ul>
+						<li>Treat API landscape instrumentation as one strategic focus</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
