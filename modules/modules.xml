@@ -936,6 +936,10 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="hal">
+				<title>HAL Format</title>
+				<listing src="hal.json" href="http://stateless.co/hal_specification.html" line="17-37"/>
+			</slide>
 		</part>
 		<part id="hypermedia-formats">
 			<title>Hypermedia Formats</title>

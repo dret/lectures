@@ -1,0 +1,40 @@
+{
+    "_links": {
+        "self": { "href": "/orders" },
+        "next": { "href": "/orders?page=2" },
+        "http://example.com/docs/rels/find": {
+            "href": "/orders{?id}",
+            "templated": true
+        },
+        "http://example.com/docs/rels/admin": [{
+            "href": "/admins/2",
+            "title": "Fred"
+        }, {
+            "href": "/admins/5",
+            "title": "Kate"
+        }]
+    },
+    "currentlyProcessing": 14,
+    "shippedToday": 20,
+    "_embedded": {
+        "http://example.com/docs/rels/order": [{
+            "_links": {
+                "self": { "href": "/orders/123" },
+                "http://example.com/docs/rels/basket": { "href": "/baskets/98712" },
+                "http://example.com/docs/rels/customer": { "href": "/customers/7809" }
+            },
+            "total": 30.00,
+            "currency": "USD",
+            "status": "shipped"
+        }, {
+            "_links": {
+                "self": { "href": "/orders/124" },
+                "http://example.com/docs/rels/basket": { "href": "/baskets/97213" },
+                "http://example.com/docs/rels/customer": { "href": "/customers/12369" }
+            },
+            "total": 20.00,
+            "currency": "USD",
+            "status": "processing"
+        }]
+    }
+}
