@@ -980,6 +980,11 @@
 		<part id="hypermedia-conclusions">
 			<slide id="evolution-focus">
 				<title>Conclusions</title>
+				<ul>
+					<li>Hypermedia is a pattern mixing data and controls</li>
+					<li>Hypermedia provides a good foundation for API evolvability</li>
+					<li>Clients need a more data-driven control flow</li>
+				</ul>
 			</slide>
 		</part>
 	</presentation>
