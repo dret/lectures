@@ -913,7 +913,7 @@
 				</ul>
 			</slide>
 			<slide id="json-feed">
-				<title>JSON Feed Format</title>
+				<title>Link Representation (JSON Feed Format)</title>
 				<listing src="json-feed.json" href="https://jsonfeed.org/version/1"/>
 			</slide>
 			<slide id="typed-links">
@@ -937,7 +937,7 @@
 				</ul>
 			</slide>
 			<slide id="hal">
-				<title>HAL Format</title>
+				<title>Typed Links (HAL Format)</title>
 				<listing src="hal.json" href="http://stateless.co/hal_specification.html" line="17-37"/>
 			</slide>
 		</part>
