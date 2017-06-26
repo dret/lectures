@@ -642,6 +642,48 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="product-focus">
+				<title>Manage API as products not projects</title>
+				<ul>
+					<li>Balancing speed and some coherence is a constant challenge</li>
+					<li>Monitor trends and make sure the strategy adapts</li>
+					<li>Provide help and guidance instead of rules and regulations</li>
+					<li>Provide tooling to help developers do the right thing</li>
+					<li>Instrument designs and run-times for data-driven a strategy</li>
+				</ul>
+			</slide>
+			<slide id="measure-everything">
+				<title>Measure Everything</title>
+				<ul>
+					<li>API landscapes get bigger and they get more dynamic</li>
+					<li>Making decisions in this new environment should be data-driven</li>
+					<li>Automate and monitor to gather as much data as possible</li>
+					<ul>
+						<li><em>Design-time instrumentation</em> gathers data on static aspects of service design</li>
+						<li><em>Run-time instrumentation</em> gathers data on dynamic behavior of services</li>
+					</ul>
+					<li>Decouple signals, harvesting/collection, and analysis and decision-making</li>
+					<ul>
+						<li>Treat API landscape instrumentation as one strategic focus</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/telekom-2017"><code>dret.net/lectures/telekom-2017</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/telekom-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="documentation">
+		<title>Documentation and DX</title>
 		<part id="diversity-decentralization-loose-coupling">
 			<title>Diversity, Decentralization, and Loose Coupling</title>
 			<slide id="diversity">
@@ -781,48 +823,6 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="conclusions">
-			<title>Conclusions</title>
-			<slide id="product-focus">
-				<title>Manage API as products not projects</title>
-				<ul>
-					<li>Balancing speed and some coherence is a constant challenge</li>
-					<li>Monitor trends and make sure the strategy adapts</li>
-					<li>Provide help and guidance instead of rules and regulations</li>
-					<li>Provide tooling to help developers do the right thing</li>
-					<li>Instrument designs and run-times for data-driven a strategy</li>
-				</ul>
-			</slide>
-			<slide id="measure-everything">
-				<title>Measure Everything</title>
-				<ul>
-					<li>API landscapes get bigger and they get more dynamic</li>
-					<li>Making decisions in this new environment should be data-driven</li>
-					<li>Automate and monitor to gather as much data as possible</li>
-					<ul>
-						<li><em>Design-time instrumentation</em> gathers data on static aspects of service design</li>
-						<li><em>Run-time instrumentation</em> gathers data on dynamic behavior of services</li>
-					</ul>
-					<li>Decouple signals, harvesting/collection, and analysis and decision-making</li>
-					<ul>
-						<li>Treat API landscape instrumentation as one strategic focus</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="q-and-a">
-				<title>Thanks! Q&amp;A</title>
-				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
-				<ul>
-					<li>Slides online: <a href="http://dret.net/lectures/telekom-2017"><code>dret.net/lectures/telekom-2017</code></a></li>
-					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/telekom-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
-					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
-					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
-				</ul>
-			</slide>
-		</part>
-	</presentation>
-	<presentation id="documentation">
-		<title>Documentation and DX</title>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
