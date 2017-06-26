@@ -1310,8 +1310,141 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 	</presentation>
 	<presentation id="hypermedia">
 		<title>Hypermedia</title>
+		<toc class="resources"><a href="https://tools.ietf.org/html/rfc5988" title='RFC 5988, "Web Linking", October 2010'>RFC 5988</a>&#160;· <a href="http://www.ustream.tv/recorded/102891495" title='Mike Amundsen, "Twelve Patterns for Hypermedia Microservices", Craft Conference, April 2017'>12 Patterns</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/08/api-maps-hypermedia-api-design.html" title='Erik Wilde, "API Maps: Hypermedia API Design", August 2016'>API Maps</a></toc>
+		<part id="hypermedia-overview">
+			<title>Overview</title>
+			<slide id="hypermedia-affordances">
+				<title>Hypermedia and Affordances</title>
+				<blockquote><q href="http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven">When I say hypertext, I mean the simultaneous presentation of information and controls such that the information becomes the affordance through which the user (or automaton) obtains choices and selects actions.</q> (<a href="https://en.wikipedia.org/wiki/Roy_Fielding">Roy Fielding</a>)</blockquote>
+			</slide>
+			<slide id="hypermedia-workflow">
+				<title>Hypermedia and Workflows</title>
+				<ul>
+					<li>Hypermedia combines state representation and possible further interactions</li>
+					<ul>
+						<li>Resource state allows clients to understand the current content</li>
+						<li>Links allow clients to understand the possible next steps</li>
+						<li>Clients select the link based on their application goals</li>
+					</ul>
+					<li>Workflows are represented by providing navigation options (affordances)</li>
+					<ul>
+						<li>Making it easier for clients to be <q>driven by available options</q></li>
+						<li>Seamless fabric of navigation across individual APIs</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="hypermedia-evolution">
+				<title>Hypermedia and API Evolution</title>
+				<ul>
+					<li>Extensibility generally is a good idea for APIs</li>
+					<ul>
+						<li>Eliminates or reduces the need to do potentially expensive versioning</li>
+					</ul>
+					<li>Hypermedia representations by definition combine data and control elements</li>
+					<ul>
+						<li><em>Data extensibility</em> results in the usual benefits of allowing representations to evolve</li>
+						<li><em>Control extensibility</em> results in the ability to add new workflow paths</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="hypermedia-design">
+			<title>Hypermedia Design</title>
+			<slide id="representing-links">
+				<title>Representing Links</title>
+				<ul>
+					<li>Hypermedia always is about mixing data and controls in representations</li>
+					<ul>
+						<li>Some scenarios can strictly separate the links and the data</li>
+						<li>Other scenarios need links to be embedded in data to make sense</li>
+					</ul>
+					<li>At the very minimum links need a <em>target URI</em> to identify the link target</li>
+					<ul>
+						<li>Typically links are typed implicitly or explicitly for differentiation</li>
+						<li>Links may also be decorated with <em>hints</em> for additional information</li>
+					</ul>
+					<li>Links representations are the information that clients have to make decisions</li>
+					<ul>
+						<li>Some link hints may help to choose between navigation paths</li>
+						<li>Some link hints may be optimizations that <q>duplicate/mirror</q> HTTP mechanisms</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="json-feed">
+				<title>Link Representation (JSON Feed Format)</title>
+				<listing src="json-feed.json" href="https://jsonfeed.org/version/1"/>
+			</slide>
+			<slide id="typed-links">
+				<title>Typed Links</title>
+				<ul>
+					<li>Links represents navigational options for clients</li>
+					<ul>
+						<li>APIs include links that are advertised based on service and state</li>
+						<li>Clients choose links based on application state and goals</li>
+					</ul>
+					<li>Link typing on the Web often is done using <a href="https://tools.ietf.org/html/rfc5988">RFC 5988 <q>Web Linking</q></a></li>
+					<ul>
+						<li><em href="http://tools.ietf.org/html/rfc5988#section-4.1">Registered types</em> are simple strings using <a href="https://www.iana.org/assignments/link-relations/link-relations.xhtml">well-known values</a></li>
+						<li><em href="http://tools.ietf.org/html/rfc5988#section-4.2">Extension types</em> are URIs which might choose to self-document their meaning</li>
+					</ul>
+					<li><a href="http://webconcepts.info/concepts/link-relation/">Registered types</a> have documented but fuzzy meaning</li>
+					<ul>
+						<li>APIs need to document which types they use and what they mean</li>
+						<li>Reusing existing types makes the <q>API language</q> easier to understand and use</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="hal">
+				<title>Typed Links (HAL Format)</title>
+				<listing src="hal.json" href="http://stateless.co/hal_specification.html" line="17-37"/>
+			</slide>
+		</part>
+		<part id="hypermedia-formats">
+			<title>Hypermedia Formats</title>
+			<slide id="generic-specific">
+				<title>Specific Hypermedia Formats</title>
+				<ul>
+					<li>Any format that mixes control and data is a hypermedia format</li>
+					<ul>
+						<li>Standard issues of how to define representations</li>
+						<li>Additional issues of where and how to embed links as controls</li>
+					</ul>
+					<li>Depending on the metamodel and schema language varying support</li>
+					<ul>
+						<li>Not everybody likes using schema languages</li>
+						<li>Many schema languages are focusing on grammars and data types</li>
+						<li>Some schema languages at least have data types for URIs</li>
+						<li>Few schema languages have explicit support for hypermedia</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="generic-hypermedia">
+				<title>Generic Hypermedia Formats</title>
+				<ul>
+					<li>Instead of designing hypermedia it's possible to use existing formats</li>
+					<ul>
+						<li>Generic formats often provide little more than data/control separation</li>
+						<li>Domain focus results in semi-generic formats such as collection formats</li>
+					</ul>
+					<li>Hypermedia is more a pattern than it is format or technology</li>
+					<ul>
+						<li>Specific technologies may come with more constraints than benefits</li>
+						<li>Never underestimate the benefits of reusing shared languages</li>
+					</ul>
+					<li>So far there is no clear trend towards a common generic format</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="evolution-focus">
+				<title>Conclusions</title>
+				<ul>
+					<li>Hypermedia is a pattern mixing data and controls</li>
+					<li>Hypermedia provides a good foundation for API evolvability</li>
+					<li>Clients need a more data-driven control flow</li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
