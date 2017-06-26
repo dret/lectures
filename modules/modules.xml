@@ -1991,6 +1991,23 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id-"hypermedia-style">
 			<title>Hypermedia Style</title>
+			<ul>
+				<li>Based on mixing data and controls in representations</li>
+				<ul>
+					<li><em>Data</em> represents the current resource state</li>
+					<li><em>Controls</em> represent the advertised next options for clients</li>
+				</ul>
+				<li>Controls allow clients to work across individual APIs</li>
+				<ul>
+					<li>APIs expose sets of resources and provide links</li>
+					<li>Clients follow links without being aware of API boundaries</li>
+				</ul>
+				<li>Developers must code differently from usual programming flows</li>
+				<ul>
+					<li>Applications are driven by the responses that client code receives</li>
+					<li>Imperative programming is not the best fit for this kind of flow</li>
+				</ul>
+			</ul>
 		</part>
 		<part id-"asynchronous-style">
 			<title>Asynchronous Style</title>
