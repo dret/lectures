@@ -1583,14 +1583,14 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="websocket">
 			<title>WebSocket</title>
-			<slide>
-				<title>Non-HTTP Internet Connectivity</title>
+			<slide id="websocket-history">
+				<title>Non-HTTP Connectivity for Browsers</title>
 				<img src="websockets-logo.png" href="http://xmpp.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
 				<ul>
 					<li><code href="">XMLHttpRequest</code> kicked off <em>Web 2.0</em> but is limited</li>
 					<ul>
 						<li>The first time Web apps can access the network to request information</li>
-						<li>Allows any content (not just XML), but is limited to HTTP</li>
+						<li>Allows any content (not just XML) but is limited to HTTP transport</li>
 					</ul>
 					<li>WebSocket was initially part of HTML5 but then was spun off</li>
 					<li>WebSocket is both an API and a protocol</li>
@@ -1605,12 +1605,12 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="websocket-upgrade">
 				<title>HTTP to WebSocket Upgrade</title>
 				<listing src="websocket-upgrade-request.txt" href="https://www.websocket.org/aboutwebsocket.html"/>
 				<listing src="websocket-upgrade-response.txt" href="https://www.websocket.org/aboutwebsocket.html"/>
 			</slide>
-			<slide>
+			<slide id="websocket-protocol">
 				<title>WebSocket Protocol</title>
 				<ul>
 					<li>WebSocket sends data in <em>frames</em></li>
