@@ -1524,7 +1524,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="xmpp-messaging">
 				<title>XMPP Messaging</title>
 				<ul>
 					<li>XMPP <q>protocol data units</q> are predefined XML elements</li>
@@ -1545,11 +1545,11 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="xmpp-messaging-example">
 				<title>XMPP Messaging Example</title>
 				<listing src="xmpp-session.txt" href="http://tools.ietf.org/html/rfc3920#section-4.8"/>
 			</slide>
-			<slide>
+			<slide id="xmpp-presence">
 				<title>Presence Information</title>
 				<ul>
 					<li><em>Presence information</em> is a critical part of every IM experience</li>
@@ -1570,7 +1570,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="xmpp-roster">
 				<title>XMPP Roster Example</title>
 				<listing src="xmpp-roster.txt" href="http://tools.ietf.org/html/rfc6121#section-2.2"/>
 			</slide>
