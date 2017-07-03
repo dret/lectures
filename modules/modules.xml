@@ -1500,6 +1500,80 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="xmpp">
 			<title>Extensible Messaging Protocol (XMPP)</title>
+			<slide>
+				<title>XMPP History</title>
+				<img src="xmpp-logo.png" href="http://xmpp.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+				<ul>
+					<li>Originally named <q>Jabber</q> and intended as an <em>open chat protocol</em></li>
+					<ul>
+						<li>Most chat systems are using closed and proprietary protocols</li>
+						<li>XMPP allows an open ecosystem of chat services and clients to evolve</li>
+					</ul>
+					<li>Main development within IETF from 2002-2004</li>
+					<li>XML was en vogue back then so the protocol is XML-based</li>
+					<ul>
+						<li>The entire client/server session is one XML document (a <a href="http://tools.ietf.org/html/rfc6120#section-4">stream</a>)</li>
+						<li><q>Stream children</q> are XMPP's protocol data units (a <a href="http://tools.ietf.org/html/rfc6120#section-8">stanza</a>)</li>
+						<li>XMPP <a href="http://tools.ietf.org/html/rfc6120#section-11">restricts XML</a> so that parsing is a bit simpler</li>
+					</ul>
+					<li>XMPP is specified as a generic core and an IM protocol</li>
+					<ul>
+						<li><a href="http://tools.ietf.org/html/rfc6120">XMPP Core (IETF RFC 6120)</a></li>
+						<li><a href="http://tools.ietf.org/html/rfc6121">XMPP Instant Messaging and Presence (IETF RFC 6121)</a></li>
+						<li><a href="http://tools.ietf.org/html/rfc6122">XMPP Address Format (IETF RFC 6122)</a></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>XMPP Messaging</title>
+				<ul>
+					<li>XMPP <q>protocol data units</q> are predefined XML elements</li>
+					<ul>
+						<li>Each of these elements occur as children of the XMPP stream</li>
+					</ul>
+					<li><code href="https://tools.ietf.org/html/rfc6120#section-8.2.1">&lt;message/></code> is a unidirectional push mechanism (like email)</li>
+					<ul>
+						<li>Used for sending individual IM messages</li>
+					</ul>
+					<li><code href="https://tools.ietf.org/html/rfc6120#section-8.2.2">&lt;presence/></code> broadcasts presence information to subscribers</li>
+					<ul>
+						<li>Used for broadcasting presence updates to authorized subscribers</li>
+					</ul>
+					<li><code href="https://tools.ietf.org/html/rfc6120#section-8.2.3" title="Info/Query">&lt;iq/></code> is used for bidirectional request/response interactions</li>
+					<ul>
+						<li>Used for requesting address book information (the <em>roster</em>) from a server</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>XMPP Messaging Example</title>
+				<listing src="xmpp-session.txt" href="http://tools.ietf.org/html/rfc3920#section-4.8"/>
+			</slide>
+			<slide>
+				<title>Presence Information</title>
+				<ul>
+					<li><em>Presence information</em> is a critical part of every IM experience</li>
+					<ul>
+						<li>It is what drives the UX to see who is online and who is offline</li>
+						<li>Managing presence is tricky because of scalability issues and privacy</li>
+					</ul>
+					<li>XMPP handles presence via a <em>subscription model</em></li>
+					<ul>
+						<li>Users send requests for subscriptions which can be approved or denied</li>
+						<li>If a user has been approved to see presence information they have a <em>subscription</em></li>
+						<li>Subscription information is managed in a user's <em>roster</em></li>
+					</ul>
+					<li>XMPP manages a user's contact information in the <em>roster</em></li>
+					<ul>
+						<li>The roster is managed by the server that manages a user's account</li>
+						<li>The roster the <q>IM address book</q> of a user and thus must be access-controlled</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>XMPP Roster Example</title>
+				<listing src="xmpp-roster.txt" href="http://tools.ietf.org/html/rfc6121#section-2.2"/>
+			</slide>
 		</part>
 		<part id="coap">
 			<title>Constrained Application Protocol (CoAP)</title>

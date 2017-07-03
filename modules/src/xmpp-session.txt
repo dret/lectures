@@ -1,0 +1,26 @@
+C: <?xml version='1.0'?>
+   <stream:stream to='example.com'
+                  xmlns='jabber:client'
+                  xmlns:stream='http://etherx.jabber.org/streams'
+                  version='1.0'>
+S: <?xml version='1.0'?>
+   <stream:stream from='example.com'
+                  id='someid'
+                  xmlns='jabber:client'
+                  xmlns:stream='http://etherx.jabber.org/streams'
+                  version='1.0'>
+
+...  encryption, authentication, and resource binding ...
+
+C:   <message from='juliet@example.com'
+              to='romeo@example.net'
+              xml:lang='en'>
+C:     <body>Art thou not Romeo, and a Montague?</body>
+C:   </message>
+S:   <message from='romeo@example.net'
+              to='juliet@example.com'
+              xml:lang='en'>
+S:     <body>Neither, fair saint, if either thee dislike.</body>
+S:   </message>
+C: </stream:stream>
+S: </stream:stream>
