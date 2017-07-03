@@ -1495,6 +1495,9 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		<part id="mqtt">
 			<title>Message Queue Telemetry Transport (MQTT)</title>
 		</part>
+		<part id="amqp">
+			<title>Advanced Message Queueing Protocol (AMQP)</title>
+		</part>
 	</presentation>
 	<presentation id="registries">
 		<title>Registries</title>
