@@ -1617,7 +1617,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<ul>
 						<li>Frames are created when WebSocket peers exchange data</li>
 						<li>Frames can carry either <em>binary data</em> or <em>text</em></li>
-						<li><code>send(data)</code> API automatically decides which frame type to use</li>
+						<li><code href="https://www.w3.org/TR/websockets/#dom-websocket-send">send(data)</code> API automatically decides which frame type to use</li>
 					</ul>
 					<li><em>Fragmentation</em> allows frames to be of unknown size when started</li>
 					<ul>
