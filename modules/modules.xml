@@ -1590,7 +1590,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li><code href="">XMLHttpRequest</code> kicked off <em>Web 2.0</em> but is limited</li>
 					<ul>
 						<li>The first time Web apps can access the network to request information</li>
-						<li>Allows any content (not just XML) but is limited to HTTP transport</li>
+						<li>Allows non-XML content but is limited to HTTP request/response pattern</li>
 					</ul>
 					<li>WebSocket was initially part of HTML5 but then was spun off</li>
 					<li>WebSocket is both an API and a protocol</li>
