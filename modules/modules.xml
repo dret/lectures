@@ -1585,7 +1585,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>WebSocket</title>
 			<slide id="websocket-history">
 				<title>Non-HTTP Connectivity for Browsers</title>
-				<img src="websockets-logo.png" href="http://xmpp.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+				<img src="websockets-logo.png" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
 				<ul>
 					<li><code href="">XMLHttpRequest</code> kicked off <em>Web 2.0</em> but is limited</li>
 					<ul>
