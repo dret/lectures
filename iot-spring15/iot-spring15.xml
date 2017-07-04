@@ -1842,7 +1842,7 @@ RES: 2.05 Content
 				<title>Non-HTTP Internet Connectivity</title>
 				<img src="websockets-logo.png" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
 				<ul>
-					<li><code href="">XMLHttpRequest</code> kicked off <em>Web 2.0</em> but is limited</li>
+					<li><code href="https://www.w3.org/TR/XMLHttpRequest2/">XMLHttpRequest</code> kicked off <em>Web 2.0</em> but is limited</li>
 					<ul>
 						<li>The first time web apps can access the network to request information</li>
 						<li>Allows any content (not just XML), but is limited to HTTP</li>
