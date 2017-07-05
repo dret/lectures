@@ -80,6 +80,523 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="api-intro">
+			<title>Introduction to APIs</title>
+			<part id="high-level-view">
+				<title>APIs from 50,000 feet</title>
+				<slide id="api-language">
+					<title>APIs are Languages</title>
+					<ul>
+						<li>APIs in their current sense evolved from the <em>original API</em></li>
+						<ul>
+							<li><em>Local APIs</em> originated as a way to build systems (i.e., one big thing)</li>
+							<li><em>Network APIs</em> were invented decades ago but nobody found the silver bullet</li>
+							<li><em>Web APIs</em> are a loose and evolving collection of principles and patterns</li>
+						</ul>
+						<li>Languages become necessary when coordination is required</li>
+						<ul>
+							<li><em>Human language</em> is a result of improving ecological fitness</li>
+							<li><em>Human written language</em> is a result of new organizational challenges</li>
+						</ul>
+						<li>Same problems/approaches/answers like other language problems</li>
+						<ul>
+							<li><em>Domain-only:</em> Domains figure out their problems and their languages</li>
+							<li><em>Universal:</em> Find the <em>universal grammar</em> and use it everywhere</li>
+							<li><em>Hybrid:</em> Use principles and patterns but avoid überformats</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="two-views">
+					<title>Two Views of API Scope/Focus</title>
+					<ul>
+						<li><em>Internal:</em> Using APIs to break up monolithic systems</li>
+						<ul>
+							<li>Focus on <em>systems/software engineering</em> and better modularization</li>
+							<li><q>Turn a system into an ecosystem.</q></li>
+						</ul>
+						<li><em>External:</em> Using APIs to build up ecosystems</li>
+						<ul>
+							<li>Focus on <em>distributed/decentralized systems</em> and better connectivity</li>
+							<li><q>Enable an ecosystem by loosely coupling systems.</q></li>
+						</ul>
+						<li>Both views are complementary and mostly a difference in perspective</li>
+					</ul>
+				</slide>
+				<slide id="one-perception">
+					<title>One Perception of API Value</title>
+					<ul>
+						<li>System/ecosystem boundaries are blurry</li>
+						<ul>
+							<li>System/ecosystem perspective is a question of perspective</li>
+						</ul>
+						<li>APIs provide a foundation for communications in an ecosystem</li>
+						<ul>
+							<li><em>Internal:</em> Value is in system changeability</li>
+							<li><em>External:</em> Value is in system agility</li>
+						</ul>
+						<li>API discussions should always be aware of both perspectives</li>
+						<ul>
+							<li>Separate internal/external API strategies are counter-productive</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part id="three-api-drivers">
+				<title>Three Drivers of the API Economy</title>
+				<slide id="api-driver-push">
+					<title>Driver #1: Push</title>
+					<ul>
+						<li>Many environments change at increasing velocities</li>
+						<ul>
+							<li>Economics change</li>
+							<li>Incentives change</li>
+							<li>Technologies change</li>
+						</ul>
+						<li>Organizations are <em>pushed</em> to better handle change</li>
+						<ul>
+							<li>They have to become better at <em>reacting to external changes</em></li>
+							<li>They have to become better at <em>executing internal changes</em></li>
+							<li>They have to become better at <em>embracing changing</em></li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="api-driver-pull">
+					<title>Driver #2: Pull</title>
+					<ul>
+						<li>External: Participating in the <em>API economy</em> becomes increasingly beneficial</li>
+						<ul>
+							<li>Interfacing with customers/partners becomes easier</li>
+							<li>The number of API-ready customers/partners keeps increasing</li>
+							<li>The <a href="https://en.wikipedia.org/wiki/Metcalfe%27s_law">network effect</a> guarantees for the trend to continue</li>
+						</ul>
+						<li>Internal: Being able to plan and execute changing quickly improves fitness</li>
+						<ul>
+							<li>Traditionally, IT is perceived as a sluggish and heavyweight</li>
+							<li>Increasingly, IT becomes the <q>lube</q> for the organizational machinery</li>
+							<li>Additionally, IT can allow completely new classes of business models</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="api-driver-follow">
+					<title>Driver #3: Follow</title>
+					<ul>
+						<li>Having an <em>API strategy</em> becomes increasingly important</li>
+						<ul>
+							<li>Organizations have executed on this for a long time (Amazon API memo: 2002)</li>
+							<li>Organizations share experiences and tooling around API strategies</li>
+						</ul>
+						<li>Using APIs becomes less of an <q>if</q> and more of a <q>how</q></li>
+						<ul>
+							<li>Business pushes IT to make sure strategy can be executed quickly</li>
+							<li>IT can leverage others as justification and leaders</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+		</part>
+		<part id="api-design">
+			<title>API Design</title>
+			<part id="messages-models">
+				<title>Messages vs. Models</title>
+				<slide id="api-language">
+					<title>APIs are Languages</title>
+					<ul>
+						<li>Interfaces should hide domain complexity (<em>encapsulation</em>)</li>
+						<ul>
+							<li>Expose <em>as little as possible</em> of the domain complexity</li>
+							<li>Resist the temptation to <em>expose your domain model</em></li>
+						</ul>
+						<li>Interfaces are languages for communication</li>
+						<ul>
+							<li>They establish a language between API provider and consumer</li>
+							<li>Keeping the language simple keeps the API usable</li>
+						</ul>
+						<li><q>Model Creep</q> is an obstacle for API adoption</li>
+						<ul>
+							<li>There is no <q>one true model</q> for any domain</li>
+							<li>Keeping the language simple minimizes conflict potential</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="api-messages">
+					<title>APIs and Messages</title>
+					<ul>
+						<li>Messages are the sentences in API communications</li>
+						<ul>
+							<li>They transport meaning between collaborating peers</li>
+							<li>They are independent of how peers implement their activities</li>
+						</ul>
+						<li>Messages can follow patterns that make APIs easier to use</li>
+						<ul>
+							<li><em>API styles</em> are focusing on specific communication styles</li>
+							<li><em>Metamodels</em> help to provide structure (plain text, binary, XML, JSON, RDF, …)</li>
+							<li><em>API models</em> add message models (SOAP, HAL, GraphQL, …)</li>
+							<li><em>Vocabularies</em> help to describe specific APIs</li>
+						</ul>
+						<li>The usual balancing act of familiarity and avoiding <a href="https://en.wikipedia.org/wiki/Law_of_the_instrument">Maslow's hammer</a></li>
+					</ul>
+				</slide>
+				<slide id="messaging-start">
+					<title>Make Messaging the Start</title>
+					<ul>
+						<li>Make sure to identify relevant resources so that you can refer to them</li>
+						<ul>
+							<li>Resource refers to <em>anything</em> that <q>is worth exchanging messages about</q></li>
+							<li>Unique and stable identity helps when assigning resource identifiers</li>
+						</ul>
+						<li>Any service resource must have a <em>representation</em> in messages</li>
+						<ul>
+							<li>Your <em>data model</em> is not your <em>object model</em></li>
+							<li>Your <em>object model</em> is not your <em>resource model</em></li>
+							<li>Your <em>resource model</em> is not your <em>message model</em></li>
+						</ul>
+						<li>Design <q>interaction forms</q> to be as succinct as possible</li>
+					</ul>
+				</slide>
+			</part>
+			<part id="api-scope">
+				<title>API Scope</title>
+				<slide id="api-tool">
+					<title>APIs as Tools</title>
+					<ul>
+						<li>APIs exist to solve specific problems</li>
+						<ul>
+							<li>Think about the problem and not the solution</li>
+							<li>Design a <em>capability</em> that hides solution details</li>
+						</ul>
+						<li>Collaborate with consumers and gather their feedback</li>
+						<ul>
+							<li><q>API first</q> is all about driving solutions from the API</li>
+							<li>Use approaches the make incremental design easy</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="api-maslow">
+					<title>Tools and Problems</title>
+					<img title="Hammer and Screw" href="https://www.flickr.com/photos/justinbaeder/5317820857" src="maslow-hammer-nail.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="api-design-simple">
+					<title>KISS API Design</title>
+					<ul>
+						<li>The only thing that matters is the <em>service surface</em></li>
+						<ul>
+							<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
+							<li>Resist the temptation to <em>expose your model</em> just because you can</li>
+						</ul>
+						<li>Concepts must be well-defined but not necessarily deeply modeled</li>
+						<li>There is no single correct path to well-designed APIs</li>
+						<ul>
+							<li>What is the capability that the API is exposing?</li>
+							<li>What are the assumptions about API consumers?</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part id="design-dx">
+				<title>Developer Experience (DX)</title>
+				<slide id="design-thinking">
+					<title>Design Thinking</title>
+					<ul>
+						<li>Design is driven by creating products/solutions</li>
+						<ul>
+							<li>How well does the product address a given problem?</li>
+							<li>How easy is the designed product to use?</li>
+						</ul>
+						<li>APIs often are <em>part of a bigger picture</em></li>
+						<ul>
+							<li>Developers have to use APIs to <em>design their applications</em></li>
+							<li>How easy is it for them to use APIs as <em>part of their solution</em>?</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="api-integration-client">
+					<title>Ad-Hoc API Integration</title>
+					<img title="Client-Side API Integration" src="apis-application-layer-client.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="api-integration-server">
+					<title>Pre-Packaged API Integration</title>
+					<img title="Server-Side API Integration" src="apis-application-layer-server.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="design-coherence">
+					<title>Design Coherence</title>
+					<ul>
+						<li>Establish a <em>culture of API design</em></li>
+						<ul>
+							<li><q>This is how APIs are usually looking</q></li>
+							<li>Here are some tools to help with design and documentation</li>
+							<li>Here is a breakdown of what the API landscape looks like</li>
+						</ul>
+						<li>Observing reality helps to document <em>and</em> establish culture</li>
+						<ul>
+							<li>One way to think of establishing coherence is by writing <em>guidelines</em></li>
+							<li>An alternative path is to document and disseminate <em>existing practices</em></li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part id="diversity-decentralization-loose-coupling">
+				<title>Diversity, Decentralization, and Loose Coupling</title>
+				<slide id="diversity">
+					<title>Diversity</title>
+					<ul>
+						<li>API designs should focus on the <em>API Quality</em></li>
+						<ul>
+							<li>Standardizing on technologies is no guarantee for quality</li>
+						</ul>
+						<li>Teams are incentivized to create good APIs</li>
+						<ul>
+							<li>Feedback from API consumers comes early and often</li>
+							<li>Being a good citizen improves the chances to success</li>
+							<li>Monitoring quickly reveals patterns of usage and popularity</li>
+						</ul>
+						<li>Standardize on <em>good practices</em> instead of <em>mandated patterns</em></li>
+						<li>Consumers should have a <em>seamless experience</em> across APIs</li>
+					</ul>
+				</slide>
+				<slide id="decentralization">
+					<title>Decentralization</title>
+					<ul>
+						<li>Centralization has become an IT anti-pattern</li>
+						<li>APIs should be easily composable by consumers</li>
+						<ul>
+							<li><em>Robust identity</em> allows resource discovery without out-of-band knowledge</li>
+							<li><em>Interlinking</em> exposes control flows in a self-describing way</li>
+						</ul>
+						<li>Individual services own and document their service APIs</li>
+						<li>Cross-service examples and use cases need to respect this autonomy</li>
+					</ul>
+				</slide>
+				<slide id="loose-coupling">
+					<title>Loose Coupling</title>
+					<ul>
+						<li>Apply well-known <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Patterns for Robust Extensibility</a></li>
+						<li>Modern service architecture encourages service changes and replacements</li>
+						<ul>
+							<li>Design for <em>service changes:</em> Non-breaking changes as the goal</li>
+							<li>Design for <em>landscape changes:</em> Self-describing interactions allow changing workflows</li>
+						</ul>
+						<li><em>Hypermedia</em> is a well-known pattern for service <em>and</em> landscape changes</li>
+					</ul>
+				</slide>
+			</part>
+		</part>
+		<part id="geo-apis">
+			<title>Geospatial APIs</title>
+			<part id="geo-api-issues">
+				<title>Geospatial API Issues</title>
+				<slide id="geo-api-audience">
+					<title>API Complexity</title>
+					<ul>
+						<li>Geospatial models tend to have intrinsic complexity</li>
+						<ul>
+							<li>Well-known in the geospatial community</li>
+							<li>Not as well-known outside of that particular community</li>
+						</ul>
+						<li>Geospatial information sharing can have simple scenarios</li>
+						<ul>
+							<li>Extracting information based on simple query models</li>
+							<li>Submitting information based on simple insertion models</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="geo-api-audience">
+					<title>API Audience</title>
+					<ul>
+						<li>Design APIs with an audience in mind</li>
+						<ul>
+							<li><q>Designing into the void</q> rarely leads to good UX/DX</li>
+							<li><q>All you have to do is knowing these 28 OGC standards.</q></li>
+						</ul>
+						<li>Using simple standards means accommodating bigger audiences</li>
+						<ul>
+							<li><a href="http://webconcepts.info/"><em>Web Architecture</em> provides a rich API foundation</a></li>
+							<li>Knowing and using simple standards can help adoption</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="landscape-scale">
+					<title>Geo API Landscape Scale</title>
+					<ul>
+						<li>Different environments have different ideas of landscape scale</li>
+						<ul>
+							<li>Small projects may have a handful of services</li>
+							<li>Large adopters may have hundreds or thousands of APIs</li>
+						</ul>
+						<li>Using any form of discovery may not be necessary from the start</li>
+						<ul>
+							<li>Consider the possibility when starting an API effort</li>
+							<li>Having a plan helps teams to be aware of the need later on</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="landscape-diversity">
+					<title>GEO API Landscape Diversity</title>
+					<ul>
+						<li>Not all services use the same technical foundations</li>
+						<ul>
+							<li>Different communications mechanisms</li>
+							<li>Different metamodels (XML/JSON/RDF) for data models</li>
+							<li>Different models for representing application concepts</li>
+							<li>In a Web context, these are concepts such as <a href="https://github.com/dret/sedola/blob/master/MD/headers.md">HTTP headers</a>, <a href="https://github.com/dret/sedola/blob/master/MD/mediatypes.md">media types</a>, and <a href="https://github.com/dret/sedola/blob/master/MD/linkrels.md">link relations</a></li>
+						</ul>
+						<li>Handling diversity can be challenging because of different <q>design universes</q></li>
+						<ul>
+							<li>Depending on choice, similar concepts/models may be represented differently</li>
+							<li>Introducing a generalized abstraction layer is unlikely to be helpful</li>
+						</ul>
+						<li>Discovering documentation provides a better overview of the ecosystem</li>
+						<ul>
+							<li>A reality-based overview of the technology landscape</li>
+							<li>A possible starting point or guideline for getting teams started</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="landscape-decentralization">
+					<title>Geo API Landscape Decentralization</title>
+					<ul>
+						<li>Decentralization means no single point of control</li>
+						<li>Decentralization means no automatic top-down visibility</li>
+						<ul>
+							<li><em>API gateways</em> are one way of improving visibility (and control)</li>
+							<li><em>Instrumenting the connective fabric</em> is another way out of this</li>
+						</ul>
+						<li>Complete and uncontrolled decentralization is an ideal</li>
+						<ul>
+							<li><em>Observe</em> how the landscape develops</li>
+							<li><em>Identify pain points</em> from the design and operational point of view</li>
+							<li><em>Identify popular patterns</em> so that teams have a starting point</li>
+							<li><em>Convincing teams</em> instead of mandatory guidelines</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part id="geojson">
+				<title>What is GeoJSON?</title>
+				<slide id="strava-art">
+					<title>It's for Riding Animals!</title>
+					<img src="fish.jpg" style="float: left ; width : 42% ; margin : 4% ; " href="http://www.strava.com/activities/523719323"/>
+					<img src="goose.jpg" style="float: right ; width : 42% ; margin : 4% ; " href="http://www.strava.com/activities/527214108"/>
+				</slide>
+				<slide id="fish-ride">
+					<title>GeoJSON Fish</title>
+					<ul>
+						<li>Transformed from <a href="http://www.strava.com/">Strava</a>-originated <a href="http://www.strava.com/activities/523719323">activity</a> <a href="https://github.com/dret/lectures/blob/master/nga-2017/src/fish.gpx">GPX</a></li>
+						<li><a href="http://github.com/">Github</a> understands and renders the resulting <a href="https://github.com/dret/lectures/blob/master/nga-2017/src/fish.geojson">GeoJSON</a></li>
+					</ul>
+					<listing src="fish.geojson" line="1-15"/>
+				</slide>
+				<slide id="goose-ride">
+					<title>GeoJSON Goose</title>
+					<ul>
+						<li>Transformed from <a href="http://www.strava.com/">Strava</a>-originated <a href="http://www.strava.com/activities/527214108">activity</a> <a href="https://github.com/dret/lectures/blob/master/nga-2017/src/goose.gpx">GPX</a></li>
+						<li><a href="http://github.com/">Github</a> understands and renders the resulting <a href="https://github.com/dret/lectures/blob/master/nga-2017/src/goose.geojson">GeoJSON</a></li>
+					</ul>
+					<listing src="goose.geojson" line="1-15"/>
+				</slide>
+				<slide id="geojson-executive">
+					<title>Representing Geometries or Features</title>
+					<ul>
+						<li>GeoJSON has object types for single and multiple geometries and features</li>
+						<ul>
+							<li><a href="http://tools.ietf.org/html/rfc7946#section-3.1">Geometry</a> represents 6 geometry types (see below) and one collection</li>
+							<li><code href="http://tools.ietf.org/html/rfc7946#section-3.2">Feature</code> represents single or multiple <q>spatially bound things</q></li>
+						</ul>
+						<li>GeoJSON's fundamental geometry construct is the <a href="https://tools.ietf.org/html/rfc7946#section-3.1.1">position</a></li>
+						<ul>
+							<li><code href="https://tools.ietf.org/html/rfc7946#section-3.1.2">Point</code> has one position</li>
+							<li><code href="https://tools.ietf.org/html/rfc7946#section-3.1.4">LineString</code>/<code href="https://tools.ietf.org/html/rfc7946#section-3.1.3">MultiPoint</code> have an array of positions</li>
+							<li><code href="https://tools.ietf.org/html/rfc7946#section-3.1.6">Polygon</code>/<code href="https://tools.ietf.org/html/rfc7946#section-3.1.5">MultiLineString</code> have an array of arrays of positions</li>
+							<li><code href="https://tools.ietf.org/html/rfc7946#section-3.1.7">MultiPolygon</code> has an array of Polygons</li>
+						</ul>
+						<li>Features have <code>properties</code> and an associated <code>geometry</code></li>
+						<li><code>Feature</code> and Geometry also come as <code href="https://tools.ietf.org/html/rfc7946#section-3.3">FeatureCollection</code>/<code href="https://tools.ietf.org/html/rfc7946#section-3.1.8">GeometryCollection</code></li>
+						<li>GeoJSON is not meant to represent the full complexity/fidelity of GIS models</li>
+					</ul>
+				</slide>
+				<slide id="geojson-use">
+					<title>Using GeoJSON</title>
+					<ul>
+						<li>Meant as a simple and lightweight representation</li>
+						<ul>
+							<li>Use it in services/APIs where geometries/features need to be represented in a simple way</li>
+							<li>Do not expect full fidelity of possibly complex underlying models</li>
+						</ul>
+						<li>Not meant as a synchronization format for full-fidelity GIS access/interchange</li>
+						<ul>
+							<li>Trying to <q>GISify</q> GeoJSON very likely makes it non-interoperable</li>
+						</ul>
+						<li>Geo-tools such as <a href="http://leafletjs.com/">Leaflet</a> often <a href="http://leafletjs.com/examples/geojson.html">support GeoJSON out of the box</a></li>
+					</ul>
+				</slide>
+			</part>
+			<part id="ietf-wg">
+				<title>IETF GeoJSON Working Group</title>
+				<slide id="geojson-problems">
+					<title>GeoJSON Problems</title>
+					<ul>
+						<li>Despite being popular, the <a href="http://geojson.org/geojson-spec.html">GeoJSON specification</a> was not created/managed by any SDO</li>
+						<ul>
+							<li>Lingering doubts about the stability/stewardship of the specification</li>
+							<li>Some policies require that only SDO-published specifications can be used</li>
+						</ul>
+						<li>Usage around <a href="http://geojson.org/geojson-spec.html#coordinate-reference-system-objects" title="Coordinate Reference System">CRS</a> had caused some interoperability problems</li>
+						<ul>
+							<li>Default rule (WGS84) plus inheritance meant implementations often did not implement the specification</li>
+							<li>Naming of specific CRS was left open, resulting in namespace fragmentation</li>
+						</ul>
+						<li>Extensibility and openness were not specified clearly enough</li>
+						<ul>
+							<li>Lack of guidance made it too easy for implementers to do the wrong thing</li>
+							<li>Experience showed which areas were the most problematic ones</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="geojson-wg">
+					<title>IETF GeoJSON WG</title>
+					<ul>
+						<li>The <a href="https://datatracker.ietf.org/wg/geojson/">IETF GeoJSON Working Group</a> started work in October 2015</li>
+						<ul>
+							<li>The main item on the charter was to revise and publish GeoJSON as an RFC</li>
+							<li>An additional item is to publish a specification for <q>GeoJSON Text Sequences</q></li>
+							<li>Additional work items are currently under consideration</li>
+						</ul>
+						<li>IETF working groups are open to all interested participants</li>
+						<li>IETF RFCs are often accepted as standards that are stable and safe to use</li>
+					</ul>
+				</slide>
+				<slide id="geojson-wg-work">
+					<title>IETF GeoJSON WG Work</title>
+					<ul>
+						<li>Adopted a draft starting from the <a href="http://geojson.org/geojson-spec.html">GeoJSON Specification</a></li>
+						<ul>
+							<li>List of changes available in <a href="https://tools.ietf.org/html/rfc7946#appendix-B"><code>Appendix B</code></a></li>
+						</ul>
+						<li>Started draft about <a href="http://datatracker.ietf.org/drafts/draft-ietf-geojson-text-sequence">GeoJSON Text Sequences</a></li>
+						<ul>
+							<li>Applies <a href="http://tools.ietf.org/html/rfc7464"><q>JSON Text Sequences</q> (RFC 7464)</a> to GeoJSON</li>
+							<li>How to represent sequences of GeoJSON objects in one streamable representation</li>
+							<li>Useful in scenarios where sequences/streams of GeoJSON objects are exchanged</li>
+						</ul>
+						<li>Two more work items currently considered</li>
+						<ul>
+							<li>Providing guidance and a registry for GeoJSON extensions</li>
+							<li>Adding time information to GeoJSON as an initial extension</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="geojson-changes">
+					<title>GeoJSON Changes</title>
+					<ul>
+						<li>Discouraging the use of non-WGS84 CRS</li>
+						<li>Clarifying the extensibility of position arrays</li>
+						<li>Clarifying lines as being Cartesian (instead of being geodesic)</li>
+						<li>Clarifying the definition of a bounding box</li>
+						<li>Making it clear that extensions cannot change the base semantics</li>
+						<li>Defining a new media type <code>application/geo+json</code></li>
+					</ul>
+				</slide>
+			</part>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
