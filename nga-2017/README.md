@@ -1,6 +1,6 @@
-# NGA API Presentation 2017
+# API Strategy for Geospatial Data and Services
 
-Slides for the API presentation at the [National Geospatial Administration (NGA)](http://www.nga.mil/), Richmond, VA, on July 10, 2017.
+Slides for the API presentation at the [National Geospatial-Intelligence Agency (NGA)](https://www.nga.mil/), Richmond, VA, on July 10, 2017.
 
 
 ## License
