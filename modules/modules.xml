@@ -1498,7 +1498,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<title>An <q>IoT Funnel Protocol</q></title>
 				<img src="mqtt-logo.png" href="https://mqtt.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
 				<ul>
-					<li>Initiated by IBM and similar in scope to <link href="AMQP">AMQP</link></li>
+					<li>Initiated by IBM and similar in scope to <link href="amqp">AMQP</link></li>
 					<ul>
 						<li>Instead of AMQP's exchanges/queues, MQTT uses the concept of a <em>message broker</em></li>
 						<li>Message brokers handle subscriptions and distribution to interested clients</li>
