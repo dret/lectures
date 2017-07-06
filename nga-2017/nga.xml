@@ -82,6 +82,28 @@
 		</part>
 		<part id="api-intro">
 			<title>Introduction to APIs</title>
+			<slide id="api-language">
+				<title>APIs are Languages</title>
+				<ul>
+					<li>APIs in their current sense evolved from the <em>local API</em> term</li>
+					<ul>
+						<li><em>Local APIs</em> originated as a way to build systems (i.e., one big thing)</li>
+						<li><em>Network APIs</em> were invented decades ago but nobody has found the silver bullet (yet)</li>
+						<li><em>Web APIs</em> are a loose and evolving collection of principles and patterns</li>
+					</ul>
+					<li>Languages become necessary when coordination is required</li>
+					<ul>
+						<li><em>Human language</em> is a result of improving ecological fitness</li>
+						<li><em>Human written language</em> is a result of new organizational challenges/complexity</li>
+					</ul>
+					<li>Same problems/approaches/answers like other language problems</li>
+					<ul>
+						<li><em>Domain-only:</em> Domains figure out their problems and their languages</li>
+						<li><em>Universal:</em> Find the <em>universal grammar</em> and use it everywhere</li>
+						<li><em>Hybrid:</em> Use shared foundations with principles and patterns but avoid überformats</li>
+					</ul>
+				</ul>
+			</slide>
 			<part id="three-api-drivers">
 				<title>Three Drivers of the API Economy</title>
 				<slide id="api-driver-push">
@@ -134,30 +156,8 @@
 					</ul>
 				</slide>
 			</part>
-			<part id="high-level-view">
-				<title>APIs from 50,000 feet</title>
-				<slide id="api-language">
-					<title>APIs are Languages</title>
-					<ul>
-						<li>APIs in their current sense evolved from the <em>local API</em> term</li>
-						<ul>
-							<li><em>Local APIs</em> originated as a way to build systems (i.e., one big thing)</li>
-							<li><em>Network APIs</em> were invented decades ago but nobody has found the silver bullet (yet)</li>
-							<li><em>Web APIs</em> are a loose and evolving collection of principles and patterns</li>
-						</ul>
-						<li>Languages become necessary when coordination is required</li>
-						<ul>
-							<li><em>Human language</em> is a result of improving ecological fitness</li>
-							<li><em>Human written language</em> is a result of new organizational challenges/complexity</li>
-						</ul>
-						<li>Same problems/approaches/answers like other language problems</li>
-						<ul>
-							<li><em>Domain-only:</em> Domains figure out their problems and their languages</li>
-							<li><em>Universal:</em> Find the <em>universal grammar</em> and use it everywhere</li>
-							<li><em>Hybrid:</em> Use shared foundations with principles and patterns but avoid überformats</li>
-						</ul>
-					</ul>
-				</slide>
+			<part id="two-api-views">
+				<title>Two Views of API Scope</title>
 				<slide id="two-views">
 					<title>Two Views of API Scope/Focus</title>
 					<ul>
