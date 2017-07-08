@@ -373,6 +373,21 @@
 						<li>Cross-service examples and use cases need to respect this autonomy</li>
 					</ul>
 				</slide>
+				<slide id="decentralization-implementation">
+					<title>Decentralization (Implementation Level)</title>
+					<ul>
+						<li>SOAPy SOA focused on <q>API-enabling the monolith</q></li>
+						<ul>
+							<li>Enabling access to monolith capabilities</li>
+							<li>Not helping with better structure/separation of capabilities</li>
+						</ul>
+						<li>Moving away from one-size-fits-all implementation platforms</li>
+						<ul>
+							<li>Reduce energy spent to find the one true platform</li>
+							<li>Increase energy spent to operate/instrument a diversity of platforms</li>
+						</ul>
+					</ul>
+				</slide>
 				<slide id="loose-coupling">
 					<title>Loose Coupling</title>
 					<ul>
