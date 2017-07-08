@@ -203,8 +203,8 @@
 			<title>API Design</title>
 			<part id="messages-models">
 				<title>Messages vs. Models</title>
-				<slide id="api-language">
-					<title>APIs are Languages</title>
+				<slide id="api-language-simplicity">
+					<title>API Language Simplicity</title>
 					<ul>
 						<li>Interfaces should hide domain complexity (<em>encapsulation</em>)</li>
 						<ul>
