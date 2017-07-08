@@ -216,10 +216,11 @@
 							<li>They establish a language between API provider and consumer</li>
 							<li>Keeping the language simple keeps the API usable</li>
 						</ul>
-						<li><q>Model Creep</q> is an obstacle for API adoption</li>
+						<li><q>Model Creep</q> is an obstacle for API adoption and stability</li>
 						<ul>
 							<li>There is no <q>one true model</q> for any domain</li>
-							<li>Keeping the language simple minimizes conflict potential</li>
+							<li>Keeping the language simple makes it easier to understand and use</li>
+							<li>Keeping the language simple makes it easier to change the implementation</li>
 						</ul>
 					</ul>
 				</slide>
