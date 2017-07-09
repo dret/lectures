@@ -82,6 +82,21 @@
 		</part>
 		<part id="platforms-landscapes">
 			<title>From Platforms to Landscapes</title>
+			<slide id="it-instinct">
+				<title>So you want to build APIs? Look at the Web!</title>
+				<ul>
+					<li><em>Problem focus</em> over <em>solution focus</em></li>
+					<ul>
+						<li><em>Problems</em> are addressed by building capabilities with standardized interfaces</li>
+						<li><em>Solutions</em> are created/controlled by those who solve the problems</li>
+					</ul>
+					<li>What would have happened if the Web had been solution-standardized?</li>
+					<ul>
+						<li><em>Flash</em> offers a glimpse for one narrow slice of the Web</li>
+						<li>Flash tooling was retrofitted to become solution-agnostic</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="platform-monolith">
 				<title>Platforms are <q>Monoliths by Design</q></title>
 				<ul>
