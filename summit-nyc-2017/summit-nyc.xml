@@ -82,18 +82,39 @@
 		</part>
 		<part id="why-what-how">
 			<title>Landscaping: Why/What/How</title>
+			<slide id="define-landscaping">
+				<title>Observe and Support</title>
+			</slide>
 			<part id="why">
-				<title>Why: Look at the Problem</title>
+				<title>Why: Look at the Landscape</title>
+				<slide id="why-web">
+					<title>Why Web Landscaping?</title>
+				</slide>
+				<slide id="why-services">
+					<title>Why Service Landscaping?</title>
+				</slide>
 			</part>
 			<part id="what">
-				<title>What: What Solution Addresses the problem?</title>
+				<title>What: Identify Pain Points</title>
+				<slide id="what-web">
+					<title>What are common Web Problems?</title>
+				</slide>
+				<slide id="what-services">
+					<title>What are common API Problems?</title>
+				</slide>
 			</part>
 			<part id="how">
-				<title>How: How to Apply the Solution</title>
+				<title>How: Help with Languages and Tools</title>
+				<slide id="how-web">
+					<title>How to balance fairness and safety?</title>
+				</slide>
+				<slide id="how-services">
+					<title>How to get the most out of service visibility?</title>
+				</slide>
 			</part>
 		</part>
-		<part id="service-inventory">
-			<title>Case Study: Service Inventory</title>
+		<part id="service-description">
+			<title>Case Study: Service Descriptions</title>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
