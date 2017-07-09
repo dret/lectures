@@ -511,7 +511,7 @@
 							<li><code href="https://tools.ietf.org/html/rfc7946#section-3.1.2">Point</code> has one position</li>
 							<li><code href="https://tools.ietf.org/html/rfc7946#section-3.1.4">LineString</code>/<code href="https://tools.ietf.org/html/rfc7946#section-3.1.3">MultiPoint</code> have an array of positions</li>
 							<li><code href="https://tools.ietf.org/html/rfc7946#section-3.1.6">Polygon</code>/<code href="https://tools.ietf.org/html/rfc7946#section-3.1.5">MultiLineString</code> have an array of arrays of positions</li>
-							<li><code href="https://tools.ietf.org/html/rfc7946#section-3.1.7">MultiPolygon</code> has an array of Polygons</li>
+							<li><code href="https://tools.ietf.org/html/rfc7946#section-3.1.7">MultiPolygon</code> has an array of polygons</li>
 						</ul>
 						<li>Features have <code>properties</code> and an associated <code>geometry</code></li>
 						<li><code>Feature</code> and Geometry also come as <code href="https://tools.ietf.org/html/rfc7946#section-3.3">FeatureCollection</code>/<code href="https://tools.ietf.org/html/rfc7946#section-3.1.8">GeometryCollection</code></li>
