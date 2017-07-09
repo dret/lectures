@@ -560,6 +560,18 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="api-matters">
+				<title>API Matters</title>
+				<ul>
+					<li>APIs are a means to decouple tightly coupled components</li>
+					<li><em>API Strategy</em> should focus on maximizing API-derived value</li>
+					<ul>
+						<li>Always look at both sides of the internal/external divide</li>
+						<li>Avoid decentralizing architecture but centralizing implementation</li>
+					</ul>
+					<li><em>API Management</em> monitors and nurtures a diverse set of APIs</li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
