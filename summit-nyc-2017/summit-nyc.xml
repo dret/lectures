@@ -198,6 +198,18 @@
 			</slide>
 			<slide id="description-tooling">
 				<title>Description Tooling</title>
+				<ul>
+					<li>Tooling can <em>only</em> use the description format</li>
+					<li>Conventions around how the format is used in the landscape</li>
+					<ul>
+						<li><em>Push</em> vs. <em>pull</em> and minimal behavioral standards</li>
+						<li>Tooling can automate (part of) the service approval process</li>
+					</ul>
+					<li>Gardening makes it much easier to build useful tooling</li>
+					<ul>
+						<li>Services that grow in the garden will make honest statements</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
