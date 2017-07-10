@@ -169,7 +169,12 @@
 						<li><code><a href="http://apisjson.org/">APIs.json</a></code> only defines a format (description)</li>
 						<li><a href="http://www.pivio.io/">Pivio</a> focuses on the tooling (submission and indexing)</li>
 					</ul>
-					<li>Effective landscaping needs languages and tooling</li>
+					<li>Effective landscaping needs languages <em>and</em> tooling</li>
+					<ul>
+						<li><em>Languages</em> define <em>what you are doing</em></li>
+						<li><em>Tooling</em> helps with <em>how it can be done</em></li>
+						<li>New tooling can be built <em>only</em> if a well-defined language exists</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
