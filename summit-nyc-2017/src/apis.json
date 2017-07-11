@@ -2,12 +2,7 @@
   "name": "API Evangelist",
   "description": "This is an inventory of APIs available as part of the API Evangelist network.",
   "image": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png",
-  "tags": [
-    "application programming interface",
-    "API",
-    "News",
-    "Analysis"
-  ],
+  "tags": [ "application programming interface", "API", "News", "Analysis" ],
   "created": "2014-04-07",
   "modified": "2014-07-09",
   "url": "http://apievangelist.com/apis.json",
@@ -19,14 +14,7 @@
       "image": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png",
       "humanURL": "http://developer.apievangelist.com",
       "baseURL": "http://api.apievangelist.com/definitions/Analysis",
-      "tags": [
-        "blog",
-        "industry",
-        "analysis",
-        "new",
-        "API",
-        "Application Programming Interface"
-      ],
+      "tags": [ "blog", "industry", "analysis", "new", "API", "Application Programming Interface" ],
       "properties": [
         {
           "type": "X-signup",
@@ -59,10 +47,7 @@
       "image": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png",
       "humanURL": "http://developer.apievangelist.com",
       "baseURL": "http://api.apievangelist.com/definitions/APIs",
-      "tags": [
-        "application programming interface",
-        "API"
-      ],
+      "tags": [ "application programming interface", "API" ],
       "properties": [
         {
           "type": "X-signup",
@@ -95,12 +80,7 @@
       "image": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png",
       "humanURL": "http://developer.apievangelist.com",
       "baseURL": "http://api.apievangelist.com/definitions/BuildingBlocks",
-      "tags": [
-        "application programming interface",
-        "API",
-        "features",
-        "building blocks"
-      ],
+      "tags": [ "application programming interface", "API", "features", "building blocks" ],
       "properties": [
         {
           "type": "X-signup",
@@ -133,12 +113,7 @@
       "image": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png",
       "humanURL": "http://developer.apievangelist.com",
       "baseURL": "http://api.apievangelist.com/definitions/Curated",
-      "tags": [
-        "news",
-        "artices",
-        "links",
-        "API"
-      ],
+      "tags": [ "news", "artices", "links", "API" ],
       "properties": [
         {
           "type": "X-signup",
@@ -171,11 +146,7 @@
       "image": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png",
       "humanURL": "http://developer.apievangelist.com",
       "baseURL": "http://api.apievangelist.com/definitions/Tools",
-      "tags": [
-        "API",
-        "Application Programming Interface",
-        "Tools"
-      ],
+      "tags": [ "API", "Application Programming Interface", "Tools" ],
       "properties": [
         {
           "type": "X-signup",
