@@ -110,14 +110,14 @@
 				<title>Platforms are <q>Monoliths by Design</q></title>
 				<ul>
 					<li>Designed to provide shared tooling</li>
-					<li><em>Speed and safety</em> balance dialed to the <q>safety</q> end of the scale</li>
+					<li>Tooling becomes the backdoor for <q>coupling creep</q></li>
 				</ul>
 			</slide>
 			<slide id="landscape">
 				<title>Landscapes are <q>Decentralized by Design</q></title>
 				<ul>
 					<li>Designed to use shared languages</li>
-					<li><em>Speed and safety</em> balance dialed to the <q>speed</q> end of the scale</li>
+					<li>Communications/coupling can only happen through APIs</li>
 				</ul>
 			</slide>
 			<slide id="ccc">
