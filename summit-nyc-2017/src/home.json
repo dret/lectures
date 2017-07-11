@@ -1,28 +1,28 @@
-     {
-       "api": {
-         "title": "Example API",
-         "links": {
-           "author": "mailto:api-admin@example.com",
-           "describedBy": "https://example.com/api-docs/"
-         }
+{
+ "api": {
+   "title": "Example API",
+   "links": {
+     "author": "mailto:api-admin@example.com",
+     "describedBy": "https://example.com/api-docs/"
+   }
+ },
+ "resources": {
+   "tag:me@example.com,2016:widgets": {
+     "href": "/widgets/"
+   },
+   "tag:me@example.com,2016:widget": {
+     "hrefTemplate": "/widgets/{widget_id}",
+     "hrefVars": {
+       "widget_id": "https://example.org/param/widget"
+     },
+     "hints": {
+       "allow": ["GET", "PUT", "DELETE", "PATCH"],
+       "formats": {
+         "application/json": {}
        },
-       "resources": {
-         "tag:me@example.com,2016:widgets": {
-           "href": "/widgets/"
-         },
-         "tag:me@example.com,2016:widget": {
-           "hrefTemplate": "/widgets/{widget_id}",
-           "hrefVars": {
-             "widget_id": "https://example.org/param/widget"
-           },
-           "hints": {
-             "allow": ["GET", "PUT", "DELETE", "PATCH"],
-             "formats": {
-               "application/json": {}
-             },
-             "acceptPatch": ["application/json-patch+json"],
-             "acceptRanges": ["bytes"]
-           }
-         }
-       }
+       "acceptPatch": ["application/json-patch+json"],
+       "acceptRanges": ["bytes"]
      }
+   }
+ }
+}
