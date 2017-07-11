@@ -111,6 +111,7 @@
 				<ul>
 					<li>Designed to provide shared tooling</li>
 					<li>Tooling becomes the backdoor for <q>coupling creep</q></li>
+					<li>Resist the urge to provide an <q>API platform</q></li>
 				</ul>
 			</slide>
 			<slide id="landscape">
@@ -118,10 +119,20 @@
 				<ul>
 					<li>Designed to use shared languages</li>
 					<li>Communications/coupling can only happen through APIs</li>
+					<li>Anything that needs to be shared must be openly communicated</li>
 				</ul>
 			</slide>
 			<slide id="ccc">
 				<title>Communicating Code Couples</title>
+				<ul>
+					<li>Importing code means coupling with the code</li>
+					<li>Code that <em>does not communicate</em> creates no external coupling</li>
+					<li>Code that <em>does communicate</em> creates no external coupling</li>
+					<ul>
+						<li>Code that <em>communicates via a managed API</em> creates acceptable coupling</li>
+						<li>Code that <em>communicates via hidden channels</em> creates unacceptable coupling</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="language-encapsulation">
 				<title>Languages Encapsulate Capabilities</title>
