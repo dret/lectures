@@ -112,6 +112,11 @@
 					<li>Designed to provide shared tooling</li>
 					<li>Tooling becomes the backdoor for <q>coupling creep</q></li>
 					<li>Resist the urge to provide an <q>API platform</q></li>
+					<li>Ignoring one of the two major API value propositions</li>
+					<ul>
+						<li>APIs are valuable because they decouple service users and providers</li>
+						<li>APIs are valuable because they decouple service implementations</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="landscape">
@@ -120,6 +125,11 @@
 					<li>Designed to use shared languages</li>
 					<li>Communications/coupling can only happen through APIs</li>
 					<li>Anything that needs to be shared must be openly communicated</li>
+					<li>Satisfying the two major API value propositions</li>
+					<ul>
+						<li>APIs are valuable because they decouple service users and providers</li>
+						<li>APIs are valuable because they decouple service implementations</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="ccc">
