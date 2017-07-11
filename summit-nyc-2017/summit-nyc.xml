@@ -139,7 +139,7 @@
 					<li>Code that <em>does not communicate</em> creates no external coupling</li>
 					<li>Code that <em>does communicate</em> creates external coupling</li>
 					<ul>
-						<li>Code that <em>communicates via a managed API</em> creates acceptable coupling</li>
+						<li>Code that <em>communicates via a visible API</em> creates acceptable coupling</li>
 						<li>Code that <em>communicates via hidden channels</em> creates unacceptable coupling</li>
 					</ul>
 				</ul>
