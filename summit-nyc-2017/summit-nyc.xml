@@ -152,9 +152,22 @@
 			<title>Landscaping: Why/What/How</title>
 			<slide id="define-landscaping">
 				<title>Observe and Support</title>
+				<ul>
+					<li>What are shared capabilities that services can use?</li>
+					<li>What are ways in which services are using/sharing them already?</li>
+					<li>What are ways in which these capabilities can be generalized?</li>
+					<li>What are ways in which these capabilities can productized?</li>
+				</ul>
 			</slide>
 			<slide id="why">
 				<title>Why: Landscape Purpose and Goals</title>
+				<ul>
+					<li>Some goals may be most relevant at the landscape level</li>
+					<ul>
+						<li>How to provide meaningful monitoring that works across the landscape</li>
+						<li>How to provide security so that services do not have to implement it</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="what">
 				<title>What: Landscape Signposting</title>
