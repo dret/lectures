@@ -162,9 +162,9 @@
 				<ul>
 					<li>Apply well-known <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Patterns for Robust Extensibility</a></li>
 					<ul>
-						<li>Meaningful core semantics</li>
-						<li>Well-defined extension points</li>
-						<li>Well-defined processing model</li>
+						<li><em>Meaningful core semantics:</em> Create a useful minimal language</li>
+						<li><em>Well-defined extension points:</em> Allow the language to evolve</li>
+						<li><em>Well-defined processing model:</em> Say how to behave when encountering extensions</li>
 					</ul>
 					<li>Loose coupling encourages service changes and replacements</li>
 					<ul>
