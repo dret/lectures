@@ -854,6 +854,18 @@
 			<title>Lifecycle Management</title>
 		</part>
 	</presentation>
+	<presentation id="extensibility">
+		<title>Extensibility</title>
+		<toc class="abstract">...</toc>
+		<toc class="resources">...</toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="registries">
+			<title>Registries</title>
+		</part>
+	</presentation>
 	<presentation id="hypermedia">
 		<title>Hypermedia</title>
 		<toc class="abstract">...</toc>
@@ -1698,15 +1710,6 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		<part id="websub">
 			<title>WebSub</title>
 		</part>
-	</presentation>
-	<presentation id="registries">
-		<title>Registries</title>
-		<toc class="abstract">...</toc>
-		<toc class="resources">...</toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 	</presentation>
 	<presentation id="representations">
 		<title>Representations</title>
