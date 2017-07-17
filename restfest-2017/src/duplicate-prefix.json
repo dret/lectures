@@ -1,0 +1,5 @@
+{"_links": {
+  "curies": [ { "name": "prefix1", "href": "http://example.com/rel/{rel}" },
+              { "name": "prefix2", "href": "http://example.com/rel/{rel}" } ],
+  "prefix1:link": {"href": "/example1"},
+  "prefix2:link": {"href": "/example2"} }}

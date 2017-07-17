@@ -106,6 +106,10 @@
 				<title>Let's Fix HAL!</title>
 				<img src="lets-fix-hal-braveheart.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="examples">
+				<title>Some Examples</title>
+				<listing src="duplicate-prefix.json"/>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
