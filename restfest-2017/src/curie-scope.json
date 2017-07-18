@@ -1,0 +1,3 @@
+{ "_links": {
+    "curies": [ { "name": "prefix", "href": "http://example.com/rel/{rel}" } ]},
+  "_embedded": { "_links": { "prefix:link": { "href": "/example" } }}}
