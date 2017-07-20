@@ -1,0 +1,7 @@
+{ "_embedded": { "item" : [
+  { "_links": {
+      "curies": [ { "name": "prefix", "href": "http://example.com/rel/{rel}" } ], 
+      "prefix:link": { "href": "/example" } }},
+  { "_links": {
+      "curies": [ { "name": "prefix", "href": "http://example.org/rel/{rel}" } ], 
+      "prefix:link": { "href": "/example" } }}]}}
