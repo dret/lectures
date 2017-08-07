@@ -143,6 +143,19 @@
 		</part>
 		<part id="api-platforms">
 			<title>API Platforms</title>
+			<slide id="platform-views">
+				<title>Two Views of Platforms</title>
+				<ul>
+					<li>Platforms as a <em>concrete foundation for building things</em></li>
+					<ul>
+						<li><em>Specific products as component development platforms</em></li>
+					</ul>
+					<li>Platforms as a <em>set of shared concepts to facilitate cooperation</em></li>
+					<ul>
+						<li><em>The Web as a Platform</em></li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="api-platform-monolith">
 				<title>API Platform Monolith</title>
 				<img title="The (API) Monolith" src="api-platform-monolith.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
