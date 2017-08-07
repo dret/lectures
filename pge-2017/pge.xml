@@ -323,6 +323,24 @@
 			</slide>
 			<slide id="resource-representation">
 				<title>Resource Representation</title>
+				<ul>
+					<li>Resources are abstract entities (they cannot be used <em>per se</em>)</li>
+					<ul>
+						<li><link href="identification-constraint"/> guarantees that they are clearly identified</li>
+						<li>they are accessed through a <link href="interface-constraint"/></li>
+					</ul>
+					<li>Resources are accessed using <em>resource representations</em></li>
+					<ul>
+						<li>resource representations are sufficient to represent a resource</li>
+						<li>it is communicated which kind of representation is used</li>
+						<li>representation formats can be negotiated between peers</li>
+					</ul>
+					<li>Resource representations can be based on different constraints</li>
+					<ul>
+						<li>XML and JSON can represent the same model for different users</li>
+						<li>whatever the representation is, it must <link href="hypermedia-constraint"> support links</link></li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="resource-interaction">
 				<title>Resource Interaction</title>
