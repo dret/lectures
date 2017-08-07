@@ -344,6 +344,20 @@
 			</slide>
 			<slide id="resource-interaction">
 				<title>Resource Interaction</title>
+				<ul>
+					<li>The same small set of operations applies to <link href="identification-constraint">everything</link></li>
+					<li>A small set of <em>verbs</em> applied to a large set of <em>nouns</em></li>
+					<li>verbs are universal and not invented on a per-application base</li>
+					<li>if many applications need new verbs, the uniform interface can be extended</li>
+					<li>natural language works in the same way (new verbs rarely enter language)</li>
+					<li>Identify operations that are candidates for optimization</li>
+					<ul>
+						<li><http>GET</http> and <http>HEAD</http> are <em>safe operations</em></li>
+						<li><http>PUT</http> and <http>DELETE</http> are <em>idempotent operations</em></li>
+						<li><http>POST</http> is the catch-all and can have side-effects</li>
+					</ul>
+					<li>Build functionality based on useful properties of these operations</li>
+				</ul>
 			</slide>
 			<slide id="online-offline">
 				<title>Online/Offline Capability</title>
