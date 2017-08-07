@@ -80,6 +80,25 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="api-platforms">
+			<title>API Platforms</title>
+			<slide id="api-platform-monolith">
+				<title>API Platform Monolith</title>
+				<img title="The (API) Monolith" src="api-platform-monolith.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-platform-microservices">
+				<title>APIs and Microservices</title>
+				<img title="APIs and Microservices" src="api-platform-microservices.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-platform-gateway">
+				<title>API Gateway</title>
+				<img title="API Gateway" src="api-platform-gateway.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-platform-microgateway">
+				<title>API Microgateway</title>
+				<img title="API Microgateway" src="api-platform-microgateway.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
