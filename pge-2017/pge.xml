@@ -326,8 +326,8 @@
 				<ul>
 					<li>Resources are abstract entities (they cannot be used <em>per se</em>)</li>
 					<ul>
-						<li><link href="identification-constraint"/> guarantees that they are clearly identified</li>
-						<li>they are accessed through a <link href="interface-constraint"/></li>
+						<li><link href="resource-identity"/> guarantees that they are clearly identified</li>
+						<li>they are accessed through <link href="resource-interaction"/></li>
 					</ul>
 					<li>Resources are accessed using <em>resource representations</em></li>
 					<ul>
@@ -338,14 +338,14 @@
 					<li>Resource representations can be based on different constraints</li>
 					<ul>
 						<li>XML and JSON can represent the same model for different users</li>
-						<li>whatever the representation is, it must <link href="hypermedia-constraint"> support links</link></li>
+						<li>whatever the representation is, it must <link href="resource-linking"> support links</link></li>
 					</ul>
 				</ul>
 			</slide>
 			<slide id="resource-interaction">
 				<title>Resource Interaction</title>
 				<ul>
-					<li>The same small set of operations applies to <link href="identification-constraint">everything</link></li>
+					<li>The same small set of operations applies to <link href="resource-identity">everything</link></li>
 					<li>A small set of <em>verbs</em> applied to a large set of <em>nouns</em></li>
 					<li>verbs are universal and not invented on a per-application base</li>
 					<li>if many applications need new verbs, the uniform interface can be extended</li>
@@ -362,7 +362,7 @@
 			<slide id="resource-linking">
 				<title>Resource Linking</title>
 				<ul>
-					<li><link href="self-describing-constraint">Resource representations</link> contain links to <link href="identification-constraint">identified resources</link></li>
+					<li><link href="resource-representation">Resource representations</link> contain links to <link href="resource-identity">identified resources</link></li>
 					<li>Resources and state can be used by navigating links</li>
 					<ul>
 						<li>links make interconnected resources navigable</li>
@@ -370,9 +370,9 @@
 					</ul>
 					<li>RESTful applications <em>navigate</em> instead of <em>calling</em></li>
 					<ul>
-						<li><link href="self-describing-constraint">representations</link> contain information about possible traversals</li>
+						<li><link href="resource-representation">representations</link> contain information about possible traversals</li>
 						<li>the application navigates to the next resource depending on link semantics</li>
-						<li>navigation can be delegated since all links use <link href="identification-constraint">identifiers</link></li>
+						<li>navigation can be delegated since all links use <link href="resource-identity">identifiers</link></li>
 					</ul>
 				</ul>
 			</slide>
