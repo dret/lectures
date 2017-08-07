@@ -305,6 +305,21 @@
 			<title>API Building Blocks</title>
 			<slide id="resource-identity">
 				<title>Resource Identity</title>
+				<ul>
+					<li>Name everything that you want to talk about</li>
+					<li><q>Thing</q> in this case should refer to <em>anything</em></li>
+					<ul>
+						<li><em>products</em> in an online shop</li>
+						<li><em>categories</em> that are used for grouping products</li>
+						<li><em>customers</em> that are expected to buy products</li>
+						<li><em>shopping carts</em> where customers collect products</li>
+					</ul>
+					<li><em>Application state</em> also is represented as a resource</li>
+					<ul>
+						<li><em>next</em> links on multi-page submission processes</li>
+						<li><em>paged results</em> with URIs identifying following pages</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="resource-representation">
 				<title>Resource Representation</title>
