@@ -359,6 +359,23 @@
 					<li>Build functionality based on useful properties of these operations</li>
 				</ul>
 			</slide>
+			<slide id="resource-linking">
+				<title>Resource Linking</title>
+				<ul>
+					<li><link href="self-describing-constraint">Resource representations</link> contain links to <link href="identification-constraint">identified resources</link></li>
+					<li>Resources and state can be used by navigating links</li>
+					<ul>
+						<li>links make interconnected resources navigable</li>
+						<li>without navigation, identifying new resources is service-specific</li>
+					</ul>
+					<li>RESTful applications <em>navigate</em> instead of <em>calling</em></li>
+					<ul>
+						<li><link href="self-describing-constraint">representations</link> contain information about possible traversals</li>
+						<li>the application navigates to the next resource depending on link semantics</li>
+						<li>navigation can be delegated since all links use <link href="identification-constraint">identifiers</link></li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="online-offline">
 				<title>Online/Offline Capability</title>
 			</slide>
