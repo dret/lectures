@@ -347,9 +347,11 @@
 				<ul>
 					<li>The same small set of operations applies to <link href="resource-identity">everything</link></li>
 					<li>A small set of <em>verbs</em> applied to a large set of <em>nouns</em></li>
-					<li>verbs are universal and not invented on a per-application base</li>
-					<li>if many applications need new verbs, the uniform interface can be extended</li>
-					<li>natural language works in the same way (new verbs rarely enter language)</li>
+					<ul>
+						<li>verbs are universal and not invented on a per-application base</li>
+						<li>if many applications need new verbs, the uniform interface can be extended</li>
+						<li>natural language works in the same way (new verbs rarely enter language)</li>
+					</ul>
 					<li>Identify operations that are candidates for optimization</li>
 					<ul>
 						<li><http>GET</http> and <http>HEAD</http> are <em>safe operations</em></li>
