@@ -380,6 +380,31 @@
 			</slide>
 			<slide id="online-offline">
 				<title>Online/Offline Capability</title>
+				<ul>
+					<li>Avoid conversation state and only use <em>resource</em> and <em>application state</em></li>
+					<ul>
+						<li>for many RESTful applications, state is an essential part</li>
+						<li>the idea of REST is to avoid long-lasting transactions <em>in applications</em></li>
+					</ul>
+					<li>Statelessness means to move state to clients or resources</li>
+					<ul>
+						<li>the most important consequence: avoid state in server-side applications</li>
+					</ul>
+					<li><em>Resource state</em> is managed on the server</li>
+					<ul>
+						<li>it is the same for every client working with the service</li>
+						<li>when a client changes resource state other clients see this change as well</li>
+					</ul>
+					<li><em>Client state</em> is managed on the client</li>
+					<ul>
+						<li>it is specific for a client and thus has to be maintained by each client</li>
+					</ul>
+					<li><em>Security issues</em> often are important with client state</li>
+					<ul>
+						<li>clients can (try to) cheat by lying about their state</li>
+						<li>keeping client state on the server can be expensive (but may be worth the price)</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
