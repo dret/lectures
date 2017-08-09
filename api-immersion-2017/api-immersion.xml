@@ -26,7 +26,7 @@
 	</license>
 	<title>API Immersion</title>
 	<presentation id="index">
-		<title>???</title>
+		<title>Don’t let your Microservices Garden Overgrow</title>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 		<affiliation><a href="http://www.apiacademy.co/">API Academy</a>, <a href="http://www.ca.com/">CA Technologies</a></affiliation>
 		<date short="2017-08-14">August 14, 2017</date>
@@ -110,6 +110,9 @@
 				<title>API Microgateway</title>
 				<img title="API Microgateway" src="api-platform-microgateway.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+		</part>
+		<part id="garden-management">
+			<title>Managing the API Garden/Platform</title>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
