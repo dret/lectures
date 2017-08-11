@@ -26,7 +26,7 @@
 	</license>
 	<title>API Immersion</title>
 	<presentation id="index">
-		<title>Don’t let your Microservices Garden Overgrow</title>
+		<title>Don't let your Microservices Garden Overgrow</title>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 		<affiliation><a href="http://www.apiacademy.co/">API Academy</a>, <a href="http://www.ca.com/">CA Technologies</a></affiliation>
 		<date short="2017-08-14">August 14, 2017</date>
@@ -122,18 +122,18 @@
 			<slide id="what-exactly">
 				<title>What Exactly?</title>
 				<ul>
-					<li>Managing the garden for producers</li>
+					<li>Managing the landscape for producers</li>
 					<ul>
 						<li>Get <a href="https://martinfowler.com/bliki/MicroservicePrerequisites.html">infrastructure, deployment, and monitoring</a> in place</li>
 						<li>Focus on <a href="https://www.oreilly.com/ideas/three-pillars-of-microservice-culture">communications, teams, and innovation</a></li>
-						<li>The promise is a diverse and dynamic garden of useful and innovative products</li>
+						<li>The promise is a diverse and dynamic landscape of useful and innovative products</li>
 						<li>Some areas may be fenced off (not intended to public access/consumption)</li>
 					</ul>
-					<li>Managing the garden for consumers</li>
+					<li>Managing the landscape for consumers</li>
 					<ul>
 						<li>Consumption should come with a predictable level of robustness</li>
 						<li>Some consumers might want product documentation and labels (i.e., UI and UX)</li>
-						<li>Delivering UI/UX works better with an existing gardening culture</li>
+						<li>Delivering UI/UX works better with an existing landscaping culture</li>
 						<li>Culture needs to emerge, solidify, and be communicated/shared</li>
 					</ul>
 				</ul>
@@ -181,8 +181,8 @@
 				<img title="API Microgateway" src="api-platform-microgateway.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
-		<part id="garden-management">
-			<title>Managing the API Garden/Platform</title>
+		<part id="landscape-management">
+			<title>Managing the API Landscape/Platform</title>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
