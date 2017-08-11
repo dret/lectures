@@ -191,7 +191,17 @@
 			</slide>
 		</part>
 		<part id="landscape-management">
-			<title>Managing the API Landscape/Platform</title>
+			<title>Managing the API Landscape/Platform: Change Management</title>
+			<slide>
+				<title>Example: API Change Management</title>
+				<ul>
+					<li>API change management becomes increasingly important</li>
+					<ul>
+						<li>Microservices optimize for quick design/deployment/development/decommissioning</li>
+						<li>Even in MSA-land there are <em>Experience APIs</em> meant to deliver some API stability</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
