@@ -200,6 +200,19 @@
 						<li>Microservices optimize for quick design/deployment/development/decommissioning</li>
 						<li>Even in MSA-land there are <em>Experience APIs</em> meant to deliver some API stability</li>
 					</ul>
+					<li>APIs can change in terms of features and will be decommissioned at some point</li>
+					<ul>
+						<li><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Robust extensibility</a> helps to facilitate non-breaking API changes</li>
+						<li><em>Hypermedia</em> helps as a pattern to extend extensibility beyond data models</li>
+						<li><a href="http://semver.org/">Semantic versioning</a> may be used to keep track of API changes</li>
+						<li><a href="http://dret.typepad.com/dretblog/2015/08/http-sunset-header.html">HTTP <code>Sunset</code>ting</a> can be used to signal upcoming sunsets on the HTTP level</li>
+					</ul>
+					<li>Always follow the <em>why/what/how</em> triad for all platform management</li>
+					<ul>
+						<li><em>Why:</em> Some services/consumers are interested in how an API will change</li>
+						<li><em>What:</em> Follow principles/patterns/protocols to manage/expose API changes</li>
+						<li><em>How:</em> Support tooling/services to implement and test platform principles</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
