@@ -205,6 +205,16 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="some-management-required">
+				<title>Manage Your API Landscape</title>
+				<ul>
+					<li>Manage API dependencies</li>
+					<li>Manage API requirements based on exposure/consumption</li>
+					<li>Evolve API descriptions/capabilities over time based on API lifecycle management</li>
+					<li>Platforms should be based on practices/patterns/protocols</li>
+					<li>Provide platform support in the form of components or services</li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
