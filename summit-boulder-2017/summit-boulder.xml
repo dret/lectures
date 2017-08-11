@@ -119,6 +119,25 @@
 					<li>Test Differently</li>
 				</ol>
 			</slide>
+			<slide id="what-exactly">
+				<title>What Exactly?</title>
+				<ul>
+					<li>Managing the garden for producers</li>
+					<ul>
+						<li>Get <a href="https://martinfowler.com/bliki/MicroservicePrerequisites.html">infrastructure, deployment, and monitoring</a> in place</li>
+						<li>Focus on <a href="https://www.oreilly.com/ideas/three-pillars-of-microservice-culture">communications, teams, and innovation</a></li>
+						<li>The promise is a diverse and dynamic garden of useful and innovative products</li>
+						<li>Some areas may be fenced off (not intended to public access/consumption)</li>
+					</ul>
+					<li>Managing the garden for consumers</li>
+					<ul>
+						<li>Consumption should come with a predictable level of robustness</li>
+						<li>Some consumers might want product documentation and labels (i.e., UI and UX)</li>
+						<li>Delivering UI/UX works better with an existing gardening culture</li>
+						<li>Culture needs to emerge, solidify, and be communicated/shared</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="how">
 				<title>How?</title>
 			</slide>
