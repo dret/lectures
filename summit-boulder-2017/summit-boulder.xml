@@ -232,7 +232,7 @@
 					<li>One possible requirement is that <em>Public APIs</em> must support <code href="http://webconcepts.info/concepts/http-header/Sunset">Sunset</code></li>
 					<ul>
 						<li>Services must document/describe the support of <code>Sunset</code></li>
-						<li>Service may implement <code>Sunset</code> any way they like</li>
+						<li>Services may implement <code>Sunset</code> any way they like</li>
 						<li>The simplest option may be <em><code>Sunset</code> policies</em> on a gateway</li>
 					</ul>
 				</ul>
