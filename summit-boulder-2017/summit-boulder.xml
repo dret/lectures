@@ -215,6 +215,28 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="sunset-patterns">
+				<title><code>Sunset</code>: An Even Simpler Example</title>
+				<ul>
+					<li><em>API Description</em> guidelines may ask for change management documentation</li>
+					<ul>
+						<li>Requirement: Can be as simple as making documentation discoverable on deploy</li>
+						<li>Resolution: Can be as simple as stating that there is no change management</li>
+					</ul>
+					<li><em>Discoverability</em> and <em>machine-readability</em> are different issues</li>
+					<ul>
+						<li>Making description resources <em>discoverable</em> is easy and can be validated during deployment</li>
+						<li>Every API entering the landscape does make change management documentation discoverable</li>
+						<li>For some classes of APIs/services additional requirements may be put in place</li>
+					</ul>
+					<li>One possible requirement is that <em>Public APIs</em> must support <code>Sunset</code></li>
+					<ul>
+						<li>Services must document/describe the support of <code>Sunset</code></li>
+						<li>Service may implement <code>Sunset</code> any way they like</li>
+						<li>The simplest option may be <em><code>Sunset</code> policies</em> on a gateway</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
