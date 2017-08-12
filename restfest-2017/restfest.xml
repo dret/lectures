@@ -118,6 +118,23 @@
 				<listing src="prefix-override.json"/>
 				<listing src="prefix-confusion.json"/>
 			</slide>
+			<slide id="housekeeping">
+				<title>If it's broken, fix it</title>
+				<ul>
+					<li>HAL needs a fair bit of housekeeping</li>
+					<ul>
+						<li>A <q>HAL CURIE</q> is not a CURIE</li>
+						<li>Embedded resources are underspecified</li>
+						<li>Namespace (<q>CURIE</q>) mechanics are underspecified</li>
+					</ul>
+					<li>Community consensus on deployed code and design fixes</li>
+					<ul>
+						<li>(Some) breakage is unavoidable when fixing broken specifications</li>
+						<li>Make the transition clear (it won't be clean)</li>
+						<li>Provide test suites/tools to help with the transition</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
