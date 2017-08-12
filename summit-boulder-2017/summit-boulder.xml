@@ -205,7 +205,7 @@
 						<li><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Robust extensibility</a> helps to facilitate non-breaking API changes</li>
 						<li><em>Hypermedia</em> helps as a pattern to extend extensibility beyond data models</li>
 						<li><a href="http://semver.org/">Semantic versioning</a> may be used to keep track of API changes</li>
-						<li><a href="http://dret.typepad.com/dretblog/2015/08/http-sunset-header.html">HTTP <code>Sunset</code>ting</a> can be used to signal upcoming sunsets on the HTTP level</li>
+						<li><a href="http://dret.typepad.com/dretblog/2015/08/http-sunset-header.html">HTTP <code>Sunset</code>ting</a> can be used to <a href="http://webconcepts.info/concepts/http-header/Sunset">signal upcoming sunsets on the HTTP level</a></li>
 					</ul>
 					<li>Always follow the <em>why/what/how</em> triad for all platform management</li>
 					<ul>
@@ -229,7 +229,7 @@
 						<li>Every API entering the landscape does make change management documentation discoverable</li>
 						<li>For some classes of APIs/services additional requirements may be put in place</li>
 					</ul>
-					<li>One possible requirement is that <em>Public APIs</em> must support <code>Sunset</code></li>
+					<li>One possible requirement is that <em>Public APIs</em> must support <code href="http://webconcepts.info/concepts/http-header/Sunset">Sunset</code></li>
 					<ul>
 						<li>Services must document/describe the support of <code>Sunset</code></li>
 						<li>Service may implement <code>Sunset</code> any way they like</li>
