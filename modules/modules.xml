@@ -83,27 +83,10 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide id="two-views">
-				<title>Two Views of API Scope/Focus</title>
+			<slide id="who-is-talking">
+				<title>APIs: Who's Talking?</title>
 				<ul>
-					<li><em>Internal:</em> Using APIs to break up monolithic systems</li>
-					<ul>
-						<li>Focus on <em>systems/software engineering</em> and better modularization</li>
-						<li><q>Turn a system into an ecosystem.</q></li>
-						<li>Use <em>Private APIs</em> as a way to reduce tight coupling</li>
-					</ul>
-					<li><em>External:</em> Using APIs to build up ecosystems</li>
-					<ul>
-						<li>Focus on <em>distributed/decentralized systems</em> and better connectivity</li>
-						<li><q>Enable an ecosystem by loosely coupling systems.</q></li>
-						<li>Use <em>Public APIs</em> as a way to (better) interface with partners/public</li>
-					</ul>
-					<li>Both views are complementary and mostly a difference in perspective</li>
-				</ul>
-			</slide>
-			<slide id="one-perception">
-				<title>One Perception of API Value</title>
-				<ul>
+					<li>Languages both establish and cross domain boundaries</li>
 					<li>System/ecosystem boundaries are blurry</li>
 					<ul>
 						<li>System/ecosystem perspective is a question of perspective</li>
@@ -111,7 +94,7 @@
 					<li>APIs provide a foundation for communications in an ecosystem</li>
 					<ul>
 						<li><em>Internal:</em> Value is in system changeability</li>
-						<li><em>External:</em> Value is in system accessibility</li>
+						<li><em>External:</em> Value is in system interoperability</li>
 					</ul>
 					<li>API discussions should always be aware of both perspectives</li>
 					<ul>
@@ -120,8 +103,8 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="three-api-drivers">
-			<title>Three Drivers of the API Economy</title>
+		<part id="api-aspects">
+			<title>APIs: 3 Drivers, 2 Perspectives, 1 Lifecycle</title>
 			<slide id="api-driver-push">
 				<title>Driver #1: Push</title>
 				<ul>
@@ -169,6 +152,24 @@
 						<li>Business pushes IT to make sure strategy can be executed quickly</li>
 						<li>IT can leverage others as justification and leaders</li>
 					</ul>
+				</ul>
+			</slide>
+			<slide id="two-views">
+				<title>Two Views of API Scope/Focus</title>
+				<ul>
+					<li><em>Internal:</em> Using APIs to break up monolithic systems</li>
+					<ul>
+						<li>Focus on <em>systems/software engineering</em> and better modularization</li>
+						<li><q>Turn a system into an ecosystem.</q></li>
+						<li>Use <em>Private APIs</em> as a way to reduce tight coupling</li>
+					</ul>
+					<li><em>External:</em> Using APIs to build up ecosystems</li>
+					<ul>
+						<li>Focus on <em>distributed/decentralized systems</em> and better connectivity</li>
+						<li><q>Enable an ecosystem by loosely coupling systems.</q></li>
+						<li>Use <em>Public APIs</em> as a way to (better) interface with partners/public</li>
+					</ul>
+					<li>Both views are complementary and mostly a difference in perspective</li>
 				</ul>
 			</slide>
 		</part>
