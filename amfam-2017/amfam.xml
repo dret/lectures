@@ -141,4 +141,26 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="contracts">
+		<title>API Contracts</title>
+		<toc class="abstract">The current focus around API documentation is on the technical side and how to describe an existing service so that it can be consumed. However, documentation goes beyond the simple technical interface description and covers many non-functional aspects. This presentation is an overview of this broader view of what API contracts and documentation are about, and how organizations can manage the production and publication of this more comprehensive documentation.</toc>
+		<toc class="resources">...</toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/amfam-2017"><code>dret.net/lectures/amfam-2017</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/amfam-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>
