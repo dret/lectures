@@ -1,9 +1,17 @@
-# [API Days Zürich 2017](http://www.apidays.io/events/zurich-2017)
+# Microservices Strategy &amp; Architecture
 
-## Zürich, Switzerland, September 26/27, 2017
+## [API Days Zurich](http://www.apidays.io/events/zurich-2017)
 
-### Microsoft Schweiz
+### September 26/27, 2017
 
-#### Resources
+Slides for the presentation at API Days Zürich, Zürich, Switzerland, September 26/27, 2017.
 
-* [`http://dret.net/lectures/api-days-zurich-2017/`](http://dret.net/lectures/api-days-zurich-2017/) is the online version of Erik's slides, [`https://github.com/dret/lectures/tree/master/api-days-zurich-2017`](https://github.com/dret/lectures/tree/master/api-days-zurich-2017) is where Erik's slide sources live on GitHub.
+
+## License
+
+These are sources that I make available for others to read/use/reuse; please respect [the licensing](../LICENSE).
+
+
+## Online
+
+The presentation version for these talks is available online at http://dret.net/lectures/api-days-berlin-2017/
