@@ -51,7 +51,7 @@
 	</toc>
 	<presentation id="intro">
 		<title>Introduction</title>
-		<toc class="abstract">General-purpose skeleton with introduction and conclusions.</toc>
+		<toc class="abstract">Introduction to APIs.</toc>
 		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
@@ -105,6 +105,28 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/amfam-2017"><code>dret.net/lectures/amfam-2017</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/amfam-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="platforms-and-landscapes">
+		<title>API Platforms and API Landscape Management</title>
+		<toc class="abstract">This presentation looks at how to establish API platforms, and how to use them as a starting point to establish, cultivate, and evolve a shared practice of API design and management.</toc>
+		<toc class="resources">...</toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
