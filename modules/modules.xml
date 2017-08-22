@@ -1442,6 +1442,20 @@
 		</part>
 		<part id="microservices-and-apis">
 			<title>Microservices and APIs</title>
+			<slide id="microservice-api">
+				<title>There is no <q>Microservices API</q></title>
+				<ul>
+					<li>Microservices are all about <em>how to implement services</em></li>
+					<li>APIs are all about <em>how to interact with services</em></li>
+					<li>Microservices are an implementation detail from the API perspective</li>
+					<li>Microservice-implemented APIs might exhibit certain properties</li>
+					<ul>
+						<li>Changing more often because of faster implementation cycles</li>
+						<li>More diverse <em>API landscapes</em> because of more autonomy</li>
+						<li>Smaller scope because of solutions targeted at specific problems</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
