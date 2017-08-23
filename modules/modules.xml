@@ -1459,7 +1459,17 @@
 			<slide id="microservice-api-design">
 				<title>Designing Microservice APIs</title>
 				<ul>
-					<li>...</li>
+					<li>API consumers just use an <em>API</em> and not a <em>Microservice API</em></li>
+					<ul>
+						<li>Microservice API design is no different from API design in general</li>
+						<li>Tighter coupling may be acceptable for vertical scenarios (<a href="...">BFF pattern</a>)</li>
+					</ul>
+					<li>Balancing autonomy/diversity and coherence/usability is necessary</li>
+					<ul>
+						<li>Microservices should have <em>freedom</em> to design their APIs</li>
+						<li>API design should be driven by <em>design culture and patterns</em></li>
+						<li>Microservices strategy needs to distill/document/distribute design patterns</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
