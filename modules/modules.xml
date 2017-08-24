@@ -1128,6 +1128,11 @@
 						<li><em>Data extensibility</em> results in the usual benefits of allowing representations to evolve</li>
 						<li><em>Control extensibility</em> results in the ability to add new workflow paths</li>
 					</ul>
+					<li>Hypermedia-based evolution has many patterns to choose from</li>
+					<ul>
+						<li><em>Incremental additions</em> can show up as new links in extension slots</li>
+						<li><em>Complete new APIs</em> can be advertised as new start resources in home documents</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
