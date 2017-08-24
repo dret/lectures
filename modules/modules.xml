@@ -1053,6 +1053,30 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="web-linking">
+			<title>Web Linking</title>
+			<slide>
+				<title>Web Links are Typed Links</title>
+				<ul>
+					<li>Links are <em>possible paths</em> a client can follow to accomplish a goal</li>
+					<ul>
+						<li>Some links are typed through HTML markup (<code>&lt;img/></code>, <code>&lt;form/></code>, <code>&lt;link @rel/></code>)</li>
+						<li>Many links are typed for human users (<code>&lt;a/></code>)</li>
+					</ul>
+					<li>Links show the way but do not determine the destination</li>
+					<ul>
+						<li>Images can use various formats represented at runtime through the media type</li>
+						<li>Clients can specify capabilities/preferences via HTTP</li>
+					</ul>
+					<li>Hypermedia as the engine of application state (HATEOAS)</li>
+					<ul>
+						<li>Clients start at a resource and with a certain goal</li>
+						<li>They follow links based on resources they encounter and choices they make</li>
+						<li>Application state is a result of a series of interactions</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="hypermedia-overview">
 			<title>Overview</title>
 			<slide id="hypermedia-affordances">
