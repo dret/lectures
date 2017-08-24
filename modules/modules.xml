@@ -1076,7 +1076,18 @@
 					</ul>
 				</ul>
 			</slide>
-			</part>
+			<slide id="api-web-linking">
+				<title>Web Linking for APIs</title>
+				<ul>
+					<li><a href="https://tools.ietf.org/html/rfc5988">Web Linking</a> takes linking to the HTTP level</li>
+					<ul>
+						<li><a href="http://www.webconcepts.info/concepts/http-headers/Link"><code>Link</code> HTTP Header</a> for links on the HTTP level</li>
+						<li>All links are typed and types are either registered or defined/used by individual users</li>
+						<li>The <a href="http://www.iana.org/assignments/link-relations/link-relations.xhtml">link relations registry</a> establishes a shared set of meaningful link types</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="hypermedia-overview">
 			<title>Overview</title>
 			<slide id="hypermedia-affordances">
