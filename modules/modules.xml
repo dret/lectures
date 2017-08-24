@@ -1060,8 +1060,8 @@
 				<ul>
 					<li>Links are <em>possible paths</em> a client can follow to accomplish a goal</li>
 					<ul>
-						<li>Some links are typed through HTML markup (<code>&lt;img/></code>, <code>&lt;form/></code>, <code>&lt;link @rel/></code>)</li>
-						<li>Many links are typed for human users (<code>&lt;a/></code>)</li>
+						<li>Some links are typed through HTML markup (<code>&lt;img></code>, <code>&lt;form></code>, <code>&lt;link rel=""></code>)</li>
+						<li>Many links are typed for human users (<code>&lt;a></code>)</li>
 					</ul>
 					<li>Links show the way but do not determine the destination</li>
 					<ul>
@@ -1076,7 +1076,7 @@
 					</ul>
 				</ul>
 			</slide>
-		</part>
+			</part>
 		<part id="hypermedia-overview">
 			<title>Overview</title>
 			<slide id="hypermedia-affordances">
