@@ -862,7 +862,7 @@
 					<li>API consumers just use an <em>API</em> and not a <em>Microservice API</em></li>
 					<ul>
 						<li>Microservice API design is no different from API design in general</li>
-						<li>Tighter coupling may be acceptable for vertical scenarios (<a href="...">BFF pattern</a>)</li>
+						<li>Tighter coupling may be acceptable for vertical scenarios (<a href="http://samnewman.io/patterns/architectural/bff/">BFF pattern</a>)</li>
 					</ul>
 					<li>Balancing autonomy/diversity and coherence/usability is necessary</li>
 					<ul>
