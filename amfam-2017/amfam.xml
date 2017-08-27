@@ -35,7 +35,6 @@
 				<tr>
 					<th valign="bottom">Title</th>
 					<th valign="bottom">Slides</th>
-					<th valign="bottom">Additional Resources</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -43,7 +42,6 @@
 					<tr class="vevent">
 						<td valign="top"><b><hotspot:title/>:</b> <span class="description"><hotspot:toc class="abstract"/></span></td>
 						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
-						<td align="center"><hotspot:toc class="resources"/></td>
 					</tr>
 				</hotspot:for-each-presentation>
 			</tbody>
@@ -52,7 +50,6 @@
 	<presentation id="intro">
 		<title>Introduction</title>
 		<toc class="abstract">Introduction to APIs.</toc>
-		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -247,7 +244,6 @@
 	<presentation id="platforms-and-landscapes">
 		<title>API Platforms and API Landscape Management</title>
 		<toc class="abstract">This presentation looks at how to establish API platforms, and how to use them as a starting point to establish, cultivate, and evolve a shared practice of API design and management.</toc>
-		<toc class="resources">...</toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -292,7 +288,6 @@
 	<presentation id="contracts">
 		<title>API Contracts</title>
 		<toc class="abstract">The current focus around API documentation is on the technical side and how to describe an existing service so that it can be consumed. However, documentation goes beyond the simple technical interface description and covers many non-functional aspects. This presentation is an overview of this broader view of what API contracts and documentation are about, and how organizations can manage the production and publication of this more comprehensive documentation.</toc>
-		<toc class="resources">...</toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -314,7 +309,6 @@
 	<presentation id="change-management">
 		<title>API Change Management</title>
 		<toc class="abstract">APIs are designed, developed, evolve, and eventually get decommissioned. There are both design and management challenges to this, so that one the one hand API producers and consumers are loosely coupled, but on the other hand there is a design in place that minimizes breakage in a large landscape of APIs.</toc>
-		<toc class="resources">...</toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -336,7 +330,6 @@
 	<presentation id="microservices">
 		<title>Microservices Benefits and Transition Strategies</title>
 		<toc class="abstract">Microservices have a value proposition side to them (what to get out of them), but also a cost side (what it takes to transition and execute a microservices strategy). This presentation looks at the balance between these issues, and how to start a journey towards microservices.</toc>
-		<toc class="resources">...</toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
