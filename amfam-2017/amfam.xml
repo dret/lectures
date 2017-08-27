@@ -292,6 +292,81 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="service-descriptions">
+			<title>Service Descriptions</title>
+			<slide id="decentralized-description">
+				<title>Decentralized Description</title>
+				<ul>
+					<li>APIs should describe themselves as <em>part of the API</em></li>
+					<ul>
+						<li>Machine-readable <code>about</code> pages for API concepts</li>
+						<li>Controlled/published by APIs but useable by anybody</li>
+					</ul>
+					<li>First proposals/projects are emerging</li>
+					<ul>
+						<li><code><a href="http://apisjson.org/">APIs.json</a></code> only defines a format (description)</li>
+						<li><a href="http://www.pivio.io/">Pivio</a> focuses on the tooling (submission and indexing)</li>
+					</ul>
+					<li>Effective landscaping needs languages <em>and</em> tooling</li>
+					<ul>
+						<li><em>Languages</em> define <em>what you are doing</em></li>
+						<li><em>Tooling</em> helps with <em>how it can be done</em></li>
+						<li>New tooling can be built <em>only</em> if a well-defined language exists</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="description-language">
+				<title>Description Language</title>
+				<ul>
+					<li>Reuse existing <a href="http://www.webconcepts.info/">Web concepts</a> as much as possible</li>
+					<ul>
+						<li>Languages are easier to learn and use when they reuse established concepts</li>
+					</ul>
+					<li><a href="https://tools.ietf.org/html/draft-nottingham-json-home">JSON Home Documents</a> might be a good starting point</li>
+					<ul>
+						<li>Extend the format or link from it with <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">well-defined link relations</a></li>
+					</ul>
+					<li>Define the language with <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">robust extensibility</a> in mind</li>
+					<ul>
+						<li><em>Meaningful core semantics</em> so that useful tools can be built</li>
+						<li><em>Extension model</em> so that it is clear how to extend the core language</li>
+						<li><em>Processing model</em> so that it is clear how to safely process the format</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="apis.json-example">
+				<title>APIs.json Example</title>
+				<listing src="apis.json" href="https://gist.github.com/kinlane/10094618" line="2-17"/>
+			</slide>
+			<slide id="pivio-example">
+				<title>Pivio Example</title>
+				<listing src="pivio.yaml" href="http://pivio.io/docs/#_general"/>
+			</slide>
+			<slide id="json-home-example">
+				<title>JSON Home Example</title>
+				<listing src="home.json" href="https://tools.ietf.org/html/draft-nottingham-json-home#section-2" line="2-24"/>
+			</slide>
+			<slide id="description-tooling">
+				<title>Description Tooling</title>
+				<ul>
+					<li>Tooling can <em>only</em> use the description format</li>
+					<li>Conventions around how the format is used in the landscape</li>
+					<ul>
+						<li><em>Push</em> vs. <em>pull</em> and minimal behavioral standards</li>
+						<li>Tooling can automate (part of) the service approval process</li>
+					</ul>
+					<li>Collaborative landscaping makes it easier to build useful tooling</li>
+					<ul>
+						<li>Services that grow in the garden will make honest statements</li>
+						<li>Adversarial landscapes need a lot more work to prevent misuse</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="pivio-concept">
+				<title>Pivio Concept</title>
+				<img href="http://pivio.io/docs/#_key_concepts" src="pivio-concept.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
