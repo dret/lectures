@@ -27,11 +27,16 @@
 	<title><a href="http://nordicapis.com/">Nordic APIs</a> <a href="http://nordicapis.com/events/the-2017-api-platform-summit/">2017 Platform Summit</a></title>
 	<presentation id="index">
 		<title>From Platforms to Ecosystems</title>
+		<toc class="abstract">APIs are often used as a way to decrease coupling and enable an evolving ecosystem of business capabilities. However, when confined to a concrete "API Platform", many of the possible degrees of freedom can be inhibited, stifling the decoupling and innovation that was one of the initial driving factors to start an API strategy and program. One important aspect of API strategy therefore is to make conscious choices where to allow and make decisions for individual APIs and services, and the overall ecosystem. Distilling patterns and practices from the evolving ecosystem of APIs into recommendations and conventions becomes an essential part of moving from static platforms to constantly evolving ecosystems. The goal is to find the optimal balance between complete autonomy for each API design and implementation, and a supporting ecosystem that both constrains and supports APIs as a way to improve the overall ecosystem value.</toc>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 		<affiliation><a href="http://www.apiacademy.co/">API Academy</a>, <a href="http://www.ca.com/">CA Technologies</a></affiliation>
 		<date short="2017-10-10">October 10, 2017</date>
 		<copyright>2017 Erik Wilde</copyright>
 		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 		<part id="introduction">
 			<title>Introduction</title>
 			<slide id="dret">
