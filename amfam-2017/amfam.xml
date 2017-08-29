@@ -248,6 +248,100 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="platforms-landscapes">
+			<title>From Platforms to Landscapes</title>
+			<slide id="api-maslow">
+				<title>API Cargo Cult</title>
+				<img title="API Cargo Cult" src="api-cargo-cult.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-strategy-web">
+				<title>Looking for a good API Strategy? Look at the Web!</title>
+				<ul>
+					<li><em>Problem focus</em> over <em>solution focus</em></li>
+					<ul>
+						<li><em>Problems</em> are addressed by building capabilities with standardized interfaces</li>
+						<li><em>Solutions</em> are created/managed by those who solve the problems</li>
+					</ul>
+					<li><em>Platform diversity</em> over <em>landscape homogeneity</em></li>
+					<ul>
+						<li>Solution providers pick platforms based on their preferences</li>
+						<li>Platforms evolve and so does the platform landscape as a whole</li>
+					</ul>
+					<li><em>Solutions</em> and <em>platforms</em> are completely decoupled</li>
+					<ul>
+						<li><em>Solutions</em> are looking at <em>what service to provide</em></li>
+						<li><em>Platforms</em> are concerned with <em>how to implement the solution</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="platform">
+				<title>Platforms are <q>Monoliths by Design</q></title>
+				<ul>
+					<li>Designed to provide shared tooling</li>
+					<li>Tooling becomes the backdoor for <q>coupling creep</q></li>
+					<li>Resist the urge to provide an <q>API platform</q></li>
+					<li>Ignoring one of the two major API value propositions</li>
+					<ul>
+						<li>APIs are valuable because they decouple service users and providers</li>
+						<li>APIs are valuable because they decouple service implementations</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="landscape">
+				<title>Landscapes are <q>Decentralized by Design</q></title>
+				<ul>
+					<li>Designed to use shared languages</li>
+					<li>Communications/coupling can only happen through APIs</li>
+					<li>Anything that needs to be shared must be openly communicated</li>
+					<li>Satisfying the two major API value propositions</li>
+					<ul>
+						<li>APIs are valuable because they decouple service users and providers</li>
+						<li>APIs are valuable because they decouple service implementations</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="ccc">
+				<title>Communicating Code Couples</title>
+				<ul>
+					<li>Importing code means coupling with the code</li>
+					<li>Code that <em>does not communicate</em> creates no external coupling</li>
+					<li>Code that <em>does communicate</em> creates external coupling</li>
+					<ul>
+						<li>Code that <em>communicates via a visible API</em> creates acceptable coupling</li>
+						<li>Code that <em>communicates via hidden channels</em> creates unacceptable coupling</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="msa-club-rules">
+				<title>The Rules of MSA Club</title>
+				<ol>
+					<li>The first rule of MSA club is that you can only communicate via APIs</li>
+					<li>The second rule of MSA club is that you can only communicate via APIs</li>
+					<li>The third rule of MSA club: if you communicate via side channels, you are out</li>
+					<li>The fourth rule of MSA club is that if you need communications, design a language</li>
+				</ol>
+			</slide>
+			<slide id="languages">
+				<title>Languages Encapsulate/Enable Capabilities</title>
+				<img title="MSA and Tools and Capabilities" src="msa-tools-languages.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="loose-coupling">
+				<title>Loose Coupling via Languages</title>
+				<ul>
+					<li>Apply well-known <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Patterns for Robust Extensibility</a></li>
+					<ul>
+						<li><em>Meaningful core semantics:</em> Create a useful minimal language</li>
+						<li><em>Well-defined extension points:</em> Allow the language to evolve</li>
+						<li><em>Well-defined processing model:</em> Say how to behave when encountering extensions</li>
+					</ul>
+					<li>Loose coupling encourages service changes and replacements</li>
+					<ul>
+						<li>Design for <em>service changes:</em> Non-breaking changes as the primary goal</li>
+						<li>Design for <em>service replacements:</em> Languages remain intact across implementations</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="api-platforms">
 			<title>API Platforms</title>
 			<slide id="api-platform-monolith">
