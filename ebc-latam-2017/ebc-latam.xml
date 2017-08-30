@@ -80,6 +80,152 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="digital-transformation-introduction">
+			<title>Digital Transformation: Why? What? How?</title>
+			<slide id="castle">
+				<title>Traditional IT</title>
+				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="bureaucracy">
+				<title>Bureaucracy</title>
+				<ul>
+					<li>Bureaucracy evolved for a reason</li>
+					<ul>
+						<li>Clearly defined model of <em>input</em> and <em>output</em> of processing units</li>
+						<li>Implementation issues of the processing units are <em>hidden</em></li>
+						<li><em>Processing units can scale</em> because of encapsulation and statelessness</li>
+						<li>Processing steps can be <em>easily pipelined</em> while keeping steps separate</li>
+					</ul>
+					<li>Well-designed service landscapes have the exact same properties</li>
+					<ul>
+						<li><em>Messaging models</em> instead of paper forms</li>
+						<li>Message models are <em>as shallow as possible</em> (hide implementation model)</li>
+						<li><em>Stateless interactions</em> allow for easy load balancing</li>
+						<li>Resource identifiers and hypermedia allow <em>seamless workflows</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-economy">
+				<title>API Economy</title>
+				<img title="Farmers' Market Sacramento" href="https://commons.wikimedia.org/wiki/File:Farmers'_market_Sacramento.jpg" src="farmers-market-sacramento.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="digital-transformation">
+				<title>Digital Transformation</title>
+				<img href="https://upload.wikimedia.org/wikipedia/commons/3/31/Great_white_shark_south_africa.jpg" src="digital-transformation-shark.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="digitalization-dividends">
+				<title><a href="http://queue.acm.org/detail.cfm?id=2956643">Digital Transformation: What?</a></title>
+				<ol>
+					<li>Permissionless Innovation</li>
+					<li>Enable Failure</li>
+					<li>Disrupt Trust (replaced by autonomy and accountability)</li>
+					<li>You Build It, You Own It</li>
+					<li>Accelerate Deprecations</li>
+					<li>End Centralized Metadata</li>
+					<li>Concentrate the Pain</li>
+					<li>Test Differently</li>
+				</ol>
+			</slide>
+			<slide id="ms-blind-spots">
+				<title>MSA Blind Spot: API Design/Management</title>
+				<ul>
+					<li>MSA focuses on culture/development/operational aspects</li>
+					<ul>
+						<li>Isolating services through all phases of the lifecycle</li>
+						<li>But of course services still need to interact</li>
+					</ul>
+					<li>API consistency will help to make the landscape more productive</li>
+					<ul>
+						<li>Helping <em>API designers</em> to avoid re-inventing the wheel</li>
+						<li>Helping <em>API providers</em> to be more usable for consumers</li>
+						<li>Helping <em>API consumers</em> to depend on some consistency</li>
+						<li>Helping with <em>API discovery</em> and managing the landscape</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="organize-services">
+				<title>Organize Services: Operate Smaller Components</title>
+				<ul>
+					<li>Services talk to each other <em>only</em> through APIs</li>
+					<ul>
+						<li>Each service runs as a standalone component</li>
+						<li>Service dependencies are only through API invocations</li>
+					</ul>
+					<li>APIs trade flexibility for operational complexity</li>
+					<ul>
+						<li>Monitoring and debugging are easier in a <em>compile-time linked system</em></li>
+						<li>Flexibility and scalability are better in a <em>runtime linked ecosystem</em></li>
+					</ul>
+					<li>APIs need <em>lifecycle management</em> to reach full potential</li>
+					<ul>
+						<li><em>Design</em> APIs so that they fit into the ecosystem</li>
+						<li><em>Publish</em> APIs so that they can be discovered</li>
+						<li><em>Deploy</em> APIs so that they can be used safely/securely</li>
+						<li><em>Manage</em> APIs so that the ecosystem can be monitored</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="digital-transformation-path">
+				<title><a href="http://martinfowler.com/articles/microservices.html">Digital Transformation: How?</a></title>
+				<ol>
+					<li>Componentization via services</li>
+					<li>Organized around business capabilities</li>
+					<li>Products not projects</li>
+					<li>Smart endpoints and dumb pipes</li>
+					<li>Decentralized governance</li>
+					<li>Decentralized data management</li>
+					<li>Infrastructure automation</li>
+					<li>Design for failure</li>
+					<li>Evolutionary design</li>
+				</ol>
+			</slide>
+			<slide id="who">
+				<title>Microservices for the Masses?</title>
+				<ul>
+					<li>Microservices are an investment and not a default choice</li>
+					<ul>
+						<li>The cost is the need for advanced infrastructure and teams</li>
+						<li>The return is increased flexibility and agility</li>
+						<li>Cost/benefit for microservices is targeted at long term capabilities</li>
+					</ul>
+					<li>What are the <a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html">prerequisites for considering microservices?</a></li>
+					<ol>
+						<li><em>Rapid Provisioning:</em> Automated process to quickly create server infrastructure</li>
+						<li><em>Monitoring:</em> Multi-level monitoring from service health to business-level logic</li>
+						<li><em>Rapid Deployment:</em> Automated ways to quickly move from code to running services</li>
+					</ol>
+					<li>Moving to MSA is a transition process and not one <em>Big Bang</em></li>
+					<ul>
+						<li>Just like the Web is never complete/final, neither is a microservices landscape</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-focus">
+				<title>APIs are Front and Center</title>
+				<ul>
+					<li>The only visibility into a service is its API</li>
+					<li>APIs should avoid letting their <q>implementation shine through</q></li>
+					<li>The two main goals of an API are <em>interaction</em> and <em>encapsulation</em></li>
+					<ul>
+						<li><em>Interaction</em> should be as simple/easy as possible through the API</li>
+						<li><em>Encapsulation</em> ensures that the implementation is invisible</li>
+					</ul>
+					<li>Help developers to navigate the evolving landscape of interlinked APIs</li>
+				</ul>
+			</slide>
+			<slide id="surface">
+				<title>Be Superficial</title>
+				<ul>
+					<li>The only thing that matters is the <em>service surface</em></li>
+					<ul>
+						<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
+						<li>Resist the temptation to <em>expose your model</em> just because you can</li>
+					</ul>
+					<li>Concepts must be well-defined but not necessarily deeply modeled</li>
+					<ul><em>Domain Driven Design (DDD)</em> provides a framework for <em>bounded contexts</em></ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="api-3-2-1">
 			<title>APIs: 3 Drivers, 2 Perspectives, 1 Lifecycle</title>
 			<slide id="api-language">
