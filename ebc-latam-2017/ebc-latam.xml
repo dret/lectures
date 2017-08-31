@@ -126,45 +126,6 @@
 					<li>Test Differently</li>
 				</ol>
 			</slide>
-			<slide id="ms-blind-spots">
-				<title>MSA Blind Spot: API Design/Management</title>
-				<ul>
-					<li>MSA focuses on culture/development/operational aspects</li>
-					<ul>
-						<li>Isolating services through all phases of the lifecycle</li>
-						<li>But of course services still need to interact</li>
-					</ul>
-					<li>API consistency will help to make the landscape more productive</li>
-					<ul>
-						<li>Helping <em>API designers</em> to avoid re-inventing the wheel</li>
-						<li>Helping <em>API providers</em> to be more usable for consumers</li>
-						<li>Helping <em>API consumers</em> to depend on some consistency</li>
-						<li>Helping with <em>API discovery</em> and managing the landscape</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="organize-services">
-				<title>Organize Services: Operate Smaller Components</title>
-				<ul>
-					<li>Services talk to each other <em>only</em> through APIs</li>
-					<ul>
-						<li>Each service runs as a standalone component</li>
-						<li>Service dependencies are only through API invocations</li>
-					</ul>
-					<li>APIs trade flexibility for operational complexity</li>
-					<ul>
-						<li>Monitoring and debugging are easier in a <em>compile-time linked system</em></li>
-						<li>Flexibility and scalability are better in a <em>runtime linked ecosystem</em></li>
-					</ul>
-					<li>APIs need <em>lifecycle management</em> to reach full potential</li>
-					<ul>
-						<li><em>Design</em> APIs so that they fit into the ecosystem</li>
-						<li><em>Publish</em> APIs so that they can be discovered</li>
-						<li><em>Deploy</em> APIs so that they can be used safely/securely</li>
-						<li><em>Manage</em> APIs so that the ecosystem can be monitored</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="digital-transformation-path">
 				<title><a href="http://martinfowler.com/articles/microservices.html">Digital Transformation: How?</a></title>
 				<ol>
@@ -480,6 +441,45 @@
 					</ul>
 					<li>Concepts must be well-defined but not necessarily deeply modeled</li>
 					<ul><em>Domain Driven Design (DDD)</em> provides a framework for <em>bounded contexts</em></ul>
+				</ul>
+			</slide>
+			<slide id="ms-blind-spots">
+				<title>MSA Blind Spot: API Design/Management</title>
+				<ul>
+					<li>MSA focuses on culture/development/operational aspects</li>
+					<ul>
+						<li>Isolating services through all phases of the lifecycle</li>
+						<li>But of course services still need to interact</li>
+					</ul>
+					<li>API consistency will help to make the landscape more productive</li>
+					<ul>
+						<li>Helping <em>API designers</em> to avoid re-inventing the wheel</li>
+						<li>Helping <em>API providers</em> to be more usable for consumers</li>
+						<li>Helping <em>API consumers</em> to depend on some consistency</li>
+						<li>Helping with <em>API discovery</em> and managing the landscape</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="organize-services">
+				<title>Organize Services: Operate Smaller Components</title>
+				<ul>
+					<li>Services talk to each other <em>only</em> through APIs</li>
+					<ul>
+						<li>Each service runs as a standalone component</li>
+						<li>Service dependencies are only through API invocations</li>
+					</ul>
+					<li>APIs trade flexibility for operational complexity</li>
+					<ul>
+						<li>Monitoring and debugging are easier in a <em>compile-time linked system</em></li>
+						<li>Flexibility and scalability are better in a <em>runtime linked ecosystem</em></li>
+					</ul>
+					<li>APIs need <em>lifecycle management</em> to reach full potential</li>
+					<ul>
+						<li><em>Design</em> APIs so that they fit into the ecosystem</li>
+						<li><em>Publish</em> APIs so that they can be discovered</li>
+						<li><em>Deploy</em> APIs so that they can be used safely/securely</li>
+						<li><em>Manage</em> APIs so that the ecosystem can be monitored</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="change">
