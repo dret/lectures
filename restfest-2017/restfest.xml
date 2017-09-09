@@ -216,8 +216,17 @@
 				<title>Links as Resources</title>
 				<ul>
 					<li>Scenario 1: <em>Third-Party Links</em></li>
+					<ul>
+						<li>Better support for service orchestration (<span title="Links as a Service">LaaS</span>)</li>
+					</ul>
 					<li>Scenario 2: <em>Challenges Writing to HTTP Header Field</em></li>
+					<ul>
+						<li>Applications may have challenges serializing links in header fields</li>
+					</ul>
 					<li>Scenario 3: <em>Large Number of Links</em></li>
+					<ul>
+						<li>HTTP header fields are constrained in size and should not be <q>too big</q></li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="linkset-design">
