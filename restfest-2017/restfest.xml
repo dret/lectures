@@ -124,6 +124,22 @@
 					<li>Restart with a new media type or be explicit about <q>legacy issues</q></li>
 				</ul>
 			</slide>
+			<slide id="geojson">
+				<title>The Case of GeoJSON</title>
+				<ul>
+					<li>Successful <q>community standard</q> with many adopters</li>
+					<ul>
+						<li>Specification issues caused interoperability problems</li>
+						<li>Specification status caused adoption issues</li>
+					</ul>
+					<li><em href="https://datatracker.ietf.org/wg/geojson/">IETF GeoJSON WG</em> with the intentionally narrow goal of <q>fixing it</q></li>
+					<ul>
+						<li>Resist the temptation to add features</li>
+						<li>Fix known problems and produce a widely recognized specification</li>
+					</ul>
+					<li><em href="https://tools.ietf.org/html/rfc8142">RFC 8142</em> was published after about a year of work</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
