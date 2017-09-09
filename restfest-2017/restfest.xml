@@ -273,19 +273,8 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="5in5">
-			<title>5 in 5</title>
-			<slide id="lets-fix-hal">
-				<title>Let's Fix HAL!</title>
-				<img src="lets-fix-hal-braveheart.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="examples">
-				<title>Some Examples</title>
-				<listing src="duplicate-prefix.json"/>
-				<listing src="curie-scope.json"/>
-				<listing src="prefix-override.json"/>
-				<listing src="prefix-confusion.json"/>
-			</slide>
+		<part id="organizations">
+			<title>Organizations</title>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
