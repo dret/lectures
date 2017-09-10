@@ -233,8 +233,18 @@
 				<title>Linkset Design</title>
 				<ul>
 					<li>Native and JSON representation of Web Links</li>
+					<ul>
+						<li><em>Native</em> is the HTTP <code>Link</code> header field syntax</li>
+						<li><em>JSON</em> is based on native but easier to process with a standard toolset</li>
+					</ul>
 					<li>Unconstrained representation of Web Links</li>
+					<ul>
+						<li>Any Web Link data can be represented in both syntaxes</li>
+					</ul>
 					<li>Schema-agnostic representation of Web Links</li>
+					<ul>
+						<li>No schema knowledge about non-standard target attributes is required</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="linkset-media-types">
