@@ -258,6 +258,13 @@
 			</slide>
 			<slide id="linkset-media-types">
 				<title>Linkset Media Types</title>
+				<ul>
+					<li><em>Native representation</em> based on the HTTP <code>Link</code> header field syntax</li>
+					<ul>
+						<li>Requires specialized parsing</li>
+						<li>Requires character escaping for any non-ASCII characters</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="check-comment">
 				<title>Check and Comment</title>
