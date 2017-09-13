@@ -1,0 +1,6 @@
+[ { "href"   : "http://example.com/foo",
+    "rel"    : [ "next" ],
+    "title"  : "naechstes Kapitel",
+    "title*" : [ [ "nächstes Kapitel", "de" ] ],
+    "foo"    : [ "foovalue" ],
+    "bar"    : [ "barone", "bartwo" ] } ]
