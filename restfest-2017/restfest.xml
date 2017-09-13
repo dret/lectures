@@ -261,6 +261,14 @@
 			</slide>
 			<slide id="check-comment">
 				<title>Check and Comment</title>
+				<ul>
+					<li>Check out the current <a href="https://tools.ietf.org/html/draft-wilde-linkset" title='Erik Wilde and Herbert Van de Sompel, "Linkset: A Link Relation Type and Media Types for Link Sets", Internet Draft'>Linkset Internet Draft</a></li>
+					<ol>
+						<li><code>application/linkset</code> media type for the native representation</li>
+						<li><code>application/linkset+json</code> media type for the JSON representation</li>
+						<li><code>linkset</code> link relation for linking to link sets</li>
+					</ol>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
