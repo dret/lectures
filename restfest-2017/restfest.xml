@@ -262,7 +262,12 @@
 					<li><em>Native representation</em> based on the HTTP <code>Link</code> header field syntax</li>
 					<ul>
 						<li>Requires specialized parsing</li>
-						<li>Requires character escaping for any non-ASCII characters</li>
+						<li>Requires character escaping for non-ASCII characters</li>
+					</ul>
+					<li><em>JSON representation</em> uses JSON to encode the native information model</li>
+					<ul>
+						<li>Can be processed with any JSON toolset</li>
+						<li>Requires some transcoding for non-ASCII characters</li>
 					</ul>
 				</ul>
 			</slide>
