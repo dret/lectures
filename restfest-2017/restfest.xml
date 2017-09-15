@@ -285,6 +285,11 @@
 						<li><code>application/linkset+json</code> media type for the JSON representation</li>
 						<li><code>linkset</code> link relation for linking to link sets</li>
 					</ol>
+					<li>Did we miss any interesting use cases?</li>
+					<ul>
+						<li>Affordances without data! That's odd… or maybe useful?</li>
+						<li>Is there a typical data/control ratio in REST design?</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
