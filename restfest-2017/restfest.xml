@@ -351,26 +351,6 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="organizations">
-			<title>Organizations</title>
-			<slide id="standard-types">
-				<title><a href="https://www.safaribooksonline.com/library/view/restful-web-apis/9781449359713/pr05.html" title='"RESTful Web APIs" by Sam Ruby, Mike Amundsen, Leonard Richardson: Introduction'>Standard Types</a></title>
-				<ul>
-					<li><em>Fiat standards:</em> <q>Why not do it this way?</q></li>
-					<li><em>Personal standards:</em> <q>I like the way this has been done.</q></li>
-					<li><em>Corporate standards:</em> <q>Let's try to figure out a way to do this.</q></li>
-					<li><em>Open standards:</em> <q>Hello everybody! Let's solve this problem!</q></li>
-				</ul>
-			</slide>
-			<slide id="ietf">
-				<title>Internet Engineering Task Force (IETF)</title>
-				<img title="Internet Engineering Task Force (IETF)" href="http://ietf.org/" src="ietf.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="w3c">
-				<title>World Wide Web Consortium (W3C)</title>
-				<img title="World Wide Web Consortium (W3C)" href="http://w3c.org/" src="w3c.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-		</part>
 		<part id="standards-languages">
 			<title>Standards are Languages</title>
 			<slide id="language-matters">
@@ -447,6 +427,26 @@
 					<li>Be ready to compromise on non-essential aspects</li>
 					<li>Language utility is mostly a function of the user base</li>
 				</ul>
+			</slide>
+		</part>
+		<part id="organizations">
+			<title>Organizations</title>
+			<slide id="standard-types">
+				<title><a href="https://www.safaribooksonline.com/library/view/restful-web-apis/9781449359713/pr05.html" title='"RESTful Web APIs" by Sam Ruby, Mike Amundsen, Leonard Richardson: Introduction'>Standard Types</a></title>
+				<ul>
+					<li><em>Fiat standards:</em> <q>Why not do it this way?</q></li>
+					<li><em>Personal standards:</em> <q>I like the way this has been done.</q></li>
+					<li><em>Corporate standards:</em> <q>Let's try to figure out a way to do this.</q></li>
+					<li><em>Open standards:</em> <q>Hello everybody! Let's solve this problem!</q></li>
+				</ul>
+			</slide>
+			<slide id="ietf">
+				<title>Internet Engineering Task Force (IETF)</title>
+				<img title="Internet Engineering Task Force (IETF)" href="http://ietf.org/" src="ietf.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="w3c">
+				<title>World Wide Web Consortium (W3C)</title>
+				<img title="World Wide Web Consortium (W3C)" href="http://w3c.org/" src="w3c.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
 		<part id="conclusions">
