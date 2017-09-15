@@ -389,6 +389,12 @@
 				<ul>
 					<li>Adding concept values reflects new things to talk about</li>
 					<li>Adding concepts reflects new classes of things to talk about</li>
+					<li>A good pattern is to connect languages (and possibly make them extensible)</li>
+					<ul>
+						<li>Make a new concept discoverable via an existing one (<a href="http://webconcepts.info/concepts/http-header/Link"><code>Link</code> HTTP Header field</a>)</li>
+						<li>Establish a concept by defining/managing its value space (<a href="https://www.iana.org/assignments/link-relations/link-relations.xhtml#link-relations-1">IANA link relation type registry</a>)</li>
+						<li>The value space can be used for further extensions of the Web surface</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
