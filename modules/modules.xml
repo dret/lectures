@@ -232,6 +232,10 @@
 				</slide>
 				<slide id="http-immutable">
 					<title>HTTP Immutable Responses</title>
+					<ul>
+						<li>Some resources never change by design</li>
+						<li><a href="http://webconcepts.info/specs/IETF/RFC/8246">RFC 8246</a> defines the <code href="http://webconcepts.info/concepts/http-cache-directive/immutable">immutable</code> cache directive</li>
+					</ul>
 				</slide>
 			</part>
 		</part>
