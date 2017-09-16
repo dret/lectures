@@ -197,7 +197,7 @@
 	<presentation id="caching">
 		<title>Caching</title>
 		<toc class="abstract">...</toc>
-		<toc class="resources"><a href="https://tools.ietf.org/html/rfc7234" title='RFC 7234: "Hypertext Transfer Protocol (HTTP/1.1): Caching", June 2014'>RFC 7234</a>&#160;· <a href="https://www.mnot.net/cache_docs/" title='Mark Nottingham: Caching Tutorial'>Caching Tutorial</a></toc>
+		<toc class="resources"><a href="http://webconcepts.info/specs/IETF/RFC/7234" title='RFC 7234: "Hypertext Transfer Protocol (HTTP/1.1): Caching", June 2014'>RFC 7234</a>&#160;· <a href="https://www.mnot.net/cache_docs/" title='Mark Nottingham: Caching Tutorial'>Caching Tutorial</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -1065,7 +1065,7 @@
 	<presentation id="hypermedia">
 		<title>Hypermedia</title>
 		<toc class="abstract">...</toc>
-		<toc class="resources"><a href="https://tools.ietf.org/html/rfc5988" title='RFC 5988, "Web Linking", October 2010'>RFC 5988</a>&#160;· <a href="http://www.ustream.tv/recorded/102891495" title='Mike Amundsen, "Twelve Patterns for Hypermedia Microservices", Craft Conference, April 2017'>12 Patterns</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/08/api-maps-hypermedia-api-design.html" title='Erik Wilde, "API Maps: Hypermedia API Design", August 2016'>API Maps</a></toc>
+		<toc class="resources"><a href="http://webconcepts.info/specs/IETF/RFC/5988" title='RFC 5988, "Web Linking", October 2010'>RFC 5988</a>&#160;· <a href="http://www.ustream.tv/recorded/102891495" title='Mike Amundsen, "Twelve Patterns for Hypermedia Microservices", Craft Conference, April 2017'>12 Patterns</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/08/api-maps-hypermedia-api-design.html" title='Erik Wilde, "API Maps: Hypermedia API Design", August 2016'>API Maps</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -1096,7 +1096,7 @@
 			<slide id="api-web-linking">
 				<title>Web Linking for APIs</title>
 				<ul>
-					<li><a href="https://tools.ietf.org/html/rfc5988">Web Linking</a> takes linking to the HTTP level</li>
+					<li><a href="http://webconcepts.info/specs/IETF/RFC/5988">Web Linking</a> takes linking to the HTTP level</li>
 					<ul>
 						<li><a href="http://www.webconcepts.info/concepts/http-headers/Link"><code>Link</code> HTTP Header</a> for links on the HTTP level</li>
 						<li>All links are typed and types are either registered or defined/used by individual users</li>
@@ -1188,7 +1188,7 @@
 						<li>APIs include links that are advertised based on service and state</li>
 						<li>Clients choose links based on application state and goals</li>
 					</ul>
-					<li>Link typing on the Web often is done using <a href="https://tools.ietf.org/html/rfc5988">RFC 5988 <q>Web Linking</q></a></li>
+					<li>Link typing on the Web often is done using <a href="http://webconcepts.info/specs/IETF/RFC/5988">RFC 5988 <q>Web Linking</q></a></li>
 					<ul>
 						<li><em href="http://tools.ietf.org/html/rfc5988#section-4.1">Registered types</em> are simple strings using <a href="https://www.iana.org/assignments/link-relations/link-relations.xhtml">well-known values</a></li>
 						<li><em href="http://tools.ietf.org/html/rfc5988#section-4.2">Extension types</em> are URIs which might choose to self-document their meaning</li>
@@ -1597,7 +1597,7 @@
 	<presentation id="protocols">
 		<title>Protocols</title>
 		<toc class="abstract">...</toc>
-		<toc class="resources"><a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="https://tools.ietf.org/html/rfc7230" title='RFC 7230, "Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing", June 2014'>HTTP</a>&#160;· <a href="https://www.mnot.net/blog/2017/05/11/status_codes" title='Mark Nottingham, "How to Think About HTTP Status Codes", May 2017'>HTTP Status Codes</a></toc>
+		<toc class="resources"><a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/7230" title='RFC 7230, "Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing", June 2014'>HTTP</a>&#160;· <a href="https://www.mnot.net/blog/2017/05/11/status_codes" title='Mark Nottingham, "How to Think About HTTP Status Codes", May 2017'>HTTP Status Codes</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -1991,7 +1991,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>WebSocket is both an API and a protocol</li>
 					<ul>
 						<li>W3C publishes the <a href="http://www.w3.org/TR/websockets/">WebSocket API</a></li>
-						<li>IETF publishes the <a href="https://tools.ietf.org/html/rfc6455">WebSocket Protocol</a></li>
+						<li>IETF publishes the <a href="http://webconcepts.info/specs/IETF/RFC/6455">WebSocket Protocol</a></li>
 					</ul>
 					<li>The WebSocket API allows web apps to open and use WebSocket connections</li>
 					<ul>
@@ -2034,7 +2034,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 	<presentation id="representations">
 		<title>Representations</title>
 		<toc class="abstract">APIs allows providers and consumers of digital services to communicate. Their language depends on the specific API style and API design, but at some level always is based on representing information that is passed back and forth. These representations can be based on a variety of generic models, which often makes it easier for API creators to design and define the specific language of their API. There are many existing generic models, but for the realm of Internet/Web APIs, <em>Extensible Markup Language (XML)</em>, <em>JavaScript Object Notation (JSON)</em>, and <em>Resource Description Framework (RDF)</em> are the most popular ones.</toc>
-		<toc class="resources"><a href="http://www.webconcepts.info/concepts/media-type/" title="Web Concepts: Media Types">Media Types</a>&#160;· <a href="http://www.w3.org/TR/xml/" title='Tim Bray, Jean Paoli, C. Michael Sperberg-McQueen, Eve Maler, and François Yergeau, "Extensible Markup Language (XML) 1.0 (Fifth Edition)", W3C Recommendation REC-xml-20081126, November 2008'>XML</a>&#160;· <a href="https://tools.ietf.org/html/rfc7159" title='Tim Bray, "The JavaScript Object Notation (JSON) Data Interchange Format", IETF RFC 7159, June 2016'>JSON</a>&#160;· <a href="http://www.w3.org/TR/rdf11-concepts/" title='Richard Cyganiak, David Wood, and Markus Lanthaler, "RDF 1.1 Concepts and Abstract Syntax", W3C Recommendation REC-rdf11-concepts-20140225, February 2014'>RDF</a>&#160;· <a href="https://tools.ietf.org/html/rfc4287" title='Mark Nottingham and Robert Sayre, "The Atom Syndication Format", IETF RFC 4287, December 2005'>Atom</a>&#160;· <a href="https://www.w3.org/TR/activitystreams/" title='James Snell and Evan Prodromou, "Activity Streams 2.0", W3C Proposed Recommendation PR-activitystreams-core-20170413, April 2017'>Activity Streams</a>&#160;· <a href="https://jsonfeed.org/">JSON Feed</a></toc>
+		<toc class="resources"><a href="http://www.webconcepts.info/concepts/media-type/" title="Web Concepts: Media Types">Media Types</a>&#160;· <a href="http://www.w3.org/TR/xml/" title='Tim Bray, Jean Paoli, C. Michael Sperberg-McQueen, Eve Maler, and François Yergeau, "Extensible Markup Language (XML) 1.0 (Fifth Edition)", W3C Recommendation REC-xml-20081126, November 2008'>XML</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/7159" title='Tim Bray, "The JavaScript Object Notation (JSON) Data Interchange Format", IETF RFC 7159, June 2016'>JSON</a>&#160;· <a href="http://www.w3.org/TR/rdf11-concepts/" title='Richard Cyganiak, David Wood, and Markus Lanthaler, "RDF 1.1 Concepts and Abstract Syntax", W3C Recommendation REC-rdf11-concepts-20140225, February 2014'>RDF</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/4287" title='Mark Nottingham and Robert Sayre, "The Atom Syndication Format", IETF RFC 4287, December 2005'>Atom</a>&#160;· <a href="https://www.w3.org/TR/activitystreams/" title='James Snell and Evan Prodromou, "Activity Streams 2.0", W3C Proposed Recommendation PR-activitystreams-core-20170413, April 2017'>Activity Streams</a>&#160;· <a href="https://jsonfeed.org/">JSON Feed</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -2321,7 +2321,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<slide id="ijson">
 				<title>JSON and I-JSON</title>
 				<ul>
-					<li>Plain JSON is defined by <a href="http://tools.ietf.org/html/rfc7159">RFC 7159</a></li>
+					<li>Plain JSON is defined by <a href="http://webconcepts.info/specs/IETF/RFC/7159">RFC 7159</a></li>
 					<li>I-JSON constrains JSON and is defined by <a href="http://tools.ietf.org/html/rfc7493">RFC 7493</a></li>
 					<li>I-JSON defines some common-sense conventions around JSON</li>
 					<ul>
@@ -2372,7 +2372,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					</ul>
 					<li>Re-inventing collection formats might be a good design choice</li>
 					<ul>
-						<li><a href="https://tools.ietf.org/html/rfc4287" title="IETF RFC 4287">Atom</a> is XML-based and has <a href="http://dret.typepad.com/dretblog/atom-landscape.html">many additional features</a></li>
+						<li><a href="http://webconcepts.info/specs/IETF/RFC/4287" title="IETF RFC 4287">Atom</a> is XML-based and has <a href="http://dret.typepad.com/dretblog/atom-landscape.html">many additional features</a></li>
 						<li><a href="https://jsonfeed.org/">JSON Feed</a> is a JSON-based variant of Atom</li>
 						<li><a href="https://www.w3.org/TR/activitystreams/">Activity Streams</a> focuses on activity publishing/syndication</li>
 					</ul>
@@ -2381,7 +2381,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<slide id="csv">
 				<title>Comma-Separated Values (CSV)</title>
 				<ul>
-					<li><a href="http://tools.ietf.org/html/rfc4180">RFC 4180</a> defines a textual format for <q>spreadsheet data</q></li>
+					<li><a href="http://webconcepts.info/specs/IETF/RFC/4180">RFC 4180</a> defines a textual format for <q>spreadsheet data</q></li>
 					<li>CSV has been used for a long time, but some of the details were solved differently</li>
 					<li>Defining a media type makes it easier for implementations to know what to expect</li>
 					<ul>
