@@ -241,6 +241,9 @@
 		</part>
 		<part id="resource-lifetime">
 			<title>Managing Resource Lifetimes</title>
+			<slide id="lifetime-intro">
+				<title>Few Resources Live Forever</title>
+			</slide>
 			<slide id="caching-sunset">
 				<title>Caching and Resource Lifetimes</title>
 				<ul>
