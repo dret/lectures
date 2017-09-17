@@ -1058,6 +1058,15 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="extension-management">
+			<title>Extension Management</title>
+			<silde id="extension-naming">
+				<title>Naming Issues</title>
+				<ul>
+					<li><a href="https://tools.ietf.org/html/rfc6648" title="RFC 6648: 'Deprecating the &quot;X-&quot; Prefix and Similar Constructs in Application Protocols', June 2012">RFC 6648</a></li>
+				</ul>
+			</silde>
+		</part>
 		<part id="registries">
 			<title>Registries</title>
 		</part>
