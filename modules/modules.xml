@@ -1035,7 +1035,7 @@
 	<presentation id="documentation-dx">
 		<title>API Documentation and DX</title>
 		<toc class="abstract">...</toc>
-		<toc class="resources"><a href="https://tools.ietf.org/html/draft-wilde-sunset-header" title='Erik Wilde, "The Sunset HTTP Header", Internet Draft wilde-sunset-header'>Sunset Header</a></toc>
+		<toc class="resources"><a href="http://webconcepts.info/specs/IETF/I-D/draft-wilde-sunset-header" title='Erik Wilde, "The Sunset HTTP Header", Internet Draft wilde-sunset-header'>Sunset Header</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -1386,7 +1386,7 @@
 					</ul>
 					<li>What does a Google of Service Discovery look like?</li>
 					<ul>
-						<li>Starting from services, <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">find available description/documentation resources</a></li>
+						<li>Starting from services, <a href="http://webconcepts.info/specs/IETF/I-D/draft-wilde-service-link-rel">find available description/documentation resources</a></li>
 						<li>Index description/documentation resources for subsequent discovery</li>
 						<li>Add support for additional description/documentation formats as required</li>
 					</ul>
@@ -1401,7 +1401,7 @@
 					</ul>
 					<li>Decentralized discovery is based on pulling/crawling diverse data</li>
 					<ol>
-						<li>Start by <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">finding available description/documentation resources</a></li>
+						<li>Start by <a href="http://webconcepts.info/specs/IETF/I-D/draft-wilde-service-link-rel">finding available description/documentation resources</a></li>
 						<li>Process these based on supported description/documentation formats</li>
 						<li>Increase support if required by the evolving ecosystem</li>
 						<li>Provide discovery services based on the resulting service ecosystem snapshot</li>
