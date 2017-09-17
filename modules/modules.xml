@@ -239,6 +239,15 @@
 				</slide>
 			</part>
 		</part>
+		<part id="resource-lifetime">
+			<title>Managing Resource Lifetimes</title>
+			<slide id="caching-sunset">
+				<title>Caching and Resource Lifetimes</title>
+				<ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/draft-wilde-sunset-header" title='Erik Wilde, "The Sunset HTTP Header", Internet Draft wilde-sunset-header'>HTTP <code>Sunset</code> header field</a></li>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="change-management">
 		<title>Change Management</title>
