@@ -119,6 +119,11 @@
 			<title>Interface ≠ Implementation</title>
 			<slide id="api-minimalism">
 				<title>API Minimalism</title>
+				<ul>
+					<li>APIs should be <em>as simple as possible</em></li>
+					<li>Do not let <em>the implementation shine through</em></li>
+					<li>Do not let <em>the implementation model shine through</em></li>
+				</ul>
 			</slide>
 			<slide id="design-eames">
 				<title>Design and Constraints</title>
