@@ -61,4 +61,26 @@
 		<title>Implementing APIs in Large Organizations</title>
 		<toc class="abstract">What you need to know to succeed with an API program, including organizational design and API lifecycle considerations.</toc>
 	</presentation>
+	<presentation id="api-styles">
+		<title>API Styles</title>
+		<toc class="abstract">APIs as a medium for communications can follow different styles. Knowing the styles, picking the ones that are a good choice for a given scenario, and establishing an internal API stylebook are important aspects of an API strategy.</toc>
+		<toc class="resources"><a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/api-days-zurich-2017"><code>dret.net/lectures/api-days-zurich-2017</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/api-days-zurich-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+		</presentation>
 </hotspot>
