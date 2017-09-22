@@ -82,5 +82,27 @@
 				</ul>
 			</slide>
 		</part>
-		</presentation>
+	</presentation>
+	<presentation id="change-management">
+		<title>Change Management and Versioning</title>
+		<toc class="abstract">Like everything on a long-enough timeline, APIs do change over time. Having a plan for how change is managed, and encouraging API designs that are better at dealing with changes can make a big difference for the effectiveness of an API landscape.</toc>
+		<a href="https://tools.ietf.org/html/rfc6648" title="RFC 6648: 'Deprecating the &quot;X-&quot; Prefix and Similar Constructs in Application Protocols', June 2012">RFC 6648</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a>&#160;· <a href="https://blog.goodapi.co/api-change-management-2fe5bba32e9b" title='Zdenek Nemec, "API Change Management", April 2017'>Change Management</a>&#160;· <a href="http://semver.org/" title='Semantic Versioning 2.0.0'>Semantic Versioning</a>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/deloitte-2017"><code>dret.net/lectures/deloitte-2017</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/deloitte-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>
