@@ -1,3 +1,3 @@
 git pull origin master
 ( cd hotspot ; svn update )
-java -jar ../saxon/saxon.jar api-days-ber.xml hotspot/hotspot/hotspot.xsl messages=informative
+java -jar ../saxon/saxon.jar api-days-berlin.xml hotspot/hotspot/hotspot.xsl messages=informative
