@@ -150,19 +150,52 @@
 				<title>Have Some Style</title>
 			</slide>
 		</part>
-		<part id="shared-practice">
-			<title>Culture as Shared Practice</title>
-			<slide id="design-why">
-				<title>Design: Why?</title>
+		<part id="api-change-management">
+			<title>Example: API Change Management</title>
+			<slide id="api-change-strategy">
+				<title>API Change Management in API Strategy</title>
+				<ul>
+					<li>API change management becomes increasingly important</li>
+					<ul>
+						<li>Microservices optimize for quick design/deployment/development/decommissioning</li>
+						<li>Even in MSA-land there are <em>Experience APIs</em> meant to deliver some API stability</li>
+					</ul>
+					<li>APIs can change in terms of features and will be decommissioned at some point</li>
+					<ul>
+						<li><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Robust extensibility</a> helps to facilitate non-breaking API changes</li>
+						<li><em>Hypermedia</em> helps as a pattern to extend extensibility beyond data models</li>
+						<li><a href="http://semver.org/">Semantic versioning</a> may be used to keep track of API changes</li>
+						<li><a href="http://dret.typepad.com/dretblog/2015/08/http-sunset-header.html">HTTP <code>Sunset</code>ting</a> can be used to <a href="http://webconcepts.info/concepts/http-header/Sunset">signal upcoming sunsets on the HTTP level</a></li>
+					</ul>
+					<li>Always follow the <em>why/what/how</em> triad for all platform management</li>
+					<ul>
+						<li><em>Why:</em> Some services/consumers are interested in how an API will change</li>
+						<li><em>What:</em> Follow principles/patterns/protocols to manage/expose API changes</li>
+						<li><em>How:</em> Support tooling/services to implement and test platform principles</li>
+					</ul>
+				</ul>
 			</slide>
-			<slide id="design-what">
-				<title>Design: What?</title>
-			</slide>
-			<slide id="design-how">
-				<title>Design: How?</title>
-			</slide>
-			<slide id="ppp">
-				<title>Programming the People Platform</title>
+			<slide id="sunset-patterns">
+				<title>HTTP <code>Sunset</code>: An Even Simpler Example</title>
+				<ul>
+					<li><em>API Description</em> guidelines may ask for change management documentation</li>
+					<ul>
+						<li>Requirement: Can be as simple as making documentation discoverable on deploy</li>
+						<li>Resolution: Can be as simple as stating that there is no change management</li>
+					</ul>
+					<li><em>Discoverability</em> and <em>machine-readability</em> are different issues</li>
+					<ul>
+						<li>Making description resources <em>discoverable</em> is easy and can be validated during deployment</li>
+						<li>Every API entering the landscape does make change management documentation discoverable</li>
+						<li>For some classes of APIs/services additional requirements may be put in place</li>
+					</ul>
+					<li>One possible requirement is that <em>Public APIs</em> must support <code href="http://webconcepts.info/concepts/http-header/Sunset">Sunset</code></li>
+					<ul>
+						<li>Services must document/describe the support of <code>Sunset</code></li>
+						<li>Services may implement <code>Sunset</code> any way they like</li>
+						<li>The simplest option may be <em><code>Sunset</code> policies</em> on a gateway</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
