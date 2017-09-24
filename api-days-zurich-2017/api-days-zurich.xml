@@ -111,7 +111,7 @@
 					<li>Easy to use → <em>Rich Documentation</em></li>
 					<li>Easy to control → <em>Connective Fabric Instrumentation</em></li>
 					<li>Easy to combine → <em>Coherent Designs</em></li>
-					<li>Easy to change → <em>Lifecycle Thinking</em></li>
+					<li>Easy to change → <em>Open Design</em></li>
 					<li>Easy to withdraw → <em>Lifecycle Thinking</em></li>
 				</ol>
 			</slide>
@@ -132,16 +132,16 @@
 		</part>
 		<part id="interface-implementation">
 			<title>Interface ≠ Implementation</title>
+			<slide id="design-eames">
+				<title>Design and Constraints</title>
+				<blockquote><q href="http://www.markwunsch.com/eames">Design depends largely on constraints.</q> (<a href="https://en.wikipedia.org/wiki/Charles_and_Ray_Eames">Charles Eames</a>)</blockquote>
+			</slide>
 			<slide id="api-minimalism">
 				<title>API Minimalism</title>
 				<ul>
 					<li>APIs should be <em>as simple as possible</em></li>
 					<li>Do not let <em>the implementation shine through</em></li>
 				</ul>
-			</slide>
-			<slide id="design-eames">
-				<title>Design and Constraints</title>
-				<blockquote><q href="http://www.markwunsch.com/eames">Design depends largely on constraints.</q> (<a href="https://en.wikipedia.org/wiki/Charles_and_Ray_Eames">Charles Eames</a>)</blockquote>
 			</slide>
 		</part>
 		<part id="design-culture">
