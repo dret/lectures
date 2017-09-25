@@ -106,6 +106,20 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="landscape-dx">
+				<title>APIs and API Landscapes</title>
+				<ul>
+					<li><em>Design Patterns</em> make navigating landscapes easier</li>
+					<li><em>Design Patterns</em> make designing APIs easier</li>
+					<li><em>Design Patterns</em> are continually evolving vocabularies</li>
+					<li><em>Design Patterns</em> should reflect product design needs</li>
+					<ul>
+						<li><em>Why</em> a product should have certain properties/capabilities</li>
+						<li><em>What</em> can be done to address these issues</li>
+						<li><em>How</em> a team may choose to implement the resolution</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="api-stylebook">
 				<title>API Stylebook: Error Format</title>
 				<img title="API Stylebook: Error Format" href="http://apistylebook.com/design/topics/http-status-standard-error" src="apistylebook-http-status-standard-error.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
@@ -122,20 +136,6 @@
 					<li>Easy to change → <em>Open Design</em></li>
 					<li>Easy to withdraw → <em>Lifecycle Thinking</em></li>
 				</ol>
-			</slide>
-			<slide id="landscape-dx">
-				<title>APIs and API Landscapes</title>
-				<ul>
-					<li><em>Design Patterns</em> make navigating landscapes easier</li>
-					<li><em>Design Patterns</em> make designing APIs easier</li>
-					<li><em>Design Patterns</em> are continually evolving vocabularies</li>
-					<li><em>Design Patterns</em> should reflect product design needs</li>
-					<ul>
-						<li><em>Why</em> a product should have certain properties/capabilities</li>
-						<li><em>What</em> can be done to address these issues</li>
-						<li><em>How</em> a product may choose to implement the resolution</li>
-					</ul>
-				</ul>
 			</slide>
 			<slide id="webby-amazon">
 				<title>Awesome Web Pages are Webby</title>
