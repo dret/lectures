@@ -180,29 +180,6 @@
 				<img title="By Lachlan Donald from Melbourne, Australia (Sharpest tool in the shed) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AHuge_collection_of_tools_in_a_store_in_Chloride%2C_a_ghost_town_in_New_Mexico%2C_USA_-_July_2013.jpg" src="microservices-reality.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
-		<part id="api-trends">
-			<title>API Trends</title>
-			<slide id="api-integration">
-				<title>API Integration</title>
-				<img title="API Integration" src="apis-application-layers-integration.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="experience-api">
-				<title>Experience API</title>
-				<img title="Experience API" src="apis-application-layers-experience.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="hypermedia">
-				<title>Organic Growth of Hypermedia</title>
-				<ul>
-					<li>Increased interest in hypermedia design for APIs</li>
-					<li><a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md">OpenAPI 3.0</a> has introduced (very minimal) <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#linkObject" title="OpenAPI 3.0 Link Object">linking support</a></li>
-					<li>Scenarios like IoT/WoT make linking more essential</li>
-					<ul>
-						<li>Diverse and quickly growing landscape of connected things and services</li>
-						<li>Foundational services need solid models for how to relate things</li>
-					</ul>
-				</ul>
-			</slide>
-		</part>
 		<part id="api-change-management">
 			<title>Example: API Change Management</title>
 			<slide id="api-change-strategy">
