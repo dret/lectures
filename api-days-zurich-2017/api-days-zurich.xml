@@ -131,11 +131,11 @@
 			<slide id="api-management">
 				<title>Excellent API Management → Awesome APIs</title>
 				<ol>
-					<li>Easy to design → <em>Design Scope and Vocabulary</em></li>
-					<li>Easy to implement → <em>Useful Components</em></li>
+					<li><b>Easy to design → <em>Design Scope and Vocabulary</em></b></li>
+					<li><b>Easy to implement → <em>Useful Components</em></b></li>
 					<li>Easy to discover → <em>Rich Description</em></li>
 					<li>Easy to use → <em>Rich Documentation</em></li>
-					<li>Easy to control → <em>Connective Fabric Instrumentation</em></li>
+					<li><b>Easy to control → <em>Connective Fabric Instrumentation</em></b></li>
 					<li>Easy to combine → <em>Coherent Designs</em></li>
 					<li>Easy to change → <em>Open Design</em></li>
 					<li>Easy to withdraw → <em>Lifecycle Thinking</em></li>
@@ -148,12 +148,9 @@
 				<title>Design and Constraints</title>
 				<blockquote><q href="http://www.markwunsch.com/eames">Design depends largely on constraints.</q> (<a href="https://en.wikipedia.org/wiki/Charles_and_Ray_Eames">Charles Eames</a>)</blockquote>
 			</slide>
-			<slide id="api-minimalism">
-				<title>API Minimalism</title>
-				<ul>
-					<li>APIs should be <em>as simple as possible</em></li>
-					<li>Do not let <em>the implementation shine through</em></li>
-				</ul>
+			<slide id="api-interfaces">
+				<title>API are Interfaces</title>
+				<img title='There are no "Microservice APIs"' src="mugatu-microservices-api.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="api-language">
 				<title>APIs are Languages</title>
