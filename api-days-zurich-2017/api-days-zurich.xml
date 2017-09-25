@@ -147,6 +147,11 @@
 			<slide id="design-eames">
 				<title>Design and Constraints</title>
 				<blockquote><q href="http://www.markwunsch.com/eames">Design depends largely on constraints.</q> (<a href="https://en.wikipedia.org/wiki/Charles_and_Ray_Eames">Charles Eames</a>)</blockquote>
+				<ul>
+					<li><q>Why</q> are constraints driven by business and/or client needs</li>
+					<li><q>What</q> should be design patterns addressing the constraints</li>
+					<li><q>How</q> should be support/tools for implementing the <q>what</q></li>
+				</ul>
 			</slide>
 			<slide id="apis-interfaces">
 				<title>APIs are Interfaces</title>
