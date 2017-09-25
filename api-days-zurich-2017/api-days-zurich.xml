@@ -186,6 +186,15 @@
 			</slide>
 			<slide id="hypermedia">
 				<title>Organic Growth of Hypermedia</title>
+				<ul>
+					<li>Increased interest in hypermedia design for APIs</li>
+					<li><a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md">OpenAPI 3.0</a> has introduced (very minimal) <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#linkObject" title="OpenAPI 3.0 Link Object">linking support</a></li>
+					<li>Scenarios like IoT/WoT make linking more essential</li>
+					<ul>
+						<li>Diverse and quickly growing landscape of connected things and services</li>
+						<li>Foundational services need solid models for how to relate things</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="api-change-management">
