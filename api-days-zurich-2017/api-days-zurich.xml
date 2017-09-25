@@ -178,8 +178,13 @@
 		</part>
 		<part id="api-trends">
 			<title>API Trends</title>
-			<slide id="experience-apis">
-				<title>Experience APIs</title>
+			<slide id="api-integration">
+				<title>API Integration</title>
+				<img title="API Integration" src="apis-application-layers-integration.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="experience-api">
+				<title>Experience API</title>
+				<img title="Experience API" src="apis-application-layers-experience.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="hypermedia">
 				<title>Organic Growth of Hypermedia</title>
