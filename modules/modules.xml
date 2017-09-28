@@ -2135,7 +2135,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 						<li><em>Service surfaces</em> are minimal sets of representations and interactions</li>
 						<li><em>Service models</em> are domain models for experts and implementers</li>
 					</ul>
-					<li>Separating surfaces and models increases loose coupling</li>
+					<li>Separating surfaces and models reduces coupling</li>
 				</ul>
 			</slide>
 			<slide id="vocabularies">
