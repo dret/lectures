@@ -1,4 +1,4 @@
-# Microservices Strategy &amp; Architecture
+# Achieving API Awesomeness
 
 ## [API Days Zurich](http://www.apidays.io/events/zurich-2017)
 
@@ -14,4 +14,4 @@ These are sources that I make available for others to read/use/reuse; please res
 
 ## Online
 
-The presentation version for these talks is available online at http://dret.net/lectures/api-days-berlin-2017/
+The presentation version for these talks is available online at http://dret.net/lectures/api-days-zurich-2017/
