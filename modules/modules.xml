@@ -2050,6 +2050,9 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="websub">
 			<title>WebSub</title>
+			<slide id="webhooks">
+				<title>WebHooks as a Pattern</title>
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="representations">
@@ -2491,7 +2494,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					</ul>
 					<li>API technology does not determine the API conversation style</li>
 					<ul>
-						<li>HTTP can be used for asynchronous conversations (<q href="http://www.webhooks.org/">WebHook</q> pattern)</li>
+						<li>HTTP can be used for asynchronous conversations (<q href="http://www.webhooks.org/">WebHooks</q> pattern)</li>
 						<li>Synchronous conversations and be layered on top of asynchronous foundations</li>
 					</ul>
 					<li>Conversation goals should determine the conversation style</li>
