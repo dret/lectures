@@ -128,6 +128,7 @@
 					<li>Extensibility should be part of the <em>API design culture</em></li>
 					<ul>
 						<li>Each API must have and document a plan for API evolution</li>
+						<li>The simplest possible plan may be to never change the API</li>
 					</ul>
 					<li>Extensibility should be made easy for API consumers</li>
 					<ul>
