@@ -1166,8 +1166,8 @@
 					<li>Hypermedia combines state representation and possible further interactions</li>
 					<ul>
 						<li>Resource state allows clients to understand the current content</li>
-						<li>Links allow clients to understand the possible next steps</li>
-						<li>Clients select the link based on their application goals</li>
+						<li>Links allow clients to learn about the possible next steps</li>
+						<li>Clients select and follow a link based on their application goals</li>
 					</ul>
 					<li>Workflows are represented by providing navigation options (affordances)</li>
 					<ul>
