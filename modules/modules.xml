@@ -2508,7 +2508,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>API technology does not determine the API conversation style</li>
 					<ul>
 						<li>HTTP can be used for asynchronous conversations (<q href="http://www.webhooks.org/">WebHooks</q> pattern)</li>
-						<li>Synchronous conversations and be layered on top of asynchronous foundations</li>
+						<li>Synchronous conversations can be layered on top of asynchronous foundations</li>
 					</ul>
 					<li>Conversation goals should determine the conversation style</li>
 				</ul>
