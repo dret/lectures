@@ -398,9 +398,9 @@
 					<li><a href="http://semver.org/">Semantic Versioning</a> standardizes the meaning of version numbers</li>
 					<li>Version numbers follow the <code>MAJOR.MINOR.PATCH</code> pattern and the following rules</li>
 					<ul>
-						<li>increase <code>MAJOR</code> version for incompatible API changes</li>
-						<li>increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
-						<li>increase <code>PATCH</code> version for making backwards-compatible bug fixes</li>
+						<li>Increase <code>MAJOR</code> version for incompatible API changes</li>
+						<li>Increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
+						<li>Increase <code>PATCH</code> version for making backwards-compatible bug fixes</li>
 					</ul>
 					<li>Mostly about how to name implementation artifacts and of limited use for APIs</li>
 					<ul>
