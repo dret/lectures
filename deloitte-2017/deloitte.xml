@@ -203,6 +203,28 @@
 					<li>Quick uptake through <a href="https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Protocol_support">support in all major browsers</a> and <a href="https://github.com/http2/http2-spec/wiki/Implementations">many servers</a></li>
 				</ul>
 			</slide>
+			<slide id="websocket">
+				<title>WebSocket: Non-HTTP Connectivity for Browsers</title>
+				<img src="websockets-logo.png" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+				<ul>
+					<li><code href="https://www.w3.org/TR/XMLHttpRequest2/">XMLHttpRequest</code> kicked off <em>Web 2.0</em> but is limited</li>
+					<ul>
+						<li>The first time Web apps can access the network to request information</li>
+						<li>Allows non-XML content but is limited to HTTP request/response pattern</li>
+					</ul>
+					<li>WebSocket was initially part of HTML5 but then was spun off</li>
+					<li>WebSocket is both an API and a protocol</li>
+					<ul>
+						<li>W3C publishes the <a href="http://www.w3.org/TR/websockets/">WebSocket API</a></li>
+						<li>IETF publishes the <a href="http://webconcepts.info/specs/IETF/RFC/6455">WebSocket Protocol</a></li>
+					</ul>
+					<li>The WebSocket API allows web apps to open and use WebSocket connections</li>
+					<ul>
+						<li>Intended for any communications beyond HTTP's request/response pattern</li>
+						<li>The most popular pattern are long-lasting connections for live updates</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="amqp">
 				<title>AMQP: Asynchronous Enterprise Messaging</title>
 				<img src="amqp-logo.jpg" href="https://www.amqp.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
