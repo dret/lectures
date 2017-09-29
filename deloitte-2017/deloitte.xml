@@ -460,7 +460,7 @@
 		</part>
 	</presentation>
 	<presentation id="microservices">
-		<title>Microservices</title>
+		<title>Introduction to Microservices</title>
 		<toc class="abstract">APIs are interfaces to capabilities, which then must be implemented in some shape or form. As a less heavyweight alternative to more traditional integrated systems, microservices take an "ecosystem approach", encouraging organizations to make sure that adding, changing, or removing capabilities is something that they can do more easily.</toc>
 		<toc class="resources"><a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="https://martinfowler.com/microservices/" title="Martin Fowler's Microservices Resource Guide">Microservices Resource Guide</a></toc>
 		<slide id="summary">
