@@ -177,6 +177,11 @@
 		</part>
 		<part id="protocols">
 			<title>Protocols</title>
+			<slide>
+				<title>DNS &amp; HTTP</title>
+				<p>The two basic protocols which every Web browser must implement are <em>DNS</em> access and <em>HTTP</em>. However, most operating systems provide an API for DNS access, so the browser can use this service locally and only has to implement HTTP. <em>TCP</em> support (which is required as the foundation for HTTP) is usually provided by the operating system.</p>
+				<img style="width : 90% ; margin : 2% ; " src="browser-dns-http.png"/>
+			</slide>
 			<slide id="http2">
 				<title>HTTP/2</title>
 				<ul>
@@ -196,6 +201,31 @@
 						<li><em>Server push</em> allows servers to send resources prior to getting requests</li>
 					</ul>
 					<li>Quick uptake through <a href="https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Protocol_support">support in all major browsers</a> and <a href="https://github.com/http2/http2-spec/wiki/Implementations">many servers</a></li>
+				</ul>
+			</slide>
+			<slide id="amqp">
+				<title>AMQP: Asynchronous Enterprise Messaging</title>
+				<img src="amqp-logo.jpg" href="https://www.amqp.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+				<ul>
+					<li>Originating in the world of financial institutions</li>
+					<ul>
+						<li>Typical scenarios are stock trading and other high-volume applications</li>
+						<li>Protocols need to be optimized for speed and efficiency</li>
+						<li>The goal is to efficiently route message from <em>producers</em> to <em>consumers</em></li>
+						<li>An attempt to get out of lock-in of proprietary IBM protocols</li>
+					</ul>
+					<li>The basic AMQP model has four entities</li>
+					<ul>
+						<li><em>Producers</em> create messages and then publish them to exchanges</li>
+						<li><em>Exchanges</em> receive messages and then distribute them to queue(s) using bindings</li>
+						<li><em>Queues</em> store messages so that consumers can receive them</li>
+						<li><em>Consumers</em> fetch messages from queues or get them by subscription</li>
+					</ul>
+					<li>AMQP is intended for large-scale but coordinated environments</li>
+					<ul>
+						<li>A good fit for settings where application development is centrally controlled</li>
+						<li>A bad fit for an open and decentralized setting with management of exchanges/queues</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
