@@ -177,6 +177,27 @@
 		</part>
 		<part id="protocols">
 			<title>Protocols</title>
+			<slide id="http2">
+				<title>HTTP/2</title>
+				<ul>
+					<li>Started with the goal of <em>improving browser efficiency</em> (i.e., no API focus)</li>
+					<ul>
+						<li>Spearheaded by Google with its <a href="https://en.wikipedia.org/wiki/SPDY">SPDY</a> approach for Chrome/Google connectivity</li>
+					</ul>
+					<li>Maintaining compatibility with HTTP/1.1 as much as possible</li>
+					<ul>
+						<li>Reuse the existing set of <a href="http://webconcepts.info/concepts/http-method/">request methods</a>, <a href="http://webconcepts.info/concepts/http-status-code/">status codes</a>, and most <a href="http://webconcepts.info/concepts/http-header/">header fields</a></li>
+						<li>Allow peers to negotiate use of HTTP/1.1 and HTTP/2.0</li>
+					</ul>
+					<li>Advanced features for more efficient transmission and communications</li>
+					<ul>
+						<li>Headers can be compressed and repeated efficiently (binary transmission)</li>
+						<li>Fully multiplexed avoiding blocking and other inefficiencies from ordered pipelining</li>
+						<li><em>Server push</em> allows servers to send resources prior to getting requests</li>
+					</ul>
+					<li>Quick uptake through <a href="https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Protocol_support">support in all major browsers</a> and <a href="https://github.com/http2/http2-spec/wiki/Implementations">many servers</a></li>
+				</ul>
+			</slide>
 		</part>
 		<part id="api-design-culture">
 			<title>API Design Culture</title>
