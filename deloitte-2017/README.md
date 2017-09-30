@@ -1,6 +1,6 @@
-# Deloitte API Bootcamp 2017
+# Deloitte API Workshop 2017
 
-Slides for the API Bootcamp at Deloitte, Lisbon, Portugal, on September 29, 2017.
+Slides for the API Workshop at Deloitte, Lisbon, Portugal, on September 29, 2017.
 
 
 ## License
