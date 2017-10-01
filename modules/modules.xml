@@ -27,7 +27,7 @@
 	<title>API Academy Modules</title>
 	<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 	<affiliation><a href="http://www.apiacademy.co/">API Academy</a>, <a href="http://www.ca.com/">CA Technologies</a></affiliation>
-	<date short="2017-06">June 2017</date>
+	<date>2017</date>
 	<copyright>2017 Erik Wilde</copyright>
 	<toc name="toc.html">
 		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
@@ -1656,8 +1656,375 @@
 				<img title="World Wide Web Consortium (W3C)" href="http://w3c.org/" src="w3c.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
+		<part id="networks">
+			<title>Computer Networks</title>
+			<slide>
+				<title>Network History</title>
+				<ul>
+					<li>First regarded as a convenient workaround for floppy disks</li>
+					<ul>
+						<li><q>Real computer scientists write compilers</q></li>
+						<li>The value of computer networks depends on their size</li>
+					</ul>
+					<li>Early networking solutions were vendor-specific islands</li>
+					<ul>
+						<li>DECnet for <em>Digital Equipment Corporation (DEC)</em> customers</li>
+						<li>XNS for <em>Xerox</em> customers</li>
+						<li>SNA for <em>IBM</em> customers</li>
+						<li>transmitting data between these networks was very cumbersome</li>
+					</ul>
+					<li>Bridging networks transparently became increasingly important</li>
+					<ul>
+						<li>More computers and networks increase the benefit of interconnections</li>
+						<li>Layering being used for internetworks, not only for networks</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Networks vs. Internetworks</title>
+				<ul>
+					<li>Specific networks use specific abstractions</li>
+					<ul>
+						<li>How to address nodes (computers, phones, PDAs, RFID tags)</li>
+						<li>How to address applications on these nodes</li>
+						<li>How to transmit data to these applications</li>
+					</ul>
+					<li>Internetworks provide a network-independent abstraction</li>
+					<ul>
+						<li>Nodes are addressed uniformly (IP addresses)</li>
+						<li>Applications are identified uniformly (ports)</li>
+						<li>Data transmission uses one set of protocols (TCP/UDP)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Internet</title>
+				<ul>
+					<li>Very early start and a lot of experience</li>
+					<ul>
+						<li>Pragmatic and evolutionary approach</li>
+						<li><q>If it's not broken, don't fix it</q></li>
+					</ul>
+					<li>Standardization by independent technical experts</li>
+					<ul>
+						<li>Avoids the <q>designed by committee</q> effect of consortiums</li>
+						<li>Conservative and concentrating on stability</li>
+						<li>Implementations are required to prove technical feasibility</li>
+						<li>Simplicity whenever possible</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Internet Principles</title>
+				<blockquote>Be liberal in what you accept, and conservative in what you send.</blockquote>
+				<p class="quotenote"><a href="http://www.postel.org/postel.html">Jon Postel</a>, <a href="http://tools.ietf.org/html/rfc1122">IETF RFC 1122</a></p>
+				<blockquote>Whenever possible, communications protocol operations should be defined to occur at the end-points of a communications system, or as close as possible to the resource being controlled.</blockquote>
+				<p class="quotenote"><a href="http://dret.net/biblio/reference/sal84">J. Saltzer, D. Reed, D. Clark, <q>End-to-end Arguments in System Design</q></a></p>
+			</slide>
+			<slide>
+				<title>Internet Protocols</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="internet-protocols.png" title="Internet Protocol Layers"/>
+			</slide>
+			<slide>
+				<title>Network Convergence</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="network-convergence.png" title="Convergence in the Protocol Stack"/>
+			</slide>
+		</part>
+		<part id="netlayers">
+			<title>Networking Layers</title>
+			<slide id="SoC">
+				<title>Separation of Concerns (SoC)</title>
+				<ul>
+					<li>Solving different issues separately is a <em href="http://en.wikipedia.org/wiki/Separation_of_concerns#Origin">Good Idea</em></li>
+					<ul>
+						<li><q>...a program must be correct...</q></li>
+						<li><q>...it should be efficient...</q></li>
+						<li><q>...whether, and if so: why, the program is desirable...</q></li>
+					</ul>
+					<li>Complex solutions need a structured approach for solving them</li>
+					<ul>
+						<li>Solutions become easier to create</li>
+						<li>Parts of solutions may become reusable</li>
+						<li>Parts of solutions may become replaceable</li>
+					</ul>
+					<li>Software engineering hit complexity issues a bit earlier than networking did</li>
+					<li>SoC is a good idea but not without costs</li>
+					<ul>
+						<li><q>Vertical integration</q> allows optimizations not possible in structured designs</li>
+						<li><q>Design depends largely on constraints.</q> (<a href="http://en.wikipedia.org/wiki/Charles_and_Ray_Eames">Charles and Ray Eames</a>)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="osi-layers">
+				<title>OSI Layers</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="osi-model.png" href="http://commons.wikimedia.org/wiki/File:Osi-model.png"/>
+			</slide>
+			<slide id="layer1">
+				<title>Layer 1: Physical</title>
+				<div style="height : 70%">
+					<img style="height : 90% ; margin : 2% ; " src="antenna-tree.jpg" title="Cellular" href="https://www.flickr.com/photos/33954075@N07/5461958584/"/>
+					<img style="height : 90% ; margin : 2% ; " src="public-wifi.jpg" title="Public Wi-Fi" href="https://www.flickr.com/photos/dret/3649149757"/>
+					<img style="height : 90% ; margin : 2% ; " src="rj45.jpg" title="Cable Access" href="https://www.flickr.com/photos/30908884@N00/197503286"/>
+				</div>
+			</slide>
+			<slide id="layer2">
+				<title>Layer 2: Data Link</title>
+				<ul>
+					<li>Getting small units of data (frames) safely across layer 1</li>
+					<li>Lost/damaged frames are repeated to ensure robustness</li>
+					<li>Depending on layer 1, layer 2 frames can have very different sizes</li>
+					<ul>
+						<li><a href="http://en.wikipedia.org/wiki/Ethernet_frame">Ethernet frames</a> typically have 1500 bytes of payload (and some protocol fields)</li>
+						<li>Other networks (such as GSM, CDMA, BLE) use different frame sizes</li>
+					</ul>
+				</ul>
+				<img style="width : 90% ; margin : 2% ; " src="ethernet-frame.png" href="http://commons.wikimedia.org/wiki/File:Ethernet_frame.svg"/>
+			</slide>
+			<slide id="layer3">
+				<title>Layer 3: Network</title>
+				<ul>
+					<li>Allows addressing at the network level</li>
+					<li>For the Internet, this means IP addresses</li>
+					<ul>
+						<li><a href="http://en.wikipedia.org/wiki/IPv4">IPv4</a> is the version that has powered the Internet so far</li>
+						<li><a href="http://en.wikipedia.org/wiki/IPv6">IPv6</a> is phased in to be able to handle <q>IoT-scale</q> growth</li>
+					</ul>
+				</ul>
+				<img style="width : 90% ; margin : 2% ; " src="ipv4-packet.png" href="http://en.wikipedia.org/wiki/IPv4"/>
+			</slide>
+			<slide id="layer4">
+				<title>Layer 4: Transport</title>
+				<ul>
+					<li>Layer 3 establishes connectivity on a <em>machine-to-machine</em> level</li>
+					<ul>
+						<li>Packets can be sent from one machine to another machine</li>
+						<li>It is not clear yet what to do with the packet once it arrived</li>
+					</ul>
+					<li>TCP establishes <em>process-to-process</em> connectivity and reliable connections</li>
+				</ul>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="tcp-structure.png" href="http://en.wikipedia.org/wiki/Transmission_Control_Protocol"/>
+			</slide>
+			<slide id="layer5">
+				<title>Layer 5: Session</title>
+				<ul>
+					<li>Sessions are meaningful for applications</li>
+					<ul>
+						<li>TCP connections may or may not terminate (see <a href="http://en.wikipedia.org/wiki/HTTP_persistent_connection">HTTP/1.1 persistent connections</a>)</li>
+						<li>Applications should be able to start, pause, restart, and end sessions</li>
+					</ul>
+					<li>Sessions can be terrible for scalability</li>
+					<ul>
+						<li>Creating tight coupling between two processes</li>
+						<li><a href="rest/">REST</a> tries really hard to build a session-free web (<q>stateless interactions</q>)</li>
+					</ul>
+					<li>The Internet does not really have a generic model for sessions</li>
+					<ul>
+						<li><em>HTTP Cookies</em> are one way to achieve the same goal (but with a lot of side-effects)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="layer6">
+				<title>Layer 6: Presentation</title>
+				<ul>
+					<li>OSI has <em href="http://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One">Abstract Syntax Notation One (ASN.1)</em></li>
+					<ul>
+						<li>one abstract model and a variety of <q>encoding rules</q> (DER, XER, PER)</li>
+						<li>mostly extinct nowadays but still used for <a href="http://en.wikipedia.org/wiki/Public_key_infrastructure">PKI information (certificates)</a></li>
+					</ul>
+					<li>The Internet has media types and some <q>generic</q> data representation languages</li>
+					<ul>
+						<li><em href="../xml">Extensible Markup Language (XML)</em> was the first successful Internet representation</li>
+						<li><em href="">JavaScript Object Notation (JSON) replaced XML because most developers like it better</em></li>
+						<li><em href="">Resource Description Framework (RDF)</em> is another possible generic data format</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="layer7">
+				<title>Layer 7: Application</title>
+				<ul>
+					<li>Anything that is built on top of a layered networking stack</li>
+					<li>Applications can select (some of the) aspects of the stack</li>
+					<ul>
+						<li>TCP is often useful because it's reliable and flow-controlled</li>
+						<li>UDP may be better for real-time and loss-tolerant data such as video/audio</li>
+					</ul>
+					<li>Lower layers are completely invisible to applications</li>
+					<ul>
+						<li>Unless some support and signaling is built into the networking stack</li>
+						<li>For example, it can be very interesting to know what traffic costs</li>
+					</ul>
+					<li>Complete abstraction is a dream, complete control is a nightmare</li>
+					<ul>
+						<li>Or is it the other way around? It all depends on the scenarios...</li>
+						<li>As the Internet and applications evolve, networking protocols and features evolve</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>(Some) Popular Internet Application Protocols</title>
+				<ul>
+					<li>Domain/Host Name Resolution: DNS</li>
+					<li>The Web: <link href="HTTP"/></li>
+					<li>Email: SMTP/IMAP</li>
+					<li>Chatting: <link href="xmpp"/>XMPP</li>
+					<li>File Transfer: FTP</li>
+					<li>Multimedia Traffic: RTP</li>
+					<li>Remote Login: Telnet</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Popular Networking Equipment</title>
+				<ul>
+					<li>Layer 1: Repeaters, Hubs (extending reach)</li>
+					<li>Layer 2: Bridges, Switches (selectively <q>repeating</q> frames)</li>
+					<li>Layer 3: Routers (using end-to-end addresses)</li>
+					<li>Above Layer 4: Gateways</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="TCP">
+			<title>Transmission Control Protocol (TCP)</title>
+			<slide>
+				<title>TCP Features</title>
+				<ul>
+					<li>Flow-controlled (avoiding congestion)</li>
+					<li>Reliable (no data lost or duplicated)</li>
+					<li>Connection-oriented</li>
+					<li>Application addressing</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Reliable Connections</title>
+				<ul>
+					<li>IP may drop or duplicate packets</li>
+					<ul>
+						<li>TCP adds serial numbers in data packets</li>
+						<li>If problems are detected, TCP recovers automatically</li>
+					</ul>
+					<li>TCP avoids network congestion and system overload</li>
+					<ul>
+						<li><em>Slow start</em> avoids flooding receivers with data they cannot process</li>
+						<li><em>Fast retransmit</em> for avoiding timeouts when losing data</li>
+						<li>A <em>Sliding window</em> for controlling the amount of outstanding packets</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>TCP Window</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="tcp-window.png"/>
+			</slide>
+		</part>
+		<part id="DNS">
+			<title>Domain Name System (DNS)</title>
+			<slide>
+				<title>Naming vs. Addressing</title>
+				<ul>
+					<li>IP addresses depend on network topology and organization</li>
+					<ul>
+						<li>Reorganizing a network may change all IP addresses</li>
+						<li>Identifying important hosts should not be address-based</li>
+					</ul>
+					<li>Names are supposed to be more stable than addresses</li>
+					<ul>
+						<li>A name is an abstract identification of something</li>
+						<li>Names can be used to obtain more information</li>
+					</ul>
+					<li>Network services should use names instead of addresses</li>
+					<ul>
+						<li>Before using the service, a mapping has to be performed</li>
+						<li>The <em>Domain Name System (DNS)</em> is providing this service</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>DNS Properties</title>
+				<ul>
+					<li>DNS has a bootstrap problem</li>
+					<ul>
+						<li>DNS provides a service and should thus be identified by a name</li>
+						<li>For resolving names into addresses, the DNS service is required</li>
+					</ul>
+					<li>DNS configuration is part of basic Internet configuration</li>
+					<ul>
+						<li><em>Dynamic Host Configuration Protocol (DHCP)</em> provides IP address, netmask, gateway, and DNS server address</li>
+					</ul>
+					<li>DNS names are hierarchically structured</li>
+					<ul>
+						<li><code>ischool.berkeley.edu</code>, <code>edu</code> is the <em>Top-Level Domain (TLD)</em></li>
+						<li>TLDs are either <em>generic (gTLD)</em> or <em>country code (ccTLD)</em></li>
+						<li>Subdomains are federated (e.g., <code>edu</code>, <code>us</code>, <code>uk</code>, <code>tv</code>)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Names Matter</title>
+				<ul>
+					<li>Names are not unique and namespaces are finite</li>
+					<ul>
+						<li>Name disputes arise which were irrelevant before the Web</li>
+						<li><q>Cybersquatting</q> as a popular way to make money</li>
+					</ul>
+					<li>Names can be worth a lot of money</li>
+					<ul>
+						<li><code>business.com</code> was sold for $7.5M in 1999 and again for $345M in 2007</li>
+					</ul>
+					<li>Name inflation can be used to generate money</li>
+					<ul>
+						<li><code>aero</code>, <code>biz</code>, <code>coop</code>, <code>info</code>, <code>jobs</code>, <code>mobi</code>, <code>museum</code>, <code>name</code>, <code>pro</code>, <code>travel</code></li>
+						<li>Starting 2014, <a href="http://dret.typepad.com/dretblog/2008/06/dret.html">user-defined top-level domains went on sale</a></li>
+					</ul>
+					<li>Names can have political significance</li>
+					<ul>
+						<li>ccTLDs are assigned based on the UNO's idea of what a country is</li>
+					</ul>
+					<li>Names can have symbolic significance</li>
+					<ul>
+						<li>Catalonia managed to get a domain of its own (<code>cat</code>)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>DNS Namespace Organization</title>
+				<ul>
+					<li>Domain owners can organize the assignment of subdomains</li>
+					<ul>
+						<li><code href="http://www.berkeley.edu/">berkeley.edu</code> is an U.S. educational institution</li>
+						<li><code href="http://www.ethz.ch/">ethz.ch</code> is a Swiss university</li>
+						<li><code href="http://www.imperial.ac.uk/">imperial.ac.uk</code> is a British university</li>
+						<li><code href="http://www.uts.edu.au/">uts.edu.au</code> is an Australian university</li>
+						<li><code href="http://www.swiss.aero/">swiss.aero</code> makes money by selling <q>new land</q></li>
+					</ul>
+					<li>Special rules may apply (Germany does not assign car license plate names)</li>
+					<li>Organizations may be countries or companies</li>
+					<ul>
+						<li>Countries have national organizations for assigning names</li>
+						<li>Companies may create an internal multi-level namespace (<code href="http://www.ischool.berkeley.edu/">www.ischool.berkeley.edu</code>)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Using DNS</title>
+				<ul>
+					<li>DNS is used by virtually all Internet applications</li>
+					<ul>
+						<li>Names are more stable than addresses</li>
+					</ul>
+					<li>E-mail has some dedicated features built into DNS</li>
+					<ul>
+						<li>Special entries (<code>MX</code> records) identify the e-mail server for a domain</li>
+						<li>Fallback entries help dealing with failing e-mail servers</li>
+					</ul>
+					<li>most URIs are based on DNS names</li>
+					<ul>
+						<li><code>http://ischool.berkeley.edu/</code> identifies the access protocol and the host</li>
+						<li>The browser first performs a DNS lookup</li>
+						<li>A TCP connection is then established to the IP address returned by the DNS</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="HTTP">
-			<title short="HTTP">Hypertext Transfer Protocol (HTTP)</title>
+			<title>Hypertext Transfer Protocol (HTTP)</title>
 			<slide>
 				<title>DNS &amp; HTTP</title>
 				<p>The two basic protocols which every Web browser must implement are <em>DNS</em> access and <em>HTTP</em>. However, most operating systems provide an API for DNS access, so the browser can use this service locally and only has to implement HTTP. <em>TCP</em> support (which is required as the foundation for HTTP) is usually provided by the operating system.</p>
