@@ -51,7 +51,7 @@
 	</toc>
 	<presentation id="introduction">
 		<title>Introduction</title>
-		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>
+		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="http://dret.typepad.com/dretblog/2017/04/the-three-drivers-of-the-api-economy.html" title='Erik Wilde, "The Three Drivers of the API Economy", April 2017'>Three API Drivers</a></toc>
 		<part id="api-academy-intro">
 			<title>API Academy</title>
 			<slide id="dret">
@@ -101,9 +101,322 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="intro-conclusions">
+		<part id="digital-transformation-introduction">
+			<title>Digital Transformation: Why?</title>
+			<slide id="why-now">
+				<title>APIs! But Why Now?</title>
+				<ol>
+					<li><em>Push:</em> Not moving becomes an increasingly risky strategy</li>
+					<ul>
+						<li>Markets move faster than ever before</li>
+						<li>Technology-driven changes require readiness on the IT level</li>
+					</ul>
+					<li><em>Pull:</em> Participating in the API economy is increasingly beneficial (a.k.a. the <em href="https://en.wikipedia.org/wiki/Metcalfe%27s_law">network effect</em>)</li>
+					<ul>
+						<li>Re-imagining organizations becomes a way of being</li>
+						<li>Not being API-ready means missing increasingly more opportunities</li>
+					</ul>
+					<li><em>Follow the Leaders:</em> Moving towards APIs is not difficult anymore</li>
+					<ul>
+						<li>Examples of organizations allow insights into potential and risk</li>
+						<li>The technology landscape is rich enough to get started</li>
+					</ul>
+				</ol>
+			</slide>
+			<slide id="castle">
+				<title>Traditional IT</title>
+				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="bureaucracy">
+				<title>Bureaucracy</title>
+				<ul>
+					<li>Bureaucracy evolved for a reason</li>
+					<ul>
+						<li>Clearly defined model of <em>input</em> and <em>output</em> of processing units</li>
+						<li>Implementation issues of the processing units are <em>hidden</em></li>
+						<li><em>Processing units can scale</em> because of encapsulation and statelessness</li>
+						<li>Processing steps can be <em>easily pipelined</em> while keeping steps separate</li>
+					</ul>
+					<li>Well-designed service landscapes have the exact same properties</li>
+					<ul>
+						<li><em>Messaging models</em> instead of paper forms</li>
+						<li>Message models are <em>as shallow as possible</em> (hide implementation model)</li>
+						<li><em>Stateless interactions</em> allow for easy load balancing</li>
+						<li>Resource identifiers and hypermedia allow <em>seamless workflows</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-economy">
+				<title>API Economy</title>
+				<img title="Farmers' Market Sacramento" href="https://commons.wikimedia.org/wiki/File:Farmers'_market_Sacramento.jpg" src="farmers-market-sacramento.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="digital-transformation">
+				<title>Digital Transformation</title>
+				<img href="https://upload.wikimedia.org/wikipedia/commons/3/31/Great_white_shark_south_africa.jpg" src="digital-transformation-shark.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="what">
+			<title>Digital Transformation: What?</title>
+			<slide id="digitalization-dividends">
+				<title><a href="http://queue.acm.org/detail.cfm?id=2956643">Digitalization Dividends</a></title>
+				<ol>
+					<li>Permissionless Innovation</li>
+					<li>Enable Failure</li>
+					<li>Disrupt Trust (replaced by autonomy and accountability)</li>
+					<li>You Build It, You Own It</li>
+					<li>Accelerate Deprecations</li>
+					<li>End Centralized Metadata</li>
+					<li>Concentrate the Pain</li>
+					<li>Test Differently</li>
+				</ol>
+			</slide>
+			<slide id="ms-blind-spots">
+				<title>MSA Blind Spot: API Design/Management</title>
+				<ul>
+					<li>MSA focuses on culture/development/operational aspects</li>
+					<ul>
+						<li>Isolating services through all phases of the lifecycle</li>
+						<li>But of course services still need to interact</li>
+					</ul>
+					<li>API consistency will help to make the landscape more productive</li>
+					<ul>
+						<li>Helping <em>API designers</em> to avoid re-inventing the wheel</li>
+						<li>Helping <em>API providers</em> to be more usable for consumers</li>
+						<li>Helping <em>API consumers</em> to depend on some consistency</li>
+						<li>Helping with <em>API discovery</em> and managing the landscape</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="organize-services">
+				<title>Organize Services: Operate Smaller Components</title>
+				<ul>
+					<li>Services talk to each other <em>only</em> through APIs</li>
+					<ul>
+						<li>Each service runs as a standalone component</li>
+						<li>Service dependencies are only through API invocations</li>
+					</ul>
+					<li>APIs trade flexibility for operational complexity</li>
+					<ul>
+						<li>Monitoring and debugging are easier in a <em>compile-time linked system</em></li>
+						<li>Flexibility and scalability are better in a <em>runtime linked ecosystem</em></li>
+					</ul>
+					<li>APIs need <em>lifecycle management</em> to reach full potential</li>
+					<ul>
+						<li><em>Design</em> APIs so that they fit into the ecosystem</li>
+						<li><em>Publish</em> APIs so that they can be discovered</li>
+						<li><em>Deploy</em> APIs so that they can be used safely/securely</li>
+						<li><em>Manage</em> APIs so that the ecosystem can be monitored</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-lifecycle">
+				<title>API Lifecycle</title>
+				<img title="Where API management is headed in 2017" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="how">
+			<title>Digital Transformation: How?</title>
+			<slide id="digital-transformation-path">
+				<title><a href="http://martinfowler.com/articles/microservices.html">The Path to Digital Transformation</a></title>
+				<ol>
+					<li>Componentization via services</li>
+					<li>Organized around business capabilities</li>
+					<li>Products not projects</li>
+					<li>Smart endpoints and dumb pipes</li>
+					<li>Decentralized governance</li>
+					<li>Decentralized data management</li>
+					<li>Infrastructure automation</li>
+					<li>Design for failure</li>
+					<li>Evolutionary design</li>
+				</ol>
+			</slide>
+			<slide id="who">
+				<title>Microservices for the Masses?</title>
+				<ul>
+					<li>Microservices are an investment and not a default choice</li>
+					<ul>
+						<li>The cost is the need for advanced infrastructure and teams</li>
+						<li>The return is increased flexibility and agility</li>
+						<li>Cost/benefit for microservices is targeted at long term capabilities</li>
+					</ul>
+					<li>What are the <a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html">prerequisites for considering microservices?</a></li>
+					<ol>
+						<li><em>Rapid Provisioning:</em> Automated process to quickly create server infrastructure</li>
+						<li><em>Monitoring:</em> Multi-level monitoring from service health to business-level logic</li>
+						<li><em>Rapid Deployment:</em> Automated ways to quickly move from code to running services</li>
+					</ol>
+					<li>Moving to MSA is a transition process and not one <em>Big Bang</em></li>
+					<ul>
+						<li>Just like the Web is never complete/final, neither is a microservices landscape</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-focus">
+				<title>APIs are Front and Center</title>
+				<ul>
+					<li>The only visibility into a service is its API</li>
+					<li>APIs should avoid letting their <q>implementation shine through</q></li>
+					<li>The two main goals of an API are <em>interaction</em> and <em>encapsulation</em></li>
+					<ul>
+						<li><em>Interaction</em> should be as simple/easy as possible through the API</li>
+						<li><em>Encapsulation</em> ensures that the implementation is invisible</li>
+					</ul>
+					<li>Help developers to navigate the evolving landscape of interlinked APIs</li>
+				</ul>
+			</slide>
+			<slide id="surface">
+				<title>Be Superficial</title>
+				<ul>
+					<li>The only thing that matters is the <em>service surface</em></li>
+					<ul>
+						<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
+						<li>Resist the temptation to <em>expose your model</em> just because you can</li>
+					</ul>
+					<li>Concepts must be well-defined but not necessarily deeply modeled</li>
+					<ul><em>Domain Driven Design (DDD)</em> provides a framework for <em>bounded contexts</em></ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="evolution">
+			<title>Service Evolution</title>
+			<slide id="autonomy-robustness">
+				<title>Autonomy vs. Robustness</title>
+				<ul>
+					<li>APIs emphasize independence and autonomy of capabilities</li>
+					<ul>
+						<li>Allowing teams to design/implement/deploy autonomously increases speed</li>
+						<li>With no oversight at all the cost may add up on the consumer side</li>
+						<li>Finding a harmonious balance between autonomy and guidelines is key</li>
+					</ul>
+					<li>There are two critical sides to the evolution part</li>
+					<ol>
+						<li>When <link href="service-evolution">services change</link>, do consumers need to be aware of the changes?</li>
+						<li>When <link href="landscape-evolution">the landscape changes</link>, do consumers need to discover the new services?</li>
+					</ol>
+				</ul>
+			</slide>
+			<slide id="service-evolution">
+				<title>Design for Service Evolution</title>
+				<ul>
+					<li>Services are designed with a certain goal and certain options</li>
+					<ul>
+						<li>The <em>goal</em> is to satisfy the current requirements for a useful service</li>
+						<li>The <em>options</em> are based on assumptions on how the service might change</li>
+					</ul>
+					<li>Service design is a balance between simplicity and flexibility</li>
+					<li>Building <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">robust and extensible services</a> is based on three factors</li>
+					<ul>
+						<li><em>Meaningful and stable core</em>: The service core must remain stable over time</li>
+						<li><em>Extension model</em>: There are well-defined ways how the service core may evolve</li>
+						<li><em>Processing model</em>: It is well-defined how clients are processing extensions</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="landscape-evolution">
+				<title>Design for Landscape Evolution</title>
+				<ul>
+					<li>Application flow should be guided by discovered controls</li>
+					<ul>
+						<li>A dynamic service landscape needs a dynamic way of discovering services</li>
+						<li><em>Hypermedia</em> is a proven way how controls can be served dynamically</li>
+					</ul>
+					<li>Hypermedia is a good way for supporting <em>service choreography</em></li>
+					<ul>
+						<li>Microservice usage may change over time as the landscape evolves</li>
+						<li>Choreography exposes ways in which various services are combined to achieve a goal</li>
+					</ul>
+					<li>If nobody links to some microservices, these will disappear over time</li>
+					<ul>
+						<li>Usage and linkage combined provide useful analysis data</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="MSA-v">
+				<title>The Three V's of Service Landscapes</title>
+				<ul>
+					<li>Volume of available services: <link href="landscape-scale">Scale</link></li>
+					<ul>
+						<li>How big is the service landscape and can I get an overview of what's around?</li>
+					</ul>
+					<li>Variety of service designs and interfaces: <link href="landscape-diversity">Diversity</link></li>
+					<ul>
+						<li>As a creator or consumer, how do I deal with different service designs?</li>
+					</ul>
+					<li>Velocity of service landscape evolution: <link href="landscape-decentralization">Decentralization</link></li>
+					<ul>
+						<li>As the landscape evolves, how stable are services and their designs?</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="landscape-scale">
+				<title>Service Landscape Scale</title>
+				<ul>
+					<li>Different environments have different ideas of MS scale</li>
+					<ul>
+						<li>Small projects may have a handful of services</li>
+						<li>Large MS adopters may have hundreds or thousands of services</li>
+					</ul>
+					<li>Public APIs and microservice APIs combined mean a bigger API inventory</li>
+					<li>Using any form of discovery may not be necessary from the start</li>
+					<ul>
+						<li>Consider the possibility when starting the MSA effort</li>
+						<li>Having a plan helps teams to be aware of the need later on</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="landscape-diversity">
+				<title>Service Landscape Diversity</title>
+				<ul>
+					<li>Not all services use the same technical foundations</li>
+					<ul>
+						<li>Different communications mechanisms</li>
+						<li>Different metamodels (XML/JSON/RDF) for data models</li>
+						<li>Different models for representing application concepts</li>
+						<li>In a Web context, these are concepts such as <a href="https://github.com/dret/sedola/blob/master/MD/headers.md">HTTP headers</a>, <a href="https://github.com/dret/sedola/blob/master/MD/mediatypes.md">media types</a>, and <a href="https://github.com/dret/sedola/blob/master/MD/linkrels.md">link relations</a></li>
+					</ul>
+					<li>Handling diversity can be challenging because of different <q>design universes</q></li>
+					<ul>
+						<li>Depending on choice, similar concepts/models may be represented differently</li>
+						<li>Introducing a generalized abstraction layer is unlikely to be helpful</li>
+					</ul>
+					<li><em>Discovering descriptions</em> provides a better overview of the ecosystem</li>
+					<ul>
+						<li>A reality-based overview of the technology landscape</li>
+						<li>A possible starting point or guideline for getting MSA teams started</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="landscape-decentralization">
+				<title>Service Landscape Decentralization</title>
+				<ul>
+					<li>Decentralization means no single point of control</li>
+					<li>Decentralization means no automatic top-down visibility</li>
+					<ul>
+						<li><em>API gateways</em> are one way of improving visibility (and control)</li>
+						<li><em>Instrumenting the connective fabric</em> is another way out of this</li>
+					</ul>
+					<li>Complete and uncontrolled decentralization is an ideal</li>
+					<ul>
+						<li><em>Observe</em> how the MSA landscape develops</li>
+						<li><em>Identify pain points</em> from the design and operational point of view</li>
+						<li><em>Identify popular patterns</em> so that teams have a starting point</li>
+						<li><em>Convincing teams</em> instead of mandatory guidelines</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="introduction-conclusions">
 			<title>Conclusions</title>
-			<slide id="q-and-a">
+			<slide id="api-conclusions">
+				<title>APIs Matter</title>
+				<ul>
+					<li>APIs combine essential IT trends of the past decades</li>
+					<li>APIs result in service landscapes that can evolve and adapt</li>
+					<li>API ecosystems have many tunable knobs and not <em>one correct setting</em> for them</li>
+					<li>Transitioning to APIs is a gradual process</li>
+				</ul>
+			</slide>
+			<slide id="introduction-q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
