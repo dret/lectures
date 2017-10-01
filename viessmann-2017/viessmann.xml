@@ -1623,10 +1623,10 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				</ul>
 			</slide>
 		</part>
-		<part id="mqtt">
-			<title>Message Queue Telemetry Transport (MQTT)</title>
-			<slide id="mqtt-basics">
-				<title>An <q>IoT Funnel Protocol</q></title>
+		<part id="messaging-protocols">
+			<title>Messaging Protocols</title>
+			<slide id="mqtt">
+				<title>MQTT: An <q>IoT Funnel Protocol</q></title>
 				<img src="mqtt-logo.png" href="https://mqtt.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
 				<ul>
 					<li>Initiated by IBM and similar in scope to <link href="amqp">AMQP</link></li>
@@ -1648,11 +1648,8 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>Mostly, MQTT is used to funnel sensor readings into a collection point</li>
 				</ul>
 			</slide>
-		</part>
-		<part id="amqp">
-			<title>Advanced Message Queueing Protocol (AMQP)</title>
-			<slide id="amqp-basics">
-				<title>Asynchronous Enterprise Messaging</title>
+			<slide id="amqp">
+				<title>Advanced Message Queueing Protocol (AMQP)</title>
 				<img src="amqp-logo.jpg" href="https://www.amqp.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
 				<ul>
 					<li>Originating in the world of financial institutions</li>
@@ -1676,11 +1673,8 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					</ul>
 				</ul>
 			</slide>
-		</part>
-		<part id="xmpp">
-			<title>Extensible Messaging Protocol (XMPP)</title>
-			<slide id="xmpp-history">
-				<title>XMPP History</title>
+			<slide id="xmpp">
+				<title>Extensible Messaging Protocol (XMPP)</title>
 				<img src="xmpp-logo.png" href="http://xmpp.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
 				<ul>
 					<li>Originally named <q>Jabber</q> and intended as an <em>open chat protocol</em></li>
