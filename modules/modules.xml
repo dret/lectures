@@ -1140,6 +1140,18 @@
 			</slide>
 			<slide id="registered-link-types">
 				<title>Registered Link Types</title>
+				<ul>
+					<li>Well-known link relation types are registered with IANA</li>
+					<ul>
+						<li>Registration can be done be anybody and follows a simple process</li>
+						<li>Ideally the registry should reflect shared practices by the community</li>
+					</ul>
+					<li>Registered link relation types are simple strings</li>
+					<ul>
+						<li>Any simple name that is used should be described in the registry</li>
+						<li>For specific/proprietary types it is possible to use <em>extension relation types</em></li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="extension-link-types">
 				<title>Extension Link Types</title>
