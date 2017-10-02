@@ -2762,15 +2762,16 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<ul>
 					<li>RDF started as a generalization of <span title="Platform for Internet Content Selection">PICS</span></li>
 					<ul>
-						<li>A way to simple make statements about URI-identified resources</li>
+						<li>A way to simple make <em>statements</em> about URI-identified resources</li>
 						<li>Statements are using <em>(Subject, Predicate, Object)</em> triples</li>
 					</ul>
 					<li>Statements can be aggregated and result in a graph-oriented data model</li>
 					<ul>
-						<li>Subject: ...</li>
-						<li>Predicate: ...</li>
-						<li>Object: ...</li>
+						<li><em>Subject</em> (URI): The resource the statement is about</li>
+						<li><em>Predicate</em> (URI): The kind of statement being made</li>
+						<li><em>Object</em> (URI or literal): The statement that is being made</li>
 					</ul>
+					<li>The aggregate graph can be interpreted as a set of interconnected statements</li>
 				</ul>
 			</slide>
 			<slide id="rdf-vocabularies">
