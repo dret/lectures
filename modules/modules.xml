@@ -2774,6 +2774,22 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>The aggregate graph can be interpreted as a set of interconnected statements</li>
 				</ul>
 			</slide>
+			<slide id="two-rdf-views">
+				<title>Two Views of RDF</title>
+				<ul>
+					<li>The <em>logic view</em> sees the graph as a set of interconnected statements</li>
+					<ul>
+						<li>Statements are at the center of this perspective</li>
+						<li>Merging graphs is mainly an act or merging statements</li>
+					</ul>
+					<li>The <em>graph view</em> sees the graph as a triple-based data structure</li>
+					<ul>
+						<li>Merging graphs based on node identity is the main concern</li>
+						<li>Having elaborate schemas of statement types is not a necessity</li>
+					</ul>
+					<li>Both views are complementary but influence the models and tooling</li>
+				</ul>
+			</slide>
 			<slide id="rdf-vocabularies">
 				<title>RDF Vocabularies: Schemas and Ontologies</title>
 			</slide>
