@@ -1376,6 +1376,225 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="contracts">
+		<title>API Contracts</title>
+		<part id="web-of-services">
+			<title>A Web of Services</title>
+			<slide id="being-webby">
+				<title>Learn from the Big Boy</title>
+				<ul>
+					<li>Enterprise IT has discovered <em>Web Architecture</em>: They call it <em>Microservices</em>!</li>
+					<li><em>Visibility</em> is a key issue for <em>making the <q>webby enterprise</q> work</em></li>
+					<ul>
+						<li>Enterprise IT still needs control over the evolving service landscape</li>
+						<li>Being more cooperative will help the success of webby approaches</li>
+					</ul>
+					<li><em>Design Instrumentation</em> allows better service landscaping</li>
+					<ul>
+						<li>Think of it as <a href="http://www.w3.org/WAI/ER/tools/">accessibility checkers for the service web</a></li>
+						<li><em>Balancing speed and safety</em> requires understanding what you are balancing</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="ui-theory">
+				<title>Uniform Interface Theory</title>
+				<ul>
+					<li>Spontaneous interactions without prior agreement</li>
+					<li><q>Surfing the Web</q> means <q>Surfing the Uniform Interface</q></li>
+					<ul>
+						<li>Shared assumptions mean seamless transition between services/sites</li>
+						<li>The human Web hardcodes assumptions into browser capabilities</li>
+					</ul>
+					<li>The human Web has advantages over the service Web</li>
+					<ul>
+						<li>Painful memory of <em>browser wars</em> and their effect on Web development</li>
+						<li>Humans are highly adaptable to deal with non-technology changes</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="ui-practice">
+				<title>Uniform Interface Practice</title>
+				<ul>
+					<li>The Web of today is very different from the Web we had</li>
+					<ul>
+						<li>HTML5 has <a href="http://html5-overview.net/current">133 current specs and counting</a></li>
+						<li>HTTP has <a href="http://webconcepts.info/concepts/http-headers">187 well-known header fields and counting</a></li>
+					</ul>
+					<li><q>Surfing the Web</q> means <q>Surfing an evolving surface</q></li>
+					<li>How to keep track of the changing landscape?</li>
+					<ul>
+						<li><em>Run-time instrumentation</em> helps understanding what is really happening</li>
+						<li><em>Design-time instrumentation</em> allows some level of self-declaration</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="snowflakes">
+				<title>Web Concepts: Sunlight Melts Snowflakes</title>
+				<img title="Snowflakes" href="http://www.flickr.com/photos/amagill/4223790595" src="snowflake.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="ui-patterns">
+				<title>Uniform Interface Patterns</title>
+				<ul>
+					<li>Identify <q>design patterns</q> based on shared concepts</li>
+					<ul>
+						<li>Treating concepts as a <em>flat space</em> leaves out many details</li>
+						<li><q>Deeper models</q> can still be based on the <q>shared concept surface</q></li>
+					</ul>
+					<li>The uniform interface evolves and so should attempts to track it</li>
+					<ul>
+						<li>New <a href="https://github.com/dret/webconcepts/commits">Web Concept values</a> are defined/created constantly</li>
+						<li>New <a href="http://webconcepts.info/concepts">Web Concepts</a> appear less frequently</li>
+					</ul>
+					<li><q>Make any model <em>as shallow as possible</em>, model depth tightly couples and makes model matching and mapping much harder.</q></li>
+				</ul>
+			</slide>
+			<slide id="interface-compose">
+				<title>Composing the Uniform Interface</title>
+				<ul>
+					<li>What is the <link href="ui-practice">Uniform Interface</link> of the Web?</li>
+					<ul>
+						<li>It depends on who you are asking</li>
+						<li>It depends on when you are asking</li>
+						<li>There is probably a relatively agreed-upon core and many extension areas</li>
+					</ul>
+					<li>Create a <em>composable view of the uniform interface</em> that evolves and extends</li>
+					<ul>
+						<li>Model as little as you can get away with</li>
+						<li>Create a <em>common core</em> that everybody can start with</li>
+						<li>Encourage evolution and extension</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="concepts">
+				<title>Concepts</title>
+				<listing src="concepts.json" line="2-18" href="http://webconcepts.info/concepts/concepts.json"/>
+			</slide>
+			<slide id="specs">
+				<title>Specifications</title>
+				<listing src="specs.json" line="2-21" href="http://webconcepts.info/specs/specs.json"/>
+			</slide>
+			<slide id="concepts-and -sepcs">
+				<title>Concepts and Specifications</title>
+				<ul>
+					<li>Concepts are established by defining/documenting them</li>
+					<ul>
+						<li>The most popular ones are defined and documented in standards</li>
+						<li>Many concepts allow private uses of their namespace</li>
+					</ul>
+					<li>Many specifications establish more than one concept</li>
+					<ul>
+						<li>Solving a problem often requires more than just one concept</li>
+						<li>The specification established the <em>domain</em> that matters for the concept</li>
+					</ul>
+					<li>Specifications (and services) may also depend on existing concepts</li>
+				</ul>
+			</slide>
+			<slide id="http">
+				<title>HTTP/1.1 Concepts</title>
+				<listing src="rfc7231.xml" line="2-6" href="http://webconcepts.info/specs/IETF/RFC/7231"/>
+				<listing src="rfc7231.xml" line="119-120" href="http://webconcepts.info/specs/IETF/RFC/7231"/>
+				<listing src="rfc7231.xml" line="173-174" href="http://webconcepts.info/specs/IETF/RFC/7231"/>
+			</slide>
+		</part>
+		<part id="service-descriptions">
+			<title>Service Descriptions</title>
+			<slide id="decentralized-description">
+				<title>Decentralized Description</title>
+				<ul>
+					<li>APIs should describe themselves as <em>part of the API</em></li>
+					<ul>
+						<li>Machine-readable <code>about</code> pages for API concepts</li>
+						<li>Controlled/published by APIs but useable by anybody</li>
+					</ul>
+					<li>First proposals/projects are emerging</li>
+					<ul>
+						<li><code><a href="http://apisjson.org/">APIs.json</a></code> only defines a format (description)</li>
+						<li><a href="http://www.pivio.io/">Pivio</a> focuses on the tooling (submission and indexing)</li>
+					</ul>
+					<li>Effective landscaping needs languages <em>and</em> tooling</li>
+					<ul>
+						<li><em>Languages</em> define <em>what you are doing</em></li>
+						<li><em>Tooling</em> helps with <em>how it can be done</em></li>
+						<li>New tooling can be built <em>only</em> if a well-defined language exists</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="description-language">
+				<title>Description Language</title>
+				<ul>
+					<li>Reuse existing <a href="http://www.webconcepts.info/">Web concepts</a> as much as possible</li>
+					<ul>
+						<li>Languages are easier to learn and use when they reuse established concepts</li>
+					</ul>
+					<li><a href="https://tools.ietf.org/html/draft-nottingham-json-home">JSON Home Documents</a> might be a good starting point</li>
+					<ul>
+						<li>Extend the format or link from it with <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">well-defined link relations</a></li>
+					</ul>
+					<li>Define the language with <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">robust extensibility</a> in mind</li>
+					<ul>
+						<li><em>Meaningful core semantics</em> so that useful tools can be built</li>
+						<li><em>Extension model</em> so that it is clear how to extend the core language</li>
+						<li><em>Processing model</em> so that it is clear how to safely process the format</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="apis.json-example">
+				<title>APIs.json Example</title>
+				<listing src="apis.json" href="https://gist.github.com/kinlane/10094618" line="2-17"/>
+			</slide>
+			<slide id="pivio-example">
+				<title>Pivio Example</title>
+				<listing src="pivio.yaml" href="http://pivio.io/docs/#_general"/>
+			</slide>
+			<slide id="json-home-example">
+				<title>JSON Home Example</title>
+				<listing src="home.json" href="https://tools.ietf.org/html/draft-nottingham-json-home#section-2" line="2-24"/>
+			</slide>
+			<slide id="description-tooling">
+				<title>Description Tooling</title>
+				<ul>
+					<li>Tooling can <em>only</em> use the description format</li>
+					<li>Conventions around how the format is used in the landscape</li>
+					<ul>
+						<li><em>Push</em> vs. <em>pull</em> and minimal behavioral standards</li>
+						<li>Tooling can automate (part of) the service approval process</li>
+					</ul>
+					<li>Collaborative landscaping makes it easier to build useful tooling</li>
+					<ul>
+						<li>Services that grow in the garden will make honest statements</li>
+						<li>Adversarial landscapes need a lot more work to prevent misuse</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="pivio-concept">
+				<title>Pivio Concept</title>
+				<img href="http://pivio.io/docs/#_key_concepts" src="pivio-concept.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/amfam-2017"><code>dret.net/lectures/amfam-2017</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/amfam-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+			<slide id="contracts-q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/viessmann-2017"><code>dret.net/lectures/viessmann-2017</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/viessmann-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 	<presentation id="protocols">
 		<title>Protocols</title>
 		<toc class="resources"><a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/7230" title='RFC 7230, "Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing", June 2014'>HTTP</a>&#160;· <a href="https://www.mnot.net/blog/2017/05/11/status_codes" title='Mark Nottingham, "How to Think About HTTP Status Codes", May 2017'>HTTP Status Codes</a></toc>
