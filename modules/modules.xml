@@ -1136,6 +1136,11 @@
 						<li>All links are typed and types are either registered or defined/used by individual users</li>
 						<li>The <a href="http://www.iana.org/assignments/link-relations/link-relations.xhtml">link relations registry</a> establishes a shared set of meaningful link types</li>
 					</ul>
+					<li>Documenting hypermedia APIs always means to document all link relation types</li>
+					<ul>
+						<li><em>Registered link types</em> have to be put/described in the context of the API</li>
+						<li><em>Extension link types</em> must be completely documented in the context of the API</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="registered-link-types">
