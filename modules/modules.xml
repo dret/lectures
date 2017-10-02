@@ -2802,6 +2802,26 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<title>Triples as a Graph</title>
 				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="rdf11-primer-example-multiple-graphs.jpg" title="Informal graph of the sample dataset" href="https://www.w3.org/TR/rdf11-primer/#section-multiple-graphs"/>
 			</slide>
+			<slide id="n-triples-example">
+				<title>N-Triples Example</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-n-triples" src="rdf11-primer-example-n-triples.txt"/>
+			</slide>
+			<slide id="turtle-example">
+				<title>Turtle Example</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-turtle" src="rdf11-primer-example-turtle.txt"/>
+			</slide>
+			<slide id="trig-example">
+				<title>TriG Example</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-trig" src="rdf11-primer-example-trig.txt"/>
+			</slide>
+			<slide id="json-ld-example">
+				<title>JSON-LD Example</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-json-ld" src="rdf11-primer-example-json-ld.json"/>
+			</slide>
+			<slide id="json-ld-example-context">
+				<title>JSON-LD Example (Context)</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-json-ld" src="rdf11-primer-example-json-ld-context.json"/>
+			</slide>
 			<slide id="rdf-vocabularies">
 				<title>RDF Vocabularies: Schemas and Ontologies</title>
 			</slide>

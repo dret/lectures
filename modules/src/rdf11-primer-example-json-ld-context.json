@@ -1,0 +1,25 @@
+{
+  "@context": {
+    "foaf": "http://xmlns.com/foaf/0.1/", 
+    "Person": "foaf:Person",
+    "interest": "foaf:topic_interest",
+    "knows": {
+      "@id": "foaf:knows",
+      "@type": "@id"
+    },
+    "birthdate": {
+      "@id": "http://schema.org/birthDate",
+      "@type": "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "dcterms": "http://purl.org/dc/terms/",
+    "title": "dcterms:title",
+    "creator": {
+      "@id": "dcterms:creator",
+      "@type": "@id"
+    },
+    "subject_of": {
+      "@reverse": "dcterms:subject",
+      "@type": "@id"
+    }
+  }
+}
