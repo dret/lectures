@@ -2794,6 +2794,14 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>Both views are complementary but influence the models and tooling</li>
 				</ul>
 			</slide>
+			<slide id="triple-graph">
+				<title>Triples as a Graph</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="rdf11-primer-example-graph.jpg" title="Informal graph of the sample triples" href="https://www.w3.org/TR/rdf11-primer/#section-triple"/>
+			</slide>
+			<slide id="triple-graph">
+				<title>Triples as a Graph</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="rdf11-primer-example-multiple-graphs.jpg" title="Informal graph of the sample dataset" href="https://www.w3.org/TR/rdf11-primer/#section-multiple-graphs"/>
+			</slide>
 			<slide id="rdf-vocabularies">
 				<title>RDF Vocabularies: Schemas and Ontologies</title>
 			</slide>
