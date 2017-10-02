@@ -1155,6 +1155,18 @@
 			</slide>
 			<slide id="extension-link-types">
 				<title>Extension Link Types</title>
+				<ul>
+					<li>Non-registered link relation type can be invented and used by everybody</li>
+					<ul>
+						<li>These <em>extension link relation types</em> must be named with a URI</li>
+						<li>Optionally, the URI may provide documentation for the link relation type</li>
+					</ul>
+					<li>Many hypermedia APIs use a mix of registered and extension types</li>
+					<ul>
+						<li>Use registered type when the registry provides ones that are a good fit</li>
+						<li>Use extension types when no good fits can be found in the registry</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="hypermedia-overview">
