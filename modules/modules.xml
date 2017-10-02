@@ -1075,27 +1075,6 @@
 			<title>Lifecycle Management</title>
 		</part>
 	</presentation>
-	<presentation id="extensibility">
-		<title>Extensibility</title>
-		<toc class="abstract">...</toc>
-		<toc class="resources"><a href="https://tools.ietf.org/html/draft-wilde-registries" title='Erik Wilde, "The Use of Registries", Internet Draft wilde-registries'>Registries</a>&#160;· <a href="https://tools.ietf.org/html/rfc6648" title="RFC 6648: 'Deprecating the &quot;X-&quot; Prefix and Similar Constructs in Application Protocols', June 2012">RFC 6648</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
-		<part id="extension-management">
-			<title>Extension Management</title>
-			<silde id="extension-naming">
-				<title>Naming Issues</title>
-				<ul>
-					<li><a href="https://tools.ietf.org/html/rfc6648" title="RFC 6648: 'Deprecating the &quot;X-&quot; Prefix and Similar Constructs in Application Protocols', June 2012">RFC 6648</a></li>
-				</ul>
-			</silde>
-		</part>
-		<part id="registries">
-			<title>Registries</title>
-		</part>
-	</presentation>
 	<presentation id="hypermedia">
 		<title>Hypermedia</title>
 		<toc class="abstract">...</toc>
