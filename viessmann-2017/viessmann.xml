@@ -428,6 +428,150 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="styles">
+		<title>API Styles</title>
+		<toc class="resources"><a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a>&#160;· <a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a></toc>
+		<part id="api-language">
+			<title>APIs are Languages</title>
+			<slide id="problem-solving">
+				<title>Distributed Problem Solving</title>
+				<ul>
+					<li>APIs are part of distributed problem solving</li>
+					<li>Ideal APIs can be used for a range of problems</li>
+					<li>Problem-solving often requires combining APIs</li>
+					<li><q>Language families</q> make it easier to learn and use new APIs</li>
+				</ul>
+			</slide>
+			<slide id="api-conversation">
+				<title>APIs Interactions are Conversations</title>
+				<ul>
+					<li>APIs support conversations between interacting peers</li>
+					<ul>
+						<li>Some conversations are point-to-point (how to find the peer?)</li>
+						<li>Some conversations are point-to-multipoint (how are groups managed?)</li>
+						<li>Some conversations are point-to-ether (what does the ether do?)</li>
+					</ul>
+					<li>API technology does not determine the API conversation style</li>
+					<ul>
+						<li>HTTP can be used for asynchronous conversations (<q href="http://www.webhooks.org/">WebHooks</q> pattern)</li>
+						<li>Synchronous conversations can be layered on top of asynchronous foundations</li>
+					</ul>
+					<li>Conversation goals should determine the conversation style</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="tunnel-style">
+			<title>Tunnel Style</title>
+			<slide id="rpc-over-http">
+				<title>Distributed Programming</title>
+				<ul>
+					<li>Rooted in <em>Remote Procedure Call (RPC)</em> patterns</li>
+					<li>Functions are the main abstraction and invoked at known <em>endpoints</em></li>
+					<li>Resource identifiers typically are context-dependent</li>
+					<li>Suffers from the typical RPC problems at bigger scale</li>
+					<ul>
+						<li>Failure is hard to deal with (function calls always succeed)</li>
+						<li>Scoped identifiers mean naming problems and no network effect</li>
+					</ul>
+					<li>Convenient for developers looking to <q>code like a local program</q></li>
+				</ul>
+			</slide>
+		</part>
+		<part id="uri-style">
+			<title>URI Style</title>
+			<slide id="webby-identifiers">
+				<title>Identifiers for Resources</title>
+				<ul>
+					<li>Makes a major step towards a more webby service design</li>
+					<ul>
+						<li>Resources are identified by URIs and thus globally unique</li>
+						<li>Data context may be established by using URI identifiers for resources</li>
+						<li>Navigational context is missing because of a lack of links</li>
+					</ul>
+					<li>One necessary step in the evolution of designing decentralized systems</li>
+					<ul>
+						<li><em>Web of Data</em> is a good starting point</li>
+						<li><em>Web of Services</em> is what makes the Web what it is</li>
+					</ul>
+					<li>Developers are tempted/required to hardcode control flows</li>
+					<ul>
+						<li>No navigational guidance provided by the API</li>
+						<li>Guidance must be hand-crafted or clients are forced to do trial-and-error</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="hypermedia-style">
+			<title>Hypermedia Style</title>
+			<slide id="webby-style">
+				<title>Webby APIs</title>
+				<ul>
+					<li>Based on mixing data and controls in representations</li>
+					<ul>
+						<li><em>Data</em> represents the current resource state</li>
+						<li><em>Controls</em> represent the advertised next options for clients</li>
+					</ul>
+					<li>Controls allow clients to work across individual APIs</li>
+					<ul>
+						<li>APIs expose sets of resources and provide links</li>
+						<li>Clients follow links without being aware of API boundaries</li>
+					</ul>
+					<li>Developers must code differently from usual programming flows</li>
+					<ul>
+						<li>Applications are driven by the responses that client code receives</li>
+						<li>Imperative programming is not the best fit for this kind of flow</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="asynchronous-style">
+			<title>Asynchronous Style</title>
+			<slide id="fire-and-forget">
+				<title>Fire and Forget</title>
+				<ul>
+					<li>Synchronous communications result in tighter coupling between peers</li>
+					<li>Asynchronous communications can make data provision easier</li>
+					<ul>
+						<li>Data is tagged and submitted into some <em>communications fabric</em></li>
+						<li>The fabric takes care of notifying and delivering data to consumers</li>
+					</ul>
+					<li>The fabric is far beyond the <em>smart endpoints and dumb pipes</em> idea</li>
+					<ul>
+						<li><em>Smart pipes</em> are not bad per se but often have problems scaling</li>
+					</ul>
+					<li>Managing the fabric becomes an essential part of making code work</li>
+					<ul>
+						<li>Who is producing data?</li>
+						<li>Who is consuming data?</li>
+						<li>What are the ways in which data can or must be tagged?</li>
+						<li>How is the namespace of data tagging managed?</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="style-conclusions">
+			<title>Conclusions</title>
+			<slide id="no-style-hammer">
+				<title>There is no Style Hammer</title>
+				<ul>
+					<li>API styles can be combined</li>
+					<li>Style coherence makes a API landscape more usable</li>
+					<li>Style fundamentalism may pick the wrong tool for a problem</li>
+					<li>Be aware of styles and pick the one that works best</li>
+				</ul>
+			</slide>
+			<slide id="styles-q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/viessmann-2017"><code>dret.net/lectures/viessmann-2017</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/viessmann-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 	<presentation id="design">
 		<title>API Design</title>
 		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/10/api-usability-matters.html" title='Erik Wilde, "API Usability Matters: UX and CX is like DX and …", October 2016'>API Usability</a>&#160;· <a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a>&#160;· <a href="http://webconcepts.info/">Web Concepts</a>&#160;· <a href="https://www.mnot.net/blog/2012/06/25/http_api_complexity_model" title='Mark Nottingham, "HTTP API Complexity", June 2012'>API Complexity</a>&#160;· <a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a></toc>
