@@ -3581,7 +3581,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>Distributed systems very often are built around RPC models</li>
 					<li>Many classical IT architectures are RPC-centric by design</li>
 				</ul>
-				<li>REST and RPC do not mix</li>
+				<li>REST and RPC do not mix (very well)</li>
 				<ul>
 					<li>Resource orientation ↔ function orientation</li>
 					<li>Cooperation ↔ integration</li>
