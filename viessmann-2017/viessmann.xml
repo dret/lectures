@@ -2792,6 +2792,14 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 		</part>
 	</presentation>
+	<presentation external="exercise-http-methods.pdf">
+		<title>Exercise #3: HTTP Methods</title>
+		<toc class="resources"><a href="http://webconcepts.info/concepts/http-method/">HTTP Methods</a></toc>
+	</presentation>
+	<presentation external="exercise-http-status-codes.pdf">
+		<title>Exercise #4: HTTP Status Codes</title>
+		<toc class="resources"><a href="http://webconcepts.info/concepts/http-status-code/">HTTP Status Codes</a></toc>
+	</presentation>
 	<presentation id="contracts">
 		<title>API Contracts</title>
 		<toc class="resources"><a href="http://www.webconcepts.info/">Web Concepts</a>&#160;· <a href="http://pivio.io/" title='Pivio: Microservice documentation for your platform.'>Pivio</a>&#160;· <a href="http://apisjson.org/">APIs.json</a>&#160;· <a href="https://tools.ietf.org/html/draft-nottingham-json-home" title='Mark Nottingham, "Home Documents for HTTP APIs", Internet Draft draft-nottingham-json-home'>JSON Home</a></toc>
