@@ -2113,9 +2113,9 @@ message-body ?</pre>
 				<ul>
 					<li>Retrieval action based on the URI</li>
 					<ul>
-						<li>Maybe implemented by reading a file</li>
-						<li>Maybe implemented by processing a file (PHP)</li>
-						<li>Maybe implemented by running code</li>
+						<li>Possibly implemented by reading a file</li>
+						<li>Possibly implemented by processing a file (PHP)</li>
+						<li>Possibly implemented by running code</li>
 					</ul>
 					<li>Semantics may change based on header fields</li>
 					<ul>
