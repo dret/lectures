@@ -2800,420 +2800,6 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		<title>Exercise #4: HTTP Status Codes</title>
 		<toc class="resources"><a href="http://webconcepts.info/concepts/http-status-code/">HTTP Status Codes</a></toc>
 	</presentation>
-	<presentation id="contracts">
-		<title>API Contracts</title>
-		<toc class="resources"><a href="http://www.webconcepts.info/">Web Concepts</a>&#160;· <a href="http://pivio.io/" title='Pivio: Microservice documentation for your platform.'>Pivio</a>&#160;· <a href="http://apisjson.org/">APIs.json</a>&#160;· <a href="https://tools.ietf.org/html/draft-nottingham-json-home" title='Mark Nottingham, "Home Documents for HTTP APIs", Internet Draft draft-nottingham-json-home'>JSON Home</a></toc>
-		<part id="web-of-services">
-			<title>A Web of Services</title>
-			<slide id="being-webby">
-				<title>Learn from the Big Boy</title>
-				<ul>
-					<li>Enterprise IT has discovered <em>Web Architecture</em>: They call it <em>Microservices</em>!</li>
-					<li><em>Visibility</em> is a key issue for <em>making the <q>webby enterprise</q> work</em></li>
-					<ul>
-						<li>Enterprise IT still needs control over the evolving service landscape</li>
-						<li>Being more cooperative will help the success of webby approaches</li>
-					</ul>
-					<li><em>Design Instrumentation</em> allows better service landscaping</li>
-					<ul>
-						<li>Think of it as <a href="http://www.w3.org/WAI/ER/tools/">accessibility checkers for the service web</a></li>
-						<li><em>Balancing speed and safety</em> requires understanding what you are balancing</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="ui-theory">
-				<title>Uniform Interface Theory</title>
-				<ul>
-					<li>Spontaneous interactions without prior agreement</li>
-					<li><q>Surfing the Web</q> means <q>Surfing the Uniform Interface</q></li>
-					<ul>
-						<li>Shared assumptions mean seamless transition between services/sites</li>
-						<li>The human Web hardcodes assumptions into browser capabilities</li>
-					</ul>
-					<li>The human Web has advantages over the service Web</li>
-					<ul>
-						<li>Painful memory of <em>browser wars</em> and their effect on Web development</li>
-						<li>Humans are highly adaptable to deal with non-technology changes</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="ui-practice">
-				<title>Uniform Interface Practice</title>
-				<ul>
-					<li>The Web of today is very different from the Web we had</li>
-					<ul>
-						<li>HTML5 has <a href="http://html5-overview.net/current">133 current specs and counting</a></li>
-						<li>HTTP has <a href="http://webconcepts.info/concepts/http-headers">187 well-known header fields and counting</a></li>
-					</ul>
-					<li><q>Surfing the Web</q> means <q>Surfing an evolving surface</q></li>
-					<li>How to keep track of the changing landscape?</li>
-					<ul>
-						<li><em>Run-time instrumentation</em> helps understanding what is really happening</li>
-						<li><em>Design-time instrumentation</em> allows some level of self-declaration</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="snowflakes">
-				<title>Web Concepts: Sunlight Melts Snowflakes</title>
-				<img title="Snowflakes" href="http://www.flickr.com/photos/amagill/4223790595" src="snowflake.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="ui-patterns">
-				<title>Uniform Interface Patterns</title>
-				<ul>
-					<li>Identify <q>design patterns</q> based on shared concepts</li>
-					<ul>
-						<li>Treating concepts as a <em>flat space</em> leaves out many details</li>
-						<li><q>Deeper models</q> can still be based on the <q>shared concept surface</q></li>
-					</ul>
-					<li>The uniform interface evolves and so should attempts to track it</li>
-					<ul>
-						<li>New <a href="https://github.com/dret/webconcepts/commits">Web Concept values</a> are defined/created constantly</li>
-						<li>New <a href="http://webconcepts.info/concepts">Web Concepts</a> appear less frequently</li>
-					</ul>
-					<li><q>Make any model <em>as shallow as possible</em>, model depth tightly couples and makes model matching and mapping much harder.</q></li>
-				</ul>
-			</slide>
-			<slide id="interface-compose">
-				<title>Composing the Uniform Interface</title>
-				<ul>
-					<li>What is the <link href="ui-practice">Uniform Interface</link> of the Web?</li>
-					<ul>
-						<li>It depends on who you are asking</li>
-						<li>It depends on when you are asking</li>
-						<li>There is probably a relatively agreed-upon core and many extension areas</li>
-					</ul>
-					<li>Create a <em>composable view of the uniform interface</em> that evolves and extends</li>
-					<ul>
-						<li>Model as little as you can get away with</li>
-						<li>Create a <em>common core</em> that everybody can start with</li>
-						<li>Encourage evolution and extension</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="concepts">
-				<title>Concepts</title>
-				<listing src="concepts.json" line="2-18" href="http://webconcepts.info/concepts/concepts.json"/>
-			</slide>
-			<slide id="specs">
-				<title>Specifications</title>
-				<listing src="specs.json" line="2-21" href="http://webconcepts.info/specs/specs.json"/>
-			</slide>
-			<slide id="concepts-and -sepcs">
-				<title>Concepts and Specifications</title>
-				<ul>
-					<li>Concepts are established by defining/documenting them</li>
-					<ul>
-						<li>The most popular ones are defined and documented in standards</li>
-						<li>Many concepts allow private uses of their namespace</li>
-					</ul>
-					<li>Many specifications establish more than one concept</li>
-					<ul>
-						<li>Solving a problem often requires more than just one concept</li>
-						<li>The specification established the <em>domain</em> that matters for the concept</li>
-					</ul>
-					<li>Specifications (and services) may also depend on existing concepts</li>
-				</ul>
-			</slide>
-			<slide id="http">
-				<title>HTTP/1.1 Concepts</title>
-				<listing src="rfc7231.xml" line="2-6" href="http://webconcepts.info/specs/IETF/RFC/7231"/>
-				<listing src="rfc7231.xml" line="119-120" href="http://webconcepts.info/specs/IETF/RFC/7231"/>
-				<listing src="rfc7231.xml" line="173-174" href="http://webconcepts.info/specs/IETF/RFC/7231"/>
-			</slide>
-		</part>
-		<part id="service-descriptions">
-			<title>Service Descriptions</title>
-			<slide id="decentralized-description">
-				<title>Decentralized Description</title>
-				<ul>
-					<li>APIs should describe themselves as <em>part of the API</em></li>
-					<ul>
-						<li>Machine-readable <code>about</code> pages for API concepts</li>
-						<li>Controlled/published by APIs but useable by anybody</li>
-					</ul>
-					<li>First proposals/projects are emerging</li>
-					<ul>
-						<li><code><a href="http://apisjson.org/">APIs.json</a></code> only defines a format (description)</li>
-						<li><a href="http://www.pivio.io/">Pivio</a> focuses on the tooling (submission and indexing)</li>
-					</ul>
-					<li>Effective landscaping needs languages <em>and</em> tooling</li>
-					<ul>
-						<li><em>Languages</em> define <em>what you are doing</em></li>
-						<li><em>Tooling</em> helps with <em>how it can be done</em></li>
-						<li>New tooling can be built <em>only</em> if a well-defined language exists</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="description-language">
-				<title>Description Language</title>
-				<ul>
-					<li>Reuse existing <a href="http://www.webconcepts.info/">Web concepts</a> as much as possible</li>
-					<ul>
-						<li>Languages are easier to learn and use when they reuse established concepts</li>
-					</ul>
-					<li><a href="https://tools.ietf.org/html/draft-nottingham-json-home">JSON Home Documents</a> might be a good starting point</li>
-					<ul>
-						<li>Extend the format or link from it with <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">well-defined link relations</a></li>
-					</ul>
-					<li>Define the language with <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">robust extensibility</a> in mind</li>
-					<ul>
-						<li><em>Meaningful core semantics</em> so that useful tools can be built</li>
-						<li><em>Extension model</em> so that it is clear how to extend the core language</li>
-						<li><em>Processing model</em> so that it is clear how to safely process the format</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="apis.json-example">
-				<title>APIs.json Example</title>
-				<listing src="apis.json" href="https://gist.github.com/kinlane/10094618" line="2-17"/>
-			</slide>
-			<slide id="pivio-example">
-				<title>Pivio Example</title>
-				<listing src="pivio.yaml" href="http://pivio.io/docs/#_general"/>
-			</slide>
-			<slide id="json-home-example">
-				<title>JSON Home Example</title>
-				<listing src="home.json" href="https://tools.ietf.org/html/draft-nottingham-json-home#section-2" line="2-24"/>
-			</slide>
-			<slide id="description-tooling">
-				<title>Description Tooling</title>
-				<ul>
-					<li>Tooling can <em>only</em> use the description format</li>
-					<li>Conventions around how the format is used in the landscape</li>
-					<ul>
-						<li><em>Push</em> vs. <em>pull</em> and minimal behavioral standards</li>
-						<li>Tooling can automate (part of) the service approval process</li>
-					</ul>
-					<li>Collaborative landscaping makes it easier to build useful tooling</li>
-					<ul>
-						<li>Services that grow in the garden will make honest statements</li>
-						<li>Adversarial landscapes need a lot more work to prevent misuse</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="pivio-concept">
-				<title>Pivio Concept</title>
-				<img href="http://pivio.io/docs/#_key_concepts" src="pivio-concept.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-		</part>
-		<part id="conclusions">
-			<title>Conclusions</title>
-			<slide id="description-matters">
-				<title>Description Matters</title>
-				<ul>
-					<li>Describe services in terms of how they <q>speak your design language</q></li>
-					<li>Use descriptions to understand and update the <q>design culture</q></li>
-					<li>Help developers to make good design decisions</li>
-				</ul>
-			</slide>
-			<slide id="contracts-q-and-a">
-				<title>Thanks! Q&amp;A</title>
-				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
-				<ul>
-					<li>Slides online: <a href="http://dret.net/lectures/viessmann-2017"><code>dret.net/lectures/viessmann-2017</code></a></li>
-					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/viessmann-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
-					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
-					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
-				</ul>
-			</slide>
-		</part>
-	</presentation>
-	<presentation id="change-management">
-		<title>Change Management</title>
-		<toc class="resources"><a href="https://tools.ietf.org/html/rfc6648" title="RFC 6648: 'Deprecating the &quot;X-&quot; Prefix and Similar Constructs in Application Protocols', June 2012">RFC 6648</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a>&#160;· <a href="https://blog.goodapi.co/api-change-management-2fe5bba32e9b" title='Zdenek Nemec, "API Change Management", April 2017'>Change Management</a>&#160;· <a href="http://semver.org/" title='Semantic Versioning 2.0.0'>Semantic Versioning</a>&#160;· <a href="http://webconcepts.info/specs/IETF/I-D/draft-wilde-sunset-header" title='Erik Wilde, "The Sunset HTTP Header", Internet Draft wilde-sunset-header'>Sunset Header</a>&#160;· <a href="https://tools.ietf.org/html/draft-wilde-registries" title='Erik Wilde, "The Use of Registries", Internet Draft wilde-registries'>Registries</a></toc>
-		<part id="change-management-introduction">
-			<title>Introduction</title>
-			<slide id="versioning-practice">
-				<title>Versioning in Practice</title>
-				<ul>
-					<li>Version numbers have an almost mythical role in IT</li>
-					<ul>
-						<li>But often they are only useful for signaling continuity or breakage points</li>
-						<li>Most things work or break in a binary way (or simply refuse to even try)</li>
-					</ul>
-					<li>Compatibility comes in two basic flavors (one easier, one harder)</li>
-					<ul>
-						<li><em>Backwards compatibility</em> means to work with older components</li>
-						<li><em>Forward compatibility</em> means to work with more advanced components</li>
-					</ul>
-					<li>The Web has good rules to support both compatibility types</li>
-					<ul>
-						<li><em>Backwards compatibility:</em> New browser accessing older content</li>
-						<li><em>Forward compatibility:</em> Old browser accessing newer content</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="versioning-tweet-fielding">
-				<title>Versioning Breaks Things</title>
-				<img title='Roy Fielding (@fielding): &apos;The reason to make a real REST API is to get evolvability … a &quot;v1&quot; is a middle finger to your API customers, indicating RPC/HTTP (not REST)&apos;' href="https://twitter.com/fielding/status/376835835670167552" src="versioning-tweet-fielding.png" class="fullsize"/>
-			</slide>
-			<slide id="evolution">
-				<title>Plan for Evolution</title>
-				<ul>
-					<li>Planning for evolution means to reduce pain in the future</li>
-					<ul>
-						<li>No immediate benefits other than <q>doing the right thing</q></li>
-						<li>Modest effort when part of the API design process and culture</li>
-					</ul>
-					<li>Extensibility should be part of the <em>API design culture</em></li>
-					<ul>
-						<li>Each API must have and document a plan for API evolution</li>
-						<li>The simplest possible plan may be to never change the API</li>
-					</ul>
-					<li>Extensibility should be made easy for API consumers</li>
-					<ul>
-						<li>Provide test cases that simulate correct/incorrect API extensions</li>
-						<li>Provide feature flags so that services can enter <q>test mode</q></li>
-					</ul>
-				</ul>
-			</slide>
-		</part>
-		<part id="robust-extensibility">
-			<title>Robust Extensibility</title>
-			<slide id="core-semantics">
-				<title>Meaningful Core Semantics</title>
-				<ul>
-					<li>The core of the API allows clients to have meaningful interactions</li>
-					<ul>
-						<li>The starting point of an API should be meaningful and complete</li>
-					</ul>
-					<li>The core of the API is robust over time</li>
-					<ul>
-						<li>Anything that is added to the core does not change the core semantics</li>
-					</ul>
-					<li>Anything that is not part of the core can be safely ignored</li>
-					<ul>
-						<li><code>mustIgnore</code> semantics allow safe interactions beyond closely coordinated groups</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="extension-points">
-				<title>Well-Defined Extension Points</title>
-				<ul>
-					<li>APIs should be clear about where extensions are allowed</li>
-					<ul>
-						<li>API metamodels often decide where (potential) extension points are</li>
-						<li>API schemas/definitions should further narrow down where extensions are allowed</li>
-					</ul>
-					<li>API tests can make sure that the extension points are properly implemented</li>
-					<ul>
-						<li>Extensions in allowed places are ignored and tests should succeed</li>
-						<li>Extensions in other places should raise errors about malformed content</li>
-					</ul>
-					<li>Extension points are interesting to support in generic software</li>
-					<ul>
-						<li>Monitoring can report which and where extensions are being used</li>
-						<li>Libraries can make it easy to create/parse extension data</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="processing-model">
-				<title>Well-Defined Processing Model</title>
-				<ul>
-					<li>Extensions are well-defined and their handling is well-defined as well</li>
-					<ul>
-						<li>Extension points make it clear where to expect extensions</li>
-						<li>Processing models make it clear what to do with extensions</li>
-					</ul>
-					<li><code>mustIgnore</code> is a popular and good choice for extension processing</li>
-					<ul>
-						<li>Some formats allow extensions to declare their processing model (such as <code>mustUnderstand</code>)</li>
-						<li>HTML has a rule of ignoring unknown elements but processing their content</li>
-					</ul>
-					<li>How to <em>learn</em> about extensions is a different matter</li>
-					<ul>
-						<li>If an API evolves along a single path it may be as simple as looking along that path</li>
-						<li>If an API is used <a href="https://tools.ietf.org/html/draft-wilde-registries">in more complex ways</a> a registry may be a way to find extensions</li>
-					</ul>
-				</ul>
-			</slide>
-		</part>
-		<part id="versioning-strategies">
-			<title>Versioning Strategies</title>
-			<slide id="version-identification">
-				<title>Identifying Versions</title>
-				<ul>
-					<li>Versioning may be necessary when the extension model is not working anymore</li>
-					<li>Three main ways how to distinguish between versions on the service surface</li>
-					<ul>
-						<li>Make version numbers part of the resource URI: <code>http://example.org/api/v2/</code></li>
-						<li>Use specific HTTP headers: <code>API-Version: 2.0.0</code></li>
-						<li>Use media types: <code>Accept: application/vnd.example.org.v2+json</code></li>
-					</ul>
-					<li>All of these have side-effects which have to be balanced</li>
-					<ul>
-						<li>New URIs change resource identity which may result in data integration problems</li>
-						<li>Custom headers are specific for a service and hard to see/support in the general Web fabric</li>
-						<li>Media types often are not used by APIs or the clients consuming them</li>
-					</ul>
-					<li>Most APIs choose URI-based versioning and introduce new <q>API identity</q></li>
-					<ul>
-						<li>Versioning at this level is little more than <q>keeping the API brand</q></li>
-						<li>Version numbers can be used in URI path or in the domain name</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="semantic-versioning">
-				<title><a href="http://semver.org/">Semantic Versioning</a></title>
-				<ul>
-					<li><a href="http://semver.org/">Semantic Versioning</a> standardizes the meaning of version numbers</li>
-					<li>Version numbers follow the <code>MAJOR.MINOR.PATCH</code> pattern and the following rules</li>
-					<ul>
-						<li>Increase <code>MAJOR</code> version for incompatible API changes</li>
-						<li>Increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
-						<li>Increase <code>PATCH</code> version for making backwards-compatible bug fixes</li>
-					</ul>
-					<li>Mostly about how to name implementation artifacts and of limited use for APIs</li>
-					<ul>
-						<li>Exposing detailed version/patch information is a potential security risk</li>
-						<li>No behavioral benefit other than allowing clients to raise errors and stop working</li>
-					</ul>
-				</ul>
-			</slide>
-		</part>
-		<part id="decommissioning">
-			<title>Decommissioning</title>
-			<slide id="http-sunset">
-				<title>Signaling API End-of-Life</title>
-				<ul>
-					<li>APIs can change in terms of features and will be decommissioned at some point</li>
-					<ul>
-						<li><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Robust extensibility</a> helps to facilitate non-breaking API changes</li>
-						<li><em>Hypermedia</em> helps as a pattern to move extensibility beyond data models</li>
-						<li><a href="http://semver.org/">Semantic versioning</a> may be used to keep track of API changes</li>
-						<li><a href="http://dret.typepad.com/dretblog/2015/08/http-sunset-header.html">HTTP <code>Sunset</code>ting</a> can be used to <a href="http://webconcepts.info/concepts/http-header/Sunset">signal upcoming sunsets on the HTTP level</a></li>
-					</ul>
-					<li>One possible requirement is that APIs must support <code href="http://webconcepts.info/concepts/http-header/Sunset">Sunset</code></li>
-					<ul>
-						<li>Services must document/describe the support of <code>Sunset</code></li>
-						<li>Services may implement <code>Sunset</code> any way they like</li>
-						<li>The simplest option may be <em><code>Sunset</code> policies</em> on a gateway</li>
-					</ul>
-				</ul>
-			</slide>
-		</part>
-		<part id="conclusions">
-			<title>Conclusions</title>
-			<slide id="versioning-conclusions">
-				<title>Plan for Evolution</title>
-				<ul>
-					<li>Evolvable APIs do not just happen</li>
-					<li>Think about cost and economics for versioning</li>
-					<li>Make evolution/versioning/deprecation part of API culture</li>
-				</ul>
-			</slide>
-			<slide id="change-management-q-and-a">
-				<title>Thanks! Q&amp;A</title>
-				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
-				<ul>
-					<li>Slides online: <a href="http://dret.net/lectures/viessmann-2017"><code>dret.net/lectures/viessmann-2017</code></a></li>
-					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/viessmann-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
-					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
-					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
-				</ul>
-			</slide>
-		</part>
-	</presentation>
 	<presentation id="representations">
 		<title>Representations</title>
 		<toc class="resources"><a href="http://www.webconcepts.info/concepts/media-type/" title="Web Concepts: Media Types">Media Types</a>&#160;· <a href="http://www.w3.org/TR/xml/" title='Tim Bray, Jean Paoli, C. Michael Sperberg-McQueen, Eve Maler, and François Yergeau, "Extensible Markup Language (XML) 1.0 (Fifth Edition)", W3C Recommendation REC-xml-20081126, November 2008'>XML</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/7159" title='Tim Bray, "The JavaScript Object Notation (JSON) Data Interchange Format", IETF RFC 7159, June 2016'>JSON</a>&#160;· <a href="http://www.w3.org/TR/rdf11-concepts/" title='Richard Cyganiak, David Wood, and Markus Lanthaler, "RDF 1.1 Concepts and Abstract Syntax", W3C Recommendation REC-rdf11-concepts-20140225, February 2014'>RDF</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/4287" title='Mark Nottingham and Robert Sayre, "The Atom Syndication Format", IETF RFC 4287, December 2005'>Atom</a>&#160;· <a href="https://www.w3.org/TR/activitystreams/" title='James Snell and Evan Prodromou, "Activity Streams 2.0", W3C Proposed Recommendation PR-activitystreams-core-20170413, April 2017'>Activity Streams</a>&#160;· <a href="https://jsonfeed.org/">JSON Feed</a>&#160;· <a title='Yakov Shafranovich, "Common Format and MIME Type for Comma-Separated Values (CSV) Files", IETF RFC 4180, October 2005' href="http://webconcepts.info/specs/IETF/RFC/4180">RFC 4180</a>&#160;· <a title='Mark Nottingham and Erik Wilde, "Problem Details for HTTP APIs", Internet RFC 7807, March 2016' href="http://webconcepts.info/specs/IETF/RFC/7807">RFC 7807</a></toc>
@@ -3662,6 +3248,420 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				</ul>
 			</slide>
 			<slide id="representations-q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/viessmann-2017"><code>dret.net/lectures/viessmann-2017</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/viessmann-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="contracts">
+		<title>API Contracts</title>
+		<toc class="resources"><a href="http://www.webconcepts.info/">Web Concepts</a>&#160;· <a href="http://pivio.io/" title='Pivio: Microservice documentation for your platform.'>Pivio</a>&#160;· <a href="http://apisjson.org/">APIs.json</a>&#160;· <a href="https://tools.ietf.org/html/draft-nottingham-json-home" title='Mark Nottingham, "Home Documents for HTTP APIs", Internet Draft draft-nottingham-json-home'>JSON Home</a></toc>
+		<part id="web-of-services">
+			<title>A Web of Services</title>
+			<slide id="being-webby">
+				<title>Learn from the Big Boy</title>
+				<ul>
+					<li>Enterprise IT has discovered <em>Web Architecture</em>: They call it <em>Microservices</em>!</li>
+					<li><em>Visibility</em> is a key issue for <em>making the <q>webby enterprise</q> work</em></li>
+					<ul>
+						<li>Enterprise IT still needs control over the evolving service landscape</li>
+						<li>Being more cooperative will help the success of webby approaches</li>
+					</ul>
+					<li><em>Design Instrumentation</em> allows better service landscaping</li>
+					<ul>
+						<li>Think of it as <a href="http://www.w3.org/WAI/ER/tools/">accessibility checkers for the service web</a></li>
+						<li><em>Balancing speed and safety</em> requires understanding what you are balancing</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="ui-theory">
+				<title>Uniform Interface Theory</title>
+				<ul>
+					<li>Spontaneous interactions without prior agreement</li>
+					<li><q>Surfing the Web</q> means <q>Surfing the Uniform Interface</q></li>
+					<ul>
+						<li>Shared assumptions mean seamless transition between services/sites</li>
+						<li>The human Web hardcodes assumptions into browser capabilities</li>
+					</ul>
+					<li>The human Web has advantages over the service Web</li>
+					<ul>
+						<li>Painful memory of <em>browser wars</em> and their effect on Web development</li>
+						<li>Humans are highly adaptable to deal with non-technology changes</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="ui-practice">
+				<title>Uniform Interface Practice</title>
+				<ul>
+					<li>The Web of today is very different from the Web we had</li>
+					<ul>
+						<li>HTML5 has <a href="http://html5-overview.net/current">133 current specs and counting</a></li>
+						<li>HTTP has <a href="http://webconcepts.info/concepts/http-headers">187 well-known header fields and counting</a></li>
+					</ul>
+					<li><q>Surfing the Web</q> means <q>Surfing an evolving surface</q></li>
+					<li>How to keep track of the changing landscape?</li>
+					<ul>
+						<li><em>Run-time instrumentation</em> helps understanding what is really happening</li>
+						<li><em>Design-time instrumentation</em> allows some level of self-declaration</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="snowflakes">
+				<title>Web Concepts: Sunlight Melts Snowflakes</title>
+				<img title="Snowflakes" href="http://www.flickr.com/photos/amagill/4223790595" src="snowflake.jpg" style="height : 65% ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="ui-patterns">
+				<title>Uniform Interface Patterns</title>
+				<ul>
+					<li>Identify <q>design patterns</q> based on shared concepts</li>
+					<ul>
+						<li>Treating concepts as a <em>flat space</em> leaves out many details</li>
+						<li><q>Deeper models</q> can still be based on the <q>shared concept surface</q></li>
+					</ul>
+					<li>The uniform interface evolves and so should attempts to track it</li>
+					<ul>
+						<li>New <a href="https://github.com/dret/webconcepts/commits">Web Concept values</a> are defined/created constantly</li>
+						<li>New <a href="http://webconcepts.info/concepts">Web Concepts</a> appear less frequently</li>
+					</ul>
+					<li><q>Make any model <em>as shallow as possible</em>, model depth tightly couples and makes model matching and mapping much harder.</q></li>
+				</ul>
+			</slide>
+			<slide id="interface-compose">
+				<title>Composing the Uniform Interface</title>
+				<ul>
+					<li>What is the <link href="ui-practice">Uniform Interface</link> of the Web?</li>
+					<ul>
+						<li>It depends on who you are asking</li>
+						<li>It depends on when you are asking</li>
+						<li>There is probably a relatively agreed-upon core and many extension areas</li>
+					</ul>
+					<li>Create a <em>composable view of the uniform interface</em> that evolves and extends</li>
+					<ul>
+						<li>Model as little as you can get away with</li>
+						<li>Create a <em>common core</em> that everybody can start with</li>
+						<li>Encourage evolution and extension</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="concepts">
+				<title>Concepts</title>
+				<listing src="concepts.json" line="2-18" href="http://webconcepts.info/concepts/concepts.json"/>
+			</slide>
+			<slide id="specs">
+				<title>Specifications</title>
+				<listing src="specs.json" line="2-21" href="http://webconcepts.info/specs/specs.json"/>
+			</slide>
+			<slide id="concepts-and -sepcs">
+				<title>Concepts and Specifications</title>
+				<ul>
+					<li>Concepts are established by defining/documenting them</li>
+					<ul>
+						<li>The most popular ones are defined and documented in standards</li>
+						<li>Many concepts allow private uses of their namespace</li>
+					</ul>
+					<li>Many specifications establish more than one concept</li>
+					<ul>
+						<li>Solving a problem often requires more than just one concept</li>
+						<li>The specification established the <em>domain</em> that matters for the concept</li>
+					</ul>
+					<li>Specifications (and services) may also depend on existing concepts</li>
+				</ul>
+			</slide>
+			<slide id="http">
+				<title>HTTP/1.1 Concepts</title>
+				<listing src="rfc7231.xml" line="2-6" href="http://webconcepts.info/specs/IETF/RFC/7231"/>
+				<listing src="rfc7231.xml" line="119-120" href="http://webconcepts.info/specs/IETF/RFC/7231"/>
+				<listing src="rfc7231.xml" line="173-174" href="http://webconcepts.info/specs/IETF/RFC/7231"/>
+			</slide>
+		</part>
+		<part id="service-descriptions">
+			<title>Service Descriptions</title>
+			<slide id="decentralized-description">
+				<title>Decentralized Description</title>
+				<ul>
+					<li>APIs should describe themselves as <em>part of the API</em></li>
+					<ul>
+						<li>Machine-readable <code>about</code> pages for API concepts</li>
+						<li>Controlled/published by APIs but useable by anybody</li>
+					</ul>
+					<li>First proposals/projects are emerging</li>
+					<ul>
+						<li><code><a href="http://apisjson.org/">APIs.json</a></code> only defines a format (description)</li>
+						<li><a href="http://www.pivio.io/">Pivio</a> focuses on the tooling (submission and indexing)</li>
+					</ul>
+					<li>Effective landscaping needs languages <em>and</em> tooling</li>
+					<ul>
+						<li><em>Languages</em> define <em>what you are doing</em></li>
+						<li><em>Tooling</em> helps with <em>how it can be done</em></li>
+						<li>New tooling can be built <em>only</em> if a well-defined language exists</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="description-language">
+				<title>Description Language</title>
+				<ul>
+					<li>Reuse existing <a href="http://www.webconcepts.info/">Web concepts</a> as much as possible</li>
+					<ul>
+						<li>Languages are easier to learn and use when they reuse established concepts</li>
+					</ul>
+					<li><a href="https://tools.ietf.org/html/draft-nottingham-json-home">JSON Home Documents</a> might be a good starting point</li>
+					<ul>
+						<li>Extend the format or link from it with <a href="https://tools.ietf.org/html/draft-wilde-service-link-rel">well-defined link relations</a></li>
+					</ul>
+					<li>Define the language with <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">robust extensibility</a> in mind</li>
+					<ul>
+						<li><em>Meaningful core semantics</em> so that useful tools can be built</li>
+						<li><em>Extension model</em> so that it is clear how to extend the core language</li>
+						<li><em>Processing model</em> so that it is clear how to safely process the format</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="apis.json-example">
+				<title>APIs.json Example</title>
+				<listing src="apis.json" href="https://gist.github.com/kinlane/10094618" line="2-17"/>
+			</slide>
+			<slide id="pivio-example">
+				<title>Pivio Example</title>
+				<listing src="pivio.yaml" href="http://pivio.io/docs/#_general"/>
+			</slide>
+			<slide id="json-home-example">
+				<title>JSON Home Example</title>
+				<listing src="home.json" href="https://tools.ietf.org/html/draft-nottingham-json-home#section-2" line="2-24"/>
+			</slide>
+			<slide id="description-tooling">
+				<title>Description Tooling</title>
+				<ul>
+					<li>Tooling can <em>only</em> use the description format</li>
+					<li>Conventions around how the format is used in the landscape</li>
+					<ul>
+						<li><em>Push</em> vs. <em>pull</em> and minimal behavioral standards</li>
+						<li>Tooling can automate (part of) the service approval process</li>
+					</ul>
+					<li>Collaborative landscaping makes it easier to build useful tooling</li>
+					<ul>
+						<li>Services that grow in the garden will make honest statements</li>
+						<li>Adversarial landscapes need a lot more work to prevent misuse</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="pivio-concept">
+				<title>Pivio Concept</title>
+				<img href="http://pivio.io/docs/#_key_concepts" src="pivio-concept.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="description-matters">
+				<title>Description Matters</title>
+				<ul>
+					<li>Describe services in terms of how they <q>speak your design language</q></li>
+					<li>Use descriptions to understand and update the <q>design culture</q></li>
+					<li>Help developers to make good design decisions</li>
+				</ul>
+			</slide>
+			<slide id="contracts-q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/viessmann-2017"><code>dret.net/lectures/viessmann-2017</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/viessmann-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="change-management">
+		<title>Change Management</title>
+		<toc class="resources"><a href="https://tools.ietf.org/html/rfc6648" title="RFC 6648: 'Deprecating the &quot;X-&quot; Prefix and Similar Constructs in Application Protocols', June 2012">RFC 6648</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a>&#160;· <a href="https://blog.goodapi.co/api-change-management-2fe5bba32e9b" title='Zdenek Nemec, "API Change Management", April 2017'>Change Management</a>&#160;· <a href="http://semver.org/" title='Semantic Versioning 2.0.0'>Semantic Versioning</a>&#160;· <a href="http://webconcepts.info/specs/IETF/I-D/draft-wilde-sunset-header" title='Erik Wilde, "The Sunset HTTP Header", Internet Draft wilde-sunset-header'>Sunset Header</a>&#160;· <a href="https://tools.ietf.org/html/draft-wilde-registries" title='Erik Wilde, "The Use of Registries", Internet Draft wilde-registries'>Registries</a></toc>
+		<part id="change-management-introduction">
+			<title>Introduction</title>
+			<slide id="versioning-practice">
+				<title>Versioning in Practice</title>
+				<ul>
+					<li>Version numbers have an almost mythical role in IT</li>
+					<ul>
+						<li>But often they are only useful for signaling continuity or breakage points</li>
+						<li>Most things work or break in a binary way (or simply refuse to even try)</li>
+					</ul>
+					<li>Compatibility comes in two basic flavors (one easier, one harder)</li>
+					<ul>
+						<li><em>Backwards compatibility</em> means to work with older components</li>
+						<li><em>Forward compatibility</em> means to work with more advanced components</li>
+					</ul>
+					<li>The Web has good rules to support both compatibility types</li>
+					<ul>
+						<li><em>Backwards compatibility:</em> New browser accessing older content</li>
+						<li><em>Forward compatibility:</em> Old browser accessing newer content</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="versioning-tweet-fielding">
+				<title>Versioning Breaks Things</title>
+				<img title='Roy Fielding (@fielding): &apos;The reason to make a real REST API is to get evolvability … a &quot;v1&quot; is a middle finger to your API customers, indicating RPC/HTTP (not REST)&apos;' href="https://twitter.com/fielding/status/376835835670167552" src="versioning-tweet-fielding.png" class="fullsize"/>
+			</slide>
+			<slide id="evolution">
+				<title>Plan for Evolution</title>
+				<ul>
+					<li>Planning for evolution means to reduce pain in the future</li>
+					<ul>
+						<li>No immediate benefits other than <q>doing the right thing</q></li>
+						<li>Modest effort when part of the API design process and culture</li>
+					</ul>
+					<li>Extensibility should be part of the <em>API design culture</em></li>
+					<ul>
+						<li>Each API must have and document a plan for API evolution</li>
+						<li>The simplest possible plan may be to never change the API</li>
+					</ul>
+					<li>Extensibility should be made easy for API consumers</li>
+					<ul>
+						<li>Provide test cases that simulate correct/incorrect API extensions</li>
+						<li>Provide feature flags so that services can enter <q>test mode</q></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="robust-extensibility">
+			<title>Robust Extensibility</title>
+			<slide id="core-semantics">
+				<title>Meaningful Core Semantics</title>
+				<ul>
+					<li>The core of the API allows clients to have meaningful interactions</li>
+					<ul>
+						<li>The starting point of an API should be meaningful and complete</li>
+					</ul>
+					<li>The core of the API is robust over time</li>
+					<ul>
+						<li>Anything that is added to the core does not change the core semantics</li>
+					</ul>
+					<li>Anything that is not part of the core can be safely ignored</li>
+					<ul>
+						<li><code>mustIgnore</code> semantics allow safe interactions beyond closely coordinated groups</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="extension-points">
+				<title>Well-Defined Extension Points</title>
+				<ul>
+					<li>APIs should be clear about where extensions are allowed</li>
+					<ul>
+						<li>API metamodels often decide where (potential) extension points are</li>
+						<li>API schemas/definitions should further narrow down where extensions are allowed</li>
+					</ul>
+					<li>API tests can make sure that the extension points are properly implemented</li>
+					<ul>
+						<li>Extensions in allowed places are ignored and tests should succeed</li>
+						<li>Extensions in other places should raise errors about malformed content</li>
+					</ul>
+					<li>Extension points are interesting to support in generic software</li>
+					<ul>
+						<li>Monitoring can report which and where extensions are being used</li>
+						<li>Libraries can make it easy to create/parse extension data</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="processing-model">
+				<title>Well-Defined Processing Model</title>
+				<ul>
+					<li>Extensions are well-defined and their handling is well-defined as well</li>
+					<ul>
+						<li>Extension points make it clear where to expect extensions</li>
+						<li>Processing models make it clear what to do with extensions</li>
+					</ul>
+					<li><code>mustIgnore</code> is a popular and good choice for extension processing</li>
+					<ul>
+						<li>Some formats allow extensions to declare their processing model (such as <code>mustUnderstand</code>)</li>
+						<li>HTML has a rule of ignoring unknown elements but processing their content</li>
+					</ul>
+					<li>How to <em>learn</em> about extensions is a different matter</li>
+					<ul>
+						<li>If an API evolves along a single path it may be as simple as looking along that path</li>
+						<li>If an API is used <a href="https://tools.ietf.org/html/draft-wilde-registries">in more complex ways</a> a registry may be a way to find extensions</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="versioning-strategies">
+			<title>Versioning Strategies</title>
+			<slide id="version-identification">
+				<title>Identifying Versions</title>
+				<ul>
+					<li>Versioning may be necessary when the extension model is not working anymore</li>
+					<li>Three main ways how to distinguish between versions on the service surface</li>
+					<ul>
+						<li>Make version numbers part of the resource URI: <code>http://example.org/api/v2/</code></li>
+						<li>Use specific HTTP headers: <code>API-Version: 2.0.0</code></li>
+						<li>Use media types: <code>Accept: application/vnd.example.org.v2+json</code></li>
+					</ul>
+					<li>All of these have side-effects which have to be balanced</li>
+					<ul>
+						<li>New URIs change resource identity which may result in data integration problems</li>
+						<li>Custom headers are specific for a service and hard to see/support in the general Web fabric</li>
+						<li>Media types often are not used by APIs or the clients consuming them</li>
+					</ul>
+					<li>Most APIs choose URI-based versioning and introduce new <q>API identity</q></li>
+					<ul>
+						<li>Versioning at this level is little more than <q>keeping the API brand</q></li>
+						<li>Version numbers can be used in URI path or in the domain name</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="semantic-versioning">
+				<title><a href="http://semver.org/">Semantic Versioning</a></title>
+				<ul>
+					<li><a href="http://semver.org/">Semantic Versioning</a> standardizes the meaning of version numbers</li>
+					<li>Version numbers follow the <code>MAJOR.MINOR.PATCH</code> pattern and the following rules</li>
+					<ul>
+						<li>Increase <code>MAJOR</code> version for incompatible API changes</li>
+						<li>Increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
+						<li>Increase <code>PATCH</code> version for making backwards-compatible bug fixes</li>
+					</ul>
+					<li>Mostly about how to name implementation artifacts and of limited use for APIs</li>
+					<ul>
+						<li>Exposing detailed version/patch information is a potential security risk</li>
+						<li>No behavioral benefit other than allowing clients to raise errors and stop working</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="decommissioning">
+			<title>Decommissioning</title>
+			<slide id="http-sunset">
+				<title>Signaling API End-of-Life</title>
+				<ul>
+					<li>APIs can change in terms of features and will be decommissioned at some point</li>
+					<ul>
+						<li><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Robust extensibility</a> helps to facilitate non-breaking API changes</li>
+						<li><em>Hypermedia</em> helps as a pattern to move extensibility beyond data models</li>
+						<li><a href="http://semver.org/">Semantic versioning</a> may be used to keep track of API changes</li>
+						<li><a href="http://dret.typepad.com/dretblog/2015/08/http-sunset-header.html">HTTP <code>Sunset</code>ting</a> can be used to <a href="http://webconcepts.info/concepts/http-header/Sunset">signal upcoming sunsets on the HTTP level</a></li>
+					</ul>
+					<li>One possible requirement is that APIs must support <code href="http://webconcepts.info/concepts/http-header/Sunset">Sunset</code></li>
+					<ul>
+						<li>Services must document/describe the support of <code>Sunset</code></li>
+						<li>Services may implement <code>Sunset</code> any way they like</li>
+						<li>The simplest option may be <em><code>Sunset</code> policies</em> on a gateway</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="versioning-conclusions">
+				<title>Plan for Evolution</title>
+				<ul>
+					<li>Evolvable APIs do not just happen</li>
+					<li>Think about cost and economics for versioning</li>
+					<li>Make evolution/versioning/deprecation part of API culture</li>
+				</ul>
+			</slide>
+			<slide id="change-management-q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
