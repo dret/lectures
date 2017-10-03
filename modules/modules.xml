@@ -1831,7 +1831,7 @@
 					<li>Sessions can be terrible for scalability</li>
 					<ul>
 						<li>Creating tight coupling between two processes</li>
-						<li><a href="rest/">REST</a> tries really hard to build a session-free web (<q>stateless interactions</q>)</li>
+						<li><a href="rest/">REST</a> tries hard to build a session-free web (<q>stateless interactions</q>)</li>
 					</ul>
 					<li>The Internet does not really have a generic model for sessions</li>
 					<ul>
