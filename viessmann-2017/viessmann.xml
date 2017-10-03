@@ -1502,26 +1502,39 @@
 				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="web-app-reusing-resource.png" title="Reusing Resources"/>
 			</slide>
 		</part>
-		<slide>
+		<part id="rest-conclusions">
 			<title>Conclusions</title>
-			<ul>
-				<li>REST is simple to learn and use</li>
-				<li>Unlearning RPC in most cases is the hardest part</li>
+			<slide id="from-rpc-to-rest">
+				<title>From RPC to REST</title>
 				<ul>
-					<li>OO is all about identifying classes and methods</li>
-					<li>Distributed systems very often are built around RPC models</li>
-					<li>Many classical IT architectures are RPC-centric by design</li>
+					<li>REST is simple to learn and use</li>
+					<li>Unlearning RPC in most cases is the hardest part</li>
+					<ul>
+						<li>OO is all about identifying classes and methods</li>
+						<li>Distributed systems very often are built around RPC models</li>
+						<li>Many classical IT architectures are RPC-centric by design</li>
+					</ul>
+					<li>REST and RPC do not mix (very well)</li>
+					<ul>
+						<li>Resource orientation ↔ function orientation</li>
+						<li>Cooperation ↔ integration</li>
+						<li>Openly distributed ↔ hiding distribution</li>
+						<li>Coarse-grained ↔ fine-grained</li>
+						<li>Complexity in resources formats ↔ complexity in function set</li>
+					</ul>
 				</ul>
-				<li>REST and RPC do not mix (very well)</li>
+			</slide>
+			<slide id="rest-q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
-					<li>Resource orientation ↔ function orientation</li>
-					<li>Cooperation ↔ integration</li>
-					<li>Openly distributed ↔ hiding distribution</li>
-					<li>Coarse-grained ↔ fine-grained</li>
-					<li>Complexity in resources formats ↔ complexity in function set</li>
+					<li>Slides online: <a href="http://dret.net/lectures/viessmann-2017"><code>dret.net/lectures/viessmann-2017</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/viessmann-2017"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
 				</ul>
-			</ul>
-		</slide>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="hypermedia">
 		<title>Hypermedia</title>
