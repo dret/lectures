@@ -224,6 +224,26 @@
 					<li>Support <em><q>how</q></em> through tooling or service fabric instrumentation</li>
 				</ul>
 			</slide>
+			<slide id="webconcepts">
+				<title>Advertisement! <a href="http://webconcepts.info/">Web Concepts</a>!</title>
+				<ul>
+					<li>The <em>Web API Ecosystem</em> is based on a set of shared protocols and practices</li>
+					<ul>
+						<li>There is a number of <a href="http://webconcepts.info/concepts/">concepts</a> that establish shared understanding</li>
+						<li>Each term in the vocabulary of Web concepts is <a href="http://webconcepts.info/specs/">defined in a specification</a></li>
+					</ul>
+					<li>Each API ecosystem uses an <em>extended subset</em> of the public set of Web concepts</li>
+					<ul>
+						<li><em>Removing concepts/values</em> means that these are not part of the design practices</li>
+						<li><em>Adding values</em> means a bigger vocabulary for a concept</li>
+						<li><em>Adding concepts</em> means a different kind of thing in your design practice</li>
+					</ul>
+					<li>Managing your ecosystem in essence means managing your <em>API concepts</em></li>
+					<ul>
+						<li>Separate the <em><q>what</q></em> from the <em><q>how</q></em> in your ecosystem</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
