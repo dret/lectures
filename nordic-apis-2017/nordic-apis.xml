@@ -148,6 +148,28 @@
 		</part>
 		<part id="p3-management">
 			<title>Managing the P<sup>3</sup> Platform</title>
+			<slide id="why-what-how">
+				<title></title>
+				<ul>
+					<li><em>Why</em> is there a need to provide a capability?</li>
+					<ul>
+						<li>Some requirements may be <em>ecosystem-driven</em></li>
+						<li>Some requirements may be <em>service-driven</em></li>
+					</ul>
+					<li><em>What</em> can be done to API-enable the capability?</li>
+					<ul>
+						<li>Design capabilities so that they become <em>part of the service ecosystem</em></li>
+						<li>Some capabilities may become <em>API-enabled services</em></li>
+						<li>Some capabilities may become <em>part of the API design culture</em></li>
+					</ul>
+					<li><em>How</em> can services expose/use a capability?</li>
+					<ul>
+						<li>APIs are <em>strictly about the service surface</em></li>
+						<li>Service implementation is a separate concern</li>
+						<li>Provide assistance for <em>implementation</em> and <em>testing</em></li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="p3-example">
 			<title>P<sup>3</sup> Example: Service Sunsets</title>
