@@ -192,7 +192,21 @@
 				</ul>
 			</slide>
 			<slide id="service-sunset-how">
-				<title>How?</title>
+				<title>How? Whatever makes most sense…</title>
+				<ul>
+					<li>Implementation is up to individual services</li>
+					<li>Implementation options will change over time</li>
+					<ul>
+						<li>Control the header through code explicitly written for the service</li>
+						<li>Use an HTTP framework that treats sunsets as an aspect</li>
+						<li>Provide configurable support in the <em>connective fabric</em> of the service ecosystem</li>
+					</ul>
+					<li><em><q>How</q></em> evolves more quickly than <em><q>What</q></em></li>
+					<ul>
+						<li><em><q>What</q></em> are the shared design practices of the API ecosystem</li>
+						<li><em><q>How</q></em> is the shared implementation practice across teams</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
