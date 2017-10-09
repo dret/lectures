@@ -1,4 +1,4 @@
-# Hypermedia as Storytelling
+# From Platforms to Ecosystems
 
 ## [Nordic APIs](http://nordicapis.com/) [2017 Platform Summit](http://nordicapis.com/events/the-2017-api-platform-summit/)
 
