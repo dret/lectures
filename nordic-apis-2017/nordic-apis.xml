@@ -113,6 +113,18 @@
 			</slide>
 			<slide id="esb-platform">
 				<title>Shared Runtime for Services: ESB</title>
+				<ul>
+					<li>Platforms often are conceived as <em>being actual infrastructure</em></li>
+					<ul>
+						<li><em>Centralized components</em> that provide capabilities and host services</li>
+						<li>They become convenient components where every infrastructure problem is solved</li>
+					</ul>
+					<li>Is the <em>ESB platform pattern</em> an inescapable vicious circle?</li>
+					<ul>
+						<li>What if <em>every capability had to be an API-driven service itself?</em></li>
+						<li>What if the platform would focus on <em>defining/providing APIs?</em></li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="web-platform">
 				<title>Principles/Protocols/Practices (P<sup>3</sup>): The Web as a Platform</title>
