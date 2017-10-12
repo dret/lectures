@@ -27,11 +27,16 @@
 	<title><a href="http://www.apidays.io/events/banking-2017">API Days Berlin 2017</a></title>
 	<presentation id="index">
 		<title>Platformst Du noch oder Gärtnerst Du schon? From Platforms to Protocols!</title>
+		<toc class="abstract">Enterprise IT has an inherent tendency to build "systems". This idea of building one integrated artifact that is designed and implemented to support the business is at odds with the reality that complexity quickly gets in the way of building something that is changeable and adaptable. APIs (and microservices in particular) promise a way out of this, but only if they are used in a way that allows them to be designed and to evolve organically. It is important to understand and accept that the benefits of APIs are mostly a result of them allowing loose coupling, and an important part of modern IT architecture is to nurture and support loose coupling. Planning and providing an "API platform" often gets in the way of realizing the potential of an API-focused architecture. What is needed instead is a culture of designing and evolving an ecosystem of components that communicate through loosely coupled protocols.</toc>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 		<affiliation><a href="http://www.apiacademy.co/">API Academy</a>, <a href="http://www.ca.com/">CA Technologies</a></affiliation>
 		<date short="2017-11-07">November 7, 2017</date>
 		<copyright>2017 Erik Wilde</copyright>
 		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 		<part id="introduction">
 			<title>Introduction</title>
 			<slide id="dret">
