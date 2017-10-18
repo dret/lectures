@@ -2990,7 +2990,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<title>Architecture vs. Design</title>
 				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="rooftop-pool.jpg" title="Nice Design, Expensive Architecture" href="http://www.starwoodhotels.com/luxury/property/overview/index.html?propertyID=3321"/>
 			</slide>
-			<slide>
+			<slide id="architectural-style">
 				<title>Architectural Styles</title>
 				<ul>
 					<li>Architectural Style vs. Architecture</li>
@@ -3019,7 +3019,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					</tr>
 				</table>
 			</slide>
-			<slide>
+			<slide id="rest-is-a-style">
 				<title>REST is not an Architecture</title>
 				<ul>
 					<li>REST is an architectural style</li>
@@ -3036,7 +3036,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="soa-is-a-style">
 				<title>SOA is not an Architecture</title>
 				<ul>
 					<li>SOA is more a style than an architecture</li>
