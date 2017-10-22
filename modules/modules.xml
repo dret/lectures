@@ -2039,7 +2039,7 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="HTTP">
+		<part id="http">
 			<title>Hypertext Transfer Protocol (HTTP)</title>
 			<slide>
 				<title>DNS &amp; HTTP</title>
@@ -3278,7 +3278,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					</ul>
 				</slide>
 			</part>
-			<part id="http">
+			<part id="http-rest">
 				<title short="http">Hypertext Transfer Protocol (HTTP)</title>
 				<slide>
 					<title>How RESTful Applications Talk</title>
