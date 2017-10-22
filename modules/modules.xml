@@ -2046,7 +2046,7 @@
 				<p>The two basic protocols which every Web browser must implement are <em>DNS</em> access and <em>HTTP</em>. However, most operating systems provide an API for DNS access, so the browser can use this service locally and only has to implement HTTP. <em>TCP</em> support (which is required as the foundation for HTTP) is usually provided by the operating system.</p>
 				<img style="width : 90% ; margin : 2% ; " src="browser-dns-http.png"/>
 			</slide>
-			<slide>
+			<slide id="http-messages">
 				<title>HTTP Messages</title>
 				<ul>
 					<li>HTTP needs a reliable connection</li>
