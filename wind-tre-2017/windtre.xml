@@ -516,6 +516,218 @@
 					</ul>
 				</slide>
 			</part>
+			<part id="protocols">
+				<title>Protocols</title>
+				<slide id="standard-types">
+					<title><a href="https://www.safaribooksonline.com/library/view/restful-web-apis/9781449359713/pr05.html" title='"RESTful Web APIs" by Sam Ruby, Mike Amundsen, Leonard Richardson: Introduction'>Standard Types</a></title>
+					<ul>
+						<li><em>Fiat standards:</em> <q>Why not do it this way?</q></li>
+						<li><em>Personal standards:</em> <q>I like the way this has been done.</q></li>
+						<li><em>Corporate standards:</em> <q>Let's try to figure out a way to do this.</q></li>
+						<li><em>Open standards:</em> <q>Hello everybody! Let's solve this problem!</q></li>
+					</ul>
+				</slide>
+				<slide id="xkcd-standards">
+					<title>How Standards Proliferate</title>
+					<img src="xkcd927.png" title="The nice thing about standards is that there are so many to choose from." href="https://xkcd.com/927/" style="height : 65% ; margin : 4% ; "/>
+				</slide>
+				<slide id="ietf">
+					<title><a href="http://ietf.org/">Internet Engineering Task Force (IETF)</a></title>
+					<img title="Internet Engineering Task Force (IETF)" href="http://ietf.org/" src="ietf.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="w3c">
+					<title><a href="http://www.w3.org/">World Wide Web Consortium (W3C)</a></title>
+					<img title="World Wide Web Consortium (W3C)" href="http://w3c.org/" src="w3c.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="http">
+					<title>DNS &amp; HTTP</title>
+					<p>The two basic protocols which every Web browser must implement are <em>DNS</em> access and <em>HTTP</em>. However, most operating systems provide an API for DNS access, so the browser can use this service locally and only has to implement HTTP. <em>TCP</em> support (which is required as the foundation for HTTP) is usually provided by the operating system.</p>
+					<img style="width : 90% ; margin : 2% ; " src="browser-dns-http.png"/>
+				</slide>
+				<slide id="http-messages">
+					<title>HTTP Messages</title>
+					<ul>
+						<li>HTTP needs a reliable connection</li>
+						<ul>
+							<li>The foundation for HTTP is <em>TCP</em></li>
+							<li>DNS resolution yields an IP address</li>
+							<li>Open TCP connection to port 80 or port specified in URI (<code>http://rosetta.sims.berkeley.edu:8085/</code>)</li>
+						</ul>
+						<li>HTTP is a <em>text-based</em> protocol</li>
+						<ul>
+							<li>The connection is used to transmit <em>text messages</em></li>
+							<li>All HTTP messages are human-readable (not all <em>entities</em>, though)</li>
+							<li>Basic HTTP operations can be carried out by hand (e.g., per <code>telnet</code>)</li>
+						</ul>
+					</ul>
+					<pre>start-line
+message-header *
+
+message-body ?</pre>
+				</slide>
+				<slide id="http-headers">
+					<title>HTTP Header Fields</title>
+					<ul>
+						<li>Header fields contain information about the message</li>
+						<ul>
+							<li><em>General header:</em> <code>Date</code> as the message origination date</li>
+							<li><em>Request header:</em> <code>Accept-Language</code> indicates language preferences</li>
+							<li><em>Response header:</em> <code>Server</code> contains system information</li>
+							<li><em>Entity header:</em> <code>Content-Type</code> specifies the media type of the entity</li>
+						</ul>
+						<li>HTTP (and others) define <a href="http://webconcepts.info/concepts/http-header/">a number of header fields</a></li>
+						<ul>
+							<li>Unknown fields must be ignored (extensibility)</li>
+						</ul>
+						<li>HTTP is about acting on these fields</li>
+						<ul>
+							<li>HTTP defines what HTTP implementations must or should do</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="http-performance">
+					<title>HTTP Performance</title>
+					<ul>
+						<li>HTTP/1.0 allowed one transaction per connection</li>
+						<ul>
+							<li>TCP connection setup and teardown are expensive</li>
+							<li>TCP's <em>slow start</em> slows down the initial phase of data transfer</li>
+							<li>Typical Web pages use between 10-20 resources (HTML + images + CSS + scripts)</li>
+							<li>Typically, these resources are stored on the same server</li>
+						</ul>
+						<li>HTTP/1.1 introduces <em>persistent connections</em></li>
+						<ul>
+							<li>The TCP connection stays open for some time (10 sec is a popular choice)</li>
+							<li>Additional requests to the same server use the same TCP connection</li>
+						</ul>
+						<li>HTTP/1.1 introduces <em>pipelined connections</em></li>
+						<ul>
+							<li>Instead of waiting for a response, requests can be queued</li>
+							<li>The server responds as fast as possible</li>
+							<li>The order may not be changed (there is no sequence number)</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide>
+					<title>HTTP Connection Handling</title>
+					<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="http-phttp-pipelining.png"/>
+				</slide>
+				<slide id="http2">
+					<title>HTTP/2</title>
+					<ul>
+						<li>Started with the goal of <em>improving browser efficiency</em> (i.e., no API focus)</li>
+						<ul>
+							<li>Spearheaded by Google with its <a href="https://en.wikipedia.org/wiki/SPDY">SPDY</a> approach for Chrome/Google connectivity</li>
+						</ul>
+						<li>Maintaining compatibility with HTTP/1.1 as much as possible</li>
+						<ul>
+							<li>Reuse the existing set of <a href="http://webconcepts.info/concepts/http-method/">request methods</a>, <a href="http://webconcepts.info/concepts/http-status-code/">status codes</a>, and most <a href="http://webconcepts.info/concepts/http-header/">header fields</a></li>
+							<li>Allow peers to negotiate use of HTTP/1.1 and HTTP/2.0</li>
+						</ul>
+						<li>Advanced features for more efficient transmission and communications</li>
+						<ul>
+							<li>Headers can be compressed and repeated efficiently (binary transmission)</li>
+							<li>Fully multiplexed avoiding blocking and other inefficiencies from ordered pipelining</li>
+							<li><em>Server push</em> allows servers to send resources prior to getting requests</li>
+						</ul>
+						<li>Quick uptake through <a href="https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Protocol_support">support in all major browsers</a> and <a href="https://github.com/http2/http2-spec/wiki/Implementations">many servers</a></li>
+					</ul>
+				</slide>
+				<slide id="mqtt">
+					<title>Message Queue Telemetry Transport (MQTT)</title>
+					<img src="mqtt-logo.png" href="https://mqtt.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+					<ul>
+						<li>Initiated by IBM and similar in scope to <link href="amqp">AMQP</link></li>
+						<ul>
+							<li>Instead of AMQP's exchanges/queues, MQTT uses the concept of a <em>message broker</em></li>
+							<li>Message brokers handle subscriptions and distribution to interested clients</li>
+						</ul>
+						<li>MQTT specifically targets constrained environments</li>
+						<ul>
+							<li><em>Small code foot print</em> in order to fit onto embedded devices</li>
+							<li><em>Limited network bandwidth</em> to work in constrained networks</li>
+						</ul>
+						<li>Various <em>Quality of Service (QoS)</em> levels allow support for different networks</li>
+						<ul>
+							<li><em>At most once delivery</em> sends once and does not retry</li>
+							<li><em>At least once delivery</em> resends until a confirmation has been received</li>
+							<li><em>Exactly once delivery</em> suppresses duplicates on the receiver side</li>
+						</ul>
+						<li>Mostly, MQTT is used to funnel sensor readings into a collection point</li>
+					</ul>
+				</slide>
+				<slide id="amqp">
+					<title>Advanced Message Queueing Protocol (AMQP)</title>
+					<img src="amqp-logo.jpg" href="https://www.amqp.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+					<ul>
+						<li>Originating in the world of financial institutions</li>
+						<ul>
+							<li>Typical scenarios are stock trading and other high-volume applications</li>
+							<li>Protocols need to be optimized for speed and efficiency</li>
+							<li>The goal is to efficiently route message from <em>producers</em> to <em>consumers</em></li>
+							<li>An attempt to get out of lock-in of proprietary IBM protocols</li>
+						</ul>
+						<li>The basic AMQP model has four entities</li>
+						<ul>
+							<li><em>Producers</em> create messages and then publish them to exchanges</li>
+							<li><em>Exchanges</em> receive messages and then distribute them to queue(s) using bindings</li>
+							<li><em>Queues</em> store messages so that consumers can receive them</li>
+							<li><em>Consumers</em> fetch messages from queues or get them by subscription</li>
+						</ul>
+						<li>AMQP is intended for large-scale but coordinated environments</li>
+						<ul>
+							<li>A good fit for settings where application development is centrally controlled</li>
+							<li>A bad fit for an open and decentralized setting with management of exchanges/queues</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="xmpp">
+					<title>Extensible Messaging Protocol (XMPP)</title>
+					<img src="xmpp-logo.png" href="http://xmpp.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+					<ul>
+						<li>Originally named <q>Jabber</q> and intended as an <em>open chat protocol</em></li>
+						<ul>
+							<li>Most chat systems are using closed and proprietary protocols</li>
+							<li>XMPP allows an open ecosystem of chat services and clients to evolve</li>
+						</ul>
+						<li>Main development within IETF from 2002-2004</li>
+						<li>XML was en vogue back then so the protocol is XML-based</li>
+						<ul>
+							<li>The entire client/server session is one XML document (a <a href="http://tools.ietf.org/html/rfc6120#section-4">stream</a>)</li>
+							<li><q>Stream children</q> are XMPP's protocol data units (a <a href="http://tools.ietf.org/html/rfc6120#section-8">stanza</a>)</li>
+							<li>XMPP <a href="http://tools.ietf.org/html/rfc6120#section-11">restricts XML</a> so that parsing is a bit simpler</li>
+						</ul>
+						<li>XMPP is specified as a generic core and an IM protocol</li>
+						<ul>
+							<li><a href="http://tools.ietf.org/html/rfc6120">XMPP Core (IETF RFC 6120)</a></li>
+							<li><a href="http://tools.ietf.org/html/rfc6121">XMPP Instant Messaging and Presence (IETF RFC 6121)</a></li>
+							<li><a href="http://tools.ietf.org/html/rfc6122">XMPP Address Format (IETF RFC 6122)</a></li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="websocket">
+					<title>WebSocket: Non-HTTP Connectivity for Browsers</title>
+					<img src="websocket-logo.png" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+					<ul>
+						<li><code href="https://www.w3.org/TR/XMLHttpRequest2/">XMLHttpRequest</code> kicked off <em>Web 2.0</em> but is limited</li>
+						<ul>
+							<li>The first time Web apps can access the network to request information</li>
+							<li>Allows non-XML content but is limited to HTTP request/response pattern</li>
+						</ul>
+						<li>WebSocket was initially part of HTML5 but then was spun off</li>
+						<li>WebSocket is both an API and a protocol</li>
+						<ul>
+							<li>W3C publishes the <a href="http://www.w3.org/TR/websockets/">WebSocket API</a></li>
+							<li>IETF publishes the <a href="http://webconcepts.info/specs/IETF/RFC/6455">WebSocket Protocol</a></li>
+						</ul>
+						<li>The WebSocket API allows web apps to open and use WebSocket connections</li>
+						<ul>
+							<li>Intended for any communications beyond HTTP's request/response pattern</li>
+							<li>The most popular pattern are long-lasting connections for live updates</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
