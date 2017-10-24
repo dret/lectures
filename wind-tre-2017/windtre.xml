@@ -780,6 +780,7 @@ message-body ?</pre>
 	</presentation>
 	<presentation id="development-management">
 		<title>API Development and API Management</title>
+		<toc class="resources"><a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="https://martinfowler.com/microservices/" title="Martin Fowler's Microservices Resource Guide">Microservices Resource Guide</a></toc>
 		<part id="development">
 			<title>API Development</title>
 			<part id="microservices-pattern">
