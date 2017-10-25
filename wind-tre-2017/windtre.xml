@@ -630,7 +630,7 @@ message-body ?</pre>
 	</presentation>
 	<presentation id="strategy-design">
 		<title>API Strategy and API Design</title>
-		<toc class="resources"><a href="http://webconcepts.info/specs/IETF/RFC/5988" title='RFC 5988, "Web Linking", October 2010'>RFC 5988</a>&#160;· <a href="http://www.ustream.tv/recorded/102891495" title='Mike Amundsen, "Twelve Patterns for Hypermedia Microservices", Craft Conference, April 2017'>12 Patterns</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/08/api-maps-hypermedia-api-design.html" title='Erik Wilde, "API Maps: Hypermedia API Design", August 2016'>API Maps</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/10/api-usability-matters.html" title='Erik Wilde, "API Usability Matters: UX and CX is like DX and …", October 2016'>API Usability</a>&#160;· <a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a>&#160;· <a href="http://webconcepts.info/">Web Concepts</a>&#160;· <a href="https://www.mnot.net/blog/2012/06/25/http_api_complexity_model" title='Mark Nottingham, "HTTP API Complexity", June 2012'>API Complexity</a>&#160;· <a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a></toc>
+		<toc class="resources"><a href="http://webconcepts.info/specs/IETF/RFC/8288" title='RFC 8288, "Web Linking", October 2017'>RFC 8288</a>&#160;· <a href="http://www.ustream.tv/recorded/102891495" title='Mike Amundsen, "Twelve Patterns for Hypermedia Microservices", Craft Conference, April 2017'>12 Patterns</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/08/api-maps-hypermedia-api-design.html" title='Erik Wilde, "API Maps: Hypermedia API Design", August 2016'>API Maps</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/10/api-usability-matters.html" title='Erik Wilde, "API Usability Matters: UX and CX is like DX and …", October 2016'>API Usability</a>&#160;· <a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a>&#160;· <a href="http://webconcepts.info/">Web Concepts</a>&#160;· <a href="https://www.mnot.net/blog/2012/06/25/http_api_complexity_model" title='Mark Nottingham, "HTTP API Complexity", June 2012'>API Complexity</a>&#160;· <a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a></toc>
 		<part id="strategy">
 			<title>API Strategy</title>
 			<part id="evolution">
@@ -787,7 +787,7 @@ message-body ?</pre>
 				<slide id="api-web-linking">
 					<title>Web Linking for APIs</title>
 					<ul>
-						<li><a href="http://webconcepts.info/specs/IETF/RFC/5988">Web Linking</a> takes linking to the HTTP level</li>
+						<li><a href="http://webconcepts.info/specs/IETF/RFC/8288">Web Linking</a> takes linking to the HTTP level</li>
 						<ul>
 							<li><a href="http://www.webconcepts.info/concepts/http-headers/Link"><code>Link</code> HTTP Header</a> for links on the HTTP level</li>
 							<li>All links are typed and types are either registered or defined/used by individual users</li>
@@ -901,10 +901,10 @@ message-body ?</pre>
 							<li>APIs include links that are advertised based on service and state</li>
 							<li>Clients choose links based on application state and goals</li>
 						</ul>
-						<li>Link typing on the Web often is done using <a href="http://webconcepts.info/specs/IETF/RFC/5988">RFC 5988 <q>Web Linking</q></a></li>
+						<li>Link typing on the Web often is done using <a href="http://webconcepts.info/specs/IETF/RFC/8288">RFC 8288 <q>Web Linking</q></a></li>
 						<ul>
-							<li><em href="http://tools.ietf.org/html/rfc5988#section-4.1">Registered types</em> are simple strings using <a href="https://www.iana.org/assignments/link-relations/link-relations.xhtml">well-known values</a></li>
-							<li><em href="http://tools.ietf.org/html/rfc5988#section-4.2">Extension types</em> are URIs which might choose to self-document their meaning</li>
+							<li><em href="http://tools.ietf.org/html/rfc8288#section-2.1.1">Registered types</em> are simple strings using <a href="https://www.iana.org/assignments/link-relations/link-relations.xhtml">well-known values</a></li>
+							<li><em href="http://tools.ietf.org/html/rfc8288#section-2.1.2">Extension types</em> are URIs which might choose to self-document their meaning</li>
 						</ul>
 						<li><a href="http://webconcepts.info/concepts/link-relation/">Registered types</a> have documented but fuzzy meaning</li>
 						<ul>
