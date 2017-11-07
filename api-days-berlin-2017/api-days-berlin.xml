@@ -127,6 +127,23 @@
 				<title>Microservices Cargo Cult</title>
 				<img title="Microservices Cargo Cult" src="microservices-cargo-cult.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="what-how">
+				<title>Separating the <q>What</q> from the <q>How</q></title>
+				<ul>
+ 					<li><em>Why</em> do organizations use MSA and <em>what</em> are their goals?</li>
+					<li>Microservices are a <em>pattern</em> for achieving API agility/velocity</li>
+					<ul>
+						<li><em>Loosely coupled services</em> to allow services to evolve independently</li>
+						<li><em>DevOps</em> to allow services to emerge/evolve faster</li>
+						<li><em>Infrastructure augmentation</em> for management and visibility of services</li>
+					</ul>
+					<li>Focus on the <q>what</q> instead of simply choosing a <q>how</q></li>
+					<ul>
+						<li>Many MSA advantages can be realized in non-MSA architectures</li>
+						<li>More architectural discipline may be required</li>
+					</ul>
+\				</ul>
+			</slide>
 		</part>
 		<part id="two-platform-concepts">
 			<title>Two Platform Concepts</title>
