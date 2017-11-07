@@ -186,8 +186,20 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="from-platforms-to-landscapes">
+				<title>From Platforms to Landscapes</title>
+				<ul>
+					<li>Avoid the anti-pattern of centralized implementation</li>
+						<ul>
+							<li>Do not force APIs top be provided in one way/place</li>
+							<li>Do not force APIs top be consumed in one way/place</li>
+						</ul>
+					<li>Any constraints should be <em>by policy only</em></li>
+					<li>Platforms/landscapes should follow the <em>principles/protocols/practices (P<sup>3</sup>) pattern</em></li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
-				<title>Thanks! Q&amp;A</title>
+				<title>Thanks! Questions?</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
 					<li>Slides online: <a href="http://dret.net/lectures/api-days-berlin-2017"><code>dret.net/lectures/api-days-berlin-2017</code></a></li>
