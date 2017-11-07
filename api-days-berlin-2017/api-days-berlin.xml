@@ -133,6 +133,18 @@
 			</slide>
 			<slide id="web-industrialized">
 				<title>The Web, Industrialized</title>
+				<ul>
+					<li>MSA applies Web Architecture's <em href="http://dret.net/netdret/publications#pau09a">loose coupling</em> to the API space</li>
+					<ul>
+						<li>Build services with no hidden dependencies</li>
+						<li>Choose the best tool for the job</li>
+						<li>Decouple service provision from delivery architecture</li>
+						<li>Monitor service state and usage</li>
+						<li>React quickly when customers or market demand change</li>
+						<li>Experiment ruthlessly and keep experimentation cost low</li>
+					</ul>
+					<li>MSA is all about being webby while minimizing the cost</li>
+				</ul>
 			</slide>
 			<slide id="microservices-cargo-cult">
 				<title>Microservices Cargo Cult</title>
