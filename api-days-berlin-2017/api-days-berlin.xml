@@ -231,8 +231,8 @@
 				<ul>
 					<li>Avoid the anti-pattern of centralized implementation</li>
 						<ul>
-							<li>Do not force APIs top be provided in one way/place</li>
-							<li>Do not force APIs top be consumed in one way/place</li>
+							<li>Do not force APIs to be provided in one way/place</li>
+							<li>Do not force APIs to be consumed in one way/place</li>
 						</ul>
 					<li>Any constraints should be <em>by policy only</em></li>
 					<li>Platforms/landscapes should follow the <em>principles/protocols/practices (P<sup>3</sup>) pattern</em></li>
