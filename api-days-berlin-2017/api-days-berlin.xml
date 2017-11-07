@@ -125,13 +125,13 @@
 					<li>MSA is about service autonomy in service-oriented landscapes</li>
 					<ul>
 						<li><em>Developer autonomy</em> is the freedom to choose the best tools for the job</li>
-						<li><em>Operations autonomy</em> means that every service is operated in standalone way</li>
+						<li><em>Operations autonomy</em> means that every service is operated standalone</li>
 					</ul>
 					<li>MSA is also about effectiveness in an autonomy-focused service-oriented landscapes</li>
 					<ul>
 						<li><em>Rapid provisioning</em> means that getting started is an easy task</li>
 						<li><em>Basic monitoring</em> establishes visibility into service operations</li>
-						<li><em>Rapid deployment</em> increases the velocity of available service landscape</li>
+						<li><em>Rapid deployment</em> increases the velocity of service landscape evolution</li>
 					</ul>
 				</ul>
 			</slide>
@@ -142,7 +142,7 @@
 					<ul>
 						<li>Build services with no hidden dependencies</li>
 						<li>Choose the best tool for the job</li>
-						<li>Decouple service provision from delivery architecture</li>
+						<li>Decouple service provisioning from delivery architecture</li>
 						<li>Monitor service state and usage</li>
 						<li>React quickly when customers or market demand change</li>
 						<li>Experiment ruthlessly and keep experimentation cost low</li>
@@ -167,7 +167,7 @@
 					<li>Focus on the <q>what</q> instead of simply choosing a <q>how</q></li>
 					<ul>
 						<li>Many MSA advantages can be realized in non-MSA architectures</li>
-						<li>More architectural discipline may be required</li>
+						<li>More architectural discipline may be required to realize long-term gains</li>
 					</ul>
 \				</ul>
 			</slide>
@@ -206,6 +206,7 @@
 					<ul>
 						<li>What if <em>every capability had to be an API-driven service itself?</em></li>
 						<li>What if the platform would focus on <em>defining/providing APIs?</em></li>
+						<li>What if the platform is a set of shared ideas instead of shared artifacts?</li>
 					</ul>
 				</ul>
 			</slide>
