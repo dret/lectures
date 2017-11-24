@@ -1,6 +1,6 @@
-# LATAM Tour 2017
+# API Academy LATAM 2017
 
-Slides for the LATAM Tour 2017 (Buenos Aires and Lima), November 27 - December 1, 2017.
+Slides for the API Academy LATAM Tour 2017 (Buenos Aires and Lima), November 27 - December 1, 2017.
 
 
 ## License
