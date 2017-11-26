@@ -104,6 +104,14 @@
 		</part>
 		<part id="api-definition">
 			<title>What is an API?</title>
+			<slide id="api-dichotomy">
+				<title>APIs Separate and Connect</title>
+				<ul>
+					<li>APIs <em>separate</em> because they reduce component coupling</li>
+					<li>APIs <em>connect</em> because they allow component interaction</li>
+					<li>There is no <em>single</em> or <em>best</em> decomposition of a system</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="bis2017-conclusions">
 			<title>Conclusions</title>
