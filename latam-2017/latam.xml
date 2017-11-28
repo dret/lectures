@@ -327,6 +327,25 @@
 		</part>
 		<part id="api-definition">
 			<title>What is an API?</title>
+			<slide id="api-technology">
+				<title>APIs are a Mechanism</title>
+				<ul>
+					<li>Businesses need to become faster at changing</li>
+					<ul>
+						<li>The need to <em>change internally</em> to adapt to changing markets and competition</li>
+						<li>The need to <em>interface externally</em> to provide and consume services</li>
+					</ul>
+					<li>Value chains change faster than ever before</li>
+					<ul>
+						<li>Improving flexibility and adaptability becomes essential strategy</li>
+					</ul>
+					<li>There are two essential sides to <q>getting APIs right</q></li>
+					<ol>
+						<li>All interactions with a service are done through its API</li>
+						<li>Service implementations are managed as autonomous components</li>
+					</ol>
+				</ul>
+			</slide>
 			<slide id="api-dichotomy">
 				<title>APIs Separate and Connect</title>
 				<ul>
