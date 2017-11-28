@@ -148,8 +148,17 @@
 		</part>
 		<part id="why-apis">
 			<title>Why APIs? Why Now?</title>
-			<slide id="api-why">
-				<title>Why APIs?</title>
+			<slide id="api-why-start">
+				<title>Why APIs? Where You Are…</title>
+				<img title="Where you come from…" href="https://upload.wikimedia.org/wikipedia/commons/7/7b/Weltmaschine_gsellmann1.JPG" src="monolith.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-why-avoid">
+				<title>Why APIs? What To Avoid…</title>
+				<img title="Where you think you're going…" href="https://static.pexels.com/photos/12598/96917deb7705adcee76b65caf8c652b1.jpg" src="microservices-ideal.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-why-goal">
+				<title>Why APIs? Where To Go…</title>
+				<img title="By Lachlan Donald from Melbourne, Australia (Sharpest tool in the shed) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AHuge_collection_of_tools_in_a_store_in_Chloride%2C_a_ghost_town_in_New_Mexico%2C_USA_-_July_2013.jpg" src="microservices-reality.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="api-driver-push">
 				<title>API Driver #1: Push</title>
@@ -221,8 +230,12 @@
 		</part>
 		<part id="api-success-factors">
 			<title>API Success Factors</title>
+			<slide id="api-lifecycle-design">
+				<title>The Big Picture</title>
+				<img title="Where API management is headed in 2017" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 		</part>
-		<part id="bis2017-conclusions">
+		<part id="breakfast-conclusions">
 			<title>Conclusions</title>
 			<slide id="api-conclusions">
 				<title>APIs Matter</title>
