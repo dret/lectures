@@ -368,15 +368,6 @@
 					</ol>
 				</ul>
 			</slide>
-			<slide id="api-dichotomy">
-				<title>APIs Separate and Connect</title>
-				<ul>
-					<li>APIs <em>separate</em> because they reduce component coupling</li>
-					<li>APIs <em>connect</em> because they allow component interaction</li>
-					<li>There is no <em>single</em> or <em>best</em> decomposition of a system</li>
-					<li>Connecting things is as important as <em>constant re-configuration</em></li>
-				</ul>
-			</slide>
 			<slide id="api-enabler">
 				<title>APIs are Enablers</title>
 			</slide>
