@@ -339,6 +339,13 @@
 		</part>
 		<part id="api-definition">
 			<title>What is an API?</title>
+			<slide id="api-evolution">
+				<title>Pre-API Innovation</title>
+				<div style="height: 70%">
+					<img style="float: left; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Uniform interface" src="pneumatic-tubes.jpg" href="https://twitter.com/NotableHistory/status/529966375125544960"/>
+					<img style="float: right; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Self-describing representations and stateless interactions" src="nj-gun-permit.png"/>
+				</div>
+			</slide>
 			<slide id="api-technology">
 				<title>APIs are a Mechanism</title>
 				<ul>
@@ -366,17 +373,6 @@
 					<li>There is no <em>single</em> or <em>best</em> decomposition of a system</li>
 					<li>Connecting things is as important as <em>constant re-configuration</em></li>
 				</ul>
-			</slide>
-			<slide id="api-origin">
-				<title>Early Interface History</title>
-				<img src="cuneiform.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="api-evolution">
-				<title>Pre-API Interface History</title>
-				<div style="height: 70%">
-					<img style="float: left; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Uniform interface" src="pneumatic-tubes.jpg" href="https://twitter.com/NotableHistory/status/529966375125544960"/>
-					<img style="float: right; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Self-describing representations and stateless interactions" src="nj-gun-permit.png"/>
-				</div>
 			</slide>
 			<slide id="api-cargo-cult">
 				<title>API Cargo Cult</title>
