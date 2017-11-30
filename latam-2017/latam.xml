@@ -662,7 +662,7 @@
 		</part>
 	</presentation>
 	<presentation id="emprende">
-		<title>APIs and Microservices for Innovation and Evolution</title>
+		<title>Emprende UP: Microservices, APIs and Innovation</title>
 		<date short="2017-11-30">November 30, 2017</date>
 		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a></toc>
 		<part id="introduction">
@@ -738,7 +738,7 @@
 			</slide>
 		</part>
 		<part id="api-innovation">
-			<title>APIs and Innovation</title>
+			<title>Why: APIs and Innovation</title>
 			<slide id="api-evolution">
 				<title>Pre-API Innovation</title>
 				<div style="height: 70%">
@@ -798,7 +798,7 @@
 			</slide>
 		</part>
 		<part id="design-for-change">
-			<title>Good API Practice: Designing for Change</title>
+			<title>What: Designing for Change</title>
 			<slide id="evolution">
 				<title>Plan for Evolution</title>
 				<ul>
@@ -858,6 +858,46 @@
 					<ul>
 						<li>Some formats allow extensions to declare their processing model (such as <code>mustUnderstand</code>)</li>
 						<li>HTML has a rule of ignoring unknown elements but processing their content</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="microservices">
+			<title>How: Microservices</title>
+			<slide id="soapy-soa">
+				<title>The SOA Crisis</title>
+				<ul>
+					<li>SOAP-style SOA are traditional IT monoliths exposing some capabilities</li>
+					<li>MSA #1 goal is to create a loosely coupled service landscape</li>
+					<ul>
+						<li>Shared data storage creates coupling</li>
+						<li>Shared infrastructure creates coupling</li>
+						<li>Shared libraries create coupling</li>
+						<li>Loose coupling allows to pick the right tool for the job</li>
+						<li>Loose coupling allows to refactor/retire as required</li>
+						<li>Loose coupling blurs the public/partner/private lines</li>
+					</ul>
+					<li><em>Using APIs</em> is one of the few overlaps between SOAP-style SOA and MSA</li>
+				</ul>
+			</slide>
+			<slide id="microservices-are-soa">
+				<title>Microservices are SOA!</title>
+				<img title="Microservices are SOA!" src="microservices-are-soa.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="microservices-are-good-soa">
+				<title>Microservices are SOA done Right!</title>
+				<ul>
+					<li><em>Decouple implementations</em> and not just interfaces</li>
+					<li><em>Velocity</em> is determined by how hard it is to make changes</li>
+					<li>The biggest problem is not <em>access to capabilities</em> but <em>capability agility</em></li>
+					<ul>
+						<li>Providing access to capabilities is better than doing nothing</li>
+						<li><em>Agile management of the capability landscape</em> goes further than that</li>
+					</ul>
+					<li>Microservices apply <em>Web architecture</em> to <em>Enterprise IT</em></li>
+					<ul>
+						<li>Implementation details are completely invisible to service users</li>
+						<li>Service consumption <em>only</em> uses well-defined and uniform interfaces</li>
 					</ul>
 				</ul>
 			</slide>
