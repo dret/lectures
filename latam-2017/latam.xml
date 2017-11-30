@@ -661,4 +661,237 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="emprende">
+		<title>APIs and Microservices for Innovation and Evolution</title>
+		<date short="2017-11-30">November 30, 2017</date>
+		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a></toc>
+		<part id="introduction">
+			<title>Introduction</title>
+			<slide id="dret-cv">
+				<title>About Me</title>
+				<ul>
+					<li><a href="http://dret.net/netdret/publications#wil97b">Ph.D. in Communications Systems</a> from <a href="http://www.ethz.ch/">ETH Zürich</a></li>
+					<li>Working on Web Architecture after writing <a href="http://dret.net/netdret/publications#wil98">the first Web Technology book</a></li>
+					<li>UC Berkeley (2006-2011), working on <a href="http://dret.net/netdret/publications#wil09g">Service Models for Open Government</a></li>
+					<li>EMC (2011-2014), working on transforming software products into service platforms</li>
+					<li>Siemens (2014-2015), working on using <em title="Internet of Things">IoT</em> to build <em title="Web of Things">WoT</em> (<q>APIs for Things</q>)</li>
+					<li>Joined <a href="http://www.ca.com/" title="CA Technologies">CA</a>'s <a href="http://www.apiacademy.co/">API Academy</a> in 2016 and now all about API Strategy and Design</li>
+					<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="http://dret.typepad.com/dretblog/">my blog</a>, <a href="http://www.linkedin.com/in/netdret">LinkedIn</a>, and <a href="https://www.flickr.com/photos/dret/" title="dret">flickr</a></li>
+				</ul>
+			</slide>
+			<slide id="dret">
+				<title><code>@dret</code> on Twitter/GitHub</title>
+				<img src="dret.png" title="dret" href="http://twitter.com/dret" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-academy">
+				<title><a href="http://www.apiacademy.co/">API Academy</a></title>
+				<img src="apiacademy-red-black.png" href="http://www.apiacademy.co/" title="API Acacdemy" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Global Team working on <em>API Strategy and Design</em> topics</li>
+					<ul>
+						<li><a href="http://www.apiacademy.co/team_member/matt-mclarty/">Matt McLarty</a> (Vancouver): <a href="http://twitter.com/MattMcLartyBC" class="twitter-follow-button" title="Matt McLarty on Twitter: @MattMcLartyBC"><code>@MattMcLartyBC</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li><a href="http://www.apiacademy.co/team_member/mike-amundsen/">Mike Amundsen</a> (Cincinnati): <a href="http://twitter.com/mamund" class="twitter-follow-button" title="Mike Amundsen on Twitter: @mamund"><code>@mamund</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li><a href="http://www.apiacademy.co/team_member/mehdi-medjaoui/">Mehdi Medjaoui</a> (San Francisco): <a href="http://twitter.com/medjawii" class="twitter-follow-button" title="Mehdi Medjaoui on Twitter: @medjawii"><code>@medjawii</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li><a href="http://www.apiacademy.co/team_member/ronnie-mitra/">Ronnie Mitra</a> (London): <a href="http://twitter.com/mitraman" class="twitter-follow-button" title="Ronnie Mitra on Twitter: @mitraman"><code>@mitraman</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li><a href="http://www.apiacademy.co/team_member/erik-wilde/">Erik Wilde</a> (Zürich): <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+					</ul>
+					<li>Evangelizing ideas and technologies</li>
+					<ul>
+						<li>Speaking (conferences, events)</li>
+						<li>Teaching (workshops, bootcamps)</li>
+						<li>Writing (blogs, articles, books, <a href="https://soundcloud.com/user-426834320">podcasts</a>)</li>
+						<li>Doing (side projects on API-related topics)</li>
+						<li>Standardizing (participating in specification work)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="msa-book">
+				<title>Microservice Architecture</title>
+				<img src="msa-cover.jpg" href="http://transform.ca.com/API-microservice-architecture-oreilly-book.html" title="Microservice Architecture: Aligning Principles, Practices, and Culture" style="float: right ; height : 55% ; margin : 4% ; "/>
+				<ul>
+					<li><q>Microservice Architecture: Aligning Principles, Practices, and Culture</q></li>
+					<li><a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/">Authored by</a> <a href="http://www.apiacademy.co/">API Academy</a> members Irakli Nadareishvili, Ronnie Mitra, Matt McLarty, and Mike Amundsen</li>
+					<ul>
+						<li>Get <a href="http://transform.ca.com/API-microservice-architecture-oreilly-book.html">free electronic version courtesy of CA Technologies</a></li>
+						<li>Get <a href="http://shop.oreilly.com/product/0636920050308.do">a hardcopy version</a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="web-innovation">
+			<title>Innovation and the Web</title>
+			<slide id="web-success">
+				<title>Why the Web Won: Public APIs</title>
+				<ul>
+					<li>Permissionless decentralized innovation</li>
+					<li>Global-scale access through well-defined interfaces</li>
+					<li>Implementation aspects are not part of the architecture</li>
+				</ul>
+			</slide>
+			<slide id="web-site-success">
+				<title>Why Web Sites Win: Private APIs</title>
+				<ul>
+					<li>Focus on change willingness and readiness</li>
+					<li>Experimentation and observation</li>
+					<li>Ruthless self-reinvention</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="api-innovation">
+			<title>APIs and Innovation</title>
+			<slide id="api-evolution">
+				<title>Pre-API Innovation</title>
+				<div style="height: 70%">
+					<img style="float: left; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Uniform interface" src="pneumatic-tubes.jpg" href="https://twitter.com/NotableHistory/status/529966375125544960"/>
+					<img style="float: right; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Self-describing representations and stateless interactions" src="nj-gun-permit.png"/>
+				</div>
+			</slide>
+			<slide id="api-cargo-cult">
+				<title>API Cargo Cult</title>
+				<img src="cargo-cult.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-technology">
+				<title>APIs are a Mechanism</title>
+				<ul>
+					<li>Businesses need to become faster at changing</li>
+					<ul>
+						<li>The need to <em>change internally</em> to adapt to changing markets and competition</li>
+						<li>The need to <em>interface externally</em> to provide and consume services</li>
+					</ul>
+					<li>Value chains change faster than ever before</li>
+					<ul>
+						<li>Improving flexibility and adaptability becomes essential strategy</li>
+					</ul>
+					<li>There are two essential sides to <q>getting APIs right</q></li>
+					<ol>
+						<li>All interactions with a service are done through its API</li>
+						<li>Service implementations are managed as autonomous components</li>
+					</ol>
+				</ul>
+			</slide>
+			<slide id="api-enabler">
+				<title>APIs are Enablers</title>
+				<ul>
+					<li>APIs are an essential component in IT-centric business</li>
+					<ul>
+						<li><em>APIs are necessary:</em> Enabling faster changes</li>
+						<li><em>APIs are not sufficient:</em> Drive them from the <q>why</q></li>
+					</ul>
+					<li>The business goal is to become better at changing</li>
+					<ul>
+						<li>Embrace <em>diversity</em> to minimize innovation barriers</li>
+						<li>Embrace <em>failure</em> as a way to understand the market</li>
+						<li>Move from <em>prescribing</em> to <em>guiding</em></li>
+					</ul>
+					<li>APIs allow to produce more digital products in less time</li>
+				</ul>
+			</slide>
+			<slide id="api-evolution">
+				<title>APIs and Evolution</title>
+				<ul>
+					<li>Stop building systems, start cultivating ecosystems</li>
+					<ul>
+						<li><em>Systems</em> are integrated solutions to solve specific problems</li>
+						<li><em>Ecosystems</em> host components that can evolve to respond to changes</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-lifecycle-design">
+				<title>The Big Picture</title>
+				<img title="Where API management is headed in 2017" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="design-for-change">
+			<title>Good API Practice: Designing for Change</title>
+			<slide id="evolution">
+				<title>Plan for Evolution</title>
+				<ul>
+					<li>Planning for evolution means to reduce pain in the future</li>
+					<ul>
+						<li>No immediate benefits other than <q>doing the right thing</q></li>
+						<li>Modest effort when part of the API design process and culture</li>
+					</ul>
+					<li>Extensibility should be part of the <em>API design culture</em></li>
+					<ul>
+						<li>Each API must have and document a plan for API evolution</li>
+						<li>The simplest possible plan may be to never change the API</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="core-semantics">
+				<title>Meaningful Core Semantics</title>
+				<ul>
+					<li>The core of the API allows clients to have meaningful interactions</li>
+					<ul>
+						<li>The starting point of an API should be meaningful and complete</li>
+					</ul>
+					<li>The core of the API is robust over time</li>
+					<ul>
+						<li>Anything that is added to the core does not change the core semantics</li>
+					</ul>
+					<li>Anything that is not part of the core can be safely ignored</li>
+					<ul>
+						<li><code>mustIgnore</code> semantics allow safe interactions beyond closely coordinated groups</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="extension-points">
+				<title>Well-Defined Extension Points</title>
+				<ul>
+					<li>APIs should be clear about where extensions are allowed</li>
+					<ul>
+						<li>API metamodels often decide where (potential) extension points are</li>
+						<li>API schemas/definitions should further narrow down where extensions are allowed</li>
+					</ul>
+					<li>API tests can make sure that the extension points are properly implemented</li>
+					<ul>
+						<li>Extensions in allowed places are ignored and tests should succeed</li>
+						<li>Extensions in other places should raise errors about malformed content</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="processing-model">
+				<title>Well-Defined Processing Model</title>
+				<ul>
+					<li>Extensions are well-defined and their handling is well-defined as well</li>
+					<ul>
+						<li>Extension points make it clear where to expect extensions</li>
+						<li>Processing models make it clear what to do with extensions</li>
+					</ul>
+					<li><code>mustIgnore</code> is a popular and good choice for extension processing</li>
+					<ul>
+						<li>Some formats allow extensions to declare their processing model (such as <code>mustUnderstand</code>)</li>
+						<li>HTML has a rule of ignoring unknown elements but processing their content</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="emprende-conclusions">
+			<title>Conclusions</title>
+			<slide id="innovation-conclusions">
+				<title>APIs and Innovation</title>
+				<ul>
+					<li>Innovation only works <em>bottom-up</em></li>
+					<li><em>Loosely coupled ecosystems</em> allow change and evolution</li>
+					<li>APIs are an essential component of <em>IT ecosystems</em></li>
+					<li>APIs are the <q>connective tissue</q> for evolving ecosystems</li>
+					<ul>
+						<li><em>New ideas</em> can be quickly developed, deployed, and tested</li>
+						<li><em>Successful ideas</em> can be easily scaled and safely evolved</li>
+						<li><em>Unsuccessful ideas</em> can be safely phased out as required</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/latam-2017/"><code>dret.net/lectures/latam-2017/</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/latam-2017/"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>
