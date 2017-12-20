@@ -105,6 +105,22 @@
 			</slide>
 			<slide id="why">
 				<title>From <q>How</q> to <q>What</q> to <q>Why</q></title>
+				<ul>
+					<li><em>How</em> products get developed/delivered is a complex question</li>
+					<ul>
+						<li>That's where all the details of CI/CD have to deliver a working solution</li>
+					</ul>
+					<li><em>What</em> happens is that products can be evolved at their own pace</li>
+					<ul>
+						<li>DevOps focuses on improving the effectiveness of software delivery</li>
+						<li>Microservices focus on radical independence on <em>every possible level</em></li>
+					</ul>
+					<li><em>Why</em> people are looking at it has two rather different drivers</li>
+					<ol>
+						<li>IT effectiveness can be improved when coupling is decreased</li>
+						<li>Business fitness can be improved when businesses stop being systems</li>
+					</ol>
+				</ul>
 			</slide>
 		</part>
 		<slide id="api-eim">
