@@ -122,10 +122,23 @@
 					</ol>
 				</ul>
 			</slide>
+			<slide id="loose">
+				<title>Programming in the Loose</title>
+				<ul>
+					<li>Programming often is seen as two distinct scopes</li>
+					<ul>
+						<li><em>Small</em> means how to develop individual components</li>
+						<li><em>Large</em> refers to how to integrate components into a system</li>
+					</ul>
+					<li>Maybe we need more attention for <em>Programming in the Loose</em></li>
+					<ul>
+						<li>Traditional practices apply to components in the ecosystem</li>
+						<li>The explicit goal is to assemble them into an ecosystem</li>
+						<li>The explicit non-goal is to integrate then into a system</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
-		<slide id="api-eim">
-			<title>Your APIs are your EIM</title>
-		</slide>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
