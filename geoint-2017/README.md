@@ -1,6 +1,6 @@
-# Putting Microservice Architecture into Practice through APIs
+# API Strategy and Design for Geospatial Data and Services
 
-## La Jolla, California, June 1, 2017
+## Tutorial at [GEOINT 2017](http://geoint2017.com/), San Antonio, TX, June 4, 2017
 
 ### License
 
@@ -9,14 +9,4 @@ These are sources that I make available for others to read/use/reuse; please res
 
 ### Online
 
-The presentation version for these talks is available online at http://dret.net/lectures/san-diego-2017/
-
-
-### Workshop Schedule
-
-* 11:00 am - Registration
-* 11:30 am - Establishing a Foundation for Microservices (Erik Wilde, CA Technologies, API Academy)
-* 12:15 pm - Lunch Break
-* 12:30 pm - Designing Microservice APIs (Erik Wilde, CA Technologies, API Academy)
-* 1:15 pm - Microservices Lifecycle Management and Tools including a Demonstration
-* 1:45 pm - Wrap up/Q&A
+The presentation version for this talk is available online at http://dret.net/lectures/geoint-2017/
