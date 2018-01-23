@@ -92,6 +92,26 @@
 		</part>
 		<part id="api-languages">
 			<title>APIs are Languages</title>
+			<slide id="what-is-an-api">
+				<title>What is an API?</title>
+				<ul>
+					<li>An API is a <em>product</em></li>
+					<ul>
+						<li>APIs are created and designed and developed</li>
+						<li>APIs have typical product lifecycles</li>
+					</ul>
+					<li>An API provides <em>access to a capability</em></li>
+					<ul>
+						<li>The API is not the interesting thing</li>
+						<li>The value is in the functionality of the API</li>
+					</ul>
+					<li>An API is a <em>language</em></li>
+					<ul>
+						<li>API users utilize API functionality by accessing the API</li>
+						<li>Using APIs is a conversation between providers and consumers</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="car-interior">
 				<title>Interface Design</title>
 				<img src="audi-rs6-plus-interior.jpg" title="Audi RS6 Plus Interior" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
