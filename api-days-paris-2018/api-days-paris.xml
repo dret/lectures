@@ -113,6 +113,15 @@
 			</slide>
 			<slide id="api-design">
 				<title>API Design</title>
+				<ul>
+					<li>APIs need to be designed just like any other product</li>
+					<ul>
+						<li>Design starts with a architectural style and associated patterns</li>
+						<li>The style sets the framework but leaves a lot of freedom</li>
+						<li>Some design elements can be reused from existing APIs</li>
+						<li>Some design elements have to be created for the current API</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="car-interior">
 				<title>Interface Design</title>
