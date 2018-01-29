@@ -155,6 +155,14 @@
 		</part>
 		<part id="webconcepts">
 			<title>Web Concepts</title>
+			<slide id="specs">
+				<title>Specifications</title>
+				<listing src="specs.json" line="1-21"/>
+			</slide>
+			<slide id="concepts">
+				<title>Concepts</title>
+				<listing src="concepts.json" line="2-19"/>
+			</slide>
 		</part>
 		<part id="apiconcepts">
 			<title>API Concepts</title>
