@@ -137,6 +137,14 @@
 			<title>Languages and Landscapes</title>
 			<slide id="soa-dark-age">
 				<title>SOA: The Dark Age</title>
+				<ul>
+					<li>API design was practiced relatively little</li>
+					<ul>
+						<li>Developers exposed implementation internals as <em>Web services</em></li>
+						<li>Many APIs were exposed from a shared monolithic codebase</li>
+					</ul>
+					<li></li>
+				</ul>
 			</slide>
 			<slide id="msa-enlightenment">
 				<title>Microservices: Enlightenment</title>
