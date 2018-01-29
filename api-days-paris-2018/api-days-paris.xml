@@ -119,7 +119,12 @@
 						<li>Design starts with an architectural style and associated patterns</li>
 						<li>The style sets the framework but leaves a lot of freedom</li>
 						<li>Some design elements can be reused from existing APIs</li>
-						<li>Some design elements have to be created for the current API</li>
+						<li>Some design elements have to be created for the new API</li>
+					</ul>
+					<li>Design works best when it reuses familiar interface concepts</li>
+					<ul>
+						<li>For UI design this allows end users to make educated guesses for better UX</li>
+						<li>For API design the same concept of <em>familiarity</em> is helpful for DX</li>
 					</ul>
 				</ul>
 			</slide>
