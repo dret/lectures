@@ -276,8 +276,11 @@
 			<slide id="mixing-representations">
 				<title>Mixing Representations</title>
 				<ul>
-					<li>Certain problems can be </li>
-					<li><code href="http://webconcepts.info/concepts/media-type/application/problem+json">application/problem+json</code></li>
+					<li>Parts of APIs often can be covered by vertical standards</li>
+					<ul>
+						<li>Represent problem reports in APIs with <code href="http://webconcepts.info/concepts/media-type/application/problem+json">application/problem+json</code></li>
+						<li>Represent status information about APIs with <code href="http://webconcepts.info/concepts/media-type/application/vnd.health+json">application/vnd.health+json</code></li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
