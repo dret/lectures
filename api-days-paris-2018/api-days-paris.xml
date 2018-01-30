@@ -240,13 +240,15 @@
 			</slide>
 			<slide id="adding-representations">
 				<title>Adding Representations</title>
-				<li>Adding representations can be done with new values for existing concepts</li>
 				<ul>
-					<li>Using <a href="http://webconcepts.info/concepts/media-type/application/json">media types</a> as one way of doing it</li>
-					<li>Using <a href="http://webconcepts.info/concepts/profile-uri/">profiles</a> is a <q>lightweight</q> way of specializing media types</li>
-					<li>Using <a href="http://webconcepts.info/concepts/xml-ns/">XML namespaces</a> is a different way of identifying vocabularies</li>
+					<li>Adding representations can be done with new values for existing concepts</li>
+					<ul>
+						<li>Using <a href="http://webconcepts.info/concepts/media-type/application/json">media types</a> as one way of doing it</li>
+						<li>Using <a href="http://webconcepts.info/concepts/profile-uri/">profiles</a> is a <q>lightweight</q> way of specializing media types</li>
+						<li>Using <a href="http://webconcepts.info/concepts/xml-ns/">XML namespaces</a> is a different way of identifying vocabularies</li>
+					</ul>
+					<li>It also is possible to add new concepts that are not currently part of <a href="http://webconcepts.info/concepts/">Web concepts</a></li>
 				</ul>
-				<li>It also is possible to add new concepts that are not currently part of <a href="http://webconcepts.info/concepts/">Web concepts</a></li>
 			</slide>
 			<slide id="mixing-representations">
 				<title>Mixing Representations</title>
