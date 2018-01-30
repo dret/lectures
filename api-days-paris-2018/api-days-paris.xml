@@ -257,20 +257,28 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="apiconcepts">
-			<title>API Concepts</title>
-			<slide id="usage">
-				<title>From Guidance to Usage</title>
-			</slide>
-		</part>
-		<part id="monitoring">
-			<title>Web Concept Harvesting</title>
-			<slide id="monitoring">
-				<title>From Guidance to Monitoring</title>
-			</slide>
-		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="next-steps">
+				<title>But What Now? Help Web Concepts!</title>
+				<ul>
+					<li>Web concepts is a starting point of shared standards</li>
+					<ul>
+						<li>Meant to represent ongoing developments in the global community</li>
+						<li>Not meant to represent individual preferences or additions or usage</li>
+					</ul>
+					<li>Make Web concepts easier to use, reuse, and tweak</li>
+					<ul>
+						<li>Fork <a href="https://github.com/dret/webconcepts">Web concepts</a> and remove unused building blocks</li>
+						<li>Add building blocks in the form of other standards or inhouse definitions</li>
+					</ul>
+					<li>Make Web concepts easier to relate to usage information</li>
+					<ul>
+						<li>Develop ways to capture and reuse concept usage for individual APIs</li>
+						<li>Collect and present usage across APIs to track landscape evolution</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
