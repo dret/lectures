@@ -172,7 +172,16 @@
 			<slide id="design-guidelines">
 				<title>The Middle Ground: Guide and Help</title>
 				<ul>
-					<li><a href="http://apistylebook.com/design/guidelines/" title="API Stylebook: Design Guidelines">Design Guidelines</a></li>
+					<li>Create <a href="http://apistylebook.com/design/guidelines/" title="API Stylebook: Design Guidelines">Design Guidelines</a> that teams can use</li>
+					<ul>
+						<li>Ideally based on existing practice</li>
+						<li>Ideally continuously changed based on the evolving landscape</li>
+					</ul>
+					<li>Writing as a form of communication</li>
+					<ul>
+						<li>Writing guidelines forces teams to talk about design practices</li>
+						<li>Reading guidelines allows teams to understand the current practice</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="design-culture">
