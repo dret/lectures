@@ -281,6 +281,11 @@
 						<li>Represent problem reports in APIs with <code href="http://webconcepts.info/concepts/media-type/application/problem+json">application/problem+json</code></li>
 						<li>Represent status information about APIs with <code href="http://webconcepts.info/concepts/media-type/application/vnd.health+json">application/vnd.health+json</code></li>
 					</ul>
+					<li>APIs <em>always</em> are a mixed design of existing and new language elements</li>
+					<ul>
+						<li>Using existing language elements helps understanding but constrains the design space</li>
+						<li>Inventing new language elements allows design freedom but is harder for API users</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
