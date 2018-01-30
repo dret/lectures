@@ -156,9 +156,18 @@
 			</slide>
 			<slide id="msa-enlightenment">
 				<title>Microservices: Enlightenment</title>
-			</slide>
-			<slide id="msa-babylon">
-				<title>Microservices: The Threat of Babylon</title>
+				<ul>
+					<li>The first time enterprise IT <q>gets the Web</q></li>
+					<ul>
+						<li>Decouple implementations for speed and agility at scale</li>
+						<li>Embrace diversity so that teams can focus on solving problems</li>
+					</ul>
+					<li>What do microservices mean for scale and longevity?</li>
+					<ul>
+						<li>Design decisions need context for the best possible products</li>
+						<li><q>Designing into the void</q> never is the best strategy</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="design-guidelines">
 				<title>The Middle Ground: Guide and Help</title>
