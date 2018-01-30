@@ -255,7 +255,10 @@
 			<slide id="reusing-representations">
 				<title>Reusing Representations</title>
 				<ul>
-					<li><code href="http://webconcepts.info/concepts/media-type/application/json">application/json</code></li>
+					<li>Using <code href="http://webconcepts.info/concepts/media-type/application/json">application/json</code> helps to not reinvent the wheel</li>
+					<li>Many core standards are horizontal in nature</li>
+					<li>Some domains may have vertical standards they can reuse</li>
+					<li>Even vertical standards often can be extended for service-specific features</li>
 				</ul>
 			</slide>
 			<slide id="adding-representations">
@@ -273,6 +276,7 @@
 			<slide id="mixing-representations">
 				<title>Mixing Representations</title>
 				<ul>
+					<li>Certain problems can be </li>
 					<li><code href="http://webconcepts.info/concepts/media-type/application/problem+json">application/problem+json</code></li>
 				</ul>
 			</slide>
