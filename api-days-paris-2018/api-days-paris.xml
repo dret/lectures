@@ -147,7 +147,11 @@
 						<li>Developers exposed implementation internals as <em>Web services</em></li>
 						<li>Many APIs were exposed from a shared monolithic codebase</li>
 					</ul>
-					<li></li>
+					<li>SOAPy SOA promised webby nirvana without delivering</li>
+					<ul>
+						<li>The main failure was the lack of focus on <em>loosely coupled implementation</em></li>
+						<li>Evolution needs <em>ecosystems</em> where individuals can flourish or wane</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="msa-enlightenment">
