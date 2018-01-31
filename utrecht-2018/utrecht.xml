@@ -35,17 +35,15 @@
 				<tr>
 					<th valign="bottom">Subject</th>
 					<th valign="bottom">Slides</th>
-					<th valign="bottom">Additional Resources</th>
 				</tr>
 			</thead>
 			<tbody>
 				<hotspot:for-each-presentation>
 					<tr class="vevent">
 						<td valign="top">
-							<b><span class="summary"><hotspot:title/></span><span class="toggle">:</span></b> <span class="toggle"><span class="description"><hotspot:toc class="abstract"/></span></span>
+							<b><span class="summary"><hotspot:title/></span></b>
 						</td>
 						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
-						<td align="center"><hotspot:toc class="resources"/></td>
 					</tr>
 				</hotspot:for-each-presentation>
 			</tbody>
@@ -53,12 +51,6 @@
 	</toc>
 	<presentation id="webconcepts">
 		<title>Sharing API Language Building Blocks</title>
-		<toc class="abstract">APIs establish a language between providers and consumers of the provided service. The more this language can be based on well-known vocabularies, the easier it is to design this language for the API provider, and to understand the language for the API consumer. Web Concepts provide a starting point for such a "shared vocabulary", and can be constrained or extended depending on API provider needs. This presentation looks at the general idea of "API as languages", provides a brief overview of the "language components" currently available via <a href="http://webconcepts.info/"><code>http://webconcepts.info/</code></a>, and presents ways how these concepts can be tailored to address the needs of API managers and developers.</toc>
-		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="http://webconcepts.info/">Web Concepts</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 		<part id="introduction">
 			<title>Introduction</title>
 			<slide id="dret">
