@@ -54,7 +54,8 @@
 	<presentation id="webconcepts">
 		<title>Sharing API Language Building Blocks</title>
 		<toc class="abstract">APIs establish a language between providers and consumers of the provided service. The more this language can be based on well-known vocabularies, the easier it is to design this language for the API provider, and to understand the language for the API consumer. Web Concepts provide a starting point for such a "shared vocabulary", and can be constrained or extended depending on API provider needs. This presentation looks at the general idea of "API as languages", provides a brief overview of the "language components" currently available via <a href="http://webconcepts.info/"><code>http://webconcepts.info/</code></a>, and presents ways how these concepts can be tailored to address the needs of API managers and developers.</toc>
-		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>		<slide id="summary">
+		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="http://webconcepts.info/">Web Concepts</a></toc>
+		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
