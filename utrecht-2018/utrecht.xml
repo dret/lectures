@@ -250,13 +250,14 @@
 					</ol>
 				</ul>
 			</slide>
-			<slide id="specs">
-				<title>Specifications</title>
-				<listing src="specs.json" line="2-21"/>
-			</slide>
 			<slide id="concepts">
 				<title>Concepts</title>
-				<listing src="concepts.json" line="3-19"/>
+			</slide>
+			<slide id="specs">
+				<title>Specifications</title>
+			</slide>
+			<slide id="values">
+				<title>Values</title>
 			</slide>
 		</part>
 		<part id="example">
