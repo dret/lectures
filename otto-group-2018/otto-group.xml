@@ -29,7 +29,7 @@
 	<copyright>2018 Erik Wilde</copyright>
 	<presentation id="index">
 		<title>APIs: The Big Picture</title>
-		<toc class="abstract">...</toc>
+		<toc class="abstract">APIs are a hot topic nowadays, but it helps to take a step back and reflect on the reasons. These reasons can inform necessary choices about how to design and manage individual APIs, and the resulting API landscapes that organizations create over time. The current move towards Microservices makes this picture even more complex, but on the other hand allows organizations to balance speed and safety when planning and executing their digital transformation journeys. This presentation looks at issues such as API design, management, and security, and puts them into the context of the big picture of how individual APIs go through maturity phases, and how the whole API landscape has to evolve alongside.</toc>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 		<affiliation><a href="http://www.apiacademy.co/">API Academy</a>, <a href="http://www.ca.com/">CA Technologies</a></affiliation>
 		<slide id="summary">
