@@ -49,8 +49,8 @@
 			</tbody>
 		</table>
 	</toc>
-	<presentation id="webconcepts">
-		<title>Sharing API Language Building Blocks</title>
+	<presentation id="awesomeness">
+		<title>Achieving API Awesomeness</title>
 		<part id="introduction">
 			<title>Introduction</title>
 			<slide id="dret">
@@ -104,6 +104,198 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="awesome-apis">
+			<title>Awesome APIs</title>
+			<slide id="api-excellence">
+				<title>API Excellence</title>
+				<img title='Digital McKinsey: "What it really takes to capture the value of APIs" by Keerthi Iyengar, Somesh Khanna, Srinivas Ramadath, and Daniel Stephens; September 2017' href="http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/what-it-really-takes-to-capture-the-value-of-apis" src="mckinsey-api-coe.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="excellence">
+				<title>Excellence as a Service</title>
+				<ul>
+					<li>What matters for an <em>API Center of Excellence (CoE)</em>?</li>
+					<ul>
+						<li>Should excellence sit in CoE and be created/managed/delivered from there?</li>
+						<li>Should the CoE be a <em>service</em> to enable all teams achieving excellence?</li>
+					</ul>
+					<li>API landscapes are <em>ecosystems</em> that need <em>cultivation</em></li>
+					<ul>
+						<li><em>Ecosystems</em> value diversity to improve fitness over time</li>
+						<li><em>Cultivation</em> is a continuous process of feedback and improvement</li>
+					</ul>
+					<li>Culture evolves over time as a set of shared practices</li>
+					<ul>
+						<li><em>Culture</em> is a set of shared <em>do</em> and <em>don't</em> rules</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="webby-amazon">
+				<title>Web Culture: Webby Service Design</title>
+				<img title="Webby Amazon" src="webby-amazon.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-patterns">
+				<title>Emerging Patterns</title>
+				<ul>
+					<li>Self-description for APIs is increasing</li>
+					<li><a href="http://webconcepts.info/specs/IETF/RFC/7807">Problem details</a> as a way how APIs expose error information</li>
+					<ul>
+						<li>Enables generic error handling but also allows additional information</li>
+					</ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/nottingham-json-home">Home documents</a> as a way how APIs provide starting pages</li>
+					<ul>
+						<li>Enables harvesting of API start points but also allows additional information</li>
+					</ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/inadarei-api-health-check">Healthcheck reports</a> as a way how APIs expose status information</li>
+					<ul>
+						<li>Enables landscape-level status reports but also allows additional information</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="landscape-dx">
+				<title>APIs and API Landscapes</title>
+				<ul>
+					<li><em>Design Patterns</em> make designing APIs easier</li>
+					<li><em>Design Patterns</em> make navigating landscapes easier</li>
+					<li><em>Design Patterns</em> are continually evolving vocabularies</li>
+					<li><em>Design Patterns</em> should reflect product needs</li>
+					<ul>
+						<li><em>Why</em> a product should have certain properties/capabilities</li>
+						<li><em>What</em> can be done to address these issues</li>
+						<li><em>How</em> a team may choose to implement the resolution</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-stylebook">
+				<title>API Stylebook: Error Format</title>
+				<img title="API Stylebook: Error Format" href="http://apistylebook.com/design/topics/http-status-standard-error" src="apistylebook-http-status-standard-error.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-management">
+				<title>Excellent API Management → Awesome APIs</title>
+				<ol>
+					<li>Easy to design → <em>Design Scope and Vocabulary</em></li>
+					<li>Easy to implement → <em>Useful Components</em></li>
+					<li>Easy to discover → <em>Rich Description</em></li>
+					<li>Easy to use → <em>Rich Documentation</em></li>
+					<li>Easy to control → <em>Connective Fabric Instrumentation</em></li>
+					<li>Easy to combine → <em>Coherent Designs</em></li>
+					<li>Easy to change → <em>Open Design</em></li>
+					<li>Easy to withdraw → <em>Lifecycle Thinking</em></li>
+				</ol>
+			</slide>
+		</part>
+		<part id="interface-implementation">
+			<title>Interface ≠ Implementation</title>
+			<slide id="design-eames">
+				<title>Design and Constraints</title>
+				<blockquote><q href="http://www.markwunsch.com/eames">Design depends largely on constraints.</q> (<a href="https://en.wikipedia.org/wiki/Charles_and_Ray_Eames">Charles Eames</a>)</blockquote>
+				<ul>
+					<li><q>Why</q> are constraints driven by business and/or client needs</li>
+					<li><q>What</q> should be design patterns addressing the constraints</li>
+					<li><q>How</q> should be support/tools for implementing the <q>what</q></li>
+				</ul>
+			</slide>
+			<slide id="apis-interfaces">
+				<title>APIs are Interfaces</title>
+				<img title='There are no "Microservice APIs"' src="mugatu-microservices-api.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="microservices-culture">
+				<title>Changing Culture</title>
+				<ul>
+					<li>Microservices are changing the way APIs are implemented and managed</li>
+					<ul>
+						<li>Velocity as the main goal</li>
+						<li>More design freedom for product teams (APIs <em>and</em> implementation)</li>
+						<li>More complex runtime needs (diversity requires operational excellence)</li>
+					</ul>
+					<li>Enterprise IT has discovered <em href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>loose coupling</em> and called it <q>Microservices</q></li>
+					<ul>
+						<li>Individuals and interactions over processes and tools</li>
+						<li>Working software over comprehensive documentation</li>
+						<li>Customer collaboration over contract negotiation</li>
+						<li>Responding to change over following a plan</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="microservices-landscape">
+				<title>A Microservices Landscape</title>
+				<img title="By Lachlan Donald from Melbourne, Australia (Sharpest tool in the shed) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AHuge_collection_of_tools_in_a_store_in_Chloride%2C_a_ghost_town_in_New_Mexico%2C_USA_-_July_2013.jpg" src="microservices-reality.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="api-change-management">
+			<title>Example: API Change Management</title>
+			<slide id="api-change-strategy">
+				<title>API Change Management in API Strategy</title>
+				<ul>
+					<li>API change management becomes increasingly important</li>
+					<ul>
+						<li>Microservices optimize for quick design/deployment/development/decommissioning</li>
+						<li>Even in MSA-land there are <em>Experience APIs</em> meant to deliver some API stability</li>
+					</ul>
+					<li>APIs can change in terms of features and will be decommissioned at some point</li>
+					<ul>
+						<li><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Robust extensibility</a> helps to facilitate non-breaking API changes</li>
+						<li><em>Hypermedia</em> helps as a pattern to move extensibility beyond data models</li>
+						<li><a href="http://semver.org/">Semantic versioning</a> may be used to keep track of API changes</li>
+					</ul>
+					<li>Always follow the <em>why/what/how</em> triad for API strategy</li>
+					<ul>
+						<li><em>Why:</em> Somebody (myself/consumers) is interested in how an API will change</li>
+						<li><em>What:</em> Follow principles/patterns/protocols to manage/expose API changes</li>
+						<li><em>How:</em> Support tooling/services to implement and test pattern behavior</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="sunset-patterns">
+				<title>HTTP <code>Sunset</code>: An Even Simpler Example</title>
+				<ul>
+					<li><em>API Documentation</em> guidelines may ask for change management documentation</li>
+					<ul>
+						<li>Requirement: Can be as simple as making documentation discoverable on deploy</li>
+						<li>Resolution: Can be as simple as stating that there is no change management</li>
+					</ul>
+					<li><em>Discoverability</em> and <em>machine-readability</em> are different issues</li>
+					<ul>
+						<li>Making description resources <em>discoverable</em> can be validated during deployment</li>
+						<li>Every API entering the landscape must make change management documentation discoverable</li>
+						<li>For some classes of APIs/services additional requirements may be put in place</li>
+					</ul>
+					<li>One possible requirement is that <em>Public APIs</em> must support <code href="http://webconcepts.info/concepts/http-header/Sunset">Sunset</code></li>
+					<ul>
+						<li>Services must document/describe the support of <code>Sunset</code></li>
+						<li>Services may implement <code>Sunset</code> any way they like</li>
+						<li>The simplest option may be <em><code>Sunset</code> policies</em> on a gateway</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="capability-sedimentation">
+				<title>Capability Sedimentation</title>
+				<img title="Capability Sedimentation" src="capability-sedimentation.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="devops-apis">
+				<title>DevOps Your APIs!</title>
+				<ul>
+					<li>APIs increasingly turn into central business assets</li>
+					<li>Do not mix interface and implementation issues</li>
+					<li>Have a <em>lifecycle perspective</em> of API management</li>
+				</ul>
+			</slide>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/utrecht-2018"><code>dret.net/lectures/utrecht-2018</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/utrecht-2018"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="webconcepts">
+		<title>Sharing API Language Building Blocks</title>
 		<part id="api-languages">
 			<title>APIs are Languages</title>
 			<slide id="what-is-an-api">
@@ -324,198 +516,6 @@
 						<li>Develop ways to capture and reuse concept usage for individual APIs</li>
 						<li>Collect and present usage across APIs to track landscape evolution</li>
 					</ul>
-				</ul>
-			</slide>
-			<slide id="q-and-a">
-				<title>Thanks! Q&amp;A</title>
-				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
-				<ul>
-					<li>Slides online: <a href="http://dret.net/lectures/utrecht-2018"><code>dret.net/lectures/utrecht-2018</code></a></li>
-					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/utrecht-2018"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
-					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
-					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
-				</ul>
-			</slide>
-		</part>
-	</presentation>
-	<presentation id="awesomeness">
-		<title>Achieving API Awesomeness</title>
-		<part id="awesome-apis">
-			<title>Awesome APIs</title>
-			<slide id="api-excellence">
-				<title>API Excellence</title>
-				<img title='Digital McKinsey: "What it really takes to capture the value of APIs" by Keerthi Iyengar, Somesh Khanna, Srinivas Ramadath, and Daniel Stephens; September 2017' href="http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/what-it-really-takes-to-capture-the-value-of-apis" src="mckinsey-api-coe.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="excellence">
-				<title>Excellence as a Service</title>
-				<ul>
-					<li>What matters for an <em>API Center of Excellence (CoE)</em>?</li>
-					<ul>
-						<li>Should excellence sit in CoE and be created/managed/delivered from there?</li>
-						<li>Should the CoE be a <em>service</em> to enable all teams achieving excellence?</li>
-					</ul>
-					<li>API landscapes are <em>ecosystems</em> that need <em>cultivation</em></li>
-					<ul>
-						<li><em>Ecosystems</em> value diversity to improve fitness over time</li>
-						<li><em>Cultivation</em> is a continuous process of feedback and improvement</li>
-					</ul>
-					<li>Culture evolves over time as a set of shared practices</li>
-					<ul>
-						<li><em>Culture</em> is a set of shared <em>do</em> and <em>don't</em> rules</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="webby-amazon">
-				<title>Web Culture: Webby Service Design</title>
-				<img title="Webby Amazon" src="webby-amazon.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="api-patterns">
-				<title>Emerging Patterns</title>
-				<ul>
-					<li>Self-description for APIs is increasing</li>
-					<li><a href="http://webconcepts.info/specs/IETF/RFC/7807">Problem details</a> as a way how APIs expose error information</li>
-					<ul>
-						<li>Enables generic error handling but also allows additional information</li>
-					</ul>
-					<li><a href="http://webconcepts.info/specs/IETF/I-D/nottingham-json-home">Home documents</a> as a way how APIs provide starting pages</li>
-					<ul>
-						<li>Enables harvesting of API start points but also allows additional information</li>
-					</ul>
-					<li><a href="http://webconcepts.info/specs/IETF/I-D/inadarei-api-health-check">Healthcheck reports</a> as a way how APIs expose status information</li>
-					<ul>
-						<li>Enables landscape-level status reports but also allows additional information</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="landscape-dx">
-				<title>APIs and API Landscapes</title>
-				<ul>
-					<li><em>Design Patterns</em> make designing APIs easier</li>
-					<li><em>Design Patterns</em> make navigating landscapes easier</li>
-					<li><em>Design Patterns</em> are continually evolving vocabularies</li>
-					<li><em>Design Patterns</em> should reflect product needs</li>
-					<ul>
-						<li><em>Why</em> a product should have certain properties/capabilities</li>
-						<li><em>What</em> can be done to address these issues</li>
-						<li><em>How</em> a team may choose to implement the resolution</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="api-stylebook">
-				<title>API Stylebook: Error Format</title>
-				<img title="API Stylebook: Error Format" href="http://apistylebook.com/design/topics/http-status-standard-error" src="apistylebook-http-status-standard-error.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="api-management">
-				<title>Excellent API Management → Awesome APIs</title>
-				<ol>
-					<li>Easy to design → <em>Design Scope and Vocabulary</em></li>
-					<li>Easy to implement → <em>Useful Components</em></li>
-					<li>Easy to discover → <em>Rich Description</em></li>
-					<li>Easy to use → <em>Rich Documentation</em></li>
-					<li>Easy to control → <em>Connective Fabric Instrumentation</em></li>
-					<li>Easy to combine → <em>Coherent Designs</em></li>
-					<li>Easy to change → <em>Open Design</em></li>
-					<li>Easy to withdraw → <em>Lifecycle Thinking</em></li>
-				</ol>
-			</slide>
-		</part>
-		<part id="interface-implementation">
-			<title>Interface ≠ Implementation</title>
-			<slide id="design-eames">
-				<title>Design and Constraints</title>
-				<blockquote><q href="http://www.markwunsch.com/eames">Design depends largely on constraints.</q> (<a href="https://en.wikipedia.org/wiki/Charles_and_Ray_Eames">Charles Eames</a>)</blockquote>
-				<ul>
-					<li><q>Why</q> are constraints driven by business and/or client needs</li>
-					<li><q>What</q> should be design patterns addressing the constraints</li>
-					<li><q>How</q> should be support/tools for implementing the <q>what</q></li>
-				</ul>
-			</slide>
-			<slide id="apis-interfaces">
-				<title>APIs are Interfaces</title>
-				<img title='There are no "Microservice APIs"' src="mugatu-microservices-api.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="microservices-culture">
-				<title>Changing Culture</title>
-				<ul>
-					<li>Microservices are changing the way APIs are implemented and managed</li>
-					<ul>
-						<li>Velocity as the main goal</li>
-						<li>More design freedom for product teams (APIs <em>and</em> implementation)</li>
-						<li>More complex runtime needs (diversity requires operational excellence)</li>
-					</ul>
-					<li>Enterprise IT has discovered <em href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>loose coupling</em> and called it <q>Microservices</q></li>
-					<ul>
-						<li>Individuals and interactions over processes and tools</li>
-						<li>Working software over comprehensive documentation</li>
-						<li>Customer collaboration over contract negotiation</li>
-						<li>Responding to change over following a plan</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="microservices-landscape">
-				<title>A Microservices Landscape</title>
-				<img title="By Lachlan Donald from Melbourne, Australia (Sharpest tool in the shed) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AHuge_collection_of_tools_in_a_store_in_Chloride%2C_a_ghost_town_in_New_Mexico%2C_USA_-_July_2013.jpg" src="microservices-reality.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-		</part>
-		<part id="api-change-management">
-			<title>Example: API Change Management</title>
-			<slide id="api-change-strategy">
-				<title>API Change Management in API Strategy</title>
-				<ul>
-					<li>API change management becomes increasingly important</li>
-					<ul>
-						<li>Microservices optimize for quick design/deployment/development/decommissioning</li>
-						<li>Even in MSA-land there are <em>Experience APIs</em> meant to deliver some API stability</li>
-					</ul>
-					<li>APIs can change in terms of features and will be decommissioned at some point</li>
-					<ul>
-						<li><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Robust extensibility</a> helps to facilitate non-breaking API changes</li>
-						<li><em>Hypermedia</em> helps as a pattern to move extensibility beyond data models</li>
-						<li><a href="http://semver.org/">Semantic versioning</a> may be used to keep track of API changes</li>
-					</ul>
-					<li>Always follow the <em>why/what/how</em> triad for API strategy</li>
-					<ul>
-						<li><em>Why:</em> Somebody (myself/consumers) is interested in how an API will change</li>
-						<li><em>What:</em> Follow principles/patterns/protocols to manage/expose API changes</li>
-						<li><em>How:</em> Support tooling/services to implement and test pattern behavior</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="sunset-patterns">
-				<title>HTTP <code>Sunset</code>: An Even Simpler Example</title>
-				<ul>
-					<li><em>API Documentation</em> guidelines may ask for change management documentation</li>
-					<ul>
-						<li>Requirement: Can be as simple as making documentation discoverable on deploy</li>
-						<li>Resolution: Can be as simple as stating that there is no change management</li>
-					</ul>
-					<li><em>Discoverability</em> and <em>machine-readability</em> are different issues</li>
-					<ul>
-						<li>Making description resources <em>discoverable</em> can be validated during deployment</li>
-						<li>Every API entering the landscape must make change management documentation discoverable</li>
-						<li>For some classes of APIs/services additional requirements may be put in place</li>
-					</ul>
-					<li>One possible requirement is that <em>Public APIs</em> must support <code href="http://webconcepts.info/concepts/http-header/Sunset">Sunset</code></li>
-					<ul>
-						<li>Services must document/describe the support of <code>Sunset</code></li>
-						<li>Services may implement <code>Sunset</code> any way they like</li>
-						<li>The simplest option may be <em><code>Sunset</code> policies</em> on a gateway</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="capability-sedimentation">
-				<title>Capability Sedimentation</title>
-				<img title="Capability Sedimentation" src="capability-sedimentation.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-		</part>
-		<part id="conclusions">
-			<title>Conclusions</title>
-			<slide id="devops-apis">
-				<title>DevOps Your APIs!</title>
-				<ul>
-					<li>APIs increasingly turn into central business assets</li>
-					<li>Do not mix interface and implementation issues</li>
-					<li>Have a <em>lifecycle perspective</em> of API management</li>
 				</ul>
 			</slide>
 			<slide id="q-and-a">
