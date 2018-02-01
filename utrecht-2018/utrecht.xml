@@ -369,6 +369,24 @@
 				<title>Web Culture: Webby Service Design</title>
 				<img title="Webby Amazon" src="webby-amazon.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="api-patterns">
+				<title>Emerging Patterns</title>
+				<ul>
+					<li>Self-description for APIs is increasing</li>
+					<li><a href="http://webconcepts.info/specs/IETF/RFC/7807">Problem details</a> as a way how APIs expose error information</li>
+					<ul>
+						<li>Enables generic error handling but also allows additional information</li>
+					</ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/nottingham-json-home">Home documents</a> as a way how APIs provide starting pages</li>
+					<ul>
+						<li>Enables harvesting of API start points but also allows additional information</li>
+					</ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/inadarei-api-health-check">Healthcheck reports</a> as a way how APIs expose status information</li>
+					<ul>
+						<li>Enables landscape-level status reports but also allows additional information</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="landscape-dx">
 				<title>APIs and API Landscapes</title>
 				<ul>
