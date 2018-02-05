@@ -208,6 +208,21 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="api-styles">
+				<title>API Styles are Language Families</title>
+				<ul>
+					<li><em>API styles</em> are chosen based on needs and/or preferences</li>
+					<ul>
+						<li><em>RPC</em> is based on traditional distributed system design</li>
+						<li><em>HTTP CRUD</em> uses HTTP but without going <q>all the way</q></li>
+						<li><em>REST</em> represents Web architecture by using hypermedia</li>
+						<li><em>Query</em> assumes that clients know best what they want</li>
+						<li><em>Event-based</em> is based on event messages and PubSub</li>
+					</ul>
+					<li>Each style leaves a lot of design freedom and responsibilities</li>
+					<li>Each style has different design elements for API design</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
