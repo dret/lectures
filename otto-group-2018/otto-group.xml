@@ -224,6 +224,72 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="landscaping">
+			<title>API Landscaping</title>
+			<slide id="api-excellence">
+				<title>API Excellence</title>
+				<img title='Digital McKinsey: "What it really takes to capture the value of APIs" by Keerthi Iyengar, Somesh Khanna, Srinivas Ramadath, and Daniel Stephens; September 2017' href="http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/what-it-really-takes-to-capture-the-value-of-apis" src="mckinsey-api-coe.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="excellence">
+				<title>Excellence as a Service</title>
+				<ul>
+					<li>What matters for an <em>API Center of Excellence (CoE)</em>?</li>
+					<ul>
+						<li>Should excellence sit in CoE and be created/managed/delivered from there?</li>
+						<li>Should the CoE be a <em>service</em> to enable all teams achieving excellence?</li>
+					</ul>
+					<li>API landscapes are <em>ecosystems</em> that need <em>cultivation</em></li>
+					<ul>
+						<li><em>Ecosystems</em> value diversity to improve fitness over time</li>
+						<li><em>Cultivation</em> is a continuous process of feedback and improvement</li>
+					</ul>
+					<li>Culture evolves over time as a set of shared practices</li>
+					<ul>
+						<li><em>Culture</em> is a set of shared <em>do</em> and <em>don't</em> rules</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="webby-amazon">
+				<title>Web Culture: Webby Service Design</title>
+				<img title="Webby Amazon" src="webby-amazon.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-patterns">
+				<title>Emerging Patterns</title>
+				<ul>
+					<li>Self-description for APIs is increasing</li>
+					<li><a href="http://webconcepts.info/specs/IETF/RFC/7807">Problem details</a> as a way how APIs expose error information</li>
+					<ul>
+						<li>Enables generic error handling but also allows additional information</li>
+					</ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/nottingham-json-home">Home documents</a> as a way how APIs provide starting pages</li>
+					<ul>
+						<li>Enables harvesting of API start points but also allows additional information</li>
+					</ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/inadarei-api-health-check">Healthcheck reports</a> as a way how APIs expose status information</li>
+					<ul>
+						<li>Enables landscape-level status reports but also allows additional information</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="landscape-dx">
+				<title>APIs and API Landscapes</title>
+				<ul>
+					<li><em>Design Patterns</em> make designing APIs easier</li>
+					<li><em>Design Patterns</em> make navigating landscapes easier</li>
+					<li><em>Design Patterns</em> are continually evolving vocabularies</li>
+					<li><em>Design Patterns</em> should reflect product needs</li>
+					<ul>
+						<li><em>Why</em> a product should have certain properties/capabilities</li>
+						<li><em>What</em> can be done to address these issues</li>
+						<li><em>How</em> a team may choose to implement the resolution</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-stylebook">
+				<title>API Stylebook: Error Format</title>
+				<img title="API Stylebook: Error Format" href="http://apistylebook.com/design/topics/http-status-standard-error" src="apistylebook-http-status-standard-error.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
