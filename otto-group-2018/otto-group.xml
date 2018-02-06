@@ -202,21 +202,6 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide id="design-guidelines">
-				<title>The Middle Ground: Guide and Help</title>
-				<ul>
-					<li>Create <a href="http://apistylebook.com/design/guidelines/" title="API Stylebook: Design Guidelines">Design Guidelines</a> that teams can use</li>
-					<ul>
-						<li>Ideally based on existing practice</li>
-						<li>Ideally continuously changed based on the evolving landscape</li>
-					</ul>
-					<li>Writing as a form of communication</li>
-					<ul>
-						<li>Maintaining guidelines encourages teams to talk about design practices</li>
-						<li>Reading guidelines allows teams to understand the current practice</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="design-culture">
 				<title>Language and Design and Culture</title>
 				<ul>
@@ -254,6 +239,21 @@
 		</part>
 		<part id="landscaping">
 			<title>API Landscaping</title>
+			<slide id="design-guidelines">
+				<title>The Middle Ground: Guide and Help</title>
+				<ul>
+					<li>Create <a href="http://apistylebook.com/design/guidelines/" title="API Stylebook: Design Guidelines">Design Guidelines</a> that teams can use</li>
+					<ul>
+						<li>Ideally based on existing practice</li>
+						<li>Ideally continuously changed based on the evolving landscape</li>
+					</ul>
+					<li>Writing as a form of communication</li>
+					<ul>
+						<li>Maintaining guidelines encourages teams to talk about design practices</li>
+						<li>Reading guidelines allows teams to understand the current practice</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="api-excellence">
 				<title>API Excellence</title>
 				<img title='Digital McKinsey: "What it really takes to capture the value of APIs" by Keerthi Iyengar, Somesh Khanna, Srinivas Ramadath, and Daniel Stephens; September 2017' href="http://www.mckinsey.com/business-functions/digital-mckinsey/our-insights/what-it-really-takes-to-capture-the-value-of-apis" src="mckinsey-api-coe.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
