@@ -27,7 +27,7 @@
 	<title>API Academy London 2018</title>
 	<presentation id="index">
 		<title>Changing APIs at Microservices Scale</title>
-		<toc class="abstract">...</toc>
+		<toc class="abstract">One of the challenges of modern Microservices Architecture is a less centralized locus of design and development. Nurturing a more decentralized way of designing, developing, and evolving services is one of the key value propositions of microservices, and thus this challenge should not be perceived as a "problem to be fixed." Instead, the approach should be to look at a way of how services can be more loosely coupled, so that the traditionally more centralized models of design and evolution can be replaced with techniques that are better suited in the new environment. At a high level, it is all about reducing the need and the desire to control and guide teams in a traditional command-and-control way. Instead, the goal is to empower teams to make their own decisions about design and evolution, but to give them the tools and the support that help them to succeed. This presentation looks at some of the typical differences between a more traditional design/evolve cycle, and one where architecture takes on a more fluid and flexible role, and not one that's rigid and couples services tightly.</toc>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 		<affiliation><a href="http://www.apiacademy.co/">API Academy</a>, <a href="http://www.ca.com/">CA Technologies</a></affiliation>
 		<date short="2018-02-28">February 28, 2018</date>
