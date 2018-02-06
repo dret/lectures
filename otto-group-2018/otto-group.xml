@@ -95,12 +95,12 @@
 		</part>
 		<part id="why">
 			<title>Why APIs?</title>
-			<slide id="perspectives">
-				<title>Two Perspectives</title>
+			<slide id="api-cargo-cult">
+				<title>The Wonders of APIs</title>
 				<img title="API Cargo Cult" src="apis-make-things-happen.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="internal-external">
-				<title>Two Views of API Scope/Focus</title>
+				<title>Two Perspectives of API Scope/Focus</title>
 				<ul>
 					<li><em>Internal:</em> Using APIs to break up monolithic systems</li>
 					<ul>
@@ -114,8 +114,8 @@
 					</ul>
 					<li>Both views are complementary and mostly a difference in perspective</li>
 					<ul>
-						<li>The <em>internal view</em> tends to gravitate towards <q>building a system</q></li>
-						<li>The <em>external view</em> tends to ignore the complexities of decentralization</li>
+						<li>The <em>internal perspective</em> tends to gravitate towards <q>building a system</q></li>
+						<li>The <em>external perspective</em> tends to ignore the complexities of decentralization</li>
 					</ul>
 				</ul>
 			</slide>
