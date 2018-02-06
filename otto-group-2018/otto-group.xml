@@ -99,6 +99,22 @@
 				<title>Two Perspectives</title>
 				<img title="API Cargo Cult" src="apis-make-things-happen.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="internal-external">
+				<title>Two Views of API Scope/Focus</title>
+				<ul>
+					<li><em>Internal:</em> Using APIs to break up monolithic systems</li>
+					<ul>
+						<li>Focus on <em>systems/software engineering</em> and better modularization</li>
+						<li><q>Turn a system into an ecosystem.</q></li>
+					</ul>
+					<li><em>External:</em> Using APIs to build up ecosystems</li>
+					<ul>
+						<li>Focus on <em>distributed/decentralized systems</em> and better connectivity</li>
+						<li><q>Enable an ecosystem by loosely coupling systems.</q></li>
+					</ul>
+					<li>Both views are complementary and mostly a difference in perspective</li>
+				</ul>
+			</slide>
 			<slide>
 				<title>APIs Serve a Purpose</title>
 				<blockquote><q>Do not try to find the right business model for your APIs; instead, try to find the right APIs for your business model.</q></blockquote>
