@@ -1,10 +1,10 @@
 # APIs: The Big Picture
 
-## Otto Group API Event
+## Otto Group API Best Practice Club (BCP)
 
 ### February 7, 2018
 
-Slides for the presentation at Otto Group API Event, Berlin, Germany, February 7, 2018.
+Slides for the presentation at Otto Group API Best Practice Club (BCP), Berlin, Germany, February 7, 2018.
 
 
 ## License
