@@ -24,12 +24,32 @@
 			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
 		</div>
 	</license>
-	<title>Politecnico di Milano</title>
+	<title>API Course Politecnico di Milano</title>
 	<date short="2018-03-28">March 28, 2018</date>
 	<copyright>2018 Erik Wilde</copyright>
 	<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 	<affiliation><a href="http://www.apiacademy.co/">API Academy</a>, <a href="http://www.ca.com/">CA Technologies</a></affiliation>
-	<presentation id="index">
+	<toc name="toc.html">
+		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
+			<thead>
+				<tr>
+					<th valign="bottom">Subject</th>
+					<th valign="bottom">Slides</th>
+					<th valign="bottom">Additional Resources</th>
+				</tr>
+			</thead>
+			<tbody>
+				<hotspot:for-each-presentation>
+					<tr class="vevent">
+						<td valign="top"><b><span class="summary"><hotspot:title/></span></b></td>
+						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+						<td align="center"><hotspot:toc class="resources"/></td>
+					</tr>
+				</hotspot:for-each-presentation>
+			</tbody>
+		</table>
+	</toc>
+	<presentation id="introduction">
 		<title>Introduction to APIs</title>
 		<part id="introduction">
 			<title>Introduction</title>
@@ -84,6 +104,54 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/politecnico-2018"><code>dret.net/lectures/politecnico-2018</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/politecnico-2018"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="styles">
+		<title>API Styles</title>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/politecnico-2018"><code>dret.net/lectures/politecnico-2018</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/politecnico-2018"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="representations">
+		<title>Representations for APIs</title>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/politecnico-2018"><code>dret.net/lectures/politecnico-2018</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/politecnico-2018"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="hypermedia">
+		<title>Hypermedia and Loose Coupling</title>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
