@@ -51,7 +51,12 @@
 	</toc>
 	<presentation id="digital-transformation">
 		<title>APIs and Microservices in Digital Transformation</title>
+		<toc class="abstract">Digital Transformation is the main driver behind the trends of APIs and Microservices. Digital Transformation is the motivation and should provide the business foundation of API and Microservices initiatives and activities. This presentation takes a structured look at the "why", "what", and "how" in that space. One important goal is to prevent a "cargo cult" effect around APIs and Microservices.</toc>
 		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 		<part id="introduction">
 			<title>Introduction</title>
 			<slide id="dret">
@@ -129,7 +134,12 @@
 	</presentation>
 	<presentation id="management">
 		<title>Managing API and Microservices Landscapes</title>
+		<toc class="abstract">When embarking on a journey of digital transformation, APIs and Microservices become essential components, and they do so at a scale and velocity. As the modern software factory allows organizations to create, combine, and recombine new services, they also need to manage the production itself, as well as landscape of services they are producing. This presentation takes a look at the important parts in this process: API lifecycles, product maturity, and landscape management.</toc>
 		<toc class="resources"></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
