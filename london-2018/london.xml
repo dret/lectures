@@ -102,21 +102,39 @@
 			<title>The Six V's of Microservices</title>
 			<slide id="variety">
 				<title>Variety</title>
+				<ul>
+					<li>Increased <em>diversity</em> of the API and implementation landscape</li>
+				</ul>
 			</slide>
 			<slide id="volume">
 				<title>Volume</title>
+				<ul>
+					<li><em>More services</em> get created because there is less ceremony</li>
+				</ul>
 			</slide>
 			<slide id="velocity">
 				<title>Velocity</title>
+				<ul>
+					<li>Services <em>change more often</em> (if required) because of agile practices</li>
+				</ul>
 			</slide>
 			<slide id="visibility">
 				<title>Visibility</title>
+				<ul>
+					<li>It should be easy to <em>find and use services</em> as building blocks for new ones</li>
+				</ul>
 			</slide>
 			<slide id="vulnerability">
 				<title>Vulnerability</title>
+				<ul>
+					<li>Support <em>service security</em> so that teams can focus on value creation</li>
+				</ul>
 			</slide>
 			<slide id="volatility">
 				<title>Volatility</title>
+				<ul>
+					<li><em>Service decentralization</em> needs different dependency management models</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
