@@ -91,6 +91,26 @@
 		</part>
 		<part id="msa-why">
 			<title>Why Microservices?</title>
+			<slide id="msa-apis">
+				<title>Microservices and APIs</title>
+				<ul>
+					<li>APIs are a way to <em>loosely coupled interfaces</em></li>
+					<ul>
+						<li>APIs allow removing dependencies between components</li>
+						<li>Loose coupling is influenced by a variety of design factors</li>
+					</ul>
+					<li>Microservices are a way to <em>loosely coupled implementations</em></li>
+					<ul>
+						<li>Microservices allow implementing services with fewer constraints</li>
+						<li>APIs can be <em>anything</em> but some landscape coherence makes sense</li>
+					</ul>
+					<li><em>Microservice Architecture</em> means trying to optimize the balance</li>
+					<ul>
+						<li><em>Avoid slowing down teams</em> because of constrained design options</li>
+						<li><em>Help teams to be faster</em> by assisting their design/implementation efforts</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="apis-interfaces">
 				<title>There is no "Microservice APIs"</title>
 				<img title='There is no "Microservice API"' src="mugatu-microservices-api.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
