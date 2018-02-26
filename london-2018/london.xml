@@ -91,6 +91,12 @@
 		</part>
 		<part id="msa-why">
 			<title>Why Microservices?</title>
+			<slide id="nomonolith">
+				<title>Motivation #1: Breaking up the Monolith</title>
+			</slide>
+			<slide id="delivery-speed">
+				<title>Motivation #2: Speeding up Product Delivery</title>
+			</slide>
 			<slide id="msa-apis">
 				<title>Microservices and APIs</title>
 				<ul>
@@ -114,12 +120,6 @@
 			<slide id="apis-interfaces">
 				<title>There is no "Microservice APIs"</title>
 				<img title='There is no "Microservice API"' src="mugatu-microservices-api.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="nomonolith">
-				<title>Motivation #1: Breaking up the Monolith</title>
-			</slide>
-			<slide id="delivery-speed">
-				<title>Motivation #2: Speeding up Product Delivery</title>
 			</slide>
 		</part>
 		<part id="msa-six-v">
