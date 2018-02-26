@@ -130,12 +130,20 @@
 				<title>Variety</title>
 				<ul>
 					<li>Increased <em>diversity</em> of the API and implementation landscape</li>
+					<li>Manage API descriptions in extensible ways</li>
+					<ul>
+						<li>Your API ecosystem will evolve and new types will appear</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="volume">
 				<title>Volume</title>
 				<ul>
-					<li><em>More services</em> get created because there is less ceremony</li>
+					<li><em>More services</em> are created because there is less ceremony</li>
+					<li>Make API management part of general MSA automation efforts</li>
+					<ul>
+						<li><em>API landscaping</em> should focus on scalable methods</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="velocity">
