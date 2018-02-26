@@ -94,12 +94,12 @@
 			<slide id="msa-apis">
 				<title>Microservices and APIs</title>
 				<ul>
-					<li>APIs are a way to <em>loosely coupled interfaces</em></li>
+					<li>APIs are a way to <em>loosely coupled component interfaces</em></li>
 					<ul>
 						<li>APIs allow removing dependencies between components</li>
 						<li>Loose coupling is influenced by a variety of design factors</li>
 					</ul>
-					<li>Microservices are a way to <em>loosely coupled implementations</em></li>
+					<li>Microservices are a way to <em>loosely coupled component implementations</em></li>
 					<ul>
 						<li>Microservices allow implementing services with fewer constraints</li>
 						<li>APIs can be <em>anything</em> but some landscape coherence makes sense</li>
