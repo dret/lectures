@@ -222,6 +222,17 @@
 				<title>Volatility</title>
 				<ul>
 					<li><em>Service decentralization</em> needs different dependency management models</li>
+					<li>Less operational coherence because of DevOps and differing service levels</li>
+					<li><em>Resilient services</em> are necessary to avoid rolling failures</li>
+					<li><em>Root cause analysis</em> needs tracking through all involved services</li>
+					<ul>
+						<li>This must work at landscape level and thus needs service cooperation</li>
+					</ul>
+					<li>Change management and decommissioning are part of API landscape management</li>
+					<ul>
+						<li><em>Change management</em> may be informational only (for non-breaking changes)</li>
+						<li><em>Decommissioning</em> allows services to announce their retirement</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
