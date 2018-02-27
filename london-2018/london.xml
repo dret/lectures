@@ -201,6 +201,21 @@
 				<title>Vulnerability</title>
 				<ul>
 					<li>Support <em>service security</em> so that teams can focus on value creation</li>
+					<li>APIs add to an organization's attack surface</li>
+					<ul>
+						<li>Any connection to an outside party is a potential attack point</li>
+					</ul>
+					<li>Microservices makes it harder to properly design and implement security</li>
+					<ul>
+						<li>Teams should not have to bother with implementing security</li>
+					</ul>
+					<li>Security is the classical use case of <q>API gateways</q></li>
+					<li><q>Security as a Service</q> can be provided in different configurations</li>
+					<ul>
+						<li><em>Centralized:</em> Service logic is split between service and gateway</li>
+						<li><em>Distributed:</em> Configuration is centralized while enforcement is distributed</li>
+						<li><em>Decentralized:</em> Services own both configuration and enforcement</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="volatility">
