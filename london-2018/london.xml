@@ -185,6 +185,16 @@
 				<title>Visibility</title>
 				<ul>
 					<li>It should be easy to <em>find and use services</em> as building blocks for new ones</li>
+					<li>Deployment needs to also deploy information <em>about the API</em></li>
+					<ul>
+						<li><a href="https://tools.ietf.org/html/draft-wilde-service-link-rel-01">Simple description/documentation models</a> as a starting point</li>
+						<li>Alternative models or more sophistication as required by landscape</li>
+					</ul>
+					<li><em>Service discovery</em> is both about finding and binding</li>
+					<ul>
+						<li><em>Finding</em> is based on searching for services by capability/feature</li>
+						<li><em>Binding</em> is the ability to locate a running instance of a service</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="vulnerability">
