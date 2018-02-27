@@ -145,6 +145,11 @@
 					<ul>
 						<li>Your API ecosystem will evolve and new types will appear</li>
 					</ul>
+					<li>Provide <em>guidance</em> and <em>assistance</em> for preferred API styles/types</li>
+					<ul>
+						<li>Guidance should be driven by observed team preferences</li>
+						<li>API ecosystems tend to converge around few technology clusters</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="volume">
@@ -155,12 +160,25 @@
 					<ul>
 						<li><em>API landscaping</em> should focus on scalable methods</li>
 					</ul>
+					<li><em>API landscape automation</em> must be able to adapt</li>
+					<ul>
+						<li>Build as little bias as possible into the foundation</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="velocity">
 				<title>Velocity</title>
 				<ul>
 					<li>Services <em>change more often</em> (if required) because of agile practices</li>
+					<li><em>Loose coupling</em> should be one of the pillars of API design culture</li>
+					<ul>
+						<li>Design practices for loose coupling depend a lot on style and technology</li>
+					</ul>
+					<li>Expose version information as a way how service evolution can be tracked</li>
+					<ul>
+						<li>Versioning should be <em>informational</em> only (no breaking changes)</li>
+						<li><a href="http://semver.org/">Semantic versioning</a> can be exposed through the API</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="visibility">
