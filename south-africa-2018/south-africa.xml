@@ -140,6 +140,194 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="msa-why">
+			<title>Why Microservices?</title>
+			<slide id="nomonolith">
+				<title>Motivation #1: Breaking up the Monolith</title>
+				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="delivery-speed">
+				<title>Motivation #2: Speeding up Product Delivery</title>
+				<img title="Farmers' Market Sacramento" href="https://commons.wikimedia.org/wiki/File:Farmers'_market_Sacramento.jpg" src="farmers-market-sacramento.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="msa-apis">
+				<title>Microservices and APIs</title>
+				<ul>
+					<li>APIs are a way to <em>loosely coupled component interfaces</em></li>
+					<ul>
+						<li>APIs allow removing dependencies between components</li>
+						<li>Loose coupling is influenced by a variety of design factors</li>
+					</ul>
+					<li>Microservices are a way to <em>loosely coupled component implementations</em></li>
+					<ul>
+						<li>Microservices allow implementing services with fewer constraints</li>
+						<li>APIs can be <em>anything</em> but some landscape coherence makes sense</li>
+					</ul>
+					<li><em>Microservice Architecture</em> means trying to optimize the balance</li>
+					<ul>
+						<li><em>Avoid slowing down teams</em> because of constrained design options</li>
+						<li><em>Help teams to be faster</em> by assisting their design/implementation efforts</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="apis-interfaces">
+				<title>There is no "Microservice APIs"</title>
+				<img title='There is no "Microservice API"' src="mugatu-microservices-api.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="msa-six-v">
+			<title>The Six V's of Microservice Architecture</title>
+			<slide id="msa-6v">
+				<title>MSA 6V Executive Summary</title>
+				<ul>
+					<li><em>Variety:</em> More design freedom for teams</li>
+					<li><em>Volume:</em> Make experimentation economical</li>
+					<li><em>Velocity:</em> No more slow coordinated release schedule</li>
+					<li><em>Visibility:</em> Teams work decentralized</li>
+					<li><em>Vulnerability:</em> More openness means a bigger attack surface</li>
+					<li><em>Volatility:</em> Manage dependencies with decentralization in mind</li>
+				</ul>
+			</slide>
+			<slide id="variety">
+				<title>Variety</title>
+				<ul>
+					<li>Increased <em>diversity</em> of the API and implementation landscape</li>
+					<li>Manage API descriptions in extensible ways</li>
+					<ul>
+						<li>Your API ecosystem will evolve and new types will appear</li>
+					</ul>
+					<li>Provide <em>guidance</em> and <em>assistance</em> for preferred API styles/types</li>
+					<ul>
+						<li>Guidance should be driven by observed team preferences</li>
+						<li>API ecosystems tend to converge around few technology clusters</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="volume">
+				<title>Volume</title>
+				<ul>
+					<li><em>More services</em> are created because there is less ceremony</li>
+					<li>Make API management part of general MSA automation efforts</li>
+					<ul>
+						<li><em>API landscaping</em> should focus on scalable methods</li>
+					</ul>
+					<li><em>API landscape automation</em> must be able to adapt</li>
+					<ul>
+						<li>Build as little bias as possible into the foundation</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="velocity">
+				<title>Velocity</title>
+				<ul>
+					<li>Services <em>change more often</em> (if required) because of agile practices</li>
+					<li><em>Loose coupling</em> should be one of the pillars of API design culture</li>
+					<ul>
+						<li>Design practices for loose coupling depend a lot on style and technology</li>
+					</ul>
+					<li>Expose version information as a way how service evolution can be tracked</li>
+					<ul>
+						<li>Versioning should be <em>informational</em> only (no breaking changes)</li>
+						<li><a href="http://semver.org/">Semantic versioning</a> can be exposed through the API</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="visibility">
+				<title>Visibility</title>
+				<ul>
+					<li>It should be easy to <em>find and use services</em> as building blocks for new ones</li>
+					<li>Deployment needs to also deploy information <em>about the API</em></li>
+					<ul>
+						<li><a href="https://tools.ietf.org/html/draft-wilde-service-link-rel-01">Simple description/documentation models</a> as a starting point</li>
+						<li>Alternative models or more sophistication as required by landscape</li>
+					</ul>
+					<li><em>Service discovery</em> is both about finding and binding</li>
+					<ul>
+						<li><em>Finding</em> is based on searching for services by capability/feature</li>
+						<li><em>Binding</em> is the ability to locate a running instance of a service</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="vulnerability">
+				<title>Vulnerability</title>
+				<ul>
+					<li>Support <em>service security</em> so that teams can focus on value creation</li>
+					<li>APIs add to an organization's attack surface</li>
+					<ul>
+						<li>Any connection to an outside party is a potential attack point</li>
+					</ul>
+					<li>Microservices makes it harder to properly design and implement security</li>
+					<ul>
+						<li>Teams should not have to bother with implementing security</li>
+					</ul>
+					<li>Security is the classical use case of <q>API gateways</q></li>
+					<li><q>Security as a Service</q> can be provided in different configurations</li>
+					<ul>
+						<li><em>Centralized:</em> Service logic is split between service and gateway</li>
+						<li><em>Distributed:</em> Configuration is centralized while enforcement is distributed</li>
+						<li><em>Decentralized:</em> Services own both configuration and enforcement</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="volatility">
+				<title>Volatility</title>
+				<ul>
+					<li><em>Service decentralization</em> needs different dependency management models</li>
+					<li>Less operational coherence because of DevOps and differing service levels</li>
+					<li><em>Resilient services</em> are necessary to avoid rolling failures</li>
+					<li><em>Root cause analysis</em> needs tracking through all involved services</li>
+					<ul>
+						<li>This must work at landscape level and thus needs service cooperation</li>
+					</ul>
+					<li>Change management and decommissioning are part of API landscape management</li>
+					<ul>
+						<li><em>Change management</em> may be informational only (for non-breaking changes)</li>
+						<li><em>Decommissioning</em> allows services to announce their retirement</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="continuous-architecting">
+			<title>How? Continuous Architecting!</title>
+			<slide id="api-api">
+				<title>API your APIs</title>
+				<ul>
+					<li>Expose design-time and runtime API information in the API</li>
+					<ul>
+						<li><em>Design-time</em> allows automation of API landscape overview</li>
+						<li><em>Runtime</em> allows automation of API landscape status</li>
+					</ul>
+					<li>Follow <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">robust extensibility principles</a> for these <q>API APIs</q></li>
+					<ul>
+						<li><em>Meaningful Core:</em> Start with a simple but useful scenario</li>
+						<li><em>Extension Points:</em> Think about how scenarios might evolve</li>
+						<li><em>Processing Model:</em> Be clear about how extensions are handled</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="webby-amazon">
+				<title>Webby API Design</title>
+				<img title="Webby Amazon" src="webby-amazon.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-patterns">
+				<title>Emerging API Patterns</title>
+				<ul>
+					<li>Self-description for APIs is increasing</li>
+					<li><a href="http://webconcepts.info/specs/IETF/RFC/7807">Problem details</a> as a way how APIs expose error information</li>
+					<ul>
+						<li>Enables generic error handling but also allows additional information</li>
+					</ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/nottingham-json-home">Home documents</a> as a way how APIs provide starting pages</li>
+					<ul>
+						<li>Enables harvesting of API start points but also allows additional information</li>
+					</ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/inadarei-api-health-check">Healthcheck reports</a> as a way how APIs expose status information</li>
+					<ul>
+						<li>Enables landscape-level status reports but also allows additional information</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
