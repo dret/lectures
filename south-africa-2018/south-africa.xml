@@ -328,6 +328,157 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="api-languages">
+			<title>APIs are Languages</title>
+			<slide id="what-is-an-api">
+				<title>What is an API?</title>
+				<ul>
+					<li>An API is a <em>product</em></li>
+					<ul>
+						<li>APIs are created and designed and developed</li>
+						<li>APIs have typical product lifecycles</li>
+					</ul>
+					<li>An API provides <em>access to a capability</em></li>
+					<ul>
+						<li>The API is not the interesting thing</li>
+						<li>The value is in the functionality of the API</li>
+					</ul>
+					<li>An API is a <em>language</em></li>
+					<ul>
+						<li>API users utilize API functionality by accessing the API</li>
+						<li>Using APIs is a conversation between service providers and consumers</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-design">
+				<title>API Design</title>
+				<ul>
+					<li>APIs need to be designed just like any other product</li>
+					<ul>
+						<li>Design starts with an architectural style and associated patterns</li>
+						<li>The style sets the framework but leaves a lot of freedom</li>
+						<li>Some design elements can be reused from existing APIs</li>
+						<li>Some design elements have to be created for the new API</li>
+					</ul>
+					<li>Design works best when it reuses familiar interface concepts</li>
+					<ul>
+						<li>For UI design this allows end users to make educated guesses for better UX</li>
+						<li>For API design the same concept of <em>familiarity</em> is helpful for DX</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="car-interior">
+				<title>Interface Design</title>
+				<img src="audi-rs6-plus-interior.jpg" title="Audi RS6 Plus Interior" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="continuous-architecture">
+				<title>Continuous Architecture</title>
+				<img src="model-t.jpg" title="Model T Speedster" href="https://commons.wikimedia.org/wiki/File:1913_Ford_Model_T_Speedster_dashboard.JPG" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="languages-landscapes">
+			<title>Languages and Landscapes</title>
+			<slide id="dark-age">
+				<title>SOAP: The Dark Age</title>
+				<ul>
+					<li>API design was practiced relatively little</li>
+					<ul>
+						<li>Developers exposed implementation internals as <em>Web services</em></li>
+						<li>Many APIs were exposed from a shared monolithic codebase</li>
+					</ul>
+					<li>SOAPy SOA promised webby nirvana without delivering</li>
+					<ul>
+						<li>The main failure was the lack of focus on <em>loosely coupled implementation</em></li>
+						<li>Evolution needs <em>ecosystems</em> where individuals can flourish or wane</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="enlightenment">
+				<title>Microservices: Enlightenment</title>
+				<ul>
+					<li>The first time enterprise IT <q>gets the Web</q></li>
+					<ul>
+						<li>Decouple implementations for speed and agility at scale</li>
+						<li>Embrace diversity so that teams can focus on solving problems</li>
+					</ul>
+					<li>What do microservices mean for scale and longevity?</li>
+					<ul>
+						<li>Design decisions need context for the best possible products</li>
+						<li><q>Designing into the void</q> never is the best strategy</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="design-guidelines">
+				<title>The Middle Ground: Guide and Help</title>
+				<ul>
+					<li>Create <a href="http://apistylebook.com/design/guidelines/" title="API Stylebook: Design Guidelines">Design Guidelines</a> that teams can use</li>
+					<ul>
+						<li>Ideally based on existing practice</li>
+						<li>Ideally continuously changed based on the evolving landscape</li>
+					</ul>
+					<li>Writing as a form of communication</li>
+					<ul>
+						<li>Writing guidelines forces teams to talk about design practices</li>
+						<li>Reading guidelines allows teams to understand the current practice</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="design-culture">
+				<title>Language and Design and Culture</title>
+				<ul>
+					<li>Culture <em>emerges</em> as a set of shared principles and patterns</li>
+					<ul>
+						<li>Culture cannot be <em>created</em> from the top-down</li>
+						<li>Culture can be <em>observed</em> and <em>nudged</em> over time</li>
+					</ul>
+					<li><em>Design culture</em> for APIs uses shared language building blocks</li>
+					<ul>
+						<li>Documenting what APIs and teams are using</li>
+						<li>Helping teams in the API design efforts</li>
+					</ul>
+					<li>Documenting <em>API design culture</em> is a continuous process</li>
+					<ul>
+						<li>Feedback cycle based on practice and design guidance</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="webconcepts">
+			<title>Web Concepts</title>
+			<slide id="webconcepts-intro">
+				<title>Concepts that matter on the Web</title>
+				<ul>
+					<li>Web APIs are always based on shared architectural concepts</li>
+					<ul>
+						<li>Some <a href="http://webconcepts.info/concepts/">concepts</a> matter for interaction at the Web level</li>
+						<li>Each concept has a <em>value space</em> for sharing meaning (such as <a href="http://webconcepts.info/concepts/http-method/">HTTP request methods</a>)</li>
+						<li>Specifications establishing values are created by <a href="http://webconcepts.info/specs/">organizations</a> (such as <a href="http://webconcepts.info/concepts/http-method/PATCH">HTTP <code>PATCH</code></a> via <a href="http://webconcepts.info/specs/IETF/">IETF</a>'s <a href="http://webconcepts.info/specs/IETF/RFC/">RFC</a> <a href="http://webconcepts.info/specs/IETF/RFC/5789">5789</a>)</li>
+					</ul>
+					<li><a href="http://webconcepts.info/">Web concepts</a> provides a <em>starter set</em> of concepts and specifications</li>
+					<ul>
+						<li>Currently there are <a href="http://webconcepts.info/concepts/">32 concepts with a total of 738 distinct values</a></li>
+						<li>These concepts are taken from <a href="http://webconcepts.info/specs/">268 specifications from 5 organizations</a></li>
+					</ul>
+					<li>Web concepts is designed to be usable along two major axes</li>
+					<ol>
+						<li>Adding or removing concepts/values to represent the <q>organizational Web surface</q></li>
+						<li>Adding API-level usage to link APIs and the concepts they use</li>
+					</ol>
+				</ul>
+			</slide>
+			<slide id="webconcepts-concepts">
+				<title>Web Concepts: Concepts</title>
+				<img title="Web Concepts: Concepts" href="http://webconcepts.info/concepts/" src="webconcepts-concepts.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="webconcepts-specs">
+				<title>Web Concepts: Specifications</title>
+				<img title="Web Concepts: Specifications" href="http://webconcepts.info/specs/IETF/RFC/" src="webconcepts-specs.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="webconcepts-values">
+				<title>Web Concepts: Values</title>
+				<img title="Web Concepts: Values" href="http://webconcepts.info/concepts/http-header/" src="webconcepts-values.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
