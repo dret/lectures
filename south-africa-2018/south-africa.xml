@@ -759,6 +759,15 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="platform-evolution">
+				<title>Platforms Need Evolution</title>
+				<ul>
+					<li>MSA decouples implementations for improved velocity</li>
+					<li>MSA needs a platform that teams can build on</li>
+					<li>Build extensibility and openness into the platform</li>
+					<li>MSA platforms <em>never stop evolving</em></li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
