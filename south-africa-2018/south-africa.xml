@@ -238,6 +238,90 @@
 				</slide>
 			</part>
 		</part>
+		<part id="platforms">
+			<title>What? Platforms!</title>
+			<slide id="platform-dilemma">
+				<title>The Platform Dilemma</title>
+				<ul>
+					<li>Platforms provide <em>support</em> but also create <em>constraints</em></li>
+					<ul>
+						<li><em>Support</em> in the form of a foundation and shared services/infrastructure</li>
+						<li><em>Constraints</em> in the form of removing certain design options</li>
+					</ul>
+					<li>Balancing support and constraints is not always done explicitly</li>
+					<ul>
+						<li><em>Adding features</em> is more immediately visible than <em>removing options</em></li>
+						<li><em>Unavailable design options</em> may constrain the design space dramatically</li>
+					</ul>
+					<li><em>Microservices</em> for the first time in enterprise IT take a step <q>back</q></li>
+					<ul>
+						<li><em>Remove constraints</em> to foster innovation and give teams more solution options</li>
+						<li><em>Add support</em> mostly in an attempt to make the platform economically viable</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="esb-platform">
+				<title>Shared Runtime for Services: ESB</title>
+				<ul>
+					<li>Platforms often are conceived as <em>being actual infrastructure</em></li>
+					<ul>
+						<li><em>Centralized components</em> that provide capabilities and host services</li>
+						<li>They become convenient components where every infrastructure problem is solved</li>
+					</ul>
+					<li>Is the <em>ESB platform pattern</em> an inescapable vicious cycle?</li>
+					<ul>
+						<li>What if <em>every capability had to be an API-driven service itself?</em></li>
+						<li>What if the platform would focus on <em>defining/providing APIs?</em></li>
+						<li>What if the platform is a set of shared ideas instead of shared artifacts?</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="web-platform">
+				<title>Principles/Protocols/Practices (P<sup>3</sup>): The Web Platform</title>
+				<ul>
+					<li>A set of shared <em>principles</em>, <em>protocols</em>, and <em>practices</em></li>
+					<ul>
+						<li><em>Principles</em> govern the general architectural style (REST)</li>
+						<li><em>Protocols</em> define the way in which components interact</li>
+						<li><em>Practices</em> are design patterns for when/how to use certain protocols</li>
+					</ul>
+					<li>The Web is and always has been about microservices</li>
+					<ul>
+						<li><em>Encapsulation</em> and strict API-only interactions</li>
+						<li><em>Services</em> can start/evolve/succeed/fail/disappear entirely on their own</li>
+						<li><em>Discovery</em> is just another service</li>
+						<li><em>Description</em> is part of a service itself</li>
+					</ul>
+					<li><em>Shared nothing</em> architecture with no single point of contention</li>
+				</ul>
+			</slide>
+			<slide id="platform-monolith">
+				<title>ESB Platforms are <q>Monoliths by Design</q></title>
+				<ul>
+					<li>Designed to provide shared tooling</li>
+					<li>Tooling becomes the backdoor for <q>coupling creep</q></li>
+					<li>Resist the urge to provide an <q>API platform</q></li>
+					<li>Ignoring one of the two major API value propositions</li>
+					<ul>
+						<li>APIs are valuable because they decouple service users and providers</li>
+						<li>APIs are valuable because they decouple service implementations</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="landscape-decentralized">
+				<title>Landscapes are <q>Decentralized by Design</q></title>
+				<ul>
+					<li>Designed to use shared languages</li>
+					<li>Communications/coupling can only happen through APIs</li>
+					<li>Anything that needs to be shared must be openly communicated</li>
+					<li>Satisfying the two major API value propositions</li>
+					<ul>
+						<li>APIs are valuable because they decouple service users and providers</li>
+						<li>APIs are valuable because they decouple service implementations</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
