@@ -353,6 +353,21 @@
 					<li>Going against the <q>let's pick a platform</q> spirit of old-school SOA</li>
 				</ul>
 			</slide>
+			<slide id="amazon-consequences">
+				<title>Jeff Bezos' Services Rant: The Consequences</title>
+				<ul>
+					<li>With more freedom comes more responsibility</li>
+					<ul>
+						<li>Monitoring and metrics are necessary for finding root causes</li>
+						<li>All APIs must be hardened against DoS attacks</li>
+						<li>Automated QA is necessary to really understand service health</li>
+						<li>Services must be documented and registered so that they can be discovered</li>
+						<li>Debugging becomes harder because of service dependencies</li>
+					</ul>
+					<li>Sophisticated tooling required to manage the new SOA landscape</li>
+					<li>Much easier in today's technology landscape than 15 years ago</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
