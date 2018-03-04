@@ -184,6 +184,58 @@
 			</part>
 			<part id="why-microservices">
 				<title>Why Microservices?</title>
+				<slide id="web-works">
+					<title>The Web Works</title>
+					<ul>
+						<li>MSA is about service autonomy in service-oriented landscapes</li>
+						<ul>
+							<li><em>Developer autonomy</em> is the freedom to choose the best tools for the job</li>
+							<li><em>Operations autonomy</em> means that every service is operated standalone</li>
+						</ul>
+						<li>MSA is also about effectiveness in autonomy-focused service-oriented landscapes</li>
+						<ul>
+							<li><em>Rapid provisioning</em> means that getting started is an easy task</li>
+							<li><em>Basic monitoring</em> establishes visibility into service operations</li>
+							<li><em>Rapid deployment</em> increases the velocity of service landscape evolution</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="web-industrialized">
+					<title>The Web, Industrialized</title>
+					<ul>
+						<li>MSA applies Web Architecture's <em href="http://dret.net/netdret/publications#pau09a">loose coupling</em> to the API space</li>
+						<ul>
+							<li>Build services with no hidden dependencies</li>
+							<li>Choose the best tool for the job</li>
+							<li>Decouple service provisioning from delivery architecture</li>
+							<li>Monitor service state and usage</li>
+							<li>React quickly when customers or market demand change</li>
+							<li>Experiment ruthlessly and keep experimentation cost low</li>
+						</ul>
+						<li>MSA is all about being webby while minimizing the cost</li>
+					</ul>
+				</slide>
+				<slide id="microservices-cargo-cult">
+					<title>Microservices Cargo Cult</title>
+					<img title="Microservices Cargo Cult" src="microservices-cargo-cult.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="what-how">
+					<title>Separating the <q>What</q> from the <q>How</q></title>
+					<ul>
+						<li><em>Why</em> do organizations use MSA and <em>what</em> are their goals?</li>
+						<li>Microservices are a <em>pattern</em> for achieving API agility/velocity</li>
+						<ul>
+							<li><em>Loosely coupled services</em> to allow services to evolve independently</li>
+							<li><em>DevOps</em> to allow services to emerge/evolve faster</li>
+							<li><em>Infrastructure augmentation</em> for management and visibility of services</li>
+						</ul>
+						<li>Focus on the <q>what</q> instead of simply choosing a <q>how</q></li>
+						<ul>
+							<li>Many MSA advantages can be realized in non-MSA architectures</li>
+							<li>More architectural discipline may be required to realize long-term gains</li>
+						</ul>
+					</ul>
+				</slide>
 			</part>
 		</part>
 		<part id="conclusions">
