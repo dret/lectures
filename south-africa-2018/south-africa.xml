@@ -122,6 +122,14 @@
 			</slide>
 			<part id="why-digital-transformation">
 				<title>Why Digital Transformation?</title>
+				<slide id="nomonolith-1">
+					<title>Motivation #1: Breaking up the Monolith</title>
+					<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="delivery-speed-1">
+					<title>Motivation #2: Speeding up Product Delivery</title>
+					<img title="Farmers' Market Sacramento" href="https://commons.wikimedia.org/wiki/File:Farmers'_market_Sacramento.jpg" src="farmers-market-sacramento.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
 			</part>
 			<part id="why-apis">
 				<title>Why APIs?</title>
@@ -184,11 +192,11 @@
 		</slide>
 		<part id="msa-why">
 			<title>Why Microservices?</title>
-			<slide id="nomonolith">
+			<slide id="nomonolith-2">
 				<title>Motivation #1: Breaking up the Monolith</title>
 				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="delivery-speed">
+			<slide id="delivery-speed-2">
 				<title>Motivation #2: Speeding up Product Delivery</title>
 				<img title="Farmers' Market Sacramento" href="https://commons.wikimedia.org/wiki/File:Farmers'_market_Sacramento.jpg" src="farmers-market-sacramento.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
