@@ -737,42 +737,6 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="webconcepts">
-			<title>Web Concepts</title>
-			<slide id="webconcepts-intro">
-				<title>Concepts that matter on the Web</title>
-				<ul>
-					<li>Web APIs are always based on shared architectural concepts</li>
-					<ul>
-						<li>Some <a href="http://webconcepts.info/concepts/">concepts</a> matter for interaction at the Web level</li>
-						<li>Each concept has a <em>value space</em> for sharing meaning (such as <a href="http://webconcepts.info/concepts/http-method/">HTTP request methods</a>)</li>
-						<li>Specifications establishing values are created by <a href="http://webconcepts.info/specs/">organizations</a> (such as <a href="http://webconcepts.info/concepts/http-method/PATCH">HTTP <code>PATCH</code></a> via <a href="http://webconcepts.info/specs/IETF/">IETF</a>'s <a href="http://webconcepts.info/specs/IETF/RFC/">RFC</a> <a href="http://webconcepts.info/specs/IETF/RFC/5789">5789</a>)</li>
-					</ul>
-					<li><a href="http://webconcepts.info/">Web concepts</a> provides a <em>starter set</em> of concepts and specifications</li>
-					<ul>
-						<li>Currently there are <a href="http://webconcepts.info/concepts/">32 concepts with a total of 738 distinct values</a></li>
-						<li>These concepts are taken from <a href="http://webconcepts.info/specs/">268 specifications from 5 organizations</a></li>
-					</ul>
-					<li>Web concepts is designed to be usable along two major axes</li>
-					<ol>
-						<li>Adding or removing concepts/values to represent the <q>organizational Web surface</q></li>
-						<li>Adding API-level usage to link APIs and the concepts they use</li>
-					</ol>
-				</ul>
-			</slide>
-			<slide id="webconcepts-concepts">
-				<title>Web Concepts: Concepts</title>
-				<img title="Web Concepts: Concepts" href="http://webconcepts.info/concepts/" src="webconcepts-concepts.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="webconcepts-specs">
-				<title>Web Concepts: Specifications</title>
-				<img title="Web Concepts: Specifications" href="http://webconcepts.info/specs/IETF/RFC/" src="webconcepts-specs.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="webconcepts-values">
-				<title>Web Concepts: Values</title>
-				<img title="Web Concepts: Values" href="http://webconcepts.info/concepts/http-header/" src="webconcepts-values.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="platform-evolution">
