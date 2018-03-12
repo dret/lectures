@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="apiacademy" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="www2018.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="http://creativecommons.org/licenses/by/3.0/" short="CC 3.0">
+		<div class="license">
+			<p><a rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/apiacademy/apiacademy/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
+		</div>
+	</license>
+	<title><a href="https://www2018.thewebconf.org/">WWW2018</a> <a href="https://www2018.thewebconf.org/program/developers-track/">Developers' Track</a></title>
+	<presentation id="index">
+		<title>Surfing the API Web: Web Concepts</title>
+		<toc class="abstract">The Web is based on numerous standards that together make up the surface of the Web: By knowing and supporting those standards, problems can be solved in well-known ways. This general design pattern on the Web applies to APIs in the very same way as it does to the human Web: By using an (evolving) set of standards, API developers benefit by not having to reinvent the wheel, and developers benefit by the same problem being solved in the same way across a variety of APIs. The evolving set of standards for Web APIs can be regarded as a set of building blocks or vocabularies for API design. <em>Web Concepts</em> is <a href="http://webconcepts.info">a site</a> and <a href="http://github.com/dret/webconcepts">a repository</a> that can be used to manage how within organizations these building blocks are used, thus helping to establish a Web API design culture. The main idea of Web Concepts is to promote reuse of existing standards and technologies, and to therefore make it easier for teams to understand which options are available generally speaking, and maybe which ones are popular choices within their organization.</toc>
+		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
+		<affiliation><a href="http://www.apiacademy.co/">API Academy</a>, <a href="http://www.ca.com/">CA Technologies</a></affiliation>
+		<date short="2018-04-25">April 25, 2018</date>
+		<copyright>2018 Erik Wilde</copyright>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="introduction">
+			<title>Introduction</title>
+			<slide id="dret">
+				<title><code>@dret</code> on Twitter/GitHub</title>
+				<img src="dret.png" title="dret" href="http://twitter.com/dret" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-academy">
+				<title><a href="http://www.apiacademy.co/">API Academy</a></title>
+				<img src="apiacademy-red-black.png" href="http://www.apiacademy.co/" title="API Acacdemy" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Global Team working on <em>API Strategy and Design</em> topics</li>
+					<ul>
+						<li><a href="http://www.apiacademy.co/team_member/matt-mclarty/">Matt McLarty</a> (Vancouver): <a href="http://twitter.com/MattMcLartyBC" class="twitter-follow-button" title="Matt McLarty on Twitter: @MattMcLartyBC"><code>@MattMcLartyBC</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li><a href="http://www.apiacademy.co/team_member/mike-amundsen/">Mike Amundsen</a> (Cincinnati): <a href="http://twitter.com/mamund" class="twitter-follow-button" title="Mike Amundsen on Twitter: @mamund"><code>@mamund</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li><a href="http://www.apiacademy.co/team_member/mehdi-medjaoui/">Mehdi Medjaoui</a> (San Francisco): <a href="http://twitter.com/medjawii" class="twitter-follow-button" title="Mehdi Medjaoui on Twitter: @medjawii"><code>@medjawii</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li><a href="http://www.apiacademy.co/team_member/ronnie-mitra/">Ronnie Mitra</a> (London): <a href="http://twitter.com/mitraman" class="twitter-follow-button" title="Ronnie Mitra on Twitter: @mitraman"><code>@mitraman</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li><a href="http://www.apiacademy.co/team_member/erik-wilde/">Erik Wilde</a> (Zürich): <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+					</ul>
+					<li>Evangelizing ideas and technologies</li>
+					<ul>
+						<li>Speaking (conferences, events)</li>
+						<li>Teaching (workshops, bootcamps)</li>
+						<li>Publishing (blogs, articles, books, <a href="https://soundcloud.com/user-426834320">podcasts</a>)</li>
+						<li>Doing (side projects on API-related topics)</li>
+						<li>Standardizing (participating in specification work)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="msa-book">
+				<title>Microservice Architecture</title>
+				<img src="msa-cover.jpg" href="http://transform.ca.com/API-microservice-architecture-oreilly-book.html" title="Microservice Architecture: Aligning Principles, Practices, and Culture" style="float: right ; height : 55% ; margin : 4% ; "/>
+				<ul>
+					<li><q>Microservice Architecture: Aligning Principles, Practices, and Culture</q></li>
+					<li><a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/">Authored by</a> <a href="http://www.apiacademy.co/">API Academy</a> members Irakli Nadareishvili, Ronnie Mitra, Matt McLarty, and Mike Amundsen</li>
+					<ul>
+						<li>Get <a href="http://transform.ca.com/API-microservice-architecture-oreilly-book.html">free electronic version courtesy of CA Technologies</a></li>
+						<li>Get <a href="http://shop.oreilly.com/product/0636920050308.do">a hardcopy version</a></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="dret">
+				<title>About Me</title>
+				<ul>
+					<li><a href="http://dret.net/netdret/publications#wil97b">Ph.D. in Communications Systems</a> from <a href="http://www.ethz.ch/">ETH Zürich</a></li>
+					<li>Working on Web Architecture after writing <a href="http://dret.net/netdret/publications#wil98">the first Web Technology book</a></li>
+					<li>UC Berkeley (2006-2011), working on <a href="http://dret.net/netdret/publications#wil09g">Service Models for Open Government</a></li>
+					<li>EMC (2011-2014), working on transforming software products into service platforms</li>
+					<li>Siemens (2014-2015), working on using <em title="Internet of Things">IoT</em> to build <em title="Web of Things">WoT</em> (<q>APIs for Things</q>)</li>
+					<li>Joined <a href="http://www.ca.com/" title="CA Technologies">CA</a>'s <a href="http://www.apiacademy.co/">API Academy</a> in 2016 and now all about API Strategy and Design</li>
+					<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="http://dret.typepad.com/dretblog/">my blog</a>, <a href="http://www.linkedin.com/in/netdret">LinkedIn</a>, and <a href="https://www.flickr.com/photos/dret/" title="dret">flickr</a></li>
+				</ul>
+			</slide>
+		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Questions?</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/www-2018"><code>dret.net/lectures/www-2018</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/www-2018"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
