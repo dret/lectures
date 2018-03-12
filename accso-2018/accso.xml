@@ -91,6 +91,22 @@
 		</part>
 		<part id="api-economy">
 			<title>The API Economy</title>
+			<slide id="api-economy-perspectives">
+				<title>Two Perspectives of the API Economy</title>
+				<ol>
+					<li>An economy driven by <em>APIs as products</em> and <em>API sales</em></li>
+					<ul>
+						<li>APIs are interfaces to services</li>
+					</ul>
+					<li>An economy driven by <em>API-enabled services</em> and <em>API-based service interactions</em></li>
+					<ul>
+						<li>Services become more valuable when they are API-enabled</li>
+					</ul>
+				</ol>
+				<ul>
+					<li>The former is a special case of the latter</li>
+				</ul>
+			</slide>
 			<slide id="api-landscape">
 				<title>API Landscape</title>
 				<img title="API Landscape" href="http://theapilandscape.pagedemo.co/" src="api-landscape-v2-march-2017.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
