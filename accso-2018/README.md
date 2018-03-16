@@ -1,8 +1,8 @@
 # API Economy: Who is in the Driver's Seat?
 
-## March 16, 2018
+## AccsoCon 2018, March 16, 2018
 
-Slides for the presentation at the Accso Workshop in Frankfurt, Germany, March 16, 2018.
+Slides for the presentation at the AccsoCon 2018 event in Frankfurt, Germany, March 16, 2018.
 
 
 ## License
