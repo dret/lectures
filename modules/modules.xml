@@ -3728,6 +3728,12 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				</ul>
 			</slide>
 		</part>
+		<part id="event-sourcing">
+			<title>Event Sourcing</title>
+		</part>
+		<part id="cqrs">
+			<title>Command Query Responsibility Segregation (CQRS)</title>
+		</part>
 		<part id="style-conclusions">
 			<title>Conclusions</title>
 			<slide id="no-style-hammer">
