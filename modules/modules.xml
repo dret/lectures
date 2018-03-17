@@ -3636,7 +3636,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="rest-conclusions">
 			<title>Conclusions</title>
-			<slide>
+			<slide id="rpc-to-rest">
 				<title>From RPC to REST</title>
 				<ul>
 					<li>REST is simple to learn and use</li>
