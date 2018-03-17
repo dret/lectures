@@ -581,13 +581,8 @@
 	</presentation>
 	<presentation id="management">
 		<title>API and API Landscape Management</title>
-		<toc class="abstract">When embarking on a journey of digital transformation, APIs and Microservices become essential components, and they do so at a scale and velocity. As the modern software factory allows organizations to create, combine, and recombine new services, they also need to manage the production itself, as well as landscape of services they are producing. This presentation provides an overview of the important <em>Six Vs</em> of Microservice architecture landscapes: variety, volume, velocity, visibility, vulnerability, and volatility.</toc>
 		<toc class="resources"><a href="http://apistylebook.com/">API Stylebook</a>&#160;· <a href="http://webconcepts.info/">Web Concepts</a></toc>
 		<toc class="resources"></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 		<part id="msa-why">
 			<title>Why Microservices?</title>
 			<slide id="nomonolith-2">
@@ -916,12 +911,7 @@
 	</presentation>
 	<presentation id="representations">
 		<title>Representations</title>
-		<toc class="abstract">APIs allows providers and consumers of digital services to communicate. Their language depends on the specific API style and API design, but at some level always is based on representing information that is passed back and forth. These representations can be based on a variety of generic models, which often makes it easier for API creators to design and define the specific language of their API. There are many existing generic models, but for the realm of Internet/Web APIs, <em>Extensible Markup Language (XML)</em>, <em>JavaScript Object Notation (JSON)</em>, and <em>Resource Description Framework (RDF)</em> are the most popular ones.</toc>
 		<toc class="resources"><a href="http://www.webconcepts.info/concepts/media-type/" title="Web Concepts: Media Types">Media Types</a>&#160;· <a href="http://www.w3.org/TR/xml/" title='Tim Bray, Jean Paoli, C. Michael Sperberg-McQueen, Eve Maler, and François Yergeau, "Extensible Markup Language (XML) 1.0 (Fifth Edition)", W3C Recommendation REC-xml-20081126, November 2008'>XML</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/8259" title='Tim Bray, "The JavaScript Object Notation (JSON) Data Interchange Format", IETF RFC 8259, December 2017'>JSON</a>&#160;· <a href="http://www.w3.org/TR/rdf11-concepts/" title='Richard Cyganiak, David Wood, and Markus Lanthaler, "RDF 1.1 Concepts and Abstract Syntax", W3C Recommendation REC-rdf11-concepts-20140225, February 2014'>RDF</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/4287" title='Mark Nottingham and Robert Sayre, "The Atom Syndication Format", IETF RFC 4287, December 2005'>Atom</a>&#160;· <a href="https://www.w3.org/TR/activitystreams-core/" title='James Snell and Evan Prodromou, "Activity Streams 2.0", W3C Recommendation REC-activitystreams-core-20170523, May 2017'>Activity Streams</a>&#160;· <a href="https://jsonfeed.org/">JSON Feed</a>&#160;· <a title='Yakov Shafranovich, "Common Format and MIME Type for Comma-Separated Values (CSV) Files", IETF RFC 4180, October 2005' href="http://webconcepts.info/specs/IETF/RFC/4180">RFC 4180</a>&#160;· <a title='Erik Wilde, "The &apos;profile&apos; Link Relation Type", Internet RFC 6906, March 2013' href="http://webconcepts.info/specs/IETF/RFC/6906">RFC 6906</a>&#160;· <a title='Mark Nottingham and Erik Wilde, "Problem Details for HTTP APIs", Internet RFC 7807, March 2016' href="http://webconcepts.info/specs/IETF/RFC/7807">RFC 7807</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 		<part id="intro">
 			<title>Introduction</title>
 			<slide id="digital-shadow">
@@ -1417,12 +1407,7 @@
 	</presentation>
 	<presentation id="rest">
 		<title>Representational State Transfer (REST)</title>
-		<toc class="abstract"><em>Representational State Transfer (REST)</em> is defined as an <em>architectural style</em>, which means that it is not a concrete systems architecture, but instead a set of constraints that are applied when designing a systems architecture. We briefly discuss these constraints, but then focus on explaining how the Web is one such systems architecture that implements REST. In particular, the mechanisms of the <em>Uniform Resource Identifiers (URIs)</em>, the <em>Hypertext Transfer Protocol (HTTP)</em>, media types, and markup languages such as the <em>Hypertext Markup Language (HTML)</em> and the <em>Extensible Markup Language (XML)</em>. We also introduce <em>Atom</em> and the <em>Atom Publishing Protocol (AtomPub)</em> as two established ways on how RESTful services are already provided and used on today's Web.</toc>
 		<toc class="resources"><a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm" title="Roy Thomas Fielding, 'Architectural Styles and the Design of Network-based Software Architectures', Ph.D. Thesis, University of California, Irvine, Irvine, California, 2000">Fielding&#160;Dissertation</a>&#160;· <a href="http://portal.acm.org/citation.cfm?doid=337180.337228" title="Roy Thomas Fielding and Richard N. Taylor, 'Principled Design of the Modern Web Architecture', ACM Transactions on Internet Technology, 2(2):115-150, May 2002">ACM&#160;Transactions</a></toc>
-		<slide>
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 		<part id="layers">
 			<title>Abstraction Layers</title>
 			<slide>
@@ -1921,12 +1906,7 @@
 	</presentation>
 	<presentation id="hypermedia">
 		<title>Hypermedia</title>
-		<toc class="abstract">...</toc>
 		<toc class="resources"><a href="http://webconcepts.info/specs/IETF/RFC/8288" title='RFC 8288, "Web Linking", October 2010'>RFC 8288</a>&#160;· <a href="http://www.ustream.tv/recorded/102891495" title='Mike Amundsen, "Twelve Patterns for Hypermedia Microservices", Craft Conference, April 2017'>12 Patterns</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/08/api-maps-hypermedia-api-design.html" title='Erik Wilde, "API Maps: Hypermedia API Design", August 2016'>API Maps</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 		<part id="web-linking">
 			<title>Web Linking</title>
 			<slide id="typed-links">
@@ -2151,12 +2131,7 @@
 	</presentation>
 	<presentation id="microservices">
 		<title>Microservices</title>
-		<toc class="abstract">Microservices are a way how to improve the speed of software delivery, result in more scalable architectures, and make sure that these goals do not compromise the robustness of the overall landscape. The concept of microservices has been distilled from a set of practices that have been adopted in bigger organizations that need to make sure that service development and delivery is as fast as possible. Microservices have a close architectural parallel in the Web, which is built around the same general principles of strictly separate implementations, easily usable interfaces, and an ecosystem model where the measure of success and fitness is that of the overall resulting system, and not that of the individual components.</toc>
 		<toc class="resources"><a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="https://martinfowler.com/microservices/" title="Martin Fowler's Microservices Resource Guide">Microservices Resource Guide</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 		<part id="microservices-pattern">
 			<title>Microservices as a Pattern</title>
 			<slide id="microservices-scalability">
