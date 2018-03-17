@@ -2573,6 +2573,29 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					</ul>
 				</ul>
 			</slide>
+			<slide id="objects-vs-documents">
+				<title>Objects vs. Documents</title>
+				<ul>
+					<li><em>Objects</em> follow the pattern of many common programming languages</li>
+					<ul>
+						<li>Objects are structured and allow nesting</li>
+						<li>Object members are typed according to an existing set of types</li>
+					</ul>
+					<li><em>Documents</em> represent semi-structured data</li>
+					<ul>
+						<li>Documents often have more flexible schemas with more variations</li>
+						<li>Document content is a mix of structural elements with textual data</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="object-example">
+				<title>Object Example (JSON)</title>
+				<listing src="json-example.json"/>
+			</slide>
+			<slide id="document-example">
+				<title>Document Example (XML)</title>
+				<listing src="section.xml"/>
+			</slide>
 			<slide id="profiles">
 				<title>Profiles</title>
 				<ul>
