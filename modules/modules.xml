@@ -2556,6 +2556,23 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="what-how">
 			<title>What and How to Represent</title>
+			<slide id="representing-what">
+				<title>What to Represent</title>
+				<ul>
+					<li>Representations are determined by the <link href="styles">API style</link></li>
+					<ul>
+						<li><link href="tunnel-style">Tunnel style</link> represents function calls (names and parameters/results)</li>
+						<li><link href="uri-style">URI style</link> represents resources for CRUD operations</li>
+						<li><link href="hypermedia-style">Hypermedia style</link> represents resource for REST interactions</li>
+						<li><link href="event-based">Event-based style</link> represents events that are produced/consumed</li>
+					</ul>
+					<li>Some styles especially benefit from <q>common representation patterns</q></li>
+					<ul>
+						<li><em>Tunnel style</em> may benefit from a general schema for function names and parameters</li>
+						<li><em>Event-based style</em> may benefit from a general schema for event names and parameters</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="profiles">
 				<title>Profiles</title>
 				<ul>
