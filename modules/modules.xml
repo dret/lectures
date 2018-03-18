@@ -3877,6 +3877,19 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<title>API Styles are Tools</title>
 				<img title="Hammer and Screw" href="https://www.flickr.com/photos/justinbaeder/5317820857" src="maslow-hammer-nail.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="api-style-properties">
+				<title>API Style Properties</title>
+				<ul>
+					<li>API styles influence important API properties</li>
+					<ul>
+						<li><em>Scalability:</em> Number of APIs, API teams, API consumers, and API interactions</li>
+						<li><em>Usability:</em> Problem domain, established styles, available tooling</li>
+						<li><em>Changeability:</em> BFF, known/unknown group of consumers</li>
+						<li><em>Performance:</em> What are critical issues in known scenarios</li>
+						<li><em>Reliability:</em> Operational concerns and centralization/decentralization</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="style-implementations">
 				<title>API Styles in the Wild</title>
 				<ul>
