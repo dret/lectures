@@ -2564,7 +2564,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 						<li><link href="tunnel-style">Tunnel style</link> represents function calls (names and parameters/results)</li>
 						<li><link href="uri-style">URI style</link> represents resources for CRUD operations</li>
 						<li><link href="hypermedia-style">Hypermedia style</link> represents resource for REST interactions</li>
-						<li><link href="event-based">Event-based style</link> represents events that are produced/consumed</li>
+						<li><link href="event-style">Event-based style</link> represents events that are produced/consumed</li>
 					</ul>
 					<li>Some styles especially benefit from <q>common representation patterns</q></li>
 					<ul>
@@ -3703,6 +3703,16 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>Conversation goals should determine the conversation style</li>
 				</ul>
 			</slide>
+			<slide id="style-metaphors">
+				<title>API Style Metaphors</title>
+				<ul>
+					<li><link href="tunnel-style"/>: Function calls in procedural programming</li>
+					<li><link href="uri-style"/>: Data access objects</li>
+					<li><link href="hypermedia-style"/>: Browsing the Web</li>
+					<li><link href="query-style"/>: Databases and database queries</li>
+					<li><link href="event-style"/>: Event-based programming</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="tunnel-style">
 			<title>Tunnel Style</title>
@@ -3791,7 +3801,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				</ul>
 			</slide>
 		</part>
-		<part id="event-based">
+		<part id="event-style">
 			<title>Event-Based Style</title>
 			<slide id="fire-and-forget">
 				<title>Fire and Forget</title>
