@@ -1006,7 +1006,8 @@
 						<li><link href="tunnel-style">Tunnel style</link> represents function calls (names and parameters/results)</li>
 						<li><link href="uri-style">URI style</link> represents resources for CRUD operations</li>
 						<li><link href="hypermedia-style">Hypermedia style</link> represents resource for REST interactions</li>
-						<li><link href="event-based">Event-based style</link> represents events that are produced/consumed</li>
+						<li><link href="query-style">Query style</link> represents queries and query results</li>
+						<li><link href="event-style">Event-based style</link> represents events that are produced/consumed</li>
 					</ul>
 					<li>Some styles especially benefit from <q>common representation patterns</q></li>
 					<ul>
