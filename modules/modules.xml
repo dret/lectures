@@ -246,7 +246,7 @@
 	<presentation id="change-management">
 		<title>Change Management and Versioning</title>
 		<toc class="abstract">APIs change, and in particular in faster-changing environments, such as those based on microservices architecture, change is happening frequently. Managing change is essential because any API change that is a breaking change, i.e. it requires consumers to adjust, creates ripple effects through the API landscape. Every API style has ways how APIs can be designed to prevent breaking changes, but it is necessary to incorporate this into API design as part of the overall design culture. Communicating breaking changes can be done in a variety of ways, and ideally represents the relationship between the two versions in a machine-readable way.</toc>
-		<toc class="resources"><a href="https://tools.ietf.org/html/rfc6648" title="RFC 6648: 'Deprecating the &quot;X-&quot; Prefix and Similar Constructs in Application Protocols', June 2012">RFC 6648</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a>&#160;· <a href="https://tools.ietf.org/html/draft-wilde-registries" title='Erik Wilde, "The Use of Registries", Internet Draft wilde-registries'>Registries</a>&#160;· <a href="https://blog.goodapi.co/api-change-management-2fe5bba32e9b" title='Zdenek Nemec, "API Change Management", April 2017'>Change Management</a>&#160;· <a href="http://semver.org/" title='Semantic Versioning 2.0.0'>Semantic Versioning</a>&#160;· <a href="http://webconcepts.info/specs/IETF/I-D/draft-wilde-sunset-header" title='Erik Wilde, "The Sunset HTTP Header", Internet Draft wilde-sunset-header'>Sunset Header</a></toc>
+		<toc class="resources"><a href="https://tools.ietf.org/html/rfc5829" title="RFC 5829: 'Link Relation Types for Simple Version Navigation between Web Resources', April 2010">RFC 5829</a>&#160;· <a href="https://tools.ietf.org/html/rfc6648" title="RFC 6648: 'Deprecating the &quot;X-&quot; Prefix and Similar Constructs in Application Protocols', June 2012">RFC 6648</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a>&#160;· <a href="https://tools.ietf.org/html/draft-wilde-registries" title='Erik Wilde, "The Use of Registries", Internet Draft wilde-registries'>Registries</a>&#160;· <a href="https://blog.goodapi.co/api-change-management-2fe5bba32e9b" title='Zdenek Nemec, "API Change Management", April 2017'>Change Management</a>&#160;· <a href="http://semver.org/" title='Semantic Versioning 2.0.0'>Semantic Versioning</a>&#160;· <a href="http://webconcepts.info/specs/IETF/I-D/draft-wilde-sunset-header" title='Erik Wilde, "The Sunset HTTP Header", Internet Draft wilde-sunset-header'>Sunset Header</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -383,6 +383,28 @@
 					<ul>
 						<li>Versioning at this level is little more than <q>keeping the API brand</q></li>
 						<li>Version numbers can be used in URI path or in the domain name</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="linking-versions">
+				<title>Linking Versions</title>
+				<ul>
+					<li>Communicating versions via links works better than naming schemes</li>
+					<ul>
+						<li>APIs remain self-contained as long as consumers are working with one version</li>
+						<li>APIs are brought into context when consumers want versioning information</li>
+					</ul>
+					<li><a href="https://tools.ietf.org/html/rfc5829" title="RFC 5829: 'Link Relation Types for Simple Version Navigation between Web Resources', April 2010">RFC 5829</a> defines link relations for <q>simple version navigation</q></li>
+					<ul>
+						<li><code>successor-version</code> links to the newer version of the API</li>
+						<li><code>latest-version</code> links to the newest version of the API</li>
+						<li><code>predecessor-version</code> links to the older version of the API</li>
+						<li><code>version-history</code> links to a resource about the version history</li>
+					</ul>
+					<li>Plays well with <em>home documents</em> and their role for an API</li>
+					<ul>
+						<li>APIs share home documents or at least version histories across versions</li>
+						<li>Versioning links are used to allow navigation across all API versions</li>
 					</ul>
 				</ul>
 			</slide>
@@ -1193,7 +1215,7 @@
 					<li>Hypermedia-based evolution has many patterns to choose from</li>
 					<ul>
 						<li><em>Incremental additions</em> can show up as new links in extension slots</li>
-						<li><em>Complete new APIs</em> can be advertised as new start resources in home documents</li>
+						<li><em>Complete new APIs</em> can be advertised as new start resources in <em>home documents</em></li>
 					</ul>
 				</ul>
 			</slide>
