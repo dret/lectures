@@ -3871,6 +3871,19 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				</ul>
 			</slide>
 		</part>
+		<part id="choosing-style">
+			<title>Choosing an API Style</title>
+			<slide id="style-implementations">
+				<title>API Styles in the Wild</title>
+				<ul>
+					<li><link href="tunnel-style"/>: XML-RPC, SOAP, gRPC</li>
+					<li><link href="uri-style"/>: Swagger/OpenAPI</li>
+					<li><link href="hypermedia-style"/>: HAL, Siren, Atom</li>
+					<li><link href="query-style"/>: GraphQL, OData, SPARQL</li>
+					<li><link href="event-style"/>: MQ, WebSub, MQTT, XMPP, AMQP</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="style-conclusions">
 			<title>Conclusions</title>
 			<slide id="no-style-hammer">
