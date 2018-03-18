@@ -3815,11 +3815,8 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					</ul>
 				</ul>
 			</slide>
-		</part>
-		<part id="event-sourcing">
-			<title>Event Sourcing</title>
-			<slide id="event-log">
-				<title>Durable Event Logs</title>
+			<slide id="event-sourcing">
+				<title>Event Sourcing: Durable Event Logs</title>
 				<ul>
 					<li>Application state is determined by events that have happened</li>
 					<ul>
