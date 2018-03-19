@@ -105,8 +105,229 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="high-level-view">
+			<title>APIs from 50,000 feet</title>
+			<slide id="api-language">
+				<title>APIs are Languages</title>
+				<ul>
+					<li>APIs in their current sense evolved from the <em>original API</em></li>
+					<ul>
+						<li><em>Local APIs</em> originated as a way to build systems (i.e., one big thing)</li>
+						<li><em>Network APIs</em> were invented decades ago but nobody found the silver bullet</li>
+						<li><em>Web APIs</em> are a loose and evolving collection of principles and patterns</li>
+					</ul>
+					<li>Languages become necessary when coordination is required</li>
+					<ul>
+						<li><em>Human language</em> is a result of improving ecological fitness</li>
+						<li><em>Human written language</em> is a result of new organizational challenges</li>
+					</ul>
+					<li>Same problems/approaches/answers like other language problems</li>
+					<ul>
+						<li><em>Domain-only:</em> Domains figure out their problems and their languages</li>
+						<li><em>Universal:</em> Find the <em>universal grammar</em> and use it everywhere</li>
+						<li><em>Hybrid:</em> Establish principles and patterns but avoid überformats</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="who-is-talking">
+				<title>APIs: Who's Talking?</title>
+				<ul>
+					<li>Languages both establish and cross domain boundaries</li>
+					<li>System/ecosystem boundaries are blurry</li>
+					<ul>
+						<li>System/ecosystem perspective is a question of perspective</li>
+					</ul>
+					<li>APIs provide a foundation for communications in an ecosystem</li>
+					<ul>
+						<li><em>Internal:</em> Value is in system changeability</li>
+						<li><em>External:</em> Value is in system interoperability</li>
+					</ul>
+					<li>API discussions should always be aware of both perspectives</li>
+					<ul>
+						<li>Separate internal/external API strategies are counter-productive</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-pattern">
+				<title>APIs are a Pattern</title>
+				<div style="height: 70%">
+					<img style="float: left; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Uniform interface" src="pneumatic-tubes.jpg" href="https://twitter.com/NotableHistory/status/529966375125544960"/>
+					<img style="float: right; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Self-describing representations and stateless interactions" src="nj-gun-permit.png"/>
+				</div>
+			</slide>
+		</part>
+		<part id="api-aspects">
+			<title>APIs: 3 Drivers, 2 Perspectives, 1 Lifecycle</title>
+			<slide id="api-driver-push">
+				<title>API Driver #1: Push</title>
+				<ul>
+					<li>Many environments change at increasing velocities</li>
+					<ul>
+						<li>Economics change</li>
+						<li>Incentives change</li>
+						<li>Technologies change</li>
+					</ul>
+					<li>Organizations are <em>pushed</em> to better handle change</li>
+					<ul>
+						<li>They have to become better at <em>reacting to external changes</em></li>
+						<li>They have to become better at <em>executing internal changes</em></li>
+						<li>They have to become better at <em>embracing changing</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-driver-pull">
+				<title>API Driver #2: Pull</title>
+				<ul>
+					<li>External: Participating in the <em>API economy</em> becomes increasingly beneficial</li>
+					<ul>
+						<li>Interfacing with customers/partners becomes easier</li>
+						<li>The number of API-ready customers/partners keeps increasing</li>
+						<li>The <a href="https://en.wikipedia.org/wiki/Metcalfe%27s_law">network effect</a> guarantees for the trend to continue</li>
+					</ul>
+					<li>Internal: Being able to plan and execute changing quickly improves fitness</li>
+					<ul>
+						<li>Traditionally, IT is perceived as a sluggish and heavyweight</li>
+						<li>Increasingly, IT becomes the <q>lube</q> for the organizational machinery</li>
+						<li>Additionally, IT can allow completely new classes of business models</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-driver-follow">
+				<title>API Driver #3: Follow</title>
+				<ul>
+					<li>Having an <em>API strategy</em> becomes increasingly important</li>
+					<ul>
+						<li>Organizations have executed on this for a long time (Amazon API memo: 2002)</li>
+						<li>Organizations share experiences and tooling around API strategies</li>
+					</ul>
+					<li>Using APIs becomes less of an <q>if</q> and more of a <q>how</q></li>
+					<ul>
+						<li>Business pushes IT to make sure strategy can be executed quickly</li>
+						<li>IT can leverage others as justification and leaders</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="two-views">
+				<title>Two Views of API Scope/Focus</title>
+				<ul>
+					<li><em>Internal:</em> Using APIs to break up monolithic systems</li>
+					<ul>
+						<li>Focus on <em>systems/software engineering</em> and better modularization</li>
+						<li><q>Turn a system into an ecosystem.</q></li>
+						<li>Use <em>Private APIs</em> as a way to reduce tight coupling</li>
+					</ul>
+					<li><em>External:</em> Using APIs to build up ecosystems</li>
+					<ul>
+						<li>Focus on <em>distributed/decentralized systems</em> and better connectivity</li>
+						<li><q>Enable an ecosystem by loosely coupling systems.</q></li>
+						<li>Use <em>Public APIs</em> as a way to (better) interface with partners/public</li>
+					</ul>
+					<li>Both views are complementary and mostly a difference in perspective</li>
+				</ul>
+			</slide>
+			<slide id="one-management-cycle">
+				<title>One Management Lifecycle</title>
+				<img title="API Lifecycle" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="why-apis">
+			<title>Why APIs?</title>
+			<slide id="api-cargo-cult">
+				<title>The Wonders of APIs</title>
+				<img title="API Cargo Cult" src="apis-make-things-happen.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="internal-external">
+				<title>Two Perspectives of API Scope/Focus</title>
+				<ul>
+					<li><em>Internal:</em> Using APIs to break up monolithic systems</li>
+					<ul>
+						<li>Focus on <em>systems/software engineering</em> and better modularization</li>
+						<li><q>Turn a system into an ecosystem.</q></li>
+					</ul>
+					<li><em>External:</em> Using APIs to build up ecosystems</li>
+					<ul>
+						<li>Focus on <em>decentralized systems</em> and better connectivity</li>
+						<li><q>Enable an ecosystem by loosely coupling systems.</q></li>
+					</ul>
+					<li>Both views are complementary and mostly a difference in perspective</li>
+					<ul>
+						<li>The <em>internal perspective</em> tends to gravitate towards <q>building a system</q></li>
+						<li>The <em>external perspective</em> tends to ignore the complexities of decentralization</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="business-model">
+				<title>APIs Serve a Purpose</title>
+				<blockquote><q>Do not try to find the right business model for your APIs; instead, try to find the right APIs for your business model.</q></blockquote>
+				<p class="quotenote"><a href="http://www.apiacademy.co/team_member/mehdi-medjaoui/">Mehdi Medjaoui</a>: <a href="http://twitter.com/medjawii" class="twitter-follow-button" title="Mehdi Medjaoui on Twitter: @medjawii"><code>@medjawii</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></p>
+			</slide>
+		</part>
+		<part id="why-microservices">
+			<title>Why Microservices?</title>
+			<slide id="web-works">
+				<title>The Web Works</title>
+				<ul>
+					<li>MSA is about service autonomy in service-oriented landscapes</li>
+					<ul>
+						<li><em>Developer autonomy</em> is the freedom to choose the best tools for the job</li>
+						<li><em>Operations autonomy</em> means that every service is operated standalone</li>
+					</ul>
+					<li>MSA is also about effectiveness in autonomy-focused service-oriented landscapes</li>
+					<ul>
+						<li><em>Rapid provisioning</em> means that getting started is an easy task</li>
+						<li><em>Basic monitoring</em> establishes visibility into service operations</li>
+						<li><em>Rapid deployment</em> increases the velocity of service landscape evolution</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="web-industrialized">
+				<title>The Web, Industrialized</title>
+				<ul>
+					<li>MSA applies Web Architecture's <em href="http://dret.net/netdret/publications#pau09a">loose coupling</em> to the API space</li>
+					<ul>
+						<li>Build services with no hidden dependencies</li>
+						<li>Choose the best tool for the job</li>
+						<li>Decouple service provisioning from delivery architecture</li>
+						<li>Monitor service state and usage</li>
+						<li>React quickly when customers or market demand change</li>
+						<li>Experiment ruthlessly and keep experimentation cost low</li>
+					</ul>
+					<li>MSA is all about being webby while minimizing the cost</li>
+				</ul>
+			</slide>
+			<slide id="microservices-cargo-cult">
+				<title>Microservices Cargo Cult</title>
+				<img title="Microservices Cargo Cult" src="microservices-cargo-cult.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="what-how">
+				<title>Separating the <q>What</q> from the <q>How</q></title>
+				<ul>
+					<li><em>Why</em> do organizations use MSA and <em>what</em> are their goals?</li>
+					<li>Microservices are a <em>pattern</em> for achieving API agility/velocity</li>
+					<ul>
+						<li><em>Loosely coupled services</em> to allow services to evolve independently</li>
+						<li><em>DevOps</em> to allow services to emerge/evolve faster</li>
+						<li><em>Infrastructure augmentation</em> for management and visibility of services</li>
+					</ul>
+					<li>Focus on the <q>what</q> instead of simply choosing a <q>how</q></li>
+					<ul>
+						<li>Many MSA advantages can be realized in non-MSA architectures</li>
+						<li>More architectural discipline may be required to realize long-term gains</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="transformation-process">
+				<title>Transformation is a Process</title>
+				<ul>
+					<li>Always keep in mind <em>why</em> you are transforming</li>
+					<li>Pick <em>what</em> to transform based on current/strategic needs</li>
+					<li>Learn <em>how</em> to transform based on experience and feedback</li>
+					<li><em>Never stop evolving!</em></li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
