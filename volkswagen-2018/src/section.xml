@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "section.dtd">
+<document>
+	<section id="sgml" author="dret">
+		<title>Standard Generalized Markup Language (SGML)</title>
+		<p>SGML is an ISO standard ...</p>
+		<section id="sgml-syntax" author="bob">
+			<title>SGML Syntax</title>
+			<p>SGML uses markup, which is ...</p>
+		</section>
+	</section>
+	<section id="xml" author="bob">
+		<title>Extensible Markup Language (XML)</title>
+		<p>XML is based on SGML (Section <ref name="sgml"/>) ...</p>
+		<p type="example">XML can be used ...</p>
+		<section id="xml-syntax" author="dret">
+			<title>XML Syntax</title>
+			<p>Section <ref name="sgml-syntax"/> describes ...</p>
+		</section>
+	</section>
+</document>
