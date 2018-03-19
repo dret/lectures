@@ -119,6 +119,779 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="styles">
+		<title>API Styles</title>
+		<toc class="resources"><a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a>&#160;· <a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a></toc>
+		<part id="api-language">
+			<title>APIs are Languages</title>
+			<slide id="problem-solving">
+				<title>Distributed Problem Solving</title>
+				<ul>
+					<li>APIs are part of distributed problem solving</li>
+					<li>Ideal APIs can be used for a range of problems</li>
+					<li>Problem-solving often requires combining APIs</li>
+					<li><q>Language families</q> make it easier to learn and use new APIs</li>
+				</ul>
+			</slide>
+			<slide id="api-conversation">
+				<title>APIs Interactions are Conversations</title>
+				<ul>
+					<li>APIs support conversations between interacting peers</li>
+					<ul>
+						<li>Some conversations are point-to-point (how to find the peer?)</li>
+						<li>Some conversations are point-to-multipoint (how are groups managed?)</li>
+						<li>Some conversations are point-to-ether (what does the ether do?)</li>
+					</ul>
+					<li>API technology does not determine the API conversation style</li>
+					<ul>
+						<li>HTTP can be used for asynchronous conversations (<q href="http://www.webhooks.org/">WebHooks</q> pattern)</li>
+						<li>Synchronous conversations can be layered on top of asynchronous foundations</li>
+					</ul>
+					<li>Conversation goals should determine the conversation style</li>
+				</ul>
+			</slide>
+			<slide id="style-metaphors">
+				<title>API Style Metaphors</title>
+				<ul>
+					<li><link href="tunnel-style"/>: Function calls in procedural programming</li>
+					<li><link href="uri-style"/>: Data access objects</li>
+					<li><link href="hypermedia-style"/>: Browsing the Web</li>
+					<li><link href="query-style"/>: Databases and database queries</li>
+					<li><link href="event-style"/>: Event-based programming</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="tunnel-style">
+			<title>Tunnel Style</title>
+			<slide id="rpc-over-http">
+				<title>Distributed Programming</title>
+				<ul>
+					<li>Rooted in <em>Remote Procedure Call (RPC)</em> patterns</li>
+					<li>Functions are the main abstraction and invoked at known <em>endpoints</em></li>
+					<li>Resource identifiers typically are context-dependent</li>
+					<li>Suffers from the typical RPC problems at bigger scale</li>
+					<ul>
+						<li>Failure is hard to deal with (function calls always succeed)</li>
+						<li>Scoped identifiers mean naming problems and no network effect</li>
+					</ul>
+					<li>Convenient for developers looking to <q>code like a local program</q></li>
+				</ul>
+			</slide>
+		</part>
+		<part id="uri-style">
+			<title>URI Style</title>
+			<slide id="webby-identifiers">
+				<title>Identifiers for Resources</title>
+				<ul>
+					<li>Makes a major step towards a more webby service design</li>
+					<ul>
+						<li>Resources are identified by URIs and thus globally unique</li>
+						<li>Data context may be established by using URI identifiers for resources</li>
+						<li>Navigational context is missing because of a lack of links</li>
+					</ul>
+					<li>One necessary step in the evolution of designing decentralized systems</li>
+					<ul>
+						<li><em>Web of Data</em> is a good starting point</li>
+						<li><em>Web of Services</em> is what makes the Web what it is</li>
+					</ul>
+					<li>Developers are tempted/required to hardcode control flows</li>
+					<ul>
+						<li>No navigational guidance provided by the API</li>
+						<li>Guidance must be hand-crafted or clients are forced to do trial-and-error</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="hypermedia-style">
+			<title>Hypermedia Style</title>
+			<slide id="webby-style">
+				<title>Webby APIs</title>
+				<ul>
+					<li>Based on mixing data and controls in representations</li>
+					<ul>
+						<li><em>Data</em> represents the current resource state</li>
+						<li><em>Controls</em> represent the advertised next options for clients</li>
+					</ul>
+					<li>Controls allow clients to work across individual APIs</li>
+					<ul>
+						<li>APIs expose sets of resources and provide links</li>
+						<li>Clients follow links without being aware of API boundaries</li>
+					</ul>
+					<li>Developers must code differently from usual programming flows</li>
+					<ul>
+						<li>Applications are driven by the responses that client code receives</li>
+						<li>Imperative programming is not the best fit for this kind of flow</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="query-style">
+			<title>Query Style</title>
+			<slide id="database-style">
+				<title>Querying Structured Data</title>
+				<ul>
+					<li>The API provides access to a rich interconnected data structure</li>
+					<ul>
+						<li>Clients know the data model and understand how to query it</li>
+						<li>Clients want a small subset of the available data</li>
+					</ul>
+					<li>Querying into structure data needs an agreement on data and querying</li>
+					<ul>
+						<li>Query-style APIs define a <em>metamodel</em> that all data models must use</li>
+						<li>Query-style APIs define a <em>query language</em> for querying data</li>
+					</ul>
+					<li><em>Loose coupling</em> depends on if and how clients adjust to schema changes</li>
+					<ul>
+						<li>Is it possible for clients to find out about schema changes?</li>
+						<li>Do clients have to worry about schema changes?</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="event-style">
+			<title>Event-Based Style</title>
+			<slide id="fire-and-forget">
+				<title>Fire and Forget</title>
+				<ul>
+					<li>Synchronous communications result in tighter coupling between peers</li>
+					<li>Asynchronous communications can make data provision easier</li>
+					<ul>
+						<li>Data is tagged and submitted into some <em>messaging fabric</em></li>
+						<li>The fabric takes care of notifying and delivering data to consumers</li>
+					</ul>
+					<li>The fabric is beyond the <em>smart endpoints and dumb pipes</em> idea</li>
+					<ul>
+						<li><em>Smart pipes</em> are not bad by itself but often have problems scaling</li>
+					</ul>
+					<li>Managing the fabric becomes an essential part of making code work</li>
+					<ul>
+						<li>Who is producing data?</li>
+						<li>Who is consuming data?</li>
+						<li>What are the ways in which data can or must be tagged?</li>
+						<li>How is the namespace of data tagging managed?</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="event-sourcing">
+				<title>Event Sourcing: Durable Event Logs</title>
+				<ul>
+					<li>Application state is determined by events that have happened</li>
+					<ul>
+						<li>Application state can be re-created by replaying the sequence of events</li>
+						<li>Persisting events becomes essential for representing application state</li>
+					</ul>
+					<li>Useful pattern for designs where auditing/accounting is a key component</li>
+					<ul>
+						<li>Application state is determined <em>as a function of the audit trail</em></li>
+						<li>Auditing/Accounting by definition is in sync with application state</li>
+						<li>Temporal reasoning becomes easier</li>
+					</ul>
+					<li><q>Isolation</q> from external events (input/output) becomes essential</li>
+					<ul>
+						<li><em>Event replay</em> may be needed to recreate application state</li>
+						<li><em>Event replay</em> must be prevented from replaying external effects</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="cqrs">
+			<title>Command Query Responsibility Segregation (CQRS)</title>
+			<slide id="read-write-model">
+				<title>Separating Read and Write Models</title>
+				<ul>
+					<li>Read and write can follow very different approaches</li>
+					<ul>
+						<li><em>Reading</em> may result in data enriched with related data or links</li>
+						<li><em>Writing</em> may be less strict and may use fewer data items</li>
+					</ul>
+					<li>CQRS is a result of looking at read/write as two different services</li>
+					<ul>
+						<li>Can be useful when read and write are typically different applications</li>
+						<li>Can be confusing when it becomes to simply read/modify/update data</li>
+					</ul>
+					<li>CQRS usually means having different models (not just variations)</li>
+					<ul>
+						<li>Different models means that mapping can be non-trivial</li>
+						<li><q>Lightweight CQRS</q> can be achieved with <link href="profiles">profiles</link> (model variations)</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="choosing-style">
+			<title>Choosing an API Style</title>
+			<slide id="api-style-maslow">
+				<title>API Styles are Tools</title>
+				<img title="Hammer and Screw" href="https://www.flickr.com/photos/justinbaeder/5317820857" src="maslow-hammer-nail.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-style-properties">
+				<title>API Style Properties</title>
+				<ul>
+					<li>API styles influence important API properties</li>
+					<ul>
+						<li><em>Scalability:</em> Number of APIs, API teams, API consumers, and API interactions</li>
+						<li><em>Usability:</em> Problem domain, established styles, available tooling</li>
+						<li><em>Changeability:</em> BFF, known/unknown group of consumers</li>
+						<li><em>Performance:</em> What are critical issues in known scenarios</li>
+						<li><em>Reliability:</em> Operational concerns and centralization/decentralization</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-style-context">
+				<title>Context Considerations</title>
+				<ul>
+					<li><em>Backend for Frontend (BFF)</em> implies tight coupling producer/consumer</li>
+					<ul>
+						<li>API style and API design can be coordinated with the consumer</li>
+					</ul>
+					<li><em>Private APIs</em> implies a smaller group of potential consumers</li>
+					<ul>
+						<li>Style and design can be guided by internal guidelines/practices</li>
+					</ul>
+					<li><em>Partner APIs</em> implies a well-known group of consumers</li>
+					<ul>
+						<li>Broader appeal to consumers necessary</li>
+					</ul>
+					<li><em>Public APIs</em> is the most loosely couple group of consumers</li>
+					<ul>
+						<li>No control over consumers and their preferences/tools and development cycles</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="style-implementations">
+				<title>API Styles in the Wild</title>
+				<ul>
+					<li><link href="tunnel-style"/>: XML-RPC, SOAP, gRPC</li>
+					<li><link href="uri-style"/>: Swagger/OpenAPI</li>
+					<li><link href="hypermedia-style"/>: HAL, Siren, Atom</li>
+					<li><link href="query-style"/>: GraphQL, OData, SPARQL</li>
+					<li><link href="event-style"/>: MQ, WebSub, MQTT, XMPP, AMQP</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="style-conclusions">
+			<title>Conclusions</title>
+			<slide id="no-style-hammer">
+				<title>There is no Style Hammer</title>
+				<ul>
+					<li>API styles can be combined</li>
+					<li>Style coherence makes a API landscape more usable</li>
+					<li>Style fundamentalism may pick the wrong tool for a problem</li>
+					<li>Be aware of styles and pick the one that works best</li>
+				</ul>
+			</slide>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/politecnico-2018"><code>dret.net/lectures/politecnico-2018</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/politecnico-2018"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="representations">
+		<title>Representations for APIs</title>
+		<toc class="resources"><a href="http://www.webconcepts.info/concepts/media-type/" title="Web Concepts: Media Types">Media Types</a>&#160;· <a href="http://www.w3.org/TR/xml/" title='Tim Bray, Jean Paoli, C. Michael Sperberg-McQueen, Eve Maler, and François Yergeau, "Extensible Markup Language (XML) 1.0 (Fifth Edition)", W3C Recommendation REC-xml-20081126, November 2008'>XML</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/8259" title='Tim Bray, "The JavaScript Object Notation (JSON) Data Interchange Format", IETF RFC 8259, December 2017'>JSON</a>&#160;· <a href="http://www.w3.org/TR/rdf11-concepts/" title='Richard Cyganiak, David Wood, and Markus Lanthaler, "RDF 1.1 Concepts and Abstract Syntax", W3C Recommendation REC-rdf11-concepts-20140225, February 2014'>RDF</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/4287" title='Mark Nottingham and Robert Sayre, "The Atom Syndication Format", IETF RFC 4287, December 2005'>Atom</a>&#160;· <a href="https://www.w3.org/TR/activitystreams-core/" title='James Snell and Evan Prodromou, "Activity Streams 2.0", W3C Recommendation REC-activitystreams-core-20170523, May 2017'>Activity Streams</a>&#160;· <a href="https://jsonfeed.org/">JSON Feed</a>&#160;· <a title='Yakov Shafranovich, "Common Format and MIME Type for Comma-Separated Values (CSV) Files", IETF RFC 4180, October 2005' href="http://webconcepts.info/specs/IETF/RFC/4180">RFC 4180</a>&#160;· <a title='Erik Wilde, "The &apos;profile&apos; Link Relation Type", Internet RFC 6906, March 2013' href="http://webconcepts.info/specs/IETF/RFC/6906">RFC 6906</a>&#160;· <a title='Mark Nottingham and Erik Wilde, "Problem Details for HTTP APIs", Internet RFC 7807, March 2016' href="http://webconcepts.info/specs/IETF/RFC/7807">RFC 7807</a></toc>
+		<part id="intro">
+			<title>Introduction</title>
+			<slide id="digital-shadow">
+				<title>Digital Shadows</title>
+				<ul>
+					<li><em>Digital Transformation</em> mirrors/designs/builds a world in the digital realm</li>
+					<ul>
+						<li>Represent your business (processes) in IT to allow automation</li>
+						<li>Business transformation can be (more) easily executed on the IT side</li>
+						<li>IT insights and changes directly translate to the business side</li>
+					</ul>
+					<li>IT always has been <em>modeling</em> and <em>implementing</em> <q>reality</q></li>
+					<ul>
+						<li><em>Essential complexity</em> is a result of domain complexity</li>
+						<li><em>Accidental complexity</em> is a result of implementation complications</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="resources">
+				<title>Resources</title>
+				<ul>
+					<li>APIs are languages that allow providers and consumers to communicate</li>
+					<ul>
+						<li>API design is about supporting <em>conversations</em> between peers</li>
+						<li><em>Conversations</em> revolve around resource <em>interactions</em></li>
+						<li><em>Interactions</em> are about exchanging resource representations</li>
+					</ul>
+					<li>Resources are anything that the API language should talk about</li>
+					<ul>
+						<li>Resources can be real-world concepts such as <em>products</em></li>
+						<li>Resources can be immaterial concepts such as <em>product descriptions</em></li>
+						<li>Resources can be ephemeral concepts such as <em>product orders</em></li>
+						<li>Resources can be temporary concepts such as <em>current orders for a product</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="digital-representations">
+				<title>Digital Representations</title>
+				<ul>
+					<li>Resources are concepts on the service side</li>
+					<ul>
+						<li>They are essential to the service model</li>
+						<li>Resources are not directly accessible or available</li>
+						<li>Clients only use <em>representations</em> when interacting with services</li>
+					</ul>
+					<li>Separate shallow <em>service surfaces</em> and deep <em>service models</em></li>
+					<ul>
+						<li><em>Service surfaces</em> are minimal sets of representations and interactions</li>
+						<li><em>Service models</em> are domain models for experts and implementers</li>
+					</ul>
+					<li>Separating surfaces and models reduces coupling</li>
+				</ul>
+			</slide>
+			<slide id="vocabularies">
+				<title>Vocabularies</title>
+				<ul>
+					<li>Vocabularies define the language for API interactions</li>
+					<ul>
+						<li>They help to understand the scope and breadth of resource representations</li>
+					</ul>
+					<li>Shallow and simple vocabularies are essential for loose coupling</li>
+					<ul>
+						<li>Shallowness avoids unnecessary details and deep model dependencies</li>
+						<li>Simplicity allows clients to more easily understand the <em>API language</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="validation">
+				<title>Validation</title>
+				<ul>
+					<li>Validation helps to enforce the proper use of the language</li>
+					<ul>
+						<li>Vocabularies define the <q>sentences of the API conversation</q></li>
+						<li>Good vocabularies define where the language can be extended</li>
+						<li>Good vocabularies define what to do when encountering extensions</li>
+					</ul>
+					<li>Validation only covers the individual representation exchanges</li>
+					<ul>
+						<li>Most API have constraints which go beyond representation validation</li>
+						<li>Validating conversation patterns is beyond representation validation</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="what-how">
+			<title>What and How to Represent</title>
+			<slide id="representing-what">
+				<title>What to Represent</title>
+				<ul>
+					<li>Representations are determined by the <link href="styles">API style</link></li>
+					<ul>
+						<li><link href="tunnel-style">Tunnel style</link> represents function calls (names and parameters/results)</li>
+						<li><link href="uri-style">URI style</link> represents resources for CRUD operations</li>
+						<li><link href="hypermedia-style">Hypermedia style</link> represents resource for REST interactions</li>
+						<li><link href="query-style">Query style</link> represents queries and query results</li>
+						<li><link href="event-style">Event-based style</link> represents events that are produced/consumed</li>
+					</ul>
+					<li>Some styles especially benefit from <q>common representation patterns</q></li>
+					<ul>
+						<li><em>Tunnel style</em> may benefit from a general schema for function names and parameters</li>
+						<li><em>Event-based style</em> may benefit from a general schema for event names and parameters</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="objects-vs-documents">
+				<title>Objects vs. Documents</title>
+				<ul>
+					<li><em>Objects</em> follow the pattern of many common programming languages</li>
+					<ul>
+						<li>Objects are structured and allow nesting</li>
+						<li>Object members are typed according to an existing set of types</li>
+					</ul>
+					<li><em>Documents</em> represent semi-structured data</li>
+					<ul>
+						<li>Documents often have more flexible schemas with more variations</li>
+						<li>Document content is a mix of structural elements with textual data</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="object-example">
+				<title>Object Example (JSON)</title>
+				<listing src="json-example.json"/>
+			</slide>
+			<slide id="document-example">
+				<title>Document Example (XML)</title>
+				<listing src="section.xml"/>
+			</slide>
+			<slide id="profiles">
+				<title>Profiles</title>
+				<ul>
+					<li>Variations of representations often can serve different purposes</li>
+					<ul>
+						<li><em>Order forms</em> represent that a customer is ordering goods or services</li>
+						<li><em>Anonymized orders</em> may be more safe to pass around for privacy reasons</li>
+						<li><em>Enhanced orders</em> may contain additional details for specific order types</li>
+					</ul>
+					<li>Signalling underlying commonality makes it easy to reuse processing code</li>
+					<li>Signalling <em>profiles</em> makes it possible to identify variations</li>
+					<ul>
+						<li>Profiles can be more constrained than the underlying type (within its limitations)</li>
+						<li>Profiles can specifically extend the underlying type (within its limitations)</li>
+					</ul>
+					<li><a title='Erik Wilde, "The &apos;profile&apos; Link Relation Type", Internet RFC 6906, March 2013' href="http://webconcepts.info/specs/IETF/RFC/6906">RFC 6906</a> defines how to identify profiles and signal their usage</li>
+					<ul>
+						<li>Profiles must be identify by URI (which serves as an identifier)</li>
+						<li>Profiles can be signaled through <code>profile</code> links and/or representation mechanisms</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="xml">
+			<title>Extensible Markup Language (XML)</title>
+			<slide id="xml-origins">
+				<title>XML Origins and History</title>
+				<ul>
+					<li>Envisioned as a way for sites to publish their data models</li>
+					<ul>
+						<li>HTML is a simple and mostly presentation-oriented vocabulary</li>
+						<li>Web sites should have the freedom to use their domain vocabularies</li>
+						<li>CSS/XSLT stylesheets would then be used to render in the browser</li>
+					</ul>
+					<li>XML was the first open structured data format on the Internet/Web</li>
+					<ul>
+						<li><em>Web Services</em> took it at ran with it (and little else)</li>
+						<li><em>JavaScript</em> replaced the declarative stylesheet dreams</li>
+					</ul>
+					<li>JSON replaced XML quickly when it became an alternative</li>
+					<ul>
+						<li>Direct mapping into the data structures of most programming languages</li>
+						<li>No baggage of document-oriented design and related technologies (no <em>data binding</em>)</li>
+						<li>Better fit for simple <q>on-the-wire</q> models</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="xml-basics">
+				<title>Basic Concepts: Elements and Attributes</title>
+				<ul>
+					<li>XML Documents have an <em>XML declaration</em> (optional)</li>
+					<li>There is exactly one <em>document element</em> (a.k.a. <em>root element</em>)</li>
+					<li>Elements may be nested (there is no conceptual limit)</li>
+					<ul>
+						<li>Elements may be repeated (they can be identified by position)</li>
+					</ul>
+					<li>Elements are marked up using <em>tags</em></li>
+					<ul>
+						<li>Most elements have content, surrounded by <em>start</em> and <em>end tags</em></li>
+						<li>Empty elements are allowed and may use a special notation</li>
+					</ul>
+					<li>Elements may have attributes (zero to any number)</li>
+					<ul>
+						<li>Attributes can only occur once on an element (i.e., they cannot be repeated)</li>
+					</ul>
+				</ul>
+				<listing src="my-first.xml"/>
+			</slide>
+			<slide id="xml-tree">
+				<title>XML is Trees</title>
+				<ul>
+					<li>Markup is important, but only a notation</li>
+					<li>XML documents are trees with different node types</li>
+					<ul>
+						<li>Node types so far: document, element, attribute, text</li>
+					</ul>
+					<img style="width : 90% ; margin : 4% ;" src="xml-tree.png" title="XML Document Tree"/>
+				</ul>
+			</slide>
+			<slide id="xml-content-names">
+				<title>XML Content and Names</title>
+				<p>XML documents can use a wide array of characters. They are defined by <a href="http://www.unicode.org/">Unicode</a>, which in Version 5.0 defines more than 100'000 characters (#100'000 added in 2005).</p>
+				<listing src="japanese1.xml"/>
+				<listing src="japanese2.xml"/>
+			</slide>
+			<slide id="xml-elements">
+				<title>Elements</title>
+				<ul>
+					<li>Elements can use a <a href="http://www.w3.org/TR/xml/#NT-Name">wide variety of names</a></li>
+					<ul>
+						<li>Allowed: <code>&lt;html></code>, <code>&lt;id9832798472></code>, <code>&lt;_></code>, <code>&lt;:></code>, <code>&lt;こんにちは></code></li>
+						<li>Disallowed: leading numbers, spaces, control characters</li>
+					</ul>
+					<li>Element names usually convey some information about the content</li>
+					<ul>
+						<li>This is not reliable and highly language-dependent</li>
+						<li>It is <em>extremely useful</em> when working with a known vocabulary</li>
+						<li>It is <em>potentially harmful</em> when working with an unknown vocabulary</li>
+					</ul>
+					<li>Elements are the foundation for XML's versatility</li>
+					<ul>
+						<li>They can be nested (<code>&lt;address>&lt;city>Berkeley&lt;/city>&lt;zip>94709&lt;/zip>…</code>)</li>
+						<li>They can be repeated (<code>&lt;givenname>Erik&lt;/givenname>&lt;givenname>Thomas&lt;/givenname></code>)</li>
+						<li>Their sequence can convey additional information (e.g., given names have a sequence)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="xml-attributes">
+				<title>Attributes</title>
+				<ul>
+					<li>Additional information pertaining to elements</li>
+					<li>Traditionally, anything that is not considered <q>content</q></li>
+					<ul>
+						<li>SGML is a document markup language</li>
+						<li>XML uses SGML's document-based concepts</li>
+						<li>XML has its roots in the document world</li>
+					</ul>
+					<li>Elements: Content (i.e., Data); Attributes: Metadata</li>
+					<li>Documents often distinguish by what is textual content</li>
+				</ul>
+				<listing src="section.xml" line="12-20"/>
+			</slide>
+		</part>
+		<slide id="mixed-content">
+			<title>Mixed Content</title>
+			<p>The term <em>Mixed content</em> in XML refers to elements <a href="http://www.w3.org/TR/xml/#sec-mixed-content">which have text content mixed with elements</a>. What these elements do depends on the elements <img style="height : 1em" src="smiley.gif"/>, but the important point is that they are on the same level as the text nodes of the mixed content.</p>
+			<pre><![CDATA[<p>The term <em>Mixed content</em> in XML refers to elements <a href="http://www.w3.org/TR/xml/#sec-mixed-content">which have text content mixed with elements</a>. What these elements do depends on the elements <img style="height : 1em" src="smiley.gif"/>, but the important point is that they are on the same level as the text nodes of the mixed content.</p>]]></pre>
+			<img style="width : 90% ; margin : 4% ;" src="mixed-content.png" title="XML tree for mixed content"/>
+		</slide>
+		<slide id="mixed-content-usage">
+			<title>Mixed Content Usage</title>
+			<ul>
+				<li>Database people find mixed content rather irritating</li>
+				<ul>
+					<li>Cannot be easily mapped to relational structures</li>
+					<li>Is more <em>document-like</em> than <em>data-like</em></li>
+					<li>Much harder to optimize for query analysis and query processing</li>
+				</ul>
+				<li>Document people find mixed content very intriguing</li>
+				<ul>
+					<li>Textual content can still be used as simple text</li>
+					<li>Markup provides additional information for rich text</li>
+					<li>Start with a text-only document and use markup to add structure to it</li>
+				</ul>
+			</ul>
+		</slide>
+		<slide>
+			<title>Semantics</title>
+			<ul>
+				<li>XML is a language for encoding trees</li>
+				<ul>
+					<li>Elements and attributes are labeled nodes in this tree</li>
+					<li>The labels can be chosen freely by document authors</li>
+				</ul>
+				<li>The tree's meaning is nothing XML is concerned with</li>
+				<ul>
+					<li>Peers must have a mutual understanding of the semantics</li>
+					<li>XML without mutual understanding is almost useless</li>
+					<li>Reverse engineering often is possible, but it is risky and brittle</li>
+				</ul>
+			</ul>
+		</slide>
+		<part id="json">
+			<title>JavaScript Object Notation (JSON)</title>
+			<slide id="json-xml">
+				<title>JSON and XML</title>
+				<ul>
+					<li>JSON replaced XML very quickly because of its simplicity</li>
+					<ul>
+						<li>JSON is mostly used for <q>on-the-wire</q> models</li>
+						<li>XML is intended for document representation, storage, and processing</li>
+					</ul>
+					<li>JSON's main advantage over XML is its object-orientation</li>
+					<ul>
+						<li>JSON can be directly mapped into most language's native data structures</li>
+						<li>XML needs tree model processing or some form of data-binding</li>
+					</ul>
+					<li>JSON has no notion of vocabularies or namespaces</li>
+					<ul>
+						<li>XML's complexity and complications are not needed in most cases</li>
+						<li>Composing JSON vocabularies is much more brittle than in XML</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="json-basics">
+				<title>JSON Basics</title>
+				<ul>
+					<li>JSON is the <q>data structure part</q> of JavaScript</li>
+					<ul>
+						<li>Perfect match for client code consuming JSON data</li>
+						<li>Very good match for many other languages with structured data types</li>
+					</ul>
+					<li>JSON is good for <em>data-on-the-wire</em> and not so much for complex models</li>
+					<li>JSON has found its way into many typical IT components</li>
+					<ul>
+						<li>Some databases use JSON as their native data model (<a href="https://www.mongodb.com/">MongoDB</a>)</li>
+						<li>Many databases have added JSON to their data type support</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="json-structure">
+				<title>JSON Structure</title>
+				<ul>
+					<li>JSON has a small set of data types</li>
+					<ul>
+						<li><code>object</code>s are a set of name/value pairs called <em>members</em></li>
+						<li><code>array</code>s are a sequence of potentially heterogeneous values</li>
+						<li><code>number</code>s use regular decimal notation with an optional exponent</li>
+						<li><code>string</code>s are quoted with escape for special characters and Unicode</li>
+						<li><code>boolean</code>s use the two values <code>true</code> and <code>false</code></li>
+					</ul>
+					<li>Objects and arrays can be nested as deeply as required</li>
+				</ul>
+			</slide>
+			<slide id="json-example">
+				<title>JSON Example</title>
+				<listing src="json-example.json"/>
+			</slide>
+			<slide id="ijson">
+				<title>JSON and I-JSON</title>
+				<ul>
+					<li>Plain JSON is defined by <a href="http://webconcepts.info/specs/IETF/RFC/8259">RFC 8259</a></li>
+					<li>I-JSON constrains JSON and is defined by <a href="http://tools.ietf.org/html/rfc7493">RFC 7493</a></li>
+					<li>I-JSON defines some common-sense conventions around JSON</li>
+					<ul>
+						<li>The only allowed character encoding is UTF-8</li>
+						<li>No numbers exceeding the limits of IEEE 754 double precision</li>
+						<li>No members with duplicate names in objects</li>
+						<li>Try to avoid top-level constructs other than array/object</li>
+						<li>For time/date values use ISO 8601 with timezone and trailing seconds</li>
+						<li>Binary data should be encoded using <code href="http://tools.ietf.org/html/rfc4648#section-5">base64url</code></li>
+					</ul>
+					<li>Most developers instinctively avoid features disallowed by I-JSON</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="rdf">
+			<title>Resource Description Framework (RDF)</title>
+			<slide id="rdf-roots">
+				<title>Describing Resources</title>
+				<ul>
+					<li>RDF started as a generalization of <span title="Platform for Internet Content Selection">PICS</span></li>
+					<ul>
+						<li>A way to simple make <em>statements</em> about URI-identified resources</li>
+						<li>Statements are using <em>(Subject, Predicate, Object)</em> triples</li>
+					</ul>
+					<li>Statements can be aggregated and result in a graph-oriented data model</li>
+					<ul>
+						<li><em>Subject</em> (URI): The resource the statement is about</li>
+						<li><em>Predicate</em> (URI): The kind of statement being made</li>
+						<li><em>Object</em> (URI or literal): The statement that is being made</li>
+					</ul>
+					<li>The aggregate graph can be interpreted as a set of interconnected statements</li>
+				</ul>
+			</slide>
+			<slide id="triple-example">
+				<title>Triple Example</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-triple" src="rdf11-primer-example-triples.txt"/>
+			</slide>
+			<slide id="two-rdf-views">
+				<title>Two Views of RDF</title>
+				<ul>
+					<li>The <em>logic view</em> sees the graph as a set of interconnected statements</li>
+					<ul>
+						<li>Statements are at the center of this perspective</li>
+						<li>Merging graphs is mainly an act of merging statements</li>
+					</ul>
+					<li>The <em>graph view</em> sees the graph as a triple-based data structure</li>
+					<ul>
+						<li>Merging graphs based on node identity is the main concern</li>
+						<li>Having elaborate schemas of statement types is not a necessity</li>
+					</ul>
+					<li>Both views are complementary but influence the models and tooling</li>
+				</ul>
+			</slide>
+			<slide id="triple-graph">
+				<title>Triples as a Graph</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="rdf11-primer-example-graph.jpg" title="Informal graph of the sample triples" href="https://www.w3.org/TR/rdf11-primer/#section-triple"/>
+			</slide>
+		</part>
+		<part id="more-representation">
+			<title>More Representation Formats</title>
+			<slide id="collection-formats">
+				<title>Collections as a Pattern</title>
+				<ul>
+					<li>Collections and their management is a common design pattern</li>
+					<ul>
+						<li>Often some form of similarity/commonality across collection members</li>
+					</ul>
+					<li>Re-inventing collection formats might be a good design choice</li>
+					<ul>
+						<li><a href="http://webconcepts.info/specs/IETF/RFC/4287" title="IETF RFC 4287">Atom</a> is XML-based and has <a href="http://dret.typepad.com/dretblog/atom-landscape.html">many additional features</a></li>
+						<li><a href="https://jsonfeed.org/">JSON Feed</a> is a JSON-based variant of Atom</li>
+						<li><a href="https://www.w3.org/TR/activitystreams-core/">Activity Streams</a> focuses on activity publishing/syndication</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="csv">
+				<title>Comma-Separated Values (CSV)</title>
+				<ul>
+					<li><a href="http://webconcepts.info/specs/IETF/RFC/4180">RFC 4180</a> defines a textual format for <q>spreadsheet data</q></li>
+					<li>CSV has been used for a long time, but some of the details were solved differently</li>
+					<li>Defining a media type makes it easier for implementations to know what to expect</li>
+					<ul>
+						<li>The CSV registration not only registers the type, but also defines it</li>
+					</ul>
+					<li>CSV is not overly complex, but some issues have to be solved</li>
+					<ul>
+						<li>How to separate lines (CRLF)</li>
+						<li>How to end the file (CRLF is allowed but optional)</li>
+						<li>Are headers allowed (yes, but they are not marked as such)</li>
+						<li>May different lines use different numbers of fields (no)</li>
+						<li>Are spaces significant (yes)</li>
+						<li>Are quotes significant (no, they are delimiters, so quotes as values must be escaped)</li>
+						<li>How to treat fields with CRLF, commas, or quotes (enclose the value in quotes)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="http-problem">
+				<title>HTTP Problem Details</title>
+				<ul>
+					<li><a href="http://webconcepts.info/concepts/http-status-code/">HTTP status codes</a> are useful but minimalistic</li>
+					<ul>
+						<li>Their well-defined semantics allow intermediaries to act on them</li>
+						<li>Servers may want to convey additional information with them</li>
+					</ul>
+					<li>APIs may include <em>problem details</em> as part of their representation designs</li>
+					<ul>
+						<li>Using a standard reduces the design work on the server side</li>
+						<li>Using a standard allows developers to more easily understand the design</li>
+						<li>Using a standard allows problem details analysis across APIs</li>
+					</ul>
+					<li><a title='Mark Nottingham and Erik Wilde, "Problem Details for HTTP APIs", Internet RFC 7807, March 2016' href="http://webconcepts.info/specs/IETF/RFC/7807">RFC 7807</a> defines a JSON-centric model for problem details</li>
+					<ul>
+						<li><code>application/problem+json</code> is a JSON-based representation of the problem detail model</li>
+						<li><code>application/problem+xml</code> is an XML-based representation of the problem detail model</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="http-problem-json">
+				<title>HTTP Problem: JSON</title>
+				<listing href="https://tools.ietf.org/html/rfc7807#section-3" src="http-problem.json"/>
+			</slide>
+			<slide id="http-problem-xml">
+				<title>HTTP Problem: XML</title>
+				<listing href="https://tools.ietf.org/html/rfc7807#appendix-A" src="http-problem.xml"/>
+			</slide>
+		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="language-matters">
+				<title>Language Matters</title>
+				<ul>
+					<li>APIs are languages</li>
+					<li>Representations are language sentences</li>
+					<li>Design and document the language of each API</li>
+					<li>Choosing a metamodel is a question of API, context, and taste</li>
+				</ul>
+			</slide>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/volkswagen-2018"><code>dret.net/lectures/volkswagen-2018</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/volkswagen-2018"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 	<presentation id="microservices">
 		<title>Microservices</title>
 		<toc class="abstract">Microservices are a way how to improve the speed of software delivery, result in more scalable architectures, and make sure that these goals do not compromise the robustness of the overall landscape. The concept of microservices has been distilled from a set of practices that have been adopted in bigger organizations that need to make sure that service development and delivery is as fast as possible. Microservices have a close architectural parallel in the Web, which is built around the same general principles of strictly separate implementations, easily usable interfaces, and an ecosystem model where the measure of success and fitness is that of the overall resulting system, and not that of the individual components.</toc>
