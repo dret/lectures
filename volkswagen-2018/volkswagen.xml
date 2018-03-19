@@ -894,12 +894,7 @@
 	</presentation>
 	<presentation id="microservices">
 		<title>Microservices</title>
-		<toc class="abstract">Microservices are a way how to improve the speed of software delivery, result in more scalable architectures, and make sure that these goals do not compromise the robustness of the overall landscape. The concept of microservices has been distilled from a set of practices that have been adopted in bigger organizations that need to make sure that service development and delivery is as fast as possible. Microservices have a close architectural parallel in the Web, which is built around the same general principles of strictly separate implementations, easily usable interfaces, and an ecosystem model where the measure of success and fitness is that of the overall resulting system, and not that of the individual components.</toc>
 		<toc class="resources"><a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="https://martinfowler.com/microservices/" title="Martin Fowler's Microservices Resource Guide">Microservices Resource Guide</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 		<part id="microservices-pattern">
 			<title>Microservices as a Pattern</title>
 			<slide id="microservices-scalability">
