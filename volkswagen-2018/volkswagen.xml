@@ -1047,7 +1047,7 @@
 			<slide id="ijson">
 				<title>JSON and I-JSON</title>
 				<ul>
-					<li>Plain JSON is defined by <a href="http://webconcepts.info/specs/IETF/RFC/8259">RFC 8259</a></li>
+					<li>Plain JSON is defined by <a href="http://webconcepts.info/specs/IETF/RFC/8259" title='Tim Bray, "The JavaScript Object Notation (JSON) Data Interchange Format", IETF RFC 8259, December 2017'>RFC 8259</a></li>
 					<li>I-JSON constrains JSON and is defined by <a href="http://tools.ietf.org/html/rfc7493">RFC 7493</a></li>
 					<li>I-JSON defines some common-sense conventions around JSON</li>
 					<ul>
@@ -1073,7 +1073,7 @@
 					</ul>
 					<li>Re-inventing collection formats might be a good design choice</li>
 					<ul>
-						<li><a href="http://webconcepts.info/specs/IETF/RFC/4287" title="IETF RFC 4287">Atom</a> is XML-based and has <a href="http://dret.typepad.com/dretblog/atom-landscape.html">many additional features</a></li>
+						<li><a href="http://webconcepts.info/specs/IETF/RFC/4287" title='Mark Nottingham and Robert Sayre, "The Atom Syndication Format", IETF RFC 4287, December 2005'>Atom</a> is XML-based and has <a href="http://dret.typepad.com/dretblog/atom-landscape.html">many additional features</a></li>
 						<li><a href="https://jsonfeed.org/">JSON Feed</a> is a JSON-based variant of Atom</li>
 						<li><a href="https://www.w3.org/TR/activitystreams-core/">Activity Streams</a> focuses on activity publishing/syndication</li>
 					</ul>
