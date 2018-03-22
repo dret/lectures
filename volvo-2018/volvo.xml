@@ -2541,6 +2541,23 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="semantic-versioning">
+				<title><a href="http://semver.org/">Semantic Versioning</a></title>
+				<ul>
+					<li><a href="http://semver.org/">Semantic Versioning</a> standardizes the meaning of version numbers</li>
+					<li>Version numbers follow the <code>MAJOR.MINOR.PATCH</code> pattern and the following rules</li>
+					<ul>
+						<li>Increase <code>MAJOR</code> version for incompatible API changes</li>
+						<li>Increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
+						<li>Increase <code>PATCH</code> version for making backwards-compatible bug fixes</li>
+					</ul>
+					<li>Mostly about how to name implementation artifacts and of limited use for APIs</li>
+					<ul>
+						<li>Exposing detailed version/patch information is a potential security risk</li>
+						<li>No behavioral benefit other than allowing clients to raise errors and stop working</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="linking-versions">
 				<title>Linking Versions</title>
 				<ul>
@@ -2560,23 +2577,6 @@
 					<ul>
 						<li>APIs share home documents or at least version histories across versions</li>
 						<li>Versioning links are used to allow navigation across all API versions</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="semantic-versioning">
-				<title><a href="http://semver.org/">Semantic Versioning</a></title>
-				<ul>
-					<li><a href="http://semver.org/">Semantic Versioning</a> standardizes the meaning of version numbers</li>
-					<li>Version numbers follow the <code>MAJOR.MINOR.PATCH</code> pattern and the following rules</li>
-					<ul>
-						<li>Increase <code>MAJOR</code> version for incompatible API changes</li>
-						<li>Increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
-						<li>Increase <code>PATCH</code> version for making backwards-compatible bug fixes</li>
-					</ul>
-					<li>Mostly about how to name implementation artifacts and of limited use for APIs</li>
-					<ul>
-						<li>Exposing detailed version/patch information is a potential security risk</li>
-						<li>No behavioral benefit other than allowing clients to raise errors and stop working</li>
 					</ul>
 				</ul>
 			</slide>
