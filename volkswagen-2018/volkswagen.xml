@@ -105,7 +105,150 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="conclusions">
+		<part id="schedule">
+			<title>Workshop Schedule</title>
+			<slide id="day-1">
+				<title>Monday, March 26</title>
+				<ul>
+					<li>10.00-10.15: <link href="introduction">Welcome and Introduction</link></li>
+					<li>10.15-11.00: <link href="digital-transformation">APIs and Digital Transformation</link></li>
+					<li>11.00-12.00: <link href="styles">Styles (RPC, Hypermedia, Query-based)</link></li>
+					<li>12.15-13.30: <link href="microservices">Microservice Architecture</link></li>
+					<li>14.30-15.00: <link href="representations">Representations</link></li>
+					<li>15.00-15.30: <link href="design-dx">Design and Developer Experience (DX)</link></li>
+					<li>15.30-16.00: <link href="landscapes">Managing API Landscapes</link></li>
+					<li>16.15-17.00: <link href="change-management">Change Management and Versioning</link></li>
+					<li>17.00-17.45: <link href="organizational">Organizational Issues</link></li>
+					<li>17.45-18.00: Wrap-up</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="high-level-view">
+			<title>APIs from 50,000 feet</title>
+			<slide id="api-language">
+				<title>APIs are Languages</title>
+				<ul>
+					<li>APIs in their current sense evolved from the <em>original API</em></li>
+					<ul>
+						<li><em>Local APIs</em> originated as a way to build systems (i.e., one big thing)</li>
+						<li><em>Network APIs</em> were invented decades ago but nobody found the silver bullet</li>
+						<li><em>Web APIs</em> are a loose and evolving collection of principles and patterns</li>
+					</ul>
+					<li>Languages become necessary when coordination is required</li>
+					<ul>
+						<li><em>Human language</em> is a result of improving ecological fitness</li>
+						<li><em>Human written language</em> is a result of new organizational challenges</li>
+					</ul>
+					<li>Same problems/approaches/answers like other language problems</li>
+					<ul>
+						<li><em>Domain-only:</em> Domains figure out their problems and their languages</li>
+						<li><em>Universal:</em> Find the <em>universal grammar</em> and use it everywhere</li>
+						<li><em>Hybrid:</em> Establish principles and patterns but avoid überformats</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="who-is-talking">
+				<title>APIs: Who's Talking?</title>
+				<ul>
+					<li>Languages both establish and cross domain boundaries</li>
+					<li>System/ecosystem boundaries are blurry</li>
+					<ul>
+						<li>System/ecosystem perspective is a question of perspective</li>
+					</ul>
+					<li>APIs provide a foundation for communications in an ecosystem</li>
+					<ul>
+						<li><em>Internal:</em> Value is in system changeability</li>
+						<li><em>External:</em> Value is in system interoperability</li>
+					</ul>
+					<li>API discussions should always be aware of both perspectives</li>
+					<ul>
+						<li>Separate internal/external API strategies are counter-productive</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-pattern">
+				<title>APIs are a Pattern</title>
+				<div style="height: 70%">
+					<img style="float: left; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Uniform interface" src="pneumatic-tubes.jpg" href="https://twitter.com/NotableHistory/status/529966375125544960"/>
+					<img style="float: right; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Self-describing representations and stateless interactions" src="nj-gun-permit.png"/>
+				</div>
+			</slide>
+		</part>
+		<part id="api-aspects">
+			<title>APIs: 3 Drivers, 2 Perspectives, 1 Lifecycle</title>
+			<slide id="api-driver-push">
+				<title>API Driver #1: Push</title>
+				<ul>
+					<li>Many environments change at increasing velocities</li>
+					<ul>
+						<li>Economics change</li>
+						<li>Incentives change</li>
+						<li>Technologies change</li>
+					</ul>
+					<li>Organizations are <em>pushed</em> to better handle change</li>
+					<ul>
+						<li>They have to become better at <em>reacting to external changes</em></li>
+						<li>They have to become better at <em>executing internal changes</em></li>
+						<li>They have to become better at <em>embracing changing</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-driver-pull">
+				<title>API Driver #2: Pull</title>
+				<ul>
+					<li>External: Participating in the <em>API economy</em> becomes increasingly beneficial</li>
+					<ul>
+						<li>Interfacing with customers/partners becomes easier</li>
+						<li>The number of API-ready customers/partners keeps increasing</li>
+						<li>The <a href="https://en.wikipedia.org/wiki/Metcalfe%27s_law">network effect</a> guarantees for the trend to continue</li>
+					</ul>
+					<li>Internal: Being able to plan and execute changing quickly improves fitness</li>
+					<ul>
+						<li>Traditionally, IT is perceived as a sluggish and heavyweight</li>
+						<li>Increasingly, IT becomes the <q>lube</q> for the organizational machinery</li>
+						<li>Additionally, IT can allow completely new classes of business models</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-driver-follow">
+				<title>API Driver #3: Follow</title>
+				<ul>
+					<li>Having an <em>API strategy</em> becomes increasingly important</li>
+					<ul>
+						<li>Organizations have executed on this for a long time (Amazon API memo: 2002)</li>
+						<li>Organizations share experiences and tooling around API strategies</li>
+					</ul>
+					<li>Using APIs becomes less of an <q>if</q> and more of a <q>how</q></li>
+					<ul>
+						<li>Business pushes IT to make sure strategy can be executed quickly</li>
+						<li>IT can leverage others as justification and leaders</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="two-views">
+				<title>Two Views of API Scope/Focus</title>
+				<ul>
+					<li><em>Internal:</em> Using APIs to break up monolithic systems</li>
+					<ul>
+						<li>Focus on <em>systems/software engineering</em> and better modularization</li>
+						<li><q>Turn a system into an ecosystem.</q></li>
+						<li>Use <em>Private APIs</em> as a way to reduce tight coupling</li>
+					</ul>
+					<li><em>External:</em> Using APIs to build up ecosystems</li>
+					<ul>
+						<li>Focus on <em>distributed/decentralized systems</em> and better connectivity</li>
+						<li><q>Enable an ecosystem by loosely coupling systems.</q></li>
+						<li>Use <em>Public APIs</em> as a way to (better) interface with partners/public</li>
+					</ul>
+					<li>Both views are complementary and mostly a difference in perspective</li>
+				</ul>
+			</slide>
+			<slide id="one-management-cycle">
+				<title>One Management Lifecycle</title>
+				<img title="API Lifecycle" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="intro-conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
