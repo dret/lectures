@@ -110,15 +110,15 @@
 			<slide id="march-26">
 				<title>Monday, March 26</title>
 				<ul>
-					<li>10.00-10.15: <link href="introduction">Welcome and Introduction</link></li>
-					<li>10.15-11.00: <link href="digital-transformation">APIs and Digital Transformation</link></li>
-					<li>11.00-12.00: <link href="styles">API Styles (RPC, Hypermedia, Query-based)</link></li>
-					<li>12.15-13.30: <link href="microservices">Microservice Architecture</link></li>
-					<li>14.30-15.00: <link href="representations">Representations</link></li>
-					<li>15.00-15.30: <link href="design">Design and Developer Experience (DX)</link></li>
-					<li>15.30-16.00: <link href="landscapes">API Landscape Management</link></li>
-					<li>16.15-17.00: <link href="change-management">Change Management and Versioning</link></li>
-					<li>17.00-17.45: <link href="organizational">Organizational Issues</link></li>
+					<li>10.00-10.15: <link href="introduction"/></li>
+					<li>10.15-11.00: <link href="digital-transformation"/></li>
+					<li>11.00-12.00: <link href="styles"/></li>
+					<li>12.15-13.30: <link href="microservices"/></li>
+					<li>14.30-15.00: <link href="representations"/></li>
+					<li>15.00-15.30: <link href="design"/></li>
+					<li>15.30-16.00: <link href="landscapes"/></li>
+					<li>16.15-17.00: <link href="change-management"/></li>
+					<li>17.00-17.45: <link href="organizational"/></li>
 					<li>17.45-18.00: Wrap-up</li>
 				</ul>
 			</slide>
@@ -1388,7 +1388,7 @@
 		</part>
 	</presentation>
 	<presentation id="design">
-		<title>API Design and Developer Experience (DX)</title>
+		<title>API Design and DX</title>
 		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/10/api-usability-matters.html" title='Erik Wilde, "API Usability Matters: UX and CX is like DX and …", October 2016'>API Usability</a>&#160;· <a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a>&#160;· <a href="http://webconcepts.info/">Web Concepts</a>&#160;· <a href="https://www.mnot.net/blog/2012/06/25/http_api_complexity_model" title='Mark Nottingham, "HTTP API Complexity", June 2012'>API Complexity</a>&#160;· <a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a></toc>
 		<part id="api-complexity">
 			<title>API Complexity</title>
