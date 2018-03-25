@@ -1388,34 +1388,8 @@
 		</part>
 	</presentation>
 	<presentation id="design">
-		<title>API Design</title>
+		<title>API Design and Developer Experience (DX)</title>
 		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/10/api-usability-matters.html" title='Erik Wilde, "API Usability Matters: UX and CX is like DX and …", October 2016'>API Usability</a>&#160;· <a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a>&#160;· <a href="http://webconcepts.info/">Web Concepts</a>&#160;· <a href="https://www.mnot.net/blog/2012/06/25/http_api_complexity_model" title='Mark Nottingham, "HTTP API Complexity", June 2012'>API Complexity</a>&#160;· <a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a></toc>
-		<part id="design-process">
-			<title>Design as a Process</title>
-			<slide id="design-eames">
-				<title>Design and Constraints</title>
-				<blockquote><q href="http://www.markwunsch.com/eames">Design depends largely on constraints.</q> (<a href="https://en.wikipedia.org/wiki/Charles_and_Ray_Eames">Charles Eames</a>)</blockquote>
-			</slide>
-			<slide id="design-questions">
-				<title>Design Questions</title>
-				<ul>
-					<li>Design is an iterative process to solve a given problem</li>
-					<ol>
-						<li>Identify a <em>problem</em> (provided externally or identified internally)</li>
-						<li><em>Why</em> is the problem a problem?</li>
-						<li>Identify the <em>constraints</em></li>
-						<li><em>What</em> can be done to address the problem?</li>
-						<li>Identify the possible solutions</li>
-						<li><em>How</em> is the problem solved given the constraints?</li>
-						<li>Assess design quality and repeat	</li>
-					</ol>
-				</ul>
-			</slide>
-			<slide id="api-lifecycle-design">
-				<title>API Lifecycle and Design</title>
-				<img title="Where API management is headed in 2017" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-		</part>
 		<part id="api-complexity">
 			<title>API Complexity</title>
 			<slide id="one-server-one-client">
