@@ -225,28 +225,6 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide id="two-views">
-				<title>Two Views of API Scope/Focus</title>
-				<ul>
-					<li><em>Internal:</em> Using APIs to break up monolithic systems</li>
-					<ul>
-						<li>Focus on <em>systems/software engineering</em> and better modularization</li>
-						<li><q>Turn a system into an ecosystem.</q></li>
-						<li>Use <em>Private APIs</em> as a way to reduce tight coupling</li>
-					</ul>
-					<li><em>External:</em> Using APIs to build up ecosystems</li>
-					<ul>
-						<li>Focus on <em>distributed/decentralized systems</em> and better connectivity</li>
-						<li><q>Enable an ecosystem by loosely coupling systems.</q></li>
-						<li>Use <em>Public APIs</em> as a way to (better) interface with partners/public</li>
-					</ul>
-					<li>Both views are complementary and mostly a difference in perspective</li>
-				</ul>
-			</slide>
-			<slide id="one-management-cycle">
-				<title>One Management Lifecycle</title>
-				<img title="API Lifecycle" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
 		</part>
 		<part id="intro-conclusions">
 			<title>Conclusions</title>
