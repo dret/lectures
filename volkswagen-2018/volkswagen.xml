@@ -1596,51 +1596,6 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="diversity-decentralization-loose-coupling">
-			<title>Diversity, Decentralization, and Loose Coupling</title>
-			<slide id="diversity">
-				<title>Diversity</title>
-				<ul>
-					<li>API designs should focus on the <em>API Quality</em></li>
-					<ul>
-						<li>Standardizing on technologies is no guarantee for quality</li>
-					</ul>
-					<li>Teams are incentivized to create good APIs</li>
-					<ul>
-						<li>Feedback from API consumers comes early and often</li>
-						<li>Being a good citizen improves the chances to success</li>
-						<li>Monitoring quickly reveals patterns of usage and popularity</li>
-					</ul>
-					<li>Standardize on <em>good practices</em> instead of <em>mandated patterns</em></li>
-					<li>Consumers should have a <em>seamless experience</em> across APIs</li>
-				</ul>
-			</slide>
-			<slide id="decentralization">
-				<title>Decentralization</title>
-				<ul>
-					<li>Centralization has become an IT anti-pattern</li>
-					<li>APIs should be easily composable by consumers</li>
-					<ul>
-						<li><em>Robust identity</em> allows resource discovery without out-of-band knowledge</li>
-						<li><em>Interlinking</em> exposes control flows in a self-describing way</li>
-					</ul>
-					<li>Individual services own and document their service APIs</li>
-					<li>Cross-service examples and use cases need to respect this autonomy</li>
-				</ul>
-			</slide>
-			<slide id="loose-coupling">
-				<title>Loose Coupling</title>
-				<ul>
-					<li>Apply well-known <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Patterns for Robust Extensibility</a></li>
-					<li>Modern service architecture encourages service changes and replacements</li>
-					<ul>
-						<li>Design for <em>service changes:</em> Non-breaking changes as the goal</li>
-						<li>Design for <em>landscape changes:</em> Self-describing interactions allow changing workflows</li>
-					</ul>
-					<li><em>Hypermedia</em> is a well-known pattern for service <em>and</em> landscape changes</li>
-				</ul>
-			</slide>
-		</part>
 		<part id="design-conclusions">
 			<title>Design Conclusions</title>
 			<slide id="design-culture">
