@@ -253,6 +253,34 @@
 					<li>Modular implementations are faster to change → <link href="why-microservices">Microservices</link></li>
 				</ul>
 			</slide>
+			<slide id="amazon-rules">
+				<title><a href="https://gist.github.com/chitchcock/1281611">Jeff Bezos' Services Rant</a>: The Rules</title>
+				<ul>
+					<li>Famous small set of SOA design rules</li>
+					<ul>
+						<li>Teams must expose functionality through services</li>
+						<li>Communication happens only through service interfaces</li>
+						<li>There are no hard guidelines for service design</li>
+						<li>Internal/external service is a matter of policy, not one of design</li>
+					</ul>
+					<li>Going against the <q>let's pick a platform</q> spirit of old-school SOA</li>
+				</ul>
+			</slide>
+			<slide id="amazon-consequences">
+				<title>Jeff Bezos' Services Rant: <a href="https://plus.google.com/+RipRowan/posts/eVeouesvaVX">The Consequences</a></title>
+				<ul>
+					<li>With more freedom comes more responsibility</li>
+					<ul>
+						<li>Monitoring and metrics are necessary for finding root causes</li>
+						<li>All APIs must be hardened against DoS attacks</li>
+						<li>Automated QA is necessary to really understand service health</li>
+						<li>Services must be documented and registered so that they can be discovered</li>
+						<li>Debugging becomes harder because of service dependencies</li>
+					</ul>
+					<li>Sophisticated tooling required to manage the new SOA landscape</li>
+					<li>Much easier in today's technology landscape than 15 years ago</li>
+				</ul>
+			</slide>
 			<part id="why-digital-transformation">
 				<title>Why Digital Transformation?</title>
 				<slide id="it-today">
@@ -459,70 +487,6 @@
 					<ul>
 						<li>APIs are valuable because they decouple service users and providers</li>
 						<li>APIs are valuable because they decouple service implementations</li>
-					</ul>
-				</ul>
-			</slide>
-		</part>
-		<part id="how">
-			<title>How? MSA!</title>
-			<slide id="ms-and-the-web">
-				<title>Microservices and the Web</title>
-				<ul>
-					<li>MSA replicates the most important success factors of the Web</li>
-					<ul>
-						<li>Encapsulation of code, allowing polyglot implementations</li>
-						<li>Encapsulation of persistence, allowing polyglot storage</li>
-						<li>Encapsulation of models, making the API the only available model</li>
-					</ul>
-					<li>The <em>only</em> service dependency is through APIs</li>
-					<ul>
-						<li>Works (mostly) well on the Web because of the uniform interface and HTML</li>
-						<li>Works (mostly) well on the service Web for <q>well-designed</q> APIs</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="amazon-rules">
-				<title><a href="https://gist.github.com/chitchcock/1281611">Jeff Bezos' Services Rant</a>: The Rules</title>
-				<ul>
-					<li>Famous small set of SOA design rules</li>
-					<ul>
-						<li>Teams must expose functionality through services</li>
-						<li>Communication happens only through service interfaces</li>
-						<li>There are no hard guidelines for service design</li>
-						<li>Internal/external service is a matter of policy, not one of design</li>
-					</ul>
-					<li>Going against the <q>let's pick a platform</q> spirit of old-school SOA</li>
-				</ul>
-			</slide>
-			<slide id="amazon-consequences">
-				<title>Jeff Bezos' Services Rant: <a href="https://plus.google.com/+RipRowan/posts/eVeouesvaVX">The Consequences</a></title>
-				<ul>
-					<li>With more freedom comes more responsibility</li>
-					<ul>
-						<li>Monitoring and metrics are necessary for finding root causes</li>
-						<li>All APIs must be hardened against DoS attacks</li>
-						<li>Automated QA is necessary to really understand service health</li>
-						<li>Services must be documented and registered so that they can be discovered</li>
-						<li>Debugging becomes harder because of service dependencies</li>
-					</ul>
-					<li>Sophisticated tooling required to manage the new SOA landscape</li>
-					<li>Much easier in today's technology landscape than 15 years ago</li>
-				</ul>
-			</slide>
-			<slide id="never-stop-evolving">
-				<title>Never Stop Evolving</title>
-				<ul>
-					<li>MSA is a style that should survive technologies</li>
-					<li><q><a href="https://www.youtube.com/watch?v=Wh4PpY0J9ZI" title="API360 Microservices Summit – Microservices Blind Spots – Irakli Nadareishvili, ReferWell">Containerization will drive MSA adoption</a></q></li>
-					<ul>
-						<li>A fully containerized service landscape needs MSA to function</li>
-						<li>Polyglot containers mean that language does not matter</li>
-						<li>Data encapsulation means isolated/opaque data management</li>
-					</ul>
-					<li>As persistence/languages/containers evolve, APIs remain the stable factor</li>
-					<ul>
-						<li>The external perspective of <em>MSA management</em> is <em>API management</em></li>
-						<li>The tools/languages/platforms for MSA service implementation evolve over time</li>
 					</ul>
 				</ul>
 			</slide>
