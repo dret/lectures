@@ -1041,7 +1041,7 @@
 	</presentation>
 	<presentation id="representations">
 		<title>Representations for APIs</title>
-		<toc class="resources"><a href="http://www.webconcepts.info/concepts/media-type/" title="Web Concepts: Media Types">Media Types</a>&#160;· <a href="http://www.w3.org/TR/xml/" title='Tim Bray, Jean Paoli, C. Michael Sperberg-McQueen, Eve Maler, and François Yergeau, "Extensible Markup Language (XML) 1.0 (Fifth Edition)", W3C Recommendation REC-xml-20081126, November 2008'>XML</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/8259" title='Tim Bray, "The JavaScript Object Notation (JSON) Data Interchange Format", IETF RFC 8259, December 2017'>JSON</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/4287" title='Mark Nottingham and Robert Sayre, "The Atom Syndication Format", IETF RFC 4287, December 2005'>Atom</a>&#160;· <a href="https://www.w3.org/TR/activitystreams-core/" title='James Snell and Evan Prodromou, "Activity Streams 2.0", W3C Recommendation REC-activitystreams-core-20170523, May 2017'>Activity Streams</a>&#160;· <a href="https://jsonfeed.org/">JSON Feed</a>&#160;· <a title='Yakov Shafranovich, "Common Format and MIME Type for Comma-Separated Values (CSV) Files", IETF RFC 4180, October 2005' href="http://webconcepts.info/specs/IETF/RFC/4180">RFC 4180</a>&#160;· <a title='Mark Nottingham and Erik Wilde, "Problem Details for HTTP APIs", Internet RFC 7807, March 2016' href="http://webconcepts.info/specs/IETF/RFC/7807">RFC 7807</a></toc>
+		<toc class="resources"><a href="http://www.webconcepts.info/concepts/media-type/" title="Web Concepts: Media Types">Media Types</a>&#160;· <a href="http://www.w3.org/TR/xml/" title='Tim Bray, Jean Paoli, C. Michael Sperberg-McQueen, Eve Maler, and François Yergeau, "Extensible Markup Language (XML) 1.0 (Fifth Edition)", W3C Recommendation REC-xml-20081126, November 2008'>XML</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/8259" title='Tim Bray, "The JavaScript Object Notation (JSON) Data Interchange Format", IETF RFC 8259, December 2017'>JSON</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/4287" title='Mark Nottingham and Robert Sayre, "The Atom Syndication Format", IETF RFC 4287, December 2005'>Atom</a>&#160;· <a href="https://www.w3.org/TR/activitystreams-core/" title='James Snell and Evan Prodromou, "Activity Streams 2.0", W3C Recommendation REC-activitystreams-core-20170523, May 2017'>Activity Streams</a>&#160;· <a href="https://jsonfeed.org/">JSON Feed</a>&#160;· <a title='Mark Nottingham and Erik Wilde, "Problem Details for HTTP APIs", Internet RFC 7807, March 2016' href="http://webconcepts.info/specs/IETF/RFC/7807">RFC 7807</a></toc>
 		<part id="intro">
 			<title>Introduction</title>
 			<slide id="digital-shadow">
@@ -1335,27 +1335,6 @@
 						<li><a href="http://webconcepts.info/specs/IETF/RFC/4287" title='Mark Nottingham and Robert Sayre, "The Atom Syndication Format", IETF RFC 4287, December 2005'>Atom</a> is XML-based and has <a href="http://dret.typepad.com/dretblog/atom-landscape.html">many additional features</a></li>
 						<li><a href="https://jsonfeed.org/">JSON Feed</a> is a JSON-based variant of Atom</li>
 						<li><a href="https://www.w3.org/TR/activitystreams-core/">Activity Streams</a> focuses on activity publishing/syndication</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="csv">
-				<title>Comma-Separated Values (CSV)</title>
-				<ul>
-					<li><a href="http://webconcepts.info/specs/IETF/RFC/4180">RFC 4180</a> defines a textual format for <q>spreadsheet data</q></li>
-					<li>CSV has been used for a long time, but some of the details were solved differently</li>
-					<li>Defining a media type makes it easier for implementations to know what to expect</li>
-					<ul>
-						<li>The CSV registration not only registers the type, but also defines it</li>
-					</ul>
-					<li>CSV is not overly complex, but some issues have to be solved</li>
-					<ul>
-						<li>How to separate lines (CRLF)</li>
-						<li>How to end the file (CRLF is allowed but optional)</li>
-						<li>Are headers allowed (yes, but they are not marked as such)</li>
-						<li>May different lines use different numbers of fields (no)</li>
-						<li>Are spaces significant (yes)</li>
-						<li>Are quotes significant (no, they are delimiters, so quotes as values must be escaped)</li>
-						<li>How to treat fields with CRLF, commas, or quotes (enclose the value in quotes)</li>
 					</ul>
 				</ul>
 			</slide>
