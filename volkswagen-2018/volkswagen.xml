@@ -1210,12 +1210,6 @@
 					<img style="width : 90% ; margin : 4% ;" src="xml-tree.png" title="XML Document Tree"/>
 				</ul>
 			</slide>
-			<slide id="xml-content-names">
-				<title>XML Content and Names</title>
-				<p>XML documents can use a wide array of characters. They are defined by <a href="http://www.unicode.org/">Unicode</a>, which in Version 5.0 defines more than 100'000 characters (#100'000 added in 2005).</p>
-				<listing src="japanese1.xml"/>
-				<listing src="japanese2.xml"/>
-			</slide>
 			<slide id="xml-elements">
 				<title>Elements</title>
 				<ul>
