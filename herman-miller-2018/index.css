@@ -1,5 +1,5 @@
 body { color : #000000 ;
-	background-color : #FFFFFF ;
+	background-color : #F8F8FA ;
 	font-family : arial, verdana, sans-serif ;
 	margin : 0 ;
 }
@@ -8,20 +8,23 @@ body { color : #000000 ;
 
 .footnote { font-style : oblique ; }
 
-a { color : #407040 ;
+a { color : #717183 ;
 	text-decoration : none ;
 	border-bottom : 1px dotted ;
   }
 
-a:hover { background-color : #205020 ;
-	color : #FFFFFF ;
+a:hover { background-color : #4C4C5E ;
+	color : #F8F8FA ;
 }
 
-.header {  background-color : #BAD178 ;
-    border-bottom :  5px #81A3E6 solid ;
+.header a { color : #FFFFFF ; }
+
+.header {  background-color : #4C4C5E ;
+    color : #F8F8FA ;
+    border-bottom :  5px #F24147 solid ;
     padding : 1.5em ;
     margin : 0 ;
-	text-align : center ;
+    text-align : center ;
 }
 
 .description { font-size : small ; }
