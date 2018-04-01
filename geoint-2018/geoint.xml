@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
 <?hotspot layout-path="hotspot/hotspot/layout" ?>
 <?hotspot kilauea-path="hotspot/kilauea" ?>
-<?hotspot layout="apiacademy" ?>
+<?hotspot layout="apiacademy-new" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 	<configuration>
@@ -38,25 +38,13 @@
 		</slide>
 		<part id="introduction">
 			<title>Introduction</title>
-			<slide id="dret">
-				<title>About Me</title>
-				<ul>
-					<li><a href="http://dret.net/netdret/publications#wil97b">Ph.D. in Communications Systems</a> from <a href="http://www.ethz.ch/">ETH Zürich</a></li>
-					<li>Working on Web Architecture after writing <a href="http://dret.net/netdret/publications#wil98">the first Web Technology book</a></li>
-					<li>UC Berkeley (2006-2011), working on <a href="http://dret.net/netdret/publications#wil09g">Service Models for Open Government</a></li>
-					<li>EMC (2011-2014), working on transforming software products into service platforms</li>
-					<li>Siemens (2014-2015), working on using <em title="Internet of Things">IoT</em> to build <em title="Web of Things">WoT</em> (<q>APIs for Things</q>)</li>
-					<li>Joined <a href="http://www.ca.com/" title="CA Technologies">CA</a>'s <a href="http://www.apiacademy.co/">API Academy</a> in 2016 and now all about API Strategy and Design</li>
-					<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="http://dret.typepad.com/dretblog/">my blog</a>, <a href="http://www.linkedin.com/in/netdret">LinkedIn</a>, and <a href="https://www.flickr.com/photos/dret/" title="dret">flickr</a></li>
-				</ul>
-			</slide>
-			<slide id="dret">
+			<slide id="dretwitter">
 				<title><code>@dret</code> on Twitter/GitHub</title>
 				<img src="dret.png" title="dret" href="http://twitter.com/dret" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="api-academy">
 				<title><a href="http://www.apiacademy.co/">API Academy</a></title>
-				<img src="apiacademy-red-black.png" href="http://www.apiacademy.co/" title="API Acacdemy" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<img src="academy-logo.png" href="http://www.apiacademy.co/" title="API Acacdemy" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
 					<li>Global Team working on <em>API Strategy and Design</em> topics</li>
 					<ul>
@@ -86,6 +74,18 @@
 						<li>Get <a href="http://transform.ca.com/API-microservice-architecture-oreilly-book.html">free electronic version courtesy of CA Technologies</a></li>
 						<li>Get <a href="http://shop.oreilly.com/product/0636920050308.do">a hardcopy version</a></li>
 					</ul>
+				</ul>
+			</slide>
+			<slide id="dret">
+				<title>About Me</title>
+				<ul>
+					<li><a href="http://dret.net/netdret/publications#wil97b">Ph.D. in Communications Systems</a> from <a href="http://www.ethz.ch/">ETH Zürich</a></li>
+					<li>Working on Web Architecture after writing <a href="http://dret.net/netdret/publications#wil98">the first Web Technology book</a></li>
+					<li>UC Berkeley (2006-2011), working on <a href="http://dret.net/netdret/publications#wil09g">Service Models for Open Government</a></li>
+					<li>EMC (2011-2014), working on transforming software products into service platforms</li>
+					<li>Siemens (2014-2015), working on using <em title="Internet of Things">IoT</em> to build <em title="Web of Things">WoT</em> (<q>APIs for Things</q>)</li>
+					<li>Joined <a href="http://www.ca.com/" title="CA Technologies">CA</a>'s <a href="http://www.apiacademy.co/">API Academy</a> in 2016 and now all about API Strategy and Design</li>
+					<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="http://dret.typepad.com/dretblog/">my blog</a>, <a href="http://www.linkedin.com/in/netdret">LinkedIn</a>, and <a href="https://www.flickr.com/photos/dret/" title="dret">flickr</a></li>
 				</ul>
 			</slide>
 		</part>
