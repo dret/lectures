@@ -31,7 +31,7 @@
 	<copyright>2018 Erik Wilde</copyright>
 	<presentation id="index">
 		<title>Accelerating API Availability with Microservices</title>
-		<toc class="abstract">Microservices are a relatively recent trend in the enterprise IT architecture space. The main idea of microservice architecture (MSA) is to strictly decouple service implementation, which means that the development and change of MSA services can be quicker than in architectures where any development and change is limited by complex interdependencies and resulting slower implementation cycles. In order to make the pattern of many independently developed services economically and operationally viable, MSA requires high degrees of automation and tooling both for development, deployment, and operations. One possible way to look at MSA is to consider it as the application of DevOps ideas within the SOA space.</toc>
+		<toc class="abstract">Microservices are a relatively recent trend in the enterprise IT architecture space. The main idea of microservice architecture (MSA) is to strictly decouple service implementation, which means that the development and change of MSA services can be quicker than in architectures where any development and change is limited by complex interdependencies and resulting slower implementation cycles. In order to make the pattern of many independently developed services economically and operationally viable, MSA requires high degrees of automation and tooling for development, deployment, and operations. One possible way to look at MSA is to consider it as the application of DevOps ideas within the SOA space.</toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
