@@ -3739,6 +3739,10 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="tunnel-style">
 			<title>Tunnel Style</title>
+			<slide id="tunnel-style-image">
+				<title>One Tunnel to Call them All</title>
+				<img title="Tunnel Style" src="api-styles-tunnel.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="rpc-over-http">
 				<title>Distributed Programming</title>
 				<ul>
@@ -3756,6 +3760,10 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="uri-style">
 			<title>URI Style</title>
+			<slide id="uri-style-image">
+				<title>Listing All Resources</title>
+				<img title="URI Style" src="api-styles-uri.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="webby-identifiers">
 				<title>Identifiers for Resources</title>
 				<ul>
@@ -3780,6 +3788,10 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="hypermedia-style">
 			<title>Hypermedia Style</title>
+			<slide id="hypermedia-style-image">
+				<title>Linking All Resources</title>
+				<img title="Hypermedia Style" src="api-styles-hypermedia.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="webby-style">
 				<title>Webby APIs</title>
 				<ul>
@@ -3803,6 +3815,10 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="query-style">
 			<title>Query Style</title>
+			<slide id="query-style-image">
+				<title>Querying into Server-Side Models</title>
+				<img title="Query Style" src="api-styles-query.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="database-style">
 				<title>Querying Structured Data</title>
 				<ul>
@@ -3826,6 +3842,10 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="event-style">
 			<title>Event-Based Style</title>
+			<slide id="event-style-image">
+				<title>Event Listening</title>
+				<img title="Event-based Style" src="api-styles-event.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="fire-and-forget">
 				<title>Fire and Forget</title>
 				<ul>
