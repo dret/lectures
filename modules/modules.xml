@@ -3748,7 +3748,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>Suffers from the typical RPC problems at bigger scale</li>
 					<ul>
 						<li>Failure is hard to deal with (function calls always succeed)</li>
-						<li>Scoped identifiers mean naming problems and no network effect</li>
+						<li>Scoped identifiers result in naming challenges and compromised network effect</li>
 					</ul>
 					<li>Convenient for developers looking to <q>code like a local program</q></li>
 				</ul>
