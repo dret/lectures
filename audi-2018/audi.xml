@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
 <?hotspot layout-path="hotspot/hotspot/layout" ?>
 <?hotspot kilauea-path="hotspot/kilauea" ?>
-<?hotspot layout="apiacademy" ?>
+<?hotspot layout="apiacademy-new" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 	<configuration>
@@ -72,7 +72,7 @@
 			</slide>
 			<slide id="api-academy">
 				<title><a href="http://www.apiacademy.co/">API Academy</a></title>
-				<img src="apiacademy-red-black.png" href="http://www.apiacademy.co/" title="API Academy" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<img src="academy-logo.png" href="http://www.apiacademy.co/" title="API Academy" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
 					<li>Global Team working on <em>API Strategy and Design</em> topics</li>
 					<ul>
