@@ -142,6 +142,10 @@
 		</part>
 		<part id="what">
 			<title>Microservices: What?</title>
+			<slide id="api-lifecycle">
+				<title>API Lifecycle</title>
+				<img title="Where API management is headed in 2017" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="digitalization-dividends">
 				<title><a href="http://queue.acm.org/detail.cfm?id=2956643">Digitalization Dividends</a></title>
 				<ol>
@@ -176,10 +180,6 @@
 						<li><em>Manage</em> APIs so that the ecosystem can be monitored</li>
 					</ul>
 				</ul>
-			</slide>
-			<slide id="api-lifecycle">
-				<title>API Lifecycle</title>
-				<img title="Where API management is headed in 2017" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
 		<part id="how">
