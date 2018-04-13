@@ -327,6 +327,7 @@
 				<title>MSA 7V Executive Summary</title>
 				<ul>
 					<li><em>Variety:</em> More design freedom for teams</li>
+					<li><em>Vocabulary:</em> Sharing languages across the organization</li>
 					<li><em>Volume:</em> Make experimentation economical</li>
 					<li><em>Velocity:</em> No more slow coordinated release schedule</li>
 					<li><em>Visibility:</em> Teams work decentralized</li>
@@ -346,6 +347,25 @@
 					<ul>
 						<li>Guidance should be driven by observed team preferences</li>
 						<li>API ecosystems tend to converge around few technology clusters</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="vocabulary">
+				<title>Vocabulary</title>
+				<ul>
+					<li>APIs are languages for interactions with services</li>
+					<ul>
+						<li>Each <q>API language</q> can be defined individually</li>
+						<li>Reusing <q>API language</q> building blocks makes APIs more coherent</li>
+					</ul>
+					<li>Defining shared languages is a well-known and hard problem</li>
+					<ul>
+						<li>A minimal goal is to share the <em>API domain languages</em></li>
+						<li>A more ambitious goal is to share <em>application domain languages</em></li>
+					</ul>
+					<li>Landscapes should provide ways in which vocabularies are managed</li>
+					<ul>
+						<li>For example, the <a href="https://www.iana.org/protocols">IANA protocol registry</a> manages ~2000 namespaces</li>
 					</ul>
 				</ul>
 			</slide>
