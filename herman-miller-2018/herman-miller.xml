@@ -702,7 +702,7 @@
 		</part>
 	</presentation>
 	<presentation id="representations">
-		<title>Representations for APIs</title>
+		<title short="Representations">Representations for APIs</title>
 		<toc class="resources"><a href="http://www.webconcepts.info/concepts/media-type/" title="Web Concepts: Media Types">Media Types</a>&#160;· <a href="http://www.w3.org/TR/xml/" title='Tim Bray, Jean Paoli, C. Michael Sperberg-McQueen, Eve Maler, and François Yergeau, "Extensible Markup Language (XML) 1.0 (Fifth Edition)", W3C Recommendation REC-xml-20081126, November 2008'>XML</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/8259" title='Tim Bray, "The JavaScript Object Notation (JSON) Data Interchange Format", IETF RFC 8259, December 2017'>JSON</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/4287" title='Mark Nottingham and Robert Sayre, "The Atom Syndication Format", IETF RFC 4287, December 2005'>Atom</a>&#160;· <a href="https://www.w3.org/TR/activitystreams-core/" title='James Snell and Evan Prodromou, "Activity Streams 2.0", W3C Recommendation REC-activitystreams-core-20170523, May 2017'>Activity Streams</a>&#160;· <a href="https://jsonfeed.org/">JSON Feed</a>&#160;· <a title='Mark Nottingham and Erik Wilde, "Problem Details for HTTP APIs", Internet RFC 7807, March 2016' href="http://webconcepts.info/specs/IETF/RFC/7807">RFC 7807</a></toc>
 		<part id="intro">
 			<title>Introduction</title>
@@ -1050,7 +1050,7 @@
 		</part>
 	</presentation>
 	<presentation id="change-management">
-		<title>Change Management and Versioning</title>
+		<title short="Change Management">Change Management and Versioning</title>
 		<toc class="resources"><a href="https://tools.ietf.org/html/rfc5829" title="RFC 5829: 'Link Relation Types for Simple Version Navigation between Web Resources', April 2010">RFC 5829</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a>&#160;· <a href="https://tools.ietf.org/html/draft-wilde-registries" title='Erik Wilde, "The Use of Registries", Internet Draft wilde-registries'>Registries</a>&#160;· <a href="https://blog.goodapi.co/api-change-management-2fe5bba32e9b" title='Zdenek Nemec, "API Change Management", April 2017'>Change Management</a>&#160;· <a href="http://semver.org/" title='Semantic Versioning 2.0.0'>Semantic Versioning</a>&#160;· <a href="http://webconcepts.info/specs/IETF/I-D/draft-wilde-sunset-header" title='Erik Wilde, "The Sunset HTTP Header", Internet Draft wilde-sunset-header'>Sunset Header</a></toc>
 		<part id="change-management-introduction">
 			<title>Introduction</title>
