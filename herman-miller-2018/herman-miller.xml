@@ -144,12 +144,7 @@
 	</presentation>
 	<presentation id="styles">
 		<title>API Styles</title>
-		<toc class="abstract">APIs can follow a variety of styles, each with their own specifics and advantages and drawbacks. No style by definition is better than other styles, it all depends on the capabilities that should be exposed by an API, as well as on the context. API styles have an impact on the coherence of an API landscape, and on the tooling that is required or available for building, consuming, and managing APIs. Choosing an API style is an important part of API design, and any specifics of API design only start to matter after a style has been chosen.</toc>
 		<toc class="resources"><a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a>&#160;· <a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 		<part id="api-language">
 			<title>APIs are Languages</title>
 			<slide id="problem-solving">
@@ -397,12 +392,7 @@
 	</presentation>
 	<presentation id="microservices">
 		<title>Microservices</title>
-		<toc class="abstract">Microservices are a way how to improve the speed of software delivery, result in more scalable architectures, and make sure that these goals do not compromise the robustness of the overall landscape. The concept of microservices has been distilled from a set of practices that have been adopted in bigger organizations that need to make sure that service development and delivery is as fast as possible. Microservices have a close architectural parallel in the Web, which is built around the same general principles of strictly separate implementations, easily usable interfaces, and an ecosystem model where the measure of success and fitness is that of the overall resulting system, and not that of the individual components.</toc>
 		<toc class="resources"><a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="https://martinfowler.com/microservices/" title="Martin Fowler's Microservices Resource Guide">Microservices Resource Guide</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 		<part id="microservices-pattern">
 			<title>Microservices as a Pattern</title>
 			<slide id="microservices-scalability">
@@ -1051,12 +1041,7 @@
 	</presentation>
 	<presentation id="hypermedia">
 		<title>Hypermedia</title>
-		<toc class="abstract">...</toc>
 		<toc class="resources"><a href="http://webconcepts.info/specs/IETF/RFC/8288" title='RFC 8288, "Web Linking", October 2010'>RFC 8288</a>&#160;· <a href="http://www.ustream.tv/recorded/102891495" title='Mike Amundsen, "Twelve Patterns for Hypermedia Microservices", Craft Conference, April 2017'>12 Patterns</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/08/api-maps-hypermedia-api-design.html" title='Erik Wilde, "API Maps: Hypermedia API Design", August 2016'>API Maps</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 		<part id="web-linking">
 			<title>Web Linking</title>
 			<slide id="typed-links">
