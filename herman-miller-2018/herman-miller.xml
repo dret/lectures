@@ -701,4 +701,352 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="representations">
+		<title>Representations for APIs</title>
+		<toc class="resources"><a href="http://www.webconcepts.info/concepts/media-type/" title="Web Concepts: Media Types">Media Types</a>&#160;· <a href="http://www.w3.org/TR/xml/" title='Tim Bray, Jean Paoli, C. Michael Sperberg-McQueen, Eve Maler, and François Yergeau, "Extensible Markup Language (XML) 1.0 (Fifth Edition)", W3C Recommendation REC-xml-20081126, November 2008'>XML</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/8259" title='Tim Bray, "The JavaScript Object Notation (JSON) Data Interchange Format", IETF RFC 8259, December 2017'>JSON</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/4287" title='Mark Nottingham and Robert Sayre, "The Atom Syndication Format", IETF RFC 4287, December 2005'>Atom</a>&#160;· <a href="https://www.w3.org/TR/activitystreams-core/" title='James Snell and Evan Prodromou, "Activity Streams 2.0", W3C Recommendation REC-activitystreams-core-20170523, May 2017'>Activity Streams</a>&#160;· <a href="https://jsonfeed.org/">JSON Feed</a>&#160;· <a title='Mark Nottingham and Erik Wilde, "Problem Details for HTTP APIs", Internet RFC 7807, March 2016' href="http://webconcepts.info/specs/IETF/RFC/7807">RFC 7807</a></toc>
+		<part id="intro">
+			<title>Introduction</title>
+			<slide id="digital-shadow">
+				<title>Digital Shadows</title>
+				<ul>
+					<li><em>Digital Transformation</em> mirrors/designs/builds a world in the digital realm</li>
+					<ul>
+						<li>Represent your business (processes) in IT to allow automation</li>
+						<li>Business transformation can be (more) easily executed on the IT side</li>
+						<li>IT insights and changes directly translate to the business side</li>
+					</ul>
+					<li>IT always has been <em>modeling</em> and <em>implementing</em> <q>reality</q></li>
+					<ul>
+						<li><em>Essential complexity</em> is a result of domain complexity</li>
+						<li><em>Accidental complexity</em> is a result of implementation complications</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="resources">
+				<title>Resources</title>
+				<ul>
+					<li>APIs are languages that allow providers and consumers to communicate</li>
+					<ul>
+						<li>API design is about supporting <em>conversations</em> between peers</li>
+						<li><em>Conversations</em> revolve around resource <em>interactions</em></li>
+						<li><em>Interactions</em> are about exchanging resource representations</li>
+					</ul>
+					<li>Resources are anything that the API language should talk about</li>
+					<ul>
+						<li>Resources can be real-world concepts such as <em>products</em></li>
+						<li>Resources can be immaterial concepts such as <em>product descriptions</em></li>
+						<li>Resources can be ephemeral concepts such as <em>product orders</em></li>
+						<li>Resources can be temporary concepts such as <em>current orders for a product</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="digital-representations">
+				<title>Digital Representations</title>
+				<ul>
+					<li>Resources are concepts on the service side</li>
+					<ul>
+						<li>They are essential to the service model</li>
+						<li>Resources are not directly accessible or available</li>
+						<li>Clients only use <em>representations</em> when interacting with services</li>
+					</ul>
+					<li>Separate shallow <em>service surfaces</em> and deep <em>service models</em></li>
+					<ul>
+						<li><em>Service surfaces</em> are minimal sets of representations and interactions</li>
+						<li><em>Service models</em> are domain models for experts and implementers</li>
+					</ul>
+					<li>Separating surfaces and models reduces coupling</li>
+				</ul>
+			</slide>
+			<slide id="vocabularies">
+				<title>Vocabularies</title>
+				<ul>
+					<li>Vocabularies define the language for API interactions</li>
+					<ul>
+						<li>They help to understand the scope and breadth of resource representations</li>
+					</ul>
+					<li>Shallow and simple vocabularies are essential for loose coupling</li>
+					<ul>
+						<li>Shallowness avoids unnecessary details and deep model dependencies</li>
+						<li>Simplicity allows clients to more easily understand the <em>API language</em></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="what-how">
+			<title>What and How to Represent</title>
+			<slide id="representing-what">
+				<title>What to Represent</title>
+				<ul>
+					<li>Representations are determined by the <link href="styles">API style</link></li>
+					<ul>
+						<li><link href="tunnel-style">Tunnel style</link> represents function calls (names and parameters/results)</li>
+						<li><link href="uri-style">URI style</link> represents resources for CRUD operations</li>
+						<li><link href="hypermedia-style">Hypermedia style</link> represents resource for REST interactions</li>
+						<li><link href="query-style">Query style</link> represents queries and query results</li>
+						<li><link href="event-style">Event-based style</link> represents events that are produced/consumed</li>
+					</ul>
+					<li>Some styles especially benefit from <q>common representation patterns</q></li>
+					<ul>
+						<li><em>Tunnel style</em> may benefit from a general schema for function names and parameters</li>
+						<li><em>Event-based style</em> may benefit from a general schema for event names and parameters</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="objects-vs-documents">
+				<title>Objects vs. Documents</title>
+				<ul>
+					<li><em>Objects</em> follow the pattern of many common programming languages</li>
+					<ul>
+						<li>Objects are structured and allow nesting</li>
+						<li>Object members are typed according to an existing set of types</li>
+					</ul>
+					<li><em>Documents</em> represent semi-structured data</li>
+					<ul>
+						<li>Documents often have more flexible schemas with more variations</li>
+						<li>Document content is a mix of structural elements with textual data</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="object-example">
+				<title>Object Example (JSON)</title>
+				<listing src="json-example.json"/>
+			</slide>
+			<slide id="document-example">
+				<title>Document Example (XML)</title>
+				<listing src="section.xml"/>
+			</slide>
+		</part>
+		<part id="xml">
+			<title>Extensible Markup Language (XML)</title>
+			<slide id="xml-origins">
+				<title>XML Origins and History</title>
+				<ul>
+					<li>Envisioned as a way for sites to publish their data models</li>
+					<ul>
+						<li>HTML is a simple and mostly presentation-oriented vocabulary</li>
+						<li>Web sites should have the freedom to use their domain vocabularies</li>
+						<li>CSS/XSLT stylesheets would then be used to render in the browser</li>
+					</ul>
+					<li>XML was the first open structured data format on the Internet/Web</li>
+					<ul>
+						<li><em>Web Services</em> took it at ran with it (and little else)</li>
+						<li><em>JavaScript</em> replaced the declarative stylesheet dreams</li>
+					</ul>
+					<li>JSON replaced XML quickly when it became an alternative</li>
+					<ul>
+						<li>Direct mapping into the data structures of most programming languages</li>
+						<li>No baggage of document-oriented design and related technologies (no <em>data binding</em>)</li>
+						<li>Better fit for simple <q>on-the-wire</q> models</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="xml-basics">
+				<title>Basic Concepts: Elements and Attributes</title>
+				<ul>
+					<li>XML Documents have an <em>XML declaration</em> (optional)</li>
+					<li>There is exactly one <em>document element</em> (a.k.a. <em>root element</em>)</li>
+					<li>Elements may be nested (there is no conceptual limit)</li>
+					<ul>
+						<li>Elements may be repeated (they can be identified by position)</li>
+					</ul>
+					<li>Elements are marked up using <em>tags</em></li>
+					<ul>
+						<li>Most elements have content, surrounded by <em>start</em> and <em>end tags</em></li>
+						<li>Empty elements are allowed and may use a special notation</li>
+					</ul>
+					<li>Elements may have attributes (zero to any number)</li>
+					<ul>
+						<li>Attributes can only occur once on an element (i.e., they cannot be repeated)</li>
+					</ul>
+				</ul>
+				<listing src="my-first.xml"/>
+			</slide>
+			<slide id="xml-tree">
+				<title>XML is Trees</title>
+				<ul>
+					<li>Markup is important, but only a notation</li>
+					<li>XML documents are trees with different node types</li>
+					<ul>
+						<li>Node types so far: document, element, attribute, text</li>
+					</ul>
+					<img style="width : 90% ; margin : 4% ;" src="xml-tree.png" title="XML Document Tree"/>
+				</ul>
+			</slide>
+			<slide id="xml-elements">
+				<title>Elements</title>
+				<ul>
+					<li>Elements can use a <a href="http://www.w3.org/TR/xml/#NT-Name">wide variety of names</a></li>
+					<ul>
+						<li>Allowed: <code>&lt;html></code>, <code>&lt;id9832798472></code>, <code>&lt;_></code>, <code>&lt;:></code>, <code>&lt;こんにちは></code></li>
+						<li>Disallowed: leading numbers, spaces, control characters</li>
+					</ul>
+					<li>Element names usually convey some information about the content</li>
+					<ul>
+						<li>This is not reliable and highly language-dependent</li>
+						<li>It is <em>extremely useful</em> when working with a known vocabulary</li>
+						<li>It is <em>potentially harmful</em> when working with an unknown vocabulary</li>
+					</ul>
+					<li>Elements are the foundation for XML's versatility</li>
+					<ul>
+						<li>They can be nested (<code>&lt;address>&lt;city>Berkeley&lt;/city>&lt;zip>94709&lt;/zip>…</code>)</li>
+						<li>They can be repeated (<code>&lt;givenname>Erik&lt;/givenname>&lt;givenname>Thomas&lt;/givenname></code>)</li>
+						<li>Their sequence can convey additional information (e.g., given names have a sequence)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="xml-attributes">
+				<title>Attributes</title>
+				<ul>
+					<li>Additional information pertaining to elements</li>
+					<li>Traditionally, anything that is not considered <q>content</q></li>
+					<ul>
+						<li>SGML is a document markup language</li>
+						<li>XML uses SGML's document-based concepts</li>
+						<li>XML has its roots in the document world</li>
+					</ul>
+					<li>Elements: Content (i.e., Data); Attributes: Metadata</li>
+					<li>Documents often distinguish by what is textual content</li>
+				</ul>
+				<listing src="section.xml" line="12-20"/>
+			</slide>
+		</part>
+		<slide>
+			<title>Semantics</title>
+			<ul>
+				<li>XML is a language for encoding trees</li>
+				<ul>
+					<li>Elements and attributes are labeled nodes in this tree</li>
+					<li>The labels can be chosen freely by document authors</li>
+				</ul>
+				<li>The tree's meaning is nothing XML is concerned with</li>
+				<ul>
+					<li>Peers must have a mutual understanding of the semantics</li>
+					<li>XML without mutual understanding is almost useless</li>
+					<li>Reverse engineering often is possible, but it is risky and brittle</li>
+				</ul>
+			</ul>
+		</slide>
+		<part id="json">
+			<title>JavaScript Object Notation (JSON)</title>
+			<slide id="json-xml">
+				<title>JSON and XML</title>
+				<ul>
+					<li>JSON replaced XML very quickly because of its simplicity</li>
+					<ul>
+						<li>JSON is mostly used for <q>on-the-wire</q> models</li>
+						<li>XML is intended for document representation, storage, and processing</li>
+					</ul>
+					<li>JSON's main advantage over XML is its object-orientation</li>
+					<ul>
+						<li>JSON can be directly mapped into most language's native data structures</li>
+						<li>XML needs tree model processing or some form of data-binding</li>
+					</ul>
+					<li>JSON has no notion of vocabularies or namespaces</li>
+					<ul>
+						<li>XML's complexity and complications are not needed in most cases</li>
+						<li>Composing JSON vocabularies is much more brittle than in XML</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="json-basics">
+				<title>JSON Basics</title>
+				<ul>
+					<li>JSON is the <q>data structure part</q> of JavaScript</li>
+					<ul>
+						<li>Perfect match for client code consuming JSON data</li>
+						<li>Very good match for many other languages with structured data types</li>
+					</ul>
+					<li>JSON is good for <em>data-on-the-wire</em> and not so much for complex models</li>
+					<li>JSON has found its way into many typical IT components</li>
+					<ul>
+						<li>Some databases use JSON as their native data model (<a href="https://www.mongodb.com/">MongoDB</a>)</li>
+						<li>Many databases have added JSON to their data type support</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="json-structure">
+				<title>JSON Structure</title>
+				<ul>
+					<li>JSON has a small set of data types</li>
+					<ul>
+						<li><code>object</code>s are a set of name/value pairs called <em>members</em></li>
+						<li><code>array</code>s are a sequence of potentially heterogeneous values</li>
+						<li><code>number</code>s use regular decimal notation with an optional exponent</li>
+						<li><code>string</code>s are quoted with escape for special characters and Unicode</li>
+						<li><code>boolean</code>s use the two values <code>true</code> and <code>false</code></li>
+					</ul>
+					<li>Objects and arrays can be nested as deeply as required</li>
+				</ul>
+			</slide>
+			<slide id="json-example">
+				<title>JSON Example</title>
+				<listing src="json-example.json"/>
+			</slide>
+		</part>
+		<part id="more-representation">
+			<title>More Representation Formats</title>
+			<slide id="collection-formats">
+				<title>Collections as a Pattern</title>
+				<ul>
+					<li>Collections and their management is a common design pattern</li>
+					<ul>
+						<li>Often some form of similarity/commonality across collection members</li>
+					</ul>
+					<li>Re-inventing collection formats might be a good design choice</li>
+					<ul>
+						<li><a href="http://webconcepts.info/specs/IETF/RFC/4287" title='Mark Nottingham and Robert Sayre, "The Atom Syndication Format", IETF RFC 4287, December 2005'>Atom</a> is XML-based and has <a href="http://dret.typepad.com/dretblog/atom-landscape.html">many additional features</a></li>
+						<li><a href="https://jsonfeed.org/">JSON Feed</a> is a JSON-based variant of Atom</li>
+						<li><a href="https://www.w3.org/TR/activitystreams-core/">Activity Streams</a> focuses on activity publishing/syndication</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="http-problem">
+				<title>HTTP Problem Details</title>
+				<ul>
+					<li><a href="http://webconcepts.info/concepts/http-status-code/">HTTP status codes</a> are useful but minimalistic</li>
+					<ul>
+						<li>Their well-defined semantics allow intermediaries to act on them</li>
+						<li>Servers may want to convey additional information with them</li>
+					</ul>
+					<li>APIs may include <em>problem details</em> as part of their representation designs</li>
+					<ul>
+						<li>Using a standard reduces the design work on the server side</li>
+						<li>Using a standard allows developers to more easily understand the design</li>
+						<li>Using a standard allows problem details analysis across APIs</li>
+					</ul>
+					<li><a title='Mark Nottingham and Erik Wilde, "Problem Details for HTTP APIs", Internet RFC 7807, March 2016' href="http://webconcepts.info/specs/IETF/RFC/7807">RFC 7807</a> defines a JSON-centric model for problem details</li>
+					<ul>
+						<li><code>application/problem+json</code> is a JSON-based representation of the problem detail model</li>
+						<li><code>application/problem+xml</code> is an XML-based representation of the problem detail model</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="http-problem-json">
+				<title>HTTP Problem: JSON</title>
+				<listing href="https://tools.ietf.org/html/rfc7807#section-3" src="http-problem.json"/>
+			</slide>
+		</part>
+		<part id="representations-conclusions">
+			<title>Conclusions</title>
+			<slide id="language-matters">
+				<title>Language Matters</title>
+				<ul>
+					<li>APIs are languages</li>
+					<li>Representations are language sentences</li>
+					<li>Design and document the language of each API</li>
+					<li>Choosing a metamodel is a question of API, context, and taste</li>
+				</ul>
+			</slide>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/herman-miller-2018"><code>dret.net/lectures/herman-miller-2018</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/herman-miller-2018"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>
