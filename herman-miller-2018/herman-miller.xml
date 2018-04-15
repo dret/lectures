@@ -623,6 +623,137 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="standards">
+		<title>Standards</title>
+		<toc class="resources"><a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://www.iso.org/" title="International Organization for Standardization">ISO</a>&#160;· <a href="http://webconcepts.info/">Web Concepts</a></toc>
+		<part id="languages-standards">
+			<title>APIs and Standards</title>
+			<slide id="apis-are-languages">
+				<title>API are Languages</title>
+				<ul>
+					<li>APIs allow service providers and consumers to communicate</li>
+					<ul>
+						<li>Service providers <em>define</em> the language to be used for service interactions</li>
+						<li>Service consumers <em>use</em> the language to interact with the service</li>
+					</ul>
+					<li>Interfaces both separate and connect users of the interface</li>
+					<ul>
+						<li><em>Separation</em> means that the interface is self-contained</li>
+						<li><em>Connection</em> means that the interface is easy to use</li>
+					</ul>
+					<li>Language design becomes different in complex landscapes</li>
+					<ul>
+						<li><em>Singular APIs</em> derive value from being individually polished products</li>
+						<li><em>Landscape APIs</em> derive value from maximizing productivity across products</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="languages-need-standards">
+				<title>Languages need Standards</title>
+				<ul>
+					<li>Standards become building blocks of easily usable APIs</li>
+					<ul>
+						<li>Each building block reduces design effort and improves understandability</li>
+					</ul>
+					<li>Building block can be used from various areas</li>
+					<ol>
+						<li>General <em>API concepts</em> that can be used uniformly across various APIs</li>
+						<li><em>Domain concepts</em> that can be used across APIs for a certain domain</li>
+						<li><em>Organizational concepts</em> that make sense for APIs within an organization</li>
+					</ol>
+				</ul>
+			</slide>
+		</part>
+		<part id="protocol-standards">
+			<title>Protocols are Standards</title>
+			<slide id="standard-types">
+				<title><a href="https://www.safaribooksonline.com/library/view/restful-web-apis/9781449359713/pr05.html" title='"RESTful Web APIs" by Sam Ruby, Mike Amundsen, Leonard Richardson: Introduction'>Standard Types</a></title>
+				<ul>
+					<li><em>Fiat standards:</em> <q>Why not do it this way?</q></li>
+					<li><em>Personal standards:</em> <q>I like the way this has been done.</q></li>
+					<li><em>Corporate standards:</em> <q>Let's try to figure out a way to do this.</q></li>
+					<li><em>Open standards:</em> <q>Hello everybody! Let's share a way to do this!</q></li>
+				</ul>
+			</slide>
+			<slide id="xkcd-standards">
+				<title>How Standards Proliferate</title>
+				<img src="xkcd927.png" title="The nice thing about standards is that there are so many to choose from." href="https://xkcd.com/927/" style="height : 65% ; margin : 4% ; "/>
+			</slide>
+		</part>
+		<part id="sdos">
+			<title>Standards-Defining Organizations (SDOs)</title>
+			<slide id="ietf">
+				<title><a href="http://ietf.org/">Internet Engineering Task Force (IETF)</a></title>
+				<img title="Internet Engineering Task Force (IETF)" href="http://ietf.org/" src="ietf.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="w3c">
+				<title><a href="http://www.w3.org/">World Wide Web Consortium (W3C)</a></title>
+				<img title="World Wide Web Consortium (W3C)" href="http://www.w3c.org/" src="w3c.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="iso">
+				<title><a href="http://www.iso.org/">International Organization for Standardization (ISO)</a></title>
+				<img title="International Organization for Standardization (ISO)" href="http://www.iso.org/" src="iso.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="registries">
+			<title>Managing Value Spaces: Registries</title>
+			<slide id="why-registries">
+				<title>Separating Definition and Evolution</title>
+				<ul>
+					<li>Concepts may be well-defined but with open and evolving value sets</li>
+					<ul>
+						<li><em>Employees</em> may be as <q>simple</q> as listing people who have been on payroll</li>
+						<li><em>Languages</em> are not easy to find and identify but some consensus is possible</li>
+						<li><em>Countries</em> are even trickier because of politics and history</li>
+					</ul>
+					<li>Technical concepts often are easier to identify and manage</li>
+					<ul>
+						<li><em>Registry policies</em> must be well-defined so that management is predictable</li>
+						<li>Registries contain values and usually <em>link</em> to semantic descriptions</li>
+						<li>Sharing values should be the equivalent of sharing concepts</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="iana-registries">
+				<title><a href="http://www.iana.org/" title="Internet Assigned Numbers Authority">IANA</a> <a href="http://www.iana.org/protocols">Protocol Registries</a></title>
+				<img title="Internet Assigned Numbers Authority (IANA) Protocol Registries" href="http://www.iana.org/protocols" src="iana-registries.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="registry-policy">
+				<title>Preventing Value Drift</title>
+				<ul>
+					<li>Registered values should be <em>stable over time</em></li>
+					<ul>
+						<li>The only allowed semantic update are clarifications or updated specifications</li>
+						<li>Backwards-compatible specifications are essential (the old meaning still holds)</li>
+					</ul>
+					<li>Registered values should <em>never be reassigned</em></li>
+					<ul>
+						<li>Reassigning values is equivalent to a breaking change in value semantics</li>
+						<li>Once registered, values are defined and their meaning will never change</li>
+					</ul>
+					<li>Registered values may be marked as being <em>deprecated</em></li>
+					<ul>
+						<li>There may be a registry flag indicating that values should be treated as <q>deprecated</q></li>
+						<li>Deprecated values may be treated as errors at some point in time</li>
+						<li>Deprecated values can never be reassigned</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="standards-conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/herman-miller-2018"><code>dret.net/lectures/herman-miller-2018</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/herman-miller-2018"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 	<presentation id="representations">
 		<title short="Representations">Representations for APIs</title>
 		<toc class="resources"><a href="http://www.webconcepts.info/concepts/media-type/" title="Web Concepts: Media Types">Media Types</a>&#160;· <a href="http://www.w3.org/TR/xml/" title='Tim Bray, Jean Paoli, C. Michael Sperberg-McQueen, Eve Maler, and François Yergeau, "Extensible Markup Language (XML) 1.0 (Fifth Edition)", W3C Recommendation REC-xml-20081126, November 2008'>XML</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/8259" title='Tim Bray, "The JavaScript Object Notation (JSON) Data Interchange Format", IETF RFC 8259, December 2017'>JSON</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/4287" title='Mark Nottingham and Robert Sayre, "The Atom Syndication Format", IETF RFC 4287, December 2005'>Atom</a>&#160;· <a href="https://www.w3.org/TR/activitystreams-core/" title='James Snell and Evan Prodromou, "Activity Streams 2.0", W3C Recommendation REC-activitystreams-core-20170523, May 2017'>Activity Streams</a>&#160;· <a href="https://jsonfeed.org/">JSON Feed</a>&#160;· <a title='Mark Nottingham and Erik Wilde, "Problem Details for HTTP APIs", Internet RFC 7807, March 2016' href="http://webconcepts.info/specs/IETF/RFC/7807">RFC 7807</a></toc>
