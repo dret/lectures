@@ -149,27 +149,16 @@
 		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2017/04/the-three-drivers-of-the-api-economy.html" title='Erik Wilde, "The Three Drivers of the API Economy", April 2017'>Three API Drivers</a></toc>
 		<part id="high-level-view">
 			<title>APIs from 50,000 feet</title>
-			<slide id="api-language">
-				<title>APIs are Languages</title>
-				<ul>
-					<li>APIs in their current sense evolved from the <em>original API</em></li>
-					<ul>
-						<li><em>Local APIs</em> originated as a way to build systems (i.e., one big thing)</li>
-						<li><em>Network APIs</em> were invented decades ago but nobody found the silver bullet</li>
-						<li><em>Web APIs</em> are a loose and evolving collection of principles and patterns</li>
-					</ul>
-					<li>Languages become necessary when coordination is required</li>
-					<ul>
-						<li><em>Human language</em> is a result of improving ecological fitness</li>
-						<li><em>Human written language</em> is a result of new organizational challenges</li>
-					</ul>
-					<li>Same problems/approaches/answers like other language problems</li>
-					<ul>
-						<li><em>Domain-only:</em> Domains figure out their problems and their languages</li>
-						<li><em>Universal:</em> Find the <em>universal grammar</em> and use it everywhere</li>
-						<li><em>Hybrid:</em> Establish principles and patterns but avoid überformats</li>
-					</ul>
-				</ul>
+			<slide id="digital-transformation-crocodile">
+				<title>Digital Transformation</title>
+				<img href="https://commons.wikimedia.org/wiki/File:Crocodile_Gaping.jpg" src="digital-transformation-crocodile.jpg" title="Digital Transformation: Because being more agile than the competition just may be a good idea..." style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-pattern">
+				<title>APIs are a Pattern</title>
+				<div style="height: 70%">
+					<img style="float: left; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Uniform interface" src="pneumatic-tubes.jpg" href="https://twitter.com/NotableHistory/status/529966375125544960"/>
+					<img style="float: right; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Self-describing representations and stateless interactions" src="nj-gun-permit.png"/>
+				</div>
 			</slide>
 			<slide id="who-is-talking">
 				<title>APIs: Who's Talking?</title>
@@ -189,13 +178,6 @@
 						<li>Separate internal/external API strategies are counter-productive</li>
 					</ul>
 				</ul>
-			</slide>
-			<slide id="api-pattern">
-				<title>APIs are a Pattern</title>
-				<div style="height: 70%">
-					<img style="float: left; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Uniform interface" src="pneumatic-tubes.jpg" href="https://twitter.com/NotableHistory/status/529966375125544960"/>
-					<img style="float: right; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Self-describing representations and stateless interactions" src="nj-gun-permit.png"/>
-				</div>
 			</slide>
 		</part>
 		<part id="api-aspects">
@@ -270,6 +252,110 @@
 			<slide id="one-management-cycle">
 				<title>One Management Lifecycle</title>
 				<img title="API Lifecycle" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="digital-transformation-why">
+			<title>Digital Transformation: Why?</title>
+			<slide id="castle">
+				<title>Traditional IT</title>
+				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-economy">
+				<title>Business Agility</title>
+				<img title="Farmers' Market Sacramento" href="https://commons.wikimedia.org/wiki/File:Farmers'_market_Sacramento.jpg" src="farmers-market-sacramento.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="what">
+			<title>Digital Transformation: What?</title>
+			<slide id="api-lifecycle">
+				<title>API Lifecycle</title>
+				<img title="Where API management is headed in 2017" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="web-works">
+				<title>The Web Works</title>
+				<ul>
+					<li>MSA is about service autonomy in service-oriented landscapes</li>
+					<ul>
+						<li><em>Developer autonomy</em> is the freedom to choose the best tools for the job</li>
+						<li><em>Operations autonomy</em> means that every service is operated standalone</li>
+					</ul>
+					<li>MSA is also about effectiveness in autonomy-focused service-oriented landscapes</li>
+					<ul>
+						<li><em>Rapid provisioning</em> means that getting started is an easy task</li>
+						<li><em>Basic monitoring</em> establishes visibility into service operations</li>
+						<li><em>Rapid deployment</em> increases the velocity of service landscape evolution</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="web-industrialized">
+				<title>The Web, Industrialized</title>
+				<ul>
+					<li>MSA applies Web Architecture's <em href="http://dret.net/netdret/publications#pau09a">loose coupling</em> to the API space</li>
+					<ul>
+						<li>Build services with no hidden dependencies</li>
+						<li>Choose the best tool for the job</li>
+						<li>Decouple service provisioning from delivery architecture</li>
+						<li>Monitor service state and usage</li>
+						<li>React quickly when customers or market demand change</li>
+						<li>Experiment ruthlessly and keep experimentation cost low</li>
+					</ul>
+					<li>MSA is all about being webby while minimizing the cost</li>
+				</ul>
+			</slide>
+			<slide id="digitalization-dividends">
+				<title><a href="http://queue.acm.org/detail.cfm?id=2956643">Digitalization Dividends</a></title>
+				<ol>
+					<li>Permissionless Innovation</li>
+					<li>Enable Failure</li>
+					<li>Disrupt Trust (replaced by autonomy and accountability)</li>
+					<li>You Build It, You Own It</li>
+					<li>Accelerate Deprecations</li>
+					<li>End Centralized Metadata</li>
+					<li>Concentrate the Pain</li>
+					<li>Test Differently</li>
+				</ol>
+			</slide>
+			<slide id="cargo-cult">
+				<title>API/Microservices Cargo Cult</title>
+				<img title="Microservices Cargo Cult" src="microservices-cargo-cult.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="how">
+			<title>Digital Transformation: How?</title>
+			<slide id="digital-transformation-path">
+				<title><a href="http://martinfowler.com/articles/microservices.html">The Path to Microservices</a></title>
+				<ol>
+					<li>Componentization via services</li>
+					<li>Organized around business capabilities</li>
+					<li>Products not projects</li>
+					<li>Smart endpoints and dumb pipes</li>
+					<li>Decentralized governance</li>
+					<li>Decentralized data management</li>
+					<li>Infrastructure automation</li>
+					<li>Design for failure</li>
+					<li>Evolutionary design</li>
+				</ol>
+			</slide>
+			<slide id="who">
+				<title>Microservices for the Masses?</title>
+				<ul>
+					<li>Microservices are an investment and not a default choice</li>
+					<ul>
+						<li>The cost is the need for advanced infrastructure and teams</li>
+						<li>The return is increased flexibility and agility</li>
+						<li>Cost/benefit for microservices is targeted at long term capabilities</li>
+					</ul>
+					<li>What are the <a href="http://martinfowler.com/bliki/MicroservicePrerequisites.html">prerequisites for considering microservices?</a></li>
+					<ol>
+						<li><em>Rapid Provisioning:</em> Automated process to quickly create server infrastructure</li>
+						<li><em>Monitoring:</em> Multi-level monitoring from service health to business-level logic</li>
+						<li><em>Rapid Deployment:</em> Automated ways to quickly move from code to running services</li>
+					</ol>
+					<li>Moving to MSA is a transition process and not one <em>Big Bang</em></li>
+					<ul>
+						<li>Just like the Web is never complete/final, neither is a microservices landscape</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="digital-transformation-conclusions">
