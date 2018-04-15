@@ -3772,6 +3772,27 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<title><a href="http://www.iana.org/" title="Internet Assigned Numbers Authority">IANA</a> <a href="http://www.iana.org/protocols">Protocol Registries</a></title>
 				<img title="Internet Assigned Numbers Authority (IANA) Protocol Registries" href="http://www.iana.org/protocols" src="iana-registries.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="registry-policy">
+				<title>Preventing Value Drift</title>
+				<ul>
+					<li>Registered values should be <em>stable over time</em></li>
+					<ul>
+						<li>The only allowed semantic update are clarifications or updated specifications</li>
+						<li>Backwards-compatible specifications are essential (the old meaning still holds)</li>
+					</ul>
+					<li>Registered values should <em>never be reassigned</em></li>
+					<ul>
+						<li>Reassigning values is equivalent to a breaking change in value semantics</li>
+						<li>Once registered, values are defined and their meaning will never change</li>
+					</ul>
+					<li>Registered values may be marked as being <em>deprecated</em></li>
+					<ul>
+						<li>There may be a registry flag indicating that values should be treated as <q>deprecated</q></li>
+						<li>Deprecated values may be treated as errors at some point in time</li>
+						<li>Deprecated values can never be reassigned</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		</presentation>
 	<presentation id="styles">
