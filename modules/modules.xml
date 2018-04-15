@@ -3675,6 +3675,23 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>APIs and Standards</title>
 			<slide id="apis-are-languages">
 				<title>API are Languages</title>
+				<ul>
+					<li>APIs allow service providers and consumers to communicate</li>
+					<ul>
+						<li>Service providers <em>define</em> the language to be used for service interactions</li>
+						<li>Service consumers <em>use</em> the language to interact with the service</li>
+					</ul>
+					<li>Interfaces both separate and connect users of the interface</li>
+					<ul>
+						<li><em>Separation</em> means that the interface is self-contained</li>
+						<li><em>Connection</em> means that the interface is easy to use</li>
+					</ul>
+					<li>Language design becomes different in complex landscapes</li>
+					<ul>
+						<li><em>Singular APIs</em> derive value from being individually polished products</li>
+						<li><em>Landscape APIs</em> derive value from maximizing productivity across products</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="languages-need-standards">
 				<title>Languages need Standards</title>
