@@ -3751,6 +3751,23 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="registries">
 			<title>Managing Value Spaces: Registries</title>
+			<slide id="why-registries">
+				<title>Separating Definition and Evolution</title>
+				<ul>
+					<li>Concepts may be well-defined but with open and evolving value sets</li>
+					<ul>
+						<li><em>Employees</em> may be as <q>simple</q> as listing people who have been on payroll</li>
+						<li><em>Languages</em> are not easy to find and identify but some consensus is possible</li>
+						<li><em>Countries</em> are even trickier because of politics and history</li>
+					</ul>
+					<li>Technical concepts often are easier to identify and manage</li>
+					<ul>
+						<li><em>Registry policies</em> must be well-defined so that management is predictable</li>
+						<li>Registries contain values and usually <em>link</em> to semantic descriptions</li>
+						<li>Sharing values should be the equivalent of sharing concepts</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="iana-registries">
 				<title><a href="http://www.iana.org/" title="Internet Assigned Numbers Authority">IANA</a> <a href="http://www.iana.org/protocols">Protocol Registries</a></title>
 				<img title="Internet Assigned Numbers Authority (IANA) Protocol Registries" href="http://www.iana.org/protocols" src="iana-registries.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
