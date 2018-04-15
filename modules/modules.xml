@@ -3695,6 +3695,18 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide id="languages-need-standards">
 				<title>Languages need Standards</title>
+				<ul>
+					<li>Standards become building blocks of easily usable APIs</li>
+					<ul>
+						<li>Each building block reduces design effort and improves understandability</li>
+					</ul>
+					<li>Building block can be used from various areas</li>
+					<ol>
+						<li>General <em>API concepts</em> that can be used uniformly across various APIs</li>
+						<li><em>Domain concepts</em> that can be used across APIs for a certain domain</li>
+						<li><em>Organizational concepts</em> that make sense for APIs within an organization</li>
+					</ol>
+				</ul>
 			</slide>
 		</part>
 		<part id="standards">
