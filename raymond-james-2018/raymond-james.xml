@@ -119,4 +119,222 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="change-management">
+		<title short="Change Management">Change Management and Versioning</title>
+		<toc class="resources"><a href="https://tools.ietf.org/html/rfc5829" title="RFC 5829: 'Link Relation Types for Simple Version Navigation between Web Resources', April 2010">RFC 5829</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a>&#160;· <a href="https://blog.goodapi.co/api-change-management-2fe5bba32e9b" title='Zdenek Nemec, "API Change Management", April 2017'>Change Management</a>&#160;· <a href="http://semver.org/" title='Semantic Versioning 2.0.0'>Semantic Versioning</a>&#160;· <a href="http://webconcepts.info/specs/IETF/I-D/draft-wilde-sunset-header" title='Erik Wilde, "The Sunset HTTP Header", Internet Draft wilde-sunset-header'>Sunset Header</a></toc>
+		<part id="change-management-introduction">
+			<title>Introduction</title>
+			<slide id="versioning-practice">
+				<title>Versioning in Practice</title>
+				<ul>
+					<li>Version numbers have an almost mythical role in IT</li>
+					<ul>
+						<li>But often they are only useful for signaling continuity or breakage points</li>
+						<li>Most things work or break in a binary way (or simply refuse to even try)</li>
+					</ul>
+					<li>Compatibility comes in two basic flavors (one easier, one harder)</li>
+					<ul>
+						<li><em>Backwards compatibility</em> means to work with older components</li>
+						<li><em>Forward compatibility</em> means to work with more advanced components</li>
+					</ul>
+					<li>The Web has good rules to support both compatibility types</li>
+					<ul>
+						<li><em>Backwards compatibility:</em> New browser accessing older content</li>
+						<li><em>Forward compatibility:</em> Old browser accessing newer content</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="versioning-tweet-fielding">
+				<title>Versioning Breaks Things</title>
+				<img title='Roy Fielding (@fielding): &apos;The reason to make a real REST API is to get evolvability … a &quot;v1&quot; is a middle finger to your API customers, indicating RPC/HTTP (not REST)&apos;' href="https://twitter.com/fielding/status/376835835670167552" src="versioning-tweet-fielding.png" class="fullsize"/>
+			</slide>
+			<slide id="evolution">
+				<title>Plan for Evolution</title>
+				<ul>
+					<li>Planning for evolution means to reduce pain in the future</li>
+					<ul>
+						<li>No immediate benefits other than <q>doing the right thing</q></li>
+						<li>Modest effort when part of the API design process and culture</li>
+					</ul>
+					<li>Extensibility should be part of the <em>API design culture</em></li>
+					<ul>
+						<li>Each API must have and document a plan for API evolution</li>
+						<li>The simplest possible plan may be to never change the API</li>
+					</ul>
+					<li>Extensibility should be made easy for API consumers</li>
+					<ul>
+						<li>Provide test cases that simulate correct/incorrect API extensions</li>
+						<li>Provide feature flags so that services can enter <q>test mode</q></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="robust-extensibility">
+			<title>Robust Extensibility</title>
+			<slide id="core-semantics">
+				<title>Meaningful Core Semantics</title>
+				<ul>
+					<li>The core of the API allows clients to have meaningful interactions</li>
+					<ul>
+						<li>The starting point of an API should be meaningful and complete</li>
+					</ul>
+					<li>The core of the API is robust over time</li>
+					<ul>
+						<li>Anything that is added to the core does not change the core semantics</li>
+					</ul>
+					<li>Anything that is not part of the core can be safely ignored</li>
+					<ul>
+						<li><code>mustIgnore</code> semantics allow safe interactions beyond closely coordinated groups</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="extension-points">
+				<title>Well-Defined Extension Points</title>
+				<ul>
+					<li>APIs should be clear about where extensions are allowed</li>
+					<ul>
+						<li>API metamodels often decide where (potential) extension points are</li>
+						<li>API schemas/definitions should further narrow down where extensions are allowed</li>
+					</ul>
+					<li>API tests can make sure that the extension points are properly implemented</li>
+					<ul>
+						<li>Extensions in allowed places are ignored and tests should succeed</li>
+						<li>Extensions in other places should raise errors about malformed content</li>
+					</ul>
+					<li>Extension points are interesting to support in generic software</li>
+					<ul>
+						<li>Monitoring can report which and where extensions are being used</li>
+						<li>Libraries can make it easy to create/parse extension data</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="processing-model">
+				<title>Well-Defined Processing Model</title>
+				<ul>
+					<li>Extensions are well-defined and their handling is well-defined as well</li>
+					<ul>
+						<li>Extension points make it clear where to expect extensions</li>
+						<li>Processing models make it clear what to do with extensions</li>
+					</ul>
+					<li><code>mustIgnore</code> is a popular and good choice for extension processing</li>
+					<ul>
+						<li>Some formats allow extensions to declare their processing model (such as <code>mustUnderstand</code>)</li>
+						<li>HTML has a rule of ignoring unknown elements but processing their content</li>
+					</ul>
+					<li>How to <em>learn</em> about extensions is a different matter</li>
+					<ul>
+						<li>If an API evolves along a single path it may be as simple as looking along that path</li>
+						<li>If an API is used <a href="https://tools.ietf.org/html/draft-wilde-registries">in more complex ways</a> a registry may be a way to find extensions</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="versioning-strategies">
+			<title>Versioning Strategies</title>
+			<slide id="version-identification">
+				<title>Identifying Versions</title>
+				<ul>
+					<li>Versioning may be necessary when the extension model is not working anymore</li>
+					<li>Three main ways how to distinguish between versions on the service surface</li>
+					<ul>
+						<li>Make version numbers part of the resource URI: <code>http://example.org/api/v2/</code></li>
+						<li>Use specific HTTP headers: <code>API-Version: 2.0.0</code></li>
+						<li>Use media types: <code>Accept: application/vnd.example.org.v2+json</code></li>
+					</ul>
+					<li>All of these have side-effects which have to be balanced</li>
+					<ul>
+						<li>New URIs change resource identity which may result in data integration problems</li>
+						<li>Custom headers are specific for a service and hard to see/support in the general Web fabric</li>
+						<li>Media types often are not used by APIs or the clients consuming them</li>
+					</ul>
+					<li>Most APIs choose URI-based versioning and introduce new <q>API identity</q></li>
+					<ul>
+						<li>Versioning at this level is little more than <q>keeping the API brand</q></li>
+						<li>Version numbers can be used in URI path or in the domain name</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="semantic-versioning">
+				<title><a href="http://semver.org/">Semantic Versioning</a></title>
+				<ul>
+					<li><a href="http://semver.org/">Semantic Versioning</a> standardizes the meaning of version numbers</li>
+					<li>Version numbers follow the <code>MAJOR.MINOR.PATCH</code> pattern and the following rules</li>
+					<ul>
+						<li>Increase <code>MAJOR</code> version for incompatible API changes</li>
+						<li>Increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
+						<li>Increase <code>PATCH</code> version for making backwards-compatible bug fixes</li>
+					</ul>
+					<li>Mostly about how to name implementation artifacts and of limited use for APIs</li>
+					<ul>
+						<li>Exposing detailed version/patch information is a potential security risk</li>
+						<li>No behavioral benefit other than allowing clients to raise errors and stop working</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="linking-versions">
+				<title>Linking Versions</title>
+				<ul>
+					<li>Communicating versions via links works better than naming schemes</li>
+					<ul>
+						<li>APIs remain self-contained as long as consumers are working with one version</li>
+						<li>APIs are brought into context when consumers want versioning information</li>
+					</ul>
+					<li><a href="https://tools.ietf.org/html/rfc5829" title="RFC 5829: 'Link Relation Types for Simple Version Navigation between Web Resources', April 2010">RFC 5829</a> defines link relations for <q>simple version navigation</q></li>
+					<ul>
+						<li><code>successor-version</code> links to the newer version of the API</li>
+						<li><code>latest-version</code> links to the newest version of the API</li>
+						<li><code>predecessor-version</code> links to the older version of the API</li>
+						<li><code>version-history</code> links to a resource about the version history</li>
+					</ul>
+					<li>Plays well with <em>home documents</em> and their role for an API</li>
+					<ul>
+						<li>APIs share home documents or at least version histories across versions</li>
+						<li>Versioning links are used to allow navigation across all API versions</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="decommissioning">
+			<title>Decommissioning</title>
+			<slide id="http-sunset">
+				<title>Signaling API End-of-Life</title>
+				<ul>
+					<li>APIs can change in terms of features and will be decommissioned at some point</li>
+					<ul>
+						<li><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Robust extensibility</a> helps to facilitate non-breaking API changes</li>
+						<li><em>Hypermedia</em> helps as a pattern to move extensibility beyond data models</li>
+						<li><a href="http://semver.org/">Semantic versioning</a> may be used to keep track of API changes</li>
+						<li><a href="http://dret.typepad.com/dretblog/2015/08/http-sunset-header.html">HTTP <code>Sunset</code>ting</a> can be used to <a href="http://webconcepts.info/concepts/http-header/Sunset">signal upcoming sunsets on the HTTP level</a></li>
+					</ul>
+					<li>One possible requirement is that APIs must support <code href="http://webconcepts.info/concepts/http-header/Sunset">Sunset</code></li>
+					<ul>
+						<li>Services must document/describe the support of <code>Sunset</code></li>
+						<li>Services may implement <code>Sunset</code> any way they like</li>
+						<li>The simplest option may be <em><code>Sunset</code> policies</em> on a gateway</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="change-management-conclusions">
+			<title>Conclusions</title>
+			<slide id="plan-for-evolution">
+				<title>Plan for Evolution</title>
+				<ul>
+					<li>Evolvable APIs do not just happen</li>
+					<li>Think about cost and economics for versioning</li>
+					<li>Make evolution/versioning/deprecation part of API culture</li>
+				</ul>
+			</slide>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/raymond-james-2018"><code>dret.net/lectures/raymond-james-2018</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/raymond-james-2018"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>
