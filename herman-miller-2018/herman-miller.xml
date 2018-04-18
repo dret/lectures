@@ -130,8 +130,8 @@
 					<li>11.00-12.00: Managing APIs</li>
 					<li>13.00-13.45: Securing APIs</li>
 					<li>13.45-14.30: <link href="landscapes"/></li>
-					<li>14.45-16.15: API Creation, Management, and Portal Demos</li>
-					<li>16.15-16.30: Closing Session</li>
+					<li>14.45-16.00: <a href="CA-APIM-Overview.pdf">CA API Management Overview</a> (Alan Cota)</li>
+					<li>16.00-16.30: Closing Session</li>
 				</ul>
 			</slide>
 		</part>
@@ -2393,5 +2393,9 @@
 				</ul>
 			</slide>
 		</part>
+	</presentation>
+	<presentation external="CA-APIM-Overview.pdf">
+		<title>CA API Management Overview</title>
+		<author>Alan Cota</author>
 	</presentation>
 </hotspot>
