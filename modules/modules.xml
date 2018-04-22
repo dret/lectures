@@ -2392,6 +2392,10 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="graphql">
 			<title>GraphQL</title>
+			<slide id="graphql-history">
+				<title>GraphQL History</title>
+				<img src="graphql-logo.png" href="http://graphql.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+			</slide>
 			<slide id="graphql-example">
 				<title>Simple GraphQL Example</title>
 				<listing src="graphql-simple-query.graphql" href="https://graphql.org/learn/schema/#type-system"/>
