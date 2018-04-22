@@ -2392,6 +2392,11 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="graphql">
 			<title>GraphQL</title>
+			<slide id="graphql-example">
+				<title>Simple GraphQL Example</title>
+				<listing src="graphql-simple-query.graphql" href="https://graphql.org/learn/schema/#type-system"/>
+				<listing src="graphql-simple-response.json" href="https://graphql.org/learn/schema/#type-system"/>
+			</slide>
 		</part>
 		<part id="odata">
 			<title>Open Data Protocol (OData)</title>
