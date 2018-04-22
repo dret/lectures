@@ -489,6 +489,55 @@
 		</part>
 		<part id="api-acceleration">
 			<title>Accelerating API Availability</title>
+			<part id="graphql">
+				<title>GraphQL</title>
+				<slide id="graphql-history">
+					<title>GraphQL History</title>
+					<img src="graphql-logo.png" href="http://graphql.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+					<ul>
+						<li>Facebook wanted a way for clients to more specifically query content</li>
+						<ul>
+							<li>Facebook's dataset is a very large interconnected graph</li>
+							<li>Clients want specific parts of it depending on various context factors</li>
+						</ul>
+						<li>GraphQL is not an API but a language for building APIs</li>
+						<ul>
+							<li>GraphQL defines a type system and a query language that produces JSON results</li>
+							<li>The query language can be integrated into an API <a href="http://graphql.org/learn/serving-over-http/">in a variety of ways</a></li>
+						</ul>
+						<li>GraphQL also has <a href="http://graphql.org/learn/queries/#mutations">mutations</a> as a way to update data</li>
+						<ul>
+							<li><a href="http://graphql.org/learn/schema/#input-types">Input types</a> look like types but only <em>accept input data</em></li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="graphql-example">
+					<title>Simple GraphQL Example</title>
+					<table style="width: 90% ; ">
+						<tr>
+							<td style="vertical-align: top ; ">
+								<listing src="graphql-simple-query.graphql" href="https://graphql.org/learn/schema/#type-system"/>
+							</td>
+							<td style="vertical-align: top ; ">
+								<listing src="graphql-simple-response.json" href="https://graphql.org/learn/schema/#type-system"/>
+							</td>
+						</tr>
+					</table>
+				</slide>
+				<slide id="graphql-types">
+					<title>GraphQL Queries and Types</title>
+					<table style="width: 90% ; ">
+						<tr>
+							<td style="vertical-align: top ; ">
+								<listing src="graphql-query.graphql" href="https://graphql.org/"/>
+							</td>
+							<td style="vertical-align: top ; ">
+								<listing src="graphql-types.graphql" href="https://graphql.org/"/>
+							</td>
+						</tr>
+					</table>
+				</slide>
+			</part>
 			<slide id="one-management-cycle">
 				<title>One Management Lifecycle</title>
 				<img title="API Lifecycle" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
