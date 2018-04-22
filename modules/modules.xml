@@ -2398,8 +2398,29 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide id="graphql-example">
 				<title>Simple GraphQL Example</title>
-				<listing src="graphql-simple-query.graphql" href="https://graphql.org/learn/schema/#type-system"/>
-				<listing src="graphql-simple-response.json" href="https://graphql.org/learn/schema/#type-system"/>
+				<table style="width: 90% ; ">
+					<tr>
+						<td style="vertical-align: top ; ">
+							<listing src="graphql-simple-query.graphql" href="https://graphql.org/learn/schema/#type-system"/>
+						</td>
+						<td style="vertical-align: top ; ">
+							<listing src="graphql-simple-response.json" href="https://graphql.org/learn/schema/#type-system"/>
+						</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="graphql-types">
+				<title>GraphQL Queries and Types</title>
+				<table style="width: 90% ; ">
+					<tr>
+						<td style="vertical-align: top ; ">
+							<listing src="graphql-query.graphql" href="https://graphql.org/"/>
+						</td>
+						<td style="vertical-align: top ; ">
+							<listing src="graphql-types.graphql" href="https://graphql.org/"/>
+						</td>
+					</tr>
+				</table>
 			</slide>
 		</part>
 		<part id="odata">
