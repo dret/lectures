@@ -2395,6 +2395,22 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<slide id="graphql-history">
 				<title>GraphQL History</title>
 				<img src="graphql-logo.png" href="http://graphql.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+				<ul>
+					<li>Facebook wanted a way for clients to more specifically query content</li>
+					<ul>
+						<li>Facebook's dataset is a very large interconnected graph</li>
+						<li>Clients want specific parts of it depending on various context factors</li>
+					</ul>
+					<li>GraphQL is not an API but a language for building APIs</li>
+					<ul>
+						<li>GraphQL defines a type system and a query language that produces JSON results</li>
+						<li>The query language can be integrated into an API <a href="http://graphql.org/learn/serving-over-http/">in a variety of ways</a></li>
+					</ul>
+					<li>GraphQL also has <a href="http://graphql.org/learn/queries/#mutations">mutations</a> as a way to update data</li>
+					<ul>
+						<li><a href="http://graphql.org/learn/schema/#input-types">Input types</a> look like types but only <em>accept input data</em></li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="graphql-example">
 				<title>Simple GraphQL Example</title>
