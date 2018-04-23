@@ -112,6 +112,11 @@
 			<slide id="concepts">
 				<title>Web Concepts: <a href="http://webconcepts.info/concepts/">Concepts and Values</a></title>
 			</slide>
+			<slide id="concept-config">
+				<title>Concept Configuration</title>
+				<listing src="concepts.xml" line="20-24"/>
+				<listing src="concepts.xml" line="30-39"/>
+			</slide>
 		</part>
 		<part id="web-concepts-future">
 			<title>Web Concepts: The Future</title>
