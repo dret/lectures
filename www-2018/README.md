@@ -1,8 +1,6 @@
 # Surfing the API Web: Web Concepts
 
-## March 16, 2018
-
-Slides for the presentation at the  in Lyon, France, April 25, 2018.
+Slides for the presentation at the WWW2018 Web Conference in Lyon, France, April 26, 2018.
 
 
 ## License
@@ -12,4 +10,4 @@ These are sources that I make available for others to read/use/reuse; please res
 
 ## Online
 
-The presentation version for these talks is available online at http://dret.net/lectures/accso-2018/
+The presentation version for these talks is available online at http://dret.net/lectures/www-2018/
