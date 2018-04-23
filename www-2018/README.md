@@ -1,6 +1,6 @@
 # Surfing the API Web: Web Concepts
 
-Slides for the presentation at the WWW2018 Web Conference in Lyon, France, April 26, 2018.
+Slides for the presentation at the [Web Conference 2018 (WWW2018)](https://www2018.thewebconf.org/) in Lyon, France, April 26, 2018.
 
 
 ## License
