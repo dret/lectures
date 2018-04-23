@@ -455,6 +455,13 @@
 		</part>
 		<part id="api-acceleration">
 			<title>Accelerating API Availability</title>
+			<part id="integration-apis">
+				<title>From Integration to APIs</title>
+				<slide id="one-management-cycle">
+					<title>Manage Your Services/APIs</title>
+					<img title="API Lifecycle" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+			</part>
 			<part id="graphql">
 				<title>GraphQL</title>
 				<slide id="graphql-history">
@@ -504,10 +511,6 @@
 					</table>
 				</slide>
 			</part>
-			<slide id="one-management-cycle">
-				<title>One Management Lifecycle</title>
-				<img title="API Lifecycle" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
