@@ -147,6 +147,14 @@
 			</slide>
 			<slide id="concept-coverage">
 				<title>Concept Coverage</title>
+				<ul>
+					<li>Track <em>concept value usage</em> across APIs</li>
+					<li>Create a dashboard of concept/value popularity (possibly over time)</li>
+					<li>Can be done through code analysis (up to a certain point)</li>
+					<li>Probably works better/easier through <q>service fabric instrumentation</q></li>
+					<li>Ideally separate tooling and backed by an API/format for representing usage data</li>
+					<li>Could even detect difference between declared/used Web Concepts</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
