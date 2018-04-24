@@ -1142,6 +1142,13 @@
 			</slide>
 			<slide id="screen-scraping">
 				<title>Screen Scraping</title>
+				<ul>
+					<li>Screen scraping uses GUIs as APIs</li>
+					<li>Layout and keywords and markup allow to <q>understand</q> the content</li>
+					<li>Screen scraping is always brittle and requires sophisticated monitoring</li>
+					<li>Sophisticated screen scraping is hard but can be relatively robust</li>
+					<li><em>Always</em> prefer APIs over screen scraping when they are an option</li>
+				</ul>
 			</slide>
 			<slide id="server-response-api">
 				<title>Machine-Readable Data</title>
