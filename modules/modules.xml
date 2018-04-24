@@ -1107,6 +1107,18 @@
 		</slide>
 		<part id="ui-api">
 			<title>UIs and APIs</title>
+			<slide id="browser-request">
+				<title>Browsers speak HTTP</title>
+			</slide>
+			<slide id="server-response-browser">
+				<title>Browsers speak HTML</title>
+			</slide>
+			<slide id="screen-scraping">
+				<title>Screen Scraping</title>
+			</slide>
+			<slide id="server-response-api">
+				<title>Machine-Readable Data</title>
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="hypermedia">
