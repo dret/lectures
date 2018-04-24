@@ -1109,11 +1109,17 @@
 			<title>UIs and APIs</title>
 			<slide id="browser-request">
 				<title>Browsers speak HTTP</title>
+				<li>Browser request Web pages (and required resources) via HTTP requests</li>
 				<listing src="http-get-request-minimal.txt"/>
 				<listing src="http-get-request-chrome.txt"/>
 			</slide>
-			<slide id="server-response-browser">
-				<title>Browsers speak HTML</title>
+			<slide id="http-response">
+				<title>Browsers understand HTTP</title>
+				<listing src="http-get-response.txt"/>
+			</slide>
+			<slide id="http-response">
+				<title>Browsers understand HTML</title>
+				<listing src="http-get-response.html"/>
 			</slide>
 			<slide id="screen-scraping">
 				<title>Screen Scraping</title>
