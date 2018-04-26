@@ -113,10 +113,16 @@
 				<title>Web Concepts: <a href="http://webconcepts.info/concepts/">Concepts and Values</a></title>
 				<ul>
 					<li>Concepts establish a namespace for sharing values with shared meanings</li>
-					<li><a href="http://webconcepts.info/concepts/http-header/" title="List of all HTTP Header Fields">HTTP Header Fields</a> is one concept with currently 192 distinct values</li>
+					<li><a href="http://webconcepts.info/concepts/http-header/" title="List of all HTTP Header Fields">HTTP Header Fields</a> are one concept with currently 192 distinct values</li>
 					<ul>
 						<li>The currently listed values all are defined in W3C/IETF specifications</li>
 						<li>If required the list could be extended with de-facto standards as well</li>
+					</ul>
+					<li><a href="http://webconcepts.info/concepts/link-relation/" title="List of all Link Relations">Link Relations</a> are an extensible and fuzzy concept</li>
+					<ul>
+						<li>103 link relations have been established as registered values</li>
+						<li>Hypermedia applications often will use <q>private</q> URI-identified relations</li>
+						<li>It is possible that only registered link relations are good candidates for sharing</li>
 					</ul>
 				</ul>
 			</slide>
