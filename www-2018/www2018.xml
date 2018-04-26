@@ -111,6 +111,14 @@
 			</slide>
 			<slide id="concepts">
 				<title>Web Concepts: <a href="http://webconcepts.info/concepts/">Concepts and Values</a></title>
+				<ul>
+					<li>Concepts establish a namespace for sharing values with shared meanings</li>
+					<li><a href="http://webconcepts.info/concepts/http-header/" title="List of all HTTP Header Fields">HTTP Header Fields</a> is one concept with currently 192 distinct values</li>
+					<ul>
+						<li>The currently listed values all are defined in W3C/IETF specifications</li>
+						<li>If required the list could be extended with de-facto standards as well</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="concept-config">
 				<title>Concept Configuration</title>
