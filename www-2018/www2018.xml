@@ -105,10 +105,6 @@
 					<li><a href="http://webconcepts.info/specs/IETF/">Specification series</a> define naming patterns for automated processing</li>
 				</ul>
 			</slide>
-			<slide id="spec-series">
-				<title>Specification Series</title>
-				<listing src="specs.xml" line="4-22"/>
-			</slide>
 			<slide id="concepts">
 				<title>Web Concepts: <a href="http://webconcepts.info/concepts/">Concepts and Values</a></title>
 				<ul>
@@ -126,14 +122,18 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="overview">
+				<title>Web Concepts Overview</title>
+				<img src="web-concepts.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="spec-series">
+				<title>Specification Series</title>
+				<listing src="specs.xml" line="4-22"/>
+			</slide>
 			<slide id="concept-config">
 				<title>Concept Configuration</title>
 				<listing src="concepts.xml" line="20-24"/>
 				<listing src="concepts.xml" line="30-39"/>
-			</slide>
-			<slide id="overview">
-				<title>Web Concepts Overview</title>
-				<img src="web-concepts.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
 		<part id="web-concepts-future">
