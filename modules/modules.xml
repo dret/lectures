@@ -1107,6 +1107,22 @@
 		</slide>
 		<part id="ui-api">
 			<title>UIs and APIs</title>
+			<slide id="distributed-systems">
+				<title>Distributed Systems</title>
+				<ul>
+					<li>Any system that is not one integrated system has <em>components</em></li>
+					<ul>
+						<li>Components help to <em>separate</em> part of the system</li>
+						<li>Components must be able to <em>cooperate</em> for the system to work</li>
+					</ul>
+					<li>Distributed systems are always based on some model of component <em>interaction</em></li>
+					<ul>
+						<li><em>Tight coupling</em> means that it is harder to change or rearrange components</li>
+						<li><em>Loose coupling</em> makes it easier for the system to be changed</li>
+					</ul>
+					<li>Interactions happen at well defined <em>interfaces</em> within the system</li>
+				</ul>
+			</slide>
 			<slide id="interfaces">
 				<title>Interfaces</title>
 				<ul>
