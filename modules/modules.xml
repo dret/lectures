@@ -456,6 +456,18 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="description">
+		<title>Description</title>
+		<toc class="abstract">...</toc>
+		<toc class="resources"><a href="https://github.com/OAI/OpenAPI-Specification" title="OpenAPI Specification Repository">OpenAPI</a></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="openapi">
+			<title>OpenAPI (formerly known as Swagger)</title>
+		</part>
+	</presentation>
 	<presentation id="design">
 		<title>Design</title>
 		<toc class="abstract">APIs play a crucial role in modern IT architecture because they delineate and define the boundaries of IT capabilities. Producers and consumers of APIs interact using the API itself as a language for communications. Designing this language makes a big difference in how easy it is for consumers to use the API, and thus can make a big difference in API discovery, understanding, adoption, and productivity. Additional challenges in the API space are caused by the fact that API producers and consumers are not necessarily synchronized in their development cycles, meaning that API designs should take into account that both producers and consumers can evolve independently, and should try to minimize potential disruption because of incompatibilities.</toc>
@@ -1077,18 +1089,6 @@
 					<li>Transitioning to APIs is a gradual process</li>
 				</ul>
 			</slide>
-		</part>
-	</presentation>
-	<presentation id="description">
-		<title>Description</title>
-		<toc class="abstract">...</toc>
-		<toc class="resources"></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
-		<part id="openapi">
-			<title>OpenAPI (formerly known as Swagger)</title>
 		</part>
 	</presentation>
 	<presentation id="documentation-dx">
