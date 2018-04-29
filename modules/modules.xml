@@ -1079,6 +1079,18 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="description">
+		<title>Description</title>
+		<toc class="abstract">...</toc>
+		<toc class="resources"></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="openapi">
+			<title>OpenAPI (formerly known as Swagger)</title>
+		</part>
+	</presentation>
 	<presentation id="documentation-dx">
 		<title>Documentation and DX</title>
 		<toc class="abstract">...</toc>
