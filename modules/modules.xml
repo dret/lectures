@@ -466,6 +466,19 @@
 		</slide>
 		<part id="openapi">
 			<title>OpenAPI (formerly known as Swagger)</title>
+			<slide id="json-yaml">
+				<title>JSON and YAML</title>
+				<ul>
+					<li>JSON is the de-facto standard for structured data on the Web</li>
+					<li>JSON is human-readable but visibly comes from a code background</li>
+					<li><a href="http://yaml.org/" title="YAML Ain't Markup Language">YAML</a> evolved as a human-readable format for configuration data</li>
+					<ul>
+						<li>JSON data can be written in YAML for a more human-friendly syntax</li>
+						<li>YAML has many additional features that JSON does not support</li>
+					</ul>
+					<li>OpenAPI is defined in JSON and allows JSON and YAML representations</li>
+				</ul>
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="design">
