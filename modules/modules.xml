@@ -479,6 +479,14 @@
 					<li>OpenAPI is defined in JSON and allows JSON and YAML representations</li>
 				</ul>
 			</slide>
+			<slide id="openapi-info-json">
+				<title>OpenAPI Info Object (JSON)</title>
+				<listing src="openapi-info.json" href="https://graphql.org/learn/schema/#type-system"/>
+			</slide>
+			<slide id="openapi-info-yaml">
+				<title>OpenAPI Info Object (YAML)</title>
+				<listing src="openapi-info.yaml" href="https://graphql.org/learn/schema/#type-system"/>
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="design">
