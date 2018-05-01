@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "version": "1.0.0",
-    "title": "Weather API" },
+    "title": "Weather API",
+    "version": "1.0.0" },
   "servers": [
     {
       "url": "http://dret.net/weather" }],
