@@ -524,6 +524,20 @@
 				<title>Minimal OpenAPI Example (YAML)</title>
 				<listing src="openapi-weather.yaml"/>
 			</slide>
+			<slide id="openapi-query-parameter">
+				<title>Paths with Query Parameters</title>
+				<ul>
+					<li>URIs with Query Parameters: <code>/pets?limit=42</code></li>
+				</ul>
+				<listing src="petstore.yaml" line="10-23"/>
+			</slide>
+			<slide id="openapi-path-parameter">
+				<title>Paths with Path Parameters</title>
+				<ul>
+					<li>URIs with Path Parameters: <code>/pets/somepetname</code></li>
+				</ul>
+				<listing src="petstore.yaml" line="56-68"/>
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="design">
