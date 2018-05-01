@@ -508,6 +508,22 @@
 				<title>OpenAPI Info Object (YAML)</title>
 				<listing src="openapi-info.yaml" href="https://graphql.org/learn/schema/#type-system"/>
 			</slide>
+			<slide id="swagger-weather-json">
+				<title>Minimal Swagger Example (JSON)</title>
+				<listing src="swagger-weather.json"/>
+			</slide>
+			<slide id="swagger-weather-yaml">
+				<title>Minimal Swagger Example (YAML)</title>
+				<listing src="swagger-weather.yaml"/>
+			</slide>
+			<slide id="openapi-weather-json">
+				<title>Minimal OpenAPI Example (JSON)</title>
+				<listing src="openapi-weather.json"/>
+			</slide>
+			<slide id="openapi-weather-yaml">
+				<title>Minimal OpenAPI Example (YAML)</title>
+				<listing src="openapi-weather.yaml"/>
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="design">
