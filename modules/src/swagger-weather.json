@@ -8,7 +8,6 @@
   "schemes": [ "http" ],
   "paths": {
     "/forecast": {"get": {
-      "operationId": "getForecast",
       "summary": "Get the weather forecast.",
       "responses": {
         "200": { "description": "Successful operation." },
