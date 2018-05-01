@@ -557,6 +557,15 @@
 				<title>OpenAPI: The Complete Picture</title>
 				<img title='OpenAPI Map by Arnau Lauret' href="http://openapi-map.apihandyman.io/?version=3.0" src="openapi-map.png" class="fullsize"/>
 			</slide>
+			<slide id="openapi-summary">
+				<title>Describing URI Style APIs</title>
+				<ul>
+					<li>OpenAPI describes APIs by listing all resource paths</li>
+					<li>OpenAPI is often used to generate server/client code</li>
+					<li>OpenAPI creates a static and tightly coupled API landscape</li>
+					<li>Evolving OpenAPI APIs is not a core part of OpenAPI's mission</li>
+				</ul>
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="design">
