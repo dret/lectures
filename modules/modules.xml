@@ -1215,6 +1215,9 @@
 					<li>Layout and keywords and markup allow to <q>understand</q> the content</li>
 					<li>Screen scraping is always brittle and requires sophisticated monitoring</li>
 					<li>Sophisticated screen scraping is hard but can be relatively robust</li>
+					<ul>
+						<li>It is <em>much more robust</em> when client and server cooperate (i.e., update coordination)</li>
+					</ul>
 					<li><em>Always</em> prefer APIs over screen scraping when they are an option</li>
 				</ul>
 			</slide>
