@@ -1243,12 +1243,19 @@
 						<li><link href="uri-style"/> lists all <q>pages</q> based on their URIs or URI patterns</li>
 						<li><link href="hypermedia-style"/> designs APIs as starting points and interaction paths</li>
 					</ul>
-					<li>API design follows a similar pattern than GUI design</li>
+					<li>API design follows a similar pattern to GUI design</li>
+					<ul>
+						<li>Start from use cases and design APIs that satisfy those use cases</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
 		<part id="api-product">
 			<title>APIs are Products</title>
+			<slide id="product-labels">
+				<title>Product Labels</title>
+				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="hyrums-law">
 				<title>Hyrum's Law</title>
 				<blockquote><q href="http://www.hyrumslaw.com/">With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors of your system will be depended on by somebody.</q> (Hyrum Wright)</blockquote>
