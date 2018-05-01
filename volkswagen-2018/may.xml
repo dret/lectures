@@ -106,4 +106,187 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="foundations">
+		<title>API Foundations</title>
+		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/08/api-maps-hypermedia-api-design.html" title="API Maps: Hypermedia API Design">API Maps</a></toc>
+		<part id="ui-api">
+			<title>UIs and APIs</title>
+			<slide id="distributed-systems">
+				<title>Distributed Systems</title>
+				<ul>
+					<li>Any system that is not one integrated system has <em>components</em></li>
+					<ul>
+						<li>Components help to <em>separate</em> part of the system</li>
+						<li>Components must be able to <em>cooperate</em> for the system to work</li>
+					</ul>
+					<li>Distributed systems are always based on some model of component <em>interaction</em></li>
+					<ul>
+						<li><em>Tight coupling</em> means that it is harder to change or rearrange components</li>
+						<li><em>Loose coupling</em> makes it easier for the system to be changed</li>
+					</ul>
+					<li>Interactions happen at well defined <em>interfaces</em> within the system</li>
+				</ul>
+			</slide>
+			<slide id="interfaces">
+				<title>Interfaces</title>
+				<ul>
+					<li>Interfaces are well-defined ways how components interact</li>
+					<li>Interfaces allow <em>decoupling</em> by separating components</li>
+					<li>Interfaces allow <em>cooperation</em> by defining <q>contracts</q> for interaction</li>
+					<li><em>User Interfaces (UIs)</em> are a way how machines and humans communicate</li>
+					<ul>
+						<li><em>Command Line Interfaces (CLIs)</em> define text-based interactions through consoles</li>
+						<li><em>Graphical User Interfaces (GUIs)</em> are based on visual metaphors and interactions</li>
+					</ul>
+					<li><em>Application Programming Interfaces (APIs)</em> are a way how machines communicate</li>
+				</ul>
+			</slide>
+			<slide id="browser-request">
+				<title>Browsers speak HTTP</title>
+				<ul>
+					<li>Browser request Web pages (and required resources) via HTTP requests</li>
+					<li>HTTP requests have a <em>request line</em> followed by a number of <em>header fields</em></li>
+				</ul>
+				<listing src="http-get-request-minimal.txt"/>
+				<listing src="http-get-request-chrome.txt"/>
+			</slide>
+			<slide id="http-response">
+				<title>Browsers understand HTTP</title>
+				<ul>
+					<li>Browser receive Web pages (and required resources) via <em>HTTP responses</em></li>
+					<li>HTTP responses have a <em>status line</em> followed by a number of <em>header fields</em></li>
+				</ul>
+				<listing src="http-get-response.txt"/>
+			</slide>
+			<slide id="http-response">
+				<title>Browsers understand HTML</title>
+				<listing src="http-get-response.html"/>
+			</slide>
+			<slide id="html-layout">
+				<title>HTML Structures are Layout Structures</title>
+				<ul>
+					<li>HTML is designed to help <em>browsers created a formatted page</em></li>
+					<ul>
+						<li>Formatting is based on elements for paragraphs, lists, tables, …</li>
+						<li>HTML and browsers are not concerned with content or meaning</li>
+					</ul>
+					<li>HTML has a rather simple formatting model</li>
+					<ul>
+						<li>HTML is supposed to represent the fundamental layout structures</li>
+						<li>Fine-tuning the layout can be done with <em>Cascading Style Sheets (CSS)</em></li>
+					</ul>
+					<li><em>HTML+CSS</em> are the foundation for statically formatted Web pages</li>
+					<li>Dynamic pages also use <em>DOM+JavaScript</em> for creating a dynamic browser-based GUI</li>
+				</ul>
+			</slide>
+			<slide id="screen-scraping">
+				<title>Screen Scraping</title>
+				<ul>
+					<li>Screen scraping uses GUIs as APIs</li>
+					<li>Layout and keywords and markup allow to <q>understand</q> the content</li>
+					<li>Screen scraping is always brittle and requires sophisticated monitoring</li>
+					<li>Sophisticated screen scraping is hard but can be relatively robust</li>
+					<ul>
+						<li>It is <em>much more robust</em> when client and server cooperate (i.e., update coordination)</li>
+					</ul>
+					<li><em>Always</em> prefer APIs over screen scraping when they are an option</li>
+				</ul>
+			</slide>
+			<slide id="server-response-api-xml">
+				<title>Machine-Readable Data (XML)</title>
+				<listing src="http-get-response.xml"/>
+			</slide>
+			<slide id="server-response-api-json">
+				<title>Machine-Readable Data (JSON)</title>
+				<listing src="http-get-response.json"/>
+			</slide>
+			<slide id="gui-to-api">
+				<title>From GUI to API</title>
+				<ul>
+					<li>Applications provide a variety of services for users</li>
+					<ul>
+						<li>In Web-style GUIs, these are available at various pages</li>
+						<li>In SPA GUIs, these are available through various interaction paths</li>
+						<li>In APIs, these are available according to the <em>API style</em></li>
+					</ul>
+					<li>APIs can use various style and two of them are inspired by the Web</li>
+					<ul>
+						<li><em>URI Style</em> lists all <q>pages</q> based on their URIs or URI patterns</li>
+						<li><em>Hypermedia Style</em> designs APIs as starting points and interaction paths</li>
+					</ul>
+					<li>API design follows a similar pattern to GUI design</li>
+					<ul>
+						<li>Start from use cases and design APIs that satisfy those use cases</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="api-product">
+			<title>APIs are Products</title>
+			<slide id="product-thinking">
+				<title>Product Thinking</title>
+				<ul>
+					<li>Products are solutions for solving the problems of users</li>
+					<ul>
+						<li>Most users do not want to use a product, they want to solve a problem</li>
+						<li>Understanding user problems leads to better product design and management</li>
+						<li>Improving products should be focused on better solving user problems</li>
+					</ul>
+					<li>Products need to be managed throughout their full lifecycle</li>
+					<ul>
+						<li>Inception and design based on user stories</li>
+						<li>Development and testing gathering feedback as early as possible</li>
+						<li>Observing product usage and continuous improvement</li>
+						<li>Retiring/replacing product as part of the overall lifecycle</li>
+					</ul>
+					<li>APIs are the visible/actionable part of problem-solving capabilities</li>
+				</ul>
+			</slide>
+			<slide id="kaizen">
+				<title>Kaizen: Continuous Improvement</title>
+				<img title="Kaizen: Continuous Improvement" href="https://commons.wikimedia.org/wiki/File:Kaizen-1.svg" src="kaizen.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="product-evolution">
+				<title>Product Consumers and Evolution</title>
+				<ul>
+					<li>APIs are <q>consumed</q> as a subscription-based activity</li>
+					<ul>
+						<li>APIs may change even if the consumers did not change anything</li>
+						<li>Not breaking consumers is essential for scalable API management</li>
+					</ul>
+					<li>API consumers might use API products in unconventional ways</li>
+					<ul>
+						<li><em>Test servers</em> can help consumers to validate their implementations</li>
+						<li><em>Production servers</em> should focus on maximizing operational stability</li>
+						<li><em>Version freezes</em> allow consumers to never worry about possible updates</li>
+					</ul>
+					<li>Communicating change management and versioning clearly help to set expectations</li>
+				</ul>
+			</slide>
+			<slide id="hyrums-law">
+				<title>Hyrum's Law</title>
+				<blockquote><q href="http://www.hyrumslaw.com/">With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors of your system will be depended on by somebody.</q> (Hyrum Wright)</blockquote>
+			</slide>
+			<slide id="product-labels">
+				<title>Product Labels</title>
+				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-product-maturity">
+				<title>API Product Maturity</title>
+				<ul>
+					<li>Organizations must have safe and scalable API product management practices</li>
+					<ul>
+						<li>For internal APIs, this determines how quickly and safely the organization can change</li>
+						<li>For external APIs, this determines how quickly and safely the organization can change course</li>
+					</ul>
+					<li><em>API Archaeology</em> can help to uncover existing APIs that nobody manages</li>
+					<ul>
+						<li>Integration projects between systems for specific interaction scenarios</li>
+						<li><em>Accidental APIs</em> should be replaced by designed and managed ones</li>
+					</ul>
+					<li><em>API Management</em> has to be practiced by anybody producing/consuming APIs</li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>
