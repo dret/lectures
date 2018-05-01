@@ -1133,7 +1133,7 @@
 	<presentation id="foundations">
 		<title>Foundations</title>
 		<toc class="abstract">...</toc>
-		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/08/api-maps-hypermedia-api-design.html" title="API Maps: Hypermedia API Design">API Maps</a></toc>
+		<toc class="resources"><a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/08/api-maps-hypermedia-api-design.html" title="API Maps: Hypermedia API Design">API Maps</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -1168,6 +1168,22 @@
 						<li><em>Graphical User Interfaces (GUIs)</em> are based on visual metaphors and interactions</li>
 					</ul>
 					<li><em>Application Programming Interfaces (APIs)</em> are a way how machines communicate</li>
+				</ul>
+			</slide>
+			<slide id="interfaces-and-coupling">
+				<title>Interfaces and Coupling</title>
+				<ul>
+					<li>Interfaces allow to separate service production and consumption</li>
+					<ul>
+						<li><em>Web apps</em> allow users spontaneous access from any Web-enabled client</li>
+						<li><em>Native apps</em> only work for supported platforms and after app download</li>
+					</ul>
+					<li><em>Loose coupling</em> improves scalability and agility</li>
+					<ul>
+						<li>Producers provide services and interfaces</li>
+						<li>Consumers can use services without prior interaction or installation</li>
+						<li>Both sides can make changes without the other side having to know</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="browser-request">
