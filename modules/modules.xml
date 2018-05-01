@@ -1174,12 +1174,17 @@
 				<title>Browsers speak HTTP</title>
 				<ul>
 					<li>Browser request Web pages (and required resources) via HTTP requests</li>
+					<li>HTTP requests have a <em>request line</em> followed by a number of <em>header fields</em></li>
 				</ul>
 				<listing src="http-get-request-minimal.txt"/>
 				<listing src="http-get-request-chrome.txt"/>
 			</slide>
 			<slide id="http-response">
 				<title>Browsers understand HTTP</title>
+				<ul>
+					<li>Browser receive Web pages (and required resources) via <em>HTTP responses</em></li>
+					<li>HTTP responses have a <em>status line</em> followed by a number of <em>header fields</em></li>
+				</ul>
 				<listing src="http-get-response.txt"/>
 			</slide>
 			<slide id="http-response">
