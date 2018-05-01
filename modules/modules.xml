@@ -1218,8 +1218,13 @@
 					<li><em>Always</em> prefer APIs over screen scraping when they are an option</li>
 				</ul>
 			</slide>
-			<slide id="server-response-api">
-				<title>Machine-Readable Data</title>
+			<slide id="server-response-api-xml">
+				<title>Machine-Readable Data (XML)</title>
+				<listing src="http-get-response.xml"/>
+			</slide>
+			<slide id="server-response-api-json">
+				<title>Machine-Readable Data (JSON)</title>
+				<listing src="http-get-response.json"/>
 			</slide>
 		</part>
 		<part id="api-product">
