@@ -1252,6 +1252,24 @@
 		</part>
 		<part id="api-product">
 			<title>APIs are Products</title>
+			<slide id="product-thinking">
+				<title>Product Thinking</title>
+				<ul>
+					<li>Products are solutions for solving the problems of users</li>
+					<ul>
+						<li>Most users do not want to use a product, they want to solve a problem</li>
+						<li>Understanding user problems leads to better product design and management</li>
+						<li>Improving products should be focused on better solving user problems</li>
+					</ul>
+					<li>Products need to be managed throughout their full lifecycle</li>
+					<ul>
+						<li>Inception and design based on user stories</li>
+						<li>Development and testing gathering feedback as early as possible</li>
+						<li>Observing product usage and continuous improvement</li>
+						<li>Retiring/replacing product as part of the overall lifecycle</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="product-labels">
 				<title>Product Labels</title>
 				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
