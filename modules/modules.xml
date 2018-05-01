@@ -459,7 +459,7 @@
 	<presentation id="description">
 		<title>Description</title>
 		<toc class="abstract">...</toc>
-		<toc class="resources"><a href="https://github.com/OAI/OpenAPI-Specification" title="OpenAPI Specification Repository">OpenAPI</a></toc>
+		<toc class="resources"><a href="https://github.com/OAI/OpenAPI-Specification" title="OpenAPI Specification Repository">OpenAPI</a>&#160;· <a href="http://openapi-map.apihandyman.io/?version=3.0" title="Interactive OpenAPI Map by Arnaud Lauret">OpenAPI Map</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -547,6 +547,10 @@
 					<li>URIs with Path Parameters: <code>/pets/somepetname</code></li>
 				</ul>
 				<listing src="petstore.yaml" line="56-68"/>
+			</slide>
+			<slide id="openapi-map">
+				<title>OpenAPI: The Complete Picture</title>
+				<img title='OpenAPI Map by Arnau Lauret' href="http://openapi-map.apihandyman.io/?version=3.0" src="openapi-map.png" class="fullsize"/>
 			</slide>
 		</part>
 	</presentation>
