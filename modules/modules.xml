@@ -1275,13 +1275,30 @@
 				<title>Kaizen: Continuous Improvement</title>
 				<img title="Kaizen: Continuous Improvement" href="https://commons.wikimedia.org/wiki/File:Kaizen-1.svg" src="kaizen.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="product-labels">
-				<title>Product Labels</title>
-				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			<slide id="product-evolution">
+				<title>Product Consumers and Evolution</title>
+				<ul>
+					<li>APIs are <q>consumed</q> as a subscription-based activity</li>
+					<ul>
+						<li>APIs may change even if the consumers did not change anything</li>
+						<li>Not breaking consumers is essential for scalable API management</li>
+					</ul>
+					<li>API consumers might use API products in unconventional ways</li>
+					<ul>
+						<li><em>Test servers</em> can help consumers to validate their implementations</li>
+						<li><em>Production servers</em> should focus on maximizing operational stability</li>
+						<li><em>Version freezes</em> allow consumers to never worry about possible updates</li>
+					</ul>
+					<li>Communicating change management and versioning clearly help to set expectations</li>
+				</ul>
 			</slide>
 			<slide id="hyrums-law">
 				<title>Hyrum's Law</title>
 				<blockquote><q href="http://www.hyrumslaw.com/">With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors of your system will be depended on by somebody.</q> (Hyrum Wright)</blockquote>
+			</slide>
+			<slide id="product-labels">
+				<title>Product Labels</title>
+				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
 	</presentation>
