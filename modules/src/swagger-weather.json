@@ -10,10 +10,7 @@
     "/forecast": {"get": {
       "operationId": "getForecast",
       "summary": "Get the weather forecast.",
-      "produces": [
-        "application/xml",
-        "application/json" ],
       "responses": {
         "200": { "description": "Successful operation." },
-        "400": {"description": "Invalid request." },
-        "500": {"description": "Server error." }}}}}}
+        "400": { "description": "Invalid request." },
+        "500": { "description": "Server error." }}}}}}
