@@ -508,6 +508,16 @@
 				<title>OpenAPI Info Object (YAML)</title>
 				<listing src="openapi-info.yaml" href="https://graphql.org/learn/schema/#type-system"/>
 			</slide>
+			<slide id="minimal-openapi-example">
+				<title>Minimal OpenAPI Example</title>
+				<ul>
+					<li>Identification of the Swagger/OpenAPI version</li>
+					<li>Minimal metadata about the described API</li>
+					<li>URIs that are made available by the API</li>
+					<li>Operations that can be performed on these URIs</li>
+					<li>Responses to expect from these operations</li>
+				</ul>
+			</slide>
 			<slide id="swagger-weather-json">
 				<title>Minimal Swagger Example (JSON)</title>
 				<listing src="swagger-weather.json"/>
