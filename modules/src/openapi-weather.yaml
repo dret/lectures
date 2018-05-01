@@ -1,0 +1,18 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Weather API
+servers:
+  - url: 'http://dret.net/weather'
+paths:
+  /forecast:
+    get:
+      operationId: getForecast
+      summary: Get the weather forecast.
+      responses:
+        '200':
+          description: Successful operation.
+        '400':
+          description: Invalid request.
+        '500':
+          description: Server error.
