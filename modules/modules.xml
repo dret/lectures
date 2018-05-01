@@ -549,6 +549,10 @@
 				</ul>
 				<listing src="petstore.yaml" line="56-68"/>
 			</slide>
+			<slide id="openapi-editor">
+				<title>OpenAPI/Swagger Editor</title>
+				<img title='Web-based interactive OpenAPI/Swagger editor' href="https://editor.swagger.io/" src="swagger-editor-petstore.png" class="fullsize"/>
+			</slide>
 			<slide id="openapi-map">
 				<title>OpenAPI: The Complete Picture</title>
 				<img title='OpenAPI Map by Arnau Lauret' href="http://openapi-map.apihandyman.io/?version=3.0" src="openapi-map.png" class="fullsize"/>
