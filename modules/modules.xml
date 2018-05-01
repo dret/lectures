@@ -1300,6 +1300,22 @@
 				<title>Product Labels</title>
 				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="api-product-maturity">
+				<title>API Product Maturity</title>
+				<ul>
+					<li>Organizations must have safe and scalable API product management practices</li>
+					<ul>
+						<li>For internal APIs, this determines how quickly and safely the organization can change</li>
+						<li>For external APIs, this determines how quickly and safely the organization can change course</li>
+					</ul>
+					<li><em>API Archaeology</em> can help to uncover existing APIs that nobody manages</li>
+					<ul>
+						<li>Integration projects between systems for specific interaction scenarios</li>
+						<li><em>Accidental APIs</em> should be replaced by designed and managed ones</li>
+					</ul>
+					<li><em>API Management</em> has to be practiced by anybody producing/consuming APIs</li>
+				</ul>
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="hypermedia">
