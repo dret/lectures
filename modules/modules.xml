@@ -1863,6 +1863,24 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="monitoring">
+		<title>Monitoring</title>
+		<toc class="abstract">...</toc>
+		<toc class="resources">...</toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="measuring">
+			<title>Measuring APIs</title>
+			<slide id="kpi">
+				<title>Key Performance Indicators</title>
+			</slide>
+			<slide id="okr">
+				<title>Objectives and Key Results</title>
+			</slide>
+		</part>
+	</presentation>
 	<presentation id="programs">
 		<title>API Programs</title>
 		<toc class="abstract">...</toc>
