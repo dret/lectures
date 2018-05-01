@@ -1193,6 +1193,20 @@
 			</slide>
 			<slide id="html-layout">
 				<title>HTML Structures are Layout Structures</title>
+				<ul>
+					<li>HTML is designed to help <em>browsers created a formatted page</em></li>
+					<ul>
+						<li>Formatting is based on elements for paragraphs, lists, tables, …</li>
+						<li>HTML and browsers are not concerned with content or meaning</li>
+					</ul>
+					<li>HTML has a rather simple formatting model</li>
+					<ul>
+						<li>HTML is supposed to represent the fundamental layout structures</li>
+						<li>Fine-tuning the layout can be done with <em>Cascading Style Sheets (CSS)</em></li>
+					</ul>
+					<li><em>HTML+CSS</em> are the foundation for statically formatted Web pages</li>
+					<li>Dynamic pages also use <em>DOM+JavaScript</em> for creating a dynamic browser-based GUI</li>
+				</ul>
 			</slide>
 			<slide id="screen-scraping">
 				<title>Screen Scraping</title>
