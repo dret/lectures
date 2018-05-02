@@ -2024,6 +2024,15 @@
 					<li>What causes most delay for API onboarding?</li>
 				</ul>
 			</slide>
+			<slide id="kpi-api-traffic">
+				<title>API Traffic Growth</title>
+				<ul>
+					<li>The amount of traffic an API is serving</li>
+					<li>Should be augmented to better reflect the <em>value</em> the API is driving</li>
+					<li>Reliability should improve when traffic/value are increasing</li>
+					<li>Scalability is important to check for rapidly growing APIs</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="okr">
 			<title>Objectives and Key Results (OKR)</title>
