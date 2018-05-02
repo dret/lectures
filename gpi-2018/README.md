@@ -1,6 +1,6 @@
 # API Academy at GPI
 
-Slides for an API Academy bootcamp at GPI in Trento, Italy.
+Slides for an API Academy workshop at GPI in Trento, Italy.
 
 
 ## License
