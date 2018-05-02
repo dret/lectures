@@ -1982,6 +1982,10 @@
 		</part>
 		<part id="kpi">
 			<title>Key Performance Indicators (KPI)</title>
+			<slide id="goodharts-law">
+				<title>Goodharts's Law</title>
+				<blockquote><q>When a measure becomes a target, it ceases to be a good measure.</q> (<a href="https://en.wikipedia.org/wiki/Charles_Goodhart">Charles Goodhart</a>)</blockquote>
+			</slide>
 			<slide id="kpi-team-number">
 				<title>Number of API Product Teams</title>
 				<ul>
@@ -2017,7 +2021,7 @@
 				<title>API Onboarding</title>
 				<ul>
 					<li>How long does it take to onboard new API consumers?</li>
-					<li>What causes largest delay for API onboarding?</li>
+					<li>What causes most delay for API onboarding?</li>
 				</ul>
 			</slide>
 		</part>
