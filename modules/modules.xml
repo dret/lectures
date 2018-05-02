@@ -1950,27 +1950,6 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
-		<part id="kpi">
-			<title>Key Performance Indicators (KPI)</title>
-			<slide id="kpi-team-number">
-				<title>Number of API Product Teams</title>
-				<ul>
-					<li>Low numbers indicate lack of agility</li>
-					<li>Low numbers indicate risk of building <q>distributed monolith</q></li>
-					<li>High numbers indicate need of alignment and tooling</li>
-				</ul>
-			</slide>
-			<slide id="kpi-api-number">
-				<title>Number of APIs</title>
-				<ul>
-					<li>Interesting indicator but little indication of API value</li>
-					<li>Differentiating <em>public/partner/private</em> helps to better track API focus</li>
-				</ul>
-			</slide>
-		</part>
-		<part id="okr">
-			<title>Objectives and Key Results (OKR)</title>
-		</part>
 	</presentation>
 	<presentation id="programs">
 		<title>API Programs</title>
