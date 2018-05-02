@@ -1950,14 +1950,14 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
-		<part id="measuring">
-			<title>Measuring APIs</title>
-			<slide id="kpi">
-				<title>Key Performance Indicators</title>
+		<part id="kpi">
+			<title>Key Performance Indicators (KPI)</title>
+			<slide id="kpi-api-number">
+				<title>Number of APIs</title>
 			</slide>
-			<slide id="okr">
-				<title>Objectives and Key Results</title>
-			</slide>
+		</part>
+		<part id="okr">
+			<title>Objectives and Key Results (OKR)</title>
 		</part>
 	</presentation>
 	<presentation id="programs">
