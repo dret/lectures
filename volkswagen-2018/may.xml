@@ -411,6 +411,9 @@
 				<title>OpenAPI: The Complete Picture</title>
 				<img title='OpenAPI Map by Arnau Lauret' href="http://openapi-map.apihandyman.io/?version=3.0" src="openapi-map.png" class="fullsize"/>
 			</slide>
+		</part>
+		<part id="openapi-conclusions">
+			<title>Conclusions</title>
 			<slide id="openapi-summary">
 				<title>Describing URI Style APIs</title>
 				<ul>
@@ -420,9 +423,6 @@
 					<li>Evolving OpenAPI APIs is not a core part of OpenAPI's mission</li>
 				</ul>
 			</slide>
-		</part>
-		<part id="openapi-conclusions">
-			<title>Conclusions</title>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
