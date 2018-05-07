@@ -370,7 +370,7 @@
 						<li>Increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
 						<li>Increase <code>PATCH</code> version for making backwards-compatible bug fixes</li>
 					</ul>
-					<li>Mostly about how to name implementation artifacts and of limited use for APIs</li>
+					<li>Mostly about how to name implementation artifacts but also applicable to APIs</li>
 					<ul>
 						<li>Exposing detailed version/patch information is a potential security risk</li>
 						<li>No behavioral benefit other than allowing clients to raise errors and stop working</li>
