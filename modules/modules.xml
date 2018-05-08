@@ -729,7 +729,7 @@
 					</ul>
 					<li>Messages can follow patterns that make APIs easier to use</li>
 					<ul>
-						<li><em>API styles</em> are focusing on specific communication styles</li>
+						<li><link href="styles">API styles</link> are focusing on specific communication styles</li>
 						<li><em>Metamodels</em> help to provide structure (plain text, binary, XML, JSON, RDF, …)</li>
 						<li><em>API models</em> add message models (SOAP, HAL, GraphQL, …)</li>
 						<li><em>Vocabularies</em> help to describe specific APIs</li>
@@ -4581,7 +4581,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<title>API Styles in the Wild</title>
 				<ul>
 					<li><link href="tunnel-style"/>: XML-RPC, SOAP, gRPC</li>
-					<li><link href="uri-style"/>: Swagger/OpenAPI</li>
+					<li><link href="uri-style"/>: OpenAPI/Swagger</li>
 					<li><link href="hypermedia-style"/>: HAL, Siren, Atom</li>
 					<li><link href="query-style"/>: GraphQL, OData, SPARQL</li>
 					<li><link href="event-style"/>: MQ, WebSub, MQTT, XMPP, AMQP</li>
