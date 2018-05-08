@@ -358,6 +358,18 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="extensible-content">
+			<title>Extensible Content Examples</title>
+			<slide id="extensible-content-xml">
+				<title>XML Content Extension</title>
+				<listing src="address.xml"/>
+				<listing src="address-extended.xml"/>
+			</slide>
+			<slide id="extensible-content-xsd">
+				<title>XML Content Extension: XSD Schema</title>
+				<listing src="address.xsd"/>
+			</slide>
+		</part>
 		<part id="versioning-strategies">
 			<title>Versioning Strategies</title>
 			<slide id="semantic-versioning">
