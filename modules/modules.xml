@@ -369,6 +369,11 @@
 				<title>XML Content Extension: XSD Schema</title>
 				<listing src="address.xsd"/>
 			</slide>
+			<slide id="extensible-content-json">
+				<title>JSON Content Extension</title>
+				<listing src="address.json"/>
+				<listing src="address-extended.json"/>
+			</slide>
 		</part>
 		<part id="versioning-strategies">
 			<title>Versioning Strategies</title>
