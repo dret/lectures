@@ -358,8 +358,11 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="extensible-content">
-			<title>Extensible Content Examples</title>
+		<part id="extensibility-examples">
+			<title>Extensibility Examples</title>
+			<slide id="extensibility-content">
+				<title>Content Extensibility</title>
+			</slide>
 			<slide id="extensible-content-xml">
 				<title>XML Content Extension</title>
 				<listing src="address.xml"/>
