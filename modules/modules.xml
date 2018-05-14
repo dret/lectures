@@ -362,6 +362,19 @@
 			<title>Extensibility Examples</title>
 			<slide id="extensibility-content">
 				<title>Extensibility of Content</title>
+				<ul>
+					<li>Extending content can be done by <em>additive</em> changes to the content</li>
+					<ul>
+						<li><em>Adding properties</em> to the existing content model</li>
+						<li><em>Limiting properties</em> to a more constraining appearance/value model</li>
+					</ul>
+					<li>Extension can never change the semantics of existing content</li>
+					<ul>
+						<li><em>Ignoring</em> extensions always must be a safe thing to do</li>
+						<li><em>Dependencies across extensions</em> should be avoided if possible</li>
+					</ul>
+					<li>Specifying <em>extension points</em> depends on the representation format</li>
+				</ul>
 			</slide>
 			<slide id="extensible-content-xml">
 				<title>XML Content Extension</title>
