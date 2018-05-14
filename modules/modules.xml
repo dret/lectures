@@ -392,6 +392,17 @@
 			</slide>
 			<slide id="extensibility-control">
 				<title>Extensibility of Controls</title>
+				<ul>
+					<li>Controls expose new paths of the workflow available to clients</li>
+					<ul>
+						<li>New paths should not have any impact on existing paths</li>
+						<li>Existing clients should ignore those paths</li>
+					</ul>
+					<li>Hypermedia formats should be based on controls being an open set</li>
+					<ul>
+						<li>Specifics on how to add and handle extensions depend on the format</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="hal-extension">
 				<title>Extending Controls in HAL</title>
