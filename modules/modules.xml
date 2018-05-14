@@ -361,7 +361,7 @@
 		<part id="extensibility-examples">
 			<title>Extensibility Examples</title>
 			<slide id="extensibility-content">
-				<title>Content Extensibility</title>
+				<title>Extensibility of Content</title>
 			</slide>
 			<slide id="extensible-content-xml">
 				<title>XML Content Extension</title>
@@ -376,6 +376,9 @@
 				<title>JSON Content Extension</title>
 				<listing src="address.json"/>
 				<listing src="address-extended.json"/>
+			</slide>
+			<slide id="extensibility-control">
+				<title>Extensibility of Controls</title>
 			</slide>
 		</part>
 		<part id="versioning-strategies">
