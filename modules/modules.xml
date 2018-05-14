@@ -380,6 +380,11 @@
 			<slide id="extensibility-control">
 				<title>Extensibility of Controls</title>
 			</slide>
+			<slide id="hal-extension">
+				<title>Extending Controls in HAL</title>
+				<listing src="hal.json" href="http://stateless.co/hal_specification.html" line="30-37"/>
+				<listing src="hal-extended.json"/>
+			</slide>
 		</part>
 		<part id="versioning-strategies">
 			<title>Versioning Strategies</title>
