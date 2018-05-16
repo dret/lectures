@@ -52,7 +52,7 @@
 	<presentation id="introduction">
 		<title>Introduction to APIs</title>
 		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>
-		<part id="introduction">
+		<part id="intro">
 			<title>Introduction</title>
 			<slide id="dret">
 				<title>About Me</title>
@@ -106,8 +106,19 @@
 			</slide>
 		</part>
 		<part id="schedule">
+			<title>Workshop Schedule</title>
 			<slide id="schedule-day-1">
 				<title>Monday, May 21</title>
+				<ul>
+					<li><link href="introduction"/></li>
+					<li><link href="foundations"/></li>
+					<li><link href="description"/></li>
+					<li><link href="digital-transformation"/></li>
+					<li><link href="styles"/></li>
+					<li><link href="design"/></li>
+					<li><link href="change-management"/></li>
+					<li><link href="microservices"/></li>
+				</ul>
 			</slide>
 			<slide id="schedule-day-2">
 				<title>Tuesday, May 22</title>
@@ -345,8 +356,8 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation id="openapi">
-		<title short="OpenAPI">OpenAPI (formerly known as Swagger)</title>
+	<presentation id="description">
+		<title short="OpenAPI">Description: OpenAPI (formerly known as Swagger)</title>
 		<toc class="resources"><a href="https://github.com/OAI/OpenAPI-Specification" title="OpenAPI Specification Repository">OpenAPI</a>&#160;· <a href="http://openapi-map.apihandyman.io/?version=3.0" title="Interactive OpenAPI Map by Arnaud Lauret">OpenAPI Map</a></toc>
 		<part id="openapi">
 			<title>OpenAPI (formerly known as Swagger)</title>
@@ -522,7 +533,7 @@
 				<title>API Economy</title>
 				<img title="Farmers' Market Sacramento" href="https://commons.wikimedia.org/wiki/File:Farmers'_market_Sacramento.jpg" src="farmers-market-sacramento.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="digital-transformation">
+			<slide id="digital-transformation-meme">
 				<title>Digital Transformation</title>
 				<img src="digital-transformation-bear.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
