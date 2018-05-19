@@ -3386,80 +3386,6 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				</ul>
 			</slide>
 		</part>
-		<part id="rdf">
-			<title>Resource Description Framework (RDF)</title>
-			<slide id="rdf-roots">
-				<title>Describing Resources</title>
-				<ul>
-					<li>RDF started as a generalization of <span title="Platform for Internet Content Selection">PICS</span></li>
-					<ul>
-						<li>A way to simple make <em>statements</em> about URI-identified resources</li>
-						<li>Statements are using <em>(Subject, Predicate, Object)</em> triples</li>
-					</ul>
-					<li>Statements can be aggregated and result in a graph-oriented data model</li>
-					<ul>
-						<li><em>Subject</em> (URI): The resource the statement is about</li>
-						<li><em>Predicate</em> (URI): The kind of statement being made</li>
-						<li><em>Object</em> (URI or literal): The statement that is being made</li>
-					</ul>
-					<li>The aggregate graph can be interpreted as a set of interconnected statements</li>
-				</ul>
-			</slide>
-			<slide id="triple-example">
-				<title>Triple Example</title>
-				<listing href="https://www.w3.org/TR/rdf11-primer/#section-triple" src="rdf11-primer-example-triples.txt"/>
-			</slide>
-			<slide id="two-rdf-views">
-				<title>Two Views of RDF</title>
-				<ul>
-					<li>The <em>logic view</em> sees the graph as a set of interconnected statements</li>
-					<ul>
-						<li>Statements are at the center of this perspective</li>
-						<li>Merging graphs is mainly an act of merging statements</li>
-					</ul>
-					<li>The <em>graph view</em> sees the graph as a triple-based data structure</li>
-					<ul>
-						<li>Merging graphs based on node identity is the main concern</li>
-						<li>Having elaborate schemas of statement types is not a necessity</li>
-					</ul>
-					<li>Both views are complementary but influence the models and tooling</li>
-				</ul>
-			</slide>
-			<slide id="triple-graph">
-				<title>Triples as a Graph</title>
-				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="rdf11-primer-example-graph.jpg" title="Informal graph of the sample triples" href="https://www.w3.org/TR/rdf11-primer/#section-triple"/>
-			</slide>
-			<slide id="triple-graph">
-				<title>Triples as a Graph</title>
-				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="rdf11-primer-example-multiple-graphs.jpg" title="Informal graph of the sample dataset" href="https://www.w3.org/TR/rdf11-primer/#section-multiple-graphs"/>
-			</slide>
-			<slide id="n-triples-example">
-				<title>N-Triples Example</title>
-				<listing href="https://www.w3.org/TR/rdf11-primer/#section-n-triples" src="rdf11-primer-example-n-triples.txt"/>
-			</slide>
-			<slide id="turtle-example">
-				<title>Turtle Example</title>
-				<listing href="https://www.w3.org/TR/rdf11-primer/#section-turtle" src="rdf11-primer-example-turtle.txt"/>
-			</slide>
-			<slide id="trig-example">
-				<title>TriG Example</title>
-				<listing href="https://www.w3.org/TR/rdf11-primer/#section-trig" src="rdf11-primer-example-trig.txt"/>
-			</slide>
-			<slide id="json-ld-example">
-				<title>JSON-LD Example</title>
-				<listing href="https://www.w3.org/TR/rdf11-primer/#section-json-ld" src="rdf11-primer-example-json-ld.json"/>
-			</slide>
-			<slide id="json-ld-example-context">
-				<title>JSON-LD Example (Context)</title>
-				<listing href="https://www.w3.org/TR/rdf11-primer/#section-json-ld" src="rdf11-primer-example-json-ld-context.json"/>
-			</slide>
-			<slide id="rdf-vocabularies">
-				<title>RDF Vocabularies: Schemas and Ontologies</title>
-			</slide>
-			<slide id="sparql">
-				<title>Querying RDF with SPARQL</title>
-			</slide>
-		</part>
 		<part id="more-representation">
 			<title>More Representation Formats</title>
 			<slide id="collection-formats">
@@ -4220,6 +4146,80 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="rdf">
+			<title>Resource Description Framework (RDF)</title>
+			<slide id="rdf-roots">
+				<title>Describing Resources</title>
+				<ul>
+					<li>RDF started as a generalization of <span title="Platform for Internet Content Selection">PICS</span></li>
+					<ul>
+						<li>A way to simple make <em>statements</em> about URI-identified resources</li>
+						<li>Statements are using <em>(Subject, Predicate, Object)</em> triples</li>
+					</ul>
+					<li>Statements can be aggregated and result in a graph-oriented data model</li>
+					<ul>
+						<li><em>Subject</em> (URI): The resource the statement is about</li>
+						<li><em>Predicate</em> (URI): The kind of statement being made</li>
+						<li><em>Object</em> (URI or literal): The statement that is being made</li>
+					</ul>
+					<li>The aggregate graph can be interpreted as a set of interconnected statements</li>
+				</ul>
+			</slide>
+			<slide id="triple-example">
+				<title>Triple Example</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-triple" src="rdf11-primer-example-triples.txt"/>
+			</slide>
+			<slide id="two-rdf-views">
+				<title>Two Views of RDF</title>
+				<ul>
+					<li>The <em>logic view</em> sees the graph as a set of interconnected statements</li>
+					<ul>
+						<li>Statements are at the center of this perspective</li>
+						<li>Merging graphs is mainly an act of merging statements</li>
+					</ul>
+					<li>The <em>graph view</em> sees the graph as a triple-based data structure</li>
+					<ul>
+						<li>Merging graphs based on node identity is the main concern</li>
+						<li>Having elaborate schemas of statement types is not a necessity</li>
+					</ul>
+					<li>Both views are complementary but influence the models and tooling</li>
+				</ul>
+			</slide>
+			<slide id="triple-graph">
+				<title>Triples as a Graph</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="rdf11-primer-example-graph.jpg" title="Informal graph of the sample triples" href="https://www.w3.org/TR/rdf11-primer/#section-triple"/>
+			</slide>
+			<slide id="triple-graph">
+				<title>Triples as a Graph</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="rdf11-primer-example-multiple-graphs.jpg" title="Informal graph of the sample dataset" href="https://www.w3.org/TR/rdf11-primer/#section-multiple-graphs"/>
+			</slide>
+			<slide id="n-triples-example">
+				<title>N-Triples Example</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-n-triples" src="rdf11-primer-example-n-triples.txt"/>
+			</slide>
+			<slide id="turtle-example">
+				<title>Turtle Example</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-turtle" src="rdf11-primer-example-turtle.txt"/>
+			</slide>
+			<slide id="trig-example">
+				<title>TriG Example</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-trig" src="rdf11-primer-example-trig.txt"/>
+			</slide>
+			<slide id="json-ld-example">
+				<title>JSON-LD Example</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-json-ld" src="rdf11-primer-example-json-ld.json"/>
+			</slide>
+			<slide id="json-ld-example-context">
+				<title>JSON-LD Example (Context)</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-json-ld" src="rdf11-primer-example-json-ld-context.json"/>
+			</slide>
+			<slide id="rdf-vocabularies">
+				<title>RDF Vocabularies: Schemas and Ontologies</title>
+			</slide>
+			<slide id="sparql">
+				<title>Querying RDF with SPARQL</title>
+			</slide>
+		</part>
 		<part id="linked-data">
 			<title>Linked Data</title>
 			<slide id="linked-data-definition">
