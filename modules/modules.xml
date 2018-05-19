@@ -3468,7 +3468,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 	</presentation>
 	<presentation id="rest">
-		<title>Representational State Transfer (REST)</title>
+		<title short="REST">Representational State Transfer (REST)</title>
 		<toc class="abstract"><em>Representational State Transfer (REST)</em> is defined as an <em>architectural style</em>, which means that it is not a concrete systems architecture, but instead a set of constraints that are applied when designing a systems architecture. We briefly discuss these constraints, but then focus on explaining how the Web is one such systems architecture that implements REST. In particular, the mechanisms of the <em>Uniform Resource Identifiers (URIs)</em>, the <em>Hypertext Transfer Protocol (HTTP)</em>, media types, and markup languages such as the <em>Hypertext Markup Language (HTML)</em> and the <em>Extensible Markup Language (XML)</em>. We also introduce <em>Atom</em> and the <em>Atom Publishing Protocol (AtomPub)</em> as two established ways on how RESTful services are already provided and used on today's Web.</toc>
 		<toc class="resources"><a href="http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm" title="Roy Thomas Fielding, 'Architectural Styles and the Design of Network-based Software Architectures', Ph.D. Thesis, University of California, Irvine, Irvine, California, 2000">Fielding&#160;Dissertation</a>&#160;· <a href="http://portal.acm.org/citation.cfm?doid=337180.337228" title="Roy Thomas Fielding and Richard N. Taylor, 'Principled Design of the Modern Web Architecture', ACM Transactions on Internet Technology, 2(2):115-150, May 2002">ACM&#160;Transactions</a></toc>
 		<slide>
