@@ -4186,6 +4186,23 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				</ul>
 				<listing src="number-concept.txt"/>
 			</slide>
+			<slide id="identity-value">
+				<title>The Value of Identity</title>
+				<ul>
+					<li>Sharing meaning becomes harder and more powerful with group size</li>
+					<ul>
+						<li>More users need to agree on shared meaning</li>
+						<li>More users/applications can build on shared concepts (network effect)</li>
+					</ul>
+					<li>Sharing meaning can happen at various levels</li>
+					<ol>
+						<li><em>License copy/paste:</em> Reuse the license text when the license is reused</li>
+						<li><em>License with human-understandable name:</em> Use a license name that is well-established</li>
+						<li><em>License with machine-readable name:</em> Use a license URI that machines can recognize and compare</li>
+						<li><em>Machine-understandable license:</em> Use a formal model of what the license does</li>
+					</ol>
+				</ul>
+			</slide>
 		</part>
 		<part id="rdf">
 			<title>Resource Description Framework (RDF)</title>
