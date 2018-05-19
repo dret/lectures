@@ -4148,6 +4148,20 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</slide>
 		<part id="semantics">
 			<title>Semantics</title>
+			<slide id="semantics-what">
+				<title>What are Semantics?</title>
+				<ul>
+					<li><em>Semantics</em> are anything that is concerned with <em>representing meaning</em></li>
+					<ul>
+						<li>Most applications are associating models with meaningful concepts for users</li>
+					</ul>
+					<li><em>Semantics</em> in a narrower sense often refer to <em>logic-based representations</em></li>
+					<ul>
+						<li>Statements rooted in formal logic can be used for <em>inferring new statements</em></li>
+						<li><q>Berlin is in Germany, and Germany is in Europe, therefore Berlin is in Europe</q></li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="rdf">
 			<title>Resource Description Framework (RDF)</title>
