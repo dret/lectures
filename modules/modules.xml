@@ -4170,6 +4170,22 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>Statements are made in a fundamentally webby way (URIs as the identity model)</li>
 				</ul>
 			</slide>
+			<slide id="identity-web">
+				<title>Identity on the (Semantic) Web</title>
+				<ul>
+					<li>Communications need shared concepts</li>
+					<ul>
+						<li>This is true regardless of whether formal semantics come into play</li>
+					</ul>
+					<li>The Web's identity model (<link href="uri">URI</link>) is global, federated, and extensible</li>
+					<ul>
+						<li>If you want to talk about <q>anything</q> use a URI to identify it</li>
+						<li>Works well but the resulting noise makes it impractical</li>
+						<li>Reserve URI identification for context-free concept identification</li>
+					</ul>
+				</ul>
+				<listing src="number-concept.txt"/>
+			</slide>
 		</part>
 		<part id="rdf">
 			<title>Resource Description Framework (RDF)</title>
