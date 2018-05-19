@@ -4147,7 +4147,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
 		<part id="semantics">
-			<title>Semantics</title>
+			<title>Semantics and the Semantic Web</title>
 			<slide id="semantics-what">
 				<title>What are Semantics?</title>
 				<ul>
@@ -4160,6 +4160,14 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 						<li>Statements rooted in formal logic can be used for <em>inferring new statements</em></li>
 						<li><q>Berlin is in Germany, and Germany is in Europe, therefore Berlin is in Europe</q></li>
 					</ul>
+				</ul>
+			</slide>
+			<slide id="semantic-web">
+				<title>Semantic Web</title>
+				<ul>
+					<li>Make statements about <q>facts</q> in a shared metamodel</li>
+					<li>Provide a framework for combining <q>facts</q> and deriving new ones</li>
+					<li>Statements are made in a fundamentally webby way (URIs as the identity model)</li>
 				</ul>
 			</slide>
 		</part>
