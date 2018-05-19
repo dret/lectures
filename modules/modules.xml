@@ -4225,9 +4225,9 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<slide id="linked-data-definition">
 				<title>Linked Data ≟ Data that is Linked</title>
 				<ul>
-					<li><q>Linking Data</q> is something that is based on <em>data as a graph</em></li>
+					<li><q>Linking Data</q> is something that is based on viewing <em>data as a graph</em></li>
 					<ul>
-						<li>Any way to represent graph-based data could be considered <q>linked data</q></li>
+						<li>Any way to represent graph-based data can be considered <q>linked data</q></li>
 					</ul>
 					<li><em>Linked Data</em> has become a trademark to refer to specific technologies</li>
 					<ul>
@@ -4235,7 +4235,8 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					</ul>
 					<li><em href="http://webdata.systems/">Web Data</em> is an alternative vision that focuses less on the <q>how</q></li>
 					<ul>
-						<li>If your data is linked then it should be considered <em>linked data</em> (lowercase)</li>
+						<li>If your data is linked then it can be considered <em>linked data</em> (lowercase)</li>
+						<li>Turning it into <em>Linked Data</em> (uppercase) is an optional technology choice</li>
 					</ul>
 				</ul>
 			</slide>
