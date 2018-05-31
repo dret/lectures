@@ -824,6 +824,256 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="design">
+		<title>Design</title>
+		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/10/api-usability-matters.html" title='Erik Wilde, "API Usability Matters: UX and CX is like DX and …", October 2016'>API Usability</a>&#160;· <a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a>&#160;· <a href="http://webconcepts.info/">Web Concepts</a>&#160;· <a href="https://www.mnot.net/blog/2012/06/25/http_api_complexity_model" title='Mark Nottingham, "HTTP API Complexity", June 2012'>API Complexity</a>&#160;· <a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a></toc>
+		<part id="design-process">
+			<title>Design as a Process</title>
+			<slide id="design-eames">
+				<title>Design and Constraints</title>
+				<blockquote><q href="http://www.markwunsch.com/eames">Design depends largely on constraints.</q> (<a href="https://en.wikipedia.org/wiki/Charles_and_Ray_Eames">Charles Eames</a>)</blockquote>
+			</slide>
+			<slide id="design-questions">
+				<title>Design Questions</title>
+				<ul>
+					<li>Design is an iterative process to solve a given problem</li>
+					<ol>
+						<li>Identify a <em>problem</em> (provided externally or identified internally)</li>
+						<li><em>Why</em> is the problem a problem?</li>
+						<li>Identify the <em>constraints</em></li>
+						<li><em>What</em> can be done to address the problem?</li>
+						<li>Identify the possible solutions</li>
+						<li><em>How</em> is the problem solved given the constraints?</li>
+						<li>Assess design quality and repeat	</li>
+					</ol>
+				</ul>
+			</slide>
+			<slide id="api-lifecycle-design">
+				<title>API Lifecycle and Design</title>
+				<img title="Where API management is headed in 2017" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="api-complexity">
+			<title>API Complexity</title>
+			<slide id="one-server-one-client">
+				<title>One Server and One Client</title>
+				<ul>
+					<li>Tight coupling between server and client teams possible</li>
+					<ul>
+						<li>Updates in the API can be negotiated and addressed</li>
+					</ul>
+					<li>Updates in the <em>deployed clients</em> can still pose a challenge</li>
+					<ul>
+						<li>Easier when deployment is through <em>code on demand</em> (Web clients)</li>
+						<li>Harder when deployment is through <em>installed code</em> (non-Web clients)</li>
+					</ul>
+					<li>Openness and extensibility are not an explicit goal</li>
+					<ul>
+						<li>The only exception are version issues across the installed base</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="one-server-many-clients">
+				<title>One Server and Many Clients</title>
+				<ul>
+					<li>Loose coupling between server and client teams helpful</li>
+					<ul>
+						<li>Client teams should be guided how to expect the API to evolve</li>
+					</ul>
+					<li>Updates in the <em>existing clients</em> can take a long time</li>
+					<ul>
+						<li>No control over installed client base other than hard API stops</li>
+					</ul>
+					<li>Openness and extensibility are getting more interesting</li>
+					<ul>
+						<li>Openness is necessary so that the API can evolve without breaking clients</li>
+						<li>Extensibility is less of a concern because there is only one server</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="one-servers-many-clients">
+				<title>Many Servers and Many Clients</title>
+				<ul>
+					<li>Loose coupling between server and client teams essential</li>
+					<ul>
+						<li>Client teams should be guided how to expect the API to evolve</li>
+						<li>Clients may experience a spectrum of server implementations</li>
+					</ul>
+					<li>Variety in the <em>service landscape</em> needs clients to be robust</li>
+					<ul>
+						<li>Services can implement variations of the original API</li>
+						<li>Balancing consistency and flexibility is the main design challenge</li>
+					</ul>
+					<li>Openness and extensibility are essential components</li>
+					<ul>
+						<li>Openness is necessary so that services can use the API robustly</li>
+						<li>Extensibility is necessary to that the landscape can evolve robustly</li>
+						<li>The landscape is a graph of variations of the basic API</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="messages-models">
+			<title>Messages vs. Models</title>
+			<slide id="api-language">
+				<title>APIs are Languages</title>
+				<ul>
+					<li>Interfaces should hide domain complexity (<em>encapsulation</em>)</li>
+					<ul>
+						<li>Expose <em>as little as possible</em> of the domain complexity</li>
+						<li>Resist the temptation to <em>expose your domain model</em></li>
+					</ul>
+					<li>Interfaces are languages for communication</li>
+					<ul>
+						<li>They establish a language between API provider and consumer</li>
+						<li>Keeping the language simple keeps the API usable</li>
+					</ul>
+					<li><q>Model Creep</q> is an obstacle for API adoption</li>
+					<ul>
+						<li>There is no <q>one true model</q> for any domain</li>
+						<li>Keeping the language simple minimizes conflict potential</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-messages">
+				<title>APIs and Messages</title>
+				<ul>
+					<li>Messages are the sentences in API communications</li>
+					<ul>
+						<li>They transport meaning between collaborating peers</li>
+						<li>They are independent of how peers implement their activities</li>
+					</ul>
+					<li>Messages can follow patterns that make APIs easier to use</li>
+					<ul>
+						<li><link href="styles">API styles</link> are focusing on specific communication styles</li>
+						<li><em>Metamodels</em> help to provide structure (plain text, binary, XML, JSON, RDF, …)</li>
+						<li><em>API models</em> add message models (SOAP, HAL, GraphQL, …)</li>
+						<li><em>Vocabularies</em> help to describe specific APIs</li>
+					</ul>
+					<li>The usual balancing act of familiarity and avoiding <a href="https://en.wikipedia.org/wiki/Law_of_the_instrument">Maslow's hammer</a></li>
+				</ul>
+			</slide>
+			<slide id="messaging-start">
+				<title>Make Messaging the Start</title>
+				<ul>
+					<li>Make sure to identify relevant resources so that you can refer to them</li>
+					<ul>
+						<li>Resource refers to <em>anything</em> that <q>is worth exchanging messages about</q></li>
+						<li>Unique and stable identity helps when assigning resource identifiers</li>
+					</ul>
+					<li>Any service resource must have a <em>representation</em> in messages</li>
+					<ul>
+						<li>Your <em>data model</em> is not your <em>object model</em></li>
+						<li>Your <em>object model</em> is not your <em>resource model</em></li>
+						<li>Your <em>resource model</em> is not your <em>message model</em></li>
+					</ul>
+					<li>Design <q>interaction forms</q> to be as succinct as possible</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="api-scope">
+			<title>API Scope</title>
+			<slide id="api-tool">
+				<title>APIs as Tools</title>
+				<ul>
+					<li>APIs exist to solve specific problems</li>
+					<ul>
+						<li>Think about the problem and not the solution</li>
+						<li>Design a <em>capability</em> that hides solution details</li>
+					</ul>
+					<li>Collaborate with consumers and gather their feedback</li>
+					<ul>
+						<li><q>API first</q> is all about driving solutions from the API</li>
+						<li>Use approaches the make incremental design easy</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-maslow">
+				<title>Tools and Problems</title>
+				<img title="Hammer and Screw" href="https://www.flickr.com/photos/justinbaeder/5317820857" src="maslow-hammer-nail.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-design-simple">
+				<title>KISS API Design</title>
+				<ul>
+					<li>The only thing that matters is the <em>service surface</em></li>
+					<ul>
+						<li>Make the surface <em>as shallow as possible</em> to reduce coupling</li>
+						<li>Resist the temptation to <em>expose your model</em> just because you can</li>
+					</ul>
+					<li>Concepts must be well-defined but not necessarily deeply modeled</li>
+					<li>There is no single correct path to well-designed APIs</li>
+					<ul>
+						<li>What is the capability that the API is exposing?</li>
+						<li>What are the assumptions about API consumers?</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="design-dx">
+			<title>Developer Experience (DX)</title>
+			<slide id="design-thinking">
+				<title>Design Thinking</title>
+				<ul>
+					<li>Design is driven by creating products/solutions</li>
+					<ul>
+						<li>How well does the product address a given problem?</li>
+						<li>How easy is the designed product to use?</li>
+					</ul>
+					<li>APIs often are <em>part of a bigger picture</em></li>
+					<ul>
+						<li>Developers have to use APIs to <em>design their applications</em></li>
+						<li>How easy is it for them to use APIs as <em>part of their solution</em>?</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-integration">
+				<title>Client-Side API Integration</title>
+				<img title="Client-Side API Integration" src="apis-application-layers-integration.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="experience-api">
+				<title>Experience API</title>
+				<img title="Experience API" src="apis-application-layers-experience.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="design-coherence">
+				<title>Design Coherence</title>
+				<ul>
+					<li>Establish a <em>culture of API design</em></li>
+					<ul>
+						<li><q>This is how APIs are usually looking</q></li>
+						<li>Here are some tools to help with design and documentation</li>
+						<li>Here is a breakdown of what the API landscape looks like</li>
+					</ul>
+					<li>Observing reality helps to document <em>and</em> establish culture</li>
+					<ul>
+						<li>One way to think of establishing coherence is by writing <em>guidelines</em></li>
+						<li>An alternative path is to document and disseminate <em>existing practices</em></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="design-conclusions">
+			<title>Design Conclusions</title>
+			<slide id="design-culture">
+				<title>Design Culture</title>
+				<ul>
+					<li>API design matters for making APIs successful</li>
+					<li>API design should be established as shared best practices</li>
+					<li>Culture is formed by practice and collaboration</li>
+					<li>Steer culture with tooling for design and sharing</li>
+				</ul>
+			</slide>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/audi-2018"><code>dret.net/lectures/audi-2018</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/audi-2018"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 	<presentation id="change-management">
 		<title short="Change Management">Change Management and Versioning</title>
 		<toc class="resources"><a href="https://tools.ietf.org/html/rfc5829" title="RFC 5829: 'Link Relation Types for Simple Version Navigation between Web Resources', April 2010">RFC 5829</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a>&#160;· <a href="http://semver.org/" title='Semantic Versioning 2.0.0'>Semantic Versioning</a>&#160;· <a href="http://webconcepts.info/specs/IETF/I-D/draft-wilde-sunset-header" title='Erik Wilde, "The Sunset HTTP Header", Internet Draft wilde-sunset-header'>Sunset Header</a></toc>
