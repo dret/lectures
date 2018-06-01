@@ -1638,6 +1638,10 @@
 				<title>Link Representation (JSON Feed Format)</title>
 				<listing src="json-feed.json" href="https://jsonfeed.org/version/1"/>
 			</slide>
+			<slide id="json-feed-xml">
+				<title>Link Representation (XML Feed Format)</title>
+				<listing src="json-feed.xml"/>
+			</slide>
 			<slide id="typed-links">
 				<title>Typed Links</title>
 				<ul>
