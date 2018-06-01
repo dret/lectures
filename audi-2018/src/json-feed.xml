@@ -1,0 +1,17 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>My Example Feed</title>
+    <link rel="alternate" href="https://example.org/"/>
+    <link rel="self" href="https://example.org/feed.json"/>
+    <entry>
+        <id>2</id>
+        <content type="text">This is a second item.</content>
+        <link href="https://example.org/second-item"/>
+    </entry>
+    <entry>
+        <id>1</id>
+        <content type="xhtml">
+            <p xmlns="http://www.w3.org/1999/xhtml">Hello, world!</p>
+        </content>
+        <link href="https://example.org/initial-post"/>
+    </entry>
+</feed>
