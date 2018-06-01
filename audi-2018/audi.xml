@@ -106,13 +106,15 @@
 			<slide id="schedule-day-1">
 				<title>Monday, June 11</title>
 				<ul>
-					<li>9.00-9.20: <link href="introduction"/></li>
-					<li>9.20-10.00: <link href="foundations"/></li>
-					<li>10.00-10.30: Exercise: Dream API</li>
-					<li>10.45-11.30: <link href="digital-transformation"/></li>
-					<li>11.30-12.00: <link href="styles"/></li>
-					<li>13.00-13.30: <link href="design"/></li>
-					<li><link href="hypermedia"/></li>
+					<li>9.00-9.30: <link href="introduction"/></li>
+					<li>9.30-10.15: <link href="foundations"/></li>
+					<li>10.15-11.15: Exercise 1: Dream API</li>
+					<li>11.15-12.00: <link href="digital-transformation"/></li>
+					<li>13.00-13.30: <link href="styles"/></li>
+					<li>13.30-14.00: <link href="protocols"/></li>
+					<li>14.00-14.30: <link href="design"/></li>
+					<li>14.30-15.00: <link href="hypermedia"/></li>
+					<li>15.15-17.00: Exercise 2: Dream API Design</li>
 				</ul>
 			</slide>
 			<slide id="schedule-day-2">
@@ -816,6 +818,342 @@
 					<li>Be aware of styles and pick the one that works best</li>
 				</ul>
 			</slide>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/audi-2018"><code>dret.net/lectures/audi-2018</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/audi-2018"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="protocols">
+		<title>Protocols</title>
+		<toc class="resources"><a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/7230" title='RFC 7230, "Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing", June 2014'>HTTP</a>&#160;· <a href="https://www.mnot.net/blog/2017/05/11/status_codes" title='Mark Nottingham, "How to Think About HTTP Status Codes", May 2017'>HTTP Status Codes</a>&#160;· <a href="https://graphql.org/" title='GraphQL: A query language for your API'>GraphQL</a></toc>
+		<part id="networks">
+			<title>Computer Networks</title>
+			<slide>
+				<title>Network History</title>
+				<ul>
+					<li>First regarded as a convenient workaround for floppy disks</li>
+					<ul>
+						<li><q>Real computer scientists write compilers</q></li>
+						<li>The value of computer networks depends on their size</li>
+					</ul>
+					<li>Early networking solutions were vendor-specific islands</li>
+					<ul>
+						<li>DECnet for <em>Digital Equipment Corporation (DEC)</em> customers</li>
+						<li>XNS for <em>Xerox</em> customers</li>
+						<li>SNA for <em>IBM</em> customers</li>
+						<li>transmitting data between these networks was very cumbersome</li>
+					</ul>
+					<li>Bridging networks transparently became increasingly important</li>
+					<ul>
+						<li>More computers and networks increase the benefit of interconnections</li>
+						<li>Layering being used for internetworks, not only for networks</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Networks vs. Internetworks</title>
+				<ul>
+					<li>Specific networks use specific abstractions</li>
+					<ul>
+						<li>How to address nodes (computers, phones, PDAs, RFID tags)</li>
+						<li>How to address applications on these nodes</li>
+						<li>How to transmit data to these applications</li>
+					</ul>
+					<li>Internetworks provide a network-independent abstraction</li>
+					<ul>
+						<li>Nodes are addressed uniformly (IP addresses)</li>
+						<li>Applications are identified uniformly (ports)</li>
+						<li>Data transmission uses one set of protocols (TCP/UDP)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Internet</title>
+				<ul>
+					<li>Very early start and a lot of experience</li>
+					<ul>
+						<li>Pragmatic and evolutionary approach</li>
+						<li><q>If it's not broken, don't fix it</q></li>
+					</ul>
+					<li>Standardization by independent technical experts</li>
+					<ul>
+						<li>Avoids the <q>designed by committee</q> effect of consortia</li>
+						<li>Conservative and concentrating on stability</li>
+						<li>Implementations are required to prove technical feasibility</li>
+						<li>Simplicity whenever possible</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Internet Protocols</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="internet-protocols.png" title="Internet Protocol Layers"/>
+			</slide>
+		</part>
+		<part id="TCP">
+			<title>Transmission Control Protocol (TCP)</title>
+			<slide>
+				<title>TCP Features</title>
+				<ul>
+					<li>Flow-controlled (avoiding congestion)</li>
+					<li>Reliable (no data lost or duplicated)</li>
+					<li>Connection-oriented</li>
+					<li>Application addressing</li>
+				</ul>
+			</slide>
+			<slide>
+				<title>Reliable Connections</title>
+				<ul>
+					<li>IP may drop or duplicate packets</li>
+					<ul>
+						<li>TCP adds serial numbers in data packets</li>
+						<li>If problems are detected, TCP recovers automatically</li>
+					</ul>
+					<li>TCP avoids network congestion and system overload</li>
+					<ul>
+						<li><em>Slow start</em> avoids flooding receivers with data they cannot process</li>
+						<li><em>Fast retransmit</em> for avoiding timeouts when losing data</li>
+						<li>A <em>Sliding window</em> for controlling the amount of outstanding packets</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>TCP Window</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="tcp-window.png"/>
+			</slide>
+		</part>
+		<part id="http">
+			<title>Hypertext Transfer Protocol (HTTP)</title>
+			<slide>
+				<title>DNS &amp; HTTP</title>
+				<p>The two basic protocols which every Web browser must implement are <em>DNS</em> access and <em>HTTP</em>. However, most operating systems provide an API for DNS access, so the browser can use this service locally and only has to implement HTTP. <em>TCP</em> support (which is required as the foundation for HTTP) is usually provided by the operating system.</p>
+				<img style="width : 90% ; margin : 2% ; " src="browser-dns-http.png"/>
+			</slide>
+			<slide id="http-messages">
+				<title>HTTP Messages</title>
+				<ul>
+					<li>HTTP needs a reliable connection</li>
+					<ul>
+						<li>The foundation for HTTP is <em>TCP</em></li>
+						<li>DNS resolution yields an IP address</li>
+						<li>Open TCP connection to port 80 or port specified in URI (<code>http://rosetta.sims.berkeley.edu:8085/</code>)</li>
+					</ul>
+					<li>HTTP is a <em>text-based</em> protocol</li>
+					<ul>
+						<li>The connection is used to transmit <em>text messages</em></li>
+						<li>All HTTP messages are human-readable (not all <em>entities</em>, though)</li>
+						<li>Basic HTTP operations can be carried out by hand (e.g., per <code>telnet</code>)</li>
+					</ul>
+				</ul>
+				<pre>start-line
+message-header *
+
+message-body ?</pre>
+			</slide>
+			<slide id="http-headers">
+				<title>HTTP Header Fields</title>
+				<ul>
+					<li>Header fields contain information about the message</li>
+					<ul>
+						<li><em>General header:</em> <code>Date</code> as the message origination date</li>
+						<li><em>Request header:</em> <code>Accept-Language</code> indicates language preferences</li>
+						<li><em>Response header:</em> <code>Server</code> contains system information</li>
+						<li><em>Entity header:</em> <code>Content-Type</code> specifies the media type of the entity</li>
+					</ul>
+					<li>HTTP (and others) define <a href="http://webconcepts.info/concepts/http-header/">a number of header fields</a></li>
+					<ul>
+						<li>Unknown fields must be ignored (extensibility)</li>
+					</ul>
+					<li>HTTP is about acting on these fields</li>
+					<ul>
+						<li>HTTP defines what HTTP implementations must or should do</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="http-request">
+				<title>HTTP Requests</title>
+				<ul>
+					<li>After opening a connection, the client sends a request</li>
+					<ul>
+						<li>The method indicates the action to be performed on the resource</li>
+						<li>HTTP's most interesting methods are: <code>GET</code>, <code>POST</code>, <code>PUT</code>, and <code>DELETE</code></li>
+					</ul>
+					<li>The URI identifies the resource to which the request should be applied</li>
+					<ul>
+						<li>Absolute URIs are required when contacting <em>proxies</em></li>
+						<li>Absolute paths are required when contacting a server directly</li>
+						<li>The URI may contain <em>query information</em></li>
+					</ul>
+					<li>The <code>Host</code> header field must be included in every HTTP/1.1 request</li>
+				</ul>
+				<pre>Method Request-URI HTTP/Major.Minor
+[Header]*
+
+[Entity]?</pre>
+			</slide>
+			<slide id="http-get">
+				<title>HTTP GET</title>
+				<ul>
+					<li>Retrieval action based on the URI</li>
+					<ul>
+						<li>Possibly implemented by reading a file</li>
+						<li>Possibly implemented by processing a file (PHP)</li>
+						<li>Possibly implemented by running code</li>
+					</ul>
+					<li>Semantics may change based on header fields</li>
+					<ul>
+						<li><code>If-*:</code> only reply with the entity if necessary</li>
+						<li><code>Range:</code> only reply with the requested part of the entity</li>
+					</ul>
+					<li>Cacheability depends on header fields of the response</li>
+				</ul>
+				<pre>GET / HTTP/1.1
+Host: ischool.berkeley.edu</pre>
+			</slide>
+			<slide id="http-response">
+				<title>HTTP Responses</title>
+				<ul>
+					<li>The server's response to acting on a request</li>
+					<ul>
+						<li>the status code is given numerically and as text</li>
+						<li><code>2**</code> for variations of <q>ok</q></li>
+						<li><code>3**</code> for redirections</li>
+						<li><code>4**</code> are different client side problems (<code>404</code>: not found)</li>
+						<li><code>5**</code> are different server side problems</li>
+					</ul>
+					<li>Header fields specify additional information</li>
+					<ul>
+						<li>Information about the server</li>
+						<li>Information about the entity (media type, encoding, language)</li>
+					</ul>
+				</ul>
+				<pre>HTTP/Major.Minor Status-Code Text
+[Header]*
+
+[Entity]?</pre>
+			</slide>
+			<slide id="http-performance">
+				<title>HTTP Performance</title>
+				<ul>
+					<li>HTTP/1.0 allowed one transaction per connection</li>
+					<ul>
+						<li>TCP connection setup and teardown are expensive</li>
+						<li>TCP's <em>slow start</em> slows down the initial phase of data transfer</li>
+						<li>Typical Web pages use between 10-20 resources (HTML + images + CSS + scripts)</li>
+						<li>Typically, these resources are stored on the same server</li>
+					</ul>
+					<li>HTTP/1.1 introduces <em>persistent connections</em></li>
+					<ul>
+						<li>The TCP connection stays open for some time (10 sec is a popular choice)</li>
+						<li>Additional requests to the same server use the same TCP connection</li>
+					</ul>
+					<li>HTTP/1.1 introduces <em>pipelined connections</em></li>
+					<ul>
+						<li>Instead of waiting for a response, requests can be queued</li>
+						<li>The server responds as fast as possible</li>
+						<li>The order may not be changed (there is no sequence number)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>HTTP Connection Handling</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="http-phttp-pipelining.png"/>
+			</slide>
+			<slide>
+				<title>HTTP Access Control</title>
+				<ul>
+					<li>HTTP servers can <a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_Client_Error">deny access</a> because of access control</li>
+					<ul>
+						<li><code>401 Unauthorized</code> means the resource is access controlled</li>
+						<li><code>403 Forbidden</code> means the resource is inaccessible</li>
+						<li><code>405 Method Not Allowed</code> signals a request using the wrong <link href="http-request">request method</link></li>
+					</ul>
+					<li>Two different approaches to unauthorized access are possible</li>
+					<ul>
+						<li>Repeat the HTTP request with the proper authentication credentials</li>
+						<li>Redirect to a <q>authentication resource</q> for authentication</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="http2">
+				<title>HTTP/2</title>
+				<ul>
+					<li>Started with the goal of <em>improving browser efficiency</em> (i.e., no API focus)</li>
+					<ul>
+						<li>Spearheaded by Google with its <a href="https://en.wikipedia.org/wiki/SPDY">SPDY</a> approach for Chrome/Google connectivity</li>
+					</ul>
+					<li>Maintaining compatibility with HTTP/1.1 as much as possible</li>
+					<ul>
+						<li>Reuse the existing set of <a href="http://webconcepts.info/concepts/http-method/">request methods</a>, <a href="http://webconcepts.info/concepts/http-status-code/">status codes</a>, and most <a href="http://webconcepts.info/concepts/http-header/">header fields</a></li>
+						<li>Allow peers to negotiate use of HTTP/1.1 and HTTP/2.0</li>
+					</ul>
+					<li>Advanced features for more efficient transmission and communications</li>
+					<ul>
+						<li>Headers can be compressed and repeated efficiently (binary transmission)</li>
+						<li>Fully multiplexed avoiding blocking and other inefficiencies from ordered pipelining</li>
+						<li><em>Server push</em> allows servers to send resources prior to getting requests</li>
+					</ul>
+					<li>Quick uptake through <a href="https://en.wikipedia.org/wiki/Comparison_of_web_browsers#Protocol_support">support in all major browsers</a> and <a href="https://github.com/http2/http2-spec/wiki/Implementations">many servers</a></li>
+				</ul>
+			</slide>
+		</part>
+		<part id="graphql">
+			<title>GraphQL</title>
+			<slide id="graphql-history">
+				<title>GraphQL History</title>
+				<img src="graphql-logo.png" href="http://graphql.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+				<ul>
+					<li>Facebook wanted a way for clients to more specifically query content</li>
+					<ul>
+						<li>Facebook's dataset is a very large interconnected graph</li>
+						<li>Clients want specific parts of it depending on various context factors</li>
+					</ul>
+					<li>GraphQL is not an API but a language for building APIs</li>
+					<ul>
+						<li>GraphQL defines a type system and a query language that produces JSON results</li>
+						<li>The query language can be integrated into an API <a href="http://graphql.org/learn/serving-over-http/">in a variety of ways</a></li>
+					</ul>
+					<li>GraphQL also has <a href="http://graphql.org/learn/queries/#mutations">mutations</a> as a way to update data</li>
+					<ul>
+						<li><a href="http://graphql.org/learn/schema/#input-types">Input types</a> look like types but only <em>accept input data</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="graphql-example">
+				<title>Simple GraphQL Example</title>
+				<table style="width: 90% ; ">
+					<tr>
+						<td style="vertical-align: top ; ">
+							<listing src="graphql-simple-query.graphql" href="https://graphql.org/learn/schema/#type-system"/>
+						</td>
+						<td style="vertical-align: top ; ">
+							<listing src="graphql-simple-response.json" href="https://graphql.org/learn/schema/#type-system"/>
+						</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="graphql-types">
+				<title>GraphQL Queries and Types</title>
+				<table style="width: 90% ; ">
+					<tr>
+						<td style="vertical-align: top ; ">
+							<listing src="graphql-query.graphql" href="https://graphql.org/"/>
+						</td>
+						<td style="vertical-align: top ; ">
+							<listing src="graphql-types.graphql" href="https://graphql.org/"/>
+						</td>
+					</tr>
+				</table>
+			</slide>
+		</part>
+		<part id="protocol-conclusions">
+			<title>Protocol Conclusions</title>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
