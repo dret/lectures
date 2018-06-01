@@ -3293,7 +3293,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<li>Database people find mixed content rather irritating</li>
 				<ul>
 					<li>Cannot be easily mapped to relational structures</li>
-					<li>Is more <em>document-like</em> than <em>data-like</em></li>
+					<li>More <em>document-like</em> than <em>data-like</em></li>
 					<li>Much harder to optimize for query analysis and query processing</li>
 				</ul>
 				<li>Document people find mixed content very intriguing</li>
