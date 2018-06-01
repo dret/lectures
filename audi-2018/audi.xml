@@ -120,9 +120,11 @@
 			<slide id="schedule-day-2">
 				<title>Tuesday, June 12</title>
 				<ul>
-					<li><link href="representations"/></li>
-					<li><link href="change-management"/></li>
-					<li><link href="microservices"/></li>
+					<li>9.00-10.00: <link href="representations"/></li>
+					<li>10.00-10.30: <link href="change-management"/></li>
+					<li>10.45-11.30: Exercise 3: Perfect API Improvement</li>
+					<li>11.30-12.00: <link href="semtech"/></li>
+					<li>13.00-13.30: <link href="microservices"/></li>
 				</ul>
 			</slide>
 		</part>
@@ -2341,6 +2343,199 @@ Host: ischool.berkeley.edu</pre>
 					<li>Make evolution/versioning/deprecation part of API culture</li>
 				</ul>
 			</slide>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/audi-2018"><code>dret.net/lectures/audi-2018</code></a></li>
+					<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/audi-2018"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					<li>Me: <a href="http://dret.net/netdret/"><code>http://dret.net/netdret/</code></a></li>
+					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="semtech">
+		<title>Semantic Technologies</title>
+		<toc class="abstract">...</toc>
+		<toc class="resources"><a href="http://www.w3.org/TR/rdf11-concepts/" title='Richard Cyganiak, David Wood, and Markus Lanthaler, "RDF 1.1 Concepts and Abstract Syntax", W3C Recommendation REC-rdf11-concepts-20140225, February 2014'>RDF</a>&#160;· <a href="http://dret.typepad.com/dretblog/2011/05/from-ai-to-bi.html" title='Erik Wilde, "From AI to BI", May 2011'>From AI to BI</a>&#160;· <a href="http://5stardata.info/">5★ Open Data</a>&#160;· <a href="http://webdata.systems/" title="How to publish data on the Web. Web Data principles help you to be open and webby.">Web Data</a></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="semantics">
+			<title>Semantics and the Semantic Web</title>
+			<slide id="semantics-what">
+				<title>What are Semantics?</title>
+				<ul>
+					<li><em>Semantics</em> are anything that is concerned with <em>representing meaning</em></li>
+					<ul>
+						<li>Most applications are associating models with meaningful concepts for users</li>
+					</ul>
+					<li><em>Semantics</em> in a narrower sense often refer to <em>logic-based representations</em></li>
+					<ul>
+						<li>Statements rooted in formal logic can be used for <em>inferring new statements</em></li>
+						<li><q>Berlin is in Germany, and Germany is in Europe, therefore Berlin is in Europe</q></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="semantic-web">
+				<title>Semantic Web</title>
+				<ul>
+					<li>Make statements about <q>facts</q> in a shared metamodel</li>
+					<li>Provide a framework for combining <q>facts</q> and deriving new ones</li>
+					<li>Statements are made in a fundamentally webby way (URIs as the identity model)</li>
+				</ul>
+			</slide>
+			<slide id="identity-web">
+				<title>Identity on the (Semantic) Web</title>
+				<ul>
+					<li>Communications need shared concepts</li>
+					<ul>
+						<li>This is true regardless of whether formal semantics come into play</li>
+					</ul>
+					<li>The Web's identity model (URIs) is global, federated, and extensible</li>
+					<ul>
+						<li>If you want to talk about <q>anything</q> use a URI to identify it</li>
+						<li>Works well but the resulting noise makes it impractical</li>
+						<li>Reserve URI identification for context-free concept identification</li>
+					</ul>
+				</ul>
+				<listing src="number-concept.txt"/>
+			</slide>
+			<slide id="identity-value">
+				<title>The Value of Identity</title>
+				<ul>
+					<li>Sharing meaning becomes harder and more powerful with group size</li>
+					<ul>
+						<li>More users need to agree on shared meaning</li>
+						<li>More users/applications can build on shared concepts (network effect)</li>
+					</ul>
+					<li>Sharing meaning can happen at various levels</li>
+					<ol>
+						<li><em>License copy/paste:</em> Reuse the license text when the license is reused</li>
+						<li><em>License with human-understandable name:</em> Use a license name that is well-established</li>
+						<li><em>License with machine-readable name:</em> Use a license URI that machines can recognize and compare</li>
+						<li><em>Machine-understandable license:</em> Use a formal model of what the license does</li>
+					</ol>
+				</ul>
+			</slide>
+		</part>
+		<part id="rdf">
+			<title>Resource Description Framework (RDF)</title>
+			<slide id="rdf-roots">
+				<title>Describing Resources</title>
+				<ul>
+					<li>RDF started as a generalization of <span title="Platform for Internet Content Selection">PICS</span></li>
+					<ul>
+						<li>A way to simple make <em>statements</em> about URI-identified resources</li>
+						<li>Statements are using <em>(Subject, Predicate, Object)</em> triples</li>
+					</ul>
+					<li>Statements can be aggregated and result in a graph-oriented data model</li>
+					<ul>
+						<li><em>Subject</em> (URI): The resource the statement is about</li>
+						<li><em>Predicate</em> (URI): The kind of statement being made</li>
+						<li><em>Object</em> (URI or literal): The statement that is being made</li>
+					</ul>
+					<li>The aggregate graph can be interpreted as a set of interconnected statements</li>
+				</ul>
+			</slide>
+			<slide id="triple-example">
+				<title>Triple Example</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-triple" src="rdf11-primer-example-triples.txt"/>
+			</slide>
+			<slide id="two-rdf-views">
+				<title>Two Views of RDF</title>
+				<ul>
+					<li>The <em>logic view</em> sees the graph as a set of interconnected statements</li>
+					<ul>
+						<li>Statements are at the center of this perspective</li>
+						<li>Merging graphs is mainly an act of merging statements</li>
+					</ul>
+					<li>The <em>graph view</em> sees the graph as a triple-based data structure</li>
+					<ul>
+						<li>Merging graphs based on node identity is the main concern</li>
+						<li>Having elaborate schemas of statement types is not a necessity</li>
+					</ul>
+					<li>Both views are complementary but influence the models and tooling</li>
+				</ul>
+			</slide>
+			<slide id="triple-graph">
+				<title>Triples as a Graph</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="rdf11-primer-example-graph.jpg" title="Informal graph of the sample triples" href="https://www.w3.org/TR/rdf11-primer/#section-triple"/>
+			</slide>
+			<slide id="triple-graph">
+				<title>Triples as a Graph</title>
+				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="rdf11-primer-example-multiple-graphs.jpg" title="Informal graph of the sample dataset" href="https://www.w3.org/TR/rdf11-primer/#section-multiple-graphs"/>
+			</slide>
+			<slide id="n-triples-example">
+				<title>N-Triples Example</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-n-triples" src="rdf11-primer-example-n-triples.txt"/>
+			</slide>
+			<slide id="turtle-example">
+				<title>Turtle Example</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-turtle" src="rdf11-primer-example-turtle.txt"/>
+			</slide>
+			<slide id="trig-example">
+				<title>TriG Example</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-trig" src="rdf11-primer-example-trig.txt"/>
+			</slide>
+			<slide id="json-ld-example">
+				<title>JSON-LD Example</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-json-ld" src="rdf11-primer-example-json-ld.json"/>
+			</slide>
+			<slide id="json-ld-example-context">
+				<title>JSON-LD Example (Context)</title>
+				<listing href="https://www.w3.org/TR/rdf11-primer/#section-json-ld" src="rdf11-primer-example-json-ld-context.json"/>
+			</slide>
+			<slide id="rdf-vocabularies">
+				<title>RDF Vocabularies: Schemas and Ontologies</title>
+			</slide>
+			<slide id="sparql">
+				<title>Querying RDF with SPARQL</title>
+			</slide>
+		</part>
+		<part id="linked-data">
+			<title>Linked Data</title>
+			<slide id="linked-data-definition">
+				<title>Linked Data ≟ Data that is Linked</title>
+				<ul>
+					<li><q>Linking Data</q> is something that is based on viewing <em>data as a graph</em></li>
+					<ul>
+						<li>Any way to represent graph-based data can be considered <q>linked data</q></li>
+					</ul>
+					<li><em>Linked Data</em> has become a trademark to refer to specific technologies</li>
+					<ul>
+						<li>Driven by an unfortunate emphasis of <q>how</q> over <q>what</q></li>
+					</ul>
+					<li><em href="http://webdata.systems/">Web Data</em> is an alternative vision that focuses less on the <q>how</q></li>
+					<ul>
+						<li>If your data is linked then it can be considered <em>linked data</em> (lowercase)</li>
+						<li>Turning it into <em>Linked Data</em> (uppercase) is an optional technology choice</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="linked-open-data">
+				<title>Linked Open Data</title>
+				<ol>
+					<li><em>Open License</em> → Allow others to use the data</li>
+					<li><em>Structured Data</em> → Publish machine-readable structured data</li>
+					<li><em>Open Format</em> → Use open formats over proprietary ones</li>
+					<li><em>URI Identifiers</em> → Identify concepts globally and by URI</li>
+					<li><em>Interlinking</em> → Interconnect datasets by cross-linking URIs</li>
+				</ol>
+			</slide>
+			<slide id="five-star-steps">
+				<title>5★ Open Data Steps</title>
+				<img src="5-star-steps.png" title="5★ Open Data" href="http://5stardata.info/" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="lod-cloud">
+				<title>Linked Open Data Cloud</title>
+				<img src="lod-cloud-2018-04-30.png" title="Linked Open Data Cloud" href="https://lod-cloud.net/" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="semtech-conclusions">
+			<title>Conclusions</title>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>

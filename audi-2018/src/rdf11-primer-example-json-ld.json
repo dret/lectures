@@ -1,0 +1,13 @@
+{
+  "@context": "example-context.json",
+  "@id": "http://example.org/bob#me",
+  "@type": "Person",
+  "birthdate": "1990-07-04",
+  "knows": "http://example.org/alice#me",
+  "interest": {
+    "@id": "http://www.wikidata.org/entity/Q12418",
+    "title": "Mona Lisa",
+    "subject_of": "http://data.europeana.eu/item/04802/243FA8618938F4117025F17A8B813C5F9AA4D619",
+    "creator": "http://dbpedia.org/resource/Leonardo_da_Vinci"
+  }
+}
