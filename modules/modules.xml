@@ -4811,7 +4811,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<slide id="style-implementations">
 				<title>API Styles in the Wild</title>
 				<ul>
-					<li><link href="tunnel-style"/>: XML-RPC, SOAP, gRPC</li>
+					<li><link href="tunnel-style"/>: XML-RPC, SOAP, gRPC, Avro</li>
 					<li><link href="uri-style"/>: OpenAPI/Swagger</li>
 					<li><link href="hypermedia-style"/>: HAL, Siren, Atom</li>
 					<li><link href="query-style"/>: GraphQL, OData, SPARQL</li>
