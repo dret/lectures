@@ -41,7 +41,7 @@
 			<tbody>
 				<hotspot:for-each-presentation>
 					<tr class="vevent">
-						<td valign="top"><b><span class="summary"><hotspot:title/></span></b></td>
+						<td valign="top"><b><hotspot:title/></b></td>
 						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
 						<td align="center"><hotspot:toc class="resources"/></td>
 					</tr>
@@ -2481,10 +2481,6 @@ Host: ischool.berkeley.edu</pre>
 		<title>Semantic Technologies</title>
 		<toc class="abstract">...</toc>
 		<toc class="resources"><a href="http://www.w3.org/TR/rdf11-concepts/" title='Richard Cyganiak, David Wood, and Markus Lanthaler, "RDF 1.1 Concepts and Abstract Syntax", W3C Recommendation REC-rdf11-concepts-20140225, February 2014'>RDF</a>&#160;· <a href="http://dret.typepad.com/dretblog/2011/05/from-ai-to-bi.html" title='Erik Wilde, "From AI to BI", May 2011'>From AI to BI</a>&#160;· <a href="http://5stardata.info/">5★ Open Data</a>&#160;· <a href="http://webdata.systems/" title="How to publish data on the Web. Web Data principles help you to be open and webby.">Web Data</a></toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
 		<part id="semantics">
 			<title>Semantics and the Semantic Web</title>
 			<slide id="semantics-what">
