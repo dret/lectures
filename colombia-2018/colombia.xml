@@ -223,6 +223,22 @@
 					<li><em>Digital Transformation</em> first and foremost needs decoupling and flexibility</li>
 				</ul>
 			</slide>
+			<slide id="interface-implementation">
+				<title>Interface vs. Implementation</title>
+				<ul>
+					<li>APIs are <em>service interfaces</em> and are the stepping stone to improved agility</li>
+					<ul>
+						<li>Having APIs means that components can be reused without touching them</li>
+						<li>Component utilization via API means coupling and needs to be managed</li>
+					</ul>
+					<li>MSA are <em>service implementations</em> and allow faster evolution of services</li>
+					<ul>
+						<li>Having MSA means that components can be added/changed without touching others</li>
+						<li>Increasing the rate of change increases the need for API management</li>
+					</ul>
+					<li>MSA is optional but places higher demands on API management maturity</li>
+				</ul>
+			</slide>
 			<slide id="api-management">
 				<title>Decouple API Lifecycle Management</title>
 				<img title="API Lifecycle" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
