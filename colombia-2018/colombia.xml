@@ -51,7 +51,7 @@
 	</toc>
 	<presentation id="continuous-architecting">
 		<title>Continuous Architecting</title>
-		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>
+		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="http://dret.typepad.com/dretblog/2017/04/the-three-drivers-of-the-api-economy.html" title='Erik Wilde, "The Three Drivers of the API Economy", April 2017'>Three API Drivers</a></toc>
 		<part id="introduction-team">
 			<title>Introduction</title>
 			<slide id="dret">
@@ -103,6 +103,26 @@
 		</part>
 		<part id="digital-transformation">
 			<title>Digital Transformation</title>
+			<slide id="why-now">
+				<title>APIs! But Why Now?</title>
+				<ol>
+					<li><em>Push:</em> Not moving becomes an increasingly risky strategy</li>
+					<ul>
+						<li>Markets move faster than ever before</li>
+						<li>Technology-driven changes require readiness on the IT level</li>
+					</ul>
+					<li><em>Pull:</em> Participating in the API economy is increasingly beneficial (a.k.a. the <em href="https://en.wikipedia.org/wiki/Metcalfe%27s_law">network effect</em>)</li>
+					<ul>
+						<li>Re-imagining organizations becomes a way of being</li>
+						<li>Not being API-ready means missing increasingly more opportunities</li>
+					</ul>
+					<li><em>Follow the Leaders:</em> Moving towards APIs is not difficult anymore</li>
+					<ul>
+						<li>Examples of organizations allow insights into potential and risk</li>
+						<li>The technology landscape is rich enough to get started</li>
+					</ul>
+				</ol>
+			</slide>
 			<slide id="api-pattern">
 				<title>The API Pattern</title>
 				<div style="height: 70%">
