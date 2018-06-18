@@ -252,6 +252,12 @@
 			<title>Conclusions</title>
 			<slide id="never-stop-architecting">
 				<title>Never Stop Architecting</title>
+				<ul>
+					<li>Treat APIs as if <em>they could be implemented and changed independently</em></li>
+					<li><q>API first</q> encourages teams to envision their products as accessible and reusable</li>
+					<li>Evolve services and their APIs organically to minimize breakage in the landscape</li>
+					<li>Decoupling implementations allows architecture to evolve without mandatory refactoring</li>
+				</ul>
 			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
