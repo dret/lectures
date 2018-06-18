@@ -184,8 +184,27 @@
 					</blockquote>
 				</ul>
 			</slide>
+			<slide id="web-evolution">
+				<title>Watching Web Evolution</title>
+				<img title="Webby Amazon" src="webby-amazon.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="web-architecture">
 				<title>How the Web Works</title>
+				<ul>
+					<li>Start from some architectural ground truths</li>
+					<ul>
+						<li>All resources can be identified through a <em>global identification scheme (URI)</em></li>
+						<li>Resource interactions happen through a <em>uniform interface (HTTP)</em></li>
+						<li>State changes are communicated by exchanging <em>representations (HTML/XML/JSON)</em></li>
+					</ul>
+					<li>Continually evolve the architecture by using its extension model</li>
+					<ul>
+						<li>Everything that is in place can be used in a meaningful way</li>
+						<li>All pieces have openness and extensibility built into their designs</li>
+						<li>Processing models make sure that the landscape can evolve organically</li>
+					</ul>
+					<li>The cost of <em>breaking things at Web scale</em> is prohibitively high</li>
+				</ul>
 			</slide>
 			<slide id="integration-decentralization">
 				<title>Integration vs. Decentralization</title>
