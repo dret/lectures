@@ -191,7 +191,7 @@
 			<slide id="web-architecture">
 				<title>How the Web Works</title>
 				<ul>
-					<li>Start from some architectural ground truths</li>
+					<li>Start from a set of architectural ground truths</li>
 					<ul>
 						<li>All resources can be identified through a <em>global identification scheme (URI)</em></li>
 						<li>Resource interactions happen through a <em>uniform interface (HTTP)</em></li>
