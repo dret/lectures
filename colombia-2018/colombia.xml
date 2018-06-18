@@ -51,7 +51,7 @@
 	</toc>
 	<presentation id="continuous-architecting">
 		<title>Continuous Architecting</title>
-		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="http://dret.typepad.com/dretblog/2017/04/the-three-drivers-of-the-api-economy.html" title='Erik Wilde, "The Three Drivers of the API Economy", April 2017'>Three API Drivers</a></toc>
+		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" title='Gregor Hohpe, "Reverse Engineering the Organization", May 2018'>Reverse Engineering the Organization</a>&#160;· <a href="http://dret.typepad.com/dretblog/2017/04/the-three-drivers-of-the-api-economy.html" title='Erik Wilde, "The Three Drivers of the API Economy", April 2017'>Three API Drivers</a></toc>
 		<part id="introduction-team">
 			<title>Introduction</title>
 			<slide id="dret">
@@ -129,6 +129,10 @@
 					<img style="float: left; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Uniform interface" src="pneumatic-tubes.jpg" href="https://twitter.com/NotableHistory/status/529966375125544960"/>
 					<img style="float: right; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Self-describing representations and stateless interactions" src="nj-gun-permit.png"/>
 				</div>
+			</slide>
+			<slide id="digital-transformation-status">
+				<title>Digital Transformation Status</title>
+				<img href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" src="cio-reporting-line.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
 		<part id="conclusions">
