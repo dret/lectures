@@ -208,6 +208,20 @@
 			</slide>
 			<slide id="integration-decentralization">
 				<title>Integration vs. Decentralization</title>
+				<ul>
+					<li>Both approaches are valid but for different scenarios</li>
+					<li><em>Integration</em> allows to build systems that can be highly optimized</li>
+					<ul>
+						<li>Optimization is useful for implementing/operating one specific problem solution</li>
+						<li>Optimization makes it hard to change things outside of the initial design scope</li>
+					</ul>
+					<li><em>Decentralization</em> allows to evolve ecosystems that can grow organically</li>
+					<ul>
+						<li>Decentralization is useful for allowing independent parts to evolve</li>
+						<li>Operations are harder and optimization potential is limited</li>
+					</ul>
+					<li><em>Digital Transformation</em> first and foremost needs decoupling and flexibility</li>
+				</ul>
 			</slide>
 			<slide id="api-management">
 				<title>Decouple API Lifecycle Management</title>
