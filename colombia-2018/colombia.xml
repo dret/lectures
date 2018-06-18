@@ -331,7 +331,7 @@
 			<title>API Landscapes</title>
 		</part>
 		<part id="api-guidelines">
-			<title>Writing API Guideline</title>
+			<title>Writing API Guidelines</title>
 			<slide id="api-guideline-why">
 				<title>API Guideline: Why?</title>
 			</slide>
@@ -343,6 +343,27 @@
 			</slide>
 			<slide id="api-guideline-test">
 				<title>API Guideline: Help!</title>
+			</slide>
+			<slide id="api-guideline-format">
+				<title>APi Guideline Format</title>
+				<ul>
+					<li>API guidelines are <em>good current practices</em> for API design and evolution</li>
+					<ul>
+						<li>They should reflect <em>current practice</em> and not some future target state</li>
+						<li>Any API can contribute to the guidelines and thus change the current practices</li>
+					</ul>
+					<li>API guidelines in the wild can be found in a variety of formats</li>
+					<ul>
+						<li><em>PDF</em> indicates <em>read-only</em> access and often means too much top-down design</li>
+						<li><em>HTML</em> may be the source but still requires access and knowledge of the CMS</li>
+						<li><em>GitHub</em> provides access to the sources and is a well-known tool for many</li>
+					</ul>
+					<li>GitHub guidelines still needs a process around how to discuss/propose/submit/approve changes</li>
+					<ul>
+						<li><a href="https://guides.github.com/features/mastering-markdown/">GitHub markdown</a> is the most direct way of editing/rendering content</li>
+						<li><a href="https://help.github.com/articles/what-is-github-pages/">GitHub pages</a> is slightly more advanced and provides site generation</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
