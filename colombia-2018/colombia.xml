@@ -341,6 +341,17 @@
 			</slide>
 			<slide id="api-guideline-what">
 				<title>API Guideline: What?</title>
+				<ul>
+					<li>For each <q>why</q> there must be at least one <q>what</q></li>
+					<ul>
+						<li>What can be done to address the <q>why</q> and solve the associated issue</li>
+					</ul>
+					<li>Each <q>what</q> must stay away from telling teams <q>how</q> to do things</li>
+					<ul>
+						<li>API design issues are questions of what design decisions to take</li>
+						<li>Behavioral issues are questions of what a service should be doing</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="api-guideline-how">
 				<title>API Guideline: How?</title>
