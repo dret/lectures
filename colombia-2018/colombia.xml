@@ -604,6 +604,17 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="api-the-api">
+				<title>API the API Conclusions</title>
+				<ul>
+					<li>APIs are the <em>only</em> visible/actionable aspect of any capability</li>
+					<li>Anything available through the API can be reused and automated</li>
+					<li>Your <em>Enterprise Information Model (EIM)</em> is the sum of all enterprise APIs</li>
+				</ul>
+				<blockquote>
+					<p>If you want to say something <em>about</em> your API,<br/>say it <em>through</em> your API.</p>
+				</blockquote>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
