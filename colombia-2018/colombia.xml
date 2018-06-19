@@ -489,9 +489,21 @@
 			</slide>
 			<slide id="api-guideline-test">
 				<title>API Guideline: Help!</title>
+				<ul>
+					<li>For each <q>what</q> there must be at least one <q>help</q></li>
+					<li>Provide tooling to help with following the guidelines</li>
+					<ul>
+						<li>Test suites can check the implementation of an API</li>
+						<li>Runtime tests can check the implementation of behavioral guidelines</li>
+					</ul>
+					<li>Guideline tests can be integrated into deployment pipelines</li>
+					<ul>
+						<li>Each guideline must make it easy to verify its implementation</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="api-guideline-format">
-				<title>APi Guideline Format</title>
+				<title>API Guideline Format</title>
 				<ul>
 					<li>API guidelines are <em>good current practices</em> for API design and evolution</li>
 					<ul>
