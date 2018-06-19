@@ -475,14 +475,16 @@
 			</slide>
 			<slide id="api-guideline-how">
 				<title>API Guideline: How?</title>
-				<li>For each <q>what</q> there must be at least one <q>how</q></li>
 				<ul>
-					<li>How is it possible to implement <q>what</q> the proposed solution asks for</li>
-				</ul>
-				<li>Each <q>how</q> must be replaceable and not be the only accepted way of doing things</li>
-				<ul>
-					<li>Teams can pick from the available <q>how</q> to get tooling/support</li>
-					<li>Teams can invent new ways of solving the problem and invent a new <q>how</q></li>
+					<li>For each <q>what</q> there must be at least one <q>how</q></li>
+					<ul>
+						<li>How is it possible to implement <q>what</q> the proposed solution asks for</li>
+					</ul>
+					<li>Each <q>how</q> must be replaceable and not be the only accepted way of doing things</li>
+					<ul>
+						<li>Teams can pick from the available <q>how</q> to get tooling/support</li>
+						<li>Teams can invent new ways of solving the problem and invent a new <q>how</q></li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="api-guideline-test">
