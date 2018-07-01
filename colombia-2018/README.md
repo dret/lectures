@@ -1,6 +1,6 @@
 # API Academy Colombia 2018
 
-Slides for an API Academy events in Colombia (Medellín &amp; Bogotá), June 19-21, 2018
+Slides for API Academy events in Colombia (Medellín &amp; Bogotá), June 19-21, 2018
 
 
 ## License
