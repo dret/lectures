@@ -1,6 +1,6 @@
 # API Academy LATAM 2018
 
-Slides for API Academy events in LATAM (Mexico &amp; Brazil), August 20-24, 2018
+Slides for API Academy events in LATAM (México City &amp; São Paulo), August 20-24, 2018
 
 
 ## License
