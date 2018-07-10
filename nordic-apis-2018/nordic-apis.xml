@@ -24,13 +24,13 @@
 			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
 		</div>
 	</license>
-	<title><a href="http://nordicapis.com/">Nordic APIs</a> <a href="http://nordicapis.com/events/the-2018-api-platform-summit/">2018 Platform Summit</a></title>
+	<title><a href="http://nordicapis.com/">Nordic APIs</a> <a href="http://nordicapis.com/events/the-2018-platform-summit/">2018 Platform Summit</a></title>
 	<presentation id="index">
-		<title>A Maturity Model for Digital Transformation</title>
-		<toc class="abstract">...</toc>
+		<title>Managing API Versioning and Versions in API Landscapes</title>
+		<toc class="abstract">APIs both separate and connect IT components. They separate IT components by making sure that capabilities are only exposed and used through APIs. They connect IT components by allowing diverse and dynamic landscapes of APIs to be managed and evolved, in order to meet today's business needs of quickly developed and adapted products. One of the challenges of APIs is how to manage versioning them, when one of the goals is that producers and consumers can evolve independently, while there still is a runtime dependency between the API provider and all its users. In this presentation, we look at API versioning models and principles, and also look at how carefully managed API landscapes can help when it comes to providing guidelines and support for API producers and consumers. We look at issues of API styles and design, and we also look at how design practices can then translate into service evolution, and how to document an evolving API so that consumers can keep track of its ongoing evolution.</toc>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 		<affiliation><a href="http://www.apiacademy.co/">API Academy</a>, <a href="http://www.ca.com/">CA Technologies</a></affiliation>
-		<date short="2018-10-10">October 10, 2018</date>
+		<date short="2018-10-22">October 22, 2018</date>
 		<copyright>2018 Erik Wilde</copyright>
 		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>
 		<slide id="summary">
