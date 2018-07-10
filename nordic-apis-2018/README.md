@@ -2,7 +2,7 @@
 
 ## [Nordic APIs](http://nordicapis.com/) [2018 Platform Summit](https://nordicapis.com/events/the-2018-platform-summit/)
 
-### October 22, 2018
+### Stockholm, Sweden, October 22, 2018
 
 Slides for the presentation at the Nordic APIs 2018 Platform Summit, Stockholm, Sweden, October 22-24, 2018.
 
