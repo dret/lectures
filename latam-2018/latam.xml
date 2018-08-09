@@ -24,32 +24,12 @@
 			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
 		</div>
 	</license>
-	<title>API Academy LATAM 2018</title>
+	<title>API Academy México City &amp; São Paulo</title>
 	<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 	<affiliation><a href="http://www.apiacademy.co/">API Academy</a>, <a href="http://www.ca.com/">CA Technologies</a></affiliation>
 	<date short="2018-08">August 20-24, 2018</date>
 	<copyright>2018 Erik Wilde</copyright>
-	<toc name="toc.html">
-		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
-			<thead>
-				<tr>
-					<th valign="bottom">Subject</th>
-					<th valign="bottom">Slides</th>
-					<th valign="bottom">Additional Resources</th>
-				</tr>
-			</thead>
-			<tbody>
-				<hotspot:for-each-presentation>
-					<tr class="vevent">
-						<td valign="top"><b><hotspot:title/></b></td>
-						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
-						<td align="center"><hotspot:toc class="resources"/></td>
-					</tr>
-				</hotspot:for-each-presentation>
-			</tbody>
-		</table>
-	</toc>
-	<presentation id="continuous-architecting">
+	<presentation id="index">
 		<title>Continuous Architecting</title>
 		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" title='Gregor Hohpe, "Reverse Engineering the Organization", May 2018'>Reverse Engineering the Organization</a>&#160;· <a href="http://dret.typepad.com/dretblog/2017/04/the-three-drivers-of-the-api-economy.html" title='Erik Wilde, "The Three Drivers of the API Economy", April 2017'>Three API Drivers</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a></toc>
 		<slide id="dret">
