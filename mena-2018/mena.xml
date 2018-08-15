@@ -49,8 +49,8 @@
 			</tbody>
 		</table>
 	</toc>
-	<presentation id="digital-transformation">
-		<title short="Digital Transformation">Driving Digital Transformation</title>
+	<presentation id="api-strategy">
+		<title>API Strategy</title>
 		<toc class="abstract">Digital Transformation is a goal of many organizations today. It means to better align business and IT capabilities, allowing organizations to change faster and thus to be more competitive in the marketplace. Microservices and APIs play a central role in this strategy. Microservices allow to focus on how to build products that can be changed independent of each other. APIs allow to consistently expose capabilities so that products can be more easily combined and built on each other.</toc>
 		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>
 		<slide id="summary">
@@ -124,9 +124,9 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation id="api-landscapes">
-		<title short="API Landscapes">API Management at Scale: API Landscapes</title>
-		<toc class="abstract">Digital Transformation will cause an organization to have a constantly growing and evolving landscape of APIs. Managing this landscape so that transformation can be a continuous process is one of the key challenges of modern enterprise architecture. We will look into how API management can make the leap from managing individual APIs, to managing constantly evolving ecosystems of APIs.</toc>
+	<presentation id="api-design">
+		<title>API Design</title>
+		<toc class="abstract">...</toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
