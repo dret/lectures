@@ -85,6 +85,71 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="digital-transformation">
+			<title>Digital Transformation</title>
+			<slide id="digital-transformation-meme">
+				<title>Digital Transformation</title>
+				<img href="http://hdwallpaperfx.com/angry-jaguar/" src="jaguar-digital-transformation.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="digital-transformation-status">
+				<title>Digital Transformation Status</title>
+				<img href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" src="cio-reporting-line.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-pattern">
+				<title>The API Pattern</title>
+				<div style="height: 70%">
+					<img style="float: left; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Uniform interface" src="pneumatic-tubes.jpg" href="https://twitter.com/NotableHistory/status/529966375125544960"/>
+					<img style="float: right; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Self-describing representations and stateless interactions" src="nj-gun-permit.png"/>
+				</div>
+			</slide>
+			<slide id="loose-coupling">
+				<title><a href="http://queue.acm.org/detail.cfm?id=2956643">Loose Coupling Matters</a></title>
+				<ol>
+					<li>Permissionless Innovation</li>
+					<li>Enable Failure</li>
+					<li>Disrupt Trust (replaced by autonomy and accountability)</li>
+					<li>You Build It, You Own It</li>
+					<li>Accelerate Deprecations</li>
+					<li>End Centralized Metadata</li>
+					<li>Concentrate the Pain</li>
+					<li>Test Differently</li>
+				</ol>
+			</slide>
+			<slide id="why-now">
+				<title>APIs! But Why Now?</title>
+				<ol>
+					<li><em>Push:</em> Not moving becomes an increasingly risky strategy</li>
+					<ul>
+						<li>Markets move faster than ever before</li>
+						<li>Technology-driven changes require readiness on the IT level</li>
+					</ul>
+					<li><em>Pull:</em> Participating in the API economy is increasingly beneficial (a.k.a. the <em href="https://en.wikipedia.org/wiki/Metcalfe%27s_law">network effect</em>)</li>
+					<ul>
+						<li>Re-imagining organizations becomes a way of being</li>
+						<li>Not being API-ready means missing increasingly more opportunities</li>
+					</ul>
+					<li><em>Follow the Leaders:</em> Moving towards APIs is not difficult anymore</li>
+					<ul>
+						<li>Examples of organizations allow insights into potential and risk</li>
+						<li>The technology landscape is rich enough to get started</li>
+					</ul>
+				</ol>
+			</slide>
+			<slide id="digital-transformation-path">
+				<title><a href="http://martinfowler.com/articles/microservices.html">The MSA Path to Digital Transformation</a></title>
+				<ol>
+					<li>Componentization via services</li>
+					<li>Organized around business capabilities</li>
+					<li>Products not projects</li>
+					<li>Smart endpoints and dumb pipes</li>
+					<li>Decentralized governance</li>
+					<li>Decentralized data management</li>
+					<li>Infrastructure automation</li>
+					<li>Design for failure</li>
+					<li>Evolutionary design</li>
+				</ol>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
