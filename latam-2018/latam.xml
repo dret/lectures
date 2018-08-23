@@ -187,13 +187,13 @@
 				</ul>
 			</slide>
 			<slide id="web-platform">
-				<title>Principles/Protocols/Practices (P<sup>3</sup>): The Web Platform</title>
+				<title>Principles/Protocols/Patterns (P<sup>3</sup>): The Web Platform</title>
 				<ul>
-					<li>A set of shared <em>principles</em>, <em>protocols</em>, and <em>practices</em></li>
+					<li>A set of shared <em>principles</em>, <em>protocols</em>, and <em>patterns</em></li>
 					<ul>
 						<li><em>Principles</em> govern the general architectural style</li>
 						<li><em>Protocols</em> define the way in which components interact</li>
-						<li><em>Practices</em> are design patterns for when/how to use certain protocols</li>
+						<li><em>Patterns</em> describe ways in which protocols/formats are combined</li>
 					</ul>
 					<li>The Web is and always has been about microservices</li>
 					<ul>
