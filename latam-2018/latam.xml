@@ -208,8 +208,12 @@
 		</part>
 		<part id="p3-example">
 			<title>P<sup>3</sup> Example: Service Sunsets</title>
+			<slide id="service-sunset-why">
+				<title>Why? No Service Lives Forever</title>
+				<img title="Sunset" href="https://www.flickr.com/photos/dret/5960563328" src="sunset.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="why-what-how">
-				<title>Managing P<sup>3</sup>: Separating Why/What/How</title>
+				<title>P<sup>3</sup> Guidance: Separating Why/What/How</title>
 				<ul>
 					<li><em>Why</em> is there a need to provide a capability?</li>
 					<ul>
@@ -229,10 +233,6 @@
 						<li>Provide assistance for <em>implementation</em> and <em>testing</em></li>
 					</ul>
 				</ul>
-			</slide>
-			<slide id="service-sunset-why">
-				<title>Why? No Service Lives Forever</title>
-				<img title="Sunset" href="https://www.flickr.com/photos/dret/5960563328" src="sunset.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="service-sunset-what">
 				<title>What? Signal Sunsets with <a href="http://webconcepts.info/concepts/http-header/Sunset">HTTP <code>Sunset</code></a></title>
