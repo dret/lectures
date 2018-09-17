@@ -112,6 +112,68 @@
 			</slide>
 			<slide id="spdx-values">
 				<title><a href="https://spdx.org/" title="Software Package Data Exchange">SPDX</a> <a href="https://spdx.org/licenses/">License Values</a></title>
+				<table class="sortable" style="margin: auto ; width: calc(100% - 5em);">
+					<thead><tr>
+						<th>Full name</th><th>Identifier</th></tr></thead>
+					<tbody>
+						<tr>
+							<td><a href="https://spdx.org/licenses/0BSD.html">BSD Zero Clause License</a></td>
+							<td about="https://spdx.org/licenses/0BSD.html"><code>0BSD</code></td>
+						</tr>
+						<tr>
+							<td><a href="https://spdx.org/licenses/AAL.html">Attribution Assurance License</a></td>
+							<td about="https://spdx.org/licenses/AAL.html"><code>AAL</code></td>
+						</tr>
+						<tr>
+							<td><a href="https://spdx.org/licenses/Abstyles.html">Abstyles License</a></td>
+							<td about="https://spdx.org/licenses/Abstyles.html"><code>Abstyles</code></td>
+						</tr>
+						<tr>
+							<td><a href="https://spdx.org/licenses/Adobe-2006.html">Adobe Systems Incorporated Source Code License Agreement</a></td>
+							<td about="https://spdx.org/licenses/Adobe-2006.html"><code>Adobe-2006</code></td>
+						</tr>
+						<tr>
+							<td><a href="https://spdx.org/licenses/Adobe-Glyph.html">Adobe Glyph List License</a></td>
+							<td about="https://spdx.org/licenses/Adobe-Glyph.html"><code>Adobe-Glyph</code></td>
+						</tr>
+						<tr>
+							<td><a href="https://spdx.org/licenses/ADSL.html">Amazon Digital Services License</a></td>
+							<td about="https://spdx.org/licenses/ADSL.html"><code>ADSL</code></td>
+						</tr>
+						<tr>
+							<td><a href="https://spdx.org/licenses/AFL-1.1.html">Academic Free License v1.1</a></td>
+							<td about="https://spdx.org/licenses/AFL-1.1.html"><code>AFL-1.1</code></td>
+						</tr>
+						<tr>
+							<td><a href="https://spdx.org/licenses/AFL-1.2.html">Academic Free License v1.2</a></td>
+							<td about="https://spdx.org/licenses/AFL-1.2.html"><code>AFL-1.2</code></td>
+						</tr>
+						<tr>
+							<td><a href="https://spdx.org/licenses/AFL-2.0.html">Academic Free License v2.0</a></td>
+							<td about="https://spdx.org/licenses/AFL-2.0.html"><code>AFL-2.0</code></td>
+						</tr>
+						<tr>
+							<td><a href="https://spdx.org/licenses/AFL-2.1.html">Academic Free License v2.1</a></td>
+							<td about="https://spdx.org/licenses/AFL-2.1.html"><code>AFL-2.1</code></td>
+						</tr>
+						<tr>
+							<td><a href="https://spdx.org/licenses/AFL-3.0.html">Academic Free License v3.0</a></td>
+							<td about="https://spdx.org/licenses/AFL-3.0.html"><code>AFL-3.0</code></td>
+						</tr>
+						<tr>
+							<td><a href="https://spdx.org/licenses/Afmparse.html">Afmparse License</a></td>
+							<td about="https://spdx.org/licenses/Afmparse.html"><code>Afmparse</code></td>
+						</tr>
+						<tr>
+							<td><a href="https://spdx.org/licenses/AGPL-1.0-only.html">Affero General Public License v1.0 only</a></td>
+							<td about="https://spdx.org/licenses/AGPL-1.0-only.html"><code>AGPL-1.0-only</code></td>
+						</tr>
+						<tr>
+							<td><a href="https://spdx.org/licenses/AGPL-1.0-or-later.html">Affero General Public License v1.0 or later</a></td>
+							<td about="https://spdx.org/licenses/AGPL-1.0-or-later.html"><code>AGPL-1.0-or-later</code></td>
+						</tr>
+					</tbody>
+				</table>
 			</slide>
 		</part>
 		<part id="api-label-recipe">
