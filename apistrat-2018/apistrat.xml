@@ -207,6 +207,10 @@
 				<title><a href="https://tools.ietf.org/html/draft-nottingham-json-home">Home Documents for HTTP APIs</a></title>
 				<listing src="home.json"/>
 			</slide>
+			<slide id="home-documents">
+				<title>Finding Labels</title>
+				<listing src="home-labels.json" line="2-9"/>
+			</slide>
 			<slide id="shared-label-types">
 				<title>Shared Label Types</title>
 				<ul>
