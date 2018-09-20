@@ -111,6 +111,14 @@
 		</part>
 		<part id="why-api-labels">
 			<title>Why API Labels?</title>
+			<slide>
+				<title>API Dogfood/Champagne</title>
+				<blockquote><q>If you want to say something <em>about</em> your API, say it <em>through</em> your API.</q></blockquote>
+				<ul>
+					<li>Configuration/description/documentation as code</li>
+					<li>Accessible to tooling and automation</li>
+				</ul>
+			</slide>
 			<slide id="dataset-search">
 				<title>Better Descriptions ⇒ Better Search</title>
 				<ul>
