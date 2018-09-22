@@ -130,6 +130,23 @@
 					<li>Private description helps internal management and landscaping</li>
 				</ul>
 			</slide>
+			<slide id="label-scenarios">
+				<title>API Label Scenarios</title>
+				<ul>
+					<li>API labels are not intended to replace API descriptions</li>
+					<ul>
+						<li>Descriptions are more detailed and complex</li>
+					</ul>
+					<li>API labels as a way to <em>expose/share information internally</em></li>
+					<ul>
+						<li>Managing labels types/values and trust is relatively easy</li>
+					</ul>
+					<li>API labels as a way to <em>expose/share information publicly</em></li>
+					<ul>
+						<li>Managing labels types/values and trust becomes more challenging</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="label-scenario-declared">
 				<title>Get API Labels</title>
 				<img src="label-scenario-declared.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
