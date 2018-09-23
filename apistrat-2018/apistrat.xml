@@ -172,6 +172,17 @@
 			<title>The API Label Value Space</title>
 			<slide id="api-label-types">
 				<title>API Label Types</title>
+				<ul>
+					<li>Label types can be <em>registered</em> or <em>extension</em> label types</li>
+					<li><em>Registered label types</em> are managed in an <a href="https://github.com/API-Labels/API-label-registry">open API label type registry</a></li>
+					<ul>
+						<li>Registered types have well-known names that are simple strings</li>
+					</ul>
+					<li><em>Extension label types</em> can be used by anybody with no registration required</li>
+					<ul>
+						<li>Extension types have self-describing names that are URIs</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="api-label-value">
 				<title>API Label Values</title>
