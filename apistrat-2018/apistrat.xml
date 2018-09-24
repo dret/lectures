@@ -263,6 +263,10 @@
 				<title>API Label Formats</title>
 				<img src="label-scenario-formats.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="home-documents">
+				<title><a href="https://tools.ietf.org/html/draft-nottingham-json-home">Home Documents for HTTP APIs</a></title>
+				<listing src="home.json"/>
+			</slide>
 			<slide id="findable-labels">
 				<title>Findable Labels</title>
 				<ul>
@@ -270,23 +274,14 @@
 				</ul>
 			</slide>
 			<slide id="home-documents">
-				<title><a href="https://tools.ietf.org/html/draft-nottingham-json-home">Home Documents for HTTP APIs</a></title>
-				<listing src="home.json"/>
-			</slide>
-			<slide id="home-documents">
 				<title>Finding Labels</title>
 				<listing src="home-labels.json" line="2-8"/>
 				<listing src="labels.json"/>
 			</slide>
 			<slide id="shared-label-types">
-				<title>Shared Label Types</title>
+				<title>Shared Label Types and Values</title>
 				<ul>
 					<li><q>Knowing what to look for based on your needs</q></li>
-				</ul>
-			</slide>
-			<slide id="shared-label-values">
-				<title>Shared Label Values</title>
-				<ul>
 					<li><q>Knowing how to read and understand what you see</q></li>
 				</ul>
 			</slide>
