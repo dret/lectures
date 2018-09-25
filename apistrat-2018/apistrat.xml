@@ -115,8 +115,8 @@
 				<title>Labels: Sharing + Loose Coupling</title>
 				<img src="label-scenario-people.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide>
-				<title>API Dogfood/Champagne</title>
+			<slide id="api-the-apis">
+				<title>API the APIs</title>
 				<blockquote><q>If you want to say something <em>about</em> your API, say it <em>through</em> your API.</q></blockquote>
 				<ul>
 					<li>Configuration/description/documentation as code</li>
