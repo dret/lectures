@@ -126,6 +126,194 @@
 				<img title="Colombia" src="jaguar-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
 			</slide>
 		</part>
+		<part id="api-economy">
+			<title>The API Economy</title>
+			<slide id="api-economy-perspectives">
+				<title>Two Perspectives of the API Economy</title>
+				<ol>
+					<li>An economy driven by <em>APIs as products</em> and <em>API sales</em></li>
+					<ul>
+						<li>APIs are interfaces to services</li>
+					</ul>
+					<li>An economy driven by <em>API-enabled services</em> and <em>API-based service interactions</em></li>
+					<ul>
+						<li>Services become more valuable when they are API-enabled</li>
+					</ul>
+				</ol>
+				<ul>
+					<li>The former is a special case of the latter</li>
+				</ul>
+			</slide>
+			<slide id="api-landscape">
+				<title>API Landscape</title>
+				<img title="API Landscape" href="http://theapilandscape.pagedemo.co/" src="../accso-2018/img/api-landscape-v2-march-2017.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-product">
+				<title>API as a Product? Products as APIs!</title>
+				<ul>
+					<li>Financing API programs can be a challenge</li>
+					<ul>
+						<li><em>API products</em> can help to generate or drive revenue</li>
+						<li><em>API readiness</em> is a strategic investment in organization fitness</li>
+					</ul>
+					<li>API products can be used as internal or external building blocks</li>
+					<ul>
+						<li>Start exposing internal APIs as foundations for new products</li>
+						<li><q>Product thinking</q> helps with autonomy and velocity</li>
+					</ul>
+					<li>Build for change and growth and evolution</li>
+				</ul>
+			</slide>
+			<slide id="business-model">
+				<title>APIs Serve a Purpose</title>
+				<blockquote><q>Do not try to find the right business model for your APIs; instead, try to find the right APIs for your business model.</q></blockquote>
+				<p class="quotenote"><a href="http://www.apiacademy.co/team_member/mehdi-medjaoui/">Mehdi Medjaoui</a>: <a href="http://twitter.com/medjawii" class="twitter-follow-button" title="Mehdi Medjaoui on Twitter: @medjawii"><code>@medjawii</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></p>
+			</slide>
+			<slide id="api-enabled-product">
+				<title>This is not a shoe</title>
+				<img title="Business, rewritten by software" href="http://www.johnmcneilstudio.com/work/business-rewritten-by-software#This%20is%20not%20a%20shoe" src="../accso-2018/img/software-shoe.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="digital-transformation">
+			<title>Digital Transformation</title>
+			<slide id="changing-it">
+				<title>Why Change IT?</title>
+				<ul>
+					<li>More changes, more opportunities, more threats → Digital Transformation</li>
+					<li>Modular designs are easier to change → <link href="why-apis">APIs</link></li>
+					<li>Modular implementations are faster to change → <link href="why-microservices">Microservices</link></li>
+				</ul>
+			</slide>
+			<slide id="it-today">
+				<title>From Cost Center to Enabler</title>
+				<ul>
+					<li>IT used to be mostly a cost center (electrified bookkeeping)</li>
+					<ul>
+						<li>Best case scenario: IT never gets in the way and just works</li>
+						<li>Worst case scenario: IT is expensive, and extremely hard to change</li>
+					</ul>
+					<li>IT has become a competitive advantage (out-innovating competitors)</li>
+					<ul>
+						<li>Best case scenario: IT enables fast, cheap, and constant innovation</li>
+						<li>Worst case scenario: IT changes do not result in improved competitiveness</li>
+					</ul>
+				</ul>
+			</slide>
+			<part id="why-apis">
+				<title>Why APIs?</title>
+				<slide id="internal-external">
+					<title>Two Perspectives of API Scope/Focus</title>
+					<ul>
+						<li><em>Internal:</em> Using APIs to break up monolithic systems</li>
+						<ul>
+							<li>Focus on <em>systems/software engineering</em> and better modularization</li>
+							<li><q>Turn a system into an ecosystem.</q></li>
+						</ul>
+						<li><em>External:</em> Using APIs to build up ecosystems</li>
+						<ul>
+							<li>Focus on <em>decentralized systems</em> and better connectivity</li>
+							<li><q>Enable an ecosystem by loosely coupling systems.</q></li>
+						</ul>
+						<li>Both views are complementary and mostly a difference in perspective</li>
+						<ul>
+							<li>The <em>internal perspective</em> tends to gravitate towards <q>building a system</q></li>
+							<li>The <em>external perspective</em> tends to ignore the complexities of decentralization</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="api-cargo-cult">
+					<title>The Wonders of APIs</title>
+					<img title="API Cargo Cult" src="../accso-2018/img/apis-make-things-happen.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+			</part>
+			<part id="why-microservices">
+				<title>Why Microservices?</title>
+				<slide id="web-works">
+					<title>The Web Works</title>
+					<ul>
+						<li>MSA is about service autonomy in service-oriented landscapes</li>
+						<ul>
+							<li><em>Developer autonomy</em> is the freedom to choose the best tools for the job</li>
+							<li><em>Operations autonomy</em> means that every service is operated standalone</li>
+						</ul>
+						<li>MSA is also about effectiveness in autonomy-focused service-oriented landscapes</li>
+						<ul>
+							<li><em>Rapid provisioning</em> means that getting started is an easy task</li>
+							<li><em>Basic monitoring</em> establishes visibility into service operations</li>
+							<li><em>Rapid deployment</em> increases the velocity of service landscape evolution</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="web-industrialized">
+					<title>The Web, Industrialized</title>
+					<ul>
+						<li>MSA applies Web Architecture's <em href="http://dret.net/netdret/publications#pau09a">loose coupling</em> to the API space</li>
+						<ul>
+							<li>Build services with no hidden dependencies</li>
+							<li>Choose the best tool for the job</li>
+							<li>Decouple service provisioning from delivery architecture</li>
+							<li>Monitor service state and usage</li>
+							<li>React quickly when customers or market demand change</li>
+							<li>Experiment ruthlessly and keep experimentation cost low</li>
+						</ul>
+						<li>MSA is all about being webby while minimizing the cost</li>
+					</ul>
+				</slide>
+				<slide id="microservices-cargo-cult">
+					<title>Microservices Cargo Cult</title>
+					<img title="Microservices Cargo Cult" src="../accso-2018/img/microservices-cargo-cult.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+			</part>
+		</part>
+		<part id="continuous-architecting">
+			<title>How? Continuous Architecting!</title>
+			<slide id="car-interior">
+				<title>Interface Design</title>
+				<img src="../accso-2018/img/audi-rs6-plus-interior.jpg" title="Audi RS6 Plus Interior" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="continuous-architecture">
+				<title>Continuous Architecture</title>
+				<img src="../accso-2018/img/model-t.jpg" title="Model T Speedster" href="https://commons.wikimedia.org/wiki/File:1913_Ford_Model_T_Speedster_dashboard.JPG" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-api">
+				<title>API your APIs</title>
+				<ul>
+					<li>Expose design-time and runtime API information in the API</li>
+					<ul>
+						<li><em>Design-time</em> allows automation of API landscape overview</li>
+						<li><em>Runtime</em> allows automation of API landscape status</li>
+					</ul>
+					<li>Follow <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">robust extensibility principles</a> for these <q>API APIs</q></li>
+					<ul>
+						<li><em>Meaningful Core:</em> Start with a simple but useful scenario</li>
+						<li><em>Extension Points:</em> Think about how scenarios might evolve</li>
+						<li><em>Processing Model:</em> Be clear about how extensions are handled</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="webby-amazon">
+				<title>Webby API Design</title>
+				<img title="Webby Amazon" src="../accso-2018/img/webby-amazon.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-patterns">
+				<title>Emerging API Patterns</title>
+				<ul>
+					<li>Self-description for APIs is increasing</li>
+					<li><a href="http://webconcepts.info/specs/IETF/RFC/7807">Problem details</a> as a way how APIs expose error information</li>
+					<ul>
+						<li>Enables generic error handling but also allows additional information</li>
+					</ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/nottingham-json-home">Home documents</a> as a way how APIs provide starting pages</li>
+					<ul>
+						<li>Enables harvesting of API start points but also allows additional information</li>
+					</ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/inadarei-api-health-check">Healthcheck reports</a> as a way how APIs expose status information</li>
+					<ul>
+						<li>Enables landscape-level status reports but also allows additional information</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
