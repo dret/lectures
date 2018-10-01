@@ -561,6 +561,18 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="design-matters">
+				<title>Design Matters</title>
+				<ul>
+					<li>API design is a critical component of every API strategy</li>
+					<li>API design is <em>necessary</em> but <em>not sufficient</em> for a successful API program</li>
+					<ul>
+						<li><em>Bad API design</em> can undermine API success and destabilize API landscapes</li>
+						<li><em>Successful APIs</em> provide access to products that have value for clients</li>
+					</ul>
+					<li>Invest in API design and API landscaping and solicit feedback from product teams</li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
