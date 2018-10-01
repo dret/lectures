@@ -159,6 +159,51 @@
 		<part id="constraints">
 			<title>Constrain-Based Design</title>
 		</part>
+		<part id="continuous-architecting">
+			<title>How? Continuous Architecting!</title>
+			<slide id="car-interior">
+				<title>Interface Design</title>
+				<img src="audi-rs6-plus-interior.jpg" title="Audi RS6 Plus Interior" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="continuous-architecture">
+				<title>Continuous Architecture</title>
+				<img src="model-t.jpg" title="Model T Speedster" href="https://commons.wikimedia.org/wiki/File:1913_Ford_Model_T_Speedster_dashboard.JPG" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-api">
+				<title>API your APIs</title>
+				<ul>
+					<li>Expose design-time and runtime API information in the API</li>
+					<ul>
+						<li><em>Design-time</em> allows automation of API landscape overview</li>
+						<li><em>Runtime</em> allows automation of API landscape status</li>
+					</ul>
+					<li>Follow <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">robust extensibility principles</a> for these <q>API APIs</q></li>
+					<ul>
+						<li><em>Meaningful Core:</em> Start with a simple but useful scenario</li>
+						<li><em>Extension Points:</em> Think about how scenarios might evolve</li>
+						<li><em>Processing Model:</em> Be clear about how extensions are handled</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-patterns">
+				<title>Emerging API Patterns</title>
+				<ul>
+					<li>Self-description for APIs is increasing</li>
+					<li><a href="http://webconcepts.info/specs/IETF/RFC/7807">Problem details</a> as a way how APIs expose error information</li>
+					<ul>
+						<li>Enables generic error handling but also allows additional information</li>
+					</ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/nottingham-json-home">Home documents</a> as a way how APIs provide starting pages</li>
+					<ul>
+						<li>Enables harvesting of API start points but also allows additional information</li>
+					</ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/inadarei-api-health-check">Healthcheck reports</a> as a way how APIs expose status information</li>
+					<ul>
+						<li>Enables landscape-level status reports but also allows additional information</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
