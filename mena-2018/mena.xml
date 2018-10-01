@@ -52,7 +52,7 @@
 	<presentation id="api-strategy">
 		<title>API Strategy</title>
 		<toc class="abstract">Digital Transformation is a goal of many organizations today. It means to better align business and IT capabilities, allowing organizations to change faster and thus to be more competitive in the marketplace. Microservices and APIs play a central role in this strategy. Microservices allow to focus on how to build products that can be changed independent of each other. APIs allow to consistently expose capabilities so that products can be more easily combined and built on each other.</toc>
-		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a>&#160;· <a href="http://dret.typepad.com/dretblog/2017/04/the-three-drivers-of-the-api-economy.html" title='Erik Wilde, "The Three Drivers of the API Economy", April 2017'>Three API Drivers</a>&#160;· <a href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" title='Gregor Hohpe, "Reverse Engineering the Organization", May 2018'>Reverse Engineering the Organization</a></toc>
+		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a>&#160;· <a href="http://dret.typepad.com/dretblog/2017/04/the-three-drivers-of-the-api-economy.html" title='Erik Wilde, "The Three Drivers of the API Economy", April 2017'>Three API Drivers</a>&#160;· <a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a>&#160;· <a href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" title='Gregor Hohpe, "Reverse Engineering the Organization", May 2018'>Reverse Engineering the Organization</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -230,12 +230,48 @@
 					<li>MSA is all about being webby while minimizing the cost</li>
 				</ul>
 			</slide>
-		</part>
-		<part id="beyond-tech">
-			<title>Organizational/Structural Issues</title>
+			<slide id="beyond-tech">
+				<title>Organizational/Structural Issues</title>
+				<ul>
+					<li>Optimizing for change takes strategy and execution</li>
+					<ul>
+						<li>Preventing shortcuts by having and communicating goals</li>
+					</ul>
+					<li>Balancing diversity and dynamics with the need for some coherence/standards</li>
+					<ul>
+						<li><em>Rules</em> tell teams how to solve problems</li>
+						<li><em>Constraints</em> explain teams what to do (and why)</li>
+					</ul>
+					<li>Digital transformation is a deep organizational readjustment</li>
+					<ul>
+						<li>Clear communications and strategy from the top down</li>
+						<li>Education and training to enable teams to succeed</li>
+						<li>Focusing on constraints and moving away from rules</li>
+						<li>Removing bottlenecks by providing support when necessary</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="what-now">
 			<title>What Now?</title>
+			<slide id="design-guidelines">
+				<title>Nurturing the Ecosystem</title>
+				<ul>
+					<li>Create <a href="http://apistylebook.com/design/guidelines/" title="API Stylebook: Design Guidelines">design guidelines</a> that teams can use</li>
+					<li>Writing as a form of communication</li>
+					<ul>
+						<li>Reading guidelines allows teams to understand the current practice</li>
+						<li>Writing guidelines allows teams to improve practices</li>
+					</ul>
+					<li>Structured guidance to better communicate reasoning, support, and validation</li>
+					<ul>
+						<li><q>Why</q>: Explains the reasoning for each guidance</li>
+						<li><q>What</q>: Explains what teams have to comply with at the API level</li>
+						<li><q>How</q>: Provides support for how to implement the guidance</li>
+						<li><q>Test</q>: Makes it easier for teams to verify compliance</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="digital-transformation-status">
 				<title>Digital Transformation Assessment</title>
 				<img href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" src="cio-reporting-line.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
