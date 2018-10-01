@@ -52,7 +52,7 @@
 	<presentation id="api-strategy">
 		<title>API Strategy</title>
 		<toc class="abstract">Digital Transformation is a goal of many organizations today. It means to better align business and IT capabilities, allowing organizations to change faster and thus to be more competitive in the marketplace. Microservices and APIs play a central role in this strategy. Microservices allow to focus on how to build products that can be changed independent of each other. APIs allow to consistently expose capabilities so that products can be more easily combined and built on each other.</toc>
-		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a>&#160;· <a href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" title='Gregor Hohpe, "Reverse Engineering the Organization", May 2018'>Reverse Engineering the Organization</a></toc>
+		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a>&#160;· <a href="http://dret.typepad.com/dretblog/2017/04/the-three-drivers-of-the-api-economy.html" title='Erik Wilde, "The Three Drivers of the API Economy", April 2017'>Three API Drivers</a>&#160;· <a href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" title='Gregor Hohpe, "Reverse Engineering the Organization", May 2018'>Reverse Engineering the Organization</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -197,6 +197,24 @@
 			</slide>
 			<slide id="apis">
 				<title>APIs</title>
+				<ul>
+					<li>APIs are necessary to move from IT systems to ecosystems</li>
+					<ul>
+						<li><em>Systems</em> are integrated (easy to build, hard to change)</li>
+						<li><em>Ecosystems</em> are decentralized (hard to build, easy to change)</li>
+					</ul>
+					<li>API adoption has been driven by two main scenarios</li>
+					<ul>
+						<li><em>Interfacing externally</em> for new ways of conducting/connecting businesses</li>
+						<li><em>Interfacing internally</em> as a new approach for enterprise IT architecture</li>
+					</ul>
+					<li>API adoption has been driven by three main drivers</li>
+					<ul>
+						<li><em>Push:</em> Not moving becomes an increasingly risky strategy</li>
+						<li><em>Pull:</em> Participating in the API economy is increasingly beneficial (a.k.a. the <em href="https://en.wikipedia.org/wiki/Metcalfe%27s_law">network effect</em>)</li>
+						<li><em>Follow the Leaders:</em> Moving towards APIs is not difficult anymore</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="microservices">
 				<title>Microservices: The Web, Industrialized</title>
