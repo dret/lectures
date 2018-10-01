@@ -511,14 +511,6 @@
 					<li>Responses to expect from these operations</li>
 				</ul>
 			</slide>
-			<slide id="swagger-weather-json">
-				<title>Minimal Swagger Example (JSON)</title>
-				<listing src="swagger-weather.json"/>
-			</slide>
-			<slide id="swagger-weather-yaml">
-				<title>Minimal Swagger Example (YAML)</title>
-				<listing src="swagger-weather.yaml"/>
-			</slide>
 			<slide id="openapi-weather-json">
 				<title>Minimal OpenAPI Example (JSON)</title>
 				<listing src="openapi-weather.json"/>
