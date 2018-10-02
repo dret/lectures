@@ -466,10 +466,10 @@
 				<title>API Styles in the Wild</title>
 				<ul>
 					<li><link href="tunnel-style"/>: XML-RPC, SOAP, gRPC, Avro</li>
-					<li><link href="uri-style"/>: OpenAPI/Swagger</li>
-					<li><link href="hypermedia-style"/>: HAL, Siren, Atom</li>
+					<li><link href="uri-style"/>: OpenAPI/Swagger, RAML, API Blueprint</li>
+					<li><link href="hypermedia-style"/>: HAL, Siren, Atom, HATEOAS</li>
 					<li><link href="query-style"/>: GraphQL, OData, SPARQL</li>
-					<li><link href="event-style"/>: MQ, WebSub, MQTT, XMPP, AMQP</li>
+					<li><link href="event-style"/>: MQ, WebSub, MQTT, XMPP, AMQP, Kafka</li>
 				</ul>
 			</slide>
 		</part>
