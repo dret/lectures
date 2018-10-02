@@ -97,6 +97,25 @@
 		</part>
 		<part id="api-technology">
 			<title>API Technology</title>
+			<slide id="api-styles">
+				<title>API Styles</title>
+				<ul>
+					<li>APIs support conversations between interacting peers</li>
+					<ul>
+						<li>Some conversations are point-to-point</li>
+						<li>Some conversations are point-to-multipoint</li>
+						<li>Some conversations are point-to-ether</li>
+					</ul>
+					<li>Different API styles support different conversation styles</li>
+					<ul>
+						<li><em>Tunnel Style:</em> XML-RPC, SOAP, gRPC, Avro</li>
+						<li><em>URI Style:</em> OpenAPI/Swagger, RAML, API Blueprint</li>
+						<li><em>Hypermedia Style:</em> HAL, Siren, Atom, HATEOAS</li>
+						<li><em>Query Style:</em> GraphQL, OData, SPARQL</li>
+						<li><em>Event Style:</em> MQ, WebSub, MQTT, XMPP, AMQP, Kafka</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="api-iot">
 			<title>APIs and IoT</title>
