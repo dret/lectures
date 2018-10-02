@@ -87,6 +87,13 @@
 		</part>
 		<part id="api-strategy">
 			<title>API Strategy</title>
+			<slide id="api-pattern">
+				<title>The API Pattern</title>
+				<div style="height: 70%">
+					<img style="float: left; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Uniform interface" src="pneumatic-tubes.jpg" href="https://twitter.com/NotableHistory/status/529966375125544960"/>
+					<img style="float: right; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Self-describing representations and stateless interactions" src="nj-gun-permit.png"/>
+				</div>
+			</slide>
 		</part>
 		<part id="api-technology">
 			<title>API Technology</title>
