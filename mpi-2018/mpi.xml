@@ -91,14 +91,6 @@
 					<img style="float: right; object-fit : contain ; margin : 0% 4% 0% 4% ; height: 100% ; " title="Self-describing representations and stateless interactions" src="nj-gun-permit.png"/>
 				</div>
 			</slide>
-			<slide id="api-value">
-				<title>API Value Propositions</title>
-				<ol>
-					<li>Increase <em>flexibility</em> by allowing capabilities to be added/changed more easily</li>
-					<li>Improve <em>innovation</em> by improving reuse and allowing more economical experimentation</li>
-					<li>Increase <em>scalability</em> by allowing capabilities to be scaled individually</li>
-				</ol>
-			</slide>
 			<slide id="api-landscape-ux">
 				<title>Improving User Experiences</title>
 				<img title="Improving User Experiences" src="api-landscape-ux.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
@@ -122,6 +114,14 @@
 			<slide id="api-landscape-digital-transformation-api">
 				<title>Digital Transformation Needs APIs</title>
 				<img title="Digital Transformation Needs APIs" src="api-landscape-digital-transformation-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-value">
+				<title>API Value Propositions</title>
+				<ol>
+					<li>Increase <em>flexibility</em> by allowing capabilities to be added/changed more easily</li>
+					<li>Increase <em>scalability</em> by allowing capabilities to be scaled individually</li>
+					<li>Improve <em>innovation</em> by improving reuse and allowing more economical experimentation</li>
+				</ol>
 			</slide>
 		</part>
 		<part id="api-technology">
