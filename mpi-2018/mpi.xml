@@ -188,13 +188,34 @@
 		</part>
 		<part id="api-iot">
 			<title>APIs and IoT</title>
+			<slide id="api-confusion">
+				<title>The API Confusion</title>
+				<ul>
+					<li>Traditional use: APIs are local communications mechanisms</li>
+					<ul>
+						<li>APIs let software modules (operating systems, libraries) talk to each other</li>
+						<li>APIs allow building more complex <em>systems</em></li>
+						<li>Communications using networking facilities are called <em>protocols</em></li>
+					</ul>
+					<li>Millennial use: APIs are used for network communications</li>
+					<ul>
+						<li>APIs let computer systems talk to each other</li>
+						<li>APIs allow building more complex <em>ecosystems</em></li>
+					</ul>
+					<li>2010+ use: APIs are <em>Web APIs</em> based on HTTP</li>
+					<ul>
+						<li>Multiple protocol layers above basic network connectivity protocols</li>
+						<li>Many IoT scenarios do not fit the <q>always-reachable server</q> assumption of the Web</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="IoT-WoT">
 				<title>From Connectivity to Collaboration</title>
 				<ul>
 					<li>The <em>Internet</em> itself is not all that useful</li>
 					<ul>
 						<li>Basic Internet protocols such as UDP and TCP support raw data transfer</li>
-						<li>What matters are applications such as <em>email</em>, <em>file transfer</em>, <em>the web</em>, or <em>streaming media</em></li>
+						<li>What matters are applications such as <em>email</em>, <em>file transfer</em>, <em>Web</em>, or <em>streaming media</em></li>
 					</ul>
 					<li>The <em>Internet of Things (IoT)</em> is the basic task of <em>Internet-enabling things</em></li>
 					<ul>
