@@ -188,6 +188,24 @@
 		</part>
 		<part id="api-iot">
 			<title>APIs and IoT</title>
+			<slide id="IoT-WoT">
+				<title>From Connectivity to Collaboration</title>
+				<ul>
+					<li>The <em>Internet</em> itself is not all that useful</li>
+					<ul>
+						<li>Basic Internet protocols such as UDP and TCP support raw data transfer</li>
+						<li>What matters are applications such as <em>email</em>, <em>file transfer</em>, <em>the web</em>, or <em>streaming media</em></li>
+					</ul>
+					<li>The <em>Internet of Things (IoT)</em> is the basic task of <em>Internet-enabling things</em></li>
+					<ul>
+						<li>It's an important and necessary first step for a bigger goal</li>
+					</ul>
+					<li>The <em>Web of Things (WoT)</em> lifts <em>Internet connectivity</em> to <em>application-level utility</em></li>
+					<ul>
+						<li>On the API level an IoT device is just an API-wrapped capability like anything else</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
