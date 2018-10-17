@@ -156,6 +156,21 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="why-what-how">
+				<title>Guidelines: Why? What? How? Test?</title>
+				<ul>
+					<li>Guidance needs to be motivated, clear, actionable, and testable</li>
+					<li><em><q>Why</q></em> explains why a problem is a problem</li>
+					<li><em><q>What</q></em> explains a design to address the problem</li>
+					<li><em><q>How</q></em> explains how to implement the solution</li>
+					<li><em><q>Test</q></em> provides feedback to verify compliance</li>
+					<li>Guidance is further qualified by when it is applicable</li>
+					<ul>
+						<li><em>Guidance evolution</em> has stages such as <em>experimental/production/deprecated</em></li>
+						<li><em>Guidance applicability</em> is decided by API maturity stage</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="v1-variety">
 				<title>V1: Variety</title>
 			</slide>
