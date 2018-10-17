@@ -173,6 +173,13 @@
 			</slide>
 			<slide id="v1-variety">
 				<title>V1: Variety</title>
+				<ul>
+					<li>APIs come in many different shapes (on different levels)</li>
+					<ul>
+						<li><em>API style</em> moved from RPC (SOAP) to Web APIs</li>
+						<li><em>Web API style</em> starts embracing query-style APIs (GraphQL)</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="v2-vocabulary">
 				<title>V2: Vocabulary</title>
