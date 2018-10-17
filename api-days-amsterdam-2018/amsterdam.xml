@@ -169,6 +169,7 @@
 						<li><em>Guidance evolution</em> has stages such as <em>experimental/production/deprecated</em></li>
 						<li><em>Guidance applicability</em> is decided by API maturity stage</li>
 					</ul>
+					<li><em>Governance</em> is about how the guidelines are <q>enforced</q>/<q>encouraged</q></li>
 				</ul>
 			</slide>
 			<slide id="v1-variety">
@@ -179,10 +180,27 @@
 						<li><em>API style</em> moved from RPC (SOAP) to Web APIs</li>
 						<li><em>Web API style</em> starts embracing query-style APIs (GraphQL)</li>
 					</ul>
+					<li>Allow <em>more than one way</em> to address a problem</li>
+					<ul>
+						<li>Embrace diversity as a way to explore new ways to solve a problem</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="v2-vocabulary">
 				<title>V2: Vocabulary</title>
+				<ul>
+					<li>APIs are languages that define how two parties communicate</li>
+					<li>Each API is a mix of reused technology and problem-specific definitions</li>
+					<ul>
+						<li>Reusing generic metamodels such as XML or JSON is a natural choice for most</li>
+						<li>Reusing specific models is a harder design task</li>
+					</ul>
+					<li>Maximizing reuse benefits producers and consumers</li>
+					<ul>
+						<li><em>Producers</em> don't have to re-invent the wheel for solved problems</li>
+						<li><em>Consumers</em> can understand part of the API because they know it already</li>
+					</ul>
+				</ul>
 			</slide>
 			<part id="web-concepts">
 				<title>Web Concepts</title>
