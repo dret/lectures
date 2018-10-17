@@ -257,9 +257,31 @@
 			</slide>
 			<slide id="v4-velocity">
 				<title>V4: Velocity</title>
+				<ul>
+					<li>Change frequency is a good thing and should be encouraged</li>
+					<li>Changes in consumption ideally are invisible to producers</li>
+					<ul>
+						<li><em>Onboarding</em> is invisible to producers</li>
+						<li><em>Scalability</em> should be built into each product</li>
+					</ul>
+					<li>Changes in products ideally are invisible to consumers</li>
+					<ol>
+						<li><em>Change management</em> provides a robust product evolution path</li>
+						<li>Product evolution is opaque and consumers always use their favorite version</li>
+					</ol>
+				</ul>
 			</slide>
 			<slide id="v5-vulnerability">
 				<title>V5: Vulnerability</title>
+				<ul>
+					<li>Every API is a possible attack vector into a capability</li>
+					<li>Security is easy to get wrong and hard to get right</li>
+					<li>Security often gets API programs started</li>
+					<li>Identity can become an important asset for large organizations</li>
+					<ul>
+						<li>GDPR is hard to get right without solid identity management</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="v6-visibility">
 				<title>V6: Visibility</title>
