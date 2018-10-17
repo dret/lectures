@@ -266,7 +266,7 @@
 					</ul>
 					<li>Changes in products ideally are invisible to consumers</li>
 					<ol>
-						<li><em>Change management</em> provides a robust product evolution path</li>
+						<li><link href="v7-versioning">Change management</link> provides a robust product evolution path</li>
 						<li>Product evolution is opaque and consumers always use their favorite version</li>
 					</ol>
 				</ul>
@@ -297,6 +297,19 @@
 			</slide>
 			<slide id="v7-versioning">
 				<title>V7: Versioning</title>
+				<ul>
+					<li>API success creates potential problem for API products</li>
+					<ul>
+						<li>More usage means more feedback means more input and motivation to improve the product</li>
+						<li>More usage means greater risk for potential disruption of existing consumers</li>
+					</ul>
+					<li>Managing products and their implementations</li>
+					<ul>
+						<li><em>Implementations</em> should use well-know schemes such as <a href="http://semver.org/" title='Semantic Versioning 2.0.0'>Semantic Versioning</a></li>
+						<li><em>APIs</em> should expose a subset of the implementation version information</li>
+						<li><em>API management</em> can take care of some product management issues</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="v8-volatility">
 				<title>V8: Volatility</title>
