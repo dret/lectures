@@ -313,6 +313,19 @@
 			</slide>
 			<slide id="v8-volatility">
 				<title>V8: Volatility</title>
+				<ul>
+					<li>Products in ecosystems appear, change, and disappear</li>
+					<ul>
+						<li>Change is not a problem but a feature that is essential for ecosystem growth</li>
+					</ul>
+					<li>Product dependencies tend to increase in well-functioning API ecosystems</li>
+					<li>Treating dependencies responsibly increases product resilience</li>
+					<ul>
+						<li>Not making any assumptions about APIs always being accessible</li>
+						<li>Always behaving well when APIs are inaccessible</li>
+					</ul>
+					<li>Testing always should include degraded and inaccessible API dependencies</li>
+				</ul>
 			</slide>
 			<slide id="api-design">
 				<title>Good Plumbing Matters</title>
