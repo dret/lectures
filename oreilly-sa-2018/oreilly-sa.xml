@@ -120,6 +120,14 @@
 		</part>
 		<part id="landscape-labels">
 			<title>API Landscapes and Labels</title>
+			<slide id="label-requirements">
+				<title>API Label Requirements</title>
+				<ul>
+					<li>Labels can represent <em>any set</em> of API metadata</li>
+					<li>Labels can be <em>produced</em> by various players in the API landscape</li>
+					<li>Labels can be <em>consumed</em> by various players in the API landscape</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
