@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="apiacademy-new" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="amsterdam.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="http://creativecommons.org/licenses/by/3.0/" short="CC 3.0">
+		<div class="license">
+			<p><a rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/apiacademy/apiacademy/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
+		</div>
+	</license>
+	<title><a href="https://www.apidays.co/amsterdam">API Days Amsterdam 2018</a></title>
+	<presentation id="index">
+		<title>From Hunter-Gatherer to Agriculture: Cultivating Productive API Landscapes</title>
+		<toc class="abstract">Moving from designing and managing individual APIs to the successful management of large, diverse, and evolving API landscapes can be challenging. But it is a transition that is necessary to realize the value of API-centric organizations, where each and every product provides an API. Scaling the API practice requires a strategy that balances the need for some coordination, as well as providing teams sufficient autonomy so that their API products can be made available as quickly as possible. In this presentation, we look at the general approach and strategy of how to scale the API practice, and at some patterns and anti-patterns.</toc>
+		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
+		<affiliation><a href="http://www.apiacademy.co/">API Academy</a>, <a href="http://www.ca.com/">CA Technologies</a></affiliation>
+		<date short="2018-10-17">October 17, 2018</date>
+		<copyright>2018 Erik Wilde</copyright>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="introduction">
+			<title>Introduction</title>
+			<slide id="dretwitter">
+				<title><code>@dret</code> on Twitter/GitHub</title>
+				<img src="dret.png" title="dret" href="http://twitter.com/dret" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-academy">
+				<title><a href="http://www.apiacademy.co/">API Academy</a></title>
+				<img src="academy-logo.png" href="http://www.apiacademy.co/" title="API Academy" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Global Team working on <em>API Strategy and Design</em> topics</li>
+					<ul>
+						<li><a href="http://www.apiacademy.co/team_member/matt-mclarty/">Matt McLarty</a> (Vancouver): <a href="http://twitter.com/MattMcLartyBC" class="twitter-follow-button" title="Matt McLarty on Twitter: @MattMcLartyBC"><code>@MattMcLartyBC</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li><a href="http://www.apiacademy.co/team_member/mike-amundsen/">Mike Amundsen</a> (Cincinnati): <a href="http://twitter.com/mamund" class="twitter-follow-button" title="Mike Amundsen on Twitter: @mamund"><code>@mamund</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li><a href="http://www.apiacademy.co/team_member/mehdi-medjaoui/">Mehdi Medjaoui</a> (San Francisco): <a href="http://twitter.com/medjawii" class="twitter-follow-button" title="Mehdi Medjaoui on Twitter: @medjawii"><code>@medjawii</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li><a href="http://www.apiacademy.co/team_member/ronnie-mitra/">Ronnie Mitra</a> (London): <a href="http://twitter.com/mitraman" class="twitter-follow-button" title="Ronnie Mitra on Twitter: @mitraman"><code>@mitraman</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li><a href="http://www.apiacademy.co/team_member/erik-wilde/">Erik Wilde</a> (Zürich): <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+					</ul>
+					<li>Evangelizing ideas and technologies</li>
+					<ul>
+						<li>Speaking (conferences, events)</li>
+						<li>Teaching (workshops, bootcamps)</li>
+						<li>Publishing (blogs, articles, books, <a href="https://soundcloud.com/user-426834320">podcasts</a>)</li>
+						<li>Doing (side projects on API-related topics)</li>
+						<li>Standardizing (participating in specification work)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="cam-book">
+				<title>Continuous API Management</title>
+				<img src="cam-cover.jpg" href="https://www.amazon.com/Continuous-Api-Management-Decisions-Landscape/dp/1492043559" title="Continuous API Management: Making the Right Decisions in an Evolving Landscape" style="float: right ; height : 55% ; margin : 4% ; "/>
+				<ul>
+					<li><q href="https://www.amazon.com/Continuous-Api-Management-Decisions-Landscape/dp/1492043559">Continuous API Management: Making the Right Decisions in an Evolving Landscape</q></li>
+					<li>Authored by <a href="http://www.apiacademy.co/">API Academy</a> members Mehdi Medjaoui, Erik Wilde, Ronnie Mitra, and Mike Amundsen</li>
+					<li>To be published December 2018</li>
+				</ul>
+			</slide>
+			<slide id="dret">
+				<title>About Me</title>
+				<ul>
+					<li><a href="http://dret.net/netdret/publications#wil97b">Ph.D. in Communications Systems</a> from <a href="http://www.ethz.ch/">ETH Zürich</a></li>
+					<li>Working on Web Architecture after writing <a href="http://dret.net/netdret/publications#wil98">the first Web Technology book</a></li>
+					<li>UC Berkeley (2006-2011), working on <a href="http://dret.net/netdret/publications#wil09g">Service Models for Open Government</a></li>
+					<li>EMC (2011-2014), working on transforming software products into service platforms</li>
+					<li>Siemens (2014-2015), working on using <em title="Internet of Things">IoT</em> to build <em title="Web of Things">WoT</em> (<q>APIs for Things</q>)</li>
+					<li>Joined <a href="http://www.ca.com/" title="CA Technologies">CA</a>'s <a href="http://www.apiacademy.co/">API Academy</a> in 2016 and now all about API Strategy and Design</li>
+					<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, <a href="http://dret.typepad.com/dretblog/">my blog</a>, <a href="http://www.linkedin.com/in/netdret">LinkedIn</a>, and <a href="https://www.flickr.com/photos/dret/" title="dret">flickr</a></li>
+				</ul>
+			</slide>
+		</part>
+		<part id="vision-value">
+			<title>From Vision to Value</title>
+			<slide id="vision">
+				<title>Digital Transformation Vision</title>
+				<blockquote>Our Digital Transformation Initiative will turn us into the leader of the industry by allowing us to interact with our customers more easily, and more frequently. By increasing the number of customer touchpoints and using the resulting feedback to quickly and relentlessly adapt and improve our offerings, we will be able to outperform our competition and turn into the market leader within the next three years.</blockquote>
+			</slide>
+			<slide id="digital-transformation">
+				<title>Digital Transformation: The Default Choice</title>
+				<img title="Japan" src="godzilla-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 5% ; "/>
+				<img title="Australia" src="crocodile-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
+				<img title="United States" src="bear-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
+				<img title="Poland" src="wolf-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 5% ; "/>
+				<img title="Colombia" src="jaguar-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
+				<img title="South Africa" src="shark-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
+			</slide>
+			<slide id="focus-scale">
+				<title>Focus and Scale</title>
+				<img title="Digital Transformation and API Landscapes: Focus and Scale" src="focus-scale-perspectives.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="leadership-1-2-3">
+				<title>Leadership 1-2-3</title>
+				<ul>
+					<li>Set a <em>vision</em> as the goal to improve the organization</li>
+					<li>Define a <em>strategy</em> how to turn the vision into reality</li>
+					<li>Use <em>tactics</em> how to drive the defined strategy towards completion</li>
+				</ul>
+			</slide>
+			<slide id="execution-gap">
+				<title>The Execution Gap</title>
+				<img title="Grand Canyon" src="grand-canyon.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="why-what-how">
+				<title>Strategy Execution</title>
+				<img title="Demystifying Strategy Execution: The Critical Drivers" href="https://www.bts.com/news-insights/articles/demystifying-strategy-execution" src="why-what-how.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-archaeology">
+				<title>API Archaeology</title>
+				<ul>
+					<li>Most organizations have <q>proto-APIs</q> from integration projects</li>
+					<ul>
+						<li>One-off integrations not intended or designed for reuse</li>
+						<li>Unearthing and documenting help with analysis and improvement</li>
+					</ul>
+					<li><em>API Craft</em> is about establishing API practice in the organization</li>
+					<ul>
+						<li>Cultivate <q>Product as API</q> mindset across teams</li>
+						<li>Build experience around design, implementation, and operations</li>
+					</ul>
+					<li><em>API Landscapes</em> focus on scaling the API practice</li>
+					<ul>
+						<li>Enlightenment and empowerment of teams</li>
+						<li>Re-imagine enterprise IT as managing ecosystems</li>
+						<li>Identify and remove bottlenecks to make teams more effective</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="landscape-management">
+			<title>API Landscape Management</title>
+			<slide id="mission">
+				<title>Increasing Product Team Productivity</title>
+				<ul>
+					<li>API product teams need guidance, autonomy, and support</li>
+					<ul>
+						<li><em>Guidance</em> helps understanding and navigating the current landscape</li>
+						<li><em>Autonomy</em> allows choices to be made driven by product and user needs</li>
+						<li><em>Support</em> increases productivity of teams for cross-cutting concerns</li>
+					</ul>
+					<li>Balancing <em>product value</em> and <em>product portfolio value</em></li>
+					<ul>
+						<li>Products focus on achieving <q>local maxima</q> for product value</li>
+						<li>Landscapes focus on achieving <q>global maxima</q> across all products</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="why-what-how">
+				<title>Guidelines: Why? What? How? Test?</title>
+				<ul>
+					<li>Guidance needs to be motivated, clear, actionable, and testable</li>
+					<li><em><q>Why</q></em> explains why a problem is a problem</li>
+					<li><em><q>What</q></em> explains a design to address the problem</li>
+					<li><em><q>How</q></em> explains how to implement the solution</li>
+					<li><em><q>Test</q></em> provides feedback to verify compliance</li>
+					<li>Guidance is further qualified by when it is applicable</li>
+					<ul>
+						<li><em>Guidance evolution</em> has stages such as <em>experimental/production/deprecated</em></li>
+						<li><em>Guidance applicability</em> is decided by API maturity stage</li>
+					</ul>
+					<li><em>Governance</em> is about how the guidelines are <q>enforced</q>/<q>encouraged</q></li>
+				</ul>
+			</slide>
+			<slide id="v1-variety">
+				<title>V1: Variety</title>
+				<ul>
+					<li>APIs come in many different shapes (on different levels)</li>
+					<ul>
+						<li><em>API style</em> moved from RPC (SOAP) to Web APIs</li>
+						<li><em>Web API style</em> starts embracing query-style APIs (GraphQL)</li>
+					</ul>
+					<li>Allow <em>more than one way</em> to address a problem</li>
+					<ul>
+						<li>Embrace diversity as a way to explore new ways to solve a problem</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="v2-vocabulary">
+				<title>V2: Vocabulary</title>
+				<ul>
+					<li>APIs are languages that define how two parties communicate</li>
+					<li>Each API is a mix of reused technology and problem-specific definitions</li>
+					<ul>
+						<li>Reusing generic metamodels such as XML or JSON is a natural choice for most</li>
+						<li>Reusing specific models is a harder design task</li>
+					</ul>
+					<li>Maximizing reuse benefits producers and consumers</li>
+					<ul>
+						<li><em>Producers</em> don't have to re-invent the wheel for solved problems</li>
+						<li><em>Consumers</em> can understand part of the API because they know it already</li>
+					</ul>
+				</ul>
+			</slide>
+			<part id="web-concepts">
+				<title>Web Concepts</title>
+				<slide id="web-concepts-specs">
+					<title>Web Concepts: <a href="http://webconcepts.info/specs/">Specifications</a></title>
+					<ul>
+						<li>Specifications define values for <link href="web-concepts-concepts">existing concepts</link></li>
+						<li><a href="http://webconcepts.info/specs/IETF/RFC/7234" title='RFC 7234: "Hypertext Transfer Protocol (HTTP/1.1): Caching", June 2014'>RFC 7234 (HTTP/1.1 Caching)</a> defines new values for three existing Web Concepts:</li>
+						<ul>
+							<li><a href="http://webconcepts.info/concepts/http-cache-directive/" title="List of all HTTP Cache Directives">HTTP Cache Directives</a>: <code><a href="http://webconcepts.info/concepts/http-cache-directive/max-age" title="The 'max-age' request directive indicates that the client is unwilling to accept a response whose age is greater than the specified number of seconds. Unless the max-stale request directive is also present, the client is not willing to accept a stale response. The 'max-age' response directive indicates that the response is to be considered stale after its age is greater than the specified number of seconds.">max-age</a></code>, <code><a href="http://webconcepts.info/concepts/http-cache-directive/max-stale" title="The 'max-stale' request directive indicates that the client is willing to accept a response that has exceeded its freshness lifetime. If max-stale is assigned a value, then the client is willing to accept a response that has exceeded its freshness lifetime by no more than the specified number of seconds. If no value is assigned to max-stale, then the client is willing to accept a stale response of any age.">max-stale</a></code>, <code><a href="http://webconcepts.info/concepts/http-cache-directive/min-fresh" title="The 'min-fresh' request directive indicates that the client is willing to accept a response whose freshness lifetime is no less than its current age plus the specified time in seconds. That is, the client wants a response that will still be fresh for at least the specified number of seconds.">min-fresh</a></code>, <code><a href="http://webconcepts.info/concepts/http-cache-directive/must-revalidate" title="The 'must-revalidate' response directive indicates that once it has become stale, a cache MUST NOT use the response to satisfy subsequent requests without successful validation on the origin server.">must-revalidate</a></code>, <code><a href="http://webconcepts.info/concepts/http-cache-directive/no-cache" title="The 'no-cache' request directive indicates that a cache MUST NOT use a stored response to satisfy the request without successful validation on the origin server. The 'no-cache' response directive indicates that the response MUST NOT be used to satisfy a subsequent request without successful validation on the origin server. This allows an origin server to prevent a cache from using it to satisfy a request without contacting it, even by caches that have been configured to send stale responses.">no-cache</a></code>, <code><a href="http://webconcepts.info/concepts/http-cache-directive/no-store" title="The 'no-store' directive indicates that a cache MUST NOT store any part of either this request or any response to it. This directive applies to both private and shared caches. 'MUST NOT store' in this context means that the cache MUST NOT intentionally store the information in non-volatile storage, and MUST make a best-effort attempt to remove the information from volatile storage as promptly as possible after forwarding it.">no-store</a></code>, <code><a href="http://webconcepts.info/concepts/http-cache-directive/no-transform" title="The 'no-transform' directive indicates that an intermediary (whether or not it implements a cache) MUST NOT transform the payload.">no-transform</a></code>, <code><a href="http://webconcepts.info/concepts/http-cache-directive/only-if-cached" title="The 'only-if-cached' request directive indicates that the client only wishes to obtain a stored response. If it receives this directive, a cache SHOULD either respond using a stored response that is consistent with the other constraints of the request, or respond with a 504 (Gateway Timeout) status code. If a group of caches is being operated as a unified system with good internal connectivity, a member cache MAY forward such a request within that group of caches.">only-if-cached</a></code>, <code><a href="http://webconcepts.info/concepts/http-cache-directive/private" title="The 'private' response directive indicates that the response message is intended for a single user and MUST NOT be stored by a shared cache. A private cache MAY store the response and reuse it for later requests, even if the response would normally be non-cacheable.">private</a></code>, <code><a href="http://webconcepts.info/concepts/http-cache-directive/proxy-revalidate" title="The 'proxy-revalidate' response directive has the same meaning as the must-revalidate response directive, except that it does not apply to private caches.">proxy-revalidate</a></code>, <code><a href="http://webconcepts.info/concepts/http-cache-directive/public" title="The 'public' response directive indicates that any cache MAY store the response, even if the response would normally be non-cacheable or cacheable only within a private cache.">public</a></code>, <code><a href="http://webconcepts.info/concepts/http-cache-directive/s-maxage" title="The 's-maxage' response directive indicates that, in shared caches, the maximum age specified by this directive overrides the maximum age specified by either the max-age directive or the Expires header field. The s-maxage directive also implies the semantics of the proxy-revalidate response directive.">s-maxage</a></code></li>
+							<li><a href="http://webconcepts.info/concepts/http-header/" title="List of all HTTP Header Fields">HTTP Header Fields</a>: <code><a href="http://webconcepts.info/concepts/http-header/Age" title="The 'Age' header field conveys the sender's estimate of the amount of time since the response was generated or successfully validated at the origin server.">Age</a></code>, <code><a href="http://webconcepts.info/concepts/http-header/Cache-Control" title="The 'Cache-Control' header field is used to specify directives for caches along the request/response chain. Such cache directives are unidirectional in that the presence of a directive in a request does not imply that the same directive is to be given in the response.">Cache-Control</a></code>, <code><a href="http://webconcepts.info/concepts/http-header/Expires" title="The 'Expires' header field gives the date/time after which the response is considered stale. The presence of an Expires field does not imply that the original resource will change or cease to exist at, before, or after that time.">Expires</a></code>, <code><a href="http://webconcepts.info/concepts/http-header/Pragma" title="The 'Pragma' header field allows backwards compatibility with HTTP/1.0 caches, so that clients can specify a 'no-cache' request that they will understand (as Cache-Control was not defined until HTTP/1.1). When the Cache-Control header field is also present and understood in a request, Pragma is ignored.">Pragma</a></code>, <code><a href="http://webconcepts.info/concepts/http-header/Warning" title="The 'Warning' header field is used to carry additional information about the status or transformation of a message that might not be reflected in the status code. This information is typically used to warn about possible incorrectness introduced by caching operations or transformations applied to the payload of the message.">Warning</a></code></li>
+							<li><a href="http://webconcepts.info/concepts/http-warn-code/" title="List of all HTTP Warn Codes">HTTP Warn Codes</a>: <code><a href="http://webconcepts.info/concepts/http-warn-code/110" title="A cache SHOULD generate this whenever the sent response is stale.">110</a></code>, <code><a href="http://webconcepts.info/concepts/http-warn-code/111" title="A cache SHOULD generate this when sending a stale response because an attempt to validate the response failed, due to an inability to reach the server.">111</a></code>, <code><a href="http://webconcepts.info/concepts/http-warn-code/112" title="A cache SHOULD generate this if it is intentionally disconnected from the rest of the network for a period of time.">112</a></code>, <code><a href="http://webconcepts.info/concepts/http-warn-code/113" title="A cache SHOULD generate this if it heuristically chose a freshness lifetime greater than 24 hours and the response's age is greater than 24 hours.">113</a></code>, <code><a href="http://webconcepts.info/concepts/http-warn-code/199" title="The warning text can include arbitrary information to be presented to a human user or logged. A system receiving this warning MUST NOT take any automated action, besides presenting the warning to the user.">199</a></code>, <code><a href="http://webconcepts.info/concepts/http-warn-code/214" title="This Warning code MUST be added by a proxy if it applies any transformation to the representation, such as changing the content-coding, media-type, or modifying the representation data, unless this Warning code already appears in the response.">214</a></code>, <code><a href="http://webconcepts.info/concepts/http-warn-code/299" title="The warning text can include arbitrary information to be presented to a human user or logged. A system receiving this warning MUST NOT take any automated action.">299</a></code></li>
+						</ul>
+						<li>Specifications add <em>one or more values</em> for <em>one or more concepts</em></li>
+						<li><a href="http://webconcepts.info/specs/IETF/">Specification series</a> define naming patterns for automated processing</li>
+					</ul>
+				</slide>
+				<slide id="web-concepts-concepts">
+					<title>Web Concepts: <a href="http://webconcepts.info/concepts/">Concepts and Values</a></title>
+					<ul>
+						<li>Concepts establish a namespace for sharing values with shared meanings</li>
+						<li><a href="http://webconcepts.info/concepts/http-header/" title="List of all HTTP Header Fields">HTTP Header Fields</a> are one concept with currently 194 distinct values</li>
+						<ul>
+							<li>The currently listed values all are defined in W3C/IETF specifications</li>
+							<li>If required the list could be extended with de-facto standards as well</li>
+						</ul>
+						<li><a href="http://webconcepts.info/concepts/link-relation/" title="List of all Link Relations">Link Relations</a> are an extensible and fuzzy concept</li>
+						<ul>
+							<li>103 link relations have been established as registered values</li>
+							<li>Hypermedia applications often will use <q>private</q> URI-identified relations</li>
+							<li>It is possible that only registered link relations are good candidates for sharing</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="web-concepts-overview">
+					<title>Web Concepts Overview</title>
+					<img href="http://webconcepts.info/" src="web-concepts.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+			</part>
+			<slide id="v3-volume">
+				<title>V3: Volume</title>
+				<ul>
+					<li>API volume is a good thing and should be encouraged</li>
+					<ul>
+						<li>More components in an ecosystem mean more choice and better selection</li>
+						<li>Selection should be <em>within</em> the ecosystem, not <em>getting into</em> the ecosystem</li>
+					</ul>
+					<li>Guidelines and support needs to grow and evolve along ecosystem growth</li>
+					<ul>
+						<li>Identifying bottlenecks <em>for the product teams</em> helps to make teams more productive</li>
+						<li>Identifying bottlenecks <em>for the ecosystem</em> helps to eliminate participation barriers</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="v4-velocity">
+				<title>V4: Velocity</title>
+				<ul>
+					<li>Change frequency is a good thing and should be encouraged</li>
+					<li>Changes in consumption ideally are invisible to producers</li>
+					<ul>
+						<li><em>Onboarding</em> is invisible to producers</li>
+						<li><em>Scalability</em> should be built into each product</li>
+					</ul>
+					<li>Changes in products ideally are invisible to consumers</li>
+					<ol>
+						<li><link href="v7-versioning">Change management</link> provides a robust product evolution path</li>
+						<li>Product evolution is opaque and consumers always use their favorite version</li>
+					</ol>
+				</ul>
+			</slide>
+			<slide id="v5-vulnerability">
+				<title>V5: Vulnerability</title>
+				<ul>
+					<li>Every API is a possible attack vector into a capability</li>
+					<li>Security is easy to get wrong and hard to get right</li>
+					<li>Security often gets API programs started</li>
+					<li>Identity can become an important asset for large organizations</li>
+					<ul>
+						<li>GDPR is hard to get right without solid identity management</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="v6-visibility">
+				<title>V6: Visibility</title>
+				<ul>
+					<li>Product catalogs are essential for product success</li>
+					<li><em>Visibility refinement</em> depends on the expected target audience</li>
+					<ul>
+						<li><em>Private APIs</em> may be able to get away with just making them findable</li>
+						<li><em>Partner APIs</em> already need some marketing so that partners will notice</li>
+						<li><em>Public APIs</em> may need a comprehensive plan for a competitive market presence</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="v7-versioning">
+				<title>V7: Versioning</title>
+				<ul>
+					<li>API success creates potential problem for API products</li>
+					<ul>
+						<li>More usage means more feedback means more input and motivation to improve the product</li>
+						<li>More usage means greater risk for potential disruption of existing consumers</li>
+					</ul>
+					<li>Managing products and their implementations</li>
+					<ul>
+						<li><em>Implementations</em> should use well-know schemes such as <a href="http://semver.org/" title='Semantic Versioning 2.0.0'>Semantic Versioning</a></li>
+						<li><em>APIs</em> should expose a subset of the implementation version information</li>
+						<li><em>API management</em> can take care of some product management issues</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="v8-volatility">
+				<title>V8: Volatility</title>
+				<ul>
+					<li>Products in ecosystems appear, change, and disappear</li>
+					<ul>
+						<li>Change is not a problem but a feature that is essential for ecosystem growth</li>
+					</ul>
+					<li>Product dependencies tend to increase in well-functioning API ecosystems</li>
+					<li>Treating dependencies responsibly increases product resilience</li>
+					<ul>
+						<li>Not making any assumptions about APIs always being accessible</li>
+						<li>Always behaving well when APIs are inaccessible</li>
+					</ul>
+					<li>Testing always should include degraded and inaccessible API dependencies</li>
+				</ul>
+			</slide>
+			<slide id="api-design">
+				<title>Good Plumbing Matters</title>
+				<img title="Hammer and Screw" href="https://www.flickr.com/photos/justinbaeder/5317820857" src="maslow-hammer-nail.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="continuous-architecting">
+			<title>Continuous Architecting</title>
+			<slide id="ford-model-t">
+				<title>Interface Design</title>
+				<img src="ford-model-t.jpg" title="Model T Speedster" href="https://commons.wikimedia.org/wiki/File:1913_Ford_Model_T_Speedster_dashboard.JPG" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="audi-rs6-plus">
+				<title>Interface Continuity and Evolution</title>
+				<img src="audi-rs6-plus-interior.jpg" title="Audi RS6 Plus Interior" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="product-evolution">
+				<title>API Products Evolve</title>
+				<ul>
+					<li>APIs are <q>consumed</q> as a subscription-based activity</li>
+					<ul>
+						<li>APIs may change even if the consumers did not change anything</li>
+						<li>Not breaking consumers is essential for scalable API management</li>
+					</ul>
+					<li>API consumers can consume API products in different ways</li>
+					<ul>
+						<li><em>Test servers</em> can help consumers to validate their implementations</li>
+						<li><em>Production servers</em> should focus on maximizing operational stability</li>
+						<li><em>Version freezes</em> allow consumers to never worry about possible updates</li>
+					</ul>
+					<li><em>Change management</em> must be controlled and communicated</li>
+				</ul>
+			</slide>
+			<slide id="api-api">
+				<title>API your APIs</title>
+				<ul>
+					<li>Expose design-time and runtime API information in the API</li>
+					<ul>
+						<li><em>Design-time</em> allows automation of API landscape overview</li>
+						<li><em>Runtime</em> allows automation of API landscape status</li>
+					</ul>
+					<li>Follow <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">robust extensibility principles</a> for these <q>API APIs</q></li>
+					<ul>
+						<li><em>Meaningful Core:</em> Start with a simple but useful scenario</li>
+						<li><em>Extension Points:</em> Think about how scenarios might evolve</li>
+						<li><em>Processing Model:</em> Be clear about how extensions are handled</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-patterns">
+				<title>Emerging API Patterns</title>
+				<ul>
+					<li>Self-description for APIs is increasing</li>
+					<li><a href="http://webconcepts.info/specs/IETF/RFC/7807">Problem details</a> as a way how APIs expose error information</li>
+					<ul>
+						<li>Enables generic error handling but also allows additional information</li>
+					</ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/nottingham-json-home">Home documents</a> as a way how APIs provide starting pages</li>
+					<ul>
+						<li>Enables harvesting of API start points but also allows additional information</li>
+					</ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/inadarei-api-health-check">Healthcheck reports</a> as a way how APIs expose status information</li>
+					<ul>
+						<li>Enables landscape-level status reports but also allows additional information</li>
+					</ul>
+					<li><a href="http://dret.net/lectures/apistrat-2018">API Labels</a> as a way for representing <q>API product labels</q></li>
+					<ul>
+						<li>Share <em>API labels</em> as a way to describe cross-cutting aspects of APIs</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="ecosystems">
+				<title>Ecosystems win over Systems</title>
+				<ul>
+					<li>Ecosystems have built-in mechanisms for determining fitness</li>
+					<ul>
+						<li>Systems are easy to build but hard to improve over time</li>
+						<li>Ecosystems are hard to build but easy to improve over time</li>
+					</ul>
+					<li>APIs are the plumbing that make product ecosystems work</li>
+					<ul>
+						<li><em>Good plumbing</em> allows the ecosystem to change and evolve organically</li>
+						<li><em>Bad plumbing</em> means that not all potential product value is realized</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/api-days-amsterdam-2018"><code>dret.net/lectures/api-days-amsterdam-2018</code></a></li>
+					<ul>
+						<li>Slide sources: <a href="http://github.com/dret/lectures/tree/master/api-days-amsterdam-2018"><code>dret/lectures</code></a> on <a href="http://github.com/">GitHub</a></li>
+					</ul>
+					<li>More information about myself:</li>
+					<ul>
+						<li>Web page: <a href="http://dret.net/netdret/"><code>dret.net/netdret/</code></a></li>
+						<li>LinkedIn: <a href="http://www.linkedin.com/in/netdret"><code>linkedin.com/in/netdret</code></a></li>
+					</ul>
+					<li>Twitter handles:</li>
+					<ul>
+						<li>Erik Wilde: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+						<li>API Academy: <a href="http://twitter.com/APIacademy" class="twitter-follow-button" data-size="large" title="API Academy on Twitter: @APIacademy"><code>@APIacademy</code></a></li>
+						<li>Standards Daily: <a href="http://twitter.com/StandardsDaily" class="twitter-follow-button" data-size="large" title="Standards Daily on Twitter: @StandardsDaily"><code>@StandardsDaily</code></a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
