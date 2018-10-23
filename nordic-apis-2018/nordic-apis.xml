@@ -311,23 +311,6 @@
 				<title>Interface Continuity and Evolution</title>
 				<img src="audi-rs6-plus-interior.jpg" title="Audi RS6 Plus Interior" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="product-evolution">
-				<title>API Products Evolve</title>
-				<ul>
-					<li>APIs are <q>consumed</q> as a subscription-based activity</li>
-					<ul>
-						<li>APIs may change even if the consumers did not change anything</li>
-						<li>Not breaking consumers is essential for scalable API management</li>
-					</ul>
-					<li>API consumers can consume API products in different ways</li>
-					<ul>
-						<li><em>Test servers</em> can help consumers to validate their implementations</li>
-						<li><em>Production servers</em> should focus on maximizing operational stability</li>
-						<li><em>Version freezes</em> allow consumers to never worry about possible updates</li>
-					</ul>
-					<li><em>Change management</em> must be controlled and communicated</li>
-				</ul>
-			</slide>
 			<slide id="api-api">
 				<title>API your APIs</title>
 				<ul>
