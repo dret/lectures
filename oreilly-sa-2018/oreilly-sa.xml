@@ -170,6 +170,23 @@
 					<title>Embedded API Labels</title>
 				</slide>
 			</part>
+			<part id="strawman">
+				<title>API Label Strawman</title>
+				<slide id="format">
+					<title>API Label Format</title>
+				</slide>
+				<slide id="types">
+					<title>API Label Types</title>
+					<ul>
+						<li>Requirements for API label types</li>
+						<ul>
+							<li>Well-known and continuously evolving set of existing label types</li>
+							<li>Easy discovery of current set of well-known label types</li>
+							<li>Robust coexistence of well-known and proprietary label types</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
