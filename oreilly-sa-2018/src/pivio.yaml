@@ -1,0 +1,16 @@
+id: next-generation-print-2342-2413-9189-1990
+name: Next Generation Print Service
+short_name: NGPS
+type: service
+owner: Team Goldfinger
+description: Prints all kinds of things. Now with 3D printing support.
+vcsroot: git://git.vcs.local/UBP
+contact: Auric Goldfinger
+lifecycle: production
+tags:
+ - Old
+ - Demo
+links:
+  homepage: http://wiki.local/ubp
+  buildchain: http://ci.local/ubp
+  api_docs: http://docs.local/ubp-api

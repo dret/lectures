@@ -149,6 +149,15 @@
 				</slide>
 				<slide id="pivio">
 					<title>Pivio</title>
+					<ul>
+						<li><a href="http://pivio.io/">Pivio</a> is a tool and a <a href="http://pivio.io/docs/#section-dataformat">data format</a></li>
+						<ul>
+							<li>A small number of mandatory fields (<code>id</code>/<code>name</code>/<code>short_name</code>/<code>type</code>/<code>owner</code>/<code>description</code>)</li>
+							<li>A small number of optional fields</li>
+							<li>Extensions can be added via <a href="http://pivio.io/docs/#_custom_extensions">custom extensions</a></li>
+						</ul>
+					</ul>
+					<listing src="pivio.yaml"/>
 				</slide>
 			</part>
 			<part id="first-class">
