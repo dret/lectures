@@ -131,12 +131,18 @@
 		</part>
 		<part id="using">
 			<title>Using API Labels</title>
-			<slide id="standalone">
-				<title>Standalone API Labels</title>
-			</slide>
-			<slide id="embedded">
-				<title>Embedded API Labels</title>
-			</slide>
+			<part id="related">
+				<title>Existing Labeling Schemes</title>
+			</part>
+			<part id="first-class">
+				<title>Labels as First-Class Citizens</title>
+				<slide id="standalone">
+					<title>Standalone API Labels</title>
+				</slide>
+				<slide id="embedded">
+					<title>Embedded API Labels</title>
+				</slide>
+			</part>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
