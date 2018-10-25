@@ -136,7 +136,7 @@
 				<slide id="openapi">
 					<title>OpenAPI</title>
 					<ul>
-						<li><a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#info-object">OpenAPI Info Object</a> represents API metadata</li>
+						<li><a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#info-object">OpenAPI Info Object</a> represents API metadata as part of an API description</li>
 						<ul>
 							<li>Small set of predefined fields (<code>title</code> and <code>version</code> are required)</li>
 							<li>Extensions can be added via <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#specificationExtensions">OpenAPI Specification Extensions</a></li>
@@ -146,6 +146,7 @@
 				</slide>
 				<slide id="apis-json">
 					<title>APIs.json</title>
+					<listing src="apis.json" line="1-18"/>
 				</slide>
 				<slide id="pivio">
 					<title>Pivio</title>
