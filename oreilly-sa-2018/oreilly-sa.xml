@@ -135,6 +135,14 @@
 				<title>Existing Labeling Schemes</title>
 				<slide id="openapi">
 					<title>OpenAPI</title>
+					<ul>
+						<li><a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#info-object">OpenAPI Info Object</a> represents API metadata</li>
+						<ul>
+							<li>Small set of predefined fields (<code>title</code> and <code>version</code> are required)</li>
+							<li>Extensions can be added via <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#specificationExtensions">OpenAPI Specification Extensions</a></li>
+						</ul>
+					</ul>
+					<listing src="Open-API-info-object.yaml"/>
 				</slide>
 				<slide id="apis-json">
 					<title>APIs.json</title>
