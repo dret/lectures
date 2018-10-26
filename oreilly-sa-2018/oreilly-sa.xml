@@ -98,6 +98,28 @@
 				<img title="Colombia" src="jaguar-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
 				<img title="South Africa" src="shark-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
 			</slide>
+			<slide id="transformartion-1-2-3">
+				<title>Transformation 1-2-3</title>
+				<ol>
+					<li><em>Vision (Why)</em> explains the ultimate goal</li>
+					<ul>
+						<li>Be more <em>active</em> when it comes to exploring new opportunities</li>
+						<li>Be more <em>reactive</em> when it comes to adapting to new challenges</li>
+					</ul>
+					<li><em>Strategy (What)</em> maps out the resource allocation</li>
+					<ul>
+						<li><em>Business strategy</em> focuses on success in faster-changing environments</li>
+						<li><em>Organization strategy</em> focuses on making the organization being more change-ready</li>
+						<li><em>Technical strategy</em> focuses on how to enable and support constant transformation</li>
+					</ul>
+					<li><em>Execution (How)</em> details what to do along the way</li>
+					<ul>
+						<li><em>Loose coupling</em> for minimizing IT-inflicted dependencies → <em>Microservices</em></li>
+						<li><em>Agility</em> for embracing feedback as necessary development input → <em>DevOps</em></li>
+						<li><em>Landscapes</em> as a way to move from integration to interaction → <em>APIs</em></li>
+					</ul>
+				</ol>
+			</slide>
 		</part>
 		<part id="continuous-architecting">
 			<title>Continuous Architecting</title>
