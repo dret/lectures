@@ -222,6 +222,24 @@
 			</slide>
 			<slide id="data-driven-api-management">
 				<title>Data Driven API Management</title>
+				<ul>
+					<li><em>Diversity</em> and <em>Data-Driven</em> can be challenging to balance</li>
+					<ul>
+						<li><em>Diverse APIs</em> can have different properties and expose them differently</li>
+						<li><em>Data-Driven</em> approaches need some way to manage diversity</li>
+					</ul>
+					<li><em>API Labels</em> provide a shared language for representing API data</li>
+					<ul>
+						<li><em>API Labels</em> are different from API description formats</li>
+						<li>Exposing label information can be integrated into CI/CD and automated</li>
+					</ul>
+					<li><em>API Labels</em> can be produced and harvested in a variety of ways</li>
+					<ul>
+						<li><em>Self-declaration</em> allows API product teams to publish labels</li>
+						<li><em>Tool-based labels</em> are created by tools at the product or landscape level</li>
+						<li><em>Third-party labels</em> can use information from external providers</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="related">
