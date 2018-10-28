@@ -200,6 +200,20 @@
 			</slide>
 			<slide id="observability">
 				<title>Observability</title>
+				<ul>
+					<li><em>Continuous Architecting</em> is based on four main principles</li>
+					<ol>
+						<li><em>Design Products</em> with feedback and changeability in mind</li>
+						<li><em>Evolve Products</em> based on feedback and with minimal breakage</li>
+						<li><em>Landscape Design</em> supports product continuity and landscape evolvability</li>
+						<li><em>Landscape Evolution</em> is based on product and consumer feedback</li>
+					</ol>
+					<li><em>Observability</em> is a key principle complementing APIs and Microservices</li>
+					<ul>
+						<li><em>Implementation details</em> are hidden and APIs are the only interface</li>
+						<li><em>API your APIs:</em> Anything that is interesting should become an API</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="data-driven-api-management">
 				<title>Data Driven API Management</title>
