@@ -310,9 +310,16 @@
 			<title>Making API Labels Work</title>
 			<slide id="first-class">
 				<title>Labels as First-Class Citizens</title>
-				<ul id="standalone">
+				<ul>
 					<li>Standalone API Labels</li>
+					<ul>
+						<li>Ability to represent and exchange labels as API-managed resources</li>
+						<li>API labels become part of the <em>standard vocabulary of API design</em></li>
+					</ul>
 					<li>Embedded API Labels</li>
+					<ul>
+						<li></li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="types">
