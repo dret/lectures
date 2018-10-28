@@ -266,38 +266,38 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="related">
+			<title>Existing Labeling Schemes</title>
+			<slide id="openapi">
+				<title>OpenAPI</title>
+				<ul>
+					<li><a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#info-object">OpenAPI Info Object</a> represents API metadata as part of an API description</li>
+					<ul>
+						<li>Small set of predefined fields (<code>title</code> and <code>version</code> are required)</li>
+						<li>Extensions can be added via <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#specificationExtensions">OpenAPI Specification Extensions</a></li>
+					</ul>
+				</ul>
+				<listing src="Open-API-info-object.yaml"/>
+			</slide>
+			<slide id="apis-json">
+				<title>APIs.json</title>
+				<listing src="apis.json" line="1-18"/>
+			</slide>
+			<slide id="pivio">
+				<title>Pivio</title>
+				<ul>
+					<li><a href="http://pivio.io/">Pivio</a> is a tool and a <a href="http://pivio.io/docs/#section-dataformat">data format</a></li>
+					<ul>
+						<li>A small number of mandatory fields (<code>id</code>/<code>name</code>/<code>short_name</code>/<code>type</code>/<code>owner</code>/<code>description</code>)</li>
+						<li>A small number of optional fields</li>
+						<li>Extensions can be added via <a href="http://pivio.io/docs/#_custom_extensions">custom extensions</a></li>
+					</ul>
+				</ul>
+				<listing src="pivio.yaml"/>
+			</slide>
+		</part>
 		<part id="using">
 			<title>Using API Labels</title>
-			<part id="related">
-				<title>Existing Labeling Schemes</title>
-				<slide id="openapi">
-					<title>OpenAPI</title>
-					<ul>
-						<li><a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#info-object">OpenAPI Info Object</a> represents API metadata as part of an API description</li>
-						<ul>
-							<li>Small set of predefined fields (<code>title</code> and <code>version</code> are required)</li>
-							<li>Extensions can be added via <a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#specificationExtensions">OpenAPI Specification Extensions</a></li>
-						</ul>
-					</ul>
-					<listing src="Open-API-info-object.yaml"/>
-				</slide>
-				<slide id="apis-json">
-					<title>APIs.json</title>
-					<listing src="apis.json" line="1-18"/>
-				</slide>
-				<slide id="pivio">
-					<title>Pivio</title>
-					<ul>
-						<li><a href="http://pivio.io/">Pivio</a> is a tool and a <a href="http://pivio.io/docs/#section-dataformat">data format</a></li>
-						<ul>
-							<li>A small number of mandatory fields (<code>id</code>/<code>name</code>/<code>short_name</code>/<code>type</code>/<code>owner</code>/<code>description</code>)</li>
-							<li>A small number of optional fields</li>
-							<li>Extensions can be added via <a href="http://pivio.io/docs/#_custom_extensions">custom extensions</a></li>
-						</ul>
-					</ul>
-					<listing src="pivio.yaml"/>
-				</slide>
-			</part>
 			<part id="first-class">
 				<title>Labels as First-Class Citizens</title>
 				<slide id="standalone">
