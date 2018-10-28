@@ -224,37 +224,6 @@
 				<title>Data Driven API Management</title>
 			</slide>
 		</part>
-		<part id="real-life-labels">
-			<title>Labels in Real Life</title>
-			<slide id="food-labels">
-				<title>Food Labels</title>
-				<img title="Food Labels" href="https://www.google.ch/search?q=food+labels&amp;tbm=isch" src="food-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="safety-labels">
-				<title>Safety Labels</title>
-				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="label-complexity">
-				<title>Label Design and Complexity</title>
-				<img src="vacuum-label.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="landscape-management">
-				<title><span title="Obsessive Compulsive Disorder">OCD</span>? Landscape Management!</title>
-				<img src="vacuum-landscape.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="labels-work">
-				<title>Why Do Labels Work?</title>
-				<blockquote>
-					<p>Goal: Information about all/many products in large and diverse landscapes.</p>
-					<p>Non-goal: Every possible detail about every single product.</p>
-				</blockquote>
-				<ul>
-					<li>Simple/simplified description of <em>important product aspects</em></li>
-					<li>Supported across <em>large and diverse sets of products</em> (possibly across categories)</li>
-					<li>Defined/assigned/verified/certified by <em>various players</em> (owners/managers/authority/automated)</li>
-				</ul>
-			</slide>
-		</part>
 		<part id="landscape-labels">
 			<title>API Landscapes and Labels</title>
 			<slide id="label-requirements">
@@ -294,6 +263,37 @@
 					</ul>
 				</ul>
 				<listing src="pivio.yaml"/>
+			</slide>
+		</part>
+		<part id="real-life-labels">
+			<title>Labels in Real Life</title>
+			<slide id="food-labels">
+				<title>Food Labels</title>
+				<img title="Food Labels" href="https://www.google.ch/search?q=food+labels&amp;tbm=isch" src="food-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="safety-labels">
+				<title>Safety Labels</title>
+				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="label-complexity">
+				<title>Label Design and Complexity</title>
+				<img src="vacuum-label.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="landscape-management">
+				<title><span title="Obsessive Compulsive Disorder">OCD</span>? Landscape Management!</title>
+				<img src="vacuum-landscape.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="labels-work">
+				<title>Why Do Labels Work?</title>
+				<blockquote>
+					<p>Goal: Information about all/many products in large and diverse landscapes.</p>
+					<p>Non-goal: Every possible detail about every single product.</p>
+				</blockquote>
+				<ul>
+					<li>Simple/simplified description of <em>important product aspects</em></li>
+					<li>Supported across <em>large and diverse sets of products</em> (possibly across categories)</li>
+					<li>Defined/assigned/verified/certified by <em>various players</em> (owners/managers/authority/automated)</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="using">
