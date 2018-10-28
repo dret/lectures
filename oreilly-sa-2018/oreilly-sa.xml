@@ -333,6 +333,26 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="label-guidelines">
+				<title>Guidelines for API Labels</title>
+				<ul>
+					<li><em>Findable</em> labels by exposing them in the API itself</li>
+					<ul>
+						<li><code>labels</code> link from API home document for discovery</li>
+						<li>Additional discovery for tooling-based and third-party labels</li>
+					</ul>
+					<li><em>Readable</em> labels by using a standardized label format</li>
+					<ul>
+						<li>Reusable across various APIs and API styles</li>
+					</ul>
+					<li><em>Understandable</em> labels by using labels as required/recommended by the guidelines</li>
+					<ul>
+						<li>Label types are either well-known or managed in a shared registry</li>
+						<li>Label requirements depend on API style and technology</li>
+						<li>Label testing can be integrated into deployment pipelines</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
