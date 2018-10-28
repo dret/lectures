@@ -213,6 +213,11 @@
 						<li><em>Implementation details</em> are hidden and APIs are the only interface</li>
 						<li><em>API your APIs:</em> Anything that is interesting should become an API</li>
 					</ul>
+					<li><em>Observability</em> is based on and complements <em>Continuous Architecting</em></li>
+					<ul>
+						<li>When new observability needs arise they can be added to the landscape and/or products</li>
+						<li>Observability makes sure that the landscape can be observed and improved</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="data-driven-api-management">
