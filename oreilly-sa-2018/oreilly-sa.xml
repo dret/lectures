@@ -257,6 +257,9 @@
 			</slide>
 			<slide id="apis-json">
 				<title>APIs.json</title>
+				<ul>
+					<li>...</li>
+				</ul>
 				<listing src="apis.json" line="1-18"/>
 			</slide>
 			<slide id="pivio">
@@ -304,33 +307,25 @@
 			</slide>
 		</part>
 		<part id="using">
-			<title>Using API Labels</title>
-			<part id="first-class">
+			<title>Making API Labels Work</title>
+			<slide id="first-class">
 				<title>Labels as First-Class Citizens</title>
-				<slide id="standalone">
-					<title>Standalone API Labels</title>
-				</slide>
-				<slide id="embedded">
-					<title>Embedded API Labels</title>
-				</slide>
-			</part>
-			<part id="strawman">
-				<title>API Label Strawman</title>
-				<slide id="format">
-					<title>API Label Format</title>
-				</slide>
-				<slide id="types">
-					<title>API Label Types</title>
+				<ul id="standalone">
+					<li>Standalone API Labels</li>
+					<li>Embedded API Labels</li>
+				</ul>
+			</slide>
+			<slide id="types">
+				<title>API Label Types</title>
+				<ul>
+					<li>Requirements for API label types</li>
 					<ul>
-						<li>Requirements for API label types</li>
-						<ul>
-							<li>Well-known and continuously evolving set of existing label types</li>
-							<li>Easy discovery of current set of well-known label types</li>
-							<li>Robust coexistence of well-known and proprietary label types</li>
-						</ul>
+						<li>Well-known and continuously evolving set of existing label types</li>
+						<li>Easy discovery of current set of well-known label types</li>
+						<li>Robust coexistence of well-known and proprietary label types</li>
 					</ul>
-				</slide>
-			</part>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
