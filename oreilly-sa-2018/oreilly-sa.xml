@@ -97,8 +97,18 @@
 				<title>Label Properties and Problems</title>
 				<img title="Food Quality Labels in Switzerland" src="swiss-bio-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="label-scenarios">
-				<title>Label Scenarios</title>
+			<slide id="label-language">
+				<title>Labels are Languages</title>
+				<img src="water-food-label.jpg" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+				<ul>
+					<li>Diverse and dynamic set of products</li>
+					<li>Decentralized production and consumption</li>
+					<li>Market regulation for consumer safety and information</li>
+					<li>Never forget about <a href="https://en.wikipedia.org/wiki/Goodhart%27s_law">Goodhart's Law</a></li>
+					<ul>
+						<li><q>When a measure becomes a target, it ceases to be a good measure.</q></li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="api-landscapes">
