@@ -306,7 +306,7 @@
 		<part id="using">
 			<title>Making API Labels Work</title>
 			<slide id="first-class">
-				<title>Labels as First-Class Citizens</title>
+				<title>Labels as First-Class Concepts</title>
 				<ul>
 					<li>Standalone API Labels</li>
 					<ul>
@@ -362,7 +362,7 @@
 					</ul>
 					<li>Decoupling labels from API formats help with label applicability</li>
 					<ul>
-						<li>Labels as <em>first-class concepts</em> makes them independent from API technology</li>
+						<li>Labels as <link href="first-class">first-class concepts</link> makes them independent from API technology</li>
 					</ul>
 					<li>Use your own label format and/or join <a href="https://github.com/API-Labels"><code>github.com/API-Labels</code></a></li>
 					<ul>
