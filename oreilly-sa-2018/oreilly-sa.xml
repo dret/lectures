@@ -353,6 +353,23 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="takeaways">
+				<title>API Label Takeaways</title>
+				<ul>
+					<li>API Landscapes can benefit from API Labels</li>
+					<ul>
+						<li>Improve observability and insights and evolve labeling over time</li>
+					</ul>
+					<li>Decoupling labels from API formats help with label applicability</li>
+					<ul>
+						<li>Labels as <em>first-class concepts</em> makes them independent from API technology</li>
+					</ul>
+					<li>Use your own label format and/or join <a href="https://github.com/API-Labels"><code>github.com/API-Labels</code></a></li>
+					<ul>
+						<li>Help the API community by sharing your scenarios and requirements</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
