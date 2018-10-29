@@ -262,7 +262,11 @@
 			<slide id="apis-json">
 				<title>APIs.json</title>
 				<ul>
-					<li>...</li>
+					<li><a href="http://apisjson.org/">APIs.json</a> focuses on a high-level API landscape view</li>
+					<ul>
+						<li>Small set of required fields (for APIs and the whole organization)</li>
+						<li>Extensions probably allowed except for reserved words</li>
+					</ul>
 				</ul>
 				<listing src="apis.json" line="1-18"/>
 			</slide>
