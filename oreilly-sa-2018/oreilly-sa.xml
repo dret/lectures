@@ -145,6 +145,30 @@
 				<img title="Colombia" src="jaguar-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
 				<img title="Poland" src="wolf-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
 			</slide>
+			<slide id="api-internal-external">
+				<title>Internal and External API Usage</title>
+				<img title="Internal and External API Usage" src="api-internal-external.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-scenarios">
+				<title>API Usage Scenarios</title>
+				<ol>
+					<li>Private APIs for <em>internal usage</em></li>
+					<ul>
+						<li><em>Trust</em> is a smaller issue (no intentionally malicious usage)</li>
+						<li><em>Risk</em> needs to be managed for operational stability</li>
+					</ul>
+					<li>Partner/Public APIs <em>provided to external consumers</em></li>
+					<ul>
+						<li><em>Trust</em> can be used as differentiating factor</li>
+						<li><em>Risk</em> management means keeping SLAs and other claims</li>
+					</ul>
+					<li>Partner/Public APIs <em>consumed from external providers</em></li>
+					<ul>
+						<li><em>Trust</em> depends on the relationship with the provider</li>
+						<li><em>Risk</em> should be managed as external dependency</li>
+					</ul>
+				</ol>
+			</slide>
 			<slide id="transformation-1-2-3">
 				<title>Transformation 1-2-3</title>
 				<ol>
@@ -170,30 +194,6 @@
 			<slide id="api-scale-matters">
 				<title>API Scale Matters</title>
 				<img title="Digital Transformation and API Landscapes: Focus and Scale" src="focus-scale-perspectives.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="api-internal-external">
-				<title>Internal and External API Usage</title>
-				<img title="Internal and External API Usage" src="api-internal-external.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="api-scenarios">
-				<title>API Usage Scenarios</title>
-				<ol>
-					<li>Private APIs for <em>internal usage</em></li>
-					<ul>
-						<li><em>Trust</em> is a smaller issue (no intentionally malicious usage)</li>
-						<li><em>Risk</em> needs to be managed for operational stability</li>
-					</ul>
-					<li>Partner/Public APIs <em>provided to external consumers</em></li>
-					<ul>
-						<li><em>Trust</em> can be used as differentiating factor</li>
-						<li><em>Risk</em> management means keeping SLAs and other claims</li>
-					</ul>
-					<li>Partner/Public APIs <em>consumed from external providers</em></li>
-					<ul>
-						<li><em>Trust</em> depends on the relationship with the provider</li>
-						<li><em>Risk</em> should be managed as external dependency</li>
-					</ul>
-				</ol>
 			</slide>
 		</part>
 		<part id="continuous-architecting">
