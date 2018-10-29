@@ -346,6 +346,11 @@
 						<li>Easy discovery of current set of well-known label types</li>
 						<li>Robust coexistence of well-known and proprietary label types</li>
 					</ul>
+					<li>Design a namespace that works across all use cases</li>
+					<ul>
+						<li><em>Simple names</em> (e.g., <q><code>version</code></q>) that are <a href="https://tools.ietf.org/html/draft-wilde-registries">managed in an open registry</a></li>
+						<li><em>URIs as names</em> for proprietary types to minimize the risk of name clashes</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="spectrum">
