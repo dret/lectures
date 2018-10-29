@@ -330,6 +330,16 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="spectrum">
+				<title>Label Design Spectrum</title>
+				<listing href="https://github.com/API-Labels/label-format" src="labels.json"/>
+				<ul>
+					<li>Complex values (what's the metamodel?)</li>
+					<li>Label lifetime (start/end timestamps)</li>
+					<li>Label creator (different from labeled API)</li>
+					<li>Signed labels (labels as certificates)</li>
+				</ul>
+			</slide>
 			<slide id="label-guidelines">
 				<title>Guidelines for API Labels</title>
 				<ul>
