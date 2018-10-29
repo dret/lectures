@@ -324,11 +324,16 @@
 					<li>Standalone API Labels</li>
 					<ul>
 						<li>Ability to represent and exchange labels as API-managed resources</li>
-						<li>API labels become part of the <em>standard vocabulary of API design</em></li>
+						<li>API labels become part of the <a href="http://webconcepts.info/">standard vocabulary of API design</a></li>
 					</ul>
 					<li>Embedded API Labels</li>
 					<ul>
-						<li></li>
+						<li>API description formats may support some set of labels</li>
+						<li>Embedded labels can be mapped to the standalone format</li>
+					</ul>
+					<li>Labels as APIs</li>
+					<ul>
+						<li>Third-party services may provide <em>LaaS (Label as a Service)</em></li>
 					</ul>
 				</ul>
 			</slide>
@@ -367,7 +372,7 @@
 					</ul>
 					<li><em>Understandable</em> labels by using labels as required/recommended by the guidelines</li>
 					<ul>
-						<li>Label types are either <em>well-known</em> or managed in a shared <em>registry</em></li>
+						<li>Label types are either <em>well-known</em> and/or managed in a shared <em>registry</em></li>
 						<li>Label requirements depend on <em>API style and technology</em></li>
 						<li>Label testing can be <em>integrated into deployment pipelines</em></li>
 					</ul>
