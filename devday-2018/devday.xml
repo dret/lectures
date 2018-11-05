@@ -319,6 +319,32 @@
 				<title>Interface Continuity and Evolution</title>
 				<img src="audi-rs6-plus-interior.jpg" title="Audi RS6 Plus Interior" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="continuity-scale">
+				<title>Continuous Architecting: Continuity and Scale</title>
+				<img title="Continuous Architecting: Continuity and Scale" src="continuity-scale.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="observability">
+				<title>Observability</title>
+				<ul>
+					<li><em>Continuous Architecting</em> is based on four main principles</li>
+					<ol>
+						<li><em>Design Products</em> with feedback and changeability in mind</li>
+						<li><em>Evolve Products</em> based on feedback and with minimal breakage</li>
+						<li><em>Landscape Design</em> supports product continuity and landscape evolvability</li>
+						<li><em>Landscape Evolution</em> is based on product and consumer feedback</li>
+					</ol>
+					<li><em>Observability</em> is a key principle complementing APIs and Microservices</li>
+					<ul>
+						<li><em>Implementation details</em> are hidden and APIs are the only interface</li>
+						<li><em>API your APIs:</em> Anything that is interesting should become an API</li>
+					</ul>
+					<li><em>Observability</em> is based on and complements <em>Continuous Architecting</em></li>
+					<ul>
+						<li>When new observability needs arise they can be added to the landscape and/or products</li>
+						<li>Observability makes sure that the landscape can be observed and improved</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="api-api">
 				<title>API your APIs</title>
 				<ul>
