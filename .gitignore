@@ -5,9 +5,7 @@
 # saxon/
 
 # Directories for the Hotspot runtime
-xml-fall13/hotspot
-wot2014-w3c/hotspot
-iot-spring15/hotspot
+*/hotspot
 
 # Directories with access-controlled content (server-side only)
 iot-spring15/acl
@@ -17,77 +15,56 @@ xml-fall13/*.html
 wot2014-w3c/*.html
 iot-spring15/*.html
 
-wsrest2015/hotspot
 wsrest2015/index.html
 
-kesw2015/hotspot
 kesw2015/index.html
 
-iot-ornl-2015/hotspot
 iot-ornl-2015/index.html
 
-locweb2016/hotspot
 locweb2016/index.html
 
-haas2016/hotspot
 haas2016/index.html
 
 api360-2016-nyc/index.html
-api360-2016-nyc/hotspot
 
-ipt-2016/hotspot
 ipt-2016/index.html
 
 prague-2016/index.html
-prague-2016/hotspot
 
-capgemini-2016/hotspot
 capgemini-2016/index.html
 
-ifi-2016/hotspot
 ifi-2016/index.html
 
-bta-immersion-2016/hotspot
 bta-immersion-2016/index.html
 
-vanick-2016/hotspot
 vanick-2016/index.html
 
-restfest-2016/hotspot
 restfest-2016/index.html
 
-nordic-apis-2016/hotspot
 nordic-apis-2016/ecosystem-complexity.html
 nordic-apis-2016/microservices-gardening.html
 nordic-apis-2016/toc.html
 
-usaa-2016/hotspot
 usaa-2016/microservices-on-the-web.html
 usaa-2016/microservices.html
 usaa-2016/toc.html
 
-st-louis-2016/hotspot
 st-louis-2016/index.html
 
-api-world-2016/hotspot
 api-world-2016/index.html
 
 usaa-2016/microservices-and-the-web.html
 
-cwin-2016/hotspot
 cwin-2016/index.html
 
-ca-world-2016/hotspot
 ca-world-2016/index.html
 
-api-days-london-2016/hotspot
 api-days-london-2016/toc.html
 api-days-london-2016/microservices.html
 api-days-london-2016/balancing-speed-and-safety.html
 api-days-london-2016/service-landscaping.html
 
 intesa-2016/toc.html
-intesa-2016/hotspot
 intesa-2016/api-design.html
 intesa-2016/api-evolution.html
 intesa-2016/api-management.html
@@ -96,7 +73,6 @@ intesa-2016/introduction.html
 intesa-2016/microservices.html
 intesa-2016/api-product-management.html
 
-fidelity-2016/hotspot
 fidelity-2016/toc.html
 fidelity-2016/welcome.html
 fidelity-2016/security.html
@@ -105,28 +81,19 @@ fidelity-2016/design-advanced.html
 fidelity-2016/management.html
 fidelity-2016/evolution.html
 
-dish-2016/hotspot
-dish-2017/hotspot
-
-nokia-2017/hotspot
 nokia-2017/index.html
 
-fintech-2017/hotspot
 fintech-2017/index.html
 
-south-africa-2017/hotspot
 south-africa-2017/foundation.html
 south-africa-2017/api-design.html
 south-africa-2017/toc.html
 
-mapfre-2017/hotspot
 mapfre-2017/index.html
 
-mpc-2017/hotspot
 mpc-2017/intro.html
 mpc-2017/toc.html
 
-nie-2017/hotspot
 nie-2017/toc.html
 nie-2017/introduction.html
 nie-2017/technology.html
@@ -140,10 +107,8 @@ nie-2017/conclusions.html
 nie-2017/styles.html
 nie-2017/api-design.html
 
-locweb-2017/hotspot
 locweb-2017/index.html
 
-apj-2017/hotspot
 apj-2017/toc.html
 apj-2017/sydney.html
 apj-2017/perth-foundation.html
@@ -152,7 +117,6 @@ apj-2017/sydney.html
 apj-2017/tokyo-microservices.html
 apj-2017/tokyo-apis.html
 
-modules/hotspot
 modules/skeleton.html
 modules/toc.html
 modules/api-introduction.html
@@ -167,28 +131,20 @@ modules/microservices.html
 modules/digital-transformation.html
 modules/representations.html
 
-mci-2017/hotspot
 mci-2017/toc.html
 mci-2017/introduction.html
 
-restfest-uk-2017/hotspot
 restfest-uk-2017/toc.html
-
-thiqah-2017/introduction.html
-thiqah-2017/toc.html
-thiqah-2017/hotspot
 
 modules/api-lifecycle.html
 modules/documentation-dx.html
 modules/extensibility.html
 modules/styles.html
 
-san-diego-2017/hotspot
 san-diego-2017/microservices.html
 san-diego-2017/toc.html
 san-diego-2017/api-design.html
 
-geoint-2017/hotspot
 geoint-2017/index.html
 
 modules/design.html
@@ -196,7 +152,6 @@ modules/governance.html
 modules/introduction.html
 modules/standards.html
 
-telekom-2017/hotspot
 telekom-2017/introduction.html
 telekom-2017/toc.html
 telekom-2017/digital-transformation.html
@@ -211,28 +166,21 @@ telekom-2017/scope.html
 telekom-2017/styles.html
 telekom-2017/versioning.html
 
-nga-2017/hotspot
 nga-2017/index.html
 
-summit-nyc-2017/hotspot
 summit-nyc-2017/index.html
 
-summit-boulder-2017/hotspot
 summit-boulder-2017/index.html
 
-pge-2017/hotspot
 pge-2017/index.html
 
-restfest-2017/hotspot
 restfest-2017/toc.html
 restfest-2017/fixing-hal.html
 restfest-2017/community-service.html
 restfest-2017/linkset.html
 
-ebc-latam-2017/hotspot
 ebc-latam-2017/index.html
 
-amfam-2017/hotspot
 amfam-2017/toc.html
 amfam-2017/intro.html
 amfam-2017/platforms-and-landscapes.html
@@ -240,28 +188,22 @@ amfam-2017/contracts.html
 amfam-2017/change-management.html
 amfam-2017/microservices.html
 
-api-days-zurich-2017/hotspot
 api-days-zurich-2017/index.html
 
-api-days-berlin-2017/hotspot
 api-days-berlin-2017/index.html
 
-nordic-apis-2017/hotspot
 nordic-apis-2017/index.html
 
 modules/change-management.html
 modules/programs.html
 
-deloitte-2017/hotspot
 deloitte-2017/toc.html
 deloitte-2017/api-styles.html
 deloitte-2017/change-management.html
 deloitte-2017/microservices.html
 
-api-days-paris-2017/hotspot
 api-days-paris-2017/index.html
 
-viessmann-2017/hotspot
 viessmann-2017/toc.html
 viessmann-2017/introduction.html
 viessmann-2017/design.html
@@ -276,20 +218,16 @@ viessmann-2017/rest.html
 
 modules/rest.html
 
-wind-tre-2017/hotspot
 wind-tre-2017/toc.html
 wind-tre-2017/introduction.html
 wind-tre-2017/introduction-models-protocols.html
 wind-tre-2017/development-management.html
 wind-tre-2017/strategy-design.html
 
-vss-2017/hotspot
 vss-2017/index.html
 
-api-days-paris-2018/hotspot
 api-days-paris-2018/index.html
 
-latam-2017/hotspot
 latam-2017/toc.html
 latam-2017/bis2017.html
 latam-2017/api-breakfast.html
@@ -297,29 +235,22 @@ latam-2017/esan.html
 latam-2017/emprende.html
 latam-2017/emprende-fintech.html
 
-london-2018/hotspot
 london-2018/index.html
 
-geoint-2018/hotspot
 geoint-2018/index.html
 
-otto-group-2018/hotspot
 otto-group-2018/index.html
 
-south-africa-2018/hotspot
 south-africa-2018/digital-transformation.html
 south-africa-2018/management.html
 south-africa-2018/toc.html
 
-utrecht-2018/hotspot
 utrecht-2018/toc.html
 utrecht-2018/webconcepts.html
 utrecht-2018/awesomeness.html
 
-accso-2018/hotspot
 accso-2018/index.html
 
-politecnico-2018/hotspot
 politecnico-2018/index.html
 politecnico-2018/hypermedia.html
 politecnico-2018/introduction.html
@@ -327,13 +258,10 @@ politecnico-2018/representations.html
 politecnico-2018/styles.html
 politecnico-2018/toc.html
 
-craft-2018/hotspot
 craft-2018/index.html
 
-www-2018/hotspot
 www-2018/index.html
 
-volvo-2018/hotspot
 volvo-2018/introduction.html
 volvo-2018/toc.html
 volvo-2018/digital-transformation.html
@@ -345,7 +273,6 @@ volvo-2018/hypermedia.html
 volvo-2018/change-management.html
 volvo-2018/styles.html
 
-volkswagen-2018/hotspot
 volkswagen-2018/introduction.html
 volkswagen-2018/toc.html
 volkswagen-2018/microservices.html
@@ -357,7 +284,6 @@ volkswagen-2018/landscapes.html
 volkswagen-2018/change-management.html
 volkswagen-2018/organizational.html
 
-herman-miller-2018/hotspot
 herman-miller-2018/introduction.html
 herman-miller-2018/toc.html
 herman-miller-2018/microservices.html
@@ -370,15 +296,12 @@ herman-miller-2018/design.html
 herman-miller-2018/standards.html
 herman-miller-2018/digital-transformation.html
 
-nordic-apis-2018/hotspot
 nordic-apis-2018/index.html
 
-tampa-2018/hotspot
 tampa-2018/toc.html
 tampa-2018/landscapes.html
 tampa-2018/microservices.html
 
-raymond-james-2018/hotspot
 raymond-james-2018/toc.html
 raymond-james-2018/introduction.html
 raymond-james-2018/change-management.html
@@ -397,7 +320,6 @@ volkswagen-2018/foundations.html
 volkswagen-2018/openapi.html
 volkswagen-2018/programs.html
 
-gpi-2018/hotspot
 gpi-2018/introduction.html
 gpi-2018/toc.html
 gpi-2018/change-management.html
@@ -409,7 +331,6 @@ gpi-2018/microservices.html
 gpi-2018/design.html
 gpi-2018/description.html
 
-audi-2018/hotspot
 audi-2018/introduction.html
 audi-2018/toc.html
 audi-2018/change-management.html
@@ -425,34 +346,24 @@ audi-2018/semtech.html
 audi-2018/openapi.html
 audi-2018/standards.html
 
-oreilly-sa-2018/hotspot
 oreilly-sa-2018/index.html
 
-colombia-2018/hotspot
 colombia-2018/toc.html
 colombia-2018/continuous-architecting.html
 colombia-2018/api-the-apis.html
 
-latam-2018/hotspot
 latam-2018/index.html
 
-devday-2018/hotspot
 devday-2018/index.html
 
-apistrat-2018/hotspot
 apistrat-2018/index.html
 
-mena-2018/hotspot
 mena-2018/toc.html
 mena-2018/api-strategy.html
 mena-2018/api-design.html
 
-mpi-2018/hotspot
 mpi-2018/index.html
 
-api-days-amsterdam-2018/hotspot
 api-days-amsterdam-2018/index.html
-
-api-days-paris-dec-2018/hotspot
 
 api-days-paris-dec-2018/index.html
