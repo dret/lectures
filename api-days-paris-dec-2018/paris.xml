@@ -155,6 +155,7 @@
 						<li>Embrace diversity as a way to explore new ways to solve a problem</li>
 					</ul>
 				</ul>
+				<blockquote>Example Question: How easy is it for your landscape to embrace and support a new API technology?</blockquote>
 			</slide>
 			<slide id="v2-vocabulary">
 				<title>V2: Vocabulary</title>
@@ -171,6 +172,7 @@
 						<li><em>Consumers</em> can understand part of the API because they know it already</li>
 					</ul>
 				</ul>
+				<blockquote>Example Question: Is there an easy way for developers to discover the vocabularies that are in use throughout existing APIs?</blockquote>
 			</slide>
 			<slide id="v3-volume">
 				<title>V3: Volume</title>
@@ -186,6 +188,7 @@
 						<li>Identifying bottlenecks <em>for the ecosystem</em> helps to eliminate participation barriers</li>
 					</ul>
 				</ul>
+				<blockquote>Example Question: How easy is it for developers to design, implement, and deploy a new product?</blockquote>
 			</slide>
 			<slide id="v4-velocity">
 				<title>V4: Velocity</title>
@@ -202,6 +205,7 @@
 						<li>Product evolution is opaque and consumers always use their favorite version</li>
 					</ol>
 				</ul>
+				<blockquote>Example Question: Does anything in the API landscape slow down teams when creating or changing APIs?</blockquote>
 			</slide>
 			<slide id="v5-vulnerability">
 				<title>V5: Vulnerability</title>
@@ -214,6 +218,7 @@
 						<li>GDPR is hard to get right without solid identity management</li>
 					</ul>
 				</ul>
+				<blockquote>Example Question: Are APIs designed from the ground up to be potentially externalizable?</blockquote>
 			</slide>
 			<slide id="v6-visibility">
 				<title>V6: Visibility</title>
@@ -226,6 +231,7 @@
 						<li><em>Public APIs</em> may need a comprehensive plan for a competitive market presence</li>
 					</ul>
 				</ul>
+				<blockquote>Example Question: How easy it is for architects, teams, and consumers to explore the entire API landscape?</blockquote>
 			</slide>
 			<slide id="v7-versioning">
 				<title>V7: Versioning</title>
@@ -242,6 +248,7 @@
 						<li><em>API management</em> can take care of some product management issues</li>
 					</ul>
 				</ul>
+				<blockquote>Example Question: Are APIs designed and implemented so that changes create as little disruption as possible?</blockquote>
 			</slide>
 			<slide id="v8-volatility">
 				<title>V8: Volatility</title>
@@ -258,6 +265,7 @@
 					<li>Client-side products (such as SDKs) need to be resilient</li>
 					<li>Testing always should include degraded and inaccessible API dependencies</li>
 				</ul>
+				<blockquote>Example Question: Are all dependencies implemented to be visible and to behave responsibly when some APIs fail?</blockquote>
 			</slide>
 		</part>
 		<part id="product-compass">
