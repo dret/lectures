@@ -173,6 +173,22 @@
 		</part>
 		<part id="landscape-compass">
 			<title>API Landscape Compass</title>
+			<slide id="landscape-learning">
+				<title>Learning from Legacy Landscapes</title>
+				<ul>
+					<li>Various teams or units have an existing <q>(proto-)API culture</q></li>
+					<li>The organizational landscape should combine and harmonize these</li>
+					<ul>
+						<li>Learning across teams/units and establish good practices</li>
+						<li>Identify where support and tooling can make the biggest impact</li>
+					</ul>
+					<li>Landscapes can be analyzed according to <em>landscape aspects</em></li>
+					<ul>
+						<li>Aspects can be used to better understand how APIs are designed and implemented</li>
+						<li>Aspects can be used to observe the landscape and understand its evolution</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="landscape-aspects">
 				<title>API Landscape Aspects</title>
 				<img src="cam-compass-landscape.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
