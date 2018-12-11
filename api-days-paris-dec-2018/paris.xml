@@ -359,6 +359,19 @@
 				<title>API Product Maturity Compass</title>
 				<img src="compass-maturity.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="product-status">
+				<title>Assessing API Product Status</title>
+				<blockquote>
+					<ul>
+						<li>Does your design include a plan how to make any changes to the API?</li>
+						<li>Do you have an idea of what your API should and shouldn't be, so that you can more easily decide which evolution paths you are trying to keep open?</li>
+						<li>If your design does not plan on evolving the API itself, do you have a plan how to operate multiple versions and how to manage the consumers of these multiple versions?</li>
+						<li>If your design includes a plan for evolving the API itself, do you document this clearly so that clients know what to expect?</li>
+						<li>Does your documentation include a history of changes so that it is possible for consumers to understand how the API evolved?</li>
+						<li>Do you have a plan how to decommission the API, and how this will be communicated to active consumers?</li>
+					</ul>
+				</blockquote>
+			</slide>
 			<slide id="compass-api">
 				<title>API Product Compass</title>
 				<img src="compass-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
