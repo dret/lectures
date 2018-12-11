@@ -322,6 +322,21 @@
 				<title>API Archaeology Compass</title>
 				<img src="compass-archaeology.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="guideline-convergence">
+				<title>Guideline Convergence</title>
+				<ul>
+					<li>Analyze and merge guidelines/practices where possible</li>
+					<li>Document diverging guidelines/practices where present</li>
+					<ul>
+						<li>All guidelines are <q>good practices</q> and not <q>best practices</q></li>
+					</ul>
+					<li>Units are free to fork and refine/subset the converged guidelines</li>
+					<li>Contributions to the guidelines are openly managed</li>
+					<ul>
+						<li>Central team are editors of the guidelines (and not authors)</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="product-compass">
 			<title>API Product Compass</title>
