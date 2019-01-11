@@ -1,6 +1,6 @@
 # API Academy at Ericsson
 
-Slides for an API workshop at Ericsson in Stockholm, Sweden.
+Slides for an API workshop at Ericsson in Gurgaon, India.
 
 
 ## License
