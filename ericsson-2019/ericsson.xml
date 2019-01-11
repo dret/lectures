@@ -147,31 +147,6 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation id="programs">
-		<title short="Programs">API Programs</title>
-		<toc class="resources"><a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a></toc>
-		<part id="programs-conclusions">
-			<title>Conclusions</title>
-			<slide id="programs-q-and-a">
-				<title>Thanks! Q&amp;A</title>
-				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
-				<ul>
-					<li>Slides online: <a href="http://dret.net/lectures/ericsson-2019"><code>dret.net/lectures/ericsson-2019</code></a></li>
-					<li>More information about myself:</li>
-					<ul>
-						<li>Web page: <a href="http://dret.net/netdret/"><code>dret.net/netdret/</code></a></li>
-						<li>LinkedIn: <a href="http://www.linkedin.com/in/netdret"><code>linkedin.com/in/netdret</code></a></li>
-					</ul>
-					<li>Twitter handles:</li>
-					<ul>
-						<li>Erik Wilde: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
-						<li>API Academy: <a href="http://twitter.com/APIacademy" class="twitter-follow-button" data-size="large" title="API Academy on Twitter: @APIacademy"><code>@APIacademy</code></a></li>
-						<li>Standards Daily: <a href="http://twitter.com/StandardsDaily" class="twitter-follow-button" data-size="large" title="Standards Daily on Twitter: @StandardsDaily"><code>@StandardsDaily</code></a></li>
-					</ul>
-				</ul>
-			</slide>
-		</part>
-	</presentation>
 	<presentation id="styles">
 		<title short="Styles">API Styles</title>
 		<toc class="resources"><a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a>&#160;· <a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a></toc>
@@ -849,6 +824,31 @@
 				</ul>
 			</slide>
 			<slide id="change-management-q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/ericsson-2019"><code>dret.net/lectures/ericsson-2019</code></a></li>
+					<li>More information about myself:</li>
+					<ul>
+						<li>Web page: <a href="http://dret.net/netdret/"><code>dret.net/netdret/</code></a></li>
+						<li>LinkedIn: <a href="http://www.linkedin.com/in/netdret"><code>linkedin.com/in/netdret</code></a></li>
+					</ul>
+					<li>Twitter handles:</li>
+					<ul>
+						<li>Erik Wilde: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+						<li>API Academy: <a href="http://twitter.com/APIacademy" class="twitter-follow-button" data-size="large" title="API Academy on Twitter: @APIacademy"><code>@APIacademy</code></a></li>
+						<li>Standards Daily: <a href="http://twitter.com/StandardsDaily" class="twitter-follow-button" data-size="large" title="Standards Daily on Twitter: @StandardsDaily"><code>@StandardsDaily</code></a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="programs">
+		<title short="Programs">API Programs</title>
+		<toc class="resources"><a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a></toc>
+		<part id="programs-conclusions">
+			<title>Conclusions</title>
+			<slide id="programs-q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
