@@ -4548,7 +4548,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 	</presentation>
 	<presentation id="styles">
-		<title>Styles</title>
+		<title short="Styles">API Styles</title>
 		<toc class="abstract">APIs can follow a variety of styles, each with their own specifics and advantages and drawbacks. No style by definition is better than other styles, it all depends on the capabilities that should be exposed by an API, as well as on the context. API styles have an impact on the coherence of an API landscape, and on the tooling that is required or available for building, consuming, and managing APIs. Choosing an API style is an important part of API design, and any specifics of API design only start to matter after a style has been chosen.</toc>
 		<toc class="resources"><a href="http://dret.net/netdret/publications#pau09a" title='Cesare Pautasso and Erik Wilde, "Why is the Web Loosely Coupled? A Multi-Faceted Metric for Service Design", 18th International World Wide Web Conference (WWW2009), Madrid, Spain, April 2009'>Loose Coupling</a>&#160;· <a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a></toc>
 		<slide id="summary">
