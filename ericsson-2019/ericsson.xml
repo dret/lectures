@@ -1143,6 +1143,100 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="standards">
+		<title>Standards</title>
+		<toc class="resources"><a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://www.iso.org/" title="International Organization for Standardization">ISO</a>&#160;· <a href="http://www.iana.org/protocols" title="Internet Assigned Numbers Authority Protocol Registries">IANA Registries</a>&#160;· <a href="http://webconcepts.info/">Web Concepts</a></toc>
+		<part id="languages-standards">
+			<title>APIs and Standards</title>
+			<slide id="apis-are-languages">
+				<title>API are Languages</title>
+				<ul>
+					<li>APIs allow service providers and consumers to communicate</li>
+					<ul>
+						<li>Service providers <em>define</em> the language to be used for service interactions</li>
+						<li>Service consumers <em>use</em> the language to interact with the service</li>
+					</ul>
+					<li>Interfaces both separate and connect users of the interface</li>
+					<ul>
+						<li><em>Separation</em> means that the interface is self-contained</li>
+						<li><em>Connection</em> means that the interface is easy to use</li>
+					</ul>
+					<li>Language design becomes different in complex landscapes</li>
+					<ul>
+						<li><em>Singular APIs</em> derive value from being individually polished products</li>
+						<li><em>Landscape APIs</em> derive value from maximizing productivity across products</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="languages-need-standards">
+				<title>Languages need Standards</title>
+				<ul>
+					<li>Standards become building blocks of easily usable APIs</li>
+					<ul>
+						<li>Each building block reduces design effort and improves understandability</li>
+					</ul>
+					<li>Building block can be used from various areas</li>
+					<ol>
+						<li>General <em>API concepts</em> that can be used uniformly across various APIs</li>
+						<li><em>Domain concepts</em> that can be used across APIs for a certain domain</li>
+						<li><em>Organizational concepts</em> that make sense for APIs within an organization</li>
+					</ol>
+				</ul>
+			</slide>
+		</part>
+		<part id="protocol-standards">
+			<title>Protocols are Standards</title>
+			<slide id="standard-types">
+				<title><a href="https://www.safaribooksonline.com/library/view/restful-web-apis/9781449359713/pr05.html" title='"RESTful Web APIs" by Sam Ruby, Mike Amundsen, Leonard Richardson: Introduction'>Standard Types</a></title>
+				<ul>
+					<li><em>Fiat standards:</em> <q>Why not do it this way?</q></li>
+					<li><em>Personal standards:</em> <q>I like the way this has been done.</q></li>
+					<li><em>Corporate standards:</em> <q>Let's try to figure out a way to do this.</q></li>
+					<li><em>Open standards:</em> <q>Hello everybody! Let's share a way to do this!</q></li>
+				</ul>
+			</slide>
+			<slide id="xkcd-standards">
+				<title>How Standards Proliferate</title>
+				<img src="xkcd927.png" title="The nice thing about standards is that there are so many to choose from." href="https://xkcd.com/927/" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="sdos">
+			<title>Standards-Defining Organizations (SDOs)</title>
+			<slide id="ietf">
+				<title><a href="http://ietf.org/">Internet Engineering Task Force (IETF)</a></title>
+				<img title="Internet Engineering Task Force (IETF)" href="http://ietf.org/" src="ietf.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="w3c">
+				<title><a href="http://www.w3.org/">World Wide Web Consortium (W3C)</a></title>
+				<img title="World Wide Web Consortium (W3C)" href="http://www.w3c.org/" src="w3c.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="iso">
+				<title><a href="http://www.iso.org/">International Organization for Standardization (ISO)</a></title>
+				<img title="International Organization for Standardization (ISO)" href="http://www.iso.org/" src="iso.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="standards-conclusions">
+			<title>Conclusions</title>
+			<slide id="standards-q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/ericsson-2019"><code>dret.net/lectures/ericsson-2019</code></a></li>
+					<li>More information about myself:</li>
+					<ul>
+						<li>Web page: <a href="http://dret.net/netdret/"><code>dret.net/netdret/</code></a></li>
+						<li>LinkedIn: <a href="http://www.linkedin.com/in/netdret"><code>linkedin.com/in/netdret</code></a></li>
+					</ul>
+					<li>Twitter handles:</li>
+					<ul>
+						<li>Erik Wilde: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+						<li>API Academy: <a href="http://twitter.com/APIacademy" class="twitter-follow-button" data-size="large" title="API Academy on Twitter: @APIacademy"><code>@APIacademy</code></a></li>
+						<li>Standards Daily: <a href="http://twitter.com/StandardsDaily" class="twitter-follow-button" data-size="large" title="Standards Daily on Twitter: @StandardsDaily"><code>@StandardsDaily</code></a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 	<presentation id="programs">
 		<title short="Programs">API Programs</title>
 		<toc class="resources"><a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a></toc>
