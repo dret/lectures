@@ -4148,6 +4148,18 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="security">
+		<title>Security</title>
+		<toc class="abstract">...</toc>
+		<toc class="resources"><a href="https://tools.ietf.org/html/rfc6749" title='RFC 6749: "The OAuth 2.0 Authorization Framework", October 2012'>OAuth 2.0 (RFC 6749)</a></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="security-intro">
+			<title>APIs and Security</title>
+		</part>
+	</presentation>
 	<presentation id="semtech">
 		<title>Semantic Technologies</title>
 		<toc class="abstract">...</toc>
