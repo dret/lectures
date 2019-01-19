@@ -1,3 +1,3 @@
+( cd hotspot ; git pull origin master )
 git pull origin master
-( cd hotspot ; svn update )
 ~/java/bin/java -jar ../saxon/saxon.jar modules.xml hotspot/hotspot/hotspot.xsl messages=informative
