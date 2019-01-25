@@ -4559,6 +4559,15 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="strategy">
+		<title>Strategy</title>
+		<toc class="abstract">...</toc>
+		<toc class="resources">...</toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+	</presentation>
 	<presentation id="styles">
 		<title>Styles</title>
 		<toc class="abstract">APIs can follow a variety of styles, each with their own specifics and advantages and drawbacks. No style by definition is better than other styles, it all depends on the capabilities that should be exposed by an API, as well as on the context. API styles have an impact on the coherence of an API landscape, and on the tooling that is required or available for building, consuming, and managing APIs. Choosing an API style is an important part of API design, and any specifics of API design only start to matter after a style has been chosen.</toc>
