@@ -28,26 +28,6 @@
 	<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 	<date short="2019-03-28">March 28, 2019</date>
 	<copyright>2019 Erik Wilde</copyright>
-	<toc name="toc.html">
-		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
-			<thead>
-				<tr>
-					<th valign="bottom">Subject</th>
-					<th valign="bottom">Slides</th>
-					<th valign="bottom">Additional Resources</th>
-				</tr>
-			</thead>
-			<tbody>
-				<hotspot:for-each-presentation>
-					<tr class="vevent">
-						<td valign="top"><b><span class="summary"><hotspot:title/></span></b></td>
-						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
-						<td align="center"><hotspot:toc class="resources"/></td>
-					</tr>
-				</hotspot:for-each-presentation>
-			</tbody>
-		</table>
-	</toc>
 	<presentation id="index">
 		<title>APIs and Microservices</title>
 		<toc class="resources"><a href="http://www.apiacademy.co/">API Academy</a>&#160;· <a href="https://www.apiacademy.co/resources/books/continuous-api-management" title='Mehdi Medjaoui, Erik Wilde, Ronnie Mitra, and Mike Amundsen, "Continuous API Management: Making the Right Decisions in an Evolving Landscape", O&apos;Reilly Media, December 2018'>CAM Book (2018)</a>&#160;· <a href="https://www.apiacademy.co/resources/books/microservice-architecture-aligning-principles-practices-culture" title='Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, "Microservice Architecture: Aligning Principles, Practices, and Culture", O&apos;Reilly Media, June 2016'>MSA Book (2016)</a></toc>
