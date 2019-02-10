@@ -72,6 +72,37 @@
 				<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, and <a href="http://www.linkedin.com/in/netdret">LinkedIn</a></li>
 			</ul>
 		</slide>
+		<part id="amazon">
+			<title>The Bezos Mandate</title>
+			<slide id="amazon-rules">
+				<title><a href="https://gist.github.com/chitchcock/1281611">Jeff Bezos' Services Rant: The Rules</a></title>
+				<ul>
+					<li>Famous small set of SOA design rules</li>
+					<ul>
+						<li>Teams must expose functionality through services</li>
+						<li>Communication happens only through service interfaces</li>
+						<li>There are no hard guidelines for service design</li>
+						<li>Internal/external service is a matter of policy, not one of design</li>
+					</ul>
+					<li>Going against the <q>let's pick a platform</q> spirit of old-school SOA</li>
+				</ul>
+			</slide>
+			<slide id="amazon-consequences">
+				<title>Jeff Bezos' Services Rant: <a href="https://plus.google.com/+RipRowan/posts/eVeouesvaVX">The Consequences</a></title>
+				<ul>
+					<li>With more freedom comes more responsibility</li>
+					<ul>
+						<li>Monitoring and metrics are necessary for finding root causes</li>
+						<li>All APIs must be hardened against DoS attacks</li>
+						<li>Automated QA is necessary to really understand service health</li>
+						<li>Services must be documented and registered so that they can be discovered</li>
+						<li>Debugging becomes harder because of service dependencies</li>
+					</ul>
+					<li>Sophisticated tooling required to manage the new SOA landscape</li>
+					<li>Much easier in today's technology landscape than 15 years ago</li>
+				</ul>
+			</slide>
+		</part>
 		<slide id="q-and-a">
 			<title>Thanks! Q&amp;A</title>
 			<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
