@@ -1300,9 +1300,9 @@
 					<ul>
 						<li><em>Monitoring</em> allows insights into system status and load</li>
 						<li><em>Rapid Provisioning</em> allows to react quickly when new capacity is required</li>
-						<li><em>Rapid Deployment</em> means simple ways to develop/test/start/scale services</li>
+						<li><em>Rapid Deployment</em> means simple ways to develop/test/deploy/scale services</li>
 					</ul>
-					<li>Microservice implementations are more flexible than integrated approaches</li>
+					<li>Microservice architecture is more flexible than integrated approaches</li>
 					<ul>
 						<li>Scaling can be done per service instead of scaling bigger deployment units</li>
 						<li>Code can be retired more easily by removing services from deployment</li>
