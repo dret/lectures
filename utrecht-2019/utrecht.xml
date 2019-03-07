@@ -76,14 +76,21 @@
 			</slide>
 		</part>
 		<part id="why">
-			<title>Why Microservices? And what are they?</title>
+			<title>Why Microservices?</title>
 			<slide id="apis-interfaces">
 				<title>APIs are Interfaces</title>
 				<img title='There is no "Microservice API"' src="mugatu-microservice-api.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
+		<part id="how">
+			<title>How to do Microservices?</title>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="apis-interfaces">
+				<title>APIs are Interfaces</title>
+				<img title='There is no "Microservice API"' src="mugatu-microservice-api.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
