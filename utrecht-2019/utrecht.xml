@@ -90,6 +90,14 @@
 			<title>How to do Microservices?</title>
 			<slide id="letter">
 				<title>Following the Letter</title>
+				<ul>
+					<li>There are three basic <a href="https://martinfowler.com/bliki/MicroservicePrerequisites.html">Microservice Prerequisites</a>:</li>
+					<ul>
+						<li><em>Rapid provisioning:</em> Stand up new servers in hours</li>
+						<li><em>Basic monitoring:</em> Observe technical and business issues</li>
+						<li><em>Rapid application deployment:</em> Quickly deploy services to test and production</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="principle">
 				<title>Following the Principle</title>
