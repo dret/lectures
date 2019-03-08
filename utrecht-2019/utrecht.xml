@@ -97,6 +97,12 @@
 						<li><em>Basic monitoring:</em> Observe technical and business issues</li>
 						<li><em>Rapid application deployment:</em> Quickly deploy services to test and production</li>
 					</ul>
+					<li>Many automation solution nowadays revolve around containers and related approaches</li>
+					<ul>
+						<li>Use containers such as <a href="https://www.docker.com/">Docker</a> as development/deployment platform</li>
+						<li>Use orchestration such as <a href="https://kubernetes.io/">Kubernetes</a> for managing containers</li>
+						<li>Use a service mesh such as <a href="https://istio.io/">Istio</a> for container insight and controls</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="principle">
