@@ -77,9 +77,13 @@
 		</part>
 		<part id="why">
 			<title>Why Microservices?</title>
-			<slide id="apis-interfaces">
-				<title>APIs are Interfaces</title>
-				<img title='There is no "Microservice API"' src="mugatu-microservice-api.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			<slide id="centralized">
+				<title>Monolothic: Centralized and Slow</title>
+				<img src="monolith.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="decentralized">
+				<title>Microservices: Decentralized and Agile</title>
+				<img src="microservices.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
 		<part id="how">
