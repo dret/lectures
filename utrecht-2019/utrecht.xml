@@ -78,11 +78,11 @@
 		<part id="why">
 			<title>Why Microservices?</title>
 			<slide id="centralized">
-				<title>Monolothic: Centralized and Slow</title>
+				<title>Monolithic: Centralized and Tightly Coupled</title>
 				<img src="monolith.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="decentralized">
-				<title>Microservices: Decentralized and Agile</title>
+				<title>Microservices: Decentralized and Loosely Coupled</title>
 				<img src="microservices.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
