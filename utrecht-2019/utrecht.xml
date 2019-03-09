@@ -88,7 +88,7 @@
 		</part>
 		<part id="how">
 			<title>How to do Microservices?</title>
-			<slide id="letter">
+			<slide id="microservices-letter">
 				<title>Following the Letter</title>
 				<ul>
 					<li>There are three basic <a href="https://martinfowler.com/bliki/MicroservicePrerequisites.html">Microservice Prerequisites</a>:</li>
@@ -105,7 +105,7 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide id="principle">
+			<slide id="microservices-principle">
 				<title>Following the Principle</title>
 				<ul>
 					<li>The idea and goal of microservices is to <em>decouple implementations</em></li>
