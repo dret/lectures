@@ -107,6 +107,20 @@
 			</slide>
 			<slide id="principle">
 				<title>Following the Principle</title>
+				<ul>
+					<li>The idea and goal of microservices is to <em>decouple implementations</em></li>
+					<ul>
+						<li>Encapsulate implementations and only allow API interactions between them</li>
+						<li><em>Polyglotism</em> allows teams to choose the tools that work for them</li>
+						<li><em>Continuous Delivery</em> streamlines the way from development to production</li>
+					</ul>
+					<li>The microservices principle simply is enterprise IT understanding the Web</li>
+					<ul>
+						<li>Components communicate through network-level standardized interfaces</li>
+						<li>Implementation details are completely invisible to the outside</li>
+						<li>Components can be added/scaled/modified/replaced individually and easily</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
