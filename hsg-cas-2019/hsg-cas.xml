@@ -169,6 +169,26 @@
 		</part>
 		<part id="api-archaeology">
 			<title>API Archaeology</title>
+			<slide id="proto-api">
+				<title>From Proto-API to API</title>
+				<img src="api-bones.png" title="Proto-API" style="float: right ; width : 25% ; margin : 5% ; "/>
+				<ul>
+					<li>Every organizations uses <q>APIs</q> in their IT landscape</li>
+					<ul>
+						<li>One of the oldest variations of the theme may be <em>file exchange/transfer</em></li>
+						<li>Point-to-point integrations created for specific integration needs</li>
+					</ul>
+					<li>How many of these integrations would have been useful for reuse?</li>
+					<ul>
+						<li>Integrations identify connectivity that creates value</li>
+					</ul>
+					<li>API-enabled value chains are more valuable</li>
+					<ul>
+						<li>Evolve components without the need for coordination</li>
+						<li>Connect new components without changes to the API provider side</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="api-first">
 			<title>API First</title>
