@@ -194,6 +194,16 @@
 			<title>API First</title>
 			<slide id="product-api">
 				<title>Products as APIs</title>
+				<ul>
+					<li>Every product must have a <em>digital shadow</em> (represented as API)</li>
+					<li>Products without APIs cannot be (easily) used in value chains</li>
+					<li><em>API First</em> makes sure that product APIs are first-class citizens</li>
+					<ul>
+						<li><link href="api-as-ui"/> (product interactions are API-based)</li>
+						<li><link href="mock-api"/> (iterate designs and gather feedback)</li>
+						<li><link href="api-documentation"/> (using products should be self-service)</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="api-as-ui">
 				<title>API as UI</title>
