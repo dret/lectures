@@ -202,18 +202,17 @@
 				<ul>
 					<li><em>DHL Tracking</em> is a classical request/response API</li>
 					<ul>
-						<li>Information is <em>pulled</em> from the resource provider</li>
 						<li>A <em>request</em> is sent containing all required input</li>
 						<li>A <em>response</em> is received providing the requested information</li>
 					</ul>
 					<li><em>Pull</em> vs. <em>push</em> is balancing various design considerations</li>
 					<ul>
-						<li>Ubiquity: The Web's HTTP request/response protocol is widely understood and used</li>
-						<li>Simplicity: Client requests allow the API to ignore client state</li>
-						<li>Scalability: Stateless messages make it easier to scale to large client numbers</li>
-						<li>Delay: It's acceptable for clients to not be notified of updates</li>
+						<li><em>Ubiquity:</em> The Web's HTTP request/response protocol is widely understood and used</li>
+						<li><em>Simplicity:</em> Client requests allow the API to ignore client state</li>
+						<li><em>Scalability:</em> Stateless messages make it easier to scale to large client numbers</li>
+						<li><em>Delay:</em> It's acceptable for clients to not be notified of updates</li>
 					</ul>
-					<li>Push tracking would deliver shipment events to subscribers of the shipment</li>
+					<li>Push tracking delivers shipment events to subscribers of the shipment</li>
 					<ul>
 						<li>Clients <em>subscribe</em> to events by supplying the shipment identifier</li>
 						<li>The API <em>manages subscriptions</em> for shipments</li>
