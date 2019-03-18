@@ -169,29 +169,40 @@
 		</part>
 		<part id="api-practice">
 			<title>APIs in Practice</title>
-			<slide>
+			<slide id="user-journey">
+				<title>Example Scenario: Shipping</title>
+				<ul>
+					<li>User journeys identify valuable ways of interacting with a service</li>
+				</ul>
+				<img title="Shipping Scenario: User Journey" src="shipping-scenario-user-journey.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="digitization">
 				<title>Level 1: Digitization</title>
 				<ul>
 					<li><em>Digitization:</em> Use digital technologies for implementing capabilities</li>
 				</ul>
+				<img title="Shipping Scenario: Digitization" src="shipping-scenario-digitization.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide>
+			<slide id="digitalization">
 				<title>Level 2: Digitalization</title>
 				<ul>
 					<li><em>Digitalization:</em> Build digital value chains from digital capabilities</li>
 				</ul>
+				<img title="Shipping Scenario: Digitalization" src="shipping-scenario-digitalization.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide>
+			<slide id="digital-transformation">
 				<title>Level 3: Digital Transformation</title>
 				<ul>
 					<li><em>Digital Transformation:</em> Optimize value chains for speed and flexibility</li>
 				</ul>
+				<img title="Shipping Scenario: Digital Transformation" src="shipping-scenario-digital-transformation.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide>
+			<slide id="api-economy">
 				<title>Level 4: API Economy</title>
 				<ul>
 					<li><em>API Economy:</em> Experiment to find and own the most valuable capabilities</li>
 				</ul>
+				<img title="Shipping Scenario: API Economy" src="shipping-scenario-api-economy.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="dhl-shipment-tracking-api">
 				<title>DHL Shipment Tracking API</title>
