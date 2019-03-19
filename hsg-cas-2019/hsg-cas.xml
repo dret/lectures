@@ -208,6 +208,10 @@
 				<title>DHL Parcel API</title>
 				<img href="https://dhlparcel.github.io/api-gtw-docs/" title="DHL Parcel API Documentation" src="dhl-parcel-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="dhl-parcel-api-test-call">
+				<title>DHL Parcel API Test Call</title>
+				<img title="DHL Parcel API Test Call" src="dhl-parcel-api-request.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="dhl-response">
 				<title>DHL Track &amp; Trace JSON</title>
 				<listing src="DHL-tracking.json"/>
