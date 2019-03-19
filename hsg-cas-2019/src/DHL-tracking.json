@@ -1,0 +1,533 @@
+[{
+  "barcode": "3SBPB0000094346",
+  "barcodes": ["3SBPB0000094346"],
+  "date": "2017-11-28T23:00:00.000Z",
+  "events": [
+    {
+      "category": "LEG",
+      "leg": {"network": "DAY_DEFINITE"},
+      "localTimestamp": "2017-11-29T00:00:00.000+01:00",
+      "status": "LEG_REFERENCE_ADDED",
+      "timestamp": "2017-11-28T23:00:00.000Z",
+      "type": "LEG_EVENT"
+    },
+    {
+      "category": "LEG",
+      "leg": {
+        "network": "DAY_DEFINITE",
+        "reference": "60832634"
+      },
+      "localTimestamp": "2017-11-29T00:00:00.000+01:00",
+      "status": "LEG_REFERENCE_ADDED",
+      "timestamp": "2017-11-28T23:00:00.000Z",
+      "type": "LEG_EVENT"
+    },
+    {
+      "category": "LEG",
+      "leg": {
+        "network": "DAY_DEFINITE",
+        "reference": "3SDSP004644834"
+      },
+      "localTimestamp": "2017-11-29T00:00:00.000+01:00",
+      "status": "LEG_REFERENCE_ADDED",
+      "timestamp": "2017-11-28T23:00:00.000Z",
+      "type": "LEG_EVENT"
+    },
+    {
+      "category": "LEG",
+      "leg": {
+        "accountId": "5880133",
+        "debtorNumber": "5880133",
+        "destinationFacility": "ARM",
+        "destinationServiceArea": "ARM",
+        "number": "7451930615",
+        "network": "DAY_DEFINITE",
+        "originFacility": "MAA",
+        "originServiceArea": "MAA",
+        "reference": "60832634"
+      },
+      "localTimestamp": "2017-11-29T00:00:00.000+01:00",
+      "status": "LEG_CREATED",
+      "timestamp": "2017-11-28T23:00:00.000Z",
+      "type": "LEG_EVENT"
+    },
+    {
+      "category": "DATA_RECEIVED",
+      "localTimestamp": "2017-11-29T21:56:54.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "status": "PRENOTIFICATION_RECEIVED",
+      "timestamp": "2017-11-29T20:56:54.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "LEG",
+      "leg": {
+        "accountId": "79807100",
+        "network": "ECOMMERCE"
+      },
+      "localTimestamp": "2017-11-29T21:57:07.000+01:00",
+      "status": "LEG_CREATED",
+      "timestamp": "2017-11-29T20:57:07.000Z",
+      "type": "LEG_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "facility": "RXD",
+      "height": 14,
+      "length": 18,
+      "localTimestamp": "2017-11-29T23:50:00.000+01:00",
+      "leg": {"network": "DAY_DEFINITE"},
+      "powerOfAttorney": false,
+      "route": "0",
+      "scannedManual": false,
+      "serviceArea": "RXD",
+      "status": "DEPART_FACILITY",
+      "stopNumber": 0,
+      "timestamp": "2017-11-29T22:50:00.000Z",
+      "weight": 0.2,
+      "width": 14,
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "facility": "DD/RXD",
+      "localTimestamp": "2017-11-29T23:50:00.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "status": "PARCEL_SORTED_AT_HUB",
+      "timestamp": "2017-11-29T22:50:00.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "localTimestamp": "2017-11-30T00:11:27.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "nextPlannedDeliveryTimeframe": "2017-12-01T14:00:00.000+01:00/2017-12-01T18:00:00.000+01:00",
+      "plannedDeliveryTimeframe": "2017-11-30T14:00:00.000+01:00/2017-11-30T18:00:00.000+01:00",
+      "status": "INFORMATION_ON_DELIVERY_TRANSMITTED",
+      "timestamp": "2017-11-29T23:11:27.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "facility": "ARM",
+      "height": 14,
+      "length": 18,
+      "localTimestamp": "2017-11-30T03:55:00.000+01:00",
+      "leg": {"network": "DAY_DEFINITE"},
+      "plannedDeliveryTimeframe": "2017-11-30T08:00:00.000+01:00/2017-11-30T18:00:00.000+01:00",
+      "powerOfAttorney": false,
+      "route": "0",
+      "scannedManual": false,
+      "serviceArea": "ARM",
+      "status": "ARRIVED_AT_DELIVERY_FACILITY",
+      "stopNumber": 0,
+      "timestamp": "2017-11-30T02:55:00.000Z",
+      "weight": 0.2,
+      "width": 14,
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "facility": "ARNPAK",
+      "localTimestamp": "2017-11-30T04:42:41.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "nextPlannedDeliveryTimeframe": "2017-12-01T14:00:00.000+01:00/2017-12-01T18:00:00.000+01:00",
+      "plannedDeliveryTimeframe": "2017-11-30T14:00:00.000+01:00/2017-11-30T18:00:00.000+01:00",
+      "route": "1",
+      "status": "DELIVERY_PLANNED_IN_ROUTE",
+      "timestamp": "2017-11-30T03:42:41.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "facility": "ARM",
+      "height": 14,
+      "length": 18,
+      "localTimestamp": "2017-11-30T08:04:00.000+01:00",
+      "leg": {"network": "DAY_DEFINITE"},
+      "plannedDeliveryTimeframe": "2017-11-30T08:00:00.000+01:00/2017-11-30T18:00:00.000+01:00",
+      "powerOfAttorney": false,
+      "remarks": "DHL Parcel Arnhem Zuid",
+      "route": "512150",
+      "scannedManual": true,
+      "serviceArea": "ARM",
+      "status": "IN_ROUTE_THIRD_PARTY",
+      "stopNumber": 1,
+      "timestamp": "2017-11-30T07:04:00.000Z",
+      "weight": 0.2,
+      "width": 14,
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "facility": "ARNPAK",
+      "localTimestamp": "2017-11-30T08:05:15.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "nextPlannedDeliveryTimeframe": "2017-12-01T14:00:00.000+01:00/2017-12-01T18:00:00.000+01:00",
+      "plannedDeliveryTimeframe": "2017-11-30T14:00:00.000+01:00/2017-11-30T18:00:00.000+01:00",
+      "route": "2",
+      "status": "DELIVERY_PLANNED_IN_ROUTE",
+      "timestamp": "2017-11-30T07:05:15.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "facility": "ARM",
+      "height": 14,
+      "length": 18,
+      "localTimestamp": "2017-11-30T08:46:00.000+01:00",
+      "leg": {"network": "DAY_DEFINITE"},
+      "plannedDeliveryTimeframe": "2017-11-30T08:00:00.000+01:00/2017-11-30T18:00:00.000+01:00",
+      "powerOfAttorney": false,
+      "remarks": "DHL Parcel Arnhem Zuid",
+      "route": "512150",
+      "scannedManual": true,
+      "serviceArea": "ARM",
+      "status": "FORWARD_DESTINATION",
+      "stopNumber": 1,
+      "timestamp": "2017-11-30T07:46:00.000Z",
+      "weight": 0.2,
+      "width": 14,
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "facility": "ETTPAK",
+      "localTimestamp": "2017-11-30T09:11:09.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "route": "2",
+      "status": "PARCEL_ARRIVED_AT_LOCAL_DEPOT",
+      "timestamp": "2017-11-30T08:11:09.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "PROBLEM",
+      "facility": "ARNPAK",
+      "localTimestamp": "2017-11-30T09:11:10.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "nextPlannedDeliveryTimeframe": "2017-12-01T14:00:00.000+01:00/2017-12-01T18:00:00.000+01:00",
+      "plannedDeliveryTimeframe": "2017-11-30T14:00:00.000+01:00/2017-11-30T18:00:00.000+01:00",
+      "route": "2",
+      "status": "MISSORT",
+      "timestamp": "2017-11-30T08:11:10.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "facility": "ETTPAK",
+      "localTimestamp": "2017-11-30T09:11:40.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "route": "2",
+      "status": "PARCEL_ARRIVED_AT_LOCAL_DEPOT",
+      "timestamp": "2017-11-30T08:11:40.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "facility": "PI",
+      "localTimestamp": "2017-12-01T20:55:13.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "status": "PARCEL_SCANNED_AT_RETURN_HUB",
+      "timestamp": "2017-12-01T19:55:13.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "facility": "PI",
+      "localTimestamp": "2017-12-03T17:42:26.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "status": "DEPOT_SCAN",
+      "timestamp": "2017-12-03T16:42:26.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "facility": "PI",
+      "localTimestamp": "2017-12-05T21:58:56.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "status": "DEPOT_SCAN",
+      "timestamp": "2017-12-05T20:58:56.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "facility": "EC>144",
+      "localTimestamp": "2017-12-06T18:04:40.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "status": "PARCEL_SORTED_AT_HUB",
+      "timestamp": "2017-12-06T17:04:40.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "localTimestamp": "2017-12-06T18:07:37.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "nextPlannedDeliveryTimeframe": "2017-12-08T14:00:00.000+01:00/2017-12-08T18:00:00.000+01:00",
+      "plannedDeliveryTimeframe": "2017-12-07T14:00:00.000+01:00/2017-12-07T18:00:00.000+01:00",
+      "status": "INFORMATION_ON_DELIVERY_TRANSMITTED",
+      "timestamp": "2017-12-06T17:07:37.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "facility": "ARNPAK",
+      "localTimestamp": "2017-12-07T04:14:46.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "nextPlannedDeliveryTimeframe": "2017-12-08T14:00:00.000+01:00/2017-12-08T18:00:00.000+01:00",
+      "plannedDeliveryTimeframe": "2017-12-07T14:00:00.000+01:00/2017-12-07T18:00:00.000+01:00",
+      "route": "1",
+      "status": "DELIVERY_PLANNED_IN_ROUTE",
+      "timestamp": "2017-12-07T03:14:46.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "UNDERWAY",
+      "facility": "ARNPAK",
+      "localTimestamp": "2017-12-07T08:14:50.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "route": "1",
+      "status": "PARCEL_ARRIVED_AT_LOCAL_DEPOT",
+      "timestamp": "2017-12-07T07:14:50.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "IN_DELIVERY",
+      "facility": "ARNPAK",
+      "localTimestamp": "2017-12-07T09:47:23.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "nextPlannedDeliveryTimeframe": "2017-12-08T14:00:00.000+01:00/2017-12-08T18:00:00.000+01:00",
+      "plannedDeliveryTimeframe": "2017-12-07T14:00:00.000+01:00/2017-12-07T18:00:00.000+01:00",
+      "route": "1",
+      "status": "PARCEL_SCANNED_INTO_HAND-TERMINAL",
+      "timestamp": "2017-12-07T08:47:23.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "IN_DELIVERY",
+      "facility": "ARNPAK",
+      "localTimestamp": "2017-12-07T10:15:18.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "route": "1",
+      "status": "PARCEL_HANDED_OVER_TO_COURIER",
+      "timestamp": "2017-12-07T09:15:18.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "IN_DELIVERY",
+      "facility": "ARNPAK",
+      "localTimestamp": "2017-12-07T10:15:18.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "nextPlannedDeliveryTimeframe": "2017-12-08T14:00:00.000+01:00/2017-12-08T18:00:00.000+01:00",
+      "plannedDeliveryTimeframe": "2017-12-07T14:00:00.000+01:00/2017-12-07T18:00:00.000+01:00",
+      "route": "1",
+      "status": "OUT_FOR_DELIVERY",
+      "timestamp": "2017-12-07T09:15:18.000Z",
+      "type": "PIECE_EVENT"
+    },
+    {
+      "category": "DELIVERED",
+      "facility": "ARNPAK",
+      "localTimestamp": "2017-12-07T16:58:41.000+01:00",
+      "leg": {"network": "ECOMMERCE"},
+      "nextPlannedDeliveryTimeframe": "2017-12-08T14:00:00.000+01:00/2017-12-08T18:00:00.000+01:00",
+      "plannedDeliveryTimeframe": "2017-12-07T14:00:00.000+01:00/2017-12-07T18:00:00.000+01:00",
+      "route": "1",
+      "status": "DELIVERED",
+      "timestamp": "2017-12-07T15:58:41.000Z",
+      "type": "PIECE_EVENT"
+    }
+  ],
+  "type": "SHIPMENT",
+  "deliveredAt": "2017-12-07T16:58:41.000+01:00",
+  "view": {
+    "barcode": "3SBPB0000094346",
+    "shipmentVariant": "SHIPMENT",
+    "message": "DELIVERED_AT",
+    "moment": "2017-12-07T16:58:41+01:00",
+    "phaseDisplay": [
+      {
+        "phase": "DATA_RECEIVED",
+        "completed": true,
+        "exception": false
+      },
+      {
+        "phase": "UNDERWAY",
+        "completed": true,
+        "exception": false
+      },
+      {
+        "phase": "IN_DELIVERY",
+        "completed": true,
+        "exception": false
+      },
+      {
+        "phase": "DELIVERED",
+        "completed": true,
+        "exception": false
+      }
+    ],
+    "intervenable": false,
+    "phases": [
+      {
+        "phase": "DELIVERED",
+        "events": [{
+          "timestamp": "2017-12-07T15:58:41Z",
+          "key": "DELIVERED",
+          "exception": false
+        }]
+      },
+      {
+        "phase": "IN_DELIVERY",
+        "events": [
+          {
+            "timestamp": "2017-12-07T09:15:18Z",
+            "key": "OUT_FOR_DELIVERY",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-12-07T09:15:18Z",
+            "key": "PARCEL_HANDED_OVER_TO_COURIER",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-12-07T08:47:23Z",
+            "key": "PARCEL_SCANNED_INTO_HAND-TERMINAL",
+            "exception": false
+          }
+        ]
+      },
+      {
+        "phase": "UNDERWAY",
+        "events": [
+          {
+            "timestamp": "2017-12-07T07:14:50Z",
+            "key": "PARCEL_ARRIVED_AT_LOCAL_DEPOT",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-12-07T03:14:46Z",
+            "key": "DELIVERY_PLANNED_IN_ROUTE",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-12-06T17:07:37Z",
+            "key": "INFORMATION_ON_DELIVERY_TRANSMITTED",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-12-06T17:04:40Z",
+            "key": "PARCEL_SORTED_AT_HUB",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-12-05T20:58:56Z",
+            "key": "DEPOT_SCAN",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-12-03T16:42:26Z",
+            "key": "DEPOT_SCAN",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-12-01T19:55:13Z",
+            "key": "PARCEL_SCANNED_AT_RETURN_HUB",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-11-30T08:11:40Z",
+            "key": "PARCEL_ARRIVED_AT_LOCAL_DEPOT",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-11-30T08:11:10Z",
+            "key": "MISSORT",
+            "exception": true
+          },
+          {
+            "timestamp": "2017-11-30T08:11:09Z",
+            "key": "PARCEL_ARRIVED_AT_LOCAL_DEPOT",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-11-30T07:46Z",
+            "key": "FORWARD_DESTINATION",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-11-30T07:05:15Z",
+            "key": "DELIVERY_PLANNED_IN_ROUTE",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-11-30T07:04Z",
+            "key": "IN_ROUTE_THIRD_PARTY",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-11-30T03:42:41Z",
+            "key": "DELIVERY_PLANNED_IN_ROUTE",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-11-30T02:55Z",
+            "key": "ARRIVED_AT_DELIVERY_FACILITY",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-11-29T23:11:27Z",
+            "key": "INFORMATION_ON_DELIVERY_TRANSMITTED",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-11-29T22:50Z",
+            "key": "PARCEL_SORTED_AT_HUB",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-11-29T22:50Z",
+            "key": "DEPART_FACILITY",
+            "exception": false
+          }
+        ]
+      },
+      {
+        "phase": "DATA_RECEIVED",
+        "events": [
+          {
+            "timestamp": "2017-11-29T20:57:07Z",
+            "key": "LEG_CREATED",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-11-29T20:56:54Z",
+            "key": "PRENOTIFICATION_RECEIVED",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-11-28T23:00Z",
+            "key": "LEG_CREATED",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-11-28T23:00Z",
+            "key": "LEG_REFERENCE_ADDED",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-11-28T23:00Z",
+            "key": "LEG_REFERENCE_ADDED",
+            "exception": false
+          },
+          {
+            "timestamp": "2017-11-28T23:00Z",
+            "key": "LEG_REFERENCE_ADDED",
+            "exception": false
+          }
+        ]
+      }
+    ],
+    "queryType": "Barcode"
+  },
+  "totalEvents": 28
+}]
