@@ -197,13 +197,6 @@
 				</ul>
 				<img title="Shipping Scenario: Digital Transformation" src="shipping-scenario-digital-transformation.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="api-economy">
-				<title>Level 4: API Economy</title>
-				<ul>
-					<li><em>API Economy:</em> Experiment to find and own the most valuable capabilities</li>
-				</ul>
-				<img title="Shipping Scenario: API Economy" src="shipping-scenario-api-economy.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
 			<slide id="dhl-parcel-api">
 				<title>DHL Parcel API</title>
 				<img href="https://dhlparcel.github.io/api-gtw-docs/" title="DHL Parcel API Documentation" src="dhl-parcel-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
@@ -215,6 +208,13 @@
 			<slide id="dhl-response">
 				<title>DHL Track &amp; Trace JSON</title>
 				<listing src="DHL-tracking.json" line="1-24"/>
+			</slide>
+			<slide id="api-economy">
+				<title>Level 4: API Economy</title>
+				<ul>
+					<li><em>API Economy:</em> Experiment to find and own the most valuable capabilities</li>
+				</ul>
+				<img title="Shipping Scenario: API Economy" src="shipping-scenario-api-economy.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="design-deep-dive">
 				<title>API Design Deep Dive: Pull vs. Push</title>
