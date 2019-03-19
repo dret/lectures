@@ -214,7 +214,7 @@
 			</slide>
 			<slide id="dhl-response">
 				<title>DHL Track &amp; Trace JSON</title>
-				<listing src="DHL-tracking.json"/>
+				<listing src="DHL-tracking.json" line="1-24"/>
 			</slide>
 			<slide id="design-deep-dive">
 				<title>API Design Deep Dive: Pull vs. Push</title>
