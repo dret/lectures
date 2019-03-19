@@ -204,9 +204,13 @@
 				</ul>
 				<img title="Shipping Scenario: API Economy" src="shipping-scenario-api-economy.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="dhl-shipment-tracking-api">
-				<title>DHL Shipment Tracking API</title>
-				<img href="https://developer.dhl/api-reference/shipment-tracking-api" title="DHL API Developer Portal" src="dhl-shipment-tracking-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			<slide id="dhl-parcel-api">
+				<title>DHL Parcel API</title>
+				<img href="https://dhlparcel.github.io/api-gtw-docs/" title="DHL Parcel API Documentation" src="dhl-parcel-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="dhl-response">
+				<title>DHL Track &amp; Trace JSON</title>
+				<listing src="DHL-tracking.json"/>
 			</slide>
 			<slide id="design-deep-dive">
 				<title>API Design Deep Dive: Pull vs. Push</title>
