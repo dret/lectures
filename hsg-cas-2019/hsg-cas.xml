@@ -138,6 +138,10 @@
 					<li>Much easier in today's technology landscape than 15 years ago</li>
 				</ul>
 			</slide>
+			<slide id="api-cargo-cult">
+				<title>The Wonders of APIs</title>
+				<img title="API Cargo Cult" src="apis-make-things-happen.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 		</part>
 		<part id="plumbing">
 			<title>APIs: Digital Transformation Plumbing</title>
@@ -157,10 +161,6 @@
 						<li><em>User Interface (UI)</em> for allowing human users access to a service through an API</li>
 					</ul>
 				</ul>
-			</slide>
-			<slide id="api-cargo-cult">
-				<title>The Wonders of APIs</title>
-				<img title="API Cargo Cult" src="apis-make-things-happen.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="digital-transformation-status">
 				<title>Digital Transformation Status</title>
@@ -215,6 +215,25 @@
 					<li><em>API Economy:</em> Experiment to find and own the most valuable capabilities</li>
 				</ul>
 				<img title="Shipping Scenario: API Economy" src="shipping-scenario-api-economy.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-economy-examples">
+				<title>API Economy Examples</title>
+				<img href="https://goshippo.com/" src="shippo.png" title="Shippo" style="float: right ; width : 25% ; margin : 5% ; "/>
+				<img href="https://www.amazon.com/b?ie=UTF8&amp;node=17051031011" src="amazon-car-delivery.png" title="Amazon In-Car Delivery" style="float: right ; width : 25% ; margin : 5% ; clear: both ; "/>
+				<ul>
+					<li>Payment service integration</li>
+					<li>Aggregation services across various shipping services</li>
+					<ul>
+						<li>Valuable for large customers looking for <q>shipping service as a service</q></li>
+						<li>Better APIs increase the likelihood of getting integrated</li>
+					</ul>
+					<li>New delivery options for final delivery</li>
+					<ul>
+						<li>Cars must be enabled to be remotely controlled</li>
+						<li>Real-time API for requesting/granting/denying access is helpful</li>
+						<li>Complex <q>integration</q> that depends on control/features of the car API</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="design-deep-dive">
 				<title>API Design Deep Dive: Pull vs. Push</title>
