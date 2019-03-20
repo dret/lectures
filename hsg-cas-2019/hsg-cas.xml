@@ -331,18 +331,21 @@
 				<title>API as UI</title>
 				<ul>
 					<li>The API of a service is its first UI</li>
+					<li>Every UI is layered on top of the API</li>
 				</ul>
 			</slide>
 			<slide id="mock-api">
 				<title>Mock API</title>
 				<ul>
 					<li>The experience of the service is (determined by) the API</li>
+					<li>UI journeys must be translated to API interactions</li>
 				</ul>
 			</slide>
 			<slide id="api-documentation">
 				<title>API Documentation</title>
 				<ul>
 					<li>Focus on the experience of the primary service interface (i.e., focus on <span title="Developer Experience">DX</span>)</li>
+					<li>Avoid UI assumptions leaking into the API</li>
 				</ul>
 			</slide>
 		</part>
