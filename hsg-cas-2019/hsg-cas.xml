@@ -153,13 +153,6 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide id="api-cargo-cult">
-				<title>The Wonders of APIs</title>
-				<img title="API Cargo Cult" src="apis-make-things-happen.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-		</part>
-		<part id="plumbing">
-			<title>APIs: Digital Transformation Plumbing</title>
 			<slide id="service-api-ui">
 				<title>Services and APIs and UIs</title>
 				<ul>
@@ -176,6 +169,10 @@
 						<li><em>User Interface (UI)</em> for allowing human users access to a service through an API</li>
 					</ul>
 				</ul>
+			</slide>
+			<slide id="api-cargo-cult">
+				<title>The Wonders of APIs</title>
+				<img title="API Cargo Cult" src="apis-make-things-happen.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="digital-transformation-status">
 				<title>Digital Transformation Status</title>
