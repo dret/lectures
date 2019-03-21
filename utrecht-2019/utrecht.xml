@@ -95,6 +95,26 @@
 		</part>
 		<part id="why">
 			<title>Why Microservices?</title>
+			<slide id="speed-and-safety">
+				<title>Speed and Safety for API Products</title>
+				<ul>
+					<li>API products should be easy to add, change, and remove</li>
+					<ul>
+						<li>This may apply only to the public and partner APIs</li>
+						<li>Mature API strategies look at <em>every capability</em> as an API product</li>
+					</ul>
+					<li>Traditional enterprise IT can take a long time to approve anything</li>
+					<ul>
+						<li>Only a fraction of these blockers are rooted in business needs</li>
+					</ul>
+					<li>The Web allows <em>permissionless decentralized innovation</em> at global scale</li>
+					<ul>
+						<li>Minimal technical requirements (Internet connectivity and URI/HTTP/HTML)</li>
+						<li>Services start, evolve, and die in a feedback loop for individual services</li>
+						<li>Harder to grasp and manage than one centralized implementation platform</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="centralized">
 				<title>Monolithic: Centralized and Tightly Coupled</title>
 				<img src="monolith.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
