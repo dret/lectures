@@ -1,4 +1,4 @@
-# Continuous Architecting
+# Continuous Architecting: Architecture for Ecosystems
 
 Slides for The Architecture Gathering in Munich, Germany.
 
