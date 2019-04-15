@@ -1,3 +1,3 @@
 ( cd hotspot ; git pull origin master )
 git pull origin master
-~/java/bin/java -jar ../saxon/saxon.jar helsinki.xml hotspot/hotspot/hotspot.xsl messages=informative
+~/java/bin/java -jar ../saxon/saxon.jar finland.xml hotspot/hotspot/hotspot.xsl messages=informative
