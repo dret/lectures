@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="goodapi" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="zurich.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="http://creativecommons.org/licenses/by/3.0/" short="CC 3.0">
+		<div class="license">
+			<p><a rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/goodapi/goodapi/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
+		</div>
+	</license>
+	<title><a href="https://www.apidays.co/">API Days</a> <a href="https://www.apidays.co/zurich">Zurich, Switzerland</a></title>
+	<presentation id="index">
+		<title>The Three Pillars of Digital Transformation</title>
+		<toc class="abstract">Digital Transformation initiatives are ubiquitous these days, and yet the success rate of these initiatives is relatively low. In this presentation we look at how digital transformation initiatives are faring in various industries, and what the ratios and analyses for success or failure look like. We then follow by outlining a high-level view of which aspects digital transformation initiatives must include to improve their chances of success, and how vision, strategy, and execution must be synchronized. Finally, we follow with a presentation of the three pillars that are necessary for digital transformation success: business, organizational, and technology. The overall success of digital transformation is limited by these pillars, and it is essential that for all of these pillars, there are managed initiatives and progress indicators in place.</toc>
+		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
+		<affiliation><a href="https://www.goodapi.co/">Good API</a></affiliation>
+		<date short="2019-05-21">May 21, 2019</date>
+		<copyright>2019 Erik Wilde</copyright>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="intro">
+			<title>Introduction</title>
+			<slide id="dretwitter">
+				<title><code>@dret</code> on Twitter/GitHub</title>
+				<img src="dret.png" title="dret" href="http://twitter.com/dret" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="cam-book">
+				<title>Continuous API Management (2018)</title>
+				<img src="CAM-cover-2048px.jpg" href="https://www.amazon.com/Continuous-Api-Management-Decisions-Landscape/dp/1492043559" title="Continuous API Management: Making the Right Decisions in an Evolving Landscape" style="float: right ; height : 55% ; margin : 4% ; "/>
+				<ul>
+					<li><q href="https://www.apiacademy.co/resources/books/continuous-api-management">Continuous API Management: Making the Right Decisions in an Evolving Landscape</q></li>
+					<ul>
+						<li><a href="http://shop.oreilly.com/product/0636920201755.do">O'Reilly book page</a></li>
+						<li><a href="https://www.amazon.com/Continuous-Api-Management-Decisions-Landscape/dp/1492043559">Amazon book page</a></li>
+					</ul>
+					<li>Authored by <a href="http://www.apiacademy.co/">API Academy</a> members Mehdi Medjaoui, Erik Wilde, Ronnie Mitra, and Mike Amundsen</li>
+				</ul>
+			</slide>
+			<slide id="dret">
+				<title>About Me</title>
+				<ul>
+					<li><a href="http://dret.net/netdret/publications#wil97b">Ph.D. in Communications Systems</a> from <a href="http://www.ethz.ch/">ETH Zürich</a></li>
+					<li>Working on Web Architecture after writing <a href="http://dret.net/netdret/publications#wil98">the first Web Technology book</a></li>
+					<li>UC Berkeley (2006-2011), working on <a href="http://dret.net/netdret/publications#wil09g">Service Models for Open Government</a></li>
+					<li>EMC (2011-2014), working on transforming software products into service platforms</li>
+					<li>Siemens (2014-2015), working on using <em title="Internet of Things">IoT</em> to build <em title="Web of Things">WoT</em> (<q>APIs for Things</q>)</li>
+					<li>Part of <a href="http://www.ca.com/" title="CA Technologies">CA</a>'s <a href="http://www.apiacademy.co/">API Academy</a> 2016-2019 focusing on API Design and Management</li>
+					<li>Joined <a href="https://www.goodapi.co/">Good API</a> in 2019 focusing on API Strategy and Guidance for Digital Transformation</li>
+					<li>Active in the usual places such as <a href="http://twitter.com/dret" title="@dret">Twitter</a>, <a href="http://github.com/dret" title="dret">GitHub</a>, and <a href="http://www.linkedin.com/in/netdret">LinkedIn</a></li>
+				</ul>
+			</slide>
+		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks! Q&amp;A</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/zurich-2019"><code>dret.net/lectures/api-days-zurich-2019</code></a></li>
+					<li>More information about myself:</li>
+					<ul>
+						<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+						<li>LinkedIn: <a href="http://www.linkedin.com/in/netdret"><code>linkedin.com/in/netdret</code></a></li>
+						<li>Web page: <a href="http://dret.net/netdret/"><code>dret.net/netdret/</code></a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
