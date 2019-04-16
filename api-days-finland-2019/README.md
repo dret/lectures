@@ -9,4 +9,4 @@ These are sources that I make available for others to read/use/reuse; please res
 
 ## Online
 
-The presentation version for this talk is available online at http://dret.net/lectures/api-days-helsinki-2019/
+The presentation version for this talk is available online at http://dret.net/lectures/api-days-finland-2019/
