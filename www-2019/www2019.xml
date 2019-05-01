@@ -165,9 +165,19 @@
 	</presentation>
 	<presentation id="tech-and-biz">
 		<title short="Technology and Business">Technology and Business Angles</title>
-		<toc class="resources"></toc>
+		<toc class="resources"><a href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" title='Gregor Hohpe, "Reverse Engineering the Organization", May 2018'>Reverse Engineering the Organization</a></toc>
 		<part id="big-picture">
 			<title>APIs: The Big Picture</title>
+			<slide id="complexity">
+				<title>Bottom-Up: Growing IT Complexity</title>
+			</slide>
+			<slide id="availability">
+				<title>Top-Down: Increasing IT Capabilities</title>
+			</slide>
+			<slide id="convergence">
+				<title>Convergence of Business and IT</title>
+				<img href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" src="cio-reporting-line.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 		</part>
 		<part id="inside-out">
 			<title>Inside Out: APIs as IT Modernization</title>
