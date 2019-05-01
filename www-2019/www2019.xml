@@ -134,12 +134,12 @@
 					<ul>
 						<li>Session 1 (Afternoon): 14.00-15.30</li>
 						<ul>
-							<li><link href="api-products"/> (API Pillars and Maturity)</li>
+							<li><link href="products"/>: API Pillars and Maturity</li>
 							<li><a href="api-consumption.pdf">API Consumption</a>: Network and Dependency Challenges</li>
 						</ul>
 						<li>Session 2 (Afternoon): 16.00-17.30</li>
 						<ul>
-							<li><link href="api-landscapes"/> (Aspects and their Management)</li>
+							<li><link href="landscapes"/>: Aspects and their Management</li>
 							<li><a href="api-governance.pdf">API Governance</a>: Decision Making and Observability</li>
 						</ul>
 					</ul>
@@ -208,13 +208,53 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation external="api-design.pdf">
-		<title short="API Design">API Design: Styles and Design Choices</title>
+	<presentation id="api-design.pdf">
+		<title short="Design">API Design</title>
+	</presentation>
+	<presentation id="products">
+		<title short="Products">API Products</title>
+		<toc class="resources"></toc>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks!</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/www-2019"><code>dret.net/lectures/www-2019</code></a></li>
+					<li>More information about myself:</li>
+					<ul>
+						<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+						<li>LinkedIn: <a href="http://www.linkedin.com/in/netdret"><code>linkedin.com/in/netdret</code></a></li>
+						<li>Web page: <a href="http://dret.net/netdret/"><code>dret.net/netdret/</code></a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 	<presentation external="api-consumption.pdf">
-		<title short="API Consumption">API Consumption: Network and Dependency Challenges</title>
+		<title short="Consumption">API Consumption</title>
+	</presentation>
+	<presentation id="landscapes">
+		<title short="Landscapes">API Landscapes</title>
+		<toc class="resources"></toc>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks!</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/www-2019"><code>dret.net/lectures/www-2019</code></a></li>
+					<li>More information about myself:</li>
+					<ul>
+						<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+						<li>LinkedIn: <a href="http://www.linkedin.com/in/netdret"><code>linkedin.com/in/netdret</code></a></li>
+						<li>Web page: <a href="http://dret.net/netdret/"><code>dret.net/netdret/</code></a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 	<presentation external="api-governance.pdf">
-		<title short="API Governance">API Governance: Decision Making and Observability</title>
+		<title short="Governance">API Governance</title>
 	</presentation>
 </hotspot>
