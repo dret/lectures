@@ -122,12 +122,12 @@
 					<ul>
 						<li>Session 1 (Morning): 9.00-10.30</li>
 						<ul>
-							<li><link href="tech-and-biz"/> (Inside-Out and Outside-In)</li>
-							<li><link href="standards"/> (Standards and SDOs)</li>
+							<li><link href="tech-and-biz"/>: Inside-Out and Outside-In</li>
+							<li><link href="standards"/>: Standards and SDOs</li>
 						</ul>
 						<li>Session 2 (Morning): 11.00-12.30</li>
 						<ul>
-							<li>API Design: Styles and Examples (Five Styles and Design Choices)</li>
+							<li><a href="api-design.pdf">API Design</a>: Styles and Design Choices)</li>
 						</ul>
 					</ul>
 					<li>Part II: Supporting Continuous Change in the API Landscape</li>
@@ -135,12 +135,12 @@
 						<li>Session 1 (Afternoon): 14.00-15.30</li>
 						<ul>
 							<li><link href="api-products"/> (API Pillars and Maturity)</li>
-							<li>API Consumption (Network and Dependency Challenges)</li>
+							<li><a href="api-consumption.pdf">API Consumption</a>: Network and Dependency Challenges</li>
 						</ul>
 						<li>Session 2 (Afternoon): 16.00-17.30</li>
 						<ul>
 							<li><link href="api-landscapes"/> (Aspects and their Management)</li>
-							<li>API Governance (Decision Making and Observability)</li>
+							<li><a href="api-governance.pdf">API Governance</a>: Decision Making and Observability</li>
 						</ul>
 					</ul>
 				</ul>
@@ -209,6 +209,12 @@
 		</part>
 	</presentation>
 	<presentation external="api-design.pdf">
-		<title short="API Design">API Design: Styles and Examples</title>
+		<title short="API Design">API Design: Styles and Design Choices</title>
+	</presentation>
+	<presentation external="api-consumption.pdf">
+		<title short="API Consumption">API Consumption: Network and Dependency Challenges</title>
+	</presentation>
+	<presentation external="api-governance.pdf">
+		<title short="API Governance">API Governance: Decision Making and Observability</title>
 	</presentation>
 </hotspot>
