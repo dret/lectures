@@ -115,6 +115,27 @@
 		</part>
 		<part id="overview">
 			<title>Tutorial Overview</title>
+			<slide id="api-growth">
+				<title>API Growth</title>
+				<ul>
+					<li>APIs are the Web pages of the machine Web</li>
+					<ul>
+						<li>Connectivity within and across organizations</li>
+						<li><em>Inside</em> and <em>outside</em> depends on context and shifts over time</li>
+					</ul>
+					<li>Allowing decentralization with some level of standardization</li>
+					<ul>
+						<li><em>Decentralization</em> allows teams and capabilities to be developed faster</li>
+						<li><em>Standardization</em> results in a more uniform and accessible landscape</li>
+					</ul>
+					<li>Learning from the (UI) Web</li>
+					<ul>
+						<li>Standardize enabling technologies to design and build access to information/services</li>
+						<li>Refrain from standardizing domain models</li>
+						<li>Evolve the ecosystem by observing usage and providing guidance and support</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="schedule">
 				<title>Schedule</title>
 				<ul>
