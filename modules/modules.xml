@@ -4466,7 +4466,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<ul>
 						<li>There may be a registry flag indicating that values should be treated as <q>deprecated</q></li>
 						<li>Deprecated values may be treated as errors at some point in time</li>
-						<li>Deprecated values can never be reassigned</li>
+						<li>Deprecated values can never be reassigned (see above)</li>
 					</ul>
 				</ul>
 			</slide>
@@ -4532,7 +4532,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>Ignore/remove <em>specification series</em> that you are not interested in</li>
 					<li>Ignore/remove <em>organizations</em> that you are not interested in</li>
 					<li>The resulting specifications are <em>your</em> Web Concepts</li>
-					<li>They can be the starting point for <a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API guidelines</a></li>
+					<li>They can be one starting point for <a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API guidelines</a></li>
 				</ul>
 			</slide>
 			<slide id="custom-concepts">
@@ -4543,7 +4543,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>Add <em>organizations</em> that you are interested in</li>
 					<li>Anything that has potential for reuse can and should be added</li>
 					<li>The resulting specifications are <em>your</em> Web Concepts</li>
-					<li>They can be the starting point for <a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API guidelines</a></li>
+					<li>They can be one starting point for <a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API guidelines</a></li>
 				</ul>
 			</slide>
 			<slide id="concept-coverage">
