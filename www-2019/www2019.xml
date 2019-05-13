@@ -623,13 +623,13 @@
 	<presentation id="products">
 		<title short="Products">Products: Pillars and Maturity</title>
 		<toc class="resources"></toc>
-		<part id="scaling">
+		<part id="product-landscape-1">
 			<title>From Products to Landscapes</title>
-			<slide id="focus-scale">
+			<slide id="focus-scale-1">
 				<title>Scaling the API Practice (Focus)</title>
 				<img title="Digital Transformation and API Landscapes: Focus and Scale" src="focus-scale-perspectives.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="continuity-scale">
+			<slide id="continuity-scale-1">
 				<title>Scaling the API Practice (Continuity)</title>
 				<img title="Continuous Architecting: Continuity and Scale" src="continuity-scale.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
@@ -657,6 +657,17 @@
 	<presentation id="landscapes">
 		<title short="Landscapes">Landscapes: Aspects and their Management</title>
 		<toc class="resources"></toc>
+		<part id="product-landscape-2">
+			<title>From Products to Landscapes</title>
+			<slide id="focus-scale-2">
+				<title>Scaling the API Practice (Focus)</title>
+				<img title="Digital Transformation and API Landscapes: Focus and Scale" src="focus-scale-perspectives.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="continuity-scale-2">
+				<title>Scaling the API Practice (Continuity)</title>
+				<img title="Continuous Architecting: Continuity and Scale" src="continuity-scale.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
 		<part id="landscape-management">
 			<title>API Landscape Management</title>
 			<slide id="mission">
