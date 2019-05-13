@@ -623,6 +623,17 @@
 	<presentation id="products">
 		<title short="Products">API Products</title>
 		<toc class="resources"></toc>
+		<part id="scaling">
+			<title>From Products to Landscapes</title>
+			<slide id="focus-scale">
+				<title>Scaling the API Practice (Focus)</title>
+				<img title="Digital Transformation and API Landscapes: Focus and Scale" src="focus-scale-perspectives.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="continuity-scale">
+				<title>Scaling the API Practice (Continuity)</title>
+				<img title="Continuous Architecting: Continuity and Scale" src="continuity-scale.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
