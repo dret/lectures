@@ -657,16 +657,68 @@
 			</slide>
 			<slide id="product-compass-change-management">
 				<title>API Product Compass: Change Management</title>
-				<blockquote>
-					<ul>
-						<li>Does your design include a plan how to make any changes to the API?</li>
-						<li>Do you have an idea of what your API should and shouldn't be, so that you can more easily decide which evolution paths you are trying to keep open?</li>
-						<li>If your design does not plan on evolving the API itself, do you have a plan how to operate multiple versions and how to manage the consumers of these multiple versions?</li>
-						<li>If your design includes a plan for evolving the API itself, do you document this clearly so that clients know what to expect?</li>
-						<li>Does your documentation include a history of changes so that it is possible for consumers to understand how the API evolved?</li>
-						<li>Do you have a plan how to decommission the API, and how this will be communicated to active consumers?</li>
-					</ul>
-				</blockquote>
+				<ul>
+					<li>Does your design include a plan how to make any changes to the API?</li>
+					<li>Do you have an idea of what your API should and shouldn't be, so that you can more easily decide which evolution paths you are trying to keep open?</li>
+					<li>If your design does not plan on evolving the API itself, do you have a plan how to operate multiple versions and how to manage the consumers of these multiple versions?</li>
+					<li>If your design includes a plan for evolving the API itself, do you document this clearly so that clients know what to expect?</li>
+					<li>Does your documentation include a history of changes so that it is possible for consumers to understand how the API evolved?</li>
+					<li>Do you have a plan how to decommission the API, and how this will be communicated to active consumers?</li>
+				</ul>
+			</slide>
+			<slide id="product-compass-deployment">
+				<title>API Product Compass: Deployment</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
+			<slide id="product-compass-design">
+				<title>API Product Compass: Design</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
+			<slide id="product-compass-development">
+				<title>API Product Compass: Development</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
+			<slide id="product-compass-discovery">
+				<title>API Product Compass: Discovery</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
+			<slide id="product-compass-documentation">
+				<title>API Product Compass: Documentation</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
+			<slide id="product-compass-monitoring">
+				<title>API Product Compass: Monitoring</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
+			<slide id="product-compass-security">
+				<title>API Product Compass: Security</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
+			<slide id="product-compass-strategy">
+				<title>API Product Compass: Strategy</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
+			<slide id="product-compass-testing">
+				<title>API Product Compass: Testing</title>
+				<ul>
+					<li></li>
+				</ul>
 			</slide>
 			<slide id="compass-api">
 				<title>CAM Product Compass: Results</title>
