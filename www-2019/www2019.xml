@@ -143,25 +143,25 @@
 					<ul>
 						<li>Session 1 (Morning): 9.00-10.30</li>
 						<ul>
-							<li><link href="perspectives"/>: Two Perspectives of APIs</li>
-							<li><link href="standards"/>: Standards and SDOs</li>
+							<li><link href="perspectives"/></li>
+							<li><link href="standards"/></li>
 						</ul>
 						<li>Session 2 (Morning): 11.00-12.30</li>
 						<ul>
-							<li><a href="api-design.pdf">API Design</a>: Styles and Design Choices</li>
+							<li><a href="api-design.pdf">Design: Styles and Design Choices</a></li>
 						</ul>
 					</ul>
 					<li>Part II: Supporting Continuous Change in the API Landscape</li>
 					<ul>
 						<li>Session 1 (Afternoon): 14.00-15.30</li>
 						<ul>
-							<li><link href="products"/>: API Pillars and Maturity</li>
-							<li><a href="api-consumption.pdf">API Consumption</a>: Network and Dependency Challenges</li>
+							<li><link href="products"/></li>
+							<li><a href="consumption.pdf">Consumption: Network and Dependency Challenges</a></li>
 						</ul>
 						<li>Session 2 (Afternoon): 16.00-17.30</li>
 						<ul>
-							<li><link href="landscapes"/>: Aspects and their Management</li>
-							<li><a href="api-governance.pdf">API Governance</a>: Decision Making and Observability</li>
+							<li><link href="landscapes"/></li>
+							<li><a href="governance.pdf">Governance: Decision Making and Observability</a></li>
 						</ul>
 					</ul>
 				</ul>
@@ -185,7 +185,7 @@
 		</part>
 	</presentation>
 	<presentation id="perspectives">
-		<title short="Perspectives">API Perspectives</title>
+		<title short="Perspectives">Perspectives: Two Perspectives of APIs</title>
 		<toc class="resources"><a href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" title='Gregor Hohpe, "Reverse Engineering the Organization", May 2018'>Reverse Engineering the Organization</a></toc>
 		<part id="high-level-view">
 			<title>APIs from 50,000 feet</title>
@@ -398,7 +398,7 @@
 		</part>
 	</presentation>
 	<presentation id="standards">
-		<title short="Standards">Standardization Landscape</title>
+		<title short="Standards">Standardization Landscape: Standards and SDOs</title>
 		<toc class="resources"><a href="http://ietf.org/" title="Internet Engineering Task Force">IETF</a>&#160;· <a href="http://www.w3.org/" title="World Wide Web Consortium">W3C</a>&#160;· <a href="http://www.iso.org/" title="International Organization for Standardization">ISO</a>&#160;· <a href="http://www.iana.org/protocols" title="Internet Assigned Numbers Authority Protocol Registries">IANA Registries</a>&#160;· <a href="http://webconcepts.info/">Web Concepts</a></toc>
 		<part id="languages-standards">
 			<title>APIs and Standards</title>
@@ -618,10 +618,10 @@
 		</part>
 	</presentation>
 	<presentation external="design.pdf">
-		<title short="Design">API Design</title>
+		<title short="Design">Design: Styles and Design Choices</title>
 	</presentation>
 	<presentation id="products">
-		<title short="Products">API Products</title>
+		<title short="Products">Products: Pillars and Maturity</title>
 		<toc class="resources"></toc>
 		<part id="scaling">
 			<title>From Products to Landscapes</title>
@@ -651,11 +651,11 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation external="api-consumption.pdf">
-		<title short="Consumption">API Consumption</title>
+	<presentation external="consumption.pdf">
+		<title short="Consumption">Consumption: Network and Dependency Challenges</title>
 	</presentation>
 	<presentation id="landscapes">
-		<title short="Landscapes">API Landscapes</title>
+		<title short="Landscapes">Landscapes: Aspects and their Management</title>
 		<toc class="resources"></toc>
 		<part id="landscape-management">
 			<title>API Landscape Management</title>
@@ -908,7 +908,7 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation external="api-governance.pdf">
-		<title short="Governance">API Governance</title>
+	<presentation external="governance.pdf">
+		<title short="Governance">Governance: Decision Making and Observability</title>
 	</presentation>
 </hotspot>
