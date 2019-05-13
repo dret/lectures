@@ -434,7 +434,7 @@
 				<ul>
 					<li><em>Service versions</em> may be internal information only</li>
 					<ul>
-						<li>Implementation information does not have to shown up in the API</li>
+						<li>Implementation information does not have to show up in the API</li>
 						<li>For internal/trusted/open cases service and API may be the same thing</li>
 					</ul>
 					<li><em>API versions</em> are about changes that may affect consumers</li>
