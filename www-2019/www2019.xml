@@ -148,7 +148,8 @@
 						</ul>
 						<li>Session 2 (Morning): 11.00-12.30</li>
 						<ul>
-							<li><a href="api-design.pdf">Design: Styles and Design Choices</a></li>
+							<li><a href="2019-05-www-api-styles.pdf">Styles: Five API Styles</a></li>
+							<li><a href="2019-05-www-api-design.pdf">Design: Learning the API Design Method</a></li>
 						</ul>
 					</ul>
 					<li>Part II: Supporting Continuous Change in the API Landscape</li>
@@ -620,8 +621,11 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation external="design.pdf">
-		<title short="Design">Design: Styles and Design Choices</title>
+	<presentation external="2019-05-www-api-styles.pdf">
+		<title short="Styles">Styles: Five API Styles</title>
+	</presentation>
+	<presentation external="2019-05-www-api-design.pdf">
+		<title short="Design">Design: Learning the API Design Method</title>
 	</presentation>
 	<presentation id="products">
 		<title short="Products">Products: Pillars and Maturity</title>
