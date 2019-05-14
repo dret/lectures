@@ -641,7 +641,7 @@
 			</slide>
 		</part>
 		<part id="product-compass">
-			<title>API Product Compass</title>
+			<title>CAM Product Compass</title>
 			<slide id="pillar-maturity">
 				<title>Product Pillars and Maturity</title>
 				<ul>
@@ -662,7 +662,7 @@
 				<img src="compass-maturity.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="product-compass-change-management">
-				<title>API Product Compass: Change Management</title>
+				<title>CAM Product Compass: Change Management</title>
 				<ul>
 					<li>Does your design include a plan how to make any changes to the API?</li>
 					<li>Do you have an idea of what your API should and shouldn't be, so that you can more easily decide which evolution paths you are trying to keep open?</li>
@@ -673,7 +673,7 @@
 				</ul>
 			</slide>
 			<slide id="product-compass-deployment">
-				<title>API Product Compass: Deployment</title>
+				<title>CAM Product Compass: Deployment</title>
 				<ul>
 					<li>Deployment automation for the API product is done in line with the strategic goals, so that deployments can be rolled out fast enough.</li>
 					<li>Deployment is aligned with the change management principles, so that if necessary, multiple versions can be operated and potentially discovered in parallel.</li>
@@ -682,7 +682,7 @@
 				</ul>
 			</slide>
 			<slide id="product-compass-design">
-				<title>API Product Compass: Design</title>
+				<title>CAM Product Compass: Design</title>
 				<ul>
 					<li>Have you identified (based on the API product strategy) who the API is designed for, and included that perspective in the design process?</li>
 					<li>Given the API's strategy, is the design balancing the needs and optimization potential for the individual API product with those for the API landscape?</li>
@@ -690,14 +690,14 @@
 				</ul>
 			</slide>
 			<slide id="product-compass-development">
-				<title>API Product Compass: Development</title>
+				<title>CAM Product Compass: Development</title>
 				<ul>
 					<li>Are design and development coordinated so that any changes in the API design (the interface description) can be easily reflected and implemented in the development process?</li>
 					<li>Does development include technologies and/or tools that are not part of the recommended development technologies and/or tools in the organization?</li>
 				</ul>
 			</slide>
 			<slide id="product-compass-discovery">
-				<title>API Product Compass: Discovery</title>
+				<title>CAM Product Compass: Discovery</title>
 				<ul>
 					<li>Given the strategic goals of the API product, marketing is targeting the appropriate channels to make sure that potential users can easily discover the API.</li>
 					<li>Based on the available documentation and the strategic goals, the discovery experience takes into account the best way how potential new users can understand the API product once they discover it.</li>
@@ -705,7 +705,7 @@
 				</ul>
 			</slide>
 			<slide id="product-compass-documentation">
-				<title>API Product Compass: Documentation</title>
+				<title>CAM Product Compass: Documentation</title>
 				<ul>
 					<li>Is the documentation and learning experience for the API based on the strategic goals of the API product?</li>
 					<li>Is documentation for the API integrated into the API landscape as much possible, given the strategic goals of the API product?</li>
@@ -714,7 +714,7 @@
 				</ul>
 			</slide>
 			<slide id="product-compass-monitoring">
-				<title>API Product Compass: Monitoring</title>
+				<title>CAM Product Compass: Monitoring</title>
 				<ul>
 					<li>Given the strategic goals, do the monitoring capabilities include all the information that is needed to evaluate the API product's health and success?</li>
 					<li>Is all the monitoring information collected in a way that it can be easily accessed and reused?</li>
@@ -722,7 +722,7 @@
 				</ul>
 			</slide>
 			<slide id="product-compass-security">
-				<title>API Product Compass: Security</title>
+				<title>CAM Product Compass: Security</title>
 				<ul>
 					<li>The API product controls basic technical security issues (identities, authenticate clients and end users, authorize usage, and implement rate limits, ...) either itself or by using libraries or tooling.</li>
 					<li>Documentation and design expose as little information about implementation details as possible to reduce the attack surface.</li>
@@ -732,7 +732,7 @@
 				</ul>
 			</slide>
 			<slide id="product-compass-strategy">
-				<title>API Product Compass: Strategy</title>
+				<title>CAM Product Compass: Strategy</title>
 				<ul>
 					<li>Do you have a clearly defined and documented reason why the API exists?</li>
 					<li>Are there clearly defined criteria and indicators (such as OKR or KPI) that allow you to say whether the strategic goal has been reached or not?</li>
@@ -741,7 +741,7 @@
 				</ul>
 			</slide>
 			<slide id="product-compass-testing">
-				<title>API Product Compass: Testing</title>
+				<title>CAM Product Compass: Testing</title>
 				<ul>
 					<li>Is testing using as much existing tooling as possible?</li>
 					<li>Are there metrics in place to evaluate and observe the coverage of tests?</li>
