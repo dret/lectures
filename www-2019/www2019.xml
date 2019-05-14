@@ -675,7 +675,7 @@
 			<slide id="product-compass-deployment">
 				<title>API Product Compass: Deployment</title>
 				<ul>
-					<li>Deployment automation for the API product is done in line with the strategic goals, so that deployments can be rolled our fast enough.</li>
+					<li>Deployment automation for the API product is done in line with the strategic goals, so that deployments can be rolled out fast enough.</li>
 					<li>Deployment is aligned with the change management principles, so that if necessary, multiple versions can be operated and potentially discovered in parallel.</li>
 					<li>Deployment decisions are structured in a way so that given the constraints of when to release and who gets to decide, deployment can happen as fast as possible.</li>
 					<li>Deployment scalability has been taken into account, so that scaling the product up when required is supported by the deployment packaging model and by the deployment environment.</li>
