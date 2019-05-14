@@ -387,7 +387,7 @@
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
-				<title>Let's Get Started!</title>
+				<title>Thanks!</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
 					<li>Slides online: <a href="http://dret.net/lectures/www-2019"><code>dret.net/lectures/www-2019</code></a></li>
@@ -600,7 +600,6 @@
 					<li>Can be done through code analysis (up to a certain point)</li>
 					<li>Probably works better/easier through <q>service fabric instrumentation</q></li>
 					<li>Ideally separate tooling and backed by an API/format for representing usage data</li>
-					<li>Could even detect difference between declared/used Web Concepts</li>
 				</ul>
 			</slide>
 		</part>
