@@ -710,7 +710,9 @@
 			<slide id="product-compass-monitoring">
 				<title>API Product Compass: Monitoring</title>
 				<ul>
-					<li></li>
+					<li>Given the strategic goals, do the monitoring capabilities include all the information that is needed to evaluate the API product's health and success?</li>
+					<li>Is all the monitoring information collected in a way that it can be easily accessed and reused?</li>
+					<li>All of the data monitored has undergone security considerations, and for any PII data in particular, it is made sure that all security and privacy considerations are applied to monitoring tooling and services as well.</li>
 				</ul>
 			</slide>
 			<slide id="product-compass-security">
