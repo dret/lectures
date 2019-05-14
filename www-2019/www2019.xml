@@ -737,7 +737,9 @@
 			<slide id="product-compass-testing">
 				<title>API Product Compass: Testing</title>
 				<ul>
-					<li></li>
+					<li>Is testing using as much existing tooling as possible?</li>
+					<li>Are there metrics in place to evaluate and observe the coverage of tests?</li>
+					<li>Do your tests include scenarios where consumed APIs are not performing or are not reachable, in order to test for resiliency of the API product?</li>
 				</ul>
 			</slide>
 			<slide id="compass-api">
