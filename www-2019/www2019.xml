@@ -718,7 +718,11 @@
 			<slide id="product-compass-security">
 				<title>API Product Compass: Security</title>
 				<ul>
-					<li></li>
+					<li>The API product controls basic technical security issues (identities, authenticate clients and end users, authorize usage, and implement rate limits, ...) either itself or by using libraries or tooling.</li>
+					<li>Documentation and design expose as little information about implementation details as possible to reduce the attack surface.</li>
+					<li>Data management by the API product has been reviewed and verified to comply with the applicable regulations.</li>
+					<li>The API supports necessary support functions to comply with known regulations (such as GDPR) around security and privacy.</li>
+					<li>Security considerations are part of the deployment considerations, so that for example geographic locations are taken into account.</li>
 				</ul>
 			</slide>
 			<slide id="product-compass-strategy">
