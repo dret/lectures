@@ -678,7 +678,9 @@
 			<slide id="product-compass-design">
 				<title>API Product Compass: Design</title>
 				<ul>
-					<li></li>
+					<li>Have you identified (based on the API product strategy) who the API is designed for, and included that perspective in the design process?</li>
+					<li>Given the API's strategy, is the design balancing the needs and optimization potential for the individual API product with those for the API landscape?</li>
+					<li>Given the API's style and technology, is it using a recommended and/or standardized description format that makes it easier for consumers to gain an initial understanding of the API, possibly aided by tooling they can use?</li>
 				</ul>
 			</slide>
 			<slide id="product-compass-development">
