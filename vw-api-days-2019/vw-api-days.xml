@@ -133,30 +133,9 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation id="api-first">
+	<presentation id="user-story">
 		<toc class="day">Product Day</toc>
-		<title short="API First">API First: Every Product is an API</title>
-		<toc class="resources"><a href="http://webconcepts.info/" title="Web Concepts: A Collection of Concepts for Web APIs">Web Concepts</a></toc>
-		<part id="conclusions">
-			<title>Conclusions</title>
-			<slide id="q-and-a">
-				<title>Thanks!</title>
-				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
-				<ul>
-					<li>Slides online: <a href="http://dret.net/lectures/vw-api-days-2019"><code>dret.net/lectures/vw-api-days-2019</code></a></li>
-					<li>More information about myself:</li>
-					<ul>
-						<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
-						<li>LinkedIn: <a href="http://www.linkedin.com/in/netdret"><code>linkedin.com/in/netdret</code></a></li>
-						<li>Web page: <a href="http://dret.net/netdret/"><code>dret.net/netdret/</code></a></li>
-					</ul>
-				</ul>
-			</slide>
-		</part>
-	</presentation>
-	<presentation id="api-pm">
-		<toc class="day">Product Day</toc>
-		<title short="API Product Management">API Product Management: Building Good API Products</title>
+		<title short="User Story">From User Story to API</title>
 		<toc class="resources"><a href="https://medium.com/capital-one-tech/the-role-of-product-management-in-api-design-988f295b989" title='Matthew Reinbold, "The Role of Product Management in API Design", April 3, 2018'>Product Management in API Design</a>&#160;· <a href="https://medium.com/capital-one-tech/api-product-ownership-is-key-for-api-adoption-6a12c64b2c83" title='James Higginbotham, "API Product Ownership is Key for API Adoption", February 19, 2018'>API Product Ownership</a></toc>
 		<part id="conclusions">
 			<title>Conclusions</title>
@@ -174,6 +153,11 @@
 				</ul>
 			</slide>
 		</part>
+	</presentation>
+	<presentation external="lifecycle.pdf">
+		<toc class="day">Product Day</toc>
+		<title short="Lifecycle">API Lifecycle Management</title>
+		<toc class="resources"></toc>
 	</presentation>
 	<presentation id="intro-tech">
 		<title short="Tech Day Introduction">Tech Day Introduction: Why? What? How?</title>
@@ -257,5 +241,31 @@
 				</ul>
 			</slide>
 		</part>
+	</presentation>
+	<presentation id="change-management">
+		<toc class="day">Tech Day</toc>
+		<title short="Change Management">API Change Management and Versioning</title>
+		<toc class="resources"></toc>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks!</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/vw-api-days-2019"><code>dret.net/lectures/vw-api-days-2019</code></a></li>
+					<li>More information about myself:</li>
+					<ul>
+						<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+						<li>LinkedIn: <a href="http://www.linkedin.com/in/netdret"><code>linkedin.com/in/netdret</code></a></li>
+						<li>Web page: <a href="http://dret.net/netdret/"><code>dret.net/netdret/</code></a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation external="testing.pdf">
+		<toc class="day">Tech Day</toc>
+		<title short="Testing">API Testing</title>
+		<toc class="resources"></toc>
 	</presentation>
 </hotspot>
