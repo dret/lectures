@@ -1,4 +1,4 @@
-# The Three Pillars of Digital Transformation
+# The Three Pillars of API Strategy
 
 Slides for presentation at [API Days Zurich](https://www.apidays.co/zurich).
 
