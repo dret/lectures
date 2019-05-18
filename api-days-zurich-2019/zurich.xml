@@ -125,22 +125,22 @@
 		</part>
 		<part id="pillars">
 			<title>Three Pillars</title>
-			<part id="business">
+			<slide id="biz">
 				<title>Business Pillar</title>
-			</part>
-			<part id="team">
+			</slide>
+			<slide id="team">
 				<title>Team Pillar</title>
-			</part>
-			<part id="technology">
+			</slide>
+			<slide id="tech">
 				<title>Technology Pillar</title>
-			</part>
+			</slide>
+			<slide id="api-cycle">
+				<title>API Transformation: Assessment/Enablement/Coaching</title>
+				<img title="Managing the API Strategy Pillars: Assessment, Enablement, Coaching" src="services-cycle.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 		</part>
 		<part id="management">
 			<title>From Strategy to Results</title>
-			<slide id="assess-enable-coach">
-				<title>Assessment/Enablement/Coaching</title>
-				<img title="Managing the Digital Transformation Pillars: Assessment, Enablement, Coaching" src="services-cycle.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
