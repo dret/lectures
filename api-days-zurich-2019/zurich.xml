@@ -141,6 +141,55 @@
 		</part>
 		<part id="management">
 			<title>From Strategy to Results</title>
+			<slide id="strategy">
+				<title>API Strategy</title>
+				<table style="border-collapse: collapse ; ">
+					<tr>
+						<td/>
+						<th style="border: 1px solid black ; padding: 0.5em">External</th>
+						<th style="border: 1px solid black ; padding: 0.5em">Internal</th>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Biz</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">API monetization</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Revenue-supporting APIs</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase speed &amp; feedback</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Identify &amp; expose enablers</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Design for externalization</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase biz insight with dashboards</li>
+						</ul></td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Team</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Support documentation/DX</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Support discovery/self-service</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Provide DX feedback channel</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Products &gt; projects</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Team enablement/support</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loose coupling for speed/agility</li>
+						</ul></td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Tech</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Tech trends and popularity</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Invest in easy onboarding</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Secure through platform</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Decoupled implementations</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Observe patterns and practices</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Establish C4E for platform/support</li>
+						</ul></td>
+					</tr>
+				</table>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
