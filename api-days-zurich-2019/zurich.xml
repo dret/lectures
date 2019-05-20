@@ -230,6 +230,11 @@
 						<li><em>Program (how):</em> How do we establish/nurture/evolve/manage our API landscape?</li>
 					</ul>
 					<li>API programs are supposed to operate continuously</li>
+					<ul>
+						<li>Individual products are added and modified and removed</li>
+						<li>The landscape of products and dependencies changes continuously</li>
+						<li>Continuous architecting evolves the landscape over time</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="api-cycle">
