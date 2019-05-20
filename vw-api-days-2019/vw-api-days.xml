@@ -118,7 +118,7 @@
 		</part>
 		<part id="schedule">
 			<title>Schedule</title>
-			<slide id="schedule-product">
+			<slide id="product-schedule">
 				<title>Product Day</title>
 				<ul>
 					<li>13.30-14.30: Block I</li>
@@ -129,6 +129,21 @@
 					<li>15.00-16.00: Block II</li>
 					<ul>
 						<li>15.00-15.45: <a href="lifecycle.pdf">API Lifecycle Management</a></li>
+						<li>15.45-16.00: Discussion</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="tech-schedule">
+				<title>Tech Day</title>
+				<ul>
+					<li>13.30-14.30: Block I</li>
+					<ul>
+						<li>13.30-13.45: <link href="intro-tech"/></li>
+						<li>13.45-14.30: <link href="change-management"/></li>
+					</ul>
+					<li>15.00-16.00: Block II</li>
+					<ul>
+						<li>15.00-15.45: <a href="testing.pdf">API Testing</a></li>
 						<li>15.45-16.00: Discussion</li>
 					</ul>
 				</ul>
@@ -151,7 +166,7 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation id="product">
+	<presentation id="product-journey">
 		<toc class="day">Product Day</toc>
 		<title short="Product Journey">Product Journey: From User Story to API</title>
 		<toc class="resources"><a href="https://medium.com/capital-one-tech/the-role-of-product-management-in-api-design-988f295b989" title='Matthew Reinbold, "The Role of Product Management in API Design", April 3, 2018'>Product Management in API Design</a>&#160;· <a href="https://medium.com/capital-one-tech/api-product-ownership-is-key-for-api-adoption-6a12c64b2c83" title='James Higginbotham, "API Product Ownership is Key for API Adoption", February 19, 2018'>API Product Ownership</a></toc>
