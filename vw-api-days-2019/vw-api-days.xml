@@ -311,8 +311,133 @@
 	<presentation id="change-management">
 		<toc class="day">Tech Day</toc>
 		<title short="Change Management">API Change Management and Versioning</title>
-		<toc class="resources"><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a></toc>
-		<part id="robust-extensibility">
+		<toc class="resources"><a href="https://www.mnot.net/blog/2012/06/25/http_api_complexity_model" title='Mark Nottingham, "HTTP API Complexity", June 2012'>API Complexity</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a></toc>
+		<part id="change-management-introduction">
+			<title>Introduction</title>
+			<slide id="versioning-tweet-fielding">
+				<title>Versioning Breaks Things</title>
+				<img title='Roy Fielding (@fielding): &apos;The reason to make a real REST API is to get evolvability … a &quot;v1&quot; is a middle finger to your API customers, indicating RPC/HTTP (not REST)&apos;' href="https://twitter.com/fielding/status/376835835670167552" src="versioning-tweet-fielding.png" class="fullsize"/>
+			</slide>
+			<slide id="versioning-software">
+				<title>Versioning in Software Engineering</title>
+				<ul>
+					<li>Version numbers have an almost mythical role in IT</li>
+					<ul>
+						<li>Numbers are used to keep track of <em>any changes</em> in a software product</li>
+						<li>Major numbers often are used to signal major functional upgrades</li>
+					</ul>
+					<li>APIs are about encapsulating implementation details</li>
+					<ul>
+						<li>API versioning only matters <em>when the API changes</em></li>
+						<li>API versioning should <em>hide implementation changes</em></li>
+					</ul>
+					<li>Separating API and implementation is a good idea</li>
+					<ul>
+						<li>The <em>API version</em> is the version <em>of the implemented API</em></li>
+						<li>The <em>software version</em> is the version <em>of the contract implementation</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="evolution">
+				<title>Plan for Evolution</title>
+				<ul>
+					<li>Planning for evolution means to reduce pain in the future</li>
+					<ul>
+						<li>No immediate benefits other than <q>doing the right thing</q></li>
+						<li>Modest effort when part of the API design process and culture</li>
+					</ul>
+					<li>Extensibility should be part of the <em>API design culture</em></li>
+					<ul>
+						<li>Each API must have a documented plan for API evolution</li>
+						<li>The simplest possible plan may be to never change the API</li>
+					</ul>
+					<li>Extensibility should be made easy for API consumers</li>
+					<ul>
+						<li>Provide test cases that simulate correct/incorrect API extensions</li>
+						<li>Provide feature flags so that services can enter <q>test mode</q></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="compatibility">
+				<title>Compatibility</title>
+				<ul>
+					<li>Compatibility comes in two basic flavors (one easier, one harder)</li>
+					<ul>
+						<li><em>Backwards compatibility:</em> Ability to interact with older components</li>
+						<li><em>Forward compatibility:</em> Ability to interact with newer components</li>
+					</ul>
+					<li>The Web supports both compatibility types</li>
+					<ul>
+						<li><em>Backwards compatibility:</em> New browser accessing older content</li>
+						<li><em>Forward compatibility:</em> Old browser accessing newer content</li>
+					</ul>
+					<li>API compatibility depends on API scenarios</li>
+					<ul>
+						<li>Who controls API providers and API consumers?</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="api-complexity">
+			<title>API Complexity</title>
+			<slide id="one-server-one-client">
+				<title>One Server and One Client</title>
+				<ul>
+					<li>Tight coupling between server and client teams possible</li>
+					<ul>
+						<li>Updates in the API can be negotiated and addressed</li>
+					</ul>
+					<li>Updates in the <em>deployed clients</em> can still pose a challenge</li>
+					<ul>
+						<li>Easier when deployment is through <em>code on demand</em> (Web clients)</li>
+						<li>Harder when deployment is through <em>installed code</em> (non-Web clients)</li>
+					</ul>
+					<li>Openness and extensibility are not an explicit goal</li>
+					<ul>
+						<li>The only exception are version issues across the installed base</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="one-server-many-clients">
+				<title>One Server and Many Clients</title>
+				<ul>
+					<li>Loose coupling between server and client teams helpful</li>
+					<ul>
+						<li>Client teams should be guided how to expect the API to evolve</li>
+					</ul>
+					<li>Updates in the <em>existing clients</em> can take a long time</li>
+					<ul>
+						<li>No control over installed client base other than hard API stops</li>
+					</ul>
+					<li>Openness and extensibility are getting more interesting</li>
+					<ul>
+						<li>Openness is necessary so that the API can evolve without breaking clients</li>
+						<li>Extensibility is less of a concern because there is only one server</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="one-servers-many-clients">
+				<title>Many Servers and Many Clients</title>
+				<ul>
+					<li>Loose coupling between server and client teams essential</li>
+					<ul>
+						<li>Client teams should be guided how to expect the API to evolve</li>
+						<li>Clients may experience a spectrum of server implementations</li>
+					</ul>
+					<li>Variety in the <em>service landscape</em> needs clients to be robust</li>
+					<ul>
+						<li>Services can implement variations of the original API</li>
+						<li>Balancing consistency and flexibility is the main design challenge</li>
+					</ul>
+					<li>Openness and extensibility are essential components</li>
+					<ul>
+						<li>Openness is necessary so that services can use the API robustly</li>
+						<li>Extensibility is necessary to that the landscape can evolve robustly</li>
+						<li>The landscape is a graph of variations of the basic API</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>		<part id="robust-extensibility">
 			<title>Robust Extensibility</title>
 			<slide id="core-semantics">
 				<title>Meaningful Core Semantics</title>
