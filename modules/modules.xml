@@ -253,29 +253,29 @@
 		</slide>
 		<part id="change-management-introduction">
 			<title>Introduction</title>
-			<slide id="versioning-practice">
-				<title>Versioning in Practice</title>
-				<ul>
-					<li>Version numbers have an almost mythical role in IT</li>
-					<ul>
-						<li>But often they are only useful for signaling continuity or breakage points</li>
-						<li>Most things work or break in a binary way (or simply refuse to even try)</li>
-					</ul>
-					<li>Compatibility comes in two basic flavors (one easier, one harder)</li>
-					<ul>
-						<li><em>Backwards compatibility</em> means to work with older components</li>
-						<li><em>Forward compatibility</em> means to work with more advanced components</li>
-					</ul>
-					<li>The Web has good rules to support both compatibility types</li>
-					<ul>
-						<li><em>Backwards compatibility:</em> New browser accessing older content</li>
-						<li><em>Forward compatibility:</em> Old browser accessing newer content</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="versioning-tweet-fielding">
 				<title>Versioning Breaks Things</title>
 				<img title='Roy Fielding (@fielding): &apos;The reason to make a real REST API is to get evolvability … a &quot;v1&quot; is a middle finger to your API customers, indicating RPC/HTTP (not REST)&apos;' href="https://twitter.com/fielding/status/376835835670167552" src="versioning-tweet-fielding.png" class="fullsize"/>
+			</slide>
+			<slide id="versioning-software">
+				<title>Versioning in Software Engineering</title>
+				<ul>
+					<li>Version numbers have an almost mythical role in IT</li>
+					<ul>
+						<li>Numbers are used to keep track of <em>any changes</em> in a software product</li>
+						<li>Major numbers often are used to signal major functional upgrades</li>
+					</ul>
+					<li>APIs are about encapsulating implementation details</li>
+					<ul>
+						<li>API versioning only matters <em>when the API changes</em></li>
+						<li>API versioning should <em>hide implementation changes</em></li>
+					</ul>
+					<li>Separating API and implementation is a good idea</li>
+					<ul>
+						<li>The <em>API version</em> is the version <em>of the implemented API</em></li>
+						<li>The <em>software version</em> is the version <em>of the contract implementation</em></li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="evolution">
 				<title>Plan for Evolution</title>
@@ -294,6 +294,25 @@
 					<ul>
 						<li>Provide test cases that simulate correct/incorrect API extensions</li>
 						<li>Provide feature flags so that services can enter <q>test mode</q></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="compatibility">
+				<title>Compatibility</title>
+				<ul>
+					<li>Compatibility comes in two basic flavors (one easier, one harder)</li>
+					<ul>
+						<li><em>Backwards compatibility:</em> Ability to interact with older components</li>
+						<li><em>Forward compatibility:</em> Ability to interact with newer components</li>
+					</ul>
+					<li>The Web supports both compatibility types</li>
+					<ul>
+						<li><em>Backwards compatibility:</em> New browser accessing older content</li>
+						<li><em>Forward compatibility:</em> Old browser accessing newer content</li>
+					</ul>
+					<li>API compatibility depends on API scenarios</li>
+					<ul>
+						<li>Who controls API providers and API consumers?</li>
 					</ul>
 				</ul>
 			</slide>
