@@ -508,26 +508,26 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide id="service-api-version">
-				<title>Service vs. API Version</title>
+			<slide id="implementation-api-version">
+				<title>Implementation vs. API Version</title>
 				<ul>
-					<li><em>Service versions</em> may be internal information only</li>
+					<li><em>Implementation versions</em> may be internal information only</li>
 					<ul>
-						<li>Implementation information does not have to show up in the API</li>
-						<li>For internal/trusted/open cases service and API may be the same thing</li>
+						<li>Implementation details do not have to show up in the API</li>
+						<li>For internal/trusted/open cases implementation and API may be the same version</li>
 					</ul>
 					<li><em>API versions</em> are about changes that may affect consumers</li>
 					<ul>
-						<li><code>PATCH</code> does not change API design or behavior apart from increasing quality</li>
+						<li><code>PATCH</code> does not change API design or behavior apart from improving quality</li>
 						<li><code>MINOR</code> changes API behavior in a safe way</li>
-						<li><code>MAJOR</code> changes API behavior in ways that require client adaptations</li>
+						<li><code>MAJOR</code> changes API behavior in ways that require client changes</li>
 					</ul>
 					<li><code>PATCH</code>/<code>MINOR</code> may make sense to expose inside the API</li>
 					<li><code>MAJOR</code> means that there is a <em>different API</em> for the <em>same service</em></li>
 				</ul>
 			</slide>
 			<slide id="version-identification">
-				<title>Identifying Versions</title>
+				<title>Identifying API Versions</title>
 				<ul>
 					<li>Versioning may be necessary when the extension model is not working anymore</li>
 					<li>Three main ways how to distinguish between versions at the API level</li>
@@ -540,7 +540,7 @@
 					<ul>
 						<li>New URIs change resource identity which may result in data integration problems</li>
 						<li>Custom headers are specific for a service and hard to use in the general Web fabric</li>
-						<li>Media types often are not used by APIs or the clients consuming them</li>
+						<li>Media types often are not properly supported by APIs or the clients consuming them</li>
 					</ul>
 					<li>Most APIs choose URI-based versioning and introduce new <q>API identity</q></li>
 					<ul>
