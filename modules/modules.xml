@@ -519,7 +519,7 @@
 					<li><em>API versions</em> are about changes that may affect consumers</li>
 					<ul>
 						<li><code>PATCH</code> does not change API design or behavior apart from increasing quality</li>
-						<li><code>MINOR</code> does change API behavior but in a safe way</li>
+						<li><code>MINOR</code> changes API behavior in a safe way</li>
 						<li><code>MAJOR</code> changes API behavior in ways that require client adaptations</li>
 					</ul>
 					<li><code>PATCH</code>/<code>MINOR</code> may make sense to expose inside the API</li>
