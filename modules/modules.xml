@@ -495,7 +495,7 @@
 				<title><a href="http://semver.org/">Semantic Versioning</a></title>
 				<ul>
 					<li><a href="http://semver.org/">Semantic Versioning</a> standardizes the meaning of version numbers</li>
-					<li>Version numbers follow the <code>MAJOR.MINOR.PATCH</code> pattern and the following rules</li>
+					<li>Version numbers use <code>MAJOR.MINOR.PATCH</code> syntax and have well-defined semantics</li>
 					<ul>
 						<li>Increase <code>MAJOR</code> version for incompatible API changes</li>
 						<li>Increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
