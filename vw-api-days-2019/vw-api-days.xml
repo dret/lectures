@@ -613,6 +613,15 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="plan-for-evolution">
+				<title>Plan for Evolution</title>
+				<ul>
+					<li>Evolvable APIs do not just happen</li>
+					<li>Think about cost and economics for versioning</li>
+					<li>Separate API version and implementation version</li>
+					<li>Make evolution/versioning/deprecation part of API culture</li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks!</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
