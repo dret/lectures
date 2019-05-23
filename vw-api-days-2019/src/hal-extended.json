@@ -1,0 +1,11 @@
+{
+  "_links": {
+    "self": {"href": "/orders/124"},
+    "http://example.com/docs/rels/basket": {"href": "/baskets/97213"},
+    "http://example.com/docs/rels/customer": {"href": "/customers/12369"},
+    "http://example.com/docs/rels/cancel": {"href": "cancel"}
+  },
+  "total": 20,
+  "currency": "USD",
+  "status": "processing"
+}

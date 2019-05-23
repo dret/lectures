@@ -437,7 +437,8 @@
 					</ul>
 				</ul>
 			</slide>
-		</part>		<part id="robust-extensibility">
+		</part>
+		<part id="robust-extensibility">
 			<title>Robust Extensibility</title>
 			<slide id="core-semantics">
 				<title>Meaningful Core Semantics</title>
@@ -495,6 +496,58 @@
 						<li>If an API is used <a href="https://tools.ietf.org/html/draft-wilde-registries">in more complex ways</a> a registry may be a way to find extensions</li>
 					</ul>
 				</ul>
+			</slide>
+		</part>
+		<part id="extensibility-examples">
+			<title>Extensibility Examples</title>
+			<slide id="extensibility-content">
+				<title>Extensibility of Content</title>
+				<ul>
+					<li>Extending content can be done by <em>additive</em> changes to the content</li>
+					<ul>
+						<li><em>Adding properties</em> to the existing content model</li>
+						<li><em>Limiting properties</em> to a more constraining appearance/value model</li>
+					</ul>
+					<li>Extension can never change the semantics of existing content</li>
+					<ul>
+						<li><em>Ignoring</em> extensions always must be a safe thing to do</li>
+						<li><em>Dependencies across extensions</em> should be avoided if possible</li>
+					</ul>
+					<li>Specifying <em>extension points</em> depends on the representation format</li>
+				</ul>
+			</slide>
+			<slide id="extensible-content-xml">
+				<title>XML Content Extension</title>
+				<listing src="address.xml"/>
+				<listing src="address-extended.xml"/>
+			</slide>
+			<slide id="extensible-content-xsd">
+				<title>XML Content Extension: XSD Schema</title>
+				<listing src="address.xsd"/>
+			</slide>
+			<slide id="extensible-content-json">
+				<title>JSON Content Extension</title>
+				<listing src="address.json"/>
+				<listing src="address-extended.json"/>
+			</slide>
+			<slide id="extensibility-control">
+				<title>Extensibility of Controls</title>
+				<ul>
+					<li>Controls expose new paths of the workflow available to clients</li>
+					<ul>
+						<li>New paths should not have any impact on existing paths</li>
+						<li>Existing clients should ignore those paths</li>
+					</ul>
+					<li>Hypermedia formats should be based on controls being an open set</li>
+					<ul>
+						<li>Specifics on how to add and handle extensions depend on the format</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="hal-extension">
+				<title>Extending Controls in HAL</title>
+				<listing src="hal.json" href="http://stateless.co/hal_specification.html" line="30-37"/>
+				<listing src="hal-extended.json"/>
 			</slide>
 		</part>
 		<part id="conclusions">
