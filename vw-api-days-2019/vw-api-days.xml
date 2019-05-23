@@ -311,7 +311,7 @@
 	<presentation id="change-management">
 		<toc class="day">Tech Day</toc>
 		<title short="Change Management">API Change Management and Versioning</title>
-		<toc class="resources"><a href="https://www.mnot.net/blog/2012/06/25/http_api_complexity_model" title='Mark Nottingham, "HTTP API Complexity", June 2012'>API Complexity</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a></toc>
+		<toc class="resources"><a href="https://www.mnot.net/blog/2012/06/25/http_api_complexity_model" title='Mark Nottingham, "HTTP API Complexity", June 2012'>API Complexity</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a>&#160;· <a href="http://semver.org/" title='Semantic Versioning 2.0.0'>Semantic Versioning</a></toc>
 		<part id="change-management-introduction">
 			<title>Introduction</title>
 			<slide id="versioning-tweet-fielding">
@@ -548,6 +548,67 @@
 				<title>Extending Controls in HAL</title>
 				<listing src="hal.json" href="http://stateless.co/hal_specification.html" line="30-37"/>
 				<listing src="hal-extended.json"/>
+			</slide>
+		</part>
+		<part id="versioning-strategies">
+			<title>Versioning Strategies</title>
+			<slide id="semantic-versioning">
+				<title><a href="http://semver.org/">Semantic Versioning</a></title>
+				<ul>
+					<li><a href="http://semver.org/">Semantic Versioning</a> standardizes the meaning of version numbers</li>
+					<li>Version numbers use <code>MAJOR.MINOR.PATCH</code> syntax and have well-defined semantics</li>
+					<ul>
+						<li>Increase <code>MAJOR</code> version for incompatible API changes</li>
+						<li>Increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
+						<li>Increase <code>PATCH</code> version for making backwards-compatible bug fixes</li>
+					</ul>
+					<li>Mostly about how to name implementation artifacts but also applicable to APIs</li>
+					<ul>
+						<li>Exposing detailed version/patch information is a potential security risk</li>
+						<li>For well-designed APIs only <code>MINOR</code> may make sense to expose</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="implementation-api-version">
+				<title>Implementation vs. API Version</title>
+				<ul>
+					<li><em>Implementation versions</em> may be internal information only</li>
+					<ul>
+						<li>Implementation details do not have to show up in the API</li>
+						<li>For internal/trusted/open cases implementation and API may be the same version</li>
+					</ul>
+					<li><em>API versions</em> are about changes that may affect consumers</li>
+					<ul>
+						<li><code>PATCH</code> does not change API design or behavior apart from improving quality</li>
+						<li><code>MINOR</code> changes API behavior in a safe way</li>
+						<li><code>MAJOR</code> changes API behavior in ways that require client changes</li>
+					</ul>
+					<li><code>PATCH</code>/<code>MINOR</code> may make sense to expose inside the API</li>
+					<li><code>MAJOR</code> means that there is a <em>different API</em> for the <em>same service</em></li>
+				</ul>
+			</slide>
+			<slide id="version-identification">
+				<title>Identifying API Versions</title>
+				<ul>
+					<li>Versioning may be necessary when the extension model is not working anymore</li>
+					<li>Three main ways how to distinguish between versions at the API level</li>
+					<ul>
+						<li>Make version numbers part of the resource URI: <code>http://example.org/api/v2/</code></li>
+						<li>Use specific HTTP headers: <code>API-Version: 2.0.0</code></li>
+						<li>Use media types: <code>Accept: application/vnd.example.org.v2+json</code></li>
+					</ul>
+					<li>All of these have side-effects which have to be balanced</li>
+					<ul>
+						<li>New URIs change resource identity which may result in data integration problems</li>
+						<li>Custom headers are specific for a service and hard to use in the general Web fabric</li>
+						<li>Media types often are not properly supported by APIs or the clients consuming them</li>
+					</ul>
+					<li>Most APIs choose URI-based versioning and introduce new <q>API identity</q></li>
+					<ul>
+						<li>Versioning at this level is little more than <q>keeping the API brand</q></li>
+						<li>Version numbers can be used <em>anywhere</em> in the URI path</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
