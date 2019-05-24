@@ -692,7 +692,7 @@
 					</ul>
 					<li><em>API versions</em> are about changes that may affect consumers</li>
 					<ul>
-						<li><code>PATCH</code> does not change API design or behavior apart from improving quality</li>
+						<li><code>PATCH</code> does not change API design or behavior</li>
 						<li><code>MINOR</code> changes API behavior in a safe way</li>
 						<li><code>MAJOR</code> changes API behavior in ways that require client changes</li>
 					</ul>
