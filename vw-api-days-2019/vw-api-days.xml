@@ -172,6 +172,21 @@
 		<toc class="resources"><a href="https://medium.com/capital-one-tech/the-role-of-product-management-in-api-design-988f295b989" title='Matthew Reinbold, "The Role of Product Management in API Design", April 3, 2018'>Product Management in API Design</a>&#160;· <a href="https://medium.com/capital-one-tech/api-product-ownership-is-key-for-api-adoption-6a12c64b2c83" title='James Higginbotham, "API Product Ownership is Key for API Adoption", February 19, 2018'>API Product Ownership</a></toc>
 		<part id="user-journey">
 			<title>User Journeys</title>
+			<slide id="ux-focus">
+				<title>Focusing on the User</title>
+				<ul>
+					<li>4-12 steps of user interactions with a product</li>
+					<ul>
+						<li>Based on personas that capture goals, motivations, and pains</li>
+						<li>Often based on assumptions of interactions with tangible products</li>
+					</ul>
+					<li>For API focus remove any assumptions on specific UI</li>
+					<ul>
+						<li>If UI products are the target details can be filled in later</li>
+						<li>If API products are the target there is no need for UI/UX details</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
