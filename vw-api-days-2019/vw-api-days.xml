@@ -200,6 +200,22 @@
 		</part>
 		<part id="platform-strategy">
 			<title>API Platform Strategy</title>
+			<slide id="platform">
+				<title>What is an API Platform?</title>
+				<ul>
+					<li>API platforms help with building API products</li>
+					<ul>
+						<li>APIs that can be used as part of new APIs</li>
+						<li>Support and tooling for creating APIs as part of an API landscape (API management)</li>
+						<li>Support and tooling for developing APIs (API implementation)</li>
+					</ul>
+					<li>API platforms emerge as a result of strategy and programs</li>
+					<ul>
+						<li><em>API Strategy</em> defines <em>what</em> an API platform should encompass</li>
+						<li><em>API Program</em> defines <em>how</em> to make the platform a reality</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
