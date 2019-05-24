@@ -173,7 +173,7 @@
 		<part id="user-journey">
 			<title>User Journeys</title>
 			<slide id="ux-focus">
-				<title>Focusing on the User</title>
+				<title>Focusing on the User (UX)</title>
 				<ul>
 					<li>4-12 steps of user interactions with a product</li>
 					<ul>
@@ -184,6 +184,16 @@
 					<ul>
 						<li>If UI products are the target details can be filled in later</li>
 						<li>If API products are the target there is no need for UI/UX details</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="dx-focus">
+				<title>Focusing on the Developer (DX)</title>
+				<ul>
+					<li>Removing all assumptions about the UI</li>
+					<ul>
+						<li>Interactions are simply about information exchanges</li>
+						<li>Interactions can follow various patterns of information exchange</li>
 					</ul>
 				</ul>
 			</slide>
