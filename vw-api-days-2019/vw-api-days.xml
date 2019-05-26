@@ -223,55 +223,6 @@
 					</ul>
 				</ul>
 			</slide>
-		</part>
-		<part id="user-story">
-			<title>User Stories</title>
-			<slide id="ux-focus">
-				<title>Focusing on the User (UX)</title>
-				<ul>
-					<li>4-12 steps of user interactions with a product</li>
-					<ul>
-						<li>Based on personas that capture goals, motivations, and pains</li>
-						<li>Often based on assumptions of interactions with tangible products</li>
-					</ul>
-					<li>For API focus remove any assumptions on specific UI</li>
-					<ul>
-						<li>If UI products are the target details can be filled in later</li>
-						<li>If API products are the target there is no need for UI/UX details</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="dx-focus">
-				<title>Focusing on the Developer (DX)</title>
-				<ul>
-					<li>Removing all assumptions about the UI</li>
-					<ul>
-						<li>Interactions are simply about information exchanges</li>
-						<li>Interactions can follow various patterns of information exchange</li>
-					</ul>
-					<li>Capturing interaction details with some structure can help</li>
-					<ul>
-						<li>Capture user story in structured form such as the <a href="https://www.apiacademy.co/articles/2017/06/the-microservice-design-canvas">microservice design canvas</a></li>
-						<li>Break down complex stories into smaller steps and services</li>
-						<li>Use <q>atomic</q> services as starting points for API design</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="design-canvas-blank">
-				<title>Microservice Design Canvas</title>
-				<img src="microservice-canvas-blank.png" href="https://www.apiacademy.co/articles/2017/06/the-microservice-design-canvas" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="design-canvas-ccpm">
-				<title>Canvas: Customer-Centric Payments Management</title>
-				<img src="microservice-canvas-ccpm.png" href="https://www.apiacademy.co/articles/2017/06/the-microservice-design-canvas" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="design-canvas-ccpa">
-				<title>Canvas: Customer-Centric Payments Authorization</title>
-				<img src="microservice-canvas-ccpa.png" href="https://www.apiacademy.co/articles/2017/06/the-microservice-design-canvas" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-		</part>
-		<part id="platform-strategy">
-			<title>API Platform Strategy</title>
 			<slide id="strategy">
 				<title>API Strategy = Pillars × Perspectives</title>
 				<table style="border-collapse: collapse ; ">
@@ -321,22 +272,51 @@
 					</tr>
 				</table>
 			</slide>
-			<slide id="program">
-				<title>API Program</title>
+		</part>
+		<part id="user-story">
+			<title>User Stories</title>
+			<slide id="ux-focus">
+				<title>Focusing on the User (UX)</title>
 				<ul>
-					<li>From vision to strategy to execution</li>
+					<li>4-12 steps of user interactions with a product</li>
 					<ul>
-						<li><em>Vision (why):</em> APIs are a necessary part of digital transformation</li>
-						<li><em>Strategy (what):</em> What do we want to do with APIs and what APIs do we want?</li>
-						<li><em>Program (how):</em> How do we establish/nurture/evolve/manage our API landscape?</li>
+						<li>Based on personas that capture goals, motivations, and pains</li>
+						<li>Often based on assumptions of interactions with tangible products</li>
 					</ul>
-					<li>API programs are supposed to operate continuously</li>
+					<li>For API focus remove any assumptions on specific UI</li>
 					<ul>
-						<li>Individual products are added and modified and removed</li>
-						<li>The landscape of products and dependencies changes continuously</li>
-						<li>Continuous architecting evolves the landscape over time</li>
+						<li>If UI products are the target details can be filled in later</li>
+						<li>If API products are the target there is no need for UI/UX details</li>
 					</ul>
 				</ul>
+			</slide>
+			<slide id="dx-focus">
+				<title>Focusing on the Developer (DX)</title>
+				<ul>
+					<li>Removing all assumptions about the UI</li>
+					<ul>
+						<li>Interactions are simply about information exchanges</li>
+						<li>Interactions can follow various patterns of information exchange</li>
+					</ul>
+					<li>Capturing interaction details with some structure can help</li>
+					<ul>
+						<li>Capture user story in structured form such as the <a href="https://www.apiacademy.co/articles/2017/06/the-microservice-design-canvas">microservice design canvas</a></li>
+						<li>Break down complex stories into smaller steps and services</li>
+						<li>Use <q>atomic</q> services as starting points for API design</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="design-canvas-blank">
+				<title>Microservice Design Canvas</title>
+				<img src="microservice-canvas-blank.png" href="https://www.apiacademy.co/articles/2017/06/the-microservice-design-canvas" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="design-canvas-ccpm">
+				<title>Canvas: Customer-Centric Payments Management</title>
+				<img src="microservice-canvas-ccpm.png" href="https://www.apiacademy.co/articles/2017/06/the-microservice-design-canvas" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="design-canvas-ccpa">
+				<title>Canvas: Customer-Centric Payments Authorization</title>
+				<img src="microservice-canvas-ccpa.png" href="https://www.apiacademy.co/articles/2017/06/the-microservice-design-canvas" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
 		<part id="conclusions">
