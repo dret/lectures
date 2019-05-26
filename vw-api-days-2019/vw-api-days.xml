@@ -237,6 +237,12 @@
 						<li>Interactions are simply about information exchanges</li>
 						<li>Interactions can follow various patterns of information exchange</li>
 					</ul>
+					<li>Capturing interaction details with some structure can help</li>
+					<ul>
+						<li>Capture user story in structured form such as the <a href="https://www.apiacademy.co/articles/2017/06/the-microservice-design-canvas">microservice design canvas</a></li>
+						<li>Break down complex stories into smaller steps and services</li>
+						<li>Use <q>atomic</q> services as starting points for API design</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
