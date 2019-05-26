@@ -174,6 +174,22 @@
 		<toc class="resources"><a href="https://medium.com/capital-one-tech/the-role-of-product-management-in-api-design-988f295b989" title='Matthew Reinbold, "The Role of Product Management in API Design", April 3, 2018'>Product Management in API Design</a>&#160;· <a href="https://medium.com/capital-one-tech/api-product-ownership-is-key-for-api-adoption-6a12c64b2c83" title='James Higginbotham, "API Product Ownership is Key for API Adoption", February 19, 2018'>API Product Ownership</a>&#160;· <a href="https://www.apiacademy.co/articles/2017/06/the-microservice-design-canvas" title='Matt McLarty, "The Microservice Design Canvas", June 22, 2017'>Microservice Design Canvas</a></toc>
 		<part id="api-products">
 			<title>API Products</title>
+			<slide id="api-first">
+				<title>API First: Everything is an API</title>
+				<ul>
+					<li><a href="https://gist.github.com/chitchcock/1281611">Jeff Bezos' Mandate</a> focuses on <q>API products</q></li>
+					<ul>
+						<li>Loose coupling means to look at <em>products as APIs</em></li>
+						<li>All dependencies have to be designed and built as APIs</li>
+					</ul>
+					<li>API products are built by thinking about interactions</li>
+					<ol>
+						<li>The API is the <em>first UI</em></li>
+						<li>APIs are designed before anything is implemented</li>
+						<li>APIs are the primary means of team communications</li>
+					</ol>
+				</ul>
+			</slide>
 			<slide id="api-foundation">
 				<title>Strategy → Program → Platform</title>
 				<ul>
