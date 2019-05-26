@@ -174,6 +174,27 @@
 		<toc class="resources"><a href="https://medium.com/capital-one-tech/the-role-of-product-management-in-api-design-988f295b989" title='Matthew Reinbold, "The Role of Product Management in API Design", April 3, 2018'>Product Management in API Design</a>&#160;· <a href="https://medium.com/capital-one-tech/api-product-ownership-is-key-for-api-adoption-6a12c64b2c83" title='James Higginbotham, "API Product Ownership is Key for API Adoption", February 19, 2018'>API Product Ownership</a>&#160;· <a href="https://www.apiacademy.co/articles/2017/06/the-microservice-design-canvas" title='Matt McLarty, "The Microservice Design Canvas", June 22, 2017'>Microservice Design Canvas</a></toc>
 		<part id="api-products">
 			<title>API Products</title>
+			<slide id="api-foundation">
+				<title>Strategy → Program → Platform</title>
+				<ul>
+					<li>Product platforms are useful to more effectively build complex products</li>
+					<ul>
+						<li>Platforms provide foundations for building new products</li>
+						<li>Products contribute to the platform as new components</li>
+					</ul>
+					<li>API products are a bit different from regular products</li>
+					<ul>
+						<li>API products change often to adapt to changing needs</li>
+						<li>API products can be hard to find in complex landscapes</li>
+						<li>API products have runtime dependencies</li>
+					</ul>
+					<li>API platforms are a bit different from regular platforms</li>
+					<ul>
+						<li>API platforms are never finished and continuously evolving</li>
+						<li>API platforms ask every product to contribute</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="user-journey">
 			<title>User Journeys</title>
