@@ -53,7 +53,12 @@
 	</presentation>
 	<presentation id="intro">
 		<title short="Introduction">Introduction: Why? What? How?</title>
+		<toc class="abstract">The rapidly evolving "Web of Services" is based on a diverse set of approaches and technologies. This can make architectural decisions hard when it comes to choosing on how to expose information and services through an API. This challenge becomes more pronounced in organizations with continuously evolving API landscapes. This tutorial takes participants through two different journeys: (1) Discussing API styles and API technologies, comparing and contrasting them as a way to highlight the fact that there is no such thing as the best choice. (2) How to define an API strategy that helps teams to make effective choices about APIs in a given context, and how to manage that context over time in landscapes of thousands of evolving APIs.</toc>
 		<toc class="resources"><a href="https://www.goodapi.co/">Good API</a>&#160;· <a href="http://shop.oreilly.com/product/0636920201755.do" title="Mehdi Medjaoui, Erik Wilde, Ronnie Mitra, and Mike Amundsen, 'Continuous API Management: Making the Right Decisions in an Evolving Landscape', O'Reilly Media, December 2018">CAM Book</a>&#160;· <a href="http://shop.oreilly.com/product/0636920050308.do" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 		<part id="intro">
 			<title>Introduction</title>
 			<slide id="dretwitter">
