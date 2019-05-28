@@ -137,7 +137,7 @@
 	</presentation>
 	<presentation id="digitaltransformation">
 		<title short="Digital Transformation">Digital Transformation: Why? What? How?</title>
-		<toc class="resources"></toc>
+		<toc class="resources"><a href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" title='Gregor Hohpe, "Reverse Engineering the Organization", May 2018'>Reverse Engineering the Organization</a></toc>
 		<part id="why">
 			<title>Digital Transformation: Why?</title>
 			<slide id="digital-transformation">
@@ -156,6 +156,10 @@
 		</part>
 		<part id="what">
 			<title>Digital Transformation: What?</title>
+			<slide id="digital-transformation-status">
+				<title>Digital Transformation Status</title>
+				<img href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" src="cio-reporting-line.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 		</part>
 		<part id="how">
 			<title>Digital Transformation: How?</title>
