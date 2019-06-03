@@ -121,22 +121,28 @@
 			<slide id="plumbing">
 				<title>APIs are Digital Transformation's Plumbing</title>
 			</slide>
+			<part id="landscape">
+				<title>API Landscape Considerations</title>
+			</part>
 		</part>
-		<part id="provider">
-			<title>API Provider Design</title>
+		<part id="biz-aspects">
+			<title>Business Considerations</title>
 		</part>
-		<part id="consumer">
-			<title>API Consumer Design</title>
-		</part>
-		<part id="runtime">
-			<title>Runtime Support</title>
+		<part id="tech-aspects">
+			<title>Technology Considerations</title>
+			<slide id="provider">
+				<title>API Provider Design</title>
+			</slide>
+			<slide id="consumer">
+				<title>API Consumer Design</title>
+			</slide>
 			<slide id="hyrums-law">
 				<title>Hyrum's Law</title>
 				<blockquote><q href="http://www.hyrumslaw.com/">With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors of your system will be depended on by somebody.</q> (Hyrum Wright)</blockquote>
 			</slide>
-		</part>
-		<part id="landscape">
-			<title>API Landscape Considerations</title>
+			<slide id="runtime">
+				<title>Runtime Support</title>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
