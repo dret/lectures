@@ -204,6 +204,24 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="scope">
+				<title>Determining API Scope</title>
+				<img href="https://www.flickr.com/photos/wwworks/2472230611/" src="lego.jpg" title="Good API" style="float: right ; width : 20% ; margin : 2% ; "/>
+				<ul>
+					<li>Building blocks work best when they have basic and reusable shapes</li>
+					<li>Understanding users is the best way to design building blocks</li>
+					<ul>
+						<li>Having integrations can be a great starting point</li>
+						<li><em>User stories</em> can be great ways of understanding needs</li>
+						<li><em>API stories</em> remove UI focus from existing user stories</li>
+					</ul>
+					<li>Part of the design exercise is to design for <em>future users</em></li>
+					<ul>
+						<li>Come up with scenarios that you see as future markets</li>
+						<li>Aggregate needs across scenarios and stories into APIs</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="tech-aspects">
 			<title>Technology Considerations</title>
