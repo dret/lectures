@@ -205,8 +205,28 @@
 		</part>
 		<part id="tech-aspects">
 			<title>Technology Considerations</title>
-			<slide id="provider">
-				<title>API Provider Design</title>
+			<slide id="robust-extensibility">
+				<title><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a></title>
+				<ul>
+					<li>Meaningful Core Semantics</li>
+					<ul>
+						<li>The core of the API allows clients to have meaningful interactions</li>
+						<li>The core of the API is robust over time</li>
+						<li>Anything that is not part of the core can be safely ignored</li>
+					</ul>
+					<li>Well-Defined Extension Points</li>
+					<ul>
+						<li>APIs should be clear about where extensions are allowed</li>
+						<li>API tests can make sure that the extension points are properly implemented</li>
+						<li>Extension points are interesting to support in generic software</li>
+					</ul>
+					<li>Well-Defined Processing Model</li>
+					<ul>
+						<li>Extensions are well-defined and their handling is well-defined as well</li>
+						<li><code>mustIgnore</code> is a popular and good choice for extension processing</li>
+						<li>How to <em>learn</em> about extensions is a different matter</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="consumer">
 				<title>API Consumer Design</title>
