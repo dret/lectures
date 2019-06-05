@@ -184,6 +184,24 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="loose-coupling-essence">
+				<title>Loose Coupling is Essential</title>
+				<ul>
+					<li>APIs without loose coupling are not (really) APIs</li>
+					<ul>
+						<li>APIs are not designed specifically for one consumer</li>
+						<li>Reused APIs should have a model how to decouple evolution</li>
+					</ul>
+					<li>Loose coupling is fuzzy but still an important quality</li>
+					<ul>
+						<li>Decoupling the API from other domains</li>
+						<li>Decoupling the API from consumer specifics</li>
+						<li>Decoupling the API from the implementation</li>
+						<li>Decoupling the API from consumer technology</li>
+						<li>Decoupling the API from a specific release</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="tech-aspects">
 			<title>Technology Considerations</title>
