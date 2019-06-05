@@ -82,7 +82,13 @@
 						<li><a href="http://shop.oreilly.com/product/0636920201755.do">O'Reilly book page</a></li>
 						<li><a href="https://www.amazon.com/Continuous-Api-Management-Decisions-Landscape/dp/1492043559">Amazon book page</a></li>
 					</ul>
-					<li>Authored by <a href="http://www.apiacademy.co/">API Academy</a> members Mehdi Medjaoui, Erik Wilde, Ronnie Mitra, and Mike Amundsen</li>
+					<li>Authored by 2018 <a href="http://www.apiacademy.co/">API Academy</a> members</li>
+					<ul>
+						<li><a href="http://www.apiacademy.co/team_member/mehdi-medjaoui/">Mehdi Medjaoui</a>: <a href="http://twitter.com/medjawii" class="twitter-follow-button" title="Mehdi Medjaoui on Twitter: @medjawii"><code>@medjawii</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li><a href="http://www.apiacademy.co/team_member/erik-wilde/">Erik Wilde</a>: <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li><a href="http://www.apiacademy.co/team_member/ronnie-mitra/">Ronnie Mitra</a>: <a href="http://twitter.com/mitraman" class="twitter-follow-button" title="Ronnie Mitra on Twitter: @mitraman"><code>@mitraman</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li><a href="http://www.apiacademy.co/team_member/mike-amundsen/">Mike Amundsen</a>: <a href="http://twitter.com/mamund" class="twitter-follow-button" title="Mike Amundsen on Twitter: @mamund"><code>@mamund</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
@@ -129,6 +135,23 @@
 					<ul>
 						<li>Business and IT may historically be far from each other</li>
 						<li>There may be a tradition of seeing IT as <q>just implementation</q></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="duality">
+				<title>API Value Duality</title>
+				<ul>
+					<li><em>Partners/Public API use</em> enables API economy participation</li>
+					<ul>
+						<li><em>Exposing APIs</em> expands the footprint of available products</li>
+						<li><em>Using APIs</em> allows building value chains across organizations</li>
+						<li>With great power comes great responsibility</li>
+					</ul>
+					<li><em>Private API use</em> fulfills the goal of business-level agility</li>
+					<ul>
+						<li>Every capability is designed and built to be used separately</li>
+						<li>Managing APIs becomes synonymous with managing business capabilities</li>
+						<li>The organization itself becomes platform-driven</li>
 					</ul>
 				</ul>
 			</slide>
