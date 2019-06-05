@@ -229,7 +229,16 @@
 				</ul>
 			</slide>
 			<slide id="consumer">
-				<title>API Consumer Design</title>
+				<title><a href="http://dret.net/lectures/www-2019/">API Consumer Design</a></title>
+				<ul>
+					<li><em>Risk:</em> Is it worth taking the risk of a dependency?</li>
+					<li><em>Replacement:</em> Are there plans for temporary/permanent replacements?</li>
+					<li><em>Redundancy:</em> Is there a failover API to use during outages?</li>
+					<li><em>Resilience:</em> Is the client handling API problems responsibly?</li>
+					<li><em>Rightsizing:</em> Is the scope well-defined and at the right size?</li>
+					<li><em>Representation:</em> Is the client isolating the specific API model?</li>
+					<li><em>Reporting:</em> Is the dependency monitored for analytics and errors?</li>
+				</ul>
 			</slide>
 			<slide id="hyrums-law">
 				<title>Hyrum's Law</title>
