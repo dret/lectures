@@ -166,24 +166,6 @@
 					</ul>
 				</ul>
 			</slide>
-		</part>
-		<part id="biz-aspects">
-			<title>Business Considerations</title>
-			<slide id="platforms">
-				<title>API Platforms</title>
-				<ul>
-					<li>Platforms are more than externally-facing environments</li>
-					<ul>
-						<li>For example, <em>automotive platforms</em> have revolutionized car design and manufacturing</li>
-						<li>Platforms ideally reach deep into an organization's business model</li>
-					</ul>
-					<li>Think of <em>API platforms</em> as your new way of <em>building everything</em></li>
-					<ul>
-						<li>All APIs should be designed to allow independent evolution of peers</li>
-						<li>APIs are easier to evolve when they clearly cover one domain</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="loose-coupling-essence">
 				<title>Loose Coupling is Essential</title>
 				<ul>
@@ -199,6 +181,24 @@
 						<li>Decoupling the API from the implementation</li>
 						<li>Decoupling the API from consumer technology</li>
 						<li>Decoupling the API from a specific release</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="biz-aspects">
+			<title>Business Considerations</title>
+			<slide id="platforms">
+				<title>API Platforms</title>
+				<ul>
+					<li>Platforms are more than externally-facing environments</li>
+					<ul>
+						<li>For example, <em>automotive platforms</em> have revolutionized car design and manufacturing</li>
+						<li>Platforms ideally reach deep into an organization's business model</li>
+					</ul>
+					<li>Think of <em>API platforms</em> as your new way of <em>building everything</em></li>
+					<ul>
+						<li>All APIs should be designed to allow independent evolution of peers</li>
+						<li>APIs are easier to evolve when they clearly cover one domain</li>
 					</ul>
 				</ul>
 			</slide>
