@@ -48,7 +48,7 @@
 			</tbody>
 		</table>
 	</toc>
-	<presentation id="intro">
+	<presentation id="introduction">
 		<title short="Introduction">Introduction and Schedule</title>
 		<toc class="abstract">APIs are a necessary ingredient of digital transformation strategies. APIs are developed and evolved in ecosystems of existing APIs and existing guidelines and supporting tools. This tutorial provides a structured analysis and assessment of the state of your current API landscape. It also allows you to decide how to allocate resources and make strategic investments for improving your API program.</toc>
 		<toc class="resources"><a href="https://www.goodapi.co/">Good API</a>&#160;· <a href="http://shop.oreilly.com/product/0636920201755.do" title="Mehdi Medjaoui, Erik Wilde, Ronnie Mitra, and Mike Amundsen, 'Continuous API Management: Making the Right Decisions in an Evolving Landscape', O'Reilly Media, December 2018">CAM Book</a>&#160;· <a href="http://shop.oreilly.com/product/0636920050308.do" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>
@@ -120,6 +120,59 @@
 						<li>Erik Wilde: <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
 						<li>Ronnie Mitra: <a href="http://twitter.com/mitraman" class="twitter-follow-button" title="Ronnie Mitra on Twitter: @mitraman"><code>@mitraman</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
 						<li>Mike Amundsen: <a href="http://twitter.com/mamund" class="twitter-follow-button" title="Mike Amundsen on Twitter: @mamund"><code>@mamund</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="overview">
+			<title>Tutorial Overview</title>
+			<slide id="api-growth">
+				<title>API Growth</title>
+				<ul>
+					<li>APIs are the Web pages of the machine Web</li>
+					<ul>
+						<li>Connectivity within and across organizations</li>
+						<li><em>Inside</em> and <em>outside</em> depends on context and shifts over time</li>
+					</ul>
+					<li>Allowing decentralization with some level of standardization</li>
+					<ul>
+						<li><em>Decentralization</em> allows teams and capabilities to be developed faster</li>
+						<li><em>Standardization</em> results in a more uniform and accessible landscape</li>
+					</ul>
+					<li>Learning from the (UI) Web</li>
+					<ul>
+						<li>Standardize enabling technologies to design and build access to information/services</li>
+						<li>Refrain from standardizing domain models</li>
+						<li>Evolve the ecosystem by observing usage and providing guidance and support</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="schedule">
+				<title>Schedule</title>
+				<ul>
+					<li>Part I: API Motivation and API Design/Production</li>
+					<ul>
+						<li>Session 1: 9.00-9.45</li>
+						<ul>
+							<li><link href="introduction"/></li>
+							<li><link href="digitaltransformation"/></li>
+							<li><link href="businessvalue"/></li>
+						</ul>
+						<li>Session 2: 9.45-10.30</li>
+						<ul>
+							<li><a href="design.pdf">API Design</a></li>
+						</ul>
+					</ul>
+					<li>Part II: Scaling Up: Consumers, Landscape, Strategy, and Program</li>
+					<ul>
+						<li>Session 3: 11.00-11.45</li>
+						<ul>
+							<li><a href="consumption.pdf">API Consumption</a></li>
+						</ul>
+						<li>Session 4: 11.45-12.30</li>
+						<ul>
+							<li><link href="scaling"/></li>
+						</ul>
 					</ul>
 				</ul>
 			</slide>
@@ -241,6 +294,26 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks!</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/oreilly-sa-ca-2019"><code>dret.net/lectures/oreilly-sa-ca-2019</code></a></li>
+					<li>More information about myself:</li>
+					<ul>
+						<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+						<li>LinkedIn: <a href="http://www.linkedin.com/in/netdret"><code>linkedin.com/in/netdret</code></a></li>
+						<li>Web page: <a href="http://dret.net/netdret/"><code>dret.net/netdret/</code></a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="scaling">
+		<title short="Scaling the Practice">Scaling the API Practice: Landscape, Strategy, and Program</title>
+		<toc class="resources"></toc>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
