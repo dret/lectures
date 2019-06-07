@@ -160,7 +160,7 @@
 						</ul>
 						<li>Session 2: 9.45-10.30</li>
 						<ul>
-							<li><a href="design.pdf">API Design</a></li>
+							<li><a href="design.pdf">API Product Design</a></li>
 						</ul>
 					</ul>
 					<li>Part II: Scaling Up: Consumers, Landscape, Strategy, and Program</li>
@@ -311,8 +311,14 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation external="design.pdf">
+		<title>API Product Design</title>
+	</presentation>
+	<presentation external="consumption.pdf">
+		<title>API Consumption</title>
+	</presentation>
 	<presentation id="scaling">
-		<title short="Scaling the Practice">Scaling the API Practice: Landscape, Strategy, and Program</title>
+		<title short="Scaling">Scaling the API Practice: Landscape, Strategy, and Program</title>
 		<toc class="resources"></toc>
 		<part id="conclusions">
 			<title>Conclusions</title>
