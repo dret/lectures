@@ -156,7 +156,6 @@
 						<ul>
 							<li><link href="introduction"/></li>
 							<li><link href="digitaltransformation"/></li>
-							<li><link href="businessvalue"/></li>
 						</ul>
 						<li>Session 2: 9.45-10.30</li>
 						<ul>
@@ -196,69 +195,7 @@
 	</presentation>
 	<presentation id="digitaltransformation">
 		<title short="Digital Transformation">Digital Transformation: Why? What? How?</title>
-		<toc class="resources"><a href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" title='Gregor Hohpe, "Reverse Engineering the Organization", May 2018'>Reverse Engineering the Organization</a>&#160;· <a href="http://dret.net/lectures/api-days-zurich-2019/" title='Erik Wilde, "The Three Pillars of API Strategy", API Days Zurich 2019, Zurich, Switzerland, 5/21/2019'>Three API Strategy Pillars</a></toc>
-		<part id="why">
-			<title>Digital Transformation: Why?</title>
-			<slide id="digital-transformation">
-				<title>Digital Transformation</title>
-				<img src="bear-digital-transformation.jpg" title="Digital Transformation: Because being more agile than the competition just may be a good idea..." style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="global-challenge">
-				<title>Digital Transformation: The Global Challenge</title>
-				<img title="Japan" src="godzilla-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 5% ; "/>
-				<img title="Australia" src="crocodile-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
-				<img title="India" src="viper-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
-				<img title="Poland" src="wolf-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 5% ; "/>
-				<img title="Colombia" src="jaguar-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
-				<img title="South Africa" src="shark-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
-			</slide>
-			<slide id="chasm">
-				<title><a href="https://devops.com/7-big-digital-transformation-trends/">Digital Transformation Chasm</a></title>
-				<img href="https://devops.com/7-big-digital-transformation-trends/" src="it-business-chasm.png" title="IT and Business Leadership Chasm Widen: According to research firm consultancy Capgemini, there appears to be a growing disconnect between the CIO and senior business executives. Capgemini’s research found that while in 2012, 65% of organizations believed that the CIO and senior business executives possessed a shared understanding of the role of IT in their organization. In their most recent survey, that figure dropped to 37%. Additionally, Capgemini found, 59% of enterprise respondents in 2012 believed that the CIO and senior business executives had a shared understanding of how IT could be used to increase organizational productivity. That figure also declined precipitously, hitting 35% in 2018." style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="problems">
-				<title>Digital Transformation is Hard</title>
-				<img title="Managing the API Strategy Pillars: Assessment, Enablement, Coaching" src="services-cycle.png" style=" float: right ; width : 30% ; margin : 2% ;  "/>
-				<ul>
-					<li>Only looking at technology will miss <a href="http://dret.net/lectures/api-days-zurich-2019/" title='Erik Wilde, "The Three Pillars of API Strategy", API Days Zurich 2019, Zurich, Switzerland, 5/21/2019'>important pillars</a></li>
-					<ul>
-						<li><em>Technology</em> is necessary for digitalized value chains</li>
-						<li><em>Business</em> needs to embrace technology to realize value</li>
-						<li><em>Teams</em> must be enabled and empowered to work differently</li>
-					</ul>
-				</ul>
-			</slide>
-		</part>
-		<part id="what">
-			<title>Digital Transformation: What?</title>
-			<slide id="digital-transformation-status">
-				<title>Digital Transformation Status</title>
-				<img href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" src="cio-reporting-line.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-		</part>
-		<part id="how">
-			<title>Digital Transformation: How?</title>
-		</part>
-		<part id="conclusions">
-			<title>Conclusions</title>
-			<slide id="q-and-a">
-				<title>Thanks!</title>
-				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
-				<ul>
-					<li>Slides online: <a href="http://dret.net/lectures/oreilly-sa-ca-2019"><code>dret.net/lectures/oreilly-sa-ca-2019</code></a></li>
-					<li>More information about myself:</li>
-					<ul>
-						<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
-						<li>LinkedIn: <a href="http://www.linkedin.com/in/netdret"><code>linkedin.com/in/netdret</code></a></li>
-						<li>Web page: <a href="http://dret.net/netdret/"><code>dret.net/netdret/</code></a></li>
-					</ul>
-				</ul>
-			</slide>
-		</part>
-	</presentation>
-	<presentation id="businessvalue">
-		<title short="Business Value">The Business Value of APIs</title>
-		<toc class="resources"><a href="http://dret.net/lectures/api-days-finland-2019/" title='Erik Wilde, "Enjoy Responsibly: Minimizing Coupling for API Consumption", API Days Finland 2019, Helsinki, Finland, 6/5/2019'>Loose Coupling</a></toc>
+		<toc class="resources"><a href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" title='Gregor Hohpe, "Reverse Engineering the Organization", May 2018'>Reverse Engineering the Organization</a>&#160;· <a href="http://dret.net/lectures/api-days-zurich-2019/" title='Erik Wilde, "The Three Pillars of API Strategy", API Days Zurich 2019, Zurich, Switzerland, 5/21/2019'>Three API Strategy Pillars</a>&#160;· <a href="http://dret.net/lectures/api-days-finland-2019/" title='Erik Wilde, "Enjoy Responsibly: Minimizing Coupling for API Consumption", API Days Finland 2019, Helsinki, Finland, 6/5/2019'>Loose Coupling</a></toc>
 		<part id="bezos-mnandate">
 			<title>The Bezos Mandate (2002)</title>
 			<slide id="bezos-rules">
@@ -293,8 +230,44 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="why">
+			<title>Digital Transformation: Why? What? How?</title>
+			<slide id="digital-transformation">
+				<title>Digital Transformation</title>
+				<img src="bear-digital-transformation.jpg" title="Digital Transformation: Because being more agile than the competition just may be a good idea..." style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="global-challenge">
+				<title>Digital Transformation: The Global Challenge</title>
+				<img title="Japan" src="godzilla-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 5% ; "/>
+				<img title="Australia" src="crocodile-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
+				<img title="India" src="viper-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
+				<img title="Poland" src="wolf-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 5% ; "/>
+				<img title="Colombia" src="jaguar-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
+				<img title="South Africa" src="shark-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
+			</slide>
+			<slide id="chasm">
+				<title><a href="https://devops.com/7-big-digital-transformation-trends/">Digital Transformation Chasm</a></title>
+				<img href="https://devops.com/7-big-digital-transformation-trends/" src="it-business-chasm.png" title="IT and Business Leadership Chasm Widen: According to research firm consultancy Capgemini, there appears to be a growing disconnect between the CIO and senior business executives. Capgemini’s research found that while in 2012, 65% of organizations believed that the CIO and senior business executives possessed a shared understanding of the role of IT in their organization. In their most recent survey, that figure dropped to 37%. Additionally, Capgemini found, 59% of enterprise respondents in 2012 believed that the CIO and senior business executives had a shared understanding of how IT could be used to increase organizational productivity. That figure also declined precipitously, hitting 35% in 2018." style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="problems">
+				<title>Digital Transformation is Hard</title>
+				<img title="Managing the API Strategy Pillars: Assessment, Enablement, Coaching" src="services-cycle.png" style=" float: right ; width : 30% ; margin : 2% ;  "/>
+				<ul>
+					<li>Only looking at technology will miss <a href="http://dret.net/lectures/api-days-zurich-2019/" title='Erik Wilde, "The Three Pillars of API Strategy", API Days Zurich 2019, Zurich, Switzerland, 5/21/2019'>important pillars</a></li>
+					<ul>
+						<li><em>Technology</em> is necessary for digitalized value chains</li>
+						<li><em>Business</em> needs to embrace technology to realize value</li>
+						<li><em>Teams</em> must be enabled and empowered to work differently</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="digital-transformation-status">
+				<title>Digital Transformation Status</title>
+				<img href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" src="cio-reporting-line.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
 		<part>
-			<title>The API Value</title>
+			<title>API Business Value</title>
 			<slide id="api101">
 				<title>API 101</title>
 				<img src="api-value-101.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
