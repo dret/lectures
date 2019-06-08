@@ -258,7 +258,7 @@
 	</presentation>
 	<presentation id="businessvalue">
 		<title short="Business Value">The Business Value of APIs</title>
-		<toc class="resources"></toc>
+		<toc class="resources"><a href="http://dret.net/lectures/api-days-finland-2019/" title='Erik Wilde, "Enjoy Responsibly: Minimizing Coupling for API Consumption", API Days Finland 2019, Helsinki, Finland, 6/5/2019'>Loose Coupling</a></toc>
 		<part id="bezos-mnandate">
 			<title>The Bezos Mandate (2002)</title>
 			<slide id="bezos-rules">
@@ -301,6 +301,19 @@
 			</slide>
 			<slide id="api-integration">
 				<title>APIs and Integration</title>
+				<ul>
+					<li>Are APIs just another name for integration?</li>
+					<ul>
+						<li><em>Integration</em> is 1:1 and requires bilateral effort every single time</li>
+						<li><em>Interconnection</em> is n:m and is designed to easily scale up</li>
+					</ul>
+					<li><q>APIs are just integration</q> is a good litmus test for API effectivity</li>
+					<ul>
+						<li>If it is true → APIs could be used more effectively</li>
+						<li>Existing integrations are a great starting point for <em>API archaeology</em></li>
+						<li><a href="http://dret.net/lectures/api-days-finland-2019/" title='Erik Wilde, "Enjoy Responsibly: Minimizing Coupling for API Consumption", API Days Finland 2019, Helsinki, Finland, 6/5/2019'>Loose coupling</a> is one of the critical API properties</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="api-consumers">
 				<title>Many API Consumers</title>
