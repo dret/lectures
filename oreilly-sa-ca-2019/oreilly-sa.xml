@@ -196,7 +196,7 @@
 	</presentation>
 	<presentation id="digitaltransformation">
 		<title short="Digital Transformation">Digital Transformation: Why? What? How?</title>
-		<toc class="resources"><a href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" title='Gregor Hohpe, "Reverse Engineering the Organization", May 2018'>Reverse Engineering the Organization</a></toc>
+		<toc class="resources"><a href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" title='Gregor Hohpe, "Reverse Engineering the Organization", May 2018'>Reverse Engineering the Organization</a>&#160;· <a href="http://dret.net/lectures/api-days-zurich-2019/" title='Erik Wilde, "The Three Pillars of API Strategy", API Days Zurich 2019, Zurich, Switzerland, 5/21/2019'>Three API Strategy Pillars</a></toc>
 		<part id="why">
 			<title>Digital Transformation: Why?</title>
 			<slide id="digital-transformation">
@@ -215,6 +215,18 @@
 			<slide id="chasm">
 				<title><a href="https://devops.com/7-big-digital-transformation-trends/">Digital Transformation Chasm</a></title>
 				<img href="https://devops.com/7-big-digital-transformation-trends/" src="it-business-chasm.png" title="IT and Business Leadership Chasm Widen: According to research firm consultancy Capgemini, there appears to be a growing disconnect between the CIO and senior business executives. Capgemini’s research found that while in 2012, 65% of organizations believed that the CIO and senior business executives possessed a shared understanding of the role of IT in their organization. In their most recent survey, that figure dropped to 37%. Additionally, Capgemini found, 59% of enterprise respondents in 2012 believed that the CIO and senior business executives had a shared understanding of how IT could be used to increase organizational productivity. That figure also declined precipitously, hitting 35% in 2018." style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="problems">
+				<title>Digital Transformation is Hard</title>
+				<img title="Managing the API Strategy Pillars: Assessment, Enablement, Coaching" src="services-cycle.png" style=" float: right ; width : 30% ; margin : 2% ;  "/>
+				<ul>
+					<li>Only looking at technology will miss <a href="http://dret.net/lectures/api-days-zurich-2019/" title='Erik Wilde, "The Three Pillars of API Strategy", API Days Zurich 2019, Zurich, Switzerland, 5/21/2019'>important pillars</a></li>
+					<ul>
+						<li><em>Technology</em> is necessary for digitalized value chains</li>
+						<li><em>Business</em> needs to embrace technology to realize value</li>
+						<li><em>Teams</em> must be enabled and empowered to work differently</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="what">
