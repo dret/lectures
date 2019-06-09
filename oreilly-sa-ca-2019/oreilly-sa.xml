@@ -228,6 +228,23 @@
 				<title>Digital Transformation Status</title>
 				<img href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" src="cio-reporting-line.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="necessary">
+				<title>APIs: Necessary, but not Sufficient</title>
+				<img href="http://www.stephenadams.com/badplumbing/series_badplumbing.htm" src="bad-plumbing.jpg" style=" float: right ; width : 20% ; margin : 2% ; "/>
+				<ul>
+					<li>APIs are <em>necessary (but not sufficient)</em> for digital transformation</li>
+					<ul>
+						<li><em>Good plumbing</em> does not mean that you are building valuable things with it</li>
+						<li><em>Bad plumbing</em> means that whatever you are building will have problems</li>
+					</ul>
+					<li>APIs are the <em>delivery</em> of the value created by <em>capabilities</em></li>
+					<ul>
+						<li><em>Business</em> needs to understand <em>delivery concepts and impacts</em></li>
+						<li><em>IT</em> needs to make sure <em>capability value is delivered robustly</em></li>
+					</ul>
+					<li>Digital transformation needs (more than just) APIs</li>
+				</ul>
+			</slide>
 			<slide id="api-cargo-cult">
 				<title>The Wonders of APIs</title>
 				<img title="API Cargo Cult" src="apis-make-things-happen.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
