@@ -393,7 +393,7 @@
 	</presentation>
 	<presentation id="scaling">
 		<title short="Scaling">Scaling the API Practice: Landscape, Strategy, and Program</title>
-		<toc class="resources"><a href="http://dret.net/lectures/api-days-zurich-2019/" title='Erik Wilde, "The Three Pillars of API Strategy", API Days Zurich 2019, Zurich, Switzerland, 5/21/2019'>Three API Strategy Pillars</a></toc>
+		<toc class="resources"><a href="http://dret.net/lectures/api-days-zurich-2019/" title='Erik Wilde, "The Three Pillars of API Strategy", API Days Zurich 2019, Zurich, Switzerland, 5/21/2019'>Three API Strategy Pillars</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a>&#160;· <a href="https://www.apiscene.io/product/api-first-the-essence-of-digital-transformation/" title='Erik Wilde, "API First: The Essence of Digital Transformation", API Scene, June 2019'>API First</a></toc>
 		<part id="landscape">
 			<title>API Landscapes</title>
 			<slide id="landscape-learning">
@@ -698,6 +698,30 @@
 						<li>Monitoring technologies and tools for improving the practice</li>
 					</ul>
 				</ul>
+			</slide>
+			<slide id="robust-extensibility">
+				<title>Example 1: <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a></title>
+				<ul>
+					<li>Meaningful Core Semantics</li>
+					<ul>
+						<li>The core of the API allows clients to have meaningful interactions</li>
+						<li>The core of the API is robust over time</li>
+					</ul>
+					<li>Well-Defined Extension Points</li>
+					<ul>
+						<li>APIs should be clear about where extensions are allowed</li>
+						<li>API tests can make sure that the extension points are properly implemented</li>
+					</ul>
+					<li>Well-Defined Processing Model</li>
+					<ul>
+						<li>Extensions are well-defined and their handling is well-defined as well</li>
+						<li><code>mustIgnore</code> is a popular and good choice for extension processing</li>
+						<li>How to <em>learn</em> about extensions is a different matter</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-first">
+				<title>Example 2: <a href="https://www.apiscene.io/product/api-first-the-essence-of-digital-transformation/" title='Erik Wilde, "API First: The Essence of Digital Transformation", API Scene, June 2019'>API First</a></title>
 			</slide>
 		</part>
 		<part id="conclusions">
