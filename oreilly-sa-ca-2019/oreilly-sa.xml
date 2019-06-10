@@ -657,6 +657,49 @@
 		</part>
 		<part id="program">
 			<title>API Program</title>
+			<slide id="program">
+				<title>API Program</title>
+				<ul>
+					<li>From vision to strategy to execution</li>
+					<ul>
+						<li><em>Vision (why):</em> APIs are a necessary part of digital transformation</li>
+						<li><em>Strategy (what):</em> What do we want to do with APIs and what APIs do we want?</li>
+						<li><em>Program (how):</em> How do we establish/nurture/evolve/manage our API landscape?</li>
+					</ul>
+					<li>API programs are supposed to operate continuously</li>
+					<ul>
+						<li>Individual products are added and modified and removed</li>
+						<li>The landscape of products and dependencies changes continuously</li>
+						<li>Continuous architecting evolves the landscape over time</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-cycle">
+				<title>API Program: Assessment/Enablement/Coaching</title>
+				<img title="Managing the API Strategy Pillars: Assessment, Enablement, Coaching" src="services-cycle.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="cycle-details">
+				<title>Continuous API Management</title>
+				<ul>
+					<li><em>Assessment</em> uses analysis and observations</li>
+					<ul>
+						<li>Figuring out the status quo</li>
+						<li>Monitoring the landscape for directing investments</li>
+						<li>Cultivating collaboration and feedback channels</li>
+					</ul>
+					<li><em>Enablement</em> addresses identified gaps</li>
+					<ul>
+						<li>Creating and maintaining API strategy/program/guidelines</li>
+						<li>Trainings and workshops for enabling all teams</li>
+					</ul>
+					<li><em>Coaching</em> for continuous architecting</li>
+					<ul>
+						<li>Monitoring the API landscape and identifying changing practices</li>
+						<li>Monitoring technologies and tools for improving the practice</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
