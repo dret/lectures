@@ -328,6 +328,46 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="api-archaeology">
+			<title>API Archaeology</title>
+			<slide id="integration-api">
+				<title>From Integration to APIs</title>
+				<ol>
+					<li>Understand the existing landscape of <em>proto-APIs</em> and their genesis</li>
+					<li>Understand the existing culture of teams for their integration tasks</li>
+					<li>Your <q>API strategy starting point</q> is the sum of all these parts</li>
+					<li>Drive change through communications and support (establish API culture)</li>
+				</ol>
+			</slide>
+			<slide id="archaeology">
+				<title>Understanding the Past</title>
+				<blockquote>
+					<p><q>Archaeology is the practice of unearthing artifacts, and understanding them in the context of their origins in time and location. That exact concept can be applied to APIs as well. API Archaeology thus is the practice of finding integrations, understanding why and how they were created, and documenting them as a way to better understand the history and structure of complex IT landscapes. Practicing 'API Archaeology' in organizations can be extremely valuable in terms of finding out about existing ways in which IT components interact (in some shape or form).</q></p>
+					<p align="right">[<a href="http://www.oreilly.com/catalog/0636920201755">Continuous API Management: Making the Right Decisions in an Evolving Landscape</a>]</p>
+				</blockquote>
+			</slide>
+			<slide id="api-archaeology">
+				<title>Sharing and Scaling</title>
+				<ul>
+					<li>Most organizations have <q>proto-APIs</q> from integration projects</li>
+					<ul>
+						<li>One-off integrations not intended or designed for reuse</li>
+						<li>Unearthing and documenting help with analysis and improvement</li>
+					</ul>
+					<li><em>API culture</em> is about establishing API practice in the organization</li>
+					<ul>
+						<li>Cultivate <q>Product as API</q> mindset across teams</li>
+						<li>Build experience around design, implementation, and operations</li>
+					</ul>
+					<li><em>API Landscapes</em> focus on sharing and scaling the API practice</li>
+					<ul>
+						<li>Empowerment and enlightenment of teams</li>
+						<li>Enterprise IT as managing ecosystems of autonomous components</li>
+						<li>Identify and remove bottlenecks to make teams more effective</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
