@@ -744,6 +744,16 @@
 						<li><em>API before implementation:</em> Mocking APIs before implementing them</li>
 						<li><em>API documentation:</em> APIs replace direct communications</li>
 					</ul>
+					<li>APIs needs to be established as business-level concept</li>
+					<ul>
+						<li>Designing/describing APIs at the functionality level</li>
+						<li>APIs are the design glue between business and IT</li>
+					</ul>
+					<li>Adjust the design process to cover API design as well</li>
+					<ul>
+						<li><em>User stories</em> are used as input to <em>API stories</em></li>
+						<li>API stories can help to elicit APIs from various user stories</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
