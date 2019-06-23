@@ -588,4 +588,40 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="compass">
+		<title short="Strategy Compass">API Strategy Compass Discussion</title>
+		<part id="compass-biz-external">
+			<title>Strategy Compass: Business/External</title>
+		</part>
+		<part id="compass-org-external">
+			<title>Strategy Compass: Organization/External</title>
+		</part>
+		<part id="compass-tech-external">
+			<title>Strategy Compass: Technology/External</title>
+		</part>
+		<part id="compass-biz-internal">
+			<title>Strategy Compass: Business/Internal</title>
+		</part>
+		<part id="compass-org-internal">
+			<title>Strategy Compass: Organization/Internal</title>
+		</part>
+		<part id="compass-tech-internal">
+			<title>Strategy Compass: Technology/intern</title>
+		</part>
+		<part id="compass-q-and-a">
+			<slide id="strategy-q-and-a">
+				<title>Thanks!</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/entel-2019"><code>dret.net/lectures/entel-2019</code></a></li>
+					<li>More information about myself:</li>
+					<ul>
+						<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+						<li>LinkedIn: <a href="http://www.linkedin.com/in/netdret"><code>linkedin.com/in/netdret</code></a></li>
+						<li>Web page: <a href="http://dret.net/netdret/"><code>dret.net/netdret/</code></a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>
