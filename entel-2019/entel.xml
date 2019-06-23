@@ -128,6 +128,11 @@
 			<title>Terminology</title>
 			<slide id="term-api">
 				<title>Application Programming Interface (API)</title>
+				<ul>
+					<li>A <em>network-enabled way</em> to interact with the representation of a capability</li>
+					<li>No assumptions about specific interaction styles or interconnection technologies</li>
+					<li><em>Loose coupling</em> increases implementation-independence</li>
+				</ul>
 			</slide>
 			<slide id="term-api-strategy">
 				<title>API Strategy</title>
