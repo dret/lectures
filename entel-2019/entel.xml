@@ -166,19 +166,22 @@
 				<img title="SWOT Analysis" src="swot.png" href="https://en.wikipedia.org/wiki/SWOT_analysis" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
-		<slide id="q-and-a">
-			<title>Thanks!</title>
-			<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
-			<ul>
-				<li>Slides online: <a href="http://dret.net/lectures/entel-2019"><code>dret.net/lectures/entel-2019</code></a></li>
-				<li>More information about myself:</li>
+		<part id="intro-conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thanks!</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
 				<ul>
-					<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
-					<li>LinkedIn: <a href="http://www.linkedin.com/in/netdret"><code>linkedin.com/in/netdret</code></a></li>
-					<li>Web page: <a href="http://dret.net/netdret/"><code>dret.net/netdret/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/entel-2019"><code>dret.net/lectures/entel-2019</code></a></li>
+					<li>More information about myself:</li>
+					<ul>
+						<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+						<li>LinkedIn: <a href="http://www.linkedin.com/in/netdret"><code>linkedin.com/in/netdret</code></a></li>
+						<li>Web page: <a href="http://dret.net/netdret/"><code>dret.net/netdret/</code></a></li>
+					</ul>
 				</ul>
-			</ul>
-		</slide>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="threepillars">
 		<title short="Three Pillars">The Three Pillars of API Strategy</title>
