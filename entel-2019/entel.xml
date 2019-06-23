@@ -359,9 +359,9 @@
 			<slide id="api-management">
 				<title>API Management is about Vision and Strategy</title>
 				<ul>
-					<li>1: <q>API as a Product</q> needs a strategy for DX and product management</li>
+					<li>1a: <q>API as a Product</q> needs a strategy for DX and product management</li>
+					<li>1b: <q>API Economy</q> needs a strategy for managing dependency and risk</li>
 					<li>2: <q>Product as API</q> needs a strategy for APIs as the new IT component</li>
-					<li>3: <q>API Economy</q> needs a strategy for managing dependency and risk</li>
 				</ul>
 			</slide>
 			<slide id="strategy-q-and-a">
@@ -421,6 +421,10 @@
 					<li>Decoupling products and their development cycles and speed</li>
 					<li>Improving capability reuse across the whole organization</li>
 				</ul>
+			</slide>
+			<slide id="api-internal-external-2">
+				<title>Internal and External API Usage</title>
+				<img title="Internal and External API Usage" src="api-internal-external.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
 		<part id="pillars">
@@ -592,6 +596,55 @@
 		<title short="Strategy Compass">API Strategy Compass Discussion</title>
 		<part id="compass-biz-external">
 			<title>Strategy Compass: Business/External</title>
+			<slide id="strategy">
+				<title>API Strategy = Pillars × Perspectives</title>
+				<table style="border-collapse: collapse ; ">
+					<tr>
+						<td/>
+						<th style="border: 1px solid black ; padding: 0.5em">External</th>
+						<th style="border: 1px solid black ; padding: 0.5em">Internal</th>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Biz</th>
+						<td style="border: 1px solid black ; padding: 0.5em ; background : black ; color : white "><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">API monetization</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Revenue-supporting APIs</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase speed &amp; feedback</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Identify &amp; stabilize enablers</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Design for externalization</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase biz insight with dashboards</li>
+						</ul></td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Org</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Focus on documentation/DX</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Support discovery/self-service</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Collect DX feedback</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Products &gt; projects (ownership)</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Team enablement/support</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loose coupling for speed/agility</li>
+						</ul></td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Tech</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Tech trends and popularity</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Invest in onboarding support</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Secure through platform</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loosely coupled implementations</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Observe patterns and practices</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Establish C4E for platform/support</li>
+						</ul></td>
+					</tr>
+				</table>
+			</slide>
 		</part>
 		<part id="compass-org-external">
 			<title>Strategy Compass: Organization/External</title>
@@ -609,6 +662,7 @@
 			<title>Strategy Compass: Technology/intern</title>
 		</part>
 		<part id="compass-q-and-a">
+			<title>Conclusions</title>
 			<slide id="strategy-q-and-a">
 				<title>Thanks!</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 4% ; "/>
