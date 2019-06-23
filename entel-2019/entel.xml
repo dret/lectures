@@ -381,9 +381,13 @@
 	</presentation>
 	<presentation id="threepillars">
 		<title short="Three Pillars">The Three Pillars of API Strategy</title>
-		<toc class="resources"><a href="http://dret.net/lectures/api-days-zurich-2019/" title='Erik Wilde, "The Three Pillars of API Strategy", API Days Zurich 2019, Zurich, Switzerland, 5/21/2019'>Three API Strategy Pillars</a></toc>
+		<toc class="resources"><a title='"Unlocking Success in Digital Transformations", McKinsey, October 2018' href="https://www.mckinsey.com/business-functions/organization/our-insights/unlocking-success-in-digital-transformations">Unlocking Digital Transformation Success</a>&#160;· <a href="http://dret.net/lectures/api-days-zurich-2019/" title='Erik Wilde, "The Three Pillars of API Strategy", API Days Zurich 2019, Zurich, Switzerland, 5/21/2019'>Three API Strategy Pillars</a></toc>
 		<part id="theory">
 			<title>One Theory</title>
+			<slide id="key-factors">
+				<title>Key Factors for Success</title>
+				<img title='"Unlocking Success in Digital Transformations", McKinsey, October 2018' href="https://www.mckinsey.com/business-functions/organization/our-insights/unlocking-success-in-digital-transformations" src="success-rate-key-factors.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="api-cargo-cult">
 				<title>The Wonders of APIs</title>
 				<img title="API Cargo Cult" src="apis-make-things-happen.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
