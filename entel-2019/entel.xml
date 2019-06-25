@@ -204,6 +204,55 @@
 				<img title="SWOT Analysis" src="swot.png" href="https://en.wikipedia.org/wiki/SWOT_analysis" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
+		<part id="api-complexity">
+			<title>API Complexity</title>
+			<slide id="value-delivery">
+				<title>Value and Delivery</title>
+				<img title="Racer 5 Can" src="racer-5-can.jpg" href="https://bearrepublic.com/beer/racer-5-ipa/" style=" width : 28% ; height : 60% ; object-fit : contain ; margin : 1% 1% 1% 5% ; "/>
+				<img title="Racer 5 Tap" src="racer-5-tap.jpg" href="https://bearrepublic.com/beer/racer-5-ipa/" style=" width : 28% ; height : 60% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
+				<img title="Racer 5 Bottle" src="racer-5-bottle.png" href="https://bearrepublic.com/beer/racer-5-ipa/" style=" width : 28% ; height : 60% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
+			</slide>
+			<slide id="api101">
+				<title>API 101</title>
+				<img src="api-value-101.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-pillars">
+				<title>API Pillars</title>
+				<img src="api-value-pillars.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-consumers">
+				<title>Many API Consumers</title>
+				<img src="api-value-many-consumers.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="consuming-apis">
+				<title>Consuming Many APIs</title>
+				<img src="api-value-many-consuming.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-complexity">
+				<title>API Complexity</title>
+				<img src="api-value-complexity.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-challenges">
+				<title>API Challenges</title>
+				<ul>
+					<li>Challenges from the business perspective</li>
+					<ul>
+						<li>Balance risk/cost and necessary investments in business agility</li>
+						<li>Start making <q>API thinking (i.e., agility) part of business culture</q></li>
+					</ul>
+					<li>Challenges from the organizational perspective</li>
+					<ul>
+						<li>Enable and empower teams by reducing command-and-control structures</li>
+						<li>Start building feedback structures for observing/supporting teams</li>
+					</ul>
+					<li>Challenges from the technology perspective</li>
+					<ul>
+						<li>Enable and empower developers to adjust to the ecosystem approach</li>
+						<li>Move architecture from "how" to "what" and practice loose coupling</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="intro-conclusions">
 			<title>Conclusions</title>
 			<slide id="intro-q-and-a">
