@@ -272,7 +272,7 @@
 	</presentation>
 	<presentation id="landscapes">
 		<title short="API Landscapes">From APIs to API Landscapes: Scaling Up the API Practice</title>
-		<toc class="resources"><a href="https://gist.github.com/chitchcock/1281611">Bezos Mandate</a></toc>
+		<toc class="resources"><a href="https://gist.github.com/chitchcock/1281611">Bezos Mandate</a>&#160;· <a href="https://www.apiscene.io/product/api-first-the-essence-of-digital-transformation/" title='Erik Wilde, "API First: The Essence of Digital Transformation", API Scene, June 2019'>API First</a></toc>
 		<part id="vision-value">
 			<title>From Vision to Value</title>
 			<slide id="api-internal-external">
@@ -350,6 +350,22 @@
 					</ul>
 					<li>Sophisticated tooling required to manage the new SOA landscape</li>
 					<li>Much easier in today's technology landscape than 16 years ago</li>
+				</ul>
+			</slide>
+			<slide id="api-first">
+				<title><a href="https://www.apiscene.io/product/api-first-the-essence-of-digital-transformation/" title='Erik Wilde, "API First: The Essence of Digital Transformation", API Scene, June 2019'>API First</a>: Everything is an API</title>
+				<ul>
+					<li><link href="amazon-rules">Jeff Bezos' Mandate</link> focuses on <q>API products</q></li>
+					<ul>
+						<li>Loose coupling means to look at <em>products as APIs</em></li>
+						<li>All dependencies have to be designed and built as APIs</li>
+					</ul>
+					<li>API products are built by thinking about interactions</li>
+					<ol>
+						<li>The API is the <em>first UI</em></li>
+						<li>APIs are designed before anything is implemented</li>
+						<li>APIs are the primary means of team communications</li>
+					</ol>
 				</ul>
 			</slide>
 		</part>
