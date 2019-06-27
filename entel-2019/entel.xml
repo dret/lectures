@@ -1128,6 +1128,25 @@
 				<title>API Layers: Example</title>
 				<img src="mulesoft-layer-example.png" href="https://blogs.mulesoft.com/dev/api-dev/what-is-api-led-connectivity/" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="outside-in">
+				<title>Outside-In APIs</title>
+				<ul>
+					<li>The current API landscape is based on <em>inside-out APIs</em></li>
+					<ul>
+						<li>API selection and design are based on internal systems</li>
+					</ul>
+					<li><em>Outside-in APIs</em> are representing business needs</li>
+					<ul>
+						<li>Details of internal systems are hidden by the API</li>
+						<li>API selection and design are based on consumer needs</li>
+					</ul>
+					<li>The planned <em>capability catalog</em> may be a good starting point</li>
+					<ul>
+						<li>Requested capabilities are turned into API designs</li>
+						<li>APIs make capabilities (more) easily reusable</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="roadmap">
 			<title>Roadmap</title>
