@@ -1195,7 +1195,17 @@
 				<title>Where you will be: Two Scenarios</title>
 				<ol>
 					<li><q>This API thing really doesn't work for us</q></li>
+					<ul>
+						<li>APIs still may make sense as thin wrappers around technical assets</li>
+						<li>Adjust expectations accordingly</li>
+					</ul>
 					<li><q>API value mostly is in plumbing for digital transformation</q></li>
+					<ul>
+						<li>Good starting point with a set of existing system APIs</li>
+						<li>Establish an API program to establish APIs in the organization</li>
+						<li>Culture and organization are the hardest issues to address</li>
+						<li>Tooling can be adjusted as necessary along the way</li>
+					</ul>
 				</ol>
 			</slide>
 		</part>
