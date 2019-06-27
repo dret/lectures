@@ -1105,6 +1105,21 @@
 		<title short="Assessment">Findings Summary and Assessment Draft</title>
 		<part id="status">
 			<title>Current Status</title>
+			<slide id="status-landscape">
+				<title>API Landscape</title>
+				<ul>
+					<li>Robust starter set of foundational APIs</li>
+					<ul>
+						<li>Based on the capabilities and models of back-end systems</li>
+						<li>Gap between business-level capabilities and back-end APIs</li>
+					</ul>
+					<li>Growing pains of centralized API team</li>
+					<ul>
+						<li>Good starting point to build an API landscape foundation</li>
+						<li>API capabilities and culture remain inside team</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="layers">
 				<title>API Layers: Model</title>
 				<img src="mulesoft-layer-model.png" href="https://blogs.mulesoft.com/dev/api-dev/what-is-api-led-connectivity/" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
