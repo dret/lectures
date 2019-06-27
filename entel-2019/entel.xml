@@ -1103,6 +1103,18 @@
 	</presentation>
 	<presentation id="assessment">
 		<title short="Assessment">Findings Summary and Assessment Draft</title>
+		<part id="assessment-intro">
+			<title>Introduction</title>
+			<slide id="digital-transformation-everywhere">
+				<title>Digital Transformation is Global</title>
+				<img title="United States" src="bear-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 5% ; "/>
+				<img title="Australia" src="crocodile-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
+				<img title="Japan" src="godzilla-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
+				<img title="South Africa" src="shark-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 5% ; "/>
+				<img title="Colombia" src="jaguar-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
+				<img title="Poland" src="wolf-digital-transformation.jpg" style=" width : 28% ; height : 30% ; object-fit : contain ; margin : 1% 1% 1% 1% ; "/>
+			</slide>
+		</part>
 		<part id="status">
 			<title>Current Status</title>
 			<slide id="status-landscape">
