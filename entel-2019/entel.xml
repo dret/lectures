@@ -1103,6 +1103,17 @@
 	</presentation>
 	<presentation id="assessment">
 		<title short="Assessment">Findings Summary and Assessment Draft</title>
+		<part id="status">
+			<title>Current Status</title>
+			<slide id="layers">
+				<title>API Layers: Model</title>
+				<img src="mulesoft-layer-model.png" href="https://blogs.mulesoft.com/dev/api-dev/what-is-api-led-connectivity/" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="layers">
+				<title>API Layers: Example</title>
+				<img src="mulesoft-layer-example.png" href="https://blogs.mulesoft.com/dev/api-dev/what-is-api-led-connectivity/" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="strategy-q-and-a">
