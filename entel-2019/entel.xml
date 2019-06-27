@@ -1170,6 +1170,27 @@
 				<title>Hype Cycle</title>
 				<img src="hype-cycle.png" href="https://en.wikipedia.org/wiki/Hype_cycle" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="api-trough">
+				<title>In the API Trough</title>
+				<ul>
+					<li>The <q>API trough of disillusionment</q></li>
+					<ul>
+						<li>The major API benefit is not through their technologies</li>
+						<li>Centralizing API practices defeats their fundamental purpose</li>
+					</ul>
+					<li>Realizing the main benefits takes more than technology</li>
+					<ul>
+						<li>Main API benefit #1: More focus on business through <em>outside-in APIs</em></li>
+						<li>Main API benefit #2: Faster time-to-market through <em>self-contained implementations</em></li>
+					</ul>
+					<li>API enlightenment takes time and resources</li>
+					<ul>
+						<li>API practices must be decentralized (API first)</li>
+						<li>Everybody must understand and embrace the API journey</li>
+						<li>Picking <q>quick wins</q> can serve as helpful validation</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="recommendations">
 			<title>Recommendations</title>
