@@ -24,14 +24,34 @@
 			<p><a class="outlink" rel="license" title="view full text of license" href="http://creativecommons.org/licenses/by/3.0/">This work is licensed under a CC<br/>Attribution 3.0 Unported License</a></p>
 		</div>
 	</license>
+	<toc name="toc.html">
+		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
+			<thead>
+				<tr>
+					<th valign="bottom">Subject</th>
+					<th valign="bottom">Slides</th>
+					<th valign="bottom">Resources</th>
+				</tr>
+			</thead>
+			<tbody>
+				<hotspot:for-each-presentation>
+					<tr class="vevent">
+						<td valign="top"><b><span class="summary"><hotspot:title/></span></b></td>
+						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+						<td align="center"><hotspot:toc class="resources"/></td>
+					</tr>
+				</hotspot:for-each-presentation>
+			</tbody>
+		</table>
+	</toc>
 	<title><a href="https://apiconference.net/">API Conference, Berlin, Germany</a></title>
+	<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
+	<affiliation><a href="https://www.goodapi.co/">Good API</a></affiliation>
+	<date short="2019-10-15">October 15, 2019</date>
+	<copyright>2019 Erik Wilde</copyright>
 	<presentation id="conarch">
-		<title>Continuous Architecting:<br/>Architecture for Loosely Coupled Systems</title>
+		<title short="Continuous Architecting">Continuous Architecting: Architecture for Loosely Coupled Systems</title>
 		<toc class="abstract">Digital Transformation frequently results in transitioning to API-oriented IT strategies. API-centric ecosystems have to balance two complementary goals: Giving API development teams the autonomy and flexibility to develop products as effectively as possible, and making sure that the growing and constantly evolving landscape of APIs has a level of design quality and coherence that allows API consumers to utilize this landscape effectively. This can be a challenge for IT architecture, in particular when transitioning from a more traditional view of architecture, where the main perspective was that of architecture as a top-down process that starts with modeling a system, and ends with delivering a running system. In loosely coupled API-centric systems, architecture at the ecosystem level takes a distinctively different approach: It observes the creation and evolution of components and uses these observations to evolve the constraints of the ecosystem, and to provide support and tooling where necessary. Continuous Architecting is the process that supports the balance between component goals and ecosystem goals: It collects feedback from the ecosystem in the form of observations from developers and users and the organization, and translates those into ways that improve and support component development.</toc>
-		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
-		<affiliation><a href="https://www.goodapi.co/">Good API</a></affiliation>
-		<date short="2019-10-15">October 15, 2019</date>
-		<copyright>2019 Erik Wilde</copyright>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
