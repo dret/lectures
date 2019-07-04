@@ -47,12 +47,11 @@
 	<title><a href="https://apiconference.net/">API Conference, Berlin, Germany</a></title>
 	<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 	<affiliation><a href="https://www.goodapi.co/">Good API</a></affiliation>
-	<date short="2019-10">October 2019</date>
+	<date short="2019-10-15">October 15, 2019</date>
 	<copyright>2019 Erik Wilde</copyright>
 	<presentation id="apilimits">
 		<title>What APIs Can and Cannot Do</title>
 		<toc class="abstract">APIs have become an essential ingredient of Digital Transformation and other initiatives to modernize IT and organizations. However, while APIs are an essential ingredient, they are not everything you need, and thus only focusing on APIs may lead to disappointment when expectations are running too high. In short, APIs are necessary for improving organizational fitness, but they are not sufficient. The hard work of changing an organization also has to happen in other areas than in the technical infrastructure. After looking at some common patterns of "Acute API disillusionment", we will have a look at how a structured approach to transformation initiatives can help to make sure than all necessary parts of the transformation process are tackled simultaneously, or that in case of more serial approach, expectations are adjusted accordingly. APIs are an essential ingredient in modern IT architectures, but understanding their possibilities and limitations is important to get the most out of your API investments.</toc>
-		<date short="2019-10-14">October 14, 2019</date>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -157,7 +156,6 @@
 	<presentation id="conarch">
 		<title short="Continuous Architecting">Continuous Architecting: Architecture for Loosely Coupled Systems</title>
 		<toc class="abstract">Digital Transformation frequently results in transitioning to API-oriented IT strategies. API-centric ecosystems have to balance two complementary goals: Giving API development teams the autonomy and flexibility to develop products as effectively as possible, and making sure that the growing and constantly evolving landscape of APIs has a level of design quality and coherence that allows API consumers to utilize this landscape effectively. This can be a challenge for IT architecture, in particular when transitioning from a more traditional view of architecture, where the main perspective was that of architecture as a top-down process that starts with modeling a system, and ends with delivering a running system. In loosely coupled API-centric systems, architecture at the ecosystem level takes a distinctively different approach: It observes the creation and evolution of components and uses these observations to evolve the constraints of the ecosystem, and to provide support and tooling where necessary. Continuous Architecting is the process that supports the balance between component goals and ecosystem goals: It collects feedback from the ecosystem in the form of observations from developers and users and the organization, and translates those into ways that improve and support component development.</toc>
-		<date short="2019-10-15">October 15, 2019</date>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
