@@ -94,6 +94,26 @@
 		</part>
 		<part id="evolution">
 			<title>Evolution</title>
+			<slide id="evolution-levels">
+				<title>Evolution: Environments and Solutions</title>
+				<ul>
+					<li><em>Level 1:</em> Solutions evolve to increase individual fitness</li>
+					<ul>
+						<li>Solutions are evaluated for fitness based on the environment</li>
+						<li>Feedback about solutions helps to increase their fitness</li>
+					</ul>
+					<li><em>Level 2:</em> Environment changes trigger fitness function changes</li>
+					<ul>
+						<li>Changes in the environment are outside the control of solutions</li>
+						<li>Solution fitness changes without solutions changing</li>
+					</ul>
+					<li><em>Level 3:</em> Solution spaces change allowing new solutions</li>
+					<ul>
+						<li>Solutions are given new manoeuvring space</li>
+						<li>Fitness functions need to be adjusted accordingly</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
