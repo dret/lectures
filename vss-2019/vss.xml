@@ -95,12 +95,27 @@
 			<title>Enterprise Architecture Trends</title>
 			<slide id="decentralization">
 				<title>Decentralization</title>
+				<ul>
+					<li>Increase speed of innovation and time to initial release</li>
+					<li>Decrease dependency on release speed of other products</li>
+					<li>Improve correspondence between business and IT structures</li>
+				</ul>
 			</slide>
 			<slide id="heterogeneity">
 				<title>Heterogeneity</title>
+				<ul>
+					<li>Allow teams to use the right tools for their jobs</li>
+					<li>Encourage <em>good practices</em> but never paint yourself into one corner</li>
+					<li>Observe patterns and practices and promote/support the successful ones</li>
+				</ul>
 			</slide>
 			<slide id="loosely-coupled">
 				<title>Loosely Coupled</title>
+				<ul>
+					<li>Use <em>API First</em> as a way to minimize the coupling surface</li>
+					<li>Cultivate APIs as the way how teams communicate</li>
+					<li>Teach and promote ways to make the language open and extensible</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="evolution">
