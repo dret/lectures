@@ -137,21 +137,21 @@
 				<img src="continuous-architecting.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="evolution-levels">
-				<title>Evolution: Environments and Solutions</title>
+				<title>Evolution: Products and Environments</title>
 				<ul>
-					<li><em>Level 1:</em> Solutions evolve to increase individual fitness</li>
+					<li><em>Level 1:</em> Products evolve to increase individual fitness</li>
 					<ul>
-						<li>Solutions are evaluated for fitness based on the environment</li>
-						<li>Feedback about solutions helps to increase their fitness</li>
+						<li>Products are evaluated for fitness based on the environment</li>
+						<li>Feedback about products helps to increase their fitness</li>
 					</ul>
 					<li><em>Level 2:</em> Environment changes trigger fitness function changes</li>
 					<ul>
-						<li>Changes in the environment are outside the control of solutions</li>
-						<li>Solution fitness changes without solutions changing</li>
+						<li>Changes in the environment are outside the control of products</li>
+						<li>Product fitness changes without products changing</li>
 					</ul>
-					<li><em>Level 3:</em> Solution spaces change allowing new solutions</li>
+					<li><em>Level 3:</em> Product spaces change allowing new products</li>
 					<ul>
-						<li>Solutions are given new manoeuvring space</li>
+						<li>Products are given new manoeuvring space</li>
 						<li>Fitness functions need to be adjusted accordingly</li>
 					</ul>
 				</ul>
@@ -166,7 +166,7 @@
 				<title>Tweaking the Environment</title>
 				<ul>
 					<li><em>Engineering the Engineers</em></li>
-					<li>Create the environment that helps good solutions thrive</li>
+					<li>Create the environment that helps good products thrive</li>
 				</ul>
 			</slide>
 			<slide id="constraint-based">
