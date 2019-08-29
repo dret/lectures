@@ -178,22 +178,14 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
-			<slide id="why-what-how">
-				<title>Continuous Architecting</title>
-				<ul>
-					<li><em>Why:</em> Explain and review every constraint</li>
-					<ul>
-						<li>Keeps architecture lean</li>
-					</ul>
-					<li><em>What:</em> Constrain behavior without assumptions about implementations</li>
-					<ul>
-						<li>Separates architectural and implementation issues</li>
-					</ul>
-					<li><em>How:</em> Provide guidance and support for implementing constraints</li>
-					<ul>
-						<li>Helps teams to do the right thing if they are looking for support</li>
-					</ul>
-				</ul>
+			<slide id="research">
+				<title>Continuous Architecting: Research Angles</title>
+				<ol>
+					<li><em>Observation:</em> Moving from analytical to behavioral</li>
+					<li><em>Insights:</em> Creating meaningful insights from behavioral observations</li>
+					<li><em>Explicit Support:</em> Identifying trends and finding ways to support them</li>
+					<li><em>Engineering the engineers:</em> Tweaking the environment to favor preferred outcomes</li>
+				</ol>
 			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
