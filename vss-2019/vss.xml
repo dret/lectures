@@ -149,10 +149,10 @@
 						<li>Changes in the environment are outside the control of products</li>
 						<li>Product fitness changes without products changing</li>
 					</ul>
-					<li><em>Level 3:</em> Product spaces change allowing new products</li>
+					<li><em>Level 3:</em> Environment tweaks are introduced for tweaking fitness</li>
 					<ul>
-						<li>Products are given new manoeuvring space</li>
-						<li>Fitness functions need to be adjusted accordingly</li>
+						<li>Products are given new constraints that impact their fitness</li>
+						<li>Constraints are based on predicted environment conditions/evolution</li>
 					</ul>
 				</ul>
 			</slide>
