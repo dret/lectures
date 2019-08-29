@@ -185,8 +185,13 @@
 					<li><em>API landscapes</em> need observation and gardening</li>
 				</ul>
 			</slide>
-			<slide id="modular-extensible">
-				<title>Modular and Extensible</title>
+			<slide id="modular-evolvable">
+				<title>Modular and Evolvable</title>
+				<ul>
+					<li>Different constraints may be appropriate for different <q>landscape areas</q></li>
+					<li>Encourage products to be evolvable to improve their long-term fitness</li>
+					<li>Always strictly separate <em>interface</em> and <em>implementation</em> issues</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
