@@ -93,6 +93,24 @@
 		</part>
 		<part id="trends">
 			<title>Enterprise Architecture Trends</title>
+			<slide id="microservices">
+				<title>Microservices 101</title>
+				<ul>
+					<li>You know <em>what</em> products teams are delivering but not <em>how</em> they are producing them</li>
+					<li>There can be no hidden dependencies between products</li>
+					<li>Delivery velocity increases because teams can pick tools and can move at their own speed</li>
+					<li>Consumers satisfaction increases because products get released and changed more quickly</li>
+				</ul>
+			</slide>
+			<slide id="microservices-corollary">
+				<title>Microservices Corollary</title>
+				<ul>
+					<li>Minimizing constraints maximizes team autonomy and thus productivity</li>
+					<li>Coherence across products must be explicitly designed and managed</li>
+					<li>Identifying and supporting <em>cross-product concerns</em> increases landscape productivity</li>
+					<li>Building robustness against change into the landscape is critical</li>
+				</ul>
+			</slide>
 			<slide id="decentralization">
 				<title>Decentralization</title>
 				<ul>
