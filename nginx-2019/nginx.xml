@@ -90,6 +90,18 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="cam-book-nginx">
+				<title>Continuous API Management: Free Chapters</title>
+				<img src="CAM-cover-NGINX.png" href="https://www.nginx.com/resources/library/continuous-api-management/" title="Continuous API Management: Making the Right Decisions in an Evolving Landscape" style="float: right ; height : 55% ; margin : 4% ; "/>
+				<ul>
+					<li>Free download of chapters 1-3 courtesy of NGINX: <code href="https://www.nginx.com/resources/library/continuous-api-management/">nginx.com/resources/library/continuous-api-management/</code></li>
+					<ol>
+						<li>The Challenge of API Management</li>
+						<li>API Governance</li>
+						<li>The API as a Product</li>
+					</ol>
+				</ul>
+			</slide>
 		</part>
 		<part id="digital-transformation">
 			<title>Digital Transformation and APIs</title>
@@ -119,6 +131,23 @@
 		</part>
 		<part id="products">
 			<title>API Products</title>
+			<slide id="external-internal">
+				<title>External or Internal?</title>
+				<ul>
+					<li>External: Participating in the <em>API economy</em> becomes increasingly beneficial</li>
+					<ul>
+						<li>Interfacing with customers/partners becomes easier</li>
+						<li>The number of API-ready customers/partners keeps increasing</li>
+						<li>The <a href="https://en.wikipedia.org/wiki/Metcalfe%27s_law">network effect</a> guarantees for the trend to continue</li>
+					</ul>
+					<li>Internal: Digital transformation results in many internal APIs</li>
+					<ul>
+						<li>Decompose the organization into loosely coupled autonomous teams</li>
+						<li>Teams create products and expose them as APIs</li>
+						<li>Teams can build on existing capabilities by consuming their APIs</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="landscapes">
 			<title>API Landscapes</title>
@@ -129,6 +158,95 @@
 		</part>
 		<part id="continuous-architecting">
 			<title>Continuous Architecting</title>
+		</part>
+		<part id="strategy-api">
+			<title>From Strategy to API</title>
+			<slide id="api-foundation">
+				<title>Strategy → Program → Platform</title>
+				<ul>
+					<li>Product platforms are useful to more effectively build complex products</li>
+					<ul>
+						<li>Platforms provide foundations for building new products</li>
+						<li>Products contribute to the platform as new components</li>
+					</ul>
+					<li>API products are a bit different from regular products</li>
+					<ul>
+						<li>API products change often to adapt to changing needs</li>
+						<li>API products can be hard to find in complex landscapes</li>
+						<li>API products have runtime dependencies</li>
+					</ul>
+					<li>API platforms are a bit different from regular platforms</li>
+					<ul>
+						<li>API platforms are never finished and continuously evolving</li>
+						<li>API platforms ask every product to contribute</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="platform">
+				<title>What is an API Platform?</title>
+				<ul>
+					<li>API platforms help with building API products</li>
+					<ul>
+						<li>APIs that can be used as part of new APIs</li>
+						<li>Support and tooling for creating APIs as part of an API landscape (API management)</li>
+						<li>Support and tooling for developing APIs (API implementation)</li>
+					</ul>
+					<li>API platforms emerge as a result of strategy and programs</li>
+					<ul>
+						<li><em>API Strategy</em> defines <em>what</em> an API platform should encompass</li>
+						<li><em>API Program</em> defines <em>how</em> to make the platform a reality</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="strategy">
+				<title>API Strategy = Pillars × Perspectives</title>
+				<table style="border-collapse: collapse ; ">
+					<tr>
+						<td/>
+						<th style="border: 1px solid black ; padding: 0.5em">External</th>
+						<th style="border: 1px solid black ; padding: 0.5em">Internal</th>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Biz</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">API monetization</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Revenue-supporting APIs</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase speed &amp; feedback</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Identify &amp; stabilize enablers</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Design for externalization</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase biz insight with dashboards</li>
+						</ul></td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Org</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Focus on documentation/DX</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Support discovery/self-service</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Collect DX feedback</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Products &gt; projects (ownership)</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Team enablement/support</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loose coupling for speed/agility</li>
+						</ul></td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Tech</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Tech trends and popularity</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Invest in onboarding support</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Secure through platform</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loosely coupled implementations</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Observe patterns and practices</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Establish C4E for platform/support</li>
+						</ul></td>
+					</tr>
+				</table>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
