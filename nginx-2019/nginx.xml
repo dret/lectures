@@ -131,6 +131,15 @@
 		</part>
 		<part id="products">
 			<title>API Products</title>
+			<slide id="microservices">
+				<title>Microservices: Webby Architecture for Enterprises</title>
+				<ul>
+					<li><em>Microservice Architecture (MSA)</em> is not about containers</li>
+					<li>MSA is about <em>self-contained product implementations</em></li>
+					<li>MSA is about allowing products to <em>evolve independently</em></li>
+					<li>The hardest aspect of MSA is to get <em>loose coupling</em> right</li>
+				</ul>
+			</slide>
 			<slide id="external-internal">
 				<title>External or Internal?</title>
 				<ul>
