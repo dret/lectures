@@ -169,6 +169,15 @@
 		</part>
 		<part id="continuous-architecting">
 			<title>Continuous Architecting</title>
+			<slide id="cam-dimensions">
+				<title>Dimensions of Continuous API Management</title>
+				<ul>
+					<li><em>Product Development Continuity</em> → Microservices and DevOps</li>
+					<li><em>Product Evolution Continuity</em> → Microservices and Product Lifecycle</li>
+					<li><em>Landscape Continuity</em> → Managing the <a href="http://dret.net/lectures/oreilly-sa-ca-2019/scaling#landscape" title="Variety, Vocabulary, Volume, Velocity, Vulnerability, Visibility, Versioning, Volatility">8 API Landscape Vs</a></li>
+					<li><em>Scope Continuity</em> → External/internal as contextual difference</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="strategy-api">
 			<title>From Strategy to API</title>
