@@ -215,43 +215,6 @@
 				<title>API Gateway</title>
 				<img src="api-gateway.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="api-foundation">
-				<title>Strategy → Program → Platform</title>
-				<ul>
-					<li>Product platforms are useful to more effectively build complex products</li>
-					<ul>
-						<li>Platforms provide foundations for building new products</li>
-						<li>Products contribute to the platform as new components</li>
-					</ul>
-					<li>API products are a bit different from regular products</li>
-					<ul>
-						<li>API products change often to adapt to changing needs</li>
-						<li>API products can be hard to find in complex landscapes</li>
-						<li>API products have runtime dependencies</li>
-					</ul>
-					<li>API platforms are a bit different from regular platforms</li>
-					<ul>
-						<li>API platforms are never finished and continuously evolving</li>
-						<li>API platforms ask every product to contribute</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="platform">
-				<title>What is an API Platform?</title>
-				<ul>
-					<li>API platforms help with building API products</li>
-					<ul>
-						<li>APIs that can be used as part of new APIs</li>
-						<li>Support and tooling for creating APIs as part of an API landscape (API management)</li>
-						<li>Support and tooling for developing APIs (API implementation)</li>
-					</ul>
-					<li>API platforms emerge as a result of strategy and programs</li>
-					<ul>
-						<li><em>API Strategy</em> defines <em>what</em> an API platform should encompass</li>
-						<li><em>API Program</em> defines <em>how</em> to make the platform a reality</li>
-					</ul>
-				</ul>
-			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
