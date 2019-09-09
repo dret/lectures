@@ -149,15 +149,6 @@
 		</part>
 		<part id="products">
 			<title>API Products</title>
-			<slide id="microservices">
-				<title>Microservices: Webby Architecture for Enterprises</title>
-				<ul>
-					<li><em>Microservice Architecture (MSA)</em> is not about containers</li>
-					<li>MSA is about <em>self-contained product implementations</em></li>
-					<li>MSA is about allowing products to <em>evolve independently</em></li>
-					<li>The hardest aspect of MSA is to get <em>loose coupling</em> right</li>
-				</ul>
-			</slide>
 			<slide id="external-internal">
 				<title>External or Internal?</title>
 				<ul>
@@ -185,6 +176,15 @@
 				<blockquote><q>A firm is likely therefore to emerge in those cases where a very short term contract would be unsatisfactory. It is obviously of more importance in the case of services than it is in the case of the buying of commodities.<br/>
 					We may sum up this section of the argument by saying that the operation of a market costs something and by forming an organisation and allowing some authority (an <q>entrepreneur</q>) to direct the resources, certain marketing costs are saved. The entrepreneur has to carry out his function at less cost, taking into account the fact that he may get factors of production at a lower price than the market transactions which he supersedes, because it is always possible to revert to the open market if he fails to do this.</q></blockquote>
 				<p class="quotenote"><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1468-0335.1937.tb00002.x">R. H. Coase, <q>The Nature of the Firm</q>, Economica 4(16):386-405, November 1937</a></p>
+			</slide>
+			<slide id="microservices">
+				<title>Microservices: Webby Architecture for Enterprises</title>
+				<ul>
+					<li><em>Microservice Architecture (MSA)</em> is not about containers</li>
+					<li>MSA is about <em>self-contained product implementations</em></li>
+					<li>MSA is about allowing products to <em>evolve independently</em></li>
+					<li>The hardest aspect of MSA is to get <em>loose coupling</em> right</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="landscapes">
