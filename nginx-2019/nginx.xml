@@ -170,6 +170,19 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="bezos-mandate">
+				<title><a href="https://gist.github.com/chitchcock/1281611">Jeff Bezos' Services Mandate</a></title>
+				<ul>
+					<li>Famous small set of design and implementation rules</li>
+					<ul>
+						<li>Teams must expose functionality through services</li>
+						<li>Communication happens only through service interfaces</li>
+						<li>There are no hard guidelines for service design</li>
+						<li>Internal/external service is a matter of policy, not one of design</li>
+					</ul>
+					<li>Going against the <q>let's pick a platform</q> spirit of old-school SOA</li>
+				</ul>
+			</slide>
 			<slide id="external-internal-fallacy">
 				<title>The External/Internal API Fallacy</title>
 				<img src="api-external-internal.gif" style=" height : 60% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
