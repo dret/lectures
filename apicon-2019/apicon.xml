@@ -189,6 +189,10 @@
 		</part>
 		<part id="monolith">
 			<title>Untangling Monoliths</title>
+			<slide id="monolith-of-course">
+				<title>Of Course!</title>
+				<blockquote>Of course APIs are essential for improving modularity, allowing entangled IT systems to be decomposed into loosely coupled ecosystems and thus being easier to maintain and extend. Of course!</blockquote>
+			</slide>
 			<slide id="monolith-2001">
 				<title>The Mysterious Monolith</title>
 				<img src="monolith-2001.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
