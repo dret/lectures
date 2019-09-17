@@ -129,14 +129,6 @@
 				<img title="GraphQL as a Beer" src="blue-moon.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
-		<part id="quotes">
-			<title>The Smart Quotes</title>
-			<slide id="pirsig">
-				<title>Philosophy: Systems Understanding</title>
-				<blockquote><q>[...] if a factory is torn down but the rationality which produced it is left standing, then that rationality will simply produce another factory. If a revolution destroys a systematic government, but the systematic patterns of thought that produced that government are left intact, then those patterns will repeat themselves in the succeeding government. There's so much talk about the system. And so little understanding.</q></blockquote>
-				<p class="quotenote"><a href="https://en.wikipedia.org/wiki/Robert_M._Pirsig">Robert Pirsig</a>, <q href="https://en.wikipedia.org/wiki/Zen_and_the_Art_of_Motorcycle_Maintenance">Zen and the Art of Motorcycle Maintenance</q> (1974)</p>
-			</slide>
-		</part>
 		<part id="digitaltransformation">
 			<title>Digital Transformation</title>
 			<slide id="digital-transformation-everywhere">
@@ -203,6 +195,11 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="pirsig">
+				<title>Systems Reflect Reality</title>
+				<blockquote><q>[...] if a factory is torn down but the rationality which produced it is left standing, then that rationality will simply produce another factory. If a revolution destroys a systematic government, but the systematic patterns of thought that produced that government are left intact, then those patterns will repeat themselves in the succeeding government. There's so much talk about the system. And so little understanding.</q></blockquote>
+				<p class="quotenote"><a href="https://en.wikipedia.org/wiki/Robert_M._Pirsig">Robert Pirsig</a>, <q href="https://en.wikipedia.org/wiki/Zen_and_the_Art_of_Motorcycle_Maintenance">Zen and the Art of Motorcycle Maintenance</q> (1974)</p>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thanks! Q&amp;A</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
