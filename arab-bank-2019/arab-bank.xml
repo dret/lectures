@@ -133,6 +133,18 @@
 	</presentation>
 	<presentation id="api-product">
 		<title short="API Products">Products as APIs</title>
+		<part id="api-lifecycle">
+			<title>API Product Lifecycle</title>
+			<!-- API products have some specific constraints because they create coupling and dependencies that are unavoidable, and must be properly managed. Well-designed APIs help to mitigate the risk of disrupting services when products are evolving throughout their lifetime. -->
+		</part>
+		<part id="api-use">
+			<title>Users and Usage</title>
+			<!-- APIs should be designed "outside-in", i.e. starting from the perspective of API consumers. Some design guidelines may be in place, but the main input from a product design perspective should be developers using the API. -->
+		</part>
+		<part id="scale-coherence">
+			<title>Scale and Coherence</title>
+			<!-- API products exist in the context of API landscapes, where many APIs exist and consumers are using many APIs. Design guidelines help to achieve coherence across that landscape by establishing a shared set of product design principles and patterns. -->
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
