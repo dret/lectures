@@ -154,7 +154,7 @@
 					<li>What's worse than a monolith? A distributed monolith!</li>
 				</ul>
 			</slide>
-			<slide id="scale-of-course">
+			<slide id="scaling-of-course">
 				<title>#2: Scaling Up! Of Course!</title>
 				<blockquote>Of course APIs allow you to more easily scale IT resources by only scaling up those parts that actually need to be scaled. Of course!</blockquote>
 			</slide>
@@ -162,12 +162,11 @@
 				<title>Easily Scale When Required</title>
 				<img src="pneumatic-tubes.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="monolith-but-maybe">
-				<title>#1: Untangling Monoliths! But Maybe …</title>
+			<slide id="scaling-but-maybe">
+				<title>#2: Scaling Up! But Maybe …</title>
 				<ul>
-					<li>IT modularization has been around for decades</li>
-					<li>Organizational modularization has been around for millennia</li>
-					<li>What's worse than a monolith? A distributed monolith!</li>
+					<li>Scaling depends on loosely coupled architecture</li>
+					<li></li>
 				</ul>
 			</slide>
 			<slide id="monetization-of-course">
