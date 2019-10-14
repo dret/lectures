@@ -306,6 +306,43 @@
 				<title>Digital Transformation is Continuous</title>
 			</slide>
 		</part>
+		<part id="properties">
+			<title>Architecture Properties</title>
+			<slide id="observation-support">
+				<title>Observation and Support</title>
+				<ul>
+					<li><em>Observation</em> of explicit (API the APIs) and behavioral aspects</li>
+					<li>The usual suspects are <em>gathering data</em> and <em>knowing what to look for</em></li>
+					<li>Emerging patterns and trends can indicate investment areas</li>
+				</ul>
+			</slide>
+			<slide id="constraint-based">
+				<title>Constraint-Based</title>
+				<ul>
+					<li>Create rules <em>what</em> to do and not <em>how</em> to do it</li>
+					<li>When you say <em>what</em> to do also explain <em>why</em> this constraint exists</li>
+					<li>Propose/suggest/support at least one way <em>how</em> to satisfy the constraint</li>
+					<li>Be open to new ways of <em>how</em> constraints can be satisfied</li>
+					<li>Explain how to <em>verify</em> compliance with the constraint</li>
+				</ul>
+			</slide>
+			<slide id="environment-tweaking">
+				<title>Tweaking the Environment</title>
+				<ul>
+					<li><q>Engineering the Engineers</q></li>
+					<li>Create the environment that helps good products thrive</li>
+					<li><em>API landscapes</em> need observation and gardening</li>
+				</ul>
+			</slide>
+			<slide id="modular-evolvable">
+				<title>Modular and Evolvable</title>
+				<ul>
+					<li>Different constraints may be appropriate for different <q>landscape areas</q></li>
+					<li>Encourage products to be evolvable to improve their long-term fitness</li>
+					<li>Always strictly separate <em>interface</em> and <em>implementation</em> issues</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="new-architect">
 			<title>The New Architect</title>
 			<slide id="decision-elements">
