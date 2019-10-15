@@ -502,6 +502,172 @@
 				<img src="compass-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
+		<part id="landscape-management">
+			<title>API Landscape Management</title>
+			<slide id="landscape-goal">
+				<title>Increasing Product Team Productivity</title>
+				<ul>
+					<li>API product teams need guidance, autonomy, and support</li>
+					<ul>
+						<li><em>Guidance</em> helps understanding and navigating the current landscape</li>
+						<li><em>Autonomy</em> allows choices to be made driven by product and user needs</li>
+						<li><em>Support</em> increases productivity of teams for cross-cutting concerns</li>
+					</ul>
+					<li>Balancing <em>product value</em> and <em>product portfolio value</em></li>
+					<ul>
+						<li>Products focus on achieving <q>local maxima</q> for product value</li>
+						<li>Landscapes focus on achieving <q>global maxima</q> across all products</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="landscape-aspects">
+				<title>CAM Landscape Compass</title>
+				<img title="API Landscape Aspects" src="landscape-aspects.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="v1-variety">
+				<title>V1: Variety</title>
+				<ul>
+					<li>APIs come in many different shapes (on different levels)</li>
+					<ul>
+						<li><em>API style</em> moved from RPC (SOAP) to Web APIs</li>
+						<li><em>Web API style</em> starts embracing query-style APIs (GraphQL)</li>
+					</ul>
+					<li>Allow <em>more than one way</em> to address a problem</li>
+					<ul>
+						<li>Embrace diversity as a way to explore new ways to solve a problem</li>
+					</ul>
+				</ul>
+				<blockquote>Example Question: How easy is it for your landscape to embrace and support a new API technology?</blockquote>
+			</slide>
+			<slide id="v2-vocabulary">
+				<title>V2: Vocabulary</title>
+				<ul>
+					<li>APIs are languages that define how two parties communicate</li>
+					<li>Each API is a mix of reused technology and problem-specific definitions</li>
+					<ul>
+						<li>Reusing generic metamodels such as XML or JSON is a natural choice for most</li>
+						<li>Reusing specific models is a harder design task</li>
+					</ul>
+					<li>Maximizing reuse benefits producers and consumers</li>
+					<ul>
+						<li><em>Producers</em> don't have to re-invent the wheel for solved problems</li>
+						<li><em>Consumers</em> can understand part of the API because they know it already</li>
+					</ul>
+				</ul>
+				<blockquote>Example Question: Is there an easy way for developers to discover the vocabularies that are in use throughout existing APIs?</blockquote>
+			</slide>
+			<slide id="v3-volume">
+				<title>V3: Volume</title>
+				<ul>
+					<li>API volume is a good thing and should be encouraged</li>
+					<ul>
+						<li>More components in an ecosystem mean more choice and better selection</li>
+						<li>Selection should be <em>within</em> the ecosystem, not <em>getting into</em> the ecosystem</li>
+					</ul>
+					<li>Guidelines and support needs to grow and evolve along ecosystem growth</li>
+					<ul>
+						<li>Identifying bottlenecks <em>for the product teams</em> helps to make teams more productive</li>
+						<li>Identifying bottlenecks <em>for the ecosystem</em> helps to eliminate participation barriers</li>
+					</ul>
+				</ul>
+				<blockquote>Example Question: How easy is it for developers to design, implement, and deploy a new product?</blockquote>
+			</slide>
+			<slide id="v4-velocity">
+				<title>V4: Velocity</title>
+				<ul>
+					<li>Change frequency is a good thing and should be encouraged</li>
+					<li>Changes in consumption ideally are invisible to producers</li>
+					<ul>
+						<li><em>Onboarding</em> is invisible to producers</li>
+						<li><em>Scalability</em> should be built into each product</li>
+					</ul>
+					<li>Changes in products ideally are invisible to consumers</li>
+					<ol>
+						<li><link href="v7-versioning">Change management</link> provides a robust product evolution path</li>
+						<li>Product evolution is opaque and consumers always use their favorite version</li>
+					</ol>
+				</ul>
+				<blockquote>Example Question: Does anything in the API landscape slow down teams when creating or changing APIs?</blockquote>
+			</slide>
+			<slide id="v5-vulnerability">
+				<title>V5: Vulnerability</title>
+				<ul>
+					<li>Every API is a possible attack vector into a capability</li>
+					<li>Security is easy to get wrong and hard to get right</li>
+					<li>Security often gets API programs started</li>
+					<li>Identity can become an important asset for large organizations</li>
+					<ul>
+						<li>GDPR is hard to get right without solid identity management</li>
+					</ul>
+				</ul>
+				<blockquote>Example Question: Are APIs designed from the ground up to be potentially externalizable?</blockquote>
+			</slide>
+			<slide id="v6-visibility">
+				<title>V6: Visibility</title>
+				<ul>
+					<li>Product catalogs are essential for product success</li>
+					<li><em>Visibility refinement</em> depends on the expected target audience</li>
+					<ul>
+						<li><em>Private APIs</em> may be able to get away with just making them findable</li>
+						<li><em>Partner APIs</em> already need some marketing so that partners will notice</li>
+						<li><em>Public APIs</em> may need a comprehensive plan for a competitive market presence</li>
+					</ul>
+				</ul>
+				<blockquote>Example Question: How easy it is for architects, teams, and consumers to explore the entire API landscape?</blockquote>
+			</slide>
+			<slide id="v7-versioning">
+				<title>V7: Versioning</title>
+				<ul>
+					<li>API success creates potential problem for API products</li>
+					<ul>
+						<li>More usage means more feedback means more input and motivation to improve the product</li>
+						<li>More usage means greater risk for potential disruption of existing consumers</li>
+					</ul>
+					<li>Managing products and their implementations</li>
+					<ul>
+						<li><em>Implementations</em> should use well-know schemes such as <a href="http://semver.org/" title='Semantic Versioning 2.0.0'>Semantic Versioning</a></li>
+						<li><em>APIs</em> should expose a subset of the implementation version information</li>
+						<li><em>API management</em> can take care of some product management issues</li>
+					</ul>
+				</ul>
+				<blockquote>Example Question: Are APIs designed and implemented so that changes create as little disruption as possible?</blockquote>
+			</slide>
+			<slide id="v8-volatility">
+				<title>V8: Volatility</title>
+				<ul>
+					<li>Products in ecosystems appear, change, and disappear</li>
+					<ul>
+						<li>Change is not a problem but a feature that is essential for ecosystem growth</li>
+					</ul>
+					<li>Treating dependencies responsibly increases product resilience</li>
+					<ul>
+						<li>Not making any assumptions about APIs always being accessible</li>
+						<li>Always behaving well when APIs are inaccessible</li>
+					</ul>
+					<li>Client-side products (such as SDKs) need to be resilient</li>
+					<li>Testing always should include degraded and inaccessible API dependencies</li>
+				</ul>
+				<blockquote>Example Question: Are all dependencies implemented to be visible and to behave responsibly when some APIs fail?</blockquote>
+			</slide>
+			<slide id="why-what-how">
+				<title>Guidelines: Why? What? How? Test!</title>
+				<ul>
+					<li>Guidance needs to be motivated, clear, actionable, and testable</li>
+					<ul>
+						<li><em><q>Why</q></em> explains why a problem is a problem</li>
+						<li><em><q>What</q></em> explains a design to address the problem</li>
+						<li><em><q>How</q></em> explains how to implement the solution</li>
+						<li><em><q>Test</q></em> provides feedback to verify compliance</li>
+					</ul>
+					<li>Guidance is further qualified by when it is applicable</li>
+					<ul>
+						<li><em>Guidance evolution</em> has stages such as <em>experimental/production/deprecated</em></li>
+						<li><em>Guidance applicability</em> is decided by API maturity stage</li>
+					</ul>
+					<li><em>Governance</em> is about how the guidelines are <q>enforced</q>/<q>encouraged</q></li>
+				</ul>
+			</slide>
+		</part>
 		<part id="properties">
 			<title>Architecture Properties</title>
 			<slide id="observation-support">
