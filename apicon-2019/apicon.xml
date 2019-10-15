@@ -513,11 +513,8 @@
 					<li>Always strictly separate <em>interface</em> and <em>implementation</em> issues</li>
 				</ul>
 			</slide>
-		</part>
-		<part id="new-architect">
-			<title>The New Architect</title>
 			<slide id="decision-elements">
-				<title>Decision Elements</title>
+				<title>Architectural Decision Elements</title>
 				<img src="decision-elements.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="cam-compasses">
