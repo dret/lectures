@@ -116,26 +116,9 @@
 				<title>Interface Continuity and Evolution</title>
 				<img src="audi-rs6-plus-interior.jpg" title="Audi RS6 Plus Interior" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="api-api">
-				<title>API your APIs</title>
-				<ul>
-					<li>Expose design-time and runtime API information in the API</li>
-					<ul>
-						<li><em>Design-time</em> allows automation of API landscape overview</li>
-						<li><em>Runtime</em> allows automation of API landscape status</li>
-					</ul>
-					<li>Follow <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">robust extensibility principles</a> for these <q>API APIs</q></li>
-					<ul>
-						<li><em>Meaningful Core:</em> Start with a simple but useful scenario</li>
-						<li><em>Extension Points:</em> Think about how scenarios might evolve</li>
-						<li><em>Processing Model:</em> Be clear about how extensions are handled</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="api-patterns">
 				<title>Emerging API Patterns</title>
 				<ul>
-					<li>Self-description for APIs is increasing</li>
 					<li><a href="http://webconcepts.info/specs/IETF/RFC/7807">Problem details</a> as a way how APIs expose error information</li>
 					<ul>
 						<li>Enables generic error handling but also allows additional information</li>
@@ -147,6 +130,11 @@
 					<li><a href="http://webconcepts.info/specs/IETF/I-D/inadarei-api-health-check">Healthcheck reports</a> as a way how APIs expose status information</li>
 					<ul>
 						<li>Enables landscape-level status reports but also allows additional information</li>
+					</ul>
+					<li>API your APIs: Self-description for APIs is increasing</li>
+					<ul>
+						<li><em>Design-time</em> allows automation of API landscape overview</li>
+						<li><em>Runtime</em> allows automation of API landscape status</li>
 					</ul>
 				</ul>
 			</slide>
