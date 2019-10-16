@@ -147,6 +147,15 @@
 				<title>Interface Continuity and Evolution</title>
 				<img src="audi-rs6-plus-interior.jpg" title="Audi RS6 Plus Interior" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="essence">
+				<title>The Essence of Continuous Architecting</title>
+				<ul>
+					<li>Architecture is <em>informed by solutions</em></li>
+					<li>Architecture's job is to <em>support solutions</em></li>
+					<li>Architecture's job is to <em>optimize the solution landscape</em></li>
+					<li>Architecture focuses on <em>solution interfaces</em></li>
+				</ul>
+			</slide>
 			<slide id="api-patterns">
 				<title>Emerging API Patterns</title>
 				<ul>
@@ -167,15 +176,6 @@
 						<li><em>Design-time</em> allows automation of API landscape overview</li>
 						<li><em>Runtime</em> allows automation of API landscape status</li>
 					</ul>
-				</ul>
-			</slide>
-			<slide id="essence">
-				<title>The Essence of Continuous Architecting</title>
-				<ul>
-					<li>Architecture is <em>informed by solutions</em></li>
-					<li>Architecture's job is to <em>support solutions</em></li>
-					<li>Architecture's job is to <em>optimize the solution landscape</em></li>
-					<li>Architecture focuses on <em>solution interfaces</em></li>
 				</ul>
 			</slide>
 		</part>
