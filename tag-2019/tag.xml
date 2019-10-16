@@ -154,6 +154,9 @@
 					<li>Architecture's job is to <em>support solutions</em></li>
 					<li>Architecture's job is to <em>optimize the solution landscape</em></li>
 					<li>Architecture focuses on <em>solution interfaces</em></li>
+					<ul>
+						<li>Strictly separate <em>interface</em> and <em>implementation</em> architecture</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="api-patterns">
@@ -219,23 +222,9 @@
 					<li>Volatility example: Are all dependencies implemented to be visible and to behave responsibly when some APIs fail?</li>
 				</ul>
 			</slide>
-			<slide id="why-what-how">
-				<title>Guidelines: Why? What? How? Test!</title>
-				<ul>
-					<li>Guidance needs to be motivated, clear, actionable, and testable</li>
-					<ul>
-						<li><em><q>Why</q></em> explains why a problem is a problem</li>
-						<li><em><q>What</q></em> explains a design to address the problem</li>
-						<li><em><q>How</q></em> explains how to implement the solution</li>
-						<li><em><q>Test</q></em> provides feedback to verify compliance</li>
-					</ul>
-					<li>Guidance is further qualified by when it is applicable</li>
-					<ul>
-						<li><em>Guidance evolution</em> has stages such as <em>experimental/production/deprecated</em></li>
-						<li><em>Guidance applicability</em> is decided by API maturity stage</li>
-					</ul>
-					<li><em>Governance</em> is about how the guidelines are <q>enforced</q>/<q>encouraged</q></li>
-				</ul>
+			<slide id="stylebook">
+				<title>The API Stylebook</title>
+				<img href="http://apistylebook.com/design/guidelines/" src="api-stylebook.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
 		<part id="product-management">
