@@ -179,52 +179,6 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="product-management">
-			<title>Product Management</title>
-			<slide id="pillar-maturity">
-				<title>Product Pillars and Maturity</title>
-				<ul>
-					<li><em>API Products</em> are created in the context of (possibly implicit) API landscapes</li>
-					<ul>
-						<li>They are influenced by the culture and constraints of the landscape</li>
-					</ul>
-					<li><em>Product Pillars</em> identify areas of investment during an API's lifetime</li>
-					<li><em>Product Maturity</em> describes stages of an API product's lifetime</li>
-				</ul>
-			</slide>
-			<slide id="product-pillars">
-				<title>CAM Product Compass</title>
-				<img src="cam-compass-product.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="compass-maturity">
-				<title>CAM Product Compass: Maturity</title>
-				<img src="compass-maturity.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="product-compass-pillars-1-5">
-				<title>CAM Product Compass: Pillars 1-5</title>
-				<ul>
-					<li>Change Management example: If your design includes a plan for evolving the API itself, do you document this clearly so that clients know what to expect?</li>
-					<li>Deployment example: Deployment is aligned with the change management principles, so that if necessary, multiple versions can be operated and potentially discovered in parallel.</li>
-					<li>Design example: Given the API's style and technology, is it using a recommended and/or standardized description format that makes it easier for consumers to gain an initial understanding of the API, possibly aided by tooling they can use?</li>
-					<li>Development example: Does development include technologies and/or tools that are not part of the recommended development technologies and/or tools in the organization?</li>
-					<li>Discovery example: Based on the change management strategy, it is made sure that it is always the most recent version that is made available through all discovery channels.</li>
-				</ul>
-			</slide>
-			<slide id="product-compass-pillars-6-10">
-				<title>CAM Product Compass: Pillars 6-10</title>
-				<ul>
-					<li>Documentation example: Is the documentation and learning experience for the API based on the strategic goals of the API product?</li>
-					<li>Monitoring example: Is all the monitoring information collected in a way that it can be easily accessed and reused?</li>
-					<li>Security example: Documentation and design expose as little information about implementation details as possible to reduce the attack surface.</li>
-					<li>Strategy example: Do you have a clearly defined and documented reason why the API exists?</li>
-					<li>Testing example: Do your tests include scenarios where consumed APIs are not performing or are not reachable, in order to test for resiliency of the API product?</li>
-				</ul>
-			</slide>
-			<slide id="compass-api">
-				<title>CAM Product Compass: Results</title>
-				<img src="compass-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-		</part>
 		<part id="landscape-management">
 			<title>API Landscape Management</title>
 			<slide id="landscape-goal">
@@ -282,6 +236,52 @@
 					</ul>
 					<li><em>Governance</em> is about how the guidelines are <q>enforced</q>/<q>encouraged</q></li>
 				</ul>
+			</slide>
+		</part>
+		<part id="product-management">
+			<title>Product Management</title>
+			<slide id="pillar-maturity">
+				<title>Product Pillars and Maturity</title>
+				<ul>
+					<li><em>API Products</em> are created in the context of (possibly implicit) API landscapes</li>
+					<ul>
+						<li>They are influenced by the culture and constraints of the landscape</li>
+					</ul>
+					<li><em>Product Pillars</em> identify areas of investment during an API's lifetime</li>
+					<li><em>Product Maturity</em> describes stages of an API product's lifetime</li>
+				</ul>
+			</slide>
+			<slide id="product-pillars">
+				<title>CAM Product Compass</title>
+				<img src="cam-compass-product.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="compass-maturity">
+				<title>CAM Product Compass: Maturity</title>
+				<img src="compass-maturity.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="product-compass-pillars-1-5">
+				<title>CAM Product Compass: Pillars 1-5</title>
+				<ul>
+					<li>Change Management example: If your design includes a plan for evolving the API itself, do you document this clearly so that clients know what to expect?</li>
+					<li>Deployment example: Deployment is aligned with the change management principles, so that if necessary, multiple versions can be operated and potentially discovered in parallel.</li>
+					<li>Design example: Given the API's style and technology, is it using a recommended and/or standardized description format that makes it easier for consumers to gain an initial understanding of the API, possibly aided by tooling they can use?</li>
+					<li>Development example: Does development include technologies and/or tools that are not part of the recommended development technologies and/or tools in the organization?</li>
+					<li>Discovery example: Based on the change management strategy, it is made sure that it is always the most recent version that is made available through all discovery channels.</li>
+				</ul>
+			</slide>
+			<slide id="product-compass-pillars-6-10">
+				<title>CAM Product Compass: Pillars 6-10</title>
+				<ul>
+					<li>Documentation example: Is the documentation and learning experience for the API based on the strategic goals of the API product?</li>
+					<li>Monitoring example: Is all the monitoring information collected in a way that it can be easily accessed and reused?</li>
+					<li>Security example: Documentation and design expose as little information about implementation details as possible to reduce the attack surface.</li>
+					<li>Strategy example: Do you have a clearly defined and documented reason why the API exists?</li>
+					<li>Testing example: Do your tests include scenarios where consumed APIs are not performing or are not reachable, in order to test for resiliency of the API product?</li>
+				</ul>
+			</slide>
+			<slide id="compass-api">
+				<title>CAM Product Compass: Results</title>
+				<img src="compass-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
 		<part id="conclusions">
