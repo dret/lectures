@@ -411,61 +411,61 @@
 			<slide id="product-compass-change-management">
 				<title>CAM Product Compass: Change Management</title>
 				<ul>
-					<li>If your design includes a plan for evolving the API itself, do you document this clearly so that clients know what to expect?</li>
+					<li>Example question: If your design includes a plan for evolving the API itself, do you document this clearly so that clients know what to expect?</li>
 				</ul>
 			</slide>
 			<slide id="product-compass-deployment">
 				<title>CAM Product Compass: Deployment</title>
 				<ul>
-					<li>Deployment is aligned with the change management principles, so that if necessary, multiple versions can be operated and potentially discovered in parallel.</li>
+					<li>Example question: Deployment is aligned with the change management principles, so that if necessary, multiple versions can be operated and potentially discovered in parallel.</li>
 				</ul>
 			</slide>
 			<slide id="product-compass-design">
 				<title>CAM Product Compass: Design</title>
 				<ul>
-					<li>Given the API's style and technology, is it using a recommended and/or standardized description format that makes it easier for consumers to gain an initial understanding of the API, possibly aided by tooling they can use?</li>
+					<li>Example question: Given the API's style and technology, is it using a recommended and/or standardized description format that makes it easier for consumers to gain an initial understanding of the API, possibly aided by tooling they can use?</li>
 				</ul>
 			</slide>
 			<slide id="product-compass-development">
 				<title>CAM Product Compass: Development</title>
 				<ul>
-					<li>Does development include technologies and/or tools that are not part of the recommended development technologies and/or tools in the organization?</li>
+					<li>Example question: Does development include technologies and/or tools that are not part of the recommended development technologies and/or tools in the organization?</li>
 				</ul>
 			</slide>
 			<slide id="product-compass-discovery">
 				<title>CAM Product Compass: Discovery</title>
 				<ul>
-					<li>Based on the change management strategy, it is made sure that it is always the most recent version that is made available through all discovery channels.</li>
+					<li>Example question: Based on the change management strategy, it is made sure that it is always the most recent version that is made available through all discovery channels.</li>
 				</ul>
 			</slide>
 			<slide id="product-compass-documentation">
 				<title>CAM Product Compass: Documentation</title>
 				<ul>
-					<li>Is the documentation and learning experience for the API based on the strategic goals of the API product?</li>
+					<li>Example question: Is the documentation and learning experience for the API based on the strategic goals of the API product?</li>
 				</ul>
 			</slide>
 			<slide id="product-compass-monitoring">
 				<title>CAM Product Compass: Monitoring</title>
 				<ul>
-					<li>Is all the monitoring information collected in a way that it can be easily accessed and reused?</li>
+					<li>Example question: Is all the monitoring information collected in a way that it can be easily accessed and reused?</li>
 				</ul>
 			</slide>
 			<slide id="product-compass-security">
 				<title>CAM Product Compass: Security</title>
 				<ul>
-					<li>Documentation and design expose as little information about implementation details as possible to reduce the attack surface.</li>
+					<li>Example question: Documentation and design expose as little information about implementation details as possible to reduce the attack surface.</li>
 				</ul>
 			</slide>
 			<slide id="product-compass-strategy">
 				<title>CAM Product Compass: Strategy</title>
 				<ul>
-					<li>Do you have a clearly defined and documented reason why the API exists?</li>
+					<li>Example question: Do you have a clearly defined and documented reason why the API exists?</li>
 				</ul>
 			</slide>
 			<slide id="product-compass-testing">
 				<title>CAM Product Compass: Testing</title>
 				<ul>
-					<li>Do your tests include scenarios where consumed APIs are not performing or are not reachable, in order to test for resiliency of the API product?</li>
+					<li>Example question: Do your tests include scenarios where consumed APIs are not performing or are not reachable, in order to test for resiliency of the API product?</li>
 				</ul>
 			</slide>
 			<slide id="compass-api">
