@@ -1819,7 +1819,7 @@
 	<presentation id="microservices">
 		<title>Microservices</title>
 		<toc class="abstract">Microservices are a way how to improve the speed of software delivery, result in more scalable architectures, and make sure that these goals do not compromise the robustness of the overall landscape. The concept of microservices has been distilled from a set of practices that have been adopted in bigger organizations that need to make sure that service development and delivery is as fast as possible. Microservices have a close architectural parallel in the Web, which is built around the same general principles of strictly separate implementations, easily usable interfaces, and an ecosystem model where the measure of success and fitness is that of the overall resulting system, and not that of the individual components.</toc>
-		<toc class="resources"><a href="http://www.apiacademy.co/microservice-architecture-the-oreilly-book/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="https://martinfowler.com/microservices/" title="Martin Fowler's Microservices Resource Guide">Microservices Resource Guide</a></toc>
+		<toc class="resources"><a href="https://www.oreilly.com/library/view/microservice-architecture/9781491956328/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, &quot;Microservice Architecture: Aligning Principles, Practices, and Culture&quot;, O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="https://martinfowler.com/microservices/" title="Martin Fowler's Microservices Resource Guide">Microservices Resource Guide</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -4966,7 +4966,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 	<presentation id="skeleton">
 		<title>General Skeleton</title>
 		<toc class="abstract">General-purpose skeleton with introduction and conclusions.</toc>
-		<toc class="resources"><a href="https://www.axway.com/catalysts">Catalysts</a>&#160;· <a href="http://shop.oreilly.com/product/0636920201755.do" title="Mehdi Medjaoui, Erik Wilde, Ronnie Mitra, and Mike Amundsen, 'Continuous API Management: Making the Right Decisions in an Evolving Landscape', O'Reilly Media, December 2018">CAM Book</a>&#160;· <a href="http://shop.oreilly.com/product/0636920050308.do" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>
+		<toc class="resources"><a href="https://www.axway.com/catalysts">Catalysts</a>&#160;· <a href="https://www.oreilly.com/library/view/continuous-api-management/9781492043546/" title="Mehdi Medjaoui, Erik Wilde, Ronnie Mitra, and Mike Amundsen, 'Continuous API Management: Making the Right Decisions in an Evolving Landscape', O'Reilly Media, December 2018">CAM Book</a>&#160;· <a href="https://www.oreilly.com/library/view/microservice-architecture/9781491956328/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, 'Microservice Architecture: Aligning Principles, Practices, and Culture', O'Reilly Media, June 2016">MSA Book</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -4998,11 +4998,11 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide id="msa-book">
 				<title>Microservice Architecture (2016)</title>
-				<img src="MSA-cover.jpg" href="http://shop.oreilly.com/product/0636920050308.do" title="Microservice Architecture: Aligning Principles, Practices, and Culture" style="float: right ; height : 55% ; margin : 4% ; "/>
+				<img src="MSA-cover.jpg" href="https://www.oreilly.com/library/view/microservice-architecture/9781491956328/" title="Microservice Architecture: Aligning Principles, Practices, and Culture" style="float: right ; height : 55% ; margin : 4% ; "/>
 				<ul>
 					<li><q>Microservice Architecture: Aligning Principles, Practices, and Culture</q></li>
 					<ul>
-						<li><a href="http://shop.oreilly.com/product/0636920050308.do">O'Reilly book page</a></li>
+						<li><a href="https://www.oreilly.com/library/view/microservice-architecture/9781491956328/">O'Reilly book page</a></li>
 						<li><a href="https://www.amazon.com/Microservice-Architecture-Aligning-Principles-Practices/dp/1491956259">Amazon book page</a></li>
 					</ul>
 					<li>Authored by 2016 <a href="http://www.apiacademy.co/">API Academy</a> members</li>
@@ -5016,11 +5016,11 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide id="cam-book">
 				<title>Continuous API Management (2018)</title>
-				<img src="CAM-cover.jpg" href="https://www.amazon.com/Continuous-Api-Management-Decisions-Landscape/dp/1492043559" title="Continuous API Management: Making the Right Decisions in an Evolving Landscape" style="float: right ; height : 55% ; margin : 4% ; "/>
+				<img src="CAM-cover.jpg" href="https://www.oreilly.com/library/view/continuous-api-management/9781492043546/" title="Continuous API Management: Making the Right Decisions in an Evolving Landscape" style="float: right ; height : 55% ; margin : 4% ; "/>
 				<ul>
 					<li><q>Continuous API Management: Making the Right Decisions in an Evolving Landscape</q></li>
 					<ul>
-						<li><a href="http://shop.oreilly.com/product/0636920201755.do">O'Reilly book page</a></li>
+						<li><a href="https://www.oreilly.com/library/view/continuous-api-management/9781492043546/">O'Reilly book page</a></li>
 						<li><a href="https://www.amazon.com/Continuous-Api-Management-Decisions-Landscape/dp/1492043559">Amazon book page</a></li>
 					</ul>
 					<li>Authored by 2018 <a href="http://www.apiacademy.co/">API Academy</a> members</li>
