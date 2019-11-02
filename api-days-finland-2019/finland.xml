@@ -172,7 +172,7 @@
 				<ul>
 					<li>APIs without loose coupling are not (really) APIs</li>
 					<ul>
-						<li>APIs are not designed specifically for one consumer</li>
+						<li>APIs are not specifically designed for one consumer</li>
 						<li>Reused APIs should have a model how to decouple evolution</li>
 					</ul>
 					<li>Loose coupling is fuzzy but still an important quality</li>
