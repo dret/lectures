@@ -189,6 +189,43 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="webconcepts">
+				<title>Web Concepts</title>
+				<ul>
+					<li>Web APIs are always based on shared architectural concepts</li>
+					<ul>
+						<li>Some <a href="http://webconcepts.info/concepts/">concepts</a> matter for interaction at the Web level</li>
+						<li>Each concept has a <em>value space</em> (such as <a href="http://webconcepts.info/concepts/http-method/">HTTP request methods</a>)</li>
+						<li>Specifications establishing values are created by <a href="http://webconcepts.info/specs/">organizations</a></li>
+					</ul>
+					<li><a href="http://webconcepts.info/">Web concepts</a> provides a <em>starter set</em> of concepts and specifications</li>
+					<ul>
+						<li>Currently there are <a href="http://webconcepts.info/concepts/">33 concepts with a total of 803 distinct values</a></li>
+						<li>These concepts are taken from <a href="http://webconcepts.info/specs/">288 specifications from 6 organizations</a></li>
+					</ul>
+					<li>Web concepts is designed to be usable along two major axes</li>
+					<ol>
+						<li>Adding or removing concepts/values to represent the <q>organizational Web surface</q></li>
+						<li>Adding API-level usage to link APIs and the concepts they use</li>
+					</ol>
+				</ul>
+			</slide>
+			<slide id="http-problem-json">
+				<title>HTTP Problems: JSON Format</title>
+				<img src="webconcepts-problem-json.png" href="http://webconcepts.info/concepts/media-type/application/problem+json" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="rfc7807">
+				<title>RFC 7807</title>
+				<img src="webconcepts-rfc-7807.png" href="http://webconcepts.info/specs/IETF/RFC/7807" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="specs">
+				<title>Specifications</title>
+				<listing src="specs.json" line="2198-2207"/>
+			</slide>
+			<slide id="concepts">
+				<title>Concepts</title>
+				<listing src="concepts.json" line="6112-6120"/>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
