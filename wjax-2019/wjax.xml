@@ -130,6 +130,17 @@
 		</part>
 		<part id="systems-ecosystems">
 			<title>Systems and Ecosystems</title>
+			<slide id="the-web">
+				<title>The Web</title>
+				<ul>
+					<li>Providers and consumers are loosely coupled</li>
+					<li>Providers can implement their services any way they like</li>
+					<li>Consumers can implement their clients any way they like</li>
+					<li>There are no hidden shared assumptions or components</li>
+					<li>Providers and consumers evolve independently</li>
+					<li>All these things are equally true for the API Web</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="api-products">
 			<title>API Products</title>
