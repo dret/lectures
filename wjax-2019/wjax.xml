@@ -172,6 +172,23 @@
 				<title>CAM Landscape Compass</title>
 				<img src="cam-compass-landscape.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="api-patterns">
+				<title>The Evolution of API Design Patterns</title>
+				<ul>
+					<li><a href="http://webconcepts.info/specs/IETF/RFC/7807">Problem details</a> as a way how APIs expose error information</li>
+					<ul>
+						<li>Enables generic error handling but also allows additional information</li>
+					</ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/nottingham-json-home">Home documents</a> as a way how APIs provide starting pages</li>
+					<ul>
+						<li>Enables harvesting of API start points but also allows additional information</li>
+					</ul>
+					<li><a href="http://webconcepts.info/specs/IETF/I-D/inadarei-api-health-check">Healthcheck reports</a> as a way how APIs expose status information</li>
+					<ul>
+						<li>Enables landscape-level status reports but also allows additional information</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
