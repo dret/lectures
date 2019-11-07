@@ -196,6 +196,14 @@
 				<title>API Complexity: Results</title>
 				<img src="monzo-service-graph.jpg" href="https://twitter.com/JackKleeman/status/1190973434601324544" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="consume-responsibly">
+				<title>Consume Responsibly</title>
+				<ul>
+					<li>Distributed programming is different</li>
+					<li>Well-behaving code needs to be resilient</li>
+					<li>Test resilience by testing in non-optimal environments</li>
+				</ul>
+			</slide>
 			<slide id="consumption-compass">
 				<title>CAM Consumption Compass</title>
 				<img src="cam-compass-consumption.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
