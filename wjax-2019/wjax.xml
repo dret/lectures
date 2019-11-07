@@ -215,6 +215,38 @@
 				<title>CAM Strategy Compass</title>
 				<img src="cam-compass-strategy.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="guidelines">
+				<title>Guidelines: Increasing Product/Landscape Productivity</title>
+				<ul>
+					<li>API product teams need guidance, autonomy, and support</li>
+					<ul>
+						<li><em>Guidance</em> helps understanding and navigating the current landscape</li>
+						<li><em>Autonomy</em> allows choices to be made driven by product and user needs</li>
+						<li><em>Support</em> increases productivity of teams for cross-cutting concerns</li>
+					</ul>
+					<li>Balancing <em>product value</em> and <em>product portfolio value</em></li>
+					<ul>
+						<li>Products focus on achieving <q>local maxima</q> for product value</li>
+						<li>Landscapes focus on achieving <q>global maxima</q> across all products</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="why-what-how">
+				<title>Guidelines: Why? What? How? Test?</title>
+				<ul>
+					<li>Guidance needs to be motivated, clear, actionable, and testable</li>
+					<li><em><q>Why</q></em> explains why a problem is a problem</li>
+					<li><em><q>What</q></em> explains a design to address the problem</li>
+					<li><em><q>How</q></em> explains how to implement the solution</li>
+					<li><em><q>Test</q></em> provides feedback to verify compliance</li>
+					<li>Guidance is further qualified by when it is applicable</li>
+					<ul>
+						<li><em>Guidance evolution</em> has stages such as <em>experimental/production/deprecated</em></li>
+						<li><em>Guidance applicability</em> is decided by API maturity stage</li>
+					</ul>
+					<li><em>Governance</em> is about how the guidelines are <q>enforced</q>/<q>encouraged</q></li>
+				</ul>
+			</slide>
 			<slide id="landscape-aspects">
 				<title>CAM Landscape Compass</title>
 				<img src="cam-compass-landscape.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
