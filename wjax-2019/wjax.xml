@@ -173,10 +173,6 @@
 				<title>CAM Product Compass</title>
 				<img src="cam-compass-product.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="compass-maturity">
-				<title>CAM Product Compass: Maturity</title>
-				<img src="compass-maturity.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
 			<slide id="product-compass-change-management">
 				<title>CAM Product Compass: Change Management</title>
 				<ul>
@@ -187,6 +183,10 @@
 					<li>Does your documentation include a history of changes so that it is possible for consumers to understand how the API evolved?</li>
 					<li>Do you have a plan how to decommission the API, and how this will be communicated to active consumers?</li>
 				</ul>
+			</slide>
+			<slide id="compass-maturity">
+				<title>CAM Product Compass: Maturity</title>
+				<img src="compass-maturity.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="compass-assessment">
 				<title>CAM Product Compass: Results</title>
