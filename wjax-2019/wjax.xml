@@ -153,9 +153,44 @@
 		</part>
 		<part id="api-products">
 			<title>API Products</title>
+			<slide id="api-lifecycle">
+				<title>API Product Lifecycle</title>
+				<img src="axway-api-lifecycle.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="pillar-maturity">
+				<title>Product Pillars and Maturity</title>
+				<ul>
+					<li><em>API Products</em> are created in the context of API landscapes</li>
+					<ul>
+						<li>They are influenced by the culture and constraints of the landscape</li>
+						<li>They influence the culture and constraints of the landscape</li>
+					</ul>
+					<li><em>Product Pillars</em> identify areas of investment during an API's lifetime</li>
+					<li><em>Product Maturity</em> describes stages of an API product's lifetime</li>
+				</ul>
+			</slide>
 			<slide id="product-compass">
 				<title>CAM Product Compass</title>
 				<img src="cam-compass-product.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="compass-maturity">
+				<title>CAM Product Compass: Maturity</title>
+				<img src="compass-maturity.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="product-compass-change-management">
+				<title>CAM Product Compass: Change Management</title>
+				<ul>
+					<li>Does your design include a plan how to make any changes to the API?</li>
+					<li>Do you have an idea of what your API should and shouldn't be, so that you can more easily decide which evolution paths you are trying to keep open?</li>
+					<li>If your design does not plan on evolving the API itself, do you have a plan how to operate multiple versions and how to manage the consumers of these multiple versions?</li>
+					<li>If your design includes a plan for evolving the API itself, do you document this clearly so that clients know what to expect?</li>
+					<li>Does your documentation include a history of changes so that it is possible for consumers to understand how the API evolved?</li>
+					<li>Do you have a plan how to decommission the API, and how this will be communicated to active consumers?</li>
+				</ul>
+			</slide>
+			<slide id="compass-assessment">
+				<title>CAM Product Compass: Results</title>
+				<img src="compass-assessment.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="consumption-compass">
 				<title>CAM Consumption Compass</title>
