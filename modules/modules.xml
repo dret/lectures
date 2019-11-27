@@ -1825,6 +1825,15 @@
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
 	</presentation>
+	<presentation id="guidelines">
+		<title>Guidelines</title>
+		<toc class="abstract">...</toc>
+		<toc class="resources"><a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+	</presentation>
 	<presentation id="microservices">
 		<title>Microservices</title>
 		<toc class="abstract">Microservices are a way how to improve the speed of software delivery, result in more scalable architectures, and make sure that these goals do not compromise the robustness of the overall landscape. The concept of microservices has been distilled from a set of practices that have been adopted in bigger organizations that need to make sure that service development and delivery is as fast as possible. Microservices have a close architectural parallel in the Web, which is built around the same general principles of strictly separate implementations, easily usable interfaces, and an ecosystem model where the measure of success and fitness is that of the overall resulting system, and not that of the individual components.</toc>
