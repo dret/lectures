@@ -104,6 +104,14 @@
 			</slide>
 			<slide id="api-description">
 				<title>API Descriptions</title>
+				<ul>
+					<li>APIs can be <q>described</q> in a variety of ways</li>
+					<ul>
+						<li><em>Technical descriptions</em> such as OpenAPI or AsyncAPI</li>
+						<li><em>Documentation</em> intended for human consumption</li>
+						<li><em>Metadata</em> helping with API lifecycle management</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="api-to-labels">
 				<title>From API to Labels</title>
