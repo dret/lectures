@@ -137,6 +137,13 @@
 			<title>Etiketo: API Labels</title>
 			<slide id="etiketo-mvp">
 				<title>API Label Example</title>
+				<ul>
+					<li>API Labels declare information about APIs</li>
+					<ul>
+						<li>APIs are identified by URI and described by label documents</li>
+						<li>API labels can be <em>value labels</em> or <em>link labels</em></li>
+					</ul>
+				</ul>
 				<listing src="etiketo-mvp.json" />
 			</slide>
 			<slide id="etiketo-format">
