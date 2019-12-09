@@ -135,6 +135,10 @@
 		</part>
 		<part id="etiketo">
 			<title>Etiketo: API Labels</title>
+			<slide id="etiketo-mvp">
+				<title>API Label Example</title>
+				<listing src="etiketo-mvp.json" />
+			</slide>
 			<slide id="etiketo-format">
 				<title>Etiketo API Label Format</title>
 				<img src="etiketo.png" href="http://etiketo.org/" style="float : right ; width : 15% ; margin-top : 0.5em ; margin-right : 2em ; "/>
