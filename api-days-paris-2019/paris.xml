@@ -187,6 +187,14 @@
 			</slide>
 			<slide id="etiketo-webconcepts">
 				<title>Web Concepts in Etiketo</title>
+				<ul>
+					<li>This API uses various <a href="http://webconcepts.info">Web Concepts</a></li>
+					<ul>
+						<li><a href="http://webconcepts.info/concepts/http-method/">HTTP Request Method</a> <code href="http://webconcepts.info/concepts/http-method/GET">GET</code></li>
+						<li><a href="http://webconcepts.info/concepts/media-type/">Media Types</a> <a href="http://webconcepts.info/concepts/media-type/application/json">JSON</a> and <a href="http://webconcepts.info/concepts/media-type/application/problem+json">HTTP problem reports</a></li>
+						<li><a href="http://webconcepts.info/concepts/http-status-code/">HTTP Status Codes</a> <code href="http://webconcepts.info/concepts/http-status-code/200">OK</code> and <code href="http://webconcepts.info/concepts/http-status-code/404">Not Found</code></li>
+					</ul>
+				</ul>
 				<listing src="etiketo-webconcepts.json" />
 			</slide>
 			<slide id="label-management">
