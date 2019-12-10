@@ -167,6 +167,10 @@
 				<title>Etiketo API Label Format</title>
 				<img src="etiketo.png" href="http://etiketo.org/" style="float : right ; width : 15% ; margin-top : 0.5em ; margin-right : 2em ; "/>
 			</slide>
+			<slide id="etiketo-apisjson">
+				<title>Etiekto Legacy Support</title>
+				<listing src="etiketo-apisjson.json" />
+			</slide>
 		</part>
 		<part id="governance">
 			<title>API Governance</title>

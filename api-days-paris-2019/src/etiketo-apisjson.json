@@ -1,0 +1,10 @@
+{
+  "labels": {
+    "http://etiketo.org/values/APIs.json/#name": "Analysis",
+    "http://etiketo.org/values/APIs.json/#description": "Provides access to blog posts and analysis across the API Evangelist network.",
+    "http://etiketo.org/values/APIs.json/#image": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png",
+    "http://etiketo.org/values/APIs.json/#humanURL": "http://developer.apievangelist.com",
+    "http://etiketo.org/values/APIs.json/#baseURL": "http://api.apievangelist.com/definitions/Analysis"
+  },
+  "links": {"describes": "http://api.apievangelist.com/definitions/Analysis"}
+}
