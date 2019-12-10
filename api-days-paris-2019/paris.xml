@@ -166,6 +166,14 @@
 			<slide id="etiketo-format">
 				<title>Etiketo API Label Format</title>
 				<img src="etiketo.png" href="http://etiketo.org/" style="float : right ; width : 15% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+				<ul>
+					<li>API Labels in an open and extensible description framework</li>
+					<ul>
+						<li>Labels can be either <em>values</em> or <em>typed links</em></li>
+						<li>Labels can use a mix of <em>registered types</em> and <em>extension types</em></li>
+						<li>Registered types are based on an evolving <em>label type registry</em></li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="etiketo-apisjson">
 				<title>Etiekto Legacy Support</title>
