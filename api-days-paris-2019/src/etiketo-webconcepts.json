@@ -1,0 +1,13 @@
+{
+  "labels": {
+    "title": "Example API",
+    "https://etiketo.org/values/webconcepts/": [
+      "http://webconcepts.info/concepts/http-method/GET",
+      "http://webconcepts.info/concepts/http-status-code/200",
+      "http://webconcepts.info/concepts/media-type/application/json",
+      "http://webconcepts.info/concepts/http-status-code/404",
+      "http://webconcepts.info/concepts/media-type/application/problem+json"
+    ]
+  },
+  "links": {"describes": "http://example.com/API"}
+}
