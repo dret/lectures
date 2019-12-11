@@ -157,6 +157,20 @@
 			</slide>
 			<slide id="third-party-labels">
 				<title>Third-Party Labels</title>
+				<ul>
+					<li>Labels describe certain aspects of an API</li>
+					<ol>
+						<li>Descriptions are created and provided by API owners</li>
+						<li>Descriptions are owner-created and validated by the platform</li>
+						<li>Descriptions are created and provided by the platform</li>
+					</ol>
+					<li>Labels support complex API governance processes</li>
+					<ul>
+						<li>Processes still must be defined and implemented</li>
+						<li>Labels provide product-agnostic representation of descriptions</li>
+						<li>New tooling/products can be built on labels</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="etiketo">
