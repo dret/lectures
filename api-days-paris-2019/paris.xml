@@ -184,6 +184,18 @@
 			<title>API Governance</title>
 			<slide id="aggregating">
 				<title>Aggregating API Labels</title>
+				<ul>
+					<li>API labels are integral part of API management</li>
+					<ul>
+						<li><q>All</q> APIs must provide or be provided with API labels</li>
+						<li><em>Crawling</em> in the true Web sense is hard</li>
+					</ul>
+					<li>API labels as part of the deployment pipeline</li>
+					<ul>
+						<li>Label documents are submitted to the API platform</li>
+						<li>Label documents are stored/cached and archived</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="etiketo-webconcepts">
 				<title>Web Concepts in Etiketo</title>
