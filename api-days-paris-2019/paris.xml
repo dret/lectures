@@ -239,6 +239,15 @@
 			</slide>
 			<slide id="label-management">
 				<title>API Management</title>
+				<ul>
+					<li>Labels as the <q>first line of defense</q> in API management</li>
+					<ul>
+						<li>Use labels as a way to communicate about guidelines and compliance</li>
+						<li>Manage labels in the same continuous was as product delivery/deployment</li>
+						<li>Integrate label tests into test harnesses as a way to flag potential issues</li>
+						<li>Treat labels as the ground truth that platform tooling builds on</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="external">
 				<title>Labeling External APIs</title>
