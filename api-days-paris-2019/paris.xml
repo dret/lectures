@@ -251,6 +251,19 @@
 			</slide>
 			<slide id="external">
 				<title>Labeling External APIs</title>
+				<ul>
+					<li>Typical API categories supported in management models</li>
+					<ul>
+						<li><em>Private APIs</em> that are exposing internal capabilities</li>
+						<li><em>Partner APIs</em> that are exposed to partners for B2B interactions</li>
+						<li><em>Public APIs</em> for improved monetization (directly or indirectly)</li>
+					</ul>
+					<li>External APIs are equally important for your API strategy</li>
+					<ul>
+						<li>Manage external APIs as part of your platform</li>
+						<li>Describe/label external APIs like other APIs on your platform</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
