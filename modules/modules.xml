@@ -3279,8 +3279,8 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<title>Document Example (XML)</title>
 				<listing src="section.xml"/>
 			</slide>
-			<slide id="profiles">
-				<title>Profiles</title>
+			<slide id="representation-profiles">
+				<title>Representation Profiles</title>
 				<ul>
 					<li>Variations of representations often can serve different purposes</li>
 					<ul>
@@ -3292,7 +3292,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>Signalling <em>profiles</em> makes it possible to identify variations</li>
 					<ul>
 						<li>Profiles can be more constrained than the underlying type (within its limitations)</li>
-						<li>Profiles can specifically extend the underlying type (within its limitations)</li>
+						<li>Profiles can extend the underlying type (within its limitations)</li>
 					</ul>
 					<li><a title='Erik Wilde, "The &apos;profile&apos; Link Relation Type", Internet RFC 6906, March 2013' href="http://webconcepts.info/specs/IETF/RFC/6906">RFC 6906</a> defines how to identify profiles and signal their usage</li>
 					<ul>
@@ -4676,6 +4676,9 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>Could even detect difference between declared/used Web Concepts</li>
 				</ul>
 			</slide>
+		</part>
+		<part id="profiles">
+			<title>Profiles</title>
 		</part>
 	</presentation>
 	<presentation id="strategy">
