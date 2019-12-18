@@ -4679,6 +4679,18 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="profiles">
 			<title>Profiles</title>
+			<slide id="profile-definition">
+				<title>Defining Profiles</title>
+				<ul>
+					<li><a title='Erik Wilde, "The &apos;profile&apos; Link Relation Type", Internet RFC 6906, March 2013' href="http://webconcepts.info/specs/IETF/RFC/6906">RFC 6906</a> defines how to identify profiles and signal their usage</li>
+				</ul>
+			</slide>
+			<slide id="profile-description">
+				<title>Describing Profiles</title>
+				<ul>
+					<li><a title='Rob Atkinson and Nicholas J. Car, "The Profiles Vocabulary", W3C Note, December 2019' href="https://www.w3.org/TR/dx-prof/">W3C's <q>The Profiles Vocabulary</q></a> defines how to describe profiles</li>
+				</ul>
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="strategy">
