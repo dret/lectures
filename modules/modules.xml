@@ -584,24 +584,24 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="lifecycle">
+		<part id="lifecycle-management">
 			<title>API Lifecycle Management</title>
+			<slide id="lifecycle">
+				<title>Managing API Change</title>
+				<ul>
+					<li><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Robust extensibility</a> helps to facilitate non-breaking API changes</li>
+					<li><link href="hypermedia"/> helps as a pattern to move extensibility beyond data models</li>
+					<li><a href="http://semver.org/">Semantic versioning</a> can be used to keep track of API changes</li>
+					<li><a href="https://goodapi.co/insights/deprecation-and-sunsetting">HTTP <code>Deprecation</code></a> can be used to <a href="http://webconcepts.info/concepts/http-header/Deprecation">declare APIs as deprecated</a></li>
+					<li><a href="https://goodapi.co/insights/deprecation-and-sunsetting">HTTP <code>Sunset</code></a> can be used to <a href="http://webconcepts.info/concepts/http-header/Sunset">signal upcoming sunsets</a></li>
+				</ul>
+			</slide>
 			<slide id="http-sunset">
 				<title>Signaling API End-of-Life</title>
 				<ul>
-					<li>APIs can change in terms of features and will be decommissioned at some point</li>
-					<ul>
-						<li><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Robust extensibility</a> helps to facilitate non-breaking API changes</li>
-						<li><em>Hypermedia</em> helps as a pattern to move extensibility beyond data models</li>
-						<li><a href="http://semver.org/">Semantic versioning</a> may be used to keep track of API changes</li>
-						<li><a href="https://goodapi.co/insights/deprecation-and-sunsetting">HTTP <code>Sunset</code>ting</a> can be used to <a href="http://webconcepts.info/concepts/http-header/Sunset">signal upcoming sunsets on the HTTP level</a></li>
-					</ul>
-					<li>One possible requirement is that APIs must support <code href="http://webconcepts.info/concepts/http-header/Sunset">Sunset</code></li>
-					<ul>
-						<li>Services must document/describe the support of <code>Sunset</code></li>
-						<li>Services may implement <code>Sunset</code> any way they like</li>
-						<li>The simplest option may be <em><code>Sunset</code> policies</em> on a gateway</li>
-					</ul>
+					<li>Services must document/describe the support of <code>Sunset</code></li>
+					<li>Services may implement <code>Sunset</code> any way they like</li>
+					<li>The simplest option may be <em><code>Sunset</code> policies</em> on a gateway</li>
 				</ul>
 			</slide>
 		</part>
