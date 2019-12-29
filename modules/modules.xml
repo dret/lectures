@@ -596,6 +596,14 @@
 					<li><a href="https://goodapi.co/insights/deprecation-and-sunsetting">HTTP <code>Sunset</code></a> can be used to <a href="http://webconcepts.info/concepts/http-header/Sunset">signal upcoming sunsets</a></li>
 				</ul>
 			</slide>
+			<slide id="http-deprecation">
+				<title>Signaling API Deprecation</title>
+				<ul>
+					<li>Services must document/describe the support of <code>Deprecation</code></li>
+					<li>Services may implement <code>Deprecation</code> any way they like</li>
+					<li>The simplest option may be <em><code>Deprecation</code> policies</em> on a gateway</li>
+				</ul>
+			</slide>
 			<slide id="http-sunset">
 				<title>Signaling API End-of-Life</title>
 				<ul>
