@@ -250,7 +250,7 @@
 			<slide id="caching-sunset">
 				<title>Caching and Resource Lifetimes</title>
 				<ul>
-					<li><a href="http://webconcepts.info/specs/IETF/I-D/draft-wilde-sunset-header" title='Erik Wilde, "The Sunset HTTP Header", Internet Draft wilde-sunset-header'>HTTP <code>Sunset</code> header field</a></li>
+					<li><a href="http://webconcepts.info/specs/IETF/RFC/8594" title='Erik Wilde, "The Sunset HTTP Header Field", RFC 8594, May 2019'>HTTP <code>Sunset</code> header field</a></li>
 				</ul>
 			</slide>
 		</part>
@@ -258,7 +258,7 @@
 	<presentation id="change-management">
 		<title short="Change Management">Change Management and Versioning</title>
 		<toc class="abstract">APIs change, and in particular in faster-changing environments, such as those based on microservices architecture, change is happening frequently. Managing change is essential because any API change that is a breaking change, i.e. it requires consumers to adjust, creates ripple effects through the API landscape. Every API style has ways how APIs can be designed to prevent breaking changes, but it is necessary to incorporate this into API design as part of the overall design culture. Communicating breaking changes can be done in a variety of ways, and ideally represents the relationship between the two versions in a machine-readable way.</toc>
-		<toc class="resources"><a href="https://tools.ietf.org/html/rfc5829" title="RFC 5829: 'Link Relation Types for Simple Version Navigation between Web Resources', April 2010">RFC 5829</a>&#160;· <a href="https://tools.ietf.org/html/rfc6648" title="RFC 6648: 'Deprecating the &quot;X-&quot; Prefix and Similar Constructs in Application Protocols', June 2012">RFC 6648</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a>&#160;· <a href="https://tools.ietf.org/html/draft-wilde-registries" title='Erik Wilde, "The Use of Registries", Internet Draft wilde-registries'>Registries</a>&#160;· <a href="https://medium.com/good-api/api-change-management-2fe5bba32e9b" title='Zdenek Nemec, "API Change Management", April 2017'>Change Management</a>&#160;· <a href="http://semver.org/" title='Semantic Versioning 2.0.0'>Semantic Versioning</a>&#160;· <a href="http://webconcepts.info/specs/IETF/I-D/draft-wilde-sunset-header" title='Erik Wilde, "The Sunset HTTP Header", Internet Draft wilde-sunset-header'>Sunset Header</a>&#160;· <a href="https://www.mnot.net/blog/2012/06/25/http_api_complexity_model" title='Mark Nottingham, "HTTP API Complexity", June 2012'>API Complexity</a></toc>
+		<toc class="resources"><a href="https://tools.ietf.org/html/rfc5829" title="RFC 5829: 'Link Relation Types for Simple Version Navigation between Web Resources', April 2010">RFC 5829</a>&#160;· <a href="https://tools.ietf.org/html/rfc6648" title="RFC 6648: 'Deprecating the &quot;X-&quot; Prefix and Similar Constructs in Application Protocols', June 2012">RFC 6648</a>&#160;· <a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html" title='Erik Wilde, "Patterns for Robust Extensibility", April 2016'>Robust Extensibility</a>&#160;· <a href="https://tools.ietf.org/html/draft-wilde-registries" title='Erik Wilde, "The Use of Registries", Internet Draft wilde-registries'>Registries</a>&#160;· <a href="https://medium.com/good-api/api-change-management-2fe5bba32e9b" title='Zdenek Nemec, "API Change Management", April 2017'>Change Management</a>&#160;· <a href="http://semver.org/" title='Semantic Versioning 2.0.0'>Semantic Versioning</a>&#160;· <a href="http://webconcepts.info/specs/IETF/RFC/8594" title='Erik Wilde, "The Sunset HTTP Header Field", RFC 8594, May 2019'>Sunset Header</a>&#160;· <a href="https://www.mnot.net/blog/2012/06/25/http_api_complexity_model" title='Mark Nottingham, "HTTP API Complexity", June 2012'>API Complexity</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -594,7 +594,7 @@
 						<li><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Robust extensibility</a> helps to facilitate non-breaking API changes</li>
 						<li><em>Hypermedia</em> helps as a pattern to move extensibility beyond data models</li>
 						<li><a href="http://semver.org/">Semantic versioning</a> may be used to keep track of API changes</li>
-						<li><a href="http://dret.typepad.com/dretblog/2015/08/http-sunset-header.html">HTTP <code>Sunset</code>ting</a> can be used to <a href="http://webconcepts.info/concepts/http-header/Sunset">signal upcoming sunsets on the HTTP level</a></li>
+						<li><a href="https://goodapi.co/insights/deprecation-and-sunsetting">HTTP <code>Sunset</code>ting</a> can be used to <a href="http://webconcepts.info/concepts/http-header/Sunset">signal upcoming sunsets on the HTTP level</a></li>
 					</ul>
 					<li>One possible requirement is that APIs must support <code href="http://webconcepts.info/concepts/http-header/Sunset">Sunset</code></li>
 					<ul>
