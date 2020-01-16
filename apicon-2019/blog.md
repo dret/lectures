@@ -46,6 +46,9 @@ Of course APIs can be new sources of revenue, allowing cost-effective experiment
 
 ---
 
+There is an abundance of presentations that highlight how some companies make a lot of money with their APIs, the most prominent examples may be [Stripe](https://stripe.com/) and [Twilio](https://www.twilio.com/). Some of these presentations talk about the "API Economy" and then jump to the conclusion that this means that money is being made by charging for API access. For organizations considering their API journeys, this looks like a tempting route, opening up new sources of revenue just by exposing APIs and charging for them. Some API vendors also rather aggressively advertise this sort of direct API-based income, hoping that potential customers will factor this into their ROI analyses. 
+
+
 ## #4: Communications! Of Course!
 
 ---
