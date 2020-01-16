@@ -67,13 +67,7 @@ Of course APIs are the way how to communicate in digital environments, and via A
 
 ---
 
-APIs are popular these days because, among other reasons, large organizations are slow at adapting to changes, and more modern organizations that are showing how to be faster are doing so by re-organizing themselves, re-organizing the way they build products, and this reflects itself in API-centric organizations and cultures. There is no way escaping [Conway's Law](http://www.melconway.com/Home/Conways_Law.html), meaning that in order to build something that is non-monolithic and can be changed more easily, you need an organization that has the same structural properties.
 
-APIs play an essential role in this picture, because they greatly reduce coordination overhead. Instead of doing one-off "integration" projects, capabilities are exposed through APIs, and anybody needing them can simply access them, ideally without ever talking to the team that owns that capability. This approach scales much better, and furthermore creates an abundance of options when it comes to teams designing new experiences, and looking for existing capabilities that they can leverage. In a perfectly functioning organization, teams are decoupled and can work at their own speed, delivering and evolving products as needed. They can do so because everything they need to build their products they either build, or consume through APIs. 
-
-In reality, changing a large organization to this ideal picture of decoupled and empowered teams is a much harder challenge than designing the APIs they will produce and need. And of course, even if an organization has been changed successfully, it still takes careful design and execution of an API strategy and an API program. But in our experience, once it comes to these API-specific issues being the remaining problem, the hard part of transformation has been solved.
-
-The worst-case scenario for this is that organization leaders see digital transformation first and foremost as a technical challenge, and focus on technology indicators. Once APIs are being created, the assumption then is that good things will follow. We see many organizations losing months or years of precious time because they don't fully appreciate the implications for the business and organizational pillars. In our work with large companies, a substantial share of our time is to make sure that all the pillars necessary for digital transformation are addressed (business, organizational, technology), and from that perspective APIs simply are a side-effect of digital transformation, and not a cause.
 
   
 <img style="float: right; width: 50%" src="img/services-graph.png">
@@ -83,6 +77,15 @@ The worst-case scenario for this is that organization leaders see digital transf
 Of course APIs can help with improving the way how teams communicate and how the organization can innovate. Of course!
 
 ---
+
+APIs are popular these days because, among other reasons, large organizations are slow at adapting to changes, and more modern organizations that are showing how to be faster are doing so by re-organizing themselves, re-organizing the way they build products, and this reflects itself in API-centric organizations and cultures. There is no way escaping [Conway's Law](http://www.melconway.com/Home/Conways_Law.html), meaning that in order to build something that is non-monolithic and can be changed more easily, you need an organization that has the same structural properties.
+
+APIs play an essential role in this picture, because they greatly reduce coordination overhead. Instead of doing one-off "integration" projects, capabilities are exposed through APIs, and anybody needing them can simply access them, ideally without ever talking to the team that owns that capability. This approach scales much better, and furthermore creates an abundance of options when it comes to teams designing new experiences, and looking for existing capabilities that they can leverage. In a perfectly functioning organization, teams are decoupled and can work at their own speed, delivering and evolving products as needed. They can do so because everything they need to build their products they either build, or consume through APIs. 
+
+In reality, changing a large organization to this ideal picture of decoupled and empowered teams is a much harder challenge than designing the APIs they will produce and need. And of course, even if an organization has been changed successfully, it still takes careful design and execution of an API strategy and an API program. But in our experience, once it comes to these API-specific issues being the remaining problem, the hard part of transformation has been solved.
+
+The worst-case scenario for this is that organization leaders see digital transformation first and foremost as a technical challenge, and focus on technology indicators. Once APIs are being created, the assumption then is that good things will follow. We see many organizations losing months or years of precious time because they don't fully appreciate the implications for the business and organizational pillars. In our work with large companies, a substantial share of our time is to make sure that all the pillars necessary for digital transformation are addressed (business, organizational, technology), and from that perspective APIs simply are a side-effect of digital transformation, and not a cause.
+
 
 <img style="float: right; width: 50%" src="img/hype-cycle-unicorn-plumbing.png">
 ## Conclusions
