@@ -1,5 +1,10 @@
 # What APIs Can and Cannot Do
 
+APIs often are perceived as having almost magical properties: Since they are so essential to digital transformation, and all of our digital experiences today are powered by APIs, the conclusion is that once you have and use APIs, all the wonders of digital transformation are simply going to happen. Of course that's not necessarily the case, and the purpose of this article is to explain some of the things that are useful and where APIs play a central role, but where APIs are necessary but not sufficient.
+
+Working with many global organizations in the API space, most recently as part of the [Axway](https://www.axway.com/) [Catalyst Team](https://www.axway.com/en/services/catalysts), our role is helping customers make good decisions. This of course also involves helping customers avoid bad decisions. One bad decision is to have an incomplete understanding of the complexity of digital transformation and APIs, and to expect too much from just "doing APIs", without making sure that all necessary factors for success are in place.
+
+
 ## #1: Untangling Monoliths! Of Course!
 
 ---
