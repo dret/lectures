@@ -14,6 +14,13 @@ Of course APIs are essential for improving modularity, allowing entangled IT sys
 
 ---
 
+One common motivation to use APIs is to get rid of monolithic solutions that often have a variety of problems associated with them, most importantly being hard to change, hard to scale, and hard to integrate with other solutions. By definition, APIs (in their modern sense of "networked interfaces") are essential in this picture, because untangling means that the resulting modular structure needs communications to function, and these will be using APIs.
+
+The hard work in this picture, though, is to come up with the "right" modularization where the resulting structure follows structured design principles. There are many theories and practices how to come up with a "good" structured design that represents a complex system, and the hard work of doing it will lead to components that then get to communicate through APIs, but the APIs are an effect and not the cause of the untangling.
+
+[Sam Newman](https://samnewman.io/)'s ["Monolith to Microservices"](https://samnewman.io/books/monolith-to-microservices/) provides a good guide how to systematically decompose a monolithic system into one that is composed out of many communicating components. It is telling that the book has a lot to say about decomposition patterns and strategies, but focuses little on how to design communications between the resulting components. The success of a good decomposition is defined by identifying the right components, and then carving out parts in ways that allow the overall system to remain functional throughout the transition. APIs will be created as a side-effect of doing this, but success is a function of decomposition patterns and strategies.
+
+
 ## #2: Scaling Up! Of Course!
 
 ---
