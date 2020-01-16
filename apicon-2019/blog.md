@@ -4,6 +4,8 @@ APIs often are perceived as having almost magical properties: Since they are so 
 
 Working with many global organizations in the API space, most recently as part of the [Axway](https://www.axway.com/) [Catalyst Team](https://www.axway.com/en/services/catalysts), our role is helping customers make good decisions. This of course also involves helping customers avoid bad decisions. One bad decision is to have an incomplete understanding of the complexity of digital transformation and APIs, and to expect too much from just "doing APIs", without making sure that all necessary factors for success are in place.
 
+I'll explain 5 common misconceptions about the powers of APIs using [Louis C.K.'s wonderful "Of Course! But maybe..." format](https://www.youtube.com/watch?v=0O5h4enjrHw): We expect these good things to happen when using APIs, but we also have to understand that they are not quite as simple, and that success will depend on additional complexities also being addressed. Better understanding these complexities from the very beginning will help to avoid disillusionment, and will also help to make sure that all necessary ingredients for a successful API journey are considered when starting the journey.
+
 
 ## #1: Untangling Monoliths! Of Course!
 
