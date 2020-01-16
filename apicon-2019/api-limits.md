@@ -7,6 +7,7 @@ Working with many global organizations in the API space, most recently as part o
 I'll explain 5 common misconceptions about the powers of APIs using [Louis C.K.'s wonderful "Of Course! But maybe..." format](https://www.youtube.com/watch?v=0O5h4enjrHw): We expect these good things to happen when using APIs, but we also have to understand that they are not quite as simple, and that success will depend on additional complexities also being addressed. Better understanding these complexities from the very beginning will help to avoid disillusionment, and will also help to make sure that all necessary ingredients for a successful API journey are considered when starting the journey.
 
 
+<img style="float: right; width: 50%" src="img/monolith-2001.jpg">
 ## #1: Untangling Monoliths! Of Course!
 
 ---
@@ -23,6 +24,7 @@ The hard work in this picture, though, is to come up with the "right" modulariza
 The worst case scenario is that APIs will actually make things worse, because decomposition was not done properly. In this case, the newly created API-based architecture suffers from chatty APIs, and the APIs themselves are not all that useful for unlocking new value. This result often is referred to as a "distributed monolith", but just as success, this result cannot be attributed to "APIs negatively impacting performance". In addition, bad API design choices may further negatively impact the resulting system, but the root cause in this case most often is a design that's not loosely coupled.
 
 
+<img style="float: right; width: 50%" src="img/pneumatic-tubes.jpg">
 ## #2: Scaling Up! Of Course!
 
 ---
@@ -38,7 +40,7 @@ A little while ago when Representational State Transfer (REST) was a much-discus
 
 As before, there also is a worst-case scenario. If the system design does not take shared state into consideration, scaling may have unintended side-effects. It still may be possible to scale the component on demand, but scaling up the context that it needs (because it is not stateless) may have an unfortunate ripple-effect. This possibly can be mitigated by sophisticated state-sharing approaches, but the underlying problem often is that of "implicit shared state".
 
-
+<img style="float: right; width: 50%" src="img/money-press.gif">
 ## #3: Monetization! Of Course!
 
 ---
@@ -49,6 +51,7 @@ Of course APIs can be new sources of revenue, allowing cost-effective experiment
 There is an abundance of presentations that highlight how some companies make a lot of money with their APIs, the most prominent examples may be [Stripe](https://stripe.com/) and [Twilio](https://www.twilio.com/). Some of these presentations talk about the "API Economy" and then jump to the conclusion that this means that money is being made by charging for API access. For organizations considering their API journeys, this looks like a tempting route, opening up new sources of revenue just by exposing APIs and charging for them. Some API vendors also rather aggressively advertise this sort of direct API-based income, hoping that potential customers will factor this into their ROI analyses. 
 
 
+<img style="float: right; width: 50%" src="img/tower-of-babel.jpg">
 ## #4: Communications! Of Course!
 
 ---
@@ -56,6 +59,8 @@ Of course APIs are the way how to communicate in digital environments, and via A
 
 ---
 
+
+<img style="float: right; width: 50%" src="img/tower-of-babel.jpg">
 ## #5: Organizational Issues! Of Course!
 
 ---
