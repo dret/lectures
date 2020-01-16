@@ -30,7 +30,13 @@ Of course APIs allow you to more easily scale IT resources by only scaling up th
 
 ---
 
+Scaling things better also is one of the reasons why APIs may be considered. When you have decoupled components, the reasoning goes, it becomes easier to scale up those parts that need scaling, while other parts of the system can be left alone. In many cases when people consider microservices or serverless, one of the main values they might be interested in is scaling. For microservices, you then might have to invest in how to implement scaling with something like Kubernetes. For serverless, scaling works easier, where given a sufficiently capable platform, scaling can be done transparently and is simply a question of how often serverless functions get invoked.
 
+Since APIs are essential for both microservices and serverless (they are part of the definition of what these things even are), once again one might come to the conclusion that with APIs in place, scaling becomes much easier. Once again, this is not necessarily the case. When it comes to scaling, and in particular the selective scaling that API-based components can deliver (only scale those components that need to be scaled), then once again architecture is much more important than APIs.
+
+A little while ago when Representational State Transfer (REST) was a much-discussed topic, one often overlooked aspect of it was that one of the REST constraints is for services to be stateless. That way, each invocation of a service strictly is just a function of the invocation (and not of some shared conversation state). This design allows scaling to be much simpler, because then services can be scaled without having to keep track of conversation states. This is a very useful design, but it is one that very much depends on service designers specifically creating stateless designs. For services not being stateless, scaling gets considerably harder because requests cannot as easily be used for scaling up as required.
+
+As before, there also is a worst-case scenario. If the system design does not take shared state into consideration, scaling may have unintended side-effects. It still may be possible to scale the component on demand, but scaling up the context that it needs (because it is not stateless) may have an unfortunate ripple-effect. This possibly can be mitigated by sophisticated state-sharing approaches, but the underlying problem often is that of "implicit shared state".
 
 
 ## #3: Monetization! Of Course!
