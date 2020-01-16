@@ -20,6 +20,8 @@ The hard work in this picture, though, is to come up with the "right" modulariza
 
 [Sam Newman](https://samnewman.io/)'s ["Monolith to Microservices"](https://samnewman.io/books/monolith-to-microservices/) provides a good guide how to systematically decompose a monolithic system into one that is composed out of many communicating components. It is telling that the book has a lot to say about decomposition patterns and strategies, but focuses little on how to design communications between the resulting components. The success of a good decomposition is defined by identifying the right components, and then carving out parts in ways that allow the overall system to remain functional throughout the transition. APIs will be created as a side-effect of doing this, but success is a function of decomposition patterns and strategies.
 
+The worst case scenario is that APIs will actually make things worse, because decomposition was not done properly. In this case, the newly created API-based architecture suffers from chatty APIs, and the APIs themselves are not all that useful for unlocking new value. This result often is referred to as a "distributed monolith", but just as success, this result cannot be attributed to "APIs negatively impacting performance". In addition, bad API design choices may further negatively impact the resulting system, but the root cause in this case most often is a design that's not loosely coupled.
+
 
 ## #2: Scaling Up! Of Course!
 
@@ -27,6 +29,9 @@ The hard work in this picture, though, is to come up with the "right" modulariza
 Of course APIs allow you to more easily scale IT resources by only scaling up those parts that actually need to be scaled. Of course!
 
 ---
+
+
+
 
 ## #3: Monetization! Of Course!
 
