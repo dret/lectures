@@ -48,7 +48,13 @@ Of course APIs can be new sources of revenue, allowing cost-effective experiment
 
 ---
 
-There is an abundance of presentations that highlight how some companies make a lot of money with their APIs, the most prominent examples may be [Stripe](https://stripe.com/) and [Twilio](https://www.twilio.com/). Some of these presentations talk about the "API Economy" and then jump to the conclusion that this means that money is being made by charging for API access. For organizations considering their API journeys, this looks like a tempting route, opening up new sources of revenue just by exposing APIs and charging for them. Some API vendors also rather aggressively advertise this sort of direct API-based income, hoping that potential customers will factor this into their ROI analyses. 
+There is an abundance of presentations that highlight how some companies make a lot of money with their APIs. The most prominent examples may be [Stripe](https://stripe.com/) and [Twilio](https://www.twilio.com/). Some of these presentations talk about the "API Economy" and then jump to the conclusion that this means that money is being made by charging for API access. For organizations considering their API journeys, this looks like a tempting route, opening up new sources of revenue just by exposing APIs and charging for them. Some API vendors also rather aggressively advertise this sort of direct API-based income, hoping that potential customers will factor this into their ROI analyses. 
+
+However, the reality is that it is a small minority of cases where API value manifests itself directly in paid API access. In the majority of cases, API value manifests itself in enabling more value chains, and a culture in which these value chains can be built rapidly and with little coordination. For this reason, the popular "API-as-a-Product" is a rather poor naming choice, as it seem to imply that the API itself is a product that can be monetized. Talking about "Product as API", on the other hand, makes it clear that value is created by products, and that APIs simply are the connective tissue that allows this value to be unlocked and used more easily. 
+
+Once again, it is undoubtedly true that APIs are necessary for value being created in today's digital world, and that being better with APIs increases your chances to realize more value. But the value is in what you do, and how you allow these things to be composed in digitalized value chains. If what you do has little inherent value, then your efforts of digitalizing your scenario may not create a lot of additional value. And even if what you do has a lot of inherent value waiting to be realized, APIs themselves will hardly ever be the limiting factor. What we see much more often are companies struggling to do the right business and organizational changes, so that the latent value in their products can be realized by building great and valuable experiences around them.
+
+Of course, we also have a worst-case scenario here. If the perception of API monetization is such that API value manifests itself in directly API-generated revenue, this introduces a very incomplete value analysis for the API journey. Nobody has yet figured out the perfect formula how to precisely evaluate the value of an API (so that investments could be targeted towards API-enabling those capabilities first that have the potential), but it is certainly not as simple as looking at the revenue generated through API access. Fully understanding value chains and evaluating and predicting their success never has been a hard science for as long as organizations have started planning and building them. This is no different for digital value chains, so make sure that you take a holistic view.
 
 
 <img style="float: right; width: 50%" src="img/tower-of-babel.jpg">
@@ -59,8 +65,8 @@ Of course APIs are the way how to communicate in digital environments, and via A
 
 ---
 
-
-<img style="float: right; width: 50%" src="img/tower-of-babel.jpg">
+  
+<img style="float: right; width: 50%" src="img/services-graph.png">
 ## #5: Organizational Issues! Of Course!
 
 ---
