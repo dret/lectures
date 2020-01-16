@@ -81,3 +81,6 @@ The worst-case scenario for this is that organization leaders see digital transf
 Of course APIs can help with improving the way how teams communicate and how the organization can innovate. Of course!
 
 ---
+
+<img style="float: right; width: 50%" src="img/hype-cycle-unicorn-plumbing.png">
+## Conclusions
