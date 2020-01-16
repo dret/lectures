@@ -84,3 +84,5 @@ Of course APIs can help with improving the way how teams communicate and how the
 
 <img style="float: right; width: 50%" src="img/hype-cycle-unicorn-plumbing.png">
 ## Conclusions
+
+This article is based on a presentation given at the [API Conference in Berlin in October 2019](https://apiconference.net/). The [slides are available online at `http://dret.net/lectures/apicon-2019/api-limits`](http://dret.net/lectures/apicon-2019/api-limits).
