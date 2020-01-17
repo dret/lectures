@@ -97,4 +97,8 @@ The worst-case scenario for this is that organization leaders see digital transf
 <img style="float: right; width: 50%" src="img/hype-cycle-unicorn-plumbing.png">
 ## Conclusions
 
+This article presents 5 common misconception about what APIs can do, and makes the point that they actually can do these things, but not by themselves. APIs are necessary but not sufficient for many important challenges and opportunities in today's increasingly digital organizations. The most important takeaway of this article is that it always takes a holistic view: APIs are part of many solutions in the digital space, but they are never the solution themselves.
+
+Luckily, organizations nowadays can benefit from a lot of experience, they can choose between many available products, and they can rely on trusted advisors for their journey. All these issues discussed above are very real and relevant challenges for many organizations today. Make sure that your API strategy and your API program take a holistic view. Many reports about "digital transformation initiatives" show high failure rates, and by looking beyond just the technical aspects, you drastically improve your chances to make meaningful changes that truly transform your organization.
+
 This article is based on a presentation given at the [API Conference in Berlin in October 2019](https://apiconference.net/). The [slides are available online at `http://dret.net/lectures/apicon-2019/api-limits`](http://dret.net/lectures/apicon-2019/api-limits).
