@@ -78,14 +78,17 @@
 				<img title="Grand Canyon" src="grand-canyon.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
-		<part id="public-business">
-			<title>The Business of Public APIs</title>
-		</part>
-		<part id="partner-business">
-			<title>The Business of Partner APIs</title>
-		</part>
-		<part id="private-business">
-			<title>The Business of Private APIs</title>
+		<part id="business-goals">
+			<title>Business Goals of APIs</title>
+			<slide id="public-business">
+				<title>The Business of Public APIs</title>
+			</slide>
+			<slide id="partner-business">
+				<title>The Business of Partner APIs</title>
+			</slide>
+			<slide id="private-business">
+				<title>The Business of Private APIs</title>
+			</slide>
 		</part>
 		<part id="product-delivery">
 			<title>Products and Delivery</title>
