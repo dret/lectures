@@ -106,6 +106,14 @@
 		</part>
 		<part id="business-goals">
 			<title>Business Goals of APIs</title>
+			<slide id="three-business-goals">
+				<title>Three Classes of API Business</title>
+				<ul>
+					<li><em>Public APIs</em> are provided to an open set of consumers</li>
+					<li><em>Partner APIs</em> are limited to established relationships</li>
+					<li><em>Private APIs</em> are meant to be used internally</li>
+				</ul>
+			</slide>
 			<slide id="public-business">
 				<title>The Business of Public APIs</title>
 			</slide>
