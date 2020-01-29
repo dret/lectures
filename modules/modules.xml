@@ -116,6 +116,23 @@
 			</slide>
 			<slide id="public-business">
 				<title>The Business of Public APIs</title>
+				<ul>
+					<li>Public APIs can be used for direct revenue generation</li>
+					<ul>
+						<li>This is the exception and not the rule</li>
+					</ul>
+					<li>Public APIs should be used to improve value chains</li>
+					<ul>
+						<li>The value is generated indirectly</li>
+						<li>When value chains change the APIs may change as well</li>
+					</ul>
+					<li>Public APIs create many and potentially brittle relationships</li>
+					<ul>
+						<li>Good design to minimize dependency and breakage</li>
+						<li>Good documentation to drive adoption in a scalable way</li>
+						<li>Careful management of (breaking) API changes</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="partner-business">
 				<title>The Business of Partner APIs</title>
