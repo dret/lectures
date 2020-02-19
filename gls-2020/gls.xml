@@ -145,6 +145,66 @@
 				<title>Accelerate Journey</title>
 			</slide>
 		</part>
+		<part id="strategy">
+			<title>API Strategy</title>
+			<slide id="cam-strategy-pillars">
+				<title>CAM Strategy Compass Pillars</title>
+				<img src="services-cycle.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="cam-compass-perspectives">
+				<title>CAM Strategy Compass Perspectives</title>
+				<img title="Internal and External API Usage" src="api-internal-external.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="strategy">
+				<title>API Strategy = Pillars × Perspectives</title>
+				<table style="border-collapse: collapse ; ">
+					<tr>
+						<td/>
+						<th style="border: 1px solid black ; padding: 0.5em">External</th>
+						<th style="border: 1px solid black ; padding: 0.5em">Internal</th>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Biz</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">API monetization</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Revenue-supporting APIs</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase speed &amp; feedback</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Identify &amp; stabilize enablers</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Design for externalization</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase biz insight with dashboards</li>
+						</ul></td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Org</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Focus on documentation/DX</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Support discovery/self-service</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Collect DX feedback</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Products &gt; projects (ownership)</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Team enablement/support</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loose coupling for speed/agility</li>
+						</ul></td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Tech</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Tech trends and popularity</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Invest in onboarding support</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Secure through platform</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loosely coupled implementations</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Observe patterns and practices</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Establish C4E for platform/support</li>
+						</ul></td>
+					</tr>
+				</table>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
