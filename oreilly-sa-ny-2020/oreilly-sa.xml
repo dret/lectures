@@ -192,7 +192,20 @@
 			<slide id="program-product">
 				<title>Program as a Product</title>
 				<ul>
-					<li></li>
+					<li>Avoid waterfall design for your API program</li>
+					<ul>
+						<li>Start small with motivated teams of pioneers</li>
+						<li>Establish and stabilize practices with teams of settlers</li>
+						<li>Scale and mature the practice with some town planners</li>
+					</ul>
+					<li>For inspiration look at the Web's fundamental stability</li>
+					<ul>
+						<li>Its protocol was able to scale from 10 to 10 billion participants</li>
+						<li>Its delivery switched from non-graphics to mobile high-end devices</li>
+						<li>Its infrastructure switched from desktops to cloud data centers</li>
+						<li>It abstracts implementation (language/storage) details</li>
+					</ul>
+					<li>Manage your API program so that <em>nothing</em> is hardcoded</li>
 				</ul>
 			</slide>
 			<part id="strategy">
