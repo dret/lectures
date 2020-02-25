@@ -355,13 +355,14 @@
 						</ul>
 					</ul>
 				</slide>
-				<slide id="value">
-					<title>API Value</title>
-				</slide>
 				<slide id="good-practice">
-					<title>There is no Best Practice</title>
+					<title>Good is better than Best</title>
 					<ul>
-						<li>Practices are solutions to design challenges</li>
+						<li>Solutions (<q>What</q>) are addressing design challenges</li>
+						<ul>
+							<li>Have a model for accepting new solutions</li>
+						</ul>
+						<li>Practices (<q>How</q>) are implementing a solution</li>
 						<ul>
 							<li>Have a model for accepting new practices</li>
 						</ul>
