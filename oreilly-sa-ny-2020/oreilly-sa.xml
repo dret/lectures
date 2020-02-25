@@ -243,34 +243,6 @@
 					<title>Internal and External API Usage</title>
 					<img title="Internal and External API Usage" src="api-internal-external.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 				</slide>
-				<slide id="biz">
-					<title>Pillar 1: Business Pillar</title>
-					<ul>
-						<li>Increase delivery speed of capabilities and products</li>
-						<li>Decrease cost of product development and adaptation</li>
-						<li>Improve insight into products and value chains</li>
-						<li>Aligning/unifying business and IT: <em><q>Business, rewritten by software</q></em>™</li>
-					</ul>
-				</slide>
-				<slide id="org">
-					<title>Pillar 2: Organizational Pillar</title>
-					<ul>
-						<li>Increased team autonomy increases team delivery speed</li>
-						<li>Structures across teams build communities of practice</li>
-						<li>API support and platform provided by <em>Center for Enablement (C4E)</em></li>
-						<li>Team practices inform and form the API guidelines</li>
-					</ul>
-					<blockquote><q href="http://www.melconway.com/Home/Conways_Law.html">Any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure.</q> (<a href="https://en.wikipedia.org/wiki/Melvin_Conway">Mel Conway</a>)</blockquote>
-				</slide>
-				<slide id="tech">
-					<title>Pillar 3: Technology Pillar</title>
-					<ul>
-						<li>Constrain <em>what</em> products have to do (not <em>how</em>)</li>
-						<li>No hidden channels bypassing the API strategy</li>
-						<li>API guidelines for protocols, patterns, and practices</li>
-						<li>Lifecycle for technology maturity and support</li>
-					</ul>
-				</slide>
 				<slide id="strategy-matrix">
 					<title>API Strategy = Pillars × Perspectives</title>
 					<table style="border-collapse: collapse ; ">
