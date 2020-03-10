@@ -149,12 +149,26 @@
 		</part>
 		<part id="strategy">
 			<title>Strategic API Focus</title>
-			<slide id="internal">
-				<title>Scenario 1: APIs for Modular Architecture</title>
+			<slide id="two-api-goals">
+				<title>Two Common API Goals</title>
+				<img title="Internal and External API Usage" src="api-internal-external.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="external">
-				<title>Scenario 2: Engaging in the API Economy</title>
+				<title>Scenario 1: Engaging in the API Economy</title>
 				<img src="money-press.gif" title="API Money Press" style="float: right ; width : 25% ; margin : 2% ; "/>
+				<ul>
+					<li>Direct API monetization</li>
+					<li>API foundation for user journeys (omni-channel)</li>
+					<li>Value chain optimization (outsourced APIs)</li>
+				</ul>
+			</slide>
+			<slide id="internal">
+				<title>Scenario 2: APIs for Modular Architecture</title>
+				<ul>
+					<li>Moving from integration to interconnection (IT modernization)</li>
+					<li>Decoupling products and their development cycles and speed</li>
+					<li>Improving capability reuse across the whole organization</li>
+				</ul>
 			</slide>
 			<slide id="one-vision">
 				<title>Inside-Out and Outside-In</title>
