@@ -56,6 +56,27 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<slide id="journey">
+			<title>The API Journey</title>
+			<img src="services-cycle.png" style=" float: right ; width : 30% ; margin : 2% ;  "/>
+			<ul>
+				<li><em>Assessment</em> uses analysis and observations</li>
+				<ul>
+					<li>Figuring out the status quo</li>
+					<li>Repeated assessments for correcting course</li>
+				</ul>
+				<li><em>Enablement</em> addresses identified gaps</li>
+				<ul>
+					<li>Addressing gaps on the strategy/platform level</li>
+					<li>Trainings and workshops for enabling teams</li>
+				</ul>
+				<li><em>Coaching</em> for continuous architecting</li>
+				<ul>
+					<li>Regular conversations about success and strategy</li>
+					<li>Monitoring trends and tagging them for consideration</li>
+				</ul>
+			</ul>
+		</slide>
 		<slide id="thanks">
 			<title>Thank You!</title>
 			<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
