@@ -9,4 +9,4 @@ These are sources that I make available for others to read/use/reuse; please res
 
 ## Online
 
-The presentation versions for these talks are available online at http://dret.net/lectures/julius-baer-2020/
+The presentation versions for these talks are available online at http://dret.net/lectures/bjb-2020/
