@@ -123,4 +123,38 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="api-strategy">
+		<title>A Structured Guide for API Strategy</title>
+		<toc class="abstract">APIs are an essential ingredient of digital transformation, and organizations have to make sure that they plan and execute an API journey that will create a rich and dynamic API landscape. The driving force behind this should be an API strategy, that clearly outlines what the goals of the API journey are, so that all activities can be measured against those goals. Many organizations have implicit API strategies, but never invested the time and effort to create an explicit one. This presentation takes you through the most important considerations for creating your own API strategy, and is structured so that you cover everything that needs to be part of a comprehensive strategy. This strategy then can serve as a guideline for API-related activities and investments, and also allows you to define mileposts to measure direction and progress.</toc>
+		<date short="2020-05">May, 2020</date>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="lessons-learned">
+				<title>Lessons Learned</title>
+				<ol>
+					<li>Why having an explicit API strategy is a good idea</li>
+					<li>The six areas that should addressed in every API strategy</li>
+					<li>How to use an API strategy to measure direction and progress</li>
+				</ol>
+			</slide>
+			<slide id="q-and-a">
+				<title>Thank You!</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/webinar-2020"><code>dret.net/lectures/webinar-2020</code></a></li>
+					<li>More information:</li>
+					<ul>
+						<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+						<li>YouTube: <a href="https://www.youtube.com/ErikWilde"><code>www.youtube.com/ErikWilde</code></a></li>
+						<li>LinkedIn: <a href="http://www.linkedin.com/in/netdret"><code>linkedin.com/in/netdret</code></a></li>
+						<li>Web: <a href="http://dret.net/netdret/"><code>dret.net/netdret/</code></a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>
