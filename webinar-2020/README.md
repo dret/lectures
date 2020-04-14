@@ -1,6 +1,6 @@
-# 2020 Catalyst Webinar Series
+# Around the Corner: Business and IT Virtual Series
 
-Slides for 2020 Catalyst Webinar Series presentations.
+Slides for "Around the Corner: Business and IT Virtual Series" presentations.
 
 ## License
 
