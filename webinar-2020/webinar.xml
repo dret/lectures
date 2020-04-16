@@ -163,6 +163,27 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="practice">
+				<title>Building up the API Practice</title>
+				<ul>
+					<li>APIs as a practice have a number of <em>cross-cutting concerns</em></li>
+					<ul>
+						<li><em>Design-time concerns</em> are about designing and implementing API products</li>
+						<li><em>Run-time concerns</em> are about deploying and operating API products</li>
+					</ul>
+					<li>Turning business capabilities into API products</li>
+					<ul>
+						<li><em>Guidelines</em> help with capturing and providing guidance</li>
+						<li><em>Platforms</em> help with providing and consuming services</li>
+					</ul>
+					<li>Many organizations support the API practice</li>
+					<ul>
+						<li><em>API Guilds</em> establish embedded support for API practices in individual teams</li>
+						<li><em>Centers of Excellence (COE)</em> provide guidance and infrastructure for API teams</li>
+						<li><em>Centers for Enablement (C4E)</em> are less about leading and more about supporting</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="guidelines">
 			<title>API Guidelines</title>
