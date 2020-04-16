@@ -230,6 +230,20 @@
 			</slide>
 			<slide id="management">
 				<title>Good Guideline Management</title>
+				<ul>
+					<li>Guidelines should be managed in a participatory way</li>
+					<ul>
+						<li>Guidelines are for capturing and sharing experiences across API teams</li>
+						<li>Everybody can comment or contribute to the guidelines</li>
+						<li>Over time it may make sense to develop a more formal approval process</li>
+						<li>There may be editors but their role is to improve guideline quality</li>
+					</ul>
+					<li>Tooling should reflect the nature of a <q>living document</q></li>
+					<ul>
+						<li>Tooling that is a one-way street is a bad choice</li>
+						<li>Tooling with build-in collaboration is a good choice</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="in-the-wild">
 				<title>API Guidelines in the Wild</title>
