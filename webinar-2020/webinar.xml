@@ -107,23 +107,6 @@
 		</part>
 		<part id="journey">
 			<title>Journey Essentials</title>
-			<slide id="effective-teams">
-				<title>What is an Effective API Team?</title>
-				<ul>
-					<li>A team spending fewer time with cross-cutting concerns</li>
-					<ul>
-						<li>Figuring out the general guardrails for API design</li>
-						<li>Exposing, securing, and monitoring APIs</li>
-						<li>Deploying APIs and making them discoverable</li>
-					</ul>
-					<li>A team spending more time addressing domain issues</li>
-					<ul>
-						<li>Engaging with consumers and designing a good API</li>
-						<li>Making sure that consumer feedback is collected and used</li>
-						<li>Contributing to the shared API practice in the organization</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="archaeology">
 				<title>Getting Started: API Archaeology</title>
 				<img src="api-bones.png" title="Proto-API" style="float: right ; width : 25% ; margin : 5% ; "/>
@@ -139,6 +122,23 @@
 						<li>API-enable capabilities to unlock value for creating new revenue streams</li>
 						<li>Build new capabilities <q>API first</q> so that they are easily reusable</li>
 						<li>Build up API experience and move towards an API program and platform</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="effective-teams">
+				<title>What is an Effective API Team?</title>
+				<ul>
+					<li>A team spending fewer time with cross-cutting concerns</li>
+					<ul>
+						<li>Figuring out the general guardrails for API design</li>
+						<li>Exposing, securing, and monitoring APIs</li>
+						<li>Deploying APIs and making them discoverable</li>
+					</ul>
+					<li>A team spending more time addressing domain issues</li>
+					<ul>
+						<li>Engaging with consumers and designing a good API</li>
+						<li>Making sure that consumer feedback is collected and used</li>
+						<li>Contributing to the shared API practice in the organization</li>
 					</ul>
 				</ul>
 			</slide>
