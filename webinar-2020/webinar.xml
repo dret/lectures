@@ -54,7 +54,7 @@
 	<presentation id="guidelines">
 		<title short="API Guidelines">Making API Teams More Effective</title>
 		<toc class="abstract">One of the challenges that many organizations face is how to scale their API journey. Getting started may not be easy, but scaling can be even more challenging to manage well. We look at some of the typical challenges organizations face when entering the scale-up phase, and how they can be tackled. We take a deep dive into the topic of API guidelines, which in virtually all organizations play an essential role in establishing, managing, and communicating good practices across API teams.</toc>
-		<toc class="resources"><a href="https://nordicapis.com/api-archaeology-using-accidental-apis-to-inform-the-api-journey/" title='Erik Wilde, "API Archaeology: Using Accidental APIs to Inform the API Journey", Nordic APIs, April 2020'>API Archaeology</a>&#160;· <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Restarting Stalled Digital Transformation</a>&#160;· <a href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild">API Guidelines</a></toc>
+		<toc class="resources"><a href="https://nordicapis.com/api-archaeology-using-accidental-apis-to-inform-the-api-journey/" title='Erik Wilde, "API Archaeology: Using Accidental APIs to Inform the API Journey", Nordic APIs, April 2020'>API Archaeology</a>&#160;· <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Restarting Stalled Digital Transformation</a>&#160;· <a href="https://github.com/dret/OReilly2020NYdemo" title="Very incomplete example of API Guidlines used for showing guideline structure">API Guideline Structure</a>&#160;· <a href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild">Collection of Public API Guidelines</a></toc>
 		<date short="2020-04-21">April 21, 2020</date>
 		<slide id="summary">
 			<title>Summary</title>
@@ -210,6 +210,10 @@
 						<li>Some tests can be automated but many will be by declaration or review</li>
 					</ul>
 				</ul>
+			</slide>
+			<slide id="example">
+				<title>API Guideline Example</title>
+				<img href="https://github.com/dret/OReilly2020NYdemo/tree/master/guidelines/why/change-management-policy" title="Change Management Policy Guideline" src="change-management-policy-guideline.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="management">
 				<title>Good Guideline Management</title>
