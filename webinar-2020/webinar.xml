@@ -107,6 +107,23 @@
 		</part>
 		<part id="journey">
 			<title>Journey Essentials</title>
+			<slide id="effective-teams">
+				<title>What is an Effective API Team?</title>
+				<ul>
+					<li>A team spending fewer time with cross-cutting concerns</li>
+					<ul>
+						<li>Figuring out the general guardrails for API design</li>
+						<li>Exposing, securing, and monitoring APIs</li>
+						<li>Deploying APIs and making them discoverable</li>
+					</ul>
+					<li>A team spending more time addressing domain issues</li>
+					<ul>
+						<li>Engaging with consumers and designing a good API</li>
+						<li>Making sure that consumer feedback is collected and used</li>
+						<li>Contributing to the shared API practice in the organization</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="archaeology">
 				<title>Getting Started: API Archaeology</title>
 				<img src="api-bones.png" title="Proto-API" style="float: right ; width : 25% ; margin : 5% ; "/>
@@ -128,6 +145,9 @@
 			<slide id="stalling">
 				<title>Getting started is hard, scaling up is even harder</title>
 				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide>
+				<title>Scaling needs Strategy</title>
 			</slide>
 		</part>
 		<part id="guidelines">
