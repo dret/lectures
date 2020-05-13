@@ -419,7 +419,7 @@
 						<li><link href="org-culture"/> so that teams can work effectively</li>
 						<li><link href="awareness"/> so that API usage is maximized</li>
 						<li><link href="observation"/> for managing program impact and evolution</li>
-						<li><link href="platform"/></li>
+						<li><link href="platform"/> for providers and consumers to build on</li>
 					</ul>
 				</ul>
 			</slide>
@@ -577,6 +577,19 @@
 		</part>
 		<part id="platform">
 			<title>Providing an API Platform</title>
+			<slide id="foundation">
+				<title>Foundation for API Activities</title>
+				<ul>
+					<li>API platforms are the foundation for API providers and consumers</li>
+					<ul>
+						<li><em>API providers</em> find tooling and infrastructure for the full API lifecycle</li>
+						<li><em>API consumers</em> find APIs and support for using them effectively</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="sdk">
+				<title>Example: SDK support for APIs</title>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
