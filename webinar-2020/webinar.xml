@@ -345,6 +345,23 @@
 		</part>
 		<part id="scaling">
 			<title>Scaling API Initiatives</title>
+			<slide id="archaeology">
+				<title>Getting Started: API Archaeology</title>
+				<img src="api-bones.png" title="Proto-API" style="float: right ; width : 25% ; margin : 5% ; "/>
+				<ul>
+					<li>Identify <em>low-hanging fruit</em> for quick success and feedback</li>
+					<ul>
+						<li>Every organization has a number of existing digital value chains</li>
+						<li><a href="https://nordicapis.com/api-archaeology-using-accidental-apis-to-inform-the-api-journey/" title='Erik Wilde, "API Archaeology: Using Accidental APIs to Inform the API Journey", Nordic APIs, April 2020'>API Archaeology</a> is a good way to find candidates</li>
+						<li>Identify high-potential <q>proto-APIs</q> for starting your API journey</li>
+					</ul>
+					<li>Start with APIs that will create value</li>
+					<ul>
+						<li>API-enable capabilities to unlock value for creating new revenue streams</li>
+						<li>Build up API experience and move towards an API program and platform</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="scaling-is-hard">
 				<title>Getting started is hard, scaling up is even harder</title>
 				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
