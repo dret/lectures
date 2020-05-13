@@ -414,7 +414,7 @@
 					<li>API programs have to cover various areas</li>
 					<ul>
 						<li><link href="alignment"/></li>
-						<li><link href="org-culture"/></li>
+						<li><link href="org-culture"/> so that teams can work effectively</li>
 						<li><link href="support"/></li>
 						<li><link href="awareness"/></li>
 						<li><link href="observation"/></li>
@@ -442,7 +442,69 @@
 						<li>Teams get as much <link href="support">support</link> as necessary</li>
 						<li>Teams get as much autonomy as possible</li>
 					</ul>
+					<li><em>Organizational structure</em> needs to support autonomy and loose coupling</li>
+					<ul>
+						<li>Never underestimate <a href="http://www.melconway.com/Home/Conways_Law.html">Conway's Law</a></li>
+					</ul>
+					<li><em>Culture</em> must move from <q>building systems</q> to <em>creating ecosystems</em></li>
 				</ul>
+			</slide>
+			<slide id="org-culture-example">
+				<title>Example: Making Decisions</title>
+				<img src="decision-steps.png" title="Proto-API" style="float: right ; width : 90% ; margin : 5% ; "/>
+				<ul>
+					<li><em>Inception:</em> Managing the pipeline for decisions</li>
+					<li><em>Choice generation:</em> Identifying selection candidates</li>
+					<li><em>Selection:</em> Choosing from the list of options</li>
+					<li><em>Authorization:</em> Possible review and discussion</li>
+					<li><em>Implementation:</em> Reflecting on making the decision</li>
+					<li><em>Challenge:</em> Allowing exceptions and evolving options</li>
+				</ul>
+			</slide>
+			<slide id="org-culture-example-decisions">
+				<title>Example Decision Maps</title>
+				<ul>
+					<li>Choosing a programming language</li>
+				</ul>
+				<table style="border-collapse: collapse; border: 1px solid; padding: 1ex">
+					<tr>
+						<th style="border: 1px solid;">Inception</th>
+						<th style="border: 1px solid;">Choice generation</th>
+						<th style="border: 1px solid;">Selection</th>
+						<th style="border: 1px solid;">Authorization</th>
+						<th style="border: 1px solid;">Implementation</th>
+						<th style="border: 1px solid;">Challenge</th>
+					</tr>
+					<tr>
+						<td style="border: 1px solid;">Centralized</td>
+						<td style="border: 1px solid;">Centralized</td>
+						<td style="border: 1px solid;">Decentralized</td>
+						<td style="border: 1px solid;">Decentralized</td>
+						<td style="border: 1px solid;">Decentralized</td>
+						<td style="border: 1px solid;">Decentralized</td>
+					</tr>
+				</table>
+				<ul>
+					<li>Choosing software development tooling</li>
+				</ul>
+				<table style="border-collapse: collapse; border: 1px solid; padding: 1ex">
+					<tr>
+						<th style="border: 1px solid;">Inception</th>
+						<th style="border: 1px solid;">Choice generation</th>
+						<th style="border: 1px solid;">Selection</th>
+						<th style="border: 1px solid;">Authorization</th>
+						<th style="border: 1px solid;">Implementation</th>
+						<th style="border: 1px solid;">Challenge</th>
+					</tr>
+					<tr>
+						<td style="border: 1px solid;">Decentralized</td>
+						<td style="border: 1px solid;">Decentralized</td>
+						<td style="border: 1px solid;">Decentralized</td>
+						<td style="border: 1px solid;">Centralized</td>
+						<td style="border: 1px solid;">Decentralized</td>
+						<td style="border: 1px solid;">Centralized</td>
+					</tr>
+				</table>
 			</slide>
 		</part>
 		<part id="support">
