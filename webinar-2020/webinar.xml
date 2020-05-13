@@ -310,7 +310,7 @@
 	<presentation id="programs">
 		<title short="API Programs">Setting up API Programs for Success</title>
 		<toc class="abstract">APIs are one of the essential ingredients of digitalization initiatives and organizations increasingly put API programs in place. The goal of API programs is to help everybody throughout an organization on the API journey, and to make sure that the API initiative is pervasive and strategically supported. There are some well-known patterns and anti-patterns that allow organizations to improve their API programs based on the experience with existing efforts. We look at some examples of API programs and identify a set of key components that should be part of any program.</toc>
-		<toc class="resources"><a href="https://nordicapis.com/api-archaeology-using-accidental-apis-to-inform-the-api-journey/" title='Erik Wilde, "API Archaeology: Using Accidental APIs to Inform the API Journey", Nordic APIs, April 2020'>API Archaeology</a>&#160;· <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Restarting Stalled Digital Transformation</a></toc>
+		<toc class="resources"><a href="https://nordicapis.com/api-archaeology-using-accidental-apis-to-inform-the-api-journey/" title='Erik Wilde, "API Archaeology: Using Accidental APIs to Inform the API Journey", Nordic APIs, April 2020'>API Archaeology</a>&#160;· <a href="https://www.apiscene.io/api-business-models/api-first-the-essence-of-digital-transformation/" title='Erik Wilde, "API First: The Essence of Digital Transformation", APIscene, June 2019'>API First</a>&#160;· <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Restarting Stalled Digital Transformation</a></toc>
 		<date short="2020-05">May 2020</date>
 		<slide id="summary">
 			<title>Summary</title>
@@ -362,6 +362,9 @@
 						<li>Build up API experience and move towards an API program and platform</li>
 					</ul>
 				</ul>
+			</slide>
+			<slide id="api-first">
+				<title>API First</title>
 			</slide>
 			<slide id="scaling-is-hard">
 				<title>Getting started is hard, scaling up is even harder</title>
