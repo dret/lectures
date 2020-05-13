@@ -310,7 +310,7 @@
 	<presentation id="programs">
 		<title short="API Programs">Setting up API Programs for Success</title>
 		<toc class="abstract">APIs are one of the essential ingredients of digitalization initiatives and organizations increasingly put API programs in place. The goal of API programs is to help everybody throughout an organization on the API journey, and to make sure that the API initiative is pervasive and strategically supported. There are some well-known patterns and anti-patterns that allow organizations to improve their API programs based on the experience with existing efforts. We look at some examples of API programs and identify a set of key components that should be part of any program.</toc>
-		<toc class="resources"><a href="https://nordicapis.com/api-archaeology-using-accidental-apis-to-inform-the-api-journey/" title='Erik Wilde, "API Archaeology: Using Accidental APIs to Inform the API Journey", Nordic APIs, April 2020'>API Archaeology</a>&#160;· <a href="https://www.apiscene.io/api-business-models/api-first-the-essence-of-digital-transformation/" title='Erik Wilde, "API First: The Essence of Digital Transformation", APIscene, June 2019'>API First</a>&#160;· <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Restarting Stalled Digital Transformation</a></toc>
+		<toc class="resources"><a href="https://nordicapis.com/api-archaeology-using-accidental-apis-to-inform-the-api-journey/" title='Erik Wilde, "API Archaeology: Using Accidental APIs to Inform the API Journey", Nordic APIs, April 2020'>API Archaeology</a>&#160;· <a href="https://www.apiscene.io/api-business-models/api-first-the-essence-of-digital-transformation/" title='Erik Wilde, "API First: The Essence of Digital Transformation", APIscene, June 2019'>API First</a>&#160;· <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Restarting Stalled Digital Transformation</a>&#160;· <a href="https://dret.net/lectures/api-days-finland-2019/" title='Erik Wilde, "Enjoy Responsibly: Minimizing Coupling for API Consumption", API Days Finland, June 2019'>Minimizing Coupling for API Consumption</a></toc>
 		<date short="2020-05">May 2020</date>
 		<slide id="summary">
 			<title>Summary</title>
@@ -416,7 +416,7 @@
 						<li><link href="alignment"/></li>
 						<li><link href="org-culture"/> so that teams can work effectively</li>
 						<li><link href="support"/></li>
-						<li><link href="awareness"/></li>
+						<li><link href="awareness"/> so that API usage is maximized</li>
 						<li><link href="observation"/></li>
 						<li><link href="platform"/></li>
 					</ul>
@@ -512,6 +512,37 @@
 		</part>
 		<part id="awareness">
 			<title>Awareness &amp; Adoption</title>
+			<slide id="">
+				<title><q>We have no time for APIs…</q></title>
+				<ul>
+					<li>The <link href="strategy">API strategy</link> clearly defines the API goals</li>
+					<li>The <em>API program</em> puts the supporting infrastructure in place</li>
+					<li><em>API awareness</em> can start with understanding the <em>business value of APIs</em></li>
+					<ul>
+						<li>Everybody should have some knowledge what APIs are and why they matter</li>
+					</ul>
+					<li><em>API adoption</em> depends on both API providers and consumers</li>
+					<ul>
+						<li>The API program supports API teams with tooling and infrastructure</li>
+						<li>Consumers know how to find and use APIs</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="awareness-example">
+				<title>Example: API Consumption</title>
+				<ul>
+					<li>Consuming APIs is different from writing self-contained programs</li>
+					<ul>
+						<li>Dependencies must be managed responsibly to allow for API evolution</li>
+						<li>Exception handling is different because of different failure modes</li>
+					</ul>
+					<li>API discovery and <a href="https://dret.net/lectures/api-days-finland-2019/" title='Erik Wilde, "Enjoy Responsibly: Minimizing Coupling for API Consumption", API Days Finland, June 2019'>responsible API consumption</a> are essential for creating API value</li>
+					<ul>
+						<li>Existing APIs have no value when they are not used</li>
+						<li>Distributed programming requires a different skill set from writing local code</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="observation">
 			<title>Observation</title>
