@@ -417,7 +417,7 @@
 						<li><link href="org-culture"/> so that teams can work effectively</li>
 						<li><link href="support"/></li>
 						<li><link href="awareness"/> so that API usage is maximized</li>
-						<li><link href="observation"/></li>
+						<li><link href="observation"/> for managing program impact and evolution</li>
 						<li><link href="platform"/></li>
 					</ul>
 				</ul>
@@ -512,7 +512,7 @@
 		</part>
 		<part id="awareness">
 			<title>Awareness &amp; Adoption</title>
-			<slide id="">
+			<slide id="awareness-adoption">
 				<title><q>We have no time for APIs…</q></title>
 				<ul>
 					<li>The <link href="strategy">API strategy</link> clearly defines the API goals</li>
@@ -546,6 +546,36 @@
 		</part>
 		<part id="observation">
 			<title>Observation</title>
+			<slide id="improvement">
+				<title>Continuous Improvement Matters</title>
+				<ul>
+					<li>API programs are only as good as the results that they produce</li>
+					<li>Observation is essential for understanding the API landscape and ecosystem</li>
+					<ul>
+						<li>Observing what kind of choices teams make for their API products</li>
+						<li>Observing the consumption of products in the API landscape</li>
+						<li>Observing how the API program is used (<q>program as a product</q>)</li>
+					</ul>
+					<li>Observations should lead to insights and should trigger changes</li>
+					<ul>
+						<li><em>Design for change</em> is important for products as well as for the program</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Example: Observe Exceptions</title>
+				<ul>
+					<li>Observe which decisions are made when using the API platform</li>
+					<ul>
+						<li>There should be some predefined choices and possibly an exception process</li>
+					</ul>
+					<li>When the exception becomes the norm it is time to look at the options</li>
+					<ul>
+						<li>Discuss the alternatives and reasons for choosing them</li>
+						<li>Consider adding/deprecating predefined choices</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="platform">
 			<title>Providing an API Platform</title>
