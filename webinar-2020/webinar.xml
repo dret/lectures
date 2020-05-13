@@ -388,6 +388,25 @@
 				<title>Getting started is hard, scaling up is even harder</title>
 				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="programs-products-platforms">
+				<title>API Programs connect Products and Platforms</title>
+				<ul>
+					<li><em>API products</em> are products with APIs built by individual teams</li>
+					<ul>
+						<li>Each product is built on the <em>API platform</em> that exists in the organization</li>
+					</ul>
+					<li><link href="platform">API platforms</link> are tooling and infrastructure for building and operating API products</li>
+					<ul>
+						<li>Mature platforms support all parts of the <em>API lifecycle</em></li>
+						<li>Platforms evolve as teams and the organization change and evolve practices</li>
+					</ul>
+					<li><em>API programs</em> optimize API production by providing and evolving the API platform</li>
+					<ul>
+						<li>Support and observe API teams</li>
+						<li>Maximize productivity by minimizing the effort required for <q>standard API tasks</q></li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="alignment">
 			<title>Alignment</title>
