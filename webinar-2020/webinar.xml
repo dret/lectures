@@ -107,7 +107,7 @@
 		</part>
 		<part id="journey">
 			<title>Journey Essentials</title>
-			<slide id="archaeology">
+			<slide id="getting-started">
 				<title>Getting Started: API Archaeology</title>
 				<img src="api-bones.png" title="Proto-API" style="float: right ; width : 25% ; margin : 5% ; "/>
 				<ul>
@@ -364,7 +364,25 @@
 				</ul>
 			</slide>
 			<slide id="api-first">
-				<title>API First</title>
+				<title>From APIs-on-demand to API First</title>
+				<ul>
+					<li>APIs are the digital representation of all capabilities</li>
+					<ul>
+						<li>API-enable existing capabilities by using <link href="archaeology">API Archaeology</link></li>
+						<li>Conceive new capabilities as <a href="https://www.apiscene.io/api-business-models/api-first-the-essence-of-digital-transformation/" title='Erik Wilde, "API First: The Essence of Digital Transformation", APIscene, June 2019'>API First</a></li>
+					</ul>
+					<li>Supporting teams significantly influences the digital transformation</li>
+					<ul>
+						<li><a href="guidelines">Creating and managing guidelines</a> that help teams with their API-related tasks</li>
+						<li>Running a <em>program</em> that focuses on products and the landscape</li>
+						<li>Providing a <em>platform</em> that teams can build on</li>
+					</ul>
+					<li>API programs are more than just technical enablement</li>
+					<ul>
+						<li>APIs represent the mindset of building digital and flexible value chains</li>
+						<li>API value is realized <em>when value chains create value</em>, not when APIs exist</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="scaling-is-hard">
 				<title>Getting started is hard, scaling up is even harder</title>
