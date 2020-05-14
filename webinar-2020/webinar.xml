@@ -108,7 +108,7 @@
 		</part>
 		<part id="journey">
 			<title>Journey Essentials</title>
-			<slide id="getting-started">
+			<slide id="archaeology">
 				<title>Getting Started: API Archaeology</title>
 				<img src="api-bones.png" title="Proto-API" style="float: right ; width : 25% ; margin : 5% ; "/>
 				<ul>
@@ -311,7 +311,7 @@
 	<presentation id="programs">
 		<title short="API Programs">Setting up API Programs for Success</title>
 		<toc class="abstract">APIs are one of the essential ingredients of digitalization initiatives and organizations increasingly put API programs in place. The goal of API programs is to help everybody throughout an organization on the API journey, and to make sure that the API initiative is pervasive and strategically supported. There are some well-known patterns and anti-patterns that allow organizations to improve their API programs based on the experience with existing efforts. We look at some examples of API programs and identify a set of key components that should be part of any program.</toc>
-		<toc class="resources"><a href="https://nordicapis.com/api-archaeology-using-accidental-apis-to-inform-the-api-journey/" title='Erik Wilde, "API Archaeology: Using Accidental APIs to Inform the API Journey", Nordic APIs, April 2020'>API Archaeology</a>&#160;· <a href="https://www.apiscene.io/api-business-models/api-first-the-essence-of-digital-transformation/" title='Erik Wilde, "API First: The Essence of Digital Transformation", APIscene, June 2019'>API First</a>&#160;· <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Stalled Digital Transformation</a>&#160;· <a href="https://nordicapis.com/five-common-misconceptions-about-apis/" title='Erik Wilde, "Five Common Misconceptions About APIs", Nordic APIs, March 2020'>API Misconceptions</a>&#160;· <a href="https://dret.net/lectures/api-days-finland-2019/" title='Erik Wilde, "Enjoy Responsibly: Minimizing Coupling for API Consumption", API Days Finland, June 2019'>Minimizing Coupling for API Consumption</a></toc>
+		<toc class="resources"><a href="https://www.apiscene.io/api-business-models/api-first-the-essence-of-digital-transformation/" title='Erik Wilde, "API First: The Essence of Digital Transformation", APIscene, June 2019'>API First</a>&#160;· <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Stalled Digital Transformation</a>&#160;· <a href="https://nordicapis.com/five-common-misconceptions-about-apis/" title='Erik Wilde, "Five Common Misconceptions About APIs", Nordic APIs, March 2020'>API Misconceptions</a>&#160;· <a href="https://dret.net/lectures/api-days-finland-2019/" title='Erik Wilde, "Enjoy Responsibly: Minimizing Coupling for API Consumption", API Days Finland, June 2019'>Minimizing Coupling for API Consumption</a></toc>
 		<date short="2020-05">May 2020</date>
 		<slide id="summary">
 			<title>Summary</title>
@@ -352,23 +352,6 @@
 				<title>Scale Matters</title>
 				<img title="Grand Canyon" src="grand-canyon.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="archaeology">
-				<title>Getting Started: API Archaeology</title>
-				<img src="api-bones.png" title="Proto-API" style="float: right ; width : 25% ; margin : 5% ; "/>
-				<ul>
-					<li>Identify <em>low-hanging fruit</em> for quick success and feedback</li>
-					<ul>
-						<li>Every organization has a number of existing digital value chains</li>
-						<li><a href="https://nordicapis.com/api-archaeology-using-accidental-apis-to-inform-the-api-journey/" title='Erik Wilde, "API Archaeology: Using Accidental APIs to Inform the API Journey", Nordic APIs, April 2020'>API Archaeology</a> is a good way to find candidates</li>
-						<li>Identify high-potential <q>proto-APIs</q> for starting your API journey</li>
-					</ul>
-					<li>Start with APIs that will create value</li>
-					<ul>
-						<li>API-enable capabilities to unlock value for creating new revenue streams</li>
-						<li>Build up API experience and move towards an API program and platform</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="api-first">
 				<title>From APIs-on-demand to API First</title>
 				<ul>
@@ -381,7 +364,7 @@
 					<ul>
 						<li><a href="guidelines">Creating and managing guidelines</a> that help teams with their API-related tasks</li>
 						<li>Running a <em>program</em> that focuses on products and the landscape</li>
-						<li>Providing a <em>platform</em> that teams can build on</li>
+						<li>Providing a <link href="platform">platform</link> that teams can build on</li>
 					</ul>
 					<li>API programs are more than just technical enablement</li>
 					<ul>
