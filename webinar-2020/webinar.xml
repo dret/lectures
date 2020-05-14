@@ -382,16 +382,16 @@
 				<ul>
 					<li><em>API products</em> are products with APIs built by individual teams</li>
 					<ul>
-						<li>Each product is built on the <em>API platform</em> that exists in the organization</li>
+						<li>Each product is built on the <em>API platform</em> of the organization</li>
 					</ul>
-					<li><link href="platform">API platforms</link> are tooling and infrastructure for building and operating API products</li>
+					<li><link href="platform">API platforms</link> are tooling and infrastructure for API products</li>
 					<ul>
-						<li>Mature platforms support all parts of the <em>API lifecycle</em></li>
+						<li>Mature platforms support all parts of the API lifecycle</li>
 						<li>Platforms evolve as teams and the organization change and evolve practices</li>
 					</ul>
-					<li><em>API programs</em> optimize API production by providing and evolving the API platform</li>
+					<li><em>API programs</em> optimize API production by managing the API platform</li>
 					<ul>
-						<li>Support and observe API teams</li>
+						<li>Support and observe API teams and consumers</li>
 						<li>Maximize productivity by minimizing the effort required for <q>standard API tasks</q></li>
 					</ul>
 				</ul>
