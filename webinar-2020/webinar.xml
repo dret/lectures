@@ -526,13 +526,13 @@
 				<ul>
 					<li>The <link href="strategy">API strategy</link> clearly defines the API goals</li>
 					<li>The <em>API program</em> puts the supporting infrastructure in place</li>
-					<li><em>API awareness</em> can start with understanding the <em>business value of APIs</em></li>
+					<li><em>API awareness</em> starts with understanding the <em>business value of APIs</em></li>
 					<ul>
 						<li>Everybody should have some knowledge what APIs are and why they matter</li>
 					</ul>
 					<li><em>API adoption</em> depends on both API providers and consumers</li>
 					<ul>
-						<li>The API program supports API teams with tooling and infrastructure</li>
+						<li>API program supports API teams with tooling and infrastructure</li>
 						<li>Consumers know how to find and use APIs</li>
 					</ul>
 				</ul>
@@ -558,12 +558,12 @@
 			<slide id="improvement">
 				<title>Observation: Continuous Improvement Matters</title>
 				<ul>
-					<li>API programs are only as good as the results that they produce</li>
+					<li>API programs are only as good as their results</li>
 					<li>Observation is essential for understanding the API landscape and ecosystem</li>
 					<ul>
-						<li>Observing what kind of choices teams make for their API products</li>
-						<li>Observing the consumption of products in the API landscape</li>
-						<li>Observing how the API program is used (<q>program as a product</q>)</li>
+						<li>Teams decisions for their API products</li>
+						<li>Consumption of products in the API landscape</li>
+						<li>API program usage (<q>program as a product</q>)</li>
 					</ul>
 					<li>Observations should lead to insights and should trigger changes</li>
 					<ul>
