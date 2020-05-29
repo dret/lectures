@@ -114,6 +114,37 @@
 		</part>
 		<part id="insights">
 			<title>Insights: API the APIs</title>
+			<slide id="inside-out-outside-in">
+				<title>Inside-Out vs. Outside-In</title>
+				<img src="portal-outside-inside.png" class="fullsize"/>
+			</slide>
+			<slide id="api-description">
+				<title>API Descriptions: <a href="http://dret.net/lectures/api-days-paris-2019/" title='Erik Wilde, "API the APIs or Good API Governance through Self-Describing APIs", API Days Paris 2019'>Labeling APIs</a></title>
+				<ul>
+					<li>APIs can be <q>described</q> in a variety of ways</li>
+					<ul>
+						<li><em>Technical descriptions</em> for interface mechanics (e.g., <a href="https://etiketo.org/related/OpenAPI.html">OpenAPI</a> and <a href="https://www.asyncapi.com/">AsyncAPI</a>)</li>
+						<li><em>Documentation</em> intended for human consumption</li>
+						<li><em>Metadata</em> helping with API lifecycle management (e.g., <a href="https://etiketo.org/related/APIs-json.html">APIs.json</a> and <a href="https://schema.org/WebAPI">schema.org</a>)</li>
+					</ul>
+					<li>API description requirements</li>
+					<ul>
+						<li>Be independent of API technology and implementation</li>
+						<li>Define an evolving set of well-known elements</li>
+						<li>Provide openness for custom additions</li>
+						<li>Support existing formats for backwards-compatibility</li>
+						<li>Build on existing patterns and specifications for description on the Web</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="food-labels">
+				<title>Food Labels</title>
+				<img title="Food Labels" href="https://www.google.ch/search?q=food+labels&amp;tbm=isch" src="food-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="safety-labels">
+				<title>Safety Labels</title>
+				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 		</part>
 		<part id="interfaces">
 			<title>Interfaces: What over How</title>
