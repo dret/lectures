@@ -164,6 +164,23 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="loose-coupling">
+				<title>APIs for Loose Coupling</title>
+				<ul>
+					<li>Teams communicate through their API dependencies</li>
+					<ul>
+						<li>Avoid hidden dependencies like <em>shared libraries</em></li>
+					</ul>
+					<li>There are no shortcuts: APIs are the only way to create dependencies</li>
+					<ul>
+						<li><em>API stories</em> help with the design of product APIs</li>
+					</ul>
+					<li>Implementation details and concerns are never made visible</li>
+					<ul>
+						<li>Implementation changes can be done safely</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="nudging">
 			<title>Nudging: Engineering the Engineers</title>
