@@ -1,6 +1,6 @@
 # Continuous Architecting: Architecture for Ecosystems
 
-Slides for The Architecture Gathering in Munich, Germany.
+Slides for [The Architecture Gathering](https://www.the-architecture-gathering.de/) 2019 in Munich, Germany.
 
 
 ## License
