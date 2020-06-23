@@ -152,27 +152,6 @@
 				</table>
 			</slide>
 		</part>
-		<part id="understanding">
-			<title>Understanding: What Do You Mean?</title>
-			<slide id="wittgenstein">
-				<title>The Meaning of Words</title>
-				<blockquote><q href="https://en.wikipedia.org/wiki/Philosophical_Investigations#Meaning_is_use">The meaning of a word is its use in the language.</q> (<a href="https://en.wikipedia.org/wiki/Ludwig_Wittgenstein">Ludwig Wittgenstein</a>, <a href="https://en.wikipedia.org/wiki/Philosophical_Investigations">Philosophical Investigations</a>, 1953)</blockquote>
-				<ul>
-					<li>There is no <em>abstract meaning</em> that a word then <q>references</q></li>
-					<li>Communication establishes the meaning and makes the word usable and useful</li>
-				</ul>
-			</slide>
-			<slide id="big-five">
-				<title>The Big Five</title>
-				<ul>
-					<li>API Strategy → How does it relate to <q>other strategy</q>?</li>
-					<li>API Management → Narrow and technical or full product lifecycle?</li>
-					<li>Platforms → Technical foundations or the business model?</li>
-					<li>Integration → Loose coupling or tight coupling?</li>
-					<li>Open API → Open APIs for general consumption or OAI?</li>
-				</ul>
-			</slide>
-		</part>
 		<part id="magical-api">
 			<title>API are Magical!</title>
 			<slide id="stalling">
@@ -198,6 +177,27 @@
 			<slide id="services-graph">
 				<title>Miracle #5: Untangling Monoliths!</title>
 				<img src="services-graph.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="understanding">
+			<title>Understanding: What Do You Mean?</title>
+			<slide id="big-five">
+				<title>The Big Five</title>
+				<ul>
+					<li>API Strategy → How does it relate to <q>other strategy</q>?</li>
+					<li>API Management → Narrow and technical or full product lifecycle?</li>
+					<li>Platforms → Technical foundations or the business model?</li>
+					<li>Integration → Loose coupling or tight coupling?</li>
+					<li>Open API → Open APIs for general consumption or OAI?</li>
+				</ul>
+			</slide>
+			<slide id="wittgenstein">
+				<title>The Meaning of Words</title>
+				<blockquote><q href="https://en.wikipedia.org/wiki/Philosophical_Investigations#Meaning_is_use">The meaning of a word is its use in the language.</q> (<a href="https://en.wikipedia.org/wiki/Ludwig_Wittgenstein">Ludwig Wittgenstein</a>, <a href="https://en.wikipedia.org/wiki/Philosophical_Investigations">Philosophical Investigations</a>, 1953)</blockquote>
+				<ul>
+					<li>There is no <em>abstract meaning</em> that a word then <q>references</q></li>
+					<li>Communication establishes the meaning and makes the word usable and useful</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
