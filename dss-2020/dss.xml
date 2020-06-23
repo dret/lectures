@@ -102,6 +102,55 @@
 				<title>Strategy Deep Dive</title>
 				<blockquote><q>Vision without execution is hallucination.</q> (<a href="https://en.wikipedia.org/wiki/Thomas_Edison">Thomas Edison</a>)</blockquote>
 			</slide>
+			<slide id="strategy-matrix">
+				<title><a href="http://dret.net/lectures/webinar-2020/strategy#strategy-matrix">API Strategy Structure</a></title>
+				<table style="border-collapse: collapse ; ">
+					<tr>
+						<td/>
+						<th style="border: 1px solid black ; padding: 0.5em">External</th>
+						<th style="border: 1px solid black ; padding: 0.5em">Internal</th>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Biz</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">API monetization</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Revenue-supporting APIs</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase speed &amp; feedback</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Identify &amp; stabilize enablers</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Design for externalization</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase biz insight with dashboards</li>
+						</ul></td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Org</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Focus on documentation/DX</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Support discovery/self-service</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Collect DX feedback</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Products &gt; projects (ownership)</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Team enablement/support</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loose coupling for speed/agility</li>
+						</ul></td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Tech</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Tech trends and popularity</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Invest in on-boarding support</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Secure through platform</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loosely coupled implementations</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Observe patterns and practices</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Establish C4E for platform/support</li>
+						</ul></td>
+					</tr>
+				</table>
+			</slide>
 		</part>
 		<part id="understanding">
 			<title>Understanding: What Do You Mean?</title>
