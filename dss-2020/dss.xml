@@ -100,11 +100,31 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="scaling">
-			<title>Scaling: The Dangers of the <q>Durchstich</q></title>
+		<part id="magical-api">
+			<title>API are Magical!</title>
 			<slide id="stalling">
 				<title>Getting started is hard, scaling up is even harder</title>
 				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="monolith-2001">
+				<title>Miracle #1: Untangling Monoliths!</title>
+				<img src="monolith-2001.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="scaling">
+				<title>Miracle #2: Scaling Up!</title>
+				<img src="pneumatic-tubes.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-money-press">
+				<title>Miracle #3: Monetization!</title>
+				<img src="money-press.gif" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="tower-of-babel">
+				<title>Miracle #4: Organizational Issues!</title>
+				<img src="tower-of-babel.jpg" href="https://en.wikipedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Vienna)_-_Google_Art_Project_-_edited.jpg" title="Pieter Bruegel the Elder: The Tower of Babel (1563)" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="services-graph">
+				<title>Miracle #5: Untangling Monoliths!</title>
+				<img src="services-graph.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
 		<part id="conclusions">
