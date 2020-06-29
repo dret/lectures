@@ -1,8 +1,10 @@
 body { color : #000000 ;
 	background-color : #F8F8FA ;
-	font-family : 'Ubuntu', Helvetica, sans-serif;
 	margin : 0 ;
 }
+
+body { font-family: Nunito, "Helvetica Neue", Arial, sans-serif ; }
+h1, h2, h3, h4, h5, h6 { font-family: Hind, "Helvetica Neue", Arial, sans-serif ; }
 
 .center { text-align : center ; }
 
