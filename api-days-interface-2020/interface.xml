@@ -132,7 +132,7 @@
 			<title>Governance and Guidelines</title>
 			<slide id="in-the-wild">
 				<title>API Guidelines in the Wild</title>
-				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="public-api-guidelines.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="shared-practices">
 				<title>API Guidelines as Shared Practices</title>
@@ -167,6 +167,14 @@
 						<li>Collaborative tooling (eg, publishing via GitHub) a good choice</li>
 					</ul>
 				</ul>
+			</slide>
+			<slide id="api-guidelines">
+				<title>API Guidelines</title>
+				<img src="api-guidelines.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="example">
+				<title>API Guideline Example</title>
+				<img href="https://github.com/dret/OReilly2020NYdemo/tree/master/guidelines/why/change-management-policy" title="Change Management Policy Guideline" src="change-management-guideline.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
 		<part id="conclusions">
