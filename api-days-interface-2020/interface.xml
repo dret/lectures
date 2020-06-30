@@ -164,6 +164,40 @@
 				<title>API Guidelines</title>
 				<img src="api-guidelines.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="anatomy">
+				<title>The Anatomy of a Good Guideline</title>
+				<ul>
+					<li><em>Why</em> does the guideline exist?</li>
+					<ul>
+						<li>Rationale for creating the guideline</li>
+					</ul>
+					<li><em>What</em> can be done to address the described issue</li>
+					<ul>
+						<li>At least one <em>good solution</em> for addressing the issue</li>
+					</ul>
+					<li><em>How</em> to implement the solution</li>
+					<ul>
+						<li>At least one way to use the solution in practice</li>
+					</ul>
+					<li><em>Testing</em> that the guideline has been followed</li>
+					<ul>
+						<li>Some tests can be automated but many will be by declaration or review</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="good-practice">
+				<title>Good is Better than Best</title>
+				<ul>
+					<li>Solutions (<q>What</q>) are addressing design challenges</li>
+					<ul>
+						<li>Have a model for accepting new solutions</li>
+					</ul>
+					<li>Practices (<q>How</q>) are implementing a solution</li>
+					<ul>
+						<li>Have a model for accepting new practices</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="change-management">
 				<title>API Guideline Example</title>
 				<img href="https://github.com/dret/OReilly2020NYdemo/tree/master/guidelines/why/change-management-policy" title="Change Management Policy Guideline" src="change-management-guideline.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
