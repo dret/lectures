@@ -93,8 +93,18 @@
 		</part>
 		<part id="scaling">
 			<title>Scaling the API Practice</title>
+			<slide id="journey">
+				<title>A Typical API Journey</title>
+				<ol>
+					<li>Trying to increase speed by decreasing coupling: Initial APIs</li>
+					<li>Increasing number of APIs and increasing use of 3<sup>rd</sup> party APIs</li>
+					<li>Fear and loathing because optimizing decentralized landscapes works differently</li>
+					<li>Programs emerge that help teams and introduce governance structures</li>
+					<li>Strategies are defined that define goals and allow to measure success</li>
+				</ol>
+			</slide>
 			<slide id="api-products">
-				<title>API Products: Getting Started</title>
+				<title>Getting Started with APIs</title>
 				<img src="api-products.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="api-usage">
