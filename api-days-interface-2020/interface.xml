@@ -141,6 +141,31 @@
 					<ul>
 						<li>Practices always evolve and so will the guidelines</li>
 					</ul>
+					<li>The goal is to be as minimal as possible</li>
+					<ul>
+						<li>Don't give in to the urge to write as much as possible</li>
+					</ul>
+					<li>Manage the guidelines as a product</li>
+					<ul>
+						<li>Start with MVP, always think about UX/DX, always think about the value proposition</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="management">
+				<title>Good Guideline Management</title>
+				<ul>
+					<li>Guidelines should be managed in a participatory way</li>
+					<ul>
+						<li>Guidelines are for capturing and sharing experiences across API teams</li>
+						<li>Everybody can comment or contribute to the guidelines</li>
+						<li>Over time it may make sense to develop a more formal approval process</li>
+						<li>There are editors but their role is to help with publishing</li>
+					</ul>
+					<li>Tooling should reflect the nature as a <q>living document</q></li>
+					<ul>
+						<li>One-way tooling (e.g., publishing PDF) is a bad choice</li>
+						<li>Collaborative tooling (eg, publishing via GitHub) a good choice</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
