@@ -53,7 +53,7 @@
 	<copyright>2020 Erik Wilde</copyright>
 	<presentation id="strategy">
 		<title short="Strategy &amp; Signals">Strategy &amp; Signals: Scaling API Initiatives</title>
-		<toc class="resources"><a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Stalled Digital Transformation</a></toc>
+		<toc class="resources"><a href="https://www.apiscene.io/product/api-first-the-essence-of-digital-transformation/" title='Erik Wilde, "API First: The Essence of Digital Transformation", API Scene, June 2019'>API First</a>&#160;· <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Stalled Digital Transformation</a></toc>
 		<date short="2020-07-01">July 1, 2020</date>
 		<part id="intro">
 			<title>Introduction</title>
@@ -83,6 +83,56 @@
 					</ul>
 				</ul>
 			</slide>
+		</part>
+		<part id="journey">
+			<title>API Journeys: Ideal vs. Real</title>
+			<part id="bezos-mandate">
+				<title>The Bezos Mandate</title>
+				<slide id="amazon-rules">
+					<title>Jeff Bezos' Services Rant: <a href="https://gist.github.com/chitchcock/1281611">The Rules</a></title>
+					<ul>
+						<li>Famous small set of SOA design rules</li>
+						<ul>
+							<li>Teams must expose functionality through services</li>
+							<li>Communication happens only through service interfaces</li>
+							<li>There are no hard guidelines for service design</li>
+							<li>Internal/external service is a matter of policy, not one of design</li>
+						</ul>
+						<li>Going against the <q>let's pick a platform</q> spirit of old-school SOA</li>
+					</ul>
+				</slide>
+				<slide id="amazon-consequences">
+					<title>Jeff Bezos' Services Rant: <a href="https://gist.github.com/chitchcock/1281611">The Consequences</a></title>
+					<ul>
+						<li>With more freedom comes more responsibility</li>
+						<ul>
+							<li>Monitoring and metrics are necessary for finding root causes</li>
+							<li>All APIs must be hardened against DoS attacks</li>
+							<li>Automated QA is necessary to really understand service health</li>
+							<li>Services must be documented and registered so that they can be discovered</li>
+							<li>Debugging becomes harder because of service dependencies</li>
+						</ul>
+						<li>Sophisticated tooling required to manage the new SOA landscape</li>
+						<li>Much easier in today's technology landscape than in 2002</li>
+					</ul>
+				</slide>
+				<slide id="api-first">
+					<title><a href="https://www.apiscene.io/product/api-first-the-essence-of-digital-transformation/" title='Erik Wilde, "API First: The Essence of Digital Transformation", API Scene, June 2019'>API First</a>: Everything is an API</title>
+					<ul>
+						<li><link href="amazon-rules">Jeff Bezos' Mandate</link> focuses on <q>API products</q></li>
+						<ul>
+							<li>Loose coupling means to look at <em>products as APIs</em></li>
+							<li>All dependencies have to be designed and built as APIs</li>
+						</ul>
+						<li>API products are built by thinking about interactions</li>
+						<ol>
+							<li>The API is the <em>first UI</em></li>
+							<li>APIs are designed before anything is implemented</li>
+							<li>APIs are the primary means of team communications</li>
+						</ol>
+					</ul>
+				</slide>
+			</part>
 		</part>
 		<part id="strategy">
 			<title>Strategy: Tell Me Why!</title>
