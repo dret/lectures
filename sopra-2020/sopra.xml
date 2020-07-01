@@ -189,6 +189,138 @@
 					</ul>
 				</ul>
 			</slide>
+			<part id="theory">
+				<title>One Theory</title>
+				<slide id="nature-of-the-firm">
+					<title>Transaction Costs Define Business</title>
+					<blockquote><q>A firm is likely therefore to emerge in those cases where a very short term contract would be unsatisfactory. It is obviously of more importance in the case of services than it is in the case of the buying of commodities.<br/>
+						[…] the operation of a market costs something and by forming an organisation and allowing some authority (an <q>entrepreneur</q>) to direct the resources, certain marketing costs are saved.</q></blockquote>
+					<p class="quotenote"><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1468-0335.1937.tb00002.x">R. H. Coase, <q>The Nature of the Firm</q>, Economica 4(16):386-405, November 1937</a></p>
+				</slide>
+				<slide id="enterprise-architecture">
+					<title>Aligning Business and IT</title>
+					<img src="architecture-api-strategy.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+			</part>
+			<part id="perspectives">
+				<title>Two Perspectives</title>
+				<slide id="api-internal-external">
+					<title>Internal and External API Usage</title>
+					<img title="Internal and External API Usage" src="api-internal-external.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="external">
+					<title>#1: APIs as External Interfaces</title>
+					<ul>
+						<li>Direct API monetization</li>
+						<li>API foundation for user journeys (omni-channel)</li>
+						<li>Value chain optimization (outsourced APIs)</li>
+					</ul>
+				</slide>
+				<slide id="internal">
+					<title>#2: APIs as Internal Componentization</title>
+					<ul>
+						<li>Moving from integration to interconnection (IT modernization)</li>
+						<li>Decoupling products and their development cycles and speed</li>
+						<li>Improving capability reuse across the whole organization</li>
+					</ul>
+				</slide>
+			</part>
+			<part id="pillars">
+				<title>Three Pillars</title>
+				<slide id="biz">
+					<title>Business Pillar</title>
+					<ul>
+						<li>Increase delivery speed of capabilities and products</li>
+						<li>Decrease cost of product development and adaptation</li>
+						<li>Improve insight into products and value chains</li>
+						<li>Aligning/unifying business and IT: <em><q>Business, rewritten by software</q></em>™</li>
+					</ul>
+				</slide>
+				<slide id="org">
+					<title>Organizational Pillar</title>
+					<ul>
+						<li>Increased team autonomy increases team delivery speed</li>
+						<li>Structures across teams build communities of practice</li>
+						<li>API support and platform provided by <em>Center for Enablement (C4E)</em></li>
+						<li>Team practices inform and form the API guidelines</li>
+					</ul>
+					<blockquote><q href="http://www.melconway.com/Home/Conways_Law.html">Any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure.</q> (<a href="https://en.wikipedia.org/wiki/Melvin_Conway">Mel Conway</a>)</blockquote>
+				</slide>
+				<slide id="tech">
+					<title>Technology Pillar</title>
+					<ul>
+						<li>Constrain <em>what</em> products have to do (not <em>how</em>)</li>
+						<li>No hidden channels bypassing the API strategy</li>
+						<li>API guidelines for protocols, patterns, and practices</li>
+						<li>Lifecycle for technology maturity and support</li>
+					</ul>
+				</slide>
+				<slide id="one-size">
+					<title>Got Strategy?</title>
+					<img title="API Cookie Cutter" src="api-cookie-cutter.png" href="https://www.openapis.org/" style="float : right ; width : 25% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+					<ul>
+						<li>There is no one-size-fits-all API Strategy</li>
+						<li>Strategy always depends on context</li>
+						<ul>
+							<li>What do you want to improve/achieve with APIs?</li>
+							<li>What does your organization look like?</li>
+							<li>What is the main value that you produce?</li>
+							<li>What does the market look like?</li>
+							<li>What do your customers look like?</li>
+							<li>What does your competition look like?</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="strategy-matrix">
+					<title>API Strategy = Pillars × Perspectives</title>
+					<table style="border-collapse: collapse ; ">
+						<tr>
+							<td/>
+							<th style="border: 1px solid black ; padding: 0.5em">External</th>
+							<th style="border: 1px solid black ; padding: 0.5em">Internal</th>
+						</tr>
+						<tr>
+							<th style="border: 1px solid black ; padding: 0.5em">Biz</th>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">API monetization</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Revenue-supporting APIs</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase speed &amp; feedback</li>
+							</ul></td>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Identify &amp; stabilize enablers</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Design for externalization</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase biz insight with dashboards</li>
+							</ul></td>
+						</tr>
+						<tr>
+							<th style="border: 1px solid black ; padding: 0.5em">Org</th>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Focus on documentation/DX</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Support discovery/self-service</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Collect DX feedback</li>
+							</ul></td>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Products &gt; projects (ownership)</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Team enablement/support</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loose coupling for speed/agility</li>
+							</ul></td>
+						</tr>
+						<tr>
+							<th style="border: 1px solid black ; padding: 0.5em">Tech</th>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Tech trends and popularity</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Invest in on-boarding support</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Secure through platform</li>
+							</ul></td>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loosely coupled implementations</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Observe patterns and practices</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Establish C4E for platform/support</li>
+							</ul></td>
+						</tr>
+					</table>
+				</slide>
+			</part>
 		</part>
 		<part id="magical-api">
 			<title>Signals: API are Magical!</title>
