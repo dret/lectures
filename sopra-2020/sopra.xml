@@ -255,22 +255,6 @@
 						<li>Lifecycle for technology maturity and support</li>
 					</ul>
 				</slide>
-				<slide id="one-size">
-					<title>Got Strategy?</title>
-					<img title="API Cookie Cutter" src="api-cookie-cutter.png" href="https://www.openapis.org/" style="float : right ; width : 25% ; margin-top : 0.5em ; margin-right : 2em ; "/>
-					<ul>
-						<li>There is no one-size-fits-all API Strategy</li>
-						<li>Strategy always depends on context</li>
-						<ul>
-							<li>What do you want to improve/achieve with APIs?</li>
-							<li>What does your organization look like?</li>
-							<li>What is the main value that you produce?</li>
-							<li>What does the market look like?</li>
-							<li>What do your customers look like?</li>
-							<li>What does your competition look like?</li>
-						</ul>
-					</ul>
-				</slide>
 				<slide id="strategy-matrix">
 					<title>API Strategy = Pillars × Perspectives</title>
 					<table style="border-collapse: collapse ; ">
@@ -319,6 +303,22 @@
 							</ul></td>
 						</tr>
 					</table>
+				</slide>
+				<slide id="one-size">
+					<title>Got Strategy?</title>
+					<img title="API Cookie Cutter" src="api-cookie-cutter.png" href="https://www.openapis.org/" style="float : right ; width : 25% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+					<ul>
+						<li>There is no one-size-fits-all API Strategy</li>
+						<li>Strategy always depends on context</li>
+						<ul>
+							<li>What do you want to improve/achieve with APIs?</li>
+							<li>What does your organization look like?</li>
+							<li>What is the main value that you produce?</li>
+							<li>What does the market look like?</li>
+							<li>What do your customers look like?</li>
+							<li>What does your competition look like?</li>
+						</ul>
+					</ul>
 				</slide>
 			</part>
 		</part>
