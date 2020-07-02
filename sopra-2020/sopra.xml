@@ -533,45 +533,42 @@
 		</part>
 		<part id="styles">
 			<title>API Styles</title>
-			<part id="api-language">
+			<slide id="api-language">
 				<title>APIs are Languages</title>
-				<slide id="problem-solving">
-					<title>Distributed Problem Solving</title>
+				<ul>
+					<li>APIs are part of distributed problem solving</li>
+					<li>Ideal APIs can be used for a range of problems</li>
+					<li>Problem-solving often requires combining APIs</li>
+					<li><q>Language families</q> make it easier to learn and use new APIs</li>
+				</ul>
+			</slide>
+			<slide id="api-conversation">
+				<title>APIs Interactions are Conversations</title>
+				<ul>
+					<li>APIs support conversations between interacting peers</li>
 					<ul>
-						<li>APIs are part of distributed problem solving</li>
-						<li>Ideal APIs can be used for a range of problems</li>
-						<li>Problem-solving often requires combining APIs</li>
-						<li><q>Language families</q> make it easier to learn and use new APIs</li>
+						<li>Some conversations are point-to-point (how to find the peer?)</li>
+						<li>Some conversations are point-to-multipoint (how are groups managed?)</li>
+						<li>Some conversations are point-to-ether (what does the ether do?)</li>
 					</ul>
-				</slide>
-				<slide id="api-conversation">
-					<title>APIs Interactions are Conversations</title>
+					<li>API technology does not determine the API conversation style</li>
 					<ul>
-						<li>APIs support conversations between interacting peers</li>
-						<ul>
-							<li>Some conversations are point-to-point (how to find the peer?)</li>
-							<li>Some conversations are point-to-multipoint (how are groups managed?)</li>
-							<li>Some conversations are point-to-ether (what does the ether do?)</li>
-						</ul>
-						<li>API technology does not determine the API conversation style</li>
-						<ul>
-							<li>HTTP can be used for asynchronous conversations (<q href="http://www.webhooks.org/">WebHooks</q> pattern)</li>
-							<li>Synchronous conversations can be layered on top of asynchronous foundations</li>
-						</ul>
-						<li>Conversation goals should determine the conversation style</li>
+						<li>HTTP can be used for asynchronous conversations (<q href="http://www.webhooks.org/">WebHooks</q> pattern)</li>
+						<li>Synchronous conversations can be layered on top of asynchronous foundations</li>
 					</ul>
-				</slide>
-				<slide id="style-metaphors">
-					<title>API Style Metaphors</title>
-					<ul>
-						<li><link href="tunnel-style"/>: Function calls in procedural programming</li>
-						<li><link href="uri-style"/>: Data access objects</li>
-						<li><link href="hypermedia-style"/>: Browsing the Web</li>
-						<li><link href="query-style"/>: Databases and database queries</li>
-						<li><link href="event-style"/>: Event-based programming</li>
-					</ul>
-				</slide>
-			</part>
+					<li>Conversation goals should determine the conversation style</li>
+				</ul>
+			</slide>
+			<slide id="style-metaphors">
+				<title>API Style Metaphors</title>
+				<ul>
+					<li><link href="tunnel-style"/>: Function calls in procedural programming</li>
+					<li><link href="uri-style"/>: Data access objects</li>
+					<li><link href="hypermedia-style"/>: Browsing the Web</li>
+					<li><link href="query-style"/>: Databases and database queries</li>
+					<li><link href="event-style"/>: Event-based programming</li>
+				</ul>
+			</slide>
 			<part id="tunnel-style">
 				<title>Tunnel Style</title>
 				<slide id="tunnel-style-image">
