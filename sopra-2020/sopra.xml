@@ -417,6 +417,119 @@
 	<presentation id="products">
 		<title short="Products">Products: API Products and their Management</title>
 		<date short="2020-07-03">July 3, 2020</date>
+		<part id="product-navigator">
+			<title>API Product Navigator</title>
+			<slide id="pillar-maturity">
+				<title>Product Pillars and Maturity</title>
+				<ul>
+					<li><em>API Products</em> are created in the context of (possibly implicit) API landscapes</li>
+					<ul>
+						<li>They are influenced by the culture and constraints of the landscape</li>
+					</ul>
+					<li><em>Product Pillars</em> identify areas of investment during an API's lifetime</li>
+					<li><em>Product Maturity</em> describes stages of an API product's lifetime</li>
+				</ul>
+			</slide>
+			<slide id="product-pillars">
+				<title>API Product Navigator: Pillars</title>
+				<img src="navigator-product.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="=maturity">
+				<title>API Product Navigator: Maturity</title>
+				<img src="navigator-maturity.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="change-management">
+				<title>API Product Navigator: Change Management</title>
+				<ul>
+					<li>Does your design include a plan how to make any changes to the API?</li>
+					<li>Do you have an idea of what your API should and shouldn't be, so that you can more easily decide which evolution paths you are trying to keep open?</li>
+					<li>If your design does not plan on evolving the API itself, do you have a plan how to operate multiple versions and how to manage the consumers of these multiple versions?</li>
+					<li>If your design includes a plan for evolving the API itself, do you document this clearly so that clients know what to expect?</li>
+					<li>Does your documentation include a history of changes so that it is possible for consumers to understand how the API evolved?</li>
+					<li>Do you have a plan how to decommission the API, and how this will be communicated to active consumers?</li>
+				</ul>
+			</slide>
+			<slide id="deployment">
+				<title>API Product Navigator: Deployment</title>
+				<ul>
+					<li>Deployment automation for the API product is done in line with the strategic goals, so that deployments can be rolled out fast enough.</li>
+					<li>Deployment is aligned with the change management principles, so that if necessary, multiple versions can be operated and potentially discovered in parallel.</li>
+					<li>Deployment decisions are structured in a way so that given the constraints of when to release and who gets to decide, deployment can happen as fast as possible.</li>
+					<li>Deployment scalability has been taken into account, so that scaling the product up when required is supported by the deployment packaging model and by the deployment environment.</li>
+				</ul>
+			</slide>
+			<slide id="design">
+				<title>API Product Navigator: Design</title>
+				<ul>
+					<li>Have you identified (based on the API product strategy) who the API is designed for, and included that perspective in the design process?</li>
+					<li>Given the API's strategy, is the design balancing the needs and optimization potential for the individual API product with those for the API landscape?</li>
+					<li>Given the API's style and technology, is it using a recommended and/or standardized description format that makes it easier for consumers to gain an initial understanding of the API, possibly aided by tooling they can use?</li>
+				</ul>
+			</slide>
+			<slide id="development">
+				<title>API Product Navigator: Development</title>
+				<ul>
+					<li>Are design and development coordinated so that any changes in the API design (the interface description) can be easily reflected and implemented in the development process?</li>
+					<li>Does development include technologies and/or tools that are not part of the recommended development technologies and/or tools in the organization?</li>
+				</ul>
+			</slide>
+			<slide id="discovery">
+				<title>API Product Navigator: Discovery</title>
+				<ul>
+					<li>Given the strategic goals of the API product, marketing is targeting the appropriate channels to make sure that potential users can easily discover the API.</li>
+					<li>Based on the available documentation and the strategic goals, the discovery experience takes into account the best way how potential new users can understand the API product once they discover it.</li>
+					<li>Based on the change management strategy, it is made sure that it is always the most recent version that is made available through all discovery channels.</li>
+				</ul>
+			</slide>
+			<slide id="documentation">
+				<title>API Product Navigator: Documentation</title>
+				<ul>
+					<li>Is the documentation and learning experience for the API based on the strategic goals of the API product?</li>
+					<li>Is documentation for the API integrated into the API landscape as much possible, given the strategic goals of the API product?</li>
+					<li>Does the API product provide its documentation assets in reusable ways, so that they cab be integrated into other documentation services (such as a portal) as needed?</li>
+					<li>Is documentation produced and published so that it is easy to identify the API product version the documentation is for?</li>
+				</ul>
+			</slide>
+			<slide id="monitoring">
+				<title>API Product Navigator: Monitoring</title>
+				<ul>
+					<li>Given the strategic goals, do the monitoring capabilities include all the information that is needed to evaluate the API product's health and success?</li>
+					<li>Is all the monitoring information collected in a way that it can be easily accessed and reused?</li>
+					<li>All of the data monitored has undergone security considerations, and for any PII data in particular, it is made sure that all security and privacy considerations are applied to monitoring tooling and services as well.</li>
+				</ul>
+			</slide>
+			<slide id="security">
+				<title>API Product Navigator: Security</title>
+				<ul>
+					<li>The API product controls basic technical security issues (identities, authenticate clients and end users, authorize usage, and implement rate limits, ...) either itself or by using libraries or tooling.</li>
+					<li>Documentation and design expose as little information about implementation details as possible to reduce the attack surface.</li>
+					<li>Data management by the API product has been reviewed and verified to comply with the applicable regulations.</li>
+					<li>The API supports necessary support functions to comply with known regulations (such as GDPR) around security and privacy.</li>
+					<li>Security considerations are part of the deployment considerations, so that for example geographic locations are taken into account.</li>
+				</ul>
+			</slide>
+			<slide id="strategy">
+				<title>API Product Navigator: Strategy</title>
+				<ul>
+					<li>Do you have a clearly defined and documented reason why the API exists?</li>
+					<li>Are there clearly defined criteria and indicators (such as OKR or KPI) that allow you to say whether the strategic goal has been reached or not?</li>
+					<li>Do you have plans for how to balance investment in product pillars based on the strategy and goals (i.e., to implement your strategy and reach your goals)?</li>
+					<li>Is there a plan for when and how the strategy or investment can be adjusted if the indicators or other information indicate that such a change is advisable?</li>
+				</ul>
+			</slide>
+			<slide id="testing">
+				<title>API Product Navigator: Testing</title>
+				<ul>
+					<li>Is testing using as much existing tooling as possible?</li>
+					<li>Are there metrics in place to evaluate and observe the coverage of tests?</li>
+					<li>Do your tests include scenarios where consumed APIs are not performing or are not reachable, in order to test for resiliency of the API product?</li>
+				</ul>
+			</slide>
+			<slide id="navigator-apis">
+				<title>API Product Navigator: Results</title>
+				<img src="navigator-apis.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
 		<part id="products-conclusions">
 			<title>Conclusions</title>
 			<slide id="products-conclusions">
