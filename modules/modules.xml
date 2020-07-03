@@ -5091,7 +5091,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li><link href="uri-style"/>: OpenAPI/Swagger, RAML, API Blueprint</li>
 					<li><link href="hypermedia-style"/>: HAL, Siren, Atom, HATEOAS</li>
 					<li><link href="query-style"/>: GraphQL, OData, SPARQL</li>
-					<li><link href="event-style"/>: MQ, WebSub, MQTT, XMPP, AMQP, Kafka</li>
+					<li><link href="event-style"/>: MQ, WebSub, MQTT, XMPP, AMQP, Kafka, AsyncAPI</li>
 				</ul>
 			</slide>
 		</part>
