@@ -751,7 +751,7 @@
 						<li>Swagger still exists <a href="https://smartbear.com/">as a product suite</a> offered by <a href="https://swaggerhub.com/">SmartBear</a></li>
 						<li><a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md">OpenAPI 3.0</a> is the first standalone OpenAPI version and was <a href="https://www.openapis.org/blog/2017/07/26/the-oai-announces-the-openapi-specification-3-0-0">released in July 2017</a></li>
 					</ul>
-					<li>OpenAPI is focused on <link href="uri-style"/> APIs by modeling APIs as sets of URI paths</li>
+					<li>OpenAPI is focused on <link href="resource-style"/> APIs by modeling APIs as sets of URI paths</li>
 					<ul>
 						<li>Paths can be templated and have operations and optionally parameters</li>
 						<li>JSON support is built into OpenAPI for request/response schemas</li>
@@ -829,7 +829,7 @@
 				<img title='OpenAPI Map by Arnau Lauret' href="http://openapi-map.apihandyman.io/?version=3.0" src="openapi-map.png" class="fullsize"/>
 			</slide>
 			<slide id="openapi-summary">
-				<title>Describing URI Style APIs</title>
+				<title>Describing Resource Style APIs</title>
 				<ul>
 					<li>OpenAPI describes APIs by listing all resource paths</li>
 					<li>OpenAPI is often used to generate server/client code</li>
@@ -1619,7 +1619,7 @@
 					</ul>
 					<li>APIs can use various style and two of them are inspired by the Web</li>
 					<ul>
-						<li><link href="uri-style"/> lists all <q>pages</q> based on their URIs or URI patterns</li>
+						<li><link href="resource-style"/> lists all <q>pages</q> based on their URIs or URI patterns</li>
 						<li><link href="hypermedia-style"/> designs APIs as starting points and interaction paths</li>
 					</ul>
 					<li>API design follows a similar pattern to GUI design</li>
@@ -3353,7 +3353,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 					<li>Representations are determined by the <link href="styles">API style</link></li>
 					<ul>
 						<li><link href="tunnel-style">Tunnel style</link> represents function calls (names and parameters/results)</li>
-						<li><link href="uri-style">URI style</link> represents resources for CRUD operations</li>
+						<li><link href="resource-style">Resource style</link> represents resources for CRUD operations</li>
 						<li><link href="hypermedia-style">Hypermedia style</link> represents resource for REST interactions</li>
 						<li><link href="query-style">Query style</link> represents queries and query results</li>
 						<li><link href="event-style">Event-based style</link> represents events that are produced/consumed</li>
@@ -4861,7 +4861,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<title>API Style Metaphors</title>
 				<ul>
 					<li><link href="tunnel-style"/>: Function calls in procedural programming</li>
-					<li><link href="uri-style"/>: Data access objects</li>
+					<li><link href="resource-style"/>: Data access objects</li>
 					<li><link href="hypermedia-style"/>: Browsing the Web</li>
 					<li><link href="query-style"/>: Databases and database queries</li>
 					<li><link href="event-style"/>: Event-based programming</li>
@@ -4889,11 +4889,11 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				</ul>
 			</slide>
 		</part>
-		<part id="uri-style">
-			<title>URI Style</title>
-			<slide id="uri-style-image">
+		<part id="resource-style">
+			<title>Resource Style</title>
+			<slide id="resource-style-image">
 				<title>Listing All Resources</title>
-				<img title="URI Style" src="api-styles-uri.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Resource Style" src="api-styles-uri.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="webby-identifiers">
 				<title>Identifiers for Resources</title>
@@ -5088,7 +5088,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<title>API Styles in the Wild</title>
 				<ul>
 					<li><link href="tunnel-style"/>: XML-RPC, SOAP, gRPC, Avro</li>
-					<li><link href="uri-style"/>: OpenAPI/Swagger, RAML, API Blueprint</li>
+					<li><link href="resource-style"/>: OpenAPI/Swagger, RAML, API Blueprint</li>
 					<li><link href="hypermedia-style"/>: HAL, Siren, Atom, HATEOAS</li>
 					<li><link href="query-style"/>: GraphQL, OData, SPARQL</li>
 					<li><link href="event-style"/>: MQ, WebSub, MQTT, XMPP, AMQP, Kafka, AsyncAPI</li>
