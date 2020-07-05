@@ -4879,12 +4879,6 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<ul>
 					<li>Rooted in <em>Remote Procedure Call (RPC)</em> patterns</li>
 					<li>Functions are the main abstraction and invoked at known <em>endpoints</em></li>
-					<li>Resource identifiers typically are context-dependent</li>
-					<li>Suffers from the typical RPC problems at bigger scale</li>
-					<ul>
-						<li>Failure is hard to deal with (function calls always succeed)</li>
-						<li>Scoped identifiers result in naming challenges and compromised network effect</li>
-					</ul>
 					<li>Convenient for developers looking to <q>code like a local program</q></li>
 				</ul>
 			</slide>
