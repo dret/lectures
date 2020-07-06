@@ -873,6 +873,77 @@
 		</part>
 		<part id="microservices">
 			<title>Microservices</title>
+			<slide id="microservices-scalability">
+				<title>Bottom-Up Motivation: Service Scalability</title>
+				<ul>
+					<li>Build modularized components that can be scaled individually</li>
+					<ul>
+						<li><em>Monitoring</em> allows insights into system status and load</li>
+						<li><em>Rapid Provisioning</em> allows to react quickly when new capacity is required</li>
+						<li><em>Rapid Deployment</em> means simple ways to develop/test/start/scale services</li>
+					</ul>
+					<li>Microservice implementations are more flexible than integrated approaches</li>
+					<ul>
+						<li>Scaling can be done per service instead of scaling bigger deployment units</li>
+						<li>Code can be retired more easily by removing services from deployment</li>
+						<li>Fewer unintended side-effects since all interactions are through APIs</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="microservices-digital-transformation">
+				<title>Top-Down Motivation: Digital Transformation</title>
+				<ul>
+					<li>IT capabilities and management often are not aligned</li>
+					<ul>
+						<li><em>Capabilities</em> are growing and business demands are growing as well</li>
+						<li><em>Management</em> becomes complex and impacts execution speed</li>
+					</ul>
+					<li>There is a difference in separating interfaces and implementations</li>
+					<ul>
+						<li><em>Interfaces</em> are useful for accessing capabilities</li>
+						<li><em>Implementations</em> must support easy modifications and additions</li>
+					</ul>
+					<li>The first wave of <em>API focus (SOA)</em> focused on interfaces only</li>
+					<ul>
+						<li>Focusing on APIs as <em>business-aligned capabilities</em> is a necessary first step</li>
+						<li>Agility suffers when implementations are not business-aligned</li>
+						<li><a href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway's Law</a> means that changing implementation structure can be hard</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="msa-conway">
+				<title>Conway's Law</title>
+				<blockquote><q href="http://www.melconway.com/Home/Conways_Law.html">Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure.</q> (<a href="https://en.wikipedia.org/wiki/Melvin_Conway">Mel Conway</a>)</blockquote>
+			</slide>
+			<slide id="soapy-soa">
+				<title>The SOA Crisis</title>
+				<ul>
+					<li>SOAP-style SOA are traditional IT monoliths exposing some capabilities</li>
+					<li>MSA #1 goal is to create a loosely coupled service landscape</li>
+					<ul>
+						<li>Shared data storage creates coupling</li>
+						<li>Shared infrastructure creates coupling</li>
+						<li>Shared libraries create coupling</li>
+						<li>Loose coupling allows to pick the right tool for the job</li>
+						<li>Loose coupling allows to refactor/retire as required</li>
+						<li>Loose coupling blurs the public/partner/private lines</li>
+					</ul>
+					<li><em>Using APIs</em> is one of the few overlaps between SOAP-style SOA and MSA</li>
+				</ul>
+			</slide>
+			<slide id="microservices-are-soa">
+				<title>Microservices are SOA!</title>
+				<img title="Microservices are SOA!" src="microservices-are-soa.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="microservices-are-good-soa">
+				<title>Microservices are SOA done Right!</title>
+				<ul>
+					<li><em>Decouple implementations</em> and not just interfaces</li>
+					<li><em>Velocity</em> is determined by how hard it is to make changes</li>
+					<li>The biggest problem is not <em>access to capabilities</em> but <em>capability agility</em></li>
+					<li>Microservices apply <em>Web architecture</em> to <em>Enterprise IT</em></li>
+				</ul>
+			</slide>
 		</part>
 		<part id="programs-conclusions">
 			<title>Conclusions</title>
