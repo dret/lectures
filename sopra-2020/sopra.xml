@@ -448,7 +448,7 @@
 				<title>API Product Navigator: Maturity</title>
 				<img src="navigator-maturity.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="change-management">
+			<slide id="product-navigator-change-management">
 				<title>API Product Navigator: Change Management</title>
 				<ul>
 					<li>Does your design include a plan how to make any changes to the API?</li>
@@ -459,7 +459,7 @@
 					<li>Do you have a plan how to decommission the API, and how this will be communicated to active consumers?</li>
 				</ul>
 			</slide>
-			<slide id="deployment">
+			<slide id="product-navigator-deployment">
 				<title>API Product Navigator: Deployment</title>
 				<ul>
 					<li>Deployment automation for the API product is done in line with the strategic goals, so that deployments can be rolled out fast enough.</li>
@@ -468,7 +468,7 @@
 					<li>Deployment scalability has been taken into account, so that scaling the product up when required is supported by the deployment packaging model and by the deployment environment.</li>
 				</ul>
 			</slide>
-			<slide id="design">
+			<slide id="product-navigator-design">
 				<title>API Product Navigator: Design</title>
 				<ul>
 					<li>Have you identified (based on the API product strategy) who the API is designed for, and included that perspective in the design process?</li>
@@ -476,14 +476,14 @@
 					<li>Given the API's style and technology, is it using a recommended and/or standardized description format that makes it easier for consumers to gain an initial understanding of the API, possibly aided by tooling they can use?</li>
 				</ul>
 			</slide>
-			<slide id="development">
+			<slide id="product-navigator-development">
 				<title>API Product Navigator: Development</title>
 				<ul>
 					<li>Are design and development coordinated so that any changes in the API design (the interface description) can be easily reflected and implemented in the development process?</li>
 					<li>Does development include technologies and/or tools that are not part of the recommended development technologies and/or tools in the organization?</li>
 				</ul>
 			</slide>
-			<slide id="discovery">
+			<slide id="product-navigator-discovery">
 				<title>API Product Navigator: Discovery</title>
 				<ul>
 					<li>Given the strategic goals of the API product, marketing is targeting the appropriate channels to make sure that potential users can easily discover the API.</li>
@@ -491,7 +491,7 @@
 					<li>Based on the change management strategy, it is made sure that it is always the most recent version that is made available through all discovery channels.</li>
 				</ul>
 			</slide>
-			<slide id="documentation">
+			<slide id="product-navigator-documentation">
 				<title>API Product Navigator: Documentation</title>
 				<ul>
 					<li>Is the documentation and learning experience for the API based on the strategic goals of the API product?</li>
@@ -500,7 +500,7 @@
 					<li>Is documentation produced and published so that it is easy to identify the API product version the documentation is for?</li>
 				</ul>
 			</slide>
-			<slide id="monitoring">
+			<slide id="product-navigator-monitoring">
 				<title>API Product Navigator: Monitoring</title>
 				<ul>
 					<li>Given the strategic goals, do the monitoring capabilities include all the information that is needed to evaluate the API product's health and success?</li>
@@ -508,7 +508,7 @@
 					<li>All of the data monitored has undergone security considerations, and for any PII data in particular, it is made sure that all security and privacy considerations are applied to monitoring tooling and services as well.</li>
 				</ul>
 			</slide>
-			<slide id="security">
+			<slide id="product-navigator-security">
 				<title>API Product Navigator: Security</title>
 				<ul>
 					<li>The API product controls basic technical security issues (identities, authenticate clients and end users, authorize usage, and implement rate limits, ...) either itself or by using libraries or tooling.</li>
@@ -518,7 +518,7 @@
 					<li>Security considerations are part of the deployment considerations, so that for example geographic locations are taken into account.</li>
 				</ul>
 			</slide>
-			<slide id="strategy">
+			<slide id="product-navigator-strategy">
 				<title>API Product Navigator: Strategy</title>
 				<ul>
 					<li>Do you have a clearly defined and documented reason why the API exists?</li>
@@ -527,7 +527,7 @@
 					<li>Is there a plan for when and how the strategy or investment can be adjusted if the indicators or other information indicate that such a change is advisable?</li>
 				</ul>
 			</slide>
-			<slide id="testing">
+			<slide id="product-navigator-testing">
 				<title>API Product Navigator: Testing</title>
 				<ul>
 					<li>Is testing using as much existing tooling as possible?</li>
