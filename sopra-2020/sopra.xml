@@ -944,6 +944,99 @@
 					<li>Microservices apply <em>Web architecture</em> to <em>Enterprise IT</em></li>
 				</ul>
 			</slide>
+			<part id="culture-and-organization">
+				<title>Culture and Organization</title>
+				<slide id="culture">
+					<title>Cultural Changes</title>
+					<ul>
+						<li>Remove red tape and embrace diversity</li>
+						<li>Business environments change faster than ever</li>
+						<ul>
+							<li><em>Common question:</em> How to change into a more successful organization</li>
+							<li><em>Better question:</em> How to become an organization that is better at changing</li>
+						</ul>
+						<li>The Web succeeded because it out-innovated everything else</li>
+						<ul>
+							<li>Permissionless decentralized innovation</li>
+							<li>Data-driven decisions (traffic drives visibility and success)</li>
+							<li>Continuous change enabled through loose coupling</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="organization">
+					<title>Organizational Changes</title>
+					<blockquote><q href="http://www.melconway.com/Home/Conways_Law.html">Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure.</q> (<a href="https://en.wikipedia.org/wiki/Melvin_Conway">Mel Conway</a>)</blockquote>
+					<ul>
+						<li>Learn from all of <em>Conway's laws</em></li>
+						<ol>
+							<li>Focus on communications (<q>Communication dictates design</q>)</li>
+							<li>Support continuous process (<q>Be able to do it over</q>)</li>
+							<li>Improve team independence (<q>Interdependent teams create interdependent systems</q>)</li>
+							<li>Keep project scope small (<q>Big problems/systems tend to shape-shift</q>)</li>
+						</ol>
+					</ul>
+				</slide>
+				<slide id="evolution">
+					<title>MSA Evolution</title>
+					<ul>
+						<li>Embrace change and start changing today</li>
+						<ul>
+							<li>Start small and learn by doing</li>
+							<li>MSA management is about empowering</li>
+						</ul>
+						<li>MSA creates an environment that is designed to be change-friendly</li>
+						<ul>
+							<li><em>MSA technologies</em> allow teams to deliver as fast as possible</li>
+							<li><em>APIs</em> allows teams/partners to access new products as easily as possible</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part id="microservices-and-apis">
+				<title>Microservices and APIs</title>
+				<slide id="microservice-api">
+					<title>There is no <q>Microservices API</q></title>
+					<ul>
+						<li>Microservices are all about <em>how to implement services</em></li>
+						<li>APIs are all about <em>how to interact with services</em></li>
+						<li>Microservices are an implementation detail from the API perspective</li>
+						<li>Microservice-implemented APIs might exhibit certain properties</li>
+						<ul>
+							<li>Changing more often because of faster implementation cycles</li>
+							<li>More diverse <em>API landscapes</em> because of more autonomy</li>
+							<li>Smaller scope because of solutions targeted at specific problems</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="microservice-api-design">
+					<title>Designing Microservice APIs</title>
+					<ul>
+						<li>API consumers just use an <em>API</em> and not a <em>Microservice API</em></li>
+						<ul>
+							<li>Microservice API design is no different from API design in general</li>
+							<li>Tighter coupling may be acceptable for vertical scenarios (<a href="http://samnewman.io/patterns/architectural/bff/">BFF pattern</a>)</li>
+						</ul>
+						<li>Balancing autonomy/diversity and coherence/usability is necessary</li>
+						<ul>
+							<li>Microservices should have <em>freedom</em> to design their APIs</li>
+							<li>API design should be driven by <em>design culture and patterns</em></li>
+							<li>Microservices strategy needs to distill/document/distribute design patterns</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="microservice-api-focus">
+					<title>Focus Areas for Microservice APIs</title>
+					<ul>
+						<li>Be explicit about openness and extensibility</li>
+						<li>Provide <em>glue</em> that makes combining services easy</li>
+						<ul>
+							<li>At the minimal level, always use global, unique, and persistent <em>identifiers</em></li>
+							<li>Consider using <em>hypermedia</em> as a way to support service orchestration</li>
+						</ul>
+						<li>Be explicit about how services signal end-of-life</li>
+					</ul>
+				</slide>
+			</part>
 		</part>
 		<part id="programs-conclusions">
 			<title>Conclusions</title>
