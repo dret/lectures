@@ -822,49 +822,78 @@
 			<slide id="consumption-navigator-risk">
 				<title>API Consumption Navigator: Risk</title>
 				<ul>
-					<li></li>
+					<li>Do you have a view of all APIs consumed by a single service?</li>
+					<li>Do you have a plan for replacing each dependency (API) with another solution?</li>
+					<li>What runtime protection do you have in place in case the API becomes too slow, or unreachable?</li>
+					<li>If you consume data from an API, do you have a plan to manage a cache or duplicate set of that data?</li>
+					<li>If you write data using an API, do you have runtime protection in place if the service fails to confirm writes/updates/deletes?</li>
+					<li>Do you monitor the health stats of the APIs you are consuming and have alerting to those managing the API and its consumers?</li>
 				</ul>
 			</slide>
 			<slide id="consumption-navigator-replacement">
 				<title>API Consumption Navigator: Replacement</title>
 				<ul>
-					<li></li>
+					<li>Do you have a replacement plan in place for each consumed API?</li>
+					<li>Have you identified at least one replacement for each API you consume?</li>
+					<li>Do you have protection in place when an API becomes unavailable at runtime (circuit-breaker, etc.)?</li>
+					<li>Do you have protection in place when you can no longer write to an existing API?</li>
+					<li>Do you have tests defined that can validate your replacement implementation?</li>
 				</ul>
 			</slide>
 			<slide id="consumption-navigator-redundancy">
 				<title>API Consumption Navigator: Redundancy</title>
 				<ul>
-					<li></li>
+					<li>Do you have at least one alternative provider for each consumed API (which might include changing API providers in the future)?</li>
+					<li>Have you considered identifying a runtime fail-over plan with a different provider for each consumed API?</li>
+					<li>Do you have tests in place (to run before deployment) to validate your redundancy implementation?</li>
 				</ul>
 			</slide>
 			<slide id="consumption-navigator-resilience">
 				<title>API Consumption Navigator: Resilience</title>
 				<ul>
-					<li></li>
+					<li>Do you have runtime protection in place in case the API becomes too slow, or unreachable?</li>
+					<li>Do you have runtime support in place for failed API state changes that write data?</li>
+					<li>Do you have timeouts in place to prevent waiting too long for an API response?</li>
+					<li>Do you send fail-fast timing budget values to APIs when you send a request to them?</li>
+					<li>Do you use parallel requests where possible?</li>
 				</ul>
 			</slide>
 			<slide id="consumption-navigator-rightsizing">
 				<title>API Consumption Navigator: Rightsizing</title>
 				<ul>
-					<li></li>
+					<li>Do you have a process for evaluating the performance of your API consumers?</li>
+					<li>Do you use correlation IDs to track transactions throughout your ecosystem?</li>
+					<li>Do you have a dashboard that records the typical transaction time (in length) as well as reach (# of components touching the transaction)?</li>
+					<li>Do you have a process for evaluating the effectiveness of interactions with consumed APIs?</li>
 				</ul>
 			</slide>
 			<slide id="consumption-navigator-representation">
 				<title>API Consumption Navigator: Representation</title>
 				<ul>
-					<li></li>
+					<li>Do you convert the representations you are consuming into internal models before operating on that data, i.e. canonical formats?</li>
+					<li>Do you have code that responsibly handles invalid representations?</li>
+					<li>Do you robustly handle changes in representations over time (e.g. via evolution of the API you are consuming)?</li>
+					<li>Do you have runtime protection in place to inspect representations for malicious code injection?</li>
+					<li>Do you have tests that validate these runtime protections?</li>
 				</ul>
 			</slide>
 			<slide id="consumption-navigator-reporting">
 				<title>API Consumption Navigator: Reporting</title>
 				<ul>
-					<li></li>
+					<li>Do you have an established set of metrics all API consumers must record?</li>
+					<li>Do you have the ability to correlate API consumption with application logic?</li>
+					<li>Do you have a dashboard service in place to display API consumer metrics?</li>
+					<li>Do you have an automated process that notifies you when metrics are unusual?</li>
+					<li>Do you have an automated process that takes corrective actions when metrics are unusual?</li>
 				</ul>
 			</slide>
 			<slide id="consumption-navigator-reuse">
 				<title>API Consumption Navigator: Reuse</title>
 				<ul>
-					<li></li>
+					<li>Does your company have an API Reuse policy or statement of principle?</li>
+					<li>Is it possible for you to use the same API to solve more than one problem?</li>
+					<li>Do you set reuse KPIs and monitor the reuse stats of the APIs you are consuming?</li>
+					<li>Is there a feedback channel for API consumers that when using APIs the API provider can learn about what's working well and what's maybe not working so well?</li>
 				</ul>
 			</slide>
 		</part>
