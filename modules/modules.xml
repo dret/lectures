@@ -4887,7 +4887,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>Resource Style</title>
 			<slide id="resource-style-image">
 				<title>Listing All Resources</title>
-				<img title="Resource Style" src="api-styles-uri.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Resource Style" src="api-styles-resource.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="webby-identifiers">
 				<title>Identifiers for Resources</title>
@@ -4917,8 +4917,8 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<title>Linking All Resources</title>
 				<img title="Hypermedia Style" src="api-styles-hypermedia.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="webby-style">
-				<title>Webby APIs</title>
+			<slide id="hypermedia-style">
+				<title>Hypermedia APIs</title>
 				<ul>
 					<li>Based on mixing data and controls in representations</li>
 					<ul>
