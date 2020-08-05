@@ -2209,7 +2209,7 @@
 					<li>API consumers just use an <em>API</em> and not a <em>Microservice API</em></li>
 					<ul>
 						<li>Microservice API design is no different from API design in general</li>
-						<li>Tighter coupling may be acceptable for vertical scenarios (<a href="http://samnewman.io/patterns/architectural/bff/">BFF pattern</a>)</li>
+						<li>Tighter coupling may be acceptable for vertical scenarios (<a href="http://samnewman.io/patterns/architectural/bff/" title="Backend-for-Frontend">BFF pattern</a>)</li>
 					</ul>
 					<li>Balancing autonomy/diversity and coherence/usability is necessary</li>
 					<ul>
@@ -5060,7 +5060,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<slide id="api-style-context">
 				<title>Context Considerations</title>
 				<ul>
-					<li><em>Backend for Frontend (BFF)</em> implies tight coupling producer/consumer</li>
+					<li><em>Backend-for-Frontend (BFF)</em> implies tight coupling producer/consumer</li>
 					<ul>
 						<li>API style and API design can be coordinated with the consumer</li>
 					</ul>
@@ -5077,6 +5077,10 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 						<li>No control over consumers and their preferences/tools and development cycles</li>
 					</ul>
 				</ul>
+			</slide>
+			<slide id="backend-for-frontend">
+				<title>Backend-for-Frontend Scenario</title>
+				<img src="api-styles-bff.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="style-implementations">
 				<title>API Styles in the Wild</title>
