@@ -2409,6 +2409,15 @@
 			<title>Conclusions</title>
 		</part>
 	</presentation>
+	<presentation id="products">
+		<title>API Products</title>
+		<toc class="abstract">...</toc>
+		<toc class="resources"></toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+	</presentation>
 	<presentation id="protocols">
 		<title>Protocols</title>
 		<toc class="abstract">Protocols determine the fundamentals of how distributed IT components communicate. <em>Protocol layering</em> ensures that the Internet and Web protocol stack is well architected and allows interconnection across a wide variety of communication technologies. <em>Application protocols</em> are directly visible to application developers and determine both the fundamental communication style, and the framework within which these communications the happen. While the <em>Hypertext Transfer Protocol (HTTP)</em> is the most widely used application protocol for APIs today, there are a variety of other styles and protocols that are possible choices for the application protocol layer as well.</toc>
