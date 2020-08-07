@@ -2422,6 +2422,18 @@
 		</part>
 		<part id="product-consumers">
 			<title>API Product Consumers</title>
+			<slide id="product-consumers-domain-knowledge">
+				<title>Domain Knowledge</title>
+			</slide>
+			<slide id="product-consumers-relationship">
+				<title>Producer/Consumer Relationship</title>
+			</slide>
+			<slide id="product-consumers-security">
+				<title>Thread/Security Model</title>
+			</slide>
+			<slide id="product-consumers-landscape">
+				<title>Landscape Coherence</title>
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="protocols">
