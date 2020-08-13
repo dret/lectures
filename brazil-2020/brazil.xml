@@ -106,4 +106,59 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="products">
+		<title short="API Products">API Products and API Product Management</title>
+		<toc class="abstract">APIs are interfaces providing access to capabilities. As such, an API is just one way to make a capability accessible, but in today's increasingly digital world, they are of course a very important way. For the consumer, an API and the capability it represents are almost the same, and therefore it makes sense to talk about "API products" when referring not just to the technical API, but also to the capability that it represents. Managing API products is an important aspect of a successful API strategy and sustainable API management. As a starting point, it makes sense to consider the traditional "product marketing mix" and its 4 Ps, which are product, price, place, and promotion. The very same model can be applied to API products, only that they have a slightly different set of constraints than traditional products. We look at the key properties of API products, and how they influence the model of product, price, place, and promotion. We also look at how API product management helps to achieve the underlying goal of many API initiatives, which is to move IT from monolithic integrated models to a decentralized ecosystem.</toc>
+		<toc class="resources"></toc>
+		<date short="2020-09-02">September 2, 2020</date>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="intro">
+			<title>Introduction</title>
+			<slide id="dret">
+				<title>Erik Wilde <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></title>
+				<img href="https://www.youtube.com/watch?v=kwrrI3EHpGY" title='Erik Wilde, "From API Craftsmanship to API Landscaping", keynote at Nordic APIs 2018 Platform Summit, Stockholm, Sweden, 10/23/2018' src="nordic-dret.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="catalysts">
+				<title><a href="https://www.axway.com/">Axway</a> <a href="https://www.axway.com/catalysts">Catalysts</a></title>
+				<img src="catalysts-logo.png" title="Catalysts Logo" style="float: right ; width : 16% ; margin : 3% ; "/>
+				<ul>
+					<li>Small team of experts in the digital transformation and API space</li>
+					<ul>
+						<li>Help customers to make good decisions on their API journey</li>
+						<li>Move the community of API practitioners and their practices forward</li>
+					</ul>
+					<li>Team members are distributed globally</li>
+					<ul style=" columns : 2 ; ">
+						<li>Uli Hitzel: <a href="http://twitter.com/u1i" class="twitter-follow-button" title="Uli Hitzel on Twitter: @u1i"><code>@u1i</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li>Eric Horesnyi: <a href="http://twitter.com/EricHoresnyi" class="twitter-follow-button" title="Eric Horesnyi on Twitter: @EricHoresnyi"><code>@EricHoresnyi</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li>Emmanuel Methivier: <a href="http://twitter.com/e_methivier" class="twitter-follow-button" title="Emmanuel Methivier on Twitter: @e_methivier"><code>@e_methivier</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li>Brian Otten: <a href="http://twitter.com/bottencatalyst" class="twitter-follow-button" title="Brian Otten on Twitter: @bottencatalyst"><code>@bottencatalyst</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li>Brian Pagano: <a href="http://twitter.com/brianpagano" class="twitter-follow-button" title="Brian Pagano on Twitter: @brianpagano"><code>@brianpagano</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li>Eyal Sivan: <a href="http://twitter.com/mropenbanking" class="twitter-follow-button" title="Eyal Sivan on Twitter: @mropenbanking"><code>@mropenbanking</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li>Erik Wilde: <a href="http://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="products-conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thank You!</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/brazil-2020"><code>dret.net/lectures/brazil-2020</code></a></li>
+					<li>More information:</li>
+					<ul>
+						<li>Twitter: <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a></li>
+						<li>YouTube: <a href="https://www.youtube.com/ErikWilde"><code>youtube.com/ErikWilde</code></a></li>
+						<li>LinkedIn: <a href="http://www.linkedin.com/in/netdret"><code>linkedin.com/in/netdret</code></a></li>
+						<li>Web: <a href="http://dret.net/netdret/"><code>dret.net/netdret/</code></a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>
