@@ -53,8 +53,13 @@
 	<copyright>2020 Erik Wilde</copyright>
 	<presentation id="styles">
 		<title short="API Styles">The Five API Styles</title>
+		<toc class="abstract">APIs are languages, and languages can be designed very differently. In this presentation, we discuss "language families", i.e. different general approaches that API design can take. We discuss the five API styles, which are the Tunnel Style, the Resource Style, the Hypermedia Style, the Query Style, and the Event-based Style. We also look at popular examples of how APIs using these styles are being implemented and described today. Technologies such as REST, OpenAPI, HTTP, gRPC, GraphQL, AsyncAPI, and Kafka are all examples of specific styles, and we look at them as examples of these styles. API styles can be regarded as "technology families", for example both SOAP and gRPC are examples for the Tunnel Style, but they were created at different times and with different design details. Regardless of the details: API design is important, and too often default decisions are made instead of thinking through the problem at hand and the resulting design constraints. This presentation helps you to understand the five API styles so that you can design better APIs.</toc>
 		<toc class="resources"><a href="https://www.youtube.com/watch?v=bWFXGHXo_pY" title='"The Five API Styles: Understanding REST, OpenAPI, HTTP, gRPC, GraphQL, and Kafka", YouTube video, July 2020'>The Five API Styles</a></toc>
-		<date short="2020-08-19">August 19, 2020</date>
+		<date short="2020-08-26">August 26, 2020</date>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 		<part id="intro">
 			<title>Introduction</title>
 			<slide id="dret">
