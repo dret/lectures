@@ -88,8 +88,216 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="api-language">
+			<title>APIs are Languages</title>
+			<slide id="problem-solving">
+				<title>Distributed Problem Solving</title>
+				<ul>
+					<li>APIs are part of distributed problem solving</li>
+					<li>Ideal APIs can be used for a range of problems</li>
+					<li>Problem-solving often requires combining APIs</li>
+					<li><q>Language families</q> make it easier to learn and use new APIs</li>
+				</ul>
+			</slide>
+			<slide id="api-conversation">
+				<title>APIs Interactions are Conversations</title>
+				<ul>
+					<li>APIs support conversations between interacting peers</li>
+					<ul>
+						<li>Some conversations are point-to-point (how to find the peer?)</li>
+						<li>Some conversations are point-to-multipoint (how are groups managed?)</li>
+						<li>Some conversations are point-to-ether (what does the ether do?)</li>
+					</ul>
+					<li>API technology does not determine the API conversation style</li>
+					<ul>
+						<li>HTTP can be used for asynchronous conversations (<q href="http://www.webhooks.org/">WebHooks</q> pattern)</li>
+						<li>Synchronous conversations can be layered on top of asynchronous foundations</li>
+					</ul>
+					<li>Conversation goals should determine the conversation style</li>
+				</ul>
+			</slide>
+			<slide id="style-metaphors">
+				<title>API Style Metaphors</title>
+				<ul>
+					<li><link href="tunnel-style"/>: Function calls in procedural programming</li>
+					<li><link href="resource-style"/>: Data access objects</li>
+					<li><link href="hypermedia-style"/>: Browsing the Web</li>
+					<li><link href="query-style"/>: Databases and database queries</li>
+					<li><link href="event-style"/>: Event-based programming</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="tunnel-style">
+			<title>Tunnel Style</title>
+			<slide id="tunnel-style-image">
+				<title>One Tunnel to Call them All</title>
+				<img title="Tunnel Style" src="api-styles-tunnel.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="rpc-over-http">
+				<title>Distributed Programming</title>
+				<ul>
+					<li>Rooted in <em>Remote Procedure Call (RPC)</em> patterns</li>
+					<li>Functions are the main abstraction and invoked at known <em>endpoints</em></li>
+					<li>Convenient for developers looking to <q>code like a local program</q></li>
+				</ul>
+			</slide>
+		</part>
+		<part id="resource-style">
+			<title>Resource Style</title>
+			<slide id="resource-style-image">
+				<title>Listing All Resources</title>
+				<img title="Resource Style" src="api-styles-resource.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="webby-identifiers">
+				<title>Identifiers for Resources</title>
+				<ul>
+					<li>Makes a major step towards a more webby service design</li>
+					<ul>
+						<li>Resources are identified by URIs and thus globally unique</li>
+						<li>Data context may be established by using URI identifiers for resources</li>
+						<li>Navigational context is missing because of a lack of links</li>
+					</ul>
+					<li>One necessary step in the evolution of designing decentralized systems</li>
+					<ul>
+						<li><em>Web of Data</em> is a good starting point</li>
+						<li><em>Web of Services</em> is what makes the Web what it is</li>
+					</ul>
+					<li>Developers are tempted/required to hardcode control flows</li>
+					<ul>
+						<li>No navigational guidance provided by the API</li>
+						<li>Guidance must be hand-crafted or clients are forced to do trial-and-error</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="hypermedia-style">
+			<title>Hypermedia Style</title>
+			<slide id="hypermedia-style-image">
+				<title>Linking All Resources</title>
+				<img title="Hypermedia Style" src="api-styles-hypermedia.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="hypermedia-apis">
+				<title>Hypermedia APIs</title>
+				<ul>
+					<li>Based on mixing data and controls in representations</li>
+					<ul>
+						<li><em>Data</em> represents the current resource state</li>
+						<li><em>Controls</em> represent the advertised next options for clients</li>
+					</ul>
+					<li>Controls allow clients to work across individual APIs</li>
+					<ul>
+						<li>APIs expose sets of resources and provide links</li>
+						<li>Clients follow links without being aware of API boundaries</li>
+					</ul>
+					<li>Developers must code differently from usual programming flows</li>
+					<ul>
+						<li>Applications are driven by the responses that client code receives</li>
+						<li>Imperative programming is not the best fit for this kind of flow</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="query-style">
+			<title>Query Style</title>
+			<slide id="query-style-image">
+				<title>Querying into Server-Side Models</title>
+				<img title="Query Style" src="api-styles-query.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="database-style">
+				<title>Querying Structured Data</title>
+				<ul>
+					<li>The API provides access to a rich interconnected data structure</li>
+					<ul>
+						<li>Clients know the data model and understand how to query it</li>
+						<li>Clients want a small subset of the available data</li>
+					</ul>
+					<li>Querying into structure data needs an agreement on data and querying</li>
+					<ul>
+						<li>Query-style APIs define a <em>metamodel</em> that all data models must use</li>
+						<li>Query-style APIs define a <em>query language</em> for querying data</li>
+					</ul>
+					<li><em>Loose coupling</em> depends on if and how clients adjust to schema changes</li>
+					<ul>
+						<li>Is it possible for clients to find out about schema changes?</li>
+						<li>Do clients have to worry about schema changes?</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="event-style">
+			<title>Event-Based Style</title>
+			<slide id="event-style-image">
+				<title>Event Publish/Subscribe</title>
+				<img title="Event-based Style" src="api-styles-event.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="fire-and-forget">
+				<title>Fire and Forget</title>
+				<ul>
+					<li>Synchronous communications result in tighter coupling between peers</li>
+					<li>Asynchronous communications can make data provision easier</li>
+					<ul>
+						<li>Data is tagged and submitted into some <em>messaging fabric</em></li>
+						<li>The fabric takes care of notifying and delivering data to consumers</li>
+					</ul>
+					<li>Managing the fabric becomes an essential part of making code work</li>
+					<ul>
+						<li>Who is producing data?</li>
+						<li>Who is consuming data?</li>
+						<li>What are the ways in which data can or must be tagged?</li>
+						<li>How is the namespace of data tagging managed?</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="choosing-style">
+			<title>Choosing an API Style</title>
+			<slide id="api-style-maslow">
+				<title>API Styles are Tools</title>
+				<img title="Hammer and Screw" href="https://www.flickr.com/photos/justinbaeder/5317820857" src="maslow-hammer-nail.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-style-context">
+				<title>Context Considerations</title>
+				<ul>
+					<li><em>Backend-for-Frontend (BFF)</em> implies tight coupling producer/consumer</li>
+					<ul>
+						<li>API style and API design can be coordinated with the consumer</li>
+					</ul>
+					<li><em>Private APIs</em> implies a smaller group of potential consumers</li>
+					<ul>
+						<li>Style and design can be guided by internal guidelines/practices</li>
+					</ul>
+					<li><em>Partner APIs</em> implies a well-known group of consumers</li>
+					<ul>
+						<li>Broader appeal to consumers necessary</li>
+					</ul>
+					<li><em>Public APIs</em> is the most loosely coupled group of consumers</li>
+					<ul>
+						<li>No control over consumers and their preferences/tools and development cycles</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="style-implementations">
+				<title>API Styles in the Wild</title>
+				<ul>
+					<li><link href="tunnel-style"/>: XML-RPC, SOAP, gRPC, Avro</li>
+					<li><link href="resource-style"/>: OpenAPI/Swagger, RAML, API Blueprint</li>
+					<li><link href="hypermedia-style"/>: HAL, Siren, Atom, HATEOAS</li>
+					<li><link href="query-style"/>: GraphQL, OData, SPARQL</li>
+					<li><link href="event-style"/>: MQ, WebSub, MQTT, XMPP, AMQP, Kafka, AsyncAPI</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="styles-conclusions">
 			<title>Conclusions</title>
+			<slide id="no-style-hammer">
+				<title>There is no Style Hammer</title>
+				<ul>
+					<li>API styles can be combined</li>
+					<li>Style coherence makes a API landscape more usable</li>
+					<li>Style fundamentalism may pick the wrong tool for a problem</li>
+					<li>Be aware of styles and pick the one that works best</li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
