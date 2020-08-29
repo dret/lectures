@@ -5090,9 +5090,12 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 		</part>
 		<part id="choosing-style">
 			<title>Choosing an API Style</title>
-			<slide id="api-style-maslow">
-				<title>API Styles are Tools</title>
-				<img title="Hammer and Screw" href="https://www.flickr.com/photos/justinbaeder/5317820857" src="maslow-hammer-nail.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			<slide id="best-api-style">
+				<title>There is no <q>Best API Style</q></title>
+				<img title="Volkswagen Käfer" src="volkswagen-kaefer.jpg" style=" width : 35% ; object-fit : contain ; margin : 1% 6% 1% 6% ; "/>
+				<img title="Audi RSQ8" src="audi-rsq8.jpg" style=" width : 35% ; object-fit : contain ; margin : 1% 6% 1% 6% ; "/>
+				<img title="Mercedes G Class" src="mercedes-g350.jpg" style=" width : 35% ; object-fit : contain ; margin : 1% 6% 1% 6% ; "/>
+				<img title="Porsche 911 Turbo S" src="porsche-911-turbo-s.jpg" style=" width : 35% ; object-fit : contain ; margin : 1% 6% 1% 6% ; "/>
 			</slide>
 			<slide id="api-style-properties">
 				<title>API Style Properties</title>
