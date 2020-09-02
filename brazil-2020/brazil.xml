@@ -386,6 +386,76 @@
 				<img src="private-partner-public-design-landscape.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
+		<part id="product-management">
+			<title>API Product Management</title>
+			<slide id="4p-definition">
+				<title>Product Marketing Mix: 4 Ps</title>
+				<ul>
+					<li>Framework for decision-making for product marketing</li>
+					<ul>
+						<li><em>Product:</em> Good or service wanted by consumers</li>
+						<li><em>Price:</em> What are consumers willing to pay for the product?</li>
+						<li><em>Place:</em> How to make products available to consumers</li>
+						<li><em>Promotion:</em> How to make consumers aware of products</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="7p-definition">
+				<title>Expanded Product Marketing Mix: 7 Ps</title>
+				<ul>
+					<li>Extends the <link href="4p-definition">4 Ps</link> with a focus on services</li>
+					<li>Framework for decision-making for services marketing</li>
+					<ul>
+						<li><em>People:</em> Considerations regarding service consumers (UX/CX)</li>
+						<li><em>Process:</em> Planning and managing service delivery</li>
+						<li><em>Physical Evidence:</em> (Physical) context of service delivery</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="managing-change">
+				<title>Managing API Change</title>
+				<ul>
+					<li><a href="http://dret.typepad.com/dretblog/2016/04/robust-extensibility.html">Robust extensibility</a> helps to facilitate non-breaking API changes</li>
+					<li>The <link href="hypermedia-style"/> helps to move extensibility beyond data models</li>
+					<li><a href="http://semver.org/">Semantic versioning</a> can be used to keep track of API changes</li>
+					<li><a href="https://goodapi.co/insights/deprecation-and-sunsetting">HTTP <code>Deprecation</code></a> can be used to <a href="http://webconcepts.info/concepts/http-header/Deprecation">declare APIs as deprecated</a></li>
+					<li><a href="https://goodapi.co/insights/deprecation-and-sunsetting">HTTP <code>Sunset</code></a> can be used to <a href="http://webconcepts.info/concepts/http-header/Sunset">signal upcoming sunsets</a></li>
+				</ul>
+			</slide>
+			<slide id="semantic-versioning">
+				<title><a href="http://semver.org/">Semantic Versioning</a></title>
+				<ul>
+					<li><a href="http://semver.org/">Semantic Versioning</a> standardizes the meaning of version numbers</li>
+					<li>Version numbers use <code>MAJOR.MINOR.PATCH</code> syntax and have well-defined semantics</li>
+					<ul>
+						<li>Increase <code>MAJOR</code> version for incompatible API changes</li>
+						<li>Increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
+						<li>Increase <code>PATCH</code> version for making backwards-compatible bug fixes</li>
+					</ul>
+					<li>Mostly about how to name implementation artifacts but also applicable to APIs</li>
+					<ul>
+						<li>Exposing detailed version/patch information is a potential security risk</li>
+						<li>For well-designed APIs only <code>MINOR</code> may make sense to expose</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="http-deprecation">
+				<title>API Deprecation: Nearing End-of-Life</title>
+				<ul>
+					<li>APIs can still be functional but not recommended anymore</li>
+					<li>Explicit <em>API deprecation</em> allows API consumers to look for alternatives</li>
+					<li>The <a href="http://webconcepts.info/concepts/http-header/Sunset">HTTP <code>Deprecation</code> header field</a> signals API deprecation</li>
+				</ul>
+			</slide>
+			<slide id="http-sunset">
+				<title>API Sunset: Reaching End-of-Life</title>
+				<ul>
+					<li>APIs will be shut down and consumers should have time to plan for it</li>
+					<li>Explicit <em>API sunset</em> allows API consumers to look for alternatives</li>
+					<li>The <a href="http://webconcepts.info/concepts/http-header/Sunset">HTTP <code>Sunset</code> header field</a> signals API end-of-life</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="products-conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
