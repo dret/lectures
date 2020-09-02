@@ -364,6 +364,29 @@
 				<img title="GraphQL as a Beer" src="blue-moon.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
+		<part id="consumer-scope">
+			<title>API Product Consumer Scope</title>
+			<slide id="private-partner-public">
+				<title>Private/Partner/Public API Design Scope</title>
+				<img src="private-partner-public-design.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="product-consumers-domain">
+				<title>Domain Knowledge</title>
+				<img src="private-partner-public-design-domain.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="product-consumers-relationship">
+				<title>Producer/Consumer Relationship</title>
+				<img src="private-partner-public-design-relationship.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="product-consumers-security">
+				<title>Thread/Security Model</title>
+				<img src="private-partner-public-design-security.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="product-consumers-landscape">
+				<title>Landscape Coherence</title>
+				<img src="private-partner-public-design-landscape.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
 		<part id="products-conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
