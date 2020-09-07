@@ -614,7 +614,7 @@
 						<li>Increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
 						<li>Increase <code>PATCH</code> version for making backwards-compatible bug fixes</li>
 					</ul>
-					<li>Mostly about how to name implementation artifacts but also applicable to APIs</li>
+					<li><code>MAJOR</code> is a different API, <code>PATCH</code> is an implementation detail</li>
 					<ul>
 						<li>Exposing detailed version/patch information is a potential security risk</li>
 						<li>For well-designed APIs only <code>MINOR</code> may make sense to expose</li>
