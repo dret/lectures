@@ -494,7 +494,7 @@
 		</part>
 	</presentation>
 	<presentation id="guidelines">
-		<title short="API Guidelines">API Guidelines: Why they matter and how to manage them</title>
+		<title short="API Guidelines">API Guidelines: <br/>Why they matter and how to manage them</title>
 		<toc class="abstract">API Management today is at a maturity level where questions around individual APIs often can be addressed relatively easily, either by applying good API practices, and/or by using supporting products. What is less easy is how to scale the API practice in organizations so that their API landscape is coherent in terms of API goals, API design principles, and API platforms and tooling. In this presentation we look at how API strategy, API programs, and API platforms relate, and how API guidelines create the governance that is necessary to successfully manage large and continuously evolving API landscapes. We explain with practical examples how API guidelines can be used as an essential part of an API program, becoming instrumental in managing your API platform.</toc>
 		<toc class="resources"><a href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild">Collection of Public API Guidelines</a>&#160;· <a href="https://github.com/dret/OReilly2020NYdemo" title="Very incomplete example of API Guidlines used for showing guideline structure">API Guideline Structure</a></toc>
 		<date short="2020-09-09">September 9, 2020</date>
