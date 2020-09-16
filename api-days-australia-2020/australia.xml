@@ -87,8 +87,8 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="your-platform">
-			<title>You Have a Platform</title>
+		<part id="linear-platform">
+			<title>From Linear to Platforms</title>
 			<slide id="change">
 				<title>Change is the new Normal</title>
 				<img src="corona-virus.png" style="float: right ; width : 25% ; margin : 2% ; "/>
@@ -108,26 +108,6 @@
 					<ul>
 						<li>There is no magical piece of technology to <q>transform the organization</q></li>
 						<li>There are known patterns how to grow and evolve your organization</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="current-platform">
-				<title>Your Current Platform</title>
-				<ul>
-					<li><em>Why</em> things are being built</li>
-					<ul>
-						<li><em>Customer focus</em> and improving their experience</li>
-						<li><em>Innovation focus</em> and the ability to design/build/test/fail effectively</li>
-					</ul>
-					<li><em>What</em> you are building on</li>
-					<ul>
-						<li><em>Foundational resources</em> that serve as basic building blocks</li>
-						<li><em>Existing capabilities</em> that can be reused in new value chains</li>
-					</ul>
-					<li><em>How</em> building things is working</li>
-					<ul>
-						<li><em>Design and build</em> support (getting from idea to implementation)</li>
-						<li><em>Deployment and runtime</em> support (getting from implementation to operation)</li>
 					</ul>
 				</ul>
 			</slide>
@@ -177,6 +157,29 @@
 			<slide id="platform-pic">
 				<title>Platforming: Building Products with a Plan</title>
 				<img src="platform-perspectives-definition.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="starting-point">
+			<title>Your Starting Point</title>
+			<slide id="current-platform">
+				<title>Your Current Platform</title>
+				<ul>
+					<li><em>Why</em> things are being built</li>
+					<ul>
+						<li><em>Customer focus</em> and improving their experience</li>
+						<li><em>Innovation focus</em> and the ability to design/build/test/fail effectively</li>
+					</ul>
+					<li><em>What</em> you are building on</li>
+					<ul>
+						<li><em>Foundational resources</em> that serve as basic building blocks</li>
+						<li><em>Existing capabilities</em> that can be reused in new value chains</li>
+					</ul>
+					<li><em>How</em> building things is working</li>
+					<ul>
+						<li><em>Design and build</em> support (getting from idea to implementation)</li>
+						<li><em>Deployment and runtime</em> support (getting from implementation to operation)</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="paralysis">
 				<title>Platform Paralysis</title>
