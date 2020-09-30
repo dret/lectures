@@ -71,6 +71,26 @@
 		</part>
 		<part id="api-products">
 			<title>Products as APIs</title>
+			<slide id="private-partner-public">
+				<title>Know Your Consumer: API Design Scope</title>
+				<img src="private-partner-public-design.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="product-consumers-domain">
+				<title>Domain Knowledge</title>
+				<img src="private-partner-public-design-domain.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="product-consumers-relationship">
+				<title>Producer/Consumer Relationship</title>
+				<img src="private-partner-public-design-relationship.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="product-consumers-security">
+				<title>Thread/Security Model</title>
+				<img src="private-partner-public-design-security.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="product-consumers-landscape">
+				<title>Landscape Coherence</title>
+				<img src="private-partner-public-design-landscape.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 		</part>
 		<part id="extensibility">
 			<title>Safely Evolving API Products</title>
