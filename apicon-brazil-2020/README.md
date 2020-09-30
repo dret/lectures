@@ -1,6 +1,6 @@
 # API Product Management: Always Focus on the Consumer
 
-Slides for [APIcon Brazil](http://apicon.com.br/) 2020 in São Paulo, Brazil, October 2, 2020.
+Slides for [API Connect Brazil](http://apicon.com.br/) 2020 in São Paulo, Brazil, October 2, 2020.
 
 
 ## License
