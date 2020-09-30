@@ -98,6 +98,26 @@
 				<title>Versioning Breaks Things</title>
 				<img title='Roy Fielding (@fielding): &apos;The reason to make a real REST API is to get evolvability … a &quot;v1&quot; is a middle finger to your API customers, indicating RPC/HTTP (not REST)&apos;' href="https://twitter.com/fielding/status/376835835670167552" src="versioning-tweet-fielding.png" class="fullsize"/>
 			</slide>
+			<slide id="evolution">
+				<title>Plan for Evolution</title>
+				<ul>
+					<li>Planning for evolution means to reduce pain in the future</li>
+					<ul>
+						<li>No immediate benefits other than <q>doing the right thing</q></li>
+						<li>Modest effort when part of the API design process and culture</li>
+					</ul>
+					<li>Extensibility should be part of the <em>API design culture</em></li>
+					<ul>
+						<li>Each API must have a documented plan for API evolution</li>
+						<li>The simplest possible plan may be to never change the API</li>
+					</ul>
+					<li>Extensibility should be made easy for <em>API consumers</em></li>
+					<ul>
+						<li>Provide test cases that simulate correct/incorrect API extensions</li>
+						<li>Provide feature flags so that services can enter <q>test mode</q></li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="guidelines">
 			<title>API Guidelines and Programs</title>

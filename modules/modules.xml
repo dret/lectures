@@ -403,7 +403,7 @@
 						<li>Each API must have a documented plan for API evolution</li>
 						<li>The simplest possible plan may be to never change the API</li>
 					</ul>
-					<li>Extensibility should be made easy for API consumers</li>
+					<li>Extensibility should be made easy for <em>API consumers</em></li>
 					<ul>
 						<li>Provide test cases that simulate correct/incorrect API extensions</li>
 						<li>Provide feature flags so that services can enter <q>test mode</q></li>
