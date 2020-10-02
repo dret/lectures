@@ -71,6 +71,22 @@
 		</part>
 		<part id="api-products">
 			<title>Products as APIs</title>
+			<slide id="product-video">
+				<title><a href="https://www.youtube.com/watch?v=VNwAYyfQ8Bw" title="What is an API? Take 2: API Products">API Products</a></title>
+				<div style=" float : left ; width : 90% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/VNwAYyfQ8Bw" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+			<slide id="design-video">
+				<title><a href="https://www.youtube.com/watch?v=HmIHw3U5jEQ" title="Designing Private, Partner, and Public APIs: What's the Difference?">Designing Private, Partner, and Public APIs</a></title>
+				<div style=" float : left ; width : 90% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/HmIHw3U5jEQ" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
 			<slide id="private-partner-public">
 				<title>Know Your Consumer: API Design Scope</title>
 				<img src="private-partner-public-design.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
