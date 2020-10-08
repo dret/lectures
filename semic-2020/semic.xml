@@ -69,6 +69,20 @@
 			<slide id="apis-data">
 				<title>APIs ⊃ Data</title>
 			</slide>
+			<slide id="apis-are-different">
+				<title>Where APIs Differ</title>
+				<ul>
+					<li>APIs are continuously consumed services</li>
+					<li>API consumers should be able to rely on the API contract</li>
+					<ul>
+						<li><em>Loose coupling</em> allows consumers to keep doing what they are doing</li>
+					</ul>
+					<li>API producers should improve their products based on feedback</li>
+					<ul>
+						<li><em>Designing for change</em> allows producers to keep improving the API landscape</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="platforms">
 			<title>Understanding Platforms</title>
