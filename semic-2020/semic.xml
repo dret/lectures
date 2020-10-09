@@ -68,6 +68,20 @@
 			<title>APIs Matter</title>
 			<slide id="apis-data">
 				<title>APIs ⊃ Data</title>
+				<ul>
+					<li>Data is information at rest, APIs are for interactions</li>
+					<ul>
+						<li>Good APIs are designed with interactions in mind</li>
+					</ul>
+					<li><em>Data-oriented APIs</em> can be mechanically derived from data models</li>
+					<ul>
+						<li>Basic interactions such as getting and changing/adding data</li>
+					</ul>
+					<li><em>Process-oriented</em> APIs are based on scenarios and user needs</li>
+					<ul>
+						<li>What problems do users have and which services help them best</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="apis-are-different">
 				<title>Where APIs are Different</title>
