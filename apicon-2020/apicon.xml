@@ -73,7 +73,7 @@
 			<title>Understanding Platforms</title>
 			<slide id="api-perspectives">
 				<title>Two Perspectives on APIs</title>
-				<ul>
+				<ol>
 					<li>APIs help to move away from <em>monolithic application architectures</em></li>
 					<ul>
 						<li>Moving towards <em>loose coupling</em> to allow for more IT agility</li>
@@ -84,6 +84,8 @@
 						<li><em>Partner and public APIs</em> allow to move towards the API economy</li>
 						<li><em>Private APIs</em> allow for easier ways to develop and test new value chains</li>
 					</ul>
+				</ol>
+				<ul>
 					<li>APIs can do <em>both of these things</em></li>
 					<ul>
 						<li><em>IT modernization</em> is often necessary to improve speed and safety of IT</li>
