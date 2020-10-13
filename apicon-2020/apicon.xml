@@ -160,6 +160,35 @@
 		</part>
 		<part id="open-everything">
 			<title>Open Everything</title>
+			<slide id="culture">
+				<title><q>This is how we do things around here.</q></title>
+				<ul>
+					<li><q><em>This is</em> how we do things around here.</q></li>
+					<ul>
+						<li>Document practices as well as what they address and why that's necessary</li>
+					</ul>
+					<li><q>This is <em>how</em> we do things around here.</q></li>
+					<ul>
+						<li>Practices may involve building blocks and tooling</li>
+					</ul>
+					<li><q>This is how <em>we</em> do things around here.</q></li>
+					<ul>
+						<li>Culture emerges from practice instead of being top-down</li>
+					</ul>
+					<li><q>This is how <em>we</em> do things <em>around here</em>.</q></li>
+					<ul>
+						<li>Different communities or practices can exist and co-exist</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="guideline-example">
+				<title>Guideline Example: Change Management Policy</title>
+				<img title="Guideline for Change Management Policy" href="https://github.com/dret/OReilly2020NYdemo" src="change-management-guideline.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="guidelines-collection">
+				<title>API Guidelines in the Wild</title>
+				<img title="API Guidelines in the Wild" href="https://dret.github.io/guidelines/" src="api-guidelines.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
