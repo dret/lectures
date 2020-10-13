@@ -69,27 +69,6 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="ecosystems">
-			<title>From Building Systems to Designing Ecosystems</title>
-			<slide id="api-architecture">
-				<title>API Architecture 101</title>
-				<ul>
-					<li>You know <em>what</em> products teams are delivering but not <em>how</em> they are producing them</li>
-					<li>There can be no hidden dependencies between products</li>
-					<li>Delivery velocity increases because teams can pick tools and can move at their own speed</li>
-					<li>Consumers satisfaction increases because products get released and changed more quickly</li>
-				</ul>
-			</slide>
-			<slide id="api-governance">
-				<title>API Governance 101</title>
-				<ul>
-					<li>Minimizing constraints maximizes team autonomy and thus productivity</li>
-					<li>Coherence across products must be managed</li>
-					<li>Identifying and supporting <em>cross-product concerns</em> increases landscape productivity</li>
-					<li>Building openness and robustness into the landscape is critical</li>
-				</ul>
-			</slide>
-		</part>
 		<part id="insights">
 			<title>Insights: API the APIs</title>
 			<slide id="api-visibility">
