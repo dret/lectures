@@ -69,17 +69,120 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="big-picture">
-			<title>The Big Picture</title>
+		<part id="ecosystems">
+			<title>From Building Systems to Designing Ecosystems</title>
+			<slide id="api-architecture">
+				<title>API Architecture 101</title>
+				<ul>
+					<li>You know <em>what</em> products teams are delivering but not <em>how</em> they are producing them</li>
+					<li>There can be no hidden dependencies between products</li>
+					<li>Delivery velocity increases because teams can pick tools and can move at their own speed</li>
+					<li>Consumers satisfaction increases because products get released and changed more quickly</li>
+				</ul>
+			</slide>
+			<slide id="api-governance">
+				<title>API Governance 101</title>
+				<ul>
+					<li>Minimizing constraints maximizes team autonomy and thus productivity</li>
+					<li>Coherence across products must be managed</li>
+					<li>Identifying and supporting <em>cross-product concerns</em> increases landscape productivity</li>
+					<li>Building openness and robustness into the landscape is critical</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="insights">
-			<title>Gaining Insights</title>
+			<title>Insights: API the APIs</title>
+			<slide id="api-visibility">
+				<title>API Visibility: Inside-Out vs. Outside-In</title>
+				<!-- this image is from API days paris 2019 -->
+				<img src="portal-outside-inside.png" class="fullsize"/>
+			</slide>
+			<slide id="api-description">
+				<title>API Descriptions: <a href="http://dret.net/lectures/api-days-paris-2019/" title='Erik Wilde, "API the APIs or Good API Governance through Self-Describing APIs", API Days Paris 2019'>Labeling APIs</a></title>
+				<ul>
+					<li>APIs can be <q>described</q> in a variety of ways</li>
+					<ul>
+						<li><em>Technical descriptions</em> for interface mechanics (e.g., <a href="https://www.openapis.org/">OpenAPI</a> and <a href="https://www.asyncapi.com/">AsyncAPI</a>)</li>
+						<li><em>Documentation</em> intended for human consumption</li>
+						<li><em>Metadata</em> helping with API lifecycle management (e.g., <a href="http://apisjson.org/">APIs.json</a> and <a href="https://schema.org/WebAPI">schema.org</a>)</li>
+					</ul>
+					<li>API description requirements</li>
+					<ul>
+						<li>Be independent of API technology and implementation</li>
+						<li>Define an evolving set of well-known elements</li>
+						<li>Provide openness for custom additions</li>
+						<li>Support existing formats for backwards-compatibility</li>
+						<li>Build on existing patterns and specifications for description on the Web</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="food-labels">
+				<title>Food Labels</title>
+				<img title="Food Labels" href="https://www.google.ch/search?q=food+labels&amp;tbm=isch" src="food-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="safety-labels">
+				<title>Safety Labels</title>
+				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 		</part>
 		<part id="interfaces">
-			<title>Collaboration Through Interfaces</title>
+			<title>Interfaces: What over How</title>
+			<slide id="constraints">
+				<title>Constraints > Rules</title>
+				<ul>
+					<li>Aim for the <em>minimal number of constraints</em> for your API landscape</li>
+					<ul>
+						<li>Minimizing constraints maximizes the freedom of teams</li>
+						<li>Revisit existing constraints and remove/relax them when possible</li>
+					</ul>
+					<li>Look at rules at <em>suggestions how to satisfy constraints</em></li>
+					<ul>
+						<li>Help teams to satisfy constraints if they want/need help</li>
+						<li>Try to make rules optional whenever possible</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="loose-coupling">
+				<title>APIs for Loose Coupling</title>
+				<ul>
+					<li>Teams communicate through their API dependencies</li>
+					<ul>
+						<li>Avoid hidden dependencies like <em>shared libraries</em></li>
+					</ul>
+					<li>There are no shortcuts: APIs are the only way to create dependencies</li>
+					<ul>
+						<li><em>API stories</em> help with the design of product APIs</li>
+					</ul>
+					<li>Implementation details and concerns are never made visible</li>
+					<ul>
+						<li>Implementation changes can be done safely</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="nudging">
-			<title>Nudging the Landscape</title>
+			<title>Nudging: Engineering the Engineers</title>
+			<slide id="engineers">
+				<title>Nudging in Ecosystems</title>
+				<img src="prometheus-engineer.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-landscaper">
+				<title>The API Landscaper's Job</title>
+				<ul>
+					<li>Realizing the promise of <em>becoming better at changing</em></li>
+					<ol>
+						<li><em>Increase <q>time to value</q></em> when making value chain changes</li>
+						<li><em>Decrease dependencies</em> between value chain building blocks</li>
+						<li>Improve effectiveness of API teams <em>at the organizational level</em></li>
+					</ol>
+					<li>Observing and connecting teams to improve their productivity</li>
+					<ol>
+						<li>Create open and visible value chains</li>
+						<li>Remove hidden dependencies</li>
+						<li>Provide a platform for effective API product teams</li>
+					</ol>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
