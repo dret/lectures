@@ -242,23 +242,6 @@
 				<title>API Guideline Example</title>
 				<img href="https://github.com/dret/OReilly2020NYdemo/tree/master/guidelines/why/change-management-policy" title="Change Management Policy Guideline" src="change-management-guideline.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="management">
-				<title>Good Guideline Management</title>
-				<ul>
-					<li>Guidelines should be managed in a participatory way</li>
-					<ul>
-						<li>Guidelines are for capturing and sharing experiences across API teams</li>
-						<li>Everybody can comment or contribute to the guidelines</li>
-						<li>Over time it may make sense to develop a more formal approval process</li>
-						<li>There may be editors but their role is to improve guideline quality</li>
-					</ul>
-					<li>Tooling should reflect the nature as a <q>living document</q></li>
-					<ul>
-						<li>One-way tooling is a bad choice</li>
-						<li>Collaborative tooling is a good choice</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="in-the-wild">
 				<title>API Guidelines in the Wild</title>
 				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
