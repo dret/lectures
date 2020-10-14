@@ -100,9 +100,85 @@
 		</part>
 		<part id="consumer-focus">
 			<title>APIs: Focus on the Consumer</title>
-		</part>
-		<part id="change">
-			<title>Designing for Change</title>
+			<slide id="versioning-tweet-fielding">
+				<title>Versioning Breaks Things</title>
+				<img title='Roy Fielding (@fielding): &apos;The reason to make a real REST API is to get evolvability … a &quot;v1&quot; is a middle finger to your API customers, indicating RPC/HTTP (not REST)&apos;' href="https://twitter.com/fielding/status/376835835670167552" src="versioning-tweet-fielding.png" class="fullsize"/>
+			</slide>
+			<slide id="evolution">
+				<title>Plan for Evolution</title>
+				<ul>
+					<li>Planning for evolution means to reduce pain in the future</li>
+					<ul>
+						<li>No immediate benefits other than <q>doing the right thing</q></li>
+						<li>Modest effort when part of the API design process and culture</li>
+					</ul>
+					<li>Extensibility should be part of the <em>API design culture</em></li>
+					<ul>
+						<li>Each API must have a documented plan for API evolution</li>
+						<li>The simplest possible plan may be to never change the API</li>
+					</ul>
+					<li>Extensibility should be made easy for <em>API consumers</em></li>
+					<ul>
+						<li>Provide test cases that simulate correct/incorrect API extensions</li>
+						<li>Provide feature flags so that services can enter <q>test mode</q></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="core-semantics">
+				<title>Robust Extensibility #1: Meaningful Core</title>
+				<ul>
+					<li>The core of the API allows clients to have meaningful interactions</li>
+					<ul>
+						<li>The starting point of an API should be meaningful and complete</li>
+					</ul>
+					<li>The core of the API is robust over time</li>
+					<ul>
+						<li>Anything that is added to the core does not change the core semantics</li>
+					</ul>
+					<li>Anything that is not part of the core can be safely ignored</li>
+					<ul>
+						<li><code>mustIgnore</code> semantics allow safe interactions beyond closely coordinated groups</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="extension-points">
+				<title>Robust Extensibility #2: Extension Points</title>
+				<ul>
+					<li>APIs should be clear about where extensions are allowed</li>
+					<ul>
+						<li>API metamodels often decide where (potential) extension points are</li>
+						<li>API schemas/definitions should further narrow down where extensions are allowed</li>
+					</ul>
+					<li>API tests can make sure that the extension points are properly implemented</li>
+					<ul>
+						<li>Extensions in allowed places are ignored and tests should succeed</li>
+						<li>Extensions in other places should raise errors about malformed content</li>
+					</ul>
+					<li>Extension points are interesting to support in generic software</li>
+					<ul>
+						<li>Monitoring can report which and where extensions are being used</li>
+						<li>Libraries/SDKs can make it easy to create/parse extension data</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="processing-model">
+				<title>Robust Extensibility #3: Processing Model</title>
+				<ul>
+					<li>Extensions are well-defined and their handling is well-defined as well</li>
+					<ul>
+						<li>Extension points make it clear where to expect extensions</li>
+						<li>Processing models make it clear what to do with extensions</li>
+					</ul>
+					<li><code>mustIgnore</code> is a popular and good choice for extension processing</li>
+					<ul>
+						<li>Some formats allow extensions to declare their processing model (such as <code>mustUnderstand</code>)</li>
+					</ul>
+					<li>How to <em>learn</em> about extensions is a different matter</li>
+					<ul>
+						<li>Document versions/extensions in a well-defined and structured way</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="platforms">
 			<title>Understanding Platforms</title>
