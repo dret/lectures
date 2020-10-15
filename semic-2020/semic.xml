@@ -63,38 +63,21 @@
 					</ul>
 				</ul>
 			</slide>
-		</part>
-		<part id="apis">
-			<title>APIs Matter</title>
-			<slide id="apis-data">
-				<title>APIs ⊃ Data</title>
+			<slide id="sustainable">
+				<title>Sustainable APIs</title>
 				<ul>
-					<li>Data is information at rest, APIs are for interactions</li>
+					<li>Every API is a promise</li>
+					<li>Manage the promises that you make responsibly</li>
 					<ul>
-						<li>Good APIs are designed with interactions in mind</li>
+						<li>Make promises when they make a difference</li>
+						<li>Be clear about how you are handling your promise</li>
+						<li>Learn from your promises and the mistakes you have made</li>
 					</ul>
-					<li><em>Data-oriented APIs</em> can be mechanically derived from data models</li>
-					<ul>
-						<li>Basic interactions such as getting and changing/adding data</li>
-					</ul>
-					<li><em>Process-oriented</em> APIs are based on scenarios and user needs</li>
-					<ul>
-						<li>What problems do users have and which services help them best?</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="apis-are-different">
-				<title>Where APIs are Different</title>
-				<ul>
-					<li>APIs are continuously consumed services</li>
-					<li>API consumers should be able to rely on the API contract</li>
-					<ul>
-						<li><em>Loose coupling</em> allows consumers to keep doing what they are doing</li>
-					</ul>
-					<li>API producers can improve their products based on usage and feedback</li>
-					<ul>
-						<li><em>Designing for change</em> allows producers to continuously improve the API landscape</li>
-					</ul>
+					<li>Two simple strategies to become better at making promises</li>
+					<ol>
+						<li>Think about the value you are creating and for whom</li>
+						<li>Think about becoming a transfer agent for value</li>
+					</ol>
 				</ul>
 			</slide>
 		</part>
