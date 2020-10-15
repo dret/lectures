@@ -83,6 +83,25 @@
 		</part>
 		<part id="consumer-focus">
 			<title>Build API Products for API Consumers</title>
+			<slide id="api-language">
+				<title><a href="https://www.youtube.com/watch?v=wDYeU2T4v2o">APIs are Languages</a></title>
+				<ul>
+					<li>APIs are part of distributed problem solving</li>
+					<li>Ideal APIs can be used for a range of problems</li>
+					<li>Problem-solving often requires combining APIs</li>
+					<li><q>Language styles</q> make it easier to learn and use new APIs</li>
+				</ul>
+			</slide>
+			<slide id="style-implementations">
+				<title><a href="https://www.youtube.com/watch?v=bWFXGHXo_pY">API Language Styles</a> in the Wild</title>
+				<ul>
+					<li>Tunnel Style: XML-RPC, SOAP, gRPC, Avro</li>
+					<li>Resource Style: OpenAPI/Swagger, RAML, API Blueprint</li>
+					<li>Hypermedia Style: HAL, Siren, Atom, HATEOAS</li>
+					<li>Query Style: GraphQL, OData, SPARQL</li>
+					<li>Event-based Style: MQ, WebSub, MQTT, XMPP, AMQP, Kafka, AsyncAPI</li>
+				</ul>
+			</slide>
 			<slide id="pillar-maturity">
 				<title>API Products</title>
 				<ul>
@@ -91,16 +110,11 @@
 						<li>They are influenced by the culture and constraints of the API landscape</li>
 					</ul>
 					<li><em>Product Pillars</em> identify areas of investment during an API's lifetime</li>
-					<li><em>Product Maturity</em> describes stages of an API product's lifetime</li>
 				</ul>
 			</slide>
 			<slide id="product-pillars">
 				<title>API Product Navigator: Pillars</title>
 				<img src="navigator-product.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide id="maturity">
-				<title>API Product Navigator: Maturity</title>
-				<img src="navigator-maturity.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 			<slide id="versioning-tweet-fielding">
 				<title>Versioning Breaks Things</title>
