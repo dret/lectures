@@ -83,6 +83,25 @@
 		</part>
 		<part id="consumer-focus">
 			<title>APIs: Focus on the Consumer</title>
+			<slide id="pillar-maturity">
+				<title>Product Pillars and Maturity</title>
+				<ul>
+					<li><em>API Products</em> are created in the context of (possibly implicit) API landscapes</li>
+					<ul>
+						<li>They are influenced by the culture and constraints of the landscape</li>
+					</ul>
+					<li><em>Product Pillars</em> identify areas of investment during an API's lifetime</li>
+					<li><em>Product Maturity</em> describes stages of an API product's lifetime</li>
+				</ul>
+			</slide>
+			<slide id="product-pillars">
+				<title>API Product Navigator: Pillars</title>
+				<img src="navigator-product.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="maturity">
+				<title>API Product Navigator: Maturity</title>
+				<img src="navigator-maturity.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="versioning-tweet-fielding">
 				<title>Versioning Breaks Things</title>
 				<img title='Roy Fielding (@fielding): &apos;The reason to make a real REST API is to get evolvability … a &quot;v1&quot; is a middle finger to your API customers, indicating RPC/HTTP (not REST)&apos;' href="https://twitter.com/fielding/status/376835835670167552" src="versioning-tweet-fielding.png" class="fullsize"/>
