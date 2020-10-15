@@ -120,7 +120,7 @@
 					</ul>
 					<li>Anything that is not part of the core can be safely ignored</li>
 					<ul>
-						<li><code>mustIgnore</code> semantics allow safe interactions beyond closely coordinated groups</li>
+						<li>Your initial promise never changes</li>
 					</ul>
 				</ul>
 			</slide>
@@ -137,11 +137,6 @@
 						<li>Extensions in allowed places are ignored and tests should succeed</li>
 						<li>Extensions in other places should raise errors about malformed content</li>
 					</ul>
-					<li>Extension points are interesting to support in generic software</li>
-					<ul>
-						<li>Monitoring can report which and where extensions are being used</li>
-						<li>Libraries/SDKs can make it easy to create/parse extension data</li>
-					</ul>
 				</ul>
 			</slide>
 			<slide id="processing-model">
@@ -151,10 +146,6 @@
 					<ul>
 						<li>Extension points make it clear where to expect extensions</li>
 						<li>Processing models make it clear what to do with extensions</li>
-					</ul>
-					<li><code>mustIgnore</code> is a popular and good choice for extension processing</li>
-					<ul>
-						<li>Some formats allow extensions to declare their processing model (such as <code>mustUnderstand</code>)</li>
 					</ul>
 					<li>How to <em>learn</em> about extensions is a different matter</li>
 					<ul>
