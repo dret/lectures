@@ -95,11 +95,11 @@
 			<slide id="style-implementations">
 				<title><a href="https://www.youtube.com/watch?v=bWFXGHXo_pY">API Language Styles</a> in the Wild</title>
 				<ul>
-					<li>Tunnel Style: XML-RPC, SOAP, gRPC, Avro</li>
-					<li>Resource Style: OpenAPI/Swagger, RAML, API Blueprint</li>
-					<li>Hypermedia Style: HAL, Siren, Atom, HATEOAS</li>
-					<li>Query Style: GraphQL, OData, SPARQL</li>
-					<li>Event-based Style: MQ, WebSub, MQTT, XMPP, AMQP, Kafka, AsyncAPI</li>
+					<li><em>Tunnel Style:</em> XML-RPC, SOAP, gRPC, Avro</li>
+					<li><em>Resource Style:</em> OpenAPI/Swagger, RAML, API Blueprint</li>
+					<li><em>Hypermedia Style:</em> HAL, Siren, Atom, HATEOAS</li>
+					<li><em>Query Style:</em> GraphQL, OData, SPARQL</li>
+					<li><em>Event-based Style:</em> MQ, WebSub, MQTT, XMPP, AMQP, Kafka, AsyncAPI</li>
 				</ul>
 			</slide>
 			<slide id="pillar-maturity">
