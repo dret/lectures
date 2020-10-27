@@ -143,11 +143,11 @@
 			</slide>
 			<slide id="food-labels">
 				<title>Food Labels</title>
-				<img title="Food Labels" href="https://www.google.ch/search?q=food+labels&amp;tbm=isch" src="food-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Food Labels" href="https://www.google.ch/search?q=food+labels&amp;tbm=isch" src="food-labels.png" class="fullsize"/>
 			</slide>
 			<slide id="safety-labels">
 				<title>Safety Labels</title>
-				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" class="fullsize"/>
 			</slide>
 		</part>
 		<part id="interfaces">
@@ -201,7 +201,7 @@
 			<title>Nudging: Engineering the Engineers</title>
 			<slide id="engineers">
 				<title>Nudging in Ecosystems</title>
-				<img src="prometheus-engineer.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="prometheus-engineer.jpg" class="fullsize"/>
 			</slide>
 			<slide id="why-guidelines">
 				<title>API Guidelines as Shared Practices</title>
@@ -240,11 +240,11 @@
 			</slide>
 			<slide id="example">
 				<title>API Guideline Example</title>
-				<img href="https://github.com/dret/OReilly2020NYdemo/tree/master/guidelines/why/change-management-policy" title="Change Management Policy Guideline" src="change-management-guideline.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img href="https://github.com/dret/OReilly2020NYdemo/tree/master/guidelines/why/change-management-policy" title="Change Management Policy Guideline" src="change-management-guideline.png" class="fullsize"/>
 			</slide>
 			<slide id="in-the-wild">
 				<title>API Guidelines in the Wild</title>
-				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" class="fullsize"/>
 			</slide>
 			<slide id="getting-started">
 				<title>Getting Started</title>
