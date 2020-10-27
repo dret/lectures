@@ -135,12 +135,20 @@
 				<title>API Landscape Value</title>
 				<img src="API-value-landscape.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
-			<slide id="value-challenges">
-				<title>Challenges for API Value Realization</title>
+			<slide id="product-challenges">
+				<title>Challenges for API Products</title>
 				<ul>
 					<li><em>Velocity:</em> Improving an API allows to grow the value rate</li>
 					<li><em>Breaking changes:</em> Breaking changes fragment the consumer population</li>
 					<li><em>Adoption difficulties:</em> API design familiarity allows for easier adoption</li>
+				</ul>
+			</slide>
+			<slide id="landscape-challenges">
+				<title>Challenges for API Landscapes</title>
+				<ul>
+					<li><em>Innovation:</em> Allow new patterns and practices to evolve</li>
+					<li><em>Coordination:</em> Prevent bottlenecks by centralized processes</li>
+					<li><em>Coherence:</em> Balance local vs. global optimization</li>
 				</ul>
 			</slide>
 		</part>
