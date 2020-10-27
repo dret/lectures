@@ -104,6 +104,10 @@
 				<title>Scaling Channels</title>
 				<img src="API-scaling-channels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
+			<slide id="managing-api-value">
+				<title>API Product Lifecycle</title>
+				<img src="API-value-one.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="scale-experiences">
 				<title>Scaling Experiences</title>
 				<img src="API-scaling-experiences.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
@@ -127,11 +131,7 @@
 		</part>
 		<part id="landscapes">
 			<title>What? Cultivate API Landscapes!</title>
-			<slide id="managing-api-value">
-				<title>API Value</title>
-				<img src="API-value-one.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-			</slide>
-			<slide>
+			<slide id="managing-landscape-value">
 				<title>API Landscape Value</title>
 				<img src="API-value-landscape.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
@@ -140,7 +140,7 @@
 				<ul>
 					<li><em>Velocity:</em> Improving an API allows to grow the value rate</li>
 					<li><em>Breaking changes:</em> Breaking changes fragment the consumer population</li>
-					<li><em>Adoption difficulties:</em> API landscape coherence allows for easier adoption</li>
+					<li><em>Adoption difficulties:</em> API design familiarity allows for easier adoption</li>
 				</ul>
 			</slide>
 		</part>
