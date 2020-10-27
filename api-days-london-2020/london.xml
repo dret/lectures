@@ -192,6 +192,23 @@
 			</slide>
 			<slide id="nudging">
 				<title>Support with Nudging: Help to do Things Right</title>
+				<img src="prometheus-engineer.jpg" class="fullsize"/>
+			</slide>
+			<slide id="why-guidelines">
+				<title>API Guidelines as Shared Practices</title>
+				<ul>
+					<li>Larger API landscapes mean more ways to solve the same problem</li>
+					<ul>
+						<li>Solving <q>API problems</q> is not what teams should focus on</li>
+						<li>Solving <q>API problems</q> in a consistent way helps the API landscape</li>
+					</ul>
+					<li>Make it easy to <q>do the right thing</q> by providing support</li>
+					<ul>
+						<li>Tooling can validate APIs and increase <em>API product quality</em></li>
+						<li>Tooling can simplify implementation and reduce <em>API time-to-market</em></li>
+						<li>Tooling can help with consumption and increase <em>realized API value</em></li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
