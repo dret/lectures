@@ -162,8 +162,18 @@
 				<ul>
 					<li>Make <em>introspection</em> part of the API landscape</li>
 					<li>Combine decentralization with the ability for gaining insights</li>
-					<li></li>
+					<li>APIs can be <q>described</q> in a variety of ways</li>
+					<ul>
+						<li><em>Technical descriptions</em> for interface mechanics (e.g., <a href="https://www.openapis.org/">OpenAPI</a>)</li>
+						<li><em>Documentation</em> intended for human consumption</li>
+						<li><em>Metadata</em> for API lifecycle management (e.g., <a href="https://schema.org/WebAPI">schema.org</a>)</li>
+					</ul>
 				</ul>
+			</slide>
+			<slide id="api-visibility">
+				<title>API Visibility: Inside-Out vs. Outside-In</title>
+				<!-- this image is from API days paris 2019 -->
+				<img src="portal-outside-inside.png" class="fullsize"/>
 			</slide>
 			<slide id="interfaces">
 				<title>Harmonize with Interfaces: Provide Clear Guidance</title>
