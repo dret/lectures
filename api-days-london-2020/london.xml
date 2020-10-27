@@ -94,19 +94,19 @@
 			</slide>
 			<slide id="scale-one">
 				<title>API Start</title>
-				<img src="API-scaling-one.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="API-scaling-one.png" class="fullsize"/>
 			</slide>
 			<slide id="scale-consumers">
 				<title>Scaling Consumers</title>
-				<img src="API-scaling-consumers.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="API-scaling-consumers.png" class="fullsize"/>
 			</slide>
 			<slide id="scale-channels">
 				<title>Scaling Channels</title>
-				<img src="API-scaling-channels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="API-scaling-channels.png" class="fullsize"/>
 			</slide>
 			<slide id="managing-api-value">
 				<title>API Product Lifecycle</title>
-				<img src="API-value-one.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="API-value-one.png" class="fullsize"/>
 			</slide>
 			<slide id="product-challenges">
 				<title>Challenges for API Products</title>
@@ -119,15 +119,15 @@
 			</slide>
 			<slide id="scale-experiences">
 				<title>Scaling Experiences</title>
-				<img src="API-scaling-experiences.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="API-scaling-experiences.png" class="fullsize"/>
 			</slide>
 			<slide id="scale-UX">
 				<title>API User Experience (UX)</title>
-				<img src="API-scaling-UX.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="API-scaling-UX.png" class="fullsize"/>
 			</slide>
 			<slide id="scale-DX">
 				<title>API Developer Experience (DX)</title>
-				<img src="API-scaling-DX.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="API-scaling-DX.png" class="fullsize"/>
 			</slide>
 			<slide id="language-video">
 				<title><a href="https://www.youtube.com/watch?v=wDYeU2T4v2o" title="What is an API? It's a Language!">Computers Are Stupid</a></title>
@@ -142,7 +142,7 @@
 			<title>What? Cultivate API Landscapes!</title>
 			<slide id="managing-landscape-value">
 				<title>API Landscape Value</title>
-				<img src="API-value-landscape.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="API-value-landscape.png" class="fullsize"/>
 			</slide>
 			<slide id="landscape-challenges">
 				<title>Challenges for API Landscapes</title>
@@ -158,6 +158,12 @@
 			<title>How? Observe, Harmonize, Support</title>
 			<slide id="insights">
 				<title>Observe with Insights: API the APIs</title>
+				<img title="Food Labels" href="https://www.google.ch/search?q=food+labels&amp;tbm=isch" src="food-labels.png" style=" float: right ; width : 35% ; margin : 3% ; "/>
+				<ul>
+					<li>Make <em>introspection</em> part of the API landscape</li>
+					<li>Combine decentralization with the ability for gaining insights</li>
+					<li></li>
+				</ul>
 			</slide>
 			<slide id="interfaces">
 				<title>Harmonize with Interfaces: Provide Clear Guidance</title>
