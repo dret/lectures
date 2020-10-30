@@ -27,10 +27,15 @@
 	<title><a href="https://www.devafterwork.ro/events">Dev&lt;AfterWork/&gt;</a>, <a href="https://www.devafterwork.ro/events/23-tech-a-way-axway">Tech a way | Axway</a></title>
 	<presentation id="index">
 		<title>Good API Design: <br/>Focus on Consumers and Evolution</title>
+		<toc class="abstract">APIs allow an organization to improve the way it is interfacing with partners and the public, and to improve the way how it is creating and evolving value chains internally. Good API design helps to realize the full potential of an API-oriented approach. One important aspect of API design is to focus on consumers: API only create value when they are being used, and focusing on consumer needs helps to design better APIs. Another important aspect is to focus on API evolution: Consumer needs change, and so should APIs, but how can APIs be changed without disrupting existing consumers? This presentation looks at principles and practices that help with consumer orientation and API evolution.</toc>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 		<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://www.axway.com/catalysts">Catalysts</a></affiliation>
 		<date short="2020-11-19">November 19, 2020</date>
 		<copyright>2020 Erik Wilde</copyright>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 		<part id="intro">
 			<title>Introduction</title>
 			<slide id="dret">
