@@ -3676,7 +3676,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 				<ul>
 					<li>JSON is the <q>data structure part</q> of JavaScript</li>
 					<ul>
-						<li>Perfect match for client code consuming JSON data</li>
+						<li>Perfect match for JavaScript code consuming JSON data</li>
 						<li>Very good match for many other languages with structured data types</li>
 					</ul>
 					<li>JSON is good for <em>data-on-the-wire</em> and not so much for complex models</li>
