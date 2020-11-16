@@ -26,7 +26,7 @@
 	</license>
 	<title><a href="https://www.ietf.org/how/meetings/">IETF</a> <a href="https://www.ietf.org/how/meetings/109/">109</a></title>
 	<presentation id="index">
-		<title>HTTP Building Blocks: <br/>API Deprecation; Linksets; Content Warnings</title>
+		<title>HTTP Building Blocks: <br/>API Deprecation; Linkset; Content Warning</title>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 		<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://www.axway.com/catalysts">Catalysts</a></affiliation>
 		<date short="2020-11-20">November 20, 2020</date>
@@ -35,6 +35,18 @@
 			<title>API Deprecation</title>
 			<slide id="deprecation-motivation">
 				<title>API Deprecation: Motivation</title>
+			</slide>
+		</part>
+		<part id="linkset">
+			<title>Linkset</title>
+			<slide id="linkset-motivation">
+				<title>Linkset: Motivation</title>
+			</slide>
+		</part>
+		<part id="content-warning">
+			<title>Content Warning</title>
+			<slide id="content-warning-motivation">
+				<title>Content Warning: Motivation</title>
 			</slide>
 		</part>
 		<part id="summary">
