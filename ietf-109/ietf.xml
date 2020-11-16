@@ -34,7 +34,15 @@
 		<part id="deprecation">
 			<title>API Deprecation</title>
 			<slide id="deprecation-motivation">
-				<title>API Deprecation: Motivation</title>
+				<title>Deprecation: Motivation</title>
+			</slide>
+			<slide id="deprecation-history">
+				<title>Deprecation: History</title>
+				<img src="deprecation-history.png" style="float: left ; width : 90% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>First version: February 2019</li>
+					<li>Published versions: 4</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="linkset">
@@ -42,11 +50,27 @@
 			<slide id="linkset-motivation">
 				<title>Linkset: Motivation</title>
 			</slide>
+			<slide id="linkset-history">
+				<title>Linkset: History</title>
+				<img src="linkset-history.png" style="float: left ; width : 90% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>First version: December 2016</li>
+					<li>Published versions: 11</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="content-warning">
 			<title>Content Warning</title>
 			<slide id="content-warning-motivation">
-				<title>Content Warning: Motivation</title>
+				<title>Warning: Motivation</title>
+			</slide>
+			<slide id="warning-history">
+				<title>Warning: History</title>
+				<img src="warning-history.png" style="float: left ; width : 90% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>First version: November 2019</li>
+					<li>Published versions: 3</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="summary">
