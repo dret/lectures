@@ -219,6 +219,26 @@
 		</part>
 		<part id="summary">
 			<title>Summary</title>
+			<slide id="overview">
+				<title>Overview</title>
+				<ul>
+					<li><link href="deprecation"/>: <code href="https://datatracker.ietf.org/doc/draft-dalal-deprecation-header">draft-dalal-deprecation-header</code></li>
+					<ul>
+						<li>Repo: <code href="https://github.com/sdatspun2/deprecation-header">github.com/sdatspun2/deprecation-header</code></li>
+						<li>Issues: <code href="https://github.com/sdatspun2/deprecation-header/issues">github.com/sdatspun2/deprecation-header/issues</code></li>
+					</ul>
+					<li><link href="linkset"/>: <code href="https://datatracker.ietf.org/doc/draft-wilde-linkset">draft-wilde-linkset</code></li>
+					<ul>
+						<li>Repo: <code href="https://github.com/dret/I-D/tree/master/linkset">github.com/dret/I-D/tree/master/linkset</code></li>
+						<li>Issues: <code href="https://github.com/dret/I-D/labels/linkset">github.com/dret/I-D/labels/linkset</code></li>
+					</ul>
+					<li><link href="content-warning"/>: <code href="https://datatracker.ietf.org/doc/draft-cedik-http-warning">draft-cedik-http-warning</code></li>
+					<ul>
+						<li>Repo: <code href="https://github.com/dret/I-D/tree/master/http-warning">github.com/dret/I-D/tree/master/http-warning</code></li>
+						<li>Issues: <code href="https://github.com/dret/I-D/labels/http-warning">github.com/dret/I-D/labels/http-warning</code></li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
