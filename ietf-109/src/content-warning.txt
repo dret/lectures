@@ -1,0 +1,32 @@
+POST /example HTTP/1.1
+Host: example.com
+Accept: application/json
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Warning: "embedded-warning"; 1590190500
+
+{
+  "request_id": "2326b087-d64e-43bd-a557-42171155084f",
+  "warnings": [
+    {
+      "detail": "Street name was too long. It has been shortened ...",
+      "instance": "https://example.com/shipments/3a186c51/msgs/c94d",
+      "status": "200",
+      "title": "Street name too long. It has been shortened.",
+      "type": "https://example.com/errors/shortened_entry"
+    },
+    {
+      "detail": "City for this zipcode unknown. Code for shipment ...",
+      "instance": "https://example.com/shipments/3a186c51/msgs/5927",
+      "status": "200",
+      "title": "City for zipcode unknown.",
+      "type": "https://example.com/errors/city_unknown"
+    }
+  ],
+  "id": "3a186c51d4281acb",
+  "carrier_tracking_no": "84168117830018",
+  "tracking_url": "http://example.com/3a186c51d",
+  "label_url": "http://example.com/shipping_label_3a186c51d.pdf",
+  "price": 3.4
+}
