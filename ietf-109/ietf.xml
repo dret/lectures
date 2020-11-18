@@ -102,6 +102,23 @@
 					<li>Define media types that allow sets of links to become standalone resources</li>
 				</ul>
 			</slide>
+			<slide id="linkset-model">
+				<title>Linkset Model</title>
+				<ul>
+					<li><q><a href="https://tools.ietf.org/html/rfc8288">Web Linking</a></q> defines a model and a serialization for <em>web links</em></li>
+					<li><code>application/linkset</code> is registered as a media type for RFC 8288 syntax</li>
+					<li><code>application/linkset+json</code> is defined and registered as a JSON syntax for web links</li>
+					<ul>
+						<li>The JSON design makes it easy to apply JSON-LD context definitions</li>
+					</ul>
+					<li>Linksets as standalone resources require careful handling of the context</li>
+					<ul>
+						<li>Context is implicit for RFC 8288 scenarios</li>
+						<li>Context must be captured for <q>linksets as resources</q> scenarios</li>
+					</ul>
+					<li>Resources can link to links pertaining to them using the <code>linkset</code> link relation</li>
+				</ul>
+			</slide>
 			<slide id="linkset-history">
 				<title>Linkset: History</title>
 				<img src="linkset-history.png" href="https://datatracker.ietf.org/doc/draft-wilde-linkset/" style="float: left ; width : 90% ; margin : 0% 4% 4% 4% ; "/>
