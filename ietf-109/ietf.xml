@@ -50,6 +50,27 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="deprecation-model">
+				<title>Deprecation Model</title>
+				<ul>
+					<li>A <em>deprecated API</em> is still operational but should be treated with caution</li>
+					<li>Deprecation is signaled with a simple HTTP header field</li>
+					<ul>
+						<li>
+							<code>Deprecation: Sun, 11 Nov 2018 23:59:59 GMT</code>
+						</li>
+					</ul>
+					<li>Deprecation scoping is up for the API to decide</li>
+					<ul>
+						<li>Header field can show up everywhere or just on specific resources</li>
+						<li>Deprecation can affect the entire API or specific aspects of it</li>
+					</ul>
+					<li>Additional information can be made available via <code>deprecation</code> links</li>
+					<ul>
+						<li>There is not defined format for this resource (it's probably developer documentation)</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="deprecation-history">
 				<title>Deprecation: History</title>
 				<img src="deprecation-history.png" href="https://datatracker.ietf.org/doc/draft-dalal-deprecation-header/" style="float: left ; width : 90% ; margin : 0% 4% 4% 4% ; "/>
