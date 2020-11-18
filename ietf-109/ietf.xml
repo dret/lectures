@@ -156,10 +156,28 @@
 					<li><q><a href="https://tools.ietf.org/html/rfc7807">Problem Details for HTTP APIs</a></q> only cover error scenarios</li>
 					<li>Provide a pattern how warnings can be communicated in HTTP APIs</li>
 					<li>Provide a JSON structure that APIs can use to represent embedded warnings</li>
+					<li>Additional resources:</li>
+					<ul>
+						<li>ASC 2020 presentation on YouTube: <q><a href="https://www.youtube.com/watch?v=fdELvQt_Yvw">Communicating Warning Information in HTTP APIs</a></q></li>
+					</ul>
 				</ul>
-				<li>Additional resources: </li>
+			</slide>
+			<slide id="warning-model">
+				<title>Content Warning Model</title>
 				<ul>
-					<li>ASC 2020 presentation on YouTube: <q><a href="https://www.youtube.com/watch?v=fdELvQt_Yvw">Communicating Warning Information in HTTP APIs</a></q></li>
+					<li>Content warning are safe to ignore but may be relevant for users</li>
+					<li>APIs can signal that the content contains warning information</li>
+					<ul>
+						<li><code>Content-Warning: "embedded-warning"; 1590190500</code></li>
+					</ul>
+					<li>There is reusable JSON structure (resembling the structure of <a href="https://tools.ietf.org/html/rfc7807">RFC 7807</a>)</li>
+					<ul>
+						<li>Clients may choose to reuse this structure but are free to do something else</li>
+					</ul>
+					<li>An IANA registry is established for being able to register other kinds of content warnings</li>
+					<ul>
+						<li>The only initial entry is the <code>embedded-warning</code> content warning type</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="warning-history">
