@@ -131,6 +131,10 @@
 					<li>Resources can link to links pertaining to them using the <code>linkset</code> link relation</li>
 				</ul>
 			</slide>
+			<slide id="linkset-example">
+				<title>Linkset Example</title>
+				<listing src="linkset.json"></listing>
+			</slide>
 			<slide id="linkset-history">
 				<title>Linkset: History</title>
 				<img src="linkset-history.png" href="https://datatracker.ietf.org/doc/draft-wilde-linkset/" style="float: left ; width : 90% ; margin : 0% 4% 4% 4% ; "/>
