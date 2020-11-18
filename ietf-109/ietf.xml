@@ -35,8 +35,20 @@
 			<title>API Deprecation</title>
 			<slide id="deprecation-motivation">
 				<title>Deprecation: Motivation</title>
-				<h2>ID: <code href="https://datatracker.ietf.org/doc/draft-dalal-deprecation-header">draft-dalal-deprecation-header</code></h2>
+				<h2>I-D: <code href="https://datatracker.ietf.org/doc/draft-dalal-deprecation-header">draft-dalal-deprecation-header</code></h2>
 				<h3>Co-author: Sanjay Dalal</h3>
+				<ul>
+					<li><q><a href="https://tools.ietf.org/html/rfc8594">The Sunset Header Field</a></q> is useful but has limited semantics</li>
+					<li>API consumers should be able to find out about upcoming or existing deprecation</li>
+					<ul>
+						<li><q>Deprecation</q> refers to an API being still functional, but not recommended to use anymore</li>
+					</ul>
+					<li>Additional resources: </li>
+					<ul>
+						<li>Blog article: <q><a href="https://apifriends.com/api-management/api-lifecycle-management-deprecation-and-sunsetting/">API Lifecycle Management: Deprecation and Sunsetting</a></q></li>
+						<li>YouTube video: <q><a href="https://www.youtube.com/watch?v=twfufQn1mD0">API Lifecycle Management: Deprecation and Sunsetting</a></q></li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="deprecation-history">
 				<title>Deprecation: History</title>
@@ -51,8 +63,17 @@
 			<title>Linkset</title>
 			<slide id="linkset-motivation">
 				<title>Linkset: Motivation</title>
-				<h2>ID: <code href="https://datatracker.ietf.org/doc/draft-wilde-linkset">draft-wilde-linkset</code></h2>
+				<h2>I-D: <code href="https://datatracker.ietf.org/doc/draft-wilde-linkset">draft-wilde-linkset</code></h2>
 				<h3>Co-author: Herbert Van de Sompel</h3>
+				<ul>
+					<li><q><a href="https://tools.ietf.org/html/rfc8288">Web Linking</a></q> only defines an HTTP header field but no media types</li>
+					<li>Various scenarios call for solutions where links are treated as resources</li>
+					<ul>
+						<li>Large sets of links can be hard to embed in HTTP header fields</li>
+						<li>Some scenarios call for links being supplied by a third party</li>
+					</ul>
+					<li>Define media types that allow sets of links to become standalone resources</li>
+				</ul>
 			</slide>
 			<slide id="linkset-history">
 				<title>Linkset: History</title>
@@ -67,8 +88,17 @@
 			<title>Content Warning</title>
 			<slide id="content-warning-motivation">
 				<title>Warning: Motivation</title>
-				<h2>ID: <code href="https://datatracker.ietf.org/doc/draft-cedik-http-warning">draft-cedik-http-warning</code></h2>
+				<h2>I-D: <code href="https://datatracker.ietf.org/doc/draft-cedik-http-warning">draft-cedik-http-warning</code></h2>
 				<h3>Co-author: André Cedik</h3>
+				<ul>
+					<li><q><a href="https://tools.ietf.org/html/rfc7807">Problem Details for HTTP APIs</a></q> only cover error scenarios</li>
+					<li>Provide a pattern how warnings can be communicated in HTTP APIs</li>
+					<li>Provide a JSON structure that APIs can use to represent embedded warnings</li>
+				</ul>
+				<li>Additional resources: </li>
+				<ul>
+					<li>ASC 2020 presentation on YouTube: <q><a href="https://www.youtube.com/watch?v=fdELvQt_Yvw">Communicating Warning Information in HTTP APIs</a></q></li>
+				</ul>
 			</slide>
 			<slide id="warning-history">
 				<title>Warning: History</title>
