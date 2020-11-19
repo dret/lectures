@@ -71,12 +71,16 @@
 		</part>
 		<part id="what">
 			<title>What is an API?</title>
+			<slide id="api-language">
+				<title><a href="https://www.youtube.com/watch?v=wDYeU2T4v2o">APIs are Languages</a></title>
+				<img href="https://www.youtube.com/watch?v=wDYeU2T4v2o" src="weather-api-scaling.png" class="fullsize"/>
+			</slide>
 			<slide id="api-internal-external">
-				<title>Internal and External API Usage</title>
-				<img title="Internal and External API Usage" src="api-internal-external.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<title>Languages for Internal and External Collaboration</title>
+				<img title="Internal and External API Usage" src="api-internal-external.png" class="fullsize"/>
 			</slide>
 			<slide id="external">
-				<title>#1: APIs as External Interfaces</title>
+				<title>#1: APIs as External Language</title>
 				<ul>
 					<li>Direct API monetization</li>
 					<li>API foundation for user journeys (omni-channel)</li>
@@ -84,7 +88,7 @@
 				</ul>
 			</slide>
 			<slide id="internal">
-				<title>#2: APIs as Internal Componentization</title>
+				<title>#2: APIs as Internal Language</title>
 				<ul>
 					<li>Moving from integration to interconnection (IT modernization)</li>
 					<li>Decoupling products and their development cycles and speed</li>
@@ -96,23 +100,23 @@
 			<title>API Products for API Consumers</title>
 			<slide id="private-partner-public">
 				<title>Private/Partner/Public API Design Scope</title>
-				<img src="private-partner-public-design.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="private-partner-public-design.png" class="fullsize"/>
 			</slide>
 			<slide id="product-consumers-domain">
 				<title>Domain Knowledge</title>
-				<img src="private-partner-public-design-domain.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="private-partner-public-design-domain.png" class="fullsize"/>
 			</slide>
 			<slide id="product-consumers-relationship">
 				<title>Producer/Consumer Relationship</title>
-				<img src="private-partner-public-design-relationship.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="private-partner-public-design-relationship.png" class="fullsize"/>
 			</slide>
 			<slide id="product-consumers-security">
 				<title>Threat/Security Model</title>
-				<img src="private-partner-public-design-security.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="private-partner-public-design-security.png" class="fullsize"/>
 			</slide>
 			<slide id="product-consumers-landscape">
 				<title>Landscape Coherence</title>
-				<img src="private-partner-public-design-landscape.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="private-partner-public-design-landscape.png" class="fullsize"/>
 			</slide>
 		</part>
 		<part id="evolution">
