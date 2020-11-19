@@ -71,6 +71,26 @@
 		</part>
 		<part id="what">
 			<title>What is an API?</title>
+			<slide id="api-internal-external">
+				<title>Internal and External API Usage</title>
+				<img title="Internal and External API Usage" src="api-internal-external.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="external">
+				<title>#1: APIs as External Interfaces</title>
+				<ul>
+					<li>Direct API monetization</li>
+					<li>API foundation for user journeys (omni-channel)</li>
+					<li>Value chain optimization (outsourced APIs)</li>
+				</ul>
+			</slide>
+			<slide id="internal">
+				<title>#2: APIs as Internal Componentization</title>
+				<ul>
+					<li>Moving from integration to interconnection (IT modernization)</li>
+					<li>Decoupling products and their development cycles and speed</li>
+					<li>Improving capability reuse across the whole organization</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="consumers">
 			<title>API Products for API Consumers</title>
