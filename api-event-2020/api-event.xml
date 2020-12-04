@@ -86,10 +86,198 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="linear-platform">
+			<title>From Linear to Platforms</title>
+			<slide id="change">
+				<title>Change is the new Normal</title>
+				<img src="corona-virus.png" style="float: right ; width : 25% ; margin : 2% ; "/>
+				<ul>
+					<li>Organizations realize that they need to become better at changing</li>
+					<li>Start with analyzing current opportunities and risks</li>
+					<ul>
+						<li><link href="short-game">Grow</link> the ability to use existing assets and create new experiences</li>
+						<li><link href="long-game">Evolve</link> the business to more easily embrace new models</li>
+					</ul>
+					<li>Showing a coherent path to become better and faster at changing</li>
+					<ul>
+						<li><link href="short-game">The short game</link> helps with improving revenue and reducing risk</li>
+						<li><link href="long-game">The long game</link> helps with supporting innovation</li>
+					</ul>
+					<li>Creating results by aligning IT and business</li>
+					<ul>
+						<li>There is no magical piece of technology to <q>transform the organization</q></li>
+						<li>There are known patterns how to grow and evolve your organization</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="linear">
+				<title>Linear Business</title>
+				<img src="platform-perspectives-linear.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="definition">
+				<title>Platform: <a title='Alex Moazed and Nicholas L. Johnson, "Modern Monopolies: What It Takes to Dominate the 21st Century Economy", St. Martin&apos;s Press, 2016' href="https://www.modernmonopolies.com/">A Definition</a></title>
+				<ul>
+					<li>What a platform is:</li>
+					<ul>
+						<li>Generating value by <em>facilitating exchanges/interactions</em> between groups</li>
+						<li>Creating networks of users and resources that can be <em>accessed on-demand</em></li>
+						<li>Using the <em>network effect</em> to grow communities and markets</li>
+						<li>Creating value by <em>reducing transaction costs</em> and/or by <em>externalizing innovation</em></li>
+					</ul>
+					<li>What a platform is not:</li>
+					<ul>
+						<li>It is <em>not just technology</em>, it is the business model enabled by technology</li>
+						<li>It is <em>not a linear business model</em> with unidirectional value chains</li>
+						<li>It is not (completely) <em>owning the means of production</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="platform-money-press">
+				<title>The Platform Money Press</title>
+				<img src="money-press.gif" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="platform-recipe">
+				<title>Tech &amp; Biz = Platform</title>
+				<ul>
+					<li>Platforms are what enable organization to create and deliver value</li>
+					<li>Technology can be both limiting and enabling</li>
+					<ul>
+						<li><em>Limiting</em> when creation/delivery seems to be too slow/costly</li>
+						<li><em>Enabling</em> when digitalization opens new opportunities</li>
+					</ul>
+					<li>Business can be both limiting and enabling</li>
+					<ul>
+						<li><em>Limiting</em> when business demands are not aligned with technology</li>
+						<li><em>Enabling</em> when technology is used to create/deliver value faster</li>
+					</ul>
+					<li>Any platform must make sure to align technology and business</li>
+				</ul>
+			</slide>
+			<slide id="platform-pic">
+				<title>Platforming: Building Products with a Plan</title>
+				<img src="platform-perspectives-definition.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="starting-point">
+			<title>Your Starting Point</title>
+			<slide id="current-platform">
+				<title>Your Current Platform</title>
+				<ul>
+					<li><em>Why</em> things are being built</li>
+					<ul>
+						<li><em>Consumer focus</em> and improving their experience</li>
+						<li><em>Innovation focus</em> and the ability to design/build/test/fail effectively</li>
+					</ul>
+					<li><em>What</em> you are building on</li>
+					<ul>
+						<li><em>Foundational resources</em> that serve as basic building blocks</li>
+						<li><em>Existing capabilities</em> that can be reused in new value chains</li>
+					</ul>
+					<li><em>How</em> building things is working</li>
+					<ul>
+						<li><em>Design and build</em> support (getting from idea to implementation)</li>
+						<li><em>Deployment and runtime</em> support (getting from implementation to operation)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="paralysis">
+				<title>Platform Paralysis</title>
+				<ul>
+					<li>Tech and Biz sometimes talk about platforms with a different focus</li>
+					<ul>
+						<li>The <em>Tech</em> view is focused on a technical set of capabilities</li>
+						<li>The <em>Biz</em> view is focused on creating value by co-creation</li>
+					</ul>
+					<li>Platform success critically depends on aligning both views</li>
+					<ul>
+						<li><em>Tech</em> has to extend the focus to supporting value creation</li>
+						<li><em>Biz</em> has to focus on grounding co-creation on the platform</li>
+					</ul>
+					<li>Define and align the goals and elements of the platform for all parties</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="short-game">
+			<title>Short Game: Grow the Platform</title>
+			<slide id="foundation">
+				<title>Growing the Foundation</title>
+				<ul>
+					<li><em href="https://www.apiscene.io/api-business-models/api-first-the-essence-of-digital-transformation/">API First</em> means to embrace APIs as the organization's business language</li>
+					<li><em>API First</em> means making all assets/services available as APIs</li>
+					<ol>
+						<li>Expose existing/new <em>assets and capabilities</em> to the platform</li>
+						<li>Add existing/new <em>experiences</em> to the platform</li>
+					</ol>
+					<li><em>API First</em> builds on the <em href="https://en.wikipedia.org/wiki/Network_effect">network effect</em> of organizational capabilities</li>
+					<ol start="3">
+						<li>Adding APIs as a way to support value co-creation</li>
+					</ol>
+				</ul>
+			</slide>
+			<slide id="platform-pic-grow">
+				<title>Unlock Existing Value: Open Everything</title>
+				<img src="platform-perspectives-grow.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="long-game">
+			<title>Long Game: Evolve the Platform</title>
+			<slide id="mindset">
+				<title>The Platform Mindset</title>
+				<ul>
+					<li>Platform business models thrive on growing and evolving</li>
+					<ul>
+						<li><em>Growth</em> is enabled by allowing more transactions to happen</li>
+						<li><em>Evolution</em> is happening by investing in areas that drive growth</li>
+					</ul>
+					<li>Many organizations are looking at <em>hybrid platform models</em></li>
+					<ul>
+						<li>Part of the value is traditional linear business (value created internally)</li>
+						<li>Part of the value is platform business (value co-created with others)</li>
+						<li>The platform part can be differentiating and harder to replicate</li>
+						<li>Cultivating a platform mindset can increase revenue and decrease risk</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="platform-evolve">
+				<title>Platform Evolution</title>
+				<ol>
+					<li>Establish new ways of value co-creation</li>
+					<li>Establish new ways of delivering experiences to consumers</li>
+					<li>Adapt new ways how value is created and exposed internally</li>
+				</ol>
+			</slide>
+			<slide id="platform-pic-evolve">
+				<title>Evolve Value Creation: Own Your Platform</title>
+				<img src="platform-perspectives-evolve.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="rule-of-two">
+				<title>The Rule of Two</title>
+				<ul>
+					<li>Don't platform yourself into one corner</li>
+					<li>Be open to evolve the platform when necessary</li>
+					<ul>
+						<li>Accommodate new <em href="https://www.youtube.com/watch?v=bWFXGHXo_pY">API Styles</em></li>
+						<li>Support new <em>API design tools</em></li>
+						<li>Add APIs using different management infrastructure</li>
+						<li>Add new ways of low-code/no-code orchestration tooling</li>
+					</ul>
+					<li>For each good practice think about what it means to change it</li>
+					<ul>
+						<li>It's good to have support for (current) good practices</li>
+						<li>It's at least as good to be able to switch to a different good practice</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
-			<slide id="takeaway">
-				<title><q>Der Weg ist das Ziel</q></title>
+			<slide id="platform-conclusions">
+				<title>Platforming Done Right</title>
+				<ul>
+					<li>Becoming more platform-y makes sense for every organization</li>
+					<li><em>Open everything</em> for the short game of growing the platform</li>
+					<li>Have an <em>Open platform</em> for the long game of evolving the platform</li>
+				</ul>
 			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
