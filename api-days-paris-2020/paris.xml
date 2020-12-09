@@ -70,6 +70,24 @@
 		</part>
 		<part id="proto">
 			<title>Proto-APIs</title>
+			<slide id="apis-are-old">
+				<title>APIs have been around forever…</title>
+				<ul>
+					<li>What's old about APIs?</li>
+					<ul>
+						<li>They have connected software components for decades</li>
+						<li>They used to be called <em>protocols</em> when APIs were just local</li>
+						<li>They (i.e., protocols) were used in decentralized architectures</li>
+					</ul>
+					<li>What's new about APIs?</li>
+					<ul>
+						<li>They remove the necessity to have centralized <q>integration infrastructure</q></li>
+						<li>They're designed to be used by more than one consumer</li>
+						<li>Their main value is in aligning business agility with IT architecture</li>
+					</ul>
+					<li>How to (a) identify potential and (b) unlock it by using APIs?</li>
+				</ul>
+			</slide>
 			<slide id="file-transfer">
 				<title>File Transfer</title>
 			</slide>
