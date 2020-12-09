@@ -136,24 +136,13 @@
 					<li><em>Integration</em> creates tight coupling and makes it hard to change components</li>
 				</ul>
 			</slide>
-		</part>
-		<part id="accidental">
-			<title>Accidental APIs</title>
-			<slide id="apis-happen">
-				<title>APIs Happen</title>
-				<ul>
-					<li>APIs often are part of specific IT technologies</li>
-					<ul>
-						<li>They may be part of cloud-based solutions</li>
-						<li>They may be part of specific solutions such as <span title="Customer Relationship Management">CRM</span></li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="integration-calcification">
-				<title>Integration Calcification</title>
-			</slide>
-			<slide id="api-candidates">
-				<title>API Candidates</title>
+			<slide id="proto-api-lesson">
+				<title>Proto-API Lessons</title>
+				<ol>
+					<li>Connecting two applications was deemed valuable enough to invest</li>
+					<li>Is there a history of the connection holding up changes?</li>
+					<li>What could happen if the Proto-API turned into a proper API?</li>
+				</ol>
 			</slide>
 		</part>
 		<part id="economy">
@@ -169,10 +158,22 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="accelerate">
-			<title>Accelerating the API Journey</title>
-			<slide id="value-small-change">
+		<part id="journey">
+			<title>API Journey</title>
+			<slide id="start-small">
 				<title>Focus on Value, Start Small, Design for Change</title>
+				<ul>
+					<li>Identify a <q>Coalition of the Willing</q></li>
+				</ul>
+			</slide>
+			<slide id="four-r">
+				<title>Release, Realize, Respond, Repeat</title>
+				<ul>
+					<li><em>Release</em></li>
+					<li><em>Realize</em></li>
+					<li><em>Respond</em></li>
+					<li><em>Repeat</em></li>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
