@@ -145,22 +145,6 @@
 				</ol>
 			</slide>
 		</part>
-		<part id="archaeology">
-			<title>APIs Expose Value</title>
-			<slide id="definition">
-				<title>API Archaeology: Definition</title>
-				<blockquote>API Archaeology: Archaeology is the practice of unearthing artifacts and understanding them in the context of their origins in time and location. The same concept can be applied to APIs: API archaeology is the practice of finding integrations, understanding why and how they were created, and documenting them as a way to better understand the history and structure of complex IT systems. Practicing API archaeology in organizations can be extremely valuable in terms of finding out about existing ways in which IT components interact (in some way or form).</blockquote>
-			</slide>
-			<slide id="process">
-				<title>API Archaeology: Process</title>
-				<ul>
-					<li>Survey the landscape for existing artifacts</li>
-					<li>Understand why connections were created</li>
-					<li>Analyze the value of exposing proper APIs instead</li>
-					<li>Start the journey with the goal to iterate often</li>
-				</ul>
-			</slide>
-		</part>
 		<part id="journey">
 			<title>API Journey</title>
 			<slide id="small">
