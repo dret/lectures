@@ -145,47 +145,75 @@
 				</ol>
 			</slide>
 		</part>
-		<part id="api-value">
+		<part id="archaeology">
 			<title>APIs Expose Value</title>
-			<slide id="monetization">
-				<title>API Monetization</title>
+			<slide id="definition">
+				<title>API Archaeology: Definition</title>
+				<blockquote>API Archaeology: Archaeology is the practice of unearthing artifacts and understanding them in the context of their origins in time and location. The same concept can be applied to APIs: API archaeology is the practice of finding integrations, understanding why and how they were created, and documenting them as a way to better understand the history and structure of complex IT systems. Practicing API archaeology in organizations can be extremely valuable in terms of finding out about existing ways in which IT components interact (in some way or form).</blockquote>
+			</slide>
+			<slide id="process">
+				<title>API Archaeology: Process</title>
 				<ul>
-					<li>Direct monetization is the exception and not the rule</li>
-					<li><em>Public APIs</em> support platform business models</li>
-					<li><em>Partner APIs</em> are opening new value streams</li>
-					<li><em>Private APIs</em> enable more organizational agility</li>
-					<li>APIs are a strategic long-term investment and not a quick money machine</li>
+					<li>Survey the landscape for existing artifacts</li>
+					<li>Understand why connections were created</li>
+					<li>Analyze the value of exposing proper APIs instead</li>
+					<li>Start the journey with the goal to iterate often</li>
 				</ul>
 			</slide>
 		</part>
 		<part id="journey">
 			<title>API Journey</title>
-			<slide id="value">
-				<title>Focus on Value, Start Small, Design for Change</title>
+			<slide id="small">
+				<title>Start Small</title>
+				<img src="api-bones.png" title="Proto-API" style="float: right ; width : 25% ; margin : 5% ; "/>
 				<ul>
-					<li>Identify a <q>Coalition of the Willing</q></li>
+					<li>Identify <em>low-hanging fruit</em> for quick success and feedback</li>
+					<ul>
+						<li><em>API Archaeology</em> is a good way to find candidates</li>
+					</ul>
+					<li>Switch from <q>building systems</q> to <q>cultivating ecosystems</q></li>
+					<ul>
+						<li>Focus on constraints (what to do) over rules (how to do it)</li>
+						<li>Only govern when you must (autonomy) and not when you can (authority)</li>
+					</ul>
+					<li>Start building a culture and a community</li>
+					<ul>
+						<li><em>API Guidelines</em> should reflect the lived reality in an organization</li>
+					</ul>
 				</ul>
 			</slide>
-			<slide id="potential">
-				<title>Potential is defined by </title>
+			<slide id="change">
+				<title>Design for Change</title>
 				<ul>
-					<li>Identify a <q>Coalition of the Willing</q></li>
+					<li>Ecosystem architecture and system architecture are distinct disciplines</li>
+					<ul>
+						<li>APIs allow you to start building a landscape of API products</li>
+						<li>How to build API products is a different and distinct task</li>
+					</ul>
+					<li>The role of ecosystem architecture is to support development teams</li>
+					<ul>
+						<li>Constrain them as much as necessary but as little as possible</li>
+						<li>Cleanly separate constraints from how to implement them</li>
+						<li>Provide support for following constraints and testing for them</li>
+					</ul>
+					<li>Always ask yourself how much effort it is to change course</li>
+					<ul>
+						<li>Good ecosystem architecture scales over size and time and change frequency</li>
+					</ul>
 				</ul>
 			</slide>
-			<slide id="coalition">
-				<title>The <q>Coalition of the Willing</q></title>
+			<slide id="landscape">
+				<title>Cultivate the Landscape</title>
 				<ul>
-					<li></li>
+					<li>Be clear on your vision and strategy</li>
+					<li>Start with small and focused effort and teams</li>
+					<li>Build up competencies and ways to share them across teams</li>
+					<li>Shift from centralized systems to decentralized ecosystems</li>
 				</ul>
 			</slide>
-			<slide id="four-r">
-				<title>Release, Realize, Respond, Repeat</title>
-				<ul>
-					<li><em>Release</em> an API quickly to see how it fits and works</li>
-					<li><em>Realize</em> the API's value by making it discoverable</li>
-					<li><em>Respond</em> to feedback about how to improve the API or the landscape</li>
-					<li><em>Repeat</em> this process with a strategic focus on high-value candidates</li>
-				</ul>
+			<slide id="stalling">
+				<title>Scaling is not Easy</title>
+				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
 		<part id="conclusions">
