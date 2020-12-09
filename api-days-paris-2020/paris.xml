@@ -110,6 +110,20 @@
 			</slide>
 			<slide id="data-integration">
 				<title>Data Integration</title>
+				<ul>
+					<li>Putting machinery in place to help with <q>file transfer</q></li>
+					<ul>
+						<li><em>Extract, Transform, Load (ETL)</em> as an integration pattern with a central data exchange hub</li>
+					</ul>
+					<li>Typically targeted at underlying database systems</li>
+					<ul>
+						<li>Synchronizes data by <q>bypassing</q> the application logic on top of the database</li>
+					</ul>
+					<li>Having ETL in place makes it hard to change application logic</li>
+					<ul>
+						<li>ETL processes <q>duplicate</q> logic and making any changes in the logic is costly and risky</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="application-integration">
 				<title>Application Integration</title>
