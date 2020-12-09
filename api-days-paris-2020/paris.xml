@@ -127,6 +127,14 @@
 			</slide>
 			<slide id="application-integration">
 				<title>Application Integration</title>
+				<ul>
+					<li><em>Synchronous</em> ways how to connect applications</li>
+					<ul>
+						<li>Some form of <em>intermediary</em> that establishes and manages connectivity</li>
+						<li>Bespoke integrations where each interconnection is created individually</li>
+					</ul>
+					<li><em>Integration</em> creates tight coupling and makes it hard to change components</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="accidental">
