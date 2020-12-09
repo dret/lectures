@@ -176,7 +176,7 @@
 					</ul>
 					<li>The role of ecosystem architecture is to support development teams</li>
 					<ul>
-						<li>Constrain them as much as necessary but as little as possible</li>
+						<li>Constrain them <em>as much as necessary</em> but <em>as little as possible</em></li>
 						<li>Cleanly separate constraints from how to implement them</li>
 						<li>Provide support for following constraints and testing for them</li>
 					</ul>
