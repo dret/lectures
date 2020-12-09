@@ -90,6 +90,23 @@
 			</slide>
 			<slide id="file-transfer">
 				<title>File Transfer</title>
+				<ul>
+					<li>One of the first <q>integration</q> methods</li>
+					<ul>
+						<li>Based on a simple and widely shared abstraction (file systems and file formats)</li>
+						<li>Requires minimal alignment with while having obvious side-effects</li>
+					</ul>
+					<li>Still widely used and for many scenarios a good-enough solution</li>
+					<ul>
+						<li>Introduces long delays but still sufficient in many cases</li>
+						<li>Loose coupling in terms of infrastructure and runtime requirements</li>
+					</ul>
+					<li>Challenged by modern UX expectations and goals</li>
+					<ul>
+						<li>Impossible to build realtime-capable end-to-end digital experiences</li>
+						<li>Eventual consistency becomes the default operating model</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="data-integration">
 				<title>Data Integration</title>
