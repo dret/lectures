@@ -26,7 +26,7 @@
 	</license>
 	<title><a href="https://nordicapis.com/">Nordic APIs</a> LiveCast</title>
 	<presentation id="index">
-		<title>Monolith Modernization with APIs and Microservices</title>
+		<title>Monolith Modernization <br />with APIs and Microservices</title>
 		<toc class="abstract">Many organizations have large and monolithic business applications that can be hard to maintain and update. Given that the pressure to be able to adapt and change an organization is probably bigger today than it ever was, patterns and practices how to modernize these applications become strategically important. One such pattern is the "Strangler Pattern", which calls for strategically replacing dependencies and implementation bits of the monolith over time. A popular way of doing this is to move dependencies to APIs, and then to change the underlying implementation when it becomes necessary. Using this approach, parts of the monolith can still be used while other parts can be replaced, meaning that this approach avoid a risky "Big Bang". Instead, this approach favors a more incremental and tactical way of modernizing monolithic applications.</toc>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 		<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://www.axway.com/catalysts">Catalysts</a></affiliation>
