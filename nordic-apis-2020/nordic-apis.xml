@@ -111,6 +111,24 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="strategy">
+				<title>Modernization Strategy</title>
+				<ul>
+					<li>Do:</li>
+					<ul>
+						<li>Re-imagine all capabilities with an <em>API First</em> mindset</li>
+						<li>Carve out capabilities that <em>benefit from modernization</em></li>
+						<li>Implement standalone capabilities for minimizing coupling</li>
+						<li>Make sure that new capabilities can be deployed individually</li>
+					</ul>
+					<li>Don't:</li>
+					<ul>
+						<li>Expect the hard work of delineating domains to become any easier</li>
+						<li>Re-introduce coupling through indirect means (e.g., shared libraries or databases)</li>
+						<li>Spend energy on deployment and scaling models you may not need</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
