@@ -108,6 +108,65 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="strangler">
+				<title>Incremental Modernization</title>
+				<img title="Strangler Vine" href="https://commons.wikimedia.org/wiki/File:Strangler_tree.jpg" src="strangler-vine.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="strangling">
+			<title>Strangling in 13 Easy Steps</title>
+			<slide id="strangling-01">
+				<title>Strangling 1/13: Motivate</title>
+				<img src="strangler-pattern-01-motivate.png" class="fullsize"/>
+			</slide>
+			<slide id="strangling-02">
+				<title>Strangling 2/13: Identify</title>
+				<img src="strangler-pattern-02-identify.png" class="fullsize"/>
+			</slide>
+			<slide id="strangling-03">
+				<title>Strangling 3/13: Delineate</title>
+				<img src="strangler-pattern-03-delineate.png" class="fullsize"/>
+			</slide>
+			<slide id="strangling-04">
+				<title>Strangling 4/13: Analyze</title>
+				<img src="strangler-pattern-04-analyze.png" class="fullsize"/>
+			</slide>
+			<slide id="strangling-05">
+				<title>Strangling 5/13: Expose</title>
+				<img src="strangler-pattern-05-expose.png" class="fullsize"/>
+			</slide>
+			<slide id="strangling-06">
+				<title>Strangling 6/13: Manage</title>
+				<img src="strangler-pattern-06-manage.png" class="fullsize"/>
+			</slide>
+			<slide id="strangling-07">
+				<title>Strangling 7/13: Re-Implement</title>
+				<img src="strangler-pattern-07-reimplement.png" class="fullsize"/>
+			</slide>
+			<slide id="strangling-08">
+				<title>Strangling 8/13: Imitate</title>
+				<img src="strangler-pattern-08-imitate.png" class="fullsize"/>
+			</slide>
+			<slide id="strangling-09">
+				<title>Strangling 9/13: Replicate</title>
+				<img src="strangler-pattern-09-replicate.png" class="fullsize"/>
+			</slide>
+			<slide id="strangling-10">
+				<title>Strangling 10/13: Motivate</title>
+				<img src="strangler-pattern-10-migrate.png" class="fullsize"/>
+			</slide>
+			<slide id="strangling-11">
+				<title>Strangling 11/13: Deprecate</title>
+				<img src="strangler-pattern-11-deprecate.png" class="fullsize"/>
+			</slide>
+			<slide id="strangling-12">
+				<title>Strangling 12/13: Retire</title>
+				<img src="strangler-pattern-12-retire.png" class="fullsize"/>
+			</slide>
+			<slide id="strangling-13">
+				<title>Strangling 13/13: Repeat</title>
+				<img src="strangler-pattern-13-repeat.png" class="fullsize"/>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
