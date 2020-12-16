@@ -108,6 +108,15 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="drivers">
+				<title>Typical Modernization Drivers</title>
+				<ul>
+					<li>Increased focus on business agility</li>
+					<li>Designing for change and moving from systems to ecosystems</li>
+					<li>Increasing operational flexibility for complex deployments and loads</li>
+					<li>Compliance and regulatory requirements</li>
+				</ul>
+			</slide>
 			<slide id="strangler">
 				<title>Incremental Modernization</title>
 				<img title="Strangler Vine" href="https://commons.wikimedia.org/wiki/File:Strangler_tree.jpg" src="strangler-vine.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
@@ -175,8 +184,8 @@
 				<ul>
 					<li>Do:</li>
 					<ul>
-						<li>Re-imagine all capabilities with an <em>API First</em> mindset</li>
-						<li>Carve out capabilities that <em>benefit from modernization</em></li>
+						<li>Re-imagine relevant capabilities with an <em>API First</em> mindset</li>
+						<li>Focus on capabilities that <em>benefit from modernization</em></li>
 						<li>Implement standalone capabilities for minimizing coupling</li>
 						<li>Make sure that new capabilities can be deployed individually</li>
 					</ul>
