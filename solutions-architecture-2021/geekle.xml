@@ -77,6 +77,10 @@
 		</part>
 		<part id="context">
 			<title>Consider the Context</title>
+			<ul>
+				<li>Started by Facebook as a way to optimize chatty API traffic</li>
+				<li>Facebook's <em href="https://developers.facebook.com/docs/graph-api/">public <q>Graph API</q></em> does not use GraphQL</li>
+			</ul>
 		</part>
 		<part id="deciding">
 			<title>Deciding Between REST and GraphQL</title>
