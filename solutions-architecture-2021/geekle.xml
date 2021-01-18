@@ -71,6 +71,10 @@
 		</part>
 		<part id="rest-graphql">
 			<title>REST vs. GraphQL: A Question of Style</title>
+			<slide id="facebook-apps">
+				<title>Facebooks Apps and API</title>
+				<img src="facebook-app-api.png" class="fullsize"/>
+			</slide>
 			<slide id="style-video">
 				<title><a href="https://www.youtube.com/watch?v=bWFXGHXo_pY" title="The Five API Styles: Understanding REST, OpenAPI, HTTP, gRPC, GraphQL, and Kafka">Understanding API Styles</a></title>
 				<div style=" float : left ; width : 90% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
@@ -78,10 +82,6 @@
 						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/bWFXGHXo_pY" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 					</div>
 				</div>
-			</slide>
-			<slide id="facebook-apps">
-				<title>Facebooks Apps and API</title>
-				<img src="facebook-app-api.png" class="fullsize"/>
 			</slide>
 			<slide id="social-graph">
 				<title>Social Graphs are Large and Complex</title>
