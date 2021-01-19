@@ -124,6 +124,22 @@
 				<title>GraphQL: Query Style</title>
 				<img title="Query Style" src="api-styles-query.png" class="fullsize"/>
 			</slide>
+			<slide id="graphql">
+				<title>GraphQL: A New API Foundation</title>
+				<img  href="https://graphql.org/" src="graphql-logo.png" title="GraphQL Logo" style="float: right ; width : 16% ; margin : 3% ; "/>
+				<ul>
+					<li><em href="https://graphql.org/">GraphQL</em> as a query-oriented API language</li>
+					<ul>
+						<li>Typically served over HTTP like REST APIs</li>
+						<li>Based on interactions with a single API endpoint</li>
+					</ul>
+					<li>Define and expose a data model</li>
+					<ul>
+						<li>The API is defined by exposing a data model (and possibly additional operations)</li>
+						<li>Consumers query into the data model (or may use the additional operations)</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="context">
 			<title>Consider the Context</title>
