@@ -69,8 +69,59 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="rest-graphql">
+			<title>REST vs. GraphQL: A Question of Style</title>
+			<slide id="facebook-apps">
+				<title>Facebooks Apps and API</title>
+				<img src="facebook-app-api.png" class="fullsize"/>
+			</slide>
+			<slide id="style-video">
+				<title><a href="https://www.youtube.com/watch?v=bWFXGHXo_pY" title="The Five API Styles: Understanding REST, OpenAPI, HTTP, gRPC, GraphQL, and Kafka">Understanding API Styles</a></title>
+				<div style=" float : left ; width : 90% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/bWFXGHXo_pY" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+			<slide id="social-graph">
+				<title>Social Graphs are Large and Complex</title>
+				<img title='Social Graph' src="social-graph.png" class="fullsize"/>
+			</slide>
+			<slide id="resource-style">
+				<title>REST: Resource Style</title>
+				<img title="Resource Style" src="api-styles-resource.png" class="fullsize"/>
+			</slide>
+			<slide id="query-style">
+				<title>GraphQL: Query Style</title>
+				<img title="Query Style" src="api-styles-query.png" class="fullsize"/>
+			</slide>
+			<slide id="origin">
+				<title>API for Facebook Apps</title>
+			</slide>
+		</part>
+		<part id="context">
+			<title>Consider the Context</title>
+			<ul>
+				<li>Started by Facebook as a way to optimize chatty API traffic</li>
+				<li>Facebook's <em href="https://developers.facebook.com/docs/graph-api/">public <q>Graph API</q></em> does not use GraphQL</li>
+			</ul>
+		</part>
+		<part id="deciding">
+			<title>Deciding Between REST and GraphQL</title>
+			<slide id="focus">
+				<title>Data or Workflows?</title>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="product-video">
+				<title>Remember: <a href="https://www.youtube.com/watch?v=VNwAYyfQ8Bw" title="What is an API? APIs and Products">It's all about the Beer</a></title>
+				<div style=" float : left ; width : 90% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/VNwAYyfQ8Bw" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
