@@ -104,12 +104,25 @@
 				<title>REST: Resource Style</title>
 				<img title="Resource Style" src="api-styles-resource.png" class="fullsize"/>
 			</slide>
+			<slide id="origin">
+				<title>API for Facebook Apps</title>
+				<ul>
+					<li>Facebook apps did not work well with the existing API</li>
+					<ul>
+						<li><em>Chatty</em> because UX is based on fetching many resources</li>
+						<li><em>Overfetching</em> because resources are represented in a default way</li>
+					</ul>
+					<li>Different ways to address the observed problems</li>
+					<ol>
+						<li>Make REST resources more flexible to <em>allow filtering and/or embedding</em></li>
+						<li>Start using the <em>backends-for-frontends</em> pattern for different apps</li>
+						<li>Create a flexible model that supports <em>queries into the social graph</em></li>
+					</ol>
+				</ul>
+			</slide>
 			<slide id="query-style">
 				<title>GraphQL: Query Style</title>
 				<img title="Query Style" src="api-styles-query.png" class="fullsize"/>
-			</slide>
-			<slide id="origin">
-				<title>API for Facebook Apps</title>
 			</slide>
 		</part>
 		<part id="context">
