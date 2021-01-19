@@ -83,6 +83,19 @@
 					</div>
 				</div>
 			</slide>
+			<slide id="apis">
+				<title>APIs as Enabling/Limiting Factor</title>
+				<ul>
+					<li>APIs expose the value of services</li>
+					<li>APIs define an interaction model with services</li>
+					<li>APIs can be a limiting factor</li>
+					<ul>
+						<li><em>Developer Experience (DX)</em> can be bad if the API isn't easy to consume</li>
+						<li><em>User Experience (UX)</em> can be impacted if consumption has a mismatch with API design</li>
+					</ul>
+					<li>Defining a <em>good API</em> matters and there is no silver bullet</li>
+				</ul>
+			</slide>
 			<slide id="social-graph">
 				<title>Social Graphs are Large and Complex</title>
 				<img title='Social Graph' src="social-graph.png" class="fullsize"/>
