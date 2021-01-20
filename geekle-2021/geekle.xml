@@ -71,6 +71,24 @@
 		</part>
 		<part id="rest-graphql">
 			<title>REST vs. GraphQL: A Question of Style</title>
+			<slide id="api-crash-course">
+				<title>APIs Crash Course</title>
+				<ul>
+					<li>APIs are the connective fabric of modern IT</li>
+					<li><em>API First</em> is the radical notion to only interact through APIs</li>
+					<ul>
+						<li>Every capability has an API that is its only accessible interface</li>
+						<li>The only <em>technical interconnection</em> is through exposing/consuming APIs</li>
+						<li>APIs <em>aligned with business</em> then also become <em>organizational interconnections</em></li>
+					</ul>
+					<li><em>Microservices</em> take APIs to the next level</li>
+					<ul>
+						<li>API <em>implementations</em> need to be self-contained and individually deployable</li>
+						<li>Microservices allow flexible changes, deployment and scaling</li>
+					</ul>
+					<li><em>Getting APIs right</em> becomes an essential part of architecture</li>
+				</ul>
+			</slide>
 			<slide id="facebook-apps">
 				<title>Facebooks Apps and API</title>
 				<img src="facebook-app-api.png" class="fullsize"/>
