@@ -175,6 +175,12 @@
 			<title>Deciding Between REST and GraphQL</title>
 			<slide id="landscape">
 				<title>Your API Landscape</title>
+				<ul>
+					<li>Complex and evolving API landscapes are challenging to centralize</li>
+					<li>Varying API scenarios may best be served by various API patterns</li>
+					<li>Enterprise architecture is moving away from <em>integration</em> to <em>interconnection</em></li>
+					<li>Consider the long-term cost and not just the initial effort</li>
+				</ul>
 			</slide>
 			<slide id="data-services">
 				<title>Data or Workflows?</title>
