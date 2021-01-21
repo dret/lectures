@@ -206,6 +206,15 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="silver-bullet">
+				<title>There is no Silver Bullet</title>
+				<ul>
+					<li>Choose carefully because breaking API changes should be avoided</li>
+					<li>GraphQL currently is mostly used in tightly coupled scenarios (private APIs)</li>
+					<li>REST is used for the majority of APIs for partner/public consumption</li>
+					<li>Design your API with the consumers and their needs in mind</li>
+				</ul>
+			</slide>
 			<slide id="product-video">
 				<title>Remember: <a href="https://www.youtube.com/watch?v=VNwAYyfQ8Bw" title="What is an API? APIs and Products">It's all about the Beer</a></title>
 				<div style=" float : left ; width : 90% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
