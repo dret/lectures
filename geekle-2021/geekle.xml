@@ -89,18 +89,6 @@
 					<li><em>Getting APIs right</em> becomes an essential part of architecture</li>
 				</ul>
 			</slide>
-			<slide id="facebook-apps">
-				<title>Facebook Apps and API</title>
-				<img src="facebook-app-api.png" class="fullsize-left"/>
-			</slide>
-			<slide id="style-video">
-				<title><a href="https://www.youtube.com/watch?v=bWFXGHXo_pY" title="The Five API Styles: Understanding REST, OpenAPI, HTTP, gRPC, GraphQL, and Kafka">Understanding API Styles</a></title>
-				<div style=" float : left ; width : 90% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
-					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
-						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/bWFXGHXo_pY" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
-					</div>
-				</div>
-			</slide>
 			<slide id="apis">
 				<title>APIs as Enabling/Limiting Factor</title>
 				<ul>
@@ -114,13 +102,13 @@
 					<li>Defining a <em>good API</em> matters and there is no silver bullet</li>
 				</ul>
 			</slide>
+			<slide id="facebook-apps">
+				<title>Facebook Apps and API</title>
+				<img src="facebook-app-api.png" class="fullsize-left"/>
+			</slide>
 			<slide id="social-graph">
 				<title>Social Graphs are Large and Complex</title>
 				<img title='Social Graph' src="social-graph.png" class="fullsize-left"/>
-			</slide>
-			<slide id="resource-style">
-				<title>REST: Resource Style</title>
-				<img title="Resource Style" src="api-styles-resource.png" class="fullsize-left"/>
 			</slide>
 			<slide id="origin">
 				<title>API for Facebook Apps</title>
@@ -137,6 +125,18 @@
 						<li>Create a flexible model that supports <em>queries into the social graph</em></li>
 					</ol>
 				</ul>
+			</slide>
+			<slide id="style-video">
+				<title><a href="https://www.youtube.com/watch?v=bWFXGHXo_pY" title="The Five API Styles: Understanding REST, OpenAPI, HTTP, gRPC, GraphQL, and Kafka">Understanding API Styles</a></title>
+				<div style=" float : left ; width : 90% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/bWFXGHXo_pY" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+			<slide id="resource-style">
+				<title>REST: Resource Style</title>
+				<img title="Resource Style" src="api-styles-resource.png" class="fullsize-left"/>
 			</slide>
 			<slide id="query-style">
 				<title>GraphQL: Query Style</title>
