@@ -184,6 +184,16 @@
 			</slide>
 			<slide id="data-services">
 				<title>Data or Workflows?</title>
+				<ul>
+					<li>Some services focus on accessing complex data models</li>
+					<ul>
+						<li>GraphQL is built around the assumption that an API provides data access</li>
+					</ul>
+					<li>Some services are process-oriented with data-driven workflows</li>
+					<ul>
+						<li>REST/Hypermedia guides users and is focused on state-changing interactions</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="dx">
 				<title>Developer Experience (DX)</title>
