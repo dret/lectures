@@ -195,8 +195,13 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide id="dx">
-				<title>Developer Experience (DX)</title>
+			<slide id="shortcuts">
+				<title>Avoid Taking Shortcuts</title>
+				<ul>
+					<li>Treat APIs as a central part of your value proposition</li>
+					<li>Resist the temptation to simply expose your implementation</li>
+					<li>Design your API with consumers and their needs in mind</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
