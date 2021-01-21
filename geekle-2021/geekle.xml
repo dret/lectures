@@ -89,19 +89,6 @@
 					<li><em>Getting APIs right</em> becomes an essential part of architecture</li>
 				</ul>
 			</slide>
-			<slide id="apis">
-				<title>APIs as Enabling/Limiting Factor</title>
-				<ul>
-					<li>APIs expose the value of services</li>
-					<li>APIs define an interaction model with services</li>
-					<li>APIs can be a limiting factor</li>
-					<ul>
-						<li><em>Developer Experience (DX)</em> can be bad if the API isn't easy to consume</li>
-						<li><em>User Experience (UX)</em> can be impacted if consumption has a mismatch with API design</li>
-					</ul>
-					<li>Defining a <em>good API</em> matters and there is no silver bullet</li>
-				</ul>
-			</slide>
 			<slide id="facebook-apps">
 				<title>Facebook Apps and API</title>
 				<img src="facebook-app-api.png" class="fullsize-left"/>
