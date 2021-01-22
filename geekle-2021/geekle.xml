@@ -182,6 +182,14 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="dx">
+				<title>Listen to your Consumers</title>
+				<ul>
+					<li><em>Developer Experience (DX)</em> means to design for API consumers</li>
+					<li>The prototypical GraphQL scenario is to be provided as a back-end for UI consumers</li>
+					<li><em href="https://github.com/graphql/graphiql">GraphiQL</em> is an interactive GraphQL API Explorer</li>
+				</ul>
+			</slide>
 			<slide id="shortcuts">
 				<title>Avoid Taking Shortcuts</title>
 				<ul>
