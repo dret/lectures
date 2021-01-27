@@ -88,8 +88,202 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="styles-conclusions">
+		<part id="theory">
+			<title>One Theory</title>
+			<slide id="key-factors">
+				<title>Key Factors for Success</title>
+				<img title='"Unlocking Success in Digital Transformations", McKinsey, October 2018' href="https://www.mckinsey.com/business-functions/organization/our-insights/unlocking-success-in-digital-transformations" src="success-rate-key-factors.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-cargo-cult">
+				<title>The Wonders of APIs</title>
+				<img title="API Cargo Cult" src="apis-make-things-happen.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="nature-of-the-firm">
+				<title>Transaction Costs Define Business</title>
+				<blockquote><q>A firm is likely therefore to emerge in those cases where a very short term contract would be unsatisfactory. It is obviously of more importance in the case of services than it is in the case of the buying of commodities.<br/>
+					We may sum up this section of the argument by saying that the operation of a market costs something and by forming an organisation and allowing some authority (an <q>entrepreneur</q>) to direct the resources, certain marketing costs are saved. The entrepreneur has to carry out his function at less cost, taking into account the fact that he may get factors of production at a lower price than the market transactions which he supersedes, because it is always possible to revert to the open market if he fails to do this.</q></blockquote>
+				<p class="quotenote"><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1468-0335.1937.tb00002.x">R. H. Coase, <q>The Nature of the Firm</q>, Economica 4(16):386-405, November 1937</a></p>
+			</slide>
+			<slide id="nature-of-the-api">
+				<title>Nature of the API</title>
+				<blockquote>Anything that has measurable impact on transaction costs (both externally and internally) will have measurable impact on business structure and economics. To maximize benefits, it is necessary that both external and internal business structure and transactions are addressed.<br/>
+					APIs can lead to measurable impact on transaction costs because they decrease coupling between peers, in particular in the case of services. By identifying all transaction interfaces and transforming them to APIs, firms achieve more flexibility to define and change their value chains, making them more adaptable and hence more robust. This API transformation should cover external and internal transactions.</blockquote>
+			</slide>
+		</part>
+		<part id="perspectives">
+			<title>Two Perspectives</title>
+			<slide id="external">
+				<title>APIs as External Interfaces</title>
+				<ul>
+					<li>Direct API monetization (API as a product)</li>
+					<li>API foundation for user journeys (omni-channel)</li>
+					<li>Value chain optimization (outsourced APIs)</li>
+				</ul>
+			</slide>
+			<slide id="internal">
+				<title>APIs as Internal Componentization</title>
+				<ul>
+					<li>Moving from integration to interconnection (IT modernization)</li>
+					<li>Decoupling products and their development cycles and speed</li>
+					<li>Improving capability reuse across the whole organization</li>
+				</ul>
+			</slide>
+			<slide id="api-internal-external-2">
+				<title>Internal and External API Usage</title>
+				<img title="Internal and External API Usage" src="api-internal-external.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="pillars">
+			<title>Three Pillars</title>
+			<slide id="biz">
+				<title>Business Pillar</title>
+				<ul>
+					<li>Increase delivery speed of capabilities and products</li>
+					<li>Decrease cost of product development and adaptation</li>
+					<li>Improve insight into products and value chains</li>
+					<li>Aligning/unifying business and IT: <em><q>Business, rewritten by software</q></em>™</li>
+				</ul>
+			</slide>
+			<slide id="org">
+				<title>Organizational Pillar</title>
+				<ul>
+					<li>Increased team autonomy increases team delivery speed</li>
+					<li>Structures across teams build communities of practice</li>
+					<li>API support and platform provided by <em>Center for Enablement (C4E)</em></li>
+					<li>Team practices inform and form the API guidelines</li>
+				</ul>
+				<blockquote><q href="http://www.melconway.com/Home/Conways_Law.html">Any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure.</q> (<a href="https://en.wikipedia.org/wiki/Melvin_Conway">Mel Conway</a>)</blockquote>
+			</slide>
+			<slide id="tech">
+				<title>Technology Pillar</title>
+				<ul>
+					<li>Constrain <em>what</em> products have to do (not <em>how</em>)</li>
+					<li>No hidden channels bypassing the API strategy</li>
+					<li>API guidelines for protocols, patterns, and practices</li>
+					<li>Lifecycle for technology maturity and support</li>
+				</ul>
+			</slide>
+			<slide id="one-size">
+				<title>Got Strategy?</title>
+				<img title="API Cookie Cutter" src="api-cookie-cutter.png" href="https://www.openapis.org/" style="float : right ; width : 25% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+				<ul>
+					<li>There is no one-size-fits-all API Strategy</li>
+					<li>Strategy always depends on context</li>
+					<ul>
+						<li>What do you want to improve/achieve with APIs?</li>
+						<li>What does your organization look like?</li>
+						<li>What is the main value that you produce?</li>
+						<li>What does the market look like?</li>
+						<li>What do your customers look like?</li>
+						<li>What does your competition look like?</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="strategy">
+				<title>API Strategy = Pillars × Perspectives</title>
+				<table style="border-collapse: collapse ; ">
+					<tr>
+						<td/>
+						<th style="border: 1px solid black ; padding: 0.5em">External</th>
+						<th style="border: 1px solid black ; padding: 0.5em">Internal</th>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Biz</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">API monetization</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Revenue-supporting APIs</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase speed &amp; feedback</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Identify &amp; stabilize enablers</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Design for externalization</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase biz insight with dashboards</li>
+						</ul></td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Org</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Focus on documentation/DX</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Support discovery/self-service</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Collect DX feedback</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Products &gt; projects (ownership)</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Team enablement/support</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loose coupling for speed/agility</li>
+						</ul></td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 0.5em">Tech</th>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Tech trends and popularity</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Invest in on-boarding support</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Secure through platform</li>
+						</ul></td>
+						<td style="border: 1px solid black ; padding: 0.5em"><ul>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loosely coupled implementations</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Observe patterns and practices</li>
+							<li style="margin: 0 ; padding : 0 ; line-height: 100%">Establish C4E for platform/support</li>
+						</ul></td>
+					</tr>
+				</table>
+			</slide>
+		</part>
+		<part id="results">
+			<title>From Strategy to Results</title>
+			<slide id="program">
+				<title>API Program</title>
+				<ul>
+					<li>From vision to strategy to execution</li>
+					<ul>
+						<li><em>Vision (why):</em> APIs are a necessary part of digital transformation</li>
+						<li><em>Strategy (what):</em> What do we want to do with APIs and what APIs do we want?</li>
+						<li><em>Program (how):</em> How do we establish/nurture/evolve/manage our API landscape?</li>
+					</ul>
+					<li>API programs are supposed to operate continuously</li>
+					<ul>
+						<li>Individual products are added and modified and removed</li>
+						<li>The landscape of products and dependencies changes continuously</li>
+						<li>Continuous architecting evolves the landscape over time</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-cycle">
+				<title>API Transformation: Assessment/Enablement/Coaching</title>
+				<img title="Managing the API Strategy Pillars: Assessment, Enablement, Coaching" src="services-cycle.png" style=" float: right ; width : 30% ; margin : 2% ;  "/>
+				<ul>
+					<li><em>Assessment</em> uses analysis and observations</li>
+					<ul>
+						<li>Figuring out the status quo</li>
+						<li>Monitoring the landscape for directing investments</li>
+					</ul>
+					<li><em>Enablement</em> addresses identified gaps</li>
+					<ul>
+						<li>Creating and maintaining API strategy/program/guidelines</li>
+						<li>Trainings and workshops for enabling all teams</li>
+					</ul>
+					<li><em>Coaching</em> for continuous architecting</li>
+					<ul>
+						<li>Monitoring the API landscape and identifying changing practices</li>
+						<li>Monitoring technologies and tools for improving the practice</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="digital-transformation-status">
+				<title>Digital Transformation Status</title>
+				<img href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" src="cio-reporting-line.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="culture-conclusions">
 			<title>Conclusions</title>
+			<slide id="beyond-tech">
+				<title>Bigger Than Tech</title>
+				<ul>
+					<li>API strategy is more than just technology</li>
+					<li><em>Strategy</em> defines <em>what</em> to do: API value chains</li>
+					<li><em>Program</em> defines <em>how</em> to do it: Assess/enable/coach API practice</li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
