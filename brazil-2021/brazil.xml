@@ -189,7 +189,7 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide id="strategy">
+			<slide id="strategy-matrix">
 				<title>API Strategy = Pillars × Perspectives</title>
 				<table style="border-collapse: collapse ; ">
 					<tr>
@@ -312,6 +312,7 @@
 	<presentation id="strategy">
 		<title>API Strategy, Programs, and Platforms</title>
 		<toc class="abstract">APIs are essential for both digital transformation of organizations and for participating in the digital economy. While these goals may seem different, the most effective way for organizations to adopt APIs is to see them as two sides of the same coin. An API strategy should cover all uses of APIs, both for private APIs for internal purposes, and for partner and public APIs for externally-facing purposes. An API program should be planned and executed to cover all these API scenarios, so that APIs can be planned, designed, implemented, discovered, and used coherently. One important part of the API program is to establish an API platform that becomes the foundation of digital resources and capabilities within the organization. This presentation looks at how these different pieces of strategy, program, and platform fit together, and what the deciding factors are when it comes to making sure that APIs are used in an effective and productive manner.</toc>
+		<toc class="resources"><a href="https://www.apiscene.io/api-business-models/api-first-the-essence-of-digital-transformation/" title='Erik Wilde, "API First: The Essence of Digital Transformation", APIscene, June 2019'>API First</a>&#160;· <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Stalled Digital Transformation</a>&#160;· <a href="https://dret.net/lectures/api-days-finland-2019/" title='Erik Wilde, "Enjoy Responsibly: Minimizing Coupling for API Consumption", API Days Finland, June 2019'>Minimizing Coupling for API Consumption</a></toc>
 		<date short="2021-02-02">February 2, 2021</date>
 		<slide id="summary">
 			<title>Summary</title>
@@ -350,8 +351,296 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="scaling">
+			<title>Scaling API Initiatives</title>
+			<slide id="vision">
+				<title>From Vision to Reality: Plan, Execute, Enjoy</title>
+				<img title="Grand Canyon" src="grand-canyon.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="api-first">
+				<title>From APIs-on-demand to API First</title>
+				<ul>
+					<li>APIs are the digital representation of all capabilities</li>
+					<ul>
+						<li>API-enable existing capabilities by using <a href="https://www.youtube.com/watch?v=67FTcwtxYIs&amp;list=UUDD75qoXHJSz4pv0o3WcTUw">API Archaeology</a></li>
+						<li>Conceive new capabilities as <a href="https://www.apiscene.io/api-business-models/api-first-the-essence-of-digital-transformation/" title='Erik Wilde, "API First: The Essence of Digital Transformation", APIscene, June 2019'>API First</a></li>
+					</ul>
+					<li>Supporting teams significantly influences the digital transformation</li>
+					<ul>
+						<li><a href="guidelines">Creating and managing guidelines</a> that help teams with their API-related tasks</li>
+						<li>Running a <em>program</em> that focuses on products and the landscape</li>
+						<li>Providing a <link href="platform">platform</link> that teams can build on</li>
+					</ul>
+					<li>API programs are more than just technical enablement</li>
+					<ul>
+						<li>APIs represent the mindset of building digital and flexible value chains</li>
+						<li>API value is realized <em>when value chains create value</em>, not when APIs exist</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="scaling-is-hard">
+				<title>Getting started is hard, scaling up is even harder</title>
+				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="programs-products-platforms">
+				<title>API Programs connect Products and Platforms</title>
+				<ul>
+					<li><em>API products</em> are products with APIs built by individual teams</li>
+					<ul>
+						<li>Each product is built on the <em>API platform</em> of the organization</li>
+					</ul>
+					<li><link href="platform">API platforms</link> are tooling and infrastructure for API products</li>
+					<ul>
+						<li>Mature platforms support all parts of the API lifecycle</li>
+						<li>Platforms evolve as teams and the organization change and evolve practices</li>
+					</ul>
+					<li><em>API programs</em> optimize API production by managing the API platform</li>
+					<ul>
+						<li>Support and observe API teams and consumers</li>
+						<li>Maximize productivity by minimizing the effort required for <q>standard API tasks</q></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="program-areas">
+				<title>API Program Areas</title>
+				<ul>
+					<li>API programs are essential for scaling API initiatives</li>
+					<li>API programs have to cover various areas</li>
+					<ul>
+						<li><link href="alignment"/> for aligning with other initiatives and activities</li>
+						<li><link href="org-culture"/> so that teams can work effectively</li>
+						<li><link href="awareness"/> so that API usage is maximized</li>
+						<li><link href="observation"/> for managing program impact and evolution</li>
+						<li><link href="platform"/> for providers and consumers to build on</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="alignment">
+			<title>Strategic Alignment</title>
+			<slide id="alignment-details">
+				<title>Strategic Alignment: Connecting the Dots</title>
+				<ul>
+					<li>API programs exist to support well-defined <em>API strategies</em></li>
+					<li>They are an essential component but have to be aligned with other activities</li>
+					<ul>
+						<li>APIs are an enabling factor but <a href="https://nordicapis.com/five-common-misconceptions-about-apis/" title='Erik Wilde, "Five Common Misconceptions About APIs", Nordic APIs, March 2020'>do not solve problems by themselves</a></li>
+					</ul>
+					<li>API programs have to be embedded in larger initiatives</li>
+					<ul>
+						<li>The <em>API strategy</em> defines the business goals for using APIs</li>
+						<li>The <em>digital transformation initiative</em> will set the larger context</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="audience">
+				<title>Example: API Audience</title>
+				<ul>
+					<li>It is not unusual for API initiatives to focus on internal or external APIs</li>
+					<ul>
+						<li>It is better to support both and just have different ways how they are managed</li>
+					</ul>
+					<li>Understanding API consumers allows to create a more focused API program</li>
+					<ul>
+						<li><em>Internal consumers</em> are a closed set of well-known consumers</li>
+						<li><em>External consumers</em> need enhanced security, scale, documentation, …</li>
+					</ul>
+					<li>Program focus should be on the target set of consumers</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="org-culture">
+			<title>Organization &amp; Culture</title>
+			<slide id="org-culture-details">
+				<title>Organization &amp; Culture: Transforming the Organization</title>
+				<ul>
+					<li>The motivation for APIs is value chain speed and flexibility</li>
+					<ul>
+						<li>Teams get as much support as necessary</li>
+						<li>Teams get as much autonomy as possible</li>
+					</ul>
+					<li><em>Organizational structure</em> needs to support autonomy and loose coupling</li>
+					<ul>
+						<li>Never underestimate <a href="http://www.melconway.com/Home/Conways_Law.html">Conway's Law</a></li>
+					</ul>
+					<li><em>Culture</em> must move from <q>building systems</q> to <em>creating ecosystems</em></li>
+				</ul>
+			</slide>
+			<slide id="org-culture-example">
+				<title>Example: Making Decisions</title>
+				<img src="decision-steps.png" title="Decision Steps" style="float: right ; width : 90% ; margin : 5% ; "/>
+				<ul>
+					<li><em>Inception:</em> Managing the pipeline for decisions</li>
+					<li><em>Choice generation:</em> Identifying selection candidates</li>
+					<li><em>Selection:</em> Choosing from the list of options</li>
+					<li><em>Authorization:</em> Possible review and discussion</li>
+					<li><em>Implementation:</em> Reflecting on making the decision</li>
+					<li><em>Challenge:</em> Allowing exceptions and evolving options</li>
+				</ul>
+			</slide>
+			<slide id="org-culture-example-decisions">
+				<title>Example Decision Maps</title>
+				<ul>
+					<li>Choosing a programming language</li>
+				</ul>
+				<table style="border-collapse: collapse; border: 1px solid; padding: 1ex">
+					<tr>
+						<th style="border: 1px solid;">Inception</th>
+						<th style="border: 1px solid;">Choice generation</th>
+						<th style="border: 1px solid;">Selection</th>
+						<th style="border: 1px solid;">Authorization</th>
+						<th style="border: 1px solid;">Implementation</th>
+						<th style="border: 1px solid;">Challenge</th>
+					</tr>
+					<tr>
+						<td style="border: 1px solid;">Centralized</td>
+						<td style="border: 1px solid;">Centralized</td>
+						<td style="border: 1px solid;">Decentralized</td>
+						<td style="border: 1px solid;">Decentralized</td>
+						<td style="border: 1px solid;">Decentralized</td>
+						<td style="border: 1px solid;">Decentralized</td>
+					</tr>
+				</table>
+				<ul>
+					<li>Choosing software development tooling</li>
+				</ul>
+				<table style="border-collapse: collapse; border: 1px solid; padding: 1ex">
+					<tr>
+						<th style="border: 1px solid;">Inception</th>
+						<th style="border: 1px solid;">Choice generation</th>
+						<th style="border: 1px solid;">Selection</th>
+						<th style="border: 1px solid;">Authorization</th>
+						<th style="border: 1px solid;">Implementation</th>
+						<th style="border: 1px solid;">Challenge</th>
+					</tr>
+					<tr>
+						<td style="border: 1px solid;">Decentralized</td>
+						<td style="border: 1px solid;">Decentralized</td>
+						<td style="border: 1px solid;">Decentralized</td>
+						<td style="border: 1px solid;">Centralized</td>
+						<td style="border: 1px solid;">Decentralized</td>
+						<td style="border: 1px solid;">Centralized</td>
+					</tr>
+				</table>
+			</slide>
+		</part>
+		<part id="awareness">
+			<title>Awareness &amp; Adoption</title>
+			<slide id="awareness-adoption">
+				<title>Awareness &amp; Adoption: <q>We have no time for APIs…</q></title>
+				<ul>
+					<li>The <em>API strategy</em> clearly defines the API goals</li>
+					<li>The <em>API program</em> puts the supporting infrastructure in place</li>
+					<li><em>API awareness</em> starts with understanding the <em>business value of APIs</em></li>
+					<ul>
+						<li>Everybody should have some knowledge what APIs are and why they matter</li>
+					</ul>
+					<li><em>API adoption</em> depends on both API providers and consumers</li>
+					<ul>
+						<li>API program supports API teams with tooling and infrastructure</li>
+						<li>Consumers know how to find and use APIs</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="awareness-example">
+				<title>Example: API Consumption</title>
+				<ul>
+					<li>Consuming APIs is different from writing self-contained programs</li>
+					<ul>
+						<li>Dependencies must be managed responsibly to allow for API evolution</li>
+						<li>Exception handling is different because of different failure modes</li>
+					</ul>
+					<li>API discovery and <a href="https://dret.net/lectures/api-days-finland-2019/" title='Erik Wilde, "Enjoy Responsibly: Minimizing Coupling for API Consumption", API Days Finland, June 2019'>responsible API consumption</a> are essential for creating API value</li>
+					<ul>
+						<li>Existing APIs have no value when they are not used</li>
+						<li>Distributed programming requires a different skill set from writing local code</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="observation">
+			<title>Observation</title>
+			<slide id="improvement">
+				<title>Observation: Continuous Improvement Matters</title>
+				<ul>
+					<li>API programs are only as good as their results</li>
+					<li>Observation is essential for understanding the API landscape and ecosystem</li>
+					<ul>
+						<li>Teams decisions for their API products</li>
+						<li>Consumption of products in the API landscape</li>
+						<li>API program usage (<q>program as a product</q>)</li>
+					</ul>
+					<li>Observations should lead to insights and should trigger changes</li>
+					<ul>
+						<li><em>Design for change</em> is important for products as well as for the program</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Example: Observe Exceptions</title>
+				<ul>
+					<li>Observe which decisions are made when using the API platform</li>
+					<ul>
+						<li>There should be some predefined choices and possibly an exception process</li>
+					</ul>
+					<li>When the exception becomes the norm it is time to look at the options</li>
+					<ul>
+						<li>Discuss the alternatives and reasons for choosing them</li>
+						<li>Consider adding/deprecating predefined choices</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="platform">
+			<title>Providing an API Platform</title>
+			<slide id="foundation">
+				<title>Providing an API Platform: Foundation for API Activities</title>
+				<ul>
+					<li>API platforms are the foundation for API providers and consumers</li>
+					<ul>
+						<li><em>API providers</em> find tooling and infrastructure for the full API lifecycle</li>
+						<li><em>API consumers</em> find APIs and support for using them effectively</li>
+					</ul>
+					<li>API platforms must be designed and built for openness and change</li>
+					<ul>
+						<li>Requirements will change through <link href="observation">observation</link> of platform users</li>
+					</ul>
+					<li>Managing the <q>platform as a product</q> helps with priorities and evolution</li>
+					<ul>
+						<li>Which platform features will create the biggest value for the API landscape?</li>
+						<li>Release new features early and often to collect feedback from platform users</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="sdk">
+				<title>Example: SDK support for APIs</title>
+				<ul>
+					<li>Some organizations like to provide SDKs for APIs</li>
+					<ul>
+						<li>SDKs can help with adoption for less API-minded API consumers</li>
+					</ul>
+					<li>SDKs should have the same release cycle as APIs to always stay in sync</li>
+					<ul>
+						<li>Manual creation of SDK results in better but expensive SDKs</li>
+						<li>Generating SDKs from API specs can be done with automated tooling</li>
+					</ul>
+					<li>Platforms can provide <q>SDK support</q> as part of the platform service</li>
+					<ul>
+						<li>Various cost/quality considerations come into play for the implementation</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="strategy-conclusions">
 			<title>Conclusions</title>
+			<slide id="lessons-learned">
+				<title>Lessons Learned</title>
+				<ol>
+					<li>Why API programs are an essential ingredient of digital transformation</li>
+					<li>Examples of API programs and popular patterns and anti-patterns</li>
+					<li>The key ingredients of a successful API program</li>
+				</ol>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
