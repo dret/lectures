@@ -26,7 +26,7 @@
 	</license>
 	<title><a href="https://www.oop-konferenz.de" title="Object Oriented Programming">OOP</a> <a href="https://www.oop-konferenz.de/oop2021/">2021</a> Conference</title>
 	<presentation id="index">
-		<title>The Art of the Necessary</title>
+		<title>The Art of the Necessary: <br/>Effective Management of API Landscapes</title>
 		<toc class="abstract">How much can you separate what you are building from how you are building it? This becomes an increasingly relevant question with IT moving from building systems to cultivating ecosystems. At the enterprise architecture level, one of the challenges nowadays is to decide which constraints to put in place to get a robust and evolvable landscape of interacting components, while at the same time it is important to minimize these constraints so that teams and units have some autonomy, and that the overall architecture can evolve continuously. In this presentation, we look at this interesting challenge from the standpoint of APIs, and how they can help to reduce the constraints to the necessary ones, while still resulting in an effective architecture.</toc>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 		<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com">Catalyst</a></affiliation>
@@ -110,6 +110,25 @@
 			<slide id="ecosystems">
 				<title>Decentralized Ecosystems</title>
 				<img title="Farmers' Market Sacramento" href="https://commons.wikimedia.org/wiki/File:Farmers'_market_Sacramento.jpg" src="farmers-market-sacramento.jpg"  class="fullsize-left"/>
+			</slide>
+			<slide id="optimization">
+				<title>Optimizing for Resilience and Change</title>
+				<ul>
+					<li><em>Integrated Systems</em> are not going anywhere anytime soon</li>
+					<ul>
+						<li>Integration allows optimizations that outperform more loosely coupled solutions</li>
+						<li>Integration can also be the result of <em>Conway's Law</em> in action</li>
+					</ul>
+					<li>Some castles may disappear because people move on to elsewhere</li>
+					<li><em>Markets/Merchants</em> are more dynamic than <em>Castles</em></li>
+					<ul>
+						<li>Developing and offering a product is easier on a market</li>
+					</ul>
+					<li>APIs are <em>connective tissue</em> and <em>protective insulation layers</em></li>
+					<ul>
+						<li>Merchants should focus on <em>optimizing their differential in the value chain</em></li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="evolution">
