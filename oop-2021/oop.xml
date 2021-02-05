@@ -119,14 +119,15 @@
 						<li>Integration allows optimizations that outperform more loosely coupled solutions</li>
 						<li>Integration can also be the result of <em>Conway's Law</em> in action</li>
 					</ul>
-					<li>Some castles may disappear because people move on to elsewhere</li>
-					<li><em>Markets/Merchants</em> are more dynamic than <em>Castles</em></li>
+					<li>Today's <link href="need-for-speed">need for speed</link> requires us to better separate architectural layers</li>
 					<ul>
-						<li>Developing and offering a product is easier on a market</li>
+						<li><em>Components/Capabilities</em> are designed and implemented as usual</li>
+						<li><em>Composing</em> these components is fundamentally different from building them</li>
 					</ul>
-					<li>APIs are <em>connective tissue</em> and <em>protective insulation layers</em></li>
+					<li>APIs are <em>connective tissue</em> and <em>implementation encapsulation</em> for components</li>
 					<ul>
-						<li>Merchants should focus on <em>optimizing their differential in the value chain</em></li>
+						<li>Everything that is being built must be self-contained and have an API <em>(microservices)</em></li>
+						<li>Everything that is being used must be used through its API <em>(API first)</em></li>
 					</ul>
 				</ul>
 			</slide>
