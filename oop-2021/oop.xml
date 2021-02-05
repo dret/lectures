@@ -132,11 +132,29 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="api-journey">
+			<title>API Journey</title>
+			<slide id="strategy">
+				<title>API Strategy</title>
+			</slide>
+			<slide id="program">
+				<title>API Program</title>
+			</slide>
+			<slide id="platform">
+				<title>API Platform</title>
+			</slide>
+			<slide id="products">
+				<title>API Products</title>
+			</slide>
+		</part>
 		<part id="evolution">
 			<title>Never Stop Evolving</title>
 			<slide id="aip-process">
 				<title>Evolving Guidance (<a href="https://google.aip.dev/">Google's AIP</a>)</title>
 				<img src="google-aip-process.png" title="Google's API Improvement Proposal Process" href="https://google.aip.dev/1" class="fullsize-left"/>
+			</slide>
+			<slide id="microservices">
+				<title>Microservices: Get Small Stuff Done Quickly</title>
 			</slide>
 			<slide id="chaos">
 				<title>Embrace the Chaos</title>
