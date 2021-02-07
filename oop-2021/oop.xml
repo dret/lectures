@@ -185,6 +185,21 @@
 				<title>API Products</title>
 				<blockquote><em>How does product management change when products are built on and for the <link href="platform">API Platform</link>?</em></blockquote>
 			</slide>
+			<slide id="teams">
+				<title>API Teams: Platform and Products</title>
+				<ul>
+					<li><em>Platform Team</em> helps executing the <link href="program">program</link> and manages the <link href="platform">platform</link></li>
+					<ul>
+						<li><em>API Guidelines</em> establish guardrails for product teams</li>
+						<li>Identifying friction with growing/evolving the platform and removing it</li>
+					</ul>
+					<li><em>Product Team</em> builds a product based on and as part of the <link href="platform">platform</link></li>
+					<ul>
+						<li>Find the balance between enough support and sufficient autonomy</li>
+						<li>Identifying friction with growing/evolving the platform and removing it</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="evolution">
 			<title>Never Stop Evolving</title>
@@ -201,6 +216,12 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="necessary">
+				<title>Removing Constraints Creates Potential</title>
+				<ul>
+					<li></li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
