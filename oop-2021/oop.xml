@@ -131,6 +131,23 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="small-large">
+				<title>Programming in the <span style="font-size: smaller">Small</span>/<span style="font-size: larger">Large</span></title>
+				<ul>
+					<li><em>Programming in the small</em> still asks us to develop focused components</li>
+					<ul>
+						<li><em>Agile</em> as a way to develop iteratively and integrate feedback</li>
+						<li><em>DevOps</em> as a way to move from finishing projects to managing products</li>
+						<li><em>TDD</em> as a way to be more clear about component acceptance criteria</li>
+					</ul>
+					<li><em>Programming in the large</em> is asking us to embed ourselves in the API economy</li>
+					<ul>
+						<li><em>Boundaries</em> between organizations become fuzzy/dynamic/tactical</li>
+						<li><em>Lack of speed</em> as a risk factor is growing steadily</li>
+						<li><em>Engineering and technology</em> are changing fast but can be decisive</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="api-journey">
 			<title>API Journey</title>
