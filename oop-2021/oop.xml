@@ -151,6 +151,18 @@
 			<slide id="old-wine">
 				<title>APIs: Old Wine in New Bottles?</title>
 				<img src="chateau-mouton-rothschild-1956.png" title="Château Mouton Rothschild 1956 " style="float: right ; height : 70% ; margin : 0% 8% 0% 8% ; "/>
+				<ul>
+					<li><em>Network APIs</em> have been around for a long time (they used to be called <q>protocols</q>)</li>
+					<ul>
+						<li>APIs have been part of computers since their very beginning (1940s)</li>
+						<li>Network APIs were in use since two computers were connected (1950s)</li>
+					</ul>
+					<li>Today's APIs are a <em>Business Strategy</em> and not a <em>Technology</em></li>
+					<ul>
+						<li>Decrease the time to create or change the way how IT executes business goals</li>
+						<li>Capitalize on the openness and flexibility of platform business models</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="api-journey">
