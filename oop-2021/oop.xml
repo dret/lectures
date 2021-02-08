@@ -172,19 +172,36 @@
 				<title>API Strategy</title>
 				<blockquote><em>Why are APIs strategically important and what do we want to get out of them?</em></blockquote>
 				<ul>
+					<li><em>Business:</em> Becoming better at using digital value chains and changing them</li>
+					<li><em>Technology:</em> Disentagling monoliths and increasing velocity</li>
+					<li><em>Organization:</em> Improving autonomy to reduce coordination overhead</li>
 				</ul>
 			</slide>
 			<slide id="program">
 				<title>API Program</title>
 				<blockquote><em>How are the going to realize the value that we have outlined in the <link href="strategy">API Strategy</link>?</em></blockquote>
+				<ul>
+					<li><em>Evangelizing</em> the strategy throughout the organization</li>
+					<li><em>Empowering</em> teams with support and infrastructure</li>
+					<li><em>Adjusting</em> to changing needs by listening to feedback</li>
+				</ul>
 			</slide>
 			<slide id="platform">
 				<title>API Platform</title>
 				<blockquote><em>What are we establishing and continuously evolving as a result of our <link href="program">API Program</link>?</em></blockquote>
+				<ul>
+					<li><em>Managing</em> all capabilities that are part of the platform</li>
+					<li><em>Supporting</em> teams with tooling and infrastructure</li>
+					<li><em>Exposing</em> APIs for private/partner/public consumption</li>
+				</ul>
 			</slide>
 			<slide id="products">
 				<title>API Products</title>
 				<blockquote><em>How does product management change when products are built on and for the <link href="platform">API Platform</link>?</em></blockquote>
+				<ul>
+					<li><em>Implementing</em> capabilities with the largest possible degree of autonomy</li>
+					<li><em>Exposing</em> APIs as part of the platform</li>
+				</ul>
 			</slide>
 			<slide id="teams">
 				<title>API Teams: Platform and Products</title>
