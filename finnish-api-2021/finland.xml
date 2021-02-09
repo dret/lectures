@@ -67,7 +67,8 @@
 		<part id="api-value">
 			<title>APIs: How Digitalization Works</title>
 			<slide id="language-promise">
-				<title>APIs are <a href="https://www.youtube.com/watch?v=wDYeU2T4v2o&amp;list=UUDD75qoXHJSz4pv0o3WcTUw">Languages</a> and <a href="https://www.youtube.com/watch?v=gFu7CQKmBeQ&amp;list=UUDD75qoXHJSz4pv0o3WcTUw">Promises</a></title>
+				<title>APIs are <a href="https://www.youtube.com/watch?v=wDYeU2T4v2o&amp;list=UUDD75qoXHJSz4pv0o3WcTUw">Languages</a> and <a href="https://www.youtube.com/watch?v=gFu7CQKmBeQ&amp;list=UUDD75qoXHJSz4pv0o3WcTUw">Promises</a> (for Machines)</title>
+				<img src="robots.png" title="Chatting Robots" style="float: right ; width : 25% ; margin : 5% ; "/>
 				<ul>
 					<li><a href="https://www.youtube.com/watch?v=wDYeU2T4v2o&amp;list=UUDD75qoXHJSz4pv0o3WcTUw">An API is a Language</a></li>
 					<ul>
@@ -76,8 +77,8 @@
 					</ul>
 					<li><a href="https://www.youtube.com/watch?v=gFu7CQKmBeQ&amp;list=UUDD75qoXHJSz4pv0o3WcTUw">An API is a Promise</a></li>
 					<ul>
-						<li>You promise to provide services that others can access programmatically</li>
-						<li>You promise to keep the language stable for as long as possible</li>
+						<li>A promise to provide services for programmatic access</li>
+						<li>A promise to keep the language stable for as long as possible</li>
 					</ul>
 				</ul>
 			</slide>
