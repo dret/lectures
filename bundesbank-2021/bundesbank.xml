@@ -115,6 +115,22 @@
 			</slide>
 			<slide id="not-enough">
 				<title>Necessary but not Sufficient</title>
+				<ul>
+					<li>APIs have been used for many decades</li>
+					<ul>
+						<li><em>Local APIs</em> have been used since the 1940s</li>
+						<li><em>Network APIs</em> have been used since the 1950s</li>
+						<li><em>Network APIs</em> used to be called <em>Protocols</em></li>
+						<li>APIs are relatively new as an approach for <em>Enterprise IT Architecture</em></li>
+					</ul>
+					<li>APIs deliver most benefit when used for <em>loose coupling</em></li>
+					<ol>
+						<li><em>Others (partners/public)</em> can easily access APIs for collaboration</li>
+						<li><em>Internal collaboration</em> becomes easier (less coordination overhead)</li>
+						<li><em>Mixed deployments</em> are a natural architectural pattern with APIs</li>
+						<li><em>Platform business models</em> can leverage APIs for value co-creation</li>
+					</ol>
+				</ul>
 			</slide>
 		</part>
 		<part id="platforms">
