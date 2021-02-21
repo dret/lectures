@@ -68,6 +68,13 @@
 			<title>APIs and Loose Coupling</title>
 			<slide id="more-than-tech">
 				<title>APIs are more than Technology</title>
+				<ul>
+					<li>Clean separation of <q>what</q> and <q>how</q></li>
+					<ul>
+						<li>APIs define <em>what</em> to use as network-level interfaces</li>
+						<li>APIs do not define <em>how</em> these interfaces are implemented</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="language-video">
 				<title><a href="https://www.youtube.com/watch?v=wDYeU2T4v2o">What is an API? It's a Language!</a></title>
