@@ -245,6 +245,19 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="apis-architecture">
+				<title>APIs and IT Architecture</title>
+				<ul>
+					<li>APIs strictly speaking are simply network interfaces</li>
+					<li>APIs today are used to move towards more loosely couples architectures</li>
+					<li>Architectural changes need goals, a plan, and a result</li>
+					<ul>
+						<li><em>API Strategy</em> defines the goals of APIs at the strategic level</li>
+						<li><em>API Programs</em> outlines how to achieve the goals and measure progress</li>
+						<li><em>API Platforms</em> are the result of API programs</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
