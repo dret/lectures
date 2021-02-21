@@ -135,6 +135,25 @@
 		</part>
 		<part id="platforms">
 			<title>API Platforms</title>
+			<slide id="bezos-mandate">
+				<title><a href="https://gist.github.com/chitchcock/1281611">Jeff Bezos' API Mandate</a></title>
+				<img src="aws-logo.png" title="Amazon Web Services (AWS) Logo" style="float: right ; width : 20% ; margin : 3% ; "/>
+				<ul>
+					<li>Famous small set of SOA design rules</li>
+					<ul>
+						<li>Teams must expose functionality through services</li>
+						<li>Communication happens only through service interfaces</li>
+						<li>Internal/external service is a matter of policy, not one of design</li>
+					</ul>
+					<li>With more freedom comes more responsibility</li>
+					<ul>
+						<li>Services must be documented and registered so that they can be discovered</li>
+						<li>Monitoring and metrics are necessary for finding root causes</li>
+						<li>All APIs must be hardened against DoS attacks</li>
+					</ul>
+					<li>Much easier in today's technology landscape than in 2002</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
