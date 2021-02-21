@@ -74,6 +74,19 @@
 						<li>APIs define <em>what</em> to use as network-level interfaces</li>
 						<li>APIs do not define <em>how</em> these interfaces are implemented</li>
 					</ul>
+					<li>Technically, an API defines how to interact with a capability</li>
+					<ul>
+						<li>Messages sent across a network that allow applications to communicate</li>
+						<li>The API is the interface and provides access <link href="product-video">to a product</link></li>
+						<li>Applications can collaborate using <link href="language-video">the API <q>language</q></link></li>
+						<li><link href="promise-video">APIs are a promise</link> to make capabilities accessible</li>
+					</ul>
+					<li>The goal of APIs is to establish loose coupling between various teams</li>
+					<ul>
+						<li>APIs allow machines to communicate</li>
+						<li>Developers document/read APIs and can start collaborating (DX)</li>
+						<li>Users benefit from faster <em>time-to-value</em> for new products (UX)</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="product-video">
