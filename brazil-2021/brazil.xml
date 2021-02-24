@@ -859,13 +859,13 @@
 			<slide id="lifecycle">
 				<title>Lifecycle: From Idea to Production</title>
 				<ul>
-					<ol><em>Coding:</em> code development and review, source code management tools, code merging</ol>
-					<ol><em>Building:</em> continuous integration tools, build status</ol>
-					<ol><em>Testing:</em> continuous testing tools that provide quick and timely feedback on business risks</ol>
-					<ol><em>Packaging:</em> artifact repository, application pre-deployment staging</ol>
-					<ol><em>Releasing:</em> change management, release approvals, release automation</ol>
-					<ol><em>Configuring:</em> infrastructure configuration and management, infrastructure as code tools</ol>
-					<ol><em>Monitoring:</em> applications performance monitoring, end-user experience</ol>
+					<li><em>Coding:</em> code development and review, source code management tools, code merging</li>
+					<li><em>Building:</em> continuous integration tools, build status</li>
+					<li><em>Testing:</em> continuous testing tools that provide quick and timely feedback on business risks</li>
+					<li><em>Packaging:</em> artifact repository, application pre-deployment staging</li>
+					<li><em>Releasing:</em> change management, release approvals, release automation</li>
+					<li><em>Configuring:</em> infrastructure configuration and management, infrastructure as code tools</li>
+					<li><em>Monitoring:</em> applications performance monitoring, end-user experience</li>
 				</ul>
 			</slide>
 			<slide id="productops">
