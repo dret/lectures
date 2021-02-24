@@ -1952,12 +1952,216 @@
 	</presentation>
 	<presentation id="guidelines">
 		<title>Guidelines</title>
-		<toc class="abstract">...</toc>
-		<toc class="resources"><a href="http://apistylebook.com/" title='Arnaud Lauret, "API Stylebook"'>API Stylebook</a></toc>
+		<toc class="abstract">One of the challenges that many organizations face is how to scale their API journey. Getting started may not be easy, but scaling can be even more challenging to manage well. We look at some of the typical challenges organizations face when entering the scale-up phase, and how they can be tackled. We take a deep dive into the topic of API guidelines, which in virtually all organizations play an essential role in establishing, managing, and communicating good practices across API teams.</toc>
+		<toc class="resources"><a href="https://nordicapis.com/api-archaeology-using-accidental-apis-to-inform-the-api-journey/" title='Erik Wilde, "API Archaeology: Using Accidental APIs to Inform the API Journey", Nordic APIs, April 2020'>API Archaeology</a>&#160;· <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Stalled Digital Transformation</a>&#160;· <a href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild">Collection of Public API Guidelines</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="journey">
+			<title>Journey Essentials</title>
+			<slide id="api-101">
+				<title>APIs: Foundation of Digital Transformation</title>
+				<ul>
+					<li><em>Digital Transformation</em> is (much) more than just technology</li>
+					<ul>
+						<li>Businesses must embrace constant change driven by external factors</li>
+						<li>Organizations must be able to execute business-driven changes</li>
+						<li>Technology is powering the value chains and insights into them</li>
+					</ul>
+					<li>APIs are the key enabler of building a digitalized organization</li>
+					<ul>
+						<li>All value chains are digital and interconnected through APIs</li>
+						<li>Each capability has an API and only communicates via APIs</li>
+						<li>Everybody in the organization embraces APIs as their language</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="archaeology">
+				<title>Getting Started: API Archaeology</title>
+				<img src="api-bones.png" title="Proto-API" style="float: right ; width : 25% ; margin : 5% ; "/>
+				<ul>
+					<li>Identify <em>low-hanging fruit</em> for quick success and feedback</li>
+					<ul>
+						<li>Every organization has a number of existing digital value chains</li>
+						<li><a href="https://nordicapis.com/api-archaeology-using-accidental-apis-to-inform-the-api-journey/" title='Erik Wilde, "API Archaeology: Using Accidental APIs to Inform the API Journey", Nordic APIs, April 2020'>API Archaeology</a> is a good way to find candidates</li>
+						<li>Identify high-potential <q>proto-APIs</q> for starting your API journey</li>
+					</ul>
+					<li>Start with APIs that will create value</li>
+					<ul>
+						<li>API-enable capabilities to unlock value for creating new revenue streams</li>
+						<li>Build up API experience and move towards an API program and platform</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="effective-teams">
+				<title>What is an Effective API Team?</title>
+				<ul>
+					<li>A team spending less time with general API-related tasks</li>
+					<ul>
+						<li>Figuring out the general guardrails for API design</li>
+						<li>Exposing, securing, and monitoring APIs</li>
+						<li>Deploying APIs and making them discoverable</li>
+					</ul>
+					<li>A team spending more time addressing domain issues</li>
+					<ul>
+						<li>Engaging with consumers and designing a good API</li>
+						<li>Making sure that consumer feedback is collected and used</li>
+						<li>Contributing to the shared API practice in the organization</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="stalling">
+				<title>Getting started is hard, scaling up is even harder</title>
+				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="scale-matters">
+				<title>Scale Matters</title>
+				<img title="Grand Canyon" src="grand-canyon.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="scaling">
+				<title>Scaling needs Strategy</title>
+				<ul>
+					<li>The <em>vision:</em> Use APIs for improved digital value chain agility</li>
+					<li>The <em>strategy:</em> Focus on creating <em>valuable</em> and <em>useful</em> APIs</li>
+					<ul>
+						<li><em>APIs serve a purpose:</em> Focus on the purpose and help with the APIs</li>
+						<li><em>APIs need a platform:</em> Provide a platform that makes building APIs easy</li>
+						<li><em>APIs need a program:</em> Help teams to use and contribute to the platform</li>
+						<li><em>APIs change:</em> Design everything for participation and change</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="practice">
+				<title>Building up the API Practice</title>
+				<ul>
+					<li>APIs as a practice have a number of <em>cross-cutting concerns</em></li>
+					<ul>
+						<li><em>Design-time concerns</em> are about designing and implementing API products</li>
+						<li><em>Run-time concerns</em> are about deploying and operating API products</li>
+					</ul>
+					<li>Turning business capabilities into API products</li>
+					<ul>
+						<li><em>Guidelines</em> help with capturing and providing guidance</li>
+						<li><em>Platforms</em> help with providing and consuming capabilities</li>
+					</ul>
+					<li>Many organizations support the API practice</li>
+					<ul>
+						<li><em>API Guilds</em> establish embedded support for API practices in individual teams</li>
+						<li><em>Centers of Excellence (COE)</em> provide guidance and infrastructure for API teams</li>
+						<li><em>Centers for Enablement (C4E)</em> are less about leading and more about supporting</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="guidelines">
+			<title>API Guidelines</title>
+			<slide id="why-guidelines">
+				<title>API Guidelines as Shared Practices</title>
+				<ul>
+					<li>More API teams mean more ways to solve the same problem</li>
+					<ul>
+						<li>Solving <q>API problems</q> is not what teams should focus on</li>
+						<li>Solving <q>API problems</q> in a consistent way helps the API landscape</li>
+					</ul>
+					<li>Communications across teams is a challenge</li>
+					<ul>
+						<li>Complement channels with documentation of practices</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="anatomy">
+				<title>The Anatomy of a Good Guideline</title>
+				<ul>
+					<li><em>Why</em> does the guideline exist?</li>
+					<ul>
+						<li>Rationale for creating the guideline</li>
+					</ul>
+					<li><em>What</em> can be done to address the described issue</li>
+					<ul>
+						<li>At least one <em>good solution</em> for addressing the issue</li>
+					</ul>
+					<li><em>How</em> to implement the solution</li>
+					<ul>
+						<li>At least one way to use the solution in practice</li>
+					</ul>
+					<li><em>Testing</em> that the guideline has been followed</li>
+					<ul>
+						<li>Some tests can be automated but many will be by declaration or review</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="example">
+				<title>API Guideline Example</title>
+				<img href="https://github.com/dret/OReilly2020NYdemo/tree/master/guidelines/why/change-management-policy" title="Change Management Policy Guideline" src="change-management-guideline.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="good-practice">
+				<title>Good is better than Best</title>
+				<ul>
+					<li>Solutions (<q>What</q>) are addressing design challenges</li>
+					<ul>
+						<li>Have a model for accepting new solutions</li>
+					</ul>
+					<li>Practices (<q>How</q>) are implementing a solution</li>
+					<ul>
+						<li>Have a model for accepting new practices</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="management">
+				<title>Good Guideline Management</title>
+				<ul>
+					<li>Guidelines should be managed in a participatory way</li>
+					<ul>
+						<li>Guidelines are for capturing and sharing experiences across API teams</li>
+						<li>Everybody can comment or contribute to the guidelines</li>
+						<li>Over time it may make sense to develop a more formal approval process</li>
+						<li>There may be editors but their role is to improve guideline quality</li>
+					</ul>
+					<li>Tooling should reflect the nature as a <q>living document</q></li>
+					<ul>
+						<li>One-way tooling is a bad choice</li>
+						<li>Collaborative tooling is a good choice</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="in-the-wild">
+				<title>API Guidelines in the Wild</title>
+				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="getting-started">
+				<title>Getting Started</title>
+				<ul>
+					<li>Start capturing feedback from API teams</li>
+					<ul>
+						<li>Challenges along the way</li>
+						<li>Solutions they have found or implemented</li>
+						<li>Quantifying the time they spend with cross-cutting vs. domain tasks</li>
+					</ul>
+					<li>Start editing and providing guidance that API teams can find and use</li>
+					<ul>
+						<li>Tooling can be as simple as markdown and shared repositories</li>
+					</ul>
+					<li>Treat your <em>API Guidelines as a product</em></li>
+					<ul>
+						<li>There are well-defined user stories as well as goals and non-goals</li>
+						<li>There is clear ownership of the product (which is different from the content)</li>
+					</ul>
+					<li>Good guidelines result in better APIs and more effective API teams</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="lessons-learned">
+				<title>Lessons Learned</title>
+				<ol>
+					<li>What are the main challenges to start your API journey?</li>
+					<li>Why do organizations often struggle to scale their API journey?</li>
+					<li>How can API guidelines help as a way to share API practices across API product teams?</li>
+				</ol>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="microservices">
 		<title>Microservices</title>
