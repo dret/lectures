@@ -839,6 +839,34 @@
 			<title>DevOps</title>
 			<slide id="products">
 				<title>From Projects to Products</title>
+				<ul>
+					<li><em>Why</em> are microservices an important development?</li>
+					<ul>
+						<li>Decoupling teams for more autonomy which result in <em>faster delivery</em></li>
+						<li>Components should be evolved and updated <em>based on consumer feedback</em></li>
+						<li>Microservices are not (just) for development but (more importantly) for evolution</li>
+					</ul>
+					<li>Traditional development has long cycles for product iterations</li>
+					<ul>
+						<li>Creating requirements that are provided to a project team</li>
+						<li>Project teams deliver the result and move on to the next project</li>
+						<li>Products are operational but disconnected from their roots</li>
+						<li>Evolving products turns into another full project cycle</li>
+					</ul>
+					<li><em>DevOps</em> ensures that products can be evolved more effectively</li>
+				</ul>
+			</slide>
+			<slide id="lifecycle">
+				<title>Lifecycle: From Idea to Production</title>
+				<ul>
+					<ol><em>Coding:</em> code development and review, source code management tools, code merging</ol>
+					<ol><em>Building:</em> continuous integration tools, build status</ol>
+					<ol><em>Testing:</em> continuous testing tools that provide quick and timely feedback on business risks</ol>
+					<ol><em>Packaging:</em> artifact repository, application pre-deployment staging</ol>
+					<ol><em>Releasing:</em> change management, release approvals, release automation</ol>
+					<ol><em>Configuring:</em> infrastructure configuration and management, infrastructure as code tools</ol>
+					<ol><em>Monitoring:</em> applications performance monitoring, end-user experience</ol>
+				</ul>
 			</slide>
 			<slide id="productops">
 				<title>ProductOps: From Value to Product</title>
