@@ -659,6 +659,7 @@
 	<presentation id="microservices">
 		<title short="Microservices and DevOps">Microservices and DevOps: Using APIs for Increased Velocity</title>
 		<toc class="abstract">Microservices come with the promise of decreasing the dependencies between teams and thereby increasing the velocity of developing and evolving digital capabilities. While Microservices can help with that, it is important to understand that they are just an architecture pattern, and that other aspects are equally important for realizing the promise of Microservices. One of these aspects is DevOps which means that teams have more autonomy and responsibility regarding the operational aspects of the services that they own. In this presentation we look at how Microservices and DevOps relate, and which other aspects are equally important when it comes to increasing the velocity of your organization.</toc>
+		<toc class="resources"><a href="https://www.oreilly.com/library/view/microservice-architecture/9781491956328/" title="Mike Amundsen, Matt McLarty, Ronnie Mitra, and Irakli Nadareishvili, &quot;Microservice Architecture: Aligning Principles, Practices, and Culture&quot;, O'Reilly Media, June 2016">MSA Book</a>&#160;· <a href="https://martinfowler.com/microservices/" title="Martin Fowler's Microservices Resource Guide">Microservices Resource Guide</a></toc>
 		<date short="2021-02-24">February 24, 2021</date>
 		<slide id="summary">
 			<title>Summary</title>
