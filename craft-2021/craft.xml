@@ -27,10 +27,15 @@
 	<title><a href="https://craft-conf.com/">Craft</a> 2021</title>
 	<presentation id="index">
 		<title>How APIs Change Software Development</title>
+		<toc class="abstract">...</toc>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 		<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com">Catalyst</a></affiliation>
 		<date short="2021-??-??">?? ??, 2021</date>
 		<copyright>2021 Erik Wilde</copyright>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 		<part id="intro">
 			<title>Introduction</title>
 			<slide id="dret">
