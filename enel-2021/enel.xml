@@ -70,8 +70,143 @@
 		<part id="platform">
 			<title>Why Platforms?</title>
 		</part>
-		<part id="program">
-			<title>API Programs</title>
+		<part id="journey">
+			<title>The API Journey</title>
+			<part id="journey">
+				<title>Journey Essentials</title>
+				<slide id="small">
+					<title>Start Small</title>
+					<img src="api-bones.png" title="Proto-API" style="float: right ; width : 25% ; margin : 5% ; "/>
+					<ul>
+						<li>Identify <em>low-hanging fruit</em> for quick success and feedback</li>
+						<ul>
+							<li><a href="https://www.youtube.com/watch?v=67FTcwtxYIs">API Archaeology</a> is a good way to find candidates</li>
+						</ul>
+						<li>Switch from <q>building systems</q> to <q>cultivating ecosystems</q></li>
+						<ul>
+							<li>Focus on constraints (what to do) over rules (how to do it)</li>
+							<li>Only govern when you must (autonomy) and not when you can (authority)</li>
+						</ul>
+						<li>Start building a culture and a community</li>
+						<ul>
+							<li><em>API Guidelines</em> should reflect the lived reality in an organization</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="change">
+					<title>Design for Change</title>
+					<ul>
+						<li>Ecosystem architecture and system architecture are distinct disciplines</li>
+						<ul>
+							<li>APIs allow you to start building a landscape of API products</li>
+							<li>How to build API products is a different and distinct task</li>
+						</ul>
+						<li>The role of ecosystem architecture is to support development teams</li>
+						<ul>
+							<li>Constrain them as much as necessary but as little as possible</li>
+							<li>Cleanly separate constraints from how to implement them</li>
+							<li>Provide support for following constraints and testing for them</li>
+						</ul>
+						<li>Always ask yourself how much effort it is to change course</li>
+						<ul>
+							<li>Good ecosystem architecture scales over size and time and change frequency</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="landscape">
+					<title>Cultivate the Landscape</title>
+					<ul>
+						<li>Be clear on your vision and strategy</li>
+						<li>Start with small and focused effort and teams</li>
+						<li>Build up competencies and ways to share them across teams</li>
+						<li>Shift from centralized systems to decentralized ecosystems</li>
+					</ul>
+				</slide>
+				<slide id="stalling">
+					<title>Scaling is not Easy</title>
+					<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" class="fullsize"/>
+				</slide>
+			</part>
+			<part id="strategy">
+				<title>Strategic API Focus</title>
+				<slide id="two-api-goals">
+					<title>Two Common API Goals</title>
+					<img title="Internal and External API Usage" src="api-internal-external.png" class="fullsize"/>
+				</slide>
+				<slide id="external">
+					<title>Scenario 1: Engaging in the API Economy</title>
+					<img src="money-press.gif" title="API Money Press" style="float: right ; width : 25% ; margin : 2% ; "/>
+					<ul>
+						<li>Direct API monetization</li>
+						<li>API foundation for user journeys (omni-channel)</li>
+						<li>Value chain optimization (outsourced APIs)</li>
+					</ul>
+				</slide>
+				<slide id="internal">
+					<title>Scenario 2: APIs for Modular Architecture</title>
+					<ul>
+						<li>Moving from integration to interconnection (IT modernization)</li>
+						<li>Decoupling products and their development cycles and speed</li>
+						<li>Improving capability reuse across the whole organization</li>
+					</ul>
+				</slide>
+			</part>
+			<part id="execution">
+				<title>From Vision to Value</title>
+				<slide id="execution-gap">
+					<title>Mind the Gap</title>
+					<img title="Grand Canyon" src="grand-canyon.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="strategy">
+					<title>API Strategy = Pillars × Perspectives</title>
+					<table style="border-collapse: collapse ; ">
+						<tr>
+							<td/>
+							<th style="border: 1px solid black ; padding: 0.5em">External</th>
+							<th style="border: 1px solid black ; padding: 0.5em">Internal</th>
+						</tr>
+						<tr>
+							<th style="border: 1px solid black ; padding: 0.5em">Biz</th>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">API monetization</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Revenue-supporting APIs</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase speed &amp; feedback</li>
+							</ul></td>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Identify &amp; stabilize enablers</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Design for externalization</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase biz insight with dashboards</li>
+							</ul></td>
+						</tr>
+						<tr>
+							<th style="border: 1px solid black ; padding: 0.5em">Org</th>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Focus on documentation/DX</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Support discovery/self-service</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Collect DX feedback</li>
+							</ul></td>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Products &gt; projects (ownership)</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Team enablement/support</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loose coupling for speed/agility</li>
+							</ul></td>
+						</tr>
+						<tr>
+							<th style="border: 1px solid black ; padding: 0.5em">Tech</th>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Tech trends and popularity</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Invest in on-boarding support</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Secure through platform</li>
+							</ul></td>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loosely coupled implementations</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Observe patterns and practices</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Establish C4E for platform/support</li>
+							</ul></td>
+						</tr>
+					</table>
+				</slide>
+			</part>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
