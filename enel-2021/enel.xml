@@ -69,6 +69,78 @@
 		</part>
 		<part id="platform">
 			<title>Why Platforms?</title>
+			<slide id="speed-of-change">
+				<title>The World is Changing Faster</title>
+				<img src="rotating-earth.gif" style="float: right ; width : 20% ; margin : 3% ; "/>
+				<ul>
+					<li>Existing value chains may be challenged and must adapt</li>
+					<li>Global connectivity enables new opportunities to scale</li>
+					<li>A networked economy creates many network effects</li>
+					<li>Changing markets require changes in products and value propositions</li>
+				</ul>
+			</slide>
+			<slide id="linear-businesses">
+				<title>Linear Business Models</title>
+				<img src="platforms-linear.png" class="fullsize"/>
+			</slide>
+			<slide id="platforms-eating-the-world">
+				<title>Platforms are Eating the World</title>
+				<img src="zweite-hand.jpg" title="Zweite Hand" style="float: right ; width : 35% ; margin : 3% ; "/>
+				<ul>
+					<li>Platforms businesses are taking over many markets</li>
+					<li>Platforms <em>facilitate value exchanges</em></li>
+					<li>Platforms <em>scale well</em></li>
+					<li>Platforms <em>are using the network effect</em></li>
+					<li>Platforms are a lesson in <q>thinking beyond the linear model</q></li>
+				</ul>
+			</slide>
+			<slide id="business-platform">
+				<title>The Platform Business Model</title>
+				<img src="platforms-platform.png" class="fullsize"/>
+			</slide>
+			<slide id="platform-types">
+				<title>Platform Types</title>
+				<ul>
+					<li>Platform business models come in two flavors</li>
+					<li><em>Exchange platforms</em> facilitate exchanges of existing value</li>
+					<ul>
+						<li>Value is transferred and often limited in supply by producers</li>
+						<li>The core transaction often has to be made as frictionless as possible</li>
+					</ul>
+					<li><em>Maker platforms</em> support creation of value on the platform</li>
+					<ul>
+						<li>Value is exposed and often unlimited in supply</li>
+						<li>The core transaction often is designed to improve value creation/consumption</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="not-google">
+				<title>But … We're not Google</title>
+				<ul>
+					<li><q>Pure platforms</q> are more the exception than the norm</li>
+					<li><em>Linear business</em> models can be augmented with platform ideas</li>
+					<li>Creating <em>hybrid models</em> can make a big difference</li>
+					<ul>
+						<li>Opportunity to <em>scale</em> because the platform part attracts consumers</li>
+						<li>Ability to <em>differentiate</em> in an increasingly commoditized market</li>
+						<li><em>Decreasing risk</em> because of more feedback and ability to adapt</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="hybrid">
+				<title>Hybrid Linear/Platform Business Models</title>
+				<img src="platforms-hybrid.png" class="fullsize"/>
+			</slide>
+			<slide id="smyte">
+				<title>A Cautionary Tale</title>
+				<img src="smyte.png" href="https://www.cnet.com/news/twitter-bought-an-anti-harassment-startup-and-immediately-shut-it-down-smyte/" style="float: right ; width : 20% ; margin : 3% ; "/>
+				<ul>
+					<li>Many organizations are adding social features to their products/experiences</li>
+					<li>Protecting against trolling, spam, and harassment is important</li>
+					<li>Building robust social protections is not trivial</li>
+					<li>Organizations end up with dependencies in their value chains</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="journey">
 			<title>The API Journey</title>
