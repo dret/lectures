@@ -43,6 +43,62 @@
 				</div>
 			</slide>
 		</part>
+		<part id="deprecation">
+			<title>API Deprecation</title>
+			<slide id="deprecation-motivation">
+				<title>Deprecation: Motivation</title>
+				<h2>I-D: <code href="https://datatracker.ietf.org/doc/draft-ietf-httpapi-deprecation-header/">draft-ietf-httpapi-deprecation-header</code></h2>
+				<h3>Authors: Sanjay Dalal and Erik Wilde</h3>
+				<ul>
+					<li><a href="https://tools.ietf.org/html/rfc8594"><q>The Sunset Header Field</q> (RFC 8594)</a> is useful but has limited semantics</li>
+					<li>API consumers should be able to find out about upcoming or existing deprecation</li>
+					<ul>
+						<li><q>Deprecation</q> refers to an API being still functional, but not recommended to use anymore</li>
+					</ul>
+					<li>Additional resources: </li>
+					<ul>
+						<li>Blog article: <q><a href="https://apifriends.com/api-management/api-lifecycle-management-deprecation-and-sunsetting/">API Lifecycle Management: Deprecation and Sunsetting</a></q></li>
+						<li>YouTube video: <q><a href="https://www.youtube.com/watch?v=twfufQn1mD0&amp;list=UUDD75qoXHJSz4pv0o3WcTUw">API Lifecycle Management: Deprecation and Sunsetting</a></q></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="deprecation-model">
+				<title>Deprecation Model</title>
+				<ul>
+					<li>A <em>deprecated API</em> is still operational but should be treated with caution</li>
+					<li>Deprecation is signaled with a simple HTTP header field</li>
+					<ul>
+						<li>
+							<code>Deprecation: Sun, 11 Nov 2018 23:59:59 GMT</code>
+						</li>
+					</ul>
+					<li>Deprecation scoping is up for the API to decide</li>
+					<ul>
+						<li>Header field can show up everywhere or just on specific resources</li>
+						<li>Deprecation can affect the entire API or specific aspects of it</li>
+						<li>There are no provisions to deprecate anything below the resource level</li>
+					</ul>
+					<li>Additional information can be made available via <code>deprecation</code> links</li>
+					<ul>
+						<li>There is not defined format for this resource (it's probably developer documentation)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="deprecation-history">
+				<title>Deprecation: History</title>
+				<img src="deprecation-history.png" href="https://datatracker.ietf.org/doc/draft-ietf-httpapi-deprecation-header/" style="float: left ; width : 90% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>First version: February 2019</li>
+					<li>Published versions: 6</li>
+					<li>History &amp; collaboration</li>
+					<ul>
+						<li>Datatracker: <code href="https://datatracker.ietf.org/doc/draft-ietf-httpapi-deprecation-header/">draft-ietf-httpapi-deprecation-header</code></li>
+						<li>Repo: <code href="https://github.com/ietf-wg-httpapi/deprecation-header">github.com/ietf-wg-httpapi/deprecation-header</code></li>
+						<li>Issues: <code href="https://github.com/ietf-wg-httpapi/deprecation-header/issues">github.com/ietf-wg-httpapi/deprecation-header/issues</code></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
