@@ -99,6 +99,58 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="linkset">
+			<title>Linkset</title>
+			<slide id="linkset-motivation">
+				<title>Linkset: Motivation</title>
+				<h2>I-D: <code href="https://datatracker.ietf.org/doc/draft-ietf-httpapi-linkset/">draft-ietf-httpapi-linkset</code></h2>
+				<h3>Authors: Erik Wilde and Herbert Van de Sompel</h3>
+				<ul>
+					<li><q><a href="https://tools.ietf.org/html/rfc8288">Web Linking</a></q> only defines an HTTP header field but no media types</li>
+					<li>Various scenarios call for solutions where links are treated as resources</li>
+					<ul>
+						<li>Large sets of links can be hard to embed in HTTP header fields</li>
+						<li>Some scenarios call for links being supplied by a third party</li>
+					</ul>
+					<li>Define media types that allow sets of links to become standalone resources</li>
+				</ul>
+			</slide>
+			<slide id="linkset-model">
+				<title>Linkset Model</title>
+				<ul>
+					<li><q><a href="https://tools.ietf.org/html/rfc8288">Web Linking</a></q> defines a model and a serialization for <em>web links</em></li>
+					<li><code>application/linkset</code> is registered as a media type for RFC 8288 syntax</li>
+					<li><code>application/linkset+json</code> is defined and registered as a JSON syntax for web links</li>
+					<ul>
+						<li>The JSON design makes it easy to apply JSON-LD context definitions</li>
+					</ul>
+					<li>Linksets as standalone resources require careful handling of the context</li>
+					<ul>
+						<li>Context is implicit for RFC 8288 scenarios</li>
+						<li>Context must be captured for <q>linksets as resources</q> scenarios</li>
+					</ul>
+					<li>Resources can link to links pertaining to them using the <code>linkset</code> link relation</li>
+				</ul>
+			</slide>
+			<slide id="linkset-example">
+				<title>Linkset Example</title>
+				<listing src="linkset.json"></listing>
+			</slide>
+			<slide id="linkset-history">
+				<title>Linkset: History</title>
+				<img src="linkset-history.png" href="https://datatracker.ietf.org/doc/draft-ietf-httpapi-linkset/" style="float: left ; width : 90% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>First version: December 2016</li>
+					<li>Published versions: 12</li>
+					<li>History &amp; collaboration</li>
+					<ul>
+						<li>Datatracker: <code href="https://datatracker.ietf.org/doc/draft-ietf-httpapi-linkset">draft-ietf-httpapi-linkset</code></li>
+						<li>Repo: <code href="https://github.com/ietf-wg-httpapi/linkset">github.com/ietf-wg-httpapi/linkset</code></li>
+						<li>Issues: <code href="https://github.com/ietf-wg-httpapi/linkset/issues">github.com/ietf-wg-httpapi/linkset/issues</code></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
