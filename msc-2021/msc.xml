@@ -66,9 +66,50 @@
 		</part>
 		<part id="vision">
 			<title>Vision matters</title>
+			<slide id="vision">
+				<title>From Vision to Reality: Plan, Execute, Enjoy</title>
+				<img title="Grand Canyon" src="grand-canyon.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 			<slide id="transformation-value">
 				<title>Getting started is hard, scaling up is even harder</title>
 				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/seven-lessons-on-how-technology-transformations-can-deliver-value" title='"Seven lessons on how technology transformations can deliver value", McKinsey Survey, March 2021' src="transformation-value.png" class="fullsize"/>
+			</slide>
+			<slide id="gs1-video">
+				<title><a href="https://www.youtube.com/watch?v=bbZOPO5Ming&amp;list=UUDD75qoXHJSz4pv0o3WcTUw">GS1 Digital Link: An API for Every Thing</a></title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/bbZOPO5Ming" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+		</part>
+		<part id="scaling">
+			<title>Scaling API Initiatives</title>
+			<slide id="scaling-is-hard">
+				<title>Getting started is hard, scaling up is even harder</title>
+				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" class="fullsize"/>
+			</slide>
+			<slide id="programs-products-platforms">
+				<title>API Programs connect Products and Platforms</title>
+				<ul>
+					<li><em>API products</em> are products with APIs built by individual teams</li>
+					<li><em>API platforms</em> are tooling and infrastructure for API products</li>
+					<li><em>API programs</em> optimize API production by managing the API platform</li>
+				</ul>
+			</slide>
+			<slide id="program-areas">
+				<title>API Program Areas</title>
+				<ul>
+					<li>API programs are essential for scaling API initiatives</li>
+					<li>API programs have to cover various areas</li>
+					<ul>
+						<li><em>Strategic Alignment</em> for aligning with other initiatives and activities</li>
+						<li><em>Organization &amp; Culture</em> so that teams can work effectively</li>
+						<li><em>Awareness &amp; Adoption</em> so that API usage is maximized</li>
+						<li><em>Observation</em> for managing program impact and evolution</li>
+						<li><em>Providing an API Platform</em> for providers and consumers to build on</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
