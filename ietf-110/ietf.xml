@@ -136,6 +136,13 @@
 				<title>Linkset Example</title>
 				<listing src="linkset.json"></listing>
 			</slide>
+			<slide id="linkset-implementations">
+				<title>Linkset Implementations</title>
+				<ul>
+					<li><a href="https://www.gs1.org/standards/gs1-digital-link">GS1 Digital Link</a></li>
+					<li><a href="https://signposting.org/FAIR/">FAIR Signposting Profile specification for scholarly resources</a></li>
+				</ul>
+			</slide>
 			<slide id="linkset-history">
 				<title>Linkset: History</title>
 				<img src="linkset-history.png" href="https://datatracker.ietf.org/doc/draft-ietf-httpapi-linkset/" style="float: left ; width : 90% ; margin : 0% 4% 4% 4% ; "/>
