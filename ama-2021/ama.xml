@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
 <?hotspot layout-path="hotspot/hotspot/layout" ?>
 <?hotspot kilauea-path="hotspot/kilauea" ?>
-<?hotspot layout="catalyst" ?>
+<?hotspot layout="catalyst-new" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 	<configuration>
@@ -38,6 +38,7 @@
 					<tr class="vevent">
 						<td valign="top"><b><span class="summary"><hotspot:title/></span></b></td>
 						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+						<td align="center"><hotspot:toc class="resources"/></td>
 					</tr>
 				</hotspot:for-each-presentation>
 			</tbody>
@@ -50,6 +51,7 @@
 	<copyright>2021 Erik Wilde</copyright>
 	<presentation id="03-23">
 		<title>Internal Presentation and Discussion</title>
+		<toc class="resources"><a href="https://axway.jiveon.com/docs/DOC-156170"><q>AMA First Working Draft</q> on Jive</a>&#160;· <a href="https://github.com/dret/API-Compass"><q>API Compass</q> on GitHub</a></toc>
 		<date short="2021-03-23">March 23, 2020</date>
 		<slide id="thanks">
 			<title>Thank You!</title>
