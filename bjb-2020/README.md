@@ -1,6 +1,6 @@
 # Julius Bär Presentations
 
-Slides for Julius Bär Presentations presentations.
+Slides for Julius Bär presentations.
 
 ## License
 
