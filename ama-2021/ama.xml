@@ -99,6 +99,22 @@
 			</slide>
 			<slide id="productops">
 				<title>ProductOps</title>
+				<ul>
+					<li>Do you manage APIs as products?</li>
+					<ul>
+						<li>0: no, each API is just a technical endpoint</li>
+						<li>1: sort of, we try to keep APIs well-documented</li>
+						<li>2: yes, we have dedicated owners for all APIs</li>
+						<li>3: yes, and every API is managed and released in a unified way</li>
+					</ul>
+					<li>Do you manage products as APIs?</li>
+					<ul>
+						<li>0: no</li>
+						<li>1: for select products we have digital representations</li>
+						<li>2: thinking about "digital twins" is natural for us</li>
+						<li>3: product management owns APIs as essential aspects of all our products</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="bizops">
 				<title>BizOps</title>
