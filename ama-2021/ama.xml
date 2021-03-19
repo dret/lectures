@@ -102,6 +102,23 @@
 			</slide>
 			<slide id="bizops">
 				<title>BizOps</title>
+				<ul>
+					<li>Are you using APIs for internal and/or external purposes?</li>
+					<ul>
+						<li>0: no</li>
+						<li>1: yes, but only internally</li>
+						<li>1: yes, but only externally</li>
+						<li>2: both internally and externally but without an aligned strategy</li>
+						<li>3: both internally and externally and based on an aligned strategy</li>
+					</ul>
+					<li>How open is the business mindset to experimenting new ideas/tools and failing?</li>
+					<ul>
+						<li>0: failure is not an option</li>
+						<li>1: we release early to get feedback and iterate to avoid failing</li>
+						<li>2: product management uses a data-driven approach to minimize failures and to make informed decisions</li>
+						<li>3: failure is a learning opportunity and we routinely discontinue products</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="next-steps">
