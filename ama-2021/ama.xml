@@ -121,6 +121,22 @@
 			</slide>
 			<slide id="devops">
 				<title>DevOps</title>
+				<ul>
+					<li>Are you validating APIs against the guidelines?</li>
+					<ul>
+						<li>0: no, we pray a lot</li>
+						<li>1: yes, we can check manually</li>
+						<li>2: yes, and we use a tool that validates APIs for good practices</li>
+						<li>3: yes, and we have a tool that checks for compliance with our guidelines</li>
+					</ul>
+					<li>How far does your release automation go?</li>
+					<ul>
+						<li>0: we use manual processes</li>
+						<li>1: we have a pipeline which deploys API proxies through dev/test/prod</li>
+						<li>2: our pipeline also integrates testing</li>
+						<li>3: our pipeline also integrates documentation and sample code</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="productops">
 				<title>ProductOps</title>
