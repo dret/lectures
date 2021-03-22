@@ -93,6 +93,23 @@
 			</slide>
 			<slide id="infraops">
 				<title>InfraOps</title>
+				<ul>
+					<li>Scaling of API management platform</li>
+					<ul>
+						<li>0: we have a static environment with enough capacity and we don't need to scale our systems up or down</li>
+						<li>1: we have pre-created virtual machines which are added in time of high demand</li>
+						<li>2: we automatically scale virtual machines in line with demand in API traffic</li>
+						<li>3: we have a container-based architecture to scale up or down</li>
+					</ul>
+					<li>API status</li>
+					<ul>
+						<li>0: we don't monitor the status of individual APIs</li>
+						<li>1: we observe the healthcheck endpoint of each individual API</li>
+						<li>2: we monitor the status of every API for internal usage</li>
+						<li>3: we provide a status dashboard for all APIs</li>
+						<li>4: we provide a status API for all APIs</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="devops">
 				<title>DevOps</title>
