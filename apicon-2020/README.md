@@ -1,6 +1,6 @@
 # API Conference Berlin 2020 Presentation
 
-Slides for presentation at [API Conference Berlin](https://apiconference.net/).
+Slides for presentation at [API Conference](https://apiconference.net/) [Berlin](https://apiconference.net/berlin/).
 
 ## License
 
