@@ -32,12 +32,10 @@
 		<date short="2021-04-01">April 1, 2021</date>
 		<copyright>2021 Erik Wilde</copyright>
 		<toc class="abstract">Everybody talks about platforms today, and depending who you talk to, the underlying ideas can differ widely between very technical details on the one side, and very much business-oriented models on the other side. In this presentation, we look at these different ideas of a platform and show how they relate to give us some guidance in this area where IT and business must cooperate more than ever before. We also look at experiences in large organizations that have set out to build these platforms and give you examples of patterns and anti-patterns that we have observed. This helps you to better plan your own platform initiative so that you can be more confident about the journey ahead.</toc>
-<!--
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
--->
 		<part id="intro">
 			<title>Introduction</title>
 			<slide id="dret">
@@ -75,11 +73,11 @@
 			<title>What's Hard About <q>Digital Transformation</q>?</title>
 			<slide id="perspective">
 				<title>It's tough work but it's necessary</title>
-				<img href="https://en.wikipedia.org/wiki/2021_Suez_Canal_obstruction" src="evergreen-suez-apis.jpg" class="fullsize-left"/>
+				<img href="https://en.wikipedia.org/wiki/2021_Suez_Canal_obstruction" src="evergreen-suez-apis.jpg" class="fullsize"/>
 			</slide>
 			<slide id="stalling">
 				<title>It's from now until forever…</title>
-				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" class="fullsize-left"/>
+				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" class="fullsize"/>
 			</slide>
 			<slide id="digital">
 				<title>Digital</title>
@@ -118,7 +116,7 @@
 			<title>Boiling the Ocean</title>
 			<slide id="ocean-intro">
 				<title>Change Takes Time</title>
-				<img src="lava-sea.jpg" class="fullsize-left"/>
+				<img src="lava-sea.jpg" class="fullsize"/>
 			</slide>
 			<slide id="ocean-anti-pattern">
 				<title>Boiling the Ocean: Anti-Pattern</title>
@@ -154,7 +152,7 @@
 			<title>Community Creates Culture</title>
 			<slide id="community-intro">
 				<title>Castles Rarely Change</title>
-				<img src="hohenzollern-castle.jpg" title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" class="fullsize-left"/>
+				<img src="hohenzollern-castle.jpg" title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" class="fullsize"/>
 			</slide>
 			<slide id="community-anti-pattern">
 				<title>Community: Anti-Pattern</title>
@@ -183,7 +181,7 @@
 			<title>Scaling Matters</title>
 			<slide id="scale-intro">
 				<title>Quality over Quantity</title>
-				<img src="supermarket.jpg" title="How many do you need?" href="https://en.wikipedia.org/wiki/Supermarket#/media/File:Fredmeyer_edit_1.jpg" class="fullsize-left"/>
+				<img src="supermarket.jpg" title="How many do you need?" href="https://en.wikipedia.org/wiki/Supermarket#/media/File:Fredmeyer_edit_1.jpg" class="fullsize"/>
 			</slide>
 			<slide id="scaling-anti-pattern">
 				<title>Scaling: Anti-Pattern</title>
@@ -217,7 +215,7 @@
 			<title>Diversity Fuels Ecosystems</title>
 			<slide id="diversity-intro">
 				<title>There is no Best Practice/Tool/Tech</title>
-				<img src="tool-bench.jpg" href="https://www.reddit.com/r/oddlysatisfying/comments/g3zcj2/my_dads_incredibly_organized_tool_bench/" class="fullsize-left"/>
+				<img src="tool-bench.jpg" href="https://www.reddit.com/r/oddlysatisfying/comments/g3zcj2/my_dads_incredibly_organized_tool_bench/" class="fullsize"/>
 			</slide>
 			<slide id="diversity-anti-pattern">
 				<title>Diversity: Anti-Pattern</title>
