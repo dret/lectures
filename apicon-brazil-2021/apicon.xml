@@ -77,12 +77,48 @@
 		</part>
 		<part id="gateways">
 			<title>API Gateways: Managing Technology</title>
+			<slide id="api-growth">
+				<title>API Growth needs Management</title>
+				<img src="gateway-portal-catalog-growth.png" class="fullsize-left"/>
+			</slide>
+			<slide id="api-gateways">
+				<title>API Gateways: Productized Management</title>
+				<img src="gateway-portal-catalog-gateway.png" class="fullsize-left"/>
+			</slide>
 		</part>
 		<part id="portals">
 			<title>API Portals: Focus on Users</title>
+			<slide id="api-portals">
+				<title>API Portals: Make APIs Usable</title>
+				<img src="gateway-portal-catalog-portal.png" class="fullsize-left"/>
+			</slide>
+			<slide id="api-multigateway">
+				<title>API Gateway Sprawl</title>
+				<img src="gateway-portal-catalog-multigateway.png" class="fullsize-left"/>
+			</slide>
+			<slide id="api-multiportal">
+				<title>API Gateway Sprawl</title>
+				<img src="gateway-portal-catalog-multiportal.png" class="fullsize-left"/>
+			</slide>
+			<slide id="api-custom-portal">
+				<title>API Custom Portals</title>
+				<img src="gateway-portal-catalog-custom-portal.png" class="fullsize-left"/>
+			</slide>
 		</part>
 		<part id="catalogs">
 			<title>API Catalogs: Focus on Value</title>
+			<slide id="api-catalog">
+				<title>Focusing on API Value</title>
+				<img src="gateway-portal-catalog-catalog.png" class="fullsize-left"/>
+			</slide>
+			<slide id="api-uniportal">
+				<title>Unified Portal with Unified Catalog</title>
+				<img src="gateway-portal-catalog-uniportal.png" class="fullsize-left"/>
+			</slide>
+			<slide id="api-decoupled">
+				<title>Decouple API Tech and API Value</title>
+				<img src="gateway-portal-catalog-decoupled.png" class="fullsize-left"/>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
