@@ -73,6 +73,23 @@
 			<title>A Brief History of API Management</title>
 			<slide id="api-history">
 				<title>A Brief History of APIs</title>
+				<ul>
+					<li>APIs for interconnecting programs have been around since the 1950s</li>
+					<ul>
+						<li>Reuse in programming needs APIs (libraries)</li>
+						<li>Every operating system needs APIs (system libraries)</li>
+					</ul>
+					<li>APIs for interconnecting computers have been around since the 1960s</li>
+					<ul>
+						<li><q>Network APIs</q> were called <em>communication protocols</em> for most of history</li>
+						<li>Computer networks make no sense without <q>communication protocols</q></li>
+					</ul>
+					<li>The 1990s saw the rise of the Internet and the Web</li>
+					<ul>
+						<li>B2B interconnections existed but weren't designed/meant to scale</li>
+						<li>2000 saw the first companies launching their APIs (<a href="https://blog.postman.com/intro-to-apis-history-of-apis/">Salesforce, eBay, </a>…)</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="api-internal">
 				<title>APIs as Intra-Organizational Interfaces</title>
