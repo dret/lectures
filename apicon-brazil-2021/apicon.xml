@@ -205,6 +205,17 @@
 		</part>
 		<part id="catalogs">
 			<title>API Catalogs: Focus on Value</title>
+			<slide id="catalog-idea">
+				<title>Collect Digital Building Blocks</title>
+				<ul>
+					<li>Many gateways are provided by infrastructure/solution vendors</li>
+					<li>APIs should be visible regardless of how/where they are provided</li>
+					<ul>
+						<li>This is one of the <em>main value propositions</em> of APIs</li>
+					</ul>
+					<li>Provide a unifying <em>catalog</em> on top of the technical <em>gateways</em></li>
+				</ul>
+			</slide>
 			<slide id="api-catalog">
 				<title>Focusing on API Value</title>
 				<img src="gateway-portal-catalog-catalog.png" class="fullsize-left"/>
