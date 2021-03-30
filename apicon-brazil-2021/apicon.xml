@@ -187,6 +187,13 @@
 				<title>API Gateway Sprawl</title>
 				<img src="gateway-portal-catalog-multigateway.png" class="fullsize-left"/>
 			</slide>
+			<slide id="gateway-portal">
+				<title>Gateways &amp; Portals</title>
+				<ul>
+					<li>Most portals were provided by gateway vendors</li>
+					<li>Portals mostly conceived <q>inside-out</q> and not <q>outside-in</q></li>
+				</ul>
+			</slide>
 			<slide id="api-multiportal">
 				<title>Using Multiple Portals</title>
 				<img src="gateway-portal-catalog-multiportal.png" class="fullsize-left"/>
