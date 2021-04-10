@@ -54,7 +54,7 @@
 	<presentation id="business">
 		<title short="Business">The Business of APIs</title>
 		<toc class="abstract">...</toc>
-		<toc class="resources"></toc>
+		<toc class="resources"><a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/seven-lessons-on-how-technology-transformations-can-deliver-value" title='"Seven lessons on how technology transformations can deliver value", McKinsey Survey, March 2021'>Seven Transformation Lessons</a></toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -77,6 +77,13 @@
 					</ul>
 				</ul>
 			</slide>
+			<part id="api-business">
+				<title>API Business Value</title>
+				<slide id="alignment">
+					<title>Aligning Business and IT Strategy</title>
+					<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/seven-lessons-on-how-technology-transformations-can-deliver-value" title='"Seven lessons on how technology transformations can deliver value", McKinsey Survey, March 2021' src="bridging-business-tech-gap.png" class="fullsize-left"/>
+				</slide>
+			</part>
 			<slide id="hype-cycle">
 				<title>Hype Cycle</title>
 				<img src="hype-cycle.png" href="https://en.wikipedia.org/wiki/Hype_cycle" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
