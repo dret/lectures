@@ -100,10 +100,11 @@
 		<part id="standards-intro">
 			<title>Standards: A Brief Introduction</title>
 			<slide id="standards-value">
-				<title>Two Standard Value Propositions</title>
+				<title>Three Standard Value Propositions</title>
 				<ol>
 					<li>Provide <em>a stable foundation</em> and out-of-the-box interoperability</li>
 					<li>Provide <em>stable building blocks</em> for a shorter time-to-value</li>
+					<li>Reduce dependency risk because you can more easily switch suppliers</li>
 				</ol>
 			</slide>
 			<slide id="foundations">
@@ -114,7 +115,7 @@
 				<title>Standards are Building Blocks</title>
 				<img title="Volkswagen Group Platforms November 2020" src="volkswagen-group-platforms.jpg" class="fullsize-left"/>
 			</slide>
-			<slide id="trade-off">
+			<slide id="risk-reduction">
 				<title>Value vs. Effort/Risk</title>
 				<img title="Mavic Support Car" src="mavic-support-car.jpg" class="fullsize-left"/>
 			</slide>
@@ -181,10 +182,40 @@
 			</slide>
 		</part>
 		<part id="focus">
-			<title>Focus on Value and Differentiation</title>
+			<title>Focus on Products and Landscape</title>
+			<slide id="product-focus">
+				<title>Product Focus: Reduce Time-to-Value</title>
+				<ul>
+					<li>Make it easier to build APIs by <em>not re-inventing wheels</em></li>
+				</ul>
+			</slide>
+			<slide id="landscape-focus">
+				<title>Landscape Focus: Optimize Landscape Value</title>
+				<ul>
+					<li>Make it easier to build APIs by <em>not re-inventing wheels</em></li>
+				</ul>
+			</slide>
+			<slide id="examples">
+				<title>Some Examples</title>
+				<ul>
+					<li>HTTP Problem Reports (<a href="https://tools.ietf.org/html/rfc7807">RFC 7807</a> which is <a href="https://github.com/ietf-wg-httpapi/rfc7807bis">being revised</a>)</li>
+					<li><a href="https://tools.ietf.org/html/draft-inadarei-api-health-check">HTTP API Health Check Response Format</a></li>
+					<li>HTTP header fields for <a title="API Lifecycle Management: Deprecation and Sunsetting" href="https://www.youtube.com/watch?v=twfufQn1mD0">managing the API lifecycle</a></li>
+					<ul>
+						<li><code>Deprecation</code> for signaling API deprecation (<a href="https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-deprecation-header">under development</a>)</li>
+						<li><code>Sunset</code> for signaling API shutdown (<a href="https://tools.ietf.org/html/rfc8594">RFC 8594</a>) </li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="wiifm">
+				<title>What's in it for me?</title>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="standards-strategy">
+				<title>Treat Standards Strategically</title>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
