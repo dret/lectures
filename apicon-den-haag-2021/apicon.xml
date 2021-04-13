@@ -99,6 +99,13 @@
 		</part>
 		<part id="standards-intro">
 			<title>Standards: A Brief Introduction</title>
+			<slide id="standards-value">
+				<title>Two Standard Value Propositions</title>
+				<ol>
+					<li>Provide <em>a stable foundation</em> and out-of-the-box interoperability</li>
+					<li>Provide <em>stable building blocks</em> for a shorter time-to-value</li>
+				</ol>
+			</slide>
 			<slide id="foundations">
 				<title>Standards are a Foundation</title>
 				<img title="Highway Network" src="highways.jpg" class="fullsize-left"/>
@@ -106,6 +113,10 @@
 			<slide id="building-blocks">
 				<title>Standards are Building Blocks</title>
 				<img title="Volkswagen Group Platforms November 2020" src="volkswagen-group-platforms.jpg" class="fullsize-left"/>
+			</slide>
+			<slide id="trade-off">
+				<title>Value vs. Effort/Risk</title>
+				<img title="Mavic Support Car" src="mavic-support-car.jpg" class="fullsize-left"/>
 			</slide>
 		</part>
 		<part id="maturity">
