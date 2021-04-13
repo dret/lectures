@@ -111,19 +111,62 @@
 		<part id="maturity">
 			<title>How Standards Mature</title>
 			<slide id="patterns">
-				<title>Patterns</title>
+				<title>1. Patterns</title>
+				<ul>
+					<li>The same design questions have to be addressed in many APIs</li>
+					<li>It becomes apparent that these are necessary but not sufficient</li>
+					<ul>
+						<li>They are <em>necessary</em> because these issues need to be addressed</li>
+						<li>They are <em>not sufficient</em> because it's not how value is created</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="personal">
-				<title>Personal Standards</title>
+				<title>2. Personal Standards</title>
+				<ul>
+					<li>Addressing <link href="patterns"/> more effectively by reusing design elements</li>
+					<li>Helps with surfacing <q>we all seem to address the same issue</q> realizations</li>
+					<li>Increases <em>personal</em> efficiency but is ineffective for the organization</li>
+				</ul>
 			</slide>
 			<slide id="org">
-				<title>Organizational Standards</title>
+				<title>3. Organizational Standards</title>
+				<ul>
+					<li>Creating consistency across organizational APIs</li>
+					<ul>
+						<li>Less effort for API designers (focus on core design questions)</li>
+						<li>Less effort for API consumers (coherence across the API landscape)</li>
+					</ul>
+					<li><a href="https://dret.github.io/guidelines/">API Design Guidelines</a> are a well-known pattern</li>
+					<ul>
+						<li>Guidelines should be participatory and constantly evolving</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="vertical">
-				<title>Vertical Standards</title>
+				<title>4. Vertical Standards</title>
+				<ul>
+					<li>Domain-specific standards may emerge</li>
+					<ul>
+						<li>Many of these are <em>monolithic</em> and have interoperability in mind</li>
+						<li>Focusing more on <em>building blocks</em> could make efforts more effective</li>
+					</ul>
+					<li>Most often driven by consortia and their member organizations</li>
+				</ul>
 			</slide>
 			<slide id="global">
-				<title>Global Standards</title>
+				<title>5. Global Standards</title>
+				<img src="ietf-logo.png" title="Internet Engineering Task Force" href="https://www.ietf.org/" style="float: right ; clear : both ; width : 10% ; margin : 1% 3% 1% 3% ; "/>
+				<img src="w3c-logo.png" title="World Wide Web Consortium" href="https://www.w3.org/" style="float: right ; clear : both ; width : 10% ; margin : 1% 3% 1% 3%  ; "/>
+				<img src="iso-logo.png" title="International Organization for Standardization" href="https://www.iso.org/" style="float: right ; clear : both ; width : 10% ; margin : 1% 3% 1% 3%  ; "/>
+				<ul>
+					<li>Global standards body for cross-domain building blocks</li>
+					<li>High threshold and potentially time-consuming process</li>
+					<li>Best chance for tooling and other standards to evolve</li>
+					<ul>
+						<li>Stable building blocks provide the best foundation</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="focus">
