@@ -32,10 +32,12 @@
 	<presentation id="index">
 		<title>API Standards: Balancing Chaos and Rigidity</title>
 		<toc class="abstract">Managing API landscapes comes with the question of how unified the various APIs should be. Some coherence on basic technologies and design patterns clearly makes it easier for API consumers to use APIs across the landscape. But this coordination comes at a cost, and the question is how to find a good balance between improving the coherence across the landscape and decreasing the velocity of the organization because of coordination overhead. We look at various patterns how to approach this challenge and come away with the conclusion that focusing on building blocks and support structures around these building blocks is a promising path to find a good balance.</toc>
+<!--
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+-->
 		<part id="intro">
 			<title>Introduction</title>
 			<slide id="dret">
