@@ -127,7 +127,7 @@
 			<slide id="definition-7p">
 				<title>Expanded Product Marketing Mix: 7 Ps</title>
 				<ul>
-					<li>Extends the <link href="4p-definition">4 Ps</link> with a focus on services</li>
+					<li>Extends the <link href="definition-4p">4 Ps</link> with a focus on services</li>
 					<li>Framework for decision-making for services marketing</li>
 					<ul>
 						<li><em>People:</em> Considerations regarding service consumers (UX/CX)</li>
@@ -136,6 +136,18 @@
 					</ul>
 				</ul>
 			</slide>
+		</part>
+		<part id="api-design">
+			<title>Designing a Good API</title>
+		</part>
+		<part id="api-literary">
+			<title>Describing APIs</title>
+			<part id="openapi">
+				<title>OpenAPI</title>
+			</part>
+			<part id="asyncapi">
+				<title>AsyncAPI</title>
+			</part>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
