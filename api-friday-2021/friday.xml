@@ -69,21 +69,27 @@
 				<title>What is a Product?</title>
 				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-left" />
 			</slide>
-			<slide id="collaboration">
-				<title>API Value #1: Collaboration</title>
-			</slide>
-			<slide id="innovation">
-				<title>API Value #2: Innovation</title>
-			</slide>
-			<slide id="co-creation">
-				<title>API Value #3: Co-Creation</title>
-			</slide>
-			<slide id="digitalization">
-				<title>Scope #1: Digitalization</title>
-			</slide>
-			<slide id="api-economy">
-				<title>Scope #2: API Economy</title>
-			</slide>
+			<part id="api-value">
+				<title>API Value Propositions</title>
+				<slide id="collaboration">
+					<title>API Value #1: Collaboration</title>
+				</slide>
+				<slide id="innovation">
+					<title>API Value #2: Innovation</title>
+				</slide>
+				<slide id="co-creation">
+					<title>API Value #3: Co-Creation</title>
+				</slide>
+			</part>
+			<part id="api-value">
+				<title>API Value Scope</title>
+				<slide id="digitalization">
+					<title>Scope #1: Digitalization</title>
+				</slide>
+				<slide id="api-economy">
+					<title>Scope #2: API Economy</title>
+				</slide>
+			</part>
 		</part>
 		<part id="what">
 			<title>What: Products as APIs</title>
