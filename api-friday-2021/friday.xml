@@ -65,9 +65,31 @@
 		</part>
 		<part id="why">
 			<title>Why: The Business Value of APIs</title>
+			<slide id="adaptation">
+				<title>Organizations Need Adaptation</title>
+				<ul>
+					<li>In most domains the world changes faster than it used to</li>
+					<ul>
+						<li>Organizations need to be good at <em>adapting to changing constraints</em></li>
+						<li>It must be easy to build, launch, modify, reuse, and discontinue products</li>
+					</ul>
+					<li>APIs are what turns digital products into <em>digital building blocks</em></li>
+					<ul>
+						<li>APIs make it relatively easy to reconfigure digital value chains</li>
+						<li>It still takes the right business strategy to keep up with changes</li>
+					</ul>
+					<li><em>Designing for change</em> must be done at the organization level</li>
+				</ul>
+			</slide>
 			<slide id="products">
 				<title>What is a Product?</title>
 				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-left" />
+			</slide>
+			<slide id="building-blocks">
+				<title>Building Building Blocks</title>
+				<ul>
+					<li>From <em>systems</em> to <em>ecosystems</em></li>
+				</ul>
 			</slide>
 			<part id="api-value">
 				<title>API Value Propositions</title>
