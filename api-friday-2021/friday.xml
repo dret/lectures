@@ -91,6 +91,31 @@
 					<li>From <em>systems</em> to <em>ecosystems</em></li>
 				</ul>
 			</slide>
+			<slide id="value-matrix">
+				<title>API Value = Propositions × Scope</title>
+				<table style="border-collapse: collapse ; ">
+					<tr>
+						<td/>
+						<th style="border: 1px solid black ; padding: 1em"><link href="digitalization">Digitalization<br/>(Internal)</link></th>
+						<th style="border: 1px solid black ; padding: 1em"><link href="api-economy">API Economy<br/>(External)</link></th>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 1em"><link href="collaboration">Collaboration</link></th>
+						<td style="border: 1px solid black ; padding: 1em">Loosely coupled teams</td>
+						<td style="border: 1px solid black ; padding: 1em">Ease of building value chains</td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 1em"><link href="innovation">Innovation</link></th>
+						<td style="border: 1px solid black ; padding: 1em">Creative ways of reusing building blocks</td>
+						<td style="border: 1px solid black ; padding: 1em">New ways of composing value chains</td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 1em"><link href="co-creation">Co-Creation</link></th>
+						<td style="border: 1px solid black ; padding: 1em">Reuse without coordination</td>
+						<td style="border: 1px solid black ; padding: 1em">Sharing value with platform partners</td>
+					</tr>
+				</table>
+			</slide>
 			<part id="api-value">
 				<title>API Value Propositions</title>
 				<slide id="collaboration">
