@@ -218,12 +218,27 @@
 		</part>
 		<part id="how">
 			<title>How: API as a Product</title>
-			<part id="iterations">
+			<slide id="value-first">
+				<title>Value eats Design for Breakfast</title>
+				<ul>
+					<li><em>API as a Product</em> is risky because it sets the wrong focus</li>
+					<ul>
+						<li>Focus your energy on <em>valuable APIs only</em></li>
+						<li>Managing bad APIs as a product will hardly improve their utility</li>
+					</ul>
+					<li>Managing APIs as a product has two important axes</li>
+					<ul>
+						<li><link href="iterations"/> must be managed so that products can be improved</li>
+						<li><link href="maturity"/> must be managed so that products can be matured and discontinued</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="iterations">
 				<title>Product Iterations</title>
-			</part>
-			<part id="maturity">
+			</slide>
+			<slide id="maturity">
 				<title>Product Maturity</title>
-			</part>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
