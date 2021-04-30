@@ -206,7 +206,20 @@
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="value">
-				<title>Always Consider Value &amp; Users</title>
+				<title>Doing the Right Thing</title>
+				<ul>
+					<li><em>API Products</em> are more <q>product</q> than they are <q>API</q></li>
+					<ul>
+						<li>The main focus is on creating and exposing <em>something valuable</em></li>
+						<li>Value is defined by consumption which means <em>focusing on users</em> is important</li>
+						<li>Designing a <em>good API</em> is important but <em>not the deciding factor</em></li>
+					</ul>
+					<li><q>Doing the Right Thing</q> vs. <em>Doing the Thing Right</em></li>
+					<ul>
+						<li><q>Doing the Right Thing</q> → Identify capabilities and users as design foundations</li>
+						<li><q>Doing the Thing Right</q> → Co-design API with users to create good DX</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
