@@ -101,12 +101,15 @@
 		</part>
 		<part id="production">
 			<title>Building Building Blocks</title>
+			<slide id="components">
+				<title>Identifying Valuable Components</title>
+			</slide>
 		</part>
 		<part id="consumption">
 			<title>Consuming Building Blocks</title>
 		</part>
-		<part id="changing">
-			<title>How Can I Change?</title>
+		<part id="product-apis">
+			<title>APIs for Software Products</title>
 			<slide id="extension">
 				<title>Always Plan For Extension</title>
 				<ul>
