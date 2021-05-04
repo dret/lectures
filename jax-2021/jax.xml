@@ -149,22 +149,10 @@
 				</ol>
 			</slide>
 		</part>
-		<part id="production">
-			<title>Building Building Blocks</title>
-			<slide id="components">
-				<title>Identifying Valuable Components</title>
-				<img src="car-seat.png" style="float: right ; height : 70% ; margin : 0% 3% 3% 3% ; "/>
-				<ol>
-					<li>What drives product value?</li>
-					<li>How is value exposed to consumers?</li>
-					<li>How can value be reused as a building block?</li>
-				</ol>
-			</slide>
-		</part>
-		<part id="consumption">
-			<title>Consuming Building Blocks</title>
-			<slide id="nih">
-				<title>From <a href="https://en.wikipedia.org/wiki/Not_invented_here" title="Not Invented Here">NIH</a> to <span title="Proudly Found Elsewhere">PFE</span></title>
+		<part id="building-block-culture">
+			<title>Building Block Culture</title>
+			<slide id="consumption">
+				<title>Consuming Building Blocks</title>
 				<ul>
 					<li>Building valuable products should be done as effective as possible</li>
 					<ul>
@@ -172,8 +160,14 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide id="graceful-degradation">
-				<title>Always Plan for Graceful Degradation</title>
+			<slide id="building">
+				<title>Building Building Blocks</title>
+				<img src="car-seat.png" style="float: right ; height : 70% ; margin : 0% 3% 3% 3% ; "/>
+				<ul>
+					<li>What drives product value?</li>
+					<li>How is value exposed to consumers?</li>
+					<li>How can value be reused as a building block?</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="product-apis">
@@ -211,6 +205,15 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="culture">
+				<title>Build Building Block Culture</title>
+				<ul>
+					<li>Try to get as close to a <link href="bezos-mandate">full Bezos</link> as you can</li>
+					<li>Move from teams competing for success to teams cultivating the platform</li>
+					<li>Make it easy for teams to <link href="consumption">find</link> <em>and</em> <link href="building">contribute</link> building blocks</li>
+					<li>Present <q>the building block of the week</q></li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
