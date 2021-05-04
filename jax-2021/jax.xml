@@ -128,6 +128,21 @@
 					<li>There is no <em>network effect</em> without a network</li>
 				</ul>
 			</slide>
+			<slide id="bezos-mandate">
+				<title>Jeff Bezos' API Mandate</title>
+				<div style=" float : right ; width : 30% ; object-fit : contain ; margin : 1% 4% 6% 6% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/hIP7mHRog4o" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+				<ol>
+					<li>Data and Capabilities must be exposed through APIs</li>
+					<li>Team Communications must be through APIs</li>
+					<li>There can be no side-channels/shortcuts</li>
+					<li>Technology choice is secondary</li>
+					<li>APIs must be externalizable</li>
+				</ol>
+			</slide>
 		</part>
 		<part id="production">
 			<title>Building Building Blocks</title>
