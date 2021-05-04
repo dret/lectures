@@ -158,6 +158,18 @@
 		</part>
 		<part id="consumption">
 			<title>Consuming Building Blocks</title>
+			<slide id="nih">
+				<title>From <a href="https://en.wikipedia.org/wiki/Not_invented_here" title="Not Invented Here">NIH</a> to <span title="Proudly Found Elsewhere">PFE</span></title>
+				<ul>
+					<li>Building valuable products should be done as effective as possible</li>
+					<ul>
+						<li>Maximize ratio of <em>effort to build the product</em> and <em>value delivered through the product</em></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="graceful-degradation">
+				<title>Graceful Degradation</title>
+			</slide>
 		</part>
 		<part id="product-apis">
 			<title>All Products Needs APIs</title>
