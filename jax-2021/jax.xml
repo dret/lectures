@@ -154,9 +154,19 @@
 			<slide id="consumption">
 				<title>Consuming Building Blocks</title>
 				<ul>
-					<li>Building valuable products should be done as effective as possible</li>
+					<li>Building valuable products should be done as effectively as possible</li>
 					<ul>
 						<li>Maximize ratio of <em>effort to build the product</em> and <em>value delivered through the product</em></li>
+					</ul>
+					<li>Consume responsibly and always plan for <em>graceful degradation</em></li>
+					<ul>
+						<li><em>Risk:</em> Is it worth taking the risk of a dependency?</li>
+						<li><em>Replacement:</em> Are there plans for temporary/permanent replacements?</li>
+						<li><em>Redundancy:</em> Is there a failover API to use during outages?</li>
+						<li><em>Resilience:</em> Is the client handling API problems responsibly?</li>
+						<li><em>Rightsizing:</em> Is the scope well-defined and at the right size?</li>
+						<li><em>Representation:</em> Is the client isolating the specific API model?</li>
+						<li><em>Reporting:</em> Is the dependency monitored for analytics and errors?</li>
 					</ul>
 				</ul>
 			</slide>
