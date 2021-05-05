@@ -197,13 +197,13 @@
 					<li><em>API Products</em>: <q>Product</q> is more important than <q>API</q></li>
 					<ul>
 						<li>The main focus is on creating and exposing <em>something valuable</em></li>
-						<li>Value is defined by consumption which means <em>focusing on users</em> is important</li>
+						<li>Value is defined by consumption which means <em>focusing on consumers</em> is important</li>
 						<li>Designing a <em>good API</em> is important but <em>not the deciding factor</em></li>
 					</ul>
 					<li><q>Doing the Right Thing</q> vs. <q>Doing the Thing Right</q></li>
 					<ul>
 						<li><q>Doing the Right Thing</q> → Identify capabilities and users as design foundations</li>
-						<li><q>Doing the Thing Right</q> → Co-design API with users to create good DX</li>
+						<li><q>Doing the Thing Right</q> → Co-design API with consumers to create good DX</li>
 					</ul>
 				</ul>
 			</slide>
@@ -218,20 +218,23 @@
 			<slide id="extension">
 				<title>Always Plan For Extension</title>
 				<ul>
-					<li>Your product is going to be improved by you</li>
+					<li>Your product is going to be improved <em>by you</em></li>
+					<li>Others may have started building on your product</li>
+					<li>Can you evolve your product without impacting others?</li>
 				</ul>
 			</slide>
 			<slide id="augmentation">
 				<title>Always Plan For Augmentation</title>
 				<ul>
-					<li>Your product is going to be improved by others</li>
+					<li>Your product is going to be improved <em>by others</em></li>
+					<li>Do you make it easy for others to build on your product value?</li>
 				</ul>
 			</slide>
 			<slide id="automation">
 				<title>Always Plan For Automation</title>
 				<ul>
-					<li>All product features must be available for automation</li>
-					<li>Exceptions must be documented and justified</li>
+					<li>All product features must be <em>available for automation</em></li>
+					<li>What features cannot be automated and what's the reason?</li>
 				</ul>
 			</slide>
 		</part>
