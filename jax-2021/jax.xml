@@ -308,6 +308,37 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="systems-ecosystems">
+			<title>From Systems to Ecosystems</title>
+			<slide id="systems">
+				<title>Integrated Systems</title>
+				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" class="fullsize-left"/>
+			</slide>
+			<slide id="ecosystems">
+				<title>Decentralized Ecosystems</title>
+				<img title="Farmers' Market Sacramento" href="https://commons.wikimedia.org/wiki/File:Farmers'_market_Sacramento.jpg" src="farmers-market-sacramento.jpg"  class="fullsize-left"/>
+			</slide>
+			<slide id="optimization">
+				<title>Optimizing for Resilience and Change</title>
+				<ul>
+					<li><em>Integrated Systems</em> are not going anywhere anytime soon</li>
+					<ul>
+						<li>Integration allows optimizations that outperform more loosely coupled solutions</li>
+						<li>Integration can also be the result of <em href="https://en.wikipedia.org/wiki/Conway%27s_law">Conway's Law</em> in action</li>
+					</ul>
+					<li>Today's <em>need for speed</em> requires us to better separate architectural layers</li>
+					<ul>
+						<li><em>Components/Capabilities</em> are designed and implemented as usual</li>
+						<li><em>Composing</em> these components is fundamentally different from building them</li>
+					</ul>
+					<li>APIs are <em>connective tissue</em> and <em>implementation encapsulation</em> for components</li>
+					<ul>
+						<li>Everything that is being built must be self-contained and have an API <em>(microservices)</em></li>
+						<li>Everything that is being used must be used through its API <em>(API first)</em></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="microservices">
 			<title>Microservices</title>
 			<slide id="microservices-video">
