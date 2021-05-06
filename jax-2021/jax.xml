@@ -459,6 +459,41 @@
 					</div>
 				</div>
 			</slide>
+			<slide id="hypermedia-workflow">
+				<title>Hypermedia and Workflows</title>
+				<ul>
+					<li>Hypermedia combines state representation and possible further interactions</li>
+					<ul>
+						<li>Resource state allows clients to understand the current content</li>
+						<li>Links allow clients to learn about the possible next steps</li>
+						<li>Clients select and follow a link based on their application goals</li>
+					</ul>
+					<li>Workflows are represented by providing navigation options (affordances)</li>
+					<ul>
+						<li>Making it easier for clients to be <q>driven by available options</q></li>
+						<li>Seamless fabric of navigation across individual APIs</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="hypermedia-evolution">
+				<title>Hypermedia and API Evolution</title>
+				<ul>
+					<li>Extensibility generally is a good idea for APIs</li>
+					<ul>
+						<li>Eliminates or reduces the need to do potentially expensive versioning</li>
+					</ul>
+					<li>Hypermedia representations by definition combine data and control elements</li>
+					<ul>
+						<li><em>Data extensibility</em> results in the usual benefits of allowing representations to evolve</li>
+						<li><em>Control extensibility</em> results in the ability to add new workflow paths</li>
+					</ul>
+					<li>Hypermedia-based evolution has many patterns to choose from</li>
+					<ul>
+						<li><em>Incremental additions</em> can show up as new links in extension slots</li>
+						<li><em>Complete new APIs</em> can be advertised as new start resources in <em>home documents</em></li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="versioning">
 			<title>Versioning</title>
