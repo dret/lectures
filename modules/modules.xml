@@ -541,8 +541,8 @@
 				<ul>
 					<li>Extensions are well-defined and their handling is well-defined as well</li>
 					<ul>
-						<li>Extension points make it clear where to expect extensions</li>
-						<li>Processing models make it clear what to do with extensions</li>
+						<li><link href="extension-points">Extension points</link> make it clear where to expect extensions</li>
+						<li><em>Processing models</em> make it clear what to do with extensions</li>
 					</ul>
 					<li><code>mustIgnore</code> is a popular and good choice for extension processing</li>
 					<ul>
