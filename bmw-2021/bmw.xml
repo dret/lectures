@@ -29,8 +29,8 @@
 	<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com/">Catalysts</a></affiliation>
 	<date short="2021-05-??">May ??, 2021</date>
 	<copyright>2021 Erik Wilde</copyright>
-	<presentation id="index">
-		<title>Product Management in the Digital Age: <br/>APIs as Digital Building Blocks</title>
+	<presentation id="digital-products">
+		<title>Digital Product Management</title>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 		<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com/">Catalysts</a></affiliation>
 		<date short="2021-05-??">May ??, 2021</date>
@@ -161,6 +161,44 @@
 				<title>AsyncAPI</title>
 			</part>
 		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thank You!</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/bmw-2021"><code>dret.net/lectures/bmw-2021</code></a></li>
+					<li>More information:</li>
+					<ul>
+						<li><a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">Twitter: <code>@dret</code></a></li>
+						<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+						<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="api-purpose">
+		<title>The Purpose-Driven API</title>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="q-and-a">
+				<title>Thank You!</title>
+				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/bmw-2021"><code>dret.net/lectures/bmw-2021</code></a></li>
+					<li>More information:</li>
+					<ul>
+						<li><a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">Twitter: <code>@dret</code></a></li>
+						<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+						<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="api-design">
+		<title>API Design Matters</title>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
