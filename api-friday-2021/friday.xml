@@ -28,9 +28,10 @@
 		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
 			<thead>
 				<tr>
+					<th valign="bottom">Date</th>
 					<th valign="bottom">Subject</th>
 					<th valign="bottom">Slides</th>
-					<!--
+<!--
 					<th valign="bottom">Resources</th>
 -->
 				</tr>
@@ -38,9 +39,10 @@
 			<tbody>
 				<hotspot:for-each-presentation>
 					<tr class="vevent">
+						<td valign="top"><hotspot:date/></td>
 						<td valign="top"><b><span class="summary"><hotspot:title/></span></b></td>
 						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
-						<!--
+<!--
 						<td align="center"><hotspot:toc class="resources"/></td>
 -->
 					</tr>
@@ -48,7 +50,7 @@
 			</tbody>
 		</table>
 	</toc>
-	<title>API Friday</title>
+	<title>API Fridays 2021</title>
 	<presentation id="products">
 		<title short="API Products">API Products: What it means and why it matters</title>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
