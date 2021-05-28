@@ -32,12 +32,10 @@
 		<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://www.axway.com/catalysts">Catalyst</a></affiliation>
 		<date short="2021-06-10">June 10, 2021</date>
 		<copyright>2021 Erik Wilde (@dret)</copyright>
-<!--
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
--->
 		<part id="catalyst-intro">
 			<title>Introduction</title>
 			<slide id="dret">
@@ -122,7 +120,7 @@
 				<img src="bezos-mandate-4.png" class="fullsize-left"/>
 			</slide>
 			<slide id="value-over-delivery">
-				<title>Value &lt; Delivery</title>
+				<title>Value &gt; Delivery</title>
 				<ul>
 					<li>What matters most is to expose value on the platform</li>
 					<li>How it is exposed matters as well, but less so</li>
