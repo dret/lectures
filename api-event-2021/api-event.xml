@@ -130,6 +130,14 @@
 				<title>#5: APIs must be Externalizable</title>
 				<img src="bezos-mandate-5.png" class="fullsize-left"/>
 			</slide>
+			<slide id="product-focus">
+				<title>Every API is a Product</title>
+				<ul>
+					<li>Any API may get exposed outside the organization</li>
+					<li>Private/Partner/Public designations for APIs may change</li>
+					<li>Prevent disruptions of the platform as much as possible</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="platforms">
 			<title>API Platforms</title>
