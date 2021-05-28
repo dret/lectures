@@ -30,7 +30,7 @@
 		<toc class="abstract">Software engineering and development are changing because IT architecture and landscapes are changing. It used to be the case that organizations were building systems, and the main focus was on integration and how to maintain and evolve those systems. Microservices and other trends show us that this picture is changing: Now it is more about self-contained and independently deployable components which are part of an ecosystem of communicating components. The "glue" in this ecosystem are APIs, which are the only way how these components communicate. How does this shift in architecture affect software design and development? In this presentation we specifically look at how APIs affect both how components provide services, and how they consume them. The goal of this presentation is to allow software developers to better understand how APIs are an essential part of this rather fundamental shift in IT architecture.</toc>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 		<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com">Catalyst</a></affiliation>
-		<date short="2021-??-??">?? ??, 2021</date>
+		<date short="2021-06-04">June 4, 2021</date>
 		<copyright>2021 Erik Wilde</copyright>
 		<slide id="summary">
 			<title>Summary</title>
