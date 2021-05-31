@@ -68,8 +68,160 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="ecosystems">
+			<title>From Systems to Ecosystems</title>
+			<slide id="old-wine">
+				<title>APIs: Old Wine in New Bottles?</title>
+				<img src="chateau-mouton-rothschild-1956.png" title="Château Mouton Rothschild 1956 " style="float: right ; height : 70% ; margin : 0% 8% 0% 8% ; "/>
+				<ul>
+					<li><em>APIs</em> have been around forever</li>
+					<ul>
+						<li><em>APIs</em> have been part of computers since their very beginning (1940s)</li>
+						<li><em>Network APIs</em> have been in use since two computers were connected (1950s)</li>
+					</ul>
+					<li>Today's APIs are a <em>business strategy</em> and not a <em>technology</em></li>
+					<ul>
+						<li>Establish a platform of <em>digital building blocks</em> that represent your business</li>
+						<li>Adapt to changes by quickly changing or launching products as needed</li>
+					</ul>
+					<li>It's not about <em>having APIs</em>, it's about <em>how you're using them</em></li>
+					<ul>
+						<li><em>Stop betting on snowflakes:</em> They are expensive to build and degrade quickly</li>
+						<li><em>Start betting on platforms:</em> Cultivate creating and changing products effectively</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="platforms">
+				<title>What is a Platform?</title>
+				<img href="https://arstechnica.com/cars/2019/10/audi-is-planning-20-all-electric-models-by-2025-heres-how-it-will-do-it/" title="Audi Electric Platforms" src="audi-electric-platforms.jpg" class="fullsize-left" />
+			</slide>
+			<slide id="software-platforms">
+				<title>Software Platforms: Betting on the Network Effect</title>
+				<img src="network-effect.png" style="float: right ; height : 70% ; margin : 0% 3% 3% 3% ; "/>
+				<ul>
+					<li>No product is perfect and all products can be improved</li>
+					<li>Building blocks emerge as components of products</li>
+					<li>All <em>product value</em> must be exposed as a building block</li>
+					<li>There is no <em>network effect</em> without a network</li>
+				</ul>
+			</slide>
+			<slide id="bezos-mandate">
+				<title>Jeff Bezos' API Mandate</title>
+				<div style=" float : right ; width : 30% ; object-fit : contain ; margin : 1% 4% 6% 6% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/hIP7mHRog4o" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+				<ol>
+					<li>Data and Capabilities must be exposed through APIs</li>
+					<li>Team Communications must be through APIs</li>
+					<li>There can be no side-channels/shortcuts</li>
+					<li>Technology choice is secondary</li>
+					<li>APIs must be externalizable</li>
+				</ol>
+			</slide>
+		</part>
+		<part id="building-block-culture">
+			<title>Building Block Culture</title>
+			<slide id="consumption">
+				<title>Consuming Building Blocks</title>
+				<img src="jenga-tower.png" style="float: right ; height : 70% ; margin : 0% 3% 3% 3% ; "/>
+				<ul>
+					<li>Building valuable products should be done as effectively as possible</li>
+					<ul>
+						<li>Maximize ratio of <em>effort to build the product</em> and <em>value delivered through the product</em></li>
+					</ul>
+					<li>Consume responsibly and always plan for <em>graceful degradation</em></li>
+					<ul>
+						<li><em>Risk:</em> Is it worth taking the risk of a dependency?</li>
+						<li><em>Replacement:</em> Are there plans for temporary/permanent replacements?</li>
+						<li><em>Redundancy:</em> Is there a failover API to use during outages?</li>
+						<li><em>Resilience:</em> Is the client handling API problems responsibly?</li>
+						<li><em>Rightsizing:</em> Is the scope well-defined and at the right size?</li>
+						<li><em>Representation:</em> Is the client isolating the specific API model?</li>
+						<li><em>Reporting:</em> Is the dependency monitored for analytics and errors?</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="building">
+				<title>Building Building Blocks</title>
+				<img src="car-seat.png" style="float: right ; height : 70% ; margin : 0% 3% 3% 3% ; "/>
+				<ul>
+					<li>Always focus on the <em>value</em> of your building blocks</li>
+					<ul>
+						<li>What drives product value?</li>
+						<li>How is value exposed to consumers?</li>
+						<li>How can value be reused as a building block?</li>
+					</ul>
+					<li>Make it easy to find and consume building blocks</li>
+					<ul>
+						<li>A building block that's not used has <em>no network value</em></li>
+						<li>A building block that's hard to use <em>diminishes its own value</em></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="product-apis">
+			<title>All Products Needs APIs</title>
+			<slide id="api-focus">
+				<title>On a Platform, Your Product is Your API</title>
+				<ul>
+					<li><em>API Products</em>: <q>Product</q> is more important than <q>API</q></li>
+					<ul>
+						<li>The main focus is on creating and exposing <em>something valuable</em></li>
+						<li>Value is defined by consumption which means <em>focusing on consumers</em> is important</li>
+						<li>Designing a <em>good API</em> is important but <em>not the deciding factor</em></li>
+					</ul>
+					<li><q>Doing the Right Thing</q> vs. <q>Doing the Thing Right</q></li>
+					<ul>
+						<li><q>Doing the Right Thing</q> → Identify capabilities and users as design foundations</li>
+						<li><q>Doing the Thing Right</q> → Co-design API with consumers to create good DX</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="products">
+				<title>What is a Product?</title>
+				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-left" />
+			</slide>
+			<slide id="we-deliver">
+				<title>We Deliver?</title>
+				<img href="https://www.volkswagenag.com/en/news/stories/2018/03/we-deliver-a-trunk-full-of-new-ideas.html" title="We Deliver: A trunk full of new ideas" src="we-deliver.jpg" class="fullsize-left" />
+			</slide>
+			<slide id="extension">
+				<title>Always Plan For Extension</title>
+				<ul>
+					<li>Your product is going to be improved <em>by you</em></li>
+					<li>Others may have started building on your product</li>
+					<li>Can you evolve your product without impacting others?</li>
+				</ul>
+			</slide>
+			<slide id="augmentation">
+				<title>Always Plan For Augmentation</title>
+				<ul>
+					<li>Your product is going to be improved <em>by others</em></li>
+					<li>Do you make it easy for others to build on your product value?</li>
+				</ul>
+			</slide>
+			<slide id="automation">
+				<title>Always Plan For Automation</title>
+				<img src="litmus-paper.png" style="float: right ; height : 70% ; margin : 0% 3% 3% 3% ; "/>
+				<ul>
+					<li>All product features must be <em>available for automation</em></li>
+					<li>What features cannot be automated and what's the reason?</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="culture">
+				<title>Build Building Block Culture</title>
+				<ul>
+					<li>Try to get as close to a <link href="bezos-mandate">full Bezos</link> as you can</li>
+					<li>Move from teams competing for success to teams cultivating the platform</li>
+					<li>Make it easy for teams to <link href="consumption">find</link> <em>and</em> <link href="building">contribute</link> building blocks</li>
+					<li>Present <q>the building block of the week</q></li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
