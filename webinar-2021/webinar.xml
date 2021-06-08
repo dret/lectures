@@ -124,19 +124,6 @@
 				<title>What is a Product?</title>
 				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-left" />
 			</slide>
-			<slide id="building-blocks">
-				<title>Building Building Blocks</title>
-				<ul>
-					<li><em>Designing for change</em> must be done at the organization level</li>
-					<li>Today's product may be tomorrow's building block</li>
-					<li><href href="https://gist.github.com/chitchcock/1281611">Jeff Bezos' API Mandate</href> was a <em>radical and expensive strategy shift</em></li>
-					<ul>
-						<li>Organization strategy needs to be able to <em>change quickly and easily</em></li>
-						<li><em>Every capability</em> must be available for reuse both internally and externally</li>
-						<li><em>This is expensive but that's ok</em> because it increases organizational fitness</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="value-matrix">
 				<title>API Value = Propositions × Scope</title>
 				<table style="border-collapse: collapse ; ">
@@ -215,6 +202,29 @@
 					</ul>
 				</slide>
 			</part>
+			<part id="bezos-mandate">
+				<title>Jeff Bezos' API Mandate</title>
+				<slide id="apis-required">
+					<title>#1: All Data/Capabilities must have APIs</title>
+					<img src="bezos-mandate-1.png" class="fullsize-left"/>
+				</slide>
+				<slide id="teams">
+					<title>#2: Team Communications uses APIs</title>
+					<img src="bezos-mandate-2.png" class="fullsize-left"/>
+				</slide>
+				<slide id="no-shortcuts">
+					<title>#3: No Shortcuts</title>
+					<img src="bezos-mandate-3.png" class="fullsize-left"/>
+				</slide>
+				<slide id="tech-secondary">
+					<title>#4: Technology is Secondary</title>
+					<img src="bezos-mandate-4.png" class="fullsize-left"/>
+				</slide>
+				<slide id="externalizable">
+					<title>#5: APIs must be Externalizable</title>
+					<img src="bezos-mandate-5.png" class="fullsize-left"/>
+				</slide>
+			</part>
 		</part>
 		<part id="what">
 			<title>What: Products as APIs</title>
@@ -269,7 +279,7 @@
 			<slide id="value-first">
 				<title>Value eats Design for Breakfast</title>
 				<ul>
-					<li><em>API as a Product</em> is risky because it sets the wrong focus</li>
+					<li><em>API as a Product</em> needs context because of its technical focus</li>
 					<ul>
 						<li>Focus your energy on <em>valuable APIs only</em></li>
 						<li>Managing bad APIs as a product will hardly improve their utility</li>
