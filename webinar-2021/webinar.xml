@@ -103,8 +103,211 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="why">
+			<title>Why: The Business Value of APIs</title>
+			<slide id="adaptation">
+				<title>Organizations Need Adaptation</title>
+				<ul>
+					<li>In most domains the world changes faster than it used to</li>
+					<ul>
+						<li>Organizations need to be good at <em>adapting to changing constraints</em></li>
+						<li>It must be easy to build, launch, modify, reuse, and discontinue products</li>
+					</ul>
+					<li>APIs are what turns digital products into <em>digital building blocks</em></li>
+					<ul>
+						<li>APIs make it relatively easy to reconfigure digital value chains</li>
+						<li>It still takes the right business strategy to keep up with changes</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="products">
+				<title>What is a Product?</title>
+				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-left" />
+			</slide>
+			<slide id="building-blocks">
+				<title>Building Building Blocks</title>
+				<ul>
+					<li><em>Designing for change</em> must be done at the organization level</li>
+					<li>Today's product may be tomorrow's building block</li>
+					<li><href href="https://gist.github.com/chitchcock/1281611">Jeff Bezos' API Mandate</href> was a <em>radical and expensive strategy shift</em></li>
+					<ul>
+						<li>Organization strategy needs to be able to <em>change quickly and easily</em></li>
+						<li><em>Every capability</em> must be available for reuse both internally and externally</li>
+						<li><em>This is expensive but that's ok</em> because it increases organizational fitness</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="value-matrix">
+				<title>API Value = Propositions × Scope</title>
+				<table style="border-collapse: collapse ; ">
+					<tr>
+						<td/>
+						<th style="border: 1px solid black ; padding: 1em"><link href="digitalization">Digitalization<br/>(Internal)</link></th>
+						<th style="border: 1px solid black ; padding: 1em"><link href="api-economy">API Economy<br/>(External)</link></th>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 1em"><link href="collaboration">Collaboration</link></th>
+						<td style="border: 1px solid black ; padding: 1em">Loosely coupled teams</td>
+						<td style="border: 1px solid black ; padding: 1em">Ease of building value chains</td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 1em"><link href="innovation">Innovation</link></th>
+						<td style="border: 1px solid black ; padding: 1em">Creative ways of reusing building blocks</td>
+						<td style="border: 1px solid black ; padding: 1em">New ways of composing value chains</td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid black ; padding: 1em"><link href="co-creation">Co-Creation</link></th>
+						<td style="border: 1px solid black ; padding: 1em">Reuse without coordination</td>
+						<td style="border: 1px solid black ; padding: 1em">Sharing value with platform partners</td>
+					</tr>
+				</table>
+			</slide>
+			<part id="api-value">
+				<title>API Value Propositions</title>
+				<slide id="collaboration">
+					<title>API Value #1: Collaboration</title>
+					<ul>
+						<li>All teams produce <em>potential for collaboration</em></li>
+						<li>Teams can collaborate <em>without coordination</em></li>
+						<li>Product inception and design <em>are incrementally building on existing capabilities</em></li>
+					</ul>
+				</slide>
+				<slide id="innovation">
+					<title>API Value #2: Innovation</title>
+					<ul>
+						<li>New products can be created because <em>building blocks are openly available</em></li>
+						<li>Products can co-exist and compete with <em>value generation being a useful metric</em></li>
+					</ul>
+				</slide>
+				<slide id="co-creation">
+					<title>API Value #3: Co-Creation</title>
+					<ul>
+						<li>Products can be improved by <em>building on them as building blocks</em></li>
+						<li>Products can share building blocks and <em>create value differently</em></li>
+						<li>Value chains can be improved by strengthening weak components</li>
+					</ul>
+				</slide>
+			</part>
+			<part id="api-value">
+				<title>API Value Scope</title>
+				<slide id="digitalization">
+					<title>Scope #1: Digitalization</title>
+					<ul>
+						<li><em>Internal API focus</em> often requires fundamental changes</li>
+						<li>Products are ephemeral and the true focus is <em>the platform they're built on</em></li>
+						<ul>
+							<li>Every product must be built <em>so that it can be built on</em></li>
+							<li>No product gets to take shortcuts when <em>consuming or exposing APIs</em></li>
+						</ul>
+						<li>Every product becomes an API product in a truly digitalized organization</li>
+					</ul>
+				</slide>
+				<slide id="api-economy">
+					<title>Scope #2: API Economy</title>
+					<ul>
+						<li><em>External API focus</em> is about how to use partner/public APIs</li>
+						<li><em>API monetization</em> often plays a role in these discussions</li>
+						<ul>
+							<li><em>Direct monetization</em> is more the exception than the rule</li>
+							<li><em>Indirect monetization</em> means driving value by strategically using APIs</li>
+						</ul>
+						<li><em>Internal/external API</em> is a perspective that can change over time</li>
+					</ul>
+				</slide>
+			</part>
+		</part>
+		<part id="what">
+			<title>What: Products as APIs</title>
+			<slide id="definition-4p">
+				<title>Product Marketing Mix: 4 Ps</title>
+				<ul>
+					<li>Framework for decision-making for product marketing</li>
+					<ul>
+						<li><em>Product:</em> Good or service wanted by consumers</li>
+						<li><em>Price:</em> What are consumers willing to pay for the product?</li>
+						<li><em>Place:</em> How to make products available to consumers</li>
+						<li><em>Promotion:</em> How to make consumers aware of products</li>
+					</ul>
+					<li>Applying the 4 P model to the digital representation of products</li>
+					<ul>
+						<li><em>Product:</em> How is the product going to be used digitally</li>
+						<li><em>Price:</em> What is the effort/benefit for using the API?</li>
+						<li><em>Place:</em> Making it easy to find and use the API</li>
+						<li><em>Promotion:</em> Making sure developers know what the platform is offering</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="definition-7p">
+				<title>Expanded Product Marketing Mix: 7 Ps</title>
+				<ul>
+					<li>Extends the <link href="definition-4p">4 Ps</link> with a focus on services</li>
+					<li>Framework for decision-making for services marketing</li>
+					<ul>
+						<li><em>People:</em> Considerations regarding service consumers (UX/CX)</li>
+						<li><em>Process:</em> Planning and managing service delivery</li>
+						<li><em>Physical Evidence:</em> (Physical) context of service delivery</li>
+					</ul>
+					<li>Applying the 7 P model to the digital representation of products</li>
+					<ul>
+						<li><em>People:</em> Creating team dynamics around the platform</li>
+						<li><em>Process:</em> Analyze API consumption for improving APIs over time</li>
+						<li><em>Platform:</em> Improve the platform as the virtual space for sharing APIs</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="how">
+			<title>How: API as a Product</title>
+			<slide id="value-first">
+				<title>Value eats Design for Breakfast</title>
+				<ul>
+					<li><em>API as a Product</em> is risky because it sets the wrong focus</li>
+					<ul>
+						<li>Focus your energy on <em>valuable APIs only</em></li>
+						<li>Managing bad APIs as a product will hardly improve their utility</li>
+					</ul>
+					<li>Managing APIs as a product has two important axes</li>
+					<ul>
+						<li><link href="iterations"/> must be managed so that products can be improved</li>
+						<li><link href="maturity"/> must be managed so that products can be matured and discontinued</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="iterations">
+				<title>Product Iterations</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/a-JoVnpZzNg" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+			<slide id="maturity">
+				<title>Product Maturity</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/twfufQn1mD0" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+		</part>
 		<part id="api-management-conclusions">
 			<title>Conclusions</title>
+			<slide id="value">
+				<title>Doing the Right Thing</title>
+				<ul>
+					<li><em>API Products</em> are more <q>product</q> than they are <q>API</q></li>
+					<ul>
+						<li>The main focus is on creating and exposing <em>something valuable</em></li>
+						<li>Value is defined by consumption which means <em>focusing on users</em> is important</li>
+						<li>Designing a <em>good API</em> is important but <em>not the deciding factor</em></li>
+					</ul>
+					<li><q>Doing the Right Thing</q> vs. <q>Doing the Thing Right</q></li>
+					<ul>
+						<li><q>Doing the Right Thing</q> → Identify capabilities and users as design foundations</li>
+						<li><q>Doing the Thing Right</q> → Co-design API with users to create good DX</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
