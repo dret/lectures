@@ -145,4 +145,41 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="api-requests">
+		<title short="Safe and Idempotent API Requests">API Design Matters: <br/>What are Safe and Idempotent Requests?</title>
+		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
+		<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com">Catalyst</a></affiliation>
+		<date short="2021-08-xx">August xx, 2021</date>
+		<copyright>2021 Erik Wilde</copyright>
+		<part id="api-design">
+			<title>API Design Matters</title>
+			<slide id="apis-ux">
+				<title>APIs Power UX</title>
+			</slide>
+		</part>
+		<part id="safe">
+			<title>Safe Requests</title>
+		</part>
+		<part id="idempotent">
+			<title>Idempotent Requests</title>
+		</part>
+		<part id="POST">
+			<title>All Other Requests</title>
+		</part>
+		<part id="api-first-closing">
+			<title>Thank You!</title>
+			<slide id="q-and-a">
+				<title>Thanks and Please Connect!</title>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/getting-apis-to-work-2021/api-requests"><code>dret.net/lectures/getting-apis-to-work-2021/api-requests</code></a></li>
+					<li>Additional resources:</li>
+					<ul>
+						<li><a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">Twitter: <code>@dret</code></a></li>
+						<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+						<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>
