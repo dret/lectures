@@ -1,6 +1,6 @@
 # Why API Journeys Fail
 
-Slides for presentation at [API Days Australia](https://www.apidays.co/australia).
+Slides for presentation at [API Days Australia](https://www.apidays.global/australia/).
 
 
 ## License
