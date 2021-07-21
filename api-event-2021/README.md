@@ -1,4 +1,4 @@
-# ...
+# Jeff Bezos' API Mandate and what we can (still) learn from it today
 
 Slides for presentation at the [Heliview API Event](https://heliview.nl/api/).
 
