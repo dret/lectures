@@ -159,6 +159,9 @@
 		</part>
 		<part id="safe">
 			<title>Safe Requests</title>
+			<slide id="http-get">
+				<title>HTTP <code>GET</code></title>
+			</slide>
 			<slide id="safe-real-world">
 				<title>Safe Requests in the Real World</title>
 				<!-- Finding opening hours of your local pizzeria. -->
@@ -166,6 +169,9 @@
 		</part>
 		<part id="idempotent">
 			<title>Idempotent Requests</title>
+			<slide id="http-put">
+				<title>HTTP <code>PUT</code></title>
+			</slide>
 			<slide id="idempotent-real-world">
 				<title>Idempotent Requests in the Real World</title>
 				<!-- Updating your contact info with the local pizzeria. -->
@@ -173,6 +179,9 @@
 		</part>
 		<part id="POST">
 			<title>All Other Requests</title>
+			<slide id="http-post">
+				<title>HTTP <code>POST</code></title>
+			</slide>
 			<slide id="POST-real-world">
 				<title>All Other Requests in the Real World</title>
 				<!-- Order pizza. -->
