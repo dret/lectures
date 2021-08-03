@@ -47,13 +47,13 @@
 		</table>
 	</toc>
 	<title><a href="https://www.youtube.com/watch?v=N05-F739ljo&amp;list=UUDD75qoXHJSz4pv0o3WcTUw" title='"What is API First? And why does it matter?", YouTube, June 2021'><img src="youtube-logo.png" style=" height : 1.5em ; "/></a></title>
+	<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
+	<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com">Catalyst</a></affiliation>
+	<copyright>2021 Erik Wilde</copyright>
 	<presentation id="api-first">
 		<title short="API First">What is API First? And why does it matter?</title>
-		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
-		<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com">Catalyst</a></affiliation>
 		<toc class="resources"><a href="https://www.youtube.com/watch?v=N05-F739ljo&amp;list=UUDD75qoXHJSz4pv0o3WcTUw" title='"What is API First? And why does it matter?", YouTube, June 2021'><img src="img/youtube-logo.png" style=" height : 1.5em ; "/></a></toc>
 		<date short="2021-06-29">June 29, 2021</date>
-		<copyright>2021 Erik Wilde</copyright>
 		<part id="digital-focus">
 			<title>Digital Focus</title>
 			<slide id="network-effect">
@@ -144,10 +144,7 @@
 	</presentation>
 	<presentation id="api-requests">
 		<title short="Safe and Idempotent API Requests">API Design Matters: <br/>What are Safe and Idempotent Requests?</title>
-		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
-		<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com">Catalyst</a></affiliation>
 		<date short="2021-08-xx">August xx, 2021</date>
-		<copyright>2021 Erik Wilde</copyright>
 		<part id="api-design">
 			<title>API Design Matters</title>
 			<slide id="apis-ux">
