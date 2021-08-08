@@ -51,7 +51,7 @@
 	<affiliation><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1.5em ; "/> Getting APIs to Work</a></affiliation>
 	<copyright>2021 Mike Amundsen &amp; Erik Wilde</copyright>
 	<presentation id="introduction">
-		<title short="Introduction">Introduction: Everything you need to know about HTTP</title>
+		<title short="HTTP Introduction">Introduction: Everything you need to know about HTTP</title>
 		<date short="2021-09-03">September 3, 2021</date>
 		<part id="series-overview">
 			<title>Series Overview</title>
@@ -172,7 +172,7 @@
 		</part>
 	</presentation>
 	<presentation id="conditional">
-		<title>HTTP Conditional Requests</title>
+		<title short="Conditional Requests">HTTP Conditional Requests</title>
 		<date short="2021-09-18">September 18, 2021</date>
 		<part id="conditional-closing">
 			<title>Thank You!</title>
@@ -191,7 +191,7 @@
 		</part>
 	</presentation>
 	<presentation id="range">
-		<title>HTTP Range Requests</title>
+		<title short="Range Requests">HTTP Range Requests</title>
 		<date short="2021-09-19">September 19, 2021</date>
 		<part id="conditional-closing">
 			<title>Thank You!</title>
@@ -210,7 +210,7 @@
 		</part>
 	</presentation>
 	<presentation id="caching">
-		<title>HTTP Caching</title>
+		<title short="Caching">HTTP Caching</title>
 		<date short="2021-09-20">September 20, 2021</date>
 		<part id="conditional-closing">
 			<title>Thank You!</title>
@@ -229,7 +229,7 @@
 		</part>
 	</presentation>
 	<presentation id="authentication">
-		<title>HTTP Authentication</title>
+		<title short="Authentication">HTTP Authentication</title>
 		<date short="2021-09-21">September 21, 2021</date>
 		<part id="authentication-closing">
 			<title>Thank You!</title>
