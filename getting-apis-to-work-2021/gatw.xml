@@ -160,6 +160,9 @@
 				<title>Safe Requests in the Real World</title>
 				<!-- Finding opening hours of your local pizzeria. -->
 			</slide>
+			<slide id="safe-problems">
+				<title>Safe Problems: Outdated Information</title>
+			</slide>
 		</part>
 		<part id="idempotent">
 			<title>Idempotent Requests</title>
@@ -170,15 +173,21 @@
 				<title>Idempotent Requests in the Real World</title>
 				<!-- Updating your contact info with the local pizzeria. -->
 			</slide>
+			<slide id="idempotent-problems">
+				<title>Idempotent Problems: Conflicting Requests</title>
+			</slide>
 		</part>
-		<part id="POST">
-			<title>All Other Requests</title>
+		<part id="non-idempotent">
+			<title>Non-Idempotent Requests</title>
 			<slide id="http-post">
 				<title>HTTP <code>POST</code></title>
 			</slide>
-			<slide id="POST-real-world">
-				<title>All Other Requests in the Real World</title>
+			<slide id="non-idempotent-real-world">
+				<title>Non-Idempotent Requests in the Real World</title>
 				<!-- Order pizza. -->
+			</slide>
+			<slide id="non-idempotent-problems">
+				<title>Non-Idempotent Problems: Dangling Requests</title>
 			</slide>
 		</part>
 		<part id="api-request-closing">
