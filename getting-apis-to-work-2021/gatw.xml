@@ -153,12 +153,12 @@
 		</part>
 		<part id="safe">
 			<title>Safe Requests</title>
-			<slide id="http-get">
-				<title>HTTP <code>GET</code></title>
-			</slide>
 			<slide id="safe-real-world">
 				<title>Safe Requests in the Real World</title>
-				<!-- Finding opening hours of your local pizzeria. -->
+				<!-- Finding menu of your local pizzeria. -->
+			</slide>
+			<slide id="http-get">
+				<title>HTTP <code>GET</code></title>
 			</slide>
 			<slide id="safe-problems">
 				<title>Safe Problems: Outdated Information</title>
@@ -166,12 +166,12 @@
 		</part>
 		<part id="idempotent">
 			<title>Idempotent Requests</title>
-			<slide id="http-put">
-				<title>HTTP <code>PUT</code></title>
-			</slide>
 			<slide id="idempotent-real-world">
 				<title>Idempotent Requests in the Real World</title>
 				<!-- Updating your contact info with the local pizzeria. -->
+			</slide>
+			<slide id="http-put">
+				<title>HTTP <code>PUT</code></title>
 			</slide>
 			<slide id="idempotent-problems">
 				<title>Idempotent Problems: Conflicting Requests</title>
@@ -179,12 +179,12 @@
 		</part>
 		<part id="non-idempotent">
 			<title>Non-Idempotent Requests</title>
-			<slide id="http-post">
-				<title>HTTP <code>POST</code></title>
-			</slide>
 			<slide id="non-idempotent-real-world">
 				<title>Non-Idempotent Requests in the Real World</title>
 				<!-- Order pizza. -->
+			</slide>
+			<slide id="http-post">
+				<title>HTTP <code>POST</code></title>
 			</slide>
 			<slide id="non-idempotent-problems">
 				<title>Non-Idempotent Problems: Dangling Requests</title>
