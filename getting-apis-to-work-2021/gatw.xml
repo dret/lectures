@@ -228,6 +228,21 @@
 	<presentation id="status">
 		<title short="HTTP Status Codes">What Went Wrong? HTTP Status Codes Explained</title>
 		<date short="2021-09-xx">September xx, 2021</date>
+		<part id="status-1xx">
+			<title>Status 1xx: Informational</title>
+		</part>
+		<part id="status-2xx">
+			<title>Status 2xx: Successful</title>
+		</part>
+		<part id="status-3xx">
+			<title>Status 3xx: Redirection</title>
+		</part>
+		<part id="status-4xx">
+			<title>Status 4xx: Client Error</title>
+		</part>
+		<part id="status-5xx">
+			<title>Status 5xx: Server Error</title>
+		</part>
 		<part id="status-closing">
 			<title>Thank You!</title>
 			<slide id="status-q-and-a">
