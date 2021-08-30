@@ -161,7 +161,7 @@
 				<title>HTTP <code>GET</code></title>
 			</slide>
 			<slide id="safe-problem">
-				<title>Safe Problem: Outdated Information</title>
+				<title>Problem: Outdated Information</title>
 			</slide>
 		</part>
 		<part id="idempotent">
@@ -174,7 +174,7 @@
 				<title>HTTP <code>PUT</code></title>
 			</slide>
 			<slide id="idempotent-problem">
-				<title>Idempotent Problem: Conflicting Requests</title>
+				<title>Problem: Conflicting Requests</title>
 			</slide>
 		</part>
 		<part id="non-idempotent">
@@ -187,7 +187,7 @@
 				<title>HTTP <code>POST</code></title>
 			</slide>
 			<slide id="non-idempotent-problem">
-				<title>Non-Idempotent Problem: Dangling Requests</title>
+				<title>Problem: Dangling Requests</title>
 			</slide>
 		</part>
 		<part id="api-request-closing">
