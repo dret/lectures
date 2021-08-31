@@ -30,8 +30,8 @@
 	<date short="2021-09-??">September ??, 2021</date>
 	<copyright>2021 Erik Wilde</copyright>
 	<presentation id="index">
-		<title>...</title>
-		<toc class="abstract">...</toc>
+		<title>API Stories: Adding API Value to OpenAPI Descriptions</title>
+		<toc class="abstract">The main business value of APIs is to allow teams to collaborate by publishing and consuming APIs. If APIs are designed and documented as products, then they allow teams to collaborate more effectively because no meetings and no specific coordination are required. In order for this to work, APIs must be treated as more than just technical interfaces. Their value has to be clearly described and documented, allowing producing teams to be clear about the value that they provide, and allowing consuming teams to understand the value that is made available to them. We have developed and implemented a small set of OpenAPI extensions that focus on describing the value of an API. By representing an API's value directly in OpenAPI, tooling can be built around these extensions, and API managers freely and openly exchange information about API value across different tools.</toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
