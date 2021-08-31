@@ -1,6 +1,6 @@
-# ASC 2021 Presentation
+# API Stories: Adding API Value to OpenAPI Descriptions
 
-Slides for presentation at [API Specifications Conference 2021](https://events.linuxfoundation.org/openapi-asc/).
+Slides for presentation at [API Specifications Conference (ASC) 2021](https://events.linuxfoundation.org/openapi-asc/).
 
 ## License
 
