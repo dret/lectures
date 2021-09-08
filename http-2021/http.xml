@@ -176,6 +176,7 @@
 	<presentation id="foundations">
 		<title short="Foundations: Syntax and Semantics">HTTP Foundations: Syntax and Semantics</title>
 		<date short="2021-09-17">September 17, 2021</date>
+		<toc class="resources"><a href="https://datatracker.ietf.org/doc/html/rfc7230">RFC&#160;7230</a>/<a href="https://datatracker.ietf.org/doc/html/rfc7231">RFC 7231</a></toc>
 		<part id="foundations-closing">
 			<title>Thank You!</title>
 			<slide id="foundations-thanks">
@@ -195,6 +196,7 @@
 	<presentation id="conditional">
 		<title short="Conditional Requests">HTTP Conditional Requests</title>
 		<date short="2021-09-18">September 18, 2021</date>
+		<toc class="resources"><a href="https://datatracker.ietf.org/doc/html/rfc7232">RFC 7232</a></toc>
 		<part id="conditional-closing">
 			<title>Thank You!</title>
 			<slide id="conditional-thanks">
@@ -214,6 +216,7 @@
 	<presentation id="range">
 		<title short="Range Requests">HTTP Range Requests</title>
 		<date short="2021-09-19">September 19, 2021</date>
+		<toc class="resources"><a href="https://datatracker.ietf.org/doc/html/rfc7233">RFC 7233</a></toc>
 		<part id="range-closing">
 			<title>Thank You!</title>
 			<slide id="range-thanks">
@@ -233,6 +236,7 @@
 	<presentation id="caching">
 		<title short="Caching">HTTP Caching</title>
 		<date short="2021-09-20">September 20, 2021</date>
+		<toc class="resources"><a href="https://datatracker.ietf.org/doc/html/rfc7234">RFC 7234</a></toc>
 		<part id="caching-closing">
 			<title>Thank You!</title>
 			<slide id="caching-thanks">
@@ -252,6 +256,7 @@
 	<presentation id="authentication">
 		<title short="Authentication">HTTP Authentication</title>
 		<date short="2021-09-21">September 21, 2021</date>
+		<toc class="resources"><a href="https://datatracker.ietf.org/doc/html/rfc7235">RFC 7235</a></toc>
 		<part id="authentication-closing">
 			<title>Thank You!</title>
 			<slide id="authentication-thanks">
