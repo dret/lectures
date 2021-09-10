@@ -273,9 +273,29 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="cookies">
+		<title short="Cookies">HTTP Cookies</title>
+		<date short="2021-09-22">September 22, 2021</date>
+		<toc class="resources"><a href="https://datatracker.ietf.org/doc/html/rfc6265">RFC 6265</a></toc>
+		<part id="cookies-closing">
+			<title>Thank You!</title>
+			<slide id="cookies-thanks">
+				<title>Thanks and Please Connect!</title>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/http-2021/cookies"><code>dret.net/lectures/http-2021/cookies</code></a></li>
+					<li>Erik:</li>
+					<ul>
+						<li><a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">Twitter: <code>@dret</code></a></li>
+						<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+						<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 	<presentation id="structured-headers">
 		<title short="Structured Headers">HTTP Structured Headers</title>
-		<date short="2021-09-22">September 22, 2021</date>
+		<date short="2021-09-23">September 23, 2021</date>
 		<toc class="resources"><a href="https://datatracker.ietf.org/doc/html/rfc8941">RFC&#160;8941</a></toc>
 		<part id="structured-headers-closing">
 			<title>Thank You!</title>
@@ -295,7 +315,7 @@
 	</presentation>
 	<presentation id="search">
 		<title>HTTP SEARCH</title>
-		<date short="2021-09-23">September 23, 2021</date>
+		<date short="2021-09-24">September 24, 2021</date>
 		<toc class="resources"></toc>
 		<part id="search-closing">
 			<title>Thank You!</title>
@@ -315,7 +335,7 @@
 	</presentation>
 	<presentation id="http2">
 		<title>HTTP/2</title>
-		<date short="2021-09-24">September 24, 2021</date>
+		<date short="2021-09-25">September 25, 2021</date>
 		<toc class="resources"><a href="https://datatracker.ietf.org/doc/html/rfc7540">RFC&#160;7540</a></toc>
 		<part id="http2-closing">
 			<title>Thank You!</title>
@@ -335,7 +355,7 @@
 	</presentation>
 	<presentation id="http3">
 		<title>HTTP/3</title>
-		<date short="2021-09-25">September 25, 2021</date>
+		<date short="2021-09-26">September 26, 2021</date>
 		<toc class="resources"></toc>
 		<part id="http3-closing">
 			<title>Thank You!</title>
