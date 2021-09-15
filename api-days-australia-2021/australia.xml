@@ -115,9 +115,19 @@
 			<title>Quantity over Quality</title>
 			<slide id="quantity">
 				<title>Many APIs > Fewer APIs</title>
+				<ul>
+					<li>Wrong KPIs that focus on producing <em>more APIs</em></li>
+					<li>Ignoring that <em>API consumption</em> is the main driver of API value</li>
+					<li>Treating APIs as <q>just another thing</q> teams have to do</li>
+				</ul>
 			</slide>
 			<slide id="quality">
 				<title>What's an API's Value?</title>
+				<ul>
+					<li>Successful APIs are APIs that are used and reused</li>
+					<li>The goal is to drive <em>more value</em> through APIs</li>
+					<li>Focus on unlocking value based on <em>usage potential vs. actual usage</em></li>
+				</ul>
 			</slide>
 		</part>
 		<part id="uni-api">
