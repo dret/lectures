@@ -134,9 +134,19 @@
 			<title>Beware the Uni-API</title>
 			<slide id="old-school">
 				<title><q>We've been doing that for 30 years …</q></title>
+				<ul>
+					<li>Technically speaking APIs have been around since computers were invented</li>
+					<li>Existing systems and architectures certainly have many APIs in them</li>
+					<li>IT architecture often focuses on technical structure and less on business changeability</li>
+				</ul>
 			</slide>
 			<slide id="new-school">
 				<title><q>… let's look at what's different then!</q></title>
+				<ul>
+					<li>The challenge is creating APIs that align with business goals and organizational structure</li>
+					<li>The goal is for teams to be able to build quickly without <q>integration projects</q></li>
+					<li>Present the <q>API of the week</q> for everybody to use in their own products</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="eim">
