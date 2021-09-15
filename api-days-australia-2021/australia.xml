@@ -154,9 +154,19 @@
 			<title>The Return of the EIM</title>
 			<slide id="model-driven">
 				<title>Model-Driven APIs</title>
+				<ul>
+					<li>All <q>world models</q> need to be aligned for better API compatibility</li>
+					<li>Deriving all APIs from the model allows for better automation at the API level</li>
+					<li>Defining/delivering APIs becomes secondary to aligning them with the organization's model</li>
+				</ul>
 			</slide>
 			<slide id="diversity">
 				<title>Embrace Diversity</title>
+				<ul>
+					<li>We all talk about the same things but we may talk about them differently</li>
+					<li>Make it easy to discover and reuse <em>building blocks for APIs</em></li>
+					<li>The goal is not <em>perfect understanding</em> but <em>more effective collaboration</em></li>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
