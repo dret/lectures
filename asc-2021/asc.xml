@@ -148,6 +148,10 @@
 				</ul>
 				<pre>As a &lt;role> I can &lt;capability>, so that &lt;receive benefit>.</pre>
 			</slide>
+			<slide id="story-example">
+				<title>API Story Example</title>
+				<listing src="api-story.json"/>
+			</slide>
 		</part>
 		<part id="canvas">
 			<title>API Canvas</title>
