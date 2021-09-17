@@ -123,6 +123,18 @@
 				<title>API Value Chain</title>
 				<img src="API-value-chain.png" class="fullsize"/>
 			</slide>
+			<slide id="representation">
+				<title>Out-of-line or Inline?</title>
+				<ul>
+					<li>Out-of-line provides better decoupling from specific formats</li>
+					<li>Inline allows easier flow through toolchains and ecosystems</li>
+					<li>Combining both combines both advantages</li>
+					<ul>
+						<li><em>Media types</em> allow standalone representation and exchange</li>
+						<li><em>Extensions</em> allow representation to be embedded into existing toolchains</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="stories">
 			<title>API Stories</title>
