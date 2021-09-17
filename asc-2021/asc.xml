@@ -146,6 +146,7 @@
 					<li>They facilitate <em>sensemaking and communication</em></li>
 					<li>They help teams document their <em>understanding of a system and its context</em></li>
 				</ul>
+				<pre>As a &lt;role> I can &lt;capability>, so that &lt;receive benefit>.</pre>
 			</slide>
 		</part>
 		<part id="canvas">
@@ -157,6 +158,25 @@
 					<li>A canvas is a strategic management template</li>
 					<li>It facilitates structured thinking and communications</li>
 					<li>It helps documenting the main value propositions</li>
+				</ul>
+			</slide>
+			<slide id="related-work">
+				<title>Existing API Canvases</title>
+				<ul>
+					<li>Microservice Design Canvas</li>
+					<ul>
+						<li><a href="https://dzone.com/articles/streamlined-microservice-design-in-practice">Matt McLarty and Irakli Nadareishvili, "Streamlined Microservice Design in Practice", December 2017</a></li>
+						<li><a href="https://launchany.com/microservice-design-canvas/">James Higginbotham's version</a></li>
+						<li><a href="https://chrisrichardson.net/post/microservices/general/2019/02/27/microservice-canvas.html">Chris Richardson's version</a></li>
+					</ul>
+					<li>Value Proposition Interface (VPI) Canvas</li>
+					<ul>
+						<li><a href="https://www.amanciobouza.com/post/how-to-use-the-value-proposition-interface-canvas">Amancio Bouza, "How to Use the Value Proposition Interface Canvas", September 2019</a></li>
+					</ul>
+					<li>APIOps API Canvases</li>
+					<ul>
+						<li><a href="https://www.apiopscycles.com/resources/api-canvas-instructions">API Value Proposition and API Business Model Canvases</a></li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
