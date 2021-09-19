@@ -699,15 +699,31 @@
 			<title>API Landscape Value</title>
 			<slide id="adding">
 				<title>Adding APIs is Easy</title>
+				<ul>
+					<li>Teams build APIs when they build capabilities (API first)</li>
+					<li>APIs can be easily added to the platform with as much automation as possible</li>
+				</ul>
 			</slide>
 			<slide id="finding">
 				<title>Finding APIs is Easy</title>
+				<ul>
+					<li>API products are described and published to be easily findable</li>
+					<li>The platform provides descriptive and extensible metadata management (API labels)</li>
+				</ul>
 			</slide>
 			<slide id="using">
 				<title>Using APIs is Easy</title>
+				<ul>
+					<li>API onboarding is part of the platform experience</li>
+					<li>APIs are described so that they can be easily consumed</li>
+				</ul>
 			</slide>
 			<slide id="improving">
 				<title>Improving APIs is Easy</title>
+				<ul>
+					<li>The platform monitors feedback and gathers feedback</li>
+					<li>Updating APIs is part of the normal management model</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="api-business-conclusions">
