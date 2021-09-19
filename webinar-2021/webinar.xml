@@ -640,30 +640,59 @@
 			</slide>
 		</part>
 		<part id="perspectives">
-			<titles>Perspectives on APIs</titles>
+			<title>API Perspectives</title>
 			<slide id="users">
 				<title>API Users</title>
 				<img src="API-perspectives-external-internal.png" class="fullsize"/>
 			</slide>
-			<slide id="building-blocks">
-				<title>Building Blocks for Everybody</title>
-				<img src="API-perspectives-building-blocks.png" class="fullsize"/>
+			<slide id="horizon">
+				<title>Lesson #1: Expand Your API Horizon</title>
+				<ul>
+					<li><em>Public/Partner API:</em> Establish and/or drive new value chains</li>
+					<li><em>Private API:</em> Become better at changing value chains effectively</li>
+				</ul>
 			</slide>
 			<slide id="platform">
 				<title>API Platforms</title>
 				<img src="API-perspectives-platform.png" class="fullsize"/>
 			</slide>
+			<slide id="diversity">
+				<title>Lesson #2: Plan for API Diversity</title>
+				<ul>
+					<li>Different user groups need different APIs</li>
+				</ul>
+			</slide>
 			<slide id="architecture">
 				<title>Platform Architecture</title>
 				<img src="API-perspectives-architecture.png" class="fullsize"/>
+			</slide>
+			<slide id="openness">
+				<title>Lesson #3: Architect an Open Platform</title>
+				<ul>
+					<li>APIs can be contributed from various environments</li>
+					<li>APIs can be published to various consumers/environments</li>
+				</ul>
 			</slide>
 			<slide id="technology">
 				<title>Building Block Mechanics</title>
 				<img src="API-perspectives-technology.png" class="fullsize"/>
 			</slide>
+			<slide id="products">
+				<title>Lesson #4: What's an API's Value?</title>
+				<ul>
+					<li>Describing the interface is necessary but not sufficient</li>
+					<li>APIs have to be readily consumable products</li>
+				</ul>
+			</slide>
 			<slide id="value">
 				<title>Building Block Value</title>
 				<img src="API-perspectives-value.png" class="fullsize"/>
+			</slide>
+			<slide id="platforms">
+				<title>Lesson #5: Platforms Produce Value</title>
+				<ul>
+					<li>The true measure of success is how much value is being produced</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="landscape-value">
