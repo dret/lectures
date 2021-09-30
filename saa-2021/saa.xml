@@ -67,6 +67,75 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="CAM">
+			<title>Continuous API Management</title>
+			<slide id="catalog">
+				<title>One Catalog to Rule Them All</title>
+				<img src="one-ring.jpg" class="fullsize"/>
+			</slide>
+			<slide id="landscape">
+				<title>API Landscapes are Growing</title>
+				<img src="API-ERP-landscape.png" class="fullsize"/>
+			</slide>
+			<slide id="diversity">
+				<title>API Diversity is Increasing</title>
+				<img src="API-ERP-diversity.png" class="fullsize"/>
+			</slide>
+			<slide id="catalog">
+				<title>The ERP for APIs</title>
+				<img src="API-ERP-catalog.png" class="fullsize"/>
+			</slide>
+			<slide id="OAI-tech">
+				<title>OpenAPI represents Technology</title>
+				<img src="API-ERP-tech.png" class="fullsize"/>
+			</slide>
+			<slide id="OAI-value">
+				<title>Exposing API Value</title>
+				<img src="API-ERP-value.png" class="fullsize"/>
+			</slide>
+		</part>
+		<part id="value">
+			<title>API Value</title>
+			<slide id="usage">
+				<title>API Value = Potential × Usage</title>
+				<ul>
+					<li><em>Designed</em> as building blocks focusing on value</li>
+					<li><em>Published</em> easily contributing to the platform</li>
+					<li><em>Discovered</em> in a catalog of all building blocks</li>
+					<li><em>Subscribed</em> so that the building block can be used</li>
+					<li><em>Used</em> to build new products</li>
+					<li><em>Improved</em> to make the building block more valuable</li>
+				</ul>
+			</slide>
+			<slide id="openness">
+				<title>Openness and Automation</title>
+				<ul>
+					<li>Create an <em>open API platform</em> that itself is open as well</li>
+					<ul>
+						<li><em>Open API</em> platform means any API can be added to it</li>
+						<li>Open <em>API platform</em> means the platform is built openly</li>
+					</ul>
+					<li><em>Communicating value through the platform</em> needs open formats</li>
+					<li><em>API value</em> needs to be communicated through the toolchain</li>
+				</ul>
+			</slide>
+			<slide id="value-chain">
+				<title>API Value Chain</title>
+				<img src="API-value-chain.png" class="fullsize"/>
+			</slide>
+			<slide id="representation">
+				<title>Out-of-line or Inline?</title>
+				<ul>
+					<li>Out-of-line provides better decoupling from specific formats</li>
+					<li>Inline allows easier flow through toolchains and ecosystems</li>
+					<li>Combining both combines both advantages</li>
+					<ul>
+						<li><em>Media types</em> allow standalone representation and exchange</li>
+						<li><em>Extensions</em> allow representation to be embedded into existing toolchains</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
