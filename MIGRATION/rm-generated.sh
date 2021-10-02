@@ -197,7 +197,6 @@ rm tampa-2018/toc.html
 rm tampa-2018/landscapes.html
 rm tampa-2018/microservices.html
 rm raymond-james-2018/toc.html
-rm raymond-james-2018/introduction.html
 rm raymond-james-2018/change-management.html
 rm raymond-james-2018/landscapes.html
 rm raymond-james-2018/microservices.html
