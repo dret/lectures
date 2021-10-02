@@ -24,7 +24,6 @@ rm api-world-2016/index.html
 rm cwin-2016/index.html
 rm ca-world-2016/index.html
 rm api-days-london-2016/toc.html
-rm api-days-london-2016/microservices.html
 rm api-days-london-2016/balancing-speed-and-safety.html
 rm api-days-london-2016/service-landscaping.html
 rm intesa-2016/toc.html
