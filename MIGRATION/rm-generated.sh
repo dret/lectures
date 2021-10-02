@@ -214,7 +214,6 @@ rm volkswagen-2018/programs.html
 rm gpi-2018/introduction.html
 rm gpi-2018/toc.html
 rm gpi-2018/change-management.html
-rm gpi-2018/openapi.html
 rm gpi-2018/styles.html
 rm gpi-2018/digital-transformation.html
 rm gpi-2018/foundations.html
