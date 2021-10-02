@@ -293,8 +293,6 @@ rm webinar-2020/toc.html
 rm webinar-2020/guidelines.html
 rm webinar-2020/programs.html
 rm webinar-2020/strategy.html
-rm bjb-2020/toc.html
-rm bjb-2020/api-start.html
 rm api-days-interface-2020/index.html
 rm sag-2020/index.html
 rm dss-2020/index.html
