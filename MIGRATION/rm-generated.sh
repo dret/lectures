@@ -173,8 +173,6 @@ rm volvo-2018/rest.html
 rm volvo-2018/hypermedia.html
 rm volvo-2018/change-management.html
 rm volvo-2018/styles.html
-rm volkswagen-2018/introduction.html
-rm volkswagen-2018/toc.html
 rm volkswagen-2018/microservices.html
 rm volkswagen-2018/representations.html
 rm volkswagen-2018/styles.html
