@@ -85,8 +85,6 @@ rm modules/change-management.html
 rm modules/programs.html
 rm modules/rest.html
 rm modules/guidelines.html
-rm mci-2017/toc.html
-rm mci-2017/introduction.html
 rm restfest-uk-2017/toc.html
 rm san-diego-2017/microservices.html
 rm san-diego-2017/toc.html
