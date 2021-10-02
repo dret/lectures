@@ -92,7 +92,6 @@ rm geoint-2017/index.html
 rm telekom-2017/introduction.html
 rm telekom-2017/toc.html
 rm telekom-2017/digital-transformation.html
-rm telekom-2017/conclusions.html
 rm telekom-2017/documentation.html
 rm telekom-2017/governance.html
 rm telekom-2017/hypermedia.html
