@@ -156,7 +156,6 @@ rm utrecht-2018/toc.html
 rm utrecht-2018/webconcepts.html
 rm utrecht-2018/awesomeness.html
 rm accso-2018/index.html
-rm politecnico-2018/index.html
 rm politecnico-2018/hypermedia.html
 rm politecnico-2018/introduction.html
 rm politecnico-2018/representations.html
