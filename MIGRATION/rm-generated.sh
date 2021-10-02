@@ -9,7 +9,6 @@ rm haas2016/index.html
 rm api360-2016-nyc/index.html
 rm ipt-2016/index.html
 rm prague-2016/index.html
-rm capgemini-2016/index.html
 rm ifi-2016/index.html
 rm bta-immersion-2016/index.html
 rm vanick-2016/index.html
@@ -17,12 +16,11 @@ rm restfest-2016/index.html
 rm nordic-apis-2016/ecosystem-complexity.html
 rm nordic-apis-2016/microservices-gardening.html
 rm nordic-apis-2016/toc.html
-rm usaa-2016/microservices-on-the-web.html
+rm usaa-2016/microservices-and-the-web.html
 rm usaa-2016/microservices.html
 rm usaa-2016/toc.html
 rm st-louis-2016/index.html
 rm api-world-2016/index.html
-rm usaa-2016/microservices-and-the-web.html
 rm cwin-2016/index.html
 rm ca-world-2016/index.html
 rm api-days-london-2016/toc.html
