@@ -60,7 +60,6 @@ rm nie-2017/conclusions.html
 rm nie-2017/styles.html
 rm locweb-2017/index.html
 rm apj-2017/toc.html
-rm apj-2017/sydney.html
 rm apj-2017/perth-foundation.html
 rm apj-2017/perth-design.html
 rm apj-2017/sydney.html
