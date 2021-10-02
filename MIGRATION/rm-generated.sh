@@ -4,7 +4,7 @@ rm iot-spring15/*.html
 rm wsrest2015/index.html
 rm kesw2015/index.html
 rm iot-ornl-2015/index.html
-rm locweb2016/index.html
+rm locweb-2016/index.html
 rm haas2016/index.html
 rm api360-2016-nyc/index.html
 rm ipt-2016/index.html
