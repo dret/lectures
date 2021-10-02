@@ -47,8 +47,6 @@ rm south-africa-2017/foundation.html
 rm south-africa-2017/api-design.html
 rm south-africa-2017/toc.html
 rm mapfre-2017/index.html
-rm mpc-2017/intro.html
-rm mpc-2017/toc.html
 rm nie-2017/toc.html
 rm nie-2017/introduction.html
 rm nie-2017/technology.html
