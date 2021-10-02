@@ -337,7 +337,6 @@ rm webinar-2021/api-business.html
 rm apicon-brazil-2021/index.html
 rm apicon-den-haag-2021/index.html
 rm acs-meetup-2021/index.html
-rm api-friday-2021/index.html
 rm pernod-ricard-2021/index.html
 rm api-collective-2021/index.html
 rm jax-2021/toc.html
