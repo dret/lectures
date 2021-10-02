@@ -135,7 +135,6 @@ rm viessmann-2017/contracts.html
 rm viessmann-2017/change-management.html
 rm viessmann-2017/rest.html
 rm wind-tre-2017/toc.html
-rm wind-tre-2017/introduction.html
 rm wind-tre-2017/introduction-models-protocols.html
 rm wind-tre-2017/development-management.html
 rm wind-tre-2017/strategy-design.html
