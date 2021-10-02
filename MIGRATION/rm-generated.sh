@@ -123,7 +123,6 @@ rm deloitte-2017/toc.html
 rm deloitte-2017/api-styles.html
 rm deloitte-2017/change-management.html
 rm deloitte-2017/microservices.html
-rm api-days-paris-2017/index.html
 rm viessmann-2017/toc.html
 rm viessmann-2017/introduction.html
 rm viessmann-2017/design.html
