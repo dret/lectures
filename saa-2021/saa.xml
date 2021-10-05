@@ -209,6 +209,10 @@
 			<slide id="end-to-end">
 				<title>Product → Canvas → Story → API</title>
 			</slide>
+			<slide id="OAI-example">
+				<title>Embedded Canvas and Story</title>
+				<listing src="remarkable.yaml"/>
+			</slide>
 			<slide id="OAI-value">
 				<title>Communicating Value to API Consumers</title>
 				<img src="API-value-chain.png" class="fullsize"/>
