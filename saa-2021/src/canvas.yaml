@@ -1,0 +1,9 @@
+value-prop:
+  canvases:
+    - canvas:
+        href: 'http://...'
+        type: 'http://...'
+        name: Document Browsing and Access
+        description: Allows access to folders and files ...
+        tasks: '- Get folder contents ...'
+        dependencies: '- User authentication service ...'
