@@ -174,6 +174,20 @@
 		</part>
 		<part id="story">
 			<title>What? API Stories</title>
+			<slide id="user-story">
+				<title>User Stories</title>
+				<img src="wikipedia-logo.png" href="https://en.wikipedia.org/wiki/User_story" style="float: right ; width : 16% ; margin : 3% ; "/>
+				<ul>
+					<li>User stories are a type of <em>boundary object</em></li>
+					<li>They facilitate <em>sensemaking and communication</em></li>
+					<li>They help teams document their <em>understanding of a system and its context</em></li>
+				</ul>
+				<pre>As a &lt;role> I can &lt;capability>, so that &lt;receive benefit>.</pre>
+			</slide>
+			<slide id="story-example">
+				<title>API Story Example</title>
+				<listing src="api-story.json"/>
+			</slide>
 		</part>
 		<part id="design">
 			<title>How? API Design</title>
