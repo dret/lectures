@@ -127,6 +127,10 @@
 			<slide id="representation">
 				<title>Out-of-line or Inline?</title>
 				<ul>
+					<li><em>OpenAPI</em> has become a popular choice for API toolchains</li>
+					<ul>
+						<li>It is technical in nature but has built-in extension capabilities</li>
+					</ul>
 					<li>Out-of-line provides better decoupling from specific formats</li>
 					<li>Inline allows easier flow through toolchains and ecosystems</li>
 					<li>Combining both combines both advantages</li>
