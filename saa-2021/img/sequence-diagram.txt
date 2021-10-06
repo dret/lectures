@@ -1,0 +1,8 @@
+title Remarkable File System API
+
+Consumer->API: Retrieve folder contents
+API->Consumer: Folder contents
+Consumer->API: Navigate folder structure
+API->Consumer: Folder contents
+Consumer->API: Retrieve content item
+API->Consumer: Content item
