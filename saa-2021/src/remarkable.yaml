@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Remarkable File System API
+  description: Accessing folders and files for metadata and content
+  x-api-value:
+    canvases:
+      - canvas:
+          href: 'http://...'
+    stories:
+      - story:
+          href: 'http://...'
+paths:
+  /{folder-path}:
+    get:
+      description: Returns the contents of a given folder
+      responses:
+        '200':
+          description: Successful response
