@@ -209,6 +209,14 @@
 			<title>How? API Design</title>
 			<slide id="diagrams">
 				<title>Designing the API</title>
+				<ul>
+					<li>The canvas provides the constraints for the API</li>
+					<li>The stories provide the goals for the API</li>
+					<li>Developing stories into an API takes one additional step</li>
+					<ul>
+						<li>This step depends on API style and technology</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="end-to-end">
 				<title>Product → Canvas → Story → API</title>
