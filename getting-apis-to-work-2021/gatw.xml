@@ -145,6 +145,9 @@
 	<presentation id="api-management">
 		<title short="API Management">What is API Management? And Where is it Going?</title>
 		<date short="2021-10-07">October 7, 2021</date>
+		<slide id="evolution">
+			<title>API Management is Evolving</title>
+		</slide>
 		<slide id="technical">
 			<title>Technical API Management</title>
 			<img src="API-management-technical.png" class="fullsize"/>
@@ -192,6 +195,9 @@
 				<li>Managing API portfolios</li>
 				<li>Providing specific product mixes for specific audiences</li>
 			</ul>
+		</slide>
+		<slide id="summary">
+			<title>API Management Summary</title>
 		</slide>
 		<slide id="caching-q-and-a">
 			<title>Thanks and Please Connect!</title>
