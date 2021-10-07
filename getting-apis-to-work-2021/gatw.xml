@@ -145,21 +145,34 @@
 	<presentation id="api-management">
 		<title short="API Management">What is API Management? And Where is it Going?</title>
 		<date short="2021-10-07">October 7, 2021</date>
-		<part id="caching-closing">
-			<title>Thank You!</title>
-			<slide id="caching-q-and-a">
-				<title>Thanks and Please Connect!</title>
+		<slide id="technical">
+			<title>Technical API Management</title>
+			<img src="API-management-technical.png" class="fullsize"/>
+		</slide>
+		<slide id="lifecycle">
+			<title>API Lifecycle Management</title>
+			<img src="API-management-lifecycle.png" class="fullsize"/>
+		</slide>
+		<slide id="product">
+			<title>API Product Management</title>
+			<img src="API-management-product.png" class="fullsize"/>
+		</slide>
+		<slide id="marketing">
+			<title>API Product Marketing</title>
+			<img src="API-management-marketing.png" class="fullsize"/>
+		</slide>
+		<slide id="caching-q-and-a">
+			<title>Thanks and Please Connect!</title>
+			<ul>
+				<li>Slides online: <a href="http://dret.net/lectures/getting-apis-to-work-2021/api-management"><code>dret.net/lectures/getting-apis-to-work-2021/api-management</code></a></li>
+				<li>Additional resources:</li>
 				<ul>
-					<li>Slides online: <a href="http://dret.net/lectures/getting-apis-to-work-2021/api-management"><code>dret.net/lectures/getting-apis-to-work-2021/api-management</code></a></li>
-					<li>Additional resources:</li>
-					<ul>
-						<li><a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">Twitter: <code>@dret</code></a></li>
-						<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-						<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-					</ul>
+					<li><a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">Twitter: <code>@dret</code></a></li>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
 				</ul>
-			</slide>
-		</part>
+			</ul>
+		</slide>
 	</presentation>
 	<presentation id="api-requests">
 		<title short="Safe and Idempotent Requests">Safe and Idempotent Requests Explained</title>
