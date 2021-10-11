@@ -101,6 +101,13 @@
 				<title>Engineering Flowchart</title>
 				<img src="engineering-flowchart.png" class="fullsize"/>
 			</slide>
+			<slide id="anti-patterns">
+				<title>What is an Anti-Pattern?</title>
+				<ul>
+					<li>Commonly used pattern that creates more bad outcomes than good ones</li>
+					<li>Better working alternatives exist and can be used instead</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="value">
 			<title>What is API Value?</title>
