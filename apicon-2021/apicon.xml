@@ -126,6 +126,82 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="determinism">
+			<title>Technological Determinism</title>
+			<slide id="build-it">
+				<title>Build it and They Will Come</title>
+				<ul>
+					<li><em>API platforms</em> are necessary but not sufficient for scaling API adoption</li>
+					<li>API success needs <em>high-quality/high-value API products</em></li>
+					<li>Does it help a team to publish an API and do they know how to use APIs?</li>
+				</ul>
+			</slide>
+			<slide id="selling">
+				<title>Explain and Convince and Celebrate</title>
+				<ul>
+					<li><em>Explain</em> what APIs are and how they are the foundation of anything digital</li>
+					<li><em>Convince</em> that teams collaborating via APIs drives digital transformation</li>
+					<li><em>Celebrate</em> growth and success stories so that API value becomes visible</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="quantity-quality">
+			<title>Quantity over Quality</title>
+			<slide id="quantity">
+				<title>Many APIs > Fewer APIs</title>
+				<ul>
+					<li>Simplistic KPIs that focus on producing <em>more APIs</em></li>
+					<li>Ignoring that <em>API consumption</em> is the main driver of API value</li>
+					<li>Treating APIs as <q>just another thing</q> teams have to do</li>
+				</ul>
+			</slide>
+			<slide id="quality">
+				<title>What's an API's Value?</title>
+				<ul>
+					<li>Successful APIs are APIs that are used and reused</li>
+					<li>The goal is to drive <em>more value</em> through APIs</li>
+					<li>Focus on unlocking value based on <em>usage potential vs. actual usage</em></li>
+				</ul>
+			</slide>
+		</part>
+		<part id="uni-api">
+			<title>Beware the Uni-API</title>
+			<slide id="old-school">
+				<title><q>We've been doing that for 30 years …</q></title>
+				<ul>
+					<li>Technically speaking APIs have been around since computers were invented</li>
+					<li>Existing systems and architectures certainly have many APIs in them</li>
+					<li>IT architecture often focuses on technical structure and less on business changeability</li>
+				</ul>
+			</slide>
+			<slide id="new-school">
+				<title><q>… let's look at what's different then!</q></title>
+				<ul>
+					<li>The challenge is creating APIs that align with business goals and organizational structure</li>
+					<li>The goal is for teams to be able to build quickly without <q>integration projects</q></li>
+					<li>Present the <q>API of the week</q> for everybody to use in their own products</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="eim">
+			<title>The Return of the EIM</title>
+			<slide id="model-driven">
+				<title>Model-Driven APIs</title>
+				<ul>
+					<li>All <q>world models</q> need to be aligned for better API compatibility</li>
+					<li>Deriving all APIs from the model allows for better automation at the API level</li>
+					<li>Defining/delivering APIs becomes secondary to aligning them with the organization's model</li>
+				</ul>
+			</slide>
+			<slide id="diversity">
+				<title>Embrace Diversity</title>
+				<ul>
+					<li>We all talk about the same things but we may talk about them differently</li>
+					<li>Make it easy to discover and reuse <em>building blocks for APIs</em></li>
+					<li>The goal is not <em>perfect understanding</em> but <em>more effective collaboration</em></li>
+				</ul>
+			</slide>
+		</part>
 		<part id="network-conclusions">
 			<title>Conclusions</title>
 			<slide id="network-q-and-a">
