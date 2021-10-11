@@ -289,7 +289,7 @@
 			<title>Scaling is Hard</title>
 			<slide id="stalling">
 				<title>Network Investments Don't Grow Linearly</title>
-				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" class="fullsize"/>
+				<img src="stalled-digital-transformation.png" href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' class="fullsize"/>
 			</slide>
 			<slide id="api-value">
 				<title>How do APIs Create Value?</title>
@@ -321,10 +321,8 @@
 				</ul>
 			</slide>
 			<slide id="scale">
-				<title>The Network Effect</title>
-				<ul>
-					<li>Digital transformation needs conviction and dedication</li>
-				</ul>
+				<title>Size Matters: The Network Effect</title>
+				<img src="network-effect.png" href="https://en.wikipedia.org/wiki/Network_effect" class="fullsize"/>
 			</slide>
 		</part>
 		<part id="amplifiers">
