@@ -53,12 +53,10 @@
 		<title short="API Anti-Patterns">API Anti-Patterns: WD-40 for Your Digital Initiatives</title>
 		<toc class="abstract">The success rate of digital initiatives in organizations is relatively low. Various studies report that around three quarters of initiatives do not yield the expected results. Many aspects that can lead to disappointing results, and one of these aspects is the question how APIs, which are one of the foundational building blocks of any digital initiative, are being managed. We look at the most important aspects of API management (strategy, program, platform, products) and illustrate with examples which problems jeopardize the success of API management, and ultimately of digital initiatives. These API anti-patterns will help you to check your organization's digital initiative for well-known issues.</toc>
 		<toc class="resources"><a title='Patrick Forth, Tom Reichert, Romain de Laubier, and Saibal Chakraborty, "Flipping the Odds of Digital Transformation Success", Boston Consulting Group, October 2020' href="https://www.bcg.com/en-ch/publications/2020/increasing-odds-of-success-in-digital-transformation">Digital Transformation Success</a></toc>
-<!--
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
--->
 		<part id="anti-pattern-intro">
 			<title>Introduction</title>
 			<slide id="dret">
@@ -244,7 +242,6 @@
 		<title short="Using the Network Effect">Using the Network Effect: API Strategy is more than Technology</title>
 		<toc class="abstract">APIs are more than just technology. The more APIs are being used, the more it becomes obvious that a focus just on technology does not fully realize their potential for the business and the organization. In particular in larger organizations, it is necessary to API-enable the entire organization. This is particularly important in product management, which has to make sure that every product becomes a digital building block. The network effect means that the value of APIs is a function of what fraction of the organization is API-enabled, meaning that increasing that fraction is an important aspect of increasing the value of APIs. "Thinking the API way" should become the default for everybody working in an organization, and in this presentation we discuss some examples of how to make this happen.</toc>
 		<toc class="resources"><a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' class="fullsize">Stalled Digital Transformation</a></toc>
-<!-- 
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -284,7 +281,6 @@
 				</ul>
 			</slide>
 		</part>
--->
 		<part id="scaling">
 			<title>Scaling is Hard</title>
 			<slide id="stalling">
