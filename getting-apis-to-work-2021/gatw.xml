@@ -226,11 +226,47 @@
 	<presentation id="rbac">
 		<title short="RBAC">What is Role-Based Access Control (RBAC)?</title>
 		<date short="2021-10-xx">October xx, 2021</date>
+		<slide id="title">
+			<title>Role-Based Access Control (RBAC)</title>
+			<img src="RBAC-title" class="fullsize-left"/>
+		</slide>
 		<part id="model">
 			<title>RBAC Model</title>
+			<slide id="model-capability">
+				<title>RBAC Model: Capability</title>
+				<img src="RBAC-model-capability" class="fullsize-left"/>
+			</slide>
+			<slide id="model-permission">
+				<title>RBAC Model: Permission</title>
+				<img src="RBAC-model-permission" class="fullsize-left"/>
+			</slide>
+			<slide id="model-role">
+				<title>RBAC Model: Role</title>
+				<img src="RBAC-model-role" class="fullsize-left"/>
+			</slide>
+			<slide id="model-user">
+				<title>RBAC Model: User</title>
+				<img src="RBAC-model-user" class="fullsize-left"/>
+			</slide>
 		</part>
 		<part id="relationships">
 			<title>RBAC Relationships</title>
+			<slide id="relationships-user">
+				<title>RBAC Relationships: User</title>
+				<img src="RBAC-model-user" class="fullsize-left"/>
+			</slide>
+			<slide id="relationships-role">
+				<title>RBAC Relationships: Role</title>
+				<img src="RBAC-relationships-role" class="fullsize-left"/>
+			</slide>
+			<slide id="relationships-permission">
+				<title>RBAC Relationships: Permission</title>
+				<img src="RBAC-relationships-permission" class="fullsize-left"/>
+			</slide>
+			<slide id="relationships-capability">
+				<title>RBAC Relationships: Capability</title>
+				<img src="RBAC-relationships-capability" class="fullsize-left"/>
+			</slide>
 		</part>
 		<part id="rbac-closing">
 			<title>Thank You!</title>
