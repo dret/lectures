@@ -269,7 +269,19 @@
 			</slide>
 		</part>
 		<part id="rbac-closing">
-			<title>Thank You!</title>
+			<title>Conclusions</title>
+			<slide id="complexity">
+				<title>Enterprise-level Access Control</title>
+				<ul>
+					<li>RBAC is a good model for large organizations</li>
+					<li>Defining useful roles/permissions is critical</li>
+					<li>RBAC is one point on the IAM design spectrum</li>
+					<ul>
+						<li><em>Access Control List (ACL)</em> is a simpler approch</li>
+						<li><em>Attribute-Based Access Control (ABAC)</em> is more complex/powerful</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="rbac-thanks">
 				<title>Thanks and Please Connect!</title>
 				<ul>
