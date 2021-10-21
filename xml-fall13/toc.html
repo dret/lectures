@@ -1,0 +1,368 @@
+
+		<table xmlns="http://www.w3.org/1999/xhtml" rules="all" cellspacing="0" cellpadding="5" width="100%">
+			<thead>
+				<tr>
+					<th valign="bottom">Date</th>
+					<th valign="bottom">Subject</th>
+					<th valign="bottom">Slides</th>
+					<th valign="bottom">Additional Resources</th>
+					<!-- <th valign="bottom"><a href="a/">Assignments</a></th> -->
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="vevent">
+						<td align="right" valign="top">2013-09-04</td>
+						<td valign="top">
+							
+							<b><span class="summary">Overview and Introduction</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">The <em>Extensible Markup Language (XML)</em> has been introduced in 1998 to enable content providers to publish their content on the Web in an application-specific format. HTML was considered as conveying not enough semantics, since its only purpose was (and is) the preparation of content for Web-based publishing. XML was the first step towards machine-readable data formats for the Web, a trend that since its invention has been taken to higher levels with the idea of the <em>Semantic Web</em>. XML appeared when the Web was in the steepest part of its success curve, and since then has taken over as the globally accepted format for the exchange of machine-readable structured data.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-09-04T09:00</span>
+								<span class="dtend">2013-09-04T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="intro" title="Lecture Slides">Introduction</a> <span class="toggle">(26&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://www.w3.org/Press/1998/XML10-REC" title="http://www.w3.org/Press/1998/XML10-REC">XML 1.0 Press Release</a><span class="print-href"> [http://www.w3.org/Press/1998/XML10-REC]</span>&#xa0;&#xb7; <a class="extra " href="http://www.tbray.org/ongoing/When/200x/2008/02/10/XML-People" title="Tim Bray: XML People">XML People</a><span class="print-href"> [http://www.tbray.org/ongoing/When/200x/2008/02/10/XML-People]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-09-09</td>
+						<td valign="top">
+							
+							<b><span class="summary">XML Basics</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">The <em>Extensible Markup Language (XML)</em> defines a simple way for structuring data. The power and popularity of XML can be explained by its versatility, the platform-independence, the standards and technologies leveraging it, and the number of tools and products supporting it. Understanding XML itself is rather simple, as it only depends on a very small set of other technologies. Unicode is the most important foundation of XML. XML itself specifies two different things: on the one hand the format for structured data, which are called <em>XML documents</em>, and on the other hand a constraint language for XML documents, which is called <em>Document Type Definition (DTD)</em>.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-09-09T09:00</span>
+								<span class="dtend">2013-09-09T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="basics" title="Lecture Slides">Basics</a> <span class="toggle">(26&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://www.w3.org/TR/REC-xml/" title="W3C XML 1.0 Specification">XML&#xa0;1.0&#xa0;Spec</a><span class="print-href"> [http://www.w3.org/TR/REC-xml/]</span>&#xa0;&#xb7; <a class="extra " href="http://dret.net/netdret/docs/wilde-cacm2008-xml-fever.html" title="Erik Wilde and Robert J. Glushko, &#34;XML Fever&#34;, Communications of the ACM, 51(7):40-46, July 2008">XML&#xa0;Fever</a><span class="print-href"> [http://dret.net/netdret/docs/wilde-cacm2008-xml-fever.html]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-09-11</td>
+						<td valign="top">
+							
+							<b><span class="summary">Document Type Definition (DTD)</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">The XML specification defines a format for structured data (XML documents) and a grammar-based constraint language for these (DTD). In SGML-based systems, DTDs were often very complex and feature-rich constructs, which controlled a lot of the processing of SGML documents. XML greatly simplified DTDs, and de-facto usage of DTDs today simplified them even more. In many systems today, DTDs are not used at all or generated from sample documents. In this lecture, it is argued that DTDs (or schemas, to be more general) should be taken seriously in any non-trivial XML application, because they are a representation of the underlying (and often underspecified) data model of the application.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-09-11T09:00</span>
+								<span class="dtend">2013-09-11T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="dtd" title="Lecture Slides">DTD</a> <span class="toggle">(36&#xa0;Slides)</span></td>
+						<td align="center"></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-09-16</td>
+						<td valign="top">
+							
+							<b><span class="summary">XML Path Language (XPath)</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">XML structures data into a rather small number of different constructs, most notably elements and attributes. The <em>XML Path Language (XPath)</em> defines a way how to select parts of XML documents, so that they can be used for further processing. XPath's primary use is in <em>XSL Transformations (XSLT)</em>, but other XML technologies use it as well, e.g. XSD. XPath is a very compact language with a syntax that resembles path expressions well-known from file systems. These path expressions, however, are generalized and therefore much more powerful than the rather simple path expressions in file systems. Because of its use in different XML technologies, XPath is one of the most important XML core technologies.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-09-16T09:00</span>
+								<span class="dtend">2013-09-16T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="xpath" title="Lecture Slides">XPath</a> <span class="toggle">(35&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://www.w3.org/TR/xpath" title="W3C XPath 1.0 Specification">XPath&#xa0;1.0&#xa0;Spec</a><span class="print-href"> [http://www.w3.org/TR/xpath]</span>&#xa0;&#xb7; <a class="extra " href="xpath-chapter.pdf" title="xpath-chapter.pdf">XPath Chapter</a><span class="print-href"> [xpath-chapter.pdf]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-09-18</td>
+						<td valign="top">
+							
+							<b><span class="summary">XML Path Language (XPath) 2.0</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">The <em>XML Path Language (XPath)</em> is one of the most useful and frequently used languages in the area of XML technologies. In its version 1.0, it is used in technologies such as XSLT, XSD, DOM, and XML Tools. With <em>XPath 2.0</em>, the language has been greatly extended, the new version of XPath is the foundation for XSLT 2.0 and XQuery. XPath 2.0 provides support for regular expression matching, typed expressions, and contains language constructs for conditional and repeated evaluation.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-09-18T09:00</span>
+								<span class="dtend">2013-09-18T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="xpath20" title="Lecture Slides">XPath 2.0</a> <span class="toggle">(35&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://www.w3.org/TR/xpath20" title="W3C XPath 2.0 Specification">XPath&#xa0;2.0&#xa0;Spec</a><span class="print-href"> [http://www.w3.org/TR/xpath20]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-09-23</td>
+						<td valign="top">
+							
+								<span class="guest">Guest Lecture by Eric Kansa : </span>
+							
+							<b><span class="summary">XML in Application</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">Eric Kansa will discuss "open data" and some implementation strategies for realizing the goals of the open data movement. He will be drawing examples from Open Context, a research data sharing system focusing on archaeology. The discussion will explore pragmatic approaches to using XML and other structured data formats for publishing data on the Web to serve different communities with different levels of technical skills and capabilities.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-09-23T09:00</span>
+								<span class="dtend">2013-09-23T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="xml-in-application.pdf" title="Lecture Slides">XML in Application</a> <span class="toggle"></span></td>
+						<td align="center"><a class="extra " href="http://opencontext.org/" title="http://opencontext.org/">Open&#xa0;Context</a><span class="print-href"> [http://opencontext.org/]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-09-25</td>
+						<td valign="top">
+							
+							<b><span class="summary">XML Namespaces</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">XML is successful because it can be used in many different scenarios, and because it is easy to define a schema (such as a DTD) for new scenarios, producing a tailored XML data model for this scenario. This means that names in XML documents must be interpreted as belonging to a certain schema. As long as a document uses names from only one schema, this can be done rather easily. However, in many scenarios today documents combine names from different schemas, and <em>XML Namespaces</em> provide a mechanism how the names in an XML document can be associated with a namespace.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-09-25T09:00</span>
+								<span class="dtend">2013-09-25T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="xmlns" title="Lecture Slides">Namespaces</a> <span class="toggle">(23&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://www.rpbourret.com/xml/NamespacesFAQ.htm#p1" title="http://www.rpbourret.com/xml/NamespacesFAQ.htm#p1">XML Namespaces FAQ (Part I)</a><span class="print-href"> [http://www.rpbourret.com/xml/NamespacesFAQ.htm#p1]</span>&#xa0;&#xb7; <a class="extra " href="http://www.w3.org/TR/REC-xml-names/" title="W3C XML Namespaces Specification">XML&#xa0;Namespaces&#xa0;Spec</a><span class="print-href"> [http://www.w3.org/TR/REC-xml-names/]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-09-30</td>
+						<td valign="top">
+							
+							<b><span class="summary">XML Schema (XSD) &#x2013; Part I</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">The <em>XML Schema Definition Language (XSD)</em> is the most popular schema language for XML today. It has been introduced to overcome some of the commonly observed limitations of DTDs, most notably the lack of typing. <em>Simple Types</em> describe content which is not structured by XML markup, which means it describes attribute values and element content. Simple types can be defined by deriving new types from existing types by using type restriction.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-09-30T09:00</span>
+								<span class="dtend">2013-09-30T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="xsd-1" title="Lecture Slides">XSD 1</a> <span class="toggle">(27&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://www.w3.org/XML/Schema" title="W3C XML Schema Home">XML Schema</a><span class="print-href"> [http://www.w3.org/XML/Schema]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-10-02</td>
+						<td valign="top">
+							
+							<b><span class="summary">XML Schema (XSD) &#x2013; Part II</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">XSD <em>Complex Types</em> describe element content if this content is using attributes and/or element content other than only character data. Thus, complex types are used to define the allowed markup structures for a class of documents. Using XSD's type concepts, it is easier to represent model-level information in a schema, because type hierarchies can represent model-level specializations.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-10-02T09:00</span>
+								<span class="dtend">2013-10-02T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="xsd-2" title="Lecture Slides">XSD 2</a> <span class="toggle">(36&#xa0;Slides)</span></td>
+						<td align="center"></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-10-07</td>
+						<td valign="top">
+							
+							<b><span class="summary">XML Schema (XSD) &#x2013; Part III</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">XSD allows greater flexibility in defining constraints on intra-document references than the ID/IDREF construct of DTDs. XSD's <em>Identity Constraints</em> are scoped, typed, and can be used for elements or attributes. They are more powerful that the DTD's limited ID/IDREF mechanism, but still lack sufficient generality to support a really wide set of model constraints to be expressed. XSD complex types can be derived by <em>restriction</em> or <em>extension</em>. Complex type restriction defines the restricted type to be a more restricted version of the base type. Complex type extension make it possible to extend the base type by either adding attributes or contents (only by appending new content to the content model). Complex type derivation allows XSD to express type hierarchies of complex types, which can be aligned with more or less specialized code for processing instances of these types.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-10-07T09:00</span>
+								<span class="dtend">2013-10-07T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="xsd-3" title="Lecture Slides">XSD 3</a> <span class="toggle">(27&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://www.awprofessional.com/articles/printerfriendly.asp?p=31477&amp;rl=1" title="http://www.awprofessional.com/articles/printerfriendly.asp?p=31477&amp;rl=1">XSD Identity Constraints</a><span class="print-href"> [http://www.awprofessional.com/articles/printerfriendly.asp?p=31477&amp;rl=1]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-10-09</td>
+						<td valign="top">
+							
+							<b><span class="summary">Project Presentation Preparation</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">This slot is reserved for the project group to meet at prepare their project presentations.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-10-09T09:00</span>
+								<span class="dtend">2013-10-09T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="project-schedule#preparation" title="Lecture Slides">Project Presentation Preparation</a> <span class="toggle"></span></td>
+						<td align="center"></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-10-14</td>
+						<td valign="top">
+							
+							<b><span class="summary">Project Presentations</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">This slot is reserved for the project presentations, with each group getting an opportunity to present.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-10-14T09:00</span>
+								<span class="dtend">2013-10-14T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="project-schedule#presentation" title="Lecture Slides">Project Presentations</a> <span class="toggle"></span></td>
+						<td align="center"></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-10-16</td>
+						<td valign="top">
+							
+							<b><span class="summary">Project Presentation Feedback</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">This slot is reserved for the project groups to incorporate the feedback from the project presentations.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-10-16T09:00</span>
+								<span class="dtend">2013-10-16T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="project-schedule#feedback" title="Lecture Slides">Project Presentation Feedback</a> <span class="toggle"></span></td>
+						<td align="center"></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-10-21</td>
+						<td valign="top">
+							
+							<b><span class="summary">XML Transformations (XSLT) &#x2013; Part I</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">Because XML can be used to represent any vocabulary (often defined by some schema), the question is how these different vocabularies can be processed and maybe transformed into something else. This <q>something else</q> may be another XML vocabulary (a common requirement in B2B scenarios), or it may be HTML (a common scenario for Web publishing). Using <em>XSL Transformations (XSLT)</em>, mapping tasks can be implemented easily. XSLT leverages XPath's expressive power in a rather simple programming language, the programs are often called <em>stylesheets</em>. For easy tasks, XSLT mappings can be specified without much real <q>programming</q> going on, by simply specifying how components of the source markup are mapped to components of the target markup.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-10-21T09:00</span>
+								<span class="dtend">2013-10-21T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="xslt-1" title="Lecture Slides">XSLT 1</a> <span class="toggle">(27&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://www.w3.org/TR/xslt" title="W3C XSLT 1.0 Specification">XSLT&#xa0;1.0&#xa0;Spec</a><span class="print-href"> [http://www.w3.org/TR/xslt]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-10-23</td>
+						<td valign="top">
+							
+							<b><span class="summary">XML Transformations (XSLT) &#x2013; Part II</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">XSLT's template matching mechanism lets the XSLT processor find the <q>best match</q> to process a selected node. XSLT also supports a more traditional way of using templates, where they are called in a way very similar for function calls in most programming languages. Another interesting area of XSLT are variables and parameters, which are used for storing or passing values within XSLT code. One special property of XSLT variables is that they cannot be changed, which is a result of the functional design of the language.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-10-23T09:00</span>
+								<span class="dtend">2013-10-23T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="xslt-2" title="Lecture Slides">XSLT 2</a> <span class="toggle">(29&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://www-128.ibm.com/developerworks/xml/library/x-tipxsltrun/" title="http://www-128.ibm.com/developerworks/xml/library/x-tipxsltrun/">XSLT Parameters</a><span class="print-href"> [http://www-128.ibm.com/developerworks/xml/library/x-tipxsltrun/]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-10-28</td>
+						<td valign="top">
+							
+							<b><span class="summary">XML Transformations (XSLT) 2.0 &#x2013; Part I</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">While <em>XML Transformations (XSLT) 1.0</em> has become a successful programming language widely used for transforming XML documents, its limitations sometimes make it difficult to use XSLT in a good way. An important reason for many of the limitations is the fact that XSLT 1.0 has been designed as a client-side language. Building on XSLT 1.0 and XPath 2.0, <em>XML Transformations (XSLT) 2.0</em> improves the language in a variety of ways.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-10-28T09:00</span>
+								<span class="dtend">2013-10-28T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="xslt20-1" title="Lecture Slides">XSLT 2.0 1</a> <span class="toggle">(27&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://www.w3.org/TR/xslt20/" title="W3C XSLT 2.0 Specification">XSLT&#xa0;2.0&#xa0;Spec</a><span class="print-href"> [http://www.w3.org/TR/xslt20/]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-10-30</td>
+						<td valign="top">
+							
+							<b><span class="summary">XML Transformations (XSLT) 2.0 &#x2013; Part II</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">Many of the new features of XSLT 2.0 have their roots in XPath 2.0 and the underlying new data model of sequences. But some features of XSLT 2.0 really are part of the language itself, such as support for <em>user-defined functions</em>, and the ability to <em>group items</em> and then iterate over these groups. In addition, XSLT now can be used as a <em>typed programming language</em>, which consumes and produces <em>typed trees</em> instead of just well-formed XML trees.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-10-30T09:00</span>
+								<span class="dtend">2013-10-30T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="xslt20-2" title="Lecture Slides">XSLT 2.0 2</a> <span class="toggle">(16&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://www.oreillynet.com/xml/blog/2007/03/reevaluating_xslt_20.html" title="Kurt Cagle O'Reilly Blog">Reevaluating XSLT 2.0</a><span class="print-href"> [http://www.oreillynet.com/xml/blog/2007/03/reevaluating_xslt_20.html]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-11-13</td>
+						<td valign="top">
+							
+							<b><span class="summary">Representational State Transfer (REST)</span><span class="toggle">:</span></b> <span class="toggle"><span class="description"><em>Representational State Transfer (REST)</em> is defined as an <em>architectural style</em>, which means that it is not a concrete systems architecture, but instead a set of constraints that are applied when designing a systems architecture. We briefly discuss these constraints, but then focus on explaining how the Web is one such systems architecture that implements REST. In particular, the mechanisms of the <em>Uniform Resource Identifiers (URIs)</em>, the <em>Hypertext Transfer Protocol (HTTP)</em>, media types, and markup languages such as the <em>Hypertext Markup Language (HTML)</em> and the <em>Extensible Markup Language (XML)</em>. We also introduce <em>Atom</em> and the <em>Atom Publishing Protocol (AtomPub)</em> as two established ways on how RESTful services are already provided and used on today's Web.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-11-13T09:00</span>
+								<span class="dtend">2013-11-13T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="rest" title="Lecture Slides">REST</a> <span class="toggle">(36&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm" title="Roy Thomas Fielding, 'Architectural Styles and the Design of Network-based Software Architectures', Ph.D. Thesis, University of California, Irvine, Irvine, California, 2000">Fielding&#xa0;Dissertation</a><span class="print-href"> [http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm]</span>&#xa0;&#xb7; <a class="extra " href="http://portal.acm.org/citation.cfm?doid=337180.337228" title="Roy Thomas Fielding and Richard N. Taylor, 'Principled Design of the Modern Web Architecture', ACM Transactions on Internet Technology, 2(2):115-150, May 2002">REST&#xa0;Paper</a><span class="print-href"> [http://portal.acm.org/citation.cfm?doid=337180.337228]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-11-18</td>
+						<td valign="top">
+							
+							<b><span class="summary">Atom Syndication Format</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">REST's level of abstraction and its simplicity as a small set of constraints can make it hard to get a grasp on how it can be applied for real-world projects. This presentations introduces <em>real-world REST</em> by looking at how REST can be used by reusing existing RESTful designs in terms of representations and interaction protocols; <em>Atom</em> and the <em>Atom Publishing Protocol (AtomPub)</em> are used as examples for existing RESTful designs. In addition, we take a brief look at how to go beyond using these <q>canned REST</q> approaches, and how existing programming framework provide support for designing and implementing RESTful services.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-11-18T09:00</span>
+								<span class="dtend">2013-11-18T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="atom" title="Lecture Slides">Atom</a> <span class="toggle">(28&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://tools.ietf.org/html/rfc4287" title="Atom RFC">Atom&#xa0;Spec</a><span class="print-href"> [http://tools.ietf.org/html/rfc4287]</span>&#xa0;&#xb7; <a class="extra " href="http://tools.ietf.org/html/rfc5032" title="Atom Publishing Protocol (AtomPub) RFC">AtomPub&#xa0;Spec</a><span class="print-href"> [http://tools.ietf.org/html/rfc5032]</span>&#xa0;&#xb7; <a class="extra " href="http://validator.w3.org/feed/" title="W3C RSS/Atom Feed Validator">Feed&#xa0;Validator</a><span class="print-href"> [http://validator.w3.org/feed/]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-11-20</td>
+						<td valign="top">
+							
+							<b><span class="summary">XML Query (XQuery) &#x2013; Part I</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">The <em>XML Query (XQuery)</em> language has been designed to query collections of XML documents. It is thus different from XSLT, which primarily transforms one document at a time. However, the core of both languages is XPath 2.0, which means that learning XQuery (and XSLT 2.0) is not very hard when starting with a solid knowledge of XPath 2.0. XQuery's main concept is an expression language which supports iteration and binding of variables to intermediate results. XQuery has been built on top of XPath 2.0, which means it uses the same foundation as XSLT 2.0. Both languages have a large overlap, and according to personal preferences and the XML task, one language may be preferred over the other. Features such as <em>user-defined functions</em> and <em>schema-awareness</em> bring XQuery even closer to XSLT 2.0, making the decision to choose one over the other mostly a question of personal preference.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-11-20T09:00</span>
+								<span class="dtend">2013-11-20T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="xquery-1" title="Lecture Slides">XQuery 1</a> <span class="toggle">(34&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://www.w3.org/TR/xquery" title="W3C XQuery Specification">XQuery Spec</a><span class="print-href"> [http://www.w3.org/TR/xquery]</span>&#xa0;&#xb7; <a class="extra " href="http://www.ibm.com/developerworks/xml/library/x-wxxm34.html" title="IBM developerWorks">XQuery/XSLT Comparison</a><span class="print-href"> [http://www.ibm.com/developerworks/xml/library/x-wxxm34.html]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-11-25</td>
+						<td valign="top">
+							
+							<b><span class="summary">Setting Up xDB</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">XML databases are not fundamentally different from other database engines: They provide support to store and query potentially large amounts of data. xDB is EMC's XML Database product, and is implemented in Java. It therefore can be used on any computer with Java runtime support. xDB has a database server, which has to be started and then waits for incoming connection requests. xDB also has a Java client which can be used to connect to the server, and then provides administrative as well as user functionality. In this lecture, we will install xDB on all student computers, and ingest some XML data into an XML database managed by xDB.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-11-25T09:00</span>
+								<span class="dtend">2013-11-25T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="xdb" title="Lecture Slides">xDB</a> <span class="toggle">(2&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="https://community.emc.com/community/edn/xmltech/content" title="ECN Space: XML Technologies">EMC&#xa0;XML&#xa0;Home</a><span class="print-href"> [https://community.emc.com/community/edn/xmltech/content]</span>&#xa0;&#xb7; <a class="extra " href="https://community.emc.com/docs/DOC-7711" title="https://community.emc.com/docs/DOC-7711">xDB&#xa0;Manuals</a><span class="print-href"> [https://community.emc.com/docs/DOC-7711]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-12-02</td>
+						<td valign="top">
+							
+							<b><span class="summary">XML Query (XQuery) &#x2013; Part II</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">XML and relational databases are not entirely different things: they share the basic model of providing support for storing and processing (potentially large amounts of) data. SQL/XML is an approach to bridge the two worlds of relational and XML databases, by allowing relational database to produce XML, and even to store and query XML. In the second half of this lecture we are taking a second look at XQuery, specifically its processing model and the way how queries are specifying the input documents to XQuery expressions.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-12-02T09:00</span>
+								<span class="dtend">2013-12-02T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="xquery-2" title="Lecture Slides">XQuery 2</a> <span class="toggle">(36&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://en.wikipedia.org/wiki/SQL/XML" title="Wikipedia: SQL/XML">SQL/XML</a><span class="print-href"> [http://en.wikipedia.org/wiki/SQL/XML]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-12-04</td>
+						<td valign="top">
+							
+							<b><span class="summary">RELAX NG</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">Schema languages as a general concept in XML are used to (1) prescribe the allowed document structure, and/or (2) validate a document against a description of what is allowed in a document and what isn't. DTDs and XSDs are particularly important schema languages because DTDs are part of XML itself, and XSD was the first major improvement of the rather limited capabilities of DTDs. Recently, however, XSD is increasingly criticized for its complexity, and the RELAX NG schema language is gaining popularity instead. RELAX NG is a grammar-based schema language (like DTD and XSD), but adds a human-friendly syntax, the ability to use datatypes, and it removes the ability to allow validation to change a document.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-12-04T09:00</span>
+								<span class="dtend">2013-12-04T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="relax-ng" title="Lecture Slides">RELAX NG</a> <span class="toggle">(12&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://relaxng.org/" title="RELAXNG.org">RELAX&#xa0;NG&#xa0;Home&#xa0;Page</a><span class="print-href"> [http://relaxng.org/]</span>&#xa0;&#xb7; <a class="extra " href="http://www.thaiopensource.com/relaxng/design.html" title="http://www.thaiopensource.com/relaxng/design.html">The Design of RELAX NG</a><span class="print-href"> [http://www.thaiopensource.com/relaxng/design.html]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-12-09</td>
+						<td valign="top">
+							
+							<b><span class="summary">XML Varia</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">The first half of the lecture compares XML to alternatives, that also are used as ways to represent and/or manage and/or exchange and/or process data. The most relevant approaches in this space are RDF, JSON, and tabular/relational models such as SQL or NoSQL. One of the reasons why using XML-based approaches for data representation, management, interchange, and processing, is that there is a large landscape of existing standards and technologies and tools, and that for many problems it thus is possible to approach the problem by reusing existing solutions. In the second half of this lecture, we look at a small set of additional standards that were not yet covered.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-12-09T09:00</span>
+								<span class="dtend">2013-12-09T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="varia" title="Lecture Slides">XML Varia</a> <span class="toggle">(37&#xa0;Slides)</span></td>
+						<td align="center"><a class="extra " href="http://dret.typepad.com/dretblog/2009/08/data-models-metamodels-cosmologies.html" title="http://dret.typepad.com/dretblog/2009/08/data-models-metamodels-cosmologies.html">Data,&#xa0;Models,&#xa0;Metamodels,&#xa0;Cosmologies</a><span class="print-href"> [http://dret.typepad.com/dretblog/2009/08/data-models-metamodels-cosmologies.html]</span>&#xa0;&#xb7; <a class="extra " href="http://www.w3.org/TR/xml-id/" title="W3C &#34;xml:id&#34; Spec">xml:id</a><span class="print-href"> [http://www.w3.org/TR/xml-id/]</span>&#xa0;&#xb7; <a class="extra " href="http://www.w3.org/TR/xinclude/" title="W3C &#34;XML Inclusions (XInclude)&#34; Spec">XInclude</a><span class="print-href"> [http://www.w3.org/TR/xinclude/]</span></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr><tr class="vevent">
+						<td align="right" valign="top">2013-12-11</td>
+						<td valign="top">
+							
+							<b><span class="summary">Course Summary</span><span class="toggle">:</span></b> <span class="toggle"><span class="description">Q&amp;A with a short discussion of the course topics, followed by questions about topics, standards, technologies, and exam issues.</span></span>
+							<div style="display : none">
+								<span class="dtstart">2013-12-11T09:00</span>
+								<span class="dtend">2013-12-11T10:30</span>
+								<span class="location">205 South Hall, UC Berkeley</span>
+							</div>
+						</td>
+						<td align="center"><a href="summary" title="Lecture Slides">Summary</a> <span class="toggle">(4&#xa0;Slides)</span></td>
+						<td align="center"></td>
+						<!-- <td align="center"><hotspot:toc class="assignment"/></td> -->
+					</tr>
+			</tbody>
+		</table>
+	
