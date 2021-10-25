@@ -69,6 +69,25 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="journey">
+			<title>API Journey</title>
+			<slide id="journey-gateway">
+				<title>Step #1: Gateways</title>
+				<img src="journey-gateway.png" class="fullsize"/>
+			</slide>
+			<slide id="journey-platform">
+				<title>Step #2: Platform</title>
+				<img src="journey-platform.png" class="fullsize"/>
+			</slide>
+			<slide id="journey-enablement">
+				<title>Step #3: Enablement</title>
+				<img src="journey-enablement.png" class="fullsize"/>
+			</slide>
+			<slide id="journey-automation">
+				<title>Step #4: Automation</title>
+				<img src="journey-automation.png" class="fullsize"/>
+			</slide>
+		</part>
 		<part id="api-product">
 			<title>What is an API? What is an API Product?</title>
 			<slide id="api-value">
@@ -79,7 +98,7 @@
 			</slide>
 			<slide id="graphql-beer">
 				<title>This is GraphQL</title>
-				<img title="GraphQL as a Beer" src="blue-moon.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="GraphQL as a Beer" src="blue-moon.jpg" class="fullsize"/>
 			</slide>
 			<slide id="api-product">
 				<title>API Products are Products</title>
