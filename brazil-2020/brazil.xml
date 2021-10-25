@@ -64,7 +64,7 @@
 			<title>Introduction</title>
 			<slide id="dret">
 				<title>Erik Wilde <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></title>
-				<img href="https://www.youtube.com/watch?v=kwrrI3EHpGY" title='Erik Wilde, "From API Craftsmanship to API Landscaping", keynote at Nordic APIs 2018 Platform Summit, Stockholm, Sweden, 10/23/2018' src="nordic-dret.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img href="https://www.youtube.com/watch?v=kwrrI3EHpGY" title='Erik Wilde, "From API Craftsmanship to API Landscaping", keynote at Nordic APIs 2018 Platform Summit, Stockholm, Sweden, 10/23/2018' src="nordic-dret.jpg" class="fullsize"/>
 			</slide>
 			<slide id="catalysts">
 				<title><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com/">Catalysts</a></title>
@@ -131,7 +131,7 @@
 			<title>Tunnel Style</title>
 			<slide id="tunnel-style-image">
 				<title>One Tunnel to Call them All</title>
-				<img title="Tunnel Style" src="api-styles-tunnel.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Tunnel Style" src="api-styles-tunnel.png" class="fullsize"/>
 			</slide>
 			<slide id="rpc-over-http">
 				<title>Distributed Programming</title>
@@ -146,7 +146,7 @@
 			<title>Resource Style</title>
 			<slide id="resource-style-image">
 				<title>Listing All Resources</title>
-				<img title="Resource Style" src="api-styles-resource.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Resource Style" src="api-styles-resource.png" class="fullsize"/>
 			</slide>
 			<slide id="webby-identifiers">
 				<title>Identifiers for Resources</title>
@@ -174,7 +174,7 @@
 			<title>Hypermedia Style</title>
 			<slide id="hypermedia-style-image">
 				<title>Linking All Resources</title>
-				<img title="Hypermedia Style" src="api-styles-hypermedia.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Hypermedia Style" src="api-styles-hypermedia.png" class="fullsize"/>
 			</slide>
 			<slide id="hypermedia-apis">
 				<title>Hypermedia APIs</title>
@@ -201,7 +201,7 @@
 			<title>Query Style</title>
 			<slide id="query-style-image">
 				<title>Querying into Server-Side Models</title>
-				<img title="Query Style" src="api-styles-query.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Query Style" src="api-styles-query.png" class="fullsize"/>
 			</slide>
 			<slide id="database-style">
 				<title>Querying Structured Data</title>
@@ -228,7 +228,7 @@
 			<title>Event-Based Style</title>
 			<slide id="event-style-image">
 				<title>Event Publish/Subscribe</title>
-				<img title="Event-based Style" src="api-styles-event.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Event-based Style" src="api-styles-event.png" class="fullsize"/>
 			</slide>
 			<slide id="fire-and-forget">
 				<title>Fire and Forget</title>
@@ -253,7 +253,7 @@
 			<title>Choosing an API Style</title>
 			<slide id="api-style-maslow">
 				<title>API Styles are Tools</title>
-				<img title="Hammer and Screw" href="https://www.flickr.com/photos/justinbaeder/5317820857" src="maslow-hammer-nail.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Hammer and Screw" href="https://www.flickr.com/photos/justinbaeder/5317820857" src="maslow-hammer-nail.jpg" class="fullsize"/>
 			</slide>
 			<slide id="api-style-context">
 				<title>Context Considerations</title>
@@ -326,7 +326,7 @@
 			<title>Introduction</title>
 			<slide id="dret">
 				<title>Erik Wilde <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></title>
-				<img href="https://www.youtube.com/watch?v=kwrrI3EHpGY" title='Erik Wilde, "From API Craftsmanship to API Landscaping", keynote at Nordic APIs 2018 Platform Summit, Stockholm, Sweden, 10/23/2018' src="nordic-dret.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img href="https://www.youtube.com/watch?v=kwrrI3EHpGY" title='Erik Wilde, "From API Craftsmanship to API Landscaping", keynote at Nordic APIs 2018 Platform Summit, Stockholm, Sweden, 10/23/2018' src="nordic-dret.jpg" class="fullsize"/>
 			</slide>
 			<slide id="catalysts">
 				<title><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com/">Catalysts</a></title>
@@ -360,7 +360,7 @@
 			</slide>
 			<slide id="graphql-beer">
 				<title>This is GraphQL</title>
-				<img title="GraphQL as a Beer" src="blue-moon.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="GraphQL as a Beer" src="blue-moon.jpg" class="fullsize"/>
 			</slide>
 			<slide id="api-product">
 				<title>API Products are Products</title>
@@ -379,23 +379,23 @@
 			<title>API Product Consumer Scope</title>
 			<slide id="private-partner-public">
 				<title>Private/Partner/Public API Design Scope</title>
-				<img src="private-partner-public-design.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="private-partner-public-design.png" class="fullsize"/>
 			</slide>
 			<slide id="product-consumers-domain">
 				<title>Domain Knowledge</title>
-				<img src="private-partner-public-design-domain.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="private-partner-public-design-domain.png" class="fullsize"/>
 			</slide>
 			<slide id="product-consumers-relationship">
 				<title>Producer/Consumer Relationship</title>
-				<img src="private-partner-public-design-relationship.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="private-partner-public-design-relationship.png" class="fullsize"/>
 			</slide>
 			<slide id="product-consumers-security">
 				<title>Threat/Security Model</title>
-				<img src="private-partner-public-design-security.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="private-partner-public-design-security.png" class="fullsize"/>
 			</slide>
 			<slide id="product-consumers-landscape">
 				<title>Landscape Coherence</title>
-				<img src="private-partner-public-design-landscape.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="private-partner-public-design-landscape.png" class="fullsize"/>
 			</slide>
 		</part>
 		<part id="product-management">
@@ -506,7 +506,7 @@
 			<title>Introduction</title>
 			<slide id="dret">
 				<title>Erik Wilde <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></title>
-				<img href="https://www.youtube.com/watch?v=kwrrI3EHpGY" title='Erik Wilde, "From API Craftsmanship to API Landscaping", keynote at Nordic APIs 2018 Platform Summit, Stockholm, Sweden, 10/23/2018' src="nordic-dret.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img href="https://www.youtube.com/watch?v=kwrrI3EHpGY" title='Erik Wilde, "From API Craftsmanship to API Landscaping", keynote at Nordic APIs 2018 Platform Summit, Stockholm, Sweden, 10/23/2018' src="nordic-dret.jpg" class="fullsize"/>
 			</slide>
 			<slide id="catalysts">
 				<title><a href="https://www.axway.com/">Axway</a> <a href="https://www.axway.com/catalysts">Catalysts</a></title>
@@ -568,11 +568,11 @@
 			</slide>
 			<slide id="stalling">
 				<title>Getting started is hard, scaling up is even harder</title>
-				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" class="fullsize"/>
 			</slide>
 			<slide id="scale-matters">
 				<title>Scale Matters</title>
-				<img title="Grand Canyon" src="grand-canyon.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Grand Canyon" src="grand-canyon.jpg" class="fullsize"/>
 			</slide>
 			<slide id="scaling">
 				<title>Scaling needs Strategy</title>
@@ -648,7 +648,7 @@
 			</slide>
 			<slide id="example">
 				<title>API Guideline Example</title>
-				<img href="https://github.com/dret/OReilly2020NYdemo/tree/master/guidelines/why/change-management-policy" title="Change Management Policy Guideline" src="change-management-guideline.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img href="https://github.com/dret/OReilly2020NYdemo/tree/master/guidelines/why/change-management-policy" title="Change Management Policy Guideline" src="change-management-guideline.png" class="fullsize"/>
 			</slide>
 			<slide id="good-practice">
 				<title>Good is better than Best</title>
@@ -682,7 +682,7 @@
 			</slide>
 			<slide id="in-the-wild">
 				<title>API Guidelines in the Wild</title>
-				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" class="fullsize"/>
 			</slide>
 			<slide id="getting-started">
 				<title>Getting Started</title>
