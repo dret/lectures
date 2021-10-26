@@ -175,12 +175,31 @@
 			<title>DX Matters</title>
 			<slide id="api-products">
 				<title>Useful and Usable API Products</title>
+				<ul>
+					<li>Most APIs are not conceived and marketed as direct products</li>
+					<li>Most API value is realized through API-enabling valuable capabilities</li>
+					<li>Two main factors drive the <em>potential</em> of an API</li>
+					<ol>
+						<li>Is the API <em>useful</em>?</li>
+						<li>Is the API <em>usable</em>?</li>
+					</ol>
+				</ul>
 			</slide>
 			<slide id="competition">
 				<title>Competing API Products</title>
+				<ul>
+					<li>The same useful capability is available by various providers</li>
+					<li>Switching cost may be relatively low for consumers</li>
+					<li>Investing in <em>Developer Experience (DX)</em> can be a competitive advantage</li>
+				</ul>
 			</slide>
 			<slide id="usability">
 				<title>Usable API Products</title>
+				<ul>
+					<li>Many APIs are about <em>unlocking capabilities</em> and not about competition</li>
+					<li>Usability is important but there is no risk of consumers switching</li>
+					<li>Unlocking <em>User Experience (UX)</em> becomes the main concern of the API</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="microproducts">
