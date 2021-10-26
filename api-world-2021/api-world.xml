@@ -161,29 +161,6 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="consumer-scope">
-			<title>API Product Consumer Scope</title>
-			<slide id="private-partner-public">
-				<title>Private/Partner/Public API Product Design</title>
-				<img src="private-partner-public-design.png" class="fullsize"/>
-			</slide>
-			<slide id="product-consumers-domain">
-				<title>Domain Familiarity</title>
-				<img src="private-partner-public-design-domain.png" class="fullsize"/>
-			</slide>
-			<slide id="product-consumers-relationship">
-				<title>Producer/Consumer Relationship</title>
-				<img src="private-partner-public-design-relationship.png" class="fullsize"/>
-			</slide>
-			<slide id="product-consumers-security">
-				<title>Threat/Security Model</title>
-				<img src="private-partner-public-design-security.png" class="fullsize"/>
-			</slide>
-			<slide id="product-consumers-landscape">
-				<title>Product Coherence</title>
-				<img src="private-partner-public-design-landscape.png" class="fullsize"/>
-			</slide>
-		</part>
 		<part id="dx-matters">
 			<title>DX Matters</title>
 			<slide id="api-products">
