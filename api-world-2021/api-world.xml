@@ -71,6 +71,17 @@
 		</part>
 		<part id="journey">
 			<title>API Journey</title>
+			<slide id="inside-out">
+				<title>API Journeys Inside-Out</title>
+				<ul>
+					<li>APIs are used and well-known to IT specialists</li>
+					<li>APIs seems obscure and tech-only to many others</li>
+					<ul>
+						<li>Move focus from technology to business for API initiatives</li>
+						<li>Enable everybody to conceptualize their capabilities as APIs</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="journey-gateway">
 				<title>Step #1: Gateways</title>
 				<img src="journey-gateway.png" class="fullsize"/>
