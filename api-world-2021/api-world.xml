@@ -150,6 +150,34 @@
 		</part>
 		<part id="microproducts">
 			<title>Why APIs? Microproducts!</title>
+			<slide id="products">
+				<title>What is a Product?</title>
+				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize" />
+			</slide>
+			<slide id="digital-transformation-definition">
+				<title>What is Digital Transformation?</title>
+				<blockquote>Digital Transformation <a href="https://hbr.org/2019/07/digital-doesnt-have-to-be-disruptive"><q>means adapting an organization's strategy and structure to capture opportunities enabled by digital technology.</q> <span style="font-size : 75% ;">(Nathan Furr and Andrew Shipilov, <q>Digital Doesn't Have to Be Disruptive</q>, Harvard Business Review 97(4), July/August 2019, pp. 94-103)</span></a></blockquote>
+			</slide>
+			<slide id="flexibility">
+				<title>Goal #1: Flexibility</title>
+				<ul>
+					<li>Build new products and services <em>out of existing building blocks</em></li>
+					<li><em>Contribute new capabilities</em> as building blocks to the platform</li>
+					<li>Improve solution space by making <em>all capabilities available for reuse</em></li>
+				</ul>
+			</slide>
+			<slide id="velocity">
+				<title>Goal #2: Velocity</title>
+				<ul>
+					<li>Reduce coordination overhead by making <em>capabilities readily consumable</em></li>
+					<li>Avoid duplication of effort by <em>always exposing capabilities for reuse</em></li>
+					<li>Reduce the time needed for <em>digital building block management</em></li>
+				</ul>
+			</slide>
+			<slide id="microproducts">
+				<title>Microproducts</title>
+				<img src="microproducts.png" title="Zack Kanter: The secret is microproducts, not microservices." href="https://twitter.com/zackkanter/status/1439358138377965569" class="fullsize"/>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
