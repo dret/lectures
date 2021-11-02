@@ -1,0 +1,14 @@
+{
+  "linkset": [
+    { "anchor": "http://example.net/bar",
+      "next": [
+        {"href": "http://example.com/foo1"}
+      ]
+    },
+    { "anchor": "http://example.net/boo",
+      "http://example.com/relations/baz" : [
+        {"href": "http://example.com/foo2" }
+      ]
+    }
+  ]
+}
