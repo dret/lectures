@@ -366,18 +366,33 @@
 		<date short="2021-09-xx">September xx, 2021</date>
 		<part id="status-1xx">
 			<title>Status 1xx: Informational</title>
+			<slide id="status-code-100">
+				<title><code>100 Continue</code></title>
+			</slide>
 		</part>
 		<part id="status-2xx">
 			<title>Status 2xx: Successful</title>
+			<slide id="status-code-201">
+				<title><code>201 Created</code></title>
+			</slide>
 		</part>
 		<part id="status-3xx">
 			<title>Status 3xx: Redirection</title>
+			<slide id="status-code-308">
+				<title><code>308 Permanent Redirect</code></title>
+			</slide>
 		</part>
 		<part id="status-4xx">
 			<title>Status 4xx: Client Error</title>
+			<slide id="status-code-404">
+				<title><code>404 Not Found</code></title>
+			</slide>
 		</part>
 		<part id="status-5xx">
 			<title>Status 5xx: Server Error</title>
+			<slide id="status-code-503">
+				<title><code>503 Service Unavailable</code></title>
+			</slide>
 		</part>
 		<part id="status-closing">
 			<title>Thank You!</title>
