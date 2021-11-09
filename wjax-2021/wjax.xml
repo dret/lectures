@@ -84,6 +84,18 @@
 			<slide id="microservices-cargo-cult">
 				<img src="cargo-cult.jpg" href="https://en.wikipedia.org/wiki/Cargo_cult" title="Cargo Cults" style="float: right ; height : 60% ; margin : 1% 4% 1% 4% ; "/>
 				<title>Why Microservices are Problematic</title>
+				<ul>
+					<li>MSA's goal is to design and implement encapsulated capabilities</li>
+					<ol>
+						<li>Identify and design <em>business-aligned capabilities</em></li>
+						<li>Implement these so that they can be <em>independently deployed</em></li>
+					</ol>
+					<li>Containerization is one microservice implementation option</li>
+					<li><q>Container Cargo Cult</q> removes the focus from <em>doing the right thing</em>…</li>
+					<ul>
+						<li>…and <em>doing the thing right</em> doesn't need containers either</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="microproducts">
 				<title>Microproducts</title>
