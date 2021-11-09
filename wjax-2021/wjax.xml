@@ -74,6 +74,12 @@
 			<slide id="microservices">
 				<title>Why Microservices are Good</title>
 				<img src="MSA-cover.jpg" href="http://shop.oreilly.com/product/0636920050308.do" title="Microservice Architecture: Aligning Principles, Practices, and Culture" style="float: right ; height : 60% ; margin : 1% 4% 1% 4% ; "/>
+				<ul>
+					<li>Shift the focus to <em>self-contained capability implementations</em></li>
+					<li>Shift the focus to <em>capabilities being available through an API</em></li>
+					<li>Microservices are <q>SOA Done Right</q> (i.e., decentralization matters)</li>
+					<li>It all looked so promising, but then…</li>
+				</ul>
 			</slide>
 			<slide id="microservices-cargo-cult">
 				<img src="cargo-cult.jpg" href="https://en.wikipedia.org/wiki/Cargo_cult" title="Cargo Cults" style="float: right ; height : 60% ; margin : 1% 4% 1% 4% ; "/>
