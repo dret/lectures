@@ -176,6 +176,68 @@
 		</part>
 		<part id="building-microproducts">
 			<title>Building Microproducts</title>
+			<slide id="engineers">
+				<title>Nudging in Ecosystems</title>
+				<img src="prometheus-engineer.jpg" title="Engineering the engineers" class="fullsize"/>
+			</slide>
+			<slide id="why-guidelines">
+				<title>API Guidelines as Shared Practices</title>
+				<ul>
+					<li>More API teams mean more ways to solve the same problem</li>
+					<ul>
+						<li>Solving <q>API problems</q> is not what teams should focus on</li>
+						<li>Solving <q>API problems</q> in a consistent way helps the API landscape</li>
+					</ul>
+					<li>Communications across teams is a challenge</li>
+					<ul>
+						<li>Complement channels with documentation of practices</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="anatomy">
+				<title>The Anatomy of a Good Guideline</title>
+				<ul>
+					<li><em>Why</em> does the guideline exist?</li>
+					<ul>
+						<li>Rationale for creating the guideline</li>
+					</ul>
+					<li><em>What</em> can be done to address the described issue</li>
+					<ul>
+						<li>At least one <em>good solution</em> for addressing the issue</li>
+					</ul>
+					<li><em>How</em> to implement the solution</li>
+					<ul>
+						<li>At least one way to use the solution in practice</li>
+					</ul>
+					<li><em>Testing</em> that the guideline has been followed</li>
+					<ul>
+						<li>Some tests can be automated but many will be by declaration or review</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="example">
+				<title>API Guideline Example</title>
+				<img src="change-management-guideline.png" href="https://github.com/dret/OReilly2020NYdemo/tree/master/guidelines/why/change-management-policy" title="Change Management Policy Guideline" class="fullsize"/>
+			</slide>
+			<slide id="in-the-wild">
+				<title>API Guidelines in the Wild</title>
+				<img src="api-guidelines.png" href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" class="fullsize"/>
+			</slide>
+			<slide id="getting-started">
+				<title>Getting Started</title>
+				<ul>
+					<li>Start capturing feedback from API teams</li>
+					<ul>
+						<li>Challenges along the way</li>
+						<li>Solutions they have found or implemented</li>
+						<li>Quantifying the time they spend with cross-cutting vs. domain tasks</li>
+					</ul>
+					<li>Start editing and providing guidance that API teams can find and use</li>
+					<ul>
+						<li>Tooling can be as simple as markdown and shared repositories</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
