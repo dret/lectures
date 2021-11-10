@@ -120,6 +120,42 @@
 		</part>
 		<part id="designing-microproducts">
 			<title>Designing Microproducts</title>
+			<slide id="api-product">
+				<title>API Products are Products</title>
+				<ul>
+					<li>Products have <em>consumers</em> and should drive organizational value</li>
+					<li><em>API Products</em> are a special kind of product with additional constraints</li>
+					<ul>
+						<li>More a <em>service</em> than a (physical) product</li>
+						<li>Many APIs are not (directly) consumed by external consumers</li>
+						<li>API products are the used for composing digital value chains</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="4p-definition">
+				<title>Product Marketing Mix: 4 Ps</title>
+				<ul>
+					<li>Framework for decision-making for product marketing</li>
+					<ul>
+						<li><em>Product:</em> Good or service wanted by consumers</li>
+						<li><em>Price:</em> What are consumers willing to pay for the product?</li>
+						<li><em>Place:</em> How to make products available to consumers</li>
+						<li><em>Promotion:</em> How to make consumers aware of products</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="7p-definition">
+				<title>Expanded Product Marketing Mix: 7 Ps</title>
+				<ul>
+					<li>Extends the <link href="4p-definition">4 Ps</link> with a focus on services</li>
+					<li>Framework for decision-making for services marketing</li>
+					<ul>
+						<li><em>People:</em> Considerations regarding service consumers (UX/CX)</li>
+						<li><em>Process:</em> Planning and managing service delivery</li>
+						<li><em>Physical Evidence:</em> (Physical) context of service delivery</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="building-microproducts">
 			<title>Building Microproducts</title>
