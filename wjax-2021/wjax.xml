@@ -120,6 +120,18 @@
 		</part>
 		<part id="designing-microproducts">
 			<title>Designing Microproducts</title>
+			<slide id="decomposition">
+				<title>Decomposing Products → Microproducts</title>
+				<blockquote>
+					<p><a href="https://en.wikipedia.org/wiki/Business_capability_model"><q>Business capability models represent high-level views of an organization from the perspective of its business capabilities. Essentially, they briefly describe everything that an organization can do.</q></a></p>
+				</blockquote>
+				<ul>
+					<li>Start with your product</li>
+					<li>Use or identify capabilities you need for your products</li>
+					<li>Consume existing capabilities which are available as microproducts</li>
+					<li>Build missing capabilities as new microproducts</li>
+				</ul>
+			</slide>
 			<slide id="api-product">
 				<title>API Products are Products</title>
 				<ul>
