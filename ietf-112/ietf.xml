@@ -145,6 +145,12 @@
 			</slide>
 			<slide id="linkset-activity">
 				<title>Activities since IETF 111</title>
+				<ul>
+					<li>Moved from version <a href="https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-linkset-03">03</a> to <a href="https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-linkset-06">06</a>, with <a href="https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-linkset-05">05</a> the currently published version</li>
+					<li>Addressed <a href="https://github.com/ietf-wg-httpapi/linkset/issues">26 issues</a>, which were discussed, resolved, closed</li>
+					<li>Made <a href="https://github.com/ietf-wg-httpapi/linkset/compare/1092015...8089c7a">39 commits</a> in the process</li>
+					<li>Currently <a href="https://github.com/ietf-wg-httpapi/linkset/issues">0 open issues</a></li>
+				</ul>
 			</slide>
 			<slide id="linkset-changes">
 				<title>Changes since IETF 111</title>
