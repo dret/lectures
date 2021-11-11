@@ -150,10 +150,20 @@
 					<li>Addressed <a href="https://github.com/ietf-wg-httpapi/linkset/issues">26 issues</a>, which were discussed, resolved, closed</li>
 					<li>Made <a href="https://github.com/ietf-wg-httpapi/linkset/compare/1092015...8089c7a">39 commits</a> in the process</li>
 					<li>Currently <a href="https://github.com/ietf-wg-httpapi/linkset/issues">0 open issues</a></li>
+					<ul>
+						<li>But: JSON-LD issues because IANA-registered link relation types cannot be expressed as URIs</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="linkset-changes">
 				<title>Changes since IETF 111</title>
+				<ul>
+					<li>Add ability to convey profiles of Linksets</li>
+					<li>Allow newline characters as separators in application/linkset serialisation</li>
+					<li>Change regarding extensibility of JSON serialization</li>
+					<li>Overhaul of Appendix A regarding interpretation of JSON serialisation as JSON-LD</li>
+					<li>Editorial updates to address typos, lack of clarity, incorrect references, inappropriate use of MUST/SHOULD, etc.</li>
+				</ul>
 			</slide>
 			<slide id="linkset-history">
 				<title>Linkset: History</title>
