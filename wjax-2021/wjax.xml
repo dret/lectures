@@ -75,9 +75,9 @@
 				<title>Why Microservices are Good</title>
 				<img src="MSA-cover.jpg" href="http://shop.oreilly.com/product/0636920050308.do" title="Microservice Architecture: Aligning Principles, Practices, and Culture" style="float: right ; height : 60% ; margin : 1% 4% 1% 4% ; "/>
 				<ul>
-					<li>Shift the focus to <em>self-contained capability implementations</em></li>
-					<li>Shift the focus to <em>capabilities being available through an API</em></li>
-					<li>Microservices are <q>SOA Done Right</q> (i.e., decentralization matters)</li>
+					<li>Focus on <em>self-contained capability implementations</em></li>
+					<li>Focus on <em>capabilities being available through an API</em></li>
+					<li>Microservices are <q>SOA Done Right</q></li>
 					<li>It all looked so promising, but then…</li>
 				</ul>
 			</slide>
@@ -85,12 +85,12 @@
 				<img src="cargo-cult.jpg" href="https://en.wikipedia.org/wiki/Cargo_cult" title="Cargo Cults" style="float: right ; height : 60% ; margin : 1% 4% 1% 4% ; "/>
 				<title>Why Microservices are Problematic</title>
 				<ul>
-					<li>MSA's goal is to design and implement encapsulated capabilities</li>
+					<li>MSA's goal are encapsulated capabilities</li>
 					<ol>
 						<li>Identify and design <em>business-aligned capabilities</em></li>
 						<li>Implement these so that they can be <em>independently deployed</em></li>
 					</ol>
-					<li>Containerization is one microservice implementation option</li>
+					<li>Containerization is one microservice implementation <em>option</em></li>
 					<li><q>Container Cargo Cult</q> removes the focus from <em>doing the right thing</em>…</li>
 					<ul>
 						<li>…and <em>doing the thing right</em> doesn't need containers either</li>
