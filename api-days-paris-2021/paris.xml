@@ -79,6 +79,27 @@
 				<img title="Mercedes G Class" src="mercedes-g350.jpg" style=" width : 35% ; object-fit : contain ; margin : 1% 6% 1% 6% ; "/>
 				<img title="Porsche 911 Turbo S" src="porsche-911-turbo-s.jpg" style=" width : 35% ; object-fit : contain ; margin : 1% 6% 1% 6% ; "/>
 			</slide>
+			<slide id="design-context">
+				<title>Design Context</title>
+				<ul>
+					<li><em>Backend-for-Frontend (BFF)</em> implies tight coupling producer/consumer</li>
+					<ul>
+						<li>API style and API design can be coordinated with the consumer</li>
+					</ul>
+					<li><em>Private APIs</em> implies a smaller group of potential consumers</li>
+					<ul>
+						<li>Style and design can be guided by internal guidelines/practices</li>
+					</ul>
+					<li><em>Partner APIs</em> implies a well-known group of consumers</li>
+					<ul>
+						<li>Broader appeal to consumers necessary</li>
+					</ul>
+					<li><em>Public APIs</em> is the most loosely coupled group of consumers</li>
+					<ul>
+						<li>No control over consumers and their preferences/tools and development cycles</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
