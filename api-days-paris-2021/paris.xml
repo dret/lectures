@@ -101,6 +101,41 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="tunnel-style">
+			<title>Tunnel Style</title>
+			<slide id="tunnel-style-image">
+				<title>One Tunnel to Call them All</title>
+				<img title="Tunnel Style" src="api-styles-tunnel.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="resource-style">
+			<title>Resource Style</title>
+			<slide id="resource-style-image">
+				<title>Listing All Resources</title>
+				<img title="Resource Style" src="api-styles-resource.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="hypermedia-style">
+			<title>Hypermedia Style</title>
+			<slide id="hypermedia-style-image">
+				<title>Linking All Resources</title>
+				<img title="Hypermedia Style" src="api-styles-hypermedia.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="query-style">
+			<title>Query Style</title>
+			<slide id="query-style-image">
+				<title>Querying into Server-Side Models</title>
+				<img title="Query Style" src="api-styles-query.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
+		<part id="event-style">
+			<title>Event-Based Style</title>
+			<slide id="event-style-image">
+				<title>Event Publish/Subscribe</title>
+				<img title="Event-based Style" src="api-styles-event.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="style-implementations">
