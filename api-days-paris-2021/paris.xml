@@ -103,6 +103,16 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="style-implementations">
+				<title>API Styles in the Wild</title>
+				<ul>
+					<li><link href="tunnel-style"/>: XML-RPC, SOAP, gRPC, Avro</li>
+					<li><link href="resource-style"/>: OpenAPI/Swagger, RAML, API Blueprint</li>
+					<li><link href="hypermedia-style"/>: HAL, Siren, Atom, HATEOAS</li>
+					<li><link href="query-style"/>: GraphQL, OData, SPARQL</li>
+					<li><link href="event-style"/>: MQ, WebSub, MQTT, XMPP, AMQP, Kafka, AsyncAPI</li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
 				<img src="where-to.png" title="What's Next?" style="float: right ; width : 30% ; margin : 0% 5% 5% 5% ; "/>
