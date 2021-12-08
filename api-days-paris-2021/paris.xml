@@ -146,6 +146,26 @@
 				<title>Linking All Resources</title>
 				<img title="Hypermedia Style" src="api-styles-hypermedia.png" class="fullsize"/>
 			</slide>
+			<slide id="hypermedia-apis">
+				<title>Hypermedia APIs</title>
+				<ul>
+					<li>Based on mixing data and controls in representations</li>
+					<ul>
+						<li><em>Data</em> represents the current resource state</li>
+						<li><em>Controls</em> represent the advertised next options for clients</li>
+					</ul>
+					<li>Controls allow clients to work across individual APIs</li>
+					<ul>
+						<li>APIs expose sets of resources and provide links</li>
+						<li>Clients follow links without being aware of API boundaries</li>
+					</ul>
+					<li>Developers must code differently from usual programming flows</li>
+					<ul>
+						<li>Applications are driven by the responses that client code receives</li>
+						<li>Imperative programming is not the best fit for this kind of flow</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="query-style">
 			<title>Query Style</title>
