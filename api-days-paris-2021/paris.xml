@@ -107,6 +107,15 @@
 				<title>One Tunnel to Call them All</title>
 				<img title="Tunnel Style" src="api-styles-tunnel.png" class="fullsize"/>
 			</slide>
+			<slide id="rpc-over-http">
+				<title>Distributed Programming</title>
+				<ul>
+					<li>Rooted in <em>Remote Procedure Call (RPC)</em> patterns</li>
+					<li>Functions are the main abstraction and invoked at known <em>endpoints</em></li>
+					<li>Convenient for developers looking to <q>code like a local program</q></li>
+					<li>Arguably not the best abstraction for <em>Business APIs</em></li>
+				</ul>
+			</slide>
 		</part>
 		<part id="resource-style">
 			<title>Resource Style</title>
