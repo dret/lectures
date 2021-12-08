@@ -223,12 +223,21 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="no-style-hammer">
+				<title>There is no Style Hammer</title>
+				<ul>
+					<li>API styles can be combined</li>
+					<li>Style coherence makes an API landscape more usable</li>
+					<li>Style fundamentalism may pick the wrong tool for a problem</li>
+					<li>Be aware of styles and pick the one that works best</li>
+				</ul>
+			</slide>
 			<slide id="style-implementations">
 				<title>API Styles in the Wild</title>
 				<ul>
 					<li><link href="tunnel-style"/>: XML-RPC, SOAP, gRPC, Avro</li>
 					<li><link href="resource-style"/>: OpenAPI/Swagger, RAML, API Blueprint</li>
-					<li><link href="hypermedia-style"/>: HAL, Siren, Atom, HATEOAS</li>
+					<li><link href="hypermedia-style"/>: HAL, Siren, Atom, JSON:API</li>
 					<li><link href="query-style"/>: GraphQL, OData, SPARQL</li>
 					<li><link href="event-style"/>: MQ, WebSub, MQTT, XMPP, AMQP, Kafka, AsyncAPI</li>
 				</ul>
