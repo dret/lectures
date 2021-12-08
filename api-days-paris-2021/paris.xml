@@ -123,6 +123,22 @@
 				<title>Listing All Resources</title>
 				<img title="Resource Style" src="api-styles-resource.png" class="fullsize"/>
 			</slide>
+			<slide id="webby-identifiers">
+				<title>Identifiers for Resources</title>
+				<ul>
+					<li>Makes a major step towards a more problem-oriented service design</li>
+					<ul>
+						<li>Resources are identified by URIs and thus globally unique</li>
+						<li>Data context may be established by using URI identifiers for resources</li>
+						<li>But: Navigational context is missing because of a lack of links</li>
+					</ul>
+					<li>Developers are tempted/required to hardcode control flows</li>
+					<ul>
+						<li>No navigational guidance provided by the API</li>
+						<li>Traversal must be hand-coded based on documentation</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="hypermedia-style">
 			<title>Hypermedia Style</title>
