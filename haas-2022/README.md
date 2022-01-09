@@ -1,6 +1,6 @@
-# ...
+# Creating the Composable Enterprise
 
-Slides for presentation at [...](...).
+Slides for presentation at [Berkeley/Haas EWMBA](http://guide.berkeley.edu/graduate/degree-programs/business-administration-evening-weekend-mba/) 290T: Digital Transformation.
 
 
 ## License
