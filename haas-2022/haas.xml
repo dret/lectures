@@ -237,6 +237,12 @@
 			</slide>
 			<slide id="api-anti-patterns">
 				<title>API Anti-Patterns</title>
+				<ul>
+					<li>There is no API strategy, program, or platform</li>
+					<li>Many APIs are not documented and their function is unclear</li>
+					<li>Many APIs have one consumer and thus are not reused/reusable</li>
+					<li>API design and implementation are treated as an after-thought</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
