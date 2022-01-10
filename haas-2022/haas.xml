@@ -83,6 +83,34 @@
 				<title>API Usage in 2025</title>
 				<img title='Mark O&apos;Neill (@TheMarkONeill): &apos;Gartner prediction: The number of third-party APIs (think @checkr, @stripe, @clearbit, @api_video, @nylas, @algolia) used in applications will triple by 2025. This will present challenges for procurement teams, dependency management, and determining SLAs.&apos;' href="https://twitter.com/TheMarkONeill/status/1473388192225284100" src="api-usage-triples-2025.png" class="fullsize"/>
 			</slide>
+			<slide id="amazon-rules">
+				<title><a href="https://gist.github.com/chitchcock/1281611">Jeff Bezos' Services Rant: The Rules</a></title>
+				<ul>
+					<li>Famous small set of SOA design rules</li>
+					<ul>
+						<li>Teams must expose functionality through services</li>
+						<li>Communication happens only through service interfaces</li>
+						<li>There are no hard guidelines for service design</li>
+						<li>Internal/external service is a matter of policy, not one of design</li>
+					</ul>
+					<li>Going against the <q>let's pick a platform</q> spirit of old-school SOA</li>
+				</ul>
+			</slide>
+			<slide id="amazon-consequences">
+				<title>Jeff Bezos' Services Rant: The Consequences</title>
+				<ul>
+					<li>With more freedom comes more responsibility</li>
+					<ul>
+						<li>Monitoring and metrics are necessary for finding root causes</li>
+						<li>All APIs must be hardened against DoS attacks</li>
+						<li>Automated QA is necessary to really understand service health</li>
+						<li>Services must be documented and registered so that they can be discovered</li>
+						<li>Debugging becomes harder because of service dependencies</li>
+					</ul>
+					<li>Sophisticated tooling required to manage the new SOA landscape</li>
+					<li>Much easier in today's technology landscape than 16 years ago</li>
+				</ul>
+			</slide>
 			<slide id="smyte">
 				<title>A Cautionary Tale</title>
 				<img src="smyte.png" href="https://www.cnet.com/news/twitter-bought-an-anti-harassment-startup-and-immediately-shut-it-down-smyte/" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
