@@ -140,6 +140,19 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="getting-apis-to-work">
+			<title>Getting APIs to Work</title>
+			<slide id="smyte">
+				<title>A Cautionary Tale</title>
+				<img src="smyte.png" href="https://www.cnet.com/news/twitter-bought-an-anti-harassment-startup-and-immediately-shut-it-down-smyte/" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Many organizations are adding social features to their products/experiences</li>
+					<li>Protecting against trolling, spam, and harassment is important</li>
+					<li>Building robust social protections is not trivial</li>
+					<li>Organizations end up with dependencies in their value chains</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
