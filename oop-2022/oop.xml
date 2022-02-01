@@ -43,7 +43,7 @@
 				<img href="https://www.youtube.com/watch?v=kwrrI3EHpGY&amp;list=UUDD75qoXHJSz4pv0o3WcTUw" title='Erik Wilde, "From API Craftsmanship to API Landscaping", keynote at Nordic APIs 2018 Platform Summit, Stockholm, Sweden, 10/23/2018' src="nordic-dret.jpg" style=" float : left ; width : 44% ; object-fit : contain ; margin : 0% 2% 0% 4% ; "/>
 				<div style=" float : right ; width : 44% ; margin : 0% 4% 0% 2% ; ">
 					<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
-						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/bWFXGHXo_pY" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/u0I9bb4hExI" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 					</div>
 				</div>
 			</slide>
@@ -65,6 +65,29 @@
 						<li>Erik Wilde: <a href="https://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a><script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
 					</ul>
 				</ul>
+			</slide>
+		</part>
+		<part id="api-maturity-journey">
+			<title>API Maturity Journey</title>
+			<slide id="technical-proficiency">
+				<title>Technical API Proficiency</title>
+				<img src="api-maturity-technical-proficiency.png" class="fullsize"/>
+			</slide>
+			<slide id="development-proficiency">
+				<title>API Development Proficiency</title>
+				<img src="api-maturity-development-proficiency.png" class="fullsize"/>
+			</slide>
+			<slide id="product-proficiency">
+				<title>API Product Proficiency</title>
+				<img src="api-maturity-product-proficiency.png" class="fullsize"/>
+			</slide>
+			<slide id="business-proficiency">
+				<title>Business API Proficiency</title>
+				<img src="api-maturity-business-proficiency.png" class="fullsize"/>
+			</slide>
+			<slide id="transformation-proficiency">
+				<title>APIs as Engine of Transformation</title>
+				<img src="api-maturity-transformation-proficiency.png" class="fullsize"/>
 			</slide>
 		</part>
 		<part id="conclusions">
