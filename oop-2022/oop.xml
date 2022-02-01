@@ -78,6 +78,93 @@
 				<img src="midtown-manhattan.jpg" title="Midtown Manhattan" href="https://www.flickr.com/photos/albaum/2422322708" class="fullsize"/>
 			</slide>
 		</part>
+		<part id="perspectives">
+			<title>API Perspectives</title>
+			<slide id="users">
+				<title>API Users</title>
+				<img src="API-perspectives-external-internal.png" class="fullsize"/>
+			</slide>
+			<slide id="horizon">
+				<title>Lesson #1: Expand Your API Horizon</title>
+				<ul>
+					<li><em>Public/Partner API:</em> Establish and/or drive new value streams</li>
+					<li><em>Private API:</em> Become better at changing value streams effectively</li>
+				</ul>
+			</slide>
+			<slide id="platform">
+				<title>API Platforms</title>
+				<img src="API-perspectives-platform.png" class="fullsize"/>
+			</slide>
+			<slide id="diversity">
+				<title>Lesson #2: Plan for API Diversity</title>
+				<ul>
+					<li>Different user groups need different APIs</li>
+				</ul>
+			</slide>
+			<slide id="architecture">
+				<title>Platform Architecture</title>
+				<img src="API-perspectives-architecture.png" class="fullsize"/>
+			</slide>
+			<slide id="openness">
+				<title>Lesson #3: Architect an Open Platform</title>
+				<ul>
+					<li>APIs can be contributed from various environments</li>
+					<li>APIs can be published to various consumers/environments</li>
+				</ul>
+			</slide>
+			<slide id="technology">
+				<title>Building Block Mechanics</title>
+				<img src="API-perspectives-technology.png" class="fullsize"/>
+			</slide>
+			<slide id="products">
+				<title>Lesson #4: What's an API's Value?</title>
+				<ul>
+					<li>Describing the interface is necessary but not sufficient</li>
+					<li>APIs have to be readily consumable products</li>
+				</ul>
+			</slide>
+			<slide id="value">
+				<title>Building Block Value</title>
+				<img src="API-perspectives-value.png" class="fullsize"/>
+			</slide>
+			<slide id="platforms">
+				<title>Lesson #5: Platforms Produce Value</title>
+				<ul>
+					<li>The true measure of success is how much value is being produced</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="landscape-value">
+			<title>API Landscape Value</title>
+			<slide id="adding">
+				<title>Adding APIs is Easy</title>
+				<ul>
+					<li>Teams build APIs when they build capabilities (API first)</li>
+					<li>APIs can be easily added to the platform with as much automation as possible</li>
+				</ul>
+			</slide>
+			<slide id="finding">
+				<title>Finding APIs is Easy</title>
+				<ul>
+					<li>API products are described and published to be easily findable</li>
+					<li>The platform provides descriptive and extensible metadata management (API labels)</li>
+				</ul>
+			</slide>
+			<slide id="using">
+				<title>Using APIs is Easy</title>
+				<ul>
+					<li>API onboarding is part of the platform experience</li>
+					<li>APIs are described so that they can be easily consumed</li>
+				</ul>
+			</slide>
+			<slide id="improving">
+				<title>Improving APIs is Easy</title>
+				<ul>
+					<li>The platform monitors feedback and gathers feedback</li>
+					<li>Updating APIs is part of the normal management model</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="api-maturity-journey">
 			<title>API Maturity Journey</title>
 			<slide id="technical-proficiency">
