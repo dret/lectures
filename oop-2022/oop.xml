@@ -78,6 +78,29 @@
 				<img src="midtown-manhattan.jpg" title="Midtown Manhattan" href="https://www.flickr.com/photos/albaum/2422322708" class="fullsize"/>
 			</slide>
 		</part>
+		<part id="consumer-scope">
+			<title>API Product Consumer Scope</title>
+			<slide id="private-partner-public">
+				<title>Private/Partner/Public API Design Scope</title>
+				<img src="private-partner-public-design.png" class="fullsize"/>
+			</slide>
+			<slide id="product-consumers-domain">
+				<title>Domain Knowledge</title>
+				<img src="private-partner-public-design-domain.png" class="fullsize"/>
+			</slide>
+			<slide id="product-consumers-relationship">
+				<title>Producer/Consumer Relationship</title>
+				<img src="private-partner-public-design-relationship.png" class="fullsize"/>
+			</slide>
+			<slide id="product-consumers-security">
+				<title>Threat/Security Model</title>
+				<img src="private-partner-public-design-security.png" class="fullsize"/>
+			</slide>
+			<slide id="product-consumers-landscape">
+				<title>Landscape Coherence</title>
+				<img src="private-partner-public-design-landscape.png" class="fullsize"/>
+			</slide>
+		</part>
 		<part id="perspectives">
 			<title>API Perspectives</title>
 			<slide id="users">
