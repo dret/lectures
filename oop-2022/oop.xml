@@ -120,6 +120,7 @@
 			<slide id="horizon">
 				<title>Lesson #1: Expand Your API Horizon</title>
 				<ul>
+					<li>APIs are products and should be designed with consumers in mind</li>
 					<li><em>Public/Partner API:</em> Establish and/or drive new value streams</li>
 					<li><em>Private API:</em> Become better at changing value streams effectively</li>
 				</ul>
@@ -132,6 +133,7 @@
 				<title>Lesson #2: Plan for API Diversity</title>
 				<ul>
 					<li>Different user groups need different APIs</li>
+					<li>For API consumers it shouldn't matter how/where an API is implemented</li>
 				</ul>
 			</slide>
 			<slide id="architecture">
@@ -152,7 +154,7 @@
 			<slide id="products">
 				<title>Lesson #4: What's an API's Value?</title>
 				<ul>
-					<li>Describing the interface is necessary but not sufficient</li>
+					<li>Describing the technical interface is necessary but not sufficient</li>
 					<li>APIs have to be readily consumable products</li>
 				</ul>
 			</slide>
@@ -160,10 +162,11 @@
 				<title>Building Block Value</title>
 				<img src="API-perspectives-value.png" class="fullsize"/>
 			</slide>
-			<slide id="platforms">
-				<title>Lesson #5: Platforms Produce Value</title>
+			<slide id="wiifm">
+				<title>Lesson #5: <span title="What's in it for me?">WIIFM</span></title>
 				<ul>
-					<li>The true measure of success is how much value is being produced</li>
+					<li>The true measure of success is how much value is created</li>
+					<li>Make it easy for people to understand the business value of your API</li>
 				</ul>
 			</slide>
 		</part>
