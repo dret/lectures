@@ -117,6 +117,10 @@
 		</part>
 		<part id="api-evolution">
 			<title>Improving API Products</title>
+			<slide id="petstore">
+				<title>A Better Petstore</title>
+				<listing src="openapi-petstore.yaml" line="1-34" href="https://github.com/swagger-api/swagger-petstore"/>
+			</slide>
 			<slide id="openapi-to-tree">
 				<title>Visual OpenAPI</title>
 				<img src="openapi-to-tree.png" title="OpenAPI to Tree" href="http://api-ace.inf.usi.ch/openapi-to-tree/" class="fullsize" style="border : 2px grey"/>
