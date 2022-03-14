@@ -86,6 +86,16 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="alignment">
+			<title>Business-Aligned APIs</title>
+			<slide id="products">
+				<title>What is a Product?</title>
+				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-left" />
+			</slide>
+			<slide id="good-api">
+				<title>What is a Good API? Useful > Findable > Usable</title>
+			</slide>
+		</part>
 		<part id="api-lifecycle">
 			<title>API Lifecycle</title>
 			<slide id="tech-focus">
@@ -103,16 +113,6 @@
 			<slide id="lauret">
 				<title>Arnaud Lauret: The Design of Web APIs</title>
 				<img title='"The Design of Web APIs: Arnaud Lauret talks about his new book", November 2021' href="https://www.youtube.com/watch?v=XuSEFFZzktE" src="goal-canvas.png" class="fullsize"/>
-			</slide>
-		</part>
-		<part id="alignment">
-			<title>Business-Aligned APIs</title>
-			<slide id="products">
-				<title>What is a Product?</title>
-				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-left" />
-			</slide>
-			<slide id="good-api">
-				<title>What is a Good API? Useful > Findable > Usable</title>
 			</slide>
 		</part>
 		<part id="api-evolution">
