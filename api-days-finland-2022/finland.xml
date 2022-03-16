@@ -242,6 +242,13 @@
 				<img src="private-partner-public-design-landscape.png" class="fullsize"/>
 			</slide>
 		</part>
+		<part id="api-co-design">
+			<title>(Co-)Designing APIs</title>
+			<slide id="demo-1">
+				<title>Making API Products Available</title>
+				<video controls="controls" src="img/amplify-demo-1.mp4" style=" width: 100% ; height: auto ; max-height: 70% ; ">Your browser does not support the HTML5 Video element.</video>
+			</slide>
+		</part>
 		<part id="robust-extensibility">
 			<title>Robust Extensibility</title>
 			<slide id="core-semantics">
@@ -342,6 +349,13 @@
 					<li><code>PATCH</code>/<code>MINOR</code> may make sense to expose inside the API</li>
 					<li><code>MAJOR</code> means that there is a <em>different API</em> for the <em>same service</em></li>
 				</ul>
+			</slide>
+		</part>
+		<part id="feedback">
+			<title>API Product Feedback</title>
+			<slide id="demo-2">
+				<title>Updating API Products</title>
+				<video controls="controls" src="img/amplify-demo-2.mp4" style=" width: 100% ; height: auto ; max-height: 70% ; ">Your browser does not support the HTML5 Video element.</video>
 			</slide>
 		</part>
 		<part id="api-lifecycle-conclusions">
