@@ -242,6 +242,108 @@
 				<img src="private-partner-public-design-landscape.png" class="fullsize"/>
 			</slide>
 		</part>
+		<part id="robust-extensibility">
+			<title>Robust Extensibility</title>
+			<slide id="core-semantics">
+				<title>Meaningful Core Semantics</title>
+				<ul>
+					<li>The core of the API allows clients to have meaningful interactions</li>
+					<ul>
+						<li>The starting point of an API should be meaningful and complete</li>
+					</ul>
+					<li>The core of the API is robust over time</li>
+					<ul>
+						<li>Anything that is added to the core does not change the core semantics</li>
+					</ul>
+					<li>Anything that is not part of the core can be safely ignored</li>
+					<ul>
+						<li><code>mustIgnore</code> semantics allow safe interactions beyond closely coordinated groups</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="extension-points">
+				<title>Well-Defined Extension Points</title>
+				<ul>
+					<li>APIs should be clear about where extensions are allowed</li>
+					<ul>
+						<li>API metamodels often decide where (potential) extension points are</li>
+						<li>API schemas/definitions should further narrow down where extensions are allowed</li>
+					</ul>
+					<li>API tests can make sure that the extension points are properly implemented</li>
+					<ul>
+						<li>Extensions in allowed places are ignored and tests should succeed</li>
+						<li>Extensions in other places should raise errors about malformed content</li>
+					</ul>
+					<li>Extension points are interesting to support in generic software</li>
+					<ul>
+						<li>Monitoring can report which and where extensions are being used</li>
+						<li>Libraries/SDKs can make it easy to create/parse extension data</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="processing-model">
+				<title>Well-Defined Processing Model</title>
+				<ul>
+					<li>Extensions are well-defined and their handling is well-defined as well</li>
+					<ul>
+						<li><link href="extension-points">Extension points</link> make it clear where to expect extensions</li>
+						<li><em>Processing models</em> make it clear what to do with extensions</li>
+					</ul>
+					<li><code>mustIgnore</code> is a popular and good choice for extension processing</li>
+					<ul>
+						<li>Some formats allow extensions to declare their processing model (such as <code>mustUnderstand</code>)</li>
+						<li>HTML has a rule of ignoring unknown elements but processing their content</li>
+					</ul>
+					<li>How to <em>learn</em> about extensions is a different matter</li>
+					<ul>
+						<li>If an API evolves along a single path it may be as simple as looking along that path</li>
+						<li>If an API is used <a href="https://tools.ietf.org/html/draft-wilde-registries">in more complex ways</a> a registry may be a way to find extensions</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="versioning-strategies">
+			<title>Versioning Strategies</title>
+			<slide id="semantic-versioning">
+				<title><a href="http://semver.org/">Semantic Versioning</a></title>
+				<ul>
+					<li><a href="http://semver.org/">Semantic Versioning</a> standardizes the meaning of version numbers</li>
+					<li>Version numbers use <code>MAJOR.MINOR.PATCH</code> syntax and have well-defined semantics</li>
+					<ul>
+						<li>Increase <code>MAJOR</code> version for incompatible API changes</li>
+						<li>Increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
+						<li>Increase <code>PATCH</code> version for making backwards-compatible bug fixes</li>
+					</ul>
+					<li><code>MAJOR</code> is a different API, <code>PATCH</code> is an implementation detail</li>
+					<ul>
+						<li>Exposing detailed version/patch information is a potential security risk</li>
+						<li>For well-designed APIs only <code>MINOR</code> may make sense to expose</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="semantic-versioning-example">
+				<title>Semantic Versioning Example</title>
+				<img src="semantic-versioning.png" href="https://www.youtube.com/watch?v=MNU1PimVXMM" class="fullsize"/>
+			</slide>
+			<slide id="implementation-api-version">
+				<title>Implementation vs. API Version</title>
+				<ul>
+					<li><em>Implementation versions</em> may be internal information only</li>
+					<ul>
+						<li>Implementation details do not have to show up in the API</li>
+						<li>For internal/trusted/open cases implementation and API may be the same version</li>
+					</ul>
+					<li><em>API versions</em> are about changes that may affect consumers</li>
+					<ul>
+						<li><code>PATCH</code> does not change API design or behavior</li>
+						<li><code>MINOR</code> changes API behavior in a safe way</li>
+						<li><code>MAJOR</code> changes API behavior in ways that require client changes</li>
+					</ul>
+					<li><code>PATCH</code>/<code>MINOR</code> may make sense to expose inside the API</li>
+					<li><code>MAJOR</code> means that there is a <em>different API</em> for the <em>same service</em></li>
+				</ul>
+			</slide>
+		</part>
 		<part id="api-lifecycle-conclusions">
 			<title>Conclusions</title>
 			<slide id="api-lifecycle-tahnk-you">
