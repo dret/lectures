@@ -47,10 +47,10 @@
 	<title><a href="https://www.apidays.co/">API Days</a> <a href="https://www.apidays.fi/">Helsinki</a>, Finland</title>
 	<author>Erik Wilde <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 	<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com/">Catalyst</a></affiliation>
-	<date short="2022-03-16">March 16, 2022</date>
 	<copyright>2022 Erik Wilde</copyright>
 	<presentation id="api-design">
 		<title>API Design: The Full Picture</title>
+		<date short="2022-03-16">March 16, 2022</date>
 		<part id="api-design-intro">
 			<title>Introduction</title>
 			<slide id="dret">
@@ -164,6 +164,7 @@
 	<presentation id="api-lifecycle">
 		<title short="API Lifecycle Management">API Lifecycle Management in Practice: Managing APIs as Products</title>
 		<toc class="abstract">In this session we look at the overall API lifecycle management process and how to make sure that the process works well with modern API product management practices. API products should follow general product management practices: Identifying target consumers, understanding their needs, co-designing with them to validate assumptions, and releasing early and often so that products can evolve for a better market fit. In this session we look at the general model of how to do API product management, and we also look at some practical issues of how to make sure that this process is supported by your platform and tools.</toc>
+		<date short="2022-03-17">March 17, 2022</date>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
