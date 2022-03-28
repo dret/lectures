@@ -188,6 +188,65 @@
 				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-left" />
 			</slide>
 		</part>
+		<part id="api-management">
+			<title>API Management</title>
+			<slide id="evolution">
+				<title>API Management is Evolving</title>
+				<ul>
+					<li><em>API management</em> means different things to different people</li>
+					<li>It has been evolving with the practice and tooling</li>
+					<li>It is growing in scope with the growing importance of APIs</li>
+				</ul>
+			</slide>
+			<slide id="technical">
+				<title>Technical API Management</title>
+				<img src="API-management-technical.png" class="fullsize"/>
+			</slide>
+			<slide id="technical-focus">
+				<title>Technical API Management Focus</title>
+				<ul>
+					<li>Securing APIs against unauthorized access</li>
+					<li>Managing authentication and authorization for API access</li>
+					<li>Protecting APIs with mechanisms such as throttling</li>
+				</ul>
+			</slide>
+			<slide id="lifecycle">
+				<title>API Lifecycle Management</title>
+				<img src="API-management-lifecycle.png" class="fullsize"/>
+			</slide>
+			<slide id="lifecycle-focus">
+				<title>API Lifecycle Management Focus</title>
+				<ul>
+					<li>Looking at APIs as evolving over time</li>
+					<li>Making API development more effective</li>
+					<li>Adding components for tasks such as testing and analytics</li>
+				</ul>
+			</slide>
+			<slide id="product">
+				<title>API Product Management</title>
+				<img src="API-management-product.png" class="fullsize"/>
+			</slide>
+			<slide id="product-focus">
+				<title>API Product Management Focus</title>
+				<ul>
+					<li>Applying a value-oriented perspective to turn APIs into API products</li>
+					<li>Separating API products from their technical management</li>
+					<li>Using product catalogs to allow for diverse landscapes</li>
+				</ul>
+			</slide>
+			<slide id="marketing">
+				<title>API Product Marketing</title>
+				<img src="API-management-marketing.png" class="fullsize"/>
+			</slide>
+			<slide id="marketing-focus">
+				<title>Building Blocks are Driving Value</title>
+				<ul>
+					<li>Actively market building blocks that can drive value</li>
+					<li>Manage the building block portfolio</li>
+					<li>Provide specific building blocks for specific audiences</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="api-lifecycle-conclusions">
 			<title>Conclusions</title>
 			<slide id="network-q-and-a">
