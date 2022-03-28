@@ -140,7 +140,7 @@
 	</presentation>
 	<presentation id="api-lifecycle">
 		<title short="API Lifecycle Management">API Lifecycle Management in Practice: Managing APIs as Products</title>
-		<toc class="abstract">In this session we look at the overall API lifecycle management process and how to make sure that the process works well with modern API product management practices. API products should follow general product management practices: Identifying target consumers, understanding their needs, co-designing with them to validate assumptions, and releasing early and often so that products can evolve for a better market fit. In this session we look at the general model of how to do API product management, and we also look at some practical issues of how to make sure that this process is supported by your platform and tools.</toc>
+		<toc class="abstract">For an API to directly contribute value to a business, it must be conceived, designed, and managed as a product. With IT becoming increasingly pervasive, we see API products being produced and consumed in more and more places throughout an organization. In this decentralized landscape the question is how to make sure that API products can be produced in a decentralized way, but can still be discovered and used easily. In this session we discuss how the focus of API management increasingly is looking at API consumption as well. We show how to make this work with a model that supports decentralization but at the same time provides a unified catalog of all APIs that makes it easy to discover and use APIs.</toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -181,155 +181,11 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="api-product-design">
-			<title>API Product Design</title>
+		<part id="api-products">
+			<title>API Products</title>
 			<slide id="products">
 				<title>What is a Product?</title>
 				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-left" />
-			</slide>
-			<slide id="design-video">
-				<title><a href="https://www.youtube.com/watch?v=HmIHw3U5jEQ" title="Designing Private, Partner, and Public APIs: What's the Difference?">Designing Private, Partner, and Public APIs</a></title>
-				<div style=" float : left ; width : 90% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
-					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
-						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/HmIHw3U5jEQ" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
-					</div>
-				</div>
-			</slide>
-			<slide id="private-partner-public">
-				<title>Know Your Consumer: API Design Scope</title>
-				<img src="private-partner-public-design.png" class="fullsize"/>
-			</slide>
-			<slide id="product-consumers-domain">
-				<title>Domain Knowledge</title>
-				<img src="private-partner-public-design-domain.png" class="fullsize"/>
-			</slide>
-			<slide id="product-consumers-relationship">
-				<title>Producer/Consumer Relationship</title>
-				<img src="private-partner-public-design-relationship.png" class="fullsize"/>
-			</slide>
-			<slide id="product-consumers-security">
-				<title>Threat/Security Model</title>
-				<img src="private-partner-public-design-security.png" class="fullsize"/>
-			</slide>
-			<slide id="product-consumers-landscape">
-				<title>Landscape Coherence</title>
-				<img src="private-partner-public-design-landscape.png" class="fullsize"/>
-			</slide>
-		</part>
-		<part id="api-co-design">
-			<title>(Co-)Designing APIs</title>
-			<slide id="demo-1">
-				<title>Making API Products Available</title>
-				<video controls="controls" src="img/amplify-demo-1.mp4" style=" width: 100% ; height: auto ; max-height: 70% ; ">Your browser does not support the HTML5 Video element.</video>
-			</slide>
-		</part>
-		<part id="robust-extensibility">
-			<title>Robust Extensibility</title>
-			<slide id="core-semantics">
-				<title>Meaningful Core Semantics</title>
-				<ul>
-					<li>The core of the API allows clients to have meaningful interactions</li>
-					<ul>
-						<li>The starting point of an API should be meaningful and complete</li>
-					</ul>
-					<li>The core of the API is robust over time</li>
-					<ul>
-						<li>Anything that is added to the core does not change the core semantics</li>
-					</ul>
-					<li>Anything that is not part of the core can be safely ignored</li>
-					<ul>
-						<li><code>mustIgnore</code> semantics allow safe interactions beyond closely coordinated groups</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="extension-points">
-				<title>Well-Defined Extension Points</title>
-				<ul>
-					<li>APIs should be clear about where extensions are allowed</li>
-					<ul>
-						<li>API metamodels often decide where (potential) extension points are</li>
-						<li>API schemas/definitions should further narrow down where extensions are allowed</li>
-					</ul>
-					<li>API tests can make sure that the extension points are properly implemented</li>
-					<ul>
-						<li>Extensions in allowed places are ignored and tests should succeed</li>
-						<li>Extensions in other places should raise errors about malformed content</li>
-					</ul>
-					<li>Extension points are interesting to support in generic software</li>
-					<ul>
-						<li>Monitoring can report which and where extensions are being used</li>
-						<li>Libraries/SDKs can make it easy to create/parse extension data</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="processing-model">
-				<title>Well-Defined Processing Model</title>
-				<ul>
-					<li>Extensions are well-defined and their handling is well-defined as well</li>
-					<ul>
-						<li><link href="extension-points">Extension points</link> make it clear where to expect extensions</li>
-						<li><em>Processing models</em> make it clear what to do with extensions</li>
-					</ul>
-					<li><code>mustIgnore</code> is a popular and good choice for extension processing</li>
-					<ul>
-						<li>Some formats allow extensions to declare their processing model (such as <code>mustUnderstand</code>)</li>
-						<li>HTML has a rule of ignoring unknown elements but processing their content</li>
-					</ul>
-					<li>How to <em>learn</em> about extensions is a different matter</li>
-					<ul>
-						<li>If an API evolves along a single path it may be as simple as looking along that path</li>
-						<li>If an API is used <a href="https://tools.ietf.org/html/draft-wilde-registries">in more complex ways</a> a registry may be a way to find extensions</li>
-					</ul>
-				</ul>
-			</slide>
-		</part>
-		<part id="versioning-strategies">
-			<title>Versioning Strategies</title>
-			<slide id="semantic-versioning">
-				<title><a href="http://semver.org/">Semantic Versioning</a></title>
-				<ul>
-					<li><a href="http://semver.org/">Semantic Versioning</a> standardizes the meaning of version numbers</li>
-					<li>Version numbers use <code>MAJOR.MINOR.PATCH</code> syntax and have well-defined semantics</li>
-					<ul>
-						<li>Increase <code>MAJOR</code> version for incompatible API changes</li>
-						<li>Increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
-						<li>Increase <code>PATCH</code> version for making backwards-compatible bug fixes</li>
-					</ul>
-					<li><code>MAJOR</code> is a different API, <code>PATCH</code> is an implementation detail</li>
-					<ul>
-						<li>Exposing detailed version/patch information is a potential security risk</li>
-						<li>For well-designed APIs only <code>MINOR</code> may make sense to expose</li>
-					</ul>
-				</ul>
-			</slide>
-			<slide id="semantic-versioning-example">
-				<title>Semantic Versioning Example</title>
-				<img src="semantic-versioning.png" href="https://www.youtube.com/watch?v=MNU1PimVXMM" class="fullsize"/>
-			</slide>
-			<slide id="implementation-api-version">
-				<title>Implementation vs. API Version</title>
-				<ul>
-					<li><em>Implementation versions</em> may be internal information only</li>
-					<ul>
-						<li>Implementation details do not have to show up in the API</li>
-						<li>For internal/trusted/open cases implementation and API may be the same version</li>
-					</ul>
-					<li><em>API versions</em> are about changes that may affect consumers</li>
-					<ul>
-						<li><code>PATCH</code> does not change API design or behavior</li>
-						<li><code>MINOR</code> changes API behavior in a safe way</li>
-						<li><code>MAJOR</code> changes API behavior in ways that require client changes</li>
-					</ul>
-					<li><code>PATCH</code>/<code>MINOR</code> may make sense to expose inside the API</li>
-					<li><code>MAJOR</code> means that there is a <em>different API</em> for the <em>same service</em></li>
-				</ul>
-			</slide>
-		</part>
-		<part id="feedback">
-			<title>API Product Feedback</title>
-			<slide id="demo-2">
-				<title>Updating API Products</title>
-				<video controls="controls" src="img/amplify-demo-2.mp4" style=" width: 100% ; height: auto ; max-height: 70% ; ">Your browser does not support the HTML5 Video element.</video>
 			</slide>
 		</part>
 		<part id="api-lifecycle-conclusions">
