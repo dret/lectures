@@ -1,6 +1,4 @@
-# ...
-
-Slides for presentations at [API Conference Den Haag](https://apiconference.net/).
+# Slides for presentations at [API Conference Den Haag](https://apiconference.net/).
 
 ## License
 
