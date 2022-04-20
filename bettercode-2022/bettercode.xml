@@ -29,8 +29,13 @@
 	<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com/">Catalyst</a></affiliation>
 	<copyright>2022 Erik Wilde</copyright>
 	<presentation id="index">
-		<title>...</title>
+		<title>Wie wird ein API zum Produkt? Und wann sollte es eines sein?</title>
+		<toc class="abstract">APIs sind technische Schnittstellen und man könnte es bei dieser Definition belassen. Aber viele Versprechungen und Hoffnungen sind heute direkt oder indirekt mit APIs verbunden, und die Frage ist, ob jegliche Art von APIs diese Versprechungen und Hoffnungen erfüllen. Wie sich zeigt, haben APIs, die als Produkte gedacht werden, eine bessere Chance, für die digitale Transformation ein solides Fundament zu bieten. In diesem Vortrag gehen wir der Frage nach, warum das so ist und wie man APIs als Produkte denkt, designt und managt.</toc>
 		<date short="2022-04-27">March 27, 2022</date>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 		<part id="api-design-intro">
 			<title>Introduction</title>
 			<slide id="dret">
