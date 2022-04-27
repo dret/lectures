@@ -93,6 +93,22 @@
 					<li><em>Usable</em> means that the product makes it easy to get their jobs done</li>
 				</ol>
 			</slide>
+			<slide id="consumers">
+				<title>API Consumers</title>
+				<ul>
+					<li>APIs produce when value (only) when are being used</li>
+					<ul>
+						<li><em>External APIs</em> allow to interface with <em>partners</em> or the <em>public</em></li>
+						<li><em>Internal APIs</em> use <em>private</em> digital building blocks</li>
+					</ul>
+					<li>Start looking at APIs <em>from a consumer point of view</em></li>
+					<ul>
+						<li><em>Private APIs</em> mostly revolve around decoupling internal teams</li>
+						<li><em>Partner APIs</em> are driven by your ecosystem of business partners</li>
+						<li><em>Public APIs</em> are intended to attract as many consumers as possible</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="network-effect">
 			<title>Network Effect</title>
