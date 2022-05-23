@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="catalyst-new" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="summit.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+		<div class="license">
+			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/catalyst/catalyst/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+		</div>
+	</license>
+	<title><a href="https://www.axway.com/">Axway</a> Partner Summit 2022</title>
+	<author>Erik Wilde <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
+	<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com/">Catalyst</a></affiliation>
+	<copyright>2022 Erik Wilde</copyright>
+	<presentation id="index">
+		<title>Good APIs Need Strong Partners</title>
+		<date short="2022-05-31">May 31, 2022</date>
+		<part id="api-design-intro">
+			<title>Introduction</title>
+			<slide id="dret">
+				<title>Erik Wilde <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></title>
+				<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
+					<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/QEd1pQReKyI" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+				<div style=" float : right ; width : 44% ; margin : 0% 4% 0% 2% ; ">
+					<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/VNwAYyfQ8Bw" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+			<slide id="catalysts">
+				<title><a href="https://www.axway.com">Axway</a> <a href="https://catalysts.axway.com">Catalysts</a></title>
+				<img src="catalysts-logo.png" title="Catalysts Logo" style="float: right ; width : 16% ; margin : 3% ; "/>
+				<ul>
+					<li>Small team of experts in the digital transformation and API space</li>
+					<ul>
+						<li>Help customers to make good decisions on their API journey</li>
+						<li>Move the community of API practitioners and their practices forward</li>
+					</ul>
+					<li>Team members are distributed globally</li>
+					<ul style=" columns : 1 ; ">
+						<li>Emmanuel Methivier: <a href="https://twitter.com/e_methivier" class="twitter-follow-button" title="Emmanuel Methivier on Twitter: @e_methivier"><code>@e_methivier</code></a><script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li>Brian Otten: <a href="https://twitter.com/bottencatalyst" class="twitter-follow-button" title="Brian Otten on Twitter: @bottencatalyst"><code>@bottencatalyst</code></a><script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li>Brian Pagano: <a href="https://twitter.com/brianpagano" class="twitter-follow-button" title="Brian Pagano on Twitter: @brianpagano"><code>@brianpagano</code></a><script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li>Eyal Sivan: <a href="https://twitter.com/mropenbanking" class="twitter-follow-button" title="Eyal Sivan on Twitter: @mropenbanking"><code>@mropenbanking</code></a><script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+						<li>Erik Wilde: <a href="https://twitter.com/dret" class="twitter-follow-button" title="Erik Wilde on Twitter: @dret"><code>@dret</code></a><script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="api-products">
+			<title>APIs, Products, and API Products</title>
+			<slide id="apis">
+				<title>What is an API?</title>
+				<ul>
+					<li>An API is a <em>digitally accessible</em> capability</li>
+					<li>An API is designed with <em>users and reuse</em> in mind</li>
+					<li>An API creates value when it is <em>consumed</em> by users</li>
+				</ul>
+			</slide>
+			<slide id="products">
+				<title>What is a Product?</title>
+				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-left" />
+			</slide>
+			<slide id="good-api">
+				<title>What is a Good API? Useful ≫ Findable ≫ Usable</title>
+				<ol>
+					<li><em>Useful</em> means that it addresses customers' <q href="https://hbr.org/2016/09/know-your-customers-jobs-to-be-done">Jobs to Be Done</q></li>
+					<li><em>Findable</em> means that potential consumers have a fighting chance of finding it</li>
+					<li><em>Usable</em> means that the product makes it easy to get their jobs done</li>
+				</ol>
+			</slide>
+			<slide id="consumers">
+				<title>API Consumers</title>
+				<ul>
+					<li>APIs produce when value (only) when are being used</li>
+					<ul>
+						<li><em>External APIs</em> allow to interface with <em>partners</em> or the <em>public</em></li>
+						<li><em>Internal APIs</em> use <em>private</em> digital building blocks</li>
+					</ul>
+					<li>Start looking at APIs <em>from a consumer point of view</em></li>
+					<ul>
+						<li><em>Private APIs</em> mostly revolve around decoupling internal teams</li>
+						<li><em>Partner APIs</em> are driven by your ecosystem of business partners</li>
+						<li><em>Public APIs</em> are intended to attract as many consumers as possible</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="network-effect">
+			<title>Network Effect</title>
+			<slide id="network">
+				<title>Why? The Network Effects Needs a Network</title>
+				<ul>
+					<li>It's ineffective to do <q>digital transformation light</q></li>
+					<li>ROI grows more than linear because options grow more than linear</li>
+					<li>Find <em>lighthouse projects</em> to demonstrate ROI and potential</li>
+				</ul>
+			</slide>
+			<slide id="team-effort">
+				<title>What? The Platform is a Team Effort</title>
+				<ul>
+					<li><em>Everybody</em> consumes and contributes building blocks</li>
+					<li><em>Nobody</em> assumes that their product cannot be reused or improved</li>
+					<li><q href="http://dret.net/lectures/api-world-2021/">Making APIs the Default</q> is effective but not always possible</li>
+				</ul>
+			</slide>
+			<slide id="collaboration">
+				<title>How? Collaboration Needs Design and Discipline</title>
+				<ul>
+					<li>API products are essential as <em>digital building blocks</em></li>
+					<li>API product thinking is important for <em>designing good building blocks</em></li>
+					<li><em>Everybody</em> is building for <em>everybody else</em></li>
+				</ul>
+			</slide>
+		</part>
+		<part id="management">
+			<title>API Product Management</title>
+			<slide id="business">
+				<title>Business APIs</title>
+				<ul>
+					<li>APIs representing <em>well-defined business capabilities</em></li>
+					<li>APIs <em>designed and developed</em> as digital building blocks</li>
+					<li>The API platform is about <em>digital business</em> and not about <em>IT management</em></li>
+				</ul>
+			</slide>
+			<slide id="higginbotham">
+				<title>James Higginbotham: Principles of Web API Design</title>
+				<img title='"Principles of Web API Design: James Higginbotham talks about his new book", January 2022' href="https://www.youtube.com/watch?v=NFiaUmlp1oE" src="addr-process.png" class="fullsize"/>
+			</slide>
+			<slide id="amundsen">
+				<title>Mike Amundsen: Design and Build Great Web APIs</title>
+				<img title='"Design and Build Great Web APIs: An Interview with Mike Amundsen", October 2020' href="https://www.youtube.com/watch?v=0Qmw4gY6iAs" src="api-first.png" class="fullsize"/>
+			</slide>
+			<slide id="lauret">
+				<title>Arnaud Lauret: The Design of Web APIs</title>
+				<img title='"The Design of Web APIs: Arnaud Lauret talks about his new book", November 2021' href="https://www.youtube.com/watch?v=XuSEFFZzktE" src="goal-canvas.png" class="fullsize"/>
+			</slide>
+		</part>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="magic">
+				<title>There's no API Magic</title>
+				<ul>
+					<li>API value is a question of re-imagining your business</li>
+					<li>Think about digital building blocks and APIs will follow</li>
+					<li><em>Outside-in</em> beats <em>inside-out</em> every single time</li>
+				</ul>
+			</slide>
+			<slide id="thank-you">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/partner-summit-2022/"><code>dret.net/lectures/partner-summit-2022/</code></a></li>
+					<li>More information about myself:</li>
+					<ul>
+						<li><a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">Twitter: <code>@dret</code></a></li>
+						<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+						<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
