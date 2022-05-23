@@ -1,4 +1,4 @@
-# Slides for presentations at [betterCode()](https://www.bettercode.eu/) [API 2022](https://api.bettercode.eu/).
+# Slides for presentation at [betterCode()](https://www.bettercode.eu/) [API 2022](https://api.bettercode.eu/).
 
 ## License
 
