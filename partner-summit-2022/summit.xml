@@ -98,15 +98,12 @@
 				<title>Supporting the API Lifecycle</title>
 				<img src="API-management-lifecycle.png" class="fullsize"/>
 			</slide>
-			<part>
-				<title>Business APIs Matter</title>
+			<part id="api-product">
+				<title>Managing API Products</title>
 				<slide id="API-management-product">
 					<title>APIs as Business Building Blocks</title>
 					<img src="API-management-product.png" class="fullsize"/>
 				</slide>
-			</part>
-			<part>
-				<title>Consumption Matters</title>
 				<slide id="API-management-marketing">
 					<title>API Consumption Matters</title>
 					<img src="API-management-marketing.png" class="fullsize"/>
