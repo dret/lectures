@@ -101,40 +101,34 @@
 				<title>Supporting the API Lifecycle</title>
 				<img src="API-management-lifecycle.png" class="fullsize"/>
 			</slide>
-			<part id="api-product">
-				<title>Managing API Products</title>
-				<slide id="API-management-product">
-					<title>APIs as Business Building Blocks</title>
-					<img src="API-management-product.png" class="fullsize"/>
-				</slide>
-				<slide id="API-management-marketing">
-					<title>API Consumption Matters</title>
-					<img src="API-management-marketing.png" class="fullsize"/>
-				</slide>
-				<slide id="good-api">
-					<title>What is a Good API? Useful ≫ Findable ≫ Usable</title>
-					<ol>
-						<li><em>Useful</em> means that it addresses consumers' <q href="https://hbr.org/2016/09/know-your-customers-jobs-to-be-done">Jobs to Be Done</q></li>
-						<li><em>Findable</em> means that potential consumers have a fighting chance of finding it</li>
-						<li><em>Usable</em> means that the product makes it easy to get their jobs done</li>
-					</ol>
-				</slide>
-			</part>
-			<part>
-				<title>Scaling Matters</title>
-				<slide id="network">
-					<title>Why? The Network Effects Needs a Network</title>
-					<ul>
-						<li>It's ineffective to do <q>digital transformation light</q></li>
-						<li>ROI grows more than linear because options grow more than linear</li>
-						<li>Find <em>lighthouse projects</em> to demonstrate ROI and potential</li>
-					</ul>
-				</slide>
-				<slide id="scaling-is-hard">
-					<title>Getting started is hard, scaling up is even harder</title>
-					<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-				</slide>
-			</part>
+			<slide id="API-management-product">
+				<title>APIs as Business Building Blocks</title>
+				<img src="API-management-product.png" class="fullsize"/>
+			</slide>
+			<slide id="good-api">
+				<title>What is a Good API? Useful ≫ Findable ≫ Usable</title>
+				<ol>
+					<li><em>Useful</em> means that it addresses consumers' <q href="https://hbr.org/2016/09/know-your-customers-jobs-to-be-done">Jobs to Be Done</q></li>
+					<li><em>Findable</em> means that potential consumers have a fighting chance of finding it</li>
+					<li><em>Usable</em> means that the product makes it easy to get their jobs done</li>
+				</ol>
+			</slide>
+			<slide id="API-management-marketing">
+				<title>API Consumption Matters</title>
+				<img src="API-management-marketing.png" class="fullsize"/>
+			</slide>
+			<slide id="network">
+				<title>Why? The Network Effects Needs a Network</title>
+				<ul>
+					<li>It's ineffective to do <q>digital transformation light</q></li>
+					<li>ROI grows more than linear because options grow more than linear</li>
+					<li>Find <em>lighthouse projects</em> to demonstrate ROI and potential</li>
+				</ul>
+			</slide>
+			<slide id="scaling-is-hard">
+				<title>Getting started is hard, scaling up is even harder</title>
+				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
 		</part>
 		<part id="catalysing">
 			<title>Catalysing the API Journey</title>
