@@ -179,6 +179,27 @@
 		<title short="Team Structure for API Programs">Team Structure for API Programs: Missions and Organization</title>
 		<part id="more-than-tech">
 			<title>Beyond API Technology</title>
+			<slide id="api-cycle">
+				<title>API Journey: Assessment/Enablement/Coaching</title>
+				<img title="Managing the API Strategy Pillars: Assessment, Enablement, Coaching" src="services-cycle.png" style=" float: right ; width : 30% ; margin : 2% ;  "/>
+				<ul>
+					<li><em>Assessment</em> uses analysis and observations</li>
+					<ul>
+						<li>Figuring out the status quo</li>
+						<li>Monitoring the landscape for directing investments</li>
+					</ul>
+					<li><em>Enablement</em> addresses identified gaps</li>
+					<ul>
+						<li>Creating and maintaining API strategy/program/guidelines</li>
+						<li>Trainings and workshops for enabling all teams</li>
+					</ul>
+					<li><em>Coaching</em> for continuous architecting</li>
+					<ul>
+						<li>Monitoring the API landscape and identifying changing practices</li>
+						<li>Monitoring technologies and tools for improving the practice</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="digital-transformation-status">
 				<title>Digital Transformation Status</title>
 				<img href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" src="cio-reporting-line.png" class="fullsize"/>
