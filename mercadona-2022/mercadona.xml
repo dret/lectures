@@ -182,8 +182,66 @@
 	</presentation>
 	<presentation id="design">
 		<title short="API Design">API Design: From Projects to Products</title>
+		<part id="api-products">
+			<title>APIs, Products, and API Products</title>
+			<slide id="apis">
+				<title>What is an API?</title>
+				<ul>
+					<li>An API is a <em>digitally accessible</em> capability</li>
+					<li>An API is designed with <em>users and reuse</em> in mind</li>
+					<li>An API creates value when it is <em>consumed</em> by users</li>
+				</ul>
+			</slide>
+			<slide id="products">
+				<title>What is a Product?</title>
+				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-left" />
+			</slide>
+			<slide id="good-api">
+				<title>What is a Good API? Useful ≫ Findable ≫ Usable</title>
+				<ol>
+					<li><em>Useful</em> means that it addresses customers' <q href="https://hbr.org/2016/09/know-your-customers-jobs-to-be-done">Jobs to Be Done</q></li>
+					<li><em>Findable</em> means that potential consumers have a fighting chance of finding it</li>
+					<li><em>Usable</em> means that the product makes it easy to get their jobs done</li>
+				</ol>
+			</slide>
+		</part>
+		<part id="management">
+			<title>API Product Management</title>
+			<slide id="business">
+				<title>Business APIs</title>
+				<ul>
+					<li>APIs representing <em>well-defined business capabilities</em></li>
+					<li>APIs <em>designed and developed</em> as digital building blocks</li>
+					<li>The API platform is about <em>digital business</em> and not about <em>IT management</em></li>
+				</ul>
+			</slide>
+			<slide id="tech-focus">
+				<title>Technical API Lifecycle</title>
+				<img title="API Lifecycle" href="http://dret.net/lectures/geoint-2018/#one-management-cycle" src="lifecycle-api.png" class="fullsize"/>
+			</slide>
+			<slide id="higginbotham">
+				<title>James Higginbotham: Principles of Web API Design</title>
+				<img title='"Principles of Web API Design: James Higginbotham talks about his new book", January 2022' href="https://www.youtube.com/watch?v=NFiaUmlp1oE" src="addr-process.png" class="fullsize"/>
+			</slide>
+			<slide id="amundsen">
+				<title>Mike Amundsen: Design and Build Great Web APIs</title>
+				<img title='"Design and Build Great Web APIs: An Interview with Mike Amundsen", October 2020' href="https://www.youtube.com/watch?v=0Qmw4gY6iAs" src="api-first.png" class="fullsize"/>
+			</slide>
+			<slide id="lauret">
+				<title>Arnaud Lauret: The Design of Web APIs</title>
+				<img title='"The Design of Web APIs: Arnaud Lauret talks about his new book", November 2021' href="https://www.youtube.com/watch?v=XuSEFFZzktE" src="goal-canvas.png" class="fullsize"/>
+			</slide>
+		</part>
 		<part id="design-conclusions">
 			<title>Conclusions</title>
+			<slide id="magic">
+				<title>There's no API Magic</title>
+				<ul>
+					<li>API value is a question of re-imagining your business</li>
+					<li>Think about digital building blocks and APIs will follow</li>
+					<li><em>Outside-in</em> beats <em>inside-out</em> every single time</li>
+				</ul>
+			</slide>
 			<slide id="design-q-and-a">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
