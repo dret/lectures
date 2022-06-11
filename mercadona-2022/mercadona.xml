@@ -158,6 +158,36 @@
 	</presentation>
 	<presentation id="kpis">
 		<title short="KPIs for APIs">KPIs for APIs: You Cannot Manage What You Cannot Measure</title>
+		<part id="kpi-basics">
+			<title>Key Performance Indicators (KPI) Basics</title>
+			<slide id="kpi-overview">
+				<title>KPI Overview</title>
+				<ul>
+					<li>Providing <em>measurable</em> indicators for performance of organizations or activities</li>
+					<li>KPIs in most cases are designed to follow the <a href="https://en.wikipedia.org/wiki/SMART_criteria">SMART criteria</a></li>
+					<ul>
+						<li><em>Specific:</em> Target a specific area for improvement</li>
+						<li><em>Measurable:</em> Quantify or at least suggest an indicator of progress</li>
+						<li><em>Assignable:</em> Specify who will do it</li>
+						<li><em>Realistic:</em> State what results can realistically be achieved, given available resources</li>
+						<li><em>Time-related:</em> Specify when the result(s) can be achieved</li>
+					</ul>
+					<li>Like any other measurement KPIs are subject to <link href="goodharts-law"/></li>
+				</ul>
+			</slide>
+			<slide id="goodharts-law">
+				<title>Goodhart's Law</title>
+				<blockquote><q>When a measure becomes a target, it ceases to be a good measure.</q> (<a href="https://en.wikipedia.org/wiki/Charles_Goodhart">Charles Goodhart</a>)</blockquote>
+			</slide>
+			<slide id="kpi-api-number">
+				<title>Example: Number of APIs</title>
+				<ul>
+					<li>Interesting indicator but little indication of API value</li>
+					<li>Differentiating <em>public/partner/private</em> helps to better track API focus</li>
+					<li>Good idea to classify by reuse factor (number of API consumers)</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="kpis-conclusions">
 			<title>Conclusions</title>
 			<slide id="kpis-q-and-a">
