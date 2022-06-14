@@ -193,9 +193,22 @@
 			<title>KPI Perspectives</title>
 			<slide id="operational">
 				<title>Operational Perspective</title>
+				<ul>
+					<li>Important for <em>API management</em></li>
+					<li>Indicators for how easy it is to publish APIs</li>
+					<li>Indicators for how easy it is to consume APIs</li>
+					<li>Indicators for performance of <em>API data plane</em></li>
+					<li>Indicators for performance of <em>API management plane</em></li>
+				</ul>
 			</slide>
 			<slide id="business">
 				<title>Business Perspective</title>
+				<ul>
+					<li>Important for <em>digital building block management</em></li>
+					<li>Indicators for building block utilization</li>
+					<li>Indicators for building block productivity</li>
+					<li>Indicators for building block performance</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="business-kpis">
