@@ -109,6 +109,18 @@
 		</part>
 		<part id="journey">
 			<title>How to get started with your API journey</title>
+			<slide id="apis">
+				<title>What is an API?</title>
+				<ul>
+					<li>An API is a <em>digitally accessible</em> capability</li>
+					<li>An API is designed with <em>users and reuse</em> in mind</li>
+					<li>An API creates value when it is <em>consumed</em> by users</li>
+				</ul>
+			</slide>
+			<slide id="products">
+				<title>From APIs to API Products</title>
+				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-left" />
+			</slide>
 		</part>
 		<part id="pitfalls">
 			<title>Avoiding common pitfalls on your API journey</title>
