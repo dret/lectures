@@ -70,6 +70,42 @@
 		</part>
 		<part id="business-models">
 			<title>How are organizations making money with APIs?</title>
+			<slide id="business-model-overview">
+				<title>API Business Model Overview</title>
+				<img href="https://www.programmableweb.com/news/programmablewebs-guide-to-modern-api-business-models/analysis/2020/10/26" src="api-business-models.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-partner">
+				<title>Partner Business Models</title>
+				<img href="https://www.programmableweb.com/news/programmablewebs-guide-to-modern-api-business-models/analysis/2020/10/26" src="api-business-models-partner.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-partner-affiliate">
+				<title>Partner Business Model: Affiliate</title>
+				<img href="https://developer.walgreens.com/sites/default/files/v3_Native_PhotoPrintsAPI.html" title="Walgreens Native Photo Prints API" src="walgreens-native-photo-prints-api.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-standardization">
+				<title>Standardization Business Models</title>
+				<img href="https://www.programmableweb.com/news/programmablewebs-guide-to-modern-api-business-models/analysis/2020/10/26" src="api-business-models-standardization.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-standardization-regulatory">
+				<title>Standardization Business Model: Regulatory</title>
+				<img href="https://developer.ing.com/api-marketplace/marketplace/b6d5093d-626e-41e9-b9e8-ff287bbe2c07/overview" title="ING Account Information API" src="ing-account-information-api.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-productized">
+				<title>Productized Business Models</title>
+				<img href="https://www.programmableweb.com/news/programmablewebs-guide-to-modern-api-business-models/analysis/2020/10/26" src="api-business-models-productized.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-productized-upsell">
+				<title>Productized Business Model: Upsell</title>
+				<img href="https://foursquare.com/products/pricing/" title="Foursquare Places API" src="foursquare-places-api.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-marketing">
+				<title>Marketing Business Models</title>
+				<img href="https://www.programmableweb.com/news/programmablewebs-guide-to-modern-api-business-models/analysis/2020/10/26" src="api-business-models-marketing.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-marketing-audience">
+				<title>Marketing Business Model: Audience</title>
+				<img href="https://developer.twitter.com/en/docs/authentication/overview" title="Twitter Authentication API" src="twitter-authentication-api.png" class="fullsize"/>
+			</slide>
 		</part>
 		<part id="journey">
 			<title>How to get started with your API journey</title>
