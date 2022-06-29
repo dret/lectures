@@ -90,6 +90,18 @@
 		</part>
 		<part id="products">
 			<title>API Product Management</title>
+			<slide id="products">
+				<title>What is a Product?</title>
+				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-left" />
+			</slide>
+			<slide id="good-api">
+				<title>What is a Good API? Useful ≫ Findable ≫ Usable</title>
+				<ol>
+					<li><em>Useful</em> means that it addresses users' <q href="https://hbr.org/2016/09/know-your-customers-jobs-to-be-done">Jobs to Be Done</q></li>
+					<li><em>Findable</em> means that potential users have a fighting chance of finding it</li>
+					<li><em>Usable</em> means that the product makes it easy to get their jobs done</li>
+				</ol>
+			</slide>
 		</part>
 		<part id="scalability">
 			<title>Scalability</title>
