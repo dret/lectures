@@ -51,7 +51,7 @@
 	<copyright>2022 Erik Wilde</copyright>
 	<presentation id="five-good-api-practices">
 		<title short="Five Good API Practices">Five Good Practices For Your APIs</title>
-		<toc class="resources"><a title='"The Execution Gap: From API Vision to API Value", May 2022' href="https://www.youtube.com/watch?v=MlrDXdOY_E8">Execution Gap</a>&#160;· <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Stalled Digital Transformation</a></toc>
+		<toc class="resources"><a title='"The Execution Gap: From API Vision to API Value", May 2022' href="https://www.youtube.com/watch?v=MlrDXdOY_E8">Execution Gap</a>&#160;· <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Stalled Digital Transformation</a>&#160;· <a href="https://www.programmableweb.com/news/programmablewebs-guide-to-modern-api-business-models/analysis/2020/10/26" title='David Berlind, "ProgrammableWeb&apos;s Guide to Modern API Business Models", October 2020'>API Business Models</a></toc>
 		<part id="five-intro">
 			<title>Introduction</title>
 			<slide id="dret">
@@ -145,10 +145,29 @@
 		<part id="diversity">
 			<title>Landscape Diversity</title>
 		</part>
-		<part id="outside-in">
-			<title>Outside-In Design</title>
-		</part>
-		<part id="five-conclusions">
+		<part id="business-models">
+			<title>API Business Models</title>
+			<slide id="business-model-overview">
+				<title>Business Model Overview</title>
+				<img src="api-business-models.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-partner">
+				<title>Partner Business Models</title>
+				<img src="api-business-models-partner.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-partner-affiliate">
+				<title>Partner Business Model: Affiliate</title>
+				<img href="https://developer.walgreens.com/sites/default/files/v3_Native_PhotoPrintsAPI.html" title="Walgreens Native Photo Prints API" src="walgreens-native-photo-prints-api.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-marketing">
+				<title>Marketing Business Models</title>
+				<img src="api-business-models-marketing.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-marketing-audience">
+				<title>Marketing Business Model: Audience</title>
+				<img href="https://developer.twitter.com/en/docs/authentication/overview" title="Twitter Authentication API" src="twitter-authentication-api.png" class="fullsize"/>
+			</slide>
+		</part>		<part id="five-conclusions">
 			<title>Conclusions</title>
 			<slide id="five-q-and-a">
 				<title>Thank You!</title>
