@@ -86,19 +86,19 @@
 			</part>
 			<slide id="hype-cycle">
 				<title>Hype Cycle</title>
-				<img src="hype-cycle.png" href="https://en.wikipedia.org/wiki/Hype_cycle" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="hype-cycle.png" href="https://en.wikipedia.org/wiki/Hype_cycle" class="fullsize"/>
 			</slide>
 			<slide id="api-unicorn">
 				<title>APIs Fix Anything!</title>
-				<img src="hype-cycle-unicorn.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="hype-cycle-unicorn.png" class="fullsize"/>
 			</slide>
 			<slide id="api-plumbing">
 				<title>APIs Are Just Plumbing</title>
-				<img src="hype-cycle-unicorn-plumbing.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="hype-cycle-unicorn-plumbing.png" class="fullsize"/>
 			</slide>
 			<slide id="execution-gap">
 				<title>The Execution Gap</title>
-				<img title="Grand Canyon" src="grand-canyon.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Grand Canyon" src="grand-canyon.jpg" class="fullsize"/>
 			</slide>
 			<slide id="vision-to-results">
 				<title>From Vision to Results</title>
@@ -301,7 +301,7 @@
 			</slide>
 			<slide id="one-management-cycle">
 				<title>One Management Lifecycle</title>
-				<img title="API Lifecycle" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="API Lifecycle" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" class="fullsize"/>
 			</slide>
 		</part>
 	</presentation>
@@ -630,7 +630,7 @@
 			</slide>
 			<slide id="semantic-versioning-example">
 				<title>Semantic Versioning Example</title>
-				<img src="semantic-versioning.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="semantic-versioning.png" class="fullsize"/>
 			</slide>
 			<slide id="implementation-api-version">
 				<title>Implementation vs. API Version</title>
@@ -890,7 +890,7 @@
 			</slide>
 			<slide id="api-lifecycle-design">
 				<title>API Lifecycle and Design</title>
-				<img title="Where API management is headed in 2017" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Where API management is headed in 2017" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" class="fullsize"/>
 			</slide>
 		</part>
 		<part id="api-complexity">
@@ -1030,7 +1030,7 @@
 			</slide>
 			<slide id="api-maslow">
 				<title>Tools and Problems</title>
-				<img title="Hammer and Screw" href="https://www.flickr.com/photos/justinbaeder/5317820857" src="maslow-hammer-nail.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Hammer and Screw" href="https://www.flickr.com/photos/justinbaeder/5317820857" src="maslow-hammer-nail.jpg" class="fullsize"/>
 			</slide>
 			<slide id="api-design-simple">
 				<title>KISS API Design</title>
@@ -1076,11 +1076,11 @@
 			</slide>
 			<slide id="api-integration">
 				<title>Client-Side API Integration</title>
-				<img title="Client-Side API Integration" src="apis-application-layers-integration.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Client-Side API Integration" src="apis-application-layers-integration.png" class="fullsize"/>
 			</slide>
 			<slide id="experience-api">
 				<title>Experience API</title>
-				<img title="Experience API" src="apis-application-layers-experience.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Experience API" src="apis-application-layers-experience.png" class="fullsize"/>
 			</slide>
 			<slide id="design-coherence">
 				<title>Design Coherence</title>
@@ -1189,7 +1189,7 @@
 			</slide>
 			<slide id="castle">
 				<title>Traditional IT</title>
-				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="The Perfect Machine" href="https://commons.wikimedia.org/wiki/File:Burg_Hohenzollern_ak.jpg" src="hohenzollern-castle.jpg" class="fullsize"/>
 			</slide>
 			<slide id="bureaucracy">
 				<title>Bureaucracy</title>
@@ -1212,15 +1212,15 @@
 			</slide>
 			<slide id="api-economy">
 				<title>API Economy</title>
-				<img title="Farmers' Market Sacramento" href="https://commons.wikimedia.org/wiki/File:Farmers'_market_Sacramento.jpg" src="farmers-market-sacramento.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Farmers' Market Sacramento" href="https://commons.wikimedia.org/wiki/File:Farmers'_market_Sacramento.jpg" src="farmers-market-sacramento.jpg" class="fullsize"/>
 			</slide>
 			<slide id="digital-transformation-meme">
 				<title>Digital Transformation</title>
-				<img href="https://upload.wikimedia.org/wikipedia/commons/3/31/Great_white_shark_south_africa.jpg" src="digital-transformation-shark.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img href="https://upload.wikimedia.org/wikipedia/commons/3/31/Great_white_shark_south_africa.jpg" src="digital-transformation-shark.jpg" class="fullsize"/>
 			</slide>
 			<slide id="digital-transformation-status">
 				<title>Digital Transformation Status</title>
-				<img href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" src="cio-reporting-line.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img href="https://www.linkedin.com/pulse/reverse-engineering-organization-gregor-hohpe/" src="cio-reporting-line.png" class="fullsize"/>
 			</slide>
 		</part>
 		<part id="what">
@@ -1279,7 +1279,7 @@
 			</slide>
 			<slide id="api-lifecycle">
 				<title>API Lifecycle</title>
-				<img title="Where API management is headed in 2017" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Where API management is headed in 2017" href="http://blogs.ca.com/2017/01/23/api-management-headed-2017/" src="lifecycle-api.png" class="fullsize"/>
 			</slide>
 		</part>
 		<part id="how">
@@ -1675,7 +1675,7 @@
 			</slide>
 			<slide id="kaizen">
 				<title>Kaizen: Continuous Improvement</title>
-				<img title="Kaizen: Continuous Improvement" href="https://commons.wikimedia.org/wiki/File:Kaizen-1.svg" src="kaizen.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Kaizen: Continuous Improvement" href="https://commons.wikimedia.org/wiki/File:Kaizen-1.svg" src="kaizen.png" class="fullsize"/>
 			</slide>
 			<slide id="product-evolution">
 				<title>Product Consumers and Evolution</title>
@@ -1700,11 +1700,11 @@
 			</slide>
 			<slide id="food-labels">
 				<title>Food Labels</title>
-				<img title="Food Labels" href="https://www.google.ch/search?q=food+labels&amp;tbm=isch" src="food-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Food Labels" href="https://www.google.ch/search?q=food+labels&amp;tbm=isch" src="food-labels.png" class="fullsize"/>
 			</slide>
 			<slide id="safety-labels">
 				<title>Safety Labels</title>
-				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" class="fullsize"/>
 			</slide>
 			<slide id="api-product-maturity">
 				<title>API Product Maturity</title>
@@ -2020,11 +2020,11 @@
 			</slide>
 			<slide id="stalling">
 				<title>Getting started is hard, scaling up is even harder</title>
-				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' src="stalled-digital-transformation.png" class="fullsize"/>
 			</slide>
 			<slide id="scale-matters">
 				<title>Scale Matters</title>
-				<img title="Grand Canyon" src="grand-canyon.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Grand Canyon" src="grand-canyon.jpg" class="fullsize"/>
 			</slide>
 			<slide id="scaling">
 				<title>Scaling needs Strategy</title>
@@ -2100,7 +2100,7 @@
 			</slide>
 			<slide id="example">
 				<title>API Guideline Example</title>
-				<img href="https://github.com/dret/OReilly2020NYdemo/tree/master/guidelines/why/change-management-policy" title="Change Management Policy Guideline" src="change-management-guideline.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img href="https://github.com/dret/OReilly2020NYdemo/tree/master/guidelines/why/change-management-policy" title="Change Management Policy Guideline" src="change-management-guideline.png" class="fullsize"/>
 			</slide>
 			<slide id="good-practice">
 				<title>Good is better than Best</title>
@@ -2134,7 +2134,7 @@
 			</slide>
 			<slide id="in-the-wild">
 				<title>API Guidelines in the Wild</title>
-				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" class="fullsize"/>
 			</slide>
 			<slide id="getting-started">
 				<title>Getting Started</title>
@@ -2240,7 +2240,7 @@
 			</slide>
 			<slide id="microservices-are-soa">
 				<title>Microservices are SOA!</title>
-				<img title="Microservices are SOA!" src="microservices-are-soa.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Microservices are SOA!" src="microservices-are-soa.jpg" class="fullsize"/>
 			</slide>
 			<slide id="microservices-are-good-soa">
 				<title>Microservices are SOA done Right!</title>
@@ -2261,15 +2261,15 @@
 			</slide>
 			<slide id="monolith">
 				<title>The Dreaded Monolith</title>
-				<img title="Where you come from…" href="https://upload.wikimedia.org/wikipedia/commons/7/7b/Weltmaschine_gsellmann1.JPG" src="monolith.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Where you come from…" href="https://upload.wikimedia.org/wikipedia/commons/7/7b/Weltmaschine_gsellmann1.JPG" src="monolith.jpg" class="fullsize"/>
 			</slide>
 			<slide id="msa-neat">
 				<title>Microservices: The Starting Point</title>
-				<img title="Where you think you're going…" href="https://static.pexels.com/photos/12598/96917deb7705adcee76b65caf8c652b1.jpg" src="microservices-ideal.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Where you think you're going…" href="https://static.pexels.com/photos/12598/96917deb7705adcee76b65caf8c652b1.jpg" src="microservices-ideal.jpg" class="fullsize"/>
 			</slide>
 			<slide id="msa-messy">
 				<title>Microservices Over Time</title>
-				<img title="By Lachlan Donald from Melbourne, Australia (Sharpest tool in the shed) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AHuge_collection_of_tools_in_a_store_in_Chloride%2C_a_ghost_town_in_New_Mexico%2C_USA_-_July_2013.jpg" src="microservices-reality.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="By Lachlan Donald from Melbourne, Australia (Sharpest tool in the shed) [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3AHuge_collection_of_tools_in_a_store_in_Chloride%2C_a_ghost_town_in_New_Mexico%2C_USA_-_July_2013.jpg" src="microservices-reality.jpg" class="fullsize"/>
 			</slide>
 			<slide id="soapy-discovery">
 				<title>Old School Discovery</title>
@@ -2326,7 +2326,7 @@
 			</slide>
 			<slide id="bimodal-it">
 				<title>Bimodal IT</title>
-				<img title="Bimodal IT office workers" href="https://en.wikipedia.org/wiki/Minions_(film)" src="minions.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Bimodal IT office workers" href="https://en.wikipedia.org/wiki/Minions_(film)" src="minions.jpg" class="fullsize"/>
 			</slide>
 			<slide id="balance">
 				<title>Delicate Balance</title>
@@ -2344,7 +2344,7 @@
 			</slide>
 			<slide id="strangler">
 				<title>Strangling the Monolith</title>
-				<img title="Strangler Vine" href="https://commons.wikimedia.org/wiki/File:Strangler_tree.jpg" src="strangler-vine.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Strangler Vine" href="https://commons.wikimedia.org/wiki/File:Strangler_tree.jpg" src="strangler-vine.jpg" class="fullsize"/>
 			</slide>
 			<slide id="strangling-01">
 				<title>Strangling 1/13: Motivate</title>
@@ -2851,11 +2851,11 @@
 			</slide>
 			<slide>
 				<title>Internet Protocols</title>
-				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="internet-protocols.png" title="Internet Protocol Layers"/>
+				<img class="fullsize" src="internet-protocols.png" title="Internet Protocol Layers"/>
 			</slide>
 			<slide>
 				<title>Network Convergence</title>
-				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="network-convergence.png" title="Convergence in the Protocol Stack"/>
+				<img class="fullsize" src="network-convergence.png" title="Convergence in the Protocol Stack"/>
 			</slide>
 		</part>
 		<part id="network-layers">
@@ -2885,7 +2885,7 @@
 			</slide>
 			<slide id="osi-layers">
 				<title>OSI Layers</title>
-				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="osi-model.png" href="http://commons.wikimedia.org/wiki/File:Osi-model.png"/>
+				<img class="fullsize" src="osi-model.png" href="http://commons.wikimedia.org/wiki/File:Osi-model.png"/>
 			</slide>
 			<slide id="layer1">
 				<title>Layer 1: Physical</title>
@@ -2930,7 +2930,7 @@
 					</ul>
 					<li>TCP establishes <em>process-to-process</em> connectivity and reliable connections</li>
 				</ul>
-				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="tcp-structure.png" href="http://en.wikipedia.org/wiki/Transmission_Control_Protocol"/>
+				<img class="fullsize" src="tcp-structure.png" href="http://en.wikipedia.org/wiki/Transmission_Control_Protocol"/>
 			</slide>
 			<slide id="layer5">
 				<title>Layer 5: Session</title>
@@ -3039,7 +3039,7 @@
 			</slide>
 			<slide>
 				<title>TCP Window</title>
-				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="tcp-window.png"/>
+				<img class="fullsize" src="tcp-window.png"/>
 			</slide>
 		</part>
 		<part id="DNS">
@@ -3286,7 +3286,7 @@ Host: ischool.berkeley.edu</pre>
 			</slide>
 			<slide>
 				<title>HTTP Connection Handling</title>
-				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="http-phttp-pipelining.png"/>
+				<img class="fullsize" src="http-phttp-pipelining.png"/>
 			</slide>
 			<slide>
 				<title>HTTP Access Control</title>
@@ -3306,7 +3306,7 @@ Host: ischool.berkeley.edu</pre>
 			</slide>
 			<slide>
 				<title>HTTP Authentication</title>
-				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="http-authentication.gif" title="HTTP Authentication" href="http://java.sun.com/j2ee/1.4/docs/tutorial/doc/Security5.html"/>
+				<img class="fullsize" src="http-authentication.gif" title="HTTP Authentication" href="http://java.sun.com/j2ee/1.4/docs/tutorial/doc/Security5.html"/>
 			</slide>
 			<slide id="http-basic">
 				<title>Basic HTTP Authentication</title>
@@ -4146,7 +4146,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide>
 				<title>Architecture vs. Design</title>
-				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="rooftop-pool.jpg" title="Nice Design, Expensive Architecture" href="http://www.starwoodhotels.com/luxury/property/overview/index.html?propertyID=3321"/>
+				<img class="fullsize" src="rooftop-pool.jpg" title="Nice Design, Expensive Architecture" href="http://www.starwoodhotels.com/luxury/property/overview/index.html?propertyID=3321"/>
 			</slide>
 			<slide id="architectural-style">
 				<title>Architectural Styles</title>
@@ -4688,15 +4688,15 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide id="client-state">
 				<title>Client State</title>
-				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="web-app-client-state.png" title="State in HTML or HTTP"/>
+				<img class="fullsize" src="web-app-client-state.png" title="State in HTML or HTTP"/>
 			</slide>
 			<slide id="app-server-state">
 				<title>State in the Server Application</title>
-				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="web-app-server-state.png" title="State in the Server Application"/>
+				<img class="fullsize" src="web-app-server-state.png" title="State in the Server Application"/>
 			</slide>
 			<slide id="resource-state">
 				<title>Resource State</title>
-				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="web-app-resource-state.png" title="State as a Resource"/>
+				<img class="fullsize" src="web-app-resource-state.png" title="State as a Resource"/>
 			</slide>
 			<slide>
 				<title>Stateless Shopping</title>
@@ -4724,7 +4724,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide>
 				<title>Reusing Resources</title>
-				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="web-app-reusing-resource.png" title="Reusing Resources"/>
+				<img class="fullsize" src="web-app-reusing-resource.png" title="Reusing Resources"/>
 			</slide>
 		</part>
 		<part id="rest-conclusions">
@@ -4870,11 +4870,11 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide id="triple-graph">
 				<title>Triples as a Graph</title>
-				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="rdf11-primer-example-graph.jpg" title="Informal graph of the sample triples" href="https://www.w3.org/TR/rdf11-primer/#section-triple"/>
+				<img class="fullsize" src="rdf11-primer-example-graph.jpg" title="Informal graph of the sample triples" href="https://www.w3.org/TR/rdf11-primer/#section-triple"/>
 			</slide>
 			<slide id="triple-graph">
 				<title>Triples as a Graph</title>
-				<img style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; " src="rdf11-primer-example-multiple-graphs.jpg" title="Informal graph of the sample dataset" href="https://www.w3.org/TR/rdf11-primer/#section-multiple-graphs"/>
+				<img class="fullsize" src="rdf11-primer-example-multiple-graphs.jpg" title="Informal graph of the sample dataset" href="https://www.w3.org/TR/rdf11-primer/#section-multiple-graphs"/>
 			</slide>
 			<slide id="n-triples-example">
 				<title>N-Triples Example</title>
@@ -4935,11 +4935,11 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide id="five-star-steps">
 				<title>5★ Open Data Steps</title>
-				<img src="5-star-steps.png" title="5★ Open Data" href="http://5stardata.info/" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="5-star-steps.png" title="5★ Open Data" href="http://5stardata.info/" class="fullsize"/>
 			</slide>
 			<slide id="lod-cloud">
 				<title>Linked Open Data Cloud</title>
-				<img src="lod-cloud-2018-04-30.png" title="Linked Open Data Cloud" href="https://lod-cloud.net/" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="lod-cloud-2018-04-30.png" title="Linked Open Data Cloud" href="https://lod-cloud.net/" class="fullsize"/>
 			</slide>
 		</part>
 	</presentation>
@@ -5002,28 +5002,28 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide id="xkcd-standards">
 				<title>How Standards Proliferate</title>
-				<img src="xkcd927.png" title="The nice thing about standards is that there are so many to choose from." href="https://xkcd.com/927/" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="xkcd927.png" title="The nice thing about standards is that there are so many to choose from." href="https://xkcd.com/927/" class="fullsize"/>
 			</slide>
 		</part>
 		<part id="sdos">
 			<title>Standards-Defining Organizations (SDOs)</title>
 			<slide id="ietf">
 				<title><a href="http://ietf.org/">Internet Engineering Task Force (IETF)</a></title>
-				<img title="Internet Engineering Task Force (IETF)" href="http://ietf.org/" src="ietf.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Internet Engineering Task Force (IETF)" href="http://ietf.org/" src="ietf.png" class="fullsize"/>
 			</slide>
 			<slide id="ietf-http">
 				<title>IETF Specification: Hypertext Transfer Protocol (HTTP)</title>
 			</slide>
 			<slide id="w3c">
 				<title><a href="http://www.w3.org/">World Wide Web Consortium (W3C)</a></title>
-				<img title="World Wide Web Consortium (W3C)" href="http://www.w3c.org/" src="w3c.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="World Wide Web Consortium (W3C)" href="http://www.w3c.org/" src="w3c.png" class="fullsize"/>
 			</slide>
 			<slide id="w3c-xml">
 				<title>W3C Specification: Extensible Markup Language (XML)</title>
 			</slide>
 			<slide id="iso">
 				<title><a href="http://www.iso.org/">International Organization for Standardization (ISO)</a></title>
-				<img title="International Organization for Standardization (ISO)" href="http://www.iso.org/" src="iso.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="International Organization for Standardization (ISO)" href="http://www.iso.org/" src="iso.png" class="fullsize"/>
 			</slide>
 			<slide id="iso-lang">
 				<title>ISO Specification: Language Codes</title>
@@ -5050,7 +5050,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide id="iana-registries">
 				<title><a href="http://www.iana.org/" title="Internet Assigned Numbers Authority">IANA</a> <a href="http://www.iana.org/protocols">Protocol Registries</a></title>
-				<img title="Internet Assigned Numbers Authority (IANA) Protocol Registries" href="http://www.iana.org/protocols" src="iana-registries.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Internet Assigned Numbers Authority (IANA) Protocol Registries" href="http://www.iana.org/protocols" src="iana-registries.png" class="fullsize"/>
 			</slide>
 			<slide id="registry-policy">
 				<title>Preventing Value Drift</title>
@@ -5078,11 +5078,11 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>Web Concepts</title>
 			<slide id="food-labels">
 				<title>Food Labels</title>
-				<img title="Food Labels" href="https://www.google.ch/search?q=food+labels&amp;tbm=isch" src="food-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Food Labels" href="https://www.google.ch/search?q=food+labels&amp;tbm=isch" src="food-labels.png" class="fullsize"/>
 			</slide>
 			<slide id="safety-labels">
 				<title>Safety Labels</title>
-				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" class="fullsize"/>
 			</slide>
 			<slide id="specs">
 				<title>Web Concepts: <a href="http://webconcepts.info/specs/">Specifications</a></title>
@@ -5117,7 +5117,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide id="overview">
 				<title>Web Concepts Overview</title>
-				<img src="web-concepts.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="web-concepts.png" class="fullsize"/>
 			</slide>
 			<slide id="spec-series">
 				<title>Specification Series</title>
@@ -5192,7 +5192,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>Success Factors</title>
 			<slide id="key-factors">
 				<title>Key Factors for Success</title>
-				<img title='"Unlocking Success in Digital Transformations", McKinsey, October 2018' href="https://www.mckinsey.com/business-functions/organization/our-insights/unlocking-success-in-digital-transformations" src="success-rate-key-factors.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title='"Unlocking Success in Digital Transformations", McKinsey, October 2018' href="https://www.mckinsey.com/business-functions/organization/our-insights/unlocking-success-in-digital-transformations" src="success-rate-key-factors.png" class="fullsize"/>
 			</slide>
 		</part>
 	</presentation>
@@ -5247,7 +5247,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>Tunnel Style</title>
 			<slide id="tunnel-style-image">
 				<title>One Tunnel to Call them All</title>
-				<img title="Tunnel Style" src="api-styles-tunnel.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Tunnel Style" src="api-styles-tunnel.png" class="fullsize"/>
 			</slide>
 			<slide id="rpc-over-http">
 				<title>Distributed Programming</title>
@@ -5262,7 +5262,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>Resource Style</title>
 			<slide id="resource-style-image">
 				<title>Listing All Resources</title>
-				<img title="Resource Style" src="api-styles-resource.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Resource Style" src="api-styles-resource.png" class="fullsize"/>
 			</slide>
 			<slide id="webby-identifiers">
 				<title>Identifiers for Resources</title>
@@ -5290,7 +5290,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>Hypermedia Style</title>
 			<slide id="hypermedia-style-image">
 				<title>Linking All Resources</title>
-				<img title="Hypermedia Style" src="api-styles-hypermedia.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Hypermedia Style" src="api-styles-hypermedia.png" class="fullsize"/>
 			</slide>
 			<slide id="hypermedia-apis">
 				<title>Hypermedia APIs</title>
@@ -5317,7 +5317,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>Query Style</title>
 			<slide id="query-style-image">
 				<title>Querying into Server-Side Models</title>
-				<img title="Query Style" src="api-styles-query.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Query Style" src="api-styles-query.png" class="fullsize"/>
 			</slide>
 			<slide id="database-style">
 				<title>Querying Structured Data</title>
@@ -5344,7 +5344,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>Event-Based Style</title>
 			<slide id="event-style-image">
 				<title>Event Publish/Subscribe</title>
-				<img title="Event-based Style" src="api-styles-event.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img title="Event-based Style" src="api-styles-event.png" class="fullsize"/>
 			</slide>
 			<slide id="fire-and-forget">
 				<title>Fire and Forget</title>
@@ -5458,7 +5458,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			</slide>
 			<slide id="backend-for-frontend">
 				<title>Backend-for-Frontend Scenario</title>
-				<img src="api-styles-bff.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="api-styles-bff.png" class="fullsize"/>
 			</slide>
 			<slide id="style-implementations">
 				<title>API Styles in the Wild</title>
@@ -5496,7 +5496,7 @@ Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==</pre>
 			<title>Introduction</title>
 			<slide id="dret">
 				<title><code>@dret</code> on Twitter/GitHub</title>
-				<img src="dret.png" title="dret" href="http://twitter.com/dret" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img src="dret.png" title="dret" href="http://twitter.com/dret" class="fullsize"/>
 			</slide>
 			<slide id="catalysts">
 				<title><a href="https://www.axway.com/">Axway</a> <a href="https://www.axway.com/catalysts">Catalysts</a></title>
