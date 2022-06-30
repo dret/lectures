@@ -51,7 +51,7 @@
 	<copyright>2022 Erik Wilde</copyright>
 	<presentation id="five-good-api-practices">
 		<title short="Five Good API Practices">Five Good Practices For Your APIs</title>
-		<toc class="resources"><a title='"The Execution Gap: From API Vision to API Value", May 2022' href="https://www.youtube.com/watch?v=MlrDXdOY_E8">Execution Gap</a>&#160;· <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Stalled Digital Transformation</a>&#160;· <a href="https://www.programmableweb.com/news/programmablewebs-guide-to-modern-api-business-models/analysis/2020/10/26" title='David Berlind, "ProgrammableWeb&apos;s Guide to Modern API Business Models", October 2020'>API Business Models</a></toc>
+		<toc class="resources"><a title='"The Execution Gap: From API Vision to API Value", May 2022' href="https://www.youtube.com/watch?v=MlrDXdOY_E8">Execution Gap</a>&#160;· <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Stalled Digital Transformation</a>&#160;· <a href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild">Collection of Public API Guidelines</a>&#160;· <a href="https://www.programmableweb.com/news/programmablewebs-guide-to-modern-api-business-models/analysis/2020/10/26" title='David Berlind, "ProgrammableWeb&apos;s Guide to Modern API Business Models", October 2020'>API Business Models</a></toc>
 		<part id="five-intro">
 			<title>Introduction</title>
 			<slide id="dret">
@@ -142,8 +142,75 @@
 				<img src="API-management-marketing.png" class="fullsize"/>
 			</slide>
 		</part>
-		<part id="diversity">
-			<title>Landscape Diversity</title>
+		<part id="diversity-decentralization">
+			<title>Diversity &amp; Decentralization</title>
+			<slide id="why-guidelines">
+				<title>API Guidelines as Shared Practices</title>
+				<ul>
+					<li>More API teams mean more ways to solve the same problem</li>
+					<ul>
+						<li>Solving <q>API problems</q> is not what teams should focus on</li>
+						<li>Solving <q>API problems</q> in a consistent way helps the API landscape</li>
+					</ul>
+					<li>Communications across teams is a challenge</li>
+					<ul>
+						<li>Complement channels with documentation of practices</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="anatomy">
+				<title>The Anatomy of a Good Guideline</title>
+				<ul>
+					<li><em>Why</em> does the guideline exist?</li>
+					<ul>
+						<li>Rationale for creating the guideline</li>
+					</ul>
+					<li><em>What</em> can be done to address the described issue</li>
+					<ul>
+						<li>At least one <em>good solution</em> for addressing the issue</li>
+					</ul>
+					<li><em>How</em> to implement the solution</li>
+					<ul>
+						<li>At least one way to use the solution in practice</li>
+					</ul>
+					<li><em>Testing</em> that the guideline has been followed</li>
+					<ul>
+						<li>Some tests can be automated but many will be by declaration or review</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="good-practice">
+				<title>Good is better than Best</title>
+				<ul>
+					<li>Solutions (<q>What</q>) are addressing design challenges</li>
+					<ul>
+						<li>Have a model for accepting new solutions</li>
+					</ul>
+					<li>Practices (<q>How</q>) are implementing a solution</li>
+					<ul>
+						<li>Have a model for accepting new practices</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="management">
+				<title>Good Guideline Management</title>
+				<ul>
+					<li>Guidelines should be managed in a participatory way</li>
+					<ul>
+						<li>Guidelines are for capturing and sharing experiences across API teams</li>
+						<li>Everybody can comment or contribute to the guidelines</li>
+					</ul>
+					<li>Tooling should reflect the goal of <em>shared practices</em></li>
+					<ul>
+						<li>One-way tooling is a bad choice</li>
+						<li>Collaborative tooling is a good choice</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="in-the-wild">
+				<title>API Guidelines in the Wild</title>
+				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" class="fullsize"/>
+			</slide>
 		</part>
 		<part id="business-models">
 			<title>API Business Models</title>
