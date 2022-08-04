@@ -48,9 +48,36 @@
 	<author>Erik Wilde <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 	<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com/">Catalyst</a></affiliation>
 	<date short="2022-xx-xx">xx xx, 2022</date>
-	<copyright>2022 Erik Wilde</copyright>
+	<copyright>2022 Erik Wilde / Bosch</copyright>
 	<presentation id="api-101">
 		<title short="API 101">API 101: Why are APIs useful and what are they?</title>
+		<part id="intro">
+			<title>Introduction</title>
+			<slide id="overview">
+				<title>Overview</title>
+				<p>This course is for everybody who is interested in why the concept of an Application Programming Interface (API) has become popular today. We start by looking at examples, move on to explaining some of the basic concepts and types of APIs, and finally discuss how today's organizations are moving towards APIs.</p>
+			</slide>
+			<slide id="audience">
+				<title>Target Audience</title>
+				<p>The target audience of this course is anybody with an interest in why APIs are useful, what they are used for today, and how they work. This course is not intended for primarily technical audiences, but understanding the general concepts of computers, computer networks, and programming will help to better put the course contents into context.</p>
+			</slide>
+			<slide id="objectives">
+				<title>Learning Objectives</title>
+				<p>Learners will understand why APIs are important for today's economy and organizations. They also understand how APIs work at a high level, and how they are different from prior ways of architecting IT ecosystems. Finally, learners will also have an understanding of the steps necessary for an organization to realize the potential of APIs.</p>
+			</slide>
+		</part>
+		<part id="examples">
+			<title>Examples</title>
+		</part>
+		<part id="why">
+			<title>Why APIs?</title>
+		</part>
+		<part id="how">
+			<title>How do APIs work?</title>
+		</part>
+		<part id="journey">
+			<title>The API Journey</title>
+		</part>
 		<part id="api-101-conclusions">
 			<title>Conclusions</title>
 			<slide id="five-q-and-a">
