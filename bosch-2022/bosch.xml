@@ -51,7 +51,7 @@
 	<copyright>2022 Erik Wilde / Bosch</copyright>
 	<presentation id="api-101">
 		<title short="API 101">API 101: Why are APIs useful and what are they?</title>
-		<part id="intro">
+		<part id="api-101-intro">
 			<title>Introduction</title>
 			<slide id="overview">
 				<title>Overview</title>
@@ -74,19 +74,58 @@
 		</part>
 		<part id="examples">
 			<title>Examples</title>
+			<slide id="integration">
+				<title>Integration</title>
+			</slide>
+			<slide id="automation">
+				<title>Automation</title>
+			</slide>
+			<slide id="reuse">
+				<title>Reuse</title>
+			</slide>
 		</part>
 		<part id="why">
 			<title>Why APIs?</title>
+			<slide id="difference">
+				<title>What's different about APIs?</title>
+			</slide>
+			<slide id="useful">
+				<title>What's a useful API?</title>
+			</slide>
+			<slide id="usable">
+				<title>What's a usable API?</title>
+			</slide>
 		</part>
 		<part id="how">
 			<title>How do APIs work?</title>
+			<slide id="scope">
+				<title>Public, Partner, and Private APIs</title>
+			</slide>
+			<slide id="sync-async">
+				<title>Synchronous vs. Asynchronous</title>
+			</slide>
+			<slide id="rest">
+				<title>APIs and the Web</title>
+			</slide>
+			<slide id="catalogs">
+				<title>API Catalogs</title>
+			</slide>
 		</part>
 		<part id="journey">
 			<title>The API Journey</title>
+			<slide id="vision">
+				<title>From Vision to Strategy to Program to Platform</title>
+			</slide>
+			<slide id="teams">
+				<title>Teams in the API Program</title>
+			</slide>
+			<slide id="kpis">
+				<title>Measure What Matters: KPIs for APIs</title>
+			</slide>
 		</part>
 		<part id="api-101-conclusions">
 			<title>Conclusions</title>
-			<slide id="five-q-and-a">
+			<slide id="api-101-end">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
