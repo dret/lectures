@@ -67,6 +67,16 @@
 		</part>
 		<part id="web-linking">
 			<title>Web Linking (RFC 8288)</title>
+			<slide id="rfc8288">
+				<title>One Model To Link Them All</title>
+				<ul>
+					<li>Linking on the Web started with predefined HTML links</li>
+					<ul>
+						<li>General-purpose links with <code>&lt;a href="…">anchors&lt;/a></code> and page-level <code>&lt;link/></code></li>
+						<li>Special-purpose links (<code>&lt;img/></code>, <code>&lt;form/></code>, …)</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="motivation">
 			<title>Linkset Motivation</title>
