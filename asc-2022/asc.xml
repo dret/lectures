@@ -73,7 +73,12 @@
 					<li>Linking on the Web started with predefined HTML links</li>
 					<ul>
 						<li>General-purpose links with <code>&lt;a href="…">anchors&lt;/a></code> and page-level <code>&lt;link/></code></li>
-						<li>Special-purpose links (<code>&lt;img/></code>, <code>&lt;form/></code>, …)</li>
+						<li>Special-purpose links (<code>&lt;img/></code>, <code>&lt;form/></code>, <code>&lt;blockquote/></code>, …)</li>
+					</ul>
+					<li>Linking on the API Web needs link types and link representations</li>
+					<ul>
+						<li><em>Web Links</em> <a href="https://datatracker.ietf.org/doc/html/rfc8288#section-2">are typed 1:1 connections with optional target attributes</a></li>
+						<li><em>Web Links</em> <a href="https://datatracker.ietf.org/doc/html/rfc8288#section-3">can be represented in a specific HTTP header field</a></li>
 					</ul>
 				</ul>
 			</slide>
