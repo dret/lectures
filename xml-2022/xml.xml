@@ -41,9 +41,9 @@
 					<tr class="vevent">
 						<td valign="top"><span class="title"><hotspot:date/></span></td>
 						<td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
-						<td align="top"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+						<td align="center" valign="top"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
 						<td align="center"><hotspot:toc class="video"/></td>
-						<td align="top"><hotspot:toc class="resources"/></td>
+						<td valign="top"><hotspot:toc class="resources"/></td>
 					</tr>
 				</hotspot:for-each-presentation>
 			</tbody>
