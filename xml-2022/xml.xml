@@ -110,6 +110,25 @@
 	<presentation id="namespaces">
 		<title>XML Namespaces</title>
 		<toc class="resources"><a href="http://www.w3.org/TR/REC-xml-names/" title="W3C XML Namespaces Specification">XML Namespaces Specification</a></toc>
+		<part id="namespaces-motivation">
+			<title>Motivation</title>
+			<slide id="name-spaces">
+				<title>Name Spaces</title>
+				<ul>
+					<li>XML's main concepts (elements/attributes) are using names</li>
+					<li>Names are an important form of identification</li>
+					<li>Names in XML are not suitable for (globally unique) identification</li>
+					<ul>
+						<li>They are local to their context (where they are defined)</li>
+						<li>If the context is uniquely identified, the names would be, too</li>
+					</ul>
+					<li>Name Spaces: <em>Put names into spaces</em></li>
+					<ul>
+						<li>How to identify the name space? Identifiers on the Web are URIs!</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="namespaces-conclusions">
 			<title>Conclusions</title>
 			<slide id="namespaces-end">
