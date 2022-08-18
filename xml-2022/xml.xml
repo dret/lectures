@@ -129,6 +129,44 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="using-namespaces">
+			<title>Using XML Namespaces</title>
+			<slide id="creating-namespaces">
+				<title>Creating Namespaces</title>
+				<ul>
+					<li>It is often assumed that URIs resolve to Web pages</li>
+					<li>A <em>namespace name</em> (a URI) may point to a Web page</li>
+					<li>It may also have no Web page associated with it</li>
+					<li>It is always possible to compare URIs (<q>Do I know this namespace?</q>)</li>
+				</ul>
+			</slide>
+			<slide id="documenting-namespaces">
+				<title>Documenting Namespaces</title>
+				<ul>
+					<li>Users expect namespace descriptions at their URIs</li>
+					<li>Friendly namespaces provide landing pages (<a href="http://www.w3.org/1999/xhtml">XHTML</a> and <a href="http://www.w3.org/1999/XSL/Transform">XSLT</a>)</li>
+					<li>Some namespaces just provide the schema (<a href="http://www.w3.org/2001/12/soap-envelope">SOAP</a>)</li>
+					<li>Unfriendly namespaces may result in HTTP <code>404 Not Found</code></li>
+					<li>These all are correct, because the URI is just an identifier!</li>
+					<li>Use search engines to search for namespace definitions</li>
+				</ul>
+			</slide>
+			<slide id="using-namespace-identifiers">
+				<title>Using Namespace Identifiers</title>
+				<ul>
+					<li>Namespaces must be used by comparing URIs</li>
+					<ul>
+						<li>Everything else is brittle and can break anytime</li>
+						<li>Prefixes have no effect on a name in an XML namespace</li>
+					</ul>
+					<li>Treat prefixes as a representation detail</li>
+					<ul>
+						<li>When <em>parsing XML</em>, ignore prefixes and inspect namespace URIs only</li>
+						<li>When <em>writing XML</em>, try to create prefixes that are commonly used</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="namespaces-conclusions">
 			<title>Conclusions</title>
 			<slide id="namespaces-end">
