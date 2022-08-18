@@ -56,9 +56,18 @@
 		<date short="2022-08-24">August 24, 2022</date>
 		<part id="xml-intro">
 			<title>Introduction</title>
+			<slide id="xml-summary">
+				<title>Understanding XML: Summary</title>
+				<ul>
+					<li><link href="xml-history"/>: Why was XML created?</li>
+					<li><link href="xml-model"/>: How is XML different from structured data?</li>
+					<li><link href="xml-concepts"/>: XML's main concepts for representing data</li>
+					<li><link href="xml-practice"/>: Why XML skills still matter in 2022</li>
+				</ul>
+			</slide>
 			<slide id="xml-overview">
 				<title>Understanding XML: Overview</title>
-				<ul>
+					<ul>
 					<li><link href="xml">XML Foundations: What is XML and how does it work?</link></li>
 					<li><link href="namespaces">XML Namespaces: What are Namespaces and how do they work?</link></li>
 					<li><link href="parsers">XML Parsers: How to process XML in your programming language</link></li>
@@ -68,6 +77,15 @@
 		</part>
 		<part id="xml-history">
 			<title>History</title>
+		</part>
+		<part id="xml-model">
+			<title>XML Documents</title>
+		</part>
+		<part id="xml-concepts">
+			<title>XML Concepts</title>
+		</part>
+		<part id="xml-practice">
+			<title>XML in Practice</title>
 		</part>
 		<part id="xml-conclusions">
 			<title>Conclusions</title>
