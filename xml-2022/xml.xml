@@ -33,6 +33,7 @@
 					<th valign="bottom">Title</th>
 					<th valign="bottom">Slides</th>
 					<th valign="bottom">Video</th>
+					<th valign="bottom">Resources</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -40,8 +41,9 @@
 					<tr class="vevent">
 						<td valign="top"><span class="title"><hotspot:date/></span></td>
 						<td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
-						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
-						<td align="center"><hotspot:toc class="resources"/></td>
+						<td align="top"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+						<td align="center"><hotspot:toc class="video"/></td>
+						<td align="top"><hotspot:toc class="resources"/></td>
 					</tr>
 				</hotspot:for-each-presentation>
 			</tbody>
@@ -53,6 +55,7 @@
 	<copyright>2022 Erik Wilde</copyright>
 	<presentation id="xml">
 		<title short="XML Foundations">Extensible Markup Language (XML) Foundations</title>
+		<toc class="resources"><a href="http://www.w3.org/TR/REC-xml/" title="W3C XML 1.0 Specification">XML 1.0 Specification</a>&#160;· <a href="http://dret.net/netdret/docs/wilde-cacm2008-xml-fever.html" title='Erik Wilde and Robert J. Glushko, "XML Fever", Communications of the ACM, 51(7):40-46, July 2008'>XML&#160;Fever</a></toc>
 		<date short="2022-08-24">August 24, 2022</date>
 		<part id="xml-intro">
 			<title>Introduction</title>
@@ -106,6 +109,7 @@
 	</presentation>
 	<presentation id="namespaces">
 		<title>XML Namespaces</title>
+		<toc class="resources"><a href="http://www.w3.org/TR/REC-xml-names/" title="W3C XML Namespaces Specification">XML Namespaces Specification</a></toc>
 		<part id="namespaces-conclusions">
 			<title>Conclusions</title>
 			<slide id="namespaces-end">
