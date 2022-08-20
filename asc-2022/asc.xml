@@ -94,6 +94,17 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="acknowledgements">
+				<title>Thank you for your support!</title>
+				<img src="thank-you.png" title="Thank You" style="float: right ; height : 60% ; margin : 2% 6% 6% 6% ; "/>
+				<ul>
+					<li>Co-author: <a href="https://twitter.com/hvdsomp">Herbert van de Sompel</a></li>
+					<li>Early adopter: <a href="https://twitter.com/philarcher1">Phil Archer</a> (GS1)</li>
+					<li>Support group: <a href="https://datatracker.ietf.org/wg/httpapi/about/">Building Blocks for HTTP APIs</a> (IETF)</li>
+					<li>Supporting grants: <a href="https://www.standict.eu/">StandICT</a> (EU)</li>
+					<li>Everybody in the <a href="https://www.rfc-editor.org/rfc/rfc9264.html#name-acknowledgements">RFC's <q>Acknowledgements</q> section</a></li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
