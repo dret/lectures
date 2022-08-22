@@ -124,20 +124,26 @@
 		<part id="ecosystems">
 			<title>Ecosystems: From Integration to Interconnection</title>
 		</part>
-		<part id="challenges">
-			<title>API Journey Challenges</title>
-			<slide id="mindset">
-				<title>Changing the Mindset</title>
-			</slide>
-			<slide id="business">
-				<title>Involving the Business</title>
+		<part id="journey">
+			<title>The API Journey</title>
+			<slide id="vision">
+				<title>From Vision to Strategy to Program to Platform</title>
 				<ul>
-					<li>The most valuable APIs are <em>aligned with business capabilities</em></li>
-					<li>Identifying and prioritizing capabilities determines the API ROI</li>
+					<li>The <em>API Vision</em> identifies API as enablers for digitalization</li>
+					<li>The <em>API Strategy</em> tells the story of how to make APIs a reality</li>
+					<li>The <em>API Program</em> makes sure that the strategy is executed</li>
+					<li>The <em>API Platform</em> provides support for creating and using APIs</li>
 				</ul>
 			</slide>
-			<slide id="scaling">
-				<title>Scaling the Practice</title>
+			<slide id="kpis">
+				<title>Measure What Matters: KPIs for APIs</title>
+				<img src="charles-goodhart.jpg" title="Charles Goodhart of Goodhart's Law: &quot;When a measure becomes a target, it ceases to be a good measure.&quot;" href="https://www.youtube.com/watch?v=uKVZ3Zxi1no" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>APIs aren't the goal</li>
+					<li>Success should be measured at the business level</li>
+					<li><em>Low-level metrics</em> are useful for improving operations</li>
+					<li><em>Business-level metrics</em> are useful for measuring success</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
