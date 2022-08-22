@@ -151,13 +151,20 @@
 				</ul>
 			</slide>
 			<slide id="styles-sync">
-				<title>API Styles: Synchronous</title>
+				<title>API Style: Synchronous</title>
+				<img title="Resource Style" src="api-styles-resource.png" class="fullsize"/>
 			</slide>
 			<slide id="styles-async">
-				<title>API Styles Asynchronous (Events)</title>
+				<title>API Style: Asynchronous (Events)</title>
+				<img title="Event-based Style" src="api-styles-event.png" class="fullsize"/>
 			</slide>
 			<slide id="rest">
 				<title>APIs and the Web</title>
+				<li><em>Local APIs</em> have been used since the 1940s</li>
+				<li><q>Network APIs</q> have been used since the 1950s</li>
+				<li><q>Network APIs</q> used to be called <em>Protocols</em></li>
+				<li>Roy Fielding started calling protocols <em>network-based APIs</em></li>
+				<li><em>REST</em> refers to APIs that work based on Web principles and technologies</li>
 			</slide>
 			<slide id="catalogs">
 				<title>API Catalogs</title>
