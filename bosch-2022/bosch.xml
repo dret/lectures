@@ -139,13 +139,13 @@
 		<part id="how">
 			<title>How do APIs work?</title>
 			<slide id="scope">
-				<title>Public, Partner, and Private APIs</title>
+				<title>API Scope</title>
 				<ul>
-					<li>Different APIs for different API users</li>
-					<li><em>Public APIs</em> are intended to be used by <q>anybody</q></li>
+					<li>Different APIs for different API users: What's your API scope?</li>
+					<li><em>Private APIs</em> are intended to be used inside the scope</li>
 					<li><em>Partner APIs</em> are intended to be used by established partners</li>
-					<li><em>Private APIs</em> are intended to be used inside the organization</li>
-					<li>These are not categorically different APIs</li>
+					<li><em>Public APIs</em> are intended to be used by <q>anybody</q></li>
+					<li>API scope and categorization can change</li>
 				</ul>
 			</slide>
 			<slide id="styles">
