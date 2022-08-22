@@ -160,11 +160,13 @@
 			</slide>
 			<slide id="rest">
 				<title>APIs and the Web</title>
-				<li><em>Local APIs</em> have been used since the 1940s</li>
-				<li><q>Network APIs</q> have been used since the 1950s</li>
-				<li><q>Network APIs</q> used to be called <em>Protocols</em></li>
-				<li>Roy Fielding started calling protocols <em>network-based APIs</em></li>
-				<li><em>REST</em> refers to APIs that work based on Web principles and technologies</li>
+				<ul>
+					<li><em>Local APIs</em> have been used since the 1940s</li>
+					<li><q>Network APIs</q> have been used since the 1950s</li>
+					<li><q>Network APIs</q> used to be called <em>Protocols</em></li>
+					<li>Roy Fielding started calling protocols <em>network-based APIs</em></li>
+					<li><em>REST</em> refers to APIs that work based on Web principles and technologies</li>
+				</ul>
 			</slide>
 			<slide id="api-catalog-technical">
 				<title>API Catalogs: Starting Point</title>
