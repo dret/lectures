@@ -132,9 +132,29 @@
 			<title>How do APIs work?</title>
 			<slide id="scope">
 				<title>Public, Partner, and Private APIs</title>
+				<ul>
+					<li>Different APIs for different API users</li>
+					<li><em>Public APIs</em> are intended to be used by <q>anybody</q></li>
+					<li><em>Partner APIs</em> are intended to be used by established partners</li>
+					<li><em>Private APIs</em> are intended to be used inside the organization</li>
+					<li>These are not categorically different APIs</li>
+				</ul>
 			</slide>
-			<slide id="sync-async">
-				<title>Synchronous vs. Asynchronous</title>
+			<slide id="styles">
+				<title>API Styles</title>
+				<ul>
+					<li><em>RPC Style:</em> XML-RPC, SOAP, gRPC, Avro</li>
+					<li><em>Resource Style:</em> OpenAPI/Swagger, RAML, API Blueprint</li>
+					<li><em>Hypermedia Style:</em> HAL, Siren, Atom, HATEOAS</li>
+					<li><em>Query Style:</em> GraphQL, OData, SPARQL</li>
+					<li><em>Event-based Style:</em> MQ, WebSub, MQTT, XMPP, AMQP, Kafka, AsyncAPI</li>
+				</ul>
+			</slide>
+			<slide id="styles-sync">
+				<title>API Styles: Synchronous</title>
+			</slide>
+			<slide id="styles-async">
+				<title>API Styles Asynchronous (Events)</title>
 			</slide>
 			<slide id="rest">
 				<title>APIs and the Web</title>
