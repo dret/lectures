@@ -111,12 +111,20 @@
 				<title>What's a useful API?</title>
 				<ul>
 					<li>Keep in mind: <em>Being useful</em> is more important than <em>being usable</em>!</li>
+					<li>APIs must expose <em>business-aligned capabilities</em></li>
+					<li>APIs must <em>document their business value</em></li>
+					<li>APIs must be easily <em>discoverable</em></li>
+					<li><em>Being useful</em> means to look at an API from a business POV</li>
 				</ul>
 			</slide>
 			<slide id="usable">
 				<title>What's a usable API?</title>
 				<ul>
 					<li>Keep in mind: <em>Being useful</em> is more important than <em>being usable</em>!</li>
+					<li>APIs must be <em>well-designed</em> for ease of understanding and use</li>
+					<li>APIs must be <em>documented</em></li>
+					<li>APIs must be easy to <em>subscribe to</em> and maybe to <em>try out</em></li>
+					<li><em>Being usable</em> means to look at an API from a developer POV</li>
 				</ul>
 			</slide>
 		</part>
