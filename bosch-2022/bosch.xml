@@ -71,6 +71,14 @@
 					<p>Learners will understand why APIs are important for today's economy and organizations. They also understand how APIs work at a high level, and how they are different from prior ways of architecting IT ecosystems. Finally, learners will also have an understanding of the steps necessary for an organization to realize the potential of APIs.</p>
 				</blockquote>
 			</slide>
+			<slide id="humans">
+				<title>Humans Use (Web) Pages</title>
+				<img src="weather-report-human.png" href="https://www.srf.ch/meteo/wetter/Z%C3%BCrich/47.3797,8.5342" class="fullsize"/>
+			</slide>
+			<slide id="machines">
+				<title>Machines Use (Web) APIs</title>
+				<img src="weather-report-machine.png" href="https://api.open-meteo.com/v1/forecast?latitude=47.3797&amp;longitude=8.5342&amp;daily=temperature_2m_max&amp;timezone=CET" class="fullsize"/>
+			</slide>
 		</part>
 		<part id="examples">
 			<title>Examples</title>
