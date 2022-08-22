@@ -166,8 +166,21 @@
 				<li>Roy Fielding started calling protocols <em>network-based APIs</em></li>
 				<li><em>REST</em> refers to APIs that work based on Web principles and technologies</li>
 			</slide>
-			<slide id="catalogs">
-				<title>API Catalogs</title>
+			<slide id="api-catalog-technical">
+				<title>API Catalogs: Starting Point</title>
+				<img src="API-management-technical.png" class="fullsize"/>
+			</slide>
+			<slide id="api-catalog-lifecycle">
+				<title>API Catalogs: Management as a Service</title>
+				<img src="API-management-lifecycle.png" class="fullsize"/>
+			</slide>
+			<slide id="api-catalog-product">
+				<title>API Catalogs: Building a Catalog</title>
+				<img src="API-management-product.png" class="fullsize"/>
+			</slide>
+			<slide id="api-catalog-marketplace">
+				<title>API Catalogs: Building a Marketplace</title>
+				<img src="API-management-marketing.png" class="fullsize"/>
 			</slide>
 		</part>
 		<part id="journey">
