@@ -1,6 +1,6 @@
-# API Products: What it means and why it matters
+# API Fridays 2021
 
-Slides for presentation at API Friday, April 30, 2021.
+Slides for presentation at 2021 API Fridays.
 
 
 ## License
