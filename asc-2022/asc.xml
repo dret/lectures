@@ -65,9 +65,9 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="web-linking">
-			<title>Web Linking (RFC 8288)</title>
-			<slide id="rfc8288">
+		<part id="motivation">
+			<title>Linkset Motivation</title>
+			<slide id="web-linking">
 				<title>One Model To Link Them All</title>
 				<ul>
 					<li>Linking on the Web started with predefined HTML links</li>
@@ -82,9 +82,6 @@
 					</ul>
 				</ul>
 			</slide>
-		</part>
-		<part id="motivation">
-			<title>Linkset Motivation</title>
 			<slide id="linkset-size">
 				<title>Too Many Links</title>
 			</slide>
