@@ -102,6 +102,21 @@
 				<title>Third Party Links</title>
 			</slide>
 		</part>
+		<part id="rfc9264">
+			<title>RFC 9264</title>
+			<slide id="linkset-history">
+				<title>Linkset History</title>
+				<img src="linkset-history.png" href="https://datatracker.ietf.org/doc/draft-ietf-httpapi-linkset/" style="float: left ; width : 90% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Published versions: 23 (12/2016-07/2022)</li>
+					<li>History &amp; collaboration</li>
+					<ul>
+						<li>Datatracker: <code href="https://datatracker.ietf.org/doc/draft-ietf-httpapi-linkset">draft-ietf-httpapi-linkset</code></li>
+						<li>Repo: <code href="https://github.com/ietf-wg-httpapi/linkset">github.com/ietf-wg-httpapi/linkset</code></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="gs1">
 			<title>Example: GS1 Digital Link</title>
 		</part>
