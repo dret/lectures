@@ -172,6 +172,11 @@
 				<title>Product Page for Humans</title>
 				<img src="dal-giardino-html.png" href="https://dalgiardino.com/risotto-rice-with-mushrooms/" class="fullsize" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));"/>
 			</slide>
+			<slide id="product-linkset">
+				<title>Product Linkset for Machines</title>
+				<blockquote><code>$ curl -H "Accept: application/linkset+json" https://id.gs1.org/01/09506000134352</code></blockquote>
+				<listing src="dal-giardino-linkset.json"></listing>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
