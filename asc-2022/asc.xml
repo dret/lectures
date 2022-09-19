@@ -93,6 +93,10 @@
 					<li><a href="https://www.rfc-editor.org/rfc/rfc8288">RFC 8288</a> (formerly <a href="https://www.rfc-editor.org/rfc/rfc5988">RFC 5988</a>) defines the <code href="https://www.rfc-editor.org/rfc/rfc8288#section-3">Link</code> HTTP header field</li>
 				</ul>
 			</slide>
+			<slide id="link-example">
+				<title>Link Example</title>
+				<listing src="link.txt"></listing>
+			</slide>
 			<slide id="linkset-size">
 				<title>Too Many Links</title>
 			</slide>

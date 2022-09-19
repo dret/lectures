@@ -1,0 +1,6 @@
+HTTP/1.1 200 OK
+Date: Mon, 12 Aug 2019 10:35:51 GMT
+Server: Apache-Coyote/1.1
+Content-Length: 1023
+Content-Type: application/json
+Link: <https://authors.example.net/johndoe>; rel="author"; type="application/rdf+xml", <https://example.org/resource1?version=3>; rel="latest-version"; type="text/html", <https://example.org/resource1?version=2>; rel="predecessor-version"; type="text/html"; anchor="https://example.org/resource1?version=3", <https://example.org/resource1?version=1>; rel="predecessor-version"; type="text/html"; anchor="https://example.org/resource1?version=2", <https://example.org/resource1?version=1>; rel="memento"; type="text/html"; datetime="Thu, 13 Jun 2019 09:34:33 GMT", <https://example.org/resource1?version=2>; rel="memento"; type="text/html"; datetime="Sun, 21 Jul 2019 12:22:04 GMT", <https://authors.example.net/alice>; rel="author"; anchor="https://example.org/resource1#comment=1"
