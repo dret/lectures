@@ -1,0 +1,51 @@
+HTTP/1.1 200 OK
+Date: Mon, 12 Aug 2019 10:46:22 GMT
+Server: Apache-Coyote/1.1
+Content-Type: application/linkset+json
+Content-Length: 1246
+
+{ "linkset":
+  [
+    { "anchor": "https://example.org/resource1",
+      "author": [
+        { "href": "https://authors.example.net/johndoe",
+          "type": "application/rdf+xml"
+        }
+      ],
+      "memento": [
+        { "href": "https://example.org/resource1?version=1",
+          "type": "text/html",
+          "datetime": "Thu, 13 Jun 2019 09:34:33 GMT"
+        },
+        { "href": "https://example.org/resource1?version=2",
+          "type": "text/html",
+          "datetime": "Sun, 21 Jul 2019 12:22:04 GMT"
+        }
+      ],
+      "latest-version": [
+        { "href": "https://example.org/resource1?version=3",
+          "type": "text/html"
+        }
+      ]
+    },
+    { "anchor": "https://example.org/resource1?version=3",
+      "predecessor-version": [
+        { "href": "https://example.org/resource1?version=2",
+          "type": "text/html"
+        }
+      ]
+    },
+    { "anchor": "https://example.org/resource1?version=2",
+      "predecessor-version": [
+        { "href": "https://example.org/resource1?version=1",
+          "type": "text/html"
+        }
+      ]
+    },
+    { "anchor": "https://example.org/resource1#comment=1",
+      "author": [
+        { "href": "https://authors.example.net/alice"}
+      ]
+    }
+  ]
+}
