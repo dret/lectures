@@ -140,6 +140,15 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="rfc9264-details">
+				<title>RFC 9264: What's in the Specification?</title>
+				<ul>
+					<li><a href="https://www.rfc-editor.org/rfc/rfc9264#name-http-link-document-format-a">A media type for linksets using HTTP <code>Link</code> syntax</a></li>
+					<li><a href="https://www.rfc-editor.org/rfc/rfc9264#name-json-document-format-applic">A media type for linksets using JSON syntax</a></li>
+					<li><a href="https://www.rfc-editor.org/rfc/rfc9264#name-the-profile-parameter-for-m">A <code>profile</code> media type parameter for both linkset media types</a></li>
+					<li><a href="https://www.rfc-editor.org/rfc/rfc9264#name-the-linkset-relation-type-f">The <code>linkset</code> link relation type for linking to linksets</a></li>
+				</ul>
+			</slide>
 		</part>
 		<part id="gs1">
 			<title>Example: GS1 Digital Link</title>
