@@ -65,7 +65,8 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="http-apis">
+		<part id="linkset-motivation">
+			<title>Linkset Motivation</title>
 			<title>HTTP APIs</title>
 			<slide id="httpapi">
 				<title><a href="https://datatracker.ietf.org/wg/httpapi/about/">Building Blocks for HTTP APIs</a></title>
@@ -76,19 +77,6 @@
 					<li>Established in 2020</li>
 				</ul>
 			</slide>
-			<slide id="web">
-				<title>Linking on the Web</title>
-				<ul>
-					<li>First successful global information system</li>
-					<li>Navigation between resources <em>and</em> services is seamless</li>
-				</ul>
-			</slide>
-			<slide id="hypermedia">
-				<title>Linking in APIs: Not Always Hypermedia</title>
-			</slide>
-		</part>
-		<part id="linkset-motivation">
-			<title>Linkset Motivation</title>
 			<slide id="web-linking">
 				<title>One Model To Link Them All</title>
 				<ul>
