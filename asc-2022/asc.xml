@@ -65,8 +65,16 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="motivation">
-			<title>And thus begins the Web</title>
+		<part id="http-apis">
+			<title>HTTP APIs</title>
+			<slide id="httpapi">
+				<title><a href="https://datatracker.ietf.org/wg/httpapi/about/">Building Blocks for HTTP APIs</a></title>
+				<ul>
+					<li>Complementing the <a href="https://datatracker.ietf.org/wg/http/about/">HTTP</a> working group</li>
+					<li>Focusing on non-browser HTTP scenarios</li>
+					<li>Established in 2020</li>
+				</ul>
+			</slide>
 			<slide id="web">
 				<title>Linking on the Web</title>
 				<ul>
@@ -75,7 +83,7 @@
 				</ul>
 			</slide>
 			<slide id="hypermedia">
-				<title>Linking in APIs: Hypermedia</title>
+				<title>Linking in APIs: Not Always Hypermedia</title>
 			</slide>
 		</part>
 		<part id="linkset-motivation">
