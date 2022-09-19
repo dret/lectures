@@ -158,7 +158,7 @@
 			</slide>
 			<slide id="offline-online">
 				<title>Barcodes are going 2D</title>
-				<img src="dal-giardino-qr.png" href="https://id.dalgiardino.com/01/9506000134352" style=" float: right ; width : 25% ; margin : 3% ; filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6)) ; "/>
+				<img src="dal-giardino-qr.png" href="https://id.dalgiardino.com/01/9506000134352" style=" float: right ; width : 25% ; margin : 0% 5% 5% 5% ; filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6)) ; "/>
 				<ul>
 					<li>Combine offline and online capabilities using URI Templates</li>
 					<li><code href="https://id.dalgiardino.com/01/9506000134352">https://id.dalgiardino.com/01/9506000134352</code></li>
@@ -167,6 +167,10 @@
 						<li>Product identifier (GTIN): <code>9506000134352</code></li>
 					</ul>
 				</ul>
+			</slide>
+			<slide id="product-page">
+				<title>Product Page for Humans</title>
+				<img src="dal-giardino-html.png" href="https://dalgiardino.com/risotto-rice-with-mushrooms/" class="fullsize" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));"/>
 			</slide>
 		</part>
 		<part id="conclusions">
