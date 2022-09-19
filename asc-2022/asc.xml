@@ -107,9 +107,23 @@
 			</slide>
 			<slide id="linkset-size">
 				<title>Too Many Links</title>
+				<ul>
+					<li>Heavily interlinked datasets can result in many outgoing links</li>
+					<li>HTTP header fields are not intended to carry a lot of data</li>
+					<li>Representing all links is more robust as a resource</li>
+				</ul>
 			</slide>
 			<slide id="linkset-origin">
 				<title>Third Party Links</title>
+				<ul>
+					<li>Discovering links can be useful in a variety of ways</li>
+					<ul>
+						<li>As part of a resource as an outbound link</li>
+						<li>As relevant for a resource as an inbound link</li>
+						<li>As an inbound link but provided not as part of the resource</li>
+					</ul>
+					<li>APIs in these scenarios can benefit from linkset representations</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="rfc9264">
