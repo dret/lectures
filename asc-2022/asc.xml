@@ -144,9 +144,21 @@
 				<title>RFC 9264: What's in the Specification?</title>
 				<ul>
 					<li><a href="https://www.rfc-editor.org/rfc/rfc9264#name-http-link-document-format-a"><code>application/linkset</code> media type for linksets using HTTP <code>Link</code> syntax</a></li>
+					<ul>
+						<li>Represent a linkset resource in RFC 8288 syntax</li>
+					</ul>
 					<li><a href="https://www.rfc-editor.org/rfc/rfc9264#name-json-document-format-applic"><code>application/linkset+json</code> media type for linksets using JSON syntax</a></li>
+					<ul>
+						<li>Represent a linkset resource in JSON syntax</li>
+					</ul>
 					<li><a href="https://www.rfc-editor.org/rfc/rfc9264#name-the-profile-parameter-for-m"><code>profile</code> media type parameter for both linkset media types</a></li>
+					<ul>
+						<li>Allow for linksets to be used with profiles (RFC 6906)</li>
+					</ul>
 					<li><a href="https://www.rfc-editor.org/rfc/rfc9264#name-the-linkset-relation-type-f"><code>linkset</code> link relation type for linking to linksets</a></li>
+					<ul>
+						<li>Allow typed links to express the fact that they're identifying a linkset</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
