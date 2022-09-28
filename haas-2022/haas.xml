@@ -24,14 +24,40 @@
 			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
 		</div>
 	</license>
-	<title><a href="http://guide.berkeley.edu/graduate/degree-programs/business-administration-evening-weekend-mba/">Berkeley/Haas EWMBA</a> 290T: Digital Transformation</title>
+	<toc name="toc.html">
+		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
+			<thead>
+				<tr>
+					<th valign="bottom">Date</th>
+					<th valign="bottom">Subject</th>
+					<th valign="bottom">Slides</th>
+					<!--
+					<th valign="bottom">Resources</th>
+-->
+				</tr>
+			</thead>
+			<tbody>
+				<hotspot:for-each-presentation>
+					<tr class="vevent">
+						<td valign="top"><hotspot:date/></td>
+						<td valign="top"><b><span class="summary"><hotspot:title/></span></b></td>
+						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+						<!--
+						<td align="center"><hotspot:toc class="resources"/></td>
+-->
+					</tr>
+				</hotspot:for-each-presentation>
+			</tbody>
+		</table>
+	</toc>
+	<title><a href="https://www.berkeley.edu/">UC Berkeley</a> <a href="https://haas.berkeley.edu/">Haas School of Business</a></title>
 	<author>Erik Wilde <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 	<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com/">Catalysts</a></affiliation>
-	<date short="2022-01-11">January 11, 2022</date>
 	<copyright>2022 Erik Wilde</copyright>
-	<presentation id="index">
+	<presentation id="january">
 		<title>Creating the Composable Enterprise</title>
 		<toc class="abstract">Digital transformation not only requires a specific focus on digital opportunities, it also requires the ability to change and adapt easily. Managing everything as a building block makes every capability easily usable and reusable. In a digital world, building blocks become digital building blocks, and all capabilities of an enterprise should be managed as digital building blocks. While the general idea is well-known and accepted, many organizations struggle with how to put the general idea into action. We look at the value proposition and how it translates into clear requirements for an Application Programming Interface (API) platform. We also look into how to define a strategy and a program so that organizations make progress towards establishing and evolving their API platforms.</toc>
+		<date short="2022-01-11">January 11, 2022</date>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
