@@ -333,11 +333,11 @@
 		<part id="api">
 			<title>What is an API?</title>
 			<slide id="humans">
-				<title>Humans Use (Web) Pages</title>
+				<title>Humans: User Interface (UI)</title>
 				<img src="weather-report-human.png" href="https://www.srf.ch/meteo/wetter/Z%C3%BCrich/47.3797,8.5342" class="fullsize" style="filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6));"/>
 			</slide>
 			<slide id="machines">
-				<title>Machines Use (Web) APIs</title>
+				<title>Machines: Application Programming Interface (API)</title>
 				<img src="weather-report-machine.png" href="https://api.open-meteo.com/v1/forecast?latitude=47.3797&amp;longitude=8.5342&amp;daily=temperature_2m_max&amp;timezone=CET" class="fullsize" style="filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6));"/>
 			</slide>
 		</part>
