@@ -415,6 +415,14 @@
 		</part>
 		<part id="platforms">
 			<title>Myth #3: API Platforms</title>
+			<slide id="platform-types">
+				<title>What is a Platform?</title>
+				<ol>
+					<li>A <em>runtime platform</em> that provides support for <em>running applications</em></li>
+					<li>A <em>service platform</em> for developing decentralized applications</li>
+					<li>A <em>business platform</em> as a specific way to run &amp; scale a business</li>
+				</ol>
+			</slide>
 			<slide id="platform-definition">
 				<title>(One) Platform Definition</title>
 				<blockquote>
