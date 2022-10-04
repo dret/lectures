@@ -340,6 +340,30 @@
 				<title>Machines: Application Programming Interface (API)</title>
 				<img src="weather-report-machine.png" href="https://api.open-meteo.com/v1/forecast?latitude=47.3797&amp;longitude=8.5342&amp;daily=temperature_2m_max&amp;timezone=CET" class="fullsize" style="filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6));"/>
 			</slide>
+			<slide id="integration">
+				<title>Use Case #1: Integration</title>
+				<ul>
+					<li>Many different systems have to be interconnected</li>
+					<li>Traditional integration essentially creates many 1:1 connections</li>
+					<li>API-led integration essentially creates one 1:n connection</li>
+				</ul>
+			</slide>
+			<slide id="automation">
+				<title>Use Case #1: Automation</title>
+				<ul>
+					<li>Being able to automate processes across individual capabilities</li>
+					<li>RPA allows automation but typically is brittle</li>
+					<li>APIs support robust automation across all API-enabled capabilities</li>
+				</ul>
+			</slide>
+			<slide id="reuse">
+				<title>Use Case #1: Reuse</title>
+				<ul>
+					<li>Large organizations run the risk of reinventing the wheel</li>
+					<li>Large organizations run the risk of missing cross-pollination</li>
+					<li>APIs produce value based on usage, so reuse should be a strategic goal</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="tech">
 			<title>Myth #1: APIs are about Technology</title>
