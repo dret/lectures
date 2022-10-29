@@ -77,24 +77,14 @@
 				<img title="API Cargo Cult" src="apis-make-things-happen.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
-		<part id="apim-history">
-			<title>From Security to Productivity</title>
-			<slide id="api-catalog-technical">
-				<title>API Catalogs: Starting Point</title>
-				<img src="API-management-technical.png" class="fullsize" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));"/>
-			</slide>
-			<slide id="api-catalog-lifecycle">
-				<title>API Catalogs: Management as a Service</title>
-				<img src="API-management-lifecycle.png" class="fullsize" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));"/>
-			</slide>
-			<slide id="api-catalog-product">
-				<title>API Catalogs: Building a Catalog</title>
-				<img src="API-management-product.png" class="fullsize" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));"/>
-			</slide>
-			<slide id="api-catalog-marketplace">
-				<title>API Catalogs: Building a Marketplace</title>
-				<img src="API-management-marketing.png" class="fullsize" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));"/>
-			</slide>
+		<part id="production">
+			<title>Production</title>
+		</part>
+		<part id="distribution">
+			<title>Distribution</title>
+		</part>
+		<part id="marketing">
+			<title>Marketing</title>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
