@@ -75,11 +75,11 @@
  -->
 			<slide id="humans">
 				<title>Humans Use (Web) Pages</title>
-				<img src="weather-report-human.png" href="https://www.srf.ch/meteo/wetter/Z%C3%BCrich/47.3797,8.5342" class="fullsize" style="filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6));"/>
+				<img src="weather-report-human.png" href="https://www.srf.ch/meteo/wetter/Z%C3%BCrich/47.3797,8.5342" class="fullsize-shadow"/>
 			</slide>
 			<slide id="machines">
 				<title>Machines Use (Web) APIs</title>
-				<img src="weather-report-machine.png" href="https://api.open-meteo.com/v1/forecast?latitude=47.3797&amp;longitude=8.5342&amp;daily=temperature_2m_max&amp;timezone=CET" class="fullsize" style="filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6));"/>
+				<img src="weather-report-machine.png" href="https://api.open-meteo.com/v1/forecast?latitude=47.3797&amp;longitude=8.5342&amp;daily=temperature_2m_max&amp;timezone=CET" class="fullsize-shadow"/>
 			</slide>
 		</part>
 		<part id="examples">
@@ -131,7 +131,7 @@
 			</slide>
 			<slide id="bezos-mandate">
 				<title>Thou Shalt Exposeth APIs</title>
-				<img title="Bosch Zentralanweisung" src="bosch-zentralanweisung.png" class="fullsize" style="filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6));"/>
+				<img title="Bosch Zentralanweisung" src="bosch-zentralanweisung.png" class="fullsize-shadow"/>
 			</slide>
 			<slide id="useful">
 				<title>What's a useful API?</title>
@@ -178,11 +178,11 @@
 			</slide>
 			<slide id="styles-sync">
 				<title>API Style: Synchronous</title>
-				<img title="Resource Style" src="api-styles-resource.png" class="fullsize" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));"/>
+				<img title="Resource Style" src="api-styles-resource.png" class="fullsize-shadow"/>
 			</slide>
 			<slide id="styles-async">
 				<title>API Style: Asynchronous (Events)</title>
-				<img title="Event-based Style" src="api-styles-event.png" class="fullsize" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));"/>
+				<img title="Event-based Style" src="api-styles-event.png" class="fullsize-shadow"/>
 			</slide>
 			<slide id="rest">
 				<title>APIs and the Web</title>
@@ -196,19 +196,19 @@
 			</slide>
 			<slide id="api-catalog-technical">
 				<title>API Catalogs: Starting Point</title>
-				<img src="API-management-technical.png" class="fullsize" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));"/>
+				<img src="API-management-technical.png" class="fullsize-shadow"/>
 			</slide>
 			<slide id="api-catalog-lifecycle">
 				<title>API Catalogs: Management as a Service</title>
-				<img src="API-management-lifecycle.png" class="fullsize" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));"/>
+				<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
 			</slide>
 			<slide id="api-catalog-product">
 				<title>API Catalogs: Building a Catalog</title>
-				<img src="API-management-product.png" class="fullsize" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));"/>
+				<img src="API-management-product.png" class="fullsize-shadow"/>
 			</slide>
 			<slide id="api-catalog-marketplace">
 				<title>API Catalogs: Building a Marketplace</title>
-				<img src="API-management-marketing.png" class="fullsize" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));"/>
+				<img src="API-management-marketing.png" class="fullsize-shadow"/>
 			</slide>
 		</part>
 		<part id="journey">
@@ -224,7 +224,7 @@
 			</slide>
 			<slide id="community">
 				<title>API Management at Bosch</title>
-				<img src="bosch-apim.png" href="https://bos.ch/apim" title="Bosch API Management Community" class="fullsize" style="filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.6));"/>
+				<img src="bosch-apim.png" href="https://bos.ch/apim" title="Bosch API Management Community" class="fullsize-shadow"/>
 			</slide>
 			<slide id="kpis">
 				<title>Measure What Matters: KPIs for APIs</title>
