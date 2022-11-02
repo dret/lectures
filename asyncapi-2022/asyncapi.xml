@@ -141,6 +141,26 @@
 		</part>
 		<part id="event-mesh">
 			<title>Supporting Event Landscapes</title>
+			<slide id="cqrs">
+				<title>Command Query Responsibility Segregation (CQRS)</title>
+				<ul>
+					<li>Read and write can follow very different approaches</li>
+					<ul>
+						<li><em>Reading</em> may result in data enriched with related data or links</li>
+						<li><em>Writing</em> may be less strict and may use fewer data items</li>
+					</ul>
+					<li>CQRS is a result of looking at read/write as two different services</li>
+					<ul>
+						<li>Can be useful when read and write are typically different applications</li>
+						<li>Can be confusing when it becomes to simply read/modify/update data</li>
+					</ul>
+					<li>CQRS usually means having different models (not just variations)</li>
+					<ul>
+						<li>Different models means that mapping can be non-trivial</li>
+						<li>Different models also can be different API styles</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="eda">
 			<title>EDA: Running on Events</title>
