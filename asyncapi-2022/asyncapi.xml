@@ -90,6 +90,54 @@
 		</part>
 		<part id="event-api">
 			<title>Reversing the Control Flow</title>
+			<slide id="mqtt">
+				<title>Message Queue Telemetry Transport (MQTT)</title>
+				<img src="mqtt-logo.png" href="https://mqtt.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+				<ul>
+					<li>Initiated by IBM and similar in scope to <link href="amqp">AMQP</link></li>
+					<ul>
+						<li>Instead of AMQP's exchanges/queues, MQTT uses the concept of a <em>message broker</em></li>
+						<li>Message brokers handle subscriptions and distribution to interested clients</li>
+					</ul>
+					<li>MQTT specifically targets constrained environments</li>
+					<ul>
+						<li><em>Small code foot print</em> in order to fit onto embedded devices</li>
+						<li><em>Limited network bandwidth</em> to work in constrained networks</li>
+					</ul>
+					<li>Various <em>Quality of Service (QoS)</em> levels allow support for different networks</li>
+					<ul>
+						<li><em>At most once delivery</em> sends once and does not retry</li>
+						<li><em>At least once delivery</em> resends until a confirmation has been received</li>
+						<li><em>Exactly once delivery</em> suppresses duplicates on the receiver side</li>
+					</ul>
+					<li>Mostly, MQTT is used to funnel sensor readings into a collection point</li>
+				</ul>
+			</slide>
+			<slide id="amqp">
+				<title>Advanced Message Queueing Protocol (AMQP)</title>
+				<img src="amqp-logo.jpg" href="https://www.amqp.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+				<ul>
+					<li>Originating in the world of financial institutions</li>
+					<ul>
+						<li>Typical scenarios are stock trading and other high-volume applications</li>
+						<li>Protocols need to be optimized for speed and efficiency</li>
+						<li>The goal is to efficiently route message from <em>producers</em> to <em>consumers</em></li>
+						<li>An attempt to get out of lock-in of proprietary IBM protocols</li>
+					</ul>
+					<li>The basic AMQP model has four entities</li>
+					<ul>
+						<li><em>Producers</em> create messages and then publish them to exchanges</li>
+						<li><em>Exchanges</em> receive messages and then distribute them to queue(s) using bindings</li>
+						<li><em>Queues</em> store messages so that consumers can receive them</li>
+						<li><em>Consumers</em> fetch messages from queues or get them by subscription</li>
+					</ul>
+					<li>AMQP is intended for large-scale but coordinated environments</li>
+					<ul>
+						<li>A good fit for settings where application development is centrally controlled</li>
+						<li>A bad fit for an open and decentralized setting with management of exchanges/queues</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="event-mesh">
 			<title>Supporting Event Landscapes</title>
