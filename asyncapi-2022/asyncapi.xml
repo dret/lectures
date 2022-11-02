@@ -87,13 +87,16 @@
 				<img title="Tell me what you really really want" src="spice-girls-really-really-want.jpg" href="https://www.youtube.com/watch?v=gJLIiF15wjQ" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 			</slide>
 		</part>
-		<part id="events">
+		<part id="event-api">
 			<title>Reversing the Control Flow</title>
 		</part>
 		<part id="event-mesh">
 			<title>Supporting Event Landscapes</title>
 		</part>
-		<part id="event-truth">
+		<part id="eda">
+			<title>EDA: Running on Events</title>
+		</part>
+		<part id="event-sourcing">
 			<title>Events as the Source of Truth</title>
 		</part>
 		<part id="conclusions">
