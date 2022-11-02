@@ -147,6 +147,27 @@
 		</part>
 		<part id="event-sourcing">
 			<title>Events as the Source of Truth</title>
+			<slide id="event-sourcing">
+				<title>Event Sourcing: Events Represent State</title>
+				<ul>
+					<li>Application state is determined by events that have happened</li>
+					<ul>
+						<li>Application state can be re-created by replaying the sequence of events</li>
+						<li>Persisting events becomes essential for representing application state</li>
+					</ul>
+					<li>Useful pattern for designs where auditing/accounting is a key component</li>
+					<ul>
+						<li>Application state is determined <em>as a function of the audit trail</em></li>
+						<li>Auditing/accounting by definition is in sync with application state</li>
+						<li>Temporal reasoning becomes easier</li>
+					</ul>
+					<li><q>Isolation</q> from external events (input/output) becomes essential</li>
+					<ul>
+						<li><em>Event replay</em> may be needed to recreate application state</li>
+						<li><em>Event replay</em> must be prevented from replaying external effects</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
