@@ -116,11 +116,6 @@
 						<li><em>Queues</em> store messages so that consumers can receive them</li>
 						<li><em>Consumers</em> fetch messages from queues or get them by subscription</li>
 					</ul>
-					<li>AMQP is intended for large-scale but coordinated environments</li>
-					<ul>
-						<li>A good fit for settings where application development is centrally controlled</li>
-						<li>A bad fit for an open and decentralized setting with management of exchanges/queues</li>
-					</ul>
 				</ul>
 			</slide>
 			<slide id="mqtt">
