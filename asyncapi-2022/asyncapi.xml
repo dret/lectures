@@ -151,8 +151,13 @@
 				<title>Event Architecture: Managed Queues</title>
 				<img src="event-architecture-queue.png" class="fullsize-shadow"/>
 			</slide>
-			<slide id="event-platform">
-				<title>Platform for Event APIs</title>
+			<slide id="event-support">
+				<title>Support for Event APIs</title>
+				<ul>
+					<li>Supporting developers of individual APIs</li>
+					<li>Producers and consumers have a 1:n relationship</li>
+					<li>Delivering reliable event APIs becomes easier for developers</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="eda">
@@ -160,6 +165,14 @@
 			<slide id="event-architecture-broker">
 				<title>Event Architecture: Event Landscapes</title>
 				<img src="event-architecture-broker.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="event-platform">
+				<title>Platform for Event APIs</title>
+				<ul>
+					<li>Supporting events as first-class citizen on the API platform</li>
+					<li>Producers and consumers have a n:m relationship</li>
+					<li>Managing <q>event discovery</q> becomes more complex</li>
+				</ul>
 			</slide>
 			<slide id="api-context">
 				<title>Never Forget API Context</title>
