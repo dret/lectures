@@ -154,6 +154,30 @@
 			<slide id="event-platform">
 				<title>Platform for Event APIs</title>
 			</slide>
+		</part>
+		<part id="eda">
+			<title>EDA: Running on Events</title>
+			<slide id="event-architecture-broker">
+				<title>Event Architecture: Event Landscapes</title>
+				<img src="event-architecture-broker.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-context">
+				<title>Never Forget API Context</title>
+				<ul>
+					<li><em>Private APIs</em> implies a smaller group of potential consumers</li>
+					<ul>
+						<li>Style and design can be guided by internal guidelines/practices</li>
+					</ul>
+					<li><em>Partner APIs</em> implies a well-known group of consumers</li>
+					<ul>
+						<li>Broader appeal to consumers necessary</li>
+					</ul>
+					<li><em>Public APIs</em> is the most loosely coupled group of consumers</li>
+					<ul>
+						<li>No control over consumers and their preferences/tools and development cycles</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="event-architecture-cqrs">
 				<title>Event Architecture: CQRS</title>
 				<img src="event-architecture-cqrs.png" class="fullsize-shadow"/>
@@ -175,30 +199,6 @@
 					<ul>
 						<li>Different models means that mapping can be non-trivial</li>
 						<li>Different models also can be different API styles</li>
-					</ul>
-				</ul>
-			</slide>
-		</part>
-		<part id="eda">
-			<title>EDA: Running on Events</title>
-			<slide id="event-architecture-broker">
-				<title>Event Architecture: Event Landscapes</title>
-				<img src="event-architecture-broker.png" class="fullsize-shadow"/>
-			</slide>
-			<slide id="api-style-context">
-				<title>API Context</title>
-				<ul>
-					<li><em>Private APIs</em> implies a smaller group of potential consumers</li>
-					<ul>
-						<li>Style and design can be guided by internal guidelines/practices</li>
-					</ul>
-					<li><em>Partner APIs</em> implies a well-known group of consumers</li>
-					<ul>
-						<li>Broader appeal to consumers necessary</li>
-					</ul>
-					<li><em>Public APIs</em> is the most loosely coupled group of consumers</li>
-					<ul>
-						<li>No control over consumers and their preferences/tools and development cycles</li>
 					</ul>
 				</ul>
 			</slide>
