@@ -3,7 +3,7 @@
 ## What are APIs and why do we need them?
 
 - APIs are interfaces for machines
-- [[Bosch]] IoT oder anderes Bosch-relevantes Beispiel
+- [[Bosch: lawn mower using weather API and exposing APIs]] IoT oder anderes Bosch-relevantes Beispiel
 - Weather report example (UI vs. API)
 - Weather report API observations: "Ask a question" style; Based on the Web's foundational protocol; Using a format that's easy to process programmatically
 
@@ -11,7 +11,7 @@
 
 - Digitalisierung (HBR definition)
 - Automatisierung (you have to be able to write code, Bosch Beispiele mit dem Weather API)
-- Platformization (business models based on external partners, [[Bosch]] Gibt es "Platform Business Models" bei Bosch? E-bike?)
+- Platformization (business models based on external partners, [[Bosch]] Gibt es "Platform Business Models" bei Bosch? E-bike? lawn mower? heating systems for maintenance with licensed API access?)
 - [[Bosch]] Bosch Zentralanweisung, CD 07061, ITD 2025, CI API Enablement Initiative
 
 ## What is a (Good) API?
@@ -26,6 +26,7 @@
 - Scopes/context from API 101 Slides
 - Comparison with internal/external (target consumers vs. technical accessibility)
 - Private/Partner/Public (Weather API Example)
+- Managing privacy/visibility
 
 ### System/Process/Experience
 
