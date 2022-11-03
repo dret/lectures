@@ -99,6 +99,10 @@
 		</part>
 		<part id="event-api">
 			<title>Reversing the API Control Flow</title>
+			<slide id="event-architecture-api">
+				<title>Event Architecture: Individual APIs</title>
+				<img src="event-architecture-api.png" class="fullsize-shadow"/>
+			</slide>
 			<slide id="amqp">
 				<title>Advanced Message Queueing Protocol (AMQP)</title>
 				<img src="amqp-logo.jpg" href="https://www.amqp.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
@@ -143,6 +147,10 @@
 		</part>
 		<part id="event-mesh">
 			<title>Supporting Event Landscapes</title>
+			<slide id="event-architecture-queue">
+				<title>Event Architecture: Managed Queues</title>
+				<img src="event-architecture-api.png" class="fullsize-shadow"/>
+			</slide>
 			<slide id="cqrs">
 				<title>Command Query Responsibility Segregation (CQRS)</title>
 				<ul>
@@ -166,9 +174,17 @@
 		</part>
 		<part id="eda">
 			<title>EDA: Running on Events</title>
+			<slide id="event-architecture-broker">
+				<title>Event Architecture: Event Landscapes</title>
+				<img src="event-architecture-broker.png" class="fullsize-shadow"/>
+			</slide>
 		</part>
 		<part id="event-sourcing">
 			<title>Events as the Source of Truth</title>
+			<slide id="event-architecture-sourcing">
+				<title>Event Architecture: Event-Driven State</title>
+				<img src="event-architecture-sourcing.png" class="fullsize-shadow"/>
+			</slide>
 			<slide id="event-sourcing">
 				<title>Event Sourcing: Events Represent State</title>
 				<ul>
