@@ -178,6 +178,23 @@
 				<title>Event Architecture: Event Landscapes</title>
 				<img src="event-architecture-broker.png" class="fullsize-shadow"/>
 			</slide>
+			<slide id="api-style-context">
+				<title>API Context</title>
+				<ul>
+					<li><em>Private APIs</em> implies a smaller group of potential consumers</li>
+					<ul>
+						<li>Style and design can be guided by internal guidelines/practices</li>
+					</ul>
+					<li><em>Partner APIs</em> implies a well-known group of consumers</li>
+					<ul>
+						<li>Broader appeal to consumers necessary</li>
+					</ul>
+					<li><em>Public APIs</em> is the most loosely coupled group of consumers</li>
+					<ul>
+						<li>No control over consumers and their preferences/tools and development cycles</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="event-sourcing">
 			<title>Events as the Source of Truth</title>
