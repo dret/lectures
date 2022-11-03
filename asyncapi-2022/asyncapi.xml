@@ -98,7 +98,7 @@
 			</slide>
 		</part>
 		<part id="event-api">
-			<title>Reversing the Control Flow</title>
+			<title>Reversing the API Control Flow</title>
 			<slide id="amqp">
 				<title>Advanced Message Queueing Protocol (AMQP)</title>
 				<img src="amqp-logo.jpg" href="https://www.amqp.org/" style="float : right ; width : 20% ; margin-top : 0.5em ; margin-right : 2em ; "/>
@@ -108,7 +108,6 @@
 						<li>Typical scenarios are stock trading and other high-volume applications</li>
 						<li>Protocols need to be optimized for speed and efficiency</li>
 						<li>The goal is to efficiently route message from <em>producers</em> to <em>consumers</em></li>
-						<li>An attempt to get out of lock-in of proprietary IBM protocols</li>
 					</ul>
 					<li>The basic AMQP model has four entities</li>
 					<ul>
@@ -144,7 +143,6 @@
 						<li><em>At least once delivery</em> resends until a confirmation has been received</li>
 						<li><em>Exactly once delivery</em> suppresses duplicates on the receiver side</li>
 					</ul>
-					<li>Mostly, MQTT is used to funnel sensor readings into a collection point</li>
 				</ul>
 			</slide>
 		</part>
