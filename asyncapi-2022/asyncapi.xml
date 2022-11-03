@@ -88,6 +88,14 @@
 				<title>Nobody (really) wants APIs</title>
 				<img title="Tell me what you really really want" src="spice-girls-really-really-want.jpg" href="https://www.youtube.com/watch?v=v0z_6pXeimw" class="fullsize-shadow"/>
 			</slide>
+			<slide id="event-spectrum">
+				<title>The Event Spectrum</title>
+				<ul>
+					<li><em>Ephemeral:</em> Temperature sensor reading</li>
+					<li><em>Historical:</em> Sensor status changes</li>
+					<li><em>Essential:</em> Business transactions</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="event-api">
 			<title>Reversing the Control Flow</title>
