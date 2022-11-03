@@ -209,6 +209,15 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="event-hammer">
+				<title>There is no Event Hammer</title>
+				<ul>
+					<li>Event styles can be combined</li>
+					<li>Style coherence makes an API landscape more usable</li>
+					<li>Style fundamentalism may pick the wrong tool for a problem</li>
+					<li>Be aware of styles and pick the one that works best</li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
