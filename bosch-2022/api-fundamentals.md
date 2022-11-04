@@ -27,6 +27,7 @@
 - Comparison with internal/external (target consumers vs. technical accessibility)
 - Private/Partner/Public (Weather API Example)
 - Managing privacy/visibility
+- Enterprise/IT architecture
 
 ### System/Process/Experience
 
@@ -71,3 +72,4 @@
 
 - [[Bosch]] Bosch API Management Platform
 - [[Bosch]] Bosch Tooling
+- [[Bosch]] Processes and onboarding
