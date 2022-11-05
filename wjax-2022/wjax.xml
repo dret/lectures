@@ -72,6 +72,16 @@
 		</part>
 		<part id="tech-to-business">
 			<title>APIs: From Tech to Biz</title>
+			<slide id="api-meaning">
+				<title>APIs are Different Things to Different People</title>
+				<ul>
+					<li><em>Old-school IT:</em> Local application programming interface</li>
+					<li><em>Web-age IT:</em> Networked application programming interface</li>
+					<li><em>IT architect:</em> One of many connector types for software components</li>
+					<li><em>CDO:</em> The foundational glue for digital transformation initiatives</li>
+					<li><em>CEO:</em> An additional way to support or establish value chains</li>
+				</ul>
+			</slide>
 			<slide id="api-cargo-cult">
 				<title>The Wonders of APIs</title>
 				<img title="API Cargo Cult" src="apis-make-things-happen.jpg" class="fullsize-shadow"/>
