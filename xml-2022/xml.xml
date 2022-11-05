@@ -208,6 +208,43 @@
 	</presentation>
 	<presentation id="xpath">
 		<title short="XPath">XML Path Language (XPath)</title>
+		<part id="why-xpath">
+			<title>Why XPath?</title>
+			<slide>
+				<title>Selecting Parts of XML Documents</title>
+				<ul>
+					<li>XML documents are trees represented by markup</li>
+					<ul>
+						<li>Trying to extract information with plain text tools is a bad idea</li>
+					</ul>
+					<li>XML technologies should provide support for working with trees</li>
+					<ul>
+						<li>Programmatic access to the tree should be easy (DOM)</li>
+						<li>Validating trees should be easy (XSD)</li>
+						<li>Mapping trees should be easy (XSLT)</li>
+						<li>Querying tree collections should be easy (XQuery)</li>
+						<li>XPath is what regular expressions are for text-based information</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Making Selection Reusable</title>
+				<ul>
+					<li>Different XML technologies need selection</li>
+					<ul>
+						<li>XSLT needs it for selecting parts and assembling them</li>
+						<li>XSD needs it for applying identity constraints</li>
+						<li>DOM needs it for extracting parts from an XML tree</li>
+						<li>XQuery needs it for working with XML databases</li>
+					</ul>
+					<li>XPath was created to be reusable</li>
+					<ul>
+						<li>XML users only have to learn one selection language</li>
+						<li>Knowledge can be reused when learning new technologies</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="xpath-conclusions">
 			<title>Conclusions</title>
 			<slide id="xpath-end">
