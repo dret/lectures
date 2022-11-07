@@ -43,7 +43,7 @@
 						<td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
 						<td align="center" valign="top"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
 						<td align="center"><hotspot:toc class="video"/></td>
-						<td valign="top"><hotspot:toc class="resources"/></td>
+						<td align="center" valign="top"><hotspot:toc class="resources"/></td>
 					</tr>
 				</hotspot:for-each-presentation>
 			</tbody>
@@ -220,6 +220,7 @@
 	</presentation>
 	<presentation id="xpath">
 		<title short="XPath">XML Path Language (XPath)</title>
+		<toc class="resources"><a href="http://www.w3.org/TR/xpath" title="W3C XPath 1.0 Specification">XPath&#160;1.0&#160;Spec</a>&#160;· <a href="http://www.w3.org/TR/xpath20" title="W3C XPath 2.0 Specification">XPath&#160;2.0&#160;Spec</a></toc>
 		<part id="why-xpath">
 			<title>Why XPath?</title>
 			<slide>
