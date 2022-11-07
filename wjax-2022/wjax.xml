@@ -94,8 +94,15 @@
 				<title>APIs Power Digital Transformation</title>
 				<img title="Enterprise Architecture and API Strategy" src="architecture-api-strategy" class="fullsize"/>
 			</slide>
-			<slide id="api-strategy">
-				<title>A Vision isn't a Strategy isn't a Program</title>
+			<slide id="mind-the-gap">
+				<title>Mind the API Gap</title>
+				<img src="mind-the-gap.png" title="Mind the Gap" style="float: right ; width : 25% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>Most APIs are technical APIs (and that's fine)</li>
+					<li>Business APIs will have the biggest business impact</li>
+					<li>Aligning both perspectives can be tricky</li>
+					<li>API management should embrace both perspectives</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="products">
