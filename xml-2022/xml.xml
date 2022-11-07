@@ -63,8 +63,8 @@
 				<title>Understanding XML</title>
 				<ul>
 					<li><link href="xml">XML Foundations: What is XML and how does it work?</link></li>
-					<li><link href="namespaces">XML Namespaces: What are XML Namespaces and how do they work?</link></li>
-					<li><link href="xpath">XPath: Regular Expressions for XML</link></li>
+					<li><link href="namespaces">XML Namespaces: Combining XML vocabularies</link></li>
+					<li><link href="xpath">XPath: Selecting parts of an XML document</link></li>
 				</ul>
 			</slide>
 		</part>
@@ -86,7 +86,7 @@
 		</part>
 	</presentation>
 	<presentation id="xml">
-		<title short="XML Foundations">Extensible Markup Language (XML) Foundations</title>
+		<title short="XML Foundations">XML Foundations: How to work with XML documents</title>
 		<toc class="resources"><a href="http://www.w3.org/TR/REC-xml/" title="W3C XML 1.0 Specification">XML 1.0 Specification</a></toc>
 		<date short="2022-08-24">August 24, 2022</date>
 		<part id="xml-intro">
@@ -139,7 +139,7 @@
 		</part>
 	</presentation>
 	<presentation id="namespaces">
-		<title>XML Namespaces</title>
+		<title short="XML Namespaces">XML Namespaces: Combining XML Vocabularies</title>
 		<toc class="resources"><a href="http://www.w3.org/TR/REC-xml-names/" title="W3C XML Namespaces Specification">XML Namespaces Specification</a></toc>
 		<part id="namespaces-motivation">
 			<title>Motivation</title>
@@ -219,7 +219,7 @@
 		</part>
 	</presentation>
 	<presentation id="xpath">
-		<title short="XPath">XML Path Language (XPath)</title>
+		<title short="XPath">XPath: Selecting Parts of an XML document</title>
 		<toc class="resources"><a href="http://www.w3.org/TR/xpath" title="W3C XPath 1.0 Specification">XPath&#160;1.0&#160;Spec</a>&#160;· <a href="http://www.w3.org/TR/xpath20" title="W3C XPath 2.0 Specification">XPath&#160;2.0&#160;Spec</a></toc>
 		<part id="why-xpath">
 			<title>Why XPath?</title>
