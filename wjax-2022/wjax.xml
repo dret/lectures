@@ -153,8 +153,15 @@
 				<title>API Guidelines Change Over Time</title>
 				<img title="API Hype Cycle" src="peak-event.png" class="fullsize"/>
 			</slide>
-			<slide id="decentralization">
-				<title>API Decentralization Matters</title>
+			<slide id="landscape-management">
+				<title>API Landscape Management Matters</title>
+				<img src="CAM-cover.jpg" href="https://www.oreilly.com/library/view/continuous-api-management/9781098103514/" title="Continuous API Management, 2nd Edition, October 2021" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>Evolution of API styles</li>
+					<li>Decentralization of API management</li>
+					<li>New consumer groups for specific groups of API</li>
+					<li>Different views of the API landscape</li>
+					</ul>
 			</slide>
 		</part>
 		<part id="consumption">
