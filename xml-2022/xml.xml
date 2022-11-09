@@ -79,9 +79,21 @@
 		</part>
 		<part id="overview-xslt">
 			<title>XSLT Overview</title>
+			<slide>
+				<title>XSLT using XPath</title>
+				<img src="xslt-overview.png" title="XSLT Processing" class="fullsize"/>
+			</slide>
 		</part>
 		<part id="overview-xquery">
 			<title>XQuery Overview</title>
+			<slide>
+				<title>XQuery using XPath</title>
+				<img src="xquery-overview-filesystem.png" title="File-based XQuery Processing" class="fullsize"/>
+			</slide>
+			<slide>
+				<title>XQuery using XPath + Database</title>
+				<img src="xquery-overview-dbms.png" title="DB-based XQuery Processing" class="fullsize"/>
+			</slide>
 		</part>
 		<part id="overview-conclusions">
 			<title>Conclusions</title>
