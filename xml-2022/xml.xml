@@ -54,7 +54,7 @@
 	<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com/">Catalyst</a></affiliation>
 	<copyright>2022 Erik Wilde</copyright>
 	<presentation id="overview">
-		<title short="XML Overview">An Overview of XML, XML Namespaces, and XPath</title>
+		<title short="XML Overview">An Overview of XML Technologies: XML Namespaces, XPath, XSLT, and XQuery</title>
 		<toc class="resources"><a href="http://dret.net/netdret/docs/wilde-cacm2008-xml-fever.html" title='Erik Wilde and Robert J. Glushko, "XML Fever", Communications of the ACM, 51(7):40-46, July 2008'>XML&#160;Fever</a></toc>
 		<date short="2022-08-24">August 24, 2022</date>
 		<part id="overview-intro">
@@ -68,9 +68,24 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="overview-xml">
+			<title>XML Overview</title>
+		</part>
+		<part id="overview-xml-namespaces">
+			<title>XML Namespaces Overview</title>
+		</part>
+		<part id="overview-xpath">
+			<title>XPath Overview</title>
+		</part>
+		<part id="overview-xslt">
+			<title>XSLT Overview</title>
+		</part>
+		<part id="overview-xquery">
+			<title>XQuery Overview</title>
+		</part>
 		<part id="overview-conclusions">
 			<title>Conclusions</title>
-			<slide id="xml-end">
+			<slide id="overview-end">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
