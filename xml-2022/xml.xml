@@ -74,6 +74,12 @@
 		<part id="overview-xml-namespaces">
 			<title>XML Namespaces Overview</title>
 		</part>
+		<part id="overview-dtd">
+			<title>XML Document Type Definition</title>
+		</part>
+		<part id="overview-xsd">
+			<title>XML Schema Definition (XSD)</title>
+		</part>
 		<part id="overview-xpath">
 			<title>XPath Overview</title>
 		</part>
@@ -147,6 +153,15 @@
 		</part>
 		<part id="xml-practice">
 			<title>XML in Practice</title>
+		</part>
+		<part id="xml-schemas">
+			<title>XML Schema Languages</title>
+			<part id="xml-schemas-dtd">
+				<title>XML Document Type Definition (DTD)</title>
+			</part>
+			<part id="xml-schemas-xsd">
+				<title>XML Schema Definition (XSD)</title>
+			</part>
 		</part>
 		<part id="xml-conclusions">
 			<title>Conclusions</title>
