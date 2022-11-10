@@ -153,6 +153,14 @@
 		</part>
 		<part id="xml-practice">
 			<title>XML in Practice</title>
+			<slide>
+				<title>Example: GPS Activity Tracking</title>
+				<img src="central-park-loop.png" href="https://www.strava.com/activities/3130850683" class="fullsize-shadow"/>
+			</slide>
+			<slide>
+				<title>GPS Data in XML</title>
+				<listing src="central-park.gpx"/>
+			</slide>
 		</part>
 		<part id="xml-schemas">
 			<title>XML Schema Languages</title>
