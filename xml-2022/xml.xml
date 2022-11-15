@@ -74,6 +74,12 @@
 		</part>
 		<part id="overview-xml-namespaces">
 			<title>XML Namespaces Overview</title>
+			<slide id="prefix-examples">
+				<title>Identical XML Namespaces</title>
+				<listing src="namespace-prefix-1.xml"/>
+				<listing src="namespace-prefix-2.xml"/>
+				<listing src="namespace-default.xml"/>
+			</slide>
 		</part>
 		<part id="overview-dtd">
 			<title>XML Document Type Definition Overview</title>
