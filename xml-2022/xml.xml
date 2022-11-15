@@ -298,6 +298,15 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="namespaces-xpath">
+				<title>XPath for Finding Namespaces</title>
+				<ul>
+					<li><code>//*</code> for selecting all elements of an XML document</li>
+					<li><code>namespace-uri()</code> returns the namespace name of a node</li>
+					<li><code>distinct-values()</code> returns all distinct values of a sequence</li>
+				</ul>
+				<pre>distinct-values(//*/namespace-uri())</pre>
+			</slide>
 		</part>
 		<part id="namespaces-conclusions">
 			<title>Conclusions</title>
