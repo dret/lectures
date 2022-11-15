@@ -297,7 +297,7 @@
 					</ul>
 					<li>Treat prefixes as a representation detail</li>
 					<ul>
-						<li>When <em>parsing XML</em>, ignore prefixes and inspect namespace URIs only</li>
+						<li>When <em>parsing XML</em>, always use namespace URIs (and not prefixes)</li>
 						<li>When <em>writing XML</em>, try to create prefixes that are commonly used</li>
 					</ul>
 				</ul>
