@@ -74,12 +74,6 @@
 		</part>
 		<part id="overview-xml-namespaces">
 			<title>XML Namespaces Overview</title>
-			<slide id="prefix-examples">
-				<title>Identical XML Namespaces</title>
-				<listing src="namespace-prefix-1.xml"/>
-				<listing src="namespace-prefix-2.xml"/>
-				<listing src="namespace-default.xml"/>
-			</slide>
 		</part>
 		<part id="overview-dtd">
 			<title>XML Document Type Definition Overview</title>
@@ -267,14 +261,20 @@
 		</part>
 		<part id="using-namespaces">
 			<title>Using XML Namespaces</title>
-			<slide id="creating-namespaces">
-				<title>Creating Namespaces</title>
+			<slide id="namespaces-basics">
+				<title>XML Namespaces Basics</title>
 				<ul>
-					<li>It is often assumed that URIs resolve to Web pages</li>
-					<li>A <em>namespace name</em> (a URI) may point to a Web page</li>
-					<li>It may also have no Web page associated with it</li>
-					<li>It is always possible to compare URIs (<q>Do I know this namespace?</q>)</li>
+					<li>XML Namespaces are declared using <code>xmlns</code> attributes</li>
+					<li>Each declaration declares the default namespace or a prefix</li>
+					<li>Declarations work in the usual XML tree-oriented way</li>
+					<li>Names (elements/attributes) use namespaces by using a prefix</li>
 				</ul>
+			</slide>
+			<slide id="prefix-examples">
+				<title>Identical XML Namespaces</title>
+				<listing src="namespace-prefix-1.xml"/>
+				<listing src="namespace-prefix-2.xml"/>
+				<listing src="namespace-default.xml"/>
 			</slide>
 			<slide id="documenting-namespaces">
 				<title>Documenting Namespaces</title>
