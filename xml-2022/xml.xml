@@ -213,8 +213,8 @@
 					<li>Names are an important form of identification</li>
 					<li>Names in XML are not suitable for (globally unique) identification</li>
 					<ul>
-						<li>They are local to their context (where they are defined)</li>
-						<li>If the context is uniquely identified, the names would be, too</li>
+						<li>They are local to where they are used</li>
+						<li>If the context is uniquely identified, so are the names</li>
 					</ul>
 					<li>Name Spaces: <em>Put names into spaces</em></li>
 					<ul>
