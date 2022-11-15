@@ -169,7 +169,7 @@
 			</slide>
 			<slide>
 				<title>GPS Data in XML</title>
-				<listing src="central-park.gpx"/>
+				<listing src="central-park.gpx"  line="2-21"/>
 			</slide>
 		</part>
 		<part id="xml-schemas">
@@ -205,6 +205,10 @@
 			<title>Motivation</title>
 			<slide id="name-meaning">
 				<title>What do XML Names mean?</title>
+			</slide>
+			<slide>
+				<title>GPS Data in XML</title>
+				<listing src="central-park.gpx" line="2-21"/>
 			</slide>
 			<slide id="name-spaces">
 				<title>Name Spaces</title>
