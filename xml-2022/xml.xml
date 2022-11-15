@@ -205,6 +205,12 @@
 			<title>Motivation</title>
 			<slide id="name-meaning">
 				<title>What do XML Names mean?</title>
+				<ul>
+					<li>XML documents use names (elements and attributes)</li>
+					<li>Names are supposed to identify meaningful chunks of data</li>
+					<li>XML schemas (such as DTD or XSD) define allowed elements/attributes</li>
+					<li>XML has been designed to support the combination of schemas</li>
+				</ul>
 			</slide>
 			<slide>
 				<title>GPS Data in XML</title>
