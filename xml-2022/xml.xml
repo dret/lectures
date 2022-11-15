@@ -255,6 +255,15 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="namespaces-are-simple">
+				<title>Simpler Than You Think</title>
+				<ul>
+					<li>XML namespaces put XML names in spaces</li>
+					<li>Each space is identified by a URI</li>
+					<li><q>Understanding</q> a namespace is out of scope</li>
+					<li>XML namespaces identify <q>named buckets of names</q></li>
+				</ul>
+			</slide>
 		</part>
 		<part id="using-namespaces">
 			<title>Using XML Namespaces</title>
