@@ -70,6 +70,45 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="tech-to-business">
+			<title>APIs: From Tech to Biz</title>
+			<slide id="api-meaning">
+				<title>APIs are Different Things to Different People</title>
+				<ul>
+					<li><em>Old-school IT:</em> Local application programming interface</li>
+					<li><em>Web-age IT:</em> Networked application programming interface</li>
+					<li><em>IT architect:</em> One of many connector types for software components</li>
+					<li><em>CDO:</em> The foundational glue for digital transformation</li>
+					<li><em>CEO:</em> An additional way to support or establish value chains</li>
+				</ul>
+			</slide>
+			<slide id="api-cargo-cult">
+				<title>The Wonders of APIs</title>
+				<img title="API Cargo Cult" src="apis-make-things-happen.jpg" class="fullsize-shadow"/>
+			</slide>
+			<slide id="spice-girls-question">
+				<title>Nobody (really) wants APIs</title>
+				<img title="Tell me what you really really want" src="spice-girls-really-really-want.jpg" href="https://www.youtube.com/watch?v=v0z_6pXeimw" class="fullsize-shadow"/>
+			</slide>
+			<slide id="mind-the-gap">
+				<title>Mind the API Gap</title>
+				<img src="mind-the-gap.png" title="Mind the Gap" style="float: right ; width : 25% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>Most APIs are technical APIs (and that's fine)</li>
+					<li>Business APIs will have the biggest business impact</li>
+					<li>Aligning both perspectives needs a holistic strategy</li>
+					<li>API management should embrace both perspectives</li>
+				</ul>
+			</slide>
+			<slide id="api-strategy">
+				<title>Three Simple Tips for a Better API Strategy</title>
+				<ol>
+					<li>Start approaching APIs with a <link href="products">product mindset</link></li>
+					<li><link href="management">Manage APIs</link> as business assets</li>
+					<li>Drive <link href="consumption">API consumption</link> with marketing</li>
+				</ol>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="q-and-a">
