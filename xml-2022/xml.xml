@@ -63,7 +63,7 @@
 				<title>Understanding XML</title>
 				<ul>
 					<li><link href="xml">XML Foundations: What is XML and how does it work?</link></li>
-					<li><link href="namespaces">XML Namespaces: Combining XML vocabularies</link></li>
+					<li><link href="namespaces">XML Namespaces: Identifying XML vocabularies</link></li>
 					<li><link href="xpath">XPath: Selecting parts of an XML document</link></li>
 					<li><link href="xpath-2">XPath 2.0: From location paths to expressions</link></li>
 				</ul>
@@ -199,7 +199,7 @@
 		</part>
 	</presentation>
 	<presentation id="namespaces">
-		<title short="XML Namespaces">XML Namespaces: Combining XML Vocabularies</title>
+		<title short="XML Namespaces">XML Namespaces: Identifying XML Vocabularies</title>
 		<toc class="resources"><a href="http://www.w3.org/TR/REC-xml-names/" title="W3C XML Namespaces Specification">XML&#160;Namespaces&#160;Spec</a></toc>
 		<part id="namespaces-motivation">
 			<title>Motivation</title>
@@ -219,6 +219,29 @@
 					<li>Name Spaces: <em>Put names into spaces</em></li>
 					<ul>
 						<li>How to identify the name space? Identifiers on the Web are URIs!</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>The URI Instinct</title>
+				<ul>
+					<li><em>Namespace names</em> always are URIs</li>
+					<li>People assume that URIs point to Web pages</li>
+					<ul>
+						<li>A namespace name (a URI) may point to a Web page</li>
+						<li>It may also have no Web page associated with it</li>
+					</ul>
+					<li>People expect namespace URIs to provide useful information</li>
+					<ul>
+						<li>Friendly namespaces provide HTML pages (<a href="http://www.w3.org/1999/xhtml">XHTML</a> and <a href="http://www.w3.org/1999/XSL/Transform">XSLT</a>)</li>
+						<li>Some namespaces just give you the schema (<a href="http://www.w3.org/2001/12/soap-envelope">SOAP</a>)</li>
+						<li>Unfriendly namespaces may return a 404 or use inaccessible schemes</li>
+						<li>They all are correct, because <em>all that matters is the namespace name/URI</em></li>
+					</ul>
+					<li>Namespaces are used <em>by comparing URIs</em></li>
+					<ul>
+						<li>Anything else maybe useful, but is not required and unsafe on the Web</li>
+						<li>Search for namespace definitions by searching for the URI</li>
 					</ul>
 				</ul>
 			</slide>
