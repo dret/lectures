@@ -239,14 +239,10 @@
 					<ul>
 						<li>Friendly namespaces provide HTML pages (<a href="http://www.w3.org/1999/xhtml">XHTML</a> and <a href="http://www.w3.org/1999/XSL/Transform">XSLT</a>)</li>
 						<li>Some namespaces just give you the schema (<a href="http://www.w3.org/2001/12/soap-envelope">SOAP</a>)</li>
-						<li>Unfriendly namespaces may return a 404 or use inaccessible schemes</li>
+						<li>Unfriendly namespaces may return 404 or use inaccessible URI schemes</li>
 						<li>They all are correct, because <em>all that matters is the namespace name/URI</em></li>
 					</ul>
-					<li>Namespaces are used <em>by comparing URIs</em></li>
-					<ul>
-						<li>Anything else maybe useful, but is not required and unsafe on the Web</li>
-						<li>Search for namespace definitions by searching for the URI</li>
-					</ul>
+					<li>Namespaces are always used <em>by comparing URIs</em></li>
 				</ul>
 			</slide>
 			<slide id="namespaces-are-simple">
