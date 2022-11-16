@@ -228,7 +228,7 @@
 					<li>XML has been designed to support the combination of schemas</li>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="namespaces-gpx-example">
 				<title>GPS Data in XML</title>
 				<listing src="central-park.gpx" line="2-21"/>
 			</slide>
