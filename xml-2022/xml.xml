@@ -334,8 +334,8 @@
 					<li>Use search engines to search for namespace definitions</li>
 				</ul>
 			</slide>
-			<slide id="using-namespace-identifiers">
-				<title>Using Namespace Identifiers</title>
+			<slide id="using-namespaces">
+				<title>Using Namespaces in Practice</title>
 				<ul>
 					<li>Namespaces must be used by comparing URIs</li>
 					<ul>
@@ -345,7 +345,7 @@
 					<li>Treat prefixes as a representation detail</li>
 					<ul>
 						<li>When <em>parsing XML</em>, always use namespace URIs (and not prefixes)</li>
-						<li>When <em>writing XML</em>, try to create prefixes that are commonly used</li>
+						<li>When <em>writing XML</em>, create prefixes that are commonly used</li>
 					</ul>
 				</ul>
 			</slide>
