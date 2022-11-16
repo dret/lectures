@@ -1,0 +1,4 @@
+<foo:root xmlns="http://example.org/ns1" xmlns:foo="http://example.org/ns2">
+  <bar:element xmlns:bar="http://example.org/ns3">Test</bar:element>
+  <element>Demo</element>
+</foo:root>

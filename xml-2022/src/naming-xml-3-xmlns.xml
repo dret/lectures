@@ -1,0 +1,10 @@
+<product xmlns="http://example.org/product">
+  <name>Product Name</name>
+  <reviews>
+    <review>
+      <customer xmlns="http://example.org/customer">
+        <name>Customer Name</name>
+      </customer>
+    </review>
+  </reviews>
+</product>

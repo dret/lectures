@@ -197,6 +197,28 @@
 		<toc class="resources"><a href="http://www.w3.org/TR/REC-xml-names/" title="W3C XML Namespaces Specification">XML&#160;Namespaces&#160;Spec</a></toc>
 		<part id="namespaces-motivation">
 			<title>Motivation</title>
+			<slide id="problem-1">
+				<title>Problem 1: Across XML Documents</title>
+				<ul>
+					<li>Names in XML documents can conflict across documents</li>
+				</ul>
+				<listing src="naming-xml-1-plain.xml"/>
+				<listing src="naming-xml-2-plain.xml"/>
+				<ul>
+					<li>Namespaces turn local names into globally unique names</li>
+				</ul>
+				<listing src="naming-xml-1-xmlns.xml"/>
+				<listing src="naming-xml-2-xmlns.xml"/>
+			</slide>
+			<slide id="problem-2">
+				<title>Problem 2: Composing XML Documents</title>
+				<ul>
+					<li>How to keep names separate when combining documents</li>
+				</ul>
+				<listing src="naming-xml-1-xmlns.xml"/>
+				<listing src="naming-xml-2-xmlns.xml"/>
+				<listing src="naming-xml-3-xmlns.xml"/>
+			</slide>
 			<slide id="name-meaning">
 				<title>What do XML Names mean?</title>
 				<ul>
@@ -261,13 +283,27 @@
 				<title>XML Namespaces Basics</title>
 				<ul>
 					<li>XML Namespaces are declared using <code>xmlns</code> attributes</li>
+					<li>Each declaration declares the default namespace or a prefix</li>
 					<ul>
 						<li><code>xmlns=""</code> declares the <em>default namespace</em></li>
 						<li><code>xmlns:prefix=""</code> declares <em>namespaces prefixes</em></li>
 					</ul>
-					<li>Each declaration declares the default namespace or a prefix</li>
 					<li>Declarations work in the usual XML tree-oriented way</li>
 					<li>Names (elements/attributes) use namespaces by using a prefix</li>
+				</ul>
+			</slide>
+			<slide id="namespace-example">
+				<title>Example XML Namespace Declarations</title>
+				<listing src="namespace-example.xml"/>
+				<ul>
+					<li>Three namespaces declared by three <code>xmlns</code> attributes</li>
+					<ul>
+						<li>Namespaces can be declared on any element in the document</li>
+					</ul>
+					<li>Three elements from three different namespaces</li>
+					<ul>
+						<li>Having the same <em>local name</em> does not make it the same element</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="prefix-examples">
