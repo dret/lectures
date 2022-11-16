@@ -306,6 +306,7 @@
 				<ul>
 					<li>Three namespaces declared by three <code>xmlns</code> attributes</li>
 					<ul>
+						<li>The default namespace and two prefix-associated namespaces</li>
 						<li>Namespaces can be declared on any element in the document</li>
 					</ul>
 					<li>Three elements from three different namespaces</li>
@@ -316,9 +317,9 @@
 			</slide>
 			<slide id="prefix-examples">
 				<title>Identical XML Namespaces</title>
+				<listing src="namespace-default.xml"/>
 				<listing src="namespace-prefix-1.xml"/>
 				<listing src="namespace-prefix-2.xml"/>
-				<listing src="namespace-default.xml"/>
 			</slide>
 			<slide id="documenting-namespaces">
 				<title>Documenting Namespaces</title>
