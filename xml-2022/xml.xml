@@ -259,10 +259,10 @@
 			<slide>
 				<title>The URI Instinct</title>
 				<ul>
-					<li><em>Namespace names</em> always are URIs</li>
+					<li><em>Namespace names</em> are URIs</li>
 					<li>People assume that URIs point to Web pages</li>
 					<ul>
-						<li>A namespace name (a URI) may point to a Web page</li>
+						<li>A namespace name may point to a Web page</li>
 						<li>It may also have no Web page associated with it</li>
 					</ul>
 					<li>People expect namespace URIs to provide useful information</li>
@@ -281,7 +281,7 @@
 					<li>XML namespaces put XML names in spaces</li>
 					<li>Each space is identified by a URI</li>
 					<li><q>Understanding</q> a namespace is out of scope</li>
-					<li>XML namespaces identify <q>named buckets of names</q></li>
+					<li>Make no assumptions about namespace URIs and all is good</li>
 				</ul>
 			</slide>
 		</part>
