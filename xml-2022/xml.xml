@@ -261,6 +261,10 @@
 				<title>XML Namespaces Basics</title>
 				<ul>
 					<li>XML Namespaces are declared using <code>xmlns</code> attributes</li>
+					<ul>
+						<li><code>xmlns=""</code> declares the <em>default namespace</em></li>
+						<li><code>xmlns:prefix=""</code> declares <em>namespaces prefixes</em></li>
+					</ul>
 					<li>Each declaration declares the default namespace or a prefix</li>
 					<li>Declarations work in the usual XML tree-oriented way</li>
 					<li>Names (elements/attributes) use namespaces by using a prefix</li>
