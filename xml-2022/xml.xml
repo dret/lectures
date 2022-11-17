@@ -352,9 +352,9 @@
 			<slide id="namespaces-xpath">
 				<title>XPath for Finding Namespaces</title>
 				<ul>
-					<li><code>//*</code> for selecting all elements of an XML document</li>
-					<li><code>namespace-uri()</code> returns the namespace name of a node</li>
-					<li><code>distinct-values()</code> returns all distinct values of a sequence</li>
+					<li><code>//*</code> → select all elements of an XML document</li>
+					<li><code>namespace-uri()</code> → return the namespace name of a node</li>
+					<li><code>distinct-values()</code>  →  return all distinct values of a sequence</li>
 				</ul>
 				<pre>distinct-values(//*/namespace-uri())</pre>
 			</slide>
