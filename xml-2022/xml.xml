@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
 <?hotspot layout-path="hotspot/hotspot/layout" ?>
 <?hotspot kilauea-path="hotspot/kilauea" ?>
-<?hotspot layout="catalyst-new" ?>
+<?hotspot layout="youtube" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 	<script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
 	<configuration>
@@ -21,7 +21,7 @@
 	</configuration>
 	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
 		<div class="license">
-			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/catalyst/catalyst/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
 			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
 		</div>
 	</license>
@@ -51,7 +51,6 @@
 	</toc>
 	<title><a href="https://youtube.com/ErikWilde">Getting APIs to Work</a>: Understanding XML</title>
 	<author>Erik Wilde <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
-	<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com/">Catalyst</a></affiliation>
 	<copyright>2022 Erik Wilde</copyright>
 	<presentation id="overview">
 		<title short="XML Overview">An Overview of XML Technologies: XML Namespaces, XPath, XSLT, and XQuery</title>
