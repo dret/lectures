@@ -55,7 +55,6 @@
 	<presentation id="overview">
 		<title short="XML Overview">An Overview of XML Technologies: XML Namespaces, XPath, XSLT, and XQuery</title>
 		<toc class="resources"><a href="http://dret.net/netdret/docs/wilde-cacm2008-xml-fever.html" title='Erik Wilde and Robert J. Glushko, "XML Fever", Communications of the ACM, 51(7):40-46, July 2008'>XML&#160;Fever</a></toc>
-		<date short="2022-08-24">August 24, 2022</date>
 		<part id="overview-intro">
 			<title>Introduction</title>
 			<slide id="overview-understanding">
@@ -124,7 +123,6 @@
 	<presentation id="xml">
 		<title short="XML Foundations">XML Foundations: What is XML and how does it work?</title>
 		<toc class="resources"><a href="http://www.w3.org/TR/REC-xml/" title="W3C XML 1.0 Specification">XML&#160;1.0&#160;Spec</a></toc>
-		<date short="2022-08-24">August 24, 2022</date>
 		<part id="xml-intro">
 			<title>Introduction</title>
 			<slide id="xml-summary">
@@ -193,6 +191,7 @@
 	</presentation>
 	<presentation id="namespaces">
 		<title short="XML Namespaces">XML Namespaces: Identifying XML Vocabularies</title>
+		<date short="2022-12-06">December 6, 2022</date>
 		<toc class="resources"><a href="http://www.w3.org/TR/REC-xml-names/" title="W3C XML Namespaces Specification">XML&#160;Namespaces&#160;Spec</a></toc>
 		<part id="namespaces-motivation">
 			<title>Motivation</title>
