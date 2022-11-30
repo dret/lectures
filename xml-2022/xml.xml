@@ -358,6 +358,26 @@
 				<pre>distinct-values(//*/namespace-uri())</pre>
 			</slide>
 		</part>
+		<part id="namespaces-good-practices">
+			<title>Good Practices</title>
+			<slide id="namespaces-recommendations">
+				<title>Keep it Simple</title>
+				<ul>
+					<li>Declare all prefixes on the document element</li>
+					<li>Only declare prefixes that are used in the document</li>
+					<li>Use <em>speaking names</em> for prefixes</li>
+					<ul>
+						<li>If you create a namespace also define a <q>preferred prefix</q></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="namespaces-anti-patterns">
+				<title>Some Anti-Patterns</title>
+				<!-- Examples are based on http://lists.xml.org/archives/xml-dev/200204/msg00170.html -->
+				<listing src="neurotic.xml"/>
+				<listing src="borderline.xml"/>
+			</slide>
+		</part>
 		<part id="namespaces-conclusions">
 			<title>Conclusions</title>
 			<slide id="xml-needs-namespaces">
