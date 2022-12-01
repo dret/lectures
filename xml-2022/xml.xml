@@ -129,8 +129,14 @@
 			<slide id="xml-rpc-soap">
 				<title>XML-RPC and SOAP</title>
 			</slide>
-			<slide id="xml-model">
-				<title>XML: Documents or Data?</title>
+			<slide id="xml-today">
+				<title>XML Today</title>
+				<ul>
+					<li>OOXML as a format for representing office documents</li>
+					<li>SVG as a format for vector graphics on the Web</li>
+					<li>Still many SOAP APIs in production use</li>
+					<li>Document-oriented workflows such as in publishing</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="xml-concepts">
