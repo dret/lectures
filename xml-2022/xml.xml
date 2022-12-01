@@ -269,7 +269,7 @@
 						<li>Unfriendly namespaces may return 404 or use inaccessible URI schemes</li>
 						<li>They all are correct, because <em>all that matters is the namespace name/URI</em></li>
 					</ul>
-					<li>Namespaces are always used <em>by comparing URIs</em></li>
+					<li>Namespaces are always recognized <em>by comparing URIs</em></li>
 				</ul>
 			</slide>
 			<slide id="namespaces-are-simple">
