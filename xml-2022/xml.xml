@@ -318,19 +318,6 @@
 				<listing src="namespace-prefix-1.xml"/>
 				<listing src="namespace-prefix-2.xml"/>
 			</slide>
-			<slide id="documenting-namespaces">
-				<title>Documenting Namespaces</title>
-				<ul>
-					<li>Users expect namespace description at the namespace URI</li>
-					<ul>
-						<li>Friendly namespaces provide landing pages (<a href="http://www.w3.org/1999/xhtml">XHTML</a> and <a href="http://www.w3.org/1999/XSL/Transform">XSLT</a>)</li>
-						<li>Some namespaces just provide the schema (<a href="http://www.w3.org/2001/12/soap-envelope">SOAP</a>)</li>
-						<li>Unfriendly namespaces may result in HTTP <code>404 Not Found</code></li>
-						<li>These all are correct, because the URI is just an identifier!</li>
-					</ul>
-					<li>Use search engines to search for namespace definitions</li>
-				</ul>
-			</slide>
 			<slide id="namespaces-practice">
 				<title>Using Namespaces in Practice</title>
 				<ul>
