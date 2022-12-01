@@ -192,6 +192,26 @@
 		<title short="XML Namespaces">XML Namespaces: Identifying XML Vocabularies</title>
 		<date short="2022-12-06">December 6, 2022</date>
 		<toc class="resources"><a href="http://www.w3.org/TR/REC-xml-names/" title="W3C XML Namespaces Specification">XML&#160;Namespaces&#160;Spec</a></toc>
+		<part id="namespaces-intro">
+			<title>Introduction</title>
+			<slide id="namespaces-overview">
+				<title>Understanding XML Namespaces</title>
+				<ul>
+					<li><link href="namespaces-motivation">Motivation: What problem do XML Namespaces solve?</link></li>
+					<li><link href="using-namespaces">Using Namespaces: How they work and how to use them</link></li>
+					<li><link href="namespaces-good-practices">Good practices for XML Namespaces</link></li>
+				</ul>
+			</slide>
+			<slide id="overview-understanding">
+				<title>Understanding XML</title>
+				<ul>
+					<li><link href="xml">XML Foundations: What is XML and how does it work?</link></li>
+					<li><link href="namespaces">XML Namespaces: Identifying XML vocabularies</link></li>
+					<li><link href="xpath">XPath: Selecting parts of an XML document</link></li>
+					<li><link href="xpath-2">XPath 2.0: From location paths to expressions</link></li>
+				</ul>
+			</slide>
+		</part>
 		<part id="namespaces-motivation">
 			<title>Motivation</title>
 			<slide id="problem-1">
