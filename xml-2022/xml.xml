@@ -54,18 +54,6 @@
 	<presentation id="overview">
 		<title short="XML Overview">An Overview of XML Technologies: XML Namespaces, XPath, XSLT, and XQuery</title>
 		<toc class="resources"><a href="http://dret.net/netdret/docs/wilde-cacm2008-xml-fever.html" title='Erik Wilde and Robert J. Glushko, "XML Fever", Communications of the ACM, 51(7):40-46, July 2008'>XML&#160;Fever</a></toc>
-		<part id="overview-intro">
-			<title>Introduction</title>
-			<slide id="overview-understanding">
-				<title>Understanding XML</title>
-				<ul>
-					<li><link href="xml">XML Foundations: What is XML and how does it work?</link></li>
-					<li><link href="namespaces">XML Namespaces: Identifying XML vocabularies</link></li>
-					<li><link href="xpath">XPath: Selecting parts of an XML document</link></li>
-					<li><link href="xpath-2">XPath 2.0: From location paths to expressions</link></li>
-				</ul>
-			</slide>
-		</part>
 		<part id="overview-xml">
 			<title>Extensible Markup Language (XML) Overview</title>
 		</part>
@@ -122,26 +110,6 @@
 	<presentation id="xml">
 		<title short="XML Foundations">XML Foundations: What is XML and how does it work?</title>
 		<toc class="resources"><a href="http://www.w3.org/TR/REC-xml/" title="W3C XML 1.0 Specification">XML&#160;1.0&#160;Spec</a></toc>
-		<part id="xml-intro">
-			<title>Introduction</title>
-			<slide id="xml-summary">
-				<title>Understanding XML: Summary</title>
-				<ul>
-					<li><link href="xml-history"/> – Why was XML created?</li>
-					<li><link href="xml-model"/> – How is XML different from structured data?</li>
-					<li><link href="xml-concepts"/> – XML's main concepts for representing data</li>
-					<li><link href="xml-practice"/> – Why XML skills still matter in 2022</li>
-				</ul>
-			</slide>
-			<slide id="xml-understanding">
-				<title>Understanding XML</title>
-				<ul>
-					<li>XML Foundations: What is XML and how does it work?</li>
-					<li><link href="namespaces">XML Namespaces: What are XML Namespaces and how do they work?</link></li>
-					<li><link href="xpath">XPath: Regular Expressions for XML</link></li>
-				</ul>
-			</slide>
-		</part>
 		<part id="xml-history">
 			<title>History</title>
 		</part>
