@@ -136,7 +136,7 @@
 				<img src="central-park-loop.png" href="https://www.strava.com/activities/3130850683" class="fullsize-shadow"/>
 			</slide>
 			<slide>
-				<title>GPS Data in XML</title>
+				<title>GPX: GPS Data in XML</title>
 				<listing src="central-park.gpx"  line="2-21"/>
 			</slide>
 		</part>
@@ -224,7 +224,7 @@
 				</ul>
 			</slide>
 			<slide id="namespaces-gpx-example">
-				<title>GPS Data in XML</title>
+				<title>GPX: GPS Data in XML</title>
 				<listing src="central-park.gpx" line="2-21"/>
 			</slide>
 			<slide id="name-spaces">
