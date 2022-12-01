@@ -115,6 +115,13 @@
 			<title>History</title>
 			<slide id="html-on-steroids">
 				<title>HTML on Steroids</title>
+				<ul>
+					<li>What if browsers could render any structured data?</li>
+					<li>We'd need a way of representing data: <em>XML</em></li>
+					<li>We'd need browser to transform data: <em>XSL Transformations (XSLT)</em></li>
+					<li>We'd need layout structures: <em>XSL Formatting Objects (XSL-FO)</em></li>
+					<li>Nice idea but scripting is more flexible and took over the Web</li>
+				</ul>
 			</slide>
 			<slide id="data-on-the-web">
 				<title>Data Representation on the Web</title>
