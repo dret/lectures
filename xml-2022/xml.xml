@@ -141,6 +141,14 @@
 		</part>
 		<part id="xml-concepts">
 			<title>XML Concepts</title>
+			<slide id="byo-html">
+				<title>XML is BYO HTML</title>
+				<ul>
+					<li>It allows defining custom elements and attributes</li>
+					<li>Its syntax is a bit more strict than HTML (ever heard of XHTML?)</li>
+					<li>There are many layered technologies on top of XML itself</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="xml-practice">
 			<title>XML in Practice</title>
