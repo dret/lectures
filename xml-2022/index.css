@@ -1,5 +1,5 @@
 body { color : #000000 ;
-	background-color : #F8F8FA ;
+	background-color : #F0F0F0 ;
 	margin : 0 ;
 }
 
@@ -21,9 +21,9 @@ a:hover { background-color : #4C4C5E ;
 
 .header a { color : #FFFFFF ; }
 
-.header {  background-color : #4C4C5E ;
-    color : #F8F8FA ;
-    border-bottom :  5px #F24147 solid ;
+.header {  background-color : #404040 ;
+    color : #FFFFFF ;
+    border-bottom :  5px #C00000 solid ;
     padding : 1.5em ;
     margin : 0 ;
     text-align : center ;
