@@ -52,7 +52,7 @@
 	<author>Erik Wilde <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 	<copyright>2022 Erik Wilde</copyright>
 	<presentation id="overview">
-		<title short="XML Overview">An Overview of XML Technologies: XML Namespaces, XPath, XSLT, and XQuery</title>
+		<title short="XML Tech Overview">An Overview of XML Technologies: XML Namespaces, XPath, XSLT, and XQuery</title>
 		<toc class="resources"><a href="http://dret.net/netdret/docs/wilde-cacm2008-xml-fever.html" title='Erik Wilde and Robert J. Glushko, "XML Fever", Communications of the ACM, 51(7):40-46, July 2008'>XML&#160;Fever</a></toc>
 		<part id="overview-xml">
 			<title>Extensible Markup Language (XML) Overview</title>
@@ -108,7 +108,7 @@
 		</part>
 	</presentation>
 	<presentation id="xml">
-		<title>What is the Extensible Markup Language (XML) and how does it work?</title>
+		<title short="XML Foundations">What is the Extensible Markup Language (XML) and how does it work?</title>
 		<toc class="resources"><a href="http://www.w3.org/TR/REC-xml/" title="W3C XML 1.0 Specification">XML&#160;1.0&#160;Spec</a></toc>
 		<date short="2022-12-08">December 8, 2022</date>
 		<part id="xml-history">
