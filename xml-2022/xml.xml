@@ -484,6 +484,39 @@
 		<part id="xpath-predicates">
 			<title>Predicates</title>
 		</part>
+		<part id="beyond-location-paths">
+			<title>Beyond Location Paths</title>
+			<slide id="xpath-expressions">
+				<title>XPath Expressions</title>
+				<ul>
+					<li>XPath is a full expression language</li>
+					<ul>
+						<li>Any evaluated expression in XSLT is an XPath</li>
+						<li>XPath must be able to operate on non-XML data types</li>
+					</ul>
+					<li>XPath has a simple data model</li>
+					<ol>
+						<li>Node set: <code>//trkpt[ele > 30]</code></li>
+						<li>Number: <code>count(//trkpt)</code></li>
+						<li>String: <code>/gpx/trk/name/text()</code></li>
+						<li>Boolean: <code>contains(/gpx/trk/desc/text(), 'Easy')</code></li>
+					</ol>
+				</ul>
+			</slide>
+			<slide id="xpath-1-functions">
+				<title>XParh 1.0 Functions</title>
+				<ul>
+					<li>XPath has a small library of built-in functions</li>
+					<li>XPath functions return results of various data types</li>
+					<ul>
+						<li>Node set: <code>id</code></li>
+						<li>Number: <code>ceiling, count, floor, last, number, position, round, string-length, sum</code></li>
+						<li>String: <code>concat, local-name, name, namespace-uri, normalize-space, string, substring, substring-after, substring-before, translate</code></li>
+						<li>Boolean: <code>boolean, contains, false, lang, not, starts-with, true</code></li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="xpath-conclusions">
 			<title>Conclusions</title>
 			<slide id="xpath-end">
