@@ -480,6 +480,27 @@
 		</part>
 		<part id="xpath-node-tests">
 			<title>Node Tests</title>
+			<slide id="xpath-nodetest">
+				<title>Tests for Nodes</title>
+				<ul>
+					<li>Name tests</li>
+					<ul>
+						<li>Testing for a particular name (elements/attributes): <code>/gpx/trk/name</code></li>
+						<li>Wildcard (matching any name): <code>/gpx/trk/name/*</code></li>
+					</ul>
+					<li>Node type tests</li>
+					<ul>
+						<li>Text nodes: <code>text()</code></li>
+						<li>Comment nodes: <code>comment()</code></li>
+						<li>Any nodes: <code>node()</code></li>
+					</ul>
+					<li>Processing instruction tests</li>
+					<ul>
+						<li>Any PI: <code>processing-instruction()</code></li>
+						<li>Specific PI: <code>processing-instruction("xml-stylesheet")</code></li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="xpath-predicates">
 			<title>Predicates</title>
