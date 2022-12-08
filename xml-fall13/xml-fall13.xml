@@ -1347,7 +1347,7 @@
 					</ul>
 					<li>XPath uses a very simple data model</li>
 					<ol>
-						<li>node sets: <code>//img[not(@alt)]</code></li>
+						<li>node set: <code>//img[not(@alt)]</code></li>
 						<li>number: <code>count(//img)</code></li>
 						<li>string: <code>/descendant::img[3]/@src</code></li>
 						<li>boolean: <code>starts-with(/html/@lang, 'en')</code></li>
