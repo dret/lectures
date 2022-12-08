@@ -119,6 +119,9 @@
 			</slide>
 			<slide id="data-on-the-web">
 				<title>Data Representation on the Web</title>
+				<ul>
+					<li></li>
+				</ul>
 			</slide>
 			<slide id="xml-rpc-soap">
 				<title>XML-RPC and SOAP</title>
@@ -439,6 +442,35 @@
 					<ul>
 						<li>XML users only have to learn one selection language</li>
 						<li>Knowledge can be reused when learning new technologies</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="xpath-how">
+			<title>How XPath Works</title>
+			<slide id="xpath-tree">
+				<title>Working on XML Trees</title>
+				<ul>
+					<li>XPath operates on an <em>abstract XML data model</em></li>
+					<li>An XML document is turned into an <em>XPath node tree</em></li>
+					<li>Some things are <u>not</u> in the XPath tree</li>
+					<ul>
+						<li>The order of attributes in a start tag</li>
+						<li>The types of quotes around attribute values</li>
+						<li>Character references and entities (<code>&amp;#xFC;</code>/<code>&amp;uuml;</code> → <code>ü</code>)</li>
+						<li>Namespace declarations are no longer visible as attributes</li>
+						<li>notations and unexpanded entity references</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="xpath-evaluation">
+				<title>Tree In / Nodes Out</title>
+				<ul>
+					<li>XPath evaluates an expression based on a tree</li>
+					<li>Where the tree comes from is out of XPath's scope</li>
+					<li>The result of the evaluation is a selection</li>
+					<ul>
+						<li><code>//trkpt[ele > 30]</code> → select all track points above elevation 30</li>
 					</ul>
 				</ul>
 			</slide>
