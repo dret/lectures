@@ -501,6 +501,57 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="file-system">
+				<title>File System vs. XPath Paths</title>
+				<table style="margin : 5% ; " width="65%">
+					<tr>
+						<th>File System Path:</th>
+						<td align="center"><code>/</code></td>
+						<td align="center"><code>usr</code></td>
+						<td align="center"><code>/</code></td>
+						<td align="center"><code>local</code></td>
+						<td align="center"><code>/</code></td>
+						<td align="center"><code>bin/</code></td>
+					</tr>
+					<tr>
+						<th># Nodes:</th>
+						<td/>
+						<td align="center">1</td>
+						<td align="center">→</td>
+						<td align="center">1</td>
+						<td align="center">→</td>
+						<td align="center">1</td>
+					</tr>
+				</table>
+				<table style="margin : 5% ; " width="65%">
+					<tr>
+						<th>XPath:</th>
+						<td align="center"><code>/</code></td>
+						<td align="center"><code>gpx</code></td>
+						<td align="center"><code>/</code></td>
+						<td align="center"><code>trk</code></td>
+						<td align="center"><code>/</code></td>
+						<td align="center"><code>trkseg</code></td>
+						<td align="center"><code>/</code></td>
+						<td align="center"><code>trkpt</code></td>
+						<td align="center"><code>/</code></td>
+						<td align="center"><code>*</code></td>
+					</tr>
+					<tr>
+						<th># Nodes:</th>
+						<td/>
+						<td align="center">1</td>
+						<td align="center">→</td>
+						<td align="center">1</td>
+						<td align="center">→</td>
+						<td align="center">1</td>
+						<td align="center">→</td>
+						<td align="center">2930</td>
+						<td align="center">→</td>
+						<td align="center">8790</td>
+					</tr>
+				</table>
+			</slide>
 		</part>
 		<part id="xpath-predicates">
 			<title>Predicates</title>
