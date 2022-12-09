@@ -501,6 +501,17 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="attribute-axis">
+				<title>Attributes are Nodes, Too</title>
+				<ul>
+					<li>Attributes are nodes in the XML tree</li>
+					<li>Attributes are <em>not children of elements</em></li>
+					<li><code>attribute</code> is a special axis that addresses attributes</li>
+					<li><code>@</code> is a convenient shortcut for the attribute axis</li>
+				</ul>
+				<blockquote><code>/child::gpx/attribute::version</code></blockquote>
+				<blockquote><code>/gpx/@version</code></blockquote>
+			</slide>
 			<slide>
 				<title>All XPath Axes</title>
 				<img src="xpath-axes.png" title="XPath Axes Overview" class="fullsize"/>
