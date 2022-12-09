@@ -594,6 +594,24 @@
 		</part>
 		<part id="xpath-predicates">
 			<title>Predicates</title>
+			<slide id="filters">
+				<title>Location Step Filters</title>
+				<ul>
+					<li>Predicates are filters for each location step</li>
+					<ul>
+						<li>There can be any number of predicates</li>
+						<li>Each predicate is applied to each selected node individually</li>
+					</ul>
+					<li>Predicates usually reduce the set of selected nodes</li>
+					<li>Each predicate is an XPath and evaluated as a boolean</li>
+					<ul>
+						<li>The context of this evaluation is the selected node</li>
+						<li>If the result is a number, it is compared with the <code>position()</code> function</li>
+					</ul>
+				</ul>
+				<blockquote><code>//trkpt[position() = 10]</code></blockquote>
+				<blockquote><code>//trkpt[10]</code></blockquote>
+			</slide>
 		</part>
 		<part id="beyond-location-paths">
 			<title>Beyond Location Paths</title>
