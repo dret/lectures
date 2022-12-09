@@ -619,7 +619,7 @@
 					<li>For each location step, repeat the following steps:</li>
 					<li>Based on the context and the axis, select the nodes on this axis</li>
 					<li>Reduce this selection to nodes matching the node test</li>
-					<li>Sequentially apply all predicated to these nodes</li>
+					<li>Sequentially apply all predicates to these nodes</li>
 					<li>Take the remaining node set as the context for the next location step</li>
 				</ol>
 			</slide>
