@@ -433,8 +433,8 @@
 				<ul>
 					<li>Different XML technologies need selection</li>
 					<ul>
-						<li>XSLT needs it for selecting parts and assembling them</li>
-						<li>XSD needs it for applying identity constraints</li>
+						<li>XSLT needs it for selecting input data</li>
+						<li>XML Schema needs it for identity constraints</li>
 						<li>DOM needs it for extracting parts from an XML tree</li>
 						<li>XQuery needs it for working with XML databases</li>
 					</ul>
@@ -503,27 +503,7 @@
 			</slide>
 			<slide id="file-system">
 				<title>File System vs. XPath Paths</title>
-				<table style="margin : 5% ; " width="65%">
-					<tr>
-						<th>File System Path:</th>
-						<td align="center"><code>/</code></td>
-						<td align="center"><code>usr</code></td>
-						<td align="center"><code>/</code></td>
-						<td align="center"><code>local</code></td>
-						<td align="center"><code>/</code></td>
-						<td align="center"><code>bin/</code></td>
-					</tr>
-					<tr>
-						<th># Nodes:</th>
-						<td/>
-						<td align="center">1</td>
-						<td align="center">→</td>
-						<td align="center">1</td>
-						<td align="center">→</td>
-						<td align="center">1</td>
-					</tr>
-				</table>
-				<table style="margin : 5% ; " width="65%">
+				<table style="margin : 5% ; " width="60%">
 					<tr>
 						<th>XPath:</th>
 						<td align="center"><code>/</code></td>
@@ -549,6 +529,26 @@
 						<td align="center">2930</td>
 						<td align="center">→</td>
 						<td align="center">8790</td>
+					</tr>
+				</table>
+				<table style="margin : 5% ; " width="50%">
+					<tr>
+						<th>File System Path:</th>
+						<td align="center"><code>/</code></td>
+						<td align="center"><code>usr</code></td>
+						<td align="center"><code>/</code></td>
+						<td align="center"><code>local</code></td>
+						<td align="center"><code>/</code></td>
+						<td align="center"><code>bin</code></td>
+					</tr>
+					<tr>
+						<th># Nodes:</th>
+						<td/>
+						<td align="center">1</td>
+						<td align="center">→</td>
+						<td align="center">1</td>
+						<td align="center">→</td>
+						<td align="center">1</td>
 					</tr>
 				</table>
 			</slide>
