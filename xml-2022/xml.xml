@@ -485,6 +485,26 @@
 		</part>
 		<part id="xpath-axes">
 			<title>Axes</title>
+			<slide id="axes-intro">
+				<title>Where Do You Want to Go Today?</title>
+				<ul>
+					<li>File system paths are one direction only</li>
+					<ul>
+						<li>Always one level down in the file system hierarchy</li>
+						<li><code>.</code> and <code>..</code> are clever directory shortcuts</li>
+						<li>Other directions supported by tools (e.g., <code>find</code>)</li>
+					</ul>
+					<li>XPath allows steps is different directions</li>
+					<ul>
+						<li>The default direction is <code>child</code></li>
+						<li>Other directions must be explicitly specified: <code>descendant::a</code></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>All XPath Axes</title>
+				<img src="xpath-axes.png" title="XPath Axes Overview" class="fullsize"/>
+			</slide>
 		</part>
 		<part id="xpath-node-tests">
 			<title>Node Tests</title>
