@@ -463,6 +463,14 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="xpath-example-xml-document">
+				<title>Example XML Document (GPS Data in GPX)</title>
+				<listing src="central-park.gpx"  line="2-21"/>
+			</slide>
+			<slide id="xpath-example-xml-tree">
+				<title>XML is Trees</title>
+				<img src="gpx-xml-tree.png" title="GPX XML Document as Tree" class="fullsize"/>
+			</slide>
 			<slide id="xpath-evaluation">
 				<title>Tree In / Nodes Out</title>
 				<ul>
