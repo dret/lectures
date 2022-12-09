@@ -1307,7 +1307,7 @@
 							<li>there can be any number of filters (<em>0-n</em>)</li>
 							<li>each filter is applied to each selected node individually</li>
 						</ul>
-						<li>Each predicate is an XPath and evaluated as a boolean</li>					
+						<li>Each predicate is an XPath and evaluated as a boolean</li>
 						<ul>
 							<li>the context of this evaluation is the node for which the filter is evaluated</li>
 							<li>if the result is a number, it is compared with the <code>position()</code> function (<code>/descendant::a[5]</code>)</li>
