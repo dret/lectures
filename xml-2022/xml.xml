@@ -501,8 +501,12 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide>
+				<title>All XPath Axes</title>
+				<img src="xpath-axes.png" title="XPath Axes Overview" class="fullsize"/>
+			</slide>
 			<slide id="attribute-axis">
-				<title>Attributes are Nodes, Too</title>
+				<title>Attribute are Nodes, too</title>
 				<ul>
 					<li>Attributes are nodes in the XML tree</li>
 					<li>Attributes are <em>not children of elements</em></li>
@@ -512,9 +516,15 @@
 				<blockquote><code>/child::gpx/attribute::version</code></blockquote>
 				<blockquote><code>/gpx/@version</code></blockquote>
 			</slide>
-			<slide>
-				<title>All XPath Axes</title>
-				<img src="xpath-axes.png" title="XPath Axes Overview" class="fullsize"/>
+			<slide id="abbreviations">
+				<title>Abbreviations</title>
+				<ul>
+					<li><code>.</code> is short for <code>self::node()</code></li>
+					<li><code>..</code> is short for <code>parent::node()</code></li>
+					<li><code>//</code> is short for <code>/descendant-or-self::node()/</code></li>
+				</ul>
+				<blockquote><code>.//para</code></blockquote>
+				<blockquote><code>self::node()/descendant-or-self::node()/child::para</code></blockquote>
 			</slide>
 		</part>
 		<part id="xpath-node-tests">
