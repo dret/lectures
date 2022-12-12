@@ -203,7 +203,7 @@
 				<ul>
 					<li><link href="xml">XML Foundations: What is XML and how does it work?</link></li>
 					<li><link href="namespaces">XML Namespaces: Identifying XML vocabularies</link></li>
-					<li><link href="xpath">XPath: Selecting parts of an XML document</link></li>
+					<li><link href="xpath">XPath: Selecting data in XML documents</link></li>
 					<li><link href="xpath-2">XPath 2.0: From location paths to expressions</link></li>
 				</ul>
 			</slide>
@@ -406,13 +406,13 @@
 		</part>
 	</presentation>
 	<presentation id="xpath">
-		<title short="XPath">XPath: Selecting Parts of an XML document</title>
+		<title short="XPath">XPath: Selecting Data in XML documents</title>
 		<date short="2022-12-13">December 13, 2022</date>
 		<toc class="resources"><a href="http://www.w3.org/TR/xpath" title="W3C XPath 1.0 Specification">XPath&#160;1.0&#160;Spec</a></toc>
 		<part id="why-xpath">
 			<title>Why XPath?</title>
 			<slide>
-				<title>Selecting Parts of XML Documents</title>
+				<title>Selecting Data in XML Documents</title>
 				<ul>
 					<li>XML documents are trees represented by markup</li>
 					<ul>
