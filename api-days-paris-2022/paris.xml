@@ -44,8 +44,149 @@
 				</div>
 			</div>
 		</slide>
+		<part id="tech-to-business">
+			<title>APIs: From Tech to Biz</title>
+			<slide id="api-meaning">
+				<title>APIs are Different Things to Different People</title>
+				<ul>
+					<li><em>Old-school IT:</em> Local application programming interface</li>
+					<li><em>Web-age IT:</em> Networked application programming interface</li>
+					<li><em>IT architect:</em> One of many connector types for software components</li>
+					<li><em>CDO:</em> The foundational glue for digital transformation</li>
+					<li><em>CEO:</em> An additional way to support or establish value chains</li>
+				</ul>
+			</slide>
+			<slide id="api-cargo-cult">
+				<title>The Wonders of APIs</title>
+				<img title="API Cargo Cult" src="apis-make-things-happen.jpg" class="fullsize-shadow"/>
+			</slide>
+			<slide id="spice-girls-question">
+				<title>Nobody (really) wants APIs</title>
+				<img title="Tell me what you really really want" src="spice-girls-really-really-want.jpg" href="https://www.youtube.com/watch?v=v0z_6pXeimw" class="fullsize-shadow"/>
+			</slide>
+			<slide id="mind-the-gap">
+				<title>Mind the API Gap</title>
+				<img src="mind-the-gap.png" title="Mind the Gap" style="float: right ; width : 25% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>Most APIs are technical APIs (and that's fine)</li>
+					<li>Business APIs will have the biggest business impact</li>
+					<li>Aligning both perspectives needs a holistic strategy</li>
+					<li>API management should embrace both perspectives</li>
+				</ul>
+			</slide>
+			<slide id="api-strategy">
+				<title>Three Simple Tips for a Better API Strategy</title>
+				<ol>
+					<li>Start approaching APIs with a <link href="products">product mindset</link></li>
+					<li><link href="management">Manage APIs</link> as business assets</li>
+					<li>Drive <link href="consumption">API consumption</link> with marketing</li>
+				</ol>
+			</slide>
+		</part>
+		<part id="products">
+			<title>Products</title>
+			<slide id="product-definition">
+				<title>What is a Product?</title>
+				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="good-api">
+				<title>What is a Good API (Product)?</title>
+				<img src="coffee-capsules.png" title="Coffee Capsules" style=" float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
+				<ol>
+					<li>It's well-designed</li>
+					<li>It's designed with consumers in mind</li>
+					<li>It's designed to be used by many consumers</li>
+					<li>It's following a product lifecycle</li>
+					<li>It's easily findable and consumable</li>
+					<li>It's marketed with the target audience in mind</li>
+				</ol>
+			</slide>
+			<slide id="dx-overrated-dx">
+				<title>All You Need is DX?</title>
+				<img title="Developer Experience" src="developer-experience-dx.png" class="fullsize" />
+			</slide>
+			<slide id="dx-overrated-ux">
+				<title>What's in it for the Users?</title>
+				<img title="User Experience" src="developer-experience-ux.png" class="fullsize" />
+			</slide>
+			<slide id="dx-overrated-vx">
+				<title>What's in it for the Organization?</title>
+				<img title="Value Exchange" src="developer-experience-vx.png" class="fullsize" />
+			</slide>
+		</part>
+		<part id="management">
+			<title>Management</title>
+			<slide id="management-goals">
+				<title>API Management Goals</title>
+				<ul>
+					<li>Simplify API production</li>
+					<li>Unify APIs across the organizational landscape</li>
+					<li>Make APIs easier to find and consume</li>
+				</ul>
+			</slide>
+			<slide id="guidelines">
+				<title>Automating API Guidelines</title>
+				<img href="https://meta.stoplight.io/docs/spectral/d373afba57903-open-api-support" title="Spectral built-in OpenAPI specification ruleset" src="spectral-openapi-license-rules.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="guideline-evolution">
+				<title>API Guidelines Change Over Time</title>
+				<img title="API Hype Cycle" src="peak-event.png" class="fullsize"/>
+			</slide>
+			<slide id="landscape-management">
+				<title>API Landscape Management Matters</title>
+				<img src="CAM2-cover.png" href="https://www.oreilly.com/library/view/continuous-api-management/9781098103514/" title="Continuous API Management, 2nd Edition, October 2021" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>Evolution of API styles</li>
+					<li>Decentralization of API management</li>
+					<li>New consumer groups for specific groups of API</li>
+					<li>Different views of the API landscape</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="consumption">
+			<title>Consumption</title>
+			<slide id="product-vs-solution">
+				<title>Products Need Marketing</title>
+				<ul>
+					<li><q>Traditional 1:1 integration</q> creates one solution for each problem</li>
+					<li><q>API 1:n interconnection</q> creates a product intended for a market</li>
+					<li>Products drive value <em>only when they are being consumed</em></li>
+					<li>The main drivers for your business are excellent API product candidates</li>
+					<ul>
+						<li><em>Ordering</em> should be open so that partners or 3rd party apps can create orders</li>
+						<li><em>Delivery</em> should be flexible so that new delivery options are easy to add</li>
+						<li><em>Invoicing</em> should be flexible so that new payment methods are easy to add</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="marketing-definition">
+				<title>What is Marketing?</title>
+				<img href="https://www.merriam-webster.com/dictionary/marketing" title="Merriam Webster: Marketing" src="marketing-merriam-webster.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="api-marketplace">
+				<title>What is an API Marketplace?</title>
+				<img href="https://developer.commerzbank.com/products/api-catalog" title="Commerzbank Developer Portal: API Catalog" src="commerzbank-api-catalog.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="api-marketplace-architecture">
+				<title>Building an API Marketplace</title>
+				<img title="API Marketplace Architecture" src="API-management.png" class="fullsize-shadow" />
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="value">
+				<title>Focus on Value</title>
+				<ul>
+					<li>APIs are most valuable when they drive digital transformation</li>
+					<li>APIs are not sufficient but they are necessary for digital transformation</li>
+					<li>APIs can help most by</li>
+					<ul>
+						<li>focusing on creating valuable <link href="products">API products</link>,</li>
+						<li><link href="management">managing</link> those in a unified way across the organization,</li>
+						<li>and marketing them to drive <link href="consumption">API consumption</link></li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="thanks">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
