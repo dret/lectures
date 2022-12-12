@@ -411,12 +411,12 @@
 		<toc class="resources"><a href="http://www.w3.org/TR/xpath" title="W3C XPath 1.0 Specification">XPath&#160;1.0&#160;Spec</a></toc>
 		<part id="why-xpath">
 			<title>Why XPath?</title>
-			<slide>
+			<slide id="xml-selection">
 				<title>Selecting Data in XML Documents</title>
 				<ul>
 					<li>XML documents are trees represented by markup</li>
 					<ul>
-						<li>Trying to extract information with plain text tools is a bad idea</li>
+						<li>Extracting information with plain text tooling is a bad idea</li>
 					</ul>
 					<li>XML technologies provide support for working with trees</li>
 					<ul>
@@ -428,7 +428,7 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide>
+			<slide id="reusable-selection">
 				<title>Making Selection Reusable</title>
 				<ul>
 					<li>Different XML technologies need selection</li>
@@ -492,7 +492,6 @@
 					<ul>
 						<li>Always one level down in the file system hierarchy</li>
 						<li><code>.</code> and <code>..</code> are clever directory shortcuts</li>
-						<li>Other directions supported by tools (e.g., <code>find</code>)</li>
 					</ul>
 					<li>XPath allows steps is different directions</li>
 					<ul>
@@ -534,8 +533,8 @@
 				<ul>
 					<li>Name tests</li>
 					<ul>
-						<li>Testing for a particular name (elements/attributes): <code>/gpx/trk/name</code></li>
-						<li>Wildcard (matching any name): <code>/gpx/trk/name/*</code></li>
+						<li>Testing for a name (elements/attributes): <code>/gpx/trk/name</code></li>
+						<li>Wildcard (matching any name): <code>/gpx/trk/*</code></li>
 					</ul>
 					<li>Node type tests</li>
 					<ul>
@@ -607,15 +606,13 @@
 			<slide id="filters">
 				<title>Location Step Filters</title>
 				<ul>
-					<li>Predicates are filters for each location step</li>
+					<li>Predicates are filters for a location step</li>
 					<ul>
-						<li>There can be any number of predicates</li>
 						<li>Each predicate is applied to each selected node individually</li>
 					</ul>
-					<li>Predicates usually reduce the set of selected nodes</li>
+					<li>Predicates typically reduce the set of selected nodes</li>
 					<li>Each predicate is an XPath and evaluated as a boolean</li>
 					<ul>
-						<li>The context of this evaluation is the selected node</li>
 						<li>If the result is a number, it is compared with the <code>position()</code> function</li>
 					</ul>
 				</ul>
