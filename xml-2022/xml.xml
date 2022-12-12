@@ -522,8 +522,8 @@
 					<li><code>..</code> is short for <code>parent::node()</code></li>
 					<li><code>//</code> is short for <code>/descendant-or-self::node()/</code></li>
 				</ul>
-				<pre>.//para</pre>
-				<pre>self::node()/descendant-or-self::node()/child::para</pre>
+				<pre>.//trkpt</pre>
+				<pre>self::node()/descendant-or-self::node()/child::trkpt</pre>
 			</slide>
 		</part>
 		<part id="xpath-node-tests">
