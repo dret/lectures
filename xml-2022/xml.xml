@@ -693,6 +693,46 @@
 	<presentation id="xpath-2">
 		<title short="XPath 2.0">XPath 2.0: From Location Paths to Expressions</title>
 		<toc class="resources"><a href="http://www.w3.org/TR/xpath20" title="W3C XPath 2.0 Specification">XPath&#160;2.0&#160;Spec</a></toc>
+		<part id="xpath-2-history">
+			<title>XPath History</title>
+			<slide id="xml-selection-2">
+				<title>Selecting Data in XML Documents</title>
+				<ul>
+					<li>XML documents are trees represented by markup</li>
+					<ul>
+						<li>Extracting information with plain text tooling is a bad idea</li>
+					</ul>
+					<li>XML technologies provide support for working with trees</li>
+					<ul>
+						<li>Programmatic access to the tree should be easy (DOM)</li>
+						<li>Validating trees should be easy (XSD)</li>
+						<li>Mapping trees should be easy (XSLT)</li>
+						<li>Querying tree collections should be easy (XQuery)</li>
+						<li>XPath is what regular expressions are for text-based information</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="xpath-evolution">
+				<title>How XPath Evolved</title>
+				<ul>
+					<li>XSLT was designed to work on arbitrary XML input documents</li>
+					<ul>
+						<li>Started as a part of XSL (<a href="http://www.w3.org/TR/1998/WD-xsl-19981216">WD-xsl-19981216</a> → <a href="http://www.w3.org/TR/1999/WD-xslt-19990421">WD-xslt-19990421</a>)</li>
+					</ul>
+					<li>XPath was turned into a standalone specification</li>
+					<ul>
+						<li>Started as a part of XSLT (<a href="http://www.w3.org/TR/1999/WD-xslt-19990421">WD-xslt-19990421</a> → <a href="http://www.w3.org/1999/07/WD-xslt-19990709">WD-xslt-19990709</a>)</li>
+						<li>Reused in a number of other W3C specifications (XSD, DOM)</li>
+					</ul>
+					<li>Complete overhaul for XSLT 2.0 and XQuery</li>
+					<ul>
+						<li><a href="http://www.w3.org/TR/xpath20/">XPath 2.0</a> is the core language</li>
+						<li>A large set of <a href="http://www.w3.org/TR/xpath-functions/">functions and operators</a></li>
+						<li>The underlying <a href="http://www.w3.org/TR/xpath-datamodel/">data model</a> which defines the foundation</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="xpath-2-conclusions">
 			<title>Conclusions</title>
 			<slide id="xpath-end">
