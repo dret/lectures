@@ -512,8 +512,8 @@
 					<li><code>attribute</code> is a special axis that addresses attributes</li>
 					<li><code>@</code> is a convenient shortcut for the attribute axis</li>
 				</ul>
-				<blockquote><code>/child::gpx/attribute::version</code></blockquote>
-				<blockquote><code>/gpx/@version</code></blockquote>
+				<pre>/child::gpx/attribute::version</pre>
+				<pre>/gpx/@version</pre>
 			</slide>
 			<slide id="abbreviations">
 				<title>Abbreviations</title>
@@ -522,8 +522,8 @@
 					<li><code>..</code> is short for <code>parent::node()</code></li>
 					<li><code>//</code> is short for <code>/descendant-or-self::node()/</code></li>
 				</ul>
-				<blockquote><code>.//para</code></blockquote>
-				<blockquote><code>self::node()/descendant-or-self::node()/child::para</code></blockquote>
+				<pre>.//para</pre>
+				<pre>self::node()/descendant-or-self::node()/child::para</pre>
 			</slide>
 		</part>
 		<part id="xpath-node-tests">
@@ -616,8 +616,8 @@
 						<li>If the result is a number, it is compared with the <code>position()</code> function</li>
 					</ul>
 				</ul>
-				<blockquote><code>//trkpt[position() = 10]</code></blockquote>
-				<blockquote><code>//trkpt[10]</code></blockquote>
+				<pre>//trkpt[position() = 10]</pre>
+				<pre>//trkpt[10]</pre>
 			</slide>
 			<slide id="path-processing">
 				<title>Putting it all together: Location Path Processing</title>
