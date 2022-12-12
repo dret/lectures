@@ -733,6 +733,26 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="xpath-1-revisited">
+			<title short="XPath 1.0">XPath 1.0 Revisited</title>
+			<slide id="xpath-1-expressions">
+				<title>XPath Expressions</title>
+				<ul>
+					<li>XPaths can be location paths</li>
+					<pre>/gpx/trk/name</pre>
+					<li>XPaths can use functions</li>
+					<pre>/gpx/trk/trkseg/trkpt[position() = 42]</pre>
+					<li>XPaths can be expressions yielding atomic values</li>
+					<pre>count(/gpx/trk/trkseg/trkpt)</pre>
+					<li>XPaths can combine all of the above</li>
+					<pre>substring(//trkpt[ele > 30][1]/time, 12, 8)</pre>
+				</ul>
+			</slide>
+			<slide>
+				<title>Axes</title>
+				<img style="width : 86% ; margin : 4% ; " src="xpath-axes.png"/>
+			</slide>
+		</part>
 		<part id="xpath-2-conclusions">
 			<title>Conclusions</title>
 			<slide id="xpath-end">
