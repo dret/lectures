@@ -666,6 +666,15 @@
 		</part>
 		<part id="xpath-conclusions">
 			<title>Conclusions</title>
+			<slide id="xml-regex">
+				<title><q>Regular Expressions</q> for XML</title>
+				<ul>
+					<li>Useful for anybody working with XML</li>
+					<li>Simple selections are just tree navigation</li>
+					<li>Predicates allow more sophisticated selection</li>
+					<li>The XPath 1.0 function set is very limited</li>
+				</ul>
+			</slide>
 			<slide id="xpath-end">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
