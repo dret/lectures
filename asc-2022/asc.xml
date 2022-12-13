@@ -186,7 +186,7 @@
 			</slide>
 			<slide id="product-linkset">
 				<title>Product Linkset for Machines</title>
-				<blockquote><code>$ curl -H "Accept: application/linkset+json" https://id.gs1.org/01/09506000134352</code></blockquote>
+				<pre>$ curl -H "Accept: application/linkset+json" https://id.gs1.org/01/09506000134352</pre>
 				<listing src="dal-giardino-linkset.json"></listing>
 			</slide>
 		</part>
