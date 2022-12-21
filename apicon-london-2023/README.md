@@ -1,6 +1,6 @@
 # Microproducts: Managing Microservices as API Products
 
-Slides for presentations at [API Conference](https://apiconference.net/) [London](https://apiconference.net/london/) 2023.
+Slides for presentation at [API Conference](https://apiconference.net/) [London](https://apiconference.net/london/) 2023.
 
 ## License
 
