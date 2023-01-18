@@ -37,6 +37,23 @@
 		</slide>
 		<part id="business-vision">
 			<title>Based on Business Vision</title>
+			<slide id="integration-composability">
+				<title>Integration vs. Composability</title>
+				<ul>
+					<li>APIs can be used for 1:1 interconnections</li>
+					<ul>
+						<li>Componentization often is one of the goals of modern <em>software architecture</em></li>
+						<li>All communication between components is <q>API</q> based</li>
+						<li>Connecting components for a single purpose is using a <em>project mindset</em></li>
+					</ul>
+					<li>APIs can be used for 1:n interconnections</li>
+					<ul>
+						<li>Changeability and flexibility are goals of modern <em>business architecture</em></li>
+						<li>Value chains must adapt to changing needs and new competition</li>
+						<li>Designing components for reuse is using a <em>product mindset</em></li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="spice-girls-question">
 				<title>Nobody (really) wants APIs</title>
 				<img title="Tell me what you really really want" src="spice-girls-really-really-want.jpg" href="https://www.youtube.com/watch?v=v0z_6pXeimw" class="fullsize-shadow"/>
