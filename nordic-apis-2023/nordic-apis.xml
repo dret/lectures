@@ -92,6 +92,32 @@
 		</part>
 		<part id="consumption">
 			<title>Focus on API Consumption</title>
+			<slide id="product-vs-solution">
+				<title>Products Need Marketing</title>
+				<ul>
+					<li><q>Traditional 1:1 integration</q> creates one solution for each problem</li>
+					<li><q>API 1:n composability</q> creates a product intended for a market</li>
+					<li>Products drive value <em>only when they are being consumed</em></li>
+					<li>The main drivers for your business are excellent API product candidates</li>
+					<ul>
+						<li><em>Ordering</em> should be open so that partners or 3rd party apps can create orders</li>
+						<li><em>Delivery</em> should be flexible so that new delivery options are easy to add</li>
+						<li><em>Invoicing</em> should be flexible so that new payment methods are easy to add</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="marketing-definition">
+				<title>What is Marketing?</title>
+				<img href="https://www.merriam-webster.com/dictionary/marketing" title="Merriam Webster: Marketing" src="marketing-merriam-webster.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="api-marketplace">
+				<title>What is an API Marketplace?</title>
+				<img href="https://developer.commerzbank.com/products/api-catalog" title="Commerzbank Developer Portal: API Catalog" src="commerzbank-api-catalog.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="api-marketplace-architecture">
+				<title>Building an API Marketplace</title>
+				<img title="API Marketplace Architecture" src="API-management.png" class="fullsize-shadow" />
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
