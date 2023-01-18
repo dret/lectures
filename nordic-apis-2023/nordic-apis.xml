@@ -61,6 +61,34 @@
 		</part>
 		<part id="product-mindset">
 			<title>Product Mindset</title>
+			<slide id="product-definition">
+				<title>What is a Product?</title>
+				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="good-api">
+				<title>What is a Good API (Product)?</title>
+				<img src="coffee-capsules.png" title="Coffee Capsules" style=" float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
+				<ol>
+					<li>It's well-designed</li>
+					<li>It's designed with consumers in mind</li>
+					<li>It's designed to be used by many consumers</li>
+					<li>It's following a product lifecycle</li>
+					<li>It's easily findable and consumable</li>
+					<li>It's marketed with the target audience in mind</li>
+				</ol>
+			</slide>
+			<slide id="dx-overrated-dx">
+				<title>All You Need is DX?</title>
+				<img title="Developer Experience" src="developer-experience-dx.png" class="fullsize" />
+			</slide>
+			<slide id="dx-overrated-ux">
+				<title>What's in it for the Users?</title>
+				<img title="User Experience" src="developer-experience-ux.png" class="fullsize" />
+			</slide>
+			<slide id="dx-overrated-vx">
+				<title>What's in it for the Organization?</title>
+				<img title="Value Exchange" src="developer-experience-vx.png" class="fullsize" />
+			</slide>
 		</part>
 		<part id="consumption">
 			<title>Focus on API Consumption</title>
