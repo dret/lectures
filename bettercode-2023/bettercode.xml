@@ -6,7 +6,7 @@
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 	<script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
 	<configuration>
-		<link subsections="yes" bookmarks="yes" versions="oop.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<link subsections="yes" bookmarks="yes" versions="bettercode.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
 		<paths img="img" listing="src"/>
 		<outline count-text=" [*]" count-depth="all"/>
 		<hyperlink extra=""/>
@@ -24,13 +24,13 @@
 			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
 		</div>
 	</license>
-	<title><a href="https://www.oop-konferenz.de" title="Object Oriented Programming">OOP</a> <a href="https://www.oop-konferenz.de/oop2023/">2023</a> Conference</title>
+	<title><code href="https://www.bettercode.eu/">betterCode()</code> <a href="https://api.bettercode.eu/">API 2023</a></title>
 	<presentation id="index">
-		<title>Zero Trust for APIs: Patterns and Practices</title>
-		<toc class="abstract">Zero Trust Architecture has become the norm for how to modernize IT security in an age of growing network complexity and fewer ways to define hard network boundaries. Today, APIs are a standard way of how organizations expose both technical and business capabilities. But what does it mean for an API to be "Zero Trust Ready"? In this presentation we look at some of the general patterns that APIs need to follow for Zero Trust readiness. We also look at some concrete practices for how to follow those patterns in your own APIs and API landscape.</toc>
+		<title>API Sprawl: The Good, the Bad and the Ugly</title>
+		<toc class="abstract">??</toc>
 		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 		<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
-		<date short="2023-02-07">February 7, 2023</date>
+		<date short="2023-??-??">?? ??, 2023</date>
 		<copyright>2023 Erik Wilde</copyright>
 		<slide id="summary">
 			<title>Summary</title>
@@ -40,12 +40,12 @@
 			<title>Getting APIs to Work</title>
 			<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
 				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
-					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/ZP_EYssLKrA" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/b4009ZC9nkU" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 				</div>
 			</div>
 			<div style=" float : right ; width : 44% ; margin : 0% 4% 0% 2% ; ">
 				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
-					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/X0Spaz8t2Uw" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/ezOh-Vd09ZQ" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 				</div>
 			</div>
 		</slide>
@@ -55,7 +55,7 @@
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
-					<li>Slides online: <a href="http://dret.net/lectures/oop-2023"><code>dret.net/lectures/oop-2023</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/oop-2023"><code>dret.net/lectures/bettercode-2023</code></a></li>
 					<li>More information about myself:</li>
 					<ul>
 						<li><a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">Twitter: <code>@dret</code></a></li>
