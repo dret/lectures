@@ -46,8 +46,13 @@
 		</slide>
 		<part id="api-kingdoms">
 			<title>API Kingdoms: API Interaction Patterns</title>
-		</part>
-		<part id="api-styles">
+			<part id="synchronous">
+				<title>Synchronous: Getting in Line</title>
+			</part>
+			<part id="asynchronous">
+				<title>Asynchronous: Fire and Forget</title>
+			</part>
+			<part id="api-styles">
 			<title>API Styles: Structuring Your API</title>
 		</part>
 		<part id="api-tech">
