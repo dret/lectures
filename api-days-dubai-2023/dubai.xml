@@ -64,10 +64,10 @@
 				<slide id="rpc-over-http">
 					<title>Distributed Programming</title>
 					<ul>
-						<li>Rooted in <em>Remote Procedure Call (RPC)</em> patterns</li>
+						<li><em>Distribution</em> and <em>Decentralization</em> are two distinct patterns</li>
+						<li>Rooted in <em>Remote Procedure Call (RPC)</em> approaches of the 1980s</li>
 						<li>Functions are the main abstraction and invoked at known <em>endpoints</em></li>
-						<li>Convenient for developers looking to <q>code like a local program</q></li>
-						<li>Arguably not the best abstraction for <em>Business APIs</em></li>
+						<li>A good fit for developers looking to <q>write a distributed program</q></li>
 					</ul>
 				</slide>
 			</part>
