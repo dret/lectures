@@ -62,6 +62,20 @@
 				<title>Securing APIs</title>
 				<img src="API-management-technical.png" class="fullsize"/>
 			</slide>
+			<slide id="lifecycle-tooling">
+				<title>API Tooling</title>
+				<ul>
+					<li>Going beyond <q>just</q> protecting the operational API</li>
+					<li>The <q>API lifecycle</q> supports the whole API development process</li>
+					<ul>
+						<li><em>Design</em> with support for following guidelines</li>
+						<li><em>Mocking</em> to quickly allow customers to start developing</li>
+						<li><em>Documentation</em> to make the API easy to use for everyone</li>
+						<li><em>Testing</em> to make sure the API works as intended</li>
+						<li><em>Monitoring</em> to understand use and detect misuse</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="api-management-lifecycle">
 				<title>Supporting the API Lifecycle</title>
 				<img src="API-management-lifecycle.png" class="fullsize"/>
