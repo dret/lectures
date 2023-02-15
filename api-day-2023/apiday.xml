@@ -69,6 +69,18 @@
 		</part>
 		<part id="federated-management">
 			<title>Federated API Management</title>
+			<slide id="only-one">
+				<title>There Cannot Be Only One</title>
+				<img src="highlander.png" title="This is the End" href="https://en.wikipedia.org/wiki/Highlander_(film)" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+			</slide>
+			<slide id="federation-reasons">
+				<title>Reasons for Federation</title>
+				<ul>
+					<li>Organizational units making different purchasing decisions</li>
+					<li>Platforms coming with built-in API management</li>
+					<li>Picking different management solutions for different styles</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="unbundling">
 			<title>The Great Unbundling</title>
@@ -87,7 +99,7 @@
 			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
-				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
 					<li>Slides online: <a href="http://dret.net/lectures/api-day-2023/"><code>dret.net/lectures/api-day-2023/</code></a></li>
 					<li>More information about myself:</li>
