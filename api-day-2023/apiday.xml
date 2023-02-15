@@ -49,7 +49,15 @@
 			</div>
 		</slide>
 		<part id="api-evolution">
-			<title>The API (R)evolution</title>
+			<title>A Short History of API Management</title>
+			<slide id="proxy">
+				<title>Securing <q>Public</q> Interfaces</title>
+				<ul>
+					<li>API management started from the web's <q>reverse proxy</q> model</li>
+					<li>Resources should be made available while minimizing risks</li>
+					<li>API-specific functions started showing up (e.g., XML↔JSON)</li>
+				</ul>
+			</slide>
 			<slide id="api-management-technical">
 				<title>Securing APIs</title>
 				<img src="API-management-technical.png" class="fullsize"/>
