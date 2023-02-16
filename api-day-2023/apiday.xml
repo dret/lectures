@@ -138,9 +138,69 @@
 				<title>API Landscape</title>
 				<img src="api-landscape.png" href="https://apilandscape.apiscene.io/" class="fullsize"/>
 			</slide>
+			<slide id="pick-and-choose">
+				<title>Encapsulation Matters</title>
+				<ul>
+					<li>Pick and use tooling that best works for your API management</li>
+					<li>Pick and use tooling that is focused and open</li>
+					<li>Build your platform to be open and extensible</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="governance">
 			<title>API Governance</title>
+			<slide id="why-guidelines">
+				<title>API Guidelines as Shared Practices</title>
+				<ul>
+					<li>More API teams mean more ways to solve the same problem</li>
+					<ul>
+						<li>Solving <q>API problems</q> is not what teams should focus on</li>
+						<li>Solving <q>API problems</q> in a consistent way helps the API landscape</li>
+					</ul>
+					<li>Communications across teams is a challenge</li>
+					<ul>
+						<li>Complement channels with documentation of practices</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="anatomy">
+				<title>The Anatomy of a Good Guideline</title>
+				<ul>
+					<li><em>Why</em> does the guideline exist?</li>
+					<ul>
+						<li>Rationale for creating the guideline</li>
+					</ul>
+					<li><em>What</em> can be done to address the described issue</li>
+					<ul>
+						<li>At least one <em>good solution</em> for addressing the issue</li>
+					</ul>
+					<li><em>How</em> to implement the solution</li>
+					<ul>
+						<li>At least one way to use the solution in practice</li>
+					</ul>
+					<li><em>Testing</em> that the guideline has been followed</li>
+					<ul>
+						<li>Some tests can be automated but many will be by declaration or review</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="example">
+				<title>API Guideline Example</title>
+				<img src="change-management-guideline.png" href="https://github.com/dret/OReilly2020NYdemo/tree/master/guidelines/why/change-management-policy" title="Change Management Policy Guideline" class="fullsize"/>
+			</slide>
+			<slide id="good-practice">
+				<title>Good is better than Best</title>
+				<ul>
+					<li>Solutions (<q>What</q>) are addressing design challenges</li>
+					<ul>
+						<li>Have a model for accepting new solutions</li>
+					</ul>
+					<li>Practices (<q>How</q>) are implementing a solution</li>
+					<ul>
+						<li>Have a model for accepting new practices</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
