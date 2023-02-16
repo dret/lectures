@@ -52,6 +52,10 @@
 		</slide>
 		<part id="api-evolution">
 			<title>A Short History of API Management</title>
+			<slide id="api-management-technical">
+				<title>Securing APIs</title>
+				<img src="API-management-technical.png" class="fullsize"/>
+			</slide>
 			<slide id="proxy">
 				<title>Securing <q>Public</q> Interfaces</title>
 				<ul>
@@ -60,9 +64,9 @@
 					<li>API-specific functions started showing up (e.g., XML↔JSON)</li>
 				</ul>
 			</slide>
-			<slide id="api-management-technical">
-				<title>Securing APIs</title>
-				<img src="API-management-technical.png" class="fullsize"/>
+			<slide id="api-management-lifecycle">
+				<title>Supporting the API Lifecycle</title>
+				<img src="API-management-lifecycle.png" class="fullsize"/>
 			</slide>
 			<slide id="lifecycle-tooling">
 				<title>API Tooling</title>
@@ -78,9 +82,9 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide id="api-management-lifecycle">
-				<title>Supporting the API Lifecycle</title>
-				<img src="API-management-lifecycle.png" class="fullsize"/>
+			<slide id="api-management-product">
+				<title>APIs as Business Building Blocks</title>
+				<img src="API-management-product.png" class="fullsize"/>
 			</slide>
 			<slide id="products">
 				<title>Shifting to a Product Focus</title>
@@ -89,10 +93,6 @@
 					<li>Focus on API value over API implementation</li>
 					<li>Decoupling technical management from business value makes sense</li>
 				</ul>
-			</slide>
-			<slide id="api-management-product">
-				<title>APIs as Business Building Blocks</title>
-				<img src="API-management-product.png" class="fullsize"/>
 			</slide>
 			<slide id="api-management-marketing">
 				<title>API Consumption Matters</title>
@@ -115,7 +115,7 @@
 			</slide>
 			<slide id="private-partner-public">
 				<title>Good Reasons for Federation</title>
-				<img src="private-partner-public.png" href="https://apilandscape.apiscene.io/" class="fullsize"/>
+				<img src="private-partner-public.png" href="https://www.youtube.com/watch?v=HmIHw3U5jEQ" class="fullsize"/>
 			</slide>
 		</part>
 		<part id="unbundling">
