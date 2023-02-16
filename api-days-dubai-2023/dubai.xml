@@ -59,7 +59,7 @@
 				<title>Tunnel Style</title>
 				<slide id="tunnel-style-image">
 					<title>One Tunnel to Call them All</title>
-					<img title="Tunnel Style" src="api-styles-tunnel.png" class="fullsize"/>
+					<img title="Tunnel Style" src="api-styles-tunnel.png" class="fullsize-shadow"/>
 				</slide>
 				<slide id="rpc-over-http">
 					<title>Distributed Programming</title>
@@ -75,7 +75,7 @@
 				<title>Resource Style</title>
 				<slide id="resource-style-image">
 					<title>Listing All Resources</title>
-					<img title="Resource Style" src="api-styles-resource.png" class="fullsize"/>
+					<img title="Resource Style" src="api-styles-resource.png" class="fullsize-shadow"/>
 				</slide>
 				<slide id="webby-identifiers">
 					<title>Identifiers for Resources</title>
@@ -90,7 +90,7 @@
 				<title>Hypermedia Style</title>
 				<slide id="hypermedia-style-image">
 					<title>Linking All Resources</title>
-					<img title="Hypermedia Style" src="api-styles-hypermedia.png" class="fullsize"/>
+					<img title="Hypermedia Style" src="api-styles-hypermedia.png" class="fullsize-shadow"/>
 				</slide>
 				<slide id="hypermedia-apis">
 					<title>Hypermedia APIs</title>
@@ -117,7 +117,7 @@
 				<title>Query Style</title>
 				<slide id="query-style-image">
 					<title>Querying into Server-Side Models</title>
-					<img title="Query Style" src="api-styles-query.png" class="fullsize"/>
+					<img title="Query Style" src="api-styles-query.png" class="fullsize-shadow"/>
 				</slide>
 				<slide id="database-style">
 					<title>Querying Structured Data</title>
@@ -144,7 +144,7 @@
 				<title>Event-Based Style</title>
 				<slide id="event-style-image">
 					<title>Event Publish/Subscribe</title>
-					<img title="Event-based Style" src="api-styles-event.png" class="fullsize"/>
+					<img title="Event-based Style" src="api-styles-event.png" class="fullsize-shadow"/>
 				</slide>
 				<slide id="reversing-control">
 					<title>Reversing Control</title>
