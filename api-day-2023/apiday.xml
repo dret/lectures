@@ -31,12 +31,10 @@
 		<date short="2023-02-16">February 16, 2023</date>
 		<copyright>2023 Erik Wilde</copyright>
 		<toc class="abstract">API management has been changing over the last few years. We're witnessing an proliferation of APIs, both on the provider side where more and more business models have APIs as part of their overall strategy, and on the consumer side where using APIs becomes very much standard practice in software engineering. What does this mean for API management and what are the big trends we can identify in the API management landscape? We'll discuss three important trends: One is the trend towards federated API management where increasingly, multiple technical API management solutions have to be unified into one coherent view of an API landscape. The second is the unbundling of API tooling where we'll see more and more tooling being available which needs to interoperate to allow users to combine them for their specific API management needs. The third one is API governance which increasingly becomes an essential aspect of API strategy, helping an organization to manage and evolve its API landscape in a coherent and scalable way.</toc>
-<!--
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
--->
 		<slide id="getting-apis-to-work">
 			<title>Getting APIs to Work</title>
 			<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
