@@ -122,21 +122,11 @@
 				<slide id="database-style">
 					<title>Querying Structured Data</title>
 					<ul>
-						<li>The API provides access to a rich interconnected data structure</li>
-						<ul>
-							<li>Clients know the data model and understand how to query it</li>
-							<li>Clients want a small subset of the available data</li>
-						</ul>
-						<li>Querying into structure data needs an agreement on data and querying</li>
-						<ul>
-							<li>Query-style APIs define a <em>metamodel</em> that all data models must use</li>
-							<li>Query-style APIs define a <em>query language</em> for querying data</li>
-						</ul>
-						<li><em>Loose coupling</em> depends on if and how clients adjust to schema changes</li>
-						<ul>
-							<li>Is it possible for clients to find out about schema changes?</li>
-							<li>Do clients have to worry about schema changes?</li>
-						</ul>
+						<li>Good for APIs with a vast interconnected data space</li>
+						<li>APIs are based on a generic data model and matching query language</li>
+						<li>Challenging learning curve for non-trivial data models</li>
+						<li>Change management is tricky in particular for federated models</li>
+						<li>Security is challenging because of the generic capabilities</li>
 					</ul>
 				</slide>
 			</part>
