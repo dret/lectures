@@ -139,21 +139,10 @@
 				<slide id="reversing-control">
 					<title>Reversing Control</title>
 					<ul>
-						<li>Not all API interactions are initiated by consumers</li>
-						<li>Asynchronous communications can make data provision easier</li>
-						<ul>
-							<li>Data is tagged and submitted into some <em>messaging fabric</em></li>
-							<li>The fabric takes care of notifying and delivering data to consumers</li>
-						</ul>
-						<li>The fabric is beyond the <em>smart endpoints and dumb pipes</em> idea</li>
-						<ul>
-							<li><em>Smart pipes</em> are not bad by itself but often have problems scaling</li>
-						</ul>
-						<li>Managing the fabric becomes an essential part of making code work</li>
-						<ul>
-							<li>Who is producing data?</li>
-							<li>Who is consuming data?</li>
-						</ul>
+						<li>Good fit when actions originate on the server</li>
+						<li>Requires an <q>event fabric</q> to deliver events to consumers</li>
+						<li>Big range of models from <q>per API</q> to <q>Event Service Bus (ESB)</q></li>
+						<li>Used more for private than for partner/public APIs</li>
 					</ul>
 				</slide>
 			</part>
