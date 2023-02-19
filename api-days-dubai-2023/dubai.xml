@@ -77,7 +77,7 @@
 					<ul>
 						<li><em>Distribution</em> and <em>Decentralization</em> are two distinct patterns</li>
 						<li>Rooted in <em>Remote Procedure Call (RPC)</em> approaches of the 1980s</li>
-						<li>Functions are the main abstraction and invoked at known <em>endpoints</em></li>
+						<li>Functions are the main abstraction calls are <q>tunneled</q> to the server</li>
 						<li>A good fit for developers looking to <q>write a distributed program</q></li>
 					</ul>
 				</slide>
