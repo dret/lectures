@@ -46,12 +46,23 @@
 		</slide>
 		<part id="api-kingdoms">
 			<title>API Kingdoms: API Interaction Patterns</title>
-			<part id="synchronous">
+			<slide id="synchronous">
 				<title>Synchronous: Getting in Line</title>
-			</part>
-			<part id="asynchronous">
+				<ul>
+					<li>Interaction pattern of <q>approaching a counter</q></li>
+					<li>No tight coupling beyond individual transactions</li>
+					<li>Workflows supported by providing service affordances</li>
+					<li>Dominating pattern for partner/public APIs</li>
+				</ul>
+			</slide>
+			<slide id="asynchronous">
 				<title>Asynchronous: Fire and Forget</title>
-			</part>
+				<ul>
+					<li>Interaction pattern of <q>receiving a message/call</q></li>
+					<li>Workflows are harder to support/represent</li>
+					<li>Increasingly popularity for private APIs</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="api-styles">
 			<title>API Styles: Structuring Your API</title>
