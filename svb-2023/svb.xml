@@ -88,6 +88,63 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="api-evolution">
+			<title>A Short History of API Management</title>
+			<slide id="api-management-technical">
+				<title>Securing APIs</title>
+				<img src="API-management-technical.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="proxy">
+				<title>Securing <q>Public</q> Interfaces</title>
+				<ul>
+					<li>API management started from the web's <q>reverse proxy</q> model</li>
+					<li>Resources should be made available while minimizing risks</li>
+					<li>API-specific functions started showing up (e.g., XML↔JSON)</li>
+				</ul>
+			</slide>
+			<slide id="api-management-lifecycle">
+				<title>Supporting the API Lifecycle</title>
+				<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="lifecycle-tooling">
+				<title>API Tooling</title>
+				<ul>
+					<li>Going beyond <q>just</q> protecting the operational API</li>
+					<li>The <q>API lifecycle</q> supports the whole API development process</li>
+					<ul>
+						<li><em>Design</em> with support for following guidelines</li>
+						<li><em>Mocking</em> to quickly allow customers to start developing</li>
+						<li><em>Documentation</em> to make the API easy to use for everyone</li>
+						<li><em>Testing</em> to make sure the API works as intended</li>
+						<li><em>Monitoring</em> to understand use and detect misuse</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-management-product">
+				<title>APIs as Business Building Blocks</title>
+				<img src="API-management-product.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="products">
+				<title>Shifting to a Product Focus</title>
+				<ul>
+					<li>Growing API landscapes mean growing complexity</li>
+					<li>Focus on API value over API implementation</li>
+					<li>Decoupling technical management from business value makes sense</li>
+				</ul>
+			</slide>
+			<slide id="api-management-marketing">
+				<title>API Consumption Matters</title>
+				<img src="API-management-marketing.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-marketing">
+				<title>Having APIs isn't Good Enough</title>
+				<ul>
+					<li>APIs only provide value when they being consumed</li>
+					<li><em>API Marketing</em> makes sure to get the most out of API products</li>
+					<li>Increase adoption by decoupling production and marketing</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="myths">
 			<title>Three API Myths</title>
 			<part id="tech">
