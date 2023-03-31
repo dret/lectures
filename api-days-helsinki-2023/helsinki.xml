@@ -25,12 +25,12 @@
 		</div>
 	</license>
 	<title><a href="https://www.apidays.co/">API Days</a> <a href="https://www.apidays.global/helsinki_and_north/">Helsinki &amp; North</a> 2023</title>
+	<author>Erik Wilde <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
+	<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
+	<date short="2023-06-??">June ??, 2023</date>
+	<copyright>2023 Erik Wilde</copyright>
 	<presentation id="index">
 		<title>Where is API Management Going? Having APIs isn't good enough anymore</title>
-		<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
-		<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
-		<date short="2023-06-??">June ??, 2023</date>
-		<copyright>2023 Erik Wilde</copyright>
 		<toc class="abstract">APIs have become a standard component in many IT architectures, and API management therefore also has become a necessary and standard practice. However, we have seen API management evolving over the two decades that APIs have been around. It started out as securing single access points with standard software components. Then it moved on to support the full API lifecycle with more support and tooling around the API development process. With the growing popularity of APIs and the steady growth of API landscapes, the role and focus of API management is further evolving. There is an increasing interest to better support decentralized landscapes, and to better support consumers to be able to find and use APIs in these landscapes. We take a look back at the history of API management and a look forward at where it is going in the next few years.</toc>
 		<slide id="summary">
 			<title>Summary</title>

@@ -25,11 +25,12 @@
 		</div>
 	</license>
 	<title><a href="https://apiconference.net/">API Conference</a>, <a href="https://apiconference.net/london/">London, UK</a></title>
+	<author>Erik Wilde <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
+	<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
+	<date short="2023-04-26">April 26, 2023</date>
+	<copyright>2023 Erik Wilde</copyright>
 	<presentation id="index">
 		<title short="Microproducts">Microproducts: Managing Microservices as API Products</title>
-		<author>Erik Wilde <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
-		<date short="2023-04-26">April 26, 2023</date>
-		<copyright>2023 Erik Wilde</copyright>
 		<toc class="abstract">Microservices are making services individually evolvable by using self-contained capabilities that can be created, deployed, and modified in a standalone way. They do this by only being usable through their own API and by only using other services through their APIs. In order for microservices to reach their full potential it is important to conceive and manage them, and thus their API, as a product. Such a microservice product can be called a microproduct and it represents a digital building block in the services that are the foundation for an organization's digital transformation. We dive into why this matters and what it means to move from a microservices to a microproduct mindset. This move encompasses API product management and a full lifecycle perspective for each individual microservice.</toc>
 		<slide id="summary">
 			<title>Summary</title>
