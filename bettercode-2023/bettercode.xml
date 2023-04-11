@@ -69,6 +69,16 @@
 		<part id="why">
 			<title>Why does API Sprawl happen?</title>
 		</part>
+		<part id="risks">
+			<title>Risks of API Sprawl</title>
+			<slide id="security">
+				<title>Shadow and Zombie APIs</title>
+				<img src="zombie.png" title="What are Shadow and Zombie APIs? Identifying API Security Risks" href="https://www.youtube.com/watch?v=ewi6pMP11YY" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
+			</slide>
+			<slide id="effectiveness">
+				<title>Lack of Reuse</title>
+			</slide>
+		</part>
 		<part id="manage">
 			<title>How to Manage API Sprawl</title>
 		</part>
