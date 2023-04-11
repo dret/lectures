@@ -53,25 +53,21 @@
 		</slide>
 		<part id="what">
 			<title>What is API Sprawl?</title>
+		</part>
+		<part id="good">
+			<title>The Good: APIs Drive Digital Transformation</title>
 			<slide id="good">
-				<title>API Sprawl: The Good</title>
+				<title>The Good</title>
 				<img src="the-good.png" title="The Good" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
 			</slide>
+		</part>
+		<part id="bad">
+			<title>The Bad: Unmanaged Growth</title>
 			<slide id="bad">
-				<title>API Sprawl: The Bad</title>
+				<title>The Bad</title>
 				<img src="the-bad.png" title="The Bad" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
 			</slide>
-			<slide id="ugly">
-				<title>API Sprawl: The Ugly</title>
-				<img src="the-ugly.png" title="The Ugly" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
-			</slide>
-		</part>
-		<part id="why">
-			<title>Why does API Sprawl happen?</title>
-		</part>
-		<part id="risks">
-			<title>Risks of API Sprawl</title>
-			<slide id="security">
+			<slide id="shadow-zombie">
 				<title>Shadow and Zombie APIs</title>
 				<img src="zombie.png" title="What are Shadow and Zombie APIs? Identifying API Security Risks" href="https://www.youtube.com/watch?v=ewi6pMP11YY" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
 			</slide>
@@ -79,8 +75,12 @@
 				<title>Lack of Reuse</title>
 			</slide>
 		</part>
-		<part id="manage">
-			<title>How to Manage API Sprawl</title>
+		<part id="ugly">
+			<title>The Ugly: Balancing Speed and Safety</title>
+			<slide id="ugly">
+				<title>The Ugly</title>
+				<img src="the-ugly.png" title="The Ugly" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
