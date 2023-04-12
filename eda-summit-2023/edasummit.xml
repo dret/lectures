@@ -88,6 +88,10 @@
 					<li>Create <em>protocol bindings</em> for protocols supporting message metadata</li>
 				</ol>
 			</slide>
+			<slide id="example">
+				<title>Cloudevent Example</title>
+				<listing src="cloudevent-example.json" href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#example"/>
+			</slide>
 		</part>
 		<part id="what">
 			<title>What do Cloudevents look like?</title>
