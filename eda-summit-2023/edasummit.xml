@@ -49,8 +49,8 @@
 				</div>
 			</div>
 		</slide>
-		<part id="landscapes">
-			<title>Event Landscapes</title>
+		<part id="why">
+			<title>Why consider using Cloudevents?</title>
 			<slide id="landscape-management">
 				<title>API Landscape Management Matters</title>
 				<img src="CAM2-cover.png" href="https://www.oreilly.com/library/view/continuous-api-management/9781098103514/" title="Continuous API Management, 2nd Edition, October 2021" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
@@ -62,11 +62,14 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="what">
+			<title>What do Cloudevents look like?</title>
+		</part>
 		<part id="how">
 			<title>How do Cloudevents work?</title>
-		</part>
-		<part id="asyncapi">
-			<title>Cloudevents and AsyncAPI</title>
+			<slide id="asyncapi">
+				<title>Cloudevents and AsyncAPI</title>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
