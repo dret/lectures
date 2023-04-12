@@ -91,11 +91,26 @@
 		</part>
 		<part id="what">
 			<title>What do Cloudevents look like?</title>
-			<slide id="type-system">
-				<title>Type System</title>
+			<slide id="attributes-required">
+				<title>Required Attributes</title>
+				<ul>
+					<li><code>id (String)</code></li>
+					<li><code>source (URI-reference)</code></li>
+					<li><code>specversion (String)</code></li>
+					<li><code>type (String)</code></li>
+				</ul>
 			</slide>
 			<slide id="type-system">
 				<title>Type System</title>
+				<ul>
+					<li><code>Boolean</code>: A boolean value of <q>true</q> or <q>false</q></li>
+					<li><code>Integer</code>: A whole number in the range -2,147,483,648 to +2,147,483,647 inclusive</li>
+					<li><code>String</code>: Sequence of allowable Unicode characters</li>
+					<li><code>Binary</code>: Sequence of bytes</li>
+					<li><code>URI</code>: Absolute uniform resource identifier</li>
+					<li><code>URI-reference</code>: Uniform resource identifier reference</li>
+					<li><code>Timestamp</code>: Date and time expression using the Gregorian Calendar</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="how">
