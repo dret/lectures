@@ -51,6 +51,10 @@
 		</slide>
 		<part id="why">
 			<title>Why consider using Cloudevents?</title>
+			<slide id="eda">
+				<title>EDA is on the Rise</title>
+				<img src="gartner-hype-cycle-apis-2022.png" title="Gartner 2022 Hype Cycle for APIs" class="fullsize"/>
+			</slide>
 			<slide id="landscape-management">
 				<title>API Landscape Management Matters</title>
 				<img src="CAM2-cover.png" href="https://www.oreilly.com/library/view/continuous-api-management/9781098103514/" title="Continuous API Management, 2nd Edition, October 2021" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
