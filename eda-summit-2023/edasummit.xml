@@ -66,7 +66,7 @@
 				</ul>
 			</slide>
 			<slide id="messaging">
-				<title>Messaging Landscapes</title>
+				<title>Messaging System Landscapes</title>
 				<img src="messaging.png" title="Image by Clemens Vasters" href="https://github.com/clemensv/messaging/blob/main/presentations/2022-04-05%20Azure%20Messaging%20%E2%80%93%20Standards%20Matter.pptx" class="fullsize"/>
 			</slide>
 			<slide id="only-one">
@@ -79,6 +79,15 @@
 					<li>There is a broad spectrum between <q>The One</q> and <q>Anything Goes</q></li>
 				</ul>
 			</slide>
+			<slide id="event-landscapes">
+				<title>Cloudevents: Supporting Events in Event Landscapes</title>
+				<ol>
+					<li>Create a <em>model for context attributes</em> that describe events</li>
+					<li>Define an <em>extension model for extension attributes</em></li>
+					<li>Map context and extension attributes into <em>event format encodings</em></li>
+					<li>Create <em>protocol bindings</em> for protocols supporting message metadata</li>
+				</ol>
+			</slide>
 		</part>
 		<part id="what">
 			<title>What do Cloudevents look like?</title>
@@ -87,6 +96,12 @@
 			<title>How do Cloudevents work?</title>
 			<slide id="asyncapi">
 				<title>Cloudevents and AsyncAPI</title>
+			</slide>
+			<slide id="api-designer">
+				<title>Cloudevents for API Designers</title>
+			</slide>
+			<slide id="api-platform-manager">
+				<title>Cloudevents for API Platform Managers</title>
 			</slide>
 		</part>
 		<part id="conclusions">
