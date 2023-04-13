@@ -1,4 +1,4 @@
-# Cloudevents: One Event to Rule Them All
+# CloudEvents: One Event to Rule Them All
 
 Slides for presentation at [EDA Summit](https://edasummit.com/) 2023.
 

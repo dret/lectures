@@ -1,4 +1,4 @@
-# Cloudevents: One Event to Rule Them All
+# CloudEvents: One Event to Rule Them All
 
 Slides for Presentation at API Days New York 2023.
 

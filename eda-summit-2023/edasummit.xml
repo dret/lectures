@@ -30,8 +30,8 @@
 	<date short="2023-05-10">May 10, 2023</date>
 	<copyright>2023 Erik Wilde</copyright>
 	<presentation id="index">
-		<title short="Microproducts">Cloudevents: One Event to Rule Them All</title>
-		<toc class="abstract">API management and governance in API landscapes are distinctively different from just looking at individual APIs. All the aspects of individual API apply as well, but there is the added aspect of achieving some coherence across the landscape. With this coherence, API designers and producers can more easily reuse design pattern and tooling, whereas API consumers can more easily understand APIs because they share design principles and building blocks. In the case of Event-Driven Architecture (EDA), the boundaries between APIs tend to be more blurry anyways because quite often event brokers are part of the landscape. Cloudevents establish a vocabulary and representations for describing event data across events and event producers. We'll take a look at the standard itself and at the most important vocabulary terms.</toc>
+		<title short="Microproducts">CloudEvents: One Event to Rule Them All</title>
+		<toc class="abstract">API management and governance in API landscapes are distinctively different from just looking at individual APIs. All the aspects of individual API apply as well, but there is the added aspect of achieving some coherence across the landscape. With this coherence, API designers and producers can more easily reuse design pattern and tooling, whereas API consumers can more easily understand APIs because they share design principles and building blocks. In the case of Event-Driven Architecture (EDA), the boundaries between APIs tend to be more blurry anyways because quite often event brokers are part of the landscape. CloudEvents establish a vocabulary and representations for describing event data across events and event producers. We'll take a look at the standard itself and at the most important vocabulary terms.</toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
@@ -50,7 +50,7 @@
 			</div>
 		</slide>
 		<part id="why">
-			<title>Why consider using Cloudevents?</title>
+			<title>Why consider using CloudEvents?</title>
 			<slide id="eda">
 				<title>EDA is on the Rise</title>
 				<img src="gartner-hype-cycle-apis-2022.png" title="Gartner 2022 Hype Cycle for APIs" class="fullsize"/>
@@ -80,7 +80,7 @@
 				</ul>
 			</slide>
 			<slide id="event-landscapes">
-				<title>Cloudevents: Supporting Events in Event Landscapes</title>
+				<title>CloudEvents: Supporting Events in Event Landscapes</title>
 				<ol>
 					<li>Create a <em>model for context attributes</em> that describe events</li>
 					<li>Define an <em>extension model for extension attributes</em></li>
@@ -89,11 +89,11 @@
 				</ol>
 			</slide>
 			<slide id="example">
-				<title>Cloudevent Example</title>
+				<title>CloudEvent Example</title>
 				<listing src="cloudevent-example.json" href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#example"/>
 			</slide>
 			<slide id="value-prop">
-				<title>Cloudevents Value Proposition</title>
+				<title>CloudEvents Value Proposition</title>
 				<ul>
 					<li><em>Unified model</em> of events across formats and messaging fabrics</li>
 					<li><em>Easier integration</em> of events across various technologies</li>
@@ -105,7 +105,7 @@
 			</slide>
 		</part>
 		<part id="what">
-			<title>What do Cloudevents look like?</title>
+			<title>What do CloudEvents look like?</title>
 			<slide id="attributes-required">
 				<title>Required Attributes</title>
 				<ul>
@@ -132,15 +132,15 @@
 			</slide>
 		</part>
 		<part id="how">
-			<title>How do Cloudevents work?</title>
+			<title>How do CloudEvents work?</title>
 			<slide id="asyncapi">
-				<title>Cloudevents and AsyncAPI</title>
+				<title>CloudEvents and AsyncAPI</title>
 			</slide>
 			<slide id="api-designer">
-				<title>Cloudevents for API Designers</title>
+				<title>CloudEvents for API Designers</title>
 			</slide>
 			<slide id="api-platform-manager">
-				<title>Cloudevents for API Platform Managers</title>
+				<title>CloudEvents for API Platform Managers</title>
 			</slide>
 		</part>
 		<part id="conclusions">
