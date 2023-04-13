@@ -83,6 +83,7 @@
 			</slide>
 			<slide id="event-landscapes">
 				<title>CloudEvents: Managing Events in Event Landscapes</title>
+				<img src="cloudevents-logo.png" style="float: right ; width : 20% ; margin : 0% 6% 6% 6% ; "/>
 				<ol>
 					<li>Create a <em>model for context attributes</em> that describe events</li>
 					<li>Define an <em>extension model for extension attributes</em></li>
