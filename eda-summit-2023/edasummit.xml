@@ -139,13 +139,23 @@
 					<li><code>Timestamp</code>: Date and time expression using the Gregorian Calendar</li>
 				</ul>
 			</slide>
-			<slide id="content-modes">
-				<title>Content Modes</title>
+			<slide id="format-binding-content">
+				<title>Formats, Bindings, and Content Modes</title>
 				<ul>
-					<li>CloudEvents have to be mapped into a specific <em>event format</em></li>
+					<li>CloudEvents have to be mapped into a specific <em href="https://github.com/cloudevents/spec/tree/v1.0.2/cloudevents/formats">event format</em></li>
 					<ul>
 						<li>All implementations must support the <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/json-format.md">JSON format</a></li>
 						<li><a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/avro-format.md">Avro</a> and <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/protobuf-format.md">Protobuf</a> formats are available as well</li>
+					</ul>
+					<li><em href="https://github.com/cloudevents/spec/tree/v1.0.2/cloudevents/bindings">Protocol bindings</em> describe how events are sent and received over a given protocol</li>
+					<ul>
+						<li>Currently existing bindings are for <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/bindings/amqp-protocol-binding.md">AMQP</a>, <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/bindings/http-protocol-binding.md">HTTP</a>, <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/bindings/kafka-protocol-binding.md">Kafka</a>, <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/bindings/mqtt-protocol-binding.md">MQTT</a>, <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/bindings/nats-protocol-binding.md">NATS</a>, and <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/bindings/websockets-protocol-binding.md">WebSockets</a></li>
+					</ul>
+					<li><em>Content modes</em> can describe different ways of how to deliver events</li>
+					<ul>
+						<li><em>Structured content mode</em> represents events in the way defined by a format</li>
+						<li><em>Binary content mode</em> places attributes in protocol metadata (e.g., HTTP header fields)</li>
+						<li><em>Batched content mode</em> has to be supported by batch-friendly formats</li>
 					</ul>
 				</ul>
 			</slide>
@@ -170,19 +180,26 @@
 			<slide id="api-designer">
 				<title>CloudEvents for API Designers</title>
 				<ul>
-					<li><em>Structured Content Mode</em> requires payload to carry CloudEvents data</li>
+					<li><em>Structured content mode</em> requires payload to carry CloudEvents data</li>
 					<ul>
 						<li>AsyncAPI structure will look as usual</li>
 						<li>AsyncAPI messages have to conform with CloudEvents</li>
 					</ul>
+					<li><em>Binary content mode</em> requires protocols to carry CloudEvents data</li>
+					<ul>
+						<li>HTTP has to accommodate CloudEvents data</li>
+						<li><em>AsyncAPI traits</em> are a useful mechanism for reusable message data</li>
+						<li>AsyncAPI messages specify the event data</li>
+					</ul>
 				</ul>
 			</slide>
-			<slide id="example">
+			<slide id="asyncapi-trait">
+				<title>CloudEvents AsyncAPI Trait</title>
+				<listing src="cloudevents-asyncapi-trait.yml" href="https://github.com/microcks/microcks-quickstarters/blob/main/cloud/cloudevents/cloudevents-v1.0.1-asyncapi-trait.yml"/>
+			</slide>
+			<slide id="json-schema">
 				<title>CloudEvents JSON Schema</title>
 				<listing src="cloudevents-schema.json" href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/cloudevents.json"/>
-			</slide>
-			<slide id="api-platform-manager">
-				<title>CloudEvents for API Platform Managers</title>
 			</slide>
 			<slide id="platform">
 				<title>CloudEvents as a Platform</title>
