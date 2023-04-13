@@ -127,16 +127,21 @@
 					<li><code>time (Timestamp)</code>: Timestamp of when the occurrence happened</li>
 				</ul>
 			</slide>
-			<slide id="type-system">
-				<title>Type System</title>
+			<slide id="extensions">
+				<title>Extensions and Type System</title>
 				<ul>
-					<li><code>Boolean</code>: A boolean value of <q>true</q> or <q>false</q></li>
-					<li><code>Integer</code>: A whole number in the range -2,147,483,648 to +2,147,483,647 inclusive</li>
-					<li><code>String</code>: Sequence of allowable Unicode characters</li>
-					<li><code>Binary</code>: Sequence of bytes</li>
-					<li><code>URI</code>: Absolute uniform resource identifier</li>
-					<li><code>URI-reference</code>: Uniform resource identifier reference</li>
-					<li><code>Timestamp</code>: Date and time expression using the Gregorian Calendar</li>
+					<li>Events can use <em>extension attributes</em> beyond the core set</li>
+					<li>CloudEvents maintains a list of <em href="https://github.com/cloudevents/spec/blob/main/cloudevents/documented-extensions.md">documented extensions</em></li>
+					<li>Any extension must be defined using the CloudEvents type system</li>
+					<ul>
+						<li><code>Boolean</code>: A boolean value of <q>true</q> or <q>false</q></li>
+						<li><code>Integer</code>: A whole number in the range -2,147,483,648 to +2,147,483,647 inclusive</li>
+						<li><code>String</code>: Sequence of allowable Unicode characters</li>
+						<li><code>Binary</code>: Sequence of bytes</li>
+						<li><code>URI</code>: Absolute uniform resource identifier</li>
+						<li><code>URI-reference</code>: Uniform resource identifier reference</li>
+						<li><code>Timestamp</code>: Date and time expression using the Gregorian Calendar</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="format-binding-content">
@@ -175,6 +180,7 @@
 				<ul>
 					<li><em>AsyncAPI</em> focuses on describing event-based APIs</li>
 					<li><em>CloudEvents</em> focuses on unifying events across event-based APIs</li>
+					<li>Combining the two is a good idea for complex API/EDA landscapes</li>
 				</ul>
 			</slide>
 			<slide id="api-designer">
