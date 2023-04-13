@@ -92,6 +92,17 @@
 				<title>Cloudevent Example</title>
 				<listing src="cloudevent-example.json" href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#example"/>
 			</slide>
+			<slide id="value-prop">
+				<title>Cloudevents Value Proposition</title>
+				<ul>
+					<li><em>Unified model</em> of events across formats and messaging fabrics</li>
+					<li><em>Easier integration</em> of events across various technologies</li>
+					<li><em>Better Function-as-a-Service (FaaS) portability</em> across FaaS platforms</li>
+					<li>Better opportunities for <em>Tooling</em> to benefit from the unified model</li>
+					<li>Foundation for specific event-oriented models such as <em>Webhooks</em></li>
+					<li>Easier <em>policy enforcement</em> across the landscape and between systems</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="what">
 			<title>What do Cloudevents look like?</title>
