@@ -110,12 +110,21 @@
 		<part id="what">
 			<title>What do CloudEvents look like?</title>
 			<slide id="attributes-required">
-				<title>Required Attributes</title>
+				<title><a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#required-attributes">Required Attributes</a></title>
 				<ul>
-					<li><code>id (String)</code></li>
-					<li><code>source (URI-reference)</code></li>
-					<li><code>specversion (String)</code></li>
-					<li><code>type (String)</code></li>
+					<li><code>id (String)</code>: Uniquely identifies the <em>event</em> (for a given source)</li>
+					<li><code>source (URI-reference)</code>: Identifies the <em>context</em> in which an event happened</li>
+					<li><code>specversion (String)</code>: The CloudEvents specification version (currently <q>1.0</q>)</li>
+					<li><code>type (String)</code>: Identifies the <em>type</em> of event that happened</li>
+				</ul>
+			</slide>
+			<slide id="attributes-optional">
+				<title><a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#optional-attributes">Optional Attributes</a></title>
+				<ul>
+					<li><code>datacontenttype (String)</code>: Identifies the content type of the data value</li>
+					<li><code>dataschema (URI)</code>: Identifies the <em>schema</em> of the data value</li>
+					<li><code>subject (String)</code>: Identifying the event subject below source level</li>
+					<li><code>time (Timestamp)</code>: Timestamp of when the occurrence happened</li>
 				</ul>
 			</slide>
 			<slide id="type-system">
