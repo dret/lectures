@@ -123,7 +123,7 @@
 				<ul>
 					<li><code>datacontenttype (String)</code>: Identifies the content type of the data value</li>
 					<li><code>dataschema (URI)</code>: Identifies the <em>schema</em> of the data value</li>
-					<li><code>subject (String)</code>: Identifying the event subject below source level</li>
+					<li><code>subject (String)</code>: Identifies the event subject below source level</li>
 					<li><code>time (Timestamp)</code>: Timestamp of when the occurrence happened</li>
 				</ul>
 			</slide>
@@ -141,6 +141,13 @@
 			</slide>
 			<slide id="content-modes">
 				<title>Content Modes</title>
+				<ul>
+					<li>CloudEvents have to be mapped into a specific <em>event format</em></li>
+					<ul>
+						<li>All implementations must support the <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/json-format.md">JSON format</a></li>
+						<li><a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/avro-format.md">Avro</a> and <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/protobuf-format.md">Protobuf</a> formats are available as well</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="example">
 				<title>CloudEvents Example: Structured</title>
