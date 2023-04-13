@@ -73,7 +73,7 @@
 			</slide>
 			<slide id="only-one">
 				<title>There Cannot Be Only One</title>
-				<img src="highlander.png" title="This is the End" href="https://en.wikipedia.org/wiki/Highlander_(film)" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<img src="highlander.png" href="https://en.wikipedia.org/wiki/Highlander_(film)" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
 					<li>Growing and evolving API landscapes are the new normal</li>
 					<li>Deciding on <q>the one</q> API style/technology/platform is a losing battle</li>
@@ -179,6 +179,16 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="one-model">
+				<title>One Event (Model) to Rule Them All</title>
+				<img src="highlander.png" href="https://en.wikipedia.org/wiki/Highlander_(film)" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>EDA is on the rise</li>
+					<li>Avoid the <q>EDA ESB</q> and plan for diversity</li>
+					<li>CloudEvents provide a unified event model across technologies and platforms</li>
+					<li>CloudEvents and AsyncAPI work together as a team</li>
+				</ul>
+			</slide>
 			<slide id="q-and-a">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
