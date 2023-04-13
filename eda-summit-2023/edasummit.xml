@@ -32,10 +32,12 @@
 	<presentation id="index">
 		<title short="Microproducts">CloudEvents: One Event to Rule Them All</title>
 		<toc class="abstract">API management and governance in API landscapes are distinctively different from just looking at individual APIs. All the aspects of individual API apply as well, but there is the added aspect of achieving some coherence across the landscape. With this coherence, API designers and producers can more easily reuse design pattern and tooling, whereas API consumers can more easily understand APIs because they share design principles and building blocks. In the case of Event-Driven Architecture (EDA), the boundaries between APIs tend to be more blurry anyways because quite often event brokers are part of the landscape. CloudEvents establish a vocabulary and representations for describing event data across events and event producers. We'll take a look at the standard itself and at the most important vocabulary terms.</toc>
+<!-- 
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+-->
 		<slide id="getting-apis-to-work">
 			<title>Getting APIs to Work</title>
 			<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
@@ -86,11 +88,12 @@
 					<li>Define an <em>extension model for extension attributes</em></li>
 					<li>Map context and extension attributes into <em>event format encodings</em></li>
 					<li>Create <em>protocol bindings</em> for protocols supporting message metadata</li>
+					<li>Provide support for consistent <em>versioning</em> of events</li>
 				</ol>
 			</slide>
 			<slide id="example">
-				<title>CloudEvent Example</title>
-				<listing src="cloudevent-example.json" href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#example"/>
+				<title>CloudEvents Example</title>
+				<listing src="cloudevents-example.json" href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#example"/>
 			</slide>
 			<slide id="value-prop">
 				<title>CloudEvents Value Proposition</title>
@@ -132,15 +135,38 @@
 			</slide>
 		</part>
 		<part id="how">
-			<title>How do CloudEvents work?</title>
+			<title>Getting CloudEvents To Work</title>
 			<slide id="asyncapi">
 				<title>CloudEvents and AsyncAPI</title>
+				<ul>
+					<li><em>AsyncAPI</em> focuses on describing event-based APIs</li>
+					<li><em>CloudEvents</em> focuses on unifying events across event-based APIs</li>
+				</ul>
 			</slide>
 			<slide id="api-designer">
 				<title>CloudEvents for API Designers</title>
+				<ul>
+					<li><em>Structured Content Mode</em> requires payload to carry CloudEvents data</li>
+					<ul>
+						<li>AsyncAPI structure will look as usual</li>
+						<li>AsyncAPI messages have to conform with CloudEvents</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="example">
+				<title>CloudEvents JSON Schema</title>
+				<listing src="cloudevents-schema.json" href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/cloudevents.json"/>
 			</slide>
 			<slide id="api-platform-manager">
 				<title>CloudEvents for API Platform Managers</title>
+			</slide>
+			<slide id="platform">
+				<title>CloudEvents as a Platform</title>
+				<ul>
+					<li>Make CloudEvents part of your API guidelines</li>
+					<li>Provide tooling for API designers, developers, and consumers</li>
+					<li>Make sources and types easily findable for everybody</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
