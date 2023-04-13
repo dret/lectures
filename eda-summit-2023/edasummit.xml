@@ -93,7 +93,7 @@
 			</slide>
 			<slide id="example">
 				<title>CloudEvents Example</title>
-				<listing src="cloudevents-example.json" href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#example"/>
+				<listing src="cloudevents-example-structured.json" href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/json-format.md#32-examples"/>
 			</slide>
 			<slide id="value-prop">
 				<title>CloudEvents Value Proposition</title>
@@ -132,6 +132,14 @@
 			</slide>
 			<slide id="content-modes">
 				<title>Content Modes</title>
+			</slide>
+			<slide id="example">
+				<title>CloudEvents Example: Structured</title>
+				<listing src="cloudevents-example-structured.json" href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/json-format.md#32-examples"/>
+			</slide>
+			<slide id="example">
+				<title>CloudEvents Example: HTTP Binary</title>
+				<listing src="cloudevents-example-binary.json" href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/json-format.md#32-examples"/>
 			</slide>
 		</part>
 		<part id="how">
