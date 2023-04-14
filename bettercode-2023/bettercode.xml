@@ -87,8 +87,11 @@
 			<slide id="indicators">
 				<title>Indicators of API Sprawl</title>
 				<ul>
+					<li>No catalog, directory, portal, or marketplace</li>
+					<li>APIs are reflecting the system architecture</li>
 					<li>Many/most APIs have one consumer</li>
 					<li>No clear business alignment of APIs</li>
+					<li>APIs are a side-effect of implementation rather than a goal</li>
 				</ul>
 			</slide>
 		</part>
@@ -147,6 +150,10 @@
 			<slide id="engineers">
 				<title>Engineering the Engineers</title>
 				<img src="prometheus-engineer.jpg" class="fullsize"/>
+			</slide>
+			<slide id="capability-map">
+				<title>Business Capability Map</title>
+				<img src="business-capability-map-example-level-1.png" href="https://www.capstera.com/business-capability-map-example/" class="fullsize"/>
 			</slide>
 			<slide id="small">
 				<title>Start Small</title>
