@@ -30,7 +30,7 @@
 	<date short="2023-05-10">May 10, 2023</date>
 	<copyright>2023 Erik Wilde</copyright>
 	<presentation id="index">
-		<title short="Microproducts">CloudEvents: One Event to Rule Them All</title>
+		<title short="CloudEvents">CloudEvents: One Event to Rule Them All</title>
 		<toc class="abstract">API management and governance in API landscapes are distinctively different from just looking at individual APIs. All the aspects of individual API apply as well, but there is the added aspect of achieving some coherence across the landscape. With this coherence, API designers and producers can more easily reuse design pattern and tooling, whereas API consumers can more easily understand APIs because they share design principles and building blocks. In the case of Event-Driven Architecture (EDA), the boundaries between APIs tend to be more blurry anyways because quite often event brokers are part of the landscape. CloudEvents establish a vocabulary and representations for describing event data across events and event producers. We'll take a look at the standard itself and at the most important vocabulary terms.</toc>
 		<slide id="summary">
 			<title>Summary</title>
