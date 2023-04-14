@@ -137,7 +137,15 @@
 				<img src="zombie.png" title="What are Shadow and Zombie APIs? Identifying API Security Risks" href="https://www.youtube.com/watch?v=ewi6pMP11YY" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
 					<li><em>Shadow APIs</em> are unmanaged APIs</li>
+					<ul>
+						<li>Created unintentionally</li>
+						<li>Created without being seen as a <q>proper API</q></li>
+					</ul>
 					<li><em>Zombie APIs</em> are unused/unknown APIs</li>
+					<ul>
+						<li>APIs that nobody remembered to shut down</li>
+						<li>APIs that nobody ever needed but that got enabled</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="monolith">
