@@ -51,7 +51,7 @@
 		</slide>
 		<part id="platforms">
 			<title>Products and Platforms</title>
-			<slide id="products">
+			<slide id="product-definition">
 				<title>What is a Product?</title>
 				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-shadow" />
 			</slide>
@@ -63,7 +63,10 @@
 				<title>This also is a Product</title>
 				<img src="volkswagen-meb-platform.png" title="Volkswagen MEB Platform" href="https://www.volkswagen-newsroom.com/en/modular-electric-drive-matrix-meb-3677" class="fullsize"/>
 			</slide>
-			<slide id="platforms">
+		</part>
+		<part id="platforms">
+			<title>The Three Platform Types</title>
+			<slide id="platform-definition">
 				<title>What is a Platform?</title>
 				<ul>
 					<li>Something to be used as a foundation</li>
@@ -72,6 +75,15 @@
 					<li>Platforms are being built on … They create products!</li>
 					<li>Platforms need to be consumable … They are products!</li>
 				</ul>
+			</slide>
+			<slide id="business-platforms">
+				<title>Business Platforms</title>
+			</slide>
+			<slide id="api-platforms">
+				<title>API Platforms</title>
+			</slide>
+			<slide id="developer-platforms">
+				<title>Developer Platforms</title>
 			</slide>
 		</part>
 		<part id="conclusions">
