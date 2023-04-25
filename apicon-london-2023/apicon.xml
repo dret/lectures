@@ -112,17 +112,14 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="microservices">
-			<title>Microservices</title>
+		<part id="microproducts">
+			<title>Getting Microservices to Work: Microproducts</title>
 			<slide id="microservices-definition">
 				<title>Microservice Definition</title>
 				<blockquote>
 					<p>A microservice is an independently deployable component of bounded scope that supports interoperability through message-based communication. Microservice architecture is a style of engineering highly automated, evolvable software systems made up of capability-aligned microservices. <span style="font-size : 75% ;">(Irakli Nadareishvili, Ronnie Mitra, Matt McLarty, and Mike Amundsen, <q>Microservice Architecture</q>, O'Reilly, 2016)</span></p>
 				</blockquote>
 			</slide>
-		</part>
-		<part id="microproducts">
-			<title>Getting Microservices to Work: Microproducts</title>
 			<slide id="microproducts">
 				<title>Microproducts</title>
 				<img src="microproducts.png" title="Zack Kanter (@zackkanter): The secret is microproducts, not microservices." href="https://twitter.com/zackkanter/status/1439358138377965569" class="fullsize"/>
