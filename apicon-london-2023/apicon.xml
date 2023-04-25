@@ -124,6 +124,20 @@
 				<title>Microproducts</title>
 				<img src="microproducts.png" title="Zack Kanter (@zackkanter): The secret is microproducts, not microservices." href="https://twitter.com/zackkanter/status/1439358138377965569" class="fullsize"/>
 			</slide>
+			<slide id="product-confusion">
+				<title>API Products? Product APIs? API-as-a-Product?</title>
+				<ul>
+					<li>Most APIs are not the main way how a product is consumed</li>
+					<li>Increasingly, products provide APIs as product features</li>
+					<li>Treating every API as a product helps with API quality and consumption</li>
+				</ul>
+			</slide>
+			<slide id="capability-apis">
+				<title>When to treat an API-as-a-Product</title>
+			</slide>
+			<slide id="product-management">
+				<title>How to treat an API-as-a-Product</title>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
