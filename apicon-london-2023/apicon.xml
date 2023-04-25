@@ -64,7 +64,7 @@
 				<img src="volkswagen-meb-platform.png" title="Volkswagen MEB Platform" href="https://www.volkswagen-newsroom.com/en/modular-electric-drive-matrix-meb-3677" class="fullsize"/>
 			</slide>
 		</part>
-		<part id="platforms">
+		<part id="three-platforms">
 			<title>The Three Platform Types</title>
 			<slide id="platform-definition">
 				<title>What is a Platform?</title>
@@ -100,6 +100,15 @@
 					<li>Developer platforms provide support for <em>consuming digital building blocks</em></li>
 					<li>Trading assumptions about consumption for better <em>Developer Experience (DX)</em></li>
 					<li>Wide range of assumptions from programming languages to specific development environments</li>
+				</ul>
+			</slide>
+			<slide id="complementary-platforms">
+				<title>Balancing the Three Platform Types</title>
+				<ul>
+					<li><link href="business-platforms"/> are about the <q>why</q> of interacting with your organization</li>
+					<li><link href="api-platforms"/> are about <q>what</q> interactions your organization provides</li>
+					<li><link href="developer-platforms"/> support <q>how</q> to develop software interacting with your organization</li>
+					<li>It's a good idea to clearly separate and answer these questions</li>
 				</ul>
 			</slide>
 		</part>
