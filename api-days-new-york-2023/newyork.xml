@@ -116,8 +116,184 @@
 				</div>
 			</div>
 		</slide>
+		<part id="why">
+			<title>Why consider using CloudEvents?</title>
+			<slide id="eda">
+				<title>EDA is on the Rise</title>
+				<img src="gartner-hype-cycle-apis-2022.png" title="Gartner 2022 Hype Cycle for APIs" class="fullsize"/>
+			</slide>
+			<slide id="landscape-management">
+				<title>API Landscape Management Matters</title>
+				<img src="CAM2-cover.png" href="https://www.oreilly.com/library/view/continuous-api-management/9781098103514/" title="Continuous API Management, 2nd Edition, October 2021" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>Evolution of API styles</li>
+					<li>Decentralization of API management</li>
+					<li>API governance</li>
+					<li>Managing API and developer platforms</li>
+				</ul>
+			</slide>
+			<slide id="messaging">
+				<title>Messaging System Landscapes</title>
+				<img src="messaging.png" title="Image by Clemens Vasters" href="https://github.com/clemensv/messaging/blob/main/presentations/2022-04-05%20Azure%20Messaging%20%E2%80%93%20Standards%20Matter.pptx" class="fullsize"/>
+			</slide>
+			<slide id="only-one">
+				<title>There Cannot Be Only One</title>
+				<img src="highlander.png" href="https://en.wikipedia.org/wiki/Highlander_(film)" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>Growing and evolving API landscapes are the new normal</li>
+					<li>Deciding on <q>the one</q> API style/technology/platform is a losing battle</li>
+					<li>Plan and architect for diversity</li>
+					<li>There is a broad spectrum between <q>The One</q> and <q>Anything Goes</q></li>
+				</ul>
+			</slide>
+			<slide id="event-landscapes">
+				<title>CloudEvents: Managing Events in Event Landscapes</title>
+				<img src="cloudevents-logo.png" style="float: right ; width : 20% ; margin : 0% 6% 6% 6% ; "/>
+				<ol>
+					<li>Create a <em>model for context attributes</em> that describe events</li>
+					<li>Define an <em>extension model for extension attributes</em></li>
+					<li>Map context and extension attributes into <em>event format encodings</em></li>
+					<li>Create <em>protocol bindings</em> for protocols supporting message metadata</li>
+					<li>Provide support for consistent <em>versioning</em> of events</li>
+				</ol>
+			</slide>
+			<slide id="example">
+				<title>CloudEvents Example</title>
+				<listing src="cloudevents-example-structured.json" href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/json-format.md#32-examples"/>
+			</slide>
+			<slide id="value-prop">
+				<title>CloudEvents Value Proposition</title>
+				<ul>
+					<li><em>Unified model</em> of events across formats and messaging fabrics</li>
+					<li><em>Easier integration</em> of events across various technologies</li>
+					<li><em>Better Function-as-a-Service (FaaS) portability</em> across FaaS platforms</li>
+					<li>Better opportunities for <em>Tooling</em> to benefit from the unified model</li>
+					<li>Foundation for specific event-oriented models such as <em>Webhooks</em></li>
+					<li>Easier <em>policy enforcement</em> across the landscape and between systems</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="what">
+			<title>What do CloudEvents look like?</title>
+			<slide id="attributes-required">
+				<title><a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#required-attributes">Required Attributes</a></title>
+				<ul>
+					<li><code>id (String)</code>: Uniquely identifies the <em>event</em> (for a given source)</li>
+					<li><code>source (URI-reference)</code>: Identifies the <em>context</em> in which an event happened</li>
+					<li><code>specversion (String)</code>: The CloudEvents specification version (currently <q>1.0</q>)</li>
+					<li><code>type (String)</code>: Identifies the <em>type</em> of event that happened</li>
+				</ul>
+			</slide>
+			<slide id="attributes-optional">
+				<title><a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#optional-attributes">Optional Attributes</a></title>
+				<ul>
+					<li><code>datacontenttype (String)</code>: Identifies the content type of the data value</li>
+					<li><code>dataschema (URI)</code>: Identifies the <em>schema</em> of the data value</li>
+					<li><code>subject (String)</code>: Identifies the event subject below source level</li>
+					<li><code>time (Timestamp)</code>: Timestamp of when the occurrence happened</li>
+				</ul>
+			</slide>
+			<slide id="extensions">
+				<title>Extensions and Type System</title>
+				<ul>
+					<li>Events can use <em>extension attributes</em> beyond the core set</li>
+					<li>CloudEvents maintains a list of <em href="https://github.com/cloudevents/spec/blob/main/cloudevents/documented-extensions.md">documented extensions</em></li>
+					<li>Any extension must be defined using the CloudEvents type system</li>
+					<ul>
+						<li><code>Boolean</code>: A boolean value of <q>true</q> or <q>false</q></li>
+						<li><code>Integer</code>: A whole number in the range -2,147,483,648 to +2,147,483,647 inclusive</li>
+						<li><code>String</code>: Sequence of allowable Unicode characters</li>
+						<li><code>Binary</code>: Sequence of bytes</li>
+						<li><code>URI</code>: Absolute uniform resource identifier</li>
+						<li><code>URI-reference</code>: Uniform resource identifier reference</li>
+						<li><code>Timestamp</code>: Date and time expression using the Gregorian Calendar</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="format-binding-content">
+				<title>Formats, Bindings, and Content Modes</title>
+				<ul>
+					<li>CloudEvents have to be mapped into a specific <em href="https://github.com/cloudevents/spec/tree/v1.0.2/cloudevents/formats">event format</em></li>
+					<ul>
+						<li>All implementations must support the <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/json-format.md">JSON format</a></li>
+						<li><a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/avro-format.md">Avro</a> and <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/protobuf-format.md">Protobuf</a> formats are available as well</li>
+					</ul>
+					<li><em href="https://github.com/cloudevents/spec/tree/v1.0.2/cloudevents/bindings">Protocol bindings</em> describe how events are sent and received over a given protocol</li>
+					<ul>
+						<li>Currently existing bindings are for <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/bindings/amqp-protocol-binding.md">AMQP</a>, <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/bindings/http-protocol-binding.md">HTTP</a>, <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/bindings/kafka-protocol-binding.md">Kafka</a>, <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/bindings/mqtt-protocol-binding.md">MQTT</a>, <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/bindings/nats-protocol-binding.md">NATS</a>, and <a href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/bindings/websockets-protocol-binding.md">WebSockets</a></li>
+					</ul>
+					<li><em>Content modes</em> can describe different ways of how to deliver events</li>
+					<ul>
+						<li><em>Structured content mode</em> represents events in the way defined by a format</li>
+						<li><em>Binary content mode</em> places attributes in protocol metadata (e.g., HTTP header fields)</li>
+						<li><em>Batched content mode</em> has to be supported by batch-friendly formats</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="example">
+				<title>CloudEvents Example: Structured</title>
+				<listing src="cloudevents-example-structured.json" href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/json-format.md#32-examples"/>
+			</slide>
+			<slide id="example">
+				<title>CloudEvents Example: HTTP Binary</title>
+				<listing src="cloudevents-example-binary.json" href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/json-format.md#32-examples"/>
+			</slide>
+		</part>
+		<part id="how">
+			<title>Getting CloudEvents To Work</title>
+			<slide id="asyncapi">
+				<title>CloudEvents and AsyncAPI</title>
+				<ul>
+					<li><em>AsyncAPI</em> focuses on describing event-based APIs</li>
+					<li><em>CloudEvents</em> focuses on unifying events across event-based APIs</li>
+					<li>Combining the two is a good idea for complex API/EDA landscapes</li>
+				</ul>
+			</slide>
+			<slide id="api-designer">
+				<title>CloudEvents for API Designers</title>
+				<ul>
+					<li><em>Structured content mode</em> requires payload to carry CloudEvents data</li>
+					<ul>
+						<li>AsyncAPI structure will look as usual</li>
+						<li>AsyncAPI messages have to conform with CloudEvents</li>
+					</ul>
+					<li><em>Binary content mode</em> requires protocols to carry CloudEvents data</li>
+					<ul>
+						<li>HTTP has to accommodate CloudEvents data</li>
+						<li><em>AsyncAPI traits</em> are a useful mechanism for reusable message data</li>
+						<li>AsyncAPI messages specify the event data</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="asyncapi-trait">
+				<title>CloudEvents AsyncAPI Trait</title>
+				<listing src="cloudevents-asyncapi-trait.yml" href="https://github.com/microcks/microcks-quickstarters/blob/main/cloud/cloudevents/cloudevents-v1.0.1-asyncapi-trait.yml"/>
+			</slide>
+			<slide id="json-schema">
+				<title>CloudEvents JSON Schema</title>
+				<listing src="cloudevents-schema.json" href="https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/formats/cloudevents.json"/>
+			</slide>
+			<slide id="platform">
+				<title>CloudEvents as a Platform</title>
+				<ul>
+					<li>Make CloudEvents part of your API guidelines</li>
+					<li>Provide tooling for API designers, developers, and consumers</li>
+					<li>Make sources and types easily findable for everybody</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="one-model">
+				<title>One Event (Model) to Rule Them All</title>
+				<img src="highlander.png" href="https://en.wikipedia.org/wiki/Highlander_(film)" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>EDA is on the rise</li>
+					<li>Avoid the <q>EDA ESB</q> and plan for diversity</li>
+					<li>CloudEvents provide a unified event model across technologies and platforms</li>
+					<li>CloudEvents and AsyncAPI work together as a team</li>
+				</ul>
+			</slide>
 			<slide id="thanks">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
