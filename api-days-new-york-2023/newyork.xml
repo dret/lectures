@@ -95,12 +95,15 @@
 			</slide>
 		</part>
 		<part id="api-anatomy">
-			<title>API Anatomy</title>
-			<slide id="paths">
-				<title>Paths: The Site Map of APIs</title>
+			<title>Web APIs: Getting Stuff Done the Web Way</title>
+			<slide id="api-servers">
+				<title>Discovery and Getting Started</title>
 			</slide>
-			<slide id="paths">
-				<title>Paths: The Site Map of APIs</title>
+			<slide id="api-paths">
+				<title>Paths: The Resources of an API</title>
+			</slide>
+			<slide id="api-operations">
+				<title>Interactions with Resources</title>
 			</slide>
 		</part>
 		<part id="openapi-anatomy">
