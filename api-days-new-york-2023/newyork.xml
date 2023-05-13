@@ -73,8 +73,8 @@
 			<slide id="fast-flow">
 				<title>APIs: The Lubricant for Fast Flow</title>
 				<ul>
-					<li><em>Documentation-First APIs</em> improve human collaboration</li>
-					<li><em>Specification-First APIs</em> improve tooling support</li>
+					<li><em href="documentation">Documentation-First APIs</em> improve human collaboration</li>
+					<li><em href="client-tooling">Specification-First APIs</em> improve tooling support</li>
 				</ul>
 			</slide>
 			<slide id="language-video">
@@ -168,6 +168,9 @@
 			<slide id="linting">
 				<title>OpenAPI Linting</title>
 			</slide>
+		</part>
+		<part id="practice">
+			<title>OpenAPI in Practice</title>
 			<slide id="documentation">
 				<title>Generating Documentation</title>
 			</slide>
