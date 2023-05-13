@@ -85,6 +85,16 @@
 					</div>
 				</div>
 			</slide>
+			<slide id="api-styles">
+				<title>API Styles</title>
+				<ol>
+					<li>Tunnel Style: XML-RPC, SOAP, gRPC, Avro</li>
+					<li>Resource Style: OpenAPI/Swagger, RAML, API Blueprint</li>
+					<li>Hypermedia Style: HAL, Siren, Atom, JSON:API</li>
+					<li>Query Style: GraphQL, OData, SPARQL</li>
+					<li>Event-Oriented Style: MQ, WebSub, MQTT, XMPP, AMQP, Kafka, AsyncAPI</li>
+				</ol>
+			</slide>
 			<slide id="best-api-style">
 				<title>There is no <q>Best API Style</q></title>
 				<img title="Volkswagen Käfer" src="volkswagen-kaefer.jpg" style=" width : 35% ; object-fit : contain ; margin : 1% 6% 1% 6% ; "/>
