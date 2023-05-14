@@ -55,10 +55,21 @@
 		<part id="api-management">
 			<title>API Management</title>
 		</part>
-		<part id="api-product">
-			<title>What is an API Product?</title>
+		<part id="api-trinity">
+			<title>The Trinity of API Production and Consumption</title>
 			<slide id="producing-consuming">
 				<title>Producing and Consuming APIs</title>
+				<ul>
+					<li>APIs only produce value when they are consumed</li>
+					<li>More API use almost always means more value is created</li>
+					<li>Every API should have a <q>business model</q> that explains its contribution</li>
+					<li>Don't forget that there are always <em>three parties</em> in every API story</li>
+					<ol>
+						<li><em>API Producers</em> develop and run the API</li>
+						<li><em>API Developers</em> consume the API in their application</li>
+						<li><em>End Users</em> experience the API through the application</li>
+					</ol>
+				</ul>
 			</slide>
 			<slide id="dx-overrated-dx">
 				<title>All You Need is DX?</title>
@@ -71,6 +82,15 @@
 			<slide id="dx-overrated-vx">
 				<title>What's in it for the Organization?</title>
 				<img title="Value Exchange" src="developer-experience-vx.png" class="fullsize" />
+			</slide>
+			<slide id="trinity-antipatterns">
+				<title>API Trinity Challenges</title>
+				<ul>
+					<li>Not caring who the end users are</li>
+					<li>Not knowing who the end users are</li>
+					<li>Delivery models play a big role: <em title="Software as a Service">SaaS</em> vs. on-prem</li>
+					<li>Never lose sight of the big picture</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="api-products">
