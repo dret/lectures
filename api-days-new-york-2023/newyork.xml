@@ -127,14 +127,6 @@
 		</part>
 		<part id="openapi-anatomy">
 			<title>OpenAPI Anatomy</title>
-			<slide id="naming-rant">
-				<title>Naming Matters…</title>
-				<ul>
-					<li><q>Schemas for XML use various formats and one XML schema language is XML Schema.</q></li>
-					<li><q>Schemas for JSON use various formats and one JSON schema language is JSON Schema.</q></li>
-					<li><q>Descriptions for open APIs use various formats and one open API description language is OpenAPI.</q></li>
-				</ul>
-			</slide>
 			<slide id="history">
 				<title>A Brief History of OpenAPI</title>
 				<ul>
