@@ -109,20 +109,27 @@
 				</div>
 			</slide>
 		</part>
-		<part id="api-anatomy">
+		<part id="web-way">
 			<title>Web APIs: Getting Stuff Done the Web Way</title>
-			<slide id="api-servers">
+			<slide id="web-discovery">
 				<title>Discovery and Getting Started</title>
+				<img src="nypl-google-search.png" title="Goggle Search: New York Public Library" href="https://www.google.com/search?client=firefox-b-d&amp;q=new+york+library+search" class="fullsize"/>
 			</slide>
-			<slide id="api-paths">
+			<slide id="web-resources">
 				<title>Paths: The Resources of an API</title>
+				<img src="nypl-events.png" title="New York Public Library: Events" href="https://www.nypl.org/events" class="fullsize"/>
 			</slide>
-			<slide id="api-operations">
-				<title>Interactions with Resources</title>
+			<slide id="web-operations-request">
+				<title>Interactions with Resources: Requests</title>
+				<img src="nypl-search-page.png" title="New York Public Library: Advanced Search" href="https://www.nypl.org/research/research-catalog/search/advanced" class="fullsize"/>
+			</slide>
+			<slide id="web-operations-response">
+				<title>Interactions with Resources: Responses</title>
+				<img src="nypl-search-results.png" title="New York Public Library: Search Results" href="https://www.nypl.org/research/research-catalog/search?q=&amp;contributor=Erik%20Wilde" class="fullsize"/>
 			</slide>
 			<slide id="sitemaps">
 				<title>The Hidden Surface of the Web</title>
-				<listing src="api-days-sitemap.xml" href="https://www.apidays.global/sitemap_index.xml"/>
+				<listing src="api-days-sitemap.xml" title="" href="https://www.apidays.global/sitemap_index.xml"/>
 			</slide>
 		</part>
 		<part id="openapi-anatomy">
