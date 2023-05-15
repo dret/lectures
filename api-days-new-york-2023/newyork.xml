@@ -116,7 +116,7 @@
 				<img src="nypl-google-search.png" title="Goggle Search: New York Public Library" href="https://www.google.com/search?client=firefox-b-d&amp;q=new+york+library+search" class="fullsize"/>
 			</slide>
 			<slide id="web-resources">
-				<title>Paths: The Resources of an API</title>
+				<title>Paths: Available Resources</title>
 				<img src="nypl-events.png" title="New York Public Library: Events" href="https://www.nypl.org/events" class="fullsize"/>
 			</slide>
 			<slide id="web-operations-request">
@@ -154,24 +154,22 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="api-discovery">
+				<title>Discovery and Getting Started</title>
+				<listing src="petstore-openapi.yaml" line="1-23"/>
+			</slide>
+			<slide id="api-resources">
+				<title>Paths: The Resources of an API</title>
+			</slide>
+			<slide id="api-payload">
+				<title>Interactions with Resources: Responses</title>
+			</slide>
 			<slide id="callbacks-webhooks">
 				<title>Of Callbacks and Webhooks</title>
 			</slide>
 		</part>
-		<part id="api-landscapes">
-			<title>OpenAPI in API Landscapes</title>
-			<slide id="api-first">
-				<title>API First</title>
-			</slide>
-			<slide id="validation">
-				<title>OpenAPI Validation</title>
-			</slide>
-			<slide id="linting">
-				<title>OpenAPI Linting</title>
-			</slide>
-		</part>
-		<part id="practice">
-			<title>OpenAPI in Practice</title>
+		<part id="products">
+			<title>Better API Products with OpenAPI</title>
 			<slide id="documentation">
 				<title>Generating Documentation</title>
 			</slide>
