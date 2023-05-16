@@ -186,12 +186,17 @@
 			<title>Better API Products with OpenAPI</title>
 			<slide id="design">
 				<title>API Design</title>
+				<img src="stoplight-petstore.png" title="API Design Tooling: Stoplight" href="https://www.stoplight.io/" class="fullsize"/>
 			</slide>
 			<slide id="documentation">
 				<title>Documentation</title>
 			</slide>
 			<slide id="client-tooling">
 				<title>Supporting Client-Side Tooling</title>
+				<ul>
+					<li>OpenAPI is useful for producers <em>and</em> consumers</li>
+					<li>Make OpenAPI descriptions available to consumers</li>
+				</ul>
 			</slide>
 			<slide id="mocking">
 				<title>Mocking</title>
