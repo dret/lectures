@@ -192,6 +192,11 @@
 			</slide>
 			<slide id="mocking">
 				<title>Mocking</title>
+				<ul>
+					<li>When the real API doesn't yet exist</li>
+					<li>When the real API doesn't have a proper sandbox</li>
+					<li>When integration testing needs external components</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
