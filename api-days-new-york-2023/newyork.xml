@@ -151,7 +151,7 @@
 					<ul>
 						<li><em>OpenAPI 2.0</em> was the name after the rename (it's the same as <em>Swagger 2.0</em>)</li>
 						<li><em>OpenAPI 3.0</em> was released in July 2017</li>
-						<li><em>OpenAPI 2.0</em> was released in February 2021</li>
+						<li><em>OpenAPI 3.1</em> was released in February 2021</li>
 					</ul>
 				</ul>
 			</slide>
@@ -161,12 +161,25 @@
 			</slide>
 			<slide id="api-resources">
 				<title>Paths: The Resources of an API</title>
+				<listing src="petstore-openapi.yaml" line="191-224"/>
 			</slide>
 			<slide id="api-payload">
-				<title>Interactions with Resources: Responses</title>
+				<title>Interactions with Resources</title>
+				<listing src="petstore-openapi.yaml" line="113-152"/>
 			</slide>
 			<slide id="callbacks-webhooks">
-				<title>Of Callbacks and Webhooks</title>
+				<title>OpenAPI 3.1: Of Callbacks and Webhooks</title>
+				<ul>
+					<li>OpenAPI keeps evolving (3.1 released in February 2021)</li>
+					<li>OpenAPI 4.0 is <a href="https://github.com/OAI/moonwalk/discussions">being discussed under codename <q>Moonwalk</q></a></li>
+					<li>OpenAPI <a href="https://github.com/OAI/OpenAPI-Specification/discussions/2695">Special Interest Groups (SIG)</a> discuss topics related to OpenAPI</li>
+					<li><em>Callbacks</em> allow specific resources to callback to a supplied URI</li>
+					<li><em>Webhooks</em> are callbacks but unrelated to specific events</li>
+				</ul>
+			</slide>
+			<slide id="openapi-webhooks">
+				<title>Webhooks in OpenAPI 3.1</title>
+				<listing src="webhook-example-openapi.yaml"/>
 			</slide>
 		</part>
 		<part id="products">
