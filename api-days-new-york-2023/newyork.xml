@@ -136,14 +136,15 @@
 			<title>OpenAPI Anatomy</title>
 			<slide id="history">
 				<title>A Brief History of OpenAPI</title>
+				<img src="openapi-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
 					<li>Started out in 2011 and was called <em href="https://en.wikipedia.org/wiki/Swagger_(software)">Swagger</em> for quite a while</li>
 					<ul>
-						<li>Competing approaches exist, with <em href="https://en.wikipedia.org/wiki/RAML_(software)" title="RESTful API Modeling Language">RAML</em> and <em href="https://github.com/apiaryio/api-blueprint">API Blueprint</em> being the most popular</li>
+						<li>Competing approaches like <em href="https://en.wikipedia.org/wiki/RAML_(software)" title="RESTful API Modeling Language">RAML</em> and <em href="https://github.com/apiaryio/api-blueprint">API Blueprint</em> exist</li>
 					</ul>
 					<li><em>Swagger</em> was renamed to <em>OpenAPI</em> at the beginning of 2016</li>
 					<ul>
-						<li>It was donated to the <em href="https://www.openapis.org/">OpenAPI Initiative (OAI)</em> (part of the <em href="https://www.linuxfoundation.org/">Linux Foundation</em>)</li>
+						<li>Donated to the <em href="https://www.openapis.org/">OpenAPI Initiative (OAI)</em> (part of the <em href="https://www.linuxfoundation.org/">Linux Foundation</em>)</li>
 						<li><em href="https://swagger.io/tools/open-source/">Swagger</em> now refers to a specific tool offered by <em href="https://smartbear.com/">SmartBear</em></li>
 					</ul>
 					<li><em>OpenAPI</em> has been the official name since 2016 with three main versions</li>
