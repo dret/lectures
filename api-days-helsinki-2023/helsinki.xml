@@ -30,12 +30,7 @@
 	<date short="2023-06-05">June 5, 2023</date>
 	<copyright>2023 Erik Wilde</copyright>
 	<presentation id="index">
-		<title>Where is API Management Going? Having APIs isn't good enough anymore</title>
-		<toc class="abstract">APIs have become a standard component in many IT architectures, and API management therefore also has become a necessary and standard practice. However, we have seen API management evolving over the two decades that APIs have been around. It started out as securing single access points with standard software components. Then it moved on to support the full API lifecycle with more support and tooling around the API development process. With the growing popularity of APIs and the steady growth of API landscapes, the role and focus of API management is further evolving. There is an increasing interest to better support decentralized landscapes, and to better support consumers to be able to find and use APIs in these landscapes. We take a look back at the history of API management and a look forward at where it is going in the next few years.</toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
+		<title>API Program Management: Getting Your APIs to Work</title>
 		<slide id="getting-apis-to-work">
 			<title>Getting APIs to Work</title>
 			<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
