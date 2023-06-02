@@ -102,7 +102,17 @@
 				<title>Technology Health Checks</title>
 				<ul>
 					<li>API Design: Treating APIs as first-class citizens</li>
+					<ul>
+						<li>Do you (try to) use an <q>API first</q> approach?</li>
+						<li>Are you using/exploring multiple API styles?</li>
+						<li>How collaborative is the API design process?</li>
+					</ul>
 					<li>API Platform: Helping teams to deliver value quickly and continuously</li>
+					<ul>
+						<li>Is the platform team using applying a product mindset to the platform?</li>
+						<li>Is the platform supporting multiple implementation technologies?</li>
+						<li>Does the platform encourage contributions to the platform?</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="change-checks">
