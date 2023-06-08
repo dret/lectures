@@ -57,14 +57,6 @@
 		</part>
 		<part id="dx">
 			<title>Developer Experience (DX) and Beyond</title>
-			<slide id="three-parties">
-				<title>APIs Involve Three Parties</title>
-				<ul>
-					<li><em>API Producers</em> develop and run the API</li>
-					<li><em>API Developers</em> consume the API in their application</li>
-					<li><em>End Users</em> experience the API through the application</li>
-				</ul>
-			</slide>
 			<slide id="dx-overrated-dx">
 				<title>All You Need is DX?</title>
 				<img title="Developer Experience" src="developer-experience-dx.png" class="fullsize" />
