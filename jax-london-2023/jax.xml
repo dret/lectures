@@ -48,6 +48,28 @@
 	<author>Erik Wilde</author>
 	<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
 	<copyright>2023 Erik Wilde</copyright>
+	<presentation id="error-messages">
+		<title short="Error Messages for HTTP APIs">Error Messages for HTTP APIs: Standards, Patterns, and Practices</title>
+		<date short="2023-10-03">October 3, 2023</date>
+		<toc class="abstract">Reporting errors is a fundamental aspect of API design. The way it's done can differ between APIs, API technologies, and API styles, but since it is a very common pattern it makes sense to not reinvent the wheel for every single API. We look at how to report errors in HTTP APIs but the lessons learned in this session can be applied to other technologies and styles as well. Beyond the format there also is the question which patterns to apply so that API designers get as much support as possible from their platform when it comes to managing the error messages of their APIs. The format that we discuss is a successor of the popular RFC 7807 error format. We'll discuss why there is a new version, what the changes are, and how to best use it in your APIs and your API landscape.</toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<slide id="channel">
+			<title>Getting APIs to Work</title>
+			<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
+				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/fLZ5njRwtn0" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+				</div>
+			</div>
+			<div style=" float : right ; width : 44% ; margin : 0% 4% 0% 2% ; ">
+				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/wX3GMJY9B6A" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+				</div>
+			</div>
+		</slide>
+	</presentation>
 	<presentation id="cloudevents">
 		<title short="CloudEvents">CloudEvents: One Event to Rule Them All</title>
 		<date short="2023-10-04">October 4, 2023</date>

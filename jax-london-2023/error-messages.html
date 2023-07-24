@@ -4,8 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
    <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-      <title>Getting APIs to Work: Creating and Managing Valuable API Landscapes ; Erik Wilde ;
-         Getting APIs to Work
+      <title>Error Messages for HTTP APIs: Standards, Patterns, and Practices ; Erik Wilde ; Getting
+         APIs to Work
       </title>
       <meta name="copyright" content="Copyright © 2023 Erik Wilde" />
       <link rel="DCTERMS.license" href="https://creativecommons.org/licenses/by/4.0/" title="CC BY 4.0" />
@@ -19,9 +19,8 @@
       <link rel="contents" href="./" title="JAX London 2023" />
       <link rel="up" href="./" title="JAX London 2023" />
       <link rel="home" href="./" title="JAX London 2023" />
-      <link rel="prev" href="cloudevents" title="CloudEvents" />
-      <link rel="start" href="error-messages" title="Error Messages for HTTP APIs" />
-      <link rel="first" href="error-messages" title="Error Messages for HTTP APIs" />
+      <link rel="next" href="cloudevents" title="CloudEvents" />
+      <link rel="last" href="getting-apis-to-work" title="Getting APIs to Work" />
       <link rel="chapter" href="error-messages" title="Error Messages for HTTP APIs" />
       <link rel="chapter" href="cloudevents" title="CloudEvents" />
       <link rel="chapter" href="getting-apis-to-work" title="Getting APIs to Work" />
@@ -33,14 +32,14 @@
       <div class="background"></div>
       <div class="slide cover">
          		
-         <h1>Getting APIs to Work: Creating and Managing Valuable API Landscapes</h1>
+         <h1>Error Messages for HTTP APIs: Standards, Patterns, and Practices</h1>
          		
          <h3><a class="extra " href="https://jaxlondon.com/" title="https://jaxlondon.com/">JAX London</a><span class="print-href"> [https://jaxlondon.com/]</span> 2023
          </h3>
          		
          <h4><span class="vcard"><span class="fn n"><span class="given-name">Erik</span> <span class="family-name">Wilde</span></span></span><br /><span class="vcard"><a class="fn org url" href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="img/youtube-logo.png" style=" height : 1em ; " alt="youtube-logo.png" /></a></span></h4>
          		
-         <h5>October 5, 2023</h5>
+         <h5>October 3, 2023</h5>
          		
          		
          <div class="license">
@@ -58,7 +57,7 @@
          <div class="printheader only-media-print">
             				<span class="part">Contents</span>
             				<span class="author"><span class="vcard"><span class="fn n"><span class="given-name">Erik</span> <span class="family-name">Wilde</span></span></span>: </span>
-            				<span class="presentation">Getting APIs to Work: Creating and Managing Valuable API Landscapes</span> 
+            				<span class="presentation">Error Messages for HTTP APIs: Standards, Patterns, and Practices</span> 
             			
          </div>
          			
@@ -76,33 +75,27 @@
          <div class="printheader only-media-print">
             			<span class="part"></span>
             			<span class="author"><span class="vcard"><span class="fn n"><span class="given-name">Erik</span> <span class="family-name">Wilde</span></span></span>: </span>
-            			<span class="presentation">Getting APIs to Work: Creating and Managing Valuable API Landscapes</span> 
+            			<span class="presentation">Error Messages for HTTP APIs: Standards, Patterns, and Practices</span> 
             		
          </div>
          <h1><span class="only-media-print printslidenum">(2)</span> Summary
          </h1>
-         <p class="abstract">There's no doubt that APIs are a key ingredient in any digitalization and digital
-            transformation initiative. Balancing the efforts of the various aspects of API platforms
-            and programs, however, can be a tricky thing. There are technical aspects regarding
-            individual API designs, API management, and the API platform. Then there are business
-            aspects when it comes to making sure that you're building the right APIs and that
-            everybody acquires an API mindset in terms of designing and building API products.
-            And then there are organizational aspects of making sure that team structures and
-            practices take advantage of APIs, and making sure that the right stakeholders are
-            involved at the right moment throughout the API lifecycle. Balancing all these bits
-            and pieces is a complex task and we'll spend some time looking at the individual bits
-            and pieces, relating them so that we can better understand what may be holding us
-            back and where we should invest. This workshop is intended for developers who want
-            to better understand the bigger picture of the API program and platform they're working
-            with, API program and platform managers who want to get a better idea of how to balance
-            their efforts, and business leaders who want a detailed look at how to manage the
-            fabric that can make or break their digital transformation initiative.
+         <p class="abstract">Reporting errors is a fundamental aspect of API design. The way it's done can differ
+            between APIs, API technologies, and API styles, but since it is a very common pattern
+            it makes sense to not reinvent the wheel for every single API. We look at how to report
+            errors in HTTP APIs but the lessons learned in this session can be applied to other
+            technologies and styles as well. Beyond the format there also is the question which
+            patterns to apply so that API designers get as much support as possible from their
+            platform when it comes to managing the error messages of their APIs. The format that
+            we discuss is a successor of the popular RFC 7807 error format. We'll discuss why
+            there is a new version, what the changes are, and how to best use it in your APIs
+            and your API landscape.
          </p><br /><br /></div>
       <div class="slide" id="channel">
          <div class="printheader only-media-print">
             			<span class="part"></span>
             			<span class="author"><span class="vcard"><span class="fn n"><span class="given-name">Erik</span> <span class="family-name">Wilde</span></span></span>: </span>
-            			<span class="presentation">Getting APIs to Work: Creating and Managing Valuable API Landscapes</span> 
+            			<span class="presentation">Error Messages for HTTP APIs: Standards, Patterns, and Practices</span> 
             		
          </div>
          <h1><span class="only-media-print printslidenum">(3)</span> Getting APIs to Work
@@ -124,7 +117,7 @@
             			
          </div><br /><br /></div>
       <div class="printfooter only-media-print">
-         			<span class="date">October 5, 2023</span>
+         			<span class="date">October 3, 2023</span>
          			<span class="course"><a class="extra " href="https://jaxlondon.com/" title="https://jaxlondon.com/">JAX London</a><span class="print-href"> [https://jaxlondon.com/]</span> 2023</span>
          		
       </div>
