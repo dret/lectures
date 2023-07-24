@@ -1,0 +1,46 @@
+name: cloudevents-headers
+summary: Message headers used by CloudEvents spec in binary content mode Kafka binding (see https://github.com/cloudevents/spec/blob/v1.0.1/kafka-protocol-binding.md)
+headers:
+  type: object
+  required:
+    - ce_specversion
+    - ce_id
+    - ce_source
+    - ce_type
+  properties:
+    ce_specversion:
+      type: string
+      description: The version of the CloudEvents specification which the event uses.
+      enum:
+        - "1.0"
+    ce_id:
+      type: string
+      minLength: 1
+      description: Identifies the event.
+    ce_source:
+      type: string
+      format: uri-reference
+      minLength: 1
+      description: Identifies the context in which an event happened.
+    ce_type:
+      type: string
+      minLength: 1
+      description: Describes the type of event related to the originating occurrence.
+    ce_datacontenttype:
+      type: string
+      description: Content type of the data value. Must adhere to RFC 2046 format.
+    ce_dataschema:
+      type: string
+      description: Identifies the schema that data adheres to.
+    ce_subject:
+      type: string
+      description: Describes the subject of the event in the context of the event producer (identified by source).
+    ce_time:
+      type: string
+      format: date-time
+      description: Timestamp of when the occurrence happened. Must adhere to RFC 3339.
+    content-type:
+      type: string
+      enum:
+        - application/avro
+
