@@ -52,13 +52,11 @@
 		<title short="CloudEvents">CloudEvents: One Event to Rule Them All</title>
 		<date short="2023-10-04">October 4, 2023</date>
 		<toc class="abstract">API management and governance in API landscapes are distinctively different from just looking at individual APIs. All the aspects of individual API apply as well, but there is the added aspect of achieving some coherence across the landscape. With this coherence, API designers and producers can more easily reuse design pattern and tooling, whereas API consumers can more easily understand APIs because they share design principles and building blocks. In the case of Event-Driven Architecture (EDA), the boundaries between APIs tend to be more blurry anyways because quite often event brokers are part of the landscape. CloudEvents establish a vocabulary and representations for describing event data across events and event producers. We'll take a look at the standard itself and at the most important vocabulary terms.</toc>
-<!--
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
--->
-		<slide id="getting-apis-to-work">
+		<slide id="channel">
 			<title>Getting APIs to Work</title>
 			<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
 				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
@@ -265,5 +263,27 @@
 				</ul>
 			</slide>
 		</part>
+	</presentation>
+	<presentation id="getting-apis-to-work">
+		<title short="Getting APIs to Work">Getting APIs to Work: Creating and Managing Valuable API Landscapes</title>
+		<date short="2023-10-05">October 5, 2023</date>
+		<toc class="abstract">There's no doubt that APIs are a key ingredient in any digitalization and digital transformation initiative. Balancing the efforts of the various aspects of API platforms and programs, however, can be a tricky thing. There are technical aspects regarding individual API designs, API management, and the API platform. Then there are business aspects when it comes to making sure that you're building the right APIs and that everybody acquires an API mindset in terms of designing and building API products. And then there are organizational aspects of making sure that team structures and practices take advantage of APIs, and making sure that the right stakeholders are involved at the right moment throughout the API lifecycle. Balancing all these bits and pieces is a complex task and we'll spend some time looking at the individual bits and pieces, relating them so that we can better understand what may be holding us back and where we should invest. This workshop is intended for developers who want to better understand the bigger picture of the API program and platform they're working with, API program and platform managers who want to get a better idea of how to balance their efforts, and business leaders who want a detailed look at how to manage the fabric that can make or break their digital transformation initiative.</toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<slide id="channel">
+			<title>Getting APIs to Work</title>
+			<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
+				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/fLZ5njRwtn0" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+				</div>
+			</div>
+			<div style=" float : right ; width : 44% ; margin : 0% 4% 0% 2% ; ">
+				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/wX3GMJY9B6A" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+				</div>
+			</div>
+		</slide>
 	</presentation>
 </hotspot>
