@@ -1,4 +1,4 @@
-# Slides for Presentations at Jax London 2023
+# Slides for Presentations at JAX London 2023
 
 
 ## License
