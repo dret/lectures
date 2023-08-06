@@ -2,6 +2,7 @@
 
 ## Day 1: API Product Design
 
-## Managing the API Lifecycle
+## Day 2: Managing the API Lifecycle
 
-## Scaling the API Practice
+## Day 3: Scaling the API Practice
+
