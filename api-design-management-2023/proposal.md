@@ -7,7 +7,13 @@ What distinguishes this course from others is a more holistic viewpoint. We star
 
 ## Day 1: API Product Design
 
+### Morning: API Foundations
+
+### Afternoon: The API Design Process
+
 ## Day 2: Managing the API Lifecycle
+
+### Morning: OpenAPI as your Source of Truth
 
 ## Day 3: Scaling the API Practice
 
