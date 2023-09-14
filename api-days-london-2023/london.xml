@@ -87,6 +87,12 @@
 			</slide>
 			<slide id="workflows">
 				<title>Workflows</title>
+				<ul>
+					<li>OpenAPI describes <q>atomic interactions</q> with resource-oriented APIs</li>
+					<li>Many/most APIs rely on meaningful combinations of individual interactions</li>
+					<li>Workflows represent the idea of interaction sequences within/across APIs</li>
+					<li>Workflows do not intend to be readily executable descriptions</li>
+				</ul>
 			</slide>
 			<slide id="oascomply">
 				<title>OpenAPI Compliance Project</title>
