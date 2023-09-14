@@ -92,6 +92,11 @@
 			</slide>
 			<slide id="overlays">
 				<title>OpenAPI Overlays</title>
+				<ul>
+					<li>OpenAPI documents are increasingly connecting tools and user groups</li>
+					<li>Not everybody wants/needs/should get the <q>full description of everything</q></li>
+					<li>Overlays support different <q>views</q> of the same OpenAPI documents</li>
+				</ul>
 			</slide>
 			<slide id="workflows">
 				<title>Workflows</title>
@@ -111,6 +116,10 @@
 			<slide id="api-technologies">
 				<title>API Technologies</title>
 				<img source='Postman 2023 State of the API Report' src="api-technologies.png" href="https://www.postman.com/state-of-api/api-technologies/#api-technologies" class="fullsize" />
+			</slide>
+			<slide id="moonwalk">
+				<title>OpenAPI 4.0: Moonwalk</title>
+				<img source='Moonwalk repo: https://github.com/OAI/moonwalk' src="moonwalk-structure.png" href="https://github.com/OAI/moonwalk" class="fullsize-shadow" />
 			</slide>
 		</part>
 		<part id="conclusions">
