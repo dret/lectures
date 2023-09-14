@@ -109,6 +109,12 @@
 			</slide>
 			<slide id="oascomply">
 				<title>OpenAPI Compliance Project</title>
+				<ul>
+					<li>OpenAPI is a semantically rich specification</li>
+					<li>Some relationships across the model are hard to identify and verify</li>
+					<li>OASComply define an abstract model of OpenAPI and constraints for this model</li>
+					<li>It will be easier for vendors and customers to verify specification compliance</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="openapi">
