@@ -83,6 +83,10 @@
 				<title>OpenAPI Tools</title>
 				<img src="openapi-tools.png" title="OpenAPI Tools" href="https://tools.openapis.org/" class="fullsize"/>
 			</slide>
+			<slide id="extensions">
+				<title>OpenAPI Extensions</title>
+				<listing src="openapi-amazon-extensions.json" line="21-38" href="https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-swagger-extensions-authorizer.html"/>
+			</slide>
 		</part>
 		<part id="oai-work">
 			<title>OAI Specification Work</title>
