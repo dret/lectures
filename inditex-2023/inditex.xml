@@ -45,13 +45,21 @@
 		</slide>
 		<part id="past">
 			<title short="The Past">The Past: A Brief History of API Management</title>
-			<slide id="gateway-saurus">
-				<title>The Age of the Gateway-Saurus</title>
-				<img source="Mark O'Neill" src="gateway-saurus.png" class="fullsize" />
+			<slide id="forward-proxy">
+				<title>Forward Proxy: Shielding Clients</title>
+				<img source='UpGuard Blog: "What is a Reverse Proxy Server?"' src="proxy-forward.png" href="https://www.upguard.com/blog/what-is-a-reverse-proxy" class="fullsize" />
+			</slide>
+			<slide id="forward-proxy">
+				<title>Reverse Proxy: Shielding Servers</title>
+				<img source='UpGuard Blog: "What is a Reverse Proxy Server?"' src="proxy-reverse.png" href="https://www.upguard.com/blog/what-is-a-reverse-proxy" class="fullsize" />
 			</slide>
 		</part>
 		<part id="present">
 			<title short="The Present">The Present: API Management Today</title>
+			<slide id="gateway-saurus">
+				<title>The Age of the Gateway-Saurus</title>
+				<img source="Mark O'Neill" src="gateway-saurus.png" class="fullsize" />
+			</slide>
 		</part>
 		<part id="future">
 			<title short="The Future">The Future: What to look out for</title>
