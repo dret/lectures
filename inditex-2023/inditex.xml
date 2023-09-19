@@ -136,6 +136,72 @@
 				<title>The End of Full Lifecycle API Management</title>
 				<img source="Mark O'Neill (Gartner): The End of Full Lifecycle API Management" src="end-of-full-lifecycle-api-management.png" href="https://www.linkedin.com/posts/markwoneill_market-guide-for-api-gateways-activity-7100687467694940160-Orb1" class="fullsize-shadow" />
 			</slide>
+			<part id="tech">
+				<title>Myth #1: APIs are about Technology</title>
+				<slide id="api-magic">
+					<title>APIs Create Modular and Scalable Businesses</title>
+					<ul>
+						<li>Digital Transformation</li>
+						<li>Move fast and break things</li>
+						<li>Loose coupling</li>
+						<li>The composable enterprise</li>
+						<li>The platform economy</li>
+						<li>The hockey stick</li>
+					</ul>
+				</slide>
+				<slide id="digital-transformation-definition">
+					<title>Digital Transformation Definition</title>
+					<blockquote>
+						<p>Digital Transformation <a href="https://hbr.org/2019/07/digital-doesnt-have-to-be-disruptive"><q>means adapting an organization's strategy and structure to capture opportunities enabled by digital technology.</q> <span style="font-size : 75% ;">(Nathan Furr and Andrew Shipilov, <q>Digital Doesn't Have to Be Disruptive</q>, Harvard Business Review 97(4), July/August 2019, pp. 94-103)</span></a></p>
+					</blockquote>
+				</slide>
+			</part>
+			<part id="monetization">
+				<title>Myth #2: API Monetization</title>
+				<slide id="business-model-overview">
+					<title>API Business Model Overview</title>
+					<img href="https://www.programmableweb.com/news/programmablewebs-guide-to-modern-api-business-models/analysis/2020/10/26" src="api-business-models.png" class="fullsize"/>
+				</slide>
+				<slide id="business-model-partner">
+					<title>Partner Business Models</title>
+					<img href="https://www.programmableweb.com/news/programmablewebs-guide-to-modern-api-business-models/analysis/2020/10/26" src="api-business-models-partner.png" class="fullsize"/>
+				</slide>
+				<slide id="business-model-partner-affiliate">
+					<title>Partner Business Model: Affiliate</title>
+					<img href="https://developer.walgreens.com/sites/default/files/v3_Native_PhotoPrintsAPI.html" title="Walgreens Native Photo Prints API" src="walgreens-native-photo-prints-api.png" class="fullsize"/>
+				</slide>
+				<slide id="business-model-internal">
+					<title>The 900lb Gorilla</title>
+					<img href="https://www.programmableweb.com/news/programmablewebs-guide-to-modern-api-business-models/analysis/2020/10/26" src="api-business-models-internal.png" class="fullsize"/>
+				</slide>
+				<slide id="indirect">
+					<title>Most API Value Creation is Indirect</title>
+					<ol>
+						<li>Using APIs to become better at internal reuse and cross-pollination</li>
+						<li>Reducing friction by having teams communicate via APIs</li>
+						<li>Using <q>API First</q> as a way to build everything as digital building blocks</li>
+					</ol>
+				</slide>
+			</part>
+			<part id="platforms">
+				<title>Myth #3: API Platforms</title>
+				<slide id="platform-types">
+					<title>What is a Platform?</title>
+					<ol>
+						<li>A <em>developer platform</em> that provides support for <em>developing applications</em></li>
+						<li>An <em>API platform</em> for discovering digital building blocks</li>
+						<li>A <em href="https://www.youtube.com/watch?v=MO1gvOdR84s">platform business</em> as a specific way to design &amp; scale a business model</li>
+					</ol>
+				</slide>
+				<slide id="platformize">
+					<title>But we're not Uber…</title>
+					<ul>
+						<li><em>Pure platform businesses</em> are fascinating but rare</li>
+						<li>Find a way how to <q>platformize</q> aspects of your value streams</li>
+						<li>Business input is essential and APIs are just the means to an end</li>
+					</ul>
+				</slide>
+			</part>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
