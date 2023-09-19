@@ -142,6 +142,22 @@
 				<title>API Landscape</title>
 				<img src="api-landscape.png" href="https://apilandscape.apiscene.io/" class="fullsize-shadow"/>
 			</slide>
+			<slide id="linting">
+				<title>Example 1: API Linting</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/Il5btHG_D74" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+			<slide id="fuzzing">
+				<title>Example 2: API Fuzzing</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/wX3GMJY9B6A" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
 		</part>
 		<part id="future">
 			<title short="The Future">The Future: What to look out for</title>
