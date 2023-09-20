@@ -49,7 +49,15 @@
 				<title>Information Management: A Proposal</title>
 				<img src="information-management-proposal.jpg" href="https://home.cern/science/computing/birth-web/short-history-web" title='Tim Berners-Lee: "Information Management: A Proposal", March 1989' class="fullsize-shadow" />
 			</slide>
-			<slide id="">
+			<slide id="forward-proxy">
+				<title>Forward Proxy: Shielding Clients</title>
+				<img source='UpGuard Blog: "What is a Reverse Proxy Server?"' src="proxy-forward.png" href="https://www.upguard.com/blog/what-is-a-reverse-proxy" class="fullsize" />
+			</slide>
+			<slide id="forward-proxy">
+				<title>Reverse Proxy: Shielding Servers</title>
+				<img source='UpGuard Blog: "What is a Reverse Proxy Server?"' src="proxy-reverse.png" href="https://www.upguard.com/blog/what-is-a-reverse-proxy" class="fullsize" />
+			</slide>
+			<slide id="timeline">
 				<title>From the Human Web to the Machine Web</title>
 				<ul>
 					<li>1990: First server at CERN</li>
@@ -59,14 +67,6 @@
 					<li>2000: "Internet as a Service": Salesforce, eBay, Amazon</li>
 					<li>2003: "Building Blocks": Delicious, Flickr, Facebook, Twitter, Foursquare, Twilio</li>
 				</ul>
-			</slide>
-			<slide id="forward-proxy">
-				<title>Forward Proxy: Shielding Clients</title>
-				<img source='UpGuard Blog: "What is a Reverse Proxy Server?"' src="proxy-forward.png" href="https://www.upguard.com/blog/what-is-a-reverse-proxy" class="fullsize" />
-			</slide>
-			<slide id="forward-proxy">
-				<title>Reverse Proxy: Shielding Servers</title>
-				<img source='UpGuard Blog: "What is a Reverse Proxy Server?"' src="proxy-reverse.png" href="https://www.upguard.com/blog/what-is-a-reverse-proxy" class="fullsize" />
 			</slide>
 			<slide id="api-management-technical">
 				<title>Securing APIs</title>
