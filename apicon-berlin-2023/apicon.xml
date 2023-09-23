@@ -36,8 +36,176 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+		<part id="past">
+			<title short="The Past">The Past: A Brief History of API Management</title>
+			<slide id="big-bang">
+				<title>Information Management: A Proposal</title>
+				<img src="information-management-proposal.jpg" href="https://home.cern/science/computing/birth-web/short-history-web" title='Tim Berners-Lee: "Information Management: A Proposal", March 1989' class="fullsize-shadow" />
+			</slide>
+			<slide id="forward-proxy">
+				<title>Forward Proxy: Shielding Clients</title>
+				<img source='UpGuard Blog: "What is a Reverse Proxy Server?"' src="proxy-forward.png" href="https://www.upguard.com/blog/what-is-a-reverse-proxy" class="fullsize" />
+			</slide>
+			<slide id="forward-proxy">
+				<title>Reverse Proxy: Shielding Servers</title>
+				<img source='UpGuard Blog: "What is a Reverse Proxy Server?"' src="proxy-reverse.png" href="https://www.upguard.com/blog/what-is-a-reverse-proxy" class="fullsize" />
+			</slide>
+			<slide id="timeline">
+				<title>From the Human Web to the Machine Web</title>
+				<ul>
+					<li>1990: First server at CERN</li>
+					<li>1993: NCSA releases Mosaic browser</li>
+					<li>1995: Amazon</li>
+					<li>1998: Extensible Markup Language (XML)</li>
+					<li>2000: SOAP</li>
+					<li>2000: "Internet as a Service": Salesforce, eBay, Amazon</li>
+					<li>2003: "Building Blocks": Delicious, Flickr, Facebook, Twitter, Foursquare, Twilio</li>
+				</ul>
+			</slide>
+			<slide id="api-management-technical">
+				<title>Securing APIs</title>
+				<img src="API-management-technical.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-management-lifecycle">
+				<title>Supporting the API Lifecycle</title>
+				<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-management-product">
+				<title>APIs as Business Building Blocks</title>
+				<img src="API-management-product.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-management-marketing">
+				<title>API Consumption Matters</title>
+				<img src="API-management-marketing.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-marketing">
+				<title>Having APIs isn't Good Enough</title>
+				<ul>
+					<li>APIs only provide value when they being consumed</li>
+					<li><em>API Marketing</em> makes sure to get the most out of API products</li>
+					<li>Increase adoption by decoupling production and marketing</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="present">
+			<title short="The Present">The Present: API Management Today</title>
+			<slide id="gateway-saurus">
+				<title>The Age of the Gateway-Saurus</title>
+				<img source="Mark O'Neill" src="gateway-saurus.png" class="fullsize" />
+			</slide>
+			<slide id="diversity">
+				<title>Diversity in the API Space</title>
+				<ul>
+					<li>More API styles</li>
+					<li>More deployment models</li>
+					<li>Larger set of API users</li>
+					<li>Growing landscape of service providers</li>
+				</ul>
+			</slide>
+			<slide id="api-landscape">
+				<title>API Landscape</title>
+				<img src="api-landscape.png" href="https://apilandscape.apiscene.io/" class="fullsize-shadow"/>
+			</slide>
+			<slide id="linting">
+				<title>Example 1: API Linting</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/Il5btHG_D74" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+			<slide id="mocking">
+				<title>Example 2: Mocking</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/aH0W3mQyOOA" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+			<slide id="fuzzing">
+				<title>Example 3: API Fuzzing</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/wX3GMJY9B6A" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+		</part>
+		<part id="future">
+			<title short="The Future">The Future: What to look out for</title>
+			<slide id="flapim-end">
+				<title>The End of Full Lifecycle API Management</title>
+				<img source="Mark O'Neill (Gartner): The End of Full Lifecycle API Management" src="end-of-full-lifecycle-api-management.png" href="https://www.linkedin.com/posts/markwoneill_market-guide-for-api-gateways-activity-7100687467694940160-Orb1" class="fullsize-shadow" />
+			</slide>
+			<part id="tech">
+				<title>Myth #1: APIs are about Technology</title>
+				<slide id="api-magic">
+					<title>APIs Create Modular and Scalable Businesses</title>
+					<ul>
+						<li>Digital Transformation</li>
+						<li>Move fast and break things</li>
+						<li>Loose coupling</li>
+						<li>The composable enterprise</li>
+						<li>The platform economy</li>
+						<li>The hockey stick</li>
+					</ul>
+				</slide>
+				<slide id="digital-transformation-definition">
+					<title>Digital Transformation Definition</title>
+					<blockquote>
+						<p>Digital Transformation <a href="https://hbr.org/2019/07/digital-doesnt-have-to-be-disruptive"><q>means adapting an organization's strategy and structure to capture opportunities enabled by digital technology.</q> <span style="font-size : 75% ;">(Nathan Furr and Andrew Shipilov, <q>Digital Doesn't Have to Be Disruptive</q>, Harvard Business Review 97(4), July/August 2019, pp. 94-103)</span></a></p>
+					</blockquote>
+				</slide>
+			</part>
+			<part id="monetization">
+				<title>Myth #2: API Monetization</title>
+				<slide id="business-model-overview">
+					<title>API Business Model Overview</title>
+					<img href="https://www.programmableweb.com/news/programmablewebs-guide-to-modern-api-business-models/analysis/2020/10/26" src="api-business-models.png" class="fullsize"/>
+				</slide>
+				<slide id="business-model-internal">
+					<title>The 900lb Gorilla</title>
+					<img href="https://www.programmableweb.com/news/programmablewebs-guide-to-modern-api-business-models/analysis/2020/10/26" src="api-business-models-internal.png" class="fullsize"/>
+				</slide>
+				<slide id="indirect">
+					<title>Most API Value Creation is Indirect</title>
+					<ol>
+						<li>Using APIs to become better at internal reuse and cross-pollination</li>
+						<li>Reducing friction by having teams communicate via APIs</li>
+						<li>Using <q>API First</q> as a way to build everything as digital building blocks</li>
+					</ol>
+				</slide>
+			</part>
+			<part id="platforms">
+				<title>Myth #3: API Platforms</title>
+				<slide id="platform-types">
+					<title>What is a Platform?</title>
+					<ol>
+						<li>A <em>developer platform</em> that provides support for <em>developing applications</em></li>
+						<li>An <em>API platform</em> for discovering digital building blocks</li>
+						<li>A <em href="https://www.youtube.com/watch?v=MO1gvOdR84s">platform business</em> as a specific way to design &amp; scale a business model</li>
+					</ol>
+				</slide>
+				<slide id="platformize">
+					<title>But we're not Uber…</title>
+					<ul>
+						<li><em>Pure platform businesses</em> are fascinating but rare</li>
+						<li>Find a way how to <q>platformize</q> aspects of your value streams</li>
+						<li>Business input is essential and APIs are just the means to an end</li>
+					</ul>
+				</slide>
+			</part>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
+			<slide id="take-away">
+				<title>Follow the Flow</title>
+				<ul>
+					<li>Learn from the Past</li>
+					<li>Start with the Present</li>
+					<li>Plan for the Future</li>
+				</ul>
+			</slide>
 			<slide id="thanks">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
