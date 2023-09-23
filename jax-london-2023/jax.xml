@@ -52,20 +52,20 @@
 		<title short="Error Messages for HTTP APIs">Error Messages for HTTP APIs: Standards, Patterns, and Practices</title>
 		<date short="2023-10-04">October 4, 2023</date>
 		<toc class="abstract">Reporting errors is a fundamental aspect of API design. The way it's done can differ between APIs, API technologies, and API styles, but since it is a very common pattern it makes sense to not reinvent the wheel for every single API. We look at how to report errors in HTTP APIs but the lessons learned in this session can be applied to other technologies and styles as well. Beyond the format there also is the question which patterns to apply so that API designers get as much support as possible from their platform when it comes to managing the error messages of their APIs. The format that we discuss is a successor of the popular RFC 7807 error format. We'll discuss why there is a new version, what the changes are, and how to best use it in your APIs and your API landscape.</toc>
-		<slide id="summary">
+		<slide id="summary-error-messages">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
-		<slide id="channel">
+		<slide id="getting-apis-to-work-error-messages">
 			<title>Getting APIs to Work</title>
 			<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
 				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
-					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/fLZ5njRwtn0" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/PlvftxDa00M" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 				</div>
 			</div>
 			<div style=" float : right ; width : 44% ; margin : 0% 4% 0% 2% ; ">
 				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
-					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/wX3GMJY9B6A" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/4FzpJ6CDro4" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 				</div>
 			</div>
 		</slide>
@@ -81,20 +81,20 @@
 		<title short="CloudEvents">CloudEvents: One Event to Rule Them All</title>
 		<date short="2023-10-04">October 4, 2023</date>
 		<toc class="abstract">API management and governance in API landscapes are distinctively different from just looking at individual APIs. All the aspects of individual API apply as well, but there is the added aspect of achieving some coherence across the landscape. With this coherence, API designers and producers can more easily reuse design pattern and tooling, whereas API consumers can more easily understand APIs because they share design principles and building blocks. In the case of Event-Driven Architecture (EDA), the boundaries between APIs tend to be more blurry anyways because quite often event brokers are part of the landscape. CloudEvents establish a vocabulary and representations for describing event data across events and event producers. We'll take a look at the standard itself and at the most important vocabulary terms.</toc>
-		<slide id="summary">
+		<slide id="summary-cloudevents">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
-		<slide id="channel">
+		<slide id="getting-apis-to-work-cloudevents">
 			<title>Getting APIs to Work</title>
 			<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
 				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
-					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/fLZ5njRwtn0" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/PlvftxDa00M" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 				</div>
 			</div>
 			<div style=" float : right ; width : 44% ; margin : 0% 4% 0% 2% ; ">
 				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
-					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/wX3GMJY9B6A" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/4FzpJ6CDro4" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 				</div>
 			</div>
 		</slide>
@@ -266,7 +266,7 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="conclusions">
+		<part id="conclusions-cloudevents">
 			<title>Conclusions</title>
 			<slide id="one-model">
 				<title>One Event (Model) to Rule Them All</title>
@@ -278,7 +278,7 @@
 					<li>CloudEvents and AsyncAPI work together as a team</li>
 				</ul>
 			</slide>
-			<slide id="thanks">
+			<slide id="thanks-cloudevents">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
