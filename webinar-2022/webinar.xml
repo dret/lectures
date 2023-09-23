@@ -24,32 +24,12 @@
 			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
 		</div>
 	</license>
-	<toc name="toc.html">
-		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
-			<thead>
-				<tr>
-					<th valign="bottom">Title</th>
-					<th valign="bottom">Slides</th>
-					<th valign="bottom">Additional Resources</th>
-				</tr>
-			</thead>
-			<tbody>
-				<hotspot:for-each-presentation>
-					<tr class="vevent">
-						<td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
-						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
-						<td align="center"><hotspot:toc class="resources"/></td>
-					</tr>
-				</hotspot:for-each-presentation>
-			</tbody>
-		</table>
-	</toc>
 	<title>Axway API Talk</title>
 	<author>Erik Wilde <a href="https://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
 	<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://catalysts.axway.com/">Catalyst</a></affiliation>
 	<date short="2022-06-30">June 30, 2022</date>
 	<copyright>2022 Erik Wilde</copyright>
-	<presentation id="five-good-api-practices">
+	<presentation id="index">
 		<title short="Five Good API Practices">Five Good Practices For Your APIs</title>
 		<toc class="resources"><a title='"The Execution Gap: From API Vision to API Value", May 2022' href="https://www.youtube.com/watch?v=MlrDXdOY_E8">Execution Gap</a>&#160;· <a href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020'>Stalled Digital Transformation</a>&#160;· <a href="https://dret.github.io/guidelines/">API Guidelines in the Wild</a>&#160;· <a href="https://www.programmableweb.com/news/programmablewebs-guide-to-modern-api-business-models/analysis/2020/10/26" title='David Berlind, "ProgrammableWeb&apos;s Guide to Modern API Business Models", October 2020'>API Business Models</a></toc>
 		<part id="five-intro">
