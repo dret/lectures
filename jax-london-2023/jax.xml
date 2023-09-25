@@ -75,10 +75,16 @@
 		<part id="problem-details">
 			<title>HTTP Problem Details</title>
 		</part>
-		<part id="rfc9457">
+		<part id="rfc7807-rfc9457">
 			<title>RFC 9457: The New RFC 7804</title>
+			<slide id="rfc7807">
+				<title><a href="https://www.rfc-editor.org/rfc/rfc7807.html">RFC 7807</a> (March 2016)</title>
+			</slide>
 			<slide id="ietf">
 				<title>The IETF Process</title>
+			</slide>
+			<slide id="rfc9457">
+				<title><a href="https://www.rfc-editor.org/rfc/rfc9457.html">RFC 9457</a> (July 2023)</title>
 			</slide>
 		</part>
 		<part id="problem-types">
