@@ -69,8 +69,17 @@
 				</div>
 			</div>
 		</slide>
-		<part id="governance">
+		<part id="context">
 			<title>API Design, Guidelines, and Governance</title>
+			<slide id="design">
+				<title>API Design</title>
+			</slide>
+			<slide id="guidelines">
+				<title>API Guidelines</title>
+			</slide>
+			<slide id="governance">
+				<title>API Governance</title>
+			</slide>
 		</part>
 		<part id="problem-details">
 			<title>HTTP Problem Details</title>
