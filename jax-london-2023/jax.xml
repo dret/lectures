@@ -178,6 +178,18 @@
 				<title><a href="https://www.rfc-editor.org/rfc/rfc9457.html">RFC 9457</a> (July 2023)</title>
 				<img href="https://datatracker.ietf.org/doc/rfc9457/" title="IETF Datatracker: RFC 9457" src="datatracker-rfc-9457.png" class="fullsize-shadow"/>
 			</slide>
+			<slide id="differences">
+				<title>Differences between RFC 7807 and RFC 9457</title>
+				<ul>
+					<li>There are no breaking changes</li>
+					<li>Three issues seen from usage in the wild</li>
+					<ul>
+						<li>Registry of common problem type URIs</li>
+						<li>Clarification of how to treat multiple problems</li>
+						<li>Guidance for using type URIs that cannot be dereferenced</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="problem-types">
 			<title>Managing Problem Types</title>
