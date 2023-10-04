@@ -124,7 +124,7 @@
 			</slide>
 			<slide id="zalando">
 				<title>API Guideline in the Wild</title>
-				<img href="https://opensource.zalando.com/restful-api-guidelines/#http-status-codes-and-errors" title="Zalando RESTful API and Event Guidelines " src="zalando-guideline-http-problem.png" class="fullsize"/>
+				<img href="https://opensource.zalando.com/restful-api-guidelines/#http-status-codes-and-errors" title="Zalando RESTful API and Event Guidelines" src="zalando-guideline-http-problem.png" class="fullsize"/>
 			</slide>
 			<slide id="governance">
 				<title>API Governance</title>
@@ -172,12 +172,11 @@
 			<title>RFC 9457: The New RFC 7804</title>
 			<slide id="rfc7807">
 				<title><a href="https://www.rfc-editor.org/rfc/rfc7807.html">RFC 7807</a> (March 2016)</title>
-			</slide>
-			<slide id="ietf">
-				<title>The IETF Process</title>
+				<img href="https://datatracker.ietf.org/doc/rfc7807/" title="IETF Datatracker: RFC 7807" src="datatracker-rfc-7807.png" class="fullsize-shadow"/>
 			</slide>
 			<slide id="rfc9457">
 				<title><a href="https://www.rfc-editor.org/rfc/rfc9457.html">RFC 9457</a> (July 2023)</title>
+				<img href="https://datatracker.ietf.org/doc/rfc9457/" title="IETF Datatracker: RFC 9457" src="datatracker-rfc-9457.png" class="fullsize-shadow"/>
 			</slide>
 		</part>
 		<part id="problem-types">
