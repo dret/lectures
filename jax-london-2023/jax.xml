@@ -86,6 +86,35 @@
 		</part>
 		<part id="problem-details">
 			<title>HTTP Problem Details</title>
+			<slide id="http-problem">
+				<title>HTTP Problem Details</title>
+				<ul>
+					<li><a href="http://webconcepts.info/concepts/http-status-code/">HTTP status codes</a> are useful but minimalistic</li>
+					<ul>
+						<li>Their well-defined semantics allow intermediaries to act on them</li>
+						<li>Servers may want to convey additional information with them</li>
+					</ul>
+					<li>APIs may include <em>problem details</em> as part of their representation designs</li>
+					<ul>
+						<li>Using a standard reduces the design work on the server side</li>
+						<li>Using a standard allows developers to more easily understand the design</li>
+						<li>Using a standard allows problem details analysis across APIs</li>
+					</ul>
+					<li>RFC <a title='Mark Nottingham and Erik Wilde, "Problem Details for HTTP APIs", Internet RFC 7807, March 2016' href="https://www.rfc-editor.org/rfc/rfc9457.html">7807</a>/<a title='Mark Nottingham, Erik Wilde, and Sanjay Dalal, "Problem Details for HTTP APIs", Internet RFC 9457, July 2023' href="https://www.rfc-editor.org/rfc/rfc9457.html">9457</a> defines a JSON-centric model for problem details</li>
+					<ul>
+						<li><code>application/problem+json</code> is a JSON-based representation of the problem detail model</li>
+						<li><code>application/problem+xml</code> is an XML-based representation of the problem detail model</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="http-problem-json">
+				<title>HTTP Problem Details: JSON</title>
+				<listing href="https://tools.ietf.org/html/rfc9457#section-3" src="http-problem-details.json"/>
+			</slide>
+			<slide id="http-problem-xml">
+				<title>HTTP Problem Details: XML</title>
+				<listing href="https://tools.ietf.org/html/rfc9457#appendix-B" src="http-problem-details.xml"/>
+			</slide>
 		</part>
 		<part id="rfc7807-rfc9457">
 			<title>RFC 9457: The New RFC 7804</title>
