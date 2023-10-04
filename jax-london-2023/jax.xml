@@ -197,13 +197,21 @@
 		</part>
 		<part id="conclusions-error-messages">
 			<title>Conclusions</title>
+			<slide id="shift-up">
+				<title>Shift left? Shift up!</title>
+				<ul>
+					<li>Product people: Raise an issue when inventing patterns</li>
+					<li>Platform people: Identify the <q>biggest bang for the reuse buck</q></li>
+					<li>Tooling people: Bake open and extensible patterns into tools</li>
+				</ul>
+			</slide>
 			<slide id="thanks-error-messages">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
 					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
 					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-					<li>Slides online: <a href="http://dret.net/lectures/inditex-2023/"><code>dret.net/lectures/jax-london-2023/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/jax-london-2023/"><code>dret.net/lectures/jax-london-2023/</code></a></li>
 				</ul>
 			</slide>
 		</part>
@@ -415,7 +423,7 @@
 				<ul>
 					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
 					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-					<li>Slides online: <a href="http://dret.net/lectures/inditex-2023/"><code>dret.net/lectures/jax-london-2023/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/jax-london-2023/"><code>dret.net/lectures/jax-london-2023/</code></a></li>
 				</ul>
 			</slide>
 		</part>
