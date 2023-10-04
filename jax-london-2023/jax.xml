@@ -73,15 +73,67 @@
 			<title>APIs, Guidelines, and Governance</title>
 			<slide id="api">
 				<title>API as Interfaces</title>
+				<ul>
+					<li>APIs are technical interfaces</li>
+					<li>APIs should use <em href="https://en.wikipedia.org/wiki/Information_hiding">information hiding</em></li>
+					<li>APIs are built on a foundation of <em>styles</em> and <em>technologies</em></li>
+				</ul>
 			</slide>
-			<slide id="api-productdesign">
+			<slide id="api-product">
 				<title>API as Products</title>
+				<ul>
+					<li>Good API design goes <em>outside-in</em> starting from consumer needs</li>
+					<li>Good products minimizing the cognitive load of consumers</li>
+					<li>API designers should focus on business logic concerns</li>
+					<li>API platforms are supporting API producers</li>
+				</ul>
+			</slide>
+			<slide id="effective-teams">
+				<title>What is an Effective Team?</title>
+				<ul>
+					<li>A team spending less time with generic API-related tasks</li>
+					<ul>
+						<li>Figuring out the general guardrails for API design</li>
+						<li>Designing, implementing, exposing, securing, and monitoring APIs</li>
+						<li>Deploying APIs and making them discoverable for consumers</li>
+					</ul>
+					<li>A team spending more time addressing domain issues</li>
+					<ul>
+						<li>Engaging with consumers and designing a good API</li>
+						<li>Making sure that consumer feedback is collected and used</li>
+						<li>Contributing to the shared API practices of the organization</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="guidelines">
 				<title>API Guidelines</title>
+				<ul>
+					<li>More API teams mean more ways to solve the same problem</li>
+					<ul>
+						<li>Solving <q>API problems</q> is not what teams should focus on</li>
+						<li>Solving <q>API problems</q> in a consistent way helps the API landscape</li>
+					</ul>
+					<ul>Anatomy of a Good Guideline</ul>
+					<ul>
+						<li><em>Why</em> does the guideline exist?</li>
+						<li><em>What</em> can be done to address the described issue</li>
+						<li><em>How</em> to implement the solution</li>
+						<li><em>Testing</em> that the guideline has been followed</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="zalando">
+				<title>API Guideline in the Wild</title>
+				<img href="https://opensource.zalando.com/restful-api-guidelines/#http-status-codes-and-errors" title="Zalando RESTful API and Event Guidelines " src="zalando-guideline-http-problem.png" class="fullsize"/>
 			</slide>
 			<slide id="governance">
 				<title>API Governance</title>
+				<ul>
+					<li>Balancing coherence and autonomy in large organizations</li>
+					<li>Making it easy to do the right thing</li>
+					<li>Making it hard to do things wrong</li>
+					<li>Using tools, processes, and platforms to <q>engineer the engineers</q></li>
+				</ul>
 			</slide>
 		</part>
 		<part id="problem-details">
