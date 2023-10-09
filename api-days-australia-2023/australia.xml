@@ -46,78 +46,22 @@
 	<author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
 	<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
 	<copyright>2023 Erik Wilde</copyright>
-	<presentation id="great-unbundling">
-		<title short="The New API Stack">The New API Stack: The Great Unbundling</title>
-		<toc class="abstract">API Management has come a long way, starting from being specifically about securing and managing API endpoints to a much bigger scope today. At one stage, "Full Lifecycle API Management" was assumed to be a new trend, but initially it felt a bit like we were entering an age of "API Management Monoliths". What's the alternative, and what can you do to make sure that you are not painting yourself into an API management corner? Welcome to the great unbundling, a trend that we have seen over the last years where we see a flourishing ecosystem of focused and specialized tools. At the same time, their openness ensures that these tools can be combined freely so that everybody can easily build their very own "Full Lifecycle API Management" solution.</toc>
-		<date short="2023-10-11">October 11, 2023</date>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
-		</slide>
-		<slide id="getting-apis-to-work">
-			<title>Getting APIs to Work</title>
-			<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
-				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
-					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/yGJ9R2lqKPg" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
-				</div>
-			</div>
-			<div style=" float : right ; width : 44% ; margin : 0% 4% 0% 2% ; ">
-				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
-					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/tq-cQ1_KkR4" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
-				</div>
-			</div>
-		</slide>
-		<part id="history">
-			<title>A Brief History of API Management</title>
-			<slide id="gateway-saurus">
-				<title>The Age of the Gateway-Saurus</title>
-				<img source="Mark O'Neill" src="gateway-saurus.png" class="fullsize" />
-			</slide>
-		</part>
-		<part id="future">
-			<title short="The Future">The Future: What to look out for</title>
-			<slide id="api-landscape">
-				<title>API Landscape</title>
-				<img src="api-landscape.png" href="https://apilandscape.apiscene.io/" class="fullsize-shadow"/>
-			</slide>
-			<slide id="flapim-end">
-				<title>The End of Full Lifecycle API Management</title>
-				<img source="Mark O'Neill (Gartner): The End of Full Lifecycle API Management" src="end-of-full-lifecycle-api-management.png" href="https://www.linkedin.com/posts/markwoneill_market-guide-for-api-gateways-activity-7100687467694940160-Orb1" class="fullsize-shadow" />
-			</slide>
-			<slide id="api-all-the-apis">
-				<title>API all the APIs</title>
-				<img src="apis-json-poll.png" href="https://www.linkedin.com/feed/update/urn:li:activity:7112082280734408704/" class="fullsize-shadow" />
-			</slide>
-		</part>	
-		<part id="conclusions">
-			<title>Conclusions</title>
-			<slide id="thanks">
-				<title>Thank You!</title>
-				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-				<ul>
-					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-					<li>Slides online: <a href="http://dret.net/lectures/api-days-australia-2023/"><code>dret.net/lectures/api-days-australia-2023/</code></a></li>
-				</ul>
-			</slide>
-		</part>
-	</presentation>
 	<presentation id="oai-track">
 		<title short="OAI Track">OAI Track Introduction and the State of OpenAPI</title>
 		<author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
 		<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
 		<date short="2023-10-12">October 12, 2023</date>
 		<copyright>2023 Erik Wilde</copyright>
-		<slide id="getting-apis-to-work">
+		<slide id="getting-apis-to-work-oai">
 			<title>Getting APIs to Work</title>
 			<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
 				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
-					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/3ZIT-8w4twk" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/Keax6_SP77A" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 				</div>
 			</div>
 			<div style=" float : right ; width : 44% ; margin : 0% 4% 0% 2% ; ">
 				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
-					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/JszAmJaXq54" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/ErJ3cDkYuqQ" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 				</div>
 			</div>
 		</slide>
@@ -227,6 +171,64 @@
 					<li>Join the community: <code href="https://github.com/OAI/community" title="OAI Community">github.com/OAI/community</code></li>
 					<li>All technical and special interest groups meetings: <code href="https://www.openapis.org/calendar" title="OAI Community Calendar">openapis.org/calendar</code></li>
 					<li>Upcoming events (including OAI Tracks): <code href="https://www.openapis.org/events" title="OAI Events">openapis.org/events</code></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="great-unbundling">
+		<title short="The New API Stack">The New API Stack: The Great Unbundling</title>
+		<toc class="abstract">API Management has come a long way, starting from being specifically about securing and managing API endpoints to a much bigger scope today. At one stage, "Full Lifecycle API Management" was assumed to be a new trend, but initially it felt a bit like we were entering an age of "API Management Monoliths". What's the alternative, and what can you do to make sure that you are not painting yourself into an API management corner? Welcome to the great unbundling, a trend that we have seen over the last years where we see a flourishing ecosystem of focused and specialized tools. At the same time, their openness ensures that these tools can be combined freely so that everybody can easily build their very own "Full Lifecycle API Management" solution.</toc>
+		<date short="2023-10-11">October 11, 2023</date>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract">
+				<toc class="abstract"/>
+			</p>
+		</slide>
+		<slide id="getting-apis-to-work-keynote">
+			<title>Getting APIs to Work</title>
+			<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
+				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/Keax6_SP77A" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+				</div>
+			</div>
+			<div style=" float : right ; width : 44% ; margin : 0% 4% 0% 2% ; ">
+				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/ErJ3cDkYuqQ" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+				</div>
+			</div>
+		</slide>
+		<part id="history">
+			<title>A Brief History of API Management</title>
+			<slide id="gateway-saurus">
+				<title>The Age of the Gateway-Saurus</title>
+				<img source="Mark O'Neill" src="gateway-saurus.png" class="fullsize" />
+			</slide>
+		</part>
+		<part id="future">
+			<title short="The Future">The Future: What to look out for</title>
+			<slide id="api-landscape">
+				<title>API Landscape</title>
+				<img src="api-landscape.png" href="https://apilandscape.apiscene.io/" class="fullsize-shadow"/>
+			</slide>
+			<slide id="flapim-end">
+				<title>The End of Full Lifecycle API Management</title>
+				<img source="Mark O'Neill (Gartner): The End of Full Lifecycle API Management" src="end-of-full-lifecycle-api-management.png" href="https://www.linkedin.com/posts/markwoneill_market-guide-for-api-gateways-activity-7100687467694940160-Orb1" class="fullsize-shadow" />
+			</slide>
+			<slide id="api-all-the-apis">
+				<title>API all the APIs</title>
+				<img src="apis-json-poll.png" href="https://www.linkedin.com/feed/update/urn:li:activity:7112082280734408704/" class="fullsize-shadow" />
+			</slide>
+		</part>	
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="thanks">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/api-days-australia-2023/"><code>dret.net/lectures/api-days-australia-2023/</code></a></li>
 				</ul>
 			</slide>
 		</part>
