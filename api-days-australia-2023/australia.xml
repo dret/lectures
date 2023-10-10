@@ -204,9 +204,97 @@
 				<title>1968: First Light for <q>API</q></title>
 				<img source='Ira W. Cotton, Frank S. Greatorex, "Data structures and techniques for remote computer graphics", Proceedings of the December Fall Joint Computer Conference AFIPS &apos;68, Pages 533–544, https://doi.org/10.1145/1476589.1476661' src="application-program-interface.png" href="https://dl.acm.org/doi/pdf/10.1145/1476589.1476661" class="fullsize-shadow" />
 			</slide>
+			<slide id="big-bang">
+				<title>Information Management: A Proposal</title>
+				<img src="information-management-proposal.jpg" href="https://home.cern/science/computing/birth-web/short-history-web" title='Tim Berners-Lee: "Information Management: A Proposal", March 1989' class="fullsize-shadow" />
+			</slide>
+			<slide id="forward-proxy">
+				<title>Forward Proxy: Shielding Clients</title>
+				<img source='UpGuard Blog: "What is a Reverse Proxy Server?"' src="proxy-forward.png" href="https://www.upguard.com/blog/what-is-a-reverse-proxy" class="fullsize" />
+			</slide>
+			<slide id="forward-proxy">
+				<title>Reverse Proxy: Shielding Servers</title>
+				<img source='UpGuard Blog: "What is a Reverse Proxy Server?"' src="proxy-reverse.png" href="https://www.upguard.com/blog/what-is-a-reverse-proxy" class="fullsize" />
+			</slide>
+			<slide id="timeline">
+				<title>From the Human Web to the Machine Web</title>
+				<ul>
+					<li>1990: First server at CERN</li>
+					<li>1993: NCSA releases Mosaic browser</li>
+					<li>1995: Amazon</li>
+					<li>1998: Extensible Markup Language (XML)</li>
+					<li>2000: SOAP</li>
+					<li>2000: "Internet as a Service": Salesforce, eBay, Amazon</li>
+					<li>2003: "Building Blocks": Delicious, Flickr, Facebook, Twitter, Foursquare, Twilio</li>
+				</ul>
+			</slide>
+			<slide id="api-management-technical">
+				<title>Securing APIs</title>
+				<img src="API-management-technical.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-management-lifecycle">
+				<title>Supporting the API Lifecycle</title>
+				<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-management-product">
+				<title>APIs as Business Building Blocks</title>
+				<img src="API-management-product.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-management-marketing">
+				<title>API Consumption Matters</title>
+				<img src="API-management-marketing.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-marketing">
+				<title>Having APIs isn't Good Enough</title>
+				<ul>
+					<li>APIs only provide value when they being consumed</li>
+					<li><em>API Marketing</em> makes sure to get the most out of API products</li>
+					<li>Increase adoption by decoupling production and marketing</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="present">
+			<title short="The Present">The Present: API Management Today</title>
 			<slide id="gateway-saurus">
 				<title>The Age of the Gateway-Saurus</title>
 				<img source="Mark O'Neill" src="gateway-saurus.png" class="fullsize" />
+			</slide>
+			<slide id="diversity">
+				<title>Diversity in the API Space</title>
+				<ul>
+					<li>More API styles</li>
+					<li>More deployment models</li>
+					<li>Larger set of API users</li>
+					<li>Growing landscape of service providers</li>
+				</ul>
+			</slide>
+			<slide id="api-landscape">
+				<title>API Landscape</title>
+				<img src="api-landscape.png" href="https://apilandscape.apiscene.io/" class="fullsize-shadow"/>
+			</slide>
+			<slide id="linting">
+				<title>Example 1: API Linting</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/Il5btHG_D74" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+			<slide id="mocking">
+				<title>Example 2: Mocking</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/aH0W3mQyOOA" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+			<slide id="fuzzing">
+				<title>Example 3: API Fuzzing</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/wX3GMJY9B6A" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
 			</slide>
 		</part>
 		<part id="future">
