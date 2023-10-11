@@ -235,7 +235,7 @@
 				<img src="API-management-technical.png" class="fullsize-shadow"/>
 			</slide>
 			<slide id="api-management-lifecycle">
-				<title>Supporting the API Lifecycle</title>
+				<title>Supporting the Full API Lifecycle</title>
 				<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
 			</slide>
 			<slide id="api-management-product">
@@ -245,14 +245,6 @@
 			<slide id="api-management-marketing">
 				<title>API Consumption Matters</title>
 				<img src="API-management-marketing.png" class="fullsize-shadow"/>
-			</slide>
-			<slide id="api-marketing">
-				<title>Having APIs isn't Good Enough</title>
-				<ul>
-					<li>APIs only provide value when they being consumed</li>
-					<li><em>API Marketing</em> makes sure to get the most out of API products</li>
-					<li>Increase adoption by decoupling production and marketing</li>
-				</ul>
 			</slide>
 		</part>
 		<part id="present">
@@ -316,11 +308,28 @@
 		</part>	
 		<part id="meaning">
 			<title>But … What Does That Mean?</title>
-			<slide id="api-users">
-				<title>API Users</title>
+			<slide id="api-developers">
+				<title>API Developers</title>
+				<ul>
+					<li>Learn about API trends and tooling</li>
+					<li>Explore and possibly challenge API guardrails</li>
+					<li>Talk to your platform team: It's good for everybody</li>
+				</ul>
+			</slide>
+			<slide id="api-platformers">
+				<title>API Platformers</title>
+				<ul>
+					<li>Build open platforms that can grow and evolve</li>
+					<li>Observe and explore the ever-evolving API landscape</li>
+					<li>Screen tooling for automation and composition capabilities</li>
+				</ul>
 			</slide>
 			<slide id="api-vendors">
 				<title>API Vendors</title>
+				<ul>
+					<li>Use openness as differentiation: Not everybody has it</li>
+					<li>Create stories that contextualize your product: Show the bigger picture</li>
+				</ul>
 			</slide>
 			<slide id="ai">
 				<title>AI all the APIs</title>
