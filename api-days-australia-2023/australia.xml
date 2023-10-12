@@ -181,14 +181,12 @@
 		<title short="The New API Stack">The New API Stack: The Great Unbundling</title>
 		<toc class="abstract">API Management has come a long way, starting from being specifically about securing and managing API endpoints to a much bigger scope today. At one stage, "Full Lifecycle API Management" was assumed to be a new trend, but initially it felt a bit like we were entering an age of "API Management Monoliths". What's the alternative, and what can you do to make sure that you are not painting yourself into an API management corner? Welcome to the great unbundling, a trend that we have seen over the last years where we see a flourishing ecosystem of focused and specialized tools. At the same time, their openness ensures that these tools can be combined freely so that everybody can easily build their very own "Full Lifecycle API Management" solution.</toc>
 		<date short="2023-10-12">October 12, 2023</date>
-<!-- 
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract">
 				<toc class="abstract"/>
 			</p>
 		</slide>
- -->
 		<slide id="getting-apis-to-work-keynote">
 			<title>Getting APIs to Work</title>
 			<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
@@ -263,10 +261,6 @@
 					<li>Larger set of API users</li>
 					<li>Growing landscape of service providers</li>
 				</ul>
-			</slide>
-			<slide id="api-landscape">
-				<title>API Landscape</title>
-				<img src="api-landscape.png" href="https://apilandscape.apiscene.io/" class="fullsize-shadow"/>
 			</slide>
 			<slide id="design-thinking">
 				<title>Design Thinking</title>
