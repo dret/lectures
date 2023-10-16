@@ -164,6 +164,28 @@
 				<title>API all the APIs</title>
 				<img src="apis-json-poll.png" href="https://www.linkedin.com/feed/update/urn:li:activity:7112082280734408704/" class="fullsize-shadow" />
 			</slide>
+			<slide id="ai">
+				<title>AI all the APIs</title>
+				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+				<ol>
+					<li>APIs for data ingestion for LLMs</li>
+					<ul>
+						<li>Data contracts with clear terms of service</li>
+					</ul>
+					<li>APIs for consumption by LLMs</li>
+					<ul>
+						<li>Patterns and standards for <q>AI-friendly APIs</q></li>
+					</ul>
+					<li>APIs for LLM-powered services</li>
+					<ul>
+						<li>Metadata for provenance and limitations</li>
+					</ul>
+					<li>LLM-powered services for API management</li>
+					<ul>
+						<li><em>The Great Unbundling</em> (<link href="api-all-the-apis"/>)</li>
+					</ul>
+				</ol>
+			</slide>
 		</part>	
 		<part id="meaning">
 			<title>But … What Does That Mean?</title>
@@ -191,28 +213,6 @@
 					<li>Use openness as differentiation: Not everybody has it</li>
 					<li>Create stories that contextualize your product: Show the bigger picture</li>
 				</ul>
-			</slide>
-			<slide id="ai">
-				<title>AI all the APIs</title>
-				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
-				<ol>
-					<li>APIs for data ingestion for LLMs</li>
-					<ul>
-						<li>Data contracts with clear terms of service</li>
-					</ul>
-					<li>APIs for consumption by LLMs</li>
-					<ul>
-						<li>Patterns and standards for <q>AI-friendly APIs</q></li>
-					</ul>
-					<li>APIs for LLM-powered services</li>
-					<ul>
-						<li>Metadata for provenance and limitations</li>
-					</ul>
-					<li>LLM-powered services for API management</li>
-					<ul>
-						<li><em>The Great Unbundling</em> (<link href="api-all-the-apis"/>)</li>
-					</ul>
-				</ol>
 			</slide>
 		</part>
 		<part id="conclusions">
