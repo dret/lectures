@@ -125,6 +125,28 @@
 				<title>Magic Ingredient #3: Change Management</title>
 			</slide>
 		</part>
+		<part id="teams-matter">
+			<title>Teams Matter</title>
+			<slide id="conway">
+				<title>Conway's Law</title>
+				<blockquote><q href="http://www.melconway.com/Home/Conways_Law.html">Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure.</q> (<a href="https://en.wikipedia.org/wiki/Melvin_Conway">Mel Conway</a>)</blockquote>
+			</slide>
+			<slide id="conway-consequences">
+				<title>Consequences of Conway's Law</title>
+				<img title="Team Topologies" href="https://teamtopologies.com/book" src="team-topologies.png" style=" float: right ; height : 65% ; margin : 2% ;  "/>
+				<ul>
+					<li>Technical leaders must have a say about organization design</li>
+					<li>Not all collaboration/communication is good</li>
+					<li>Four types of teams:</li>
+					<ul>
+						<li><em>Stream-aligned:</em> Deliver value with minimal hands-offs</li>
+						<li><em>Enabling:</em> Grow capabilities of stream-aligned teams</li>
+						<li><em>Complicated-subsystem:</em> Reduce cognitive load of stream-aligned teams</li>
+						<li><em>Platform:</em> Make stream-aligned teams autonomous</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="trajectory">
 			<title>Trajectory</title>
 		</part>
