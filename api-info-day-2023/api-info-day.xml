@@ -183,21 +183,6 @@
 				<title>API Guidelines in the Wild</title>
 				<img src="api-guidelines.png" href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" class="fullsize"/>
 			</slide>
-			<slide id="getting-started">
-				<title>Getting Started</title>
-				<ul>
-					<li>Start capturing feedback from API teams</li>
-					<ul>
-						<li>Challenges along the way</li>
-						<li>Solutions they have found or implemented</li>
-						<li>Quantifying the time they spend with cross-cutting vs. domain tasks</li>
-					</ul>
-					<li>Start editing and providing guidance that API teams can find and use</li>
-					<ul>
-						<li>Tooling can be as simple as markdown and shared repositories</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="AIP">
 				<title>Google <span title="API Improvement Proposals">AIP</span></title>
 				<img src="google-aip.png" href="https://google.aip.dev/general" title="Google API Improvement Proposals (AIP)" class="fullsize"/>
