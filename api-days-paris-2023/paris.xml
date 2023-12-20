@@ -24,24 +24,6 @@
 			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
 		</div>
 	</license>
-	<toc name="toc.html">
-		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
-			<thead>
-				<tr>
-					<th valign="bottom">Title</th>
-					<th valign="bottom">Slides</th>
-				</tr>
-			</thead>
-			<tbody>
-				<hotspot:for-each-presentation>
-					<tr class="vevent">
-						<td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
-						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
-					</tr>
-				</hotspot:for-each-presentation>
-			</tbody>
-		</table>
-	</toc>
 	<title><a href="https://www.apidays.global/">API Days</a> <a href="https://www.apidays.global/paris/">Paris</a> 2023</title>
 	<author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
 	<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
