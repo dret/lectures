@@ -55,6 +55,10 @@
 		<toc class="resources"></toc>
 		<part id="api-product">
 			<title>API as a Product</title>
+			<slide id="product-definition">
+				<title>What is a Product?</title>
+				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-shadow" />
+			</slide>
 			<slide id="product-classes">
 				<title>External vs. Internal API Products</title>
 			</slide>
@@ -79,6 +83,23 @@
 		</part>
 		<part id="semantic-versioning">
 			<title>Semantic Versioning</title>
+			<slide id="semantic-versioning-definition">
+				<title><a href="http://semver.org/">Semantic Versioning</a></title>
+				<ul>
+					<li><a href="http://semver.org/">Semantic Versioning</a> standardizes the meaning of version numbers</li>
+					<li>Version numbers use <code>MAJOR.MINOR.PATCH</code> syntax and have well-defined semantics</li>
+					<ul>
+						<li>Increase <code>MAJOR</code> version for incompatible API changes</li>
+						<li>Increase <code>MINOR</code> version for adding functionality in a backwards-compatible manner</li>
+						<li>Increase <code>PATCH</code> version for making backwards-compatible bug fixes</li>
+					</ul>
+					<li><code>MAJOR</code> is a different API, <code>PATCH</code> is an implementation detail</li>
+					<ul>
+						<li>Exposing detailed version/patch information is a potential security risk</li>
+						<li>For well-designed APIs only <code>MINOR</code> may make sense to expose</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="breaking-changes">
 			<title>Breaking Changes</title>
