@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="oai-track" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="paris.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+		<div class="license">
+			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+		</div>
+	</license>
+	<toc name="toc.html">
+		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
+			<thead>
+				<tr>
+					<th valign="bottom">Title</th>
+					<th valign="bottom">Slides</th>
+					<th valign="bottom">Additional Resources</th>
+				</tr>
+			</thead>
+			<tbody>
+				<hotspot:for-each-presentation>
+					<tr class="vevent">
+						<td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
+						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+						<td align="center"><hotspot:toc class="resources"/></td>
+					</tr>
+				</hotspot:for-each-presentation>
+			</tbody>
+		</table>
+	</toc>
+	<title>Webinars 2024</title>
+	<copyright>2023 Erik Wilde</copyright>
+	<presentation id="01-lifecycle-management">
+		<title short="API Lifecycle Management">API Lifecycle Management for Developers</title>
+		<author>Daniel Lübke &amp; Erik Wilde</author>
+		<affiliation>Getting Digital to Work</affiliation>
+		<date short="2024-01-25">January 25, 2024</date>
+		<copyright>2024 Erik Wilde</copyright>
+		<toc class="resources"></toc>
+		<part id="api-product">
+			<title>API as a Product</title>
+		</part>
+		<part id="api-product-management">
+			<title>API Product Management</title>
+			<slide id="many-consumers">
+				<title>Many Consumers</title>
+			</slide>
+		</part>
+		<part id="api-change">
+			<title>How to change an API?</title>
+		</part>
+		<part id="design">
+			<title>Plan/Design for Change</title>
+		</part>
+		<part id="extensibility">
+			<title>Extensible APIs</title>
+		</part>
+		<part id="compatibility">
+			<title>Compatibility</title>
+		</part>
+		<part id="semantic-versioning">
+			<title>Semantic Versioning</title>
+		</part>
+		<part id="breaking-changes">
+			<title>Breaking Changes</title>
+		</part>
+		<part id="deprecation-sunset">
+			<title>Deprecation and Sunsetting</title>
+		</part>
+		<part id="two-in-production">
+			<title>Two-In-Production</title>
+		</part>
+		<part id="outlook">
+			<title>Tips &amp; Outlook</title>
+			<slide id="thanks-01-lifecycle-management">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>Erik: <a href="https://www.youtube.com/ErikWilde" title="Getting APIs to Work"><img src="youtube-logo.png" style=" height : 1em ; "/></a> &amp; <a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/webinar-2024/"><code>dret.net/lectures/webinar-2024/</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
