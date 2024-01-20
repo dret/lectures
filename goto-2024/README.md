@@ -1,6 +1,6 @@
 # Building Software Better: Managing the API Lifecycle
 
-Slides for presentation at [GOTO Amsterdam](https://gotoams.nl/2024) 2024.
+Slides for presentation at [GOTO Amsterdam](https://gotoams.nl/) [2024](https://gotoams.nl/2024).
 
 ## License
 
