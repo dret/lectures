@@ -1,4 +1,4 @@
-# Building Software Better: Managing the API Lifecycle
+# Building Software Better: API Lifecycle Management for Developers
 
 Slides for presentation at [GOTO Amsterdam](https://gotoams.nl/) [2024](https://gotoams.nl/2024).
 

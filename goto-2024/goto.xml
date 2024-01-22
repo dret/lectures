@@ -30,8 +30,8 @@
 	<date short="2024-06-??">June ??, 2024</date>
 	<copyright>2024 Erik Wilde</copyright>
 	<presentation id="index">
-		<title short="Managing the API Lifecycle">Building Software Better: Managing the API Lifecycle</title>
-		<toc class="abstract">...</toc>
+		<title short="API Lifecycle Management for Developers">Building Software Better: API Lifecycle Management for Developers</title>
+		<toc class="abstract">Most software developed today exposes an API. It's important to manage the full lifecycle of these APIs so that they can be consumed safely and robustly. A second important aspect is how developers can used their own APIs and their descriptions to drive their development process. For this, we'll take a look at API descriptions in general and at OpenAPI in particular. We then look at how lifecycle management both for consumers and producers can be supported by using API descriptions and associated tooling. Finally, we'll discuss how this is a logical pathway for establishing and evolving your platform engineering practice.</toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
