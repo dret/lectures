@@ -711,7 +711,7 @@
 			<slide id="http-deprecation">
 				<title>Signaling API Deprecation</title>
 				<ul>
-					<li>Services must document/describe their support of <code>Deprecation</code></li>
+					<li>Services must document/describe their support of API deprecation</li>
 					<li>Services may signal <code>Deprecation</code> any way they like</li>
 					<li>Services may implement <code>Deprecation</code> any way they like</li>
 					<li>The simplest option may be <em><code>Deprecation</code> policies</em> on a gateway</li>
@@ -720,7 +720,7 @@
 			<slide id="http-sunset">
 				<title>Signaling API End-of-Life</title>
 				<ul>
-					<li>Services must document/describe their support of <code>Sunset</code></li>
+					<li>Services must document/describe their support of API sunsetting</li>
 					<li>Services may signal <code>Sunset</code> any way they like</li>
 					<li>Services may implement <code>Sunset</code> any way they like</li>
 					<li>The simplest option may be <em><code>Sunset</code> policies</em> on a gateway</li>
