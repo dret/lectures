@@ -617,7 +617,7 @@
 					<li><a href="http://semver.org/">Semantic Versioning</a> standardizes the meaning of version numbers</li>
 					<li>Version numbers use <code>MAJOR.MINOR.PATCH</code> syntax and have well-defined semantics</li>
 					<ul>
-						<li>Increase <code>MAJOR</code> version for incompatible API changes</li>
+						<li>Increase <code>MAJOR</code> version for breaking API changes</li>
 						<li>Increase <code>MINOR</code> version for adding functionality in a forward-compatible manner</li>
 						<li>Increase <code>PATCH</code> version for making forward-compatible bug fixes</li>
 					</ul>
