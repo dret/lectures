@@ -83,7 +83,7 @@
 				<title>Goals when changing an API</title>
 				<ul>
 					<li>API Providers want to innovate and as much flexibility as possible</li>
-					<li>API Clients do not want any effort for non-business related changes</li>
+					<li>API Consumers do not want any effort for non-business related changes</li>
 				</ul>
 			</slide>
 			<slide id="staying-compatible">
@@ -96,9 +96,9 @@
 			</slide>
 			<slide id="compatibility">
 				<ul>
-					<li>Different definitions of forward and backwards compatibility in different sources</li>
-					<li>Can an older version of an API client still use a newer version of an API provider?</li>
-					<li>Can an older version of an API provider still be used by a newer version of an API client?</li>
+					<li>Different definitions of forward and backward compatibility in different sources</li>
+					<li>Can an older version of an API consumer still use a newer version of an API provider?</li>
+					<li>Can an older version of an API provider still be used by a newer version of an API consumer?</li>
 				</ul>
 			</slide>
 		</part>
@@ -127,11 +127,11 @@
 					<li>Tolerant Reader Pattern</li>
 					<li>Use tooling to help detect incompatible changes</li>
 					<ul>
-						<li>Automated tests with old API clients</li>
+						<li>Automated tests with old API consumers</li>
 						<li>Consumer-Driven Contracts</li>
 					</ul>
 					<li>Add new operations to an API and keep old ones (Two in Production pattern, Interface Segregation Principle)</li>
-					<li>Document if you expect clients to implement any of these!</li>
+					<li>Document if you expect consumers to implement any of these!</li>
 					<ul>
 						<li>You define your processing model</li>
 						<li>Might be shipped as an SDK</li>
@@ -143,8 +143,8 @@
 				<ul>
 					<li>Breaking Changes must also be planned before release!</li>
 					<li>Yes, we like to do new things... BUT</li>
-					<li>Clients must know (and plan) to implement breaking changes</li>
-					<li>Decoupling provider and client lifecycles for change</li>
+					<li>Consumers must know (and plan) to implement breaking changes</li>
+					<li>Decoupling provider and consumer lifecycles for change</li>
 					<li>In most scenarios: No synchronous deployments!</li>
 					<li>Challenging for Public APIs and Community APIs</li>
 				</ul>
@@ -155,8 +155,8 @@
 			<slide id="breaking-changes-def">
 				<title>Breaking Changes</title>
 				<ul>
-					<li>Changes that will break the communication between client and provider</li>
-					<li>For example, for a new contract/provider and an old client:</li>
+					<li>Changes that will break the communication between consumer and provider</li>
+					<li>For example, for a new contract/provider and an old consumer:</li>
 					<ul>
 						<li>Mandatory new input elements (IBAN)</li>
 						<li>Removal of required output elements (removing old bank account number structures)</li>
@@ -261,7 +261,7 @@
 			<slide id="tips">
 				<title>Mini Checklist</title>
 				<ul>
-					<li>Make changes from a client/customer perspective</li>
+					<li>Make changes from a consumer/customer perspective</li>
 					<li>Try to minimize breaking changes</li>
 					<li>Define the lifecycle, especially how breaking and non-breaking changes are made</li>
 					<li>Use standards and patterns where appropriate</li>
