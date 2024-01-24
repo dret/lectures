@@ -64,6 +64,16 @@
 		</slide>
 		<part id="api-product">
 			<title>API as a Product</title>
+			<slide id="api-definition">
+				<title>What is an API?</title>
+				<ul>
+					<li><em>Consumer view:</em> A capability that can be accessed through a described/documented API</li>
+					<li><em>Producer view:</em> Code that is accessed by consumers through a published interface</li>
+					<li>Many APIs have more than one consumer</li>
+					<li>Many APIs are improved over time to incorporate consumer feedback</li>
+					<li>Publishing is easy, changing is harder, discontinuing is hard</li>
+				</ul>
+			</slide>
 			<slide id="product-definition">
 				<title>What is a Product?</title>
 				<img href="https://www.merriam-webster.com/dictionary/product" title="Merriam Webster: Product" src="product-merriam-webster.png" class="fullsize-shadow" />
@@ -269,8 +279,9 @@
 			<slide id="tips">
 				<title>Mini Checklist</title>
 				<ul>
+					<li>Have forward compatibility in mind for the very first version</li>
 					<li>Make changes from a consumer/customer perspective</li>
-					<li>Try to minimize breaking changes</li>
+					<li>Minimize breaking changes</li>
 					<li>Define the lifecycle, especially how breaking and non-breaking changes are made</li>
 					<li>Use standards and patterns where appropriate</li>
 				</ul>
