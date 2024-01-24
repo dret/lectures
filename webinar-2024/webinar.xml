@@ -53,6 +53,15 @@
 		<date short="2024-01-25">January 25, 2024</date>
 		<copyright>2024 Erik Wilde, Daniel Lübke</copyright>
 		<toc class="resources"><a href="https://dsa.webinargeek.com/essentials-of-api-lifecycle-management?cst=es">Webinar link</a></toc>
+		<slide id="01-lifecycle-management-welcome">
+			<title>Welcome to the Webinar!</title>
+			<ul>
+				<li>1h presentation</li>
+				<li>30min Q&amp;A</li>
+				<li>Replay available at <a href="https://dsa.webinargeek.com/essentials-of-api-lifecycle-management?cst=es">webinar link: Please share</a>!</li>
+				<li>Full-day <q>API Lifecycle Practices and Patterns</q> course available February 21/22</li>
+			</ul>
+		</slide>
 		<part id="api-product">
 			<title>API as a Product</title>
 			<slide id="product-definition">
@@ -266,7 +275,7 @@
 					<li>Use standards and patterns where appropriate</li>
 				</ul>
 			</slide>
-			<slide id="thanks-01-lifecycle-management">
+			<slide id="01-lifecycle-management-thanks">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
