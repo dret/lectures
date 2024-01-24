@@ -256,6 +256,20 @@
 			<slide id="observability">
 				<title>Observability: KYC for APIs</title>
 			</slide>
+			<slide id="blackout-brownout">
+				<title>Blackout Tests and Brownouts</title>
+				<ul>
+					<li><em>Blackout tests</em> are controlled times of API downtime</li>
+					<ul>
+						<li>Long enough to encourage taking action, short enough to not cause damage</li>
+					</ul>
+					<li><em>Brownouts</em> are controlled times of reduced API quality of service</li>
+					<ul>
+						<li>Violating SLAs (if you have any) to encourage taking action</li>
+					</ul>
+					<li>Both can be done in your API management layer</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="evolution-patterns">
 			<title>Evolution Patterns</title>
