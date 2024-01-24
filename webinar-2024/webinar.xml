@@ -44,14 +44,14 @@
 			</tbody>
 		</table>
 	</toc>
-	<title>Webinars 2024</title>
-	<copyright>2023 Erik Wilde</copyright>
+	<title>API Life-Cycle Webinar 2024</title>
+	<copyright>2024 Erik Wilde, Daniel Lübke</copyright>
 	<presentation id="01-lifecycle-management">
 		<title short="API Lifecycle Management">API Lifecycle Management for Developers</title>
 		<author>Daniel Lübke &amp; Erik Wilde</author>
 		<affiliation>Getting Digital to Work</affiliation>
 		<date short="2024-01-25">January 25, 2024</date>
-		<copyright>2024 Erik Wilde</copyright>
+		<copyright>2024 Erik Wilde, Daniel Lübke</copyright>
 		<toc class="resources"></toc>
 		<part id="api-product">
 			<title>API as a Product</title>
@@ -78,15 +78,113 @@
 		</part>
 		<part id="api-change">
 			<title>How to change an API?</title>
+			<slide id="goals-change-api">
+				<title>Goals when changing an API</title>
+				<ul>
+					<li>API Providers want to innovate and as much flexibility as possible</li>
+					<li>API Clients do not want any effort for non-business related changes</li>
+				</ul>
+			</slide>
+			<slide id="staying-compatible">
+				<title>Good Practice: Stay Compatible</title>
+				<ul>
+					<li>It is considered best practice to keep compatibility as long as possible</li>
+					<li>This does not mean inifinitly!</li>
+					<li>But if there is an option to do compatible change, strongly consider embracing it!</li>
+				</ul>
+			</slide>
+			<slide id="compatibility">
+				<ul>
+					<li>Different definitions of forward and backwards compatibiliy in different sources</li>
+					<li>Can an older version of an API client still use a newer version of an API provider?</li>
+					<li>Can an older version of an API provider still be used by a newer version of an API client?</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="design">
 			<title>Plan/Design for Change</title>
-		</part>
-		<part id="extensibility">
-			<title>Extensible APIs</title>
-		</part>
-		<part id="compatibility">
-			<title>Compatibility</title>
+			<slide id="two-dimensions-for-change">
+				<title>Two Things to Consider</title>
+				<ul>
+					<li>How to stay compatible as long as possible?</li>
+					<li>How to enact breaking changes?</li>
+				</ul>
+				<ul>
+					<li>These things must be defined before releasing an API!</li>
+				</ul>
+			</slide>
+			<slide id="enabling-compatibility">
+				<title>Ideas to Keep Compatibility</title>
+				<ul>
+					<li>Postel's Law: &quot;be conservative in what you do, be liberal in what you accept from others&quot;</li>
+					<ul>
+						<li>Ignore unknown elements</li>
+						<li>Gracefully switch to defaults for unknown values</li>
+						<li>Validate outgoing messages</li>
+					</ul>
+					<li>Keep old elements even if superceded by newer elements</li>
+					<li>Tolerant Reader Pattern</li>
+					<li>Use tooling to help detect incompatible changes</li>
+					<ul>
+						<li>Automated tests with old API clients</li>
+						<li>Consumer-Driven Contracts</li>
+					</ul>
+					<li>Add new operations to an API and keep old ones (Two in Production pattern, Interface Segregation Principle)</li>
+					<li>Document if you expect clients to implement any of these!</li>
+					<ul>
+						<li>You define your processing model</li>
+						<li>Might be shipped as an SDK</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="planning-breaking-changes">
+				<title>Planning Breaking Changes</title>
+				<ul>
+					<li>Breaking Changes must also be planned before release!</li>
+					<li>Yes, we like to do new things... BUT</li>
+					<li>Clients must know (and plan) to implement breaking changes</li>
+					<li>Decoupling provider and client life-cycles for change</li>
+					<li>In most scenarios: No synchronous deployments!</li>
+					<li>Challenging for Public APIs and Community APIs</li>
+				</ul>
+			</slide>
+		</part>´
+		<part id="breaking-changes">
+			<title>Breaking Changes</title>
+			<slide id="breaking-changes-def">
+				<title>Breaking Changes</title>
+				<ul>
+					<li>Changes that will break the communication between client and provider</li>
+					<li>For example, for a new contract/provider and an old client:</li>
+					<ul>
+						<li>Mandatory new input elements (IBAN)</li>
+						<li>Removal of required output elements (removing old bank account number structures)</li>
+						<li>Sementic changes of existing fields (the meaning of price is changed by a new currency element)</li>
+						<li>New security measures required (not supporting unsafe TLS versions)</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide>
+				<title>Drivers for Breaking Changes</title>
+				<ul>
+					<li>Environmental Forces</li>
+					<ul>
+						<li>New Regulations, laws, customer demands,...</li>
+					</ul>
+					<li>Technological Changes</li>
+					<ul>
+						<li>Replacing file transfers with HTTP APIs, ...</li>
+					</ul>
+					<li>Security</li>
+					<ul>
+						<li>Requiring newer TLS protocols, using API keys, ...</li>
+					</ul>
+					<li>Tidying Up &amp; Technical Debt</li>
+					<ul>
+						<li>Adding changes in a compatible manner will increase complexity and decrease developer experience over time</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="semantic-versioning">
 			<title>Semantic Versioning</title>
@@ -107,9 +205,6 @@
 					</ul>
 				</ul>
 			</slide>
-		</part>
-		<part id="breaking-changes">
-			<title>Breaking Changes</title>
 		</part>
 		<part id="deprecation-sunset">
 			<title>Deprecation and Sunsetting</title>
@@ -142,14 +237,41 @@
 		</part>
 		<part id="two-in-production">
 			<title>Two-In-Production</title>
+			<slide id="api-patterns">
+				<title>Patterns for API Evolution</title>
+				<img src="api-evolution-patterns.png" title="API Patterns" href="https://www.api-patterns.org" class="fullsize"/>
+			</slide>
+			<slide id="what-are-api-patterns">
+				<title>Patterns for API Evolution</title>
+				<ul>
+					<li>Deprecation of an API (or parts thereof) is described in the Aggressive Obsolescence pattern</li>
+					<li>There are many more patterns regarding API Life-Cycles</li>
+					<li>Patterns shall help you to find solutions fitting your problem space</li>
+					<li>Another commonly used pattern is Two in Production</li>
+				</ul>
+			</slide>
+			<slide id="two-in-production">
+				<title>Two in Production</title>
+				<img src="two-in-production.png" title="Two in Production" href="https://www.api-patterns.org/patterns/evolution/TwoInProduction" class="fullsize"/>
+			</slide>
 		</part>
 		<part id="outlook">
 			<title>Tips &amp; Outlook</title>
+			<slide id="tips">
+				<title>Mini Checklist</title>
+				<ul>
+					<li>Make changes from a client/customer perspective</li>
+					<li>Try to minimize breaking changes</li>
+					<li>Define the life-cycle, especially how breaking and non-breaking changes are made</li>
+					<li>Use standards and patterns where appropriate</li>
+				</ul>
+			</slide>
 			<slide id="thanks-01-lifecycle-management">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
 					<li>Erik: <a href="https://www.youtube.com/ErikWilde" title="Getting APIs to Work"><img src="youtube-logo.png" style=" height : 1em ; "/></a> &amp; <a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/></a></li>
+					<li>Daniel: <a href="https://www.youtube.com/@digitalsolutionarchitecture" title="Digital Solution Architecture GmbH"><img src="youtube-logo.png" style=" height : 1em ; "/></a> &amp; <a href="https://www.linkedin.com/in/danielluebke"><img src="linkedin-logo.png" style=" height : 1em ; "/></a></li>
 					<li>Slides online: <a href="http://dret.net/lectures/webinar-2024/"><code>dret.net/lectures/webinar-2024/</code></a></li>
 				</ul>
 			</slide>
