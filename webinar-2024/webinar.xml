@@ -49,7 +49,6 @@
 	<presentation id="01-lifecycle-management">
 		<title short="API Lifecycle Management">API Lifecycle Management for Developers</title>
 		<author>Daniel Lübke &amp; Erik Wilde</author>
-		<copyright>2024 Erik Wilde, Daniel Lübke</copyright>
 		<affiliation>Getting Digital to Work</affiliation>
 		<date short="2024-01-25">January 25, 2024</date>
 		<copyright>2024 Erik Wilde, Daniel Lübke</copyright>
@@ -130,7 +129,7 @@
 						<li>Automated tests with old API consumers</li>
 						<li>Consumer-Driven Contracts</li>
 					</ul>
-					<li>Add new operations to an API and keep old ones (Two in Production pattern, Interface Segregation Principle)</li>
+					<li>Add new operations to an API and keep old ones (<link href="two-in-production"/> pattern, Interface Segregation Principle)</li>
 					<li>Document if you expect consumers to implement any of these!</li>
 					<ul>
 						<li>You define your processing model</li>
@@ -149,7 +148,7 @@
 					<li>Challenging for Public APIs and Community APIs</li>
 				</ul>
 			</slide>
-		</part>´
+		</part>
 		<part id="breaking-changes">
 			<title>Breaking Changes</title>
 			<slide id="breaking-changes-def">
@@ -236,8 +235,8 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="two-in-production">
-			<title>Two-In-Production</title>
+		<part id="evolution-patterns">
+			<title>Evolution Patterns</title>
 			<slide id="api-patterns">
 				<title>Patterns for API Evolution</title>
 				<img src="api-evolution-patterns.png" title="API Patterns" href="https://www.api-patterns.org" class="fullsize"/>
@@ -248,7 +247,7 @@
 					<li>Deprecation of an API (or parts thereof) is described in the Aggressive Obsolescence pattern</li>
 					<li>There are many more patterns regarding API Lifecycles</li>
 					<li>Patterns shall help you to find solutions fitting your problem space</li>
-					<li>Another commonly used pattern is Two in Production</li>
+					<li>Another commonly used pattern is <link href="two-in-production"/></li>
 				</ul>
 			</slide>
 			<slide id="two-in-production">
