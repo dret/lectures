@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
 <?hotspot layout-path="hotspot/hotspot/layout" ?>
 <?hotspot kilauea-path="hotspot/kilauea" ?>
-<?hotspot layout="catalyst-new" ?>
+<?hotspot layout="youtube" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 	<configuration>
@@ -25,8 +25,8 @@
 		</div>
 	</license>
 	<title>Catalyst Modules</title>
-	<author><a href="http://dret.net/netdret/">Erik Wilde</a> <a href="http://twitter.com/dret" class="twitter-follow-button" data-size="large" title="Erik Wilde on Twitter: @dret">(<code>@dret</code>)</a></author>
-	<affiliation><a href="https://www.axway.com/">Axway</a> <a href="https://www.axway.com/catalysts">Catalysts</a></affiliation>
+	<author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
+	<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
 	<date>2016-2024</date>
 	<copyright>2016-2024 Erik Wilde</copyright>
 	<toc name="toc.html">
