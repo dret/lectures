@@ -86,8 +86,8 @@
 				<title>Public vs. Partner vs. Private APIs</title>
 				<img src="money-rain.png" title="It's raining money!" href="https://www.flickr.com/photos/verkeorg/25035323181" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
-					<li>Many <q>API Product</q> discussion exclusively focus on (directly) monetized APIs</li>
-					<li>All APIs are monetized but many of them are parts of value chains</li>
+					<li><q>API Product</q> discussions often focus on monetized APIs</li>
+					<li>All APIs are valuable but many of them are parts of value chains</li>
 					<li>Good API lifecycle management pays off for all kinds of APIs</li>
 					<ul>
 						<li><em>Public APIs</em> are offered to consumers on an open market</li>
@@ -102,8 +102,17 @@
 		</part>
 		<part id="api-product-management">
 			<title>API Product Management</title>
-			<slide id="many-consumers">
-				<title>Many Consumers</title>
+			<slide id="api-lifecycle-products">
+				<title>Teams Create API Products</title>
+				<img src="API-lifecycle-products.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-lifecycle-catalog">
+				<title>Building Product Inventory</title>
+				<img src="API-lifecycle-catalog.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-lifecycle-consumers">
+				<title>Marketing to Consumers</title>
+				<img src="API-lifecycle-consumers.png" class="fullsize-shadow"/>
 			</slide>
 		</part>
 		<part id="api-change">
