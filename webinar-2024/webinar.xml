@@ -167,8 +167,8 @@
 					<li>These things must be defined before releasing an API!</li>
 				</ul>
 			</slide>
-			<slide id="enabling-compatibility">
-				<title>Ideas to Keep Compatibility</title>
+			<slide id="enabling-compatibility-i">
+				<title>Ideas to Keep Compatibility (I)</title>
 				<ul>
 					<li>Postel's Law: &quot;be conservative in what you do, be liberal in what you accept from others&quot;</li>
 					<ul>
@@ -183,6 +183,11 @@
 						<li>Automated tests with old API consumers</li>
 						<li>Consumer-Driven Contracts</li>
 					</ul>
+				</ul>
+			</slide>
+			<slide id="enabling-compatibility-ii">
+				<title>Ideas to Keep Compatibility (II)</title>
+				<ul>
 					<li>Add new operations to an API and keep old ones (<link href="two-in-production"/> pattern, Interface Segregation Principle)</li>
 					<li>Document if you expect consumers to implement any of these!</li>
 					<ul>
