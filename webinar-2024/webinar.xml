@@ -338,7 +338,7 @@
 				<img src="two-in-production.png" title="Two in Production" href="https://www.api-patterns.org/patterns/evolution/TwoInProduction" class="fullsize"/>
 			</slide>
 		</part>
-		<part id="outlook">
+		<part id="01-lifecycle-management-outro">
 			<title>Tips &amp; Outlook</title>
 			<slide id="tips">
 				<title>Mini Checklist</title>
@@ -356,6 +356,24 @@
 				<ul>
 					<li>Erik: <a href="https://www.youtube.com/ErikWilde" title="Getting APIs to Work"><img src="youtube-logo.png" style=" height : 1em ; "/></a> &amp; <a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/></a></li>
 					<li>Daniel: <a href="https://www.youtube.com/@digitalsolutionarchitecture" title="Digital Solution Architecture GmbH"><img src="youtube-logo.png" style=" height : 1em ; "/></a> &amp; <a href="https://www.linkedin.com/in/danielluebke"><img src="linkedin-logo.png" style=" height : 1em ; "/></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/webinar-2024/"><code>dret.net/lectures/webinar-2024/</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="02-api-management">
+		<title short="API Management">API Management for Developers</title>
+		<author>Mike Amundsen &amp; Erik Wilde</author>
+		<affiliation>Getting Digital to Work</affiliation>
+		<date short="2024-02-29">February 29, 2024</date>
+		<copyright>2024 Erik Wilde, Mike Amundsen</copyright>
+		<part id="02-api-management-outro">
+			<slide id="02-api-management-thanks">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>Erik: <a href="https://www.youtube.com/ErikWilde" title="Getting APIs to Work"><img src="youtube-logo.png" style=" height : 1em ; "/></a> &amp; <a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/></a></li>
+					<li>Mike: <a href="https://www.linkedin.com/in/mamund"><img src="linkedin-logo.png" style=" height : 1em ; "/></a></li>
 					<li>Slides online: <a href="http://dret.net/lectures/webinar-2024/"><code>dret.net/lectures/webinar-2024/</code></a></li>
 				</ul>
 			</slide>
