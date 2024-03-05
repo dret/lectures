@@ -28,14 +28,16 @@
 		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
 			<thead>
 				<tr>
+					<th valign="bottom">Date</th>
 					<th valign="bottom">Title</th>
 					<th valign="bottom">Slides</th>
-					<th valign="bottom">Additional Resources</th>
+					<th valign="bottom">Resources</th>
 				</tr>
 			</thead>
 			<tbody>
 				<hotspot:for-each-presentation>
 					<tr class="vevent">
+						<td valign="top"><b><span class="title"><hotspot:date/></span></b></td>
 						<td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
 						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
 						<td align="center"><hotspot:toc class="resources"/></td>
@@ -394,6 +396,7 @@
 		<affiliation>Getting Digital to Work</affiliation>
 		<date short="2024-03-21">March 21, 2024</date>
 		<copyright>2024 Mike Amundsen &amp; Erik Wilde</copyright>
+		<toc class="resources"><a href="https://apiconference.net/api-management/api-management-for-developers/">Workshop at API Conference London</a>&#160;· <a href="https://jax.de/software-architecture/api-management-for-developers/">Workshop at JAX Mainz</a></toc>
 		<part id="03-api-management-outro">
 			<slide id="03-api-management-thanks">
 				<title>Thank You!</title>
