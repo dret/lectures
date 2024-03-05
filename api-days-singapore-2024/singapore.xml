@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="oai-track" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="singapore.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+		<div class="license">
+			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+		</div>
+	</license>
+	<toc name="toc.html">
+		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
+			<thead>
+				<tr>
+					<th valign="bottom">Date</th>
+					<th valign="bottom">Title</th>
+					<th valign="bottom">Slides</th>
+				</tr>
+			</thead>
+			<tbody>
+				<hotspot:for-each-presentation>
+					<tr class="vevent">
+						<td valign="top"><b><span class="title"><hotspot:date/></span></b></td>
+						<td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
+						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+					</tr>
+				</hotspot:for-each-presentation>
+			</tbody>
+		</table>
+	</toc>
+	<title><a href="https://www.apidays.global/">API Days</a> <a href="https://www.apidays.global/singapore/">Singapore</a> 2024</title>
+	<author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
+	<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
+	<copyright>2024 Erik Wilde</copyright>
+	<presentation id="oai-track">
+		<title short="OAI Track">OAI Track Introduction and the State of OpenAPI</title>
+		<author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
+		<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
+		<date short="2024-04-18">April 18, 2024</date>
+		<copyright>2024 Erik Wilde</copyright>
+		<slide id="getting-apis-to-work">
+			<title>Getting APIs to Work</title>
+			<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
+				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/9TpOTmHpqVI" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+				</div>
+			</div>
+			<div style=" float : right ; width : 44% ; margin : 0% 4% 0% 2% ; ">
+				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/JszAmJaXq54" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+				</div>
+			</div>
+		</slide>
+		<part id="oai">
+			<title>The OpenAPI Initiative</title>
+			<slide id="history">
+				<title>A Brief History of OAI &amp; OpenAPI</title>
+				<img src="openapi-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Started out in 2011 and was called <em href="https://en.wikipedia.org/wiki/Swagger_(software)">Swagger</em> for quite a while</li>
+					<ul>
+						<li>Competing approaches like <em href="https://en.wikipedia.org/wiki/RAML_(software)" title="RESTful API Modeling Language">RAML</em> and <em href="https://github.com/apiaryio/api-blueprint">API Blueprint</em> exist</li>
+					</ul>
+					<li><em>Swagger</em> was renamed to <em>OpenAPI</em> at the beginning of 2016</li>
+					<ul>
+						<li>Donated to the <em href="https://www.openapis.org/">OpenAPI Initiative (OAI)</em> (part of the <em href="https://www.linuxfoundation.org/">Linux Foundation</em>)</li>
+						<li><em href="https://swagger.io/tools/open-source/">Swagger</em> now refers to a specific tool offered by <em href="https://smartbear.com/">SmartBear</em></li>
+					</ul>
+					<li><em>OpenAPI</em> has been the official name since 2016</li>
+					<ul>
+						<li><em>OpenAPI 2.0</em> was the name after the rename (it's the same as <em>Swagger 2.0</em>)</li>
+						<li><em>OpenAPI 3.0</em> was released in July 2017</li>
+						<li><em>OpenAPI 3.1</em> was released in February 2021</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="members">
+				<title>OAI Members</title>
+				<img src="oai-members.png" href="https://www.openapis.org/membership/members" class="fullsize-shadow" />
+			</slide>
+			<slide id="lifecycle">
+				<title>The (Open)API Lifecycle</title>
+				<img source="WSO2: What is Full Lifecycle API Management?" src="api-lifecycle.png" href="https://wso2.com/api-management/what-is-full-lifecycle-api-management/" class="fullsize-shadow" />
+			</slide>
+			<slide id="flapim-end">
+				<title>The End of Full Lifecycle API Management</title>
+				<img source="Mark O'Neill (Gartner): The End of Full Lifecycle API Management" src="end-of-full-lifecycle-api-management.png" href="https://www.linkedin.com/posts/markwoneill_market-guide-for-api-gateways-activity-7100687467694940160-Orb1" class="fullsize-shadow" />
+			</slide>
+			<slide id="tools">
+				<title>OpenAPI Tools</title>
+				<img src="openapi-tools.png" title="OpenAPI Tools" href="https://tools.openapis.org/" class="fullsize"/>
+			</slide>
+			<slide id="extensions">
+				<title>OpenAPI Extensions</title>
+				<listing src="openapi-amazon-extensions.json" line="21-38" href="https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-swagger-extensions-authorizer.html"/>
+			</slide>
+		</part>
+		<part id="oai-work">
+			<title>OAI Specification Work</title>
+			<slide id="sig">
+				<title>OAI Special Interest Groups (SIG)</title>
+				<img src="oai-sig-overview.png" href="https://github.com/OAI/community/blob/main/SPECIAL_INTEREST_GROUPS.md" class="fullsize" />
+			</slide>
+			<slide id="overlays">
+				<title>OpenAPI Overlays</title>
+				<ul>
+					<li>OpenAPI documents are increasingly connecting tools and user groups</li>
+					<li>Not everybody wants/needs/should get the <q>full description of everything</q></li>
+					<li>Overlays support different <q>views</q> of the same OpenAPI documents</li>
+				</ul>
+			</slide>
+			<slide id="workflows">
+				<title>Workflows</title>
+				<ul>
+					<li>OpenAPI describes <q>atomic interactions</q> with resource-oriented APIs</li>
+					<li>Many/most APIs rely on meaningful combinations of individual interactions</li>
+					<li>Workflows represent the idea of interaction sequences within/across APIs</li>
+					<li>Workflows do not intend to be readily executable descriptions</li>
+				</ul>
+			</slide>
+			<slide id="oascomply">
+				<title>OpenAPI Compliance Project</title>
+				<ul>
+					<li>OpenAPI is a semantically rich specification</li>
+					<li>Some relationships across the model are hard to identify and verify</li>
+					<li>OASComply define an abstract model of OpenAPI and constraints for this model</li>
+					<li>It will be easier for vendors and customers to verify specification compliance</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="openapi">
+			<title>The State of OpenAPI</title>
+			<slide id="api-technologies">
+				<title>API Technologies</title>
+				<img source='Postman 2023 State of the API Report' src="api-technologies.png" href="https://www.postman.com/state-of-api/api-technologies/#api-technologies" class="fullsize" />
+			</slide>
+			<slide id="moonwalk">
+				<title>OpenAPI 4.0: Moonwalk</title>
+				<img source='Moonwalk repo: https://github.com/OAI/moonwalk' src="moonwalk-structure.png" href="https://github.com/OAI/moonwalk" class="fullsize-shadow" />
+			</slide>
+		</part>
+		<part id="conclusions-oai-track">
+			<title>Conclusions</title>
+			<slide id="thanks-oai-track">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/api-days-singapore-2024/"><code>dret.net/lectures/api-days-singapore-2024/</code></a></li>
+				</ul>
+			</slide>
+			<slide id="join">
+				<title>Join the OAI/OpenAPI Community!</title>
+				<img src="openapi-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Join the community: <code href="https://github.com/OAI/community" title="OAI Community">github.com/OAI/community</code></li>
+					<li>All technical and special interest groups meetings: <code href="https://www.openapis.org/calendar" title="OAI Community Calendar">openapis.org/calendar</code></li>
+					<li>Upcoming events (including OAI Tracks): <code href="https://www.openapis.org/events" title="OAI Events">openapis.org/events</code></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
