@@ -1,0 +1,39 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "openapi3 for REST API",
+    "version" : "1.0"
+  },
+  "paths" : {
+    "/protected-by-lambda-authorizer" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Default response"
+          }
+        },
+        "security" : [ {
+          "myAuthorizer" : [ ]
+        } ]
+      }
+    }
+  },
+  "components" : {
+    "securitySchemes" : {
+      "myAuthorizer" : {
+        "type" : "apiKey",
+        "name" : "Authorization",
+        "in" : "header",
+        "x-amazon-apigateway-authorizer" : {
+          "identitySource" : "method.request.header.Authorization",
+          "authorizerUri" : "arn:aws:apigateway:us-east-1:lambda:path/2015-03-31/functions/arn:aws:lambda:us-east-1:account-id:function:function-name/invocations",
+          "authorizerResultTtlInSeconds" : 300,
+          "type" : "request",
+          "enableSimpleResponses" : false
+        },
+        "x-amazon-apigateway-authtype": "Custom scheme with corporate claims"
+      }
+    }
+  },
+  "x-amazon-apigateway-importexport-version" : "1.0"
+}
