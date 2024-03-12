@@ -47,12 +47,14 @@
 		</table>
 	</toc>
 	<title><a href="https://apiconference.net/">API Conference</a>, <a href="https://apiconference.net/london/">London, UK</a></title>
-	<author>Erik Wilde</author>
-	<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
-	<date short="2024-04-10">April 10, 2024</date>
-	<copyright>2024 Erik Wilde</copyright>
+	<presentation id="design" include="mamund-design.xml"/>
+	<presentation id="marketing" include="mamund-marketing.xml"/>
 	<presentation id="quo-vadis">
 		<title>Quo Vadis, API Management?</title>
+		<author>Erik Wilde</author>
+		<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
+		<date short="2024-04-10">April 10, 2024</date>
+		<copyright>2024 Erik Wilde</copyright>
 		<toc class="abstract">API management has been around for quite a while, with APIs as we know them today appearing 25 years ago. It's enlightening to look at the history of API management. That helps to understand how some of its developments were a logical evolution to adapt to more widespread API adoption within organizations. However, we are also seeing now that some of these assumptions are being challenged, meaning that the goals and practices of API management are changing. We'll look at this evolution of API management, where it's headed in the future, and what that means in terms of trends and technologies.</toc>
 <!--
 		<slide id="summary">
