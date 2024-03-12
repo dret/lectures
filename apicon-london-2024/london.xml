@@ -24,12 +24,34 @@
 			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
 		</div>
 	</license>
+	<toc name="toc.html">
+		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
+			<thead>
+				<tr>
+					<th valign="bottom">Date</th>
+					<th valign="bottom">Title</th>
+					<th valign="bottom">Author</th>
+					<th valign="bottom">Slides</th>
+				</tr>
+			</thead>
+			<tbody>
+				<hotspot:for-each-presentation>
+					<tr class="vevent">
+						<td valign="top"><b><span class="title"><hotspot:date/></span></b></td>
+						<td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
+						<td valign="top"><b><span class="title"><hotspot:author/></span></b></td>
+						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+					</tr>
+				</hotspot:for-each-presentation>
+			</tbody>
+		</table>
+	</toc>
 	<title><a href="https://apiconference.net/">API Conference</a>, <a href="https://apiconference.net/london/">London, UK</a></title>
-	<author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
+	<author>Erik Wilde</author>
 	<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
-	<date short="2024-04-??">April ??, 2024</date>
+	<date short="2024-04-10">April 10, 2024</date>
 	<copyright>2024 Erik Wilde</copyright>
-	<presentation id="index">
+	<presentation id="quo-vadis">
 		<title>Quo Vadis, API Management?</title>
 		<toc class="abstract">API management has been around for quite a while, with APIs as we know them today appearing 25 years ago. It's enlightening to look at the history of API management. That helps to understand how some of its developments were a logical evolution to adapt to more widespread API adoption within organizations. However, we are also seeing now that some of these assumptions are being challenged, meaning that the goals and practices of API management are changing. We'll look at this evolution of API management, where it's headed in the future, and what that means in terms of trends and technologies.</toc>
 <!--
