@@ -404,17 +404,44 @@
 		</part>
 		<part id="api-platform">
 			<title>API Platforms</title>
+			<slide id="api-platform-consumers">
+				<title>Support for External Teams</title>
+			</slide>
 		</part>
-		<part id="developer-platform">
+		<part id="dev-platform">
 			<title>Developer Platforms</title>
+			<slide id="dev-platform-consumers"></slide>
+			<title>Support for Internal Teams</title>
 		</part>
 		<part id="03-platform-strategy-outro">
+			<title>Connect the Platform Dots</title>
+			<slide id="03-platform-strategy-summary">
+				<title>Platform Questions</title>
+				<ul>
+					<li>Are you a platform business?</li>
+					<ul>
+						<li>No, and stop trying to be one.</li>
+					</ul>
+					<li>Should you be building up your business platform?</li>
+					<ul>
+						<li>Yes, and it should be driven by business considerations.</li>
+					</ul>
+					<li>Do you need an API platform?</li>
+					<ul>
+						<li>Likely so, and make sure it's useful for internal and external consumers.</li>
+					</ul>
+					<li>Do you need an Internal Developer Platform (IDP)?</li>
+					<ul>
+						<li>Likely so, if your business needs to adapt and evolve quickly.</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="03-platform-strategy-thanks">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
-					<li>Erik: <a href="https://www.youtube.com/ErikWilde" title="Getting APIs to Work"><img src="youtube-logo.png" style=" height : 1em ; "/></a> &amp; <a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/></a></li>
-					<li>Mike: <a href="https://www.linkedin.com/in/mamund"><img src="linkedin-logo.png" style=" height : 1em ; "/></a></li>
+					<li>Erik on <a href="https://www.youtube.com/ErikWilde" title="Getting APIs to Work"><img src="youtube-logo.png" style=" height : 1em ; "/></a></li>
+					<li>Erik on <a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/></a></li>
 					<li>Slides online: <a href="http://dret.net/lectures/webinar-2024/"><code>dret.net/lectures/webinar-2024/</code></a></li>
 				</ul>
 			</slide>
