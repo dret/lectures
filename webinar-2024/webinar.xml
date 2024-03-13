@@ -404,8 +404,25 @@
 		</part>
 		<part id="api-platform">
 			<title>API Platforms</title>
-			<slide id="api-platform-consumers">
-				<title>Support for External Teams</title>
+			<slide id="api-management-lifecycle">
+				<title>Exposing Capabilities</title>
+				<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-management-product">
+				<title>Curating Capabilities</title>
+				<img src="API-management-product.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-management-marketing">
+				<title>Publishing Capabilities</title>
+				<img src="API-management-marketing.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-platform-specifics">
+				<title>API Platform Specifics</title>
+				<ul>
+					<li>Targeting specific consumer group(s)</li>
+					<li>Not making any assumptions about consumption mechanics</li>
+					<li>APIs aligned with business capabilities and partner models</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="dev-platform">
