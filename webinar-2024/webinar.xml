@@ -427,8 +427,15 @@
 		</part>
 		<part id="dev-platform">
 			<title>Developer Platforms</title>
-			<slide id="dev-platform-consumers"></slide>
-			<title>Support for Internal Teams</title>
+			<slide id="dev-platform-consumers">
+				<title>Support for Internal Teams</title>
+				<ul>
+					<li><em>Inside-In</em>/<em>Outside-In</em> vs. <em>Inside-Out</em> focus</li>
+					<li>Smaller, well-known, and more coherent group of consumers</li>
+					<li>Focus on improving effectiveness and flow for development teams</li>
+					<li>Most of the consumers will be providers as well</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="03-platform-strategy-outro">
 			<title>Connect the Platform Dots</title>
