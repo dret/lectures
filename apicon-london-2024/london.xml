@@ -47,8 +47,46 @@
 		</table>
 	</toc>
 	<title><a href="https://apiconference.net/">API Conference</a>, <a href="https://apiconference.net/london/">London, UK</a></title>
+	<presentation id="strategy-business">
+		<title>Strategy and Business Alignment</title>
+		<author>Erik Wilde</author>
+		<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
+		<date short="2024-04-09">April 9, 2024</date>
+		<copyright>2024 Erik Wilde</copyright>
+		<part id="strategy-business-conclusions">
+			<title>Conclusions</title>
+			<slide id="strategy-business-thanks">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/apicon-london-2024/"><code>dret.net/lectures/apicon-london-2024/</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 	<presentation id="design" include="mamund-design.xml"/>
 	<presentation id="marketing" include="mamund-marketing.xml"/>
+	<presentation id="governance-platform">
+		<title>Governance and Platform</title>
+		<author>Erik Wilde</author>
+		<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
+		<date short="2024-04-09">April 9, 2024</date>
+		<copyright>2024 Erik Wilde</copyright>
+		<part id="governance-platform-conclusions">
+			<title>Conclusions</title>
+			<slide id="governance-platform-thanks">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/apicon-london-2024/"><code>dret.net/lectures/apicon-london-2024/</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 	<presentation id="quo-vadis">
 		<title>Quo Vadis, API Management?</title>
 		<author>Erik Wilde</author>
