@@ -48,6 +48,128 @@
 	<author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
 	<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
 	<copyright>2024 Erik Wilde</copyright>
+	<presentation id="platform-strategy">
+		<title short="Platform Strategy">Platform Strategy and Engineering</title>
+		<author>Erik Wilde</author>
+		<affiliation>Getting Digital to Work</affiliation>
+		<date short="2024-04-17">April 17, 2024</date>
+		<copyright>2024 Erik Wilde</copyright>
+		<part id="platform-business">
+			<title>Platform Businesses</title>
+			<slide id="business-model">
+				<title>Specific Business Model</title>
+				<img title='Alex Moazed and Nicholas L. Johnson, "Modern Monopolies", St. Martin&apos;s Press, 2016' href="https://www.modernmonopolies.com/book" src="modern-monopolies.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="linear-business-model">
+				<title>Linear Business Model</title>
+				<img src="linear-business.png" class="fullsize"/>
+			</slide>
+			<slide id="platform-business-model">
+				<title>Platform Business Model</title>
+				<img src="platform-business.png" class="fullsize"/>
+			</slide>
+			<slide id="no-platform-needed">
+				<title>Type 1: No Platform Needed</title>
+				<img src="uber-developer-documentation.png" title="Uber Developer Documentation" href="https://developer.uber.com/docs" class="fullsize"/>
+			</slide>
+			<slide id="platform-needed">
+				<title>Type 2: Platform Needed</title>
+				<img src="ebay-video-cover.jpg" title="How to make Five Billion Dollars with APIs: API Monetization at eBay" href="https://www.youtube.com/watch?v=BCPD5NwQ7_M" class="fullsize"/>
+			</slide>
+		</part>
+		<part id="business-platform">
+			<title>Business Platforms</title>
+			<slide id="platformy">
+				<title>Become Platform-y</title>
+				<img src="api-business-models.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>Most businesses are not (primarily) platform businesses</li>
+					<li>Many businesses can benefit from adding a platform angle</li>
+					<li>Explore <a href="https://www.mulesoft.com/sites/default/files/cmm_files/2020_Guide_to_API_Business_Models.pdf">API Business Models</a> for some inspiration</li>
+				</ul>
+			</slide>
+			<slide id="hybrid-business-model">
+				<title>Hybrid Business Model</title>
+				<img src="hybrid-business.png" class="fullsize"/>
+			</slide>
+		</part>
+		<part id="api-platform">
+			<title>API Platforms</title>
+			<slide id="api-management-lifecycle">
+				<title>Exposing Capabilities</title>
+				<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-management-product">
+				<title>Curating Capabilities</title>
+				<img src="API-management-product.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-management-marketing">
+				<title>Publishing Capabilities</title>
+				<img src="API-management-marketing.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-platform-specifics">
+				<title>API Platform Specifics</title>
+				<ul>
+					<li>Targeting specific consumer group(s)</li>
+					<li>Not making any assumptions about consumption mechanics</li>
+					<li>APIs aligned with business capabilities and partner models</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="dev-platform">
+			<title>Developer Platforms</title>
+			<slide id="api-value-creation">
+				<title>Most API Value Creation is Indirect</title>
+				<ol>
+					<li>Using APIs to become better at internal reuse and cross-pollination</li>
+					<li>Reducing friction by having teams communicate via APIs</li>
+					<li>Using <q>API First</q> as a way to build everything as digital building blocks</li>
+				</ol>
+			</slide>
+			<slide id="dev-platform-consumers">
+				<title>Support for Internal Teams</title>
+				<ul>
+					<li><em>Inside-In/Outside-In</em> vs. <em>Inside-Out</em> focus</li>
+					<li>Smaller, well-known, and more coherent group of consumers</li>
+					<li>Focus on improving effectiveness and flow for development teams</li>
+					<li>Most of the consumers will be providers as well</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="03-platform-strategy-outro">
+			<title>Connect the Platform Dots</title>
+			<slide id="03-platform-strategy-summary">
+				<title>Platform Questions</title>
+				<ul>
+					<li>Are you a platform business?</li>
+					<ul>
+						<li>No, and stop trying to be one.</li>
+					</ul>
+					<li>Should you be building up your business platform?</li>
+					<ul>
+						<li>Yes, and it should be driven by business considerations.</li>
+					</ul>
+					<li>Do you need an API platform?</li>
+					<ul>
+						<li>Likely so, and make sure it's useful for internal and external consumers.</li>
+					</ul>
+					<li>Do you need an Internal Developer Platform (IDP)?</li>
+					<ul>
+						<li>Likely so, if your business needs to adapt and evolve quickly.</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="03-platform-strategy-thanks">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>Erik on <a href="https://www.youtube.com/ErikWilde" title="Getting APIs to Work"><img src="youtube-logo.png" style=" height : 1em ; "/></a></li>
+					<li>Erik on <a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/webinar-2024/"><code>dret.net/lectures/webinar-2024/</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 	<presentation id="oai-track">
 		<title short="OAI Track">OAI Track Introduction and the State of OpenAPI</title>
 		<author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
