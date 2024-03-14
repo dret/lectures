@@ -433,10 +433,18 @@
 		</part>
 		<part id="dev-platform">
 			<title>Developer Platforms</title>
+			<slide id="api-value-creation">
+				<title>Most API Value Creation is Indirect</title>
+				<ol>
+					<li>Using APIs to become better at internal reuse and cross-pollination</li>
+					<li>Reducing friction by having teams communicate via APIs</li>
+					<li>Using <q>API First</q> as a way to build everything as digital building blocks</li>
+				</ol>
+			</slide>
 			<slide id="dev-platform-consumers">
 				<title>Support for Internal Teams</title>
 				<ul>
-					<li><em>Inside-In</em>/<em>Outside-In</em> vs. <em>Inside-Out</em> focus</li>
+					<li><em>Inside-In/Outside-In</em> vs. <em>Inside-Out</em> focus</li>
 					<li>Smaller, well-known, and more coherent group of consumers</li>
 					<li>Focus on improving effectiveness and flow for development teams</li>
 					<li>Most of the consumers will be providers as well</li>
