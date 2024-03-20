@@ -31,7 +31,7 @@
 		</part>
 		<part id="mamund-design-part-documentation">
 			<title>API Documentation</title>
-			<slide id="mamund-design-slide-documendation">
+			<slide id="mamund-design-slide-documentation">
 				<title>API Documentation</title>
 				<ul>
 					<li>Well-documented APIs have ...</li>
@@ -39,15 +39,20 @@
 					<li>Additional Steps</li>
 				</ul>
 			</slide>
-			<slide id="mamund-design-slide-documendation">
+			<slide id="mamund-design-slide-documentation-initial">
+				<title>API Documentation - Initial Steps</title>
+				<ul>
+					<li>A human-readable landing page</li>
+					<li>A response header pointing to the API landing page</li>
+					<li>API description (OpenAPI, AsyncAPI, WSDL, etc.)</li>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-documentation-additional">
 				<title>API Documentation - Well-documented</title>
 				<ul>
-					<li>API description (OpenAPI, AsyncAPI, WSDL, etc.)</li>
-					<li>A header (URL) to the API description in each response</li>
-					<li>A Human-readable landing page</li>
-					<li>Workflow examples</li>
-					<li>Working code samples</li>
-					<li>Identify common error conditions and how to resolve them</li>
+					<li>API workflow diagrams</li>
+					<li>API client code samples</li>
+					<li>Common error conditions and how to resolve them</li>
 					<li>API catalog/discovery documents (APIs.json, ALPS, etc.)</li>
 				</ul>
 			</slide>
