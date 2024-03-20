@@ -34,9 +34,21 @@
 			<slide id="mamund-design-slide-documendation">
 				<title>API Documentation</title>
 				<ul>
-					<li>item</li>
-					<li>item</li>
-					<li>item</li>
+					<li>Well-documented APIs have ...</li>
+					<li>Initial Steps</li>
+					<li>Additional Steps</li>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-documendation">
+				<title>API Documentation - Well-documented</title>
+				<ul>
+					<li>API description (OpenAPI, AsyncAPI, WSDL, etc.)</li>
+					<li>A header (URL) to the API description in each response</li>
+					<li>A Human-readable landing page</li>
+					<li>Workflow examples</li>
+					<li>Working code samples</li>
+					<li>Identify common error conditions and how to resolve them</li>
+					<li>API catalog/discovery documents (APIs.json, ALPS, etc.)</li>
 				</ul>
 			</slide>
 		</part>
