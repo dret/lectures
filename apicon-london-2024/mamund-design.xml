@@ -44,11 +44,10 @@
 			<slide id="mamund-design-slide-what">
 				<title>API Documentation - What is it?</title>
 				<ul>
-					<li>Comprehensive</li>
-					<li>Up-to-date</li>
 					<li>Easy to find</li>
 					<li>Easy to understand</li>
-					<li>Easy to use</li>
+					<li>Up-to-date</li>
+					<li>Comprehensive</li>
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-documentation-initial">
@@ -60,11 +59,11 @@
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-documentation-additional">
-				<title>API Documentation - Well-documented</title>
+				<title>API Documentation - ADditional Steps</title>
 				<ul>
 					<li>API workflow diagrams</li>
-					<li>API client code samples</li>
 					<li>Common error conditions and how to resolve them</li>
+					<li>API client code samples</li>
 					<li>API catalog/discovery documents (APIs.json, ALPS, etc.)</li>
 				</ul>
 			</slide>
