@@ -59,13 +59,31 @@
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-documentation-additional">
-				<title>API Documentation - ADditional Steps</title>
+				<title>API Documentation - Additional Steps</title>
 				<ul>
 					<li>API workflow diagrams</li>
 					<li>Common error conditions and how to resolve them</li>
 					<li>API client code samples</li>
 					<li>API catalog/discovery documents (APIs.json, ALPS, etc.)</li>
 				</ul>
+			</slide>
+			<slide id="mamund-design-slide-documentation-summary">
+				<title>API Documentation</title>
+				<ul>
+					<li>What is it?</li>
+					<ul>
+						<li>findable, understandable, up-to-date, comprehensive</li>
+					</ul>
+					<li>Initial Steps</li>
+					<ul>
+						<li>landing page, headers, openAPI/AsyncAPI/etc</li>
+					</ul>
+					<li>Additional Steps</li>
+					<ul>
+						<li>diargram, errors, code, discovery</li>
+					</ul>
+				</ul>
+				<p>See Chapter 13 from <a href="https://learning.oreilly.com/library/view/principles-of-web/9780137355754/ch13.xhtml">"Principles of Web Design"</a> by James Higginbotham</p>	
 			</slide>
 		</part>
 		<part id="mamund-design-part-lifecycle">
