@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 	<presentation>
-		<title>Product Design, Development, and Management</title>
+		<title short="Product Management">Product Design, Development, and Management</title>
 		<author>Mike Amundsen</author>
 		<affiliation>???</affiliation>
 		<date short="2024-04-09">April 9, 2024</date>
@@ -21,7 +21,7 @@
 		<part id="mamund-design-part-design">
 			<title>API Design Consistency</title>
 			<slide id="mamund-design-slide-design">
-				<title>API Design Consistency/title>
+				<title>API Design Consistency</title>
 				<ul>
 					<li>item</li>
 					<li>item</li>
@@ -34,15 +34,17 @@
 			<slide id="mamund-design-slide-documentation">
 				<title>API Documentation</title>
 				<ul>
-					<li>What is it?</li>
-					<li>Initial Steps</li>
-					<li>Additional Steps</li>
+					<li><link href="mamund-design-slide-documentation-what">What is it?</link></li>
+					<li><link href="mamund-design-slide-documentation-initial">Initial Steps</link></li>
+					<li><link href="mamund-design-slide-documentation-additional">Additional Steps</link></li>
 				</ul>
-				<blockquote><q>[H]elps the end users in understanding the different characteristics, features, and attributes of a ... product.</q></blockquote>				
-				<p class="quotenote"><a href="https://technicalwriterhq.com/documentation/">What is Documentation?</a> -- Technical Writer HQ</p>
+				<blockquote>
+					<p><q>[H]elps the end users in understanding the different characteristics, features, and attributes of a ... product.</q></p>
+					<p style=" text-align : right ; margin : 0em ; "><span style="font-size : 75% ; "><a href="https://technicalwriterhq.com/documentation/"><q>What is Documentation?</q>, Technical Writer HQ</a></span></p>
+				</blockquote>
 			</slide>
 			<slide id="mamund-design-slide-documentation-what">
-				<title>API Documentation - What is it?</title>
+				<title>API Documentation – What is it?</title>
 				<ul>
 					<li>Easy to find</li>
 					<li>Easy to understand</li>
@@ -51,7 +53,7 @@
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-documentation-initial">
-				<title>API Documentation - Initial Steps</title>
+				<title>API Documentation – Initial Steps</title>
 				<ul>
 					<li>A human-readable landing page</li>
 					<li>A response header pointing to the API landing page</li>
@@ -59,7 +61,7 @@
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-documentation-additional">
-				<title>API Documentation - Additional Steps</title>
+				<title>API Documentation – Additional Steps</title>
 				<ul>
 					<li>API workflow diagrams</li>
 					<li>Common error conditions and how to resolve them</li>
@@ -76,7 +78,7 @@
 					</ul>
 					<li>Initial Steps</li>
 					<ul>
-						<li>landing page, headers, openAPI/AsyncAPI/etc</li>
+						<li>landing page, headers, OpenAPI/AsyncAPI/etc</li>
 					</ul>
 					<li>Additional Steps</li>
 					<ul>
