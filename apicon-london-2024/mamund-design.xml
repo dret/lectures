@@ -30,10 +30,60 @@
 					and adherence to industry standards, making it easier for developers to use the APIs.
 				</p>
 				<ul>
-					<li>item</li>
-					<li>item</li>
-					<li>item</li>
+					<li>Technology Agnostic Design</li>
+					<li>Initial Recommendations</li>
+					<li>Additional Recommendations</li>
+					<li>Don't ...</li>
 				</ul>
+			</slide>
+			<slide id="mamund-design-slide-technology-agnostic">
+				<title>Technology Agnostic Design</title>
+				<ul>
+					<li>Design is not implementation</li>
+					<ul>
+						<li>Good design guidelines work across styles and formats</li>
+					</ul>	
+					<li>Concentrate on design assets</li>
+					<ul>
+						<li>Rely on shared practices for all APIs</li>
+					</ul>
+					<li>Design guidelines should ...</li>
+					<ul>
+						<li>Promote clear understanding</li>
+						<li>Make it easy to target multiple implementations</li>
+						<li>Make it easy to identify data and actions</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-initial-recommendations">
+				<title>Initial Recommendations</title>
+				<ul>
+					<li>API Story</li>
+					<li>API Description Document</li>
+					<li>API Security Profile</li>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-additional-recommendations">
+				<title>Additional Recommendations</title>
+				<ul>
+					<li>API Vocabulary Document</li>
+					<li>API Workdlow Diagram</li>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-donts">
+				<title>Don't ...</title>
+				<ul>
+					<li>Don't try to control URLs</li>
+					<li>Don't (re)define the use of HTTP methods</li>
+					<li>Don;'t require agreement aggregates (<code>customer</code>, <code>user</code>, etc.)</li>
+				</ul>
+				<p style="font-style:italic">
+					Allow each team to design/implement these elements as best fits their needs and common practice for that style/format.
+				</p>
+			</slide>
+			<slide id="mamund-design-slide-summary">
+				<title>API Design Summary</title> 
+				<img src="mamund-design-summary.jpg" title='API Design Summary' class="fullsize-shadow" />
 			</slide>
 		</part>
 		<part id="mamund-design-part-documentation">
