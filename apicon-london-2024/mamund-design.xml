@@ -22,6 +22,9 @@
 			<title>API Design Consistency</title>
 			<slide id="mamund-design-slide-design">
 				<title>API Design Consistency</title>
+				<p class="font-style:italic">A mature API development capability involves consistency in API design 
+					and adherence to industry standards, making it easier for developers to use the APIs.
+				</p>
 				<ul>
 					<li>item</li>
 					<li>item</li>
@@ -38,10 +41,10 @@
 					<li><link href="mamund-design-slide-documentation-initial">Initial Steps</link></li>
 					<li><link href="mamund-design-slide-documentation-additional">Additional Steps</link></li>
 				</ul>
-				<blockquote>
-					<p><q>[H]elps the end users in understanding the different characteristics, features, and attributes of a ... product.</q></p>
-					<p style=" text-align : right ; margin : 0em ; "><span style="font-size : 75% ; "><a href="https://technicalwriterhq.com/documentation/"><q>What is Documentation?</q>, Technical Writer HQ</a></span></p>
-				</blockquote>
+				<p style="font-style:italic">
+					An organization with a mature API development capability will have comprehensive and up-to-date 
+					API documentation that is easy to understand and use.
+				</p>	
 			</slide>
 			<slide id="mamund-design-slide-documentation-what">
 				<title>API Documentation – What is it?</title>
@@ -51,6 +54,10 @@
 					<li>Up-to-date</li>
 					<li>Comprehensive</li>
 				</ul>
+				<blockquote>
+					<p><q>[H]elps the end users in understanding the different characteristics, features, and attributes of a ... product.</q></p>
+					<p style=" text-align : right ; margin : 0em ; "><span style="font-size : 75% ; "><a href="https://technicalwriterhq.com/documentation/"><q>What is Documentation?</q>, Technical Writer HQ</a></span></p>
+				</blockquote>
 			</slide>
 			<slide id="mamund-design-slide-documentation-initial">
 				<title>API Documentation – Initial Steps</title>
