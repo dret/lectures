@@ -26,9 +26,7 @@
 			</slide>
 			<slide id="mamund-design-slide-design">
 				<title>API Design Consistency</title>
-				<p class="font-style:italic">A mature API development capability involves consistency in API design 
-					and adherence to industry standards, making it easier for developers to use the APIs.
-				</p>
+				<p class="font-style:italic">A mature API development capability involves consistency in API design and adherence to industry standards, making it easier for developers to use the APIs.</p>
 				<ul>
 					<li>Technology Agnostic Design</li>
 					<li>Initial Recommendations</li>
@@ -67,7 +65,7 @@
 				<title>Additional Recommendations</title>
 				<ul>
 					<li>API Vocabulary Document</li>
-					<li>API Workdlow Diagram</li>
+					<li>API Workflow Diagram</li>
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-donts">
@@ -75,7 +73,7 @@
 				<ul>
 					<li>Don't try to control URLs</li>
 					<li>Don't (re)define the use of HTTP methods</li>
-					<li>Don;'t require agreement aggregates (<code>customer</code>, <code>user</code>, etc.)</li>
+					<li>Don't require agreement aggregates (<code>customer</code>, <code>user</code>, etc.)</li>
 				</ul>
 				<p style="font-style:italic">
 					Allow each team to design/implement these elements as best fits their needs and common practice for that style/format.
@@ -83,7 +81,7 @@
 			</slide>
 			<slide id="mamund-design-slide-summary">
 				<title>API Design Summary</title> 
-				<img src="mamund-design-summary.jpg" title='API Design Summary' class="fullsize-shadow" />
+				<img src="mamund-design-summary.png" title='API Design Summary' class="fullsize-shadow" />
 			</slide>
 		</part>
 		<part id="mamund-design-part-documentation">
