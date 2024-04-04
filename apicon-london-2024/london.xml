@@ -47,6 +47,33 @@
 		</table>
 	</toc>
 	<title><a href="https://apiconference.net/">API Conference</a>, <a href="https://apiconference.net/london/">London, UK</a></title>
+	<presentation id="workshop-introduction">
+		<title>Workshop Introduction</title>
+		<author>Mike Amundsen &amp; Erik Wilde</author>
+		<date short="2024-04-09">April 9, 2024</date>
+		<copyright>2024 Mike Amundsen &amp; Erik Wilde</copyright>
+		<part id="trainers">
+			<title>Your Trainers</title>
+			<slide id="cam2">
+				<title>Continuous API Management</title>
+				<img src="CAM2-cover.png" href="https://www.oreilly.com/library/view/continuous-api-management/9781098103514/" title="Continuous API Management, 2nd Edition, October 2021" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><q>Continuous API Management: Making the Right Decisions in an Evolving Landscape</q></li>
+					<ul>
+						<li><a href="https://www.oreilly.com/library/view/continuous-api-management/9781098103514/">O'Reilly book page</a></li>
+						<li><a href="https://www.amazon.com/Continuous-API-Management-Mehdi-Medjaoui-ebook/dp/B09M7J9FRH">Amazon book page</a></li>
+					</ul>
+					<li>Second edition 2021 (First edition 2019)</li>
+					<ul>
+						<li>Mehdi Medjaoui</li>
+						<li>Erik Wilde</li>
+						<li>Ronnie Mitra</li>
+						<li>Mike Amundsen</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 	<presentation id="strategy-business">
 		<title>Strategy and Business Alignment</title>
 		<author>Erik Wilde</author>
