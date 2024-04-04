@@ -3,8 +3,301 @@
 	<presentation>
 		<title>Product and Platform Marketing</title>
 		<author>Mike Amundsen</author>
-		<affiliation>???</affiliation>
+		<affiliation>amundsen.com, Inc.</affiliation>
 		<date short="2024-04-09">April 9, 2024</date>
 		<copyright>2024 Mike Amundsen</copyright>
+		<part id="mamund-marketing-part-overview">
+			<title>Overview</title>
+			<slide id="mamund-marketing-slide-overview">
+				<title>Overview</title>
+				<ul>
+					<li>Community Support</li>
+					<li>Developer Relations</li>
+					<li>API Onboarding</li>
+				</ul>
+				<p>
+				Healthy API programs rely on a strong support community.
+				</p>
+			</slide>
+		</part>
+		<part id="mamund-marketing-part-community">
+			<title>Community Support</title>
+			<slide id="mamund-marketing-community-title">
+				<title>Community Support</title> 
+				<img src="mamund-marketing-community.jpeg" title='Community Support' class="fullsize-shadow" />
+			</slide>
+			<slide id="mamund-marketing-slide-community">
+				<title>Community Support</title>
+				<ul>
+          <li>Online forums (e.g. listserv)</li>
+          <li>Group Chat (e.g. Slack)</li>
+          <li>One-on-one coaching (by appointment)</li>
+        </ul>
+				<p>
+				A mature API development capability involves community support for the APIs, such as forums or chat rooms where developers can ask questions and get support.
+				</p>
+			</slide>
+			<slide id="mamund-marketing-slide-community-forums">
+				<title>Community Support - Online Forums</title>
+				<ul>
+          <li>Good for "async" interactions</li>
+          <li>Good for historical context</li>
+          <li>Relatively low barrier of entry</li>
+        </ul>
+			</slide>
+			<slide id="mamund-marketing-slide-community-forums">
+				<title>Community Support - Group Chat</title>
+				<ul>
+          <li>Good for "real-time" interactions</li>
+          <li>Good for sharing knowledge</li>
+          <li>Several open-source options (e.g. Slack)</li>
+        </ul>
+			</slide>
+			<slide id="mamund-marketing-slide-community-forums">
+				<title>Community Support - One-on-One Coaching</title>
+				<ul>
+          <li>Good for solving immediate problems</li>
+          <li>Good for sharing expertise</li>
+          <li>However, can be hard to scale</li>
+        </ul>
+			</slide>
+			<slide id="mamund-marketing-slide-community-summary">
+				<title>Community Support - Summary</title>
+				<ul>
+          <li>Online forums (e.g. listserv)</li>
+          <ul><li>Good for async interactions</li></ul>
+          <li>Group Chat (e.g. Slack)</li>
+          <ul><li>Good for real-time interactions</li></ul>
+          <li>One-on-one coaching (by appointment)</li>
+          <ul><li>Good for direct sharing of expertise</li></ul>
+        </ul>
+				<p>
+				A mature API development capability involves community support for the APIs, such as forums or chat rooms where developers can ask questions and get support.
+				</p>
+			</slide>
+		</part>
+		<part id="mamund-marketing-part-devrel">
+			<title>Developer Relations</title>
+			<slide id="mamund-marketing-devrel-title">
+				<title>Developer Relations</title> 
+				<img src="mamund-marketing-devrel.jpeg" title='Developer Relations' class="fullsize-shadow" />
+			</slide>
+			<slide id="mamund-marketing-slide-devrel-overview">
+				<title>Developer Relations - Overview</title>
+				<ul>
+					<li>What is it?</li>
+					<li>The Basics</li>
+					<li>Additional Tasks</li>
+					<li>Measures of Success</li>
+				</ul>
+				<p>
+				  All successful API platform have a mix of in-person and online activities to help promote the
+team’s API and support API consumers.
+				</p>
+			</slide>
+			<slide id="mamund-marketing-slide-devrel-what">
+				<title>Developer Relations - What is it?</title>
+				<ul>
+					<li>Every API has a designated DevRel member</li>
+					<li>DevRel contact details are on the API landing page</li>
+					<li>DevRel assists in onboarding API consumers</li>
+					<li>DevRel handles API user support queries as needed</li>
+				</ul>
+				<blockquote>
+					<p><q>A mindset of getting developers to adopt a platform and making them successful with their initiatives.</q></p>
+					<p style=" text-align : right ; margin : 0em ; "><span style="font-size : 75% ; "><a href="https://www.moesif.com/blog/developer-relations/definition/What-is-Developer-Relations-and-What-are-Common-Roles/"><q>What is Developer Relations and What are Common Roles?</q>, Moesif</a></span></p>
+				</blockquote>
+			</slide>
+			<slide id="mamund-marketing-slide-devrel-basic">
+				<title>Developer Relations - The Basics</title>
+				<ul>
+					<li>"First Contact" for the API</li>
+					<li>Responsible for outreach to target consumers</li>
+					<li>General API promotion (e.g. show features, possible uses)</li>
+					<li>Convert consumer feedback to producer action items</li>
+				</ul>
+				<p>
+				  DevRels are the "face" of the API
+				</p>
+			</slide>
+			<slide id="mamund-marketing-slide-devrel-additional">
+				<title>Developer Relations - Additional Tasks</title>
+				<ul>
+					<li>Help API consumers solve problems w/ the API</li>
+					<li>Help API producers improve documentation and relate materials</li>
+					<li>Create and share training content (articles, videos, etc.)</li>
+					<li>Collaborate with other DevRels to improve the program</li>
+				</ul>
+				<p>
+				  DevRels are a bridge between producers and consumers
+				</p>
+			</slide>
+			<slide id="mamund-marketing-slide-devrel-success">
+				<title>Developer Relations - Measures of Success</title>
+				<ul>
+					<li>Reduce time between reporting and resolving problems for API Consumers</li>
+					<li>Less need for one-on-one interactions, more reliance on peer-to-peer support</li>
+					<li>Shorter time between consumer feedback and product feature in production</li>
+				</ul>
+			</slide>
+			<slide id="mamund-marketing-slide-devrel-summary">
+				<title>Developer Relations - Summary</title>
+				<ul>
+					<li>What is it?</li>
+					<ul><li>Helping developers solve their problems with your API</li></ul>
+					<li>The Basics</li>
+				  <ul><li>DevRels are the "face" of the API</li></ul>
+					<li>Additional Tasks</li>
+				  <ul><li>DevRels are a bridge between producers and consumers</li></ul>
+					<li>Measures of Success</li>
+					<ul><li>Reduce time/cost needed to improve API consumer success</li></ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="mamund-marketing-part-onboarding">
+			<title>API Onboarding</title>
+			<slide id="mamund-marketing-onboarding-title">
+				<title>API Onboarding</title> 
+				<img src="mamund-marketing-onboarding.jpeg" title='API Onboarding' class="fullsize-shadow" />
+			</slide>
+			<slide id="mamund-marketing-slide-onboarding">
+				<title>API Onboarding</title>
+				<ul>
+					<li>Onboarding Goals</li>
+					<li>API Self-Service: Basics</li>
+					<li>API Self-Service: Advanced</li>
+				</ul>
+			</slide>
+			<slide id="mamund-marketing-slide-onboarding-goals">
+				<title>API Onboarding : Goals</title>
+				<ul>
+				  <li>Reduce the need for repeated interactions at the start</li>
+				  <li>Provide a "quick win" to potential API consumers</li>
+				  <li>Present a smooth adoption path for your API</li>
+				</ul>
+			</slide>
+			<slide id="mamund-marketing-slide-onboarding-basics">
+				<title>API Onboarding : Basics</title>
+				<ul>
+				  <li>API Overview</li>
+				  <ul><li>API type [REST, GraphQL, etc.], use-case examples, limits [transactions, security, etc.]</li></ul>
+          <li>Authentication</li>
+          <ul><li>Auth methods supported, token/expiration details, refresh methods, authorization details, etc.</li></ul>
+          <li>Workflow Examples</li>
+          <ul><li>Common workflow patterns, most common actions/methods, parameter bodies, etc.</li></ul>
+          <li>Code Samples</li>
+          <ul><li>Working small snippets through to fully-functional apps that use the API</li></ul>
+          <li>Reference Documentation</li>
+          <ul><li>HTTP methods, URLs, parameters/bodies, response bodies, headers, errors/status codes, etc.</li></ul>
+				</ul>
+				<p>API Portals should be able to answer all your API consumer's initial questions</p>
+			</slide>
+			<slide id="mamund-marketing-slide-onboarding-advanced">
+				<title>API Onboarding : Advanced</title>
+				<ul>
+          <li>Changelog and/or update reports</li>
+          <li>Product Roadmap and/or planned upgrades</li>
+          <li>Comprehensive vocabulary document (names for data points and action elements)</li>
+          <li>Dedicated live chat and/or email forums for support (see above)</li>
+          <li>Keyword search across APIs</li>
+          <li>Written case studies</li>
+          <li>"Getting Started" guides</li>
+          <li>Uptime tracking</li>
+				</ul>
+				<p>NOTE: focus on the basics first. Once those are stable, move on to advanced items.</p>
+			</slide>
+			<slide id="mamund-marketing-slide-onboarding-summary">
+				<title>API Onboarding - Summary</title>
+				<ul>
+					<li>Onboarding Goals</li>
+					<ul><li>Present a smooth adoption path for your API</li></ul>
+					<li>API Self-Service: Basics</li>
+					<ul><li>Answer your API consumer's initial questions</li></ul>
+					<li>API Self-Service: Advanced</li>
+					<ul><li>Changelogs, roadmaps, case studies, and uptime tracking</li></ul>
+				</ul>
+				<p>
+				  Work closely with designated DevRels when establishing smooth API onboarding
+				</p>
+			</slide>
+		</part>
+		<part id="mamund-marketing-part-exercise">
+			<title>Exercise</title>
+			<slide id="mamund-marketing-exercise-title">
+				<title>Exercise</title> 
+				<img src="mamund-exercise.jpeg" title='Exercise' class="fullsize-shadow" />
+			</slide>
+			<slide id="mamund-marketing-slide-exercise">
+				<title>Exercise</title>
+				<ul>
+					<li>item</li>
+					<li>item</li>
+					<li>item</li>
+				</ul>
+			</slide>
+		</part>		
+		<part id="mamund-marketing-part-summary">
+			<title>Summary</title>
+			<slide id="mamund-marketing-summary-title">
+				<title>Summary</title> 
+				<img src="mamund-marketing-summary-title.jpeg" title='Summary' class="fullsize-shadow" />
+			</slide>
+			<slide id="mamund-marketing-slide-summary">
+				<title>Summary</title>
+				<ul>
+					<li>Community Support</li>
+					<li>Developer Relations</li>
+					<li>API Onboarding</li>
+				</ul>
+			</slide>
+			<slide id="mamund-marketing-slide-summary-support">
+				<title>Summary - Community Support</title>
+				<ul>
+          <li>Online forums (e.g. listserv)</li>
+          <ul><li>Good for async interactions</li></ul>
+          <li>Group Chat (e.g. Slack)</li>
+          <ul><li>Good for real-time interactions</li></ul>
+          <li>One-on-one coaching (by appointment)</li>
+          <ul><li>Good for direct sharing of expertise</li></ul>
+        </ul>
+				<p>
+				A mature API development capability involves community support for the APIs, such as forums or chat rooms where developers can ask questions and get support.
+				</p>			
+		  </slide>
+			<slide id="mamund-marketing-slide-summary">
+				<title>Summary - Developer Relations</title>
+				<ul>
+					<li>What is it?</li>
+					<ul><li>Helping developers solve their problems with your API</li></ul>
+					<li>The Basics</li>
+				  <ul><li>DevRels are the "face" of the API</li></ul>
+					<li>Additional Tasks</li>
+				  <ul><li>DevRels are a bridge between producers and consumers</li></ul>
+					<li>Measures of Success</li>
+					<ul><li>Reduce time/cost needed to improve API consumer success</li></ul>
+				</ul>
+        <p>
+				  All successful API platform have a mix of in-person and online activities to help promote the team’s API and support API consumers.
+				</p>
+			</slide>		  
+			<slide id="mamund-marketing-slide-summary-onboarding">
+				<title>Summary - Onboarding</title>
+				<ul>
+					<li>Onboarding Goals</li>
+					<ul><li>Present a smooth adoption path for your API</li></ul>
+					<li>API Self-Service: Basics</li>
+					<ul><li>Answer your API consumer's initial questions</li></ul>
+					<li>API Self-Service: Advanced</li>
+					<ul><li>Changelogs, roadmaps, case studies, and uptime tracking</li></ul>
+				</ul>
+				<p>
+				  Work closely with designated DevRels when establishing smooth API onboarding
+				</p>
+			</slide>
+			<slide id="mamund-marketing-slide-summary-final">
+				<title>Summary - Discussion</title> 
+				<img src="mamund-discussion-title.jpeg" title='Summary - Discussion' class="fullsize-shadow" />
+			</slide>
+		</part>
 	</presentation>
 </hotspot>
