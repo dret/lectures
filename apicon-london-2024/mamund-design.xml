@@ -75,8 +75,8 @@
 					<li>Don't (re)define the use of HTTP methods</li>
 					<li>Don't require agreement on aggregates</li>
 					<ul>
-					  <li>DON'T try to get agreement on <code>customer</code>, <code>user</code>, etc.</li>
-					  <li>DO get agreeement on <code>givenName</code>, <code>familyName</code>, <code>postalCode</code></li>
+					  <li>DO need agreeement on <code>givenName</code>, <code>familyName</code>, <code>postalCode</code></li>
+					  <li>DO NOT need agreement on <code>customer</code>, <code>user</code>, etc.</li>
 					</ul>  
 				</ul>
 				<p style="font-style:italic">
@@ -126,10 +126,10 @@
 					<ul><li><code>&lt;link href="http://api.example.org/documentation" rel="service-doc" /&gt;</code></li></ul>
 					<li>API description (OpenAPI, AsyncAPI, WSDL, etc.)</li>
 					<ul><li><code>&lt;link href="http://api.example.org/open-api" rel="service-desc" /&gt;</code></li></ul>
-					<li>Response header fields pointing to these documents</li>
+					<li>Response headers pointing to these documents</li>
 					<ul>
 					  <li><code>Link: &lt;http://api.example.org/documentation&gt;; rel="service-doc"</code></li>
-					  <li><code>Link: &lt;http://api.example.org/open-api&gt;; rel="service-desc"</code></li>
+					  <li><code>Link: &lt;href="http://api.example.org/open-api&gt;; rel="service-desc"</code></li>
 					</ul>
 				</ul>
 			</slide>
@@ -147,7 +147,7 @@
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-documentation-summary">
-				<title>API Documentation – Summary</title>
+				<title>API Documentation - Summary</title>
 				<ul>
 					<li>What is it?</li>
 					<ul>
@@ -190,7 +190,7 @@
 				</blockquote>
 			</slide>
 			<slide id="mamund-design-slide-lifecycle-create">
-				<title>API Lifecycle Management – Create</title>
+				<title>API Lifecycle Management - Create</title>
 				<ul>
 					<li>item</li>
 					<li>item</li>
@@ -198,7 +198,7 @@
 				</ul>
 		  </slide>		
 			<slide id="mamund-design-slide-lifecycle-publish">
-				<title>API Lifecycle Management – Publish</title>
+				<title>API Lifecycle Management - Publish</title>
 				<ul>
 					<li>item</li>
 					<li>item</li>
@@ -206,7 +206,7 @@
 				</ul>
 		  </slide>		
 			<slide id="mamund-design-slide-lifecycle-realize">
-				<title>API Lifecycle Management – Realize</title>
+				<title>API Lifecycle Management - Realize</title>
 				<ul>
 					<li>item</li>
 					<li>item</li>
@@ -214,7 +214,7 @@
 				</ul>
 		  </slide>		
 			<slide id="mamund-design-slide-lifecycle-maintain">
-				<title>API Lifecycle Management – Maintain</title>
+				<title>API Lifecycle Management - Maintain</title>
 				<ul>
 					<li>item</li>
 					<li>item</li>
@@ -222,7 +222,7 @@
 				</ul>
 		  </slide>		
 			<slide id="mamund-design-slide-lifecycle-retire">
-				<title>API Lifecycle Management – Retire</title>
+				<title>API Lifecycle Management - Retire</title>
 				<ul>
 					<li>item</li>
 					<li>item</li>
@@ -230,11 +230,11 @@
 				</ul>
 		  </slide>		
 			<slide id="mamund-design-slide-lifecycle-summary-image">
-				<title>API Lifecycle Management – Summary</title> 
+				<title>API Lifecycle Management - Summary</title> 
 				<img src="mamund-lifecycle-title.jpeg" title='API Lifecycle Management Summary' class="fullsize-shadow" />
 			</slide>
 			<slide id="mamund-design-slide-lifecycle-summary">
-				<title>API Lifecycle Management – Summary</title>
+				<title>API Lifecycle Management - Summary</title>
 				<ul>
 					<li>Create</li>
 					<li>Publish</li>
@@ -264,13 +264,13 @@
 				</blockquote>
 			</slide>
 			<slide id="mamund-design-slide-automation-testing">
-				<title>Automation – Testing</title>
+				<title>Automation - Testing</title>
 				<ul>
 					<li>Testing</li>
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-automation-deployment">
-				<title>Automation – Deployment</title>
+				<title>Automation - Deployment</title>
 				<ul>
 					<li>Deployment</li>
 				</ul>
@@ -282,11 +282,11 @@
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-automation-summary-title">
-				<title>Automation – Summary</title> 
+				<title>Automation - Summary</title> 
 				<img src="mamund-automation-title.jpeg" title='Automation Summary' class="fullsize-shadow" />
 			</slide>
 			<slide id="mamund-design-slide-automation-summary">
-				<title>Automation – Summary</title>
+				<title>Automation - Summary</title>
 				<ul>
 					<li>Testing</li>
 					<li>Deployment</li>
@@ -297,6 +297,10 @@
 		</part>
 		<part id="mamund-design-part-exercise">
 			<title>Exercise</title>
+			<slide id="mamund-design-exercise-title">
+				<title>Exercise</title> 
+				<img src="mamund-exercise.jpeg" title='Exercise' class="fullsize-shadow" />
+			</slide>
 			<slide id="mamund-design-slide-exercise">
 				<title>Exercise</title>
 				<ul>
@@ -310,7 +314,7 @@
 			<title>Summary</title>
 			<slide id="mamund-design-slide-summary-title">
 				<title>Summary</title> 
-				<img src="mamund-summary-title.jpeg" title='Summary' class="fullsize-shadow" />
+				<img src="mamund-design-summary-title.jpeg" title='Summary' class="fullsize-shadow" />
 			</slide>
 			<slide id="mamund-design-slide-summary">
 				<title>Summary</title>
@@ -322,7 +326,7 @@
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-summary-design">
-				<title>Summary – Design</title>
+				<title>Summary - Design</title>
 				<ul>
 					<li>API Story</li>
 					<li>API Description Document</li>
@@ -332,7 +336,7 @@
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-summary-documentation">
-				<title>Summary – Documentation</title>
+				<title>Summary - Documentation</title>
 				<ul>
 					<li>What is it?</li>
 					<ul>
@@ -349,7 +353,7 @@
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-summary-lifecycle">
-				<title>Summary – Lifecycle</title>
+				<title>Summary - Lifecycle</title>
 				<ul>
 					<li>Create</li>
 					<li>Publish</li>
@@ -359,7 +363,7 @@
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-summary-automation">
-				<title>Summary – Automation</title>
+				<title>Summary - Automation</title>
 				<ul>
 					<li>Testing</li>
 					<li>Deployment</li>
@@ -367,8 +371,8 @@
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-summary-final">
-				<title>Summary – Discussion</title> 
-				<img src="mamund-discussion-title.jpeg" title='Summary – Discussion' class="fullsize-shadow" />
+				<title>Summary - Discussion</title> 
+				<img src="mamund-discussion-title.jpeg" title='Summary - Discussion' class="fullsize-shadow" />
 			</slide>
 		</part>
 	</presentation>
