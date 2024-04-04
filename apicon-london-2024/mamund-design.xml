@@ -3,7 +3,7 @@
 	<presentation>
 		<title short="Product Management">Product Design, Development, and Management</title>
 		<author>Mike Amundsen</author>
-		<affiliation>???</affiliation>
+		<affiliation>amundsen.com, Inc.</affiliation>
 		<date short="2024-04-09">April 9, 2024</date>
 		<copyright>2024 Mike Amundsen</copyright>
 		<part id="mamund-design-part-overview">
@@ -73,7 +73,11 @@
 				<ul>
 					<li>Don't try to control URLs</li>
 					<li>Don't (re)define the use of HTTP methods</li>
-					<li>Don't require agreement aggregates (<code>customer</code>, <code>user</code>, etc.)</li>
+					<li>Don't require agreement on aggregates</li>
+					<ul>
+					  <li>DON'T try to get agreement on <code>customer</code>, <code>user</code>, etc.</li>
+					  <li>DO get agreeement on <code>givenName</code>, <code>familyName</code>, <code>postalCode</code></li>
+					</ul>  
 				</ul>
 				<p style="font-style:italic">
 					Allow each team to design/implement these elements as best fits their needs and common practice for that style/format.
@@ -85,6 +89,10 @@
 			</slide>
 		</part>
 		<part id="mamund-design-part-documentation">
+			<slide id="mamund-documentation-slide-title">
+				<title>API Documentation</title> 
+				<img src="mamund-documentation-title.jpeg" title='API Documentation' class="fullsize-shadow" />
+			</slide>
 			<title>API Documentation</title>
 			<slide id="mamund-design-slide-documentation">
 				<title>API Documentation</title>
@@ -115,8 +123,14 @@
 				<title>API Documentation – Initial Steps</title>
 				<ul>
 					<li>A human-readable landing page</li>
-					<li>A response header pointing to the API landing page</li>
+					<ul><li><code>&lt;link href="http://api.example.org/documentation" rel="service-doc" /&gt;</code></li></ul>
 					<li>API description (OpenAPI, AsyncAPI, WSDL, etc.)</li>
+					<ul><li><code>&lt;link href="http://api.example.org/open-api" rel="service-desc" /&gt;</code></li></ul>
+					<li>Response headers pointing to these documents</li>
+					<ul>
+					  <li><code>Link: &lt;http://api.example.org/documentation&gt;; rel="service-doc"</code></li>
+					  <li><code>Link: &lt;href="http://api.example.org/open-api&gt;; rel="service-desc"</code></li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-documentation-additional">
@@ -125,26 +139,34 @@
 					<li>API workflow diagrams</li>
 					<li>Common error conditions and how to resolve them</li>
 					<li>API client code samples</li>
-					<li>API catalog/discovery documents (APIs.json, ALPS, etc.)</li>
+					<li>API catalog/discovery documents</li>
+					<ul>
+					  <li><code>APIs.json</code></li>
+					  <li><code>ALPS (Application-Level Profile Semantics)</code></li>
+					</ul>  
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-documentation-summary">
-				<title>API Documentation</title>
+				<title>API Documentation - Summary</title>
 				<ul>
 					<li>What is it?</li>
 					<ul>
-						<li>findable, understandable, up-to-date, comprehensive</li>
+						<li>Findable, understandable, up-to-date, comprehensive</li>
 					</ul>
 					<li>Initial Steps</li>
 					<ul>
-						<li>landing page, headers, OpenAPI/AsyncAPI/etc</li>
+						<li>Landing page, headers, OpenAPI/AsyncAPI/etc</li>
 					</ul>
 					<li>Additional Steps</li>
 					<ul>
-						<li>diagrams, errors, code, discovery</li>
+						<li>Diagrams, errors, code, discovery</li>
 					</ul>
 				</ul>
 				<p>See Chapter 13 from <a href="https://learning.oreilly.com/library/view/principles-of-web/9780137355754/ch13.xhtml">"Principles of Web Design"</a> by James Higginbotham</p>	
+			</slide>
+			<slide id="mamund-design-slide-documentation-summary">
+				<title>API Documentation Summary</title> 
+				<img src="mamund-documentation-summary.png" title='API Documentation Summary' class="fullsize-shadow" />
 			</slide>
 		</part>
 		<part id="mamund-design-part-lifecycle">
