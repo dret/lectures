@@ -173,6 +173,7 @@
 			</slide>
 			<slide id="mamund-design-slide-lifecycle">
 				<title>API Lifecycle Management</title>
+        <img src="mamund-design-api-lifecycle-cam.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
 				<ul>
 					<li>Create</li>
 					<li>Publish</li>
@@ -188,43 +189,228 @@
 			<slide id="mamund-design-slide-lifecycle-create">
 				<title>API Lifecycle Management – Create</title>
 				<ul>
-					<li>item</li>
-					<li>item</li>
-					<li>item</li>
+					<li>What is it?</li>
+					<li>Milestones</li>
+					<li>Methodology</li>
 				</ul>
 		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-create-what">
+				<title>API Lifecycle Management – Create : What is it?</title>
+        <img src="mamund-design-api-lifecycle-cam-create.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
+      	<ul>
+					<li>New API or replacement for an existing API</li>
+					<li>Not deployed into production</li>
+					<li>Not available for reliable use</li>
+				</ul>
+		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-create-milestones">
+				<title>API Lifecycle Management – Create : Milestones</title>
+        <img src="mamund-design-api-lifecycle-cam-create.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
+      	<ul>
+					<li>API Story</li>
+					<li>API Description</li>
+					<li>Security Profile</li>
+					<li>Workflow Diagram</li>
+					<li>Vocabulary Document</li>
+				</ul>
+		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-stakeholders">
+				<title>API Lifecycle Management – Create : Methodology</title>
+        <img src="mamund-design-api-lifecycle-cam-create.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
+      	<ul>
+					<li>Not just engineers, devs, and designers</li>
+					<li>Businesspeople, product staff, citizen developers</li>
+					<li>Arnaud Lauret's API Goals Canvas</li>
+				</ul>
+		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-canvas">
+				<title>API Lifecycle Management – Create : Goals Canvas</title>
+        <img src="mamund-design-api-lifecycle-cam-create.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
+      	<ul>
+					<li>Not just engineers, devs, and designers</li>
+					<li>Businesspeople, product staff, citizen developers</li>
+					<li>Arnaud Lauret's API Goals Canvas</li>
+				</ul>
+				<p>See Chapter 2 ("Designing an API for its Users") from <a href="https://learning.oreilly.com/library/view/the-design-of/9781617295102/OEBPS/Text/c02.xhtml">"The Design Of Web APIs"</a> by Arnaud Lauret</p>	
+		  </slide>		
+		  <slide id="mamund-design-slide-lifecycle-canvas-image">
+		    <title>Lauret's API Goals Canvas</title>
+				<img src="mamund-design-api-goals-canvas.png" title='API Design' class="fullsize-shadow" />		    
+		  </slide>
 			<slide id="mamund-design-slide-lifecycle-publish">
-				<title>API Lifecycle Management – Publish</title>
+			mamund-design-api-lifecycle-cam-publish.png
+				<title>API Lifecycle Management &#8211; Publish</title>
+        <img src="mamund-design-api-lifecycle-cam-publish.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
 				<ul>
-					<li>item</li>
-					<li>item</li>
+					<li>What is it?</li>
+					<li>Milestones</li>
 					<li>item</li>
 				</ul>
 		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-publish-what">
+				<title>API Lifecycle Management &#8211; Publish : What is it?</title>
+        <img src="mamund-design-api-lifecycle-cam-publish.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
+				<ul>
+					<li>An API instance has been deployed to a production environment</li>
+					<li>It has been made available to one or more developer communities</li>
+					<li>The strategic value of the API is not yet being realized</li>
+				</ul>
+		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-publish-milestones">
+				<title>API Lifecycle Management &#8211; Publish : Milestones</title>
+        <img src="mamund-design-api-lifecycle-cam-publish.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
+				<ul>
+					<li>The API has been promoted to a production environment</li>
+					<li>The API website has gone live</li>
+					<li>The API has been registered in the corporate registry</li>
+					<li>API availability has been announced (e.g. email)</li>
+				</ul>
+		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-publish-methodology">
+				<title>API Lifecycle Management &#8211; Publish : Methodology</title>
+        <img src="mamund-design-api-lifecycle-cam-publish.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
+				<ul>
+					<li>Use API Stories to identify goals</li>
+					<li>Write API stories to solve multiple user stories</li>
+					<li>Keep third-party developers in mind</li>
+				</ul>
+		  </slide>		
+		  <slide id="mamund-design-slide-lifecycle-publish-image">
+		    <title>API Stories</title>
+				<img src="mamund-design-api-lifecycle-cam-publish-stories.png" title='API Design' class="fullsize-shadow" />		    
+		  </slide>
 			<slide id="mamund-design-slide-lifecycle-realize">
 				<title>API Lifecycle Management – Realize</title>
+        <img src="mamund-design-api-lifecycle-cam-realize.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
 				<ul>
-					<li>item</li>
-					<li>item</li>
-					<li>item</li>
+					<li>What is it?</li>
+					<li>Milestones</li>
+					<li>Methodology</li>
 				</ul>
 		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-realize-what">
+				<title>API Lifecycle Management – Realize : What is it?</title>
+        <img src="mamund-design-api-lifecycle-cam-realize.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
+				<ul>
+					<li>A published API instance exists and is available</li>
+					<li>It is being used in a way that realizes its objective, business or technical</li>
+					<li>Its realized value is generally trending upward</li>
+					<li>Breaking this API will have an impact on users’ operational efficiency</li>
+				</ul>
+		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-realize-milestones">
+				<title>API Lifecycle Management – Realize : Milestones</title>
+        <img src="mamund-design-api-lifecycle-cam-realize.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
+				<ul>
+					<li>Use Key Performance Indicators (KPIs)</li>
+					<ul><li>"Reduced downtime by 15%", "Increased closed sales by 10%", etc.</li></ul>
+					<li>Monitor engagement (users)</li>
+					<ul><li>"Increased users onboarded by 25%"</li></ul>
+					<li>Monitoring traffic (usage)</li>
+					<ul><li>"Resolved 40% more transactions in the last month"</li></ul>
+				</ul>
+		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-realize-methodology">
+				<title>API Lifecycle Management – Realize : Methodology</title>
+        <img src="mamund-design-api-lifecycle-cam-realize.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
+				<ul>
+					<li>Define real value of your API</li>
+					<li>Identify user pains</li>
+					<li>Match your API's gains</li>
+					<li>Osterwalder's "Value Proposition Canvas"</li>
+				</ul>
+        <p>See <a href="https://leanpub.com/apiproductmanagement">"API Product Management"</a> by Andrea Zulian and Amancio Bouza</p>				
+		  </slide>		
+		  <slide id="mamund-design-slide-lifecycle-realize-canvas">
+		    <title>Osterwalder's Value Proposition Canvas</title>
+				<img src="mamund-design-api-lifecycle-cam-realize-value-canvas.png" title='Value Proposition Canvas' class="fullsize-shadow" />		    
+		  </slide>
 			<slide id="mamund-design-slide-lifecycle-maintain">
 				<title>API Lifecycle Management – Maintain</title>
+        <img src="mamund-design-api-lifecycle-cam-maintain.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
 				<ul>
-					<li>item</li>
-					<li>item</li>
-					<li>item</li>
+					<li>What is it?</li>
+					<li>Milestones</li>
+					<li>Methodology</li>
+				</ul>
+		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-maintain-what">
+				<title>API Lifecycle Management – Maintain : What is it?</title>
+        <img src="mamund-design-api-lifecycle-cam-maintain.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
+				<ul>
+					<li>It is being actively used by one or more consuming applications</li>
+					<li>Its realized value is stagnant or downward-trending</li>
+					<li>It is no longer actively being improved</li>
+				</ul>
+		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-maintain-milestones">
+				<title>API Lifecycle Management – Maintain : Milestones</title>
+        <img src="mamund-design-api-lifecycle-cam-maintain.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
+				<ul>
+					<li>KPI goals attained</li>
+					<li>User count steady to receeding</li>
+					<li>Traffic steady to waning</li>
+				</ul>
+		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-maintain-methodlogy">
+				<title>API Lifecycle Management – Maintain : Methodology</title>
+        <img src="mamund-design-api-lifecycle-cam-maintain.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
+				<ul>
+					<li>Aim to reduce support costs</li>
+					<li>Encourage API consumer autonomy &amp; self-service</li>
+					<li>Commit to no new features</li>
 				</ul>
 		  </slide>		
 			<slide id="mamund-design-slide-lifecycle-retire">
 				<title>API Lifecycle Management – Retire</title>
+        <img src="mamund-design-api-lifecycle-cam-retire.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
 				<ul>
-					<li>item</li>
-					<li>item</li>
-					<li>item</li>
+					<li>What is it?</li>
+					<li>Milestones</li>
+					<li>Methodology</li>
 				</ul>
 		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-retire-what">
+				<title>API Lifecycle Management – Retire : What is it?</title>
+        <img src="mamund-design-api-lifecycle-cam-retire.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
+				<ul>
+					<li>A published API instance exists and is available</li>
+					<li>Its realization value is no longer enough to justify continued maintenance</li>
+					<li>An end-of-life decision has been made</li>
+				</ul>
+		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-retire-milestones">
+				<title>API Lifecycle Management – Retire : Milestones</title>
+        <img src="mamund-design-api-lifecycle-cam-retire.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
+				<ul>
+					<li>Reached a "floor" on users or traffic</li>
+					<li>Reached as "ceiling" on costs and/or support effort</li>
+					<li>A better replacement is available</li>
+				</ul>
+		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-retire-methodology">
+				<title>API Lifecycle Management – Retire : Methdology</title>
+        <img src="mamund-design-api-lifecycle-cam-retire.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				
+				<ul>
+				  <li>Prepare your community</li>
+					<ul>
+					  <li>Announce retirement in advance (months? years?)</li>
+					  <li>Suggest replacements to users</li>
+					  <li>Recover support costs through increased payments</li>
+					</ul>  
+					<li>Shutdown process</li>
+					<ul>
+					  <li>Place code in public domain?</li>
+					  <li>Publish API as open source</li>
+					  <li>Provide ability for users to recover data</li>
+					  <li>Mark API as <code>HTTP 410 Gone</code></li>
+					</ul>
+				</ul>
+		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-landsacpe-image">
+				<title>API Lifecycle Management – Landscape</title> 
+				<img src="mamund-design-api-lifecycle-cam-landscape.png" title='API Lifecycle Management Landscape' class="fullsize-shadow" />
+			</slide>
 			<slide id="mamund-design-slide-lifecycle-summary-image">
 				<title>API Lifecycle Management – Summary</title> 
 				<img src="mamund-lifecycle-title.jpeg" title='API Lifecycle Management Summary' class="fullsize-shadow" />
@@ -233,10 +419,15 @@
 				<title>API Lifecycle Management – Summary</title>
 				<ul>
 					<li>Create</li>
+					<ul><li>New API or replacement for an existing API</li></ul>
 					<li>Publish</li>
+					<ul><li>The API has been promoted to a production environment</li></ul>
 					<li>Realize</li>
+					<ul><li>It is being used in a way that realizes its objective, business or technical</li></ul>
 					<li>Maintain</li>
+					<ul><li>It is no longer actively being improved</li></ul>
 					<li>Retire</li>
+					<ul><li>An end-of-life decision has been made</li></ul>
 				</ul>
 				<p>See Chapter 7 ("The API Product Lifecycle") from <a href="https://learning.oreilly.com/library/view/continuous-api-management/9781098103514/ch07.html">"Continuous API Management"</a> by Medjaoui, Wilde, Mitra, Amundsen</p>
 			</slide>
