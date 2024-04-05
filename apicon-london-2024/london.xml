@@ -87,6 +87,25 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="workshop">
+			<title>Your Workshop</title>
+			<slide id="apim-maturity">
+				<title>Yet Another Maturity Model?</title>
+				<img source="CNCF Platform Engineering Maturity Model" src="platform-engineering-maturity-model-cncf.png" href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/" class="fullsize-shadow" />
+			</slide>
+			<slide id="workshop-focus">
+				<title>Main Focus: Scope and Potential</title>
+				<img src="bang-for-the-buck.webp" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>Understanding the relevant areas</li>
+					<li>Looking at various <q>levels</q> in these areas</li>
+					<li>Aim for <q>optimum</q> instead of <q>maximum</q></li>
+					<li>Figure out where you are and where you should be</li>
+					<li>Look at patterns and practices that you can learn from</li>
+					<li>Always think about <q>bang for the buck</q></li>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="strategy-business">
 		<title>Strategy and Business Alignment</title>
