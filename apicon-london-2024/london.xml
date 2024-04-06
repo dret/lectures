@@ -125,6 +125,40 @@
 		</part>
 		<part id="api-strategy">
 			<title>API Strategy</title>
+			<part id="execution-gap">
+				<title>The Execution Gap</title>
+				<slide id="vision-strategy-program">
+					<title><span title="Why">Vision</span> → <span title="What">Strategy</span> → <span title="How">Program</span> → <span title="Build">Platform</span> → <span title="Measure">Results</span></title>
+					<img title="Grand Canyon" src="grand-canyon.jpg" class="fullsize"/>
+				</slide>
+				<slide id="digital-transformation-definition">
+					<title>Digital Transformation Definition</title>
+					<blockquote>
+						<p>Digital Transformation <a href="https://hbr.org/2019/07/digital-doesnt-have-to-be-disruptive"><q>means adapting an organization's strategy and structure to capture opportunities enabled by digital technology.</q> <span style="font-size : 75% ;">(Nathan Furr and Andrew Shipilov, <q>Digital Doesn't Have to Be Disruptive</q>, Harvard Business Review 97(4), July/August 2019, pp. 94-103)</span></a></p>
+					</blockquote>
+				</slide>
+				<slide id="leadership-1-2-3-4">
+					<title>Leadership 1-2-3-4</title>
+					<ul>
+						<li>Set a <em>vision</em> as the goal to improve the organization</li>
+						<ul>
+							<li><em>APIs</em> are one of the necessary foundations of any digital value stream</li>
+						</ul>
+						<li>Define a <em>strategy</em> how to turn the vision into reality</li>
+						<ul>
+							<li><em>APIs</em> must focus on business value for them to become valuable building blocks</li>
+						</ul>
+						<li>Have a <em>program</em> to turn the defined strategy into reality</li>
+						<ul>
+							<li><em>Designing and building valuable APIs</em> has business, organizational, and technical aspects</li>
+						</ul>
+						<li>Build a <em>platform</em> that supports teams and supports scaling</li>
+						<ul>
+							<li><em>Platform engineering</em> focuses on increasing efficiency and flow of teams</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
 			<part id="bezos-mandate">
 				<title>The Bezos Mandate</title>
 				<slide id="amazon-rules">
