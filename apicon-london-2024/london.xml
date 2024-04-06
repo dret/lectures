@@ -125,6 +125,53 @@
 		</part>
 		<part id="api-strategy">
 			<title>API Strategy</title>
+			<part id="bezos-mandate">
+				<title>The Bezos Mandate</title>
+				<slide id="amazon-rules">
+					<title>Jeff Bezos' Services Rant: <a href="https://gist.github.com/chitchcock/1281611">The Rules</a></title>
+					<ul>
+						<li>Famous small set of SOA design rules</li>
+						<ul>
+							<li>Teams must expose functionality through services</li>
+							<li>Communication happens only through service interfaces</li>
+							<li>There are no hard guidelines for service design</li>
+							<li>Internal/external service is a matter of policy, not one of design</li>
+						</ul>
+						<li>Going against the <q>let's pick a platform</q> spirit of old-school SOA</li>
+					</ul>
+				</slide>
+				<slide id="amazon-consequences">
+					<title>Jeff Bezos' Services Rant: <a href="https://gist.github.com/chitchcock/1281611">The Consequences</a></title>
+					<ul>
+						<li>With more freedom comes more responsibility</li>
+						<ul>
+							<li>Monitoring and metrics are necessary for finding root causes</li>
+							<li>All APIs must be hardened against DoS attacks</li>
+							<li>Automated QA is necessary to really understand service health</li>
+							<li>Services must be documented and registered so that they can be discovered</li>
+							<li>Debugging becomes harder because of service dependencies</li>
+						</ul>
+						<li>Sophisticated tooling required to manage the new SOA landscape</li>
+						<li>Much easier in today's technology landscape than in 2002</li>
+					</ul>
+				</slide>
+				<slide id="api-first">
+					<title>API First: API all the Things</title>
+					<ul>
+						<li><link href="amazon-rules">Jeff Bezos' Mandate</link> focuses on <q>API products</q></li>
+						<ul>
+							<li>Loose coupling means to look at <em>products as APIs</em></li>
+							<li>All dependencies have to be designed and built as APIs</li>
+						</ul>
+						<li>API products are built by thinking about interactions</li>
+						<ol>
+							<li>The API is the <em>first UI</em></li>
+							<li>APIs are designed <em>before anything is implemented</em></li>
+							<li>APIs are the <em>primary means of team communications</li>
+						</ol>
+					</ul>
+				</slide>
+			</part>
 		</part>
 		<part id="api-business-models">
 			<title>API Business Models</title>
