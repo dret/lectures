@@ -209,6 +209,30 @@
 		</part>
 		<part id="api-business-models">
 			<title>API Business Models</title>
+			<slide id="business-model-overview">
+				<title>API Business Model Overview</title>
+				<img href="https://www.mulesoft.com/api-university/programmablewebs-guide-to-modern-api-business-models" src="api-business-models.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-partner">
+				<title>Partner Business Models</title>
+				<img href="https://www.mulesoft.com/api-university/programmablewebs-guide-to-modern-api-business-models" src="api-business-models-partner.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-partner-affiliate">
+				<title>Partner Business Model: Affiliate</title>
+				<img href="https://developer.walgreens.com/sites/default/files/v3_Native_PhotoPrintsAPI.html" title="Walgreens Native Photo Prints API" src="walgreens-native-photo-prints-api.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-internal">
+				<title>The 900lb Gorilla</title>
+				<img href="https://www.mulesoft.com/api-university/programmablewebs-guide-to-modern-api-business-models" src="api-business-models-internal.png" class="fullsize"/>
+			</slide>
+			<slide id="indirect">
+				<title>Most API Value Creation is Indirect</title>
+				<ol>
+					<li>Using APIs to become better at internal reuse and cross-pollination</li>
+					<li>Reducing friction by having teams communicate via APIs</li>
+					<li>Using <q>API First</q> as a way to build everything as digital building blocks</li>
+				</ol>
+			</slide>
 		</part>
 		<part id="strategy-business-conclusions">
 			<title>Conclusions</title>
