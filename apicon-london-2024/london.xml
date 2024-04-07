@@ -390,6 +390,37 @@
 		<copyright>2024 Erik Wilde</copyright>
 		<part id="portals">
 			<title>Portal Management</title>
+			<part id="portal-audience">
+				<title>Portal Audience</title>
+				<slide id="inside-out">
+					<title>Inside-Out: External API Consumers</title>
+				</slide>
+				<slide id="inside-in">
+					<title>Inside-In: Internal API Platform</title>
+				</slide>
+				<slide id="outside-in">
+					<title>Outside-In: Digital Supply Chain Management</title>
+				</slide>
+			</part>
+			<part id="great-unbundling">
+				<title>The Great Unbundling</title>
+				<slide id="api-management-technical">
+					<title>Securing APIs</title>
+					<img src="API-management-technical.png" class="fullsize-shadow"/>
+				</slide>
+				<slide id="api-management-lifecycle">
+					<title>Supporting the Full API Lifecycle</title>
+					<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
+				</slide>
+				<slide id="api-management-product">
+					<title>APIs as Business Building Blocks</title>
+					<img src="API-management-product.png" class="fullsize-shadow"/>
+				</slide>
+				<slide id="api-management-marketing">
+					<title>API Consumption Matters</title>
+					<img src="API-management-marketing.png" class="fullsize-shadow"/>
+				</slide>
+			</part>
 		</part>
 		<part id="platform-engineering">
 			<title>Platform Engineering</title>
