@@ -315,6 +315,12 @@
 				</part>
 			</part>
 		</part>
+		<part id="exercise-strategy">
+			<title>Exercise #1: Create/Fix Your Strategy</title>
+			<slide id="strategy-matters">
+				<title>Strategy Matters</title>
+			</slide>
+		</part>
 		<part id="api-business-models">
 			<title>API Business Models</title>
 			<slide id="how-to-make-five-billion-dollar">
@@ -379,6 +385,12 @@
 				</ul>
 			</slide>
 		</part>
+		<part id="exercise-business-model">
+			<title>Exercise #2: API Value Matters</title>
+			<slide id="business-model">
+				<title>What's Your Business?</title>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="design" include="mamund-design.xml"/>
 	<presentation id="marketing" include="mamund-marketing.xml"/>
@@ -424,6 +436,12 @@
 		</part>
 		<part id="platform-engineering">
 			<title>Platform Engineering</title>
+		</part>
+		<part id="exercise-platform-strategy">
+			<title>Exercise #3: Platform Strategy</title>
+			<slide id="platform-evolution">
+				<title>Growing Your Platform</title>
+			</slide>
 		</part>
 		<part id="guidelines">
 			<title>Guidelines</title>
@@ -532,6 +550,12 @@
 					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
 					<li>Slides online: <a href="http://dret.net/lectures/apicon-london-2024/"><code>dret.net/lectures/apicon-london-2024/</code></a></li>
 				</ul>
+			</slide>
+		</part>
+		<part id="exercise-guidelines">
+			<title>Exercise #4: Guidance Matters</title>
+			<slide id="guideline-evolution">
+				<title>Grow/Tweak/Shrink Your Guidelines</title>
 			</slide>
 		</part>
 	</presentation>
