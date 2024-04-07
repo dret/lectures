@@ -436,6 +436,38 @@
 		</part>
 		<part id="platform-engineering">
 			<title>Platform Engineering</title>
+			<part id="three-platform-types">
+				<title>Three Platform Types</title>
+				<slide id="platform-business">
+					<title>Platform Business</title>
+					<img src="airbnb-logo.webp" style="float: right ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
+					<img src="uber-logo.png" style="float: right ; clear : both ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
+					<img src="ebay-logo.png" style="float: right ; clear : both ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
+					<ul>
+						<li>Connecting producers and consumers</li>
+						<li>Focusing on core interactions between producers and consumers</li>
+						<li>Potential for rapid growth</li>
+					</ul>
+				</slide>
+				<slide id="linear-business-model">
+					<title>Linear Business Model</title>
+					<img src="business-model-linear.png" class="fullsize"/>
+				</slide>
+				<slide id="platform-business-model">
+					<title>Platform Business Model</title>
+					<img src="business-model-platform.png" class="fullsize"/>
+				</slide>
+				<slide id="hybrid-business-model">
+					<title>Hybrid Business Model</title>
+					<img src="business-model-hybrid.png" class="fullsize"/>
+				</slide>
+				<slide id="api-platform">
+					<title>API Platform</title>
+				</slide>
+				<slide id="developer-platform">
+					<title>Developer Platform</title>
+				</slide>
+			</part>
 			<part id="api-journey">
 				<title>Typical API Journey</title>
 				<slide id="journey">
