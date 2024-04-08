@@ -165,6 +165,13 @@
 				<img src="mamund-documentation-summary.png" title='API Documentation Summary' class="fullsize-shadow" />
 			</slide>
 		</part>
+		<part id="mamund-design-part-exercise-ex1">
+			<title>Exercise #1</title>
+			<slide id="mamund-design-exercise-title">
+				<title>Exercise #1</title> 
+				<img src="mamund-exercise.jpeg" title='Exercise' class="fullsize-shadow" />
+			</slide>
+		</part>
 		<part id="mamund-design-part-lifecycle">
 			<title>API Lifecycle Management</title>
 			<slide id="mamund-design-part-lifecycle">
@@ -266,7 +273,7 @@
 		  </slide>		
 		  <slide>
 		    <title>API Lifecycle Management &#8211; Cycle</title>
-		    <img src="mamund-design-api-lifecycle-cam-publish.png" title="API Lifecycle Management Cycle" class="fullsize-shadow" />
+		    <img src="mamund-design-api-lifecycle-cam.png" title="API Lifecycle Management Cycle" class="fullsize-shadow" />
 		  </slide>
 			<slide id="mamund-design-slide-lifecycle-landsacpe-image">
 				<title>API Lifecycle Management – Landscape</title> 
@@ -304,7 +311,7 @@
 				<ul>
 					<li>Testing</li>
 					<li>Deployment</li>
-					<li>Monitoring/Alerting</li>
+					<li>Alerting and Recovery</li>
 				</ul>
 				<blockquote>
 					<p><q>[M]inimize or eliminate most manual interventions, reduce human errors, and speed up the development cycle.</q></p>
@@ -314,19 +321,51 @@
 			<slide id="mamund-design-slide-automation-testing">
 				<title>Automation – Testing</title>
 				<ul>
-					<li>Testing</li>
+					<li>Focus on testing the interface, not the service.</li>
+					<li>Script your API tests</li>
+					<li>Happy Path (HTTP 200) and Sad Path (HTTP 400)</li>
+					<li>Protocol, Structure, Value tests</li>
 				</ul>
+			</slide>
+			<slide id="mamund-design-slide-automation-testing-srt">
+				<title>Happy / Sad Path testing</title>
+				<img src="mamund-design-testing-srt.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="mamund-design-slide-automation-testing-psv">
+				<title>Protocol, Structure, Value testing</title>
+				<img src="mamund-design-testing-psv.png" class="fullsize-shadow" />
 			</slide>
 			<slide id="mamund-design-slide-automation-deployment">
 				<title>Automation – Deployment</title>
 				<ul>
-					<li>Deployment</li>
+					<li>Continuous Integration</li>
+					<ul><li>script the build and test</li></ul>
+					<li>Continuous Delivery</li>
+					<ul><li>script the packaging for deployment</li></ul>
+					<li>Continuous Deployment</li>
+					<ul><li>script the deployment into production</li></ul>
 				</ul>
 			</slide>
-			<slide id="mamund-design-slide-automation-monitoring">
-				<title>Automation</title>
+			<slide id="mamund-design-slide-automation-deployment-steps">
+				<title>Automation – Deployment</title>
 				<ul>
-					<li>Monitoring/Alerting</li>
+					<li>A developer checks code into the repository.</li>
+					<li>That check-in kicks off a series of local tests.</li>
+					<li>If the tests pass, the code is built into a release package.</li>
+					<li>If the build succeeds, the build is deployed to a staging server.</li>
+					<li>If the staging server deployment succeeds, another set of integration tests are run.</li>
+					<li>If the integration tests succeed, the build is deployed on a production server.</li>
+					<li>If the production deployment succeeds, the job is done.</li>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-automation-alerting">
+				<title>Automation &#8211; Alerting and Recovery</title>
+				<ul>
+					<li>Spinning up additional instances when traffic spikes</li>
+					<li>Rerouting traffic to different geographical regions</li>
+					<li>Automatically increasing identity security checks (e.g., requiring two-factor authentication)</li>
+					<li>Preemptively invoking traffic circuit breakers</li>
+					<li>Automatically reversing problematic production updates</li>
 				</ul>
 			</slide>
 			<slide id="mamund-design-slide-automation-summary-title">
@@ -337,25 +376,20 @@
 				<title>Automation – Summary</title>
 				<ul>
 					<li>Testing</li>
+					<ul><li>test the interface with happy, sad, and structured tests</li></ul>
 					<li>Deployment</li>
-					<li>Monitoring/Alerting</li>
+					<ul><li>script builds, tests, integrations, and deployments</li></ul>
+					<li>Alerting and Recovery</li>
+					<ul><li>automate stability and reliability fixes</li></ul>
 				</ul>
 				<p>See Chapter 6 ("Diagnosing and Automating Traffic Management") from <a href="https://learning.oreilly.com/library/view/api-traffic-management/9781492056393/ch06.html">"API Traffic Managment 101"</a> by Mike Amundsen</p>	
 			</slide>
 		</part>
-		<part id="mamund-design-part-exercise">
-			<title>Exercise</title>
+		<part id="mamund-design-part-exercise-ex2">
+			<title>Exercise #2</title>
 			<slide id="mamund-design-exercise-title">
-				<title>Exercise</title> 
+				<title>Exercise #2</title> 
 				<img src="mamund-exercise.jpeg" title='Exercise' class="fullsize-shadow" />
-			</slide>
-			<slide id="mamund-design-slide-exercise">
-				<title>Exercise</title>
-				<ul>
-					<li>item</li>
-					<li>item</li>
-					<li>item</li>
-				</ul>
 			</slide>
 		</part>
 		<part id="mamund-design-part-summary">
