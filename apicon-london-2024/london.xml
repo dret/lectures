@@ -146,9 +146,6 @@
 		<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
 		<date short="2024-04-09">April 9, 2024</date>
 		<copyright>2024 Erik Wilde</copyright>
-		<part id="stakeholders">
-			<title>Stakeholder Management</title>
-		</part>
 		<part id="api-strategy">
 			<title>API Strategy</title>
 			<part id="execution-gap">
@@ -335,6 +332,61 @@
 							<li>What do your partners look like?</li>
 							<li>What does your competition look like?</li>
 						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part id="magical-api">
+				<title>APIs are Magical!</title>
+				<slide id="api-hype-curve">
+					<title>Watch out for Disappointment</title>
+					<img src="hype-curve-unicorn.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="monolith-2001">
+					<title>Miracle #1: Untangling Monoliths!</title>
+					<img src="monolith-2001.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="monolith-but-maybe">
+					<title>#1: Untangling Monoliths! But Maybe …</title>
+					<ul>
+						<li>IT modularization has been around for decades</li>
+						<li>Organizational modularization has been around for millennia</li>
+						<li>What's worse than a monolith? A distributed monolith!</li>
+					</ul>
+				</slide>
+				<slide id="scaling">
+					<title>Miracle #2: Scaling Up!</title>
+					<img src="pneumatic-tubes.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="scaling-but-maybe">
+					<title>#2: Scaling Up! But Maybe …</title>
+					<ul>
+						<li>Scaling depends on loosely coupled architecture</li>
+						<li>Scaling is a function of interface and implementation</li>
+						<li>Scaling needs to be aligned with business processes</li>
+					</ul>
+				</slide>
+				<slide id="api-money-press">
+					<title>Miracle #3: Monetization!</title>
+					<img src="money-press.gif" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="monetization-but-maybe">
+					<title>#3: Monetization! But Maybe …</title>
+					<ul>
+						<li>Product success is a function of product value (not of product delivery)</li>
+						<li>Most organizations should focus on value creation over monetization</li>
+						<li>Enrich value chains with new value chain inputs</li>
+						<li>Increase value chain coverage with new value chain outputs</li>
+					</ul>
+				</slide>
+				<slide id="tower-of-babel">
+					<title>Miracle #4: Organizational Issues!</title>
+					<img src="tower-of-babel.jpg" href="https://en.wikipedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Vienna)_-_Google_Art_Project_-_edited.jpg" title="Pieter Bruegel the Elder: The Tower of Babel (1563)" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="communications-but-maybe">
+					<title>#4: Organizational Issues! But Maybe …</title>
+					<ul>
+						<li>Shared understanding is more than having a shared grammar/language</li>
+						<li>Communication design is mostly a question of organization design</li>
 					</ul>
 				</slide>
 			</part>
