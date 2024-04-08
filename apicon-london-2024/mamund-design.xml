@@ -55,6 +55,7 @@
 			</slide>
 			<slide id="mamund-design-slide-initial-recommendations">
 				<title>Initial Recommendations</title>
+				<img src="mamund-design-story.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
 					<li>API Story</li>
 					<li>API Description Document</li>
@@ -63,6 +64,7 @@
 			</slide>
 			<slide id="mamund-design-slide-additional-recommendations">
 				<title>Additional Recommendations</title>
+				<img src="mamund-design-workflow.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
 					<li>API Vocabulary Document</li>
 					<li>API Workflow Diagram</li>
@@ -137,7 +139,9 @@
 					<li>API client code samples</li>
 					<li>API catalog/discovery documents</li>
 					<ul>
+					  <li><code>JSON Home</code></li>
 					  <li><code>APIs.json</code></li>
+					  <li><code>DCAP (Dublin Core Application Profiles)</code></li>	
 					  <li><code>ALPS (Application-Level Profile Semantics)</code></li>
 					</ul>  
 				</ul>
@@ -170,6 +174,10 @@
 			<slide id="mamund-design-exercise-title">
 				<title>Exercise #1</title> 
 				<img src="mamund-exercise.jpeg" title='Exercise' class="fullsize-shadow" />
+			</slide>
+			<slide id="mamund-design-exercise-story">
+				<title>Exercise #1 &#8211; API Story</title> 
+				<img src="mamund-design-story.png" title='Exercise' class="fullsize-shadow" />
 			</slide>
 		</part>
 		<part id="mamund-design-part-lifecycle">
