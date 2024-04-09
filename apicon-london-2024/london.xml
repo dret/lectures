@@ -148,49 +148,6 @@
 		<copyright>2024 Erik Wilde</copyright>
 		<part id="api-strategy">
 			<title>API Strategy</title>
-			<part id="execution-gap">
-				<title>The Execution Gap</title>
-				<slide id="vision-strategy-program">
-					<title><span title="Why">Vision</span> → <span title="What">Strategy</span> → <span title="How">Program</span> → <span title="Build">Platform</span> → <span title="Measure">Results</span></title>
-					<img title="Grand Canyon" src="grand-canyon.jpg" class="fullsize"/>
-				</slide>
-				<slide id="effectiveness">
-					<title>Effectiveness > Efficiency</title>
-					<ul>
-						<li>Effectiveness: <em>Doing the right thing</em></li>
-						<ul>
-							<li><em>Strategy:</em> Having a vision and a high-level plan how to get there</li>
-							<li><em>Program:</em> Turning the strategy into reality by executing a program</li>
-						</ul>
-						<li>Efficiency: <em>Doing the thing right</em></li>
-						<ul>
-							<li><em>Platform:</em> Providing the foundation for everybody to build on</li>
-							<li><em>Products:</em> Adding valuable pieces to the platform</li>
-						</ul>
-					</ul>
-				</slide>
-				<slide id="leadership-1-2-3-4">
-					<title>Leadership 1-2-3-4</title>
-					<ul>
-						<li>Set a <em>vision</em> as the goal to improve the organization</li>
-						<ul>
-							<li><em>APIs</em> are one of the necessary foundations of any digital value stream</li>
-						</ul>
-						<li>Define a <em>strategy</em> how to turn the vision into reality</li>
-						<ul>
-							<li><em>APIs</em> must focus on business value for them to become valuable building blocks</li>
-						</ul>
-						<li>Have a <em>program</em> to turn the defined strategy into reality</li>
-						<ul>
-							<li><em>Designing and building valuable APIs</em> has business, organizational, and technical aspects</li>
-						</ul>
-						<li>Build a <em>platform</em> that supports teams and supports scaling</li>
-						<ul>
-							<li><em>Platform engineering</em> focuses on increasing efficiency and flow of teams</li>
-						</ul>
-					</ul>
-				</slide>
-			</part>
 			<part id="bezos-mandate">
 				<title>The 2002 Bezos Mandate</title>
 				<slide id="amazon-rules">
@@ -235,6 +192,104 @@
 							<li>APIs are designed <em>before anything is implemented</em></li>
 							<li>APIs are the <em>primary means of team communications</em></li>
 						</ol>
+					</ul>
+				</slide>
+			</part>
+			<part id="execution-gap">
+				<title>The Execution Gap</title>
+				<slide id="vision-strategy-program">
+					<title><span title="Why">Vision</span> → <span title="What">Strategy</span> → <span title="How">Program</span> → <span title="Build">Platform</span> → <span title="Measure">Results</span></title>
+					<img title="Grand Canyon" src="grand-canyon.jpg" class="fullsize"/>
+				</slide>
+				<slide id="effectiveness">
+					<title>Effectiveness > Efficiency</title>
+					<ul>
+						<li>Effectiveness: <em>Doing the right thing</em></li>
+						<ul>
+							<li><em>Strategy:</em> Having a vision and a high-level plan how to get there</li>
+							<li><em>Program:</em> Turning the strategy into reality by executing a program</li>
+						</ul>
+						<li>Efficiency: <em>Doing the thing right</em></li>
+						<ul>
+							<li><em>Platform:</em> Providing the foundation for everybody to build on</li>
+							<li><em>Products:</em> Adding valuable pieces to the platform</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="leadership-1-2-3-4">
+					<title>Leadership 1-2-3-4</title>
+					<ul>
+						<li>Set a <em>vision</em> as the goal to improve the organization</li>
+						<ul>
+							<li><em>APIs</em> are one of the necessary foundations of any digital value stream</li>
+						</ul>
+						<li>Define a <em>strategy</em> how to turn the vision into reality</li>
+						<ul>
+							<li><em>APIs</em> must focus on business value for them to become valuable building blocks</li>
+						</ul>
+						<li>Have a <em>program</em> to turn the defined strategy into reality</li>
+						<ul>
+							<li><em>Designing and building valuable APIs</em> has business, organizational, and technical aspects</li>
+						</ul>
+						<li>Build a <em>platform</em> that supports teams and supports scaling</li>
+						<ul>
+							<li><em>Platform engineering</em> focuses on increasing efficiency and flow of teams</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part id="magical-api">
+				<title>APIs are Magical!</title>
+				<slide id="api-hype-curve">
+					<title>Watch out for Disappointment</title>
+					<img src="hype-curve-unicorn.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="monolith-2001">
+					<title>Miracle #1: Untangling Monoliths!</title>
+					<img src="monolith-2001.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="monolith-but-maybe">
+					<title>#1: Untangling Monoliths! But Maybe …</title>
+					<ul>
+						<li>IT modularization has been around for decades</li>
+						<li>Organizational modularization has been around for millennia</li>
+						<li>What's worse than a monolith? A distributed monolith!</li>
+					</ul>
+				</slide>
+				<slide id="scaling">
+					<title>Miracle #2: Scaling Up!</title>
+					<img src="pneumatic-tubes.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="scaling-but-maybe">
+					<title>#2: Scaling Up! But Maybe …</title>
+					<ul>
+						<li>Scaling depends on loosely coupled architecture</li>
+						<li>Scaling is a function of interface and implementation</li>
+						<li>Scaling needs to be aligned with business processes</li>
+					</ul>
+				</slide>
+				<slide id="api-money-press">
+					<title>Miracle #3: Monetization!</title>
+					<img src="money-press.gif" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="monetization-but-maybe">
+					<title>#3: Monetization! But Maybe …</title>
+					<ul>
+						<li>Product success is a function of product value (not of product delivery)</li>
+						<li>Most organizations should focus on value creation over monetization</li>
+						<li>Enrich value chains with new value chain inputs</li>
+						<li>Increase value chain coverage with new value chain outputs</li>
+					</ul>
+				</slide>
+				<slide id="tower-of-babel">
+					<title>Miracle #4: Organizational Issues!</title>
+					<img src="tower-of-babel.jpg" href="https://en.wikipedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Vienna)_-_Google_Art_Project_-_edited.jpg" title="Pieter Bruegel the Elder: The Tower of Babel (1563)" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="communications-but-maybe">
+					<title>#4: Organizational Issues! But Maybe …</title>
+					<ul>
+						<li>Shared understanding is more than having a shared grammar/language</li>
+						<li>Communication design is mostly a question of organization design</li>
 					</ul>
 				</slide>
 			</part>
@@ -341,61 +396,6 @@
 							<li>What do your partners look like?</li>
 							<li>What does your competition look like?</li>
 						</ul>
-					</ul>
-				</slide>
-			</part>
-			<part id="magical-api">
-				<title>APIs are Magical!</title>
-				<slide id="api-hype-curve">
-					<title>Watch out for Disappointment</title>
-					<img src="hype-curve-unicorn.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-				</slide>
-				<slide id="monolith-2001">
-					<title>Miracle #1: Untangling Monoliths!</title>
-					<img src="monolith-2001.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-				</slide>
-				<slide id="monolith-but-maybe">
-					<title>#1: Untangling Monoliths! But Maybe …</title>
-					<ul>
-						<li>IT modularization has been around for decades</li>
-						<li>Organizational modularization has been around for millennia</li>
-						<li>What's worse than a monolith? A distributed monolith!</li>
-					</ul>
-				</slide>
-				<slide id="scaling">
-					<title>Miracle #2: Scaling Up!</title>
-					<img src="pneumatic-tubes.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-				</slide>
-				<slide id="scaling-but-maybe">
-					<title>#2: Scaling Up! But Maybe …</title>
-					<ul>
-						<li>Scaling depends on loosely coupled architecture</li>
-						<li>Scaling is a function of interface and implementation</li>
-						<li>Scaling needs to be aligned with business processes</li>
-					</ul>
-				</slide>
-				<slide id="api-money-press">
-					<title>Miracle #3: Monetization!</title>
-					<img src="money-press.gif" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-				</slide>
-				<slide id="monetization-but-maybe">
-					<title>#3: Monetization! But Maybe …</title>
-					<ul>
-						<li>Product success is a function of product value (not of product delivery)</li>
-						<li>Most organizations should focus on value creation over monetization</li>
-						<li>Enrich value chains with new value chain inputs</li>
-						<li>Increase value chain coverage with new value chain outputs</li>
-					</ul>
-				</slide>
-				<slide id="tower-of-babel">
-					<title>Miracle #4: Organizational Issues!</title>
-					<img src="tower-of-babel.jpg" href="https://en.wikipedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Vienna)_-_Google_Art_Project_-_edited.jpg" title="Pieter Bruegel the Elder: The Tower of Babel (1563)" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
-				</slide>
-				<slide id="communications-but-maybe">
-					<title>#4: Organizational Issues! But Maybe …</title>
-					<ul>
-						<li>Shared understanding is more than having a shared grammar/language</li>
-						<li>Communication design is mostly a question of organization design</li>
 					</ul>
 				</slide>
 			</part>
