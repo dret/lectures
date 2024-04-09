@@ -589,10 +589,17 @@
 						<li><q>Invented</q> 2000 based on SOAP/XML/HTTP (Salesforce, eBay, Amazon)</li>
 						<li>APIs as a way to digitally connect with partners</li>
 						<li>Extended to the idea of platforms as team interfaces (<link href="bezos-mandate"/>)</li>
+						<li>Some API platforms decide to supports SDKs for easier consumption</li>
 					</ul>
 				</slide>
 				<slide id="developer-platform">
 					<title>Developer Platform</title>
+					<ul>
+						<li><link href="api-platform"/> but probably a different set of APIs</li>
+						<li>Support for specific consumption (beyond generic SDKs)</li>
+						<li>Support for API production (think <link href="bezos-mandate">Bezos Mandate</link>)</li>
+						<li>Many organizations now have/create specific <q>platform teams</q></li>
+					</ul>
 				</slide>
 			</part>
 			<part id="api-journey">
@@ -607,23 +614,23 @@
 						<li>Strategies are defined that provide directions and set goals</li>
 					</ol>
 				</slide>
-				<slide id="api-products">
+				<slide id="journey-api-products">
 					<title>Getting Started with APIs</title>
 					<img src="api-products.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 				</slide>
-				<slide id="api-usage">
+				<slide id="journey-api-usage">
 					<title>Growing API Usage</title>
 					<img src="api-usage.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 				</slide>
-				<slide id="api-platform">
+				<slide id="journey-api-platform">
 					<title>Products Become Platforms</title>
 					<img src="api-platform.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 				</slide>
-				<slide id="api-program">
+				<slide id="journey-api-program">
 					<title>Programs Steer Platforms</title>
 					<img src="api-program.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 				</slide>
-				<slide id="api-strategy">
+				<slide id="journey-api-strategy">
 					<title>Strategies Guide Programs</title>
 					<img src="api-strategy.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 				</slide>
