@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<presentation>
+		<title short="Product Management">Product Design, Development, and Management</title>
+		<author>Mike Amundsen</author>
+		<affiliation><a href="http://amundsen.com/">amundsen.com, Inc.</a></affiliation>
+		<date short="2024-04-09">April 9, 2024</date>
+		<copyright>2024 Mike Amundsen</copyright>
+		<part id="mamund-design-part-overview">
+			<title>Overview</title>
+			<slide id="mamund-design-slide-overview">
+				<title>Overview</title>
+				<ul>
+					<li>API Design Consistency</li>
+					<li>API Documentation</li>
+					<li>API Lifecycle Management</li>
+					<li>Automation</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="mamund-design-part-design">
+			<title>API Design Consistency</title>
+			<slide id="mamund-design-slide-title">
+				<title>API Design</title> 
+				<img src="mamund-design-title.jpg" title='API Design' class="fullsize-shadow" />
+			</slide>
+			<slide id="mamund-design-slide-design">
+				<title>API Design Consistency</title>
+				<p class="font-style:italic">A mature API development capability involves consistency in API design and adherence to industry standards, making it easier for developers to use the APIs.</p>
+				<ul>
+					<li>Technology Agnostic Design</li>
+					<li>Initial Recommendations</li>
+					<li>Additional Recommendations</li>
+					<li>Don't ...</li>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-technology-agnostic">
+				<title>Technology Agnostic Design</title>
+				<ul>
+					<li>Design is not implementation</li>
+					<ul>
+						<li>Good design guidelines work across styles and formats</li>
+					</ul>	
+					<li>Concentrate on design assets</li>
+					<ul>
+						<li>Rely on shared practices for all APIs</li>
+					</ul>
+					<li>Design guidelines should ...</li>
+					<ul>
+						<li>Promote clear understanding</li>
+						<li>Make it easy to target multiple implementations</li>
+						<li>Make it easy to identify data and actions</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-initial-recommendations">
+				<title>Initial Recommendations</title>
+				<img src="mamund-design-story.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>API Story</li>
+					<li>API Description Document</li>
+					<li>API Security Profile</li>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-additional-recommendations">
+				<title>Additional Recommendations</title>
+				<img src="mamund-design-workflow.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>API Vocabulary Document</li>
+					<li>API Workflow Diagram</li>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-donts">
+				<title>Don't ...</title>
+				<ul>
+					<li>Don't try to control URLs</li>
+					<li>Don't (re)define the use of HTTP methods</li>
+					<li>Don't require agreement on aggregates</li>
+					<ul>
+					  <li>DO need agreeement on <code>givenName</code>, <code>familyName</code>, <code>postalCode</code></li>
+					  <li>DO NOT need agreement on <code>customer</code>, <code>user</code>, etc.</li>
+					</ul>  
+				</ul>
+				<p style="font-style:italic">Allow each team to design/implement these elements as best fits their needs and common practice for that style/format.</p>
+			</slide>
+			<slide id="mamund-design-slide-summary">
+				<title>API Design Summary</title> 
+				<img src="mamund-design-summary.png" title='API Design Summary' class="fullsize-shadow" />
+			</slide>
+		</part>
+		<part id="mamund-design-part-documentation">
+			<slide id="mamund-documentation-slide-title">
+				<title>API Documentation</title> 
+				<img src="mamund-documentation-title.jpeg" title='API Documentation' class="fullsize-shadow" />
+			</slide>
+			<title>API Documentation</title>
+			<slide id="mamund-design-slide-documentation">
+				<title>API Documentation</title>
+				<ul>
+					<li><link href="mamund-design-slide-documentation-what">What is it?</link></li>
+					<li><link href="mamund-design-slide-documentation-initial">Initial Steps</link></li>
+					<li><link href="mamund-design-slide-documentation-additional">Additional Steps</link></li>
+				</ul>
+				<p style="font-style:italic">An organization with a mature API development capability will have comprehensive and up-to-date 
+					API documentation that is easy to understand and use.</p>	
+			</slide>
+			<slide id="mamund-design-slide-documentation-what">
+				<title>API Documentation – What is it?</title>
+				<ul>
+					<li>Easy to find</li>
+					<li>Easy to understand</li>
+					<li>Up-to-date</li>
+					<li>Comprehensive</li>
+				</ul>
+				<blockquote>
+					<p><q>[H]elps the end users in understanding the different characteristics, features, and attributes of a ... product.</q></p>
+					<p style=" text-align : right ; margin : 0em ; "><span style="font-size : 75% ; "><a href="https://technicalwriterhq.com/documentation/"><q>What is Documentation?</q>, Technical Writer HQ</a></span></p>
+				</blockquote>
+			</slide>
+			<slide id="mamund-design-slide-documentation-initial">
+				<title>API Documentation – Initial Steps</title>
+				<ul>
+					<li>A human-readable landing page</li>
+					<ul><li><code>&lt;link href="http://api.example.org/documentation" rel="service-doc" /&gt;</code></li></ul>
+					<li>API description (OpenAPI, AsyncAPI, WSDL, etc.)</li>
+					<ul><li><code>&lt;link href="http://api.example.org/open-api" rel="service-desc" /&gt;</code></li></ul>
+					<li>Response headers pointing to these documents</li>
+					<ul>
+					  <li><code>Link: &lt;http://api.example.org/documentation&gt;; rel="service-doc"</code></li>
+					  <li><code>Link: &lt;http://api.example.org/open-api&gt;; rel="service-desc"</code></li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-documentation-additional">
+				<title>API Documentation – Additional Steps</title>
+				<ul>
+					<li>API workflow diagrams</li>
+					<li>Common error conditions and how to resolve them</li>
+					<li>API client code samples</li>
+					<li>API catalog/discovery documents</li>
+					<ul>
+					  <li><code>JSON Home</code></li>
+					  <li><code>APIs.json</code></li>
+					  <li><code>DCAP (Dublin Core Application Profiles)</code></li>	
+					  <li><code>ALPS (Application-Level Profile Semantics)</code></li>
+					</ul>  
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-documentation-summary">
+				<title>API Documentation – Summary</title>
+				<ul>
+					<li>What is it?</li>
+					<ul>
+						<li>Findable, understandable, up-to-date, comprehensive</li>
+					</ul>
+					<li>Initial Steps</li>
+					<ul>
+						<li>Landing page, headers, OpenAPI/AsyncAPI/etc</li>
+					</ul>
+					<li>Additional Steps</li>
+					<ul>
+						<li>Diagrams, errors, code, discovery</li>
+					</ul>
+				</ul>
+				<p>See Chapter 13 from <a href="https://learning.oreilly.com/library/view/principles-of-web/9780137355754/ch13.xhtml">"Principles of Web Design"</a> by James Higginbotham</p>	
+			</slide>
+			<slide id="mamund-design-slide-documentation-summary">
+				<title>API Documentation Summary</title> 
+				<img src="mamund-documentation-summary.png" title='API Documentation Summary' class="fullsize-shadow" />
+			</slide>
+		</part>
+		<part id="mamund-design-part-exercise-ex1">
+			<title>Exercise #1</title>
+			<slide id="mamund-design-exercise-title">
+				<title>Exercise #1</title> 
+				<img src="mamund-exercise.jpeg" title='Exercise' class="fullsize-shadow" />
+			</slide>
+			<slide id="mamund-design-exercise-story">
+				<title>Exercise #1 &#8211; API Story</title> 
+				<img src="mamund-design-story.png" title='Exercise' class="fullsize-shadow" />
+			</slide>
+		</part>
+		<part id="mamund-design-part-lifecycle">
+			<title>API Lifecycle Management</title>
+			<slide id="mamund-design-part-lifecycle">
+				<title>API Lifecycle Management</title> 
+				<img src="mamund-lifecycle-title.jpeg" title='API Lifecycle Management' class="fullsize-shadow" />
+			</slide>
+			<slide id="mamund-design-slide-lifecycle">
+				<title>API Lifecycle Management</title>
+        <!--<img src="mamund-design-api-lifecycle-cam.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>	-->			
+				<ul>
+					<li>Create</li>
+					<li>Publish</li>
+					<li>Realize</li>
+					<li>Maintain</li>
+					<li>Retire</li>
+				</ul>
+				<blockquote>
+					<p><q>Teams that follow a clearly defined API lifecycle are more productive and better equipped to deliver a high-quality API.</q></p>
+					<p style=" text-align : right ; margin : 0em ; "><span style="font-size : 75% ; "><a href="https://www.postman.com/api-platform/api-lifecycle/"><q>API lifecycle</q>, Postman</a></span></p>
+				</blockquote>
+			</slide>
+			<slide id="mamund-design-slide-lifecycle-create">
+				<title>API Lifecycle Management – Create</title>
+				<ul>
+					<li>New API or replacement for an existing API</li>
+					<li>Milestones</li>
+        	<ul>
+					  <li>API Story</li>
+					  <li>API Description</li>
+					  <li>Security Profile</li>
+					  <li>Workflow Diagram</li>
+					  <li>Vocabulary Document</li>
+				  </ul>
+					<li>Arnaud Lauret's API Goals Canvas</li>
+				</ul>
+				<p>See Chapter 2 ("Designing an API for its Users") from <a href="https://learning.oreilly.com/library/view/the-design-of/9781617295102/OEBPS/Text/c02.xhtml">"The Design Of Web APIs"</a> by Arnaud Lauret</p>	
+		  </slide>		
+		  <slide id="mamund-design-slide-lifecycle-canvas-image">
+		    <title>Lauret's API Goals Canvas</title>
+				<img src="mamund-design-api-goals-canvas.png" title='API Design' class="fullsize-shadow" />		    
+		  </slide>
+			<slide id="mamund-design-slide-lifecycle-publish">
+				<title>API Lifecycle Management &#8211; Publish</title>
+        <!-- <img src="mamund-design-api-lifecycle-cam-publish.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>		-->		
+				<ul>
+					<li>An API instance has been deployed to a production environment</li>
+					<li>The API has been registered in the corporate registry</li>
+					<li>Write API stories to solve multiple user stories</li>
+				</ul>
+		  </slide>		
+		  <slide id="mamund-design-slide-lifecycle-publish-image">
+		    <title>API Stories</title>
+				<img src="mamund-design-api-lifecycle-cam-publish-stories.png" title='API Design' class="fullsize-shadow" />		    
+		  </slide>
+			<slide id="mamund-design-slide-lifecycle-realize">
+				<title>API Lifecycle Management – Realize</title>
+        <!-- <img src="mamund-design-api-lifecycle-cam-realize.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				-->
+				<ul>
+					<li>API is being used in a way that realizes its objective, business or technical</li>
+					<li>Use Key Performance Indicators (KPIs)</li>
+					<ul><li>"Reduced downtime by 15%", "Increased closed sales by 10%", etc.</li></ul>
+					<li>Osterwalder's "Value Proposition Canvas"</li>
+				</ul>
+        <p>See <a href="https://leanpub.com/apiproductmanagement">"API Product Management"</a> by Andrea Zulian and Amancio Bouza</p>				
+		  </slide>		
+		  <slide id="mamund-design-slide-lifecycle-realize-canvas">
+		    <title>Osterwalder's Value Proposition Canvas</title>
+				<img src="mamund-design-api-lifecycle-cam-realize-value-canvas.png" title='Value Proposition Canvas' class="fullsize-shadow" />		    
+		  </slide>
+			<slide id="mamund-design-slide-lifecycle-maintain">
+				<title>API Lifecycle Management – Maintain</title>
+        <!-- <img src="mamund-design-api-lifecycle-cam-maintain.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				-->
+				<ul>
+					<li>Its realized value is stagnant or downward-trending</li>
+					<li>KPI goals attained</li>
+					<li>Aim to reduce support costs</li>
+				</ul>
+		  </slide>		
+			<slide id="mamund-design-slide-lifecycle-retire">
+				<title>API Lifecycle Management – Retire</title>
+        <!-- <img src="mamund-design-api-lifecycle-cam-retire.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>				-->
+				<ul>
+					<li>An end-of-life decision has been made</li>
+					<li>Milestones</li>
+				  <ul>
+					  <li>Reached a "floor" on users or traffic</li>
+					  <li>Reached as "ceiling" on costs and/or support effort</li>
+					  <li>A better replacement is available</li>
+				  </ul>
+					<li>Methodology</li>
+					<ul>
+					  <li>Announce retirement in advance (months? years?)</li>
+					  <li>Suggest replacements to users</li>
+					  <li>Publish API as open source</li>
+					  <li>Provide ability for users to recover data</li>
+					  <li>Mark API as <code>HTTP 410 Gone</code></li>
+					</ul>  
+				</ul>
+		  </slide>		
+		  <slide>
+		    <title>API Lifecycle Management &#8211; Cycle</title>
+		    <img src="mamund-design-api-lifecycle-cam.png" title="API Lifecycle Management Cycle" class="fullsize" />
+		  </slide>
+			<slide id="mamund-design-slide-lifecycle-landsacpe-image">
+				<title>API Lifecycle Management – Landscape</title> 
+				<img src="mamund-design-api-lifecycle-cam-landscape.png" title='API Lifecycle Management Landscape' class="fullsize" />
+			</slide>
+			<slide id="mamund-design-slide-lifecycle-summary-image">
+				<title>API Lifecycle Management – Summary</title> 
+				<img src="mamund-lifecycle-title.jpeg" title='API Lifecycle Management Summary' class="fullsize" />
+			</slide>
+			<slide id="mamund-design-slide-lifecycle-summary">
+				<title>API Lifecycle Management – Summary</title>
+				<ul>
+					<li>Create</li>
+					<ul><li>New API or replacement for an existing API</li></ul>
+					<li>Publish</li>
+					<ul><li>The API has been promoted to a production environment</li></ul>
+					<li>Realize</li>
+					<ul><li>It is being used in a way that realizes its objective, business or technical</li></ul>
+					<li>Maintain</li>
+					<ul><li>It is no longer actively being improved</li></ul>
+					<li>Retire</li>
+					<ul><li>An end-of-life decision has been made</li></ul>
+				</ul>
+				<p>See Chapter 7 ("The API Product Lifecycle") from <a href="https://learning.oreilly.com/library/view/continuous-api-management/9781098103514/ch07.html">"Continuous API Management"</a> by Medjaoui, Wilde, Mitra, Amundsen</p>
+			</slide>
+		</part>
+		<part id="mamund-design-part-automation">
+			<title>Automation</title>
+			<slide id="mamund-design-slide-automation-title">
+				<title>Automation</title> 
+				<img src="mamund-automation-title.jpeg" title='Automation' class="fullsize-shadow" />
+			</slide>
+			<slide id="mamund-design-slide-automation">
+				<title>Automation</title>
+				<ul>
+					<li>Testing</li>
+					<li>Deployment</li>
+					<li>Alerting and Recovery</li>
+				</ul>
+				<blockquote>
+					<p><q>[M]inimize or eliminate most manual interventions, reduce human errors, and speed up the development cycle.</q></p>
+					<p style=" text-align : right ; margin : 0em ; "><span style="font-size : 75% ; "><a href="https://konghq.com/blog/enterprise/transformation-with-api-automation"><q>API Automation: Do More with Less with this Key to Digital Transformation</q>, Kong</a></span></p>
+				</blockquote>
+			</slide>
+			<slide id="mamund-design-slide-automation-testing">
+				<title>Automation – Testing</title>
+				<ul>
+					<li>Focus on testing the interface, not the service.</li>
+					<li>Script your API tests</li>
+					<li>Happy Path (HTTP 200) and Sad Path (HTTP 400)</li>
+					<li>Protocol, Structure, Value tests</li>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-automation-testing-srt">
+				<title>Happy / Sad Path testing</title>
+				<img src="mamund-design-testing-srt.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="mamund-design-slide-automation-testing-psv">
+				<title>Protocol, Structure, Value testing</title>
+				<img src="mamund-design-testing-psv.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="mamund-design-slide-automation-deployment">
+				<title>Automation – Deployment</title>
+				<ul>
+					<li>Continuous Integration</li>
+					<ul><li>script the build and test</li></ul>
+					<li>Continuous Delivery</li>
+					<ul><li>script the packaging for deployment</li></ul>
+					<li>Continuous Deployment</li>
+					<ul><li>script the deployment into production</li></ul>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-automation-deployment-steps">
+				<title>Automation – Deployment</title>
+				<ul>
+					<li>A developer checks code into the repository.</li>
+					<li>That check-in kicks off a series of local tests.</li>
+					<li>If the tests pass, the code is built into a release package.</li>
+					<li>If the build succeeds, the build is deployed to a staging server.</li>
+					<li>If the staging server deployment succeeds, another set of integration tests are run.</li>
+					<li>If the integration tests succeed, the build is deployed on a production server.</li>
+					<li>If the production deployment succeeds, the job is done.</li>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-automation-alerting">
+				<title>Automation &#8211; Alerting and Recovery</title>
+				<ul>
+					<li>Spinning up additional instances when traffic spikes</li>
+					<li>Rerouting traffic to different geographical regions</li>
+					<li>Automatically increasing identity security checks (e.g., requiring two-factor authentication)</li>
+					<li>Preemptively invoking traffic circuit breakers</li>
+					<li>Automatically reversing problematic production updates</li>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-automation-summary-title">
+				<title>Automation – Summary</title> 
+				<img src="mamund-automation-title.jpeg" title='Automation Summary' class="fullsize-shadow" />
+			</slide>
+			<slide id="mamund-design-slide-automation-summary">
+				<title>Automation – Summary</title>
+				<ul>
+					<li>Testing</li>
+					<ul><li>test the interface with happy, sad, and structured tests</li></ul>
+					<li>Deployment</li>
+					<ul><li>script builds, tests, integrations, and deployments</li></ul>
+					<li>Alerting and Recovery</li>
+					<ul><li>automate stability and reliability fixes</li></ul>
+				</ul>
+				<p>See Chapter 6 ("Diagnosing and Automating Traffic Management") from <a href="https://learning.oreilly.com/library/view/api-traffic-management/9781492056393/ch06.html">"API Traffic Managment 101"</a> by Mike Amundsen</p>	
+			</slide>
+		</part>
+		<part id="mamund-design-part-exercise-ex2">
+			<title>Exercise #2</title>
+			<slide id="mamund-design-exercise-title">
+				<title>Exercise #2</title> 
+				<img src="mamund-exercise.jpeg" title='Exercise' class="fullsize-shadow" />
+			</slide>
+		</part>
+		<part id="mamund-design-part-summary">
+			<title>Summary</title>
+			<slide id="mamund-design-slide-summary-title">
+				<title>Summary</title> 
+				<img src="mamund-design-summary-title.jpeg" title='Summary' class="fullsize-shadow" />
+			</slide>
+			<slide id="mamund-design-slide-summary">
+				<title>Summary</title>
+				<ul>
+					<li>Design</li>
+					<li>Documentation</li>
+					<li>Lifecycle</li>
+					<li>Automation</li>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-summary-design">
+				<title>Summary – Design</title>
+				<ul>
+					<li>API Story</li>
+					<li>API Description Document</li>
+					<li>API Security Profile</li>
+					<li>API Vocabulary Document</li>
+					<li>API Workflow Diagram</li>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-summary-documentation">
+				<title>Summary – Documentation</title>
+				<ul>
+					<li>What is it?</li>
+					<ul>
+						<li>Findable, understandable, up-to-date, comprehensive</li>
+					</ul>
+					<li>Initial Steps</li>
+					<ul>
+						<li>Landing page, headers, OpenAPI/AsyncAPI/etc</li>
+					</ul>
+					<li>Additional Steps</li>
+					<ul>
+						<li>Diagrams, errors, code, discovery</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-summary-lifecycle">
+				<title>Summary – Lifecycle</title>
+				<ul>
+					<li>Create</li>
+					<ul><li>New API or replacement for an existing API</li></ul>
+					<li>Publish</li>
+					<ul><li>The API has been promoted to a production environment</li></ul>
+					<li>Realize</li>
+					<ul><li>It is being used in a way that realizes its objective, business or technical</li></ul>
+					<li>Maintain</li>
+					<ul><li>It is no longer actively being improved</li></ul>
+					<li>Retire</li>
+					<ul><li>An end-of-life decision has been made</li></ul>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-summary-automation">
+				<title>Summary – Automation</title>
+				<ul>
+					<li>Testing</li>
+					<li>Deployment</li>
+					<li>Monitoring/Alerting</li>
+				</ul>
+			</slide>
+			<slide id="mamund-design-slide-summary-final">
+				<title>Summary – Discussion</title> 
+				<img src="mamund-discussion-title.jpeg" title='Summary – Discussion' class="fullsize-shadow" />
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
