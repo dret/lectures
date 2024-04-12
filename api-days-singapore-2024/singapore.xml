@@ -51,31 +51,40 @@
 	<presentation id="platform-strategy">
 		<title short="Platform Strategy">Platform Strategy and Engineering</title>
 		<date short="2024-04-17">April 17, 2024</date>
-		<part id="platform-business">
-			<title>Platform Businesses</title>
-			<slide id="business-model">
-				<title>Specific Business Model</title>
-				<img title='Alex Moazed and Nicholas L. Johnson, "Modern Monopolies", St. Martin&apos;s Press, 2016' href="https://www.modernmonopolies.com/book" src="modern-monopolies.png" class="fullsize-shadow"/>
-			</slide>
-			<slide id="linear-business-model">
-				<title>Linear Business Model</title>
-				<img src="linear-business.png" class="fullsize"/>
-			</slide>
-			<slide id="platform-business-model">
-				<title>Platform Business Model</title>
-				<img src="platform-business.png" class="fullsize"/>
-			</slide>
-			<slide id="no-platform-needed">
-				<title>Type 1: No Platform Needed</title>
-				<img src="uber-developer-documentation.png" title="Uber Developer Documentation" href="https://developer.uber.com/docs" class="fullsize"/>
-			</slide>
-			<slide id="platform-needed">
-				<title>Type 2: Platform Needed</title>
-				<img src="ebay-video-cover.jpg" title="How to make Five Billion Dollars with APIs: API Monetization at eBay" href="https://www.youtube.com/watch?v=BCPD5NwQ7_M" class="fullsize"/>
-			</slide>
+		<part id="platform-types">
+			<title>Platform Types</title>
+			<part id="platform-business">
+				<title>Platform Businesses</title>
+				<slide id="business-model">
+					<title>Specific Business Model</title>
+					<img title='Alex Moazed and Nicholas L. Johnson, "Modern Monopolies", St. Martin&apos;s Press, 2016' href="https://www.modernmonopolies.com/book" src="modern-monopolies.png" class="fullsize-shadow"/>
+				</slide>
+				<slide id="linear-business-model">
+					<title>Linear Business Model</title>
+					<img src="linear-business.png" class="fullsize"/>
+				</slide>
+				<slide id="platform-business-model">
+					<title>Platform Business Model</title>
+					<img src="platform-business.png" class="fullsize"/>
+				</slide>
+				<slide id="no-platform-needed">
+					<title>Type 1: No Platform Needed</title>
+					<img src="uber-developer-documentation.png" title="Uber Developer Documentation" href="https://developer.uber.com/docs" class="fullsize"/>
+				</slide>
+				<slide id="platform-needed">
+					<title>Type 2: Platform Needed</title>
+					<img src="ebay-video-cover.jpg" title="How to make Five Billion Dollars with APIs: API Monetization at eBay" href="https://www.youtube.com/watch?v=BCPD5NwQ7_M" class="fullsize"/>
+				</slide>
+			</part>
+			<part id="api-platform">
+				<title>API Platform</title>
+			</part>
+			<part id="developer-platform">
+				<title>Developer Platform</title>
+			</part>
 		</part>
-		<part id="business-platform">
-			<title>Business Platforms</title>
+		<part id="platform-business">
+			<title>The Business of Platforms</title>
 			<slide id="platformy">
 				<title>Become Platform-y</title>
 				<img src="api-business-models.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
@@ -90,48 +99,35 @@
 				<img src="hybrid-business.png" class="fullsize"/>
 			</slide>
 		</part>
-		<part id="api-platform">
-			<title>API Platforms</title>
-			<slide id="api-management-lifecycle">
-				<title>Exposing Capabilities</title>
-				<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
+		<part id="platform Engineering">
+			<title>Platform Engineering</title>
+			<slide id="platform-surprise">
+				<img src="gregor-hohpe-platform-surprise.jpg" title='Gregor Hohpe: "If your users haven&apos;t built something that surprised you, you probably didn&apos;t build a platform."' class="fullsize-shadow"/>
 			</slide>
-			<slide id="api-management-product">
-				<title>Curating Capabilities</title>
-				<img src="API-management-product.png" class="fullsize-shadow"/>
-			</slide>
-			<slide id="api-management-marketing">
-				<title>Publishing Capabilities</title>
-				<img src="API-management-marketing.png" class="fullsize-shadow"/>
-			</slide>
-			<slide id="api-platform-specifics">
-				<title>API Platform Specifics</title>
+			<slide id="platform-feedback">
 				<ul>
-					<li>Targeting specific consumer group(s)</li>
-					<li>Not making any assumptions about consumption mechanics</li>
-					<li>APIs aligned with business capabilities and partner models</li>
+					<li>Have a good understanding of what platform users are doing with the platform</li>
 				</ul>
 			</slide>
-		</part>
-		<part id="dev-platform">
-			<title>Developer Platforms</title>
-			<slide id="api-value-creation">
-				<title>Most API Value Creation is Indirect</title>
-				<ol>
-					<li>Using APIs to become better at internal reuse and cross-pollination</li>
-					<li>Reducing friction by having teams communicate via APIs</li>
-					<li>Using <q>API First</q> as a way to build everything as digital building blocks</li>
-				</ol>
-			</slide>
-			<slide id="dev-platform-consumers">
-				<title>Support for Internal Teams</title>
-				<ul>
-					<li><em>Inside-In/Outside-In</em> vs. <em>Inside-Out</em> focus</li>
-					<li>Smaller, well-known, and more coherent group of consumers</li>
-					<li>Focus on improving effectiveness and flow for development teams</li>
-					<li>Most of the consumers will be providers as well</li>
-				</ul>
-			</slide>
+			<part id="building-api-platform">
+				<title>Building API Platforms</title>
+				<slide id="api-management-product">
+					<title>Curating Capabilities</title>
+					<img src="API-management-product.png" class="fullsize-shadow"/>
+				</slide>
+				<slide id="api-management-marketing">
+					<title>Publishing Capabilities</title>
+					<img src="API-management-marketing.png" class="fullsize-shadow"/>
+				</slide>
+				<slide id="api-platform-specifics">
+					<title>API Platform Specifics</title>
+					<ul>
+						<li>Targeting specific consumer group(s)</li>
+						<li>Not making any assumptions about consumption mechanics</li>
+						<li>APIs aligned with business capabilities and partner models</li>
+					</ul>
+				</slide>
+			</part>
 		</part>
 		<part id="platform-strategy-outro">
 			<title>Connect the Platform Dots</title>
