@@ -19,7 +19,14 @@
  - The means of communication
  - The means of monetization
 
+
 ### Part 2: The Business of Platforms
+
+- When it comes to APIs, are there differences in terms of which APIs are provided in externally-facing API platforms and internally-facing developer platforms?
+ - No, the same APIs should be offered in both scenarios
+ - Yes, and the externally-facing APIs always are a subset of the APIs provided on a developer platform
+ - *Yes, and which APIs you are offering entirely depends on the business goals that you have for these two classes of platforms*
+
 
 ### Part 3: Platform Engineering
 
