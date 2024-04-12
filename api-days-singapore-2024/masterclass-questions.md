@@ -4,11 +4,26 @@
 
 ### Part 1: Platform Types
 
-- What is the most important factor to be a proper "platform business"?
- - There business has a developer platform and a team working on it.
- - *The business focuses on connecting producers and consumers.*
- - The business has a Web page for external developers as their platform.
+- What are the three main platform types that you should know about?
+ - API, Platform, and Security Platforms
+ - Platforms for developers, partners, and security engineers
+ - *Platform businesses, API platforms, and developer platforms*
 
-### Part 2: The Platform Business
+- What is the most important factor to be a proper "platform business"?
+ - There business has a developer platform and a team working on it
+ - *The business focuses on connecting producers and consumers*
+ - The business has a Web page for external developers as their platform
+
+- Linear businesses have to manage the means of production. What is the main parallel that platform businesses have to manage as their core business?
+ - *The means of connection*
+ - The means of communication
+ - The means of monetization
+
+### Part 2: The Business of Platforms
 
 ### Part 3: Platform Engineering
+
+- Should platforms allow teams to build unexpected things on top?
+ - No, platforms are supposed to enforce standards and create uniformity.
+ - Yes, but only after teams have made change requests to the platform team.
+ - *Yes, platforms should help teams to build many different things on top.*
