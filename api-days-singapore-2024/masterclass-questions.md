@@ -32,6 +32,17 @@
  - Yes, and the externally-facing APIs always are a subset of the APIs provided on a developer platform
  - *Yes, and which APIs you are offering entirely depends on the business goals that you have for these two classes of platforms*
 
+- What is the main value that a platform can bring to a business?
+ - If it's a platform business, the platform will be the main value driver for the business.
+ - A platform can serve as a good way to increase the productivity of internal teams.
+ - A platform makes it easier for partners to engage with you and will also make it easier to scale the number of partners.
+ - *All of the above.*
+
+- Should every organization strive to create an internal developer platform?
+ - Yes, platforms will always increase the productivity of development teams.
+ - No, they should wait until development teams are requesting a platform.
+ - *No, but they should do the math and consider whether a platform could make the organization overall more effective and faster.*
+
 
 ### Part 3: Platform Engineering
 
@@ -44,4 +55,8 @@
  - Build it according to an approved blueprint and train teams to use it right.
  - *Build it incrementally, treat it as a product, and listen to the platform users.*
  - Build it based on inputs from the centralized IT team because they know best which features it should have.
- 
+
+- What is the main purpose of the CNCF Platform Engineering Maturity Model?
+ - Giving you simple instructions to follow when it comes to building a platform.
+ - *Giving you a model that helps you to improve according to your current state and needs.*
+ - Giving you metrics where for all aspects the goal is to reach the maximum.
