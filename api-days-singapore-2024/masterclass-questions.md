@@ -14,6 +14,11 @@
  - *The business focuses on connecting producers and consumers*
  - The business has a Web page for external developers as their platform
 
+- As an established business, should you try to become a "platform business"?
+ - Stay true to what you are and don't stray from a business model that works.
+ - *Exploring platform-y aspects may be useful and these will probably not completely change your business model, but augment it.*
+ - In order to survive the challenges of globalization and digitalization, all businesses should strive to become platform businesses.
+
 - Linear businesses have to manage the means of production. What is the main parallel that platform businesses have to manage as their core business?
  - *The means of connection*
  - The means of communication
