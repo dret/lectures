@@ -34,3 +34,9 @@
  - No, platforms are supposed to enforce standards and create uniformity.
  - Yes, but only after teams have made change requests to the platform team.
  - *Yes, platforms should help teams to build many different things on top.*
+
+- What's one of the important aspects of making sure that a platform meets the needs of the teams using it?
+ - Build it according to an approved blueprint and train teams to use it right.
+ - *Build it incrementally, treat it as a product, and listen to the platform users.*
+ - Build it based on inputs from the centralized IT team because they know best which features it should have.
+ 
