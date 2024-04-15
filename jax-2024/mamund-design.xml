@@ -410,6 +410,20 @@
 				<title>Summary</title>
 				<ul>
 					<li>Design</li>
+					<ul><li>Assets (stories, definitions, diagrams, etc.)</li></ul>
+					<li>Documentation</li>
+					<ul><li>Findable, understandable, up-to-date, comprehensive</li></ul>
+					<li>Lifecycle</li>
+					<ul><li>Create, publish, realize, maintain, retire</li></ul>
+					<li>Automation</li>
+					<ul><li>Testing, Deoloyment, runtime repair</li></ul>
+				</ul>
+			</slide>
+			<!--
+			<slide id="mamund-design-slide-summary">
+				<title>Summary</title>
+				<ul>
+					<li>Design</li>
 					<li>Documentation</li>
 					<li>Lifecycle</li>
 					<li>Automation</li>
@@ -465,6 +479,7 @@
 					<li>Monitoring/Alerting</li>
 				</ul>
 			</slide>
+			-->
 			<slide id="mamund-design-slide-summary-final">
 				<title>Summary – Discussion</title> 
 				<img src="mamund-discussion-title.jpeg" title='Summary – Discussion' class="fullsize-shadow" />
