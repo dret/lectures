@@ -98,6 +98,38 @@
 				<title>Hybrid Business Model</title>
 				<img src="hybrid-business.png" class="fullsize"/>
 			</slide>
+			<slide id="business-model-overview">
+				<title>API Business Model Overview</title>
+				<img src="api-business-models.png" href="https://www.mulesoft.com/api-university/programmablewebs-guide-to-modern-api-business-models" class="fullsize"/>
+			</slide>
+			<slide id="business-model-partner">
+				<title>Partner Business Models</title>
+				<img src="api-business-models-partner.png" href="https://www.mulesoft.com/api-university/programmablewebs-guide-to-modern-api-business-models" class="fullsize"/>
+			</slide>
+			<slide id="business-model-partner-affiliate">
+				<title>Partner Business Model: Affiliate</title>
+				<img src="walgreens-native-photo-prints-api.png" href="https://developer.walgreens.com/sites/default/files/v3_Native_PhotoPrintsAPI.html" title="Walgreens Native Photo Prints API" class="fullsize"/>
+			</slide>
+			<slide id="business-model-marketing">
+				<title>Marketing Business Models</title>
+				<img src="api-business-models-marketing.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-marketing-audience">
+				<title>Marketing Business Model: Audience</title>
+				<img src="twitter-authentication-api.png" href="https://developer.twitter.com/en/docs/authentication/overview" title="Twitter Authentication API" class="fullsize"/>
+			</slide>
+			<slide id="business-model-internal">
+				<title>The 900lb Gorilla</title>
+				<img src="api-business-models-internal.png" href="https://www.mulesoft.com/api-university/programmablewebs-guide-to-modern-api-business-models" class="fullsize"/>
+			</slide>
+			<slide id="indirect">
+				<title>Most API Value Creation is Indirect</title>
+				<ol>
+					<li>Using APIs to become better at internal reuse and cross-pollination</li>
+					<li>Reducing friction by having teams communicate via APIs</li>
+					<li>Using <q>API First</q> as a way to build everything as digital building blocks</li>
+				</ol>
+			</slide>
 		</part>
 		<part id="platform Engineering">
 			<title>Platform Engineering</title>
@@ -123,7 +155,7 @@
 					<title>Platform Engineering Perfection</title>
 					<img src="platform-engineering-maturity-model-cncf-optimizing.png" source="CNCF Platform Engineering Maturity Model" href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/" class="fullsize-shadow"/>
 				</slide>
-				<slide id="cncf-maturity-model">
+				<slide id="maturity-model-improvement">
 					<title>Improving Platform Engineering</title>
 					<img src="platform-engineering-maturity-model-cncf.png" source="CNCF Platform Engineering Maturity Model" href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/" class="fullsize-shadow"/>
 				</slide>
