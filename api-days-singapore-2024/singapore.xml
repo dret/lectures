@@ -116,7 +116,7 @@
 					<title>Inside-Out: External API Consumers</title>
 					<ul>
 						<li>The origin of the term <q>API</q> as we use it today</li>
-						<li>Partners: Driving your business by scaling partnerships (think <link href="five-billion-dollar">eBay</link>)</li>
+						<li>Partners: Driving your business by scaling partnerships (think <link href="platform-needed">eBay</link>)</li>
 						<li>Customers: Driving your business by digitizing customer interactions</li>
 						<li>Portals are outward-facing and should be business-case centered</li>
 					</ul>
@@ -126,7 +126,7 @@
 					<ul>
 						<li>Driven by the need to decrease coupling</li>
 						<li>Driven by the need to increase flow</li>
-						<li>Part of many stories around digital transformation  (think <link href="bezos-mandate">Amazon</link>)</li>
+						<li>Part of many stories around digital transformation  (think <q>Amazon API Mandate</q>)</li>
 					</ul>
 				</slide>
 				<slide id="outside-in">
@@ -140,6 +140,23 @@
 			</part>
 			<part id="developer-platform">
 				<title>Developer Platform</title>
+				<slide id="developer-platform">
+					<title>Developer Platform</title>
+					<ul>
+						<li><link href="api-platform"/> but probably a different set of APIs</li>
+						<li>Support for specific consumption (beyond generic SDKs)</li>
+						<li>Support for API production (think <q>Amazon API Mandate</q>)</li>
+						<li>Many organizations now have/create specific <q>platform teams</q></li>
+					</ul>
+				</slide>
+				<slide id="team-topologies-team-types">
+					<title>Team Topologies: Team Types</title>
+					<img src="team-topologies-team-types.png" source='Matthew Skelton and Manuel Pais, "Team Topologies: Organizing Business and Technology Teams for Fast Flow", IT Revolution, September 2019' href="https://teamtopologies.com/" class="fullsize" />
+				</slide>
+				<slide id="change-area">
+					<title>Team Topologies: Interaction Modes</title>
+					<img src="team-topologies-interaction-modes.png" source='Matthew Skelton and Manuel Pais, "Team Topologies: Organizing Business and Technology Teams for Fast Flow", IT Revolution, September 2019' href="https://teamtopologies.com/" class="fullsize" />
+				</slide>
 			</part>
 		</part>
 		<part id="platform-business">
@@ -190,7 +207,7 @@
 				</ol>
 			</slide>
 		</part>
-		<part id="platform Engineering">
+		<part id="platform-engineering">
 			<title>Platform Engineering</title>
 			<slide id="platform-surprise">
 				<img src="gregor-hohpe-platform-surprise.jpg" title='Gregor Hohpe: "If your users haven&apos;t built something that surprised you, you probably didn&apos;t build a platform."' class="fullsize-shadow"/>
