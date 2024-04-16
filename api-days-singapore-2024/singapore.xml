@@ -93,16 +93,50 @@
 					<img src="platform-business.png" class="fullsize"/>
 				</slide>
 				<slide id="no-platform-needed">
-					<title>Type 1: No Platform Needed</title>
+					<title>Type 1: No API/Dev Platform Needed</title>
 					<img src="uber-developer-documentation.png" title="Uber Developer Documentation" href="https://developer.uber.com/docs" class="fullsize"/>
 				</slide>
 				<slide id="platform-needed">
-					<title>Type 2: Platform Needed</title>
+					<title>Type 2: API/Dev Platform Needed</title>
 					<img src="ebay-video-cover.jpg" title="How to make Five Billion Dollars with APIs: API Monetization at eBay" href="https://www.youtube.com/watch?v=BCPD5NwQ7_M" class="fullsize"/>
 				</slide>
 			</part>
 			<part id="api-platform">
 				<title>API Platform</title>
+				<slide id="api-all-the-things">
+					<title>API all the Things!</title>
+					<ul>
+						<li>Increasing number of API-enabled capabilities</li>
+						<li>Increasing consumption of API-enabled capabilities</li>
+						<li>Increasing complexity of API footprint and requirements</li>
+						<li><q>One-size-fits-all</q> API management is on its way out</li>
+					</ul>
+				</slide>
+				<slide id="inside-out">
+					<title>Inside-Out: External API Consumers</title>
+					<ul>
+						<li>The origin of the term <q>API</q> as we use it today</li>
+						<li>Partners: Driving your business by scaling partnerships (think <link href="five-billion-dollar">eBay</link>)</li>
+						<li>Customers: Driving your business by digitizing customer interactions</li>
+						<li>Portals are outward-facing and should be business-case centered</li>
+					</ul>
+				</slide>
+				<slide id="inside-in">
+					<title>Inside-In: Internal API Platform</title>
+					<ul>
+						<li>Driven by the need to decrease coupling</li>
+						<li>Driven by the need to increase flow</li>
+						<li>Part of many stories around digital transformation  (think <link href="bezos-mandate">Amazon</link>)</li>
+					</ul>
+				</slide>
+				<slide id="outside-in">
+					<title>Outside-In: Digital Supply Chain Management</title>
+					<ul>
+						<li>Currently not the focus of most portal products and strategies</li>
+						<li>Probably a growing area of concern with increasing dependencies and complexity</li>
+						<li>Should become part of the general <link href="platform-engineering"/> approach</li>
+					</ul>
+				</slide>
 			</part>
 			<part id="developer-platform">
 				<title>Developer Platform</title>
