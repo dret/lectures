@@ -83,10 +83,12 @@
 				</ul>
 				<p style="font-style:italic">Allow each team to design/implement these elements as best fits their needs and common practice for that style/format.</p>
 			</slide>
+			<!--
 			<slide id="mamund-design-slide-summary">
 				<title>API Design Summary</title> 
 				<img src="mamund-design-summary.png" title='API Design Summary' class="fullsize-shadow" />
 			</slide>
+			-->
 		</part>
 		<part id="mamund-design-part-documentation">
 			<slide id="mamund-documentation-slide-title">
@@ -164,10 +166,12 @@
 				</ul>
 				<p>See Chapter 13 from <a href="https://learning.oreilly.com/library/view/principles-of-web/9780137355754/ch13.xhtml">"Principles of Web Design"</a> by James Higginbotham</p>	
 			</slide>
+			<!--
 			<slide id="mamund-design-slide-documentation-summary">
 				<title>API Documentation Summary</title> 
 				<img src="mamund-documentation-summary.png" title='API Documentation Summary' class="fullsize-shadow" />
 			</slide>
+			-->
 		</part>
 		<part id="mamund-design-part-exercise-ex1">
 			<title>Exercise #1</title>
@@ -287,6 +291,7 @@
 				<title>API Lifecycle Management – Landscape</title> 
 				<img src="mamund-design-api-lifecycle-cam-landscape.png" title='API Lifecycle Management Landscape' class="fullsize" />
 			</slide>
+			<!--
 			<slide id="mamund-design-slide-lifecycle-summary-image">
 				<title>API Lifecycle Management – Summary</title> 
 				<img src="mamund-lifecycle-title.jpeg" title='API Lifecycle Management Summary' class="fullsize" />
@@ -307,6 +312,7 @@
 				</ul>
 				<p>See Chapter 7 ("The API Product Lifecycle") from <a href="https://learning.oreilly.com/library/view/continuous-api-management/9781098103514/ch07.html">"Continuous API Management"</a> by Medjaoui, Wilde, Mitra, Amundsen</p>
 			</slide>
+			-->
 		</part>
 		<part id="mamund-design-part-automation">
 			<title>Automation</title>
@@ -376,6 +382,7 @@
 					<li>Automatically reversing problematic production updates</li>
 				</ul>
 			</slide>
+			<!--
 			<slide id="mamund-design-slide-automation-summary-title">
 				<title>Automation – Summary</title> 
 				<img src="mamund-automation-title.jpeg" title='Automation Summary' class="fullsize-shadow" />
@@ -392,6 +399,7 @@
 				</ul>
 				<p>See Chapter 6 ("Diagnosing and Automating Traffic Management") from <a href="https://learning.oreilly.com/library/view/api-traffic-management/9781492056393/ch06.html">"API Traffic Managment 101"</a> by Mike Amundsen</p>	
 			</slide>
+  		-->
 		</part>
 		<part id="mamund-design-part-exercise-ex2">
 			<title>Exercise #2</title>
@@ -406,6 +414,20 @@
 				<title>Summary</title> 
 				<img src="mamund-design-summary-title.jpeg" title='Summary' class="fullsize-shadow" />
 			</slide>
+			<slide id="mamund-design-slide-summary">
+				<title>Summary</title>
+				<ul>
+					<li>Design</li>
+					<ul><li>Assets (stories, definitions, diagrams, etc.)</li></ul>
+					<li>Documentation</li>
+					<ul><li>Findable, understandable, up-to-date, comprehensive</li></ul>
+					<li>Lifecycle</li>
+					<ul><li>Create, publish, realize, maintain, retire</li></ul>
+					<li>Automation</li>
+					<ul><li>Testing, Deoloyment, runtime repair</li></ul>
+				</ul>
+			</slide>
+			<!--
 			<slide id="mamund-design-slide-summary">
 				<title>Summary</title>
 				<ul>
@@ -465,6 +487,7 @@
 					<li>Monitoring/Alerting</li>
 				</ul>
 			</slide>
+			-->
 			<slide id="mamund-design-slide-summary-final">
 				<title>Summary – Discussion</title> 
 				<img src="mamund-discussion-title.jpeg" title='Summary – Discussion' class="fullsize-shadow" />

@@ -46,7 +46,7 @@
 				<ul>
           <li>Good for "real-time" interactions</li>
           <li>Good for sharing knowledge</li>
-          <li>Several open-source options (e.g. Slack)</li>
+          <li>Several options (IRC, MSFT Teams, Discord, Slack, etc.)</li>
         </ul>
 			</slide>
 			<slide id="mamund-marketing-slide-community-forums">
@@ -57,6 +57,7 @@
           <li>However, can be hard to scale</li>
         </ul>
 			</slide>
+			<!--
 			<slide id="mamund-marketing-slide-community-summary">
 				<title>Community Support – Summary</title>
 				<ul>
@@ -69,6 +70,7 @@
         </ul>
 				<p>A mature API development capability involves community support for the APIs, such as forums or chat rooms where developers can ask questions and get support.</p>
 			</slide>
+			-->
 		</part>
 		<part id="mamund-marketing-part-devrel">
 			<title>Developer Relations</title>
@@ -128,6 +130,7 @@ team’s API and support API consumers.</p>
 					<li>Shorter time between consumer feedback and product feature in production</li>
 				</ul>
 			</slide>
+			<!--
 			<slide id="mamund-marketing-slide-devrel-summary">
 				<title>Developer Relations – Summary</title>
 				<ul>
@@ -141,6 +144,7 @@ team’s API and support API consumers.</p>
 					<ul><li>Reduce time/cost needed to improve API consumer success</li></ul>
 				</ul>
 			</slide>
+			-->
 		</part>
 		<part id="mamund-marketing-part-onboarding">
 			<title>API Onboarding</title>
@@ -194,6 +198,7 @@ team’s API and support API consumers.</p>
 				</ul>
 				<p>NOTE: focus on the basics first. Once those are stable, move on to advanced items.</p>
 			</slide>
+			<!--
 			<slide id="mamund-marketing-slide-onboarding-summary">
 				<title>API Onboarding – Summary</title>
 				<ul>
@@ -206,6 +211,7 @@ team’s API and support API consumers.</p>
 				</ul>
 				<p>Work closely with designated DevRels when establishing smooth API onboarding</p>
 			</slide>
+			-->
 		</part>
 		<part id="mamund-marketing-part-exercise">
 			<title>Exercise</title>
@@ -228,6 +234,18 @@ team’s API and support API consumers.</p>
 				<title>Summary</title> 
 				<img src="mamund-marketing-summary.jpeg" title='Summary' class="fullsize-shadow" />
 			</slide>
+			<slide id="mamund-marketing-slide-summary">
+				<title>Summary</title>
+				<ul>
+					<li>Community Support</li>
+					<ul><li>Forums, chat, coaching</li></ul>
+					<li>Developer Relations</li>
+					<ul><li>Helping developers solve their problems with your API</li></ul>
+					<li>API Onboarding</li>
+					<ul><li>Present a smooth adoption path for your API</li></ul>
+				</ul>
+			</slide>
+			<!--
 			<slide id="mamund-marketing-slide-summary">
 				<title>Summary</title>
 				<ul>
@@ -274,6 +292,7 @@ team’s API and support API consumers.</p>
 				</ul>
 				<p>Work closely with designated DevRels when establishing smooth API onboarding</p>
 			</slide>
+			-->
 			<slide id="mamund-marketing-slide-summary-final">
 				<title>Summary – Discussion</title> 
 				<img src="mamund-discussion-title.jpeg" title='Summary – Discussion' class="fullsize-shadow" />
