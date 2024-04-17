@@ -210,9 +210,11 @@
 		<part id="platform-engineering">
 			<title>Platform Engineering</title>
 			<slide id="platform-surprise">
+				<title>Platforms and Innovation</title>
 				<img src="gregor-hohpe-platform-surprise.jpg" title='Gregor Hohpe: "If your users haven&apos;t built something that surprised you, you probably didn&apos;t build a platform."' class="fullsize-shadow"/>
 			</slide>
-			<slide id="platform-feedback">
+			<slide id="platform-waterfall">
+				<title>From Waterfall to Platform</title>
 				<ul>
 					<li>Have a good understanding of what platform users are doing with the platform</li>
 				</ul>
