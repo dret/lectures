@@ -216,7 +216,9 @@
 			<slide id="platform-waterfall">
 				<title>From Waterfall to Platform</title>
 				<ul>
-					<li>Have a good understanding of what platform users are doing with the platform</li>
+					<li><em>Waterfall:</em> Good for <q>assembly line</q> but not so good at allowing feedback</li>
+					<li><em>DevOps:</em> Deals well with feedback but does not address scaling challenges</li>
+					<li><em>Platform Engineering:</em> Allows teams to <q>outsource</q> non-differentiating tasks to the platform</li>
 				</ul>
 			</slide>
 			<part id="platform-engineering-maturity">
