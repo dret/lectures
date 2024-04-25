@@ -185,9 +185,24 @@
 		<title short="Error Messages for HTTP APIs">Error Messages for HTTP APIs: Standards, Patterns, and Practices</title>
 		<date short="2024-04-25">April 25, 2024</date>
 		<toc class="abstract">Reporting errors is a fundamental aspect of API design. The way it's done can differ between APIs, API technologies, and API styles, but since it is a very common pattern it makes sense to not reinvent the wheel for every single API. We look at how to report errors in HTTP APIs but the lessons learned in this session can be applied to other technologies and styles as well. Beyond the format there also is the question which patterns to apply so that API designers get as much support as possible from their platform when it comes to managing the error messages of their APIs. The format that we discuss is a successor of the popular RFC 7807 error format. We'll discuss why there is a new version, what the changes are, and how to best use it in your APIs and your API landscape.</toc>
+<!--
 		<slide id="summary-error-messages">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+-->
+		<slide id="dret-error-messages">
+			<title>Erik Wilde</title>
+			<img src="INNOQ-logo.png" title="INNOQ" href="https://www.innoq.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+			<img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+			<ul>
+				<li>CA API Academy 2016-2019</li>
+				<li>Axway Catalyst 2019-2023</li>
+				<li>Principal Consultant at <a href="https://www.innoq.com/">INNOQ</a></li>
+				<li>OAI Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative</a></li>
+				<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+				<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+			</ul>
 		</slide>
 		<slide id="getting-apis-to-work-error-messages">
 			<title>Getting APIs to Work</title>
