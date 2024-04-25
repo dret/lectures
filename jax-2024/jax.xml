@@ -239,13 +239,13 @@
 			<slide id="effective-teams">
 				<title>What is an Effective Team?</title>
 				<ul>
-					<li>A team spending less time with generic API-related tasks</li>
+					<li>A team spending <em>less time with generic API-related tasks</em></li>
 					<ul>
 						<li>Figuring out the general guardrails for API design</li>
 						<li>Designing, implementing, exposing, securing, and monitoring APIs</li>
 						<li>Deploying APIs and making them discoverable for consumers</li>
 					</ul>
-					<li>A team spending more time addressing domain issues</li>
+					<li>A team spending <em>more time addressing domain issues</em></li>
 					<ul>
 						<li>Engaging with consumers and designing a good API</li>
 						<li>Making sure that consumer feedback is collected and used</li>
