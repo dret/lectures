@@ -336,9 +336,9 @@
 					<li>There are no breaking changes</li>
 					<li>Three issues seen from usage in the wild</li>
 					<ul>
-						<li>Registry of common problem type URIs</li>
-						<li>Clarification of how to treat multiple problems</li>
-						<li>Guidance for using type URIs that cannot be dereferenced</li>
+						<li>Registry of common problem type URIs (<a href="https://www.rfc-editor.org/rfc/rfc9457.html#registry">Section 4.2</a>)</li>
+						<li>Clarification of how to treat multiple problems (<a href="https://www.rfc-editor.org/rfc/rfc9457.html#problem-json">Section 3</a>)</li>
+						<li>Guidance for using type URIs that cannot be dereferenced (<a href="https://www.rfc-editor.org/rfc/rfc9457.html#type">Section 3.1.1</a>)</li>
 					</ul>
 				</ul>
 			</slide>
