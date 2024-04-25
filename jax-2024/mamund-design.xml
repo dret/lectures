@@ -183,6 +183,17 @@
 				<title>Exercise #1 &#8211; API Story</title> 
 				<img src="mamund-design-api-story.png" title='Exercise' class="fullsize-shadow" />
 			</slide>
+			<slide id="mamund-design-exercise-story">
+				<title>Exercise #1 &#8211; API Story</title> 
+				<ul>
+				  <li>Write an API Story</li>
+				  <ul><li>See <a href="https://github.com/mamund/apim-labs/blob/main/auto-rvs/rvs-api-story.md">Request for Vehcile Service</a> for example</li></ul>
+				  <li>Expand on `Customer Record`, `Service Work Record`, or `Service Staff Record`</li>
+				  <li>Optionally, produce a Vocabulary document for your Story</li>
+				  <ul><li>See <a href="https://github.com/mamund/apim-labs/blob/main/auto-rvs/rvs-vocabulary.md">Request for Vehicle Service Vocabulary</a> for example</li></ul>
+				</ul>
+			</slide>
+			
 		</part>
 		<part id="mamund-design-part-lifecycle">
 			<title>API Lifecycle Management</title>
