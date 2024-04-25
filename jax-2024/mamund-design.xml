@@ -55,7 +55,7 @@
 			</slide>
 			<slide id="mamund-design-slide-initial-recommendations">
 				<title>Initial Recommendations</title>
-				<img src="mamund-design-story.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<img src="mamund-design-api-story.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
 					<li>API Story</li>
 					<li>API Description Document</li>
@@ -181,8 +181,19 @@
 			</slide>
 			<slide id="mamund-design-exercise-story">
 				<title>Exercise #1 &#8211; API Story</title> 
-				<img src="mamund-design-story.png" title='Exercise' class="fullsize-shadow" />
+				<img src="mamund-design-api-story.png" title='Exercise' class="fullsize-shadow" />
 			</slide>
+			<slide id="mamund-design-exercise-story">
+				<title>Exercise #1 &#8211; API Story</title> 
+				<ul>
+				  <li>Write an API Story</li>
+				  <ul><li>See <a href="https://github.com/mamund/apim-labs/blob/main/auto-rvs/rvs-api-story.md">Request for Vehcile Service</a> for example</li></ul>
+				  <li>Expand on `Customer Record`, `Service Work Record`, or `Service Staff Record`</li>
+				  <li>Optionally, produce a Vocabulary document for your Story</li>
+				  <ul><li>See <a href="https://github.com/mamund/apim-labs/blob/main/auto-rvs/rvs-vocabulary.md">Request for Vehicle Service Vocabulary</a> for example</li></ul>
+				</ul>
+			</slide>
+			
 		</part>
 		<part id="mamund-design-part-lifecycle">
 			<title>API Lifecycle Management</title>
@@ -341,9 +352,17 @@
 					<li>Protocol, Structure, Value tests</li>
 				</ul>
 			</slide>
+			<slide id="mamund-design-slide-automation-srt-code">
+				<title>Happy / Sad Path testing &#8211; Code </title>
+				<img src="mamund-design-srt-code.png" class="fullsize-shadow" />
+			</slide>
 			<slide id="mamund-design-slide-automation-testing-srt">
-				<title>Happy / Sad Path testing</title>
+				<title>Happy / Sad Path testing &#8211; Config</title>
 				<img src="mamund-design-testing-srt.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="mamund-design-slide-automation-postman-code">
+				<title>Protocol, Structure, Value testing</title>
+				<img src="mamund-design-postman-code.png" class="fullsize-shadow" />
 			</slide>
 			<slide id="mamund-design-slide-automation-testing-psv">
 				<title>Protocol, Structure, Value testing</title>
@@ -401,6 +420,7 @@
 			</slide>
   		-->
 		</part>
+		<!--
 		<part id="mamund-design-part-exercise-ex2">
 			<title>Exercise #2</title>
 			<slide id="mamund-design-exercise-title">
@@ -408,6 +428,7 @@
 				<img src="mamund-exercise.jpeg" title='Exercise' class="fullsize-shadow" />
 			</slide>
 		</part>
+		-->
 		<part id="mamund-design-part-summary">
 			<title>Summary</title>
 			<slide id="mamund-design-slide-summary-title">
@@ -427,7 +448,6 @@
 					<ul><li>Testing, Deoloyment, runtime repair</li></ul>
 				</ul>
 			</slide>
-			<!--
 			<slide id="mamund-design-slide-summary">
 				<title>Summary</title>
 				<ul>
