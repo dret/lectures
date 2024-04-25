@@ -35,6 +35,7 @@
 			</slide>
 			<slide id="mamund-marketing-slide-community-forums">
 				<title>Community Support – Online Forums</title>
+				<img src="mamund-marketing-forum.png" style="float: right ; height : 35% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
           <li>Good for "async" interactions</li>
           <li>Good for historical context</li>
@@ -43,6 +44,7 @@
 			</slide>
 			<slide id="mamund-marketing-slide-community-forums">
 				<title>Community Support – Group Chat</title>
+				<img src="mamund-marketing-chat.png" style="float: right ; height : 35% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
           <li>Good for "real-time" interactions</li>
           <li>Good for sharing knowledge</li>
@@ -51,6 +53,7 @@
 			</slide>
 			<slide id="mamund-marketing-slide-community-forums">
 				<title>Community Support – One-on-One Coaching</title>
+				<img src="mamund-marketing-coaching.png" style="float: right ; height : 35% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
           <li>Good for solving immediate problems</li>
           <li>Good for sharing expertise</li>
@@ -104,6 +107,7 @@ team’s API and support API consumers.</p>
 			</slide>
 			<slide id="mamund-marketing-slide-devrel-basic">
 				<title>Developer Relations – The Basics</title>
+				<img src="mamund-marketing-face.png" style="float: right ; height : 35% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
 					<li>"First Contact" for the API</li>
 					<li>Responsible for outreach to target consumers</li>
@@ -114,6 +118,7 @@ team’s API and support API consumers.</p>
 			</slide>
 			<slide id="mamund-marketing-slide-devrel-additional">
 				<title>Developer Relations – Additional Tasks</title>
+				<img src="mamund-marketing-bridge.png" style="float: right ; height : 35% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
 					<li>Help API consumers solve problems w/ the API</li>
 					<li>Help API producers improve documentation and relate materials</li>
@@ -124,6 +129,7 @@ team’s API and support API consumers.</p>
 			</slide>
 			<slide id="mamund-marketing-slide-devrel-success">
 				<title>Developer Relations – Measures of Success</title>
+				<img src="mamund-marketing-success.png" style="float: right ; height : 35% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
 					<li>Reduce time between reporting and resolving problems for API Consumers</li>
 					<li>Less need for one-on-one interactions, more reliance on peer-to-peer support</li>
@@ -221,10 +227,15 @@ team’s API and support API consumers.</p>
 			</slide>
 			<slide id="mamund-marketing-slide-exercise">
 				<title>Exercise</title>
+				<p>Write up the 'Hello, World!' onboarding experience for your Auto-RVS API</p>
 				<ul>
-					<li>item</li>
-					<li>item</li>
-					<li>item</li>
+				  <li>Use the 'Hello, AutoRVS!' as an example</li> 
+					<li>What's a 'quick win' you can engineer?</li>
+					<ul><li>Typically a 'create' or 'compute' function</li></ul>
+					<li>Document all the steps needed</li>
+					<ul><li>Need an API key? Auth Token? What is the minimum data needed?</li></ul>
+					<li>Mock up a small code snippet the developer will execute</li>
+					<ul><li>CURL? Javascript? shell scripting? something else?</li></ul>
 				</ul>
 			</slide>
 		</part>		
