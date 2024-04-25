@@ -169,13 +169,26 @@ team’s API and support API consumers.</p>
 			<slide id="mamund-marketing-slide-onboarding-goals">
 				<title>API Onboarding : Goals</title>
 				<ul>
-				  <li>Reduce the need for repeated interactions at the start</li>
 				  <li>Provide a "quick win" to potential API consumers</li>
 				  <li>Present a smooth adoption path for your API</li>
+				  <li>Reduce the need for repeated person-to-person interactions</li>
 				</ul>
+			</slide>
+			<slide id="mamund-marketing-slide-onboaring-quickwin">
+			  <title>API Onboarding : Quick Win</title>
+			  <ul>
+			    <li>Twilio's "Neo Moment"</li>
+			    <li>Provide a detailed walk-through for a simple API call</li>
+			    <li>Jarkko Moilanen's "<a href="https://medium.com/@kyyberi/you-have-3-minutes-to-cross-the-chasm-and-get-paying-customers-to-your-api-d4b15fdd9d59">Crossing the Chasm in Three Minutes</a>"</li>
+			  </ul>
+			</slide>
+			<slide id="mamund-marketing-onboarding-jarkko">
+				<title>Crossing the Chasm in Three Minutes</title> 
+				<img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-oxMOPCaLU3ICBa3pB2nug.png" title='onboarding' class="fullsize-shadow" />
 			</slide>
 			<slide id="mamund-marketing-slide-onboarding-basics">
 				<title>API Onboarding : Basics</title>
+				<p>Developers *like* <a href="https://bootcamp.uxdesign.cc/the-hidden-insights-in-developers-google-searches-47f05030cd2d">looking things up</a> themselves. Your onboarding experience and API Portal should be able to answer all your API consumer's initial questions.</p>
 				<ul>
 				  <li>API Overview</li>
 				  <ul><li>API type [REST, GraphQL, etc.], use-case examples, limits [transactions, security, etc.]</li></ul>
@@ -188,7 +201,6 @@ team’s API and support API consumers.</p>
           <li>Reference Documentation</li>
           <ul><li>HTTP methods, URLs, parameters/bodies, response bodies, headers, errors/status codes, etc.</li></ul>
 				</ul>
-				<p>API Portals should be able to answer all your API consumer's initial questions</p>
 			</slide>
 			<slide id="mamund-marketing-slide-onboarding-advanced">
 				<title>API Onboarding : Advanced</title>
@@ -251,9 +263,9 @@ team’s API and support API consumers.</p>
 					<li>Community Support</li>
 					<ul><li>Forums, chat, coaching</li></ul>
 					<li>Developer Relations</li>
-					<ul><li>Helping developers solve their problems with your API</li></ul>
+					<ul><li>Helping developers solve *their* problems with your API</li></ul>
 					<li>API Onboarding</li>
-					<ul><li>Present a smooth adoption path for your API</li></ul>
+					<ul><li>Get a quick win and present a smooth adoption path for your API</li></ul>
 				</ul>
 			</slide>
 			<!--
