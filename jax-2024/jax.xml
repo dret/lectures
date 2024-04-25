@@ -283,7 +283,7 @@
 			</slide>
 			<slide id="in-the-wild">
 				<title>API Guidelines in the Wild</title>
-				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" class="fullsize"/>
 			</slide>
 			<slide id="governance">
 				<title>API Governance</title>
@@ -325,6 +325,14 @@
 			<slide id="http-problem-xml">
 				<title>HTTP Problem Details: XML</title>
 				<listing href="https://tools.ietf.org/html/rfc9457#appendix-B" src="http-problem-details.xml"/>
+			</slide>
+			<slide id="error-tmi">
+				<title><span title="Too Much Information">TMI</span> Error</title>
+				<ul>
+					<li>Avoid any implementation information</li>
+					<li>This is about helping clients</li>
+					<li>This is not about providing debugging information</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="rfc7807-rfc9457">
@@ -368,7 +376,7 @@
 		<part id="conclusions-error-messages">
 			<title>Conclusions</title>
 			<slide id="shift-up">
-				<title>Shift left? Shift up!</title>
+				<title>Shift left? Shift down!</title>
 				<ul>
 					<li>Product people: Raise an issue when inventing patterns</li>
 					<li>Platform people: Identify the <q>biggest bang for the reuse buck</q></li>
