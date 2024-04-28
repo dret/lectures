@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="youtube" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="berlin.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+		<div class="license">
+			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+		</div>
+	</license>
+	<toc name="toc.html">
+		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
+			<thead>
+				<tr>
+					<th valign="bottom">Date</th>
+					<th valign="bottom">Title</th>
+					<th valign="bottom">Author</th>
+					<th valign="bottom">Slides</th>
+				</tr>
+			</thead>
+			<tbody>
+				<hotspot:for-each-presentation>
+					<tr class="vevent">
+						<td valign="top"><b><span class="title"><hotspot:date/></span></b></td>
+						<td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
+						<td valign="top"><b><span class="title"><hotspot:author/></span></b></td>
+						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+					</tr>
+				</hotspot:for-each-presentation>
+			</tbody>
+		</table>
+	</toc>
+	<title><a href="https://apiconference.net/">API Conference</a> <a href="https://apiconference.net/berlin/">Berlin</a></title>
+	<author>Erik Wilde</author>
+	<affiliation><a href="https://www.innoq.com/">INNOQ</a></affiliation>
+	<copyright>2024 Erik Wilde</copyright>
+	<presentation id="workshop-introduction">
+		<title>Workshop Introduction</title>
+		<author>Mike Amundsen / Erik Wilde</author>
+		<affiliation><a href="http://amundsen.com/">amundsen.com, Inc.</a> / <a href="https://www.innoq.com/">INNOQ</a></affiliation>
+		<date short="2024-10-21">October 21, 2024</date>
+		<copyright>2024 Mike Amundsen &amp; Erik Wilde</copyright>
+		<slide id="workshop-slides">
+			<title>Workshop Slides Online</title>
+			<img src="qr-code-berlin-2024.png" href="http://dret.net/lectures/apicon-berlin-2024/" class="fullsize"/>
+		</slide>
+		<part id="trainers">
+			<title>Your Trainers</title>
+			<slide id="cam2">
+				<title>Continuous API Management</title>
+				<img src="CAM2-cover.png" href="https://www.oreilly.com/library/view/continuous-api-management/9781098103514/" title="Continuous API Management, 2nd Edition, October 2021" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><q>Continuous API Management: Making the Right Decisions in an Evolving Landscape</q></li>
+					<ul>
+						<li><a href="https://www.oreilly.com/library/view/continuous-api-management/9781098103514/">O'Reilly book page</a></li>
+						<li><a href="https://www.amazon.com/Continuous-API-Management-Mehdi-Medjaoui-ebook/dp/B09M7J9FRH">Amazon book page</a></li>
+					</ul>
+					<li>Second edition 2021 (First edition 2019)</li>
+					<ul>
+						<li>Mehdi Medjaoui</li>
+						<li>Erik Wilde</li>
+						<li>Ronnie Mitra</li>
+						<li>Mike Amundsen</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="mike">
+				<title>Mike Amundsen</title>
+				<img src="mamund-books.png" title="Select books by Mike Amundsen" href="https://www.amazon.com/author/mamund" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>Author, Speaker, Advisor</li>
+					<li><a href="https://mastodon.social/@mamund" title="Mike on Mastodon">Mastodon</a></li>
+					<li><a href="https://www.linkedin.com/in/mamund/" title="Mike on Linkedin">Linkedin</a></li>
+					<li><a href="https://mamund.substack.com/" title="Mike on Substack">Substack</a></li>
+				</ul>
+			</slide>
+			<slide id="dret">
+				<title>Erik Wilde</title>
+				<img src="INNOQ-logo.png" title="INNOQ" href="https://www.innoq.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+				<img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>CA API Academy 2016-2019</li>
+					<li>Axway Catalyst 2019-2023</li>
+					<li>Principal Consultant at <a href="https://www.innoq.com/">INNOQ</a></li>
+					<li>OAI Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative</a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+				</ul>
+			</slide>
+			<slide id="getting-apis-to-work">
+				<title>Getting APIs to Work</title>
+				<img src="youtube-erik-wilde.jpg" title="Erik Wilde on YouTube: Getting APIs to Work" href="https://www.youtube.com/ErikWilde" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<div style=" float : left ; width : 50% ; margin : 0% 4% 0% 2% ; ">
+					<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/1CwUlDPqz2c" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+		</part>
+		<part id="workshop">
+			<title>Your Workshop</title>
+			<slide id="yet-another-maturity-model">
+				<title>Yet Another Maturity Model?</title>
+				<img source="CNCF Platform Engineering Maturity Model" src="platform-engineering-maturity-model-cncf.png" href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/" class="fullsize-shadow" />
+			</slide>
+			<slide id="maturity-models">
+				<title>Maturity Models</title>
+				<blockquote>
+					<p><a href="https://martinfowler.com/bliki/MaturityModel.html"><q>The true outcome of a maturity model assessment isn't what level you are but the list of things you need to work on to improve. Your current level is merely a piece of intermediate work in order to determine that list of skills to acquire next.</q> <span style="font-size : 75% ;">(Martin Fowler, <q>Maturity Model</q>, August 2014)</span></a></p>
+				</blockquote>
+			</slide>
+			<slide id="workshop-focus">
+				<title>Main Focus: Scope and Potential</title>
+				<img src="bang-for-the-buck.webp" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>Understanding the relevant areas</li>
+					<li>Looking at various <q>levels</q> in these areas</li>
+					<li>Aim for <q>optimum</q> instead of <q>maximum</q></li>
+					<li>Figure out where you are and where you should be</li>
+					<li>Look at patterns and practices that you can learn from</li>
+					<li>Always think about <q>bang for the buck</q></li>
+				</ul>
+			</slide>
+			<slide id="workshop-areas">
+				<title>Four Focus Areas</title>
+				<ol>
+					<li><link href="strategy-business"/></li>
+					<li><link href="design"/></li>
+					<li><link href="marketing"/></li>
+					<li><link href="governance-platform"/></li>
+				</ol>
+			</slide>
+			<slide id="slides-qr">
+				<title>Workshop Materials</title>
+				<img src="qr-code-berlin-2024.png" href="http://dret.net/lectures/apicon-berlin-2024/" style=" float: right ; height : 60% ; margin : 4% ;  "/>
+				<ul>
+					<li>Slides online: <a href="http://dret.net/lectures/apicon-berlin-2024/"><code>dret.net/lectures/apicon-berlin-2024/</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="strategy-business">
+		<title>Strategy and Business Alignment</title>
+		<author>Erik Wilde</author>
+		<affiliation><a href="https://www.innoq.com/">INNOQ</a></affiliation>
+		<date short="2024-04-26">April 26, 2024</date>
+		<copyright>2024 Erik Wilde</copyright>
+		<part id="api-strategy">
+			<title>API Strategy</title>
+			<part id="bezos-mandate">
+				<title>The 2002 Bezos Mandate</title>
+				<slide id="amazon-rules">
+					<title>Jeff Bezos' Services Rant: <a href="https://gist.github.com/chitchcock/1281611">The Rules</a></title>
+					<ul>
+						<li>Famous small set of SOA design rules</li>
+						<ul>
+							<li>Teams must expose functionality through services</li>
+							<li>Communication happens only through service interfaces</li>
+							<li>There are no hard guidelines for service design</li>
+							<li>Internal/external service is a matter of policy, not one of design</li>
+						</ul>
+						<li>Focus on <em>decreasing team coupling</em> and <em>managing coupling through APIs</em></li>
+					</ul>
+				</slide>
+				<slide id="amazon-consequences">
+					<title>Jeff Bezos' Services Rant: <a href="https://gist.github.com/chitchcock/1281611">The Consequences</a></title>
+					<ul>
+						<li>With more freedom comes more responsibility</li>
+						<ul>
+							<li>Monitoring and metrics are necessary for finding root causes</li>
+							<li>All APIs must be hardened against DoS attacks</li>
+							<li>Automated QA is necessary to understand service health</li>
+							<li>Services must be documented and registered so that they can be discovered</li>
+							<li>Debugging becomes harder because of service dependencies</li>
+						</ul>
+						<li>Sophisticated tooling required to manage the new SOA landscape</li>
+						<li>Much easier in today's technology landscape than in 2002</li>
+					</ul>
+				</slide>
+				<slide id="api-first">
+					<title>API First: API all the Things</title>
+					<ul>
+						<li><link href="amazon-rules">Jeff Bezos' Mandate</link> focuses on <q>API products</q></li>
+						<ul>
+							<li>Loose coupling means to look at <em>products as APIs</em></li>
+							<li>Dependencies have to be designed and managed as APIs</li>
+						</ul>
+						<li>API products are built by thinking about interactions</li>
+						<ol>
+							<li>The API is the <em>first UI</em></li>
+							<li>APIs are designed <em>before anything is implemented</em></li>
+							<li>APIs are the <em>primary means of team communications</em></li>
+						</ol>
+					</ul>
+				</slide>
+			</part>
+			<part id="execution-gap">
+				<title>The Execution Gap</title>
+				<slide id="vision-strategy-program">
+					<title><span title="Why">Vision</span> → <span title="What">Strategy</span> → <span title="How">Program</span> → <span title="Build">Platform</span> → <span title="Measure">Results</span></title>
+					<img title="Grand Canyon" src="grand-canyon.jpg" class="fullsize"/>
+				</slide>
+				<slide id="effectiveness">
+					<title>Effectiveness > Efficiency</title>
+					<ul>
+						<li>Effectiveness: <em>Doing the right thing</em></li>
+						<ul>
+							<li><em>Strategy:</em> Having a vision and a high-level plan how to get there</li>
+							<li><em>Program:</em> Turning the strategy into reality by executing a program</li>
+						</ul>
+						<li>Efficiency: <em>Doing the thing right</em></li>
+						<ul>
+							<li><em>Platform:</em> Providing the foundation for everybody to build on</li>
+							<li><em>Products:</em> Adding valuable pieces to the platform</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="leadership-1-2-3-4">
+					<title>Leadership 1-2-3-4</title>
+					<ul>
+						<li>Set a <em>vision</em> as the goal to improve the organization</li>
+						<ul>
+							<li><em>APIs</em> are one of the necessary foundations of any digital value stream</li>
+						</ul>
+						<li>Define a <em>strategy</em> how to turn the vision into reality</li>
+						<ul>
+							<li><em>APIs</em> must focus on business value for them to become valuable building blocks</li>
+						</ul>
+						<li>Have a <em>program</em> to turn the defined strategy into reality</li>
+						<ul>
+							<li><em>Designing and building valuable APIs</em> has business, organizational, and technical aspects</li>
+						</ul>
+						<li>Build a <em>platform</em> that supports teams and supports scaling</li>
+						<ul>
+							<li><em>Platform engineering</em> focuses on increasing efficiency and flow of teams</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+			<part id="magical-api">
+				<title>APIs are Magical!</title>
+				<slide id="api-hype-curve">
+					<title>Watch out for Disappointment</title>
+					<img src="hype-curve-unicorn.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="monolith-2001">
+					<title>Miracle #1: Untangling Monoliths!</title>
+					<img src="monolith-2001.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="monolith-but-maybe">
+					<title>#1: Untangling Monoliths! But Maybe …</title>
+					<ul>
+						<li>IT modularization has been around for decades</li>
+						<li>Organizational modularization has been around for millennia</li>
+						<li>What's worse than a monolith? A distributed monolith!</li>
+					</ul>
+				</slide>
+				<slide id="scaling">
+					<title>Miracle #2: Scaling Up!</title>
+					<img src="pneumatic-tubes.jpg" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="scaling-but-maybe">
+					<title>#2: Scaling Up! But Maybe …</title>
+					<ul>
+						<li>Scaling depends on loosely coupled architecture</li>
+						<li>Scaling is a function of interface and implementation</li>
+						<li>Scaling needs to be aligned with business processes</li>
+					</ul>
+				</slide>
+				<slide id="api-money-press">
+					<title>Miracle #3: Monetization!</title>
+					<img src="money-press.gif" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="monetization-but-maybe">
+					<title>#3: Monetization! But Maybe …</title>
+					<ul>
+						<li>Product success is a function of product value (not of product delivery)</li>
+						<li>Most organizations should focus on value creation over monetization</li>
+						<li>Enrich value chains with new value chain inputs</li>
+						<li>Increase value chain coverage with new value chain outputs</li>
+					</ul>
+				</slide>
+				<slide id="tower-of-babel">
+					<title>Miracle #4: Organizational Issues!</title>
+					<img src="tower-of-babel.jpg" href="https://en.wikipedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Tower_of_Babel_(Vienna)_-_Google_Art_Project_-_edited.jpg" title="Pieter Bruegel the Elder: The Tower of Babel (1563)" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="communications-but-maybe">
+					<title>#4: Organizational Issues! But Maybe …</title>
+					<ul>
+						<li>Shared understanding is more than having a shared grammar/language</li>
+						<li>Communication design is mostly a question of organization design</li>
+					</ul>
+				</slide>
+			</part>
+			<part id="pillars">
+				<title>Three Pillars</title>
+				<slide id="biz">
+					<title>Business Pillar</title>
+					<ul>
+						<li>Increase delivery speed of capabilities and products</li>
+						<li>Decrease cost of product development and adaptation</li>
+						<li>Improve insight into products and value chains</li>
+						<li>Aligning/unifying business and IT: <em><q>Business, rewritten by software</q></em></li>
+					</ul>
+				</slide>
+				<slide id="org">
+					<title>Organizational Pillar</title>
+					<img src="team-topologies-cover.png" title="Team Topologies" href="https://teamtopologies.com/book" style=" float: right ; height : 60% ; margin : 2% ;  "/>
+					<ul>
+						<li>Increased team autonomy increases team delivery speed</li>
+						<li>Structures across teams build communities of practice</li>
+						<li>API support and platform provided by <em>Center for Enablement (C4E)</em></li>
+						<li>Team practices inform and form the API guidelines</li>
+					</ul>
+					<blockquote><q href="http://www.melconway.com/Home/Conways_Law.html">Any organization that designs a system will produce a design whose structure is a copy of the organization's communication structure.</q> (<a href="https://en.wikipedia.org/wiki/Melvin_Conway">Mel Conway</a>)</blockquote>
+				</slide>
+				<slide id="team-topologies-team-types">
+					<title>Team Topologies: Team Types</title>
+					<img src="team-topologies-team-types.png" source='Matthew Skelton and Manuel Pais, "Team Topologies: Organizing Business and Technology Teams for Fast Flow", IT Revolution, September 2019' href="https://teamtopologies.com/" class="fullsize" />
+				</slide>
+				<slide id="change-area">
+					<title>Team Topologies: Interaction Modes</title>
+					<img src="team-topologies-interaction-modes.png" source='Matthew Skelton and Manuel Pais, "Team Topologies: Organizing Business and Technology Teams for Fast Flow", IT Revolution, September 2019' href="https://teamtopologies.com/" class="fullsize" />
+				</slide>
+				<slide id="tech">
+					<title>Technology Pillar</title>
+					<ul>
+						<li>Constrain <em>what</em> products have to do (not <em>how</em>)</li>
+						<li>No hidden channels bypassing the API strategy</li>
+						<li>API guidelines for protocols, patterns, and practices</li>
+						<li>Lifecycle for technology maturity and support</li>
+					</ul>
+				</slide>
+				<slide id="strategy-matrix">
+					<title>API Strategy = Pillars × Perspectives</title>
+					<table style="border-collapse: collapse ; ">
+						<tr>
+							<td/>
+							<th style="border: 1px solid black ; padding: 0.5em">External</th>
+							<th style="border: 1px solid black ; padding: 0.5em">Internal</th>
+						</tr>
+						<tr>
+							<th style="border: 1px solid black ; padding: 0.5em">Biz</th>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">API monetization</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Revenue-supporting APIs</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase speed &amp; feedback</li>
+							</ul></td>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Identify &amp; stabilize enablers</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Design for externalization</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Increase biz insight with dashboards</li>
+							</ul></td>
+						</tr>
+						<tr>
+							<th style="border: 1px solid black ; padding: 0.5em">Org</th>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Focus on documentation/DX</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Support discovery/self-service</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Collect DX feedback</li>
+							</ul></td>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Products &gt; projects (ownership)</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Team enablement/support</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loose coupling for speed/agility</li>
+							</ul></td>
+						</tr>
+						<tr>
+							<th style="border: 1px solid black ; padding: 0.5em">Tech</th>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Tech trends and popularity</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Invest in on-boarding support</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Secure through platform</li>
+							</ul></td>
+							<td style="border: 1px solid black ; padding: 0.5em"><ul>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Loosely coupled implementations</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Observe patterns and practices</li>
+								<li style="margin: 0 ; padding : 0 ; line-height: 100%">Establish C4E for platform/support</li>
+							</ul></td>
+						</tr>
+					</table>
+				</slide>
+				<slide id="one-size">
+					<title>Got Strategy?</title>
+					<img title="API Cookie Cutter" src="api-cookie-cutter.png" href="https://www.openapis.org/" style="float : right ; width : 25% ; margin-top : 0.5em ; margin-right : 2em ; "/>
+					<ul>
+						<li>There is no one-size-fits-all API Strategy</li>
+						<li>Strategy always depends on context</li>
+						<ul>
+							<li>What do you want to improve/achieve with APIs?</li>
+							<li>What does your organization look like?</li>
+							<li>What is the main value that you produce?</li>
+							<li>What does the market look like?</li>
+							<li>What do your customers look like?</li>
+							<li>What do your partners look like?</li>
+							<li>What does your competition look like?</li>
+						</ul>
+					</ul>
+				</slide>
+			</part>
+		</part>
+		<part id="exercise-strategy">
+			<title>Exercise #1: Create/Fix Your Strategy</title>
+			<slide id="strategy-matters">
+				<title>Strategy Matters</title>
+				<img src="good-strategy-bad-strategy.jpg" title='Richard Rumelt: "Good Strategy Bad Strategy: The Difference and Why It Matters", July 2011' href="https://www.amazon.de/-/en/Richard-Rumelt/dp/0307886239" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
+				<ol>
+					<li><em>A diagnosis:</em> An explanation of the nature of the challenge. A good diagnosis simplifies the often overwhelming complexity of reality by identifying certain aspects of the situation as being the critical ones.</li>
+					<li><em>A guiding policy:</em> An overall approach chosen to cope with or overcome the obstacles identified in the diagnosis.</li>
+					<li><em>Coherent actions:</em> Steps that are coordinated with one another to support the accomplishment of the guiding policy.</li>
+				</ol>
+			</slide>
+		</part>
+		<part id="api-business-models">
+			<title>API Business Models</title>
+			<slide id="five-billion-dollar">
+				<title>The Five Billion Dollar API</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/BCPD5NwQ7_M" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+			<slide id="monetization-myth">
+				<title>The API Monetization Myth</title>
+				<img src="money-press.gif" title="The API Money Press" style="float: right ; width : 35% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Don't think about a business model for your API</li>
+					<li>Do think about new opportunities for your business</li>
+					<li>Do think about an API for your business model</li>
+				</ul>
+			</slide>
+			<slide id="business-model-overview">
+				<title>API Business Model Overview</title>
+				<img href="https://www.mulesoft.com/api-university/programmablewebs-guide-to-modern-api-business-models" src="api-business-models.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-partner">
+				<title>Partner Business Models</title>
+				<img href="https://www.mulesoft.com/api-university/programmablewebs-guide-to-modern-api-business-models" src="api-business-models-partner.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-partner-affiliate">
+				<title>Partner Business Model: Affiliate</title>
+				<img href="https://developer.walgreens.com/sites/default/files/v3_Native_PhotoPrintsAPI.html" title="Walgreens Native Photo Prints API" src="walgreens-native-photo-prints-api.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-marketing">
+				<title>Marketing Business Models</title>
+				<img src="api-business-models-marketing.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-marketing-audience">
+				<title>Marketing Business Model: Audience</title>
+				<img href="https://developer.twitter.com/en/docs/authentication/overview" title="Twitter Authentication API" src="twitter-authentication-api.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-internal">
+				<title>The 900lb Gorilla</title>
+				<img href="https://www.mulesoft.com/api-university/programmablewebs-guide-to-modern-api-business-models" src="api-business-models-internal.png" class="fullsize"/>
+			</slide>
+			<slide id="indirect">
+				<title>Most API Value Creation is Indirect</title>
+				<ol>
+					<li>Using APIs to become better at internal reuse and cross-pollination</li>
+					<li>Reducing friction by having teams communicate via APIs</li>
+					<li>Using <q>API First</q> as a way to build everything as digital building blocks</li>
+				</ol>
+			</slide>
+		</part>
+		<part id="exercise-business-model">
+			<title>Exercise #2: API Value Matters</title>
+			<slide id="business-model">
+				<title>What's Your Business?</title>
+				<ul>
+					<li>Take a business function that's covered by the strategy</li>
+					<li>Come up with a digital partner/customer engagement model</li>
+					<li>Sketch the plan/challenges for creating an API</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="strategy-business-conclusions">
+			<title>Conclusions</title>
+<!--
+			<slide id="strategy-business-summary">
+				<title>Summary</title>
+			</slide>
+-->
+			<slide id="strategy-business-thanks">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/apicon-berlin-2024/"><code>dret.net/lectures/apicon-berlin-2024/</code></a></li>
+				</ul>
+				<p>
+					<img src="qr-code-berlin-2024.png" href="http://dret.net/lectures/apicon-berlin-2024/" style=" width : 20% ; margin : 4% 4% 0% 4% ; "/>
+				</p>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="design" include="mamund-design.xml"/>
+	<presentation id="marketing" include="mamund-marketing.xml"/>
+	<presentation id="governance-platform">
+		<title>Governance and Platform</title>
+		<author>Erik Wilde</author>
+		<affiliation><a href="https://www.innoq.com/">INNOQ</a></affiliation>
+		<date short="2024-04-26">April 26, 2024</date>
+		<copyright>2024 Erik Wilde</copyright>
+		<part id="portals">
+			<title>Portal Management</title>
+			<part id="portal-audience">
+				<title>Portal Audience</title>
+				<slide id="inside-out">
+					<title>Inside-Out: External API Consumers</title>
+					<ul>
+						<li>The origin of the term <q>API</q> as we use it today</li>
+						<li>Partners: Driving your business by scaling partnerships (think <link href="five-billion-dollar">eBay</link>)</li>
+						<li>Customers: Driving your business by digitizing customer interactions</li>
+						<li>Portals are outward-facing and should be business-case centered</li>
+					</ul>
+				</slide>
+				<slide id="inside-in">
+					<title>Inside-In: Internal API Platform</title>
+					<ul>
+						<li>Driven by the need to decrease coupling</li>
+						<li>Driven by the need to increase flow</li>
+						<li>Part of many stories around digital transformation  (think <link href="bezos-mandate">Amazon</link>)</li>
+					</ul>
+				</slide>
+				<slide id="outside-in">
+					<title>Outside-In: Digital Supply Chain Management</title>
+					<ul>
+						<li>Currently not the focus of most portal products and strategies</li>
+						<li>Probably a growing area of concern with increasing dependencies and complexity</li>
+						<li>Should become part of the general <link href="platform-engineering"/> approach</li>
+					</ul>
+				</slide>
+			</part>
+			<part id="great-unbundling">
+				<title>The Great Unbundling</title>
+				<slide id="api-all-the-things">
+					<title>API all the Things!</title>
+					<ul>
+						<li>Increasing number of API-enabled capabilities</li>
+						<li>Increasing consumption of API-enabled capabilities</li>
+						<li>Increasing complexity of API footprint and requirements</li>
+						<li><q>One-size-fits-all</q> API management is on its way out</li>
+					</ul>
+				</slide>
+				<slide id="api-management-technical">
+					<title>Securing APIs</title>
+					<img src="API-management-technical.png" class="fullsize-shadow"/>
+				</slide>
+				<slide id="api-management-lifecycle">
+					<title>Supporting the Full API Lifecycle</title>
+					<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
+				</slide>
+				<slide id="api-management-product">
+					<title>APIs as Business Building Blocks</title>
+					<img src="API-management-product.png" class="fullsize-shadow"/>
+				</slide>
+				<slide id="api-management-marketing">
+					<title>API Consumption Matters</title>
+					<img src="API-management-marketing.png" class="fullsize-shadow"/>
+				</slide>
+			</part>
+		</part>
+		<part id="platform-engineering">
+			<title>Platform Engineering</title>
+			<part id="three-platform-types">
+				<title>Three Platform Types</title>
+				<slide id="platform-business">
+					<title>Platform Business</title>
+					<img src="airbnb-logo.webp" style="float: right ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
+					<img src="uber-logo.png" style="float: right ; clear : both ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
+					<img src="ebay-logo.png" style="float: right ; clear : both ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
+					<ul>
+						<li>Connecting producers and consumers</li>
+						<li>Focusing on core interactions between producers and consumers</li>
+						<li>Potential for rapid growth</li>
+						<li>Many of the world's largest organizations</li>
+					</ul>
+				</slide>
+				<slide id="linear-business-model">
+					<title>Linear Business Model</title>
+					<img src="business-model-linear.png" class="fullsize"/>
+				</slide>
+				<slide id="platform-business-model">
+					<title>Platform Business Model</title>
+					<img src="business-model-platform.png" class="fullsize"/>
+				</slide>
+				<slide id="hybrid-business-model">
+					<title>Hybrid Business Model</title>
+					<img src="business-model-hybrid.png" class="fullsize"/>
+				</slide>
+				<slide id="api-platform">
+					<title>API Platform</title>
+					<ul>
+						<li><q>Invented</q> 2000 based on SOAP/XML/HTTP (Salesforce, eBay, Amazon)</li>
+						<li>APIs as a way to digitally connect with partners</li>
+						<li>Extended to the idea of platforms as team interfaces (<link href="bezos-mandate"/>)</li>
+						<li>Some API platforms decide to supports SDKs for easier consumption</li>
+					</ul>
+				</slide>
+				<slide id="developer-platform">
+					<title>Developer Platform</title>
+					<ul>
+						<li><link href="api-platform"/> but probably a different set of APIs</li>
+						<li>Support for specific consumption (beyond generic SDKs)</li>
+						<li>Support for API production (think <link href="bezos-mandate">Bezos Mandate</link>)</li>
+						<li>Many organizations now have/create specific <q>platform teams</q></li>
+					</ul>
+				</slide>
+			</part>
+<!--
+			<part id="api-journey">
+				<title>Typical API Journey</title>
+				<slide id="journey">
+					<title>From Experimentation to Scaling</title>
+					<ol>
+						<li>Trying to increase speed by decreasing coupling: Initial APIs</li>
+						<li>Increasing number of APIs and increasing use of 3<sup>rd</sup> party APIs</li>
+						<li>Fear and loathing because optimizing decentralized landscapes works differently</li>
+						<li>Programs emerge that help teams and introduce governance structures</li>
+						<li>Strategies are defined that provide directions and set goals</li>
+					</ol>
+				</slide>
+				<slide id="journey-api-products">
+					<title>Getting Started with APIs</title>
+					<img src="api-products.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="journey-api-usage">
+					<title>Growing API Usage</title>
+					<img src="api-usage.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="journey-api-platform">
+					<title>Products Become Platforms</title>
+					<img src="api-platform.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="journey-api-program">
+					<title>Programs Steer Platforms</title>
+					<img src="api-program.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="journey-api-strategy">
+					<title>Strategies Guide Programs</title>
+					<img src="api-strategy.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+				<slide id="stalling">
+					<title>Getting started is hard, scaling up is even harder</title>
+					<img src="stalled-digital-transformation.png" href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+				</slide>
+			</part>
+-->
+		<part id="platform-maturity">
+				<title>Platform Engineering Maturity</title>
+				<slide id="cncf-maturity-model">
+					<title>CNCF Platform Engineering Maturity Model</title>
+					<img source="CNCF Platform Engineering Maturity Model" src="platform-engineering-maturity-model-cncf.png" href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/" class="fullsize-shadow"/>
+				</slide>
+			</part>
+		</part>
+		<part id="exercise-platform-strategy">
+			<title>Exercise #3: Platform Strategy</title>
+			<slide id="platform-evolution">
+				<title>Growing Your Platform</title>
+				<ul>
+					<li>Teams are spending too much time reinventing the wheel</li>
+					<li>Teams spend too much time repeating tasks (same team or across teams)</li>
+					<li>Decentralization is creating issues that need addressing</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="guidelines">
+			<title>Guidelines</title>
+			<slide id="why-guidelines">
+				<title>API Guidelines as Shared Practices</title>
+				<ul>
+					<li>More API teams mean more ways to solve the same problem</li>
+					<ul>
+						<li>Solving <q>API problems</q> is not what teams should focus on</li>
+						<li>Solving <q>API problems</q> in a consistent way helps the API landscape</li>
+					</ul>
+					<li>Communications across teams is a challenge</li>
+					<ul>
+						<li>Complement channels with documentation of practices</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="anatomy">
+				<title>The Anatomy of a Good Guideline</title>
+				<ul>
+					<li><em>Why</em> does the guideline exist?</li>
+					<ul>
+						<li>Rationale for creating the guideline</li>
+					</ul>
+					<li><em>What</em> can be done to address the described issue</li>
+					<ul>
+						<li>At least one <em>good solution</em> for addressing the issue</li>
+					</ul>
+					<li><em>How</em> to implement the solution</li>
+					<ul>
+						<li>At least one way to use the solution in practice</li>
+					</ul>
+					<li><em>Testing</em> that the guideline has been followed</li>
+					<ul>
+						<li>Some tests can be automated but many will be by declaration or review</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="example">
+				<title>API Guideline Example</title>
+				<img href="https://github.com/dret/OReilly2020NYdemo/tree/master/guidelines/why/change-management-policy" title="Change Management Policy Guideline" src="change-management-guideline.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="good-practice">
+				<title>Good is better than Best</title>
+				<ul>
+					<li>Solutions (<q>What</q>) are addressing design challenges</li>
+					<ul>
+						<li>Have a model for accepting new solutions</li>
+					</ul>
+					<li>Practices (<q>How</q>) are implementing a solution</li>
+					<ul>
+						<li>Have a model for accepting new practices</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="management">
+				<title>Good Guideline Management</title>
+				<ul>
+					<li>Guidelines should be managed in a participatory way</li>
+					<ul>
+						<li>Guidelines are for capturing and sharing experiences across API teams</li>
+						<li>Everybody can comment or contribute to the guidelines</li>
+						<li>Over time it may make sense to develop a more formal approval process</li>
+						<li>There may be editors but their role is to improve guideline quality</li>
+					</ul>
+					<li>Tooling should reflect the nature as a <q>living document</q></li>
+					<ul>
+						<li>One-way tooling is a bad choice</li>
+						<li>Collaborative tooling is a good choice</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="in-the-wild">
+				<title>API Guidelines in the Wild</title>
+				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
+			</slide>
+			<slide id="getting-started">
+				<title>Getting Started</title>
+				<ul>
+					<li>Start capturing feedback from API teams</li>
+					<ul>
+						<li>Challenges along the way</li>
+						<li>Solutions they have found or implemented</li>
+						<li>Quantifying the time they spend with cross-cutting vs. domain tasks</li>
+					</ul>
+					<li>Start editing and providing guidance that API teams can find and use</li>
+					<ul>
+						<li>Tooling can be as simple as markdown and shared repositories</li>
+					</ul>
+					<li>Treat your <em>API Guidelines as a product</em></li>
+					<ul>
+						<li>There are well-defined user stories as well as goals and non-goals</li>
+						<li>There is clear ownership of the product (which is different from the content)</li>
+					</ul>
+					<li>Good guidelines result in better APIs and faster API teams</li>
+				</ul>
+			</slide>
+		</part>
+<!--
+		<part id="exercise-guidelines">
+			<title>Exercise #4: Guidance Matters</title>
+			<slide id="guideline-evolution">
+				<title>Grow/Tweak/Shrink Your Guidelines</title>
+			</slide>
+		</part>
+-->
+		<part id="governance-platform-conclusions">
+			<title>Conclusions</title>
+<!--
+			<slide id="governance-platform-summary">
+				<title>Summary</title>
+			</slide>
+-->
+			<slide id="governance-platform-thanks">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/apicon-berlin-2024/"><code>dret.net/lectures/apicon-berlin-2024/</code></a></li>
+				</ul>
+				<p>
+					<img src="qr-code-berlin-2024.png" href="http://dret.net/lectures/apicon-berlin-2024/" style=" width : 20% ; margin : 4% 4% 0% 4% ; "/>
+				</p>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
