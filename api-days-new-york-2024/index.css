@@ -8,20 +8,20 @@ body { color : #000000 ;
 
 .footnote { font-style : oblique ; }
 
-a { color : #194051 ;
+a { color : #4F5A36 ;
 	text-decoration : none ;
 	border-bottom : 1px dotted ;
   }
 
-a:hover { background-color : #194051 ;
+a:hover { background-color : #4F5A36 ;
 	color : #F8F8FA ;
 }
 
 .header a { color : #FFFFFF ; }
 
-.header {  background-color : #194051 ;
+.header {  background-color : #4F5A36 ;
     color : #F8F8FA ;
-    border-bottom :  5px #F1A170 solid ;
+    border-bottom :  5px #78A350 solid ;
     padding : 1.5em ;
     margin : 0 ;
     text-align : center ;
