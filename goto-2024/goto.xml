@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
 <?hotspot layout-path="hotspot/hotspot/layout" ?>
 <?hotspot kilauea-path="hotspot/kilauea" ?>
-<?hotspot layout="oai-track" ?>
+<?hotspot layout="innoq" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 	<script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
 	<configuration>
@@ -25,7 +25,7 @@
 		</div>
 	</license>
 	<title><a href="https://gotoams.nl/">GOTO Amsterdam</a> <a href="https://gotoams.nl/2024">2024</a></title>
-	<author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
+	<author>Erik Wilde, INNOQ</author>
 	<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
 	<date short="2024-06-12">June 12, 2024</date>
 	<copyright>2024 Erik Wilde</copyright>
