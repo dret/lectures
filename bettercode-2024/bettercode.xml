@@ -87,23 +87,6 @@
 					<li>API platforms are supporting API producers</li>
 				</ul>
 			</slide>
-			<slide id="effective-teams">
-				<title>What is an Effective Team?</title>
-				<ul>
-					<li>A team spending <em>less time with generic API-related tasks</em></li>
-					<ul>
-						<li>Figuring out the general guardrails for API design</li>
-						<li>Designing, implementing, exposing, securing, and monitoring APIs</li>
-						<li>Deploying APIs and making them discoverable for consumers</li>
-					</ul>
-					<li>A team spending <em>more time addressing domain issues</em></li>
-					<ul>
-						<li>Engaging with consumers and designing a good API</li>
-						<li>Making sure that consumer feedback is collected and used</li>
-						<li>Contributing to the shared API practices of the organization</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="guidelines">
 				<title>API Guidelines</title>
 				<ul>
@@ -152,6 +135,24 @@
 			<slide id="web-concepts-http-status-code-429-json">
 				<title>Machine Readable Status Codes</title>
 				<img src="web-concepts-http-status-code-429-json.png" href="https://webconcepts.info/concepts/http-status-code.json" title="Web Concepts: HTTP Status Code 429 in JSON" class="fullsize"/>
+			</slide>
+			<slide id="http-status-codes-1xx">
+				<title>1xx: Informational</title>
+			</slide>
+			<slide id="http-status-codes-2xx">
+				<title>2xx: Successful</title>
+			</slide>
+			<slide id="http-status-codes-3xx">
+				<title>3xx: Redirection</title>
+			</slide>
+			<slide id="http-status-codes-4xx">
+				<title>4xx: Client Error</title>
+			</slide>
+			<slide id="http-status-codes-5xx">
+				<title>5xx: Server Error</title>
+			</slide>
+			<slide id="application-semantics">
+				<title>Status Codes are about Applications</title>
 			</slide>
 		</part>
 		<part id="problem-details">
