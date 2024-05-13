@@ -235,11 +235,11 @@
 		<part id="conclusions-error-messages">
 			<title>Conclusions</title>
 			<slide id="shift-down">
-				<title>Shift left? Shift down!</title>
+				<title>Proper Use. Guiding People. Extending When Necessary.</title>
 				<ul>
-					<li>Product people: Raise an issue when inventing patterns</li>
-					<li>Platform people: Identify the <q>biggest bang for the reuse buck</q></li>
-					<li>Tooling people: Bake open and extensible patterns into tools</li>
+					<li>Use HTTP status codes to report <em>service status</em></li>
+					<li>Create guidelines so that your APIs behave coherently</li>
+					<li>Extend HTTP with problem reports for more detailed responses</li>
 				</ul>
 			</slide>
 			<slide id="thanks">
