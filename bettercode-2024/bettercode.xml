@@ -141,6 +141,10 @@
 		</part>
 		<part id="http-status-codes">
 			<title>HTTP Status Codes</title>
+			<slide id="http-status-code-registry">
+				<title>IANA HTTP Status Code Registry</title>
+				<img src="iana-http-status-code-registry.png" href="https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml" class="fullsize"/>
+			</slide>
 		</part>
 		<part id="problem-details">
 			<title>HTTP Problem Details</title>
