@@ -104,14 +104,6 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide id="zalando">
-				<title>API Guideline in the Wild</title>
-				<img href="https://opensource.zalando.com/restful-api-guidelines/#http-status-codes-and-errors" title="Zalando RESTful API and Event Guidelines" src="zalando-guideline-http-problem.png" class="fullsize"/>
-			</slide>
-			<slide id="in-the-wild">
-				<title>API Guidelines in the Wild</title>
-				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" class="fullsize"/>
-			</slide>
 			<slide id="governance">
 				<title>API Governance</title>
 				<ul>
@@ -120,6 +112,14 @@
 					<li>Making it hard to do things wrong</li>
 					<li>Using tools, processes, and platforms to <q>engineer the engineers</q></li>
 				</ul>
+			</slide>
+			<slide id="zalando">
+				<title>API Guideline in the Wild</title>
+				<img href="https://opensource.zalando.com/restful-api-guidelines/#http-status-codes-and-errors" title="Zalando RESTful API and Event Guidelines" src="zalando-guideline-http-problem.png" class="fullsize"/>
+			</slide>
+			<slide id="in-the-wild">
+				<title>API Guidelines in the Wild</title>
+				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" class="fullsize"/>
 			</slide>
 		</part>
 		<part id="http-status-codes">
