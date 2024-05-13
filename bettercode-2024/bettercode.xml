@@ -158,7 +158,17 @@
 			</slide>
 -->
 			<slide id="application-semantics">
-				<title>Status Codes are about Applications</title>
+				<title>Status Codes are about Application Semantics</title>
+				<ul>
+					<li>Pick the most appropriate status code</li>
+					<li>Clients <em>must</em> treat unknown status codes as generic <code>X00</code> responses</li>
+					<li><a href="https://spec.openapis.org/oas/latest.html#responses-object">OpenAPI's response object</a> supports listing response status codes</li>
+					<ul>
+						<li>Not all possible status codes have to be listed</li>
+						<li>There <em>should</em> be (at least) one successful status code</li>
+						<li>Known errors <em>should</em> should be listed in the response object</li>
+					</ul>
+				</ul>
 			</slide>
 		</part>
 		<part id="problem-details">
