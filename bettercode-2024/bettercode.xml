@@ -74,17 +74,17 @@
 				<title>API as Interfaces</title>
 				<ul>
 					<li>APIs are technical interfaces</li>
-					<li>APIs should use <em href="https://en.wikipedia.org/wiki/Information_hiding">information hiding</em></li>
-					<li>APIs are built on a foundation of <em>styles</em> and <em>technologies</em></li>
+					<li>Interfaces work best when certain aspects are consistently used across interfaces</li>
+					<li>HTTP is an application protocol establishing a <em>uniform interface</em></li>
 				</ul>
 			</slide>
 			<slide id="api-product">
 				<title>API as Products</title>
+				<img src="food-label.png" title="FDA Nutrition Facts Label" href="https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
-					<li>Good API design goes <em>outside-in</em> starting from consumer needs</li>
-					<li>Good products minimizing the cognitive load of consumers</li>
+					<li>Products should focus on user needs and consumability</li>
+					<li>APIs should go beyond the happy path and expose useful error messages</li>
 					<li>API designers should focus on business logic concerns</li>
-					<li>API platforms are supporting API producers</li>
 				</ul>
 			</slide>
 			<slide id="guidelines">
