@@ -102,8 +102,55 @@
 		<part id="platform-engineering">
 			<title>What is Platform Engineering?</title>
 		</part>
-		<part id="platform-journey">
-			<title>The Platform Journey</title>
+		<part id="platform-engineering-maturity">
+			<title>Platform Engineering Maturity</title>
+			<slide id="maturity-model-aspects">
+				<title>Platform Engineering Maturity: Aspects</title>
+				<img src="platform-engineering-maturity-model-cncf-aspects.png" source="CNCF Platform Engineering Maturity Model" href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/" class="fullsize-shadow"/>
+			</slide>
+			<slide id="maturity-model-platform">
+				<title>You can not not have a platform...</title>
+				<img src="platform-engineering-maturity-model-cncf-provisional.png" source="CNCF Platform Engineering Maturity Model" href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/" class="fullsize-shadow"/>
+			</slide>
+			<slide id="maturity-model-optimizing">
+				<title>Platform Engineering Perfection</title>
+				<img src="platform-engineering-maturity-model-cncf-optimizing.png" source="CNCF Platform Engineering Maturity Model" href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/" class="fullsize-shadow"/>
+			</slide>
+			<slide id="maturity-model-improvement">
+				<title>Improving Platform Engineering</title>
+				<img src="platform-engineering-maturity-model-cncf.png" source="CNCF Platform Engineering Maturity Model" href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/" class="fullsize-shadow"/>
+			</slide>
+			<slide id="maturity-model-usage">
+				<title>Maturity Model Usage</title>
+				<ul>
+					<li><em>End Users:</em> Structured view of practices and changing from reactive to strategic</li>
+					<li><em>Vendors:</em> Decide on product sweet spot and explaining to customers</li>
+					<li><em>Consultants:</em> Identify state and goal and areas of investment</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="building-api-platform">
+			<title>Building API Platforms</title>
+			<slide id="api-management-lifecycle">
+				<title>Creating Capabilities</title>
+				<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-management-product">
+				<title>Curating Capabilities</title>
+				<img src="API-management-product.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-management-marketing">
+				<title>Publishing Capabilities</title>
+				<img src="API-management-marketing.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-platform-specifics">
+				<title>API Platform Specifics</title>
+				<ul>
+					<li>Targeting specific consumer group(s)</li>
+					<li>Not making any assumptions about consumption mechanics</li>
+					<li>APIs aligned with business capabilities and partner models</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Start Platforming!</title>
