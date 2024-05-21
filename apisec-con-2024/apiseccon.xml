@@ -65,19 +65,48 @@
 				</div>
 			</slide>
 		</part>
-		<part id="platforms">
-			<title>You can not not build a Platform</title>
+		<part id="platform-principle">
+			<title>The Platform Principle</title>
+			<slide id="you-can-not-not-build-a-platform">
+				<title>You can not not build a Platform</title>
+				<img src="platform-building.webp" class="fullsize" />
+			</slide>
 			<slide id="starting">
-				<title>Getting Started with API Platforms</title>
+				<title>Getting Started with APIs</title>
+				<ul>
+					<li>Initial pockets of experimentation with APIs</li>
+					<li>Risk is small-ish because the surface is relatively small</li>
+					<li>High degree of freedom because there is no established platform</li>
+					<li>Different teams will come up with different solutions for the same problem</li>
+				</ul>
+			</slide>
+			<slide id="momentum">
+				<title>APIs are gaining Momentum</title>
+				<ul>
+					<li>Internal and external factors help with the adoption of APIs</li>
+					<li>Risk becomes higher because the surface is growing rapidly</li>
+					<li>Practices and patterns emerge by teams sharing information and tooling</li>
+					<li>Governance becomes an issue to manage and support growth</li>
+				</ul>
 			</slide>
 			<slide id="scaling">
-				<title>Scaling API Platforms</title>
+				<title>Scaling API Landscapes</title>
+				<ul>
+					<li>APIs are recognized as being strategic for both internal and external reasons</li>
+					<li>Risk management needs to be adapted to the strategic importance</li>
+					<li>More API development means increasing economies of scale</li>
+					<li>Scaling the API practice leads to some form of platform engineering</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="platform-engineering">
 			<title>What is Platform Engineering?</title>
 		</part>
+		<part id="platform-journey">
+			<title>The Platform Journey</title>
+		</part>
 		<part id="conclusions">
+			<title>Start Platforming!</title>
 			<slide id="thanks">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
