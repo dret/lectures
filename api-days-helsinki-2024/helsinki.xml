@@ -78,6 +78,7 @@
 						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/1CwUlDPqz2c" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 					</div>
 				</div>
+			</slide>
 		</part>
 		<part id="platform-types">
 			<title>Platform Types</title>
@@ -332,8 +333,12 @@
 				</div>
 			</div>
 		</slide>
-		<part id="wiifm">
-			<title>WIIFM: What's in it for me?</title>
+		<part id="openapi-user-stories">
+			<title>OpenAPI User Stories</title>
+			<slide id="wiifm">
+				<title><span title="What's in it for me?">WIIFM</span>: Everybody's Favorite Station</title>
+				<img src="wiifm.webp" title="WIIFM: What's in it for me?" class="fullsize"/>
+			</slide>
 			<slide id="wiifm-org-biz">
 				<title>WIIFM: Business and Organization Value</title>
 				<img src="openapi-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
