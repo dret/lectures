@@ -157,6 +157,7 @@
 						<li><em>OpenAPI 2.0</em> was the name after the rename (it's the same as <em>Swagger 2.0</em>)</li>
 						<li><em>OpenAPI 3.0</em> was released in July 2017</li>
 						<li><em>OpenAPI 3.1</em> was released in February 2021</li>
+						<li><em href="https://github.com/OAI/moonwalk">OpenAPI 4.0 (Moonwalk)</em> is under discussion</li>
 					</ul>
 				</ul>
 			</slide>
@@ -219,10 +220,6 @@
 			<slide id="api-technologies">
 				<title>API Technologies</title>
 				<img source='Postman 2023 State of the API Report' src="api-technologies.png" href="https://www.postman.com/state-of-api/api-technologies/#api-technologies" class="fullsize" />
-			</slide>
-			<slide id="moonwalk">
-				<title>OpenAPI 4.0: Moonwalk</title>
-				<img source='Moonwalk repo: https://github.com/OAI/moonwalk' src="moonwalk-structure.png" href="https://github.com/OAI/moonwalk" class="fullsize-shadow" />
 			</slide>
 		</part>
 		<part id="conclusions-oai-track">
