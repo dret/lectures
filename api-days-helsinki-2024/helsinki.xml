@@ -136,6 +136,14 @@
 					</tr>
 				</table>
 			</slide>
+			<slide id="lifecycle">
+				<title>The (Open)API Lifecycle</title>
+				<img source="WSO2: What is Full Lifecycle API Management?" src="api-lifecycle.png" href="https://wso2.com/api-management/what-is-full-lifecycle-api-management/" class="fullsize-shadow" />
+			</slide>
+			<slide id="api-technologies">
+				<title>API Technologies</title>
+				<img source='Postman 2023 State of the API Report' src="api-technologies.png" href="https://www.postman.com/state-of-api/api-technologies/#api-technologies" class="fullsize" />
+			</slide>
 		</part>
 		<part id="oai">
 			<title>The OpenAPI Initiative</title>
@@ -164,10 +172,6 @@
 			<slide id="membership">
 				<title>OAI Membership</title>
 				<img src="oai-members.png" href="https://www.openapis.org/membership/members" class="fullsize-shadow" />
-			</slide>
-			<slide id="lifecycle">
-				<title>The (Open)API Lifecycle</title>
-				<img source="WSO2: What is Full Lifecycle API Management?" src="api-lifecycle.png" href="https://wso2.com/api-management/what-is-full-lifecycle-api-management/" class="fullsize-shadow" />
 			</slide>
 			<slide id="flapim-end">
 				<title>The End of Full Lifecycle API Management</title>
@@ -213,13 +217,6 @@
 					<li>OASComply define an abstract model of OpenAPI and constraints for this model</li>
 					<li>It will be easier for vendors and customers to verify specification compliance</li>
 				</ul>
-			</slide>
-		</part>
-		<part id="openapi">
-			<title>The State of OpenAPI</title>
-			<slide id="api-technologies">
-				<title>API Technologies</title>
-				<img source='Postman 2023 State of the API Report' src="api-technologies.png" href="https://www.postman.com/state-of-api/api-technologies/#api-technologies" class="fullsize" />
 			</slide>
 		</part>
 		<part id="conclusions-oai-track">
