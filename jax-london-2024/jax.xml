@@ -25,13 +25,13 @@
 		</div>
 	</license>
 	<title><a href="https://jaxlondon.com/">JAX London</a> 2024</title>
-	<author>Erik Wilde</author>
-	<affiliation>INNOQ</affiliation>
-	<copyright>2024 Erik Wilde</copyright>
 	<presentation id="index">
-		<title short="Everything is not OK">Everything is not OK: Handling Errors in APIs</title>
+		<title short="Everything is not OK">Everything is not OK: Representing Errors in API Designs</title>
+		<author>Erik Wilde</author>
+		<affiliation>INNOQ</affiliation>
+		<copyright>2024 Erik Wilde</copyright>
 		<date short="2024-10-01">October 1, 2024</date>
-		<toc class="abstract">...</toc>
+		<toc class="abstract">One of the important aspects of platforms and platform engineering is to provide solutions for problems that occur in many APIs of a platform. This way API designers don't have to spend effort on solving the same problem over and over again, and API consumers can benefit from a more coherent design across the APIs of a platform. How to deal with problems that can occur is one of those questions that every API design needs to address. In this presentation we look at the typical issues, some patterns and anti-patterns how to address them, and we also look at some standardized building blocks for representing those patterns. This allows designers and developers to spend less time figuring out what to do when everything is not OK.</toc>
 		<slide id="summary-error-messages">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
