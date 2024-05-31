@@ -28,4 +28,211 @@
 	<author>Erik Wilde</author>
 	<affiliation>INNOQ</affiliation>
 	<copyright>2024 Erik Wilde</copyright>
+	<presentation id="index">
+		<title short="Everything is not OK">Everything is not OK: Handling Errors in APIs</title>
+		<date short="2024-10-01">October 1, 2024</date>
+		<toc class="abstract">...</toc>
+		<slide id="summary-error-messages">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
+		<part id="intro-error-messages">
+			<title>Introduction</title>
+			<slide id="dret-error-messages">
+				<title>Erik Wilde</title>
+				<img src="INNOQ-logo.png" title="INNOQ" href="https://www.innoq.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+				<img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>CA API Academy 2016-2019</li>
+					<li>Axway Catalyst 2019-2023</li>
+					<li>Principal Consultant at <a href="https://www.innoq.com/">INNOQ</a></li>
+					<li>OAI Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative</a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+				</ul>
+			</slide>
+			<slide id="getting-apis-to-work-error-messages">
+				<title>Getting APIs to Work</title>
+				<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
+					<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/1CwUlDPqz2c" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+				<div style=" float : right ; width : 44% ; margin : 0% 4% 0% 2% ; ">
+					<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/qYl21EWNL44" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+		</part>
+		<part id="context">
+			<title>APIs, Guidelines, and Governance</title>
+			<slide id="api">
+				<title>API as Interfaces</title>
+				<ul>
+					<li>APIs are technical interfaces</li>
+					<li>APIs should use <em href="https://en.wikipedia.org/wiki/Information_hiding">information hiding</em></li>
+					<li>APIs are built on a foundation of <em>styles</em> and <em>technologies</em></li>
+				</ul>
+			</slide>
+			<slide id="api-product">
+				<title>API as Products</title>
+				<ul>
+					<li>Good API design goes <em>outside-in</em> starting from consumer needs</li>
+					<li>Good products minimizing the cognitive load of consumers</li>
+					<li>API designers should focus on business logic concerns</li>
+					<li>API platforms are supporting API producers</li>
+				</ul>
+			</slide>
+			<slide id="effective-teams">
+				<title>What is an Effective Team?</title>
+				<ul>
+					<li>A team spending <em>less time with generic API-related tasks</em></li>
+					<ul>
+						<li>Figuring out the general guardrails for API design</li>
+						<li>Designing, implementing, exposing, securing, and monitoring APIs</li>
+						<li>Deploying APIs and making them discoverable for consumers</li>
+					</ul>
+					<li>A team spending <em>more time addressing domain issues</em></li>
+					<ul>
+						<li>Engaging with consumers and designing a good API</li>
+						<li>Making sure that consumer feedback is collected and used</li>
+						<li>Contributing to the shared API practices of the organization</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="guidelines">
+				<title>API Guidelines</title>
+				<ul>
+					<li>More API teams mean more ways to solve the same problem</li>
+					<ul>
+						<li>Solving <q>API problems</q> is not what teams should focus on</li>
+						<li>Solving <q>API problems</q> in a consistent way helps the API landscape</li>
+					</ul>
+					<li>Anatomy of a Good Guideline</li>
+					<ul>
+						<li><em>Why</em> does the guideline exist?</li>
+						<li><em>What</em> can be done to address the described issue</li>
+						<li><em>How</em> to implement the solution</li>
+						<li><em>Testing</em> that the guideline has been followed</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="zalando">
+				<title>API Guideline in the Wild</title>
+				<img href="https://opensource.zalando.com/restful-api-guidelines/#http-status-codes-and-errors" title="Zalando RESTful API and Event Guidelines" src="zalando-guideline-http-problem.png" class="fullsize"/>
+			</slide>
+			<slide id="in-the-wild">
+				<title>API Guidelines in the Wild</title>
+				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" class="fullsize"/>
+			</slide>
+			<slide id="governance">
+				<title>API Governance</title>
+				<ul>
+					<li>Balancing coherence and autonomy in large organizations</li>
+					<li>Making it easy to do the right thing</li>
+					<li>Making it hard to do things wrong</li>
+					<li>Using tools, processes, and platforms to <q>engineer the engineers</q></li>
+				</ul>
+			</slide>
+		</part>
+		<part id="problem-details">
+			<title>HTTP Problem Details</title>
+			<slide id="http-problem">
+				<title>HTTP Problem Details</title>
+				<ul>
+					<li><a href="http://webconcepts.info/concepts/http-status-code/">HTTP status codes</a> are useful but minimalistic</li>
+					<ul>
+						<li>Their well-defined semantics allow intermediaries to act on them</li>
+						<li>Servers may want to convey additional information with them</li>
+					</ul>
+					<li>APIs may include <em>problem details</em> as part of their representation designs</li>
+					<ul>
+						<li>Using a standard reduces the design work on the server side</li>
+						<li>Using a standard allows developers to more easily understand the design</li>
+						<li>Using a standard allows problem details analysis across APIs</li>
+					</ul>
+					<li>RFC <a title='Mark Nottingham and Erik Wilde, "Problem Details for HTTP APIs", Internet RFC 7807, March 2016' href="https://www.rfc-editor.org/rfc/rfc9457.html">7807</a>/<a title='Mark Nottingham, Erik Wilde, and Sanjay Dalal, "Problem Details for HTTP APIs", Internet RFC 9457, July 2023' href="https://www.rfc-editor.org/rfc/rfc9457.html">9457</a> defines a JSON-centric model for problem details</li>
+					<ul>
+						<li><code>application/problem+json</code> is a JSON-based representation of the problem detail model</li>
+						<li><code>application/problem+xml</code> is an XML-based representation of the problem detail model</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="http-problem-json">
+				<title>HTTP Problem Details: JSON</title>
+				<listing href="https://tools.ietf.org/html/rfc9457#section-3" src="http-problem-details.json"/>
+			</slide>
+			<slide id="http-problem-xml">
+				<title>HTTP Problem Details: XML</title>
+				<listing href="https://tools.ietf.org/html/rfc9457#appendix-B" src="http-problem-details.xml"/>
+			</slide>
+			<slide id="error-tmi">
+				<title><span title="Too Much Information">TMI</span> Error</title>
+				<ul>
+					<li>Avoid any implementation information</li>
+					<li>This is about helping clients</li>
+					<li>This is not about providing debugging information</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="rfc7807-rfc9457">
+			<title>RFC 9457: The New RFC 7807</title>
+			<slide id="rfc7807">
+				<title><a href="https://www.rfc-editor.org/rfc/rfc7807.html">RFC 7807</a> (March 2016)</title>
+				<img href="https://datatracker.ietf.org/doc/rfc7807/" title="IETF Datatracker: RFC 7807" src="datatracker-rfc-7807.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="rfc9457">
+				<title><a href="https://www.rfc-editor.org/rfc/rfc9457.html">RFC 9457</a> (July 2023)</title>
+				<img href="https://datatracker.ietf.org/doc/rfc9457/" title="IETF Datatracker: RFC 9457" src="datatracker-rfc-9457.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="differences">
+				<title>Differences between RFC 7807 and RFC 9457</title>
+				<ul>
+					<li>There are no breaking changes</li>
+					<li>Three issues seen from usage in the wild</li>
+					<ul>
+						<li>Registry of common problem type URIs (<a href="https://www.rfc-editor.org/rfc/rfc9457.html#registry">Section 4.2</a>)</li>
+						<li>Clarification of how to treat multiple problems (<a href="https://www.rfc-editor.org/rfc/rfc9457.html#problem-json">Section 3</a>)</li>
+						<li>Guidance for using type URIs that cannot be dereferenced (<a href="https://www.rfc-editor.org/rfc/rfc9457.html#type">Section 3.1.1</a>)</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="problem-types">
+			<title>Managing Problem Types</title>
+			<slide id="smartbear-registry">
+				<title>SmartBear Problem Details Registry</title>
+				<img src="smartbear-problem-details-registry.png" href="https://problems-registry.smartbear.com/" class="fullsize"/>
+			</slide>
+			<slide id="smartbear-repository">
+				<title>SmartBear Problem Details Repository</title>
+				<img src="smartbear-problem-details-repository.png" href="https://github.com/SmartBear-DevRel/problems-registry" class="fullsize"/>
+			</slide>
+			<slide id="iana-registry">
+				<title>IANA Problem Types Registry</title>
+				<img src="iana-problem-types-registry.png" href="https://www.iana.org/assignments/http-problem-types/http-problem-types.xhtml" class="fullsize"/>
+			</slide>
+		</part>
+		<part id="conclusions-error-messages">
+			<title>Conclusions</title>
+			<slide id="shift-down">
+				<title>Shift left? Shift down!</title>
+				<ul>
+					<li>Product people: Raise an issue when inventing patterns</li>
+					<li>Platform people: Identify the <q>biggest bang for the reuse buck</q></li>
+					<li>Tooling people: Bake open and extensible patterns into tools</li>
+				</ul>
+			</slide>
+			<slide id="thanks-error-messages">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/jax-2024/"><code>dret.net/lectures/jax-2024/</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>
