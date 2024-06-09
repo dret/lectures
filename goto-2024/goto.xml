@@ -63,6 +63,31 @@
 				</div>
 			</slide>
 		</part>
+		<part id="api-descriptions">
+			<title>API Descriptions and OpenAPI</title>
+			<slide id="history">
+				<title>A Brief History of OpenAPI &amp; OAI</title>
+				<img src="openapi-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Started out in 2011 and was called <em href="https://en.wikipedia.org/wiki/Swagger_(software)">Swagger</em> for quite a while</li>
+					<ul>
+						<li>Competing approaches like <em href="https://en.wikipedia.org/wiki/RAML_(software)" title="RESTful API Modeling Language">RAML</em> and <em href="https://github.com/apiaryio/api-blueprint">API Blueprint</em> exist</li>
+					</ul>
+					<li><em>Swagger</em> was renamed to <em>OpenAPI</em> at the beginning of 2016</li>
+					<ul>
+						<li>Donated to the <em href="https://www.openapis.org/">OpenAPI Initiative (OAI)</em> (part of the <em href="https://www.linuxfoundation.org/">Linux Foundation</em>)</li>
+						<li><em href="https://swagger.io/tools/open-source/">Swagger</em> now refers to a specific tool offered by <em href="https://smartbear.com/">SmartBear</em></li>
+					</ul>
+					<li><em>OpenAPI</em> has been the official name since 2016</li>
+					<ul>
+						<li><em>OpenAPI 2.0</em> was the name after the rename (it's the same as <em>Swagger 2.0</em>)</li>
+						<li><em>OpenAPI 3.0</em> was released in July 2017</li>
+						<li><em>OpenAPI 3.1</em> was released in February 2021</li>
+						<li><em href="https://github.com/OAI/moonwalk">OpenAPI 4.0 (Moonwalk)</em> is under discussion</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
 		<part id="api-products">
 			<title>APIs and API Products</title>
 		</part>
