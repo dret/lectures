@@ -74,6 +74,16 @@
 					<li><a href="https://www.youtube.com/watch?v=hIP7mHRog4o">Jeff Bezos' API Mandate</a> is picking up steam after 20 years</li>
 				</ul>
 			</slide>
+			<slide id="scaling">
+				<title>Scaling the API Practice</title>
+				<ul>
+					<li>With great growth come great economies of scale</li>
+					<li>Designing more APIs → A slightly coherent <q>look&amp;feel</q> makes sense</li>
+					<li>Developing more APIs → Removing <q>busy work</q> pays off</li>
+					<li>Deploying more APIs → Automation helps with <q>time to production</q></li>
+					<li>Consuming more APIs → Keeping track of the landscapes gets trickier</li>
+				</ul>
+			</slide>
 			<slide id="api-first">
 				<title>API First</title>
 				<img src="api-descriptions.png" title="API First with API Descriptions" class="fullsize"/>
