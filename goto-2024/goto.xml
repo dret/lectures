@@ -125,9 +125,26 @@
 				<title>OpenAPI in 60 Seconds</title>
 				<ul>
 					<li>Interactions</li>
+					<ul>
+						<li>Web: Pages that you need to get your job done</li>
+						<li>API: URIs that you can access by sending HTTP requests</li>
+					</ul>
 					<li>Parameters</li>
+					<ul>
+						<li>Web: Forms you fill out when a step needs additional input</li>
+						<li>API: Some interactions require additional information (<code>POST</code>/<code>PUT</code>)</li>
+					</ul>
 					<li>Representations</li>
+					<ul>
+						<li>Web: Your browsers renders (most) responses that it gets</li>
+						<li>API: Responses can be described by media types or schemas</li>
+					</ul>
 				</ul>
+			</slide>
+			<slide id="openapi-example">
+				<title>Discovery and Getting Started</title>
+				<listing src="petstore-openapi.yaml" line="37-50"/>
+				<listing src="petstore-openapi.yaml" line="58-64"/>
 			</slide>
 			<slide id="wiifm">
 				<title><span title="What's in it for me?">WIIFM</span>: Everybody's Favorite Station</title>
