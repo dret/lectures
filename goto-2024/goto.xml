@@ -233,6 +233,51 @@
 		</part>
 		<part id="strategy-business">
 			<title>Strategy and Business Alignment</title>
+			<slide id="five-billion-dollar">
+				<title>The Five Billion Dollar API</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/BCPD5NwQ7_M" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+			<slide id="monetization-myth">
+				<title>The API Monetization Myth</title>
+				<img src="money-press.gif" title="The API Money Press" style="float: right ; width : 35% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Don't think about a business model for your API</li>
+					<li>Do think about new opportunities for your business</li>
+					<li>Do think about an API for your business model</li>
+				</ul>
+			</slide>
+			<slide id="business-model-overview">
+				<title>API Business Model Overview</title>
+				<img href="https://www.mulesoft.com/api-university/programmablewebs-guide-to-modern-api-business-models" src="api-business-models.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-partner">
+				<title>Partner Business Models</title>
+				<img href="https://www.mulesoft.com/api-university/programmablewebs-guide-to-modern-api-business-models" src="api-business-models-partner.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-partner-affiliate">
+				<title>Partner Business Model: Affiliate</title>
+				<img href="https://developer.walgreens.com/sites/default/files/v3_Native_PhotoPrintsAPI.html" title="Walgreens Native Photo Prints API" src="walgreens-native-photo-prints-api.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-marketing">
+				<title>Marketing Business Models</title>
+				<img src="api-business-models-marketing.png" class="fullsize"/>
+			</slide>
+			<slide id="business-model-marketing-audience">
+				<title>Marketing Business Model: Audience</title>
+				<img href="https://developer.twitter.com/en/docs/authentication/overview" title="Twitter Authentication API" src="twitter-authentication-api.png" class="fullsize"/>
+			</slide>
+			<slide id="indirect">
+				<title>Most API Value Creation is Indirect</title>
+				<ol>
+					<li>Using APIs to become better at reuse and innovation</li>
+					<li>Reducing friction by having teams communicate via APIs</li>
+					<li>Using <q>API First</q> as a way to build everything as digital building blocks</li>
+				</ol>
+			</slide>
 		</part>
 		<part id="design-development-marketing">
 			<title>Product Design, Development, and Management</title>
