@@ -287,8 +287,8 @@
 				</ol>
 			</slide>
 		</part>
-		<part id="marketing">
-			<title>Product and Platform Marketing</title>
+		<part id="unbundling">
+			<title>The Great Unbundling</title>
 			<slide id="api-management-lifecycle">
 				<title>Creating API Products</title>
 				<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
@@ -300,6 +300,55 @@
 			<slide id="api-management-marketing">
 				<title>Marketing API Products</title>
 				<img src="API-management-marketing.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="gateway-saurus">
+				<title>The Age of the Gateway-Saurus</title>
+				<img source="Mark O'Neill" src="gateway-saurus.png" class="fullsize" />
+			</slide>
+			<slide id="diversity">
+				<title>Diversity in the API Space</title>
+				<ul>
+					<li>More API styles</li>
+					<li>More deployment models</li>
+					<li>Larger set of API users</li>
+					<li>Growing landscape of service providers</li>
+				</ul>
+			</slide>
+			<slide id="design-thinking">
+				<title>Design Thinking</title>
+				<img src="design-thinking.jpg" class="fullsize-shadow"/>
+			</slide>
+			<slide id="linting">
+				<title>Example 1: API Linting</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/Il5btHG_D74" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+			<slide id="mocking">
+				<title>Example 2: Mocking</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/aH0W3mQyOOA" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+			<slide id="fuzzing">
+				<title>Example 3: API Fuzzing</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/wX3GMJY9B6A" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+			<slide id="greasing">
+				<title>Example 4: API Greasing</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/EZOHviFcczI" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
 			</slide>
 		</part>
 		<part id="governance-platform">
