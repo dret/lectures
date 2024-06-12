@@ -151,6 +151,7 @@
 			</slide>
 			<slide id="openapi-60s">
 				<title>OpenAPI in 60 Seconds</title>
+				<img src="stopwatch.png" style="float: right ; height : 40% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
 					<li>Interactions</li>
 					<ul>
@@ -263,8 +264,8 @@
 				</div>
 			</slide>
 		</part>
-		<part id="right-thing">
-			<title>The Right API</title>
+		<part id="right-api">
+			<title>Building the Right API</title>
 			<slide id="monetization-myth">
 				<title>The API Monetization Myth</title>
 				<img src="money-press.gif" title="The API Money Press" style="float: right ; width : 35% ; margin : 0% 4% 4% 4% ; "/>
@@ -303,8 +304,8 @@
 				</ol>
 			</slide>
 		</part>
-		<part id="unbundling">
-			<title>The Great Unbundling</title>
+		<part id="building-right">
+			<title>Building the API Right</title>
 			<slide id="api-management-lifecycle">
 				<title>Creating API Products</title>
 				<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
