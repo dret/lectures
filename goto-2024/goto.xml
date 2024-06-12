@@ -36,37 +36,34 @@
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
-		<part id="introduction">
-			<title>Introduction</title>
-			<slide id="oai-event-page">
-				<title>Slides Online</title>
-				<img src="qr-code-goto-amsterdam-2024" href="https://dret.net/lectures/goto-2024" class="fullsize"/>
-			</slide>
-			<slide id="dret">
-				<title>Erik Wilde</title>
-				<img src="INNOQ-logo.png" title="INNOQ" href="https://www.innoq.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
-				<img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
-				<ul>
-					<li>Principal Consultant at <a href="https://www.innoq.com/">INNOQ</a></li>
-					<li>OAI Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative</a></li>
-					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-				</ul>
-			</slide>
-			<slide id="getting-apis-to-work">
-				<title>Getting APIs to Work</title>
-				<div style=" float : left ; width : 42% ; margin : 0% 2% 0% 4% ; ">
-					<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
-						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/C_rkvN9zwKg" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
-					</div>
+		<slide id="oai-event-page">
+			<title>Slides Online</title>
+			<img src="qr-code-goto-amsterdam-2024" href="https://dret.net/lectures/goto-2024" class="fullsize"/>
+		</slide>
+		<slide id="dret">
+			<title>Erik Wilde</title>
+			<img src="INNOQ-logo.png" title="INNOQ" href="https://www.innoq.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+			<img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+			<ul>
+				<li>Principal Consultant at <a href="https://www.innoq.com/">INNOQ</a></li>
+				<li>OAI Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative</a></li>
+				<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+				<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+			</ul>
+		</slide>
+		<slide id="getting-apis-to-work">
+			<title>Getting APIs to Work</title>
+			<div style=" float : left ; width : 42% ; margin : 0% 2% 0% 4% ; ">
+				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/C_rkvN9zwKg" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 				</div>
-				<div style=" float : right ; width : 42% ; margin : 0% 4% 0% 2% ; ">
-					<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
-						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/1CwUlDPqz2c" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
-					</div>
+			</div>
+			<div style=" float : right ; width : 42% ; margin : 0% 4% 0% 2% ; ">
+				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/1CwUlDPqz2c" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 				</div>
-			</slide>
-		</part>
+			</div>
+		</slide>
 		<part id="api-products">
 			<title>API Products</title>
 			<slide id="api-first">
