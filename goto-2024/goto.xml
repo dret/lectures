@@ -299,6 +299,10 @@
 		</part>
 		<part id="building-right">
 			<title>Building the API Right</title>
+			<slide id="gateway-saurus">
+				<title>The Age of the Gateway-Saurus</title>
+				<img source="Mark O'Neill" src="gateway-saurus.png" class="fullsize" />
+			</slide>
 			<slide id="api-management-lifecycle">
 				<title>Creating API Products</title>
 				<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
@@ -311,17 +315,14 @@
 				<title>Marketing API Products</title>
 				<img src="API-management-marketing.png" class="fullsize-shadow"/>
 			</slide>
-			<slide id="gateway-saurus">
-				<title>The Age of the Gateway-Saurus</title>
-				<img source="Mark O'Neill" src="gateway-saurus.png" class="fullsize" />
-			</slide>
-			<slide id="diversity">
-				<title>Diversity in the API Space</title>
+			<slide id="platform-engineering">
+				<title>Platform Engineering to the Rescue</title>
 				<ul>
-					<li>More API styles</li>
-					<li>More deployment models</li>
-					<li>Larger set of API users</li>
-					<li>Growing landscape of service providers</li>
+					<li>DevOps improves practices but doesn't help with scaling practices</li>
+					<li>The new move is to <q href="https://cloud.google.com/blog/products/application-development/richard-seroter-on-shifting-down-vs-shifting-left">Shift down</q></li>
+					<li>(#APIs per org) ✖ (API landscape complexity) → (Optimization potential)</li>
+					<li>APIs as the <q>common denominator</q> for all digital capabilities</li>
+					<li>Platform engineering is taking off for a reason</li>
 				</ul>
 			</slide>
 			<slide id="developer-jobs">
