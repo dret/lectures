@@ -97,7 +97,7 @@
 				<img src="volkswagen-meb-platform.png" title="Volkswagen MEB Platform" href="https://www.volkswagen-newsroom.com/en/modular-electric-drive-matrix-meb-3677" class="fullsize"/>
 			</slide>
 			<slide id="lingua-franca">
-				<title>API Descriptions as <q>Building Block Lingua Franca</q></title>
+				<title>API Descriptions as <q>Digital Building Block Lingua Franca</q></title>
 				<img src="bridge.png" style="float: right ; width : 40% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
 					<li>Shared understanding of <q>the shape of digital building blocks</q></li>
@@ -110,6 +110,15 @@
 			<slide id="api-first">
 				<title>API First</title>
 				<img src="api-descriptions.png" title="API First with API Descriptions" class="fullsize"/>
+			</slide>
+			<slide id="api-versions">
+				<title>Versioning for API Products</title>
+				<ol>
+					<li>Choosing description language and version</li>
+					<li>Defining API product and its versioning policy</li>
+					<li>Describing ASPI product and versioning descriptions</li>
+					<li>Ignoring implementation version</li>
+				</ol>
 			</slide>
 		</part>
 		<part id="api-descriptions">
