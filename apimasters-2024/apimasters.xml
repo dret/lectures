@@ -69,4 +69,42 @@
 			<title>Four OpenAPI User Stories</title>
 		</part>
 	</presentation>
+	<presentation id="openapi-fundamentals-overview">
+		<title short="An Overview of OpenAPI">OpenAPI Fundamentals: An Overview of OpenAPI</title>
+		<date short="2024-07">July 2024</date>
+		<part id="value-openapi-machine">
+			<title>OpenAPI as a Machine-Readable Format</title>
+		</part>
+		<part id="openapi-pillars">
+			<title>The Pillars of OpenAPI: Resources, Interactions, and Representations</title>
+		</part>
+		<part id="openapi-resources">
+			<title>Resources: URI Paths</title>
+		</part>
+		<part id="openapi-operations">
+			<title>Interactions: Operations and Parameters</title>
+		</part>
+		<part id="openapi-representations">
+			<title>Representations: Requests and Responses</title>
+		</part>
+	</presentation>
+	<presentation id="openapi-fundamentals-practices">
+		<title short="The Ecosystem of OpenAPI Practices and Tooling">OpenAPI Fundamentals: The Ecosystem of OpenAPI Practices and Tooling</title>
+		<date short="2024-07">July 2024</date>
+		<part id="pactices-api-lifecycle">
+			<title>The API Lifecycle: Powered by OpenAPI</title>
+		</part>
+		<part id="practices-api-history">
+			<title>A Brief History of APIs</title>
+		</part>
+		<part id="practices-linting">
+			<title>Linting: Establishing API Guidelines</title>
+		</part>
+		<part id="practices-mocking">
+			<title>Mocking: API First based on API Descriptions</title>
+		</part>
+		<part id="practices-openapi-ai">
+			<title>OpenAPI and AI: Emerging Patterns of OpenAPI Usage with LLMs</title>
+		</part>
+	</presentation>
 </hotspot>
