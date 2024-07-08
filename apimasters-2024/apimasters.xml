@@ -53,6 +53,38 @@
 		<date short="2024-07">July 2024</date>
 		<part id="value-api-age">
 			<title>The Age of APIs</title>
+			<slide id="running-on-apis">
+				<title>Running on APIs</title>
+				<ul>
+					<li>Systems use <em>APIs internally</em> to interconnect various technical components</li>
+					<li>Organizations use <em>APIs strategically</em> to allow teams to move faster</li>
+					<li>Business use <em>APIs economically</em> to establish and grow global products</li>
+				</ul>
+			</slide>
+			<slide id="api-value-technical">
+				<title>API Value: Technical Drivers</title>
+				<ul>
+					<li><em>Digital Transformation:</em> Increasing number of digital channels and capabilities</li>
+					<li><em>Digital Decay:</em> Decreasing time for which a channel can remain unchanged</li>
+					<li><em>Microservices:</em> Moving away from monolithic architecture</li>
+				</ul>
+			</slide>
+			<slide id="api-value-organizational">
+				<title>API Value: Organizational Drivers</title>
+				<ul>
+					<li><em>Cognitive Load:</em> Isolating teams from the complexity of today's tech stacks</li>
+					<li><em>Team Interactions:</em> Allowing teams to publish self-service building blocks</li>
+					<li><em>Team Effectiveness:</em> Building platforms to increase team effectiveness</li>
+				</ul>
+			</slide>
+			<slide id="api-value-business">
+				<title>API Value: Business Drivers</title>
+				<ul>
+					<li><em>API-based Products:</em> Better business agility through better product development</li>
+					<li><em>Product APIs:</em> Augmenting existing products with programmable features</li>
+					<li><em>API Products:</em> Offering products that can consumed easily and globally</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="value-api-history">
 			<title>A Brief History of APIs</title>
