@@ -147,6 +147,16 @@
 				<title>Consuming based on Shared Understanding</title>
 				<img src="api-descriptions-consumes.png" class="fullsize" />
 			</slide>
+			<slide id="descriptions-documentation">
+				<title>Are Descriptions Documentation?</title>
+				<img src="food-label.png" title="FDA Nutrition Facts Label" href="https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>				<ul>
+					<li>Yes, but…</li>
+					<li>APIs should be <em>described in a standardized way</em></li>
+					<li>APIs are intended for <em>consumption by machines</em></li>
+					<li><em>Machine-readable documentation</em> is called <em>description</em></li>
+					<li>APIs always should publish descriptions</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="value-api-trajectory">
 			<title>From Tech Detail to Value Driver</title>
