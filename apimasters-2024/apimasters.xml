@@ -149,12 +149,46 @@
 			</slide>
 			<slide id="descriptions-documentation">
 				<title>Are Descriptions Documentation?</title>
-				<img src="food-label.png" title="FDA Nutrition Facts Label" href="https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>				<ul>
+				<img src="food-label.png" title="FDA Nutrition Facts Label" href="https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
 					<li>Yes, but…</li>
 					<li>APIs should be <em>described in a standardized way</em></li>
 					<li>APIs are intended for <em>consumption by machines</em></li>
 					<li><em>Machine-readable documentation</em> is called <em>description</em></li>
 					<li>APIs always should publish descriptions</li>
+				</ul>
+			</slide>
+			<slide id="description-format-overview">
+				<title>To Each Their Own</title>
+				<ul>
+					<li>API space evolution → Description language co-evolution</li>
+					<li>API history is littered with outdated or niche languages</li>
+					<li>Today's APIs often use HTTP and a resource-based approach</li>
+					<ul>
+						<li>Competing languages for this space were RAML and Blueprint</li>
+					</ul>
+					<li>Other approaches are supported by other description languages</li>
+					<ul>
+						<li><em>GraphQL</em> for Query-based APIs</li>
+						<li><em>AsyncAPI</em> for Event-based APIs</li>
+						<li><em>gRPC</em> for programming distributed systems</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="external-internal">
+				<title>External vs. Internal APIs</title>
+				<ul>
+					<li>External APIs very often used HTTP and OpenAPI</li>
+					<ul>
+						<li>Most widely known and supported by tooling</li>
+						<li>Good loose coupling for external interfaces</li>
+					</ul>
+					<li>Internal APIs have a bit more diversity</li>
+					<ul>
+						<li><em>OpenAPI</em> for simple request-based services</li>
+						<li><em>GraphQL</em> for flexible front-ends</li>
+						<li><em>AsyncAPI</em> for event-driven services</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
