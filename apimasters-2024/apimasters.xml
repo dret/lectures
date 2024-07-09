@@ -93,11 +93,11 @@
 			<title>A Brief History of APIs</title>
 			<slide id="subroutine-origin">
 				<title>1948: Structuring Code for Reuse</title>
-				<img source='Herman Goldstine and John von Neumann, "Planning and Coding Problems for an Electronic Computing Instrument", Institute for Advanced Study, Princeton, 1947/1948.' src="subroutine.png" href="https://www.historyofinformation.com/detail.php?id=658" class="fullsize-shadow" />
+				<img source='Herman Goldstine and John von Neumann, "Planning and Coding Problems for an Electronic Computing Instrument", Institute for Advanced Study, Princeton, 1947/1948.' src="subroutine.png" href="https://www.historyofinformation.com/detail.php?id=658" class="fullsize-shadow-left" />
 			</slide>
 			<slide id="api-origin">
 				<title>1968: First Light for <q>API</q></title>
-				<img source='Ira W. Cotton, Frank S. Greatorex, "Data structures and techniques for remote computer graphics", Proceedings of the December Fall Joint Computer Conference AFIPS &apos;68, Pages 533–544, https://doi.org/10.1145/1476589.1476661' src="application-program-interface.png" href="https://dl.acm.org/doi/pdf/10.1145/1476589.1476661" class="fullsize-shadow" />
+				<img source='Ira W. Cotton, Frank S. Greatorex, "Data structures and techniques for remote computer graphics", Proceedings of the December Fall Joint Computer Conference AFIPS &apos;68, Pages 533–544, https://doi.org/10.1145/1476589.1476661' src="application-program-interface.png" href="https://dl.acm.org/doi/pdf/10.1145/1476589.1476661" class="fullsize-shadow-left" />
 			</slide>
 			<slide id="api-scope">
 				<title>From Local to Remote</title>
@@ -125,27 +125,27 @@
 			<title>What are API Description Formats</title>
 			<slide id="api-descriptions-services">
 				<title>Consumers want to use Services</title>
-				<img src="api-descriptions-services.png" class="fullsize" />
+				<img src="api-descriptions-services.png" class="fullsize-left" />
 			</slide>
 			<slide id="api-descriptions-uses">
 				<title>Description Languages are <q>API Lingua Francas</q></title>
-				<img src="api-descriptions-uses.png" class="fullsize" />
+				<img src="api-descriptions-uses.png" class="fullsize-left" />
 			</slide>
 			<slide id="api-descriptions-describes">
 				<title>Descriptions are Machine-Readable Documents</title>
-				<img src="api-descriptions-describes.png" class="fullsize" />
+				<img src="api-descriptions-describes.png" class="fullsize-left" />
 			</slide>
 			<slide id="api-descriptions-understands">
 				<title>Shared Understanding of APIs</title>
-				<img src="api-descriptions-understands.png" class="fullsize" />
+				<img src="api-descriptions-understands.png" class="fullsize-left" />
 			</slide>
 			<slide id="api-descriptions-discovers">
 				<title>Discovery of Understandable Descriptions</title>
-				<img src="api-descriptions-discovers.png" class="fullsize" />
+				<img src="api-descriptions-discovers.png" class="fullsize-left" />
 			</slide>
 			<slide id="api-descriptions-consumes">
 				<title>Consuming based on Shared Understanding</title>
-				<img src="api-descriptions-consumes.png" class="fullsize" />
+				<img src="api-descriptions-consumes.png" class="fullsize-left" />
 			</slide>
 			<slide id="descriptions-documentation">
 				<title>Are Descriptions Documentation?</title>
@@ -215,7 +215,7 @@
 			<title>Four OpenAPI User Stories</title>
 			<slide id="wiifm">
 				<title><span title="What's in it for me?">WIIFM</span>: Everybody's Favorite Station</title>
-				<img src="wiifm.webp" title="WIIFM: What's in it for me?" class="fullsize"/>
+				<img src="wiifm.webp" title="WIIFM: What's in it for me?" class="fullsize-left"/>
 			</slide>
 			<slide id="wiifm-org-biz">
 				<title>WIIFM: Strategic Business Value</title>
