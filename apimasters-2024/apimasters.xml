@@ -91,6 +91,22 @@
 		</part>
 		<part id="value-api-history">
 			<title>A Brief History of APIs</title>
+			<slide id="api-origin">
+				<title>1968: First Light for <q>API</q></title>
+				<img source='Ira W. Cotton, Frank S. Greatorex, "Data structures and techniques for remote computer graphics", Proceedings of the December Fall Joint Computer Conference AFIPS &apos;68, Pages 533–544, https://doi.org/10.1145/1476589.1476661' src="application-program-interface.png" href="https://dl.acm.org/doi/pdf/10.1145/1476589.1476661" class="fullsize-shadow" />
+			</slide>
+			<slide id="api-timeline">
+				<title>From the Human Web to the Machine Web</title>
+				<ul>
+					<li>1990: First server at CERN</li>
+					<li>1993: NCSA releases Mosaic browser</li>
+					<li>1995: Amazon</li>
+					<li>1998: Extensible Markup Language (XML)</li>
+					<li>2000: SOAP</li>
+					<li>2000: "Internet as a Service": Salesforce, eBay, Amazon</li>
+					<li>2003: "Building Blocks": Delicious, Flickr, Facebook, Twitter, Foursquare, Twilio</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="value-description-formats">
 			<title>What are API Description Formats</title>
