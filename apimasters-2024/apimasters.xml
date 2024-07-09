@@ -99,6 +99,15 @@
 				<title>1968: First Light for <q>API</q></title>
 				<img source='Ira W. Cotton, Frank S. Greatorex, "Data structures and techniques for remote computer graphics", Proceedings of the December Fall Joint Computer Conference AFIPS &apos;68, Pages 533–544, https://doi.org/10.1145/1476589.1476661' src="application-program-interface.png" href="https://dl.acm.org/doi/pdf/10.1145/1476589.1476661" class="fullsize-shadow" />
 			</slide>
+			<slide id="api-scope">
+				<title>From Local to Remote</title>
+				<ul>
+					<li>Initially <q>API</q> only referred to local interfaces (same machine)</li>
+					<li>With the emergence of the Internet the scope of computing extended</li>
+					<li>Starting in 2000, <q>network-based API</q> was used widely</li>
+					<li>OpenAPI is firmly placed on the <q>network-based</q> side</li>
+				</ul>
+			</slide>
 			<slide id="api-timeline">
 				<title>From the Human Web to the Machine Web</title>
 				<ul>
@@ -114,6 +123,30 @@
 		</part>
 		<part id="value-description-formats">
 			<title>What are API Description Formats</title>
+			<slide id="api-descriptions-services">
+				<title>Consumers want to use Services</title>
+				<img src="api-descriptions-services.png" class="fullsize" />
+			</slide>
+			<slide id="api-descriptions-uses">
+				<title>Description Languages are <q>API Lingua Francas</q></title>
+				<img src="api-descriptions-uses.png" class="fullsize" />
+			</slide>
+			<slide id="api-descriptions-describes">
+				<title>Descriptions are Machine-Readable Documents</title>
+				<img src="api-descriptions-describes.png" class="fullsize" />
+			</slide>
+			<slide id="api-descriptions-understands">
+				<title>Shared Understanding of APIs</title>
+				<img src="api-descriptions-understands.png" class="fullsize" />
+			</slide>
+			<slide id="api-descriptions-discovers">
+				<title>Discovery of Understandable Descriptions</title>
+				<img src="api-descriptions-discovers.png" class="fullsize" />
+			</slide>
+			<slide id="api-descriptions-consumes">
+				<title>Consuming based on Shared Understanding</title>
+				<img src="api-descriptions-consumes.png" class="fullsize" />
+			</slide>
 		</part>
 		<part id="value-api-trajectory">
 			<title>From Tech Detail to Value Driver</title>
