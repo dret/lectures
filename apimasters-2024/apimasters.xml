@@ -175,28 +175,41 @@
 					</ul>
 				</ul>
 			</slide>
-			<slide id="external-internal">
-				<title>External vs. Internal APIs</title>
+		</part>
+		<part id="value-openapi-popularity">
+			<title>Why OpenAPI is Popular</title>
+			<slide id="rest-rules">
+				<title>REST Rules</title>
 				<ul>
-					<li>External APIs very often used HTTP and OpenAPI</li>
+					<li><em>External APIs</em> have gravitated towards HTTP/REST</li>
 					<ul>
-						<li>Most widely known and supported by tooling</li>
-						<li>Good loose coupling for external interfaces</li>
+						<li>Simple and intuitive API style and tech stack</li>
+						<li>Good fit for client-initiated synchronous interactions</li>
 					</ul>
-					<li>Internal APIs have a bit more diversity</li>
+					<li><em>Internal APIs</em> have a bit more diversity</li>
 					<ul>
-						<li><em>OpenAPI</em> for simple request-based services</li>
+						<li><em>OpenAPI</em> for request-based services</li>
 						<li><em>GraphQL</em> for flexible front-ends</li>
 						<li><em>AsyncAPI</em> for event-driven services</li>
 					</ul>
+					<li>OpenAPI has the largest combined market in the API space</li>
 				</ul>
+			</slide>
+			<slide id="tooling-availability">
+				<title>Lots of Tooling</title>
 			</slide>
 		</part>
 		<part id="value-api-trajectory">
 			<title>From Tech Detail to Value Driver</title>
-		</part>
-		<part id="value-openapi-popularity">
-			<title>Why OpenAPI is Popular</title>
+			<slide id="api-trajectory-tech">
+				<title>APIs are Technological</title>
+			</slide>
+			<slide id="api-trajectory-biz">
+				<title>APIs can drive Business</title>
+			</slide>
+			<slide id="api-trajectory-org">
+				<title>APIs can scale Organizations</title>
+			</slide>
 		</part>
 		<part id="value-openapi-user-stories">
 			<title>Four OpenAPI User Stories</title>
