@@ -53,6 +53,24 @@
 		<date short="2024-07">July 2024</date>
 		<part id="value-api-age">
 			<title>The Age of APIs</title>
+			<slide id="definitions">
+				<title>APIs and OpenAPI</title>
+				<img src="openapi-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li><em>Application Programming Interfaces (APIs)</em> allow applications talk to each other</li>
+					<ul>
+						<li><em>Mobile apps</em> almost always connect to a server to send and receive data</li>
+						<li><em>Web apps</em> allow a browser-based app to send and receive data</li>
+						<li><em>Server-to-server</em> allows interchange between back-end applications</li>
+					</ul>
+					<li><em>OpenAPI</em> is one description format for APIs</li>
+					<ul>
+						<li><em>API designers</em> create a description of how the API works</li>
+						<li><em>API developers</em> write code that implements the API</li>
+						<li><em>API consumers</em> write code to access and use the API</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="running-on-apis">
 				<title>Running on APIs</title>
 				<ul>
