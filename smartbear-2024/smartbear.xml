@@ -46,6 +46,103 @@
 				</div>
 			</div>
 		</slide>
+		<part id="platform-principle">
+			<title>The Platform Principle</title>
+			<slide id="you-can-not-not-build-a-platform">
+				<title>You can not not build a Platform</title>
+				<img src="platform-building.webp" class="fullsize" />
+			</slide>
+			<slide id="platform-definitions">
+				<title>Platform is a Fuzzy Term</title>
+				<ul>
+					<li><em>Platform Business</em> is a specific type of business model</li>
+					<li><em>Business Platform</em> defines your business-level building blocks</li>
+					<li><em>API Platform</em> exposes APIs to (external and/or internal) consumers</li>
+					<li><em>Developer Platform</em> supports (internal) developers with their tasks</li>
+				</ul>
+			</slide>
+			<slide id="starting">
+				<title>Getting Started with APIs</title>
+				<ul>
+					<li>Initial pockets of experimentation with APIs</li>
+					<li>Risk is small-ish because the surface is relatively small</li>
+					<li>High degree of freedom because there is no established platform</li>
+					<li>Different teams will come up with different solutions for the same problem</li>
+				</ul>
+			</slide>
+			<slide id="momentum">
+				<title>APIs are gaining Momentum</title>
+				<ul>
+					<li>Internal and external factors help with the adoption of APIs</li>
+					<li>Risk becomes higher because the surface is growing rapidly</li>
+					<li>Practices and patterns emerge by teams sharing information and tooling</li>
+					<li>Governance becomes an issue to manage and support growth</li>
+				</ul>
+			</slide>
+			<slide id="scaling">
+				<title>Scaling API Landscapes</title>
+				<ul>
+					<li>APIs are recognized as being strategic for both internal and external reasons</li>
+					<li>Risk management needs to be adapted to the strategic importance</li>
+					<li>More API development means increasing economies of scale</li>
+					<li>Scaling the API practice leads to some form of platform engineering</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="platform-engineering-maturity">
+			<title>Platform Engineering Maturity</title>
+			<slide id="maturity-model-aspects">
+				<title>Platform Engineering Maturity: Aspects</title>
+				<img src="platform-engineering-maturity-model-cncf-aspects.png" source="CNCF Platform Engineering Maturity Model" href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/" class="fullsize-shadow"/>
+			</slide>
+			<slide id="maturity-model-platform">
+				<title>You can not not have a platform...</title>
+				<img src="platform-engineering-maturity-model-cncf-provisional.png" source="CNCF Platform Engineering Maturity Model" href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/" class="fullsize-shadow"/>
+			</slide>
+			<slide id="maturity-model-optimizing">
+				<title>Platform Engineering Perfection</title>
+				<img src="platform-engineering-maturity-model-cncf-optimizing.png" source="CNCF Platform Engineering Maturity Model" href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/" class="fullsize-shadow"/>
+			</slide>
+			<slide id="maturity-model-improvement">
+				<title>Improving Platform Engineering</title>
+				<img src="platform-engineering-maturity-model-cncf.png" source="CNCF Platform Engineering Maturity Model" href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/" class="fullsize-shadow"/>
+			</slide>
+			<slide id="adoption-curve">
+				<title>Platform Engineering Maturity: Adoption Curve</title>
+				<img src="platform-engineering-maturity-model-adoption-curve.jpg" class="fullsize"/>
+			</slide>
+			<slide id="maturity-model-usage">
+				<title>Maturity Model Usage</title>
+				<ul>
+					<li><em>End Users:</em> Structured view of practices and changing from reactive to strategic</li>
+					<li><em>Vendors:</em> Decide on product sweet spot and explaining to customers</li>
+					<li><em>Consultants:</em> Identify state and goal and areas of investment</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="building-api-platform">
+			<title>Building API Platforms</title>
+			<slide id="api-management-lifecycle">
+				<title>Creating Capabilities</title>
+				<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-management-product">
+				<title>Curating Capabilities</title>
+				<img src="API-management-product.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-management-marketing">
+				<title>Publishing Capabilities</title>
+				<img src="API-management-marketing.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-platform-specifics">
+				<title>API Platform Specifics</title>
+				<ul>
+					<li>Targeting specific consumer group(s)</li>
+					<li>Not making any assumptions about consumption mechanics</li>
+					<li>APIs aligned with business capabilities and partner models</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="thanks">
