@@ -18,12 +18,14 @@
 			</plugins>
 		</kilauea>
 	</configuration>
+<!-- 
 	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
 		<div class="license">
 			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
 			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
 		</div>
 	</license>
+ -->
 	<toc name="toc.html">
 		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
 			<thead>
@@ -215,16 +217,38 @@
 			</slide>
 			<slide id="tooling-availability">
 				<title>Lots of Tooling</title>
+				<ul>
+					<li><em>Design tools</em> to help create and discuss APIs</li>
+					<li><em>Validation tools</em> to make sure APIs adhere to guidelines</li>
+					<li><em>Mocking tools</em> to generate APIs from descriptions</li>
+					<li><em>Testing tools</em> to validate implementations against descriptions</li>
+					<li><em>Fuzzing tools</em> to test APIs for robustness</li>
+					<li><em>Documentation tools</em> to create API documentation</li>
+					<li><em>Code generation tools</em> for client and server sides</li>
+				</ul>
 			</slide>
-		</part>
-		<part id="value-api-trajectory">
-			<title>From Tech Detail to API Economy</title>
 			<slide id="api-landscape">
 				<title>API Landscape</title>
 				<img src="api-landscape.png" href="https://apilandscape.apiscene.io/" class="fullsize-shadow-left"/>
 			</slide>
+			<slide id="lingua-franca">
+				<title>The Open API Lingua Franca</title>
+				<ul>
+					<li>OpenAPI benefits from the <em>network effect</em></li>
+					<li><em>Technologists</em> can easily talk about designs</li>
+					<li><em>Organisations</em> have a way to describe their building blocks</li>
+					<li><em>Teams</em> can communicate in a more scalable way</li>
+					<li>Communications are possible across all these areas</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="value-api-trajectory">
+			<title>From Tech Detail to API Economy</title>
 			<slide id="api-trajectory-tech">
 				<title>APIs Leverage Technology</title>
+				<ul>
+					<li></li>
+				</ul>
 			</slide>
 			<slide id="api-trajectory-biz">
 				<title>APIs Drive Business</title>
