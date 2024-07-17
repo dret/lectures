@@ -61,8 +61,8 @@
 				<ul>
 					<li><em>Application Programming Interfaces (APIs)</em> allow applications talk to each other</li>
 					<ul>
-						<li><em>Mobile apps</em> almost always connect to a server to send and receive data</li>
-						<li><em>Web apps</em> allow a browser-based app to send and receive data</li>
+						<li><em>Mobile apps</em> connect to a server to send and receive data</li>
+						<li><em>Web apps</em> allow browser-based apps to send and receive data</li>
 						<li><em>Server-to-server</em> allows interchange between back-end applications</li>
 					</ul>
 					<li><em>OpenAPI</em> is one description format for APIs</li>
@@ -74,11 +74,11 @@
 				</ul>
 			</slide>
 			<slide id="running-on-apis">
-				<title>Running on APIs</title>
+				<title>The World is Running on APIs</title>
 				<ul>
 					<li>Systems use <em>APIs internally</em> to interconnect various technical components</li>
 					<li>Organizations use <em>APIs strategically</em> to allow teams to move faster</li>
-					<li>Business use <em>APIs economically</em> to establish and grow global products</li>
+					<li>Businesses use <em>APIs economically</em> to establish and grow global products</li>
 				</ul>
 			</slide>
 			<slide id="api-value-technical">
@@ -170,6 +170,9 @@
 					<li>APIs should be <em>described in a standardized way</em></li>
 					<li>APIs are intended for <em>consumption by machines</em></li>
 					<li><em>Machine-readable documentation</em> is called <em>description</em></li>
+					<ul>
+						<li>Or: <em>Human-readable description</em> is called <em>documentation</em></li>
+					</ul>
 					<li>APIs always should publish descriptions</li>
 				</ul>
 			</slide>
@@ -177,7 +180,6 @@
 				<title>To Each Their Own</title>
 				<ul>
 					<li>API space evolution → Description language co-evolution</li>
-					<li>API history is littered with outdated or niche languages</li>
 					<li>Today's APIs often use HTTP and a resource-based approach</li>
 					<ul>
 						<li>Competing languages for this space were RAML and Blueprint</li>
@@ -206,12 +208,13 @@
 						<li><em>OpenAPI</em> for request-based services</li>
 						<li><em>GraphQL</em> for flexible front-ends</li>
 						<li><em>AsyncAPI</em> for event-driven services</li>
+						<li><em>gRPC</em> for remote procedure calls</li>
 					</ul>
 					<li>OpenAPI has the largest combined market in the API space</li>
 				</ul>
 			</slide>
 			<slide id="tooling-availability">
-				<title>Lots of Tooling</title>
+				<title>Plenty of API Lifecycle Tooling</title>
 				<ul>
 					<li><em>Design tools</em> to help create and discuss APIs</li>
 					<li><em>Validation tools</em> to make sure APIs adhere to guidelines</li>
@@ -221,6 +224,10 @@
 					<li><em>Documentation tools</em> to create API documentation</li>
 					<li><em>Code generation tools</em> for client and server sides</li>
 				</ul>
+			</slide>
+			<slide id="openapi-tooling">
+				<title>OpenAPI Tooling</title>
+				<img src="openapi-tools.png" href="https://tools.openapis.org/" class="fullsize-left"/>
 			</slide>
 			<slide id="api-landscape">
 				<title>API Landscape</title>
