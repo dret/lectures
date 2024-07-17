@@ -333,28 +333,44 @@
 				</table>
 			</slide>
 		</part>
-		<slide id="value-openapi-end">
-			<title>The Value of OpenAPI</title>
-			<img src="end.jpg" title="This is the End" class="fullsize-shadow-left"/>
-		</slide>
+		<part id="value-openapi-conclusions>">
+			<title>The Value of OpenAPI: Conclusions</title>
+			<slide id="value-openapi-end">
+				<title>The Value of OpenAPI</title>
+				<img src="end.jpg" title="This is the End" class="fullsize-shadow-left"/>
+			</slide>
+		</part>
 	</presentation>
 	<presentation id="openapi-fundamentals-overview">
 		<title>An Overview of OpenAPI</title>
 		<date short="2024-07">July 2024</date>
-		<part id="value-openapi-machine">
+		<part id="openapi-fundamentals-machine">
 			<title>OpenAPI as a Machine-Readable Format</title>
+			<slide id="openapi-fundamentals-json">
+				<title>JSON: Today's Standard Structured Data</title>
+			</slide>
+			<slide id="openapi-fundamentals-yaml">
+				<title>YAML: JSON but more Readable</title>
+			</slide>
 		</part>
-		<part id="openapi-pillars">
+		<part id="openapi-fundamentals-pillars">
 			<title>The Pillars of OpenAPI: Resources, Interactions, and Representations</title>
 		</part>
-		<part id="openapi-resources">
+		<part id="openapi-fundamentals-resources">
 			<title>Resources: URI Paths</title>
 		</part>
-		<part id="openapi-operations">
+		<part id="openapi-fundamentals-operations">
 			<title>Interactions: Operations and Parameters</title>
 		</part>
-		<part id="openapi-representations">
+		<part id="openapi-fundamentals-representations">
 			<title>Representations: Requests and Responses</title>
+		</part>
+		<part id="openapi-fundamentals-conclusions>">
+			<title>An Overview of OpenAPI: Conclusions</title>
+			<slide id="value-openapi-end">
+				<title>An Overview of OpenAPI</title>
+				<img src="end.jpg" title="This is the End" class="fullsize-shadow-left"/>
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="openapi-fundamentals-practices">
