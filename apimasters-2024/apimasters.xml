@@ -363,6 +363,24 @@
 					<li><em>Representations</em> define how interactions exchange information</li>
 				</ul>
 			</slide>
+			<slide id="openapi-fundamentals-web-api">
+				<title>OpenAPI is for <q>Web APIs</q></title>
+				<ul>
+					<li>Underlying technologies are the building blocks of the Web</li>
+					<li><a href="https://datatracker.ietf.org/doc/html/rfc3986">Uniform Resource Identifier (URI)</a> is what you see in the address bar</li>
+					<li><a href="https://datatracker.ietf.org/doc/html/rfc9110">Hypertext Transfer Protocol (HTTP)</a> defines how browsers and servers interact</li>
+					<li><a href="https://datatracker.ietf.org/doc/html/rfc8259">JavaScript Object Notation (JSON)</a> is the data model of browser scripting languages</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-uri">
+				<title>Uniform Resource Identifier (URI)</title>
+			</slide>
+			<slide id="openapi-fundamentals-http">
+				<title>Hypertext Transfer Protocol (HTTP)</title>
+			</slide>
+			<slide id="openapi-fundamentals-json">
+				<title>JavaScript Object Notation (JSON)</title>
+			</slide>
 		</part>
 		<part id="openapi-fundamentals-resources">
 			<title>Resources: URI Paths</title>
