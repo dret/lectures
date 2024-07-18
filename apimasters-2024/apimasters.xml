@@ -355,6 +355,14 @@
 		</part>
 		<part id="openapi-fundamentals-pillars">
 			<title>The Pillars of OpenAPI: Resources, Interactions, and Representations</title>
+			<slide id="openapi-fundamentals-structure">
+				<title>Shaping Your API</title>
+				<ul>
+					<li><em>Resources</em> are the fundamental units of interaction</li>
+					<li><em>Interactions</em> are how you access resources</li>
+					<li><em>Representations</em> define how interactions exchange information</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="openapi-fundamentals-resources">
 			<title>Resources: URI Paths</title>
