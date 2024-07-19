@@ -1,0 +1,21 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Greeting API",
+    "version": "1.0.0",
+    "description": "A simple API to return a greeting message."
+  },
+  "paths": { "/greet": { "get": {
+    "summary": "Returns a greeting message",
+    "responses": { "200": {
+      "description": "A successful response",
+      "content": { "application/json": { "schema": {
+        "type": "object",
+        "properties": { "message": {
+          "type": "string",
+          "examples": ["Hello, world!"]
+        }}
+      }}}
+    }}
+  }}}
+}

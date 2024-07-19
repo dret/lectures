@@ -352,6 +352,18 @@
 			<slide id="openapi-fundamentals-yaml">
 				<title>YAML: JSON but more Readable</title>
 			</slide>
+			<slide id="openapi-fundamentals-greet-json">
+				<title>Minimal OpenAPI in JSON</title>
+				<listing src="greet.json"/>
+			</slide>
+			<slide id="openapi-fundamentals-greet-yaml">
+				<title>Minimal OpenAPI in YAML</title>
+				<listing src="greet.yaml"/>
+			</slide>
+			<slide id="openapi-fundamentals-swagger">
+				<title>Minimal OpenAPI in Tool</title>
+				<img src="greet-swagger.png" class="fullsize-left"/>
+			</slide>
 		</part>
 		<part id="openapi-fundamentals-pillars">
 			<title>The Pillars of OpenAPI: Resources, Interactions, and Representations</title>
@@ -372,7 +384,7 @@
 					<li><a href="https://datatracker.ietf.org/doc/html/rfc8259">JavaScript Object Notation (JSON)</a> is the data model of browser scripting languages</li>
 				</ul>
 			</slide>
-			<slide id="value-openapi-web">
+			<slide id="openapi-fundamentals-web">
 				<title>How the Web Works</title>
 				<img src="web-browser-and-server.png" class="fullsize-left"/>
 			</slide>
