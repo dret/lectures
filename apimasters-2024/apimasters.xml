@@ -348,6 +348,13 @@
 			<title>OpenAPI as a Machine-Readable Format</title>
 			<slide id="openapi-fundamentals-json">
 				<title>JSON: Today's Standard Structured Data</title>
+				<ul>
+					<li><em>JavaScript</em> (1995) bridged many worlds because it ran in browsers</li>
+					<li><em>JavaScript Object Notation (JSON)</em> (2001) became a <q>web-level</q> data format</li>
+					<li>JSON is a good approximation for the data models of many programming languages</li>
+					<li>JSON is easy to understand but cumbersome to read and write</li>
+					<listing src="minimal.json"/>
+				</ul>
 			</slide>
 			<slide id="openapi-fundamentals-yaml">
 				<title>YAML: JSON but more Readable</title>
