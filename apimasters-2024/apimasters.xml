@@ -346,6 +346,14 @@
 		<date short="2024-07">July 2024</date>
 		<part id="openapi-fundamentals-machine">
 			<title>OpenAPI as a Machine-Readable Format</title>
+			<slide id="openapi-fundamentals-openapi-structure">
+				<title>OpenAPI is Structured Data</title>
+				<ul>
+					<li>APIs described by OpenAPI are described in a structured way</li>
+					<li><link href="openapi-fundamentals-resources">Resources</link>, <link href="openapi-fundamentals-interactions">interactions</link>, and <link href="openapi-fundamentals-representations">representations</link> are core concepts</li>
+					<li>OpenAPI must use a structure to describe these concepts</li>
+				</ul>
+			</slide>
 			<slide id="openapi-fundamentals-json">
 				<title>JSON: Today's Standard Structured Data</title>
 				<ul>
@@ -440,7 +448,7 @@
 				<img src="github-api-swagger-editor.png" class="fullsize-left"/>
 			</slide>
 		</part>
-		<part id="openapi-fundamentals-operations">
+		<part id="openapi-fundamentals-interactions">
 			<title>Interactions: Operations and Parameters</title>
 		</part>
 		<part id="openapi-fundamentals-representations">
