@@ -473,12 +473,21 @@
 		</part>
 		<part id="practices-linting">
 			<title>Linting: Establishing API Guidelines</title>
+			<slide id="practices-linting-use-cases">
+				<title>Use Cases for API Linting</title>
+			</slide>
 		</part>
 		<part id="practices-mocking">
 			<title>Mocking: API First based on API Descriptions</title>
 		</part>
+		<slide id="practices-mocking-use-cases">
+			<title>Use Cases for API Mocking</title>
+		</slide>
 		<part id="practices-openapi-ai">
 			<title>OpenAPI and AI: Emerging Patterns of OpenAPI Usage with LLMs</title>
+			<slide id="practices-ai-use-cases">
+				<title>Use Cases for Combining APIs with AI</title>
+			</slide>
 		</part>
 	</presentation>
 </hotspot>
