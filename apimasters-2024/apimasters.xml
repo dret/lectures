@@ -363,7 +363,7 @@
 				<title>JSON: Today's Standard Structured Data</title>
 				<ul>
 					<li><em>JavaScript</em> (1995) bridged many worlds because it ran in browsers</li>
-					<li><em>JavaScript Object Notation (JSON)</em> (2001) became a <q>web-level</q> data format</li>
+					<li><em>JavaScript Object Notation (JSON)</em> (2001) became the <q>web-scale</q> data format</li>
 					<li>JSON is a good approximation for the data models of many programming languages</li>
 					<li>JSON is easy to understand but cumbersome to read and write</li>
 					<listing src="minimal.json"/>
@@ -371,6 +371,12 @@
 			</slide>
 			<slide id="openapi-fundamentals-yaml">
 				<title>YAML: JSON but more Readable</title>
+				<ul>
+					<li><em>YAML Ain't Markup Language (YAML)</em> started in 2001 as an alternative to XML</li>
+					<li>Around 2005 YAML started to align with JSON</li>
+					<li>YAML is human-centric and based on indentation as structure</li>
+				</ul>
+				<listing src="minimal.json"/>
 			</slide>
 			<slide id="openapi-fundamentals-greet-json">
 				<title>Minimal OpenAPI in JSON</title>
