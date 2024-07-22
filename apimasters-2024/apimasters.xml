@@ -527,6 +527,14 @@
 				<title>API Response: Structured Data</title>
 				<listing src="octocat.json" line="1-15"/>
 			</slide>
+			<slide id="openapi-fundamentals-response">
+				<title>JSON Schema for JSON Data</title>
+				<listing src="github-private-user.yaml" line="1-17"/>
+			</slide>
+			<slide id="openapi-fundamentals-response">
+				<title>API Response with Media Type</title>
+				<listing src="github-get-by-username.yaml"/>
+			</slide>
 		</part>
 		<part id="openapi-fundamentals-conclusions>">
 			<title>An Overview of OpenAPI: Conclusions</title>
