@@ -401,8 +401,13 @@
 					<li><em>Representations</em> define how interactions exchange information</li>
 				</ul>
 			</slide>
+			<slide id="openapi-fundamentals-client-server-web">
+				<title>How the Web Works</title>
+				<img src="web-client-and-server-browser.png" class="fullsize-left"/>
+			</slide>
 			<slide id="openapi-fundamentals-web-api">
 				<title>OpenAPI is for <q>Web APIs</q></title>
+				<img src="ietf-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
 					<li>Underlying technologies are the building blocks of the Web</li>
 					<li><a href="https://datatracker.ietf.org/doc/html/rfc3986">Uniform Resource Identifier (URI)</a> is what you see in the address bar</li>
@@ -410,23 +415,9 @@
 					<li><a href="https://datatracker.ietf.org/doc/html/rfc8259">JavaScript Object Notation (JSON)</a> is the data model of browser scripting languages</li>
 				</ul>
 			</slide>
-			<slide id="openapi-fundamentals-client-server-web">
-				<title>How the Web Works</title>
-				<img src="web-client-and-server-browser.png" class="fullsize-left"/>
-			</slide>
 			<slide id="openapi-fundamentals-client-server-api">
 				<title>How APIs Works</title>
 				<img src="web-client-and-server-api.png" class="fullsize-left"/>
-			</slide>
-			<slide id="openapi-fundamentals-uri">
-				<title>Uniform Resource Identifier (URI)</title>
-				<ul>
-					<li>Individual resources are identified by uniformly defined identifiers</li>
-					<li>Tasks are completed by traversing a number of resources</li>
-					<li><em>Scheme</em> defines how identifiers are assigned: <code>http</code></li>
-					<li><em>Authority</em> defines a naming authority: <code>openapi.org</code></li>
-					<li><em>Path</em> is a hierarchical namespace: <code>openapi.org</code></li>
-				</ul>
 			</slide>
 			<slide id="openapi-fundamentals-uri-space">
 				<title>URI Spaces</title>
@@ -454,6 +445,16 @@
 		</part>
 		<part id="openapi-fundamentals-resources">
 			<title>Resources: URI Paths</title>
+			<slide id="openapi-fundamentals-uri">
+				<title>Uniform Resource Identifier (URI)</title>
+				<ul>
+					<li>Individual resources are identified by uniformly defined identifiers</li>
+					<li>Tasks are completed by traversing a number of resources</li>
+					<li><em>Scheme</em> defines how identifiers are assigned: <code>http</code></li>
+					<li><em>Authority</em> defines a naming authority: <code>openapi.org</code></li>
+					<li><em>Path</em> is a hierarchical namespace: <code>openapi.org</code></li>
+				</ul>
+			</slide>
 			<slide id="value-openapi-github-openapi">
 				<title>OpenAPI: Organized by Resources</title>
 				<img src="github-api-openapi-paths.png" class="fullsize-left"/>
