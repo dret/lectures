@@ -535,6 +535,27 @@
 				<title>API Response with Media Type</title>
 				<listing src="github-get-by-username.yaml"/>
 			</slide>
+			<slide id="openapi-fundamentals-components">
+				<title>OpenAPI Components: Don't Repeat Yourself</title>
+			</slide>
+			<slide id="openapi-fundamentals-high-level">
+				<title>30'000 ft View of OpenAPI 3.1.0</title>
+				<ul>
+					<li><code>openapi:</code> Defines which spec version is used</li>
+					<li><code>info:</code> Provides metadata about the API</li>
+					<li><code>servers:</code> Information about available servers</li>
+					<li><code>paths:</code> Paths and operations for the API</li>
+					<li><code>webhooks:</code> Support for server-initiated interactions</li>
+					<li><code>components:</code> Reusable components for the description</li>
+					<li><code>security:</code> Declaration of security mechanisms</li>
+					<li><code>tags:</code> Used for grouping concepts across the API</li>
+					<li><code>externalDocs:</code> Additional external documentation</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-easy">
+				<title>OpenAPI: The Easy Bits</title>
+				<listing src="github-preamble.yaml"/>
+			</slide>
 		</part>
 		<part id="openapi-fundamentals-conclusions>">
 			<title>An Overview of OpenAPI: Conclusions</title>
