@@ -366,8 +366,8 @@
 					<li><em>JavaScript Object Notation (JSON)</em> (2001) became the <q>web-scale</q> data format</li>
 					<li>JSON is a good approximation for the data models of many programming languages</li>
 					<li>JSON is easy to understand but cumbersome to read and write</li>
-					<listing src="minimal.json"/>
 				</ul>
+				<listing src="minimal.json"/>
 			</slide>
 			<slide id="openapi-fundamentals-yaml-history">
 				<title>YAML: JSON but more Readable</title>
@@ -376,7 +376,7 @@
 					<li>Around 2005 YAML started to align with JSON</li>
 					<li>YAML is human-centric and based on indentation as structure</li>
 				</ul>
-				<listing src="minimal.json"/>
+				<listing src="minimal.yaml"/>
 			</slide>
 			<slide id="openapi-fundamentals-greet-json">
 				<title>Minimal OpenAPI in JSON</title>
