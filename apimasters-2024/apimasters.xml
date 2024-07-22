@@ -359,7 +359,7 @@
 					<li>OpenAPI must use a structure format to describe these concepts</li>
 				</ul>
 			</slide>
-			<slide id="openapi-fundamentals-json">
+			<slide id="openapi-fundamentals-json-history">
 				<title>JSON: Today's Standard Structured Data</title>
 				<ul>
 					<li><em>JavaScript</em> (1995) bridged many worlds because it ran in browsers</li>
@@ -369,7 +369,7 @@
 					<listing src="minimal.json"/>
 				</ul>
 			</slide>
-			<slide id="openapi-fundamentals-yaml">
+			<slide id="openapi-fundamentals-yaml-history">
 				<title>YAML: JSON but more Readable</title>
 				<ul>
 					<li><em>YAML Ain't Markup Language (YAML)</em> started in 2001 as an alternative to XML</li>
@@ -466,8 +466,31 @@
 		</part>
 		<part id="openapi-fundamentals-representations">
 			<title>Representations: Requests and Responses</title>
+			<slide id="openapi-fundamentals-representation-options">
+				<title>Data Exchange with HTTP APIs</title>
+				<ul>
+					<li><em>Query parameters</em> (rooted in HTML forms)</li>
+					<li><em>Media Types</em> (rooted in Email and Browsers)</li>
+					<li><em>JSON</em> (rooted in shared structured data)</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-query-params">
+				<title>Query Parameters in URIs and HTTP</title>
+			</slide>
+			<slide id="openapi-fundamentals-path-parameter">
+				<title>Path Parameters in OpenAPI</title>
+				<listing src="github-get-by-username.yaml"/>
+				<pre>GET https://api.github.com/users/octocat</pre>
+			</slide>
+			<slide id="openapi-fundamentals-media-types">
+				<title>Identifying Resource Types on the Internet</title>
+			</slide>
 			<slide id="openapi-fundamentals-json">
-				<title>JavaScript Object Notation (JSON)</title>
+				<title>Web-level Structured Data</title>
+				<ul>
+					<li><em>JavaScript Object Notation (JSON)</em> for exchanging structured data</li>
+					<li><em>JSON Schema</em> for describing valid structured data</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="openapi-fundamentals-conclusions>">

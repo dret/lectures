@@ -1,0 +1,17 @@
+paths:
+  "/users/{username}":
+    get:
+      summary: Get a user
+      tags:
+      - users
+      operationId: users/get-by-username
+      externalDocs:
+        description: API method documentation
+        url: https://docs.github.com/rest/users/users#get-a-user
+      parameters:
+        name: username
+        description: The handle for the GitHub user account.
+        in: path
+        required: true
+        schema:
+          type: string
