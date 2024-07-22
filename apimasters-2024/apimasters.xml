@@ -410,9 +410,13 @@
 					<li><a href="https://datatracker.ietf.org/doc/html/rfc8259">JavaScript Object Notation (JSON)</a> is the data model of browser scripting languages</li>
 				</ul>
 			</slide>
-			<slide id="openapi-fundamentals-web">
+			<slide id="openapi-fundamentals-client-server-web">
 				<title>How the Web Works</title>
-				<img src="web-browser-and-server.png" class="fullsize-left"/>
+				<img src="web-client-and-server-browser.png" class="fullsize-left"/>
+			</slide>
+			<slide id="openapi-fundamentals-client-server-api">
+				<title>How APIs Works</title>
+				<img src="web-client-and-server-api.png" class="fullsize-left"/>
 			</slide>
 			<slide id="openapi-fundamentals-uri">
 				<title>Uniform Resource Identifier (URI)</title>
