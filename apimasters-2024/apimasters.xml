@@ -498,6 +498,17 @@
 			</slide>
 			<slide id="openapi-fundamentals-media-types">
 				<title>Identifying Resource Types on the Internet</title>
+				<ul>
+					<li><em>Multipurpose Internet Mail Extensions (MIME)</em> started in 1992</li>
+					<li><em>Media Types</em> became the new terminology in 1996</li>
+					<li>Identification for well-known content types (~2000)</li>
+					<ul>
+						<li><em>Text:</em> Plain, HTML, …</li>
+						<li><em>Images:</em> JPEG, PNG, GIF, …</li>
+						<li><em>Application:</em> PDF, XML, JSON, …</li>
+					</ul>
+					<li>Many APIs have domain-specific data models</li>
+				</ul>
 			</slide>
 			<slide id="openapi-fundamentals-json">
 				<title>Web-level Structured Data</title>
