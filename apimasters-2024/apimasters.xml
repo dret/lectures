@@ -463,24 +463,33 @@
 				<listing src="openapis-org-request.txt"/>
 				<listing src="openapis-org-response.txt"/>
 			</slide>
+			<slide id="openapi-fundamentals-query-params">
+				<title>Parameters in URIs and HTTP</title>
+				<ul>
+					<li>A simple way to send data from browser to server</li>
+					<ul>
+						<li>Embedded in URI: <code>https://github.com/octocat</code></li>
+						<li>Appended to URI: <code>https://github.com/octocat?tab=repositories</code></li>
+					</ul>
+					<li>Limited in size (2kB is a relatively safe limit)</li>
+					<li>Data is part of URI and thus <q>invisible</q> to HTTP</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-path-parameter">
+				<title>URI Parameters in OpenAPI</title>
+				<listing src="github-get-by-username.yaml"/>
+				<pre>GET https://api.github.com/users/octocat</pre>
+			</slide>
 		</part>
 		<part id="openapi-fundamentals-representations">
 			<title>Representations: Requests and Responses</title>
 			<slide id="openapi-fundamentals-representation-options">
 				<title>Data Exchange with HTTP APIs</title>
 				<ul>
-					<li><em>Query parameters</em> (rooted in HTML forms)</li>
+					<li><em>URI parameters</em> (embedded in the URI)</li>
 					<li><em>Media Types</em> (rooted in Email and Browsers)</li>
 					<li><em>JSON</em> (rooted in shared structured data)</li>
 				</ul>
-			</slide>
-			<slide id="openapi-fundamentals-query-params">
-				<title>Query Parameters in URIs and HTTP</title>
-			</slide>
-			<slide id="openapi-fundamentals-path-parameter">
-				<title>Path Parameters in OpenAPI</title>
-				<listing src="github-get-by-username.yaml"/>
-				<pre>GET https://api.github.com/users/octocat</pre>
 			</slide>
 			<slide id="openapi-fundamentals-media-types">
 				<title>Identifying Resource Types on the Internet</title>
