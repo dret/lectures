@@ -423,25 +423,6 @@
 				<title>URI Spaces</title>
 				<listing src="github-uri-space.txt"/>
 			</slide>
-			<slide id="openapi-fundamentals-http">
-				<title>Hypertext Transfer Protocol (HTTP)</title>
-				<ul>
-					<li>The <q>language</q> how browsers and servers communicate</li>
-					<li>Request/response model where the browser always initiates the interaction</li>
-					<li>Each request has a <em>request method</em> (e.g., <code>GET</code>)</li>
-					<li>Each response has a <em>response status</em> (e.g., <code>200 OK</code>)</li>
-					<li>Requests and responses use <em>header fields</em> for metadata</li>
-					<li>Requests and responses can have a <em>message body</em></li>
-				</ul>
-			</slide>
-			<slide id="openapi-fundamentals-http-interaction">
-				<title>HTTP Example: Accessing OAI</title>
-				<listing src="openapis-org-request.txt"/>
-				<listing src="openapis-org-response.txt"/>
-			</slide>
-			<slide id="openapi-fundamentals-json">
-				<title>JavaScript Object Notation (JSON)</title>
-			</slide>
 		</part>
 		<part id="openapi-fundamentals-resources">
 			<title>Resources: URI Paths</title>
@@ -466,9 +447,28 @@
 		</part>
 		<part id="openapi-fundamentals-interactions">
 			<title>Interactions: Operations and Parameters</title>
+			<slide id="openapi-fundamentals-http">
+				<title>Hypertext Transfer Protocol (HTTP)</title>
+				<ul>
+					<li>The <q>language</q> how browsers and servers communicate</li>
+					<li>Request/response model where the browser always initiates the interaction</li>
+					<li>Each request has a <em>request method</em> (e.g., <code>GET</code>)</li>
+					<li>Each response has a <em>response status</em> (e.g., <code>200 OK</code>)</li>
+					<li>Requests and responses use <em>header fields</em> for metadata</li>
+					<li>Requests and responses can have a <em>message body</em></li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-http-interaction">
+				<title>HTTP Example: Accessing OAI</title>
+				<listing src="openapis-org-request.txt"/>
+				<listing src="openapis-org-response.txt"/>
+			</slide>
 		</part>
 		<part id="openapi-fundamentals-representations">
 			<title>Representations: Requests and Responses</title>
+			<slide id="openapi-fundamentals-json">
+				<title>JavaScript Object Notation (JSON)</title>
+			</slide>
 		</part>
 		<part id="openapi-fundamentals-conclusions>">
 			<title>An Overview of OpenAPI: Conclusions</title>
