@@ -14,8 +14,4 @@ paths:
         '200':
           description: Response
           content:
-            application/json:
-              schema:
-                oneOf:
-                - "$ref": "#/components/schemas/private-user"
-                - "$ref": "#/components/schemas/public-user"
+            application/pdf: {}

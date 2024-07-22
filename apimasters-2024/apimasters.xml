@@ -477,7 +477,7 @@
 			</slide>
 			<slide id="openapi-fundamentals-path-parameter">
 				<title>URI Parameters in OpenAPI</title>
-				<listing src="github-get-by-username.yaml"/>
+				<listing src="github-get-by-username.yaml" line="1-12"/>
 				<pre>GET https://api.github.com/users/octocat</pre>
 			</slide>
 			<slide id="openapi-fundamentals-path-parameter">
@@ -503,19 +503,29 @@
 					<li><em>Media Types</em> became the new terminology in 1996</li>
 					<li>Identification for well-known content types (~2000)</li>
 					<ul>
-						<li><em>Text:</em> Plain, HTML, …</li>
+						<li><em>Text:</em> plain text, HTML, …</li>
 						<li><em>Images:</em> JPEG, PNG, GIF, …</li>
 						<li><em>Application:</em> PDF, XML, JSON, …</li>
 					</ul>
 					<li>Many APIs have domain-specific data models</li>
 				</ul>
 			</slide>
+			<slide id="openapi-fundamentals-response">
+				<title>API Response with Media Type</title>
+				<listing src="github-get-by-username-pdf.yaml"/>
+			</slide>
 			<slide id="openapi-fundamentals-json">
 				<title>Web-level Structured Data</title>
 				<ul>
 					<li><em>JavaScript Object Notation (JSON)</em> for exchanging structured data</li>
+					<li><code>application/json</code> says nothing about the data itself</li>
 					<li><em>JSON Schema</em> for describing valid structured data</li>
+					<li>OpenAPI uses JSON Schema for describing structured data</li>
 				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-json-example">
+				<title>API Response: Structured Data</title>
+				<listing src="octocat.json" line="1-15"/>
 			</slide>
 		</part>
 		<part id="openapi-fundamentals-conclusions>">
