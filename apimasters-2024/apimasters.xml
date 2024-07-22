@@ -352,6 +352,7 @@
 			</slide>
 			<slide id="openapi-fundamentals-openapi-structure">
 				<title>OpenAPI is Structured Data</title>
+				<img src="food-label.png" title="FDA Nutrition Facts Label" href="https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
 					<li>APIs described by OpenAPI are described in a structured way</li>
 					<li><link href="openapi-fundamentals-resources">Resources</link>, <link href="openapi-fundamentals-interactions">interactions</link>, and <link href="openapi-fundamentals-representations">representations</link> are core concepts</li>
