@@ -480,6 +480,11 @@
 				<listing src="github-get-by-username.yaml"/>
 				<pre>GET https://api.github.com/users/octocat</pre>
 			</slide>
+			<slide id="openapi-fundamentals-path-parameter">
+				<title>URI Parameters in OpenAPI</title>
+				<listing src="github-users-list.yaml"/>
+				<pre>GET https://api.github.com/users?since=1&amp;per_page=20</pre>
+			</slide>
 		</part>
 		<part id="openapi-fundamentals-representations">
 			<title>Representations: Requests and Responses</title>
