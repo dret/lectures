@@ -475,6 +475,14 @@
 				<listing src="openapis-org-request.txt"/>
 				<listing src="openapis-org-response.txt"/>
 			</slide>
+			<slide id="openapi-fundamentals-search">
+				<title>Sending Data on the Web: Requests</title>
+				<img src="library-of-congress-search.png" class="fullsize-left"/>
+			</slide>
+			<slide id="openapi-fundamentals-search">
+				<title>Receiving Data on the Web: Responses</title>
+				<img src="library-of-congress-search-results.png" class="fullsize-left"/>
+			</slide>
 			<slide id="openapi-fundamentals-query-params">
 				<title>Parameters in URIs and HTTP</title>
 				<ul>
