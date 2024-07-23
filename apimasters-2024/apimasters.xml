@@ -480,7 +480,7 @@
 				<img src="library-of-congress-search.png" href="https://catalog.loc.gov/vwebv/searchAdvanced" class="fullsize-left"/>
 				<pre>https://catalog.loc.gov/vwebv/search?searchArg1=Erik+Wilde&amp;argType1=all&amp;searchCode1=KNAM&amp;searchType=2&amp;combine2=and&amp;searchArg2=API&amp;argType2=all&amp;searchCode2=KTIL</pre>
 			</slide>
-			<slide id="openapi-fundamentals-search-results">
+			<slide id="openapi-fundamentals-search">
 				<title>Receiving Data on the Web: Responses</title>
 				<pre>https://catalog.loc.gov/vwebv/search?searchArg1=Erik+Wilde&amp;argType1=all&amp;searchCode1=KNAM&amp;searchType=2&amp;combine2=and&amp;searchArg2=API&amp;argType2=all&amp;searchCode2=KTIL</pre>
 				<img src="library-of-congress-search-results.png" href="https://catalog.loc.gov/vwebv/searchAdvanced" class="fullsize-left"/>
@@ -512,7 +512,7 @@
 			<slide id="openapi-fundamentals-representation-options">
 				<title>Data Exchange with HTTP APIs</title>
 				<ul>
-					<li><em>URI parameters</em> (embedded in the URI)</li>
+					<li><em>URI and HTTP parameters</em> (<code>path</code>, <code>query</code>, <code>header</code>/<code>cookie</code>)</li>
 					<li><em>Media Types</em> (rooted in Email and Browsers)</li>
 					<li><em>JSON</em> (rooted in shared structured data)</li>
 				</ul>
@@ -549,12 +549,16 @@
 				<listing src="octocat.json" line="1-15"/>
 			</slide>
 			<slide id="openapi-fundamentals-response">
+				<title>API Response with Media Type</title>
+				<listing src="github-get-by-username.yaml"/>
+			</slide>
+			<slide id="openapi-fundamentals-json-schema">
 				<title>JSON Schema for JSON Data</title>
 				<listing src="github-private-user.yaml" line="1-17"/>
 			</slide>
-			<slide id="openapi-fundamentals-response">
-				<title>API Response with Media Type</title>
-				<listing src="github-get-by-username.yaml"/>
+			<slide id="openapi-fundamentals-schema-editor">
+				<title>Receiving Data on the Web: Responses</title>
+				<img src="swagger-editor-private-user.png" class="fullsize-left"/>
 			</slide>
 			<slide id="openapi-fundamentals-components">
 				<title>OpenAPI Components: Don't Repeat Yourself</title>
