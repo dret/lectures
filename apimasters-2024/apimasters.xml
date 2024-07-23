@@ -559,7 +559,13 @@
 		</part>
 		<part id="openapi-fundamentals-conclusions>">
 			<title>An Overview of OpenAPI: Conclusions</title>
-			<slide id="value-openapi-end">
+			<slide id="openapi-fundamentals-summary">
+				<title></title>
+				<ul>
+					
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-end">
 				<title>An Overview of OpenAPI</title>
 				<img src="end.jpg" title="This is the End" class="fullsize-shadow-left"/>
 			</slide>
@@ -573,6 +579,9 @@
 		</part>
 		<part id="practices-api-history">
 			<title>A Brief History of API Practices and Tooling</title>
+		</part>
+		<part id="practices-editing">
+			<title>Editing OpenAPI: Beyond JSON and YAML</title>
 		</part>
 		<part id="practices-linting">
 			<title>Linting: Establishing API Guidelines</title>
