@@ -463,8 +463,8 @@
 				<img src="http-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
 				<title>Hypertext Transfer Protocol (HTTP)</title>
 				<ul>
-					<li>The <q>language</q> how browsers and servers communicate</li>
-					<li>Request/response model where the browser always initiates the interaction</li>
+					<li>The <q>language</q> how clients and servers communicate</li>
+					<li>Request/response model where the client always initiates the interaction</li>
 					<li>Each request has a <em>request method</em> (e.g., <code>GET</code>)</li>
 					<li>Each response has a <em>response status</em> (e.g., <code>200 OK</code>)</li>
 					<li>Requests and responses use <em>header fields</em> for metadata</li>
