@@ -359,6 +359,10 @@
 					<li>OpenAPI must use a structure format to describe these concepts</li>
 				</ul>
 			</slide>
+			<slide id="openapi-fundamentals-object-structure">
+				<title>OpenAPI Object Structure</title>
+				<img src="openapi-object-structure.png" class="fullsize-left" />
+			</slide>
 			<slide id="openapi-fundamentals-json-history">
 				<title>JSON: Today's Standard Structured Data</title>
 				<ul>
@@ -466,22 +470,21 @@
 			<slide id="openapi-fundamentals-query-params">
 				<title>Parameters in URIs and HTTP</title>
 				<ul>
-					<li>A simple way to send data from browser to server</li>
-					<ul>
-						<li>Embedded in URI: <code>https://github.com/octocat</code></li>
-						<li>Appended to URI: <code>https://github.com/octocat?tab=repositories</code></li>
-					</ul>
-					<li>Limited in size (2kB is a relatively safe limit)</li>
-					<li>Data is part of URI and thus <q>invisible</q> to HTTP</li>
+					<li>A simple way to send data from client to server</li>
+					<li><code>path:</code> Embedded in URI (<code>https://github.com/octocat</code>)</li>
+					<li><code>query:</code> Appended to URI (<code>https://github.com/octocat?tab=repositories</code>)</li>
+					<li><code>header:</code> Sent as HTTP header field</li>
+					<li><code>cookie:</code> Sent as part of HTTP cookie management</li>
+					<li>Larger data needs to be sent in <em>HTTP message body</em></li>
 				</ul>
 			</slide>
-			<slide id="openapi-fundamentals-path-parameter">
-				<title>URI Parameters in OpenAPI</title>
+			<slide id="openapi-fundamentals-query-parameter">
+				<title>Path Parameters in OpenAPI</title>
 				<listing src="github-get-by-username.yaml" line="1-12"/>
 				<pre>GET https://api.github.com/users/octocat</pre>
 			</slide>
 			<slide id="openapi-fundamentals-path-parameter">
-				<title>URI Parameters in OpenAPI</title>
+				<title>Query Parameters in OpenAPI</title>
 				<listing src="github-users-list.yaml"/>
 				<pre>GET https://api.github.com/users?since=1&amp;per_page=20</pre>
 			</slide>
