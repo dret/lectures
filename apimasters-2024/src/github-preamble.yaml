@@ -11,7 +11,7 @@ info:
     name: Support
     url: https://support.github.com/contact?tags=dotcom-rest-api
 servers:
-- url: https://api.github.com
+  - url: https://api.github.com
 externalDocs:
   description: GitHub v3 REST API
   url: https://docs.github.com/rest/

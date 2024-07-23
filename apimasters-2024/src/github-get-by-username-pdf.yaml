@@ -4,12 +4,12 @@ paths:
       summary: Get a user
       operationId: users/get-by-username
       parameters:
-      - name: username
-        description: The handle for the GitHub user account.
-        in: path
-        required: true
-        schema:
-          type: string
+        - name: username
+          description: The handle for the GitHub user account.
+          in: path
+          required: true
+          schema:
+            type: string
       responses:
         '200':
           description: Response

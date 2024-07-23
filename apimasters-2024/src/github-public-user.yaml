@@ -15,8 +15,8 @@ public-user:
       format: uri
     gravatar_id:
       type:
-      - string
-      - 'null'
+        - string
+        - 'null'
     url:
       type: string
       format: uri
@@ -52,42 +52,42 @@ public-user:
       type: boolean
     name:
       type:
-      - string
-      - 'null'
+        - string
+        - 'null'
     company:
       type:
-      - string
-      - 'null'
+        - string
+        - 'null'
     blog:
       type:
-      - string
-      - 'null'
+        - string
+        - 'null'
     location:
       type:
-      - string
-      - 'null'
+        - string
+        - 'null'
     email:
       type:
-      - string
-      - 'null'
+        - string
+        - 'null'
       format: email
     notification_email:
       type:
-      - string
-      - 'null'
+        - string
+        - 'null'
       format: email
     hireable:
       type:
-      - boolean
-      - 'null'
+        - boolean
+        - 'null'
     bio:
       type:
-      - string
-      - 'null'
+        - string
+        - 'null'
     twitter_username:
       type:
-      - string
-      - 'null'
+        - string
+        - 'null'
     public_repos:
       type: integer
     public_gists:
@@ -114,65 +114,65 @@ public-user:
         private_repos:
           type: integer
       required:
-      - collaborators
-      - name
-      - space
-      - private_repos
+        - collaborators
+        - name
+        - space
+        - private_repos
     suspended_at:
       type:
-      - string
-      - 'null'
+        - string
+        - 'null'
       format: date-time
     private_gists:
       type: integer
       examples:
-      - 1
+        - 1
     total_private_repos:
       type: integer
       examples:
-      - 2
+        - 2
     owned_private_repos:
       type: integer
       examples:
-      - 2
+        - 2
     disk_usage:
       type: integer
       examples:
-      - 1
+        - 1
     collaborators:
       type: integer
       examples:
-      - 3
+        - 3
   required:
-  - avatar_url
-  - events_url
-  - followers_url
-  - following_url
-  - gists_url
-  - gravatar_id
-  - html_url
-  - id
-  - node_id
-  - login
-  - organizations_url
-  - received_events_url
-  - repos_url
-  - site_admin
-  - starred_url
-  - subscriptions_url
-  - type
-  - url
-  - bio
-  - blog
-  - company
-  - email
-  - followers
-  - following
-  - hireable
-  - location
-  - name
-  - public_gists
-  - public_repos
-  - created_at
-  - updated_at
+    - avatar_url
+    - events_url
+    - followers_url
+    - following_url
+    - gists_url
+    - gravatar_id
+    - html_url
+    - id
+    - node_id
+    - login
+    - organizations_url
+    - received_events_url
+    - repos_url
+    - site_admin
+    - starred_url
+    - subscriptions_url
+    - type
+    - url
+    - bio
+    - blog
+    - company
+    - email
+    - followers
+    - following
+    - hireable
+    - location
+    - name
+    - public_gists
+    - public_repos
+    - created_at
+    - updated_at
   additionalProperties: false
