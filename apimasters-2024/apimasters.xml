@@ -477,11 +477,13 @@
 			</slide>
 			<slide id="openapi-fundamentals-search">
 				<title>Sending Data on the Web: Requests</title>
-				<img src="library-of-congress-search.png" class="fullsize-left"/>
+				<img src="library-of-congress-search.png" href="https://catalog.loc.gov/vwebv/searchAdvanced" class="fullsize-left"/>
+				<pre>https://catalog.loc.gov/vwebv/search?searchArg1=Erik+Wilde&amp;argType1=all&amp;searchCode1=KNAM&amp;searchType=2&amp;combine2=and&amp;searchArg2=API&amp;argType2=all&amp;searchCode2=KTIL</pre>
 			</slide>
-			<slide id="openapi-fundamentals-search">
+			<slide id="openapi-fundamentals-search-results">
 				<title>Receiving Data on the Web: Responses</title>
-				<img src="library-of-congress-search-results.png" class="fullsize-left"/>
+				<pre>https://catalog.loc.gov/vwebv/search?searchArg1=Erik+Wilde&amp;argType1=all&amp;searchCode1=KNAM&amp;searchType=2&amp;combine2=and&amp;searchArg2=API&amp;argType2=all&amp;searchCode2=KTIL</pre>
+				<img src="library-of-congress-search-results.png" href="https://catalog.loc.gov/vwebv/searchAdvanced" class="fullsize-left"/>
 			</slide>
 			<slide id="openapi-fundamentals-query-params">
 				<title>Parameters in URIs and HTTP</title>
