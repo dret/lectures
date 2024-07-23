@@ -562,6 +562,7 @@
 			</slide>
 			<slide id="openapi-fundamentals-components">
 				<title>OpenAPI Components: Don't Repeat Yourself</title>
+				<img src="lego-bricks.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
 					<li>Many concepts/models in APIs are reused</li>
 					<li>Concepts may also be reused across various APIs</li>
