@@ -347,7 +347,7 @@
 		<part id="openapi-fundamentals-machine">
 			<title>OpenAPI as a Machine-Readable Format</title>
 			<slide id="openapi-fundamentals-big-picture">
-				<title>OpenAPI Descriptions: The Big Picture</title>
+				<title>OpenAPI: The Big Picture</title>
 				<img src="api-descriptions-simplified.png" class="fullsize-left" />
 			</slide>
 			<slide id="openapi-fundamentals-openapi-structure">
@@ -356,7 +356,7 @@
 				<ul>
 					<li>APIs described by OpenAPI are described in a structured way</li>
 					<li><link href="openapi-fundamentals-resources">Resources</link>, <link href="openapi-fundamentals-interactions">interactions</link>, and <link href="openapi-fundamentals-representations">representations</link> are core concepts</li>
-					<li>OpenAPI must use a structure format to describe these concepts</li>
+					<li>OpenAPI must use a structured way to describe these concepts</li>
 				</ul>
 			</slide>
 			<slide id="openapi-fundamentals-object-structure">
@@ -368,7 +368,6 @@
 				<ul>
 					<li><em>JavaScript</em> (1995) bridged many worlds because it ran in browsers</li>
 					<li><em>JavaScript Object Notation (JSON)</em> (2001) became the <q>web-scale</q> data format</li>
-					<li>JSON is a good approximation for the data models of many programming languages</li>
 					<li>JSON is easy to understand but cumbersome to read and write</li>
 				</ul>
 				<listing src="minimal.json"/>
@@ -397,6 +396,10 @@
 		</part>
 		<part id="openapi-fundamentals-superstructure">
 			<title>OpenAPI Superstructure: Resources, Interactions, and Representations</title>
+			<slide id="openapi-fundamentals-client-server-web">
+				<title>How the Web Works</title>
+				<img src="web-client-and-server-browser.png" class="fullsize-left"/>
+			</slide>
 			<slide id="openapi-fundamentals-structure">
 				<title>Shaping Your API</title>
 				<ul>
@@ -404,10 +407,6 @@
 					<li><em>Interactions</em> are how you access resources</li>
 					<li><em>Representations</em> define how interactions exchange information</li>
 				</ul>
-			</slide>
-			<slide id="openapi-fundamentals-client-server-web">
-				<title>How the Web Works</title>
-				<img src="web-client-and-server-browser.png" class="fullsize-left"/>
 			</slide>
 			<slide id="openapi-fundamentals-web-api">
 				<title>OpenAPI is for <q>Web APIs</q></title>
@@ -420,7 +419,7 @@
 				</ul>
 			</slide>
 			<slide id="openapi-fundamentals-client-server-api">
-				<title>How APIs Works</title>
+				<title>How APIs Work</title>
 				<img src="web-client-and-server-api.png" class="fullsize-left"/>
 			</slide>
 			<slide id="openapi-fundamentals-uri-space">
@@ -432,21 +431,30 @@
 			<title>Resources: URI Paths</title>
 			<slide id="openapi-fundamentals-uri">
 				<title>Uniform Resource Identifier (URI)</title>
+				<pre>https://www.openapis.org/events</pre>
 				<ul>
 					<li>Individual resources are identified by uniformly defined identifiers</li>
 					<li>Tasks are completed by traversing a number of resources</li>
-					<li><em>Scheme</em> defines how identifiers are assigned: <code>http</code></li>
+					<li><em>Scheme</em> defines how identifiers are assigned: <code>https</code></li>
 					<li><em>Authority</em> defines a naming authority: <code>openapi.org</code></li>
-					<li><em>Path</em> is a hierarchical namespace: <code>openapi.org</code></li>
+					<li><em>Path</em> is a hierarchical namespace: <code>/about</code></li>
 				</ul>
 			</slide>
-			<slide id="value-openapi-github-openapi">
+			<slide id="openapi-fundamentals-github-openapi-paths">
 				<title>OpenAPI: Organized by Resources</title>
 				<img src="github-api-openapi-paths.png" class="fullsize-left"/>
 			</slide>
-			<slide id="value-openapi-github-openapi">
+			<slide id="openapi-fundamentals-github-openapi-editor">
 				<title>OpenAPI Editors</title>
 				<img src="github-api-swagger-editor.png" class="fullsize-left"/>
+			</slide>
+			<slide id="openapi-fundamentals-adding-paths">
+				<title>Evolving APIs by Adding Paths</title>
+				<ul>
+					<li>Evolving APIs over time is a good practice</li>
+					<li>Changing an API should not affect existing consumers</li>
+					<li>Adding paths is a good way to avoid breaking changes</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="openapi-fundamentals-interactions">
