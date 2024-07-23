@@ -562,6 +562,16 @@
 			</slide>
 			<slide id="openapi-fundamentals-components">
 				<title>OpenAPI Components: Don't Repeat Yourself</title>
+				<ul>
+					<li>Many concepts/models in APIs are reused</li>
+					<li>Concepts may also be reused across various APIs</li>
+					<li>Avoiding copy/paste always is a good idea</li>
+					<li><code>components</code> allows to define reusable <q>building blocks</q></li>
+					<li><code>components</code> supports 10 types of building blocks</li>
+					<ul>
+						<li><code>pathItems</code>, <code>schemas</code>, <code>responses</code>, <code>parameters</code>, <code>examples</code>, …</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="openapi-fundamentals-high-level">
 				<title>30'000 ft View of OpenAPI 3.1.0</title>
