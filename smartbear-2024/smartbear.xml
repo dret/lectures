@@ -121,6 +121,18 @@
 		</part>
 		<part id="api-management">
 			<title>Modern API Management</title>
+			<slide id="api-management-lifecycle">
+				<title>Creating Capabilities</title>
+				<img src="API-management-lifecycle.png" class="fullsize-shadow-left"/>
+			</slide>
+			<slide id="api-management-product">
+				<title>Curating Capabilities</title>
+				<img src="API-management-product.png" class="fullsize-shadow-left"/>
+			</slide>
+			<slide id="api-management-marketing">
+				<title>Publishing Capabilities</title>
+				<img src="API-management-marketing.png" class="fullsize-shadow-left"/>
+			</slide>
 		</part>
 		<part id="api-platform-maturity">
 			<title>API Platform Maturity</title>
@@ -182,18 +194,6 @@
 			<slide id="maturity-model-improvement">
 				<title>Improving Platform Engineering</title>
 				<img src="platform-engineering-maturity-model-cncf.png" source="CNCF Platform Engineering Maturity Model" href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/" class="fullsize-shadow-left"/>
-			</slide>
-			<slide id="api-management-lifecycle">
-				<title>Creating Capabilities</title>
-				<img src="API-management-lifecycle.png" class="fullsize-shadow-left"/>
-			</slide>
-			<slide id="api-management-product">
-				<title>Curating Capabilities</title>
-				<img src="API-management-product.png" class="fullsize-shadow-left"/>
-			</slide>
-			<slide id="api-management-marketing">
-				<title>Publishing Capabilities</title>
-				<img src="API-management-marketing.png" class="fullsize-shadow-left"/>
 			</slide>
 			<slide id="api-platform-specifics">
 				<title>API Platform Specifics</title>
