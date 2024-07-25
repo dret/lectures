@@ -47,7 +47,7 @@
 			</div>
 		</slide>
 		<part id="platform-evolution">
-			<title>Platform Evolution</title>
+			<title>Platform (Engineering) Evolution</title>
 			<slide id="platform-trend">
 				<title>Platforms are Trending</title>
 				<img src="platform-engineering-trend.png" href="https://trends.google.com/trends/explore?date=all&amp;q=platform%20engineering&amp;hl=en-US" class="fullsize-left" />
@@ -85,7 +85,13 @@
 				<title>Ecosystem of Building Blocks</title>
 				<img src="platform-engineering-evolution-building-blocks.png" class="fullsize-shadow-left" style=" width : 60% "/>
 			</slide>
-			
+		</part>
+		<part id="platform-success">
+			<title>Platform Success Factors</title>
+		</part>
+		
+		<part>
+			<title>Old Stuff</title>
 			<slide id="platform-definitions">
 				<title>Platform is a Fuzzy Term</title>
 				<ul>
@@ -149,9 +155,6 @@
 					<li><em>Consultants:</em> Identify state and goal and areas of investment</li>
 				</ul>
 			</slide>
-		</part>
-		<part id="building-api-platform">
-			<title>Building API Platforms</title>
 			<slide id="api-management-lifecycle">
 				<title>Creating Capabilities</title>
 				<img src="API-management-lifecycle.png" class="fullsize-shadow-left"/>
@@ -173,10 +176,11 @@
 				</ul>
 			</slide>
 		</part>
+		
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="thanks">
-				<title>Thank You! Start Platforming!</title>
+				<title>Thank You! Start Platforming with a Purpose!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
 					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
