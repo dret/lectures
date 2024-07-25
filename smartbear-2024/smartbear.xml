@@ -136,49 +136,6 @@
 		</part>
 		<part id="api-platform-maturity">
 			<title>API Platform Maturity</title>
-		</part>
-		
-		<part>
-			<title>Old Stuff</title>
-			<slide id="platform-definitions">
-				<title>Platform is a Fuzzy Term</title>
-				<ul>
-					<li><em>Platform Business</em> is a specific type of business model</li>
-					<li><em>Business Platform</em> defines your business-level building blocks</li>
-					<li><em>API Platform</em> exposes APIs to (external and/or internal) consumers</li>
-					<li><em>Developer Platform</em> supports (internal) developers with their tasks</li>
-				</ul>
-			</slide>
-			<slide id="starting">
-				<title>Getting Started with APIs</title>
-				<ul>
-					<li>Initial pockets of experimentation with APIs</li>
-					<li>Risk is small-ish because the surface is relatively small</li>
-					<li>High degree of freedom because there is no established platform</li>
-					<li>Different teams will come up with different solutions for the same problem</li>
-				</ul>
-			</slide>
-			<slide id="momentum">
-				<title>APIs are gaining Momentum</title>
-				<ul>
-					<li>Internal and external factors help with the adoption of APIs</li>
-					<li>Risk becomes higher because the surface is growing rapidly</li>
-					<li>Practices and patterns emerge by teams sharing information and tooling</li>
-					<li>Governance becomes an issue to manage and support growth</li>
-				</ul>
-			</slide>
-			<slide id="scaling">
-				<title>Scaling API Landscapes</title>
-				<ul>
-					<li>APIs are recognized as being strategic for both internal and external reasons</li>
-					<li>Risk management needs to be adapted to the strategic importance</li>
-					<li>More API development means increasing economies of scale</li>
-					<li>Scaling the API practice leads to some form of platform engineering</li>
-				</ul>
-			</slide>
-		</part>
-		<part id="platform-engineering-maturity">
-			<title>Platform Engineering Maturity</title>
 			<slide id="maturity-model-aspects">
 				<title>Platform Engineering Maturity: Aspects</title>
 				<img src="platform-engineering-maturity-model-cncf-aspects.png" source="CNCF Platform Engineering Maturity Model" href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/" class="fullsize-shadow-left"/>
@@ -196,7 +153,6 @@
 				<img src="platform-engineering-maturity-model-cncf.png" source="CNCF Platform Engineering Maturity Model" href="https://tag-app-delivery.cncf.io/whitepapers/platform-eng-maturity-model/" class="fullsize-shadow-left"/>
 			</slide>
 		</part>
-		
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="thanks">
