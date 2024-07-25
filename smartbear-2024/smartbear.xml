@@ -91,14 +91,29 @@
 			<slide id="full-lifecycle">
 				<title>Full Lifecycle Support</title>
 				<img src="platform-engineering-evolution-agile.png"  style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Support from initial design to decommissioning</li>
+					<li>Larger set of tools than in the traditional platform model</li>
+					<li>The <a href="https://tools.openapis.org/">tooling landscape</a> is constantly evolving</li>
+				</ul>
 			</slide>
 			<slide id="platform-as-a-product">
 				<title>Self-Service: Platform as a Product</title>
 				<img src="platform-engineering-evolution-digital-transformation.png"  style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Approaching platform management with the users in mind</li>
+					<li>Creating and managing a backlog</li>
+					<li>Focus on ease of use and <em>Developer Experience (DX)</em></li>
+				</ul>
 			</slide>
 			<slide id="participatory">
-				<title>Contributions and Participation</title>
+				<title>Participation and Collaboration</title>
 				<img src="platform-engineering-evolution-ecosystem.png"  style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Support the sequence of <em>innovation, adoption, and productization</em></li>
+					<li>Support the <em>discovery and consumption</em> of capabilities</li>
+					<li>Support the <em>production and publication</em> of capabilities</li>
+				</ul>
 			</slide>
 			<slide id="necessary-factors">
 				<title>(Some) Necessary Success Factors</title>
