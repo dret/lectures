@@ -37,7 +37,6 @@
 			<title>Welcome to SmartBear Connect!</title>
 			<img src="smartbear-connect.png" class="fullsize"/>
 		</slide>
-<!--
 		<slide id="getting-apis-to-work">
 			<title>Getting APIs to Work</title>
 		 	<div style=" float : left ; width : 42% ; margin : 0% 2% 0% 4% ; ">
@@ -51,7 +50,6 @@
 				</div>
 			</div>
 		</slide>
- -->
 		<part id="platform-evolution">
 			<title>Platform (Engineering) Evolution</title>
 			<slide id="platform-trend">
@@ -96,7 +94,7 @@
 			<title>Platform Success Factors</title>
 			<slide id="full-lifecycle">
 				<title>Full Lifecycle Support</title>
-				<img src="platform-engineering-evolution-agile.png"  style="float: right ; width : 30% ; margin : 20% 4% 4% 4% ; "/>
+				<img src="platform-engineering-evolution-agile.png"  style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
 					<li>Support from initial design to decommissioning</li>
 					<li>Larger set of tools than in the traditional platform model</li>
@@ -105,7 +103,7 @@
 			</slide>
 			<slide id="platform-as-a-product">
 				<title>Self-Service: Platform as a Product</title>
-				<img src="platform-engineering-evolution-digital-transformation.png"  style="float: right ; width : 30% ; margin : 20% 4% 4% 4% ; "/>
+				<img src="platform-engineering-evolution-digital-transformation.png"  style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
 					<li>Approaching platform management with the users in mind</li>
 					<li>Creating and managing a backlog</li>
@@ -114,7 +112,7 @@
 			</slide>
 			<slide id="participatory">
 				<title>Participation and Collaboration</title>
-				<img src="platform-engineering-evolution-ecosystem.png"  style="float: right ; width : 30% ; margin : 20% 4% 4% 4% ; "/>
+				<img src="platform-engineering-evolution-ecosystem.png"  style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
 					<li>Support the sequence of <em>innovation, adoption, and productization</em></li>
 					<li>Support the <em>discovery and consumption</em> of capabilities</li>
