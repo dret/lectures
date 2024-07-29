@@ -134,11 +134,12 @@
 			<title>API Management with API Platforms</title>
 			<slide id="apim-evolution">
 				<title>From Plumbing to Strategy</title>
-				<ul>
+				<ol>
 					<li>Fix the security issues of <em>open</em> APIs</li>
 					<li>Provide a governance structure for all APIs</li>
 					<li>Expose all APIs for easy discovery and use</li>
-				</ul>
+					<li>Make API platform part of the development platform</li>
+				</ol>
 			</slide>
 			<slide id="api-management-lifecycle">
 				<title>Creating Capabilities</title>
