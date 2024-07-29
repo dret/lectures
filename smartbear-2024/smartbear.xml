@@ -132,6 +132,14 @@
 		</part>
 		<part id="api-management">
 			<title>Modern API Management</title>
+			<slide id="apim-evolution">
+				<title>From Plumbing to Strategy</title>
+				<ul>
+					<li>Fix the security issues of <em>open</em> APIs</li>
+					<li>Provide a governance structure for all APIs</li>
+					<li>Expose all APIs for easy discovery and use</li>
+				</ul>
+			</slide>
 			<slide id="api-management-lifecycle">
 				<title>Creating Capabilities</title>
 				<img src="API-management-lifecycle.png" class="fullsize-shadow-left"/>
