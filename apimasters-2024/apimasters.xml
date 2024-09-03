@@ -616,36 +616,54 @@
 		<date short="2024-07">July 2024</date>
 		<part id="pactices-api-lifecycle">
 			<title>The API Lifecycle: Powered by OpenAPI</title>
+			<part id="practices-api-first">
+				<title>API First: APIs as First-Class Products</title>
+			</part>
 		</part>
 		<part id="practices-api-history">
 			<title>A Brief History of API Practices and Tooling</title>
 		</part>
 		<part id="practices-editing">
 			<title>Editing OpenAPI: Beyond JSON and YAML</title>
-		</part>
-		<part id="practices-api-first">
-			<title>API First: APIs as First-Class Products</title>
+			<part id="practices-editing-why">
+				<title>Editing: Why</title>
+			</part>
+			<part id="practices-editing-what">
+				<title>Editing: What</title>
+			</part>
+			<part id="practices-editing-how">
+				<title>Editing: How</title>
+			</part>
 		</part>
 		<part id="practices-linting">
 			<title>Linting: Establishing API Guidelines</title>
-			<slide id="practices-linting-use-cases">
-				<title>Use Cases for API Linting</title>
-			</slide>
-			<slide id="practices-guidelines-why">
-				<title>API Guidelines: Why</title>
-			</slide>
-			<slide id="practices-guidelines-what">
-				<title>API Guidelines: What</title>
-			</slide>
-			<slide id="practices-guidelines-how">
-				<title>API Guidelines: How</title>
-			</slide>
+			<part id="practices-linting-why">
+				<title>Linting: Why</title>
+				<slide id="practices-linting-use-cases">
+					<title>Use Cases for API Linting</title>
+				</slide>
+			</part>
+			<part id="practices-linting-what">
+				<title>Linting: What</title>
+			</part>
+			<part id="practices-linting-how">
+				<title>Linting: How</title>
+			</part>
 		</part>
 		<part id="practices-mocking">
 			<title>Mocking: API First based on API Descriptions</title>
-			<slide id="practices-mocking-use-cases">
-				<title>Use Cases for API Mocking</title>
-			</slide>
+			<part id="practices-mocking-why">
+				<title>Mocking: Why</title>
+				<slide id="practices-mocking-use-cases">
+					<title>Use Cases for API Mocking</title>
+				</slide>
+			</part>
+			<part id="practices-mocking-what">
+				<title>Mocking: What</title>
+			</part>
+			<part id="practices-mocking-how">
+				<title>Mocking: How</title>
+			</part>
 		</part>
 		<part id="practices-openapi-ai">
 			<title>OpenAPI and AI: Emerging Patterns of OpenAPI Usage with LLMs</title>
