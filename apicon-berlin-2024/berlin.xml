@@ -812,6 +812,11 @@
 	<presentation id="platform-success-factors">
 		<title>Platform Success Factors</title>
 		<date short="2024-10-22">October 22, 2024</date>
+		<toc class="abstract">Platform Engineering is one of the big trends of the recent past. Why is important and what are the main success factors of platform engineering? The easiest way to get started is by understanding platforms as a way for better scaling development cost: By pushing repeated work into the platform, you benefit from economies of scale. A bit more advanced is to use platforms as a vehicle for standardization: By making opinionated decisions, you encourage and support teams to adopt a shared set of tools and technologies. The most challenging factor is to use platforms as a way to boost innovation: When teams start contributing their products to the platform, collaboration effort is reduced and the platform becomes a digital representation of your organization's core capabilities. We will look at these success factors in detail and also discuss specific steps you can take to get the most out of your platform investments.</toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract"><toc class="abstract"/></p>
+		</slide>
 		<part id="platform-evolution">
 			<title>The Evolution of Platforms</title>
 			<slide id="gartner-platform-engineering">
