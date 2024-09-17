@@ -185,12 +185,10 @@
 		<title short="Error Messages for HTTP APIs">Error Messages for HTTP APIs: Standards, Patterns, and Practices</title>
 		<date short="2024-04-25">April 25, 2024</date>
 		<toc class="abstract">Reporting errors is a fundamental aspect of API design. The way it's done can differ between APIs, API technologies, and API styles, but since it is a very common pattern it makes sense to not reinvent the wheel for every single API. We look at how to report errors in HTTP APIs but the lessons learned in this session can be applied to other technologies and styles as well. Beyond the format there also is the question which patterns to apply so that API designers get as much support as possible from their platform when it comes to managing the error messages of their APIs. The format that we discuss is a successor of the popular RFC 7807 error format. We'll discuss why there is a new version, what the changes are, and how to best use it in your APIs and your API landscape.</toc>
-<!--
 		<slide id="summary-error-messages">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
--->
 		<part id="intro-error-messages">
 			<title>Introduction</title>
 			<slide id="dret-error-messages">
