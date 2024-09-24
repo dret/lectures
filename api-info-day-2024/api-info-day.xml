@@ -425,7 +425,7 @@
 			<slide id="http-problem">
 				<title>HTTP Problem Details</title>
 				<ul>
-					<li><a href="http://webconcepts.info/concepts/http-status-code/">HTTP status codes</a> are useful but minimalistic</li>
+					<li><link href="iana-http-status-codes">HTTP status codes</link> are useful but minimalistic</li>
 					<ul>
 						<li>Their well-defined semantics allow intermediaries to act on them</li>
 						<li>Servers may want to convey additional information with them</li>
