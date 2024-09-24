@@ -54,6 +54,371 @@
 		</part>
 		<part id="http-errors">
 			<title>Errors in HTTP</title>
+			<slide id="iana-http-status-codes">
+				<title><a href="https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml">IANA HTTP Status Code Registry</a></title>
+				<style>
+					.table_component table {
+					border: 1px solid #dededf;
+					height: 100%;
+					width: 95%;
+					table-layout: auto;
+					border-collapse: collapse;
+					border-spacing: 1px;
+					text-align: left;
+					}
+					
+					.table_component caption {
+					caption-side: top;
+					text-align: left;
+					}
+					
+					.table_component th {
+					border: 1px solid #dededf;
+					background-color: #eceff1;
+					padding: 5px;
+					}
+					
+					.table_component td {
+					border: 1px solid #dededf;
+					padding: 5px;
+					}
+					
+					.table_component tr:nth-child(even) td {
+					background-color: #f8f8f8;
+					}
+					
+					.table_component tr:nth-child(odd) td {
+					background-color: #ffffff;
+					}
+				</style>
+				<div class="table_component" role="region" tabindex="0">
+					<table>
+						<thead>
+							<tr>
+								<th>Value</th>
+								<th>Description</th>
+								<th>Reference </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>100</td>
+								<td>Continue</td>
+								<td>[RFC9110, Section 15.2.1]</td>
+							</tr>
+							<tr>
+								<td>101</td>
+								<td>Switching Protocols</td>
+								<td>[RFC9110, Section 15.2.2]</td>
+							</tr>
+							<tr>
+								<td>102</td>
+								<td>Processing</td>
+								<td>[RFC2518] </td>
+							</tr>
+							<tr>
+								<td>103</td>
+								<td>Early Hints</td>
+								<td>[RFC8297] </td>
+							</tr>
+							<tr>
+								<td>200</td>
+								<td>OK</td>
+								<td>[RFC9110, Section 15.3.1]</td>
+							</tr>
+							<tr>
+								<td>201</td>
+								<td>Created</td>
+								<td>[RFC9110, Section 15.3.2]</td>
+							</tr>
+							<tr>
+								<td>202</td>
+								<td>Accepted</td>
+								<td>[RFC9110, Section 15.3.3]</td>
+							</tr>
+							<tr>
+								<td>203</td>
+								<td>Non-Authoritative Information</td>
+								<td>[RFC9110, Section 15.3.4]</td>
+							</tr>
+							<tr>
+								<td>204</td>
+								<td>No Content</td>
+								<td>[RFC9110, Section 15.3.5]</td>
+							</tr>
+							<tr>
+								<td>205</td>
+								<td>Reset Content</td>
+								<td>[RFC9110, Section 15.3.6]</td>
+							</tr>
+							<tr>
+								<td>206</td>
+								<td>Partial Content</td>
+								<td>[RFC9110, Section 15.3.7]</td>
+							</tr>
+							<tr>
+								<td>207</td>
+								<td>Multi-Status</td>
+								<td>[RFC4918] </td>
+							</tr>
+							<tr>
+								<td>208</td>
+								<td>Already Reported</td>
+								<td>[RFC5842] </td>
+							</tr>
+							<tr>
+								<td>226</td>
+								<td>IM Used</td>
+								<td>[RFC3229] </td>
+							</tr>
+							<tr>
+								<td>300</td>
+								<td>Multiple Choices</td>
+								<td>[RFC9110, Section 15.4.1]</td>
+							</tr>
+							<tr>
+								<td>301</td>
+								<td>Moved Permanently</td>
+								<td>[RFC9110, Section 15.4.2]</td>
+							</tr>
+							<tr>
+								<td>302</td>
+								<td>Found</td>
+								<td>[RFC9110, Section 15.4.3]</td>
+							</tr>
+							<tr>
+								<td>303</td>
+								<td>See Other</td>
+								<td>[RFC9110, Section 15.4.4]</td>
+							</tr>
+							<tr>
+								<td>304</td>
+								<td>Not Modified</td>
+								<td>[RFC9110, Section 15.4.5]</td>
+							</tr>
+							<tr>
+								<td>305</td>
+								<td>Use Proxy</td>
+								<td>[RFC9110, Section 15.4.6]</td>
+							</tr>
+							<tr>
+								<td>306</td>
+								<td>(Unused)</td>
+								<td>[RFC9110, Section 15.4.7]</td>
+							</tr>
+							<tr>
+								<td>307</td>
+								<td>Temporary Redirect</td>
+								<td>[RFC9110, Section 15.4.8]</td>
+							</tr>
+							<tr>
+								<td>308</td>
+								<td>Permanent Redirect</td>
+								<td>[RFC9110, Section 15.4.9]</td>
+							</tr>
+							<tr>
+								<td>400</td>
+								<td>Bad Request</td>
+								<td>[RFC9110, Section 15.5.1]</td>
+							</tr>
+							<tr>
+								<td>401</td>
+								<td>Unauthorized</td>
+								<td>[RFC9110, Section 15.5.2]</td>
+							</tr>
+							<tr>
+								<td>402</td>
+								<td>Payment Required</td>
+								<td>[RFC9110, Section 15.5.3]</td>
+							</tr>
+							<tr>
+								<td>403</td>
+								<td>Forbidden</td>
+								<td>[RFC9110, Section 15.5.4]</td>
+							</tr>
+							<tr>
+								<td>404</td>
+								<td>Not Found</td>
+								<td>[RFC9110, Section 15.5.5]</td>
+							</tr>
+							<tr>
+								<td>405</td>
+								<td>Method Not Allowed</td>
+								<td>[RFC9110, Section 15.5.6]</td>
+							</tr>
+							<tr>
+								<td>406</td>
+								<td>Not Acceptable</td>
+								<td>[RFC9110, Section 15.5.7]</td>
+							</tr>
+							<tr>
+								<td>407</td>
+								<td>Proxy Authentication Required</td>
+								<td>[RFC9110, Section 15.5.8]</td>
+							</tr>
+							<tr>
+								<td>408</td>
+								<td>Request Timeout</td>
+								<td>[RFC9110, Section 15.5.9]</td>
+							</tr>
+							<tr>
+								<td>409</td>
+								<td>Conflict</td>
+								<td>[RFC9110, Section 15.5.10]</td>
+							</tr>
+							<tr>
+								<td>410</td>
+								<td>Gone</td>
+								<td>[RFC9110, Section 15.5.11]</td>
+							</tr>
+							<tr>
+								<td>411</td>
+								<td>Length Required</td>
+								<td>[RFC9110, Section 15.5.12]</td>
+							</tr>
+							<tr>
+								<td>412</td>
+								<td>Precondition Failed</td>
+								<td>[RFC9110, Section 15.5.13]</td>
+							</tr>
+							<tr>
+								<td>413</td>
+								<td>Content Too Large</td>
+								<td>[RFC9110, Section 15.5.14]</td>
+							</tr>
+							<tr>
+								<td>414</td>
+								<td>URI Too Long</td>
+								<td>[RFC9110, Section 15.5.15]</td>
+							</tr>
+							<tr>
+								<td>415</td>
+								<td>Unsupported Media Type</td>
+								<td>[RFC9110, Section 15.5.16]</td>
+							</tr>
+							<tr>
+								<td>416</td>
+								<td>Range Not Satisfiable</td>
+								<td>[RFC9110, Section 15.5.17]</td>
+							</tr>
+							<tr>
+								<td>417</td>
+								<td>Expectation Failed</td>
+								<td>[RFC9110, Section 15.5.18]</td>
+							</tr>
+							<tr>
+								<td>418</td>
+								<td>(Unused)</td>
+								<td>[RFC9110, Section 15.5.19]</td>
+							</tr>
+							<tr>
+								<td>421</td>
+								<td>Misdirected Request</td>
+								<td>[RFC9110, Section 15.5.20]</td>
+							</tr>
+							<tr>
+								<td>422</td>
+								<td>Unprocessable Content</td>
+								<td>[RFC9110, Section 15.5.21]</td>
+							</tr>
+							<tr>
+								<td>423</td>
+								<td>Locked</td>
+								<td>[RFC4918] </td>
+							</tr>
+							<tr>
+								<td>424</td>
+								<td>Failed Dependency</td>
+								<td>[RFC4918] </td>
+							</tr>
+							<tr>
+								<td>425</td>
+								<td>Too Early</td>
+								<td>[RFC8470] </td>
+							</tr>
+							<tr>
+								<td>426</td>
+								<td>Upgrade Required</td>
+								<td>[RFC9110, Section 15.5.22]</td>
+							</tr>
+							<tr>
+								<td>428</td>
+								<td>Precondition Required</td>
+								<td>[RFC6585] </td>
+							</tr>
+							<tr>
+								<td>429</td>
+								<td>Too Many Requests</td>
+								<td>[RFC6585] </td>
+							</tr>
+							<tr>
+								<td>431</td>
+								<td>Request Header Fields Too Large</td>
+								<td>[RFC6585] </td>
+							</tr>
+							<tr>
+								<td>451</td>
+								<td>Unavailable For Legal Reasons</td>
+								<td>[RFC7725] </td>
+							</tr>
+							<tr>
+								<td>500</td>
+								<td>Internal Server Error</td>
+								<td>[RFC9110, Section 15.6.1]</td>
+							</tr>
+							<tr>
+								<td>501</td>
+								<td>Not Implemented</td>
+								<td>[RFC9110, Section 15.6.2]</td>
+							</tr>
+							<tr>
+								<td>502</td>
+								<td>Bad Gateway</td>
+								<td>[RFC9110, Section 15.6.3]</td>
+							</tr>
+							<tr>
+								<td>503</td>
+								<td>Service Unavailable</td>
+								<td>[RFC9110, Section 15.6.4]</td>
+							</tr>
+							<tr>
+								<td>504</td>
+								<td>Gateway Timeout</td>
+								<td>[RFC9110, Section 15.6.5]</td>
+							</tr>
+							<tr>
+								<td>505</td>
+								<td>HTTP Version Not Supported</td>
+								<td>[RFC9110, Section 15.6.6]</td>
+							</tr>
+							<tr>
+								<td>506</td>
+								<td>Variant Also Negotiates</td>
+								<td>[RFC2295] </td>
+							</tr>
+							<tr>
+								<td>507</td>
+								<td>Insufficient Storage</td>
+								<td>[RFC4918] </td>
+							</tr>
+							<tr>
+								<td>508</td>
+								<td>Loop Detected</td>
+								<td>[RFC5842] </td>
+							</tr>
+							<tr>
+								<td>510</td>
+								<td>Not Extended (OBSOLETED)</td>
+								<td>[RFC2774][Status change of HTTP experiments to Historic] </td>
+							</tr>
+							<tr>
+								<td>511</td>
+								<td>Network Authentication Required</td>
+								<td>[RFC6585] </td>
+							</tr>
+						</tbody>
+					</table></div>
+			</slide>
 		</part>
 		<part id="problem-details">
 			<title>HTTP Problem Details</title>
