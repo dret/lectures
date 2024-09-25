@@ -452,7 +452,7 @@
 				<listing href="https://tools.ietf.org/html/rfc9457#appendix-B" src="http-problem-details.xml"/>
 			</slide>
 			<slide id="error-tmi">
-				<title><span title="Too Much Information">TMI</span> Error</title>
+				<title>Avoid Error <span title="Too Much Information">TMI</span></title>
 				<ul>
 					<li>Avoid any implementation information</li>
 					<li>This is about helping clients</li>
