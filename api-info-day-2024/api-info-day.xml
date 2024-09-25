@@ -500,6 +500,20 @@
 		</part>
 		<part id="standard-problems">
 			<title>Standardizing Errors in APIs</title>
+			<slide id="platform-engineering">
+				<title>Scaling the API Practice: Platform Engineering</title>
+			</slide>
+			<slide id="api-linting">
+				<title>Automating API Design Checks: API Linting</title>
+				<ul>
+					<li>Various tools support API linting</li>
+					<ul>
+						<li><a href="">Spectral</a> has been around for a while and is widely used</li>
+						<li><a href="">Vacuum</a> is much faster and compatible with Spectral</li>
+						<li><a href="">Redocly</a> provides an alternative on a different foundation</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="in-the-wild">
 				<title>API Guidelines in the Wild</title>
 				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" class="fullsize"/>
