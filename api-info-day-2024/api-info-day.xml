@@ -68,6 +68,14 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="food-labels">
+				<title>Consistency Matters: Food Labels</title>
+				<img title="Food Labels" href="https://www.google.ch/search?q=food+labels&amp;tbm=isch" src="food-labels.png" class="fullsize"/>
+			</slide>
+			<slide id="safety-labels">
+				<title>Consistency Matters: Safety Labels</title>
+				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" class="fullsize"/>
+			</slide>
 			<slide id="http-status">
 				<title>HTTP's Status Code Model</title>
 				<ul>
@@ -560,15 +568,6 @@
 			<slide id="smartbear-repository">
 				<title>SmartBear Problem Details Repository</title>
 				<img src="smartbear-problem-details-repository.png" href="https://github.com/SmartBear-DevRel/problems-registry" class="fullsize"/>
-			</slide>
-			<slide id="platform-engineering">
-				<title>Scaling the API Practice: Platform Engineering</title>
-				<ul>
-					<li>Platform Engineering = API Platforms + Consumer Support</li>
-					<li>Platform Engineering = DevOps + Scale</li>
-					<li>Platform Engineering = Consuming Services + Creating Services</li>
-					<li>Platform Engineering = Automation + Self Service</li>
-				</ul>
 			</slide>
 			<slide id="api-linting">
 				<title>Automating API Design Checks: API Linting</title>
