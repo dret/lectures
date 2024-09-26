@@ -454,18 +454,18 @@
 		<part id="problem-details">
 			<title>HTTP Problem Details</title>
 			<slide id="http-problem">
-				<title>HTTP Problem Details</title>
+				<title>Better Problem Reports</title>
 				<ul>
 					<li><link href="iana-http-status-codes">HTTP status codes</link> are useful but minimalistic</li>
 					<ul>
-						<li>Their well-defined semantics allow intermediaries to act on them</li>
-						<li>Servers may want to convey additional information with them</li>
+						<li>Well-defined semantics allow intermediaries to act on them</li>
+						<li>Servers may want to convey additional information</li>
 					</ul>
 					<li>APIs may include <em>problem details</em> as part of their representation designs</li>
 					<ul>
-						<li>Using a standard reduces the design work on the server side</li>
-						<li>Using a standard allows developers to more easily understand the design</li>
-						<li>Using a standard allows problem details analysis across APIs</li>
+						<li>Using a standard reduces the design work</li>
+						<li>Using a standard allows consumers to more easily understand the design</li>
+						<li>Using a standard allows sharing problem details across APIs</li>
 					</ul>
 					<li>RFC <a title='Mark Nottingham and Erik Wilde, "Problem Details for HTTP APIs", Internet RFC 7807, March 2016' href="https://www.rfc-editor.org/rfc/rfc9457.html">7807</a>/<a title='Mark Nottingham, Erik Wilde, and Sanjay Dalal, "Problem Details for HTTP APIs", Internet RFC 9457, July 2023' href="https://www.rfc-editor.org/rfc/rfc9457.html">9457</a> defines a JSON-centric model for problem details</li>
 					<ul>
@@ -473,6 +473,19 @@
 						<li><code>application/problem+xml</code> is an XML-based representation of the problem detail model</li>
 					</ul>
 				</ul>
+			</slide>
+			<slide id="http-problem-details">
+				<title>HTTP Problem Details</title>
+				<ul>
+					<li><code>status</code>: Mirrors the HTTP-level status code</li>
+					<li><code>type</code>: URI for identifying the problem type</li>
+					<li><code>title</code>: Human-readable summary of the type</li>
+					<li><code>instance</code>: URI for identifying the problem instance</li>
+					<li><code>detail</code>: Human-readable summary of the instance</li>
+				</ul>
+			</slide>
+			<slide id="http-problem-type-identification">
+				<title>URIs: Identifiers or Locators?</title>
 			</slide>
 			<slide id="http-problem-json">
 				<title>HTTP Problem Details: JSON</title>
@@ -524,9 +537,9 @@
 				<title>SmartBear Problem Details Repository</title>
 				<img src="smartbear-problem-details-repository.png" href="https://github.com/SmartBear-DevRel/problems-registry" class="fullsize"/>
 			</slide>
-			<slide id="iana-registry">
-				<title>IANA Problem Types Registry</title>
-				<img src="iana-problem-types-registry.png" href="https://www.iana.org/assignments/http-problem-types/http-problem-types.xhtml" class="fullsize"/>
+			<slide id="swaggerhub-schema">
+				<title>Sharing Problem Detail Models</title>
+				<img src="smartbear-swaggerhub-schema.png" href="https://app.swaggerhub.com/domains/smartbear-public/ProblemDetails/1.0.0" class="fullsize"/>
 			</slide>
 		</part>
 		<part id="standard-problems">
