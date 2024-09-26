@@ -24,138 +24,480 @@
 		</div>
 	</license>
 	<title><a href="https://jaxlondon.com/">JAX London</a> 2024</title>
+	<author>Erik Wilde</author>
+	<affiliation>Principal Consultant, <a href="https://innoq.com/">INNOQ</a></affiliation>
+	<date short="2024-10-01">October 1, 2024</date>
+	<copyright>2024 Erik Wilde</copyright>
 	<presentation id="index">
-		<title short="Everything is not OK">Everything is not OK: Representing Errors in API Designs</title>
-		<author>Erik Wilde</author>
-		<affiliation>INNOQ</affiliation>
-		<copyright>2024 Erik Wilde</copyright>
-		<date short="2024-10-01">October 1, 2024</date>
+		<title>Everything is not OK: Representing Errors in API Designs</title>
 		<toc class="abstract">One of the important aspects of platforms and platform engineering is to provide solutions for problems that occur in many APIs of a platform. This way API designers don't have to spend effort on solving the same problem over and over again, and API consumers can benefit from a more coherent design across the APIs of a platform. How to deal with problems that can occur is one of those questions that every API design needs to address. In this presentation we look at typical issues, some patterns and anti-patterns how to address them, and we also look at some standardized building blocks for representing those patterns. This allows designers and developers to spend less time figuring out what to do when everything is not OK.</toc>
-		<slide id="summary-error-messages">
+		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
-		<part id="intro-error-messages">
-			<title>Introduction</title>
-			<slide id="dret-error-messages">
-				<title>Erik Wilde</title>
-				<img src="INNOQ-logo.png" title="INNOQ" href="https://www.innoq.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
-				<img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
-				<ul>
-					<li>CA API Academy 2016-2019</li>
-					<li>Axway Catalyst 2019-2023</li>
-					<li>Principal Consultant at <a href="https://www.innoq.com/">INNOQ</a></li>
-					<li>OAI Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative</a></li>
-					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-				</ul>
-			</slide>
-			<slide id="getting-apis-to-work-error-messages">
-				<title>Getting APIs to Work</title>
-				<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
-					<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
-						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/1CwUlDPqz2c" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
-					</div>
+		<slide id="getting-apis-to-work">
+			<title>Getting APIs to Work</title>
+			<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
+				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/xRyvhXhy9qY" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 				</div>
-				<div style=" float : right ; width : 44% ; margin : 0% 4% 0% 2% ; ">
-					<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
-						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/qYl21EWNL44" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
-					</div>
+			</div>
+			<div style=" float : right ; width : 44% ; margin : 0% 4% 0% 2% ; ">
+				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/C8i8yBVjUA8" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 				</div>
-			</slide>
-		</part>
-		<part id="context">
-			<title>APIs, Guidelines, and Governance</title>
-			<slide id="api">
-				<title>API as Interfaces</title>
+			</div>
+		</slide>
+		<part id="api-errors">
+			<title>Designing APIs and Errors</title>
+			<slide id="http">
+				<title>HTTP APIs</title>
 				<ul>
-					<li>APIs are technical interfaces</li>
-					<li>APIs should use <em href="https://en.wikipedia.org/wiki/Information_hiding">information hiding</em></li>
-					<li>APIs are built on a foundation of <em>styles</em> and <em>technologies</em></li>
-				</ul>
-			</slide>
-			<slide id="api-product">
-				<title>API as Products</title>
-				<ul>
-					<li>Good API design goes <em>outside-in</em> starting from consumer needs</li>
-					<li>Good products minimizing the cognitive load of consumers</li>
-					<li>API designers should focus on business logic concerns</li>
-					<li>API platforms are supporting API producers</li>
-				</ul>
-			</slide>
-			<slide id="effective-teams">
-				<title>What is an Effective Team?</title>
-				<ul>
-					<li>A team spending <em>less time with generic API-related tasks</em></li>
+					<li><q>REST APIs</q> are a big part of many API landscapes</li>
+					<li>Most <q>REST APIs</q> are not technically REST but try to use HTTP well</li>
 					<ul>
-						<li>Figuring out the general guardrails for API design</li>
-						<li>Designing, implementing, exposing, securing, and monitoring APIs</li>
-						<li>Deploying APIs and making them discoverable for consumers</li>
+						<li>For the full context check out the <a href="https://en.wikipedia.org/wiki/Richardson_Maturity_Model">Richardson Maturity Model (RMM)</a></li>
+						<li>Most/many REST APIs today are <em>RMM Level 2</em> (using various HTTP methods)</li>
 					</ul>
-					<li>A team spending <em>more time addressing domain issues</em></li>
+					<li>Using HTTP well means more than using HTTP methods</li>
 					<ul>
-						<li>Engaging with consumers and designing a good API</li>
-						<li>Making sure that consumer feedback is collected and used</li>
-						<li>Contributing to the shared API practices of the organization</li>
+						<li>HTTP header fields support interaction semantics (authentication, content negotiation, conditional requests, range requests, …)</li>
+						<li>Media types support shared knowledge of message formats</li>
+						<li>Status codes support HTTP-level interaction models</li>
 					</ul>
 				</ul>
 			</slide>
-			<slide id="guidelines">
-				<title>API Guidelines</title>
+			<slide id="food-labels">
+				<title>Consistency Matters: Food Labels</title>
+				<img title="Food Labels" href="https://www.google.ch/search?q=food+labels&amp;tbm=isch" src="food-labels.png" class="fullsize"/>
+			</slide>
+			<slide id="safety-labels">
+				<title>Consistency Matters: Safety Labels</title>
+				<img title="Product Safety Labels" href="https://www.google.ch/search?q=product+safety+labels&amp;tbm=isch" src="safety-labels.png" class="fullsize"/>
+			</slide>
+			<slide id="http-status">
+				<title>HTTP's Status Code Model</title>
 				<ul>
-					<li>More API teams mean more ways to solve the same problem</li>
-					<ul>
-						<li>Solving <q>API problems</q> is not what teams should focus on</li>
-						<li>Solving <q>API problems</q> in a consistent way helps the API landscape</li>
-					</ul>
-					<li>Anatomy of a Good Guideline</li>
-					<ul>
-						<li><em>Why</em> does the guideline exist?</li>
-						<li><em>What</em> can be done to address the described issue</li>
-						<li><em>How</em> to implement the solution</li>
-						<li><em>Testing</em> that the guideline has been followed</li>
-					</ul>
+					<li>HTTP is the application protocol so status codes are on the HTTP level</li>
+					<li>Status codes allow generic software to understand protocol mechanics</li>
+					<li>Some status codes cannot be recovered from without intervention</li>
 				</ul>
 			</slide>
-			<slide id="zalando">
-				<title>API Guideline in the Wild</title>
-				<img href="https://opensource.zalando.com/restful-api-guidelines/#http-status-codes-and-errors" title="Zalando RESTful API and Event Guidelines" src="zalando-guideline-http-problem.png" class="fullsize"/>
-			</slide>
-			<slide id="in-the-wild">
-				<title>API Guidelines in the Wild</title>
-				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" class="fullsize"/>
-			</slide>
-			<slide id="governance">
-				<title>API Governance</title>
+			<slide id="http-status-codes">
+				<title>HTTP Status Code Categories</title>
 				<ul>
-					<li>Balancing coherence and autonomy in large organizations</li>
-					<li>Making it easy to do the right thing</li>
-					<li>Making it hard to do things wrong</li>
-					<li>Using tools, processes, and platforms to <q>engineer the engineers</q></li>
+					<li><em>1xx (Informational):</em> The request was received, continuing process</li>
+					<li><em>2xx (Successful):</em> The request was successfully received, understood, and accepted</li>
+					<li><em>3xx (Redirection):</em> Further action needs to be taken in order to complete the request</li>
+					<li><em>4xx (Client Error):</em> The request contains bad syntax or cannot be fulfilled</li>
+					<li><em>5xx (Server Error):</em> The server failed to fulfill an apparently valid request</li>
+				</ul>
+			</slide>
+			<slide id="iana-http-status-codes">
+				<title><a href="https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml">IANA HTTP Status Code Registry</a></title>
+				<style>
+					.table_component table {
+					border: 1px solid #dededf;
+					height: 100%;
+					width: 95%;
+					table-layout: auto;
+					border-collapse: collapse;
+					border-spacing: 1px;
+					text-align: left;
+					}
+					
+					.table_component caption {
+					caption-side: top;
+					text-align: left;
+					}
+					
+					.table_component th {
+					border: 1px solid #dededf;
+					background-color: #eceff1;
+					padding: 5px;
+					}
+					
+					.table_component td {
+					border: 1px solid #dededf;
+					padding: 5px;
+					}
+					
+					.table_component tr:nth-child(even) td {
+					background-color: #f8f8f8;
+					}
+					
+					.table_component tr:nth-child(odd) td {
+					background-color: #ffffff;
+					}
+				</style>
+				<div class="table_component" role="region" tabindex="0">
+					<table>
+						<thead>
+							<tr>
+								<th>Value</th>
+								<th>Description</th>
+								<th>Reference </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>100</td>
+								<td>Continue</td>
+								<td>[RFC9110, Section 15.2.1]</td>
+							</tr>
+							<tr>
+								<td>101</td>
+								<td>Switching Protocols</td>
+								<td>[RFC9110, Section 15.2.2]</td>
+							</tr>
+							<tr>
+								<td>102</td>
+								<td>Processing</td>
+								<td>[RFC2518] </td>
+							</tr>
+							<tr>
+								<td>103</td>
+								<td>Early Hints</td>
+								<td>[RFC8297] </td>
+							</tr>
+							<tr>
+								<td>200</td>
+								<td>OK</td>
+								<td>[RFC9110, Section 15.3.1]</td>
+							</tr>
+							<tr>
+								<td>201</td>
+								<td>Created</td>
+								<td>[RFC9110, Section 15.3.2]</td>
+							</tr>
+							<tr>
+								<td>202</td>
+								<td>Accepted</td>
+								<td>[RFC9110, Section 15.3.3]</td>
+							</tr>
+							<tr>
+								<td>203</td>
+								<td>Non-Authoritative Information</td>
+								<td>[RFC9110, Section 15.3.4]</td>
+							</tr>
+							<tr>
+								<td>204</td>
+								<td>No Content</td>
+								<td>[RFC9110, Section 15.3.5]</td>
+							</tr>
+							<tr>
+								<td>205</td>
+								<td>Reset Content</td>
+								<td>[RFC9110, Section 15.3.6]</td>
+							</tr>
+							<tr>
+								<td>206</td>
+								<td>Partial Content</td>
+								<td>[RFC9110, Section 15.3.7]</td>
+							</tr>
+							<tr>
+								<td>207</td>
+								<td>Multi-Status</td>
+								<td>[RFC4918] </td>
+							</tr>
+							<tr>
+								<td>208</td>
+								<td>Already Reported</td>
+								<td>[RFC5842] </td>
+							</tr>
+							<tr>
+								<td>226</td>
+								<td>IM Used</td>
+								<td>[RFC3229] </td>
+							</tr>
+							<tr>
+								<td>300</td>
+								<td>Multiple Choices</td>
+								<td>[RFC9110, Section 15.4.1]</td>
+							</tr>
+							<tr>
+								<td>301</td>
+								<td>Moved Permanently</td>
+								<td>[RFC9110, Section 15.4.2]</td>
+							</tr>
+							<tr>
+								<td>302</td>
+								<td>Found</td>
+								<td>[RFC9110, Section 15.4.3]</td>
+							</tr>
+							<tr>
+								<td>303</td>
+								<td>See Other</td>
+								<td>[RFC9110, Section 15.4.4]</td>
+							</tr>
+							<tr>
+								<td>304</td>
+								<td>Not Modified</td>
+								<td>[RFC9110, Section 15.4.5]</td>
+							</tr>
+							<tr>
+								<td>305</td>
+								<td>Use Proxy</td>
+								<td>[RFC9110, Section 15.4.6]</td>
+							</tr>
+							<tr>
+								<td>306</td>
+								<td>(Unused)</td>
+								<td>[RFC9110, Section 15.4.7]</td>
+							</tr>
+							<tr>
+								<td>307</td>
+								<td>Temporary Redirect</td>
+								<td>[RFC9110, Section 15.4.8]</td>
+							</tr>
+							<tr>
+								<td>308</td>
+								<td>Permanent Redirect</td>
+								<td>[RFC9110, Section 15.4.9]</td>
+							</tr>
+							<tr>
+								<td>400</td>
+								<td>Bad Request</td>
+								<td>[RFC9110, Section 15.5.1]</td>
+							</tr>
+							<tr>
+								<td>401</td>
+								<td>Unauthorized</td>
+								<td>[RFC9110, Section 15.5.2]</td>
+							</tr>
+							<tr>
+								<td>402</td>
+								<td>Payment Required</td>
+								<td>[RFC9110, Section 15.5.3]</td>
+							</tr>
+							<tr>
+								<td>403</td>
+								<td>Forbidden</td>
+								<td>[RFC9110, Section 15.5.4]</td>
+							</tr>
+							<tr>
+								<td>404</td>
+								<td>Not Found</td>
+								<td>[RFC9110, Section 15.5.5]</td>
+							</tr>
+							<tr>
+								<td>405</td>
+								<td>Method Not Allowed</td>
+								<td>[RFC9110, Section 15.5.6]</td>
+							</tr>
+							<tr>
+								<td>406</td>
+								<td>Not Acceptable</td>
+								<td>[RFC9110, Section 15.5.7]</td>
+							</tr>
+							<tr>
+								<td>407</td>
+								<td>Proxy Authentication Required</td>
+								<td>[RFC9110, Section 15.5.8]</td>
+							</tr>
+							<tr>
+								<td>408</td>
+								<td>Request Timeout</td>
+								<td>[RFC9110, Section 15.5.9]</td>
+							</tr>
+							<tr>
+								<td>409</td>
+								<td>Conflict</td>
+								<td>[RFC9110, Section 15.5.10]</td>
+							</tr>
+							<tr>
+								<td>410</td>
+								<td>Gone</td>
+								<td>[RFC9110, Section 15.5.11]</td>
+							</tr>
+							<tr>
+								<td>411</td>
+								<td>Length Required</td>
+								<td>[RFC9110, Section 15.5.12]</td>
+							</tr>
+							<tr>
+								<td>412</td>
+								<td>Precondition Failed</td>
+								<td>[RFC9110, Section 15.5.13]</td>
+							</tr>
+							<tr>
+								<td>413</td>
+								<td>Content Too Large</td>
+								<td>[RFC9110, Section 15.5.14]</td>
+							</tr>
+							<tr>
+								<td>414</td>
+								<td>URI Too Long</td>
+								<td>[RFC9110, Section 15.5.15]</td>
+							</tr>
+							<tr>
+								<td>415</td>
+								<td>Unsupported Media Type</td>
+								<td>[RFC9110, Section 15.5.16]</td>
+							</tr>
+							<tr>
+								<td>416</td>
+								<td>Range Not Satisfiable</td>
+								<td>[RFC9110, Section 15.5.17]</td>
+							</tr>
+							<tr>
+								<td>417</td>
+								<td>Expectation Failed</td>
+								<td>[RFC9110, Section 15.5.18]</td>
+							</tr>
+							<tr>
+								<td>418</td>
+								<td>(Unused)</td>
+								<td>[RFC9110, Section 15.5.19]</td>
+							</tr>
+							<tr>
+								<td>421</td>
+								<td>Misdirected Request</td>
+								<td>[RFC9110, Section 15.5.20]</td>
+							</tr>
+							<tr>
+								<td>422</td>
+								<td>Unprocessable Content</td>
+								<td>[RFC9110, Section 15.5.21]</td>
+							</tr>
+							<tr>
+								<td>423</td>
+								<td>Locked</td>
+								<td>[RFC4918] </td>
+							</tr>
+							<tr>
+								<td>424</td>
+								<td>Failed Dependency</td>
+								<td>[RFC4918] </td>
+							</tr>
+							<tr>
+								<td>425</td>
+								<td>Too Early</td>
+								<td>[RFC8470] </td>
+							</tr>
+							<tr>
+								<td>426</td>
+								<td>Upgrade Required</td>
+								<td>[RFC9110, Section 15.5.22]</td>
+							</tr>
+							<tr>
+								<td>428</td>
+								<td>Precondition Required</td>
+								<td>[RFC6585] </td>
+							</tr>
+							<tr>
+								<td>429</td>
+								<td>Too Many Requests</td>
+								<td>[RFC6585] </td>
+							</tr>
+							<tr>
+								<td>431</td>
+								<td>Request Header Fields Too Large</td>
+								<td>[RFC6585] </td>
+							</tr>
+							<tr>
+								<td>451</td>
+								<td>Unavailable For Legal Reasons</td>
+								<td>[RFC7725] </td>
+							</tr>
+							<tr>
+								<td>500</td>
+								<td>Internal Server Error</td>
+								<td>[RFC9110, Section 15.6.1]</td>
+							</tr>
+							<tr>
+								<td>501</td>
+								<td>Not Implemented</td>
+								<td>[RFC9110, Section 15.6.2]</td>
+							</tr>
+							<tr>
+								<td>502</td>
+								<td>Bad Gateway</td>
+								<td>[RFC9110, Section 15.6.3]</td>
+							</tr>
+							<tr>
+								<td>503</td>
+								<td>Service Unavailable</td>
+								<td>[RFC9110, Section 15.6.4]</td>
+							</tr>
+							<tr>
+								<td>504</td>
+								<td>Gateway Timeout</td>
+								<td>[RFC9110, Section 15.6.5]</td>
+							</tr>
+							<tr>
+								<td>505</td>
+								<td>HTTP Version Not Supported</td>
+								<td>[RFC9110, Section 15.6.6]</td>
+							</tr>
+							<tr>
+								<td>506</td>
+								<td>Variant Also Negotiates</td>
+								<td>[RFC2295] </td>
+							</tr>
+							<tr>
+								<td>507</td>
+								<td>Insufficient Storage</td>
+								<td>[RFC4918] </td>
+							</tr>
+							<tr>
+								<td>508</td>
+								<td>Loop Detected</td>
+								<td>[RFC5842] </td>
+							</tr>
+							<tr>
+								<td>510</td>
+								<td>Not Extended (OBSOLETED)</td>
+								<td>[RFC2774][Status change of HTTP experiments to Historic] </td>
+							</tr>
+							<tr>
+								<td>511</td>
+								<td>Network Authentication Required</td>
+								<td>[RFC6585] </td>
+							</tr>
+						</tbody>
+					</table></div>
+			</slide>
+			<slide>
+				<title>401 vs. 403 vs. 404</title>
+				<ul>
+					<li><code>401 Unauthorized</code>: Often used to represent lack of authentication</li>
+					<li><code>403 Forbidden</code>: Specifically represents lack of authorization</li>
+					<li><code>404 Not Found</code>: Generic message to prevent information leakage</li>
 				</ul>
 			</slide>
 		</part>
 		<part id="problem-details">
 			<title>HTTP Problem Details</title>
 			<slide id="http-problem">
-				<title>HTTP Problem Details</title>
+				<title>Better Problem Reports</title>
 				<ul>
-					<li><a href="http://webconcepts.info/concepts/http-status-code/">HTTP status codes</a> are useful but minimalistic</li>
+					<li><link href="iana-http-status-codes">HTTP status codes</link> are useful but minimalistic</li>
 					<ul>
-						<li>Their well-defined semantics allow intermediaries to act on them</li>
-						<li>Servers may want to convey additional information with them</li>
+						<li>Well-defined semantics allow intermediaries to act on them</li>
+						<li>Servers may want to convey additional information</li>
 					</ul>
 					<li>APIs may include <em>problem details</em> as part of their representation designs</li>
 					<ul>
-						<li>Using a standard reduces the design work on the server side</li>
-						<li>Using a standard allows developers to more easily understand the design</li>
-						<li>Using a standard allows problem details analysis across APIs</li>
+						<li>Using a standard reduces the design work</li>
+						<li>Using a standard allows consumers to more easily understand the design</li>
+						<li>Using a standard allows sharing problem details across APIs</li>
 					</ul>
 					<li>RFC <a title='Mark Nottingham and Erik Wilde, "Problem Details for HTTP APIs", Internet RFC 7807, March 2016' href="https://www.rfc-editor.org/rfc/rfc9457.html">7807</a>/<a title='Mark Nottingham, Erik Wilde, and Sanjay Dalal, "Problem Details for HTTP APIs", Internet RFC 9457, July 2023' href="https://www.rfc-editor.org/rfc/rfc9457.html">9457</a> defines a JSON-centric model for problem details</li>
 					<ul>
-						<li><code>application/problem+json</code> is a JSON-based representation of the problem detail model</li>
-						<li><code>application/problem+xml</code> is an XML-based representation of the problem detail model</li>
+						<li><code>application/problem+json</code>: JSON-based problem details</li>
+						<li><code>application/problem+xml</code>: XML-based problem details</li>
 					</ul>
+				</ul>
+			</slide>
+			<slide id="http-problem-details">
+				<title>HTTP Problem Details</title>
+				<ul>
+					<li><code>status</code>: Mirrors the HTTP-level status code</li>
+					<li><code>type</code>: URI for identifying the problem type</li>
+					<li><code>title</code>: Human-readable summary of the type</li>
+					<li><code>instance</code>: URI for identifying the problem instance</li>
+					<li><code>detail</code>: Human-readable summary of the instance</li>
 				</ul>
 			</slide>
 			<slide id="http-problem-json">
@@ -166,8 +508,26 @@
 				<title>HTTP Problem Details: XML</title>
 				<listing href="https://tools.ietf.org/html/rfc9457#appendix-B" src="http-problem-details.xml"/>
 			</slide>
+			<slide id="http-problem-type-identification">
+				<title>URIs: Identifiers or Locators?</title>
+				<ul>
+					<li><em>Caution:</em> Relative URIs in <code>type</code> will get resolved</li>
+					<ul>
+						<li><q><code>no-credits</code></q> is a relative URI and not a string</li>
+						<li>Resolved against the <a href="https://www.rfc-editor.org/rfc/rfc3986#section-5">document's base URI</a>: <q><code>https://example.org/1234/no-credits</code></q></li>
+					</ul>
+					<li><code>type</code> is an <em>identifier</em> for the problem type</li>
+					<ul>
+						<li><q><code>tag:example@example.org,2021-09-17:OutOfLuck</code></q> is an identifier but not a locator</li>
+					</ul>
+					<li><code>type</code> also can be used as a <em>locator</em></li>
+					<ul>
+						<li><q><code>https://api.example.org/widget/example-problem</code></q> is an identifier and a locator</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="error-tmi">
-				<title><span title="Too Much Information">TMI</span> Error</title>
+				<title>Avoid Error <span title="Too Much Information">TMI</span></title>
 				<ul>
 					<li>Avoid any implementation information</li>
 					<li>This is about helping clients</li>
@@ -198,12 +558,8 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="problem-types">
-			<title>Managing Problem Types</title>
-			<slide id="iana-registry">
-				<title>IANA Problem Types Registry</title>
-				<img src="iana-problem-types-registry.png" href="https://www.iana.org/assignments/http-problem-types/http-problem-types.xhtml" class="fullsize"/>
-			</slide>
+		<part id="standard-problems">
+			<title>Standardizing Errors in APIs</title>
 			<slide id="smartbear-registry">
 				<title>SmartBear Problem Details Registry</title>
 				<img src="smartbear-problem-details-registry.png" href="https://problems-registry.smartbear.com/" class="fullsize"/>
@@ -212,16 +568,49 @@
 				<title>SmartBear Problem Details Repository</title>
 				<img src="smartbear-problem-details-repository.png" href="https://github.com/SmartBear-DevRel/problems-registry" class="fullsize"/>
 			</slide>
+			<slide id="api-linting">
+				<title>Automating API Design Checks: API Linting</title>
+				<ul>
+					<li><a href="https://stoplight.io/open-source/spectral">Spectral</a> has been around for a while and is widely used</li>
+					<li><a href="https://quobix.com/vacuum/">Vacuum</a> is much faster and compatible with Spectral</li>
+					<li><a href="https://redocly.com/docs/cli">Redocly CLI</a> provides an alternative on a different foundation</li>
+				</ul>
+			</slide>
+			<slide id="extensions">
+				<title>Problem Detail Spectral Rule</title>
+				<listing src="apis-you-wont-hate-spectral-ruleset.ts" line="257-274" href="https://github.com/apisyouwonthate/style-guide/blob/main/src/ruleset.ts"/>
+			</slide>
+			<slide id="in-the-wild">
+				<title>API Guidelines in the Wild</title>
+				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" class="fullsize"/>
+			</slide>
+			<slide id="zalando">
+				<title>API Guideline in the Wild</title>
+				<img href="https://opensource.zalando.com/restful-api-guidelines/#http-status-codes-and-errors" title="Zalando RESTful API and Event Guidelines" src="zalando-guideline-http-problem.png" class="fullsize"/>
+			</slide>
+			<slide id="swaggerhub-schema">
+				<title>Sharing Problem Detail Models</title>
+				<img src="smartbear-swaggerhub-schema.png" href="https://app.swaggerhub.com/domains/smartbear-public/ProblemDetails/1.0.0" class="fullsize"/>
+			</slide>
 		</part>
-		<part id="conclusions-error-messages">
+		<part id="conclusions">
 			<title>Conclusions</title>
-			<slide id="thanks-error-messages">
+			<slide id="happy-path">
+				<title>Beyond the Happy Path</title>
+				<ul>
+					<li>Use standardized ways of representing problem details</li>
+					<li>Identify, define, and share problem types for your APIs</li>
+					<li>Provide support for adding problem types to API designs</li>
+					<li>Make problem details part of your platform</li>
+				</ul>
+			</slide>
+			<slide id="thanks">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
 					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
 					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-					<li>Slides online: <a href="http://dret.net/lectures/jax-london-2024/"><code>dret.net/lectures/jax-london-2024/</code></a></li>
+					<li>Slides: <a href="http://dret.net/lectures/jax-london-2024/"><code>dret.net/lectures/jax-london-2024/</code></a></li>
 				</ul>
 			</slide>
 		</part>
