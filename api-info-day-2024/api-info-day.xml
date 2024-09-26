@@ -499,6 +499,7 @@
 					<li><em>Caution:</em> Relative URIs in <code>type</code> will get resolved</li>
 					<ul>
 						<li><q><code>no-credits</code></q> is a relative URI and not a string</li>
+						<li>Resolved against the <a href="https://www.rfc-editor.org/rfc/rfc3986#section-5">document's base URI</a>: <q><code>https://example.org/1234/no-credits</code></q></li>
 					</ul>
 					<li><code>type</code> is an <em>identifier</em> for the problem type</li>
 					<ul>
