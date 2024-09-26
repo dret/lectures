@@ -496,7 +496,7 @@
 			<slide id="http-problem-type-identification">
 				<title>URIs: Identifiers or Locators?</title>
 				<ul>
-					<li>Caution: Relative URIs in <code>type</code> will get resolved</li>
+					<li><em>Caution:</em> Relative URIs in <code>type</code> will get resolved</li>
 					<ul>
 						<li><q><code>no-credits</code></q> is a relative URI and not a string</li>
 					</ul>
