@@ -87,11 +87,11 @@
 			<slide id="http-status-codes">
 				<title>HTTP Status Code Categories</title>
 				<ul>
-					<li>1xx (Informational): The request was received, continuing process</li>
-					<li>2xx (Successful): The request was successfully received, understood, and accepted</li>
-					<li>3xx (Redirection): Further action needs to be taken in order to complete the request</li>
-					<li>4xx (Client Error): The request contains bad syntax or cannot be fulfilled</li>
-					<li>5xx (Server Error): The server failed to fulfill an apparently valid request</li>
+					<li><em>1xx (Informational):</em> The request was received, continuing process</li>
+					<li><em>2xx (Successful):</em> The request was successfully received, understood, and accepted</li>
+					<li><em>3xx (Redirection):</em> Further action needs to be taken in order to complete the request</li>
+					<li><em>4xx (Client Error):</em> The request contains bad syntax or cannot be fulfilled</li>
+					<li><em>5xx (Server Error):</em> The server failed to fulfill an apparently valid request</li>
 				</ul>
 			</slide>
 			<slide id="iana-http-status-codes">
