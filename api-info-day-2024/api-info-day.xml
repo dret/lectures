@@ -485,8 +485,8 @@
 					</ul>
 					<li>RFC <a title='Mark Nottingham and Erik Wilde, "Problem Details for HTTP APIs", Internet RFC 7807, March 2016' href="https://www.rfc-editor.org/rfc/rfc9457.html">7807</a>/<a title='Mark Nottingham, Erik Wilde, and Sanjay Dalal, "Problem Details for HTTP APIs", Internet RFC 9457, July 2023' href="https://www.rfc-editor.org/rfc/rfc9457.html">9457</a> defines a JSON-centric model for problem details</li>
 					<ul>
-						<li><code>application/problem+json</code> is a JSON-based representation of the problem detail model</li>
-						<li><code>application/problem+xml</code> is an XML-based representation of the problem detail model</li>
+						<li><code>application/problem+json</code>: JSON-based problem details</li>
+						<li><code>application/problem+xml</code>: XML-based problem details</li>
 					</ul>
 				</ul>
 			</slide>
