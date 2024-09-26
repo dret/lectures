@@ -575,8 +575,14 @@
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
-			<slide id="summary">
-				<title>...</title>
+			<slide id="happy-path">
+				<title>Beyond the Happy Path</title>
+				<ul>
+					<li>Use standardized ways of representing problem details</li>
+					<li>Identify, define, and share problem types for your APIs</li>
+					<li>Provide support for adding problem types to API designs</li>
+					<li>Make problem details part of your platform</li>
+				</ul>
 			</slide>
 			<slide id="thanks">
 				<title>Thank You!</title>
