@@ -495,6 +495,20 @@
 			</slide>
 			<slide id="http-problem-type-identification">
 				<title>URIs: Identifiers or Locators?</title>
+				<ul>
+					<li>Caution: Relative URIs in <code>type</code> will get resolved</li>
+					<ul>
+						<li><code>no-credits</code> is a relative URI and not a string</li>
+					</ul>
+					<li><code>type</code> is an <em>identifier</em> for the problem type</li>
+					<ul>
+						<li><code>tag:example@example.org,2021-09-17:OutOfLuck</code> is an identifier but not a locator</li>
+					</ul>
+					<li><code>type</code> also can be used as a <em>locator</em></li>
+					<ul>
+						<li><code>https://api.example.org/widget/example-problem</code> is an identifier and a locator</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="http-problem-json">
 				<title>HTTP Problem Details: JSON</title>
