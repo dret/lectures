@@ -579,6 +579,10 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="extensions">
+				<title>Problem Detail Spectral Rule</title>
+				<listing src="apis-you-wont-hate-spectral-ruleset.ts" line="257-274" href="https://github.com/apisyouwonthate/style-guide/blob/main/src/ruleset.ts"/>
+			</slide>
 			<slide id="in-the-wild">
 				<title>API Guidelines in the Wild</title>
 				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" class="fullsize"/>
