@@ -537,10 +537,6 @@
 				<title>SmartBear Problem Details Repository</title>
 				<img src="smartbear-problem-details-repository.png" href="https://github.com/SmartBear-DevRel/problems-registry" class="fullsize"/>
 			</slide>
-			<slide id="swaggerhub-schema">
-				<title>Sharing Problem Detail Models</title>
-				<img src="smartbear-swaggerhub-schema.png" href="https://app.swaggerhub.com/domains/smartbear-public/ProblemDetails/1.0.0" class="fullsize"/>
-			</slide>
 		</part>
 		<part id="standard-problems">
 			<title>Standardizing Errors in APIs</title>
@@ -571,6 +567,10 @@
 			<slide id="zalando">
 				<title>API Guideline in the Wild</title>
 				<img href="https://opensource.zalando.com/restful-api-guidelines/#http-status-codes-and-errors" title="Zalando RESTful API and Event Guidelines" src="zalando-guideline-http-problem.png" class="fullsize"/>
+			</slide>
+			<slide id="swaggerhub-schema">
+				<title>Sharing Problem Detail Models</title>
+				<img src="smartbear-swaggerhub-schema.png" href="https://app.swaggerhub.com/domains/smartbear-public/ProblemDetails/1.0.0" class="fullsize"/>
 			</slide>
 		</part>
 		<part id="conclusions">
