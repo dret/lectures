@@ -550,8 +550,8 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="problem-types">
-			<title>Managing Problem Types</title>
+		<part id="standard-problems">
+			<title>Standardizing Errors in APIs</title>
 			<slide id="smartbear-registry">
 				<title>SmartBear Problem Details Registry</title>
 				<img src="smartbear-problem-details-registry.png" href="https://problems-registry.smartbear.com/" class="fullsize"/>
@@ -560,15 +560,12 @@
 				<title>SmartBear Problem Details Repository</title>
 				<img src="smartbear-problem-details-repository.png" href="https://github.com/SmartBear-DevRel/problems-registry" class="fullsize"/>
 			</slide>
-		</part>
-		<part id="standard-problems">
-			<title>Standardizing Errors in APIs</title>
 			<slide id="platform-engineering">
 				<title>Scaling the API Practice: Platform Engineering</title>
 				<ul>
+					<li>Platform Engineering = API Platforms + Consumer Support</li>
 					<li>Platform Engineering = DevOps + Scale</li>
 					<li>Platform Engineering = Consuming Services + Creating Services</li>
-					<li>Platform Engineering = API Platforms + Consumer Support</li>
 					<li>Platform Engineering = Automation + Self Service</li>
 				</ul>
 			</slide>
