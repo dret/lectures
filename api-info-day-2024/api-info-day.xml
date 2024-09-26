@@ -51,9 +51,40 @@
 		</slide>
 		<part id="api-errors">
 			<title>Designing APIs and Errors</title>
-		</part>
-		<part id="http-errors">
-			<title>Errors in HTTP</title>
+			<slide id="http">
+				<title>HTTP APIs</title>
+				<ul>
+					<li><q>REST APIs</q> are a big part of many API landscapes</li>
+					<li>Most <q>REST APIs</q> are not technically REST but try to use HTTP well</li>
+					<ul>
+						<li>For the full context check out the <a href="https://en.wikipedia.org/wiki/Richardson_Maturity_Model">Richardson Maturity Model (RMM)</a></li>
+						<li>Most/many REST APIs today are <em>RMM Level 2</em> (using various HTTP methods)</li>
+					</ul>
+					<li>Using HTTP well means more than using HTTP methods</li>
+					<ul>
+						<li>HTTP header fields support interaction semantics (authentication, content negotiation, conditional requests, range requests, …)</li>
+						<li>Media types support shared knowledge of message formats</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="http-status">
+				<title>HTTP's Status Codes Model</title>
+				<ul>
+					<li>HTTP is the application protocol so status codes are on the HTTP level</li>
+					<li>Status codes allow generic software to support certain protocol mechanics</li>
+					<li>Some status codes cannot be recovered from without intervention</li>
+				</ul>
+			</slide>
+			<slide id="http-status-codes">
+				<title>HTTP Status Code Categories</title>
+				<ul>
+					<li>1xx (Informational): The request was received, continuing process</li>
+					<li>2xx (Successful): The request was successfully received, understood, and accepted</li>
+					<li>3xx (Redirection): Further action needs to be taken in order to complete the request</li>
+					<li>4xx (Client Error): The request contains bad syntax or cannot be fulfilled</li>
+					<li>5xx (Server Error): The server failed to fulfill an apparently valid request</li>
+				</ul>
+			</slide>
 			<slide id="iana-http-status-codes">
 				<title><a href="https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml">IANA HTTP Status Code Registry</a></title>
 				<style>
