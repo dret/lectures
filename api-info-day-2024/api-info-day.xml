@@ -68,10 +68,10 @@
 				</ul>
 			</slide>
 			<slide id="http-status">
-				<title>HTTP's Status Codes Model</title>
+				<title>HTTP's Status Code Model</title>
 				<ul>
 					<li>HTTP is the application protocol so status codes are on the HTTP level</li>
-					<li>Status codes allow generic software to support certain protocol mechanics</li>
+					<li>Status codes allow generic software to understand protocol mechanics</li>
 					<li>Some status codes cannot be recovered from without intervention</li>
 				</ul>
 			</slide>
