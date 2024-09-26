@@ -64,6 +64,7 @@
 					<ul>
 						<li>HTTP header fields support interaction semantics (authentication, content negotiation, conditional requests, range requests, …)</li>
 						<li>Media types support shared knowledge of message formats</li>
+						<li>Status codes support HTTP-level interaction models</li>
 					</ul>
 				</ul>
 			</slide>
@@ -449,6 +450,14 @@
 							</tr>
 						</tbody>
 					</table></div>
+			</slide>
+			<slide>
+				<title>401 vs. 403 vs. 404</title>
+				<ul>
+					<li><code>401 Unauthorized</code>: Often used to represent lack of authentication</li>
+					<li><code>403 Forbidden</code>: Specifically represents lack of authorization</li>
+					<li><code>404 Not Found</code>: Generic message to prevent information leakage</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="problem-details">
