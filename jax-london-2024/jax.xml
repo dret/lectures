@@ -560,6 +560,10 @@
 		</part>
 		<part id="platform-support">
 			<title>Platform Support</title>
+			<slide id="swaggerhub-schema">
+				<title>Sharing Problem Detail Models</title>
+				<img src="smartbear-swaggerhub-schema.png" href="https://app.swaggerhub.com/domains/smartbear-public/ProblemDetails/1.0.0" class="fullsize"/>
+			</slide>
 			<slide id="smartbear-registry">
 				<title>SmartBear Problem Details Registry</title>
 				<img src="smartbear-problem-details-registry.png" href="https://problems-registry.smartbear.com/" class="fullsize"/>
@@ -592,10 +596,6 @@
 				<title>API Guideline in the Wild</title>
 				<img href="https://opensource.zalando.com/restful-api-guidelines/#http-status-codes-and-errors" title="Zalando RESTful API and Event Guidelines" src="zalando-guideline-http-problem.png" class="fullsize"/>
 			</slide>
-			<slide id="swaggerhub-schema">
-				<title>Sharing Problem Detail Models</title>
-				<img src="smartbear-swaggerhub-schema.png" href="https://app.swaggerhub.com/domains/smartbear-public/ProblemDetails/1.0.0" class="fullsize"/>
-			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
@@ -606,6 +606,9 @@
 					<li>Identify, define, and share problem types for your APIs</li>
 					<li>Provide support for adding problem types to API designs</li>
 					<li>Make problem details part of your platform</li>
+					<ul>
+						<li>Reusable types, reusable models, API linting</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="thanks">
