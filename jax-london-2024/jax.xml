@@ -551,15 +551,15 @@
 					<li>There are no breaking changes</li>
 					<li>Three issues seen from usage in the wild</li>
 					<ul>
-						<li>Registry of common problem type URIs (<a href="https://www.rfc-editor.org/rfc/rfc9457.html#registry">Section 4.2</a>)</li>
+						<li><link href="iana-http-problem-types">Registry</link> of common problem type URIs (<a href="https://www.rfc-editor.org/rfc/rfc9457.html#registry">Section 4.2</a>)</li>
 						<li>Clarification of how to treat multiple problems (<a href="https://www.rfc-editor.org/rfc/rfc9457.html#problem-json">Section 3</a>)</li>
 						<li>Guidance for using type URIs that cannot be dereferenced (<a href="https://www.rfc-editor.org/rfc/rfc9457.html#type">Section 3.1.1</a>)</li>
 					</ul>
 				</ul>
 			</slide>
 		</part>
-		<part id="standard-problems">
-			<title>Standardizing Errors in APIs</title>
+		<part id="platform-support">
+			<title>Platform Support</title>
 			<slide id="smartbear-registry">
 				<title>SmartBear Problem Details Registry</title>
 				<img src="smartbear-problem-details-registry.png" href="https://problems-registry.smartbear.com/" class="fullsize"/>
@@ -567,6 +567,10 @@
 			<slide id="smartbear-repository">
 				<title>SmartBear Problem Details Repository</title>
 				<img src="smartbear-problem-details-repository.png" href="https://github.com/SmartBear-DevRel/problems-registry" class="fullsize"/>
+			</slide>
+			<slide id="iana-http-problem-types">
+				<title>IANA HTTP Problem Types Registry</title>
+				<img src="iana-problem-types-registry.png" href="https://www.iana.org/assignments/http-problem-types/http-problem-types.xhtml" class="fullsize"/>
 			</slide>
 			<slide id="api-linting">
 				<title>Automating API Design Checks: API Linting</title>
