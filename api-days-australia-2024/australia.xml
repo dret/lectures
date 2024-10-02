@@ -86,6 +86,27 @@
 	<presentation id="oai-track">
 		<title short="OAI Track">OAI Track Introduction and the State of OpenAPI</title>
 		<date short="2024-10-17">October 17, 2024</date>
+		<part id="oai">
+			<title>The OpenAPI Initiative (OAI)</title>
+			<slide id="oai-participation">
+				<title>OAI Participation</title>
+			</slide>
+			<slide id="oai-membership">
+				<title>OAI Membership</title>
+			</slide>
+		</part>
+		<part id="openapi-versions">
+			<title>OpenAPI Versions</title>
+			<slide id="openapi-2x">
+				<title>OpenAPI 2</title>
+			</slide>
+			<slide id="openapi-30">
+				<title>OpenAPI 3.0</title>
+			</slide>
+			<slide id="openapi-31">
+				<title>OpenAPI 3.1</title>
+			</slide>
+		</part>
 		<part id="oai-specs">
 			<title>OAI Specifications</title>
 			<slide id="openapi">
