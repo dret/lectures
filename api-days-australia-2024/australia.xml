@@ -86,6 +86,89 @@
 	<presentation id="oai-track">
 		<title short="OAI Track">OAI Track Introduction and the State of OpenAPI</title>
 		<date short="2024-10-17">October 17, 2024</date>
+		<part id="openapi-user-stories">
+			<title>OpenAPI User Stories</title>
+			<slide id="wiifm">
+				<title><span title="What's in it for me?">WIIFM</span>: Everybody's Favorite Station</title>
+				<img src="wiifm.webp" title="WIIFM: What's in it for me?" class="fullsize"/>
+			</slide>
+			<slide id="wiifm-org-biz">
+				<title>WIIFM: Business and Organization Value</title>
+				<img src="openapi-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<table cellspacing="20">
+					<tr>
+						<th align="right" valign="top">As</th>
+						<td valign="top">business or organization leader</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">I want</th>
+						<td valign="top">well-defined and usable digital interfaces for partners and the public</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">so that</th>
+						<td valign="top">I can more easily change and scale my value streams.</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="wiifm-dev">
+				<title>WIIFM: API Developers</title>
+				<img src="openapi-logo-90.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<table cellspacing="20">
+					<tr>
+						<th align="right" valign="top">As</th>
+						<td valign="top">an API developer</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">I want</th>
+						<td valign="top">to describe the product I am going to implement</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">so that</th>
+						<td valign="top">I can use various tools throughout the API lifecycle.</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="wiifm-org-biz">
+				<title>WIIFM: API Consumers</title>
+				<img src="openapi-logo-180.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<table cellspacing="20">
+					<tr>
+						<th align="right" valign="top">As</th>
+						<td valign="top">an API consumer</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">I want</th>
+						<td valign="top">APIs to have standardized descriptions</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">so that</th>
+						<td valign="top">I can easily understand and consume the products I am accessing.</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="wiifm-platform">
+				<title>WIIFM: Platform People</title>
+				<img src="openapi-logo-270.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<table cellspacing="20">
+					<tr>
+						<th align="right" valign="top">As</th>
+						<td valign="top">an API platform person</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">I want</th>
+						<td valign="top">to support standardized description formats</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">so that</th>
+						<td valign="top">all producers and consumers speak <q>in the same language</q>.</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="lifecycle">
+				<title>The (Open)API Lifecycle</title>
+				<img source="WSO2: What is Full Lifecycle API Management?" src="api-lifecycle.png" href="https://wso2.com/api-management/what-is-full-lifecycle-api-management/" class="fullsize-shadow" />
+			</slide>
+		</part>
 		<part id="oai">
 			<title>The OpenAPI Initiative (OAI)</title>
 			<slide id="oai-participation">
