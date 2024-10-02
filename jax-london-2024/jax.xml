@@ -31,10 +31,12 @@
 	<presentation id="index">
 		<title>Everything is not OK: Representing Errors in API Designs</title>
 		<toc class="abstract">One of the important aspects of platforms and platform engineering is to provide solutions for problems that occur in many APIs of a platform. This way API designers don't have to spend effort on solving the same problem over and over again, and API consumers can benefit from a more coherent design across the APIs of a platform. How to deal with problems that can occur is one of those questions that every API design needs to address. In this presentation we look at typical issues, some patterns and anti-patterns how to address them, and we also look at some standardized building blocks for representing those patterns. This allows designers and developers to spend less time figuring out what to do when everything is not OK.</toc>
+<!--
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract"><toc class="abstract"/></p>
 		</slide>
+-->
 		<slide id="getting-apis-to-work">
 			<title>Getting APIs to Work</title>
 			<div style=" float : left ; width : 44% ; margin : 0% 4% 0% 2% ; ">
