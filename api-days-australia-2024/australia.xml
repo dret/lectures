@@ -180,6 +180,14 @@
 		</part>
 		<part id="openapi-versions">
 			<title>OpenAPI Versions</title>
+			<slide id="openapi-terminology">
+				<title>OpenAPI Terminology</title>
+				<ul>
+					<li>OpenAPI Specification (OAS)</li>
+					<li>OpenAPI Description (OAD)</li>
+					<li>OpenAPI Document</li>
+				</ul>
+			</slide>
 			<slide id="openapi-2x">
 				<title>OpenAPI 2</title>
 			</slide>
