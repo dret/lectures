@@ -69,6 +69,15 @@
 			<slide id="platform-universalism">
 				<title>You cannot not have a Platform</title>
 			</slide>
+			<slide id="waterfall">
+				<title>Waterfall: Slow and Inflexible</title>
+			</slide>
+			<slide id="devops">
+				<title>DevOps: Complex and Ineffective</title>
+			</slide>
+			<slide id="platform-engineering">
+				<title>IDP: Focused on Scaling DevOps</title>
+			</slide>
 		</part>
 		<part id="platforms-why">
 			<title>Why Platforms?</title>
@@ -95,10 +104,18 @@
 		<part id="collaboration">
 			<title>Factor #3: Collaboration</title>
 		</part>
+		<part id="innovation">
+			<title>Factor #4: Innovation</title>
+		</part>
 		<part id="conclusions-keynote">
 			<title>Conclusions</title>
 			<slide id="better-platform-engineering">
 				<title>Better Platform Engineering</title>
+				<ul>
+					<li>IDPs for effective development</li>
+					<li>API Portals for effective collaboration</li>
+					<li>Business platforms for building the right things</li>
+				</ul>
 			</slide>
 			<slide id="thanks-keynote">
 				<title>Thank You!</title>
