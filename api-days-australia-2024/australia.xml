@@ -75,6 +75,22 @@
 			<slide id="devops">
 				<title>DevOps: Complex and Ineffective</title>
 			</slide>
+			<slide id="cognitive-load">
+				<title>The Developer World is Complex</title>
+				<img src="team-topologies-cover.png" title="Team Topologies: Cognitive Load" href="https://teamtopologies.com/book" style=" float: right ; width : 20% ; margin : 2% ;  "/>
+				<ul>
+					<li>Source Control &amp; Collaboration: GitHub</li>
+					<li>Continuous Integration/Continuous Delivery (CI/CD): Jenkins</li>
+					<li>Infrastructure as Code: Terraform</li>
+					<li>Containerization &amp; Orchestration: Kubernetes</li>
+					<li>Monitoring &amp; Observability: Datadog</li>
+					<li>Logging: Splunk</li>
+					<li>Secrets Management: HC Vault</li>
+					<li>Package Management &amp; Artifact Repositories: npm</li>
+					<li>Configuration Management: Chef</li>
+					<li>API Management: Kong</li>
+				</ul>
+			</slide>
 			<slide id="platform-engineering">
 				<title>IDP: Focused on Scaling DevOps</title>
 			</slide>
