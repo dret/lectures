@@ -71,9 +71,11 @@
 			</slide>
 			<slide id="waterfall">
 				<title>Waterfall: Slow and Inflexible</title>
+				<img src="platform-engineering-dev-ops.png" title="Waterfall" class="fullsize" />
 			</slide>
 			<slide id="devops">
 				<title>DevOps: Complex and Ineffective</title>
+				<img src="platform-engineering-devops.png" title="DevOps" class="fullsize" />
 			</slide>
 			<slide id="cognitive-load">
 				<title>The Developer World is Complex</title>
@@ -92,36 +94,48 @@
 				</ul>
 			</slide>
 			<slide id="platform-engineering">
-				<title>IDP: Focused on Scaling DevOps</title>
+				<title><span title="Internal Developer Platform">IDP</span>: Scaling DevOps</title>
+				<img src="platform-engineering-idp.png" title="Internal Developer Platform" class="fullsize" />
+			</slide>
+			<slide id="api-platform">
+				<title>Full Bezos? Partial Bezos?</title>
+				<img src="platform-engineering-api.png" title="API Platform" class="fullsize" />
 			</slide>
 		</part>
-		<part id="platforms-why">
-			<title>Why Platforms?</title>
+		<part id="platform-business">
+			<title>Business Impact of Platforms</title>
 			<slide id="spice-girls">
 				<title>What do you Really Really Want?</title>
 				<img title="The Spice Girls Question" src="spice-girls-platform.png" href="https://www.youtube.com/watch?v=v0z_6pXeimw" class="fullsize-shadow"/>
+			</slide>
+			<slide id="business-platform">
+				<title>Delivery! Interconnection! Innovation!</title>
+				<img src="platform-engineering-business.png" title="Business Platform and Platform Business" class="fullsize" />
 			</slide>
 			<slide id="platform-value">
 				<title>Platform Value</title>
 				<ul>
 					<li><em>More Efficient Development:</em> Internal Developer Platform</li>
-					<li><em>More Effective Collaboration</em>: Developer Portals/Marketplaces</li>
+					<li><em>More Effective Collaboration</em>: API Portals/Marketplaces</li>
 					<li><em>Digital Transformation:</em> Digital/Business Platform</li>
 					<li><em>Becoming a Platform:</em> Platform Business Model</li>
 				</ul>
 			</slide>
 		</part>
-		<part id="scaling">
-			<title>Factor #1: Scaling</title>
-		</part>
-		<part id="standardization">
-			<title>Factor #2: Standardization</title>
-		</part>
-		<part id="collaboration">
-			<title>Factor #3: Collaboration</title>
-		</part>
-		<part id="innovation">
-			<title>Factor #4: Innovation</title>
+		<part id="success-factors">
+			<title>Platform Success Factors</title>
+			<slide id="scaling">
+				<title>Factor #1: Scaling</title>
+			</slide>
+			<slide id="standardization">
+				<title>Factor #2: Standardization</title>
+			</slide>
+			<slide id="collaboration">
+				<title>Factor #3: Collaboration</title>
+			</slide>
+			<slide id="innovation">
+				<title>Factor #4: Innovation</title>
+			</slide>
 		</part>
 		<part id="conclusions-keynote">
 			<title>Conclusions</title>
