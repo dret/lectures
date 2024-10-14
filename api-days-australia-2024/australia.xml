@@ -44,11 +44,11 @@
 		</table>
 	</toc>
 	<title><a href="https://www.apidays.global/">API Days</a> <a href="https://www.apidays.global/australia/">Australia</a> 2024</title>
-	<author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
 	<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
 	<copyright>2024 Erik Wilde</copyright>
 	<presentation id="platform-success-factors">
 		<title short="Platform Success Factors">Platform Success Factors: Make your platform journey a success</title>
+		<author>Erik Wilde, <a href="https://www.innoq.com/">INNOQ</a></author>
 		<date short="2024-10-16">October 16, 2024</date>
 		<toc class="abstract">Platform Engineering is one of the big trends of the recent past. Why is important and what are the main success factors of platform engineering? The easiest way to get started is by understanding platforms as a way for better scaling development cost: By pushing repeated work into the platform, you benefit from economies of scale. A bit more advanced is to use platforms as a vehicle for standardization: By making opinionated decisions, you encourage and support teams to adopt a shared set of tools and technologies. The most challenging factor is to use platforms as a way to boost innovation: When teams start contributing their products to the platform, collaboration effort is reduced and the platform becomes a digital representation of your organization's core capabilities. We will look at these success factors in detail and also discuss specific steps you can take to get the most out of your platform investments.</toc>
 		<date short="2024-10-16">October 16, 2024</date>
@@ -160,6 +160,7 @@
 	</presentation>
 	<presentation id="oai-track">
 		<title short="OAI Track">OAI Track Introduction and the State of OpenAPI</title>
+		<author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
 		<date short="2024-10-17">October 17, 2024</date>
 		<part id="openapi-user-stories">
 			<title>OpenAPI User Stories</title>
