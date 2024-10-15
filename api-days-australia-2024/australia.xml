@@ -140,7 +140,17 @@
 				<img src="gitlab-logo.png" title="GitLab" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
 					<li><q>Shift Down</q> is the new <q>Shift Left</q></li>
+					<li><em>Self-Service</em> makes development teams more efficient</li>
+					<li><em>Automation</em> helps infrastructure team to handle scale</li>
 				</ul>
+			</slide>
+			<slide id="api-descriptions">
+				<title>Scaling in the API Space: API Descriptions</title>
+				<img src="graph-oad-public.png" href="https://apicontext.com/resources/api-drift-white-paper/" class="fullsize" />
+			</slide>
+			<slide id="api-drift-api">
+				<title>Scaling in the API Space: API Drift</title>
+				<img src="graph-oad-most-recent.png" href="https://apicontext.com/resources/api-drift-white-paper/" class="fullsize" />
 			</slide>
 			<slide id="standardization">
 				<title>Factor #2: Standardization</title>
