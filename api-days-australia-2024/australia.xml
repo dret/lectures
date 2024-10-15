@@ -156,6 +156,20 @@
 				<title>Factor #2: Standardization</title>
 				<img src="cloudevents-logo.png" title="CloudEvents" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
 			</slide>
+			<slide id="only-one">
+				<title>Standardizing API Platforms: There Cannot Be Only One</title>
+				<img src="highlander.png" href="https://en.wikipedia.org/wiki/Highlander_(film)" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>Growing and evolving API landscapes are the new normal</li>
+					<li>Deciding on <q>the one</q> API style/technology/platform is a losing battle</li>
+					<li>Plan and architect for diversity</li>
+					<li>There is a broad spectrum between <q>The One</q> and <q>Anything Goes</q></li>
+				</ul>
+			</slide>
+			<slide id="messaging">
+				<title>Standardizing API Platforms: Messaging System Landscapes</title>
+				<img src="messaging.png" title="Image by Clemens Vasters" href="https://github.com/clemensv/messaging/blob/main/presentations/2022-04-05%20Azure%20Messaging%20%E2%80%93%20Standards%20Matter.pptx" class="fullsize"/>
+			</slide>
 			<slide id="collaboration">
 				<title>Factor #3: Collaboration &amp; Innovation</title>
 			</slide>
