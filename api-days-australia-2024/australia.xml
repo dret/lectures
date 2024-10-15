@@ -50,7 +50,7 @@
 		<title short="Platform Success Factors">Platform Success Factors: Make your platform journey a success</title>
 		<author>Erik Wilde, <a href="https://www.innoq.com/">INNOQ</a></author>
 		<date short="2024-10-16">October 16, 2024</date>
-		<toc class="abstract">Platform Engineering is one of the big trends of the recent past. Why is it important and what are the main success factors of platform engineering? The easiest way to get started is by understanding platforms as a way for better scaling development cost: By pushing repeated work into the platform, you benefit from economies of scale. A bit more advanced is to use platforms as a vehicle for standardization: By making opinionated decisions, you encourage and support teams to adopt a shared set of tools and technologies. The most challenging factor is to use platforms as a way to boost innovation: When teams start contributing their products to the platform, collaboration effort is reduced and the platform becomes a digital representation of your organization's core capabilities. We will look at these success factors in detail and also discuss specific steps you can take to get the most out of your platform investments.</toc>
+		<toc class="abstract">Platform Engineering is one of the big trends of the recent past. Why is it important and what are the main success factors of platform engineering? The easiest way to get started is by understanding platforms as a way for more efficient development: Achieving economies of scale by pushing repeated work into the platform. A bit more advanced is to use platforms as a vehicle for standardization: By making opinionated decisions, you encourage and support teams to adopt a shared set of tools and technologies. The most challenging factor is to use platforms as a way to boost innovation: When teams start contributing their products to the platform, collaboration effort is reduced and the platform becomes a digital representation of your organization's core capabilities. We will look at these success factors in detail and also discuss specific steps you can take to get the most out of your platform investments.</toc>
 		<date short="2024-10-16">October 16, 2024</date>
 <!--
 		<slide id="summary">
@@ -137,6 +137,10 @@
 			<title>Platform Success Factors</title>
 			<slide id="scaling">
 				<title>Factor #1: Scaling</title>
+				<img src="gitlab-logo.png" title="GitLab" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li><q>Shift Down</q> is the new <q>Shift Left</q></li>
+				</ul>
 			</slide>
 			<slide id="standardization">
 				<title>Factor #2: Standardization</title>
@@ -157,7 +161,7 @@
 				<ul>
 					<li>Platform is a fuzzy term</li>
 					<li>A platform strategy aligns and guides platform efforts</li>
-					<li>Balance efforts across various platform efforts</li>
+					<li>Balance efforts across all platform efforts</li>
 					<li>APIs play a vital part in all (technical) platforms</li>
 				</ul>
 			</slide>
