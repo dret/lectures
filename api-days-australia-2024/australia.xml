@@ -372,8 +372,19 @@
 				<title>OpenAPI Terminology</title>
 				<ul>
 					<li>OpenAPI Specification (OAS)</li>
+					<ul>
+						<li>The OpenAPI specification itself</li>
+						<li>Specifically: Not a description of an API with OpenAPI</li>
+					</ul>
 					<li>OpenAPI Description (OAD)</li>
+					<ul>
+						<li>The description of an API with OpenAPI</li>
+					</ul>
 					<li>OpenAPI Document</li>
+					<ul>
+						<li>One specific document of an OAD</li>
+						<li>OAD can be self-contained or may use multiple OpenAPI documents</li>
+					</ul>
 				</ul>
 			</slide>
 			<slide id="openapi-2x">
