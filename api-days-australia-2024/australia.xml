@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
 <?hotspot layout-path="hotspot/hotspot/layout" ?>
 <?hotspot kilauea-path="hotspot/kilauea" ?>
-<?hotspot layout="innoq" ?>
+<?hotspot layout="oai-track" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 	<configuration>
 		<link subsections="yes" bookmarks="yes" versions="australia.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
@@ -407,6 +407,9 @@
 						<li>Version 3.0.3 released February 20, 2020</li>
 						<li>3.0.4 will be published very soon</li>
 					</ul>
+					<li>Introduced the <code>components</code> section for reusable definitions</li>
+					<li>Changes to the handling of parametrized URLs</li>
+					<li>Changes to the handling of media types and content negotiation</li>
 				</ul>
 			</slide>
 			<slide id="openapi-31">
