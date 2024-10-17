@@ -349,7 +349,7 @@
 						<li><code href="https://www.youtube.com/@OpenApi">@OpenApi</code> on YouTube</li>
 					</ul>
 					<li><a href="https://www.openapis.org/participate/how-to-contribute">Participate in working groups</a> for technical questions and contributions</li>
-					<li><a h	ref="https://www.openapis.org/membership/join">Become a member</a> to support the effort and benefit from member perks</li>
+					<li><a href="https://www.openapis.org/membership/join">Become a member</a> to support the effort and benefit from member perks</li>
 				</ul>
 			</slide>
 			<slide id="oai-members">
@@ -387,10 +387,15 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="version-distribution">
+				<title></title>
+				<img src="oas-version-cohort.png" href="https://apicontext.com/resources/api-drift-white-paper/" class="fullsize" />
+			</slide>
 			<slide id="openapi-2x">
 				<title><a href="https://spec.openapis.org/oas/v2.0.html">OpenAPI 2.0</a></title>
 				<ul>
 					<li>Released September 8, 2014</li>
+					<li>The same as <em>Swagger 2.0</em> but renamed when the spec was donated</li>
 				</ul>
 			</slide>
 			<slide id="openapi-30">
