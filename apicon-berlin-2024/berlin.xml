@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
 <?hotspot layout-path="hotspot/hotspot/layout" ?>
 <?hotspot kilauea-path="hotspot/kilauea" ?>
-<?hotspot layout="youtube" ?>
+<?hotspot layout="innoq" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 	<configuration>
 		<link subsections="yes" bookmarks="yes" versions="berlin.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
@@ -577,7 +577,7 @@
 				</slide>
 			</part>
 		</part>
-		<part id="platform-engineering">
+		<part id="platform-engineering-intro">
 			<title>Platform Engineering</title>
 			<part id="three-platform-types">
 				<title>Three Platform Types</title>
@@ -809,12 +809,184 @@
 		</part>
 	</presentation>
 	<presentation id="platform-success-factors">
-		<title>Platform Success Factors: Make your platform journey a success</title>
+		<title short="Platform Success Factors">Platform Success Factors: Make your platform journey a success</title>
 		<date short="2024-10-23">October 23, 2024</date>
 		<toc class="abstract">Platform Engineering is one of the big trends of the recent past. Why is it important and what are the main success factors of platform engineering? The easiest way to get started is by understanding platforms as a way for more efficient development: Achieving economies of scale by pushing repeated work into the platform. A bit more advanced is to use platforms as a vehicle for standardization: By making opinionated decisions, you encourage and support teams to adopt a shared set of tools and technologies. The most challenging factor is to use platforms as a way to boost innovation: When teams start contributing their products to the platform, collaboration effort is reduced and the platform becomes a digital representation of your organization's core capabilities. We will look at these success factors in detail and also discuss specific steps you can take to get the most out of your platform investments.</toc>
 		<slide id="summary">
 			<title>Summary</title>
-			<p class="abstract"><toc class="abstract"/></p>
+			<p class="abstract">
+				<toc class="abstract"/>
+			</p>
 		</slide>
+		<part id="platform-engineering">
+			<title>Platform Engineering</title>
+			<slide id="platforms-everywhere">
+				<title>Platforms!</title>
+				<ul>
+					<li><q>We're building an API platform and will be API First.</q></li>
+					<li><q>We're building a platform for our partners.</q></li>
+					<li><q>Our developers need a better platform.</q></li>
+					<li><q>We're moving to the cloud platform.</q></li>
+					<li><q>We want to become a platform.</q></li>
+				</ul>
+			</slide>
+			<slide id="gartner-platform-engineering">
+				<title>It's a Thing!</title>
+				<img src="platform-engineering-hype-cycle-gartner.jpg" href="https://www.gartner.com/en/documents/5519995" title="Gartner: Hype Cycle for Platform Engineering 2024" class="fullsize" />
+			</slide>
+			<slide id="platform-universalism">
+				<title>You cannot not have a Platform</title>
+				<img src="sports-car-platform.webp" class="fullsize" />
+			</slide>
+			<slide id="waterfall">
+				<title>Waterfall: Slow and Inflexible</title>
+				<img src="platform-engineering-dev-ops.png" title="Waterfall" class="fullsize" />
+			</slide>
+			<slide id="devops">
+				<title>DevOps: Complex and Ineffective</title>
+				<img src="platform-engineering-devops.png" title="DevOps" class="fullsize" />
+			</slide>
+			<slide id="cognitive-load">
+				<title>The Developer World is Complex</title>
+				<img src="team-topologies-cover.png" title="Team Topologies: Cognitive Load" href="https://teamtopologies.com/book" style=" float: right ; width : 20% ; margin : 2% ;  "/>
+				<ul>
+					<li>Source Control &amp; Collaboration: GitHub</li>
+					<li>Continuous Integration/Continuous Delivery (CI/CD): Jenkins</li>
+					<li>Infrastructure as Code: Terraform</li>
+					<li>Containerization &amp; Orchestration: Kubernetes</li>
+					<li>Monitoring &amp; Observability: Datadog</li>
+					<li>Logging: Splunk</li>
+					<li>Secrets Management: HC Vault</li>
+					<li>Package Management &amp; Artifact Repositories: npm</li>
+					<li>Configuration Management: Chef</li>
+					<li>API Management: Kong</li>
+				</ul>
+			</slide>
+			<slide id="platform-engineering-idp">
+				<title><span title="Internal Developer Platform">IDP</span>: Scaling DevOps</title>
+				<img src="platform-engineering-idp.png" title="Internal Developer Platform" class="fullsize" />
+			</slide>
+			<slide id="got-bezos">
+				<title>Got Bezos?</title>
+				<img src="platform-engineering-api.png" title="API Platform" class="fullsize" />
+			</slide>
+		</part>
+		<part id="platform-business">
+			<title>Business Impact of Platforms</title>
+			<slide id="spice-girls">
+				<title>What do you Really Really Want?</title>
+				<img title="The Spice Girls Question" src="spice-girls-platform.png" href="https://www.youtube.com/watch?v=v0z_6pXeimw" class="fullsize-shadow"/>
+			</slide>
+			<slide id="business-platform">
+				<title>Delivery! Interconnection! Innovation!</title>
+				<img src="platform-engineering-business.png" title="Business Platform and Platform Business" class="fullsize" />
+			</slide>
+			<slide id="platform-value">
+				<title>Platform Value</title>
+				<ul>
+					<li><em>More Efficient Development:</em> Internal Developer Platform</li>
+					<li><em>More Effective Collaboration</em>: API Portals/Marketplaces</li>
+					<li><em>Digital Transformation:</em> Digital/Business Platform</li>
+					<li><em>Becoming a Platform:</em> Platform Business Model</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="success-factors">
+			<title>Platform Success Factors</title>
+			<slide id="scaling">
+				<title>Factor #1: Scaling</title>
+				<img src="gitlab-logo.png" title="GitLab" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li><q>Shift Down</q> is the new <q>Shift Left</q></li>
+					<li><em>Self-Service</em> makes development teams more efficient</li>
+					<li><em>Automation</em> helps infrastructure team to handle scale</li>
+				</ul>
+			</slide>
+			<slide id="api-descriptions">
+				<title>Scaling API Platforms: API Descriptions</title>
+				<img src="oad-public.png" source="APIContext, &quot;The Challenges of API Drift&quot;, White Paper, August 2024" href="https://apicontext.com/resources/api-drift-white-paper/" class="fullsize" />
+			</slide>
+			<slide id="api-drift-api">
+				<title>Scaling API Platforms: API Drift</title>
+				<img src="oad-most-recent.png" source="APIContext, &quot;The Challenges of API Drift&quot;, White Paper, August 2024" href="https://apicontext.com/resources/api-drift-white-paper/" class="fullsize" />
+			</slide>
+			<slide id="standardization">
+				<title>Factor #2: Standardization</title>
+				<img src="golden-path-guardrail.webp" title="Golden Path with a Guardrail" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>The network effect</li>
+					<ul>
+						<li><em>API developers:</em> Established tools and practices</li>
+						<li><em>API consumers:</em> Familiarity with design patterns</li>
+						<li><em>Business value:</em> Easier usable API products</li>
+						<li><em>Platforms:</em> Focused efforts on shared practices</li>
+					</ul>
+					<li><q>Guardrails</q> vs. <q>Golden Paths</q></li>
+					<ul>
+						<li>Remembering rules and difficult and unpleasant</li>
+						<li>Following established paths is easy and fast</li>
+						<li>Guardrails are safeguards and not the main guiding principle</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="only-one">
+				<title>Standardizing API Platforms: There Cannot Be Only One</title>
+				<img src="cloudevents-logo.png" title="CloudEvents" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Growing and evolving API landscapes are the new normal</li>
+					<li>Deciding on <q>the one</q> API style/technology/platform is a losing battle</li>
+					<li>Plan and architect for diversity</li>
+					<li>There is a broad spectrum between <q>The One</q> and <q>Anything Goes</q></li>
+				</ul>
+			</slide>
+			<slide id="messaging">
+				<title>Standardizing API Platforms: Messaging System Landscapes</title>
+				<img src="messaging.png" title="Image by Clemens Vasters" href="https://github.com/clemensv/messaging/blob/main/presentations/2022-04-05%20Azure%20Messaging%20%E2%80%93%20Standards%20Matter.pptx" class="fullsize"/>
+			</slide>
+			<slide id="collaboration">
+				<title>Factor #3: Collaboration &amp; Innovation</title>
+				<img src="team-topologies-cover.png" title="Team Topologies: Cognitive Load" href="https://teamtopologies.com/book" style=" float: right ; width : 20% ; margin : 2% ;  "/>
+				<ul>
+					<li>Balancing effectivity and efficiency investments is key</li>
+					<ul>
+						<li><q>Going faster</q> (doing the thing right) is usually easier to do</li>
+						<li><q>Going in the right direction</q> (doing the right thing) is harder but important</li>
+					</ul>
+					<li>Use metrics based on business outcomes</li>
+					<li>Assess the landscape beyond your <q>platform echo chamber</q></li>
+					<ul>
+						<li><em>Platform engineering</em> initiative to improve productivity</li>
+						<li><em>API management</em> initiative to increase security</li>
+						<li><em>Developer platform</em> initiative for better discovery</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-federation">
+				<title>API Collaboration: API Federation</title>
+				<img src="API-management-marketing.png" class="fullsize-shadow"/>
+			</slide>
+		</part>
+		<part id="conclusions-keynote">
+			<title>Conclusions</title>
+			<slide id="better-platforms">
+				<title>Building Better Platforms</title>
+				<img src="platform-ducks.png" title="Get Your Platform Ducks in a Row" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Platform is a fuzzy term</li>
+					<li>A platform strategy aligns and guides platform efforts</li>
+					<li>Balance efforts across all platform efforts</li>
+					<li>APIs play a vital part in all (technical) platforms</li>
+				</ul>
+			</slide>
+			<slide id="thanks-keynote">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/apicon-berlin-2024/"><code>dret.net/lectures/apicon-berlin-2024/</code></a></li>
+				</ul>
+			</slide>
+		</part>
 	</presentation>
 </hotspot>
