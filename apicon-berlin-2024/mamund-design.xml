@@ -128,8 +128,8 @@
 					<ul><li><code>&lt;link href="http://api.example.org/open-api" rel="service-desc" /&gt;</code></li></ul>
 					<li>Response headers pointing to these documents</li>
 					<ul>
-					  <li><code>Link: &lt;http://api.example.org/documentation&gt;; rel="service-doc"</code></li>
-					  <li><code>Link: &lt;http://api.example.org/open-api&gt;; rel="service-desc"</code></li>
+					  <li><code>Link: &lt;http://api.example.org/documentation&gt;; rel="service-doc" /&gt;</code></li>
+					  <li><code>Link: &lt;http://api.example.org/open-api&gt;; rel="service-desc" /&gt;</code></li>
 					</ul>
 				</ul>
 			</slide>
