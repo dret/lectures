@@ -579,9 +579,9 @@
 		</part>
 		<part id="platform-engineering-intro">
 			<title>Platform Engineering</title>
-			<part id="three-platform-types">
-				<title>Three Platform Types</title>
-				<slide id="platform-business">
+			<part id="platform-business">
+				<title>Platform Business? Business Platform?</title>
+				<slide id="platform-business-examples">
 					<title>Platform Business</title>
 					<img src="airbnb-logo.webp" style="float: right ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
 					<img src="uber-logo.png" style="float: right ; clear : both ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
@@ -624,7 +624,6 @@
 					</ul>
 				</slide>
 			</part>
-<!--
 			<part id="api-journey">
 				<title>Typical API Journey</title>
 				<slide id="journey">
@@ -662,7 +661,6 @@
 					<img src="stalled-digital-transformation.png" href="https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/how-to-restart-your-stalled-digital-transformation" title='"How to restart your stalled digital transformation", McKinsey Digital, March 2020' style=" width : 90% ; height : 70% ; object-fit : contain ; margin : 0% 4% 0% 4% ; "/>
 				</slide>
 			</part>
--->
 		<part id="platform-maturity">
 				<title>Platform Engineering Maturity</title>
 				<slide id="cncf-maturity-model">
