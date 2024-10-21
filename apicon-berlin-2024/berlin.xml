@@ -520,6 +520,34 @@
 		<copyright>2024 Erik Wilde</copyright>
 		<part id="portals">
 			<title>Portal Management</title>
+			<part id="great-unbundling">
+				<title>The Great Unbundling</title>
+				<slide id="api-all-the-things">
+					<title>API all the Things!</title>
+					<ul>
+						<li>Increasing number of API-enabled capabilities</li>
+						<li>Increasing consumption of API-enabled capabilities</li>
+						<li>Increasing complexity of API footprint and requirements</li>
+						<li><q>One-size-fits-all</q> API management is on its way out</li>
+					</ul>
+				</slide>
+				<slide id="api-management-technical">
+					<title>Securing APIs</title>
+					<img src="API-management-technical.png" class="fullsize-shadow"/>
+				</slide>
+				<slide id="api-management-lifecycle">
+					<title>Supporting the Full API Lifecycle</title>
+					<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
+				</slide>
+				<slide id="api-management-product">
+					<title>APIs as Business Building Blocks</title>
+					<img src="API-management-product.png" class="fullsize-shadow"/>
+				</slide>
+				<slide id="api-management-marketing">
+					<title>API Consumption Matters</title>
+					<img src="API-management-marketing.png" class="fullsize-shadow"/>
+				</slide>
+			</part>
 			<part id="portal-audience">
 				<title>Portal Audience</title>
 				<slide id="inside-out">
@@ -554,34 +582,6 @@
 						<li>Probably needs some very specific support to focus on the core transaction</li>
 						<li>Oftentimes will use custom software and not a generic portal product</li>
 					</ul>
-				</slide>
-			</part>
-			<part id="great-unbundling">
-				<title>The Great Unbundling</title>
-				<slide id="api-all-the-things">
-					<title>API all the Things!</title>
-					<ul>
-						<li>Increasing number of API-enabled capabilities</li>
-						<li>Increasing consumption of API-enabled capabilities</li>
-						<li>Increasing complexity of API footprint and requirements</li>
-						<li><q>One-size-fits-all</q> API management is on its way out</li>
-					</ul>
-				</slide>
-				<slide id="api-management-technical">
-					<title>Securing APIs</title>
-					<img src="API-management-technical.png" class="fullsize-shadow"/>
-				</slide>
-				<slide id="api-management-lifecycle">
-					<title>Supporting the Full API Lifecycle</title>
-					<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
-				</slide>
-				<slide id="api-management-product">
-					<title>APIs as Business Building Blocks</title>
-					<img src="API-management-product.png" class="fullsize-shadow"/>
-				</slide>
-				<slide id="api-management-marketing">
-					<title>API Consumption Matters</title>
-					<img src="API-management-marketing.png" class="fullsize-shadow"/>
 				</slide>
 			</part>
 		</part>
