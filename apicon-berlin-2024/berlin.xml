@@ -544,7 +544,7 @@
 					<ul>
 						<li>Currently not the focus of most portal products and strategies</li>
 						<li>Probably a growing area of concern with increasing dependencies and complexity</li>
-						<li>Should become part of the general <link href="platform-engineering"/> approach</li>
+						<li>Should become part of the general <link href="platform-engineering-intro"/> approach</li>
 					</ul>
 				</slide>
 			</part>
@@ -579,6 +579,29 @@
 		</part>
 		<part id="platform-engineering-intro">
 			<title>Platform Engineering</title>
+			<part id="platform-engineering-evolution">
+				<title>Platform Engineering Evolution</title>
+				<slide id="waterfall">
+					<title>Waterfall: Slow and Inflexible</title>
+					<img src="platform-engineering-dev-ops.png" title="Waterfall" class="fullsize" />
+				</slide>
+				<slide id="devops">
+					<title>DevOps: Complex and Ineffective</title>
+					<img src="platform-engineering-devops.png" title="DevOps" class="fullsize" />
+				</slide>
+				<slide id="idp">
+					<title><span title="Internal Developer Platform">IDP</span>: Scaling DevOps</title>
+					<img src="platform-engineering-idp.png" title="Internal Developer Platform" class="fullsize" />
+				</slide>
+				<slide id="got-bezos">
+					<title>Got Bezos?</title>
+					<img src="platform-engineering-api.png" title="API Platform" class="fullsize" />
+				</slide>
+				<slide id="business-platform">
+					<title>Delivery! Interconnection! Innovation!</title>
+					<img src="platform-engineering-business.png" title="Business Platform and Platform Business" class="fullsize" />
+				</slide>
+			</part>
 			<part id="platform-business">
 				<title>Platform Business? Business Platform?</title>
 				<slide id="platform-business-examples">
