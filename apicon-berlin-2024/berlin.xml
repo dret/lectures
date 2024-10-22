@@ -899,13 +899,25 @@
 		</part>
 		<part id="platform-business">
 			<title>Business Impact of Platforms</title>
+			<slide id="business-platform">
+				<title>The Composable Organization</title>
+				<img src="platform-engineering-business.png" title="Business Platform" class="fullsize" />
+			</slide>
 			<slide id="spice-girls">
 				<title>What do you Really Really Want?</title>
 				<img title="The Spice Girls Question" src="spice-girls-platform.png" href="https://www.youtube.com/watch?v=v0z_6pXeimw" class="fullsize-shadow"/>
 			</slide>
-			<slide id="business-platform">
-				<title>Interconnection! Collaboration! Innovation!</title>
-				<img src="platform-engineering-business.png" title="Business Platform and Platform Business" class="fullsize" />
+			<slide id="platform-definition">
+				<title>Avoid Terminology Debates</title>
+				<ul>
+					<li>Focus on the motivation for the <q>platform ambition</q></li>
+					<li>Connect the dots across various ambitions and plans</li>
+					<li>Connecting business outcomes to IT initiatives is the most powerful tool you have</li>
+				</ul>
+			</slide>
+			<slide id="platformßoutcomes">
+				<title>Outcomes</title>
+				<img src="platform-engineering-outcomes.png" title="Platform Efficiency, Effectiveness, and Outcomes" class="fullsize" />
 			</slide>
 			<slide id="platform-value">
 				<title>Platform Value</title>
