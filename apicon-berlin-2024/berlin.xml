@@ -948,15 +948,15 @@
 				<ul>
 					<li><q>Shift Down</q> is the new <q>Shift Left</q></li>
 					<li><em>Self-Service</em> makes development teams more efficient</li>
-					<li><em>Automation</em> helps infrastructure team to handle scale</li>
+					<li><em>Automation</em> helps infrastructure teams to handle scale</li>
 				</ul>
 			</slide>
 			<slide id="api-descriptions">
-				<title>Scaling API Platforms: API Descriptions</title>
+				<title>Example: Automating API Lifecycle Tasks</title>
 				<img src="oad-public.png" source="APIContext, &quot;The Challenges of API Drift&quot;, White Paper, August 2024" href="https://apicontext.com/resources/api-drift-white-paper/" class="fullsize" />
 			</slide>
 			<slide id="api-drift-api">
-				<title>Scaling API Platforms: API Drift</title>
+				<title>API Drift</title>
 				<img src="oad-most-recent.png" source="APIContext, &quot;The Challenges of API Drift&quot;, White Paper, August 2024" href="https://apicontext.com/resources/api-drift-white-paper/" class="fullsize" />
 			</slide>
 			<slide id="standardization">
@@ -979,7 +979,7 @@
 				</ul>
 			</slide>
 			<slide id="only-one">
-				<title>Standardizing API Platforms: There Cannot Be Only One</title>
+				<title>Example: Paving the Golden Event Path</title>
 				<img src="cloudevents-logo.png" title="CloudEvents" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
 					<li>Growing and evolving API landscapes are the new normal</li>
@@ -1009,6 +1009,14 @@
 						<li><em>Developer platform</em> initiative for better discovery</li>
 					</ul>
 				</ul>
+			</slide>
+			<slide id="api-management-lifecycle">
+				<title>Example: Building Flexible Business Platforms</title>
+				<img src="API-management-lifecycle.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="api-management-product">
+				<title>APIs as Business Building Blocks</title>
+				<img src="API-management-product.png" class="fullsize-shadow"/>
 			</slide>
 			<slide id="api-federation">
 				<title>API Collaboration: API Federation</title>
