@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="oai-track" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="paris.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+		<div class="license">
+			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+		</div>
+	</license>
+	<title><a href="https://www.apidays.global/">API Days</a> <a href="https://www.apidays.global/paris/">Paris</a> 2024</title>
+	<author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
+	<date short="2024-12-03">December 3, 2024</date>
+	<copyright>2024 Erik Wilde</copyright>
+	<presentation id="index">
+		<title short="OAI Track">OAI Track Introduction and the State of OpenAPI</title>
+		<slide id="openapi-and-open-api">
+			<title>OpenAPI and Open APIs</title>
+			<img src="open-api-openapi-cover.jpg" title="Open API and OpenAPI: What's the Difference?" href="https://www.youtube.com/watch?v=cLDqCgAwe2w" class="fullsize-shadow"/>
+		</slide>
+		<slide id="oai-wants-you">
+			<title>OAI Wants You!</title>
+			<img src="openapi-initiative-wants-you.webp" class="fullsize"/>
+		</slide>
+		<slide id="what-oai-wants">
+			<title>What OAI Wants</title>
+			<ul>
+				<li>Adopt open standards in your organization</li>
+				<li>Champion open standards within your organization</li>
+				<li>Provide feedback how OAI can improve their standards</li>
+				<li>Start participating in OAI's technical work</li>
+				<li>Become an OAI member</li>
+			</ul>
+		</slide>
+		<part id="openapi-user-stories">
+			<title>OpenAPI User Stories</title>
+			<slide id="network-effect">
+				<title>Metcalfe's Law: The Network Effect</title>
+				<img src="network-effect.webp" class="fullsize"/>
+			</slide>
+			<slide id="wiifm">
+				<title><span title="What's in it for me?">WIIFM</span>: Everybody's Favorite Station</title>
+				<img src="wiifm.webp" title="WIIFM: What's in it for me?" class="fullsize"/>
+			</slide>
+			<slide id="wiifm-org-biz">
+				<title>WIIFM: Business and Organization Value</title>
+				<img src="openapi-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<table cellspacing="20">
+					<tr>
+						<th align="right" valign="top">As</th>
+						<td valign="top">business or organization leader</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">I want</th>
+						<td valign="top">well-defined and usable digital interfaces for partners and the public</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">so that</th>
+						<td valign="top">I can more easily change and scale my value streams.</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="wiifm-dev">
+				<title>WIIFM: API Developers</title>
+				<img src="openapi-logo-90.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<table cellspacing="20">
+					<tr>
+						<th align="right" valign="top">As</th>
+						<td valign="top">an API developer</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">I want</th>
+						<td valign="top">to describe the product I am going to implement</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">so that</th>
+						<td valign="top">I can use various tools throughout the API lifecycle.</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="wiifm-org-biz">
+				<title>WIIFM: API Consumers</title>
+				<img src="openapi-logo-180.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<table cellspacing="20">
+					<tr>
+						<th align="right" valign="top">As</th>
+						<td valign="top">an API consumer</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">I want</th>
+						<td valign="top">APIs to have standardized descriptions</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">so that</th>
+						<td valign="top">I can easily understand and consume the products I am accessing.</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="wiifm-platform">
+				<title>WIIFM: Platform People</title>
+				<img src="openapi-logo-270.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<table cellspacing="20">
+					<tr>
+						<th align="right" valign="top">As</th>
+						<td valign="top">an API platform person</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">I want</th>
+						<td valign="top">to support standardized description formats</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">so that</th>
+						<td valign="top">all producers and consumers speak <q>in the same language</q>.</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="lifecycle">
+				<title>The (Open)API Lifecycle</title>
+				<img source="WSO2: What is Full Lifecycle API Management?" src="api-lifecycle.png" href="https://wso2.com/api-management/what-is-full-lifecycle-api-management/" class="fullsize-shadow" />
+			</slide>
+		</part>
+		<part id="oai">
+			<title>The OpenAPI Initiative (OAI)</title>
+			<slide id="oai-participation">
+				<title>OAI Participation</title>
+				<ul>
+					<li>Follow OAI to learn about updates and new work</li>
+					<ul>
+						<li><code href="https://www.linkedin.com/company/open-api-initiative">open-api-initiative</code> on LinkedIn</li>
+						<li><code href="https://www.youtube.com/@OpenApi">@OpenApi</code> on YouTube</li>
+					</ul>
+					<li><a href="https://www.openapis.org/participate/how-to-contribute">Participate in working groups</a> for technical questions and contributions</li>
+					<li><a href="https://www.openapis.org/membership/join">Become a member</a> to support the effort and benefit from member perks</li>
+				</ul>
+			</slide>
+			<slide id="oai-members">
+				<title>OAI Members</title>
+				<img src="oai-members-2024-10.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="oai-membership">
+				<title>OAI Membership</title>
+				<ul>
+					<li>Member fees are based on company size</li>
+					<li>Members have no special influence on technical decisions</li>
+					<li>Members get to decide how OAI allocates and spends funds</li>
+					<li>Members pay reduced fees at OAI-organized events</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="openapi-versions">
+			<title>OpenAPI Versions</title>
+			<slide id="openapi-terminology">
+				<title>OpenAPI Terminology</title>
+				<ul>
+					<li>OpenAPI Specification (OAS)</li>
+					<ul>
+						<li>The OpenAPI specification itself</li>
+						<li>Specifically: Not a description of an API with OpenAPI</li>
+					</ul>
+					<li>OpenAPI Description (OAD)</li>
+					<ul>
+						<li>The description of an API with OpenAPI</li>
+					</ul>
+					<li>OpenAPI Document</li>
+					<ul>
+						<li>One specific document of an OAD</li>
+						<li>OAD can be self-contained or may use multiple OpenAPI documents</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="version-distribution">
+				<title></title>
+				<img src="oas-version-cohort.png" source="APIContext, &quot;The Challenges of API Drift&quot;, White Paper, August 2024" href="https://apicontext.com/resources/api-drift-white-paper/" class="fullsize" />
+			</slide>
+			<slide id="openapi-2x">
+				<title><a href="https://spec.openapis.org/oas/v2.0.html">OpenAPI 2.0</a></title>
+				<ul>
+					<li>Released September 8, 2014</li>
+					<li>The same as <em>Swagger 2.0</em> but renamed when the spec was donated</li>
+				</ul>
+			</slide>
+			<slide id="openapi-30">
+				<title><a href="https://spec.openapis.org/oas/v3.0.3.html">OpenAPI 3.0</a></title>
+				<ul>
+					<li>Latest version is 3.0.3</li>
+					<ul>
+						<li>Version 3.0.0 released July 26, 2017</li>
+						<li>Version 3.0.3 released February 20, 2020</li>
+						<li>3.0.4 will be published very soon</li>
+					</ul>
+					<li>Introduced the <code>components</code> section for reusable definitions</li>
+					<li>Changes to the handling of parametrized URLs</li>
+					<li>Changes to the handling of media types and content negotiation</li>
+				</ul>
+			</slide>
+			<slide id="openapi-31">
+				<title><a href="https://spec.openapis.org/oas/v3.1.0.html">OpenAPI 3.1</a></title>
+				<ul>
+					<li>Released February 15, 2021</li>
+					<ul>
+						<li>3.1.1 will be published very soon</li>
+					</ul>
+					<li>Alignment with the most recent version of JSON Schema</li>
+					<li>Support for webhooks (in addition to callbacks)</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="oai-specs">
+			<title>Other OAI Specifications</title>
+			<slide id="arazzo">
+				<title>Arazzo Workflows</title>
+				<ul>
+					<li>OpenAPI describes <q>atomic interactions</q> with resource-oriented APIs</li>
+					<li>Many/most APIs rely on meaningful combinations of individual interactions</li>
+					<li>Arazzo represents the idea of interaction sequences within/across APIs</li>
+					<li>Arazzo descriptions do not intend to be readily executable descriptions</li>
+				</ul>
+			</slide>
+			<slide id="overlays">
+				<title>Overlays</title>
+				<ul>
+					<li>OpenAPI documents are increasingly connecting tools and user groups</li>
+					<li>Not everybody wants/needs/should get the <q>full description of everything</q></li>
+					<li>Overlays support different <q>views</q> of the same OpenAPI documents</li>
+				</ul>
+			</slide>
+			<slide id="competition">
+				<title>Competition? Complementary?</title>
+				<ul>
+					<li><em>AsyncAPI</em></li>
+					<li><em>GraphQL</em></li>
+					<li><em>gRPC</em></li>
+				</ul>
+			</slide>
+		</part>
+		<part id="conclusions-oai-track">
+			<title>Conclusions</title>
+			<slide id="join">
+				<title>Join the OAI/OpenAPI Community!</title>
+				<img src="openapi-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Join the community: <code href="https://github.com/OAI/community" title="OAI Community">github.com/OAI/community</code></li>
+					<li>All technical and special interest groups meetings: <code href="https://www.openapis.org/calendar" title="OAI Community Calendar">openapis.org/calendar</code></li>
+					<li>Upcoming events (including OAI Tracks): <code href="https://www.openapis.org/events" title="OAI Events">openapis.org/events</code></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
