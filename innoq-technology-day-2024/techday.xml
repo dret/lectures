@@ -30,7 +30,7 @@
 	<copyright>2024 Erik Wilde</copyright>
 	<presentation id="index">
 		<title short="What Why When Versioning Matters">What Why When Versioning Matters: Tips for API Design, Description, and Documentation</title>
-		<toc class="abstract">...</toc>
+		<toc class="abstract">One of the superpowers of APIs is to design them as products with a focus on making them reusable. That helps with innovation and reuse, as teams can now consume the capabilities of other teams without having to coordinate with them, leading to faster flow. For this to work well, API versioning must be handled in a way that allows the API to evolve while at the same time not breaking existing consumers. What do you have to version? Why does it matter? When should you version? We present tips that help to improve your API design, description and documentation practices.</toc>
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract">
