@@ -85,6 +85,19 @@
 		</slide>
 		<part id="version-info">
 			<title>Where to put Version Information</title>
+			<slide id="identity-matters">
+				<title>Identity Matters</title>
+				<ul>
+					<li>Break identity when you're breaking compatibility</li>
+					<li>Various choices when it comes to versioned names</li>
+					<ul>
+						<li><em>DNS: <code>https://v1.api.example.com/</code></em></li>
+						<li><em>URI root:</em> <code>https://api.example.com/v1/</code></li>
+						<li><em>Query parameter:</em> <code>https://api.example.com/?version=1.0</code></li>
+						<li><em>HTTP header field:</em> <code>https://api.example.com/</code></li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
