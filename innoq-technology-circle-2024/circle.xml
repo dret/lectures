@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="innoq" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="circle.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+		<div class="license">
+			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+		</div>
+	</license>
+	<author>Erik Wilde</author>
+	<affiliation>Principal Consultant, <a href="https://www.innoq.com/">INNOQ</a></affiliation>
+	<title>INNOQ Technology Circle ZRH</title>
+	<date short="2024-11-21">November 21, 2024</date>
+	<copyright>2024 Erik Wilde</copyright>
+	<presentation id="index">
+		<title short="Platform Engineering">Platform Engineering: Do You Need It?</title>
+		<slide id="platforms-everywhere">
+			<title>Platforms!</title>
+			<ul>
+				<li><q>We're building an API platform and will be API First.</q></li>
+				<li><q>We're building a platform for our partners.</q></li>
+				<li><q>Our developers need a better platform.</q></li>
+				<li><q>We're moving to the cloud platform.</q></li>
+				<li><q>We want to become a platform.</q></li>
+			</ul>
+		</slide>
+		<slide id="gartner-platform-engineering">
+			<title>It's a Thing!</title>
+			<img src="platform-engineering-hype-cycle-gartner.jpg" href="https://www.gartner.com/en/documents/5519995" title="Gartner: Hype Cycle for Platform Engineering 2024" class="fullsize" />
+		</slide>
+		<slide id="platform-universalism">
+			<title>You cannot not have a Platform</title>
+			<img src="sports-car-platform.webp" class="fullsize" />
+		</slide>
+		<slide id="waterfall">
+			<title>Waterfall: Slow and Inflexible</title>
+			<img src="platform-engineering-dev-ops.png" title="Waterfall" class="fullsize" />
+		</slide>
+		<slide id="devops">
+			<title>DevOps: Inefficient at Scale</title>
+			<img src="platform-engineering-devops.png" title="DevOps" class="fullsize" />
+		</slide>
+		<slide id="cognitive-load">
+			<title>The Developer World is Complex</title>
+			<ul>
+				<li>Source Control &amp; Collaboration: GitHub</li>
+				<li>Continuous Integration/Continuous Delivery (CI/CD): Jenkins</li>
+				<li>Infrastructure as Code: Terraform</li>
+				<li>Containerization &amp; Orchestration: Kubernetes</li>
+				<li>Monitoring &amp; Observability: Datadog</li>
+				<li>Logging: Splunk</li>
+				<li>Secrets Management: HC Vault</li>
+				<li>Package Management &amp; Artifact Repositories: npm</li>
+				<li>Configuration Management: Chef</li>
+				<li>API Management: Kong</li>
+			</ul>
+		</slide>
+		<slide id="platform-engineering-idp">
+			<title><span title="Internal Developer Platform">IDP</span>: Scaling DevOps</title>
+			<img src="platform-engineering-idp.png" title="Internal Developer Platform" class="fullsize" />
+		</slide>
+		<slide id="got-bezos">
+			<title>Got Bezos?</title>
+			<img src="platform-engineering-api.png" title="API Platform" class="fullsize" />
+		</slide>
+		<title>Business Impact of Platforms</title>
+		<slide id="business-platform">
+			<title>The Composable Organization</title>
+			<img src="platform-engineering-business.png" title="Business Platform" class="fullsize" />
+		</slide>
+		<slide id="spice-girls">
+			<title>What do you Really Really Want?</title>
+			<img title="The Spice Girls Question" src="spice-girls-platform.png" href="https://www.youtube.com/watch?v=v0z_6pXeimw" class="fullsize-shadow"/>
+		</slide>
+		<slide id="platform-definition">
+			<title>Avoid Terminology Debates</title>
+			<ul>
+				<li>Focus on the motivation for the <q>platform ambition</q></li>
+				<li>Connect the dots across various ambitions and plans</li>
+				<li>Connecting business outcomes to IT initiatives is the most powerful tool you have</li>
+			</ul>
+		</slide>
+		<slide id="platform-outcomes">
+			<title>Outcomes</title>
+			<img src="platform-engineering-outcomes.png" title="Platform Efficiency, Effectiveness, and Outcomes" class="fullsize" />
+		</slide>
+		<slide id="platform-value">
+			<title>Platform Value</title>
+			<ul>
+				<li><em>More Efficient Development:</em> Internal Developer Platform</li>
+				<li><em>More Effective Collaboration</em>: API Platform</li>
+				<li><em>Digital Transformation:</em> Digital/Business Platform</li>
+				<li><em>Becoming a Platform:</em> Platform Business</li>
+			</ul>
+		</slide>
+		<slide id="better-platforms">
+			<title>Building Platforms Better</title>
+			<img src="platform-ducks.png" title="Get Your Platform Ducks in a Row" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+			<ul>
+				<li>Platform is a fuzzy term</li>
+				<li>A platform strategy aligns and guides platform efforts</li>
+				<li>Balance efforts across various platform efforts</li>
+			</ul>
+		</slide>
+	</presentation>
+</hotspot>
