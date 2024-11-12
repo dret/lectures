@@ -75,6 +75,8 @@
 			</slide>
 			<slide id="forward-compatibility">
 				<title>Forward Compatibility</title>
+				<blockquote><q>Forward compatibility [...] is a design characteristic that allows a system to accept input intended for a later version of itself. [...] A standard supports forward compatibility if a product that complies with earlier versions can <q>gracefully</q> process input designed for later versions of the standard, ignoring new parts which it does not understand.</q> (<a href="https://en.wikipedia.org/wiki/Forward_compatibility">Wikipedia</a>)</blockquote>
+				<blockquote><q>Forward compatibility allows a system to process data intended for a later version of itself. An API supports forward compatibility if a consumer that complies with earlier versions can gracefully process data designed for later versions of the API.</q> (<q><a href="https://en.wikipedia.org/wiki/Forward_compatibility">Wikipedia</a></q>)</blockquote>
 			</slide>
 		</part>
 		<slide id="dont-dont-version">
@@ -88,7 +90,10 @@
 			<slide id="identity-matters">
 				<title>Identity Matters</title>
 				<ul>
-					<li>Break identity when you're breaking compatibility</li>
+					<li>URIs are about resource identity</li>
+					<ul>
+						<li>Representations are handled through HTTP and media types</li>
+					</ul>
 					<li>Various choices when it comes to versioned names</li>
 					<ul>
 						<li><em>DNS: <code>https://v1.api.example.com/</code></em></li>
