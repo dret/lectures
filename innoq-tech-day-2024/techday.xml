@@ -70,6 +70,10 @@
 		</part>
 		<part id="compatibility">
 			<title>Compatibility</title>
+			<slide id="compatibility-directions">
+				<title>The Two Directions of Compatibility</title>
+				<img src="compatibility.png" class="fullsize" />
+			</slide>
 			<slide id="backward-compatibility">
 				<title>Backward Compatibility</title>
 				<blockquote><q>Backward compatibility is a property of a [...] technology that allows for interoperability with an older legacy system, or with input designed for such a system.</q> (<a href="https://en.wikipedia.org/wiki/Backward_compatibility">Wikipedia</a>)</blockquote>
