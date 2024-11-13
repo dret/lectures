@@ -87,6 +87,12 @@
 		</part>
 		<slide id="dont-dont-version">
 			<title>Don't Don't Version</title>
+			<ul>
+				<li><q>Never changing anything</q> is not a great product management attitude</li>
+				<li>Changes ideally are non-breaking but still are relevant to consumers</li>
+				<li>Give consumers as much freedom as possible to ignore changes</li>
+				<li>Give consumers clear avenues to see and explore changes</li>
+			</ul>
 		</slide>
 		<slide id="immutable-contract">
 			<title>Immutable APIs</title>
