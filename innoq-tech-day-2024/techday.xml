@@ -80,6 +80,13 @@
 			<title>What to do for Versioning?</title>
 			<slide id="loose-coupling">
 				<title>Loose Coupling</title>
+				<ul>
+					<li><em>Coupling</em> always is a trade-off</li>
+					<li><em>Tight coupling</em> allows for runtime optimizations</li>
+					<li><em>Loose coupling</em> makes it easier to change things at a local level</li>
+					<li><em>Decentralized scenarios</em> are a good candidate for loose coupling</li>
+					<li>Changing things without breaking things is what we're all after</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="how">
