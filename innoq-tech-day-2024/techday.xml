@@ -39,9 +39,44 @@
 		</slide>
 		<part id="why">
 			<title>Why Versioning?</title>
+			<slide id="composition">
+				<title>Systems vs. Ecosystems</title>
+				<ul>
+					<li>Software engineering today oftentimes includes using <em>external</em> components</li>
+					<li>Building <em>systems</em> implies control over the interconnected components</li>
+					<ul>
+						<li><em>Change radius</em> is the entire system and changes can be coordinated</li>
+					</ul>
+					<li>Building <em>ecosystems</em> implies that control is decentralized and uncoordinated</li>
+					<ul>
+						<li><em>Change radius</em> are components and changes must be absorbed by the design</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="api-interfaces">
+				<title>APIs as Component Interfaces</title>
+				<ul>
+					<li><em>Private APIs</em> are used within organizations</li>
+					<ul>
+						<li>Some APIs may be internal to <em>building systems</em></li>
+						<li>Organizations as a whole are <em>ecosystems</em> of various individual systems</li>
+					</ul>
+					<li><em>Partner APIs</em></li>
+					<ul>
+						<li>Established and managed relationships but local autonomy</li>
+					</ul>
+					<li><em>Public APIs</em></li>
+					<ul>
+						<li>Large-scale relationships with little mutual coordination</li>
+					</ul>
+				</ul>
+			</slide>
 		</part>
 		<part id="what">
 			<title>What to do for Versioning?</title>
+			<slide id="loose-coupling">
+				<title>Loose Coupling</title>
+			</slide>
 		</part>
 		<part id="how">
 			<title>How to support Versioning?</title>
