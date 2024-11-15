@@ -63,7 +63,7 @@
 					<li><em>Private APIs</em> are used within organizations</li>
 					<ul>
 						<li>Some APIs may be internal to <em>building systems</em></li>
-						<li>Organizations as a whole are <em>ecosystems</em> of various individual systems</li>
+						<li>Organizations typically are <em>ecosystems</em> of various individual systems</li>
 					</ul>
 					<li><em>Partner APIs</em></li>
 					<ul>
@@ -87,6 +87,37 @@
 					<li><em>Decentralized scenarios</em> are a good candidate for loose coupling</li>
 					<li>Changing things without breaking things is what we're all after</li>
 				</ul>
+			</slide>
+			<slide id="compatibility-directions">
+				<title>Backward and Forward Compatibility</title>
+				<img src="compatibility.png" class="fullsize" />
+			</slide>
+			<slide id="backward-compatibility">
+				<title>Backward Compatibility</title>
+				<blockquote><q>Backward compatibility is a property of a [...] technology that allows for interoperability with an older legacy system, or with input designed for such a system.</q> (<a href="https://en.wikipedia.org/wiki/Backward_compatibility">Wikipedia</a>)</blockquote>
+				<blockquote><q>Backward compatibility is a property of an API consumer that allows for interoperability with an older API version.</q> (<q><a href="https://en.wikipedia.org/wiki/Backward_compatibility">Wikipedia</a></q>)</blockquote>
+			</slide>
+			<slide id="forward-compatibility">
+				<title>Forward Compatibility</title>
+				<blockquote><q>Forward compatibility [...] is a design characteristic that allows a system to accept input intended for a later version of itself. [...] A standard supports forward compatibility if a product that complies with earlier versions can <q>gracefully</q> process input designed for later versions of the standard, ignoring new parts which it does not understand.</q> (<a href="https://en.wikipedia.org/wiki/Forward_compatibility">Wikipedia</a>)</blockquote>
+				<blockquote><q>Forward compatibility allows a system to process data intended for a later version of itself. An API supports forward compatibility if a consumer that complies with earlier versions can gracefully process data designed for later versions of the API.</q> (<q><a href="https://en.wikipedia.org/wiki/Forward_compatibility">Wikipedia</a></q>)</blockquote>
+			</slide>
+			<slide id="dont-dont-version">
+				<title>Don't Don't Version</title>
+				<ul>
+					<li><q>Never changing anything</q> is not a great product management attitude</li>
+					<li>Changes ideally are non-breaking but still are relevant to consumers</li>
+					<li>Give consumers as much freedom as possible to ignore changes</li>
+					<li>Give consumers clear avenues to see and explore changes</li>
+				</ul>
+			</slide>
+			<slide id="hyrums-law">
+				<title>Hyrum's Law: Every Change is a Breaking Change</title>
+				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/5Wdgjw6IGDM" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
 			</slide>
 		</part>
 		<part id="how">
@@ -123,40 +154,6 @@
 				<img src="api-descriptions-7.png" class="fullsize" />
 			</slide>
 		</part>
-		<part id="compatibility">
-			<title>Compatibility</title>
-			<slide id="compatibility-directions">
-				<title>Backward and Forward Compatibility</title>
-				<img src="compatibility.png" class="fullsize" />
-			</slide>
-			<slide id="backward-compatibility">
-				<title>Backward Compatibility</title>
-				<blockquote><q>Backward compatibility is a property of a [...] technology that allows for interoperability with an older legacy system, or with input designed for such a system.</q> (<a href="https://en.wikipedia.org/wiki/Backward_compatibility">Wikipedia</a>)</blockquote>
-				<blockquote><q>Backward compatibility is a property of an API consumer that allows for interoperability with an older API version.</q> (<q><a href="https://en.wikipedia.org/wiki/Backward_compatibility">Wikipedia</a></q>)</blockquote>
-			</slide>
-			<slide id="forward-compatibility">
-				<title>Forward Compatibility</title>
-				<blockquote><q>Forward compatibility [...] is a design characteristic that allows a system to accept input intended for a later version of itself. [...] A standard supports forward compatibility if a product that complies with earlier versions can <q>gracefully</q> process input designed for later versions of the standard, ignoring new parts which it does not understand.</q> (<a href="https://en.wikipedia.org/wiki/Forward_compatibility">Wikipedia</a>)</blockquote>
-				<blockquote><q>Forward compatibility allows a system to process data intended for a later version of itself. An API supports forward compatibility if a consumer that complies with earlier versions can gracefully process data designed for later versions of the API.</q> (<q><a href="https://en.wikipedia.org/wiki/Forward_compatibility">Wikipedia</a></q>)</blockquote>
-			</slide>
-		</part>
-		<slide id="dont-dont-version">
-			<title>Don't Don't Version</title>
-			<ul>
-				<li><q>Never changing anything</q> is not a great product management attitude</li>
-				<li>Changes ideally are non-breaking but still are relevant to consumers</li>
-				<li>Give consumers as much freedom as possible to ignore changes</li>
-				<li>Give consumers clear avenues to see and explore changes</li>
-			</ul>
-		</slide>
-		<slide id="hyrums-law">
-			<title>Hyrum's Law: Every Change is a Breaking Change</title>
-			<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
-				<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
-					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/5Wdgjw6IGDM" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
-				</div>
-			</div>
-		</slide>
 		<part id="version-info">
 			<title>Where to put Version Information</title>
 			<slide id="identity-matters">
