@@ -88,6 +88,23 @@
 					<li>Changing things without breaking things is what we're all after</li>
 				</ul>
 			</slide>
+			<slide id="loose-coupling-value">
+				<title>The Value of Loose Coupling</title>
+				<ul>
+					<li>Loosely coupled <em>Private APIs</em> mean faster flow of delivery</li>
+					<ul>
+						<li><q>You're powering your business with APIs</q></li>
+					</ul>
+					<li>Loosely coupled <em>Partner APIs</em> allow better partner focus</li>
+					<ul>
+						<li><q>You're augmenting your business with APIs</q></li>
+					</ul>
+					<li>Loosely coupled <em>Public APIs</em> allow better product management</li>
+					<ul>
+						<li><q>The API is your business</q></li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="compatibility-directions">
 				<title>Backward and Forward Compatibility</title>
 				<img src="compatibility.png" class="fullsize" />
