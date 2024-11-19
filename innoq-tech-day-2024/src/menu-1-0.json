@@ -1,0 +1,15 @@
+{ "menu": {
+    "version": "1.0",
+    "name": "Mario",
+    "items": [
+      {
+        "name": "Pizza",
+        "toppings": [ "Pineapple", "Chili" ]
+      },
+      {
+        "name": "Pasta",
+        "toppings": [ "Tomato", "Scampi" ]
+      }
+    ]
+  }
+}

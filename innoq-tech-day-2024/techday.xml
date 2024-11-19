@@ -139,6 +139,18 @@
 		</part>
 		<part id="how">
 			<title>How to support Versioning?</title>
+			<slide id="menu-mario">
+				<title>Mario's Menu</title>
+				<listing src="menu-1-0.json"/>
+			</slide>
+			<slide id="menu-mario-schema-json">
+				<title>Checking Mario's Menu: JSON</title>
+				<listing src="menu-1-0-schema.json"/>
+			</slide>
+			<slide id="menu-mario-schema-yaml">
+				<title>Checking Mario's Menu: YAML</title>
+				<listing src="menu-1-0-schema.yaml"/>
+			</slide>
 		</part>
 		<part id="api-descriptions">
 			<title>APIs and API Descriptions</title>
