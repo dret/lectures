@@ -12,7 +12,7 @@
           "properties": {
             "name": {
               "type": "string", "enum": [ "Pizza", "Pasta" ] },
-            "toppings": {
+            "options": {
               "type": "array", "items" : { "type" : "string" }, "uniqueItems": true } },
           "required": ["name"],
           "additionalProperties": false }}}}}}
