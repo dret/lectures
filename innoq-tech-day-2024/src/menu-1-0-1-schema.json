@@ -11,18 +11,16 @@
           "oneOf": [ {
             "type": "object",
             "properties": {
-              "name": {
-                "type": "string", "enum": [ "Pizza", "Pasta" ] },
+              "name": { "const": "Pizza" },
               "options": {
-                "type": "array", "items" : { "type" : "string" }, "uniqueItems": true } },
+                "type": "array", "items" : { "type" : "string" , "enum": [ "Pineapple", "Chili" ] }, "uniqueItems": true } },
             "required": [ "name" ],
             "additionalProperties" : false
             }, {
             "type": "object",
             "properties": {
-              "name": {
-                "type": "string", "enum": [ "Pizza", "Pasta" ] },
+              "name": { "const": "Pasta" },
               "options": {
-                "type": "array", "items" : { "type" : "string" }, "uniqueItems": true } },
+                "type": "array", "items" : { "type" : "string" , "enum": [ "Tomato", "Scampi" ] }, "uniqueItems": true } },
             "required": [ "name" ],
             "additionalProperties" : false }]}}}}}}
