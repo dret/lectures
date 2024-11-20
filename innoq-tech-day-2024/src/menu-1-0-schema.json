@@ -3,8 +3,8 @@
   "properties": {"menu": {
     "type": "object",
     "properties": {
-      "version": {"type": "string"},
-      "name": {"type": "string"},
+      "version": { "type" : "string" },
+      "name": { "type" : "string" },
       "food": {
         "type": "array",
         "items": {
@@ -14,5 +14,5 @@
               "type": "string", "enum": [ "Pizza", "Pasta" ] },
             "options": {
               "type": "array", "items" : { "type" : "string" }, "uniqueItems": true } },
-          "required": ["name"],
-          "additionalProperties": false }}}}}}
+          "required": [ "name" ],
+          "additionalProperties" : false }}}}}}
