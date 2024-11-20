@@ -11,19 +11,8 @@
           "type": "object",
           "properties": {
             "name": {
-              "type": "string",
-              "enum": [ "Pizza", "Pasta" ]
-            },
+              "type": "string", "enum": [ "Pizza", "Pasta" ] },
             "toppings": {
-              "type": "array",
-              "items" : { "type" : "string" },
-              "uniqueItems": true
-            }
-          },
+              "type": "array", "items" : { "type" : "string" }, "uniqueItems": true } },
           "required": ["name"],
-          "additionalProperties": false
-        }
-      }
-    }
-  }}
-}
+          "additionalProperties": false }}}}}}
