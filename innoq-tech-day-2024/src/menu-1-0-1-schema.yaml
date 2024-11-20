@@ -1,0 +1,44 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+type: object
+properties:
+  menu:
+    type: object
+    properties:
+      version:
+        type: string
+      name:
+        type: string
+      food:
+        type: array
+        items:
+          oneOf:
+          - type: object
+            properties:
+              name:
+                const: Pizza
+              options:
+                type: array
+                items:
+                  type: string
+                  enum:
+                  - Pineapple
+                  - Chili
+                uniqueItems: true
+            required:
+            - name
+            additionalProperties: false
+          - type: object
+            properties:
+              name:
+                const: Pasta
+              options:
+                type: array
+                items:
+                  type: string
+                  enum:
+                  - Tomato
+                  - Scampi
+                uniqueItems: true
+            required:
+            - name
+            additionalProperties: false
