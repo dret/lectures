@@ -84,7 +84,7 @@
 				<ul>
 					<li><em>Coupling</em> always is a trade-off</li>
 					<li><em>Tight coupling</em> allows for runtime optimizations</li>
-					<li><em>Loose coupling</em> makes it easier to change things at a local level</li>
+					<li><em>Loose coupling</em> makes it easier to change things independently</li>
 					<li><em>Decentralized scenarios</em> are a good candidate for loose coupling</li>
 					<li>Changing things without breaking things is what we're all after</li>
 				</ul>
@@ -96,13 +96,13 @@
 					<ul>
 						<li><q>You're powering your business with APIs</q></li>
 					</ul>
-					<li>Loosely coupled <em>Partner APIs</em> allow better partner focus</li>
+					<li>Loosely coupled <em>Partner APIs</em> mean better partner focus</li>
 					<ul>
 						<li><q>You're augmenting your business with APIs</q></li>
 					</ul>
-					<li>Loosely coupled <em>Public APIs</em> allow better product management</li>
+					<li>Loosely coupled <em>Public APIs</em> mean better product management</li>
 					<ul>
-						<li><q>The API is your business</q></li>
+						<li><q>The API is (part of) your business</q></li>
 					</ul>
 				</ul>
 			</slide>
