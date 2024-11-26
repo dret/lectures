@@ -106,6 +106,17 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="loose-coupling-risk">
+				<title>The Risk of Loose Coupling</title>
+				<ul>
+					<li>Hard to retrofit (needs culture and training)</li>
+					<li>Constrains evolution (needs culture and training)</li>
+				</ul>
+			</slide>
+			<slide id="compatibility-basics">
+				<title>Sweat and Tears</title>
+				<img src="compatibility-basics.png" class="fullsize" />
+			</slide>
 			<slide id="compatibility-directions">
 				<title>Backward and Forward Compatibility</title>
 				<img src="compatibility.png" class="fullsize" />
