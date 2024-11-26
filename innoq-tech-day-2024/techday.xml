@@ -156,8 +156,8 @@
 			<slide>
 				<title>Compatibility, Take 2</title>
 				<ul>
-					<li><em>Additions:</em> Only where allowed and safe to ignore</li>
-					<li><em>Semantic Stability:</em> Meaning stays stable</li>
+					<li><em>Additions:</em> Only where allowed and must be safe to ignore</li>
+					<li><em>Semantic Stability:</em> Meaning stays stable and no <q>semantic cross-talk</q></li>
 					<li><em>Narrowing Constraints:</em> Types can be changed to subtypes</li>
 				</ul>
 			</slide>
