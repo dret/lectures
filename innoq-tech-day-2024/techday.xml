@@ -128,6 +128,27 @@
 				<blockquote><q>Backward compatibility is a property of a [...] technology that allows for interoperability with an older legacy system, or with input designed for such a system.</q> (<a href="https://en.wikipedia.org/wiki/Backward_compatibility">Wikipedia</a>)</blockquote>
 				<blockquote><q>Backward compatibility is a property of an API consumer that allows for interoperability with an older API version.</q> (<q><a href="https://en.wikipedia.org/wiki/Backward_compatibility">Wikipedia</a></q>)</blockquote>
 			</slide>
+			<slide id="semantic-versioning">
+				<title>Semantic Versioning</title>
+				<ul>
+					<li><a href="http://semver.org/">Semantic Versioning</a> standardizes the meaning of version numbers</li>
+					<li>Version numbers use <code>MAJOR.MINOR.PATCH</code> syntax and have well-defined semantics</li>
+					<ul>
+						<li>Increase <code>MAJOR</code> version for breaking API changes</li>
+						<li>Increase <code>MINOR</code> version for adding functionality in a forward-compatible manner</li>
+						<li>Increase <code>PATCH</code> version for making forward-compatible bug fixes</li>
+					</ul>
+					<li><code>MAJOR</code> is a different API, <code>PATCH</code> is an implementation detail</li>
+					<ul>
+						<li>Exposing detailed version/patch information is a potential security risk</li>
+						<li>For well-designed APIs only <code>MINOR</code> may make sense to expose</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="semantic-versioning-example">
+				<title>Semantic Versioning Example</title>
+				<img src="semantic-versioning.png" class="fullsize"/>
+			</slide>
 			<slide id="forward-compatibility">
 				<title>Forward Compatibility</title>
 				<blockquote><q>Forward compatibility [...] is a design characteristic that allows a system to accept input intended for a later version of itself. [...] A standard supports forward compatibility if a product that complies with earlier versions can <q>gracefully</q> process input designed for later versions of the standard, ignoring new parts which it does not understand.</q> (<a href="https://en.wikipedia.org/wiki/Forward_compatibility">Wikipedia</a>)</blockquote>
