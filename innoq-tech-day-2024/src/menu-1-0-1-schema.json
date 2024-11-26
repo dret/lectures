@@ -8,19 +8,27 @@
       "food": {
         "type": "array",
         "items": {
-          "oneOf": [ {
+          "anyOf": [ {
+            "oneOf": [{
+              "type": "object",
+              "properties": {
+                "name": { "const": "Pizza" },
+                "options": {
+                  "type": "array", "items" : { "type" : "string" , "enum": [ "Pineapple", "Chili" ] }, "uniqueItems": true } },
+              "required": [ "name" ],
+              "additionalProperties" : false
+              }, {
+              "type": "object",
+              "properties": {
+                "name": { "const": "Pasta" },
+                "options": {
+                  "type": "array", "items" : { "type" : "string" , "enum": [ "Tomato", "Scampi" ] }, "uniqueItems": true } },
+              "required": [ "name" ],
+              "additionalProperties" : false }]}, {
             "type": "object",
             "properties": {
-              "name": { "const": "Pizza" },
+              "name": { "type": "string" },
               "options": {
-                "type": "array", "items" : { "type" : "string" , "enum": [ "Pineapple", "Chili" ] }, "uniqueItems": true } },
-            "required": [ "name" ],
-            "additionalProperties" : false
-            }, {
-            "type": "object",
-            "properties": {
-              "name": { "const": "Pasta" },
-              "options": {
-                "type": "array", "items" : { "type" : "string" , "enum": [ "Tomato", "Scampi" ] }, "uniqueItems": true } },
+                "type": "array", "items" : { "type" : "string" } , "uniqueItems": true } },
             "required": [ "name" ],
             "additionalProperties" : false }]}}}}}}
