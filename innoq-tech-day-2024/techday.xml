@@ -149,6 +149,10 @@
 				<title>Semantic Versioning Example</title>
 				<img src="semantic-versioning.png" class="fullsize"/>
 			</slide>
+			<slide>
+				<title>Compatibility, Take 1</title>
+				<img src="hyrum-wright-cover.jpg" title="Hyrum's Law: Hyrum Wright on Programming over Time" href="https://www.youtube.com/watch?v=5Wdgjw6IGDM" class="fullsize-shadow"/>
+			</slide>
 			<slide id="forward-compatibility">
 				<title>Forward Compatibility</title>
 				<blockquote><q>Forward compatibility [...] is a design characteristic that allows a system to accept input intended for a later version of itself. [...] A standard supports forward compatibility if a product that complies with earlier versions can <q>gracefully</q> process input designed for later versions of the standard, ignoring new parts which it does not understand.</q> (<a href="https://en.wikipedia.org/wiki/Forward_compatibility">Wikipedia</a>)</blockquote>
@@ -162,14 +166,6 @@
 					<li>Give consumers as much freedom as possible to ignore changes</li>
 					<li>Give consumers clear avenues to see and explore changes</li>
 				</ul>
-			</slide>
-			<slide id="hyrums-law">
-				<title>Hyrum's Law: Every Change is a Breaking Change</title>
-				<div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
-					<div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
-						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/5Wdgjw6IGDM" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
-					</div>
-				</div>
 			</slide>
 		</part>
 		<part id="how">
