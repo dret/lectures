@@ -153,6 +153,14 @@
 				<title>Compatibility, Take 1</title>
 				<img src="hyrum-wright-cover.jpg" title="Hyrum's Law: Hyrum Wright on Programming over Time" href="https://www.youtube.com/watch?v=5Wdgjw6IGDM" class="fullsize-shadow"/>
 			</slide>
+			<slide>
+				<title>Compatibility, Take 2</title>
+				<ul>
+					<li><em>Additions:</em> Only where allowed and safe to ignore</li>
+					<li><em>Semantic Stability:</em> Meaning stays stable</li>
+					<li><em>Narrowing Constraints:</em> Types can be changed to subtypes</li>
+				</ul>
+			</slide>
 			<slide id="forward-compatibility">
 				<title>Forward Compatibility</title>
 				<blockquote><q>Forward compatibility [...] is a design characteristic that allows a system to accept input intended for a later version of itself. [...] A standard supports forward compatibility if a product that complies with earlier versions can <q>gracefully</q> process input designed for later versions of the standard, ignoring new parts which it does not understand.</q> (<a href="https://en.wikipedia.org/wiki/Forward_compatibility">Wikipedia</a>)</blockquote>
