@@ -42,12 +42,12 @@
 			<slide id="composition">
 				<title>Systems vs. Ecosystems</title>
 				<ul>
-					<li>Software engineering today oftentimes includes using <em>external</em> components</li>
-					<li>Building <em>systems</em> implies control over the interconnected components</li>
+					<li>Software today oftentimes uses <em>external</em> components</li>
+					<li><em>Systems</em> imply control over all components</li>
 					<ul>
 						<li><em>Change radius</em> is the entire system and changes can be coordinated</li>
 					</ul>
-					<li>Building <em>ecosystems</em> implies that control is decentralized and uncoordinated</li>
+					<li><em>Ecosystems</em> imply decentralized and uncoordinated control</li>
 					<ul>
 						<li><em>Change radius</em> are components and changes must be absorbed by the design</li>
 					</ul>
@@ -80,6 +80,7 @@
 			<title>What to do for Versioning?</title>
 			<slide id="loose-coupling">
 				<title>Loose Coupling</title>
+				<img src="cervelo-p5x.jpg" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
 					<li><em>Coupling</em> always is a trade-off</li>
 					<li><em>Tight coupling</em> allows for runtime optimizations</li>
@@ -141,7 +142,7 @@
 			<title>How to support Versioning?</title>
 			<slide id="menu-mario">
 				<title>Mario's Menu</title>
-				<listing src="menu-1-0.json"/>
+				<listing src="mario.json"/>
 			</slide>
 			<slide id="menu-mario-schema-json">
 				<title>Checking Mario's Menu: JSON</title>
