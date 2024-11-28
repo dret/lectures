@@ -1,0 +1,47 @@
+body { color : #000000 ;
+	background-color : #F8F8FA ;
+	font-family : Nunito, "Helvetica Neue", Arial, sans-serif ;
+	margin : 0 ;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: Hind, "Helvetica Neue", Arial, sans-serif ; }
+
+.center { text-align : center ; }
+
+.footnote { font-style : oblique ; }
+
+a { color : #4F5A36 ;
+	text-decoration : none ;
+	border-bottom : 1px dotted ;
+  }
+
+a:hover { background-color : #4F5A36 ;
+	color : #F8F8FA ;
+}
+
+.header a { color : #FFFFFF ; }
+
+.header {  background-color : #4F5A36 ;
+    color : #F8F8FA ;
+    border-bottom :  5px #78A350 solid ;
+    padding : 1.5em ;
+    margin : 0 ;
+    text-align : center ;
+}
+
+.description { font-size : small ; }
+
+.guest { font-variant : small-caps ; }
+
+pre { white-space: pre-wrap ;
+    white-space : -moz-pre-wrap ;
+    white-space : -pre-wrap ;
+    white-space : -o-pre-wrap;
+    word-wrap : break-word ;
+}
+
+@media print { .togglebox { display : none } }
+
+@media screen, projection {
+	.print-href { display : none; }
+}
