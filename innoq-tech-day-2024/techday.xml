@@ -149,6 +149,21 @@
 				<title>Semantic Versioning Example</title>
 				<img src="semantic-versioning.png" class="fullsize"/>
 			</slide>
+			<slide id="non-breaking-changes">
+				<title>Non-Breaking Changes</title>
+				<ol>
+					<li>Add new optional query parameters</li>
+					<li>Introduce new endpoints without altering existing ones</li>
+					<li>Add new fields to responses while keeping existing fields unchanged</li>
+					<li>Include new HTTP headers that clients can choose to use</li>
+					<li>Provide additional media types via content negotiation</li>
+					<li>Add new status codes for specific cases without replacing current ones</li>
+					<li>Allow new values for existing enum fields</li>
+					<li>Expand existing arrays or collections with additional optional items</li>
+					<li>Introduce new relationships or links in hypermedia APIs</li>
+					<li>Offer alternative authentication or authorization methods</li>
+				</ol>
+			</slide>
 			<slide>
 				<title>Compatibility, Take 1</title>
 				<img src="hyrum-wright-cover.jpg" title="Hyrum's Law: Hyrum Wright on Programming over Time" href="https://www.youtube.com/watch?v=5Wdgjw6IGDM" class="fullsize-shadow"/>
