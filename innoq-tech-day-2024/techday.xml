@@ -225,17 +225,25 @@
 				<title>Customers Follow</title>
 				<img src="api-evolution-1-1-balanced.png" class="fullsize" />
 			</slide>
-			<slide id="luigi-appears">
-				<title>Luigi's Appears</title>
-				<img src="api-evolution-1-1-backwards.png" class="fullsize" />
-			</slide>
-			<slide id="luigi-mario">
+			<slide id="menu-luigi">
 				<title>Luigi's Menu</title>
 				<listing src="luigi-1-0.json"/>
+			</slide>
+			<slide id="luigi-1-0">
+				<title>Free Backwards Compatibility</title>
+				<img src="api-evolution-1-1-backwards.png" class="fullsize" />
 			</slide>
 			<slide id="api-mix">
 				<title>Diversity in API Ecosystems</title>
 				<img src="api-evolution-mix.png" class="fullsize" />
+			</slide>
+			<slide id="camara">
+				<title>Camara</title>
+				<img src="camara.png" href="https://camaraproject.org/" class="fullsize-shadow"/>
+			</slide>
+			<slide id="iata">
+				<title>IATA Open API Hub</title>
+				<img src="iata-open-api-hub.png" href="https://api.developer.iata.org/hub" class="fullsize-shadow"/>
 			</slide>
 		</part>
 		<part id="api-descriptions">
