@@ -246,52 +246,42 @@
 				<img src="iata-open-api-hub.png" href="https://api.developer.iata.org/hub" class="fullsize-shadow"/>
 			</slide>
 		</part>
-		<part id="api-descriptions">
-			<title>APIs and API Descriptions</title>
-			<slide id="api-descriptions-market">
-				<title>Finding and Addressing a Market</title>
-				<img src="api-descriptions-1.png" class="fullsize" />
-			</slide>
-			<slide id="api-descriptions-describing">
-				<title>Describing the Product</title>
-				<img src="api-descriptions-2.png" class="fullsize" />
-			</slide>
-			<slide id="api-descriptions-standards">
-				<title>Using Standardized Description Languages</title>
-				<img src="api-descriptions-3.png" class="fullsize" />
-			</slide>
-			<slide id="api-descriptions-implementation">
-				<title>Creating the Product</title>
-				<img src="api-descriptions-4.png" class="fullsize" />
-			</slide>
-			<slide id="api-descriptions-language">
-				<title>Understanding the Standard</title>
-				<img src="api-descriptions-5.png" class="fullsize" />
-			</slide>
-			<slide id="api-descriptions-description">
-				<title>Finding and Consuming Descriptions</title>
-				<img src="api-descriptions-6.png" class="fullsize" />
-			</slide>
-			<slide id="api-descriptions-consumption">
-				<title>Consuming Described Products</title>
-				<img src="api-descriptions-7.png" class="fullsize" />
-			</slide>
-		</part>
-		<part id="version-info">
-			<title>Where to put Version Information</title>
-			<slide id="identity-matters">
-				<title>Identity Matters</title>
+		<part id="documentation">
+			<title>How: Documenting Versioning</title>
+			<slide id="openapi">
+				<title>API Versions in OpenAPI</title>
+				<img src="info-version-linkedin-poll.png" title="LinkedIn Poll about the OpenAPI info.version property" href="https://www.linkedin.com/feed/update/urn:li:activity:7202896718634315776/" style="float: right ; width : 25% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
-					<li>URIs are about resource identity</li>
+					<li>OpenAPI does not support representing API version information</li>
+					<li><code href="https://spec.openapis.org/oas/v3.1.1.html#fixed-fields-0">info.version</code> represents the version of the API description</li>
+					<li>Consider using <code>x-api-version</code> in your OpenAPI description</li>
+				</ul>
+			</slide>
+			<slide id="mongodb-atlas-changelog">
+				<title>MongoDB Atlas Changelog</title>
+				<img src="mongodb-atlas-changelog.png" href="https://www.mongodb.com/docs/atlas/reference/api-resources-spec/changelog/" class="fullsize-shadow"/>
+			</slide>
+			<slide id="mongodb-atlas-changelog-json">
+				<title>MongoDB Atlas Changelog: JSON</title>
+				<listing src="atlas-changelog.json" line="39-57" />
+			</slide>
+			<slide id="version-identification">
+				<title>Version Identification</title>
+				<ul>
+					<li>Indicate the version in interactions</li>
+					<li>Don't break identity between compatible versions</li>
 					<ul>
-						<li>Representations are handled through HTTP and media types</li>
+						<li><em>Don't</em> make non-major version information part of resource identity</li>
+						<li><em>Do</em> make major version information part of resource identity</li>
 					</ul>
-					<li>Various choices when it comes to versioned names</li>
+					<li>Various choices when it comes to representing version information</li>
 					<ul>
 						<li><em>DNS: <code>https://v1.api.example.com/</code></em></li>
 						<li><em>URI root:</em> <code>https://api.example.com/v1/</code></li>
 						<li><em>Query parameter:</em> <code>https://api.example.com/?version=1.0</code></li>
-						<li><em>HTTP header field:</em> <code>https://api.example.com/</code></li>
+						<li><em>HTTP header field:</em> <code>API-Version: 1.0</code></li>
+						<li><em>Media Type:</em> <code>Content-Type: application/vnd.example.v1+json</code></li>
+						<li><em>Media Type:</em> <code>Content-Type: application/vnd.example+json; version=1.0</code></li>
 					</ul>
 				</ul>
 			</slide>
