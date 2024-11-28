@@ -1,0 +1,2863 @@
+[
+  {
+    "date": "2024-01-10",
+    "paths": [
+      {
+        "path": "/api/atlas/v2",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "the endpoint scheme security 'DigestAuth' was added to the API",
+                "changeCode": "api-security-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'apiKey/roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getSystemStatus",
+        "tag": "Root"
+      },
+      {
+        "path": "/api/atlas/v2/federationSettings/{federationSettingsId}/connectedOrgConfigs",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "the endpoint scheme security 'DigestAuth' was added to the API",
+                "changeCode": "api-security-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the '/items/roleMappings/items/roleAssignments/items/role' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listConnectedOrgConfigs",
+        "tag": "Federated Authentication"
+      },
+      {
+        "path": "/api/atlas/v2/federationSettings/{federationSettingsId}/connectedOrgConfigs/{orgId}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'roleMappings/items/roleAssignments/items/role' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getConnectedOrgConfig",
+        "tag": "Federated Authentication"
+      },
+      {
+        "path": "/api/atlas/v2/federationSettings/{federationSettingsId}/connectedOrgConfigs/{orgId}",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'roleMappings/items/roleAssignments/items/role' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the request property 'roleMappings/items/roleAssignments/items/role'",
+                "changeCode": "request-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "updateConnectedOrgConfig",
+        "tag": "Federated Authentication"
+      },
+      {
+        "path": "/api/atlas/v2/federationSettings/{federationSettingsId}/connectedOrgConfigs/{orgId}/roleMappings",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'results/items/roleAssignments/items/role' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listRoleMappings",
+        "tag": "Federated Authentication"
+      },
+      {
+        "path": "/api/atlas/v2/federationSettings/{federationSettingsId}/connectedOrgConfigs/{orgId}/roleMappings",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'roleAssignments/items/role' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the request property 'roleAssignments/items/role'",
+                "changeCode": "request-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "createRoleMapping",
+        "tag": "Federated Authentication"
+      },
+      {
+        "path": "/api/atlas/v2/federationSettings/{federationSettingsId}/connectedOrgConfigs/{orgId}/roleMappings/{id}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'roleAssignments/items/role' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getRoleMapping",
+        "tag": "Federated Authentication"
+      },
+      {
+        "path": "/api/atlas/v2/federationSettings/{federationSettingsId}/connectedOrgConfigs/{orgId}/roleMappings/{id}",
+        "httpMethod": "PUT",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'roleAssignments/items/role' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the request property 'roleAssignments/items/role'",
+                "changeCode": "request-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "updateRoleMapping",
+        "tag": "Federated Authentication"
+      },
+      {
+        "path": "/api/atlas/v2/federationSettings/{federationSettingsId}/identityProviders",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "removed 'FederationSamlIdentityProvider, FederationOidcIdentityProvider' from the '/items/' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-removed",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the '/items/associatedOrgs/items/roleMappings/items/roleAssignments/items/role' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listIdentityProviders",
+        "tag": "Federated Authentication"
+      },
+      {
+        "path": "/api/atlas/v2/federationSettings/{federationSettingsId}/identityProviders/{identityProviderId}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-11-15",
+            "changes": [
+              {
+                "change": "added response discriminator for the response status '200'",
+                "changeCode": "response-body-discriminator-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed the optional properties 'acsUrl, audienceUri, pemFileInfo, requestBinding, responseSignatureAlgorithm, ssoDebugEnabled, ssoUrl, status' from the response",
+                "changeCode": "response-optional-property-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "release"
+          },
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the non-success response with the status '403'",
+                "changeCode": "response-non-success-status-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'associatedOrgs/items/roleMappings/items/roleAssignments/items/role' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed the optional property 'pemFileInfo/certificates/items/content' from the response",
+                "changeCode": "response-optional-property-removed",
+                "backwardCompatible": true
+              },
+              {
+                "change": "New resource added 2023-11-15. Resource version 2023-02-01 deprecated and marked for removal on 2025-01-01",
+                "changeCode": "endpoint-deprecated",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "deprecate"
+          }
+        ],
+        "operationId": "getIdentityProvider",
+        "tag": "Federated Authentication"
+      },
+      {
+        "path": "/api/atlas/v2/federationSettings/{federationSettingsId}/identityProviders/{identityProviderId}",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-11-15",
+            "changes": [
+              {
+                "change": "added request discriminator",
+                "changeCode": "request-body-discriminator-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added response discriminator for the response status '200'",
+                "changeCode": "response-body-discriminator-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed the optional properties 'acsUrl, audienceUri, pemFileInfo, requestBinding, responseSignatureAlgorithm, ssoDebugEnabled, ssoUrl, status' from the response",
+                "changeCode": "response-optional-property-removed",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed the request property 'slug'",
+                "changeCode": "request-property-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "release"
+          },
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'associatedOrgs/items/roleMappings/items/roleAssignments/items/role' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed the optional property 'pemFileInfo/certificates/items/content' from the response",
+                "changeCode": "response-optional-property-removed",
+                "backwardCompatible": true
+              },
+              {
+                "change": "New resource added 2023-11-15. Resource version 2023-02-01 deprecated and marked for removal on 2025-01-01",
+                "changeCode": "endpoint-deprecated",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "deprecate"
+          }
+        ],
+        "operationId": "updateIdentityProvider",
+        "tag": "Federated Authentication"
+      },
+      {
+        "path": "/api/atlas/v2/groups",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "the endpoint scheme security 'DigestAuth' was added to the API",
+                "changeCode": "api-security-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listProjects",
+        "tag": "Projects"
+      },
+      {
+        "path": "/api/atlas/v2/groups/byName/{groupName}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "the endpoint scheme security 'DigestAuth' was added to the API",
+                "changeCode": "api-security-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getProjectByName",
+        "tag": "Projects"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/access",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'groupRoleAssignments/items/groupRole' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "addUserToProject",
+        "tag": "Projects"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/alertConfigs",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added 'Group Event Types, NDS Audit Types' to the 'results/items/oneOf[#/components/schemas/DefaultAlertConfigViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed 'Group Event Types, NDS Audit Types' from the 'results/items/oneOf[#/components/schemas/DefaultAlertConfigViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listAlertConfigurations",
+        "tag": "Alert Configurations"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/alertConfigs",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "removed 'Group Event Types, NDS Audit Types' from the '/oneOf[#/components/schemas/DefaultAlertConfigViewForNdsGroup]/eventTypeName' request property 'oneOf' list",
+                "changeCode": "request-property-one-of-removed",
+                "backwardCompatible": false
+              },
+              {
+                "change": "added 'Group Event Types, NDS Audit Types' to the '/oneOf[#/components/schemas/DefaultAlertConfigViewForNdsGroup]/eventTypeName' request property 'oneOf' list",
+                "changeCode": "request-property-one-of-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added 'Group Event Types, NDS Audit Types' to the '/oneOf[#/components/schemas/DefaultAlertConfigViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed 'Group Event Types, NDS Audit Types' from the '/oneOf[#/components/schemas/DefaultAlertConfigViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "createAlertConfiguration",
+        "tag": "Alert Configurations"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/alertConfigs/{alertConfigId}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added 'Group Event Types, NDS Audit Types' to the '/oneOf[#/components/schemas/DefaultAlertConfigViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed 'Group Event Types, NDS Audit Types' from the '/oneOf[#/components/schemas/DefaultAlertConfigViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getAlertConfiguration",
+        "tag": "Alert Configurations"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/alertConfigs/{alertConfigId}",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added 'Group Event Types, NDS Audit Types' to the '/oneOf[#/components/schemas/DefaultAlertConfigViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed 'Group Event Types, NDS Audit Types' from the '/oneOf[#/components/schemas/DefaultAlertConfigViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "toggleAlertConfiguration",
+        "tag": "Alert Configurations"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/alertConfigs/{alertConfigId}",
+        "httpMethod": "PUT",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "removed 'Group Event Types, NDS Audit Types' from the '/oneOf[#/components/schemas/DefaultAlertConfigViewForNdsGroup]/eventTypeName' request property 'oneOf' list",
+                "changeCode": "request-property-one-of-removed",
+                "backwardCompatible": false
+              },
+              {
+                "change": "added 'Group Event Types, NDS Audit Types' to the '/oneOf[#/components/schemas/DefaultAlertConfigViewForNdsGroup]/eventTypeName' request property 'oneOf' list",
+                "changeCode": "request-property-one-of-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added 'Group Event Types, NDS Audit Types' to the '/oneOf[#/components/schemas/DefaultAlertConfigViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed 'Group Event Types, NDS Audit Types' from the '/oneOf[#/components/schemas/DefaultAlertConfigViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "updateAlertConfiguration",
+        "tag": "Alert Configurations"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/alertConfigs/{alertConfigId}/alerts",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added 'Group Event Types, NDS Audit Types' to the 'results/items/oneOf[#/components/schemas/DefaultAlertViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed 'Group Event Types, NDS Audit Types' from the 'results/items/oneOf[#/components/schemas/DefaultAlertViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listAlertsByAlertConfigurationId",
+        "tag": "Alerts"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/alerts",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added 'Group Event Types, NDS Audit Types' to the 'results/items/oneOf[#/components/schemas/DefaultAlertViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed 'Group Event Types, NDS Audit Types' from the 'results/items/oneOf[#/components/schemas/DefaultAlertViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listAlerts",
+        "tag": "Alerts"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/alerts/{alertId}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added 'Group Event Types, NDS Audit Types' to the '/oneOf[#/components/schemas/DefaultAlertViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed 'Group Event Types, NDS Audit Types' from the '/oneOf[#/components/schemas/DefaultAlertViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getAlert",
+        "tag": "Alerts"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/alerts/{alertId}",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "removed 'Group Event Types, NDS Audit Types' from the '/oneOf[#/components/schemas/DefaultAlertViewForNdsGroup]/eventTypeName' request property 'oneOf' list",
+                "changeCode": "request-property-one-of-removed",
+                "backwardCompatible": false
+              },
+              {
+                "change": "added 'Group Event Types, NDS Audit Types' to the '/oneOf[#/components/schemas/DefaultAlertViewForNdsGroup]/eventTypeName' request property 'oneOf' list",
+                "changeCode": "request-property-one-of-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added 'Group Event Types, NDS Audit Types' to the '/oneOf[#/components/schemas/DefaultAlertViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed 'Group Event Types, NDS Audit Types' from the '/oneOf[#/components/schemas/DefaultAlertViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "acknowledgeAlert",
+        "tag": "Alerts"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/alerts/{alertId}/alertConfigs",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added 'Group Event Types, NDS Audit Types' to the 'results/items/oneOf[#/components/schemas/DefaultAlertConfigViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed 'Group Event Types, NDS Audit Types' from the 'results/items/oneOf[#/components/schemas/DefaultAlertConfigViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listAlertConfigurationsByAlertId",
+        "tag": "Alert Configurations"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/apiKeys",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'results/items/roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listProjectApiKeys",
+        "tag": "Programmatic API Keys"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/apiKeys",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the request property 'roles/items/'",
+                "changeCode": "request-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "createProjectApiKey",
+        "tag": "Programmatic API Keys"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/apiKeys/{apiUserId}",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the request property 'roles/items/'",
+                "changeCode": "request-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "updateApiKeyRoles",
+        "tag": "Programmatic API Keys"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/apiKeys/{apiUserId}",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the request property '/items/roles/items/'",
+                "changeCode": "request-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "addProjectApiKey",
+        "tag": "Programmatic API Keys"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/backupCompliancePolicy",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-11-15",
+            "changes": [
+              {
+                "change": "the response properties 'authorizedUserFirstName, authorizedUserLastName' became required",
+                "changeCode": "response-property-became-required",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "release"
+          },
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new '0.00' enum value to the 'onDemandPolicyItem/frequencyInterval' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "New resource added 2023-11-15. Resource version 2023-02-01 deprecated and marked for removal on 2024-10-01",
+                "changeCode": "endpoint-deprecated",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "deprecate"
+          }
+        ],
+        "operationId": "getDataProtectionSettings",
+        "tag": "Cloud Backups"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/backupCompliancePolicy",
+        "httpMethod": "PUT",
+        "versions": [
+          {
+            "version": "2023-11-15",
+            "changes": [
+              {
+                "change": "the response properties 'authorizedUserFirstName, authorizedUserLastName' became required",
+                "changeCode": "response-property-became-required",
+                "backwardCompatible": true
+              },
+              {
+                "change": "the request properties 'authorizedUserFirstName, authorizedUserLastName' became required",
+                "changeCode": "request-property-became-required",
+                "backwardCompatible": false
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "release"
+          },
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new '0.00' enum value to the 'onDemandPolicyItem/frequencyInterval' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new '0.00' enum value to the request property 'onDemandPolicyItem/frequencyInterval'",
+                "changeCode": "request-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "New resource added 2023-11-15. Resource version 2023-02-01 deprecated and marked for removal on 2024-10-01",
+                "changeCode": "endpoint-deprecated",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "deprecate"
+          }
+        ],
+        "operationId": "updateDataProtectionSettings",
+        "tag": "Cloud Backups"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/fts/indexes",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added request discriminator",
+                "changeCode": "request-body-discriminator-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added response discriminator for the response status '200'",
+                "changeCode": "response-body-discriminator-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the optional property 'type' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed the optional properties 'analyzer, analyzers, mappings, searchAnalyzer, synonyms' from the response",
+                "changeCode": "response-optional-property-removed",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed the request properties 'analyzer, analyzers, mappings, searchAnalyzer, synonyms'",
+                "changeCode": "request-property-removed",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new optional request property 'type'",
+                "changeCode": "new-optional-request-property",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "createAtlasSearchIndex",
+        "tag": "Atlas Search"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/fts/indexes/{databaseName}/{collectionName}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added discriminator to '/items/' response property",
+                "changeCode": "response-property-discriminator-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the optional property '/items/type' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed the optional properties '/items/analyzer, /items/analyzers, /items/mappings, /items/searchAnalyzer, /items/synonyms' from the response",
+                "changeCode": "response-optional-property-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listAtlasSearchIndexes",
+        "tag": "Atlas Search"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/fts/indexes/{indexId}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added response discriminator for the response status '200'",
+                "changeCode": "response-body-discriminator-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the optional property 'type' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed the optional properties 'analyzer, analyzers, mappings, searchAnalyzer, synonyms' from the response",
+                "changeCode": "response-optional-property-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getAtlasSearchIndex",
+        "tag": "Atlas Search"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/fts/indexes/{indexId}",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added request discriminator",
+                "changeCode": "request-body-discriminator-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added response discriminator for the response status '200'",
+                "changeCode": "response-body-discriminator-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the optional property 'type' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed the optional properties 'analyzer, analyzers, mappings, searchAnalyzer, synonyms' from the response",
+                "changeCode": "response-optional-property-removed",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed the request properties 'analyzer, analyzers, mappings, searchAnalyzer, synonyms'",
+                "changeCode": "request-property-removed",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new optional request property 'type'",
+                "changeCode": "new-optional-request-property",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "updateAtlasSearchIndex",
+        "tag": "Atlas Search"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/onlineArchives",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "removed the optional property 'results/items/dataProcessRegion' from the response",
+                "changeCode": "response-optional-property-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listOnlineArchives",
+        "tag": "Online Archive"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/onlineArchives",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "removed the optional property 'dataProcessRegion' from the response",
+                "changeCode": "response-optional-property-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "createOnlineArchive",
+        "tag": "Online Archive"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/onlineArchives/{archiveId}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "removed the optional property 'dataProcessRegion' from the response",
+                "changeCode": "response-optional-property-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getOnlineArchive",
+        "tag": "Online Archive"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/onlineArchives/{archiveId}",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "the request optional property 'collName' became read-only",
+                "changeCode": "request-optional-property-became-read-only",
+                "backwardCompatible": true
+              },
+              {
+                "change": "the request optional property 'collectionType' became read-only",
+                "changeCode": "request-optional-property-became-read-only",
+                "backwardCompatible": true
+              },
+              {
+                "change": "the request optional property 'dbName' became read-only",
+                "changeCode": "request-optional-property-became-read-only",
+                "backwardCompatible": true
+              },
+              {
+                "change": "the request optional property 'partitionFields' became read-only",
+                "changeCode": "request-optional-property-became-read-only",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed the optional property 'dataProcessRegion' from the response",
+                "changeCode": "response-optional-property-removed",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "updateOnlineArchive",
+        "tag": "Online Archive"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/processArgs",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the optional property 'queryStatsLogVerbosity' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getClusterAdvancedConfiguration",
+        "tag": "Clusters"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/processArgs",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the optional property 'queryStatsLogVerbosity' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new optional request property 'queryStatsLogVerbosity'",
+                "changeCode": "new-optional-request-property",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "updateClusterAdvancedConfiguration",
+        "tag": "Clusters"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/search/deployment",
+        "httpMethod": "DELETE",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "endpoint added",
+                "changeCode": "endpoint-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "release"
+          }
+        ],
+        "operationId": "deleteAtlasSearchDeployment",
+        "tag": "Atlas Search"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/search/deployment",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "endpoint added",
+                "changeCode": "endpoint-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "release"
+          }
+        ],
+        "operationId": "getAtlasSearchDeployment",
+        "tag": "Atlas Search"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/search/deployment",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "endpoint added",
+                "changeCode": "endpoint-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "release"
+          }
+        ],
+        "operationId": "updateAtlasSearchDeployment",
+        "tag": "Atlas Search"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/search/deployment",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "endpoint added",
+                "changeCode": "endpoint-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "release"
+          }
+        ],
+        "operationId": "createAtlasSearchDeployment",
+        "tag": "Atlas Search"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/dataFederation",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the optional property '/items/privateEndpointHostnames' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listFederatedDatabases",
+        "tag": "Data Federation"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/dataFederation",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the optional property 'privateEndpointHostnames' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "createFederatedDatabase",
+        "tag": "Data Federation"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/dataFederation/{tenantName}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the optional property 'privateEndpointHostnames' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getFederatedDatabase",
+        "tag": "Data Federation"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/dataFederation/{tenantName}",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the optional property 'privateEndpointHostnames' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "updateFederatedDatabase",
+        "tag": "Data Federation"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/databaseUsers",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'STREAM' enum value to the 'results/items/scopes/items/type' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'USER' enum value to the 'results/items/oidcAuthType' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listDatabaseUsers",
+        "tag": "Database Users"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/databaseUsers",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the success response with the status '201'",
+                "changeCode": "response-success-status-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'STREAM' enum value to the request property 'scopes/items/type'",
+                "changeCode": "request-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'USER' enum value to the request property 'oidcAuthType'",
+                "changeCode": "request-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "createDatabaseUser",
+        "tag": "Database Users"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/databaseUsers/{databaseName}/{username}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'STREAM' enum value to the 'scopes/items/type' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'USER' enum value to the 'oidcAuthType' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getDatabaseUser",
+        "tag": "Database Users"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/databaseUsers/{databaseName}/{username}",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'STREAM' enum value to the 'scopes/items/type' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'USER' enum value to the 'oidcAuthType' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'STREAM' enum value to the request property 'scopes/items/type'",
+                "changeCode": "request-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'USER' enum value to the request property 'oidcAuthType'",
+                "changeCode": "request-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "updateDatabaseUser",
+        "tag": "Database Users"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/databaseUsers/{username}/certs",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the success response with the status '201'",
+                "changeCode": "response-success-status-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "createDatabaseUserCertificate",
+        "tag": "X.509 Authentication"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/events",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added 'Group Event Types, Proactive Operation Event Types' to the 'results/items/oneOf[#/components/schemas/DefaultEventViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed 'Group Event Types' from the 'results/items/oneOf[#/components/schemas/DefaultEventViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-removed",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'CLUSTER_RESURRECTED, REGIONALIZED_PRIVATE_ENDPOINT_MODE_DISABLED, REGIONALIZED_PRIVATE_ENDPOINT_MODE_ENABLED, STREAMS_AUDIT_LOG_CONFIGURATION_UPDATED, STREAM_TENANT_CONNECTIONS_LISTED, STREAM_TENANT_CONNECTION_CREATED, STREAM_TENANT_CONNECTION_DELETED, STREAM_TENANT_CONNECTION_UPDATED, STREAM_TENANT_CONNECTION_VIEWED, STREAM_TENANT_CREATED, STREAM_TENANT_DELETED, STREAM_TENANT_UPDATED' enum values to the 'results/items/oneOf[#/components/schemas/NDSAuditViewForNdsGroup]/eventTypeName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'FTS_INDEX_CLEANED_UP' enum value to the 'results/items/oneOf[#/components/schemas/FTSIndexAuditView]/eventTypeName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listProjectEvents",
+        "tag": "Events"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/events/{eventId}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added 'Group Event Types, Proactive Operation Event Types' to the '/oneOf[#/components/schemas/DefaultEventViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed 'Group Event Types' from the '/oneOf[#/components/schemas/DefaultEventViewForNdsGroup]/eventTypeName' response property 'oneOf' list for the response",
+                "changeCode": "response-property-one-of-removed",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'CLUSTER_RESURRECTED, REGIONALIZED_PRIVATE_ENDPOINT_MODE_DISABLED, REGIONALIZED_PRIVATE_ENDPOINT_MODE_ENABLED, STREAMS_AUDIT_LOG_CONFIGURATION_UPDATED, STREAM_TENANT_CONNECTIONS_LISTED, STREAM_TENANT_CONNECTION_CREATED, STREAM_TENANT_CONNECTION_DELETED, STREAM_TENANT_CONNECTION_UPDATED, STREAM_TENANT_CONNECTION_VIEWED, STREAM_TENANT_CREATED, STREAM_TENANT_DELETED, STREAM_TENANT_UPDATED' enum values to the '/oneOf[#/components/schemas/NDSAuditViewForNdsGroup]/eventTypeName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'FTS_INDEX_CLEANED_UP' enum value to the '/oneOf[#/components/schemas/FTSIndexAuditView]/eventTypeName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getProjectEvent",
+        "tag": "Events"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/hosts/{processId}/fts/metrics",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'PAGE_FAULTS' enum value to the 'hardwareMetrics/items/metricName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'PAGE_FAULTS' enum value to the 'indexMetrics/items/metricName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'PAGE_FAULTS' enum value to the 'statusMetrics/items/metricName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listMetricTypes",
+        "tag": "Monitoring and Logs"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/hosts/{processId}/fts/metrics/indexes/{databaseName}/{collectionName}/measurements",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'MICROSECONDS' enum value to the 'indexStatsMeasurements/items/units' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listIndexMetrics",
+        "tag": "Monitoring and Logs"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/hosts/{processId}/fts/metrics/indexes/{databaseName}/{collectionName}/{indexName}/measurements",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'MICROSECONDS' enum value to the 'indexStatsMeasurements/items/units' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getIndexMetrics",
+        "tag": "Monitoring and Logs"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/hosts/{processId}/fts/metrics/measurements",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'MICROSECONDS' enum value to the 'hardwareMeasurements/items/units' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'MICROSECONDS' enum value to the 'statusMeasurements/items/units' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getMeasurements",
+        "tag": "Monitoring and Logs"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/processes/{processId}/databases/{databaseName}/measurements",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "the endpoint scheme security 'DigestAuth' was added to the API",
+                "changeCode": "api-security-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'MICROSECONDS' enum value to the 'measurements/items/units' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getDatabaseMeasurements",
+        "tag": "Monitoring and Logs"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/processes/{processId}/disks/{partitionName}/measurements",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'MICROSECONDS' enum value to the 'measurements/items/units' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getDiskMeasurements",
+        "tag": "Monitoring and Logs"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/processes/{processId}/measurements",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'MICROSECONDS' enum value to the 'measurements/items/units' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getHostMeasurements",
+        "tag": "Monitoring and Logs"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/pushBasedLogExport",
+        "httpMethod": "DELETE",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "endpoint added",
+                "changeCode": "endpoint-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "release"
+          }
+        ],
+        "operationId": "deletePushBasedLogConfiguration",
+        "tag": "Push-Based Log Export"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/pushBasedLogExport",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "endpoint added",
+                "changeCode": "endpoint-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "release"
+          }
+        ],
+        "operationId": "getPushBasedLogConfiguration",
+        "tag": "Push-Based Log Export"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/pushBasedLogExport",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "endpoint added",
+                "changeCode": "endpoint-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "release"
+          }
+        ],
+        "operationId": "updatePushBasedLogConfiguration",
+        "tag": "Push-Based Log Export"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/pushBasedLogExport",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "endpoint added",
+                "changeCode": "endpoint-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "release"
+          }
+        ],
+        "operationId": "createPushBasedLogConfiguration",
+        "tag": "Push-Based Log Export"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/streams",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the optional property 'results/items/connections/items/oneOf[#/components/schemas/StreamsClusterConnection]/dbRoleToExecute' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listStreamInstances",
+        "tag": "Streams"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/streams",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the optional property 'connections/items/oneOf[#/components/schemas/StreamsClusterConnection]/dbRoleToExecute' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new optional request property 'connections/items/oneOf[#/components/schemas/StreamsClusterConnection]/dbRoleToExecute'",
+                "changeCode": "new-optional-request-property",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "createStreamInstance",
+        "tag": "Streams"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/streams/{tenantName}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the optional property 'connections/items/oneOf[#/components/schemas/StreamsClusterConnection]/dbRoleToExecute' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getStreamInstance",
+        "tag": "Streams"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/streams/{tenantName}",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the optional property 'connections/items/oneOf[#/components/schemas/StreamsClusterConnection]/dbRoleToExecute' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "updateStreamInstance",
+        "tag": "Streams"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/streams/{tenantName}/connections",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the optional property 'results/items/oneOf[#/components/schemas/StreamsClusterConnection]/dbRoleToExecute' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listStreamConnections",
+        "tag": "Streams"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/streams/{tenantName}/connections",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the optional property '/oneOf[#/components/schemas/StreamsClusterConnection]/dbRoleToExecute' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new optional request property '/oneOf[#/components/schemas/StreamsClusterConnection]/dbRoleToExecute'",
+                "changeCode": "new-optional-request-property",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "createStreamConnection",
+        "tag": "Streams"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/streams/{tenantName}/connections/{connectionName}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the optional property '/oneOf[#/components/schemas/StreamsClusterConnection]/dbRoleToExecute' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getStreamConnection",
+        "tag": "Streams"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/streams/{tenantName}/connections/{connectionName}",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the optional property '/oneOf[#/components/schemas/StreamsClusterConnection]/dbRoleToExecute' to the response",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new optional request property '/oneOf[#/components/schemas/StreamsClusterConnection]/dbRoleToExecute'",
+                "changeCode": "new-optional-request-property",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "updateStreamConnection",
+        "tag": "Streams"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/users",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'results/items/roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listProjectUsers",
+        "tag": "Projects"
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/users/{userId}/roles",
+        "httpMethod": "PUT",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'groupRoles/items/' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the request property 'groupRoles/items/'",
+                "changeCode": "request-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "updateProjectRoles",
+        "tag": "Projects"
+      },
+      {
+        "path": "/api/atlas/v2/orgs",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'apiKey/roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "createOrganization",
+        "tag": "Organizations"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/apiKeys",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'results/items/roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listApiKeys",
+        "tag": "Programmatic API Keys"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/apiKeys",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "createApiKey",
+        "tag": "Programmatic API Keys"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/apiKeys/{apiUserId}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getApiKey",
+        "tag": "Programmatic API Keys"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/apiKeys/{apiUserId}",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "updateApiKey",
+        "tag": "Programmatic API Keys"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/billing/costExplorer/usage",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'Atlas Stream Processing' enum value to the request property 'services/items/'",
+                "changeCode": "request-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "createCostExplorerQueryProcess",
+        "tag": "Invoices"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/events",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GRACE_PERIOD_ACTIVATED, GRACE_PERIOD_NO_LONGER_IN_EFFECT, ORG_UNLINK_CANCELLED, ORG_UNLINK_REQUESTED' enum values to the 'results/items/oneOf[#/components/schemas/BillingEventViewForOrg]/eventTypeName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'ORG_SUSPENSION_DATE_CHANGED' enum value to the 'results/items/oneOf[#/components/schemas/OrgEventViewForOrg]/eventTypeName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listOrganizationEvents",
+        "tag": "Events"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/events/{eventId}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GRACE_PERIOD_ACTIVATED, GRACE_PERIOD_NO_LONGER_IN_EFFECT, ORG_UNLINK_CANCELLED, ORG_UNLINK_REQUESTED' enum values to the '/oneOf[#/components/schemas/BillingEventViewForOrg]/eventTypeName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'ORG_SUSPENSION_DATE_CHANGED' enum value to the '/oneOf[#/components/schemas/OrgEventViewForOrg]/eventTypeName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getOrganizationEvent",
+        "tag": "Events"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/invites",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the '/items/groupRoleAssignments/items/groupRole' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listOrganizationInvitations",
+        "tag": "Organizations"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/invites",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'groupRoleAssignments/items/groupRole' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "updateOrganizationInvitation",
+        "tag": "Organizations"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/invites",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'groupRoleAssignments/items/groupRole' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "createOrganizationInvitation",
+        "tag": "Organizations"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/invites/{invitationId}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'groupRoleAssignments/items/groupRole' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getOrganizationInvitation",
+        "tag": "Organizations"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/invites/{invitationId}",
+        "httpMethod": "PATCH",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'groupRoleAssignments/items/groupRole' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "updateOrganizationInvitationById",
+        "tag": "Organizations"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/invoices",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'ATLAS_AWS_SEARCH_INSTANCE_S100_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S110_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S30_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S40_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S50_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S60_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S80_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S90_MEMORY_NVME, ATLAS_AWS_STREAM_PROCESSING_DATA_TRANSFER, ATLAS_AWS_STREAM_PROCESSING_INSTANCE_SP30, ATLAS_AZURE_BACKUP_DOWNLOAD_VM_STORAGE, ATLAS_AZURE_BACKUP_DOWNLOAD_VM_STORAGE_EXTENDED_IOPS, ATLAS_AZURE_EXTENDED_STANDARD_IOPS, ATLAS_AZURE_SNAPSHOT_EXPORT_VM_STORAGE, ATLAS_AZURE_SNAPSHOT_EXPORT_VM_STORAGE_EXTENDED_IOPS, ATLAS_AZURE_STANDARD_STORAGE, ATLAS_AZURE_STREAM_PROCESSING_DATA_TRANSFER, ATLAS_AZURE_STREAM_PROCESSING_INSTANCE_SP30' enum values to the 'results/items/lineItems/items/sku' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listInvoices",
+        "tag": "Invoices"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/invoices/pending",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'ATLAS_AWS_SEARCH_INSTANCE_S100_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S110_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S30_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S40_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S50_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S60_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S80_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S90_MEMORY_NVME, ATLAS_AWS_STREAM_PROCESSING_DATA_TRANSFER, ATLAS_AWS_STREAM_PROCESSING_INSTANCE_SP30, ATLAS_AZURE_BACKUP_DOWNLOAD_VM_STORAGE, ATLAS_AZURE_BACKUP_DOWNLOAD_VM_STORAGE_EXTENDED_IOPS, ATLAS_AZURE_EXTENDED_STANDARD_IOPS, ATLAS_AZURE_SNAPSHOT_EXPORT_VM_STORAGE, ATLAS_AZURE_SNAPSHOT_EXPORT_VM_STORAGE_EXTENDED_IOPS, ATLAS_AZURE_STANDARD_STORAGE, ATLAS_AZURE_STREAM_PROCESSING_DATA_TRANSFER, ATLAS_AZURE_STREAM_PROCESSING_INSTANCE_SP30' enum values to the 'results/items/lineItems/items/sku' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listPendingInvoices",
+        "tag": "Invoices"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/invoices/{invoiceId}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'ATLAS_AWS_SEARCH_INSTANCE_S100_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S110_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S30_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S40_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S50_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S60_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S80_MEMORY_NVME, ATLAS_AWS_SEARCH_INSTANCE_S90_MEMORY_NVME, ATLAS_AWS_STREAM_PROCESSING_DATA_TRANSFER, ATLAS_AWS_STREAM_PROCESSING_INSTANCE_SP30, ATLAS_AZURE_BACKUP_DOWNLOAD_VM_STORAGE, ATLAS_AZURE_BACKUP_DOWNLOAD_VM_STORAGE_EXTENDED_IOPS, ATLAS_AZURE_EXTENDED_STANDARD_IOPS, ATLAS_AZURE_SNAPSHOT_EXPORT_VM_STORAGE, ATLAS_AZURE_SNAPSHOT_EXPORT_VM_STORAGE_EXTENDED_IOPS, ATLAS_AZURE_STANDARD_STORAGE, ATLAS_AZURE_STREAM_PROCESSING_DATA_TRANSFER, ATLAS_AZURE_STREAM_PROCESSING_INSTANCE_SP30' enum values to the 'lineItems/items/sku' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getInvoice",
+        "tag": "Invoices"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/teams/{teamId}/users",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'results/items/roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listTeamUsers",
+        "tag": "Teams"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/teams/{teamId}/users",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'results/items/roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "addTeamUser",
+        "tag": "Teams"
+      },
+      {
+        "path": "/api/atlas/v2/orgs/{orgId}/users",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'results/items/roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "listOrganizationUsers",
+        "tag": "Organizations"
+      },
+      {
+        "path": "/api/atlas/v2/unauth/controlPlaneIPAddresses",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-11-15",
+            "changes": [
+              {
+                "change": "endpoint added",
+                "changeCode": "endpoint-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "release"
+          }
+        ],
+        "operationId": "returnAllControlPlaneIPAddresses",
+        "tag": ""
+      },
+      {
+        "path": "/api/atlas/v2/users",
+        "httpMethod": "POST",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "the request required property 'emailAddress' became read-only",
+                "changeCode": "request-required-property-became-read-only",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the request property 'roles/items/roleName'",
+                "changeCode": "request-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "createUser",
+        "tag": "MongoDB Cloud Users"
+      },
+      {
+        "path": "/api/atlas/v2/users/byName/{userName}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getUserByUsername",
+        "tag": "MongoDB Cloud Users"
+      },
+      {
+        "path": "/api/atlas/v2/users/{userId}",
+        "httpMethod": "GET",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "changes": [
+              {
+                "change": "added the new 'GROUP_STREAM_PROCESSING_OWNER' enum value to the 'roles/items/roleName' response property",
+                "changeCode": "response-property-enum-value-added",
+                "backwardCompatible": true
+              }
+            ],
+            "stabilityLevel": "stable",
+            "changeType": "update"
+          }
+        ],
+        "operationId": "getUser",
+        "tag": "MongoDB Cloud Users"
+      }
+    ]
+  },
+  {
+    "date": "2023-02-01",
+    "paths": [
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters",
+        "httpMethod": "GET",
+        "operationId": "listClusters",
+        "tag": "Multi-Cloud Clusters",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "stabilityLevel": "stable",
+            "changeType": "release",
+            "changes": [
+              {
+                "change": "removed the optional properties from the response: 'results.items.mongoURIWithOptions', 'results.items.providerBackupEnabled', 'results.items.mongoURIUpdated', 'results.items.srvAddress', 'results.items.replicationSpec', 'results.items.mongoURI', 'results.items.numShards', 'results.items.autoScaling', 'results.items.providerSettings', 'results.items.replicationFactor', 'results.items.replicationSpecs.regionsConfig'",
+                "changeCode": "response-optional-property-removed",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added response property 'results.items.replicationSpecs.regionConfigs'",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              }
+            ]
+          },
+          {
+            "version": "2023-01-01",
+            "stabilityLevel": "stable",
+            "changeType": "deprecate",
+            "changes": [
+              {
+                "change": "new resource added 2023-02-01. Resource version 2023-01-01 deprecated and marked for removal on 2025-06-01",
+                "changeCode": "resource-version-deprecated",
+                "backwardCompatible": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters",
+        "httpMethod": "POST",
+        "operationId": "createCluster",
+        "tag": "Multi-Cloud Clusters",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "stabilityLevel": "stable",
+            "changeType": "release",
+            "changes": [
+              {
+                "change": "removed the request properties: 'mongoURIWithOptions', 'providerBackupEnabled', 'mongoURIUpdated', 'srvAddress', 'replicationSpec', 'mongoURI', 'numShards', 'autoScaling', 'providerSettings', 'replicationFactor', 'replicationSpecs.regionsConfig'",
+                "changeCode": "request-property-removed",
+                "backwardCompatible": false
+              },
+              {
+                "change": "added 'replicationSpecs.regionConfigs' request property",
+                "changeCode": "request-property-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed the optional properties from the response: 'mongoURIWithOptions', 'providerBackupEnabled', 'mongoURIUpdated', 'srvAddress', 'replicationSpec', 'mongoURI','numShards', 'autoScaling', 'providerSettings', 'replicationFactor', 'replicationSpecs.regionsConfig'",
+                "changeCode": "response-optional-property-removed",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added response property 'replicationSpecs.regionConfigs'",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              }
+            ]
+          },
+          {
+            "version": "2023-01-01",
+            "stabilityLevel": "stable",
+            "changeType": "deprecate",
+            "changes": [
+              {
+                "change": "new resource added 2023-02-01. Resource version 2023-01-01 deprecated and marked for removal on 2025-06-01",
+                "changeCode": "resource-version-deprecated",
+                "backwardCompatible": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}",
+        "httpMethod": "DELETE",
+        "operationId": "deleteCluster",
+        "tag": "Multi-Cloud Clusters",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "stabilityLevel": "stable",
+            "changeType": "release",
+            "changes": null
+          },
+          {
+            "version": "2023-01-01",
+            "stabilityLevel": "stable",
+            "changeType": "deprecate",
+            "changes": [
+              {
+                "change": "new resource added 2023-02-01. Resource version 2023-01-01 deprecated and marked for removal on 2025-06-01",
+                "changeCode": "resource-version-deprecated",
+                "backwardCompatible": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}",
+        "httpMethod": "GET",
+        "operationId": "getCluster",
+        "tag": "Multi-Cloud Clusters",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "stabilityLevel": "stable",
+            "changeType": "release",
+            "changes": [
+              {
+                "change": "removed the optional properties from the response: 'mongoURIWithOptions', 'providerBackupEnabled', 'mongoURIUpdated', 'srvAddress', 'replicationSpec', 'mongoURI','numShards', 'autoScaling', 'providerSettings', 'replicationFactor', 'replicationSpecs.regionsConfig'",
+                "changeCode": "response-optional-property-removed",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added response property 'replicationSpecs.regionConfigs'",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              }
+            ]
+          },
+          {
+            "version": "2023-01-01",
+            "stabilityLevel": "stable",
+            "changeType": "deprecate",
+            "changes": [
+              {
+                "change": "new resource added 2023-02-01. Resource version 2023-01-01 deprecated and marked for removal on 2025-06-01",
+                "changeCode": "resource-version-deprecated",
+                "backwardCompatible": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}",
+        "httpMethod": "PATCH",
+        "operationId": "updateCluster",
+        "tag": "Multi-Cloud Clusters",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "stabilityLevel": "stable",
+            "changeType": "release",
+            "changes": [
+              {
+                "change": "removed the request properties: 'mongoURIWithOptions', 'providerBackupEnabled', 'mongoURIUpdated', 'srvAddress', 'replicationSpec', 'mongoURI', 'numShards', 'autoScaling', 'providerSettings', 'replicationFactor', 'replicationSpecs.regionsConfig'",
+                "changeCode": "request-property-removed",
+                "backwardCompatible": false
+              },
+              {
+                "change": "added 'replicationSpecs.regionConfigs' request property",
+                "changeCode": "request-property-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "removed the optional properties from the response: 'mongoURIWithOptions', 'providerBackupEnabled', 'mongoURIUpdated', 'srvAddress', 'replicationSpec', 'mongoURI','numShards', 'autoScaling', 'providerSettings', 'replicationFactor', 'replicationSpecs.regionsConfig'",
+                "changeCode": "response-optional-property-removed",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added response property 'replicationSpecs.regionConfigs'",
+                "changeCode": "response-optional-property-added",
+                "backwardCompatible": true
+              }
+            ]
+          },
+          {
+            "version": "2023-01-01",
+            "stabilityLevel": "stable",
+            "changeType": "deprecate",
+            "changes": [
+              {
+                "change": "new resource added 2023-02-01. Resource version 2023-01-01 deprecated and marked for removal on 2025-06-01",
+                "changeCode": "resource-version-deprecated",
+                "backwardCompatible": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/globalWrites",
+        "httpMethod": "GET",
+        "operationId": "getManagedNamespace",
+        "tag": "Global Clusters",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "stabilityLevel": "stable",
+            "changeType": "release",
+            "changes": null
+          },
+          {
+            "version": "2023-01-01",
+            "stabilityLevel": "stable",
+            "changeType": "deprecate",
+            "changes": [
+              {
+                "change": "new resource added 2023-02-01. Resource version 2023-01-01 deprecated and marked for removal on 2025-06-01",
+                "changeCode": "resource-version-deprecated",
+                "backwardCompatible": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/globalWrites/customZoneMapping",
+        "httpMethod": "DELETE",
+        "operationId": "deleteAllCustomZoneMappings",
+        "tag": "Global Clusters",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "stabilityLevel": "stable",
+            "changeType": "release",
+            "changes": null
+          },
+          {
+            "version": "2023-01-01",
+            "stabilityLevel": "stable",
+            "changeType": "deprecate",
+            "changes": [
+              {
+                "change": "new resource added 2023-02-01. Resource version 2023-01-01 deprecated and marked for removal on 2025-06-01",
+                "changeCode": "resource-version-deprecated",
+                "backwardCompatible": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/globalWrites/customZoneMapping",
+        "httpMethod": "POST",
+        "operationId": "createCustomZoneMapping",
+        "tag": "Global Clusters",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "stabilityLevel": "stable",
+            "changeType": "release",
+            "changes": [
+              {
+                "change": "removed the request property 'customZoneMappings'",
+                "changeCode": "request-property-removed",
+                "backwardCompatible": false
+              },
+              {
+                "change": "added the request property 'customZoneMapping'",
+                "changeCode": "request-property-added",
+                "backwardCompatible": true
+              },
+              {
+                "change": "added the request property 'managedNamespaces'",
+                "changeCode": "request-property-added",
+                "backwardCompatible": true
+              }
+            ]
+          },
+          {
+            "version": "2023-01-01",
+            "stabilityLevel": "stable",
+            "changeType": "deprecate",
+            "changes": [
+              {
+                "change": "new resource added 2023-02-01. Resource version 2023-01-01 deprecated and marked for removal on 2025-06-01",
+                "changeCode": "resource-version-deprecated",
+                "backwardCompatible": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/globalWrites/managedNamespaces",
+        "httpMethod": "DELETE",
+        "operationId": "deleteManagedNamespace",
+        "tag": "Global Clusters",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "stabilityLevel": "stable",
+            "changeType": "release",
+            "changes": null
+          },
+          {
+            "version": "2023-01-01",
+            "stabilityLevel": "stable",
+            "changeType": "deprecate",
+            "changes": [
+              {
+                "change": "new resource added 2023-02-01. Resource version 2023-01-01 deprecated and marked for removal on 2025-06-01",
+                "changeCode": "resource-version-deprecated",
+                "backwardCompatible": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/globalWrites/managedNamespaces",
+        "httpMethod": "POST",
+        "operationId": "createManagedNamespace",
+        "tag": "Global Clusters",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "stabilityLevel": "stable",
+            "changeType": "release",
+            "changes": [
+              {
+                "change": "the request property 'db' became optional",
+                "changeCode": "request-property-became-optional",
+                "backwardCompatible": true
+              },
+              {
+                "change": "the request property 'collection' became optional",
+                "changeCode": "request-property-became-optional",
+                "backwardCompatible": true
+              },
+              {
+                "change": "the request property 'customShardKey' became optional",
+                "changeCode": "request-property-became-optional",
+                "backwardCompatible": true
+              },
+              {
+                "change": "the 'numInitialChunks' request property's max was removed (from 8192)",
+                "changeCode": "request-property-max-removed",
+                "backwardCompatible": true
+              }
+            ]
+          },
+          {
+            "version": "2023-01-01",
+            "stabilityLevel": "stable",
+            "changeType": "deprecate",
+            "changes": [
+              {
+                "change": "new resource added 2023-02-01. Resource version 2023-01-01 deprecated and marked for removal on 2025-06-01",
+                "changeCode": "resource-version-deprecated",
+                "backwardCompatible": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{clusterName}/restartPrimaries",
+        "httpMethod": "POST",
+        "operationId": "testFailover",
+        "tag": "Multi-Cloud Clusters",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "stabilityLevel": "stable",
+            "changeType": "release",
+            "changes": null
+          },
+          {
+            "version": "2023-01-01",
+            "stabilityLevel": "stable",
+            "changeType": "deprecate",
+            "changes": [
+              {
+                "change": "new resource added 2023-02-01. Resource version 2023-01-01 deprecated and marked for removal on 2025-06-01",
+                "changeCode": "resource-version-deprecated",
+                "backwardCompatible": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "path": "/api/atlas/v2/groups/{groupId}/clusters/{hostName}/logs/{logName}.gz",
+        "httpMethod": "GET",
+        "operationId": "getHostLogs",
+        "tag": "Monitoring and Logs",
+        "versions": [
+          {
+            "version": "2023-02-01",
+            "stabilityLevel": "stable",
+            "changeType": "release",
+            "changes": null
+          },
+          {
+            "version": "2023-01-01",
+            "stabilityLevel": "stable",
+            "changeType": "deprecate",
+            "changes": [
+              {
+                "change": "new resource added 2023-02-01. Resource version 2023-01-01 deprecated and marked for removal on 2025-06-01",
+                "changeCode": "resource-version-deprecated",
+                "backwardCompatible": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
