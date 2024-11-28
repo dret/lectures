@@ -1,0 +1,19 @@
+{ "menu": {
+    "version": "1.0",
+    "name": "Mario",
+    "food": [
+      {
+        "name": "Pizza",
+        "options": [ "Olives", "Sardelles" ]
+      },
+      {
+        "name": "Pasta",
+        "options": [ "Pomodoro", "Carbonara" ]
+      },
+      {
+        "name": "Risotto",
+        "options": [ "Funghi", "Zucca" ]
+      }
+    ]
+  }
+}

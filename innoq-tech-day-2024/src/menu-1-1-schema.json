@@ -1,6 +1,6 @@
 { "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
-  "properties": {"menu": {
+  "properties": { "menu": {
     "type": "object",
     "properties": {
       "version": { "type" : "string" },
@@ -13,6 +13,4 @@
             "name": {
               "type": "string", "enum": [ "Pizza", "Pasta" , "Risotto" ] },
             "options": {
-              "type": "array", "items" : { "type" : "string" }, "uniqueItems": true } },
-          "required": [ "name" ],
-          "additionalProperties" : false }}}}}}
+              "type": "array", "items" : { "type" : "string" } }}}}}}}}

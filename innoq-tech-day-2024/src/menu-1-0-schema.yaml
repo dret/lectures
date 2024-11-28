@@ -22,7 +22,3 @@ properties:
               type: array
               items:
                 type: string
-              uniqueItems: true
-          required:
-          - name
-          additionalProperties: false

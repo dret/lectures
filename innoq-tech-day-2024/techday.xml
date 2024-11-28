@@ -191,19 +191,51 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="how">
-			<title>How to support Versioning?</title>
+		<part id="api-evolution">
+			<title>API Evolution in Action</title>
+			<slide id="mario-start">
+				<title>Mario 1.0</title>
+				<img src="api-evolution-1-0.png" class="fullsize" />
+			</slide>
 			<slide id="menu-mario">
 				<title>Mario's Menu</title>
-				<listing src="mario.json"/>
+				<listing src="mario-1-0.json"/>
 			</slide>
-			<slide id="menu-mario-schema-json">
+			<slide id="menu-schema-1-0-yaml">
+				<title>Checking Mario's Menu: YAML</title>
+				<listing src="menu-1-0-schema.yaml"/>
+			</slide>
+			<slide id="menu-schema-1-0-json">
 				<title>Checking Mario's Menu: JSON</title>
 				<listing src="menu-1-0-schema.json"/>
 			</slide>
-			<slide id="menu-mario-schema-yaml">
-				<title>Checking Mario's Menu: YAML</title>
-				<listing src="menu-1-0-schema.yaml"/>
+			<slide id="mario-evolves">
+				<title>Mario is Evolving</title>
+				<img src="api-evolution-1-1.png" class="fullsize" />
+			</slide>
+			<slide id="menu-schema-1-1-json">
+				<title>A Bigger Menu</title>
+				<listing src="menu-1-1-schema.json"/>
+			</slide>
+			<slide id="menu-mario-1-1">
+				<title>Mario's New Menu</title>
+				<listing src="mario-1-1.json"/>
+			</slide>
+			<slide id="customer-follows">
+				<title>Customers Follow</title>
+				<img src="api-evolution-1-1-balanced.png" class="fullsize" />
+			</slide>
+			<slide id="luigi-appears">
+				<title>Luigi's Appears</title>
+				<img src="api-evolution-1-1-backwards.png" class="fullsize" />
+			</slide>
+			<slide id="luigi-mario">
+				<title>Luigi's Menu</title>
+				<listing src="luigi-1-0.json"/>
+			</slide>
+			<slide id="api-mix">
+				<title>Diversity in API Ecosystems</title>
+				<img src="api-evolution-mix.png" class="fullsize" />
 			</slide>
 		</part>
 		<part id="api-descriptions">
