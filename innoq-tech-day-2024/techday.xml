@@ -257,6 +257,19 @@
 					<li>Consider using <code>x-api-version</code> in your OpenAPI description</li>
 				</ul>
 			</slide>
+			<slide id="oasdiff">
+				<title>Versioning &amp; Platform Engineering</title>
+				<img src="oasdiff-logo.png" title="oasdiff" href="https://www.oasdiff.com/" style="float: right ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Clearly an issue for all teams that could/should be pushed into the platform</li>
+					<li>Existing and good API descriptions make documentation much easier</li>
+					<li><code href="https://github.com/Tufin/oasdiff">oasdiff</code> is a diff tool for OpenAPI descriptions</li>
+					<ul>
+						<li>Detects breaking changes based on a configurable model of compatibility</li>
+						<li>Generates changelogs that document and classify changes across versions</li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="mongodb-atlas-changelog">
 				<title>MongoDB Atlas Changelog</title>
 				<img src="mongodb-atlas-changelog.png" href="https://www.mongodb.com/docs/atlas/reference/api-resources-spec/changelog/" class="fullsize-shadow"/>
