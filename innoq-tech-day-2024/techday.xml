@@ -248,6 +248,27 @@
 		</part>
 		<part id="documentation">
 			<title>How: Documenting Versioning</title>
+			<slide id="version-identification">
+				<title>Version Identification</title>
+				<img src="kiss.png" title="This is the End" style="float: right ; height : 45% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Indicate the version in interactions</li>
+					<li>Don't break identity between compatible versions</li>
+					<ul>
+						<li><em>Don't</em> make non-major version information part of resource identity</li>
+						<li><em>Do</em> make major version information part of resource identity</li>
+					</ul>
+					<li>Various choices when it comes to representing version information</li>
+					<ul>
+						<li><em>DNS Domain Name:</em> <code>https://v1.api.example.com/</code></li>
+						<li><em>URI root:</em> <code>https://api.example.com/v1/</code></li>
+						<li><em>Query parameter:</em> <code>https://api.example.com/?version=1.0</code></li>
+						<li><em>HTTP header field:</em> <code>API-Version: 1.0</code></li>
+						<li><em>Media Type:</em> <code>Content-Type: application/vnd.example.v1+json</code></li>
+						<li><em>Media Type:</em> <code>Content-Type: application/vnd.example+json; version=1.0</code></li>
+					</ul>
+				</ul>
+			</slide>
 			<slide id="openapi">
 				<title>API Versions in OpenAPI</title>
 				<img src="info-version-linkedin-poll.png" title="LinkedIn Poll about the OpenAPI info.version property" href="https://www.linkedin.com/feed/update/urn:li:activity:7202896718634315776/" style="float: right ; width : 25% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
@@ -285,26 +306,6 @@
 			<slide id="mongodb-atlas-changelog-json">
 				<title>MongoDB Atlas Changelog: JSON</title>
 				<listing src="atlas-changelog.json" line="39-57" />
-			</slide>
-			<slide id="version-identification">
-				<title>Version Identification</title>
-				<ul>
-					<li>Indicate the version in interactions</li>
-					<li>Don't break identity between compatible versions</li>
-					<ul>
-						<li><em>Don't</em> make non-major version information part of resource identity</li>
-						<li><em>Do</em> make major version information part of resource identity</li>
-					</ul>
-					<li>Various choices when it comes to representing version information</li>
-					<ul>
-						<li><em>DNS: <code>https://v1.api.example.com/</code></em></li>
-						<li><em>URI root:</em> <code>https://api.example.com/v1/</code></li>
-						<li><em>Query parameter:</em> <code>https://api.example.com/?version=1.0</code></li>
-						<li><em>HTTP header field:</em> <code>API-Version: 1.0</code></li>
-						<li><em>Media Type:</em> <code>Content-Type: application/vnd.example.v1+json</code></li>
-						<li><em>Media Type:</em> <code>Content-Type: application/vnd.example+json; version=1.0</code></li>
-					</ul>
-				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
