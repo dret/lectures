@@ -274,9 +274,13 @@
 				<title>Formalizing Breaking Changes</title>
 				<img src="oasdiff-checks.png" href="https://www.oasdiff.com/blog/formalizing-breaking-changes" class="fullsize-shadow"/>
 			</slide>
+			<slide id="oasdiff-changelog-markdown">
+				<title>Changelog in Markdown (also: Text, JSON, YAML, …)</title>
+				<listing src="oasdiff-changelog.md" />
+			</slide>
 			<slide id="mongodb-atlas-changelog">
-				<title>MongoDB Atlas Changelog</title>
-				<img src="mongodb-atlas-changelog.png" href="https://www.mongodb.com/docs/atlas/reference/api-resources-spec/changelog/" class="fullsize-shadow"/>
+				<title>Changelog in HTML</title>
+				<img src="oasdiff-changelog.png" href="src/oasdiff-changelog" class="fullsize"/>
 			</slide>
 			<slide id="mongodb-atlas-changelog-json">
 				<title>MongoDB Atlas Changelog: JSON</title>
