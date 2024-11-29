@@ -1,0 +1,19 @@
+{ "menu": {
+    "version": "1.0",
+    "name": "Restaurant",
+    "food": [
+      {
+        "name": "Pizza",
+        "options": [ "Option 1", "Option 2" ]
+      },
+      {
+        "name": "Pasta",
+        "options": [ "Option 1", "Option 2" ]
+      },
+      {
+        "name": "xyzxyz",
+        "options": [ "xyzxyz", "xyzxyz" ]
+      }
+    ]
+  }
+}

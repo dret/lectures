@@ -308,6 +308,16 @@
 				<title>MongoDB Atlas Changelog: JSON</title>
 				<listing src="atlas-changelog.json" line="39-57" />
 			</slide>
+			<slide id="examples">
+				<title>Add Examples</title>
+				<ul>
+					<li>Add examples <em>that contain (fictitious) extensions</em></li>
+					<li>Use a consistent naming scheme for names and values</li>
+					<li>OpenAPI supports adding examples as part of the description</li>
+					<li>Use extensions in your test and validation suites</li>
+				</ul>
+				<listing src="menu-1-0-example.json" line="13-16" />
+			</slide>
 		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
