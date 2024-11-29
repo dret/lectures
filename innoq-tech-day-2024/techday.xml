@@ -31,14 +31,12 @@
 	<presentation id="index">
 		<title short="What Why When Versioning Matters">What Why When Versioning Matters: Tips for API Design, Description, and Documentation</title>
 		<toc class="abstract">One of the superpowers of APIs is to design them as products with a focus on making them reusable. That helps with innovation and reuse, as teams can now consume the capabilities of other teams without having to coordinate with them, leading to faster flow. For this to work well, API versioning must be handled in a way that allows the API to evolve while at the same time not breaking existing consumers. What do you have to version? Why does it matter? When should you version? We present tips that help to improve your API design, description and documentation practices.</toc>
-<!--
 		<slide id="summary">
 			<title>Summary</title>
 			<p class="abstract">
 				<toc class="abstract"/>
 			</p>
 		</slide>
--->
 		<part id="why">
 			<title>Why: We're not in Kansas anymore</title>
 			<slide id="composition">
@@ -296,9 +294,13 @@
 				<title>Changelog in Markdown (also: Text, JSON, YAML, …)</title>
 				<listing src="oasdiff-changelog.md" />
 			</slide>
-			<slide id="mongodb-atlas-changelog">
+			<slide id="oasdiff-changelog-html">
 				<title>Changelog in HTML</title>
 				<img src="oasdiff-changelog.png" href="src/oasdiff-changelog" class="fullsize"/>
+			</slide>
+			<slide id="mongodb-atlas-changelog-interactive">
+				<title>MongoDB Atlas Interactive Changelog</title>
+				<img src="mongodb-atlas-changelog.png" href="https://www.mongodb.com/docs/atlas/reference/api-resources-spec/changelog/" class="fullsize-shadow"/>
 			</slide>
 			<slide id="mongodb-atlas-changelog-json">
 				<title>MongoDB Atlas Changelog: JSON</title>
