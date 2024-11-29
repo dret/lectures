@@ -129,11 +129,6 @@
 				<title>Backward and Forward Compatibility</title>
 				<img src="compatibility.png" class="fullsize" />
 			</slide>
-			<slide id="backward-compatibility">
-				<title>Backward Compatibility</title>
-				<blockquote><q>Backward compatibility is a property of a [...] technology that allows for interoperability with an older legacy system, or with input designed for such a system.</q> (<a href="https://en.wikipedia.org/wiki/Backward_compatibility">Wikipedia</a>)</blockquote>
-				<blockquote><q>Backward compatibility is a property of an API consumer that allows for interoperability with an older API version.</q> (<q><a href="https://en.wikipedia.org/wiki/Backward_compatibility">Wikipedia</a></q>)</blockquote>
-			</slide>
 			<slide id="semantic-versioning">
 				<title>Semantic Versioning</title>
 				<ul>
@@ -181,11 +176,6 @@
 					<li><em>Semantic Stability:</em> Meaning stays stable and no <q>semantic cross-talk</q></li>
 					<li><em>Narrowing Constraints:</em> Types can be changed to subtypes</li>
 				</ul>
-			</slide>
-			<slide id="forward-compatibility">
-				<title>Forward Compatibility</title>
-				<blockquote><q>Forward compatibility [...] is a design characteristic that allows a system to accept input intended for a later version of itself. [...] A standard supports forward compatibility if a product that complies with earlier versions can <q>gracefully</q> process input designed for later versions of the standard, ignoring new parts which it does not understand.</q> (<a href="https://en.wikipedia.org/wiki/Forward_compatibility">Wikipedia</a>)</blockquote>
-				<blockquote><q>Forward compatibility allows a system to process data intended for a later version of itself. An API supports forward compatibility if a consumer that complies with earlier versions can gracefully process data designed for later versions of the API.</q> (<q><a href="https://en.wikipedia.org/wiki/Forward_compatibility">Wikipedia</a></q>)</blockquote>
 			</slide>
 			<slide id="dont-dont-version">
 				<title>Don't Don't Version</title>
