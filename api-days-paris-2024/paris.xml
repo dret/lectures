@@ -213,34 +213,6 @@
 				</ul>
 			</slide>
 		</part>
-		<part id="oai-specs">
-			<title>Other OAI Specifications</title>
-			<slide id="arazzo">
-				<title>Arazzo Workflows</title>
-				<ul>
-					<li>OpenAPI describes <q>atomic interactions</q> with resource-oriented APIs</li>
-					<li>Many/most APIs rely on meaningful combinations of individual interactions</li>
-					<li>Arazzo represents the idea of interaction sequences within/across APIs</li>
-					<li>Arazzo descriptions do not intend to be readily executable descriptions</li>
-				</ul>
-			</slide>
-			<slide id="overlays">
-				<title>Overlays</title>
-				<ul>
-					<li>OpenAPI documents are increasingly connecting tools and user groups</li>
-					<li>Not everybody wants/needs/should get the <q>full description of everything</q></li>
-					<li>Overlays support different <q>views</q> of the same OpenAPI documents</li>
-				</ul>
-			</slide>
-			<slide id="competition">
-				<title>Competition? Complementary?</title>
-				<ul>
-					<li><em>AsyncAPI</em></li>
-					<li><em>GraphQL</em></li>
-					<li><em>gRPC</em></li>
-				</ul>
-			</slide>
-		</part>
 		<part id="conclusions-oai-track">
 			<title>Conclusions</title>
 			<slide id="join">
