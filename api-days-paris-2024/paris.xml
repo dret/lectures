@@ -160,26 +160,6 @@
 		</part>
 		<part id="openapi-versions">
 			<title>OpenAPI Versions</title>
-			<slide id="openapi-terminology">
-				<title>OpenAPI Terminology</title>
-				<ul>
-					<li><a href="https://spec.openapis.org/oas/v3.1.1.html#introduction">OpenAPI Specification (OAS)</a></li>
-					<ul>
-						<li>The OpenAPI specification itself</li>
-						<li>Specifically: Not a description of an API with OpenAPI</li>
-					</ul>
-					<li><a href="https://spec.openapis.org/oas/v3.1.1.html#openapi-description">OpenAPI Description (OAD)</a></li>
-					<ul>
-						<li>The description of an API with OpenAPI</li>
-						<li>Descriptions can be spread across multiple documents</li>
-					</ul>
-					<li><a href="https://spec.openapis.org/oas/v3.1.1.html#openapi-document">OpenAPI Document</a></li>
-					<ul>
-						<li>One specific document of an OAD</li>
-						<li>OAD can be self-contained or may use multiple OpenAPI documents</li>
-					</ul>
-				</ul>
-			</slide>
 			<slide id="openapi-2x">
 				<title><a href="https://spec.openapis.org/oas/v2.0.html">OpenAPI 2.0</a></title>
 				<ul>
@@ -210,6 +190,26 @@
 					</ul>
 					<li>Alignment with the most recent version of JSON Schema</li>
 					<li>Support for webhooks (in addition to callbacks)</li>
+				</ul>
+			</slide>
+			<slide id="openapi-terminology">
+				<title>OpenAPI Terminology</title>
+				<ul>
+					<li><a href="https://spec.openapis.org/oas/v3.1.1.html#introduction">OpenAPI Specification (OAS)</a></li>
+					<ul>
+						<li>The OpenAPI specification itself</li>
+						<li>Specifically: Not a description of an API with OpenAPI</li>
+					</ul>
+					<li><a href="https://spec.openapis.org/oas/v3.1.1.html#openapi-description">OpenAPI Description (OAD)</a></li>
+					<ul>
+						<li>The description of an API with OpenAPI</li>
+						<li>Descriptions can be spread across multiple documents</li>
+					</ul>
+					<li><a href="https://spec.openapis.org/oas/v3.1.1.html#openapi-document">OpenAPI Document</a></li>
+					<ul>
+						<li>One specific document of an OAD</li>
+						<li>OAD can be self-contained or may use multiple OpenAPI documents</li>
+					</ul>
 				</ul>
 			</slide>
 		</part>
