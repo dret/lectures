@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="oai-track" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="devweek.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+		<div class="license">
+			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+		</div>
+	</license>
+	<toc name="toc.html">
+		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
+			<thead>
+				<tr>
+					<th valign="bottom">Date</th>
+					<th valign="bottom">Title</th>
+					<th valign="bottom">Slides</th>
+				</tr>
+			</thead>
+			<tbody>
+				<hotspot:for-each-presentation>
+					<tr class="vevent">
+						<td valign="top"><b><span class="title"><hotspot:date/></span></b></td>
+						<td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
+						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+					</tr>
+				</hotspot:for-each-presentation>
+			</tbody>
+		</table>
+	</toc>
+	<title><a href="https://www.developerweek.com/">DeveloperWeek</a> 2025</title>
+	<affiliation>Principal Consultant, <a href="https://innoq.com/">INNOQ</a></affiliation>
+	<copyright>2025 Erik Wilde</copyright>
+	<presentation id="openapi-workshop-intro">
+		<title short="Introduction">Practical API Management with OpenAPI: Introduction</title>
+		<author>Erik Wilde</author>
+		<date short="2025-02-11">February 11, 2025</date>
+		<toc class="abstract">This workshop focuses on using OpenAPI for describing APIs and how this opens a vast world of interoperability and available tooling. The workshop looks at the challenges of API design and developments, and also covers the area of API governance and the question of how to manage API landscapes and ecosystems. We spend most of the time with concrete technologies and tooling so that attendees walk away with knowledge and skills that they can directly apply. Specifically, we look at OpenAPI itself (the description language for APIs), Spectral rules (a language for constraining and linting OpenAPI descriptions), and the new Overlays specification (which allows to tailor OpenAPI descriptions for various consumers and deployment targets). Last but not least, we look at how to document APIs and how the Arazzo language can be used to simplify and automate the description of API workflows. The workshop does have a lot of hands-on content, but it also is accessible to non-developers (such as API product managers and people interested in how APIs can help with driving business) as long as they are curious about how to do API management in practice.</toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract">
+				<toc class="abstract"/>
+			</p>
+		</slide>
+		<part id="conclusions-workshop-intro">
+			<title>Conclusions</title>
+			<slide id="thanks-workshop-intro">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/developerweek-2025/"><code>dret.net/lectures/developerweek-2025/</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
