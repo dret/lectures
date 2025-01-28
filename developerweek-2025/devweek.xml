@@ -51,7 +51,11 @@
 		<author>Erik Wilde</author>
 		<date short="2025-02-11">February 11, 2025</date>
 		<part id="linting">
-			<title>Better Linting</title>
+			<title>Why Linting?</title>
+			<slide id="quality-matters">
+				<title>Does API Quality Matter?</title>
+				<img src="API-quality.webp" class="fullsize-shadow" />
+			</slide>
 		</part>
 		<part id="scenarios">
 			<title>Scenarios</title>
