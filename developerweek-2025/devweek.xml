@@ -60,7 +60,16 @@
 			<title>Rules and Rulesets</title>
 		</part>
 		<part id="jsonpath">
-			<title>Scoping: JSONPath (Plus)</title>
+			<title>Selecting: JSONPath (Plus)</title>
+			<slide id="jsonpath-basics">
+				<title>JSONPath Basics</title>
+				<ul>
+					<li><code>$</code>: The root object/element</li>
+					<li><code>@</code>: The current object/element</li>
+					<li><code>.</code>: Dot-notation to access properties</li>
+					<li><code>[]</code>: Bracket-notation to access array elements</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="conclusions-workshop-overlays">
 			<title>Conclusions</title>
