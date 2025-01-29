@@ -1,0 +1,4 @@
+extends: 
+  - spectral:oas
+  - spectral:asyncapi
+  - spectral:arazzo
