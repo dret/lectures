@@ -73,6 +73,13 @@
 		<part id="scenarios">
 			<title>Scenarios</title>
 		</part>
+		<part id="hello-spectral">
+			<title>Spectral Hello World</title>
+			<slide id="minimal-spectral">
+				<title>Minimal Spectral</title>
+				<img src="spectral-petstore-builtin.png" title="Spectral linting the petstore example against the built-in ruleset for OAS" class="fullsize" />
+			</slide>
+		</part>
 		<part id="rules">
 			<title>Rules and Rulesets</title>
 		</part>
