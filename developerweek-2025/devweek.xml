@@ -84,11 +84,28 @@
 				<img src="spectral-petstore-tweaking.png" title="Tweaking rule severity for the built-in Spectral ruleset for OAS" class="fullsize" />
 			</slide>
 		</part>
-		<part id="rules">
-			<title>Rules and Rulesets</title>
+		<part id="rules-and-rulesets">
+			<title>Rules and Rulesets</title>\
+			<slide id="rule">
+				<title>The Anatomy of a Rule</title>
+				<ul>
+					<li><code>given</code> (required): The part of the document the rule should be applied to (JSONPath)</li>
+					<li><code>then</code> (required): Describes which function should be applied to the <code>given</code> part of the document</li>
+					<li><code>description</code> (optional): A short description of the rule</li>
+					<li><code>message</code> (optional): A message that's displayed in the <code>spectral lint</code> output</li>
+					<li><code>severity</code> (optional): The severity of the rule</li>
+					<li><code>formats</code> (optional): The format that the rule should apply to</li>
+					<li><code>recommended</code> (optional): Users can enforce all rules or only recommended rules</li>
+					<li><code>resolved</code> (optional): Used to apply a rule to a document that's not resolved</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="jsonpath">
 			<title>Selecting: JSONPath (Plus)</title>
+			<slide id="jsonpath-demo">
+				<title>JSONPath Online Demo</title>
+				<img src="jsonpath-demo.png" href="https://jsonpath-plus.github.io/JSONPath/demo/" class="fullsize" />
+			</slide>
 			<slide id="syntax-overview">
 				<title>Overview of JSONPath Syntax</title>
 				<style>
