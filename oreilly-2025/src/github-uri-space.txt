@@ -1,0 +1,19 @@
+/repos
+  /{owner}
+    /{repo}
+      /issues
+        /{issue_number}
+      /pulls
+        /{pull_number}
+      /branches
+        /{branch}
+      /commits
+        /{commit_sha}
+/users
+  /{username}
+    /repos
+    /followers
+/orgs
+  /{org}
+    /repos
+    /members
