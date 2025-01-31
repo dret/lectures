@@ -81,6 +81,10 @@
 			</slide>
 			<slide id="tweaking-rules">
 				<title>No Onions and Extra Cheese, Please!</title>
+				<listing src="ruleset-tweaking-rules.yaml" />
+			</slide>
+			<slide id="tweaking-rules-example">
+				<title>Tweaking Rules</title>
 				<img src="spectral-petstore-tweaking.png" title="Tweaking rule severity for the built-in Spectral ruleset for OAS" class="fullsize" />
 			</slide>
 		</part>
