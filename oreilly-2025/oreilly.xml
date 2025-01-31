@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="oreilly" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="oreilly.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+<!-- 
+	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+		<div class="license">
+			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+		</div>
+	</license>
+-->
+	<toc name="toc.html">
+		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
+			<thead>
+				<tr>
+					<th valign="bottom">Date</th>
+					<th valign="bottom">Title</th>
+					<th valign="bottom">Slides</th>
+				</tr>
+			</thead>
+			<tbody>
+				<hotspot:for-each-presentation>
+					<tr class="vevent">
+						<td valign="top"><b><span class="title"><hotspot:date/></span></b></td>
+						<td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
+						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+					</tr>
+				</hotspot:for-each-presentation>
+			</tbody>
+		</table>
+	</toc>
+	<title>O'Reilly Course 2025</title>
+	<author>Erik Wilde</author>
+	<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
+	<copyright>2025 Erik Wilde</copyright>
+	<presentation id="openapi-fundamentals-value">
+		<title>The Value of OpenAPI</title>
+		<date short="2025-03">March 2025</date>
+		<part id="value-api-age">
+			<title>The Age of APIs</title>
+			<slide id="definitions">
+				<title>APIs and OpenAPI</title>
+				<img src="openapi-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li><em>Application Programming Interfaces (APIs)</em> allow applications talk to each other</li>
+					<ul>
+						<li><em>Mobile apps</em> connect to a server to send and receive data</li>
+						<li><em>Web apps</em> allow browser-based apps to send and receive data</li>
+						<li><em>Server-to-server</em> allows interchange between back-end applications</li>
+					</ul>
+					<li><em>OpenAPI</em> is one description format for APIs</li>
+					<ul>
+						<li><em>API designers</em> create a description of how the API works</li>
+						<li><em>API developers</em> write code that implements the API</li>
+						<li><em>API consumers</em> write code to access and use the API</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="running-on-apis">
+				<title>The World is Running on APIs</title>
+				<ul>
+					<li>Systems use <em>APIs internally</em> to interconnect various technical components</li>
+					<li>Organizations use <em>APIs strategically</em> to allow teams to move faster</li>
+					<li>Businesses use <em>APIs economically</em> to establish and grow global products</li>
+				</ul>
+			</slide>
+			<slide id="api-value-technical">
+				<title>API Value: Technical Drivers</title>
+				<ul>
+					<li><em>Digital Transformation:</em> Increasing number of digital channels and capabilities</li>
+					<li><em>Digital Decay:</em> Decreasing time for which a channel can remain unchanged</li>
+					<li><em>Microservices:</em> Moving away from monolithic architecture</li>
+				</ul>
+				<img src="api-value-pillars-technology.png" style=" width : 50% "/>
+			</slide>
+			<slide id="api-value-business">
+				<title>API Value: Business Drivers</title>
+				<ul>
+					<li><em>API Products:</em> Offering products that can consumed easily and globally</li>
+					<li><em>Product APIs:</em> Augmenting existing products with programmable features</li>
+					<li><em>API-based Products:</em> Better business agility through better product development</li>
+				</ul>
+				<img src="api-value-pillars-business.png" style=" width : 50% "/>
+			</slide>
+			<slide id="api-value-organizational">
+				<title>API Value: Organizational Drivers</title>
+				<ul>
+					<li><em>Cognitive Load:</em> Insulating teams from the complexity of today's tech stacks</li>
+					<li><em>Team Interactions:</em> Allowing teams to publish self-service building blocks</li>
+					<li><em>Team Effectiveness:</em> Building platforms to increase team effectiveness</li>
+				</ul>
+				<img src="api-value-pillars-organization.png" style=" width : 50% "/>
+			</slide>
+		</part>
+		<part id="value-api-history">
+			<title>A Brief History of APIs</title>
+			<slide id="history-of-apis-complete">
+				<title>A Brief History of APIs</title>
+				<img src="history-of-apis-complete.png" class="fullsize-left" />
+			</slide>
+			<slide id="history-of-apis-early">
+				<title>From Subroutines to the Web</title>
+				<img src="history-of-apis-early.png" class="fullsize-left" />
+			</slide>
+			<slide id="subroutine-origin">
+				<title>1948: Structuring Code for Reuse</title>
+				<img source='Herman Goldstine and John von Neumann, "Planning and Coding Problems for an Electronic Computing Instrument", Institute for Advanced Study, Princeton, 1947/1948.' src="subroutine.png" href="https://www.historyofinformation.com/detail.php?id=658" class="fullsize-shadow-left" />
+			</slide>
+			<slide id="api-origin">
+				<title>1968: First Light for <q>API</q></title>
+				<img source='Ira W. Cotton, Frank S. Greatorex, "Data structures and techniques for remote computer graphics", Proceedings of the December Fall Joint Computer Conference AFIPS &apos;68, Pages 533–544, https://doi.org/10.1145/1476589.1476661' src="application-program-interface.png" href="https://dl.acm.org/doi/pdf/10.1145/1476589.1476661" class="fullsize-shadow-left" />
+			</slide>
+			<slide id="history-of-apis-middle">
+				<title>The Age of the Web (APIs)</title>
+				<img src="history-of-apis-middle.png" class="fullsize-left" />
+			</slide>
+			<slide id="history-of-apis-late">
+				<title>APIs are taking off!</title>
+				<img src="history-of-apis-late.png" class="fullsize-left" />
+			</slide>
+		</part>
+		<part id="value-description-formats">
+			<title>What are API Description Formats</title>
+			<slide id="api-descriptions-services">
+				<title>Consumers want to use Services</title>
+				<img src="api-descriptions-services.png" class="fullsize-left" />
+			</slide>
+			<slide id="api-descriptions-uses">
+				<title>Description Languages are <q>API Lingua Francas</q></title>
+				<img src="api-descriptions-uses.png" class="fullsize-left" />
+			</slide>
+			<slide id="api-descriptions-describes">
+				<title>Descriptions are Machine-Readable Documents</title>
+				<img src="api-descriptions-describes.png" class="fullsize-left" />
+			</slide>
+			<slide id="api-descriptions-understands">
+				<title>Shared Understanding of APIs</title>
+				<img src="api-descriptions-understands.png" class="fullsize-left" />
+			</slide>
+			<slide id="api-descriptions-discovers">
+				<title>Discovery of Understandable Descriptions</title>
+				<img src="api-descriptions-discovers.png" class="fullsize-left" />
+			</slide>
+			<slide id="api-descriptions-consumes">
+				<title>Consuming based on Shared Understanding</title>
+				<img src="api-descriptions-consumes.png" class="fullsize-left" />
+			</slide>
+			<slide id="descriptions-documentation">
+				<title>Are Descriptions Documentation?</title>
+				<img src="food-label.png" title="FDA Nutrition Facts Label" href="https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Yes, but…</li>
+					<li>APIs should be <em>described in a standardized way</em></li>
+					<li>APIs are intended for <em>consumption by machines</em></li>
+					<li><em>Machine-readable documentation</em> is called <em>description</em></li>
+					<ul>
+						<li>Or: <em>Human-readable description</em> is called <em>documentation</em></li>
+					</ul>
+					<li>APIs always should publish descriptions</li>
+				</ul>
+			</slide>
+			<slide id="description-format-overview">
+				<title>To Each Their Own</title>
+				<ul>
+					<li>API space evolution → Description language co-evolution</li>
+					<li>Today's APIs often use HTTP and a resource-based approach</li>
+					<ul>
+						<li>Competing languages for this space were RAML and Blueprint</li>
+					</ul>
+					<li>Other approaches are supported by other description languages</li>
+					<ul>
+						<li><em>GraphQL</em> for Query-based APIs</li>
+						<li><em>AsyncAPI</em> for Event-based APIs</li>
+						<li><em>gRPC</em> for programming distributed systems</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="value-openapi-popularity">
+			<title>Why OpenAPI is Popular</title>
+			<slide id="rest-rules">
+				<title>REST Rules</title>
+				<ul>
+					<li><em>External APIs</em> have gravitated towards HTTP/REST</li>
+					<ul>
+						<li>Simple and intuitive API style and tech stack</li>
+						<li>Good fit for client-initiated synchronous interactions</li>
+					</ul>
+					<li><em>Internal APIs</em> have a bit more diversity</li>
+					<ul>
+						<li><em>OpenAPI</em> for request-based services</li>
+						<li><em>GraphQL</em> for flexible front-ends</li>
+						<li><em>AsyncAPI</em> for event-driven services</li>
+						<li><em>gRPC</em> for remote procedure calls</li>
+					</ul>
+					<li>OpenAPI has the largest combined market in the API space</li>
+				</ul>
+			</slide>
+			<slide id="tooling-availability">
+				<title>Plenty of API Lifecycle Tooling</title>
+				<ul>
+					<li><em>Design tools</em> to help create and discuss APIs</li>
+					<li><em>Validation tools</em> to make sure APIs adhere to guidelines</li>
+					<li><em>Mocking tools</em> to generate APIs from descriptions</li>
+					<li><em>Testing tools</em> to validate implementations against descriptions</li>
+					<li><em>Fuzzing tools</em> to test APIs for robustness</li>
+					<li><em>Documentation tools</em> to create API documentation</li>
+					<li><em>Code generation tools</em> for client and server sides</li>
+				</ul>
+			</slide>
+			<slide id="openapi-tooling">
+				<title>OpenAPI Tooling</title>
+				<img src="openapi-tools.png" href="https://tools.openapis.org/" class="fullsize-left"/>
+			</slide>
+			<slide id="api-landscape">
+				<title>API Landscape</title>
+				<img src="api-landscape.png" href="https://apilandscape.apiscene.io/" class="fullsize-shadow-left"/>
+			</slide>
+			<slide id="lingua-franca">
+				<title>The Open API Lingua Franca</title>
+				<ul>
+					<li>OpenAPI benefits from the <em>network effect</em></li>
+					<li><em>Technologists</em> can easily talk about designs</li>
+					<li><em>Organisations</em> have a way to describe their building blocks</li>
+					<li><em>Teams</em> can communicate in a more scalable way</li>
+					<li>Communications are possible across all these areas</li>
+				</ul>
+			</slide>
+		</part>
+<!--
+		<part id="value-api-trajectory">
+			<title>From Tech Detail to API Economy</title>
+			<slide id="api-trajectory-tech">
+				<title>OpenAPI as Shared Technology</title>
+			</slide>
+			<slide id="api-trajectory-biz">
+				<title>OpenAPI for Business Channels</title>
+			</slide>
+			<slide id="api-trajectory-org">
+				<title>OpenAPI for Team Communications</title>
+			</slide>
+		</part>
+-->
+		<part id="value-openapi-user-stories">
+			<title>Four OpenAPI User Stories</title>
+			<slide id="wiifm">
+				<title><span title="What's in it for me?">WIIFM</span>: Everybody's Favorite Station</title>
+				<img src="wiifm.webp" title="WIIFM: What's in it for me?" class="fullsize-left"/>
+			</slide>
+			<slide id="wiifm-org-biz">
+				<title>WIIFM: Strategic Business Value</title>
+				<table cellspacing="20">
+					<tr>
+						<th align="right" valign="top">As</th>
+						<td valign="top">business or organization leader</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">I want</th>
+						<td valign="top">well-defined and usable digital interfaces for partners and the public</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">so that</th>
+						<td valign="top">I can more easily change and scale my value streams.</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="wiifm-dev">
+				<title>WIIFM: API Developers</title>
+				<table cellspacing="20">
+					<tr>
+						<th align="right" valign="top">As</th>
+						<td valign="top">an API developer</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">I want</th>
+						<td valign="top">to describe the product I am going to implement</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">so that</th>
+						<td valign="top">I can use various tools throughout the API lifecycle.</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="wiifm-org-biz">
+				<title>WIIFM: API Consumers</title>
+				<table cellspacing="20">
+					<tr>
+						<th align="right" valign="top">As</th>
+						<td valign="top">an API consumer</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">I want</th>
+						<td valign="top">APIs to have standardized descriptions</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">so that</th>
+						<td valign="top">I can easily understand and consume the products I am accessing.</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="wiifm-platform">
+				<title>WIIFM: Platform Teams</title>
+				<table cellspacing="20">
+					<tr>
+						<th align="right" valign="top">As</th>
+						<td valign="top">an API platform team</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">I want</th>
+						<td valign="top">to support standardized description formats</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">so that</th>
+						<td valign="top">all producers and consumers speak <q>the same language</q>.</td>
+					</tr>
+				</table>
+			</slide>
+		</part>
+		<part id="value-openapi-conclusions>">
+			<title>The Value of OpenAPI: Conclusions</title>
+			<slide id="value-openapi-end">
+				<title>The Value of OpenAPI</title>
+				<img src="end.jpg" title="This is the End" class="fullsize-shadow-left"/>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="openapi-fundamentals-overview">
+		<title>An Overview of OpenAPI</title>
+		<date short="2025-03">March 2025</date>
+		<part id="openapi-fundamentals-machine">
+			<title>OpenAPI as a Machine-Readable Format</title>
+			<slide id="openapi-fundamentals-big-picture">
+				<title>OpenAPI: The Big Picture</title>
+				<img src="api-descriptions-simplified.png" class="fullsize-left" />
+			</slide>
+			<slide id="openapi-fundamentals-openapi-structure">
+				<title>OpenAPI is Structured Data</title>
+				<img src="food-label.png" title="FDA Nutrition Facts Label" href="https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>APIs described by OpenAPI are described in a structured way</li>
+					<li><link href="openapi-fundamentals-resources">Resources</link>, <link href="openapi-fundamentals-interactions">interactions</link>, and <link href="openapi-fundamentals-representations">representations</link> are core concepts</li>
+					<li>OpenAPI must use a structured way to describe these concepts</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-object-structure">
+				<title>OpenAPI Object Structure</title>
+				<img src="openapi-object-structure.png" class="fullsize-left" />
+			</slide>
+			<slide id="openapi-fundamentals-json-history">
+				<title>JSON: Today's Standard Structured Data</title>
+				<ul>
+					<li><em>JavaScript</em> (1995) bridged many worlds because it ran in browsers</li>
+					<li><em>JavaScript Object Notation (JSON)</em> (2001) became the <q>web-scale</q> data format</li>
+					<li>JSON is easy to understand but cumbersome to read and write</li>
+				</ul>
+				<listing src="minimal.json"/>
+			</slide>
+			<slide id="openapi-fundamentals-yaml-history">
+				<title>YAML: JSON but more Readable</title>
+				<ul>
+					<li><em>YAML Ain't Markup Language (YAML)</em> started in 2001 as an alternative to XML</li>
+					<li>Around 2005 YAML started to align with JSON</li>
+					<li>YAML is human-centric and based on indentation as structure</li>
+				</ul>
+				<listing src="minimal.yaml"/>
+			</slide>
+			<slide id="openapi-fundamentals-greet-json">
+				<title>Minimal OpenAPI in JSON</title>
+				<listing src="greet.json"/>
+			</slide>
+			<slide id="openapi-fundamentals-greet-yaml">
+				<title>Minimal OpenAPI in YAML</title>
+				<listing src="greet.yaml"/>
+			</slide>
+			<slide id="openapi-fundamentals-swagger">
+				<title>Minimal OpenAPI in Editing Tool</title>
+				<img src="greet-swagger.png" href="https://editor-next.swagger.io/" class="fullsize-left"/>
+			</slide>
+		</part>
+		<part id="openapi-fundamentals-superstructure">
+			<title>OpenAPI Superstructure: Resources, Interactions, and Representations</title>
+			<slide id="openapi-fundamentals-client-server-web">
+				<title>How the Web Works</title>
+				<img src="web-client-and-server-browser.png" class="fullsize-left"/>
+			</slide>
+			<slide id="openapi-fundamentals-structure">
+				<title>Shaping Your API</title>
+				<ul>
+					<li><em>Resources</em> are the fundamental units of interaction</li>
+					<li><em>Interactions</em> are how you access resources</li>
+					<li><em>Representations</em> define how interactions exchange information</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-web-api">
+				<title>OpenAPI is for <q>Web APIs</q></title>
+				<img src="ietf-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Underlying technologies are the building blocks of the Web</li>
+					<li><a href="https://datatracker.ietf.org/doc/html/rfc3986">Uniform Resource Identifier (URI)</a> is what you see in the address bar</li>
+					<li><a href="https://datatracker.ietf.org/doc/html/rfc9110">Hypertext Transfer Protocol (HTTP)</a> defines how browsers and servers interact</li>
+					<li><a href="https://datatracker.ietf.org/doc/html/rfc8259">JavaScript Object Notation (JSON)</a> is the data model of browser scripting languages</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-client-server-api">
+				<title>How APIs Work</title>
+				<img src="web-client-and-server-api.png" class="fullsize-left"/>
+			</slide>
+			<slide id="openapi-fundamentals-uri-space">
+				<title>URI Spaces</title>
+				<listing src="github-uri-space.txt"/>
+			</slide>
+		</part>
+		<part id="openapi-fundamentals-resources">
+			<title>Resources: URI Paths</title>
+			<slide id="openapi-fundamentals-uri">
+				<title>Uniform Resource Identifier (URI)</title>
+				<pre>https://www.openapis.org/events</pre>
+				<ul>
+					<li>Individual resources are identified by uniformly defined identifiers</li>
+					<li>Tasks are completed by traversing a number of resources</li>
+					<li><em>Scheme</em> defines how identifiers are assigned: <code>https</code></li>
+					<li><em>Authority</em> defines a naming authority: <code>openapi.org</code></li>
+					<li><em>Path</em> is a hierarchical namespace: <code>/about</code></li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-github-openapi-paths">
+				<title>OpenAPI: Organized by Resources</title>
+				<img src="github-api-openapi-paths.png" class="fullsize-left"/>
+			</slide>
+			<slide id="openapi-fundamentals-github-openapi-editor">
+				<title>OpenAPI Editors</title>
+				<img src="github-api-swagger-editor.png" class="fullsize-left"/>
+			</slide>
+			<slide id="openapi-fundamentals-adding-paths">
+				<title>Evolving APIs by Adding Paths</title>
+				<ul>
+					<li>Evolving APIs over time is a good practice</li>
+					<li>Changing an API should not affect existing consumers</li>
+					<li>Adding paths is a good way to avoid breaking changes</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="openapi-fundamentals-interactions">
+			<title>Interactions: Operations and Parameters</title>
+			<slide id="openapi-fundamentals-http">
+				<img src="http-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<title>Hypertext Transfer Protocol (HTTP)</title>
+				<ul>
+					<li>The <q>language</q> how clients and servers communicate</li>
+					<li>Request/response model where the client always initiates the interaction</li>
+					<li>Each request has a <em>request method</em> (e.g., <code>GET</code>)</li>
+					<li>Each response has a <em>response status</em> (e.g., <code>200 OK</code>)</li>
+					<li>Requests and responses use <em>header fields</em> for metadata</li>
+					<li>Requests and responses can have a <em>message body</em></li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-http-interaction">
+				<title>HTTP Example: Accessing OAI</title>
+				<listing src="openapis-org-request.txt"/>
+				<listing src="openapis-org-response.txt"/>
+			</slide>
+			<slide id="openapi-fundamentals-search">
+				<title>Sending Data on the Web: Requests</title>
+				<img src="library-of-congress-search.png" href="https://catalog.loc.gov/vwebv/searchAdvanced" class="fullsize-left"/>
+				<pre>https://catalog.loc.gov/vwebv/search?searchArg1=Erik+Wilde&amp;argType1=all&amp;searchCode1=KNAM&amp;searchType=2&amp;combine2=and&amp;searchArg2=API&amp;argType2=all&amp;searchCode2=KTIL</pre>
+			</slide>
+			<slide id="openapi-fundamentals-search">
+				<title>Receiving Data on the Web: Responses</title>
+				<pre>https://catalog.loc.gov/vwebv/search?searchArg1=Erik+Wilde&amp;argType1=all&amp;searchCode1=KNAM&amp;searchType=2&amp;combine2=and&amp;searchArg2=API&amp;argType2=all&amp;searchCode2=KTIL</pre>
+				<img src="library-of-congress-search-results.png" href="https://catalog.loc.gov/vwebv/searchAdvanced" class="fullsize-left"/>
+			</slide>
+			<slide id="openapi-fundamentals-query-params">
+				<title>Parameters in URIs and HTTP</title>
+				<ul>
+					<li>A simple way to send data from client to server</li>
+					<li><code>path:</code> Embedded in URI (<code>https://github.com/octocat</code>)</li>
+					<li><code>query:</code> Appended to URI (<code>https://github.com/octocat?tab=repositories</code>)</li>
+					<li><code>header:</code> Sent as HTTP header field</li>
+					<li><code>cookie:</code> Sent as part of HTTP cookie management</li>
+					<li>Larger data needs to be sent in <em>HTTP message body</em></li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-query-parameter">
+				<title>Path Parameters in OpenAPI</title>
+				<listing src="github-get-by-username.yaml" line="1-12"/>
+				<pre>GET https://api.github.com/users/octocat</pre>
+			</slide>
+			<slide id="openapi-fundamentals-path-parameter">
+				<title>Query Parameters in OpenAPI</title>
+				<listing src="github-users-list.yaml"/>
+				<pre>GET https://api.github.com/users?since=1&amp;per_page=20</pre>
+			</slide>
+		</part>
+		<part id="openapi-fundamentals-representations">
+			<title>Representations: Requests and Responses</title>
+			<slide id="openapi-fundamentals-representation-options">
+				<title>Data Exchange with HTTP APIs</title>
+				<ul>
+					<li><em>URI and HTTP parameters</em> (<code>path</code>, <code>query</code>, <code>header</code>/<code>cookie</code>)</li>
+					<li><em>Media Types</em> (rooted in Email and Browsers)</li>
+					<li><em>JSON</em> (rooted in shared structured data)</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-media-types">
+				<title>Identifying Resource Types on the Internet</title>
+				<ul>
+					<li><em>Multipurpose Internet Mail Extensions (MIME)</em> started in 1992</li>
+					<li><em>Media Types</em> became the new terminology in 1996</li>
+					<li>Identification for well-known content types (~2000)</li>
+					<ul>
+						<li><em>Text:</em> plain text, HTML, …</li>
+						<li><em>Images:</em> JPEG, PNG, GIF, …</li>
+						<li><em>Application:</em> PDF, XML, JSON, …</li>
+					</ul>
+					<li>Many APIs have domain-specific data models</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-response">
+				<title>API Response with Media Type</title>
+				<listing src="github-get-by-username-pdf.yaml"/>
+			</slide>
+			<slide id="openapi-fundamentals-json">
+				<title>Web-level Structured Data</title>
+				<ul>
+					<li><em>JavaScript Object Notation (JSON)</em> for exchanging structured data</li>
+					<li><code>application/json</code> says nothing about the data itself</li>
+					<li><em>JSON Schema</em> for describing valid structured data</li>
+					<li>OpenAPI uses JSON Schema for describing structured data</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-json-example">
+				<title>API Response: Structured Data</title>
+				<listing src="octocat.json" line="1-15"/>
+			</slide>
+			<slide id="openapi-fundamentals-response">
+				<title>API Response with Media Type</title>
+				<listing src="github-get-by-username.yaml"/>
+			</slide>
+			<slide id="openapi-fundamentals-json-schema">
+				<title>JSON Schema for JSON Data</title>
+				<listing src="github-public-user.yaml" line="1-19"/>
+			</slide>
+			<slide id="openapi-fundamentals-schema-editor">
+				<title>Receiving Data on the Web: Responses</title>
+				<img src="swagger-editor-private-user.png" class="fullsize-left"/>
+			</slide>
+			<slide id="openapi-fundamentals-components">
+				<title>OpenAPI Components: Don't Repeat Yourself</title>
+				<img src="lego-bricks.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Many concepts/models in APIs are reused</li>
+					<li>Concepts may also be reused across various APIs</li>
+					<li>Avoiding copy/paste always is a good idea</li>
+					<li><code>components</code> allows to define reusable <q>building blocks</q></li>
+					<li><code>components</code> supports 10 types of building blocks</li>
+					<ul>
+						<li><code>pathItems</code>, <code>schemas</code>, <code>responses</code>, <code>parameters</code>, <code>examples</code>, …</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-high-level">
+				<title>30'000 ft View of OpenAPI 3.1.0</title>
+				<ul>
+					<li><code>openapi:</code> Defines which spec version is used</li>
+					<li><code>info:</code> Provides metadata about the API</li>
+					<li><code>servers:</code> Information about available servers</li>
+					<li><code>paths:</code> Paths and operations for the API</li>
+					<li><code>webhooks:</code> Support for server-initiated interactions</li>
+					<li><code>components:</code> Reusable components for the description</li>
+					<li><code>security:</code> Declaration of security mechanisms</li>
+					<li><code>tags:</code> Used for grouping concepts across the API</li>
+					<li><code>externalDocs:</code> Additional external documentation</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-easy">
+				<title>OpenAPI: The Easy Bits</title>
+				<listing src="github-preamble.yaml"/>
+			</slide>
+		</part>
+		<part id="openapi-fundamentals-conclusions>">
+			<title>An Overview of OpenAPI: Conclusions</title>
+			<slide id="openapi-fundamentals-summary">
+				<title>An Overview of OpenAPI: Summary</title>
+				<ul>
+					<li>OpenAPI describes API that are based on <q>the web model</q></li>
+					<li>The high-level model of OpenAPI is relatively simple</li>
+					<li>The lower-level details of OpenAPI get more involved</li>
+					<li>OpenAPI can deal with large APIs or collections of APIs</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-end">
+				<title>An Overview of OpenAPI</title>
+				<img src="end.jpg" title="This is the End" class="fullsize-shadow-left"/>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="openapi-fundamentals-practices">
+		<title short="The Ecosystem of OpenAPI">The Ecosystem of OpenAPI: Practices and Tooling</title>
+		<date short="2025-03">March 2025</date>
+		<part id="pactices-api-lifecycle">
+			<title>The API Lifecycle: Powered by OpenAPI</title>
+			<slide id="first-principles">
+				<title>API or Code First?</title>
+			</slide>
+			<part id="practices-api-first">
+				<title>API First: APIs as First-Class Products</title>
+			</part>
+		</part>
+		<part id="practices-api-history">
+			<title>A Brief History of API Practices and Tooling</title>
+		</part>
+		<part id="practices-editing">
+			<title>Editing OpenAPI: Beyond JSON and YAML</title>
+			<part id="practices-editing-why">
+				<title>Editing: Why</title>
+			</part>
+			<part id="practices-editing-what">
+				<title>Editing: What</title>
+			</part>
+			<part id="practices-editing-how">
+				<title>Editing: How</title>
+			</part>
+		</part>
+		<part id="practices-linting">
+			<title>Linting: Establishing API Guidelines</title>
+			<part id="practices-linting-why">
+				<title>Linting: Why</title>
+				<slide id="practices-linting-use-cases">
+					<title>Use Cases for API Linting</title>
+				</slide>
+			</part>
+			<part id="practices-linting-what">
+				<title>Linting: What</title>
+			</part>
+			<part id="practices-linting-how">
+				<title>Linting: How</title>
+			</part>
+		</part>
+		<part id="practices-mocking">
+			<title>Mocking: API First based on API Descriptions</title>
+			<part id="practices-mocking-why">
+				<title>Mocking: Why</title>
+				<slide id="practices-mocking-use-cases">
+					<title>Use Cases for API Mocking</title>
+				</slide>
+			</part>
+			<part id="practices-mocking-what">
+				<title>Mocking: What</title>
+			</part>
+			<part id="practices-mocking-how">
+				<title>Mocking: How</title>
+			</part>
+		</part>
+		<part id="practices-openapi-ai">
+			<title>OpenAPI and AI: Emerging Patterns of OpenAPI Usage with LLMs</title>
+			<slide id="practices-ai-use-cases">
+				<title>Use Cases for Combining APIs with AI</title>
+			</slide>
+			<slide id="practices-api-for-ai">
+				<title>AI-based APIs</title>
+			</slide>
+			<slide id="practices-apis-for-data">
+				<title>AI Access to Data</title>
+			</slide>
+			<slide id="practices-ai-using-apis">
+				<title>AI Using APIs</title>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
