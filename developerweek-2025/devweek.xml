@@ -66,12 +66,25 @@
 						<li>Number of consumers: One, dozens, thousands</li>
 						<li>Context: Solitary or part of an API landscape</li>
 						<li>Exposed Service: Data, Transaction, Events</li>
+						<li>Lifecycle: early, stable, established</li>
 					</ul>
 				</ul>
 			</slide>
 		</part>
 		<part id="scenarios">
 			<title>Scenarios</title>
+			<slide id="linting-basics">
+				<title>Linting Basics</title>
+				<img src="api-linting-basics.png" class="fullsize" />
+			</slide>
+			<slide id="linting-single">
+				<title>Linting Single APIs</title>
+				<img src="api-linting-single.png" class="fullsize" />
+			</slide>
+			<slide id="linting-multiple">
+				<title>Linting in API Landscapes</title>
+				<img src="api-linting-multiple.png" class="fullsize" />
+			</slide>
 		</part>
 		<part id="hello-spectral">
 			<title>Spectral Hello World</title>
