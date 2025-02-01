@@ -102,7 +102,16 @@
 			</slide>
 		</part>
 		<part id="rules-and-rulesets">
-			<title>Rules and Rulesets</title>\
+			<title>Rules and Rulesets</title>
+			<slide id="first-rule">
+				<title>My First Rule</title>
+				<listing src="info-contact.yaml" />
+				<ul>
+					<li>Rules have identifiers</li>
+					<li>Rules are applied to parts <code>given</code> with a JSONPath</li>
+					<li>If a given part is found <code>then</code> functions are applied</li>
+				</ul>
+			</slide>
 			<slide id="rule">
 				<title>The Anatomy of a Rule</title>
 				<ul>
@@ -120,8 +129,8 @@
 		<part id="jsonpath">
 			<title>Selecting: JSONPath (Plus)</title>
 			<slide id="jsonpath-demo">
-				<title>JSONPath Online Demo</title>
-				<img src="jsonpath-demo.png" href="https://jsonpath-plus.github.io/JSONPath/demo/" class="fullsize" />
+				<title>JSONPath Online Evaluator</title>
+				<img src="jsonpath-demo.png" href="http://jsonpath.com/" class="fullsize" />
 			</slide>
 			<slide id="syntax-overview">
 				<title>Overview of JSONPath Syntax</title>
