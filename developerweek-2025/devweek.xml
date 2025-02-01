@@ -214,6 +214,10 @@ tr:nth-child(2n+1) { background-color: #f5f5f5; }
 					<li><code>[]</code>: Bracket-notation to access array elements</li>
 				</ul>
 			</slide>
+			<slide id="aliases">
+				<title>JSONPath Aliases</title>
+				<listing src="aliases.yaml" href="https://docs.stoplight.io/docs/spectral/584e5106451d2-aliases" />
+			</slide>
 		</part>
 		<part id="conclusions-workshop-overlays">
 			<title>Conclusions</title>
