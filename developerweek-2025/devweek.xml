@@ -105,15 +105,6 @@
 		</part>
 		<part id="level-2">
 			<title>Custom Rulesets and Functions</title>
-		</part>
-		<part id="level-3">
-			<title>API Governance with Rulesets</title>
-		</part>
-		<part id="level-4">
-			<title>Automating Spectral</title>
-		</part>
-		<part id="rules-and-rulesets">
-			<title>Rules and Rulesets</title>
 			<slide id="first-rule">
 				<title>My First Rule</title>
 				<listing src="info-contact.yaml" />
@@ -136,6 +127,12 @@
 					<li><code>resolved</code> (optional): Used to apply a rule to a document that's not resolved</li>
 				</ul>
 			</slide>
+		</part>
+		<part id="level-3">
+			<title>API Governance with Rulesets</title>
+		</part>
+		<part id="level-4">
+			<title>Automating Spectral</title>
 		</part>
 		<part id="jsonpath">
 			<title>Selecting: JSONPath (Plus)</title>
