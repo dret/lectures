@@ -155,7 +155,11 @@
 			</slide>
 			<slide id="github-action">
 				<title>GitHub Actions</title>
-				<img src="github-action-pr.jpg" class="fullsize-shadow"/>
+				<img src="github-action-pr.png" class="fullsize-shadow"/>
+			</slide>
+			<slide id="github-action-workflow">
+				<title>GitHub Action Workflow</title>
+				<listing src="workflow-spectral.yaml" />
 			</slide>
 		</part>
 		<part id="conclusions-workshop-overlays">
