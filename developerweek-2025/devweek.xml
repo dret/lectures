@@ -131,18 +131,6 @@
 				<title>JSONPath Aliases</title>
 				<listing src="aliases.yaml" href="https://docs.stoplight.io/docs/spectral/584e5106451d2-aliases" />
 			</slide>
-		</part>
-		<part id="conclusions-workshop-overlays">
-			<title>Conclusions</title>
-			<slide id="thanks-workshop-overlays">
-				<title>Thank You!</title>
-				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-				<ul>
-					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-					<li>Slides online: <a href="http://dret.net/lectures/developerweek-2025/"><code>dret.net/lectures/developerweek-2025/</code></a></li>
-				</ul>
-			</slide>
 			<slide id="rule">
 				<title>The Anatomy of a Rule</title>
 				<ul>
@@ -168,6 +156,18 @@
 			<slide id="github-action">
 				<title>GitHub Actions</title>
 				<img src="github-action-pr.jpg" class="fullsize-shadow"/>
+			</slide>
+		</part>
+		<part id="conclusions-workshop-overlays">
+			<title>Conclusions</title>
+			<slide id="thanks-workshop-overlays">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/developerweek-2025/"><code>dret.net/lectures/developerweek-2025/</code></a></li>
+				</ul>
 			</slide>
 		</part>
 	</presentation>
