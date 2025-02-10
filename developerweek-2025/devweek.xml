@@ -147,6 +147,21 @@
 					<li><code>resolved</code> (optional): Used to apply a rule to a document that's not resolved</li>
 				</ul>
 			</slide>
+			<slide id="no-content-on-204">
+				<title>Linting 204 Responses</title>
+				<ul>
+					<li><code>204</code> responses should not never carry content</li>
+				</ul>
+				<listing src="ruleset-no-content-on-204.yaml" />
+			</slide>
+			<slide id="no-content-on-204-function">
+				<title>Linting 204 Responses with a Function</title>
+				<ul>
+					<li>Spectral rules span across rules and functions</li>
+				</ul>
+				<listing src="ruleset-no-content-on-204-function.yaml" />
+				<listing src="no-content-on-204.js" />
+			</slide>
 			<slide id="testing">
 				<title>Testing Rules</title>
 				<ul>
