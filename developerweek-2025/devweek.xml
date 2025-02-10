@@ -162,12 +162,21 @@
 		</part>
 		<part id="level-4">
 			<title>Automating Spectral</title>
-			<slide id="hooks">
-				<title>Git Hooks: <code>.git/hooks/</code></title>
+			<slide id="spectral-usage-patterns">
+				<title>Spectral Usage Patterns</title>
+				<ul>
+					<li>CLI can be used to manually check (early) designs</li>
+					<li>Integrate Spectral into the IDE of your choice</li>
+					<li><link href="git-hook">Git hooks</link> allow API linting to avoid committing problematic files</li>
+					<li><link href="github-action">GitHub actions</link> can reject pull requests containing problematic files</li>
+				</ul>
+			</slide>
+			<slide id="git-hook">
+				<title>Git Hook: <code>.git/hooks/</code></title>
 				<listing src="pre-commit.sh" />
 			</slide>
 			<slide id="github-action">
-				<title>GitHub Actions: <code>.github/workflows</code></title>
+				<title>GitHub Action: <code>.github/workflows</code></title>
 				<img src="github-action-pr.png" class="fullsize-shadow"/>
 			</slide>
 			<slide id="github-action-workflow">
