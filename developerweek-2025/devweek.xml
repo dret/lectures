@@ -144,6 +144,15 @@
 					<li><code>resolved</code> (optional): Used to apply a rule to a document that's not resolved</li>
 				</ul>
 			</slide>
+			<slide id="testing">
+				<title>Testing Rules</title>
+				<ul>
+					<li>Testing rules helps with making sure they work as expected</li>
+					<li>Creating minimal example helps with better understanding the tests</li>
+					<li>Work your way down from a minimal OpenAPI for creating tests</li>
+				</ul>
+				<listing src="minimal-openapi.yaml" />
+			</slide>
 		</part>
 		<part id="level-3">
 			<title>Rulesets for API Governance</title>
