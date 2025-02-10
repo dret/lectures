@@ -92,6 +92,9 @@
 			</slide>
 			<slide id="tweaking-rules">
 				<title>No Onions and Extra Cheese, Please!</title>
+				<ul>
+					<li>Using an existing ruleset and turning specific rules <code>off</code></li>
+				</ul>
 				<listing src="ruleset-tweaking-rules.yaml" />
 			</slide>
 			<slide id="tweaking-rules-example">
