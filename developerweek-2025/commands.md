@@ -21,3 +21,11 @@ git diff --cached
 git commit -m "testing hook"
 
 rm .git/hooks/pre-commit
+
+GitHub app: Create and publish new branch
+
+vi petstore.oas.yaml
+
+GitHub app: Commit file and create pull request
+
+GitHub web: Inspect progress on the PR's page
