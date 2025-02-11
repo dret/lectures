@@ -4,7 +4,7 @@ aliases:
   OperationObject:
     - "#PathItemObject[get,put,post,delete,options,head,patch,trace]"
   ParameterObject:
-    description: an optional property describing the purpose of the alias
+    description: Selecting parameters in paths and operations in OAS2 and OAS3
     targets:
       - formats:
           - oas2
