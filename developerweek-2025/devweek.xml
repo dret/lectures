@@ -146,10 +146,6 @@
 					<li><code>[]</code>: Bracket-notation to access array elements</li>
 				</ul>
 			</slide>
-			<slide id="aliases">
-				<title>JSONPath Aliases</title>
-				<listing src="aliases.yaml" href="https://docs.stoplight.io/docs/spectral/584e5106451d2-aliases" />
-			</slide>
 			<slide id="rule">
 				<title>The Anatomy of a Rule</title>
 				<ul>
@@ -186,6 +182,10 @@
 					<li>Work your way down from a minimal OpenAPI for creating tests</li>
 				</ul>
 				<listing src="minimal-openapi.yaml" />
+			</slide>
+			<slide id="aliases">
+				<title>Reusing JSONPath: Aliases</title>
+				<listing src="aliases.yaml" href="https://docs.stoplight.io/docs/spectral/584e5106451d2-aliases" />
 			</slide>
 		</part>
 		<part id="level-3">
