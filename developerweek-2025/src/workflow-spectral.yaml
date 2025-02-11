@@ -23,4 +23,4 @@ jobs:
             echo "No OpenAPI files found. Skipping lint."
             exit 0
           fi
-          spectral lint $FILES --ruleset .spectral.yaml || exit 1
+          spectral lint $FILES --ruleset ruleset-builtin.yaml || exit 1
