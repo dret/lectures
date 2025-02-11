@@ -235,17 +235,10 @@
 			</slide>
 		</part>
 	</presentation>
-	<presentation id="openapi-workshop-intro">
-		<title short="Introduction">Practical API Management with OpenAPI: Introduction</title>
+	<presentation id="openapi-summit-intro">
+		<title short="OpenAPI Summit Introduction">OpenAPI Summit Introduction: Why and How to Use OpenAPI</title>
 		<author>Erik Wilde</author>
 		<date short="2025-02-12">February 12, 2025</date>
-		<toc class="abstract">This workshop focuses on using OpenAPI for describing APIs and how this opens a vast world of interoperability and available tooling. The workshop looks at the challenges of API design and developments, and also covers the area of API governance and the question of how to manage API landscapes and ecosystems. We spend most of the time with concrete technologies and tooling so that attendees walk away with knowledge and skills that they can directly apply. Specifically, we look at OpenAPI itself (the description language for APIs), Spectral rules (a language for constraining and linting OpenAPI descriptions), and the new Overlays specification (which allows to tailor OpenAPI descriptions for various consumers and deployment targets). Last but not least, we look at how to document APIs and how the Arazzo language can be used to simplify and automate the description of API workflows. The workshop does have a lot of hands-on content, but it also is accessible to non-developers (such as API product managers and people interested in how APIs can help with driving business) as long as they are curious about how to do API management in practice.</toc>
-		<slide id="summary">
-			<title>Summary</title>
-			<p class="abstract">
-				<toc class="abstract"/>
-			</p>
-		</slide>
 		<part id="value-openapi-user-stories">
 			<title>Four OpenAPI User Stories</title>
 			<slide id="wiifm">
@@ -321,9 +314,9 @@
 				</table>
 			</slide>
 		</part>
-		<part id="conclusions-workshop-intro">
+		<part id="conclusions-intro">
 			<title>Conclusions</title>
-			<slide id="thanks-workshop-intro">
+			<slide id="thanks-intro">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
