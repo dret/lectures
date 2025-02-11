@@ -190,6 +190,15 @@
 		</part>
 		<part id="level-3">
 			<title>Rulesets for API Governance</title>
+			<slide id="guidelines">
+				<title>API Guidelines</title>
+				<ul>
+					<li>Depending on intended consumer groups (private/partner/public)</li>
+					<li>Depending on solitary or landscape APIs</li>
+					<li>Depending on API lifecycle stage</li>
+					<li>Depending on sensitivity for specific tooling</li>
+				</ul>
+			</slide>
 			<slide id="in-the-wild">
 				<title>API Guidelines in the Wild</title>
 				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" class="fullsize"/>
