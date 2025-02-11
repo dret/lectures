@@ -126,7 +126,7 @@
 			<title>Custom Rulesets and Functions</title>
 			<slide id="first-rule">
 				<title>My First Rule</title>
-				<listing src="info-contact.yaml" />
+				<listing src="ruleset-info-contact.yaml" />
 				<ul>
 					<li>Rules have identifiers</li>
 					<li>Rules are applied to parts <code>given</code> with a JSONPath</li>
