@@ -97,7 +97,11 @@
 			<slide id="tweaking-rules">
 				<title>No Onions and Extra Cheese, Please!</title>
 				<ul>
-					<li>Using an existing ruleset and turning specific rules <code>off</code></li>
+					<li>Spectral has a large set of <a href="https://docs.stoplight.io/docs/spectral/4dec24461f3af-open-api-rules">built-in rules for OpenAPI</a></li>
+					<ul>
+						<li>(Spectral also has built-in rules for <a href="https://docs.stoplight.io/docs/spectral/1e63ffd0220f3-async-api-rules">AsyncAPI</a> and <a href="https://docs.stoplight.io/docs/spectral/96c7245b504b1-arazzo-rules">Arazzo</a></li>
+					</ul>
+					<li>Rules in rulesets can be <a href="https://docs.stoplight.io/docs/spectral/83527ef2dd8c0-extending-rulesets#change-rule-severity">selectively tweaked or turned <code>off</code></a></li>
 				</ul>
 				<listing src="ruleset-tweaking-rules.yaml" />
 			</slide>
