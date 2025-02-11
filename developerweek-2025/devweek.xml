@@ -110,6 +110,14 @@
 				<img src="spectral-petstore-tweaking.png" title="Tweaking rule severity for the built-in Spectral ruleset for OAS" class="fullsize" />
 			</slide>
 			<slide id="third-party-rulesets">
+				<title>3rd Party Rulesets</title>
+				<ul>
+					<li>Rulesets that (try to) help with better API design</li>
+					<li>Rulesets that (try to) help with better API description</li>
+					<li>Rulesets that (try to) help with standards conformance</li>
+				</ul>
+			</slide>
+			<slide id="using-third-party-rulesets">
 				<title>Using 3rd Party Rulesets</title>
 				<img src="third-party-rulesets.png" href="https://github.com/stoplightio/spectral-rulesets" class="fullsize" />
 			</slide>
