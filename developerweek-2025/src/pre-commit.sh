@@ -14,7 +14,7 @@ echo "🔍 Running Spectral lint..."
 ERRORS=0
 
 for FILE in $FILES; do
-  npx spectral lint "$FILE" --ruleset .spectral.yaml
+  npx spectral lint "$FILE" --ruleset ruleset-builtin.yaml
   if [[ $? -ne 0 ]]; then
     ERRORS=1
   fi
