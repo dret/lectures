@@ -71,6 +71,10 @@
 					</ul>
 				</ul>
 			</slide>
+			<slide id="examples">
+				<title>Examples Online</title>
+				<img src="qr-code-github" href="https://github.com/dret/spectral-devweek-2025" title="Examples on GitHub" class="fullsize"/>
+			</slide>
 			<slide id="linting-basics">
 				<title>Linting Basics</title>
 				<img src="api-linting-basics.png" class="fullsize" />
@@ -207,7 +211,7 @@
 				<listing src="workflow-spectral.yaml" />
 			</slide>
 		</part>
-		<part id="conclusions-workshop-overlays">
+		<part id="conclusions-workshop">
 			<title>Conclusions</title>
 			<slide id="api-design-matters">
 				<title>API Design Matters</title>
@@ -219,14 +223,15 @@
 					<li>Advanced users can start writing their own rulesets</li>
 				</ul>
 			</slide>
-			<slide id="thanks-workshop-overlays">
+			<slide id="thanks-workshop">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
 					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
 					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-					<li>Slides online: <a href="http://dret.net/lectures/developerweek-2025/"><code>dret.net/lectures/developerweek-2025/</code></a></li>
+					<li>Examples online: <a href="https://github.com/dret/spectral-devweek-2025"><code>github.com/dret/spectral-devweek-2025</code></a></li>
 				</ul>
+				<img src="qr-code-github" href="https://github.com/dret/spectral-devweek-2025" title="Examples on GitHub" style="float: left ; width : 25% ; margin : 3% 5% 0% 5% ; "/>
 			</slide>
 		</part>
 	</presentation>
@@ -324,7 +329,7 @@
 				<ul>
 					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
 					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-					<li>Slides online: <a href="http://dret.net/lectures/developerweek-2025/"><code>dret.net/lectures/developerweek-2025/</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/developerweek-2025"><code>dret.net/lectures/developerweek-2025</code></a></li>
 				</ul>
 			</slide>
 		</part>
