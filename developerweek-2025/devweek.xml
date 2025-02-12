@@ -274,11 +274,15 @@
 		<title short="OpenAPI Summit Introduction">OpenAPI Summit Introduction: Why and How to Use OpenAPI</title>
 		<author>Erik Wilde</author>
 		<date short="2025-02-12">February 12, 2025</date>
+		<slide id="schedule">
+			<title>OpenAPI Summit Schedule</title>
+			<img src="devweek-image-schedule.jpg" class="fullsize"/>
+		</slide>
 		<part id="value-openapi-user-stories">
 			<title>Four OpenAPI User Stories</title>
 			<slide id="wiifm">
 				<title><span title="What's in it for me?">WIIFM</span>: Everybody's Favorite Station</title>
-				<img src="wiifm.webp" title="WIIFM: What's in it for me?" class="fullsize-left"/>
+				<img src="wiifm.webp" title="WIIFM: What's in it for me?" class="fullsize"/>
 			</slide>
 			<slide id="wiifm-org-biz">
 				<title>WIIFM: Strategic Business Value</title>
@@ -390,6 +394,7 @@
 			<title>OAI Focus 2025</title>
 			<slide id="member-value">
 				<title>Reworking Member Value</title>
+				<img src="asc-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
 					<li>Increase visibility and outreach to better inform about OAS and OAI</li>
 					<li>Identify problems and pain points of OAS users</li>
