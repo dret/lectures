@@ -386,6 +386,37 @@
 				<img src="openapi-tools.png" title="OpenAPI Tools" href="https://tools.openapis.org/" class="fullsize"/>
 			</slide>
 		</part>	
+		<part id="oai-work">
+			<title>OAI Focus 2025</title>
+			<slide id="member-value">
+				<title>Reworking Member Value</title>
+				<ul>
+					<li>Increase visibility and outreach to better inform about OAS and OAI</li>
+					<li>Identify problems and pain points of OAS users</li>
+					<li>Invest in areas that help organizations with OAS adoption</li>
+					<li>Attract more members so that we can invest more into helping them</li>
+					<li>Transition from <q>OpenAPI-only</q> to a multi-spec organization</li>
+				</ul>
+			</slide>
+			<slide id="certification-education">
+				<title>Certification and Education</title>
+				<ul>
+					<li>Certify tools for compliance with OAI specifications</li>
+					<li>Provide lists of certified tools for safer tool choices</li>
+					<li>Create educational offerings either ourselves or through certified curricula</li>
+					<li>Partner with other organizations to reach more users of OAI specifications</li>
+				</ul>
+			</slide>
+			<slide id="oascomply">
+				<title>OpenAPI Compliance Project</title>
+				<ul>
+					<li>OpenAPI is a semantically rich specification</li>
+					<li>Some relationships across the model are hard to identify and verify</li>
+					<li>OASComply defines an abstract model of OpenAPI and constraints for this model</li>
+					<li>It will be easier for vendors and customers to verify specification compliance</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions-intro">
 			<title>Conclusions</title>
 			<slide id="thanks-intro">
