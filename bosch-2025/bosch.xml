@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="innoq" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="bosch.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+		<div class="license">
+			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+		</div>
+	</license>
+	<author>Erik Wilde</author>
+	<affiliation>Principal Consultant, <a href="https://www.innoq.com/">INNOQ</a></affiliation>
+	<title>Bosch DevCon 2025</title>
+	<date short="2025-03-26">March 26, 2025</date>
+	<copyright>2025 Erik Wilde</copyright>
+	<presentation id="index">
+		<title>Utility and Use of APIs: From Vision to Value</title>
+		<toc class="abstract">APIs mean different things to different people. For some, they are simply technical tools for integrating software components. But from another perspective, APIs serve as strategic assets: They are digital building blocks that create option value, enabling organizations to be more flexible and resilient. Many companies aspire to become more modular and API-driven, yet translating this vision into strategy and, ultimately, action is no simple task.
+			This presentation examines the dynamics of API journeys and programs. What drives success, and what pitfalls can hinder progress? In large organizations, the potential of generating option value through internal APIs is significant, but so is the challenge of ensuring broad participation in a shared effort.
+			Ultimately, a successful internal API program is shaped not just by technology, but also by culture, incentives, and governance. How can organizations balance control with autonomy and structure with flexibility? Drawing on real-world API initiatives, this session explores key lessons learned, equipping you to navigate the challenges and fully realize the strategic potential of APIs.</toc>
+		<slide id="summary">
+			<title>Summary</title>
+			<p class="abstract">
+				<toc class="abstract"/>
+			</p>
+		</slide>
+		<part id="conclusions">
+			<title>Conclusions</title>
+			<slide id="thanks-keynote">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/bosch-2025/"><code>dret.net/lectures/bosch-2025/</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
