@@ -1,4 +1,4 @@
-# Commands for the Spectral Workshop
+# Commands for the Spectral Technology Lunch
 
 ## Simple Example Using Built-in Rules
 
