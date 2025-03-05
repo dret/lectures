@@ -158,15 +158,6 @@
 				<listing src="ruleset-no-content-on-204-function.yaml" />
 				<listing src="no-content-on-204.js" />
 			</slide>
-			<slide id="testing">
-				<title>Testing Rules</title>
-				<ul>
-					<li>Testing rules helps with making sure they work as expected</li>
-					<li>Creating minimal example helps with better understanding the tests</li>
-					<li>Work your way down from a minimal OpenAPI for creating tests</li>
-				</ul>
-				<listing src="minimal-openapi.yaml" />
-			</slide>
 			<slide id="aliases">
 				<title>Reusing JSONPath: Aliases</title>
 				<listing src="aliases.yaml" href="https://docs.stoplight.io/docs/spectral/584e5106451d2-aliases" />
