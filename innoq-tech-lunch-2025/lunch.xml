@@ -158,10 +158,6 @@
 				<listing src="ruleset-no-content-on-204-function.yaml" />
 				<listing src="no-content-on-204.js" />
 			</slide>
-			<slide id="aliases">
-				<title>Reusing JSONPath: Aliases</title>
-				<listing src="aliases.yaml" href="https://docs.stoplight.io/docs/spectral/584e5106451d2-aliases" />
-			</slide>
 		</part>
 		<part id="level-3">
 			<title>Rulesets for API Governance</title>
