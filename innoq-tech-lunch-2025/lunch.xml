@@ -139,25 +139,6 @@
 					<li><code>resolved</code> (optional): Used to apply a rule to a document that's not resolved</li>
 				</ul>
 			</slide>
-			<slide id="no-content-on-204">
-				<title>Linting 204 Responses</title>
-				<ul>
-					<li><code>204</code> responses should never carry content</li>
-				</ul>
-				<listing src="petstore-content-on-204.oas.yaml" line="76-88" />
-			</slide>
-			<slide id="no-content-on-204-rule">
-				<title>Linting 204 Responses with a Rule</title>
-				<listing src="ruleset-no-content-on-204.yaml" />
-			</slide>
-			<slide id="no-content-on-204-function">
-				<title>Linting 204 Responses with a Function</title>
-				<ul>
-					<li>Spectral rules span across rules and functions</li>
-				</ul>
-				<listing src="ruleset-no-content-on-204-function.yaml" />
-				<listing src="no-content-on-204.js" />
-			</slide>
 		</part>
 		<part id="level-3">
 			<title>Rulesets for API Governance</title>

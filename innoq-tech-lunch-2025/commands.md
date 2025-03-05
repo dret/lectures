@@ -21,13 +21,6 @@ spectral lint petstore.oas.yaml --ruleset ruleset-tweaking-rules.yaml --verbose
 spectral lint petstore.oas.yaml --ruleset ruleset-info-contact.yaml --verbose
 
 
-## Custom Functions
-
-spectral lint petstore-content-on-204.oas.yaml --ruleset ruleset-no-content-on-204.yaml --verbose
-
-spectral lint petstore-content-on-204.oas.yaml --ruleset ruleset-no-content-on-204-function.yaml --verbose
-
-
 ## Git Hooks
 
 vi petstore.oas.yaml
