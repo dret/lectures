@@ -187,15 +187,6 @@
 		</part>
 		<part id="conclusions-workshop">
 			<title>Conclusions</title>
-			<slide id="platform-engineering">
-				<title>Platform Engineering</title>
-				<ul>
-					<li>Scaling software development is a popular concern</li>
-					<li>Support developers by <q href="https://cloud.google.com/blog/products/application-development/richard-seroter-on-shifting-down-vs-shifting-left">shifting things down</q> for them</li>
-					<li>Helping with API design helps developers with creating better components</li>
-					<li>Helping with API design helps developers to more easily consume components</li>
-				</ul>
-			</slide>
 			<slide id="api-design-matters">
 				<title>API Design Matters</title>
 				<ul>
@@ -204,6 +195,15 @@
 					<li>Spectral provides built-in support for various formats</li>
 					<li>Various rulesets for API guidelines are openly available</li>
 					<li>Advanced users can start writing their own rulesets</li>
+				</ul>
+			</slide>
+			<slide id="platform-engineering">
+				<title>(API) Platform Engineering</title>
+				<ul>
+					<li>Scaling software development is a popular concern</li>
+					<li>Support developers by <q href="https://cloud.google.com/blog/products/application-development/richard-seroter-on-shifting-down-vs-shifting-left">shifting things down</q> for them</li>
+					<li>Helping with API design helps developers with creating better components</li>
+					<li>Helping with API design helps developers to more easily consume components</li>
 				</ul>
 			</slide>
 			<slide id="thanks-workshop">
