@@ -40,6 +40,101 @@
 			</p>
 		</slide>
 -->
+		<part id="platform-engineering">
+			<title>Platform Engineering</title>
+			<slide id="platforms-everywhere">
+				<title>Platforms!</title>
+				<ul>
+					<li><q>We're building an API platform and will be API First.</q></li>
+					<li><q>We're building a platform for our partners.</q></li>
+					<li><q>Our developers need a better platform.</q></li>
+					<li><q>We're moving to the cloud platform.</q></li>
+					<li><q>We want to become a platform.</q></li>
+				</ul>
+			</slide>
+			<slide id="gartner-platform-engineering">
+				<title>It's a Thing!</title>
+				<img src="platform-engineering-hype-cycle-gartner.png" href="https://www.gartner.com/en/documents/5519995" title="Gartner: Hype Cycle for Platform Engineering 2024" class="fullsize" />
+			</slide>
+			<slide id="platform-universalism">
+				<title>You cannot not have a Platform</title>
+				<img src="sports-car-platform.webp" class="fullsize" />
+			</slide>
+			<slide id="waterfall">
+				<title>Waterfall: Slow and Inflexible</title>
+				<img src="platform-engineering-dev-ops.png" title="Waterfall" class="fullsize" />
+			</slide>
+			<slide id="devops">
+				<title>DevOps: Complex and Ineffective</title>
+				<img src="platform-engineering-devops.png" title="DevOps" class="fullsize" />
+			</slide>
+			<slide id="platform-engineering">
+				<title><span title="Internal Developer Platform">IDP</span>: Scaling DevOps</title>
+				<img src="platform-engineering-idp.png" title="Internal Developer Platform" class="fullsize" />
+			</slide>
+			<slide id="got-bezos">
+				<title>Got Bezos?</title>
+				<img src="platform-engineering-api.png" title="API Platform" class="fullsize" />
+			</slide>
+		</part>
+		<part id="platform-business">
+			<title>Business Impact of Platforms</title>
+			<slide id="spice-girls">
+				<title>What do you Really Really Want?</title>
+				<img title="The Spice Girls Question" src="spice-girls-platform.png" href="https://www.youtube.com/watch?v=v0z_6pXeimw" class="fullsize-shadow"/>
+			</slide>
+			<slide id="business-platform">
+				<title>Delivery! Interconnection! Innovation!</title>
+				<img src="platform-engineering-business.png" title="Business Platform and Platform Business" class="fullsize" />
+			</slide>
+			<slide id="platform-value">
+				<title>Platform Value</title>
+				<ul>
+					<li><em>More Efficient Development:</em> Internal Developer Platform</li>
+					<li><em>More Effective Collaboration</em>: API Portals/Marketplaces</li>
+					<li><em>Digital Transformation:</em> Digital/Business Platform</li>
+					<li><em>Becoming a Platform:</em> Platform Business Model</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="success-factors">
+			<title>Platform Success Factors</title>
+			<slide id="scaling">
+				<title>Factor #1: Scaling</title>
+				<img src="gitlab-logo.png" title="GitLab" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li><q>Shift Down</q> is the new <q>Shift Left</q></li>
+					<li><em>Self-Service</em> makes development teams more efficient</li>
+					<li><em>Automation</em> helps infrastructure team to handle scale</li>
+				</ul>
+			</slide>
+			<slide id="standardization">
+				<title>Factor #2: Standardization</title>
+				<img src="golden-path-guardrail.webp" title="Golden Path with a Guardrail" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>The network effect</li>
+					<ul>
+						<li><em>API developers:</em> Established tools and practices</li>
+						<li><em>API consumers:</em> Familiarity with design patterns</li>
+						<li><em>Business value:</em> Easier usable API products</li>
+						<li><em>Platforms:</em> Focused efforts on shared practices</li>
+					</ul>
+					<li><q>Guardrails</q> vs. <q>Golden Paths</q></li>
+					<ul>
+						<li>Remembering rules is difficult and unpleasant</li>
+						<li>Following established paths is easy and fast</li>
+						<li>Guardrails are safeguards and not the main guiding principle</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="optionality">
+				<title>Factor #3: Optionality</title>
+				<img src="unbundling-the-enterprise-cover.jpg" title="Unbundling the Enterprise: APIs, Optionality, &amp; the Science of Happy Accidents" href="https://www.youtube.com/watch?v=rdZ1U9zvU90" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>...</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="conclusions">
 			<title>Conclusions</title>
 			<slide id="thanks-keynote">
