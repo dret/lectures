@@ -99,40 +99,21 @@
 		</part>
 		<part id="success-factors">
 			<title>Platform Success Factors</title>
-			<slide id="scaling">
-				<title>Factor #1: Scaling</title>
-				<img src="gitlab-logo.png" title="GitLab" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
-				<ul>
-					<li><q>Shift Down</q> is the new <q>Shift Left</q></li>
-					<li><em>Self-Service</em> makes development teams more efficient</li>
-					<li><em>Automation</em> helps infrastructure team to handle scale</li>
-				</ul>
+			<slide id="adoption">
+				<title>Factor #1: Adoption</title>
 			</slide>
-			<slide id="standardization">
-				<title>Factor #2: Standardization</title>
-				<img src="golden-path-guardrail.webp" title="Golden Path with a Guardrail" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
-				<ul>
-					<li>The network effect</li>
-					<ul>
-						<li><em>API developers:</em> Established tools and practices</li>
-						<li><em>API consumers:</em> Familiarity with design patterns</li>
-						<li><em>Business value:</em> Easier usable API products</li>
-						<li><em>Platforms:</em> Focused efforts on shared practices</li>
-					</ul>
-					<li><q>Guardrails</q> vs. <q>Golden Paths</q></li>
-					<ul>
-						<li>Remembering rules is difficult and unpleasant</li>
-						<li>Following established paths is easy and fast</li>
-						<li>Guardrails are safeguards and not the main guiding principle</li>
-					</ul>
-				</ul>
+			<slide id="api-value">
+				<title>Factor #2: API Value</title>
 			</slide>
-			<slide id="optionality">
-				<title>Factor #3: Optionality</title>
+			<slide id="governance">
+				<title>Factor #3: Governance</title>
+			</slide>
+		</part>
+		<part id="option-value">
+			<title>Option Value Matters</title>
+			<slide id="governance">
+				<title>Unbundling the Enterprise</title>
 				<img src="unbundling-the-enterprise-cover.jpg" title="Unbundling the Enterprise: APIs, Optionality, &amp; the Science of Happy Accidents" href="https://www.youtube.com/watch?v=rdZ1U9zvU90" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
-				<ul>
-					<li>...</li>
-				</ul>
 			</slide>
 		</part>
 		<part id="conclusions">
