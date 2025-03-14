@@ -659,8 +659,36 @@
 			<title>Linting: Establishing API Guidelines</title>
 			<part id="practices-linting-why">
 				<title>Linting: Why</title>
-				<slide id="practices-linting-use-cases">
-					<title>Use Cases for API Linting</title>
+				<slide id="quality-matters">
+					<title>Does API Quality Matter?</title>
+					<img src="API-quality.webp" class="fullsize-shadow" />
+				</slide>
+				<slide id="it-depends">
+					<title>It Depends!</title>
+					<ul>
+						<li>Quality is in the eye of the beholder</li>
+						<li>Quality is determined by a number of factors</li>
+						<ul>
+							<li><em>Consumer profile:</em> Private, partner, public</li>
+							<li><em>Number of consumers:</em> One, dozens, thousands</li>
+							<li><em>Context:</em> Solitary or part of an API landscape</li>
+							<li><em>Exposed Service:</em> Data, Transaction, Events</li>
+							<li><em>Lifecycle:</em> early, stable, established</li>
+							<li><em>Tooling:</em> Support for certain features</li>
+						</ul>
+					</ul>
+				</slide>
+				<slide id="linting-basics">
+					<title>Linting Basics</title>
+					<img src="api-linting-basics.png" class="fullsize" />
+				</slide>
+				<slide id="linting-single">
+					<title>Linting Single APIs</title>
+					<img src="api-linting-single.png" class="fullsize" />
+				</slide>
+				<slide id="linting-multiple">
+					<title>Linting in API Landscapes</title>
+					<img src="api-linting-multiple.png" class="fullsize" />
 				</slide>
 			</part>
 			<part id="practices-linting-what">
