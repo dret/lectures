@@ -616,12 +616,29 @@
 		<date short="2024-09">September 2024</date>
 		<part id="pactices-api-lifecycle">
 			<title>The API Lifecycle: Powered by OpenAPI</title>
-			<slide id="first-principles">
-				<title>API or Code First?</title>
+			<slide id="description-or-code">
+				<title>Description or Code First?</title>
 			</slide>
-			<part id="practices-api-first">
-				<title>API First: APIs as First-Class Products</title>
-			</part>
+			<slide id="provider-tooling">
+				<title>Tooling for API Providers</title>
+				<ul>
+					<li><em>API Design &amp; Documentation</em></li>
+					<li><em>Mocking API Responses</em></li>
+					<li><em>API Code Generation</em></li>
+					<li><em>API Testing &amp; Validation</em></li>
+					<li><em>API Gateway &amp; Security Configuration</em></li>
+				</ul>
+			</slide>
+			<slide id="consumer-tooling">
+				<title>Tooling for API Consumers</title>
+				<ul>
+					<li><em>API Discovery &amp; Integration</em></li>
+					<li><em>Client SDK &amp; Code Generation</em></li>
+					<li><em>Automated Contract Testing</em></li>
+					<li><em>API Monitoring &amp; Observability</em></li>
+					<li><em>API Versioning &amp; Change Management</em></li>
+				</ul>
+			</slide>
 		</part>
 		<part id="practices-api-history">
 			<title>A Brief History of API Practices and Tooling</title>
