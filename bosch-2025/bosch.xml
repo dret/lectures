@@ -40,6 +40,37 @@
 			</p>
 		</slide>
 -->
+		<part id="motivation">
+			<title>Motivation</title>
+			<slide id="apis-and-ai">
+				<title>AI needs APIs</title>
+				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+				<ol>
+					<li>APIs for consumption by AI</li>
+					<ul>
+						<li><em>GPT Actions</em> provide access to external information sources</li>
+						<li><em>AI agents</em> can take action on behalf of users</li>
+					</ul>
+					<li>APIs for AI-powered services</li>
+					<ul>
+						<li>AI tooling for easier creation of applications</li>
+						<li>AI applications should become building blocks themselves</li>
+					</ul>
+					<li>APIs for data ingestion for AI model training</li>
+					<ul>
+						<li>Data contracts with clear terms of service</li>
+					</ul>
+				</ol>
+			</slide>
+			<slide id="scaling-digital">
+				<title>APIs &amp; Digital Transformation</title>
+				<ul>
+					<li>The <q>digital footprint</q> of organizations is growing</li>
+					<li>More digital building blocks mean more business options</li>
+					<li>Larger organizations have a larger potential to work with</li>
+				</ul>
+			</slide>
+		</part>
 		<part id="platform-engineering">
 			<title>Platform Engineering</title>
 			<slide id="platforms-everywhere">
