@@ -129,24 +129,37 @@
 					<li><em>Platform Business:</em> Try to become slightly platformy</li>
 				</ul>
 			</slide>
+			<slide id="unbundling">
+				<title>Unbundling the Enterprise Creates Options</title>
+				<img src="unbundling-the-enterprise-cover.jpg" title="Unbundling the Enterprise: APIs, Optionality, &amp; the Science of Happy Accidents" href="https://www.youtube.com/watch?v=rdZ1U9zvU90" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+			</slide>
 		</part>
 		<part id="success-factors">
 			<title>API Platform Success Factors</title>
 			<slide id="api-production">
 				<title>Factor #1: Supporting API Production</title>
+				<ul>
+					<li><em>Vision:</em> Everything created has an API</li>
+					<ul>
+						<li>Essential for automation and AI integration</li>
+					</ul>
+					<li><em>Strategy:</em> Creating APIs is the default</li>
+					<ul>
+						<li>Exceptions are possible but need to be justified</li>
+					</ul>
+					<li><em>Execution:</em> Platform for creating and publishing APIs</li>
+					<ul>
+						<li><em>API design</em> is automated as much as possible</li>
+						<li><em>API chapter</em> as a way to enable all teams</li>
+						<li><em>API tooling</em> supports all teams in building/using APIs</li>
+					</ul>
+				</ul>
 			</slide>
 			<slide id="api-business-value">
 				<title>Factor #2: API Business Value</title>
 			</slide>
 			<slide id="api-governance">
 				<title>Factor #3: Effective API Governance</title>
-			</slide>
-		</part>
-		<part id="option-value">
-			<title>Option Value Matters</title>
-			<slide id="governance">
-				<title>Unbundling the Enterprise</title>
-				<img src="unbundling-the-enterprise-cover.jpg" title="Unbundling the Enterprise: APIs, Optionality, &amp; the Science of Happy Accidents" href="https://www.youtube.com/watch?v=rdZ1U9zvU90" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
 			</slide>
 		</part>
 		<part id="conclusions">
