@@ -618,6 +618,13 @@
 			<title>The API Lifecycle: Powered by OpenAPI</title>
 			<slide id="description-or-code">
 				<title>Description or Code First?</title>
+				<ul>
+					<li>Both methods are means to an end with different emphases</li>
+					<li>The goal is to provide APIs with some level of coherence and governance</li>
+					<li>Many organizations use both methods in different places</li>
+					<li>Governance helps with managing the quality of the API landscape</li>
+					<li>Invest in <q>API literacy</q> as a way to treat APIs as a first-class concept</li>
+				</ul>
 			</slide>
 			<slide id="provider-tooling">
 				<title>Tooling for API Providers</title>
