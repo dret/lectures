@@ -431,13 +431,13 @@
 			<title>Resources: URI Paths</title>
 			<slide id="openapi-fundamentals-uri">
 				<title>Uniform Resource Identifier (URI)</title>
-				<pre>https://www.openapis.org/events</pre>
+				<pre>https://openapis.org/events</pre>
 				<ul>
 					<li>Individual resources are identified by uniformly defined identifiers</li>
 					<li>Tasks are completed by traversing a number of resources</li>
 					<li><em>Scheme</em> defines how identifiers are assigned: <code>https</code></li>
-					<li><em>Authority</em> defines a naming authority: <code>openapi.org</code></li>
-					<li><em>Path</em> is a hierarchical namespace: <code>/about</code></li>
+					<li><em>Authority</em> defines a naming authority: <code>openapis.org</code></li>
+					<li><em>Path</em> is a hierarchical namespace: <code>/events</code></li>
 				</ul>
 			</slide>
 			<slide id="openapi-fundamentals-github-openapi-paths">
