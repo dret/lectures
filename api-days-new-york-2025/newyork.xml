@@ -131,9 +131,27 @@
 			<title>OpenAPI &amp; AI</title>
 			<slide id="ai-extensions">
 				<title>OpenAPI AI Extensions</title>
+				<ul>
+					<li>Specific information to surface for AI tooling and/or AI consumers</li>
+				</ul>
+			</slide>
+			<slide id="apis-for-ai">
+				<title>OpenAPI AI Extensions</title>
+				<ul>
+					<li>Surfacing APIs through AI abstraction layers through mechanisms such as MCP</li>
+				</ul>
 			</slide>
 			<slide id="ai-maturity">
 				<title>OpenAPI AI Maturity Levels</title>
+				<ul>
+					<li>Assess the AI-readiness of your API landscape</li>
+				</ul>
+			</slide>
+			<slide id="ai-agent-maturity">
+				<title>OpenAPI AI Agent Maturity Levels</title>
+				<ul>
+					<li>Guidance how to make API onboarding consumable for AI Agents</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="conclusions-oai-track">
