@@ -110,7 +110,7 @@
 				<ul>
 					<li>Rules have identifiers</li>
 					<li>Rules are applied to parts <code>given</code> with a JSONPath</li>
-					<li>If a given part is found <code>then</code> functions are applied</li>
+					<li>If a <code>given</code> part is found <code>then</code> functions are applied</li>
 				</ul>
 			</slide>
 			<slide id="jsonpath-demo">
