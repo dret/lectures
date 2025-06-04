@@ -130,27 +130,35 @@
 		<part id="openapi-ai">
 			<title>OpenAPI &amp; AI</title>
 			<slide id="ai-extensions">
-				<title>OpenAPI AI Extensions</title>
+				<title>OpenAPI Extensions for AI Consumers</title>
+				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
 				<ul>
-					<li>Specific information to surface for AI tooling and/or AI consumers</li>
+					<li>Specific API information to surface for AI tooling and/or AI consumers</li>
+					<li><em>Example:</em> What would help to generate better MCP servers?</li>
 				</ul>
 			</slide>
 			<slide id="apis-for-ai">
-				<title>OpenAPI AI Extensions</title>
+				<title>OpenAPI Extensions for AI APIs</title>
+				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
 				<ul>
-					<li>Surfacing APIs through AI abstraction layers through mechanisms such as MCP</li>
+					<li>Any information that relates to APIs using AI technologies</li>
+					<li><em>Example:</em> Where does data go and is it used for model training?</li>
 				</ul>
 			</slide>
 			<slide id="ai-maturity">
 				<title>OpenAPI AI Maturity Levels</title>
+				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
 				<ul>
 					<li>Assess the AI-readiness of your API landscape</li>
+					<li><em>Example:</em> API discovery; API granularity; API workflows</li>
 				</ul>
 			</slide>
 			<slide id="ai-agent-maturity">
 				<title>OpenAPI AI Agent Maturity Levels</title>
+				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
 				<ul>
-					<li>Guidance how to make API onboarding consumable for AI Agents</li>
+					<li>Guidance on how to make API easily consumable for AI Agents</li>
+					<li><em>Example:</em> Are your APIs ready for automated agent onboarding?</li>
 				</ul>
 			</slide>
 		</part>
