@@ -713,6 +713,16 @@
 			</part>
 			<part id="practices-linting-spectral">
 				<title>Linting OpenAPI with Spectral</title>
+				<slide id="practices-spectral-intro">
+					<title>Spectral: Open Source OpenAPI Linting</title>
+					<ul>
+						<li>Powerful linter for <em>JSON/YAML-based API descriptions</em> like OpenAPI</li>
+						<li>Enforces <em>consistency and quality</em> across APIs by using rulesets</li>
+						<li><em>Built-in rules</em> or <em>custom rules</em> tailored to organizational standards</li>
+						<li>Spectral can lint <em>individual APIs</em> or <em>entire landscapes</em> via CI/CD</li>
+						<li>Useful for both <em>educational feedback</em> and <em>automated governance</em></li>
+					</ul>
+				</slide>
 			</part>
 		</part>
 		<part id="practices-mocking">
