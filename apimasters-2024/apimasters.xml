@@ -678,7 +678,7 @@
 		<part id="practices-linting">
 			<title>Linting: Following API Guidelines</title>
 			<part id="practices-linting-why">
-				<title>Linting: Why</title>
+				<title>Why Linting?</title>
 				<slide id="quality-matters">
 					<title>Does API Quality Matter?</title>
 					<img src="API-quality.webp" class="fullsize-shadow" />
@@ -711,11 +711,8 @@
 					<img src="api-linting-multiple.png" class="fullsize" />
 				</slide>
 			</part>
-			<part id="practices-linting-what">
-				<title>Linting: What</title>
-			</part>
-			<part id="practices-linting-how">
-				<title>Linting: How</title>
+			<part id="practices-linting-spectral">
+				<title>Linting OpenAPI with Spectral</title>
 			</part>
 		</part>
 		<part id="practices-mocking">
