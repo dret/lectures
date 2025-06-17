@@ -617,7 +617,14 @@
 		<part id="pactices-api-lifecycle">
 			<title>The API Lifecycle: Powered by OpenAPI</title>
 			<slide id="practices-api-history">
-				<title>A Brief History of API Practices and Tooling</title>
+				<title>How OpenAPI Changed the Way We Work</title>
+				<ul>
+					<li><em>Before OpenAPI:</em> API behavior often only documented informally or post-implementation</li>
+					<li>Early tools focused on documentation generation from code comments</li>
+					<li>OpenAPI enabled <em>design-first</em> workflows and <em>contract-driven</em> tooling</li>
+					<li>New ecosystems emerged: editors, linters, test tools, SDK generators, portals</li>
+					<li>OpenAPI turned API definitions into code artifacts not just documentation</li>
+				</ul>
 			</slide>
 			<slide id="provider-tooling">
 				<title>Tooling for API Providers</title>
