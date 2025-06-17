@@ -616,15 +616,8 @@
 		<date short="2025-06">June 2025</date>
 		<part id="pactices-api-lifecycle">
 			<title>The API Lifecycle: Powered by OpenAPI</title>
-			<slide id="description-or-code">
-				<title>Description or Code First?</title>
-				<ul>
-					<li>Both methods are means to an end with different emphases</li>
-					<li>The goal is to provide APIs with some level of coherence and governance</li>
-					<li>Many organizations use both methods in different places</li>
-					<li>Governance helps with managing the quality of the API landscape</li>
-					<li>Invest in <q>API literacy</q> as a way to treat APIs as a first-class concept</li>
-				</ul>
+			<slide id="practices-api-history">
+				<title>A Brief History of API Practices and Tooling</title>
 			</slide>
 			<slide id="provider-tooling">
 				<title>Tooling for API Providers</title>
@@ -646,9 +639,16 @@
 					<li><em>API Versioning &amp; Change Management</em></li>
 				</ul>
 			</slide>
-		</part>
-		<part id="practices-api-history">
-			<title>A Brief History of API Practices and Tooling</title>
+			<slide id="description-or-code">
+				<title>Description or Code First?</title>
+				<ul>
+					<li>Both methods are means to an end with different emphases</li>
+					<li>The goal is to provide APIs with some level of coherence and governance</li>
+					<li>Many organizations use both methods in different places</li>
+					<li>Governance helps with managing the quality of the API landscape</li>
+					<li>Invest in <q>API literacy</q> as a way to treat APIs as a first-class concept</li>
+				</ul>
+			</slide>
 		</part>
 		<part id="practices-editing">
 			<title>Editing OpenAPI: Beyond JSON and YAML</title>
