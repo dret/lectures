@@ -659,20 +659,21 @@
 		</part>
 		<part id="practices-editing">
 			<title>Editing OpenAPI: Beyond JSON and YAML</title>
-			<part id="practices-editing-why">
+			<slide id="practices-editing-why">
 				<title>Editing: Why</title>
 				<ul>
 					<li>Editing JSON or YAML is tedious and error-prone</li>
 					<li>Tools reduce errors and can ease understanding</li>
 					<li>Going <em>API First</em> improves API practices in organizations</li>
 					<li>Tools improve understanding for non-experts</li>
-			</part>
-			<part id="practices-editing-what">
+				</ul>
+			</slide>
+			<slide id="practices-editing-what">
 				<title>Editing: What</title>
-			</part>
-			<part id="practices-editing-how">
+			</slide>
+			<slide id="practices-editing-how">
 				<title>Editing: How</title>
-			</part>
+			</slide>
 		</part>
 		<part id="practices-linting">
 			<title>Linting: Establishing API Guidelines</title>
