@@ -616,7 +616,7 @@
 		<date short="2025-06">June 2025</date>
 		<part id="pactices-api-lifecycle">
 			<title>The API Lifecycle: Powered by OpenAPI</title>
-			<slide id="practices-api-history">
+			<slide id="openapi-changed-working">
 				<title>How OpenAPI Changed the Way We Work</title>
 				<ul>
 					<li><em>Before OpenAPI:</em> API behavior often only documented informally or post-implementation</li>
@@ -661,6 +661,11 @@
 			<title>Editing OpenAPI: Beyond JSON and YAML</title>
 			<part id="practices-editing-why">
 				<title>Editing: Why</title>
+				<ul>
+					<li>Editing JSON or YAML is tedious and error-prone</li>
+					<li>Tools reduce errors and can ease understanding</li>
+					<li>Going <em>API First</em> improves API practices in organizations</li>
+					<li>Tools improve understanding for non-experts</li>
 			</part>
 			<part id="practices-editing-what">
 				<title>Editing: What</title>
