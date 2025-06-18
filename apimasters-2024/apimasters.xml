@@ -792,6 +792,19 @@
 			</part>
 			<part id="practices-mocking-prism">
 				<title>Mocking APIs with Prism</title>
+				<slide id="practices-mocking-how">
+					<title>How to use a Mock Tool</title>
+					<ul>
+						<li>Mocking tools come as local or hosted versions</li>
+						<li>OpenAPI serves as the input for the mocking tool</li>
+						<ul>
+							<li>The tool looks for paths, methods, and responses</li>
+							<li><em>Examples</em> and <em>schemas</em> are used for sending responses</li>
+						</ul>
+						<li>Mock servers can be started with OpenAPI as their only input</li>
+						<li>Additional options allow to fine-tune the server's behavior</li>
+					</ul>
+				</slide>
 				<slide id="practices-minimal-prism">
 					<title>Minimal Prism</title>
 					<img src="prism-mock-server.png" title="Prism mock server and requests with CLI tool and browser" class="fullsize-left" />
