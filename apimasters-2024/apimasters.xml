@@ -781,6 +781,13 @@
 				</slide>
 				<slide id="practices-mocking-use-cases">
 					<title>Use Cases for API Mocking</title>
+					<ul>
+						<li><em>Frontend/Backend Parallel Work:</em> Build UIs before the backend exists</li>
+						<li><em>Design-First Validation:</em> Try out the API contract early</li>
+						<li><em>Demos and Prototyping:</em> Show stable behavior without real servers</li>
+						<li><em>Developer Onboarding:</em> Let new devs explore APIs instantly</li>
+						<li><em>Integration &amp; Error Testing:</em> Simulate edge cases and failures safely</li>
+					</ul>
 				</slide>
 			</part>
 			<part id="practices-mocking-prism">
