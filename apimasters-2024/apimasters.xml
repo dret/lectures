@@ -679,11 +679,11 @@
 			<title>Linting: Following API Guidelines</title>
 			<part id="practices-linting-why">
 				<title>Why Linting?</title>
-				<slide id="quality-matters">
+				<slide id="practices-quality-matters">
 					<title>Does API Quality Matter?</title>
-					<img src="API-quality.webp" class="fullsize-shadow" />
+					<img src="API-quality.webp" class="fullsize-shadow-left" />
 				</slide>
-				<slide id="it-depends">
+				<slide id="practices-it-depends">
 					<title>It Depends!</title>
 					<ul>
 						<li>Quality is in the eye of the beholder</li>
@@ -698,15 +698,15 @@
 						</ul>
 					</ul>
 				</slide>
-				<slide id="linting-basics">
+				<slide id="practices-linting-basics">
 					<title>Linting Basics</title>
 					<img src="api-linting-basics.png" class="fullsize-left" />
 				</slide>
-				<slide id="linting-single">
+				<slide id="practices-linting-single">
 					<title>Linting Single APIs</title>
 					<img src="api-linting-single.png" class="fullsize-left" />
 				</slide>
-				<slide id="linting-multiple">
+				<slide id="practices-linting-multiple">
 					<title>Linting in API Landscapes</title>
 					<img src="api-linting-multiple.png" class="fullsize-left" />
 				</slide>
@@ -744,11 +744,11 @@
 					</ul>
 					<listing src="ruleset-tweaking-rules.yaml" />
 				</slide>
-				<slide id="tweaking-rules-example">
+				<slide id="practices-tweaking-rules-example">
 					<title>Tweaking Rules</title>
 					<img src="spectral-petstore-tweaking.png" title="Tweaking rule severity for the built-in Spectral ruleset for OAS" class="fullsize-left" />
 				</slide>
-				<slide id="first-rule">
+				<slide id="practices-first-rule">
 					<title>My First Rule</title>
 					<listing src="ruleset-info-contact.yaml" />
 					<ul>
@@ -757,7 +757,7 @@
 						<li>If a <code>given</code> part is found <code>then</code> functions are applied</li>
 					</ul>
 				</slide>
-				<slide id="third-party-rulesets">
+				<slide id="practices-third-party-rulesets">
 					<title>3rd Party Rulesets</title>
 					<ul>
 						<li>Rulesets that (try to) help with better API design</li>
@@ -765,7 +765,7 @@
 						<li>Rulesets that (try to) help with standards conformance</li>
 					</ul>
 				</slide>
-				<slide id="using-third-party-rulesets">
+				<slide id="practices-using-third-party-rulesets">
 					<title>Using 3rd Party Rulesets</title>
 					<img src="third-party-rulesets.png" href="https://github.com/stoplightio/spectral-rulesets" class="fullsize-left" />
 				</slide>
@@ -774,16 +774,21 @@
 		<part id="practices-mocking">
 			<title>Mocking: API First based on API Descriptions</title>
 			<part id="practices-mocking-why">
-				<title>Mocking: Why</title>
+				<title>Why Mocking?</title>
+				<slide id="practices-collaborative-design">
+					<title>Faster Feedback Cycles</title>
+					<img src="API-design-collaboration.png" class="fullsize-left" />
+				</slide>
 				<slide id="practices-mocking-use-cases">
 					<title>Use Cases for API Mocking</title>
 				</slide>
 			</part>
-			<part id="practices-mocking-what">
-				<title>Mocking: What</title>
-			</part>
-			<part id="practices-mocking-how">
-				<title>Mocking: How</title>
+			<part id="practices-mocking-prism">
+				<title>Mocking APIs with Prism</title>
+				<slide id="practices-minimal-prism">
+					<title>Minimal Prism</title>
+					<img src="prism-mock-server.png" title="Prism mock server and requests with CLI tool and browser" class="fullsize-left" />
+				</slide>
 			</part>
 		</part>
 		<part id="practices-openapi-ai">
