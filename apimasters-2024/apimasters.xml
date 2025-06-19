@@ -685,9 +685,13 @@
 				<title>Minimal OpenAPI in YAML</title>
 				<listing src="greet.yaml"/>
 			</slide>
-			<slide id="practices-swagger">
+			<slide id="practices-swagger-editor">
 				<title>Minimal OpenAPI in Editing Tool</title>
 				<img src="greet-swagger.png" href="https://editor-next.swagger.io/" class="fullsize-left"/>
+			</slide>
+			<slide id="practices-swagger-ui">
+				<title>From Editing to Documentation</title>
+				<img src="swagger-ui-petstore.png" href="https://petstore.swagger.io/" class="fullsize-left"/>
 			</slide>
 		</part>
 		<part id="practices-linting">
