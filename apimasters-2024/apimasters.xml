@@ -835,25 +835,39 @@
 			</part>
 		</part>
 		<part id="practices-openapi-ai">
-			<title>OpenAPI and AI: Emerging Patterns of OpenAPI Usage with LLMs</title>
-			<slide id="practices-ai-use-cases">
-				<title>Use Cases for Combining APIs with AI</title>
+			<title>OpenAPI and AI: Emerging Patterns of OpenAPI in an AI World</title>
+			<slide id="practices-ai-using-apis">
+				<title>When AIs Use APIs: Design for Agents</title>
+				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
 				<ul>
-					<li>Helping API design by using LLM tooling for text and images</li>
-					<li>Generative AI creating or updating OpenAPI specs from prompts</li>
-					<li>LLMs helping developers write better documentation and examples</li>
-					<li>Natural-language search across large API landscapes</li>
-					<li>Agents discovering and using APIs autonomously</li>
+					<li>AI agents need access to data and actions</li>
+					<li>APIs become the hands and eyes of intelligent clients</li>
+					<li>Descriptions must be clear, structured, and rich in intent</li>
+					<li>Use examples to show how endpoints behave in context</li>
+					<li>Extend OpenAPI to express workflow, prerequisites, and effects</li>
+					<li>Treat AI systems as first-class API consumers</li>
 				</ul>
 			</slide>
-			<slide id="practices-api-for-ai">
-				<title>AI-based APIs</title>
+			<slide id="practices-ai-transparency">
+				<title>When APIs Use AI: Transparency Matters</title>
+				<ul>
+					<li><em>Disclose AI usage:</em> Make clear when responses are powered by AI models</li>
+					<li><em>Clarify data handling:</em> Explain what data is collected, stored, or transformed</li>
+					<li><em>Declare training impact:</em> State if user data may be used to improve models</li>
+					<li><em>Specify data destinations:</em> Identify third-party services or jurisdictions involved</li>
+					<li><em>Expose model identity &amp; policies:</em> Let consumers know what models are used and under what terms</li>
+				</ul>
 			</slide>
-			<slide id="practices-apis-for-data">
-				<title>AI Access to Data</title>
-			</slide>
-			<slide id="practices-ai-using-apis">
-				<title>AI Using APIs</title>
+			<slide id="practices-ai-aided">
+				<title>When AI Improves API Practice</title>
+				<ul>
+					<li>AI tooling accelerates early design from use cases</li>
+					<li>Editors suggest patterns, detect issues, and guide structure</li>
+					<li>Linting evolves from rigid rules to smart style advice</li>
+					<li>Mocking becomes dynamic, simulating more realistic behavior</li>
+					<li>AI interprets natural language to shape API definitions</li>
+					<li>A new wave of tools expands what’s possible and practical</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="openapi-practices-conclusions>">
