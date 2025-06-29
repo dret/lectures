@@ -120,22 +120,25 @@
 				</table>
 			</slide>
 		</part>
-		<part id="openapi-ai">
-			<title>OpenAPI &amp; AI</title>
+		<part id="ai-and-apis">
+			<title>AI and APIs</title>
+			<slide id="api-days-new-york">
+				<title>How does AI affect APIs?</title>
+				<img src="apis-and-ai-new-york.jpg" href="https://www.youtube.com/watch?v=6ekEQR45IIo" title="How does AI affect APIs? Expert Opinions from API Days New York 2025" class="fullsize"/>
+			</slide>
+			<slide id="ai-and-apis-spectrum">
+				<title>AI and APIs Spectrum</title>
+				<img src="ai-and-apis.png" class="fullsize"/>
+			</slide>
+		</part>
+		<part id="apis-for-ai">
+			<title>APIs for AI</title>
 			<slide id="ai-extensions">
 				<title>OpenAPI Extensions for AI Consumers</title>
 				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
 				<ul>
 					<li>Specific API information to surface for AI tooling and/or AI consumers</li>
 					<li><em>Example:</em> What would help to generate better MCP servers?</li>
-				</ul>
-			</slide>
-			<slide id="apis-for-ai">
-				<title>OpenAPI Extensions for AI APIs</title>
-				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
-				<ul>
-					<li>Any information that relates to APIs using AI technologies</li>
-					<li><em>Example:</em> Where does data go and is it used for model training?</li>
 				</ul>
 			</slide>
 			<slide id="ai-maturity">
@@ -146,6 +149,20 @@
 					<li><em>Example:</em> API discovery; API granularity; API workflows</li>
 				</ul>
 			</slide>
+		</part>
+		<part id="ai-apis">
+			<title>AI-based APIs</title>
+			<slide id="apis-for-ai">
+				<title>OpenAPI Extensions for AI APIs</title>
+				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+				<ul>
+					<li>Any information that relates to APIs using AI technologies</li>
+					<li><em>Example:</em> Where does data go and is it used for model training?</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="ai-practices">
+			<title>AI Practices for APIs</title>
 			<slide id="ai-agent-maturity">
 				<title>OpenAPI AI Agent Maturity Levels</title>
 				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
