@@ -118,10 +118,17 @@
 			</slide>
 		</part>
 		<part id="apis-for-ai">
-			<title>APIs for AI</title>
+			<title>APIs for AI Consumers</title>
+			<slide id="robots-and-openapi">
+				<title>What AI Needs?</title>
+				<img src="robot-reading-openapi-menu.png" class="fullsize"/>
+			</slide>
+			<slide id="what-ai-wants">
+				<title>What </title>
+				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+			</slide>
 			<slide id="ai-extensions">
 				<title>OpenAPI Extensions for AI Consumers</title>
-				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
 				<ul>
 					<li>Specific API information to surface for AI tooling and/or AI consumers</li>
 					<li><em>Example:</em> What would help to generate better MCP servers?</li>
@@ -129,7 +136,6 @@
 			</slide>
 			<slide id="ai-maturity">
 				<title>OpenAPI AI Maturity Levels</title>
-				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
 				<ul>
 					<li>Assess the AI-readiness of your API landscape</li>
 					<li><em>Example:</em> API discovery; API granularity; API workflows</li>
@@ -140,7 +146,6 @@
 			<title>AI-based APIs</title>
 			<slide id="apis-for-ai">
 				<title>OpenAPI Extensions for AI APIs</title>
-				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
 				<ul>
 					<li>Any information that relates to APIs using AI technologies</li>
 					<li><em>Example:</em> Where does data go and is it used for model training?</li>
@@ -151,7 +156,6 @@
 			<title>AI Practices for APIs</title>
 			<slide id="ai-agent-maturity">
 				<title>OpenAPI AI Agent Maturity Levels</title>
-				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
 				<ul>
 					<li>Guidance on how to make API easily consumable for AI Agents</li>
 					<li><em>Example:</em> Are your APIs ready for automated agent onboarding?</li>
