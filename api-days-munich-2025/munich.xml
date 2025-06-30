@@ -44,11 +44,7 @@
 		</part>
 		<part id="openapi-user-stories">
 			<title>OpenAPI User Stories</title>
-			<slide id="wiifm">
-				<title><span title="What's in it for me?">WIIFM</span>: Everybody's Favorite Station</title>
-				<img src="wiifm.webp" title="WIIFM: What's in it for me?" class="fullsize"/>
-			</slide>
-			<slide id="wiifm-org-biz">
+			<slide id="openapi-user-story-org-biz">
 				<title>WIIFM: Business and Organization Value</title>
 				<img src="unbundling-the-enterprise.jpg" title='Stephen Fishman and Matt McLarty, "Unbundling the Enterprise: APIs, Optionality, and the Science of Happy Accidents", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<table cellspacing="20">
@@ -66,7 +62,7 @@
 					</tr>
 				</table>
 			</slide>
-			<slide id="wiifm-dev">
+			<slide id="openapi-user-story-dev">
 				<title>WIIFM: API Developers</title>
 				<img src="automating-api-delivery.jpg" title='Ikenna Nwaiwu, " Automating API Delivery: APIOps with OpenAPI", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<table cellspacing="20">
@@ -84,7 +80,7 @@
 					</tr>
 				</table>
 			</slide>
-			<slide id="wiifm-org-biz">
+			<slide id="openapi-user-story-org-biz">
 				<title>WIIFM: API Consumers</title>
 				<img src="design-and-build-great-web-apis.jpg" title='Mike Amundsen, "Design and Build Great Web APIs: Robust, Reliable, and Resilient", 2020' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<table cellspacing="20">
@@ -102,7 +98,7 @@
 					</tr>
 				</table>
 			</slide>
-			<slide id="wiifm-platform">
+			<slide id="openapi-user-story-platform">
 				<title>WIIFM: Platform People</title>
 				<img src="platform-strategy.jpg" title='Gregor Hohpe, "Platform Strategy: Innovation Through Harmonization", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<table cellspacing="20">
