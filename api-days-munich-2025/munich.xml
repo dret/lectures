@@ -123,6 +123,39 @@
 				<title>What AI Needs?</title>
 				<img src="robot-reading-openapi-menu.png" class="fullsize"/>
 			</slide>
+			<slide id="openapi-robust-foundation">
+				<title>OpenAPI: A Robust Foundation</title>
+				<table class="spaced">
+					<tr>
+						<th>Feature</th>
+						<th>Enables</th>
+					</tr>
+					<tr>
+						<td>Paths, operations, schemas</td>
+						<td>Machine-readable contract</td>
+					</tr>
+					<tr>
+						<td>Parameters &amp; examples</td>
+						<td>Additional interaction details</td>
+					</tr>
+					<tr>
+						<td>Tags &amp; grouping</td>
+						<td>Basic categorization</td>
+					</tr>
+					<tr>
+						<td>Security schemes</td>
+						<td>Authentication and authorization setup</td>
+					</tr>
+					<tr>
+						<td>External docs</td>
+						<td>Human-oriented documentation</td>
+					</tr>
+					<tr>
+						<td>Links</td>
+						<td>Basic flow hints (since OpenAPI 3.0)</td>
+					</tr>
+				</table>
+			</slide>
 			<slide id="what-ai-wants">
 				<title>What </title>
 				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
