@@ -125,6 +125,7 @@
 			</slide>
 			<slide id="openapi-robust-foundation">
 				<title>OpenAPI: A Robust Foundation</title>
+				<img src="openapi-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
 				<table class="spaced">
 					<tr>
 						<th>Feature</th>
@@ -157,14 +158,65 @@
 				</table>
 			</slide>
 			<slide id="what-ai-wants">
-				<title>What </title>
+				<title>What AI Needs</title>
 				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
-			</slide>
-			<slide id="ai-extensions">
-				<title>OpenAPI Extensions for AI Consumers</title>
 				<ul>
-					<li>Specific API information to surface for AI tooling and/or AI consumers</li>
-					<li><em>Example:</em> What would help to generate better MCP servers?</li>
+					<li>Intent &amp; purpose</li>
+					<li>Typical usage sequences</li>
+					<li>Side effect awareness</li>
+					<li>Outcome semantics</li>
+					<li>Selection &amp; ranking signals</li>
+				</ul>
+			</slide>
+			<slide id="openapi-robust-foundation">
+				<title>OpenAPI: A Robust Foundation</title>
+				<img src="arazzo-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<table class="spaced">
+					<tr>
+						<th>AI Consumer Need</th>
+						<th>OpenAPI Gap</th>
+					</tr>
+					<tr>
+						<td>Intent &amp; purpose</td>
+						<td>Why this API exists; goal or outcome it supports</td>
+					</tr>
+					<tr>
+						<td>Sequence &amp; flow</td>
+						<td>Full workflows, ordering, next-best-call</td>
+					</tr>
+					<tr>
+						<td>Side effects &amp; safety</td>
+						<td>Whether an operation is safe, idempotent, retryable</td>
+					</tr>
+					<tr>
+						<td>Semantic meaning</td>
+						<td>Business-level category, tags, or ontology references</td>
+					</tr>
+					<tr>
+						<td>Selection &amp; ranking</td>
+						<td>Signals for priority, deprecation, usage patterns</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="openapi-vs-layer-list">
+				<title>Extending OpenAPI or Layering?</title>
+				<ul>
+					<li><b>OpenAPI Extensions</b>
+						<ul>
+							<li>+ Compatible with existing OpenAPI tooling</li>
+							<li>+ Allows incremental enrichment without new stack</li>
+							<li>– Can become fragmented or inconsistent</li>
+							<li>– Limited expressiveness for intent and workflows</li>
+						</ul>
+					</li>
+					<li><b>Higher-Level Layer on Top</b>
+						<ul>
+							<li>+ Tailored to AI agent goals and interaction models</li>
+							<li>+ Enables richer representations: workflows, outcomes, priorities</li>
+							<li>– Requires new tooling or transformation logic</li>
+							<li>– Introduces more complexity and coordination effort</li>
+						</ul>
+					</li>
 				</ul>
 			</slide>
 			<slide id="ai-maturity">
