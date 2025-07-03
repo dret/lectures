@@ -170,7 +170,6 @@
 			</slide>
 			<slide id="openapi-robust-foundation">
 				<title>OpenAPI: A Robust Foundation</title>
-				<img src="arazzo-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
 				<table class="spaced">
 					<tr>
 						<th>AI Consumer Need</th>
@@ -200,6 +199,7 @@
 			</slide>
 			<slide id="openapi-vs-layer-list">
 				<title>Extending OpenAPI or Layering?</title>
+				<img src="arazzo-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
 					<li><b>OpenAPI Extensions</b>
 						<ul>
@@ -219,37 +219,63 @@
 					</li>
 				</ul>
 			</slide>
-			<slide id="ai-maturity">
-				<title>OpenAPI AI Maturity Levels</title>
+			<slide id="ai-readiness-self-check">
+				<title>AI Maturity Starts with Asking the Right Questions</title>
 				<ul>
-					<li>Assess the AI-readiness of your API landscape</li>
-					<li><em>Example:</em> API discovery; API granularity; API workflows</li>
+					<li>We don't yet have a standard for AI-ready API metadata</li>
+					<li>But teams can start assessing APIs today</li>
+					<li>Is the API's purpose clear?</li>
+					<li>Are typical usage flows documented?</li>
+					<li>Is behavior like retries or side effects explicit?</li>
+					<li>Can others understand and use it without extra help?</li>
+					<li>Even informal answers help shape future strategy</li>
+					<li>Be ready to re-assess and refactor</li>
 				</ul>
 			</slide>
 		</part>
 		<part id="ai-apis">
 			<title>AI-based APIs</title>
-			<slide id="apis-for-ai">
-				<title>OpenAPI Extensions for AI APIs</title>
+			<slide id="ai-api-consumer-perspective">
+				<title>What AI Consumers Might Want to Know</title>
 				<ul>
-					<li>Any information that relates to APIs using AI technologies</li>
-					<li><em>Example:</em> Where does data go and is it used for model training?</li>
+					<li>Does this API use AI at runtime?</li>
+					<li>Is the result deterministic or variable?</li>
+					<li>Which model is used and can I choose it?</li>
+					<li>Will my input be stored or used for training?</li>
+					<li>Can I influence or opt out of that behavior?</li>
 				</ul>
 			</slide>
-		</part>
-		<part id="ai-practices">
-			<title>AI Practices for APIs</title>
-			<slide id="ai-agent-maturity">
-				<title>OpenAPI AI Agent Maturity Levels</title>
+			<slide id="ai-api-extension-strategy">
+				<title>Toward a Shared Extension for AI Metadata</title>
 				<ul>
-					<li>Guidance on how to make API easily consumable for AI Agents</li>
-					<li><em>Example:</em> Are your APIs ready for automated agent onboarding?</li>
+					<li>Expose key AI characteristics through OpenAPI extensions</li>
+					<li>Examples: model used, input retention, override options</li>
+					<li>Avoid vendor lock-in by aligning on community patterns</li>
+					<li>Start simple — evolve format over time as consensus grows</li>
+				</ul>
+			</slide>
+			<slide id="ai-api-overlay-integration">
+				<title>Add Metadata Flexibly with OpenAPI Overlays</title>
+				<ul>
+					<li>Overlays let you patch OpenAPI docs without changing the base</li>
+					<li>Ideal for injecting runtime or environment-specific metadata</li>
+					<li>Enables layering AI disclosures per deployment or audience</li>
+					<li>Part of the OpenAPI Initiative — ready to be used today</li>
 				</ul>
 			</slide>
 		</part>
 		<part id="conclusions-oai-track">
 			<title>Conclusions</title>
-			<slide id="thanks-oai-track">
+			<slide id="openapi-initiative-call">
+				<title>Shaping the Future Together — via the OpenAPI Initiative</title>
+				<ul>
+					<li>We've talked about descriptions, transparency, and standards</li>
+					<li>The OpenAPI Initiative is where this work happens</li>
+					<li>Follow the OAI, contribute ideas, join the conversation</li>
+					<li>If this is strategic for you — consider becoming a member</li>
+					<li>More alignment means better tools, stronger APIs, and faster progress</li>
+				</ul>
+			</slide>			<slide id="thanks-oai-track">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
 				<ul>
