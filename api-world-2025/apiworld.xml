@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="oai-track" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="apiworld.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+		<div class="license">
+			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+		</div>
+	</license>
+	<toc name="toc.html">
+		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
+			<thead>
+				<tr>
+					<th valign="bottom">Date</th>
+					<th valign="bottom">Title</th>
+					<th valign="bottom">Slides</th>
+				</tr>
+			</thead>
+			<tbody>
+				<hotspot:for-each-presentation>
+					<tr class="vevent">
+						<td valign="top"><b><span class="title"><hotspot:date/></span></b></td>
+						<td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
+						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+					</tr>
+				</hotspot:for-each-presentation>
+			</tbody>
+		</table>
+	</toc>
+	<title><a href="https://apiworld.co/">API World</a> 2025</title>
+	<affiliation>Principal Consultant, <a href="https://innoq.com/">INNOQ</a></affiliation>
+	<copyright>2025 Erik Wilde</copyright>
+	<presentation id="openapi-summit">
+		<title short="OpenAPI Summit Welcome">OpenAPI Summit Welcome and OpenAPI in the Age of AI</title>
+		<toc class="abstract">APIs in general and their main description format OpenAPI have seen a lot of success since OpenAPI was created as Swagger in 2010 and became OpenAPI in 2016. What is the reason for its continued momentum and how does the landscape change with AI entering the picture? We look at APIs, OpenAPI and the way how AI plays a role in the API space. How can OpenAPI help you, how can the OpenAPI Initiative (OAI) help you using OpenAPI better, and how does AI influence the way how you design, develop, and deploy your APIs?</toc>
+		<date short="2025-09-03">September 3, 2025</date>
+		<part id="openapi-user-stories">
+			<title>OpenAPI User Stories</title>
+			<slide id="openapi-user-story-org-biz">
+				<title>WIIFM: Business and Organization Value</title>
+				<img src="unbundling-the-enterprise.jpg" title='Stephen Fishman and Matt McLarty, "Unbundling the Enterprise: APIs, Optionality, and the Science of Happy Accidents", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<table cellspacing="20">
+					<tr>
+						<th align="right" valign="top">As</th>
+						<td valign="top">business or organization leader</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">I want</th>
+						<td valign="top">well-defined and usable digital interfaces for partners and the public</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">so that</th>
+						<td valign="top">I can more easily change and scale my value streams.</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="openapi-user-story-dev">
+				<title>WIIFM: API Developers</title>
+				<img src="automating-api-delivery.jpg" title='Ikenna Nwaiwu, " Automating API Delivery: APIOps with OpenAPI", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<table cellspacing="20">
+					<tr>
+						<th align="right" valign="top">As</th>
+						<td valign="top">an API developer</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">I want</th>
+						<td valign="top">to describe the product I am going to implement</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">so that</th>
+						<td valign="top">I can use various tools throughout the API lifecycle.</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="openapi-user-story-org-biz">
+				<title>WIIFM: API Consumers</title>
+				<img src="design-and-build-great-web-apis.jpg" title='Mike Amundsen, "Design and Build Great Web APIs: Robust, Reliable, and Resilient", 2020' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<table cellspacing="20">
+					<tr>
+						<th align="right" valign="top">As</th>
+						<td valign="top">an API consumer</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">I want</th>
+						<td valign="top">APIs to have standardized descriptions</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">so that</th>
+						<td valign="top">I can easily understand and consume the products I am accessing.</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="openapi-user-story-platform">
+				<title>WIIFM: Platform People</title>
+				<img src="platform-strategy.jpg" title='Gregor Hohpe, "Platform Strategy: Innovation Through Harmonization", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<table cellspacing="20">
+					<tr>
+						<th align="right" valign="top">As</th>
+						<td valign="top">an API platform person</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">I want</th>
+						<td valign="top">to support standardized description formats</td>
+					</tr>
+					<tr>
+						<th align="right" valign="top">so that</th>
+						<td valign="top">all producers and consumers speak <q>the same language</q>.</td>
+					</tr>
+				</table>
+			</slide>
+		</part>
+		<part id="apis-for-ai">
+			<title>APIs for AI Consumers</title>
+			<slide id="robots-and-openapi">
+				<title>What AI Needs?</title>
+				<img src="robot-reading-openapi-menu.png" class="fullsize"/>
+			</slide>
+			<slide id="openapi-robust-foundation">
+				<title>OpenAPI: A Robust Foundation</title>
+				<img src="openapi-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<table class="spaced">
+					<tr>
+						<th>Feature</th>
+						<th>Enables</th>
+					</tr>
+					<tr>
+						<td>Paths, operations, schemas</td>
+						<td>Machine-readable contract</td>
+					</tr>
+					<tr>
+						<td>Parameters &amp; examples</td>
+						<td>Additional interaction details</td>
+					</tr>
+					<tr>
+						<td>Tags &amp; grouping</td>
+						<td>Basic categorization</td>
+					</tr>
+					<tr>
+						<td>Security schemes</td>
+						<td>Authentication and authorization setup</td>
+					</tr>
+					<tr>
+						<td>External docs</td>
+						<td>Human-oriented documentation</td>
+					</tr>
+					<tr>
+						<td>Links</td>
+						<td>Basic flow hints (since OpenAPI 3.0)</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="what-ai-wants">
+				<title>What AI Needs</title>
+				<img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+				<ul>
+					<li>Intent &amp; purpose</li>
+					<li>Typical usage sequences</li>
+					<li>Side effect awareness</li>
+					<li>Outcome semantics</li>
+					<li>Selection &amp; ranking signals</li>
+				</ul>
+			</slide>
+			<slide id="openapi-ai-gaps">
+				<title>AI Gaps of OpenAPI</title>
+				<table class="spaced">
+					<tr>
+						<th>AI Consumer Need</th>
+						<th>OpenAPI Gap</th>
+					</tr>
+					<tr>
+						<td>Intent &amp; purpose</td>
+						<td>Why this API exists; goal or outcome it supports</td>
+					</tr>
+					<tr>
+						<td>Sequence &amp; flow</td>
+						<td>Full workflows, ordering, next-best-call</td>
+					</tr>
+					<tr>
+						<td>Side effects &amp; safety</td>
+						<td>Whether an operation is safe, idempotent, retryable</td>
+					</tr>
+					<tr>
+						<td>Semantic meaning</td>
+						<td>Business-level category, tags, or ontology references</td>
+					</tr>
+					<tr>
+						<td>Selection &amp; ranking</td>
+						<td>Signals for priority, deprecation, usage patterns</td>
+					</tr>
+				</table>
+			</slide>
+			<slide id="openapi-vs-layer-list">
+				<title>Extending OpenAPI or Layering?</title>
+				<img src="arazzo-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li><b>OpenAPI Extensions</b>
+						<ul>
+							<li>+ Compatible with existing OpenAPI tooling</li>
+							<li>+ Allows incremental enrichment without new stack</li>
+							<li>– Can become fragmented or inconsistent</li>
+							<li>– Limited expressiveness for intent and workflows</li>
+						</ul>
+					</li>
+					<li><b>Higher-Level Layer on Top</b>
+						<ul>
+							<li>+ Tailored to AI agent goals and interaction models</li>
+							<li>+ Enables richer representations: workflows, outcomes, priorities</li>
+							<li>– Requires new tooling or transformation logic</li>
+							<li>– Introduces more complexity and coordination effort</li>
+						</ul>
+					</li>
+				</ul>
+			</slide>
+			<slide id="ai-readiness-self-check">
+				<title>AI Maturity Starts with Asking the Right Questions</title>
+				<ul>
+					<li>We don't yet have a standard for AI-ready API metadata</li>
+					<li>But teams can start assessing APIs today</li>
+					<ul>
+						<li>Is the API's purpose clear?</li>
+						<li>Are typical usage flows documented?</li>
+						<li>Is behavior like retries or side effects explicit?</li>
+						<li>Can others understand and use it without extra help?</li>
+					</ul>
+					<li>Even informal answers help shape future strategy</li>
+					<li>Be ready to re-assess and refactor</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="ai-apis">
+			<title>AI-based APIs</title>
+			<slide id="ai-api-consumer-perspective">
+				<title>What AI Consumers Might Want to Know</title>
+				<ul>
+					<li>Does this API use AI at runtime?</li>
+					<li>Is the result deterministic or variable?</li>
+					<li>Which model is used and can I choose it?</li>
+					<li>Will my input be stored or used for training?</li>
+					<li>Can I influence or opt out of that behavior?</li>
+				</ul>
+			</slide>
+			<slide id="ai-api-extension-strategy">
+				<title>Toward a Shared Extension for AI Metadata</title>
+				<ul>
+					<li>Expose key AI characteristics through OpenAPI extensions</li>
+					<li>Examples: model used, input retention, override options</li>
+					<li>Avoid vendor lock-in by aligning on community patterns</li>
+					<li>Start simple — evolve format over time as consensus grows</li>
+				</ul>
+			</slide>
+			<slide id="ai-api-overlay-integration">
+				<title>Add Metadata Flexibly with OpenAPI Overlays</title>
+				<ul>
+					<li>Overlays let you patch OpenAPI docs without changing the base</li>
+					<li>Ideal for injecting runtime or environment-specific metadata</li>
+					<li>Enables layering AI disclosures per deployment or audience</li>
+					<li>Part of the OpenAPI Initiative — ready to be used today</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="conclusions-oai-track">
+			<title>Conclusions</title>
+			<slide id="openapi-initiative-call">
+				<img src="OAI-logo.png" href="https://www.openapis.org/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+				<title>Shaping the Future Together — via the OpenAPI Initiative</title>
+				<ul>
+					<li>We've talked about descriptions, transparency, and standards</li>
+					<li>The OpenAPI Initiative is where this work happens</li>
+					<li>Follow the OAI, contribute ideas, join the conversation</li>
+					<li>If this is strategic for you — consider <a href="https://www.openapis.org/membershipmembers">becoming a member</a></li>
+					<li>More alignment means better tools, stronger APIs, and faster progress</li>
+				</ul>
+			</slide>			<slide id="thanks-oai-track">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/api-world-2025/"><code>dret.net/lectures/api-world-2025/</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
