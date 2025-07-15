@@ -8,21 +8,21 @@ APIs are central to modern software ecosystems, but practical challenges — suc
 
 The workshop is structured into four interactive blocks:
 
-1. **Understanding APIs and OpenAPI Basics**
+1. Understanding APIs and OpenAPI Basics
    - Introduction to APIs and their strategic and technical value.
    - Writing your first OpenAPI description.
    - Validating and visualizing API descriptions.
 
-2. **Ensuring Quality and Consistency with Spectral**
+2. Ensuring Quality and Consistency with Spectral
    - Introduction to API governance and common design pitfalls.
    - Defining and applying Spectral rules to enforce API quality.
    - Practical exercises in linting and improving API descriptions.
 
-3. **Customizing API Descriptions with Overlays**
+3. Customizing API Descriptions with Overlays
    - Quick overview of Overlays: tailoring API descriptions for multiple use-cases.
    - Hands-on examples: using overlays for different deployment contexts.
 
-4. **Documenting and Automating API Workflows with Arazzo**
+4. Documenting and Automating API Workflows with Arazzo
    - Importance of clear API documentation and workflow automation.
    - Hands-on with Arazzo to define and automate API-driven workflows.
 
@@ -31,7 +31,7 @@ The workshop is structured into four interactive blocks:
 
 The workshop is ideal for anyone involved in API strategy, design, implementation, or management — including developers, API architects, and API product managers. While deep programming skills aren't necessary, participants should feel comfortable exploring structured API descriptions, learning tooling basics, and engaging in hands-on activities.
 
-**Technical Requirements:**
+Technical Requirements:
 
 - Participants should bring their own laptop.
 - No specific pre-installed software required; online environments and tools will be provided.
