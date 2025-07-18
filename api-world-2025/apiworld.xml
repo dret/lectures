@@ -44,13 +44,14 @@
 		</table>
 	</toc>
 	<title><a href="https://apiworld.co/">API World</a> 2025</title>
+	<author>Erik Wilde</author>
 	<affiliation>Principal Consultant, <a href="https://innoq.com/">INNOQ</a></affiliation>
+	<date short="2025-09-03">September 3, 2025</date>
 	<copyright>2025 Erik Wilde</copyright>
 	<presentation id="workshop-introduction">
 		<title>Workshop Introduction</title>
 		<author>Frank Kilcommins / Erik Wilde</author>
 		<affiliation><a href="http://smartbear.com/">SmartBear</a> / <a href="https://www.innoq.com/">INNOQ</a></affiliation>
-		<date short="2025-09-03">September 3, 2025</date>
 		<copyright>2025 Frank Kilcommins &amp; Erik Wilde</copyright>
 		<part id="trainers">
 			<title>Your Trainers</title>
@@ -78,6 +79,36 @@
 						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/1CwUlDPqz2c" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 					</div>
 				</div>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="workshop-api-openapi">
+		<title short="Introduction to APIs and OpenAPI">API Management in Practice: Introduction to APIs and OpenAPI</title>
+		<part id="conclusions-workshop-api-openapi">
+			<title>Conclusions: Introduction to APIs and OpenAPI</title>
+			<slide id="thanks-workshop-api-openapi">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/api-world-2025/"><code>dret.net/lectures/api-world-2025/</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="workshop-design-linting">
+		<title short="API Design and OpenAPI Linting">API Management in Practice: API Design and OpenAPI Linting</title>
+		<part id="conclusions-workshop-api-openapi">
+			<title>Conclusions: Introduction to APIs and OpenAPI</title>
+			<slide id="thanks-workshop-api-openapi">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/api-world-2025/"><code>dret.net/lectures/api-world-2025/</code></a></li>
+				</ul>
 			</slide>
 		</part>
 	</presentation>
