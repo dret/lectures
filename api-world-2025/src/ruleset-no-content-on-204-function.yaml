@@ -1,0 +1,11 @@
+extends:
+  - spectral:oas
+functions:
+  - ./no-content-on-204
+rules:
+  no-content-on-204:
+    description: "Responses with status code 204 must not contain a content property"
+    severity: error
+    given: "$.paths.*.*.responses.204"
+    then:
+      function: no-content-on-204

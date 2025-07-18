@@ -207,7 +207,189 @@
 	</presentation>
 	<presentation id="workshop-design-linting">
 		<title short="API Design and OpenAPI Linting">API Management in Practice: API Design and OpenAPI Linting</title>
-		<part id="conclusions-workshop-api-openapi">
+		<part id="linting">
+			<title>Why Linting?</title>
+			<slide id="quality-matters">
+				<title>Does API Quality Matter?</title>
+				<img src="API-quality.webp" class="fullsize-shadow" />
+			</slide>
+			<slide id="it-depends">
+				<title>It Depends!</title>
+				<ul>
+					<li>Quality is in the eye of the consumer</li>
+					<li>Quality is determined by a number of factors</li>
+					<ul>
+						<li><em>Consumer profile:</em> Private, partner, public</li>
+						<li><em>Number of consumers:</em> One, dozens, thousands</li>
+						<li><em>Context:</em> Solitary or part of an API landscape</li>
+						<li><em>Exposed Service:</em> Data, Transaction, Events</li>
+						<li><em>Lifecycle:</em> early, stable, established</li>
+						<li><em>Tooling:</em> Support for certain features</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="linting-basics">
+				<title>Linting Basics</title>
+				<img src="api-linting-basics.png" class="fullsize" />
+			</slide>
+			<slide id="linting-single">
+				<title>Linting Single APIs</title>
+				<img src="api-linting-single.png" class="fullsize" />
+			</slide>
+			<slide id="linting-multiple">
+				<title>Linting in API Landscapes</title>
+				<img src="api-linting-multiple.png" class="fullsize" />
+			</slide>
+		</part>
+		<part id="level-1">
+			<title>Using and Tweaking Rules</title>
+			<slide id="minimal-spectral">
+				<title>Minimal Spectral</title>
+				<img src="spectral-petstore-builtin.png" title="Spectral linting the petstore example against the built-in ruleset for OAS" class="fullsize" />
+			</slide>
+			<slide id="tweaking-rules">
+				<title>No Onions and Extra Cheese, Please!</title>
+				<ul>
+					<li>Spectral has a large set of <a href="https://docs.stoplight.io/docs/spectral/4dec24461f3af-open-api-rules">built-in rules for OpenAPI</a></li>
+					<ul>
+						<li>Spectral also has built-in rules for <a href="https://docs.stoplight.io/docs/spectral/1e63ffd0220f3-async-api-rules">AsyncAPI</a> and <a href="https://docs.stoplight.io/docs/spectral/96c7245b504b1-arazzo-rules">Arazzo</a></li>
+					</ul>
+					<li>Rules in rulesets can be <a href="https://docs.stoplight.io/docs/spectral/83527ef2dd8c0-extending-rulesets#change-rule-severity">selectively tweaked or turned <code>off</code></a></li>
+				</ul>
+				<listing src="ruleset-tweaking-rules.yaml" />
+			</slide>
+			<slide id="tweaking-rules-example">
+				<title>Tweaking Rules</title>
+				<img src="spectral-petstore-tweaking.png" title="Tweaking rule severity for the built-in Spectral ruleset for OAS" class="fullsize" />
+			</slide>
+			<slide id="third-party-rulesets">
+				<title>3rd Party Rulesets</title>
+				<ul>
+					<li>Rulesets that (try to) help with better API design</li>
+					<li>Rulesets that (try to) help with better API description</li>
+					<li>Rulesets that (try to) help with standards conformance</li>
+				</ul>
+			</slide>
+			<slide id="using-third-party-rulesets">
+				<title>Using 3rd Party Rulesets</title>
+				<img src="third-party-rulesets.png" href="https://github.com/stoplightio/spectral-rulesets" class="fullsize" />
+			</slide>
+		</part>
+		<part id="level-2">
+			<title>Custom Rulesets and Functions</title>
+			<slide id="first-rule">
+				<title>My First Rule</title>
+				<listing src="ruleset-info-contact.yaml" />
+				<ul>
+					<li>Rules have identifiers</li>
+					<li>Rules are applied to parts <code>given</code> with a JSONPath</li>
+					<li>If a given part is found <code>then</code> functions are applied</li>
+				</ul>
+			</slide>
+			<slide id="jsonpath-demo">
+				<title>JSONPath Online Evaluator</title>
+				<img src="jsonpath-demo.png" href="http://jsonpath.com/" class="fullsize" />
+			</slide>
+			<slide id="jsonpath-basics">
+				<title>JSONPath Basics</title>
+				<ul>
+					<li><code>$</code>: The root object/element</li>
+					<li><code>@</code>: The current object/element</li>
+					<li><code>.</code>: Dot-notation to access properties</li>
+					<li><code>[]</code>: Bracket-notation to access array elements</li>
+				</ul>
+			</slide>
+			<slide id="rule">
+				<title>The Anatomy of a Rule</title>
+				<ul>
+					<li><code>given</code> (required): The part of the document the rule should be applied to (JSONPath)</li>
+					<li><code>then</code> (required): Describes which function should be applied to the <code>given</code> part of the document</li>
+					<li><code>description</code> (optional): A short description of the rule</li>
+					<li><code>message</code> (optional): A message that's displayed in the <code>spectral lint</code> output</li>
+					<li><code>severity</code> (optional): The severity of the rule</li>
+					<li><code>formats</code> (optional): The format that the rule should apply to</li>
+					<li><code>recommended</code> (optional): Users can enforce all rules or only recommended rules</li>
+					<li><code>resolved</code> (optional): Used to apply a rule to a document that's not resolved</li>
+				</ul>
+			</slide>
+			<slide id="no-content-on-204">
+				<title>Linting 204 Responses</title>
+				<ul>
+					<li><code>204</code> responses should never carry content</li>
+				</ul>
+				<listing src="petstore-content-on-204.oas.yaml" line="76-88" />
+			</slide>
+			<slide id="no-content-on-204-rule">
+				<title>Linting 204 Responses with a Rule</title>
+				<listing src="ruleset-no-content-on-204.yaml" />
+			</slide>
+			<slide id="no-content-on-204-function">
+				<title>Linting 204 Responses with a Function</title>
+				<ul>
+					<li>Spectral rules span across rules and functions</li>
+				</ul>
+				<listing src="ruleset-no-content-on-204-function.yaml" />
+				<listing src="no-content-on-204.js" />
+			</slide>
+			<slide id="testing">
+				<title>Testing Rules</title>
+				<ul>
+					<li>Testing rules helps with making sure they work as expected</li>
+					<li>Creating minimal example helps with better understanding the tests</li>
+					<li>Work your way down from a minimal OpenAPI for creating tests</li>
+				</ul>
+				<listing src="minimal-openapi.yaml" />
+			</slide>
+			<slide id="aliases">
+				<title>Reusing JSONPath: Aliases</title>
+				<listing src="aliases.yaml" href="https://docs.stoplight.io/docs/spectral/584e5106451d2-aliases" />
+			</slide>
+		</part>
+		<part id="level-3">
+			<title>Rulesets for API Governance</title>
+			<slide id="guidelines">
+				<title>API Guidelines</title>
+				<img src="api-signpost.webp" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li>Depending on intended consumer groups (private/partner/public)</li>
+					<li>Depending on solitary or landscape APIs</li>
+					<li>Depending on API lifecycle stage</li>
+					<li>Depending on sensitivity for specific tooling</li>
+				</ul>
+			</slide>
+			<slide id="in-the-wild">
+				<title>API Guidelines in the Wild</title>
+				<img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" class="fullsize"/>
+			</slide>
+			<slide id="zalando">
+				<title>API Guideline in the Wild</title>
+				<img href="https://opensource.zalando.com/restful-api-guidelines/#http-status-codes-and-errors" title="Zalando RESTful API and Event Guidelines" src="zalando-guideline-http-problem.png" class="fullsize"/>
+			</slide>
+		</part>
+		<part id="level-4">
+			<title>Automating Spectral</title>
+			<slide id="spectral-usage-patterns">
+				<title>Spectral Usage Patterns</title>
+				<ul>
+					<li>CLI can be used to manually check (early) designs</li>
+					<li>Integrate Spectral into the IDE of your choice</li>
+					<li><link href="git-hook">Git hooks</link> allow API linting to avoid committing problematic files</li>
+					<li><link href="github-action">GitHub actions</link> can reject pull requests containing problematic files</li>
+				</ul>
+			</slide>
+			<slide id="git-hook">
+				<title>Git Hook: <code>.git/hooks/</code></title>
+				<listing src="pre-commit.sh" />
+			</slide>
+			<slide id="github-action">
+				<title>GitHub Action: <code>.github/workflows</code></title>
+				<img src="github-action-pr.png" href="https://github.com/dret/spectral-devweek-2025/actions" class="fullsize-shadow"/>
+			</slide>
+			<slide id="github-action-workflow">
+				<title>GitHub Action Workflow</title>
+				<listing src="workflow-spectral.yaml" />
+			</slide>
+		</part>		<part id="conclusions-workshop-api-openapi">
 			<title>Conclusions: Introduction to APIs and OpenAPI</title>
 			<slide id="thanks-workshop-api-openapi">
 				<title>Thank You!</title>
