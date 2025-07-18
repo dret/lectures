@@ -46,10 +46,63 @@
 	<title><a href="https://apiworld.co/">API World</a> 2025</title>
 	<affiliation>Principal Consultant, <a href="https://innoq.com/">INNOQ</a></affiliation>
 	<copyright>2025 Erik Wilde</copyright>
+	<presentation id="workshop-introduction">
+		<title>Workshop Introduction</title>
+		<author>Frank Kilcommins / Erik Wilde</author>
+		<affiliation><a href="http://smartbear.com/">SmartBear</a> / <a href="https://www.innoq.com/">INNOQ</a></affiliation>
+		<date short="2025-09-03">September 3, 2025</date>
+		<copyright>2025 Mike Amundsen &amp; Erik Wilde</copyright>
+		<part id="trainers">
+			<title>Your Trainers</title>
+			<slide id="cam2">
+				<title>Continuous API Management</title>
+				<img src="CAM2-cover.png" href="https://www.oreilly.com/library/view/continuous-api-management/9781098103514/" title="Continuous API Management, 2nd Edition, October 2021" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><q>Continuous API Management: Making the Right Decisions in an Evolving Landscape</q></li>
+					<ul>
+						<li><a href="https://www.oreilly.com/library/view/continuous-api-management/9781098103514/">O'Reilly book page</a></li>
+						<li><a href="https://www.amazon.com/Continuous-API-Management-Mehdi-Medjaoui-ebook/dp/B09M7J9FRH">Amazon book page</a></li>
+					</ul>
+					<li>Second edition 2021 (First edition 2019)</li>
+					<ul>
+						<li>Mehdi Medjaoui</li>
+						<li>Erik Wilde</li>
+						<li>Ronnie Mitra</li>
+						<li>Mike Amundsen</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="frank">
+				<title>Frank Kilcommins</title>
+			</slide>
+			<slide id="dret">
+				<title>Erik Wilde</title>
+				<img src="INNOQ-logo.png" title="INNOQ" href="https://www.innoq.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+				<img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>CA API Academy 2016-2019</li>
+					<li>Axway Catalyst 2019-2023</li>
+					<li>Principal Consultant at <a href="https://www.innoq.com/">INNOQ</a></li>
+					<li>OAI Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative</a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+				</ul>
+			</slide>
+			<slide id="getting-apis-to-work">
+				<title>Getting APIs to Work</title>
+				<img src="youtube-erik-wilde.jpg" title="Erik Wilde on YouTube: Getting APIs to Work" href="https://www.youtube.com/ErikWilde" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<div style=" float : left ; width : 50% ; margin : 0% 4% 0% 2% ; ">
+					<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/1CwUlDPqz2c" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+					</div>
+				</div>
+			</slide>
+		</part>
+	</presentation>
 	<presentation id="openapi-summit">
 		<title short="OpenAPI Summit Welcome">OpenAPI Summit Welcome and OpenAPI in the Age of AI</title>
 		<toc class="abstract">APIs in general and their main description format OpenAPI have seen a lot of success since OpenAPI was created as Swagger in 2010 and became OpenAPI in 2016. What is the reason for its continued momentum and how does the landscape change with AI entering the picture? We look at APIs, OpenAPI and the way how AI plays a role in the API space. How can OpenAPI help you, how can the OpenAPI Initiative (OAI) help you using OpenAPI better, and how does AI influence the way how you design, develop, and deploy your APIs?</toc>
-		<date short="2025-09-03">September 3, 2025</date>
+		<date short="2025-09-04">September 4, 2025</date>
 		<part id="openapi-user-stories">
 			<title>OpenAPI User Stories</title>
 			<slide id="openapi-user-story-org-biz">
