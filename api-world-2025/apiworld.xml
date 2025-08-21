@@ -51,12 +51,21 @@
 	<presentation id="workshop-introduction">
 		<title short="Workshop Introduction">API Management in Practice: Workshop Introduction</title>
 		<author>Frank Kilcommins / Erik Wilde</author>
-		<affiliation><a href="http://smartbear.com/">SmartBear</a> / <a href="https://www.innoq.com/">INNOQ</a></affiliation>
+		<affiliation><a href="https://www.smartbear.com/">SmartBear</a> / <a href="https://www.innoq.com/">INNOQ</a></affiliation>
 		<copyright>2025 Frank Kilcommins &amp; Erik Wilde</copyright>
 		<part id="trainers">
 			<title>Your Trainers</title>
 			<slide id="frank">
 				<title>Frank Kilcommins</title>
+				<img src="SmartBear-logo.png" title="SmartBear" href="https://www.smartbear.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+				<img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Principal API Technical Evangelist at <a href="https://www.smartbear.com/">SmartBear</a></li>
+					<li>Governance Board Member at the <a href="https://www.openapis.org/">OpenAPI Initiative</a></li>
+					<li>Co-Maintainer of the <a href="https://spec.openapis.org/arazzo/latest.html">Arazzo Specification</a></li>
+					<li><a href="https://www.linkedin.com/in/frank-kilcommins"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/frank-kilcommins</code></a></li>
+					<li><a href="https://bsky.app/profile/fkilcommins.bsky.social"><img src="bluesky-logo.jpeg" style=" height : 1em ; "/> <code>@fkilcommins.bsky.social</code></a></li>
+				</ul>				
 			</slide>
 			<slide id="dret">
 				<title>Erik Wilde</title>
@@ -83,7 +92,7 @@
 		</part>
 	</presentation>
 	<presentation id="workshop-api-openapi">
-		<title short="Introduction to APIs and OpenAPI">API Management in Practice: Introduction to APIs and OpenAPI</title>
+		<title short="Introduction to APIs and OpenAPI">API Management in Practice: Introduction to APIs and OpenAPI</title>		
 		<part id="value-description-formats">
 			<title>What are API Description Formats</title>
 			<slide id="api-descriptions-services">
@@ -202,6 +211,175 @@
 					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
 					<li>Slides online: <a href="http://dret.net/lectures/api-world-2025/"><code>dret.net/lectures/api-world-2025/</code></a></li>
 				</ul>
+			</slide>
+		</part>
+	</presentation>
+	<presentation id="workshop-api-requirements-example-mapping">
+		<title short="API Requirements and Example Mapping">API Management in Practice: Capturing API Requirements using Example Mapping</title>
+		<author>Frank Kilcommins</author>
+		<affiliation><a href="https://www.smartbear.com/">SmartBear</a></affiliation>
+		<copyright>2025 Frank Kilcommins</copyright>
+		<part id="practical-api-governance">
+			<title>Practical API Governance</title>
+			<slide id="two-questions">
+				<title>Just Answer 2 Questions</title>
+				<ul>
+					<li>Are we building the <em>right API?</em></li>
+					<li>Are we building the <em>API right?</em></li>
+				</ul>
+			</slide>			
+		</part>
+		<part id="api-requirements">
+			<title>Where are the API Requirements?</title>
+			<slide id="api-requirements-bite">
+				<title>Nasty Surprise!</title>
+				<img src="api-requirements-johnny.jpg" class="fullsize-shadow" />
+			</slide>
+			<slide id="api-requirements-1">
+				<title>Where are the API requirements?</title>
+				<img src="requirements-1.png" class="fullsize"/>
+			</slide>
+			<slide id="api-requirements-2">
+				<title>Where are the API requirements?</title>
+				<img src="requirements-2.png" class="fullsize"/>
+			</slide>
+			<slide id="api-requirements-3">
+				<title>Where are the API requirements?</title>
+				<img src="requirements-3.png" class="fullsize"/>
+			</slide>
+			<slide id="api-requirements-4">
+				<title>Where are the API requirements?</title>
+				<img src="requirements-4.png" class="fullsize"/>
+			</slide>												
+		</part>
+		<part id="bdd-for-apis">
+			<title>Behavior-Driven Development for API Delivery</title>
+			<slide id="bdd-workflow">
+				<title>Behaviour-Driven Development (BDD) Workflow</title>
+				<img src="BDD-Workflow.png" class="fullsize" />
+			</slide>
+			<slide id="power-of-specs">
+				<title>Rich Ecosystem of API Specifications</title>
+				<img src="milt-bryce-quote.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="bdd-workflow-augmented">
+				<title>BDD for API Delivery <em>with API Specifications</em></title>
+				<img src="BDD-Workflow-augmented.png" class="fullsize" />
+			</slide>
+			<slide id="specification-affordances">
+				<title>The Power of API Specifications</title>
+				<img src="specification-affordances.png" class="fullsize" />
+			</slide>										
+		</part>
+		<part id="example-mapping">
+			<title>Example Mapping</title>
+			<slide id="example-mapping">
+				<title>Example Mapping for Deliberate Discovery</title>
+				<img src="discovery.png" title="Deliberate discovery" style="float: right ; height: 50%; ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Effectively explore and refine detailed acceptance criteria, so that:</li>
+					<ul>
+						<li><em>Agreed</em> scope</li>
+						<li><em>Identified</em> as much <em>uncertainty</em> as possible</li>
+						<li><em>Agreed</em> on the <em>readiness</em> for design/development</li>
+						<li>Identified <em>concrete examples</em></li>
+					</ul>
+				</ul>
+
+			</slide>
+			<slide id="example-mapping-unknown-to-known">
+				<title>Example Mapping for Deliberate Discovery</title>
+				<ul>
+					<li>Effectively explore and refine detailed acceptance criteria, so that:</li>
+					<ul>
+						<li><em>Agreed</em> scope</li>
+						<li><em>Identified</em> as much <em>uncertainty</em> as possible</li>
+						<li><em>Agreed</em> on the <em>readiness</em> for design/development</li>
+						<li>Identified <em>concrete examples</em></li>
+					</ul>
+				</ul>
+				<img src="unknown-to-known.png" title="Deliberate discovery" style="float: bottom ; width : 50% ; margin : 10% 4% 4% 4% ; "/>
+			</slide>
+			<slide id="example-mapping-prerequisites">
+				<title>What do you need for Example Mapping?</title>
+				<img src="example-mapping-cards.png" class="fullsize" />
+			</slide>
+			<slide id="three-amigos">
+				<title>Who Should Participate?</title>
+				<img src="3-amigos.png" class="fullsize" />
+			</slide>	
+			<slide id="three-amigos-extended">
+				<title>Who Should Participate for API User Stories?</title>
+				<img src="3-amigos-with-smes.png" class="fullsize" />
+			</slide>													
+		</part>
+		<part id="example-mapping-demo">
+			<title>Example Mapping in Action</title>
+			<slide id="petco-problem">
+				<title>Example Mapping in Action</title>
+				<img src="petco-problem.png" class="fullsize" />
+			</slide>
+			<slide id="petco-problem-user-story">
+				<title>Example Mapping in Action - Search for Pets</title>
+				<img src="petco-problem-userstory.png" class="fullsize" />
+			</slide>
+			<slide id="search-for-pets-1">
+				<title>Example Mapping: Search for Pets</title>
+				<img src="example-mapping-1.png" class="fullsize" />
+			</slide>						
+			<slide id="search-for-pets-2">
+				<title>Example Mapping: Search for Pets</title>
+				<img src="example-mapping-2.png" class="fullsize" />
+			</slide>	
+			<slide id="search-for-pets-3">
+				<title>Example Mapping: Search for Pets</title>
+				<img src="example-mapping-3.png" class="fullsize" />
+			</slide>	
+			<slide id="search-for-pets-4">
+				<title>Example Mapping: Search for Pets</title>
+				<img src="example-mapping-4.png" class="fullsize" />
+			</slide>	
+			<slide id="search-for-pets-5">
+				<title>Example Mapping: Search for Pets</title>
+				<img src="example-mapping-5.png" class="fullsize" />
+			</slide>	
+			<slide id="search-for-pets-6">
+				<title>Example Mapping: Search for Pets</title>
+				<img src="example-mapping-6.png" class="fullsize" />
+			</slide>	
+			<slide id="search-for-pets-7">
+				<title>Example Mapping: Search for Pets</title>
+				<img src="example-mapping-7.png" class="fullsize" />
+			</slide>	
+			<slide id="search-for-pets-8">
+				<title>Example Mapping: Search for Pets</title>
+				<img src="example-mapping-8.png" class="fullsize" />
+			</slide>																						
+			<slide id="search-for-pets-9">
+				<title>Example Mapping: Search for Pets</title>
+				<img src="example-mapping-9.png" class="fullsize" />
+			</slide>		
+			<slide id="add-new-pet">
+				<title>Example Mapping: Add New Pet</title>
+				<img src="add-new-pet.png" class="fullsize" />
+			</slide>		
+			<slide id="adopt-a-pet">
+				<title>Example Mapping: Adopt Pet</title>
+				<img src="adopt-pet.png" class="fullsize" />
+			</slide>		
+			<slide id="adopt-a-pet">
+				<title>Example Mapping: Get Adoptions List</title>
+				<img src="get-adoptions.png" class="fullsize" />
+			</slide>									
+		</part>
+		<part id="exercise-1-get-pet-details">
+			<title>Exercise 1: Example Mapping</title>
+			<slide id="get-pet-details">
+				<title>Exercise 1: Example Mapping for Retrieve Pet Details</title>
+				<ul>
+					<li>Given the following user story, have an Example Mapping session!</li>
+				</ul>				
+				<img src="get-pet-details.png" class="fullsize" />
 			</slide>
 		</part>
 	</presentation>
