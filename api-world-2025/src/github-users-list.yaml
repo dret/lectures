@@ -1,0 +1,18 @@
+paths:
+  "/users":
+    get:
+      summary: List users
+      operationId: users/list
+      parameters:
+        - name: since
+          description: A user ID. Only return users with an ID greater than this ID.
+          in: query
+          required: false
+          schema:
+            type: integer
+        - name: per_page
+          description: The number of results per page (max 100).
+          in: query
+          schema:
+            type: integer
+            default: 30

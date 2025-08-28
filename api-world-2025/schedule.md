@@ -10,7 +10,7 @@
 
 ## 2:00-3:50: Part II
 
-- 2.00-2.30: Introduction to OpenAPI: http://dret.net/lectures/api-world-2025/workshop-openapi
+- 2.00-2.30: Introduction to OpenAPI: http://dret.net/lectures/api-world-2025/workshop-openapi-introduction
 - 2.30-3.00: The Art of Good API Documentation: http://dret.net/lectures/api-world-2025/workshop-api-documentation
 - 3.00-3.30: Exercise 2: https://github.com/dret/api-world-workshop-santa-clara-2025
 - 3.30-3.50: API Design and OpenAPI Linting: http://dret.net/lectures/api-world-2025/workshop-design-linting

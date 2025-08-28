@@ -382,6 +382,235 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="workshop-openapi-introduction">
+		<title short="Introduction to OpenAPI">API Management in Practice: Introduction to OpenAPI</title>
+		<part id="openapi-fundamentals-machine">
+			<title>OpenAPI as a Machine-Readable Format</title>
+			<slide id="openapi-fundamentals-big-picture">
+				<title>OpenAPI: The Big Picture</title>
+				<img src="api-descriptions-simplified.png" class="fullsize-left" />
+			</slide>
+			<slide id="openapi-fundamentals-openapi-structure">
+				<title>OpenAPI is Structured Data</title>
+				<img src="food-label.png" title="FDA Nutrition Facts Label" href="https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>APIs described by OpenAPI are described in a structured way</li>
+					<li><link href="openapi-fundamentals-resources">Resources</link>, <link href="openapi-fundamentals-interactions">interactions</link>, and <link href="openapi-fundamentals-representations">representations</link> are core concepts</li>
+					<li>OpenAPI must use a structured way to describe these concepts</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-object-structure">
+				<title>OpenAPI Object Structure</title>
+				<img src="openapi-object-structure.png" class="fullsize-left" />
+			</slide>
+			<slide id="openapi-fundamentals-greet-json">
+				<title>Minimal OpenAPI in JSON</title>
+				<listing src="greet.json"/>
+			</slide>
+			<slide id="openapi-fundamentals-greet-yaml">
+				<title>Minimal OpenAPI in YAML</title>
+				<listing src="greet.yaml"/>
+			</slide>
+			<slide id="openapi-fundamentals-swagger">
+				<title>Minimal OpenAPI in Editing Tool</title>
+				<img src="greet-swagger.png" href="https://editor-next.swagger.io/" class="fullsize-left"/>
+			</slide>
+		</part>
+		<part id="openapi-fundamentals-superstructure">
+			<title>OpenAPI Superstructure: Resources, Interactions, and Representations</title>
+			<slide id="openapi-fundamentals-client-server-web">
+				<title>How the Web Works</title>
+				<img src="web-client-and-server-browser.png" class="fullsize-left"/>
+			</slide>
+			<slide id="openapi-fundamentals-structure">
+				<title>Shaping Your API</title>
+				<ul>
+					<li><em>Resources</em> are the fundamental units of interaction</li>
+					<li><em>Interactions</em> are how you access resources</li>
+					<li><em>Representations</em> define how interactions exchange information</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="openapi-fundamentals-resources">
+			<title>Resources: URI Paths</title>
+			<slide id="openapi-fundamentals-uri">
+				<title>Uniform Resource Identifier (URI)</title>
+				<pre>https://openapis.org/events</pre>
+				<ul>
+					<li>Individual resources are identified by uniformly defined identifiers</li>
+					<li>Tasks are completed by traversing a number of resources</li>
+					<li><em>Scheme</em> defines how identifiers are assigned: <code>https</code></li>
+					<li><em>Authority</em> defines a naming authority: <code>openapis.org</code></li>
+					<li><em>Path</em> is a hierarchical namespace: <code>/events</code></li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-github-openapi-paths">
+				<title>OpenAPI: Organized by Resources</title>
+				<img src="github-api-openapi-paths.png" class="fullsize-left"/>
+			</slide>
+			<slide id="openapi-fundamentals-github-openapi-editor">
+				<title>OpenAPI Editors</title>
+				<img src="github-api-swagger-editor.png" class="fullsize-left"/>
+			</slide>
+			<slide id="openapi-fundamentals-adding-paths">
+				<title>Evolving APIs by Adding Paths</title>
+				<ul>
+					<li>Evolving APIs over time is a good practice</li>
+					<li>Changing an API should not affect existing consumers</li>
+					<li>Adding paths is a good way to avoid breaking changes</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="openapi-fundamentals-interactions">
+			<title>Interactions: Operations and Parameters</title>
+			<slide id="openapi-fundamentals-http">
+				<img src="http-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<title>Hypertext Transfer Protocol (HTTP)</title>
+				<ul>
+					<li>The <q>language</q> how clients and servers communicate</li>
+					<li>Request/response model where the client always initiates the interaction</li>
+					<li>Each request has a <em>request method</em> (e.g., <code>GET</code>)</li>
+					<li>Each response has a <em>response status</em> (e.g., <code>200 OK</code>)</li>
+					<li>Requests and responses use <em>header fields</em> for metadata</li>
+					<li>Requests and responses can have a <em>message body</em></li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-http-interaction">
+				<title>HTTP Example: Accessing OAI</title>
+				<listing src="openapis-org-request.txt"/>
+				<listing src="openapis-org-response.txt"/>
+			</slide>
+			<slide id="openapi-fundamentals-search">
+				<title>Sending Data on the Web: Requests</title>
+				<img src="library-of-congress-search.png" href="https://catalog.loc.gov/vwebv/searchAdvanced" class="fullsize-left"/>
+				<pre>https://catalog.loc.gov/vwebv/search?searchArg1=Erik+Wilde&amp;argType1=all&amp;searchCode1=KNAM&amp;searchType=2&amp;combine2=and&amp;searchArg2=API&amp;argType2=all&amp;searchCode2=KTIL</pre>
+			</slide>
+			<slide id="openapi-fundamentals-search">
+				<title>Receiving Data on the Web: Responses</title>
+				<pre>https://catalog.loc.gov/vwebv/search?searchArg1=Erik+Wilde&amp;argType1=all&amp;searchCode1=KNAM&amp;searchType=2&amp;combine2=and&amp;searchArg2=API&amp;argType2=all&amp;searchCode2=KTIL</pre>
+				<img src="library-of-congress-search-results.png" href="https://catalog.loc.gov/vwebv/searchAdvanced" class="fullsize-left"/>
+			</slide>
+			<slide id="openapi-fundamentals-query-params">
+				<title>Parameters in URIs and HTTP</title>
+				<ul>
+					<li>A simple way to send data from client to server</li>
+					<li><code>path:</code> Embedded in URI (<code>https://github.com/octocat</code>)</li>
+					<li><code>query:</code> Appended to URI (<code>https://github.com/octocat?tab=repositories</code>)</li>
+					<li><code>header:</code> Sent as HTTP header field</li>
+					<li><code>cookie:</code> Sent as part of HTTP cookie management</li>
+					<li>Larger data needs to be sent in <em>HTTP message body</em></li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-query-parameter">
+				<title>Path Parameters in OpenAPI</title>
+				<listing src="github-get-by-username.yaml" line="1-12"/>
+				<pre>GET https://api.github.com/users/octocat</pre>
+			</slide>
+			<slide id="openapi-fundamentals-path-parameter">
+				<title>Query Parameters in OpenAPI</title>
+				<listing src="github-users-list.yaml"/>
+				<pre>GET https://api.github.com/users?since=1&amp;per_page=20</pre>
+			</slide>
+		</part>
+		<part id="openapi-fundamentals-representations">
+			<title>Representations: Requests and Responses</title>
+			<slide id="openapi-fundamentals-representation-options">
+				<title>Data Exchange with HTTP APIs</title>
+				<ul>
+					<li><em>URI and HTTP parameters</em> (<code>path</code>, <code>query</code>, <code>header</code>/<code>cookie</code>)</li>
+					<li><em>Media Types</em> (rooted in Email and Browsers)</li>
+					<li><em>JSON</em> (rooted in shared structured data)</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-media-types">
+				<title>Identifying Resource Types on the Internet</title>
+				<ul>
+					<li><em>Multipurpose Internet Mail Extensions (MIME)</em> started in 1992</li>
+					<li><em>Media Types</em> became the new terminology in 1996</li>
+					<li>Identification for well-known content types (~2000)</li>
+					<ul>
+						<li><em>Text:</em> plain text, HTML, …</li>
+						<li><em>Images:</em> JPEG, PNG, GIF, …</li>
+						<li><em>Application:</em> PDF, XML, JSON, …</li>
+					</ul>
+					<li>Many APIs have domain-specific data models</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-response">
+				<title>API Response with Media Type</title>
+				<listing src="github-get-by-username-pdf.yaml"/>
+			</slide>
+			<slide id="openapi-fundamentals-json">
+				<title>Web-level Structured Data</title>
+				<ul>
+					<li><em>JavaScript Object Notation (JSON)</em> for exchanging structured data</li>
+					<li><code>application/json</code> says nothing about the data itself</li>
+					<li><em>JSON Schema</em> for describing valid structured data</li>
+					<li>OpenAPI uses JSON Schema for describing structured data</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-json-example">
+				<title>API Response: Structured Data</title>
+				<listing src="octocat.json" line="1-15"/>
+			</slide>
+			<slide id="openapi-fundamentals-response">
+				<title>API Response with Media Type</title>
+				<listing src="github-get-by-username.yaml"/>
+			</slide>
+			<slide id="openapi-fundamentals-json-schema">
+				<title>JSON Schema for JSON Data</title>
+				<listing src="github-public-user.yaml" line="1-19"/>
+			</slide>
+			<slide id="openapi-fundamentals-schema-editor">
+				<title>Receiving Data on the Web: Responses</title>
+				<img src="swagger-editor-private-user.png" class="fullsize-left"/>
+			</slide>
+			<slide id="openapi-fundamentals-components">
+				<title>OpenAPI Components: Don't Repeat Yourself</title>
+				<img src="lego-bricks.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Many concepts/models in APIs are reused</li>
+					<li>Concepts may also be reused across various APIs</li>
+					<li>Avoiding copy/paste always is a good idea</li>
+					<li><code>components</code> allows to define reusable <q>building blocks</q></li>
+					<li><code>components</code> supports 10 types of building blocks</li>
+					<ul>
+						<li><code>pathItems</code>, <code>schemas</code>, <code>responses</code>, <code>parameters</code>, <code>examples</code>, …</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-high-level">
+				<title>30'000 ft View of OpenAPI 3.1.0</title>
+				<ul>
+					<li><code>openapi:</code> Defines which spec version is used</li>
+					<li><code>info:</code> Provides metadata about the API</li>
+					<li><code>servers:</code> Information about available servers</li>
+					<li><code>paths:</code> Paths and operations for the API</li>
+					<li><code>webhooks:</code> Support for server-initiated interactions</li>
+					<li><code>components:</code> Reusable components for the description</li>
+					<li><code>security:</code> Declaration of security mechanisms</li>
+					<li><code>tags:</code> Used for grouping concepts across the API</li>
+					<li><code>externalDocs:</code> Additional external documentation</li>
+				</ul>
+			</slide>
+			<slide id="openapi-fundamentals-easy">
+				<title>OpenAPI: The Easy Bits</title>
+				<listing src="github-preamble.yaml"/>
+			</slide>
+		</part>
+		<part id="openapi-fundamentals-conclusions>">
+			<title>An Overview of OpenAPI: Conclusions</title>
+			<slide id="openapi-fundamentals-summary">
+				<title>An Overview of OpenAPI: Summary</title>
+				<ul>
+					<li>OpenAPI describes API that are based on <q>the web model</q></li>
+					<li>The high-level model of OpenAPI is relatively simple</li>
+					<li>The lower-level details of OpenAPI get more involved</li>
+					<li>OpenAPI can deal with large APIs or collections of APIs</li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 	<presentation id="workshop-api-documentation">
 		<title short="The Art of Good API Documentation">API Management in Practice: The Art of Good API Documentation</title>
 		<author>Frank Kilcommins</author>
