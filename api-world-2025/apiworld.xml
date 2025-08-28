@@ -383,6 +383,267 @@
 			</slide>
 		</part>
 	</presentation>
+		<presentation id="workshop-api-documentation">
+		<title short="The Art of Good API Documentation">API Management in Practice: The Art of Good API Documentation</title>
+		<author>Frank Kilcommins</author>
+		<affiliation><a href="https://www.smartbear.com/">SmartBear</a></affiliation>
+		<copyright>2025 Frank Kilcommins</copyright>
+		<part id="api-documentation">
+			<title>What is API Documentation?</title>
+			<slide id="what-is-api-documentation">
+				<title>What is API Documentation?</title>
+				<ul>
+					<li>Noun</li>
+					<ul>
+						<li>a human-readable description of how developers will enable machines to communicate with each other</li>
+					</ul>
+				</ul>
+			</slide>	
+			<slide id="who-is-api-documentation-for">
+				<title>Who is API Documentation For?</title>
+				<ul>
+					<li>In parallel</li>
+					<ul>
+						<li>Developers</li>
+						<li>Non-Developers</li>
+						<li>And now ... also, <em>AI and the Machines</em></li>
+					</ul>
+				</ul>
+				<ul>
+					<li>Internal vs External</li>
+					<ul>
+						<li>Internal</li>
+						<ul>
+							<li>Different AuthNZ patterns</li>
+							<li>Proprietary information / links</li>
+						</ul>
+						<li>External</li>
+						<ul>
+							<li>Polished and use-case focused</li>
+							<li>Focused reasons to adopt</li>
+						</ul>
+					</ul>
+				</ul>				
+			</slide>					
+		</part>
+		<part id="types-of-api-documentation">
+			<title>Types of API Documentation</title>
+			<slide id="types-of-api-documentation">
+				<title>Types of API Documentation</title>
+				<img src="api-doc-types.png" class="fullsize" />
+			</slide>		
+			<slide id="api-docs-reference">
+				<title>API Reference: PetCo</title>
+				<img src="api-docs-reference-1.png" class="fullsize" />
+			</slide>	
+			<slide id="api-docs-reference-anatomy">
+				<title>API Reference Anatomy: PetCo</title>
+				<img src="api-docs-reference-anatomy.png" class="fullsize" />
+			</slide>			
+			<slide id="api-docs-errors">
+				<title>Errors: What new consumers will see most!</title>
+				<img src="api-docs-reference-status-codes.png" style="float: right ; width: 35%; margin : 0% 4% 4% 4% ; " />
+				<ul>
+					<li><em>2xx:</em> Success</li>
+					<li><em>4xx:</em> Client did something wrong</li>
+					<li><em>5xx:</em> Server broke ... send a ticket!</li>
+				</ul>
+				<ul>
+					<li>400/401/403/500 - are essential status codes</li>
+					<ul>
+						<li>Documenting these will help uncover bugs, and improve API usability</li>
+					</ul>
+				</ul>
+			</slide>	
+			<slide id="api-docs-reference-try-it">
+				<title>API Reference: Try It!</title>
+				<img src="api-docs-reference-try-it.png" class="fullsize" />
+			</slide>	
+			<slide id="api-docs-concepts">
+				<title>Concepts: What does all this mean?</title>
+				<ul>
+					<li><em>Getting started:</em> likely the most important concept</li>
+				</ul>
+				<img src="api-docs-concepts.png" class="fullsize" style="height: 55%;"/>
+			</slide>	
+			<slide id="api-docs-tasks">
+				<title>Tasks: Showcase what an API is good at!</title>
+				<img src="api-docs-tasks.png" class="fullsize" />
+			</slide>													
+		</part>
+		<part id="good-api-docs">
+			<title>Why you need good API Documentation</title>
+			<slide id="good-api-docs">
+				<title>Why you need <em>good</em> API Documentation</title>
+				<ul>
+					<li>Teach you customers, prospects, employees, partners, and LLMs (or AI agents) about using your products &amp; APIs</li>
+					<li>Define, test, and secure product boundaries for the organization and/or consumers</li>
+					<li>Enable customer support, and promote <em>self-service / self-help</em></li>
+					<li>Support technical marketing efforts</li>
+					<li>Improve API discoverability: are APIs <em>findable</em> and are their docs <em>usable</em></li>
+				</ul>
+			</slide>
+			<slide id="good-api-docs-internal-benefits">
+				<title>The <em>internal</em> benefits of <em>good</em> API Documentation</title>
+				<ul>
+					<li>Avoid/reduce duplicated effort</li>
+					<li>Improved organizational understanding of products/platforms</li>
+					<li>Improved consistency, standardization, and security</li>
+					<ul>
+						<li>Expose inconsistencies: compare docs across APIs (linted and validated)</li>
+						<li>Improve quality: implicit QA by doc writers, explicit functional view of testing</li>
+						<li>More secure: less room for errors in security and operations</li>		
+					</ul>
+				</ul>
+				<img src="api-docs-tip-1.png" class="fullsize" style="height: 50%;"/>
+			</slide>	
+			<slide id="good-api-docs-external-benefits">
+				<title>The <em>external</em> benefits of <em>good</em> API Documentation</title>
+				<ul>
+					<li>Increase <em>adoption</em> by end consumers - better first impressions</li>
+					<li>Better <em>relationships</em> and sentiment with consumers</li>
+					<li>Improved <em>reputation/credibility</em> with the developer community</li>
+					<li>Improved <em>stickiness</em> giving ability to scale API footprint and ROI</li>
+				</ul>
+				<img src="api-docs-tip-2.png" class="fullsize" style="height: 50%;"/>
+			</slide>					
+		</part>
+		<part id="good-docs">
+			<title>What makes a good API?</title>
+			<slide id="good-api">
+				<title>What makes a <em>good</em> API?</title>
+				<img src="api-docs-good-traits.png" class="fullsize"/>
+			</slide>
+			<slide id="good-api-docs-reference">
+				<title>Tips: Generating Useful API References</title>
+				<img src="api-docs-tip-3.png" style="float: right ; width: 30%; margin : 0% 4% 4% 4% ; "/>
+				<p>Make sure your reference (e.g. OpenAPI Description) includes the following:</p>
+				
+				<ul>
+					<li>Explanation of what request data is required versus optional</li>
+					<li>The version of your API (via /v2 path or custom headers)</li>
+					<li>Authentication and other headers required for all requests (e.g. Token, JWT)</li>
+					<li>The resource path for each endpoint (e.g. /pets/{petId})</li>
+					<li>Which HTTP methods for each operation (e.g. GET, POST, PUT, PATCH)</li>
+					<li>The request fields and where each goes (e.g. query, path, body)</li>
+					<li>What to expect in each response</li>
+					<ul>
+						<li>Example request and response data (response examples per status code)</li>
+						<li>Which HTTP status code are possible per endpoint/method combination</li>
+						<li>What each status code means in that context</li>
+					</ul>
+				</ul>
+				
+			</slide>
+			<slide id="good-api-features">
+				<title>Most Important API Documentation Features</title>
+				<ul>
+					<li> <em>Examples</em> continue to be the best learning resource for consumers</li>
+				</ul>
+				<img src="api-docs-important-features.png" class="fullsize"/>
+			</slide>	
+			<slide id="good-api-features-examples">
+				<title>Most Important API Documentation Features</title>
+				<ul>
+					<li> <em>Examples</em> are twice as effective as <em>code samples</em></li>
+				</ul>
+				<img src="api-docs-important-features-examples.png" class="fullsize"/>
+			</slide>	
+			<slide id="good-api-extensibility">
+				<title>Tips for Extensibility: Future-proofing APIs </title>
+				<ul>
+					<li>Treat your API as a promise - <em>don't break it!</em></li>
+					<li>Start with the smallest viable design and bake in <em>extensibility</em> practices from the beginning</li>
+				</ul>
+				<table rules="all" cellspacing="0" cellpadding="5">
+					<thead>
+						<tr>
+							<th valign="bottom">Do</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="color: green;">Define extension points</td>
+						</tr>
+						<tr>
+							<td style="color: green;">Define &amp; communicate extensibility pattern (e.g. Must Ignore)</td>
+						</tr>
+						<tr>
+							<td style="color: green;">Apply versioning (when applicable)</td>
+						</tr>
+						<tr>
+							<td style="color: green;">Test for extensibility</td>
+						</tr>
+						<tr>
+							<td style="color: green;">Mock for extensibility tests</td>
+						</tr>
+						<tr>
+							<td style="color: green;">Communicate</td>
+						</tr>
+					</tbody>
+				</table>
+			</slide>
+			<slide id="good-api-extensibility-2">
+				<title>Tips for Extensibility: Future-proofing APIs </title>
+				<ul>
+					<li>Treat your API as a promise - <em>don't break it!</em></li>
+					<li>Start with the smallest viable design and bake in <em>extensibility</em> practices from the beginning</li>
+				</ul>
+				<table rules="all" cellspacing="0" cellpadding="5">
+					<thead>
+						<tr>
+							<th valign="bottom">Do</th>
+							<th valign="bottom">Don't</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="color: green;">Define extension points</td>
+							<td style="color: red;">Don't add required inputs</td>
+						</tr>
+						<tr>
+							<td style="color: green;">Define &amp; communicate extensibility pattern (e.g. Must Ignore)</td>
+							<td style="color: red;">Don't remove outputs or make them optional</td>
+						</tr>
+						<tr>
+							<td style="color: green;">Apply versioning (when applicable)</td>
+							<td style="color: red;">Don't change property types</td>
+						</tr>
+						<tr>
+							<td style="color: green;">Test for extensibility</td>
+							<td style="color: red;">Don't add new properties which change the meaning of existing properties</td>
+						</tr>
+						<tr>
+							<td style="color: green;">Mock for extensibility tests</td>
+							<td style="color: red;">Don't use too many booleans (only sparingly)</td>
+						</tr>
+						<tr>
+							<td style="color: green;">Communicate</td>
+							<td style="color: red;">Don't be inconsistent in communication</td>
+						</tr>
+					</tbody>
+				</table>
+			</slide>			
+		</part>
+		<part id="exercise-2-create-openapi">
+			<title>Exercise 2: Create an OpenAPI Description</title>
+			<slide id="pets-openapi">
+				<title>Exercise 2: Create an OpenAPI Description</title>
+				<img src="exercise-2.png" style="max-width: 25%; height: auto; float: right; margin : 0% 4% 4% 4% ;" />
+				<ul>
+					<li>Using the Example Mapping output for <em>Retrieve Pet Details</em> from exercise 1 to create an OpenAPI Description</li>
+					<li>Tooling of your choice:</li>
+					<ul>
+						<li>https://editor-next.swagger.io</li>
+						<li>VS Code (or your IDE of choice)</li>
+						<li>ChatGPT or any other AI assistant</li>
+					</ul>
+					<li>YAML or JSON!</li>
+				</ul>				
+				
+			</slide>
+		</part>		
+	</presentation>
 	<presentation id="workshop-design-linting">
 		<title short="API Design and OpenAPI Linting">API Management in Practice: API Design and OpenAPI Linting</title>
 		<part id="linting">
