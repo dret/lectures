@@ -65,7 +65,7 @@
 					<li>Co-Maintainer of the <a href="https://spec.openapis.org/arazzo/latest.html">Arazzo Specification</a></li>
 					<li><a href="https://www.linkedin.com/in/frank-kilcommins"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/frank-kilcommins</code></a></li>
 					<li><a href="https://bsky.app/profile/fkilcommins.bsky.social"><img src="bluesky-logo.jpeg" style=" height : 1em ; "/> <code>@fkilcommins.bsky.social</code></a></li>
-				</ul>				
+				</ul>
 			</slide>
 			<slide id="dret">
 				<title>Erik Wilde</title>
@@ -306,11 +306,11 @@
 			<slide id="three-amigos">
 				<title>Who Should Participate?</title>
 				<img src="3-amigos.png" class="fullsize" />
-			</slide>	
+			</slide>
 			<slide id="three-amigos-extended">
 				<title>Who Should Participate for API User Stories?</title>
 				<img src="3-amigos-with-smes.png" class="fullsize" />
-			</slide>													
+			</slide>
 		</part>
 		<part id="example-mapping-demo">
 			<title>Example Mapping in Action</title>
@@ -626,7 +626,7 @@
 						<li>a human-readable description of how developers will enable machines to communicate with each other</li>
 					</ul>
 				</ul>
-			</slide>	
+			</slide>
 			<slide id="who-is-api-documentation-for">
 				<title>Who is API Documentation For?</title>
 				<ul>
@@ -659,15 +659,15 @@
 			<slide id="types-of-api-documentation">
 				<title>Types of API Documentation</title>
 				<img src="api-doc-types.png" class="fullsize" />
-			</slide>		
+			</slide>
 			<slide id="api-docs-reference">
 				<title>API Reference: PetCo</title>
 				<img src="api-docs-reference-1.png" class="fullsize" />
-			</slide>	
+			</slide>
 			<slide id="api-docs-reference-anatomy">
 				<title>API Reference Anatomy: PetCo</title>
 				<img src="api-docs-reference-anatomy.png" class="fullsize" />
-			</slide>			
+			</slide>
 			<slide id="api-docs-errors">
 				<title>Errors: What new consumers will see most!</title>
 				<img src="api-docs-reference-status-codes.png" style="float: right ; width: 35%; margin : 0% 4% 4% 4% ; " />
@@ -682,18 +682,18 @@
 						<li>Documenting these will help uncover bugs, and improve API usability</li>
 					</ul>
 				</ul>
-			</slide>	
+			</slide>
 			<slide id="api-docs-reference-try-it">
 				<title>API Reference: Try It!</title>
 				<img src="api-docs-reference-try-it.png" class="fullsize" />
-			</slide>	
+			</slide>
 			<slide id="api-docs-concepts">
 				<title>Concepts: What does all this mean?</title>
 				<ul>
 					<li><em>Getting started:</em> likely the most important concept</li>
 				</ul>
 				<img src="api-docs-concepts.png" class="fullsize" style="height: 55%;"/>
-			</slide>	
+			</slide>
 			<slide id="api-docs-tasks">
 				<title>Tasks: Showcase what an API is good at!</title>
 				<img src="api-docs-tasks.png" class="fullsize" />
@@ -720,11 +720,11 @@
 					<ul>
 						<li>Expose inconsistencies: compare docs across APIs (linted and validated)</li>
 						<li>Improve quality: implicit QA by doc writers, explicit functional view of testing</li>
-						<li>More secure: less room for errors in security and operations</li>		
+						<li>More secure: less room for errors in security and operations</li>
 					</ul>
 				</ul>
 				<img src="api-docs-tip-1.png" class="fullsize" style="height: 50%;"/>
-			</slide>	
+			</slide>
 			<slide id="good-api-docs-external-benefits">
 				<title>The <em>external</em> benefits of <em>good</em> API Documentation</title>
 				<ul>
@@ -734,7 +734,7 @@
 					<li>Improved <em>stickiness</em> giving ability to scale API footprint and ROI</li>
 				</ul>
 				<img src="api-docs-tip-2.png" class="fullsize" style="height: 50%;"/>
-			</slide>					
+			</slide>
 		</part>
 		<part id="good-docs">
 			<title>What makes a good API?</title>
@@ -746,7 +746,6 @@
 				<title>Tips: Generating Useful API References</title>
 				<img src="api-docs-tip-3.png" style="float: right ; width: 30%; margin : 0% 4% 4% 4% ; "/>
 				<p>Make sure your reference (e.g. OpenAPI Description) includes the following:</p>
-				
 				<ul>
 					<li>Explanation of what request data is required versus optional</li>
 					<li>The version of your API (via /v2 path or custom headers)</li>
@@ -761,7 +760,6 @@
 						<li>What each status code means in that context</li>
 					</ul>
 				</ul>
-				
 			</slide>
 			<slide id="good-api-features">
 				<title>Most Important API Documentation Features</title>
@@ -769,14 +767,14 @@
 					<li> <em>Examples</em> continue to be the best learning resource for consumers</li>
 				</ul>
 				<img src="api-docs-important-features.png" class="fullsize"/>
-			</slide>	
+			</slide>
 			<slide id="good-api-features-examples">
 				<title>Most Important API Documentation Features</title>
 				<ul>
 					<li> <em>Examples</em> are twice as effective as <em>code samples</em></li>
 				</ul>
 				<img src="api-docs-important-features-examples.png" class="fullsize"/>
-			</slide>	
+			</slide>
 			<slide id="good-api-extensibility">
 				<title>Tips for Extensibility: Future-proofing APIs </title>
 				<ul>
@@ -851,7 +849,7 @@
 						</tr>
 					</tbody>
 				</table>
-			</slide>			
+			</slide>
 		</part>
 		<part id="exercise-2-create-openapi">
 			<title>Exercise 2: Create an OpenAPI Description</title>
@@ -868,9 +866,8 @@
 					</ul>
 					<li>YAML or JSON!</li>
 				</ul>
-				
 			</slide>
-		</part>		
+		</part>
 	</presentation>
 	<presentation id="workshop-design-linting">
 		<title short="API Design and OpenAPI Linting">API Management in Practice: API Design and OpenAPI Linting</title>
