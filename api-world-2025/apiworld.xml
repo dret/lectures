@@ -1066,6 +1066,110 @@
 			</slide>
 		</part>
 	</presentation>
+    <presentation id="workshop-api-mocking">
+        <title short="Intro to API Mocking">API Management in Practice: Introduction to API Mocking</title>
+        <author>Frank Kilcommins</author>
+        <affiliation><a href="https://www.smartbear.com/">SmartBear</a></affiliation>
+        <copyright>2025 Frank Kilcommins</copyright>
+        <part id="api-mocking-benefits">
+            <title>Benefits of API Mocking</title>
+            <slide id="mocking-intro">
+                <title>API Mocking: The Benefits</title>
+                <ul>
+                    <li>Allows for exploratory feedback and experimentation for multiple use cases:</li>
+                    <ul>
+                        <li>Stakeholder collaboration &amp; fast feedback loops</li>
+                        <li>Test suite validation</li>
+                        <li>Health checks (and governance checks)</li>
+                        <li>Rapid prototyping (can be used by API consumers in their apps)</li>
+                        <li>Unblock testers, technical writers, etc. (no need to wait for development completion)</li>
+                    </ul>
+                    <li>Accelerate by spinning up mock APIs which are driven by your API descriptions (e.g. OpenAPI)</li>
+                </ul>               
+                <img src="api-mocking-intro.png" class="fullsize" style="max-width: 60%; height: auto;" />
+            </slide>            
+            <slide id="mocking-feedback">
+                <title>API Mocking: Iterate Faster with <em>Early</em> Feedback</title>
+                <ul>
+                    <li>Embrace the power of early feedback</li>
+                    <ul>
+                        <li>Incorporate user input during the design phase of your API</li>
+                        <li><em>Don't wait</em> until after code is written</li>
+                    </ul>
+                    <li>This proactive approach significantly <em>reduces the cost of change</em>, allowing you to quickly iterate and refine your API based on consumer (or critical stakeholder feedback)</li>
+                </ul>
+            </slide>
+            <slide id="mocking-develop-in-parallel">
+                <title>API Mocking: Work in Parallel</title>
+                <ul>
+                    <li>Accelerate delivery by working in parallel</li>
+                    <ul>
+                        <li>Provider (e.g. backend dev team) and consumer (e.g. frontend dev team) can work simultaneously</li>
+                        <li>Testers can create functional tests and verify against mock APIs</li>
+                        <li>Technical writers can create documentation in parallel with development &amp; testing</li>
+                    </ul>
+                </ul>
+            </slide>                        
+        </part>
+        <part id="mocking-prism">
+            <title>API Mocking Tools: Prism</title>
+            <slide id="mocking-tool">
+                <title>Example Mocking Tool: Prism</title>
+                <ul>
+                    <li>Prism is an open-source HTTP mocking tool that emulates your API's behavior as if you already built it</li>
+                    <li>Prism generates mock HTTP servers from your OpenAPI 2.* / 3.* definitions</li>
+                </ul>               
+                <img src="prism-cli.png" class="fullsize" style="max-width: 60%; height: auto;" />
+            </slide>        
+            <slide id="mocking-dynamic-examples">
+                <title>API Mocking: Dynamic Examples</title>
+                <ul>
+                    <li>Static examples are good <em>but</em> they can bias the way you code and test the API</li>
+                    <li>Many mocking tools (like Prism) generate <em>dynamic</em> random examples based on your schemas</li>
+                    <li>Dynamic examples can help uncover edge cases and improve API design.</li>
+                </ul>
+                <img src="mock-dynamic-examples.png" class="fullsize" style="max-width: 60%; height: auto;"/>
+            </slide>
+            <slide id="mocking-dynamic-validation">
+                <title>API Mocking: Validate Input and Output</title>
+                <ul>
+                    <li>Prism validates both request and response data</li>
+                    <li>If your specification contains an invalid example or your request isn't compliant with your API description, Prism can flag it for you!</li>
+                    <li>Validation Proxy Mode:</li>
+                    <ul>
+                        <li>Identify discrepancies between the OpenAPI document and target API to help frontend developers integrating with your API</li>
+                        <li>Ideal for pre-prod environments to ensure that OpenAPI documents and code stay in sync</li>
+                    </ul>
+                </ul>
+                <img src="mock-validation.png" class="fullsize" style="max-width: 60%; height: auto;"/>
+            </slide>        
+            <slide id="mocking-callbacks">
+                <title>API Mocking: (Advanced) Mocking Callbacks</title>
+                <ul>
+                    <li>Go beyond standard API interactions</li>
+                    <li>OpenAPI 3.0+ allows API designers to define callbacks and construct URLs for payload delivery</li>
+                    <li>Prism supports callback mocking, enabling you to interact/integrate callbacks before the <em>real</em>API is built</li>
+                </ul>
+                <img src="mock-callbacks.png" class="fullsize" style="max-width: 60%; height: auto;"/>
+            </slide>                                
+        </part>
+        <part id="mocking-exercise">
+            <title>Exercise (Demo): Mock an API</title>
+            <slide id="mocking-exercise-instructions">
+                <title>Exercise: Mock an API</title>
+                <ul>
+                    <li>Using the OpenAPI Description you created in exercise 2 to create a mock API using Prism</li>
+                    <li>Guide steps:</li>
+                    <ul>
+                        <li>Install Prism</li>
+                        <li>Run Prism with your OpenAPI description (via Node or Docker)</li>
+                        <li>Interact with the mock API</li>
+                    </ul>
+
+                </ul>
+            </slide>
+        </part>
+    </presentation>
 	<presentation id="openapi-summit">
 		<title short="OpenAPI Summit Welcome">OpenAPI Summit Welcome and OpenAPI in the Age of AI</title>
 		<toc class="abstract">APIs in general and their main description format OpenAPI have seen a lot of success since OpenAPI was created as Swagger in 2010 and became OpenAPI in 2016. What is the reason for its continued momentum and how does the landscape change with AI entering the picture? We look at APIs, OpenAPI and the way how AI plays a role in the API space. How can OpenAPI help you, how can the OpenAPI Initiative (OAI) help you using OpenAPI better, and how does AI influence the way how you design, develop, and deploy your APIs?</toc>
