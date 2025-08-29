@@ -1170,6 +1170,132 @@
             </slide>
         </part>
     </presentation>
+    <presentation id="workshop-arazzo">
+        <title short="Intro to the Arazzo Specification">API Management in Practice: Introduction to Arazzo</title>
+        <author>Frank Kilcommins</author>
+        <affiliation><a href="https://www.smartbear.com/">SmartBear</a></affiliation>
+        <copyright>2025 Frank Kilcommins</copyright>
+		<part id="what-is-arazzo">
+			<title>What is the Arazzo Specification?</title>
+			<slide id="what-is-arazzo">
+				<title>What is the Arazzo Specification?</title>
+				<img src="arazzo_horizontal_color.png"  style="float: right ; width : 30%; margin : 0% 4% 4% 4% ;  "/>
+				<ul>
+					<li>The Arazzo Specification is a community-driven open specification within the <em>OpenAPI Initiative</em>, a Linux Foundation Project</li>
+					<li>Arazzo describes an approach to document use-case oriented workflows in a programmatically readable format</li>
+					<li>A <em>workflow</em> is a series of API calls which when woven together accomplish a specific task or goal or business objective</li>
+					<li>The human-readable nature improves the ability of API specifications to tell the story of the API(s) in a manner that can improve the consuming developer experience.</li>
+					<li>The machine-readable nature allows for intent orientated workflows to be discoverable and executable by AI agents</li>
+				</ul>
+			</slide>
+			<slide id="arazzo-use-cases">
+				<img src="arazzo_horizontal_color.png"  style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ;  "/>
+				<ul>
+					<li>Deterministic recipes for the use of APIs</li>
+					<ul>
+						<li>Make sense of large unwieldy API description</li>
+						<li>Bridge the gap where business flows span more than one API description</li>
+					</ul>
+					<li>Living API documentation and improved consumer developer experience (DX)</li>
+					<li>Assertable business value (machine readable end-to-end test semantics)</li>
+					<li>Targeted code generation tooling (think SDKs) for APIs driven by use cases</li>
+					<li>Improved regulatory checks via assertable workflows</li>
+					<li>The AI potential for value orientated <em>repeatable</em> interaction with APIs</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="specification-structure">
+			<title>Arazzo Specification Structure</title>
+			<slide id="arazzo-specification-structure">
+				<title>Arazzo Specification Structure</title>
+				<img src="Arazzo-Specification-1.0.1.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-info">
+				<title>Arazzo Specification: Info Object</title>
+				<img src="arazzo-1-info.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-info-example">
+				<title>Arazzo Specification: Info Object Example</title>
+				<img src="arazzo-1-info-example.png" class="fullsize-shadow" />
+			</slide>			
+			<slide id="arazzo-source-descriptions">
+				<title>Arazzo Specification: Source Descriptions</title>
+				<img src="arazzo-2-source-descriptions.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-source-descriptions-example">
+				<title>Arazzo Specification: Source Descriptions Example</title>
+				<img src="arazzo-2-source-descriptions-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-workflows">
+				<title>Arazzo Specification: Workflows</title>
+				<img src="arazzo-3-workflows.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-workflows-example">
+				<title>Arazzo Specification: Workflows Example</title>
+				<img src="arazzo-3-workflows-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-inputs">
+				<title>Arazzo Specification: Inputs</title>
+				<img src="arazzo-4-inputs.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-inputs-example">
+				<title>Arazzo Specification: Inputs Example</title>
+				<img src="arazzo-4-inputs-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-steps">
+				<title>Arazzo Specification: Steps</title>
+				<img src="arazzo-5-steps.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-steps-example">
+				<title>Arazzo Specification: Steps Example</title>
+				<img src="arazzo-5-steps-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-parameters">
+				<title>Arazzo Specification: Parameters</title>
+				<img src="arazzo-6-parameters.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-parameters-example">
+				<title>Arazzo Specification: Parameters Example</title>
+				<img src="arazzo-6-parameters-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-failure-actions">
+				<title>Arazzo Specification: Failure Actions</title>
+				<img src="arazzo-7-failure-actions.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-failure-actions-example">
+				<title>Arazzo Specification: Failure Actions Example</title>
+				<img src="arazzo-7-failure-actions-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-success-actions">
+				<title>Arazzo Specification: Success Actions</title>
+				<img src="arazzo-8-success-actions.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-success-actions-example">
+				<title>Arazzo Specification: Success Actions Example</title>
+				<img src="arazzo-8-success-actions-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-step-outputs">
+				<title>Arazzo Specification: Step Outputs</title>
+				<img src="arazzo-9-step-outputs.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-step-outputs-example">
+				<title>Arazzo Specification: Step Outputs Example</title>
+				<img src="arazzo-9-step-outputs-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-workflow-outputs">
+				<title>Arazzo Specification: Workflow Outputs</title>
+				<img src="arazzo-10-workflow-outputs.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-workflow-outputs-example">
+				<title>Arazzo Specification: Workflow Outputs Example</title>
+				<img src="arazzo-10-workflow-outputs-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-components">
+				<title>Arazzo Specification: Components</title>
+				<img src="arazzo-11-components.png" class="fullsize" style="height: 75%" />
+			</slide>
+		</part>
+	</presentation>	
 	<presentation id="openapi-summit">
 		<title short="OpenAPI Summit Welcome">OpenAPI Summit Welcome and OpenAPI in the Age of AI</title>
 		<toc class="abstract">APIs in general and their main description format OpenAPI have seen a lot of success since OpenAPI was created as Swagger in 2010 and became OpenAPI in 2016. What is the reason for its continued momentum and how does the landscape change with AI entering the picture? We look at APIs, OpenAPI and the way how AI plays a role in the API space. How can OpenAPI help you, how can the OpenAPI Initiative (OAI) help you using OpenAPI better, and how does AI influence the way how you design, develop, and deploy your APIs?</toc>
