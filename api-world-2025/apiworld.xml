@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
 <?hotspot layout-path="hotspot/hotspot/layout" ?>
 <?hotspot kilauea-path="hotspot/kilauea" ?>
-<?hotspot layout="oai-track" ?>
+<?hotspot layout="jentic" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 	<configuration>
 		<link subsections="yes" bookmarks="yes" versions="apiworld.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
@@ -45,7 +45,7 @@
 	</toc>
 	<title><a href="https://apiworld.co/">API World</a> 2025</title>
 	<author>Erik Wilde</author>
-	<affiliation>Head of Strategy (Enterprise), <a href="https://jentic.com/">Jentic</a></affiliation>
+	<affiliation>Head of Enterprise Strategy, <a href="https://jentic.com/">Jentic</a></affiliation>
 	<date short="2025-09-03">September 3, 2025</date>
 	<copyright>2025 Erik Wilde</copyright>
 	<presentation id="workshop-introduction">
@@ -74,7 +74,7 @@
 				<ul>
 					<li>CA API Academy 2016-2019</li>
 					<li>Axway Catalyst 2019-2023</li>
-					<li>Head of Strategy (Enterprise) at <a href="https://jentic.com/">Jentic</a></li>
+					<li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
 					<li>OAI Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative</a></li>
 					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
 					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
