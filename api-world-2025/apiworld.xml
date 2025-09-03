@@ -227,6 +227,7 @@
 					<li>Are we building the <em>right API?</em></li>
 					<li>Are we building the <em>API right?</em></li>
 				</ul>
+				<img src="cross-hairs.png" title="Deliberate discovery" class="fullsize" style="height: 50%;"/>
 			</slide>
 		</part>
 		<part id="api-requirements">
@@ -288,6 +289,7 @@
 			</slide>
 			<slide id="example-mapping-unknown-to-known">
 				<title>Example Mapping for Deliberate Discovery</title>
+				<img src="discovery.png" title="Deliberate discovery" style="float: right ; height: 50%; ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
 					<li>Effectively explore and refine detailed acceptance criteria, so that:</li>
 					<ul>
@@ -305,11 +307,11 @@
 			</slide>
 			<slide id="three-amigos">
 				<title>Who Should Participate?</title>
-				<img src="3-amigos.png" class="fullsize" />
+				<img src="3-amigos.png" class="fullsize" style="max-height: 60%"/>
 			</slide>
 			<slide id="three-amigos-extended">
 				<title>Who Should Participate for API User Stories?</title>
-				<img src="3-amigos-with-smes.png" class="fullsize" />
+				<img src="3-amigos-with-smes.png" class="fullsize" style="max-height: 60%"/>
 			</slide>
 		</part>
 		<part id="example-mapping-demo">
@@ -855,7 +857,7 @@
 			<title>Exercise 2: Create an OpenAPI Description</title>
 			<slide id="pets-openapi">
 				<title>Exercise 2: Create an OpenAPI Description</title>
-				<img src="exercise-2.png" style="max-width: 25%; height: auto; float: right; margin : 0% 4% 4% 4% ;" />
+				<img src="exercise-2.png" style="max-width: 35%; height: auto; float: right; margin : 0% 4% 4% 4% ;" />
 				<ul>
 					<li>Using the Example Mapping output for <em>Retrieve Pet Details</em> from exercise 1 to create an OpenAPI Description</li>
 					<li>Tooling of your choice:</li>
@@ -1185,10 +1187,11 @@
 					<li>Arazzo describes an approach to document use-case oriented workflows in a programmatically readable format</li>
 					<li>A <em>workflow</em> is a series of API calls which when woven together accomplish a specific task or goal or business objective</li>
 					<li>The human-readable nature improves the ability of API specifications to tell the story of the API(s) in a manner that can improve the consuming developer experience.</li>
-					<li>The machine-readable nature allows for intent orientated workflows to be discoverable and executable by AI agents</li>
+					<li>The machine-readable nature allows for intent orientated workflows to be discoverable and executable by AI agents, testing tools, documentation tools, and so on!</li>
 				</ul>
 			</slide>
 			<slide id="arazzo-use-cases">
+				<title>Dominant Use Cases</title>
 				<img src="arazzo_horizontal_color.png"  style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ;  "/>
 				<ul>
 					<li>Deterministic recipes for the use of APIs</li>
@@ -1294,6 +1297,47 @@
 				<title>Arazzo Specification: Components</title>
 				<img src="arazzo-11-components.png" class="fullsize" style="height: 75%" />
 			</slide>
+		</part>
+		<part id="Arazzo Exercise">
+			<title>Exercise: A Pet Adoptions Workflow</title>
+			<slide id="exercise-arazzo">
+				<title>Exercise: Remember our Example Mapping Scenario</title>
+				<ul>
+					<li>Assume we're working for a company called <em>PetCo</em></li>
+					<li><em>Our problem:</em> We`re overwhelmed by the number of pets being abandoned at our pet store</li>
+					<li><em>Proposed Solution:</em> Create a Pet Adoptions Service</li>
+					<ul>
+						<li>Following research and evaluation, we`ve decided to create the ability to search for and adopt pets that we catalog</li>
+						<li>We`ll offer the service via our website but also with a wider eco-system of shelters, charities, and pet orphanages</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="arazzo-adopt-pet-use-case">
+				<title>Example Workflow Use Case</title>
+				<img src="arazzo-exercise-use-case.png" style="float: right ; width : 50% ; margin : 0% 4% 4% 4% ;  "/>
+				<ul>
+					<li>Adopt a pet matching criteria</li>
+					<li>Steps</li>
+					<ul>
+						<li>Search for a pet</li>
+						<li>Initiate adoption request</li>
+						<li>Confirm adoption by updating pet status</li>
+						<li>Verify pet has been marked as adopted in the listing</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="arazzo-exercise-1">
+				<title>The Power of Arazzo: More YAML!?</title>
+				<img src="arazzo-exercise-1.png" class="fullsize" style="height: 75%" />
+			</slide>		
+			<slide id="arazzo-exercise-2">
+				<title>The Power of Arazzo: Machines love YAML!</title>
+				<img src="arazzo-exercise-2.png" class="fullsize" style="height: 75%" />
+			</slide>	
+			<slide id="arazzo-demo">
+				<title>The Arazzo Specification GPT</title>
+				<video controls="controls" src="img/arazzo-gpt.mp4" style=" width: 100% ; height: auto ; max-height: 70% ; ">Your browser does not support the HTML5 Video element.</video>
+			</slide>			
 		</part>
 	</presentation>	
 	<presentation id="openapi-summit">
