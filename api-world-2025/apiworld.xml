@@ -89,6 +89,10 @@
 					</div>
 				</div>
 			</slide>
+			<slide>
+				<title>Workshop Materials: Slides &amp; Exercises</title>
+				<img src="materials-qr-code.png" href="https://github.com/dret/api-world-workshop-santa-clara-2025" class="fullsize" />
+			</slide>
 		</part>
 	</presentation>
 	<presentation id="workshop-api-description">
@@ -375,6 +379,10 @@
 		</part>
 		<part id="exercise-1-get-pet-details">
 			<title>Exercise 1: Example Mapping</title>
+			<slide>
+				<title>Workshop Materials: Slides &amp; Exercises</title>
+				<img src="materials-qr-code.png" href="https://github.com/dret/api-world-workshop-santa-clara-2025" class="fullsize" />
+			</slide>
 			<slide id="get-pet-details">
 				<title>Exercise 1: Example Mapping for Retrieve Pet Details</title>
 				<ul>
@@ -855,6 +863,10 @@
 		</part>
 		<part id="exercise-2-create-openapi">
 			<title>Exercise 2: Create an OpenAPI Description</title>
+			<slide>
+				<title>Workshop Materials: Slides &amp; Exercises</title>
+				<img src="materials-qr-code.png" href="https://github.com/dret/api-world-workshop-santa-clara-2025" class="fullsize" />
+			</slide>
 			<slide id="pets-openapi">
 				<title>Exercise 2: Create an OpenAPI Description</title>
 				<img src="exercise-2.png" style="max-width: 35%; height: auto; float: right; margin : 0% 4% 4% 4% ;" />
@@ -1144,8 +1156,8 @@
                     </ul>
                 </ul>
                 <img src="mock-validation.png" class="fullsize" style="max-width: 60%; height: auto;"/>
-            </slide>        
-            <slide id="mocking-callbacks">
+            </slide>
+        	<slide id="mocking-callbacks">
                 <title>API Mocking: (Advanced) Mocking Callbacks</title>
                 <ul>
                     <li>Go beyond standard API interactions</li>
@@ -1153,11 +1165,15 @@
                     <li>Prism supports callback mocking, enabling you to interact/integrate callbacks before the <em>real</em>API is built</li>
                 </ul>
                 <img src="mock-callbacks.png" class="fullsize" style="max-width: 60%; height: auto;"/>
-            </slide>                                
+            </slide>
         </part>
         <part id="mocking-exercise">
             <title>Exercise (Demo): Mock an API</title>
-            <slide id="mocking-exercise-instructions">
+        	<slide>
+        		<title>Workshop Materials: Slides &amp; Exercises</title>
+        		<img src="materials-qr-code.png" href="https://github.com/dret/api-world-workshop-santa-clara-2025" class="fullsize" />
+        	</slide>
+        	<slide id="mocking-exercise-instructions">
                 <title>Exercise: Mock an API</title>
                 <ul>
                     <li>Using the OpenAPI Description you created in exercise 2 to create a mock API using Prism</li>
@@ -1167,7 +1183,6 @@
                         <li>Run Prism with your OpenAPI description (via Node or Docker)</li>
                         <li>Interact with the mock API</li>
                     </ul>
-
                 </ul>
             </slide>
         </part>
