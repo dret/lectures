@@ -101,27 +101,27 @@
 			<title>What are API Description Formats</title>
 			<slide id="api-descriptions-services">
 				<title>Consumers want to use Services</title>
-				<img src="api-descriptions-services.png" class="fullsize-left" />
+				<img src="api-descriptions-services.png" class="fullsize" />
 			</slide>
 			<slide id="api-descriptions-uses">
 				<title>Description Languages are <q>API Lingua Francas</q></title>
-				<img src="api-descriptions-uses.png" class="fullsize-left" />
+				<img src="api-descriptions-uses.png" class="fullsize" />
 			</slide>
 			<slide id="api-descriptions-describes">
 				<title>Descriptions are Machine-Readable Documents</title>
-				<img src="api-descriptions-describes.png" class="fullsize-left" />
+				<img src="api-descriptions-describes.png" class="fullsize" />
 			</slide>
 			<slide id="api-descriptions-understands">
 				<title>Shared Understanding of APIs</title>
-				<img src="api-descriptions-understands.png" class="fullsize-left" />
+				<img src="api-descriptions-understands.png" class="fullsize" />
 			</slide>
 			<slide id="api-descriptions-discovers">
 				<title>Discovery of Understandable Descriptions</title>
-				<img src="api-descriptions-discovers.png" class="fullsize-left" />
+				<img src="api-descriptions-discovers.png" class="fullsize" />
 			</slide>
 			<slide id="api-descriptions-consumes">
 				<title>Consuming based on Shared Understanding</title>
-				<img src="api-descriptions-consumes.png" class="fullsize-left" />
+				<img src="api-descriptions-consumes.png" class="fullsize" />
 			</slide>
 			<slide id="descriptions-documentation">
 				<title>Are Descriptions Documentation?</title>
@@ -188,11 +188,11 @@
 			</slide>
 			<slide id="openapi-tooling">
 				<title>OpenAPI Tooling</title>
-				<img src="openapi-tools.png" href="https://tools.openapis.org/" class="fullsize-left"/>
+				<img src="openapi-tools.png" href="https://tools.openapis.org/" class="fullsize"/>
 			</slide>
 			<slide id="api-landscape">
 				<title>API Landscape</title>
-				<img src="api-landscape.png" href="https://apilandscape.apiscene.io/" class="fullsize-shadow-left"/>
+				<img src="api-landscape.png" href="https://apilandscape.apiscene.io/" class="fullsize-shadow"/>
 			</slide>
 			<slide id="lingua-franca">
 				<title>The Open API Lingua Franca</title>
@@ -398,7 +398,7 @@
 			<title>OpenAPI as a Machine-Readable Format</title>
 			<slide id="openapi-fundamentals-big-picture">
 				<title>OpenAPI: The Big Picture</title>
-				<img src="api-descriptions-simplified.png" class="fullsize-left" />
+				<img src="api-descriptions-simplified.png" class="fullsize" />
 			</slide>
 			<slide id="openapi-fundamentals-openapi-structure">
 				<title>OpenAPI is Structured Data</title>
@@ -411,7 +411,7 @@
 			</slide>
 			<slide id="openapi-fundamentals-object-structure">
 				<title>OpenAPI Object Structure</title>
-				<img src="openapi-object-structure.png" class="fullsize-left" />
+				<img src="openapi-object-structure.png" class="fullsize" />
 			</slide>
 			<slide id="openapi-fundamentals-greet-json">
 				<title>Minimal OpenAPI in JSON</title>
@@ -423,14 +423,14 @@
 			</slide>
 			<slide id="openapi-fundamentals-swagger">
 				<title>Minimal OpenAPI in Editing Tool</title>
-				<img src="greet-swagger.png" href="https://editor-next.swagger.io/" class="fullsize-left"/>
+				<img src="greet-swagger.png" href="https://editor-next.swagger.io/" class="fullsize"/>
 			</slide>
 		</part>
 		<part id="openapi-fundamentals-superstructure">
 			<title>OpenAPI Superstructure: Resources, Interactions, and Representations</title>
 			<slide id="openapi-fundamentals-client-server-web">
 				<title>How the Web Works</title>
-				<img src="web-client-and-server-browser.png" class="fullsize-left"/>
+				<img src="web-client-and-server-browser.png" class="fullsize"/>
 			</slide>
 			<slide id="openapi-fundamentals-structure">
 				<title>Shaping Your API</title>
@@ -456,11 +456,11 @@
 			</slide>
 			<slide id="openapi-fundamentals-github-openapi-paths">
 				<title>OpenAPI: Organized by Resources</title>
-				<img src="github-api-openapi-paths.png" class="fullsize-left"/>
+				<img src="github-api-openapi-paths.png" class="fullsize"/>
 			</slide>
 			<slide id="openapi-fundamentals-github-openapi-editor">
 				<title>OpenAPI Editors</title>
-				<img src="github-api-swagger-editor.png" class="fullsize-left"/>
+				<img src="github-api-swagger-editor.png" class="fullsize"/>
 			</slide>
 			<slide id="openapi-fundamentals-adding-paths">
 				<title>Evolving APIs by Adding Paths</title>
@@ -492,13 +492,13 @@
 			</slide>
 			<slide id="openapi-fundamentals-search">
 				<title>Sending Data on the Web: Requests</title>
-				<img src="library-of-congress-search.png" href="https://catalog.loc.gov/vwebv/searchAdvanced" class="fullsize-left"/>
+				<img src="library-of-congress-search.png" href="https://catalog.loc.gov/vwebv/searchAdvanced" class="fullsize"/>
 				<pre>https://catalog.loc.gov/vwebv/search?searchArg1=Erik+Wilde&amp;argType1=all&amp;searchCode1=KNAM&amp;searchType=2&amp;combine2=and&amp;searchArg2=API&amp;argType2=all&amp;searchCode2=KTIL</pre>
 			</slide>
 			<slide id="openapi-fundamentals-search">
 				<title>Receiving Data on the Web: Responses</title>
 				<pre>https://catalog.loc.gov/vwebv/search?searchArg1=Erik+Wilde&amp;argType1=all&amp;searchCode1=KNAM&amp;searchType=2&amp;combine2=and&amp;searchArg2=API&amp;argType2=all&amp;searchCode2=KTIL</pre>
-				<img src="library-of-congress-search-results.png" href="https://catalog.loc.gov/vwebv/searchAdvanced" class="fullsize-left"/>
+				<img src="library-of-congress-search-results.png" href="https://catalog.loc.gov/vwebv/searchAdvanced" class="fullsize"/>
 			</slide>
 			<slide id="openapi-fundamentals-query-params">
 				<title>Parameters in URIs and HTTP</title>
@@ -573,7 +573,7 @@
 			</slide>
 			<slide id="openapi-fundamentals-schema-editor">
 				<title>Receiving Data on the Web: Responses</title>
-				<img src="swagger-editor-private-user.png" class="fullsize-left"/>
+				<img src="swagger-editor-private-user.png" class="fullsize"/>
 			</slide>
 			<slide id="openapi-fundamentals-components">
 				<title>OpenAPI Components: Don't Repeat Yourself</title>
