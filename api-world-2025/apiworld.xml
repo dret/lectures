@@ -1128,7 +1128,7 @@
                 <title>Example Mocking Tool: Prism</title>
                 <ul>
                     <li>Prism is an open-source HTTP mocking tool that emulates your API's behavior as if you already built it</li>
-                    <li>Prism generates mock HTTP servers from your OpenAPI 2.* / 3.* definitions</li>
+                    <li>Prism generates mock HTTP servers from your OpenAPI 2.* / 3.0.* definitions</li>
                 </ul>               
                 <img src="prism-cli.png" class="fullsize" style="max-width: 60%; height: auto;" />
             </slide>        
