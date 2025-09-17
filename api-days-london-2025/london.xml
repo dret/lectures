@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="oai-track" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="london.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+		<div class="license">
+			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+		</div>
+	</license>
+	<title><a href="https://www.apidays.global/">API Days</a> <a href="https://www.apidays.global/london/">London</a> 2025</title>
+	<presentation id="index">
+		<title short="OAI Track Welcome">Welcome to the OAI Track</title>
+		<author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
+		<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
+		<date short="2025-09-24">September 24, 2025</date>
+		<copyright>2025 Erik Wilde</copyright>
+		<part id="conclusions-oai-track">
+			<title>Conclusions</title>
+			<slide id="thanks-oai-track">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/api-days-london-2025/"><code>dret.net/lectures/api-days-london-2025/</code></a></li>
+				</ul>
+			</slide>
+			<slide id="join">
+				<title>Join the OAI/OpenAPI Community!</title>
+				<img src="qr-community-openapis-org.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Join the community: <code href="https://github.com/OAI/community" title="OAI Community">github.com/OAI/community</code></li>
+					<li>All technical and special interest groups meetings: <code href="https://www.openapis.org/calendar" title="OAI Community Calendar">openapis.org/calendar</code></li>
+					<li>Upcoming events (including OAI Tracks): <code href="https://www.openapis.org/events" title="OAI Events">openapis.org/events</code></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
+</hotspot>
