@@ -43,13 +43,22 @@
 		</part>
 		<part id="welcome-versions">
 			<title>Welcome New OpenAPI Versions!</title>
-			<slide id="">
+			<slide id="openapi-versions">
 				<title>Main Versions of OpenAPI</title>
 				<ul>
 					<li>December 2015: <a href="https://spec.openapis.org/oas/v2.0.html">2.0</a> (previously Swagger 2.0)</li>
 					<li>July 2017: <a href="https://spec.openapis.org/oas/v3.0.0.html">3.0</a></li>
 					<li>February 2021: <a href="https://spec.openapis.org/oas/v3.1.0.html">3.1</a></li>
 					<li>September 2025: <a href="https://spec.openapis.org/oas/v3.2.0.html">3.2</a></li>
+				</ul>
+			</slide>
+			<slide id="openapi-3-2-new-features">
+				<title>Main New Features of OpenAPI 3.2</title>
+				<ul>
+					<li>New HTTP methods (including <code>QUERY</code>)</li>
+					<li>Enhanced tag system (hierarchical and multiple tags)</li>
+					<li>Support for streaming media types</li>
+					<li>Updated OAuth support</li>
 				</ul>
 			</slide>
 		</part>
