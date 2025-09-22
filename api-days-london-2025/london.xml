@@ -25,29 +25,31 @@
 	</license>
 	<title><a href="https://www.apidays.global/">API Days</a> <a href="https://www.apidays.global/london/">London</a> 2025</title>
 	<presentation id="index">
-		<title short="OAI Track Welcome">Welcome to the OAI Track</title>
-		<author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
-		<affiliation><a href="https://www.youtube.com/ErikWilde">Getting APIs to Work <img src="youtube-logo.png" style=" height : 1em ; "/></a></affiliation>
+		<title>Welcome to the OAI Track &amp; Welcome New OpenAPI Versions</title>
+		<author>Erik Wilde</author>
+		<affiliation>Head of Enterprise Strategy, <a href="https://jentic.com/">Jentic</a></affiliation>
 		<date short="2025-09-24">September 24, 2025</date>
 		<copyright>2025 Erik Wilde</copyright>
-		<part id="conclusions-oai-track">
-			<title>Conclusions</title>
-			<slide id="thanks-oai-track">
-				<title>Thank You!</title>
-				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-				<ul>
-					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-					<li>Slides online: <a href="http://dret.net/lectures/api-days-london-2025/"><code>dret.net/lectures/api-days-london-2025/</code></a></li>
-				</ul>
-			</slide>
+		<part id="welcome-track">
+			<title>Welcome to the OAI Track!</title>
 			<slide id="join">
 				<title>Join the OAI/OpenAPI Community!</title>
-				<img src="qr-community-openapis-org.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
 					<li>Join the community: <code href="https://github.com/OAI/community" title="OAI Community">github.com/OAI/community</code></li>
 					<li>All technical and special interest groups meetings: <code href="https://www.openapis.org/calendar" title="OAI Community Calendar">openapis.org/calendar</code></li>
 					<li>Upcoming events (including OAI Tracks): <code href="https://www.openapis.org/events" title="OAI Events">openapis.org/events</code></li>
+				</ul>
+			</slide>
+		</part>
+		<part id="welcome-versions">
+			<title>Welcome New OpenAPI Versions!</title>
+			<slide id="">
+				<title>Main Versions of OpenAPI</title>
+				<ul>
+					<li>December 2015: <a href="https://spec.openapis.org/oas/v2.0.html">2.0</a> (previously Swagger 2.0)</li>
+					<li>July 2017: <a href="https://spec.openapis.org/oas/v3.0.0.html">3.0</a></li>
+					<li>February 2021: <a href="https://spec.openapis.org/oas/v3.1.0.html">3.1</a></li>
+					<li>September 2025: <a href="https://spec.openapis.org/oas/v3.2.0.html">3.2</a></li>
 				</ul>
 			</slide>
 		</part>
