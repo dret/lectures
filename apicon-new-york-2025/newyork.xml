@@ -107,6 +107,289 @@
 			</slide>
 		</part>
 	</presentation>
+	<!-- start mamund insert -->
+<presentation xmlns="http://dret.net/xmlns/hotspot/1" id="designing-apis-with-api-story-documents">
+  <title short="API Story Documents">Designing APIs with API Story Documents</title>
+  <author>Mike Amundsen</author>
+  <affiliation>mamund.com</affiliation>
+  <date short="2025-09-24">September 24, 2025</date>
+  <copyright>2025 Mike Amundsen</copyright>
+  <license href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</license>
+  <part id="introduction">
+    <title>Introduction</title>
+
+    <slide id="overview">
+      <title>Overview</title>
+      <ul>
+        <li>What is API Design?</li>
+        <li>API Stories</li>
+        <li>Exercise</li>
+        <li>Review</li>
+      </ul>
+    </slide>
+  </part>
+  <part id="design">
+    <title>Design</title>
+
+    <slide id="what-is-api-design">
+      <title>What is API Design?</title>
+      <ul>
+        <li>Definition</li>
+        <li>Rationale</li>
+        <li>Guide</li>
+        <li>Reference</li>
+      </ul>
+    </slide>
+    <slide id="first-why-design-apis">
+      <title>First, Why Design APIs?</title>
+      <ul>
+        <li>Every API starts with a story</li>
+        <ul>
+          <li>&quot;We need ...&quot;</li>
+          <li>&quot;Our customers want ...&quot;</li>
+          <li>&quot;I have an idea ...&quot;</li>
+        </ul>
+        <li>Designing is critical to success</li>
+      </ul>
+    </slide>
+    <slide id="what-is-api-design-definition">
+      <title>What is API Design : Definition</title>
+      <ul>
+        <li>Creating a design sets boundaries</li>
+        <li>Establishes target audience</li>
+        <li>Identifies measures of success</li>
+      </ul>
+    </slide>
+    <slide id="what-is-api-design-rationale">
+      <title>What is API Design : Rationale</title>
+      <ul>
+        <li>Creates a reason for this API</li>
+        <li>Shows the set of actions</li>
+        <li>Details results</li>
+      </ul>
+    </slide>
+    <slide id="what-is-api-design-guide">
+      <title>What is API Design : Guide</title>
+      <ul>
+        <li>Offers hints for properites and resources</li>
+        <li>Helps programmers say 'yes' or 'no'</li>
+        <li>Encourages paying attention to measures</li>
+      </ul>
+    </slide>
+    <slide id="what-is-api-design-reference">
+      <title>What is API Design : Reference</title>
+      <ul>
+        <li>Provides examples for API users</li>
+        <li>Responds to common challenges</li>
+        <li>Invites alternate uses</li>
+      </ul>
+    </slide>
+    <slide id="what-is-api-design-summary">
+      <title>What is API Design : Summary</title>
+      <ul>
+        <li>Defines your API</li>
+        <li>Gives meaning/purpose to your work</li>
+        <li>Acts as a guide while building</li>
+        <li>Provides a reference for users</li>
+      </ul>
+    </slide>
+  </part>
+  
+  <part id="api-stories">
+    <title>API Stories</title>
+
+    <slide id="api-stories">
+      <title>API Stories</title>
+      <ul>
+        <li>Design process guidance</li>
+        <li>Shared understanding (across teams)</li>
+        <li>Structured MD document</li>
+      </ul>
+    </slide>
+    <slide id="api-story-example">
+      <title>API Story Example</title>
+      <img 
+          src="mamund-design-story.png" 
+          title="Task Management API Story" 
+          href="https://github.com/mamund/2025-05-ai-apis-design-with-alps/blob/main/01-api-stories-to-alps/tasks-api-story.md" 
+          class="fullsize"/>
+    </slide>
+    <slide id="api-story-elements">
+      <title>API Story Elements</title>
+      <ul>
+        <li>Purpose</li>
+          <ul>
+            <li>Simple statement</li>
+          </ul>
+        <li>Properties</li>
+          <ul>
+            <li>All the data points (storage and queries)</li>
+          </ul>
+        <li>Resources</li>
+          <ul>
+            <li>RESTful states (home, list, item, etc.)</li>
+          </ul>        
+        <li>Actions</li>
+          <ul>
+            <li>list, read, write, update, delete, share, etc.</li>
+          </ul>
+        <li>Rules</li>
+          <ul>
+            <li>limits, validators, etc.</li>
+          </ul>
+      </ul>
+    </slide>
+    <slide id="api-story-purpose">
+      <title>API Story : Purpose</title>
+      <ul>
+        <li>Simple statement</li>
+        <li>Shareable</li>
+        <li>Repeatable</li>
+        <li>Sets scope and audience</li>
+      </ul>
+    </slide>
+    <slide id="api-story-purpose-example">
+      <title>API Story : Purpose : Example</title>
+      <img 
+          src="mamund-design-purpose.png" 
+          title="Task Management API Purpose" 
+          href="https://github.com/mamund/2025-05-ai-apis-design-with-alps/blob/main/01-api-stories-to-alps/tasks-api-story.md" 
+          class="fullsize"/>
+    </slide>
+    <slide id="api-story-properties">
+      <title>API Story : Properties</title>
+      <ul>
+        <li>Data points for the API</li>
+        <li>Includes storage and query properties</li>
+        <li>Provides clear list and definition</li>
+        <li>Chance to reuse shared properties</li>
+      </ul>
+    </slide>
+    <slide id="api-story-properties-example">
+      <title>API Story : Properties : Example</title>
+      <img 
+          src="mamund-design-properties.png" 
+          title="Task Management API Properties" 
+          href="https://github.com/mamund/2025-05-ai-apis-design-with-alps/blob/main/01-api-stories-to-alps/tasks-api-story.md" 
+          class="fullsize"/>
+    </slide>
+    <slide id="api-story-resources">
+      <title>API Story : Resources</title>
+      <ul>
+        <li>&quot;Resting places&quot; for your API</li>
+        <li>Typically organized as HOME, COLLECTION, ITEM</li>
+        <li>Each resource is a 'state'</li>
+        <li>States return both properites and actions</li>
+      </ul>
+    </slide>
+    <slide id="api-story-resources-example">
+      <title>API Story : Resources : Example</title>
+      <img 
+          src="mamund-design-resources.png" 
+          title="Task Management API Resources" 
+          href="https://github.com/mamund/2025-05-ai-apis-design-with-alps/blob/main/01-api-stories-to-alps/tasks-api-story.md" 
+          class="fullsize"/>
+    </slide>
+    <slide id="api-story-actions">
+      <title>API Story : Actions</title>
+      <ul>
+        <li>The things clients can *do* at each resource</li>
+        <li>CRUD actions</li>
+        <li>Filters</li>
+        <li>Custom Actions (e.g. markComplete)</li>
+      </ul>
+    </slide>
+    <slide id="api-story-actions-example">
+      <title>API Story : Actions : Example</title>
+      <img 
+          src="mamund-design-actions.png" 
+          title="Task Management API Actions" 
+          href="https://github.com/mamund/2025-05-ai-apis-design-with-alps/blob/main/01-api-stories-to-alps/tasks-api-story.md" 
+          class="fullsize"/>
+    </slide>
+    <slide id="api-story-rules">
+      <title>API Story : Rules</title>
+      <ul>
+        <li>Limits on some actions</li>
+        <li>Usually implemented behind the interface</li>
+        <li>Examples:</li>
+        <li>ID must be unique</li>
+        <li>Customers cannot have duplicate accounts</li>
+      </ul>
+    </slide>
+    <slide id="api-story-rules-example">
+      <title>API Story : Rules : Example</title>
+      <img 
+          src="mamund-design-rules.png" 
+          title="Task Management API Rules" 
+          href="https://github.com/mamund/2025-05-ai-apis-design-with-alps/blob/main/01-api-stories-to-alps/tasks-api-story.md" 
+          class="fullsize"/>
+    </slide>
+    <slide id="api-story-summary">
+      <title>API Story : Summary</title>
+      <ul>
+        <li>Structured markdown</li>
+        <li>Purpose, Properties, Resources, Actions, Rules</li>
+        <li>Design guidance, shared understanding</li>
+      </ul>
+    </slide>
+  </part>
+  <part id="exercise">
+    <title>Excercise</title>
+    
+    <slide id="api-stories-exercise">
+      <title>API Stories Exercise</title>
+      <ul>
+        <li>Create an API Story Document</li>
+        <li>Complete sections</li>
+        <ul>
+          <li>Purpose (single statement)</li>
+          <li>Properties (data points)</li>
+          <li>Resources (home, collection, item)</li>
+          <li>Actions (list, readItem, add, editItem, removeItem)</li>
+          <li>Rules (optional)</li>
+        </ul>
+      </ul>
+    </slide>
+  </part>
+  <part id="review">
+    <title>Review</title>
+    
+    <slide id="api-stories-review">
+      <title>API Stories : Review</title>
+      <ul>
+        <li>What is API Design?</li>
+        <li>API Stories</li>
+        <li>Exercise</li>
+      </ul>
+    </slide>
+    <slide id="what-is-api-design-review">
+      <title>What is API Design : Review</title>
+      <ul>
+        <li>Defines your API</li>
+        <li>Gives meaning/purpose to your work</li>
+        <li>Acts as a guide while building</li>
+        <li>Provides a reference for users</li>
+      </ul>
+    </slide>
+    <slide id="api-story-review">
+      <title>API Story : Review</title>
+      <ul>
+        <li>Structured MD</li>
+        <li>Purpose, Properties, Resources, Actions, Rules</li>
+        <li>Design guidance, shared understanding</li>
+      </ul>
+    </slide>
+    <slide id="questions">
+      <title>Questions</title>
+      <img 
+          src="mamund-questions.png" 
+          title="Questions"
+          class="fullsize"/>
+    </slide>
+  </part>
+</presentation>
+<!-- end mamund insert -->
 	<presentation id="workshop-api-description">
 		<title short="Introduction to APIs and OpenAPI">Practical API Management with OpenAPI: Introduction to APIs and API Descriptions</title>
 		<author>Erik Wilde</author>
