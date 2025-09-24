@@ -34,97 +34,117 @@
 			<title>Welcome to the OAI Track!</title>
 			<slide id="oai-intro">
 				<title>The OpenAPI Initiative (OAI)</title>
+				<img src="OAI-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
 				<ul>
-					<li>Join the community: <code href="https://github.com/OAI/community" title="OAI Community">github.com/OAI/community</code></li>
-					<li>All technical and special interest groups meetings: <code href="https://www.openapis.org/calendar" title="OAI Community Calendar">openapis.org/calendar</code></li>
-					<li>Upcoming events (including OAI Tracks): <code href="https://www.openapis.org/events" title="OAI Events">openapis.org/events</code></li>
+					<li>The organization behind OpenAPI (and other specifications)</li>
+					<li>Works under the umbrella of the Linux Foundation</li>
+					<li>Technical work is open to everyone</li>
+					<li>Members support OAI and decide on the strategic direction</li>
 				</ul>
 			</slide>
-		</part>
-		<part id="oai-user-stories">
-			<title>OAI User Stories</title>
-			<slide id="wiifm">
-				<title><span title="What's in it for me?">WIIFM</span>: Everybody's Favorite Station</title>
-				<img src="wiifm.webp" title="WIIFM: What's in it for me?" class="fullsize"/>
-			</slide>
-			<slide id="wiifm-org-biz">
-				<title>WIIFM: Business and Organization Value</title>
-				<img src="unbundling-the-enterprise.jpg" title='Stephen Fishman and Matt McLarty, "Unbundling the Enterprise: APIs, Optionality, and the Science of Happy Accidents", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-				<table cellspacing="20">
-					<tr>
-						<th align="right" valign="top">As</th>
-						<td valign="top">business or organization leader</td>
-					</tr>
-					<tr>
-						<th align="right" valign="top">I want</th>
-						<td valign="top">well-defined and usable digital interfaces for partners and the public</td>
-					</tr>
-					<tr>
-						<th align="right" valign="top">so that</th>
-						<td valign="top">I can more easily change and scale my value streams.</td>
-					</tr>
-				</table>
-			</slide>
-			<slide id="wiifm-dev">
-				<title>WIIFM: API Developers</title>
-				<img src="automating-api-delivery.jpg" title='Ikenna Nwaiwu, " Automating API Delivery: APIOps with OpenAPI", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-				<table cellspacing="20">
-					<tr>
-						<th align="right" valign="top">As</th>
-						<td valign="top">an API developer</td>
-					</tr>
-					<tr>
-						<th align="right" valign="top">I want</th>
-						<td valign="top">to describe the product I am going to implement</td>
-					</tr>
-					<tr>
-						<th align="right" valign="top">so that</th>
-						<td valign="top">I can use various tools throughout the API lifecycle.</td>
-					</tr>
-				</table>
-			</slide>
-			<slide id="wiifm-org-biz">
-				<title>WIIFM: API Consumers</title>
-				<img src="design-and-build-great-web-apis.jpg" title='Mike Amundsen, "Design and Build Great Web APIs: Robust, Reliable, and Resilient", 2020' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-				<table cellspacing="20">
-					<tr>
-						<th align="right" valign="top">As</th>
-						<td valign="top">an API consumer</td>
-					</tr>
-					<tr>
-						<th align="right" valign="top">I want</th>
-						<td valign="top">APIs to have standardized descriptions</td>
-					</tr>
-					<tr>
-						<th align="right" valign="top">so that</th>
-						<td valign="top">I can easily understand and consume the products I depend on.</td>
-					</tr>
-				</table>
-			</slide>
-			<slide id="wiifm-platform">
-				<title>WIIFM: Platform Builders</title>
-				<img src="platform-strategy.jpg" title='Gregor Hohpe, "Platform Strategy: Innovation Through Harmonization", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-				<table cellspacing="20">
-					<tr>
-						<th align="right" valign="top">As</th>
-						<td valign="top">an API platform builder</td>
-					</tr>
-					<tr>
-						<th align="right" valign="top">I want</th>
-						<td valign="top">to support standardized description formats</td>
-					</tr>
-					<tr>
-						<th align="right" valign="top">so that</th>
-						<td valign="top">all producers and consumers speak <q>the same language</q>.</td>
-					</tr>
-				</table>
-			</slide>
+			<part id="oai-user-stories">
+				<title>OAI User Stories</title>
+				<slide id="wiifm-org-biz">
+					<title>WIIFM: Business and Organization Value</title>
+					<img src="unbundling-the-enterprise.jpg" title='Stephen Fishman and Matt McLarty, "Unbundling the Enterprise: APIs, Optionality, and the Science of Happy Accidents", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+					<table cellspacing="20">
+						<tr>
+							<th align="right" valign="top">As</th>
+							<td valign="top">business or organization leader</td>
+						</tr>
+						<tr>
+							<th align="right" valign="top">I want</th>
+							<td valign="top">well-defined and usable digital interfaces for partners and the public</td>
+						</tr>
+						<tr>
+							<th align="right" valign="top">so that</th>
+							<td valign="top">I can more easily change and scale my value streams.</td>
+						</tr>
+					</table>
+				</slide>
+				<slide id="wiifm-dev">
+					<title>WIIFM: API Developers</title>
+					<img src="automating-api-delivery.jpg" title='Ikenna Nwaiwu, " Automating API Delivery: APIOps with OpenAPI", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+					<table cellspacing="20">
+						<tr>
+							<th align="right" valign="top">As</th>
+							<td valign="top">an API developer</td>
+						</tr>
+						<tr>
+							<th align="right" valign="top">I want</th>
+							<td valign="top">to describe the product I am going to implement</td>
+						</tr>
+						<tr>
+							<th align="right" valign="top">so that</th>
+							<td valign="top">I can use various tools throughout the API lifecycle.</td>
+						</tr>
+					</table>
+				</slide>
+				<slide id="wiifm-org-biz">
+					<title>WIIFM: API Consumers</title>
+					<img src="design-and-build-great-web-apis.jpg" title='Mike Amundsen, "Design and Build Great Web APIs: Robust, Reliable, and Resilient", 2020' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+					<table cellspacing="20">
+						<tr>
+							<th align="right" valign="top">As</th>
+							<td valign="top">an API consumer</td>
+						</tr>
+						<tr>
+							<th align="right" valign="top">I want</th>
+							<td valign="top">APIs to have standardized descriptions</td>
+						</tr>
+						<tr>
+							<th align="right" valign="top">so that</th>
+							<td valign="top">I can easily understand and consume the products I depend on.</td>
+						</tr>
+					</table>
+				</slide>
+				<slide id="wiifm-platform">
+					<title>WIIFM: Platform Builders</title>
+					<img src="platform-strategy.jpg" title='Gregor Hohpe, "Platform Strategy: Innovation Through Harmonization", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+					<table cellspacing="20">
+						<tr>
+							<th align="right" valign="top">As</th>
+							<td valign="top">an API platform builder</td>
+						</tr>
+						<tr>
+							<th align="right" valign="top">I want</th>
+							<td valign="top">to support standardized description formats</td>
+						</tr>
+						<tr>
+							<th align="right" valign="top">so that</th>
+							<td valign="top">all producers and consumers speak <q>the same language</q>.</td>
+						</tr>
+					</table>
+				</slide>
+			</part>
 		</part>
 		<part id="ai">
 			<title>The 100,000,000,000 lb Gorilla</title>
 			<slide id="robots-and-openapi">
 				<title>What Does AI Need?</title>
 				<img src="robot-reading-openapi-menu.png" class="fullsize"/>
+			</slide>
+			<slide id="ai-consuming-apis">
+				<title>AI Consuming APIs</title>
+				<ul>
+					<li>How can I search and select capabilities?</li>
+					<li>Are capabilities at the right semantic level for AI?</li>
+					<li>Does OpenAPI contain all necessary information?</li>
+					<ul>
+						<li>Enriching OpenAPI for what it can currently represent</li>
+						<li>Extending/evolving OpenAPI to better serve AI needs</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="ai-api-consumer-perspective">
+				<title>Consumers of AI-backed APIs</title>
+				<ul>
+					<li>Does this API use AI at runtime?</li>
+					<li>Is the result deterministic or variable?</li>
+					<li>Which model is used and can I choose it?</li>
+					<li>Will my input be stored or used for training?</li>
+					<li>Can I influence or opt out of that behavior?</li>
+				</ul>
 			</slide>
 		</part>
 		<part id="welcome-versions">
