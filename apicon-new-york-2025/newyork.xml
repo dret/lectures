@@ -107,7 +107,7 @@
 			</slide>
 		</part>
 	</presentation>
-	<!-- start mamund insert -->
+	<!-- start mamund insert design -->
 <presentation xmlns="http://dret.net/xmlns/hotspot/1" id="designing-apis-with-api-story-documents">
   <title short="API Story Documents">Designing APIs with API Story Documents</title>
   <author>Mike Amundsen</author>
@@ -389,7 +389,7 @@
     </slide>
   </part>
 </presentation>
-<!-- end mamund insert -->
+<!-- end mamund insert design -->
 	<presentation id="workshop-api-description">
 		<title short="Introduction to APIs and OpenAPI">Practical API Management with OpenAPI: Introduction to APIs and API Descriptions</title>
 		<author>Erik Wilde</author>
@@ -567,4 +567,208 @@
 			</slide>
 		</part>
 	</presentation>
+	<!-- start mamund insert overlays -->
+<presentation xmlns="http://dret.net/xmlns/hotspot/1" id="openapi-overlays">
+  <title>Adapting OpenAPI Documents with Overlays</title>
+  <part id="overlys-introduction">
+    <title>Introduction</title>
+    <slide id="overview">
+      <title>Overview</title>
+      <ul>
+        <li>Why Overlays</li>
+        <li>How Overlays Work</li>
+        <li>Overlay Examples</li>
+        <li>Common Uses</li>
+        <li>Exercise</li>
+        <li>Review</li>
+      </ul>
+    </slide>
+    <slide id="why-overlays">
+      <title>Why Overlays?</title>
+      <ul>
+        <li>Different audiences need different specs: internal, partner, public</li>
+        <li>Forking creates maintenance burden and version drift</li>
+        <li>Overlays = modify without duplicating</li>
+        <li>Think composability and reuse for API contracts</li>
+      </ul>
+    </slide>
+    <slide id="real-world-examples">
+      <title>Real-World Examples</title>
+      <ul>
+        <li>Redact internal ops for partner docs</li>
+        <li>Add beta endpoints without polluting GA spec</li>
+        <li>Remove internal-only fields for mock generation</li>
+        <li>Translate descriptions for international teams</li>
+      </ul>
+    </slide>
+  </part>
+  <part id="how-overlays-work">
+    <title>How Overlays Work</title>
+    <slide id="what-is-an-overlay">
+      <title>What Is an Overlay?</title>
+      <ul>
+        <li>A declarative patch applied to an OpenAPI document</li>
+        <li>You define the changes, tooling applies them</li>
+        <li>Output: customized OpenAPI spec for a specific context</li>
+        <li>Based on OpenAPI Initiative's Overlay spec</li>
+      </ul>
+    </slide>
+    <slide id="anatomy-of-an-overlay">
+      <title>Anatomy of an Overlay</title>
+      <ul>
+        <li>Keys: `target`, `action`, `value`</li>
+        <li>Actions: `add`, `remove`, `replace`</li>
+        <li>Targets are JSONPath-style references into base spec</li>
+        <li>Output = transformed version, not an inline mutation</li>
+      </ul>
+    </slide>
+    <slide id="overlay-vs-fork">
+      <title>Overlay vs Fork</title>
+      <ul>
+        <li>Forking duplicates effort and increases drift</li>
+        <li>Overlays isolate change and encourage reuse</li>
+        <li>Keeps base spec authoritative and maintainable</li>
+        <li>Great for automation and clarity</li>
+      </ul>
+    </slide>
+    <slide id="overlay-actions">
+      <title>Overlay Actions</title>
+      <ul>
+        <li>`add`: insert new data</li>
+        <li>`replace`: change existing value</li>
+        <li>`remove`: delete fields or sections</li>
+        <li>Focus on small, targeted overlays — easier to debug</li>
+      </ul>
+    </slide>
+  </part>
+  <part id="overlay-examples">
+    <title>Overlay Examples</title>
+    <slide id="base-spec-example-get-pets">
+      <title>Base Spec Example – GET /pets</title>
+      <ul>
+        <li>Path: `/pets`, Method: `GET`</li>
+        <li>Summary, description, tags, response schema</li>
+        <li>This will be modified by overlays in the next slides</li>
+        <li>Used for mock/demo/test generation</li>
+      </ul>
+    </slide>
+    <slide id="example-add-summary">
+      <title>Example – Add Summary</title>
+      <ul>
+        <li>Target: `paths./pets.get.summary`</li>
+        <li>Action: `replace`, Value: &quot;List all available pets&quot;</li>
+        <li>Clean way to change messaging without rewriting the spec</li>
+        <li>Useful for audience-specific tone and language</li>
+      </ul>
+    </slide>
+    <slide id="example-remove-operation">
+      <title>Example – Remove Operation</title>
+      <ul>
+        <li>Target: `paths./pets.put`</li>
+        <li>Action: `remove`</li>
+        <li>Removes internal update operation from external docs</li>
+        <li>Use before publishing to external consumers</li>
+      </ul>
+    </slide>
+    <slide id="example-replace-schema-field">
+      <title>Example – Replace Schema Field</title>
+      <ul>
+        <li>Target: `components.schemas.Pet.properties.name.description`</li>
+        <li>Action: `replace`, Value: &quot;The pet’s given name&quot;</li>
+        <li>Fine-grained control of docs, schema, or examples</li>
+        <li>Localized or clarified description overrides</li>
+      </ul>
+    </slide>
+  </part>
+  <part id="common-uses">
+    <title>Common Uses</title>
+    <slide id="use-cases-at-a-glance">
+      <title>Use Cases at a Glance</title>
+      <ul>
+        <li>Internal vs external profiles</li>
+        <li>Beta vs GA feature overlays</li>
+        <li>Region-specific or language-specific docs</li>
+        <li>Security redaction for mock/test users</li>
+      </ul>
+    </slide>
+    <slide id="overlay-directory-patterns">
+      <title>Overlay Directory Patterns</title>
+      <ul>
+        <li>`overlays/internal.yaml`, `overlays/partner.yaml`, etc.</li>
+        <li>Compose overlays in order if needed</li>
+        <li>Helps clarify intent and audience for each patch</li>
+        <li>Enables portable, layered API bundles</li>
+      </ul>
+    </slide>
+    <slide id="ci-cd-integration">
+      <title>CI/CD Integration</title>
+      <ul>
+        <li>Apply overlays during build or deploy</li>
+        <li>Automate audience-specific doc builds</li>
+        <li>Can support GitOps-style preview/staging flows</li>
+        <li>Avoids duplication across environments</li>
+      </ul>
+    </slide>
+    <slide id="testing-and-mocking">
+      <title>Testing and Mocking</title>
+      <ul>
+        <li>Use overlays to generate testable variants</li>
+        <li>Tailored mocks: remove auth headers, hide internals</li>
+        <li>Great for contract testing and demos</li>
+        <li>Supports partial feature rollout</li>
+      </ul>
+    </slide>
+  </part>
+  <part id="overlays-exercise">
+    <title>Exercise</title>
+    <slide id="">
+      <title>Create a Task Search Overlay</title>
+      <ul>
+        <li>Identify endpoints for searching tasks</li>
+        <li>Create an overlay that removes all other endpoints</li>
+        <li>Apply the overlay to generate results</li>
+      </ul>
+    </slide>
+  </part>
+  <part id="overlay-review">
+    <title>Review</title>
+    <slide id="caveats-and-challenges">
+      <title>Caveats and Challenges</title>
+      <ul>
+        <li>Targets may break if base spec structure changes</li>
+        <li>Overlays can become brittle if overused</li>
+        <li>Limited tooling compared to full OpenAPI</li>
+        <li>Requires discipline in base spec maintenance</li>
+      </ul>
+    </slide>
+    <slide id="best-practices">
+      <title>Best Practices</title>
+      <ul>
+        <li>Keep overlays small and scoped</li>
+        <li>Name overlays clearly (`redact.yaml`, `fr.yaml`, etc.)</li>
+        <li>Document intent of each overlay</li>
+        <li>Validate before applying</li>
+      </ul>
+    </slide>
+    <slide id="summary">
+      <title>Summary</title>
+      <ul>
+        <li>Overlays = composable, declarative OpenAPI deltas</li>
+        <li>Solve the “spec reuse” problem without forks</li>
+        <li>Ideal for multi-team, multi-stage, multi-audience APIs</li>
+        <li>Backed by OpenAPI community standards</li>
+      </ul>
+    </slide>
+    <slide id="resources">
+      <title>Resources</title>
+      <ul>
+        <li><a href="https://github.com/OAI/OpenAPI-Specification/tree/main/overlays">OAI Overlay Specification</a> </li>
+        <li>Example tool: https://github.com/Mermade/openapi-overlays-cli</li>
+        <li>Sample repo: https://github.com/your-org/openapi-overlays-demo</li>
+        <li>Contribute to the spec, try overlays in your pipeline</li>
+      </ul>
+    </slide>
+  </part>
+</presentation>
+<!-- end mamund insert overlays -->
 </hotspot>
