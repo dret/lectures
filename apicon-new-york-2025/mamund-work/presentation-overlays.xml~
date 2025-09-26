@@ -36,7 +36,7 @@
     <slide id="anatomy-of-an-overlay">
       <title>Anatomy of an Overlay</title>
       <ul>
-        <li>Keys: <code>target</code>, <code>action</code>, <code>value</code></li>
+        <li>Keys: <code>target</code>, <code>action</code>, <code>value</code</li>
         <li>Actions: `add`, `remove`, `replace`</li>
         <li>Targets are JSONPath-style references into base spec</li>
         <li>Output = transformed version, not an inline mutation</li>
