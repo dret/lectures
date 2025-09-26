@@ -39,7 +39,7 @@
     <title>How Overlays Work</title>
     <slide id="what-is-an-overlay">
       <title>What Is an Overlay?</title>
-      <img src="mamund-overlay-remove-code.png" style="float: right ; height : 40% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; " />
+      <img src="mamund-overlay-description-code.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; " />
       <ul>
         <li>A declarative patch applied to an OpenAPI document</li>
         <li>You define the changes, tooling applies them</li>
@@ -49,12 +49,11 @@
     </slide>
     <slide id="anatomy-of-an-overlay">
       <title>Anatomy of an Overlay</title>
-      <img src="mamund-overlay-remove-code.png" style="float: right ; height : 40% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; " />
+      <img src="mamund-overlay-description-code.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; " />
       <ul>
         <li>Keys: <code>target</code>, <code>action</code>, <code>value</code></li>
         <li>Actions: <code>add</code>, <code>remove</code>, <code>update</code></li>
-        <li>Targets are <a href="https://www.rfc-editor.org/rfc/rfc9535.html">JSONPath</a> (RFC9535) references into base spec</li> 
-        <ul><li><code>$.info.description</code></li></ul>
+        <li>Targets are <a href="https://www.rfc-editor.org/rfc/rfc9535.html">JSONPath</a> (RFC9535) references into base spec: <code>$.info.description</code></li>
         <li>Output = transformed external version, not an inline mutation</li>
       </ul>
     </slide>
@@ -219,7 +218,6 @@
     </slide>
     <slide id="summary">
       <title>Summary</title>
-      <img src="mamund-overlay-specs.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; " />
       <ul>
         <li>Overlays = composable, declarative OpenAPI deltas</li>
         <li>Solve the "spec reuse" problem without forks</li>
