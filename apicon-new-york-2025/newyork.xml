@@ -520,57 +520,6 @@
   </part>
 </presentation>
 <!-- end mamund insert design -->
-	<presentation id="api-for-ai">
-		<title short="Your APIs Are Not Ready for AI (Yet)">Your APIs Are Not Ready for AI (Yet): A Lifecycle-Based Readiness Guide</title>
-		<author>Erik Wilde</author>
-		<affiliation>Head of Enterprise Strategy, <a href="https://jentic.com/">Jentic</a></affiliation>
-		<date short="2025-09-30">September 30, 2025</date>
-		<copyright>2025 Erik Wilde</copyright>
-		<part id="api-ai">
-			<title>APIs for AI: Problem or Not?</title>
-			<slide id="api-ai-new-york">
-				<title>How does AI affect APIs?</title>
-				<img src="apis-and-ai-cover.jpg" title="How does AI affect APIs? Expert Opinions from API Days New York 2025" href="https://www.youtube.com/watch?v=6ekEQR45IIo" class="fullsize-shadow"/>
-			</slide>
-			<slide id="mcp">
-				<title>Model Context Protocol (MCP)</title>
-				<img src="mcp-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
-				<ul>
-					<li>MCP seems to be the new <q>standard protocol</q> for LLM consumers</li>
-					<li>Many mapping tools to generate MCP from OpenAPI descriptions</li>
-					<li>Complex APIs will overload the MCP host's context</li>
-					<li>Larger API landscapes will overload the MCP host's context</li>
-				</ul>
-			</slide>
-		</part>
-		<part id="api-description">
-			<title>Better API Description</title>
-		</part>
-		<part id="api-selection">
-			<title>Better API Selection</title>
-		</part>
-		<part id="api-usage">
-			<title>Understanding API Usage Patterns</title>
-		</part>
-		<part id="api-workflows">
-			<title>Focused API Purpose</title>
-		</part>
-		<part id="api-sandbox">
-			<title>Safe AI Experimentation</title>
-		</part>
-		<part id="conclusions-api-for-ai">
-			<title>Conclusions: AI is (not) just another API Consumer</title>
-			<slide id="thanks-api-for-ai">
-				<title>Thank You!</title>
-				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-				<ul>
-					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-					<li>Slides online: <a href="http://dret.net/lectures/apicon-new-york-2025/"><code>dret.net/lectures/apicon-new-york-2025/</code></a></li>
-				</ul>
-			</slide>
-		</part>
-	</presentation>
 	<!-- start mamund insert overlays -->
 <presentation xmlns="http://dret.net/xmlns/hotspot/1" id="openapi-overlays">
   <title>Adapting OpenAPI Documents with Overlays</title>
@@ -821,4 +770,55 @@
   </part>
 </presentation>
 <!-- end mamund insert overlays -->
+	<presentation id="api-for-ai">
+		<title short="Your APIs Are Not Ready for AI (Yet)">Your APIs Are Not Ready for AI (Yet): A Lifecycle-Based Readiness Guide</title>
+		<author>Erik Wilde</author>
+		<affiliation>Head of Enterprise Strategy, <a href="https://jentic.com/">Jentic</a></affiliation>
+		<date short="2025-09-30">September 30, 2025</date>
+		<copyright>2025 Erik Wilde</copyright>
+		<part id="api-ai">
+			<title>APIs for AI: Problem or Not?</title>
+			<slide id="api-ai-new-york">
+				<title>How does AI affect APIs?</title>
+				<img src="apis-and-ai-cover.jpg" title="How does AI affect APIs? Expert Opinions from API Days New York 2025" href="https://www.youtube.com/watch?v=6ekEQR45IIo" class="fullsize-shadow"/>
+			</slide>
+			<slide id="mcp">
+				<title>Model Context Protocol (MCP)</title>
+				<img src="mcp-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>MCP seems to be the new <q>standard protocol</q> for LLM consumers</li>
+					<li>Many mapping tools to generate MCP from OpenAPI descriptions</li>
+					<li>Complex APIs will overload the MCP host's context</li>
+					<li>Larger API landscapes will overload the MCP host's context</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="api-description">
+			<title>Better API Description</title>
+		</part>
+		<part id="api-selection">
+			<title>Better API Selection</title>
+		</part>
+		<part id="api-usage">
+			<title>Understanding API Usage Patterns</title>
+		</part>
+		<part id="api-workflows">
+			<title>Focused API Purpose</title>
+		</part>
+		<part id="api-sandbox">
+			<title>Safe AI Experimentation</title>
+		</part>
+		<part id="conclusions-api-for-ai">
+			<title>Conclusions: AI is (not) just another API Consumer</title>
+			<slide id="thanks-api-for-ai">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/apicon-new-york-2025/"><code>dret.net/lectures/apicon-new-york-2025/</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 </hotspot>
