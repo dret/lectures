@@ -1032,6 +1032,16 @@
 	        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
 	      </ul>
 	    </slide>
+	    <slide id="stage">
+	      <title>Setting the Stage</title>
+	      <img src="golden-path-guardrail.webp" title="Golden Path with a Guardrail" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+	      <ul>
+	        <li>AI and specifically agents don't make much sense without APIs</li>
+	        <li>API landscapes have been around for quite a while</li>
+	        <li>Building a bridge between <q>API Land</q> and <q>AI Land</q></li>
+	        <li>Evolve existing landscapes and guidance with the bridge in mind</li>
+	      </ul>
+	    </slide>
 	  </part>
 	  <part id="api-ai">
 			<title>APIs for AI: Problem or Not?</title>
