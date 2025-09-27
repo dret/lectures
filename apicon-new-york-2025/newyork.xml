@@ -1039,17 +1039,55 @@
 				<title>How does AI affect APIs?</title>
 				<img src="apis-and-ai-cover.jpg" title="How does AI affect APIs? Expert Opinions from API Days New York 2025" href="https://www.youtube.com/watch?v=6ekEQR45IIo" class="fullsize-shadow"/>
 			</slide>
-			<slide id="mcp">
-				<title>Model Context Protocol (MCP)</title>
-				<img src="mcp-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
-				<ul>
-					<li>MCP seems to be the new <q>standard protocol</q> for LLM consumers</li>
-					<li>Many mapping tools to generate MCP from OpenAPI descriptions</li>
-					<li>Complex APIs will overload the MCP host's context</li>
-					<li>Larger API landscapes will overload the MCP host's context</li>
-				</ul>
-			</slide>
+	    <slide id="dx-ax">
+	      <title>From DX to AX</title>
+	      <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+	      <ul>
+	        <li>APIs were typically consumed by developers</li>
+	        <li>Developers write code that <em>often fills API/UX gaps</em></li>
+	        <li>AI takes the developer out of the picture</li>
+	        <li>LLMs have much more limited context than developers</li>
+	        <li>AI consumption of APIs needs to <em>mind the API/UX gap</em></li>
+	      </ul>
+	    </slide>
 		</part>
+	  <part id="mcp">
+	    <title>Model Context Protocol (MCP)</title>
+	    <slide id="mcp">
+	      <title>Model Context Protocol (MCP)</title>
+	      <img src="mcp-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+	      <ul>
+	        <li>MCP seems to be the new <q>standard protocol</q> for LLM consumers</li>
+	        <li>Many mapping tools generate MCP from OpenAPI descriptions</li>
+	        <li>Problem #1: Complex APIs will overload the MCP host's context</li>
+	        <li>Problem #2: Larger API landscapes will overload the MCP host's context</li>
+	      </ul>
+	    </slide>
+	    <slide id="api-mcp-ai-direct">
+	      <title>Direct API/MCP Mapping</title>
+	      <img src="api-mcp-ai-direct.png" class="fullsize-shadow" />
+	    </slide>
+	    <slide id="api-mcp-ai-aggregated">
+	      <title>API Aggregation in MCP</title>
+	      <img src="api-mcp-ai-aggregated.png" class="fullsize-shadow" />
+	    </slide>
+	    <slide id="api-mcp-ai-custom-mcp">
+	      <title>Addressing AX in MCP with Code</title>
+	      <img src="api-mcp-ai-custom-mcp.png" class="fullsize-shadow" />
+	    </slide>
+	    <slide id="api-mcp-ai-custom-api">
+	      <title>Addressing AX in API with Code</title>
+	      <img src="api-mcp-ai-custom-api.png" class="fullsize-shadow" />
+	    </slide>
+	    <slide id="api-mcp-ai-workflow-mcp">
+	      <title>Addressing AX in MCP with Workflows</title>
+	      <img src="api-mcp-ai-workflow-mcp.png" class="fullsize-shadow" />
+	    </slide>
+	    <slide id="api-mcp-ai-workflow-api">
+	      <title>Addressing AX in MCP with Workflows</title>
+	      <img src="api-mcp-ai-workflow-api.png" class="fullsize-shadow" />
+	    </slide>
+	  </part>
 		<part id="api-description">
 			<title>Better API Description</title>
 		</part>
