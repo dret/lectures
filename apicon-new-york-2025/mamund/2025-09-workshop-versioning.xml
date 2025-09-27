@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+<presentation xmlns="http://dret.net/xmlns/hotspot/1" id="api-versioning">
+  <title>API Versioning</title>
+  <part id="introduction">
+    <title>Introduction</title>
+    <slide id="what-this-session-covers">
+      <title>What This Session Covers</title>
+      <ul>
+        <li>The Challenge of Versionings</li>
+        <li>The Three Rules of Changing APIs</li>
+        <li>When and how to shut things down</li>
+      </ul>
+    </slide>
+    <slide id="what-we-mean-by-versioning">
+      <title>What We Mean by “Versioning”</title>
+      <ul>
+        <li>A change in the API promises/contract</li>
+        <li>An announcement of new features</li>
+        <li>A warning of potential additional effort/cost</li>
+      </ul>
+    </slide>
+  </part>
+  <part id="challenge">
+    <title>Challenge</title>
+    <slide id="the-challenge-of-change">
+      <title>The Challenge of Change</title>
+      <ul>
+        <li>APIs must evolve to stay relevant</li>
+        <li>Clients depend on stability</li>
+        <li>Versioning tries to manage this tension</li>
+        <li>Poor versioning magnifies pain</li>
+      </ul>
+    </slide>
+    <slide id="the-temptation">
+      <title>Versions are Just Forks</title>
+      <ul>
+        <li>Fork instead of evolve</li>
+        <li>Create new versions for every change</li>
+        <li>Treat versions like checkpoints</li>
+        <li>Result: fragmentation and friction</li>
+      </ul>
+    </slide>
+    <slide id="real-world-cost-of-versions">
+      <title>Real-World Cost of Versions</title>
+      <ul>
+        <li>Older versions rarely go away</li>
+        <li>Every version adds support burden</li>
+        <li>Clients lag behind</li>
+      </ul>
+    </slide>
+    <slide id="review-challenge">
+      <title>Review – Challenge</title>
+      <ul>
+        <li>Change is inevitable; coordination is not</li>
+        <li>Versions should reduce pain, not add to it</li>
+        <li>Versioning is a signal, not a solution</li>
+        <li>Fragmentation is easy, consolidation is hard</li>
+      </ul>
+    </slide>
+  </part>
+  <part id="rules">
+    <title>Rules</title>
+    <slide id="some-helpful-versioning-rules">
+      <title>Some Helpful Versioning Rules</title>
+      <ul>
+        <li>DON'T</li>
+        <ul><li>Unless you MUST</li></ul>
+        <li>Support older versions</li>
+        <ul><li>For as long as you can</li></ul>
+        <li>First, Do No Harm</li>
+        <ul><li>Hippocratic Oath of APIs</li></ul>
+      </ul>
+    </slide>
+    <slide id="three-rules-to-live-by">
+      <title>Three Rules to Live By</title>
+      <ul>
+        <li>1. Take Nothing Away</li>
+        <li>2. Don't Redefine Anything</li>
+        <li>3. Make All Additions Optional</li>
+      </ul>
+    </slide>
+    <slide id="rule-1-take-nothing-away">
+      <title>Rule 1 – Take Nothing Away</title>
+      <ul>
+        <li>Your API is your promise</li>
+        <ul><li>The features are frozen</li></ul>
+        <li>Once you document it, you can't take it back</li>
+        <ul><li>URLs, media-types, vocabulary, etc.</li></ul>
+        <li>This includes documented <i>processing</i></li>
+        <ul><li>Did you promise to compute results?</li></ul>
+      </ul>
+    </slide>
+    <slide id="rule-2-don-t-redefine-anything">
+      <title>Rule 2 – Don't Redefine Anything</title>
+      <ul>
+        <li>The <i>meaning</i> must not change</li>
+        <ul><li><code>&quot;p&quot; param == pages</code></li></ul>
+        <ul><li><code>&quot;p&quot; param == people</code></li></ul>
+        <li>Don't change <i>implied meaning</i> either</li>
+        <ul><li><code>&quot;small (8oz), medium (16oz), large (20oz)&quot;</code></li></ul>
+        <ul><li><code>&quot;small (4oz), medium (8oz), large (16oz)&quot;</code></li></ul>
+        <li>An enumeration is a promise!</li>
+      </ul>
+    </slide>
+    <slide id="rule-3-make-all-additions-optional">
+      <title>Rule 3 – Make All Additions Optional</title>
+      <ul>
+        <li>You <i>can't</i> add new REQUIRED elements</li>
+        <ul><li><code>form.hatsize</code> can't be added as a required input</li></ul>
+        <li>You <i>can</i> add new OPTIONAL elements</li>
+        <ul><li><code>form.hatsize</code> is OPTIONAL, if missing set to <code>0</code></li></ul>
+        <li>All new operations are optional</li>
+        <ul><li>New workflow steps must be OPTIONAL</li></ul>
+        <ul><li><code>open, review, approve (all required)</code></li></ul>
+        <ul><li><code>open, share, review, approve (share is optional)</code></li></ul>
+      </ul>
+    </slide>
+    <slide id="communicate-changes-clearly">
+      <title>Communicate Changes Clearly</title>
+      <ul>
+        <li>Tell clients what changed, when, and why</li>
+        <ul><li>provide a <code>diff</code> for the interface (see OVERLAYS)</li></ul>
+        <li>Publish migration guides and timelines</li>
+        <ul><li>Project changes in months/years, not days/weeks</li></ul>
+        <li>Track what versions are live and for whom</li>
+        <ul><li>provide a single place to doscovery all versions (and all diffs)</li></ul>
+      </ul>
+    </slide>
+    <slide id="example-s3-model">
+      <title>Example – S3 Model</title>
+      <ul>
+        <li>No breaking changes since 2006</li>
+        <li>Backward-compatible by design</li>
+        <li>One version, still supported</li>
+        <li>Provider absorbs complexity</li>
+      </ul>
+    </slide>
+    <slide id="example-salesforce-model">
+      <title>Example – Salesforce Model</title>
+      <ul>
+        <li>Breaking changes allowed per major version</li>
+        <li>Clients tied to version lifecycles</li>
+        <li>New versions are contract resets</li>
+        <li>Consumer must migrate on provider’s timeline</li>
+      </ul>
+    </slide>
+    <slide id="review-rules">
+      <title>Review – Rules</title>
+      <ul>
+        <li>Don't unless you MUST</li>
+        <li>Take Nothing Away</li>
+        <li>Don't Redefine Anything</li>
+        <li>Make All Additions Optional</li>
+        <li>Communicate Changes Clearly</li>
+      </ul>
+    </slide>
+  </part>
+  <part id="shutdown">
+    <title>Shutdown</title>
+    <slide id="shutting-down-and-api-version">
+      <title>Shutting Down and API/Version</title>
+      <ul>
+        <li>Preparation</li>
+        <li>Communication</li>
+        <li>Mitigation</li>
+        <li>Termination</li>
+      </ul>
+    </slide>
+    <slide id="importance-of-retiring-apis">
+      <title>Importance of Retiring APIs</title>
+      <ul>
+        <li>Nothing lasts forever</li>
+        <ul><li>Better solutions come along</li></ul>
+        <ul><li>The service is no longer needed</li></ul>
+        <li>Avoid Misleading Your Users</li>
+        <ul><li>If the service is not supported, take it down</li></ul>
+        <ul><li>Help users find alternatives</li></ul>
+        <li>Don't litter</li>
+        <ul><li>Clean up your serfvices to reduce maintenance costs</li></ul>
+        <ul><li>Don't contribute to &quot;digital trash&quot;</li></ul>
+      </ul>
+    </slide>
+    <slide id="preparation">
+      <title>Preparation</title>
+      <ul>
+        <li>Plan Ahead</li>
+        <ul><li>The larger your reach, the longer this will take</li></ul>
+        <ul><li>It took two years for Twitter/X to deprecate their v1 API</li></ul>
+        <li>Face up to instability</li>
+        <ul><li>You're likely to have multiple versions in production at the same time</li></ul>
+        <li>Be sure to finish the job</li>
+        <ul><li>Chase down the stragglers, close the loops</li></ul>
+      </ul>
+    </slide>
+    <slide id="communication">
+      <title>Communication</title>
+      <ul>
+        <li>Update your documentation</li>
+        <ul><li>Add notices to all affected endpoints</li></ul>
+        <li>Send out email/messages</li>
+        <ul><li>Proactively send messages to your user base -- often!</li></ul>
+        <li>Emit signals in your responses</li>
+        <ul><li>API responses should emit a Sunset header (RFC8594)</li></ul>
+      </ul>
+    </slide>
+    <slide id="migration">
+      <title>Migration</title>
+      <ul>
+        <li>Ease the pain for your user base</li>
+        <ul><li>This is likely a major disruption for everyone</li></ul>
+        <li>Publish the source code as public domain</li>
+        <ul><li>If at all possible, share the code</li></ul>
+        <li>Open source the API details (ALPS, OpenAPI, etc.)</li>
+        <ul><li>Share published API descriptions and definitions</li></ul>
+        <li>Make user data recoverable</li>
+        <ul><li>If users gave you data, give it back</li></ul>
+      </ul>
+    </slide>
+    <slide id="termination">
+      <title>Termination</title>
+      <ul>
+        <li>Arrange &quot;Brown-outs&quot;</li>
+        <ul><li>Turn of the service temporarily to help reach all users</li></ul>
+        <li>Set services to report the shutdown</li>
+        <ul><li>Set servers to report HTTP 410 Gone for all closed end-points</li></ul>
+        <li>Be sure to point to Mitigations</li>
+        <ul><li>Always return links to your Mitigation details</li></ul>
+      </ul>
+    </slide>
+    <slide id="review-shutdown">
+      <title>Review – Shutdown</title>
+      <ul>
+        <li>Importance of Retiring APIs</li>
+        <li>Steps to follow</li>
+        <ul><li>Preparation</li></ul>
+        <ul><li>Communication</li></ul>
+        <ul><li>Mitigation</li></ul>
+        <ul><li>Termination</li></ul>
+        <li>Don't Litter</li>
+      </ul>
+    </slide>
+  </part>
+  <part id="review">
+    <title>Review</title>
+    <slide id="review-challenge">
+      <title>Review – Challenge</title>
+      <ul>
+        <li>Versioning exists to help manage change</li>
+        <li>But it often becomes the problem itself</li>
+        <li>Every version should be justified</li>
+        <li>Less is better</li>
+      </ul>
+    </slide>
+    <slide id="review-rules">
+      <title>Review – Rules</title>
+      <ul>
+        <li>DON'T unless you MUST</li>
+        <li>Take Nothing Away</li>
+        <li>Don't Redefine Anything</li>
+        <li>Make All Additions Optional</li>
+        <li>Communicate Changes Clearly</li>
+      </ul>
+    </slide>
+    <slide id="review-shutdown">
+      <title>Review – Shutdown</title>
+      <ul>
+        <li>Versions must die</li>
+        <li>Your shutdown plan is part of your design</li>
+        <li>No sunset = no clarity</li>
+        <li>Be intentional about endings</li>
+      </ul>
+    </slide>
+    <slide id="questions">
+      <title>Questions</title>
+      <img 
+          src="mamund-questions.png" 
+          title="Questions"
+          class="fullsize"/>
+    </slide>    
+  </part>
+</presentation>
+</hotspot>

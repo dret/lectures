@@ -237,9 +237,15 @@
 			</slide>
 		</part>
 	</presentation>
+	
 	<!-- start mamund insert design -->
 	<presentation id="workshop-api-stories" include="mamund/2025-09-workshop-api-story.xml" />
-<!-- end mamund insert design -->
+  <!-- end mamund insert design -->
+  
+  <!-- start mamund insert versioning -->
+  <presentation id="workshop-versioning" include="mamund/2025-09-workshop-versioning.xml" />
+  <!-- end mamund insert versioning -->
+  
 	<presentation id="workshop-openapi-introduction">
 		<title short="Introduction to OpenAPI">Practical API Management with OpenAPI: Introduction to OpenAPI</title>
 		<author>Erik Wilde</author>
