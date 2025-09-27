@@ -242,9 +242,7 @@
   <title short="API Story Documents">Designing APIs with API Story Documents</title>
   <author>Mike Amundsen</author>
   <affiliation>mamund.com</affiliation>
-  <date short="2025-09-29">September 29, 2025</date>
   <copyright>2025 Mike Amundsen</copyright>
-  <license href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</license>
   <part id="introduction">
     <title>Introduction</title>
 
@@ -521,9 +519,11 @@
 </presentation>
 <!-- end mamund insert design -->
 	<!-- start mamund insert overlays -->
-<presentation xmlns="http://dret.net/xmlns/hotspot/1" id="openapi-overlays">
+ <presentation xmlns="http://dret.net/xmlns/hotspot/1" id="openapi-overlays">
   <title>Adapting OpenAPI Documents with Overlays</title>
-  <part id="overlys-introduction">
+  <author>Mike Amundsen</author>
+  <affiliation>mamund.com</affiliation>
+  <part id="overlays-introduction">
     <title>Introduction</title>
     <slide id="overview">
       <title>Overview</title>
