@@ -111,6 +111,132 @@
 			</slide>
 		</part>
 	</presentation>
+	<presentation id="workshop-api-description">
+		<title short="Introduction to APIs and OpenAPI">Practical API Management with OpenAPI: Introduction to APIs and API Descriptions</title>
+		<author>Erik Wilde</author>
+		<affiliation>Head of Enterprise Strategy, <a href="https://jentic.com/">Jentic</a></affiliation>
+		<copyright>2025 Erik Wilde</copyright>
+		<part id="value-description-formats">
+			<title>What are API Description Formats</title>
+			<slide id="api-descriptions-services">
+				<title>Consumers want to use Services</title>
+				<img src="api-descriptions-services.png" class="fullsize" />
+			</slide>
+			<slide id="api-descriptions-uses">
+				<title>Description Languages are <q>API Lingua Francas</q></title>
+				<img src="api-descriptions-uses.png" class="fullsize" />
+			</slide>
+			<slide id="api-descriptions-describes">
+				<title>Descriptions are Machine-Readable Documents</title>
+				<img src="api-descriptions-describes.png" class="fullsize" />
+			</slide>
+			<slide id="api-descriptions-understands">
+				<title>Shared Understanding of APIs</title>
+				<img src="api-descriptions-understands.png" class="fullsize" />
+			</slide>
+			<slide id="api-descriptions-discovers">
+				<title>Discovery of Understandable Descriptions</title>
+				<img src="api-descriptions-discovers.png" class="fullsize" />
+			</slide>
+			<slide id="api-descriptions-consumes">
+				<title>Consuming based on Shared Understanding</title>
+				<img src="api-descriptions-consumes.png" class="fullsize" />
+			</slide>
+			<slide id="descriptions-documentation">
+				<title>Are Descriptions Documentation?</title>
+				<img src="food-label.png" title="FDA Nutrition Facts Label" href="https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
+				<ul>
+					<li>Yes, but…</li>
+					<li>APIs should be <em>described in a standardized way</em></li>
+					<li>APIs are intended for <em>consumption by machines</em></li>
+					<li><em>Machine-readable documentation</em> is called <em>description</em></li>
+					<ul>
+						<li>Or: <em>Human-readable description</em> is called <em>documentation</em></li>
+					</ul>
+					<li>APIs should always publish descriptions</li>
+				</ul>
+			</slide>
+			<slide id="description-format-overview">
+				<title>To Each Their Own</title>
+				<ul>
+					<li>API space evolution → Description language co-evolution</li>
+					<li>Today's APIs often use HTTP and a resource-based approach</li>
+					<ul>
+						<li>Competing languages for this space were RAML and Blueprint</li>
+					</ul>
+					<li>Other approaches are supported by other description languages</li>
+					<ul>
+						<li><em>GraphQL</em> for Query-based APIs</li>
+						<li><em>AsyncAPI</em> for Event-based APIs</li>
+						<li><em>gRPC</em> for programming distributed systems</li>
+					</ul>
+				</ul>
+			</slide>
+		</part>
+		<part id="value-openapi-popularity">
+			<title>Why OpenAPI is Popular</title>
+			<slide id="rest-rules">
+				<title>REST Rules</title>
+				<ul>
+					<li><em>External APIs</em> have gravitated towards HTTP/REST</li>
+					<ul>
+						<li>Simple and intuitive API style and tech stack</li>
+						<li>Good fit for client-initiated synchronous interactions</li>
+					</ul>
+					<li><em>Internal APIs</em> have a bit more diversity</li>
+					<ul>
+						<li><em>OpenAPI</em> for request-based services</li>
+						<li><em>GraphQL</em> for flexible front-ends</li>
+						<li><em>AsyncAPI</em> for event-driven services</li>
+						<li><em>gRPC</em> for remote procedure calls</li>
+					</ul>
+					<li>OpenAPI has the largest combined market in the API space</li>
+				</ul>
+			</slide>
+			<slide id="tooling-availability">
+				<title>Plenty of API Lifecycle Tooling</title>
+				<ul>
+					<li><em>Design tools</em> to help create and discuss APIs</li>
+					<li><em>Validation tools</em> to make sure APIs adhere to guidelines</li>
+					<li><em>Mocking tools</em> to generate APIs from descriptions</li>
+					<li><em>Testing tools</em> to validate implementations against descriptions</li>
+					<li><em>Fuzzing tools</em> to test APIs for robustness</li>
+					<li><em>Documentation tools</em> to create API documentation</li>
+					<li><em>Code generation tools</em> for client and server sides</li>
+				</ul>
+			</slide>
+			<slide id="openapi-tooling">
+				<title>OpenAPI Tooling</title>
+				<img src="openapi-tools.png" href="https://tools.openapis.org/" class="fullsize"/>
+			</slide>
+			<slide id="api-landscape">
+				<title>API Landscape</title>
+				<img src="api-landscape.png" href="https://apilandscape.apiscene.io/" class="fullsize-shadow"/>
+			</slide>
+			<slide id="lingua-franca">
+				<title>The Open API Lingua Franca</title>
+				<ul>
+					<li>OpenAPI benefits from the <em>network effect</em></li>
+					<li><em>Technologists</em> can easily talk about designs</li>
+					<li><em>Organisations</em> have a way to describe their building blocks</li>
+					<li><em>Teams</em> can communicate in a more scalable way</li>
+					<li>Communications are possible across all these areas</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="conclusions-workshop-api-openapi">
+			<title>Conclusions: Introduction to APIs and OpenAPI</title>
+			<slide id="thanks-workshop-api-openapi">
+				<title>Thank You!</title>
+				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<ul>
+					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+					<li>Slides online: <a href="http://dret.net/lectures/apicon-new-york-2025/"><code>dret.net/lectures/apicon-new-york-2025/</code></a></li>
+				</ul>
+			</slide>
+		</part>
+	</presentation>
 	<!-- start mamund insert design -->
 <presentation xmlns="http://dret.net/xmlns/hotspot/1" id="designing-apis-with-api-story-documents">
   <title short="API Story Documents">Designing APIs with API Story Documents</title>
@@ -394,132 +520,6 @@
   </part>
 </presentation>
 <!-- end mamund insert design -->
-	<presentation id="workshop-api-description">
-		<title short="Introduction to APIs and OpenAPI">Practical API Management with OpenAPI: Introduction to APIs and API Descriptions</title>
-		<author>Erik Wilde</author>
-		<affiliation>Head of Enterprise Strategy, <a href="https://jentic.com/">Jentic</a></affiliation>
-		<copyright>2025 Erik Wilde</copyright>
-		<part id="value-description-formats">
-			<title>What are API Description Formats</title>
-			<slide id="api-descriptions-services">
-				<title>Consumers want to use Services</title>
-				<img src="api-descriptions-services.png" class="fullsize" />
-			</slide>
-			<slide id="api-descriptions-uses">
-				<title>Description Languages are <q>API Lingua Francas</q></title>
-				<img src="api-descriptions-uses.png" class="fullsize" />
-			</slide>
-			<slide id="api-descriptions-describes">
-				<title>Descriptions are Machine-Readable Documents</title>
-				<img src="api-descriptions-describes.png" class="fullsize" />
-			</slide>
-			<slide id="api-descriptions-understands">
-				<title>Shared Understanding of APIs</title>
-				<img src="api-descriptions-understands.png" class="fullsize" />
-			</slide>
-			<slide id="api-descriptions-discovers">
-				<title>Discovery of Understandable Descriptions</title>
-				<img src="api-descriptions-discovers.png" class="fullsize" />
-			</slide>
-			<slide id="api-descriptions-consumes">
-				<title>Consuming based on Shared Understanding</title>
-				<img src="api-descriptions-consumes.png" class="fullsize" />
-			</slide>
-			<slide id="descriptions-documentation">
-				<title>Are Descriptions Documentation?</title>
-				<img src="food-label.png" title="FDA Nutrition Facts Label" href="https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
-				<ul>
-					<li>Yes, but…</li>
-					<li>APIs should be <em>described in a standardized way</em></li>
-					<li>APIs are intended for <em>consumption by machines</em></li>
-					<li><em>Machine-readable documentation</em> is called <em>description</em></li>
-					<ul>
-						<li>Or: <em>Human-readable description</em> is called <em>documentation</em></li>
-					</ul>
-					<li>APIs should always publish descriptions</li>
-				</ul>
-			</slide>
-			<slide id="description-format-overview">
-				<title>To Each Their Own</title>
-				<ul>
-					<li>API space evolution → Description language co-evolution</li>
-					<li>Today's APIs often use HTTP and a resource-based approach</li>
-					<ul>
-						<li>Competing languages for this space were RAML and Blueprint</li>
-					</ul>
-					<li>Other approaches are supported by other description languages</li>
-					<ul>
-						<li><em>GraphQL</em> for Query-based APIs</li>
-						<li><em>AsyncAPI</em> for Event-based APIs</li>
-						<li><em>gRPC</em> for programming distributed systems</li>
-					</ul>
-				</ul>
-			</slide>
-		</part>
-		<part id="value-openapi-popularity">
-			<title>Why OpenAPI is Popular</title>
-			<slide id="rest-rules">
-				<title>REST Rules</title>
-				<ul>
-					<li><em>External APIs</em> have gravitated towards HTTP/REST</li>
-					<ul>
-						<li>Simple and intuitive API style and tech stack</li>
-						<li>Good fit for client-initiated synchronous interactions</li>
-					</ul>
-					<li><em>Internal APIs</em> have a bit more diversity</li>
-					<ul>
-						<li><em>OpenAPI</em> for request-based services</li>
-						<li><em>GraphQL</em> for flexible front-ends</li>
-						<li><em>AsyncAPI</em> for event-driven services</li>
-						<li><em>gRPC</em> for remote procedure calls</li>
-					</ul>
-					<li>OpenAPI has the largest combined market in the API space</li>
-				</ul>
-			</slide>
-			<slide id="tooling-availability">
-				<title>Plenty of API Lifecycle Tooling</title>
-				<ul>
-					<li><em>Design tools</em> to help create and discuss APIs</li>
-					<li><em>Validation tools</em> to make sure APIs adhere to guidelines</li>
-					<li><em>Mocking tools</em> to generate APIs from descriptions</li>
-					<li><em>Testing tools</em> to validate implementations against descriptions</li>
-					<li><em>Fuzzing tools</em> to test APIs for robustness</li>
-					<li><em>Documentation tools</em> to create API documentation</li>
-					<li><em>Code generation tools</em> for client and server sides</li>
-				</ul>
-			</slide>
-			<slide id="openapi-tooling">
-				<title>OpenAPI Tooling</title>
-				<img src="openapi-tools.png" href="https://tools.openapis.org/" class="fullsize"/>
-			</slide>
-			<slide id="api-landscape">
-				<title>API Landscape</title>
-				<img src="api-landscape.png" href="https://apilandscape.apiscene.io/" class="fullsize-shadow"/>
-			</slide>
-			<slide id="lingua-franca">
-				<title>The Open API Lingua Franca</title>
-				<ul>
-					<li>OpenAPI benefits from the <em>network effect</em></li>
-					<li><em>Technologists</em> can easily talk about designs</li>
-					<li><em>Organisations</em> have a way to describe their building blocks</li>
-					<li><em>Teams</em> can communicate in a more scalable way</li>
-					<li>Communications are possible across all these areas</li>
-				</ul>
-			</slide>
-		</part>
-		<part id="conclusions-workshop-api-openapi">
-			<title>Conclusions: Introduction to APIs and OpenAPI</title>
-			<slide id="thanks-workshop-api-openapi">
-				<title>Thank You!</title>
-				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-				<ul>
-					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-					<li>Slides online: <a href="http://dret.net/lectures/apicon-new-york-2025/"><code>dret.net/lectures/apicon-new-york-2025/</code></a></li>
-				</ul>
-			</slide>
-		</part>
-	</presentation>
 	<presentation id="api-for-ai">
 		<title short="Your APIs Are Not Ready for AI (Yet)">Your APIs Are Not Ready for AI (Yet): A Lifecycle-Based Readiness Guide</title>
 		<author>Erik Wilde</author>
