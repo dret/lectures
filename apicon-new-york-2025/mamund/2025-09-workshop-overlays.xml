@@ -1,6 +1,10 @@
-<presentation xmlns="http://dret.net/xmlns/hotspot/1" id="openapi-overlays">
-  <title>Adapting OpenAPI Documents with Overlays</title>
-  <part id="overlys-introduction">
+<?xml version="1.0" encoding="UTF-8"?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<presentation xmlns="http://dret.net/xmlns/hotspot/1" id="workshop-api-overlay">
+ 	<title short="OpenAPI Overlays">Practical API Management with OpenAPI: Adapting OpenAPI Documents with Overlays</title>
+  <author>Mike Amundsen</author>
+  <affiliation>mamund.com</affiliation>
+  <part id="overlays-introduction">
     <title>Introduction</title>
     <slide id="overview">
       <title>Overview</title>
@@ -246,3 +250,4 @@
     </slide>
   </part>
 </presentation>
+</hotspot>
