@@ -1,0 +1,26 @@
+name: Spectral Linter
+
+on:
+  pull_request:
+    branches: [main, develop]
+  push:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Spectral
+        run: npm install -g @stoplight/spectral-cli
+
+      - name: Find and Lint OpenAPI Files
+        run: |
+          FILES=$(find . -type f \( -name "*.oas.yaml" -o -name "*.oas.json" \))
+          if [[ -z "$FILES" ]]; then
+            echo "No OpenAPI files found. Skipping lint."
+            exit 0
+          fi
+          spectral lint $FILES --ruleset ruleset-builtin.yaml || exit 1
