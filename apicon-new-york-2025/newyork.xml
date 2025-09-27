@@ -91,7 +91,7 @@
 					<li>CA API Academy 2016-2019</li>
 					<li>Axway Catalyst 2019-2023</li>
 					<li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
-					<li>OAI Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative</a></li>
+					<li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
 					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
 					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
 				</ul>
@@ -536,6 +536,16 @@
 					<li>APIs described by OpenAPI are described in a structured way</li>
 					<li><link href="openapi-fundamentals-resources">Resources</link>, <link href="openapi-fundamentals-interactions">interactions</link>, and <link href="openapi-fundamentals-representations">representations</link> are core concepts</li>
 					<li>OpenAPI must use a structured way to describe these concepts</li>
+				</ul>
+			</slide>
+			<slide id="openapi-terminology">
+				<title>OpenAPI Terminology</title>
+				<ul>
+					<li><em>OpenAPI</em> is the name of the standard</li>
+					<li><em>OAI</em> is the name of the OpenAPI Initiative behind OpenAPI</li>
+					<li><em>OAS</em> identifies the OpenAPI specification</li>
+					<li><em>OAD</em> identifies an OpenAPI description (which is based on OAS)</li>
+					<li><em>Please do not call any of these things <q>Swagger</q>!</em></li>
 				</ul>
 			</slide>
 			<slide id="openapi-fundamentals-object-structure">
