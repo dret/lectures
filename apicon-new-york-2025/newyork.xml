@@ -1061,6 +1061,7 @@
 	        <li>Many mapping tools generate MCP from OpenAPI descriptions</li>
 	        <li>Problem #1: Complex APIs will overload the MCP host's context</li>
 	        <li>Problem #2: Larger API landscapes will overload the MCP host's context</li>
+	        <li>Problem #3: Bad AX results in unsatisfactory AI results</li>
 	      </ul>
 	    </slide>
 	    <slide id="api-mcp-ai-direct">
