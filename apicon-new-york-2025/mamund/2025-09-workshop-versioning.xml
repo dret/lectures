@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 <presentation xmlns="http://dret.net/xmlns/hotspot/1" id="api-versioning">
-  <title>API Versioning</title>
+  <title short="API Versioning">Practical API Management with OpenAPI: API Versioning</title>
+  <author>Mike Amundsen</author>
+  <affiliation>mamund.com</affiliation>
   <part id="introduction">
     <title>Introduction</title>
     <slide id="what-this-session-covers">
