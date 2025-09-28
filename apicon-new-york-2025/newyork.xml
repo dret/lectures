@@ -839,8 +839,8 @@
 	        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
 	      </ul>
 	    </slide>
-	    <slide id="stage">
-	      <title>Setting the Stage</title>
+	    <slide id="bridging-the-gap">
+	      <title>Bridging the Gap Between API Land and AI Land</title>
 	      <img src="golden-path-guardrail.webp" title="Golden Path with a Guardrail" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
 	      <ul>
 	        <li>AI and specifically agents don't make much sense without APIs</li>
@@ -908,6 +908,37 @@
 	  </part>
 		<part id="api-description">
 			<title>Better API Description</title>
+		  <slide id="dx-homework">
+		    <title>Do Your DX Homework</title>
+		    <ul>
+		      <li>Most API descriptions need quality improvements anyway</li>
+		      <li>Better descriptions benefit <em>everyone</em>, not just AI agents</li>
+		      <ul>
+		        <li>Complete and meaningful operation summaries</li>
+		        <li>Comprehensive examples for all operations</li>
+		        <li>Clear error handling documentation</li>
+		        <li>Consistent terminology and naming</li>
+		      </ul>
+		      <li>Good DX is the foundation for good AX</li>
+		      <li>Start with the basics: make your APIs understandable</li>
+		    </ul>
+		  </slide>
+		  <slide id="ax-homework">
+		    <title>Now There's AX Homework Too</title>
+		    <ul>
+		      <li>AI agents need information developers don't typically require:</li>
+		      <ul>
+		        <li><em>Explicit relationships</em> between operations and resources</li>
+		        <li><em>Business context</em> explaining when/why to use operations</li>
+		        <li><em>Prerequisite chains</em> and operation dependencies</li>
+		        <li><em>Safe testing values</em> for experimentation</li>
+		        <li><em>Rate limits and cost implications</em> upfront</li>
+		      </ul>
+		      <li>OpenAPI Initiative could add AX-specific fields</li>
+		      <li>Until then, leverage description fields strategically</li>
+		      <li>Consider AX surface area as a new design dimension</li>
+		    </ul>
+		  </slide>
 		</part>
 		<part id="api-selection">
 			<title>Better API Selection</title>
