@@ -654,7 +654,171 @@
 	<!-- start mamund insert overlays -->
 	<presentation id="workshop-api-overlay" include="mamund/2025-09-workshop-overlays.xml" />
   <!-- end mamund insert overlays -->
-	<presentation id="api-for-ai">
+  <presentation id="workshop-error-messages">
+    <title short="Error Messages for HTTP APIs">Practical API Management with OpenAPI: Error Messages for HTTP APIs</title>
+    <author>Erik Wilde</author>
+    <affiliation>Head of Enterprise Strategy, <a href="https://jentic.com/">Jentic</a></affiliation>
+    <copyright>2025 Erik Wilde</copyright>
+    <part id="context">
+      <title>Every Product Fails</title>
+      <slide id="api-product">
+        <title>API are Products</title>
+        <img src="food-label.png" title="FDA Nutrition Facts Label" href="https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Products should focus on user needs and consumability</li>
+          <li>APIs should go beyond the happy path and expose useful error messages</li>
+          <li>API designers should focus on business logic concerns</li>
+        </ul>
+      </slide>
+      <slide id="guidelines">
+        <title>API Guidelines</title>
+        <ul>
+          <li>More API teams mean more ways to solve the same problem</li>
+          <ul>
+            <li>Solving <q>API problems</q> is not what teams should focus on</li>
+            <li>Solving <q>API problems</q> in a consistent way helps the API landscape</li>
+          </ul>
+          <li>Anatomy of a Good Guideline</li>
+          <ul>
+            <li><em>Why</em> does the guideline exist?</li>
+            <li><em>What</em> can be done to address the described issue</li>
+            <li><em>How</em> to implement the solution</li>
+            <li><em>Testing</em> that the guideline has been followed</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="zalando">
+        <title>API Guideline in the Wild</title>
+        <img href="https://opensource.zalando.com/restful-api-guidelines/#http-status-codes-and-errors" title="Zalando RESTful API and Event Guidelines" src="zalando-guideline-http-problem.png" class="fullsize"/>
+      </slide>
+      <slide id="in-the-wild">
+        <title>API Guidelines in the Wild</title>
+        <img href="https://dret.github.io/guidelines/" title="API Guidelines in the Wild" src="api-guidelines.png" class="fullsize"/>
+      </slide>
+    </part>
+    <part id="http-status-codes">
+      <title>HTTP Status Codes</title>
+      <slide id="http-status-code-registry">
+        <title>IANA HTTP Status Code Registry</title>
+        <img src="iana-http-status-code-registry.png" href="https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml" class="fullsize"/>
+      </slide>
+      <slide id="web-concepts-http-status-codes">
+        <title>Web Concepts: HTTP Status Codes</title>
+        <img src="web-concepts-http-status-codes.png" href="https://webconcepts.info/concepts/http-status-code/" class="fullsize"/>
+      </slide>
+      <slide id="web-concepts-http-status-code-429-json">
+        <title>Machine Readable Status Codes</title>
+        <img src="web-concepts-http-status-code-429-json.png" href="https://webconcepts.info/concepts/http-status-code.json" title="Web Concepts: HTTP Status Code 429 in JSON" class="fullsize"/>
+      </slide>
+      <slide id="http-status-codes-nutshell">
+        <title>HTTP Status Codes in a Nutshell</title>
+        <img src="http-status-codes.png" href="https://twitter.com/stevelosh/status/372740571749572610" class="fullsize"/>
+      </slide>
+      <slide id="application-semantics">
+        <title>Status Codes are about Application Semantics</title>
+        <ul>
+          <li>Pick the most appropriate status code</li>
+          <li>Clients <em>must</em> treat unknown status codes as generic <code>X00</code> responses</li>
+          <li><a href="https://spec.openapis.org/oas/latest.html#responses-object">OpenAPI's response object</a> supports listing response status codes</li>
+          <ul>
+            <li>Not all possible status codes have to be listed</li>
+            <li>There <em>should</em> be (at least) one successful status code</li>
+            <li>Known errors <em>should</em> should be listed in the response object</li>
+          </ul>
+        </ul>
+      </slide>
+    </part>
+    <part id="problem-details">
+      <title>HTTP Problem Details</title>
+      <slide id="http-problem">
+        <title>HTTP Problem Details</title>
+        <ul>
+          <li><a href="http://webconcepts.info/concepts/http-status-code/">HTTP status codes</a> are useful but minimalistic</li>
+          <ul>
+            <li>Their well-defined semantics allow intermediaries to act on them</li>
+            <li>Servers may want to convey additional information with them</li>
+          </ul>
+          <li>APIs may include <em>problem details</em> as part of their representation designs</li>
+          <ul>
+            <li>Using a standard reduces the design work on the server side</li>
+            <li>Using a standard allows developers to more easily understand the design</li>
+            <li>Using a standard allows problem details analysis across APIs</li>
+          </ul>
+          <li>RFC <a title='Mark Nottingham and Erik Wilde, "Problem Details for HTTP APIs", Internet RFC 7807, March 2016' href="https://www.rfc-editor.org/rfc/rfc9457.html">7807</a>/<a title='Mark Nottingham, Erik Wilde, and Sanjay Dalal, "Problem Details for HTTP APIs", Internet RFC 9457, July 2023' href="https://www.rfc-editor.org/rfc/rfc9457.html">9457</a> defines a JSON-centric model for problem details</li>
+          <ul>
+            <li><code>application/problem+json</code> is a JSON-based representation of the problem detail model</li>
+            <li><code>application/problem+xml</code> is an XML-based representation of the problem detail model</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="http-problem-json">
+        <title>HTTP Problem Details: JSON</title>
+        <listing href="https://tools.ietf.org/html/rfc9457#section-3" src="http-problem-details.json"/>
+      </slide>
+      <slide id="http-problem-xml">
+        <title>HTTP Problem Details: XML</title>
+        <listing href="https://tools.ietf.org/html/rfc9457#appendix-B" src="http-problem-details.xml"/>
+      </slide>
+      <slide id="error-tmi">
+        <title><span title="Too Much Information">TMI</span> Error</title>
+        <ul>
+          <li>Avoid any implementation information</li>
+          <li>This is about helping clients</li>
+          <li>This is not about providing debugging information</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="rfc7807-rfc9457">
+      <title>RFC 9457: The New RFC 7807</title>
+      <slide id="rfc7807">
+        <title><a href="https://www.rfc-editor.org/rfc/rfc7807.html">RFC 7807</a> (March 2016)</title>
+        <img href="https://datatracker.ietf.org/doc/rfc7807/" title="IETF Datatracker: RFC 7807" src="datatracker-rfc-7807.png" class="fullsize-shadow"/>
+      </slide>
+      <slide id="rfc9457">
+        <title><a href="https://www.rfc-editor.org/rfc/rfc9457.html">RFC 9457</a> (July 2023)</title>
+        <img href="https://datatracker.ietf.org/doc/rfc9457/" title="IETF Datatracker: RFC 9457" src="datatracker-rfc-9457.png" class="fullsize-shadow"/>
+      </slide>
+      <slide id="differences">
+        <title>Differences between RFC 7807 and RFC 9457</title>
+        <ul>
+          <li>There are no breaking changes</li>
+          <li>Three issues seen from usage in the wild</li>
+          <ul>
+            <li>Registry of common problem type URIs (<a href="https://www.rfc-editor.org/rfc/rfc9457.html#registry">Section 4.2</a>)</li>
+            <li>Clarification of how to treat multiple problems (<a href="https://www.rfc-editor.org/rfc/rfc9457.html#problem-json">Section 3</a>)</li>
+            <li>Guidance for using type URIs that cannot be dereferenced (<a href="https://www.rfc-editor.org/rfc/rfc9457.html#type">Section 3.1.1</a>)</li>
+          </ul>
+        </ul>
+      </slide>
+    </part>
+    <part id="problem-types">
+      <title>Managing Problem Types</title>
+      <slide id="smartbear-registry">
+        <title>SmartBear Problem Details Registry</title>
+        <img src="smartbear-problem-details-registry.png" href="https://problems-registry.smartbear.com/" class="fullsize"/>
+      </slide>
+      <slide id="smartbear-repository">
+        <title>SmartBear Problem Details Repository</title>
+        <img src="smartbear-problem-details-repository.png" href="https://github.com/SmartBear-DevRel/problems-registry" class="fullsize"/>
+      </slide>
+      <slide id="iana-registry">
+        <title>IANA Problem Types Registry</title>
+        <img src="iana-problem-types-registry.png" href="https://www.iana.org/assignments/http-problem-types/http-problem-types.xhtml" class="fullsize"/>
+      </slide>
+    </part>
+    <part id="conclusions-error-messages">
+      <title>Conclusions</title>
+      <slide id="shift-down">
+        <title>Proper Use. Guiding People. Extending When Necessary.</title>
+        <ul>
+          <li>Use HTTP status codes to report <em>service status</em></li>
+          <li>Create guidelines so that your APIs behave coherently</li>
+          <li>Extend HTTP with problem reports for more detailed responses</li>
+        </ul>
+      </slide>
+    </part>
+  </presentation>
+  <presentation id="api-for-ai">
 		<title short="Your APIs Are Not Ready for AI (Yet)">Your APIs Are Not Ready for AI (Yet): A Lifecycle-Based Readiness Guide</title>
 		<author>Erik Wilde</author>
 		<affiliation>Head of Enterprise Strategy, <a href="https://jentic.com/">Jentic</a></affiliation>
