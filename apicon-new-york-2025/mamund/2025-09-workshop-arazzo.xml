@@ -1,0 +1,177 @@
+<?xml version="1.0" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+<presentation xmlns="http://dret.net/xmlns/hotspot/1" id="arazzo-workflow-basics">
+  <title>Arazzo Workflow Basics</title>
+  <part id="arazzo-why">
+    <title>Why Arazzo?</title>
+    <slide id="setting-the-stage">
+      <title>Setting the Stage</title>
+      <ul>
+        <li>APIs are often called one-by-one</li>
+        <li>Real work usually spans multiple calls</li>
+        <li>Workflows describe these sequences</li>
+        <li>Arazzo standardizes API workflows</li>
+      </ul>
+    </slide>
+    <slide id="why-workflows">
+      <title>Why Workflows?</title>
+      <ul>
+        <li>Capture repeatable business tasks</li>
+        <li>Reduce client-side complexity</li>
+        <li>Improve reliability and reuse</li>
+        <li>Enable automation across APIs</li>
+      </ul>
+    </slide>
+    <slide id="anatomy-of-arazzo">
+      <title>Why Arazzo?</title>
+      <ul>
+        <li>OpenAPI describes single API calls</li>
+        <li>Arazzo describes **flows of calls**</li>
+        <li>Shared format for tools &amp; runtimes</li>
+        <li>Designed to integrate with OpenAPI</li>
+      </ul>
+      <title>Anatomy of Arazzo</title>
+    </slide>
+  </part>
+  <part id="arazzo-format">
+    <title>Exploring the Arazzo Format</title>
+    <slide id="big-picture">
+      <title>Big Picture</title>
+      <ul>
+        <li>JSON/YAML document format</li>
+        <li>Root: `info`, `sourceDescriptions`, `workflows`</li>
+        <li>Focus on linking APIs into workflows</li>
+        <li>Lightweight and tool-friendly</li>
+      </ul>
+    </slide>
+    <slide id="info-section">
+      <title>Info Section</title>
+      <ul>
+        <li>Metadata about the workflow</li>
+        <li>Title, version, description</li>
+        <li>Similar to OpenAPI `info`</li>
+        <li>Human-friendly entry point</li>
+      </ul>
+    </slide>
+    <slide id="source-descriptions">
+      <title>Source Descriptions</title>
+      <ul>
+        <li>Define the APIs you will call</li>
+        <li>Typically link to OpenAPI specs</li>
+        <li>Can include auth or server info</li>
+        <li>Provide the building blocks for steps</li>
+      </ul>
+    </slide>
+    <slide id="workflows-section">
+      <title>Workflows Section</title>
+      <ul>
+        <li>Named, reusable workflows</li>
+        <li>Each workflow has:</li>
+        <li>Inputs (required from caller)</li>
+        <li>Parameters (values passed to steps)</li>
+        <li>Success &amp; failure conditions</li>
+        <li>Outputs (results for caller)</li>
+      </ul>
+    </slide>
+    <slide id="steps">
+      <title>Steps</title>
+      <ul>
+        <li>Ordered set of actions</li>
+        <li>Each step:</li>
+        <li>References a source API</li>
+        <li>Calls a specific operation</li>
+        <li>Defines inputs/outputs</li>
+        <li>Steps may be sequential or conditional</li>
+      </ul>
+    </slide>
+    <slide id="example-workflow">
+      <title>Outputs</title>
+      <ul>
+        <li>Collected results of the workflow</li>
+        <li>May include success/failure signals</li>
+        <li>Structured to support automation</li>
+        <li>Final deliverable for the caller</li>
+      </ul>
+    </slide>
+  </part>
+  <part id="arazzo-example">
+    <title>A Complete Arazzo Example</title>
+    <slide id="task-management-example">
+      <title>Task Management Example</title>
+      <ul>
+        <li>Based on our Task Management API</li>
+        <li>Simple workflow:</li>
+        <li>Captures a common API use-case</li>
+      </ul>
+    </slide>
+    <slide id="example-assign-a-task">
+      <title>Example: Assign a Task</title>
+      <ul>
+        <li>Step calls `/assignTask` operation</li>
+        <li>Inputs: `userId`, `taskId`</li>
+        <li>Output: confirmation of assignment</li>
+      </ul>
+    </slide>
+    <slide id="example-check-task-status">
+      <title>Example: Check Task Status</title>
+      <ul>
+        <li>Step calls `/getTaskStatus`</li>
+        <li>Input: `taskId`</li>
+        <li>Output: current task state</li>
+      </ul>
+    </slide>
+    <slide id="example-complete-task">
+      <title>Example: Complete Task</title>
+      <ul>
+        <li>Step calls `/completeTask`</li>
+        <li>Input: `taskId`</li>
+        <li>Output: completion confirmation</li>
+      </ul>
+    </slide>
+    <slide id="review">
+      <title>Putting It Together</title>
+      <ul>
+        <li>Workflow links the three steps</li>
+        <li>Inputs: `userId`, `taskId`</li>
+        <li>Outputs: final confirmation</li>
+        <li>Arazzo expresses the whole sequence</li>
+      </ul>
+    </slide>
+  </part>
+  <part id="">
+    <title>Review</title>
+    <slide id="why-arazzo-review">
+      <title>Why Arazzo? (Review)</title>
+      <ul>
+        <li>APIs often require multiple calls</li>
+        <li>Workflows capture business tasks</li>
+        <li>Arazzo standardizes workflow definitions</li>
+      </ul>
+    </slide>
+    <slide id="anatomy-review">
+      <title>Anatomy (Review)</title>
+      <ul>
+        <li>`info`, `sourceDescriptions`, `workflows`</li>
+        <li>Workflows contain inputs, steps, outputs</li>
+        <li>Steps connect API operations</li>
+      </ul>
+    </slide>
+    <slide id="example-review">
+      <title>Example (Review)</title>
+      <ul>
+        <li>Showed a Task Management flow</li>
+        <li>Assign → Check → Complete</li>
+        <li>Demonstrated Arazzo basics</li>
+      </ul>
+    </slide>
+    <slide id="closing">
+      <title>Closing</title>
+      <ul>
+        <li>Workflows are key to API integration</li>
+        <li>Arazzo brings standardization</li>
+        <li>Next step: try building your own</li>
+      </ul>
+    </slide>
+  </part>
+</presentation>
+</hotspot>
