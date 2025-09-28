@@ -1,7 +1,9 @@
 <?xml version="1.0" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 <presentation xmlns="http://dret.net/xmlns/hotspot/1" id="arazzo-workflow-basics">
-  <title>Arazzo Workflow Basics</title>
+  <title short="Building API Workflows with Arazzo">Practical API Management with OpenAPI: Building API Workflows with Arazzo</title>
+  <author>Mike Amundsen</author>
+  <affiliation>mamund.com</affiliation>
   <part id="arazzo-why">
     <title>Why Arazzo?</title>
     <slide id="setting-the-stage">
