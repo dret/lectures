@@ -53,63 +53,70 @@
 		<title short="Workshop Introduction">Practical API Management with OpenAPI: Workshop Introduction</title>
 		<author>Mike Amundsen / Erik Wilde</author>
 		<copyright>2025 Mike Amundsen &amp; Erik Wilde</copyright>
-		<part id="trainers">
-			<title>Your Trainers</title>
-			<slide id="cam2">
-				<title>Continuous API Management</title>
-				<img src="CAM2-cover.png" href="https://www.oreilly.com/library/view/continuous-api-management/9781098103514/" title="Continuous API Management, 2nd Edition, October 2021" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+		<slide id="cam2">
+			<title>Continuous API Management</title>
+			<img src="CAM2-cover.png" href="https://www.oreilly.com/library/view/continuous-api-management/9781098103514/" title="Continuous API Management, 2nd Edition, October 2021" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+			<ul>
+				<li><q>Continuous API Management: Making the Right Decisions in an Evolving Landscape</q></li>
 				<ul>
-					<li><q>Continuous API Management: Making the Right Decisions in an Evolving Landscape</q></li>
-					<ul>
-						<li><a href="https://www.oreilly.com/library/view/continuous-api-management/9781098103514/">O'Reilly book page</a></li>
-						<li><a href="https://www.amazon.com/Continuous-API-Management-Mehdi-Medjaoui-ebook/dp/B09M7J9FRH">Amazon book page</a></li>
-					</ul>
-					<li>Second edition 2021 (First edition 2019)</li>
-					<ul>
-						<li>Mehdi Medjaoui</li>
-						<li>Erik Wilde</li>
-						<li>Ronnie Mitra</li>
-						<li>Mike Amundsen</li>
-					</ul>
+					<li><a href="https://www.oreilly.com/library/view/continuous-api-management/9781098103514/">O'Reilly book page</a></li>
+					<li><a href="https://www.amazon.com/Continuous-API-Management-Mehdi-Medjaoui-ebook/dp/B09M7J9FRH">Amazon book page</a></li>
 				</ul>
-			</slide>
-			<slide id="mike">
-				<title>Mike Amundsen</title>
-				<img src="mamund-books.png" title="Select books by Mike Amundsen" href="https://www.amazon.com/author/mamund" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+				<li>Second edition 2021 (First edition 2019)</li>
 				<ul>
-					<li>Author, Speaker, Advisor</li>
-					<li><a href="https://mastodon.social/@mamund" title="Mike on Mastodon">Mastodon</a></li>
-					<li><a href="https://www.linkedin.com/in/mamund/" title="Mike on LinkedIn">LinkedIn</a></li>
-					<li><a href="https://mamund.substack.com/" title="Mike on Substack">Substack</a></li>
+					<li>Mehdi Medjaoui</li>
+					<li>Erik Wilde</li>
+					<li>Ronnie Mitra</li>
+					<li>Mike Amundsen</li>
 				</ul>
-			</slide>
-			<slide id="dret">
-				<title>Erik Wilde</title>
-				<img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
-				<img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
-				<ul>
-					<li>CA API Academy 2016-2019</li>
-					<li>Axway Catalyst 2019-2023</li>
-					<li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
-					<li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
-					<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-					<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-				</ul>
-			</slide>
-			<slide id="getting-apis-to-work">
-				<title>Getting APIs to Work</title>
-				<img src="youtube-erik-wilde.jpg" title="Erik Wilde on YouTube: Getting APIs to Work" href="https://www.youtube.com/ErikWilde" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-				<div style=" float : left ; width : 50% ; margin : 0% 4% 0% 2% ; ">
-					<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
-						<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/1CwUlDPqz2c" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
-					</div>
+			</ul>
+		</slide>
+		<slide id="mike">
+			<title>Mike Amundsen</title>
+			<img src="mamund-books.png" title="Select books by Mike Amundsen" href="https://www.amazon.com/author/mamund" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+			<ul>
+				<li>Author, Speaker, Advisor</li>
+				<li><a href="https://mastodon.social/@mamund" title="Mike on Mastodon">Mastodon</a></li>
+				<li><a href="https://www.linkedin.com/in/mamund/" title="Mike on LinkedIn">LinkedIn</a></li>
+				<li><a href="https://mamund.substack.com/" title="Mike on Substack">Substack</a></li>
+			</ul>
+		</slide>
+		<slide id="dret">
+			<title>Erik Wilde</title>
+			<img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+			<img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+			<ul>
+				<li>CA API Academy 2016-2019</li>
+				<li>Axway Catalyst 2019-2023</li>
+				<li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
+				<li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+				<li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+				<li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+			</ul>
+		</slide>
+		<slide id="getting-apis-to-work">
+			<title>Getting APIs to Work</title>
+			<img src="youtube-erik-wilde.jpg" title="Erik Wilde on YouTube: Getting APIs to Work" href="https://www.youtube.com/ErikWilde" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+			<div style=" float : left ; width : 50% ; margin : 0% 4% 0% 2% ; ">
+				<div style=" width: 100% ; position: relative ; padding-bottom: 56.25% ; ">
+					<iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/1CwUlDPqz2c" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
 				</div>
-			</slide>
-			<slide>
-				<title>Workshop Materials: Slides &amp; Exercises</title>
-				<img src="materials-qr-code.png" href="https://github.com/dret/api-conference-workshop-new-york-2025" class="fullsize" />
-			</slide>
-		</part>
+			</div>
+		</slide>
+	  <slide id="oai-intro">
+	    <title>The OpenAPI Initiative (OAI)</title>
+	    <img src="OAI-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+	    <ul>
+	      <li>The organization behind OpenAPI (and other specifications)</li>
+	      <li>Works under the umbrella of the Linux Foundation</li>
+	      <li>Technical work is open to everyone</li>
+	      <li>Members support OAI and decide on the strategic direction</li>
+	    </ul>
+	  </slide>
+	  <slide>
+			<title>Workshop Materials: Slides &amp; Exercises</title>
+			<img src="materials-qr-code.png" href="https://github.com/dret/api-conference-workshop-new-york-2025" class="fullsize" />
+		</slide>
 	</presentation>
 	<presentation id="workshop-api-description">
 		<title short="APIs and API Descriptions">Practical API Management with OpenAPI: Introduction to APIs and API Descriptions</title>
