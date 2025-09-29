@@ -28,7 +28,7 @@
       <title>Why Arazzo?</title>
       <ul>
         <li>OpenAPI describes single API calls</li>
-        <li>Arazzo describes **flows of calls**</li>
+        <li>Arazzo describes <em>flows of calls</em></li>
         <li>Shared format for tools &amp; runtimes</li>
         <li>Designed to integrate with OpenAPI</li>
       </ul>
@@ -41,7 +41,7 @@
       <title>Big Picture</title>
       <ul>
         <li>JSON/YAML document format</li>
-        <li>Root: `info`, `sourceDescriptions`, `workflows`</li>
+        <li>Root: <code>info</code>, <code>sourceDescriptions</code>, <code>workflows</code></li>
         <li>Focus on linking APIs into workflows</li>
         <li>Lightweight and tool-friendly</li>
       </ul>
@@ -51,7 +51,7 @@
       <ul>
         <li>Metadata about the workflow</li>
         <li>Title, version, description</li>
-        <li>Similar to OpenAPI `info`</li>
+        <li>Similar to OpenAPI <code>info</code></li>
         <li>Human-friendly entry point</li>
       </ul>
     </slide>
@@ -69,10 +69,12 @@
       <ul>
         <li>Named, reusable workflows</li>
         <li>Each workflow has:</li>
-        <li>Inputs (required from caller)</li>
-        <li>Parameters (values passed to steps)</li>
-        <li>Success &amp; failure conditions</li>
-        <li>Outputs (results for caller)</li>
+        <ul>
+          <li>Inputs (required from caller)</li>
+          <li>Parameters (values passed to steps)</li>
+          <li>Success &amp; failure conditions</li>
+          <li>Outputs (results for caller)</li>
+        </ul>
       </ul>
     </slide>
     <slide id="steps">
@@ -80,10 +82,12 @@
       <ul>
         <li>Ordered set of actions</li>
         <li>Each step:</li>
-        <li>References a source API</li>
-        <li>Calls a specific operation</li>
-        <li>Defines inputs/outputs</li>
-        <li>Steps may be sequential or conditional</li>
+        <ul>
+          <li>References a source API</li>
+          <li>Calls a specific operation</li>
+          <li>Defines inputs/outputs</li>
+          <li>Steps may be sequential or conditional</li>
+        </ul>
       </ul>
     </slide>
     <slide id="example-workflow">
@@ -103,30 +107,32 @@
       <ul>
         <li>Based on our Task Management API</li>
         <li>Simple workflow:</li>
-        <li>Captures a common API use-case</li>
+        <ul>
+          <li>Captures a common API use-case</li>
+        </ul>
       </ul>
     </slide>
     <slide id="example-assign-a-task">
       <title>Example: Assign a Task</title>
       <ul>
-        <li>Step calls `/assignTask` operation</li>
-        <li>Inputs: `userId`, `taskId`</li>
+        <li>Step calls <code>/assignTask</code> operation</li>
+        <li>Inputs: <code>userId</code>, <code>taskId</code></li>
         <li>Output: confirmation of assignment</li>
       </ul>
     </slide>
     <slide id="example-check-task-status">
       <title>Example: Check Task Status</title>
       <ul>
-        <li>Step calls `/getTaskStatus`</li>
-        <li>Input: `taskId`</li>
+        <li>Step calls <code>/getTaskStatus</code></li>
+        <li>Input: <code>taskId</code></li>
         <li>Output: current task state</li>
       </ul>
     </slide>
     <slide id="example-complete-task">
       <title>Example: Complete Task</title>
       <ul>
-        <li>Step calls `/completeTask`</li>
-        <li>Input: `taskId`</li>
+        <li>Step calls <code>/completeTask</code></li>
+        <li>Input: <code>taskId</code></li>
         <li>Output: completion confirmation</li>
       </ul>
     </slide>
@@ -134,7 +140,7 @@
       <title>Putting It Together</title>
       <ul>
         <li>Workflow links the three steps</li>
-        <li>Inputs: `userId`, `taskId`</li>
+        <li>Inputs: <code>userId</code>, <code>taskId</code></li>
         <li>Outputs: final confirmation</li>
         <li>Arazzo expresses the whole sequence</li>
       </ul>
@@ -153,7 +159,7 @@
     <slide id="anatomy-review">
       <title>Anatomy (Review)</title>
       <ul>
-        <li>`info`, `sourceDescriptions`, `workflows`</li>
+        <li><code>info</code>, <code>sourceDescriptions</code>, <code>workflows</code></li>
         <li>Workflows contain inputs, steps, outputs</li>
         <li>Steps connect API operations</li>
       </ul>
