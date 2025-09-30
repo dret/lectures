@@ -975,6 +975,20 @@
 		      <li>Allows flexible combination of capabilities for any use case</li>
 		    </ul>
 		  </slide>
+		  <slide id="api-search-ranking">
+		    <title>Semantic Search with RAG</title>
+		    <ul>
+		      <li>All capabilities indexed in a <em>vector database</em></li>
+		      <li>Queries resolved via semantic search (embeddings &amp; similarity)</li>
+		      <li><em>Retrieval-Augmented Generation (RAG)</em> assembles relevant operations</li>
+		      <ul>
+		        <li><em>Retrieval:</em> find the best matching capabilities</li>
+		        <li><em>Augmentation:</em> add retrieved capabilities into the agent’s context</li>
+		        <li><em>Generation:</em> the agent plans or produces the sequence of API calls</li>
+		      </ul>
+		      <li>Depends heavily on rich descriptions (garbage in, garbage out)</li>
+		    </ul>
+		  </slide>
 		</part>
 		<part id="api-usage">
 		  <title>Observing and Understanding API Usage</title>
