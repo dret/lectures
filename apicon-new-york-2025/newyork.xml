@@ -841,6 +841,20 @@
 	        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
 	      </ul>
 	    </slide>
+	    <slide id="api-landscape-lifecycle">
+	      <title>The API Landscape Lifecycle</title>
+        <ul>
+          <li>Not about single APIs → it’s about the whole landscape</li>
+          <li>Lifecycle of evolving towards AI readiness</li>
+          <ol>
+            <li><link href="api-description-documentation"/></li>
+            <li><link href="api-search-selection"/></li>
+            <li><link href="api-usage"/></li>
+            <li><link href="api-workflows"/></li>
+            <li><link href="api-sandbox"/></li>
+          </ol>
+        </ul>
+	    </slide>
 	    <slide id="bridging-the-gap">
 	      <title>Bridging the Gap Between API Land and AI Land</title>
 	      <img src="golden-path-guardrail.webp" title="Golden Path with a Guardrail" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
@@ -908,8 +922,8 @@
 	      <img src="api-mcp-ai-workflow-api.png" class="fullsize-shadow" />
 	    </slide>
 	  </part>
-		<part id="api-description">
-			<title>Better API Description</title>
+		<part id="api-description-documentation">
+		  <title>Better API Description and Documentation</title>
 		  <slide id="dx-homework">
 		    <title>Do Your DX Homework</title>
 		    <ul>
@@ -942,17 +956,17 @@
 		    </ul>
 		  </slide>
 		</part>
-		<part id="api-selection">
-			<title>Better API Selection</title>
+		<part id="api-search-selection">
+		  <title>Smarter API Search and Selection</title>
 		</part>
 		<part id="api-usage">
-			<title>Understanding API Usage Patterns</title>
+		  <title>Observing and Understanding API Usage</title>
 		</part>
-		<part id="api-workflows">
-			<title>Focused API Purpose</title>
-		</part>
-		<part id="api-sandbox">
-			<title>Safe AI Experimentation</title>
+    <part id="api-workflows">
+      <title>Designing Higher-Level Capabilities</title>
+    </part>
+    <part id="api-sandbox">
+		  <title>Safe Experimentation with Sandboxes</title>
 		</part>
 		<part id="conclusions-api-for-ai">
 			<title>Conclusions: AI is (not) just another API Consumer</title>
