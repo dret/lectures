@@ -862,6 +862,10 @@
 	        <li>API landscapes are not AI-ready yet</li>
 	        <li>Descriptions and designs often make AI difficult</li>
 	        <li><q>Letting AI agents loose</q> oftentimes is not an option</li>
+	        <ul>
+	          <li><em>Limit blast radius:</em> Only provide access through a centralized access point</li>
+	          <li><em>Zero tolereance:</em> Never allow access to production APIs</li>
+	        </ul>
 	        <li>Use AI <em>as little as possible</em> and <em>as much as necessary</em></li>
 	      </ul>
 	    </slide>
@@ -991,13 +995,75 @@
 		</part>
 		<part id="api-usage">
 		  <title>Observing and Understanding API Usage</title>
+		  <slide id="agent-access">
+		    <title>Secure Centralized Access for Agents</title>
+		    <ul>
+		      <li>Agents should have their own security regime</li>
+		      <li>Avoid leaking secrets and tokens directly to agents</li>
+		      <li>Prevent agents from impersonating users or apps</li>
+		      <li>Ensure proper token delegation and downscoping</li>
+		      <li>Route all traffic through a centralized access point</li>
+		      <li>Clear separation: we always know when an agent acts</li>
+		    </ul>
+		  </slide>
+		  <slide id="observability">
+		    <title>Observability and Usage Mining</title>
+		    <ul>
+		      <li>Centralized access gives visibility into all agent activity</li>
+		      <li>Enables business process mining on API usage traces</li>
+		      <li>Assess safety and compliance before allowing production use</li>
+		      <li>Captured traces = foundation for designing higher-level workflows</li>
+		      <li>Spot common patterns and emerging workflows</li>
+		      <li>Captured traces = foundation for designing higher-level workflows</li>
+		    </ul>
+		  </slide>
 		</part>
     <part id="api-workflows">
       <title>Designing Higher-Level Capabilities</title>
+      <slide id="workflow-mining">
+        <title>Observing Agents to Discover Workflows</title>
+        <ul>
+          <li>Agents try to solve tasks in their own way</li>
+          <li>We can observe their sequences of API calls</li>
+          <li>Observation <q>in the wild</q> or in a sandbox</li>
+          <li>Sandboxes allow safe experimentation without touching production</li>
+          <li>Captured traces reveal <em>workflow candidates</em></li>
+        </ul>
+      </slide>
+      <slide id="workflow-determinism">
+        <title>Workflows as Deterministic Artifacts</title>
+        <ul>
+          <li>Extracted workflows become deterministic descriptions</li>
+          <li>Can be replayed and executed reliably</li>
+          <li>Enable review and auditing before adoption</li>
+          <li>More energy efficient than trial-and-error agent execution</li>
+          <li>Workflows can be published as new APIs, usable beyond AI</li>
+        </ul>
+      </slide>
     </part>
     <part id="api-sandbox">
 		  <title>Safe Experimentation with Sandboxes</title>
-		</part>
+      <slide id="secure-experimentation">
+        <title>Sandboxes for Secure Experimentation</title>
+        <ul>
+          <li>Create a controlled environment for agents</li>
+          <li>Make capabilities available in the sandbox</li>
+          <li>Prevent agents from accessing production secrets</li>
+          <li>Provide realistic data (synthetic or mock) for testing</li>
+          <li>Centralized control: we decide where agents can play</li>
+        </ul>
+      </slide>
+      <slide id="ai-risk-appetite">
+        <title>What's Your AI Risk Appetite?</title>
+        <ul>
+          <li>Sandbox use = AI only for workflow discovery</li>
+          <li>No AI activity directly in production</li>
+          <li>Workflows validated before adoption</li>
+          <li>You decide how much AI to let into production</li>
+          <li>Architecture stays the same while risk level is adjustable</li>
+        </ul>
+      </slide>
+    </part>
 		<part id="conclusions-api-for-ai">
 			<title>Conclusions: AI is (not) just another API Consumer</title>
 			<slide id="thanks-api-for-ai">
