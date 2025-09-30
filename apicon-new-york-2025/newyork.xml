@@ -1045,6 +1045,7 @@
 		  <title>Safe Experimentation with Sandboxes</title>
       <slide id="secure-experimentation">
         <title>Sandboxes for Secure Experimentation</title>
+        <img src="agent-sandbox.png" title="Sandbox for AI Agents" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
           <li>Create a controlled environment for agents</li>
           <li>Make capabilities available in the sandbox</li>
@@ -1066,6 +1067,14 @@
     </part>
 		<part id="conclusions-api-for-ai">
 			<title>Conclusions: AI is (not) just another API Consumer</title>
+		  <slide id="landscape-evolution">
+		    <title>Evolving Your API Landscape for AI</title>
+		    <ul>
+		      <li><em>Start simple:</em> improve API descriptions and documentation</li>
+		      <li><em>Build up:</em> add search, observability, workflows, and sandboxes</li>
+		      <li><em>End goal:</em> a flexible landscape, safe for agents and valuable for everyone</li>
+		    </ul>
+		  </slide>
 			<slide id="thanks-api-for-ai">
 				<title>Thank You!</title>
 				<img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
