@@ -941,15 +941,22 @@
 		    <ul>
 		      <li>AI agents need information developers don't typically require:</li>
 		      <ul>
-		        <li><em>Explicit relationships</em> between operations and resources</li>
-		        <li><em>Business context</em> explaining when/why to use operations</li>
-		        <li><em>Prerequisite chains</em> and operation dependencies</li>
-		        <li><em>Safe testing values</em> for experimentation</li>
-		        <li><em>Rate limits and cost implications</em> upfront</li>
+		        <li>Everything that developers usually <q>just know</q></li>
+		        <li>Treat every API like an external one for developers with no context</li>
 		      </ul>
 		      <li>OpenAPI Initiative could add AX-specific fields</li>
 		      <li>Until then, leverage description fields strategically</li>
 		      <li>Consider AX surface area as a new design dimension</li>
+		    </ul>
+		  </slide>
+		  <slide id="oai-intro-ax">
+		    <title>The OpenAPI Initiative (OAI)</title>
+		    <img src="OAI-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+		    <ul>
+		      <li>Today: no AX-specific fields in OpenAPI</li>
+		      <li>Community needs to define what AI agents require</li>
+		      <li>Tooling will follow once fields are standardized</li>
+		      <li>Interested? Join the discussion in the OpenAPI Initiative</li>
 		    </ul>
 		  </slide>
 		</part>
