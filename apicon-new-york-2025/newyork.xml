@@ -232,7 +232,7 @@
 			</slide>
 		</part>
 	</presentation>
-  <presentation id="workshop-api-stories" include="mamund/2025-09-workshop-api-story.xml" />
+  <presentation id="workshop-api-stories" include="2025-09-workshop-api-story.xml" />
   <presentation id="workshop-openapi-introduction">
     <title short="Introduction to OpenAPI">Practical API Management with OpenAPI: Introduction to OpenAPI</title>
     <author>Erik Wilde</author>
@@ -653,8 +653,8 @@
       </slide>
     </part>
   </presentation>
-  <presentation id="workshop-api-versioning" include="mamund/2025-09-workshop-versioning.xml" />
-  <presentation id="workshop-api-overlay" include="mamund/2025-09-workshop-overlays.xml" />
+  <presentation id="workshop-api-versioning" include="2025-09-workshop-versioning.xml" />
+  <presentation id="workshop-api-overlay" include="2025-09-workshop-overlays.xml" />
   <presentation id="workshop-error-messages">
     <title short="Error Messages for HTTP APIs">Practical API Management with OpenAPI: Error Messages for HTTP APIs</title>
     <author>Erik Wilde</author>
@@ -819,7 +819,7 @@
       </slide>
     </part>
   </presentation>
-  <presentation id="workshop-arazzo" include="mamund/2025-09-workshop-arazzo.xml" />
+  <presentation id="workshop-arazzo" include="2025-09-workshop-arazzo.xml" />
   <presentation id="api-for-ai">
 		<title short="Your APIs Are Not Ready for AI (Yet)">Your APIs Are Not Ready for AI (Yet): A Lifecycle-Based Readiness Guide</title>
 		<author>Erik Wilde</author>
