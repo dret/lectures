@@ -844,7 +844,7 @@
 	    <slide id="api-landscape-lifecycle">
 	      <title>The API Landscape Lifecycle</title>
         <ul>
-          <li>Not about single APIs → it’s about the whole landscape</li>
+          <li>Not about single APIs → It's about the API landscape</li>
           <li>Lifecycle of evolving towards AI readiness</li>
           <ol>
             <li><link href="api-description-documentation"/></li>
@@ -986,7 +986,7 @@
 		      <li><em>Retrieval-Augmented Generation (RAG)</em> assembles relevant operations</li>
 		      <ul>
 		        <li><em>Retrieval:</em> find the best matching capabilities</li>
-		        <li><em>Augmentation:</em> add retrieved capabilities into the agent’s context</li>
+		        <li><em>Augmentation:</em> add retrieved capabilities into the agent's context</li>
 		        <li><em>Generation:</em> the agent plans or produces the sequence of API calls</li>
 		      </ul>
 		      <li>Depends heavily on rich descriptions (garbage in, garbage out)</li>
