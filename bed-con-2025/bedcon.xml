@@ -30,28 +30,25 @@
   <copyright>2025 Erik Wilde</copyright>
   <presentation id="index">
     <title short="Your APIs Are Not Ready for AI (Yet)">Your APIs Are Not Ready for AI (Yet): A Lifecycle-Based Readiness Guide</title>
-    <part id="introduction">
-      <title>Introduction</title>
-      <slide id="dret">
-        <title>Erik Wilde</title>
-        <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
-        <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
-        <ul>
-          <li>CA API Academy 2016-2019</li>
-          <li>Axway Catalyst 2019-2023</li>
-          <li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
-          <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
-          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-        </ul>
-      </slide>
-    </part>
+    <slide id="dret">
+      <title>Erik Wilde</title>
+      <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <ul>
+        <li>CA API Academy 2016-2019</li>
+        <li>Axway Catalyst 2019-2023</li>
+        <li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
+        <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+      </ul>
+    </slide>
     <part id="introduction">
       <title>Introduction: APIs for AI — Problem or Not?</title>
       <slide id="api-landscape-lifecycle">
         <title>The API Landscape Lifecycle</title>
         <ul>
-          <li>Not about single APIs → it’s about the whole landscape</li>
+          <li>Not about single APIs → It's about the API landscape</li>
           <li>Lifecycle of evolving towards AI readiness</li>
           <ol>
             <li><link href="api-description-documentation"/></li>
@@ -97,20 +94,78 @@
         <title>Model Context Protocol (MCP)</title>
         <img src="mcp-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
-          <li>MCP seems to be the new <q>standard protocol</q> for LLM consumers</li>
-          <li>Many mapping tools generate MCP from OpenAPI descriptions</li>
-          <li>Problem #1: Complex APIs will overload the MCP host's context</li>
-          <li>Problem #2: Larger API landscapes will overload the MCP host's context</li>
-          <li>Problem #3: Bad AX results in unsatisfactory AI results</li>
+          <li>MCP is the current <q>standard protocol</q> for LLM consumers</li>
+          <li>The initial focus was on <em>additional and extended context</em></li>
+          <ul>
+            <li><em>Additional context</em> by providing access to the environment</li>
+            <li><em>Extended context</em> by allowing MCP servers to externally manage context</li>
+          </ul>
+          <li>Many mapping tools generate MCP servers from OpenAPI descriptions</li>
+          <li><em>What</em> to expose and <em>how to design it</em> is out of scope</li>
         </ul>
+      </slide>
+      <slide id="api-mcp-ai-direct-idea">
+        <title>MCP all the Things: Using MCP in 30min</title>
+        <ol>
+          <li>Generate MCP from OpenAPI</li>
+          <li>Publish/Install MCP servers for all APIs</li>
+          <li>Consumers can access <em>all MCP tools</em></li>
+        </ol>
       </slide>
       <slide id="api-mcp-ai-direct">
         <title>MCP all the Things</title>
         <img src="api-mcp-ai-direct.png" class="fullsize-shadow" />
       </slide>
+      <slide id="api-mcp-ai-direct-tradeoffs">
+        <title>MCP all the Things: Simple but Limited</title>
+        <ul>
+          <li><em>Pros:</em></li>
+          <ul>
+            <li>Zero development effort, many tools auto-generate MCP</li>
+            <li>Every API operation immediately available</li>
+            <li>No maintenance of mapping layer</li>
+            <li>Great for early and quick experimentation</li>
+          </ul>
+          <li><em>Cons:</em></li>
+          <ul>
+            <li>Context window explosion with large APIs</li>
+            <li>AI struggles with understanding workflow across endpoints</li>
+            <li>Risk of misinterpreting MCP problems as general AI problems</li>
+            <li>API changes show up in MCP with unclear side-effects</li>
+          </ul>
+          <li>Good as a starting point but lacks sophistication and scalability</li>
+        </ul>
+      </slide>
+      <slide id="api-mcp-ai-aggregated-idea">
+        <title>MCP Lego Kit: Manage Context Size</title>
+        <img src="lego-bricks.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+        <ol>
+          <li>Select required API capabilities</li>
+          <li>Aggregate all tools in one MCP servers</li>
+          <li>Consumers can access <em>all required MCP tools</em></li>
+        </ol>
+      </slide>
       <slide id="api-mcp-ai-aggregated">
         <title>MCP Lego Kit</title>
         <img src="api-mcp-ai-aggregated.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="api-mcp-ai-aggregated-tradeoffs">
+        <title>MCP Lego Kit: Small but still Granular</title>
+        <ul>
+          <li><em>Pros:</em></li>
+          <ul>
+            <li>Context size can be reduced</li>
+            <li>First step towards providing <q>the right tools for the job</q></li>
+            <li>Useful as mitigation for further experimentation</li>
+          </ul>
+          <li><em>Cons:</em></li>
+          <ul>
+            <li>AI task/domain must be known in advance</li>
+            <li>Fine-granular APIs are still directly exposed</li>
+            <li>AI needs to re-invent workflows every single time</li>
+          </ul>
+          <li>Show value with some simple tasks but get ready for more complex ones</li>
+        </ul>
       </slide>
       <slide id="api-mcp-ai-custom-mcp">
         <title>Made-to-order Tools in MCP</title>
@@ -127,6 +182,15 @@
       <slide id="api-mcp-ai-workflow-api">
         <title>Automating API Tooling</title>
         <img src="api-mcp-ai-workflow-api.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="mcp-problems">
+        <title>Model Context Protocol (MCP)</title>
+        <ul>
+          <li>Problem #1: Complex APIs will overload the MCP host's context</li>
+          <li>Problem #2: Larger API landscapes will overload the MCP host's context</li>
+          <li>Problem #3: Poor API design translates to poor MCP results</li>
+          <li>Problem #4: Bad AX results in unsatisfactory AI results</li>
+        </ul>
       </slide>
     </part>
     <part id="api-description-documentation">
@@ -193,7 +257,7 @@
           <li><em>Retrieval-Augmented Generation (RAG)</em> assembles relevant operations</li>
           <ul>
             <li><em>Retrieval:</em> find the best matching capabilities</li>
-            <li><em>Augmentation:</em> add retrieved capabilities into the agent’s context</li>
+            <li><em>Augmentation:</em> add retrieved capabilities into the agent's context</li>
             <li><em>Generation:</em> the agent plans or produces the sequence of API calls</li>
           </ul>
           <li>Depends heavily on rich descriptions (garbage in, garbage out)</li>
