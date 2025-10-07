@@ -199,6 +199,10 @@
     </part>
     <part id="api-description-documentation">
       <title>Better API Description and Documentation</title>
+      <slide id="api-ai-evolution-description">
+        <title>From DX to AX</title>
+        <img src="api-ai-evolution-description.png" class="fullsize-shadow" />
+      </slide>
       <slide id="dx-homework">
         <title>Do Your DX Homework</title>
         <ul>
@@ -207,11 +211,10 @@
           <ul>
             <li>Complete and meaningful operation summaries</li>
             <li>Comprehensive examples for all operations</li>
-            <li>Clear error handling documentation</li>
+            <li>Clear error handling</li>
             <li>Consistent terminology and naming</li>
           </ul>
           <li>Good DX is the foundation for good AX</li>
-          <li>Start with the basics: make your APIs understandable</li>
         </ul>
       </slide>
       <slide id="ax-homework">
@@ -222,24 +225,27 @@
             <li>Everything that developers usually <q>just know</q></li>
             <li>Treat every API like an external one for developers with no context</li>
           </ul>
-          <li>OpenAPI Initiative could add AX-specific fields</li>
+          <li>OpenAPI Initiative (OAI) might add AX-specific fields</li>
           <li>Until then, leverage description fields strategically</li>
-          <li>Consider AX surface area as a new design dimension</li>
         </ul>
       </slide>
-      <slide id="oai-intro-ax">
+      <slide id="oai-intro">
         <title>The OpenAPI Initiative (OAI)</title>
         <img src="OAI-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
           <li>Today: no AX-specific fields in OpenAPI</li>
           <li>Community needs to define what AI agents require</li>
           <li>Tooling will follow once fields are standardized</li>
-          <li>Interested? Join the discussion in the OpenAPI Initiative</li>
+          <li>Interested? Join the discussion in the OpenAPI Initiative!</li>
         </ul>
       </slide>
     </part>
     <part id="api-search-selection">
       <title>Smarter API Search and Selection</title>
+      <slide id="api-ai-evolution-search">
+        <title>Agents are Dynamic</title>
+        <img src="api-ai-evolution-search.png" class="fullsize-shadow" />
+      </slide>
       <slide id="api-microproduct">
         <title>API Microproducts</title>
         <ul>
@@ -270,6 +276,10 @@
     </part>
     <part id="api-usage">
       <title>Securing and Observing API Usage</title>
+      <slide id="api-ai-evolution-observability">
+        <title>Secure and Observe AI Consumers</title>
+        <img src="api-ai-evolution-observability.png" class="fullsize-shadow" />
+      </slide>
       <slide id="agent-access">
         <title>Secure Centralized Access for Agents</title>
         <ul>
@@ -278,7 +288,6 @@
           <li>Prevent agents from impersonating users or apps</li>
           <li>Ensure proper token delegation and downscoping</li>
           <li>Route all traffic through a centralized access point</li>
-          <li>Clear separation: we always know when an agent acts</li>
         </ul>
       </slide>
       <slide id="observability">
@@ -287,37 +296,41 @@
           <li>Centralized access gives visibility into all agent activity</li>
           <li>Enables business process mining on API usage traces</li>
           <li>Assess safety and compliance before allowing production use</li>
-          <li>Captured traces = foundation for designing higher-level workflows</li>
           <li>Spot common patterns and emerging workflows</li>
-          <li>Captured traces = foundation for designing higher-level workflows</li>
+          <li>Captured traces = Foundation for higher-level workflows</li>
         </ul>
       </slide>
     </part>
     <part id="api-workflows">
-      <title>Designing Higher-Level Capabilities</title>
+      <title>Creating Intent-Based Workflows</title>
+      <slide id="api-ai-evolution-workflows">
+        <title>Add Workflows</title>
+        <img src="api-ai-evolution-workflows.png" class="fullsize-shadow" />
+      </slide>
       <slide id="workflow-mining">
         <title>Observing Agents to Discover Workflows</title>
         <ul>
           <li>Agents try to solve tasks in their own way</li>
           <li>We can observe their sequences of API calls</li>
-          <li>Observation <q>in the wild</q> or in a sandbox</li>
-          <li>Sandboxes allow safe experimentation without touching production</li>
           <li>Captured traces reveal <em>workflow candidates</em></li>
         </ul>
       </slide>
       <slide id="workflow-determinism">
         <title>Workflows as Deterministic Artifacts</title>
         <ul>
-          <li>Extracted workflows become deterministic descriptions</li>
           <li>Can be replayed and executed reliably</li>
           <li>Enable review and auditing before adoption</li>
           <li>More energy efficient than trial-and-error agent execution</li>
-          <li>Workflows can be published as new APIs, usable beyond AI</li>
+          <li>Workflows are published as new APIs, usable beyond AI</li>
         </ul>
       </slide>
     </part>
     <part id="api-sandbox">
       <title>Safe Experimentation with Sandboxes</title>
+      <slide id="api-ai-evolution-sandboxes">
+        <title>Managing Exposure to Agents</title>
+        <img src="api-ai-evolution-sandboxes.png" class="fullsize-shadow" />
+      </slide>
       <slide id="secure-experimentation">
         <title>Sandboxes for Secure Experimentation</title>
         <img src="agent-sandbox.png" title="Sandbox for AI Agents" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
