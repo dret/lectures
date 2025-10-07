@@ -43,7 +43,21 @@
     </slide>
     <part id="introduction">
       <title>Introduction: APIs for AI — Problem or Not?</title>
-      <slide id="api-landscape-lifecycle">
+      <slide id="audience-poll">
+        <title>Let's See Where We Are… ✋</title>
+        <ol>
+          <li>Who has <em>all/most/many APIs described</em> with OpenAPI/AsyncAPI?</li>
+          <li>Who has a <em>central API catalog</em> or portal?</li>
+          <li>Who can <em>track every API call</em> with full observability?</li>
+          <li>Who has <em>sandbox environments</em> with synthetic data?</li>
+          <li>Who has <em>AI agents working with APIs in production?</em></li>
+        </ol>
+        <hr />
+        <ul>
+          <li>Don't worry if you didn't raise your hand much</li>
+          <li>Start with the basics, build incrementally</li>
+        </ul>
+      </slide>      <slide id="api-landscape-lifecycle">
         <title>The API Landscape Lifecycle</title>
         <ul>
           <li>Not about single APIs → It's about the API landscape</li>
@@ -225,7 +239,7 @@
       </slide>
       <slide id="oai-intro">
         <title>The OpenAPI Initiative (OAI)</title>
-        <img src="OAI-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+        <img src="OAI-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
           <li>Today: no AX-specific fields in OpenAPI</li>
           <li>Community needs to define what AI agents require</li>
@@ -313,7 +327,7 @@
       </slide>
       <slide id="arazzo-intro">
         <title>OAI Arazzo</title>
-        <img src="arazzo-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+        <img src="arazzo-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
           <li>Arazzo is an open workflow standard by OAI</li>
           <li>It allows combining API interactions into workflows</li>
