@@ -864,7 +864,7 @@
 	        <li><q>Letting AI agents loose</q> oftentimes is not an option</li>
 	        <ul>
 	          <li><em>Limit blast radius:</em> Only provide access through a centralized access point</li>
-	          <li><em>Zero tolereance:</em> Never allow access to production APIs</li>
+	          <li><em>Zero tolerance:</em> Never allow access to production APIs</li>
 	        </ul>
 	        <li>Use AI <em>as little as possible</em> and <em>as much as necessary</em></li>
 	      </ul>
@@ -892,8 +892,8 @@
 	      <ul>
 	        <li>MCP seems to be the new <q>standard protocol</q> for LLM consumers</li>
 	        <li>Many mapping tools generate MCP from OpenAPI descriptions</li>
-	        <li>Problem #1: Complex APIs will overload the MCP host's context</li>
-	        <li>Problem #2: Larger API landscapes will overload the MCP host's context</li>
+	        <li>Problem #1: Complex APIs will overload the MCP client's context</li>
+	        <li>Problem #2: Larger API landscapes will overload the MCP client's context</li>
 	        <li>Problem #3: Bad AX results in unsatisfactory AI results</li>
 	      </ul>
 	    </slide>
@@ -971,7 +971,7 @@
 		      <li>Traditional API products bundle endpoints into coarse offerings</li>
 		      <li>With unknown use cases, it's better to decompose into fine-grained API microproducts</li>
 		      <ul>
-		        <li><em>OpenAPI:</em> Treat all operations on all endpoints individual capabilities</li>
+		        <li><em>OpenAPI:</em> Treat all operations on all endpoints as individual capabilities</li>
 		        <li><em>AsyncAPI:</em> Treat all messages on all channels as individual capabilities</li>
 		        <li><em>GraphQL:</em> Treat all queries and mutations as individual capabilities</li>
 		      </ul>
@@ -1012,7 +1012,7 @@
 		      <li>Centralized access gives visibility into all agent activity</li>
 		      <li>Enables business process mining on API usage traces</li>
 		      <li>Assess safety and compliance before allowing production use</li>
-		      <li>Captured traces = Foundation for higher-level workflows</li>
+		      <li>Captured traces are the foundation for higher-level workflows</li>
 		      <li>Spot common patterns and emerging workflows</li>
 		    </ul>
 		  </slide>

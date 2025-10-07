@@ -80,7 +80,7 @@
           <li><q>Letting AI agents loose</q> oftentimes is not an option</li>
           <ul>
             <li><em>Limit blast radius:</em> Only provide access through a centralized access point</li>
-            <li><em>Zero tolereance:</em> Never allow access to production APIs</li>
+            <li><em>Zero tolerance:</em> Never allow access to production APIs</li>
           </ul>
           <li>Use AI <em>as little as possible</em> and <em>as much as necessary</em></li>
         </ul>
@@ -157,7 +157,7 @@
         <img src="lego-bricks.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
         <ol>
           <li>Select required API capabilities</li>
-          <li>Aggregate all tools in one MCP servers</li>
+          <li>Aggregate all tools in one MCP server</li>
           <li>Consumers can access <em>all required MCP tools</em></li>
         </ol>
       </slide>
@@ -196,10 +196,10 @@
         <img src="api-mcp-ai-workflow-api.png" class="fullsize-shadow" />
       </slide>
       <slide id="mcp-problems">
-        <title>Model Context Protocol (MCP)</title>
+        <title>Of Course MCP Solves Everything! But Maybe…</title>
         <ul>
-          <li>Problem #1: Complex APIs will overload the MCP host's context</li>
-          <li>Problem #2: Larger API landscapes will overload the MCP host's context</li>
+          <li>Problem #1: Complex APIs will overload the MCP client's context</li>
+          <li>Problem #2: Larger API landscapes will overload the MCP client's context</li>
           <li>Problem #3: Poor API design translates to poor MCP results</li>
           <li>Problem #4: Bad AX results in unsatisfactory AI results</li>
         </ul>
@@ -260,7 +260,7 @@
           <li>Traditional API products bundle endpoints into coarse offerings</li>
           <li>With unknown use cases, it's better to decompose into fine-grained API microproducts</li>
           <ul>
-            <li><em>OpenAPI:</em> Treat all operations on all endpoints individual capabilities</li>
+            <li><em>OpenAPI:</em> Treat all operations on all endpoints as individual capabilities</li>
             <li><em>AsyncAPI:</em> Treat all messages on all channels as individual capabilities</li>
             <li><em>GraphQL:</em> Treat all queries and mutations as individual capabilities</li>
           </ul>
@@ -305,7 +305,7 @@
           <li>Enables business process mining on API usage traces</li>
           <li>Assess safety and compliance before allowing production use</li>
           <li>Spot common patterns and emerging workflows</li>
-          <li>Captured traces = Foundation for higher-level workflows</li>
+          <li>Captured traces are the foundation for higher-level workflows</li>
         </ul>
       </slide>
     </part>
