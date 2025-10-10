@@ -1,6 +1,6 @@
 # Your APIs Are Not Ready for AI (Yet): A Lifecycle-Based Readiness Guide
 
-Slides for Presentations at [BED-Con 2025](https://apiworld.co/).
+Slides for Presentation at [BED-Con 2025](https://apiworld.co/).
 
 
 ## License
