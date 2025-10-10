@@ -1,6 +1,6 @@
 # ...
 
-Slides for Presentations at KNITECon 2025.
+Slides for Presentation at KNITECon 2025.
 
 
 ## License
