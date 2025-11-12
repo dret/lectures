@@ -61,9 +61,33 @@
           <li>Use AI <em>as much as necessary</em> but <em>as little as possible</em></li>
         </ul>
       </slide>
+      <slide id="ai-needs">
+        <title>What AI Needs</title>
+        <ul>
+          <li>Access to data and capabilities</li>
+          <ul>
+            <li>Accessing <em>data</em> to retrieve context</li>
+            <li>Accessing <em>capabilities</em> to take action</li>
+          </ul>
+          <li><em>Model Context Protocol (MCP)</em> allows LLMs to <q>reach outside</q></li>
+          <ul>
+            <li>Great for initial experiments and <q>LLM-enabling</q> anything</li>
+            <li>Problems with scaling for more than a handful of MCP servers</li>
+          </ul>
+        </ul>
+      </slide>
     </part>
     <part id="conclusions">
       <title>Conclusions</title>
+      <slide id="define-describe-discover">
+        <title>Define. Describe. Discover</title>
+        <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+        <ul>
+          <li><em>Define</em> APIs for agentic actions</li>
+          <li><em>Describe</em> APIs well for agentic understanding</li>
+          <li><em>Discover</em> APIs at runtime in a large landscape</li>
+        </ul>
+      </slide>
       <slide id="thanks">
         <title>Thank You!</title>
         <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
