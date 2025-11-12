@@ -41,6 +41,27 @@
         <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
       </ul>
     </slide>
+    <part id="apis-and-ai">
+      <title>APIs and AI: It's complicated</title>
+      <slide id="api-ai-new-york">
+        <title>(How) does AI affect APIs?</title>
+        <img src="apis-and-ai-cover.jpg" title="How does AI affect APIs? Expert Opinions from API Days New York 2025" href="https://www.youtube.com/watch?v=6ekEQR45IIo" class="fullsize-shadow"/>
+      </slide>
+      <slide id="bridging-the-gap">
+        <title>Bridging the Gap Between API Land and AI Land</title>
+        <img src="golden-path-guardrail.webp" title="Golden Path with a Guardrail" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Most API landscapes are not (really) AI-ready</li>
+          <li>Descriptions and designs can make AI difficult</li>
+          <li><q>Letting AI agents loose</q> oftentimes is not an option</li>
+          <ul>
+            <li><em>Limit blast radius:</em> Only provide access through a centralized access point</li>
+            <li><em>Zero tolerance:</em> Never allow access to production APIs</li>
+          </ul>
+          <li>Use AI <em>as much as necessary</em> but <em>as little as possible</em></li>
+        </ul>
+      </slide>
+    </part>
     <part id="conclusions">
       <title>Conclusions</title>
       <slide id="thanks">
