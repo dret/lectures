@@ -115,6 +115,15 @@
           <li><em>What</em> to expose and <em>how to design it</em> is out of scope</li>
         </ul>
       </slide>
+      <slide id="api-mcp-ai-direct-idea">
+        <title>MCP all the APIs</title>
+        <img src="api-mcp-ai-direct.png"  style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ; " />
+        <ol>
+          <li>Generate MCP from OpenAPI</li>
+          <li>Publish/Install MCP servers for all APIs</li>
+          <li>Consumers can access <em>all MCP tools</em></li>
+        </ol>
+      </slide>
     </part>
     <part id="tool-description">
       <title>Better Described Tools</title>
