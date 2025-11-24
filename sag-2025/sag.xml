@@ -43,10 +43,72 @@
     </slide>
     <part id="apis-and-ai">
       <title>APIs and AI: It's complicated</title>
+      <slide id="audience-poll">
+        <title>Let's See Where We Are… ✋</title>
+        <ol>
+          <li>Who has <em>all/most/many APIs described</em> with OpenAPI/AsyncAPI?</li>
+          <li>Who has a <em>central API catalog</em> or portal?</li>
+          <li>Who can <em>track every API call</em> with full observability?</li>
+          <li>Who has <em>sandbox environments</em> with synthetic data?</li>
+          <li>Who has <em>AI agents working with APIs in production?</em></li>
+        </ol>
+        <hr />
+        <ul>
+          <li>Don't worry if you didn't raise your hand much</li>
+          <li>Start with the basics, build incrementally</li>
+        </ul>
+      </slide>
+      <slide id="api-landscape-lifecycle">
+        <title>The API Landscape Lifecycle</title>
+        <ul>
+          <li>Not about single APIs → It's about the API landscape</li>
+          <li>Lifecycle of evolving towards AI readiness</li>
+          <ol>
+            <li><link href="api-access"/></li>
+            <li><link href="api-description-documentation"/></li>
+            <li><link href="api-search-selection"/></li>
+            <li><link href="api-workflows"/></li>
+            <li><link href="api-sandbox"/></li>
+          </ol>
+        </ul>
+      </slide>
+      <slide id="bridging-the-gap">
+        <title>Bridging the Gap Between API Land and AI Land</title>
+        <img src="golden-path-guardrail.webp" title="Golden Path with a Guardrail" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>API landscapes are not AI-ready yet</li>
+          <li>Descriptions and designs often make AI difficult</li>
+          <li><q>Letting AI agents loose</q> oftentimes is not an option</li>
+          <ul>
+            <li><em>Limit blast radius:</em> Only provide access through a centralized access point</li>
+            <li><em>Zero tolerance:</em> Never allow access to production APIs</li>
+          </ul>
+          <li>Use AI <em>as much as necessary</em> but <em>as little as possible</em></li>
+        </ul>
+      </slide>
       <slide id="api-ai-new-york">
         <title>(How) does AI affect APIs?</title>
         <img src="apis-and-ai-cover.jpg" title="How does AI affect APIs? Expert Opinions from API Days New York 2025" href="https://www.youtube.com/watch?v=6ekEQR45IIo" class="fullsize-shadow"/>
       </slide>
+    </part>
+    <part id="api-access">
+      <title>More APIs</title>
+      <slide id="api-access-matters">
+        <title>Why More APIs Matter</title>
+        <img src="workbench.jpg" class="fullsize-shadow" />
+      </slide>
+    </part>
+    <part id="api-description-documentation">
+      <title>Better Described APIs</title>
+    </part>
+    <part id="api-search-selection">
+      <title>Dynamic Tool Discovery</title>
+    </part>
+    <part id="api-workflows">
+      <title>Workflow-Based Tools</title>
+    </part>
+    <part id="api-sandbox">
+      <title>Safe Tool Practices</title>
     </part>
     <part id="conclusions">
       <title>Conclusions</title>
