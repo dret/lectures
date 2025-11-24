@@ -101,6 +101,20 @@
         <title>Step #1: More Tools</title>
         <img src="api-ai-evolution-1-more.png" class="fullsize-shadow" />
       </slide>
+      <slide id="mcp-intro">
+        <title>Model Context Protocol (MCP)</title>
+        <img src="mcp-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>MCP is the current <q>standard protocol</q> for LLM consumers</li>
+          <li>The initial focus was on <em>additional and extended context</em></li>
+          <ul>
+            <li><em>Additional context</em> by providing access to the environment</li>
+            <li><em>Extended context</em> by allowing MCP servers to externally manage context</li>
+          </ul>
+          <li>Many mapping tools generate MCP servers from OpenAPI descriptions</li>
+          <li><em>What</em> to expose and <em>how to design it</em> is out of scope</li>
+        </ul>
+      </slide>
     </part>
     <part id="tool-description">
       <title>Better Described Tools</title>
