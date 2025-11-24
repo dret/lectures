@@ -124,6 +124,33 @@
           <li>Consumers can access <em>all MCP tools</em></li>
         </ol>
       </slide>
+      <slide id="api-mcp-ai-direct-tradeoffs">
+        <title>MCP all the APIs: Easy but Limited</title>
+        <ul>
+          <li><em>Pros:</em></li>
+          <ul>
+            <li>Zero development effort, many tools auto-generate MCP</li>
+            <li>All APIs easily available</li>
+            <li>Great for early and quick experimentation</li>
+          </ul>
+          <li><em>Cons:</em></li>
+          <ul>
+            <li>Context window explosion with large APIs</li>
+            <li>AI struggles with understanding workflow across endpoints</li>
+            <li>Risk of misinterpreting MCP problems as general AI problems</li>
+          </ul>
+          <li>Good as a starting point but lacks sophistication and scalability</li>
+        </ul>
+        <slide id="mcp-problems">
+          <title>MCP Solves Everything!?</title>
+          <ul>
+            <li>Problem #1: Complex APIs will overload the MCP client's context</li>
+            <li>Problem #2: Larger API landscapes will overload the MCP client's context</li>
+            <li>Problem #3: Poor API design translates to poor MCP results</li>
+            <li>Problem #4: Bad AX results in unsatisfactory AI results</li>
+          </ul>
+        </slide>
+      </slide>
     </part>
     <part id="tool-description">
       <title>Better Described Tools</title>
