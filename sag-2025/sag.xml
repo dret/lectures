@@ -156,6 +156,15 @@
           <li>Problem #4: Bad AX results in unsatisfactory AI results</li>
         </ul>
       </slide>
+      <slide id="more-tools">
+        <title>More Tools ⇏ Better Tool Landscape</title>
+        <ul>
+          <li>LLMs can now access many tools</li>
+          <li>But they cannot understand many of them well</li>
+          <li>Poor descriptions → poor tool selection → poor results</li>
+          <li>Next step: <link href="tool-description"/></li>
+        </ul>
+      </slide>
     </part>
     <part id="tool-description">
       <title>Better Described Tools</title>
