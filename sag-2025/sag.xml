@@ -172,6 +172,56 @@
         <title>Step #2: Better Described Tools</title>
         <img src="api-ai-evolution-2-description.png" class="fullsize-shadow" />
       </slide>
+      <slide id="dx-homework">
+        <title>Do Your DX Homework</title>
+        <ul>
+          <li>Most API descriptions need quality improvements anyway</li>
+          <li>Better descriptions benefit <em>everyone</em>, not just AI agents</li>
+          <ul>
+            <li>Complete and meaningful operation summaries</li>
+            <li>Comprehensive examples for all operations</li>
+            <li>Clear error handling</li>
+            <li>Consistent terminology and naming</li>
+          </ul>
+          <li>Good DX is the foundation for good AX</li>
+        </ul>
+      </slide>
+      <slide id="ax-homework">
+        <title>Now There's AX Homework, Too</title>
+        <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+        <ul>
+          <li>AI agents need information developers don't typically require:</li>
+          <ul>
+            <li>Everything that developers usually <q>just know</q></li>
+            <li>Treat every API like an external one for developers with no context</li>
+          </ul>
+          <li>OpenAPI Initiative (OAI) might add AX-specific fields</li>
+          <li>Until then, leverage description fields strategically</li>
+        </ul>
+      </slide>
+      <slide id="oai-intro">
+        <title>The OpenAPI Initiative (OAI)</title>
+        <img src="OAI-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Today: no AX-specific fields in OpenAPI (3.2)</li>
+          <li>Community needs to define what AI agents need (3.3)</li>
+          <li>Tooling will follow once fields are standardized</li>
+          <li>Interested? Join the discussion in the <a href="https://openapis.org">OpenAPI Initiative</a>!</li>
+        </ul>
+      </slide>
+      <slide id="api-ai-readiness-score">
+        <title>API AI Readiness Score for APIs</title>
+        <img src="api-ai-readiness-score-twilio-messaging.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="better-descriptions">
+        <title>Better Descriptions ⇏ Scalable Tool Use</title>
+        <ul>
+          <li>Better AX reduces confusion and misuse</li>
+          <li>But even well-described tools still overload agent context</li>
+          <li>The problem shifts from <em>understanding</em> tools to <em>finding</em> the right ones</li>
+          <li>Next step: <link href="tool-search"/></li>
+        </ul>
+      </slide>
     </part>
     <part id="tool-search">
       <title>Dynamic Tool Discovery</title>
@@ -182,6 +232,12 @@
       <slide id="anthropic">
         <title>Anthropic Advanced Tool Use</title>
         <img src="anthropic-advanced-tool-use.png" href="https://www.anthropic.com/engineering/advanced-tool-use" source='"Introducing advanced tool use on the Claude Developer Platform", November 24, 2025' class="fullsize-shadow" />
+      </slide>
+      <slide id="dynamic-discovery">
+        <title>Dynamic Discovery ⇏ Ideal Tool Landscape</title>
+        <ul>
+          <li>Next step: <link href="workflow-tools"/></li>
+        </ul>
       </slide>
     </part>
     <part id="workflow-tools">
