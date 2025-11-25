@@ -146,15 +146,15 @@
           </ul>
           <li>Good as a starting point but lacks sophistication and scalability</li>
         </ul>
-        <slide id="mcp-problems">
-          <title>MCP Solves Everything!?</title>
-          <ul>
-            <li>Problem #1: Complex APIs will overload the MCP client's context</li>
-            <li>Problem #2: Larger API landscapes will overload the MCP client's context</li>
-            <li>Problem #3: Poor API design translates to poor MCP results</li>
-            <li>Problem #4: Bad AX results in unsatisfactory AI results</li>
-          </ul>
-        </slide>
+      </slide>
+      <slide id="mcp-problems">
+        <title>MCP Solves Everything!?</title>
+        <ul>
+          <li>Problem #1: Complex APIs will overload the MCP client's context</li>
+          <li>Problem #2: Larger API landscapes will overload the MCP client's context</li>
+          <li>Problem #3: Poor API design translates to poor MCP results</li>
+          <li>Problem #4: Bad AX results in unsatisfactory AI results</li>
+        </ul>
       </slide>
     </part>
     <part id="tool-description">
