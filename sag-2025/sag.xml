@@ -354,6 +354,25 @@
         <title>Safe Tool Practices</title>
         <img src="api-ai-evolution-5-sandbox.png" class="fullsize-shadow" />
       </slide>
+      <slide id="sandbox-internal">
+        <title>Sandboxes for Workflow Discovery</title>
+        <ul>
+          <li>Tool-creating agents can explore capabilities</li>
+          <li>Traces identify stable, reusable sequences</li>
+          <li>Recurring action patterns are workflow candidates</li>
+          <li>Reviewed sequences become reusable workflow</li>
+        </ul>
+      </slide>
+      <slide id="sandbox-experimentation">
+        <title>Sandboxes for Safe AI Experimentation</title>
+        <img src="agent-sandbox.png" title="Sandbox for AI Agents" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Provide mocked or synthetic versions of real tools</li>
+          <li>Limit blast radius when testing AI applications</li>
+          <li>Validate AI application logic before production</li>
+          <li>On-demand safe spaces for subsets of the landscape</li>
+        </ul>
+      </slide>
     </part>
     <part id="conclusions">
       <title>Conclusions</title>
