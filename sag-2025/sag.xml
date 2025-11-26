@@ -274,9 +274,21 @@
           <li>Allows flexible combination of capabilities for any use case</li>
         </ul>
       </slide>
+      <slide id="api-search-ranking">
+        <title>Semantic Search with RAG</title>
+        <ul>
+          <li>All capabilities indexed in a <em>vector database</em></li>
+          <li>Queries resolved via semantic search (embeddings &amp; similarity)</li>
+          <li><em>Retrieval-Augmented Generation (RAG)</em> assembles relevant operations</li>
+          <li>Depends heavily on high-quality descriptions</li>
+        </ul>
+      </slide>
       <slide id="dynamic-discovery">
         <title>Dynamic Discovery ⇏ Ideal Tool Landscape</title>
         <ul>
+          <li>Discovery helps reduce tool overload</li>
+          <li>Agents still have to invent workflows from scratch</li>
+          <li>We need higher-level, business-aligned tools</li>
           <li>Next: <link href="workflow-tools"/></li>
         </ul>
       </slide>
