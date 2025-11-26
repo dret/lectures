@@ -299,6 +299,54 @@
         <title>Workflow-Based Tools</title>
         <img src="api-ai-evolution-4-workflow.png" class="fullsize-shadow" />
       </slide>
+      <slide id="workflows-matter">
+        <title>Why Workflows Matter</title>
+        <ul>
+          <li>Many tasks follow predictable, repeatable sequences</li>
+          <li>Agents shouldn't re-discover the same steps</li>
+          <li>Workflow tools reduce the number of tools agents must reason about</li>
+          <li>Higher-level tools = less context, less confusion, faster results</li>
+        </ul>
+      </slide>
+      <slide id="workflow-advantages">
+        <title>Workflow Advantages</title>
+        <ul>
+          <li>Predictability</li>
+          <li>Auditability</li>
+          <li>Compliance</li>
+          <li>Business alignment</li>
+          <li>Reduced need for AI</li>
+          <li>Energy/cost efficiency</li>
+        </ul>
+      </slide>
+      <slide id="workflow-mining">
+        <title>Observing AI to Discover Workflows</title>
+        <ul>
+          <li>AI tries to solve tasks in its own way</li>
+          <li>Observing AI reveals <em>workflow candidates</em></li>
+          <li>Workflows can be reviewed and replayed</li>
+          <li>Workflows are published as new APIs, usable beyond AI</li>
+        </ul>
+      </slide>
+      <slide id="arazzo-intro">
+        <title>OAI Arazzo</title>
+        <img src="arazzo-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Arazzo is an open workflow standard by OAI</li>
+          <li>It allows combining API interactions into workflows</li>
+          <li>Arazzo was designed for documentation, testing, and SDK generation</li>
+          <li>New versions will start incorporating AsyncAPI support</li>
+        </ul>
+      </slide>
+      <slide id="workflow-safety">
+        <title>Workflow Tools ⇏ Safe Tool Use</title>
+        <ul>
+          <li>Workflows help with AI productivity</li>
+          <li>Detecting/defining workflows is non-trivial</li>
+          <li>AI needs a safe space to work with tools</li>
+          <li>Next: <link href="tool-practices" /></li>
+        </ul>
+      </slide>
     </part>
     <part id="tool-practices">
       <title>Step #5: Safe Tool Practices</title>
