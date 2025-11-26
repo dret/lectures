@@ -233,6 +233,47 @@
         <title>Anthropic Advanced Tool Use</title>
         <img src="anthropic-advanced-tool-use.png" href="https://www.anthropic.com/engineering/advanced-tool-use" source='"Introducing advanced tool use on the Claude Developer Platform", November 24, 2025' class="fullsize-shadow" />
       </slide>
+      <slide id="api-tool-mapping">
+        <title>One API ≠ One Tool</title>
+        <img src="victorinox-swiss-champ-xxl.png" title="Victorinox Swiss Champ XXL" href="https://www.victorinox.com/de-DE/Produkte/Swiss-Army-Knife%E2%84%A2-and-Tools/Trades-and-Crafts/Swiss-Champ%C2%A0XXL/p/1.6795.XXL" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>APIs can be large and multifunctional</li>
+          <li>Tools should be <em>task-specific</em></li>
+          <li>AI rarely needs an entire API</li>
+        </ul>
+      </slide>
+      <slide id="github-api">
+        <title>GitHub API</title>
+        <img src="github-api.png" title="GitHub API" href="https://github.com/github/rest-api-description" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li><a href="https://github.com/github/rest-api-description">GitHub API</a></li>
+          <ul>
+            <li>11MB</li>
+            <li>320k lines</li>
+            <li>738 paths</li>
+            <li>1114 operations</li>
+            <li>259 webhooks</li>
+          </ul>
+          <li><a href="https://github.com/github/github-mcp-server">GitHub MCP Server</a></li>
+          <ul>
+            <li>7 tool categories</li>
+            <li>41 tools overall</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="api-microproduct">
+        <title>API Microproducts</title>
+        <ul>
+          <li>Traditional API products bundle endpoints into coarse offerings</li>
+          <li>With unknown use cases, it's better to decompose into fine-grained API microproducts</li>
+          <ul>
+            <li><em>OpenAPI:</em> Treat all operations on all endpoints as individual capabilities</li>
+            <li><em>AsyncAPI:</em> Treat all messages on all channels as individual capabilities</li>
+            <li><em>GraphQL:</em> Treat all queries and mutations as individual capabilities</li>
+          </ul>
+          <li>Allows flexible combination of capabilities for any use case</li>
+        </ul>
+      </slide>
       <slide id="dynamic-discovery">
         <title>Dynamic Discovery ⇏ Ideal Tool Landscape</title>
         <ul>
