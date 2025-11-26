@@ -97,13 +97,13 @@
       </slide>
     </part>
     <part id="tool-availability">
-      <title>More Tools</title>
+      <title>Step #1: More Tools</title>
       <slide id="api-access-matters">
         <title>Why More APIs Matter</title>
         <img src="workbench.jpg" class="fullsize-shadow" />
       </slide>
       <slide id="api-ai-evolution-1-more">
-        <title>Step #1: More Tools</title>
+        <title>More Tools</title>
         <img src="api-ai-evolution-1-more.png" class="fullsize-shadow" />
       </slide>
       <slide id="mcp-intro">
@@ -162,14 +162,14 @@
           <li>LLMs can now access many tools</li>
           <li>But they cannot understand many of them well</li>
           <li>Poor descriptions → poor tool selection → poor results</li>
-          <li>Next step: <link href="tool-description"/></li>
+          <li>Next: <link href="tool-description"/></li>
         </ul>
       </slide>
     </part>
     <part id="tool-description">
-      <title>Better Described Tools</title>
+      <title>Step #2: Better Described Tools</title>
       <slide id="api-ai-evolution-2-description">
-        <title>Step #2: Better Described Tools</title>
+        <title>Better Described Tools</title>
         <img src="api-ai-evolution-2-description.png" class="fullsize-shadow" />
       </slide>
       <slide id="dx-homework">
@@ -219,14 +219,14 @@
           <li>Better AX reduces confusion and misuse</li>
           <li>But even well-described tools still overload agent context</li>
           <li>The problem shifts from <em>understanding</em> tools to <em>finding</em> the right ones</li>
-          <li>Next step: <link href="tool-search"/></li>
+          <li>Next: <link href="tool-search"/></li>
         </ul>
       </slide>
     </part>
     <part id="tool-search">
-      <title>Dynamic Tool Discovery</title>
+      <title>Step #3: Dynamic Tool Discovery</title>
       <slide id="api-ai-evolution-3-search">
-        <title>Step #3: Dynamic Tool Discovery</title>
+        <title>Dynamic Tool Discovery</title>
         <img src="api-ai-evolution-3-search.png" class="fullsize-shadow" />
       </slide>
       <slide id="anthropic">
@@ -277,21 +277,21 @@
       <slide id="dynamic-discovery">
         <title>Dynamic Discovery ⇏ Ideal Tool Landscape</title>
         <ul>
-          <li>Next step: <link href="workflow-tools"/></li>
+          <li>Next: <link href="workflow-tools"/></li>
         </ul>
       </slide>
     </part>
     <part id="workflow-tools">
-      <title>Workflow-Based Tools</title>
+      <title>Step #4: Workflow-Based Tools</title>
       <slide id="api-ai-evolution-4-workflow">
-        <title>Step #4: Workflow-Based Tools</title>
+        <title>Workflow-Based Tools</title>
         <img src="api-ai-evolution-4-workflow.png" class="fullsize-shadow" />
       </slide>
     </part>
     <part id="tool-practices">
-      <title>Safe Tool Practices</title>
+      <title>Step #5: Safe Tool Practices</title>
       <slide id="api-ai-evolution-5-sandbox">
-        <title>Step #5: Safe Tool Practices</title>
+        <title>Safe Tool Practices</title>
         <img src="api-ai-evolution-5-sandbox.png" class="fullsize-shadow" />
       </slide>
     </part>
