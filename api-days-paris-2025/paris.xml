@@ -29,6 +29,7 @@
         <tr>
           <th valign="bottom">Date</th>
           <th valign="bottom">Title</th>
+          <th valign="bottom">Author</th>
           <th valign="bottom">Slides</th>
         </tr>
       </thead>
@@ -37,6 +38,7 @@
           <tr class="vevent">
             <td valign="top"><b><span class="title"><hotspot:date/></span></b></td>
             <td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
+            <td valign="top"><b><span class="title"><hotspot:author/></span></b></td>
             <td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
           </tr>
         </hotspot:for-each-presentation>
@@ -44,12 +46,12 @@
     </table>
   </toc>
   <title><a href="https://www.apidays.global/">API Days</a> <a href="https://www.apidays.global/paris/">Paris</a> 2025</title>
-	<author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
+	<author>Erik Wilde, Head of Enterprise Strategy, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></author>
 	<copyright>2025 Erik Wilde</copyright>
   <presentation id="beyond-mcp">
     <date short="2025-12-10">December 10, 2025</date>
     <title short="Beyond MCP">Beyond MCP: Scaling AI Enablement for API Landscapes</title>
-    <slide id="dret">
+    <slide id="mcp-dret">
       <title>Erik Wilde</title>
       <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
       <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
@@ -72,9 +74,69 @@
       </slide>
     </part>
   </presentation>
+  <presentation id="workshop-overview">
+    <date short="2025-12-10">December 10, 2025</date>
+    <title short="Overview">Overview of APIs and API Business Models</title>
+    <slide id="workshop-overview-qr-code">
+      <title>Workshop Materials</title>
+      <img src="qr-code-workshop-materials-paris-2025.png" class="fullsize" />
+    </slide>
+  </presentation>
+  <presentation id="workshop-descriptions">
+    <date short="2025-12-10">December 10, 2025</date>
+    <title short="Descriptions">API Descriptions and OpenAPI</title>
+    <slide id="workshop-descriptions-qr-code">
+      <title>Workshop Materials</title>
+      <img src="qr-code-workshop-materials-paris-2025.png" class="fullsize" />
+    </slide>
+  </presentation>
+  <presentation id="workshop-linting">
+    <date short="2025-12-10">December 10, 2025</date>
+    <title>API Linting</title>
+    <slide id="workshop-linting-qr-code">
+      <title>Workshop Materials</title>
+      <img src="qr-code-workshop-materials-paris-2025.png" class="fullsize" />
+    </slide>
+  </presentation>
+  <presentation id="workshop-dx-to-ax">
+    <date short="2025-12-10">December 10, 2025</date>
+    <title short="From DX to AX">From Developer Experience (DX) to Agent Experience (AX)</title>
+    <slide id="workshop-dx-to-ax-qr-code">
+      <title>Workshop Materials</title>
+      <img src="qr-code-workshop-materials-paris-2025.png" class="fullsize" />
+    </slide>
+  </presentation>
+  <presentation id="workshop-api-ai-ready">
+    <date short="2025-12-10">December 10, 2025</date>
+    <title short="AI-Ready APIs">Getting your APIs AI-Ready</title>
+    <author>Frank Kilcommins, Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></author>
+    <slide id="workshop-api-ai-ready-qr-code">
+      <title>Workshop Materials</title>
+      <img src="qr-code-workshop-materials-paris-2025.png" class="fullsize" />
+    </slide>
+  </presentation>
+  <presentation id="workshop-overlays">
+    <date short="2025-12-10">December 10, 2025</date>
+    <title>API Description Pipelines with Overlays</title>
+    <author>Frank Kilcommins, Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></author>
+    <slide id="workshop-arazzo-qr-code">
+      <title>Workshop Materials</title>
+      <img src="qr-code-workshop-materials-paris-2025.png" class="fullsize" />
+    </slide>
+  </presentation>
+  <presentation id="workshop-arazzo">
+    <date short="2025-12-10">December 10, 2025</date>
+    <title>AI-Friendly API Workflows with Arazzo</title>
+    <author>Frank Kilcommins, Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></author>
+    <slide id="workshop-arazzo-qr-code">
+      <title>Workshop Materials</title>
+      <img src="qr-code-workshop-materials-paris-2025.png" class="fullsize" />
+    </slide>
+  </presentation>
   <presentation id="openapi-welcome">
     <date short="2025-12-11">December 11, 2025</date>
     <title short="OpenAPI Conference Welcome">OpenAPI Conference Welcome and OpenAPI in the Age of AI</title>
+    <author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
     <slide id="dret">
       <title>Erik Wilde</title>
       <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
