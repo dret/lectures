@@ -38,7 +38,7 @@
           <tr class="vevent">
             <td valign="top"><b><span class="title"><hotspot:date/></span></b></td>
             <td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
-            <td valign="top"><b><span class="title"><hotspot:author/></span></b></td>
+            <td valign="top" align="center"><b><span class="title"><hotspot:author/></span></b></td>
             <td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
           </tr>
         </hotspot:for-each-presentation>
@@ -46,7 +46,8 @@
     </table>
   </toc>
   <title><a href="https://www.apidays.global/">API Days</a> <a href="https://www.apidays.global/paris/">Paris</a> 2025</title>
-	<author>Erik Wilde, Head of Enterprise Strategy, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></author>
+	<author>Erik Wilde</author>
+  <affiliation>Head of Enterprise Strategy, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
 	<copyright>2025 Erik Wilde</copyright>
   <presentation id="beyond-mcp">
     <date short="2025-12-10">December 10, 2025</date>
@@ -132,7 +133,8 @@
   <presentation id="workshop-api-ai-ready">
     <date short="2025-12-10">December 10, 2025</date>
     <title short="AI-Ready APIs">Getting your APIs AI-Ready</title>
-    <author>Frank Kilcommins, Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></author>
+    <author>Frank Kilcommins</author>
+    <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
     <slide id="workshop-api-ai-ready-qr-code">
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-paris-2025.png" class="fullsize" />
@@ -141,7 +143,8 @@
   <presentation id="workshop-overlays">
     <date short="2025-12-10">December 10, 2025</date>
     <title>API Description Pipelines with Overlays</title>
-    <author>Frank Kilcommins, Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></author>
+    <author>Frank Kilcommins</author>
+    <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
     <slide id="workshop-arazzo-qr-code">
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-paris-2025.png" class="fullsize" />
@@ -150,7 +153,8 @@
   <presentation id="workshop-arazzo">
     <date short="2025-12-10">December 10, 2025</date>
     <title>AI-Friendly API Workflows with Arazzo</title>
-    <author>Frank Kilcommins, Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></author>
+    <author>Frank Kilcommins</author>
+    <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
     <slide id="workshop-arazzo-qr-code">
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-paris-2025.png" class="fullsize" />
@@ -159,7 +163,8 @@
   <presentation id="openapi-welcome">
     <date short="2025-12-11">December 11, 2025</date>
     <title short="OpenAPI Conference Welcome">OpenAPI Conference Welcome and OpenAPI in the Age of AI</title>
-    <author>Erik Wilde, <a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</author>
+    <author>Erik Wilde</author>
+    <affiliation><a href="https://www.openapis.org/" title="OpenAPI Initiative">OAI</a> Ambassador</affiliation>
     <slide id="dret">
       <title>Erik Wilde</title>
       <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
