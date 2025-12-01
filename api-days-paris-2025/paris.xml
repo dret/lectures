@@ -105,6 +105,50 @@
         <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
       </ul>
     </slide>
+    <part id="api-business">
+      <title>API Business Models</title>
+      <slide id="platformy">
+        <title>Become Platform-y</title>
+        <img src="api-business-models.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li>Most businesses are not (primarily) API businesses</li>
+          <li>Many businesses can benefit from adding an API angle</li>
+          <li>Explore <a href="https://www.mulesoft.com/sites/default/files/cmm_files/2020_Guide_to_API_Business_Models.pdf">API Business Models</a> for some inspiration</li>
+        </ul>
+      </slide>
+      <slide id="business-model-overview">
+        <title>API Business Model Overview</title>
+        <img src="api-business-models.png" href="https://www.mulesoft.com/api-university/programmablewebs-guide-to-modern-api-business-models" class="fullsize"/>
+      </slide>
+      <slide id="business-model-partner">
+        <title>Partner Business Models</title>
+        <img src="api-business-models-partner.png" href="https://www.mulesoft.com/api-university/programmablewebs-guide-to-modern-api-business-models" class="fullsize"/>
+      </slide>
+      <slide id="business-model-partner-affiliate">
+        <title>Partner Business Model: Affiliate</title>
+        <img src="walgreens-native-photo-prints-api.png" href="https://developer.walgreens.com/sites/default/files/v3_Native_PhotoPrintsAPI.html" title="Walgreens Native Photo Prints API" class="fullsize"/>
+      </slide>
+      <slide id="business-model-marketing">
+        <title>Marketing Business Models</title>
+        <img src="api-business-models-marketing.png" class="fullsize"/>
+      </slide>
+      <slide id="business-model-marketing-audience">
+        <title>Marketing Business Model: Audience</title>
+        <img src="twitter-authentication-api.png" href="https://developer.twitter.com/en/docs/authentication/overview" title="Twitter Authentication API" class="fullsize"/>
+      </slide>
+      <slide id="business-model-internal">
+        <title>The 900lb Gorilla</title>
+        <img src="api-business-models-internal.png" href="https://www.mulesoft.com/api-university/programmablewebs-guide-to-modern-api-business-models" class="fullsize"/>
+      </slide>
+      <slide id="indirect">
+        <title>Most API Value Creation is Indirect</title>
+        <ol>
+          <li>Using APIs to become better at internal reuse and cross-pollination</li>
+          <li>Reducing friction by having teams communicate via APIs</li>
+          <li>Using <q>API First</q> as a way to build everything as digital building blocks</li>
+        </ol>
+      </slide>
+    </part>
   </presentation>
   <presentation id="workshop-descriptions">
     <date short="2025-12-10">December 10, 2025</date>
