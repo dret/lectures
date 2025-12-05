@@ -248,6 +248,40 @@
         <img src="api-linting-multiple.png" class="fullsize" />
       </slide>
     </part>
+    <part id="level-1">
+      <title>Using and Tweaking Rules</title>
+      <slide id="minimal-spectral">
+        <title>Minimal Spectral</title>
+        <img src="spectral-petstore-builtin.png" title="Spectral linting the petstore example against the built-in ruleset for OAS" class="fullsize" />
+      </slide>
+      <slide id="tweaking-rules">
+        <title>No Onions and Extra Cheese, Please!</title>
+        <ul>
+          <li>Spectral has a large set of <a href="https://docs.stoplight.io/docs/spectral/4dec24461f3af-open-api-rules">built-in rules for OpenAPI</a></li>
+          <ul>
+            <li>Spectral also has built-in rules for <a href="https://docs.stoplight.io/docs/spectral/1e63ffd0220f3-async-api-rules">AsyncAPI</a> and <a href="https://docs.stoplight.io/docs/spectral/96c7245b504b1-arazzo-rules">Arazzo</a></li>
+          </ul>
+          <li>Rules in rulesets can be <a href="https://docs.stoplight.io/docs/spectral/83527ef2dd8c0-extending-rulesets#change-rule-severity">selectively tweaked or turned <code>off</code></a></li>
+        </ul>
+        <listing src="ruleset-tweaking-rules.yaml" />
+      </slide>
+      <slide id="tweaking-rules-example">
+        <title>Tweaking Rules</title>
+        <img src="spectral-petstore-tweaking.png" title="Tweaking rule severity for the built-in Spectral ruleset for OAS" class="fullsize" />
+      </slide>
+      <slide id="third-party-rulesets">
+        <title>3rd Party Rulesets</title>
+        <ul>
+          <li>Rulesets that (try to) help with better API design</li>
+          <li>Rulesets that (try to) help with better API description</li>
+          <li>Rulesets that (try to) help with guidelines conformance</li>
+        </ul>
+      </slide>
+      <slide id="using-third-party-rulesets">
+        <title>Using 3rd Party Rulesets</title>
+        <img src="third-party-rulesets.png" href="https://github.com/stoplightio/spectral-rulesets" class="fullsize" />
+      </slide>
+    </part>
   </presentation>
   <presentation id="workshop-dx-to-ax">
     <date short="2025-12-10">December 10, 2025</date>
