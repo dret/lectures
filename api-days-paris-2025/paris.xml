@@ -81,12 +81,80 @@
         <title>More Tools</title>
         <img src="api-ai-evolution-1-more.png" class="fullsize-shadow" />
       </slide>
+      <slide id="mcp-intro">
+        <title>Model Context Protocol (MCP)</title>
+        <img src="mcp-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>MCP is the current <q>standard protocol</q> for LLM consumers</li>
+          <li>The initial focus was on <em>additional and extended context</em></li>
+          <ul>
+            <li><em>Additional context</em> by providing access to the environment</li>
+            <li><em>Extended context</em> by allowing MCP servers to externally manage context</li>
+          </ul>
+          <li>Many mapping tools generate MCP servers from OpenAPI descriptions</li>
+          <li><em>What</em> to expose and <em>how to design it</em> is out of scope</li>
+        </ul>
+      </slide>
+      <slide id="api-mcp-ai-direct-idea">
+        <title>MCP all the APIs</title>
+        <img src="api-mcp-ai-direct.png"  style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ; " />
+        <ol>
+          <li>Generate MCP from OpenAPI</li>
+          <li>Publish/Install MCP servers for all APIs</li>
+          <li>Consumers can access <em>all MCP tools</em></li>
+        </ol>
+      </slide>
+      <slide id="api-mcp-ai-direct-tradeoffs">
+        <title>MCP all the APIs: Easy but Limited</title>
+        <ul>
+          <li><em>Pros:</em></li>
+          <ul>
+            <li>Zero development effort, many tools auto-generate MCP</li>
+            <li>All APIs easily available</li>
+            <li>Great for early and quick experimentation</li>
+          </ul>
+          <li><em>Cons:</em></li>
+          <ul>
+            <li>Context window explosion with large APIs</li>
+            <li>AI struggles with understanding workflow across endpoints</li>
+            <li>Risk of misinterpreting MCP problems as general AI problems</li>
+          </ul>
+          <li>Good as a starting point but lacks sophistication and scalability</li>
+        </ul>
+      </slide>
+      <slide id="mcp-problems">
+        <title>MCP Solves Everything!?</title>
+        <ul>
+          <li>Problem #1: Complex APIs will overload the MCP client's context</li>
+          <li>Problem #2: Larger API landscapes will overload the MCP client's context</li>
+          <li>Problem #3: Poor API design translates to poor MCP results</li>
+          <li>Problem #4: Bad AX results in unsatisfactory AI results</li>
+        </ul>
+      </slide>
+      <slide id="more-tools">
+        <title>More Tools ⇏ Better Tool Landscape</title>
+        <ul>
+          <li>LLMs can now access many tools</li>
+          <li>But they cannot understand many of them well</li>
+          <li>Poor descriptions → poor tool selection → poor results</li>
+          <li>Next: <link href="tool-description"/></li>
+        </ul>
+      </slide>
     </part>
     <part id="tool-description">
       <title>Step #2: Better Described Tools</title>
       <slide id="api-ai-evolution-2-description">
         <title>Better Described Tools</title>
         <img src="api-ai-evolution-2-description.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="better-descriptions">
+        <title>Better Descriptions ⇏ Scalable Tool Use</title>
+        <ul>
+          <li>Better AX reduces confusion and misuse</li>
+          <li>But even well-described tools still overload agent context</li>
+          <li>The problem shifts from <em>understanding</em> tools to <em>finding</em> the right ones</li>
+          <li>Next: <link href="tool-search"/></li>
+        </ul>
       </slide>
     </part>
     <part id="tool-search">
@@ -95,12 +163,30 @@
         <title>Dynamic Tool Discovery</title>
         <img src="api-ai-evolution-3-search.png" class="fullsize-shadow" />
       </slide>
+      <slide id="dynamic-discovery">
+        <title>Dynamic Discovery ⇏ Ideal Tool Landscape</title>
+        <ul>
+          <li>Discovery helps reduce tool overload</li>
+          <li>Agents still have to invent workflows from scratch</li>
+          <li>We need higher-level, business-aligned tools</li>
+          <li>Next: <link href="workflow-tools"/></li>
+        </ul>
+      </slide>
     </part>
     <part id="workflow-tools">
       <title>Step #4: Workflow-Based Tools</title>
       <slide id="api-ai-evolution-4-workflow">
         <title>Workflow-Based Tools</title>
         <img src="api-ai-evolution-4-workflow.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="workflow-safety">
+        <title>Workflow Tools ⇏ Safe Tool Use</title>
+        <ul>
+          <li>Workflows help with AI productivity</li>
+          <li>Detecting/defining workflows is non-trivial</li>
+          <li>AI needs a safe space to work with tools</li>
+          <li>Next: <link href="tool-practices" /></li>
+        </ul>
       </slide>
     </part>
     <part id="tool-practices">
