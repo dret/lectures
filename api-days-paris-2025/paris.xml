@@ -296,9 +296,258 @@
     <title short="AI-Ready APIs">Getting your APIs AI-Ready</title>
     <author>Frank Kilcommins</author>
     <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
+    <part id="apis-and-ai">
+      <title>Are APIs AI-Ready?</title>
+      <slide id="ai-integration">
+        <title>AI Integration is the New Moat</title>
+        <img src="AI-integration-the-new-Moat.png" href="https://www.oreilly.com/radar/integration-is-the-new-moat/" title='Tim O Reilly, Oct 2025' class="fullsize-shadow" />
+        <p style="text-align: center; font-size: .3em;">Tim O’Reilly  "AI Integration Is the New Moat",O’REILLY, Oct 2025
+https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
+      </slide>
+      <slide id="api-for-humans">
+        <title>Most APIs were Designed for Humans!</title>
+        <ul>
+					<li>APIs are intended for developers, but not to be <em>interpreted, reasoned about, or safely executed</em> by AI systems</li>
+				</ul>
+        <img src="APIs-were-for-humans.png" title="Most APIs were designed for Humans" style="height: 50%" class="fullsize-shadow"/>
+      </slide>
+      <slide id="humans-tolerate">
+        <title>Humans Tolerate, Machines Cannot</title>
+        <p><strong><em>Human Interpretation:</em></strong></p>
+        <ul>
+					<li>Vague descriptions</li>
+          <li>Inconsistent naming</li>
+          <li>Wrong servers</li>
+          <li>Missing authentication info</li>
+          <li>Missing examples</li>
+				</ul>
+      </slide>      
+      <slide id="machines-cannot-tolerate">
+        <title>Humans Tolerate, Machines Cannot</title>
+        <p><strong><em>Machine Interpretation:</em></strong></p>
+        <img src="computer-says-no.png" title="Machines cannot tolerate missing semantics" style=" height: 50%; float: left ; margin : 0% 4% 4% 4% ; " class="shadow"/>
+      </slide>
+      <slide id="findings-from-1500-apis">
+        <title>Findings from 1500+ Public APIs</title>
+        <ul>
+          <li><strong><em>Broken specs:</em></strong></li>
+          <ul>
+            <li>Invalid or unparsable OpenAPI Docs</li>
+            <li>Missing path parameters / broken `$ref` chains</li>
+            <li>Invalid examples</li>
+          </ul>
+				</ul>
+        <ul>
+          <li><strong><em>Poor consumer experience:</em></strong></li>
+          <ul>
+            <li>Examples missing</li>
+            <li>Inconsistent naming, unclear HTTP verb usage</li>
+            <li>Vague or generic descriptions</li>
+          </ul>
+        </ul>
+        <ul>
+          <li><strong><em>Security runtime challenges:</em></strong></li>
+          <ul>
+              <li>No servers or wrong envs</li>
+              <li>Auth info missing (outside OpenAPI)</li>
+              <li>Stale / outdated OpenAPI Documents</li>      
+          </ul>
+        </ul>        
+      </slide> 
+      <slide id="typical-example">
+        <title>Typical Ambiguity Example</title>
+        <p><strong><em>Agent Interpretation:</em></strong></p>
+        <img src="A-valid-but-confusing-path-item.png" title="Machines cannot tolerate missing semantics" style="max-width: 50%; height: auto; float: right; margin : 0% 4% 4% 4% ;"/>
+        <ul>
+          <li>It might <em>create</em> an offer</li>
+          <li>It might<em>replace</em> an user</li>
+          <li>It might<em>partially update</em> a offer</li>
+          <li>It might<em>patch only some</em> offer fields</li>
+        </ul>       
+      </slide>      
+    </part>
+    <part id="apis-and-ai">
+      <title>Making APIs AI-Ready</title>
+      <slide id="where-to-start-api-improvements">
+        <title>Where to start?</title>
+          <img src="api-ai-focus-areas.png" class="fullsize" />  
+      </slide>
+      <slide id="summary-and-descriptions">
+        <title>Readable <em>Summaries</em> and <em>Descriptions</em></title> 
+        <p><strong>Improves:</strong></p>
+        <ul>
+          <li>AI Discoverability, Semantic Clarity, Agent Usability</li>        
+        </ul>
+        <p><strong>Where...</strong></p>
+        <ul>
+          <li style="font-family: monospace"><strong>Objects allowing `summary`:</strong> Info, Path Item, Operation, Response, Example, Tag, Reference, ... </li>
+          <li style="font-family: monospace"><strong>Objects allowing `description`:</strong> Info, Server, Server Variable, Operation, Path Item, External Documentation, Parameter, Request Body, Response, Example, Link, Header, Tag, Reference, Security Scheme, <em>All JSON Schemas</em>, ... </li>
+        </ul>
+      </slide>        
+      <slide id="semantic-schemas">
+        <title>Semantically Rich <em>Schemas</em></title>
+        <p><strong>Improves:</strong></p>
+        <ul>
+          <li>AI-Readiness, Agent Usability, Security &amp; Validation</li>
+        </ul>
+        <p><strong>Where...</strong></p>
+        <ul>
+          <li style="font-family: monospace">
+            <strong>Core JSON Schema fields:</strong>
+            <code>type</code>, <code>format</code>, <code>enum</code>, <code>const</code>, <code>required</code>, <code>items</code>, <code>properties</code>, <code>additionalProperties</code>, <code>oneOf</code>, <code>anyOf</code>, <code>allOf</code>, <code>not</code>
+          </li>
+          <li style="font-family: monospace">
+            <strong>Constraint fields:</strong>
+            <code>minimum</code>, <code>maximum</code>, <code>exclusiveMinimum</code>, <code>exclusiveMaximum</code>, <code>minLength</code>, <code>maxLength</code>, <code>pattern</code>, <code>minItems</code>, <code>maxItems</code>, <code>uniqueItems</code>, <code>minProperties</code>, <code>maxProperties</code>
+          </li>
+          <li style="font-family: monospace">
+            <strong>OpenAPI locations:</strong>
+            <code>components.schemas</code>, inline parameter schemas, request body schemas, response bodies, header schemas, and any reusable schema fragments.
+          </li>
+        </ul>
+      </slide>
+      <slide id="correct-http-methods">
+        <title>Correct <em>HTTP Methods</em></title>
+        <p><strong>Improves:</strong></p>
+        <ul>
+          <li>Agent Usability, Safety, Idempotency Guarantees</li>
+        </ul>
+        <p><strong>Where...</strong></p>
+        <ul>
+          <li style="font-family: monospace">
+            <strong>Operation verbs:</strong>
+            map semantics to methods correctly:
+            <code>GET</code> = retrieve/list,
+            <code>POST</code> = create/trigger,
+            <code>PUT</code> = full replace,
+            <code>PATCH</code> = partial update,
+            <code>DELETE</code> = remove/revoke.
+          </li>
+          <li style="font-family: monospace">
+            <strong>Anti-patterns to avoid:</strong>
+            state-changing <code>GET</code>,
+            "action verbs" in paths that conflict with methods
+            (for example <code>POST /users/{id}/update</code>).
+          </li>
+          <li style="font-family: monospace">
+            <strong>OpenAPI locations:</strong>
+            each HTTP method under <code>paths.&lt;path&gt;.&lt;method&gt;</code>, plus
+            consistent naming in <code>operationId</code>, <code>summary</code> and path templates.
+          </li>
+        </ul>
+      </slide>
+      <slide id="full-use-of-examples">
+        <title>Full Use of <em>&quot;Examples&quot;</em></title>
+        <p><strong>Improves:</strong></p>
+        <ul>
+          <li>Developer Experience, AI-Readiness, Agent Planning</li>
+        </ul>
+        <p><strong>Where...</strong></p>
+        <ul>
+          <li style="font-family: monospace">
+            <strong>Single example fields:</strong>
+            <code>example</code> on Parameter, Header, Media Type,
+            Request Body, Response, and JSON Schema objects.
+          </li>
+          <li style="font-family: monospace">
+            <strong>Multiple examples:</strong>
+            <code>examples</code> on Parameter, Header, Media Type, and Link
+            to illustrate variations, error cases, and edge conditions.
+          </li>
+          <li style="font-family: monospace">
+            <strong>OpenAPI locations:</strong>
+            <code>paths.&lt;path&gt;.&lt;method&gt;.parameters[].example(s)</code>,
+            <code>requestBody.content[*].example(s)</code>,
+            <code>responses[status].content[*].example(s)</code>,
+            <code>components.schemas.*.example</code>.
+          </li>
+        </ul>
+      </slide>
+      <slide id="problem-details">
+        <title>Use <em>RFC 9457</em> <em>Problem Details</em> for Errors</title>
+        <p><strong>Improves:</strong></p>
+        <ul>
+          <li>Error Consistency, Security Signalling, AI Error Reasoning</li>
+        </ul>
+        <p><strong>Where...</strong></p>
+        <ul>
+          <li style="font-family: monospace">
+            <strong>Standard error schema:</strong>
+            define a reusable <code>ProblemDetails</code> in
+            <code>components.schemas</code> following <strong>RFC 9457</strong>
+            (for example <code>type</code>, <code>title</code>, <code>status</code>, <code>detail</code>, <code>instance</code>, plus extension members).
+          </li>
+          <li style="font-family: monospace">
+            <strong>Error responses:</strong>
+            reference the shared schema from
+            <code>responses[4xx/5xx].content['application/problem+json'].schema</code>
+            and optionally the <code>default</code> response.
+          </li>
+          <li style="font-family: monospace">
+            <strong>AI benefit:</strong>
+            predictable error shapes make it easier for agents to detect,
+            classify, and recover from failures programmatically.
+          </li>
+        </ul>
+      </slide>
+      <slide id="http-status-codes">
+        <title>Appropriate HTTP <em>Status Code</em> Usage</title>
+        <p><strong>Improves:</strong></p>
+        <ul>
+          <li>Foundational Compliance, Agent Usability, Observability</li>
+        </ul>
+        <p><strong>Where...</strong></p>
+        <ul>
+          <li style="font-family: monospace">
+            <strong>Success responses:</strong>
+            use correct 2xx codes:
+            <code>200</code> for successful retrieval,
+            <code>201</code> for created resources,
+            <code>202</code> for accepted/async,
+            <code>204</code> for no-content updates or deletes.
+          </li>
+          <li style="font-family: monospace">
+            <strong>Error responses:</strong>
+            model common 4xx/5xx codes with schemas:
+            <code>400</code>, <code>401</code>, <code>403</code>,
+            <code>404</code>, <code>409</code>, <code>422</code>, <code>500</code>, ...
+            not just a single generic <code>200</code> or <code>500</code>.
+          </li>
+          <li style="font-family: monospace">
+            <strong>OpenAPI locations:</strong>
+            <code>paths.&lt;path&gt;.&lt;method&gt;.responses[status]</code>
+            with appropriate <code>content</code>, schema and examples per status code.
+          </li>
+        </ul>
+      </slide>
+
+    </part>
+    <part id="scoring-apis">
+      <title>Measuring what matters</title>
+      <slide id="the-scoring-metric">
+        <title>You Can’t Improve What You Can’t Measure!</title>
+        <img src="Measure-APIs-for-AI.png" class="fullsize-shadow" />
+      </slide>   
+      <slide id="the-scoring-metric">
+        <title>Our API AI-Readiness Framework</title>
+        <p>Evaluates APIs across <strong>six developer &amp; AI-readiness</strong> dimensions</p>
+        <ul>
+          <li>Foundational Compliance</li>
+          <li>Developer Experience (including tooling compatibility)</li>
+          <li>Agent Experience</li>
+          <li>Agent Usability</li>
+          <li>Security</li>
+          <li>AI Discoverability</li>
+        </ul> 
+      </slide>      
+      <slide id="scorecard">
+        <title>AI-Readiness Scorecard</title>
+        <img src="lufthansa-api-scorecard.png" class="fullsize-shadow" />
+      </slide>   
+    </part>    
     <slide id="workshop-api-ai-ready-qr-code">
       <title>Workshop Materials</title>
-      <img src="qr-code-workshop-materials-paris-2025.png" class="fullsize" />
+      <img src="qr-code-workshop-materials-paris-2025.png" class="fullsize-shadow" />
     </slide>
   </presentation>
   <presentation id="workshop-overlays">
