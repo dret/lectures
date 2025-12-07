@@ -641,21 +641,305 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
     <title>API Description Pipelines with Overlays</title>
     <author>Frank Kilcommins</author>
     <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
-    <slide id="workshop-arazzo-qr-code">
+    <copyright>2025 Frank Kilcommins</copyright>
+    <part id="what-is-overlay">
+			<title>What is the Overlay Specification?</title>
+      <slide id="overlay-what-is-it">
+          <title>What is the OpenAPI Overlay Specification?</title>
+          <ul>
+              <li>The OpenAPI Overlay Specification defines a way to modify an existing OpenAPI document without changing the original file.</li>
+              <li>Overlays are separate <em>YAML / JSON</em> documents containing structured actions (add, update, remove) targeting parts of an OpenAPI document.</li>
+              <li>Targets are identified using JSONPath expressions, enabling precise and repeatable transformations.</li>
+              <li>The Overlay Specification is an official OAI standard (v1.0.0) designed to support cleaner API workflows and automation.</li>
+              <li>Overlays allow changes to be applied incrementally, layered, and versioned independently of the base OpenAPI Document.</li>
+          </ul>
+      </slide> 
+      <slide id="overlay-why-use-it">
+          <title>Why Use Overlays?</title>
+          <ul>
+              <li><strong>Separation of concerns:</strong> Keep the canonical API definition clean, while applying environment-, audience-, or workflow-specific changes via overlays.</li>
+              <li><strong>Consistency &amp; automation:</strong> Apply repeatable updates across OpenAPI docs (e.g., documentation, metadata, security, examples) without manual editing.</li>
+              <li><strong>Multi-audience support:</strong> Generate public, private, partner, or internal API descriptions from one source using different overlays.</li>
+              <li><strong>Avoids oversharing:</strong> Remove internal endpoints or sensitive fields for public-facing specs without duplicating files.</li>
+              <li><strong>Integration in pipelines:</strong> Overlays can be applied during CI/CD to prepare API definitions for documentation, SDKs, testing, or gateways.</li>
+              <li><strong>Localization:</strong> Translating documentation into another language.</li>
+          </ul>
+          <br/>
+          <p style="text-align: center; font-size: 2em;"><strong>OpenAPI + Overlays = (better) OpenAPI!</strong></p>
+      </slide>
+    </part>
+    <part id="how-overlays-work">
+			<title>Overlay Specification Overview</title>
+        <slide id="overlay-spec-overview">
+            <title>Overlay Specification Overview</title>
+            <ul>
+                <li>An Overlay document has three top-level fields: <code>overlay</code> (version), <code>info</code>, and <code>actions</code>.</li>
+                <li>Actions are processed in order, allowing sequential and predictable transformations to the base OpenAPI spec.</li>
+                <li>Each Action Object contains a <code>target</code> (a JSONPath expression) and an operation such as <code>update</code>, <code>add</code>, <code>remove</code>, or <code>merge</code>.</li>
+                <li>Targets can point to any part of the OpenAPI document: paths, operations, parameters, descriptions, vendor extensions, security, metadata, etc.</li>
+                <li>Overlays are fully valid YAML/JSON documents and can be version-controlled and reused across pipelines.</li>
+            </ul>
+        </slide>   
+        <slide id="overlay-basic-example">
+            <title>Basic Overlay Example – Updating Descriptions</title>
+            <ul>
+                <li>Overlays can enrich generated or minimal OpenAPI specs with documentation.</li>
+                <li>Example: enhance the API's description field without touching the source OpenAPI Document.</li>
+                <li>Example Overlay:</li>
+            </ul>
+            <pre>
+              overlay: 1.0.0
+              info:
+                title: Improve API Descriptions
+                version: 0.1.0
+              actions:
+                - target: "$.info.description"
+                  update:
+                    description: "Public API for MyService – includes endpoints for books and orders."
+            </pre>
+            <ul>
+                <li>This updates <code>info.description</code> in the output OpenAPI Document when the overlay is applied.</li>
+            </ul>
+        </slide>     
+        <slide id="overlay-advanced-example">
+            <title>Advanced Overlay Example – Remove Internal Endpoints</title>
+            <ul>
+                <li>Overlays can remove elements based on metadata (e.g., internal endpoints marked with <code>x-internal: true</code>).</li>
+                <li>Useful for creating a public version of an API from an internal canonical OpenAPI Document.</li>
+                <li>Example Overlay:</li>
+            </ul>
+            <pre>
+              overlay: 1.0.0
+              info:
+                title: Public API Variant
+                version: 1.0.0
+              actions:
+                - target: "$.paths.*[?(@.x-internal == true)]"
+                  remove: true
+            </pre>
+            <ul>
+                <li>This removes all paths or operations marked as <em>internal</em> from the final OpenAPI Document.</li>
+                <li>Can be combined with overlays adding public-facing docs, examples, or vendor extensions.</li>
+            </ul>
+        </slide>              
+    </part>
+    <part id="overlay-in-pipelines">
+			<title>Overlays in API Pipelines</title>
+        <slide id="overlay-lifecycle-position">
+          <title>Where Overlays Fit in the API Lifecycle</title>
+          <ul>
+            <li>Begin with a canonical OpenAPI Description (often code-generated or design-first).</li>
+            <li>Apply overlays to inject descriptions, examples, tags, rate limits, or other metadata without altering the base OpenAPI Document.</li>
+            <li>Use multiple overlays to tailor the API for different audiences: public, partner, internal, or operational.</li>
+            <li>Generate derived specs during CI/CD for documentation portals, SDK generation, gateways, mocks, or testing tools.</li>
+            <li>Overlays help maintain a single source of truth while enabling flexible downstream representations.</li>
+          </ul>
+        </slide>
+
+        <slide id="overlay-automation-ci">
+            <title>Automation &amp; CI/CD Integration</title>
+            <ul>
+              <li>Overlays can be applied as automated steps during the build or release process.</li>
+              <li>Ensures documentation, SDKs, and other artifacts are always generated from a validated and enriched spec.</li>
+              <li>Important for large teams where manual edits would be error-prone or inconsistent.</li>
+              <li>Overlay application is deterministic: the same overlay + same base OpenAPI Document produces the same result every time.</li>
+              <li>Ideal for pipelines that produce “public”, “internal”, “sandbox”, or “gateway-ready” specs from one base definition.</li>
+            </ul>
+        </slide>
+
+        <slide id="overlay-when-to-use">
+            <title>When to Use Overlays (and When Not To)</title>
+            <ul>
+                <li><strong>Use overlays when:</strong>
+                    <ul>
+                        <li>You maintain a single authoritative OpenAPI Description but need multiple consumer-specific derivatives.</li>
+                        <li>You want to enrich autogenerated OpenAPI Docs with human-friendly descriptions and examples.</li>
+                        <li>You want to strip internal endpoints or sensitive details before publishing publicly.</li>
+                        <li>You want to version documentation changes separately from functional API changes.</li>
+                    </ul>
+                </li>
+                <li><strong>Avoid overlays when:</strong>
+                    <ul>
+                        <li>The change reflects reality of the core API itself (e.g., adding a real endpoint or schema change).</li>
+                        <li>Your tooling ecosystem does not yet support overlay application.</li>
+                        <li>You have highly dynamic schemas where direct design-first maintenance is preferred.</li>
+                    </ul>
+                </li>
+            </ul>
+        </slide>
+    </part>    
+    <slide id="workshop-overlay-qr-code">
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-paris-2025.png" class="fullsize" />
-    </slide>
+      <p style="text-align: center;">Jump to <em>Exercise 5</em>!</p>
+    </slide>    
   </presentation>
-  <presentation id="workshop-arazzo">
+
+<presentation id="workshop-arazzo">
     <date short="2025-12-10">December 10, 2025</date>
     <title>AI-Friendly API Workflows with Arazzo</title>
     <author>Frank Kilcommins</author>
     <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
-    <slide id="workshop-arazzo-qr-code">
-      <title>Workshop Materials</title>
-      <img src="qr-code-workshop-materials-paris-2025.png" class="fullsize" />
-    </slide>
-  </presentation>
+    <copyright>2025 Frank Kilcommins</copyright>
+		<part id="what-is-arazzo">
+			<title>What is the Arazzo Specification?</title>
+			<slide id="what-is-arazzo">
+				<title>What is the Arazzo Specification?</title>
+				<img src="arazzo_horizontal_color.png"  style="float: right ; width : 30%; margin : 0% 4% 4% 4% ;  "/>
+				<ul>
+					<li>The Arazzo Specification is a community-driven open specification within the <em>OpenAPI Initiative</em>, a Linux Foundation Project</li>
+					<li>Arazzo describes an approach to document use-case oriented workflows in a programmatically readable format</li>
+					<li>A <em>workflow</em> is a series of API calls which when woven together accomplish a specific task or goal or business objective</li>
+					<li>The human-readable nature improves the ability of API specifications to tell the story of the API(s) in a manner that can improve the consuming developer experience.</li>
+					<li>The machine-readable nature allows for intent orientated workflows to be discoverable and executable by AI agents, testing tools, documentation tools, and so on!</li>
+				</ul>
+			</slide>
+			<slide id="arazzo-use-cases">
+				<title>Dominant Use Cases</title>
+				<img src="arazzo_horizontal_color.png"  style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ;  "/>
+				<ul>
+					<li>Deterministic recipes for the use of APIs</li>
+					<ul>
+						<li>Make sense of large unwieldy API description</li>
+						<li>Bridge the gap where business flows span more than one API description</li>
+					</ul>
+					<li>Living API documentation and improved consumer developer experience (DX)</li>
+					<li>Assertable business value (machine readable end-to-end test semantics)</li>
+					<li>Targeted code generation tooling (think SDKs, MCP Servers) for APIs driven by use cases</li>
+					<li>Improved regulatory checks via assertable workflows</li>
+					<li>The AI potential for value orientated <em>repeatable</em> interaction with APIs</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="specification-structure">
+			<title>Arazzo Specification Structure</title>
+			<slide id="arazzo-specification-structure">
+				<title>Arazzo Specification Structure</title>
+				<img src="Arazzo-Specification-1.0.1.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-info">
+				<title>Arazzo Specification: Info Object</title>
+				<img src="arazzo-1-info.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-info-example">
+				<title>Arazzo Specification: Info Object Example</title>
+				<img src="arazzo-1-info-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-source-descriptions">
+				<title>Arazzo Specification: Source Descriptions</title>
+				<img src="arazzo-2-source-descriptions.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-source-descriptions-example">
+				<title>Arazzo Specification: Source Descriptions Example</title>
+				<img src="arazzo-2-source-descriptions-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-workflows">
+				<title>Arazzo Specification: Workflows</title>
+				<img src="arazzo-3-workflows.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-workflows-example">
+				<title>Arazzo Specification: Workflows Example</title>
+				<img src="arazzo-3-workflows-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-inputs">
+				<title>Arazzo Specification: Inputs</title>
+				<img src="arazzo-4-inputs.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-inputs-example">
+				<title>Arazzo Specification: Inputs Example</title>
+				<img src="arazzo-4-inputs-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-steps">
+				<title>Arazzo Specification: Steps</title>
+				<img src="arazzo-5-steps.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-steps-example">
+				<title>Arazzo Specification: Steps Example</title>
+				<img src="arazzo-5-steps-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-parameters">
+				<title>Arazzo Specification: Parameters</title>
+				<img src="arazzo-6-parameters.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-parameters-example">
+				<title>Arazzo Specification: Parameters Example</title>
+				<img src="arazzo-6-parameters-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-failure-actions">
+				<title>Arazzo Specification: Failure Actions</title>
+				<img src="arazzo-7-failure-actions.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-failure-actions-example">
+				<title>Arazzo Specification: Failure Actions Example</title>
+				<img src="arazzo-7-failure-actions-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-success-actions">
+				<title>Arazzo Specification: Success Actions</title>
+				<img src="arazzo-8-success-actions.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-success-actions-example">
+				<title>Arazzo Specification: Success Actions Example</title>
+				<img src="arazzo-8-success-actions-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-step-outputs">
+				<title>Arazzo Specification: Step Outputs</title>
+				<img src="arazzo-9-step-outputs.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-step-outputs-example">
+				<title>Arazzo Specification: Step Outputs Example</title>
+				<img src="arazzo-9-step-outputs-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-workflow-outputs">
+				<title>Arazzo Specification: Workflow Outputs</title>
+				<img src="arazzo-10-workflow-outputs.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-workflow-outputs-example">
+				<title>Arazzo Specification: Workflow Outputs Example</title>
+				<img src="arazzo-10-workflow-outputs-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-components">
+				<title>Arazzo Specification: Components</title>
+				<img src="arazzo-11-components.png" class="fullsize" style="height: 75%" />
+			</slide>
+		</part>
+		<part id="Arazzo Exercise">
+			<title>Exercise: A Pet Adoptions Workflow</title>
+			<slide id="exercise-arazzo">
+				<title>Demo Exercise</title>
+				<ul>
+					<li>Assume we're working for a company called <em>PetCo</em></li>
+					<li><em>Our problem:</em> We`re overwhelmed by the number of pets being abandoned at our pet store</li>
+					<li><em>Proposed Solution:</em> Create a Pet Adoptions Service</li>
+					<ul>
+						<li>Following research and evaluation, we`ve decided to create the ability to search for and adopt pets that we catalog</li>
+						<li>We`ll offer the service via our website but also with a wider eco-system of shelters, charities, and pet orphanages</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="arazzo-adopt-pet-use-case">
+				<title>Example Workflow Use Case</title>
+				<img src="arazzo-exercise-use-case.png" style="float: right ; width : 50% ; margin : 0% 4% 4% 4% ;  "/>
+				<ul>
+					<li>Adopt a pet matching criteria</li>
+					<li>Steps</li>
+					<ul>
+						<li>Search for a pet</li>
+						<li>Initiate adoption request</li>
+						<li>Confirm adoption by updating pet status</li>
+						<li>Verify pet has been marked as adopted in the listing</li>
+					</ul>
+				</ul>
+			</slide>
+			<slide id="arazzo-exercise-1">
+				<title>The Power of Arazzo: More YAML!?</title>
+				<img src="arazzo-exercise-1.png" class="fullsize" style="height: 75%" />
+			</slide>		
+			<slide id="arazzo-exercise-2">
+				<title>The Power of Arazzo: Machines love YAML!</title>
+				<img src="arazzo-exercise-2.png" class="fullsize" style="height: 75%" />
+			</slide>	
+		</part>
+	</presentation>
   <presentation id="openapi-welcome">
     <date short="2025-12-11">December 11, 2025</date>
     <title short="OpenAPI Conference Welcome">OpenAPI Conference Welcome and OpenAPI in the Age of AI</title>
