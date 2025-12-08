@@ -1,6 +1,6 @@
 body { color : #000000 ;
 	background-color : #F8F8FA ;
-	font-family : 'Ubuntu', Helvetica, sans-serif;
+	font-family : "Sora", "Helvetica Neue", Arial, sans-serif ;
 	margin : 0 ;
 }
 
@@ -19,9 +19,9 @@ a:hover { background-color : #4F5A36 ;
 
 .header a { color : #FFFFFF ; }
 
-.header {  background-color : #4F5A36 ;
+.header {  background-color : #015c45 ;
     color : #F8F8FA ;
-    border-bottom :  5px #78A350 solid ;
+    border-bottom :  5px #F4B94E solid ;
     padding : 1.5em ;
     margin : 0 ;
     text-align : center ;
