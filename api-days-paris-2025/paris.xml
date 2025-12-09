@@ -593,6 +593,28 @@
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-paris-2025.png" class="fullsize" />
     </slide>
+    <part id="workshop-dx">
+      <title>Developer Experience (DX)</title>
+      <slide id="developers">
+        <title>API Developers</title>
+        <ul>
+          <li>A lot of API-related experience and context</li>
+          <li>Discovering APIs at <em>design time</em> for writing applications</li>
+          <li>Navigating the API landscape with all their human skills</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="workshop-ax">
+      <title>Agent Experience (AX)</title>
+      <slide id="agents">
+        <title>Agentic API Users</title>
+        <ul>
+          <li>Little knowledge of API patterns and practices</li>
+          <li>Discovering APIs at <em>run-time</em> for solving tasks</li>
+          <li>Navigating only machine-readable parts of the API landscape</li>
+        </ul>
+      </slide>
+    </part>
   </presentation>
   <presentation id="workshop-api-ai-ready">
     <date short="2025-12-10">December 10, 2025</date>
