@@ -612,6 +612,14 @@
     </slide>
     <part id="workshop-dx">
       <title>Developer Experience (DX)</title>
+      <slide id="rise-of-dx">
+        <title>The Rise of DX</title>
+        <ul>
+          <li>2000s: Having any API is good</li>
+          <li>2010s: Having many APIs is good</li>
+          <li>2020s: Having good APIs is good</li>
+        </ul>
+      </slide>
       <slide id="developers">
         <title>API Developers</title>
         <ul>
@@ -630,6 +638,20 @@
           <li>Developers catch many mistakes the API design team made</li>
         </ul>
       </slide>
+      <slide id="dx-homework">
+        <title>Do Your DX Homework</title>
+        <ul>
+          <li>Most API descriptions need quality improvements anyway</li>
+          <li>Better descriptions benefit <em>everyone</em>, not just AI agents</li>
+          <ul>
+            <li>Complete and meaningful operation summaries</li>
+            <li>Comprehensive examples for all operations</li>
+            <li>Clear error handling</li>
+            <li>Consistent terminology and naming</li>
+          </ul>
+          <li>Good DX is the foundation for good AX</li>
+        </ul>
+      </slide>
     </part>
     <part id="workshop-ax">
       <title>Agent Experience (AX)</title>
@@ -639,6 +661,29 @@
           <li>Little knowledge of API patterns and practices</li>
           <li>Discovering APIs at <em>run-time</em> for solving tasks</li>
           <li>Navigating only machine-readable parts of the API landscape</li>
+        </ul>
+      </slide>
+      <slide id="ax-homework">
+        <title>Now There's AX Homework, Too</title>
+        <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+        <ul>
+          <li>AI agents need information developers don't typically require:</li>
+          <ul>
+            <li>Everything that developers usually <q>just know</q></li>
+            <li>Treat every API like an external one for developers with no context</li>
+          </ul>
+          <li>OpenAPI Initiative (OAI) might add AX-specific fields</li>
+          <li>Until then, leverage description fields strategically</li>
+        </ul>
+      </slide>
+      <slide id="oai-intro">
+        <title>The OpenAPI Initiative (OAI)</title>
+        <img src="OAI-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Today: no AX-specific fields in OpenAPI (3.2)</li>
+          <li>Community needs to define what AI agents need (3.3)</li>
+          <li>Tooling will follow once fields are standardized</li>
+          <li>Interested? Join the discussion in the <a href="https://openapis.org">OpenAPI Initiative</a>!</li>
         </ul>
       </slide>
     </part>
