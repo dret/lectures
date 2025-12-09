@@ -431,7 +431,7 @@
         <img src="food-label.png" title="FDA Nutrition Facts Label" href="https://www.fda.gov/food/nutrition-facts-label/added-sugars-nutrition-facts-label" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
           <li>APIs described by OpenAPI are described in a structured way</li>
-          <li><link href="openapi-fundamentals-resources">Resources</link>, <link href="openapi-fundamentals-interactions">interactions</link>, and <link href="openapi-fundamentals-representations">representations</link> are core concepts</li>
+          <li><link href="openapi-fundamentals-resources">Resources</link>, <link href="openapi-fundamentals-operations">operations</link>, and <link href="openapi-fundamentals-representations">representations</link> are core concepts</li>
           <li>OpenAPI uses a structured way to describe these concepts</li>
         </ul>
       </slide>
@@ -450,6 +450,62 @@
       <slide id="openapi-fundamentals-swagger">
         <title>Minimal OpenAPI in Editing Tool</title>
         <img src="greet-swagger.png" href="https://editor-next.swagger.io/" class="fullsize"/>
+      </slide>
+    </part>
+    <part id="openapi-superstructure">
+      <title>OpenAPI Superstructure: Resources, Interactions, and Representations</title>
+      <slide id="openapi-fundamentals-resources">
+        <title>OpenAPI Resources: URIs</title>
+        <pre>https://openapis.org/events</pre>
+        <ul>
+          <li>Individual resources are identified by uniformly defined identifiers</li>
+          <li>Tasks are completed by traversing a number of resources</li>
+          <li>Evolving APIs over time is a good practice</li>
+          <li>Adding resources is a good way to avoid breaking changes</li>
+        </ul>
+      </slide>
+      <slide id="github-api">
+        <title>GitHub API</title>
+        <img src="github-api-openapi-paths.png" title="GitHub API" href="https://github.com/github/rest-api-description" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li><a href="https://github.com/github/rest-api-description">GitHub API</a></li>
+          <ul>
+            <li>11MB</li>
+            <li>320k lines</li>
+            <li>738 paths</li>
+            <li>1114 operations</li>
+            <li>259 webhooks</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="openapi-fundamentals-operations">
+        <img src="http-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+        <title>OpenAPI Operations: HTTP</title>
+        <ul>
+          <li>The <q>language</q> how clients and servers communicate</li>
+          <li>Request/response model where the client (almost) always initiates the interaction</li>
+          <li>Each request has a <em>request method</em> (e.g., <code>GET</code>)</li>
+          <li>Each response has a <em>response status</em> (e.g., <code>200 OK</code>)</li>
+          <li>Requests and responses use <em>header fields</em> for metadata</li>
+          <li>Requests and responses can have a <em>message body</em></li>
+        </ul>
+      </slide>
+      <slide id="openapi-fundamentals-representations">
+        <title>OpenAPI Representations: JSON</title>
+        <ul>
+          <li><em>JavaScript Object Notation (JSON)</em> for exchanging structured data</li>
+          <li><code>application/json</code> says nothing about the data itself</li>
+          <li><em>JSON Schema</em> for describing valid structured data</li>
+          <li>OpenAPI uses JSON Schema for describing structured data</li>
+        </ul>
+      </slide>
+      <slide id="openapi-fundamentals-json-example">
+        <title>API Response: Structured Data</title>
+        <listing src="octocat.json" line="1-15"/>
+      </slide>
+      <slide id="openapi-fundamentals-response">
+        <title>API Response with Media Type</title>
+        <listing src="github-get-by-username.yaml"/>
       </slide>
     </part>
   </presentation>
