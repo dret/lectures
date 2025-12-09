@@ -696,7 +696,7 @@
       <title>Are APIs AI-Ready?</title>
       <slide id="ai-integration">
         <title>AI Integration is the New Moat</title>
-        <img src="AI-integration-the-new-Moat.png" href="https://www.oreilly.com/radar/integration-is-the-new-moat/" title='Tim O Reilly, Oct 2025' class="fullsize-shadow" />
+        <img src="AI-Integration-the-new-Moat.png" href="https://www.oreilly.com/radar/integration-is-the-new-moat/" title='Tim O Reilly, Oct 2025' class="fullsize-shadow" />
         <p style="text-align: center; font-size: .3em;">Tim O’Reilly  "AI Integration Is the New Moat",O’REILLY, Oct 2025
 https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
       </slide>
@@ -973,8 +973,7 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
               <li><strong>Integration in pipelines:</strong> Overlays can be applied during CI/CD to prepare API definitions for documentation, SDKs, testing, or gateways.</li>
               <li><strong>Localization:</strong> Translating documentation into another language.</li>
           </ul>
-          <br/>
-          <p style="text-align: center; font-size: 2em;"><strong>OpenAPI + Overlays = (better) OpenAPI!</strong></p>
+          <p style="text-align: center; font-size: 1.75em;"><strong>OpenAPI + Overlays = (better) OpenAPI!</strong></p>
       </slide>
     </part>
     <part id="how-overlays-work">
