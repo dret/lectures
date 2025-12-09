@@ -1,3 +1,9 @@
+# [API Management for the AI Era: Leveraging OpenAPI Standards](https://github.com/dret/api-days-workshop-paris-2025)
+
+## Workshop at [API Days Paris](https://www.apidays.global/events/paris), December 10, 2025
+
+### Final Quiz
+
 1. What changed APIs the most in the 2020s?
 
 - ⬜ More mobile apps
