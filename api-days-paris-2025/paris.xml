@@ -373,6 +373,57 @@
         </ul>
       </slide>
     </part>
+    <part id="value-openapi-popularity">
+      <title>Why OpenAPI is Popular</title>
+      <slide id="rest-rules">
+        <title>REST Rules</title>
+        <ul>
+          <li><em>External APIs</em> have gravitated towards HTTP/REST</li>
+          <ul>
+            <li>Simple and intuitive API style and tech stack</li>
+            <li>Good fit for client-initiated synchronous interactions</li>
+          </ul>
+          <li><em>Internal APIs</em> have a bit more diversity</li>
+          <ul>
+            <li><em>OpenAPI</em> for request-based services</li>
+            <li><em>GraphQL</em> for flexible front-ends</li>
+            <li><em>AsyncAPI</em> for event-driven services</li>
+            <li><em>gRPC</em> for remote procedure calls</li>
+          </ul>
+          <li>OpenAPI has the largest combined market in the API space</li>
+        </ul>
+      </slide>
+      <slide id="tooling-availability">
+        <title>Plenty of API Lifecycle Tooling</title>
+        <ul>
+          <li><em>Design tools</em> to help create and discuss APIs</li>
+          <li><em>Validation tools</em> to make sure APIs adhere to guidelines</li>
+          <li><em>Mocking tools</em> to generate APIs from descriptions</li>
+          <li><em>Testing tools</em> to validate implementations against descriptions</li>
+          <li><em>Fuzzing tools</em> to test APIs for robustness</li>
+          <li><em>Documentation tools</em> to create API documentation</li>
+          <li><em>Code generation tools</em> for client and server sides</li>
+        </ul>
+      </slide>
+      <slide id="openapi-tooling">
+        <title>OpenAPI Tooling</title>
+        <img src="openapi-tools.png" href="https://tools.openapis.org/" class="fullsize"/>
+      </slide>
+      <slide id="api-landscape">
+        <title>API Landscape</title>
+        <img src="api-landscape.png" href="https://apilandscape.apiscene.io/" class="fullsize-shadow"/>
+      </slide>
+      <slide id="lingua-franca">
+        <title>The Open API Lingua Franca</title>
+        <ul>
+          <li>OpenAPI benefits from the <em>network effect</em></li>
+          <li><em>Technologists</em> can easily talk about designs</li>
+          <li><em>Organisations</em> have a way to describe their building blocks</li>
+          <li><em>Teams</em> can communicate in a more scalable way</li>
+          <li>Communications are possible across all these areas</li>
+        </ul>
+      </slide>
+    </part>
   </presentation>
   <presentation id="workshop-linting">
     <date short="2025-12-10">December 10, 2025</date>
