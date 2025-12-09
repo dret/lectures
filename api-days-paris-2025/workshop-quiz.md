@@ -4,6 +4,8 @@
 
 ### Final Quiz
 
+Please keep in mind that some questions have more than one correct answer.
+
 1. What changed APIs the most in the 2020s?
 
 - ⬜ More mobile apps
