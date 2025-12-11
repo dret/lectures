@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
 <?hotspot layout-path="hotspot/hotspot/layout" ?>
 <?hotspot kilauea-path="hotspot/kilauea" ?>
-<?hotspot layout="jentic" ?>
+<?hotspot layout="oai-track" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
 	<configuration>
 		<link subsections="yes" bookmarks="yes" versions="paris.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
@@ -1124,7 +1124,7 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
       </slide>
     </part>
     <part id="apis-and-ai">
-      <title>APIs and AI: It's complicated</title>
+      <title>APIs and AI: It Just Works?</title>
       <slide id="ai-and-apis-spectrum">
         <title>AI and APIs Spectrum</title>
         <img src="ai-and-apis.png" class="fullsize"/>
@@ -1134,10 +1134,13 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
         <img src="apis-and-ai-new-york.jpg" href="https://www.youtube.com/watch?v=6ekEQR45IIo" title="How does AI affect APIs? Expert Opinions from API Days New York 2025" class="fullsize"/>
       </slide>
       <slide id="ai-success">
-        <title>AI Success Stories</title>
+        <title>AI Success Stories 2025</title>
         <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally, Chris Pease, Ramesh Raskar, and Pradyumna Chari, "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 70% ; float: left ; margin : 0% 4% 4% 4% ; " class="shadow" />
         <img src="cover-state-of-ai-2025.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Alex Singla, Alexander Sukharevsky, Lareina Yee, and Michael Chui, "The state of AI in 2025: Agents, innovation, and transformation", McKinsey, November 2025' style=" height : 70% ; margin : 0% 4% 4% 4% ; " class="shadow" />
       </slide>
+    </part>
+    <part id="apis-and-ai-path">
+      <title>APIs and AI: A Possible Path</title>
       <slide id="api-ai-evolution-1-more">
         <title>More Tools</title>
         <img src="api-ai-evolution-1-more.png" class="fullsize-shadow" />
@@ -1156,23 +1159,9 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
           <li><em>What</em> to expose and <em>how to design it</em> is out of scope</li>
         </ul>
       </slide>
-      <slide id="api-mcp-ai-direct-tradeoffs">
-        <title>MCP all the APIs: Easy but Limited</title>
-        <ul>
-          <li><em>Pros:</em></li>
-          <ul>
-            <li>Zero development effort, many tools auto-generate MCP</li>
-            <li>All APIs easily available</li>
-            <li>Great for early and quick experimentation</li>
-          </ul>
-          <li><em>Cons:</em></li>
-          <ul>
-            <li>Context window explosion with large APIs</li>
-            <li>AI struggles with understanding workflow across endpoints</li>
-            <li>Risk of misinterpreting MCP problems as general AI problems</li>
-          </ul>
-          <li>Good starting point but lacks sophistication and scalability</li>
-        </ul>
+      <slide id="anthropic">
+        <title>Anthropic Advanced Tool Use</title>
+        <img src="anthropic-advanced-tool-use.png" href="https://www.anthropic.com/engineering/advanced-tool-use" source='"Introducing advanced tool use on the Claude Developer Platform", November 24, 2025' class="fullsize-shadow" />
       </slide>
       <slide id="mcp-problems">
         <title>MCP Solves Everything!?</title>
@@ -1223,16 +1212,13 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
         <img src="api-ai-evolution-4-workflow.png" class="fullsize-shadow" />
       </slide>
     </part>
-    <part id="conclusions-openapi">
-      <title>Conclusions</title>
-      <slide id="thanks-openapi">
-        <title>Thank You!</title>
-        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-        <ul>
-          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-        </ul>
-      </slide>
-    </part>
+    <slide id="thanks-openapi">
+      <title>Thank You!</title>
+      <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+      <ul>
+        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+      </ul>
+    </slide>
   </presentation>
 </hotspot>
