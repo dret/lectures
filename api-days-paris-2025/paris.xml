@@ -916,7 +916,6 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
           </li>
         </ul>
       </slide>
-
     </part>
     <part id="scoring-apis">
       <title>Measuring what matters</title>
@@ -935,12 +934,12 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
           <li>Security</li>
           <li>AI Discoverability</li>
         </ul> 
-      </slide>      
+      </slide>
       <slide id="scorecard">
         <title>AI-Readiness Scorecard</title>
         <img src="lufthansa-api-scorecard.png" class="fullsize-shadow" />
-      </slide>   
-    </part>    
+      </slide>
+    </part>
     <slide id="workshop-api-ai-ready-qr-code">
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-paris-2025.png" class="fullsize-shadow" />
@@ -1008,7 +1007,7 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
             <ul>
                 <li>This updates <code>info.description</code> in the output OpenAPI Document when the overlay is applied.</li>
             </ul>
-        </slide>     
+        </slide>
         <slide id="overlay-advanced-example">
             <title>Advanced Overlay Example – Remove Internal Endpoints</title>
             <ul>
@@ -1029,7 +1028,7 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
                 <li>This removes all paths or operations marked as <em>internal</em> from the final OpenAPI Document.</li>
                 <li>Can be combined with overlays adding public-facing docs, examples, or vendor extensions.</li>
             </ul>
-        </slide>              
+        </slide>
     </part>
     <part id="overlay-in-pipelines">
 			<title>Overlays in API Pipelines</title>
@@ -1043,7 +1042,6 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
             <li>Overlays help maintain a single source of truth while enabling flexible downstream representations.</li>
           </ul>
         </slide>
-
         <slide id="overlay-automation-ci">
             <title>Automation &amp; CI/CD Integration</title>
             <ul>
@@ -1054,7 +1052,6 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
               <li>Ideal for pipelines that produce “public”, “internal”, “sandbox”, or “gateway-ready” specs from one base definition.</li>
             </ul>
         </slide>
-
         <slide id="overlay-when-to-use">
             <title>When to Use Overlays (and When Not To)</title>
             <ul>
@@ -1239,11 +1236,11 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
 			<slide id="arazzo-exercise-1">
 				<title>The Power of Arazzo: More YAML!?</title>
 				<img src="arazzo-exercise-1.png" class="fullsize" style="height: 75%" />
-			</slide>		
+			</slide>
 			<slide id="arazzo-exercise-2">
 				<title>The Power of Arazzo: Machines love YAML!</title>
 				<img src="arazzo-exercise-2.png" class="fullsize" style="height: 75%" />
-			</slide>	
+			</slide>
 		</part>
 	</presentation>
   <presentation id="openapi-welcome">
