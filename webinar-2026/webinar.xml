@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="jentic" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+	<configuration>
+		<link subsections="yes" bookmarks="yes" versions="webinar.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+		<paths img="img" listing="src"/>
+		<outline count-text=" [*]" count-depth="all"/>
+		<hyperlink extra=""/>
+		<extension file="html" link=""/>
+		<counter separator=":&#160;"/>
+		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+			<plugins>
+				<touch/>
+			</plugins>
+		</kilauea>
+	</configuration>
+	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+		<div class="license">
+			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+		</div>
+	</license>
+	<toc name="toc.html">
+		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
+			<thead>
+				<tr>
+					<th valign="bottom">Date</th>
+					<th valign="bottom">Title</th>
+					<th valign="bottom">Slides</th>
+					<th valign="bottom">Resources</th>
+				</tr>
+			</thead>
+			<tbody>
+				<hotspot:for-each-presentation>
+					<tr class="vevent">
+						<td valign="top"><b><span class="title"><hotspot:date/></span></b></td>
+						<td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
+						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+						<td align="center"><hotspot:toc class="resources"/></td>
+					</tr>
+				</hotspot:for-each-presentation>
+			</tbody>
+		</table>
+	</toc>
+	<title>Webinars 2026</title>
+	<copyright>2026 Erik Wilde</copyright>
+	<presentation id="ai-readiness">
+	  <title >Understanding AI-Readiness Across Your API Estate</title>
+		<author>Frank Kilcommins &amp; Erik Wilde</author>
+		<affiliation><a href="https://jentic.com">Jentic</a></affiliation>
+		<date short="2026-03-04">March 4, 2026</date>
+		<copyright>2026 Frank Kilcommins &amp; Erik Wilde</copyright>
+	  <slide id="ai-readiness-thanks">
+	    <title>Thank You!</title>
+	    <img src="end.jpg" title="This is the End" class="fullsize-shadow"/>
+	  </slide>
+	</presentation>
+</hotspot>
