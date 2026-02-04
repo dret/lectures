@@ -28,16 +28,18 @@
 			<thead>
 				<tr>
 					<th valign="bottom">Date</th>
-					<th valign="bottom">Title</th>
-					<th valign="bottom">Slides</th>
+				  <th valign="bottom">Host(s)</th>
+				  <th valign="bottom">Title</th>
+				  <th valign="bottom">Slides</th>
 					<th valign="bottom">Resources</th>
 				</tr>
 			</thead>
 			<tbody>
 				<hotspot:for-each-presentation>
 					<tr class="vevent">
-						<td valign="top"><b><span class="title"><hotspot:date/></span></b></td>
-						<td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
+					  <td valign="top"><b><span class="title"><hotspot:date/></span></b></td>
+					  <td valign="top"><em><hotspot:author/></em></td>
+					  <td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
 						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
 						<td align="center"><hotspot:toc class="resources"/></td>
 					</tr>
@@ -48,11 +50,12 @@
 	<title>Webinars 2026</title>
 	<copyright>2026 Erik Wilde</copyright>
 	<presentation id="ai-readiness">
-	  <title >Understanding AI-Readiness Across Your API Estate</title>
+	  <title short="API AI-Readiness">Understanding AI-Readiness Across Your API Estate</title>
 		<author>Frank Kilcommins &amp; Erik Wilde</author>
 		<affiliation><a href="https://jentic.com">Jentic</a></affiliation>
 		<date short="2026-03-04">March 4, 2026</date>
 		<copyright>2026 Frank Kilcommins &amp; Erik Wilde</copyright>
+	  <toc class="resources"><a href="https://jentic.com/scorecard">Jentic API Scorecard</a></toc>
 	  <slide id="ai-readiness-thanks">
 	    <title>Thank You!</title>
 	    <img src="end.jpg" title="This is the End" class="fullsize-shadow"/>
