@@ -1,31 +1,7 @@
-# Claude — Agent Working Notes
+# Claude — Technical Reference
 
-This directory is the working space for Claude (and other AI agents) assisting
-with this repository. It contains orientation notes, lists, and analysis that
-are useful both for agents picking up context quickly and for the human owner
-browsing the repo.
-
-**Ground rule:** Agents should only make changes outside this directory if
-explicitly asked. All agent-generated artefacts live here.
-
----
-
-## What This Repository Is
-
-A large collection of Erik Wilde's conference talks, workshops, webinars, and
-university courses, spanning from 2013 to the present. Topics have evolved over
-the years but cluster around:
-
-- **Web Architecture** and REST (early work)
-- **IoT / Web of Things** (2014–2016)
-- **Microservices** (2015–2018)
-- **API Strategy, Design, Governance, and Management** (2016–present)
-- **API Platforms and Programs** (2018–present)
-- **OpenAPI / OAI** and API Standards (2021–present)
-- **APIs and AI / MCP / Agent Experience** (2025–present)
-
-Online versions of presentations are at <http://dret.net/netdret/publications#presentations>
-and a course list at <http://dret.net/lectures/>.
+Detailed reference for working with this repository. For instructions and agent
+notes, see [`CLAUDE.md`](../CLAUDE.md) at the repo root.
 
 ---
 
@@ -33,7 +9,8 @@ and a course list at <http://dret.net/lectures/>.
 
 ```
 lectures/
-├── Claude/             ← this directory (agent working space)
+├── CLAUDE.md           ← agent instructions (read this first)
+├── Claude/             ← agent working space (this directory)
 ├── modules/            ← shared reusable slide modules (HTML partials)
 │   ├── modules.xml     ← the big shared module library (very large)
 │   ├── src/            ← code/data examples referenced in modules
@@ -131,8 +108,8 @@ event families over time:
 
 ### Single vs. Multi-Presentation Directories
 
-- **Single talk:** The XML has one `<presentation>` → one HTML output file, usually
-  named `index.html`. No `<toc>`.
+- **Single talk:** The XML has one `<presentation>` → one HTML output file,
+  usually named `index.html`. No `<toc>`.
 - **Multi-talk:** The XML has several `<presentation>` elements (one per talk or
   session at the same event). A `<toc name="toc.html">` generates an HTML index.
   There will also be `index.shtml` and `index.css`.
@@ -143,17 +120,5 @@ event families over time:
 
 | File | Contents |
 |------|---------|
-| `README.md` | This file — orientation for agents and humans |
+| `README.md` | This file — detailed technical reference |
 | `presentations.md` | Full chronological list of all presentation directories with links |
-
----
-
-## Agent Notes
-
-- The `modules/modules.xml` file is very large (300+ KB) — read it in chunks or
-  grep for specific module names rather than loading it whole.
-- Each event directory's README.md is the fastest way to get title + online URL.
-- The XML source files contain the full slide content and are the source of truth
-  for what was actually said in a talk.
-- When Erik says "the hotspot layout" he means the `<?hotspot layout="...">` PI
-  at the top of the XML file.

@@ -87,6 +87,43 @@
 	  </part>
 	  <part id="api-first">
 	    <title>API First</title>
+	    <slide id="api-value-creation">
+	      <title>Most API Value Creation is Indirect</title>
+	      <ol>
+	        <li>Using APIs to become better at internal reuse and cross-pollination</li>
+	        <li>Reducing friction by having teams communicate via APIs</li>
+	        <li>Using <q>API First</q> as a way to build everything as digital building blocks</li>
+	      </ol>
+	    </slide>
+	    <slide id="rise-of-dx">
+	      <title>The Rise of DX</title>
+	      <ul>
+	        <li>2000s: Having any API is good</li>
+	        <li>2010s: Having many APIs is good</li>
+	        <li>2020s: Having good APIs is good</li>
+	      </ul>
+	    </slide>
+	    <slide id="agents">
+	      <title>Agentic API Users</title>
+	      <ul>
+	        <li>Little knowledge of API patterns and practices</li>
+	        <li>Discovering APIs at <em>run-time</em> for solving tasks</li>
+	        <li>Navigating only machine-readable parts of the API landscape</li>
+	      </ul>
+	    </slide>
+	    <slide id="ax-homework">
+	      <title>Now There&#x2019;s AX Homework, Too</title>
+	      <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+	      <ul>
+	        <li>AI agents need information developers don&#x2019;t typically require:</li>
+	        <ul>
+	          <li>Everything that developers usually <q>just know</q></li>
+	          <li>Treat every API like an external one for developers with no context</li>
+	        </ul>
+	        <li>OpenAPI Initiative (OAI) might add AX-specific fields</li>
+	        <li>Until then, leverage description fields strategically</li>
+	      </ul>
+	    </slide>
 	  </part>
 	  <part id="ax">
 	    <title>Agent Experience (AX)</title>
