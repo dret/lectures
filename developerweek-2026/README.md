@@ -1,6 +1,6 @@
-# API Days Paris 2025
+# DeveloperWeek 2026
 
-Slides for Presentations at API Days Paris 2025.
+Slides for Presentations at DeveloperWeek 2026.
 
 
 ## License
@@ -10,4 +10,4 @@ These are sources that I make available for others to read/use/reuse; please res
 
 ## Online
 
-The presentation version for this talk is available online at http://dret.net/lectures/api-days-paris-2025/
+The presentation version for this talk is available online at http://dret.net/lectures/developerweek-2026/
