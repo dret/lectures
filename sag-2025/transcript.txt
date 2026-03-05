@@ -1,0 +1,710 @@
+Thanks for the friendly introduction. And yeah, so let's get started. I want to talk about
+not just about individual APIs, but actually, mostly my interest is not so much in just
+individual things, but also in very large landscapes, as you will see. So not so much just
+how do I get to build a AI app, but more how do I actually get to a place where I can do this
+at scale. Okay, very briefly about myself. So my name is Erik Wilde. I work at Jentic, which is a
+startup and we are building the bridge between API land and AI land. That's what we're saying.
+What I will present today is not a product presentation, but it's definitely something
+that has been inspired by what I spend my time with these days, which is to think about how can
+organizations in a scalable way get to the place where they can start building AI things at scale.
+So that's how I spend most of my time. My title is Head of Enterprise Strategy, which I think is a
+very nice title, but we get to make up our own titles because we're a startup, so we can do that.
+And I also spend some time with the OpenAPI initiative. So I've been working with standards
+my whole life. And the OpenAPI initiative is unsurprisingly the place that created the OpenAPI
+specification. We also have some other specifications right now. And because using standards is probably
+a useful thing and for good standards to be there, somebody needs to take care of them.
+I think it's a good thing to try to help with the success of standards. And I do that with the OpenAPI
+initiative as something that they call an ambassador, which basically means I travel a lot to
+conferences. I organize tracks and conferences where people just talk about how they use standards,
+how standards help them to do things in a better way, and we talk about how we can improve the
+standards. If you want to find a little bit more information about myself, you can find me mostly
+on LinkedIn and YouTube these days. Okay, let's get started with the topic of the talk.
+One of the things that I'm guessing a lot of you have seen, because that happens every couple
+weeks now is that there are some studies coming out that talk about the fact that a lot of
+investments in AI are not super successful. Typically, the failure rates reported in these
+reports are pretty bad. The last ones that I spent a little bit more time with was this one report
+coming out of MIT that was published in July. And then that last one, the McKinsey one that was
+I think last week or two weeks ago, I'm not quite sure.
+But it's always interesting in my mind
+to read through these things a little bit
+and try to figure out what is it
+that seems to cause these failure rates, right?
+Because everybody is super excited about AI
+and all the organizations people say,
+we should do something with AI.
+And even there is so much excitement
+and so much willingness that something should happen,
+a lot of stuff doesn't seem to go great.
+And you can ask yourself why that is.
+I have my own theories.
+Sometimes it's not so easy to really get to the data
+that underlies these studies,
+that you could study that a little bit more yourself.
+But one theory that I have,
+and that informs what I'm presenting today,
+and that also is part of the origin story of Jentic,
+is that it's not so much that the things
+that people try to do with AI are bad ideas.
+I mean, maybe some are, but others are not, probably, hopefully.
+But oftentimes they are kind of built in a bubble, right?
+They're built in a place where there is some kind of team that is the AI team.
+Like you people do something with AI, right?
+You show us the way.
+And that often doesn't work so well because then it's hard for them to get access to the right data.
+It's hard for them to tap into the right business processes.
+So it really becomes kind of this isolation thing where it's really hard to build something that has business impact when you're building that kind of a little bit shielded from the business.
+And that's the main motivation really behind today's talk is to think a little bit further.
+what does it take to get to a place
+where you can build AI products, AI applications at scale
+and in a successful way?
+And my claim would be that it's more than MCP, right?
+Everybody is very excited about MCP.
+So I'm sure you've noticed, or some of you have noticed,
+how old is MCP now?
+One year and one day.
+It was released yesterday, a year ago.
+And so it's really, really, really new, right?
+But people are super excited about it, understandably,
+because it's the first time that we can access things
+from within our AI models.
+So we can just talk to external data and capabilities
+from within LLMs, which is great,
+but it's probably not everything that we need.
+It's something that we need, but not everything.
+And the question then is, well,
+probably then APIs somehow play into this picture.
+And I did this, this is, you can actually look it up.
+It's on my YouTube channel.
+That was from May or June, earlier this year
+at API Days New York.
+And I interviewed a whole bunch of people there
+and just asked them, does AI change
+how we have to think about APIs,
+which to me is an interesting question.
+It's like, do we, I have spent a lot of time
+in the API space, so it's important to think about
+does that mean I have to do things differently
+or can I just move on?
+And the range of responses was interesting, right?
+So on one extreme set, no, no, we don't even have to care
+about AI, APIs are for machine consumption,
+AI is just machines, so we're all good.
+And then the other side of the spectrum was to say, well, APIs are so yesterday, we don't
+even need APIs anymore.
+MCP will do everything.
+Personally, I think the truth is somewhere in between, but I think it's an interesting
+exercise to go through and think about what would it take to roll out AI at the scale
+that basically we have rolled out APIs today, right?
+Our entire business landscape is based on APIs, hopefully.
+I guess many are.
+And it's really without them, nothing would work.
+And I think a similar process will take care, will happen.
+And just for me, because I'm interested in where people are,
+I just want to do a little bit, little show of hands,
+even though it's hard for me to see any hands with all the lights going on.
+But just to know a little bit where people are.
+So who here in this room has all or let's say most of their APIs in their organizations described in an open standard?
+Probably an open API.
+Most of you.
+Thank you very much.
+That makes me very happy.
+Leave your hands up, please.
+Okay, we'll go on.
+Of those, who has a central API catalog?
+So who pulls all of these descriptions together in some place so that they're easier to discover?
+Okay, not as many.
+Not as many.
+Okay.
+Who can track every API call with full observability?
+Okay.
+Still a few.
+That's good.
+Who has sandbox environments so that if they build new applications, they can play around with APIs without actually having to test their applications against production data?
+Still some. Very good.
+And then who here is brave enough that they have used these things with AI applications so they basically used AI to run against their production APIs?
+Okay, not that many.
+Okay, good.
+So hopefully I can show you the path a little bit.
+That would be my goal for today.
+So I think, and the idea of this presentation
+is really to give you a little bit of a step-by-step process
+so that I don't have to tell you,
+you have to do all of this.
+And then if you don't do all of this, nothing works.
+And the idea is to tell you this process a little bit
+in a way that the steps get progressively harder.
+But I do think that in some shape or form,
+at least these things are important.
+These things are things you have to think about.
+They will present them,
+these things will show up in your journey
+in some shape or form.
+And to think about a little bit earlier may be useful,
+not just when you hit them and then you say,
+oh yeah, no, I remember hearing about this a year ago,
+but we never did anything, right?
+So maybe just keep that in mind.
+And then also when you run into any of these problems
+that you think about, oh, maybe this is a problem
+I will run into over and over again.
+So maybe I should actually solve it in a way
+that I solve it once and not in a different way
+and every time over and over again.
+Okay, let's go through these steps.
+And again, the goal of this is to bridge the gap
+between API land and AI land,
+Because in my understanding,
+when I see how people are using APIs and AI today,
+there is a big disconnect, right?
+MCP is something that people use a lot,
+are very excited about,
+but it's kind of just mostly for experimentation, I would say.
+I know some people would disagree.
+But I think there is kind of an inherent,
+not a scaling problem,
+but MCP doesn't really address scaling,
+the scaling of your AI landscape, so to speak.
+And that's fine.
+never said they would do that. But it's important to keep in mind that this is not on MCP's to-do
+list, so to speak. And just hoping that having many AI applications will somehow work out is
+something you can do. But I think it's probably a better idea to think about what are the recurring
+patterns that I will probably see that I should design for and plan for so that over time,
+then you can actually use AI in a better way.
+And one of the things that I liked most before I joined my current company
+was that the underlying story to some extent is really to say,
+you should only use AI when you have to, right?
+Use AI as little as possible.
+Personally, I like that story a lot because I think that there are still many,
+many, many problems that we can use in traditional ways. We don't need to throw AI at everything,
+but there are some problems where AI is really useful. So I like having this idea of saying,
+when I have to use AI, because I have complex planning, and I have these kind of really AI
+friendly scenarios, then I can use it. But for using things that I can also just use through
+automation and traditional programming, I should probably do that because it's
+cheaper, faster, more reliable. I can actually make sure it happens the same
+way every time and so forth. Okay, now let me walk you through those steps that I
+think are necessary in some shape or form. And again, we are building things
+that help with that, but this is not really about us building these things,
+You can do these things in any way you like, but I think everybody will have to do these in some shape or form.
+So the first one is really we want to see AI having more tools at its disposal.
+Having more tools, and as you may see that I'm a cyclist, I like having bikes.
+And if you work with bikes, then as in many other places, having more tools is better because you can do more things.
+That helps with solving problems.
+And the same is true in AI land.
+If you are building AI applications, when they have more tools at their disposal, they can do more things because they have access to more data.
+They have access to more capability.
+They can kick off more processes in your organization.
+And what we're currently doing, to some extent, is building up this inventory.
+So in some shape or form, we have these AI consumers.
+And then we have a very abstract layer of digital capabilities, stuff that is just there somehow in a digital form, data operations, things you can do and so forth.
+Some of them, most of them, hopefully, do have APIs.
+And then the question is, okay, APIs are good, but how do I actually access those from AI applications?
+And this is where MCP stepped in very successfully, right? Because MCP gave us this ability to do that.
+You can fully automatically expose APIs through MCP. You can just take an open API description,
+for example, and generate an MCP server from it, right? It's like you don't have to do anything.
+It will just happen, right?
+So that's a very, very cheap way, let's say, to scale your tool landscape in the beginning.
+Because if you have many APIs, and let's say at least some of these are described in OpenAPI,
+you can just press a button, basically, and you have a whole bunch of MCP servers available to you.
+And that's fine.
+But it's very interesting to me, again, MCP just is one year old, right?
+that over the last couple, I would almost say weeks, not even months, right?
+You start seeing these stories where people say, hey, wait a minute, MCP is great,
+but if I have too many tools, it actually doesn't work so great anymore
+because now my LLM gets very confused when it has access to 100 tools, right?
+The context window gets almost exhausted or overflows,
+and also it's really hard to make sense out of a really large set of tools.
+And once again, as I said before, this is not a fault of MCP.
+It's just that MCP wasn't built to address that problem.
+Right? MCP was built.
+Maybe that sounds a little bit too minimal.
+But in the end, you can think of MCP being invented to give you something as simple as,
+I want my LLM to have access to my file system.
+Right? Which it doesn't have normally.
+And I can do that if I just have a little MCP server that reads files and hands it to the LLM, right?
+I can solve that problem.
+Now it does quite a bit more, but that's kind of the origin story, right?
+How do I even make something available to an LLM that is outside of the LLM itself?
+And that's an easy way how you can go about, right?
+You can generate MCP servers from all your APIs.
+Again, fully automatic, very cheap.
+In my mind, that's a good way to start experimenting, to start seeing what is possible, to maybe
+have a little proof of concept.
+But you will hit limits pretty quickly.
+Because if you do that more and more, and if you want your MCP applications to become
+more powerful and you want to give them more tools, then you run into this problem of your
+context being too big.
+So, the advantage of this approach is that it's very easy to do.
+All of the machinery there is fully automated.
+Emmanuel Paraskakis has really nice workshops where he does, I think it takes half an hour
+for people to just sit there and start from their own APIs and get to a point where they
+can work with their own APIs in an LLM.
+Because you can, there are tools, online tools for all of this.
+It's very, most of the time, I guess you actually spend out figuring authentication.
+It's the hardest bit.
+All the rest is kind of almost fully automated these days.
+You just have to string together a couple of tools and then it's kind of amazing, right,
+how quickly you can start just typing human language to work with your own APIs.
+So, that's great.
+But it does have these disadvantages of not scaling very well once you want to do that
+in a little bit larger context.
+So in my mind, keep experimenting with MCP.
+That's good.
+But don't see that as the end game of that's all we need.
+Right?
+Like once we have MCP under control, everything is great.
+Right?
+So MCP in my mind doesn't really solve everything.
+It means that even if you have single APIs, I have one, I'll show you that one a little
+bit later, right?
+I have one API, the GitHub API.
+Anybody here has worked with a GitHub API?
+How many operations does it have?
+Do you remember?
+Many.
+It's huge, right?
+It has, I think, 1100.
+I have the exact number up.
+It has 1100 operations, like 700 endpoints, 1100 operations.
+Because GitHub is complex, right?
+GitHub is a big thing.
+And if you have an API that allows you to do things on GitHub,
+that necessarily is a big API.
+But that already means that, well,
+if you would now just take this GitHub API
+and map it into MCP, you would end up with 1,100 tools.
+And that's way too much for an LLM to make sense of.
+So even individual APIs can already be too big.
+For sure, if you get into the API landscape
+of larger organizations where the organization has hundreds
+or thousands of APIs, and some of these are potentially
+also large, right?
+You end up with thousands or tens of thousands of operations,
+and you clearly cannot just take all of these
+and stuff them into an MCP server
+and assume anything is gonna happen.
+That's one problem that existing APIs
+will overwhelm your MCP server.
+The other one is that oftentimes MCP is also not really
+at the right level or your APIs are not
+at the right level for MCP
+because there are these underlying simple operations.
+And oftentimes that means things are way too fine-grained
+for LLMs to really use these things in a good way.
+We'll get to that a little bit later.
+And the last thing is that some of the APIs you have
+oftentimes also aren't really described
+great way. So even though maybe it was good enough for your developers to make
+sense of these things, but if you now have to give these things to agents, we
+actually get to a little different situation and we'll get to that in a
+minute. So summing it up, the first step, we could say that having more
+tools is not necessarily the same thing as having a better tool landscape. It can
+be, it can be a part of it, but it also creates some problems with managing this multitude
+of new tools.
+So now we have to think about, we also have to think of other things, but the first thing
+we want to think about is how do we better describe tools?
+So now that we have more tools available, we have to think about how do we make them usable
+so that we can actually use them
+without running into this problem of having way too many
+that we cannot easily use.
+Some of you may have heard this term DX
+for developer experience,
+something that has been thrown around
+in the API community for a long time,
+where the idea is how easy is it for a developer
+to consume an API, right?
+How hard is it to understand what the API does
+to onboard to actually use it in a running application.
+And the big point here is that developers are smart, right?
+They have a lot of context, they have a lot of experience.
+So even if you document your API not in the greatest way,
+they will fight their way through, right?
+Because they have done that many times,
+they understand probably a little bit
+what your API probably should do.
+So they make some assumptions, they play around with it,
+and at some point they figured it out, hopefully.
+So that's something that you can make easier
+with better developer experience.
+But the interesting point is we now have a new term
+that has been used for probably just a couple of months now,
+which is AX for agent experience, right?
+So if agents wanna use my API, how does that work for them?
+And the interesting bit here really is agents are
+extent much more stupid than developers. They don't have that experience of working, having
+worked with APIs for a long time, like all that long history of struggling through bad documentation,
+making assumptions, asking my colleague where I can hope that they know how to use the API.
+All these things that developers will just naturally do, agents just won't. They either
+they don't understand what your API does or they will just misunderstand it and misuse it.
+So agents are a little bit more finicky in how well you have to describe your API
+so that it makes sense to them because they are more limited in their experience that they have.
+Maybe that will change that we also focus more on agents.
+And one of the things that we are working on a little bit,
+and that's just my one of two ad breaks
+for the OpenAPI initiative.
+So we just released the OpenAPI 3.2
+just a couple of weeks ago,
+which had a couple of themes, right?
+And for the upcoming new version 3.3,
+which doesn't have a release date yet,
+But one of the specific goals that we have is to actually think hard about how can we make OpenAPI more useful for AI consumers?
+So that's something that will go into the new version, upcoming version, but we don't have anything there yet.
+So for now, it's more the question of you having to think through how can I do that?
+And there have been a number of suggestions how to do that.
+Focus on better descriptions, put in a lot of examples, have variations of the things that you do.
+Make sure you have meaningful error messages so that errors actually inform consumers about what went wrong in a way that works for the consumers.
+So there's a whole bunch of guidance out there
+that will tell you a little bit how to better describe
+your API for machine consumption.
+It's also something that we work on.
+So that's by one product pitch, so to speak, not really.
+But so we also have a framework that allows you
+to score APIs.
+We have, I think it's gonna be public next week.
+It'll be open source in a few weeks.
+And we have just a multi-step rating where we look at,
+is the API even correctly described?
+Is it well described for humans?
+Is it well described for machines?
+Is it described in an actionable way for machines?
+Does it have the right security policies
+so that machines can safely consume it?
+And also, is it easy to discover
+when I have thousands or tens of thousands or APIs.
+Again, you don't have to use that,
+but just thinking through these different dimensions
+that probably will matter to use APIs at scale
+is a useful exercise to do.
+I'm sure there will be other frameworks
+that do the same thing,
+but having some measure of,
+are my APIs AI friendly?
+I think that will be important in the future.
+But even if that is the case,
+even if let's assume you work hard,
+you describe all your APIs and open API,
+you use a rating tool,
+and then you also get to a high score
+and all of your APIs are now described in a great way,
+that's great.
+So your APIs are now AI friendly,
+but you still have way too many.
+That means how do I now scale to a point where,
+when my agent wants to do a thing,
+it can find out what it can use to accomplish that task?
+And that's the next step in my story here,
+which is dynamic tool discovery.
+So again, very much a scalability topic, right?
+So the idea then is to say, well,
+We just do whatever we do when we have large amounts
+of data to deal with, right?
+We built in some kind of search and ranking mechanism
+that allows us to discover things and that will help.
+And one data point that I had mixed feelings about
+because it was one of the ideas that we had and we have,
+but just on Monday, right,
+Anthropic kind of, I don't wanna say copied
+because I'm sure they didn't copy it,
+but they basically now do what we said we are doing, right?
+Which I think is totally fine
+because it's a very natural thing to discover
+because they discovered, oh, people are using more
+and more tools with MCP, that doesn't seem to work very great.
+So now they have built the same thing that we've built
+which I jokingly called in the beginning a tool tool.
+So our MCP server actually only has two tools.
+It has one tool to search tools,
+and it has a second tool to use tools.
+And that means that an agent with a task that it has to do
+can now ask, I have a task that I have to do,
+which tools do you recommend to me?
+And then it gets a list, a short list of recommended tools,
+And compiling that shortlist is much easier
+when you have good descriptions, right?
+Which is why you should have good descriptions.
+But then you can give a short list of tools to your agent
+and it can then pick the one that it wants to use.
+So that's kind of the story
+and that's exactly what Anthropic is now doing.
+They have what they, how do they call it?
+The advanced tool use, right?
+And it's the exact same pattern.
+So instead of exposing all of the tools directly,
+there is a search function in there
+that hopefully finds the best tool for the job.
+And the interesting thing,
+I just wanna mention that briefly,
+but it's something that, I don't know,
+in the beginning I didn't really think about that,
+but I think it's a really interesting distinction.
+When you think of the regular use of APIs,
+it's developers discovering the APIs
+and then using them to write an application, right?
+So this is a design time exercise.
+I plan to have an application.
+I need to have access to certain capabilities.
+So I find the APIs and then I implement the application
+and then people can use it and it hopefully works, right?
+That's a design time exercise.
+So the thing that I need to do is find the right APIs
+that I need to implement by application.
+Agents work very differently, right?
+They are not, there's no design time thing.
+They do everything at runtime, right?
+So you give them a task and then they make a plan
+how to accomplish that task.
+And as part of that plan, they figure out,
+oh, I probably need some information.
+I probably need to kick off some processes.
+So how can I do that?
+Right, and they do that over and over again.
+So that's always at runtime, right?
+Every time you give them a new problem or a new task,
+they will do that again.
+So it's a very different pattern of API consumption.
+It's not as much design time, it's much more runtime.
+And that also means that the search pattern becomes much more useful because that kind of automatically means that if you have better tools available, they will just pop up.
+You don't even need to kind of redeploy or redesign the application because the agent will just get better tools at its disposal and will just use those.
+So that's kind of convenient, like a convenient side effect there, I would say.
+I happen to live in Switzerland, so I'm required by law to use some example like this.
+This thing actually exists, okay?
+It's not chat GPT.
+I have to prove that to you.
+So you can go there.
+And, oh, it's not cheap.
+But you can actually buy that.
+And what I mean by this picture is that oftentimes, even if we have a scalable way to solve problems, maybe the tools that I have at my disposal are not the best tools.
+Maybe I have just too many tools.
+That can happen if my tools are too low level.
+I just mentioned this example of GitHub, right?
+GitHub has 1100 operations or something.
+I have some slide with GitHub on it.
+Oh, yeah, it's here.
+Right. So, I have the numbers here. So, the GitHub API in its current form is 11 megabytes of JSON
+with 320,000 lines, has 738 URI paths with 1100 operations and 260 webhooks. So, it's a big API.
+What's interesting to me is GitHub just, I think last week or two weeks ago,
+pretty recently released its MCP server. So GitHub now has an official MCP server.
+And it has way fewer tools, right? Because the tools are not at the same abstraction level
+than you would typically have an API, right? So for your typical GitOps flows,
+if you would say, okay, this is how I deal with PRs, you would actually have to combine a whole
+bunch of endpoints, right, and go through all the different steps. You can turn all of that into
+workflow and say, well, this is how we do it, right, and expose that as a tool. So that's actually
+something that also for an agent becomes much more useful because it kind of gets away a little bit
+from this confusing situation of, okay, I have a lot of tools, but actually I would rather have
+fewer and have one that is exactly purpose-made for the problem that I have in front of me.
+And the very, very, very bad name that I came up with for this, I hope this will not be something
+that people start using, but I like the idea. We don't call it that way. I just like the name.
+is API macro products by saying, in the end, the fact that the GitHub API has 1,100 operations
+is actually not all that important. You could also say these are 1,100 different APIs, right?
+These are 1,100 things you can do. The fact that somebody packaged that in one API and not in 20
+APIs is kind of random. That's how they did it. That's fine, right? But the important thing is
+really you can do 1100 different things. And that's how I think in the end, these things then look like for consumers.
+Because if you tell somebody solve a problem with a GitHub API, they won't say, oh, great, it's just one API to work with.
+They will say, oh, my God, 1100 operations, how do I find the ones that I need?
+So you have to think through that as well.
+It's not that just having one API is great
+and everything will work.
+It can still be at a level that is way too granular.
+So the way we do search is that we kind of look
+at these micro products.
+So we will take each operation and hand these to LLMs,
+but they might still get overwhelmed
+because there are just too many of them.
+And it's hard to string all of these together.
+The way it's implemented, it's using a semantic search
+with a retrieval augmented generation below,
+under the hoods, that doesn't really matter so much,
+but it's something where in the end,
+we just wanna make sure that we surface
+the most useful tools.
+But again, just having that search capability
+doesn't mean that you really have useful tools.
+You may still have tools that are way too fine-grained.
+And that's the last thing that I wanna talk about
+little bit more detail is, which I think is something where we will head to, is that we
+probably will head towards more purpose-oriented APIs, like specific tasks where you have a workflow
+that does that thing. And that could be, for example, in the example of GitHub, that could be
+a workflow that uses 20, 30 different endpoints and gets something done that you want to get done.
+And what you have to do is just use that one workflow and you don't have to understand or
+have a detailed knowledge of how it strings together those 20, 30 things under the hood.
+So the way that then works is that we have these workflows that pull together APIs
+and we can get to a better understanding of which workflows actually make sense and which ones we
+we might wanna have because we can observe agents, right?
+We can see what they do.
+And if they do the same thing over and over again,
+well, then we at some point can conclude
+this seems to be something they do a whole lot.
+And then we can turn that into workflow
+and that is better for the agents.
+It also becomes much better because now we have a guarantee
+that it gets executed in the same way every single time
+because it's not the LLM figuring out.
+And then once the next model comes out,
+suddenly it does something different, right?
+If we put it into a workflow,
+then it gets executed in the same way
+because it's deterministic execution, right?
+And that's the part that I said in the beginning
+that I think it's not interesting for LLMs
+to figure out how certain GitOps workflows work.
+They should just do that, right?
+And I should be able to tell them how that works.
+What they should work out is how they solve problem
+on top of that, right?
+So having those workflows actually make a lot of sense
+because they are the things that are representing
+certain business logic that I want to have executed
+in a repeatable way.
+And it doesn't make sense to have these things
+being rediscovered all the time.
+And the advantages we get out of that is
+things become much more predictable.
+It's much easier for us to follow these traces
+because it's not LLMs doing it,
+it's deterministic code doing it.
+It's much easier for us to guarantee compliance
+because we can say this has to happen that way
+and it will happen that way.
+We also have more business alignment
+because these workflows will represent things
+that we want to happen in a certain way.
+We don't have to use AI for that, right?
+AI, it doesn't make any sense to use LLMs
+and who knows how much energy to solve the same problem
+single time we have it in front of us if parts of that problem really could be solved in deterministic
+code. So that I think is also something that's really, really nice there. And the way how you do it,
+there are many different ways. Our approach is to observe agents, to see what they're doing,
+to surface patterns that we see occurring over and over again, and then to have an assistive
+process that will take these patterns and turn them into workflows. And then they become new APIs
+that are at a higher level, that are more business aligned, that are useful for agents,
+and we can kind of take all the lower level APIs out of the visibility of agents and just say,
+"Hey, all you want to know is how GitOps works. You don't want to know how GitHub works." Right?
+That's just an implementation detail of that. And here's my second ad break of the day. The way we
+do it is another open API initiative specification. It's called ORAZO. It's a
+workflow specification. It's basically a specification that allows you to
+represent workflows in a deterministic way. So you can describe a process that
+combines a whole bunch of APIs and you can describe that in a way that it can be
+just executed. And the last thing that I wanted to talk about, but I won't because
+I'm a little out of time now, was one more thing that I think is also important would be to say,
+hey, we also actually want to play around with things in a safe way so that there is a sandbox
+where I can test these things. I have environments where I can let my agents roam free without
+causing any harm. And I'm a little sad that I don't have time to talk about it,
+But I want to show you my picture that I generated that I'm really proud of.
+So this is our agent sandbox.
+This is the place where you can have APIs being mocked.
+And then you can have agents who just work against those mocked APIs.
+You can observe what they're doing.
+You can also maybe see that they're surfacing new workflows.
+And that will be something that also helps you to be able to roll out AI things faster
+because nothing bad can happen.
+So it's a safe area.
+Okay, and that's it.
+That's all that I wanted to talk about today.
+And my main goal really was to kind of look at these reports that we see more and more that talk about the fact that a lot of AI initiatives seem to have mixed results, to put it mildly.
+And that there may be some things we have to keep in mind that are important to roll out AI enablement in a scalable way.
+The steps that I presented to you were we want to surface more tools.
+We want to better describe those tools.
+We want to be able to easily find those tools and give them to agents that need them.
+We also maybe want to improve those tools to a higher level, to workflows.
+And we also may want to provide an environment where these tools then can be safely used for experimentation.
+That's it. Thank you very much.
+Once again, you can find me on YouTube and LinkedIn.
+We have a little bit of time for questions and to encourage you to ask questions.
+We have my publisher, O'Reilly, was friendly enough to send a couple of books.
+So a little while ago, we wrote a book.
+It's called Continuous API Management.
+So for anybody asking questions, if it's an actual question, you get a book if you just ask it.
+So please raise your voice at the end a little bit so that it sounds like a question and we can go forward with it.
+I will come around.
+Yeah, Lars, I think you can manage that.
+Thank you.
+It would be great if the question is API or AI related.
+Oh, yeah. Yeah. That's a bonus.
+You get two books if it is.
+Hi. Thank you for the presentation.
+I will ask you if you have already published examples of all these guidelines
+that are being presented in this talk.
+Do you mean the description guidelines?
+A concrete example exactly of APIs that are following these guidelines, actually.
+We have a collection of public APIs that we use for our own testing.
+I think right now we have around 1,500 public APIs in there.
+This is one that we just rated for testing.
+This is one of the Twilio APIs.
+This came out not great, but also not terrible.
+We are in the process of rating all of them and then publishing the ratings for all of them.
+But to be honest, we also want to make sure that our rating really works well, because it would be bad if we publish bad ratings.
+And then later we have to say, oh, actually, your API is pretty good.
+So, yeah, please check back with us, with me in a couple of weeks.
+Then we have more stuff available.
+OK, thank you very much.
+Thanks.
+We have one up front here.
+Thank you for the good talk.
+My question is about the workflows, because workflows are mainly user specific.
+we currently have the problem that we do APIs and then do engineering customer specific so we don't
+have a normal workflow for every customer. No, not for every customer, but you will probably have
+workflows for certain business functions that you have. So for example, one area that we currently
+work with a little bit where there are a lot of established workflows is just customer, basically
+customer relationship management, right? Where you have certain workflows where it's clear that if you
+engage with somebody, this is what has to happen. You have to check this, you have to check this,
+you have to check this, and you can do this and you can do that, right? That's kind of a workflow
+that you would otherwise probably document somewhere in just this standard operating procedure, right?
+And that probably should exist as something that an agent can do as well. Because if you just give
+them the word document with a standard operating procedure, they tend not to understand that as
+well. So I'm sure there are some workflows that would be very individual, but I think
+there are also a lot of areas where there are highly standardized workflows that you
+can probably discover and put into executable code.
+Thank you. We have one more here. We have five books just to let you know.
+Okay, thank you. So I'm in.
+Okay, so my question is more about security.
+So I wondered whether there are some recommendations, how to define good APIs for AI consumers,
+because I can imagine that we need to have additional functionality for security.
+Yeah, so I mean, for now, our security, so we have a security rating in here.
+But it's actually more good practices around API security in general, right?
+Like have a security policy, don't violate the OWASP policies, these kind of things.
+In the consumption, then, I would definitely, what I would recommend right now is to follow all these discussions of security in the MCP space, right?
+Because they have all these really interesting discussions
+on how to use delegation and downscoping
+and all these things that you can do
+and that you definitely should do, right?
+Like what you should not do is for example,
+let an agent impersonate a user
+and then assume that this is going to go well.
+This is probably not a great idea.
+So at that point, I would say
+it's less the API security aspect.
+It's more the question,
+which is why we have this picture
+of having this security thing in here.
+And again, MCP does the same thing in some shape or form,
+but you should have some way of how you handle security
+specifically for AI consumers, right?
+Because they are actors and you should treat them as actors
+and not just as a kind of transparent piece of software.
+- So you say it's more matter of the security box up there
+and not the API itself.
+- Yes, yes.
+So, which was actually our original motivation
+for the sandbox to say the sandbox also always
+has a security layer in there
+so that any agent interacting with APIs
+has to go through that layer.
+And then we see what they do.
+We downscope things, we delegate things properly.
+And then we can be sure that we handle that
+in a responsible way in one place
+and don't have the situation where we tell all of our developers,
+please don't do this, right?
+Because that will be terrible.
+- And there are great guidelines for security
+in agentic AI environments from the OWSAAP, yes.
+- OWASP, yeah, just say OWASP, it's easier.
+- So thanks.
+- Yeah, yeah, that's true.
+They just added some.
+So basically they used to have guidelines.
+I mean, those ones down here,
+the API security guidelines they have,
+those ones have been around for ages,
+I think 2018 was the first one.
+And now they have started working on kind of the agentic guidelines as well.
+Thanks.
