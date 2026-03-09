@@ -11,7 +11,9 @@ Online versions live at <http://dret.net/netdret/publications#presentations>.
 ## Ground Rule
 
 **Only make changes outside the `Claude/` directory if explicitly asked.**
-All agent-generated artefacts (notes, lists, analysis) live in `Claude/`.
+Do not create work logs, session notes, outlines, or other artefacts anywhere
+in the repo. The `Claude/` directory holds only the two reference files
+(`README.md` and `presentations.md`).
 
 ---
 
