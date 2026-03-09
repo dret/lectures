@@ -41,6 +41,175 @@
         <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
       </ul>
     </slide>
+    <part id="mcp-start">
+      <title>MCP: Start Here</title>
+      <slide id="mcp-today">
+        <title>MCP: LLMs and the Outside World</title>
+        <img src="mcp-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>MCP is the standardized way for LLMs to interact with their environment</li>
+          <li>Published about a year ago — rapid traction across tools and platforms</li>
+          <li>Started with modest goals: local filesystem, simple context tools</li>
+          <li>APIs are a key part of the outside world — MCP covers this too</li>
+        </ul>
+      </slide>
+      <slide id="mcp-mechanical">
+        <title>Mapping APIs to MCP Tools</title>
+        <img src="api-mcp-ai-direct.png" style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Take your OpenAPI description, expose each operation as an MCP tool</li>
+          <li>Zero development effort — many tools generate MCP servers automatically</li>
+          <li>Agents can now call your APIs through standardized tool use</li>
+          <li>This works — technically</li>
+        </ul>
+      </slide>
+      <slide id="mcp-context-problem">
+        <title>But Context Runs Out</title>
+        <ul>
+          <li>A single complex API already strains the LLM's context window</li>
+          <li>A full organizational API landscape — hundreds of APIs — makes it far worse</li>
+          <li>LLMs cannot effectively reason over thousands of available tools</li>
+          <li>Mechanical endpoint mapping is a starting point — not a strategy</li>
+        </ul>
+      </slide>
+      <slide id="mcp-uncertain">
+        <title>Is MCP Here to Stay?</title>
+        <ul>
+          <li>MCP gained rapid traction — but the tooling landscape is still evolving fast</li>
+          <li>OpenClaw (announced just weeks ago) bypasses MCP entirely</li>
+          <ul>
+            <li>Accesses APIs directly — no MCP layer needed</li>
+            <li>A reminder that today's standard may not be tomorrow's</li>
+          </ul>
+          <li>We don't know yet whether MCP will be the long-term standard</li>
+          <li>Which raises the question: <em>what should you actually invest in?</em></li>
+        </ul>
+      </slide>
+    </part>
+    <part id="platform-first">
+      <title>Platform Engineering for AI</title>
+      <slide id="platform-engineering">
+        <title>Build for the Platform, Not the Protocol</title>
+        <ul>
+          <li>Platform engineering: give teams a great toolbox and let them do great things with it</li>
+          <li>A good platform increases delivery velocity and enables unexpected innovations</li>
+          <li>AI enablement should be part of the platform — not bolted on as a protocol-specific layer</li>
+          <li>Whether agents use MCP, OpenClaw, or something we have not seen yet — the platform serves them all</li>
+          <li><em>Consumption-agnostic:</em> build once, serve many</li>
+        </ul>
+      </slide>
+      <slide id="isolation-layer">
+        <title>You Still Need an Isolation Layer</title>
+        <ul>
+          <li>Whether via MCP or direct access, agents need a controlled entry point into your APIs</li>
+          <li>Direct API access means credentials live inside the agent — that is not where they belong</li>
+          <li>An isolation layer keeps access control centralized and auditable</li>
+          <li>This is consumption-agnostic: the layer works the same regardless of how the agent connects</li>
+        </ul>
+      </slide>
+      <slide id="security-model">
+        <title>APIs Have Inconsistent Security — Your Layer Can Fix That</title>
+        <ul>
+          <li>Some APIs have fine-grained OAuth scopes; others have a single token that does everything</li>
+          <li>As a consumer of APIs you don't own, you cannot change their built-in security model</li>
+          <li>But your isolation layer can impose a custom security model on top</li>
+          <ul>
+            <li>This agent can only access these three endpoints</li>
+            <li>Fine-grained, per-agent access control — regardless of what the underlying API provides</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="scale-problem">
+        <title>Isolation Does Not Solve Scale</title>
+        <ul>
+          <li>Even with proper isolation and a clean access layer…</li>
+          <li>A large API landscape still overwhelms an LLM choosing from thousands of tools</li>
+          <li>The problem has shifted: from <em>access</em> to <em>discovery</em></li>
+          <li>We need smarter ways to surface the right tools at the right time</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="tool-access">
+      <title>The Right Tool Access</title>
+      <slide id="tool-tool">
+        <title>Just-in-Time Discovery: The Tool Tool</title>
+        <img src="api-ai-evolution-3-search.png" style="float: right ; height : 55% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Instead of exposing all tools upfront, expose a single search capability</li>
+          <li>The agent declares what it wants to accomplish</li>
+          <li>Search returns a small, targeted set of tools for that specific task</li>
+          <li>Solves the context explosion problem at any landscape scale</li>
+          <li>Anthropic calls this <em>advanced tool use</em>; FastMCP recently announced support</li>
+          <li>At <a href="https://jentic.com/">Jentic</a>, we have been building on this pattern for about a year</li>
+        </ul>
+      </slide>
+      <slide id="tool-availability">
+        <title>Make More Available</title>
+        <img src="api-ai-evolution-1-more.png" style="float: right ; height : 55% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Just-in-time discovery only helps if the tools are actually there to find</li>
+          <li>Make your full API landscape available and searchable through the platform</li>
+          <li>Surface your capabilities — even before optimizing them</li>
+          <li>More available means more value agents can extract</li>
+        </ul>
+      </slide>
+      <slide id="tool-description">
+        <title>Describe Tools for Agents, Not Humans</title>
+        <img src="api-ai-evolution-2-description.png" style="float: right ; height : 55% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Descriptions written for human developers do not work well for LLM agents</li>
+          <li>Agents need descriptions that explain purpose, context, and when to use a tool</li>
+          <li>This does not require changing your APIs — just how you describe them</li>
+          <li>The <em>API Scorecard:</em> a structured way to evaluate and improve API descriptions for AI</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="workflows">
+      <title>Workflows: The Right Abstraction</title>
+      <slide id="workflow-gap">
+        <title>The Workflow Gap</title>
+        <img src="api-ai-evolution-4-workflow.png" style="float: right ; height : 55% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Even with just-in-time discovery and good descriptions…</li>
+          <li>Low-level APIs often require 10–20 chained calls to accomplish a single task</li>
+          <li>The agent must figure out the sequence, handle errors, and manage state</li>
+          <li>This is the next frontier of the AI enablement challenge</li>
+        </ul>
+      </slide>
+      <slide id="github-example">
+        <title>GitHub: 1,300 Endpoints → 60 Tools</title>
+        <ul>
+          <li>The GitHub REST API has around 1,300 endpoints and 1,700 operations</li>
+          <li>The GitHub MCP server exposes around 60 tools</li>
+          <li>Good MCP servers already think in <em>workflows</em>, not endpoints</li>
+          <li>Each tool represents something a developer wants to <em>do</em> — not a raw API call</li>
+          <li>This is "jobs to be done" thinking applied to AI tool design</li>
+        </ul>
+      </slide>
+      <slide id="workflow-api-level">
+        <title>Push Workflows to the API Level</title>
+        <img src="api-mcp-ai-workflow-api.png" style="float: right ; height : 55% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>MCP workflows are LLM-consumer-only: agents talk to the MCP server, developers do not</li>
+          <li>Instead: implement workflows at the API and platform level</li>
+          <ul>
+            <li>Same design effort — much broader reuse</li>
+            <li>Regular software, agents, and MCP consumers all benefit from the same workflow</li>
+          </ul>
+          <li>Do not invest in making things work for LLMs — invest in making things work for everyone</li>
+        </ul>
+      </slide>
+      <slide id="workflow-payoff">
+        <title>This Is Platform Engineering for AI</title>
+        <ul>
+          <li>Build it once into the platform</li>
+          <li>Agents get high-level, workflow-oriented capabilities</li>
+          <li>Developers get reusable, well-defined building blocks</li>
+          <li>Works regardless of whether the consumer uses MCP, OpenClaw, or something not yet invented</li>
+          <li>Start this journey now — the sooner you invest, the better positioned you will be</li>
+        </ul>
+      </slide>
+    </part>
     <slide id="thanks">
       <title>Thank You!</title>
       <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
