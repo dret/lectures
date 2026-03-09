@@ -43,29 +43,9 @@
     </slide>
     <part id="apis-and-ai">
       <title>APIs and AI: It's complicated</title>
-      <slide id="ai-success">
-        <title>AI Success Stories</title>
-        <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally, Chris Pease, Ramesh Raskar, and Pradyumna Chari, "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 70% ; float: left ; margin : 0% 4% 4% 4% ; " class="shadow" />
-        <img src="cover-state-of-ai-2025.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Alex Singla, Alexander Sukharevsky, Lareina Yee, and Michael Chui, "The state of AI in 2025: Agents, innovation, and transformation", McKinsey, November 2025' style=" height : 70% ; margin : 0% 4% 4% 4% ; " class="shadow" />
-      </slide>
       <slide id="api-ai-new-york">
         <title>(How) does AI affect APIs?</title>
         <img src="apis-and-ai-cover.jpg" title="How does AI affect APIs? Expert Opinions from API Days New York 2025" href="https://www.youtube.com/watch?v=6ekEQR45IIo" class="fullsize-shadow"/>
-      </slide>
-      <slide id="audience-poll">
-        <title>Let's See Where We Are… ✋</title>
-        <ol>
-          <li>Who has <em>all/most/many APIs described</em> with OpenAPI/AsyncAPI?</li>
-          <li>Who has a <em>central API catalog</em> or portal?</li>
-          <li>Who can <em>track every API call</em> with full observability?</li>
-          <li>Who has <em>sandbox environments</em> with synthetic data?</li>
-          <li>Who has <em>AI agents working with APIs in production?</em></li>
-        </ol>
-        <hr />
-        <ul>
-          <li>Don't worry if you didn't raise your hand much</li>
-          <li>Start with the basics, build incrementally</li>
-        </ul>
       </slide>
       <slide id="api-landscape-lifecycle">
         <title>The API Landscape Lifecycle</title>
@@ -73,37 +53,22 @@
           <li>Not about single APIs → It's about the API landscape</li>
           <li>Lifecycle of evolving towards AI readiness</li>
           <ol>
-            <li><link href="tool-availability"/></li>
-            <li><link href="tool-description"/></li>
-            <li><link href="tool-search"/></li>
-            <li><link href="workflow-tools"/></li>
-            <li><link href="tool-practices"/></li>
+            <li><link href="api-availability"/></li>
+            <li><link href="api-description"/></li>
+            <li><link href="api-search"/></li>
+            <li><link href="workflow-apis"/></li>
           </ol>
         </ul>
       </slide>
-      <slide id="bridging-the-gap">
-        <title>Bridging the Gap Between API Land and AI Land</title>
-        <img src="golden-path-guardrail.webp" title="Golden Path with a Guardrail" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
-        <ul>
-          <li>API landscapes are not AI-ready yet</li>
-          <li>Descriptions and designs often make AI difficult</li>
-          <li><q>Letting AI agents loose</q> oftentimes is not an option</li>
-          <ul>
-            <li><em>Limit blast radius:</em> Only provide access through a centralized access point</li>
-            <li><em>Zero tolerance:</em> Never allow access to production APIs</li>
-          </ul>
-          <li>Use AI <em>as much as necessary</em> but <em>as little as possible</em></li>
-        </ul>
-      </slide>
     </part>
-    <part id="tool-availability">
-      <title>Step #1: More Tools</title>
+    <part id="api-availability">
+      <title>Step #1: More APIs</title>
       <slide id="api-access-matters">
         <title>Why More APIs Matter</title>
         <img src="workbench.jpg" class="fullsize-shadow" />
       </slide>
       <slide id="api-ai-evolution-1-more">
-        <title>More Tools</title>
+        <title>More APIs &amp; Tools</title>
         <img src="api-ai-evolution-1-more.png" class="fullsize-shadow" />
       </slide>
       <slide id="mcp-intro">
@@ -118,6 +83,15 @@
           </ul>
           <li>Many mapping tools generate MCP servers from OpenAPI descriptions</li>
           <li><em>What</em> to expose and <em>how to design it</em> is out of scope</li>
+        </ul>
+      </slide>
+      <slide id="openclaw">
+        <title>OpenClaw: The New AI Kid on the Block</title>
+        <img src="openclaw-logo.png" style="float: right ; max-height : 60% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>A persistent and self-improving AI agent</li>
+          <li>Multi-channel and multi-agent</li>
+          <li>API-native by design</li>
         </ul>
       </slide>
       <slide id="api-mcp-ai-direct-idea">
@@ -136,40 +110,31 @@
           <ul>
             <li>Zero development effort, many tools auto-generate MCP</li>
             <li>All APIs easily available</li>
-            <li>Great for early and quick experimentation</li>
+            <li>Great for quick and focused experimentation</li>
           </ul>
           <li><em>Cons:</em></li>
           <ul>
-            <li>Context window explosion with large APIs</li>
-            <li>AI struggles with understanding workflow across endpoints</li>
+            <li>Context window overflow happens quickly</li>
+            <li>AI struggles with understanding workflows across endpoints</li>
             <li>Risk of misinterpreting MCP problems as general AI problems</li>
           </ul>
           <li>Good as a starting point but lacks sophistication and scalability</li>
         </ul>
       </slide>
-      <slide id="mcp-problems">
-        <title>MCP Solves Everything!?</title>
-        <ul>
-          <li>Problem #1: Complex APIs will overload the MCP client's context</li>
-          <li>Problem #2: Larger API landscapes will overload the MCP client's context</li>
-          <li>Problem #3: Poor API design translates to poor MCP results</li>
-          <li>Problem #4: Bad AX results in unsatisfactory AI results</li>
-        </ul>
-      </slide>
       <slide id="more-tools">
-        <title>More Tools ⇏ Better Tool Landscape</title>
+        <title>More Tools ⇏ Better Tools Landscape</title>
         <ul>
           <li>LLMs can now access many tools</li>
           <li>But they cannot understand many of them well</li>
           <li>Poor descriptions → poor tool selection → poor results</li>
-          <li>Next: <link href="tool-description"/></li>
+          <li>Next: <link href="api-description"/></li>
         </ul>
       </slide>
     </part>
-    <part id="tool-description">
-      <title>Step #2: Better Described Tools</title>
+    <part id="api-description">
+      <title>Step #2: Better Described APIs</title>
       <slide id="api-ai-evolution-2-description">
-        <title>Better Described Tools</title>
+        <title>Better Described APIs</title>
         <img src="api-ai-evolution-2-description.png" class="fullsize-shadow" />
       </slide>
       <slide id="dx-homework">
@@ -199,39 +164,29 @@
           <li>Until then, leverage description fields strategically</li>
         </ul>
       </slide>
-      <slide id="oai-intro">
-        <title>The OpenAPI Initiative (OAI)</title>
-        <img src="OAI-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
-        <ul>
-          <li>Today: no AX-specific fields in OpenAPI (3.2)</li>
-          <li>Community needs to define what AI agents need (3.3)</li>
-          <li>Tooling will follow once fields are standardized</li>
-          <li>Interested? Join the discussion in the <a href="https://openapis.org">OpenAPI Initiative</a>!</li>
-        </ul>
-      </slide>
       <slide id="api-ai-readiness-score">
-        <title>API AI Readiness Score for APIs</title>
+        <title>AI Readiness Score for APIs</title>
         <img src="api-ai-readiness-score-twilio-alarms.png" class="fullsize-shadow" />
       </slide>
       <slide id="better-descriptions">
         <title>Better Descriptions ⇏ Scalable Tool Use</title>
         <ul>
           <li>Better AX reduces confusion and misuse</li>
-          <li>But even well-described tools still overload agent context</li>
-          <li>The problem shifts from <em>understanding</em> tools to <em>finding</em> the right ones</li>
-          <li>Next: <link href="tool-search"/></li>
+          <li>But well-described APIs still can overload context</li>
+          <li>The problem shifts from <em>understanding</em> APIs to <em>finding</em> the right ones</li>
+          <li>Next: <link href="api-search"/></li>
         </ul>
       </slide>
     </part>
-    <part id="tool-search">
-      <title>Step #3: Dynamic Tool Discovery</title>
+    <part id="api-search">
+      <title>Step #3: Dynamic API Discovery</title>
       <slide id="api-ai-evolution-3-search">
-        <title>Dynamic Tool Discovery</title>
+        <title>Dynamic API Discovery</title>
         <img src="api-ai-evolution-3-search.png" class="fullsize-shadow" />
       </slide>
-      <slide id="anthropic">
-        <title>Anthropic Advanced Tool Use</title>
-        <img src="anthropic-advanced-tool-use.png" href="https://www.anthropic.com/engineering/advanced-tool-use" source='"Introducing advanced tool use on the Claude Developer Platform", November 24, 2025' class="fullsize-shadow" />
+      <slide id="fastmcp">
+        <title>FastMCP Tool Search</title>
+        <img src="fastmcp-tool-search.png" href="https://gofastmcp.com/servers/transforms/tool-search" class="fullsize" />
       </slide>
       <slide id="api-tool-mapping">
         <title>One API ≠ One Tool</title>
@@ -284,19 +239,19 @@
         </ul>
       </slide>
       <slide id="dynamic-discovery">
-        <title>Dynamic Discovery ⇏ Ideal Tool Landscape</title>
+        <title>Dynamic Discovery ⇏ Ideal API Landscape</title>
         <ul>
           <li>Discovery helps reduce tool overload</li>
           <li>Agents still have to invent workflows from scratch</li>
-          <li>We need higher-level, business-aligned tools</li>
-          <li>Next: <link href="workflow-tools"/></li>
+          <li>We need higher-level, business-aligned APIs</li>
+          <li>Next: <link href="workflow-apis"/></li>
         </ul>
       </slide>
     </part>
-    <part id="workflow-tools">
-      <title>Step #4: Workflow-Based Tools</title>
+    <part id="workflow-apis">
+      <title>Step #4: Workflow-Based APIs</title>
       <slide id="api-ai-evolution-4-workflow">
-        <title>Workflow-Based Tools</title>
+        <title>Workflow-Based APIs</title>
         <img src="api-ai-evolution-4-workflow.png" class="fullsize-shadow" />
       </slide>
       <slide id="workflows-matter">
@@ -304,8 +259,8 @@
         <ul>
           <li>Many tasks follow predictable, repeatable sequences</li>
           <li>Agents shouldn't re-discover the same steps</li>
-          <li>Workflow tools reduce the number of tools agents must reason about</li>
-          <li>Higher-level tools = less context, less confusion, faster results</li>
+          <li>Workflow APIs reduce the complexity of planning tasks</li>
+          <li>Higher-level APIs = less context, less confusion, faster results</li>
         </ul>
       </slide>
       <slide id="workflow-advantages">
@@ -319,73 +274,27 @@
           <li>Energy/cost efficiency</li>
         </ul>
       </slide>
-      <slide id="workflow-mining">
-        <title>Observing AI to Discover Workflows</title>
-        <ul>
-          <li>AI tries to solve tasks in its own way</li>
-          <li>Observing AI reveals <em>workflow candidates</em></li>
-          <li>Workflows can be reviewed and replayed</li>
-          <li>Workflows are published as new APIs, usable beyond AI</li>
-        </ul>
-      </slide>
-      <slide id="arazzo-intro">
-        <title>OAI Arazzo</title>
-        <img src="arazzo-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
-        <ul>
-          <li>Arazzo is an open workflow standard by OAI</li>
-          <li>It allows combining API interactions into workflows</li>
-          <li>Arazzo was designed for documentation, testing, and SDK generation</li>
-          <li>New versions will start incorporating AsyncAPI support</li>
-        </ul>
-      </slide>
       <slide id="workflow-safety">
-        <title>Workflow Tools ⇏ Safe Tool Use</title>
+        <title>Workflow APIs ⇏ Safe API Use</title>
         <ul>
           <li>Workflows help with AI productivity</li>
           <li>Detecting/defining workflows is non-trivial</li>
-          <li>AI needs a safe space to work with tools</li>
-          <li>Next: <link href="tool-practices" /></li>
-        </ul>
-      </slide>
-    </part>
-    <part id="tool-practices">
-      <title>Step #5: Safe Tool Practices</title>
-      <slide id="api-ai-evolution-5-sandbox">
-        <title>Safe Tool Practices</title>
-        <img src="api-ai-evolution-5-sandbox.png" class="fullsize-shadow" />
-      </slide>
-      <slide id="sandbox-internal">
-        <title>Sandboxes for Workflow Discovery</title>
-        <ul>
-          <li>Tool-creating agents can explore capabilities</li>
-          <li>Traces identify stable, reusable sequences</li>
-          <li>Recurring action patterns are workflow candidates</li>
-          <li>Reviewed sequences become reusable workflow</li>
-        </ul>
-      </slide>
-      <slide id="sandbox-experimentation">
-        <title>Sandboxes for Safe AI Experimentation</title>
-        <img src="agent-sandbox.png" title="Sandbox for AI Agents" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
-        <ul>
-          <li>Provide mocked or synthetic versions of real tools</li>
-          <li>Limit blast radius when testing AI applications</li>
-          <li>Validate AI application logic before production</li>
-          <li>On-demand safe spaces for subsets of the landscape</li>
+          <li>AI needs a safe space to work with APIs</li>
+          <li>Outlook: Baking security into the platform</li>
         </ul>
       </slide>
     </part>
     <part id="conclusions">
       <title>Conclusions</title>
-      <slide id="ai-enablement">
-        <title>AI Enablement: Get Started Now!</title>
+      <slide id="ai-success">
+        <title>AI <q>Success</q> Stories</title>
         <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally, Chris Pease, Ramesh Raskar, and Pradyumna Chari, "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 30% ; float: right ; margin : 0% 4% 4% 4% ; " class="shadow" />
         <img src="cover-state-of-ai-2025.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Alex Singla, Alexander Sukharevsky, Lareina Yee, and Michael Chui, "The state of AI in 2025: Agents, innovation, and transformation", McKinsey, November 2025' style=" height : 30% ; float : right ; clear : right ; margin : 0% 4% 4% 4% ; " class="shadow" />
         <ul>
-          <li><link href="tool-availability"/></li>
-          <li><link href="tool-description"/></li>
-          <li><link href="tool-search"/></li>
-          <li><link href="workflow-tools"/></li>
-          <li><link href="tool-practices"/></li>
+          <li><link href="api-availability"/></li>
+          <li><link href="api-description"/></li>
+          <li><link href="api-search"/></li>
+          <li><link href="workflow-apis"/></li>
         </ul>
       </slide>
       <slide id="thanks">
