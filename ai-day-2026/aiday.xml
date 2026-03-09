@@ -63,6 +63,20 @@
           <li>This works — technically</li>
         </ul>
       </slide>
+      <slide id="tool-description">
+        <title>Describe APIs for Agents, Not Just Humans</title>
+        <img src="api-ai-evolution-2-description.png" style="float: right ; height : 55% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Descriptions written for human developers do not work well for LLM agents</li>
+          <li>Agents need context: what is this for, when should I use it, what does it accomplish?</li>
+          <li>The right place for these descriptions is <em>the API itself</em> — not just the MCP wrapper</li>
+          <ul>
+            <li>Good API descriptions benefit developers, agents, codegen tools, and every protocol on top</li>
+            <li>MCP-only descriptions are a dead end if the protocol layer changes</li>
+          </ul>
+          <li>The <em>API Scorecard:</em> a structured way to evaluate and improve your API descriptions for AI readiness</li>
+        </ul>
+      </slide>
       <slide id="mcp-context-problem">
         <title>But Context Runs Out</title>
         <ul>
@@ -130,7 +144,7 @@
       </slide>
     </part>
     <part id="tool-access">
-      <title>The Right Tool Access</title>
+      <title>Discovery at Scale</title>
       <slide id="tool-tool">
         <title>Just-in-Time Discovery: The Tool Tool</title>
         <img src="api-ai-evolution-3-search.png" style="float: right ; height : 55% ; margin : 0% 4% 4% 4% ; "/>
@@ -151,16 +165,6 @@
           <li>Make your full API landscape available and searchable through the platform</li>
           <li>Surface your capabilities — even before optimizing them</li>
           <li>More available means more value agents can extract</li>
-        </ul>
-      </slide>
-      <slide id="tool-description">
-        <title>Describe Tools for Agents, Not Humans</title>
-        <img src="api-ai-evolution-2-description.png" style="float: right ; height : 55% ; margin : 0% 4% 4% 4% ; "/>
-        <ul>
-          <li>Descriptions written for human developers do not work well for LLM agents</li>
-          <li>Agents need descriptions that explain purpose, context, and when to use a tool</li>
-          <li>This does not require changing your APIs — just how you describe them</li>
-          <li>The <em>API Scorecard:</em> a structured way to evaluate and improve API descriptions for AI</li>
         </ul>
       </slide>
     </part>
