@@ -86,27 +86,17 @@
 	    <title>OpenClaw</title>
 	    <slide id="what-is-openclaw">
 	      <title>What is OpenClaw?</title>
-		  <img src="openclaw-logo.png" style="float: right ; max-height : 60% ; margin : 0% 4% 4% 4% ; "/>
+		  <!--<img src="openclaw-logo.png" style="float: right ; max-height : 60% ; margin : 0% 4% 4% 4% ; "/>-->
 	      <ol>
-			<li><em>A persistent, self-improving AI agent</em> — runs 24/7 with memory, skills, 
-			and direct access to your tools, APIs, and CLIs</li>
-			<li><em>Multi-channel and multi-agent</em> — connects across messaging platforms, 
-			orchestrates parallel agent workflows, and accumulates context across every interaction</li>
-			<li><em>API-native by design</em> — consumes APIs directly without middleware layers, 
-			representing a new class of always-on, autonomous machine consumer</li>
-	      </ol>		  
+			<li><em>A persistent, self-improving AI agent</em></li>
+			<li><em>Multi-channel and multi-agent</em></li>
+			<li><em>API-native by design</em></li>
+	      </ol>
+		  <img src="openclaw-logo.png" class="fullsize" style="max-height : 25%"/>
 	    </slide>
 	    <slide id="what-are-universal-agents">
 	      <title>The Age of Universal Agents</title>
-	      <ol>
-			<li><em>Beyond task-specific bots</em> — universal agents discover, plan, and execute 
-			across any API or tool at runtime, without pre-wiring or human configuration</li>
-			<li><em>Machine-driven consumption at scale</em> — APIs built for human developers 
-			now face AI consumers that operate faster, at higher volume, and with zero tribal knowledge</li>
-			<li><em>The shift changes everything</em> — what was "good enough" for developers is 
-			fundamentally insufficient for autonomous agents: the API estate either enables the 
-			agentic future or blocks it</li>
-	      </ol>
+		  <img src="universal-agents.png" class="fullsize-shadow" />
 	    </slide>
 	    <slide id="mcp-and-more">
 	      <title>Don't bet everything on MCP!</title>
@@ -198,7 +188,7 @@
 				<li>Evaluates if an API is structurally valid, standards-compliance, and parseable by tooling.</li>
 			</ul>
 			<br/>
-			<table rules="all" cellspacing="0" cellpadding="5" width="80%" style="border: 2px solid #ABC9CB;">
+			<table rules="all" cellspacing="0" cellpadding="5" width="80%" style="border: 2px solid #ABC9CB; margin-left: 3em;">
 				<thead>
 					<tr>
 						<th valign="bottom" style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Signal</th>
@@ -229,14 +219,21 @@
 					</tr>									
 				</tbody>
 			</table>		  
-	    </slide>		
+	    </slide>	
+	    <slide id="foundational-compliance">
+	      <title>Foundational Compliance - Structural Integrity</title>
+			<ul>
+				<li><code>structural_integrity = max(0, 1 - log10(1 + structural_issues) / log10(1 + structural_issue_threshold))</code></li>
+			</ul>
+		  <img src="structural-integrity-signal.png" class="fullsize-shadow" />
+	    </slide>					
 	    <slide id="ai-discoverability">
 	      <title>AI Discoverability</title>
 			<ul>
 				<li>Evaluates how easily AI systems can locate, classify, and route to the API across registries, workflows, and knowledge bases.</li>
 			</ul>
 			<br/>
-			<table rules="all" cellspacing="0" cellpadding="5" width="80%" style="border: 2px solid #ABC9CB;">
+			<table rules="all" cellspacing="0" cellpadding="5" width="80%" style="border: 2px solid #ABC9CB;  margin-left: 3em;">
 				<thead>
 					<tr>
 						<th valign="bottom" style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Signal</th>
@@ -281,10 +278,18 @@
 				<li>Using expensive models doesn't fix bad API semantics </li>
 				<li>Save yourself the trouble and the $$$</li>
 			</ul>		  
-		</slide>											
+		</slide>
+		<slide id="ai-readiness-deep-dive">
+	      <title>API AI-Readiness Framework: Deep Dive</title>
+			<a href="https://www.youtube.com/watch?v=qzeR4wBcS4s">
+				<img src="YouMayHaveOpenAPI.jpg" class="fullsize-shadow" />	
+			</a>
+			  
+			<p style="text-align: center;">See: <a href="https://www.youtube.com/watch?v=qzeR4wBcS4s">https://www.youtube.com/watch?v=qzeR4wBcS4s</a></p>
+		</slide>									
 	  </part>
 	  <part id="thanks-openclaw">
-	    <title>Introduction</title>
+	    <title>Moving beyond APIs - Workflows hook</title>
 	  </part>
 	  <slide id="ai-readiness-thanks">
 	    <title>Thank You!</title>
