@@ -109,6 +109,15 @@
 	  </part>
 	  <part id="api-first">
 	    <title>API First</title>
+	    <slide id="api-first-10">
+	      <title>API First 1.0</title>
+	      <ul>
+	        <li><em>Don't break consumers:</em> Design a contract and stick to it</li>
+	        <li><em>Speed up delivery:</em> API providers and consumers work in parallel</li>
+	        <li><em>API products:</em> Design APIs instead of exposing implementations</li>
+	        <li><em>Scalable Governance:</em> Implementation-independent APIs are more likely to stick around</li>
+	      </ul>
+	    </slide>
 	    <slide id="optionality">
 	      <title>Optionality: Unbundling the Enterprise with APIs</title>
 	      <img src="unbundling-the-enterprise.jpg" title='Stephen Fishman and Matt McLarty, "Unbundling the Enterprise: APIs, Optionality, and the Science of Happy Accidents", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
@@ -117,6 +126,9 @@
 	        <li>APIs are the foundational layer of digital capabilities</li>
 	        <li><q>API First</q> builds everything as digital building blocks</li>
 	      </ul>
+	    </slide>
+	    <slide id="api-first-20">
+	      <title>API First 2.0</title>
 	    </slide>
 	    <slide id="rise-of-dx">
 	      <title>The Rise of DX and AX</title>
