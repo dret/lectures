@@ -151,7 +151,7 @@
         <img src="api-ai-evolution-2-description.png" class="fullsize-shadow" />
       </slide>
       <slide id="dx-homework">
-        <title>Do Your DX Homework</title>
+        <title>Do Your Developer Experience (DX) Homework</title>
         <ul>
           <li>Most API descriptions need quality improvements anyway</li>
           <li>Better descriptions benefit <em>everyone</em>, not just AI agents</li>
@@ -161,7 +161,7 @@
             <li>Clear error handling</li>
             <li>Consistent terminology and naming</li>
           </ul>
-          <li>Good DX is the foundation for good AX</li>
+          <li>Good DX is the foundation for good <em>agent experience (AX)</em></li>
         </ul>
       </slide>
       <slide id="ax-homework">
@@ -240,15 +240,6 @@
             <li><em>GraphQL:</em> Treat all queries and mutations as individual capabilities</li>
           </ul>
           <li>Allows flexible combination of capabilities for any use case</li>
-        </ul>
-      </slide>
-      <slide id="api-search-ranking">
-        <title>Semantic Search with RAG</title>
-        <ul>
-          <li>All capabilities indexed in a <em>vector database</em></li>
-          <li>Queries resolved via semantic search (embeddings &amp; similarity)</li>
-          <li><em>Retrieval-Augmented Generation (RAG)</em> assembles relevant operations</li>
-          <li>Depends heavily on high-quality descriptions</li>
         </ul>
       </slide>
       <slide id="dynamic-discovery">
