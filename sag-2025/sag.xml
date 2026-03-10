@@ -141,7 +141,7 @@
           <li><em>Cons:</em></li>
           <ul>
             <li>Context window explosion with large APIs</li>
-            <li>AI struggles with understanding workflow across endpoints</li>
+            <li>AI struggles with understanding workflows across endpoints</li>
             <li>Risk of misinterpreting MCP problems as general AI problems</li>
           </ul>
           <li>Good as a starting point but lacks sophistication and scalability</li>
@@ -210,7 +210,7 @@
         </ul>
       </slide>
       <slide id="api-ai-readiness-score">
-        <title>API AI Readiness Score for APIs</title>
+        <title>AI Readiness Score for APIs</title>
         <img src="api-ai-readiness-score-twilio-alarms.png" class="fullsize-shadow" />
       </slide>
       <slide id="better-descriptions">

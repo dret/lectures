@@ -109,20 +109,22 @@
 	  </part>
 	  <part id="api-first">
 	    <title>API First</title>
-	    <slide id="api-value-creation">
-	      <title>Most API Value Creation is Indirect</title>
-	      <ol>
-	        <li>Using APIs to become better at internal reuse and cross-pollination</li>
-	        <li>Reducing friction by having teams communicate via APIs</li>
-	        <li>Using <q>API First</q> as a way to build everything as digital building blocks</li>
-	      </ol>
+	    <slide id="optionality">
+	      <title>Optionality: Unbundling the Enterprise with APIs</title>
+	      <img src="unbundling-the-enterprise.jpg" title='Stephen Fishman and Matt McLarty, "Unbundling the Enterprise: APIs, Optionality, and the Science of Happy Accidents", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+	      <ul>
+	        <li>Build up capabilities for experimentation and discovery</li>
+	        <li>APIs are the foundational layer of digital capabilities</li>
+	        <li><q>API First</q> builds everything as digital building blocks</li>
+	      </ul>
 	    </slide>
 	    <slide id="rise-of-dx">
-	      <title>The Rise of DX</title>
+	      <title>The Rise of DX and AX</title>
 	      <ul>
 	        <li>2000s: Having any API is good</li>
 	        <li>2010s: Having many APIs is good</li>
-	        <li>2020s: Having good APIs is good</li>
+	        <li>2020s: Having many human-friendly APIs is good</li>
+	        <li>2025: Having many machine-friendly APIs is good</li>
 	      </ul>
 	    </slide>
 	    <slide id="agents">
@@ -176,7 +178,7 @@
         <slide id="api-ai-readiness-framework">
           <title>API AI-Readiness Framework</title>
           <p style="text-align: center;">Evaluates APIs across six human &amp; AI-readiness dimensions</p>
-          <img src="api-ai-readiness-dimensions.png" class="fullsize-shadow" />
+          <img src="api-ai-readiness-dimensions.png" href="https://github.com/jentic/api-ai-readiness-framework" class="fullsize-shadow" />
           <p style="text-align: center;">See: <a href="https://github.com/jentic/api-ai-readiness-framework">https://github.com/jentic/api-ai-readiness-framework</a></p>
         </slide>    
         <slide id="ai-readiness-scorecard">
@@ -294,7 +296,7 @@
 	    <title>Wrap up</title>
       <slide id="ai-ready-workflows">
         <title>Moving Beyond APIs - Business-Aligned Workflows</title>
-        <img src="workflows-not-endpoints.png" title="Workflows-beat-apis" class="fullsize-shadow"/>
+        <img src="api-ai-evolution-5-sandbox.png" title="Workflows-beat-apis" class="fullsize-shadow"/>
     	<p style="text-align: center;"><em>“Endpoints != Use-cases. Think about the workflows”</em> - Adam DuVander</p>
       </slide>
       <slide id="ai-readiness-thanks">

@@ -4,30 +4,30 @@
 <?hotspot kilauea-path="hotspot/kilauea" ?>
 <?hotspot layout="jentic" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
-	<configuration>
-		<link subsections="yes" bookmarks="yes" versions="aiday.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
-		<paths img="img" listing="src"/>
-		<outline count-text=" [*]" count-depth="all"/>
-		<hyperlink extra=""/>
-		<extension file="html" link=""/>
-		<counter separator=":&#160;"/>
-		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
-			<plugins>
-				<touch/>
-			</plugins>
-		</kilauea>
-	</configuration>
-	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
-		<div class="license">
-			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
-			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
-		</div>
-	</license>
+  <configuration>
+    <link subsections="yes" bookmarks="yes" versions="aiday.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+    <paths img="img" listing="src"/>
+    <outline count-text=" [*]" count-depth="all"/>
+    <hyperlink extra=""/>
+    <extension file="html" link=""/>
+    <counter separator=":&#160;"/>
+    <kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+      <plugins>
+        <touch/>
+      </plugins>
+    </kilauea>
+  </configuration>
+  <license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+    <div class="license">
+      <p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+      <p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+    </div>
+  </license>
   <title><a href="https://softwarearchitecture4ai-day.com/">Software Architecture AI Day</a> 2026</title>
-	<author>Erik Wilde</author>
-  <affiliation>Head of Enterprise Strategy, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
-	<copyright>2026 Erik Wilde</copyright>
+  <author>Erik Wilde</author>
+  <affiliation>Head of Enterprise Strategy, <a href="https://jentic.com/">Jentic</a></affiliation>
   <date short="2026-03-10">March 10, 2026</date>
+  <copyright>2026 Erik Wilde</copyright>
   <presentation id="index">
     <title short="Beyond MCP">Beyond MCP: Scaling AI Enablement for API Landscapes</title>
     <slide id="dret">
@@ -41,13 +41,271 @@
         <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
       </ul>
     </slide>
-    <slide id="thanks">
-      <title>Thank You!</title>
-      <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-      <ul>
-        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-      </ul>
-    </slide>
+    <part id="apis-and-ai">
+      <title>APIs and AI: It's complicated</title>
+      <slide id="api-ai-new-york">
+        <title>(How) does AI affect APIs?</title>
+        <img src="apis-and-ai-cover.jpg" title="How does AI affect APIs? Expert Opinions from API Days New York 2025" href="https://www.youtube.com/watch?v=6ekEQR45IIo" class="fullsize-shadow"/>
+      </slide>
+      <slide id="api-landscape-lifecycle">
+        <title>The API Landscape Lifecycle</title>
+        <ul>
+          <li>Not about single APIs → It's about the API landscape</li>
+          <li>Lifecycle of evolving towards AI readiness</li>
+          <ol>
+            <li><link href="api-availability"/></li>
+            <li><link href="api-description"/></li>
+            <li><link href="api-search"/></li>
+            <li><link href="workflow-apis"/></li>
+          </ol>
+        </ul>
+      </slide>
+    </part>
+    <part id="api-availability">
+      <title>Step #1: More APIs</title>
+      <slide id="api-access-matters">
+        <title>Why More APIs Matter</title>
+        <img src="workbench.jpg" class="fullsize-shadow" />
+      </slide>
+      <slide id="api-ai-evolution-1-more">
+        <title>More APIs &amp; Tools</title>
+        <img src="api-ai-evolution-1-more.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="mcp-intro">
+        <title>Model Context Protocol (MCP)</title>
+        <img src="mcp-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>MCP is the current <q>standard protocol</q> for LLM consumers</li>
+          <li>The initial focus was on <em>additional and extended context</em></li>
+          <ul>
+            <li><em>Additional context</em> by providing access to the environment</li>
+            <li><em>Extended context</em> by allowing MCP servers to externally manage context</li>
+          </ul>
+          <li>Many mapping tools generate MCP servers from OpenAPI descriptions</li>
+          <li><em>What</em> to expose and <em>how to design it</em> is out of scope</li>
+        </ul>
+      </slide>
+      <slide id="openclaw">
+        <title>OpenClaw: The New AI Kid on the Block</title>
+        <img src="openclaw-logo.png" style="float: right ; max-height : 60% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>A persistent and self-improving AI agent</li>
+          <li>Multi-channel and multi-agent</li>
+          <li>API-native by design</li>
+        </ul>
+      </slide>
+      <slide id="api-mcp-ai-direct-idea">
+        <title>MCP all the APIs</title>
+        <img src="api-mcp-ai-direct.png"  style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ; " />
+        <ol>
+          <li>Generate MCP from OpenAPI</li>
+          <li>Publish/Install MCP servers for all APIs</li>
+          <li>Consumers can access <em>all MCP tools</em></li>
+        </ol>
+      </slide>
+      <slide id="api-mcp-ai-direct-tradeoffs">
+        <title>MCP all the APIs: Easy but Limited</title>
+        <ul>
+          <li><em>Pros:</em></li>
+          <ul>
+            <li>Zero development effort, many tools auto-generate MCP</li>
+            <li>All APIs easily available</li>
+            <li>Great for quick and focused experimentation</li>
+          </ul>
+          <li><em>Cons:</em></li>
+          <ul>
+            <li>Context window overflow happens quickly</li>
+            <li>AI struggles with understanding workflows across endpoints</li>
+            <li>Risk of misinterpreting MCP problems as general AI problems</li>
+          </ul>
+          <li>Good as a starting point but lacks sophistication and scalability</li>
+        </ul>
+      </slide>
+      <slide id="more-tools">
+        <title>More Tools ⇏ Better Tools Landscape</title>
+        <ul>
+          <li>LLMs can now access many tools</li>
+          <li>But they cannot understand many of them well</li>
+          <li>Poor descriptions → poor tool selection → poor results</li>
+          <li>Next: <link href="api-description"/></li>
+        </ul>
+      </slide>
+    </part>
+    <part id="api-description">
+      <title>Step #2: Better Described APIs</title>
+      <slide id="api-ai-evolution-2-description">
+        <title>Better Described APIs</title>
+        <img src="api-ai-evolution-2-description.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="dx-homework">
+        <title>Do Your DX Homework</title>
+        <ul>
+          <li>Most API descriptions need quality improvements anyway</li>
+          <li>Better descriptions benefit <em>everyone</em>, not just AI agents</li>
+          <ul>
+            <li>Complete and meaningful operation summaries</li>
+            <li>Comprehensive examples for all operations</li>
+            <li>Clear error handling</li>
+            <li>Consistent terminology and naming</li>
+          </ul>
+          <li>Good DX is the foundation for good AX</li>
+        </ul>
+      </slide>
+      <slide id="ax-homework">
+        <title>Now There's AX Homework, Too</title>
+        <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+        <ul>
+          <li>AI agents need information developers don't typically require:</li>
+          <ul>
+            <li>Everything that developers usually <q>just know</q></li>
+            <li>Treat every API like an external one for developers with no context</li>
+          </ul>
+          <li>OpenAPI Initiative (OAI) might add AX-specific fields</li>
+          <li>Until then, leverage description fields strategically</li>
+        </ul>
+      </slide>
+      <slide id="api-ai-readiness-score">
+        <title>AI Readiness Score for APIs</title>
+        <img src="api-ai-readiness-score-twilio-alarms.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="better-descriptions">
+        <title>Better Descriptions ⇏ Scalable Tool Use</title>
+        <ul>
+          <li>Better AX reduces confusion and misuse</li>
+          <li>But well-described APIs still can overload context</li>
+          <li>The problem shifts from <em>understanding</em> APIs to <em>finding</em> the right ones</li>
+          <li>Next: <link href="api-search"/></li>
+        </ul>
+      </slide>
+    </part>
+    <part id="api-search">
+      <title>Step #3: Dynamic API Discovery</title>
+      <slide id="api-ai-evolution-3-search">
+        <title>Dynamic API Discovery</title>
+        <img src="api-ai-evolution-3-search.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="fastmcp">
+        <title>FastMCP Tool Search</title>
+        <img src="fastmcp-tool-search.png" href="https://gofastmcp.com/servers/transforms/tool-search" class="fullsize" />
+      </slide>
+      <slide id="api-tool-mapping">
+        <title>One API ≠ One Tool</title>
+        <img src="victorinox-swiss-champ-xxl.png" title="Victorinox Swiss Champ XXL" href="https://www.victorinox.com/de-DE/Produkte/Swiss-Army-Knife%E2%84%A2-and-Tools/Trades-and-Crafts/Swiss-Champ%C2%A0XXL/p/1.6795.XXL" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>APIs can be large and multifunctional</li>
+          <li>Tools should be <em>task-specific</em></li>
+          <li>AI rarely needs an entire API</li>
+        </ul>
+      </slide>
+      <slide id="github-api">
+        <title>GitHub API</title>
+        <img src="github-api.png" title="GitHub API" href="https://github.com/github/rest-api-description" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li><a href="https://github.com/github/rest-api-description">GitHub API</a></li>
+          <ul>
+            <li>11MB</li>
+            <li>320k lines</li>
+            <li>738 paths</li>
+            <li>1114 operations</li>
+            <li>259 webhooks</li>
+          </ul>
+          <li><a href="https://github.com/github/github-mcp-server">GitHub MCP Server</a></li>
+          <ul>
+            <li>19 toolsets (+3 remote)</li>
+            <li>70 tools overall</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="api-microproduct">
+        <title>API Microproducts</title>
+        <ul>
+          <li>Traditional API products bundle endpoints into coarse offerings</li>
+          <li>With unknown use cases, it's better to decompose into fine-grained API microproducts</li>
+          <ul>
+            <li><em>OpenAPI:</em> Treat all operations on all endpoints as individual capabilities</li>
+            <li><em>AsyncAPI:</em> Treat all messages on all channels as individual capabilities</li>
+            <li><em>GraphQL:</em> Treat all queries and mutations as individual capabilities</li>
+          </ul>
+          <li>Allows flexible combination of capabilities for any use case</li>
+        </ul>
+      </slide>
+      <slide id="api-search-ranking">
+        <title>Semantic Search with RAG</title>
+        <ul>
+          <li>All capabilities indexed in a <em>vector database</em></li>
+          <li>Queries resolved via semantic search (embeddings &amp; similarity)</li>
+          <li><em>Retrieval-Augmented Generation (RAG)</em> assembles relevant operations</li>
+          <li>Depends heavily on high-quality descriptions</li>
+        </ul>
+      </slide>
+      <slide id="dynamic-discovery">
+        <title>Dynamic Discovery ⇏ Ideal API Landscape</title>
+        <ul>
+          <li>Discovery helps reduce tool overload</li>
+          <li>Agents still have to invent workflows from scratch</li>
+          <li>We need higher-level, business-aligned APIs</li>
+          <li>Next: <link href="workflow-apis"/></li>
+        </ul>
+      </slide>
+    </part>
+    <part id="workflow-apis">
+      <title>Step #4: Workflow-Based APIs</title>
+      <slide id="api-ai-evolution-4-workflow">
+        <title>Workflow-Based APIs</title>
+        <img src="api-ai-evolution-4-workflow.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="workflows-matter">
+        <title>Why Workflows Matter</title>
+        <ul>
+          <li>Many tasks follow predictable, repeatable sequences</li>
+          <li>Agents shouldn't re-discover the same steps</li>
+          <li>Workflow APIs reduce the complexity of planning tasks</li>
+          <li>Higher-level APIs = less context, less confusion, faster results</li>
+        </ul>
+      </slide>
+      <slide id="workflow-advantages">
+        <title>Workflow Advantages</title>
+        <ul>
+          <li>Predictability</li>
+          <li>Auditability</li>
+          <li>Compliance</li>
+          <li>Business alignment</li>
+          <li>Reduced need for AI</li>
+          <li>Energy/cost efficiency</li>
+        </ul>
+      </slide>
+      <slide id="workflow-safety">
+        <title>Workflow APIs ⇏ Safe API Use</title>
+        <ul>
+          <li>Workflows help with AI productivity</li>
+          <li>Detecting/defining workflows is non-trivial</li>
+          <li>AI needs a safe space to work with APIs</li>
+          <li>Outlook: Baking security into the platform</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="conclusions">
+      <title>Conclusions</title>
+      <slide id="ai-success">
+        <title>AI <q>Success</q> Stories</title>
+        <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally, Chris Pease, Ramesh Raskar, and Pradyumna Chari, "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 30% ; float: right ; margin : 0% 4% 4% 4% ; " class="shadow" />
+        <img src="cover-state-of-ai-2025.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Alex Singla, Alexander Sukharevsky, Lareina Yee, and Michael Chui, "The state of AI in 2025: Agents, innovation, and transformation", McKinsey, November 2025' style=" height : 30% ; float : right ; clear : right ; margin : 0% 4% 4% 4% ; " class="shadow" />
+        <ul>
+          <li><link href="api-availability"/></li>
+          <li><link href="api-description"/></li>
+          <li><link href="api-search"/></li>
+          <li><link href="workflow-apis"/></li>
+        </ul>
+      </slide>
+      <slide id="thanks">
+        <title>Thank You!</title>
+        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+          <img src="qr-code-erik-jentic.png" style=" width : 30% ; margin : 6% 0% 0% 0% ; "/>
+        </ul>
+      </slide>
+    </part>
   </presentation>
 </hotspot>
