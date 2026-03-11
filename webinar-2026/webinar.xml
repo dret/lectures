@@ -80,7 +80,7 @@
 	      </ul>
 	    </slide>
 	  </part>
-	  <part id="openclaw">
+      <part id="openclaw">
         <title>OpenClaw</title>
         <slide id="what-is-openclaw">
           <title>What is OpenClaw?</title>
@@ -106,66 +106,82 @@
             <li>No API, No party!</li>
           </ol>
         </slide>
-	  </part>
-	  <part id="api-first">
-	    <title>API First</title>
-	    <slide id="api-first-10">
-	      <title>API First 1.0: Developer Experience (DX)</title>
-	      <ul>
-	        <li><em>Don't break consumers:</em> Design a contract and stick to it</li>
-	        <li><em>Speed up delivery:</em> API providers and consumers work in parallel</li>
-	        <li><em>API products:</em> Design APIs instead of exposing implementations</li>
-	        <li><em>Scalable Governance:</em> Implementation-independent APIs live longer</li>
-	      </ul>
-	    </slide>
-	    <slide id="optionality">
-	      <title>Optionality: Unbundling the Enterprise with APIs</title>
-	      <img src="unbundling-the-enterprise.jpg" title='Stephen Fishman and Matt McLarty, "Unbundling the Enterprise: APIs, Optionality, and the Science of Happy Accidents", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-	      <ul>
-	        <li>Build up capabilities for experimentation and discovery</li>
-	        <li>APIs are the foundational layer of digital capabilities</li>
-	        <li><q>API First</q> builds everything as digital building blocks</li>
-	      </ul>
-	    </slide>
-	    <slide id="dx-ax">
-	      <title>From DX to Agent Experience (AX)</title>
-	      <ul>
-	        <li>2000s: Having any API is good</li>
-	        <li>2010s: Having many APIs is good</li>
-	        <li>2020s: Having many human-friendly APIs is good</li>
-	        <li>2025: Having many machine-friendly APIs is good</li>
-	      </ul>
-	    </slide>
-	    <slide id="api-first-20">
-	      <title>API First 2.0: DX &amp; AX</title>
-	      <ul>
-	        <li><em>AI needs capabilities:</em> AI cannot do anything without APIs</li>
-	        <li><em>Runtime discovery/usage:</em> Find and use APIs when needed</li>
-	        <li><em>Agent risk management:</em> Limit blast radius with APIs</li>
-	        <li><em>Workflows:</em> Make workflows part of the API strategy</li>
-	      </ul>
-	    </slide>
-	    <slide id="api-days-new-york">
-	      <title>How does AI affect APIs?</title>
-	      <img src="apis-and-ai-new-york.jpg" href="https://www.youtube.com/watch?v=6ekEQR45IIo" title="How does AI affect APIs? Expert Opinions from API Days New York 2025" class="fullsize"/>
-	    </slide>
-	  </part>
-	  <part id="ax">
-	    <title>Agent Experience (AX)</title>
-	    <slide id="ax-homework">
-	      <title>Now There&#x2019;s AX Homework, Too</title>
-	      <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
-	      <ul>
-	        <li>AI agents need information developers don&#x2019;t typically require:</li>
-	        <ul>
-	          <li>Everything that developers usually <q>just know</q></li>
-	          <li>Treat every API like an external one for developers with no context</li>
-	        </ul>
-	        <li>OpenAPI Initiative (OAI) might add AX-specific fields</li>
-	        <li>Until then, leverage description fields strategically</li>
-	      </ul>
-	    </slide>
-	  </part>
+      </part>
+      <part id="api-first">
+        <title>API First</title>
+        <slide id="api-first-10">
+          <title>API First 1.0: Developer Experience (DX)</title>
+          <ul>
+            <li><em>Don't break consumers:</em> Design a contract and stick to it</li>
+            <li><em>Speed up delivery:</em> API providers and consumers work in parallel</li>
+            <li><em>API products:</em> Design APIs instead of exposing implementations</li>
+            <li><em>Scalable Governance:</em> Implementation-independent APIs live longer</li>
+          </ul>
+        </slide>
+        <slide id="optionality">
+          <title>Optionality: Unbundling the Enterprise with APIs</title>
+          <img src="unbundling-the-enterprise.jpg" title='Stephen Fishman and Matt McLarty, "Unbundling the Enterprise: APIs, Optionality, and the Science of Happy Accidents", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+          <ul>
+            <li>Build up capabilities for experimentation and discovery</li>
+            <li>APIs are the foundational layer of digital capabilities</li>
+            <li><q>API First</q> builds everything as digital building blocks</li>
+            <li>Optionality is a potent accelerant for AI success</li>
+          </ul>
+        </slide>
+        <slide id="dx-ax">
+          <title>From DX to Agent Experience (AX)</title>
+          <ul>
+            <li>2000s: Having any API is good</li>
+            <li>2010s: Having many APIs is good</li>
+            <li>2020s: Having many developer-friendly APIs is good</li>
+            <li>2025: Having many machine-friendly APIs is good</li>
+          </ul>
+        </slide>
+        <slide id="api-first-20">
+          <title>API First 2.0: From DX to AX</title>
+          <ul>
+            <li><em>AI needs capabilities:</em> AI cannot do anything without APIs</li>
+            <li><em>Runtime discovery/usage:</em> Find and use APIs when needed</li>
+            <li><em>Workflows:</em> Make workflows part of the API strategy → 🎥</li>
+            <li><em>Agent risk management:</em> Limit blast radius with APIs → 🎥</li>
+            <li><em>Sandboxes:</em> Create a safe space for agents to experiment in → 🎥</li>
+          </ul>
+        </slide>
+        <slide id="api-days-new-york">
+          <title>How does AI affect APIs?</title>
+          <img src="apis-and-ai-new-york.jpg" href="https://www.youtube.com/watch?v=6ekEQR45IIo" title="How does AI affect APIs? Expert Opinions from API Days New York 2025" class="fullsize"/>
+        </slide>
+      </part>
+      <part id="ax">
+        <title>Agent Experience (AX)</title>
+        <slide id="dx-homework">
+          <title>Do Your DX Homework</title>
+          <ul>
+            <li>Most API descriptions need quality improvements anyway</li>
+            <li>Better descriptions benefit <em>everyone</em>, not just AI agents</li>
+            <ul>
+              <li>Complete and meaningful operation summaries</li>
+              <li>Comprehensive examples for all operations</li>
+              <li>Clear error handling</li>
+              <li>Consistent terminology and naming</li>
+            </ul>
+            <li>Good DX is the foundation for good AX</li>
+          </ul>
+        </slide>
+        <slide id="ax-homework">
+          <title>Now There's AX Homework, Too</title>
+          <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+          <ul>
+            <li>AI agents need information developers don't typically require:</li>
+            <ul>
+              <li>Everything that developers usually <q>just know</q></li>
+              <li>Treat every API like an external one for developers with no context</li>
+            </ul>
+            <li>OpenAPI Initiative (OAI) might add AX-specific fields</li>
+            <li>Until then, leverage description fields strategically</li>
+          </ul>
+        </slide>
+      </part>
       <part id="scoring">
         <title>API Scoring for AI Readiness</title>
         <slide id="what-agents-need">
