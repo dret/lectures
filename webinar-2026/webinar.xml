@@ -110,12 +110,12 @@
 	  <part id="api-first">
 	    <title>API First</title>
 	    <slide id="api-first-10">
-	      <title>API First 1.0</title>
+	      <title>API First 1.0: Developer Experience (DX)</title>
 	      <ul>
 	        <li><em>Don't break consumers:</em> Design a contract and stick to it</li>
 	        <li><em>Speed up delivery:</em> API providers and consumers work in parallel</li>
 	        <li><em>API products:</em> Design APIs instead of exposing implementations</li>
-	        <li><em>Scalable Governance:</em> Implementation-independent APIs are more likely to stick around</li>
+	        <li><em>Scalable Governance:</em> Implementation-independent APIs live longer</li>
 	      </ul>
 	    </slide>
 	    <slide id="optionality">
@@ -127,11 +127,8 @@
 	        <li><q>API First</q> builds everything as digital building blocks</li>
 	      </ul>
 	    </slide>
-	    <slide id="api-first-20">
-	      <title>API First 2.0</title>
-	    </slide>
-	    <slide id="rise-of-dx">
-	      <title>The Rise of DX and AX</title>
+	    <slide id="dx-ax">
+	      <title>From DX to Agent Experience (AX)</title>
 	      <ul>
 	        <li>2000s: Having any API is good</li>
 	        <li>2010s: Having many APIs is good</li>
@@ -139,12 +136,13 @@
 	        <li>2025: Having many machine-friendly APIs is good</li>
 	      </ul>
 	    </slide>
-	    <slide id="agents">
-	      <title>Agentic API Users</title>
+	    <slide id="api-first-20">
+	      <title>API First 2.0: DX &amp; AX</title>
 	      <ul>
-	        <li>Little knowledge of API patterns and practices</li>
-	        <li>Discovering APIs at <em>run-time</em> for solving tasks</li>
-	        <li>Navigating only machine-readable parts of the API landscape</li>
+	        <li><em>AI needs capabilities:</em> AI cannot do anything without APIs</li>
+	        <li><em>Runtime discovery/usage:</em> Find and use APIs when needed</li>
+	        <li><em>Agent risk management:</em> Limit blast radius with APIs</li>
+	        <li><em>Workflows:</em> Make workflows part of the API strategy</li>
 	      </ul>
 	    </slide>
 	    <slide id="api-days-new-york">
