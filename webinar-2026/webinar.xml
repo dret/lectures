@@ -4,326 +4,354 @@
 <?hotspot kilauea-path="hotspot/kilauea" ?>
 <?hotspot layout="jentic" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
-	<configuration>
-		<link subsections="yes" bookmarks="yes" versions="webinar.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
-		<paths img="img" listing="src"/>
-		<outline count-text=" [*]" count-depth="all"/>
-		<hyperlink extra=""/>
-		<extension file="html" link=""/>
-		<counter separator=":&#160;"/>
-		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
-			<plugins>
-				<touch/>
-			</plugins>
-		</kilauea>
-	</configuration>
-	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
-		<div class="license">
-			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
-			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
-		</div>
-	</license>
-	<toc name="toc.html">
-		<table rules="all" cellspacing="0" cellpadding="5" width="100%">
-			<thead>
-				<tr>
-					<th valign="bottom">Date</th>
-				  <th valign="bottom">Host(s)</th>
-				  <th valign="bottom">Title</th>
-				  <th valign="bottom">Slides</th>
-					<th valign="bottom">Resources</th>
-				</tr>
-			</thead>
-			<tbody>
-				<hotspot:for-each-presentation>
-					<tr class="vevent">
-					  <td valign="top"><b><span class="title"><hotspot:date/></span></b></td>
-					  <td valign="top"><em><hotspot:author/></em></td>
-					  <td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
-						<td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
-						<td align="center"><hotspot:toc class="resources"/></td>
-					</tr>
-				</hotspot:for-each-presentation>
-			</tbody>
-		</table>
-	</toc>
+  <configuration>
+    <link subsections="yes" bookmarks="yes" versions="webinar.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+    <paths img="img" listing="src"/>
+    <outline count-text=" [*]" count-depth="all"/>
+    <hyperlink extra=""/>
+    <extension file="html" link=""/>
+    <counter separator=":&#160;"/>
+    <kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+      <plugins>
+        <touch/>
+      </plugins>
+    </kilauea>
+  </configuration>
+  <license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+    <div class="license">
+      <p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+      <p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+    </div>
+  </license>
+  <toc name="toc.html">
+    <table rules="all" cellspacing="0" cellpadding="5" width="100%">
+      <thead>
+        <tr>
+          <th valign="bottom">Date</th>
+          <th valign="bottom">Host(s)</th>
+          <th valign="bottom">Title</th>
+          <th valign="bottom">Slides</th>
+          <th valign="bottom">Resources</th>
+        </tr>
+      </thead>
+      <tbody>
+        <hotspot:for-each-presentation>
+          <tr class="vevent">
+            <td valign="top">
+              <b>
+                <span class="title">
+                  <hotspot:date/>
+                </span>
+              </b>
+            </td>
+            <td valign="top">
+              <em>
+                <hotspot:author/>
+              </em>
+            </td>
+            <td valign="top">
+              <b>
+                <span class="title">
+                  <hotspot:title/>
+                </span>
+              </b>
+            </td>
+            <td align="center">
+              <hotspot:presentation-link title="Presentation Slides">
+                <hotspot:title form="short"/>
+              </hotspot:presentation-link>
+              <span class="toggle">
+                <hotspot:slides>(*&#160;Slides)</hotspot:slides>
+              </span>
+            </td>
+            <td align="center">
+              <hotspot:toc class="resources"/>
+            </td>
+          </tr>
+        </hotspot:for-each-presentation>
+      </tbody>
+    </table>
+  </toc>
   <title><a href="https://jentic.com">Jentic</a> Webinars 2026</title>
-	<copyright>2026 Erik Wilde</copyright>
-	<presentation id="openclaw-readiness">
-	  <title short="OpenClaw &amp; Universal Agents">OpenClaw &amp; Universal Agents: Why API-First Is Now an Agent Requirement</title>
-		<author>Frank Kilcommins &amp; Erik Wilde</author>
-		<affiliation><a href="https://jentic.com">Jentic</a></affiliation>
-		<date short="2026-03-11">March 11, 2026</date>
-		<copyright>2026 Frank Kilcommins &amp; Erik Wilde</copyright>
-	  <toc class="resources"><a href="https://jentic.com/scorecard">Jentic API Scorecard</a></toc>
-	  <part id="intro-openclaw">
-	    <title>Introduction</title>
-	    <slide id="frank-openclaw">
-	      <title>Frank Kilcommins</title>
-	      <img src="qr-code-frank-jentic.png" href="www.linkedin.com/in/frank-kilcommins/" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
-	      <ul>
-	        <li>Head of Enterprise Architecture at <a href="https://jentic.com/">Jentic</a></li>
-	        <li>Governance Board Member at the <a href="https://www.openapis.org/">OpenAPI Initiative</a></li>
-	        <li>Co-Maintainer of the <a href="https://spec.openapis.org/arazzo/latest.html">Arazzo Specification</a></li>
-	        <li><a href="https://www.linkedin.com/in/frank-kilcommins"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/frank-kilcommins</code></a></li>
-	        <li><a href="https://bsky.app/profile/fkilcommins.bsky.social"><img src="bluesky-logo.png" style=" height : 1em ; "/> <code>@fkilcommins.bsky.social</code></a></li>
-	      </ul>
-	    </slide>
-	    <slide id="erik-openclaw">
-	      <title>Erik Wilde</title>
-	      <img src="qr-code-erik-jentic.png" href="https://www.linkedin.com/in/erikwilde/" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
-	      <ul>
-	        <li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
-	        <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
-	        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-	        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-	      </ul>
-	    </slide>
-	  </part>
-      <part id="openclaw">
-        <title>OpenClaw</title>
-        <slide id="what-is-openclaw">
-          <title>What is OpenClaw?</title>
-          <!--<img src="openclaw-logo.png" style="float: right ; max-height : 60% ; margin : 0% 4% 4% 4% ; "/>-->
-          <ol>
-            <li><em>A persistent, self-improving AI agent</em></li>
-            <li><em>Multi-channel and multi-agent</em></li>
-            <li><em>API-native by design</em></li>
-          </ol>
-          <img src="openclaw-logo.png" class="fullsize" style="max-height : 25%"/>
-        </slide>
-        <slide id="what-are-universal-agents">
-          <title>The Age of Universal Agents</title>
-          <img src="universal-agents.png" class="fullsize-shadow" />
-        </slide>
-        <slide id="mcp-and-more">
-          <title>Don't bet everything on MCP!</title>
-          <img src="MCP-APIs-All-The-Way-Down.jpeg" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-          <ol>
-            <li>APIs are the real foundation</li>
-            <li>MCP is an entry, but it's really APIs all the way down</li>
-            <li>OpenClaw prefers direct API / CLI access - the shortest path</li>
-            <li>No API, No party!</li>
-          </ol>
-        </slide>
-      </part>
-      <part id="api-first">
-        <title>API First</title>
-        <slide id="api-first-10">
-          <title>API First 1.0: Developer Experience (DX)</title>
+  <copyright>2026 Erik Wilde</copyright>
+  <presentation id="openclaw-readiness">
+    <title short="OpenClaw &amp; Universal Agents">OpenClaw &amp; Universal Agents: Why API-First Is Now an Agent Requirement</title>
+    <author>Frank Kilcommins &amp; Erik Wilde</author>
+    <affiliation><a href="https://jentic.com">Jentic</a></affiliation>
+    <date short="2026-03-11">March 11, 2026</date>
+    <copyright>2026 Frank Kilcommins &amp; Erik Wilde</copyright>
+    <toc class="resources"><a href="https://jentic.com/scorecard">Jentic API Scorecard</a></toc>
+    <part id="intro-openclaw">
+      <title>Introduction</title>
+      <slide id="frank-openclaw">
+        <title>Frank Kilcommins</title>
+        <img src="qr-code-frank-jentic.png" href="www.linkedin.com/in/frank-kilcommins/" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Head of Enterprise Architecture at <a href="https://jentic.com/">Jentic</a></li>
+          <li>Governance Board Member at the <a href="https://www.openapis.org/">OpenAPI Initiative</a></li>
+          <li>Co-Maintainer of the <a href="https://spec.openapis.org/arazzo/latest.html">Arazzo Specification</a></li>
+          <li><a href="https://www.linkedin.com/in/frank-kilcommins"><img src="linkedin-logo.png" style=" height : 1em ; "/>
+              <code>linkedin.com/in/frank-kilcommins</code></a></li>
+          <li><a href="https://bsky.app/profile/fkilcommins.bsky.social"><img src="bluesky-logo.png" style=" height : 1em ; "/>
+              <code>@fkilcommins.bsky.social</code></a></li>
+        </ul>
+      </slide>
+      <slide id="erik-openclaw">
+        <title>Erik Wilde</title>
+        <img src="qr-code-erik-jentic.png" href="https://www.linkedin.com/in/erikwilde/" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
+          <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/>
+              <code>linkedin.com/in/erikwilde</code></a></li>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/>
+              <code>youtube.com/ErikWilde</code></a></li>
+        </ul>
+      </slide>
+    </part>
+    <part id="openclaw">
+      <title>OpenClaw</title>
+      <slide id="what-is-openclaw">
+        <title>What is OpenClaw?</title>
+        <!--<img src="openclaw-logo.png" style="float: right ; max-height : 60% ; margin : 0% 4% 4% 4% ; "/>-->
+        <ol>
+          <li><em>A persistent, self-improving AI agent</em></li>
+          <li><em>Multi-channel and multi-agent</em></li>
+          <li><em>API-native by design</em></li>
+        </ol>
+        <img src="openclaw-logo.png" class="fullsize" style="max-height : 25%"/>
+      </slide>
+      <slide id="what-are-universal-agents">
+        <title>The Age of Universal Agents</title>
+        <img src="universal-agents.png" class="fullsize-shadow"/>
+      </slide>
+      <slide id="mcp-and-more">
+        <title>Don't bet everything on MCP!</title>
+        <img src="MCP-APIs-All-The-Way-Down.jpeg" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ol>
+          <li>APIs are the real foundation</li>
+          <li>MCP is an entry, but it's really APIs all the way down</li>
+          <li>OpenClaw prefers direct API / CLI access - the shortest path</li>
+          <li>No API, No party!</li>
+        </ol>
+      </slide>
+    </part>
+    <part id="api-first">
+      <title>API First</title>
+      <slide id="api-first-10">
+        <title>API First 1.0: Developer Experience (DX)</title>
+        <ul>
+          <li><em>Don't break consumers:</em> Design a contract and stick to it</li>
+          <li><em>Speed up delivery:</em> API providers and consumers work in parallel</li>
+          <li><em>API products:</em> Design APIs instead of exposing implementations</li>
+          <li><em>Scalable Governance:</em> Implementation-independent APIs live longer</li>
+        </ul>
+      </slide>
+      <slide id="optionality">
+        <title>Optionality: Unbundling the Enterprise with APIs</title>
+        <img src="unbundling-the-enterprise.jpg" title='Stephen Fishman and Matt McLarty, "Unbundling the Enterprise: APIs, Optionality, and the Science of Happy Accidents", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li>Build up capabilities for experimentation and discovery</li>
+          <li>APIs are the foundational layer of digital capabilities</li>
+          <li><q>API First</q> builds everything as digital building blocks</li>
+          <li>Optionality is a potent accelerant for AI success</li>
+        </ul>
+      </slide>
+      <slide id="dx-ax">
+        <title>From DX to Agent Experience (AX)</title>
+        <ul>
+          <li>2000s: Having any API is good</li>
+          <li>2010s: Having many APIs is good</li>
+          <li>2020s: Having many developer-friendly APIs is good</li>
+          <li>2025: Having many machine-friendly APIs is good</li>
+        </ul>
+      </slide>
+      <slide id="api-first-20">
+        <title>API First 2.0: From DX to AX</title>
+        <ul>
+          <li><em>AI needs capabilities:</em> AI cannot do anything without APIs → ✅</li>
+          <li><em>Runtime discovery/usage:</em> Find and use APIs when needed → 🎥</li>
+          <li><em>Workflows:</em> Make workflows part of the API strategy → 🎥</li>
+          <li><em>Agent risk management:</em> Limit blast radius with APIs → 🎥</li>
+          <li><em>Sandboxes:</em> Create a safe space for agents to experiment in → 🎥</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="ax">
+      <title>Agent Experience (AX)</title>
+      <slide id="dx-homework">
+        <title>Do Your DX Homework</title>
+        <ul>
+          <li>Most API descriptions need quality improvements anyway</li>
+          <li>Better descriptions benefit <em>everyone</em>, not just AI agents</li>
           <ul>
-            <li><em>Don't break consumers:</em> Design a contract and stick to it</li>
-            <li><em>Speed up delivery:</em> API providers and consumers work in parallel</li>
-            <li><em>API products:</em> Design APIs instead of exposing implementations</li>
-            <li><em>Scalable Governance:</em> Implementation-independent APIs live longer</li>
+            <li>Complete and meaningful operation summaries</li>
+            <li>Comprehensive examples for all operations</li>
+            <li>Clear error handling</li>
+            <li>Consistent terminology and naming</li>
           </ul>
-        </slide>
-        <slide id="optionality">
-          <title>Optionality: Unbundling the Enterprise with APIs</title>
-          <img src="unbundling-the-enterprise.jpg" title='Stephen Fishman and Matt McLarty, "Unbundling the Enterprise: APIs, Optionality, and the Science of Happy Accidents", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+          <li>Good DX is the foundation for good AX</li>
+        </ul>
+      </slide>
+      <slide id="ax-homework">
+        <title>Now There's AX Homework, Too</title>
+        <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+        <ul>
+          <li>AI agents need information developers don't typically require:</li>
           <ul>
-            <li>Build up capabilities for experimentation and discovery</li>
-            <li>APIs are the foundational layer of digital capabilities</li>
-            <li><q>API First</q> builds everything as digital building blocks</li>
-            <li>Optionality is a potent accelerant for AI success</li>
+            <li>Everything that developers usually <q>just know</q></li>
+            <li>Treat every API like an external one for developers with no context</li>
           </ul>
-        </slide>
-        <slide id="dx-ax">
-          <title>From DX to Agent Experience (AX)</title>
-          <ul>
-            <li>2000s: Having any API is good</li>
-            <li>2010s: Having many APIs is good</li>
-            <li>2020s: Having many developer-friendly APIs is good</li>
-            <li>2025: Having many machine-friendly APIs is good</li>
-          </ul>
-        </slide>
-        <slide id="api-first-20">
-          <title>API First 2.0: From DX to AX</title>
-          <ul>
-            <li><em>AI needs capabilities:</em> AI cannot do anything without APIs → ✅</li>
-            <li><em>Runtime discovery/usage:</em> Find and use APIs when needed → 🎥</li>
-            <li><em>Workflows:</em> Make workflows part of the API strategy → 🎥</li>
-            <li><em>Agent risk management:</em> Limit blast radius with APIs → 🎥</li>
-            <li><em>Sandboxes:</em> Create a safe space for agents to experiment in → 🎥</li>
-          </ul>
-        </slide>
-      </part>
-      <part id="ax">
-        <title>Agent Experience (AX)</title>
-        <slide id="dx-homework">
-          <title>Do Your DX Homework</title>
-          <ul>
-            <li>Most API descriptions need quality improvements anyway</li>
-            <li>Better descriptions benefit <em>everyone</em>, not just AI agents</li>
-            <ul>
-              <li>Complete and meaningful operation summaries</li>
-              <li>Comprehensive examples for all operations</li>
-              <li>Clear error handling</li>
-              <li>Consistent terminology and naming</li>
-            </ul>
-            <li>Good DX is the foundation for good AX</li>
-          </ul>
-        </slide>
-        <slide id="ax-homework">
-          <title>Now There's AX Homework, Too</title>
-          <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
-          <ul>
-            <li>AI agents need information developers don't typically require:</li>
-            <ul>
-              <li>Everything that developers usually <q>just know</q></li>
-              <li>Treat every API like an external one for developers with no context</li>
-            </ul>
-            <li>OpenAPI Initiative (OAI) might add AX-specific fields</li>
-            <li>Until then, leverage description fields strategically</li>
-          </ul>
-        </slide>
-      </part>
-      <part id="scoring">
-        <title>API Scoring for AI Readiness</title>
-        <slide id="what-agents-need">
-          <title>What AI Systems Actually Need</title>
-            <p>Agents need APIs to be:</p>
-            <ul>
-                <li><strong>Discoverable:</strong> able to find and classify API</li>
-                <li><strong>Interpretable:</strong> intent must be explicit</li>
-                <li><strong>Composable:</strong> clear inputs / outputs</li>
-                <li><strong>Safe:</strong> authNZ &amp; safety signals machine readable</li>
-                <li><strong>Predictable:</strong> idempotency, stable responses</li>
-                <li><strong>Resilient:</strong> clear signals for success and failure</li>
-            </ul>
-        </slide>    
-        <slide id="what-agents-need">
-          <title>You Can't Improve What You Can't Measure</title>
-          <img src="API-AI-Measurements.png" class="fullsize-shadow" />
-          <p style="text-align: center;">AI-readiness starts with understanding your current API landscape</p>
-        </slide>        
-        <slide id="api-ai-readiness-framework">
-          <title>API AI-Readiness Framework</title>
-          <p style="text-align: center;">Evaluates APIs across six human &amp; AI-readiness dimensions</p>
-          <img src="api-ai-readiness-dimensions.png" href="https://github.com/jentic/api-ai-readiness-framework" class="fullsize-shadow" />
-          <p style="text-align: center;">See: <a href="https://github.com/jentic/api-ai-readiness-framework">https://github.com/jentic/api-ai-readiness-framework</a></p>
-        </slide>    
-        <slide id="ai-readiness-scorecard">
-          <title>AI-Readiness Scorecard</title>
-          <img src="api-ai-scorecard.png" class="fullsize-shadow" />
-          <p style="text-align: center;">See: <a href="https://jentic.com/scorecard">https://jentic.com/scorecard</a></p>
-        </slide>        
-        <slide id="foundational-compliance">
-          <title>Foundational Compliance</title>
-            <ul>
-                <li>Evaluates if an API is structurally valid, standards-compliance, and parseable by tooling.</li>
-            </ul>
-            <br/>
-            <table rules="all" cellspacing="0" cellpadding="5" width="80%" style="border: 2px solid #ABC9CB; margin-left: 3em;">
-                <thead>
-                    <tr>
-                        <th valign="bottom" style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Signal</th>
-                        <th valign="bottom" style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Description</th>
-                        <th valign="bottom" style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Normalisation</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="vevent">
-                        <td valign="top" style="font-weight: bold;"><b><code>Spec Validity</code></b></td>
-                        <td valign="top">Checks whether the API parses as a valid OpenAPI</td>
-                        <td valign="top">binary</td>
-                    </tr>
-                    <tr class="vevent">
-                        <td valign="top" style="font-weight: bold;"><b><code>Resolution Completeness</code></b></td>
-                        <td valign="top">What proportion of $ref references successfully resolve</td>
-                        <td valign="top">coverage</td>
-                    </tr>
-                    <tr class="vevent">
-                        <td valign="top" style="font-weight: bold;"><b><code>Lint Results</code></b></td>
-                        <td valign="top">Aggregated quality score from linter diagnostics, weighted by severity</td>
-                        <td valign="top">inverse weighted categorical</td>
-                    </tr>   
-                    <tr class="vevent">
-                        <td valign="top" style="font-weight: bold;"><b><code>Structural Integrity</code></b></td>
-                        <td valign="top">Measures whether the API's underlying data model is coherent enough for automated reasoning (semantic or logical defects that impact reliable interpretation)</td>
-                        <td valign="top">logarithmic dampening</td>
-                    </tr>                                   
-                </tbody>
-            </table>          
-        </slide>    
-        <slide id="foundational-compliance">
-          <title>Foundational Compliance - Structural Integrity</title>
-            <ul>
-                <li><code>structural_integrity = max(0, 1 - log10(1 + structural_issues) / log10(1 + structural_issue_threshold))</code></li>
-            </ul>
-          <img src="structural-integrity-signal.png" class="fullsize-shadow" />
-        </slide>                    
-        <slide id="ai-discoverability">
-          <title>AI Discoverability</title>
-            <ul>
-                <li>Evaluates how easily AI systems can locate, classify, and route to the API across registries, workflows, and knowledge bases.</li>
-            </ul>
-            <br/>
-            <table rules="all" cellspacing="0" cellpadding="5" width="80%" style="border: 2px solid #ABC9CB;  margin-left: 3em;">
-                <thead>
-                    <tr>
-                        <th valign="bottom" style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Signal</th>
-                        <th valign="bottom" style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Description</th>
-                        <th valign="bottom" style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Normalisation</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="vevent">
-                        <td valign="top" style="font-weight: bold;"><b><code>Descriptive Richness</code></b></td>
-                        <td valign="top">Evaluates the semantic value of textual descriptions within an API description</td>
-                        <td valign="top">coverage</td>
-                    </tr>
-                    <tr class="vevent">
-                        <td valign="top" style="font-weight: bold;"><b><code>Intent Phrasing</code></b></td>
-                        <td valign="top">Evaluates verb-object clarity of summaries and descriptions</td>
-                        <td valign="top">semantic similarity</td>
-                    </tr>
-                    <tr class="vevent">
-                        <td valign="top" style="font-weight: bold;"><b><code>Workflow Context</code></b></td>
-                        <td valign="top">Evaluates indicators to workflow specifics including Arazzo/MCP/workflow references. Also analyses existence of callbacks etc.</td>
-                        <td valign="top">coverage</td>
-                    </tr>   
-                    <tr class="vevent">
-                        <td valign="top" style="font-weight: bold;"><b><code>Registry Signals</code></b></td>
-                        <td valign="top">Detects metadata related to API gateways,  llms.txt, APIs.json, MCP registries, externalDocs links to Dev portals</td>
-                        <td valign="top">coverage</td>
-                    </tr>       
-                    <tr class="vevent">
-                        <td valign="top" style="font-weight: bold;"><b><code>Domain Tagging</code></b></td>
-                        <td valign="top">Detect domain/taxonomy classification through the use of tags</td>
-                        <td valign="top">coverage</td>
-                    </tr>                                                   
-                </tbody>
-            </table>          
-        </slide>        
-        <slide id="ai-discoverability-impact">
-          <title>API Discoverability - Do it for the Agents (and your teams)!</title>
-            <ul>
-                <li>Better Signal Scores = Better APIs = Better Searchability </li>
-                <li>Improved results in vanilla and specialized search offerings </li>
-                <li>Using expensive models doesn't fix bad API semantics </li>
-                <li>Save yourself the trouble and the $$$</li>
-            </ul>         
-        </slide>
-        <slide id="ai-readiness-deep-dive">
-          <title>API AI-Readiness Framework: Deep Dive</title>
-          <img src="YouMayHaveOpenAPI.jpg" href="https://www.youtube.com/watch?v=qzeR4wBcS4s" title="You May Have OpenAPI, But Is It AI-Ready - from APIDays Paris Dec 2025" class="fullsize"/>           
-          <p style="text-align: center;">See: <a href="https://www.youtube.com/watch?v=qzeR4wBcS4s">https://www.youtube.com/watch?v=qzeR4wBcS4s</a></p>
-        </slide>                                    
-      </part>
-	  <part id="wrap-up">
-	    <title>Wrap up</title>
+          <li>OpenAPI Initiative (OAI) might add AX-specific fields</li>
+          <li>Until then, leverage description fields strategically</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="scoring">
+      <title>API Scoring for AI Readiness</title>
+      <slide id="what-agents-need">
+        <title>What AI Systems Actually Need</title>
+        <p>Agents need APIs to be:</p>
+        <ul>
+          <li><strong>Discoverable:</strong> able to find and classify API</li>
+          <li><strong>Interpretable:</strong> intent must be explicit</li>
+          <li><strong>Composable:</strong> clear inputs / outputs</li>
+          <li><strong>Safe:</strong> authNZ &amp; safety signals machine readable</li>
+          <li><strong>Predictable:</strong> idempotency, stable responses</li>
+          <li><strong>Resilient:</strong> clear signals for success and failure</li>
+        </ul>
+      </slide>
+      <slide id="what-agents-need">
+        <title>You Can't Improve What You Can't Measure</title>
+        <img src="API-AI-Measurements.png" class="fullsize-shadow"/>
+        <p style="text-align: center;">AI-readiness starts with understanding your current API landscape</p>
+      </slide>
+      <slide id="api-ai-readiness-framework">
+        <title>API AI-Readiness Framework</title>
+        <p style="text-align: center;">Evaluates APIs across six human &amp; AI-readiness dimensions</p>
+        <img src="api-ai-readiness-dimensions.png" href="https://github.com/jentic/api-ai-readiness-framework" class="fullsize-shadow"/>
+        <p style="text-align: center;">See: <a href="https://github.com/jentic/api-ai-readiness-framework">https://github.com/jentic/api-ai-readiness-framework</a></p>
+      </slide>
+      <slide id="ai-readiness-scorecard">
+        <title>AI-Readiness Scorecard</title>
+        <img src="api-ai-scorecard.png" class="fullsize-shadow"/>
+        <p style="text-align: center;">See: <a href="https://jentic.com/scorecard">https://jentic.com/scorecard</a></p>
+      </slide>
+      <slide id="foundational-compliance">
+        <title>Foundational Compliance</title>
+        <ul>
+          <li>Evaluates if an API is structurally valid, standards-compliance, and parseable by tooling.</li>
+        </ul>
+        <br/>
+        <table rules="all" cellspacing="0" cellpadding="5" width="80%" style="border: 2px solid #ABC9CB; margin-left: 3em;">
+          <thead>
+            <tr>
+              <th valign="bottom" style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Signal</th>
+              <th valign="bottom" style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Description</th>
+              <th valign="bottom" style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Normalisation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="vevent">
+              <td valign="top" style="font-weight: bold;"><b><code>Spec Validity</code></b></td>
+              <td valign="top">Checks whether the API parses as a valid OpenAPI</td>
+              <td valign="top">binary</td>
+            </tr>
+            <tr class="vevent">
+              <td valign="top" style="font-weight: bold;"><b><code>Resolution Completeness</code></b></td>
+              <td valign="top">What proportion of $ref references successfully resolve</td>
+              <td valign="top">coverage</td>
+            </tr>
+            <tr class="vevent">
+              <td valign="top" style="font-weight: bold;"><b><code>Lint Results</code></b></td>
+              <td valign="top">Aggregated quality score from linter diagnostics, weighted by severity</td>
+              <td valign="top">inverse weighted categorical</td>
+            </tr>
+            <tr class="vevent">
+              <td valign="top" style="font-weight: bold;"><b><code>Structural Integrity</code></b></td>
+              <td valign="top">Measures whether the API's underlying data model is coherent enough for automated reasoning (semantic or logical defects that impact reliable interpretation)</td>
+              <td valign="top">logarithmic dampening</td>
+            </tr>
+          </tbody>
+        </table>
+      </slide>
+      <slide id="foundational-compliance">
+        <title>Foundational Compliance - Structural Integrity</title>
+        <ul>
+          <li><code>structural_integrity = max(0, 1 - log10(1 + structural_issues) / log10(1 + structural_issue_threshold))</code></li>
+        </ul>
+        <img src="structural-integrity-signal.png" class="fullsize-shadow"/>
+      </slide>
+      <slide id="ai-discoverability">
+        <title>AI Discoverability</title>
+        <ul>
+          <li>Evaluates how easily AI systems can locate, classify, and route to the API across registries, workflows, and knowledge bases.</li>
+        </ul>
+        <br/>
+        <table rules="all" cellspacing="0" cellpadding="5" width="80%" style="border: 2px solid #ABC9CB;  margin-left: 3em;">
+          <thead>
+            <tr>
+              <th valign="bottom" style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Signal</th>
+              <th valign="bottom" style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Description</th>
+              <th valign="bottom" style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Normalisation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="vevent">
+              <td valign="top" style="font-weight: bold;"><b><code>Descriptive Richness</code></b></td>
+              <td valign="top">Evaluates the semantic value of textual descriptions within an API description</td>
+              <td valign="top">coverage</td>
+            </tr>
+            <tr class="vevent">
+              <td valign="top" style="font-weight: bold;"><b><code>Intent Phrasing</code></b></td>
+              <td valign="top">Evaluates verb-object clarity of summaries and descriptions</td>
+              <td valign="top">semantic similarity</td>
+            </tr>
+            <tr class="vevent">
+              <td valign="top" style="font-weight: bold;"><b><code>Workflow Context</code></b></td>
+              <td valign="top">Evaluates indicators to workflow specifics including Arazzo/MCP/workflow references. Also analyses existence of callbacks etc.</td>
+              <td valign="top">coverage</td>
+            </tr>
+            <tr class="vevent">
+              <td valign="top" style="font-weight: bold;"><b><code>Registry Signals</code></b></td>
+              <td valign="top">Detects metadata related to API gateways, llms.txt, APIs.json, MCP registries, externalDocs links to Dev portals</td>
+              <td valign="top">coverage</td>
+            </tr>
+            <tr class="vevent">
+              <td valign="top" style="font-weight: bold;"><b><code>Domain Tagging</code></b></td>
+              <td valign="top">Detect domain/taxonomy classification through the use of tags</td>
+              <td valign="top">coverage</td>
+            </tr>
+          </tbody>
+        </table>
+      </slide>
+      <slide id="ai-discoverability-impact">
+        <title>API Discoverability - Do it for the Agents (and your teams)!</title>
+        <ul>
+          <li>Better Signal Scores = Better APIs = Better Searchability </li>
+          <li>Improved results in vanilla and specialized search offerings </li>
+          <li>Using expensive models doesn't fix bad API semantics </li>
+          <li>Save yourself the trouble and the $$$</li>
+        </ul>
+      </slide>
+      <slide id="ai-readiness-deep-dive">
+        <title>API AI-Readiness Framework: Deep Dive</title>
+        <img src="YouMayHaveOpenAPI.jpg" href="https://www.youtube.com/watch?v=qzeR4wBcS4s" title="You May Have OpenAPI, But Is It AI-Ready - from APIDays Paris Dec 2025" class="fullsize"/>
+        <p style="text-align: center;">See: <a href="https://www.youtube.com/watch?v=qzeR4wBcS4s">https://www.youtube.com/watch?v=qzeR4wBcS4s</a></p>
+      </slide>
+    </part>
+    <part id="wrap-up">
+      <title>Wrap up</title>
       <slide id="ai-ready-workflows">
         <title>AI Enablement: Search, Workflows, Security, Sandboxes</title>
         <img src="api-ai-evolution-5-sandbox.png" title="Workflows-beat-apis" class="fullsize-shadow"/>
-    	<p style="text-align: center;"><em>“Endpoints != Use-cases. Think about the workflows”</em> - Adam DuVander</p>
+        <p style="text-align: center;"><em>“Endpoints != Use-cases. Think about the workflows”</em> - Adam DuVander</p>
       </slide>
       <slide id="ai-readiness-thanks">
         <title>Thank You! Let's Connect!</title>
-        <img src="qr-code-frank-headshot.png" href="www.linkedin.com/in/frank-kilcommins/" style=" height : 65% ; float: left ; margin : 0% 4% 4% 4% ; " />
-        <img src="qr-code-erik-headshot.png" href="www.linkedin.com/in/erikwilde/"  style=" height : 65% ; margin : 0% 4% 4% 4% ; " />
+        <img src="qr-code-frank-headshot.png" href="www.linkedin.com/in/frank-kilcommins/" style=" height : 65% ; float: left ; margin : 0% 4% 4% 4% ; "/>
+        <img src="qr-code-erik-headshot.png" href="www.linkedin.com/in/erikwilde/" style=" height : 65% ; margin : 0% 4% 4% 4% ; "/>
       </slide>
-	  </part>
-
-	</presentation>
+    </part>
+  </presentation>
 </hotspot>
