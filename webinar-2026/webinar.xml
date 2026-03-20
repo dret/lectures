@@ -350,8 +350,8 @@
       </slide>
     </part>
   </presentation>
-  <presentation id="agentic-workflows">
-    <title short="Agentic Workflows">Agentic Workflows: Using Agent Skills, MCP, and API Workflows</title>
+  <presentation id="agentic-tools">
+    <title short="Agent Skills, MCP, and Workflows">Agent Skills, MCP, and Workflows: Tools for Enabling Agents</title>
     <author>Frank Kilcommins &amp; Erik Wilde</author>
     <affiliation><a href="https://jentic.com">Jentic</a></affiliation>
     <date short="2026-04-22">April 22, 2026</date>
@@ -379,6 +379,22 @@
           <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/><code>youtube.com/ErikWilde</code></a></li>
         </ul>
       </slide>
+    </part>
+    <part id="universal-agents">
+      <title>From targeted to universal agents</title>
+      <!-- Erik -->
+    </part>
+    <part id="agent-skills">
+      <title>Agent Skills</title>
+      <!-- Frank -->
+    </part>
+    <part id="mcp">
+      <title>Model Context Protocol (MCP)</title>
+      <!-- Erik -->
+    </part>
+    <part id="workflows">
+      <title>Declarative Workflows</title>
+      <!-- Frank -->
     </part>
     <part id="workflow-wrap-up">
       <title>Wrap up</title>
