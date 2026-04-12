@@ -4,25 +4,25 @@
 <?hotspot kilauea-path="hotspot/kilauea" ?>
 <?hotspot layout="jentic" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
-	<configuration>
-		<link subsections="yes" bookmarks="yes" versions="singapore.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
-		<paths img="img" listing="src"/>
-		<outline count-text=" [*]" count-depth="all"/>
-		<hyperlink extra=""/>
-		<extension file="html" link=""/>
-		<counter separator=":&#160; "/>
-		<kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
-			<plugins>
-				<touch/>
-			</plugins>
-		</kilauea>
-	</configuration>
-	<license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
-		<div class="license">
-			<p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
-			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
-		</div>
-	</license>
+  <configuration>
+    <link subsections="yes" bookmarks="yes" versions="singapore.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+    <paths img="img" listing="src"/>
+    <outline count-text=" [*]" count-depth="all"/>
+    <hyperlink extra=""/>
+    <extension file="html" link=""/>
+    <counter separator=":&#160; "/>
+    <kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+      <plugins>
+        <touch/>
+      </plugins>
+    </kilauea>
+  </configuration>
+  <license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+    <div class="license">
+      <p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+      <p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+    </div>
+  </license>
   <toc name="toc.html">
     <table rules="all" cellspacing="0" cellpadding="5" width="100%">
       <thead>
@@ -50,9 +50,9 @@
     </table>
   </toc>
   <title><a href="https://www.apidays.global/">API Days</a> <a href="https://www.apidays.global/paris/">Singapore</a> 2026</title>
-	<author>Erik Wilde</author>
+  <author>Erik Wilde</author>
   <affiliation>Head of Enterprise Strategy, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
-	<copyright>2026 Erik Wilde</copyright>
+  <copyright>2026 Erik Wilde</copyright>
   <date short="2026-04-13">April 13, 2026</date>
   <presentation id="ai-integration">
     <title short="AI Integration Foundations">AI Integration Foundations: It's Complicated</title>
@@ -75,8 +75,8 @@
       </slide>
       <slide id="ai-success">
         <title>AI <q>Success</q> Stories</title>
-        <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally, Chris Pease, Ramesh Raskar, and Pradyumna Chari, "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 30% ; float: right ; margin : 0% 4% 4% 4% ; " class="shadow" />
-        <img src="cover-state-of-ai-2025.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Alex Singla, Alexander Sukharevsky, Lareina Yee, and Michael Chui, "The state of AI in 2025: Agents, innovation, and transformation", McKinsey, November 2025' style=" height : 30% ; float : right ; clear : right ; margin : 0% 4% 4% 4% ; " class="shadow" />
+        <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally, Chris Pease, Ramesh Raskar, and Pradyumna Chari, "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 30% ; float: right ; margin : 0% 4% 4% 4% ; " class="shadow"/>
+        <img src="cover-state-of-ai-2025.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Alex Singla, Alexander Sukharevsky, Lareina Yee, and Michael Chui, "The state of AI in 2025: Agents, innovation, and transformation", McKinsey, November 2025' style=" height : 30% ; float : right ; clear : right ; margin : 0% 4% 4% 4% ; " class="shadow"/>
         <ul>
           <li>Necessary but not sufficient</li>
           <ol>
@@ -105,7 +105,7 @@
       <title>Step #1: More APIs</title>
       <slide id="api-ai-evolution-1-more">
         <title>More APIs &amp; Tools</title>
-        <img src="api-ai-evolution-1-more.png" class="fullsize-shadow" />
+        <img src="api-ai-evolution-1-more.png" class="fullsize-shadow"/>
       </slide>
       <slide id="mcp-intro">
         <title>Model Context Protocol (MCP)</title>
@@ -123,7 +123,7 @@
       </slide>
       <slide id="api-mcp-ai-direct-idea">
         <title>MCP all the APIs</title>
-        <img src="api-mcp-ai-direct.png" style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ; " />
+        <img src="api-mcp-ai-direct.png" style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ; "/>
         <ol>
           <li>Generate MCP from OpenAPI</li>
           <li>Publish/Install MCP servers for all APIs</li>
@@ -162,7 +162,7 @@
       <title>Step #2: Better Described APIs</title>
       <slide id="ai-integration-api-ai-evolution-2-description">
         <title>Better Described APIs</title>
-        <img src="api-ai-evolution-2-description.png" class="fullsize-shadow" />
+        <img src="api-ai-evolution-2-description.png" class="fullsize-shadow"/>
       </slide>
       <slide id="dx-homework">
         <title>Do Your Developer Experience (DX) Homework</title>
@@ -193,7 +193,7 @@
       </slide>
       <slide id="api-ai-readiness-score">
         <title>AI Readiness Score for APIs</title>
-        <img src="api-ai-readiness-score-twilio-alarms.png"  href="https://jentic.com/scorecard" class="fullsize-shadow" />
+        <img src="api-ai-readiness-score-twilio-alarms.png" href="https://jentic.com/scorecard" class="fullsize-shadow"/>
       </slide>
       <slide id="better-descriptions">
         <title>Better Descriptions ⇏ Scalable Tool Use</title>
@@ -209,7 +209,7 @@
       <title>Step #3: Dynamic API Discovery</title>
       <slide id="ai-integreation-api-ai-evolution-3-search">
         <title>Dynamic API Discovery</title>
-        <img src="api-ai-evolution-3-search.png" class="fullsize-shadow" />
+        <img src="api-ai-evolution-3-search.png" class="fullsize-shadow"/>
       </slide>
       <slide id="api-tool-mapping">
         <title>One API ≠ One Tool</title>
@@ -253,8 +253,8 @@
       <title>Conclusions</title>
       <slide id="ai-integration-ai-success">
         <title>AI <q>Success</q> Stories</title>
-        <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally, Chris Pease, Ramesh Raskar, and Pradyumna Chari, "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 30% ; float: right ; margin : 0% 4% 4% 4% ; " class="shadow" />
-        <img src="cover-state-of-ai-2025.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Alex Singla, Alexander Sukharevsky, Lareina Yee, and Michael Chui, "The state of AI in 2025: Agents, innovation, and transformation", McKinsey, November 2025' style=" height : 30% ; float : right ; clear : right ; margin : 0% 4% 4% 4% ; " class="shadow" />
+        <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally, Chris Pease, Ramesh Raskar, and Pradyumna Chari, "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 30% ; float: right ; margin : 0% 4% 4% 4% ; " class="shadow"/>
+        <img src="cover-state-of-ai-2025.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Alex Singla, Alexander Sukharevsky, Lareina Yee, and Michael Chui, "The state of AI in 2025: Agents, innovation, and transformation", McKinsey, November 2025' style=" height : 30% ; float : right ; clear : right ; margin : 0% 4% 4% 4% ; " class="shadow"/>
         <ul>
           <li><link href="api-availability"/></li>
           <li><link href="api-description"/></li>
@@ -279,7 +279,7 @@
       <title>Step #4: Workflow-Based APIs</title>
       <slide id="workflows-api-ai-evolution-4-workflow">
         <title>Workflow-Based APIs</title>
-        <img src="api-ai-evolution-4-workflow.png" class="fullsize-shadow" />
+        <img src="api-ai-evolution-4-workflow.png" class="fullsize-shadow"/>
       </slide>
       <slide id="workflows-matter">
         <title>Why Workflows Matter</title>
@@ -323,26 +323,26 @@
       </slide>
       <slide id="api-mcp-ai-direct-idea">
         <title>MCP all the APIs</title>
-        <img src="api-mcp-ai-direct.png" class="fullsize-shadow" />
+        <img src="api-mcp-ai-direct.png" class="fullsize-shadow"/>
       </slide>
       <slide id="api-mcp-ai-custom-mcp">
         <title>Build Better MCP Tools</title>
-        <img src="api-mcp-ai-custom-mcp.png" class="fullsize-shadow" />
+        <img src="api-mcp-ai-custom-mcp.png" class="fullsize-shadow"/>
       </slide>
       <slide id="api-mcp-ai-workflow-mcp">
         <title>Automating MCP Tooling</title>
-        <img src="api-mcp-ai-workflow-mcp.png" class="fullsize-shadow" />
+        <img src="api-mcp-ai-workflow-mcp.png" class="fullsize-shadow"/>
       </slide>
       <slide id="api-mcp-ai-workflow-api">
         <title>Automating API Tooling</title>
-        <img src="api-mcp-ai-workflow-api.png" class="fullsize-shadow" />
+        <img src="api-mcp-ai-workflow-api.png" class="fullsize-shadow"/>
       </slide>
     </part>
     <part id="api-sandbox">
       <title>Step #5: Safe Experimentation with Sandboxes</title>
       <slide id="api-ai-evolution-sandboxes">
         <title>Managing Exposure to Agents</title>
-        <img src="api-ai-evolution-5-sandboxes.png" class="fullsize-shadow" />
+        <img src="api-ai-evolution-5-sandboxes.png" class="fullsize-shadow"/>
       </slide>
       <slide id="secure-experimentation">
         <title>Sandboxes for Secure Experimentation</title>
@@ -370,8 +370,8 @@
       <title>Conclusions</title>
       <slide id="workflows-ai-success">
         <title>AI <q>Success</q> Stories</title>
-        <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally, Chris Pease, Ramesh Raskar, and Pradyumna Chari, "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 30% ; float: right ; margin : 0% 4% 4% 4% ; " class="shadow" />
-        <img src="cover-state-of-ai-2025.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Alex Singla, Alexander Sukharevsky, Lareina Yee, and Michael Chui, "The state of AI in 2025: Agents, innovation, and transformation", McKinsey, November 2025' style=" height : 30% ; float : right ; clear : right ; margin : 0% 4% 4% 4% ; " class="shadow" />
+        <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally, Chris Pease, Ramesh Raskar, and Pradyumna Chari, "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 30% ; float: right ; margin : 0% 4% 4% 4% ; " class="shadow"/>
+        <img src="cover-state-of-ai-2025.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Alex Singla, Alexander Sukharevsky, Lareina Yee, and Michael Chui, "The state of AI in 2025: Agents, innovation, and transformation", McKinsey, November 2025' style=" height : 30% ; float : right ; clear : right ; margin : 0% 4% 4% 4% ; " class="shadow"/>
         <ul>
           <li><link href="api-availability"/></li>
           <li><link href="api-description"/></li>
@@ -389,12 +389,13 @@
         </ul>
       </slide>
     </part>
-  </presentation>  <presentation id="api-standards-patterns">
+  </presentation>
+  <presentation id="api-standards-patterns">
     <title short="API Standards Patterns">Patterns for API Standards in the Age of AI</title>
     <date short="2026-04-15">April 15, 2026</date>
     <slide id="openapi-track-mix">
       <title>OpenAPI Track/Summit/Conference</title>
-      <img src="openapi-track-mix.jpg" class="fullsize-shadow" />
+      <img src="openapi-track-mix.jpg" class="fullsize-shadow"/>
     </slide>
     <slide id="dret">
       <title>Erik Wilde</title>
@@ -430,11 +431,11 @@
       </slide>
       <slide id="membership">
         <title>OAI Membership</title>
-        <img src="oai-members.png" href="https://www.openapis.org/membershipmembers" class="fullsize-shadow" />
+        <img src="oai-members.png" href="https://www.openapis.org/membershipmembers" class="fullsize-shadow"/>
       </slide>
       <slide id="sig">
         <title>OAI Special Interest Groups (SIG)</title>
-        <img src="oai-sig-overview.png" href="https://github.com/OAI/community/blob/main/SPECIAL_INTEREST_GROUPS.md" class="fullsize" />
+        <img src="oai-sig-overview.png" href="https://github.com/OAI/community/blob/main/SPECIAL_INTEREST_GROUPS.md" class="fullsize"/>
       </slide>
     </part>
     <part id="apis-and-ai">
@@ -449,15 +450,15 @@
       </slide>
       <slide id="ai-success">
         <title>AI Success Stories 2025</title>
-        <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally, Chris Pease, Ramesh Raskar, and Pradyumna Chari, "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 70% ; float: left ; margin : 0% 4% 4% 4% ; " class="shadow" />
-        <img src="cover-state-of-ai-2025.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Alex Singla, Alexander Sukharevsky, Lareina Yee, and Michael Chui, "The state of AI in 2025: Agents, innovation, and transformation", McKinsey, November 2025' style=" height : 70% ; margin : 0% 4% 4% 4% ; " class="shadow" />
+        <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally, Chris Pease, Ramesh Raskar, and Pradyumna Chari, "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 70% ; float: left ; margin : 0% 4% 4% 4% ; " class="shadow"/>
+        <img src="cover-state-of-ai-2025.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Alex Singla, Alexander Sukharevsky, Lareina Yee, and Michael Chui, "The state of AI in 2025: Agents, innovation, and transformation", McKinsey, November 2025' style=" height : 70% ; margin : 0% 4% 4% 4% ; " class="shadow"/>
       </slide>
     </part>
     <part id="apis-and-ai-path">
       <title>APIs and AI: A Possible Path</title>
       <slide id="api-ai-evolution-1-more">
         <title>More Tools</title>
-        <img src="api-ai-evolution-1-more.png" class="fullsize-shadow" />
+        <img src="api-ai-evolution-1-more.png" class="fullsize-shadow"/>
       </slide>
       <slide id="mcp-intro">
         <title>Model Context Protocol (MCP)</title>
@@ -475,7 +476,7 @@
       </slide>
       <slide id="anthropic">
         <title>Anthropic Advanced Tool Use</title>
-        <img src="anthropic-advanced-tool-use.png" href="https://www.anthropic.com/engineering/advanced-tool-use" source='"Introducing advanced tool use on the Claude Developer Platform", November 24, 2025' class="fullsize-shadow" />
+        <img src="anthropic-advanced-tool-use.png" href="https://www.anthropic.com/engineering/advanced-tool-use" source='"Introducing advanced tool use on the Claude Developer Platform", November 24, 2025' class="fullsize-shadow"/>
       </slide>
       <slide id="mcp-problems">
         <title>MCP Solves Everything!?</title>
@@ -497,7 +498,7 @@
       </slide>
       <slide id="api-ai-evolution-2-description">
         <title>Better Described Tools</title>
-        <img src="api-ai-evolution-2-description.png" class="fullsize-shadow" />
+        <img src="api-ai-evolution-2-description.png" class="fullsize-shadow"/>
       </slide>
       <slide id="better-descriptions">
         <title>Better Descriptions ⇏ Scalable Tool Use</title>
@@ -510,7 +511,7 @@
       </slide>
       <slide id="api-ai-evolution-3-search">
         <title>Dynamic Tool Discovery</title>
-        <img src="api-ai-evolution-3-search.png" class="fullsize-shadow" />
+        <img src="api-ai-evolution-3-search.png" class="fullsize-shadow"/>
       </slide>
       <slide id="dynamic-discovery">
         <title>Dynamic Discovery ⇏ Ideal Tool Landscape</title>
@@ -523,7 +524,7 @@
       </slide>
       <slide id="api-ai-evolution-4-workflow">
         <title>Workflow-Based Tools</title>
-        <img src="api-ai-evolution-4-workflow.png" class="fullsize-shadow" />
+        <img src="api-ai-evolution-4-workflow.png" class="fullsize-shadow"/>
       </slide>
     </part>
     <slide id="thanks-openapi">
