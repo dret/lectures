@@ -29,7 +29,9 @@
         <tr>
           <th valign="bottom">Date</th>
           <th valign="bottom">Title</th>
+<!--
           <th valign="bottom">Author</th>
+-->
           <th valign="bottom">Slides</th>
         </tr>
       </thead>
@@ -38,7 +40,9 @@
           <tr class="vevent">
             <td valign="top"><b><span class="title"><hotspot:date/></span></b></td>
             <td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
+<!--
             <td valign="top" align="center"><b><span class="title"><hotspot:author/></span></b></td>
+-->
             <td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
           </tr>
         </hotspot:for-each-presentation>
