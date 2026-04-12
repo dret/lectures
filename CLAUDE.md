@@ -24,7 +24,7 @@ in the repo. The `Claude/` directory holds only the two reference files
 | [`Claude/README.md`](Claude/README.md) | Full technical orientation: repo layout, Hotspot build system, XML format, layouts, single vs. multi-presentation dirs |
 | [`Claude/presentations.md`](Claude/presentations.md) | Chronological list of all ~215 presentations with relative links and online URLs |
 
-Read `Claude/README.md` first if you are picking up this repo cold. Always re-read all persentations because there likely have been updates. Check for changes and report them. Also make basic consistency checks, such as flagging orphan images and listing files that are nor referenced by presentations.
+Read `Claude/README.md` first if you are picking up this repo cold. Always re-read all presentations because there likely have been updates. Check for changes and report them. Also make basic consistency checks, such as flagging orphan images and listing files that are nor referenced by presentations. Also, check the other rules down below and flag any observed inconsistencies.
 
 ---
 
@@ -45,6 +45,12 @@ Read `Claude/README.md` first if you are picking up this repo cold. Always re-re
   corrupt the entire file from Git's perspective. Always use a Python script via
   Bash that reads and writes the file in binary mode (`'rb'`/`'wb'`) to preserve
   line endings exactly.
+- Whenever you think you have observed new patterns and rules, ask about them.  
+  If they are real and useful, they should become part of this set of rules and should be added down below.
+
+---
+
+## Rules for Presentation Management  
 
 ### Image and Listing Management
 
