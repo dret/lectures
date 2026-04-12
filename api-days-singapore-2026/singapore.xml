@@ -56,6 +56,10 @@
   <date short="2026-04-15">April 15, 2026</date>
   <presentation id="api-standards-patterns">
     <title short="API Standards Patterns">Patterns for API Standards in the Age of AI</title>
+    <slide id="openapi-track-mix">
+      <title>OpenAPI Track/Summit/Conference</title>
+      <img src="openapi-track-mix.jpg" class="fullsize-shadow" />
+    </slide>
     <slide id="dret">
       <title>Erik Wilde</title>
       <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
@@ -67,6 +71,125 @@
         <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
       </ul>
     </slide>
+    <part id="oai">
+      <title>The Open API Initiative (OAI)</title>
+      <slide id="history">
+        <title>A Brief History of OAI &amp; OpenAPI</title>
+        <img src="openapi-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Started out in 2011 as <em href="https://en.wikipedia.org/wiki/Swagger_(software)">Swagger</em></li>
+          <li><em>Swagger</em> was renamed to <em>OpenAPI</em> at the beginning of 2016</li>
+          <ul>
+            <li>Donated to the <em href="https://www.openapis.org/">OpenAPI Initiative (OAI)</em> (part of the <em href="https://www.linuxfoundation.org/">Linux Foundation</em>)</li>
+            <li><em href="https://swagger.io/tools/open-source/">Swagger</em> now refers to tools offered by <em href="https://smartbear.com/">SmartBear</em></li>
+          </ul>
+          <li><em>OpenAPI</em> has been the official name since 2016</li>
+          <ul>
+            <li><a href="https://spec.openapis.org/oas/v2.0.html">OpenAPI 2.0</a> was the name after the rename (it's the same as <em>Swagger 2.0</em>)</li>
+            <li><a href="https://spec.openapis.org/oas/v3.0.4.html">OpenAPI 3.0</a> was released in July 2017</li>
+            <li><a href="https://spec.openapis.org/oas/v3.1.1.html">OpenAPI 3.1</a> was released in February 2021</li>
+            <li><a href="https://spec.openapis.org/oas/v3.2.0.html">OpenAPI 3.2</a> was released in September 2025</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="membership">
+        <title>OAI Membership</title>
+        <img src="oai-members.png" href="https://www.openapis.org/membershipmembers" class="fullsize-shadow" />
+      </slide>
+      <slide id="sig">
+        <title>OAI Special Interest Groups (SIG)</title>
+        <img src="oai-sig-overview.png" href="https://github.com/OAI/community/blob/main/SPECIAL_INTEREST_GROUPS.md" class="fullsize" />
+      </slide>
+    </part>
+    <part id="apis-and-ai">
+      <title>APIs and AI: It Just Works?</title>
+      <slide id="ai-and-apis-spectrum">
+        <title>AI and APIs Spectrum</title>
+        <img src="ai-and-apis.png" class="fullsize"/>
+      </slide>
+      <slide id="api-days-new-york">
+        <title>How does AI affect APIs?</title>
+        <img src="apis-and-ai-new-york.jpg" href="https://www.youtube.com/watch?v=6ekEQR45IIo" title="How does AI affect APIs? Expert Opinions from API Days New York 2025" class="fullsize"/>
+      </slide>
+      <slide id="ai-success">
+        <title>AI Success Stories 2025</title>
+        <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally, Chris Pease, Ramesh Raskar, and Pradyumna Chari, "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 70% ; float: left ; margin : 0% 4% 4% 4% ; " class="shadow" />
+        <img src="cover-state-of-ai-2025.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Alex Singla, Alexander Sukharevsky, Lareina Yee, and Michael Chui, "The state of AI in 2025: Agents, innovation, and transformation", McKinsey, November 2025' style=" height : 70% ; margin : 0% 4% 4% 4% ; " class="shadow" />
+      </slide>
+    </part>
+    <part id="apis-and-ai-path">
+      <title>APIs and AI: A Possible Path</title>
+      <slide id="api-ai-evolution-1-more">
+        <title>More Tools</title>
+        <img src="api-ai-evolution-1-more.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="mcp-intro">
+        <title>Model Context Protocol (MCP)</title>
+        <img src="mcp-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>MCP is the current <q>standard protocol</q> for LLM consumers</li>
+          <li>The initial focus was on <em>additional and extended context</em></li>
+          <ul>
+            <li><em>Additional context</em> by providing access to the environment</li>
+            <li><em>Extended context</em> by allowing MCP servers to externally manage context</li>
+          </ul>
+          <li>Many mapping tools generate MCP servers from OpenAPI descriptions</li>
+          <li><em>What</em> to expose and <em>how to design it</em> is out of scope</li>
+        </ul>
+      </slide>
+      <slide id="anthropic">
+        <title>Anthropic Advanced Tool Use</title>
+        <img src="anthropic-advanced-tool-use.png" href="https://www.anthropic.com/engineering/advanced-tool-use" source='"Introducing advanced tool use on the Claude Developer Platform", November 24, 2025' class="fullsize-shadow" />
+      </slide>
+      <slide id="mcp-problems">
+        <title>MCP Solves Everything!?</title>
+        <ul>
+          <li>Problem #1: Complex APIs will overload the MCP client's context</li>
+          <li>Problem #2: Larger API landscapes will overload the MCP client's context</li>
+          <li>Problem #3: Poor API design translates to poor MCP results</li>
+          <li>Problem #4: Bad AX results in unsatisfactory AI results</li>
+        </ul>
+      </slide>
+      <slide id="more-tools">
+        <title>More Tools ⇏ Better Tool Landscape</title>
+        <ul>
+          <li>LLMs can now access many tools</li>
+          <li>But they cannot understand many of them well</li>
+          <li>Poor descriptions → poor tool selection → poor results</li>
+          <li>Next: <link href="api-ai-evolution-2-description"/></li>
+        </ul>
+      </slide>
+      <slide id="api-ai-evolution-2-description">
+        <title>Better Described Tools</title>
+        <img src="api-ai-evolution-2-description.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="better-descriptions">
+        <title>Better Descriptions ⇏ Scalable Tool Use</title>
+        <ul>
+          <li>Better AX reduces confusion and misuse</li>
+          <li>But even well-described tools still overload agent context</li>
+          <li>The problem shifts from <em>understanding</em> tools to <em>finding</em> the right ones</li>
+          <li>Next: <link href="api-ai-evolution-3-search"/></li>
+        </ul>
+      </slide>
+      <slide id="api-ai-evolution-3-search">
+        <title>Dynamic Tool Discovery</title>
+        <img src="api-ai-evolution-3-search.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="dynamic-discovery">
+        <title>Dynamic Discovery ⇏ Ideal Tool Landscape</title>
+        <ul>
+          <li>Discovery helps reduce tool overload</li>
+          <li>Agents still have to invent workflows from scratch</li>
+          <li>We need higher-level, business-aligned tools</li>
+          <li>Next: <link href="api-ai-evolution-4-workflow"/></li>
+        </ul>
+      </slide>
+      <slide id="api-ai-evolution-4-workflow">
+        <title>Workflow-Based Tools</title>
+        <img src="api-ai-evolution-4-workflow.png" class="fullsize-shadow" />
+      </slide>
+    </part>
     <slide id="thanks-openapi">
       <title>Thank You!</title>
       <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
