@@ -33,6 +33,7 @@ Read `Claude/README.md` first if you are picking up this repo cold. Always re-re
 - Each event directory has a `README.md` with the talk title and online URL —
   fastest way to identify a presentation without reading the XML.
 - The XML source file is the source of truth for slide content.
+- The README.md should mirror the information in the slide content XML.
 - `modules/modules.xml` is very large (300+ KB) — read in chunks or grep for
   specific content rather than loading it whole. It is rather old by now.
 - When Erik says "the hotspot layout" he means the `<?hotspot layout="...">` PI
@@ -46,7 +47,8 @@ Read `Claude/README.md` first if you are picking up this repo cold. Always re-re
   Bash that reads and writes the file in binary mode (`'rb'`/`'wb'`) to preserve
   line endings exactly.
 - Whenever you think you have observed new patterns and rules, ask about them.  
-  If they are real and useful, they should become part of this set of rules and should be added down below.
+  If they are real and useful, they should become part of this set of rules and 
+  should be added down below.
 
 ---
 
