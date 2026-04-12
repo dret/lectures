@@ -356,6 +356,7 @@
     <affiliation><a href="https://jentic.com">Jentic</a></affiliation>
     <date short="2026-04-22">April 22, 2026</date>
     <copyright>2026 Frank Kilcommins &amp; Erik Wilde</copyright>
+    <toc class="resources"><a href="xxx" title="Model Context Protocol (MCP) Specification">MCP Spec</a>&#160;· <a href="https://agentskills.io/" title="Agent Skills Specification">Agent Skills Spec</a>&#160;· <a href="https://www.openapis.org/arazzo-specification" title="Arazzo Specification">Arazzo Spec</a></toc>
     <part id="intro-workflows">
       <title>Introduction</title>
       <slide id="frank-openclaw">
@@ -384,13 +385,13 @@
       <title>From Targeted to Universal Agents</title>
       <!-- Erik -->
     </part>
-    <part id="agent-skills">
-      <title>Agent Skills</title>
-      <!-- Frank -->
-    </part>
     <part id="mcp">
       <title>Model Context Protocol (MCP)</title>
       <!-- Erik -->
+    </part>
+    <part id="agent-skills">
+      <title>Agent Skills</title>
+      <!-- Frank -->
     </part>
     <part id="workflows">
       <title>Declarative Workflows</title>
