@@ -351,59 +351,285 @@
     </part>
   </presentation>
   <presentation id="agentic-tools">
-    <title short="MCP, Agent Skills, and Workflows">MCP, Agent Skills, and Workflows: Tools for Enabling Agents</title>
-    <author>Frank Kilcommins &amp; Erik Wilde</author>
-    <affiliation><a href="https://jentic.com">Jentic</a></affiliation>
-    <date short="2026-04-22">April 22, 2026</date>
-    <copyright>2026 Frank Kilcommins &amp; Erik Wilde</copyright>
-    <toc class="resources"><a href="https://modelcontextprotocol.io/" title="Model Context Protocol (MCP) Specification">MCP Spec</a>&#160;· <a href="https://agentskills.io/" title="Agent Skills Specification">Agent Skills Spec</a>&#160;· <a href="https://www.openapis.org/arazzo-specification" title="Arazzo Specification">Arazzo Spec</a></toc>
-    <part id="intro-workflows">
-      <title>Introduction</title>
-      <slide id="frank-openclaw">
-        <title>Frank Kilcommins</title>
-        <img src="qr-code-frank-jentic.png" href="www.linkedin.com/in/frank-kilcommins/" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
-        <ul>
-          <li>Head of Enterprise Architecture at <a href="https://jentic.com/">Jentic</a></li>
-          <li>Governance Board Member at the <a href="https://www.openapis.org/">OpenAPI Initiative</a></li>
-          <li>Co-Maintainer of the <a href="https://spec.openapis.org/arazzo/latest.html">Arazzo Specification</a></li>
-          <li><a href="https://www.linkedin.com/in/frank-kilcommins"><img src="linkedin-logo.png" style=" height : 1em ; "/><code>linkedin.com/in/frank-kilcommins</code></a></li>
-          <li><a href="https://bsky.app/profile/fkilcommins.bsky.social"><img src="bluesky-logo.png" style=" height : 1em ; "/><code>@fkilcommins.bsky.social</code></a></li>
-        </ul>
-      </slide>
-      <slide id="erik-openclaw">
-        <title>Erik Wilde</title>
-        <img src="qr-code-erik-jentic.png" href="https://www.linkedin.com/in/erikwilde/" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
-        <ul>
-          <li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
-          <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
-          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/><code>linkedin.com/in/erikwilde</code></a></li>
-          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/><code>youtube.com/ErikWilde</code></a></li>
-        </ul>
-      </slide>
-    </part>
-    <part id="universal-agents">
-      <title>From Targeted to Universal Agents</title>
-      <!-- Erik -->
-    </part>
-    <part id="mcp">
-      <title>Model Context Protocol (MCP)</title>
-      <!-- Erik -->
-    </part>
-    <part id="agent-skills">
-      <title>Agent Skills</title>
-      <!-- Frank -->
-    </part>
-    <part id="workflows">
-      <title>Declarative Workflows</title>
-      <!-- Frank -->
-    </part>
-    <part id="workflow-wrap-up">
-      <title>Wrap up</title>
-      <slide id="ai-readiness-thanks">
-        <title>Thank You! Let's Connect!</title>
-        <img src="qr-code-frank-headshot.png" href="www.linkedin.com/in/frank-kilcommins/" style=" height : 65% ; float: left ; margin : 0% 4% 4% 4% ; "/>
-        <img src="qr-code-erik-headshot.png" href="www.linkedin.com/in/erikwilde/" style=" height : 65% ; margin : 0% 4% 4% 4% ; "/>
-      </slide>
-    </part>
-  </presentation>
+ <title short="Agent Skills, MCP, and Workflows">Agent Skills, MCP, and Workflows: Tools for Enabling Agents</title>
+ <author>Frank Kilcommins &amp; Erik Wilde</author>
+ <affiliation><a href="https://jentic.com">Jentic</a></affiliation>
+ <date short="2026-04-22">April 22, 2026</date>
+ <copyright>2026 Frank Kilcommins &amp; Erik Wilde</copyright>
+ <toc class="resources"><a href="https://modelcontextprotocol.io/" title="Model Context Protocol (MCP) Specification">MCP Spec</a>&#160;&#183; <a href="https://agentskills.io/" title="Agent Skills Specification">Agent Skills Spec</a>&#160;&#183; <a href="https://spec.openapis.org/arazzo/latest.html" title="Arazzo Specification">Arazzo Spec</a>&#160;&#183; <a href="https://jentic.com/scorecard">Jentic Scorecard</a></toc>
+ <part id="intro-agentic">
+  <title>Introduction</title>
+  <slide id="frank-agentic">
+   <title>Frank Kilcommins</title>
+   <img src="qr-code-frank-jentic.png" href="www.linkedin.com/in/frank-kilcommins/" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
+   <ul>
+    <li>Head of Enterprise Architecture at <a href="https://jentic.com/">Jentic</a></li>
+    <li>Governance Board Member at the <a href="https://www.openapis.org/">OpenAPI Initiative</a></li>
+    <li>Co-Maintainer of the <a href="https://spec.openapis.org/arazzo/latest.html">Arazzo Specification</a></li>
+    <li><a href="https://www.linkedin.com/in/frank-kilcommins"><img src="linkedin-logo.png" style=" height : 1em ; "/><code>linkedin.com/in/frank-kilcommins</code></a></li>
+    <li><a href="https://bsky.app/profile/fkilcommins.bsky.social"><img src="bluesky-logo.png" style=" height : 1em ; "/><code>@fkilcommins.bsky.social</code></a></li>
+   </ul>
+  </slide>
+  <slide id="erik-agentic">
+   <title>Erik Wilde</title>
+   <img src="qr-code-erik-jentic.png" href="https://www.linkedin.com/in/erikwilde/" style=" float: right ; width : 25% ; margin : 0% 4% 4% 4% ; "/>
+   <ul>
+    <li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
+    <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+    <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/><code>linkedin.com/in/erikwilde</code></a></li>
+    <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/><code>youtube.com/ErikWilde</code></a></li>
+   </ul>
+  </slide>
+ </part>
+ <part id="universal-agents">
+  <title>From Targeted to Universal Agents</title>
+  <slide id="specific-to-universal">
+   <title>The Age of Universal Agents</title>
+   <ul>
+    <li>Agents are evolving from single-purpose tools to broad-capability systems</li>
+    <li>Each new capability adds tools &#8212; and decisions &#8212; to the agent&#39;s scope</li>
+    <li><em>More capability &#8594; more decisions &#8594; more room for error</em></li>
+    <li>The question is not whether agents can do more. It&#39;s how to make them do it reliably.</li>
+   </ul>
+  </slide>
+  <slide id="tool-problem">
+   <title>The Tool Problem</title>
+   <ul>
+    <li>Tool overload: too many options degrade agent decision quality</li>
+    <li>Tool selection is itself a reasoning task &#8212; and it fails at scale</li>
+    <li>Three patterns address this directly: <em>Agent Skills, MCP, and Arazzo Workflows</em></li>
+    <li>We will use a single scenario throughout: <q>Your API has just landed in your repo. How do you ensure it is AI-ready?</q></li>
+   </ul>
+  </slide>
+  <slide id="reproducibility-ladder">
+   <title>The Reproducibility Ladder</title>
+   <p>Four approaches to agent capability &#8212; increasing determinism at each rung:</p>
+   <table rules="all" cellspacing="0" cellpadding="5" width="90%" style="border: 2px solid #ABC9CB; margin-left: 1em;">
+    <thead>
+     <tr>
+      <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Rung</th>
+      <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Execution</th>
+      <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">LLM Involvement</th>
+      <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Reproducibility</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr><td><strong>Prompting</strong></td><td>LLM (unguided)</td><td>Full</td><td>Low</td></tr>
+     <tr><td><strong>Agent Skills</strong></td><td>LLM (guided)</td><td>Within constraints</td><td>Medium</td></tr>
+     <tr><td><strong>MCP Tools</strong></td><td>Tool engine</td><td>Discovery + Invocation</td><td>Medium-High</td></tr>
+     <tr><td><strong>Arazzo Workflows</strong></td><td>Workflow engine</td><td>Trigger only</td><td>High</td></tr>
+    </tbody>
+   </table>
+   <p><em>Scenario thread: &#8220;Your OpenAPI description just landed in your repo. You need it scored for AI-readiness and improved. Watch what happens at each rung.&#8221;</em></p>
+   <p style="font-size: 0.85em; color: #555;">* LLMs can also <em>author and register</em> Arazzo workflows &#8212; converting observed processes into reusable, deterministic assets stored for future agent use.</p>
+  </slide>
+ </part>
+ <part id="agent-skills">
+  <title>Agent Skills</title>
+  <slide id="what-is-a-skill">
+   <title>What Is an Agent Skill?</title>
+   <ul>
+    <li><em>Structured, reusable context</em> for a specific subtask</li>
+    <li>Lives in the LLM&#39;s context window &#8212; shapes how it thinks and acts</li>
+    <li>Explicit scope: does one thing, with guardrails, in a defined way</li>
+    <li>Versioned artifact &#8212; reviewed, shared, and reused across agents</li>
+   </ul>
+   <p><strong>At this rung:</strong> We load the <code>jentic-openapi-audit</code> skill. The LLM knows exactly what tool to call, what format to produce, what not to do. Consistent output. Reusable across teams.</p>
+  </slide>
+  <slide id="skill-anatomy">
+   <title>Anatomy of a Skill</title>
+   <p>A <code>SKILL.md</code> defines: <em>task</em> &#183; <em>constraints</em> &#183; <em>steps</em> &#183; <em>references to external scripts or tools</em></p>
+   <ul>
+    <li><strong>Task:</strong> what the skill is for &#8212; clear, bounded scope</li>
+    <li><strong>Constraints:</strong> what the LLM must and must not do</li>
+    <li><strong>Steps:</strong> how to approach the task, in order</li>
+    <li><strong>References:</strong> external scripts, tools, or MCP capabilities to invoke</li>
+   </ul>
+   <p>Versioned, shareable, and loadable by any compatible agent. Think of it as a reusable prompt with structure and guardrails baked in.</p>
+   <p><q>A skill tells the LLM <em>how to think</em> about a task. A skill can discover and trigger a workflow &#8212; once it does, the LLM is out of the execution loop.</q></p>
+  </slide>
+  <slide id="skills-when-to-use">
+   <title>Agent Skills: When to Use</title>
+   <ul>
+    <li><em>Use when:</em> recurring subtask needing LLM judgment &#183; consistent output required &#183; reusability matters</li>
+    <li><em>Not for:</em> multi-step processes with a defined sequence &#183; capabilities needed by multiple systems</li>
+    <li><em>Reproducibility:</em> Medium &#8212; guided, not guaranteed</li>
+    <li>A skill can trigger a workflow. Once triggered, the LLM is out of the execution loop.</li>
+   </ul>
+  </slide>
+ </part>
+ <part id="mcp">
+  <title>Model Context Protocol (MCP)</title>
+  <slide id="what-is-mcp">
+   <title>What Is MCP?</title>
+   <ul>
+    <li>Standardised interface for exposing discrete tools to agents</li>
+    <li>Execution moves outside the LLM&#39;s reasoning space</li>
+    <li>LLM decides <em>when</em> to call; tool executes deterministically</li>
+    <li>Local or remote; versioned independently of the agent</li>
+   </ul>
+   <p><strong>At this rung:</strong> The scoring engine is an MCP tool. Any agent can call it. The LLM does not run the scoring logic &#8212; it just invokes the tool.</p>
+  </slide>
+  <slide id="mcp-tool-organisation">
+   <title>MCP: Tool Access and Organisation</title>
+   <ul>
+    <li><em>Before:</em> 50+ tools in the LLM&#39;s context window &#8212; open buffet, high cognitive load</li>
+    <li><em>After:</em> MCP server as a capability router &#8212; structured access, reduced noise</li>
+    <li>Multiple agents, one server = reuse without coupling</li>
+    <li>Access control: who can call what, from where</li>
+   </ul>
+  </slide>
+  <slide id="mcp-when-to-use">
+   <title>MCP: When to Use</title>
+   <ul>
+    <li><em>Use when:</em> discrete callable capability &#183; multiple callers &#183; deterministic execution</li>
+    <li><em>Not for:</em> multi-step process orchestration &#183; LLM reasoning tasks</li>
+    <li><em>Reproducibility:</em> Medium-High</li>
+   </ul>
+   <p><strong>The limitation:</strong> MCP works well for single-tool invocations. But each capability needs a server &#8212; built, deployed, and maintained. As known, repeatable processes grow, so does the catalog. You end up hardcoding sequences and maintaining them indefinitely.</p>
+   <p><em>What if you could describe the sequence declaratively instead &#8212; and let the execution engine handle it?</em></p>
+  </slide>
+ </part>
+ <part id="workflows">
+  <title>Declarative Workflows</title>
+  <slide id="problem-workflows-solve">
+   <title>The Problem Workflows Solve</title>
+   <p><strong>Problem 1 &#8212; Non-determinism:</strong></p>
+   <ul>
+    <li>Same prompt, three runs, three outcomes. Token waste. No audit trail.</li>
+    <li>At one agent, a bug. At a hundred, a governance crisis.</li>
+   </ul>
+   <p><strong>Problem 2 &#8212; MCP catalog sprawl:</strong></p>
+   <ul>
+    <li>As repeatable processes multiply, so does the server catalog</li>
+    <li>You have traded LLM unpredictability for infrastructure maintenance</li>
+   </ul>
+   <p><em>Can you describe the process once, run it identically every time, and not maintain a server to do it?</em></p>
+  </slide>
+  <slide id="what-is-arazzo">
+   <title>What Is Arazzo?</title>
+   <ul>
+    <li><em>Declarative:</em> define the sequence, data flow, and success criteria in a single document</li>
+    <li>The <a href="https://www.openapis.org/">OpenAPI Initiative</a> standard for multi-step API workflow descriptions</li>
+    <li>Arazzo workflows reference <code>operationId</code>s from OpenAPI descriptions (soon also AsyncAPI descriptions)</li>
+    <li>Discoverable by agents (via MCP or as APIs): find and trigger a workflow without knowing its internals</li>
+   </ul>
+   <pre style="font-size: 0.55em; background: #f4f4f4; padding: 0.75em; border-left: 3px solid #385155; margin-top: 0.5em;">workflows:
+  - workflowId: scoreAndImproveAPI
+    steps:
+      - stepId: runScoring
+        operationId: scoreAPIDescription
+        successCriteria:
+          - condition: $statusCode == 200
+      - stepId: applyImprovements
+        operationId: applyNonBreakingFixes
+        inputs:
+          issues: $steps.runScoring.outputs.issues</pre>
+  </slide>
+  <slide id="full-scoring-workflow">
+   <title>The Full Scoring Workflow</title>
+   <p>An agent is asked: <q>How AI-ready is this API?</q> &#8212; whether by a developer, a CI/CD event, or a governance check:</p>
+   <ol>
+    <li>Agent discovers the <code>scoreAndImproveAPI</code> Arazzo workflow</li>
+    <li>Agent triggers it once &#8212; the engine takes over</li>
+    <li>Fetch spec &#8594; score for AI-readiness &#8594; apply non-breaking improvements</li>
+    <li>Generate before/after report &#8594; return structured results to the agent or PR</li>
+   </ol>
+   <p>Every run is identical. Every result is auditable. The LLM does not need to know the steps.</p>
+   <p><em>No MCP server to maintain. No prompt to tune. No guessing what the agent did.</em></p>
+  </slide>
+  <slide id="workflows-when-to-use">
+   <title>Workflows: When to Use</title>
+   <ul>
+    <li><em>Use when:</em> multi-step process &#183; defined sequence &#183; auditability required &#183; enterprise or regulated context</li>
+    <li><em>Not for:</em> exploratory tasks &#183; tasks needing LLM judgment at each step</li>
+    <li><em>Reproducibility:</em> High</li>
+   </ul>
+  </slide>
+  <slide id="decision-framework">
+   <title>Should You Build an Agent? Now Answer It.</title>
+   <p>Based on Anthropic&#39;s <q>Should I Build an Agent?</q> framework &#8212; extended with the full toolkit:</p>
+   <table rules="all" cellspacing="0" cellpadding="5" width="95%" style="border: 2px solid #ABC9CB;">
+    <thead>
+     <tr>
+      <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Question</th>
+      <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Coarse answer</th>
+      <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">With the full toolkit</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>Is the task complex enough?</td>
+      <td>No &#8594; Workflow</td>
+      <td>No &#8594; Arazzo. Yes but needs context &#8594; Skill first, leveraging MCP tools as needed; once the path is known, graduate to Arazzo.</td>
+     </tr>
+     <tr>
+      <td>Is the task valuable enough?</td>
+      <td>&lt;$0.10/run &#8594; Workflow &#183; &gt;$1 &#8594; Agent</td>
+      <td>Low-cost repeatable &#8594; Arazzo. Needs LLM judgment each time &#8594; Skill.</td>
+     </tr>
+     <tr>
+      <td>Are all steps known and fixed?</td>
+      <td>Yes &#8594; Workflow</td>
+      <td>Yes &#8594; Arazzo. Context-dependent &#8594; Skill guides, Arazzo executes.</td>
+     </tr>
+     <tr>
+      <td>What is the cost of error?</td>
+      <td>High &#8594; Workflow + human gate</td>
+      <td>High &#8594; Arazzo with decision points. Shared capability &#8594; MCP.</td>
+     </tr>
+    </tbody>
+   </table>
+   <p><em>The question was never just agent vs. workflow. It was: what level of determinism does this task actually need?</em></p>
+  </slide>
+  <slide id="the-matrix">
+   <title>How They Layer: The Full Picture</title>
+   <table rules="all" cellspacing="0" cellpadding="5" width="95%" style="border: 2px solid #ABC9CB;">
+    <thead>
+     <tr>
+      <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;"></th>
+      <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: center;">Prompting</th>
+      <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: center;">Agent Skills</th>
+      <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: center;">MCP Tools</th>
+      <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: center;">Arazzo Workflows</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr><td><strong>Execution</strong></td><td>LLM</td><td>LLM (guided)</td><td>Tool engine</td><td>Workflow engine</td></tr>
+     <tr><td><strong>LLM role</strong></td><td>Full</td><td>Within constraints</td><td>Discovery + Invocation</td><td>Trigger only</td></tr>
+     <tr><td><strong>Reproducibility</strong></td><td>Low</td><td>Medium</td><td>Medium-High</td><td>High</td></tr>
+     <tr><td><strong>Maintenance</strong></td><td>None</td><td>Low</td><td>Medium (servers)</td><td>Low (declarative)</td></tr>
+     <tr><td><strong>Best for</strong></td><td>Exploration</td><td>Guided reasoning</td><td>Shared capabilities</td><td>Repeatable processes</td></tr>
+     <tr><td><strong>Failure mode</strong></td><td>Non-determinism</td><td>Drift</td><td>Catalog sprawl</td><td>Scope rigidity</td></tr>
+    </tbody>
+   </table>
+   <p><em>In the scoring scenario: Skill gives context &#8594; MCP exposes the capability &#8594; Arazzo automates the pipeline. Each rung reduces maintenance burden while increasing determinism.</em></p>
+   <p style="font-size: 0.85em; color: #555;"><strong>Key distinction:</strong> A skill tells the LLM <em>how to think</em> about a task (flexible path). A workflow tells the <em>system what to do</em>, step by step, without asking the LLM (fixed path). They compose: skills discover and trigger workflows.</p>
+  </slide>
+ </part>
+ <part id="workflow-wrap-up">
+  <title>Wrap up</title>
+  <slide id="what-to-do-next">
+   <title>What to Do Next</title>
+   <ol>
+    <li><em>Score your current APIs</em> &#8212; know how ready they are to enable agents before your agents find out the hard way</li>
+    <li><em>Identify your capabilities</em> &#8212; where are you on the ladder? What level of reproducibility does each task actually need?</li>
+    <li><em>Ask: who else needs this capability?</em> &#8212; if it&#39;s agents only, Arazzo may be enough; if humans, other systems, and agents all need it, you need more than just MCP</li>
+    <li><em>Highest-risk recurring task</em> &#8594; write a skill for it</li>
+    <li><em>Capability needed by multiple systems</em> &#8594; wrap it in MCP</li>
+    <li><em>Multi-step business process</em> &#8594; describe it in Arazzo</li>
+   </ol>
+   <ul>
+    <li><a href="https://spec.openapis.org/arazzo/latest.html">Arazzo Specification</a></li>
+    <li><a href="https://jentic.com/scorecard">Jentic API Scorecard</a></li>
+    <li><a href="https://github.com/jentic/api-ai-readiness-framework">API AI-Readiness Framework</a></li>
+   </ul>
+  </slide>
+  <slide id="agentic-thanks">
+   <title>Thank You! Let's Connect!</title>
+   <img src="qr-code-frank-headshot.png" href="www.linkedin.com/in/frank-kilcommins/" style=" height : 65% ; float: left ; margin : 0% 4% 4% 4% ; "/>
+   <img src="qr-code-erik-headshot.png" href="www.linkedin.com/in/erikwilde/" style=" height : 65% ; margin : 0% 4% 4% 4% ; "/>
+  </slide>
+ </part>
+</presentation>
 </hotspot>
