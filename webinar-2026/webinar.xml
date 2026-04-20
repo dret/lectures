@@ -517,17 +517,7 @@
     <li>Arazzo workflows reference <code>operationId</code>s from OpenAPI descriptions (soon also AsyncAPI descriptions)</li>
     <li>Discoverable by agents (via MCP or as APIs): find and trigger a workflow without knowing its internals</li>
    </ul>
-   <pre style="font-size: 0.55em; background: #f4f4f4; padding: 0.75em; border-left: 3px solid #385155; margin-top: 0.5em;">workflows:
-  - workflowId: scoreAndImproveAPI
-    steps:
-      - stepId: runScoring
-        operationId: scoreAPIDescription
-        successCriteria:
-          - condition: $statusCode == 200
-      - stepId: applyImprovements
-        operationId: applyNonBreakingFixes
-        inputs:
-          issues: $steps.runScoring.outputs.issues</pre>
+   <listing src="arazzo.yaml"/>
   </slide>
 <!--
    <slide id="full-scoring-workflow">

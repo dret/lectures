@@ -1,0 +1,11 @@
+workflows:
+  - workflowId: scoreAndImproveAPI
+    steps:
+      - stepId: runScoring
+        operationId: scoreAPIDescription
+        successCriteria:
+          - condition: $statusCode == 200
+      - stepId: applyImprovements
+        operationId: applyNonBreakingFixes
+        inputs:
+          issues: $steps.runScoring.outputs.issues
