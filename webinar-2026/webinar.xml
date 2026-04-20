@@ -417,10 +417,9 @@
      <tr><td><strong>Prompting</strong></td><td>LLM (unguided)</td><td>Full</td><td>Low</td></tr>
      <tr><td><strong>Agent Skills</strong></td><td>LLM (guided)</td><td>Within constraints</td><td>Medium</td></tr>
      <tr><td><strong>MCP Tools</strong></td><td>Tool engine</td><td>Discovery + Invocation</td><td>Medium-High</td></tr>
-     <tr><td><strong>Arazzo Workflows</strong></td><td>Workflow engine</td><td>Trigger only</td><td>High</td></tr>
+     <tr><td><strong>Arazzo Workflows</strong></td><td>Workflow engine</td><td>Discovery + Invocation*</td><td>High</td></tr>
     </tbody>
    </table>
-   <p><em>Scenario thread: &#8220;Your OpenAPI description just landed in your repo. You need it scored for AI-readiness and improved. Watch what happens at each rung.&#8221;</em></p>
    <p style="font-size: 0.85em; color: #555;">* LLMs can also <em>author and register</em> Arazzo workflows &#8212; converting observed processes into reusable, deterministic assets stored for future agent use.</p>
   </slide>
   <slide id="maintainability">
