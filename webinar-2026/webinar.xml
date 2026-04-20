@@ -529,7 +529,8 @@
         inputs:
           issues: $steps.runScoring.outputs.issues</pre>
   </slide>
-  <slide id="full-scoring-workflow">
+<!--
+   <slide id="full-scoring-workflow">
    <title>The Full Scoring Workflow</title>
    <p>An agent is asked: <q>How AI-ready is this API?</q> &#8212; whether by a developer, a CI/CD event, or a governance check:</p>
    <ol>
@@ -541,6 +542,7 @@
    <p>Every run is identical. Every result is auditable. The LLM does not need to know the steps.</p>
    <p><em>No MCP server to maintain. No prompt to tune. No guessing what the agent did.</em></p>
   </slide>
+-->
   <slide id="workflows-when-to-use">
    <title>Workflows: When to Use</title>
    <ul>
