@@ -398,7 +398,7 @@
           <li>Tool overload: too many options degrade agent decision quality</li>
           <li>Tool selection is itself a reasoning task — and it fails at scale</li>
           <li>Three patterns address this directly: <em>Agent Skills, MCP, and Arazzo Workflows</em></li>
-          <li>We will use a single scenario throughout: <q>Your API has just landed in your repo. How do you ensure it is AI-ready?</q></li>
+          <li>We will use a single scenario throughout: <em>planning a spontaneous weekend getaway</em> &#8212; weather check, hotel search, booking, and calendar &#8212; across three levels of agent tooling</li>
         </ul>
       </slide>
       <slide id="reproducibility-ladder">
@@ -433,6 +433,16 @@
           </ul>
           <li>Evals are good and useful but very hard to do for universal agents</li>
         </ul>
+      </slide>
+      <slide id="demo-scenario">
+        <title>The Demo: Weekend Getaway Planner</title>
+        <p>One scenario, three acts. Each act adds a layer &#8212; same APIs, increasing determinism:</p>
+        <ul>
+          <li><strong>Act 1 &#8212; MCP Tools:</strong> 7 tools, no guidance. LLM decides call order, thresholds, data flow. <em>Reproducibility: Medium</em></li>
+          <li><strong>Act 2 &#8212; Agent Skill:</strong> Same tools + <code>SKILL.md</code> in context. LLM guided by explicit constraints. <em>Reproducibility: Medium-High</em></li>
+          <li><strong>Act 3 &#8212; Arazzo Workflow:</strong> One tool call triggers the full sequence. No LLM orchestration between steps. <em>Reproducibility: High</em></li>
+        </ul>
+        <p><strong>The workflow:</strong> Geocode &#8594; Weather check &#8594; Hotel search &#8594; Book &#8594; Block calendar<br/><strong>APIs:</strong> Open-Meteo &#183; WeatherAPI.com &#183; liteapi &#183; Google Calendar</p>
       </slide>
     </part>
     <part id="mcp">
@@ -478,6 +488,16 @@
           <li>Good as a starting point but lacks sophistication and scalability</li>
         </ul>
       </slide>
+      <slide id="mcp-demo">
+        <title>Act 1: MCP Tools &#8212; Capable but Non-deterministic</title>
+        <ul>
+          <li>7 hand-crafted tools across 4 APIs: weather &#183; hotel search &#183; booking &#183; calendar</li>
+          <li>The LLM decides: which tool to call first &#183; how to pass data between calls &#183; when conditions are met</li>
+          <li>Works &#8212; but ask it twice and you may get two different paths</li>
+          <li><em>Pros:</em> quick to build, flexible, easy to extend</li>
+          <li><em>Cons:</em> non-deterministic, hard to test, drift risk when the model changes</li>
+        </ul>
+      </slide>
     </part>
     <part id="agent-skills">
       <title>Agent Skills</title>
@@ -489,7 +509,7 @@
           <li>Explicit scope: does one thing, with guardrails, in a defined way</li>
           <li>Versioned artifact — reviewed, shared, and reused across agents</li>
         </ul>
-        <p><strong>At this rung:</strong> We load the <code>jentic-openapi-audit</code> skill. The LLM knows exactly what tool to call, what format to produce, what not to do. Consistent output. Reusable across teams.</p>
+        <p><strong>At this rung:</strong> We load the <code>weekend-getaway-planner</code> skill. The LLM knows exactly which tools to call, in what order, with what thresholds. Consistent output. Reusable across agents.</p>
       </slide>
       <slide id="skill-anatomy">
         <title>Anatomy of a Skill</title>
@@ -510,6 +530,17 @@
           <li><em>Not for:</em> multi-step processes with a defined sequence &#183; capabilities needed by multiple systems</li>
           <li><em>Reproducibility:</em> Medium &#8212; guided, not guaranteed</li>
           <li>A skill can trigger a workflow. Once triggered, the LLM is out of the execution loop.</li>
+        </ul>
+      </slide>
+      <slide id="skill-demo">
+        <title>Act 2: Agent Skill &#8212; Guided Execution</title>
+        <ul>
+          <li>Same 7 MCP tools. One addition: <code>SKILL.md</code> loaded into the agent&#39;s context</li>
+          <li>The skill defines: tool sequence &#183; weather gate threshold &#183; data flow between steps &#183; per-step error handling</li>
+          <li>The LLM still orchestrates &#8212; but within guardrails it cannot ignore</li>
+          <li><em>Pros:</em> consistent behaviour, reusable across agents, versionable artefact</li>
+          <li><em>Cons:</em> still LLM-dependent &#8212; model changes can drift execution; skill must be kept current</li>
+          <li><em>Maintainability win:</em> update one skill file, not every prompt that references it</li>
         </ul>
       </slide>
     </part>
@@ -539,6 +570,7 @@
           <li>Discoverable by agents (via MCP or as APIs): find and trigger a workflow without knowing its internals</li>
         </ul>
         <listing src="arazzo.yaml"/>
+        <p style="text-align: center;">See the full workflow: <a href="https://arazzo-ui.jentic.com/?document=https%3A%2F%2Fraw.githubusercontent.com%2Ffrankkilcommins%2Fagentic-tools-webinar%2Frefs%2Fheads%2Fmain%2Farazzo%2Fweekend-getaway.arazzo.yaml">arazzo-ui.jentic.com</a></p>
       </slide>
       <slide id="workflows-when-to-use">
         <title>Workflows: When to Use</title>
@@ -546,6 +578,16 @@
           <li><em>Use when:</em> multi-step process &#183; defined sequence &#183; auditability required &#183; enterprise or regulated context</li>
           <li><em>Not for:</em> exploratory tasks &#183; tasks needing LLM judgment at each step</li>
           <li><em>Reproducibility:</em> High</li>
+        </ul>
+      </slide>
+      <slide id="workflow-demo">
+        <title>Act 3: Arazzo Workflow &#8212; One Tool, Deterministic</title>
+        <ul>
+          <li>The full sequence encoded in a single <a href="https://arazzo-ui.jentic.com/?document=https%3A%2F%2Fraw.githubusercontent.com%2Ffrankkilcommins%2Fagentic-tools-webinar%2Frefs%2Fheads%2Fmain%2Farazzo%2Fweekend-getaway.arazzo.yaml">Arazzo document</a> &#8212; exposed as one MCP tool</li>
+          <li>Step order, data flow, success criteria, and <code>onFailure</code> routing all declared &#8212; no LLM decisions between steps</li>
+          <li><em>Pros:</em> fully deterministic &#183; auditable &#183; portable across agents and runtimes &#183; model-change proof</li>
+          <li><em>Cons:</em> upfront design cost &#183; less flexible for exploratory or judgment-heavy tasks</li>
+          <li><em>Maintainability win:</em> the workflow is the artefact &#8212; version it, test it, share it like any other API contract</li>
         </ul>
       </slide>
       <slide id="decision-framework">
@@ -613,7 +655,7 @@
       <slide id="what-to-do-next">
         <title>What to Do Next</title>
         <ol>
-          <li><em>Score your current APIs</em> &#8212; know how ready they are to enable agents before your agents find out the hard way</li>
+          <li><em>Start with your highest-value repeatable task</em> &#8212; run it with raw MCP tools first, add a skill, then graduate to Arazzo as the sequence stabilises</li>
           <li><em>Identify your capabilities</em> &#8212; where are you on the ladder? What level of reproducibility does each task actually need?</li>
           <li><em>Ask: who else needs this capability?</em> &#8212; if it&#39;s agents only, Arazzo may be enough; if humans, other systems, and agents all need it, you need more than just MCP</li>
           <li><em>Highest-risk recurring task</em> &#8594; write a skill for it</li>
