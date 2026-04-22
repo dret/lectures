@@ -413,21 +413,21 @@
       </slide>
       <slide id="reproducibility-ladder">
         <title>The Reproducibility Ladder</title>
-        <p>Four approaches to agent capability &#8212; increasing determinism at each rung:</p>
-        <table rules="all" cellspacing="0" cellpadding="5" width="90%" style="border: 2px solid #ABC9CB; margin-left: 1em;">
+        <p>Four approaches to agent capability with increasing determinism at each rung:</p>
+        <table rules="all" cellspacing="0" cellpadding="5" width="95%" style="border: 2px solid #ABC9CB;">
           <thead>
             <tr>
-              <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Rung</th>
-              <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Execution</th>
-              <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">LLM Involvement</th>
-              <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;">Reproducibility</th>
+              <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;"/>
+              <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: center;">Prompting</th>
+              <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: center;">MCP</th>
+              <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: center;">Agent Skills</th>
+              <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: center;">Workflows (Arazzo)</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td><strong>Prompting</strong></td><td>LLM (unguided)</td><td>Full</td><td>Low</td></tr>
-            <tr><td><strong>MCP Tools</strong></td><td>Tool engine</td><td>Discovery + Invocation</td><td>Medium</td></tr>
-            <tr><td><strong>Agent Skills</strong></td><td>LLM (guided)</td><td>Within constraints</td><td>Medium</td></tr>
-            <tr><td><strong>(Arazzo) Workflows</strong></td><td>Workflow engine</td><td>Discovery + Invocation*</td><td>High</td></tr>
+            <tr><td><strong>Execution</strong></td><td>LLM</td><td>Tool engine</td><td>LLM (guided)</td><td>Workflow engine</td></tr>
+            <tr><td><strong>LLM role</strong></td><td>Full</td><td>Discovery + Invocation</td><td>Within constraints</td><td>Discovery + Invocation*</td></tr>
+            <tr><td><strong>Reproducibility</strong></td><td>Low</td><td>Medium</td><td>Medium</td><td>High</td></tr>
           </tbody>
         </table>
         <p style="font-size: 0.85em; color: #555;">* LLMs can also <em>author and register</em> (Arazzo) workflows by converting observed processes into reusable, deterministic assets stored for future agent use.</p>
@@ -448,9 +448,9 @@
         <title>The Demo: Weekend Getaway Planner</title>
         <p>One scenario, three acts. Each act adds a layer &#8212; same APIs, increasing determinism:</p>
         <ul>
-          <li><strong>Act 1 &#8212; MCP Tools:</strong> 7 tools, no guidance. LLM decides call order, thresholds, data flow. <em>Reproducibility: Medium</em></li>
-          <li><strong>Act 2 &#8212; Agent Skill:</strong> Same tools + <code>SKILL.md</code> in context. LLM guided by explicit constraints. <em>Reproducibility: Medium-High</em></li>
-          <li><strong>Act 3 &#8212; Arazzo Workflow:</strong> One tool call triggers the full sequence. No LLM orchestration between steps. <em>Reproducibility: High</em></li>
+          <li><strong>Demo 1 &#8212; MCP Tools:</strong> 7 tools, no guidance. LLM decides call order, thresholds, data flow. <em>Reproducibility: Medium</em></li>
+          <li><strong>Demo 2 &#8212; Agent Skill:</strong> Same tools + <code>SKILL.md</code> in context. LLM guided by explicit constraints. <em>Reproducibility: Medium-High</em></li>
+          <li><strong>Demo 3 &#8212; Arazzo Workflow:</strong> One tool call triggers the full sequence. No LLM orchestration between steps. <em>Reproducibility: High</em></li>
         </ul>
         <p><strong>The workflow:</strong> Geocode &#8594; Weather check &#8594; Hotel search &#8594; Book &#8594; Block calendar<br/><strong>APIs:</strong> Open-Meteo &#183; WeatherAPI.com &#183; liteapi &#183; Google Calendar</p>
       </slide>
@@ -518,17 +518,14 @@
         </ul>
       </slide>
       <slide id="mcp-demo">
-        <title>Act 1: MCP Tools &#8212; Capable but Non-deterministic</title>
+        <title>Demo 1: MCP Tools &#8212; Capable but Non-deterministic</title>
         <ul>
           <li>7 hand-crafted tools across 4 APIs: weather &#183; hotel search &#183; booking &#183; calendar</li>
           <li>The LLM decides: which tool to call first &#183; how to pass data between calls &#183; when conditions are met</li>
-          <li>Works &#8212; but ask it twice and you may get two different paths</li>
-          <li><em>Pros:</em> quick to build, flexible, easy to extend</li>
-          <li><em>Cons:</em> non-deterministic, hard to test, drift risk when the model changes</li>
         </ul>
       </slide>
       <slide id="video-1">
-        <title>Act 1: Demo</title>
+        <title>Demo 1</title>
         <video src="video/MCP-Tools-Weekend-Getaway.mp4" controls="controls" class="fullsize"/>
       </slide>
     </part>
@@ -566,18 +563,14 @@
         </ul>
       </slide>
       <slide id="skill-demo">
-        <title>Act 2: Agent Skill &#8212; Guided Execution</title>
+        <title>Demo 2: Agent Skill &#8212; Guided Execution</title>
         <ul>
           <li>Same 7 MCP tools. One addition: <code>SKILL.md</code> loaded into the agent&#39;s context</li>
-          <li>The skill defines: tool sequence &#183; weather gate threshold &#183; data flow between steps &#183; per-step error handling</li>
-          <li>The LLM still orchestrates &#8212; but within guardrails it cannot ignore</li>
-          <li><em>Pros:</em> consistent behaviour, reusable across agents, versionable artefact</li>
-          <li><em>Cons:</em> still LLM-dependent &#8212; model changes can drift execution; skill must be kept current</li>
           <li><em>Maintainability win:</em> update one skill file, not every prompt that references it</li>
         </ul>
       </slide>
       <slide id="video-2">
-        <title>Act 2: Demo</title>
+        <title>Demo 2</title>
         <video src="video/Skills-Weekend-Getaway.mp4" controls="controls" class="fullsize"/>
       </slide>
     </part>
@@ -618,17 +611,14 @@
         </ul>
       </slide>
       <slide id="workflow-demo">
-        <title>Act 3: Arazzo Workflow &#8212; One Tool, Deterministic</title>
+        <title>Demo 3: Arazzo Workflow &#8212; One Tool, Deterministic</title>
         <ul>
           <li>The full sequence encoded in a single <a href="https://arazzo-ui.jentic.com/?document=https%3A%2F%2Fraw.githubusercontent.com%2Ffrankkilcommins%2Fagentic-tools-webinar%2Frefs%2Fheads%2Fmain%2Farazzo%2Fweekend-getaway.arazzo.yaml">Arazzo document</a> &#8212; exposed as one MCP tool</li>
-          <li>Step order, data flow, success criteria, and <code>onFailure</code> routing all declared &#8212; no LLM decisions between steps</li>
-          <li><em>Pros:</em> fully deterministic &#183; auditable &#183; portable across agents and runtimes &#183; model-change proof</li>
-          <li><em>Cons:</em> upfront design cost &#183; less flexible for exploratory or judgment-heavy tasks</li>
           <li><em>Maintainability win:</em> the workflow is the artefact &#8212; version it, test it, share it like any other API contract</li>
         </ul>
       </slide>
       <slide id="video-3">
-        <title>Act 3: Demo</title>
+        <title>Demo 3</title>
         <video src="video/Workflow-Weekend-Getaway.mp4" controls="controls" class="fullsize"/>
       </slide>
       <slide id="decision-framework">
@@ -674,15 +664,15 @@
             <tr>
               <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: left;"/>
               <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: center;">Prompting</th>
-              <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: center;">MCP Tools</th>
+              <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: center;">MCP</th>
               <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: center;">Agent Skills</th>
-              <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: center;">Arazzo Workflows</th>
+              <th style="background-color: #385155; color: #ffffff; font-weight: bold; text-align: center;">Workflows (Arazzo)</th>
             </tr>
           </thead>
           <tbody>
             <tr><td><strong>Execution</strong></td><td>LLM</td><td>Tool engine</td><td>LLM (guided)</td><td>Workflow engine</td></tr>
             <tr><td><strong>LLM role</strong></td><td>Full</td><td>Discovery + Invocation</td><td>Within constraints</td><td>Trigger only</td></tr>
-            <tr><td><strong>Reproducibility</strong></td><td>Low</td><td>Medium-High</td><td>Medium</td><td>High</td></tr>
+            <tr><td><strong>Reproducibility</strong></td><td>Low</td><td>Medium</td><td>Medium</td><td>High</td></tr>
             <tr><td><strong>Maintenance</strong></td><td>None</td><td>Medium (servers)</td><td>Low</td><td>Low (declarative)</td></tr>
             <tr><td><strong>Best for</strong></td><td>Exploration</td><td>Shared capabilities</td><td>Guided reasoning</td><td>Repeatable processes</td></tr>
             <tr><td><strong>Failure mode</strong></td><td>Non-determinism</td><td>Catalog sprawl</td><td>Drift</td><td>Scope rigidity</td></tr>
