@@ -390,15 +390,11 @@
           <li>Agents are evolving from single-purpose tools to broad-capability systems</li>
           <li>Each new capability adds tools and decisions to the agent's scope</li>
           <ul>
-            <li>More capabilities →</li>
-            <li>More decisions →</li>
-            <li>More room for error</li>
+            <li>More capabilities → More decisions → More room for error</li>
           </ul>
           <li>The question is not whether agents can do more, it's how to make them do it</li>
           <ul>
-            <li>reliably</li>
-            <li>repeatably</li>
-            <li>efficiently</li>
+            <li>reliably &amp; repeatably &amp; efficiently</li>
           </ul>
         </ul>
       </slide>
@@ -408,7 +404,11 @@
           <li>Tool overload: too many options degrade agent decision quality</li>
           <li>Tool selection is itself a reasoning task and it fails at scale</li>
           <li>Three patterns address this directly: <em>MCP, Agent Skills, and (Arazzo) Workflows</em></li>
-          <li>We will use a single scenario throughout: <em>planning a spontaneous weekend getaway</em> &#8212; weather check, hotel search, booking, and calendar &#8212; across three levels of agent tooling</li>
+          <li>Scenario throughout: <em>Weekend getaway planning</em></li>
+          <ul>
+            <li>Weather check, hotel search, booking, and calendar</li>
+            <li>Three types of agent tooling</li>
+          </ul>
         </ul>
       </slide>
       <slide id="reproducibility-ladder">
@@ -426,11 +426,10 @@
           </thead>
           <tbody>
             <tr><td><strong>Execution</strong></td><td>LLM</td><td>Tool engine</td><td>LLM (guided)</td><td>Workflow engine</td></tr>
-            <tr><td><strong>LLM role</strong></td><td>Full</td><td>Discovery &amp; Invocation</td><td>Within constraints</td><td>Discovery &amp; Invocation*</td></tr>
+            <tr><td><strong>LLM role</strong></td><td>Full</td><td>Discovery &amp; Invocation</td><td>Within constraints</td><td>Discovery &amp; Invocation</td></tr>
             <tr><td><strong>Reproducibility</strong></td><td>Low</td><td>Medium</td><td>Medium</td><td>High</td></tr>
           </tbody>
         </table>
-        <p style="font-size: 0.85em; color: #555;">* LLMs can also <em>author and register</em> (Arazzo) workflows by converting observed processes into reusable, deterministic assets stored for future agent use.</p>
       </slide>
       <slide id="maintainability">
         <title>Agent Maintainability</title>
@@ -462,7 +461,7 @@
             <li><em>Extended context</em> by allowing MCP servers to externally manage context</li>
           </ul>
           <li>Many mapping tools generate MCP servers from OpenAPI descriptions</li>
-          <li><em>What</em> to expose and <em>how to design it</em> is out of scope</li>
+          <li><em>Tool granularity</em> makes a big difference</li>
         </ul>
       </slide>
       <slide id="api-mcp-ai-direct-idea">
@@ -493,7 +492,7 @@
         </ul>
       </slide>
       <slide id="github-api">
-        <title>The API Landscape Complexity Challenge</title>
+        <title>Capability Complexity: GitHub</title>
         <img src="github-api.png" title="GitHub API" href="https://github.com/github/rest-api-description" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
           <li><a href="https://github.com/github/rest-api-description">GitHub API</a></li>
@@ -515,7 +514,7 @@
         <title>Demo 1: MCP Tools &#8212; Capable but Non-deterministic</title>
         <ul>
           <li>7 hand-crafted tools across 4 APIs: weather &#183; hotel search &#183; booking &#183; calendar</li>
-          <li>The LLM decides: which tool to call first &#183; how to pass data between calls &#183; when conditions are met</li>
+          <li>LLM decides: which tool to call first &#183; how to pass data between calls &#183; when conditions are met</li>
         </ul>
       </slide>
       <slide id="video-1">
@@ -537,7 +536,7 @@
       </slide>
       <slide id="skill-anatomy">
         <title>Anatomy of a Skill</title>
-        <p>A <code>SKILL.md</code> defines: <em>task</em> · <em>constraints</em> · <em>steps</em> · <em>references to external scripts or tools</em></p>
+        <p>A <code>SKILL.md</code> defines: <em>task</em> · <em>constraints</em> · <em>steps</em> · <em>references to scripts or tools</em></p>
         <ul>
           <li><strong>Task:</strong> what the skill is for &#8212; clear, bounded scope</li>
           <li><strong>Constraints:</strong> what the LLM must and must not do</li>
@@ -615,8 +614,8 @@
         <video src="video/Workflow-Weekend-Getaway.mp4" controls="controls" class="fullsize"/>
       </slide>
       <slide id="decision-framework">
-        <title>Should You Build an Agent? Now Answer It.</title>
-        <p>Based on Anthropic&#39;s <q>Should I Build an Agent?</q> framework &#8212; extended with the full toolkit:</p>
+        <title>Should You Build an Agent?</title>
+        <p>Based on Anthropic's <q>Should I Build an Agent?</q> framework &#8212; extended with the full toolkit:</p>
         <table rules="all" cellspacing="0" cellpadding="5" width="95%" style="border: 2px solid #ABC9CB;">
           <thead>
             <tr>
@@ -629,22 +628,22 @@
             <tr>
               <td>Is the task complex enough?</td>
               <td>No &#8594; Workflow</td>
-              <td>No &#8594; Arazzo. Yes but needs context &#8594; Skill first, leveraging MCP tools as needed; once the path is known, graduate to Arazzo.</td>
+              <td>No &#8594; Arazzo. Yes but needs context &#8594; Skill first, leveraging MCP tools as needed; once the path is known, graduate to Arazzo</td>
             </tr>
             <tr>
               <td>Is the task valuable enough?</td>
-              <td>&lt;$0.10/run &#8594; Workflow &#183; &gt;$1 &#8594; Agent</td>
-              <td>Low-cost repeatable &#8594; Arazzo. Needs LLM judgment each time &#8594; Skill.</td>
+              <td>&lt;$0.10/run &#8594; Workflow <br/> &gt;$1 &#8594; Agent</td>
+              <td>Low-cost repeatable &#8594; Arazzo. Needs LLM judgment each time &#8594; Skill</td>
             </tr>
             <tr>
               <td>Are all steps known and fixed?</td>
               <td>Yes &#8594; Workflow</td>
-              <td>Yes &#8594; Arazzo. Context-dependent &#8594; Skill guides, Arazzo executes.</td>
+              <td>Yes &#8594; Arazzo. Context-dependent &#8594; Skill guides, Arazzo executes</td>
             </tr>
             <tr>
               <td>What is the cost of error?</td>
               <td>High &#8594; Workflow + human gate</td>
-              <td>High &#8594; Arazzo with decision points. Shared capability &#8594; MCP.</td>
+              <td>High &#8594; Arazzo with decision points. Shared capability &#8594; MCP</td>
             </tr>
           </tbody>
         </table>
