@@ -1,5 +1,5 @@
 workflows:
-  - workflowId: scoreAndImproveAPI
+  - workflowId: weekend-getaway
     steps:
       - stepId: listHotels
         description: Retrieve hotels available in the destination city
