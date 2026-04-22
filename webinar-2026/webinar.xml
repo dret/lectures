@@ -588,7 +588,7 @@
         <img src="arazzo-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
           <li><em>Declarative:</em> define the sequence, data flow, and success criteria</li>
-          <li>The <a href="https://www.openapis.org/">OpenAPI Initiative</a> standard for multi-step API workflows</li>
+          <li><a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a> standard for multi-step API workflows</li>
           <li>Arazzo workflows reference <code>operationId</code>s from OpenAPI/AsyncAPI descriptions</li>
           <li>Discoverable by agents (via MCP or as APIs): find and run a workflow without knowing its internals</li>
         </ul>
