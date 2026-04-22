@@ -545,7 +545,7 @@
           <li><strong>References:</strong> external scripts, tools, or MCP capabilities to invoke</li>
         </ul>
         <p>Versioned, shareable, and loadable by any compatible agent. Think of it as a reusable prompt with structure and guardrails baked in.</p>
-        <p><q>A skill tells the LLM <em>how to think</em> about a task. A skill can discover and trigger a workflow &#8212; once it does, the LLM is out of the execution loop.</q></p>
+        <p><q>A skill tells the LLM <em>how to think</em> about a task. A skill can discover and run a workflow &#8212; once it does, the LLM is out of the execution loop.</q></p>
       </slide>
       <slide id="skills-when-to-use">
         <title>Agent Skills: When to Use</title>
@@ -553,7 +553,6 @@
           <li><em>Use when:</em> recurring subtask needing LLM judgment · consistent output required · reusability matters</li>
           <li><em>Not for:</em> multi-step processes with a defined sequence &#183; capabilities needed by multiple systems</li>
           <li><em>Reproducibility:</em> Medium &#8212; guided, not guaranteed</li>
-          <li>A skill can trigger a workflow. Once triggered, the LLM is out of the execution loop.</li>
         </ul>
       </slide>
       <slide id="skill-demo">
@@ -591,7 +590,7 @@
           <li><em>Declarative:</em> define the sequence, data flow, and success criteria</li>
           <li>The <a href="https://www.openapis.org/">OpenAPI Initiative</a> standard for multi-step API workflows</li>
           <li>Arazzo workflows reference <code>operationId</code>s from OpenAPI/AsyncAPI descriptions</li>
-          <li>Discoverable by agents (via MCP or as APIs): find and trigger a workflow without knowing its internals</li>
+          <li>Discoverable by agents (via MCP or as APIs): find and run a workflow without knowing its internals</li>
         </ul>
         <listing src="arazzo.yaml"/>
         <p style="text-align: center;">See the full workflow: <a href="https://arazzo-ui.jentic.com/?document=https%3A%2F%2Fraw.githubusercontent.com%2Ffrankkilcommins%2Fagentic-tools-webinar%2Frefs%2Fheads%2Fmain%2Farazzo%2Fweekend-getaway.arazzo.yaml">arazzo-ui.jentic.com</a></p>
@@ -672,7 +671,7 @@
             <tr><td><strong>Failure mode</strong></td><td>Non-determinism</td><td>Catalog sprawl</td><td>Drift</td><td>Scope rigidity</td></tr>
           </tbody>
         </table>
-        <p style="font-size: 0.85em; color: #555;"><strong>Key distinction:</strong> A skill tells the LLM <em>how to think</em> about a task (flexible path). A workflow tells the <em>system what to do</em>, step by step, without asking the LLM (fixed path). They compose: skills discover and trigger workflows.</p>
+        <p style="font-size: 0.85em; color: #555;"><strong>Key distinction:</strong> A skill tells the LLM <em>how to think</em> about a task (flexible path). A workflow tells the <em>system what to do</em>, step by step, without asking the LLM (fixed path). They compose: skills discover and run workflows.</p>
       </slide>
     </part>
     <part id="workflow-wrap-up">
