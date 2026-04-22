@@ -444,15 +444,9 @@
           <li>Evals are good and useful but hard to do for universal agents</li>
         </ul>
       </slide>
-      <slide id="demo-scenario">
-        <title>The Demo: Weekend Getaway Planner</title>
-        <p>One scenario, three acts. Each act adds a layer &#8212; same APIs, increasing determinism:</p>
-        <ul>
-          <li><strong>Demo 1 &#8212; MCP Tools:</strong> 7 tools, no guidance. LLM decides call order, thresholds, data flow. <em>Reproducibility: Medium</em></li>
-          <li><strong>Demo 2 &#8212; Agent Skill:</strong> Same tools + <code>SKILL.md</code> in context. LLM guided by explicit constraints. <em>Reproducibility: Medium-High</em></li>
-          <li><strong>Demo 3 &#8212; Arazzo Workflow:</strong> One tool call triggers the full sequence. No LLM orchestration between steps. <em>Reproducibility: High</em></li>
-        </ul>
-        <p><strong>The workflow:</strong> Geocode &#8594; Weather check &#8594; Hotel search &#8594; Book &#8594; Block calendar<br/><strong>APIs:</strong> Open-Meteo &#183; WeatherAPI.com &#183; liteapi &#183; Google Calendar</p>
+      <slide id="weekend-getaway">
+        <title>Demo: Weekend Getaway Planner</title>
+        <img src="weekend-getaway.png" class="fullsize-shadow"/>
       </slide>
     </part>
     <part id="mcp">
