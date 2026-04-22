@@ -385,19 +385,29 @@
       <title>From Targeted to Universal Agents</title>
       <slide id="specific-to-universal">
         <title>The Age of Universal Agents</title>
+        <img src="victorinox-swiss-champ-xxl.png" title="Victorinox Swiss Champ XXL" href="https://www.victorinox.com/de-DE/Produkte/Swiss-Army-Knife%E2%84%A2-and-Tools/Trades-and-Crafts/Swiss-Champ%C2%A0XXL/p/1.6795.XXL" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
           <li>Agents are evolving from single-purpose tools to broad-capability systems</li>
-          <li>Each new capability adds tools — and decisions — to the agent's scope</li>
-          <li><em>More capability → more decisions → more room for error</em></li>
-          <li>The question is not whether agents can do more. It's how to make them do it reliably.</li>
+          <li>Each new capability adds tools and decisions to the agent's scope</li>
+          <ul>
+            <li>More capabilities →</li>
+            <li>More decisions →</li>
+            <li>More room for error</li>
+          </ul>
+          <li>The question is not whether agents can do more, it's how to make them do it</li>
+          <ul>
+            <li>reliably</li>
+            <li>repeatably</li>
+            <li>efficiently</li>
+          </ul>
         </ul>
       </slide>
       <slide id="tool-problem">
         <title>The Tool Problem</title>
         <ul>
           <li>Tool overload: too many options degrade agent decision quality</li>
-          <li>Tool selection is itself a reasoning task — and it fails at scale</li>
-          <li>Three patterns address this directly: <em>Agent Skills, MCP, and Arazzo Workflows</em></li>
+          <li>Tool selection is itself a reasoning task and it fails at scale</li>
+          <li>Three patterns address this directly: <em>MCP, Agent Skills, and (Arazzo) Workflows</em></li>
           <li>We will use a single scenario throughout: <em>planning a spontaneous weekend getaway</em> &#8212; weather check, hotel search, booking, and calendar &#8212; across three levels of agent tooling</li>
         </ul>
       </slide>
@@ -415,23 +425,23 @@
           </thead>
           <tbody>
             <tr><td><strong>Prompting</strong></td><td>LLM (unguided)</td><td>Full</td><td>Low</td></tr>
-            <tr><td><strong>MCP Tools</strong></td><td>Tool engine</td><td>Discovery + Invocation</td><td>Medium-High</td></tr>
+            <tr><td><strong>MCP Tools</strong></td><td>Tool engine</td><td>Discovery + Invocation</td><td>Medium</td></tr>
             <tr><td><strong>Agent Skills</strong></td><td>LLM (guided)</td><td>Within constraints</td><td>Medium</td></tr>
-            <tr><td><strong>Arazzo Workflows</strong></td><td>Workflow engine</td><td>Discovery + Invocation*</td><td>High</td></tr>
+            <tr><td><strong>(Arazzo) Workflows</strong></td><td>Workflow engine</td><td>Discovery + Invocation*</td><td>High</td></tr>
           </tbody>
         </table>
-        <p style="font-size: 0.85em; color: #555;">* LLMs can also <em>author and register</em> Arazzo workflows — converting observed processes into reusable, deterministic assets stored for future agent use.</p>
+        <p style="font-size: 0.85em; color: #555;">* LLMs can also <em>author and register</em> (Arazzo) workflows by converting observed processes into reusable, deterministic assets stored for future agent use.</p>
       </slide>
       <slide id="maintainability">
         <title>Agent Maintainability</title>
         <ul>
-          <li>Agents are software that needs maintenance</li>
-          <li>Agents <q>run on LLMs</q> which make them powerful and shape-shifting</li>
+          <li>Agents are software that needs maintenance over time</li>
+          <li>Agents <q>run on LLMs</q> which make them both powerful and shape-shifting</li>
           <ul>
             <li>The same inputs produce different outputs when the model changes</li>
             <li>Keeping the model stable may be difficult or impossible</li>
           </ul>
-          <li>Evals are good and useful but very hard to do for universal agents</li>
+          <li>Evals are good and useful but hard to do for universal agents</li>
         </ul>
       </slide>
       <slide id="demo-scenario">
@@ -488,6 +498,25 @@
           <li>Good as a starting point but lacks sophistication and scalability</li>
         </ul>
       </slide>
+      <slide id="github-api">
+        <title>The API Landscape Complexity Challenge</title>
+        <img src="github-api.png" title="GitHub API" href="https://github.com/github/rest-api-description" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li><a href="https://github.com/github/rest-api-description">GitHub API</a></li>
+          <ul>
+            <li>11MB</li>
+            <li>320k lines</li>
+            <li>738 paths</li>
+            <li>1114 operations</li>
+            <li>259 webhooks</li>
+          </ul>
+          <li><a href="https://github.com/github/github-mcp-server">GitHub MCP Server</a></li>
+          <ul>
+            <li>19 toolsets (+3 remote)</li>
+            <li>70 tools overall</li>
+          </ul>
+        </ul>
+      </slide>
       <slide id="mcp-demo">
         <title>Act 1: MCP Tools &#8212; Capable but Non-deterministic</title>
         <ul>
@@ -497,6 +526,10 @@
           <li><em>Pros:</em> quick to build, flexible, easy to extend</li>
           <li><em>Cons:</em> non-deterministic, hard to test, drift risk when the model changes</li>
         </ul>
+      </slide>
+      <slide id="video-1">
+        <title>Act 1: Demo</title>
+        <video src="video/MCP-Tools-Weekend-Getaway.mp4" controls="controls" class="fullsize"/>
       </slide>
     </part>
     <part id="agent-skills">
