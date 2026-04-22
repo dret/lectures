@@ -426,7 +426,7 @@
           </thead>
           <tbody>
             <tr><td><strong>Execution</strong></td><td>LLM</td><td>Tool engine</td><td>LLM (guided)</td><td>Workflow engine</td></tr>
-            <tr><td><strong>LLM role</strong></td><td>Full</td><td>Discovery + Invocation</td><td>Within constraints</td><td>Discovery + Invocation*</td></tr>
+            <tr><td><strong>LLM role</strong></td><td>Full</td><td>Discovery &amp; Invocation</td><td>Within constraints</td><td>Discovery &amp; Invocation*</td></tr>
             <tr><td><strong>Reproducibility</strong></td><td>Low</td><td>Medium</td><td>Medium</td><td>High</td></tr>
           </tbody>
         </table>
@@ -588,9 +588,9 @@
         <title>What Is Arazzo?</title>
         <img src="arazzo-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
-          <li><em>Declarative:</em> define the sequence, data flow, and success criteria in a single document</li>
-          <li>The <a href="https://www.openapis.org/">OpenAPI Initiative</a> standard for multi-step API workflow descriptions</li>
-          <li>Arazzo workflows reference <code>operationId</code>s from OpenAPI descriptions (soon also AsyncAPI descriptions)</li>
+          <li><em>Declarative:</em> define the sequence, data flow, and success criteria</li>
+          <li>The <a href="https://www.openapis.org/">OpenAPI Initiative</a> standard for multi-step API workflows</li>
+          <li>Arazzo workflows reference <code>operationId</code>s from OpenAPI/AsyncAPI descriptions</li>
           <li>Discoverable by agents (via MCP or as APIs): find and trigger a workflow without knowing its internals</li>
         </ul>
         <listing src="arazzo.yaml"/>
@@ -665,7 +665,7 @@
           </thead>
           <tbody>
             <tr><td><strong>Execution</strong></td><td>LLM</td><td>Tool engine</td><td>LLM (guided)</td><td>Workflow engine</td></tr>
-            <tr><td><strong>LLM role</strong></td><td>Full</td><td>Discovery + Invocation</td><td>Within constraints</td><td>Trigger only</td></tr>
+            <tr><td><strong>LLM role</strong></td><td>Full</td><td>Discovery &amp; Invocation</td><td>Within constraints</td><td>Discovery &amp; Invocation</td></tr>
             <tr><td><strong>Reproducibility</strong></td><td>Low</td><td>Medium</td><td>Medium</td><td>High</td></tr>
             <tr><td><strong>Maintenance</strong></td><td>None</td><td>Medium (servers)</td><td>Low</td><td>Low (declarative)</td></tr>
             <tr><td><strong>Best for</strong></td><td>Exploration</td><td>Shared capabilities</td><td>Guided reasoning</td><td>Repeatable processes</td></tr>
