@@ -57,6 +57,29 @@
   <presentation id="business-agents-and-agentic-coding">
     <title>The Hidden Common Ground in Business Agents and Agentic Coding</title>
     <toc class="abstract">Many organizations are treating business agents and agentic coding as separate trends, yet lack a clear understanding of whether they require fundamentally different platform investments. This fragmentation matters because it drives duplicated effort, inconsistent governance models, and misaligned API and AI strategies at a time when enterprises are under pressure to scale AI responsibly and efficiently. This talk looks at both use cases independently — examining their architectural, governance, and capability requirements — and then systematically compare them to reveal a shared platform substrate that is often overlooked. By clarifying their hidden common ground, this talk provides a more coherent roadmap for enterprise platform strategy, enabling organizations to align API, AI, and governance investments around a unified capability foundation rather than solving the same problem twice.</toc>
+    <slide id="dret">
+      <title>Erik Wilde</title>
+      <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <ul>
+        <li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
+        <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+      </ul>
+    </slide>
+    <part id="conclusions">
+      <title>Conclusions</title>
+      <slide id="thanks">
+        <title>Thank You!</title>
+        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+          <img src="qr-code-erik-jentic.png" style=" width : 25% ; margin : 6% 0% 0% 0% ; "/>
+        </ul>
+      </slide>
+    </part>
   </presentation>
   <presentation id="openapi-track-welcome">
     <title>OpenAPI Track Welcome</title>
