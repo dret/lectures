@@ -68,8 +68,39 @@
         <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
       </ul>
     </slide>
+    <slide id="ai-agents">
+      <title>Coding Agents and Business Agents</title>
+      <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+      <ul>
+        <li><em>Coding Agents</em></li>
+        <ul>
+          <li>Narrow, well-scoped task: write and change code</li>
+          <li>Already working well and developers like them and use them</li>
+        </ul>
+        <li><em>Business Agents</em></li>
+        <ul>
+          <li>Broader goal: take business action on your behalf</li>
+          <li>Few in the wild, mostly off-the-shelf in specific domains</li>
+        </ul>
+      </ul>
+    </slide>
+    <part id="two-agents">
+      <title>Two Agents, One Platform Question</title>
+    </part>
+    <part id="ai-first-without-api-first">
+      <title>Anti-Pattern #1: AI-First without API-First</title>
+    </part>
+    <part id="agent-aware-security">
+      <title>Anti-Pattern #2: No Agent-Aware Security</title>
+    </part>
     <part id="conclusions">
       <title>Conclusions</title>
+      <slide id="one-platform">
+        <title>One AI Agent Platform</title>
+      </slide>
+      <slide id="anti-patterns">
+        <title>Other Agentic AI Anti-Patterns</title>
+      </slide>
       <slide id="thanks">
         <title>Thank You!</title>
         <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
