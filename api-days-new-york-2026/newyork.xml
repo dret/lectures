@@ -91,7 +91,7 @@
         <img src="platform-principle.jpg" style="float: right ; height : 50% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
         <ul>
           <li>You don't need a platform to ship <em>one</em> thing</li>
-          <li>Platform are for shipping <em>many</em> similar things at scale</li>
+          <li>Platforms are for shipping <em>many</em> similar things at scale</li>
           <ul>
             <li>Shared substrate beats many bespoke stacks</li>
             <li>Capabilities, governance, security → built for reuse</li>
@@ -104,14 +104,35 @@
         </ul>
       </slide>
     </part>
-    <part id="two-agents">
-      <title>Two Agents, One Platform Question</title>
-    </part>
     <part id="ai-first-without-api-first">
       <title>Anti-Pattern #1: AI-First without API-First</title>
+      <slide id="ai-first-without-api-first-problem">
+        <title>AI-First without API-First: The Problem</title>
+      </slide>
+      <slide id="ai-first-without-api-first-data">
+        <title>AI-First without API-First: The Data</title>
+      </slide>
+      <slide id="ai-first-without-api-first-consequences">
+        <title>AI-First without API-First: The Consequences</title>
+      </slide>
+      <slide id="ai-first-without-api-first-fix">
+        <title>AI-First without API-First: The Fix</title>
+      </slide>
     </part>
     <part id="agent-aware-security">
       <title>Anti-Pattern #2: No Agent-Aware Security</title>
+      <slide id="agent-aware-security-problem">
+        <title>No Agent-Aware Security: The Problem</title>
+      </slide>
+      <slide id="agent-aware-security-data">
+        <title>No Agent-Aware Security: The Data</title>
+      </slide>
+      <slide id="agent-aware-security-consequences">
+        <title>No Agent-Aware Security: The Consequences</title>
+      </slide>
+      <slide id="agent-aware-security-fix">
+        <title>No Agent-Aware Security: The Fix</title>
+      </slide>
     </part>
     <part id="conclusions">
       <title>Conclusions</title>
