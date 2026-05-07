@@ -49,7 +49,7 @@
       </tbody>
     </table>
   </toc>
-  <title><a href="https://www.apidays.global/">API Days</a> <a href="https://www.apidays.global/paris/">Singapore</a> 2026</title>
+  <title><a href="https://www.apidays.global/">API Days</a> <a href="https://www.apidays.global/new-york/">New York</a> 2026</title>
   <author>Erik Wilde</author>
   <affiliation>Head of Enterprise Strategy, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
   <copyright>2026 Erik Wilde</copyright>
@@ -68,22 +68,42 @@
         <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
       </ul>
     </slide>
-    <slide id="ai-agents">
-      <title>Coding Agents and Business Agents</title>
-      <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
-      <ul>
-        <li><em>Coding Agents</em></li>
+    <part id="agents-platforms">
+      <title>Agents &amp; Platforms</title>
+      <slide id="ai-agents">
+        <title>Coding Agents and Business Agents</title>
+        <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
         <ul>
-          <li>Narrow, well-scoped task: write and change code</li>
-          <li>Already working well and developers like them and use them</li>
+          <li><em>Coding Agents</em></li>
+          <ul>
+            <li>Narrow, well-scoped task: write and change code</li>
+            <li>Already working well and developers like them and use them</li>
+          </ul>
+          <li><em>Business Agents</em></li>
+          <ul>
+            <li>Broader goal: take business action on your behalf</li>
+            <li>Few in the wild, mostly off-the-shelf in specific domains</li>
+          </ul>
         </ul>
-        <li><em>Business Agents</em></li>
+      </slide>
+      <slide id="platform-principle">
+        <title>The Platform Principle</title>
+        <img src="platform-principle.jpg" style="float: right ; height : 50% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
         <ul>
-          <li>Broader goal: take business action on your behalf</li>
-          <li>Few in the wild, mostly off-the-shelf in specific domains</li>
+          <li>You don't need a platform to ship <em>one</em> thing</li>
+          <li>Platform are for shipping <em>many</em> similar things at scale</li>
+          <ul>
+            <li>Shared substrate beats many bespoke stacks</li>
+            <li>Capabilities, governance, security → built for reuse</li>
+          </ul>
+          <li>That's where both kinds of agents are heading</li>
+          <ul>
+            <li>Coding agents: already at scale; platform spirit emerging</li>
+            <li>Business agents: scale is the next problem to solve</li>
+          </ul>
         </ul>
-      </ul>
-    </slide>
+      </slide>
+    </part>
     <part id="two-agents">
       <title>Two Agents, One Platform Question</title>
     </part>
