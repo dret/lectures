@@ -155,10 +155,6 @@
   </presentation>
   <presentation id="openapi-track-welcome">
     <title>OpenAPI Track Welcome</title>
-    <slide id="openapi-track-mix">
-      <title>OpenAPI Track/Summit/Conference</title>
-      <img src="openapi-track-mix.jpg" class="fullsize-shadow"/>
-    </slide>
     <slide id="dret">
       <title>Erik Wilde</title>
       <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
@@ -168,6 +164,22 @@
         <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
         <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
         <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+      </ul>
+    </slide>
+    <slide id="openapi-track-mix">
+      <title>OpenAPI Track/Summit/Conference</title>
+      <img src="openapi-track-mix.jpg" class="fullsize-shadow"/>
+    </slide>
+    <slide id="anniversary">
+      <title>It's Our Anniversary!</title>
+      <img src="openapi-track-anniversary.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <ul>
+        <li>20 events on 4 continents</li>
+        <li>145 presentations by 90 speakers</li>
+        <li>10 cities, from Melbourne to Mainz to Manhattan</li>
+        <li>Over 60 hours of OpenAPI content</li>
+        <li>New York 2026 is #20</li>
+        <li>Next up are Amsterdam and Munich</li>
       </ul>
     </slide>
     <slide id="history">
@@ -194,13 +206,8 @@
       <img src="oai-members.png" href="https://www.openapis.org/membershipmembers" class="fullsize-shadow"/>
     </slide>
     <slide id="thanks-openapi">
-      <title>Thank You!</title>
-      <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-      <ul>
-        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-        <img src="qr-code-erik-jentic.png" style=" width : 25% ; margin : 6% 0% 0% 0% ; "/>
-      </ul>
+      <title>Let's Get Started!</title>
+      <img src="end.jpg" class="fullsize-shadow"/>
     </slide>
   </presentation>
 </hotspot>
