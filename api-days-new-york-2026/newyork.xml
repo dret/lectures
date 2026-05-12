@@ -55,8 +55,8 @@
   <copyright>2026 Erik Wilde</copyright>
   <date short="2026-05-14">May 14, 2026</date>
   <presentation id="business-agents-and-agentic-coding">
-    <title>The Hidden Common Ground in Business Agents and Agentic Coding</title>
-    <toc class="abstract">Many organizations are treating business agents and agentic coding as separate trends, yet lack a clear understanding of whether they require fundamentally different platform investments. This fragmentation matters because it drives duplicated effort, inconsistent governance models, and misaligned API and AI strategies at a time when enterprises are under pressure to scale AI responsibly and efficiently. This talk looks at both use cases independently — examining their architectural, governance, and capability requirements — and then systematically compare them to reveal a shared platform substrate that is often overlooked. By clarifying their hidden common ground, this talk provides a more coherent roadmap for enterprise platform strategy, enabling organizations to align API, AI, and governance investments around a unified capability foundation rather than solving the same problem twice.</toc>
+    <title short="Business Agents and Agentic Coding">The Hidden Common Ground in Business Agents and Agentic Coding</title>
+    <toc class="abstract">Many organizations are treating business agents and agentic coding as separate trends, yet lack a clear understanding of whether they require fundamentally different platform investments. This fragmentation matters because it drives duplicated effort, inconsistent governance models, and misaligned API and AI strategies at a time when enterprises are under pressure to scale AI responsibly and efficiently. This talk looks at both use cases independently — examining their architectural, governance, and capability requirements — and then systematically compares them to reveal a shared platform substrate that is often overlooked. By clarifying their hidden common ground, this talk provides a more coherent roadmap for enterprise platform strategy, enabling organizations to align API, AI, and governance investments around a unified capability foundation rather than solving the same problem twice.</toc>
     <slide id="dret">
       <title>Erik Wilde</title>
       <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
@@ -76,13 +76,32 @@
         <ul>
           <li><em>Coding Agents</em></li>
           <ul>
-            <li>Narrow, well-scoped task: write and change code</li>
-            <li>Already working well and developers like them and use them</li>
+            <li>They change <em>how the business does things</em></li>
+            <li>Tool side speed-up</li>
+            <li>Getting existing work done faster</li>
           </ul>
           <li><em>Business Agents</em></li>
           <ul>
-            <li>Broader goal: take business action on your behalf</li>
-            <li>Few in the wild, mostly off-the-shelf in specific domains</li>
+            <li>They change <em>what the business does</em></li>
+            <li>Business-side reinvention</li>
+            <li>From narrow off-the-shelf to broad and ambitious</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="differences-common">
+        <title>Differences and Commonalities</title>
+        <ul>
+          <li>Different in obvious ways</li>
+          <ul>
+            <li>Coding agents arrive via <em>platform engineering</em></li>
+            <li>Business agents arrive via <em>business strategy</em></li>
+          </ul>
+          <li>Common in less obvious ways</li>
+          <ul>
+            <li>97% of developers use coding agents</li>
+            <li>Business agents keep arriving, at least as <span title="Common Off-the-Shelf Software">COTS</span></li>
+            <li>Both need to plug in and integrate</li>
+            <li>Both will have increasingly advanced capabilities</li>
           </ul>
         </ul>
       </slide>
@@ -103,14 +122,43 @@
           </ul>
         </ul>
       </slide>
+      <slide id="optionality">
+        <title>The Optionality Principle</title>
+        <img src="unbundling-the-enterprise.jpg" title='Stephen Fishman and Matt McLarty, "Unbundling the Enterprise: APIs, Optionality, and the Science of Happy Accidents", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li>Fitness = the ability to experiment and learn fast</li>
+          <li>AI is where that pays off most right now</li>
+          <li>Disconnected stacks → fragmented optionality</li>
+          <li>Shared platform → unified optionality</li>
+        </ul>
+      </slide>
+      <slide id="report">
+        <title>What We Found</title>
+        <ul>
+          <li>Many reports on AI scaling but none on <em>this</em> disconnect</li>
+          <li>We surveyed both sides</li>
+          <ul>
+            <li>IT / Platform engineering</li>
+            <li>Business</li>
+            <li>[X] responses across [X] organizations</li>
+          </ul>
+          <li>Found [X] disconnects</li>
+          <li>Today: 2 of them</li>
+          <ul>
+            <li><link href="ai-first-without-api-first"/></li>
+            <li><link href="agent-aware-security"/></li>
+          </ul>
+        </ul>
+      </slide>
     </part>
     <part id="ai-first-without-api-first">
-      <title>Anti-Pattern #1: AI-First without API-First</title>
+      <title>Disconnect #1: AI-First without API-First</title>
       <slide id="ai-first-without-api-first-problem">
         <title>AI-First without API-First: The Problem</title>
       </slide>
       <slide id="ai-first-without-api-first-data">
         <title>AI-First without API-First: The Data</title>
+        <img src="ai-ready-api-assessment.png" class="fullsize-shadow"/>
       </slide>
       <slide id="ai-first-without-api-first-consequences">
         <title>AI-First without API-First: The Consequences</title>
@@ -120,7 +168,7 @@
       </slide>
     </part>
     <part id="agent-aware-security">
-      <title>Anti-Pattern #2: No Agent-Aware Security</title>
+      <title>Disconnect #2: No Agent-Aware Security</title>
       <slide id="agent-aware-security-problem">
         <title>No Agent-Aware Security: The Problem</title>
       </slide>
@@ -139,8 +187,8 @@
       <slide id="one-platform">
         <title>One AI Agent Platform</title>
       </slide>
-      <slide id="anti-patterns">
-        <title>Other Agentic AI Anti-Patterns</title>
+      <slide id="disconnects">
+        <title>Other Agentic AI Disconnects</title>
       </slide>
       <slide id="thanks">
         <title>Thank You!</title>
