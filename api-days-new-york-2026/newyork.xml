@@ -101,7 +101,6 @@
             <li>97% of developers use coding agents</li>
             <li>Business agents keep arriving, at least as <span title="Common Off-the-Shelf Software">COTS</span></li>
             <li>Both need to plug in and integrate</li>
-            <li>Both will have increasingly advanced capabilities</li>
           </ul>
         </ul>
       </slide>
@@ -140,9 +139,9 @@
           <ul>
             <li>IT / Platform engineering</li>
             <li>Business</li>
-            <li>[X] responses across [X] organizations</li>
+            <li>200+ responses across 50 organizations</li>
           </ul>
-          <li>Found [X] disconnects</li>
+          <li>Found 7 disconnects</li>
           <li>Today: 2 of them</li>
           <ul>
             <li><link href="ai-first-without-api-first"/></li>
@@ -155,16 +154,38 @@
       <title>Disconnect #1: AI-First without API-First</title>
       <slide id="ai-first-without-api-first-problem">
         <title>AI-First without API-First: The Problem</title>
-      </slide>
+        <ul>
+          <li>Agents getting connected to APIs (directly or via MCP)</li>
+          <li>API quality and AI-readiness not checked first</li>
+          <li>Broken or sub-optimal workflows now exposed to agents</li>
+          <li>Old problems carry into the new AI layer</li>
+          <li>API problems may surface as AI problems</li>
+        </ul>      </slide>
       <slide id="ai-first-without-api-first-data">
         <title>AI-First without API-First: The Data</title>
         <img src="ai-ready-api-assessment.png" class="fullsize-shadow"/>
       </slide>
+      <slide id="agentic-confusion">
+        <title>Instruktör: Agentic Confusion</title>
+        <img src="ikea-robots.jpg" class="fullsize-shadow"/>
+      </slide>
       <slide id="ai-first-without-api-first-consequences">
         <title>AI-First without API-First: The Consequences</title>
+        <ul>
+          <li>Platform foundations skipped under C-suite AI pressure</li>
+          <li>AI pilots: isolated results, scaling not part of the plan</li>
+          <li>Bad processes get scaled up, not fixed</li>
+        </ul>
       </slide>
-      <slide id="ai-first-without-api-first-fix">
-        <title>AI-First without API-First: The Fix</title>
+      <slide id="ai-first-without-api-first-tactics">
+        <title>Tactics: MCP-Washing is not a Strategy</title>
+        <img src="mcp-api-plumbing.png" style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li>Make AI-readiness a gate before agent integrations</li>
+          <li>Reuse and refactor existing API governance</li>
+          <li>Fix bad APIs &amp; workflows <em>before</em> agents touch them</li>
+          <li>Don't paper over old problems with MCP</li>
+        </ul>
       </slide>
     </part>
     <part id="agent-aware-security">
@@ -178,14 +199,14 @@
       <slide id="agent-aware-security-consequences">
         <title>No Agent-Aware Security: The Consequences</title>
       </slide>
-      <slide id="agent-aware-security-fix">
-        <title>No Agent-Aware Security: The Fix</title>
+      <slide id="agent-aware-security-tactics">
+        <title>No Agent-Aware Security: Tactics</title>
       </slide>
     </part>
     <part id="conclusions">
       <title>Conclusions</title>
-      <slide id="one-platform">
-        <title>One AI Agent Platform</title>
+      <slide id="platform-tactics">
+        <title>AI Platform Tactics</title>
       </slide>
       <slide id="disconnects">
         <title>Other Agentic AI Disconnects</title>
