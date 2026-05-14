@@ -192,6 +192,12 @@
       <title>Disconnect #2: No Agent-Aware Security</title>
       <slide id="agent-aware-security-problem">
         <title>No Agent-Aware Security: The Problem</title>
+        <ul>
+          <li>Agents are less predictable than traditional code</li>
+          <li>Coding agents produce code: reviewable before it runs</li>
+          <li>Business agents produce actions: live as they're decided</li>
+          <li>Both need limits but controls in place are mostly symbolic</li>
+        </ul>
       </slide>
       <slide id="agent-aware-security-data">
         <title>No Agent-Aware Security: The Data</title>
@@ -199,18 +205,38 @@
       </slide>
       <slide id="agent-aware-security-consequences">
         <title>No Agent-Aware Security: The Consequences</title>
+        <ul>
+          <li>Some controls exist, but no one is watching</li>
+          <li>Vulnerabilities and unusual patterns invisible</li>
+          <li>Context and action creep: agents access more than they need</li>
+          <li><link href="optionality">Optionality</link> takes a hit when experiments feel unsafe</li>
+        </ul>
       </slide>
       <slide id="agent-aware-security-tactics">
         <title>No Agent-Aware Security: Tactics</title>
+        <ul>
+          <li>Add a control layer between agents and APIs</li>
+          <li>Default-deny: grant only what's needed</li>
+          <li>Monitor what agents do, not just <em>that</em> they have keys</li>
+          <li>Alerts + thresholds → human-in-the-loop</li>
+        </ul>
       </slide>
     </part>
     <part id="conclusions">
       <title>Conclusions</title>
       <slide id="platform-tactics">
         <title>AI Platform Tactics</title>
+        <img src="immanuel-kant.png" title="Immanuel Kant" style="float: right ; height : 40% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>One agent platform is the ideal, not the overnight plan</li>
+          <li>Treat both kinds of agents as one demand stream</li>
+          <li>Share governance, security, observability</li>
+          <li>Spot parallel platforms and manage strategically</li>
+        </ul>
       </slide>
-      <slide id="disconnects">
-        <title>Other Agentic AI Disconnects</title>
+      <slide id="report">
+        <title>The Report</title>
+        <img src="qr-code-report.png" class="fullsize"/>
       </slide>
       <slide id="thanks">
         <title>Thank You!</title>
