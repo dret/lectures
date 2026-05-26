@@ -42,10 +42,60 @@
         <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
       </ul>
     </slide>
-    <part id="ai-and-apis">
-      <title>No (Useful) AI Without APIs</title>
+    <part id="apis-ai">
+      <title>APIs and AI</title>
+      <slide id="audience-poll">
+        <title>Quick Show of Hands</title>
+        <ol>
+          <li>Who used an <em>agentic coding tool</em> this week? (Cursor, Claude Code, Copilot…)</li>
+          <li>Who has shipped code that <em>calls an LLM</em> in production?</li>
+          <li>Who has agents calling your APIs <em>autonomously</em> right now?</li>
+        </ol>
+        <hr/>
+        <ul>
+          <li>If you raised your hand for #1 you've already met one of the two new API consumers</li>
+        </ul>
+      </slide>
       <slide id="context-and-actions">
         <title>AI Needs Context &amp; Actions</title>
+      </slide>
+      <slide id="two-new-consumers">
+        <title>Two New API Consumers</title>
+        <ul>
+          <li><em>Coding agents</em></li>
+          <ul>
+            <li>Help developers build integrations faster</li>
+            <li>Read your APIs at <em>design time</em></li>
+            <li>The result is <q>traditional code</q> behaving deterministically</li>
+          </ul>
+          <li><em>Business agents</em></li>
+          <ul>
+            <li>Call your APIs autonomously to get things done</li>
+            <li>Read your APIs at <em>runtime</em></li>
+            <li>The result are <q>agents</q> behaving stochastically</li>
+          </ul>
+          <li>Both need something pre-AI developers never required</li>
+        </ul>
+      </slide>
+      <slide id="what-changes">
+        <title>What Changes for You: DX → AX</title>
+        <ul>
+          <li><em>API design:</em> readable for humans (DX) → consumable for machines (AX)</li>
+          <li><em>API abstraction:</em> endpoints → workflows</li>
+          <li><em>API safety:</em> credentials brokered, sandboxes around production</li>
+          <li>If your APIs are already in good shape, you're closer than you think</li>
+        </ul>
+      </slide>
+      <slide id="not-covered">
+        <title>Not Covered Today: AI Tooling for Delivering APIs</title>
+        <ul>
+          <li>Not everybody is in the business of delivering APIs</li>
+          <ul>
+            <li>But if you think you're not: Are you really really sure?</li>
+          </ul>
+          <li>Already important and will only get better</li>
+          <li>Using more AI naturally requires having more APIs</li>
+        </ul>
       </slide>
     </part>
     <part id="conclusions">
