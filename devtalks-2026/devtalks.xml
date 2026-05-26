@@ -29,7 +29,8 @@
   <date short="2026-06-04">June 4, 2026</date>
   <copyright>2026 Erik Wilde</copyright>
   <presentation id="index">
-    <title short="Beyond MCP">Beyond MCP: Scaling AI Enablement for API Landscapes</title>
+    <title>APIs for the Age of Agents</title>
+    <toc class="abstract">APIs have always been about exposing capabilities — but who's consuming them is changing fast. Alongside human developers, we now have two new types of API consumers: runtime agents that call APIs autonomously to get things done, and agentic coding tools that help developers and engineers build integrations faster than ever before. This shift changes what "good API design" means. Beyond readability for human developers, APIs now need to be optimized for machine consumption — what we might call agent experience. And above the API layer, workflows offer a more powerful abstraction: goal-oriented interfaces that let agents (and the people building with them) work at a higher level than individual endpoint calls. Making this work safely at enterprise scale requires two things: a security layer that brokers credentials so agents never hold secrets directly, and sandboxed environments that let agents and builders operate freely without risk to production systems. If you've already invested in your API estate, you're closer than you think. The path forward is an evolution, not a rewrite.</toc>
     <slide id="dret">
       <title>Erik Wilde</title>
       <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
