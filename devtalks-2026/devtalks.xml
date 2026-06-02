@@ -47,9 +47,9 @@
       <slide id="audience-poll">
         <title>Quick Show of Hands</title>
         <ol>
-          <li>Who used an <em>agentic coding tool</em> this week? (Cursor, Claude Code, Copilot…)</li>
-          <li>Who has shipped code that <em>calls an LLM</em> in production?</li>
-          <li>Who has agents calling your APIs <em>autonomously</em> right now?</li>
+          <li>Who used an <em>agentic coding tool</em> this week? (Cursor, Claude Code, Copilot, Codex…)</li>
+          <li>Who has shipped code that <em>takes action based on LLM output</em> in production?</li>
+          <li>Who has business agents calling APIs <em>autonomously</em> right now?</li>
         </ol>
         <hr/>
         <ul>
@@ -60,10 +60,10 @@
         <title>AI Needs Context &amp; Actions</title>
         <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally et al., "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 60% ; float: right ; margin : 0% 4% 4% 4% ; " class="shadow"/>
         <ul>
-          <li>LLMs alone: stuck in training data</li>
-          <li>Need <em>context</em> (now) and <em>actions</em> (do something)</li>
+          <li>LLMs alone: stuck in static training data</li>
+          <li>Need <em>context</em> (private &amp; current data) and <em>actions</em> (do something)</li>
           <li>Both flow through APIs</li>
-          <li>When this layer is missing → the GenAI divide</li>
+          <li>When this layer is missing → GenAI divide</li>
         </ul>
       </slide>
       <slide id="two-new-consumers">
@@ -72,16 +72,16 @@
           <li><em>Coding agents</em></li>
           <ul>
             <li>Help developers build integrations faster</li>
-            <li>Read your APIs at <em>design time</em></li>
+            <li>Consume your APIs at <em>design time</em></li>
             <li>AI inference is <em>discovering and coding with APIs</em></li>
-            <li>The result: <q>traditional code</q> behaving deterministically</li>
+            <li>The result is <q>traditional code</q> that behaves deterministically</li>
           </ul>
           <li><em>Business agents</em></li>
           <ul>
             <li>Call your APIs autonomously to get things done</li>
             <li>Read your APIs at <em>runtime</em></li>
             <li>AI inference is <em>discovering and using APIs</em></li>
-            <li>The result: <q>agents</q> behaving stochastically</li>
+            <li>The result are <q>agents</q> that behave stochastically</li>
           </ul>
           <li>Both need things <em>pre-AI developers</em> never required</li>
         </ul>
@@ -101,54 +101,61 @@
       <title>MCP to the Rescue?</title>
       <slide id="just-mcp">
         <title>Just Use MCP?</title>
-        <img src="mcp-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+        <img src="mcp-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
-          <li>The vendor pitch: <q>APIs are old, MCP is the future</q></li>
+          <li>The pitch: <q>APIs are old, MCP is the future</q></li>
           <li>Wrap anything in MCP → call it AI-ready</li>
           <li>Skip the hard API work → straight to AI</li>
-          <li>Two problems with that</li>
+          <li>Just <q>start fresh</q> after 10 years of API landscape work?</li>
         </ul>
       </slide>
       <slide id="naive-mcp">
-        <title>Problem 1: Naively Exposing APIs</title>
-        <img src="api-mcp-ai-direct.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; " class="shadow"/>
+        <title>Problem 1: Directly Exposing APIs</title>
+        <img src="api-mcp-ai-direct.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; " />
         <ul>
           <li>Auto-generate MCP from OpenAPI for every API</li>
           <li>Context window explosion on real workloads</li>
           <li>Bad descriptions → bad MCP</li>
           <li>AI still has to invent workflows across endpoints</li>
-          <li>You renamed the problem, you didn't solve it</li>
+          <li>Now your agents get to have a poor integration experience</li>
         </ul>
       </slide>
       <slide id="heavy-mcp">
         <title>Problem 2: Investing in the MCP Layer</title>
-        <img src="api-mcp-ai-custom-mcp.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; " class="shadow"/>
+        <img src="api-mcp-ai-custom-mcp.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; " />
         <ul>
           <li>Hand-craft MCP servers, design the best tools</li>
           <li>The investment goes into the <em>MCP layer</em></li>
-          <li>Not into the <em>capability layer</em> underneath</li>
+          <li>The <em>capability layer</em> underneath remains untouched</li>
           <li>Better capabilities benefit everyone, not just MCP</li>
-          <li>MCP is a delivery layer, not where the work happens</li>
+          <li>Everybody's integration experience should benefit</li>
         </ul>
       </slide>
       <slide id="mcp-washing">
         <title>MCP-Washing</title>
         <ul>
           <li>Skip the API work → jump to MCP → call it <q>AI-ready</q></li>
-          <li>Same bad descriptions, same sprawl, now with a logo</li>
-          <li>MCP should be a <em>thin</em> layer, not a thick one</li>
-          <li>Invest in your <em>APIs</em>; expose them through MCP</li>
+          <li>This is the wrong place to invest from a strategy perspective</li>
+          <li>MCP should be a <em>thin</em> layer, not a <em>fat</em> one</li>
+          <li>Invest in your <em>APIs</em> and then expose them through MCP</li>
         </ul>
       </slide>
       <slide id="scorecard-baseline">
-        <title>Then Look at Your APIs</title>
-        <img src="api-ai-scorecard.png" href="https://jentic.com/scorecard" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; " class="shadow"/>
+        <title>Are Your APIs AI-Ready?</title>
+        <img src="api-ai-scorecard.png" href="https://jentic.com/scorecard" style="float: right ; width : 50% ; margin : 0% 4% 4% 4% ; " class="shadow"/>
         <ul>
-          <li>If MCP isn't the shortcut → the work is in your APIs</li>
+          <li>Invest in your APIs</li>
           <li>Start by scoring what you have</li>
-          <li><a href="https://jentic.com/scorecard">jentic.com/scorecard</a></li>
-          <li>Good score → continue. Bad score → fix the basics first.</li>
+          <li><code href="https://jentic.com/scorecard">jentic.com/scorecard</code></li>
+          <ul>
+            <li>Bad score → fix the basics first</li>
+            <li>Good score → continue</li>
+          </ul>
         </ul>
+      </slide>
+      <slide id="scorecard-model">
+        <title>Six Dimensions of AI-Readiness</title>
+        <img src="api-ai-readiness-dimensions.png" class="fullsize-shadow" />
       </slide>
     </part>
     <part id="evolving">
@@ -158,9 +165,10 @@
         <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
         <ul>
           <li>APIs were typically consumed by developers</li>
-          <li>Developers write code that <em>often fills API/UX gaps</em></li>
-          <li>Business agents take the developer out of the picture</li>
+          <li>Developers write code that <em>often fills DX gaps</em></li>
           <li>LLMs have much more limited context than developers</li>
+          <li><em>Coding agents</em> shouldn't depend on developers selecting APIs</li>
+          <li><em>Business agents</em> take the developer out of the picture</li>
         </ul>
       </slide>
       <slide id="dx-homework">
@@ -185,34 +193,51 @@
             <li>Everything that developers usually <q>just know</q></li>
             <li>Treat every API like an external one for developers with no context</li>
           </ul>
-          <li>OpenAPI Initiative (OAI) might add AX-specific fields</li>
+          <li>OpenAPI Initiative (OAI) might add AX-specific fields to <em>OpenAPI 3.3</em></li>
           <li>Until then, leverage description fields strategically</li>
         </ul>
       </slide>
-      <slide id="workflows-matter">
-        <title>Why Workflows Matter</title>
+    </part>
+    <part id="workflows">
+      <title>Making Workflows Repeatable</title>
+      <slide id="ai-mimimalism">
+        <title>AI Minimalism</title>
         <ul>
-          <li>Many tasks follow predictable, repeatable sequences</li>
-          <li>Agents shouldn't re-discover the same steps</li>
-          <li>Less context, less confusion, faster results</li>
-          <li>Predictable, auditable, business-aligned</li>
+          <li>Use AI when you have to, not when you can</li>
+          <li>AI execution is <em>orders of magnitude more expensive</em> than running code</li>
+          <li>Many business processes are <em>well-defined</em> and <em>repeatable</em></li>
+          <li>Some business processes may need to be <em>auditable</em> and/or <em>explainable</em></li>
+          <li>Your AI strategy should be to use <em>as little AI as possible</em></li>
         </ul>
       </slide>
       <slide id="arazzo-intro">
         <title>OAI Arazzo</title>
         <img src="arazzo-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
-          <li>Arazzo is an open workflow standard by OAI</li>
+          <li>Many tasks follow predictable, repeatable sequences</li>
+          <li>Agents shouldn't re-discover the same steps</li>
+          <li><em>Arazzo</em> is an open workflow standard by the <a href="https://openapis.org/">OpenAPI Initiative (OAI)</a></li>
           <li>It allows combining API interactions into workflows</li>
           <li>Arazzo was designed for documentation, testing, and SDK generation</li>
-          <li>New versions will start incorporating AsyncAPI support</li>
+          <li><a href="https://www.openapis.org/arazzo-specification">Version 1.1 (May 2026)</a> adds AsyncAPI support</li>
         </ul>
       </slide>
+      <slide id="workflow-capability">
+        <title>Workflows as Capabilities</title>
+        <ul>
+          <li>Workflows become the new capability layer</li>
+          <li>Exposing workflows to consumers turns them into first-level citizens</li>
+          <li>Consider hiding the APIs underneath (from some consumers)</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="great-power">
+      <title>With Great Power…</title>
       <slide id="agent-credentials-problem">
         <title>Today: Agents Get Keys Directly</title>
         <ul>
-          <li>Agents are less predictable than traditional code</li>
-          <li>Coding agents produce code → reviewable before it runs</li>
+          <li>Agents are less predictable than traditional developers</li>
+          <li><em>Coding agents</em> produce code → reviewable before it runs</li>
           <li>Business agents produce actions → live as they're decided</li>
           <li>Both need limits, but the controls in place are mostly symbolic</li>
         </ul>
@@ -221,7 +246,7 @@
         <title>Secure Centralized Access for Agents</title>
         <ul>
           <li>Agents should have their own security regime</li>
-          <li>Avoid leaking secrets and tokens directly to agents</li>
+          <li>Avoid handing secrets and tokens directly to agents</li>
           <li>Prevent agents from impersonating users or apps</li>
           <li>Ensure proper token delegation and downscoping</li>
           <li>Route all traffic through a centralized access point</li>
@@ -234,15 +259,16 @@
           <li>Create a controlled environment for agents</li>
           <li>Make capabilities available in the sandbox</li>
           <li>Prevent agents from accessing production secrets</li>
-          <li>Provide realistic data (synthetic or mock) for testing</li>
-          <li>Centralized control: we decide where agents can play</li>
+          <li>Provide realistic data for testing</li>
+          <li>Reduce risk and encourage safe experimentation</li>
         </ul>
       </slide>
     </part>
     <part id="conclusions">
       <title>Conclusions</title>
-      <slide id="landscape-evolution">
-        <title>Evolution, Not Rewrite</title>
+      <slide id="optionality">
+        <title>Towards API-led AI Optionality</title>
+        <img src="unbundling-the-enterprise.jpg" title='Stephen Fishman and Matt McLarty, "Unbundling the Enterprise: APIs, Optionality, and the Science of Happy Accidents", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
         <ul>
           <li><em>Start simple:</em> improve API descriptions and documentation</li>
           <li><em>Build up:</em> add workflows, credentials, observability, sandboxes</li>
@@ -254,7 +280,7 @@
         <title>Start Tomorrow: Score Your APIs</title>
         <img src="api-ai-scorecard.png" href="https://jentic.com/scorecard" style="float: left ; width : 55% ; margin : 4% 0% 2% 4% ; " class="shadow"/>
         <img src="qr-code-jentic-scorecard.png" href="https://jentic.com/scorecard" style="float: right ; width : 25% ; margin : 4% 4% 2% 0% ; "/>
-        <p style="text-align: center; clear: both;"><a href="https://jentic.com/scorecard">jentic.com/scorecard</a></p>
+        <p style="text-align: center; clear: both;"><code href="https://jentic.com/scorecard">jentic.com/scorecard</code></p>
       </slide>
       <slide id="thanks">
         <title>Thank You!</title>
