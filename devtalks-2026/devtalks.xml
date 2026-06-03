@@ -264,8 +264,8 @@
         <title>Three Levels of API Improvement</title>
         <img src="unbundling-the-enterprise.jpg" title='Stephen Fishman and Matt McLarty, "Unbundling the Enterprise: APIs, Optionality, and the Science of Happy Accidents", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
         <ol>
-          <li><em>Improve descriptions</em> — cheap, no code change, immediately more agent-friendly</li>
-          <li><em>Improve definitions</em> — change the API itself, capabilities get cleaner</li>
+          <li><em>Improve descriptions</em> — change <em>API description</em>: easy, immediate results</li>
+          <li><em>Improve definitions</em> — change <em>the API itself</em>: harder, improves capabilities</li>
           <li><em>Start platform engineering</em> — built once, used across many APIs:</li>
           <ul>
             <li>Workflow orchestration (open standard: Arazzo)</li>
