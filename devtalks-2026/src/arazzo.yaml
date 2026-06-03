@@ -1,0 +1,14 @@
+workflows:
+  - workflowId: weekend-getaway
+    steps:
+      - stepId: listHotels
+        description: Retrieve hotels available in the destination city
+        operationPath: '{$sourceDescriptions.liteapi-hotel-data.url}#/paths/~1data~1hotels/get'
+        parameters:
+          - name: cityName
+            in: query
+            value: $inputs.cityName
+        successCriteria:
+          - condition: $statusCode == 200
+        outputs:
+          hotelIds: $response.body#/data[*]/hotelId

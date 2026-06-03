@@ -212,17 +212,17 @@
           <li>Your AI strategy should be to use <em>as little AI as possible</em></li>
         </ul>
       </slide>
-      <slide id="arazzo-intro">
-        <title>OAI Arazzo</title>
+      <slide id="what-is-arazzo">
+        <title>What Is Arazzo?</title>
         <img src="arazzo-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
-          <li>Many tasks follow predictable, repeatable sequences</li>
-          <li>Agents shouldn't re-discover the same steps</li>
-          <li><em>Arazzo</em> is an open workflow standard by the <a href="https://openapis.org/">OpenAPI Initiative (OAI)</a></li>
-          <li>It allows combining API interactions into workflows</li>
-          <li>Arazzo was designed for documentation, testing, and SDK generation</li>
-          <li><a href="https://www.openapis.org/arazzo-specification">Version 1.1 (May 2026)</a> adds AsyncAPI support</li>
+          <li><em>Declarative:</em> define the data flow and success criteria</li>
+          <li><a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a> standard for API workflows</li>
+          <li>References <code>operationId</code>s from OpenAPI/AsyncAPI documents</li>
+          <li>Discoverable: find and run a workflow without knowing its internals</li>
         </ul>
+        <listing src="arazzo.yaml"/>
+        <p style="text-align: center;">See the full workflow: <code href="https://arazzo-ui.jentic.com/?document=https%3A%2F%2Fraw.githubusercontent.com%2Ffrankkilcommins%2Fagentic-tools-webinar%2Frefs%2Fheads%2Fmain%2Farazzo%2Fweekend-getaway.arazzo.yaml">arazzo-ui.jentic.com</code></p>
       </slide>
     </part>
     <part id="great-power">
@@ -260,14 +260,22 @@
     </part>
     <part id="conclusions">
       <title>Conclusions</title>
-      <slide id="optionality">
-        <title>Towards API-led AI Optionality</title>
+      <slide id="three-levels">
+        <title>Three Levels of API Improvement</title>
         <img src="unbundling-the-enterprise.jpg" title='Stephen Fishman and Matt McLarty, "Unbundling the Enterprise: APIs, Optionality, and the Science of Happy Accidents", 2024' style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ol>
+          <li><em>Improve descriptions</em> — cheap, no code change, immediately more agent-friendly</li>
+          <li><em>Improve definitions</em> — change the API itself, capabilities get cleaner</li>
+          <li><em>Start platform engineering</em> — built once, used across many APIs:</li>
+          <ul>
+            <li>Workflow orchestration (open standard: Arazzo)</li>
+            <li>Credential brokering for safe agent access</li>
+            <li>Sandboxes for safe experimentation</li>
+          </ul>
+        </ol>
+        <hr/>
         <ul>
-          <li><em>Start simple:</em> improve API descriptions and documentation</li>
-          <li><em>Build up:</em> add workflows, credentials, observability, sandboxes</li>
-          <li><em>End goal:</em> flexible landscape, safe for agents, valuable for everyone</li>
-          <li>If your APIs are already in good shape: you're closer than you think</li>
+          <li>If your APIs are already in good shape, you're closer than you think</li>
         </ul>
       </slide>
       <slide id="scorecard-cta">
