@@ -133,8 +133,9 @@
       </slide>
       <slide id="mcp-washing">
         <title>MCP-Washing</title>
+        <img src="mcp-washing.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
-          <li>Skip the API work → jump to MCP → call it <q>AI-ready</q></li>
+          <li>Skip the API work → jump to MCP → call it <q>AI-readiness</q></li>
           <li>This is the wrong place to invest from a strategy perspective</li>
           <li>MCP should be a <em>thin</em> layer, not a <em>fat</em> one</li>
           <li>Invest in your <em>APIs</em> and then expose them through MCP</li>
