@@ -166,9 +166,11 @@
         <ul>
           <li>APIs were typically consumed by developers</li>
           <li>Developers write code that <em>often fills DX gaps</em></li>
-          <li>LLMs have much more limited context than developers</li>
-          <li><em>Coding agents</em> shouldn't depend on developers selecting APIs</li>
-          <li><em>Business agents</em> take the developer out of the picture</li>
+          <li>LLMs have more limited context than developers</li>
+          <ul>
+            <li><em>Coding agents</em> shouldn't depend on developers selecting APIs</li>
+            <li><em>Business agents</em> take the developer out of the picture</li>
+          </ul>
         </ul>
       </slide>
       <slide id="dx-homework">
@@ -200,7 +202,7 @@
     </part>
     <part id="workflows">
       <title>Making Workflows Repeatable</title>
-      <slide id="ai-mimimalism">
+      <slide id="ai-minimalism">
         <title>AI Minimalism</title>
         <ul>
           <li>Use AI when you have to, not when you can</li>
@@ -220,14 +222,6 @@
           <li>It allows combining API interactions into workflows</li>
           <li>Arazzo was designed for documentation, testing, and SDK generation</li>
           <li><a href="https://www.openapis.org/arazzo-specification">Version 1.1 (May 2026)</a> adds AsyncAPI support</li>
-        </ul>
-      </slide>
-      <slide id="workflow-capability">
-        <title>Workflows as Capabilities</title>
-        <ul>
-          <li>Workflows become the new capability layer</li>
-          <li>Exposing workflows to consumers turns them into first-level citizens</li>
-          <li>Consider hiding the APIs underneath (from some consumers)</li>
         </ul>
       </slide>
     </part>
