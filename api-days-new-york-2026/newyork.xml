@@ -106,7 +106,7 @@
       </slide>
       <slide id="platform-principle">
         <title>The Platform Principle</title>
-        <img src="platform-principle.jpg" style="float: right ; height : 50% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <img src="platform-principle.jpg" title="Platform Engineering: Reduce repetitive tasks and make building things more effective" style="float: right ; height : 50% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
         <ul>
           <li>You don't need a platform to ship <em>one</em> thing</li>
           <li>Platforms are for shipping <em>many</em> similar things at scale</li>
@@ -167,7 +167,7 @@
       </slide>
       <slide id="agentic-confusion">
         <title>Instruktör: Agentic Confusion</title>
-        <img src="ikea-robots.jpg" class="fullsize-shadow"/>
+        <img src="ikea-robots.jpg" title="What happens when you hand your agents bad APIs" class="fullsize-shadow"/>
       </slide>
       <slide id="ai-first-without-api-first-consequences">
         <title>AI-First without API-First: The Consequences</title>
@@ -226,7 +226,7 @@
       <title>Conclusions</title>
       <slide id="platform-tactics">
         <title>AI Platform Tactics</title>
-        <img src="immanuel-kant.png" title="Immanuel Kant" style="float: right ; height : 50% ; margin : 0% 4% 4% 4% ; "/>
+        <img src="immanuel-kant.png" title='Immanuel Kant: "An ideal is a regulative idea"' style="float: right ; height : 50% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
           <li>One agent platform is the ideal, not the overnight plan</li>
           <li>Treat both kinds of agents as one demand stream</li>
