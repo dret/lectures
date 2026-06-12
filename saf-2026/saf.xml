@@ -131,6 +131,19 @@
     </part>
     <part id="delivery">
       <title>Exposing API Landscapes for AI Consumption</title>
+      <slide id="dx-ax">
+        <title>When LLMs Read Your APIs</title>
+        <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+        <ul>
+          <li>APIs were typically consumed by developers</li>
+          <li>Developers write code that <em>often fills DX gaps</em></li>
+          <li>LLMs have more limited context than developers</li>
+          <ul>
+            <li><em>Coding agents</em> shouldn't depend on developers selecting APIs</li>
+            <li><em>Business agents</em> take the developer out of the picture</li>
+          </ul>
+        </ul>
+      </slide>
     </part>
     <slide id="thanks">
       <title>Thank You!</title>
