@@ -30,6 +30,17 @@
   <presentation id="index">
     <title>APIs für die AI Nutzung: Wie geht das?</title>
     <toc class="abstract">AI stellt neue Anforderungen an die Auffindbarkeit und Nutzbarkeit von APIs. Wir schauen darauf, wie APIs bisher entworfen und verwaltet wurden, und welche neuen Aspekte für die Unterstützung von AI hinzukommen. Die Unterschiede zum bisherigen Vorgehen sind nicht grundsätzlicher Art, aber gross genug, dass sie Änderungen im Umgang mit APIs erfordern.</toc>
+    <slide id="thilo">
+      <title>Thilo Frotscher</title>
+      <img src="api-conference.svg" title="API Conference" href="https://apiconference.net/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <img src="better-code.svg" title="betterCode" href="https://api.bettercode.eu/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <ul>
+        <li>Independent Expert for APIs &amp; Integration Architectures</li>
+        <li>Lead Developer / Technical Architect / Trainer</li>
+        <li>Author &amp; Speaker</li>
+        <li>Advisory Board Member for <a href="https://apiconference.net/">API Conference</a> &amp; <a href="https://api.bettercode.eu/">betterCode() API</a></li>
+      </ul>
+    </slide>
     <slide id="dret">
       <title>Erik Wilde</title>
       <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
