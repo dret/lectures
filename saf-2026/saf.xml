@@ -145,14 +145,16 @@
         </ul>
       </slide>
     </part>
-    <slide id="thanks">
-      <title>Thank You!</title>
-      <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-      <ul>
-        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-      </ul>
-      <img src="qr-code-session-feedback.png" style=" height : 45% ; margin : 4% 4% 4% 6% ; "/>
-    </slide>
+    <part id="conclusions">
+      <slide id="thanks">
+        <title>Thank You!</title>
+        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        </ul>
+        <img src="qr-code-session-feedback.png" style=" height : 45% ; margin : 4% 4% 4% 6% ; "/>
+      </slide>
+    </part>
   </presentation>
-</hotspot>
+  </hotspot>
