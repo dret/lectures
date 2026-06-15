@@ -142,21 +142,105 @@
           <li>LLMs have more limited context than developers</li>
           <ul>
             <li><em>Coding agents</em> shouldn't depend on developers selecting APIs</li>
-            <li><em>Business agents</em> take the developer out of the picture</li>
+            <li><em>Business agents</em> need to fully <q>understand</q> APIs</li>
           </ul>
+        </ul>
+      </slide>
+      <slide id="four-levels">
+        <title>Four Levels of API Evolution</title>
+        <img src="api-evolution.png" style="float: right ; width : 35% ; margin : 0% 4% 4% 4% ; "/>
+        <ol>
+          <li><em>Improve descriptions</em> → easy, no code change, immediately more agent-friendly</li>
+          <li><em>Improve definitions (backwards-compatible)</em> → change the API, don't break consumers</li>
+          <li><em>Revise the API</em> → new API; consumers must migrate</li>
+          <li><em>Add workflows on top</em> → orchestration above existing APIs</li>
+        </ol>
+      </slide>
+      <slide id="dx-homework">
+        <title>Level 1a: Do Your DX Homework</title>
+        <ul>
+          <li>Most API descriptions need quality improvements anyway</li>
+          <li>Better descriptions benefit <em>everyone</em>, not just AI agents</li>
+          <ul>
+            <li>Complete and meaningful operation summaries</li>
+            <li>Comprehensive examples for all operations</li>
+            <li>Clear error handling</li>
+            <li>Consistent terminology and naming</li>
+          </ul>
+          <li>Good DX is the foundation for good AX</li>
+        </ul>
+      </slide>
+      <slide id="ax-homework">
+        <title>Level 1b: Now There's AX Homework, Too</title>
+        <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+        <ul>
+          <li>AI agents need information developers don't typically require:</li>
+          <ul>
+            <li>Everything that developers usually <q>just know</q></li>
+            <li>Treat every API like an external one for developers with no context</li>
+          </ul>
+          <li>OpenAPI Initiative (OAI) might add AX-specific fields</li>
+          <li>Until then, leverage description fields strategically</li>
+        </ul>
+      </slide>
+      <slide id="backwards-compat">
+        <title>Level 2: Backwards-Compatible Evolution</title>
+        <ul>
+          <li>Improve the API itself <em>without</em> breaking existing consumers</li>
+          <ul>
+            <li>Add optional fields and parameters</li>
+            <li>Enrich responses with new optional structures</li>
+            <li>Add new endpoints alongside existing ones</li>
+            <li>Tighten constraints; never loosen contracts</li>
+          </ul>
+          <li>Works well in well-governed API landscapes</li>
+          <li>Morphs into <em>Level 3</em> in brittle or ungoverned API landscapes</li>
+        </ul>
+      </slide>
+      <slide id="what-is-arazzo">
+        <title>Level 4: (Arazzo) Workflows</title>
+        <img src="arazzo-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li><em>Declarative:</em> define the data flow and success criteria</li>
+          <li><a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a> standard for API workflows</li>
+          <li>References <code>operationId</code>s from OpenAPI/AsyncAPI documents</li>
+        </ul>
+        <listing src="arazzo.yaml"/>
+        <p style="text-align: center;">See the full workflow: <code href="https://arazzo-ui.jentic.com/?document=https%3A%2F%2Fraw.githubusercontent.com%2Ffrankkilcommins%2Fagentic-tools-webinar%2Frefs%2Fheads%2Fmain%2Farazzo%2Fweekend-getaway.arazzo.yaml">arazzo-ui.jentic.com</code></p>
+      </slide>
+      <slide id="api-ai-scorecard">
+        <title>You Can't Improve What You Don't Measure</title>
+        <img src="api-ai-scorecard.png" href="https://jentic.com/scorecard" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; " class="shadow"/>
+        <ul>
+          <li>Spectral &amp; Co. aren't all you need</li>
+          <li><em>API Scorecard</em> scores your APIs across six dimensions</li>
+          <li><em>Web:</em> <code href="https://jentic.com/scorecard">jentic.com/scorecard</code></li>
+          <li><em>CLI:</em> <code>npm install -g @jentic/api-scorecard-cli</code></li>
+          <li>Repo: <code href="https://github.com/jentic/jentic-api-scorecard">github.com/jentic/jentic-api-scorecard</code></li>
         </ul>
       </slide>
     </part>
     <part id="conclusions">
       <title>Conclusions</title>
+      <slide id="isaqb-callback">
+        <title>Aligned with the iSAQB API Module</title>
+        <ul>
+          <li>Covered in the <a href="https://www.isaqb.org/certifications/cpsa-certifications/cpsa-advanced-level/api/">CPSA Advanced Level: API Module</a></li>
+          <ul>
+            <li>API Design, Description, Lifecycle</li>
+            <li>API Security &amp; APIs at Scale</li>
+          </ul>
+          <li>Background reading (iSAQB blog posts)</li>
+          <ul>
+            <li><q><a href="https://www.isaqb.org/blog/apis-as-business-assets-designing-for-scale-governance-and-ai/">APIs as Business Assets: Designing for Scale, Governance, and AI</a></q></li>
+            <li><q><a href="https://www.isaqb.org/blog/apis-digital-building-blocks-for-modern-business-models/">APIs as Digital Building Blocks</a></q></li>
+          </ul>
+        </ul>
+      </slide>
       <slide id="thanks">
         <title>Thank You!</title>
-        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-        <ul>
-          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-        </ul>
-        <img src="qr-code-session-feedback.png" style=" height : 45% ; margin : 4% 4% 4% 6% ; "/>
+        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 6% 4% 6% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <img src="qr-code-session-feedback.png" style=" height : 65% ; margin : 0% 6% 4% 6% ; "/>
       </slide>
     </part>
   </presentation>
