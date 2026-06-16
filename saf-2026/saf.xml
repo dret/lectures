@@ -246,28 +246,6 @@
           <li>Just <q>start fresh</q> after 10 years of API landscape work?</li>
         </ul>
       </slide>
-      <slide id="naive-mcp">
-        <title>Problem 1: Directly Exposing APIs</title>
-        <img src="api-mcp-ai-direct.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; " />
-        <ul>
-          <li>Auto-generate MCP from OpenAPI for every API</li>
-          <li>Context window explosion on real workloads</li>
-          <li>Bad descriptions → bad MCP</li>
-          <li>AI still has to invent workflows across endpoints</li>
-          <li>Now your agents get to have a poor integration experience</li>
-        </ul>
-      </slide>
-      <slide id="heavy-mcp">
-        <title>Problem 2: Investing in the MCP Layer</title>
-        <img src="api-mcp-ai-custom-mcp.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; " />
-        <ul>
-          <li>Hand-craft MCP servers, design the best tools</li>
-          <li>The investment goes into the <em>MCP layer</em></li>
-          <li>The <em>capability layer</em> underneath remains untouched</li>
-          <li>Better capabilities benefit everyone, not just MCP</li>
-          <li>Everybody's integration experience should benefit</li>
-        </ul>
-      </slide>
       <slide id="mcp-washing">
         <title>MCP-Washing</title>
         <img src="mcp-washing.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; "/>
@@ -299,7 +277,7 @@
       <slide id="thanks">
         <title>Thank You!</title>
         <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 6% 4% 6% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-        <img src="qr-code-session-feedback.png" style=" height : 65% ; margin : 0% 6% 4% 6% ; "/>
+        <img src="qr-code-session-feedback.png" style=" height : 60% ; margin : 0% 6% 4% 6% ; "/>
       </slide>
     </part>
   </presentation>
