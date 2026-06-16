@@ -207,16 +207,6 @@
           <li>Morphs into <em>Level 3</em> in brittle or ungoverned API landscapes</li>
         </ul>
       </slide>
-      <slide id="mcp-washing">
-        <title>MCP-Washing</title>
-        <img src="mcp-washing.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; "/>
-        <ul>
-          <li>Skip the API work → jump to MCP → call it <q>AI-readiness</q></li>
-          <li>This is the wrong place to invest from a strategy perspective</li>
-          <li>MCP should be a <em>thin</em> layer, not a <em>fat</em> one</li>
-          <li>Invest in your <em>APIs</em> and then expose them through MCP</li>
-        </ul>
-      </slide>
       <slide id="what-is-arazzo">
         <title>Level 4: (Arazzo) Workflows</title>
         <img src="arazzo-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
@@ -237,6 +227,23 @@
           <li><em>Web:</em> <code href="https://jentic.com/scorecard">jentic.com/scorecard</code></li>
           <li><em>CLI:</em> <code>npm install -g @jentic/api-scorecard-cli</code></li>
           <li>Repo: <code href="https://github.com/jentic/jentic-api-scorecard">github.com/jentic/jentic-api-scorecard</code></li>
+        </ul>
+      </slide>
+      <slide id="api-ai-readiness-score">
+        <title>AI Readiness Score for APIs</title>
+        <img src="api-ai-readiness-score-twilio-alarms.png"  href="https://jentic.com/scorecard" class="fullsize-shadow" />
+      </slide>
+    </part>
+    <part id="mcp">
+      <title>MCP Fixes Everything!</title>
+      <slide id="mcp-washing">
+        <title>MCP-Washing</title>
+        <img src="mcp-washing.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Skip the API work → jump to MCP → call it <q>AI-readiness</q></li>
+          <li>This is the wrong place to invest from a strategy perspective</li>
+          <li>MCP should be a <em>thin</em> layer, not a <em>fat</em> one</li>
+          <li>Invest in your <em>APIs</em> and then expose them through MCP</li>
         </ul>
       </slide>
     </part>
