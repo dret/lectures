@@ -235,7 +235,39 @@
       </slide>
     </part>
     <part id="mcp">
-      <title>MCP Fixes Everything!</title>
+      <title>MCP to the Rescue!?!</title>
+      <slide id="just-mcp">
+        <title>Just Use MCP?</title>
+        <img src="mcp-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>The pitch: <q>APIs are old, MCP is the future</q></li>
+          <li>Wrap anything in MCP → call it AI-ready</li>
+          <li>Skip the hard API work → straight to AI</li>
+          <li>Just <q>start fresh</q> after 10 years of API landscape work?</li>
+        </ul>
+      </slide>
+      <slide id="naive-mcp">
+        <title>Problem 1: Directly Exposing APIs</title>
+        <img src="api-mcp-ai-direct.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; " />
+        <ul>
+          <li>Auto-generate MCP from OpenAPI for every API</li>
+          <li>Context window explosion on real workloads</li>
+          <li>Bad descriptions → bad MCP</li>
+          <li>AI still has to invent workflows across endpoints</li>
+          <li>Now your agents get to have a poor integration experience</li>
+        </ul>
+      </slide>
+      <slide id="heavy-mcp">
+        <title>Problem 2: Investing in the MCP Layer</title>
+        <img src="api-mcp-ai-custom-mcp.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; " />
+        <ul>
+          <li>Hand-craft MCP servers, design the best tools</li>
+          <li>The investment goes into the <em>MCP layer</em></li>
+          <li>The <em>capability layer</em> underneath remains untouched</li>
+          <li>Better capabilities benefit everyone, not just MCP</li>
+          <li>Everybody's integration experience should benefit</li>
+        </ul>
+      </slide>
       <slide id="mcp-washing">
         <title>MCP-Washing</title>
         <img src="mcp-washing.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; "/>
@@ -243,7 +275,7 @@
           <li>Skip the API work → jump to MCP → call it <q>AI-readiness</q></li>
           <li>This is the wrong place to invest from a strategy perspective</li>
           <li>MCP should be a <em>thin</em> layer, not a <em>fat</em> one</li>
-          <li>Invest in your <em>APIs</em> and then expose them through MCP</li>
+          <li>Invest in your APIs and then expose them through MCP</li>
         </ul>
       </slide>
     </part>
