@@ -30,30 +30,37 @@
   <presentation id="index">
     <title>APIs für die AI Nutzung: Wie geht das?</title>
     <toc class="abstract">AI stellt neue Anforderungen an die Auffindbarkeit und Nutzbarkeit von APIs. Wir schauen darauf, wie APIs bisher entworfen und verwaltet wurden, und welche neuen Aspekte für die Unterstützung von AI hinzukommen. Die Unterschiede zum bisherigen Vorgehen sind nicht grundsätzlicher Art, aber gross genug, dass sie Änderungen im Umgang mit APIs erfordern.</toc>
-    <slide id="thilo">
-      <title>Thilo Frotscher</title>
-      <img src="api-conference.svg" title="API Conference" href="https://apiconference.net/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
-      <img src="better-code.svg" title="betterCode" href="https://api.bettercode.eu/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
-      <ul>
-        <li>Kurator &amp; Trainer <a href="https://www.isaqb.org/certifications/cpsa-certifications/cpsa-advanced-level/api/">iSAQB Modul API</a></li>
-        <li>Independent Expert for APIs &amp; Integration Architectures</li>
-        <li>Lead Developer / Technical Architect / Trainer</li>
-        <li>Author &amp; Speaker</li>
-        <li>Advisory Board Member for <a href="https://apiconference.net/">API Conference</a> &amp; <a href="https://api.bettercode.eu/">betterCode() API</a></li>
-      </ul>
-    </slide>
-    <slide id="dret">
-      <title>Erik Wilde</title>
-      <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
-      <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
-      <ul>
-        <li>Kurator &amp; Trainer <a href="https://www.isaqb.org/certifications/cpsa-certifications/cpsa-advanced-level/api/">iSAQB Modul API</a></li>
-        <li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
-        <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
-        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-      </ul>
-    </slide>
+    <part id="introduction">
+      <title>Introduction</title>
+      <slide id="thilo">
+        <title>Thilo Frotscher</title>
+        <img src="api-conference.svg" title="API Conference" href="https://apiconference.net/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <img src="better-code.svg" title="betterCode" href="https://api.bettercode.eu/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Kurator &amp; Trainer <a href="https://www.isaqb.org/certifications/cpsa-certifications/cpsa-advanced-level/api/">iSAQB Modul API</a></li>
+          <li>Independent Expert for APIs &amp; Integration Architectures</li>
+          <li>Lead Developer / Technical Architect / Trainer</li>
+          <li>Author &amp; Speaker</li>
+          <li>Advisory Board Member for <a href="https://apiconference.net/">API Conference</a> &amp; <a href="https://api.bettercode.eu/">betterCode() API</a></li>
+        </ul>
+      </slide>
+      <slide id="dret">
+        <title>Erik Wilde</title>
+        <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Kurator &amp; Trainer <a href="https://www.isaqb.org/certifications/cpsa-certifications/cpsa-advanced-level/api/">iSAQB Modul API</a></li>
+          <li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
+          <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+        </ul>
+      </slide>
+      <slide id="api-modul-kapitel">
+        <title>iSAQB Modul Application Programming Interfaces (API)</title>
+        <img src="api-modul-kapitel.png" href="https://www.isaqb.org/certifications/cpsa-certifications/cpsa-advanced-level/api/" class="fullsize"/>
+      </slide>
+    </part>
     <part id="design-description">
       <title>API Design &amp; Description in the Age of AI</title>
       <slide id="creating-apis-1">
