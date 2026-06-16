@@ -200,6 +200,16 @@
           <li>Morphs into <em>Level 3</em> in brittle or ungoverned API landscapes</li>
         </ul>
       </slide>
+      <slide id="mcp-washing">
+        <title>MCP-Washing</title>
+        <img src="mcp-washing.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Skip the API work → jump to MCP → call it <q>AI-readiness</q></li>
+          <li>This is the wrong place to invest from a strategy perspective</li>
+          <li>MCP should be a <em>thin</em> layer, not a <em>fat</em> one</li>
+          <li>Invest in your <em>APIs</em> and then expose them through MCP</li>
+        </ul>
+      </slide>
       <slide id="what-is-arazzo">
         <title>Level 4: (Arazzo) Workflows</title>
         <img src="arazzo-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
