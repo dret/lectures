@@ -689,4 +689,55 @@
       </slide>
     </part>
   </presentation>
+  <presentation id="ai-scorecard">
+    <title>Your API Is Not Ready for AI — Yet</title>
+    <author>Erik Wilde</author>
+    <date short="2026-06-23">June 23, 2026</date>
+    <toc class="resources"><a href="https://jentic.com/scorecard" title="Jentic API Scorecard for AI-Readiness">Jentic API Scorecard</a>&#160;&#183; <a href="https://github.com/jentic/jentic-api-scorecard" title="Jentic API Readiness Scorecard GitHub Repo">API Scorecard GitHub Repo</a></toc>
+    <slide id="ai-ready-apis">
+      <title>From OpenAPI to AI-ready APIs</title>
+      <ul>
+        <li>OpenAPI validity is not enough</li>
+        <li>Spectral linting is not enough</li>
+        <li>AI agents need clarity, safety, and discoverability</li>
+      </ul>
+    </slide>
+    <slide id="no-ai-without-api">
+      <title>There Is No AI Without APIs</title>
+      <ul>
+        <li>Development Teams</li>
+        <ul>
+          <li>Make AI-Readiness the default</li>
+        </ul>
+        <li>API Platform Teams</li>
+        <ul>
+          <li>APIs increasingly feed AI consumers</li>
+        </ul>
+        <li>AI Teams</li>
+        <ul>
+          <li>AI integration is hard but is necessary</li>
+        </ul>
+      </ul>
+    </slide>
+    <slide id="ai-readiness">
+      <title>AI-Readiness Is Now Part Of API Strategy</title>
+      <ul>
+        <li>Scoring is the first step: measure, compare, improve</li>
+        <li>Later: automate improvement and governance workflows</li>
+      </ul>
+    </slide>
+    <slide id="jentic-api-scorecard">
+      <title>Jentic API Scorecard</title>
+      <img src="api-scoring-cover.jpg" href="https://www.youtube.com/watch?v=Igso9HXhWVE" class="fullsize-shadow-left"/>
+    </slide>
+    <slide id="jentic-api-scorecard-repository">
+      <title>Jentic API Scorecard GitHub Repository</title>
+      <img src="scorecard-repo.png" href="https://github.com/jentic/jentic-api-scorecard" class="fullsize-left"/>
+    </slide>
+    <slide id="scorecard-thanks">
+      <title>Thank You! Let's Connect!</title>
+      <img src="qr-code-erik-headshot.png" href="www.linkedin.com/in/erikwilde/" style=" height : 65% ; margin : 0% 4% 4% 4% ; "/>
+      <img src="end.jpg" style=" height : 65% ; float: right ; margin : 0% 4% 4% 4% ; "/>
+    </slide>
+  </presentation>
 </hotspot>
