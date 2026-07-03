@@ -56,7 +56,7 @@
   <presentation id="business-agents-and-agentic-coding">
     <title>The Hidden Common Ground in Business Agents and Agentic Coding</title>
     <date short="2026-07-08">July 8, 2026</date>
-    <toc class="abstract">Many organizations are treating business agents and agentic coding as separate trends, yet lack a clear understanding of whether they require fundamentally different platform investments. This fragmentation matters because it drives duplicated effort, inconsistent governance models, and misaligned API and AI strategies at a time when enterprises are under pressure to scale AI responsibly and efficiently. This talk looks at both use cases independently — examining their architectural, governance, and capability requirements — and then systematically compare them to reveal a shared platform substrate that is often overlooked. By clarifying their hidden common ground, this talk provides a more coherent roadmap for enterprise platform strategy, enabling organizations to align API, AI, and governance investments around a unified capability foundation rather than solving the same problem twice.</toc>
+    <toc class="abstract">Many organizations are treating business agents and agentic coding as separate trends, yet lack a clear understanding of whether they require fundamentally different platform investments. This fragmentation matters because it drives duplicated effort, inconsistent governance models, and misaligned API and AI strategies at a time when enterprises are under pressure to scale AI responsibly and efficiently. This talk looks at both use cases independently — examining their architectural, governance, and capability requirements — and then systematically compares them to reveal a shared platform substrate that is often overlooked. By clarifying their hidden common ground, this talk provides a more coherent roadmap for enterprise platform strategy, enabling organizations to align API, AI, and governance investments around a unified capability foundation rather than solving the same problem twice.</toc>
     <slide id="dret">
       <title>Erik Wilde</title>
       <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
@@ -113,19 +113,20 @@
           <ul>
             <li>IT / Platform engineering</li>
             <li>Business</li>
-            <li>200+ responses across 50 organizations</li>
+            <li>110+ responses across 50 organizations</li>
+            <li>16 long-form interviews</li>
           </ul>
-          <li>Found 7 disconnects</li>
+          <li>Found 6 disconnects</li>
           <li>Today: 2 of them</li>
           <ul>
             <li><link href="ai-first-without-api-first"/></li>
-            <li><link href="agent-aware-security"/></li>
+            <li><link href="symbolic-security"/></li>
           </ul>
         </ul>
       </slide>
     </part>
     <part id="ai-first-without-api-first">
-      <title>Disconnect #1: AI-First without API-First</title>
+      <title>Disconnect: AI-First without API-First</title>
       <slide id="ai-first-without-api-first-problem">
         <title>AI-First without API-First: The Problem</title>
         <ul>
@@ -164,7 +165,7 @@
       </slide>
     </part>
     <part id="symbolic-security">
-      <title>Disconnect #2: Symbolic Security</title>
+      <title>Disconnect: Symbolic Security</title>
       <slide id="symbolic-security-problem">
         <title>Symbolic Security: The Problem</title>
         <ul>
@@ -206,7 +207,7 @@
           <li>One agent platform is the ideal, not the overnight plan</li>
           <li>Treat both kinds of agents as one demand stream</li>
           <li>Share governance, security, observability</li>
-          <li>Spot parallel platforms and manage them strategically</li>
+          <li>Spot parallel platforms and manage strategically</li>
         </ul>
       </slide>
       <slide id="report-download">
@@ -294,40 +295,46 @@
         <title>More Tools</title>
         <img src="api-ai-evolution-1-more.png" class="fullsize-shadow" />
       </slide>
-      <slide id="mcp-intro">
-        <title>Model Context Protocol (MCP)</title>
-        <img src="mcp-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+      <slide id="just-mcp">
+        <title>Just Use MCP?</title>
+        <img src="mcp-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
-          <li>MCP is the current <q>standard protocol</q> for LLM consumers</li>
-          <li>The initial focus was on <em>additional and extended context</em></li>
-          <ul>
-            <li><em>Additional context</em> by providing access to the environment</li>
-            <li><em>Extended context</em> by allowing MCP servers to externally manage context</li>
-          </ul>
-          <li>Many mapping tools generate MCP servers from OpenAPI descriptions</li>
-          <li><em>What</em> to expose and <em>how to design it</em> is out of scope</li>
+          <li>The pitch: <q>APIs are old, MCP is the future</q></li>
+          <li>Wrap anything in MCP → call it AI-ready</li>
+          <li>Skip the hard API work → straight to AI</li>
+          <li>Just <q>start fresh</q> after 10 years of API landscape work?</li>
         </ul>
       </slide>
-      <slide id="anthropic">
-        <title>Anthropic Advanced Tool Use</title>
-        <img src="anthropic-advanced-tool-use.png" href="https://www.anthropic.com/engineering/advanced-tool-use" source='"Introducing advanced tool use on the Claude Developer Platform", November 24, 2025' class="fullsize-shadow" />
-      </slide>
-      <slide id="mcp-problems">
-        <title>MCP Solves Everything!?</title>
+      <slide id="naive-mcp">
+        <title>Problem 1: Directly Exposing APIs</title>
+        <img src="api-mcp-ai-direct.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; " />
         <ul>
-          <li>Problem #1: Complex APIs will overload the MCP client's context</li>
-          <li>Problem #2: Larger API landscapes will overload the MCP client's context</li>
-          <li>Problem #3: Poor API design translates to poor MCP results</li>
-          <li>Problem #4: Bad AX results in unsatisfactory AI results</li>
+          <li>Auto-generate MCP from OpenAPI for every API</li>
+          <li>Context window explosion on real workloads</li>
+          <li>Bad descriptions → bad MCP</li>
+          <li>AI still has to invent workflows across endpoints</li>
+          <li>Now your agents get to have a poor integration experience</li>
         </ul>
       </slide>
-      <slide id="more-tools">
-        <title>More Tools ⇏ Better Tool Landscape</title>
+      <slide id="heavy-mcp">
+        <title>Problem 2: Investing in the MCP Layer</title>
+        <img src="api-mcp-ai-custom-mcp.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; " />
         <ul>
-          <li>LLMs can now access many tools</li>
-          <li>But they cannot understand many of them well</li>
-          <li>Poor descriptions → poor tool selection → poor results</li>
-          <li>Next: <link href="api-ai-evolution-2-description"/></li>
+          <li>Hand-craft MCP servers, design the best tools</li>
+          <li>The investment goes into the <em>MCP layer</em></li>
+          <li>The <em>capability layer</em> underneath remains untouched</li>
+          <li>Better capabilities benefit everyone, not just MCP</li>
+          <li>Everybody's integration experience should benefit</li>
+        </ul>
+      </slide>
+      <slide id="mcp-washing">
+        <title>MCP-Washing</title>
+        <img src="mcp-washing.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ;"/>
+        <ul>
+          <li>Skip the API work → jump to MCP → call it <q>AI-readiness</q></li>
+          <li>This is the wrong place to invest from a strategy perspective</li>
+          <li>MCP should be a <em>thin</em> layer, not a <em>fat</em> one</li>
+          <li>Invest in your <em>APIs</em> and then expose them through MCP</li>
         </ul>
       </slide>
       <slide id="api-ai-evolution-2-description">
