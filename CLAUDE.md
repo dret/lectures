@@ -68,3 +68,9 @@ Images and listings are integral to slide artwork and must travel with the slide
   and/or listings are used anywhere else in the same presentation. If not,
   remove them from `img/` respectively `/src` too.
 - Shared images or listings that already exist in the target `img/` (e.g. `end.jpg`,  `jentic.svg`, logo files) do not need to be re-copied.
+- **Orphan detection must scan HTML files too, not just the XML slides.** Some
+  presentation folders have a hand-maintained `index.html` (or similar) that
+  references images from `img/` — typically for licence badges (`somerights20.png`),
+  W3C validator icons (`vcss.png`, `vxhtml10.png`), and similar page furniture.
+  An image that looks unused from the XML may still be referenced from `index.html`.
+  Grep every `.html` in the folder before flagging any image as an orphan.
