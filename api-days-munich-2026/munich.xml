@@ -309,22 +309,22 @@
         <title>Problem 1: Directly Exposing APIs</title>
         <img src="api-mcp-ai-direct.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; " />
         <ul>
-          <li>Auto-generate MCP from OpenAPI for every API</li>
+          <li>Auto-generate MCP from OpenAPI</li>
           <li>Context window explosion on real workloads</li>
           <li>Bad descriptions → bad MCP</li>
-          <li>AI still has to invent workflows across endpoints</li>
-          <li>Now your agents get to have a poor integration experience</li>
+          <li>AI still has to invent workflows</li>
+          <li>Agents have poor <q>user experience</q></li>
         </ul>
       </slide>
       <slide id="heavy-mcp">
         <title>Problem 2: Investing in the MCP Layer</title>
         <img src="api-mcp-ai-custom-mcp.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; " />
         <ul>
-          <li>Hand-craft MCP servers, design the best tools</li>
+          <li>Hand-craft MCP servers, design good tools</li>
           <li>The investment goes into the <em>MCP layer</em></li>
-          <li>The <em>capability layer</em> underneath remains untouched</li>
-          <li>Better capabilities benefit everyone, not just MCP</li>
-          <li>Everybody's integration experience should benefit</li>
+          <li>The <em>capability layer</em> remains untouched</li>
+          <li>Better capabilities benefit more than just MCP</li>
+          <li>Everybody's experience (UX/AX) should benefit</li>
         </ul>
       </slide>
       <slide id="mcp-washing">
@@ -332,7 +332,7 @@
         <img src="mcp-washing.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ;"/>
         <ul>
           <li>Skip the API work → jump to MCP → call it <q>AI-readiness</q></li>
-          <li>This is the wrong place to invest from a strategy perspective</li>
+          <li>Wrong place to invest from a strategy perspective</li>
           <li>MCP should be a <em>thin</em> layer, not a <em>fat</em> one</li>
           <li>Invest in your <em>APIs</em> and then expose them through MCP</li>
         </ul>
@@ -368,14 +368,28 @@
         <img src="api-ai-evolution-4-workflow.png" class="fullsize-shadow" />
       </slide>
     </part>
-    <slide id="thanks-openapi">
-      <title>Thank You!</title>
-      <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-      <ul>
-        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-        <img src="qr-code-openapi-track-feedback.png" style=" width : 25% ; margin : 6% 0% 0% 0% ; "/>
-      </ul>
-    </slide>
+    <part id="conclusions">
+      <title>Conclusions</title>
+      <slide id="scorecard">
+        <title>Next Step: The AI-Readiness Scorecard</title>
+        <img src="api-ai-scorecard.png" href="https://jentic.com/scorecard" style="float: right ; width : 45% ; margin : 0% 4% 4% 4% ; " class="shadow"/>
+        <ul>
+          <li>APIs are AI enablement</li>
+          <li>Assess where you are today</li>
+          <li>Six dimensions of AI-readiness</li>
+          <li>Web: <code href="https://jentic.com/scorecard">jentic.com/scorecard</code></li>
+          <li>CLI: <code>npx @jentic/api-scorecard-cli score openapi.yaml</code></li>
+        </ul>
+      </slide>
+      <slide id="thanks-openapi">
+        <title>Thank You!</title>
+        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+          <img src="qr-code-openapi-track-feedback.png" style=" width : 25% ; margin : 6% 0% 0% 0% ; "/>
+        </ul>
+      </slide>
+    </part>
   </presentation>
 </hotspot>
