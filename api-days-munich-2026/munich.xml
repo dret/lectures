@@ -163,6 +163,17 @@
           <li>Don't paper over old problems with MCP</li>
         </ul>
       </slide>
+      <slide id="scorecard">
+        <title>Next Step: AI-Readiness Scorecard</title>
+        <img src="api-ai-scorecard.png" href="https://jentic.com/scorecard" style="float: right ; width : 45% ; margin : 0% 4% 4% 4% ; " class="shadow"/>
+        <ul>
+          <li>APIs are AI enablement</li>
+          <li>Assess where you are today</li>
+          <li>Six dimensions of AI-readiness</li>
+          <li>Web: <code href="https://jentic.com/scorecard">jentic.com/scorecard</code></li>
+          <li>CLI: <code>npx @jentic/api-scorecard-cli score openapi.yaml</code></li>
+        </ul>
+      </slide>
     </part>
     <part id="symbolic-security">
       <title>Disconnect: Symbolic Security</title>
@@ -371,7 +382,7 @@
     <part id="conclusions">
       <title>Conclusions</title>
       <slide id="scorecard">
-        <title>Next Step: The AI-Readiness Scorecard</title>
+        <title>Next Step: AI-Readiness Scorecard</title>
         <img src="api-ai-scorecard.png" href="https://jentic.com/scorecard" style="float: right ; width : 45% ; margin : 0% 4% 4% 4% ; " class="shadow"/>
         <ul>
           <li>APIs are AI enablement</li>
