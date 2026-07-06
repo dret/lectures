@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="jentic" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+  <configuration>
+    <link subsections="yes" bookmarks="yes" versions="superstream.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+    <paths img="img" listing="src"/>
+    <outline count-text=" [*]" count-depth="all"/>
+    <hyperlink extra=""/>
+    <extension file="html" link=""/>
+    <counter separator=":&#160; "/>
+    <kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+      <plugins>
+        <touch/>
+      </plugins>
+    </kilauea>
+  </configuration>
+  <license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+    <div class="license">
+      <p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+      <p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+    </div>
+  </license>
+  <title><a href="https://www.oreilly.com/live-events/api-superstream-apis-and-the-agentic-shift/0642572352592/0642572352585/">O'Reilly API Superstream: APIs and the Agentic Shift</a></title>
+  <date short="2026-07-14">July 14, 2026</date>
+  <author>Erik Wilde</author>
+  <affiliation>Head of Enterprise Strategy, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
+  <copyright>2026 Erik Wilde</copyright>
+  <presentation id="index">
+    <title>The Hidden Common Ground in Business Agents and Agentic Coding</title>
+    <toc class="abstract">Many organizations are treating business agents and agentic coding as separate trends, yet lack a clear understanding of whether they require fundamentally different platform investments. This fragmentation matters because it drives duplicated effort, inconsistent governance models, and misaligned API and AI strategies at a time when enterprises are under pressure to scale AI responsibly and efficiently. This talk looks at both use cases independently — examining their architectural, governance, and capability requirements — and then systematically compares them to reveal a shared platform substrate that is often overlooked. By clarifying their hidden common ground, this talk provides a more coherent roadmap for enterprise platform strategy, enabling organizations to align API, AI, and governance investments around a unified capability foundation rather than solving the same problem twice.</toc>
+    <slide id="dret">
+      <title>Erik Wilde</title>
+      <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <ul>
+        <li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
+        <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+      </ul>
+    </slide>
+    <part id="agents-platforms">
+      <title>Agents &amp; Platforms</title>
+      <slide id="ai-agents">
+        <title>Coding Agents and Business Agents</title>
+        <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+        <ul>
+          <li><em>Coding Agents</em></li>
+          <ul>
+            <li>They change <em>how the business does things</em></li>
+            <li>Tool side speed-up</li>
+            <li>Getting existing work done faster</li>
+          </ul>
+          <li><em>Business Agents</em></li>
+          <ul>
+            <li>They change <em>what the business does</em></li>
+            <li>Business-side reinvention</li>
+            <li>From narrow off-the-shelf to broad and ambitious</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="platform-principle">
+        <title>The Platform Principle</title>
+        <img src="platform-principle.jpg" title="Platform Engineering: Reduce repetitive tasks and make building things more effective" style="float: right ; height : 50% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li>You don't need a platform to ship <em>one</em> thing</li>
+          <li>Platforms are for shipping <em>many</em> similar things at scale</li>
+          <ul>
+            <li>Shared substrate beats many bespoke stacks</li>
+            <li>Capabilities, governance, security → built for reuse</li>
+          </ul>
+          <li>That's where both kinds of agents are heading</li>
+          <ul>
+            <li>Coding agents: already at scale; platform spirit emerging</li>
+            <li>Business agents: scale is the next problem to solve</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="report">
+        <title>What We Found</title>
+        <ul>
+          <li>Many reports on AI scaling but none on <em>this</em> disconnect</li>
+          <li>We surveyed both sides</li>
+          <ul>
+            <li>IT / Platform engineering</li>
+            <li>Business</li>
+            <li>110+ responses across 50 organizations</li>
+            <li>16 long-form interviews</li>
+          </ul>
+          <li>Found 6 disconnects</li>
+          <li>Today: 2 of them</li>
+          <ul>
+            <li><link href="ai-first-without-api-first"/></li>
+            <li><link href="symbolic-security"/></li>
+          </ul>
+        </ul>
+      </slide>
+    </part>
+    <part id="ai-first-without-api-first">
+      <title>Disconnect: AI-First without API-First</title>
+      <slide id="ai-first-without-api-first-problem">
+        <title>AI-First without API-First: The Problem</title>
+        <ul>
+          <li>Agents getting connected to APIs (directly or via MCP)</li>
+          <li>API quality and AI-readiness not checked first</li>
+          <li>Broken or sub-optimal workflows now exposed to agents</li>
+          <li>Old problems carry into the new AI layer</li>
+          <li>API problems may surface as AI problems</li>
+        </ul>
+      </slide>
+      <slide id="ai-first-without-api-first-data">
+        <title>AI-First without API-First: The Data</title>
+        <img src="ai-ready-api-assessment.png" class="fullsize-shadow"/>
+      </slide>
+      <slide id="agentic-confusion">
+        <title>Instruktör: Agentic Confusion</title>
+        <img src="ikea-robots.jpg" title="What happens when you hand your agents bad APIs" class="fullsize-shadow"/>
+      </slide>
+      <slide id="ai-first-without-api-first-consequences">
+        <title>AI-First without API-First: The Consequences</title>
+        <ul>
+          <li>Platform foundations skipped under C-suite AI pressure</li>
+          <li>AI pilots: isolated results, scaling not part of the plan</li>
+          <li>Bad processes get scaled up, not fixed</li>
+        </ul>
+      </slide>
+      <slide id="ai-first-without-api-first-tactics">
+        <title>Tactics: MCP-Washing is not a Strategy</title>
+        <img src="mcp-api-plumbing.png" style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ;  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li>Make AI-readiness a gate before agent integrations</li>
+          <li>Reuse and refactor existing API governance</li>
+          <li>Fix bad APIs &amp; workflows <em>before</em> agents touch them</li>
+          <li>Don't paper over old problems with MCP</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="symbolic-security">
+      <title>Disconnect: Symbolic Security</title>
+      <slide id="symbolic-security-problem">
+        <title>Symbolic Security: The Problem</title>
+        <ul>
+          <li>Agents are less predictable than traditional code</li>
+          <li>Coding agents produce code: reviewable before it runs</li>
+          <li>Business agents produce actions: live as they're decided</li>
+          <li>Both need limits but controls in place are mostly symbolic</li>
+        </ul>
+      </slide>
+      <slide id="symbolic-security-data">
+        <title>Symbolic Security: The Data</title>
+        <img src="agent-security.png" class="fullsize-shadow"/>
+      </slide>
+      <slide id="symbolic-security-consequences">
+        <title>Symbolic Security: The Consequences</title>
+        <ul>
+          <li>Some controls exist, but no one is watching</li>
+          <li>Vulnerabilities and unusual patterns invisible</li>
+          <li>Context and action creep: agents access more than they need</li>
+          <li>Optionality takes a hit when experiments feel unsafe</li>
+        </ul>
+      </slide>
+      <slide id="symbolic-security-tactics">
+        <title>Symbolic Security: Tactics</title>
+        <ul>
+          <li>Add a control layer between agents and APIs</li>
+          <li>Default-deny: grant only what's needed</li>
+          <li>Monitor what agents do, not just <em>that</em> they have keys</li>
+          <li>Alerts + thresholds → human-in-the-loop</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="conclusions">
+      <title>Conclusions</title>
+      <slide id="platform-tactics">
+        <title>AI Platform Tactics</title>
+        <img src="immanuel-kant.png" title='Immanuel Kant: "An ideal is a regulative idea"' style="float: right ; height : 50% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>One agent platform is the ideal, not the overnight plan</li>
+          <li>Treat both kinds of agents as one demand stream</li>
+          <li>Share governance, security, observability</li>
+          <li>Spot parallel platforms and manage strategically</li>
+        </ul>
+      </slide>
+      <slide id="report-download">
+        <title>More Disconnects in the Report</title>
+        <img src="qr-code-report.png" title="QR Code for Report Download" class="fullsize"/>
+      </slide>
+      <slide id="thanks">
+        <title>Thank You!</title>
+        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        </ul>
+      </slide>
+    </part>
+  </presentation>
+</hotspot>
