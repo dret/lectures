@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="jentic" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+  <configuration>
+    <link subsections="yes" bookmarks="yes" versions="india.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+    <paths img="img" listing="src"/>
+    <outline count-text=" [*]" count-depth="all"/>
+    <hyperlink extra=""/>
+    <extension file="html" link=""/>
+    <counter separator=":&#160; "/>
+    <kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+      <plugins>
+        <touch/>
+      </plugins>
+    </kilauea>
+  </configuration>
+  <license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+    <div class="license">
+      <p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+      <p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+    </div>
+  </license>
+  <toc name="toc.html">
+    <table rules="all" cellspacing="0" cellpadding="5" width="100%">
+      <thead>
+        <tr>
+          <th valign="bottom">Date</th>
+          <th valign="bottom">Title</th>
+          <th valign="bottom">Author</th>
+          <th valign="bottom">Slides</th>
+        </tr>
+      </thead>
+      <tbody>
+        <hotspot:for-each-presentation>
+          <tr class="vevent">
+            <td valign="top"><b><span class="title"><hotspot:date/></span></b></td>
+            <td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
+            <td valign="top" align="center"><b><span class="title"><hotspot:author/></span></b></td>
+            <td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+          </tr>
+        </hotspot:for-each-presentation>
+      </tbody>
+    </table>
+  </toc>
+  <title><a href="https://www.apidays.global/">API Days</a> <a href="https://www.apidays.global/events/india/">India</a> 2026</title>
+  <author>Erik Wilde</author>
+  <affiliation>Head of Enterprise Strategy, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
+  <copyright>2026 Erik Wilde</copyright>
+  <presentation id="openapi-track-welcome">
+    <title>OpenAPI Track Welcome</title>
+    <date short="2026-08-19">August 19, 2026</date>
+    <slide id="openapi-track-mix">
+      <title>OpenAPI Track/Summit/Conference</title>
+      <img src="openapi-track-mix-animated.webp" class="fullsize-shadow"/>
+    </slide>
+    <slide id="dret">
+      <title>Erik Wilde</title>
+      <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <ul>
+        <li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
+        <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+      </ul>
+    </slide>
+    <part id="conclusions">
+      <title>Conclusions</title>
+      <slide id="scorecard">
+        <title>Next Step: AI-Readiness Scorecard</title>
+        <img src="api-ai-scorecard.png" href="https://jentic.com/scorecard" style="float: right ; width : 45% ; margin : 0% 4% 4% 4% ; " class="shadow"/>
+        <ul>
+          <li>APIs are AI enablement</li>
+          <li>Assess where you are today</li>
+          <li>Six dimensions of AI-readiness</li>
+          <li>Web: <code href="https://jentic.com/scorecard">jentic.com/scorecard</code></li>
+          <li>CLI: <code>npx @jentic/api-scorecard-cli score openapi.yaml</code></li>
+        </ul>
+      </slide>
+      <slide id="thanks-openapi">
+        <title>Thank You!</title>
+        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        </ul>
+      </slide>
+    </part>
+  </presentation>
+</hotspot>
