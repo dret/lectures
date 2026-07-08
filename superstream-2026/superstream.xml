@@ -62,6 +62,23 @@
           </ul>
         </ul>
       </slide>
+      <slide id="platform-principle">
+        <title>The Platform Principle</title>
+        <img src="platform-principle.jpg" title="Platform Engineering: Reduce repetitive tasks and make building things more effective" style="float: right ; height : 50% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li>You don't need a platform to ship <em>one</em> thing</li>
+          <li>Platforms are for shipping <em>many</em> similar things at scale</li>
+          <ul>
+            <li>Shared substrate beats many bespoke stacks</li>
+            <li>Capabilities, governance, security → built for reuse</li>
+          </ul>
+          <li>That's where both kinds of agents are heading</li>
+          <ul>
+            <li>Coding agents: already at scale; platform spirit emerging</li>
+            <li>Business agents: scale is the next problem to solve</li>
+          </ul>
+        </ul>
+      </slide>
       <slide id="report">
         <title>What We Found</title>
         <ul>
