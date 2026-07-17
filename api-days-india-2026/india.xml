@@ -56,7 +56,7 @@
       <title>OpenAPI Track/Summit/Conference</title>
       <img src="openapi-track-mix-animated.webp" class="fullsize-shadow"/>
     </slide>
-    <slide id="dret">
+    <slide id="erik">
       <title>Erik Wilde</title>
       <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
       <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
@@ -94,5 +94,16 @@
     <title short="Agents That Don't Drift">Agents That Don't Drift: A Reliability Ladder from Prompts to Workflows</title>
     <date short="2026-08-20">August 20, 2026</date>
     <toc class="abstract">Agent toolkits are expanding fast: prompts, system prompts, agent skills, MCP servers, sub-agents, and declarative workflows all compete for a place in your architecture. Each has genuine strengths, and API practitioners increasingly need a clear sense of when to reach for which. There is also a second, quieter problem: agents change behavior even when you don't change them. Models get updated underneath you, and yesterday's reliable prompt is today's regression. This talk presents a reliability ladder — from prompts and system prompts, through agent skills, MCP tools, and specialized sub-agents, up to declarative Arazzo workflows — as a joint framework for two questions API practitioners face every day: which construct is the right home for this piece of logic, and how do I keep agents maintainable when the models beneath them shift? Each rung trades LLM discretion for reproducibility, and each moves maintenance pain into a different place. You will leave with a decision framework for choosing the right construct per task, a sharper view of where model drift actually hurts, and practical guidance for structuring agents so they keep working when tomorrow's model arrives.</toc>
+    <slide id="erik">
+      <title>Erik Wilde</title>
+      <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <ul>
+        <li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
+        <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+      </ul>
+    </slide>
   </presentation>
 </hotspot>
