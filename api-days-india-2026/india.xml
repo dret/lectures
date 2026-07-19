@@ -198,6 +198,28 @@
         </table>
       </slide>
     </part>
+    <part id="drawing-the-line">
+      <title>Drawing the Line</title>
+      <slide id="draw-the-line">
+        <title>Draw the Line First</title>
+        <ul>
+          <li>First question: does this need judgment, or a reproducible answer?</li>
+          <li>Only then: what construct implements that?</li>
+          <li>Rule of thumb: AI earns its keep when <q>here are examples</q> is easier than <q>here are the rules</q></li>
+          <li>Everything else: use code, workflows, APIs — the tools that have worked for decades and are easy to control</li>
+        </ul>
+      </slide>
+      <slide id="domains-and-interfaces">
+        <title>It’s Software Architecture</title>
+        <ul>
+          <li>Agent systems are software systems — same architecture rules apply</li>
+          <li>Keep domains separate; keep interfaces between them clean</li>
+          <li>Cross-domain interactions deserve extra care: contracts, versioning, failure modes</li>
+          <li>Within a domain: pick the AI / non-AI mix that fits the work</li>
+          <li>Nothing new here — this is the discipline you already know</li>
+        </ul>
+      </slide>
+    </part>
     <part id="agent-conclusions">
       <title>Conclusions</title>
       <slide id="agent-thanks">
