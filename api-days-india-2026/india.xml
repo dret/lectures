@@ -80,7 +80,7 @@
           <li>CLI: <code>npx @jentic/api-scorecard-cli score openapi.yaml</code></li>
         </ul>
       </slide>
-      <slide id="thanks-openapi">
+      <slide id="openapi-thanks">
         <title>Thank You!</title>
         <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
         <ul>
@@ -94,7 +94,7 @@
     <title short="Agents That Don't Drift">Agents That Don't Drift: A Reliability Ladder from Prompts to Workflows</title>
     <date short="2026-08-20">August 20, 2026</date>
     <toc class="abstract">Agent toolkits are expanding fast: prompts, system prompts, agent skills, MCP servers, sub-agents, and declarative workflows all compete for a place in your architecture. Each has genuine strengths, and API practitioners increasingly need a clear sense of when to reach for which. There is also a second, quieter problem: agents change behavior even when you don't change them. Models get updated underneath you, and yesterday's reliable prompt is today's regression. This talk presents a reliability ladder — from prompts and system prompts, through agent skills, MCP tools, and specialized sub-agents, up to declarative Arazzo workflows — as a joint framework for two questions API practitioners face every day: which construct is the right home for this piece of logic, and how do I keep agents maintainable when the models beneath them shift? Each rung trades LLM discretion for reproducibility, and each moves maintenance pain into a different place. You will leave with a decision framework for choosing the right construct per task, a sharper view of where model drift actually hurts, and practical guidance for structuring agents so they keep working when tomorrow's model arrives.</toc>
-    <slide id="erik">
+    <slide id="agent-erik">
       <title>Erik Wilde</title>
       <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
       <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
@@ -105,5 +105,50 @@
         <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
       </ul>
     </slide>
+    <part id="ai-engineering">
+      <title>AI Engineering is Growing Up</title>
+      <slide id="ai-power">
+        <title>A Trillion Operations for 2 + 3?</title>
+        <img src="ai-hammer.png" title="Maslow's AI Hammer" style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ; "/>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;"></th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Machine Instructions</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">AI</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Elapsed time</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~1 nanosecond</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~0.1–2 seconds</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Computation</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~1 integer operation</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~10<sup>11</sup>–10<sup>13</sup> arithmetic operations</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Energy</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~10–100 picojoules</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~10–1,000 joules</td>
+          </tr>
+        </table>
+        <ul>
+          <li>Billion times slower</li>
+          <li>Trillion times more computation</li>
+          <li>10<sup>12</sup>–10<sup>14</sup> times more energy</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="agent-conclusions">
+      <title>Conclusions</title>
+      <slide id="agent-thanks">
+        <title>Thank You!</title>
+        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        </ul>
+      </slide>
+    </part>
   </presentation>
 </hotspot>
