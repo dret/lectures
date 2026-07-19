@@ -138,6 +138,35 @@
           <li>10<sup>12</sup>–10<sup>14</sup> times more energy</li>
         </ul>
       </slide>
+      <slide id="pitch-vs-reality">
+        <title>The Benevolent AI Superintelligence?</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">The Vision</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Immediate Reality</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>One universal agent</li>
+                <li>One model, all tasks</li>
+                <li>Full autonomy</li>
+                <li>Complete system access</li>
+                <li><q>Just describe what you want</q> and trust us</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Different tasks, different runtimes</li>
+                <li>Scoped permissions per capability</li>
+                <li>Bounded blast radius</li>
+                <li>Model drift is constant</li>
+                <li>Audit and governance required</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </slide>
     </part>
     <part id="agent-conclusions">
       <title>Conclusions</title>
