@@ -136,6 +136,7 @@
           <li>Billion times slower</li>
           <li>Trillion times more computation</li>
           <li>10<sup>12</sup>–10<sup>14</sup> times more energy</li>
+          <li>And no guarantee it got the answer right</li>
         </ul>
       </slide>
       <slide id="pitch-vs-reality">
@@ -148,20 +149,49 @@
           <tr>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
               <ul>
-                <li>One universal agent</li>
-                <li>One model, all tasks</li>
-                <li>Full autonomy</li>
-                <li>Complete system access</li>
+                <li>One agent, one model, all tasks</li>
+                <li>Always gets the right answer</li>
+                <li>Autonomous, self-directing</li>
+                <li>No human engineering required</li>
                 <li><q>Just describe what you want</q> and trust us</li>
               </ul>
             </td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
               <ul>
-                <li>Different tasks, different runtimes</li>
-                <li>Scoped permissions per capability</li>
-                <li>Bounded blast radius</li>
-                <li>Model drift is constant</li>
-                <li>Audit and governance required</li>
+                <li>Same prompt returns different answers</li>
+                <li>Behavior drift on model updates</li>
+                <li>Most business logic is deterministic</li>
+                <li>AI earns its keep on judgment tasks</li>
+                <li>Reliability = clean cuts between the two</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </slide>
+      <slide id="design-vs-runtime">
+        <title>AI at Design Time! AI at Runtime?</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">AI at Design Time</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">AI at Runtime</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Recognizes patterns</li>
+                <li>Writes the code</li>
+                <li>You review and ship</li>
+                <li>Runs deterministically forever after</li>
+                <li>Use it everywhere</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Every invocation is stochastic</li>
+                <li>Judgment where you actually need it</li>
+                <li>Costly per call</li>
+                <li>Behavior drifts with model updates</li>
+                <li>Handle with care</li>
               </ul>
             </td>
           </tr>
