@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
 <?hotspot layout-path="hotspot/hotspot/layout" ?>
 <?hotspot kilauea-path="hotspot/kilauea" ?>
-<?hotspot layout="jentic" ?>
+<?hotspot layout="oai-track" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
   <configuration>
     <link subsections="yes" bookmarks="yes" versions="india.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
@@ -47,10 +47,10 @@
   </toc>
   <title><a href="https://www.apidays.global/">API Days</a> <a href="https://www.apidays.global/events/india/">India</a> 2026</title>
   <author>Erik Wilde</author>
-  <affiliation>Head of Enterprise Strategy, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
+  <affiliation>OpenAPI Ambassador, <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></affiliation>
   <copyright>2026 Erik Wilde</copyright>
   <presentation id="openapi-track-welcome">
-    <title>OpenAPI Track Welcome</title>
+    <title short="OpenAPI Track Welcome">OpenAPI Track Welcome and OpenAPI in the Age of AI</title>
     <date short="2026-08-19">August 19, 2026</date>
     <slide id="openapi-track-mix">
       <title>OpenAPI Track/Summit/Conference</title>
@@ -58,10 +58,8 @@
     </slide>
     <slide id="erik">
       <title>Erik Wilde</title>
-      <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
       <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
       <ul>
-        <li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
         <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
         <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
         <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
@@ -90,16 +88,14 @@
       </slide>
     </part>
   </presentation>
-  <presentation id="agent-reliability">
-    <title short="Agents That Don't Drift">Agents That Don't Drift: A Reliability Ladder from Prompts to Workflows</title>
+  <presentation id="composable-ai">
+    <title short="Composable Architecture for AI Systems">Composable Architecture for AI Systems: APIs, MCP, Skills, Sub-Agents, and Workflows</title>
     <date short="2026-08-20">August 20, 2026</date>
-    <toc class="abstract">Agent toolkits are expanding fast: prompts, system prompts, agent skills, MCP servers, sub-agents, and declarative workflows all compete for a place in your architecture. Each has genuine strengths, and API practitioners increasingly need a clear sense of when to reach for which. There is also a second, quieter problem: agents change behavior even when you don't change them. Models get updated underneath you, and yesterday's reliable prompt is today's regression. This talk presents a reliability ladder — from prompts and system prompts, through agent skills, MCP tools, and specialized sub-agents, up to declarative Arazzo workflows — as a joint framework for two questions API practitioners face every day: which construct is the right home for this piece of logic, and how do I keep agents maintainable when the models beneath them shift? Each rung trades LLM discretion for reproducibility, and each moves maintenance pain into a different place. You will leave with a decision framework for choosing the right construct per task, a sharper view of where model drift actually hurts, and practical guidance for structuring agents so they keep working when tomorrow's model arrives.</toc>
+    <toc class="abstract">AI is a powerful tool, but it is not the only tool, and most systems worth building are hybrids of AI and non-AI parts. That line between them doesn't sit neatly between domains. It runs inside every domain, and it should move as you learn. This talk looks at the mechanisms for connecting across that line: APIs, MCP, agent skills, and sub-agents, as well as at workflows as a way to move the line itself: when an agent keeps rediscovering the same business process, that process belongs in deterministic execution, not in a prompt. You'll leave knowing which mechanism belongs where, and how to keep shifting work out of AI as your system settles.</toc>
     <slide id="agent-erik">
       <title>Erik Wilde</title>
-      <img src="jentic.svg" title="Jentic" href="https://jentic.com/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
       <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
       <ul>
-        <li>Head of Enterprise Strategy at <a href="https://jentic.com/">Jentic</a></li>
         <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
         <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
         <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
@@ -143,8 +139,8 @@
         <title>The Benevolent AI Superintelligence?</title>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
           <tr>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">The Vision</th>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Immediate Reality</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Perfect Vision</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Current Reality</th>
           </tr>
           <tr>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
@@ -198,25 +194,76 @@
         </table>
       </slide>
     </part>
-    <part id="drawing-the-line">
-      <title>Drawing the Line</title>
-      <slide id="draw-the-line">
-        <title>Draw the Line First</title>
+    <part id="where-the-line-runs">
+      <title>Where the Line Runs</title>
+      <slide id="domains-and-interfaces">
+        <title>It's Software Architecture</title>
         <ul>
-          <li>First question: does this need judgment, or a reproducible answer?</li>
-          <li>Only then: what construct implements that?</li>
-          <li>Rule of thumb: AI earns its keep when <q>here are examples</q> is easier than <q>here are the rules</q></li>
-          <li>Everything else: use code, workflows, APIs — the tools that have worked for decades and are easy to control</li>
+          <li>Macro architecture: domains and the interfaces between them remain unchanged</li>
+          <li>The AI / non-AI line is <em>not</em> a domain boundary</li>
+          <li>It runs <em>inside</em> every domain: judgment work and deterministic work, side by side</li>
+          <li>Micro architecture: where that line sits, and which mechanism crosses it</li>
+          <li>The line may move because of new processes and workflows</li>
         </ul>
       </slide>
-      <slide id="domains-and-interfaces">
-        <title>It’s Software Architecture</title>
+      <slide id="mcp">
+        <title>Model Context Protocol (MCP)</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Use for</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Not for</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Letting an LLM reach any external capability</li>
+                <li>Exposing your APIs, databases, workflows as tools</li>
+                <li>Deterministic operations the LLM should invoke on demand</li>
+                <li>The default answer for <q>how do I connect the LLM to X?</q></li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Packaging prompt patterns (that's skills)</li>
+                <li>Complex multi-step business processes (wrap a workflow instead)</li>
+                <li>Delegating whole reasoning tasks (that's sub-agents)</li>
+                <li>Anywhere you need guaranteed invocation (LLM decides when to call)</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
         <ul>
-          <li>Agent systems are software systems — same architecture rules apply</li>
-          <li>Keep domains separate; keep interfaces between them clean</li>
-          <li>Cross-domain interactions deserve extra care: contracts, versioning, failure modes</li>
-          <li>Within a domain: pick the AI / non-AI mix that fits the work</li>
-          <li>Nothing new here — this is the discipline you already know</li>
+          <li>Bottom line: ...</li>
+        </ul>
+      </slide>
+      <slide id="skills">
+        <title>Skills</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Use for</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Not for</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Packaging a prompt pattern you keep re-typing</li>
+                <li>Sharing a way of working across sessions and projects</li>
+                <li>Loading context (style guides, docs) on demand</li>
+                <li>Composing MCP tool usage into a reusable recipe</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Reliable business processes (workflows do this better)</li>
+                <li>Behavior that must run identically each time</li>
+                <li>Anything that needs versioning or auditability</li>
+                <li>Delegating to a different model (sub-agents)</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <ul>
+          <li>Bottom line: ...</li>
         </ul>
       </slide>
     </part>
@@ -231,5 +278,82 @@
         </ul>
       </slide>
     </part>
+  </presentation>
+  <presentation id="workshop-intro">
+    <title short="Introduction">Workshop: Welcome, Introduction, and Logistics</title>
+    <author>Frank Kilcommins &amp; Erik Wilde</author>
+    <date short="2026-08-21">August 21, 2026</date>
+    <toc class="abstract">AI agents are starting to call APIs autonomously, chain services, and generate integrations that were never explicitly designed by developers. Most API ecosystems are not built for this kind of automated usage, which can lead to unpredictable behavior, unsafe workflows, and loss of control. In this hands-on masterclass, you will explore how AI agents interact with APIs and where automation introduces architectural risks, led by two OpenAPI Ambassadors with deep expertise in API design and governance.</toc>
+    <part id="trainers">
+      <title>Your Trainers</title>
+      <slide id="frank-india">
+        <title>Frank Kilcommins</title>
+        <ul>
+          <li>Head of Enterprise Architecture at <a href="https://jentic.com/">Jentic</a></li>
+          <li>Governance Board Member at the <a href="https://www.openapis.org/">OpenAPI Initiative</a></li>
+          <li>Co-Maintainer of the <a href="https://spec.openapis.org/arazzo/latest.html">Arazzo Specification</a></li>
+          <li><a href="https://www.linkedin.com/in/frank-kilcommins"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/frank-kilcommins</code></a></li>
+          <li><a href="https://bsky.app/profile/fkilcommins.bsky.social"><img src="bluesky-logo.png" style=" height : 1em ; "/> <code>@fkilcommins.bsky.social</code></a></li>
+        </ul>
+      </slide>
+      <slide id="erik-india">
+        <title>Erik Wilde</title>
+        <ul>
+          <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+        </ul>
+      </slide>
+    </part>
+    <part id="workshop-logistics">
+      <title>Logistics</title>
+      <slide id="workshop-outcomes">
+        <title>What You Will Be Able to Do</title>
+        <ul>
+          <li>Design OpenAPI specifications that stay predictable under automated consumption</li>
+          <li>Apply Overlay rules to enforce governance across specifications</li>
+          <li>Model multi-API workflows using Arazzo</li>
+          <li>Design guardrails that control how AI agents interact with APIs</li>
+          <li>Evaluate whether an existing API ecosystem is ready for AI-driven orchestration</li>
+          <li>Plan an incremental strategy to improve AI-readiness over time</li>
+        </ul>
+      </slide>
+    </part>
+  </presentation>
+  <presentation id="ai-api-usage">
+    <title short="AI-Driven API Usage">Module 1: Understanding AI-Driven API Usage</title>
+    <author>Erik Wilde</author>
+    <date short="2026-08-21">August 21, 2026</date>
+    <toc class="abstract">How AI agents interact with APIs in modern systems: autonomous endpoint calls, service chaining, and generated integrations. Why traditional API governance models break under automated usage, and the architectural risks that follow. Hands-on exercise: map real-world AI interaction patterns onto your own APIs.</toc>
+  </presentation>
+  <presentation id="openapi">
+    <title short="Governed API Specifications with OpenAPI">Module 2: Designing Governed API Specifications with OpenAPI</title>
+    <author>Erik Wilde</author>
+    <date short="2026-08-21">August 21, 2026</date>
+    <toc class="abstract">Using OpenAPI as a machine-readable contract for APIs consumed by automated systems. Clarity, predictability, and structure so agents interpret APIs without ambiguity. Hands-on exercise: review and refine an existing OpenAPI specification for resilience under automated usage.</toc>
+  </presentation>
+  <presentation id="overlay">
+    <title short="Governance with OpenAPI Overlay">Module 3: Applying Governance with OpenAPI Overlay</title>
+    <author>Frank Kilcommins</author>
+    <date short="2026-08-21">August 21, 2026</date>
+    <toc class="abstract">Enforcing governance at scale with OpenAPI Overlay: consistent policy layers across specifications without modifying the original contracts. Overlay structure and syntax, and rules for security, usage constraints, and compliance. Hands-on exercise: build an Overlay that applies governance policies to an existing API.</toc>
+  </presentation>
+  <presentation id="arazzo">
+    <title short="API Workflows with Arazzo">Module 4: Modeling API Workflows with Arazzo</title>
+    <author>Frank Kilcommins</author>
+    <date short="2026-08-21">August 21, 2026</date>
+    <toc class="abstract">Why deterministic workflows matter when AI agents orchestrate multiple APIs, and how Arazzo models those interactions. Arazzo structure, and how to define safe repeatable multi-step processes across services. Hands-on exercise: design a multi-API workflow with predictable, governed interactions.</toc>
+  </presentation>
+  <presentation id="api-ecosystems">
+    <title short="AI-Ready API Ecosystems">Module 5: Designing AI-Ready API Ecosystems</title>
+    <author>Frank Kilcommins</author>
+    <date short="2026-08-21">August 21, 2026</date>
+    <toc class="abstract">Platform-level design: guardrails, governance patterns, and control mechanisms that keep APIs safe and predictable under agent usage. Hands-on exercise: evaluate a sample API platform, identify governance gaps, and propose improvements to its AI-readiness.</toc>
+  </presentation>
+  <presentation id="api-implementation">
+    <title short="API Specification to Implementation">Module 6: From API Specification to Implementation</title>
+    <author>Erik Wilde</author>
+    <date short="2026-08-21">August 21, 2026</date>
+    <toc class="abstract">Optional module. Translating governed OpenAPI specifications into running API services while preserving the intended constraints and predictable behavior for automated consumers. Hands-on review: how implementation choices affect governance and consistency in AI-driven environments.</toc>
   </presentation>
 </hotspot>
