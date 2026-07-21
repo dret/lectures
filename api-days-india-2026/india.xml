@@ -196,6 +196,43 @@
     </part>
     <part id="where-the-line-runs">
       <title>Where the Line Runs</title>
+      <slide id="boundary-history">
+        <title>The Boundary Has a History</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 33% ;">Before Machine Learning</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 33% ;">Machine Learning</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 33% ;">Generative AI</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>No boundary at all</li>
+                <li>Everything is code</li>
+                <li>If code could not do it, you did not build it</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>The boundary appears</li>
+                <li>Probabilistic components are possible but expensive</li>
+                <li>So you keep them small and deliberate</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>The cost collapses</li>
+                <li>The boundary moves a long way, fast</li>
+                <li>Often without anyone deciding that it should</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <ul>
+          <li>The boundary sits where the economics put it</li>
+          <li>Generative AI changed the price, not the principle</li>
+        </ul>
+      </slide>
       <slide id="domains-and-interfaces">
         <title>It's Software Architecture</title>
         <ul>
@@ -206,6 +243,72 @@
           <li>The line may move because of new processes and workflows</li>
         </ul>
       </slide>
+    </part>
+    <part id="crossing-the-boundary">
+      <title>Crossing the Boundary</title>
+      <slide id="two-contracts">
+        <title>Two Kinds of Component, Two Kinds of Contract</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Deterministic</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Probabilistic</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Same input, same output</li>
+                <li>Tested exhaustively, within reason</li>
+                <li>Composes predictably</li>
+                <li>Failure is exceptional</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Same input, a distribution of outputs</li>
+                <li>Evaluated statistically</li>
+                <li>Adapts to what it is given</li>
+                <li>Variation is expected</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <ul>
+          <li>From here on: <em>probabilistic</em> and <em>deterministic</em>, not <q>AI</q> and <q>non-AI</q></li>
+        </ul>
+      </slide>
+      <slide id="two-crossings">
+        <title>Crossing the Boundary Changes Your Guarantees</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Deterministic &#8594; Probabilistic</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Probabilistic &#8594; Deterministic</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>You delegate judgment</li>
+                <li>You give up repeatability</li>
+                <li>The uncertainty is in the answer</li>
+                <li>Managed with evals: statistical, after the fact</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>You delegate execution</li>
+                <li>You give up guaranteed invocation</li>
+                <li>The uncertainty is in whether the call happens at all</li>
+                <li>Managed by removing discretion where discretion no longer adds value</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <ul>
+          <li>Bottom line: the two directions are not symmetric, and neither are their fixes</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="mechanisms">
+      <title>What to Use When</title>
       <slide id="mcp">
         <title>Model Context Protocol (MCP)</title>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
