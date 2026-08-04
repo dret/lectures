@@ -49,48 +49,9 @@
   <author>Erik Wilde</author>
   <affiliation>OpenAPI Ambassador, <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></affiliation>
   <copyright>2026 Erik Wilde</copyright>
-  <presentation id="openapi-track-welcome">
-    <title short="OpenAPI Track Welcome">OpenAPI Track Welcome and OpenAPI in the Age of AI</title>
-    <date short="2026-08-19">August 19, 2026</date>
-    <slide id="openapi-track-mix">
-      <title>OpenAPI Track/Summit/Conference</title>
-      <img src="openapi-track-mix-animated.webp" class="fullsize-shadow"/>
-    </slide>
-    <slide id="erik">
-      <title>Erik Wilde</title>
-      <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
-      <ul>
-        <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
-        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-      </ul>
-    </slide>
-    <part id="conclusions">
-      <title>Conclusions</title>
-      <slide id="scorecard">
-        <title>Next Step: AI-Readiness Scorecard</title>
-        <img src="api-ai-scorecard.png" href="https://jentic.com/scorecard" style="float: right ; width : 45% ; margin : 0% 4% 4% 4% ; " class="shadow"/>
-        <ul>
-          <li>APIs are AI enablement</li>
-          <li>Assess where you are today</li>
-          <li>Six dimensions of AI-readiness</li>
-          <li>Web: <code href="https://jentic.com/scorecard">jentic.com/scorecard</code></li>
-          <li>CLI: <code>npx @jentic/api-scorecard-cli score openapi.yaml</code></li>
-        </ul>
-      </slide>
-      <slide id="openapi-thanks">
-        <title>Thank You!</title>
-        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-        <ul>
-          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-        </ul>
-      </slide>
-    </part>
-  </presentation>
   <presentation id="composable-ai">
     <title short="Composable Architecture for AI Systems">Composable Architecture for AI Systems: APIs, MCP, Skills, Sub-Agents, and Workflows</title>
-    <date short="2026-08-20">August 20, 2026</date>
+    <date short="2026-08-20">August 19, 2026</date>
     <toc class="abstract">AI is a powerful tool, but it is not the only tool, and most systems worth building are hybrids of AI and non-AI parts. That line between them doesn't sit neatly between domains. It runs inside every domain, and it should move as you learn. This talk looks at the mechanisms for connecting across that line: APIs, MCP, agent skills, and sub-agents, as well as at workflows as a way to move the line itself: when an agent keeps rediscovering the same business process, that process belongs in deterministic execution, not in a prompt. You'll leave knowing which mechanism belongs where, and how to keep shifting work out of AI as your system settles.</toc>
     <slide id="agent-erik">
       <title>Erik Wilde</title>
@@ -373,6 +334,45 @@
     <part id="agent-conclusions">
       <title>Conclusions</title>
       <slide id="agent-thanks">
+        <title>Thank You!</title>
+        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        </ul>
+      </slide>
+    </part>
+  </presentation>
+  <presentation id="openapi-track-welcome">
+    <title short="OpenAPI Track Welcome">OpenAPI Track Welcome and OpenAPI in the Age of AI</title>
+    <date short="2026-08-20">August 20, 2026</date>
+    <slide id="openapi-track-mix">
+      <title>OpenAPI Track/Summit/Conference</title>
+      <img src="openapi-track-mix-animated.webp" class="fullsize-shadow"/>
+    </slide>
+    <slide id="erik">
+      <title>Erik Wilde</title>
+      <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <ul>
+        <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+      </ul>
+    </slide>
+    <part id="conclusions">
+      <title>Conclusions</title>
+      <slide id="scorecard">
+        <title>Next Step: AI-Readiness Scorecard</title>
+        <img src="api-ai-scorecard.png" href="https://jentic.com/scorecard" style="float: right ; width : 45% ; margin : 0% 4% 4% 4% ; " class="shadow"/>
+        <ul>
+          <li>APIs are AI enablement</li>
+          <li>Assess where you are today</li>
+          <li>Six dimensions of AI-readiness</li>
+          <li>Web: <code href="https://jentic.com/scorecard">jentic.com/scorecard</code></li>
+          <li>CLI: <code>npx @jentic/api-scorecard-cli score openapi.yaml</code></li>
+        </ul>
+      </slide>
+      <slide id="openapi-thanks">
         <title>Thank You!</title>
         <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
         <ul>
