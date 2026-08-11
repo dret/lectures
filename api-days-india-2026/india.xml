@@ -726,9 +726,211 @@
   <presentation id="overlay">
     <title short="Governance with OpenAPI Overlay">Module 3: Applying Governance with OpenAPI Overlay</title>
     <author>Frank Kilcommins</author>
+    <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
+    <copyright>2026 Frank Kilcommins</copyright>    
     <date short="2026-08-21">August 21, 2026</date>
     <toc class="abstract">Enforcing governance at scale with OpenAPI Overlay: consistent policy layers across specifications without modifying the original contracts. Overlay structure and syntax, and rules for security, usage constraints, and compliance. Hands-on exercise: build an Overlay that applies governance policies to an existing API.</toc>
     <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-india-2026">Masterclass materials (GitHub)</a></toc>
+    <part id="what-is-overlay">
+			<title>What is the Overlay Specification?</title>
+      <slide id="overlay-what-is-it">
+          <title>What is the OpenAPI Overlay Specification?</title>
+          <ul>
+              <li>The OpenAPI Overlay Specification defines a way to modify an existing OpenAPI document without changing the original file.</li>
+              <li>Overlays are separate <em>YAML / JSON</em> documents containing structured actions (add, update, remove) targeting parts of an OpenAPI document.</li>
+              <li>Targets are identified using JSONPath expressions, enabling precise and repeatable transformations.</li>
+              <li>The Overlay Specification is an official OAI standard (v1.1.0) designed to support cleaner API workflows and automation.</li>
+              <li>Overlays allow changes to be applied incrementally, layered, and versioned independently of the base OpenAPI Document.</li>
+          </ul>
+      </slide> 
+      <slide id="overlay-why-use-it">
+          <title>Why Use Overlays?</title>
+          <ul>
+              <li><strong>Separation of concerns:</strong> Keep the canonical API definition clean, while applying environment-, audience-, or workflow-specific changes via overlays.</li>
+              <li><strong>Consistency &amp; automation:</strong> Apply repeatable updates across OpenAPI docs (e.g., documentation, metadata, security, examples) without manual editing.</li>
+              <li><strong>Multi-audience support:</strong> Generate public, private, partner, or internal API descriptions from one source using different overlays.</li>
+              <li><strong>Avoids oversharing:</strong> Remove internal endpoints or sensitive fields for public-facing specs without duplicating files.</li>
+              <li><strong>Integration in pipelines:</strong> Overlays can be applied during CI/CD to prepare API definitions for documentation, SDKs, testing, or gateways.</li>
+              <li><strong>Localization:</strong> Translating documentation into another language.</li>
+          </ul>
+          <p style="text-align: center; font-size: 1.75em;"><strong>OpenAPI + Overlays = (better) OpenAPI!</strong></p>
+      </slide>
+    </part>
+    <part id="how-overlays-work">
+			<title>Overlay Specification Overview</title>
+        <slide id="overlay-spec-overview">
+            <title>Overlay Specification Overview</title>
+            <ul>
+                <li>An Overlay document has three top-level fields: <code>overlay</code> (version), <code>info</code>, and <code>actions</code>.</li>
+                <li>Actions are processed in order, allowing sequential and predictable transformations to the base OpenAPI spec.</li>
+                <li>Each Action Object contains a <code>target</code> (a JSONPath expression) and an operation such as <code>update</code>, <code>remove</code>, or <code>copy</code>.</li>
+                <li>Targets can point to any part of the OpenAPI document: paths, operations, parameters, descriptions, vendor extensions, security, metadata, etc.</li>
+                <li>Overlays are fully valid YAML/JSON documents and can be version-controlled and reused across pipelines.</li>
+            </ul>
+        </slide>   
+        <slide id="overlay-basic-example">
+            <title>Basic Overlay Example – Updating Descriptions</title>
+            <ul>
+                <li>Overlays can enrich generated or minimal OpenAPI specs with documentation.</li>
+                <li>Example: enhance the API's description field without touching the source OpenAPI Document.</li>
+                <li>Example Overlay:</li>
+            </ul>
+            <pre>
+              overlay: 1.1.0
+              info:
+                title: Improve API Descriptions
+                version: 0.1.0
+              actions:
+                - target: "$.info.description"
+                  update:
+                    description: "Public API for MyService – includes endpoints for books and orders."
+            </pre>
+            <ul>
+                <li>This updates <code>info.description</code> in the output OpenAPI Document when the overlay is applied.</li>
+            </ul>
+        </slide>
+        <slide id="overlay-advanced-example">
+            <title>Advanced Overlay Example – Remove Internal Endpoints</title>
+            <ul>
+                <li>Overlays can remove elements based on metadata (e.g., internal endpoints marked with <code>x-internal: true</code>).</li>
+                <li>Useful for creating a public version of an API from an internal canonical OpenAPI Document.</li>
+                <li>Example Overlay:</li>
+            </ul>
+            <pre>
+              overlay: 1.1.0
+              info:
+                title: Public API Variant
+                version: 1.0.0
+              actions:
+                - target: "$.paths.*[?(@.x-internal == true)]"
+                  remove: true
+            </pre>
+            <ul>
+                <li>This removes all paths or operations marked as <em>internal</em> from the final OpenAPI Document.</li>
+                <li>Can be combined with overlays adding public-facing docs, examples, or vendor extensions.</li>
+            </ul>
+        </slide>
+        <slide id="overlay-advanced-move-example">
+            <title>Advanced Overlay Example – Move Elements</title>
+            <ul>
+                <li>Overlays can now be used to <code>copy</code> elements.</li>
+                <li>Combined with <code>remove</code> actions, this enables moving elements between different parts of the OpenAPI Document.</li>
+                <li>Example Overlay:</li>
+            </ul>
+            <table rules="all" cellspacing="0" cellpadding="5" width="100%">
+              <thead>
+                <tr>
+                  <th valign="bottom">Source Description</th>
+                  <th valign="bottom">Overlay</th>
+                  <th valign="bottom">Result Description</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              <tr>
+                <td>
+                  <pre style="text-align: left;">overlay: 1.1.0
+openapi: 3.1.0
+info:
+  title: Example API
+  version: 1.0.0
+paths:
+  /items:
+    get:
+      responses:
+        200:
+          description: OK
+  /some-items:
+    delete:
+      responses:
+        200:
+          description: OK
+                  </pre>        
+                </td>
+                <td>
+                  <pre style="text-align: left;">
+overlay: 1.1.0
+info:
+  title: Update the path for an API endpoint
+  version: 1.0.0
+actions:
+  - target: '$.paths'
+    update: { "/new-items": {} }
+  - target: '$.paths["/new-items"]'
+    copy: '$.paths["/items"]'
+  - target: '$.paths["/items"]'
+    remove: true
+    description: 'moves the "items" path item to "new-items"'
+                  </pre>                    
+                </td>
+                <td>
+                  <pre style="text-align: left;">
+openapi: 3.1.0
+info:
+  title: Example API
+  version: 1.0.0
+paths:
+  /new-items:
+    get:
+      responses:
+        200:
+          description: OK
+  /some-items:
+    delete:
+      responses:
+        200:
+          description: OK
+                  </pre>                    
+                </td>
+              </tr>
+
+              </tbody>
+            </table>
+        </slide>        
+    </part>
+    <part id="overlay-in-pipelines">
+			<title>Overlays in API Pipelines</title>
+        <slide id="overlay-lifecycle-position">
+          <title>Where Overlays Fit in the API Lifecycle</title>
+          <ul>
+            <li>Begin with a canonical OpenAPI Description (often code-generated or design-first).</li>
+            <li>Apply overlays to inject descriptions, examples, tags, rate limits, or other metadata without altering the base OpenAPI Document.</li>
+            <li>Use multiple overlays to tailor the API for different audiences: public, partner, internal, or operational.</li>
+            <li>Generate derived specs during CI/CD for documentation portals, SDK generation, gateways, mocks, or testing tools.</li>
+            <li>Overlays help maintain a single source of truth while enabling flexible downstream representations.</li>
+          </ul>
+        </slide>
+        <slide id="overlay-automation-ci">
+            <title>Automation &amp; CI/CD Integration</title>
+            <ul>
+              <li>Overlays can be applied as automated steps during the build or release process.</li>
+              <li>Ensures documentation, SDKs, and other artifacts are always generated from a validated and enriched spec.</li>
+              <li>Important for large teams where manual edits would be error-prone or inconsistent.</li>
+              <li>Overlay application is deterministic: the same overlay + same base OpenAPI Document produces the same result every time.</li>
+              <li>Ideal for pipelines that produce “public”, “internal”, “sandbox”, or “gateway-ready” specs from one base definition.</li>
+            </ul>
+        </slide>
+        <slide id="overlay-when-to-use">
+            <title>When to Use Overlays (and When Not To)</title>
+            <ul>
+                <li><strong>Use overlays when:</strong>
+                    <ul>
+                        <li>You maintain a single authoritative OpenAPI Description but need multiple consumer-specific derivatives.</li>
+                        <li>You want to enrich autogenerated OpenAPI Docs with human-friendly descriptions and examples.</li>
+                        <li>You want to strip internal endpoints or sensitive details before publishing publicly.</li>
+                        <li>You want to version documentation changes separately from functional API changes.</li>
+                    </ul>
+                </li>
+                <li><strong>Avoid overlays when:</strong>
+                    <ul>
+                        <li>The change reflects reality of the core API itself (e.g., adding a real endpoint or schema change).</li>
+                        <li>Your tooling ecosystem does not yet support overlay application.</li>
+                        <li>You have highly dynamic schemas where direct design-first maintenance is preferred.</li>
+                    </ul>
+                </li>
+            </ul>
+        </slide>
+    </part>     
     <slide id="overlay-qr-code">
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-india-2026.png" href="https://github.com/dret/building-ai-ready-apis-india-2026" class="fullsize"/>
@@ -738,9 +940,294 @@
   <presentation id="arazzo">
     <title short="API Workflows with Arazzo">Module 4: Modeling API Workflows with Arazzo</title>
     <author>Frank Kilcommins</author>
+    <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
+    <copyright>2026 Frank Kilcommins</copyright>      
     <date short="2026-08-21">August 21, 2026</date>
     <toc class="abstract">Why deterministic workflows matter when AI agents orchestrate multiple APIs, and how Arazzo models those interactions. Arazzo structure, and how to define safe repeatable multi-step processes across services. Hands-on exercise: design a multi-API workflow with predictable, governed interactions.</toc>
     <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-india-2026">Masterclass materials (GitHub)</a></toc>
+		<part id="what-is-arazzo">
+			<title>What is the Arazzo Specification?</title>
+			<slide id="what-is-arazzo">
+				<title>What is the Arazzo Specification?</title>
+				<img src="arazzo_horizontal_color.png"  style="float: right ; width : 30%; margin : 0% 4% 4% 4% ;  "/>
+				<ul>
+					<li>The Arazzo Specification is a community-driven open specification within the <em>OpenAPI Initiative</em>, a Linux Foundation Project</li>
+					<li>Arazzo describes an approach to document use-case oriented workflows in a programmatically readable format</li>
+					<li>A <em>workflow</em> is a series of API calls which when woven together accomplish a specific task or goal or business objective</li>
+					<li>The human-readable nature improves the ability of API specifications to tell the story of the API(s) in a manner that can improve the consuming developer experience.</li>
+					<li>The machine-readable nature allows for intent orientated workflows to be discoverable and executable by AI agents, testing tools, documentation tools, and so on!</li>
+				</ul>
+			</slide>
+			<slide id="arazzo-use-cases">
+				<title>Dominant Use Cases</title>
+				<img src="arazzo_horizontal_color.png"  style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ;  "/>
+				<ul>
+					<li>Deterministic recipes for the use of APIs</li>
+					<ul>
+						<li>Make sense of large unwieldy API description</li>
+						<li>Bridge the gap where business flows span more than one API description</li>
+					</ul>
+					<li>Living API documentation and improved consumer developer experience (DX)</li>
+					<li>Assertable business value (machine readable end-to-end test semantics)</li>
+					<li>Targeted code generation tooling (think SDKs, MCP Servers) for APIs driven by use cases</li>
+					<li>Improved regulatory checks via assertable workflows</li>
+					<li>The AI potential for value orientated <em>repeatable</em> interaction with APIs</li>
+				</ul>
+			</slide>
+		</part>
+		<part id="specification-structure">
+			<title>Arazzo Specification Structure</title>
+			<slide id="arazzo-specification-structure">
+				<title>Arazzo Specification Structure</title>
+				<img src="Arazzo-Specification-1.0.1.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-info">
+				<title>Arazzo Specification: Info Object</title>
+				<img src="arazzo-1-info.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-info-example">
+				<title>Arazzo Specification: Info Object Example</title>
+				<img src="arazzo-1-info-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-source-descriptions">
+				<title>Arazzo Specification: Source Descriptions</title>
+				<img src="arazzo-2-source-descriptions.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-source-descriptions-example">
+				<title>Arazzo Specification: Source Descriptions Example</title>
+				<img src="arazzo-2-source-descriptions-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-workflows">
+				<title>Arazzo Specification: Workflows</title>
+				<img src="arazzo-3-workflows.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-workflows-example">
+				<title>Arazzo Specification: Workflows Example</title>
+				<img src="arazzo-3-workflows-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-inputs">
+				<title>Arazzo Specification: Inputs</title>
+				<img src="arazzo-4-inputs.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-inputs-example">
+				<title>Arazzo Specification: Inputs Example</title>
+				<img src="arazzo-4-inputs-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-steps">
+				<title>Arazzo Specification: Steps</title>
+				<img src="arazzo-5-steps.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-steps-example">
+				<title>Arazzo Specification: Steps Example</title>
+				<img src="arazzo-5-steps-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-parameters">
+				<title>Arazzo Specification: Parameters</title>
+				<img src="arazzo-6-parameters.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-parameters-example">
+				<title>Arazzo Specification: Parameters Example</title>
+				<img src="arazzo-6-parameters-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-failure-actions">
+				<title>Arazzo Specification: Failure Actions</title>
+				<img src="arazzo-7-failure-actions.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-failure-actions-example">
+				<title>Arazzo Specification: Failure Actions Example</title>
+				<img src="arazzo-7-failure-actions-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-success-actions">
+				<title>Arazzo Specification: Success Actions</title>
+				<img src="arazzo-8-success-actions.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-success-actions-example">
+				<title>Arazzo Specification: Success Actions Example</title>
+				<img src="arazzo-8-success-actions-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-step-outputs">
+				<title>Arazzo Specification: Step Outputs</title>
+				<img src="arazzo-9-step-outputs.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-step-outputs-example">
+				<title>Arazzo Specification: Step Outputs Example</title>
+				<img src="arazzo-9-step-outputs-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-workflow-outputs">
+				<title>Arazzo Specification: Workflow Outputs</title>
+				<img src="arazzo-10-workflow-outputs.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-workflow-outputs-example">
+				<title>Arazzo Specification: Workflow Outputs Example</title>
+				<img src="arazzo-10-workflow-outputs-example.png" class="fullsize-shadow" />
+			</slide>
+			<slide id="arazzo-components">
+				<title>Arazzo Specification: Components</title>
+				<img src="arazzo-11-components.png" class="fullsize" style="height: 75%" />
+			</slide>
+		</part>
+		<part id="1.1-updates">
+			<title>Arazzo Specification 1.1 Updates</title>
+      <slide id="arazzo-1.1-updates">
+        <title>Arazzo Specification 1.1 - Just Released!</title>
+        <img src="arazzo-1.1-release.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; " />
+        <p><strong>What's new:</strong></p>
+				<ul>
+					<li>AsyncAPI support</li>
+					<li>Chained workflow execution</li>
+					<li>Advanced JSONPath / XPath selector support</li>
+          <li>OpenAPI 3.2 alignment</li>
+          <li>Precision improvements:</li>
+					<ul>
+						<li>Full ABNF grammar</li>
+						<li>Truthy/Falsy condition semantics</li>
+            <li>And more!</li>
+					</ul>
+				</ul>  
+      </slide>      
+      <slide id="arazzo-1.1-asyncapi-support-1">
+        <title>Arazzo 1.1 - AsyncAPI Support</title>
+        <ul>
+					<li><a href="https://spec.openapis.org/arazzo/v1.1.0.html#source-description-object">Source Description Object</a> now supports the following document types:</li>
+					<ul>
+						<li><code>openapi</code></li>
+            <li><code>arazzo</code></li>
+						<li><code>asyncapi</code></li>
+					</ul>
+				</ul> 
+        <img src="Arazzo1.1-Include-AsyncAPI-Documents-in-Source-Descriptions.png" class="fullsize" style="height: 40%" /> 
+      </slide>  
+      <slide id="arazzo-1.1-asyncapi-support-2">
+        <title>Arazzo 1.1 - AsyncAPI Support</title>
+        <ul>
+					<li>Step Object references operations (or channels) described in AsyncAPI Document using <code>operationId</code> or <code>channelPath</code>.</li>
+          <li>Async steps define an <code>action</code> (“send” or “receive”) indicating message flow intent.</li>
+          <li>A <code>correlationId</code> in AsyncAPI links a request with its response, and must be in-sync with the AsyncAPI Document.</li>
+          <li>A <code>timeout</code> sets the maximum number of milliseconds to wait for the step to complete before aborting and failing the step.</li>
+				</ul> 
+        <img src="Arazzo1.1-Async-Recieve-Step-with-specified-timeout.png" class="fullsize" style="height: 50%" /> 
+      </slide>   
+      <slide id="arazzo-1.1-asyncapi-support-2">
+        <title>Arazzo 1.1 - AsyncAPI Support</title>
+        <ul>
+					<li>Step Object now has the ability to specify explicit dependencies.</li>
+          <li>These are a list of steps that MUST be completed before the current step can be executed. </li>
+          <li><code>dependsOn</code> only establishes a prerequisite relationship for the current step and does not trigger execution of the referenced steps.</li>
+				</ul> 
+        <img src="Arazzo1.1-Async-Send-Step-with-specified-dependsOn.png" class="fullsize" style="height: 50%"/> 
+      </slide>          
+      <slide id="arazzo-1.1-chaining-workflow-execution">
+        <title>Arazzo 1.1 - Chaining Workflows</title>
+        <ul>
+					<li>Action Objects now fully support chaining workflows, and mapping workflow inputs using the <code>parameters</code> fixed field.</li>
+				</ul> 
+        <img src="Arazzo1.1-Chaining-Workflows-with-Action-Objects.png" class="fullsize" style="height: 65%"/> 
+      </slide>      
+      <slide id="arazzo-1.1-advanced-selector-support">
+        <title>Arazzo 1.1 - Advanced Selector Support</title>
+        <ul>
+					<li>A new <a href="https://spec.openapis.org/arazzo/v1.1.0.html#selector-object">Selector Object</a> which is usable across workflow outputs, step outputs, requestbody payloads, parameter values, payload replacement values.</li>
+          <li>Enables fine-grained traversal and precise data selection from structured data such as JSON or XML, using a defined selector syntax such as <code>jsonpath</code>, <code>xpath</code>, or <code>jsonpointer</code>.</li>
+          <ul>
+            <li>The <code>context</code> sets the root node for the selector.</li> 
+            <li>The <code>selector</code> specifies the expression.</li>
+            <li>The <code>type</code> specifies the selector syntax.</li>
+          </ul>          
+				</ul> 
+        <img src="Arazzo1.1-Selector-Object-Usage-Example.png" class="fullsize" style="height: 40%"/> 
+      </slide>             
+      <slide id="arazzo-1.1-selector-expression-types">
+        <title>Arazzo 1.1 - Selector Expression Types</title>
+        <ul>
+					<li>Overriding the default Selector Expression versions via the <a href="https://spec.openapis.org/arazzo/v1.1.0.html#expression-type-object">Expression Type Object</a> (renamed from Criterion Expression Type Object)</li>
+          <ul>
+            <li>Specify the <code>type</code> and <code>version</code> for the selector expression to override default</li> 
+          </ul> 				
+        </ul> 
+        <img src="Arazzo1.1-Selector-Obj-combined-with-Expression-Type-Obj.png" class="fullsize" /> 
+      </slide>   
+      <slide id="arazzo-1.1-selector-expression-defaults">
+        <title>Arazzo 1.1 - Selector Expression Type Defaults</title>
+        <img src="Arazzo1.1-Selector-Expression-Defaults.png" class="fullsize" /> 
+      </slide>        
+      <slide id="arazzo-1.1-openapi-alignment">
+        <title>Arazzo 1.1 - OpenAPI 3.2 Alignment</title>
+        <ul>
+					<li>The <a href="https://spec.openapis.org/arazzo/v1.1.0.html#parameter-object">Parameter Object</a> has a new <code>querystring</code> option for the <code>in</code> fixed field, which treats the entire URL query string as a single value.</li>				
+        </ul> 
+        <img src="Arazzo1.1-Mapping-to-an-API-Operation's-_querystring_-parameter.png" class="fullsize" /> 
+      </slide>      
+      <slide id="arazzo-1.1-identity-based-referencing">
+        <title>Arazzo 1.1 - Identity-Based Referencing</title>
+        <ul>
+					<li>To ensure interoperability, when referencing an Arazzo Description by URI, references MUST use the target document’s <code>$self</code> if present.</li>				
+          <li><code>$self</code> is a URI-reference for the Arazzo Description ensuring portable and unambiguous reference resolution.</li>
+        </ul> 
+        <img src="Arazzo1.1-$self-for-identity-based-document-referencing.png" class="fullsize" /> 
+      </slide>      
+      <slide id="arazzo-1.1-housekeeping">
+        <title>Arazzo 1.1 - Housekeeping</title>
+        <img src="arazzo-tool-listing.png" style="float: right ; height : 80% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>         
+        <ul>
+          <li>ABNF Expressions</li>
+          <ul>
+            <li>Complete grammar</li> 
+            <li>Clarity on string embedding</li>
+            <li>Source Description resolution ordering</li>
+          </ul>   
+          <li>Truthy/Falsy evaluation semantics for conditions</li>
+          <li>Tool listing added to ReadMe (also see <a href="https://openapi.tools/collections/arazzo">openapi.tools</a>)</li>       
+				</ul>         
+      </slide>        
+      <slide id="arazzo-1.1-looking-ahead">
+        <title>Arazzo: Looking Ahead to 1.2, 1.3, ... , 2.0</title>
+        <ul>
+					<li>SOAP support (already merged into 1.2 branch)</li>				
+          <li>gRPC, GraphQL, MCP, A2A step support</li>
+          <li>Actor-in-the-loop support (human or agent)</li>
+          <li>Function / transformation support</li>
+          <li>Loop support</li>
+        </ul> 
+      </slide>     
+      <slide id="arazzo-cheat-sheet">
+        <title>Arazzo Cheat Sheet</title>
+        <img src="Arazzo-Cheat-Sheet.png" href="https://jentic.com/extra/arazzo-specification-cheatsheet.pdf" title="Jentic Arazzo Cheat Sheet" class="fullsize"/>
+      </slide>         
+    </part>    
+		<part id="Arazzo Exercise">
+			<title>Example Travel Workflow Use Case</title>
+			<slide id="exercise-arazzo">
+				<title>Example Travel Workflow Use Case</title>
+        <p><strong>A concierge-grade workflow for rebooking disrupted flights for Platinum and Ultimate passengers, rebooking hotels, and arranging transportation</strong></p>
+        <p>Steps:</p>
+				<ul>
+					<li>Retrieve rebooking options based on loyalty profile</li>
+          <li>Confirm selected offer and create shopping cart entry</li>
+          <li>Fetch full confirmed offer details</li>
+          <li>Modify hotel reservation (if arrival date not honoured)</li>
+          <li>Resolve hotel location - <code>Overture Maps via PlaceId</code></li>
+          <li>Request luxury ride pickup for 30 mins after arrival</li>
+          <li>Confirm ride details and pickup ETA for customer support</li>
+          <li>Return consolidated itinerary</li>
+				</ul>
+			</slide>
+			<slide id="travel-use-case">
+				<title>Multiple APIs and Endpoints Required</title>
+				<img src="arazzo-travel-use-case.png" class="fullsize"/>
+			</slide>
+			<slide id="arazzo-exercise-1">
+				<title>The Power of Arazzo: More YAML!?</title>
+				<img src="arazzo-travel-image-1.png" class="fullsize" style="height: 75%" />
+			</slide>
+			<slide id="arazzo-exercise-2">
+				<title>The Power of Arazzo: Machines love YAML!</title>
+				<img src="arazzo-travel-image-2.png" class="fullsize" style="height: 75%" />
+			</slide>
+      <slide id="what-arazzo-unlocks">
+        <title>What Arazzo Unlocks</title>
+        <img src="arazzo-what-it-unlocks.png" class="fullsize" style="height: 75%" />
+      </slide>
+		</part>    
     <slide id="arazzo-qr-code">
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-india-2026.png" href="https://github.com/dret/building-ai-ready-apis-india-2026" class="fullsize"/>
@@ -750,9 +1237,497 @@
   <presentation id="api-ecosystems">
     <title short="AI-Ready API Ecosystems">Module 5: Designing AI-Ready API Ecosystems</title>
     <author>Frank Kilcommins</author>
+    <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
+    <copyright>2026 Frank Kilcommins</copyright>      
     <date short="2026-08-21">August 21, 2026</date>
     <toc class="abstract">Platform-level design: guardrails, governance patterns, and control mechanisms that keep APIs safe and predictable under agent usage. Hands-on exercise: evaluate a sample API platform, identify governance gaps, and propose improvements to its AI-readiness.</toc>
     <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-india-2026">Masterclass materials (GitHub)</a></toc>
+    <part id="apis-and-ai">
+      <title>Are APIs AI-Ready?</title>
+      <slide id="ai-integration">
+        <title>AI Integration is the New Moat</title>
+        <img src="AI-Integration-the-new-Moat.png" href="https://www.oreilly.com/radar/integration-is-the-new-moat/" title='Tim O Reilly, Oct 2025' class="fullsize-shadow" />
+        <p style="text-align: center; font-size: .3em;">Tim O’Reilly  "AI Integration Is the New Moat",O’REILLY, Oct 2025
+https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
+      </slide>
+      <slide id="api-for-humans">
+        <title>Most APIs were Designed for Humans!</title>
+        <ul>
+					<li>APIs are intended for developers, but not to be <em>interpreted, reasoned about, or safely executed</em> by AI systems</li>
+				</ul>
+        <img src="APIs-were-for-humans.png" title="Most APIs were designed for Humans" style="height: 50%" class="fullsize-shadow"/>
+      </slide>
+      <slide id="is-openapi-enough">
+        <title>But we have OpenAPI! Isn't that enough?</title>
+        <blockquote style="width: 70%; margin: 0 auto; font-size: 1.5rem; font-weight: 600; text-align: center; line-height: 1.4; border: 2px solid #78A350;">
+          <p>… you can have valid <strong>OpenAPI</strong> that is semantically useless to both humans and machines  …</p>
+        </blockquote>
+
+
+      </slide>      
+      <slide id="humans-tolerate">
+        <title>Humans Tolerate, Machines Cannot</title>
+        <p><strong><em>Human Interpretation:</em></strong></p>
+        <ul>
+					<li>Vague descriptions</li>
+          <li>Inconsistent naming</li>
+          <li>Wrong servers</li>
+          <li>Missing authentication info</li>
+          <li>Missing examples</li>
+				</ul>
+      </slide>      
+      <slide id="machines-cannot-tolerate">
+        <title>Humans Tolerate, Machines Cannot</title>
+        <p><strong><em>Machine Interpretation:</em></strong></p>
+        <img src="computer-says-no.png" title="Machines cannot tolerate missing semantics" style=" height: 50%; float: left ; margin : 0% 4% 4% 4% ; " class="shadow"/>
+      </slide>
+      <slide id="findings-from-1500-apis">
+        <title>Findings from 6000+ Public APIs</title>
+        <img src="api-directory-overview.png" title="Jentic Public API Directory" href="https://github.com/jentic/jentic-public-apis"  style="max-width: 50%; height: auto; float: right; margin : 0% 4% 4% 4% ;"/>
+        <ul>
+          <li><strong><em>Broken specs:</em></strong></li>
+          <ul>
+            <li>Invalid or unparsable OpenAPI Docs</li>
+            <li>Missing path parameters / broken `$ref` chains</li>
+            <li>Invalid examples</li>
+          </ul>
+				</ul>
+        <ul>
+          <li><strong><em>Poor consumer experience:</em></strong></li>
+          <ul>
+            <li>Examples missing</li>
+            <li>Inconsistent naming, unclear HTTP verb usage</li>
+            <li>Vague or generic descriptions</li>
+          </ul>
+        </ul>
+        <ul>
+          <li><strong><em>Security runtime challenges:</em></strong></li>
+          <ul>
+              <li>No servers or wrong envs</li>
+              <li>Auth info missing (outside OpenAPI)</li>
+              <li>Stale / outdated OpenAPI Documents</li>      
+          </ul>
+        </ul>        
+      </slide> 
+      <slide id="typical-example">
+        <title>Typical Ambiguity Example</title>
+        <p><strong><em>Agent Interpretation:</em></strong></p>
+        <img src="A-valid-but-confusing-path-item.png" title="Machines cannot tolerate missing semantics" style="max-width: 50%; height: auto; float: right; margin : 0% 4% 4% 4% ;"/>
+        <ul>
+          <li>It might <em>create</em> an offer</li>
+          <li>It might<em>replace</em> an user</li>
+          <li>It might<em>partially update</em> a offer</li>
+          <li>It might<em>patch only some</em> offer fields</li>
+        </ul>       
+      </slide>      
+    </part>
+    <part id="from-dx-to-ax">
+      <title short="From DX to AX">From Developer Experience (DX) to Agent Experience (AX)</title>
+<slide id="rise-of-dx">
+        <title>The Rise of DX</title>
+        <ul>
+          <li>2000s: Having any API is good</li>
+          <li>2010s: Having many APIs is good</li>
+          <li>2020s: Having good APIs is good</li>
+        </ul>
+      </slide>
+      <slide id="developers">
+        <title>API Developers</title>
+        <ul>
+          <li>A lot of API-related experience and context</li>
+          <li>Discovering APIs at <em>design time</em> for writing applications</li>
+          <li>Navigating the API landscape with all their human skills</li>
+        </ul>
+      </slide>
+      <slide id="developer-superpowers">
+        <title>Developer Superpowers</title>
+        <img src="developer-woman.png" style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Developers resolve naming inconsistencies</li>
+          <li>Developers search, guess, test, troubleshoot</li>
+          <li>Developers understand business workflows through experience</li>
+          <li>Developers catch many mistakes the API design team made</li>
+        </ul>
+      </slide>
+      <slide id="dx-homework">
+        <title>Do Your DX Homework</title>
+        <ul>
+          <li>Most API descriptions need quality improvements anyway</li>
+          <li>Better descriptions benefit <em>everyone</em>, not just AI agents</li>
+          <ul>
+            <li>Complete and meaningful operation summaries</li>
+            <li>Comprehensive examples for all operations</li>
+            <li>Clear error handling</li>
+            <li>Consistent terminology and naming</li>
+          </ul>
+          <li>Good DX is the foundation for good AX</li>
+        </ul>
+      </slide>
+<slide id="agents">
+        <title>Agentic API Users</title>
+        <ul>
+          <li>Little knowledge of API patterns and practices</li>
+          <li>Discovering APIs at <em>run-time</em> for solving tasks</li>
+          <li>Navigating only machine-readable parts of the API landscape</li>
+        </ul>
+      </slide>
+      <slide id="ax-homework">
+        <title>Now There's AX Homework, Too</title>
+        <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+        <ul>
+          <li>AI agents need information developers don't typically require:</li>
+          <ul>
+            <li>Everything that developers usually <q>just know</q></li>
+            <li>Treat every API like an external one for developers with no context</li>
+          </ul>
+          <li>OpenAPI Initiative (OAI) might add AX-specific fields</li>
+          <li>Until then, leverage description fields strategically</li>
+        </ul>
+      </slide>
+      <slide id="oai-intro">
+        <title>The OpenAPI Initiative (OAI)</title>
+        <img src="OAI-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Today: no AX-specific fields in OpenAPI (3.2)</li>
+          <li>Community needs to define what AI agents need (3.3)</li>
+          <li>Tooling will follow once fields are standardized</li>
+          <li>Interested? Join the discussion in the <a href="https://openapis.org">OpenAPI Initiative</a>!</li>
+        </ul>
+      </slide>      
+    </part>
+    <part id="apis-and-ai">
+      <title>Making APIs AI-Ready</title>
+      <slide id="where-to-start-api-improvements">
+        <title>Where to start?</title>
+          <img src="api-ai-focus-areas.png" class="fullsize" />  
+      </slide>
+      <slide id="summary-and-descriptions">
+        <title>Readable <em>Summaries</em> and <em>Descriptions</em></title> 
+        <p><strong>Improves:</strong></p>
+        <ul>
+          <li>AI Discoverability, Semantic Clarity, Agent Usability</li>        
+        </ul>
+        <p><strong>Where...</strong></p>
+        <ul>
+          <li style="font-family: monospace"><strong>Objects allowing `summary`:</strong> Info, Path Item, Operation, Response, Example, Tag, Reference, ... </li>
+          <li style="font-family: monospace"><strong>Objects allowing `description`:</strong> Info, Server, Server Variable, Operation, Path Item, External Documentation, Parameter, Request Body, Response, Example, Link, Header, Tag, Reference, Security Scheme, <em>All JSON Schemas</em>, ... </li>
+        </ul>
+      </slide>        
+      <slide id="semantic-schemas">
+        <title>Semantically Rich <em>Schemas</em></title>
+        <p><strong>Improves:</strong></p>
+        <ul>
+          <li>AI-Readiness, Agent Usability, Security &amp; Validation</li>
+        </ul>
+        <p><strong>Where...</strong></p>
+        <ul>
+          <li style="font-family: monospace">
+            <strong>Core JSON Schema fields:</strong>
+            <code>type</code>, <code>format</code>, <code>enum</code>, <code>const</code>, <code>required</code>, <code>items</code>, <code>properties</code>, <code>additionalProperties</code>, <code>oneOf</code>, <code>anyOf</code>, <code>allOf</code>, <code>not</code>
+          </li>
+          <li style="font-family: monospace">
+            <strong>Constraint fields:</strong>
+            <code>minimum</code>, <code>maximum</code>, <code>exclusiveMinimum</code>, <code>exclusiveMaximum</code>, <code>minLength</code>, <code>maxLength</code>, <code>pattern</code>, <code>minItems</code>, <code>maxItems</code>, <code>uniqueItems</code>, <code>minProperties</code>, <code>maxProperties</code>
+          </li>
+          <li style="font-family: monospace">
+            <strong>OpenAPI locations:</strong>
+            <code>components.schemas</code>, inline parameter schemas, request body schemas, response bodies, header schemas, and any reusable schema fragments.
+          </li>
+        </ul>
+      </slide>
+      <slide id="correct-http-methods">
+        <title>Correct <em>HTTP Methods</em></title>
+        <p><strong>Improves:</strong></p>
+        <ul>
+          <li>Agent Usability, Safety, Idempotency Guarantees</li>
+        </ul>
+        <p><strong>Where...</strong></p>
+        <ul>
+          <li style="font-family: monospace">
+            <strong>Operation verbs:</strong>
+            map semantics to methods correctly:
+            <code>GET</code> = retrieve/list,
+            <code>POST</code> = create/trigger,
+            <code>PUT</code> = full replace,
+            <code>PATCH</code> = partial update,
+            <code>DELETE</code> = remove/revoke.
+          </li>
+          <li style="font-family: monospace">
+            <strong>Anti-patterns to avoid:</strong>
+            state-changing <code>GET</code>,
+            "action verbs" in paths that conflict with methods
+            (for example <code>POST /users/{id}/update</code>).
+          </li>
+          <li style="font-family: monospace">
+            <strong>OpenAPI locations:</strong>
+            each HTTP method under <code>paths.&lt;path&gt;.&lt;method&gt;</code>, plus
+            consistent naming in <code>operationId</code>, <code>summary</code> and path templates.
+          </li>
+        </ul>
+      </slide>
+      <slide id="full-use-of-examples">
+        <title>Full Use of <em>&quot;Examples&quot;</em></title>
+        <p><strong>Improves:</strong></p>
+        <ul>
+          <li>Developer Experience, AI-Readiness, Agent Planning</li>
+        </ul>
+        <p><strong>Where...</strong></p>
+        <ul>
+          <li style="font-family: monospace">
+            <strong>Single example fields:</strong>
+            <code>example</code> on Parameter, Header, Media Type,
+            Request Body, Response, and JSON Schema objects.
+          </li>
+          <li style="font-family: monospace">
+            <strong>Multiple examples:</strong>
+            <code>examples</code> on Parameter, Header, Media Type, and Link
+            to illustrate variations, error cases, and edge conditions.
+          </li>
+          <li style="font-family: monospace">
+            <strong>OpenAPI locations:</strong>
+            <code>paths.&lt;path&gt;.&lt;method&gt;.parameters[].example(s)</code>,
+            <code>requestBody.content[*].example(s)</code>,
+            <code>responses[status].content[*].example(s)</code>,
+            <code>components.schemas.*.example</code>.
+          </li>
+        </ul>
+      </slide>
+      <slide id="problem-details">
+        <title>Use <em>RFC 9457</em> <em>Problem Details</em> for Errors</title>
+        <p><strong>Improves:</strong></p>
+        <ul>
+          <li>Error Consistency, Security Signalling, AI Error Reasoning</li>
+        </ul>
+        <p><strong>Where...</strong></p>
+        <ul>
+          <li style="font-family: monospace">
+            <strong>Standard error schema:</strong>
+            define a reusable <code>ProblemDetails</code> in
+            <code>components.schemas</code> following <strong>RFC 9457</strong>
+            (for example <code>type</code>, <code>title</code>, <code>status</code>, <code>detail</code>, <code>instance</code>, plus extension members).
+          </li>
+          <li style="font-family: monospace">
+            <strong>Error responses:</strong>
+            reference the shared schema from
+            <code>responses[4xx/5xx].content['application/problem+json'].schema</code>
+            and optionally the <code>default</code> response.
+          </li>
+          <li style="font-family: monospace">
+            <strong>AI benefit:</strong>
+            predictable error shapes make it easier for agents to detect,
+            classify, and recover from failures programmatically.
+          </li>
+        </ul>
+      </slide>
+      <slide id="http-status-codes">
+        <title>Appropriate HTTP <em>Status Code</em> Usage</title>
+        <p><strong>Improves:</strong></p>
+        <ul>
+          <li>Foundational Compliance, Agent Usability, Observability</li>
+        </ul>
+        <p><strong>Where...</strong></p>
+        <ul>
+          <li style="font-family: monospace">
+            <strong>Success responses:</strong>
+            use correct 2xx codes:
+            <code>200</code> for successful retrieval,
+            <code>201</code> for created resources,
+            <code>202</code> for accepted/async,
+            <code>204</code> for no-content updates or deletes.
+          </li>
+          <li style="font-family: monospace">
+            <strong>Error responses:</strong>
+            model common 4xx/5xx codes with schemas:
+            <code>400</code>, <code>401</code>, <code>403</code>,
+            <code>404</code>, <code>409</code>, <code>422</code>, <code>500</code>, ...
+            not just a single generic <code>200</code> or <code>500</code>.
+          </li>
+          <li style="font-family: monospace">
+            <strong>OpenAPI locations:</strong>
+            <code>paths.&lt;path&gt;.&lt;method&gt;.responses[status]</code>
+            with appropriate <code>content</code>, schema and examples per status code.
+          </li>
+        </ul>
+      </slide>
+    </part>
+    <part id="scoring-apis">
+      <title>Measuring what matters</title>
+      <slide id="the-scoring-metric">
+        <title>You Can’t Improve What You Can’t Measure!</title>
+        <img src="Measure-APIs-for-AI.png" class="fullsize-shadow" />
+      </slide>   
+      <slide id="the-scoring-metric">
+        <title>Jentic's API AI-Readiness Framework</title>
+        <p>An open source framework which evaluates APIs across <strong>six developer &amp; AI-readiness</strong> dimensions</p>
+        <ul>
+          <li>Foundational Compliance</li>
+          <li>Developer Experience (including tooling compatibility)</li>
+          <li>Agent Experience</li>
+          <li>Agent Usability</li>
+          <li>Security</li>
+          <li>AI Discoverability</li>
+        </ul> 
+      </slide>
+      <slide id="scorecard">
+        <title>AI-Readiness Scorecard</title>
+        <img src="lufthansa-api-scorecard.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="foundational-compliance">
+        <title>Foundational Compliance</title>
+        <p><strong>Evaluates if an API is structurally valid, standards-compliance, and parseable by tooling.</strong></p>
+        <p>The following signals comprise the dimension:</p>
+        <table rules="all" cellspacing="0" cellpadding="5" width="95%" style="border: 2px solid #78A350;">
+          <thead>
+            <tr>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Signal</th>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Description</th>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Normalisation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Spec Validity</strong></td><td>Checks whether the API parses as a valid OpenAPI</td><td>binary</td></tr>
+            <tr><td><strong>Resolution Completeness</strong></td><td>What proportion of <code>$ref</code> references successfully resolve</td><td>coverage</td></tr>
+            <tr><td><strong>Lint Results</strong></td><td>Aggregated quality score from linter diagnostics, weighted by severity</td><td>inverse weighted categorical</td></tr>
+            <tr><td><strong>Structural Integrity</strong></td><td>Measures whether the API's underlying data model is coherent enough for automated reasoning (semantic or logical defects that impact reliable interpretation)</td><td>logarithmic dampening</td></tr>
+          </tbody>
+        </table>
+      </slide>
+      <slide id="structural-integrity-details">
+        <title>Structural Integrity Signal</title>
+        <img src="structural-integrity-signal.png" class="fullsize-shadow" />
+      </slide>      
+      <slide id="foundational-compliance-dimension">
+        <title>Foundational Compliance</title>
+        <img src="foundational-compliance-dimension.png" class="fullsize-shadow" />
+      </slide>     
+      <slide id="developer-experience">
+        <title>Developer Experience</title>
+        <p><strong>Assesses clarity, documentation quality, example coverage, and compatibility with developer tooling.</strong> </p>
+        <p>The following signals comprise the dimension:</p>
+        <table rules="all" cellspacing="0" cellpadding="5" width="95%" style="border: 2px solid #78A350;">
+          <thead>
+            <tr>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Signal</th>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Description</th>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Normalisation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Example Density</strong></td><td>Measures coverage of examples across all eligible specification locations</td><td>coverage</td></tr>
+            <tr><td><strong>Example Validity</strong></td><td>Checks all examples for Schema Conformance (JSON + XML)</td><td>coverage</td></tr>
+            <tr><td><strong>Doc Clarity</strong></td><td>Quantifies linguistic clarity of summaries and descriptions. Basically, how easy is it to understand the intent, and the complexity of verbiage.</td><td>min-max inverted</td></tr>
+            <tr><td><strong>Response Coverage</strong></td><td>Presence of meaningful success and error responses across full surface area</td><td>coverage</td></tr>
+          </tbody>
+        </table>
+      </slide>     
+      <slide id="ai-readiness-agent-experience">
+        <title>AI-Readiness &amp; Agent Experience</title>
+        <p><strong>Evaluates where an API gives enough context for AI systems to understand its intent, constraints, and expected behaviours. </strong> </p>
+        <p>The following signals comprise the dimension:</p>
+        <table rules="all" cellspacing="0" cellpadding="5" width="95%" style="border: 2px solid #78A350;">
+          <thead>
+            <tr>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Signal</th>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Description</th>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Normalisation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Summary Coverage</strong></td><td>Measures presence of concise summaries across eligible locations</td><td>coverage</td></tr>
+            <tr><td><strong>Description Coverage</strong></td><td>Measures presence of concise descriptions across eligible locations</td><td>coverage</td></tr>
+            <tr><td><strong>Type Specificity</strong></td><td>Rewards APIs that model values semantically, not just as loosely typed strings</td><td>weighted categorical</td></tr>
+            <tr><td><strong>Error Standardisation</strong></td><td>Favour structured error formats (RFC 9457/7807)</td><td>coverage</td></tr>
+            <tr><td><strong>Operation Identifier Quality</strong></td><td>Evaluate presence and distinctiveness of operationId values</td><td>composite</td></tr>
+            <tr><td><strong>Policy Presence</strong></td><td>Promote  inclusion of SLA/rate-limit/policy metadata</td><td>coverage</td></tr>
+            <tr><td><strong>AI Semantic Surface</strong></td><td>Bonus uplift for AI-oriented metadata</td><td>coverage</td></tr>
+          </tbody>
+        </table>
+      </slide>         
+      <slide id="agent-usability">
+        <title>Agent Usability</title>
+        <p><strong>Assesses how efficiently agents can navigate, combine, and execute API operations. Measures orchestration safety and agent ergonomics.</strong> </p>
+        <p>The following signals comprise the dimension:</p>
+        <table rules="all" cellspacing="0" cellpadding="5" width="95%" style="border: 2px solid #78A350;">
+          <thead>
+            <tr>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Signal</th>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Description</th>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Normalisation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Complexity Comfort</strong></td><td>Measures document size, endpoint density, and schema complexity, penalised using a logistic curve</td><td>logistic shaping</td></tr>
+            <tr><td><strong>Distinctiveness</strong></td><td>Quantifies semantic separation between operations</td><td>inverse semantic similarity</td></tr>
+            <tr><td><strong>Navigation (pagination, hypermedia)</strong></td><td>Evaluates pagination and hypermedia affordances (HATEOAS, JSON:API, HAL)</td><td>composite</td></tr>
+            <tr><td><strong>Intent Legibility</strong></td><td>Evaluates verb-object semantic clarity</td><td>similarity (LLM assisted)</td></tr>
+            <tr><td><strong>Safety</strong></td><td>Evaluates idempotency &amp; sensitive operation protection</td><td>heuristic penalty</td></tr>
+            <tr><td><strong>Tool Calling Alignment</strong></td><td>Represents alignment with LLM tool-calling expectations</td><td>coverage</td></tr>
+          </tbody>
+        </table>
+      </slide>  
+      <slide id="security">
+        <title>Security</title>
+        <p><strong>Assesses if your API protects data, enforces access controls, and follows secure-by-design practices.</strong> </p>
+        <p>The following signals comprise the dimension:</p>
+        <table rules="all" cellspacing="0" cellpadding="5" width="95%" style="border: 2px solid #78A350;">
+          <thead>
+            <tr>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Signal</th>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Description</th>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Normalisation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Auth Coverage</strong></td><td>Evaluates whether authentication is correctly applied to sensitive or modifying operations, using intent-aware heuristics</td><td>heuristic penalty</td></tr>
+            <tr><td><strong>Auth Strength</strong></td><td> Auth Strength
+Measures robustness and correctness of authentication mechanisms declared by the API using normative scores based on IANA auth-schemes, OAuth2, OIDC, API Key placement, and mutual TLS
+</td><td>weighted categorical</td></tr>
+            <tr><td><strong>Transport Security</strong></td><td>Requires HTTPS for externally exposed hosts</td><td>binary</td></tr>
+            <tr><td><strong>Secret Hygiene</strong></td><td>Detect and penalise hardcoded credentials</td><td>binary</td></tr>
+            <tr><td><strong>Sensitive Handling</strong></td><td>Evaluates the protection of PII/sensitive fields</td><td>coverage</td></tr>
+            <tr><td><strong>OWASP Posture</strong></td><td>Reflect severity-weighted risk findings</td><td>severity weighted</td></tr>
+          </tbody>
+        </table>
+      </slide>   
+      <slide id="auth-strength-details">
+        <title>Auth Strength Signal</title>
+        <img src="auth-strength-signal.png" class="fullsize-shadow" />
+      </slide> 
+      <slide id="ai-discoverability">
+        <title>AI Discoverability</title>
+        <p><strong>Evaluates how easily AI systems can locate, classify, and route to the API across registries, workflows, and knowledge bases.</strong> </p>
+        <p>The following signals comprise the dimension:</p>
+        <table rules="all" cellspacing="0" cellpadding="5" width="95%" style="border: 2px solid #78A350;">
+          <thead>
+            <tr>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Signal</th>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Description</th>
+              <th style="background-color: #4F5A36; color: #ffffff; font-weight: bold; text-align: left;">Normalisation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Descriptive Richness</strong></td><td>Evaluates the semantic value of textual descriptions within an API description.</td><td>coverage</td></tr>
+            <tr><td><strong>Intent Phrasing</strong></td><td>Evaluates verb-object clarity of summaries and descriptions (Similar to Intent_legibility)</td><td>semantic similarity (LLM assisted)</td></tr>
+            <tr><td><strong>Workflow Context</strong></td><td>Evaluates indicators to workflow specifics including Arazzo/MCP/workflow references. Also analyses existence of callbacks etc.</td><td>coverage</td></tr>
+            <tr><td><strong>Registry Signals</strong></td><td>Detects metadata related to API gateways,  llms.txt, APIs.json, MCP registries, externalDocs links to Dev portals.</td><td>coverage</td></tr>
+            <tr><td><strong>Domain Tagging</strong></td><td>Detect domain/taxonomy classification through the use of tags</td><td>coverage</td></tr>
+          </tbody>
+        </table>
+      </slide>      
+      <slide id="ai-readiness-impact">
+        <title>The Impact of AI Readiness (ROI)</title>
+        <img src="discoverable-by-design-qr-slide-pdf.png" style="float: right ; width : 55% ; margin : 0% 4% 4% 4% ; " href="https://jentic.com/report/discoverable-by-design.pdf"/>
+        <ul>
+          <li>59% &#10132; 94% agent retrieval accuracy</li>
+          <li>~80% model cost reduction</li>
+          <li>~57% of APIs don't specify both summary &amp; descriptions</li>
+        </ul>
+      </slide>        
+      <slide id="ai-ready-ecosystem">
+        <title>Landscape / Ecosystem Readiness Overview</title>
+        <img src="ai-ready-ecosystem.png" class="fullsize" />
+      </slide>                             
+    </part>    
     <slide id="api-ecosystems-qr-code">
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-india-2026.png" href="https://github.com/dret/building-ai-ready-apis-india-2026" class="fullsize"/>

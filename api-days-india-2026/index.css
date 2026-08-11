@@ -43,3 +43,8 @@ pre { white-space: pre-wrap ;
 @media screen, projection {
 	.print-href { display : none; }
 }
+
+td pre {
+  text-align: left;
+  margin: 0;
+}
