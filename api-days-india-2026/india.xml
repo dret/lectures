@@ -65,35 +65,39 @@
     <part id="ai-engineering">
       <title>AI Engineering is Growing Up</title>
       <slide id="ai-power">
-        <title>A Trillion Operations for 2 + 3?</title>
+        <title>A Trillion Operations for 16'968 ÷ 404?</title>
         <img src="ai-hammer.png" title="Maslow's AI Hammer" style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ; "/>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
           <tr>
             <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;"></th>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Machine Instructions</th>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">AI</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">CPU Computation</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">LLM Inference</th>
           </tr>
           <tr>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Elapsed time</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~1 nanosecond</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">a few nanoseconds</td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~0.1–2 seconds</td>
           </tr>
           <tr>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Computation</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~1 integer operation</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~10<sup>11</sup>–10<sup>13</sup> arithmetic operations</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">one integer division</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~10<sup>11</sup>–10<sup>13</sup> FLOPs</td>
           </tr>
           <tr>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Energy</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~10–100 picojoules</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~10–1,000 joules</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~pJ–nJ</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~1–100 J</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Correctness</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">exact</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">not guaranteed</td>
           </tr>
         </table>
         <ul>
-          <li>Billion times slower</li>
-          <li>Trillion times more computation</li>
-          <li>10<sup>12</sup>–10<sup>14</sup> times more energy</li>
-          <li>And no guarantee it got the answer right</li>
+          <li>CPU: One deterministic instruction</li>
+          <li>LLM: Trillions of operations for probabilistic inference</li>
+          <li>The LLM might still get the answer wrong</li>
         </ul>
       </slide>
       <slide id="pitch-vs-reality">
