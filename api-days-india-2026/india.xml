@@ -101,7 +101,7 @@
         </ul>
       </slide>
       <slide id="pitch-vs-reality">
-        <title>The Predictable and Reliable AI Superintelligence?</title>
+        <title>AI All The Things?</title>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
           <tr>
             <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Perfect Vision</th>
@@ -112,7 +112,7 @@
               <ul>
                 <li>One agent, one model, all tasks</li>
                 <li>Always gets the right answer</li>
-                <li>Autonomous, self-directing</li>
+                <li>Autonomous, self-directing, self-correcting</li>
                 <li>No human engineering required</li>
                 <li><q>Just describe what you want</q> and trust it</li>
               </ul>
@@ -148,8 +148,8 @@
             </td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
               <ul>
-                <li>A great tool for genuine judgment tasks</li>
-                <li>A great tool for unstructured input at scale</li>
+                <li>Great tool for genuine judgment tasks</li>
+                <li>Great tool for unstructured input at scale</li>
                 <li>Real value where no non-AI option exists</li>
                 <li>Costly per call — budget deliberately</li>
                 <li>Handle with care</li>
@@ -181,7 +181,7 @@
               <ul>
                 <li>Boundary appears</li>
                 <li>Probabilistic components are possible but expensive</li>
-                <li>So you keep them small and deliberate</li>
+                <li>Keep ML parts small and deliberate</li>
               </ul>
             </td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
@@ -194,7 +194,7 @@
           </tr>
         </table>
         <ul>
-          <li>The boundary should sit where economics put it</li>
+          <li>The boundary should sit where constraints put it</li>
           <li>Generative AI changed the price, not the principle</li>
         </ul>
       </slide>
@@ -266,9 +266,6 @@
             </td>
           </tr>
         </table>
-        <ul>
-          <li>Bottom line: the two directions are not symmetric, and neither are their fixes</li>
-        </ul>
       </slide>
     </part>
     <part id="mechanisms">
