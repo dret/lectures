@@ -338,6 +338,41 @@
         </ul>
       </slide>
     </part>
+    <part id="moving-the-line">
+      <title>Moving the Line</title>
+      <slide id="move-deliberately">
+        <title>The Line Moves in Both Directions</title>
+        <ul>
+          <li>Observe repeating patterns and turn them into deterministic components</li>
+          <li>Observe underperforming code and replace with probabilistic components</li>
+          <li>Runtime observability becomes as important as thorough testing</li>
+          <li>Make sure your architecture allows you to easily move the line</li>
+        </ul>
+      </slide>
+      <slide id="publish-what-you-stabilize">
+        <title>Publish What You Have Stabilized</title>
+        <ul>
+          <li>Once something is repeatable, it becomes a new <q>official</q> process</li>
+          <li>An API or a declared workflow gives consumers a capability and a contract</li>
+          <ul>
+            <li>A skill gives them a capability, with no promise about where on the range it sits</li>
+          </ul>
+          <li>Skills are good starting points but not very good as stable components</li>
+        </ul>
+      </slide>
+      <slide id="publishing-costs-revisability">
+        <title>Publishing Makes the Line Harder to Move</title>
+        <ul>
+          <li>A published contract is a commitment not to change</li>
+          <li>Any changes in behavior become breaking changes</li>
+          <li>The AI divide is a new driver of architectural decisions</li>
+          <li>Components need versioning, deprecation, and backwards-compatible evolution</li>
+          <ul>
+            <li>An old problem of software architecture with a new driving force</li>
+          </ul>
+        </ul>
+      </slide>
+    </part>
     <part id="agent-conclusions">
       <title>Conclusions</title>
       <slide id="agent-thanks">
