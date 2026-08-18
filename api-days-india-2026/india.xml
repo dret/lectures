@@ -47,7 +47,7 @@
   </toc>
   <title><a href="https://www.apidays.global/">API Days</a> <a href="https://www.apidays.global/events/india/">India</a> 2026</title>
   <author>Erik Wilde</author>
-  <affiliation>OpenAPI Ambassador, <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></affiliation>
+  <affiliation><a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></affiliation>
   <copyright>2026 Erik Wilde</copyright>
   <presentation id="composable-ai">
     <title short="Composable Architecture for AI Systems">Composable Architecture for AI Systems: APIs, MCP, Skills, Sub-Agents, and Workflows</title>
@@ -730,7 +730,7 @@
     <title short="Governance with OpenAPI Overlay">Module 3: Applying Governance with OpenAPI Overlay</title>
     <author>Frank Kilcommins</author>
     <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
-    <copyright>2026 Frank Kilcommins</copyright>    
+    <copyright>2026 Frank Kilcommins</copyright>
     <date short="2026-08-21">August 21, 2026</date>
     <toc class="abstract">Enforcing governance at scale with OpenAPI Overlay: consistent policy layers across specifications without modifying the original contracts. Overlay structure and syntax, and rules for security, usage constraints, and compliance. Hands-on exercise: build an Overlay that applies governance policies to an existing API.</toc>
     <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-india-2026">Masterclass materials (GitHub)</a></toc>
@@ -944,7 +944,7 @@ paths:
     <title short="API Workflows with Arazzo">Module 4: Modeling API Workflows with Arazzo</title>
     <author>Frank Kilcommins</author>
     <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
-    <copyright>2026 Frank Kilcommins</copyright>      
+    <copyright>2026 Frank Kilcommins</copyright>
     <date short="2026-08-21">August 21, 2026</date>
     <toc class="abstract">Why deterministic workflows matter when AI agents orchestrate multiple APIs, and how Arazzo models those interactions. Arazzo structure, and how to define safe repeatable multi-step processes across services. Hands-on exercise: design a multi-API workflow with predictable, governed interactions.</toc>
     <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-india-2026">Masterclass materials (GitHub)</a></toc>
@@ -1190,13 +1190,13 @@ paths:
           <li>Actor-in-the-loop support (human or agent)</li>
           <li>Function / transformation support</li>
           <li>Loop support</li>
-        </ul> 
-      </slide>     
+        </ul>
+      </slide>
       <slide id="arazzo-cheat-sheet">
         <title>Arazzo Cheat Sheet</title>
         <img src="Arazzo-Cheat-Sheet.png" href="https://jentic.com/extra/arazzo-specification-cheatsheet.pdf" title="Jentic Arazzo Cheat Sheet" class="fullsize"/>
-      </slide>         
-    </part>    
+      </slide>
+    </part>
 		<part id="Arazzo Exercise">
 			<title>Example Travel Workflow Use Case</title>
 			<slide id="exercise-arazzo">
@@ -1241,7 +1241,7 @@ paths:
     <title short="AI-Ready API Ecosystems">Module 5: Designing AI-Ready API Ecosystems</title>
     <author>Frank Kilcommins</author>
     <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
-    <copyright>2026 Frank Kilcommins</copyright>      
+    <copyright>2026 Frank Kilcommins</copyright>
     <date short="2026-08-21">August 21, 2026</date>
     <toc class="abstract">Platform-level design: guardrails, governance patterns, and control mechanisms that keep APIs safe and predictable under agent usage. Hands-on exercise: evaluate a sample API platform, identify governance gaps, and propose improvements to its AI-readiness.</toc>
     <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-india-2026">Masterclass materials (GitHub)</a></toc>
