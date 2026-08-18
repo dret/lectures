@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="485" viewBox="0 0 680 330" font-family="Helvetica, Arial, sans-serif">
+  <text x="100" y="170" text-anchor="middle" font-size="18" font-weight="500" fill="#000000">Prompt</text>
+  <text x="220" y="170" text-anchor="middle" font-size="18" font-weight="500" fill="#000000">Sub-agent</text>
+  <text x="340" y="170" text-anchor="middle" font-size="18" font-weight="500" fill="#000000">MCP tool</text>
+  <text x="460" y="170" text-anchor="middle" font-size="18" font-weight="500" fill="#000000">Workflow</text>
+  <text x="580" y="170" text-anchor="middle" font-size="18" font-weight="500" fill="#000000">Plain code</text>
+  <line x1="52" y1="190" x2="628" y2="190" stroke="#5F5E5A" stroke-width="2"/>
+  <circle cx="100" cy="190" r="7" fill="#888780" stroke="#5F5E5A" stroke-width="1.5"/>
+  <circle cx="220" cy="190" r="7" fill="#888780" stroke="#5F5E5A" stroke-width="1.5"/>
+  <circle cx="340" cy="190" r="7" fill="#888780" stroke="#5F5E5A" stroke-width="1.5"/>
+  <circle cx="460" cy="190" r="7" fill="#888780" stroke="#5F5E5A" stroke-width="1.5"/>
+  <circle cx="580" cy="190" r="7" fill="#888780" stroke="#5F5E5A" stroke-width="1.5"/>
+  <text x="52" y="218" text-anchor="start" font-size="15" fill="#5F5E5A">the model chooses</text>
+  <text x="628" y="218" text-anchor="end" font-size="15" fill="#5F5E5A">nothing left to choose</text>
+  <line x1="76" y1="198" x2="76" y2="252" stroke="#B4B2A9" stroke-width="1" stroke-dasharray="4 4"/>
+  <line x1="480" y1="198" x2="480" y2="252" stroke="#B4B2A9" stroke-width="1" stroke-dasharray="4 4"/>
+  <rect x="76" y="252" width="404" height="42" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="2"/>
+  <text x="278" y="279" text-anchor="middle" font-size="18" font-weight="500" fill="#04342C">Skills</text>
+  <text x="278" y="316" text-anchor="middle" font-size="15" fill="#5F5E5A">one mechanism, any point in this range</text>
+</svg>

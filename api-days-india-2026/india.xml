@@ -51,7 +51,7 @@
   <copyright>2026 Erik Wilde</copyright>
   <presentation id="composable-ai">
     <title short="Composable Architecture for AI Systems">Composable Architecture for AI Systems: APIs, MCP, Skills, Sub-Agents, and Workflows</title>
-    <date short="2026-08-20">August 19, 2026</date>
+    <date short="2026-08-19">August 19, 2026</date>
     <toc class="abstract">AI is a powerful tool, but it is not the only tool, and most systems worth building are hybrids of AI and non-AI parts. That line between them doesn't sit neatly between domains. It runs inside every domain, and it should move as you learn. This talk looks at the mechanisms for connecting across that line: APIs, MCP, agent skills, and sub-agents, as well as at workflows as a way to move the line itself: when an agent keeps rediscovering the same business process, that process belongs in deterministic execution, not in a prompt. You'll leave knowing which mechanism belongs where, and how to keep shifting work out of AI as your system settles.</toc>
     <slide id="agent-erik">
       <title>Erik Wilde</title>
@@ -101,7 +101,7 @@
         </ul>
       </slide>
       <slide id="pitch-vs-reality">
-        <title>The Benevolent AI Superintelligence?</title>
+        <title>The Predictable and Reliable AI Superintelligence?</title>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
           <tr>
             <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Perfect Vision</th>
@@ -114,7 +114,7 @@
                 <li>Always gets the right answer</li>
                 <li>Autonomous, self-directing</li>
                 <li>No human engineering required</li>
-                <li><q>Just describe what you want</q> and trust us</li>
+                <li><q>Just describe what you want</q> and trust it</li>
               </ul>
             </td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
@@ -148,8 +148,8 @@
             </td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
               <ul>
-                <li>The only tool for genuine judgment tasks</li>
-                <li>The only tool for unstructured input at scale</li>
+                <li>A great tool for genuine judgment tasks</li>
+                <li>A great tool for unstructured input at scale</li>
                 <li>Real value where no non-AI option exists</li>
                 <li>Costly per call — budget deliberately</li>
                 <li>Handle with care</li>
@@ -179,22 +179,22 @@
             </td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
               <ul>
-                <li>The boundary appears</li>
+                <li>Boundary appears</li>
                 <li>Probabilistic components are possible but expensive</li>
                 <li>So you keep them small and deliberate</li>
               </ul>
             </td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
               <ul>
-                <li>The cost collapses</li>
-                <li>The boundary moves a long way, fast</li>
-                <li>Often without anyone deciding that it should</li>
+                <li>Cost collapses</li>
+                <li>Boundary moves a long way, fast</li>
+                <li>Not clear where and why and how to manage</li>
               </ul>
             </td>
           </tr>
         </table>
         <ul>
-          <li>The boundary sits where the economics put it</li>
+          <li>The boundary should sit where economics put it</li>
           <li>Generative AI changed the price, not the principle</li>
         </ul>
       </slide>
@@ -203,9 +203,9 @@
         <ul>
           <li>Macro architecture: domains and the interfaces between them remain unchanged</li>
           <li>The AI / non-AI line is <em>not</em> a domain boundary</li>
-          <li>It runs <em>inside</em> every domain: judgment work and deterministic work, side by side</li>
+          <li>It runs <em>inside</em> every domain: judgment work and deterministic work co-exist</li>
           <li>Micro architecture: where that line sits, and which mechanism crosses it</li>
-          <li>The line may move because of new processes and workflows</li>
+          <li>The line may move because of new processes and workflows and insights</li>
         </ul>
       </slide>
     </part>
@@ -222,24 +222,23 @@
             <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
               <ul>
                 <li>Same input, same output</li>
-                <li>Tested exhaustively, within reason</li>
+                <li>Tested exhaustively (within reason)</li>
                 <li>Composes predictably</li>
+                <li>Behavior is and remains stable</li>
                 <li>Failure is exceptional</li>
               </ul>
             </td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
               <ul>
                 <li>Same input, a distribution of outputs</li>
-                <li>Evaluated statistically</li>
+                <li>Evaluated statistically and at runtime</li>
                 <li>Adapts to what it is given</li>
+                <li>Behavior varies and may change at runtime</li>
                 <li>Variation is expected</li>
               </ul>
             </td>
           </tr>
         </table>
-        <ul>
-          <li>From here on: <em>probabilistic</em> and <em>deterministic</em>, not <q>AI</q> and <q>non-AI</q></li>
-        </ul>
       </slide>
       <slide id="two-crossings">
         <title>Crossing the Boundary Changes Your Guarantees</title>
@@ -262,7 +261,7 @@
                 <li>You delegate execution</li>
                 <li>You give up guaranteed invocation</li>
                 <li>The uncertainty is in whether the call happens at all</li>
-                <li>Managed by removing discretion where discretion no longer adds value</li>
+                <li>Managed by making the call happen outside the model</li>
               </ul>
             </td>
           </tr>
@@ -274,6 +273,14 @@
     </part>
     <part id="mechanisms">
       <title>What to Use When</title>
+      <slide id="choice-spectrum">
+        <title>How Much Choice Stays with the Model?</title>
+        <img src="choice-spectrum.svg" class="fullsize"/>
+        <ul>
+          <li>Every mechanism sits somewhere on this axis. Skills sit everywhere on it.</li>
+          <li>Whoever invokes a skill cannot tell where on the range it sits</li>
+        </ul>
+      </slide>
       <slide id="mcp">
         <title>Model Context Protocol (MCP)</title>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
