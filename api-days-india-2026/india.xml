@@ -365,11 +365,11 @@
         <ul>
           <li>A published contract is a commitment not to change</li>
           <li>Any changes in behavior become breaking changes</li>
-          <li>The AI divide is a new driver of architectural decisions</li>
           <li>Components need versioning, deprecation, and backwards-compatible evolution</li>
           <ul>
-            <li>An old problem of software architecture with a new driving force</li>
+            <li>Consumers turn a decision into a commitment</li>
           </ul>
+          <li>The AI divide is a new driver of an old architectural problem</li>
         </ul>
       </slide>
     </part>
