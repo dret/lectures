@@ -209,8 +209,8 @@
         </ul>
       </slide>
     </part>
-    <part id="crossing-the-boundary">
-      <title>Crossing the Boundary</title>
+    <part id="two-realms">
+      <title>Two Realms</title>
       <slide id="two-contracts">
         <title>Two Kinds of Component, Two Kinds of Contract</title>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
@@ -240,12 +240,12 @@
           </tr>
         </table>
       </slide>
-      <slide id="two-crossings">
-        <title>Crossing the Boundary Changes Your Guarantees</title>
+      <slide id="realm-costs">
+        <title>What Each Realm Costs You</title>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
           <tr>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Deterministic &#8594; Probabilistic</th>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Probabilistic &#8594; Deterministic</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Probabilistic</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Deterministic</th>
           </tr>
           <tr>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
@@ -258,10 +258,10 @@
             </td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
               <ul>
-                <li>You delegate execution</li>
-                <li>You give up guaranteed invocation</li>
-                <li>The uncertainty is in whether the call happens at all</li>
-                <li>Managed by making the call happen outside the model</li>
+                <li>You specify everything yourself</li>
+                <li>You give up adaptability</li>
+                <li>The uncertainty is in the cases you did not anticipate</li>
+                <li>Managed with tests: exhaustive, before the fact</li>
               </ul>
             </td>
           </tr>
