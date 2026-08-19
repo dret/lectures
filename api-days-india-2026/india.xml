@@ -490,6 +490,92 @@
     <date short="2026-08-21">August 21, 2026</date>
     <toc class="abstract">How AI agents interact with APIs in modern systems: autonomous endpoint calls, service chaining, and generated integrations. Why traditional API governance models break under automated usage, and the architectural risks that follow. Hands-on exercise: map real-world AI interaction patterns onto your own APIs.</toc>
     <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-india-2026">Masterclass materials (GitHub)</a></toc>
+    <part id="why-this-matters">
+      <title>Why This Matters</title>
+      <slide id="agents-call-apis">
+        <title>Agents Call APIs Autonomously</title>
+        <ul>
+          <li>Agents call endpoints, chain services, and generate integrations nobody explicitly designed for</li>
+          <li>The API was written for a developer who reads the docs once and remembers</li>
+          <li>The agent reads the spec every time, and only the spec</li>
+          <li>Every assumption a human would forgive becomes a failure point</li>
+        </ul>
+      </slide>
+      <slide id="dx-homework">
+        <title>Do Your Developer Experience (DX) Homework</title>
+        <ul>
+          <li>Most API descriptions need quality improvements anyway</li>
+          <li>Better descriptions benefit <em>everyone</em>, not just AI agents</li>
+          <ul>
+            <li>Complete and meaningful operation summaries</li>
+            <li>Comprehensive examples for all operations</li>
+            <li>Clear error handling</li>
+            <li>Consistent terminology and naming</li>
+          </ul>
+          <li>Good DX is the foundation for good <em>agent experience (AX)</em></li>
+        </ul>
+      </slide>
+      <slide id="ax-homework">
+        <title>Now There's AX Homework, Too</title>
+        <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+        <ul>
+          <li>AI agents need information developers don't typically require:</li>
+          <ul>
+            <li>Everything that developers usually <q>just know</q></li>
+            <li>Treat every API like an external one for developers with no context</li>
+          </ul>
+          <li>OpenAPI Initiative (OAI) might add AX-specific fields</li>
+          <li>Until then, leverage description fields strategically</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="four-lenses">
+      <title>Four Ways an API Fails an Agent</title>
+      <slide id="lens-ambiguity">
+        <title>Ambiguity</title>
+        <ul>
+          <li><q>Ambiguity forces an agent to guess. Every guess is a potential failure.</q></li>
+          <li>Missing descriptions, unclear parameter values, inconsistent field types</li>
+          <li>A human infers from context. An agent has no context beyond the spec.</li>
+        </ul>
+      </slide>
+      <slide id="lens-unintended-workflows">
+        <title>Unintended Workflows</title>
+        <ul>
+          <li><q>If an agent can do it, it will eventually try it.</q></li>
+          <li>Endpoints that were never meant to be called in sequence, or called at all</li>
+          <li>An agent doesn't know your intent — only what the spec allows</li>
+        </ul>
+      </slide>
+      <slide id="lens-missing-information">
+        <title>Missing Information</title>
+        <ul>
+          <li><q>What's not there is often more dangerous than what is.</q></li>
+          <li>No error responses, no pagination, no security scheme</li>
+          <li>A human asks a colleague. An agent guesses, or fails silently.</li>
+        </ul>
+      </slide>
+      <slide id="lens-governance-gaps">
+        <title>Governance Gaps</title>
+        <ul>
+          <li><q>A spec that's hard to govern is a spec that will be misused at scale.</q></li>
+          <li>Inconsistent naming, mixed conventions, RPC-style endpoints hiding in a resource-based API</li>
+          <li>One agent misusing this is a bug. A thousand agents is a pattern.</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="exercise-bridge">
+      <title>Map the Risk</title>
+      <slide id="map-the-risk-bridge">
+        <title>Now: Map the Risk</title>
+        <ul>
+          <li>Open <code>book-catalog-raw.openapi.yaml</code> — a first draft, the kind that ships without governance</li>
+          <li>Use the four lenses to find where it would fail an agent</li>
+          <li>15 minutes individually, 5 minutes comparing with your neighbor</li>
+          <li>Worksheet: <code>risk-mapping-worksheet.md</code></li>
+        </ul>
+      </slide>
+    </part>
     <slide id="ai-api-usage-qr-code">
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-india-2026.png" href="https://github.com/dret/building-ai-ready-apis-india-2026" class="fullsize"/>
