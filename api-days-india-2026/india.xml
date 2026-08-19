@@ -202,7 +202,7 @@
         <title>It's Software Architecture</title>
         <ul>
           <li>Macro architecture: domains and the interfaces between them remain unchanged</li>
-          <li>The AI / non-AI line is <em>not</em> a domain boundary</li>
+          <li>The GenAI / non-GenAI line is <em>not</em> a domain boundary</li>
           <li>It runs <em>inside</em> every domain: judgment work and deterministic work co-exist</li>
           <li>Micro architecture: where that line sits, and which mechanism crosses it</li>
           <li>The line may move because of new processes and workflows and insights</li>
@@ -350,6 +350,9 @@
         <title>Publish What You Have Stabilized</title>
         <ul>
           <li>Once something is repeatable, it becomes a new <q>official</q> process</li>
+          <ul>
+            <li>Turn <em>repeated</em> patterns into <em>repeatable</em> patterns</li>
+          </ul>
           <li>An API or a declared workflow gives consumers a capability and a contract</li>
           <ul>
             <li>A skill gives them a capability, with no promise about where on the range it sits</li>
@@ -366,12 +369,20 @@
           <ul>
             <li>Consumers turn a decision into a commitment</li>
           </ul>
-          <li>The AI divide is a new driver of an old architectural problem</li>
+          <li>The GenAI divide is a new driver of an old architectural problem</li>
         </ul>
       </slide>
     </part>
     <part id="agent-conclusions">
       <title>Conclusions</title>
+      <slide id="ai-minimalism">
+        <title>As Little Runtime AI As Possible</title>
+        <ul>
+          <li>GenAI is just another way to get something done</li>
+          <li>Make deliberate choices when to use GenAI</li>
+          <li>Keep the line between the <q>two realms</q> visible and movable</li>
+        </ul>
+      </slide>
       <slide id="agent-thanks">
         <title>Thank You!</title>
         <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
