@@ -19,9 +19,9 @@ a:hover { background-color : #4F5A36 ;
 
 .header a { color : #FFFFFF ; }
 
-.header {  background-color : #385155 ;
+.header {  background-color : #015c45 ;
     color : #F8F8FA ;
-    border-bottom :  5px #ABC9CB solid ;
+    border-bottom :  5px #F4B94E solid ;
     padding : 1.5em ;
     margin : 0 ;
     text-align : center ;
@@ -42,9 +42,4 @@ pre { white-space: pre-wrap ;
 
 @media screen, projection {
 	.print-href { display : none; }
-}
-
-td pre {
-  text-align: left;
-  margin: 0;
 }
