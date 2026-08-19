@@ -410,6 +410,126 @@
         <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
       </ul>
     </slide>
+    <part id="oai">
+      <title>The Open API Initiative (OAI)</title>
+      <slide id="history">
+        <title>A Brief History of OAI &amp; OpenAPI</title>
+        <img src="openapi-logo.png" style="float: right ; width : 20% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Started out in 2011 as <em href="https://en.wikipedia.org/wiki/Swagger_(software)">Swagger</em></li>
+          <li><em>Swagger</em> was renamed to <em>OpenAPI</em> at the beginning of 2016</li>
+          <ul>
+            <li>Donated to the <em href="https://www.openapis.org/">OpenAPI Initiative (OAI)</em> (part of the <em href="https://www.linuxfoundation.org/">Linux Foundation</em>)</li>
+            <li><em href="https://swagger.io/tools/open-source/">Swagger</em> now refers to tools offered by <em href="https://smartbear.com/">SmartBear</em></li>
+          </ul>
+          <li><em>OpenAPI</em> has been the official name since 2016</li>
+          <ul>
+            <li><a href="https://spec.openapis.org/oas/v2.0.html">OpenAPI 2.0</a> was the name after the rename (it's the same as <em>Swagger 2.0</em>)</li>
+            <li><a href="https://spec.openapis.org/oas/v3.0.4.html">OpenAPI 3.0</a> was released in July 2017</li>
+            <li><a href="https://spec.openapis.org/oas/v3.1.1.html">OpenAPI 3.1</a> was released in February 2021</li>
+            <li><a href="https://spec.openapis.org/oas/v3.2.0.html">OpenAPI 3.2</a> was released in September 2025</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="membership">
+        <title>OAI Membership</title>
+        <img src="oai-members.png" href="https://www.openapis.org/membershipmembers" class="fullsize-shadow"/>
+      </slide>
+      <slide id="sig">
+        <title>OAI Special Interest Groups (SIG)</title>
+        <img src="oai-sig-overview.png" href="https://github.com/OAI/community/blob/main/SPECIAL_INTEREST_GROUPS.md" class="fullsize" />
+      </slide>
+    </part>
+    <part id="apis-and-ai-track">
+      <title>APIs and AI: It Just Works?</title>
+      <slide id="ai-and-apis-spectrum">
+        <title>AI and APIs Spectrum</title>
+        <img src="ai-and-apis.png" class="fullsize"/>
+      </slide>
+      <slide id="api-days-new-york">
+        <title>How does AI affect APIs?</title>
+        <img src="apis-and-ai-new-york.jpg" href="https://www.youtube.com/watch?v=6ekEQR45IIo" title="How does AI affect APIs? Expert Opinions from API Days New York 2025" class="fullsize"/>
+      </slide>
+      <slide id="ai-success">
+        <title>AI Success Stories</title>
+        <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally, Chris Pease, Ramesh Raskar, and Pradyumna Chari, "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 70% ; float: left ; margin : 0% 4% 4% 4% ; " class="shadow" />
+        <img src="cover-state-of-ai-2025.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Alex Singla, Alexander Sukharevsky, Lareina Yee, and Michael Chui, "The state of AI in 2025: Agents, innovation, and transformation", McKinsey, November 2025' style=" height : 70% ; margin : 0% 4% 4% 4% ; " class="shadow" />
+      </slide>
+    </part>
+    <part id="apis-and-ai-path">
+      <title>APIs and AI: A Possible Path</title>
+      <slide id="api-ai-evolution-1-more">
+        <title>More Tools</title>
+        <img src="api-ai-evolution-1-more.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="just-mcp">
+        <title>Just Use MCP?</title>
+        <img src="mcp-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>The pitch: <q>APIs are old, MCP is the future</q></li>
+          <li>Wrap anything in MCP → call it AI-ready</li>
+          <li>Skip the hard API work → straight to AI</li>
+          <li>Just <q>start fresh</q> after 10 years of API landscape work?</li>
+        </ul>
+      </slide>
+      <slide id="naive-mcp">
+        <title>Problem 1: Directly Exposing APIs</title>
+        <img src="api-mcp-ai-direct.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; " />
+        <ul>
+          <li>Auto-generate MCP from OpenAPI</li>
+          <li>Context window explosion on real workloads</li>
+          <li>Bad descriptions → bad MCP</li>
+          <li>AI still has to invent workflows</li>
+          <li>Agents have poor <q>user experience</q></li>
+        </ul>
+      </slide>
+      <slide id="heavy-mcp">
+        <title>Problem 2: Investing in the MCP Layer</title>
+        <img src="api-mcp-ai-custom-mcp.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; " />
+        <ul>
+          <li>Hand-craft MCP servers, design good tools</li>
+          <li>The investment goes into the <em>MCP layer</em></li>
+          <li>The <em>capability layer</em> remains untouched</li>
+          <li>Better capabilities benefit more than just MCP</li>
+          <li>Everybody's experience (UX/AX) should benefit</li>
+        </ul>
+      </slide>
+      <slide id="mcp-washing">
+        <title>MCP-Washing</title>
+        <img src="mcp-washing.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ;"/>
+        <ul>
+          <li>Skip the API work → jump to MCP → call it <q>AI-readiness</q></li>
+          <li>Wrong place to invest from a strategy perspective</li>
+          <li>MCP should be a <em>thin</em> layer, not a <em>fat</em> one</li>
+          <li>Invest in your <em>APIs</em> and then expose them through MCP</li>
+        </ul>
+      </slide>
+      <slide id="api-ai-evolution-2-description">
+        <title>Better Described Tools</title>
+        <img src="api-ai-evolution-2-description.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="better-descriptions">
+        <title>Better Descriptions ⇏ Scalable Tool Use</title>
+        <ul>
+          <li>Better AX reduces confusion and misuse</li>
+          <li>But even well-described tools still overload agent context</li>
+          <li>The problem shifts from <em>understanding</em> tools to <em>finding</em> the right ones</li>
+          <li>Next: <link href="api-ai-evolution-3-search"/></li>
+        </ul>
+      </slide>
+      <slide id="api-ai-evolution-3-search">
+        <title>Dynamic Tool Discovery</title>
+        <img src="api-ai-evolution-3-search.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="dynamic-discovery">
+        <title>Dynamic Discovery ⇏ Ideal Tool Landscape</title>
+        <ul>
+          <li>Discovery helps reduce tool overload</li>
+          <li>Agents still have to invent workflows from scratch</li>
+          <li>We need higher-level, business-aligned tools</li>
+        </ul>
+      </slide>
+    </part>
     <part id="conclusions">
       <title>Conclusions</title>
       <slide id="scorecard">
@@ -440,7 +560,7 @@
     <date short="2026-08-21">August 21, 2026</date>
     <toc class="abstract">AI agents are starting to call APIs autonomously, chain services, and generate integrations that were never explicitly designed by developers. Most API ecosystems are not built for this kind of automated usage, which can lead to unpredictable behavior, unsafe workflows, and loss of control. In this hands-on masterclass, you will explore how AI agents interact with APIs and where automation introduces architectural risks, led by two OpenAPI Ambassadors with deep expertise in API design and governance.</toc>
     <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-india-2026">Masterclass materials (GitHub)</a></toc>
-    <slide id="masterclass-intro-qr-code">
+    <slide id="masterclass-intro-qr-code-start">
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-india-2026.png" href="https://github.com/dret/building-ai-ready-apis-india-2026" class="fullsize"/>
       <p style="text-align: center;"><a href="https://github.com/dret/building-ai-ready-apis-india-2026"><code>github.com/dret/building-ai-ready-apis-india-2026</code></a></p>
