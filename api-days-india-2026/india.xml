@@ -582,6 +582,179 @@
       <p style="text-align: center;"><a href="https://github.com/dret/building-ai-ready-apis-india-2026"><code>github.com/dret/building-ai-ready-apis-india-2026</code></a></p>
     </slide>
   </presentation>
+   <presentation id="agent-skills">
+    <title short="Agent Skills">Agent Skills: Introduction</title>
+    <author>Frank Kilcommins &amp; Erik Wilde</author>
+    <copyright>2026 Frank Kilcommins &amp; Erik Wilde</copyright>
+    <date short="2026-08-21">August 21, 2026</date>
+    <toc class="abstract">Agent skills are reusable, versioned instructions that teach an AI agent how to handle a specific task — consistently, without re-prompting. This session covers what skills are, how agents load and use them, how they differ from plain prompts and MCP tools, and why they matter for reproducible and maintainable API governance work. Followed by a live demo of the jentic-api-scorecard skill.</toc>
+    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-india-2026">Masterclass materials (GitHub)</a></toc>
+    <part id="why-skills">
+      <title>Why Skills?</title>
+      <slide id="without-skills">
+        <title>Without Skills: Every Session Starts from Scratch</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">What you want</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">What actually happens</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Specific task or goal orientated help in every session</li>
+                <li>Knowledge already loaded</li>
+                <li>Same methodology across teammates</li>
+                <li>Update the approach once, syndicate everywhere</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Re-explain context at the start of every conversation</li>
+                <li>Same question, very different answers each run</li>
+                <li>Knowledge stays with whoever wrote the best prompt</li>
+                <li>Model updates significantly change behaviour</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <ul>
+          <li>The LLM is capable, but context management is challenging</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="what-skills-are">
+      <title>What Skills Are and How They Work</title>
+      <slide id="skill-definition">
+        <title>A Skill: Teach Once, Benefit Every Time</title>
+        <ul>
+          <li><em>Structured, reusable instructions</em> packaged as a simple folder</li>
+          <li>Loaded into the agent's context window when relevant - shapes how it thinks and acts</li>
+          <li>Explicit scope: does one thing, with some guardrails, in a defined way</li>
+          <li><i>Versionable artifact like code)</i>  - reviewed, shared, and reused across sessions and agents</li>
+        </ul>
+        <p><strong>The benefit:</strong> instead of re-prompting your process in every conversation, you encode it once and the agent applies it consistently.</p>
+        <p><strong style="color: orange;">Warning:</strong> model updates can impact the behavior of skills.</p>
+      </slide>
+      <slide id="skill-anatomy">
+        <title>Anatomy of a Skill</title>
+        <p>A skill is a folder. The only required file is <code>SKILL.md</code>:</p>
+        <pre>
+your-skill-name/
+├── SKILL.md        # Required: YAML frontmatter + body instructions
+├── scripts/        # Optional: executable code (Python, Bash, etc.)
+├── references/     # Optional: documentation loaded as needed
+└── assets/         # Optional: templates, examples, output formats</pre>
+        <p>The YAML frontmatter is the trigger. It tells the agent <em>when</em> to activate the skill:</p>
+        <pre>
+---
+name: your-skill-name
+description: >
+  What the skill does. Use when the user asks to [specific phrases].
+---
+# Instructions
+Step 1: ...
+Step 2: ...</pre>
+      </slide>
+      <slide id="progressive-disclosure">
+        <title>How an Agent Uses a Skill: Progressive Disclosure</title>
+        <p>Skills use a three-level loading system that keeps token usage low:</p>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Level</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">What</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">When loaded</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">1. Frontmatter</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Name and trigger description</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;"><em>Always</em> - present in every session</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">2. SKILL.md body</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Full instructions and constraints</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">When the task matches the skill</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">3. Linked files</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Scripts, reference docs, assets</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">On demand, as needed during execution</td>
+          </tr>
+        </table>
+        <ul>
+          <li>The skill shapes <em>how the agent thinks</em> about the task. It does not replace the LLM's judgment, it just guides it</li>
+        </ul>
+      </slide>
+      <slide id="skill-vs-prompt">
+        <title>Skill vs. Plain Prompt</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Plain Prompt</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Agent Skill</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Ephemeral - lost at end of session</li>
+                <li>Re-typed or copy-pasted each time</li>
+                <li>Results vary with who wrote it</li>
+                <li>No versioning, no review process</li>
+                <li>Knowledge silos with individuals</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Persistent - available in every session</li>
+                <li>Loads automatically when triggered</li>
+                <li>Consistent - same instructions every run</li>
+                <li><i>Versionable artifact like code</i> - reviewable, auditable, <i>testable</i></li>
+                <li>Team-wide - one update benefits everyone</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </slide>
+    </part>
+    <part id="reproducibility-and-today">
+      <title>Today's Skills</title>
+      <slide id="skills-today-overview">
+        <title>The Three Skills in This Masterclass</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 95% ; margin : 0 2.5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 15px ; background: #eeeeee ;">Skill</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 15px ; background: #eeeeee ;">What it does</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 15px ; background: #eeeeee ;">Module</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 15px ;"><code>jentic-workflows</code></td>
+            <td style="border: 2px solid #000000 ; padding: 10px 15px ;">Generates Arazzo workflow specs from a natural-language description of multi-step API flows</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 15px ;">Module 4</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 15px ;"><code>jentic-api-scorecard</code></td>
+            <td style="border: 2px solid #000000 ; padding: 10px 15px ;">Scores an OpenAPI spec across the 6 Jentic AIR Framework dimensions; interprets results and suggests improvements conversationally</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 15px ;">Module 5</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 15px ;"><code>jentic-api-improve</code></td>
+            <td style="border: 2px solid #000000 ; padding: 10px 15px ;">Runs score → fix → re-score improvement loops autonomously, targeting the weakest dimension first (breaking change detection, and overlay generation)</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 15px ;">Module 5</td>
+          </tr>
+        </table>
+        <ul>
+          <li>Install instructions: <code>setup/prerequisites.md</code> in the exercise repo to install before Module 4</li>
+        </ul>
+      </slide>
+      <slide id="skills-demo">
+        <title>Demo: jentic-api-scorecard</title>
+        <ul>
+          <li>Score a real OpenAPI description using the <code>jentic-api-scorecard</code> skill</li>
+          <li>Removes the need for me to understand the CLI surface and commands</li>
+          <li>Watch for: how the skill interprets scores, surfaces the weakest dimension, and suggests next steps - without being asked</li>
+        </ul>
+        <p style="text-align: center ; font-size: 1.5em ;"><strong>[ Quick Live Demo ]</strong></p>
+      </slide>
+    </part>
+  </presentation> 
   <presentation id="openapi">
     <title short="Governed API Specifications with OpenAPI">Module 2: Designing Governed API Specifications with OpenAPI</title>
     <author>Erik Wilde</author>
