@@ -409,6 +409,7 @@
         <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
         <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
       </ul>
+      <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 50% ; margin : 2% 0% 0% 10% "/>
     </slide>
     <part id="oai">
       <title>The Open API Initiative (OAI)</title>
@@ -451,7 +452,7 @@
         <img src="apis-and-ai-new-york.jpg" href="https://www.youtube.com/watch?v=6ekEQR45IIo" title="How does AI affect APIs? Expert Opinions from API Days New York 2025" class="fullsize"/>
       </slide>
       <slide id="ai-success">
-        <title>AI Success Stories</title>
+        <title>AI Success Stories: Do Your API Homework</title>
         <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally, Chris Pease, Ramesh Raskar, and Pradyumna Chari, "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 70% ; float: left ; margin : 0% 4% 4% 4% ; " class="shadow" />
         <img src="cover-state-of-ai-2025.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Alex Singla, Alexander Sukharevsky, Lareina Yee, and Michael Chui, "The state of AI in 2025: Agents, innovation, and transformation", McKinsey, November 2025' style=" height : 70% ; margin : 0% 4% 4% 4% ; " class="shadow" />
       </slide>
@@ -480,7 +481,7 @@
           <li>Context window explosion on real workloads</li>
           <li>Bad descriptions → bad MCP</li>
           <li>AI still has to invent workflows</li>
-          <li>Agents have poor <q>user experience</q></li>
+          <li>Agents have poor <q>API user experience</q></li>
         </ul>
       </slide>
       <slide id="heavy-mcp">
@@ -501,7 +502,7 @@
           <li>Skip the API work → jump to MCP → call it <q>AI-readiness</q></li>
           <li>Wrong place to invest from a strategy perspective</li>
           <li>MCP should be a <em>thin</em> layer, not a <em>fat</em> one</li>
-          <li>Invest in your <em>APIs</em> and then expose them through MCP</li>
+          <li>Invest in your APIs and then expose them through MCP</li>
         </ul>
       </slide>
       <slide id="api-ai-evolution-2-description">
@@ -510,23 +511,12 @@
       </slide>
       <slide id="better-descriptions">
         <title>Better Descriptions ⇏ Scalable Tool Use</title>
+        <img src="arazzo-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
           <li>Better AX reduces confusion and misuse</li>
           <li>But even well-described tools still overload agent context</li>
           <li>The problem shifts from <em>understanding</em> tools to <em>finding</em> the right ones</li>
-          <li>Next: <link href="api-ai-evolution-3-search"/></li>
-        </ul>
-      </slide>
-      <slide id="api-ai-evolution-3-search">
-        <title>Dynamic Tool Discovery</title>
-        <img src="api-ai-evolution-3-search.png" class="fullsize-shadow" />
-      </slide>
-      <slide id="dynamic-discovery">
-        <title>Dynamic Discovery ⇏ Ideal Tool Landscape</title>
-        <ul>
-          <li>Discovery helps reduce tool overload</li>
-          <li>Agents still have to invent workflows from scratch</li>
-          <li>We need higher-level, business-aligned tools</li>
+          <li>Composing APIs into workflows can produce better tools</li>
         </ul>
       </slide>
     </part>
