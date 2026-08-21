@@ -1932,158 +1932,89 @@ Measures robustness and correctness of authentication mechanisms declared by the
     <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-india-2026">Masterclass materials (GitHub)</a></toc>
     <part id="design-time">
       <title>Flipping to Design Time</title>
-<slide id="design-time-flip">
-
-    <title>AI at Design Time! AI at Runtime?</title>
-
-    <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
-
-      <tr>
-
-        <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">AI at Design Time</th>
-
-        <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">AI at Runtime</th>
-
-      </tr>
-
-      <tr>
-
-        <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
-
-          <ul>
-
-            <li>Recognizes patterns</li>
-
-            <li>Writes the code</li>
-
-            <li>You review and ship</li>
-
-            <li>Runs deterministically forever after</li>
-
-            <li>Use it aggressively</li>
-
-          </ul>
-
-        </td>
-
-        <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
-
-          <ul>
-
-            <li>Great tool for genuine judgment tasks</li>
-
-            <li>Great tool for unstructured input at scale</li>
-
-            <li>Real value where no non-AI option exists</li>
-
-            <li>Costly per call — budget deliberately</li>
-
-            <li>Handle with care</li>
-
-          </ul>
-
-        </td>
-
-      </tr>
-
-    </table>
-
-  </slide>
+    <slide id="design-time-flip">
+        <title>AI at Design Time! AI at Runtime?</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">AI at Design Time</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">AI at Runtime</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Recognizes patterns</li>
+                <li>Writes the code</li>
+                <li>You review and ship</li>
+                <li>Runs deterministically forever after</li>
+                <li>Use it aggressively</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Great tool for genuine judgment tasks</li>
+                <li>Great tool for unstructured input at scale</li>
+                <li>Real value where no non-AI option exists</li>
+                <li>Costly per call — budget deliberately</li>
+                <li>Handle with care</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </slide>
     </part>
     <part id="lifecycle-tooling">
       <title>Tooling Along the Lifecycle</title>
-    <slide id="lifecycle">
-
-      <title>The (Open)API Lifecycle</title>
-
-      <img source="WSO2: What is Full Lifecycle API Management?" src="api-lifecycle.png" href="https://wso2.com/api-management/what-is-full-lifecycle-api-management/" class="fullsize-shadow" />
-
-    </slide>
-    <slide id="flapim-end">
-
-      <title>The End of Full Lifecycle API Management</title>
-
-      <img source="Mark O'Neill (Gartner): The End of Full Lifecycle API Management" src="end-of-full-lifecycle-api-management.png" href="https://www.linkedin.com/posts/markwoneill_market-guide-for-api-gateways-activity-7100687467694940160-Orb1" class="fullsize-shadow" />
-
-    </slide>
-    <slide id="tooling-availability">
-
-      <title>Plenty of API Lifecycle Tooling</title>
-
-      <ul>
-
-      <li><em>Design tools</em> to help create and discuss APIs</li>
-
-      <li><em>Validation tools</em> to make sure APIs adhere to guidelines</li>
-
-      <li><em>Mocking tools</em> to generate APIs from descriptions</li>
-
-      <li><em>Testing tools</em> to validate implementations against descriptions</li>
-
-      <li><em>Fuzzing tools</em> to test APIs for robustness</li>
-
-      <li><em>Documentation tools</em> to create API documentation</li>
-
-      <li><em>Code generation tools</em> for client and server sides</li>
-
-      </ul>
-
-    </slide>
-    <slide id="openapi-tooling">
-
-      <title>OpenAPI Tooling</title>
-
-      <img src="openapi-tools.png" href="https://tools.openapis.org/" class="fullsize"/>
-
-    </slide>
-    </part>
-    <part id="tooling-examples">
-      <title>Tooling in Practice</title>
-    <slide id="example-linting">
-
-      <title>Example 1: API Linting</title>
-
-      <div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
-
-      <div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
-
-      <iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/Il5btHG_D74" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
-
-      </div>
-
-      </div>
-
-    </slide>
-    <slide id="example-mocking">
-
-      <title>Example 2: Mocking</title>
-
-      <div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
-
-      <div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
-
-      <iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/aH0W3mQyOOA" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
-
-      </div>
-
-      </div>
-
-    </slide>
-    <slide id="example-fuzzing">
-
-      <title>Example 3: API Fuzzing</title>
-
-      <div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
-
-      <div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
-
-      <iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/wX3GMJY9B6A" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
-
-      </div>
-
-      </div>
-
-    </slide>
+      <slide id="lifecycle">
+        <title>The (Open)API Lifecycle</title>
+        <img source="WSO2: What is Full Lifecycle API Management?" src="api-lifecycle.png" href="https://wso2.com/api-management/what-is-full-lifecycle-api-management/" class="fullsize-shadow" />
+      </slide>
+      <slide id="flapim-end">
+        <title>The End of Full Lifecycle API Management</title>
+        <img source="Mark O'Neill (Gartner): The End of Full Lifecycle API Management" src="end-of-full-lifecycle-api-management.png" href="https://www.linkedin.com/posts/markwoneill_market-guide-for-api-gateways-activity-7100687467694940160-Orb1" class="fullsize-shadow" />
+      </slide>
+      <slide id="tooling-availability">
+        <title>Plenty of API Lifecycle Tooling</title>
+        <ul>
+        <li><em>Design tools</em> to help create and discuss APIs</li>
+        <li><em>Validation tools</em> to make sure APIs adhere to guidelines</li>
+        <li><em>Mocking tools</em> to generate APIs from descriptions</li>
+        <li><em>Testing tools</em> to validate implementations against descriptions</li>
+        <li><em>Fuzzing tools</em> to test APIs for robustness</li>
+        <li><em>Documentation tools</em> to create API documentation</li>
+        <li><em>Code generation tools</em> for client and server sides</li>
+        </ul>
+      </slide>
+      <slide id="openapi-tooling">
+        <title>OpenAPI Tooling</title>
+        <img src="openapi-tools.png" href="https://tools.openapis.org/" class="fullsize"/>
+      </slide>
+      </part>
+      <part id="tooling-examples">
+        <title>Tooling in Practice</title>
+      <slide id="example-linting">
+        <title>Example 1: API Linting</title>
+        <div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+        <div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+        <iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/Il5btHG_D74" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+        </div>
+        </div>
+      </slide>
+      <slide id="example-mocking">
+        <title>Example 2: Mocking</title>
+        <div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+        <div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+        <iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/aH0W3mQyOOA" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+        </div>
+        </div>
+      </slide>
+      <slide id="example-fuzzing">
+        <title>Example 3: API Fuzzing</title>
+        <div style=" float : left ; width : 65% ; object-fit : contain ; margin : 0% 2% 4% 4% ; ">
+        <div style=" width: 100% ; height: 60% ; position: relative ; padding-bottom: 56.25% ; ">
+        <iframe style=" border: 0 ; top: 0 ; left: 0 ; width: 100% ; height: 100% ; position: absolute; " src="https://www.youtube-nocookie.com/embed/wX3GMJY9B6A" allowfullscreen="no" scrolling="no" allow="encrypted-media; accelerometer; gyroscope; picture-in-picture"/>
+        </div>
+        </div>
+      </slide>
     </part>
     <part id="ai-and-the-loop">
       <title>Conclusions</title>
