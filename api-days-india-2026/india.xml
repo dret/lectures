@@ -1775,7 +1775,7 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
             </tr>
           </thead>
           <tbody>
-            <tr><td><strong>Spec Validity</strong></td><td>Checks whether the API parses as a valid OpenAPI</td><td>binary</td></tr>
+            <tr><td><strong>Spec Validity</strong></td><td>Checks whether the description parses as valid OpenAPI</td><td>binary</td></tr>
             <tr><td><strong>Resolution Completeness</strong></td><td>What proportion of <code>$ref</code> references successfully resolve</td><td>coverage</td></tr>
             <tr><td><strong>Lint Results</strong></td><td>Aggregated quality score from linter diagnostics, weighted by severity</td><td>inverse weighted categorical</td></tr>
             <tr><td><strong>Structural Integrity</strong></td><td>Measures whether the API's underlying data model is coherent enough for automated reasoning (semantic or logical defects that impact reliable interpretation)</td><td>logarithmic dampening</td></tr>
@@ -1785,11 +1785,11 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
       <slide id="structural-integrity-details">
         <title>Structural Integrity Signal</title>
         <img src="structural-integrity-signal.png" class="fullsize-shadow" />
-      </slide>      
+      </slide>
       <slide id="foundational-compliance-dimension">
         <title>Foundational Compliance</title>
         <img src="foundational-compliance-dimension.png" class="fullsize-shadow" />
-      </slide>     
+      </slide>
       <slide id="developer-experience">
         <title>Developer Experience</title>
         <p><strong>Assesses clarity, documentation quality, example coverage, and compatibility with developer tooling.</strong> </p>
@@ -1809,7 +1809,7 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
             <tr><td><strong>Response Coverage</strong></td><td>Presence of meaningful success and error responses across full surface area</td><td>coverage</td></tr>
           </tbody>
         </table>
-      </slide>     
+      </slide>
       <slide id="ai-readiness-agent-experience">
         <title>AI-Readiness &amp; Agent Experience</title>
         <p><strong>Evaluates where an API gives enough context for AI systems to understand its intent, constraints, and expected behaviours. </strong> </p>
@@ -1832,7 +1832,7 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
             <tr><td><strong>AI Semantic Surface</strong></td><td>Bonus uplift for AI-oriented metadata</td><td>coverage</td></tr>
           </tbody>
         </table>
-      </slide>         
+      </slide>
       <slide id="agent-usability">
         <title>Agent Usability</title>
         <p><strong>Assesses how efficiently agents can navigate, combine, and execute API operations. Measures orchestration safety and agent ergonomics.</strong> </p>
@@ -1854,7 +1854,7 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
             <tr><td><strong>Tool Calling Alignment</strong></td><td>Represents alignment with LLM tool-calling expectations</td><td>coverage</td></tr>
           </tbody>
         </table>
-      </slide>  
+      </slide>
       <slide id="security">
         <title>Security</title>
         <p><strong>Assesses if your API protects data, enforces access controls, and follows secure-by-design practices.</strong> </p>
@@ -1878,7 +1878,7 @@ Measures robustness and correctness of authentication mechanisms declared by the
             <tr><td><strong>OWASP Posture</strong></td><td>Reflect severity-weighted risk findings</td><td>severity weighted</td></tr>
           </tbody>
         </table>
-      </slide>   
+      </slide>
       <slide id="auth-strength-details">
         <title>Auth Strength Signal</title>
         <img src="auth-strength-signal.png" class="fullsize-shadow" />
@@ -1903,7 +1903,7 @@ Measures robustness and correctness of authentication mechanisms declared by the
             <tr><td><strong>Domain Tagging</strong></td><td>Detect domain/taxonomy classification through the use of tags</td><td>coverage</td></tr>
           </tbody>
         </table>
-      </slide>      
+      </slide>
       <slide id="ai-readiness-impact">
         <title>The Impact of AI Readiness (ROI)</title>
         <img src="discoverable-by-design-qr-slide-pdf.png" style="float: right ; width : 55% ; margin : 0% 4% 4% 4% ; " href="https://jentic.com/report/discoverable-by-design.pdf"/>
@@ -1912,12 +1912,12 @@ Measures robustness and correctness of authentication mechanisms declared by the
           <li>~80% model cost reduction</li>
           <li>~57% of APIs don't specify both summary &amp; descriptions</li>
         </ul>
-      </slide>        
+      </slide>
       <slide id="ai-ready-ecosystem">
         <title>Landscape / Ecosystem Readiness Overview</title>
         <img src="ai-ready-ecosystem.png" class="fullsize" />
-      </slide>                             
-    </part>    
+      </slide>
+    </part>
     <slide id="api-ecosystems-qr-code">
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-india-2026.png" href="https://github.com/dret/building-ai-ready-apis-india-2026" class="fullsize"/>
