@@ -1639,7 +1639,8 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
             <code>POST</code> = create/trigger,
             <code>PUT</code> = full replace,
             <code>PATCH</code> = partial update,
-            <code>DELETE</code> = remove/revoke.
+            <code>DELETE</code> = remove/revoke,
+            <code>QUERY</code> = queries with message bodies.
           </li>
           <li style="font-family: monospace">
             <strong>Anti-patterns to avoid:</strong>
