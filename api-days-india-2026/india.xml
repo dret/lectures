@@ -1578,9 +1578,9 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
         <img src="A-valid-but-confusing-path-item.png" title="Machines cannot tolerate missing semantics" style="max-width: 50%; height: auto; float: right; margin : 0% 4% 4% 4% ;"/>
         <ul>
           <li>It might <em>create</em> an offer</li>
-          <li>It might<em>replace</em> an user</li>
-          <li>It might<em>partially update</em> a offer</li>
-          <li>It might<em>patch only some</em> offer fields</li>
+          <li>It might <em>replace</em> an user</li>
+          <li>It might <em>partially update</em> a offer</li>
+          <li>It might <em>patch only some</em> offer fields</li>
         </ul>
       </slide>
     </part>
@@ -1588,20 +1588,20 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
       <title>Making APIs AI-Ready</title>
       <slide id="where-to-start-api-improvements">
         <title>Where to start?</title>
-          <img src="api-ai-focus-areas.png" class="fullsize" />  
+          <img src="api-ai-focus-areas.png" class="fullsize" />
       </slide>
       <slide id="summary-and-descriptions">
         <title>Readable <em>Summaries</em> and <em>Descriptions</em></title> 
         <p><strong>Improves:</strong></p>
         <ul>
-          <li>AI Discoverability, Semantic Clarity, Agent Usability</li>        
+          <li>AI Discoverability, Semantic Clarity, Agent Usability</li>
         </ul>
         <p><strong>Where...</strong></p>
         <ul>
           <li style="font-family: monospace"><strong>Objects allowing `summary`:</strong> Info, Path Item, Operation, Response, Example, Tag, Reference, ... </li>
           <li style="font-family: monospace"><strong>Objects allowing `description`:</strong> Info, Server, Server Variable, Operation, Path Item, External Documentation, Parameter, Request Body, Response, Example, Link, Header, Tag, Reference, Security Scheme, <em>All JSON Schemas</em>, ... </li>
         </ul>
-      </slide>        
+      </slide>
       <slide id="semantic-schemas">
         <title>Semantically Rich <em>Schemas</em></title>
         <p><strong>Improves:</strong></p>
