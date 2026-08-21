@@ -573,8 +573,6 @@
         <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
       </ul>
     </slide>
-  <part id="masterclass-logistics">
-    <title>Logistics</title>
     <slide id="masterclass-outcomes">
       <title>What You Will Be Able to Do</title>
       <ul>
@@ -641,32 +639,32 @@
       <title>Four Ways an API Fails an Agent</title>
       <slide id="lens-ambiguity">
         <title>Ambiguity</title>
+        <blockquote><q>Ambiguity forces an agent to guess. Every guess is a potential failure.</q></blockquote>
         <ul>
-          <li><q>Ambiguity forces an agent to guess. Every guess is a potential failure.</q></li>
           <li>Missing descriptions, unclear parameter values, inconsistent field types</li>
           <li>A human infers from context. An agent has no context beyond the spec.</li>
         </ul>
       </slide>
       <slide id="lens-unintended-workflows">
         <title>Unintended Workflows</title>
+        <blockquote><q>If an agent can do it, it will eventually try it.</q></blockquote>
         <ul>
-          <li><q>If an agent can do it, it will eventually try it.</q></li>
           <li>Endpoints that were never meant to be called in sequence, or called at all</li>
           <li>An agent doesn't know your intent — only what the spec allows</li>
         </ul>
       </slide>
       <slide id="lens-missing-information">
         <title>Missing Information</title>
+        <blockquote><q>What's not there is often more dangerous than what is.</q></blockquote>
         <ul>
-          <li><q>What's not there is often more dangerous than what is.</q></li>
           <li>No error responses, no pagination, no security scheme</li>
           <li>A human asks a colleague. An agent guesses, or fails silently.</li>
         </ul>
       </slide>
       <slide id="lens-governance-gaps">
         <title>Governance Gaps</title>
+        <blockquote><q>A spec that's hard to govern is a spec that will be misused at scale.</q></blockquote>
         <ul>
-          <li><q>A spec that's hard to govern is a spec that will be misused at scale.</q></li>
           <li>Inconsistent naming, mixed conventions, RPC-style endpoints hiding in a resource-based API</li>
           <li>One agent misusing this is a bug. A thousand agents is a pattern.</li>
         </ul>
