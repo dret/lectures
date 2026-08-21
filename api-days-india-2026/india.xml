@@ -1418,10 +1418,10 @@ paths:
       <slide id="arazzo-1.1-openapi-alignment">
         <title>Arazzo 1.1 - OpenAPI 3.2 Alignment</title>
         <ul>
-					<li>The <a href="https://spec.openapis.org/arazzo/v1.1.0.html#parameter-object">Parameter Object</a> has a new <code>querystring</code> option for the <code>in</code> fixed field, which treats the entire URL query string as a single value.</li>				
+					<li>The <a href="https://spec.openapis.org/arazzo/v1.1.0.html#parameter-object">Parameter Object</a> has a new <code>querystring</code> option for the <code>in</code> fixed field, which treats the entire URL query string as a single value.</li>
         </ul> 
         <img src="Arazzo1.1-Mapping-to-an-API-Operation's-_querystring_-parameter.png" class="fullsize" /> 
-      </slide>      
+      </slide>
       <slide id="arazzo-1.1-identity-based-referencing">
         <title>Arazzo 1.1 - Identity-Based Referencing</title>
         <ul>
@@ -1429,10 +1429,10 @@ paths:
           <li><code>$self</code> is a URI-reference for the Arazzo Description ensuring portable and unambiguous reference resolution.</li>
         </ul> 
         <img src="Arazzo1.1-$self-for-identity-based-document-referencing.png" class="fullsize" /> 
-      </slide>      
+      </slide>
       <slide id="arazzo-1.1-housekeeping">
         <title>Arazzo 1.1 - Housekeeping</title>
-        <img src="arazzo-tool-listing.png" style="float: right ; height : 80% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>         
+        <img src="arazzo-tool-listing.png" href="https://github.com/OAI/Arazzo-Specification#tooling" style="float: right ; height : 80% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
         <ul>
           <li>ABNF Expressions</li>
           <ul>
@@ -1442,8 +1442,8 @@ paths:
           </ul>   
           <li>Truthy/Falsy evaluation semantics for conditions</li>
           <li>Tool listing added to ReadMe (also see <a href="https://openapi.tools/collections/arazzo">openapi.tools</a>)</li>       
-				</ul>         
-      </slide>        
+				</ul>
+      </slide>
       <slide id="arazzo-1.1-looking-ahead">
         <title>Arazzo: Looking Ahead to 1.2, 1.3, ... , 2.0</title>
         <ul>
@@ -1527,8 +1527,6 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
         <blockquote style="width: 70%; margin: 0 auto; font-size: 1.5rem; font-weight: 600; text-align: center; line-height: 1.4; border: 2px solid #78A350;">
           <p>… you can have valid <strong>OpenAPI</strong> that is semantically useless to both humans and machines  …</p>
         </blockquote>
-
-
       </slide>      
       <slide id="humans-tolerate">
         <title>Humans Tolerate, Machines Cannot</title>
@@ -1572,7 +1570,7 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
               <li>Auth info missing (outside OpenAPI)</li>
               <li>Stale / outdated OpenAPI Documents</li>      
           </ul>
-        </ul>        
+        </ul>
       </slide> 
       <slide id="typical-example">
         <title>Typical Ambiguity Example</title>
@@ -1583,8 +1581,8 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
           <li>It might<em>replace</em> an user</li>
           <li>It might<em>partially update</em> a offer</li>
           <li>It might<em>patch only some</em> offer fields</li>
-        </ul>       
-      </slide>      
+        </ul>
+      </slide>
     </part>
     <part id="from-dx-to-ax">
       <title short="From DX to AX">From Developer Experience (DX) to Agent Experience (AX)</title>
@@ -1658,7 +1656,7 @@ https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
           <li>Tooling will follow once fields are standardized</li>
           <li>Interested? Join the discussion in the <a href="https://openapis.org">OpenAPI Initiative</a>!</li>
         </ul>
-      </slide>      
+      </slide>
     </part>
     <part id="apis-and-ai">
       <title>Making APIs AI-Ready</title>
