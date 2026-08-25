@@ -1,0 +1,7 @@
+extends: 
+  - spectral:oas
+  - spectral:asyncapi
+  - spectral:arazzo
+rules:
+  info-contact: off
+  info-description: error
