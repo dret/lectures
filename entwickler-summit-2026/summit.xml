@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="oai-track" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+  <configuration>
+    <link subsections="yes" bookmarks="yes" versions="summit.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+    <paths img="img" listing="src"/>
+    <outline count-text=" [*]" count-depth="all"/>
+    <hyperlink extra=""/>
+    <extension file="html" link=""/>
+    <counter separator=":&#160;"/>
+    <kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+      <plugins>
+        <touch/>
+      </plugins>
+    </kilauea>
+  </configuration>
+  <license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+    <div class="license">
+      <p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+      <p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+    </div>
+  </license>
+  <title><a href="https://entwickler.de/entwickler-summit/">Entwickler Summit</a> 2026</title>
+  <author>Thilo Frotscher &amp; Erik Wilde</author>
+  <copyright>2026 Thilo Frotscher &amp; Erik Wilde</copyright>
+  <date short="2026-09-17">17. September 2026</date>
+  <presentation id="index">
+    <title>APIs für die AI Nutzung: Wie geht das?</title>
+    <toc class="abstract">AI stellt neue Anforderungen an die Auffindbarkeit und Nutzbarkeit von APIs. Wir schauen darauf, wie APIs bisher entworfen und verwaltet wurden, und welche neuen Aspekte für die Unterstützung von AI hinzukommen. Die Unterschiede zum bisherigen Vorgehen sind nicht grundsätzlicher Art, aber gross genug, dass sie Änderungen im Umgang mit APIs erfordern.</toc>
+    <part id="introduction">
+      <title>Introduction</title>
+      <slide id="thilo">
+        <title>Thilo Frotscher</title>
+        <img src="api-conference.svg" title="API Conference" href="https://apiconference.net/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <img src="better-code.svg" title="betterCode" href="https://api.bettercode.eu/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Kurator &amp; Trainer <a href="https://www.isaqb.org/certifications/cpsa-certifications/cpsa-advanced-level/api/">iSAQB Modul API</a></li>
+          <li>Independent Expert for APIs &amp; Integration Architectures</li>
+          <li>Lead Developer / Technical Architect / Trainer</li>
+          <li>Author &amp; Speaker</li>
+          <li>Advisory Board Member for <a href="https://apiconference.net/">API Conference</a> &amp; <a href="https://api.bettercode.eu/">betterCode() API</a></li>
+        </ul>
+      </slide>
+      <slide id="dret">
+        <title>Erik Wilde</title>
+        <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <img src="api-conference.svg" title="API Conference" href="https://apiconference.net/" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Kurator &amp; Trainer <a href="https://www.isaqb.org/certifications/cpsa-certifications/cpsa-advanced-level/api/">iSAQB Modul API</a></li>
+          <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+        </ul>
+      </slide>
+      <slide id="api-modul-kapitel">
+        <title>iSAQB Modul Application Programming Interfaces (API)</title>
+        <img src="api-modul-kapitel.png" href="https://www.isaqb.org/certifications/cpsa-certifications/cpsa-advanced-level/api/" class="fullsize"/>
+      </slide>
+    </part>
+    <part id="design-description">
+      <title>API Design &amp; Description in the Age of AI</title>
+      <slide id="creating-apis-1">
+        <title>Creating APIs (in the old days…) #1</title>
+        <ul>
+          <li>Requirements Analysis</li>
+          <ul>
+            <li>Talk to your consumers</li>
+            <li>Outside-in approach</li>
+          </ul>
+          <li>API First</li>
+          <ul>
+            <li>Imagine you are on a greenfield</li>
+            <li>Do not create APIs based on existing systems or use cases</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="creating-apis-2">
+        <title>Creating APIs (in the old days…) #2</title>
+        <ul>
+          <li>API Design</li>
+          <ul>
+            <li>Use iterative approach of design – review - design</li>
+            <li>Implement good practices for API Design</li>
+            <li>Make sure to have API Design Guidelines in your organization</li>
+            <li>Focus on usability, consistency, comprehensibility, extensibility</li>
+            <li>Use naming conventions and consistent endpoint structures</li>
+            <li>Favor generic APIs over support for specific consumers / use cases</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="creating-apis-3">
+        <title>Creating APIs (in the old days…) #3</title>
+        <ul>
+          <li>API specification</li>
+          <ul>
+            <li>Use standard description languages, like OpenAPI or AsyncAPI</li>
+            <li>Make sure to document as many aspects as possible, including all response status codes, parameters and attributes</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="creating-apis-4">
+        <title>Creating APIs (in the old days…) #4</title>
+        <ul>
+          <li>API documentation</li>
+          <ul>
+            <li>Technical details missing in the API specification</li>
+            <li>Information explaining how endpoints work</li>
+            <li>Semantics of data structures and runtime behaviour</li>
+            <li>SDKs, quick-start guides</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="creating-apis-5">
+        <title>Creating APIs (in the old days…) #5</title>
+        <ul>
+          <li>Make APIs discoverable</li>
+          <ul>
+            <li>Register APIs in dev portals, API marketplaces, or internal catalogs</li>
+            <li>Provide metadata, tags and standardized authentication details</li>
+            <li>Offer sandbox environments and test credentials</li>
+            <li>Maintain backwards compatibility</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="ai-everywhere">
+        <title>Today: AI Everywhere</title>
+        <ul>
+          <li>AI Coding Agents generate code that consumes APIs</li>
+          <li>AI Business Agents discover and consume APIs autonomously</li>
+          <li>What does all this mean for API providers?</li>
+          <ul>
+            <li>What changes, what stays the same?</li>
+          </ul>
+        </ul>
+      </slide>
+    </part>
+    <part id="delivery">
+      <title>Exposing API Landscapes for AI Consumption</title>
+      <slide id="ai-integration">
+        <title>AI Integration Is the New Moat</title>
+        <img src="ai-integration-new-moat.png" href="https://www.oreilly.com/radar/integration-is-the-new-moat/" class="fullsize-shadow"/>
+      </slide>
+      <slide id="dx-to-ax">
+        <title>When LLMs Read Your APIs</title>
+        <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+        <ul>
+          <li>APIs were typically consumed by developers</li>
+          <li>Developers write code that <em>often fills DX gaps</em></li>
+          <li>LLMs have more limited context than developers</li>
+          <ul>
+            <li><em>Coding agents</em> shouldn't depend on developers selecting APIs</li>
+            <li><em>Business agents</em> need to fully <q>understand</q> APIs</li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="four-levels">
+        <title>Four Levels of API Evolution</title>
+        <img src="api-evolution.png" style="float: right ; width : 35% ; margin : 0% 4% 4% 4% ; "/>
+        <ol>
+          <li><em>Improve descriptions</em> → easy, no code change, immediately more agent-friendly</li>
+          <li><em>Improve definitions (backwards-compatible)</em> → change the API, don't break consumers</li>
+          <li><em>Revise the API</em> → new API; consumers must migrate</li>
+          <li><em>Add workflows on top</em> → orchestration above existing APIs</li>
+        </ol>
+      </slide>
+      <slide id="dx-homework">
+        <title>Level 1a: Do Your DX Homework</title>
+        <ul>
+          <li>Most API descriptions need quality improvements anyway</li>
+          <li>Better descriptions benefit <em>everyone</em>, not just AI agents</li>
+          <ul>
+            <li>Complete and meaningful operation summaries</li>
+            <li>Comprehensive examples for all operations</li>
+            <li>Clear error handling</li>
+            <li>Consistent terminology and naming</li>
+          </ul>
+          <li>Good DX is the foundation for good AX</li>
+        </ul>
+      </slide>
+      <slide id="ax-homework">
+        <title>Level 1b: Now There's AX Homework, Too</title>
+        <ul>
+          <li>AI agents need information developers don't typically require:</li>
+          <ul>
+            <li>Everything that developers usually <q>just know</q></li>
+            <li>Treat every API like an external one for developers with no context</li>
+          </ul>
+          <li>OpenAPI Initiative (OAI) might add AX-specific fields</li>
+          <li>Until then, leverage description fields strategically</li>
+        </ul>
+      </slide>
+      <slide id="backwards-compat">
+        <title>Level 2: Backwards-Compatible Evolution</title>
+        <ul>
+          <li>Improve the API itself <em>without</em> breaking existing consumers</li>
+          <ul>
+            <li>Add optional fields and parameters</li>
+            <li>Enrich responses with new optional structures</li>
+            <li>Add new endpoints alongside existing ones</li>
+            <li>Tighten constraints; never loosen contracts</li>
+          </ul>
+          <li>Works well in well-governed API landscapes</li>
+          <li>Morphs into <em>Level 3</em> in brittle or ungoverned API landscapes</li>
+        </ul>
+      </slide>
+      <slide id="what-is-arazzo">
+        <title>Level 4: (Arazzo) Workflows</title>
+        <img src="arazzo-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li><em>Declarative:</em> define the data flow and success criteria</li>
+          <li><a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a> standard for API workflows</li>
+          <li>References <code>operationId</code>s from OpenAPI/AsyncAPI documents</li>
+        </ul>
+        <listing src="arazzo.yaml"/>
+        <p style="text-align: center;">See the full workflow: <code href="https://arazzo-ui.jentic.com/?document=https%3A%2F%2Fraw.githubusercontent.com%2Ffrankkilcommins%2Fagentic-tools-webinar%2Frefs%2Fheads%2Fmain%2Farazzo%2Fweekend-getaway.arazzo.yaml">arazzo-ui.jentic.com</code></p>
+      </slide>
+      <slide id="api-ai-scorecard">
+        <title>You Can't Improve What You Don't Measure</title>
+        <img src="api-ai-scorecard.png" href="https://jentic.com/scorecard" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; " class="shadow"/>
+        <ul>
+          <li>Spectral &amp; Co. aren't all you need</li>
+          <li><em>API Scorecard</em> scores your APIs across six dimensions</li>
+          <li><em>Web:</em> <code href="https://jentic.com/scorecard">jentic.com/scorecard</code></li>
+          <li><em>CLI:</em> <code>npm install -g @jentic/api-scorecard-cli</code></li>
+          <li>Repo: <code href="https://github.com/jentic/jentic-api-scorecard">github.com/jentic/jentic-api-scorecard</code></li>
+        </ul>
+      </slide>
+      <slide id="api-ai-readiness-score">
+        <title>AI Readiness Score for APIs</title>
+        <img src="api-ai-readiness-score-twilio-alarms.png"  href="https://jentic.com/scorecard" class="fullsize-shadow" />
+      </slide>
+    </part>
+    <part id="mcp">
+      <title>MCP to the Rescue!?!</title>
+      <slide id="just-mcp">
+        <title>Just Use MCP?</title>
+        <img src="mcp-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>The pitch: <q>APIs are old, MCP is the future</q></li>
+          <li>Wrap anything in MCP → call it AI-ready</li>
+          <li>Skip the hard API work → straight to AI</li>
+          <li>Just <q>start fresh</q> after 10 years of API landscape work?</li>
+        </ul>
+      </slide>
+      <slide id="mcp-washing">
+        <title>MCP-Washing</title>
+        <img src="mcp-washing.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Skip the API work → jump to MCP → call it <q>AI-readiness</q></li>
+          <li>This is the wrong place to invest from a strategy perspective</li>
+          <li>MCP should be a <em>thin</em> layer, not a <em>fat</em> one</li>
+          <li>Invest in your APIs and then expose them through MCP</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="conclusions">
+      <title>Conclusions</title>
+      <slide id="isaqb-callback">
+        <title>Aligned with the iSAQB API Module</title>
+        <ul>
+          <li>Covered in the <a href="https://www.isaqb.org/certifications/cpsa-certifications/cpsa-advanced-level/api/">CPSA Advanced Level: API Module</a></li>
+          <ul>
+            <li>API Design, Description, Lifecycle</li>
+            <li>API Security &amp; APIs at Scale</li>
+          </ul>
+          <li>Background reading (iSAQB blog posts)</li>
+          <ul>
+            <li><q><a href="https://www.isaqb.org/blog/apis-as-business-assets-designing-for-scale-governance-and-ai/">APIs as Business Assets: Designing for Scale, Governance, and AI</a></q></li>
+            <li><q><a href="https://www.isaqb.org/blog/apis-digital-building-blocks-for-modern-business-models/">APIs as Digital Building Blocks</a></q></li>
+          </ul>
+        </ul>
+      </slide>
+      <slide id="thanks">
+        <title>Thank You!</title>
+        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 6% 4% 6% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+      </slide>
+    </part>
+  </presentation>
+  </hotspot>
