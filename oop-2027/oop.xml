@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="oai-track" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+  <configuration>
+    <link subsections="yes" bookmarks="yes" versions="oop.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+    <paths img="img" listing="src"/>
+    <outline count-text=" [*]" count-depth="all"/>
+    <hyperlink extra=""/>
+    <extension file="html" link=""/>
+    <counter separator=":&#160;"/>
+    <kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+      <plugins>
+        <touch/>
+      </plugins>
+    </kilauea>
+  </configuration>
+  <license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+    <div class="license">
+      <p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+      <p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+    </div>
+  </license>
+  <title><a href="https://www.oop-konferenz.de/">OOP 2027</a></title>
+  <author>Erik Wilde</author>
+  <affiliation><a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></affiliation>
+  <date short="2027-02-??">February ??, 2027</date>
+  <copyright>2027 Erik Wilde</copyright>
+  <presentation id="index">
+    <title short="Beyond MCP-Washing">Beyond MCP-Washing: The Real Work Behind AI-Ready APIs</title>
+    <toc class="abstract">Everybody has to have an AI story these days. In many organizations, the AI-first crowd and the API-first crowd are still working past each other. There are different budgets, different vocabularies, and different tools. That gap comes with a cost, and one of the more visible costs is what I've started calling MCP-washing: wrap the existing API landscape in the Model Context Protocol, tick "AI-ready" on the roadmap, and move on. It looks like progress, but it usually isn't. MCP-washing isn't just a technical mis-choice. It's the visible symptom of a strategic disconnect. Coding agents don't benefit from MCP wrappers at all; they need better API descriptions and cleaner API definitions to write code well. Business agents only marginally benefit from MCP over well-designed APIs. Yet MCP is where the "AI budget" gets spent, because it looks like AI. The API investment that would actually help both sides gets deferred. This talk brings together three vantage points on the disconnect: the OpenAPI Initiative, where I sit as an ambassador watching the standard evolve for machine consumers; field observations from working with enterprises on their AI transitions; and work on how to assess and improve the AI-readiness of APIs. You'll leave with a working vocabulary for the disconnects, a practical way to assess and adjust the AI-readiness of your own APIs, and a four-level model for evolving an existing API estate, starting with changes that benefit both agent worlds simultaneously. The result is less magic and more plumbing.</toc>
+    <toc class="abstract-short">Everybody has to have an AI story these days. Many organizations spend the AI budget on MCP-washing: wrap APIs in the Model Context Protocol, tick "AI-ready," move on. It looks like progress, but it usually isn't. Coding agents don't benefit from MCP wrappers; business agents only marginally do. Both need better APIs. This talk names the AI-first/API-first disconnect, gives you a practical way to assess API AI-readiness, and offers a four-level model for evolving an existing API estate. This leads to less magic and more plumbing.</toc>
+    <slide id="erik">
+      <title>Erik Wilde</title>
+      <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <ul>
+        <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+      </ul>
+      <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 40% ; margin : 2% 0% 0% 10% "/>
+    </slide>
+    <part id="conclusions">
+      <title>Conclusions</title>
+      <slide id="agent-thanks">
+        <title>Thank You!</title>
+        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        </ul>
+        <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 50% ; margin : 2% 0% 0% 10% "/>
+      </slide>
+    </part>
+  </presentation>
+</hotspot>
