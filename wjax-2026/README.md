@@ -1,6 +1,6 @@
 # What AI Agents Are Teaching Us About Integration
 
-Slides for Presentation at [W-JAX 2027](https://jax.de/muenchen/).
+Slides for Presentation at [W-JAX 2026](https://jax.de/muenchen/).
 
 
 ## License
