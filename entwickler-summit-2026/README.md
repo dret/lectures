@@ -1,6 +1,6 @@
 # APIs für die AI Nutzung: Wie geht das?
 
-Slides for Presentation at [Enwickler Summit](https://entwickler.de/entwickler-summit/) 2026.
+Slides for Presentation at [Entwickler Summit](https://entwickler.de/entwickler-summit/) 2026.
 
 
 ## License
