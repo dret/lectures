@@ -27,7 +27,7 @@
   <author>Erik Wilde</author>
   <affiliation><a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></affiliation>
   <date short="2026-11-02">November 2, 2026</date>
-  <copyright>2027 Erik Wilde</copyright>
+  <copyright>2026 Erik Wilde</copyright>
   <presentation id="index">
     <title>What AI Agents Are Teaching Us About Integration</title>
     <toc class="abstract">For decades, integration was a design-time problem we solved with documentation, SDKs, and patience. AI agents don't have any of those. They consume our integration surfaces at runtime, on demand, with no opportunity to read a guide or ask a colleague, and they are surprisingly honest about what's broken. This talk is a field report from the runtime era of integration. Drawing on observations from pointing agents at real-world systems, it looks at four dimensions where agents reliably stumble: discovery (operations that humans found by reading, agents can't find at all), semantics (descriptions that read fine to a developer but mean three different things to a model), composition (operations that work alone but fall apart when chained), and errors (responses that humans tolerated through intuition and retries, but that derail agents the same way every time). You'll leave with a different way of looking at your integration surfaces, a vocabulary for the failure modes you're most likely to hit, and a recipe for pointing agents at your own systems to find out where the cracks are – before someone else's agent does.</toc>
