@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="oai-track" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+  <configuration>
+    <link subsections="yes" bookmarks="yes" versions="wjax.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+    <paths img="img" listing="src"/>
+    <outline count-text=" [*]" count-depth="all"/>
+    <hyperlink extra=""/>
+    <extension file="html" link=""/>
+    <counter separator=":&#160;"/>
+    <kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+      <plugins>
+        <touch/>
+      </plugins>
+    </kilauea>
+  </configuration>
+  <license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+    <div class="license">
+      <p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+      <p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+    </div>
+  </license>
+  <title><a href="https://jax.de/muenchen/">W-JAX 2027</a></title>
+  <author>Erik Wilde</author>
+  <affiliation><a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></affiliation>
+  <date short="2026-11-02">November 2, 2026</date>
+  <copyright>2027 Erik Wilde</copyright>
+  <presentation id="index">
+    <title>What AI Agents Are Teaching Us About Integration</title>
+    <toc class="abstract">For decades, integration was a design-time problem we solved with documentation, SDKs, and patience. AI agents don't have any of those. They consume our integration surfaces at runtime, on demand, with no opportunity to read a guide or ask a colleague, and they are surprisingly honest about what's broken. This talk is a field report from the runtime era of integration. Drawing on observations from pointing agents at real-world systems, it looks at four dimensions where agents reliably stumble: discovery (operations that humans found by reading, agents can't find at all), semantics (descriptions that read fine to a developer but mean three different things to a model), composition (operations that work alone but fall apart when chained), and errors (responses that humans tolerated through intuition and retries, but that derail agents the same way every time). You'll leave with a different way of looking at your integration surfaces, a vocabulary for the failure modes you're most likely to hit, and a recipe for pointing agents at your own systems to find out where the cracks are – before someone else's agent does.</toc>
+    <slide id="erik">
+      <title>Erik Wilde</title>
+      <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <ul>
+        <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+      </ul>
+      <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 40% ; margin : 2% 0% 0% 10% "/>
+    </slide>
+    <part id="conclusions">
+      <title>Conclusions</title>
+      <slide id="agent-thanks">
+        <title>Thank You!</title>
+        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        </ul>
+        <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 50% ; margin : 2% 0% 0% 10% "/>
+      </slide>
+    </part>
+  </presentation>
+</hotspot>
