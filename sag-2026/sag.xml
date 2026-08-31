@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
+<?hotspot layout-path="hotspot/hotspot/layout" ?>
+<?hotspot kilauea-path="hotspot/kilauea" ?>
+<?hotspot layout="oai-track" ?>
+<hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
+  <configuration>
+    <link subsections="yes" bookmarks="yes" versions="sag.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
+    <paths img="img" listing="src"/>
+    <outline count-text=" [*]" count-depth="all"/>
+    <hyperlink extra=""/>
+    <extension file="html" link=""/>
+    <counter separator=":&#160;"/>
+    <kilauea xmlns="http://xmlns.sharpeleven.net/kilauea">
+      <plugins>
+        <touch/>
+      </plugins>
+    </kilauea>
+  </configuration>
+  <license uri="https://creativecommons.org/licenses/by/4.0/" short="CC BY 4.0">
+    <div class="license">
+      <p><a rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src="hotspot/hotspot/layout/youtube/logo/somerights20.png" border="0" height="31" width="88"/></a></p>
+      <p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
+    </div>
+  </license>
+  <title><a href="https://conferences.isaqb.org/software-architecture-gathering/">Software Architecture Gathering</a> 2026</title>
+  <author>Erik Wilde</author>
+  <affiliation><a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></affiliation>
+  <date short="2026-11-17">November 17, 2026</date>
+  <copyright>2026 Erik Wilde</copyright>
+  <presentation id="index">
+    <title short="Composable Architecture for AI Systems">Composable Architecture for AI Systems: APIs, MCP, Skills, Sub-Agents, and Workflows</title>
+    <toc class="abstract">AI is a powerful tool, but it is not the only tool, and most systems worth building are hybrids of AI and non-AI parts. That line between them doesn't sit neatly between domains. It runs inside every domain, and it should move as you learn. This talk looks at the mechanisms for connecting across that line: APIs, MCP, agent skills, and sub-agents, as well as at workflows as a way to move the line itself: when an agent keeps rediscovering the same business process, that process belongs in deterministic execution, not in a prompt. You'll leave knowing which mechanism belongs where, and how to keep shifting work out of AI as your system settles.</toc>
+    <slide id="erik">
+      <title>Erik Wilde</title>
+      <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <ul>
+        <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+      </ul>
+      <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 40% ; margin : 2% 0% 0% 10% "/>
+    </slide>
+    <part id="conclusions">
+      <title>Conclusions</title>
+      <slide id="agent-thanks">
+        <title>Thank You!</title>
+        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        </ul>
+        <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 50% ; margin : 2% 0% 0% 10% "/>
+      </slide>
+    </part>
+  </presentation>
+</hotspot>
