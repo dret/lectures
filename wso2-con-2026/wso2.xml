@@ -31,6 +31,16 @@
   <presentation id="index">
     <title short="Openness Matters">Openness Matters: Source and Interfaces in the Age of Agents</title>
     <toc class="abstract">Openness has seen a resurgence: open source, open interfaces, and increasingly open models. AI is a big part of why that happens. Agents can read what is open, and reading was always the expensive part. That changes what openness is worth, and it widens where it applies. Coding agents work with implementations, and that's where open source makes the difference. Business agents work with capabilities, and that's where open interfaces matter. Business agents get pointed at everything your business depends on: your own APIs, and the ones of your partners and providers. That gives a familiar idea more weight. API governance works best when it covers the whole landscape your business depends on, both the APIs you publish and the ones you consume. For your own APIs, open source and open interfaces reinforce each other. For everything else, interfaces are what you have to work with. This talk looks at different kinds of openness, where they apply, and what agents need in order to use what you've opened. The place to start is the AI-readiness of the APIs your business depends on, including the ones you didn't build.</toc>
+    <slide id="erik">
+      <title>Erik Wilde</title>
+      <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <ul>
+        <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+      </ul>
+      <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 50% ; margin : 2% 0% 0% 10% "/>
+    </slide>
     <part id="conclusions">
       <title>Conclusions</title>
       <slide id="agent-thanks">
