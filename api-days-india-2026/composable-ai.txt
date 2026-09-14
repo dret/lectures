@@ -1,0 +1,363 @@
+Composable Architecture for AI Systems: APIs, MCP, Skills, Sub-Agents, and Workflows
+
+API Days India 2026, Bengaluru, August 19, 2026
+
+Erik Wilde
+
+Transcript of the delivered talk, cleaned up from the YouTube auto-transcript: https://www.youtube.com/watch?v=nhl2itIj3EQ
+Filler words and transcription errors removed; wording otherwise left as spoken.
+
+Welcome everybody. My name is Erik Wilde, and what I would like to do is talk a little bit
+about the fact that even though AI is great and wonderful, it's not the only game in town.
+We're still writing code, we're still executing regular code, and I think that means we have to
+think about how we separate those two, which I sometimes call realms: different ways of how you
+can solve and approach problems.
+
+I work as an ambassador for the OpenAPI Initiative, so I organize events for them, and tomorrow
+we have the OpenAPI track all day in this room, which goes from 11 to the end of the event,
+where we just talk about standards in the API space, mostly about OpenAPI and other standards
+from the OpenAPI Initiative. So if you're interested in standards, and interested in learning
+about how to use them and why it makes sense to use standards and how they help you build
+better solutions, come and join us tomorrow here in this room. If you want to find out more
+about what I'm doing, you can find me on LinkedIn and YouTube.
+
+So let's briefly start with why I started with this presentation. I think we all remember those
+days when we looked at the first versions of chatbots and asked them very simple questions,
+like arithmetic, and they just came up with wrong answers. I think that has been fixed by now.
+But I would just like to call into memory that even though AI is great, it's not the right tool
+for every job. On the right-hand side you can see the famous Maslow's hammer, which says that
+if the only tool you have is a hammer, everything looks like a nail. Sometimes I think nowadays
+we also get talked into this idea by the usual suspects, the organizations that make a lot of
+money, or hope to make a lot of money, with AI, that you can solve any problem with AI. Which I
+guess in principle is true. But the question then is: should I solve every problem with AI?
+
+This is of course a little bit provocative. But if you think about it, even though nowadays you
+could ask an LLM about simple math questions, it's super inefficient. If you ask a CPU a simple
+math question, it costs you nothing. It's basically a few nanoseconds, pretty much zero energy
+consumption, and it will give you the same answer every single time. With an LLM it costs you
+really trillions of times more in terms of computation, because what happens under the hood is
+super complicated, even though it's highly optimized these days. It costs you much more power.
+And even then, depending on which problem you're giving to the LLM, it might get it wrong
+occasionally. You can't be sure that it comes up with the same answer every single time.
+
+Of course this is a slightly oversimplified example, and I think the answer is pretty clear
+that if you want to do math, probably don't use ChatGPT, use your pocket calculator or your
+CPU. But generally speaking, we are facing this question nowadays of which problems are
+actually problems we should solve with LLMs, and which problems are well understood enough and
+well defined enough that we can throw regular good old automation with deterministic code at
+them.
+
+What that comes down to, in my mind, is to really think about those things as something where
+we want to decompose our problems into solutions that use the right approach for the problem
+we're solving. In many cases what I think we will end up doing is ending up with hybrid
+solutions, where we do certain things with LLMs and certain things with good old code, that
+maybe we have produced with LLMs, but in the end it's code that we run that does the same thing
+every single time. Those solutions are the ones we should really strive to be good at building.
+
+What that also means is that because those boundaries may shift, for some problem we used to
+solve with automation we now say actually LLMs are a better solution. Or we may go the other
+way around and say, well, we used to solve this problem with LLMs, but now we've figured out
+that it's stable enough that we can formalize it in some shape or form, and you can solve your
+problem with deterministic code.
+
+So my claim is that going forward, what we want is architectures that allow us to move those
+boundaries pretty fluidly. And whenever we have boundaries we probably need interfaces, which
+is why I'm interested in that problem, because the interfaces then often show up in the form of
+APIs.
+
+It's also something I've been working on with my colleague Frank Kilcommins. We've worked
+towards a solution where basically, if you observe often enough that an LLM does a certain
+sequence of steps, it makes sense to crystallize that sequence into a workflow that you can
+just run. You can validate it, you can prove that it always works the same way, and you can
+maybe optimize it. It becomes this deterministic kind of thing. If you want to learn more about
+this, tomorrow Frank has a talk in the OpenAPI track where he talks about how to do that
+specifically with open standards, with Arazzo. But it's just one example of where we probably
+want to go, in my mind.
+
+I think it's important because we're still being promised that we can let AI do everything. And
+I want to be very clear about what I mean when I talk about AI in this specific presentation.
+I'm mostly talking about using AI for business problems. So business agents, things that happen
+at runtime. I'm not talking about coding agents. Coding agents, great, use them, everybody uses
+them. By now it's very clear that yes, coding agents are a good and useful thing. But in my
+mind there is quite a difference between using coding agents to produce code that then runs,
+and using business agents that use LLMs or other techniques to actually run things at runtime,
+to solve business problems with AI.
+
+The reason why we might want to keep that in mind is that even though we have this promise that
+AI will eventually become perfect, so we can always use the same model and it will always solve
+everything in the right way and we just have to tell it what we want, realistically speaking we
+are still struggling sometimes with models not being quite that perfect. A new model comes out
+and suddenly the solution we built starts doing different things, because the new model has
+different ticks and does things differently than before. And it's really hard for us to even
+detect it, and then fix it, and so forth. So at least for a little while, I think we still have
+to treat LLM-based solutions as something that comes with a couple of downsides, a couple of
+trade-offs that we have to make. And I think that calls for us as developers to also make sure
+that we build solutions that minimize the risks we take with AI.
+
+The interesting thing is that I think we've had this problem for quite a while, but we never
+quite noticed. When AI in its pre-GenAI form was there, so before generative AI and LLMs, for
+quite a while we had machine learning, which gave us some of the same capabilities. But it was
+much more expensive to build machine learning solutions, because we had to specifically design
+and build and train and test them. So you would only do it, in many cases, for very clearly
+bounded contexts, where you would say: okay, I need this classification task to run well, I
+don't know how to do it in deterministic code, so I do it with machine learning. But it was
+clear that you wanted to keep that very bounded, because it was expensive and difficult to
+build, and it also was not easy to find people who were good at doing it.
+
+Generative AI has just completely shifted that boundary, so to speak, to allow us to use AI in
+many more cases. Because as we've all found out, it's really fascinating what kind of problems
+you can just talk to your LLM about, and it will give you a good enough answer. But there still
+is this boundary where we have to make decisions.
+
+So in the end, what I really want to talk about here is good old software architecture. This
+idea that we're building different kinds of solutions, maybe one part of the solution built
+LLM-based, the other part built with deterministic code, and we want to make sure that we build
+this in a way that if things change, we can change our way of solving the problem relatively
+easily.
+
+That was actually my main reason why I joined Jentic about a year ago, because my understanding
+of what we are building is that it's a solution that gives you a slider you can very easily
+move between "this should be deterministic" and "this should be non-deterministic". And the
+more easily you can use that slider, the better your solutions will become, because you can
+more easily decide what type of solution is actually a good solution to your problem.
+
+What I also think is that this will become increasingly important, and this is pure speculation
+on my side, but I think where we're going is that we will not use all these uber models that
+much anymore. Instead we will go more towards small language models, which are better suited to
+particular tasks, which we can then run on our laptops or on our phones or in our data center
+without needing the latest and greatest machinery from Nvidia or whoever. And the better we
+build our solutions in terms of only solving certain problems with LLMs and others with code,
+and making that flexible, the sooner we get to the point where we can say we don't actually
+need these uber models for everything. Maybe we still need them for software development, but
+maybe we don't really need them for that many business tasks.
+
+When we think about how we make these things interact, how we build these individual components
+which are either deterministic or probabilistic, they have different kinds of interfaces. You
+can use different technologies, we'll get to that in a minute. But it's definitely something
+where you can say we have these different behaviors.
+
+When you look at deterministic components, deterministic code behaves in a very specific way.
+If you give it the same input, it will produce the same output. That's nice. It always used to
+be like this with computers, in most cases, unless we have weird side effects. But that is
+something we could depend on, which is nice. You can test them for these purposes, so you have
+large test suites that you can run. And because of that, when you compose these things they
+compose pretty predictably. It becomes something where you can pull together components and
+they have a predictable behavior overall. Also the behavior remains stable: when you update to
+a new Java or a new version of your operating system, your program doesn't suddenly run
+differently. Okay, sometimes it does, but it shouldn't. It's more the exception than the rule.
+And that also means it's very clear what your code does.
+
+With probabilistic components, which you can also package and deliver as something that
+somebody can use, it's quite different. It's not something that always behaves the same way.
+You can barely make any guarantees about what it does, because it does what it's statistically
+doing. There is a certain distribution of results to expect, but it's not your good old "this
+input produces this output" equation.
+
+That also means it's not the same kind of component that will always produce the same result.
+And in some cases, depending on which business you're in, that makes it really hard for some
+organizations, some businesses, some lines of business to use these kinds of things. If you
+need to prove that your code does certain things, if you need to have somebody sign off on "I
+tested this component and I know it behaves like this", if you're in the medical sector or in
+other safety-critical sectors, then these things become really important. You cannot just say,
+yeah, most of the time it looked kind of right to me. You have to be a little bit more strict
+than that. So trying to make those components as well contained as possible makes sense, so
+that you can use them in a good way outside of a safety-critical path, and make sure the
+safety-critical path is always deterministic.
+
+The other reason why this is sometimes tricky is that they may even change behavior without you
+entirely predicting it. When a new model comes out and you don't run your own model, you depend
+on some model provider. Or your company decides we don't like this model provider anymore, and
+we now want to switch model providers. Then suddenly you might run into all of your components
+behaving differently, because the new model might do things in a different way. That is a level
+of variation that you just don't have with traditional code.
+
+When you are doing things in the probabilistic space, you are always depending not on your code
+but on some external component, the model, coming up with the end result. You hope that it
+generally comes up with a result you expect, but it's not something you can really depend on.
+Which means that if you have a dependable way of doing it deterministically, you might want to
+switch to that. Also it's a trillion times more cost-efficient, which is really nice.
+
+In the end, these different components come with very different trade-offs, they have very
+different behaviors, and I think for us as architects of the solutions we build, we have to
+make sure that we separate those as well as possible and then are able to change and tweak them
+over time.
+
+I have to admit that I'm still struggling to come up with the best possible visualization of
+this. But here's a little bit of my idea of how different solutions that are out there right
+now work, in the sense of: do these provide deterministic execution, or do these provide a more
+probabilistic way of doing things, where if I formulate my solution that way it comes with
+those trade-offs I was just talking about, that I cannot guarantee it behaves in a certain way.
+
+The most probabilistic one, so to speak, is just using prompts. Prompts are often something
+that you write, it's kind of an ephemeral thing, and depending on how you write it your model
+might interpret it differently. So that becomes something that is very open in terms of the
+results it produces.
+
+There are other ways that more and more people are trying to explore. There's the idea of sub-
+agents, where instead of solving all of your problems with one LLM that does all the work, you
+separate different LLMs, and you might have different LLMs specialized in different tasks. You
+might have some ideas around this LLM being better for that. You might have some LLMs that you
+have trained for certain tasks, that have your internal company knowledge, others that don't,
+or that have internal knowledge of something else. In that case, when you start composing those
+different things with sub-agents, you might already have a little bit more predictability,
+because you specifically choose a specific LLM and say this one is more likely to produce the
+result that I think is a good result. You more tightly control that this part of the problem is
+going to be solved by this sub-agent based on that model. So that gives you a little more
+control.
+
+You might also outsource, and that is what all of us are doing more or less these days, certain
+parts of your problem solving into components that you access through MCP. Now, MCP doesn't
+constrain you in any shape or form in what you're actually calling into. MCP basically just
+gives you this ability where you let your model choose a tool, invoke the tool, and then
+something happens. You don't really know what happens, but typically what happens behind an MCP
+tool is deterministic. That's on average what happens. So that already allows you to say
+certain things I want to solve in code, and when my model wants to solve a certain sub-problem,
+go through a certain step, then it should use that tool. And this is the interesting twist
+there: if the LLM then decides to use this tool, which you cannot guarantee, but if it decides
+to use this tool, then things happen in a deterministic way.
+
+That can also become a little tricky, in particular, and I think we've all run into this, when
+you have multiple tools that should be combined and used. Then you run into this issue where
+maybe, instead of relying on the LLM to combine 20 different tools, you want to have a workflow
+that combines that for you, and that workflow is executed deterministically. In which case you
+would reduce the uncertainty, because you would say: whenever you want to do this, invoke that
+workflow, and then you have 20 steps running. That is what we talk about tomorrow, about Arazzo
+workflows in the OpenAPI track. In that case you have turned the deterministic side even
+further into something that runs the same way every single time.
+
+I think these mechanisms are interesting to compare and contrast. What I also find interesting
+is the skill mechanism that we have nowadays. Skills are this interesting idea of giving
+packaged capabilities to LLMs. They combine all these things: a skill could be nothing more
+than a prepackaged prompt, it's just natural language in there. Or a skill could have basically
+no natural language in there and just say invoke this command. So you don't really know. A
+skill can be both things. It can be pretty deterministic or it can be entirely probabilistic.
+It's kind of hard to tell.
+
+But that also means that when you use skills, you have to think about what you are actually
+doing. Do I depend on the model to do the right thing, or do I actually use this more or less
+like MCP, where I just depend on that skill to be invoked, and if it gets invoked then the
+right thing happens every single time?
+
+I don't want to go into the details of these because I'm running a little late. But I think for
+us as engineers, what we really need to do these days is to think through what the mechanisms
+we're using are actually doing with the solutions we build. How are they separating these
+solutions into deterministic and probabilistic parts, and how well does this separation work
+for our problem?
+
+We shouldn't approach this as something that we just hand over to some other entity, like an
+LLM, and say build a solution and do whatever you think works well. We should really think
+through what parts of my solution should be deterministic and which ones could be
+probabilistic.
+
+If we build something that we think really should be deterministic, then MCP probably is a very
+good mechanism these days, because like I said, in pretty much 99.9% of all cases what is
+behind an MCP tool is deterministic code that will just do things in a predictable way. So if
+you want things to happen in a predictable way, wrap and package them through MCP. My
+recommendation usually would be to wrap and package them in an API and then expose that API
+through MCP, then you have actually covered both worlds. But because we're talking about LLMs
+mostly, I'll keep it with MCP here.
+
+With skills, I think it's a type of solution that's a little bit more exploratory. In a skill
+you have the ability to combine the probabilistic way with more hardcoded ways. Your skill
+could use a lot of natural language, or it could use mostly commands that get invoked, or it
+could use a mix of both. So this allows you to be a little bit more open in the thing that
+you're doing.
+
+But as a guideline, I would think we should always strive to solve as many problems in a
+deterministic way as possible, because that is cheaper, more reliable, more predictable, and
+allows us to better understand what we're actually doing.
+
+So in my mind, to conclude: the line that we draw between deterministic code and probabilistic
+code is something we should be able to move in both directions. We should be able to say, well,
+actually my deterministic code behaves a little weird, I have a lot of edge cases, I don't
+quite know how to handle the edge cases, let's get an LLM in there that can do that better. Or
+the other way around: the LLM always does the same thing anyway, so then just turn it into a
+workflow and say, you know what, you don't have to come up with the same solution every single
+time at a pretty high cost, instead I'll have that encoded in a deterministic component.
+
+That also means that, from an API point of view, which I haven't talked about a lot today, this
+might change the way we do API management. Because I think we then discover more and more of
+these deterministic components that just get stabilized and wrapped into components that we can
+then publish and make available. So in terms of API management this changes the picture a
+little bit, because instead of explicitly designing APIs, we might end up discovering APIs. We
+build solutions with LLMs, and then we discover that those solutions tend to do the same thing
+over and over again, and then we say, oh, that seems to be something useful, let's turn that
+into something we can actually repeat and execute in a simple way.
+
+So in the end, our ability to work with these two realms will also change a little bit how we
+do not just software architecture but also API management, because we might end up discovering
+APIs more than we actually end up defining them, or some mix of those two things. I find that a
+pretty interesting idea.
+
+But of course that also means that once you've published those components, they become
+something you actually have to promise will happen over and over again. So this is the good old
+problem that we all know: you better make sure that what you turned into something
+deterministic actually is something that should happen, that you've tested it, that you've
+verified it, that maybe somebody looked at it who actually understands the business. And then
+you can say, okay, this actually is a useful component, I make it public, and it becomes
+something that everybody can use, because that's a new process that we've discovered, that
+combines those 20 endpoints into a more easily usable capability that others in the
+organization can then invoke as well.
+
+And with this I would like to close with my unofficial motto. My unofficial motto is that for
+AI a good general guideline, outside of using coding agents, but for runtime AI, I think it's a
+worthwhile goal to try to use as little AI as possible. There are good places to use AI, no
+doubt. But it's expensive, it's fuzzy, it's unreliable. So try to really make sure that you
+draw these lines between those different things in a good way, that you are able to change them
+when you want to, and then I think you can start building good solutions that combine those two
+different ways of solving problems.
+
+And that's it. If you want to learn more, follow me on YouTube, follow me on LinkedIn. I try to
+regularly post about those things. It really kind of keeps me awake at night. And once again,
+come and join the OpenAPI track tomorrow, it's going on all day in this room. Thank you.
+
+
+Q&A
+
+Q: I have known you for years on LinkedIn, very happy to see you and hear you in person. I
+think the second-last slide said something like "the GenAI divide is a new driver of an old
+architectural problem". Could you explain that last line? What do you mean by that?
+
+A: Oh, you're actually reading my slides. Very good. I think the old architectural problem is
+basically composability: how do we build components in a way that solves a specific domain of
+the problems we want to build, and how do we make those consumable in a way so that at least
+potentially others can consume them as well. And I think this separation into deterministic and
+probabilistic is a new separation that we didn't have to make that much before, and that gives
+us one more aspect of how we might want to identify and wrap components so that they become
+reusable by others.
+
+Q: You post pictures from Switzerland on your LinkedIn. How do you find the view out of your
+room in Bangalore?
+
+A: Different. Interesting.
+
+Q: Can each API be explored or be taken as MCP? Is that something that's coming, or are we
+looking into that pattern?
+
+A: Personally speaking, I see a little bit too much effort being put into MCP. What I would
+usually suggest is to think about the capability you want to make available first, and then
+expose it in the way that works best for the consumer, which can be through MCP, which can be
+through an API. MCP is just one specific way of consuming a capability, that happens to be the
+one that is now heavily favored by LLMs. We'll see how that goes. But by and large, MCP in my
+mind is just the delivery mechanism for capabilities. So think about your capabilities and then
+expose them in whatever way your consumers need.
+
+Q: At the start you had a slide where the division is a very trivial problem to solve and not
+one to use AI for. But with recent developments in mathematics, solving problems which had not
+been solved before, how does that sit with your last slide when you say use as little GenAI as
+possible?
+
+A: I think there are areas where AI is great already and will become even better, like
+supporting research and these kinds of things, doing a lot of really complicated things. But in
+reality, and I don't want this to sound very negative, most businesses, the problems that
+businesses are solving, are not the top math problems of the world. It's more like: in this
+spreadsheet, do the invoice numbers match up with the invoice numbers in that spreadsheet? A
+lot of business problems are super trivial compared to what we're doing with these super hard
+problems. And for that it might make more sense to have an LLM generate code that does the
+matching, because then pulling out those values and comparing them is trivial. You just need
+somebody to identify the business logic, which in most cases, if you're selling tires or
+something, is not really PhD-level math. It's pretty simple. So throwing an expensive model at
+this every single time is just a waste of money. We'll see where this is going, but I think
+there is a good chance that token prices will go up a lot. And then you will ask yourself: do I
+really need to match those two numbers at whatever it costs to do that per call, or do I just
+generate code once and then run it a million times at basically zero cost?
