@@ -24,9 +24,9 @@
 		</div>
 	</license>
 	<title><a href="https://www.apidays.global/">API Days</a> <a href="https://www.apidays.global/london/">London</a> 2026</title>
-  <presentation id="index">
+  <date short="2026-10-01">October 1, 2026</date>
+  <presentation id="openapi-track">
     <title short="OpenAPI Track Welcome">OpenAPI Track Welcome and OpenAPI in the Age of AI</title>
-    <date short="2026-09-30">September 30, 2026</date>
     <slide id="erik">
       <title>Erik Wilde</title>
       <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
@@ -40,6 +40,350 @@
      <part id="conclusions">
       <title>Conclusions</title>
       <slide id="openapi-thanks">
+        <title>Thank You!</title>
+        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        </ul>
+        <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 50% ; margin : 2% 0% 0% 10% "/>
+      </slide>
+    </part>
+  </presentation>
+  <presentation id="composable-ai">
+    <title short="Composable Architecture for AI Systems">Composable Architecture for AI Systems: APIs, MCP, Skills, Sub-Agents, and Workflows</title>
+    <toc class="abstract">AI is a powerful tool, but it is not the only tool, and most systems worth building are hybrids of AI and non-AI parts. That line between them doesn't sit neatly between domains. It runs inside every domain, and it should move as you learn. This talk looks at the mechanisms for connecting across that line: APIs, MCP, agent skills, and sub-agents, as well as at workflows as a way to move the line itself: when an agent keeps rediscovering the same business process, that process belongs in deterministic execution, not in a prompt. You'll leave knowing which mechanism belongs where, and how to keep shifting work out of AI as your system settles.</toc>
+    <slide id="agent-erik">
+      <title>Erik Wilde</title>
+      <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <ul>
+        <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+      </ul>
+    </slide>
+    <part id="ai-engineering">
+      <title>AI Engineering is Growing Up</title>
+      <slide id="ai-power">
+        <title>A Trillion Operations for 16'968 ÷ 404?</title>
+        <img src="ai-hammer.png" title="Maslow's AI Hammer" style="float: right ; height : 70% ; margin : 0% 4% 4% 4% ; "/>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;"></th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">CPU Computation</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">LLM Inference</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Elapsed time</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">a few nanoseconds</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~0.1–2 seconds</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Computation</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">one integer division</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~10<sup>11</sup>–10<sup>13</sup> FLOPs</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Energy</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~pJ–nJ</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~1–100 J</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Correctness</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">exact</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">not guaranteed</td>
+          </tr>
+        </table>
+        <ul>
+          <li>CPU: One deterministic instruction</li>
+          <li>LLM: Trillions of operations for probabilistic inference</li>
+          <li>The LLM might still get the answer wrong</li>
+        </ul>
+      </slide>
+      <slide id="pitch-vs-reality">
+        <title>AI All The Things?</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Perfect Vision</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Current Reality</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>One agent, one model, all tasks</li>
+                <li>Always gets the right answer</li>
+                <li>Autonomous, self-directing, self-correcting</li>
+                <li>No human engineering required</li>
+                <li><q>Just describe what you want</q> and trust it</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Same prompt returns different answers</li>
+                <li>Behavior drift on model updates</li>
+                <li>Most business logic is deterministic</li>
+                <li>AI earns its keep on judgment tasks</li>
+                <li>Reliability = clean cuts between the two</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </slide>
+      <slide id="design-vs-runtime">
+        <title>AI at Design Time! AI at Runtime?</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">AI at Design Time</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">AI at Runtime</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Recognizes patterns</li>
+                <li>Writes the code</li>
+                <li>You review and ship</li>
+                <li>Runs deterministically forever after</li>
+                <li>Use it aggressively</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Great tool for genuine judgment tasks</li>
+                <li>Great tool for unstructured input at scale</li>
+                <li>Real value where no non-AI option exists</li>
+                <li>Costly per call — budget deliberately</li>
+                <li>Handle with care</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </slide>
+    </part>
+    <part id="where-the-line-runs">
+      <title>Where the Line Runs</title>
+      <slide id="boundary-history">
+        <title>The Boundary Has a History</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 33% ;">Before Machine Learning</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 33% ;">Machine Learning</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 33% ;">Generative AI</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>No boundary at all</li>
+                <li>Everything is code</li>
+                <li>If code could not do it, you did not build it</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Boundary appears</li>
+                <li>Probabilistic components are possible but expensive</li>
+                <li>Keep ML parts small and deliberate</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Cost collapses</li>
+                <li>Boundary moves a long way, fast</li>
+                <li>Not clear where and why and how to manage</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <ul>
+          <li>The boundary should sit where constraints put it</li>
+          <li>Generative AI changed the price, not the principle</li>
+        </ul>
+      </slide>
+      <slide id="domains-and-interfaces">
+        <title>It's Software Architecture</title>
+        <ul>
+          <li>Macro architecture: domains and the interfaces between them remain unchanged</li>
+          <li>The GenAI / non-GenAI line is <em>not</em> a domain boundary</li>
+          <li>It runs <em>inside</em> every domain: judgment work and deterministic work co-exist</li>
+          <li>Micro architecture: where that line sits, and which mechanism crosses it</li>
+          <li>The line may move because of new processes and workflows and insights</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="two-realms">
+      <title>Two Realms</title>
+      <slide id="two-contracts">
+        <title>Two Kinds of Component, Two Kinds of Contract</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Deterministic</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Probabilistic</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Same input, same output</li>
+                <li>Tested exhaustively (within reason)</li>
+                <li>Composes predictably</li>
+                <li>Behavior is and remains stable</li>
+                <li>Failure is exceptional</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Same input, a distribution of outputs</li>
+                <li>Evaluated statistically and at runtime</li>
+                <li>Adapts to what it is given</li>
+                <li>Behavior varies and may change at runtime</li>
+                <li>Variation is expected</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </slide>
+      <slide id="realm-costs">
+        <title>What Each Realm Costs You</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Probabilistic</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Deterministic</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>You delegate judgment</li>
+                <li>You give up repeatability</li>
+                <li>The uncertainty is in the answer</li>
+                <li>Managed with evals: statistical, after the fact</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>You specify everything yourself</li>
+                <li>You give up adaptability</li>
+                <li>The uncertainty is in the cases you did not anticipate</li>
+                <li>Managed with tests: exhaustive, before the fact</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </slide>
+    </part>
+    <part id="mechanisms">
+      <title>What to Use When</title>
+      <slide id="choice-spectrum">
+        <title>How Much Choice Stays with the Model?</title>
+        <img src="choice-spectrum.svg" class="fullsize"/>
+      </slide>
+      <slide id="mcp">
+        <title>Model Context Protocol (MCP)</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Use for</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Not for</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Letting an LLM reach any external capability</li>
+                <li>Exposing your APIs, databases, workflows as tools</li>
+                <li>Deterministic operations the LLM should invoke on demand</li>
+                <li>The default answer for <q>how do I connect the LLM to X?</q></li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Packaging prompt patterns (that's skills)</li>
+                <li>Complex multi-step business processes (wrap a workflow instead)</li>
+                <li>Delegating whole reasoning tasks (that's sub-agents)</li>
+                <li>Anywhere you need guaranteed invocation (LLM decides when to call)</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <ul>
+          <li>Bottom line: MCP ⇏ guaranteed invocation</li>
+        </ul>
+      </slide>
+      <slide id="skills">
+        <title>Skills</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Use for</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Not for</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Packaging a prompt pattern you keep re-typing</li>
+                <li>Sharing a way of working across sessions and projects</li>
+                <li>Loading context (style guides, docs) on demand</li>
+                <li>Composing MCP tool usage into a reusable recipe</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>Reliable business processes (workflows do this better)</li>
+                <li>Behavior that must run identically each time</li>
+                <li>Anything that needs versioning or auditability</li>
+                <li>Delegating to a different model (sub-agents)</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+        <ul>
+          <li>Bottom line: Skills ⇏ reproducibility</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="moving-the-line">
+      <title>Moving the Line</title>
+      <slide id="move-deliberately">
+        <title>The Line Moves in Both Directions</title>
+        <ul>
+          <li>Observe repeating patterns and turn them into deterministic components</li>
+          <li>Observe underperforming code and replace with probabilistic components</li>
+          <li>Runtime observability becomes as important as thorough testing</li>
+          <li>Make sure your architecture allows you to easily move the line</li>
+        </ul>
+      </slide>
+      <slide id="publish-what-you-stabilize">
+        <title>Publish What You Have Stabilized</title>
+        <ul>
+          <li>Once something is repeatable, it becomes a new <q>official</q> process</li>
+          <ul>
+            <li>Turn <em>repeated</em> patterns into <em>repeatable</em> patterns</li>
+          </ul>
+          <li>An API or a declared workflow gives consumers a capability and a contract</li>
+          <ul>
+            <li>A skill gives them a capability, with no promise about where on the range it sits</li>
+          </ul>
+          <li>Skills are good starting points but not very good as stable components</li>
+        </ul>
+      </slide>
+      <slide id="publishing-costs-revisability">
+        <title>Publishing Makes the Line Harder to Move</title>
+        <ul>
+          <li>A published contract is a commitment not to change</li>
+          <li>Any changes in behavior become breaking changes</li>
+          <li>Components need versioning, deprecation, and backwards-compatible evolution</li>
+          <ul>
+            <li>Consumers turn a decision into a commitment</li>
+          </ul>
+          <li>The GenAI divide is a new driver of an old architectural problem</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="agent-conclusions">
+      <title>Conclusions</title>
+      <slide id="ai-minimalism">
+        <title>As Little Runtime AI As Possible</title>
+        <ul>
+          <li>GenAI is just another way to get something done</li>
+          <li>Make deliberate choices when to use GenAI</li>
+          <li>Keep the line between the <q>two realms</q> visible and movable</li>
+        </ul>
+      </slide>
+      <slide id="agent-thanks">
         <title>Thank You!</title>
         <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
         <ul>
