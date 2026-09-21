@@ -48,6 +48,36 @@
         <img src="openness-ladder.png" class="fullsize"/>
       </slide>
     </part>
+    <part id="openness-perspectives">
+      <title>New Openness Perspectives</title>
+      <slide id="ai-changes">
+        <title>AI Amplifies Openness</title>
+        <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
+        <ul>
+          <li><link href="coding-agents"/> are used at design time (writing code)</li>
+          <li><link href="business-agents"/> are used at runtime (replacing code)</li>
+          <li>Both can be combined (agents creating agentic systems)</li>
+        </ul>
+      </slide>
+      <slide id="coding-agents">
+        <title>Coding Agents</title>
+        <ul>
+          <li>Reading and adapting code has become cheaper</li>
+          <li><em>Open Source</em> allows to tweak products</li>
+          <li><em>Open Interfaces</em> allows to integrate products</li>
+          <li>The combo (source+interfaces) compounds the value of openness</li>
+        </ul>
+      </slide>
+      <slide id="business-agents">
+        <title>Business Agents</title>
+        <ul>
+          <li>The future a mix of deterministic and probabilistic code</li>
+          <li><em>Open Interfaces</em> help to architect flexible systems</li>
+          <li><em>Open Weights</em> help to adapt probabilistic code</li>
+          <li>The combo (interfaces+weights) compounds the value of openness</li>
+        </ul>
+      </slide>
+    </part>
     <part id="conclusions">
       <title>Conclusions</title>
       <slide id="agent-thanks">
