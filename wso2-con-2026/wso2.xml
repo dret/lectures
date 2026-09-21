@@ -58,7 +58,7 @@
       </slide>
     </part>
     <part id="openness-perspectives">
-      <title>New Openness Perspectives</title>
+      <title>Openness Perspectives</title>
       <slide id="ai-amplifies-openness">
         <title>AI Amplifies Openness</title>
         <img src="robot.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; "/>
@@ -73,7 +73,7 @@
         <ul>
           <li>Reading and adapting code has become cheaper</li>
           <li><em>Open Source</em> allows to tweak products</li>
-          <li><em>Open Interfaces</em> allows to integrate products</li>
+          <li><em>Open Interfaces</em> allow to integrate products</li>
           <li>The combo (source+interfaces) creates compounding value</li>
         </ul>
       </slide>
@@ -87,6 +87,33 @@
         </ul>
       </slide>
     </part>
+    <part id="openness-ai">
+      <title>Openness &amp; AI</title>
+      <slide id="ai-gateways">
+        <title>AI Gateways</title>
+        <ul>
+          <li>Manage <em>shadow AI</em> and make consumption visible and manageable</li>
+          <li>Add filters and controls as necessary</li>
+          <li>Necessary component for using and scaling AI responsibly</li>
+        </ul>
+      </slide>
+      <slide id="open-models">
+        <title>Open Models</title>
+        <ul>
+          <li>Reduce token cost by running open models <q>locally</q></li>
+          <li>Improve sovereignty by keeping data under your control</li>
+          <li>Better model utilization by mixing and tweaking models</li>
+        </ul>
+      </slide>
+      <slide id="composability">
+        <title>Composability &amp; AI</title>
+        <ul>
+          <li>As little AI as possible and as much AI as necessary</li>
+          <li>Treat AI as an implementation detail of a specific capability</li>
+          <li>Use clean and stable interfaces to expose capabilities and data</li>
+        </ul>
+      </slide>
+    </part>
     <part id="conclusions">
       <title>Conclusions</title>
       <slide id="ai-speed">
@@ -97,6 +124,13 @@
           <li>An increasing focus on smaller and tweakable models</li>
           <li>A new way of modularization (deterministic/probabilistic)</li>
           <li>Analyzing and tweaking code becomes more achievable</li>
+        </ul>
+      </slide>
+      <slide id="monday">
+        <title>Monday Tasks</title>
+        <ul>
+          <li>Make AI consumption part of your API governance</li>
+          <li>Make SLMs and local models part of your strategy</li>
         </ul>
       </slide>
       <slide id="agent-thanks">
