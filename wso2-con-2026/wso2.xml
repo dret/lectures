@@ -59,28 +59,33 @@
     </part>
     <part id="openness-diversity">
       <title>A More Diverse Model World</title>
-      <slide id="ai-gateways">
-        <title>AI Gateways</title>
+      <slide id="open-models">
+        <title>Not Every Task Needs the Frontier</title>
+        <img src="eierlegende-wollmilchsau.jpg" title="Eierlegende Wollmilchsau" href="https://de.wikipedia.org/wiki/Eierlegende_Wollmilchsau" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
-          <li>Manage <em>shadow AI</em> and make consumption visible and manageable</li>
-          <li>Add filters and controls as necessary</li>
-          <li>Necessary component for using and scaling AI responsibly</li>
+          <li>Open models now lag the frontier by about four months</li>
+          <li>Most (business) agent tasks never needed a frontier model</li>
+          <li>Running models locally changes cost and data exposure</li>
+          <li>Mixing and tweaking models becomes a real option</li>
         </ul>
       </slide>
-      <slide id="open-models">
-        <title>Open Models</title>
+      <slide id="ai-gateways">
+        <title>Many Models, One Interface</title>
+        <img src="wso2-ai-gateway.png" title="AI Gateway" href="https://wso2.com/library/blogs/what-is-an-ai-gateway/" style="float: right ; width : 40% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
-          <li>Reduce token cost by running open models <q>locally</q></li>
-          <li>Improve sovereignty by keeping data under your control</li>
-          <li>Better model utilization by mixing and tweaking models</li>
+          <li>A portfolio of models replaces picking one winner</li>
+          <li>A gateway is the interface to the model layer</li>
+          <li>Models can be switched without touching applications</li>
+          <li>Controls, limits, and monitoring end up in one place</li>
         </ul>
       </slide>
       <slide id="composability">
-        <title>Composability &amp; AI</title>
+        <title>AI Is an Implementation Detail</title>
+        <img src="lego-bricks.png" title="Lego Bricks" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
           <li>As little AI as possible and as much AI as necessary</li>
-          <li>Treat AI as an implementation detail of a specific capability</li>
-          <li>Use clean and stable interfaces to expose capabilities and data</li>
+          <li>AI is an implementation detail of a capability</li>
+          <li>Stable interfaces keep the capability separate from its implementation</li>
         </ul>
       </slide>
     </part>
