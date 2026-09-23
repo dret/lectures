@@ -115,6 +115,18 @@
           </ul>
         </ul>
       </slide>
+      <slide id="humans-tolerate">
+        <title>Humans Tolerate, Machines Cannot</title>
+        <img src="api-ai-scorecard.png" style="float: right ; height : 80% ; margin : 0% 0% 0% 0% ; " class="shadow"/>
+        <ul>
+          <li>No clear indications when to (not) use</li>
+          <li>Vague/minimal descriptions of behavior</li>
+          <li>Inconsistent naming</li>
+          <li>Missing authentication info</li>
+          <li>Missing examples</li>
+          <li>Missing or unhelpful error messages</li>
+        </ul>
+      </slide>
       <slide id="mcp-washing">
         <title>A Thin Layer, Not a Fat One</title>
         <img src="mcp-washing.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; "/>
