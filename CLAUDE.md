@@ -74,3 +74,23 @@ Images and listings are integral to slide artwork and must travel with the slide
   W3C validator icons (`vcss.png`, `vxhtml10.png`), and similar page furniture.
   An image that looks unused from the XML may still be referenced from `index.html`.
   Grep every `.html` in the folder before flagging any image as an orphan.
+
+### PDF Naming
+
+Slide PDFs get downloaded, mailed around, and archived outside the repo, so
+the filename has to identify the deck on its own. Two cases:
+
+- **One presentation in the folder:** name the PDF after the folder, e.g.
+  `wso2-con-2026/wso2-con-2026.pdf`. The XML basename is not used, so
+  `wso2.xml` still produces `wso2-con-2026.pdf`.
+- **Several presentations in the folder:** name each PDF after its
+  presentation, matching the generated HTML file, e.g.
+  `webinar-2026/openclaw-readiness.pdf` for the presentation with
+  `id="openclaw-readiness"`.
+- Generic names such as `slides.pdf` are wrong under both rules. A few older
+  ones may survive; rename them when the folder is being touched anyway.
+- Folders from 2013-2019 hold handouts, exercises, and third-party documents
+  rather than slide exports. This convention does not apply to them.
+- **Renaming a published PDF breaks existing links** to the online versions on
+  dret.net, so treat a rename as a deliberate decision rather than a sweep.
+- Aspirational: every presentation should eventually have a PDF.
