@@ -101,6 +101,20 @@
     </part>
     <part id="pluggability">
       <title>AI Boosts Pluggability</title>
+      <slide id="byoa">
+        <title>BYOA: Bring Your Own Agent</title>
+        <img src="byo.png" title="Bring Your Own" href="https://en.wikipedia.org/wiki/BYOB" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Agents consume your APIs whether you planned for it or not</li>
+          <li>APIs were typically consumed by developers</li>
+          <li>Developers write code that <em>often fills DX gaps</em></li>
+          <li>LLMs have more limited context than developers</li>
+          <ul>
+            <li><em>Coding agents</em> shouldn't depend on developers selecting APIs</li>
+            <li><em>Business agents</em> need to fully <q>understand</q> APIs</li>
+          </ul>
+        </ul>
+      </slide>
       <slide id="mcp-washing">
         <title>A Thin Layer, Not a Fat One</title>
         <img src="mcp-washing.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; "/>
