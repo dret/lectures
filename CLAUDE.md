@@ -75,22 +75,29 @@ Images and listings are integral to slide artwork and must travel with the slide
   An image that looks unused from the XML may still be referenced from `index.html`.
   Grep every `.html` in the folder before flagging any image as an orphan.
 
-### PDF Naming
+### Asset Naming
 
-Slide PDFs get downloaded, mailed around, and archived outside the repo, so
-the filename has to identify the deck on its own. Two cases:
+Slide PDFs, transcripts, and any other file produced per presentation all
+follow one rule, so a name still identifies the file once it has been
+downloaded, mailed around, or archived outside the repo:
 
-- **One presentation in the folder:** name the PDF after the folder, e.g.
-  `wso2-con-2026/wso2-con-2026.pdf`. The XML basename is not used, so
-  `wso2.xml` still produces `wso2-con-2026.pdf`.
-- **Several presentations in the folder:** name each PDF after its
+- **One presentation in the folder:** name the asset after the folder, e.g.
+  `wso2-con-2026/wso2-con-2026.pdf` and `sag-2025/sag-2025.txt`. The XML
+  basename is not used, so `wso2.xml` still produces `wso2-con-2026.pdf`.
+- **Several presentations in the folder:** name each asset after its
   presentation, matching the generated HTML file, e.g.
-  `webinar-2026/openclaw-readiness.pdf` for the presentation with
-  `id="openclaw-readiness"`.
-- Generic names such as `slides.pdf` are wrong under both rules. A few older
-  ones may survive; rename them when the folder is being touched anyway.
-- Folders from 2013-2019 hold handouts, exercises, and third-party documents
-  rather than slide exports. This convention does not apply to them.
-- **Renaming a published PDF breaks existing links** to the online versions on
-  dret.net, so treat a rename as a deliberate decision rather than a sweep.
+  `webinar-2026/openclaw-readiness.pdf` and
+  `api-days-india-2026/composable-ai.txt`.
+- **The extension carries the asset type**, so there are no `-transcript` or
+  `-slides` suffixes: `.pdf` is the slide export, `.txt` is the transcript.
+- **New asset types follow the same rule.** Keep naming consistent across
+  assets rather than inventing a scheme per type.
+- Generic names such as `slides.pdf` or `transcript.txt` are wrong under both
+  rules. A few older ones may survive; rename them when the folder is being
+  touched anyway.
+- Folders from 2013-2019 hold handouts, exercises, course material, and
+  third-party documents rather than per-presentation assets. This convention
+  does not apply to them.
+- **Renaming a published asset breaks existing links** to the online versions
+  on dret.net, so treat a rename as a deliberate decision rather than a sweep.
 - Aspirational: every presentation should eventually have a PDF.
