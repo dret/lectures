@@ -46,7 +46,7 @@
       <slide id="ai-success">
         <title>AI Success Is Not About AI</title>
         <img src="cover-state-of-ai-in-business-2025.png" href="https://nanda.media.mit.edu/ai_report_2025.pdf" title='Aditya Challapally, Chris Pease, Ramesh Raskar, and Pradyumna Chari, "The GenAI Divide: State of AI in Business 2025", MIT NANDA, July 2025' style=" height : 70% ; float: left ; margin : 0% 4% 4% 4% ; " class="shadow" />
-        <img src="cover-state-of-ai-2025.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Alex Singla, Alexander Sukharevsky, Lareina Yee, and Michael Chui, "The state of AI in 2025: Agents, innovation, and transformation", McKinsey, November 2025' style=" height : 70% ; margin : 0% 4% 4% 4% ; " class="shadow" />
+        <img src="cover-state-of-ai-2026.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='Dan Tinkoff, Lieven Van der Veken, and Michael Chui, "The state of AI in 2026: On the road to ROI", McKinsey, August 2026' style=" height : 70% ; margin : 0% 4% 4% 4% ; " class="shadow" />
       </slide>
       <slide id="ai-integration">
         <title>AI Integration Is the New Moat</title>
@@ -81,6 +81,7 @@
           <li>Most (business) agent tasks never needed a frontier model</li>
           <li>Running models locally changes cost and data exposure</li>
           <li>Mixing and tweaking models becomes a real option</li>
+          <li>Case in point: <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev">Jev</a> replaces RLHF with RLCD</li>
         </ul>
       </slide>
       <slide id="ai-gateways">
@@ -136,7 +137,7 @@
         </ul>
       </slide>
       <slide id="mcp-washing">
-        <title>A Thin Layer, Not a Fat One</title>
+        <title>MCP-Washing</title>
         <img src="mcp-washing.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; "/>
         <ul>
           <li>Skip the API work → jump to MCP → call it <q>AI-readiness</q></li>
