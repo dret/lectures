@@ -82,12 +82,12 @@ follow one rule, so a name still identifies the file once it has been
 downloaded, mailed around, or archived outside the repo:
 
 - **One presentation in the folder:** name the asset after the folder, e.g.
-  `wso2-con-2026/wso2-con-2026.pdf` and `sag-2025/sag-2025.txt`. The XML
+  `wso2-con-2026/wso2-con-2026.pdf` and `sag-2025/sag-2025.md`. The XML
   basename is not used, so `wso2.xml` still produces `wso2-con-2026.pdf`.
 - **Several presentations in the folder:** name each asset after its
   presentation, matching the generated HTML file, e.g.
   `webinar-2026/openclaw-readiness.pdf` and
-  `api-days-india-2026/composable-ai.txt`.
+  `api-days-india-2026/composable-ai.md`.
 - **The extension carries the asset type**, so there are no `-transcript` or
   `-slides` suffixes: `.pdf` is the slide export, `.md` is the transcript.
 - Transcripts are Markdown, with the talk title as `#`, the event and date as

@@ -1,8 +1,8 @@
-Composable Architecture for AI Systems: APIs, MCP, Skills, Sub-Agents, and Workflows
+# Composable Architecture for AI Systems: APIs, MCP, Skills, Sub-Agents, and Workflows
 
-API Days India 2026, Bengaluru, August 19, 2026
+## API Days India 2026, Bengaluru, August 19, 2026
 
-Erik Wilde
+### Erik Wilde
 
 Transcript of the delivered talk, cleaned up from the YouTube auto-transcript: https://www.youtube.com/watch?v=nhl2itIj3EQ
 Filler words and transcription errors removed; wording otherwise left as spoken.
@@ -312,7 +312,7 @@ regularly post about those things. It really kind of keeps me awake at night. An
 come and join the OpenAPI track tomorrow, it's going on all day in this room. Thank you.
 
 
-Q&A
+## Q&A
 
 Q: I have known you for years on LinkedIn, very happy to see you and hear you in person. I
 think the second-last slide said something like "the GenAI divide is a new driver of an old
