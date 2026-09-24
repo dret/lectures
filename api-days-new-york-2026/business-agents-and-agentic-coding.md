@@ -18,7 +18,7 @@ people say, hey, AI is a thing. Maybe we should use that for business stuff. And
 interesting to just think about what are actually the differences between those two worlds?
 
 What are the commonalities and how should we approach that? Just a little bit about myself. So
-my name is Erik Wilde. I'm the head of enterprise strategy at agentic.
+my name is Erik Wilde. I'm the head of enterprise strategy at Jentic.
 
 So we are a startup working in the space of agentic technology. So our goal is to build a
 platform that agents can consume, which in itself then is based on APIs. So that's where we
@@ -91,7 +91,7 @@ But they both need those access. And we do see that business agents are arriving
 Sometimes not quite at the pace maybe that people are predicting it, but they are. And the
 question then is, would it make sense to have a more unified view of those two things? Because
 in a lot of organizations, you see that there is on the one hand a bonus point when you
-recognize anybody recognizing that album cover? Sorry? Very close. Gary Neumann.
+recognize anybody recognizing that album cover? Sorry? Very close. Gary Numan.
 
 So actually the album is called The Pleasure Principle, but I hacked it. So the idea behind
 platform engineering, right, it has been around for quite a while and the The idea has always
@@ -192,7 +192,7 @@ investing a lot of effort into building MCP stuff. And in my mind, I don't think
 idea. I think it would be a much better investment to say, let's build good APIs and then
 deliver those through MCP, right?
 
-So keep the MCP layer really thin, but instead build a good MCP layer. Because, for example, if
+So keep the MCP layer really thin, but instead build a good API layer. Because, for example, if
 you play around with something like OpenClaw, OpenClaw doesn't really like MCP. OpenClaw likes
 APIs, right? So if you have a better API layer, it's more likely that a lot of consumers can
 benefit from it.
