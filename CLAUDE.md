@@ -89,7 +89,9 @@ downloaded, mailed around, or archived outside the repo:
   `webinar-2026/openclaw-readiness.pdf` and
   `api-days-india-2026/composable-ai.txt`.
 - **The extension carries the asset type**, so there are no `-transcript` or
-  `-slides` suffixes: `.pdf` is the slide export, `.txt` is the transcript.
+  `-slides` suffixes: `.pdf` is the slide export, `.md` is the transcript.
+- Transcripts are Markdown, with the talk title as `#`, the event and date as
+  `##`, and the speaker as `###`, followed by the transcript in paragraphs.
 - **New asset types follow the same rule.** Keep naming consistent across
   assets rather than inventing a scheme per type.
 - Generic names such as `slides.pdf` or `transcript.txt` are wrong under both
