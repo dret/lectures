@@ -122,35 +122,6 @@
           <li>The LLM might still get the answer wrong</li>
         </ul>
       </slide>
-      <slide id="pitch-vs-reality">
-        <title>AI All The Things?</title>
-        <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
-          <tr>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Perfect Vision</th>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Current Reality</th>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
-              <ul>
-                <li>One agent, one model, all tasks</li>
-                <li>Always gets the right answer</li>
-                <li>Autonomous, self-directing, self-correcting</li>
-                <li>No human engineering required</li>
-                <li><q>Just describe what you want</q> and trust it</li>
-              </ul>
-            </td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
-              <ul>
-                <li>Same prompt returns different answers</li>
-                <li>Behavior drift on model updates</li>
-                <li>Most business logic is deterministic</li>
-                <li>AI earns its keep on judgment tasks</li>
-                <li>Reliability = clean cuts between the two</li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </slide>
       <slide id="design-vs-runtime">
         <title>AI at Design Time! AI at Runtime?</title>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
@@ -295,6 +266,7 @@
       <slide id="choice-spectrum">
         <title>How Much Choice Stays with the Model?</title>
         <img src="choice-spectrum.svg" class="fullsize"/>
+        <p style="text-align: center;">A model built for decisions, not conversation: <a href="https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/">Jev</a></p>
       </slide>
       <slide id="mcp">
         <title>Model Context Protocol (MCP)</title>
@@ -380,6 +352,7 @@
             <li>A skill gives them a capability, with no promise about where on the range it sits</li>
           </ul>
           <li>Skills are good starting points but not very good as stable components</li>
+          <li>Consumers arrive with their own agents: <a href="https://ai.meta.com/muse/">Meta Muse</a> takes your API and builds the integration</li>
         </ul>
       </slide>
       <slide id="publishing-costs-revisability">
