@@ -241,24 +241,24 @@
         <title>What Each Realm Costs You</title>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
           <tr>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Probabilistic</th>
             <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Deterministic</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ; width : 50% ;">Probabilistic</th>
           </tr>
           <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
-              <ul>
-                <li>You delegate judgment</li>
-                <li>You give up repeatability</li>
-                <li>The uncertainty is in the answer</li>
-                <li>Managed with evals: statistical, after the fact</li>
-              </ul>
-            </td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
               <ul>
                 <li>You specify everything yourself</li>
                 <li>You give up adaptability</li>
                 <li>The uncertainty is in the cases you did not anticipate</li>
                 <li>Managed with tests: exhaustive, before the fact</li>
+              </ul>
+            </td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ; vertical-align : top ;">
+              <ul>
+                <li>You delegate judgment</li>
+                <li>You give up repeatability</li>
+                <li>The uncertainty is in the answer</li>
+                <li>Managed with evals: statistical, after the fact</li>
               </ul>
             </td>
           </tr>
