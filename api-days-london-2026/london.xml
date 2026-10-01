@@ -124,6 +124,7 @@
           <li>CPU: One deterministic instruction</li>
           <li>LLM: Trillions of operations for probabilistic inference</li>
           <li>The LLM might still get the answer wrong</li>
+          <p style="text-align: center;">New data point in the spectrum: <a href="https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/">Jev</a></p>
         </ul>
       </slide>
       <slide id="design-vs-runtime">
@@ -270,7 +271,6 @@
       <slide id="choice-spectrum">
         <title>How Much Choice Stays with the Model?</title>
         <img src="choice-spectrum.svg" class="fullsize"/>
-        <p style="text-align: center;">A model built for decisions, not conversation: <a href="https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/">Jev</a></p>
       </slide>
       <slide id="mcp">
         <title>Model Context Protocol (MCP)</title>
@@ -380,6 +380,7 @@
           <li>GenAI is just another way to get something done</li>
           <li>Make deliberate choices when to use GenAI</li>
           <li>Keep the line between the <q>two realms</q> visible and movable</li>
+          <li>We may see other options than code vs. GenAI</li>
         </ul>
       </slide>
       <slide id="agent-thanks">
