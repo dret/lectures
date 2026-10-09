@@ -50,12 +50,12 @@
   <affiliation><a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></affiliation>
   <date short="2026-11-20">November 20, 2026</date>
   <copyright>2026 Erik Wilde</copyright>
-  <presentation id="masterclass-intro">
-    <title short="Introduction">Masterclass: Welcome, Introduction, and Logistics</title>
+  <presentation id="intro">
+    <title short="Introduction">Workshop: Welcome, Introduction, and Logistics</title>
     <author>Frank Kilcommins &amp; Erik Wilde</author>
-    <toc class="abstract">AI agents are starting to call APIs autonomously, chain services, and generate integrations that were never explicitly designed by developers. Most API ecosystems are not built for this kind of automated usage, which can lead to unpredictable behavior, unsafe workflows, and loss of control. In this hands-on masterclass, you will explore how AI agents interact with APIs and where automation introduces architectural risks, led by two OpenAPI Ambassadors with deep expertise in API design and governance.</toc>
-    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Masterclass materials (GitHub)</a></toc>
-    <slide id="masterclass-intro-qr-code-start">
+    <toc class="abstract">AI agents are starting to call APIs autonomously, chain services, and generate integrations that were never explicitly designed by developers. Most API ecosystems are not built for this kind of automated usage, which can lead to unpredictable behavior, unsafe workflows, and loss of control. In this hands-on workshop, you will explore how AI agents interact with APIs and where automation introduces architectural risks, led by two OpenAPI Ambassadors with deep expertise in API design and governance.</toc>
+    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Workshop materials (GitHub)</a></toc>
+    <slide id="workshop-intro-qr-code-start">
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-berlin-2026.png" href="https://github.com/dret/building-ai-ready-apis-berlin-2026" class="fullsize"/>
       <p style="text-align: center;"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026"><code>github.com/dret/building-ai-ready-apis-berlin-2026</code></a></p>
@@ -78,7 +78,7 @@
         <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
       </ul>
     </slide>
-    <slide id="masterclass-outcomes">
+    <slide id="workshop-outcomes">
       <title>What You Will Be Able to Do</title>
       <ul>
         <li>Design OpenAPI specifications that stay predictable under automated consumption</li>
@@ -89,7 +89,7 @@
         <li>Plan an incremental strategy to improve AI-readiness over time</li>
       </ul>
     </slide>
-    <slide id="masterclass-intro-qr-code">
+    <slide id="workshop-intro-qr-code">
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-berlin-2026.png" href="https://github.com/dret/building-ai-ready-apis-berlin-2026" class="fullsize"/>
       <p style="text-align: center;"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026"><code>github.com/dret/building-ai-ready-apis-berlin-2026</code></a></p>
@@ -99,7 +99,7 @@
     <title short="AI-Driven API Usage">Module 1: Understanding AI-Driven API Usage</title>
     <author>Erik Wilde</author>
     <toc class="abstract">How AI agents interact with APIs in modern systems: autonomous endpoint calls, service chaining, and generated integrations. Why traditional API governance models break under automated usage, and the architectural risks that follow. Hands-on exercise: map real-world AI interaction patterns onto your own APIs.</toc>
-    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Masterclass materials (GitHub)</a></toc>
+    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Workshop materials (GitHub)</a></toc>
     <part id="why-this-matters">
       <title>Why This Matters</title>
       <slide id="agents-call-apis">
@@ -197,7 +197,7 @@
     <author>Frank Kilcommins &amp; Erik Wilde</author>
     <copyright>2026 Frank Kilcommins &amp; Erik Wilde</copyright>
     <toc class="abstract">Agent skills are reusable, versioned instructions that teach an AI agent how to handle a specific task — consistently, without re-prompting. This session covers what skills are, how agents load and use them, how they differ from plain prompts and MCP tools, and why they matter for reproducible and maintainable API governance work. Followed by a live demo of the jentic-api-scorecard skill.</toc>
-    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Masterclass materials (GitHub)</a></toc>
+    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Workshop materials (GitHub)</a></toc>
     <part id="why-skills">
       <title>Why Skills?</title>
       <slide id="without-skills">
@@ -326,7 +326,7 @@ Step 2: ...</pre>
     <part id="reproducibility-and-today">
       <title>Today's Skills</title>
       <slide id="skills-today-overview">
-        <title>The Three Skills in This Masterclass</title>
+        <title>The Three Skills in This Workshop</title>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 95% ; margin : 0 2.5% ;">
           <tr>
             <th style="border: 2px solid #000000 ; padding: 10px 15px ; background: #eeeeee ;">Skill</th>
@@ -368,7 +368,7 @@ Step 2: ...</pre>
     <title short="Governed API Specifications with OpenAPI">Module 2: Designing Governed API Specifications with OpenAPI</title>
     <author>Erik Wilde</author>
     <toc class="abstract">Using OpenAPI as a machine-readable contract for APIs consumed by automated systems. Clarity, predictability, and structure so agents interpret APIs without ambiguity. Hands-on exercise: review and refine an existing OpenAPI specification for resilience under automated usage.</toc>
-    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Masterclass materials (GitHub)</a></toc>
+    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Workshop materials (GitHub)</a></toc>
     <part id="value-description-formats">
       <title>What are API Description Formats</title>
       <slide id="api-and-descriptions">
@@ -496,7 +496,7 @@ Step 2: ...</pre>
     <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
     <copyright>2026 Frank Kilcommins</copyright>
     <toc class="abstract">Enforcing governance at scale with OpenAPI Overlay: consistent policy layers across specifications without modifying the original contracts. Overlay structure and syntax, and rules for security, usage constraints, and compliance. Hands-on exercise: build an Overlay that applies governance policies to an existing API.</toc>
-    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Masterclass materials (GitHub)</a></toc>
+    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Workshop materials (GitHub)</a></toc>
     <part id="what-is-overlay">
 			<title>What is the Overlay Specification?</title>
       <slide id="overlay-what-is-it">
@@ -709,7 +709,7 @@ paths:
     <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
     <copyright>2026 Frank Kilcommins</copyright>
     <toc class="abstract">Why deterministic workflows matter when AI agents orchestrate multiple APIs, and how Arazzo models those interactions. Arazzo structure, and how to define safe repeatable multi-step processes across services. Hands-on exercise: design a multi-API workflow with predictable, governed interactions.</toc>
-    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Masterclass materials (GitHub)</a></toc>
+    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Workshop materials (GitHub)</a></toc>
 		<part id="what-is-arazzo">
 			<title>What is the Arazzo Specification?</title>
 			<slide id="what-is-arazzo">
@@ -1005,14 +1005,13 @@ paths:
     <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
     <copyright>2026 Frank Kilcommins</copyright>
     <toc class="abstract">Platform-level design: guardrails, governance patterns, and control mechanisms that keep APIs safe and predictable under agent usage. Hands-on exercise: evaluate a sample API platform, identify governance gaps, and propose improvements to its AI-readiness.</toc>
-    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Masterclass materials (GitHub)</a></toc>
+    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Workshop materials (GitHub)</a></toc>
     <part id="apis-and-ai">
       <title>Are APIs AI-Ready?</title>
       <slide id="ai-integration">
         <title>AI Integration is the New Moat</title>
         <img src="AI-Integration-the-new-Moat.png" href="https://www.oreilly.com/radar/integration-is-the-new-moat/" title='Tim O Reilly, Oct 2025' class="fullsize-shadow" />
-        <p style="text-align: center; font-size: .3em;">Tim O’Reilly  "AI Integration Is the New Moat",O’REILLY, Oct 2025
-https://www.oreilly.com/radar/integration-is-the-new-moat/ </p>
+        <p style="text-align: center; font-size: .3em;">Tim O’Reilly, "AI Integration Is the New Moat", O’Reilly, Oct 2025, https://www.oreilly.com/radar/integration-is-the-new-moat/</p>
       </slide>
       <slide id="api-for-humans">
         <title>Most APIs were Designed for Humans!</title>
@@ -1427,7 +1426,7 @@ Measures robustness and correctness of authentication mechanisms declared by the
     <title short="Building APIs in the Age of AI">Module 6: Building APIs in the Age of AI</title>
     <author>Erik Wilde</author>
     <toc class="abstract">Everything so far has been about AI at runtime, and all the caution that requires. This module flips to design time, where the caution comes off. The API lifecycle has always had tooling at every stage, and AI is now assisting at each of them. Faster loops mean more iterations, and more iterations is how API quality actually improves.</toc>
-    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Masterclass materials (GitHub)</a></toc>
+    <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Workshop materials (GitHub)</a></toc>
     <part id="design-time">
       <title>Flipping to Design Time</title>
     <slide id="design-time-flip">
