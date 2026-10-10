@@ -41,6 +41,42 @@
       </ul>
       <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 40% ; margin : 2% 0% 0% 10% "/>
     </slide>
+    <slide id="llm-hammer">
+      <title>A Trillion Operations for 16'968 ÷ 404?</title>
+      <img src="llm-hammer.png" title="Maslow's LLM Hammer" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+      <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
+        <tr>
+          <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;"></th>
+          <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">CPU Computation</th>
+          <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">LLM Inference</th>
+        </tr>
+        <tr>
+          <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Elapsed time</td>
+          <td style="border: 2px solid #000000 ; padding: 10px 20px ;">a few nanoseconds</td>
+          <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~0.1–2 seconds</td>
+        </tr>
+        <tr>
+          <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Computation</td>
+          <td style="border: 2px solid #000000 ; padding: 10px 20px ;">one integer division</td>
+          <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~10<sup>11</sup>–10<sup>13</sup> FLOPs</td>
+        </tr>
+        <tr>
+          <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Energy</td>
+          <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~pJ–nJ</td>
+          <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~1–100 J</td>
+        </tr>
+        <tr>
+          <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Correctness</td>
+          <td style="border: 2px solid #000000 ; padding: 10px 20px ;">exact</td>
+          <td style="border: 2px solid #000000 ; padding: 10px 20px ;">not guaranteed</td>
+        </tr>
+      </table>
+      <ul>
+        <li>CPU: One deterministic instruction</li>
+        <li>LLM: Trillions of operations for probabilistic inference</li>
+        <li>The LLM might still get the answer wrong</li>
+      </ul>
+    </slide>
     <slide id="before-ai">
       <title>Before AI</title>
       <ul>
