@@ -363,7 +363,7 @@ Step 2: ...</pre>
         <p style="text-align: center ; font-size: 1.5em ;"><strong>[ Quick Live Demo ]</strong></p>
       </slide>
     </part>
-  </presentation> 
+  </presentation>
   <presentation id="openapi">
     <title short="Governed API Specifications with OpenAPI">Module 2: Designing Governed API Specifications with OpenAPI</title>
     <author>Erik Wilde</author>
@@ -498,7 +498,7 @@ Step 2: ...</pre>
     <toc class="abstract">Enforcing governance at scale with OpenAPI Overlay: consistent policy layers across specifications without modifying the original contracts. Overlay structure and syntax, and rules for security, usage constraints, and compliance. Hands-on exercise: build an Overlay that applies governance policies to an existing API.</toc>
     <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Workshop materials (GitHub)</a></toc>
     <part id="what-is-overlay">
-			<title>What is the Overlay Specification?</title>
+      <title>What is the Overlay Specification?</title>
       <slide id="overlay-what-is-it">
           <title>What is the OpenAPI Overlay Specification?</title>
           <ul>
@@ -508,7 +508,7 @@ Step 2: ...</pre>
               <li>The Overlay Specification is an official OAI standard (v1.1.0) designed to support cleaner API workflows and automation.</li>
               <li>Overlays allow changes to be applied incrementally, layered, and versioned independently of the base OpenAPI Document.</li>
           </ul>
-      </slide> 
+      </slide>
       <slide id="overlay-why-use-it">
           <title>Why Use Overlays?</title>
           <ul>
@@ -523,7 +523,7 @@ Step 2: ...</pre>
       </slide>
     </part>
     <part id="how-overlays-work">
-			<title>Overlay Specification Overview</title>
+      <title>Overlay Specification Overview</title>
         <slide id="overlay-spec-overview">
             <title>Overlay Specification Overview</title>
             <ul>
@@ -533,7 +533,7 @@ Step 2: ...</pre>
                 <li>Targets can point to any part of the OpenAPI document: paths, operations, parameters, descriptions, vendor extensions, security, metadata, etc.</li>
                 <li>Overlays are fully valid YAML/JSON documents and can be version-controlled and reused across pipelines.</li>
             </ul>
-        </slide>   
+        </slide>
         <slide id="overlay-basic-example">
             <title>Basic Overlay Example – Updating Descriptions</title>
             <ul>
@@ -611,7 +611,7 @@ paths:
       responses:
         200:
           description: OK
-                  </pre>        
+                  </pre>
                 </td>
                 <td>
                   <pre style="text-align: left;">
@@ -627,7 +627,7 @@ actions:
   - target: '$.paths["/items"]'
     remove: true
     description: 'moves the "items" path item to "new-items"'
-                  </pre>                    
+                  </pre>
                 </td>
                 <td>
                   <pre style="text-align: left;">
@@ -646,16 +646,16 @@ paths:
       responses:
         200:
           description: OK
-                  </pre>                    
+                  </pre>
                 </td>
               </tr>
 
               </tbody>
             </table>
-        </slide>        
+        </slide>
     </part>
     <part id="overlay-in-pipelines">
-			<title>Overlays in API Pipelines</title>
+      <title>Overlays in API Pipelines</title>
         <slide id="overlay-lifecycle-position">
           <title>Where Overlays Fit in the API Lifecycle</title>
           <ul>
@@ -696,7 +696,7 @@ paths:
                 </li>
             </ul>
         </slide>
-    </part>     
+    </part>
     <slide id="overlay-qr-code">
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-berlin-2026.png" href="https://github.com/dret/building-ai-ready-apis-berlin-2026" class="fullsize"/>
@@ -710,225 +710,225 @@ paths:
     <copyright>2026 Frank Kilcommins</copyright>
     <toc class="abstract">Why deterministic workflows matter when AI agents orchestrate multiple APIs, and how Arazzo models those interactions. Arazzo structure, and how to define safe repeatable multi-step processes across services. Hands-on exercise: design a multi-API workflow with predictable, governed interactions.</toc>
     <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Workshop materials (GitHub)</a></toc>
-		<part id="what-is-arazzo">
-			<title>What is the Arazzo Specification?</title>
-			<slide id="what-is-arazzo">
-				<title>What is the Arazzo Specification?</title>
-				<img src="arazzo_horizontal_color.png"  style="float: right ; width : 30%; margin : 0% 4% 4% 4% ;  "/>
-				<ul>
-					<li>The Arazzo Specification is a community-driven open specification within the <em>OpenAPI Initiative</em>, a Linux Foundation Project</li>
-					<li>Arazzo describes an approach to document use-case oriented workflows in a programmatically readable format</li>
-					<li>A <em>workflow</em> is a series of API calls which when woven together accomplish a specific task or goal or business objective</li>
-					<li>The human-readable nature improves the ability of API specifications to tell the story of the API(s) in a manner that can improve the consuming developer experience.</li>
-					<li>The machine-readable nature allows for intent orientated workflows to be discoverable and executable by AI agents, testing tools, documentation tools, and so on!</li>
-				</ul>
-			</slide>
-			<slide id="arazzo-use-cases">
-				<title>Dominant Use Cases</title>
-				<img src="arazzo_horizontal_color.png"  style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ;  "/>
-				<ul>
-					<li>Deterministic recipes for the use of APIs</li>
-					<ul>
-						<li>Make sense of large unwieldy API description</li>
-						<li>Bridge the gap where business flows span more than one API description</li>
-					</ul>
-					<li>Living API documentation and improved consumer developer experience (DX)</li>
-					<li>Assertable business value (machine readable end-to-end test semantics)</li>
-					<li>Targeted code generation tooling (think SDKs, MCP Servers) for APIs driven by use cases</li>
-					<li>Improved regulatory checks via assertable workflows</li>
-					<li>The AI potential for value orientated <em>repeatable</em> interaction with APIs</li>
-				</ul>
-			</slide>
-		</part>
-		<part id="specification-structure">
-			<title>Arazzo Specification Structure</title>
-			<slide id="arazzo-specification-structure">
-				<title>Arazzo Specification Structure</title>
-				<img src="Arazzo-Specification-1.0.1.png" class="fullsize" style="height: 75%" />
-			</slide>
-			<slide id="arazzo-info">
-				<title>Arazzo Specification: Info Object</title>
-				<img src="arazzo-1-info.png" class="fullsize" style="height: 75%" />
-			</slide>
-			<slide id="arazzo-info-example">
-				<title>Arazzo Specification: Info Object Example</title>
-				<img src="arazzo-1-info-example.png" class="fullsize-shadow" />
-			</slide>
-			<slide id="arazzo-source-descriptions">
-				<title>Arazzo Specification: Source Descriptions</title>
-				<img src="arazzo-2-source-descriptions.png" class="fullsize" style="height: 75%" />
-			</slide>
-			<slide id="arazzo-source-descriptions-example">
-				<title>Arazzo Specification: Source Descriptions Example</title>
-				<img src="arazzo-2-source-descriptions-example.png" class="fullsize-shadow" />
-			</slide>
-			<slide id="arazzo-workflows">
-				<title>Arazzo Specification: Workflows</title>
-				<img src="arazzo-3-workflows.png" class="fullsize" style="height: 75%" />
-			</slide>
-			<slide id="arazzo-workflows-example">
-				<title>Arazzo Specification: Workflows Example</title>
-				<img src="arazzo-3-workflows-example.png" class="fullsize-shadow" />
-			</slide>
-			<slide id="arazzo-inputs">
-				<title>Arazzo Specification: Inputs</title>
-				<img src="arazzo-4-inputs.png" class="fullsize" style="height: 75%" />
-			</slide>
-			<slide id="arazzo-inputs-example">
-				<title>Arazzo Specification: Inputs Example</title>
-				<img src="arazzo-4-inputs-example.png" class="fullsize-shadow" />
-			</slide>
-			<slide id="arazzo-steps">
-				<title>Arazzo Specification: Steps</title>
-				<img src="arazzo-5-steps.png" class="fullsize" style="height: 75%" />
-			</slide>
-			<slide id="arazzo-steps-example">
-				<title>Arazzo Specification: Steps Example</title>
-				<img src="arazzo-5-steps-example.png" class="fullsize-shadow" />
-			</slide>
-			<slide id="arazzo-parameters">
-				<title>Arazzo Specification: Parameters</title>
-				<img src="arazzo-6-parameters.png" class="fullsize" style="height: 75%" />
-			</slide>
-			<slide id="arazzo-parameters-example">
-				<title>Arazzo Specification: Parameters Example</title>
-				<img src="arazzo-6-parameters-example.png" class="fullsize-shadow" />
-			</slide>
-			<slide id="arazzo-failure-actions">
-				<title>Arazzo Specification: Failure Actions</title>
-				<img src="arazzo-7-failure-actions.png" class="fullsize" style="height: 75%" />
-			</slide>
-			<slide id="arazzo-failure-actions-example">
-				<title>Arazzo Specification: Failure Actions Example</title>
-				<img src="arazzo-7-failure-actions-example.png" class="fullsize-shadow" />
-			</slide>
-			<slide id="arazzo-success-actions">
-				<title>Arazzo Specification: Success Actions</title>
-				<img src="arazzo-8-success-actions.png" class="fullsize" style="height: 75%" />
-			</slide>
-			<slide id="arazzo-success-actions-example">
-				<title>Arazzo Specification: Success Actions Example</title>
-				<img src="arazzo-8-success-actions-example.png" class="fullsize-shadow" />
-			</slide>
-			<slide id="arazzo-step-outputs">
-				<title>Arazzo Specification: Step Outputs</title>
-				<img src="arazzo-9-step-outputs.png" class="fullsize" style="height: 75%" />
-			</slide>
-			<slide id="arazzo-step-outputs-example">
-				<title>Arazzo Specification: Step Outputs Example</title>
-				<img src="arazzo-9-step-outputs-example.png" class="fullsize-shadow" />
-			</slide>
-			<slide id="arazzo-workflow-outputs">
-				<title>Arazzo Specification: Workflow Outputs</title>
-				<img src="arazzo-10-workflow-outputs.png" class="fullsize" style="height: 75%" />
-			</slide>
-			<slide id="arazzo-workflow-outputs-example">
-				<title>Arazzo Specification: Workflow Outputs Example</title>
-				<img src="arazzo-10-workflow-outputs-example.png" class="fullsize-shadow" />
-			</slide>
-			<slide id="arazzo-components">
-				<title>Arazzo Specification: Components</title>
-				<img src="arazzo-11-components.png" class="fullsize" style="height: 75%" />
-			</slide>
-		</part>
-		<part id="1.1-updates">
-			<title>Arazzo Specification 1.1 Updates</title>
+    <part id="what-is-arazzo">
+      <title>What is the Arazzo Specification?</title>
+      <slide id="what-is-arazzo">
+        <title>What is the Arazzo Specification?</title>
+        <img src="arazzo_horizontal_color.png"  style="float: right ; width : 30%; margin : 0% 4% 4% 4% ;  "/>
+        <ul>
+          <li>The Arazzo Specification is a community-driven open specification within the <em>OpenAPI Initiative</em>, a Linux Foundation Project</li>
+          <li>Arazzo describes an approach to document use-case oriented workflows in a programmatically readable format</li>
+          <li>A <em>workflow</em> is a series of API calls which when woven together accomplish a specific task or goal or business objective</li>
+          <li>The human-readable nature improves the ability of API specifications to tell the story of the API(s) in a manner that can improve the consuming developer experience.</li>
+          <li>The machine-readable nature allows for intent orientated workflows to be discoverable and executable by AI agents, testing tools, documentation tools, and so on!</li>
+        </ul>
+      </slide>
+      <slide id="arazzo-use-cases">
+        <title>Dominant Use Cases</title>
+        <img src="arazzo_horizontal_color.png"  style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ;  "/>
+        <ul>
+          <li>Deterministic recipes for the use of APIs</li>
+          <ul>
+            <li>Make sense of large unwieldy API description</li>
+            <li>Bridge the gap where business flows span more than one API description</li>
+          </ul>
+          <li>Living API documentation and improved consumer developer experience (DX)</li>
+          <li>Assertable business value (machine readable end-to-end test semantics)</li>
+          <li>Targeted code generation tooling (think SDKs, MCP Servers) for APIs driven by use cases</li>
+          <li>Improved regulatory checks via assertable workflows</li>
+          <li>The AI potential for value orientated <em>repeatable</em> interaction with APIs</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="specification-structure">
+      <title>Arazzo Specification Structure</title>
+      <slide id="arazzo-specification-structure">
+        <title>Arazzo Specification Structure</title>
+        <img src="Arazzo-Specification-1.0.1.png" class="fullsize" style="height: 75%" />
+      </slide>
+      <slide id="arazzo-info">
+        <title>Arazzo Specification: Info Object</title>
+        <img src="arazzo-1-info.png" class="fullsize" style="height: 75%" />
+      </slide>
+      <slide id="arazzo-info-example">
+        <title>Arazzo Specification: Info Object Example</title>
+        <img src="arazzo-1-info-example.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="arazzo-source-descriptions">
+        <title>Arazzo Specification: Source Descriptions</title>
+        <img src="arazzo-2-source-descriptions.png" class="fullsize" style="height: 75%" />
+      </slide>
+      <slide id="arazzo-source-descriptions-example">
+        <title>Arazzo Specification: Source Descriptions Example</title>
+        <img src="arazzo-2-source-descriptions-example.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="arazzo-workflows">
+        <title>Arazzo Specification: Workflows</title>
+        <img src="arazzo-3-workflows.png" class="fullsize" style="height: 75%" />
+      </slide>
+      <slide id="arazzo-workflows-example">
+        <title>Arazzo Specification: Workflows Example</title>
+        <img src="arazzo-3-workflows-example.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="arazzo-inputs">
+        <title>Arazzo Specification: Inputs</title>
+        <img src="arazzo-4-inputs.png" class="fullsize" style="height: 75%" />
+      </slide>
+      <slide id="arazzo-inputs-example">
+        <title>Arazzo Specification: Inputs Example</title>
+        <img src="arazzo-4-inputs-example.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="arazzo-steps">
+        <title>Arazzo Specification: Steps</title>
+        <img src="arazzo-5-steps.png" class="fullsize" style="height: 75%" />
+      </slide>
+      <slide id="arazzo-steps-example">
+        <title>Arazzo Specification: Steps Example</title>
+        <img src="arazzo-5-steps-example.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="arazzo-parameters">
+        <title>Arazzo Specification: Parameters</title>
+        <img src="arazzo-6-parameters.png" class="fullsize" style="height: 75%" />
+      </slide>
+      <slide id="arazzo-parameters-example">
+        <title>Arazzo Specification: Parameters Example</title>
+        <img src="arazzo-6-parameters-example.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="arazzo-failure-actions">
+        <title>Arazzo Specification: Failure Actions</title>
+        <img src="arazzo-7-failure-actions.png" class="fullsize" style="height: 75%" />
+      </slide>
+      <slide id="arazzo-failure-actions-example">
+        <title>Arazzo Specification: Failure Actions Example</title>
+        <img src="arazzo-7-failure-actions-example.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="arazzo-success-actions">
+        <title>Arazzo Specification: Success Actions</title>
+        <img src="arazzo-8-success-actions.png" class="fullsize" style="height: 75%" />
+      </slide>
+      <slide id="arazzo-success-actions-example">
+        <title>Arazzo Specification: Success Actions Example</title>
+        <img src="arazzo-8-success-actions-example.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="arazzo-step-outputs">
+        <title>Arazzo Specification: Step Outputs</title>
+        <img src="arazzo-9-step-outputs.png" class="fullsize" style="height: 75%" />
+      </slide>
+      <slide id="arazzo-step-outputs-example">
+        <title>Arazzo Specification: Step Outputs Example</title>
+        <img src="arazzo-9-step-outputs-example.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="arazzo-workflow-outputs">
+        <title>Arazzo Specification: Workflow Outputs</title>
+        <img src="arazzo-10-workflow-outputs.png" class="fullsize" style="height: 75%" />
+      </slide>
+      <slide id="arazzo-workflow-outputs-example">
+        <title>Arazzo Specification: Workflow Outputs Example</title>
+        <img src="arazzo-10-workflow-outputs-example.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="arazzo-components">
+        <title>Arazzo Specification: Components</title>
+        <img src="arazzo-11-components.png" class="fullsize" style="height: 75%" />
+      </slide>
+    </part>
+    <part id="1.1-updates">
+      <title>Arazzo Specification 1.1 Updates</title>
       <slide id="arazzo-1.1-updates">
         <title>Arazzo Specification 1.1 - Just Released!</title>
         <img src="arazzo-1.1-release.png" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; " />
         <p><strong>What's new:</strong></p>
-				<ul>
-					<li>AsyncAPI support</li>
-					<li>Chained workflow execution</li>
-					<li>Advanced JSONPath / XPath selector support</li>
+        <ul>
+          <li>AsyncAPI support</li>
+          <li>Chained workflow execution</li>
+          <li>Advanced JSONPath / XPath selector support</li>
           <li>OpenAPI 3.2 alignment</li>
           <li>Precision improvements:</li>
-					<ul>
-						<li>Full ABNF grammar</li>
-						<li>Truthy/Falsy condition semantics</li>
+          <ul>
+            <li>Full ABNF grammar</li>
+            <li>Truthy/Falsy condition semantics</li>
             <li>And more!</li>
-					</ul>
-				</ul>  
-      </slide>      
+          </ul>
+        </ul>
+      </slide>
       <slide id="arazzo-1.1-asyncapi-support-1">
         <title>Arazzo 1.1 - AsyncAPI Support</title>
         <ul>
-					<li><a href="https://spec.openapis.org/arazzo/v1.1.0.html#source-description-object">Source Description Object</a> now supports the following document types:</li>
-					<ul>
-						<li><code>openapi</code></li>
+          <li><a href="https://spec.openapis.org/arazzo/v1.1.0.html#source-description-object">Source Description Object</a> now supports the following document types:</li>
+          <ul>
+            <li><code>openapi</code></li>
             <li><code>arazzo</code></li>
-						<li><code>asyncapi</code></li>
-					</ul>
-				</ul> 
-        <img src="Arazzo1.1-Include-AsyncAPI-Documents-in-Source-Descriptions.png" class="fullsize" style="height: 40%" /> 
-      </slide>  
+            <li><code>asyncapi</code></li>
+          </ul>
+        </ul>
+        <img src="Arazzo1.1-Include-AsyncAPI-Documents-in-Source-Descriptions.png" class="fullsize" style="height: 40%" />
+      </slide>
       <slide id="arazzo-1.1-asyncapi-support-2">
         <title>Arazzo 1.1 - AsyncAPI Support</title>
         <ul>
-					<li>Step Object references operations (or channels) described in AsyncAPI Document using <code>operationId</code> or <code>channelPath</code>.</li>
+          <li>Step Object references operations (or channels) described in AsyncAPI Document using <code>operationId</code> or <code>channelPath</code>.</li>
           <li>Async steps define an <code>action</code> (“send” or “receive”) indicating message flow intent.</li>
           <li>A <code>correlationId</code> in AsyncAPI links a request with its response, and must be in-sync with the AsyncAPI Document.</li>
           <li>A <code>timeout</code> sets the maximum number of milliseconds to wait for the step to complete before aborting and failing the step.</li>
-				</ul> 
-        <img src="Arazzo1.1-Async-Recieve-Step-with-specified-timeout.png" class="fullsize" style="height: 50%" /> 
-      </slide>   
+        </ul>
+        <img src="Arazzo1.1-Async-Recieve-Step-with-specified-timeout.png" class="fullsize" style="height: 50%" />
+      </slide>
       <slide id="arazzo-1.1-asyncapi-support-2">
         <title>Arazzo 1.1 - AsyncAPI Support</title>
         <ul>
-					<li>Step Object now has the ability to specify explicit dependencies.</li>
+          <li>Step Object now has the ability to specify explicit dependencies.</li>
           <li>These are a list of steps that MUST be completed before the current step can be executed. </li>
           <li><code>dependsOn</code> only establishes a prerequisite relationship for the current step and does not trigger execution of the referenced steps.</li>
-				</ul> 
-        <img src="Arazzo1.1-Async-Send-Step-with-specified-dependsOn.png" class="fullsize" style="height: 50%"/> 
-      </slide>          
+        </ul>
+        <img src="Arazzo1.1-Async-Send-Step-with-specified-dependsOn.png" class="fullsize" style="height: 50%"/>
+      </slide>
       <slide id="arazzo-1.1-chaining-workflow-execution">
         <title>Arazzo 1.1 - Chaining Workflows</title>
         <ul>
-					<li>Action Objects now fully support chaining workflows, and mapping workflow inputs using the <code>parameters</code> fixed field.</li>
-				</ul> 
-        <img src="Arazzo1.1-Chaining-Workflows-with-Action-Objects.png" class="fullsize" style="height: 65%"/> 
-      </slide>      
+          <li>Action Objects now fully support chaining workflows, and mapping workflow inputs using the <code>parameters</code> fixed field.</li>
+        </ul>
+        <img src="Arazzo1.1-Chaining-Workflows-with-Action-Objects.png" class="fullsize" style="height: 65%"/>
+      </slide>
       <slide id="arazzo-1.1-advanced-selector-support">
         <title>Arazzo 1.1 - Advanced Selector Support</title>
         <ul>
-					<li>A new <a href="https://spec.openapis.org/arazzo/v1.1.0.html#selector-object">Selector Object</a> which is usable across workflow outputs, step outputs, requestbody payloads, parameter values, payload replacement values.</li>
+          <li>A new <a href="https://spec.openapis.org/arazzo/v1.1.0.html#selector-object">Selector Object</a> which is usable across workflow outputs, step outputs, requestbody payloads, parameter values, payload replacement values.</li>
           <li>Enables fine-grained traversal and precise data selection from structured data such as JSON or XML, using a defined selector syntax such as <code>jsonpath</code>, <code>xpath</code>, or <code>jsonpointer</code>.</li>
           <ul>
-            <li>The <code>context</code> sets the root node for the selector.</li> 
+            <li>The <code>context</code> sets the root node for the selector.</li>
             <li>The <code>selector</code> specifies the expression.</li>
             <li>The <code>type</code> specifies the selector syntax.</li>
-          </ul>          
-				</ul> 
-        <img src="Arazzo1.1-Selector-Object-Usage-Example.png" class="fullsize" style="height: 40%"/> 
-      </slide>             
+          </ul>
+        </ul>
+        <img src="Arazzo1.1-Selector-Object-Usage-Example.png" class="fullsize" style="height: 40%"/>
+      </slide>
       <slide id="arazzo-1.1-selector-expression-types">
         <title>Arazzo 1.1 - Selector Expression Types</title>
         <ul>
-					<li>Overriding the default Selector Expression versions via the <a href="https://spec.openapis.org/arazzo/v1.1.0.html#expression-type-object">Expression Type Object</a> (renamed from Criterion Expression Type Object)</li>
+          <li>Overriding the default Selector Expression versions via the <a href="https://spec.openapis.org/arazzo/v1.1.0.html#expression-type-object">Expression Type Object</a> (renamed from Criterion Expression Type Object)</li>
           <ul>
-            <li>Specify the <code>type</code> and <code>version</code> for the selector expression to override default</li> 
-          </ul> 				
-        </ul> 
-        <img src="Arazzo1.1-Selector-Obj-combined-with-Expression-Type-Obj.png" class="fullsize" /> 
-      </slide>   
+            <li>Specify the <code>type</code> and <code>version</code> for the selector expression to override default</li>
+          </ul>
+        </ul>
+        <img src="Arazzo1.1-Selector-Obj-combined-with-Expression-Type-Obj.png" class="fullsize" />
+      </slide>
       <slide id="arazzo-1.1-selector-expression-defaults">
         <title>Arazzo 1.1 - Selector Expression Type Defaults</title>
-        <img src="Arazzo1.1-Selector-Expression-Defaults.png" class="fullsize" /> 
-      </slide>        
+        <img src="Arazzo1.1-Selector-Expression-Defaults.png" class="fullsize" />
+      </slide>
       <slide id="arazzo-1.1-openapi-alignment">
         <title>Arazzo 1.1 - OpenAPI 3.2 Alignment</title>
         <ul>
-					<li>The <a href="https://spec.openapis.org/arazzo/v1.1.0.html#parameter-object">Parameter Object</a> has a new <code>querystring</code> option for the <code>in</code> fixed field, which treats the entire URL query string as a single value.</li>
-        </ul> 
-        <img src="Arazzo1.1-Mapping-to-an-API-Operation's-_querystring_-parameter.png" class="fullsize" /> 
+          <li>The <a href="https://spec.openapis.org/arazzo/v1.1.0.html#parameter-object">Parameter Object</a> has a new <code>querystring</code> option for the <code>in</code> fixed field, which treats the entire URL query string as a single value.</li>
+        </ul>
+        <img src="Arazzo1.1-Mapping-to-an-API-Operation's-_querystring_-parameter.png" class="fullsize" />
       </slide>
       <slide id="arazzo-1.1-identity-based-referencing">
         <title>Arazzo 1.1 - Identity-Based Referencing</title>
         <ul>
-					<li>To ensure interoperability, when referencing an Arazzo Description by URI, references MUST use the target document’s <code>$self</code> if present.</li>				
+          <li>To ensure interoperability, when referencing an Arazzo Description by URI, references MUST use the target document’s <code>$self</code> if present.</li>
           <li><code>$self</code> is a URI-reference for the Arazzo Description ensuring portable and unambiguous reference resolution.</li>
-        </ul> 
-        <img src="Arazzo1.1-$self-for-identity-based-document-referencing.png" class="fullsize" /> 
+        </ul>
+        <img src="Arazzo1.1-$self-for-identity-based-document-referencing.png" class="fullsize" />
       </slide>
       <slide id="arazzo-1.1-housekeeping">
         <title>Arazzo 1.1 - Housekeeping</title>
@@ -936,18 +936,18 @@ paths:
         <ul>
           <li>ABNF Expressions</li>
           <ul>
-            <li>Complete grammar</li> 
+            <li>Complete grammar</li>
             <li>Clarity on string embedding</li>
             <li>Source Description resolution ordering</li>
-          </ul>   
+          </ul>
           <li>Truthy/Falsy evaluation semantics for conditions</li>
-          <li>Tool listing added to ReadMe (also see <a href="https://openapi.tools/collections/arazzo">openapi.tools</a>)</li>       
-				</ul>
+          <li>Tool listing added to ReadMe (also see <a href="https://openapi.tools/collections/arazzo">openapi.tools</a>)</li>
+        </ul>
       </slide>
       <slide id="arazzo-1.1-looking-ahead">
         <title>Arazzo: Looking Ahead to 1.2, 1.3, ... , 2.0</title>
         <ul>
-					<li>SOAP support (already merged into 1.2 branch)</li>				
+          <li>SOAP support (already merged into 1.2 branch)</li>
           <li>gRPC, GraphQL, MCP, A2A step support</li>
           <li>Actor-in-the-loop support (human or agent)</li>
           <li>Function / transformation support</li>
@@ -959,14 +959,14 @@ paths:
         <img src="Arazzo-Cheat-Sheet.png" href="https://jentic.com/extra/arazzo-specification-cheatsheet.pdf" title="Jentic Arazzo Cheat Sheet" class="fullsize"/>
       </slide>
     </part>
-		<part id="Arazzo Exercise">
-			<title>Example Travel Workflow Use Case</title>
-			<slide id="exercise-arazzo">
-				<title>Example Travel Workflow Use Case</title>
+    <part id="Arazzo Exercise">
+      <title>Example Travel Workflow Use Case</title>
+      <slide id="exercise-arazzo">
+        <title>Example Travel Workflow Use Case</title>
         <p><strong>A concierge-grade workflow for rebooking disrupted flights for Platinum and Ultimate passengers, rebooking hotels, and arranging transportation</strong></p>
         <p>Steps:</p>
-				<ul>
-					<li>Retrieve rebooking options based on loyalty profile</li>
+        <ul>
+          <li>Retrieve rebooking options based on loyalty profile</li>
           <li>Confirm selected offer and create shopping cart entry</li>
           <li>Fetch full confirmed offer details</li>
           <li>Modify hotel reservation (if arrival date not honoured)</li>
@@ -974,25 +974,25 @@ paths:
           <li>Request luxury ride pickup for 30 mins after arrival</li>
           <li>Confirm ride details and pickup ETA for customer support</li>
           <li>Return consolidated itinerary</li>
-				</ul>
-			</slide>
-			<slide id="travel-use-case">
-				<title>Multiple APIs and Endpoints Required</title>
-				<img src="arazzo-travel-use-case.png" class="fullsize"/>
-			</slide>
-			<slide id="arazzo-exercise-1">
-				<title>The Power of Arazzo: More YAML!?</title>
-				<img src="arazzo-travel-image-1.png" class="fullsize" style="height: 75%" />
-			</slide>
-			<slide id="arazzo-exercise-2">
-				<title>The Power of Arazzo: Machines love YAML!</title>
-				<img src="arazzo-travel-image-2.png" class="fullsize" style="height: 75%" />
-			</slide>
+        </ul>
+      </slide>
+      <slide id="travel-use-case">
+        <title>Multiple APIs and Endpoints Required</title>
+        <img src="arazzo-travel-use-case.png" class="fullsize"/>
+      </slide>
+      <slide id="arazzo-exercise-1">
+        <title>The Power of Arazzo: More YAML!?</title>
+        <img src="arazzo-travel-image-1.png" class="fullsize" style="height: 75%" />
+      </slide>
+      <slide id="arazzo-exercise-2">
+        <title>The Power of Arazzo: Machines love YAML!</title>
+        <img src="arazzo-travel-image-2.png" class="fullsize" style="height: 75%" />
+      </slide>
       <slide id="what-arazzo-unlocks">
         <title>What Arazzo Unlocks</title>
         <img src="arazzo-what-it-unlocks.png" class="fullsize" style="height: 75%" />
       </slide>
-		</part>    
+    </part>
     <slide id="arazzo-qr-code">
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-berlin-2026.png" href="https://github.com/dret/building-ai-ready-apis-berlin-2026" class="fullsize"/>
@@ -1016,8 +1016,8 @@ paths:
       <slide id="api-for-humans">
         <title>Most APIs were Designed for Humans!</title>
         <ul>
-					<li>APIs are intended for developers, but not to be <em>interpreted, reasoned about, or safely executed</em> by AI systems</li>
-				</ul>
+          <li>APIs are intended for developers, but not to be <em>interpreted, reasoned about, or safely executed</em> by AI systems</li>
+        </ul>
         <img src="APIs-were-for-humans.png" title="Most APIs were designed for Humans" style="height: 50%" class="fullsize-shadow"/>
       </slide>
       <slide id="is-openapi-enough">
@@ -1025,18 +1025,18 @@ paths:
         <blockquote style="width: 70%; margin: 0 auto; font-size: 1.5rem; font-weight: 600; text-align: center; line-height: 1.4; border: 2px solid #78A350;">
           <p>… you can have valid <strong>OpenAPI</strong> that is semantically useless to both humans and machines  …</p>
         </blockquote>
-      </slide>      
+      </slide>
       <slide id="humans-tolerate">
         <title>Humans Tolerate, Machines Cannot</title>
         <p><strong><em>Human Interpretation:</em></strong></p>
         <ul>
-					<li>Vague descriptions</li>
+          <li>Vague descriptions</li>
           <li>Inconsistent naming</li>
           <li>Wrong servers</li>
           <li>Missing authentication info</li>
           <li>Missing examples</li>
-				</ul>
-      </slide>      
+        </ul>
+      </slide>
       <slide id="machines-cannot-tolerate">
         <title>Humans Tolerate, Machines Cannot</title>
         <p><strong><em>Machine Interpretation:</em></strong></p>
@@ -1052,7 +1052,7 @@ paths:
             <li>Missing path parameters / broken `$ref` chains</li>
             <li>Invalid examples</li>
           </ul>
-				</ul>
+        </ul>
         <ul>
           <li><strong><em>Poor consumer experience:</em></strong></li>
           <ul>
@@ -1066,10 +1066,10 @@ paths:
           <ul>
               <li>No servers or wrong envs</li>
               <li>Auth info missing (outside OpenAPI)</li>
-              <li>Stale / outdated OpenAPI Documents</li>      
+              <li>Stale / outdated OpenAPI Documents</li>
           </ul>
         </ul>
-      </slide> 
+      </slide>
       <slide id="typical-example">
         <title>Typical Ambiguity Example</title>
         <p><strong><em>Agent Interpretation:</em></strong></p>
@@ -1089,7 +1089,7 @@ paths:
           <img src="api-ai-focus-areas.png" class="fullsize" />
       </slide>
       <slide id="summary-and-descriptions">
-        <title>Readable <em>Summaries</em> and <em>Descriptions</em></title> 
+        <title>Readable <em>Summaries</em> and <em>Descriptions</em></title>
         <p><strong>Improves:</strong></p>
         <ul>
           <li>AI Discoverability, Semantic Clarity, Agent Usability</li>
@@ -1243,7 +1243,7 @@ paths:
       <slide id="the-scoring-metric">
         <title>You Can’t Improve What You Can’t Measure!</title>
         <img src="Measure-APIs-for-AI.png" class="fullsize-shadow" />
-      </slide>   
+      </slide>
       <slide id="the-scoring-metric">
         <title>Jentic's API AI-Readiness Framework</title>
         <p>An open source framework which evaluates APIs across <strong>six developer &amp; AI-readiness</strong> dimensions</p>
@@ -1254,7 +1254,7 @@ paths:
           <li>Agent Usability</li>
           <li>Security</li>
           <li>AI Discoverability</li>
-        </ul> 
+        </ul>
       </slide>
       <slide id="scorecard">
         <title>AI-Readiness Scorecard</title>
@@ -1380,7 +1380,7 @@ Measures robustness and correctness of authentication mechanisms declared by the
       <slide id="auth-strength-details">
         <title>Auth Strength Signal</title>
         <img src="auth-strength-signal.png" class="fullsize-shadow" />
-      </slide> 
+      </slide>
       <slide id="ai-discoverability">
         <title>AI Discoverability</title>
         <p><strong>Evaluates how easily AI systems can locate, classify, and route to the API across registries, workflows, and knowledge bases.</strong> </p>
