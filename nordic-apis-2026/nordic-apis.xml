@@ -43,42 +43,72 @@
     </slide>
     <slide id="before-ai">
       <title>Before AI</title>
+      <ul>
+        <li>All code runs deterministically</li>
+      </ul>
       <img src="solution-composability-traditional.png" class="fullsize"/>
     </slide>
     <slide id="machine-learning">
       <title>Machine Learning (ML): 2010s</title>
+      <ul>
+        <li>Training models for specific problems becomes mainstream, but it is costly</li>
+      </ul>
       <img src="solution-composability-machine-learning.png" class="fullsize"/>
     </slide>
     <slide id="genai">
       <title>GenAI: 2022</title>
+      <ul>
+        <li>General LLMs make ML easier to use and much cheaper, but they are isolated</li>
+      </ul>
       <img src="solution-composability-genai.png" class="fullsize"/>
     </slide>
     <slide id="prompt-engineering">
       <title>Prompt Engineering: 2023</title>
+      <ul>
+        <li>First attempts to better manage probabilistic LLMs</li>
+      </ul>
       <img src="solution-composability-prompt-engineering.png" class="fullsize"/>
     </slide>
     <slide id="function-calling">
       <title>Function Calling: June 2023</title>
+      <ul>
+        <li>LLMs are not just <q>a brain in a jar</q> anymore</li>
+      </ul>
       <img src="solution-composability-function-calling.png" class="fullsize"/>
     </slide>
     <slide id="subagents">
       <title>Subagents: 2024</title>
+      <ul>
+        <li>Decomposing problems into sub-problems for specific contexts or models</li>
+      </ul>
       <img src="solution-composability-subagents.png" class="fullsize"/>
     </slide>
     <slide id="mcp">
       <title>Model Context Protocol: November 2024</title>
+      <ul>
+        <li>Reach out of the harness and directly into context sources</li>
+      </ul>
       <img src="solution-composability-mcp.png" class="fullsize"/>
     </slide>
     <slide id="skills">
       <title>Agent Skills: October 2025</title>
+      <ul>
+        <li>Prepackaged mixes of prompts, local tools, and external tools</li>
+      </ul>
       <img src="solution-composability-agent-skills.png" class="fullsize"/>
     </slide>
     <slide id="decision-models">
       <title>Decision Models (RLCD): September 2026</title>
+      <ul>
+        <li>Move from human-friendly LLMs to machine-friendly structured output</li>
+      </ul>
       <img src="solution-composability-decision-models.png" class="fullsize"/>
     </slide>
     <slide id="everything-everywhere-all-at-once">
       <title>Everything Everywhere All at Once</title>
+      <ul>
+        <li>Expect this menagerie to change every few weeks</li>
+      </ul>
       <img src="solution-composability-everything.png" class="fullsize"/>
     </slide>
     <slide id="integration">
