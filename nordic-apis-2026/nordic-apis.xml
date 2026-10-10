@@ -30,7 +30,7 @@
   <copyright>2026 Erik Wilde</copyright>
   <presentation id="index">
     <title short="Composable Architecture for AI Systems">Composable Architecture for AI Systems: APIs, MCP, Skills, Sub-Agents, and Workflows</title>
-    <toc class="abstract">For decades, integration was a design-time problem we solved with documentation, SDKs, and patience. AI agents don't have any of those. They consume our integration surfaces at runtime, on demand, with no opportunity to read a guide or ask a colleague, and they are surprisingly honest about what's broken. This talk is a field report from the runtime era of integration. Drawing on observations from pointing agents at real-world systems, it looks at four dimensions where agents reliably stumble: discovery (operations that humans found by reading, agents can't find at all), semantics (descriptions that read fine to a developer but mean three different things to a model), composition (operations that work alone but fall apart when chained), and errors (responses that humans tolerated through intuition and retries, but that derail agents the same way every time). You'll leave with a different way of looking at your integration surfaces, a vocabulary for the failure modes you're most likely to hit, and a recipe for pointing agents at your own systems to find out where the cracks are – before someone else's agent does.</toc>
+    <toc class="abstract">AI is a powerful tool, but it is not the only tool, and most systems worth building are hybrids of AI and non-AI parts. That line between them doesn’t sit neatly between domains. It runs inside every domain, and it should move as you learn. This talk looks at the mechanisms for connecting across that line: APIs, MCP, agent skills, and sub-agents, as well as at workflows as a way to move the line itself: when an agent keeps rediscovering the same business process, that process belongs in deterministic execution, not in a prompt. You’ll leave knowing which mechanism belongs where, and how to keep shifting work out of AI as your system settles.</toc>
     <slide id="erik">
       <title>Erik Wilde</title>
       <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
@@ -151,7 +151,7 @@
     <slide id="everything-everywhere-all-at-once">
       <title>Everything Everywhere All at Once</title>
       <ul>
-        <li>Expect this menagerie to change every few weeks</li>
+        <li>Expect this menagerie to change at a rapid clip</li>
       </ul>
       <img src="solution-composability-everything.png" class="fullsize"/>
     </slide>
