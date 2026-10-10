@@ -81,27 +81,24 @@
       <title>Everything Everywhere All at Once</title>
       <img src="solution-composability-everything.png" class="fullsize"/>
     </slide>
-    <part id="conclusions">
-      <title>Conclusions</title>
-      <slide id="integration">
-        <title>Solution Architecture Is Only Part of It</title>
-        <img src="ai-integration-tim-oreilly.png" href="https://www.oreilly.com/radar/integration-is-the-new-moat/" title='Tim O Reilly, "AI Integration Is the New Moat", Oct 2025' style=" max-height: 70%; height: auto; float: right; margin : 0% 4% 4% 4% ; " />
-        <ul>
-          <li>All of these mechanisms are about composing a solution</li>
-          <li>Every one of them has to interact with APIs and data</li>
-          <li>Wiring that up is where many AI efforts stall or don't scale</li>
-          <li>AI integration architecture matters as much as AI solution architecture</li>
-        </ul>
-      </slide>
-      <slide id="agent-thanks">
-        <title>Thank You!</title>
-        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
-        <ul>
-          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
-          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
-        </ul>
-        <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 50% ; margin : 2% 0% 0% 10% "/>
-      </slide>
-    </part>
+    <slide id="integration">
+      <title>Solution Architecture Is Only Part of It</title>
+      <img src="ai-integration-tim-oreilly.png" href="https://www.oreilly.com/radar/integration-is-the-new-moat/" title='Tim O Reilly, "AI Integration Is the New Moat", Oct 2025' style=" max-height: 70%; height: auto; float: right; margin : 0% 4% 4% 4% ; " />
+      <ul>
+        <li>All of these mechanisms are about composing a solution</li>
+        <li>Every one of them has to interact with APIs and data</li>
+        <li>Wiring that up is where many AI efforts stall or don't scale</li>
+        <li>AI integration architecture matters as much as AI solution architecture</li>
+      </ul>
+    </slide>
+    <slide id="agent-thanks">
+      <title>Thank You!</title>
+      <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+      <ul>
+        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+      </ul>
+      <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 50% ; margin : 2% 0% 0% 10% "/>
+    </slide>
   </presentation>
 </hotspot>
