@@ -41,6 +41,14 @@
       </ul>
       <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 40% ; margin : 2% 0% 0% 10% "/>
     </slide>
+    <slide id="ai-minimalism">
+      <title>As Little AI As Possible</title>
+      <ul>
+        <li>The line between AI and deterministic code keeps moving</li>
+        <li>Good architecture is what lets you move it</li>
+        <li>All of it rests on foundations this talk mostly takes for granted</li>
+      </ul>
+    </slide>
     <slide id="llm-hammer">
       <title>A Trillion Operations for 16'968 ÷ 404?</title>
       <img src="llm-hammer.png" title="Maslow's LLM Hammer" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
