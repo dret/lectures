@@ -219,8 +219,8 @@
       <p style="text-align: center;"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026"><code>github.com/dret/building-ai-ready-apis-berlin-2026</code></a></p>
     </slide>
   </presentation>
-   <presentation id="agent-skills">
-    <title short="Agent Skills">Agent Skills: Introduction</title>
+  <presentation id="agent-skills">
+    <title short="Agent Skills">Module 2: Introduction to Agent Skills</title>
     <author>Frank Kilcommins &amp; Erik Wilde</author>
     <copyright>2026 Frank Kilcommins &amp; Erik Wilde</copyright>
     <toc class="abstract">Agent skills are reusable, versioned instructions that teach an AI agent how to handle a specific task — consistently, without re-prompting. This session covers what skills are, how agents load and use them, how they differ from plain prompts and MCP tools, and why they matter for reproducible and maintainable API governance work. Followed by a live demo of the jentic-api-scorecard skill.</toc>
@@ -363,21 +363,21 @@ Step 2: ...</pre>
           <tr>
             <td style="border: 2px solid #000000 ; padding: 10px 15px ;"><code>jentic-workflows</code></td>
             <td style="border: 2px solid #000000 ; padding: 10px 15px ;">Generates Arazzo workflow specs from a natural-language description of multi-step API flows</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 15px ;">Module 4</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 15px ;">Module 5</td>
           </tr>
           <tr>
             <td style="border: 2px solid #000000 ; padding: 10px 15px ;"><code>jentic-api-scorecard</code></td>
             <td style="border: 2px solid #000000 ; padding: 10px 15px ;">Scores an OpenAPI spec across the 6 Jentic AIR Framework dimensions; interprets results and suggests improvements conversationally</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 15px ;">Module 5</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 15px ;">Module 6</td>
           </tr>
           <tr>
             <td style="border: 2px solid #000000 ; padding: 10px 15px ;"><code>jentic-api-improve</code></td>
             <td style="border: 2px solid #000000 ; padding: 10px 15px ;">Runs score → fix → re-score improvement loops autonomously, targeting the weakest dimension first (breaking change detection, and overlay generation)</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 15px ;">Module 5</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 15px ;">Module 6</td>
           </tr>
         </table>
         <ul>
-          <li>Install instructions: <code>setup/prerequisites.md</code> in the exercise repo to install before Module 4</li>
+          <li>Install instructions: <code>setup/prerequisites.md</code> in the exercise repo to install before Module 5</li>
         </ul>
       </slide>
       <slide id="skills-demo">
@@ -392,7 +392,7 @@ Step 2: ...</pre>
     </part>
   </presentation>
   <presentation id="openapi">
-    <title short="Governed API Specifications with OpenAPI">Module 2: Designing Governed API Specifications with OpenAPI</title>
+    <title short="Governed API Specifications with OpenAPI">Module 3: Designing Governed API Specifications with OpenAPI</title>
     <author>Erik Wilde</author>
     <toc class="abstract">Using OpenAPI as a machine-readable contract for APIs consumed by automated systems. Clarity, predictability, and structure so agents interpret APIs without ambiguity. Hands-on exercise: review and refine an existing OpenAPI specification for resilience under automated usage.</toc>
     <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Workshop materials (GitHub)</a></toc>
@@ -518,7 +518,7 @@ Step 2: ...</pre>
     </slide>
   </presentation>
   <presentation id="overlay">
-    <title short="Governance with OpenAPI Overlay">Module 3: Applying Governance with OpenAPI Overlay</title>
+    <title short="Governance with OpenAPI Overlay">Module 4: Applying Governance with OpenAPI Overlay</title>
     <author>Frank Kilcommins</author>
     <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
     <copyright>2026 Frank Kilcommins</copyright>
@@ -731,7 +731,7 @@ paths:
     </slide>
   </presentation>
   <presentation id="arazzo">
-    <title short="API Workflows with Arazzo">Module 4: Modeling API Workflows with Arazzo</title>
+    <title short="API Workflows with Arazzo">Module 5: Modeling API Workflows with Arazzo</title>
     <author>Frank Kilcommins</author>
     <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
     <copyright>2026 Frank Kilcommins</copyright>
@@ -1027,7 +1027,7 @@ paths:
     </slide>
   </presentation>
   <presentation id="api-ecosystems">
-    <title short="AI-Ready API Ecosystems">Module 5: Designing AI-Ready API Ecosystems</title>
+    <title short="AI-Ready API Ecosystems">Module 6: Designing AI-Ready API Ecosystems</title>
     <author>Frank Kilcommins</author>
     <affiliation>Head of Enterprise Architecture, <a href="https://www.jentic.com/" title="Jentic">Jentic</a></affiliation>
     <copyright>2026 Frank Kilcommins</copyright>
@@ -1450,7 +1450,7 @@ Measures robustness and correctness of authentication mechanisms declared by the
     </slide>
   </presentation>
   <presentation id="api-implementation">
-    <title short="Building APIs in the Age of AI">Module 6: Building APIs in the Age of AI</title>
+    <title short="Building APIs in the Age of AI">Module 7: Building APIs in the Age of AI</title>
     <author>Erik Wilde</author>
     <toc class="abstract">Everything so far has been about AI at runtime, and all the caution that requires. This module flips to design time, where the caution comes off. The API lifecycle has always had tooling at every stage, and AI is now assisting at each of them. Faster loops mean more iterations, and more iterations is how API quality actually improves.</toc>
     <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Workshop materials (GitHub)</a></toc>
