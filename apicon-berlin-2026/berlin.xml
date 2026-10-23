@@ -1449,10 +1449,10 @@ Measures robustness and correctness of authentication mechanisms declared by the
       <p style="text-align: center;"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026"><code>github.com/dret/building-ai-ready-apis-berlin-2026</code></a></p>
     </slide>
   </presentation>
-  <presentation id="api-implementation">
-    <title short="Building APIs in the Age of AI">Module 7: Building APIs in the Age of AI</title>
+  <presentation id="composable-apis">
+    <title short="Composable APIs">Module 7: Composable APIs in the Age of AI</title>
     <author>Erik Wilde</author>
-    <toc class="abstract">Everything so far has been about APIs and AI at runtime. This module steps back and looks at the ways agents can use APIs at all, from isolated LLMs to function calling, MCP, agent skills, and workflows, where each step moves more of the work out of the model and into deterministic parts. We place the modules of the day on that line, and close with what to do on Monday: keep the line movable, and invest in the APIs and data everything else has to reach.</toc>
+    <toc class="abstract">Everything so far has been about APIs and AI at runtime. This module steps back and looks at the ways agents can use APIs at all, from isolated LLMs to function calling, MCP, agent skills, and workflows, where each step moves more of the work out of the model and into deterministic parts. We place the modules of the day on that line, ask what makes an API composable when both its callers and its implementations keep changing, and close with what to do on Monday.</toc>
     <toc class="resources"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026">Workshop materials (GitHub)</a></toc>
     <part id="design-time">
       <title>Flipping to Design Time</title>
@@ -1582,8 +1582,8 @@ Measures robustness and correctness of authentication mechanisms declared by the
         <img src="solution-composability-everything.png" class="fullsize"/>
       </slide>
     </part>
-    <part id="where-today-sits">
-      <title>Where Today Sits</title>
+    <part id="what-is-composable">
+      <title>What Makes an API Composable</title>
       <slide id="where-modules-sit">
         <title>Where Today's Modules Sit</title>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 95% ; margin : 0 2.5% ;">
@@ -1619,14 +1619,14 @@ Measures robustness and correctness of authentication mechanisms declared by the
             </tr>
         </table>
       </slide>
-      <slide id="integration">
-        <title>Solution Architecture Is Only Part of It</title>
-        <img src="ai-integration-tim-oreilly.png" href="https://www.oreilly.com/radar/integration-is-the-new-moat/" title='Tim O Reilly, "AI Integration Is the New Moat", Oct 2025' style=" max-height: 70%; height: auto; float: right; margin : 0% 4% 4% 4% ; " />
+      <slide id="what-makes-composable">
+        <title>What Makes an API Composable?</title>
         <ul>
-          <li>All of these mechanisms are about composing a solution</li>
-          <li>Every one of them has to interact with APIs and data</li>
-          <li>Wiring that up is where many AI efforts stall or don't scale</li>
-          <li>AI integration architecture matters as much as AI solution architecture</li>
+          <li>Callers can change: a prompt today, a skill or workflow tomorrow</li>
+          <li>Implementations can change: AI today, deterministic code tomorrow</li>
+          <li>Described well enough to be found and understood without a human (Modules 3 and 4)</li>
+          <li>Combinable into workflows once processes settle (Module 5)</li>
+          <li>Measured, so you know how ready it is (Module 6)</li>
         </ul>
       </slide>
     </part>
@@ -1636,12 +1636,12 @@ Measures robustness and correctness of authentication mechanisms declared by the
         <title>Monday Tasks</title>
         <ul>
           <li>Keep watching what arrives, because the line will move again</li>
-          <li>Modularize by subproblem, so that you can move the line later</li>
+          <li>Modularize by subproblem, so that the system stays composable and you can move the line later</li>
           <li>Invest in the APIs and data that everything else has to reach</li>
         </ul>
       </slide>
     </part>
-    <slide id="api-implementation-qr-code">
+    <slide id="composable-apis-qr-code">
       <title>Workshop Materials</title>
       <img src="qr-code-workshop-materials-berlin-2026.png" href="https://github.com/dret/building-ai-ready-apis-berlin-2026" class="fullsize"/>
       <p style="text-align: center;"><a href="https://github.com/dret/building-ai-ready-apis-berlin-2026"><code>github.com/dret/building-ai-ready-apis-berlin-2026</code></a></p>
