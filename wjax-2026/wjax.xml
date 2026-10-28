@@ -51,6 +51,26 @@
     </part>
     <part id="experiment">
       <title>A Small Experiment</title>
+      <slide id="experiment-scale">
+        <title>651 Tools Is Not Many</title>
+        <img src="scale-651-tools.png" class="fullsize"/>
+      </slide>
+      <slide id="experiment-all-runs">
+        <title>Everything Worked</title>
+        <img src="all-60-runs.png" class="fullsize"/>
+      </slide>
+      <slide id="experiment-detours">
+        <title>Same Destination, Different Detours</title>
+        <img src="detours-task-2.png" class="fullsize"/>
+      </slide>
+      <slide id="experiment-price">
+        <title>The Price</title>
+        <img src="price-per-run.png" class="fullsize"/>
+      </slide>
+      <slide id="experiment-missing-tool">
+        <title>Until a Tool Is Missing</title>
+        <img src="binary-search.png" class="fullsize"/>
+      </slide>
     </part>
     <part id="as-little-ai">
       <title>As Little AI As Possible</title>
