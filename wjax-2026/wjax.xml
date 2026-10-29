@@ -45,6 +45,26 @@
     </slide>
     <part id="where-heading">
       <title>Where This Is Heading</title>
+      <slide id="ai-chant">
+        <title>AI To Do What?</title>
+        <img src="we-want-ai-now.png" class="fullsize"/>
+      </slide>
+      <slide id="before-ai">
+        <title>Before AI</title>
+        <img src="composability-before-ai.png" class="fullsize"/>
+      </slide>
+      <slide id="ai-timeline">
+        <title>Then It Started Moving</title>
+        <img src="ai-timeline.png" class="fullsize"/>
+      </slide>
+      <slide id="everything-everywhere">
+        <title>Everything Everywhere All at Once</title>
+        <img src="composability-everything.png" class="fullsize"/>
+      </slide>
+      <slide id="the-line">
+        <title>Where Does the Line Go?</title>
+        <img src="composability-the-line.png" class="fullsize"/>
+      </slide>
     </part>
     <part id="agents-meet-apis">
       <title>Agents Meet Your APIs</title>
@@ -66,6 +86,15 @@
       <slide id="experiment-price">
         <title>The Price</title>
         <img src="price-per-run.png" class="fullsize"/>
+      </slide>
+      <slide id="experiment-creation-date">
+        <title>Where Is the Creation Date?</title>
+        <listing src="github-openapi-get-user.yaml"/>
+      </slide>
+      <slide id="experiment-mcp-tool">
+        <title>And in the MCP Tool?</title>
+        <listing src="github-mcp-search-users.yaml"/>
+        <listing src="github-mcp-search-users-result.yaml"/>
       </slide>
       <slide id="experiment-missing-tool">
         <title>Until a Tool Is Missing</title>
