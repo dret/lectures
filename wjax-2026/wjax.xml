@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="hotspot/hotspot/hotspot.xsl"?>
 <?hotspot layout-path="hotspot/hotspot/layout" ?>
 <?hotspot kilauea-path="hotspot/kilauea" ?>
-<?hotspot layout="oai-track" ?>
+<?hotspot layout="wundergraph" ?>
 <hotspot xmlns="http://dret.net/xmlns/hotspot/1" xmlns:hotspot="http://dret.net/xmlns/hotspot/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dret.net/xmlns/hotspot/1 hotspot/hotspot/schemas/hotspot.xsd">
   <configuration>
     <link subsections="yes" bookmarks="yes" versions="wjax.xml" home="./" help="quick" contents="./" author="http://dret.net/netdret/"/>
@@ -71,33 +71,49 @@
     </part>
     <part id="experiment">
       <title>A Small Experiment</title>
+      <slide id="experiment-data">
+        <title>The Data and the Code Are in a Public Repo</title>
+        <ul>
+          <li><a href="https://github.com/dret/w-jax-2026-ai-integration">github.com/dret/w-jax-2026-ai-integration</a></li>
+          <li>Tasks, servers, all 60 runs, findings</li>
+        </ul>
+        <img src="qr-code-experiment-repo.png" href="https://github.com/dret/w-jax-2026-ai-integration" style=" height : 40% ; margin : 2% 0% 0% 10% "/>
+      </slide>
       <slide id="experiment-scale">
-        <title>651 Tools Is Not Many</title>
+        <title>651 Tools Is Tiny Compared to a Real Organization</title>
         <img src="scale-651-tools.png" class="fullsize"/>
       </slide>
-      <slide id="experiment-all-runs">
-        <title>Everything Worked</title>
-        <img src="all-60-runs.png" class="fullsize"/>
+      <slide id="experiment-complexity">
+        <title>More Complex Task, Same Plan, Different Execution</title>
+        <img src="fit-1-complexity.png" class="fullsize"/>
       </slide>
-      <slide id="experiment-detours">
-        <title>Same Destination, Different Detours</title>
-        <img src="detours-task-2.png" class="fullsize"/>
+      <slide id="experiment-mismatch">
+        <title>No Fitting Tool: The Model Fights the Limitations</title>
+        <img src="fit-2-mismatch.png" class="fullsize"/>
+      </slide>
+      <slide id="experiment-fit">
+        <title>Tools That Fit the Task: Easy and Cheap</title>
+        <img src="fit-3-fit.png" class="fullsize"/>
+      </slide>
+      <slide id="experiment-roundtrips">
+        <title>Every Round Trip Sends the Whole Context Again</title>
+        <img src="roundtrips.png" class="fullsize"/>
       </slide>
       <slide id="experiment-price">
-        <title>The Price</title>
+        <title>Per Run, 651 Tools Cost 4 to 40 Times More</title>
         <img src="price-per-run.png" class="fullsize"/>
       </slide>
       <slide id="experiment-creation-date">
-        <title>Where Is the Creation Date?</title>
+        <title>The Creation Date Is in the OpenAPI Description</title>
         <listing src="github-openapi-get-user.yaml"/>
       </slide>
       <slide id="experiment-mcp-tool">
-        <title>And in the MCP Tool?</title>
+        <title>The MCP Tool Does Not Return It, and Does Not Say So</title>
         <listing src="github-mcp-search-users.yaml"/>
         <listing src="github-mcp-search-users-result.yaml"/>
       </slide>
       <slide id="experiment-missing-tool">
-        <title>Until a Tool Is Missing</title>
+        <title>16 Searches Instead of One Call</title>
         <img src="binary-search.png" class="fullsize"/>
       </slide>
     </part>
