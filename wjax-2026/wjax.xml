@@ -148,16 +148,25 @@
         <title>651 Capabilities Is Tiny Compared to a Real Organization</title>
         <img src="scale-651-tools.png" class="fullsize"/>
       </slide>
+      <slide id="experiment-tasks">
+        <title>Two Tasks</title>
+        <blockquote>
+          <p>Task 1: <q>Find the first issue ever opened in cli/cli, not counting pull requests. Who wrote the first comment on it, and when was that person's GitHub account created?</q></p>
+        </blockquote>
+        <blockquote>
+          <p>Task 2: <q>Take the first five issues ever opened in cli/cli, not counting pull requests. For each, count the comments from before 2020 that were written by someone other than the author of the issue. Which issue has the most, and how many?</q></p>
+        </blockquote>
+      </slide>
       <slide id="experiment-complexity">
-        <title>More Complex Task, Same Plan, Different Execution</title>
+        <title>Generated Tools: The Harder Task Gets Solved in Different Ways</title>
         <img src="fit-1-complexity.png" class="fullsize"/>
       </slide>
       <slide id="experiment-mismatch">
-        <title>No Fitting Tool: The Model Fights the Limitations</title>
+        <title>No Good Tool for the Task: The Model Engineers Around It</title>
         <img src="fit-2-mismatch.png" class="fullsize"/>
       </slide>
       <slide id="experiment-fit">
-        <title>Tools That Fit the Task: Easy and Cheap</title>
+        <title>A Better Fit: Fewer Calls, Less Thinking, Cheaper</title>
         <img src="fit-3-fit.png" class="fullsize"/>
       </slide>
       <slide id="experiment-roundtrips">
