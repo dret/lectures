@@ -188,7 +188,7 @@
     <part id="as-little-ai">
       <title>As Little AI As Possible</title>
       <slide id="llm-hammer">
-        <title>A Trillion Operations for 16'968 ÷ 404?</title>
+        <title>Some Problems Are Better Answered by Computation, Not Inference</title>
         <img src="llm-hammer.png" title="Maslow's LLM Hammer" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
           <tr>
@@ -224,7 +224,7 @@
         </ul>
       </slide>
       <slide id="model-or-code">
-        <title>Every Step You Take Out of the Model Is One It Cannot Get Wrong</title>
+        <title>We Are Exploring: Some Things May Turn Into Generated Code</title>
         <img src="model-or-code.png" class="fullsize"/>
       </slide>
     </part>
