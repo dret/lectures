@@ -1,9 +1,0 @@
-# Tool result the model received (issues/list-for-repo, 651 generated tools)
-content:
-  - type: text
-    text: |
-      Error: result (118,565 characters) exceeds maximum allowed tokens.
-      Output has been saved to /.../tool-results/mcp-github-generated-issueslist_for_repo-1793097151521.txt.
-      Format: JSON with schema: {result: [{...}]}
-      Use jq to make structured queries (find a value, filter by field).
-      [...]
