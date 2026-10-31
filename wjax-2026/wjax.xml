@@ -49,6 +49,14 @@
         <title>AI To Do What?</title>
         <img src="we-want-ai-now.png" class="fullsize"/>
       </slide>
+      <slide id="scope">
+        <title>Business Agents, Not Coding Agents</title>
+        <ul>
+          <li>Agents working on business tasks</li>
+          <li>As little AI as possible</li>
+          <li>A small experiment, not a benchmark</li>
+        </ul>
+      </slide>
       <slide id="before-ai">
         <title>Before AI</title>
         <img src="composability-before-ai.png" class="fullsize"/>
@@ -68,6 +76,61 @@
     </part>
     <part id="agents-meet-apis">
       <title>Agents Meet Your APIs</title>
+      <slide id="design-vs-runtime">
+        <title>Developers Solved Integration at Design Time. Agents Meet It at Runtime.</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;"></th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Developer</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Agent</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">When</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Design time</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Runtime</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Learns from</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Documentation, colleagues, trial and error</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Whatever the tool descriptions say</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Asks someone</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Yes</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">No</td>
+          </tr>
+        </table>
+      </slide>
+      <slide id="four-dimensions">
+        <title>Four Places Where Agents Stumble</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;"></th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Where the agent stumbles</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">In the experiment</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Composition</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Operations that work alone, but have to be chained</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Observed</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Discovery</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">The information exists, but the agent cannot get to it</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Observed</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Semantics</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Words that mean more than the model assumes</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Partly observed</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Errors</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Responses that derail the agent</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Observed</td>
+          </tr>
+        </table>
+      </slide>
     </part>
     <part id="experiment">
       <title>A Small Experiment</title>
@@ -113,15 +176,125 @@
         <title>16 Searches Instead of One Call</title>
         <img src="binary-search.png" class="fullsize"/>
       </slide>
+      <slide id="experiment-semantics">
+        <title>Every Pull Request Is an Issue, and the Description Says So</title>
+        <listing src="github-openapi-list-issues.yaml"/>
+      </slide>
+      <slide id="experiment-too-big">
+        <title>The Response Is Too Big for the Tool Result: 13 of 15 Runs</title>
+        <listing src="tool-result-too-big.yaml"/>
+      </slide>
     </part>
     <part id="as-little-ai">
       <title>As Little AI As Possible</title>
+      <slide id="llm-hammer">
+        <title>A Trillion Operations for 16'968 ÷ 404?</title>
+        <img src="llm-hammer.png" title="Maslow's LLM Hammer" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;"></th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">CPU Computation</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">LLM Inference</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Elapsed time</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">a few nanoseconds</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~0.1–2 seconds</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Computation</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">one integer division</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~10<sup>11</sup>–10<sup>13</sup> FLOPs</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Energy</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~pJ–nJ</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~1–100 J</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Correctness</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">exact</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">not guaranteed</td>
+          </tr>
+        </table>
+        <ul>
+          <li>CPU: One deterministic instruction</li>
+          <li>LLM: Trillions of operations for probabilistic inference</li>
+          <li>The LLM might still get the answer wrong</li>
+        </ul>
+      </slide>
+      <slide id="model-or-code">
+        <title>Every Step You Take Out of the Model Is One It Cannot Get Wrong</title>
+        <img src="model-or-code.png" class="fullsize"/>
+      </slide>
     </part>
     <part id="architect-for-change">
       <title>Architect for Change</title>
+      <slide id="toolbox">
+        <title>No Single Answer: Build a Toolbox</title>
+        <ul>
+          <li>Where are you?</li>
+          <li>What kind of failures do you see?</li>
+          <li>How big is your landscape?</li>
+          <li>What should the next AI projects achieve?</li>
+        </ul>
+      </slide>
+      <slide id="toolbox-techniques">
+        <title>Six Techniques, From Easy to Involved</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;"></th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Technique</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Effort</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">1</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Check your APIs for AI readiness</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Easy</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">2</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Improve the descriptions</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Easy, if automated</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">3</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Improve the API designs</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">More involved</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">4</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Orchestrate tools into fewer, task-oriented tools</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">More involved</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">5</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Orchestrate deterministically (Arazzo or similar)</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">More involved</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">6</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Select or search the tools</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Different pattern</td>
+          </tr>
+        </table>
+      </slide>
+      <slide id="watch-agents">
+        <title>Watch Your Agents: Many Repeated Calls Mean a Missing Capability</title>
+        <img src="binary-search.png" class="fullsize"/>
+      </slide>
     </part>
     <part id="conclusions">
       <title>Conclusions</title>
+      <slide id="lessons">
+        <title>What Agents Are Teaching Us</title>
+        <ul>
+          <li>Integration problems did not go away. Agents meet them at runtime.</li>
+          <li>More tools can work, and cost more.</li>
+          <li>Watch agents to see what is missing.</li>
+          <li>As little AI as possible.</li>
+        </ul>
+      </slide>
       <slide id="agent-thanks">
         <title>Thank You!</title>
         <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
