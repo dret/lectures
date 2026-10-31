@@ -240,42 +240,37 @@
         </ul>
       </slide>
       <slide id="toolbox-techniques">
-        <title>Six Techniques, From Easy to Involved</title>
+        <title>A Starting Point: Five Techniques</title>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
           <tr>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;"></th>
             <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Technique</th>
             <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Effort</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">What you get</th>
           </tr>
           <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">1</td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Check your APIs for AI readiness</td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Easy</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Awareness, helps going forward</td>
           </tr>
           <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">2</td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Improve the descriptions</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Easy, if automated</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Cheap, can be automated</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">A bit better</td>
           </tr>
           <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">3</td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Improve the API designs</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">More involved</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Varies, needs the API teams</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Better results, more effort</td>
           </tr>
           <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">4</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Orchestrate tools into fewer, task-oriented tools</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">More involved</td>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">5</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Orchestrate deterministically (Arazzo or similar)</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">More involved</td>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">6</td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Select or search the tools</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Different pattern</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Select by hand, search, or both</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Not everything in the context</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Orchestrate tools into AI-friendly designs</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Higher (Arazzo or other ways)</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">High payback if it is easy to do</td>
           </tr>
         </table>
       </slide>
