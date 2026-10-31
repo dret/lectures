@@ -55,7 +55,7 @@
         <ul>
           <li>Agents working on business tasks</li>
           <li>As little AI as possible</li>
-          <li>A small experiment, not a benchmark</li>
+          <li>A small experiment to demonstrate what we found in the wild</li>
         </ul>
       </slide>
       <slide id="before-ai">
@@ -152,10 +152,10 @@
       <slide id="experiment-tasks">
         <title>Two Tasks</title>
         <blockquote>
-          <p>Task 1: <q>Find the first issue ever opened in cli/cli, not counting pull requests. Who wrote the first comment on it, and when was that person's GitHub account created?</q></p>
+          <p>Task 1: Find the first issue ever opened in cli/cli, not counting pull requests. Who wrote the first comment on it, and when was that person's GitHub account created?</p>
         </blockquote>
         <blockquote>
-          <p>Task 2: <q>Take the first five issues ever opened in cli/cli, not counting pull requests. For each, count the comments from before 2020 that were written by someone other than the author of the issue. Which issue has the most, and how many?</q></p>
+          <p>Task 2: Take the first five issues ever opened in cli/cli, not counting pull requests. For each, count the comments from before 2020 that were written by someone other than the author of the issue. Which issue has the most, and how many?</p>
         </blockquote>
       </slide>
       <slide id="experiment-complexity">
@@ -298,6 +298,14 @@
           <li>Integration problems did not go away, they moved from design time to runtime</li>
           <li>Watch your agents, and look into the traces</li>
           <li>Which parts need the runtime creativity of agents, which are fine with workflows? Architect so you can play with that line</li>
+        </ul>
+      </slide>
+      <slide id="monday">
+        <title>Monday Tasks</title>
+        <ul>
+          <li>Point an agent at one of your APIs and look into the traces</li>
+          <li>When it engineers around a missing tool, give it the tool</li>
+          <li>Start with the corner of the garden that leadership is pushing</li>
         </ul>
       </slide>
       <slide id="agent-thanks">
