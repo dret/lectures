@@ -1,0 +1,29 @@
+# MCP tool definition (from tools/list, trimmed, shown as YAML)
+# generated from the OpenAPI description, one tool per operation
+name: usersget_by_username
+description: |
+  Provides publicly available information about someone with a GitHub account.
+
+  If the specified user has a [private profile](...), the `followers` and
+  `following` values are `0` unless the request is authenticated as that user.
+  [...]
+inputSchema:
+  type: object
+  properties:
+    username:
+      type: string
+      description: The handle for the GitHub user account.
+  required: [username]
+outputSchema:
+  properties:
+    result:
+      anyOf:
+        - title: Private User
+          # ...
+        - title: Public User
+          properties:
+            login: {type: string}
+            id: {type: integer}
+            # ...
+            created_at: {type: string, format: date-time}
+            # ...

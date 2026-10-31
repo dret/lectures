@@ -181,8 +181,12 @@
         <title>The Creation Date Is in the OpenAPI Description</title>
         <listing src="github-openapi-get-user.yaml"/>
       </slide>
+      <slide id="experiment-generated-tool">
+        <title>The Generated MCP Tool Returns It</title>
+        <listing src="github-generated-mcp-get-user.yaml"/>
+      </slide>
       <slide id="experiment-mcp-tool">
-        <title>The MCP Tool Does Not Return It, and Does Not Say So</title>
+        <title>GitHub's MCP Tool Does Not Return It</title>
         <listing src="github-mcp-search-users.yaml"/>
         <listing src="github-mcp-search-users-result.yaml"/>
       </slide>
