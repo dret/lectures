@@ -284,10 +284,9 @@
       <slide id="lessons">
         <title>What Agents Are Teaching Us</title>
         <ul>
-          <li>Integration problems did not go away. Agents meet them at runtime.</li>
-          <li>More tools can work, and cost more.</li>
-          <li>Watch agents to see what is missing.</li>
-          <li>As little AI as possible.</li>
+          <li>Integration problems did not go away, they moved from design time to runtime</li>
+          <li>Watch your agents, and look into the traces</li>
+          <li>Which parts need the runtime creativity of agents, which are fine with workflows? Architect so you can play with that line</li>
         </ul>
       </slide>
       <slide id="agent-thanks">
