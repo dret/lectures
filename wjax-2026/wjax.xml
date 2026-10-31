@@ -115,24 +115,24 @@
             <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">In the experiment</th>
           </tr>
           <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Composition</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Operations that work alone, but have to be chained</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Observed</td>
-          </tr>
-          <tr>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Discovery</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">The information exists, but the agent cannot get to it</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Observed</td>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Semantics</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Words that mean more than the model assumes</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">The agent does not know what it can do</td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Partly observed</td>
           </tr>
           <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Errors</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Responses that derail the agent</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Semantics</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Descriptions that only make sense with the documentation</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Not tested</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Composition</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Calls that only get something done when chained</td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Observed</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Errors</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Responses that derail the agent or do not help it recover</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Partly observed</td>
           </tr>
         </table>
       </slide>
