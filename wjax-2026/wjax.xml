@@ -77,12 +77,17 @@
     <part id="agents-meet-apis">
       <title>Agents Meet Your APIs</title>
       <slide id="design-vs-runtime">
-        <title>Developers Solved Integration at Design Time. Agents Meet It at Runtime.</title>
+        <title>Developer Experience (DX) vs. Agent Experience (AX)</title>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
           <tr>
             <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;"></th>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Developer</th>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Agent</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Developer (DX)</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Agent (AX)</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Uses the capability</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Through an application</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Directly</td>
           </tr>
           <tr>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">When</td>
@@ -90,14 +95,14 @@
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Runtime</td>
           </tr>
           <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Learns from</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Documentation, colleagues, trial and error</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Whatever the tool descriptions say</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Use case knowledge</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Coded into the application, a workflow</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Found dynamically, best matching tool for now</td>
           </tr>
           <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Asks someone</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Yes</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">No</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Context</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Experience, colleagues, documentation</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">What the tools and their descriptions say</td>
           </tr>
         </table>
       </slide>
