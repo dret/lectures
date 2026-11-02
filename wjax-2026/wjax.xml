@@ -122,17 +122,17 @@
           </tr>
           <tr>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Semantics</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Descriptions that only make sense with the documentation</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">The descriptions assume you have read the documentation</td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Not tested</td>
           </tr>
           <tr>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Composition</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Calls that only get something done when chained</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">One call alone gets nothing done</td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Observed</td>
           </tr>
           <tr>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Errors</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Responses that derail the agent or do not help it recover</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">The agent gets derailed and cannot recover</td>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Partly observed</td>
           </tr>
         </table>
@@ -158,28 +158,28 @@
           <p>Task 2: Take the first five issues ever opened in cli/cli, not counting pull requests. For each, count the comments from before 2020 that were written by someone other than the author of the issue. Which issue has the most, and how many?</p>
         </blockquote>
       </slide>
-      <slide id="experiment-complexity">
-        <title>Generated Tools: The Harder Task Gets Solved in Different Ways</title>
+      <slide id="task-complexity">
+        <title>Harder Tasks Are Harder to Solve</title>
         <img src="fit-1-complexity.png" class="fullsize"/>
       </slide>
-      <slide id="experiment-mismatch">
-        <title>No Good Tool for the Task: The Model Engineers Around It</title>
+      <slide id="missing-tools">
+        <title>The Model Engineers Around Missing Tools</title>
         <img src="fit-2-mismatch.png" class="fullsize"/>
       </slide>
       <slide id="experiment-fit">
-        <title>A Better Fit: Fewer Calls, Less Thinking, Cheaper</title>
+        <title>Better Fitting Tools Reduce Cost</title>
         <img src="fit-3-fit.png" class="fullsize"/>
       </slide>
-      <slide id="experiment-roundtrips">
-        <title>Every Round Trip Sends the Whole Context Again</title>
+      <slide id="roundtrips">
+        <title>Every Round Trip Sends the Whole Context</title>
         <img src="roundtrips.png" class="fullsize"/>
       </slide>
-      <slide id="experiment-price">
-        <title>Per Run, 651 Tools Cost 4 to 40 Times More</title>
+      <slide id="price">
+        <title>651 Tools Cost 4 to 40 Times More</title>
         <img src="price-per-run.png" class="fullsize"/>
       </slide>
-      <slide id="experiment-creation-date">
-        <title>The Creation Date Is in the OpenAPI Description</title>
+      <slide id="creation-date">
+        <title>API Returns User Creation Date</title>
         <listing src="github-openapi-get-user.yaml"/>
       </slide>
       <slide id="experiment-generated-tool">
@@ -199,7 +199,7 @@
     <part id="as-little-ai">
       <title>As Little AI As Possible</title>
       <slide id="llm-hammer">
-        <title>Some Problems Are Better Answered by Computation, Not Inference</title>
+        <title>The LLM Hammer</title>
         <img src="llm-hammer.png" title="Maslow's LLM Hammer" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
           <tr>
