@@ -1,0 +1,22 @@
+# GitHub OpenAPI description (excerpt)
+paths:
+  /users/{username}:
+    get:
+      operationId: users/get-by-username
+      summary: Get a user
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: "#/components/schemas/private-user"
+                  - $ref: "#/components/schemas/public-user"
+components:
+  schemas:
+    public-user:
+      required: [login, id, ..., created_at, ...]
+      properties:
+        created_at:
+          type: string
+          format: date-time

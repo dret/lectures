@@ -1,0 +1,20 @@
+# MCP tool definition (from tools/list, trimmed, shown as YAML)
+name: search_users
+description: >-
+  Find GitHub users by username, real name, or other profile information.
+  Useful for locating developers, contributors, or team members.
+inputSchema:
+  type: object
+  properties:
+    query:
+      type: string
+      description: >-
+        User search query. Examples: 'john smith', 'location:seattle',
+        'followers:>100'. Search is automatically scoped to type:user.
+    sort:
+      type: string
+      description: >-
+        Sort users by number of followers or repositories, or when the
+        person joined GitHub.
+      enum: [followers, repositories, joined]
+  required: [query]
