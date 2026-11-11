@@ -1,4 +1,4 @@
-# Your API Is Not Ready for AI (Yet): A Lifecycle-Based Readiness Guide
+# Composable Architecture for AI Systems: APIs, MCP, Skills, Sub-Agents, and Workflows
 
 Slides for Presentation at [Software Architecture Gathering](https://conferences.isaqb.org/software-architecture-gathering/) 2026.
 
