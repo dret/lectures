@@ -43,99 +43,136 @@
       </ul>
       <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 40% ; margin : 2% 0% 0% 10% "/>
     </slide>
-    <part id="where-heading">
-      <title>Where This Is Heading</title>
+    <part id="as-little-ai">
+      <title>As Little AI As Possible</title>
       <slide id="ai-chant">
         <title>AI To Do What?</title>
         <img src="we-want-ai-now.png" class="fullsize"/>
       </slide>
-      <slide id="scope">
-        <title>Business Agents, Not Coding Agents</title>
-        <img src="business-robot.png" style="float: right ; height : 80% ; margin : 0% 2% 0% 0% ; "/>
+      <slide id="ai-minimalism">
+        <title>As Little AI As Possible</title>
         <ul>
-          <li>Agents working on business tasks</li>
-          <li>As little AI as possible</li>
-          <li>A small experiment to demonstrate what we found in the wild</li>
+          <li>The line between AI and deterministic code keeps moving</li>
+          <li>Good architecture is what lets you move it</li>
+          <li>All of it rests on foundations this talk mostly takes for granted</li>
         </ul>
       </slide>
+      <slide id="llm-hammer">
+        <title>The LLM Hammer</title>
+        <img src="llm-hammer.png" title="Maslow's LLM Hammer" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;"></th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">CPU Computation</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">LLM Inference</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Elapsed time</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">a few nanoseconds</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~0.1–2 seconds</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Computation</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">one integer division</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~10<sup>11</sup>–10<sup>13</sup> FLOPs</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Energy</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~pJ–nJ</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~1–100 J</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Correctness</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">exact</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">not guaranteed</td>
+          </tr>
+        </table>
+        <ul>
+          <li>CPU: One deterministic instruction</li>
+          <li>LLM: Trillions of operations for probabilistic inference</li>
+          <li>The LLM might still get the answer wrong</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="mechanisms">
+      <title>Mechanisms Across the Line</title>
       <slide id="before-ai">
         <title>Before AI</title>
-        <img src="composability-before-ai.png" class="fullsize"/>
+        <ul>
+          <li>Code runs deterministically</li>
+        </ul>
+        <img src="solution-composability-traditional.png" class="fullsize"/>
       </slide>
-      <slide id="ai-timeline">
-        <title>Then It Started Moving</title>
-        <img src="ai-timeline.png" class="fullsize"/>
+      <slide id="genai">
+        <title>GenAI: 2022</title>
+        <ul>
+          <li>LLMs make ML more widely applicable and much cheaper, but they are isolated</li>
+        </ul>
+        <img src="solution-composability-genai.png" class="fullsize"/>
+        <ul>
+          <li>Powerful, but hard to make work in a predictable way</li>
+        </ul>
       </slide>
-      <slide id="everything-everywhere">
+      <slide id="function-calling">
+        <title>Function Calling: June 2023</title>
+        <ul>
+          <li>LLMs are not just <q>a brain in a jar</q> anymore</li>
+        </ul>
+        <img src="solution-composability-function-calling.png" class="fullsize"/>
+        <ul>
+          <li>One model to rule them all is not the best approach</li>
+        </ul>
+      </slide>
+      <slide id="subagents">
+        <title>Subagents: 2024</title>
+        <ul>
+          <li>Decomposing problems into sub-problems for specific contexts or models</li>
+        </ul>
+        <img src="solution-composability-subagents.png" class="fullsize"/>
+        <ul>
+          <li>Models need to have a standardized way to reach out into the world</li>
+        </ul>
+      </slide>
+      <slide id="mcp">
+        <title>Model Context Protocol: November 2024</title>
+        <ul>
+          <li>Interact directly with context in a standardized way</li>
+        </ul>
+        <img src="solution-composability-mcp.png" class="fullsize"/>
+        <ul>
+          <li>Using tools is useful but finding the right ones is hard</li>
+        </ul>
+      </slide>
+      <slide id="skills">
+        <title>Agent Skills: October 2025</title>
+        <ul>
+          <li>Prepackaged mixes of prompts, local tools, and external tools</li>
+        </ul>
+        <img src="solution-composability-agent-skills.png" class="fullsize"/>
+        <ul>
+          <li>Some questions should be decided before models start their work</li>
+        </ul>
+      </slide>
+      <slide id="workflows">
+        <title>Workflows</title>
+        <ul>
+          <li>Turn repeated processes into repeatable, reliable, reviewable, discoverable workflows</li>
+        </ul>
+        <img src="solution-composability-workflows.png" class="fullsize"/>
+        <ul>
+          <li>Once processes are stable, they can become part of the foundation</li>
+        </ul>
+      </slide>
+      <slide id="everything-everywhere-all-at-once">
         <title>Everything Everywhere All at Once</title>
-        <img src="composability-everything.png" class="fullsize"/>
+        <ul>
+          <li>Expect this menagerie to change at a rapid clip</li>
+        </ul>
+        <img src="solution-composability-everything.png" class="fullsize"/>
       </slide>
       <slide id="the-line">
         <title>Where Does the Line Go?</title>
         <img src="composability-the-line.png" class="fullsize"/>
-      </slide>
-    </part>
-    <part id="agents-meet-apis">
-      <title>Agents Meet Your APIs</title>
-      <slide id="design-vs-runtime">
-        <title>Developer Experience (DX) vs. Agent Experience (AX)</title>
-        <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
-          <tr>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;"></th>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Developer (DX)</th>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Agent (AX)</th>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Uses the capability</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Through an application</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Directly</td>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">When</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Design time</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Runtime</td>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Use case knowledge</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Coded into the application, a workflow</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Found dynamically, best matching tool for now</td>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Context</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Experience, colleagues, documentation</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">What the tools and their descriptions say</td>
-          </tr>
-        </table>
-      </slide>
-      <slide id="four-dimensions">
-        <title>Four Places Where Agents Stumble</title>
-        <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
-          <tr>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;"></th>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Where the agent stumbles</th>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">In the experiment</th>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Discovery</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">The agent does not know what it can do</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Partly observed</td>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Semantics</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">The descriptions assume you have read the documentation</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Not tested</td>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Composition</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">One call alone gets nothing done</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Observed</td>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Errors</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">The agent gets derailed and cannot recover</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Partly observed</td>
-          </tr>
-        </table>
       </slide>
     </part>
     <part id="experiment">
@@ -200,112 +237,31 @@
         <img src="fit-2-mismatch.png" class="fullsize"/>
       </slide>
     </part>
-    <part id="as-little-ai">
-      <title>As Little AI As Possible</title>
-      <slide id="llm-hammer">
-        <title>The LLM Hammer</title>
-        <img src="llm-hammer.png" title="Maslow's LLM Hammer" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
-        <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
-          <tr>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;"></th>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">CPU Computation</th>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">LLM Inference</th>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Elapsed time</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">a few nanoseconds</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~0.1–2 seconds</td>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Computation</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">one integer division</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~10<sup>11</sup>–10<sup>13</sup> FLOPs</td>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Energy</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~pJ–nJ</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">~1–100 J</td>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Correctness</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">exact</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">not guaranteed</td>
-          </tr>
-        </table>
-        <ul>
-          <li>CPU: One deterministic instruction</li>
-          <li>LLM: Trillions of operations for probabilistic inference</li>
-          <li>The LLM might still get the answer wrong</li>
-        </ul>
-      </slide>
+    <part id="moving-the-line">
+      <title>Moving the Line</title>
       <slide id="model-or-code">
         <title>How Much Is Left to the Model?</title>
         <img src="model-or-code.png" class="fullsize"/>
       </slide>
-    </part>
-    <part id="architect-for-change">
-      <title>Architect for Change</title>
-      <slide id="toolbox">
-        <title>Which Corner of the Garden Should You Focus on First?</title>
+      <slide id="integration">
+        <title>Solution Architecture Is Only Part of It</title>
+        <img src="ai-integration-tim-oreilly.png" href="https://www.oreilly.com/radar/integration-is-the-new-moat/" title='Tim O Reilly, "AI Integration Is the New Moat", Oct 2025' style=" max-height: 70%; height: auto; float: right; margin : 0% 4% 4% 4% ; " />
         <ul>
-          <li>Where are you? How many APIs, how much pressure?</li>
-          <li>What failures do you see? Exposure or what you expose?</li>
-          <li>How big is your landscape going to be?</li>
-          <li>What is on leadership's radar?</li>
+          <li>All of these mechanisms are about composing a solution</li>
+          <li>Every one of them has to interact with APIs and data</li>
+          <li>Wiring that up is where many AI efforts stall or don't scale</li>
+          <li>AI integration architecture matters as much as AI solution architecture</li>
         </ul>
-      </slide>
-      <slide id="toolbox-techniques">
-        <title>A Starting Point: Five Techniques</title>
-        <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
-          <tr>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Technique</th>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Effort</th>
-            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">What you get</th>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Check your APIs for AI readiness</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Easy</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Awareness, helps going forward</td>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Improve the descriptions</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Cheap, can be automated</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">A bit better</td>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Improve the API designs</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Varies, needs the API teams</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Better results, more effort</td>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Select or search the tools</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Select by hand, search, or both</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Not everything in the context</td>
-          </tr>
-          <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Orchestrate tools into AI-friendly designs</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Higher (Arazzo or other ways)</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">High payback if it is easy to do</td>
-          </tr>
-        </table>
       </slide>
     </part>
     <part id="conclusions">
       <title>Conclusions</title>
-      <slide id="lessons">
-        <title>What Agents Are Teaching Us</title>
-        <ul>
-          <li>Integration problems did not go away, they moved from design time to runtime</li>
-          <li>Watch your agents, and look into the traces</li>
-          <li>Which parts need the runtime creativity of agents, which are fine with workflows? Architect so you can play with that line</li>
-        </ul>
-      </slide>
       <slide id="monday">
-        <title>Monday Tasks: Triple A</title>
+        <title>Monday Tasks</title>
         <ul>
-          <li>APIs: check and improve your API landscape</li>
-          <li>Ambitions: find out what people want to do next with AI</li>
-          <li>Actions: watch what your existing agents are doing</li>
+          <li>Keep watching what arrives, because the line will move again</li>
+          <li>Modularize by subproblem, so that you can move the line later</li>
+          <li>Invest in the APIs and data that everything else has to reach</li>
         </ul>
       </slide>
       <slide id="agent-thanks">
