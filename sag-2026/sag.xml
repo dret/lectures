@@ -58,7 +58,7 @@
         </ul>
       </slide>
       <slide id="llm-hammer">
-        <title>The LLM Hammer</title>
+        <title>A Trillion Operations for 16'968 ÷ 404?</title>
         <img src="llm-hammer.png" title="Maslow's LLM Hammer" style="float: right ; height : 72% ; margin : 0% 4% 4% 4% ; "/>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
           <tr>
@@ -103,6 +103,20 @@
         </ul>
         <img src="solution-composability-traditional.png" class="fullsize"/>
       </slide>
+      <slide id="ai-timeline">
+        <title>Then It Started Moving</title>
+        <img src="ai-timeline.png" class="fullsize"/>
+      </slide>
+      <slide id="machine-learning">
+        <title>Machine Learning (ML): 2010s</title>
+        <ul>
+          <li>Training models for specific problems becomes mainstream, but it is costly</li>
+        </ul>
+        <img src="solution-composability-machine-learning.png" class="fullsize"/>
+        <ul>
+          <li>One model per problem does not scale</li>
+        </ul>
+      </slide>
       <slide id="genai">
         <title>GenAI: 2022</title>
         <ul>
@@ -111,6 +125,16 @@
         <img src="solution-composability-genai.png" class="fullsize"/>
         <ul>
           <li>Powerful, but hard to make work in a predictable way</li>
+        </ul>
+      </slide>
+      <slide id="prompt-engineering">
+        <title>Prompt Engineering: 2023</title>
+        <ul>
+          <li>First attempts to better manage probabilistic LLMs</li>
+        </ul>
+        <img src="solution-composability-prompt-engineering.png" class="fullsize"/>
+        <ul>
+          <li>Better instructions, but still no eyes or hands</li>
         </ul>
       </slide>
       <slide id="function-calling">
