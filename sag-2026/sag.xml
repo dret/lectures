@@ -205,6 +205,31 @@
         </ul>
         <img src="solution-composability-everything.png" class="fullsize"/>
       </slide>
+      <slide id="expose-implement-invoke">
+        <title>Expose, Implement, Invoke</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;"></th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">What it is about</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Mechanisms</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Expose</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Encapsulate, so things can be changed and reused safely</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">APIs, MCP</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Implement</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">How it actually gets done</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Code, workflows, decision models, skills, models</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Invoke</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Who calls it: code always, a model maybe</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Function calling, sub-agents</td>
+          </tr>
+        </table>
+      </slide>
       <slide id="the-line">
         <title>Where Does the Line Go?</title>
         <img src="composability-the-line.png" class="fullsize"/>
@@ -222,16 +247,17 @@
         <img src="scale-651-tools.png" class="fullsize"/>
       </slide>
       <slide id="experiment-tasks">
-        <title>Two Tasks</title>
+        <title>Two Tasks Tackled Two Ways</title>
         <blockquote>
           <p>Task 1: Find the first issue ever opened in cli/cli, not counting pull requests. Who wrote the first comment on it, and when was that person's GitHub account created?</p>
         </blockquote>
         <blockquote>
           <p>Task 2: Take the first five issues ever opened in cli/cli, not counting pull requests. For each, count the comments from before 2020 that were written by someone other than the author of the issue. Which issue has the most, and how many?</p>
         </blockquote>
+        <p>Using <a href="https://github.com/github/rest-api-description">651 generated tools</a>, or <a href="https://github.com/github/github-mcp-server">GitHub's own 26 MCP tools</a></p>
       </slide>
       <slide id="task-complexity">
-        <title>Harder Tasks Are Harder to Solve</title>
+        <title>Harder Tasks Take Different Paths Every Time</title>
         <img src="fit-1-complexity.png" class="fullsize"/>
       </slide>
       <slide id="missing-tools">
@@ -268,7 +294,7 @@
         <img src="binary-search.png" class="fullsize"/>
       </slide>
       <slide id="experiment-trace">
-        <title>Repeated Calls in the Trace Point to a Missing Tool</title>
+        <title>Traces Show Where the Line Is Wrong</title>
         <img src="fit-2-mismatch.png" class="fullsize"/>
       </slide>
     </part>
