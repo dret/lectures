@@ -153,6 +153,17 @@
           <li>Some questions should be decided before models start their work</li>
         </ul>
       </slide>
+      <slide id="decision-models">
+        <title>Decision Models (RLCD): September 2026</title>
+        <ul>
+          <li>Move from human-friendly LLMs to machine-friendly structured output</li>
+        </ul>
+        <img src="solution-composability-decision-models.png" class="fullsize"/>
+        <ul>
+          <li>Some decisions can be followed by prescribed processes</li>
+          <li>Google followed in November 2026 with Gemini Decision 1</li>
+        </ul>
+      </slide>
       <slide id="workflows">
         <title>Workflows</title>
         <ul>
