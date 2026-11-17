@@ -297,22 +297,9 @@
         <title>Traces Show Where the Line Is Wrong</title>
         <img src="fit-2-mismatch.png" class="fullsize"/>
       </slide>
-    </part>
-    <part id="moving-the-line">
-      <title>Moving the Line</title>
       <slide id="model-or-code">
-        <title>How Much Is Left to the Model?</title>
+        <title>What We Tried, and What We Didn't</title>
         <img src="model-or-code.png" class="fullsize"/>
-      </slide>
-      <slide id="integration">
-        <title>Solution Architecture Is Only Part of It</title>
-        <img src="ai-integration-tim-oreilly.png" href="https://www.oreilly.com/radar/integration-is-the-new-moat/" title='Tim O Reilly, "AI Integration Is the New Moat", Oct 2025' style=" max-height: 70%; height: auto; float: right; margin : 0% 4% 4% 4% ; " />
-        <ul>
-          <li>All of these mechanisms are about composing a solution</li>
-          <li>Every one of them has to interact with APIs and data</li>
-          <li>Wiring that up is where many AI efforts stall or don't scale</li>
-          <li>AI integration architecture matters as much as AI solution architecture</li>
-        </ul>
       </slide>
     </part>
     <part id="conclusions">
@@ -320,9 +307,9 @@
       <slide id="monday">
         <title>Monday Tasks</title>
         <ul>
-          <li>Keep watching what arrives, because the line will move again</li>
-          <li>Modularize by subproblem, so that you can move the line later</li>
-          <li>Invest in the APIs and data that everything else has to reach</li>
+          <li>Have a hard look at context and capability landscape</li>
+          <li>Always modularize by subproblem, so that you can move the line</li>
+          <li>Keep watching what arrives, because the line will keep moving</li>
         </ul>
       </slide>
       <slide id="feedback">
