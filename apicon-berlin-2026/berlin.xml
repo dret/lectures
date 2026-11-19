@@ -599,22 +599,22 @@ Step 2: ...</pre>
       <slide id="skill-testing">
         <title>Testing Skills</title>
         <ul>
-          <li>Create evaluations before writing the skill, let them guide the building process.</li>
+          <li>Create evaluations before writing the skill, let them guide the building process</li>
           <ul>
-            <li>Identity gaps the skill solves - check where the LLM fails on tasks without the skill.</li>
-            <li>Create evaluations based on the gaps.</li>
+            <li>Identity gaps the skill solves - check where the LLM fails on tasks without the skill</li>
+            <li>Create evaluations based on the gaps</li>
             <li>Establish a baseline (e.g. LLM performance without the skill)</li>
             <li>MVP approach - write just enough to address the gaps and pass the evals. Iterate from there!</li>
           </ul>
-          <li>Test skills against all models expected to use them (lowering degrees of freedom for greater consistency).</li>
-          <li>Coverage: Ensure tests cover a reals set of use cases.</li>
+          <li>Test skills against all models expected to use them (lowering degrees of freedom for greater consistency)</li>
+          <li>Coverage: Ensure tests cover a reals set of use cases</li>
           <ul>
-            <li>Loads at the right time.s</li>
-            <li>Produces the correct outputs (Gherkin scenarios can be useful).</li>
-            <li>Performance gains compared to baseline (e.g., without the skill).</li>
+            <li>Loads at the right times</li>
+            <li>Produces the correct outputs (Gherkin scenarios can be useful)</li>
+            <li>Performance gains compared to baseline (e.g., without the skill)</li>
           </ul>
         </ul>
-      </slide>         
+      </slide>
       <slide id="skill-vs-prompt">
         <title>Skill vs. Plain Prompt</title>
         <table style="border-collapse: collapse ; border: 2px solid #000000 ; width : 90% ; margin : 0 5% ;">
