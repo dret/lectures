@@ -178,14 +178,14 @@
             <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Agent (AX)</th>
           </tr>
           <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Uses the capability</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Through an application</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Directly</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Capabilities get consumed …</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">… through an application</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">… directly</td>
           </tr>
           <tr>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">When</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Design time</td>
-            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Runtime</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Capability is chosen at …</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">… design time</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">… runtime</td>
           </tr>
           <tr>
             <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Use case knowledge</td>
@@ -304,7 +304,7 @@
         <ul>
           <li>Integration problems did not go away, they moved from design time to runtime</li>
           <li>Watch your agents, and look into the traces</li>
-          <li>Which parts need the runtime creativity of agents, which are fine with workflows? Architect so you can play with that line</li>
+          <li>What needs the runtime creativity of agents, what is fine with workflows?</li>
         </ul>
       </slide>
       <slide id="ai-integration-monday">
