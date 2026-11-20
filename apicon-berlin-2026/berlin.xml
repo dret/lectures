@@ -828,22 +828,22 @@ Step 2: ...</pre>
       <slide id="overlay-what-is-it">
           <title>What is the OpenAPI Overlay Specification?</title>
           <ul>
-              <li>The OpenAPI Overlay Specification defines a way to modify an existing OpenAPI document without changing the original file.</li>
-              <li>Overlays are separate <em>YAML / JSON</em> documents containing structured actions (<code>update</code>, <code>copy</code>, and <code>remove</code>) targeting parts of an OpenAPI document.</li>
-              <li>Targets are identified using JSONPath expressions, enabling precise and repeatable transformations.</li>
-              <li>The Overlay Specification is an official OAI standard (v1.2.0) designed to support cleaner API workflows and automation.</li>
-              <li>Overlays allow changes to be applied incrementally, layered, and versioned independently of the base OpenAPI Document.</li>
+              <li>The OpenAPI Overlay Specification defines a way to modify an existing OpenAPI document without changing the original file</li>
+              <li>Overlays are separate <em>YAML/JSON</em> documents containing structured actions (<code>update</code>, <code>copy</code>, and <code>remove</code>) targeting parts of an OpenAPI document</li>
+              <li>Targets are identified using JSONPath expressions, enabling precise and repeatable transformations</li>
+              <li>The Overlay Specification is an official OAI standard (v1.2.0) designed to support cleaner API workflows and automation</li>
+              <li>Overlays allow changes to be applied incrementally, layered, and versioned independently of the base OpenAPI Document</li>
           </ul>
       </slide>
       <slide id="overlay-why-use-it">
           <title>Why Use Overlays?</title>
           <ul>
-              <li><strong>Separation of concerns:</strong> Keep the canonical API definition clean, while applying environment-, audience-, or workflow-specific changes via overlays.</li>
-              <li><strong>Consistency &amp; automation:</strong> Apply repeatable updates across OpenAPI docs (e.g., documentation, metadata, security, examples) without manual editing.</li>
-              <li><strong>Multi-audience support:</strong> Generate public, private, partner, or internal API descriptions from one source using different overlays.</li>
-              <li><strong>Avoids oversharing:</strong> Remove internal endpoints or sensitive fields for public-facing specs without duplicating files.</li>
-              <li><strong>Integration in pipelines:</strong> Overlays can be applied during CI/CD to prepare API definitions for documentation, SDKs, testing, or gateways.</li>
-              <li><strong>Localization:</strong> Translating documentation into another language.</li>
+              <li><strong>Separation of concerns:</strong> Keep the canonical API definition clean, while applying environment-, audience-, or workflow-specific changes via overlays</li>
+              <li><strong>Consistency &amp; automation:</strong> Apply repeatable updates across OpenAPI docs (e.g., documentation, metadata, security, examples) without manual editing</li>
+              <li><strong>Multi-audience support:</strong> Generate public, private, partner, or internal API descriptions from one source using different overlays</li>
+              <li><strong>Avoids oversharing:</strong> Remove internal endpoints or sensitive fields for public-facing specs without duplicating files</li>
+              <li><strong>Integration in pipelines:</strong> Overlays can be applied during CI/CD to prepare API definitions for documentation, SDKs, testing, or gateways</li>
+              <li><strong>Localization:</strong> Translating documentation into another language</li>
           </ul>
           <p style="text-align: center; font-size: 1.75em;"><strong>OpenAPI + Overlays = (better) OpenAPI!</strong></p>
       </slide>
@@ -853,60 +853,60 @@ Step 2: ...</pre>
         <slide id="overlay-spec-overview">
             <title>Overlay Specification Overview</title>
             <ul>
-                <li>An Overlay document has three top-level fields: <code>overlay</code> (version), <code>info</code>, and <code>actions</code>.</li>
-                <li>Actions are processed in order, allowing sequential and predictable transformations to the base OpenAPI spec.</li>
-                <li>Each Action Object contains a <code>target</code> (a JSONPath expression) and an operation such as <code>update</code>, <code>remove</code>, or <code>copy</code>.</li>
+                <li>An Overlay document has three top-level fields: <code>overlay</code> (version), <code>info</code>, and <code>actions</code></li>
+                <li>Actions are processed in order, allowing sequential and predictable transformations to the base OpenAPI spec</li>
+                <li>Each Action Object contains a <code>target</code> (a JSONPath expression) and an operation such as <code>update</code>, <code>remove</code>, or <code>copy</code></li>
                 <li>Targets can point to any part of the OpenAPI document: paths, operations, parameters, descriptions, vendor extensions, security, metadata, etc.</li>
-                <li>Overlays are fully valid YAML/JSON documents and can be version-controlled and reused across pipelines.</li>
+                <li>Overlays are fully valid YAML/JSON documents and can be version-controlled and reused across pipelines</li>
             </ul>
         </slide>
         <slide id="overlay-basic-example">
             <title>Basic Overlay Example – Updating Descriptions</title>
             <ul>
-                <li>Overlays can enrich generated or minimal OpenAPI specs with documentation.</li>
-                <li>Example: enhance the API's description field without touching the source OpenAPI Document.</li>
+                <li>Overlays can enrich generated or minimal OpenAPI specs with documentation</li>
+                <li>Example: enhance the API's description field without touching the source OpenAPI Document</li>
                 <li>Example Overlay:</li>
             </ul>
             <pre>
-              overlay: 1.2.0
-              info:
-                title: Improve API Descriptions
-                version: 0.1.0
-              actions:
-                - target: "$.info.description"
-                  update:
-                    description: "Public API for MyService – includes endpoints for books and orders."
+overlay: 1.2.0
+info:
+  title: Improve API Descriptions
+  version: 0.1.0
+actions:
+  - target: "$.info.description"
+    update:
+      description: "Public API for MyService – includes endpoints for books and orders."
             </pre>
             <ul>
-                <li>This updates <code>info.description</code> in the output OpenAPI Document when the overlay is applied.</li>
+                <li>This updates <code>info.description</code> in the output OpenAPI Document when the overlay is applied</li>
             </ul>
         </slide>
         <slide id="overlay-advanced-example">
             <title>Advanced Overlay Example – Remove Internal Endpoints</title>
             <ul>
-                <li>Overlays can remove elements based on metadata (e.g., internal endpoints marked with <code>x-internal: true</code>).</li>
-                <li>Useful for creating a public version of an API from an internal canonical OpenAPI Document.</li>
+                <li>Overlays can remove elements based on metadata (e.g., internal endpoints marked with <code>x-internal: true</code>)</li>
+                <li>Useful for creating a public version of an API from an internal canonical OpenAPI Document</li>
                 <li>Example Overlay:</li>
             </ul>
             <pre>
-              overlay: 1.2.0
-              info:
-                title: Public API Variant
-                version: 1.0.0
-              actions:
-                - target: "$.paths.*[?(@.x-internal == true)]"
-                  remove: true
+overlay: 1.2.0
+info:
+  title: Public API Variant
+  version: 1.0.0
+actions:
+  - target: "$.paths.*[?(@.x-internal == true)]"
+    remove: true
             </pre>
             <ul>
-                <li>This removes all paths or operations marked as <em>internal</em> from the final OpenAPI Document.</li>
-                <li>Can be combined with overlays adding public-facing docs, examples, or vendor extensions.</li>
+                <li>This removes all paths or operations marked as <em>internal</em> from the final OpenAPI Document</li>
+                <li>Can be combined with overlays adding public-facing docs, examples, or vendor extensions</li>
             </ul>
         </slide>
         <slide id="overlay-advanced-move-example">
             <title>Advanced Overlay Example – Move Elements</title>
             <ul>
-                <li>Overlays can now be used to <code>copy</code> elements.</li>
-                <li>Combined with <code>remove</code> actions, this enables moving elements between different parts of the OpenAPI Document.</li>
+                <li>Overlays can now be used to <code>copy</code> elements</li>
+                <li>Combined with <code>remove</code> actions, this enables moving elements between different parts of the OpenAPI Document</li>
                 <li>Example Overlay:</li>
             </ul>
             <table rules="all" cellspacing="0" cellpadding="5" width="100%">
@@ -918,7 +918,6 @@ Step 2: ...</pre>
                 </tr>
               </thead>
               <tbody>
-
               <tr>
                 <td>
                   <pre style="text-align: left;">
@@ -975,7 +974,6 @@ paths:
                   </pre>
                 </td>
               </tr>
-
               </tbody>
             </table>
         </slide>
@@ -985,21 +983,21 @@ paths:
         <slide id="overlay-lifecycle-position">
           <title>Where Overlays Fit in the API Lifecycle</title>
           <ul>
-            <li>Begin with a canonical OpenAPI Description (often code-generated or design-first).</li>
-            <li>Apply overlays to inject descriptions, examples, tags, rate limits, or other metadata without altering the base OpenAPI Document.</li>
-            <li>Use multiple overlays to tailor the API for different audiences: public, partner, internal, or operational.</li>
-            <li>Generate derived specs during CI/CD for documentation portals, SDK generation, gateways, mocks, or testing tools.</li>
-            <li>Overlays help maintain a single source of truth while enabling flexible downstream representations.</li>
+            <li>Begin with a canonical OpenAPI Description (often code-generated or design-first)</li>
+            <li>Apply overlays to inject descriptions, examples, tags, rate limits, or other metadata without altering the base OpenAPI Document</li>
+            <li>Use multiple overlays to tailor the API for different audiences: public, partner, internal, or operational</li>
+            <li>Generate derived specs during CI/CD for documentation portals, SDK generation, gateways, mocks, or testing tools</li>
+            <li>Overlays help maintain a single source of truth while enabling flexible downstream representations</li>
           </ul>
         </slide>
         <slide id="overlay-automation-ci">
             <title>Automation &amp; CI/CD Integration</title>
             <ul>
-              <li>Overlays can be applied as automated steps during the build or release process.</li>
-              <li>Ensures documentation, SDKs, and other artifacts are always generated from a validated and enriched spec.</li>
-              <li>Important for large teams where manual edits would be error-prone or inconsistent.</li>
-              <li>Overlay application is deterministic: the same overlay + same base OpenAPI Document produces the same result every time.</li>
-              <li>Ideal for pipelines that produce “public”, “internal”, “sandbox”, or “gateway-ready” specs from one base definition.</li>
+              <li>Overlays can be applied as automated steps during the build or release process</li>
+              <li>Ensures documentation, SDKs, and other artifacts are always generated from a validated and enriched spec</li>
+              <li>Important for large teams where manual edits would be error-prone or inconsistent</li>
+              <li>Overlay application is deterministic: the same overlay + same base OpenAPI Document produces the same result every time</li>
+              <li>Ideal for pipelines that produce “public”, “internal”, “sandbox”, or “gateway-ready” specs from one base definition</li>
             </ul>
         </slide>
         <slide id="overlay-when-to-use">
@@ -1007,17 +1005,17 @@ paths:
             <ul>
                 <li><strong>Use overlays when:</strong>
                     <ul>
-                        <li>You maintain a single authoritative OpenAPI Description but need multiple consumer-specific derivatives.</li>
-                        <li>You want to enrich autogenerated OpenAPI Docs with human-friendly descriptions and examples.</li>
-                        <li>You want to strip internal endpoints or sensitive details before publishing publicly.</li>
-                        <li>You want to version documentation changes separately from functional API changes.</li>
+                        <li>You maintain a single authoritative OpenAPI Description but need multiple consumer-specific derivatives</li>
+                        <li>You want to enrich autogenerated OpenAPI Docs with human-friendly descriptions and examples</li>
+                        <li>You want to strip internal endpoints or sensitive details before publishing publicly</li>
+                        <li>You want to version documentation changes separately from functional API changes</li>
                     </ul>
                 </li>
                 <li><strong>Avoid overlays when:</strong>
                     <ul>
-                        <li>The change reflects reality of the core API itself (e.g., adding a real endpoint or schema change).</li>
-                        <li>Your tooling ecosystem does not yet support overlay application.</li>
-                        <li>You have highly dynamic schemas where direct design-first maintenance is preferred.</li>
+                        <li>The change reflects reality of the core API itself (e.g., adding a real endpoint or schema change)</li>
+                        <li>Your tooling ecosystem does not yet support overlay application</li>
+                        <li>You have highly dynamic schemas where direct design-first maintenance is preferred</li>
                     </ul>
                 </li>
             </ul>
