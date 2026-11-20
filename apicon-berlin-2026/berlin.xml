@@ -894,7 +894,7 @@ info:
   title: Public API Variant
   version: 1.0.0
 actions:
-  - target: "$.paths.*[?(@.x-internal == true)]"
+  - target: "$.paths.*[?(@.'x-internal' == true)]"
     remove: true
             </pre>
             <ul>
