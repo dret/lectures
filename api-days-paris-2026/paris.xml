@@ -71,11 +71,11 @@
       </slide>
     </part>
   </presentation>
-  <presentation id="ai-integration">
-    <title>What AI Agents Are Teaching Us About Integration</title>
+  <presentation id="composable-ai">
+    <title short="Composable Architecture for AI Systems">Composable Architecture for AI Systems: APIs, MCP, Skills, Sub-Agents, and Workflows</title>
     <date short="2026-12-02">December 2, 2026</date>
-    <toc class="abstract">For decades, integration was a design-time problem we solved with documentation, SDKs, and patience. AI agents don't have any of those. They consume our integration surfaces at runtime, on demand, with no opportunity to read a guide or ask a colleague, and they are surprisingly honest about what's broken. This talk is a field report from the runtime era of integration. Drawing on observations from pointing agents at real-world systems, it looks at four dimensions where agents reliably stumble: discovery (operations that humans found by reading, agents can't find at all), semantics (descriptions that read fine to a developer but mean three different things to a model), composition (operations that work alone but fall apart when chained), and errors (responses that humans tolerated through intuition and retries, but that derail agents the same way every time). You'll leave with a different way of looking at your integration surfaces, a vocabulary for the failure modes you're most likely to hit, and a recipe for pointing agents at your own systems to find out where the cracks are – before someone else's agent does.</toc>
-    <slide id="ai-integration-erik">
+    <toc class="abstract">AI is a powerful tool, but it is not the only tool, and most systems worth building are hybrids of AI and non-AI parts. That line between them doesn't sit neatly between domains. It runs inside every domain, and it should move as you learn. This talk looks at the mechanisms for connecting across that line: APIs, MCP, agent skills, and sub-agents, as well as at workflows as a way to move the line itself: when an agent keeps rediscovering the same business process, that process belongs in deterministic execution, not in a prompt. You'll leave knowing which mechanism belongs where, and how to keep shifting work out of AI as your system settles.</toc>
+    <slide id="composable-ai-erik">
       <title>Erik Wilde</title>
       <img src="wundergraph-logo.png" title="Wundergraph" href="https://wundergraph.com/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
       <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
@@ -87,9 +87,111 @@
       </ul>
       <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 40% ; margin : 2% 0% 0% 10% "/>
     </slide>
-    <part id="ai-integration-conclusions">
+    <part id="composable-ai-as-little-ai">
+      <title>As Little AI As Possible</title>
+      <slide id="ai-minimalism">
+        <title>As Little AI As Possible</title>
+        <ul>
+          <li>The line between AI and deterministic code keeps moving</li>
+          <li>Good architecture is what lets you move it</li>
+          <li>Where you draw the line has side effects</li>
+        </ul>
+      </slide>
+    </part>
+    <part id="composable-ai-mechanisms">
+      <title>Mechanisms Across the Line</title>
+      <slide id="ai-timeline">
+        <title>Then It Started Moving</title>
+        <img src="ai-timeline.png" class="fullsize"/>
+      </slide>
+      <slide id="expose-implement-invoke">
+        <title>Managing the Menagerie: Expose, Implement, Invoke</title>
+        <table style="border-collapse: collapse ; border: 2px solid #000000 ;">
+          <tr>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;"></th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">What it is about</th>
+            <th style="border: 2px solid #000000 ; padding: 10px 20px ; background: #eeeeee ;">Mechanisms</th>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Expose</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Encapsulate, so things can be changed and reused safely</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">APIs, MCP</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Implement</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">How it actually gets done</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Code, workflows, decision models, skills, models</td>
+          </tr>
+          <tr>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Invoke</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Who calls it: code always, a model maybe</td>
+            <td style="border: 2px solid #000000 ; padding: 10px 20px ;">Function calling, sub-agents</td>
+          </tr>
+        </table>
+      </slide>
+      <slide id="the-line">
+        <title>Where Does the Line Go?</title>
+        <img src="composability-the-line.png" class="fullsize"/>
+      </slide>
+    </part>
+    <part id="composable-ai-experiment">
+      <title>A Small Experiment</title>
+      <slide id="experiment-data">
+        <title>Data and Code Are on GitHub</title>
+        <img src="qr-code-experiment-repo-sag.png" href="https://github.com/dret/sag-2026-ai-integration" class="fullsize"/>
+        <p style="text-align: center;"><code href="https://github.com/dret/sag-2026-ai-integration">github.com/dret/sag-2026-ai-integration</code></p>
+      </slide>
+      <slide id="experiment-tasks">
+        <title>Two Tasks Tackled Two Ways</title>
+        <blockquote>
+          <p>Task 1: Find the first issue ever opened in cli/cli, not counting pull requests. Who wrote the first comment on it, and when was that person's GitHub account created?</p>
+        </blockquote>
+        <blockquote>
+          <p>Task 2: Take the first five issues ever opened in cli/cli, not counting pull requests. For each, count the comments from before 2020 that were written by someone other than the author of the issue. Which issue has the most, and how many?</p>
+        </blockquote>
+        <p>Using <a href="https://github.com/github/rest-api-description">651 generated tools</a>, or <a href="https://github.com/github/github-mcp-server">GitHub's own 26 MCP tools</a></p>
+      </slide>
+      <slide id="task-complexity">
+        <title>Harder Tasks Take Different Paths Every Time</title>
+        <img src="fit-1-complexity.png" class="fullsize"/>
+      </slide>
+      <slide id="missing-tools">
+        <title>The Model Engineers Around Missing Tools</title>
+        <img src="fit-2-mismatch.png" class="fullsize"/>
+      </slide>
+      <slide id="experiment-fit">
+        <title>Better Fitting Tools Reduce Cost</title>
+        <img src="fit-3-fit.png" class="fullsize"/>
+      </slide>
+      <slide id="creation-date">
+        <title>API Returns User Creation Date</title>
+        <listing src="github-openapi-get-user.yaml"/>
+      </slide>
+      <slide id="experiment-mcp-tool">
+        <title>GitHub's MCP Tool Does Not Return It</title>
+        <listing src="github-mcp-search-users.yaml"/>
+        <listing src="github-mcp-search-users-result.yaml"/>
+      </slide>
+      <slide id="experiment-missing-tool">
+        <title>16 Searches Instead of One Call</title>
+        <img src="binary-search.png" class="fullsize"/>
+      </slide>
+      <slide id="experiment-trace">
+        <title>Traces Show Where the Line Is Wrong</title>
+        <img src="fit-2-mismatch.png" class="fullsize"/>
+      </slide>
+    </part>
+    <part id="composable-ai-conclusions">
       <title>Conclusions</title>
-      <slide id="ai-integration-thanks">
+      <slide id="monday">
+        <title>Monday Tasks</title>
+        <ul>
+          <li>Have a hard look at context and capability landscape</li>
+          <li>Always modularize by subproblem, so that you can move the line</li>
+          <li>Keep watching what arrives, because the line will keep moving</li>
+        </ul>
+      </slide>
+      <slide id="composable-ai-thanks">
         <title>Thank You!</title>
         <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
         <ul>

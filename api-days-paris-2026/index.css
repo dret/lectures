@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 body { color : #000000 ;
 	background-color : #F8F8FA ;
-	font-family : 'Ubuntu', Helvetica, sans-serif;
+	font-family : "Inter Variable", InterVariable, Inter, "Helvetica Neue", Arial, sans-serif ;
+	font-feature-settings : "ss01" ;
 	margin : 0 ;
 }
 
@@ -8,20 +11,24 @@ body { color : #000000 ;
 
 .footnote { font-style : oblique ; }
 
-a { color : #4F5A36 ;
+a { color : #572464 ;
 	text-decoration : none ;
 	border-bottom : 1px dotted ;
   }
 
-a:hover { background-color : #4F5A36 ;
-	color : #F8F8FA ;
+a:visited { color : #8B5CF6 ; }
+
+a:hover { background-color : #F2E3F8 ;
+	color : #572464 ;
 }
 
 .header a { color : #FFFFFF ; }
 
-.header {  background-color : #4F5A36 ;
+.header a:hover { color : #572464 ; }
+
+.header {  background-color : #572464 ;
     color : #F8F8FA ;
-    border-bottom :  5px #78A350 solid ;
+    border-bottom :  5px #EC4899 solid ;
     padding : 1.5em ;
     margin : 0 ;
     text-align : center ;
