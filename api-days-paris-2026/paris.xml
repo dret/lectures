@@ -23,12 +23,33 @@
 			<p><a class="outlink" rel="license" title="View full text of license" href="https://creativecommons.org/licenses/by/4.0/">This work is licensed under a CC<br/>Attribution 4.0 International License</a></p>
 		</div>
 	</license>
+  <toc name="toc.html">
+    <table rules="all" cellspacing="0" cellpadding="5" width="100%">
+      <thead>
+        <tr>
+          <th valign="bottom">Date</th>
+          <th valign="bottom">Title</th>
+          <th valign="bottom">Slides</th>
+        </tr>
+      </thead>
+      <tbody>
+        <hotspot:for-each-presentation>
+          <tr class="vevent">
+            <td valign="top"><b><span class="title"><hotspot:date/></span></b></td>
+            <td valign="top"><b><span class="title"><hotspot:title/></span></b></td>
+            <td align="center"><hotspot:presentation-link title="Presentation Slides"><hotspot:title form="short"/></hotspot:presentation-link> <span class="toggle"><hotspot:slides>(*&#160;Slides)</hotspot:slides></span></td>
+          </tr>
+        </hotspot:for-each-presentation>
+      </tbody>
+    </table>
+  </toc>
 	<title><a href="https://www.apidays.global/">API Days</a> <a href="https://www.apidays.global/paris/">Paris</a> 2026</title>
-  <presentation id="index">
-    <title short="OpenAPI Track Welcome">OpenAPI Track Welcome and OpenAPI in the Age of AI</title>
+  <presentation id="api-conference">
+    <title short="API Conference Welcome">API Conference Welcome and API Standards in the Age of AI</title>
     <date short="2026-12-01">December 1, 2026</date>
     <slide id="erik">
       <title>Erik Wilde</title>
+      <img src="wundergraph-logo.png" title="Wundergraph" href="https://wundergraph.com/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
       <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
       <ul>
         <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
@@ -40,6 +61,35 @@
      <part id="conclusions">
       <title>Conclusions</title>
       <slide id="openapi-thanks">
+        <title>Thank You!</title>
+        <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
+        <ul>
+          <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+          <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+        </ul>
+        <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 50% ; margin : 2% 0% 0% 10% "/>
+      </slide>
+    </part>
+  </presentation>
+  <presentation id="ai-integration">
+    <title>What AI Agents Are Teaching Us About Integration</title>
+    <date short="2026-12-02">December 2, 2026</date>
+    <toc class="abstract">For decades, integration was a design-time problem we solved with documentation, SDKs, and patience. AI agents don't have any of those. They consume our integration surfaces at runtime, on demand, with no opportunity to read a guide or ask a colleague, and they are surprisingly honest about what's broken. This talk is a field report from the runtime era of integration. Drawing on observations from pointing agents at real-world systems, it looks at four dimensions where agents reliably stumble: discovery (operations that humans found by reading, agents can't find at all), semantics (descriptions that read fine to a developer but mean three different things to a model), composition (operations that work alone but fall apart when chained), and errors (responses that humans tolerated through intuition and retries, but that derail agents the same way every time). You'll leave with a different way of looking at your integration surfaces, a vocabulary for the failure modes you're most likely to hit, and a recipe for pointing agents at your own systems to find out where the cracks are – before someone else's agent does.</toc>
+    <slide id="ai-integration-erik">
+      <title>Erik Wilde</title>
+      <img src="wundergraph-logo.png" title="Wundergraph" href="https://wundergraph.com/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <img src="OAI-logo.png" title="OpenAPI Initiative" href="https://www.openapis.org/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+      <ul>
+        <li>Chief Evangelist at <a href="https://wundergraph.com/">WunderGraph</a></li>
+        <li>Ambassador for the <a href="https://www.openapis.org/">OpenAPI Initiative (OAI)</a></li>
+        <li><a href="https://www.youtube.com/ErikWilde"><img src="youtube-logo.png" style=" height : 1em ; "/> <code>youtube.com/ErikWilde</code></a></li>
+        <li><a href="https://www.linkedin.com/in/erikwilde"><img src="linkedin-logo.png" style=" height : 1em ; "/> <code>linkedin.com/in/erikwilde</code></a></li>
+      </ul>
+      <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 40% ; margin : 2% 0% 0% 10% "/>
+    </slide>
+    <part id="ai-integration-conclusions">
+      <title>Conclusions</title>
+      <slide id="ai-integration-thanks">
         <title>Thank You!</title>
         <img src="end.jpg" title="This is the End" style="float: right ; height : 65% ; margin : 0% 4% 4% 4% ; filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.6)) ; "/>
         <ul>
