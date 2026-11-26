@@ -4,7 +4,7 @@ All presentation directories in this repository, organized by year.
 Directory links are relative (work in GitHub web UI). Online links go to
 `dret.net/lectures/`.
 
-**Total directories (excluding `modules`, `saxon`, `Cloud`):** ~215
+**Total directories (excluding `modules`, `saxon`, `Cloud`, `hotspot`):** 234
 
 ---
 
@@ -353,6 +353,9 @@ Directory links are relative (work in GitHub web UI). Online links go to
 - **[gls-2020](../gls-2020/)** · [online](http://dret.net/lectures/gls-2020/)
   *Accelerate Sampler* · GLS Logistics, Eschborn
 
+- **[ietf-109](../ietf-109/)** · [online](http://dret.net/lectures/ietf-109/)
+  *HTTP Building Blocks: API Deprecation; Linkset; Content Warning* · IETF 109 (Nov 20, 2020)
+
 - **[nordic-apis-2020](../nordic-apis-2020/)** · [online](http://dret.net/lectures/nordic-apis-2020/)
   *Monolith Modernization with APIs and Microservices* · Nordic APIs LiveCast (Dec 2020)
 
@@ -414,6 +417,9 @@ Directory links are relative (work in GitHub web UI). Online links go to
 - **[bmw-2021](../bmw-2021/)** · [online](http://dret.net/lectures/bmw-2021/)
   *API for Product Owners* · BMW workshop
 
+- **[brazil-2021](../brazil-2021/)** · [online](http://dret.net/lectures/brazil-2021/)
+  *How to Establish an Effective API Culture* · Axway Powerful Interactions (Jan 27, 2021)
+
 - **[bundesbank-2021](../bundesbank-2021/)** · [online](http://dret.net/lectures/bundesbank-2021/)
   *API Strategy, Programs, and Platforms* · Deutsche Bundesbank
 
@@ -434,6 +440,12 @@ Directory links are relative (work in GitHub web UI). Online links go to
 
 - **[getting-apis-to-work-2021](../getting-apis-to-work-2021/)** · [online](http://dret.net/lectures/getting-apis-to-work-2021/)
   *Getting APIs to Work* · YouTube video series (2021 episodes)
+
+- **[ietf-110](../ietf-110/)** · [online](http://dret.net/lectures/ietf-110/)
+  *HTTP Building Blocks: API Deprecation; Linkset* · IETF 110 (Mar 12, 2021)
+
+- **[ietf-112](../ietf-112/)** · [online](http://dret.net/lectures/ietf-112/)
+  *HTTP Building Blocks: API Deprecation; Linkset* · IETF 112 (Nov 12, 2021)
 
 - **[infosec-2021](../infosec-2021/)** · [online](http://dret.net/lectures/infosec-2021/)
   *Building a Digital Platform: Tips and Tricks from the Trenches* · Infosecurity Belgium
@@ -692,14 +704,69 @@ Directory links are relative (work in GitHub web UI). Online links go to
 - **[ai-day-2026](../ai-day-2026/)** · [online](http://dret.net/lectures/ai-day-2026/)
   *Beyond MCP: Scaling AI Enablement for API Landscapes* · Software Architecture AI Day (March 10, 2026)
 
+- **[api-days-amsterdam-2026](../api-days-amsterdam-2026/)** · [online](http://dret.net/lectures/api-days-amsterdam-2026/)
+  *API Days Amsterdam 2026* (multiple presentations) · The Hidden Common Ground in Business Agents and Agentic Coding; OpenAPI Track Welcome (June 10, 2026)
+
+- **[api-days-india-2026](../api-days-india-2026/)** · [online](http://dret.net/lectures/api-days-india-2026/)
+  *API Days India 2026* (multiple presentations) · Composable Architecture for AI Systems; OpenAPI Track Welcome; masterclass with Frank Kilcommins (Aug 19-21, 2026)
+
+- **[api-days-london-2026](../api-days-london-2026/)** · [online](http://dret.net/lectures/api-days-london-2026/)
+  *API Days London 2026* (multiple presentations) · OpenAPI Track Welcome; Composable Architecture for AI Systems (Oct 1, 2026)
+
+- **[api-days-munich-2026](../api-days-munich-2026/)** · [online](http://dret.net/lectures/api-days-munich-2026/)
+  *API Days Munich 2026* (multiple presentations) · The Hidden Common Ground in Business Agents and Agentic Coding; OpenAPI Track Welcome (July 8-9, 2026)
+
+- **[api-days-new-york-2026](../api-days-new-york-2026/)** · [online](http://dret.net/lectures/api-days-new-york-2026/)
+  *API Days New York 2026* (multiple presentations) · The Hidden Common Ground in Business Agents and Agentic Coding; OpenAPI Track Welcome (May 14, 2026)
+
+- **[api-days-paris-2026](../api-days-paris-2026/)** · [online](http://dret.net/lectures/api-days-paris-2026/)
+  *API Days Paris 2026* (multiple presentations) · API Conference Welcome and API Standards in the Age of AI; Composable Architecture for AI Systems (Dec 1-2, 2026)
+
 - **[api-days-singapore-2026](../api-days-singapore-2026/)** · [online](http://dret.net/lectures/api-days-singapore-2026/)
   *API Days Singapore 2026* (multiple presentations)
+
+- **[apicon-berlin-2026](../apicon-berlin-2026/)** · [online](http://dret.net/lectures/apicon-berlin-2026/)
+  *API Conference Berlin 2026* (multiple presentations) · What AI Agents Are Teaching Us About Integration (Nov 19); workshop "Architecting AI-Ready APIs with Agent Skills" with Frank Kilcommins, 7 modules (Nov 20, 2026)
 
 - **[developerweek-2026](../developerweek-2026/)** · [online](http://dret.net/lectures/developerweek-2026/)
   *OpenAPI Summit Welcome and OpenAPI in the Age of AI* · DeveloperWeek 2026 / OpenAPI Summit (Feb 20, 2026)
 
+- **[devtalks-2026](../devtalks-2026/)** · [online](http://dret.net/lectures/devtalks-2026/)
+  *APIs for the Age of Agents* · DevTalks Romania 2026 (June 4, 2026)
+
+- **[entwickler-summit-2026](../entwickler-summit-2026/)** · [online](http://dret.net/lectures/entwickler-summit-2026/)
+  *APIs für die AI Nutzung: Wie geht das?* · Entwickler Summit 2026 (Sep 17, 2026)
+
+- **[nordic-apis-2026](../nordic-apis-2026/)** · [online](http://dret.net/lectures/nordic-apis-2026/)
+  *Composable Architecture for AI Systems: APIs, MCP, Skills, Sub-Agents, and Workflows* · Nordic APIs Summit 2026, Stockholm (Oct 13, 2026)
+
+- **[packt-masterclass-2026](../packt-masterclass-2026/)** · [online](http://dret.net/lectures/packt-masterclass-2026/)
+  *Building AI-Ready APIs with Agent Skills* · Packt masterclass, 6 modules (July 1, 2026)
+
+- **[saf-2026](../saf-2026/)** · [online](http://dret.net/lectures/saf-2026/)
+  *APIs für die AI Nutzung: Wie geht das?* · Software Architecture Forum 2026 (June 16, 2026)
+
+- **[sag-2026](../sag-2026/)** · [online](http://dret.net/lectures/sag-2026/)
+  *Composable Architecture for AI Systems: APIs, MCP, Skills, Sub-Agents, and Workflows* · Software Architecture Gathering 2026, Berlin (Nov 18, 2026)
+
+- **[superstream-2026](../superstream-2026/)** · [online](http://dret.net/lectures/superstream-2026/)
+  *The Hidden Common Ground in Business Agents and Agentic Coding* · O'Reilly API Superstream: APIs and the Agentic Shift (July 14, 2026)
+
 - **[webinar-2026](../webinar-2026/)** · [online](http://dret.net/lectures/webinar-2026/)
   *OpenClaw & Universal Agents: Why API-First Is Now an Agent Requirement* · Jentic webinar (March 11, 2026, with Frank Kilcommins)
+
+- **[wjax-2026](../wjax-2026/)** · [online](http://dret.net/lectures/wjax-2026/)
+  *What AI Agents Are Teaching Us About Integration* · W-JAX 2026, Munich (Nov 2, 2026)
+
+- **[wso2-con-2026](../wso2-con-2026/)** · [online](http://dret.net/lectures/wso2-con-2026/)
+  *Openness Matters: Source and Interfaces in the Age of Agents* · WSO2Con Africa 2026 (Sep 24, 2026)
+
+---
+
+## 2027
+
+- **[oop-2027](../oop-2027/)** · [online](http://dret.net/lectures/oop-2027/)
+  *Beyond MCP-Washing: The Real Work Behind AI-Ready APIs* · OOP 2027, Munich (February 2027, date TBD)
 
 ---
 
@@ -713,6 +780,7 @@ Directory links are relative (work in GitHub web UI). Online links go to
 | 2021–2023 | API lifecycle, CloudEvents, OpenAPI, API specifications |
 | 2023–2025 | OpenAPI Initiative (OAI) track work, API products, API landscape management |
 | 2025–2026 | APIs and AI, MCP, Agent Experience (AX), AI readiness |
+| 2026 | Composable AI architecture (where the line between AI and code goes), business agents vs. agentic coding, agent skills workshops, experiments with agents against real APIs |
 
 ## Affiliation History (reflected in layouts)
 
@@ -722,4 +790,5 @@ Directory links are relative (work in GitHub web UI). Online links go to
 | 2015–2019 | CA Technologies / API Academy | `apiacademy`, `catalyst`, `api360` |
 | 2019–2020 | GoodAPI | `goodapi` |
 | 2020–2023 | Axway | `youtube`, `getting-apis-to-work` |
-| 2024–present | Jentic | `jentic`, `oai-track` |
+| 2024–2026 | Jentic | `jentic`, `oai-track` |
+| Nov 2026–present | WunderGraph | `wundergraph`, `oai-track` |
