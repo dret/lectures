@@ -62,6 +62,85 @@
       </ul>
       <img src="qr-code-linkedin-erik-wilde.png" href="https://www.linkedin.com/in/erikwilde" style=" height : 50% ; margin : 2% 0% 0% 10% "/>
     </slide>
+    <part id="apis-and-ai-track">
+      <title>APIs and AI: It Just Works?</title>
+      <slide id="ai-and-apis-spectrum">
+        <title>AI and APIs Spectrum</title>
+        <img src="ai-and-apis.png" class="fullsize"/>
+      </slide>
+      <slide id="api-days-new-york">
+        <title>How does AI affect APIs?</title>
+        <img src="apis-and-ai-new-york.jpg" href="https://www.youtube.com/watch?v=6ekEQR45IIo" title="How does AI affect APIs? Expert Opinions from API Days New York 2025" class="fullsize"/>
+      </slide>
+      <slide id="ai-success">
+        <title>AI Success Stories: Do Your API Homework</title>
+        <img src="postman-2026-state-of-the-api.png" href="https://www.postman.com/state-of-api/2026/" title='Postman, "2026 State of the API Report", 2026' style=" height : 70% ; float: left ; margin : 0% 4% 4% 4% ; " class="shadow" />
+        <img src="mckinsey-state-of-ai-in-2026.png" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" title='McKinsey, "The state of AI in 2026: On the road to ROI", August 2026' style=" height : 70% ; margin : 0% 4% 4% 4% ; " class="shadow" />
+      </slide>
+    </part>
+    <part id="apis-and-ai-path">
+      <title>APIs and AI: A Possible Path</title>
+      <slide id="api-ai-evolution-1-more">
+        <title>More Tools</title>
+        <img src="api-ai-evolution-1-more.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="just-mcp">
+        <title>Just Use MCP?</title>
+        <img src="mcp-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>The pitch: <q>APIs are old, MCP is the future</q></li>
+          <li>Wrap anything in MCP → call it AI-ready</li>
+          <li>Skip the hard API work → straight to AI</li>
+          <li>Just <q>start fresh</q> after 10 years of API landscape work?</li>
+        </ul>
+      </slide>
+      <slide id="naive-mcp">
+        <title>Problem 1: Directly Exposing APIs</title>
+        <img src="api-mcp-ai-direct.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; " />
+        <ul>
+          <li>Auto-generate MCP from OpenAPI</li>
+          <li>Context window explosion on real workloads</li>
+          <li>Bad descriptions → bad MCP</li>
+          <li>AI still has to invent workflows</li>
+          <li>Agents have poor <q>API user experience</q></li>
+        </ul>
+      </slide>
+      <slide id="heavy-mcp">
+        <title>Problem 2: Investing in the MCP Layer</title>
+        <img src="api-mcp-ai-custom-mcp.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ; " />
+        <ul>
+          <li>Hand-craft MCP servers, design good tools</li>
+          <li>The investment goes into the <em>MCP layer</em></li>
+          <li>The <em>capability layer</em> remains untouched</li>
+          <li>Better capabilities benefit more than just MCP</li>
+          <li>Everybody's experience (UX/AX) should benefit</li>
+        </ul>
+      </slide>
+      <slide id="mcp-washing">
+        <title>MCP-Washing</title>
+        <img src="mcp-washing.png" style="float: right ; height : 60% ; margin : 0% 4% 4% 4% ;"/>
+        <ul>
+          <li>Skip the API work → jump to MCP → call it <q>AI-readiness</q></li>
+          <li>Wrong place to invest from a strategy perspective</li>
+          <li>MCP should be a <em>thin</em> layer, not a <em>fat</em> one</li>
+          <li>Invest in your APIs and then expose them through MCP</li>
+        </ul>
+      </slide>
+      <slide id="api-ai-evolution-2-description">
+        <title>Better Described Tools</title>
+        <img src="api-ai-evolution-2-description.png" class="fullsize-shadow" />
+      </slide>
+      <slide id="better-descriptions">
+        <title>Better Descriptions ⇏ Scalable Tool Use</title>
+        <img src="arazzo-logo.png" style="float: right ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
+        <ul>
+          <li>Better AX reduces confusion and misuse</li>
+          <li>But even well-described tools still overload agent context</li>
+          <li>The problem shifts from <em>understanding</em> tools to <em>finding</em> the right ones</li>
+          <li>Composing APIs into workflows can produce better tools</li>
+        </ul>
+      </slide>
+    </part>
      <part id="conclusions">
       <title>Conclusions</title>
       <slide id="api-conference-feedback">
