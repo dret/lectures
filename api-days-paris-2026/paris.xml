@@ -51,6 +51,10 @@
   <presentation id="api-conference">
     <title short="API Conference Welcome">API Conference Welcome and API Standards in the Age of AI</title>
     <date short="2026-12-01">December 1, 2026</date>
+    <slide id="openapi-track-mix">
+      <title>API Standards Conference</title>
+      <img src="openapi-track-mix-animated.webp" class="fullsize-shadow"/>
+    </slide>
     <slide id="erik">
       <title>Erik Wilde</title>
       <img src="wundergraph-logo.png" title="Wundergraph" href="https://wundergraph.com/" style="float: right ; clear : both ; width : 30% ; margin : 0% 4% 4% 4% ; "/>
@@ -143,6 +147,14 @@
     </part>
      <part id="conclusions">
       <title>Conclusions</title>
+      <slide id="api-conference-monday">
+        <title>Monday Tasks: Triple A</title>
+        <ul>
+          <li>APIs: check and improve your API landscape</li>
+          <li>Ambitions: find out what people want to do next with AI</li>
+          <li>Actions: watch what your existing agents are doing</li>
+        </ul>
+      </slide>
       <slide id="api-conference-feedback">
         <title>Please Rate This Session</title>
         <img src="qr-code-fost-feedback-api-standards.png" href="https://portal.joinfost.io/feedback/21159d0c-eb6a-4a24-8228-1b087eb2c3d3" class="fullsize"/>
