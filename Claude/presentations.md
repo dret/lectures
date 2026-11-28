@@ -720,7 +720,7 @@ Directory links are relative (work in GitHub web UI). Online links go to
   *API Days New York 2026* (multiple presentations) · The Hidden Common Ground in Business Agents and Agentic Coding; OpenAPI Track Welcome (May 14, 2026)
 
 - **[api-days-paris-2026](../api-days-paris-2026/)** · [online](http://dret.net/lectures/api-days-paris-2026/)
-  *API Days Paris 2026* (multiple presentations) · API Conference Welcome and API Standards in the Age of AI; Composable Architecture for AI Systems (Dec 1-2, 2026)
+  *API Days Paris 2026* (multiple presentations) · API Standards Conference Welcome and API Standards in the Age of AI; Composable Architecture for AI Systems (Dec 1-2, 2026)
 
 - **[api-days-singapore-2026](../api-days-singapore-2026/)** · [online](http://dret.net/lectures/api-days-singapore-2026/)
   *API Days Singapore 2026* (multiple presentations)
